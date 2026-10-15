@@ -1,0 +1,43 @@
+{
+  "name": "japan-travel-studio",
+  "private": true,
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "inspect:article-queue": "sanity exec scripts/inspect-article-queue.mjs --with-user-token",
+    "publish:prepared-article": "sanity exec scripts/publish-prepared-article.mjs --with-user-token --",
+    "publish:article-cover": "sanity exec scripts/publish-article-cover.mjs --with-user-token --",
+    "release:indexable-article": "sanity exec scripts/release-indexable-article.mjs --with-user-token --",
+    "prepare:parent-hub": "sanity exec scripts/prepare-parent-hub.mjs --with-user-token --",
+    "prepare:child-hub": "sanity exec scripts/prepare-child-hub.mjs --with-user-token --",
+    "activate:child-hub": "sanity exec scripts/activate-child-hub.mjs --with-user-token --"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/vision": "^6.10.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "sanity": "^6.10.1",
+    "styled-components": "^6.1.18"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^7",
+    "@types/react": "^19.2.14",
+    "eslint": "^10.8.1",
+    "prettier": "^3.5",
+    "typescript": "^5.8"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true
+  }
+}
