@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "siteBaseUrl": "https://japan-travel.example",
+  "selectionPolicy": "queue-order-not-indexable-in-sanity",
+  "statusTracking": "sanity-document-state",
+  "runLog": {
+    "path": "content-automation/auto-publisher-run-log.md",
+    "updateEveryRun": true
+  },
+  "publicationCadence": {
+    "timezone": "Asia/Taipei",
+    "triggerIntervalHours": 4,
+    "maxProductionUnitsPerRun": 1,
+    "productionUnitMode": "individual",
+    "lockStaleAfterHours": 12,
+    "maxArticlesPerDay": 1
+  },
+  "batches": []
+}
