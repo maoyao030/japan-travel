@@ -1,0 +1,289 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ClusterHubList from '../components/ClusterHubList.astro'
+import {SITE_NAME} from '../config/site'
+import {siteCategories, type SiteCategory} from '../data/categories'
+import {getPublishedCategories} from '../data/hubs'
+import {getTagPath, type TagPageData} from '../data/tags'
+import {
+  buildCategoryClusters,
+  countClusterArticles,
+  countClusterHubs,
+  getCategoryTags,
+  getLatestCategoryArticles,
+  type CategoryArticleEntry,
+  type ClusterNode,
+} from '../lib/clusters'
+import {getPublishedContentRoutes} from '../lib/contentRoutes'
+import {IMAGE_SIZES, getResponsiveImage} from '../lib/images'
+import type {PublishedArticle} from '../lib/sanity'
+import {createCollectionStructuredData} from '../lib/structuredData'
+
+interface Props {
+  category: SiteCategory
+  clusters: ClusterNode[]
+  latestArticles: CategoryArticleEntry<PublishedArticle>[]
+  relatedTags: TagPageData[]
+  otherCategories: SiteCategory[]
+}
+
+export async function getStaticPaths() {
+  const {landingArticles, publishableHubs, publishableTags, routableArticles} =
+    await getPublishedContentRoutes()
+
+  return siteCategories.map((category) => ({
+    params: {category: category.slug},
+    props: {
+      category,
+      clusters: buildCategoryClusters(category.slug, publishableHubs),
+      latestArticles: getLatestCategoryArticles(
+        category.slug,
+        {landingArticles, routableArticles},
+        6,
+      ),
+      relatedTags: getCategoryTags(category.slug, publishableHubs, publishableTags),
+      // 其他分類只列已有公開主題的分類，與導覽列、首頁一致，避免導向空分類頁。
+      otherCategories: getPublishedCategories(publishableHubs).filter(
+        (item) => item.slug !== category.slug,
+      ),
+    } satisfies Props,
+  }))
+}
+
+const {category, clusters, latestArticles, relatedTags, otherCategories} = Astro.props as Props
+const hubCount = countClusterHubs(clusters)
+const articleCount = countClusterArticles(clusters)
+const featuredArticles = latestArticles.filter(({article}) => article.cover).slice(0, 3)
+const siteUrl = new URL('/', Astro.site ?? Astro.url).href
+const canonicalUrl = new URL(`/${category.slug}/`, siteUrl).href
+const structuredData = createCollectionStructuredData({
+  breadcrumbs: [
+    {name: '首頁', url: siteUrl},
+    {name: category.title, url: canonicalUrl},
+  ],
+  canonicalUrl,
+  description: category.description,
+  items: clusters.flatMap((node) => [
+    {name: node.title, url: new URL(node.path, siteUrl).href},
+    ...node.children.map((child) => ({
+      name: child.title,
+      url: new URL(child.path, siteUrl).href,
+    })),
+  ]),
+  name: category.title,
+  siteUrl,
+})
+---
+
+<BaseLayout
+  title={`${category.title}｜${SITE_NAME}`}
+  description={category.description}
+  noindex={clusters.length === 0}
+  structuredData={structuredData}
+>
+  <div class="shell breadcrumbs" aria-label="麵包屑導覽">
+    <a href="/">首頁</a><span aria-hidden="true">/</span><span>{category.title}</span>
+  </div>
+
+  <header class="topic-hero category-hero">
+    <div class:list={['shell', 'topic-hero-grid', {'topic-hero-grid--single': clusters.length === 0}]}>
+      <div>
+        <p class="eyebrow">分類導覽</p>
+        <h1>{category.title}</h1>
+        <p class="topic-intro">{category.description}</p>
+        {clusters.length > 0 && (
+          <p class="category-stats">
+            目前收錄 {hubCount} 個主題中心、{articleCount} 篇文章，可從下方主題地圖逐層查看。
+          </p>
+        )}
+      </div>
+      {clusters.length > 0 && (
+        <nav class="category-hero-nav" aria-label={`${category.title}主題入口`}>
+          <p class="aside-title">主題入口</p>
+          <ul>
+            {clusters.map((node) => (
+              <li>
+                <a href={node.path}>
+                  <span>{node.title}</span>
+                  <small>{node.articleCount + countClusterArticles(node.children)} 篇</small>
+                </a>
+                {node.children.length > 0 && (
+                  <ul>
+                    {node.children.map((child) => (
+                      <li>
+                        <a href={child.path}>
+                          <span>{child.title}</span>
+                          <small>{child.articleCount} 篇</small>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+    </div>
+  </header>
+
+  <section class="section category-questions" aria-labelledby="reader-questions">
+    <div class="shell topic-layout">
+      <div>
+        <p class="eyebrow">出發前要確認的事</p>
+        <h2 id="reader-questions">{category.questionsHeading}</h2>
+      </div>
+      <ol class="topic-checklist">
+        {category.readerQuestions.map((question) => <li>{question}</li>)}
+      </ol>
+    </div>
+  </section>
+
+  {clusters.length > 0 ? (
+    <section class="section cluster-section" aria-labelledby="cluster-map">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">主題地圖</p>
+            <h2 id="cluster-map">{category.title}主題與文章</h2>
+          </div>
+          <p>每個主題中心先整理這個地區或月份要確認的條件，再依地點或問題分成子主題；同一主題的文章都列在這裡，方便交叉查閱。</p>
+        </div>
+
+        {clusters.map((node) => (
+          <article class="cluster-group" aria-labelledby={`cluster-${node.slug}`}>
+            <header class="cluster-group-header">
+              <div>
+                <p class="eyebrow">主題中心</p>
+                <h3 id={`cluster-${node.slug}`}><a href={node.path}>{node.title}</a></h3>
+                {node.description && <p>{node.description}</p>}
+              </div>
+              <div class="cluster-group-meta">
+                <p>
+                  {node.children.length > 0 && `${node.children.length} 個子主題、`}
+                  {node.articleCount + countClusterArticles(node.children)} 篇文章
+                </p>
+                <a class="text-link" href={node.path}>
+                  {node.hasLandingArticle ? `閱讀${node.title}主題指南` : `進入${node.title}主題頁`}
+                </a>
+              </div>
+            </header>
+
+            {node.articles.length > 0 && (
+              <div class="cluster-direct">
+                <p class="cluster-subheading">
+                  {node.children.length > 0 ? '跨子主題文章' : `${node.title}文章`}
+                </p>
+                <details class="cluster-card-links" open>
+                  <summary><span>文章列表</span><small>{node.articles.length} 篇</small></summary>
+                  <ul class="cluster-link-columns">
+                    {node.articles.map((article) => (
+                      <li><a href={article.path}>{article.title}</a></li>
+                    ))}
+                  </ul>
+                </details>
+              </div>
+            )}
+
+            {node.children.length > 0 && (
+              <div class="cluster-children">
+                <p class="cluster-subheading">依地點與問題分的子主題</p>
+                <ClusterHubList nodes={node.children} headingTag="h4" />
+              </div>
+            )}
+          </article>
+        ))}
+      </div>
+    </section>
+  ) : (
+    <section class="section cluster-section" aria-labelledby="cluster-pending">
+      <div class="shell topic-layout">
+        <div>
+          <p class="eyebrow">主題地圖</p>
+          <h2 id="cluster-pending">主題頁整理中</h2>
+        </div>
+        <div class="cluster-pending">
+          <p>
+            {category.title}的主題中心尚未開放。主題頁完成研究與查證後會列在這裡，目前可先回到首頁查看已公開的內容。
+          </p>
+          <a class="text-link" href="/">回首頁</a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {featuredArticles.length > 0 && (
+    <section class="section category-latest" aria-labelledby="category-latest-heading">
+      <div class="shell">
+        <div class="home-section-header">
+          <div>
+            <p class="eyebrow">最近更新</p>
+            <h2 id="category-latest-heading">{category.title}最新文章</h2>
+          </div>
+          <p>從最近更新的文章開始讀，每篇都會連回所屬主題與相關文章。</p>
+        </div>
+        <div class="story-grid">
+          {featuredArticles.map(({article, hub, path}) => article.cover && (
+            <article class="story-card">
+              <a class="story-card-media" href={path} tabindex="-1" aria-hidden="true">
+                <img
+                  {...getResponsiveImage(article.cover.url, article.cover.width)}
+                  sizes={IMAGE_SIZES.categoryStoryCard}
+                  width={article.cover.width}
+                  height={article.cover.height}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <p class="story-kicker"><a href={`/${hub.categorySlug}/${hub.parentHub ? `${hub.parentHub.slug}/` : ''}${hub.slug}/`}>{hub.title}</a></p>
+              <h3><a href={path}>{article.title}</a></h3>
+              <p>{article.excerpt}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {relatedTags.length > 0 && (
+    <section class="section category-tags" aria-labelledby="category-tags-heading">
+      <div class="shell topic-layout">
+        <div>
+          <p class="eyebrow">跨主題查找</p>
+          <h2 id="category-tags-heading">相關使用情境</h2>
+        </div>
+        <div>
+          <p class="cluster-pending-copy">同一趟旅行常會同時牽涉幾個分類，這些情境頁會把{category.title}和其他分類的相關文章放在一起。</p>
+          <div class="category-tag-list">
+            {relatedTags.map((tag) => <a href={getTagPath(tag)}>{tag.title}</a>)}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {otherCategories.length > 0 && (
+  <section class="section category-siblings" aria-labelledby="category-siblings-heading">
+    <div class="shell">
+      <div class="home-section-header">
+        <div>
+          <p class="eyebrow">其他分類</p>
+          <h2 id="category-siblings-heading">接著查看其他分類</h2>
+        </div>
+        <p>住宿、天氣、美食與交通常互相牽動，可切換到其他分類核對這趟行程的其他條件。</p>
+      </div>
+      <div class="home-category-grid">
+        {otherCategories.map((item, index) => (
+          <a class="home-category-item" href={`/${item.slug}/`}>
+            <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <h3>{item.title}</h3>
+            <p>{item.summary}</p>
+            <b aria-hidden="true"></b>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  )}
+</BaseLayout>

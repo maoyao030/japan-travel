@@ -1,0 +1,60 @@
+---
+import ArticlePage from '../../components/ArticlePage.astro'
+import HubPage from '../../components/HubPage.astro'
+import {siteCategories, type SiteCategory} from '../../data/categories'
+import type {HubPageData} from '../../data/hubs'
+import {getArticleTagLinks, type ArticleTagLink} from '../../data/tags'
+import {buildClusterNode, type ClusterNode} from '../../lib/clusters'
+import {getPublishedContentRoutes} from '../../lib/contentRoutes'
+import type {PublishedArticle} from '../../lib/sanity'
+
+interface Props {
+  category: SiteCategory
+  hub: HubPageData
+  landingArticle?: PublishedArticle
+  tagLinks: ArticleTagLink[]
+  childClusters: ClusterNode[]
+}
+
+export async function getStaticPaths() {
+  const {landingArticles, publishableHubs, publishableTags} =
+    await getPublishedContentRoutes()
+
+  return publishableHubs.filter((hub) => !hub.parentHub).map((hub) => {
+    const category = siteCategories.find((item) => item.slug === hub.categorySlug)
+
+    if (!category) {
+      throw new Error(`找不到主題中心所屬分類：${hub.categorySlug}`)
+    }
+
+    const landingArticle = landingArticles.find(
+      (item) => item.hub.id === hub.id,
+    )?.article
+
+    return {
+      params: {category: hub.categorySlug, hub: hub.slug},
+      props: {
+        category,
+        hub,
+        landingArticle,
+        tagLinks: getArticleTagLinks(landingArticle?.tags, publishableTags),
+        childClusters: buildClusterNode(hub, publishableHubs).children,
+      },
+    }
+  })
+}
+
+const {category, hub, landingArticle, tagLinks, childClusters} = Astro.props as Props
+---
+
+{landingArticle ? (
+  <ArticlePage
+    article={landingArticle}
+    hub={hub}
+    isHubLanding
+    tagLinks={tagLinks}
+    childClusters={childClusters}
+  />
+) : (
+  <HubPage category={category} hub={hub} childClusters={childClusters} />
+)}

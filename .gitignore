@@ -1,8 +1,16 @@
+# Node / Astro
 node_modules/
 dist/
 .astro/
 .tmp/
+.wrangler/
+
+# Local secrets
 .env
 .env.*
-*.log
+!.env.example
+
+# Local operating-system files
 .DS_Store
+Thumbs.db
+*.log

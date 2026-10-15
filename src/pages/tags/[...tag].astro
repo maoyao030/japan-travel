@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import {SITE_NAME} from '../../config/site'
+import {getTagPath, type TagArticleLink, type TagPageData} from '../../data/tags'
+import {getPublishedContentRoutes} from '../../lib/contentRoutes'
+import {createCollectionStructuredData} from '../../lib/structuredData'
+
+type TagIndexPage = {kind: 'index'; tags: TagPageData[]}
+type TagDetailPage = {kind: 'detail'; tag: TagPageData}
+
+export async function getStaticPaths() {
+  const {publishableTags} = await getPublishedContentRoutes()
+
+  if (publishableTags.length === 0) return []
+
+  return [
+    {params: {tag: undefined}, props: {kind: 'index', tags: publishableTags} satisfies TagIndexPage},
+    ...publishableTags.map((tag) => ({
+      params: {tag: tag.slug},
+      props: {kind: 'detail', tag} satisfies TagDetailPage,
+    })),
+  ]
+}
+
+const page = Astro.props as TagIndexPage | TagDetailPage
+const detailTag = page.kind === 'detail' ? page.tag : null
+const articleGroups = detailTag
+  ? [...detailTag.articles.reduce((groups, article) => {
+      const current = groups.get(article.hubId) ?? {
+        hubTitle: article.hubTitle,
+        hubPath: article.hubPath,
+        articles: [] as TagArticleLink[],
+      }
+      current.articles.push(article)
+      groups.set(article.hubId, current)
+      return groups
+    }, new Map<string, {hubTitle: string; hubPath?: string; articles: TagArticleLink[]}>()).values()]
+  : []
+const siteUrl = new URL('/', Astro.site ?? Astro.url).href
+const tagsIndexUrl = new URL('/tags/', siteUrl).href
+const indexTitle = `旅遊情境主題｜${SITE_NAME}`
+const indexDescription = '依照旅行情境、同行對象與季節需求，查看分散在住宿、天氣、美食與交通各主題中的相關內容。'
+const structuredData = detailTag
+  ? createCollectionStructuredData({
+      breadcrumbs: [
+        {name: '首頁', url: siteUrl},
+        {name: '使用情境', url: tagsIndexUrl},
+        {name: detailTag.title, url: new URL(getTagPath(detailTag), siteUrl).href},
+      ],
+      canonicalUrl: new URL(getTagPath(detailTag), siteUrl).href,
+      description: detailTag.seoDescription,
+      items: detailTag.articles
+        .filter((article) => article.path)
+        .map((article) => ({name: article.title, url: new URL(article.path!, siteUrl).href})),
+      name: detailTag.title,
+      siteUrl,
+    })
+  : createCollectionStructuredData({
+      breadcrumbs: [
+        {name: '首頁', url: siteUrl},
+        {name: '使用情境', url: tagsIndexUrl},
+      ],
+      canonicalUrl: tagsIndexUrl,
+      description: indexDescription,
+      items: page.kind === 'index'
+        ? page.tags.map((tag) => ({name: tag.title, url: new URL(getTagPath(tag), siteUrl).href}))
+        : [],
+      name: '使用情境',
+      siteUrl,
+    })
+---
+
+{page.kind === 'index' ? (
+  <BaseLayout
+    title={indexTitle}
+    description={indexDescription}
+    noindex={page.tags.every((tag) => tag.noindex)}
+    structuredData={structuredData}
+  >
+    <div class="shell breadcrumbs" aria-label="麵包屑導覽">
+      <a href="/">首頁</a><span aria-hidden="true">/</span><span>使用情境</span>
+    </div>
+
+    <header class="topic-hero category-hero">
+      <div class="shell topic-hero-grid">
+        <div>
+          <p class="eyebrow">跨主題導覽</p>
+          <h1>依旅遊情境找住宿、天氣與交通內容</h1>
+          <p class="topic-intro">同一趟旅行常會同時牽涉住宿、天氣、美食與交通，可依實際情境交叉查找相關文章，再回到各篇核對日期與細節。</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="section topic-content">
+      <div class="shell topic-plan-grid">
+        {page.tags.map((tag, index) => (
+          <a class="topic-plan-card topic-plan-card--published" href={getTagPath(tag)}>
+            <span class="topic-number">{String(index + 1).padStart(2, '0')}</span>
+            <h2>{tag.title}</h2>
+            <p>{tag.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  </BaseLayout>
+) : detailTag && (
+  <BaseLayout
+    title={detailTag.seoTitle}
+    description={detailTag.seoDescription}
+    noindex={detailTag.noindex}
+    structuredData={structuredData}
+  >
+    <div class="shell breadcrumbs" aria-label="麵包屑導覽">
+      <a href="/">首頁</a><span aria-hidden="true">/</span>
+      <a href="/tags/">使用情境</a><span aria-hidden="true">/</span>
+      <span>{detailTag.title}</span>
+    </div>
+
+    <header class="topic-hero">
+      <div class="shell topic-hero-grid">
+        <div>
+          <p class="eyebrow">跨主題旅遊情境</p>
+          <h1>{detailTag.title}</h1>
+          <p class="topic-intro">{detailTag.description}</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="section topic-content">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">依主要主題整理</p>
+            <h2>{detailTag.title}相關文章</h2>
+          </div>
+        </div>
+
+        {articleGroups.map((group) => (
+          <section class="tag-article-group">
+            <h3>
+              {group.hubPath ? <a href={group.hubPath}>{group.hubTitle}</a> : group.hubTitle}
+            </h3>
+            <div class="article-list">
+              {group.articles.map((article, index) => (
+                <a class="article-row" href={article.path}>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <div>
+                    <h4>{article.title}</h4>
+                    <p>{article.excerpt}</p>
+                  </div>
+                  <b aria-hidden="true">→</b>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </section>
+  </BaseLayout>
+)}

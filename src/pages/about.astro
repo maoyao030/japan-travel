@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import {CONTACT_EMAIL} from '../config/contact'
+import {EDITORIAL_AUTHOR_NAME, SITE_NAME} from '../config/site'
+import {getPublishedContentRoutes} from '../lib/contentRoutes'
+import {createAboutPageStructuredData} from '../lib/structuredData'
+
+const {indexableHubs, landingArticles, routableArticles} = await getPublishedContentRoutes()
+const publishedArticleCount =
+  landingArticles.filter(({article}) => article.noindex !== true).length +
+  routableArticles.filter(({article}) => article.noindex !== true).length
+const topicSummaries = indexableHubs
+  .filter((hub) => !hub.parentHub)
+  .map((hub) => {
+    const childTitles = indexableHubs
+      .filter((child) => child.parentHub?.id === hub.id)
+      .map((child) => child.title)
+    return childTitles.length > 0 ? `${hub.title}（含${childTitles.join('、')}）` : hub.title
+  })
+const pageTitle = `關於${SITE_NAME}｜編輯方針與資料來源`
+const pageDescription =
+  `${SITE_NAME}是給台灣旅人看的日本旅遊實用資訊網站。說明我們寫什麼、內容怎麼查證與更新、資料來源怎麼標示，以及訂房分潤連結與合作的揭露原則。`
+const siteUrl = new URL('/', Astro.site ?? Astro.url).href
+const canonicalUrl = new URL('/about/', siteUrl).href
+const structuredData = createAboutPageStructuredData({
+  breadcrumbs: [
+    {name: '首頁', url: siteUrl},
+    {name: `關於${SITE_NAME}`, url: canonicalUrl},
+  ],
+  canonicalUrl,
+  description: pageDescription,
+  name: pageTitle,
+  siteUrl,
+})
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  noindex={false}
+  structuredData={structuredData}
+>
+  <article class="policy-page about-page">
+    <header class="shell policy-header">
+      <p class="eyebrow">關於{SITE_NAME}</p>
+      <h1>給台灣旅人的日本旅遊實用資料</h1>
+      <p>
+        {SITE_NAME}整理大型旅遊平台蓋不到的題目：小型溫泉地與鄉間的住宿、各城市逐月的天氣與穿著、季節活動的時間、地方料理，以及前往小地方的交通安排。
+      </p>
+    </header>
+
+    <div class="shell policy-content">
+      <section>
+        <h2>我們寫給誰看</h2>
+        <p>
+          主要讀者是自己規劃日本行程的台灣旅人。大城市的資訊已經很多，這群讀者卡住的通常是訂房網站找不到的旅館、出發前一個月查不到的天氣，以及要轉好幾趟車的地方交通。
+        </p>
+        <p>
+          因此每篇文章都從實際要做的決定出發：這間旅館能從哪裡訂、那個月該帶什麼衣服、從哪個車站出發要花多久，再說明不同選擇的差異與限制。
+        </p>
+      </section>
+
+      <section>
+        <h2>內容怎麼產出與查證</h2>
+        <p>
+          文章由{EDITORIAL_AUTHOR_NAME}撰寫，另由未參與寫作的驗收者逐項核對來源後才公開。每個主題在動筆前，會先整理讀者實際會問的問題與可查證的公開資料，再決定文章要回答什麼、不回答什麼。
+        </p>
+        <ul>
+          <li>旅館與店家的房型、含餐、營業時間與價格以官網為準；Jalan、樂天 Travel、Tabelog 與 Google 地圖只用來核對與連結，不當正文來源。</li>
+          <li>天氣與季節以氣象廳的三十年平年值為準，並註明不是當天預報；觀光資訊以觀光廳與各地觀光協會的公開資料為準。</li>
+          <li>店家評價只引用米其林、Tabelog 百名店等公開榜單並附上連結，不改寫網路評論，也不抓取地圖或評論網站的照片。</li>
+          <li>每篇文章結尾列出「資料來源」。住宿頁另標示查核日期，每年重查官網一次；價格、營業狀態或季節時間變動時會修訂並更新日期。</li>
+        </ul>
+        <p>
+          我們不代替讀者做最後決定。文章會說明判斷條件與常見取捨，實際訂房、班次與營業狀態仍要以旅館、店家與交通公司當下公布的資訊確認。
+        </p>
+      </section>
+
+      <section>
+        <h2>目前的內容範圍</h2>
+        <p>
+          {SITE_NAME}目前已公開 {publishedArticleCount} 篇文章{topicSummaries.length > 0 ? `，主題包括${topicSummaries.join('、')}` : ''}。其他地區與主題會在完成研究與查證後才公開，避免只放上沒有內容的頁面。
+        </p>
+      </section>
+
+      <section>
+        <h2>我們不做的事</h2>
+        <ul>
+          <li>不販售旅遊商品，也不代理任何旅館、店家或旅行社。</li>
+          <li>不改寫 Tabelog、Google 地圖或其他平台的評論，也不使用其照片。</li>
+          <li>不接受以購買可傳遞排名權重連結為目的的提案，也不把廠商提供的宣傳文字直接當成文章內容。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>訂房連結與合作揭露</h2>
+        <p>
+          住宿文章內通往 Trip.com 與 Agoda 的訂房連結含有聯盟分潤：讀者透過這些連結完成訂房時，{SITE_NAME}會收到平台支付的分潤，讀者的房價不會因此改變。只有官網或日本國內平台能訂的旅館，一律放官網連結，不收取任何費用。
+        </p>
+        <p>
+          網站未來可能刊登廣告，以支持內容製作與維護成本。若有付費合作或贊助內容，會在該篇文章明顯處揭露合作關係，合作方不會決定文章的結論。合作方式與原則請見
+          <a href="/contact/">聯絡與合作</a>。
+        </p>
+      </section>
+
+      <section>
+        <h2>更正與聯絡</h2>
+        <p>
+          發現旅館已歇業、價格或營業時間變動、季節時間與實際不符，歡迎寄信到
+          <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>，或透過
+          <a href="/contact/">聯絡表單</a>告訴我們。確認後會修訂文章並更新查核日期。
+        </p>
+        <p>
+          個人資料與分析工具的處理方式，請見<a href="/privacy/">隱私權政策</a>。
+        </p>
+      </section>
+    </div>
+  </article>
+</BaseLayout>

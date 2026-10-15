@@ -1,0 +1,43 @@
+---
+import type {ClusterNode} from '../lib/clusters'
+
+interface Props {
+  nodes: ClusterNode[]
+  headingTag?: 'h3' | 'h4'
+}
+
+const {nodes, headingTag = 'h3'} = Astro.props
+const Heading = headingTag
+---
+
+<div class="cluster-grid">
+  {nodes.map((node) => (
+    <article class="cluster-card">
+      <Heading><a href={node.path}>{node.title}</a></Heading>
+      <p class="cluster-count">
+        {node.articleCount} 篇文章{node.hasLandingArticle ? '，含主題指南' : ''}
+      </p>
+      {node.description && <p class="cluster-desc">{node.description}</p>}
+      {node.articles.length > 0 && (
+        <details class="cluster-card-links" open>
+          <summary><span>文章列表</span><small>{node.articles.length} 篇</small></summary>
+          <ul class="cluster-links">
+            {node.articles.map((article) => (
+              <li><a href={article.path}>{article.title}</a></li>
+            ))}
+          </ul>
+        </details>
+      )}
+      <a class="cluster-more" href={node.path}>
+        {node.hasLandingArticle ? `閱讀${node.title}主題指南` : `進入${node.title}主題頁`}
+      </a>
+    </article>
+  ))}
+</div>
+<script is:inline>
+  if (window.matchMedia('(max-width: 760px)').matches) {
+    document.querySelectorAll('.cluster-card-links[open]').forEach((element) => {
+      element.open = false
+    })
+  }
+</script>

@@ -1,0 +1,266 @@
+---
+import type {HubPageData} from '../data/hubs'
+import {getHubPath} from '../data/hubs'
+import {EDITORIAL_AUTHOR_NAME} from '../config/site'
+import {siteCategories} from '../data/categories'
+import type {ArticleTagLink} from '../data/tags'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import type {PublishedArticle} from '../lib/sanity'
+import type {ClusterNode} from '../lib/clusters'
+import {IMAGE_SIZES, getResponsiveImage} from '../lib/images'
+import {getArticleFaqItems, getArticleHeadings, renderPortableText} from '../lib/portableText'
+import {createArticleStructuredData} from '../lib/structuredData'
+import ClusterHubList from './ClusterHubList.astro'
+
+interface Props {
+  article: PublishedArticle
+  hub: HubPageData
+  isHubLanding?: boolean
+  tagLinks?: ArticleTagLink[]
+  childClusters?: ClusterNode[]
+}
+
+const {article, hub, isHubLanding = false, tagLinks = [], childClusters = []} = Astro.props
+const category = siteCategories.find((item) => item.slug === hub.categorySlug)
+
+if (!category) {
+  throw new Error(`找不到文章所屬分類：${hub.categorySlug}`)
+}
+
+const hubPath = getHubPath(hub)
+const parentPath = hub.parentHub
+  ? `/${hub.categorySlug}/${hub.parentHub.slug}/`
+  : null
+const backPath = isHubLanding ? (parentPath ?? `/${category.slug}/`) : hubPath
+const backTitle = isHubLanding ? (hub.parentHub?.title ?? category.title) : hub.title
+const headings = getArticleHeadings(article.body)
+const tocHeadings = headings.filter((heading) => heading.level === 2)
+const titleQuestionMarkIndex = article.title.indexOf('？')
+const titleParts = titleQuestionMarkIndex >= 0 && titleQuestionMarkIndex < article.title.length - 1
+  ? [
+      article.title.slice(0, titleQuestionMarkIndex + 1),
+      article.title.slice(titleQuestionMarkIndex + 1),
+    ]
+  : [article.title]
+const titleFollowupPhrases = titleParts.length > 1
+  ? titleParts[1]
+      .split('、')
+      .map((phrase, index, phrases) => `${phrase}${index < phrases.length - 1 ? '、' : ''}`)
+  : []
+const faqItems = getArticleFaqItems(article.body)
+const siblingArticles = hub.articles.filter(
+  (item) => item.published && item.id !== article._id,
+)
+const landingSibling = !isHubLanding && hub.landingArticleId
+  ? siblingArticles.find((item) => item.id === hub.landingArticleId)
+  : undefined
+const hubArticles = landingSibling
+  ? [landingSibling, ...siblingArticles.filter((item) => item.id !== landingSibling.id)]
+  : siblingArticles
+const hubArticlesHeading = isHubLanding
+  ? `${hub.title}延伸閱讀`
+  : `${hub.title}主題的其他文章`
+const publishedDate = new Intl.DateTimeFormat('zh-TW', {
+  dateStyle: 'long',
+  timeZone: 'Asia/Taipei',
+}).format(new Date(article.updatedAt ?? article.publishedAt))
+const authorName = article.authorName || EDITORIAL_AUTHOR_NAME
+const authorHref = article.authorSlug && article.authorSlug !== 'editorial-team'
+  ? `/authors/${article.authorSlug}/`
+  : '/about/'
+const siteUrl = new URL('/', Astro.site ?? Astro.url).href
+const canonicalUrl = new URL(article.canonicalUrl ?? Astro.url.pathname, Astro.site ?? Astro.url).href
+const breadcrumbItems = [
+  {name: '首頁', url: siteUrl},
+  {name: category.title, url: new URL(`/${category.slug}/`, siteUrl).href},
+  ...(hub.parentHub && parentPath
+    ? [{name: hub.parentHub.title, url: new URL(parentPath, siteUrl).href}]
+    : []),
+  {name: hub.title, url: new URL(isHubLanding ? canonicalUrl : hubPath, siteUrl).href},
+  ...(!isHubLanding ? [{name: article.title, url: canonicalUrl}] : []),
+]
+const structuredData = createArticleStructuredData({
+  authorHref: new URL(authorHref, siteUrl).href,
+  authorName,
+  authorType: 'Person',
+  breadcrumbs: breadcrumbItems,
+  canonicalUrl,
+  cover: article.cover
+    ? {
+        url: article.cover.url,
+        width: article.cover.width,
+        height: article.cover.height,
+        caption: article.cover.alt,
+      }
+    : undefined,
+  dateModified: article.updatedAt ?? article.publishedAt,
+  datePublished: article.publishedAt,
+  description: article.seoDescription,
+  faqItems,
+  headline: article.title,
+  keywords: (article.tags ?? []).map((tag) => tag.title),
+  section: hub.title,
+  siteUrl,
+  sponsorName: article.sponsored ? article.sponsorName : undefined,
+})
+---
+
+<BaseLayout
+  title={article.seoTitle}
+  description={article.seoDescription}
+  noindex={article.noindex !== false}
+  canonical={article.canonicalUrl}
+  socialImage={article.cover?.url ?? null}
+  structuredData={structuredData}
+  type="article"
+>
+  <div class="shell breadcrumbs" aria-label="麵包屑導覽">
+    <a href="/">首頁</a><span aria-hidden="true">/</span>
+    <a href={`/${category.slug}/`}>{category.title}</a><span aria-hidden="true">/</span>
+    {hub.parentHub && parentPath && <>
+      <a href={parentPath}>{hub.parentHub.title}</a><span aria-hidden="true">/</span>
+    </>}
+    {isHubLanding ? (
+      <span>{hub.title}</span>
+    ) : (
+      <><a href={hubPath}>{hub.title}</a><span aria-hidden="true">/</span><span>{article.title}</span></>
+    )}
+  </div>
+
+  <article class="article-page">
+    <header class="article-header shell">
+      <div class="article-header-inner">
+        <p class="eyebrow">{isHubLanding ? '主題指南' : hub.title}</p>
+        <h1>
+          <span>{titleParts[0]}</span>
+          {titleFollowupPhrases.length > 0 && (
+            <span>
+              {titleFollowupPhrases.map((phrase) => (
+                <span class="article-title-phrase">{phrase}</span>
+              ))}
+            </span>
+          )}
+        </h1>
+        <p class="article-lede">{article.excerpt}</p>
+        <div class="article-meta">
+          <a href={authorHref}>{authorName}</a>
+          <time datetime={article.updatedAt ?? article.publishedAt}>更新：{publishedDate}</time>
+        </div>
+      </div>
+    </header>
+
+    {article.cover && (
+      <figure class="article-cover shell">
+        <img
+          {...getResponsiveImage(article.cover.url, article.cover.width)}
+          sizes={IMAGE_SIZES.articleCover}
+          width={article.cover.width}
+          height={article.cover.height}
+          alt={article.cover.alt}
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
+        {(article.cover.caption || article.cover.credit) && (
+          <figcaption>
+            {article.cover.caption && <span>{article.cover.caption}</span>}
+            {article.cover.credit && article.cover.sourcePageUrl ? (
+              <a href={article.cover.sourcePageUrl}>{article.cover.credit}</a>
+            ) : article.cover.credit ? (
+              <span>{article.cover.credit}</span>
+            ) : null}
+          </figcaption>
+        )}
+      </figure>
+    )}
+
+    <div class="shell reading-layout">
+      {tocHeadings.length > 0 && (
+        <aside class="reading-aside reading-aside--desktop" aria-label="文章目錄">
+          <p class="aside-title">文章目錄</p>
+          <ul>
+            {tocHeadings.map((heading) => (
+              <li><a href={`#${heading.id}`}>{heading.text}</a></li>
+            ))}
+          </ul>
+        </aside>
+      )}
+
+      {tocHeadings.length > 0 && (
+        <details class="reading-toc-mobile">
+          <summary>
+            <span>文章目錄</span>
+            <small>{tocHeadings.length} 個重點</small>
+          </summary>
+          <ul>
+            {tocHeadings.map((heading) => (
+              <li><a href={`#${heading.id}`}>{heading.text}</a></li>
+            ))}
+          </ul>
+        </details>
+      )}
+
+      <div class="article-body">
+        <div class="portable-content" set:html={renderPortableText(article.body)} />
+
+        {isHubLanding && childClusters.length > 0 && (
+          <section class="hub-related-articles" aria-labelledby="hub-children-heading">
+            <div class="section-heading compact-heading">
+              <div>
+                <p class="eyebrow">延伸主題</p>
+                <h2 id="hub-children-heading">{hub.title}的子主題</h2>
+              </div>
+            </div>
+            <ClusterHubList nodes={childClusters} headingTag="h3" />
+          </section>
+        )}
+
+        {hubArticles.length > 0 && (
+          <section class="hub-related-articles" aria-labelledby="hub-related-heading">
+            <div class="section-heading compact-heading">
+              <div>
+                <p class="eyebrow">主題文章</p>
+                <h2 id="hub-related-heading">{hubArticlesHeading}</h2>
+              </div>
+            </div>
+            <div class="article-list">
+              {hubArticles.map((item, index) => (
+                <a class="article-row" href={item.path ?? `${hubPath}${item.slug}/`}>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <div>
+                    {item.id === landingSibling?.id && <small class="article-row-label">主題指南</small>}
+                    <h3>{item.title}</h3>
+                    <p>{item.excerpt}</p>
+                  </div>
+                  <b aria-hidden="true">→</b>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {!isHubLanding && (
+          <nav class="article-cluster-nav" aria-label="所屬主題">
+            <strong>所屬主題</strong>
+            <div>
+              <a href={hubPath}>{hub.title}</a>
+              {hub.parentHub && parentPath && <a href={parentPath}>{hub.parentHub.title}</a>}
+              <a href={`/${category.slug}/`}>{category.title}</a>
+            </div>
+          </nav>
+        )}
+
+        {tagLinks.length > 0 && (
+          <nav class="article-tags" aria-label="相關情境">
+            <strong>相關情境</strong>
+            <div>
+              {tagLinks.map((tag) => <a href={tag.path}>{tag.title}</a>)}
+            </div>
+          </nav>
+        )}
+
+        {isHubLanding && <a class="back-link" href={backPath}>← 回到{backTitle}</a>}
+      </div>
+    </div>
+  </article>
+</BaseLayout>

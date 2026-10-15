@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import {CONTACT_EMAIL} from '../config/contact'
+import {SITE_NAME} from '../config/site'
+---
+
+<BaseLayout
+  title={`隱私權政策｜${SITE_NAME}`}
+  description={`說明${SITE_NAME}如何處理聯絡表單、流量分析、瀏覽器儲存空間、訂房分潤連結與廣告資料。`}
+  noindex={true}
+>
+  <article class="policy-page">
+    <header class="shell policy-header">
+      <p class="eyebrow">隱私權</p>
+      <h1>隱私權政策</h1>
+      <p>最後更新：2026 年 10 月 15 日</p>
+    </header>
+
+    <div class="shell policy-content">
+      <p>
+        {SITE_NAME}使用必要的網站功能，以及經訪客同意後才載入的流量分析工具。以下說明目前會處理哪些資料、用途，以及如何變更分析資料設定。
+      </p>
+
+      <section>
+        <h2>聯絡與合作表單</h2>
+        <p>
+          使用聯絡表單時，{SITE_NAME}會接收姓名或稱呼、電子郵件、旅館店家或公司、聯絡類型、主旨與訊息內容，用來處理更正、回覆問題及保留必要的合作紀錄。這些資料不會公開或出售，沒有繼續聯絡需要時會從收件信箱刪除。
+        </p>
+        <p>
+          表單透過 Cloudflare Turnstile 判斷送出者是否為自動程式，驗證過程可能處理 IP 位址、瀏覽器與裝置訊號。表單內容再由 Cloudflare Email Service 寄至{SITE_NAME}已驗證的收件信箱。Cloudflare 如何處理資料，可查閱
+          <a href="https://www.cloudflare.com/zh-tw/privacypolicy/">Cloudflare 隱私權政策</a>。
+        </p>
+        <p>
+          不想使用表單時，也可以直接寄信至
+          <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>。來信會依寄件信箱服務商與收件信箱的設定處理。
+        </p>
+      </section>
+
+      <section>
+        <h2>Google Analytics 流量分析</h2>
+        <p>
+          網站啟用流量分析後，訪客選擇「同意分析」才會載入 Google Analytics，記錄頁面網址與標題、來源頁面、裝置與瀏覽器類型、約略地區，以及瀏覽、捲動與外部連結點擊等互動。這些資料用來判斷哪些內容有人閱讀、頁面是否容易使用，以及後續應補充哪些主題。
+        </p>
+        <p>
+          {SITE_NAME}不會要求 Google Analytics 收集姓名、電子郵件、電話或付款資料，也已關閉廣告個人化與 Google signals。Google 如何處理這些資料，可查閱
+          <a href="https://policies.google.com/privacy?hl=zh-TW">Google 隱私權政策</a>。
+        </p>
+      </section>
+
+      <section>
+        <h2>瀏覽器儲存與選擇</h2>
+        <p>
+          網站會在瀏覽器的本機儲存空間記住「同意」或「不同意」的選擇。不同意時不會載入 Google Analytics；同意後，Google Analytics 可能在瀏覽器設定分析用 Cookie。
+        </p>
+        <p>
+          頁尾的「分析資料設定」可以重新開啟選擇視窗。也可以清除瀏覽器的網站資料，移除先前保存的選擇與 Cookie。
+        </p>
+      </section>
+
+      <section>
+        <h2>訂房分潤連結</h2>
+        <p>
+          住宿文章內通往 Trip.com 與 Agoda 的連結含有聯盟分潤追蹤參數。點擊後由該平台記錄來源並處理訂房與付款資料，{SITE_NAME}只會收到匯總的成交統計，不會取得訂房者的姓名、聯絡方式或付款資料。各平台如何處理資料，請查閱其隱私權政策。
+        </p>
+      </section>
+
+      <section>
+        <h2>Google AdSense</h2>
+        <p>
+          網站目前沒有申請 AdSense，尚未載入廣告程式，也沒有顯示個人化或非個人化廣告。正式啟用廣告前，{SITE_NAME}會更新本政策，並完成適用地區所需的廣告同意機制。
+        </p>
+      </section>
+
+      <section>
+        <h2>外部連結</h2>
+        <p>
+          文章可能連到旅館與店家官網、觀光協會、氣象廳、訂房平台或其他網站。離開{SITE_NAME}後，資料處理由該網站自己的隱私權政策與設定負責。
+        </p>
+      </section>
+
+      <section>
+        <h2>政策更新</h2>
+        <p>
+          分析工具、廣告功能或資料用途有實質變更時，這個頁面會同步更新日期與說明。網站正式啟用 AdSense 廣告前，也會補上相應的資料處理內容。
+        </p>
+      </section>
+    </div>
+  </article>
+</BaseLayout>

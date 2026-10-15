@@ -1,0 +1,113 @@
+---
+import '../styles/global.css'
+import AnalyticsConsent from '../components/AnalyticsConsent.astro'
+import {CONTACT_EMAIL} from '../config/contact'
+import {GOOGLE_ADSENSE_PUBLISHER_ID, GOOGLE_ANALYTICS_MEASUREMENT_ID} from '../config/google'
+import {SITE_NAME, formatPageTitle} from '../config/site'
+import {getPublishedCategories} from '../data/hubs'
+import {getPublishedContentRoutes} from '../lib/contentRoutes'
+import {serializeJsonLd} from '../lib/structuredData'
+
+interface Props {
+  title: string
+  description: string
+  noindex?: boolean
+  canonical?: string
+  socialImage?: string | null
+  structuredData?: unknown
+  type?: 'website' | 'article'
+}
+
+const {
+  title,
+  description,
+  noindex = true,
+  canonical,
+  socialImage = '/og.png',
+  structuredData,
+  type = 'website',
+} = Astro.props
+const canonicalUrl = new URL(canonical ?? Astro.url.pathname, Astro.site ?? Astro.url)
+const {publishableHubs} = await getPublishedContentRoutes()
+const navCategories = getPublishedCategories(publishableHubs)
+const documentTitle = formatPageTitle(title)
+const socialImageUrl = socialImage ? new URL(socialImage, Astro.site ?? Astro.url) : null
+---
+
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    {GOOGLE_ADSENSE_PUBLISHER_ID && (
+      <meta name="google-adsense-account" content={GOOGLE_ADSENSE_PUBLISHER_ID} />
+    )}
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:type" content={type} />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    {socialImageUrl && <meta property="og:image" content={socialImageUrl} />}
+    <meta name="twitter:card" content={socialImageUrl ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {structuredData && (
+      <script type="application/ld+json" set:html={serializeJsonLd(structuredData)} />
+    )}
+    <title>{documentTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要內容</a>
+    <header class="site-header">
+      <div class="shell masthead">
+        <p class="masthead-note">給台灣旅人的日本旅遊實用資料</p>
+        <a class="brand" href="/" aria-label={`${SITE_NAME}首頁`}>
+          <span>{SITE_NAME}</span>
+        </a>
+        <div class="masthead-actions">
+          <details class="mobile-menu">
+            <summary>網站分類</summary>
+            <nav class="mobile-nav" aria-label="手機版主要導覽">
+              {navCategories.map((category) => <a href={`/${category.slug}/`}>{category.title}</a>)}
+              <a href="/about/">關於{SITE_NAME}</a>
+            </nav>
+          </details>
+        </div>
+      </div>
+      <div class="site-nav-row">
+        <nav class="shell desktop-nav" aria-label="主要導覽">
+          {navCategories.map((category) => <a href={`/${category.slug}/`}>{category.title}</a>)}
+          <a href="/about/">關於{SITE_NAME}</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <slot />
+    </main>
+    <footer class="site-footer" id="about">
+      <div class="shell footer-grid">
+        <div>
+          <p class="footer-title">{SITE_NAME}</p>
+          <p>整理日本小地方的住宿、各城市逐月天氣、季節活動、地方料理與交通安排，供台灣旅人規劃行程時查閱。</p>
+        </div>
+        <nav class="footer-links" aria-label="網站資訊">
+          <a href="/about/">關於{SITE_NAME}</a>
+          <a href="/contact/">聯絡與合作</a>
+          <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+          <a href="/privacy/">隱私權政策</a>
+          {GOOGLE_ANALYTICS_MEASUREMENT_ID && (
+            <button type="button" data-open-analytics-consent>分析資料設定</button>
+          )}
+        </nav>
+      </div>
+    </footer>
+    {GOOGLE_ANALYTICS_MEASUREMENT_ID && <AnalyticsConsent />}
+  </body>
+</html>

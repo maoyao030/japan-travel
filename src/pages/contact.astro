@@ -1,0 +1,209 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import {
+  CONTACT_API_PATH,
+  CONTACT_EMAIL,
+  CONTACT_TOPICS,
+  TURNSTILE_SITE_KEY,
+} from '../config/contact'
+import {SITE_NAME} from '../config/site'
+
+const turnstileSiteKey =
+  import.meta.env.PUBLIC_TURNSTILE_SITE_KEY?.trim() || TURNSTILE_SITE_KEY
+---
+
+<BaseLayout
+  title={`聯絡與合作｜${SITE_NAME}`}
+  description={`聯絡${SITE_NAME}、提供旅館或店家資料更正，或提出廣告、贊助與內容授權合作。`}
+  noindex={true}
+>
+  <article class="contact-page">
+    <header class="shell contact-header">
+      <p class="eyebrow">聯絡{SITE_NAME}</p>
+      <h1>聯絡與合作</h1>
+      <p>
+        要更正旅館或店家資料、回報文章錯誤或洽談合作，可以直接寄信到
+        <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>，也可以填寫下方表單。
+      </p>
+    </header>
+
+    <div class="shell contact-layout">
+      <aside class="contact-guidance" aria-labelledby="contact-guidance-heading">
+        <h2 id="contact-guidance-heading">來信時請提供</h2>
+        <ul>
+          <li>旅館、店家、公司或聯絡單位</li>
+          <li>要更正的頁面與內容，或合作的內容與形式</li>
+          <li>可公開查閱的資料，例如官網頁面或公告</li>
+        </ul>
+        <p>
+          收到後會依內容評估是否回覆或進一步了解。付費合作會清楚揭露合作關係，也不接受以購買可傳遞排名權重連結為目的的提案。
+        </p>
+        <p class="contact-attachment-note">
+          表單不收附件。需要提供照片、價目表或公告時，可先附上公開連結，或等收到回覆後再寄送。
+        </p>
+      </aside>
+
+      <form
+        class="contact-form"
+        action={CONTACT_API_PATH}
+        method="post"
+        data-contact-form
+        data-ready={turnstileSiteKey ? 'true' : 'false'}
+      >
+        <div class="contact-field-grid">
+          <label>
+            <span>姓名或稱呼</span>
+            <input name="name" autocomplete="name" maxlength="60" required />
+          </label>
+
+          <label>
+            <span>電子郵件</span>
+            <input
+              name="email"
+              type="email"
+              autocomplete="email"
+              inputmode="email"
+              maxlength="254"
+              required
+            />
+          </label>
+        </div>
+
+        <label>
+          <span>旅館、店家或公司 <small>選填</small></span>
+          <input name="organization" autocomplete="organization" maxlength="100" />
+        </label>
+
+        <label>
+          <span>聯絡類型</span>
+          <select name="topic" required>
+            <option value="">請選擇</option>
+            {CONTACT_TOPICS.map((topic) => (
+              <option value={topic.value}>{topic.label}</option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          <span>主旨</span>
+          <input name="subject" maxlength="120" required />
+        </label>
+
+        <label>
+          <span>內容</span>
+          <textarea
+            name="message"
+            rows="8"
+            minlength="10"
+            maxlength="3000"
+            aria-describedby="contact-message-help"
+            required
+          ></textarea>
+        </label>
+        <p class="field-help" id="contact-message-help">
+          請說明要更正的內容或合作方式，附上參考連結，最多 3,000 字。
+        </p>
+
+        <div class="contact-honeypot" aria-hidden="true">
+          <label>
+            <span>網站</span>
+            <input name="website" tabindex="-1" autocomplete="off" />
+          </label>
+        </div>
+
+        <label class="contact-consent">
+          <input name="consent" type="checkbox" value="yes" required />
+          <span>
+            同意{SITE_NAME}使用上述資料回覆這次聯絡，詳細方式請見
+            <a href="/privacy/">隱私權政策</a>。
+          </span>
+        </label>
+
+        {turnstileSiteKey ? (
+          <div
+            class="cf-turnstile"
+            data-sitekey={turnstileSiteKey}
+            data-action="contact_form"
+            data-theme="light"
+          ></div>
+        ) : (
+          <p class="contact-config-notice">
+            聯絡表單正在完成寄送設定，目前請直接寄信至
+            <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>。
+          </p>
+        )}
+
+        <div class="contact-submit-row">
+          <button type="submit" disabled={!turnstileSiteKey}>送出</button>
+          <p class="contact-form-status" role="status" aria-live="polite" data-contact-status></p>
+        </div>
+      </form>
+    </div>
+  </article>
+
+  {turnstileSiteKey && (
+    <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  )}
+  <script>
+    const form = document.querySelector<HTMLFormElement>('[data-contact-form]')
+    const status = document.querySelector<HTMLElement>('[data-contact-status]')
+
+    if (form && status && form.dataset.ready === 'true') {
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault()
+
+        const submitButton = form.querySelector<HTMLButtonElement>('button[type="submit"]')
+        if (!submitButton || submitButton.disabled) return
+
+        submitButton.disabled = true
+        submitButton.textContent = '傳送中…'
+        status.className = 'contact-form-status'
+        status.textContent = '正在傳送。'
+
+        const body = new URLSearchParams()
+        for (const [key, value] of new FormData(form)) {
+          if (typeof value === 'string') body.append(key, value)
+        }
+
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'},
+            body,
+          })
+          const result: unknown = await response.json()
+          const message =
+            typeof result === 'object' &&
+            result !== null &&
+            'message' in result &&
+            typeof result.message === 'string'
+              ? result.message
+              : '目前無法送出，請稍後再試或直接寄信。'
+
+          status.textContent = message
+          status.classList.add(response.ok ? 'is-success' : 'is-error')
+
+          if (response.ok) {
+            form.reset()
+            submitButton.textContent = '已送出'
+            return
+          }
+
+          const turnstileApi = Reflect.get(window, 'turnstile') as
+            | {reset?: (widget?: HTMLElement) => void}
+            | undefined
+          const turnstileWidget = form.querySelector<HTMLElement>('.cf-turnstile')
+          turnstileApi?.reset?.(turnstileWidget ?? undefined)
+        } catch {
+          status.textContent = '目前無法連線，請稍後再試或直接寄信。'
+          status.classList.add('is-error')
+        } finally {
+          if (submitButton.textContent !== '已送出') {
+            submitButton.disabled = false
+            submitButton.textContent = '送出'
+          }
+        }
+      })
+    }
+  </script>
+</BaseLayout>

@@ -1,0 +1,96 @@
+---
+import ArticlePage from '../../../components/ArticlePage.astro'
+import HubPage from '../../../components/HubPage.astro'
+import {siteCategories, type SiteCategory} from '../../../data/categories'
+import {getArticleEntrySlug, type HubPageData} from '../../../data/hubs'
+import {getArticleTagLinks, type ArticleTagLink} from '../../../data/tags'
+import {getPublishedContentRoutes} from '../../../lib/contentRoutes'
+import type {PublishedArticle} from '../../../lib/sanity'
+
+type ChildHubPage = {
+  kind: 'hub'
+  category: SiteCategory
+  hub: HubPageData
+  landingArticle?: PublishedArticle
+  tagLinks: ArticleTagLink[]
+}
+
+type DirectArticlePage = {
+  kind: 'article'
+  article: PublishedArticle
+  hub: HubPageData
+  tagLinks: ArticleTagLink[]
+}
+
+export async function getStaticPaths() {
+  const {landingArticles, publishableHubs, publishableTags, routableArticles} =
+    await getPublishedContentRoutes()
+
+  const paths = [
+    ...publishableHubs.filter((hub) => hub.parentHub).map((hub) => {
+      const category = siteCategories.find((item) => item.slug === hub.categorySlug)
+      if (!category || !hub.parentHub) {
+        throw new Error(`找不到子主題中心所屬分類或父層：${hub.title}`)
+      }
+
+      const landingArticle = landingArticles.find(
+        (item) => item.hub.id === hub.id,
+      )?.article
+
+      return {
+        params: {
+          category: hub.categorySlug,
+          hub: hub.parentHub.slug,
+          entry: hub.slug,
+        },
+        props: {
+          kind: 'hub',
+          category,
+          hub,
+          landingArticle,
+          tagLinks: getArticleTagLinks(landingArticle?.tags, publishableTags),
+        } satisfies ChildHubPage,
+      }
+    }),
+    ...routableArticles.map(({article, hub}) => ({
+      params: {
+        category: hub.categorySlug,
+        hub: hub.parentHub?.slug ?? hub.slug,
+        entry: getArticleEntrySlug(article.slug, hub),
+      },
+      props: {
+        kind: 'article',
+        article,
+        hub,
+        tagLinks: getArticleTagLinks(article.tags, publishableTags),
+      } satisfies DirectArticlePage,
+    })),
+  ]
+
+  const routeKeys = paths.map(
+    ({params}) => `${params.category}/${params.hub}/${params.entry}`,
+  )
+  if (new Set(routeKeys).size !== routeKeys.length) {
+    throw new Error('文章與子主題中心產生了重複網址')
+  }
+
+  return paths
+}
+
+const page = Astro.props as ChildHubPage | DirectArticlePage
+---
+
+{page.kind === 'hub' ? (
+  page.landingArticle ? (
+    <ArticlePage
+      article={page.landingArticle}
+      hub={page.hub}
+      isHubLanding
+      tagLinks={page.tagLinks}
+    />
+  ) : (
+    <HubPage category={page.category} hub={page.hub} />
+  )
+) : (
+  <ArticlePage article={page.article} hub={page.hub} tagLinks={page.tagLinks} />
+)}

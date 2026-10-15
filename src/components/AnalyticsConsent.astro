@@ -1,0 +1,117 @@
+---
+import {GOOGLE_ANALYTICS_MEASUREMENT_ID} from '../config/google'
+---
+
+<section
+  class="analytics-consent"
+  data-analytics-consent
+  role="dialog"
+  aria-labelledby="analytics-consent-title"
+  aria-describedby="analytics-consent-description"
+  hidden
+>
+  <div>
+    <p class="analytics-consent-title" id="analytics-consent-title">分析資料設定</p>
+    <p id="analytics-consent-description">
+      我們使用 Google Analytics 了解哪些內容被閱讀，只有在你同意後才會載入。AdSense 廣告目前尚未啟用，你可以隨時在頁尾更改設定。
+    </p>
+    <a href="/privacy/">查看隱私權政策</a>
+  </div>
+  <div class="analytics-consent-actions">
+    <button type="button" data-analytics-decline>不同意</button>
+    <button type="button" class="analytics-consent-accept" data-analytics-accept>同意分析</button>
+  </div>
+</section>
+
+<script is:inline define:vars={{measurementId: GOOGLE_ANALYTICS_MEASUREMENT_ID}}>
+  (() => {
+    const preferenceKey = 'japan-travel-analytics-consent-v1'
+    const banner = document.querySelector('[data-analytics-consent]')
+    const acceptButton = document.querySelector('[data-analytics-accept]')
+    const declineButton = document.querySelector('[data-analytics-decline]')
+    const preferenceButtons = document.querySelectorAll('[data-open-analytics-consent]')
+    let analyticsLoaded = false
+
+    const readPreference = () => {
+      try {
+        return window.localStorage.getItem(preferenceKey)
+      } catch {
+        return null
+      }
+    }
+
+    const savePreference = (value) => {
+      try {
+        window.localStorage.setItem(preferenceKey, value)
+      } catch {
+        // 瀏覽器阻擋本機儲存時，選擇只套用於目前頁面。
+      }
+    }
+
+    const setBannerVisibility = (visible) => {
+      if (!(banner instanceof HTMLElement)) return
+      banner.hidden = !visible
+
+      if (visible && acceptButton instanceof HTMLElement) {
+        acceptButton.focus()
+      }
+    }
+
+    const loadAnalytics = () => {
+      if (analyticsLoaded) return
+      analyticsLoaded = true
+
+      window.dataLayer = window.dataLayer || []
+      window.gtag = function () {
+        window.dataLayer.push(arguments)
+      }
+
+      window.gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+      })
+      window.gtag('consent', 'update', {
+        analytics_storage: 'granted',
+      })
+      window.gtag('js', new Date())
+      window.gtag('config', measurementId, {
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false,
+      })
+
+      const googleTag = document.createElement('script')
+      googleTag.async = true
+      googleTag.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`
+      document.head.append(googleTag)
+    }
+
+    const preference = readPreference()
+    if (preference === 'granted') {
+      loadAnalytics()
+    } else if (preference !== 'denied') {
+      setBannerVisibility(true)
+    }
+
+    acceptButton?.addEventListener('click', () => {
+      savePreference('granted')
+      setBannerVisibility(false)
+      loadAnalytics()
+    })
+
+    declineButton?.addEventListener('click', () => {
+      const shouldReload = analyticsLoaded
+      savePreference('denied')
+      setBannerVisibility(false)
+
+      if (shouldReload) {
+        window.location.reload()
+      }
+    })
+
+    preferenceButtons.forEach((button) => {
+      button.addEventListener('click', () => setBannerVisibility(true))
+    })
+  })()
+</script>
