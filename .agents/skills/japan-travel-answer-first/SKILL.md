@@ -68,7 +68,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 ### 語氣、SEO 與小知識
 
-依 [語氣、SEO 與小知識](references/voice-and-seo.md)：像做足功課的朋友用「你」說話、地名先中文、段落短；SEO 規範沿用好材誌（主要查詢完整出現在開頭兩段、H2 帶地名、次要查詢進 H2／H3、真實問題才設 FAQ）；和讀者會經過的地方有關的小故事，有來源才寫，一頁 0～3 則。
+依 [語氣、SEO 與小知識](references/voice-and-seo.md)：調性是寫給未來自己的旅行手札（筆記口吻、省略主語、提醒寫給自己）、地名先中文、段落短；SEO 規範沿用好材誌（主要查詢完整出現在開頭兩段、H2 帶地名、次要查詢進 H2／H3、真實問題才設 FAQ）；和讀者會經過的地方有關的小故事，有來源才寫，一頁 0～3 則。
 
 ### 開頭直接回答
 
