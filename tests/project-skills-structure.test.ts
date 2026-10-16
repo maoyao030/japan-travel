@@ -63,7 +63,7 @@ test('本站規則寫進了對應的 Skill', async () => {
 
   assert.match(planner, /0 不等於沒人搜/)
   assert.match(planner, /SERP observation/)
-  assert.match(workflow, /搜尋量 100 以上/)
+  assert.match(workflow, /地點 × 主題/)
   assert.match(workflow, /川湯/)
   assert.match(writer, /日文官方資料/)
   assert.match(writer, /只取事實，不翻譯段落/)
