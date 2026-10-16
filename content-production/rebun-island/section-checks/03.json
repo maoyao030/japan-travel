@@ -1,0 +1,203 @@
+{
+  "section": "03 禮文島住哪裡？",
+  "checker": "r3 section-check 03-04",
+  "items": [
+    {
+      "excerpt": "觀光協會清單上的 9 家住宿",
+      "factIds": [
+        "F49"
+      ],
+      "verdict": "ok",
+      "reason": "Live page (curl 2026-10-16): 香深 6 (咲涼、ホテル礼文、花れぶん、きりり、う～に～、はな心) + 船泊 3 (礼文荘、海憧、星観荘) = 9."
+    },
+    {
+      "excerpt": "礼文観光ホテル咲涼-Saryo- | 香深 | 18,000～35,000 日圓（含稅、含早晚餐、入湯稅 150 日圓），依期間變動 | 走路 10 分 | 現金、VISA、Mastercard | 0163-86-1717、rebun@okcs.co.jp",
+      "factIds": [
+        "F50",
+        "F95"
+      ],
+      "verdict": "ok",
+      "reason": "Matches: 18,000円～35,000円（税込・2食付・入湯税150円) ※期間により変動あり; 現金、VISA、マスターカード; 0163-86-1717; rebun@okcs.co.jp; 徒歩10分、車2分."
+    },
+    {
+      "excerpt": "ホテル礼文 | 香深 | 16,500～31,900 日圓（含稅、含早晚餐、入湯稅 150 日圓）| 在港口正面，走路 1 分 | 只收現金 | 0163-86-1990",
+      "factIds": [
+        "F51"
+      ],
+      "verdict": "ok",
+      "reason": "Matches: 香深港の正面; 16,500円～31,900円（税込・2食付・入湯税150円); 決済方法 現金; 0163-86-1990; 徒歩1分. No email listed (correct)."
+    },
+    {
+      "excerpt": "花れぶん | 香深 | 22,000～44,000 日圓（含稅、含早晚餐、入湯稅 150 日圓、道內住宿稅 100～200 日圓）| 走路 5 分 | 現金、主要信用卡 | 0163-86-1666、info@hanarebun.com",
+      "factIds": [
+        "F52"
+      ],
+      "verdict": "ok",
+      "reason": "Matches all conditions; payment 現金、マスター・アメックス・JCB・VISA・ダイナース; 徒歩5分."
+    },
+    {
+      "excerpt": "民宿きりり | 香深（香深井） | 8,400～13,000 日圓（未稅）| 開車 10 分，有接送 | 現金、American Express | 0163-89-6115、kiriri-moto@cream.plala.or.jp",
+      "factIds": [
+        "F53",
+        "F96"
+      ],
+      "verdict": "ok",
+      "reason": "Matches: 字香深井; 8,400円～13,000円（税別）; 送迎あり; 現金、アメックス; 0163-89-6115; 車10分 (徒歩150分)."
+    },
+    {
+      "excerpt": "ペンション　う～に～ | 香深 | 每人 9,900～22,385 日圓（含稅、含服務費、含早晚餐）| 走路 15 分 | 信用卡（清單沒寫現金）| 0163-86-1541",
+      "factIds": [
+        "F54"
+      ],
+      "verdict": "ok",
+      "reason": "Matches: 1名様あたり9,900円～22,385円 ※１泊２食、サ込、税込; カード可（マスター・アメックス・JCB・VISA・ダイナース・楽天）, no cash mentioned; TEL 0163-86-1541; 徒歩15分."
+    },
+    {
+      "excerpt": "民宿はな心 | 香深 | 4/20–9/30 為 13,750～17,600 日圓，10/1–4/19 為 9,350～13,200 日圓（含稅、含早晚餐）| 走路 15 分 | 現金、主要信用卡 | 0163-86-1648",
+      "factIds": [
+        "F55"
+      ],
+      "verdict": "ok",
+      "reason": "Matches both seasonal bands (２食付、税込), payment, phone, 徒歩15分."
+    },
+    {
+      "excerpt": "ホテル礼文荘 | 船泊 | 11,000～15,000 日圓（含稅、含早晚餐）| 開車約 30 分，有接送 | 現金、主要信用卡 | 0163-87-2755、todo@d1.dion.ne.jp",
+      "factIds": [
+        "F56"
+      ],
+      "verdict": "ok",
+      "reason": "Matches: 11,000円～15,000円（2食付・税込）; 送迎あり; 香深港より車で約30分; phone/email correct."
+    },
+    {
+      "excerpt": "民宿海憧 | 船泊 | 13,200～17,600 日圓（含稅、含早晚餐）| 開車 25 分，渡輪站往返免費接送 | 現金、主要信用卡 | 0163-87-2717、kaido@hokkai.or.jp",
+      "factIds": [
+        "F57"
+      ],
+      "verdict": "ok",
+      "reason": "Matches: 13,200円～17,600円(2食付、税込）; フェリーターミナルから当宿までの行き帰りは無料送迎; 車25分; TEL/email correct."
+    },
+    {
+      "excerpt": "星観荘 | 船泊 | 6,000～8,500 日圓（含稅），男女分開的團體房 | 開車約 40 分，有接送 | 只收現金 | 0163-87-2818",
+      "factIds": [
+        "F58"
+      ],
+      "verdict": "ok",
+      "reason": "Matches: 男女別相部屋4室; 6,000円～8,500円（税込）; 送迎あり; 現金のみ; 車で約40分; 0163-87-2818."
+    },
+    {
+      "excerpt": "清單只有ペンション　う～に～寫明是每人價格；其他家沒寫是每人還是每間",
+      "factIds": [
+        "F54"
+      ],
+      "verdict": "ok",
+      "reason": "Only う～に～ says 1名様あたり."
+    },
+    {
+      "excerpt": "入湯稅是否已含在價格裡，清單沒寫",
+      "factIds": [
+        "F50",
+        "F51",
+        "F52"
+      ],
+      "verdict": "ok",
+      "reason": "List only puts 入湯税150円 inside the parenthetical; inclusion is ambiguous, statement is accurate."
+    },
+    {
+      "excerpt": "民宿きりり與星観荘沒寫含不含餐",
+      "factIds": [
+        "F53",
+        "F58"
+      ],
+      "verdict": "ok",
+      "reason": "Both price lines lack 2食付."
+    },
+    {
+      "excerpt": "付現金只收日圓",
+      "factIds": [
+        "F95"
+      ],
+      "verdict": "ok",
+      "reason": "現金のお支払いは日本円のみです。"
+    },
+    {
+      "excerpt": "想走路往返渡輪站：選香深。ホテル礼文 1 分、花れぶん 5 分、咲涼 10 分、う～に～與はな心 15 分",
+      "factIds": [
+        "F50",
+        "F51",
+        "F52",
+        "F54",
+        "F55"
+      ],
+      "verdict": "ok",
+      "reason": "Walking times match."
+    },
+    {
+      "excerpt": "船泊在島的北側。船泊的三家都寫有接送；只有海憧寫明渡輪站往返免費",
+      "factIds": [
+        "F49",
+        "F56",
+        "F57",
+        "F58"
+      ],
+      "verdict": "ok",
+      "reason": "All three 船泊 entries have 送迎あり; only 海憧 states free round trip."
+    },
+    {
+      "excerpt": "清單列出的聯絡方式是電話、傳真、電子郵件與官網，沒有寫訂房方式",
+      "factIds": [
+        "F50",
+        "F51",
+        "F52",
+        "F53",
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F58"
+      ],
+      "verdict": "ok",
+      "reason": "Accurate as an aggregate (not every inn has all four; e.g. はな心 has no FAX)."
+    },
+    {
+      "excerpt": "有電子郵件的是咲涼、花れぶん、きりり、礼文荘、海憧",
+      "factIds": [
+        "F50",
+        "F52",
+        "F56",
+        "F57",
+        "F96"
+      ],
+      "verdict": "ok",
+      "reason": "Exactly these five have mailto links."
+    },
+    {
+      "excerpt": "不會說日文的話，可以用電子郵件聯絡。",
+      "factIds": [],
+      "verdict": "fix",
+      "reason": "Untagged advice not supported by the list: the page doesn't say these inns reply to English email; its only advice to overseas visitors is about phone calls. Correction: make it clearly the site's own suggestion, e.g. 「清單沒說能不能用英文寫信；不會說日文的話，可以試著用簡單的英文寄電子郵件」, or delete the sentence."
+    },
+    {
+      "excerpt": "清單給海外旅客的建議是：打電話時用簡單的英語、慢慢說、準備日文字典",
+      "factIds": [
+        "F95"
+      ],
+      "verdict": "ok",
+      "reason": "Matches ※海外の方へ note."
+    },
+    {
+      "excerpt": "本站還沒查這幾家是否在 Trip.com 或 Agoda 上架。",
+      "factIds": [],
+      "verdict": "ok",
+      "reason": "Editorial disclosure, not a factual claim."
+    },
+    {
+      "excerpt": "清單沒寫營業期間，只有民宿はな心列了 10/1–4/19 的價格；冬天去要逐家確認是否營業。",
+      "factIds": [
+        "F49",
+        "F55"
+      ],
+      "verdict": "ok",
+      "reason": "No operating periods on the page; only はな心 shows a winter-season band."
+    }
+  ]
+}

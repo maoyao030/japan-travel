@@ -1,0 +1,202 @@
+{
+  "section": "04 禮文島幾月去最好？",
+  "checker": "r3 section-check 03-04",
+  "items": [
+    {
+      "excerpt": "想看敦盛草，往年大約是 5 月下旬到 6 月中旬",
+      "factIds": [
+        "F30"
+      ],
+      "verdict": "ok",
+      "reason": "visit-hokkaido: 例年5月下旬から6月中旬頃の開花期."
+    },
+    {
+      "excerpt": "步道 2026 年在 7/9 時已全線可通行",
+      "factIds": [
+        "F85"
+      ],
+      "verdict": "ok",
+      "reason": "rebun-trail: 7/9現在、島内のトレッキングコースは全線通行可能."
+    },
+    {
+      "excerpt": "10/20 起除了礼文林道都封閉",
+      "factIds": [
+        "F33"
+      ],
+      "verdict": "fix",
+      "reason": "Leaves out a condition: 礼文滝コース closes earlier, on 10/1. Correction: 「10/1 起礼文滝コース封閉，10/20 起除了礼文林道以外的步道也封閉」 (the October table row already gets this right)."
+    },
+    {
+      "excerpt": "觀光巴士 2026 年只在 5/3–5/5 與 5/20–9/30 運行",
+      "factIds": [
+        "F26"
+      ],
+      "verdict": "fix",
+      "reason": "That period is for 礼文A only; 礼文B runs only 6/1–9/30 (same soyabus page). Correction: 「觀光巴士礼文A コース 2026 年只在 5/3–5/5 與 5/20–9/30 運行（礼文B 只在 6/1–9/30）」. The May-row 'and from 5/20' should also say 礼文A."
+    },
+    {
+      "excerpt": "12-month temperature table (平均/日最高/日最低)",
+      "factIds": [
+        "F59",
+        "F118"
+      ],
+      "verdict": "ok",
+      "reason": "All 36 values match JMA 礼文 normals (curl 2026-10-16), 統計期間 2003～2020: Jan −4.6/−2.7/−6.5 … Dec −2.4/−0.3/−4.5."
+    },
+    {
+      "excerpt": "4 月 | 4/28 起渡輪改為春季班次",
+      "factIds": [
+        "F4"
+      ],
+      "verdict": "ok",
+      "reason": "Heartland 2026 timetable has a 4/28～5/31 band (1/1～4/27 is two round trips a day)."
+    },
+    {
+      "excerpt": "5 月 | 2026 年敦盛草群生地 5/11 起分區開園；觀光巴士 5/3–5/5 與 5/20 起",
+      "factIds": [
+        "F26",
+        "F94"
+      ],
+      "verdict": "ok",
+      "reason": "船泊海岸浜 5/11, 鉄府 5/15; bus dates are right for 礼文A (see the 礼文A/B fix above)."
+    },
+    {
+      "excerpt": "6 月 | 敦盛草花期往年大約到中旬，渡輪 6/1 起每天三班直航",
+      "factIds": [
+        "F1",
+        "F30"
+      ],
+      "verdict": "ok",
+      "reason": "6/1～9/30: three 稚内→香深 and three 香深→稚内 sailings, none marked ＜利尻経由＞."
+    },
+    {
+      "excerpt": "7 月 | 2026 年 7/9 時步道全線可通行",
+      "factIds": [
+        "F85"
+      ],
+      "verdict": "ok",
+      "reason": "Matches."
+    },
+    {
+      "excerpt": "8 月 | 2026 年花火大會 8/10、海峽祭 8/12（2027 年以官方公告為準）",
+      "factIds": [
+        "F41"
+      ],
+      "verdict": "ok",
+      "reason": "rebun-island.jp/event: 令和8年度は8月10日に花火大会、12日に海峡祭り (past tense; caveat present)."
+    },
+    {
+      "excerpt": "9 月 | 觀光巴士開到 9/30",
+      "factIds": [
+        "F26"
+      ],
+      "verdict": "ok",
+      "reason": "Both 礼文A and B end 9/30."
+    },
+    {
+      "excerpt": "10 月 | 礼文滝コース 10/1、其他步道 10/20 封閉（礼文林道除外）",
+      "factIds": [
+        "F33"
+      ],
+      "verdict": "ok",
+      "reason": "Matches."
+    },
+    {
+      "excerpt": "11 月 | 渡輪每個方向每天兩班，巴士走冬季班表",
+      "factIds": [
+        "F3",
+        "F60"
+      ],
+      "verdict": "ok",
+      "reason": "11/1～12/31 稚内発 06:35/14:10, 香深発 09:00/17:05. Winter bus table (令和8年10月1日改正) is in effect, with the 11/1～ times."
+    },
+    {
+      "excerpt": "12 月 / 2 月 / 3 月 | 渡輪每個方向每天兩班",
+      "factIds": [
+        "F3"
+      ],
+      "verdict": "ok",
+      "reason": "1/1～4/27 and 11/1～12/31 have two sailings each direction."
+    },
+    {
+      "excerpt": "1 月 | 2027 年 1/1–1/3 巴士全線停駛",
+      "factIds": [
+        "F63"
+      ],
+      "verdict": "ok",
+      "reason": "PDF: 令和9年1月元旦、2日、3日は全便運休."
+    },
+    {
+      "excerpt": "氣溫是氣象廳礼文觀測站 2003–2020 年的平均，不是預報",
+      "factIds": [
+        "F59",
+        "F118"
+      ],
+      "verdict": "ok",
+      "reason": "統計期間 2003～2020."
+    },
+    {
+      "excerpt": "8 月日最高平均也只有 22.6℃，桃岩展望台一帶的步道強風與濃霧並不少見，要帶防風外套。",
+      "factIds": [
+        "F59",
+        "F36"
+      ],
+      "verdict": "ok",
+      "reason": "22.6 matches JMA; 強風や濃霧も珍しくありません. The jacket advice follows from these."
+    },
+    {
+      "excerpt": "2026 年船泊海岸浜 5/11 開園，鉄府木道與展望區 5/15 開園，6/20 下午 4:30 閉園。開放時間各區不同：船泊海岸浜 7:00–17:00，鉄府兩區 8:30–17:00、16:30 最後入場。群生地在船泊，從香深港開車約 30 分",
+      "factIds": [
+        "F31",
+        "F94",
+        "F32"
+      ],
+      "verdict": "ok",
+      "reason": "All dates/hours match rebun-trail notices; visit-hokkaido gives 所在地 船泊村 and 約30分."
+    },
+    {
+      "excerpt": "海膽：官網沒有寫採收月份；ペンションう～に～寫的漁期是 5 月到 9 月",
+      "factIds": [
+        "F42",
+        "F43"
+      ],
+      "verdict": "ok",
+      "reason": "Gourmet page has no months; hotel list: ウニの漁期は5月～9月."
+    },
+    {
+      "excerpt": "步道只剩礼文林道コース沒有冬季封閉。從元地口經レブンウスユキソウ群生地到香深井，約 8.2km；元地口往返群生地的難度是一顆星。官網沒說下雪時能不能走",
+      "factIds": [
+        "F33",
+        "F76"
+      ],
+      "verdict": "ok",
+      "reason": "8.2km and ★ match the forest-course page; no snow/winter guidance found on it."
+    },
+    {
+      "excerpt": "觀光巴士已結束，北のカナリアパーク只開到 10 月",
+      "factIds": [
+        "F26",
+        "F105"
+      ],
+      "verdict": "ok",
+      "reason": "カナリアパーク 5月～10月 (校舎・トイレ)."
+    },
+    {
+      "excerpt": "住在島上：冬季平日搭 7:40 往スコトン，11:46 從スコトン回，12:45 到渡輪站，趕得上 17:05 的末班船",
+      "factIds": [
+        "F107"
+      ],
+      "verdict": "ok",
+      "reason": "Checked against the rendered winter PDF: 7:40 → スコトン 8:39; スコトン 11:46 → FT 12:45; 香深発 17:05."
+    },
+    {
+      "excerpt": "當天從稚內來：08:30 到港後只能搭平日 10:45 的巴士，11:44 到スコトン；回程只有 2 分鐘後的 11:46，或 17:21（18:20 才到渡輪站，趕不上末班船）。假日最後一班從スコトン回渡輪站是 17:30 到，同樣趕不上",
+      "factIds": [
+        "F107",
+        "F83"
+      ],
+      "verdict": "ok",
+      "reason": "Ferry 06:35→08:30; weekday 10:45→11:44; return 11:46 or 17:21 (11/1～)→18:20; holiday last 16:31→17:30 > 17:05. The arithmetic is correct."
+    }
+  ]
+}
