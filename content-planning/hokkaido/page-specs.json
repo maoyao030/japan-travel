@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "region": "hokkaido",
+  "scope": [
+    "wakkanai",
+    "cape-soya",
+    "rishiri-island",
+    "rebun-island"
+  ],
+  "status": "planning-complete",
+  "plannedAt": "2026-10-16",
+  "plannedBy": "Claude Code（japan-travel-topic-planner）",
+  "prerequisites": [
+    "Sanity 要先建立北海道地區 Hub（hub-places-hokkaido，placeKind region）供各地點填所屬地區；地區頁本身這輪不規劃，publicationState 維持草稿。",
+    "Darren 核准後，把 wakkanai、cape-soya、rishiri-island、rebun-island 加進 src/data/categories.ts 的 places.topics；local-bus-seiriken 加進 guides.topics。"
+  ],
+  "items": [
+    {
+      "articleId": "wakkanai",
+      "priority": 1,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "planningTitle": "稚內自由行怎麼安排，從機場、JR 到搭渡輪去利尻島與禮文島",
+      "primaryQuery": "稚內",
+      "secondaryQueries": [
+        "稚內旅遊",
+        "稚內自由行",
+        "稚內交通",
+        "稚內住宿",
+        "稚內天氣",
+        "稚內機場",
+        "稚內美食",
+        "稚內船班"
+      ],
+      "targetPath": "/places/wakkanai/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "aspect": "other",
+      "primaryHubId": "hub-places-wakkanai",
+      "contentBoundary": "寫稚內市區、機場與港口，以及從稚內出發的渡輪怎麼搭、怎麼訂；宗谷岬另有條目只簡述並連過去；利尻島與禮文島島上的安排各有條目。",
+      "place": {
+        "nameZh": "稚內",
+        "japaneseNames": [
+          "稚内",
+          "稚内市",
+          "稚内港",
+          "稚内空港"
+        ],
+        "japaneseSearchTerms": [
+          "稚内 観光",
+          "ハートランドフェリー 時刻表",
+          "ハートランドフェリー 予約",
+          "宗谷バス 路線バス",
+          "特急宗谷 指定席",
+          "わっかない号 高速バス",
+          "稚内みなと南極まつり",
+          "稚内 タコしゃぶ",
+          "稚内 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "cape-soya",
+          "rishiri-island",
+          "rebun-island"
+        ],
+        "gatewayPlaceIds": [],
+        "bestMonths": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓不會日文的台灣旅客決定要不要把稚內排進行程，並排好怎麼到、住哪裡、怎麼轉搭渡輪。",
+        "primaryReaderOutcome": "讀完知道從札幌或羽田怎麼到稚內、要不要先訂位、住哪一區，以及渡輪票怎麼買、末班幾點、停駛時怎麼辦。",
+        "mustAnswer": [
+          "稚內值得去嗎，適合安排幾天",
+          "從羽田或新千歲飛稚內，機場到市區怎麼去，機場巴士只收現金嗎",
+          "札幌到稚內搭 JR 特急宗谷要多久，是不是全車指定席要先訂位",
+          "札幌到稚內的高速巴士わっかない號怎麼訂，冬季深夜班停駛",
+          "稚內港渡輪（Heartland Ferry）到利尻島、禮文島一天幾班、要多久、多少錢",
+          "渡輪船票怎麼買，網路預約什麼時候開放，二等艙能不能預約",
+          "渡輪停駛怎麼知道，當天幾點公布",
+          "稚內住宿有哪些選擇，Dormy Inn 稚內在哪裡、能從哪裡訂",
+          "稚內幾月去最好，各月氣溫、降雪與穿著（氣象廳平年值，不是預報）",
+          "稚內冬天能看流冰嗎，冬季有哪些活動（犬ぞり大會、氷雪の広場）",
+          "稚內有什麼必吃，タコしゃぶ、ホタテ、稚內拉麵在哪裡吃",
+          "市區景點：稚内港北防波堤ドーム、ノシャップ岬、稚内公園、副港市場",
+          "稚內到宗谷岬怎麼去，有沒有觀光巴士",
+          "稚內到庫頁島還有船嗎（目前沒有）",
+          "稚內一日遊行不行，搭機或 JR 的時間夠不夠"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "宗谷岬、白い道、宗谷丘陵的完整安排",
+            "ownerArticleId": "cape-soya",
+            "reason": "另有條目"
+          },
+          {
+            "topic": "利尻島島內交通與景點",
+            "ownerArticleId": "rishiri-island",
+            "reason": "另有條目"
+          },
+          {
+            "topic": "禮文島島內交通與步道",
+            "ownerArticleId": "rebun-island",
+            "reason": "另有條目"
+          },
+          {
+            "topic": "整理券巴士的完整搭法",
+            "ownerArticleId": "local-bus-seiriken",
+            "reason": "共用教學頁"
+          }
+        ],
+        "sharedGuides": [
+          "local-bus-seiriken"
+        ]
+      },
+      "bookingChannels": "research-required",
+      "keywordEvidence": [
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "稚內",
+          "volume": 1100,
+          "trafficPotential": 350,
+          "serpIntentConfirmed": true,
+          "serpNotes": "前十名：維基百科、HOKKAIDO LOVE 行程、GLTJP 景點清單、機場資訊小站（DR 33）、旅行團、WOW50（DR 18）、樂吃購。沒有完整的自由行與渡輪攻略。"
+        },
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "稚內天氣",
+          "volume": 250,
+          "trafficPotential": null,
+          "serpIntentConfirmed": true,
+          "serpNotes": "前十名全是天氣預報網站，不單獨成頁，寫成各月氣候段落。"
+        }
+      ],
+      "competition": "前五名是維基百科、官方行程與景點清單，沒有從交通、訂位到渡輪一次講清楚的繁中頁。",
+      "discoveries": [
+        "wakkanai-minato-nankyoku-matsuri",
+        "wakkanai-dogsled",
+        "wakkanai-night-and-light",
+        "wakkanai-hyosetsu-no-hiroba",
+        "wakkanai-sakhalin-ferry-none",
+        "wakkanai-takoshabu",
+        "wakkanai-breakwater-dome",
+        "noshappu-misaki"
+      ],
+      "openQuestions": [
+        "渡輪二等艙能不能預約：渡輪公司「ご予約について」與「よくあるご質問」說法不同，寫作時要逐字核對。",
+        "JR 特急宗谷全車指定席從哪一天開始：JR 北海道列車介紹頁寫全車指定，改正日期只有第二手資料。",
+        "宗谷巴士路線巴士能不能用 IC 卡：官網乘車方法只寫整理券與現金。",
+        "稚內觀光協會與宗谷巴士官網調查當天 503，寫作時要重查。"
+      ],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結在寫作時從已上線清單挑選。"
+    },
+    {
+      "articleId": "cape-soya",
+      "priority": 2,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "planningTitle": "宗谷岬怎麼去，日本最北端從稚內搭巴士、白い道與宗谷丘陵的安排",
+      "primaryQuery": "宗谷岬",
+      "secondaryQueries": [
+        "北海道最北端",
+        "宗谷岬交通",
+        "稚內到宗谷岬巴士",
+        "宗谷丘陵",
+        "白色道路"
+      ],
+      "targetPath": "/places/cape-soya/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "aspect": "sight",
+      "primaryHubId": "hub-places-cape-soya",
+      "contentBoundary": "寫宗谷岬、宗谷丘陵與白い道，以及從稚內往返的交通；稚內市區與渡輪寫在稚內條目。",
+      "place": {
+        "nameZh": "宗谷岬",
+        "japaneseNames": [
+          "宗谷岬",
+          "日本最北端の地の碑",
+          "宗谷丘陵",
+          "白い道"
+        ],
+        "japaneseSearchTerms": [
+          "宗谷岬 アクセス",
+          "宗谷岬 バス 時刻表",
+          "白い道 宗谷丘陵 通行",
+          "宗谷丘陵 フットパス",
+          "日本最北端到着証明書",
+          "初日の出 宗谷岬"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "wakkanai"
+        ],
+        "gatewayPlaceIds": [
+          "wakkanai"
+        ],
+        "bestMonths": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓台灣旅客排出從稚內去宗谷岬的往返交通，決定要不要加上白い道與宗谷丘陵。",
+        "primaryReaderOutcome": "讀完知道搭巴士的班次與時間、沒有車時白い道去不去得了、冬天去要準備什麼。",
+        "mustAnswer": [
+          "稚內站到宗谷岬搭路線巴士要多久、一天幾班、回程末班幾點",
+          "有沒有觀光巴士或計程車包車可以去",
+          "日本最北端之碑在哪裡，能看到庫頁島嗎",
+          "日本最北端到達證明書在哪裡拿",
+          "白い道怎麼去，沒有大眾運輸時怎麼辦，冬季封閉期間",
+          "宗谷丘陵是什麼，有沒有步道，風車拆除期間的交通管制",
+          "冬天去宗谷岬會不會太冷、巴士會不會停",
+          "1 月 1 日的初日之出活動"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "稚內市區景點與住宿",
+            "ownerArticleId": "wakkanai",
+            "reason": "另有條目"
+          }
+        ],
+        "sharedGuides": [
+          "local-bus-seiriken"
+        ]
+      },
+      "bookingChannels": "not-applicable",
+      "keywordEvidence": [
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "宗谷岬",
+          "volume": 200,
+          "trafficPotential": 90,
+          "serpIntentConfirmed": true,
+          "serpNotes": "前十名是個人部落格（DR 11–47）、簡體中文景點頁與 Instagram，和「稚內」的前十名沒有重疊，Google 把它當成另一個問題。"
+        }
+      ],
+      "competition": "前五名多是個人遊記與簡體中文頁，沒有完整的交通與白い道說明。",
+      "discoveries": [
+        "shiroi-michi",
+        "soya-kyuryo",
+        "soya-hatsuhinode"
+      ],
+      "openQuestions": [
+        "宗谷岬線的巴士班次與末班時間要從宗谷巴士官網重查（調查當天 503）。",
+        "宗谷丘陵風車拆除的交通管制期間。"
+      ],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結在寫作時從已上線清單挑選。"
+    },
+    {
+      "articleId": "rishiri-island",
+      "priority": 4,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "planningTitle": "利尻島交通、住宿與海膽季，從稚內搭渡輪上島與環島巴士的安排",
+      "primaryQuery": "利尻島",
+      "secondaryQueries": [
+        "利尻島旅遊",
+        "北海道利尻島",
+        "利尻島交通",
+        "利尻島天氣",
+        "利尻島一日遊",
+        "利尻島自由行",
+        "利尻島觀光巴士",
+        "利尻山",
+        "稚內到利尻島"
+      ],
+      "targetPath": "/places/rishiri-island/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "aspect": "other",
+      "primaryHubId": "hub-places-rishiri-island",
+      "contentBoundary": "寫利尻島島上的交通、住宿、景點、利尻山登山與季節，以及往返稚內與禮文島的渡輪重點；渡輪訂票的完整步驟寫在稚內條目，禮文島另有條目。",
+      "place": {
+        "nameZh": "利尻島",
+        "japaneseNames": [
+          "利尻島",
+          "利尻富士町",
+          "利尻町",
+          "利尻山",
+          "利尻富士",
+          "鴛泊港",
+          "沓形港"
+        ],
+        "japaneseSearchTerms": [
+          "利尻島 観光",
+          "利尻山 登山",
+          "利尻島 フェリー 時刻表",
+          "利尻島 路線バス",
+          "利尻 定期観光バス",
+          "利尻 ウニ丼",
+          "姫沼",
+          "オタトマリ沼",
+          "利尻島 宿"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "rebun-island",
+          "wakkanai"
+        ],
+        "gatewayPlaceIds": [
+          "wakkanai"
+        ],
+        "bestMonths": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓不會日文的台灣旅客決定利尻島要住幾晚，排好上島、島內移動與住宿。",
+        "primaryReaderOutcome": "讀完知道從稚內或札幌怎麼到島上、島上搭巴士還是租車、住哪一區、冬天哪些地方會關。",
+        "mustAnswer": [
+          "從稚內搭渡輪到鴛泊港要多久、一天幾班、末班幾點（夏季與冬季）",
+          "從札幌丘珠或新千歲飛利尻機場，ANA 只有夏季飛",
+          "利尻島一日遊行不行，當天來回的船班怎麼排",
+          "島上怎麼移動：環島路線巴士、1 日券、租車、租自行車、計程車",
+          "定期觀光巴士的路線、季節與預約方式",
+          "利尻島住宿在鴛泊還是沓形，哪些冬季休館，能從哪裡訂",
+          "利尻山登山：鴛泊與沓形兩條路線、所需時間、攜帶式廁所與登山計畫書",
+          "姫沼、オタトマリ沼、白い恋人の丘的開放期間與交通",
+          "海膽季是幾月，在哪裡吃",
+          "利尻島天氣與各月氣溫，11 月渡輪常停駛",
+          "利尻島和禮文島怎麼跳島，先去哪一個",
+          "利尻島的環島巴士用整理券、不找零"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "渡輪網路訂票的完整步驟",
+            "ownerArticleId": "wakkanai",
+            "reason": "稚內條目負責"
+          },
+          {
+            "topic": "禮文島島上安排",
+            "ownerArticleId": "rebun-island",
+            "reason": "另有條目"
+          },
+          {
+            "topic": "利尻昆布染髮劑",
+            "ownerArticleId": null,
+            "reason": "非旅遊意圖，不寫"
+          }
+        ],
+        "sharedGuides": [
+          "local-bus-seiriken"
+        ]
+      },
+      "bookingChannels": "research-required",
+      "keywordEvidence": [
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "利尻島",
+          "volume": 600,
+          "trafficPotential": 200,
+          "serpIntentConfirmed": true,
+          "serpNotes": "前十名：維基百科、旅行社跳島行程、日本觀光局、個人遊記與景點清單；與禮文島共用 pac-group 與日本觀光局。「利尻」「利尻昆布」主要是染髮劑意圖，不當主要查詢。"
+        }
+      ],
+      "competition": "前五名是維基百科、旅行團行程與觀光局簡介，沒有完整的自己上島攻略。",
+      "discoveries": [
+        "rishiri-zan-climbing",
+        "rishiri-uni-season",
+        "himenuma",
+        "shiroi-koibito-no-oka",
+        "rishiri-cycling-road",
+        "rishiri-festivals-august",
+        "rishiri-flowers"
+      ],
+      "openQuestions": [
+        "環島路線巴士每天幾班：時刻表 PDF 無法解析，要人工查看。",
+        "利尻町公所網站調查當天 503。"
+      ],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結在寫作時從已上線清單挑選。"
+    },
+    {
+      "articleId": "rebun-island",
+      "priority": 5,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "planningTitle": "禮文島交通、住宿與花季，從稚內搭渡輪上島與步道的安排",
+      "primaryQuery": "禮文島",
+      "secondaryQueries": [
+        "禮文島旅遊",
+        "北海道禮文島",
+        "禮文島住宿",
+        "禮文島交通",
+        "禮文島天氣",
+        "禮文島觀光巴士",
+        "禮文島船票",
+        "澄海岬"
+      ],
+      "targetPath": "/places/rebun-island/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "aspect": "other",
+      "primaryHubId": "hub-places-rebun-island",
+      "contentBoundary": "寫禮文島島上的交通、住宿、步道、花季與活動，以及往返稚內與利尻島的渡輪重點；渡輪訂票的完整步驟寫在稚內條目，利尻島另有條目。",
+      "place": {
+        "nameZh": "禮文島",
+        "japaneseNames": [
+          "礼文島",
+          "礼文町",
+          "香深港",
+          "船泊"
+        ],
+        "japaneseSearchTerms": [
+          "礼文島 トレッキング",
+          "礼文島トレイル",
+          "桃岩展望台コース",
+          "岬めぐりコース",
+          "8時間コース",
+          "レブンアツモリソウ群生地",
+          "香深港 フェリー 時刻表",
+          "宗谷バス 礼文 時刻表",
+          "礼文島 定期観光バス",
+          "礼文島 ウニ丼"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "rishiri-island",
+          "wakkanai"
+        ],
+        "gatewayPlaceIds": [
+          "wakkanai"
+        ],
+        "bestMonths": [
+          6,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓不會日文的台灣旅客決定要不要去禮文島，並排出交通、住宿與步道。",
+        "primaryReaderOutcome": "讀完能訂到船票與住宿，知道哪個月去看花、走哪條步道、島上怎麼移動。",
+        "mustAnswer": [
+          "從稚內怎麼搭渡輪到禮文島香深港，一天幾班、要多久",
+          "禮文島船票怎麼買，日文訂票頁怎麼操作",
+          "島上怎麼移動：三條路線巴士、1DAY 自由乘車券、定期觀光巴士只在 5–9 月",
+          "島上住宿只有少數幾家，香深與船泊怎麼選，花季要多早訂",
+          "花季是幾月，レブンアツモリソウ群生地的開放期間",
+          "七條步道怎麼選：桃岩展望台、岬めぐり、8時間コース的封閉路段",
+          "步道規則：不能離開步道、清鞋底、冬季 10/20 起封閉",
+          "スコトン岬、澄海岬、地蔵岩、北のカナリアパーク怎麼去",
+          "海膽季與ホッケちゃんちゃん焼き",
+          "冬天能不能去，船會不會停駛，哪些設施冬季關閉",
+          "利尻島和禮文島一起排的跳島行程",
+          "8 月的花火大會與海峽祭"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "利尻島島內安排",
+            "ownerArticleId": "rishiri-island",
+            "reason": "另有條目"
+          },
+          {
+            "topic": "渡輪網路訂票的完整步驟",
+            "ownerArticleId": "wakkanai",
+            "reason": "稚內條目負責"
+          }
+        ],
+        "sharedGuides": [
+          "local-bus-seiriken"
+        ]
+      },
+      "bookingChannels": "research-required",
+      "keywordEvidence": [
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "禮文島",
+          "volume": 400,
+          "trafficPotential": 100,
+          "serpIntentConfirmed": true,
+          "serpNotes": "前十名：維基百科、旅行社跳島行程、日本觀光局、旅行團、在島台灣人的個人站、Funliday 交通文；與利尻島共用 pac-group 與日本觀光局。"
+        }
+      ],
+      "competition": "前五名是維基百科、旅行團行程與觀光局簡介；Funliday 有交通文但排第九。",
+      "discoveries": [
+        "rebun-atsumorisou",
+        "rebun-trail-closures",
+        "rebun-hanabi",
+        "rebun-uni-season",
+        "rebun-canaria-park",
+        "rebun-atsumori-kanshasai"
+      ],
+      "openQuestions": [
+        "渡輪二等艙能不能預約（同稚內條目）。",
+        "租車與計程車沒有官方資料。",
+        "旅館冬季是否營業要逐家確認。"
+      ],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結在寫作時從已上線清單挑選。"
+    },
+    {
+      "articleId": "wakkanai-sights",
+      "priority": 6,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "planningTitle": "稚內景點怎麼排，市區走路、搭巴士與只能開車去的地方",
+      "primaryQuery": "稚內景點",
+      "secondaryQueries": [
+        "稚內 景點",
+        "北海道稚內景點",
+        "稚內冬天景點",
+        "稚內港北防波堤穹頂",
+        "野寒布岬"
+      ],
+      "targetPath": "/places/wakkanai/sights/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "aspect": "sight",
+      "primaryHubId": "hub-places-wakkanai",
+      "contentBoundary": "依交通方式整理稚內市內與近郊景點的開放期間與去法；宗谷岬只簡述並連到宗谷岬條目，利尻島與禮文島不寫。",
+      "place": null,
+      "readerTaskContract": {
+        "primaryTask": "讓沒有開車的台灣旅客在稚內有限的時間裡排出看得到的景點。",
+        "primaryReaderOutcome": "讀完知道哪些景點走路到、哪些要搭巴士、哪些只能開車，冬天哪些關閉。",
+        "mustAnswer": [
+          "稚内港北防波堤ドーム、稚内公園、副港市場從車站走路多久",
+          "ノシャップ岬與寒流水族館搭巴士怎麼去，夕陽時間",
+          "大沼バードハウス看天鵝的季節",
+          "白い道、宗谷丘陵沒有大眾運輸，冬季封閉",
+          "冬天還能去哪些景點",
+          "Wakkanai Night & Light 點燈期間"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "宗谷岬完整安排",
+            "ownerArticleId": "cape-soya",
+            "reason": "另有條目"
+          }
+        ],
+        "sharedGuides": [
+          "local-bus-seiriken"
+        ]
+      },
+      "bookingChannels": "not-applicable",
+      "keywordEvidence": [
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "稚內景點",
+          "volume": 200,
+          "trafficPotential": null,
+          "serpIntentConfirmed": false,
+          "serpNotes": "Ahrefs 沒有這個詞的台灣搜尋結果頁。以一般網頁搜尋觀察，結果是 Funliday、MATCHA、GLTJP、tsunagu Japan 的景點清單，與「稚內」前十名只有 GLTJP 一個重疊；尚未在台灣 Google 實際確認，進文章清單前要補看。"
+        }
+      ],
+      "competition": "前五名是 MATCHA、GLTJP 等景點清單，內容完整度中等，但沒有依交通方式分；優先度排在三個條目與宗谷岬之後。",
+      "discoveries": [
+        "wakkanai-breakwater-dome",
+        "noshappu-misaki",
+        "wakkanai-night-and-light"
+      ],
+      "openQuestions": [
+        "serpIntentConfirmed 為 false，進文章清單前要在台灣 Google 看一次搜尋結果頁。"
+      ],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結在寫作時從已上線清單挑選。"
+    },
+    {
+      "articleId": "local-bus-seiriken",
+      "priority": 3,
+      "decision": "keep",
+      "pageType": "shared-guide",
+      "planningTitle": "日本地方公車整理券怎麼搭，上車抽券、下車看運賃表付現金",
+      "primaryQuery": "日本公車整理券",
+      "secondaryQueries": [
+        "整理券",
+        "公車整理券"
+      ],
+      "targetPath": "/guides/local-bus-seiriken/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "aspect": "transport",
+      "primaryHubId": "hub-guides-local-bus-seiriken",
+      "contentBoundary": "只寫各地相同的整理券巴士搭法與付款；各地的路線、班次與是否能刷 IC 卡寫在各地點條目。",
+      "place": null,
+      "readerTaskContract": {
+        "primaryTask": "讓第一次搭日本地方公車的台灣旅客，看懂整理券、運賃表並順利付錢下車。",
+        "primaryReaderOutcome": "讀完知道從哪個門上車、整理券上的數字怎麼對運賃表、怎麼換零錢、什麼時候按下車鈴。",
+        "mustAnswer": [
+          "整理券是什麼，在哪裡抽",
+          "運賃表怎麼看，整理券號碼對到哪一格",
+          "車上找不找零，兌幣機怎麼用，大鈔怎麼辦",
+          "前門還是後門上車，怎麼按下車鈴",
+          "能不能刷 IC 卡，怎麼看車上有沒有讀卡機",
+          "自由乗降区間是什麼，怎麼招手上車、怎麼跟司機說要下車",
+          "可以指給司機看的日文句子"
+        ],
+        "excludedDepth": [],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "keywordEvidence": [
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "日本公車整理券",
+          "volume": 20,
+          "trafficPotential": null,
+          "serpIntentConfirmed": false,
+          "serpNotes": "主要查詢本身的搜尋結果頁沒看。「整理券」200 的搜尋結果第一名是漫展入場整理券，意圖混雜，只當次要查詢。這頁的價值在於四個條目都要連過來，不靠自己的搜尋量。"
+        }
+      ],
+      "competition": "「整理券」前十名有維基百科、字典與社群討論，沒有完整的步驟教學。",
+      "discoveries": [],
+      "openQuestions": [
+        "主要查詢的搜尋結果頁要補看。",
+        "先寫一般流程，宗谷巴士的實例當插圖說明；缺圖時依缺圖清單改用文字與日文標示。"
+      ],
+      "internalLinkFields": "四個地點條目的交通段落連過來。"
+    },
+    {
+      "articleId": "wakkanai-rishiri-rebun-ferry",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "primaryQuery": "稚內到利尻島",
+      "targetPath": "/places/wakkanai/ferry/",
+      "mergeInto": "wakkanai",
+      "reason": "各組合詞 0～10（稚內到利尻島 10、稚內渡輪 10、稚內船班 0、禮文島船票 0），未達 100。渡輪班次、票價與訂票步驟寫在稚內條目，兩個島的條目寫重點並連到稚內條目。上線 90 天後若渡輪相關詞的曝光明顯偏高再升格。",
+      "keywordEvidence": [
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "稚內到利尻島",
+          "volume": 10,
+          "trafficPotential": null,
+          "serpIntentConfirmed": false,
+          "serpNotes": ""
+        }
+      ]
+    },
+    {
+      "articleId": "wakkanai-weather",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "primaryQuery": "稚內天氣",
+      "targetPath": "/places/wakkanai/weather/",
+      "mergeInto": "wakkanai",
+      "reason": "250，但前十名全是天氣預報網站，讀者要的是預報；寫成稚內條目的各月氣候段落（氣象廳平年值）。",
+      "keywordEvidence": [
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "稚內天氣",
+          "volume": 250,
+          "trafficPotential": null,
+          "serpIntentConfirmed": true,
+          "serpNotes": "前十名全是預報"
+        }
+      ]
+    },
+    {
+      "articleId": "rishiri-zan",
+      "decision": "defer",
+      "pageType": "aspect-page",
+      "primaryQuery": "利尻山",
+      "targetPath": "/places/rishiri-island/hiking/",
+      "reason": "利尻山 40、利尻山登山 0。先寫成利尻島條目的登山段落；等 Search Console 顯示登山相關詞有曝光再評估。",
+      "keywordEvidence": [
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "利尻山",
+          "volume": 40,
+          "trafficPotential": 10,
+          "serpIntentConfirmed": false,
+          "serpNotes": ""
+        }
+      ]
+    },
+    {
+      "articleId": "rishiri-konbu",
+      "decision": "remove",
+      "pageType": "aspect-page",
+      "primaryQuery": "利尻昆布",
+      "targetPath": null,
+      "reason": "700 與相關詞合計超過 3,000，但幾乎都是染髮劑品牌。利尻島條目只在美食段落提昆布採收季。",
+      "keywordEvidence": [
+        {
+          "provider": "Ahrefs MCP",
+          "ahrefsVerified": true,
+          "country": "TW",
+          "checkedAt": "2026-10-16",
+          "query": "利尻昆布",
+          "volume": 700,
+          "trafficPotential": 450,
+          "serpIntentConfirmed": true,
+          "serpNotes": "parent topic 是 sastty 染髮劑"
+        }
+      ]
+    },
+    {
+      "articleId": "oshidomari-kutsugata",
+      "decision": "merge",
+      "pageType": "place-entry",
+      "primaryQuery": "沓形",
+      "targetPath": null,
+      "mergeInto": "rishiri-island",
+      "reason": "鴛泊與沓形是利尻島的港口與聚落，沒有獨立搜尋量，寫成利尻島條目的「住哪一區」段落。",
+      "keywordEvidence": []
+    },
+    {
+      "articleId": "sarobetsu",
+      "decision": "defer",
+      "pageType": "place-entry",
+      "primaryQuery": "サロベツ原野",
+      "targetPath": "/places/sarobetsu/",
+      "reason": "不在這次範圍；在稚內近郊，下一輪北海道道北規劃時查量。",
+      "keywordEvidence": []
+    }
+  ]
+}
