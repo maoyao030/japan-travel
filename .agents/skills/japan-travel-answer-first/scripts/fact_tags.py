@@ -32,7 +32,9 @@ def split_units(line: str) -> list[str]:
             return []
         return [cell.strip() for cell in body.strip("|").split("|") if cell.strip()]
     body = re.sub(r"^(?:[-*]|\d+\.)\s+", "", body)
-    return [part for part in re.split(r"(?<=[。？！])", body) if part.strip()]
+    if body.startswith("「"):
+        return [body]  # 日文句子連同中文說明當成一個單位
+    return [part for part in re.split(r"(?<=[。？！])\s*", body) if part.strip()]
 
 
 def check(directory: Path) -> dict:
@@ -42,33 +44,51 @@ def check(directory: Path) -> dict:
     issues: list[dict] = []
     used: set[str] = set()
     section = ""
-    header_row_pending = False
+    in_fence = False
+    lines = draft.splitlines()
 
-    for number, line in enumerate(draft.splitlines(), 1):
+    def note(number: int, code: str, message: str, excerpt: str) -> None:
+        issues.append({"line": number, "code": code, "message": message, "excerpt": excerpt[:80]})
+
+    for number, line in enumerate(lines, 1):
+        stripped = line.strip()
+        if re.match(r"^(`{3,}|~{3,})", stripped):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue  # 範例（例如訂房信件格式）不是事實主張
         if HEADING.match(line):
             section = re.sub(r"^#+\s*", "", line).strip()
-            header_row_pending = False
             continue
-        if section in SKIP_SECTIONS or not line.strip():
+        if section in SKIP_SECTIONS or not stripped:
             continue
-        stripped = line.strip()
-        if stripped.startswith("|") and not header_row_pending and not re.fullmatch(r"\|[\s:|-]+\|?", stripped):
-            # 表格第一列是欄名，不需要編號。
-            previous = draft.splitlines()[number - 2].strip() if number >= 2 else ""
-            if not previous.startswith("|"):
-                header_row_pending = True
+
+        tags = [tag.strip() for group in TAG.findall(line) for tag in group.split(",")]
+        for tag in tags:
+            used.add(tag)
+            if tag not in known:
+                note(number, "UNKNOWN_FACT", f"研究記錄的事實表沒有 {tag}", stripped)
+
+        if stripped.startswith("|"):
+            # 表格以整列為單位：欄名列、分隔列不檢查；有數字或條件的資料列至少要有一個編號。
+            if re.fullmatch(r"\|[\s:|-]+\|?", stripped):
                 continue
-        if not stripped.startswith("|"):
-            header_row_pending = False
+            previous = lines[number - 2].strip() if number >= 2 else ""
+            if not previous.startswith("|"):
+                continue
+            if NEEDS_TAG.search(TAG.sub("", stripped)) and not tags:
+                note(number, "UNTAGGED_CLAIM", "這一列有數字或條件，但沒有事實編號", stripped)
+            continue
+
         for unit in split_units(line):
-            tags = [tag.strip() for group in TAG.findall(unit) for tag in group.split(",")]
-            for tag in tags:
-                used.add(tag)
-                if tag not in known:
-                    issues.append({"line": number, "code": "UNKNOWN_FACT", "message": f"研究記錄的事實表沒有 {tag}", "excerpt": unit[:80]})
-            plain = TAG.sub("", unit)
-            if NEEDS_TAG.search(plain) and not tags:
-                issues.append({"line": number, "code": "UNTAGGED_CLAIM", "message": "這句有數字或條件，但沒有事實編號", "excerpt": plain[:80]})
+            plain = TAG.sub("", unit).strip()
+            if plain.startswith("「"):
+                continue  # 指給對方看的日文句子，由事實查核核對是否自然
+            if re.fullmatch(r"\*\*[^*]+\*\*[：:]?", plain):
+                continue  # 清單的粗體小標
+            unit_tags = TAG.findall(unit)
+            if NEEDS_TAG.search(plain) and not unit_tags:
+                note(number, "UNTAGGED_CLAIM", "這句有數字或條件，但沒有事實編號", plain)
 
     preview = TAG.sub("", draft)
     return {
