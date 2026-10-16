@@ -45,7 +45,7 @@ description: Plan which pages the Japan travel site should build for a region be
 | 主題頁 | 與單一地點無關的題目 | 日本櫻花季、御朱印 |
 | 共用教學頁 | 每個地方都一樣的操作，條目只寫在地差異再連過來 | 地方巴士整理券、看日文時刻表、在日文官網訂房 |
 
-網址與頁型的對應以網站目前的路由為準。「地點條目」需要的 `/places/` 路由尚未建立（2026-10-16 待 Darren 決定是否改成地點在前）；路由未定前，規格的 `targetPath` 填 `null` 並標記 `routeDecision: pending`，不能進入文章清單。
+網址採地點優先，最多三層（2026-10-16 Darren 確認）：地點條目 `/places/<地點>/`、面向頁 `/places/<地點>/<面向>/`、主題頁 `/seasons/<主題>/` 等。地點之間的關係（所屬地區、鄰近地點、出入口、適合月份）填在規格的 `place` 欄位，網站依這些欄位產生麵包屑與內連，不放進網址。填法見 [頁面規格](references/page-spec.md)。
 
 ## 授權邊界
 

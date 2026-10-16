@@ -12,9 +12,11 @@
   "planningTitle": "禮文島交通、住宿與花季，從稚內搭渡輪上島的完整安排",
   "primaryQuery": "禮文島",
   "secondaryQueries": ["禮文島住宿", "禮文島交通", "禮文島船票"],
-  "targetPath": null,
-  "routeDecision": "pending",
-  "primaryHubId": null,
+  "targetPath": "/places/rebun-island/",
+  "routeDecision": "resolved",
+  "routeMode": "hub-landing",
+  "aspect": "other",
+  "primaryHubId": "hub-places-rebun-island",
   "contentBoundary": "只寫禮文島本島與從稚內往返的交通；利尻島另有條目，只在跳島安排時簡述。",
   "place": {
     "nameZh": "禮文島",
@@ -69,5 +71,11 @@
 - 住宿相關頁的 `bookingChannels` 在規劃時填 `research-required`；寫作研究完成後，文章清單要寫成實際管道陣列（`official`、`trip.com`、`agoda`、`jalan-only`），並附 `factCheck` 查核日期與一年後重查日。
 - `keywordEvidence.provider` 只能是 `Ahrefs MCP`、`Ahrefs browser UI` 或 `SERP observation`。只有前兩者可以把 `ahrefsVerified` 設為 `true`。
 - `serpIntentConfirmed` 必須是實際看過搜尋結果頁後才填 `true`。
-- `targetPath` 在網站路由確定前填 `null`，`routeDecision` 填 `pending`。這種規格不能進入文章清單。
+- `targetPath` 依頁型填寫，網址最多三層，`routeDecision` 填 `resolved`：
+  - 地點條目：`/places/<地點>/`，`routeMode` 為 `hub-landing`，文章 slug 與地點 Hub 相同。地區（北海道）也是 `/places/<地區>/`，地點不放進地區底下，上下關係只填 `place.region`。
+  - 面向頁：`/places/<地點>/<面向>/`，例如 `/places/hakodate/stay/`，`routeMode` 為 `parent-direct-article`。同一地點同一面向要再分時，用連字號代稱，例如 `/places/hakodate/stay-onsen/`。
+  - 主題頁與共用教學頁：`/seasons/<主題>/`、`/shrines/<主題>/`、`/guides/<教學>/`，通常是 `hub-landing`。
+  - 不開第四層。地點裡的地點（例如利尻島的沓形）有獨立搜尋需求時升格成 `/places/kutsugata/` 並填 `region`，否則寫成條目裡的一節。
+- `aspect` 使用 `stay`、`food`、`transport`、`weather`、`hiking`、`festival`、`sight`、`other`。同一面向滿 5 篇、同一月份滿 5 個項目、同一地區滿 3 個地點時，網站自動建立目錄頁、月份頁與地區的地點清單；不需要規劃這些列表頁。
+- 只有確定要改分類或新開分類時才填 `routeDecision: pending`，這種規格不能進入文章清單。
 - `sharedGuides` 列出本頁會連到的共用教學頁 ID；教學頁本身也要有規格。

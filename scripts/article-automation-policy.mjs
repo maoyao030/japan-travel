@@ -3,7 +3,9 @@
  *
  * 從好材誌的清單結構抽出通用部分：一個主題一個批次（batch）、每篇文章由 Darren 核准後才列入、
  * 進度只看 Sanity 文件狀態、每日上限與執行鎖。本站新增兩條規則（交接文件第五節）：
- * - 住宿分類的每篇文章必須有「訂房管道」與「查核日期／下次重查日」。
+ * - 面向是住宿（aspect stay）或地點條目（pageType place-entry）的文章必須有「訂房管道」與「查核日期／下次重查日」。
+ * - 地點優先網址（2026-10-16）：地點分類不用子 Hub，地點條目是 Hub 入口文章 `/places/<地點>/`，
+ *   面向頁是 `/places/<地點>/<面向>/`；網址最多三層。
  * - 關鍵字證據必須標明來源；沒有連 Ahrefs 時只能是「SERP observation」，不得標成 Ahrefs 已驗證。
  */
 import {readFile} from 'node:fs/promises'
@@ -12,7 +14,10 @@ import path from 'node:path'
 export const QUEUE_SCHEMA_VERSION = 1
 export const BATCH_SCHEMA_VERSION = 1
 export const BATCH_AUTHORIZATION_MODE = 'batch-standing-authorization'
-export const CATEGORY_SLUGS = ['stay', 'weather', 'food', 'transport']
+export const CATEGORY_SLUGS = ['places', 'seasons', 'shrines', 'guides']
+export const PLACES_CATEGORY_SLUG = 'places'
+export const ARTICLE_ASPECTS = ['stay', 'food', 'transport', 'weather', 'hiking', 'festival', 'sight', 'other']
+export const PAGE_TYPES = ['place-entry', 'aspect-page', 'topic-page', 'shared-guide']
 export const KEYWORD_PROVIDERS = ['Ahrefs MCP', 'Ahrefs browser UI', 'SERP observation']
 export const AHREFS_PROVIDERS = ['Ahrefs MCP', 'Ahrefs browser UI']
 export const BOOKING_CHANNELS = ['official', 'trip.com', 'agoda', 'jalan-only']
@@ -70,6 +75,9 @@ function resolveDailyLimit(value) {
 }
 
 export function expectedArticlePath(item) {
+  if (item?.routeMode === 'hub-landing') {
+    return `/${item.categorySlug}/${item.hubSlug}/`
+  }
   if (item?.routeMode === 'parent-direct-article') {
     return `/${item.categorySlug}/${item.hubSlug}/${item.articleSlug}/`
   }
@@ -202,7 +210,11 @@ function validateKeywordValidation(validation, batch, label, issues) {
   }
 }
 
-/** 住宿頁專屬：訂房管道與查核日期（交接文件第二、五節）。 */
+export function requiresStayValidation(item) {
+  return item?.aspect === 'stay' || item?.pageType === 'place-entry'
+}
+
+/** 住宿頁與地點條目專屬：訂房管道與查核日期（交接文件第二、五節）。 */
 export function validateStayItem(item, label) {
   const issues = []
   const channels = item?.bookingChannels
@@ -460,15 +472,37 @@ function validateQueueBatch(queue, batch, index, seen) {
     }
 
     validateKeywordValidation(item?.keywordValidation, batch, itemLabel, issues)
-    if (batch?.categorySlug === 'stay') issues.push(...validateStayItem(item, itemLabel))
+    if (!ARTICLE_ASPECTS.includes(item?.aspect)) {
+      issues.push(`${itemLabel}.aspect 必須是 ${ARTICLE_ASPECTS.join('、')} 之一`)
+    }
+    if (!PAGE_TYPES.includes(item?.pageType)) {
+      issues.push(`${itemLabel}.pageType 必須是 ${PAGE_TYPES.join('、')} 之一`)
+    }
+    if (requiresStayValidation(item)) issues.push(...validateStayItem(item, itemLabel))
 
     const launchGroup = launchGroupsById.get(item?.launchGroupId)
+    const isHubLanding = item?.routeMode === 'hub-landing'
     const isParentDirect = item?.routeMode === 'parent-direct-article'
     const isChildHubItem = ['child-hub-landing', 'child-hub-article'].includes(item?.routeMode)
-    if (!isParentDirect && !isChildHubItem) {
+    if (!isHubLanding && !isParentDirect && !isChildHubItem) {
       issues.push(`${itemLabel}.routeMode 不是允許的文章路徑類型`)
     }
-    if (isParentDirect) {
+    if (isChildHubItem && batch?.categorySlug === PLACES_CATEGORY_SLUG) {
+      issues.push(`${itemLabel} 地點分類不使用子 Hub；需要更細時升格成獨立地點，或在第三層用連字號代稱`)
+    }
+    if (item?.pageType === 'place-entry' && !(isHubLanding && batch?.categorySlug === PLACES_CATEGORY_SLUG)) {
+      issues.push(`${itemLabel} 地點條目必須是地點分類的 Hub 入口文章（routeMode hub-landing）`)
+    }
+    if (isHubLanding) {
+      if (
+        item?.primaryHubId !== batch?.parentHubId ||
+        item?.hubSlug !== batch?.parentHubSlug ||
+        item?.articleSlug !== item?.hubSlug ||
+        item?.futureHubLanding !== true
+      ) {
+        issues.push(`${itemLabel} Hub 入口文章必須掛在 ${batch?.parentHubId}，slug 與 Hub 相同並標示 futureHubLanding`)
+      }
+    } else if (isParentDirect) {
       if (item?.primaryHubId !== batch?.parentHubId || item?.hubSlug !== batch?.parentHubSlug) {
         issues.push(`${itemLabel} 父 Hub 直屬文章必須掛在 ${batch?.parentHubId}`)
       }

@@ -42,20 +42,22 @@ function createItem(overrides: AnyRecord = {}): AnyRecord {
     primaryKeyword: '銀山溫泉 住宿',
     primaryQuery: '銀山溫泉 住宿',
     articleSlug: 'ryokan',
-    targetPath: '/stay/ginzan-onsen/ryokan/',
+    targetPath: '/places/ginzan-onsen/ryokan/',
     authorId: 'author-editorial-team',
-    primaryHubId: 'hub-stay-ginzan-onsen',
-    categorySlug: 'stay',
+    primaryHubId: 'hub-places-ginzan-onsen',
+    categorySlug: 'places',
     hubSlug: 'ginzan-onsen',
     routeMode: 'parent-direct-article',
+    aspect: 'stay',
+    pageType: 'aspect-page',
     contentBoundary: '只寫銀山溫泉街區內的旅館，不含尾花澤市區飯店。',
     readerTask: '決定住哪一間、從哪裡訂。',
-    plannedInternalLinks: '/stay/ginzan-onsen/',
+    plannedInternalLinks: '/places/ginzan-onsen/',
     relatedArticleIds: [],
     releaseMode: 'individual',
     authorizationMode: 'batch-standing-authorization',
     planningSpec: {
-      pageSpecs: 'content-planning/stay/ginzan-onsen-page-specs.json',
+      pageSpecs: 'content-planning/yamagata/ginzan-onsen-page-specs.json',
       articleId: 'ginzan-onsen-ryokan',
     },
     keywordValidation: {
@@ -67,7 +69,7 @@ function createItem(overrides: AnyRecord = {}): AnyRecord {
       decision: 'keep',
       query: '銀山溫泉 住宿',
       svDisplay: '300',
-      record: 'content-planning/stay/ginzan-onsen-candidates.json',
+      record: 'content-planning/yamagata/ginzan-onsen-candidates.json',
     },
     bookingChannels: ['official', 'agoda'],
     factCheck: {
@@ -85,13 +87,13 @@ function createBatch(overrides: AnyRecord = {}): AnyRecord {
     batchSchemaVersion: 1,
     contentTheme: 'ginzan-onsen',
     themeLabel: '銀山溫泉',
-    categorySlug: 'stay',
+    categorySlug: 'places',
     parentHubSlug: 'ginzan-onsen',
-    parentHubId: 'hub-stay-ginzan-onsen',
-    allowedPathPrefix: '/stay/ginzan-onsen/',
+    parentHubId: 'hub-places-ginzan-onsen',
+    allowedPathPrefix: '/places/ginzan-onsen/',
     planningSource: {
-      pageSpecs: 'content-planning/stay/ginzan-onsen-page-specs.json',
-      candidateRegistry: 'content-planning/stay/ginzan-onsen-candidates.json',
+      pageSpecs: 'content-planning/yamagata/ginzan-onsen-page-specs.json',
+      candidateRegistry: 'content-planning/yamagata/ginzan-onsen-candidates.json',
       planningCompletedAt: '2026-10-15',
       authorizedCount: 1,
       plannedPageCount: 1,
@@ -108,7 +110,7 @@ function createBatch(overrides: AnyRecord = {}): AnyRecord {
       researchMayFinalizeWorkingFields: true,
       finalizationLimits: {
         contentTheme: 'ginzan-onsen',
-        allowedPathPrefix: '/stay/ginzan-onsen/',
+        allowedPathPrefix: '/places/ginzan-onsen/',
         preserveTopicDirection: true,
         preserveContentBoundary: true,
         requireQueueTargetPath: true,
@@ -122,12 +124,12 @@ function createBatch(overrides: AnyRecord = {}): AnyRecord {
       productionUnitMode: 'individual',
     },
     parentHub: {
-      id: 'hub-stay-ginzan-onsen',
+      id: 'hub-places-ginzan-onsen',
       slug: 'ginzan-onsen',
-      category: 'stay',
+      category: 'places',
       publicationState: 'ready',
       noindexUntilFirstIndexableArticle: true,
-      researchRecord: 'content-planning/stay/ginzan-onsen-research.json',
+      researchRecord: 'content-planning/yamagata/ginzan-onsen-research.json',
       title: '銀山溫泉',
       eyebrow: '銀山溫泉住宿指南',
       introduction: ['銀山溫泉的旅館、房型與訂房管道整理。'],
@@ -183,14 +185,14 @@ test('完整的批次通過驗證，生產順序依批次與 order', () => {
     getProductionOrderedItems(queue).map((item) => item.articleId),
     ['ginzan-onsen-ryokan'],
   )
-  assert.equal(findQueueItem(queue, 'ginzan-onsen-ryokan')?.targetPath, '/stay/ginzan-onsen/ryokan/')
+  assert.equal(findQueueItem(queue, 'ginzan-onsen-ryokan')?.targetPath, '/places/ginzan-onsen/ryokan/')
 })
 
-test('清單只接受住宿、天氣季節、美食、交通四個分類', () => {
+test('清單只接受地點、季節、神社與祭典、旅行教學四個分類', () => {
   const issues = validateArticleQueue(
     createQueue([createBatch({categorySlug: 'materials', parentHubId: 'hub-materials-ginzan-onsen', allowedPathPrefix: '/materials/ginzan-onsen/'})]),
   )
-  assert.match(issues.join('\n'), /categorySlug 必須是 stay、weather、food、transport 之一/)
+  assert.match(issues.join('\n'), /categorySlug 必須是 places、seasons、shrines、guides 之一/)
 })
 
 test('住宿文章必須有訂房管道與查核日期，下次重查是一年後', () => {
@@ -235,7 +237,7 @@ test('沒有連 Ahrefs 時不得標成 Ahrefs 已驗證，且要確認搜尋意�
 
 test('標題不得用冒號，網址必須與分類、Hub、slug 一致', () => {
   const issues = validateArticleQueue(
-    createQueue([createBatch({items: [createItem({workingTitle: '銀山溫泉住宿：怎麼訂', targetPath: '/stay/ginzan-onsen/other/'})]})]),
+    createQueue([createBatch({items: [createItem({workingTitle: '銀山溫泉住宿：怎麼訂', targetPath: '/places/ginzan-onsen/other/'})]})]),
   )
   assert.match(issues.join('\n'), /workingTitle 不得使用冒號/)
   assert.match(issues.join('\n'), /targetPath 與分類、Hub、slug 不一致/)
@@ -261,8 +263,8 @@ test('規劃紀錄與清單逐篇核對，查詢、網址或搜尋量不一致�
         articleId: 'ginzan-onsen-ryokan',
         decision: 'keep',
         primaryQuery: '銀山溫泉 住宿',
-        targetPath: '/stay/ginzan-onsen/ryokan/',
-        primaryHubId: 'hub-stay-ginzan-onsen',
+        targetPath: '/places/ginzan-onsen/ryokan/',
+        primaryHubId: 'hub-places-ginzan-onsen',
         contentBoundary: '只寫銀山溫泉街區內的旅館，不含尾花澤市區飯店。',
         planningTitle: '銀山溫泉住宿怎麼訂，官網與 Agoda 能訂到的旅館',
         readerTaskContract: {primaryTask: '決定住哪一間、從哪裡訂。'},
@@ -297,7 +299,7 @@ test('規劃紀錄與清單逐篇核對，查詢、網址或搜尋量不一致�
 
   const root = await mkdtemp(path.join(tmpdir(), 'japan-travel-queue-'))
   try {
-    await mkdir(path.join(root, 'content-planning/stay'), {recursive: true})
+    await mkdir(path.join(root, 'content-planning/yamagata'), {recursive: true})
     await mkdir(path.join(root, 'content-automation'), {recursive: true})
     await writeFile(path.join(root, batch.planningSource.pageSpecs), JSON.stringify(pageSpecs))
     await writeFile(path.join(root, batch.planningSource.candidateRegistry), JSON.stringify(candidateRegistry))
@@ -320,7 +322,7 @@ test('Sanity 快照與文章封包必須和清單一致才能開放索引', () =
     articleId: 'article-ginzan-onsen-ryokan',
     slug: 'ryokan',
     authorId: 'author-editorial-team',
-    primaryHubId: 'hub-stay-ginzan-onsen',
+    primaryHubId: 'hub-places-ginzan-onsen',
     sponsored: false,
     noindex: true,
     bodyCount: 12,
@@ -331,9 +333,9 @@ test('Sanity 快照與文章封包必須和清單一致才能開放索引', () =
     seoTitle: 'SEO 標題',
     seoDescription: 'SEO 描述',
     cover: {assetId: 'image-1', width: 1600, height: 900, alt: '替代文字', caption: '圖說', credit: '署名'},
-    hub: {id: 'hub-stay-ginzan-onsen', title: '銀山溫泉', slug: 'ginzan-onsen', categorySlug: 'stay'},
+    hub: {id: 'hub-places-ginzan-onsen', title: '銀山溫泉', slug: 'ginzan-onsen', categorySlug: 'places'},
   }
-  assert.equal(getArticlePathFromSnapshot(snapshot), '/stay/ginzan-onsen/ryokan/')
+  assert.equal(getArticlePathFromSnapshot(snapshot), '/places/ginzan-onsen/ryokan/')
   assert.deepEqual(validateReleaseSnapshot(snapshot, item), [])
   assert.match(
     validateReleaseSnapshot({...snapshot, cover: {...snapshot.cover, width: 1200}}, item).join('\n'),
@@ -343,7 +345,7 @@ test('Sanity 快照與文章封包必須和清單一致才能開放索引', () =
 
   const manifest = {
     articleId: 'ginzan-onsen-ryokan',
-    targetUrl: '/stay/ginzan-onsen/ryokan/',
+    targetUrl: '/places/ginzan-onsen/ryokan/',
     primaryKeyword: '銀山溫泉 住宿',
     primaryQuery: '銀山溫泉 住宿',
     status: 'approved',
@@ -367,7 +369,7 @@ test('Sanity 快照與文章封包必須和清單一致才能開放索引', () =
   }
   assert.deepEqual(validateStandingApproval(manifest, queue, item), [])
   assert.match(
-    validateStandingApproval({...manifest, targetUrl: '/stay/other/'}, queue, item).join('\n'),
+    validateStandingApproval({...manifest, targetUrl: '/places/other/'}, queue, item).join('\n'),
     /文章封包網址與清單不一致/,
   )
 })
@@ -393,4 +395,61 @@ test('執行鎖同一時間只給一個執行者，逾時才能接手', async ()
   } finally {
     await rm(root, {recursive: true, force: true})
   }
+})
+
+function placeEntryItem(overrides: AnyRecord = {}): AnyRecord {
+  return createItem({
+    articleId: 'ginzan-onsen',
+    documentId: 'article-ginzan-onsen',
+    articleSlug: 'ginzan-onsen',
+    targetPath: '/places/ginzan-onsen/',
+    routeMode: 'hub-landing',
+    futureHubLanding: true,
+    aspect: 'other',
+    pageType: 'place-entry',
+    planningSpec: {pageSpecs: 'content-planning/yamagata/ginzan-onsen-page-specs.json', articleId: 'ginzan-onsen'},
+    ...overrides,
+  })
+}
+
+test('地點條目是地點 Hub 的入口文章，也要有訂房管道與查核日期', () => {
+  const issues = validateArticleQueue(createQueue([createBatch({items: [placeEntryItem()]})]))
+  assert.doesNotMatch(issues.join('\n'), /routeMode|地點條目|Hub 入口文章|targetPath/)
+
+  const noBooking = validateArticleQueue(
+    createQueue([createBatch({items: [placeEntryItem({bookingChannels: undefined})]})]),
+  )
+  assert.match(noBooking.join('\n'), /bookingChannels/)
+
+  const notLanding = validateArticleQueue(
+    createQueue([createBatch({items: [placeEntryItem({routeMode: 'parent-direct-article', targetPath: '/places/ginzan-onsen/ginzan-onsen/'})]})]),
+  )
+  assert.match(notLanding.join('\n'), /地點條目必須是地點分類的 Hub 入口文章/)
+
+  const noAspect = validateArticleQueue(createQueue([createBatch({items: [createItem({aspect: undefined})]})]))
+  assert.match(noAspect.join('\n'), /aspect 必須是/)
+
+  const food = validateArticleQueue(
+    createQueue([createBatch({items: [createItem({aspect: 'food', bookingChannels: undefined, factCheck: undefined})]})]),
+  )
+  assert.doesNotMatch(food.join('\n'), /bookingChannels/)
+})
+
+test('地點分類不使用子 Hub', () => {
+  const issues = validateArticleQueue(
+    createQueue([
+      createBatch({
+        items: [
+          createItem({
+            routeMode: 'child-hub-article',
+            primaryHubId: 'hub-places-ginzan-onsen-ryokan',
+            hubSlug: 'ryokan',
+            parentHubSlug: 'ginzan-onsen',
+            targetPath: '/places/ginzan-onsen/ryokan-ryokan/',
+          }),
+        ],
+      }),
+    ]),
+  )
+  assert.match(issues.join('\n'), /地點分類不使用子 Hub/)
 })
