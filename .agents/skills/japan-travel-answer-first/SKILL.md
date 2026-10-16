@@ -37,6 +37,17 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 研究記錄的事實表，每列要有：主張、日文原文摘錄、來源網址、查閱日期、適用條件。驗收時事實查核 agent 會逐列打開原文核對，缺摘錄的事實視同未查證。
 
+### 事實表要先做完，寫作時不再補
+
+2026-10-16 禮文島試寫第 1 輪，正文有 117 個事實，事實表只有 44 列，被查核擋下的 19 個錯都在表外。因此：
+
+- **清單和數量自己數**：住宿清單、班次、路線這類要數的東西，用 `curl` 抓原始網頁自己數，不用網頁讀取工具的摘要；摘要會漏項。
+- **不用常識補細節**：「日本巴士通常有兌幣機」不是這家巴士公司的事實。原文沒寫就寫「官方沒寫」。
+- **推理不是來源**：依法律或常理推出的結論（例如依総額表示推定含稅），正文不寫成確定，寫成「官網沒有標示含稅或未稅」。
+- **算出來的數字附算式**：一日來回的停留時間、轉乘等待時間這類推算，在事實表寫出算法與用到的編號，例如「F2 − F1，再扣 F12 的報到時間」。
+- **比較要有兩邊的來源**：和台灣比較氣溫、價格時，台灣的數字也要有來源（例如中央氣象署平年值）；沒有就不比較。
+- **研究代理的推論要回原文核對**：代理報告裡的推論（例如「舊終點已封閉」）要回官方頁找到原文才能進事實表。
+
 ### 看同搜尋意圖的繁中頁
 
 用主要查詢搜尋並實際開啟 3～5 篇現行繁中頁，觀察它們回答了什麼、漏了什麼、H 樹怎麼排。目的是找出讀者還沒被回答的問題，不是模仿結構。
@@ -101,12 +112,28 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 長篇文章從 `mustAnswer` 與搜尋結果頁的相關問題中，找出正文還沒直接回答的問題，放在資料來源前的 `## 常見問題`，每題一個 H3，下一段直接回答。不能把正文換成問句再重述一次。沒有合格問題時不設 FAQ，並在研究記錄寫明原因。
 
+## 標編號寫作
+
+正文先寫成 `content-production/<article-id>/draft-tagged.md`：每個含數字、時間、價格、期間、距離或條件（只收現金、要預約、封閉、禁止）的句子、表格格子、清單項目，句尾附事實編號，例如「直航約 1 小時 55 分 [F5]」。
+
+- 一句用到多筆事實就列多個：`[F1, F12]`。
+- 對不到編號的句子，代表寫作時在補內容：回去研究補進事實表，或刪掉，或改寫成「官方沒寫」。
+- 建議與判斷要從事實推出來，同樣附它依據的編號；沒有事實撐的建議不寫。
+- 標題、資料來源段落不標編號。
+
 ## 一次成稿與交接
 
-1. 動筆前解決資料與架構問題，一次寫成 `reader-preview.md`。
-2. 執行 `python3 <本 Skill 絕對路徑>/scripts/audit_answer_first.py content-production/<article-id>/reader-preview.md --json`，處理它回報的格式錯誤。它只檢查格式，不判斷文章品質；語意提醒不是自動判退理由。
-3. 交給 `$japan-travel-acceptance`。驗收判退時保留失敗樣本與原因，不修改後宣稱首次成功；是否重寫依使用者或排程規則。
+1. 動筆前解決資料與架構問題，一次寫成 `draft-tagged.md`。
+2. 執行 `python3 <本 Skill 絕對路徑>/scripts/fact_tags.py content-production/<article-id>`。它檢查每個需要編號的句子都有編號、每個編號都在事實表，通過後才寫出去掉編號的 `reader-preview.md`。
+3. **分段檢查**：每個 H2 派一個沒寫過這篇的 subagent，平行執行。每個 subagent 只拿到該段的 `draft-tagged.md` 內容、該段用到的事實表列與來源網址，逐句核對：
+   - 句子和事實表的原文摘錄是否一致，條件（季節、艙等、大人或小孩、含稅）有沒有漏。
+   - 需要時打開來源網址核對。
+   - 推算是否正確。
+   - 有沒有事實表撐不起的延伸說法。
+   結果寫到 `content-production/<article-id>/section-checks/<序號>.json`：`{section, checker, items: [{excerpt, factIds, verdict: ok|fix, reason}]}`。作者依結果修改後重跑第 2 步；同一段最多改三輪。
+4. 執行 `python3 <本 Skill 絕對路徑>/scripts/audit_answer_first.py content-production/<article-id>/reader-preview.md --json`，處理它回報的格式錯誤。它只檢查格式，不判斷文章品質；語意提醒不是自動判退理由。
+5. 交給 `$japan-travel-acceptance`。驗收判退時保留失敗樣本與原因，不修改後宣稱首次成功；修改後的版本是新的一輪，從第 2 步重跑。是否重寫依使用者或排程規則。
 
 ## 完成條件
 
-`reader-preview.md` 與 `reference-review.md` 都已存在；每個 `mustAnswer` 都有回答或寫明查不到的原因；每個事實在研究記錄有日文原文摘錄與網址；專有名詞附日文原名並已更新譯名表；新發現已記進發現清單；圖片需求已列在文章計畫；格式檢查為 `mechanical_clear`；已交給驗收 Skill。
+`draft-tagged.md`、`reader-preview.md` 與 `reference-review.md` 都已存在；`fact_tags.py` 為 `tags_clear`；每個 H2 都有分段檢查紀錄且沒有未處理的 `fix`；每個 `mustAnswer` 都有回答或寫明查不到的原因；每個事實在研究記錄有日文原文摘錄與網址；專有名詞附日文原名並已更新譯名表；新發現已記進發現清單；圖片需求已列在文章計畫；格式檢查為 `mechanical_clear`；已交給驗收 Skill。

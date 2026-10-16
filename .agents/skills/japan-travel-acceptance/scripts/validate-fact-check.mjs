@@ -14,9 +14,10 @@ import {fileURLToPath} from 'node:url'
 export const VERDICTS = ['verified', 'incorrect', 'unsupported', 'outdated', 'unreachable', 'not-stated']
 const BLOCKING = new Set(['incorrect', 'unsupported', 'outdated', 'unreachable'])
 
+/** 部分官方網站（例如宗谷巴士）只有 http 能連，來源網址接受 http 與 https。 */
 function isHttpsUrl(value) {
   try {
-    return new URL(value).protocol === 'https:'
+    return ['https:', 'http:'].includes(new URL(value).protocol)
   } catch {
     return false
   }

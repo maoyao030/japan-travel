@@ -493,3 +493,33 @@ test('AI 圖與示意圖要由另一個 agent 看過，示意圖的事實要已�
     [],
   )
 })
+
+test('標編號檢查會擋下沒有事實編號的數字句與不存在的編號，通過後寫出去掉編號的預覽', async () => {
+  const directory = await mkdtemp(path.join(tmpdir(), 'japan-travel-tags-'))
+  const script = path.join(skillsRoot, 'japan-travel-answer-first', 'scripts', 'fact_tags.py')
+  const record = '| 編號 | 主張 |\n|---|---|\n| F1 | 直航約 1 小時 55 分 |\n| F2 | 只收現金 |\n'
+  try {
+    await writeFile(path.join(directory, 'reference-review.md'), record)
+    await writeFile(
+      path.join(directory, 'draft-tagged.md'),
+      '# 標題\n\n直航約 1 小時 55 分 [F1]。巴士只收現金。\n\n| 項目 | 內容 |\n|---|---|\n| 船 | 約 2 小時 [F9] |\n',
+    )
+    const failed = spawnSync(python, [script, directory, '--json'], {encoding: 'utf8'})
+    assert.equal(failed.status, 1)
+    const codes = JSON.parse(failed.stdout).issues.map((issue: AnyRecord) => issue.code)
+    assert.deepEqual(codes.sort(), ['UNKNOWN_FACT', 'UNTAGGED_CLAIM'])
+    await assert.rejects(access(path.join(directory, 'reader-preview.md')))
+
+    await writeFile(
+      path.join(directory, 'draft-tagged.md'),
+      '# 標題\n\n直航約 1 小時 55 分 [F1]。巴士只收現金 [F2]。\n\n| 項目 | 內容 |\n|---|---|\n| 船 | 約 2 小時 [F1] |\n\n## 資料來源\n\n- 2026 年時刻表\n',
+    )
+    const passed = spawnSync(python, [script, directory], {encoding: 'utf8'})
+    assert.equal(passed.status, 0, passed.stdout)
+    const preview = await readFile(path.join(directory, 'reader-preview.md'), 'utf8')
+    assert.doesNotMatch(preview, /\[F\d/)
+    assert.match(preview, /直航約 1 小時 55 分。巴士只收現金。/)
+  } finally {
+    await rm(directory, {recursive: true, force: true})
+  }
+})
