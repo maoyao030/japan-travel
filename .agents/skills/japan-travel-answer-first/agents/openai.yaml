@@ -1,0 +1,7 @@
+interface:
+  display_name: "日本站文章寫作"
+  short_description: "以日文官方資料為主，寫出保母等級、每個事實都有原文證據的繁中旅遊文章"
+  default_prompt: "使用 $japan-travel-answer-first，依已核准的頁面規格研究日文官方資料並一次寫成讀者預覽，處理讀者可能卡住的每一步，記錄發現清單，完成後交給驗收 Skill。不要選圖或發布。"
+
+policy:
+  allow_implicit_invocation: false
