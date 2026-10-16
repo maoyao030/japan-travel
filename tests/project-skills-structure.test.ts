@@ -524,6 +524,33 @@ test('標編號檢查會擋下沒有事實編號的數字句與不存在的編�
   }
 })
 
+test('評論統整的句子要標評論編號，編號要在研究記錄的評論統整表', async () => {
+  const directory = await mkdtemp(path.join(tmpdir(), 'japan-travel-review-tags-'))
+  const script = path.join(skillsRoot, 'japan-travel-answer-first', 'scripts', 'fact_tags.py')
+  const record =
+    '| 編號 | 主張 |\n|---|---|\n| F1 | Tabelog 3.52 |\n\n' +
+    '| 編號 | 特點 | 平台與則數 |\n|---|---|---|\n| R1 | 份量多 | Google 地圖 4 則、Tabelog 3 則 |\n'
+  try {
+    await writeFile(path.join(directory, 'reference-review.md'), record)
+    await writeFile(path.join(directory, 'draft-tagged.md'), '# 標題\n\n評論常提到海膽丼份量多。\n\n評論常提到要排隊 [R2]。\n')
+    const failed = spawnSync(python, [script, directory, '--json'], {encoding: 'utf8'})
+    assert.equal(failed.status, 1)
+    const codes = JSON.parse(failed.stdout).issues.map((issue: AnyRecord) => issue.code)
+    assert.deepEqual(codes.sort(), ['UNKNOWN_FACT', 'UNTAGGED_CLAIM'])
+
+    await writeFile(
+      path.join(directory, 'draft-tagged.md'),
+      '# 標題\n\nTabelog 評分 3.52 [F1]，評論常提到海膽丼份量多 [R1]。\n',
+    )
+    const passed = spawnSync(python, [script, directory], {encoding: 'utf8'})
+    assert.equal(passed.status, 0, passed.stdout)
+    const preview = await readFile(path.join(directory, 'reader-preview.md'), 'utf8')
+    assert.doesNotMatch(preview, /\[[FR]\d/)
+  } finally {
+    await rm(directory, {recursive: true, force: true})
+  }
+})
+
 test('標題檢查紀錄要寫改動理由、不得增刪標題，且改動要套用到預覽', async () => {
   const directory = await mkdtemp(path.join(tmpdir(), 'japan-travel-headings-'))
   const script = path.join(skillsRoot, 'japan-travel-answer-first', 'scripts', 'heading_review.py')

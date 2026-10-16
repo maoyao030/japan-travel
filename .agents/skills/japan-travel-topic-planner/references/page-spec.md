@@ -43,15 +43,15 @@
     "sharedGuides": ["japanese-timetable", "local-bus-seiriken"]
   },
   "bookingChannels": "research-required",
+  "travelGroupId": "hokkaido-wakkanai-rishiri-rebun",
   "keywordEvidence": [
     {
-      "provider": "Ahrefs MCP",
-      "ahrefsVerified": true,
-      "country": "TW",
+      "provider": "Google autocomplete",
+      "locale": "zh-TW",
+      "ahrefsVerified": false,
       "checkedAt": "2026-10-16",
       "query": "禮文島",
-      "volume": 400,
-      "trafficPotential": 100,
+      "suggestions": ["禮文島住宿", "禮文島交通", "禮文島船票"],
       "serpIntentConfirmed": true,
       "serpNotes": "前十名為維基百科、旅行團行程與少數個人攻略，與利尻島共用三個網址。"
     }
@@ -65,11 +65,12 @@
 ## 規則
 
 - `decision` 使用 `keep`、`merge`、`defer`、`remove`。`merge` 要寫明併入哪一頁；`defer` 要寫明等待什麼條件。
-- `pageType` 使用 `place-entry`（地點條目）、`aspect-page`（面向頁）、`topic-page`（主題頁）、`shared-guide`（共用教學頁）。
+- `pageType` 使用 `place-entry`（地點條目）、`aspect-page`（面向頁）、`cross-place-page`（跨地點頁）、`topic-page`（主題頁）、`shared-guide`（共用教學頁）。文章清單驗證程式支援 `cross-place-page` 是第二階段的工具工作。
+- `travelGroupId` 填所屬旅行群；共用教學頁可以不填，或填第一次需要它的群。
 - `planningTitle` 不用冒號，也不用「懶人包」「重點整理」等制式標籤。H1 與 SEO Title 由寫作 Skill 在研究後定稿。
 - `mustAnswer` 收錄 0 量與 10 量的長尾問題。這是條目接住長尾的方式，不能因為沒有搜尋量就刪掉。
 - 住宿相關頁的 `bookingChannels` 在規劃時填 `research-required`；寫作研究完成後，文章清單要寫成實際管道陣列（`official`、`trip.com`、`agoda`、`jalan-only`），並附 `factCheck` 查核日期與一年後重查日。
-- `keywordEvidence.provider` 只能是 `Ahrefs MCP`、`Ahrefs browser UI` 或 `SERP observation`。只有前兩者可以把 `ahrefsVerified` 設為 `true`。
+- `keywordEvidence.provider` 用 `Google autocomplete`（`locale` 填 `ja-JP` 或 `zh-TW`）或 `SERP observation`，`ahrefsVerified` 一律 `false`（2026-10-16 起不用 Ahrefs）。2026-10-16 以前的 Ahrefs 紀錄保留原樣。
 - `serpIntentConfirmed` 必須是實際看過搜尋結果頁後才填 `true`。
 - `targetPath` 依頁型填寫，網址最多三層，`routeDecision` 填 `resolved`：
   - 地點條目：`/places/<地點>/`，`routeMode` 為 `hub-landing`，文章 slug 與地點 Hub 相同。地區（北海道）也是 `/places/<地區>/`，地點不放進地區底下，上下關係只填 `place.region`。

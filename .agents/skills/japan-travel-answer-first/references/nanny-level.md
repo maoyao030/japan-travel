@@ -63,5 +63,6 @@
 | `onsen-ryokan-manners` | 溫泉與旅館的規矩 |
 | `luggage-delivery` | 行李寄放與宅配 |
 | `payment-methods` | 現金、信用卡、IC 卡的使用範圍 |
+| `heartland-ferry-booking` | Heartland Ferry 網路訂票、報到、停航改票（稚內、利尻、禮文共用） |
 
 清單會隨規劃增加。條目要連到教學頁時，在規格的 `sharedGuides` 列出 ID。

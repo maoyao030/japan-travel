@@ -1,6 +1,6 @@
 ---
 name: japan-travel-answer-first
-description: Research and write one Traditional Chinese article for the Japan travel site from an approved page spec — read Japanese official sources first, extract facts without translating paragraphs, write a babysitter-level guide for Taiwanese readers who do not read Japanese, record discoveries such as festivals or local foods, and hand the finished reader preview to the acceptance skill. Use when the user asks to write, draft, or research an article, place entry, aspect page, topic page, or shared guide for this site. Stops at a reader preview; does not plan topics, pick images, publish, or deploy.
+description: Research and write one Traditional Chinese article for the Japan travel site from an approved page spec and travel-group outline — pick sources by content tier (operator-official for transport and rules, official sites cross-checked with platforms for shops, dated ratings for popularity), extract facts without translating paragraphs, summarize only patterns shared across multiple reviews, write a babysitter-level guide for Taiwanese readers who do not read Japanese, record discoveries such as festivals or local foods, and hand the finished reader preview to the acceptance skill. Use when the user asks to write, draft, or research an article, place entry, aspect page, topic page, or shared guide for this site. Stops at a reader preview; does not plan topics, pick images, publish, or deploy.
 ---
 
 # 日本旅遊長尾站文章寫作
@@ -10,28 +10,28 @@ description: Research and write one Traditional Chinese article for the Japan tr
 ## 任務與責任
 
 - 接收已核准的頁面規格（`content-planning/<區域>/page-specs.json` 或 `content-automation/article-queue.json` 的一列）：主要查詢、頁型、內容邊界、`mustAnswer`、地點欄位與共用教學頁。不得改題、擴張內容邊界、改網址或改 Hub。研究顯示規格有誤時停止，把問題退回 `$japan-travel-topic-planner`。
+- 有核准的旅行群大綱（`content-planning/<區域>/<群>-outline.json` 或同內容的 MD）時，照大綱寫：H1／H2／H3 用大綱的版本（標題檢查仍可改措辭，不增刪標題、不改層級）；分工表裡本頁負責的事寫細節，只摘要的事一兩句帶過並連到負責頁；內連表裡從本頁出發的連結句都要寫進正文。研究發現大綱有誤或缺事實時停止，退回大綱，不自己改分工。
 - 同一位作者負責研究、文章計畫與全文，一次成稿。不拆成先鎖標題再填段落，也不安排第二位編輯潤飾。
-- 終點是 `content-production/<article-id>/reader-preview.md` 與研究記錄，交給 `$japan-travel-acceptance` 驗收。本 Skill 不呼叫 Ahrefs、不選圖、不寫入 Sanity、不發布、不 commit 或 push。
-- 開工前完整閱讀 [日文資料](references/japanese-sources.md)、[標題語氣與結構規範](references/heading-style.md)、[保母等級寫法](references/nanny-level.md)、[語氣、SEO 與小知識](references/voice-and-seo.md)、[頁型](references/page-types.md) 與 [研究記錄格式](references/research-record.md)。
+- 終點是 `content-production/<article-id>/reader-preview.md` 與研究記錄，交給 `$japan-travel-acceptance` 驗收。本 Skill 不做選題、不選圖、不寫入 Sanity、不發布、不 commit 或 push。
+- 開工前完整閱讀 [日文資料](references/japanese-sources.md)、[標題語氣與結構規範](references/heading-style.md)、[保母等級寫法](references/nanny-level.md)、[語氣、SEO 與小知識](references/voice-and-seo.md)、[頁型](references/page-types.md)、[評論與人氣](references/reviews-and-popularity.md) 與 [研究記錄格式](references/research-record.md)。
 
 ## 研究
 
-### 先讀日文官方資料
+### 依內容找來源
 
-旅館官網、觀光協會、交通公司、市町村公告，最新最完整的版本幾乎都是日文；中文頁常只翻一部分或沒有更新。研究順序：
+旅館官網、觀光協會、交通公司、市町村公告，最新最完整的版本幾乎都是日文官方資料；中文頁常只翻一部分或沒有更新。能用哪種來源看事實的內容（2026-10-16 Darren 決定），完整對照見 [日文資料](references/japanese-sources.md)：
 
-1. 旅館、店家、交通公司官網
-2. 市町村與觀光協會
-3. 觀光廳、氣象廳（平年值）、日本政府觀光局、國稅廳、消費者廳
-4. 日文新聞：停辦、停駛、改建等變動
-5. Hot Pepper Gourmet Web 服務：店家營業資訊，使用時要署名
-6. Jalan、樂天 Travel、Tabelog、Google 地圖、Walkerplus：只用來發現與核對，不當正文來源
+- **交通與規則**（班次、票價、停駛、步道封閉、入園規定）：只用經營者官方。官方沒寫就寫「官方沒寫」。
+- **店家與旅館資訊**（營業時間、公休、價格、房型、含餐）：店家官網與官方社群，用 Jalan、樂天 Travel、Tabelog、Google 地圖、Hot Pepper 交叉核對。
+- **人氣**（榜單、得獎、評分、評論數）：附平台名稱與查核日期。
+- **評論常提到的特點**：兩個平台以上、三則以上共同提到才寫，依 [評論與人氣](references/reviews-and-popularity.md)。
+- **找候選**：Tabelog、Google 地圖、部落格、新聞、PTT、Dcard 都可以用來找「這裡可能有東西」，寫進正文前要找到上面可用的來源。
 
 搜尋用規格裡的 `japaneseNames` 與 `japaneseSearchTerms`。日文漢字和繁中不同，用繁中字搜會漏資料，對照表見 [日文資料](references/japanese-sources.md)。
 
 ### 只取事實，不翻譯段落
 
-把日文文章整段翻成中文，在著作權上屬於翻案。研究記錄只保存事實與原文的短摘錄：班次、價格、日期、條件；正文用自己的話重寫。Tabelog 與 Google 評論一律不改寫，評價層只放米其林、Tabelog 百名店、Tabelog Award 等公開榜單事實並附連結。
+把日文文章整段翻成中文，在著作權上屬於翻案。研究記錄只保存事實與原文的短摘錄：班次、價格、日期、條件；正文用自己的話重寫。單則評論一律不改寫、不翻譯、不引用；多則評論的共同特點依 [評論與人氣](references/reviews-and-popularity.md) 用自己的話歸納，好壞都寫並附查核日期。
 
 ### 每個事實都留原文證據
 
@@ -110,7 +110,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 ### 來源與連結
 
-正文、表格與括號不放外部來源連結；外部來源集中在最後的 `## 資料來源`，列日文原標題與連結。站內連結只用已上線且網址確定的頁面，不猜網址。旅館官網與訂房連結屬於讀者要用的連結，可以放在住宿段落，不算來源連結；分潤連結要符合關於頁的揭露原則。
+正文、表格與括號不放外部來源連結；外部來源集中在最後的 `## 資料來源`，列日文原標題與連結。站內連結只加在已上線且網址確定的頁面，不猜網址。大綱內連表要求的連結句照樣寫進正文；目標頁還沒上線時，句子照寫、先不加連結，在研究記錄的「待補內連」列出這句話與目標頁 ID，等目標頁上線後只把這句加上連結，字不改。旅館官網與訂房連結屬於讀者要用的連結，可以放在住宿段落，不算來源連結；分潤連結要符合關於頁的揭露原則。
 
 ### 常見問題
 
@@ -121,6 +121,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 正文先寫成 `content-production/<article-id>/draft-tagged.md`：每個含數字、時間、價格、期間、距離或條件（只收現金、要預約、封閉、禁止）的句子、表格格子、清單項目，句尾附事實編號，例如「直航約 1 小時 55 分 [F5]」。
 
 - 一句用到多筆事實就列多個：`[F1, F12]`。
+- 評論統整的句子標評論編號，例如「評論常提到中午前就賣完 [R1]」；`R` 編號記在研究記錄的「評論統整」表。
 - 對不到編號的句子，代表寫作時在補內容：回去研究補進事實表，或刪掉，或改寫成「官方沒寫」。
 - 建議與判斷要從事實推出來，同樣附它依據的編號；沒有事實撐的建議不寫。
 - 標題、資料來源段落不標編號。

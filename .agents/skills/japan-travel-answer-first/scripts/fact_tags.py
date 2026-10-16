@@ -3,6 +3,7 @@
 
 用法：python3 fact_tags.py content-production/<article-id> [--json]
 讀 draft-tagged.md 與 reference-review.md，檢查後寫出 reader-preview.md（去掉 [F12] 標記）。
+事實用 F 編號；評論統整用 R 編號，記在研究記錄的「評論統整」表。
 有問題時不寫出 reader-preview.md，結束碼為 1。
 """
 
@@ -14,12 +15,12 @@ import re
 import sys
 from pathlib import Path
 
-TAG = re.compile(r"\s?\[(F\d+(?:\s*,\s*F\d+)*)\]")
-FACT_ROW = re.compile(r"^\|\s*(F\d+)\s*\|")
+TAG = re.compile(r"\s?\[([FR]\d+(?:\s*,\s*[FR]\d+)*)\]")
+FACT_ROW = re.compile(r"^\|\s*([FR]\d+)\s*\|")
 HEADING = re.compile(r"^#{1,6}\s")
 # 需要事實編號的訊號：數字（含全形）、日文假名的設施或標示名稱以外的時間、價格、距離等。
 NEEDS_TAG = re.compile(
-    r"[0-9０-９]|只收|不找零|免費|需要預約|要預約|預約制|封閉|停駛|停航|休館|不能|禁止|可以刷|收現金|含稅|未稅"
+    r"[0-9０-９]|只收|不找零|免費|需要預約|要預約|預約制|封閉|停駛|停航|休館|不能|禁止|可以刷|收現金|含稅|未稅|評論常提到|評論多半|評分"
 )
 SKIP_SECTIONS = {"資料來源", "參考資料"}
 
@@ -67,7 +68,7 @@ def check(directory: Path) -> dict:
         for tag in tags:
             used.add(tag)
             if tag not in known:
-                note(number, "UNKNOWN_FACT", f"研究記錄的事實表沒有 {tag}", stripped)
+                note(number, "UNKNOWN_FACT", f"研究記錄的事實表或評論統整表沒有 {tag}", stripped)
 
         if stripped.startswith("|"):
             # 表格以整列為單位：欄名列、分隔列不檢查；有數字或條件的資料列至少要有一個編號。
@@ -94,7 +95,7 @@ def check(directory: Path) -> dict:
     return {
         "status": "tags_clear" if not issues else "tags_failed",
         "factsInTable": len(known),
-        "factsUsed": sorted(used, key=lambda tag: int(tag[1:])),
+        "factsUsed": sorted(used, key=lambda tag: (tag[0], int(tag[1:]))),
         "issues": issues,
         "preview": preview,
     }
