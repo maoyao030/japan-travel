@@ -49,6 +49,8 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 在研究記錄最後寫出：核心答案、H 樹、每節要回答的 `mustAnswer`、會連到的共用教學頁、住宿段落的訂房管道、FAQ 候選，以及查到但不寫的內容與原因。
 
+計畫也要列出圖片需求：哪一節、哪一種需求（認現場、決定去不去、吃什麼、季節對照、路線時間軸），以及讀者看圖要確認什麼。需求種類與「不放圖」的情況依 `.agents/skills/japan-travel-image-finder/references/image-needs.md`；每個 H2 都放一張裝飾照不算需求。路線與時間軸要畫成示意圖時，把節點的事實 `claimId` 一併列出，交給選圖 Skill 做資料檔。
+
 ## 寫作
 
 ### 開頭直接回答
@@ -105,4 +107,4 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 ## 完成條件
 
-`reader-preview.md` 與 `reference-review.md` 都已存在；每個 `mustAnswer` 都有回答或寫明查不到的原因；每個事實在研究記錄有日文原文摘錄與網址；專有名詞附日文原名並已更新譯名表；新發現已記進發現清單；格式檢查為 `mechanical_clear`；已交給驗收 Skill。
+`reader-preview.md` 與 `reference-review.md` 都已存在；每個 `mustAnswer` 都有回答或寫明查不到的原因；每個事實在研究記錄有日文原文摘錄與網址；專有名詞附日文原名並已更新譯名表；新發現已記進發現清單；圖片需求已列在文章計畫；格式檢查為 `mechanical_clear`；已交給驗收 Skill。

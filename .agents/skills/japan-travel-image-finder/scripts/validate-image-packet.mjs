@@ -10,7 +10,9 @@ import {fileURLToPath} from 'node:url'
 
 const POLICY = 'real-photo-first-ai-if-none'
 const AUTO_SELECTION_MODE = 'criteria-based-auto-selection'
-const OUTCOMES = new Set(['not-run', 'qualified-photo-found', 'no-qualified-photo'])
+const OUTCOMES = new Set(['not-run', 'qualified-photo-found', 'no-qualified-photo', 'diagram-preferred'])
+export const IMAGE_NEEDS = new Set(['site-identification', 'decide-visit', 'food', 'season-contrast', 'route-timeline'])
+const NO_AI_NEEDS = new Set(['site-identification', 'route-timeline'])
 const STATUSES = new Set(['planning', 'selected', 'blocked'])
 const ARTICLE_SOURCES = new Set(['sanity-published', 'approved-reader-preview', 'provisional-draft'])
 const REAL_TYPES = new Set(['commons-photo', 'stock-photo', 'official-material', 'own-photo'])
@@ -44,7 +46,7 @@ export const COMMONS_LICENSES = new Set([
 ])
 const ATTRIBUTION_REQUIRED = /^CC BY/
 const REAL_CHECKS = ['fullImageInspected', 'officialSourcePage', 'licenseVerified', 'notAiGenerated', 'noWatermark']
-const AI_CHECKS = ['fullImageInspected', 'noWatermark', 'aiDisclosureReady', 'technicalClaimsAvoided']
+const AI_CHECKS = ['fullImageInspected', 'noWatermark', 'aiDisclosureReady', 'technicalClaimsAvoided', 'onImageLabel']
 const AI_FORBIDDEN = [
   'sourcePageUrl',
   'creatorName',
@@ -70,7 +72,7 @@ function taipeiToday() {
   return `${values.year}-${values.month}-${values.day}`
 }
 
-export function validatePlan(plan, {today = taipeiToday()} = {}) {
+export function validatePlan(plan, {today = taipeiToday(), packetDirectory = null} = {}) {
   const errors = []
   const fail = (location, message) => errors.push(`${location}: ${message}`)
 
@@ -221,7 +223,41 @@ export function validatePlan(plan, {today = taipeiToday()} = {}) {
         validateRealCommon(candidate, location, slot)
         break
       }
+      case 'diagram': {
+        if (candidate.provider !== 'self-made') fail(`${location}.provider`, '自製示意圖的 provider 必須是 self-made')
+        if (candidate.assetType !== 'svg') fail(`${location}.assetType`, '自製示意圖必須是 svg')
+        if (slot.need !== 'route-timeline') fail(`${location}.sourceType`, '自製示意圖只用在 route-timeline 位置')
+        const dataFile = requireString(candidate, 'dataFile', location)
+        const svgFile = requireString(candidate, 'svgFile', location)
+        if (dataFile && !/^images\/diagrams\/[a-z0-9-]+\.json$/.test(dataFile)) {
+          fail(`${location}.dataFile`, '必須是 images/diagrams/<diagramId>.json')
+        }
+        if (!Array.isArray(candidate.factIds) || candidate.factIds.length === 0) {
+          fail(`${location}.factIds`, '必須列出圖上每個標示對應的事實編號')
+        }
+        if (packetDirectory && dataFile) {
+          const dataPath = path.join(packetDirectory, dataFile)
+          if (!fs.existsSync(dataPath)) fail(`${location}.dataFile`, `找不到資料檔 ${dataFile}`)
+          else {
+            const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
+            const dataFactIds = [...(data.nodes ?? []), ...(data.edges ?? [])].map((item) => item.factId)
+            if (dataFactIds.some((id) => typeof id !== 'string' || id.trim() === '')) {
+              fail(`${location}.dataFile`, '資料檔的每個節點與連線都要有 factId')
+            }
+            const listed = new Set(candidate.factIds ?? [])
+            if (dataFactIds.some((id) => !listed.has(id))) fail(`${location}.factIds`, '必須包含資料檔裡所有的 factId')
+            if (data.type === 'route' && !(typeof data.scaleNote === 'string' && data.scaleNote.trim())) {
+              fail(`${location}.dataFile`, '路線示意圖必須有 scaleNote')
+            }
+          }
+          if (svgFile && !fs.existsSync(path.join(packetDirectory, svgFile))) {
+            fail(`${location}.svgFile`, `找不到 ${svgFile}，請先執行 render-diagram.mjs`)
+          }
+        }
+        break
+      }
       case 'ai-generated': {
+        if (NO_AI_NEEDS.has(slot.need)) fail(`${location}.sourceType`, `${slot.need} 位置不准使用 AI 圖`)
         if (candidate.provider !== 'OpenAI ImageGen') fail(`${location}.provider`, 'AI 備援只接受 OpenAI ImageGen')
         if (candidate.assetType !== 'generated-image') fail(`${location}.assetType`, '必須是 generated-image')
         if (candidate.matchType !== 'illustrative') fail(`${location}.matchType`, 'AI 圖必須是 illustrative')
@@ -238,7 +274,7 @@ export function validatePlan(plan, {today = taipeiToday()} = {}) {
         break
       }
       default:
-        fail(`${location}.sourceType`, `必須是 ${[...REAL_TYPES, 'ai-generated'].join('、')}`)
+        fail(`${location}.sourceType`, `必須是 ${[...REAL_TYPES, 'diagram', 'ai-generated'].join('、')}`)
     }
     return candidateId
   }
@@ -274,12 +310,16 @@ export function validatePlan(plan, {today = taipeiToday()} = {}) {
     if (slotIds.has(slotId)) fail(`${location}.slotId`, '不能重複')
     slotIds.add(slotId)
     if (!['cover', 'inline'].includes(slot?.kind)) fail(`${location}.kind`, '必須是 cover 或 inline')
+    if (slot?.kind === 'inline' && !IMAGE_NEEDS.has(slot?.need)) {
+      fail(`${location}.need`, `文內圖必須標明需求：${[...IMAGE_NEEDS].join('、')}`)
+    }
+    const deferredToShotList = typeof slot?.shotListId === 'string' && slot.shotListId.trim() !== ''
     requireString(slot, 'purpose', location)
     for (const field of ['mustShow', 'mustNotShow']) {
       if (!Array.isArray(slot?.[field]) || slot[field].length === 0) fail(`${location}.${field}`, '至少一項')
     }
     if (!Number.isInteger(slot?.minimumWidth) || slot.minimumWidth <= 0) fail(`${location}.minimumWidth`, '必須是正整數')
-    if (plan.status === 'selected') requireString(slot, 'selectionNotes', location)
+    if (plan.status === 'selected' && !deferredToShotList) requireString(slot, 'selectionNotes', location)
 
     const sourcing = slot?.sourcing
     if (sourcing?.policy !== POLICY) fail(`${location}.sourcing.policy`, `必須是 ${POLICY}`)
@@ -290,7 +330,14 @@ export function validatePlan(plan, {today = taipeiToday()} = {}) {
 
     const candidates = Array.isArray(slot?.candidates) ? slot.candidates : []
     if (!Array.isArray(slot?.candidates)) fail(`${location}.candidates`, '必須是陣列')
-    if (candidates.length === 0 && plan.status === 'selected') fail(`${location}.candidates`, '至少需要一張候選')
+    if (candidates.length === 0 && plan.status === 'selected' && !deferredToShotList) {
+      fail(`${location}.candidates`, '至少需要一張候選')
+    }
+    if (deferredToShotList) {
+      if (outcome !== 'no-qualified-photo') fail(`${location}.shotListId`, '進待拍清單的位置必須是 no-qualified-photo')
+      if (candidates.length > 0) fail(`${location}.shotListId`, '進待拍清單的位置不能有候選')
+      if (slot.kind === 'cover') fail(`${location}.shotListId`, '封面不能留待拍攝，必須選定一張')
+    }
     const candidateIds = new Set()
     for (const [index, candidate] of candidates.entries()) {
       const candidateLocation = `${location}.candidates[${index}]`
@@ -307,6 +354,13 @@ export function validatePlan(plan, {today = taipeiToday()} = {}) {
 
     const hasReal = candidates.some((candidate) => REAL_TYPES.has(candidate?.sourceType))
     const hasAi = candidates.some((candidate) => candidate?.sourceType === 'ai-generated')
+    const hasDiagram = candidates.some((candidate) => candidate?.sourceType === 'diagram')
+    if (outcome === 'diagram-preferred' && (hasReal || hasAi)) {
+      fail(`${location}.candidates`, 'diagram-preferred 的位置只能放自製示意圖')
+    }
+    if (hasDiagram && outcome !== 'diagram-preferred') {
+      fail(`${location}.candidates`, '自製示意圖的位置必須記錄 diagram-preferred')
+    }
     if (hasReal && hasAi) fail(`${location}.candidates`, '同一位置不能混放實拍與 AI 圖')
     if (outcome === 'not-run' && candidates.length > 0) fail(`${location}.candidates`, '搜尋尚未完成前不能建立候選')
     if (outcome === 'qualified-photo-found' && !hasReal) fail(`${location}.candidates`, '已找到合格實拍時必須保留實拍候選')
@@ -315,7 +369,7 @@ export function validatePlan(plan, {today = taipeiToday()} = {}) {
     }
     if (outcome === 'no-qualified-photo' && hasReal) fail(`${location}.candidates`, 'no-qualified-photo 不能保留實拍候選')
 
-    if (plan.status === 'selected') {
+    if (plan.status === 'selected' && !deferredToShotList) {
       const selectedId = selected[slotId]
       const selectedCandidate = candidates.find((candidate) => candidate?.candidateId === selectedId)
       if (!selectedCandidate) {
@@ -364,7 +418,7 @@ function runCli() {
     console.error(`無法讀取 JSON：${error.message}`)
     process.exit(2)
   }
-  const errors = validatePlan(plan)
+  const errors = validatePlan(plan, {packetDirectory: path.dirname(path.dirname(planPath))})
   if (errors.length > 0) {
     console.error(`圖片封包驗證失敗（${errors.length} 項）：`)
     for (const error of errors) console.error(`- ${error}`)

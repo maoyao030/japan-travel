@@ -14,6 +14,14 @@ description: Find and select commercially usable images for an approved Japan tr
 3. 完整閱讀 [來源與授權](references/selection-and-licensing.md)；保存成果前讀 [圖片封包](references/image-packet.md)。
 4. 不修改文章內容。文章與圖片互相矛盾時，記錄阻礙並交回寫作流程。
 
+## 先判斷要不要放圖
+
+只在讀者「要看到才懂」的地方放圖，依 [放圖時機](references/image-needs.md) 的五種需求：現場辨識、決定要不要去、料理、季節差異、路線與時間。作者在文章計畫列出圖片需求，本 Skill 依需求找圖，不自行增加裝飾用的位置。
+
+- 現場辨識的圖不准用 AI；找不到合格照片就記進 [待拍清單](references/shot-list.md)。
+- 路線與時間用 [自製示意圖](references/diagrams.md)，由程式依已查證的資料畫成 SVG。
+- 不截取任何網站的畫面。
+
 ## 來源順序
 
 | 順序 | 來源 | 適合用在 |
@@ -22,7 +30,8 @@ description: Find and select commercially usable images for an approved Japan tr
 | 2 | Unsplash、Pexels、Pixabay | 封面、大地方、季節氛圍 |
 | 3 | 觀光協會或自治體公開的照片素材 | 小地方、祭典；條件逐一確認 |
 | 4 | Darren 或作者自己拍的照片 | 任何地方 |
-| 5 | AI 示意圖 | 前面都沒有合格照片時，必須標示 |
+| 5 | 自製示意圖 | 路線與時間；由程式依資料畫成 SVG |
+| 6 | AI 示意圖 | 前面都沒有合格照片時，必須標示，且不能用在現場辨識 |
 
 小地方在免費圖庫幾乎找不到照片，所以先查維基共享資源。重點店家與旅館位置用 Google 地圖嵌入呈現，那不是圖片來源，不在本 Skill 處理。
 
@@ -52,7 +61,12 @@ description: Find and select commercially usable images for an approved Japan tr
 
 ## AI 備援
 
-只有在依多組描述搜尋過所有實拍來源、仍是零張合格時，才在封包記錄 `no-qualified-photo` 與原因，再使用 AI。AI 圖只能當情境示意，不能代表特定旅館、店家、祭典實況或地點的真實樣貌；圖說必須包含「AI 示意圖」。需要證明地點真實樣貌的位置（例如「碼頭售票口長這樣」），AI 不可靠就設為 `blocked`，改建議自己拍。
+只有在依多組描述搜尋過所有實拍來源、仍是零張合格時，才在封包記錄 `no-qualified-photo` 與原因，再使用 AI。
+
+- AI 圖只能當情境示意，不能代表特定旅館、店家、祭典實況或地點的真實樣貌。
+- 現場辨識（`site-identification`）與路線時間（`route-timeline`）的位置不准用 AI。
+- 圖說必須包含「AI 示意圖」，圖片角落也要印上「AI 示意圖」，被截圖轉貼時揭露才不會消失。
+- 生成後由 `$japan-travel-acceptance` 的圖片驗收 agent 檢查；試點期間每張 AI 圖還要 Darren 親眼確認後才能上線。
 
 ## 選定與交付
 
@@ -76,4 +90,4 @@ node .agents/skills/japan-travel-image-finder/scripts/validate-image-packet.mjs 
 
 ## 完成條件
 
-每個圖片位置都已依正文建立視覺規格；候選都看過大圖並核對官方單張頁與授權；沒有 NC、ND 或來源不明的素材；觀光協會素材已確認利用規約；選定理由與署名草案已記錄；封包驗證通過，或在沒有可靠圖片時設為 `blocked`。
+每個圖片位置都對應作者列出的一種圖片需求並已建立視覺規格；候選都看過大圖並核對官方單張頁與授權；沒有 NC、ND 或來源不明的素材；觀光協會素材已確認利用規約；選定理由與署名草案已記錄；找不到現場照片的位置已記進待拍清單；自製示意圖已由資料檔產生；封包驗證通過，或在沒有可靠圖片時設為 `blocked`。

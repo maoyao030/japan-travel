@@ -85,6 +85,10 @@
 
 ## 欄位規則
 
+- 文內位置（`kind: "inline"`）必須有 `need`：`site-identification`、`decide-visit`、`food`、`season-contrast`、`route-timeline`。封面不需要。
+- 找不到現場照片時，該位置寫 `shotListId`（對應 `content-planning/shot-list.json`），`photoSearchOutcome` 為 `no-qualified-photo`，候選保持空白；這種位置不需要選定候選，文章用文字描述。
+- `route-timeline` 的位置 `photoSearchOutcome` 填 `diagram-preferred`，候選只能是 `diagram`。
+
 - `status`：`planning`、`selected` 或 `blocked`。`blocked` 要有 `blockedReason`。
 - `targetUrl`：正式網址，兩層或三層，例如 `/places/rebun-island/` 或 `/stay/ginzan-onsen/ryokan/`。
 - `sourcing.policy` 固定為 `real-photo-first-ai-if-none`。`photoSearchOutcome`：
@@ -96,7 +100,8 @@
   - `stock-photo`：`provider` 為 Unsplash、Pexels 或 Pixabay，規則同好材誌。
   - `official-material`：觀光協會或自治體素材。必填 `termsUrl`、`termsCheckedAt`、`commercialUseAllowed: true`、`modificationAllowed: true`、`creditRequirement`；`applicationRequired` 為 `true` 時要有 `applicationApprovedAt`。
   - `own-photo`：必填 `photographer`、`takenAt`；不需要授權網址。
-  - `ai-generated`：`provider` 為 `OpenAI ImageGen`，必填 `generatedAt`、`promptSummary`、`factualLimits`、`disclosureDraft`；圖說與揭露要含「AI」。不得填寫任何來源或授權欄位。
+  - `ai-generated`：`provider` 為 `OpenAI ImageGen`，必填 `generatedAt`、`promptSummary`、`factualLimits`、`disclosureDraft`；圖說與揭露要含「AI」，`checks.onImageLabel` 為 `true` 表示圖片角落已印「AI 示意圖」。不得填寫任何來源或授權欄位。不能用在 `site-identification` 與 `route-timeline`。
+  - `diagram`：`provider` 為 `self-made`，必填 `dataFile`（`images/diagrams/<diagramId>.json`）、`factIds`、`svgFile`；`route` 類型的資料檔要有 `scaleNote`。署名草案寫「本站製作示意圖」。
 - `kind` 為 `inline` 時，實拍只能是 `exact`。
 - 授權或利用規約查核超過 30 天要重新查核。
 - 所有候選的 `commercialReview.risk` 必須是 `low`。

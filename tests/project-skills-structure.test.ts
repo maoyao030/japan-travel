@@ -1,12 +1,14 @@
 import assert from 'node:assert/strict'
 import {spawnSync} from 'node:child_process'
 import {createHash} from 'node:crypto'
-import {access, mkdtemp, readFile, readdir, rm, writeFile} from 'node:fs/promises'
+import {access, mkdir, mkdtemp, readFile, readdir, rm, writeFile} from 'node:fs/promises'
 import {tmpdir} from 'node:os'
 import path from 'node:path'
 import test from 'node:test'
 
 import {validateFactCheck} from '../.agents/skills/japan-travel-acceptance/scripts/validate-fact-check.mjs'
+import {validateImageReview} from '../.agents/skills/japan-travel-acceptance/scripts/validate-image-review.mjs'
+import {renderDiagram, validateDiagramData} from '../.agents/skills/japan-travel-image-finder/scripts/render-diagram.mjs'
 import {validatePlan} from '../.agents/skills/japan-travel-image-finder/scripts/validate-image-packet.mjs'
 
 const projectRoot = path.resolve(import.meta.dirname, '..')
@@ -279,11 +281,197 @@ test('觀光協會素材必須確認商業使用與裁切，AI 圖不能跳過�
     disclosureDraft: 'AI 示意圖／OpenAI ImageGen',
     creditDraft: 'AI 示意圖',
     commercialReview: {risk: 'low'},
-    checks: {fullImageInspected: true, noWatermark: true, aiDisclosureReady: true, technicalClaimsAvoided: true},
+    checks: {fullImageInspected: true, noWatermark: true, aiDisclosureReady: true, technicalClaimsAvoided: true, onImageLabel: true},
   }
   assert.deepEqual(validatePlan(imagePlan(ai), {today}), [])
 
   const skipped = imagePlan(ai)
   skipped.slots[0].sourcing.photoSearchOutcome = 'qualified-photo-found'
   assert.match(validatePlan(skipped, {today}).join('\n'), /才可使用 AI/)
+})
+
+function inlinePlan(slot: AnyRecord, selectedId?: string): AnyRecord {
+  const plan = imagePlan()
+  plan.slots.push({
+    slotId: 'ferry-route',
+    kind: 'inline',
+    purpose: '稚內到禮文島的航線',
+    mustShow: ['稚內港', '香深港'],
+    mustNotShow: ['沒有航線的港口'],
+    targetAspectRatio: '2:1',
+    minimumWidth: 760,
+    selectionNotes: '依需求判斷',
+    candidates: [],
+    ...slot,
+  })
+  if (selectedId) plan.selectedCandidateIds['ferry-route'] = selectedId
+  return plan
+}
+
+const ferryDiagram = {
+  schemaVersion: 1,
+  diagramId: 'wakkanai-rebun-ferry',
+  type: 'route',
+  title: '稚內到禮文島的渡輪',
+  scaleNote: '不依比例',
+  nodes: [
+    {id: 'wakkanai', label: '稚內港', labelJa: '稚内港', factId: 'C1'},
+    {id: 'kafuka', label: '香深港', labelJa: '香深港', factId: 'C2'},
+  ],
+  edges: [{from: 'wakkanai', to: 'kafuka', label: '約 2 小時', factId: 'C3'}],
+}
+
+function diagramCandidate(overrides: AnyRecord = {}): AnyRecord {
+  return {
+    candidateId: 'ferry-diagram',
+    sourceType: 'diagram',
+    provider: 'self-made',
+    assetType: 'svg',
+    dataFile: 'images/diagrams/wakkanai-rebun-ferry.json',
+    svgFile: 'images/diagrams/wakkanai-rebun-ferry.svg',
+    factIds: ['C1', 'C2', 'C3'],
+    width: 760,
+    height: 380,
+    matchType: 'exact',
+    whyItFits: '依查證過的航線資料繪製',
+    altDraft: '稚內港到香深港的渡輪路線示意圖',
+    creditDraft: '本站製作示意圖',
+    commercialReview: {risk: 'low'},
+    ...overrides,
+  }
+}
+
+const diagramSourcing = {
+  policy: 'real-photo-first-ai-if-none',
+  photoSearchOutcome: 'diagram-preferred',
+  photoSearchCheckedAt: '2026-10-16',
+  photoSearchNotes: '路線用示意圖比照片清楚',
+}
+
+test('文內圖要標明需求，認現場與路線位置不准用 AI 圖', () => {
+  const today = '2026-10-16'
+  const noNeed = inlinePlan({sourcing: diagramSourcing, candidates: [diagramCandidate()]}, 'ferry-diagram')
+  assert.match(validatePlan(noNeed, {today}).join('\n'), /文內圖必須標明需求/)
+
+  const aiOnSite = imagePlan()
+  aiOnSite.slots[0].need = 'site-identification'
+  const ai = aiOnSite.slots[0].candidates[0]
+  aiOnSite.slots[0].candidates[0] = {...ai, sourceType: 'ai-generated'}
+  assert.match(validatePlan(aiOnSite, {today}).join('\n'), /site-identification 位置不准使用 AI 圖/)
+})
+
+test('自製示意圖只用在路線位置、要列事實編號，並能從資料檔畫出 SVG', async () => {
+  const today = '2026-10-16'
+  const good = inlinePlan(
+    {need: 'route-timeline', sourcing: diagramSourcing, candidates: [diagramCandidate()]},
+    'ferry-diagram',
+  )
+  assert.deepEqual(validatePlan(good, {today}), [])
+
+  const wrongNeed = inlinePlan({need: 'food', sourcing: diagramSourcing, candidates: [diagramCandidate()]}, 'ferry-diagram')
+  assert.match(validatePlan(wrongNeed, {today}).join('\n'), /只用在 route-timeline/)
+
+  const noFacts = inlinePlan(
+    {need: 'route-timeline', sourcing: diagramSourcing, candidates: [diagramCandidate({factIds: []})]},
+    'ferry-diagram',
+  )
+  assert.match(validatePlan(noFacts, {today}).join('\n'), /事實編號/)
+
+  const notPreferred = inlinePlan(
+    {need: 'route-timeline', sourcing: {...diagramSourcing, photoSearchOutcome: 'no-qualified-photo'}, candidates: [diagramCandidate()]},
+    'ferry-diagram',
+  )
+  assert.match(validatePlan(notPreferred, {today}).join('\n'), /diagram-preferred/)
+
+  assert.deepEqual(validateDiagramData(ferryDiagram), [])
+  assert.match(validateDiagramData({...ferryDiagram, scaleNote: ''}).join('\n'), /scaleNote/)
+  const svg = renderDiagram(ferryDiagram)
+  assert.match(svg, /^<svg/)
+  assert.match(svg, /稚內港/)
+  assert.match(svg, /本站製作示意圖｜不依比例/)
+
+  const directory = await mkdtemp(path.join(tmpdir(), 'japan-travel-diagram-'))
+  try {
+    const diagrams = path.join(directory, 'images', 'diagrams')
+    await mkdir(diagrams, {recursive: true})
+    await writeFile(path.join(diagrams, 'wakkanai-rebun-ferry.json'), JSON.stringify(ferryDiagram))
+    assert.match(
+      validatePlan(good, {today, packetDirectory: directory}).join('\n'),
+      /請先執行 render-diagram/,
+    )
+    const script = path.join(skillsRoot, 'japan-travel-image-finder', 'scripts', 'render-diagram.mjs')
+    const result = spawnSync(process.execPath, [script, path.join(diagrams, 'wakkanai-rebun-ferry.json')], {encoding: 'utf8'})
+    assert.equal(result.status, 0, result.stderr)
+    assert.deepEqual(validatePlan(good, {today, packetDirectory: directory}), [])
+
+    const missingFact = inlinePlan(
+      {need: 'route-timeline', sourcing: diagramSourcing, candidates: [diagramCandidate({factIds: ['C1', 'C2']})]},
+      'ferry-diagram',
+    )
+    assert.match(validatePlan(missingFact, {today, packetDirectory: directory}).join('\n'), /所有的 factId/)
+  } finally {
+    await rm(directory, {recursive: true, force: true})
+  }
+})
+
+test('找不到合格照片的文內圖可以進待拍清單，封面不行', () => {
+  const today = '2026-10-16'
+  const deferredSourcing = {...diagramSourcing, photoSearchOutcome: 'no-qualified-photo', photoSearchNotes: '沒有售票處照片'}
+  const deferred = inlinePlan({need: 'site-identification', shotListId: 'rebun-ticket-counter', sourcing: deferredSourcing})
+  assert.deepEqual(validatePlan(deferred, {today}), [])
+
+  const withCandidate = inlinePlan({
+    need: 'site-identification',
+    shotListId: 'rebun-ticket-counter',
+    sourcing: deferredSourcing,
+    candidates: [commonsCandidate({candidateId: 'x'})],
+  })
+  assert.match(validatePlan(withCandidate, {today}).join('\n'), /不能有候選/)
+
+  const coverDeferred = imagePlan()
+  coverDeferred.slots[0].shotListId = 'rebun-cover'
+  assert.match(validatePlan(coverDeferred, {today}).join('\n'), /封面不能留待拍攝/)
+})
+
+test('AI 圖與示意圖要由另一個 agent 看過，示意圖的事實要已查證，AI 圖要 Darren 確認', () => {
+  const diagramPlan = inlinePlan(
+    {need: 'route-timeline', sourcing: diagramSourcing, candidates: [diagramCandidate()]},
+    'ferry-diagram',
+  )
+  const verified = {claims: ['C1', 'C2', 'C3'].map((claimId) => ({claimId, verdict: 'verified'}))}
+  const diagramData = {'images/diagrams/wakkanai-rebun-ferry.json': ferryDiagram}
+  const diagramItem = {
+    slotId: 'ferry-route',
+    candidateId: 'ferry-diagram',
+    kind: 'diagram',
+    checks: {matchesDataFile: true, factsVerified: true, scaleNotePresent: true, readableOnPhone: true},
+    verdict: 'pass',
+    notes: '',
+  }
+  const review = {schemaVersion: 1, articleId: 'rebun-island', reviewer: 'image-review-agent', reviewedAt: '2026-10-16', items: [diagramItem]}
+
+  assert.deepEqual(validateImageReview({plan: diagramPlan, review, factCheck: verified, diagramData}), [])
+  assert.match(validateImageReview({plan: diagramPlan, review: null, factCheck: verified, diagramData}).join('\n'), /缺少 image-review.json/)
+
+  const unverified = {claims: [{claimId: 'C1', verdict: 'verified'}, {claimId: 'C2', verdict: 'verified'}, {claimId: 'C3', verdict: 'incorrect'}]}
+  assert.match(validateImageReview({plan: diagramPlan, review, factCheck: unverified, diagramData}).join('\n'), /未在 fact-check.json 查證的事實：C3/)
+
+  const aiPlan = imagePlan({
+    candidateId: 'cover-ai',
+    sourceType: 'ai-generated',
+  })
+  const aiItem = {
+    slotId: 'cover',
+    candidateId: 'cover-ai',
+    kind: 'ai',
+    checks: {noFakeText: true, japanFactsCorrect: true, matchesArticle: true, notMistakableForRealPlace: true, noLikenessOrBrand: true, disclosureVisible: true, allowedNeed: true},
+    verdict: 'pass',
+    notes: '',
+  }
+  const aiReview = {...review, items: [aiItem]}
+  assert.match(validateImageReview({plan: aiPlan, review: aiReview, factCheck: verified}).join('\n'), /darrenConfirmedAt/)
+  assert.deepEqual(
+    validateImageReview({plan: aiPlan, review: {...aiReview, items: [{...aiItem, darrenConfirmedAt: '2026-10-16'}]}, factCheck: verified}),
+    [],
+  )
 })
