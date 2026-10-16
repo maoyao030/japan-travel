@@ -118,9 +118,33 @@
 ### 尚未完成
 
 - 自動發布 Skill（auto-publisher）。
-- 譯名表 `content-planning/glossary.json`、待拍清單 `content-planning/shot-list.json` 與共用教學頁清單的實際內容。
+- 譯名表 `content-planning/glossary.json`、缺圖清單 `content-planning/missing-images.json` 與共用教學頁清單的實際內容。
 - Sanity Studio 的依賴沒有安裝，Studio 的型別檢查本輪沒跑；欄位是照現有寫法加的。
 
 ### 唯一下一步
 
 - 用選題 Skill 試跑稚內、利尻、禮文，產出頁面規格給 Darren 核准；核准後把地點填進 `src/data/categories.ts` 的 `places.topics`。
+
+## 2026-10-16 Claude Code：待拍清單改成缺圖清單（分支 `feat/missing-image-list`）
+
+### 決定
+
+- Darren 不預期去現場拍照，「待拍清單」改成「缺圖清單」`content-planning/missing-images.json`，缺圖不擋發布。
+- 找不到「認現場」的照片時：
+  - 正文一律寫出日文招牌原文、位置描述與地標，有官方照片頁、構內圖或 Google 地圖街景就附連結。
+  - 有素材庫的觀光協會，整理成申請清單；要不要寄由 Darren 決定。
+- 缺圖清單的狀態：改用文字、已申請素材、已補上、放棄。
+
+### 已完成
+
+- 選圖 Skill：
+  - 待拍清單說明換成缺圖清單。
+  - 圖片封包的 `shotListId` 改成 `missingImageId`。
+  - 缺圖的位置必須記錄文字替代，至少一個日文招牌原文、位置描述，連結只收 HTTPS。
+- 寫作 Skill：認現場的段落一律先寫成不看照片也認得出來。
+- 讀者驗收的問題與校準例子跟著改。
+- `npm test` 111 項通過。
+
+### 唯一下一步
+
+- 用選題 Skill 試跑稚內、利尻、禮文，產出頁面規格給 Darren 核准。

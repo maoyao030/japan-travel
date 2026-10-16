@@ -76,6 +76,38 @@ export function validatePlan(plan, {today = taipeiToday(), packetDirectory = nul
   const errors = []
   const fail = (location, message) => errors.push(`${location}: ${message}`)
 
+  // 沒有照片時，正文要用日文招牌、位置描述與官方照片連結讓讀者認得出現場。
+  const validateTextFallback = (slot, location) => {
+    const fallback = slot?.textFallback
+    const fallbackLocation = `${location}.textFallback`
+    if (!isObject(fallback)) {
+      fail(fallbackLocation, '缺圖的位置必須記錄正文的文字替代')
+      return
+    }
+    const signs = Array.isArray(fallback.signTextJa) ? fallback.signTextJa : null
+    if (!signs || signs.some((sign) => typeof sign !== 'string' || sign.trim() === '')) {
+      fail(`${fallbackLocation}.signTextJa`, '必須是日文招牌原文的陣列')
+    } else if (slot.need === 'site-identification' && signs.length === 0) {
+      fail(`${fallbackLocation}.signTextJa`, '現場辨識的位置至少要寫一個日文招牌原文')
+    }
+    if (typeof fallback.locationDescription !== 'string' || fallback.locationDescription.trim() === '') {
+      fail(`${fallbackLocation}.locationDescription`, '必須描述現場位置與地標')
+    }
+    const links = fallback.officialPhotoLinks
+    if (!Array.isArray(links)) fail(`${fallbackLocation}.officialPhotoLinks`, '必須是陣列，可以是空陣列')
+    else {
+      for (const [index, link] of links.entries()) {
+        let url = null
+        try {
+          url = new URL(link)
+        } catch {
+          // 下面統一回報
+        }
+        if (url?.protocol !== 'https:') fail(`${fallbackLocation}.officialPhotoLinks[${index}]`, '必須是 HTTPS 連結')
+      }
+    }
+  }
+
   const requireString = (object, field, location) => {
     if (typeof object?.[field] !== 'string' || object[field].trim() === '') {
       fail(`${location}.${field}`, '必須是非空白字串')
@@ -313,13 +345,13 @@ export function validatePlan(plan, {today = taipeiToday(), packetDirectory = nul
     if (slot?.kind === 'inline' && !IMAGE_NEEDS.has(slot?.need)) {
       fail(`${location}.need`, `文內圖必須標明需求：${[...IMAGE_NEEDS].join('、')}`)
     }
-    const deferredToShotList = typeof slot?.shotListId === 'string' && slot.shotListId.trim() !== ''
+    const missingImage = typeof slot?.missingImageId === 'string' && slot.missingImageId.trim() !== ''
     requireString(slot, 'purpose', location)
     for (const field of ['mustShow', 'mustNotShow']) {
       if (!Array.isArray(slot?.[field]) || slot[field].length === 0) fail(`${location}.${field}`, '至少一項')
     }
     if (!Number.isInteger(slot?.minimumWidth) || slot.minimumWidth <= 0) fail(`${location}.minimumWidth`, '必須是正整數')
-    if (plan.status === 'selected' && !deferredToShotList) requireString(slot, 'selectionNotes', location)
+    if (plan.status === 'selected' && !missingImage) requireString(slot, 'selectionNotes', location)
 
     const sourcing = slot?.sourcing
     if (sourcing?.policy !== POLICY) fail(`${location}.sourcing.policy`, `必須是 ${POLICY}`)
@@ -330,13 +362,14 @@ export function validatePlan(plan, {today = taipeiToday(), packetDirectory = nul
 
     const candidates = Array.isArray(slot?.candidates) ? slot.candidates : []
     if (!Array.isArray(slot?.candidates)) fail(`${location}.candidates`, '必須是陣列')
-    if (candidates.length === 0 && plan.status === 'selected' && !deferredToShotList) {
+    if (candidates.length === 0 && plan.status === 'selected' && !missingImage) {
       fail(`${location}.candidates`, '至少需要一張候選')
     }
-    if (deferredToShotList) {
-      if (outcome !== 'no-qualified-photo') fail(`${location}.shotListId`, '進待拍清單的位置必須是 no-qualified-photo')
-      if (candidates.length > 0) fail(`${location}.shotListId`, '進待拍清單的位置不能有候選')
-      if (slot.kind === 'cover') fail(`${location}.shotListId`, '封面不能留待拍攝，必須選定一張')
+    if (missingImage) {
+      if (outcome !== 'no-qualified-photo') fail(`${location}.missingImageId`, '進缺圖清單的位置必須是 no-qualified-photo')
+      if (candidates.length > 0) fail(`${location}.missingImageId`, '進缺圖清單的位置不能有候選')
+      if (slot.kind === 'cover') fail(`${location}.missingImageId`, '封面不能進缺圖清單，必須選定一張')
+      validateTextFallback(slot, location)
     }
     const candidateIds = new Set()
     for (const [index, candidate] of candidates.entries()) {
@@ -369,7 +402,7 @@ export function validatePlan(plan, {today = taipeiToday(), packetDirectory = nul
     }
     if (outcome === 'no-qualified-photo' && hasReal) fail(`${location}.candidates`, 'no-qualified-photo 不能保留實拍候選')
 
-    if (plan.status === 'selected' && !deferredToShotList) {
+    if (plan.status === 'selected' && !missingImage) {
       const selectedId = selected[slotId]
       const selectedCandidate = candidates.find((candidate) => candidate?.candidateId === selectedId)
       if (!selectedCandidate) {

@@ -414,23 +414,41 @@ test('自製示意圖只用在路線位置、要列事實編號，並能從資�
   }
 })
 
-test('找不到合格照片的文內圖可以進待拍清單，封面不行', () => {
+test('找不到合格照片的文內圖進缺圖清單並改用文字，封面不行', () => {
   const today = '2026-10-16'
-  const deferredSourcing = {...diagramSourcing, photoSearchOutcome: 'no-qualified-photo', photoSearchNotes: '沒有售票處照片'}
-  const deferred = inlinePlan({need: 'site-identification', shotListId: 'rebun-ticket-counter', sourcing: deferredSourcing})
-  assert.deepEqual(validatePlan(deferred, {today}), [])
+  const missingSourcing = {...diagramSourcing, photoSearchOutcome: 'no-qualified-photo', photoSearchNotes: '沒有售票處照片'}
+  const textFallback = {
+    signTextJa: ['フェリーターミナル', '乗車券売場'],
+    locationDescription: '進入渡輪站大廳後的左手邊。',
+    officialPhotoLinks: ['https://example.com/terminal/floor-map'],
+  }
+  const missing = (overrides: AnyRecord = {}) =>
+    inlinePlan({
+      need: 'site-identification',
+      missingImageId: 'rebun-ticket-counter',
+      sourcing: missingSourcing,
+      textFallback,
+      ...overrides,
+    })
+  assert.deepEqual(validatePlan(missing(), {today}), [])
 
-  const withCandidate = inlinePlan({
-    need: 'site-identification',
-    shotListId: 'rebun-ticket-counter',
-    sourcing: deferredSourcing,
-    candidates: [commonsCandidate({candidateId: 'x'})],
-  })
-  assert.match(validatePlan(withCandidate, {today}).join('\n'), /不能有候選/)
+  assert.match(validatePlan(missing({textFallback: undefined}), {today}).join('\n'), /必須記錄正文的文字替代/)
+  assert.match(
+    validatePlan(missing({textFallback: {...textFallback, signTextJa: []}}), {today}).join('\n'),
+    /至少要寫一個日文招牌原文/,
+  )
+  assert.match(
+    validatePlan(missing({textFallback: {...textFallback, officialPhotoLinks: ['http://example.com/']}}), {today}).join('\n'),
+    /必須是 HTTPS 連結/,
+  )
+  assert.match(
+    validatePlan(missing({candidates: [commonsCandidate({candidateId: 'x'})]}), {today}).join('\n'),
+    /不能有候選/,
+  )
 
-  const coverDeferred = imagePlan()
-  coverDeferred.slots[0].shotListId = 'rebun-cover'
-  assert.match(validatePlan(coverDeferred, {today}).join('\n'), /封面不能留待拍攝/)
+  const coverMissing = imagePlan()
+  coverMissing.slots[0].missingImageId = 'rebun-cover'
+  assert.match(validatePlan(coverMissing, {today}).join('\n'), /封面不能進缺圖清單/)
 })
 
 test('AI 圖與示意圖要由另一個 agent 看過，示意圖的事實要已查證，AI 圖要 Darren 確認', () => {

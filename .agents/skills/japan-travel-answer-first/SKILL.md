@@ -51,6 +51,8 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 計畫也要列出圖片需求：哪一節、哪一種需求（認現場、決定去不去、吃什麼、季節對照、路線時間軸），以及讀者看圖要確認什麼。需求種類與「不放圖」的情況依 `.agents/skills/japan-travel-image-finder/references/image-needs.md`；每個 H2 都放一張裝飾照不算需求。路線與時間軸要畫成示意圖時，把節點的事實 `claimId` 一併列出，交給選圖 Skill 做資料檔。
 
+「認現場」的位置很可能找不到可商用的照片，本站也不預期去現場拍。所以這類段落一律先寫成不看照片也認得出來：寫出現場招牌上的日文原文（例如「乗車券売場」）、位置描述（出了閘口右手邊、紅色屋頂那棟）與附近的地標，能找到官方照片頁、構內圖（構内図）或 Google 地圖街景時附上連結。之後找到照片是加分，不是補洞。
+
 ## 寫作
 
 ### 開頭直接回答

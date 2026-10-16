@@ -86,7 +86,16 @@
 ## 欄位規則
 
 - 文內位置（`kind: "inline"`）必須有 `need`：`site-identification`、`decide-visit`、`food`、`season-contrast`、`route-timeline`。封面不需要。
-- 找不到現場照片時，該位置寫 `shotListId`（對應 `content-planning/shot-list.json`），`photoSearchOutcome` 為 `no-qualified-photo`，候選保持空白；這種位置不需要選定候選，文章用文字描述。
+- 找不到現場照片時，該位置寫 `missingImageId`（對應 `content-planning/missing-images.json` 的 `gapId`），`photoSearchOutcome` 為 `no-qualified-photo`，候選保持空白；這種位置不需要選定候選。封面不能這樣做。
+- 同一位置要有 `textFallback`，記錄正文怎麼讓讀者認得出現場：
+  ```json
+  "textFallback": {
+    "signTextJa": ["フェリーターミナル", "乗車券売場"],
+    "locationDescription": "進入渡輪站大廳後的左手邊，售票口上方有藍底白字的「乗車券売場」。",
+    "officialPhotoLinks": ["https://example.com/terminal/floor-map"]
+  }
+  ```
+  `site-identification` 位置的 `signTextJa` 至少一項；`locationDescription` 必填；`officialPhotoLinks` 只放 HTTPS 連結，可以留空陣列。
 - `route-timeline` 的位置 `photoSearchOutcome` 填 `diagram-preferred`，候選只能是 `diagram`。
 
 - `status`：`planning`、`selected` 或 `blocked`。`blocked` 要有 `blockedReason`。

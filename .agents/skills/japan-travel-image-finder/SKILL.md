@@ -18,7 +18,7 @@ description: Find and select commercially usable images for an approved Japan tr
 
 只在讀者「要看到才懂」的地方放圖，依 [放圖時機](references/image-needs.md) 的五種需求：現場辨識、決定要不要去、料理、季節差異、路線與時間。作者在文章計畫列出圖片需求，本 Skill 依需求找圖，不自行增加裝飾用的位置。
 
-- 現場辨識的圖不准用 AI；找不到合格照片就記進 [待拍清單](references/shot-list.md)。
+- 現場辨識的圖不准用 AI；找不到合格照片就記進 [缺圖清單](references/missing-images.md)，正文改用日文招牌、位置描述與官方照片連結；缺圖不擋發布。
 - 路線與時間用 [自製示意圖](references/diagrams.md)，由程式依已查證的資料畫成 SVG。
 - 不截取任何網站的畫面。
 
@@ -29,7 +29,7 @@ description: Find and select commercially usable images for an approved Japan tr
 | 1 | 維基共享資源 Wikimedia Commons | 小地方、地標、料理、祭典、交通工具 |
 | 2 | Unsplash、Pexels、Pixabay | 封面、大地方、季節氛圍 |
 | 3 | 觀光協會或自治體公開的照片素材 | 小地方、祭典；條件逐一確認 |
-| 4 | Darren 或作者自己拍的照片 | 任何地方 |
+| 4 | Darren 或作者自己拍的照片 | 目前不預期有；未來有實拍時才用 |
 | 5 | 自製示意圖 | 路線與時間；由程式依資料畫成 SVG |
 | 6 | AI 示意圖 | 前面都沒有合格照片時，必須標示，且不能用在現場辨識 |
 
@@ -90,4 +90,4 @@ node .agents/skills/japan-travel-image-finder/scripts/validate-image-packet.mjs 
 
 ## 完成條件
 
-每個圖片位置都對應作者列出的一種圖片需求並已建立視覺規格；候選都看過大圖並核對官方單張頁與授權；沒有 NC、ND 或來源不明的素材；觀光協會素材已確認利用規約；選定理由與署名草案已記錄；找不到現場照片的位置已記進待拍清單；自製示意圖已由資料檔產生；封包驗證通過，或在沒有可靠圖片時設為 `blocked`。
+每個圖片位置都對應作者列出的一種圖片需求並已建立視覺規格；候選都看過大圖並核對官方單張頁與授權；沒有 NC、ND 或來源不明的素材；觀光協會素材已確認利用規約；選定理由與署名草案已記錄；找不到現場照片的位置已記進缺圖清單並有文字替代；自製示意圖已由資料檔產生；封包驗證通過，或在沒有可靠圖片時設為 `blocked`。
