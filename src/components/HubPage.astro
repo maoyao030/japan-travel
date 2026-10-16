@@ -1,8 +1,9 @@
 ---
 import ClusterHubList from './ClusterHubList.astro'
+import PlaceLinks from './PlaceLinks.astro'
 import type {SiteCategory} from '../data/categories'
 import type {HubPageData} from '../data/hubs'
-import {getHubPath} from '../data/hubs'
+import {getBreadcrumbParent, getHubPath} from '../data/hubs'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import type {ClusterNode} from '../lib/clusters'
 import {createCollectionStructuredData, type CollectionListItem} from '../lib/structuredData'
@@ -11,18 +12,18 @@ interface Props {
   category: SiteCategory
   hub: HubPageData
   childClusters?: ClusterNode[]
+  regionPlaces?: {id: string; title: string; description: string; path: string}[]
+  monthPaths?: string[]
 }
 
-const {category, hub, childClusters = []} = Astro.props
+const {category, hub, childClusters = [], regionPlaces = [], monthPaths = []} = Astro.props
 const publishedArticles = hub.articles.filter((article) => article.published)
 const childArticleCount = childClusters.reduce((total, child) => total + child.articleCount, 0)
 const introductionParagraphs = hub.description
   .split(/\n{2,}/)
   .map((paragraph) => paragraph.trim())
   .filter(Boolean)
-const parentPath = hub.parentHub
-  ? `/${hub.categorySlug}/${hub.parentHub.slug}/`
-  : null
+const breadcrumbParent = getBreadcrumbParent(hub)
 const siteUrl = new URL('/', Astro.site ?? Astro.url).href
 const canonicalUrl = new URL(getHubPath(hub), siteUrl).href
 const childLinks: CollectionListItem[] = childClusters.length > 0
@@ -32,8 +33,8 @@ const structuredData = createCollectionStructuredData({
   breadcrumbs: [
     {name: '首頁', url: siteUrl},
     {name: category.title, url: new URL(`/${category.slug}/`, siteUrl).href},
-    ...(hub.parentHub && parentPath
-      ? [{name: hub.parentHub.title, url: new URL(parentPath, siteUrl).href}]
+    ...(breadcrumbParent
+      ? [{name: breadcrumbParent.title, url: new URL(breadcrumbParent.path, siteUrl).href}]
       : []),
     {name: hub.title, url: canonicalUrl},
   ],
@@ -41,6 +42,7 @@ const structuredData = createCollectionStructuredData({
   description: hub.seoDescription,
   items: [
     ...childLinks,
+    ...regionPlaces.map((place) => ({name: place.title, url: new URL(place.path, siteUrl).href})),
     ...publishedArticles.map((article) => ({
       name: article.title,
       url: new URL(article.path ?? `${getHubPath(hub)}${article.slug}/`, siteUrl).href,
@@ -60,8 +62,8 @@ const structuredData = createCollectionStructuredData({
   <div class="shell breadcrumbs" aria-label="麵包屑導覽">
     <a href="/">首頁</a><span aria-hidden="true">/</span>
     <a href={`/${category.slug}/`}>{category.title}</a><span aria-hidden="true">/</span>
-    {hub.parentHub && parentPath && <>
-      <a href={parentPath}>{hub.parentHub.title}</a><span aria-hidden="true">/</span>
+    {breadcrumbParent && <>
+      <a href={breadcrumbParent.path}>{breadcrumbParent.title}</a><span aria-hidden="true">/</span>
     </>}
     <span>{hub.title}</span>
   </div>
@@ -70,7 +72,7 @@ const structuredData = createCollectionStructuredData({
     <div class="shell topic-hero-grid">
       <div>
         <p class="eyebrow">{hub.eyebrow}</p>
-        <h1>{hub.title}</h1>
+        <h1>{hub.title}{hub.nameJa && hub.nameJa !== hub.title && <span class="hub-name-ja" lang="ja">（{hub.nameJa}）</span>}</h1>
         {introductionParagraphs.map((paragraph) => (
           <p class="topic-intro">{paragraph}</p>
         ))}
@@ -92,8 +94,32 @@ const structuredData = createCollectionStructuredData({
         <ol class="topic-checklist">
           {hub.checklist.map((item) => <li>{item}</li>)}
         </ol>
+        <PlaceLinks hub={hub} monthPaths={monthPaths} />
       </div>
       <div>
+        {regionPlaces.length > 0 && (
+          <div class="hub-children">
+            <div class="section-heading compact-heading">
+              <div>
+                <p class="eyebrow">地點清單</p>
+                <h2>{hub.title}的地點</h2>
+              </div>
+              <p>{regionPlaces.length} 個地點，每個地點都有自己的條目。</p>
+            </div>
+            <div class="article-list">
+              {regionPlaces.map((place, index) => (
+                <a class="article-row" href={place.path}>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <div>
+                    <h3>{place.title}</h3>
+                    <p>{place.description}</p>
+                  </div>
+                  <b aria-hidden="true">→</b>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
         {childClusters.length > 0 ? (
           <div class="hub-children">
             <div class="section-heading compact-heading">

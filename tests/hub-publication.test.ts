@@ -103,8 +103,9 @@ test('介紹完整的 Hub 可發布', () => {
 })
 
 test('正式分類樹的 topics 還是空的，主題中心要等 Darren 核准後才會通過門檻', () => {
-  assert.equal(isHubPublishable(createHub()), false)
-  assert.match(getHubPublicationIssues(createHub()).join('、'), /沒有規劃 ginzan-onsen 這個父主題中心/)
+  const hub = createHub({categorySlug: 'seasons'})
+  assert.equal(isHubPublishable(hub), false)
+  assert.match(getHubPublicationIssues(hub).join('、'), /沒有規劃 ginzan-onsen 這個父主題中心/)
 })
 
 test('缺少獨立介紹時，不建立 Hub 頁面', () => {

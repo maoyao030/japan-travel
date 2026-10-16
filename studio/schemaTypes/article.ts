@@ -153,6 +153,38 @@ export const article = defineType({
       validation: (rule) => rule.required().error('請選擇主要主題中心'),
     }),
     defineField({
+      name: 'aspect',
+      title: '面向',
+      description: '這篇在回答哪一類問題。同一面向收錄滿 5 篇時，網站會建立目錄頁，例如 /stay/。',
+      type: 'string',
+      options: {
+        list: [
+          {title: '住宿', value: 'stay'},
+          {title: '美食', value: 'food'},
+          {title: '交通', value: 'transport'},
+          {title: '天氣', value: 'weather'},
+          {title: '登山與步道', value: 'hiking'},
+          {title: '祭典與花火', value: 'festival'},
+          {title: '景點', value: 'sight'},
+          {title: '其他', value: 'other'},
+        ],
+      },
+      validation: (rule) => rule.required().error('請選擇面向'),
+    }),
+    defineField({
+      name: 'months',
+      title: '相關月份',
+      description: '這篇特別適合哪幾個月閱讀，例如 12 月天氣頁填 12。月份頁收錄滿 5 個項目才會建立。',
+      type: 'array',
+      of: [{type: 'number'}],
+      validation: (rule) =>
+        rule.unique().custom((value) =>
+          (value ?? []).every((month) => Number.isInteger(month) && month >= 1 && month <= 12)
+            ? true
+            : '相關月份必須是 1～12 的整數',
+        ),
+    }),
+    defineField({
       name: 'tags',
       title: '橫向情境 Tag',
       description: '從已建立的受控 Tag 選擇（例如親子、冬季、自駕），不自行輸入近義詞。Tag 不會改變文章正式網址。',

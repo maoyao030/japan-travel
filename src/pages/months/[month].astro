@@ -1,0 +1,24 @@
+---
+import ListPage from '../../components/ListPage.astro'
+import type {MonthPage} from '../../data/listPages'
+import {getPublishedContentRoutes} from '../../lib/contentRoutes'
+
+interface Props {
+  page: MonthPage
+}
+
+export async function getStaticPaths() {
+  const {monthPages} = await getPublishedContentRoutes()
+  return monthPages.map((page) => ({params: {month: page.slug}, props: {page}}))
+}
+
+const {page} = Astro.props as Props
+---
+
+<ListPage
+  eyebrow="依月份查找"
+  title={`${page.title}去日本`}
+  description={`${page.title}適合去的地點，以及${page.title}出發前要看的天氣、季節與交通文章。`}
+  path={page.path}
+  items={page.items}
+/>

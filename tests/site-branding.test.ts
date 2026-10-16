@@ -48,13 +48,13 @@ test('公開頁面沒有好材誌或建材的殘留字串', async () => {
   }
 })
 
-test('首頁說明住宿、天氣與交通的查證方式', async () => {
+test('首頁說明地點條目與住宿、天氣的查證方式', async () => {
   const [homepage, layout] = await Promise.all([
     readProjectFile('src/pages/index.astro'),
     readProjectFile('src/layouts/BaseLayout.astro'),
   ])
 
-  assert.match(homepage, /住宿、/)
+  assert.match(homepage, /一個地點一頁/)
   assert.match(homepage, /訂房管道/)
   assert.match(homepage, /查核日期/)
   assert.match(homepage, /平年值/)
@@ -68,16 +68,16 @@ test('首頁說明住宿、天氣與交通的查證方式', async () => {
   assert.match(layout, /class="site-nav-row"/)
 })
 
-test('四個分類是住宿、天氣季節、美食、交通的空殼', async () => {
+test('四個分類是地點、季節、神社與祭典、旅行教學的空殼', async () => {
   const categoryPage = await readProjectFile('src/pages/[category].astro')
 
   assert.deepEqual(
     siteCategories.map((category) => category.slug),
-    ['stay', 'weather', 'food', 'transport'],
+    ['places', 'seasons', 'shrines', 'guides'],
   )
   assert.deepEqual(
     siteCategories.map((category) => category.title),
-    ['住宿', '天氣與季節', '美食', '交通'],
+    ['地點', '季節', '神社與祭典', '旅行教學'],
   )
 
   for (const category of siteCategories) {

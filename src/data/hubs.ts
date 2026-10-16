@@ -25,6 +25,18 @@ export type HubNavigationLink = {
   path: string
 }
 
+/** 地點分類：每個地區與地點都住在 `/places/<slug>/`，上下關係只記在 region 欄位。 */
+export const PLACES_CATEGORY_SLUG = 'places'
+
+export type PlaceKind = 'region' | 'place'
+
+export type HubPlaceReference = {
+  id: string
+  slug: string
+  title: string
+  path?: string
+}
+
 export type HubPageData = {
   id: string
   categorySlug: string
@@ -43,6 +55,12 @@ export type HubPageData = {
   researchValidated: boolean
   noindex: boolean
   publicationPreview?: boolean
+  placeKind?: PlaceKind
+  nameJa?: string
+  region?: HubPlaceReference
+  nearbyPlaces?: HubPlaceReference[]
+  gatewayPlaces?: HubPlaceReference[]
+  bestMonths?: number[]
 }
 
 export type HubRoutedArticle = {
@@ -123,6 +141,8 @@ function getBaseHubPublicationIssues(hub: HubPageData, categories: SiteCategory[
     issues.push('主題中心不能把自己設為父主題中心')
   }
 
+  if (hub.categorySlug === PLACES_CATEGORY_SLUG) issues.push(...getPlaceIssues(hub))
+
   if (!hub.researchValidated) {
     issues.push('尚未完成搜尋需求與內容邊界驗證')
   }
@@ -168,6 +188,41 @@ function getBaseHubPublicationIssues(hub: HubPageData, categories: SiteCategory[
   return issues
 }
 
+function getPlaceIssues(hub: HubPageData): string[] {
+  const issues: string[] = []
+
+  if (hub.parentHub) {
+    issues.push('地點分類不使用子主題中心，地區關係請填在 region 欄位')
+  }
+
+  if (hub.placeKind !== 'region' && hub.placeKind !== 'place') {
+    issues.push('地點分類的主題中心必須選擇地區或地點')
+  }
+
+  if (!hasText(hub.nameJa ?? '')) {
+    issues.push('地點缺少日文原名')
+  }
+
+  if (hub.placeKind === 'place' && !hub.region) {
+    issues.push('地點必須選擇所屬地區')
+  }
+
+  if (hub.region?.id === hub.id) {
+    issues.push('地點不能把自己設為所屬地區')
+  }
+
+  const linkedPlaces = [...(hub.nearbyPlaces ?? []), ...(hub.gatewayPlaces ?? [])]
+  if (linkedPlaces.some((place) => place.id === hub.id)) {
+    issues.push('鄰近地點與出入口不能指向自己')
+  }
+
+  if ((hub.bestMonths ?? []).some((month) => !Number.isInteger(month) || month < 1 || month > 12)) {
+    issues.push('適合月份必須是 1～12')
+  }
+
+  return issues
+}
+
 function findParentHub(hub: HubPageData, allHubs: HubPageData[]) {
   if (!hub.parentHub) return null
 
@@ -184,6 +239,16 @@ export function getHubPublicationIssues(
   categories: SiteCategory[] = siteCategories,
 ): string[] {
   const issues = getBaseHubPublicationIssues(hub, categories)
+
+  if (hub.region) {
+    const region = allHubs.find((candidate) => candidate.id === hub.region?.id)
+    if (
+      region &&
+      (region.categorySlug !== PLACES_CATEGORY_SLUG || region.placeKind !== 'region')
+    ) {
+      issues.push(`所屬地區必須是地點分類裡的地區：${region.title}`)
+    }
+  }
 
   if (!hub.parentHub) return issues
 
@@ -227,6 +292,20 @@ export function isHubPublishable(
 export function getPublishedCategories(publishableHubs: Pick<HubPageData, 'categorySlug'>[]) {
   const categorySlugs = new Set(publishableHubs.map((hub) => hub.categorySlug))
   return siteCategories.filter((category) => categorySlugs.has(category.slug))
+}
+
+/**
+ * 麵包屑上一層：子主題中心是父主題中心，地點是已發布的所屬地區。
+ * 只影響麵包屑與返回連結，網址仍維持 `/places/<地點>/`。
+ */
+export function getBreadcrumbParent(
+  hub: Pick<HubPageData, 'categorySlug' | 'parentHub' | 'region'>,
+): {title: string; path: string} | null {
+  if (hub.parentHub) {
+    return {title: hub.parentHub.title, path: `/${hub.categorySlug}/${hub.parentHub.slug}/`}
+  }
+  if (hub.region?.path) return {title: hub.region.title, path: hub.region.path}
+  return null
 }
 
 export function getHubPath(hub: Pick<HubPageData, 'categorySlug' | 'slug' | 'parentHub'>) {
@@ -278,8 +357,18 @@ export function getPublishableHubPages(
     throw new Error(`主題中心未通過發布門檻：\n${details}`)
   }
 
+  // 地區、鄰近地點與出入口只連到已發布的地點，避免連到不存在的頁面。
+  const readyById = new Map(readyHubs.map((hub) => [hub.id, hub]))
+  const resolvePlace = (reference: HubPlaceReference): HubPlaceReference[] => {
+    const target = readyById.get(reference.id)
+    return target ? [{id: target.id, slug: target.slug, title: target.title, path: getHubPath(target)}] : []
+  }
+
   return readyHubs.map((hub) => ({
     ...hub,
+    region: hub.region ? resolvePlace(hub.region)[0] : undefined,
+    nearbyPlaces: (hub.nearbyPlaces ?? []).flatMap(resolvePlace),
+    gatewayPlaces: (hub.gatewayPlaces ?? []).flatMap(resolvePlace),
     articles: hub.articles.map((article) => ({
       ...article,
       path: getArticlePath(article.slug, hub, article.id),

@@ -1,5 +1,6 @@
-import type {HubPageData, HubParentReference} from '../data/hubs'
+import type {HubPageData, HubParentReference, HubPlaceReference, PlaceKind} from '../data/hubs'
 import type {ArticleTagReference, TagArticleLink, TagHubReference, TagPageData} from '../data/tags'
+import type {ArticleAspect} from '../data/listPages'
 import type {ArticleBodyBlock} from './portableText'
 import {resolveSanityConfig} from '../../site.config.mjs'
 
@@ -32,6 +33,8 @@ export type ArticleSummary = {
 }
 
 export type PublishedArticle = ArticleSummary & {
+  aspect?: ArticleAspect
+  months?: number[]
   body: ArticleBodyBlock[]
   canonicalUrl?: string
   cover?: {
@@ -76,6 +79,17 @@ export type SanityHub = {
   seoTitle?: string
   slug?: string
   title?: string
+  placeKind?: PlaceKind
+  nameJa?: string
+  region?: Partial<HubPlaceReference>
+  nearbyPlaces?: Partial<HubPlaceReference>[]
+  gatewayPlaces?: Partial<HubPlaceReference>[]
+  bestMonths?: number[]
+}
+
+function mapPlaceReference(reference?: Partial<HubPlaceReference>): HubPlaceReference | undefined {
+  if (!reference?.id) return undefined
+  return {id: reference.id, slug: reference.slug ?? '', title: reference.title ?? ''}
 }
 
 export type SanityTag = {
@@ -136,6 +150,8 @@ export async function getPublishedArticles(): Promise<PublishedArticle[]> {
         title,
         "slug": slug.current,
         excerpt,
+        aspect,
+        months,
         body[]{
           ...,
           _type == "image" => {
@@ -221,6 +237,12 @@ export function mapSanityHub(hub: SanityHub): HubPageData {
     publicationState: hub.publicationState ?? 'draft',
     researchValidated: hub.researchValidated === true,
     noindex: hub.noindex === true,
+    placeKind: hub.placeKind,
+    nameJa: hub.nameJa,
+    region: mapPlaceReference(hub.region),
+    nearbyPlaces: (hub.nearbyPlaces ?? []).flatMap((place) => mapPlaceReference(place) ?? []),
+    gatewayPlaces: (hub.gatewayPlaces ?? []).flatMap((place) => mapPlaceReference(place) ?? []),
+    bestMonths: hub.bestMonths ?? [],
   }
 }
 
@@ -247,6 +269,12 @@ export async function getSanityHubPages(): Promise<HubPageData[]> {
           "slug": slug.current,
           "categorySlug": category
         },
+        placeKind,
+        nameJa,
+        bestMonths,
+        "region": region->{"id": _id, title, "slug": slug.current},
+        "nearbyPlaces": nearbyPlaces[]->{"id": _id, title, "slug": slug.current},
+        "gatewayPlaces": gatewayPlaces[]->{"id": _id, title, "slug": slug.current},
         "featuredArticleIds": featuredArticles[]._ref,
         "articles": *[
           _type == "article" &&

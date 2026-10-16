@@ -26,10 +26,10 @@ export const hub = defineType({
       type: 'string',
       options: {
         list: [
-          {title: '住宿', value: 'stay'},
-          {title: '天氣與季節', value: 'weather'},
-          {title: '美食', value: 'food'},
-          {title: '交通', value: 'transport'},
+          {title: '地點', value: 'places'},
+          {title: '季節', value: 'seasons'},
+          {title: '神社與祭典', value: 'shrines'},
+          {title: '旅行教學', value: 'guides'},
         ],
         layout: 'radio',
       },
@@ -38,7 +38,8 @@ export const hub = defineType({
     defineField({
       name: 'parentHub',
       title: '父主題中心',
-      description: '只有子主題中心需要選擇。父主題中心請留空，網站最多只使用父、子兩層。',
+      description:
+        '只有季節、神社與祭典、旅行教學的子主題中心需要選擇，網站最多只使用父、子兩層。地點分類一律留空，地區關係改填「所屬地區」。',
       type: 'reference',
       to: [{type: 'hub'}],
       options: {
@@ -46,9 +47,84 @@ export const hub = defineType({
       },
       validation: (rule) =>
         rule.custom((value, context) => {
-          if (value?._ref === context.document?._id) return '不能把自己設為父主題中心'
+          if (!value) return true
+          if (value._ref === context.document?._id) return '不能把自己設為父主題中心'
+          if (context.document?.category === 'places') return '地點分類不使用子主題中心，請改填所屬地區'
           return true
         }),
+    }),
+    defineField({
+      name: 'placeKind',
+      title: '地點種類',
+      description: '地區是北海道、四國這類範圍；地點是稚內、利尻島這類單一目的地。',
+      type: 'string',
+      options: {
+        list: [
+          {title: '地區', value: 'region'},
+          {title: '地點', value: 'place'},
+        ],
+        layout: 'radio',
+      },
+      hidden: ({document}) => document?.category !== 'places',
+      validation: (rule) =>
+        rule.custom((value, context) =>
+          context.document?.category === 'places' && !value ? '請選擇地區或地點' : true,
+        ),
+    }),
+    defineField({
+      name: 'nameJa',
+      title: '日文原名',
+      description: '例如：稚内、利尻島。用來搜尋日文官方資料與顯示在條目開頭。',
+      type: 'string',
+      hidden: ({document}) => document?.category !== 'places',
+    }),
+    defineField({
+      name: 'region',
+      title: '所屬地區',
+      description: '只影響麵包屑與地區條目的地點清單，不會改變網址。',
+      type: 'reference',
+      to: [{type: 'hub'}],
+      options: {filter: 'category == "places" && placeKind == "region"'},
+      hidden: ({document}) => document?.category !== 'places' || document?.placeKind !== 'place',
+      validation: (rule) =>
+        rule.custom((value, context) => {
+          if (context.document?.category !== 'places' || context.document?.placeKind !== 'place') return true
+          if (!value) return '請選擇所屬地區'
+          if (value._ref === context.document?._id) return '不能把自己設為所屬地區'
+          return true
+        }),
+    }),
+    defineField({
+      name: 'nearbyPlaces',
+      title: '鄰近地點',
+      description: '同一趟行程常一起去的地點，例如利尻島與禮文島。網站會互相連結已發布的地點。',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'hub'}], options: {filter: 'category == "places"'}}],
+      hidden: ({document}) => document?.category !== 'places',
+      validation: (rule) => rule.unique(),
+    }),
+    defineField({
+      name: 'gatewayPlaces',
+      title: '出入口',
+      description: '前往這裡要經過的機場、港口或轉乘地，例如前往利尻島的稚內。',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'hub'}], options: {filter: 'category == "places"'}}],
+      hidden: ({document}) => document?.category !== 'places',
+      validation: (rule) => rule.unique(),
+    }),
+    defineField({
+      name: 'bestMonths',
+      title: '適合月份',
+      description: '1～12。月份頁收錄滿 5 個項目才會建立。',
+      type: 'array',
+      of: [{type: 'number'}],
+      hidden: ({document}) => document?.category !== 'places',
+      validation: (rule) =>
+        rule.unique().custom((value) =>
+          (value ?? []).every((month) => Number.isInteger(month) && month >= 1 && month <= 12)
+            ? true
+            : '適合月份必須是 1～12 的整數',
+        ),
     }),
     defineField({
       name: 'landingArticle',

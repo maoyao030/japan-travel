@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import ClusterHubList from '../components/ClusterHubList.astro'
+import ListPage from '../components/ListPage.astro'
 import {SITE_NAME} from '../config/site'
 import {siteCategories, type SiteCategory} from '../data/categories'
 import {getPublishedCategories} from '../data/hubs'
+import type {AspectDirectory} from '../data/listPages'
 import {getTagPath, type TagPageData} from '../data/tags'
 import {
   buildCategoryClusters,
@@ -19,7 +21,10 @@ import {IMAGE_SIZES, getResponsiveImage} from '../lib/images'
 import type {PublishedArticle} from '../lib/sanity'
 import {createCollectionStructuredData} from '../lib/structuredData'
 
+type DirectoryProps = {directory: AspectDirectory}
+
 interface Props {
+  directory?: undefined
   category: SiteCategory
   clusters: ClusterNode[]
   latestArticles: CategoryArticleEntry<PublishedArticle>[]
@@ -28,10 +33,20 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-  const {landingArticles, publishableHubs, publishableTags, routableArticles} =
+  const {aspectDirectories, landingArticles, publishableHubs, publishableTags, routableArticles} =
     await getPublishedContentRoutes()
 
-  return siteCategories.map((category) => ({
+  const reservedSlugs = new Set(siteCategories.map((category) => category.slug))
+  const collision = aspectDirectories.find((directory) => reservedSlugs.has(directory.slug))
+  if (collision) throw new Error(`面向目錄與分類網址重複：/${collision.slug}/`)
+
+  // 面向目錄（例如 /stay/）跨地點列出同一面向的文章，滿 5 篇才建立。
+  const directoryPaths = aspectDirectories.map((directory) => ({
+    params: {category: directory.slug},
+    props: {directory} satisfies DirectoryProps,
+  }))
+
+  return [...directoryPaths, ...siteCategories.map((category) => ({
     params: {category: category.slug},
     props: {
       category,
@@ -47,10 +62,13 @@ export async function getStaticPaths() {
         (item) => item.slug !== category.slug,
       ),
     } satisfies Props,
-  }))
+  }))]
 }
 
-const {category, clusters, latestArticles, relatedTags, otherCategories} = Astro.props as Props
+const directory = (Astro.props as Props | DirectoryProps).directory
+const {category, clusters, latestArticles, relatedTags, otherCategories} = (directory
+  ? {category: siteCategories[0], clusters: [], latestArticles: [], relatedTags: [], otherCategories: []}
+  : Astro.props) as Props
 const hubCount = countClusterHubs(clusters)
 const articleCount = countClusterArticles(clusters)
 const featuredArticles = latestArticles.filter(({article}) => article.cover).slice(0, 3)
@@ -75,6 +93,15 @@ const structuredData = createCollectionStructuredData({
 })
 ---
 
+{directory ? (
+  <ListPage
+    eyebrow="依面向查找"
+    title={`日本各地${directory.title}`}
+    description={directory.summary}
+    path={directory.path}
+    items={directory.items}
+  />
+) : (
 <BaseLayout
   title={`${category.title}｜${SITE_NAME}`}
   description={category.description}
@@ -271,7 +298,7 @@ const structuredData = createCollectionStructuredData({
           <p class="eyebrow">其他分類</p>
           <h2 id="category-siblings-heading">接著查看其他分類</h2>
         </div>
-        <p>住宿、天氣、美食與交通常互相牽動，可切換到其他分類核對這趟行程的其他條件。</p>
+        <p>地點、季節、祭典與旅行教學常互相牽動，可切換到其他分類核對這趟行程的其他條件。</p>
       </div>
       <div class="home-category-grid">
         {otherCategories.map((item, index) => (
@@ -287,3 +314,4 @@ const structuredData = createCollectionStructuredData({
   </section>
   )}
 </BaseLayout>
+)}

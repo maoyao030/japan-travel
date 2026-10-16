@@ -3,6 +3,7 @@ import {
   getPublishableHubPages,
   getRoutableArticles,
 } from '../data/hubs'
+import {getAspectDirectories, getMonthPages} from '../data/listPages'
 import {getPublishableTagPages} from '../data/tags'
 import {
   getPublishedArticles,
@@ -77,10 +78,14 @@ async function loadPublishedContentRoutes() {
     return landing ? landing.article.noindex !== true : !hub.noindex
   })
 
+  const listSource = {landingArticles, routableArticles, publishableHubs}
+
   return {
+    aspectDirectories: getAspectDirectories(listSource),
     authors,
     indexableHubs,
     landingArticles,
+    monthPages: getMonthPages(listSource),
     publishableHubs,
     publishableTags,
     routableArticles,

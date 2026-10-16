@@ -6,7 +6,7 @@ import {getPublishedContentRoutes} from '../lib/contentRoutes'
 import {IMAGE_SIZES, getResponsiveImage} from '../lib/images'
 import {createWebSiteStructuredData} from '../lib/structuredData'
 
-const {indexableHubs, landingArticles, publishableHubs, routableArticles} =
+const {aspectDirectories, indexableHubs, landingArticles, monthPages, publishableHubs, routableArticles} =
   await getPublishedContentRoutes()
 const homeCategories = getPublishedCategories(publishableHubs)
 const hubArticleLimit = 6
@@ -43,16 +43,16 @@ const recentStories = stories.slice(1, 4)
 ---
 
 <BaseLayout
-  title={`${SITE_NAME}｜日本小地方住宿、逐月天氣與交通安排`}
+  title={`${SITE_NAME}｜日本小地方的交通、住宿與季節`}
   noindex={false}
   structuredData={structuredData}
-  description={`${SITE_NAME}是給台灣旅人看的日本旅遊實用資訊網站，整理小型溫泉地與鄉間的旅館與訂房管道、各城市逐月的氣候與穿著、櫻花楓葉雪季的時間、地方料理與前往小地方的交通，資料以官網與公開數據為準並標示查核日期。`}
+  description={`${SITE_NAME}是給台灣旅人看的日本旅遊實用資訊網站，從北海道開始一個地點一頁，整理前往小地方的交通、旅館與訂房管道、逐月的氣候與穿著、祭典與季節活動，資料以日文官方來源為準並標示查核日期。`}
 >
   <header class="home-intro">
     <div class="shell home-intro-inner">
       <p class="eyebrow">{SITE_NAME}｜給台灣旅人的日本旅遊實用資料</p>
-      <h1><span>{SITE_NAME}，</span><span>住宿、</span><span>天氣與交通</span><span>放在一起查。</span></h1>
-      <p>訂房網站找不到的小溫泉地、出發前查不到的那個月到底多冷、轉三趟車才到的鄉間景點。{SITE_NAME}整理大型旅遊平台蓋不到的題目：旅館的房型與訂房管道、各城市逐月的氣候與穿著、季節活動的時間，以及前往小地方的交通安排。文章由{EDITORIAL_AUTHOR_NAME}撰寫，事實以旅館與店家官網、觀光協會與氣象廳公開數據為準，住宿頁標示查核日期並每年重查。</p>
+      <h1><span>{SITE_NAME}，</span><span>一個地點一頁，</span><span>交通、住宿、</span><span>季節放在一起查。</span></h1>
+      <p>稚內、利尻島、禮文島這類小地方，中文資料常只有一兩句。{SITE_NAME}從北海道開始，一個地點寫一頁：怎麼搭車搭船、旅館的房型與訂房管道、哪幾個月去與那時的氣候、祭典與地方料理，看不懂日文時要怎麼操作也一併寫清楚。文章由{EDITORIAL_AUTHOR_NAME}撰寫，事實以旅館與店家官網、觀光協會與氣象廳公開數據為準，住宿頁標示查核日期並每年重查。</p>
     </div>
   </header>
 
@@ -166,7 +166,7 @@ const recentStories = stories.slice(1, 4)
       <div class="home-section-header">
         <div>
           <p class="eyebrow">內容分類</p>
-          <h2>按住宿、天氣、美食或交通查找</h2>
+          <h2>按地點、季節、祭典或旅行教學查找</h2>
         </div>
         <p>{SITE_NAME}只列出已有文章的分類，可依這趟旅行要解決的問題查找對應的主題頁。</p>
       </div>
@@ -182,6 +182,32 @@ const recentStories = stories.slice(1, 4)
       </div>
     </div>
   </section>
+
+  {(aspectDirectories.length > 0 || monthPages.length > 0) && (
+    <section class="home-section home-lists" aria-labelledby="home-lists-heading">
+      <div class="shell">
+        <div class="home-section-header">
+          <div>
+            <p class="eyebrow">跨地點查找</p>
+            <h2 id="home-lists-heading">依面向或月份查找</h2>
+          </div>
+          <p>同一類問題或同一個月份的文章，跨地點集中在一頁。</p>
+        </div>
+        {aspectDirectories.length > 0 && (
+          <nav class="article-tags" aria-label="依面向查找">
+            <strong>依面向</strong>
+            <div>{aspectDirectories.map((directory) => <a href={directory.path}>{directory.title}</a>)}</div>
+          </nav>
+        )}
+        {monthPages.length > 0 && (
+          <nav class="article-tags" aria-label="依月份查找">
+            <strong>依月份</strong>
+            <div>{monthPages.map((page) => <a href={page.path}>{page.title}</a>)}</div>
+          </nav>
+        )}
+      </div>
+    </section>
+  )}
 
   <section class="home-guide" id="guides">
     <div class="shell">

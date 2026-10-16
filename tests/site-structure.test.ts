@@ -13,14 +13,14 @@ async function readProjectFile(path: string) {
 
 test('只有已有公開主題的大分類會出現在導覽', () => {
   const published = getPublishedCategories([
-    {categorySlug: 'stay'},
-    {categorySlug: 'stay'},
+    {categorySlug: 'places'},
+    {categorySlug: 'places'},
     {categorySlug: 'unknown'},
   ])
 
   assert.deepEqual(
     published.map((category) => category.slug),
-    ['stay'],
+    ['places'],
   )
   assert.deepEqual(getPublishedCategories([]), [])
   assert.equal(

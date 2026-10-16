@@ -8,11 +8,12 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npm run check:site-worker && npm run check:schema && npm run generate:seo && npm run check:links",
+    "build": "astro build && npm run check:site-worker && npm run check:schema && npm run generate:seo && npm run check:links && npm run check:depth",
     "ci": "npm test && npm run build",
     "generate:seo": "node scripts/generate-seo-files.mjs dist",
     "check:schema": "node scripts/check-structured-data.mjs dist",
     "check:links": "node scripts/check-internal-links.mjs dist",
+    "check:depth": "node scripts/check-site-depth.mjs dist",
     "check:site-worker": "tsc --project workers/site/tsconfig.json",
     "queue:validate": "node scripts/validate-article-queue.mjs",
     "queue:lock": "node scripts/manage-auto-publisher-lock.mjs",

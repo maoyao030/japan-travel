@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import {SITE_NAME} from '../config/site'
+import type {ListItem} from '../data/listPages'
+import {createCollectionStructuredData} from '../lib/structuredData'
+
+interface Props {
+  eyebrow: string
+  title: string
+  description: string
+  path: string
+  items: ListItem[]
+}
+
+const {eyebrow, title, description, path, items} = Astro.props
+const siteUrl = new URL('/', Astro.site ?? Astro.url).href
+const canonicalUrl = new URL(path, siteUrl).href
+const structuredData = createCollectionStructuredData({
+  breadcrumbs: [
+    {name: '首頁', url: siteUrl},
+    {name: title, url: canonicalUrl},
+  ],
+  canonicalUrl,
+  description,
+  items: items.map((item) => ({name: item.title, url: new URL(item.path, siteUrl).href})),
+  name: title,
+  siteUrl,
+})
+---
+
+<BaseLayout title={`${title}｜${SITE_NAME}`} description={description} noindex={false} structuredData={structuredData}>
+  <div class="shell breadcrumbs" aria-label="麵包屑導覽">
+    <a href="/">首頁</a><span aria-hidden="true">/</span><span>{title}</span>
+  </div>
+
+  <header class="topic-hero">
+    <div class="shell topic-hero-grid topic-hero-grid--single">
+      <div>
+        <p class="eyebrow">{eyebrow}</p>
+        <h1>{title}</h1>
+        <p class="topic-intro">{description}</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="section topic-content">
+    <div class="shell">
+      <div class="article-list">
+        {items.map((item, index) => (
+          <a class="article-row" href={item.path}>
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            <div>
+              <h2>{item.title}</h2>
+              <p>{item.excerpt}</p>
+              {item.kind === 'place' && <small>地點條目</small>}
+            </div>
+            <b aria-hidden="true">→</b>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

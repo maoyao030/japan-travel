@@ -3,6 +3,7 @@ import ArticlePage from '../../components/ArticlePage.astro'
 import HubPage from '../../components/HubPage.astro'
 import {siteCategories, type SiteCategory} from '../../data/categories'
 import type {HubPageData} from '../../data/hubs'
+import {getRegionPlaces} from '../../data/listPages'
 import {getArticleTagLinks, type ArticleTagLink} from '../../data/tags'
 import {buildClusterNode, type ClusterNode} from '../../lib/clusters'
 import {getPublishedContentRoutes} from '../../lib/contentRoutes'
@@ -14,11 +15,14 @@ interface Props {
   landingArticle?: PublishedArticle
   tagLinks: ArticleTagLink[]
   childClusters: ClusterNode[]
+  regionPlaces: ReturnType<typeof getRegionPlaces>
+  monthPaths: string[]
 }
 
 export async function getStaticPaths() {
-  const {landingArticles, publishableHubs, publishableTags} =
+  const {landingArticles, monthPages, publishableHubs, publishableTags} =
     await getPublishedContentRoutes()
+  const monthPaths = monthPages.map((page) => page.path)
 
   return publishableHubs.filter((hub) => !hub.parentHub).map((hub) => {
     const category = siteCategories.find((item) => item.slug === hub.categorySlug)
@@ -39,12 +43,14 @@ export async function getStaticPaths() {
         landingArticle,
         tagLinks: getArticleTagLinks(landingArticle?.tags, publishableTags),
         childClusters: buildClusterNode(hub, publishableHubs).children,
+        regionPlaces: getRegionPlaces(hub, publishableHubs),
+        monthPaths,
       },
     }
   })
 }
 
-const {category, hub, landingArticle, tagLinks, childClusters} = Astro.props as Props
+const {category, hub, landingArticle, tagLinks, childClusters, regionPlaces, monthPaths} = Astro.props as Props
 ---
 
 {landingArticle ? (
@@ -54,7 +60,15 @@ const {category, hub, landingArticle, tagLinks, childClusters} = Astro.props as 
     isHubLanding
     tagLinks={tagLinks}
     childClusters={childClusters}
+    regionPlaces={regionPlaces}
+    monthPaths={monthPaths}
   />
 ) : (
-  <HubPage category={category} hub={hub} childClusters={childClusters} />
+  <HubPage
+    category={category}
+    hub={hub}
+    childClusters={childClusters}
+    regionPlaces={regionPlaces}
+    monthPaths={monthPaths}
+  />
 )}

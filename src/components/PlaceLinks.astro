@@ -1,0 +1,36 @@
+---
+import type {HubPageData} from '../data/hubs'
+import {getMonthPath} from '../data/listPages'
+
+interface Props {
+  hub: HubPageData
+  monthPaths?: string[]
+  regionPlaces?: {id: string; title: string; path: string}[]
+}
+
+const {hub, monthPaths = [], regionPlaces = []} = Astro.props
+const availableMonths = new Set(monthPaths)
+const groups = [
+  {
+    title: `${hub.title}的地點`,
+    links: regionPlaces.map((place) => ({label: place.title, path: place.path})),
+  },
+  {title: '鄰近地點', links: (hub.nearbyPlaces ?? []).flatMap((place) => place.path ? [{label: place.title, path: place.path}] : [])},
+  {title: '出入口', links: (hub.gatewayPlaces ?? []).flatMap((place) => place.path ? [{label: place.title, path: place.path}] : [])},
+  {
+    title: '適合月份',
+    links: (hub.bestMonths ?? [])
+      .filter((month) => availableMonths.has(getMonthPath(month)))
+      .map((month) => ({label: `${month}月`, path: getMonthPath(month)})),
+  },
+].filter((group) => group.links.length > 0)
+---
+
+{groups.map((group) => (
+  <nav class="article-tags place-links" aria-label={group.title}>
+    <strong>{group.title}</strong>
+    <div>
+      {group.links.map((link) => <a href={link.path}>{link.label}</a>)}
+    </div>
+  </nav>
+))}
