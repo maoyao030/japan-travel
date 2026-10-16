@@ -24,7 +24,7 @@
 - 站名暫用「日本旅遊長尾站」、網址暫用 `https://japan-travel.example/`，都集中在 `src/config/site.ts`、`src/config/contact.ts`、`site.config.mjs`，確定後只改這三個檔案。
 - GA 與 AdSense 的 ID 留空，留空時不輸出任何標記、不顯示同意視窗；`ads.txt` 不放。
 - 好材誌的舊網址轉址、一次性遷移腳本、Discord 通知、規劃待寫區（planningIntake）、候補內連（contextual-link backlog）都沒有搬過來；需要時再從好材誌抽。
-- 自動發布清單的 `triggerIntervalHours` 先填 4（交接文件建議與好材誌錯開），實際 routine 頻率由 Darren 決定。
+- 自動發布清單的頻率：Darren 於 2026-10-16 決定每 3 小時一篇（`triggerIntervalHours` 3、每日上限 8）。
 
 ### 尚未完成
 
