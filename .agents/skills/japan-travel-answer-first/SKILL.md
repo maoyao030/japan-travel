@@ -12,7 +12,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 - 接收已核准的頁面規格（`content-planning/<區域>/page-specs.json` 或 `content-automation/article-queue.json` 的一列）：主要查詢、頁型、內容邊界、`mustAnswer`、地點欄位與共用教學頁。不得改題、擴張內容邊界、改網址或改 Hub。研究顯示規格有誤時停止，把問題退回 `$japan-travel-topic-planner`。
 - 同一位作者負責研究、文章計畫與全文，一次成稿。不拆成先鎖標題再填段落，也不安排第二位編輯潤飾。
 - 終點是 `content-production/<article-id>/reader-preview.md` 與研究記錄，交給 `$japan-travel-acceptance` 驗收。本 Skill 不呼叫 Ahrefs、不選圖、不寫入 Sanity、不發布、不 commit 或 push。
-- 開工前完整閱讀 [日文資料](references/japanese-sources.md)、[保母等級寫法](references/nanny-level.md)、[語氣、SEO 與小知識](references/voice-and-seo.md)、[頁型](references/page-types.md) 與 [研究記錄格式](references/research-record.md)。
+- 開工前完整閱讀 [日文資料](references/japanese-sources.md)、[標題語氣與結構規範](references/heading-style.md)、[保母等級寫法](references/nanny-level.md)、[語氣、SEO 與小知識](references/voice-and-seo.md)、[頁型](references/page-types.md) 與 [研究記錄格式](references/research-record.md)。
 
 ## 研究
 
@@ -76,7 +76,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 ### 保母等級
 
-依 [保母等級寫法](references/nanny-level.md) 處理讀者的每一個擔心：看不懂的日文網站要有按鈕與欄位對照、現場要看的標示要附日文、可以指給對方看的日文句子、末班車與停駛的備案、付款方式、時間軸。查不到的事情直接說查不到與替代做法，不寫成確定。
+依 [保母等級寫法](references/nanny-level.md) 處理讀者的每一個擔心：看不懂的日文網站要有按鈕與欄位對照、現場要看的標示要附日文（不寫日文會話教學）、末班車與停駛的備案、付款方式、時間軸。查不到的事情直接說查不到與替代做法，不寫成確定。
 
 ### 共用教學頁不重寫
 
@@ -136,8 +136,9 @@ description: Research and write one Traditional Chinese article for the Japan tr
    - 有沒有事實表撐不起的延伸說法。
    結果寫到 `content-production/<article-id>/section-checks/<序號>.json`：`{section, checker, items: [{excerpt, factIds, verdict: ok|fix, reason}]}`。作者依結果修改後重跑第 2 步；同一段最多改三輪。
 4. 執行 `python3 <本 Skill 絕對路徑>/scripts/audit_answer_first.py content-production/<article-id>/reader-preview.md --json`，處理它回報的格式錯誤。它只檢查格式，不判斷文章品質；語意提醒不是自動判退理由。
-5. 交給 `$japan-travel-acceptance`。驗收判退時保留失敗樣本與原因，不修改後宣稱首次成功；修改後的版本是新的一輪，從第 2 步重跑。是否重寫依使用者或排程規則。
+5. **標題檢查**：派一個沒寫過這篇的 subagent，只給它頁面規格（主要與次要查詢）、`reader-preview.md` 與 [標題語氣與結構規範](references/heading-style.md)。它逐一判斷 H1、SEO Title、每個 H2／H3，寫 `content-production/<article-id>/heading-review.json`：`{checker, items: [{level, before, after, reason}], seoTitle: {before, after, reason}, structureNotes: []}`。沒問題的標題 `after` 等於 `before`、`reason` 留空；只改文字，不增刪標題、不改層級。作者照 `after` 改 `draft-tagged.md` 的標題，重跑第 2、4 步，再執行 `python3 <本 Skill 絕對路徑>/scripts/heading_review.py content-production/<article-id>` 確認標題已套用。`structureNotes` 有內容時作者處理後再交驗收。不需要逐篇等 Darren 確認；Darren 事後對標題的偏好寫進規範的增訂規則。
+6. 交給 `$japan-travel-acceptance`。驗收判退時保留失敗樣本與原因，不修改後宣稱首次成功；修改後的版本是新的一輪，從第 2 步重跑。是否重寫依使用者或排程規則。
 
 ## 完成條件
 
-`draft-tagged.md`、`reader-preview.md` 與 `reference-review.md` 都已存在；`fact_tags.py` 為 `tags_clear`；每個 H2 都有分段檢查紀錄且沒有未處理的 `fix`；每個 `mustAnswer` 都有回答或寫明查不到的原因；每個事實在研究記錄有日文原文摘錄與網址；專有名詞附日文原名並已更新譯名表；新發現已記進發現清單；圖片需求已列在文章計畫；格式檢查為 `mechanical_clear`；已交給驗收 Skill。
+`draft-tagged.md`、`reader-preview.md` 與 `reference-review.md` 都已存在；`fact_tags.py` 為 `tags_clear`；每個 H2 都有分段檢查紀錄且沒有未處理的 `fix`；每個 `mustAnswer` 都有回答或寫明查不到的原因；每個事實在研究記錄有日文原文摘錄與網址；專有名詞附日文原名並已更新譯名表；新發現已記進發現清單；圖片需求已列在文章計畫；格式檢查為 `mechanical_clear`；`heading_review.py` 通過；已交給驗收 Skill。

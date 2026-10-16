@@ -523,3 +523,38 @@ test('標編號檢查會擋下沒有事實編號的數字句與不存在的編�
     await rm(directory, {recursive: true, force: true})
   }
 })
+
+test('標題檢查紀錄要寫改動理由、不得增刪標題，且改動要套用到預覽', async () => {
+  const directory = await mkdtemp(path.join(tmpdir(), 'japan-travel-headings-'))
+  const script = path.join(skillsRoot, 'japan-travel-answer-first', 'scripts', 'heading_review.py')
+  const record = {
+    checker: 'heading-checker',
+    seoTitle: {before: '禮文島交通，巴士與觀光巴士', after: '禮文島交通，巴士與觀光巴士', reason: ''},
+    items: [
+      {level: 1, before: '禮文島交通，巴士與觀光巴士', after: '禮文島交通，巴士與觀光巴士', reason: ''},
+      {level: 2, before: '交通方式', after: '禮文島路線巴士', reason: '泛稱補地名'},
+      {level: 2, before: '資料來源', after: '資料來源', reason: ''},
+    ],
+    structureNotes: [],
+  }
+  try {
+    await writeFile(path.join(directory, 'heading-review.json'), JSON.stringify(record))
+    await writeFile(path.join(directory, 'reader-preview.md'), '# 禮文島交通，巴士與觀光巴士\n\n## 交通方式\n\n## 資料來源\n')
+    const pending = spawnSync(python, [script, directory, '--json'], {encoding: 'utf8'})
+    assert.equal(pending.status, 1)
+    assert.match(JSON.parse(pending.stdout).issues.join('\n'), /尚未套用/)
+
+    await writeFile(path.join(directory, 'reader-preview.md'), '# 禮文島交通，巴士與觀光巴士\n\n## 禮文島路線巴士\n\n## 資料來源\n')
+    const applied = spawnSync(python, [script, directory], {encoding: 'utf8'})
+    assert.equal(applied.status, 0, applied.stdout)
+
+    await writeFile(
+      path.join(directory, 'heading-review.json'),
+      JSON.stringify({...record, items: [record.items[0], {...record.items[1], reason: ''}, record.items[2]]}),
+    )
+    const noReason = spawnSync(python, [script, directory, '--json'], {encoding: 'utf8'})
+    assert.match(JSON.parse(noReason.stdout).issues.join('\n'), /沒寫理由/)
+  } finally {
+    await rm(directory, {recursive: true, force: true})
+  }
+})
