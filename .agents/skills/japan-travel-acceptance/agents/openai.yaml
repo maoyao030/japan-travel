@@ -1,0 +1,7 @@
+interface:
+  display_name: "日本站文章驗收"
+  short_description: "格式檢查、日文原文事實查核與不會日文的讀者模擬，三層唯讀驗收"
+  default_prompt: "使用 $japan-travel-acceptance 驗收指定文章：先跑格式檢查，再派事實查核 agent 逐一打開日文來源並保存原文摘錄，最後派讀者驗收 agent 以不會日文的台灣旅客走一遍行程。只讀不改，寫出 review.md。"
+
+policy:
+  allow_implicit_invocation: false
