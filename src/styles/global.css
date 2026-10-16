@@ -2079,6 +2079,29 @@ a {
   background: rgb(255 253 248 / 65%);
 }
 
+.article-image {
+  margin: 1.75rem 0 2.25rem;
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.6rem;
+}
+
+.article-image figcaption {
+  display: grid;
+  gap: 0.2rem;
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.article-image-credit a {
+  color: inherit;
+}
+
 .article-table-scroll {
   max-width: 100%;
   margin: 1.75rem 0 2.25rem;

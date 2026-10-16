@@ -136,7 +136,14 @@ export async function getPublishedArticles(): Promise<PublishedArticle[]> {
         title,
         "slug": slug.current,
         excerpt,
-        body,
+        body[]{
+          ...,
+          _type == "image" => {
+            "url": asset->url,
+            "width": asset->metadata.dimensions.width,
+            "height": asset->metadata.dimensions.height
+          }
+        },
         publishedAt,
         updatedAt,
         seoTitle,

@@ -28,7 +28,24 @@ export type ContentTable = {
   rows?: Array<{_key?: string; cells?: string[]}>
 }
 
-export type ArticleBodyBlock = PortableTextBlock | ContentTable | {_key?: string; _type: string}
+export type ArticleImage = {
+  _key?: string
+  _type: 'image'
+  alt?: string
+  caption?: string
+  credit?: string
+  sourcePageUrl?: string
+  license?: string
+  url?: string
+  width?: number
+  height?: number
+}
+
+export type ArticleBodyBlock =
+  | PortableTextBlock
+  | ContentTable
+  | ArticleImage
+  | {_key?: string; _type: string}
 
 export type ArticleHeading = {
   id: string
@@ -98,6 +115,23 @@ function renderSpans(block: PortableTextBlock) {
       return html
     })
     .join('')
+}
+
+function renderImage(image: ArticleImage) {
+  if (!image.url || !image.alt) return ''
+  const size =
+    image.width && image.height ? ` width="${image.width}" height="${image.height}"` : ''
+  const source = image.sourcePageUrl ? safeHref(image.sourcePageUrl) : null
+  const credit = image.credit
+    ? source
+      ? `<a href="${escapeHtml(source)}" rel="noopener noreferrer">${escapeHtml(image.credit)}</a>`
+      : escapeHtml(image.credit)
+    : ''
+  const caption = [
+    image.caption ? `<span>${escapeHtml(image.caption)}</span>` : '',
+    credit ? `<small class="article-image-credit">${credit}</small>` : '',
+  ].join('')
+  return `<figure class="article-image"><img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.alt)}"${size} loading="lazy" decoding="async">${caption ? `<figcaption>${caption}</figcaption>` : ''}</figure>`
 }
 
 export function getArticleHeadings(blocks: ArticleBodyBlock[]): ArticleHeading[] {
@@ -180,6 +214,12 @@ export function renderPortableText(blocks: ArticleBodyBlock[]) {
         )
         .join('')
       html += `<div class="article-table-scroll" tabindex="0"><table><thead><tr>${columns}</tr></thead><tbody>${rows}</tbody></table></div>`
+      continue
+    }
+
+    if (block._type === 'image') {
+      closeList()
+      html += renderImage(block as ArticleImage)
       continue
     }
 
