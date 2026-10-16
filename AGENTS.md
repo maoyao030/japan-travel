@@ -55,3 +55,14 @@
 下一步：只列一個動作
 建議：繼續／這裡適合告一段落
 ```
+
+## Skill 路由（2026-10-16 建立）
+
+本站 Skill 放在 `.agents/skills/`，取代上一段「待建立」的說明。建立前與 Darren 討論的決定見 `PROJECT_STATUS.md` 2026-10-16 段落。
+
+- 規劃區域、挑題目、判斷要不要單獨成頁：`japan-travel-topic-planner`。
+- 依已核准規格研究與寫作：`japan-travel-answer-first`。日文官方資料為主，只取事實不翻譯段落，保母等級寫法。
+- 驗收：`japan-travel-acceptance`。格式檢查、事實查核 agent、讀者驗收 agent 三層，兩個 agent 都不能是作者。
+- 選圖：`japan-travel-image-finder`。維基共享資源與免費圖庫優先，不用 NC 與 ND 授權。
+- 自動發布 Skill（auto-publisher）尚未建立；要等網站路由決定（是否改成地點在前）與 routine 啟用前再建。
+- 這四個 Skill 只能用在本站，不得拿去寫好材誌文章；好材誌的 Skill 也不得用在本站。
