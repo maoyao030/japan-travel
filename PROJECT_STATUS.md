@@ -298,10 +298,10 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 - 選題 Skill 新增 `references/next-group.md`（找下一群 6 步、默許核准、規劃總表、登記），`SKILL.md`、`selection-workflow.md`（含跨群的關聯）、`discovery-log.md` 跟著改。
 - 頁型的分工規則加上跨群的說明；研究記錄的事實表加「變動類型」「下次查核」欄。
 - `AGENTS.md` 新增「跨群關聯」與「找下一群與默許核准」兩個段落；自動化評估加上 2026-10-17 更新說明。
+- 在 Darren 的 Google Drive 建立 Google Sheet「日本站規劃總表」：<https://docs.google.com/spreadsheets/d/19ejoyytu_5JZ8Toa1-Me6Y5HG2pe0iXT1DqAEX01vps/edit>。三個分頁（群清單、頁面清單、例外與更新），狀態欄有下拉選單，意見欄備註寫默許規則；群清單先填稚內群（規劃中）。頁面清單等稚內群規格改成新流程後再填。
 
 ### 尚未完成
 
-- Google Sheet「日本站規劃總表」的空白範本（本輪建立，見下方說明）。
 - 全站地點清單 `content-planning/places.json`、全站分工表 `content-planning/ownership.json`、地點事實表與「變動類型」檢查程式都還沒做。
 - 雲端 routine 能不能使用 Google Sheets 與 Google 日曆連接器，建 routine 時要確認。
 

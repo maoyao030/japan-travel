@@ -102,6 +102,8 @@
 
 ### Google Sheet「日本站規劃總表」
 
+試算表：<https://docs.google.com/spreadsheets/d/19ejoyytu_5JZ8Toa1-Me6Y5HG2pe0iXT1DqAEX01vps/edit>（2026-10-17 建立，只有 Darren 的帳號能開）。「狀態」欄有下拉選單；「你的意見」欄的備註寫著默許規則。
+
 | 分頁 | 內容 |
 |---|---|
 | 群清單 | 每群一列：群、地點、頁數、為什麼選它、第二名、檢查結果、狀態、自動核准日、你的意見。Darren 主要看這頁 |
