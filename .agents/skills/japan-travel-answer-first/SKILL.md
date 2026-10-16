@@ -12,7 +12,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 - 接收已核准的頁面規格（`content-planning/<區域>/page-specs.json` 或 `content-automation/article-queue.json` 的一列）：主要查詢、頁型、內容邊界、`mustAnswer`、地點欄位與共用教學頁。不得改題、擴張內容邊界、改網址或改 Hub。研究顯示規格有誤時停止，把問題退回 `$japan-travel-topic-planner`。
 - 同一位作者負責研究、文章計畫與全文，一次成稿。不拆成先鎖標題再填段落，也不安排第二位編輯潤飾。
 - 終點是 `content-production/<article-id>/reader-preview.md` 與研究記錄，交給 `$japan-travel-acceptance` 驗收。本 Skill 不呼叫 Ahrefs、不選圖、不寫入 Sanity、不發布、不 commit 或 push。
-- 開工前完整閱讀 [日文資料](references/japanese-sources.md)、[保母等級寫法](references/nanny-level.md)、[頁型](references/page-types.md) 與 [研究記錄格式](references/research-record.md)。
+- 開工前完整閱讀 [日文資料](references/japanese-sources.md)、[保母等級寫法](references/nanny-level.md)、[語氣、SEO 與小知識](references/voice-and-seo.md)、[頁型](references/page-types.md) 與 [研究記錄格式](references/research-record.md)。
 
 ## 研究
 
@@ -65,6 +65,10 @@ description: Research and write one Traditional Chinese article for the Japan tr
 「認現場」的位置很可能找不到可商用的照片，本站也不預期去現場拍。所以這類段落一律先寫成不看照片也認得出來：寫出現場招牌上的日文原文（例如「乗車券売場」）、位置描述（出了閘口右手邊、紅色屋頂那棟）與附近的地標，能找到官方照片頁、構內圖（構内図）或 Google 地圖街景時附上連結。之後找到照片是加分，不是補洞。
 
 ## 寫作
+
+### 語氣、SEO 與小知識
+
+依 [語氣、SEO 與小知識](references/voice-and-seo.md)：像做足功課的朋友用「你」說話、地名先中文、段落短；SEO 規範沿用好材誌（主要查詢完整出現在開頭兩段、H2 帶地名、次要查詢進 H2／H3、真實問題才設 FAQ）；和讀者會經過的地方有關的小故事，有來源才寫，一頁 0～3 則。
 
 ### 開頭直接回答
 
