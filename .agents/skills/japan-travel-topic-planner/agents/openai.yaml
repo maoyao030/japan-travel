@@ -1,0 +1,7 @@
+interface:
+  display_name: "日本站選題規劃"
+  short_description: "按區域列地點、組合關鍵字、決定獨立頁或條目段落，產出待核准的頁面規格"
+  default_prompt: "使用 $japan-travel-topic-planner 規劃指定區域的頁面：列出地點、排除同名陷阱、收集組合詞與長尾問題，判斷哪些單獨成頁、哪些寫進地點條目，最後整理成待 Darren 核准的清單。不要寫文章或發布。"
+
+policy:
+  allow_implicit_invocation: false
