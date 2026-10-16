@@ -35,11 +35,12 @@ for (const field of ['altDraft', 'captionDraft', 'creditDraft']) {
     throw new Error(`已選定封面缺少 ${field}`)
   }
 }
+const NEEDS_SOURCE_PAGE = new Set(['commons-photo', 'stock-photo', 'official-material'])
 if (
-  candidate.sourceType === 'stock-photo' &&
+  NEEDS_SOURCE_PAGE.has(candidate.sourceType) &&
   (typeof candidate.sourcePageUrl !== 'string' || candidate.sourcePageUrl.trim() === '')
 ) {
-  throw new Error('免費實拍封面缺少 sourcePageUrl')
+  throw new Error('外部來源的封面缺少 sourcePageUrl')
 }
 
 const preparedDirectory = path.join(projectRoot, '.tmp', 'image-selection', plan.articleId)

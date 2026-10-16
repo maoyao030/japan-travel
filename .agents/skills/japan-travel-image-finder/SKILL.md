@@ -1,0 +1,79 @@
+---
+name: japan-travel-image-finder
+description: Find and select commercially usable images for an approved Japan travel article — Wikimedia Commons and free stock libraries first, then tourism-association photo materials with confirmed terms, own photos, and only when no real photo qualifies a clearly labelled AI illustration. Excludes non-commercial and no-derivatives licenses because the site earns affiliate income, never uses hotel, shop, Instagram, map or OG images, and records license evidence in an image packet. Use for cover images, inline images, or image replacement. Do not upload to Sanity or publish.
+---
+
+# 日本旅遊長尾站選圖
+
+先找「內容真的對題」且可以在商業網站使用的實拍照片，保存來源與授權證據，依固定門檻自行選定。本站有 Trip.com 與 Agoda 分潤，按商業網站審查授權。某個圖片位置確認沒有任何合格實拍時，才用 AI 另製一張清楚標示的示意圖。
+
+## 啟動前
+
+1. 讀取根目錄 `AGENTS.md` 與 `PROJECT_STATUS.md`，確認 Git 狀態。
+2. 使用已通過驗收的 `content-production/<article-id>/reader-preview.md` 與 `reference-review.md`。只有草稿時可暫定選圖，但不得上傳。
+3. 完整閱讀 [來源與授權](references/selection-and-licensing.md)；保存成果前讀 [圖片封包](references/image-packet.md)。
+4. 不修改文章內容。文章與圖片互相矛盾時，記錄阻礙並交回寫作流程。
+
+## 來源順序
+
+| 順序 | 來源 | 適合用在 |
+|---|---|---|
+| 1 | 維基共享資源 Wikimedia Commons | 小地方、地標、料理、祭典、交通工具 |
+| 2 | Unsplash、Pexels、Pixabay | 封面、大地方、季節氛圍 |
+| 3 | 觀光協會或自治體公開的照片素材 | 小地方、祭典；條件逐一確認 |
+| 4 | Darren 或作者自己拍的照片 | 任何地方 |
+| 5 | AI 示意圖 | 前面都沒有合格照片時，必須標示 |
+
+小地方在免費圖庫幾乎找不到照片，所以先查維基共享資源。重點店家與旅館位置用 Google 地圖嵌入呈現，那不是圖片來源，不在本 Skill 處理。
+
+## 一律不用
+
+- 旅館、店家官網的照片（除非取得書面授權並保存）
+- 店家卡片放店家照片：交接文件規定店家卡片不放照片
+- Instagram、Facebook、部落格的照片
+- Google 地圖、Tabelog、Jalan 上的照片
+- 對方網頁的分享預覽圖（OG 圖）
+- 授權含「非商業使用」（NC）或「禁止改作」（ND）的照片；裁切封面就算改作
+
+## 先建立視覺規格
+
+每個圖片位置先從正文整理：用途（封面或文內）、必須看見的主體、可以接受的替代、不能暗示的事實、要避開的內容、比例與最低解析度（封面橫式且寬度至少 1600 px，文內至少 1200 px）。
+
+封面可以用地區或季節情境，但不能讓讀者誤以為照片是某間旅館、某個祭典當年的實況或本站實地拍攝。文內圖要直接呈現正文說的地點、料理、交通工具或標示。
+
+## 搜尋與查核
+
+1. 用日文與英文描述畫面搜尋，例如「礼文島 桃岩」「Rebun Island Momoiwa」。維基共享資源可用日文地名的分類頁找。
+2. 只接受官方單張素材頁：維基共享資源的 `File:` 頁、圖庫的單張照片頁、觀光協會素材庫的單張頁。搜尋縮圖、轉貼網站與直接圖片網址不能當證據。
+3. 打開大圖看完整構圖；核對作者、授權條款、拍攝地點與說明。維基共享資源要看檔案頁下方的授權區塊，不只看縮圖旁的文字。
+4. 觀光協會素材要打開利用規約，確認允許商業網站使用、允許裁切、署名方式、是否需要申請。需要申請的，申請核准前不能使用。
+5. 排除 AI 生成、3D render、浮水印、可辨識人物肖像、醒目商標與看不出地點的照片。
+6. 每個位置以 2～3 張強候選為目標；只有一張合格就保留一張並說明。
+
+## AI 備援
+
+只有在依多組描述搜尋過所有實拍來源、仍是零張合格時，才在封包記錄 `no-qualified-photo` 與原因，再使用 AI。AI 圖只能當情境示意，不能代表特定旅館、店家、祭典實況或地點的真實樣貌；圖說必須包含「AI 示意圖」。需要證明地點真實樣貌的位置（例如「碼頭售票口長這樣」），AI 不可靠就設為 `blocked`，改建議自己拍。
+
+## 選定與交付
+
+依 [圖片封包](references/image-packet.md) 保存 `content-production/<article-id>/images/image-plan.json`，再執行：
+
+```bash
+node .agents/skills/japan-travel-image-finder/scripts/validate-image-packet.mjs content-production/<article-id>
+```
+
+選定順序：
+
+1. 直接符合 `mustShow`，完全避開 `mustNotShow`。
+2. `exact` 優先於 `contextual`；有合格實拍就不比較 AI 圖。
+3. 不需猜地點、季節或主體身分，事實限制較少。
+4. 裁成目標比例後主體仍清楚。
+5. 前項相同時，選授權條件最簡單、來源資訊最完整者。
+
+封面選定後執行 `npm run image:prepare:cover -- content-production/<article-id> --download`（自己拍的照片與 AI 圖先放到 `.tmp/image-selection/<article-id>/`，省略 `--download`），用人眼確認 16:9 裁切沒有誤導。原始大圖不加入 Git。
+
+向使用者提供一次簡潔的結果預覽：選定圖、來源頁、為何符合、限制與署名草案。不要求逐張核准。本 Skill 不上傳 Sanity、不發布、不 commit 或 push。
+
+## 完成條件
+
+每個圖片位置都已依正文建立視覺規格；候選都看過大圖並核對官方單張頁與授權；沒有 NC、ND 或來源不明的素材；觀光協會素材已確認利用規約；選定理由與署名草案已記錄；封包驗證通過，或在沒有可靠圖片時設為 `blocked`。

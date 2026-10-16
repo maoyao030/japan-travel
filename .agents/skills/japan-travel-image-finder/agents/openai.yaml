@@ -1,0 +1,7 @@
+interface:
+  display_name: "日本站選圖"
+  short_description: "維基共享資源與免費圖庫優先，排除非商業與禁止改作授權，零張合格才用標示的 AI 圖"
+  default_prompt: "使用 $japan-travel-image-finder，為指定文章找可商用的實拍照片：先查維基共享資源與免費圖庫，再查觀光協會素材，排除 NC 與 ND 授權，依門檻自行選定並保存授權證據。不要上傳或發布。"
+
+policy:
+  allow_implicit_invocation: true

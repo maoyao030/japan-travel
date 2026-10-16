@@ -30,7 +30,14 @@ const preparation = coverSlot?.preparation
 if (!coverSlot || !candidate || !preparation) {
   throw new Error('圖片封包缺少已選定封面或 preparation 設定')
 }
-if (candidate.sourceType !== 'stock-photo' && candidate.sourceType !== 'ai-generated') {
+const SUPPORTED_SOURCE_TYPES = new Set([
+  'commons-photo',
+  'stock-photo',
+  'official-material',
+  'own-photo',
+  'ai-generated',
+])
+if (!SUPPORTED_SOURCE_TYPES.has(candidate.sourceType)) {
   throw new Error('封面來源類型無法處理')
 }
 
