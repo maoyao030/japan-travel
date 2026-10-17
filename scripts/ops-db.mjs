@@ -113,10 +113,24 @@ export function createHttpExecutor({fetchImpl = fetch, config = readOpsDatabaseC
   }
 }
 
+/**
+ * 雲端的 network secret 只會加在經過代理的請求上。Node 內建的 fetch 預設不走 HTTPS_PROXY，
+ * 要在啟動前設 NODE_USE_ENV_PROXY=1；沒設時直接連線，Cloudflare 會回 401 Authentication error。
+ */
+export function checkProxySetting(env = process.env) {
+  const hasProxy = Boolean(env.HTTPS_PROXY || env.https_proxy)
+  if (hasProxy && env.NODE_USE_ENV_PROXY !== '1') {
+    throw new Error('有設定 HTTPS_PROXY 但沒有 NODE_USE_ENV_PROXY=1：請在雲端環境的環境變數加上 NODE_USE_ENV_PROXY=1，否則權杖不會被附上')
+  }
+}
+
 /** 依參數與環境選連線方式：--local 用本機資料庫；OPS_DB_TRANSPORT=http 用 REST API；其他用 wrangler。 */
 export function createOpsExecutor({local = false, env = process.env} = {}) {
   if (local) return createWranglerExecutor({remote: false})
-  if (env.OPS_DB_TRANSPORT === 'http') return createHttpExecutor()
+  if (env.OPS_DB_TRANSPORT === 'http') {
+    checkProxySetting(env)
+    return createHttpExecutor()
+  }
   return createWranglerExecutor({remote: true})
 }
 

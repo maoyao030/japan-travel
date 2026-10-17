@@ -36,7 +36,9 @@ npx wrangler d1 execute japan-travel-ops --remote -c d1/wrangler.jsonc --command
 - 雲端環境 `japan-travel-publisher`（claude.ai/code 的環境選單 → Cloud）。
 - 權杖放在環境的 **Network secret**，不放環境變數：網站 `api.cloudflare.com`，路徑限定 `/client/v4/accounts/6e2acd041446ebca7f3ae7f512500f3d/d1/`，自動附上 `Authorization: Bearer <權杖>`。權杖存進去後誰都看不到，routine 也讀不到，只有連到這個路徑時才會被附上。環境變數的欄位畫面明寫不要放密碼，所以不用 `CLOUDFLARE_API_TOKEN`。
 - 環境變數 `OPS_DB_TRANSPORT=http`（不是機密）：程式看到這個值就改用 D1 REST API、不帶權杖，交給 network secret 附上。
-- 權杖本身是 Cloudflare 的 `japan-travel-ops-routine`（只開 Account / D1 / Edit，範圍只有 Darren 的帳號，不設 IP 限制）。要換權杖時在 Cloudflare 按 Roll，再到環境的 Network secret 刪掉舊的、重新加一個。
+- 環境變數 `NODE_USE_ENV_PROXY=1`（不是機密）：network secret 只加在經過代理的請求上，Node 22 內建的 fetch 預設不走 `HTTPS_PROXY`，沒設這個值會直接連線、Cloudflare 回 401。程式在有代理但沒設這個值時會直接報錯。
+- 2026-10-17 在雲端 session 實測：curl 回 HTTP 200；`status` → `free`，`acquire` → `acquired`，`release` → `released`，再 `status` → `free`，沒有留下資料。
+- 權杖本身是 Cloudflare 的 `japan-travel-ops-routine`（只開 Account / D1 / Edit，範圍只有 Darren 的帳號，不設 IP 限制）。要換權杖時在 Cloudflare 按 Roll，再到環境 Network secret 那一列按 Replace：Name 填 `Authorization`、Prefix 填 `Bearer`（灰字只是提示，要自己打）、Value 貼權杖。注意：Claude 桌面 app 的內建瀏覽器複製不會進電腦剪貼簿，權杖要在自己的瀏覽器複製。
 
 本機不需要設定，`wrangler login` 的登入狀態就夠。權杖不寫進 Git、文件或聊天。
 

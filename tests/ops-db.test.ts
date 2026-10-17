@@ -8,7 +8,7 @@ import {
   getAutoPublisherLock,
   releaseAutoPublisherLock,
 } from '../scripts/manage-auto-publisher-lock.mjs'
-import {createHttpExecutor, createOpsExecutor, readOpsDatabaseConfig, sqlLiteral} from '../scripts/ops-db.mjs'
+import {checkProxySetting, createHttpExecutor, createOpsExecutor, readOpsDatabaseConfig, sqlLiteral} from '../scripts/ops-db.mjs'
 import {finishRun, startRun} from '../scripts/ops-run.mjs'
 import {collectSheetUpdate, markSheetSynced} from '../scripts/ops-sheet-sync.mjs'
 
@@ -170,5 +170,8 @@ test('雲端用 REST API 連 D1：不帶權杖時不送 Authorization，交給 n
 test('連線方式：--local 用本機、OPS_DB_TRANSPORT=http 用 REST API、其他用 wrangler', () => {
   assert.equal(typeof createOpsExecutor({local: true}), 'function')
   assert.equal(typeof createOpsExecutor({env: {OPS_DB_TRANSPORT: 'http'}}), 'function')
+  assert.equal(typeof createOpsExecutor({env: {OPS_DB_TRANSPORT: 'http', HTTPS_PROXY: 'http://127.0.0.1:1', NODE_USE_ENV_PROXY: '1'}}), 'function')
+  assert.throws(() => checkProxySetting({HTTPS_PROXY: 'http://127.0.0.1:1'}), /NODE_USE_ENV_PROXY=1/)
+  assert.doesNotThrow(() => checkProxySetting({}))
   assert.equal(typeof createOpsExecutor({env: {}}), 'function')
 })

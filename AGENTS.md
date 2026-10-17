@@ -102,4 +102,4 @@
 - Git 放規則、規劃、全站地點清單與研究證據；Sanity（公開）放網站內容與發布狀態；Google Sheet 是給 Darren 看的窗口。Sanity 免費方案只能開公開資料庫，不放維護資料。
 - 事實的主張與原文摘錄在 Git，查核狀態在 D1，兩邊用同一個編號（`<地點>:F12`）對應。
 - 執行鎖用 D1 的 `run_lock`（`scripts/manage-auto-publisher-lock.mjs`，2026-10-17 從 `.git` 改過來）；每輪開始與結束用 `scripts/ops-run.mjs` 記錄；每週用 `scripts/ops-sheet-sync.mjs` 把例外與即將重查的事實同步到規劃總表。
-- 結構變更一律新增 `d1/migrations/` 的編號檔案。雲端 routine 用環境 `japan-travel-publisher`：權杖放在 network secret，環境變數 `OPS_DB_TRANSPORT=http` 讓程式改用 D1 REST API；帳號 ID 寫在 `d1/wrangler.jsonc`。權杖由 Darren 建立與貼上，Claude Code 不經手。細節見 `d1/README.md`。
+- 結構變更一律新增 `d1/migrations/` 的編號檔案。雲端 routine 用環境 `japan-travel-publisher`：權杖放在 network secret，環境變數 `OPS_DB_TRANSPORT=http` 讓程式改用 D1 REST API、`NODE_USE_ENV_PROXY=1` 讓 Node 的請求經過代理（權杖才會被附上）；帳號 ID 寫在 `d1/wrangler.jsonc`。權杖由 Darren 建立與貼上，Claude Code 不經手。細節見 `d1/README.md`。

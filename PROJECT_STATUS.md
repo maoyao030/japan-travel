@@ -390,3 +390,22 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 請 Darren 決定四件事：抽查方式、短頁門檻、觸發點、每天篇數。
+
+## 2026-10-17 Claude Code（地端）：雲端連 D1 驗證通過（分支 `plan/wakkanai-rishiri-rebun`）
+
+### 排查經過
+
+- 前三次雲端測試都回 401。排除網路（Full、代理有重新簽 TLS、NO_PROXY 不含 cloudflare）、路徑與帳號後，發現兩個原因：
+  1. Network secret 的 Prefix 欄位顯示的「Bearer」只是灰色提示字，要自己打；Name 欄位也一樣。
+  2. Claude 桌面 app 內建瀏覽器的複製（Copy 按鈕、Ctrl+C）不會進電腦剪貼簿，之前每次貼進密鑰的都是剪貼簿裡原本的文字，不是權杖。改在 Darren 自己的 Chrome 複製權杖，先在本機確認（長度 53、Cloudflare verify active、查 D1 成功），再貼上並用欄位字數確認。
+- 密鑰改好後 curl 回 200，但程式仍 401：Node 22 內建 fetch 不走 `HTTPS_PROXY`。雲端環境加上 `NODE_USE_ENV_PROXY=1` 後通過。
+
+### 已完成
+
+- 雲端實測通過：`status` → free，`acquire` → acquired，`release` → released，再 `status` → free，沒有留下資料。
+- 雲端環境 `japan-travel-publisher` 的環境變數：`OPS_DB_TRANSPORT=http`、`NODE_USE_ENV_PROXY=1`；網路 Full；權杖在 network secret。Cloudflare 權杖 `japan-travel-ops-routine` 為了排查 Roll 過數次，目前有效的是最後一次。
+- `scripts/ops-db.mjs` 在有代理但沒設 `NODE_USE_ENV_PROXY=1` 時直接報錯並說明；新增測試。文件（`d1/README.md`、`AGENTS.md`、`.env.example`）補上這兩點與換權杖的正確步驟。
+
+### 唯一下一步
+
+- 請 Darren 決定四件事：抽查方式、短頁門檻、觸發點、每天篇數。
