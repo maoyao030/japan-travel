@@ -1,0 +1,15 @@
+// 維護資料庫（Cloudflare D1）專用設定。網站 Worker 不綁這個資料庫，所以和根目錄的 wrangler.jsonc 分開。
+// 用法：npx wrangler d1 migrations apply japan-travel-ops --remote -c d1/wrangler.jsonc
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "japan-travel-ops",
+  "compatibility_date": "2026-10-01",
+  "d1_databases": [
+    {
+      "binding": "OPS_DB",
+      "database_name": "japan-travel-ops",
+      "database_id": "b8f3156c-5129-42db-b48e-85e179bf926b",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

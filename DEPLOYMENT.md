@@ -28,6 +28,10 @@
 - Cloudflare 會為 Custom Domain 自動建立代理 DNS 紀錄與 HTTPS 憑證。
 - 網域綁定不代表開放搜尋引擎收錄；文章與主題中心預設 `noindex`，要經過驗收與核准才會由腳本開放索引。
 
+## 維護資料庫（Cloudflare D1）
+
+2026-10-17 建立 `japan-travel-ops`（私有，亞太區），放執行鎖、停放、事實查核狀態等維護資料。網站 Worker 不綁這個資料庫；設定與指令見 `d1/README.md`。雲端 routine 需要 `CLOUDFLARE_API_TOKEN`（只開 D1 編輯權限）與 `CLOUDFLARE_ACCOUNT_ID`。
+
 ## Sanity 發布後自動建置
 
 Sanity 專案建立後，在該專案的 dataset 加一個 Webhook，連到 Cloudflare 的 Deploy Hook：

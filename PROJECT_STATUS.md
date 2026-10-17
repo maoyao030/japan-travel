@@ -328,3 +328,27 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 請 Darren 決定四件事（抽查方式、短頁門檻、觸發點、每天篇數）與維護資料是否改放 Sanity，一起寫進規則。
+
+## 2026-10-17 Claude Code（地端）：維護資料庫改用 Cloudflare D1（分支 `plan/wakkanai-rishiri-rebun`）
+
+### 決定
+
+- Darren 決定維護資料放私有資料庫，選 Cloudflare D1。查證時發現 Sanity 免費方案只能開 2 個公開資料庫、上限 1 萬份文件、成員角色只有管理員與檢視者，所以不在 Sanity 開私有資料庫。
+
+### 已完成
+
+- Darren 在地端重新登入 Cloudflare（`npx.cmd wrangler login`，PowerShell 擋 `npx`）。
+- 建立 D1 資料庫 `japan-travel-ops`（亞太區，ID `b8f3156c-5129-42db-b48e-85e179bf926b`）。帳號裡另有一個不相關的 D1（`hibi-nihongo-sync`），沒有動它。
+- 新增 `d1/wrangler.jsonc`（與網站 Worker 的設定分開）與 `d1/migrations/0001_maintenance.sql`：九張表（執行鎖、每輪紀錄、文章生產狀態、事實查核狀態、事實使用、重查紀錄、待補內連、跨群回補、例外），已套用到線上資料庫並確認。
+- 在本機資料庫測過執行鎖：第二輪在鎖逾時前搶不到，逾時後可以接手。
+- 新增 `d1/README.md`；`AGENTS.md`、`DEPLOYMENT.md`、`.env.example`、研究記錄規則跟著改。`studio/README.md` 的 Sanity 權杖說明改成「選有寫入權限的角色」（免費方案沒有 Editor 角色可選）。
+
+### 尚未完成
+
+- `scripts/manage-auto-publisher-lock.mjs` 還是把鎖放在 `.git`，要改成用 D1 的 `run_lock`。
+- 雲端 routine 的 `CLOUDFLARE_API_TOKEN`（只開 D1 編輯權限）與 `CLOUDFLARE_ACCOUNT_ID`，由 Darren 建立並放進雲端環境。
+- 從 D1 同步例外與到期清單到規劃總表的程式。
+
+### 唯一下一步
+
+- 請 Darren 決定四件事：抽查方式、短頁門檻、觸發點、每天篇數。

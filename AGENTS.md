@@ -95,3 +95,11 @@
 - **默許**：自動核准日（目前這群最後一篇預計寫完那天，至少提醒後 3 天）到了，Darren 沒有寫意見或改狀態，就算核准。檢查沒過、要改已上線頁面的分工、新頁型、AI 圖等例外不默許。每篇文章照樣要通過四層驗收才發布。
 - **更新後門**：事實表每筆標變動類型與下次查核日，到期由 routine 自動重查；只有例外會出現在規劃總表。
 - 流程細節見選題 Skill `references/next-group.md`。
+
+## 維護資料庫（Darren 2026-10-17 決定）
+
+- 一直在變的維護狀態放 Cloudflare D1 `japan-travel-ops`（私有）：執行鎖、每輪紀錄、文章的生產輪數與停放、事實查核狀態與到期日、事實被哪幾頁用到、重查紀錄、待補內連、跨群回補、例外。
+- Git 放規則、規劃、全站地點清單與研究證據；Sanity（公開）放網站內容與發布狀態；Google Sheet 是給 Darren 看的窗口。Sanity 免費方案只能開公開資料庫，不放維護資料。
+- 事實的主張與原文摘錄在 Git，查核狀態在 D1，兩邊用同一個編號（`<地點>:F12`）對應。
+- 執行鎖改用 D1 的 `run_lock`；`scripts/manage-auto-publisher-lock.mjs` 把鎖放在 `.git`，雲端每次全新下載時無效，接自動發布前要改寫。
+- 結構變更一律新增 `d1/migrations/` 的編號檔案。雲端 routine 用 `CLOUDFLARE_API_TOKEN`（只開 D1 編輯權限）與 `CLOUDFLARE_ACCOUNT_ID` 連線，權杖由 Darren 建立，不進 Git。細節見 `d1/README.md`。
