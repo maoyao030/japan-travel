@@ -229,6 +229,8 @@ export function validateOutline(outline, {places = {places: []}, ownership = {ow
     if (!pageById.has(link?.from)) issues.push(`links[${index}].from 不是本群的頁面`)
     if (!pageById.has(link?.to) && link?.external !== true) issues.push(`links[${index}].to 不是本群的頁面；群外頁面要標 external`)
     if (!hasText(link?.purpose)) issues.push(`links[${index}].purpose 要寫這句連結的用途`)
+    if (hasText(link?.sentence) !== hasText(link?.anchor)) issues.push(`links[${index}] 連結句 sentence 與錨文字 anchor 要一起填`)
+    else if (hasText(link?.sentence) && !link.sentence.includes(link.anchor)) issues.push(`links[${index}].anchor 必須在連結句裡`)
   }
   for (const page of pages) {
     if (page.pageType !== 'aspect-page') continue

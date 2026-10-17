@@ -273,3 +273,45 @@ test('每輪只做一件事：續做、補內連、核准檢查、生產、規�
   assert.equal(decideNextAction({items, groups, groupStates: paused, dueFactCount: 3, lastSummaryAt: recent, now}).action, 'recheck-facts')
   assert.equal(decideNextAction({items, groups, groupStates: paused, now}).action, 'weekly-summary')
 })
+
+test('補內連只加連結標記，可見文字不變；找不到或不唯一就拒絕', async () => {
+  const {addLinkToPortableText, visibleText, pendingLinksFromOutline} = await import('../scripts/link-backfill.mjs')
+  const body = [
+    {_type: 'block', _key: 'b1', style: 'normal', markDefs: [], children: [{_type: 'span', _key: 's1', text: '訂船票前先看渡輪訂票教學，再決定班次。', marks: []}]},
+    {_type: 'block', _key: 'b2', style: 'normal', markDefs: [], children: [{_type: 'span', _key: 's2', text: '島上巴士只收現金。', marks: []}]},
+  ]
+  const result = addLinkToPortableText(body, {sourceArticleId: 'rebun-island-transport', targetPath: '/guides/heartland-ferry-booking/', anchorText: '渡輪訂票教學', sentence: '訂船票前先看渡輪訂票教學'})
+  assert.equal(visibleText(result.body), visibleText(body))
+  assert.equal(result.blockKey, 'b1')
+  const block = result.body[0]
+  assert.deepEqual(block.children.map((child: any) => child.text), ['訂船票前先看', '渡輪訂票教學', '，再決定班次。'])
+  assert.equal(block.markDefs[0].href, '/guides/heartland-ferry-booking/')
+  assert.throws(() => addLinkToPortableText(result.body, {targetPath: '/guides/heartland-ferry-booking/', anchorText: '渡輪訂票教學'}), /已經連到同一個網址/)
+  assert.throws(() => addLinkToPortableText(body, {targetPath: '/x/', anchorText: '不存在的句子'}), /找不到連結句/)
+  assert.throws(() => addLinkToPortableText(body, {targetPath: 'no-slash', anchorText: '巴士'}), /站內路徑/)
+
+  const outline = {
+    pages: [{articleId: 'rebun-island-transport', targetPath: '/places/rebun-island/transport/'}, {articleId: 'heartland-ferry-booking', targetPath: '/guides/heartland-ferry-booking/'}],
+    links: [{from: 'rebun-island-transport', to: 'heartland-ferry-booking', purpose: '怎麼訂票', sentence: '訂船票前先看渡輪訂票教學', anchor: '渡輪訂票教學'}],
+  }
+  const pending = pendingLinksFromOutline({outline, articleId: 'rebun-island-transport', publishedArticleIds: ['rebun-island-transport']})
+  assert.equal(pending.length, 1)
+  assert.equal(pending[0].targetPath, '/guides/heartland-ferry-booking/')
+  assert.equal(pendingLinksFromOutline({outline, articleId: 'rebun-island-transport', publishedArticleIds: ['heartland-ferry-booking']}).length, 0)
+})
+
+test('待補內連登記不重複，兩端都上線才列為可以補', async (t) => {
+  const db = await openTestDatabase()
+  if (!db) return t.skip('這個 Node 版本沒有 node:sqlite')
+  const {registerPendingLinks, listReadyLinks, markLinked} = await import('../scripts/ops-links.mjs')
+  const link = {fromArticleId: 'a', toArticleId: 'b', section: null, sentence: '先看 B 頁', anchorText: 'B 頁', targetPath: '/b/', source: 'outline'}
+  await registerPendingLinks({execute: db.execute, links: [link]})
+  await registerPendingLinks({execute: db.execute, links: [link]})
+  const [rows] = await db.execute(['SELECT COUNT(*) AS n FROM pending_links'])
+  assert.equal(rows[0].n, 1)
+  assert.equal((await listReadyLinks({execute: db.execute, publishedArticleIds: ['a']})).length, 0)
+  const ready = await listReadyLinks({execute: db.execute, publishedArticleIds: ['a', 'b']})
+  assert.equal(ready.length, 1)
+  assert.ok((await markLinked({execute: db.execute, linkId: ready[0].link_id}))?.linked_at)
+  assert.equal((await listReadyLinks({execute: db.execute, publishedArticleIds: ['a', 'b']})).length, 0)
+})
