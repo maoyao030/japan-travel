@@ -13,7 +13,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 - 有核准的旅行群大綱（`content-planning/<區域>/<群>-outline.json` 或同內容的 MD）時，照大綱寫：H1／H2／H3 用大綱的版本（標題檢查仍可改措辭，不增刪標題、不改層級）；分工表裡本頁負責的事寫細節，只摘要的事一兩句帶過並連到負責頁；內連表裡從本頁出發的連結句都要寫進正文。研究發現大綱有誤或缺事實時停止，退回大綱，不自己改分工。
 - 同一位作者負責研究、文章計畫與全文，一次成稿。不拆成先鎖標題再填段落，也不安排第二位編輯潤飾。
 - 終點是 `content-production/<article-id>/reader-preview.md` 與研究記錄，交給 `$japan-travel-acceptance` 驗收。本 Skill 不做選題、不選圖、不寫入 Sanity、不發布、不 commit 或 push。
-- 開工前完整閱讀 [日文資料](references/japanese-sources.md)、[標題語氣與結構規範](references/heading-style.md)、[保母等級寫法](references/nanny-level.md)、[語氣、SEO 與小知識](references/voice-and-seo.md)、[頁型](references/page-types.md)、[評論與人氣](references/reviews-and-popularity.md) 與 [研究記錄格式](references/research-record.md)。
+- 開工前完整閱讀 [日文資料](references/japanese-sources.md)、[標題語氣與結構規範](references/heading-style.md)、[保母等級寫法](references/nanny-level.md)、[語氣、SEO 與小知識](references/voice-and-seo.md)、[頁型](references/page-types.md)、[評論與人氣](references/reviews-and-popularity.md)、[嵌入與資料圖](references/embeds-and-data-blocks.md) 與 [研究記錄格式](references/research-record.md)。
 
 ## 研究
 
@@ -25,6 +25,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 - **店家與旅館資訊**（營業時間、公休、價格、房型、含餐）：店家官網與官方社群，用 Jalan、樂天 Travel、Tabelog、Google 地圖、Hot Pepper 交叉核對。
 - **人氣**（榜單、得獎、評分、評論數）：附平台名稱與查核日期。
 - **評論常提到的特點**：兩個平台以上、三則以上共同提到才寫，依 [評論與人氣](references/reviews-and-popularity.md)。
+- **客觀狀況**（風大、坡陡、人多、班次少）：有官方資料或三個獨立來源一致就直接寫結論與建議，不用寫「很多人提到」，依 [評論與人氣](references/reviews-and-popularity.md)「客觀狀況直接寫」。
 - **找候選**：Tabelog、Google 地圖、部落格、新聞、PTT、Dcard 都可以用來找「這裡可能有東西」，寫進正文前要找到上面可用的來源。
 
 搜尋用規格裡的 `japaneseNames` 與 `japaneseSearchTerms`。日文漢字和繁中不同，用繁中字搜會漏資料，對照表見 [日文資料](references/japanese-sources.md)。

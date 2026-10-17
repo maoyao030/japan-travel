@@ -29,7 +29,7 @@ node scripts/check-planning.mjs
 
 ## 旅行群大綱 `content-planning/<地區>/<群>-outline.json`
 
-- `groupId`、`pages[]`、`division[]`、`links[]`、`writingOrder[]`、`gaps[]`。
+- `groupId`、`pages[]`、`division[]`、`links[]`、`writingOrder[]`、`gaps[]`；另有 `spotCoverage[]`、`experienceLeads[]`、`mediaPlan[]`（欄位見 [景點比對與體驗研究](experience-research.md)，檢查程式目前不檢查）。
 - `pages[]`：`articleId`、`pageType`、`placeId`、`targetPath`、`primaryQuery`、`secondaryQueries`、`h1`、`mustAnswer`、`headings[]`。每個標題：`level`（2 或 3）、`text`、`facts`（事實編號）、`answers`（回答第幾個必答問題，從 0 起算）。
 - `division[]`：`topicKey`、`description`、`owner`、`summarizedBy`。
 - `links[]`：`from`、`to`、`purpose`，可加 `section` 與連結句 `sentence`；連到群外頁面標 `external: true`。

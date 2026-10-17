@@ -127,3 +127,10 @@
 - 不用：條款禁止轉載或沒寫轉載條件的、標示第三者提供或攝影的、觀光協會 Instagram 轉貼的遊客照片。
 - Instagram 與 YouTube 的公開貼文只用平台的嵌入功能，不下載；官方帳號優先。網站的嵌入區塊還沒做。
 - 細節見 `japan-travel-image-finder` 的 `references/selection-and-licensing.md`。本段取代上方「本站固定原則」圖片一條中與此衝突的部分。
+
+## 稚內群核准與研究、寫作規則（Darren 2026-10-18 決定）
+
+- **稚內群 26 頁整批核准**（`content-planning/hokkaido/page-specs.json`）。資料太少的主題仍照短頁規則併進主頁。
+- **景點比對與體驗研究**：地點研究多做兩件事，用官方景點清單比對、從 YouTube、部落格與競品行程頁找體驗與文化切入點，查證後才寫，見選題 Skill `references/experience-research.md`。
+- **客觀狀況直接寫**：風大、坡陡、人多、班次少等，有官方資料或三個獨立來源一致就直接寫結論與建議；對店家、旅館的評價維持「評論常提到」。見寫作 Skill `references/reviews-and-popularity.md`。
+- **嵌入影片與官方 Instagram 貼文**、**資料圖元件**（季節日曆、天氣圖表、路線圖、行程時間軸、基本資訊欄）：規則見寫作 Skill `references/embeds-and-data-blocks.md`；網站元件還沒做，做好前只列候選。
