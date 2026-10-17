@@ -504,3 +504,19 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 子代理再測一次；通過後把 `plan/wakkanai-rishiri-rebun` 合併到 `main`（Darren 同意後）。
+
+## 2026-10-17 Claude Code（地端）：地點主頁改在開放索引前一刻掛上（分支 `plan/wakkanai-rishiri-rebun`）
+
+### 第三次審查
+
+- 子代理重測：143 項測試通過，11 種情境（含續做從定稿接手、補登記與補內連 3 次上限、跨群連結網址、來源打不開不算輪數）都照設計運作，沒有擋路問題。
+- 建議：入口文章在 CI 前就掛上，Sanity 會觸發重新部署，已上線的主題頁會在開放索引前不被索引；主頁停放時會一直不被索引。
+
+### 已修（Darren 指示：先修再合併）
+
+- Skill 生產第 11 步：CI 通過後才 `prepare-parent-hub.mjs --set-landing`，緊接著開放索引；開放索引失敗就 `--unset-landing` 撤回（入口文章已開放索引就不撤）。判斷邏輯 `decideHubLandingRollback`，有測試。
+- 架構文件與流程圖同步。測試 143 項通過。
+
+### 唯一下一步
+
+- 把 `plan/wakkanai-rishiri-rebun` 合併到 `main`（Darren 同意後）。

@@ -9,6 +9,7 @@ import {
   BOOKING_CHANNELS,
   CATEGORY_SLUGS,
   decideHubLandingAction,
+  decideHubLandingRollback,
   findQueueItem,
   getArticlePathFromSnapshot,
   getDailyPublicationLimitForItem,
@@ -290,6 +291,18 @@ test('地點主頁暫存後要掛成父 Hub 的入口文章，網址才會是 Hu
   assert.equal(decideHubLandingAction({batch, hub, article: {...article, primaryHubId: 'hub-x'}}).action, 'blocked-article-not-staged')
   assert.equal(decideHubLandingAction({batch, hub: null, article}).action, 'blocked-hub-missing')
   assert.equal(decideHubLandingAction({batch: createBatch(), hub, article}).action, 'blocked-no-landing-item')
+
+  // 開放索引失敗時撤回：只撤本批主頁、而且還沒開放索引的。
+  const landed = {...hub, landingArticleId: 'article-ginzan-onsen'}
+  assert.deepEqual(decideHubLandingRollback({batch, hub: landed, article: {...article, noindex: true}}), {
+    action: 'unset-landing',
+    articleId: 'article-ginzan-onsen',
+  })
+  assert.equal(decideHubLandingRollback({batch, hub: landed, article: {...article, noindex: false}}).action, 'blocked-article-indexable')
+  assert.equal(decideHubLandingRollback({batch, hub, article}).action, 'landing-already-unset')
+  assert.equal(decideHubLandingRollback({batch, hub: {...hub, landingArticleId: 'article-other'}, article}).action, 'blocked-landing-conflict')
+  assert.equal(decideHubLandingRollback({batch, hub: null, article}).action, 'blocked-hub-missing')
+  assert.equal(decideHubLandingRollback({batch: createBatch(), hub: landed, article}).action, 'blocked-no-landing-item')
 
   const snapshot = {
     articleId: 'article-ginzan-onsen',

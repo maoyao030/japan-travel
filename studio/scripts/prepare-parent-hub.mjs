@@ -1,7 +1,12 @@
 import path from 'node:path'
 import {getCliClient} from 'sanity/cli'
 
-import {decideHubLandingAction, findQueueBatch, loadArticleQueue} from '../../scripts/article-automation-policy.mjs'
+import {
+  decideHubLandingAction,
+  decideHubLandingRollback,
+  findQueueBatch,
+  loadArticleQueue,
+} from '../../scripts/article-automation-policy.mjs'
 
 /**
  * 依 article-queue.json 的 batches[].parentHub 建立（或開放索引）批次的父 Hub。
@@ -13,15 +18,20 @@ import {decideHubLandingAction, findQueueBatch, loadArticleQueue} from '../../sc
  *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --release-index --expected-revision=<rev> --apply
  *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --set-landing   # 預覽把地點主頁掛成入口文章
  *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --set-landing --expected-revision=<rev> --apply
+ *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --unset-landing  # 預覽撤回入口文章
+ *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --unset-landing --expected-revision=<rev> --apply
  *
  * 父 Hub 一律先以 noindex=true 建立；只有本批至少一篇文章已開放索引後，才允許 --release-index。
- * --set-landing：本批的地點主頁（routeMode hub-landing）暫存到 Sanity 後、開放索引前執行，
- * 讓主頁的網址是 /<分類>/<Hub>/；主題頁是否可索引從此跟著入口文章的 noindex。
+ * --set-landing：本批的地點主頁（routeMode hub-landing）網站 CI 通過後、開放索引前一刻執行，
+ * 讓主頁的網址是 /<分類>/<Hub>/；主題頁是否可索引從此跟著入口文章的 noindex，
+ * 所以要緊接著開放索引，縮短已上線主題頁暫時不被索引的時間。
+ * --unset-landing：開放索引失敗時撤回，讓主題頁恢復原狀；入口文章已開放索引就不撤。
  */
 const argumentsList = process.argv.slice(2)
 const applyChanges = argumentsList.includes('--apply')
 const releaseIndex = argumentsList.includes('--release-index')
 const setLanding = argumentsList.includes('--set-landing')
+const unsetLanding = argumentsList.includes('--unset-landing')
 const expectedRevision = argumentsList
   .find((argument) => argument.startsWith('--expected-revision='))
   ?.slice('--expected-revision='.length)
@@ -29,7 +39,7 @@ const batchId = argumentsList.find((argument) => !argument.startsWith('--'))
 
 if (!batchId) {
   throw new Error(
-    '用法：sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> [--release-index|--set-landing] [--expected-revision=<rev>] [--apply]',
+    '用法：sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> [--release-index|--set-landing|--unset-landing] [--expected-revision=<rev>] [--apply]',
   )
 }
 
@@ -40,7 +50,9 @@ const queue = await loadArticleQueue(
 )
 const batch = findQueueBatch(queue, batchId)
 if (!batch) throw new Error(`找不到批次：${batchId}`)
-if (releaseIndex && setLanding) throw new Error('--release-index 與 --set-landing 要分開執行')
+if ([releaseIndex, setLanding, unsetLanding].filter(Boolean).length > 1) {
+  throw new Error('--release-index、--set-landing、--unset-landing 要分開執行')
+}
 
 const copy = batch.parentHub
 const hubId = batch.parentHubId
@@ -109,7 +121,8 @@ async function fetchSnapshot() {
         _type,
         "slug": slug.current,
         "primaryHubId": primaryHub._ref,
-        "bodyCount": count(body)
+        "bodyCount": count(body),
+        noindex
       },
       "landingDraftIds": *[_id == $landingDraftId]._id
     }`,
@@ -156,7 +169,9 @@ const landingDecision = setLanding
       article: before.landingArticle,
       articleDraftExists: before.landingDraftIds.length > 0,
     })
-  : null
+  : unsetLanding
+    ? decideHubLandingRollback({batch, hub: before.hub, article: before.landingArticle})
+    : null
 let action = 'none'
 if (landingDecision) {
   action = landingDecision.action
@@ -194,6 +209,7 @@ const blockedMessages = {
   'blocked-landing-conflict': '父 Hub 已經掛了別篇入口文章，拒絕覆蓋',
   'blocked-article-draft': 'Sanity 有地點主頁的同 ID 草稿，拒絕自動處理',
   'blocked-article-not-staged': '地點主頁還沒暫存到 Sanity，或 slug、主要 Hub 與清單不一致',
+  'blocked-article-indexable': '地點主頁已經開放索引，不撤回入口文章設定',
 }
 if (action.startsWith('blocked-')) {
   throw new Error(blockedMessages[action] ?? action)
@@ -235,6 +251,16 @@ if (!applyChanges) {
   validateExistingHub(after.hub)
   if (after.hub.landingArticleId !== landingDecision.articleId) throw new Error('入口文章設定後回讀驗證失敗')
   console.log(JSON.stringify({status: 'landing-set-and-verified', revision: after.hub._rev}, null, 2))
+} else if (action === 'unset-landing') {
+  if (!expectedRevision) throw new Error('--unset-landing --apply 必須同時提供 --expected-revision=<rev>')
+  if (expectedRevision !== before.hub._rev) {
+    throw new Error(`Sanity Hub 版本已變更；目前為 ${before.hub._rev}，不是 ${expectedRevision}`)
+  }
+  await client.patch(hubId).ifRevisionId(expectedRevision).unset(['landingArticle']).commit()
+  const after = await fetchSnapshot()
+  validateExistingHub(after.hub)
+  if (after.hub.landingArticleId) throw new Error('入口文章撤回後回讀驗證失敗')
+  console.log(JSON.stringify({status: 'landing-unset-and-verified', revision: after.hub._rev}, null, 2))
 } else {
   console.log('父 Hub 已在正確狀態，不重複修改。')
 }

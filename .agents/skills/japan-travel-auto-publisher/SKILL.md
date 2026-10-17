@@ -55,8 +55,13 @@ description: Run one scheduled round of the Japan travel site routine — take t
 7. 作者另存 `publication.json`（`seoTitle`、`seoDescription`、`excerpt`），執行 `npm run release:finalize -- content-production/<article-id>`。
 8. 依 `$japan-travel-image-finder` 完成封面與文內圖（含 `npm run image:prepare:cover -- content-production/<article-id> --download`）。
 9. 第 7、8 步任何一步失敗：`ops-article.mjs fail --article=<id> --kind=publish --reason=<原因>`，封包照樣 commit，結果 `failed`。
-10. Sanity 暫存：`publish-prepared-article.mjs ../.tmp/auto-publisher/<article-id>/sanity/article.json` dry-run 後 `--apply`；`publish-article-cover.mjs ../content-production/<article-id>` dry-run 後 `--apply`。`routeMode` 是 `hub-landing`（地點主頁）時，接著 `prepare-parent-hub.mjs <batchId> --set-landing` dry-run 取得 `currentRevision`，再 `--set-landing --expected-revision=<rev> --apply`，把這篇掛成父 Hub 的入口文章（沒掛的話網址會不符清單，開放索引一定失敗）。重新 inspect 確認 `staged_noindex` 且 `hasCover`。
-11. 開放索引：專案根目錄 `npm run ci`；通過後 `release-indexable-article.mjs ../content-production/<article-id>` dry-run 取得 revision，再 `--expected-revision=<rev> --apply`。第 10、11 步失敗：`fail --kind=publish`（狀態不變，下一輪從「續做」接手；連續 3 次才停放），**不得開放索引**，結果 `failed`。
+10. Sanity 暫存：`publish-prepared-article.mjs ../.tmp/auto-publisher/<article-id>/sanity/article.json` dry-run 後 `--apply`；`publish-article-cover.mjs ../content-production/<article-id>` dry-run 後 `--apply`。重新 inspect 確認 `staged_noindex` 且 `hasCover`。
+11. 開放索引：
+    1. 專案根目錄 `npm run ci`。
+    2. CI 通過後、`routeMode` 是 `hub-landing`（地點主頁）時，**緊接著**把這篇掛成父 Hub 的入口文章：`prepare-parent-hub.mjs <batchId> --set-landing` dry-run 取得 `currentRevision`，再 `--set-landing --expected-revision=<rev> --apply`（已經掛好會回 `landing-already-set`，不用 apply）。沒掛的話網址會不符清單，開放索引一定失敗；掛上後到開放索引之前，已上線的主題頁會暫時不被索引，所以中間不做別的事。
+    3. `release-indexable-article.mjs ../content-production/<article-id>` dry-run 取得 revision，再 `--expected-revision=<rev> --apply`。
+    4. 第 2 步掛上入口文章後，第 3 步失敗：先撤回，`prepare-parent-hub.mjs <batchId> --unset-landing` dry-run 取得 `currentRevision`，再 `--unset-landing --expected-revision=<rev> --apply`，讓主題頁恢復原狀；撤回也失敗就在執行紀錄寫明「父 Hub 入口文章未撤回」。
+    5. 第 10、11 步失敗：`fail --kind=publish`（狀態不變，下一輪從「續做」接手；連續 3 次才停放），**不得開放索引**，結果 `failed`。
 12. 開放索引後重新 inspect：`parentHubs[]` 裡這個 `batchId` 的 `shouldReleaseIndex` 是 true 時，`prepare-parent-hub.mjs <batchId> --release-index` dry-run 後帶 revision `--apply`。
 13. 登記，**依這個順序**（前兩個重跑不會重複登記；最後才標已發布，中途斷掉下一輪會「補登記」）：`node scripts/ops-links.mjs register --article=<id> --outline=<群大綱> --sanity=.tmp/queue-state.json`；`node scripts/ops-facts.mjs sync`；`ops-article.mjs published --article=<id>`。結果 `published`。
 14. 第 12、13 步失敗：`fail --kind=publish`，結果 `failed`。文章已經開放索引，下一輪會「補登記」；連續 3 次就停放並寫例外。
@@ -69,7 +74,7 @@ description: Run one scheduled round of the Japan travel site routine — take t
 - `staged`（Sanity 已暫存 noindex）：**不重跑定稿與 `publish-prepared-article`**（正文已經在 Sanity）。
   - `content-production/<article-id>/manifest.json` 不存在（上一輪在提交前中斷）：不重寫，`ops-article.mjs fail --article=<id> --kind=other --reason=封包遺失`，結果 `failed`。
   - 沒有封面（`hasCover` 是 false）：做 produce 第 8 步，再執行 `publish-article-cover.mjs`（dry-run 後 `--apply`）。
-  - 先 `ops-article.mjs accepted --article=<id>`（已是 accepted 也沒關係）；`routeMode` 是 `hub-landing` 時做第 10 步的 `--set-landing`（已經掛好會回 `landing-already-set`，不用 apply）；接 produce 第 11～14 步。
+  - 先 `ops-article.mjs accepted --article=<id>`（已是 accepted 也沒關係），接 produce 第 11～14 步（地點主頁的入口文章設定在第 11 步裡）。
 
 ### catch-up：補登記
 

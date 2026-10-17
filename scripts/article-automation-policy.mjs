@@ -918,6 +918,22 @@ export function decideHubLandingAction({batch, hub, article, articleDraftExists 
   return {action: 'set-landing', articleId: item.documentId}
 }
 
+/**
+ * 開放索引失敗時撤回入口文章設定，讓已上線的主題頁恢復原本的索引狀態。
+ * 只撤回本批地點主頁、而且那篇還沒開放索引；已經開放索引的不撤。
+ */
+export function decideHubLandingRollback({batch, hub, article}) {
+  const item = (batch?.items ?? []).find((candidate) => candidate?.routeMode === 'hub-landing')
+  if (!item) return {action: 'blocked-no-landing-item'}
+  if (!hub) return {action: 'blocked-hub-missing', articleId: item.documentId}
+  if (!hub.landingArticleId) return {action: 'landing-already-unset', articleId: item.documentId}
+  if (hub.landingArticleId !== item.documentId) {
+    return {action: 'blocked-landing-conflict', articleId: item.documentId, currentLandingId: hub.landingArticleId}
+  }
+  if (article?.noindex === false) return {action: 'blocked-article-indexable', articleId: item.documentId}
+  return {action: 'unset-landing', articleId: item.documentId}
+}
+
 export function getArticlePathFromSnapshot(snapshot) {
   const hub = snapshot?.hub
   if (!hub) return null
