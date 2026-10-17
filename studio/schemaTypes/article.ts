@@ -88,7 +88,8 @@ export const article = defineType({
             defineField({
               name: 'sourcePageUrl',
               title: '來源頁',
-              description: '維基共享資源檔案頁、圖庫單張素材頁或觀光協會素材頁；自製圖與 AI 圖留空。',
+              description:
+                '維基共享資源檔案頁、圖庫單張素材頁或觀光協會素材頁；自製圖與 AI 圖留空。',
               type: 'url',
               validation: (rule) => rule.uri({scheme: ['https']}),
             }),
@@ -174,20 +175,27 @@ export const article = defineType({
     defineField({
       name: 'months',
       title: '相關月份',
-      description: '這篇特別適合哪幾個月閱讀，例如 12 月天氣頁填 12。月份頁收錄滿 5 個項目才會建立。',
+      description:
+        '這篇特別適合哪幾個月閱讀，例如 12 月天氣頁填 12。月份頁收錄滿 5 個項目才會建立。',
       type: 'array',
       of: [{type: 'number'}],
       validation: (rule) =>
-        rule.unique().custom((value) =>
-          (value ?? []).every((month) => Number.isInteger(month) && month >= 1 && month <= 12)
-            ? true
-            : '相關月份必須是 1～12 的整數',
-        ),
+        rule
+          .unique()
+          .custom((value) =>
+            (value ?? []).every(
+              (month) =>
+                typeof month === 'number' && Number.isInteger(month) && month >= 1 && month <= 12,
+            )
+              ? true
+              : '相關月份必須是 1～12 的整數',
+          ),
     }),
     defineField({
       name: 'tags',
       title: '橫向情境 Tag',
-      description: '從已建立的受控 Tag 選擇（例如親子、冬季、自駕），不自行輸入近義詞。Tag 不會改變文章正式網址。',
+      description:
+        '從已建立的受控 Tag 選擇（例如親子、冬季、自駕），不自行輸入近義詞。Tag 不會改變文章正式網址。',
       type: 'array',
       of: [{type: 'reference', to: [{type: 'tag'}]}],
       validation: (rule) => rule.unique(),

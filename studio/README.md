@@ -2,13 +2,13 @@
 
 Sanity 是存放文章、主題中心、作者與情境 Tag 的後台；網站建置時從這裡讀取內容。
 
-## 尚未建立 Sanity 專案
+## Sanity 專案
 
-目前只有 schema（`schemaTypes/`）與腳本，還沒有實際的 Sanity 專案。Darren 建立專案後：
-
-1. 在 `studio/.env` 寫入 `SANITY_STUDIO_PROJECT_ID=<專案 ID>` 與 `SANITY_STUDIO_DATASET=production`（這個檔案不會進 Git）。
-2. 在專案根目錄的環境變數（本機 `.env`、Cloudflare 建置設定）寫入同一個 `SANITY_PROJECT_ID` 與 `SANITY_DATASET`，網站才會抓到內容。
-3. `cd studio && npm install && npm run dev` 可在本機開啟後台。
+- 專案：日本旅遊長尾站，專案 ID `e8ctf7ee`（2026-10-17 建立，Darren 的 Sanity 帳號）。管理頁：<https://www.sanity.io/manage/project/e8ctf7ee>
+- Dataset：`production`，公開（網站建置時不帶權杖直接讀取，與好材誌相同）。公開代表任何人都讀得到這個 dataset 的正式文件，不要把不該公開的資料放進來。
+- 本機：在 `studio/.env` 寫入 `SANITY_STUDIO_PROJECT_ID=e8ctf7ee` 與 `SANITY_STUDIO_DATASET=production`（這個檔案不會進 Git），再 `cd studio && npm install && npm run dev` 開啟後台（http://localhost:3333 已加入 CORS）。
+- 網站：根目錄的 `SANITY_PROJECT_ID`、`SANITY_DATASET` 等第一篇文章準備發布時再設定（本機 `.env` 與 Cloudflare 建置設定）。設定後結構化資料檢查會要求至少一篇文章，沒有文章時建置會失敗。
+- 雲端 routine 的寫入權杖 `SANITY_AUTH_TOKEN` 由 Darren 在管理頁的 API → Tokens 建立（Editor 權限），只放進雲端環境的機密設定，不寫進 Git、文件或聊天。
 
 ## 文件類型
 

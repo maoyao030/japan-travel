@@ -49,7 +49,8 @@ export const hub = defineType({
         rule.custom((value, context) => {
           if (!value) return true
           if (value._ref === context.document?._id) return '不能把自己設為父主題中心'
-          if (context.document?.category === 'places') return '地點分類不使用子主題中心，請改填所屬地區'
+          if (context.document?.category === 'places')
+            return '地點分類不使用子主題中心，請改填所屬地區'
           return true
         }),
     }),
@@ -88,7 +89,8 @@ export const hub = defineType({
       hidden: ({document}) => document?.category !== 'places' || document?.placeKind !== 'place',
       validation: (rule) =>
         rule.custom((value, context) => {
-          if (context.document?.category !== 'places' || context.document?.placeKind !== 'place') return true
+          if (context.document?.category !== 'places' || context.document?.placeKind !== 'place')
+            return true
           if (!value) return '請選擇所屬地區'
           if (value._ref === context.document?._id) return '不能把自己設為所屬地區'
           return true
@@ -120,11 +122,16 @@ export const hub = defineType({
       of: [{type: 'number'}],
       hidden: ({document}) => document?.category !== 'places',
       validation: (rule) =>
-        rule.unique().custom((value) =>
-          (value ?? []).every((month) => Number.isInteger(month) && month >= 1 && month <= 12)
-            ? true
-            : '適合月份必須是 1～12 的整數',
-        ),
+        rule
+          .unique()
+          .custom((value) =>
+            (value ?? []).every(
+              (month) =>
+                typeof month === 'number' && Number.isInteger(month) && month >= 1 && month <= 12,
+            )
+              ? true
+              : '適合月份必須是 1～12 的整數',
+          ),
     }),
     defineField({
       name: 'landingArticle',
@@ -190,8 +197,7 @@ export const hub = defineType({
     defineField({
       name: 'publicationState',
       title: '頁面狀態',
-      description:
-        '設為可發布即會建立正式頁面，不再要求湊滿文章數；子主題也不需要等父主題先發布。',
+      description: '設為可發布即會建立正式頁面，不再要求湊滿文章數；子主題也不需要等父主題先發布。',
       type: 'string',
       options: {
         list: [

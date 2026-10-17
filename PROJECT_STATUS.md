@@ -308,3 +308,23 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 做自動化評估第七節工具清單第 1 項：定地點共用事實表的格式（含變動類型與下次查核），把禮文島兩套事實編號合併成一份。
+
+## 2026-10-17 Claude Code（地端）：建立 Sanity 專案（分支 `plan/wakkanai-rishiri-rebun`）
+
+### 已完成
+
+- Darren 要求建立 Sanity。用本機已登入 Darren 帳號的 Sanity CLI 建立專案「日本旅遊長尾站」，專案 ID `e8ctf7ee`，dataset `production`（公開，與好材誌相同，網站不帶權杖讀取）。localhost:3333 已在 CORS。
+- 本機 `studio/.env` 已寫入專案 ID（不進 Git）。Studio 的 schema 驗證通過、`sanity build` 通過。
+- Studio 型別檢查原本有 4 個錯誤（相關月份、適合月份的驗證沒有先確認是數字），已修正；順便用專案的 Prettier 設定整理了 `article.ts`、`hub.ts` 的格式。
+- `studio/README.md`、`DEPLOYMENT.md` 改成記錄實際的專案。
+
+### 刻意還沒做
+
+- 網站根目錄的 `SANITY_PROJECT_ID` 沒有設定：設定後結構化資料檢查會要求至少一篇文章，現在設定會讓建置失敗。等第一篇文章準備發布時再設定（本機 `.env` 與 Cloudflare）。
+- 雲端 routine 的寫入權杖 `SANITY_AUTH_TOKEN`：屬於機密，由 Darren 在 Sanity 管理頁建立（Editor 權限），放進雲端環境設定。
+- 線上版後台（`*.sanity.studio`）沒有部署，要不要部署由 Darren 決定。
+- 維護資料改放 Sanity 的提議 Darren 尚未正式確認。要注意 `production` 是公開的，執行鎖、事實查核狀態這類維護資料若放進 Sanity，應另開私有 dataset。
+
+### 唯一下一步
+
+- 請 Darren 決定四件事（抽查方式、短頁門檻、觸發點、每天篇數）與維護資料是否改放 Sanity，一起寫進規則。

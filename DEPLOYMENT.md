@@ -1,6 +1,6 @@
 # 部署設定（尚未部署）
 
-本站沿用好材誌的部署方式：Cloudflare Workers Builds 連接 GitHub repo，每次推送自動跑測試、建置，通過後才部署。Darren 尚未建立 Cloudflare 專案、Sanity 專案與網域，本文件先記錄設定基準，實際建立時照著做。
+本站沿用好材誌的部署方式：Cloudflare Workers Builds 連接 GitHub repo，每次推送自動跑測試、建置，通過後才部署。Sanity 專案已於 2026-10-17 建立（專案 ID `e8ctf7ee`、dataset `production` 公開，見 `studio/README.md`）；Cloudflare 專案與網域尚未建立，本文件先記錄設定基準，實際建立時照著做。
 
 ## 自動流程
 
