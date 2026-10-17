@@ -455,3 +455,27 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 把 `plan/wakkanai-rishiri-rebun` 合併到 `main`（Darren 同意後）。
+
+## 2026-10-17 Claude Code（地端）：routine 審查與修正（分支 `plan/wakkanai-rishiri-rebun`）
+
+### Darren 的指示
+
+- 合併前用一個子代理驗證流程，再用 Fable 子代理檢視能不能真的執行。
+
+### 審查結果與修正
+
+- 驗證子代理：2 個會卡住的問題、12 個該修的問題；Fable 檢視：現在還不能跑，原因多半是 Darren 才能做的設定。
+- 已修：補內連無限重試（改成目標與來源都上線才補、補不上用 `ops-links.mjs skip` 略過並寫例外）、續做重複定稿、雲端缺 `.tmp/`、等核准的群卡住維護（每群每天只讀一次規劃總表）、意見蓋過「已核准」、每週摘要重複挑中、CI 失敗直接停放（改成上稿失敗連續 3 次才停放）、父 Hub 讀錯文章、索引狀態過期、補內連回復路徑錯誤、規劃太晚觸發（排到生產前、每天最多一次）、子 Hub（自動化先拒絕）、延後計數不歸零、補登記、移除的事實、CLI 參數與 batchId。
+- D1 新增 0005（`pending_links.skipped_at`、`skip_reason`、`article_status.publish_failures`），已套用到線上。
+- 文件：Skill 全文改寫（前置檢查、收尾、rebase 衝突處理）、架構文件與流程圖、routine 提示（環境變數、允許的工具、連接器、先手動跑一次）、`AGENTS.md` 加 routine 例外。Studio 專案 ID 預設 `e8ctf7ee`；`package.json` 要求 Node 22.18 以上。
+- 雲端環境 `japan-travel-publisher` 已加 `SANITY_PROJECT_ID`、`SANITY_DATASET`。
+- 測試 141 項通過。
+
+### 尚未完成（Darren）
+
+- 合併到 `main`；建立 Sanity 寫入權杖並貼進雲端環境的 `SANITY_AUTH_TOKEN`；照 `routine-prompt.md` 建 routine；看過品質樣本後決定頻率。
+- 跨群回補的執行程式還沒做（routine 不會挑這類工作）。
+
+### 唯一下一步
+
+- 把 `plan/wakkanai-rishiri-rebun` 合併到 `main`（Darren 同意後）。

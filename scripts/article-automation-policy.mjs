@@ -513,6 +513,9 @@ function validateQueueBatch(queue, batch, index, seen) {
     if (!isHubLanding && !isParentDirect && !isChildHubItem) {
       issues.push(`${itemLabel}.routeMode 不是允許的文章路徑類型`)
     }
+    if (isChildHubItem) {
+      issues.push(`${itemLabel} 自動化流程還不支援子 Hub（沒有建立子 Hub 的步驟）；需要時先在一般 session 補上流程`)
+    }
     if (isChildHubItem && batch?.categorySlug === PLACES_CATEGORY_SLUG) {
       issues.push(`${itemLabel} 地點分類不使用子 Hub；需要更細時升格成獨立地點，或在第三層用連字號代稱`)
     }

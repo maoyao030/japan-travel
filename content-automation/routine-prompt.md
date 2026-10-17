@@ -2,10 +2,12 @@
 
 建立 Claude Code 雲端 routine 時，把下方分隔線以後的全部內容貼進提示欄位。routine 的設定：
 
-- 環境：`japan-travel-publisher`（網路 Full；環境變數 `OPS_DB_TRANSPORT=http`、`NODE_USE_ENV_PROXY=1`；Cloudflare 權杖在 network secret）。另外要加 `SANITY_AUTH_TOKEN`（Sanity 寫入權杖，由 Darren 建立）。
+- 環境：`japan-travel-publisher`（網路 Full；Cloudflare 權杖在 network secret）。環境變數：`OPS_DB_TRANSPORT=http`、`NODE_USE_ENV_PROXY=1`、`SANITY_PROJECT_ID=e8ctf7ee`、`SANITY_DATASET=production`（讓網站 CI 真的建置文章，不是空站），以及 `SANITY_AUTH_TOKEN`（Sanity 寫入權杖，由 Darren 建立）。不要設 `NODE_ENV`。
 - Repository：`maoyao030/japan-travel`，分支 `main`。規則與程式要先合併到 `main`，routine 才看得到。
 - 頻率：Darren 看過品質樣本後決定（每天篇數會寫進 `content-automation/article-queue.json` 的 `maxArticlesPerDay`，啟動間隔要和好材誌的 routine 錯開）。
-- 連接器：Google Sheets、Google Calendar（讀規劃總表、寫例外、建提醒）。
+- 允許的工具：除了預設的 Bash、Read、Write、Edit、Glob、Grep，還要開 `Agent`（派作者與驗收子代理）、`Skill`、`WebFetch`、`WebSearch`。
+- 連接器：Google Sheets、Google Calendar（讀規劃總表、寫例外、建提醒），建 routine 時要掛上。
+- 建好後先手動跑一次，確認能推送到 `main`、Node 至少 22.18、`python3` 可用，再開排程。
 
 ---
 

@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: '日本旅遊長尾站',
 
-  // Sanity 專案建立後，在 studio/.env 設 SANITY_STUDIO_PROJECT_ID 與 SANITY_STUDIO_DATASET。
-  projectId: process.env.SANITY_STUDIO_PROJECT_ID ?? 'replace-with-project-id',
+  // 專案 ID 不是機密；沒有 studio/.env 的雲端 routine 直接用預設值。
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID ?? 'e8ctf7ee',
   dataset: process.env.SANITY_STUDIO_DATASET ?? 'production',
 
   plugins: [structureTool(), visionTool()],

@@ -58,6 +58,8 @@ npx wrangler d1 execute japan-travel-ops --remote -c d1/wrangler.jsonc --command
 | `node scripts/ops-article.mjs start\|accepted\|published\|fail\|unpark\|list` | 文章生產狀態 |
 | `node scripts/ops-group.mjs evaluate --group=<id> --auto-approve-on=<日期> --sheet-status=<狀態> --sheet-comment=<意見>` | 依規劃總表的回覆判斷旅行群是否核准 |
 | `node scripts/routine-next-action.mjs --sanity=.tmp/queue-state.json` | 決定這一輪做哪一件事 |
+| `node scripts/ops-links.mjs register\|ready\|linked\|skip` | 待補內連：登記、列出可補、標記已補、補不上時略過 |
+| `node scripts/ops-facts.mjs sync\|due\|checked` | 地點事實表同步、到期清單（依來源網址分組）、重查紀錄 |
 
 鎖的逾時時間讀 `content-automation/article-queue.json` 的 `lockStaleAfterHours`。
 
@@ -84,6 +86,8 @@ npx wrangler d1 execute japan-travel-ops --remote -c d1/wrangler.jsonc --command
 | `exceptions` | 要 Darren 知道或處理的事，每週同步到規劃總表 |
 | `sheet_notices` | 已寫進規劃總表的通知（例如即將重查摘要），避免重複寫同一列 |
 | `group_status` | 旅行群的核准狀態：等核准、已核准（Darren 或默許）、要改、暫停 |
+
+`pending_links.skipped_at`、`skip_reason`：補不上而略過的連結，之後不再挑它。`article_status.publish_failures`：定稿、上稿、CI 失敗的次數，連續 3 次停放。
 
 `article_status.first_deferred_at` 記第一次因來源打不開而延後的時間，連續延後超過 3 天就停放。
 

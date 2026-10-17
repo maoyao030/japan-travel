@@ -401,3 +401,9 @@ test('同一份規格涵蓋多個 Hub 時，規劃頁數只數屬於本批的保
   }
   assert.deepEqual(validateBatchPlanningRecords(batch, {pageSpecs, candidateRegistry}), [])
 })
+
+test('自動化流程還不支援子 Hub', () => {
+  const batch = createBatch({categorySlug: 'guides', parentHubId: 'hub-guides-ginzan-onsen', allowedPathPrefix: '/guides/ginzan-onsen/'})
+  const issues = validateArticleQueue(createQueue([{...batch, items: [createItem({categorySlug: 'guides', routeMode: 'child-hub-article', parentHubSlug: 'ginzan-onsen'})]}]))
+  assert.match(issues.join('\n'), /還不支援子 Hub/)
+})

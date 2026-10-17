@@ -41,7 +41,7 @@ export function buildFactRecords({factTables, outlines}) {
         changeType: fact.changeType ?? 'stable',
         sourceUrl: fact.sourceUrl ?? '',
         evidencePath,
-        lastCheckedAt: fact.checkedAt,
+        lastCheckedAt: fact.checkedAt ?? '1970-01-01',
         nextCheckAt: fact.decision === 'removed' || fact.changeType === 'stable' ? null : fact.nextCheckAt ?? null,
         status: fact.decision === 'removed' ? 'removed' : 'ok',
       })

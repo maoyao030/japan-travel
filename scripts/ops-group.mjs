@@ -21,8 +21,8 @@ export function decideGroupState({current = null, sheetStatus = '', sheetComment
   const comment = (sheetComment ?? '').trim()
   if (current?.state === 'approved') return {state: 'approved', approvedBy: current.approved_by, changed: false}
   if (status === '暫停') return {state: 'paused', note: comment || 'Darren 把狀態改成暫停'}
+  if (status === '已核准') return {state: 'approved', approvedBy: 'darren', note: comment || null}
   if (status === '要改' || comment) return {state: 'changes-requested', note: comment || 'Darren 把狀態改成要改'}
-  if (status === '已核准') return {state: 'approved', approvedBy: 'darren'}
   if (exception) return {state: 'awaiting-approval', note: `例外不默許：${exception}`}
   if (today >= autoApproveOn) return {state: 'approved', approvedBy: 'default'}
   return {state: 'awaiting-approval', note: `自動核准日 ${autoApproveOn}`}

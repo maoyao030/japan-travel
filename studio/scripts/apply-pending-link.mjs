@@ -5,7 +5,8 @@
  *
  * 用法（在 studio/ 目錄）：
  *   npx sanity exec scripts/apply-pending-link.mjs --with-user-token -- --source=<article-id> --target=<article-id> --target-path=<網址> --anchor=<錨文字> [--sentence=<連結句>] [--apply]
- *   npx sanity exec scripts/apply-pending-link.mjs --with-user-token -- --rollback=<recovery.json>
+ *   npx sanity exec scripts/apply-pending-link.mjs --with-user-token -- --rollback=<apply 輸出的 recoveryFile>
+ * 同一篇文章補了好幾個連結又要回復時，從最後補的那一個開始依序回復（每次回復都會核對目前正文）。
  */
 import {createHash} from 'node:crypto'
 import {mkdir, readFile, writeFile} from 'node:fs/promises'
@@ -38,7 +39,8 @@ const articleId = (value) => (value.startsWith('article-') ? value : `article-${
 const client = getCliClient({apiVersion: '2026-08-29'})
 
 if (typeof options.rollback === 'string') {
-  const recoveryPath = path.resolve(process.cwd(), options.rollback)
+  // 復原檔路徑可以是絕對路徑（apply 輸出的就是），或相對於專案根目錄。
+  const recoveryPath = path.isAbsolute(options.rollback) ? options.rollback : path.resolve(projectRoot, options.rollback)
   const recovery = JSON.parse(await readFile(recoveryPath, 'utf8'))
   const current = await client.fetch(`{"article": *[_id == $id][0]{_id,_rev,body}, "draft": *[_id == $draftId][0]{_id}}`, {
     id: recovery.sourceDocumentId,
@@ -91,7 +93,8 @@ if (!options.apply) {
   process.exit(0)
 }
 
-const recoveryFile = path.join(projectRoot, '.tmp', 'auto-publisher', 'link-recovery', `${options.source}-${update.blockKey}.json`)
+// 每個連結一個復原檔（同一段落補兩個連結也不會互相覆蓋）。同一篇補了多個連結時，回復要從最後補的那個開始。
+const recoveryFile = path.join(projectRoot, '.tmp', 'auto-publisher', 'link-recovery', `${options.source}-${update.linkMarkKey}.json`)
 const recovery = {
   schemaVersion: 1,
   sourceDocumentId: sourceId,
@@ -108,4 +111,4 @@ await client.patch(sourceId).ifRevisionId(source._rev).set({body: update.body}).
 
 const verified = await client.fetch('*[_id == $id][0]{_rev, body}', {id: sourceId})
 if (bodyHash(verified?.body) !== recovery.expectedAppliedBodyHash) throw new Error('寫入後的正文與預期不一致，請用 --rollback 回復')
-console.log(JSON.stringify({...result, verifiedRevision: verified._rev, recoveryFile: path.relative(projectRoot, recoveryFile)}, null, 2))
+console.log(JSON.stringify({...result, verifiedRevision: verified._rev, recoveryFile}, null, 2))

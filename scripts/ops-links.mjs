@@ -5,6 +5,7 @@
  *   node scripts/ops-links.mjs register --article=<剛上線的文章> --outline=<群大綱 JSON> --sanity=.tmp/queue-state.json
  *   node scripts/ops-links.mjs ready --sanity=.tmp/queue-state.json      列出目標已上線、可以補的連結
  *   node scripts/ops-links.mjs linked --id=<link_id>                    補好後標記
+ *   node scripts/ops-links.mjs skip --id=<link_id> --reason=<原因>       補不上時略過，寫一筆例外，之後不再挑它
  * 加 --local 改用本機資料庫。
  */
 import {readFile} from 'node:fs/promises'
@@ -33,7 +34,7 @@ export async function registerPendingLinks({execute, links, now = new Date()}) {
 
 /** 目標文章已開放索引、來源文章也已開放索引，而且還沒補的連結。 */
 export async function listReadyLinks({execute, publishedArticleIds}) {
-  const [rows] = await execute(['SELECT * FROM pending_links WHERE linked_at IS NULL ORDER BY link_id'])
+  const [rows] = await execute(['SELECT * FROM pending_links WHERE linked_at IS NULL AND skipped_at IS NULL ORDER BY link_id'])
   const published = new Set(publishedArticleIds)
   return rows.filter((row) => published.has(row.to_article_id) && published.has(row.from_article_id))
 }
@@ -45,6 +46,20 @@ export async function markLinked({execute, linkId, now = new Date()}) {
     `SELECT link_id, linked_at FROM pending_links WHERE link_id = ${linkId}`,
   ])
   return results[1]?.[0] ?? null
+}
+
+/** 找不到連結句或錨文字不唯一時略過：不改字，交給人處理。 */
+export async function skipLink({execute, linkId, reason, now = new Date()}) {
+  if (!Number.isInteger(linkId)) throw new Error('linkId 必須是整數')
+  const at = sqlLiteral(now.toISOString())
+  const results = await execute([
+    `UPDATE pending_links SET skipped_at = ${at}, skip_reason = ${sqlLiteral(reason)} WHERE link_id = ${linkId} AND linked_at IS NULL AND skipped_at IS NULL`,
+    `INSERT INTO exceptions (created_at, kind, subject, detail, action_needed)
+      SELECT ${at}, 'other', from_article_id || ' → ' || to_article_id, ${sqlLiteral(`補內連略過：${reason}`)}, '連結句要人工調整後重新登記'
+      FROM pending_links WHERE link_id = ${linkId} AND skipped_at = ${at}`,
+    `SELECT link_id, skipped_at, skip_reason FROM pending_links WHERE link_id = ${linkId}`,
+  ])
+  return results[2]?.[0] ?? null
 }
 
 async function publishedIdsFrom(sanityStatePath) {
@@ -81,7 +96,14 @@ async function runCli() {
     if (!row?.linked_at) process.exitCode = 1
     return
   }
-  throw new Error('用法：ops-links.mjs register|ready|linked ...')
+  if (command === 'skip') {
+    if (typeof options.reason !== 'string') throw new Error('skip 必須提供 --reason')
+    const row = await skipLink({execute, linkId: Number(options.id), reason: options.reason})
+    console.log(JSON.stringify(row, null, 2))
+    if (!row?.skipped_at) process.exitCode = 1
+    return
+  }
+  throw new Error('用法：ops-links.mjs register|ready|linked|skip ...')
 }
 
 const isCli = process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url

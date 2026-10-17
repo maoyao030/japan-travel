@@ -115,3 +115,8 @@
 - routine 每一輪依 `japan-travel-auto-publisher` 執行：拿 D1 執行鎖 → 讀 Sanity 與 D1 狀態 → `scripts/routine-next-action.mjs` 決定只做一件事 → 執行 → 記錄 → commit → 放鎖。整體設計見 `content-automation/routine-architecture.md`，routine 提示見 `content-automation/routine-prompt.md`。
 - routine 只有在「規劃下一群」時可以 commit `content-planning/` 與 `article-queue.json`，而且 `npm run planning:check` 與 `npm run queue:validate` 都要通過；其他時候不改程式、清單、Skill 或規則文件。
 - 上一段「Skill 路由（2026-10-16 建立）」裡「自動發布 Skill 尚未建立」的說明，由本段取代。
+
+## routine 例外（2026-10-17）
+
+- 雲端 routine 依 `japan-travel-auto-publisher` 執行時，本檔「每個任務在自己的分支做」「`.agents/working/claude-code.md` 工作檔」「每次最終回覆格式」三條不適用：routine 直接在 `main` 提交 Skill 允許的路徑，不寫工作檔，用 Skill 的「結束回報」。
+- 人工 session 仍照原本的規則。
