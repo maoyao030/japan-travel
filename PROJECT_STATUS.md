@@ -571,3 +571,23 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 把稚內群寫進文章清單並建好 Sanity 與分類的前置（之後第一篇才能開始寫）。
+
+## 2026-10-18 Claude Code（地端）：寫作調性研究（分支 `plan/wakkanai-outline`）
+
+### Darren 的要求
+
+- 研究競品旅遊網站的寫法，找出寫出好運日本行那種調性、但不寫成本站去過的方法，先試寫再自己比對。
+
+### 已完成
+
+- 看了好運日本行（GLTJP，地球の歩き方經營）、tsunagu Japan、JNTO、北海道觀光機構、Funliday 的口吻與結構。
+- 寫法草案「導覽編輯口吻」：`content-experiments/voice-study-2026-10-18/style-guide-draft.md`。
+- 兩輪盲測（評審子代理對照競品）：新口吻四段都贏過現行「旅行手札」，實用性也較高；修掉評審抓到的問題後定稿 `final-samples.md`。報告見同資料夾 `README.md`。
+
+### 尚未決定（等 Darren）
+
+- 要不要把「導覽編輯口吻」定成正式規則，取代 `voice-and-seo.md` 的「旅行手札」。
+
+### 唯一下一步
+
+- Darren 看 `content-experiments/voice-study-2026-10-18/final-samples.md` 決定口吻。
