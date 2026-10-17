@@ -6,10 +6,6 @@ import {spawnSync} from 'node:child_process'
 import test from 'node:test'
 
 import {
-  acquireAutoPublisherLock,
-  releaseAutoPublisherLock,
-} from '../scripts/manage-auto-publisher-lock.mjs'
-import {
   BOOKING_CHANNELS,
   CATEGORY_SLUGS,
   findQueueItem,
@@ -372,29 +368,6 @@ test('Sanity 快照與文章封包必須和清單一致才能開放索引', () =
     validateStandingApproval({...manifest, targetUrl: '/places/other/'}, queue, item).join('\n'),
     /文章封包網址與清單不一致/,
   )
-})
-
-test('執行鎖同一時間只給一個執行者，逾時才能接手', async () => {
-  const root = await mkdtemp(path.join(tmpdir(), 'japan-travel-lock-'))
-  const lockPath = path.join(root, 'auto-publisher.lock')
-  try {
-    const first = await acquireAutoPublisherLock({lockPath, staleAfterHours: 12, ownerLabel: 'first'})
-    assert.equal(first.status, 'acquired')
-
-    const second = await acquireAutoPublisherLock({lockPath, staleAfterHours: 12, ownerLabel: 'second'})
-    assert.equal(second.status, 'busy')
-
-    const later = new Date(Date.now() + 13 * 60 * 60 * 1000)
-    const takeover = await acquireAutoPublisherLock({lockPath, staleAfterHours: 12, ownerLabel: 'third', now: later})
-    assert.equal(takeover.status, 'acquired')
-    assert.equal(takeover.owner?.replacedStaleOwner?.ownerLabel, 'first')
-
-    assert.equal((await releaseAutoPublisherLock({lockPath, token: 'wrong'})).status, 'token-mismatch')
-    assert.equal((await releaseAutoPublisherLock({lockPath, token: takeover.token})).status, 'released')
-    assert.equal((await releaseAutoPublisherLock({lockPath, token: takeover.token})).status, 'missing')
-  } finally {
-    await rm(root, {recursive: true, force: true})
-  }
 })
 
 function placeEntryItem(overrides: AnyRecord = {}): AnyRecord {

@@ -8,3 +8,4 @@
   - `keywordValidation.provider` 沒有連 Ahrefs 時只能填 `SERP observation`，`ahrefsVerified` 必須是 false；`serpIntentConfirmed` 要確認搜尋結果是日本而非台灣同名地名。
 - `publicationCadence`：Darren 於 2026-10-16 決定每 3 小時一輪、每輪 1 篇，每日上限 8 篇。
 - `auto-publisher-run-log.md`：routine 啟用後才建立，每輪結束前更新。
+- 執行鎖、每輪紀錄、停放與事實查核狀態放在維護資料庫（Cloudflare D1），每輪開頭用 `npm run queue:lock -- acquire`、`npm run ops:run -- start` 記錄，結尾放鎖並記錄結果；每週用 `npm run ops:sheet-sync -- collect` 同步到規劃總表。細節見 `d1/README.md`。

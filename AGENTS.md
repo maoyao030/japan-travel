@@ -101,5 +101,5 @@
 - 一直在變的維護狀態放 Cloudflare D1 `japan-travel-ops`（私有）：執行鎖、每輪紀錄、文章的生產輪數與停放、事實查核狀態與到期日、事實被哪幾頁用到、重查紀錄、待補內連、跨群回補、例外。
 - Git 放規則、規劃、全站地點清單與研究證據；Sanity（公開）放網站內容與發布狀態；Google Sheet 是給 Darren 看的窗口。Sanity 免費方案只能開公開資料庫，不放維護資料。
 - 事實的主張與原文摘錄在 Git，查核狀態在 D1，兩邊用同一個編號（`<地點>:F12`）對應。
-- 執行鎖改用 D1 的 `run_lock`；`scripts/manage-auto-publisher-lock.mjs` 把鎖放在 `.git`，雲端每次全新下載時無效，接自動發布前要改寫。
-- 結構變更一律新增 `d1/migrations/` 的編號檔案。雲端 routine 用 `CLOUDFLARE_API_TOKEN`（只開 D1 編輯權限）與 `CLOUDFLARE_ACCOUNT_ID` 連線，權杖由 Darren 建立，不進 Git。細節見 `d1/README.md`。
+- 執行鎖用 D1 的 `run_lock`（`scripts/manage-auto-publisher-lock.mjs`，2026-10-17 從 `.git` 改過來）；每輪開始與結束用 `scripts/ops-run.mjs` 記錄；每週用 `scripts/ops-sheet-sync.mjs` 把例外與即將重查的事實同步到規劃總表。
+- 結構變更一律新增 `d1/migrations/` 的編號檔案。雲端 routine 用 `CLOUDFLARE_API_TOKEN`（只開 D1 編輯權限）連線，帳號 ID 寫在 `d1/wrangler.jsonc`；權杖由 Darren 建立，不進 Git。細節見 `d1/README.md`。

@@ -3,6 +3,8 @@
 {
   "$schema": "../node_modules/wrangler/config-schema.json",
   "name": "japan-travel-ops",
+  // 帳號 ID 不是機密；寫在這裡，雲端 routine 只需要 CLOUDFLARE_API_TOKEN。
+  "account_id": "6e2acd041446ebca7f3ae7f512500f3d",
   "compatibility_date": "2026-10-01",
   "d1_databases": [
     {

@@ -31,12 +31,35 @@ npx wrangler d1 execute japan-travel-ops --remote -c d1/wrangler.jsonc --command
 
 ## 雲端 routine 怎麼連
 
-雲端每次全新下載，沒有登入狀態，要在雲端環境的機密設定放兩個值，由 Darren 在 Cloudflare 建立：
+雲端每次全新下載，沒有登入狀態。帳號 ID 已寫在 `d1/wrangler.jsonc`，雲端環境只要多一個機密設定：
 
-- `CLOUDFLARE_API_TOKEN`：只開 D1 編輯權限的 API 權杖（Cloudflare 控制台 → My Profile → API Tokens → 自訂權杖，權限選 Account / D1 / Edit）。
-- `CLOUDFLARE_ACCOUNT_ID`：帳號 ID。
+- `CLOUDFLARE_API_TOKEN`：只開 D1 編輯權限的 API 權杖，由 Darren 建立（Cloudflare 控制台 → 右上角頭像 → My Profile → API Tokens → Create Token → Create Custom Token；Permissions 選 Account / D1 / Edit，Account Resources 選自己的帳號，不設 IP 限制）。
 
-權杖不寫進 Git、文件或聊天。
+權杖不寫進 Git、文件或聊天。wrangler 會自動讀這個環境變數。
+
+## 程式
+
+都透過 `scripts/ops-db.mjs` 呼叫 wrangler；加 `--local` 改用本機資料庫。
+
+| 指令 | 用途 |
+|---|---|
+| `node scripts/manage-auto-publisher-lock.mjs acquire --owner=<名稱>` | 搶執行鎖，成功回傳 token；有人持有時回 `busy`、結束碼 1 |
+| `node scripts/manage-auto-publisher-lock.mjs release --token=<token>` | 放開自己的鎖 |
+| `node scripts/manage-auto-publisher-lock.mjs status` | 看鎖目前是 `free`、`held` 或 `stale` |
+| `node scripts/ops-run.mjs start --kind=produce --article=<文章>` | 記錄一輪開始，回傳 runId |
+| `node scripts/ops-run.mjs finish --run=<runId> --result=<結果>` | 記錄一輪結束 |
+| `node scripts/ops-sheet-sync.mjs collect --out=.tmp/sheet-sync.json` | 整理要加進規劃總表「例外與更新」分頁的列 |
+| `node scripts/ops-sheet-sync.mjs mark --from=.tmp/sheet-sync.json` | 試算表寫入成功後，標記已同步 |
+
+鎖的逾時時間讀 `content-automation/article-queue.json` 的 `lockStaleAfterHours`。
+
+## 每週同步到規劃總表
+
+試算表由 routine 用 Google Sheets 連接器寫入，程式本身不碰 Google 權杖：
+
+1. `node scripts/ops-sheet-sync.mjs collect --out=.tmp/sheet-sync.json`。它會先檢查 routine 是不是太久沒跑（超過啟動間隔的兩倍沒有新紀錄，就新增一筆「routine 沒在跑」的例外），再列出還沒同步的例外，以及未來 30 天到期的事實（每個地點一列，同一個地點同一個月份只列一次）。
+2. 把輸出的 `appendRows` 附加到 `spreadsheetId` 試算表 `sheetName` 分頁的最後一列之後（先讀 `例外與更新!A:F` 找到最後一列）。
+3. 寫入成功並讀回確認後，執行 `node scripts/ops-sheet-sync.mjs mark --from=.tmp/sheet-sync.json`。寫入失敗就不要標記，下次會再列一次。
 
 ## 資料表
 
@@ -51,6 +74,7 @@ npx wrangler d1 execute japan-travel-ops --remote -c d1/wrangler.jsonc --command
 | `pending_links` | 待補內連：連結句已寫在正文，目標頁上線後只補連結 |
 | `backfill_tasks` | 跨群回補：舊地點的欄位、舊頁結尾的相關連結 |
 | `exceptions` | 要 Darren 知道或處理的事，每週同步到規劃總表 |
+| `sheet_notices` | 已寫進規劃總表的通知（例如即將重查摘要），避免重複寫同一列 |
 
 時間存 UTC 的 ISO 8601 字串，日期存 `YYYY-MM-DD`。
 

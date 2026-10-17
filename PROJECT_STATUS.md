@@ -352,3 +352,23 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 請 Darren 決定四件事：抽查方式、短頁門檻、觸發點、每天篇數。
+
+## 2026-10-17 Claude Code（地端）：執行鎖改用 D1、每輪紀錄與規劃總表同步（分支 `plan/wakkanai-rishiri-rebun`）
+
+### 已完成
+
+- `scripts/manage-auto-publisher-lock.mjs` 改寫：鎖放在 D1 的 `run_lock`，新增 `status` 指令；共用工具在 `scripts/ops-db.mjs`（透過 wrangler 執行 SQL，字串一律跳脫）。
+- 新增 `scripts/ops-run.mjs`（每輪開始與結束紀錄）與 `scripts/ops-sheet-sync.mjs`（整理例外與未來 30 天到期的事實，routine 用 Google Sheets 連接器寫入規劃總表後再標記已同步；routine 超過啟動間隔兩倍沒跑會自動新增例外）。
+- 新增 `d1/migrations/0002_sheet_notices.sql`（避免同一則到期通知重複寫入），已套用到線上與本機資料庫。
+- 帳號 ID 寫進 `d1/wrangler.jsonc`，雲端 routine 只需要 `CLOUDFLARE_API_TOKEN`。
+- 測試：舊的檔案鎖測試換成 `tests/ops-db.test.ts`，用 Node 內建 SQLite 跑同一份 migration（鎖、每輪紀錄、同步、routine 沒在跑）。`npm test` 118 項通過。
+- 實測：線上資料庫的搶鎖、第二輪 `busy`、放鎖、`status`、同步 `collect` 都正常；本機資料庫的每輪紀錄正常；在規劃總表寫入一列範例確認格式（日期維持文字、狀態下拉接受）後已刪除。
+- `d1/README.md` 補上程式與每週同步步驟；`AGENTS.md`、`DEPLOYMENT.md`、`.env.example`、`content-automation/README.md`、`package.json`（`ops:run`、`ops:sheet-sync`）跟著改。
+
+### 只有 Darren 能做
+
+- 建立 `CLOUDFLARE_API_TOKEN`（只開 Account / D1 / Edit），放進雲端 routine 環境的機密設定。Claude Code 不建立、不經手權杖。
+
+### 唯一下一步
+
+- 請 Darren 決定四件事：抽查方式、短頁門檻、觸發點、每天篇數。
