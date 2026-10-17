@@ -118,7 +118,7 @@
         "primaryTask": "讓旅客決定怎麼到稚內（飛機、JR 或巴士），並在機場、車站、渡輪站之間移動。",
         "mustAnswer": [
           "札幌到稚內 JR 與巴士要多久、要不要訂位",
-          "機場巴士只收現金、班機取消時停駛",
+          "機場巴士只收現金或 PayPay、班機取消時停駛",
           "JR 稚內站、巴士總站、渡輪站的位置關係"
         ],
         "sharedGuides": []
@@ -1094,7 +1094,7 @@
     {
       "articleId": "rebun-island-festival",
       "priority": 11,
-      "decision": "keep",
+      "decision": "merge",
       "pageType": "aspect-page",
       "aspect": "festival",
       "planningTitle": "禮文島祭典，敦盛草感謝祭、水產祭與花火大會",
@@ -1126,12 +1126,14 @@
           "serpNotes": ""
         }
       ],
-      "researchSources": "content-production/rebun-island/reference-review.md（事實 F1–F126，可直接分配）"
+      "researchSources": "content-production/rebun-island/reference-review.md（事實 F1–F126，可直接分配）",
+      "mergeInto": "rebun-island",
+      "mergeReason": "2026-10-18 地點研究：本主題事實少於 15 筆（天氣 9、祭典 5），依短頁規則併進禮文島主頁寫成一節"
     },
     {
       "articleId": "rebun-island-weather",
       "priority": 9,
-      "decision": "keep",
+      "decision": "merge",
       "pageType": "aspect-page",
       "aspect": "weather",
       "planningTitle": "禮文島天氣，每個月的氣溫與穿著",
@@ -1166,7 +1168,9 @@
           "serpNotes": ""
         }
       ],
-      "researchSources": "content-production/rebun-island/reference-review.md（事實 F1–F126，可直接分配）"
+      "researchSources": "content-production/rebun-island/reference-review.md（事實 F1–F126，可直接分配）",
+      "mergeInto": "rebun-island",
+      "mergeReason": "2026-10-18 地點研究：本主題事實少於 15 筆（天氣 9、祭典 5），依短頁規則併進禮文島主頁寫成一節"
     },
     {
       "articleId": "wakkanai-ferry",
