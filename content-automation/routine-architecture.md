@@ -4,6 +4,8 @@
 
 ## 流程圖
 
+可以直接在瀏覽器打開的版本：`content-automation/routine-flow.html`（需要網路載入 Mermaid）。
+
 ```mermaid
 flowchart TD
     T["排程觸發"] --> L{"拿 D1 執行鎖"}

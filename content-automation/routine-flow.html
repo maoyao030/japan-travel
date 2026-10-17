@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日本站 routine 流程圖</title>
+<style>
+  :root { --bg: #f6f7f9; --surface: #ffffff; --ink: #1b2330; --muted: #5b6676; --rule: #d9dee6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12161d; --surface: #1a2029; --ink: #e6e9ee; --muted: #9aa5b4; --rule: #2c3442; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.7 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; padding: 24px 16px 48px; }
+  .wrap { max-width: 1200px; margin: 0 auto; display: grid; gap: 16px; }
+  h1 { margin: 0; font-size: 26px; }
+  p { margin: 0; color: var(--muted); max-width: 70ch; }
+  .card { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px; overflow-x: auto; }
+  ol { margin: 0; padding-left: 22px; }
+  .mermaid { min-width: 900px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>日本站 routine 流程圖</h1>
+  <p>每次排程觸發只做一件事。拿到執行鎖、讀 Sanity 與 D1 狀態後，依下面 1～7 的順序挑第一件該做的事，做完一律收尾：記錄結果、commit、放開執行鎖。設計細節見 content-automation/routine-architecture.md。</p>
+  <div class="card">
+    <pre class="mermaid">
+flowchart TD
+    T["排程觸發"] --> L{"拿 D1 執行鎖"}
+    L -- "有人在跑" --> X["直接結束，不記錄"]
+    L -- "拿到鎖" --> C{"檢查清單與規劃檔"}
+    C -- "沒通過" --> CF["記錄失敗"]
+    C -- "通過" --> S["讀 Sanity 狀態"]
+    S --> N{"routine-next-action&lt;br/&gt;決定這一輪只做一件事"}
+
+    N -- "1 續做" --> R["接手已暫存 noindex 的文章"]
+    R --> P7
+    N -- "2 補內連" --> B["目標已上線的連結句加上連結&lt;br/&gt;不改字、先存復原檔"]
+    B --> BC{"網站 CI"}
+    BC -- "失敗" --> BR["用復原檔回復"]
+    BC -- "通過" --> BL["標記已補"]
+    N -- "3 核准檢查" --> G{"讀規劃總表那一群&lt;br/&gt;狀態與意見"}
+    G -- "核准或默許" --> N
+    G -- "要改、暫停、例外、未到期" --> GW["記錄等待"]
+
+    N -- "4 生產一篇" --> P1["開始寫，輪數加一"]
+    P1 --> P2["寫作 answer-first"]
+    P2 --> P3{"四層驗收"}
+    P3 -- "事實錯誤" --> F1["第 1 次：下一輪重寫&lt;br/&gt;第 2 次：停放並寫例外"]
+    P3 -- "大綱或分工有問題" --> F2["停放並寫例外"]
+    P3 -- "來源打不開" --> F3["延後一天&lt;br/&gt;連續 3 天就停放"]
+    P3 -- "通過" --> P4["定稿與選圖"]
+    P4 --> P5["Sanity 暫存，維持 noindex"]
+    P5 --> P7{"網站 CI"}
+    P7 -- "失敗" --> P8["維持 noindex&lt;br/&gt;下一輪續做"]
+    P7 -- "通過" --> P9["開放索引"]
+    P9 --> P10["登記已發布、待補內連、事實到期日"]
+
+    N -- "5 規劃下一群" --> PL["找相鄰的下一群、寫大綱&lt;br/&gt;更新規劃總表、日曆提醒 Darren"]
+    N -- "6 事實重查" --> RF["依來源網址分批重查&lt;br/&gt;改變了就寫例外"]
+    N -- "7 每週摘要" --> WS["例外與即將重查的事實&lt;br/&gt;同步到規劃總表"]
+    N -- "都沒有" --> I["略過"]
+
+    CF &amp; BR &amp; BL &amp; GW &amp; F1 &amp; F2 &amp; F3 &amp; P8 &amp; P10 &amp; PL &amp; RF &amp; WS &amp; I --> E["收尾：更新執行紀錄、commit 與 push&lt;br/&gt;記錄結果、放開執行鎖"]
+    </pre>
+  </div>
+  <div class="card">
+    <ol>
+      <li><b>續做</b>：上一輪暫存成 noindex 的文章，先做完。</li>
+      <li><b>補內連</b>：目標頁上線了，把舊文章的連結句加上連結，不改字。</li>
+      <li><b>核准檢查</b>：讀規劃總表，Darren 沒反對且到了自動核准日就默許。</li>
+      <li><b>生產一篇</b>：寫作、驗收、定稿、暫存、CI、開放索引；失敗依原因重寫、延後或停放。</li>
+      <li><b>規劃下一群</b>：這一區剩約 7 天的量時，找相鄰的下一群、寫大綱、提醒 Darren。</li>
+      <li><b>事實重查</b>：到期的事實依來源網址分批重查。</li>
+      <li><b>每週摘要</b>：例外與即將重查的事實同步到規劃總表。</li>
+    </ol>
+  </div>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs'
+  const dark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  mermaid.initialize({startOnLoad: true, theme: dark ? 'dark' : 'default', flowchart: {htmlLabels: true}})
+</script>
+</body>
+</html>
