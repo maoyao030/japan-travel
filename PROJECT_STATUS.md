@@ -409,3 +409,23 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 請 Darren 決定四件事：抽查方式、短頁門檻、觸發點、每天篇數。
+
+## 2026-10-17 Claude Code（地端）：雲端最終驗證與四個待決定事項（分支 `plan/wakkanai-rishiri-rebun`）
+
+### 已完成
+
+- 新開的雲端 session 完全照環境設定（`OPS_DB_TRANSPORT=http`、`NODE_USE_ENV_PROXY=1`、network secret），不手動加任何變數，`status`、`acquire`、`release` 全部通過，結論「通過」。維護資料庫維持用 D1，不改 Google Sheet。
+
+### Darren 的決定
+
+- **每天篇數與抽查方式**：先驗證到品質合格再決定。routine 在那之前不啟用；`content-automation/article-queue.json` 的每 3 小時一篇、每天 8 篇只是暫存值。
+- **資料太少的主題**：併進地點主頁寫成一節。門檻暫定為本主題事實少於 15 筆或預估不到 800 字（Claude Code 訂，稚內群寫完再調）。
+- **準備下一群的時機**：剩下的篇數約夠寫 7 天時（7 × 每天上限，上限未定前用 2 篇計算），取代原本的剩 10 篇。
+
+### 已寫入
+
+- 選題 Skill（`SKILL.md`、`selection-workflow.md`、`next-group.md`）、頁型、`AGENTS.md` 新增段落。
+
+### 唯一下一步
+
+- 做一篇給 Darren 驗收品質的樣本：把「禮文島交通」照新規則（來源分級、照大綱寫、分工規則）改完並跑完驗收，請 Darren 看是否達到可以開始自動化的品質。
