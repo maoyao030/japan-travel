@@ -6,7 +6,9 @@
  * - 面向是住宿（aspect stay）或地點條目（pageType place-entry）的文章必須有「訂房管道」與「查核日期／下次重查日」。
  * - 地點優先網址（2026-10-16）：地點分類不用子 Hub，地點條目是 Hub 入口文章 `/places/<地點>/`，
  *   面向頁是 `/places/<地點>/<面向>/`；網址最多三層。
- * - 關鍵字證據必須標明來源；沒有連 Ahrefs 時只能是「SERP observation」，不得標成 Ahrefs 已驗證。
+ * - 關鍵字證據必須標明來源；沒有連 Ahrefs 時只能是「SERP observation」或「Google autocomplete」，不得標成 Ahrefs 已驗證。
+ * - 旅行群（2026-10-17）：`travelGroups[]` 把同一群的多個批次（每個地點一個 Hub，加上共用教學頁）綁在一起，
+ *   生產順序依群的 `writingOrder`；核准狀態（明確核准或默許）是執行期狀態，記在維護資料庫 D1，不寫在清單。
  */
 import {readFile} from 'node:fs/promises'
 import path from 'node:path'
@@ -17,8 +19,9 @@ export const BATCH_AUTHORIZATION_MODE = 'batch-standing-authorization'
 export const CATEGORY_SLUGS = ['places', 'seasons', 'shrines', 'guides']
 export const PLACES_CATEGORY_SLUG = 'places'
 export const ARTICLE_ASPECTS = ['stay', 'food', 'transport', 'weather', 'hiking', 'festival', 'sight', 'other']
-export const PAGE_TYPES = ['place-entry', 'aspect-page', 'topic-page', 'shared-guide']
-export const KEYWORD_PROVIDERS = ['Ahrefs MCP', 'Ahrefs browser UI', 'SERP observation']
+export const PAGE_TYPES = ['place-entry', 'aspect-page', 'cross-place-page', 'topic-page', 'shared-guide']
+export const KEYWORD_PROVIDERS = ['Ahrefs MCP', 'Ahrefs browser UI', 'SERP observation', 'Google autocomplete']
+export const MIN_APPROVAL_WINDOW_DAYS = 3
 export const AHREFS_PROVIDERS = ['Ahrefs MCP', 'Ahrefs browser UI']
 export const BOOKING_CHANNELS = ['official', 'trip.com', 'agoda', 'jalan-only']
 export const COVER_WIDTH = 1600
@@ -129,9 +132,32 @@ function sortByOrder(items) {
   return [...items].sort((left, right) => left.order - right.order)
 }
 
-/** 生產順序：依 batches 的順序逐批處理；每批內依 order。 */
+export function getTravelGroups(queue) {
+  return Array.isArray(queue?.travelGroups) ? queue.travelGroups : []
+}
+
+export function getItemTravelGroup(queue, item) {
+  const batch = getItemBatch(queue, item)
+  if (!batch) return null
+  return getTravelGroups(queue).find((group) => (group.batchIds ?? []).includes(batch.id)) ?? null
+}
+
+/**
+ * 生產順序：有旅行群時，依群的順序、群內依 `writingOrder`；不屬於任何群的批次排在後面，
+ * 依 batches 的順序逐批處理、每批內依 order。
+ */
 export function getProductionOrderedItems(queue) {
-  return getQueueBatches(queue).flatMap((batch) => sortByOrder(batch.items ?? []))
+  const batches = getQueueBatches(queue)
+  const groups = getTravelGroups(queue)
+  const groupedBatchIds = new Set(groups.flatMap((group) => group.batchIds ?? []))
+  const itemsById = new Map(batches.flatMap((batch) => (batch.items ?? []).map((item) => [item.articleId, item])))
+  const grouped = groups.flatMap((group) =>
+    (group.writingOrder ?? []).map((articleId) => itemsById.get(articleId)).filter(Boolean),
+  )
+  const ungrouped = batches
+    .filter((batch) => !groupedBatchIds.has(batch.id))
+    .flatMap((batch) => sortByOrder(batch.items ?? []))
+  return [...grouped, ...ungrouped]
 }
 
 export function getAllHubLaunchGroups(queue) {
@@ -593,6 +619,61 @@ function validateQueueBatch(queue, batch, index, seen) {
   return issues
 }
 
+function addIsoDays(dateString, days) {
+  if (!isIsoDate(dateString)) return null
+  const date = new Date(`${dateString}T00:00:00Z`)
+  date.setUTCDate(date.getUTCDate() + days)
+  return date.toISOString().slice(0, 10)
+}
+
+/** 旅行群：成員批次存在且只屬於一群；寫作順序剛好涵蓋這些批次的全部文章；自動核准日至少在提醒後 3 天。 */
+export function validateTravelGroups(queue) {
+  const issues = []
+  if (queue?.travelGroups === undefined) return issues
+  if (!Array.isArray(queue.travelGroups)) return ['travelGroups 必須是陣列']
+  const batchesById = new Map(getQueueBatches(queue).map((batch) => [batch.id, batch]))
+  const seenGroupIds = new Set()
+  const seenBatchIds = new Set()
+  for (const [index, group] of queue.travelGroups.entries()) {
+    const label = `travelGroups[${index}]`
+    if (!SLUG_PATTERN.test(group?.id ?? '')) issues.push(`${label}.id 格式錯誤`)
+    if (seenGroupIds.has(group?.id)) issues.push(`${label}.id 重複：${group?.id}`)
+    seenGroupIds.add(group?.id)
+    if (!hasText(group?.label)) issues.push(`${label}.label 不得為空`)
+    if (!isPlanningJsonPath(group?.outline)) issues.push(`${label}.outline 必須指向 content-planning 裡的群大綱 JSON`)
+
+    const batchIds = Array.isArray(group?.batchIds) ? group.batchIds : []
+    if (batchIds.length === 0) issues.push(`${label}.batchIds 不得為空`)
+    const memberIds = []
+    for (const batchId of batchIds) {
+      const batch = batchesById.get(batchId)
+      if (!batch) {
+        issues.push(`${label}.batchIds 找不到批次：${batchId}`)
+        continue
+      }
+      if (seenBatchIds.has(batchId)) issues.push(`${label}.batchIds 的 ${batchId} 已經屬於別的旅行群`)
+      seenBatchIds.add(batchId)
+      memberIds.push(...(batch.items ?? []).map((item) => item.articleId))
+    }
+
+    const order = Array.isArray(group?.writingOrder) ? group.writingOrder : []
+    const orderSet = new Set(order)
+    if (orderSet.size !== order.length) issues.push(`${label}.writingOrder 不得重複`)
+    const missing = memberIds.filter((articleId) => !orderSet.has(articleId))
+    const extra = order.filter((articleId) => !memberIds.includes(articleId))
+    if (missing.length > 0) issues.push(`${label}.writingOrder 缺少：${missing.join('、')}`)
+    if (extra.length > 0) issues.push(`${label}.writingOrder 有不屬於本群的文章：${extra.join('、')}`)
+
+    const approval = group?.approval
+    if (!isIsoDate(approval?.remindedAt) || !isIsoDate(approval?.autoApproveOn)) {
+      issues.push(`${label}.approval 必須有提醒日 remindedAt 與自動核准日 autoApproveOn`)
+    } else if (approval.autoApproveOn < addIsoDays(approval.remindedAt, MIN_APPROVAL_WINDOW_DAYS)) {
+      issues.push(`${label}.approval.autoApproveOn 至少要在提醒後 ${MIN_APPROVAL_WINDOW_DAYS} 天`)
+    }
+  }
+  return issues
+}
+
 export function validateArticleQueue(queue) {
   const issues = []
 
@@ -660,6 +741,7 @@ export function validateArticleQueue(queue) {
   for (const [index, batch] of getQueueBatches(queue).entries()) {
     issues.push(...validateQueueBatch(queue, batch, index, seen))
   }
+  issues.push(...validateTravelGroups(queue))
 
   return issues
 }
@@ -704,7 +786,13 @@ export function validateBatchPlanningRecords(batch, {pageSpecs, candidateRegistr
   const registryItems = Array.isArray(candidateRegistry?.items) ? candidateRegistry.items : []
   const specById = new Map(specEntries.map((entry) => [entry.spec.articleId, entry]))
   const registryById = new Map(registryItems.map((entry) => [entry.articleId, entry]))
-  const keepSpecCount = specEntries.filter(({normalized}) => normalized.decision === 'keep').length
+  // 一份規格可以涵蓋整個旅行群的多個 Hub；只數屬於本批（網址在本批路徑底下或主要 Hub 是本批父 Hub）的保留頁。
+  const keepSpecCount = specEntries.filter(
+    ({normalized}) =>
+      normalized.decision === 'keep' &&
+      ((typeof normalized.canonicalUrl === 'string' && normalized.canonicalUrl.startsWith(batch?.allowedPathPrefix ?? ' ')) ||
+        normalized.primaryHubId === batch?.parentHubId),
+  ).length
   const deferredItems = batch?.planningSource?.deferredItems ?? []
 
   if (
@@ -714,7 +802,7 @@ export function validateBatchPlanningRecords(batch, {pageSpecs, candidateRegistr
     issues.push(`${label} 的頁面規格與候選登記必須都是 planning-complete`)
   }
   if (keepSpecCount !== batch?.planningSource?.plannedPageCount) {
-    issues.push(`${label}.planningSource.plannedPageCount 必須等於頁面規格中保留的頁數 ${keepSpecCount}`)
+    issues.push(`${label}.planningSource.plannedPageCount 必須等於頁面規格中屬於本批的保留頁數 ${keepSpecCount}`)
   }
 
   const specPaths = getBatchPageSpecPaths(batch)

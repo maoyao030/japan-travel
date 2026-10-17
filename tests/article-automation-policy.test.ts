@@ -11,7 +11,9 @@ import {
   findQueueItem,
   getArticlePathFromSnapshot,
   getDailyPublicationLimitForItem,
+  getItemTravelGroup,
   getProductionOrderedItems,
+  validateTravelGroups,
   loadArticleQueue,
   validateArticleQueue,
   validateBatchPlanningRecords,
@@ -425,4 +427,110 @@ test('地點分類不使用子 Hub', () => {
     ]),
   )
   assert.match(issues.join('\n'), /地點分類不使用子 Hub/)
+})
+
+function guideBatch(): AnyRecord {
+  const base = createBatch()
+  return createBatch({
+    id: 'ferry-booking-guide',
+    contentTheme: 'ferry-booking',
+    themeLabel: '渡輪訂票教學',
+    categorySlug: 'guides',
+    parentHubSlug: 'ferry-booking',
+    parentHubId: 'hub-guides-ferry-booking',
+    allowedPathPrefix: '/guides/ferry-booking/',
+    standingAuthorization: {
+      ...base.standingAuthorization,
+      finalizationLimits: {...base.standingAuthorization.finalizationLimits, contentTheme: 'ferry-booking', allowedPathPrefix: '/guides/ferry-booking/'},
+    },
+    parentHub: {...base.parentHub, id: 'hub-guides-ferry-booking', slug: 'ferry-booking', category: 'guides'},
+    items: [
+      createItem({
+        articleId: 'ferry-booking',
+        documentId: 'article-ferry-booking',
+        contentTheme: 'ferry-booking',
+        articleSlug: 'ferry-booking',
+        hubSlug: 'ferry-booking',
+        targetPath: '/guides/ferry-booking/',
+        primaryHubId: 'hub-guides-ferry-booking',
+        categorySlug: 'guides',
+        routeMode: 'hub-landing',
+        futureHubLanding: true,
+        aspect: 'transport',
+        pageType: 'shared-guide',
+        planningSpec: {pageSpecs: 'content-planning/yamagata/ginzan-onsen-page-specs.json', articleId: 'ferry-booking'},
+        keywordValidation: {...createItem().keywordValidation, provider: 'Google autocomplete'},
+      }),
+    ],
+  })
+}
+
+function groupedQueue(groupOverrides: AnyRecord = {}): AnyRecord {
+  const queue = createQueue([createBatch(), guideBatch()])
+  queue.travelGroups = [
+    {
+      id: 'yamagata-ginzan',
+      label: '銀山溫泉群',
+      outline: 'content-planning/yamagata/ginzan-outline.json',
+      batchIds: ['ginzan-onsen-2026-10', 'ferry-booking-guide'],
+      writingOrder: ['ferry-booking', 'ginzan-onsen-ryokan'],
+      approval: {remindedAt: '2026-10-17', autoApproveOn: '2026-10-24'},
+      ...groupOverrides,
+    },
+  ]
+  return queue
+}
+
+test('旅行群可以跨多個 Hub，生產順序依群的寫作順序', () => {
+  const queue = groupedQueue()
+  assert.deepEqual(validateArticleQueue(queue), [])
+  assert.deepEqual(
+    getProductionOrderedItems(queue).map((item) => item.articleId),
+    ['ferry-booking', 'ginzan-onsen-ryokan'],
+  )
+  assert.equal(getItemTravelGroup(queue, findQueueItem(queue, 'ginzan-onsen-ryokan'))?.id, 'yamagata-ginzan')
+})
+
+test('旅行群的寫作順序要剛好涵蓋成員批次，自動核准日至少在提醒後 3 天', () => {
+  assert.match(validateTravelGroups(groupedQueue({writingOrder: ['ferry-booking']})).join('\n'), /writingOrder 缺少：ginzan-onsen-ryokan/)
+  assert.match(
+    validateTravelGroups(groupedQueue({writingOrder: ['ferry-booking', 'ginzan-onsen-ryokan', 'other']})).join('\n'),
+    /不屬於本群的文章：other/,
+  )
+  assert.match(
+    validateTravelGroups(groupedQueue({approval: {remindedAt: '2026-10-17', autoApproveOn: '2026-10-19'}})).join('\n'),
+    /至少要在提醒後 3 天/,
+  )
+  const twoGroups = groupedQueue()
+  twoGroups.travelGroups.push({...twoGroups.travelGroups[0], id: 'other-group'})
+  assert.match(validateTravelGroups(twoGroups).join('\n'), /已經屬於別的旅行群/)
+})
+
+test('同一份規格涵蓋多個 Hub 時，規劃頁數只數屬於本批的保留頁', () => {
+  const batch = createBatch()
+  const specItem = {
+    articleId: 'ginzan-onsen-ryokan',
+    decision: 'keep',
+    primaryQuery: '銀山溫泉 住宿',
+    targetPath: '/places/ginzan-onsen/ryokan/',
+    primaryHubId: 'hub-places-ginzan-onsen',
+    contentBoundary: '只寫銀山溫泉街區內的旅館，不含尾花澤市區飯店。',
+    planningTitle: '銀山溫泉住宿怎麼訂，官網與 Agoda 能訂到的旅館',
+    readerTaskContract: {primaryTask: '決定住哪一間、從哪裡訂。'},
+  }
+  const pageSpecs = {
+    status: 'planning-complete',
+    items: [
+      specItem,
+      {...specItem, articleId: 'ferry-booking', targetPath: '/guides/ferry-booking/', primaryHubId: 'hub-guides-ferry-booking'},
+      {...specItem, articleId: 'ginzan-onsen-food', targetPath: '/places/ginzan-onsen/food/', decision: 'merge'},
+    ],
+  }
+  const candidateRegistry = {
+    status: 'planning-complete',
+    items: [
+      {articleId: 'ginzan-onsen-ryokan', decision: 'keep', metricEvidence: {provider: 'SERP observation', checkedAt: '2026-10-15', query: '銀山溫泉 住宿', svDisplay: '300'}},
+    ],
+  }
+  assert.deepEqual(validateBatchPlanningRecords(batch, {pageSpecs, candidateRegistry}), [])
 })
