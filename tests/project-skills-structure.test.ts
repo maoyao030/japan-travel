@@ -20,13 +20,14 @@ process.env.PYTHONIOENCODING ??= 'utf-8'
 const expectedSkills = [
   'japan-travel-acceptance',
   'japan-travel-answer-first',
+  'japan-travel-auto-publisher',
   'japan-travel-image-finder',
   'japan-travel-topic-planner',
 ]
 
 type AnyRecord = Record<string, any>
 
-test('四個本站 Skill 的名稱、描述、UI 提示與引用檔案完整', async () => {
+test('本站 Skill 的名稱、描述、UI 提示與引用檔案完整', async () => {
   const directories = (await readdir(skillsRoot, {withFileTypes: true}))
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name)

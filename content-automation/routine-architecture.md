@@ -68,11 +68,13 @@ routine 每次都是全新下載的雲端 session，進度只看 Sanity 與 D1�
 | `scripts/routine-next-action.mjs` | 決定這一輪做哪一件事（實測：空清單時回每週摘要） | 已完成 |
 | `studio/scripts/inspect-article-queue.mjs` | Sanity 狀態與下一篇；生產順序已依旅行群 | 已完成 |
 | `studio/scripts/publish-*.mjs`、`release-indexable-article.mjs`、`prepare-parent-hub.mjs` | 上稿、封面、開放索引、建 Hub | 已有 |
-| 定稿工具（文章封包 → Sanity 正文） | 從好材誌移植，改成本站的驗收檔案 | 待做 |
-| 補內連工具 | 讀 D1 待補內連，只加連結標記 | 待做 |
-| 地點事實表同步 | 把事實的變動類型與下次查核日寫進 D1 | 待做 |
+| `scripts/finalize-release.mjs` | 定稿：驗收通過的封包轉成 Sanity 正文與帶預先授權的 manifest | 已完成 |
+| `scripts/ops-links.mjs`、`scripts/link-backfill.mjs`、`studio/scripts/apply-pending-link.mjs` | 待補內連登記與補連結（只加連結標記、可回復） | 已完成 |
+| `scripts/ops-facts.mjs` | 地點事實表同步到 D1、到期清單、重查紀錄 | 已完成 |
 | `scripts/planning-formats.mjs`、`scripts/check-planning.mjs` | 全站地點清單、分工表、地點事實表、群大綱的格式檢查 | 已完成 |
-| `content-automation/routine-prompt.md` | routine 的提示全文 | 待做 |
+| `.agents/skills/japan-travel-auto-publisher/` | 每一輪的實際指令 | 已完成 |
+| `content-automation/routine-prompt.md` | routine 的提示全文與設定 | 已完成 |
+| 跨群回補（地點欄位、結尾連結） | D1 `backfill_tasks` 已建，執行程式待做 | 待做 |
 
 ## 不做的事
 

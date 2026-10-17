@@ -429,3 +429,29 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 做一篇給 Darren 驗收品質的樣本：把「禮文島交通」照新規則（來源分級、照大綱寫、分工規則）改完並跑完驗收，請 Darren 看是否達到可以開始自動化的品質。
+
+## 2026-10-17 Claude Code（地端）：routine 架構與程式（分支 `plan/wakkanai-rishiri-rebun`）
+
+### Darren 的指示
+
+- 文章品質是另一條流程；這一輪只處理網站的 routine 與架構。
+
+### 已完成
+
+- `content-automation/routine-architecture.md`：資料分工（Git、Sanity、D1、Google Sheet）、一輪只做一件事的優先順序、文章生命週期、旅行群默許核准、程式分工。
+- 清單規則：旅行群 `travelGroups[]`（一群可跨多個 Hub、依寫作順序生產、自動核准日至少提醒後 3 天）、`Google autocomplete` 證據、`cross-place-page`、每批只數自己的規劃頁。
+- D1 工具：`ops-article.mjs`（文章生產狀態：事實錯誤可重寫一次、架構問題停放、來源打不開延後，連續 3 天停放）、`ops-group.mjs`（依規劃總表回覆判斷明確核准或默許）、`routine-next-action.mjs`（每輪決定做哪一件事）、`ops-links.mjs`、`ops-facts.mjs`。D1 新增 0003、0004，已套用到線上。
+- 規劃檔格式與檢查：`places.json`、`ownership.json`、地點事實表、群大綱（`planning-formats.mjs`、`check-planning.mjs`，`npm test` 會檢查）；建立 `places.json`（稚內群與出入口候選）與 `ownership.json`。
+- 發布：`scripts/finalize-release.mjs`（從好材誌移植，加上事實查核、標題檢查、圖片驗收門檻）；補內連 `studio/scripts/apply-pending-link.mjs`（只加連結標記、revision 保護、可回復）。
+- `japan-travel-auto-publisher` Skill、`content-automation/routine-prompt.md`、執行紀錄範本 `auto-publisher-run-log.md`。
+- 實測：線上 D1 與 Sanity 上 `routine-next-action`（空清單時回每週摘要）、`ops-facts`、`ops-links`、`ops-group`、`ops-article` 的讀取都正常。測試 139 項通過。
+
+### 尚未完成
+
+- 跨群回補的執行程式（D1 `backfill_tasks` 已建）。
+- routine 本身還沒建：要先把本分支合併到 `main`、建 Sanity 寫入權杖並放進雲端環境、決定頻率（等品質樣本）。
+- 網站還沒部署：Cloudflare Workers Builds、網域、Sanity Deploy Hook 都還沒設定。
+
+### 唯一下一步
+
+- 把 `plan/wakkanai-rishiri-rebun` 合併到 `main`（Darren 同意後）。

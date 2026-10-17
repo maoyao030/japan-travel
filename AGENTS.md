@@ -109,3 +109,9 @@
 - 每天寫幾篇、怎麼抽查，Darren 要先看到品質合格的樣本再決定。在那之前 routine 不啟用，`article-queue.json` 的頻率設定只是暫存值。
 - 資料太少的主題（本主題事實少於 15 筆或預估不到 800 字）不單獨成頁，併進地點主頁寫成一節；門檻暫定，稚內群寫完後調整。
 - 下一群在目前這群剩約 7 天的量時開始準備。
+
+## 自動發布 Skill（2026-10-17 建立）
+
+- routine 每一輪依 `japan-travel-auto-publisher` 執行：拿 D1 執行鎖 → 讀 Sanity 與 D1 狀態 → `scripts/routine-next-action.mjs` 決定只做一件事 → 執行 → 記錄 → commit → 放鎖。整體設計見 `content-automation/routine-architecture.md`，routine 提示見 `content-automation/routine-prompt.md`。
+- routine 只有在「規劃下一群」時可以 commit `content-planning/` 與 `article-queue.json`，而且 `npm run planning:check` 與 `npm run queue:validate` 都要通過；其他時候不改程式、清單、Skill 或規則文件。
+- 上一段「Skill 路由（2026-10-16 建立）」裡「自動發布 Skill 尚未建立」的說明，由本段取代。

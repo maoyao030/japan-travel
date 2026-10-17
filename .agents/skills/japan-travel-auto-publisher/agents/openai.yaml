@@ -1,0 +1,7 @@
+interface:
+  display_name: "日本站自動化一輪"
+  short_description: "拿鎖、讀 Sanity 與 D1 狀態、只做一件事（續做、補內連、核准檢查、生產一篇、規劃下一群、事實重查或每週摘要），記錄結果後放鎖"
+  default_prompt: "使用 $japan-travel-auto-publisher 執行一輪：先拿 D1 執行鎖，讀 Sanity 與 D1 狀態，用 routine-next-action 決定這一輪只做的一件事，照 Skill 的指令完成，記錄結果、更新執行紀錄、commit 允許的檔案，最後放鎖。"
+
+policy:
+  allow_implicit_invocation: false
