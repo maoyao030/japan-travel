@@ -8,7 +8,7 @@ import {
   getAutoPublisherLock,
   releaseAutoPublisherLock,
 } from '../scripts/manage-auto-publisher-lock.mjs'
-import {sqlLiteral} from '../scripts/ops-db.mjs'
+import {createHttpExecutor, createOpsExecutor, readOpsDatabaseConfig, sqlLiteral} from '../scripts/ops-db.mjs'
 import {finishRun, startRun} from '../scripts/ops-run.mjs'
 import {collectSheetUpdate, markSheetSynced} from '../scripts/ops-sheet-sync.mjs'
 
@@ -134,4 +134,41 @@ test('routine 太久沒有新紀錄時，同步會新增一筆「routine 沒在�
 
   const notDuplicated = await collectSheetUpdate({execute, now: new Date('2026-10-17T06:00:00Z'), triggerIntervalHours: 3})
   assert.deepEqual(notDuplicated.exceptionIds, stale.exceptionIds)
+})
+
+test('雲端用 REST API 連 D1：不帶權杖時不送 Authorization，交給 network secret 附上', async () => {
+  const config = readOpsDatabaseConfig()
+  assert.equal(config.databaseId, 'b8f3156c-5129-42db-b48e-85e179bf926b')
+  const calls: any[] = []
+  const fetchImpl = async (url: string, init: any) => {
+    calls.push({url, init})
+    return new Response(
+      JSON.stringify({success: true, errors: [], result: [{success: true, results: [{owner: 'a'}]}, {success: true, results: []}]}),
+      {status: 200, headers: {'content-type': 'application/json'}},
+    )
+  }
+  const execute = createHttpExecutor({fetchImpl: fetchImpl as any, config, token: undefined})
+  const results = await execute(['SELECT owner FROM run_lock;', 'SELECT 1'])
+  assert.deepEqual(results, [[{owner: 'a'}], []])
+  assert.equal(calls[0].url, `https://api.cloudflare.com/client/v4/accounts/${config.accountId}/d1/database/${config.databaseId}/query`)
+  assert.equal(calls[0].init.headers.authorization, undefined)
+  assert.equal(JSON.parse(calls[0].init.body).sql, 'SELECT owner FROM run_lock;\nSELECT 1')
+
+  const withToken = createHttpExecutor({fetchImpl: fetchImpl as any, config, token: 'local-test'})
+  await withToken(['SELECT 1'])
+  assert.equal(calls[1].init.headers.authorization, 'Bearer local-test')
+
+  const failing = createHttpExecutor({
+    fetchImpl: (async () =>
+      new Response(JSON.stringify({success: false, errors: [{message: 'Authentication error'}]}), {status: 403})) as any,
+    config,
+    token: undefined,
+  })
+  await assert.rejects(failing(['SELECT 1']), /Authentication error/)
+})
+
+test('連線方式：--local 用本機、OPS_DB_TRANSPORT=http 用 REST API、其他用 wrangler', () => {
+  assert.equal(typeof createOpsExecutor({local: true}), 'function')
+  assert.equal(typeof createOpsExecutor({env: {OPS_DB_TRANSPORT: 'http'}}), 'function')
+  assert.equal(typeof createOpsExecutor({env: {}}), 'function')
 })

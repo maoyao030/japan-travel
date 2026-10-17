@@ -1,13 +1,17 @@
 /**
  * 維護資料庫（Cloudflare D1 `japan-travel-ops`）的共用工具。
  *
- * 透過 wrangler 執行 SQL：本機用 `wrangler login` 的登入狀態，雲端 routine 用環境變數
- * CLOUDFLARE_API_TOKEN（只開 D1 編輯權限）；帳號 ID 寫在 d1/wrangler.jsonc。
+ * 兩種連線方式：
+ * - 本機：透過 wrangler，用 `wrangler login` 的登入狀態。
+ * - 雲端 routine：環境變數 OPS_DB_TRANSPORT=http 時直接呼叫 D1 REST API，不帶權杖；
+ *   雲端環境 japan-travel-publisher 的 network secret 會在連到 api.cloudflare.com 的 D1 路徑時自動附上權杖，
+ *   權杖不會出現在環境變數或檔案裡。
+ * 帳號 ID 與資料庫 ID 寫在 d1/wrangler.jsonc。
  *
- * wrangler 的 `d1 execute --command` 不支援參數綁定，所以 SQL 一律由本檔的 sqlLiteral() 組字串，
- * 呼叫端不得自己拼接使用者輸入。
+ * 兩種方式都不支援參數綁定，所以 SQL 一律由本檔的 sqlLiteral() 組字串，呼叫端不得自己拼接使用者輸入。
  */
 import {execFile} from 'node:child_process'
+import {readFileSync} from 'node:fs'
 import {createRequire} from 'node:module'
 import path from 'node:path'
 import {promisify} from 'node:util'
@@ -72,6 +76,48 @@ export function createWranglerExecutor({remote = true} = {}) {
     }
     return parsed.map((entry) => entry?.results ?? [])
   }
+}
+
+/** 讀 d1/wrangler.jsonc 的帳號 ID 與資料庫 ID（檔案只有整行的 // 註解）。 */
+export function readOpsDatabaseConfig(source = readFileSync(configPath, 'utf8')) {
+  const config = JSON.parse(source.replace(/^\s*\/\/.*$/gm, ''))
+  const database = config.d1_databases?.find((entry) => entry.database_name === OPS_DATABASE_NAME)
+  if (!config.account_id || !database?.database_id) throw new Error('d1/wrangler.jsonc 缺少 account_id 或 database_id')
+  return {accountId: config.account_id, databaseId: database.database_id}
+}
+
+/**
+ * 直接呼叫 D1 REST API 的執行器。沒有 CLOUDFLARE_API_TOKEN 時不帶 Authorization，
+ * 交給雲端環境的 network secret 附上權杖。
+ */
+export function createHttpExecutor({fetchImpl = fetch, config = readOpsDatabaseConfig(), token = process.env.CLOUDFLARE_API_TOKEN} = {}) {
+  const url = `https://api.cloudflare.com/client/v4/accounts/${config.accountId}/d1/database/${config.databaseId}/query`
+  return async function execute(statements) {
+    if (!Array.isArray(statements) || statements.length === 0) {
+      throw new Error('execute() 需要至少一句 SQL')
+    }
+    const headers = {'content-type': 'application/json'}
+    if (token) headers.authorization = `Bearer ${token}`
+    const response = await fetchImpl(url, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({sql: statements.map((statement) => statement.trim().replace(/;$/, '')).join(';\n')}),
+    })
+    const body = await response.json().catch(() => null)
+    if (!response.ok || body?.success !== true) {
+      const reason = body?.errors?.map((error) => error.message).join('；') || `HTTP ${response.status}`
+      throw new Error(`D1 執行失敗：${reason}`)
+    }
+    if (body.result.some((entry) => entry?.success === false)) throw new Error('D1 執行失敗：有陳述式沒有成功')
+    return body.result.map((entry) => entry?.results ?? [])
+  }
+}
+
+/** 依參數與環境選連線方式：--local 用本機資料庫；OPS_DB_TRANSPORT=http 用 REST API；其他用 wrangler。 */
+export function createOpsExecutor({local = false, env = process.env} = {}) {
+  if (local) return createWranglerExecutor({remote: false})
+  if (env.OPS_DB_TRANSPORT === 'http') return createHttpExecutor()
+  return createWranglerExecutor({remote: true})
 }
 
 /** 讀取 `--key=value` 形式的參數。 */

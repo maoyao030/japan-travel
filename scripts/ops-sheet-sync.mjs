@@ -14,7 +14,7 @@ import {pathToFileURL} from 'node:url'
 
 import {loadArticleQueue} from './article-automation-policy.mjs'
 import {
-  createWranglerExecutor,
+  createOpsExecutor,
   parseOptions,
   positionalArguments,
   projectRoot,
@@ -157,7 +157,7 @@ async function runCli() {
   const argumentsList = process.argv.slice(2)
   const [command] = positionalArguments(argumentsList)
   const options = parseOptions(argumentsList)
-  const execute = createWranglerExecutor({remote: !options.local})
+  const execute = createOpsExecutor({local: Boolean(options.local)})
 
   if (command === 'collect') {
     const queue = await loadArticleQueue(queuePath, projectRoot)

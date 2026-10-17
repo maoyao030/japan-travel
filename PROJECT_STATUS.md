@@ -372,3 +372,21 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 請 Darren 決定四件事：抽查方式、短頁門檻、觸發點、每天篇數。
+
+## 2026-10-17 Claude Code（地端）：雲端環境與 Cloudflare 權杖（分支 `plan/wakkanai-rishiri-rebun`）
+
+### 已完成
+
+- 依 Darren 要求開啟本 session 的 Remote Control。
+- 在內建瀏覽器建立 Cloudflare 權杖 `japan-travel-ops-routine`（Account / D1 / Edit，只限 Darren 的帳號）。Darren 自己登入、自己複製權杖；Claude Code 沒有讀取或經手權杖內容。
+- 建立雲端環境 `japan-travel-publisher`。權杖放在 Network secret（只附加到 `api.cloudflare.com` 的本帳號 D1 路徑），由 Darren 貼上；環境變數加 `OPS_DB_TRANSPORT=http`。環境變數欄位明寫不要放密碼，所以不用 `CLOUDFLARE_API_TOKEN`。
+- `scripts/ops-db.mjs` 新增 REST API 連線方式（`OPS_DB_TRANSPORT=http` 時使用，不帶權杖，交給 network secret），三支維護程式改用 `createOpsExecutor()`；新增 2 項測試，`npm test` 120 項通過。本機仍用 wrangler，實測正常。
+
+### 尚未確認
+
+- 雲端實際連線還沒驗證：要在 `japan-travel-publisher` 環境開一次雲端 session，跑 `node scripts/manage-auto-publisher-lock.mjs status` 確認回 `free`。
+- 環境的網路權限目前是 Limited。寫文章要連各地日本官方網站、Sanity、Google 自動完成，Limited 會擋。改成 Full 或列出允許網域由 Darren 決定（Claude Code 試著改成 Full 被安全規則擋下）。
+
+### 唯一下一步
+
+- 請 Darren 決定四件事：抽查方式、短頁門檻、觸發點、每天篇數。

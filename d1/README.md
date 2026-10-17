@@ -31,15 +31,18 @@ npx wrangler d1 execute japan-travel-ops --remote -c d1/wrangler.jsonc --command
 
 ## 雲端 routine 怎麼連
 
-雲端每次全新下載，沒有登入狀態。帳號 ID 已寫在 `d1/wrangler.jsonc`，雲端環境只要多一個機密設定：
+雲端每次全新下載，沒有登入狀態。2026-10-17 的設定：
 
-- `CLOUDFLARE_API_TOKEN`：只開 D1 編輯權限的 API 權杖，由 Darren 建立（Cloudflare 控制台 → 右上角頭像 → My Profile → API Tokens → Create Token → Create Custom Token；Permissions 選 Account / D1 / Edit，Account Resources 選自己的帳號，不設 IP 限制）。
+- 雲端環境 `japan-travel-publisher`（claude.ai/code 的環境選單 → Cloud）。
+- 權杖放在環境的 **Network secret**，不放環境變數：網站 `api.cloudflare.com`，路徑限定 `/client/v4/accounts/6e2acd041446ebca7f3ae7f512500f3d/d1/`，自動附上 `Authorization: Bearer <權杖>`。權杖存進去後誰都看不到，routine 也讀不到，只有連到這個路徑時才會被附上。環境變數的欄位畫面明寫不要放密碼，所以不用 `CLOUDFLARE_API_TOKEN`。
+- 環境變數 `OPS_DB_TRANSPORT=http`（不是機密）：程式看到這個值就改用 D1 REST API、不帶權杖，交給 network secret 附上。
+- 權杖本身是 Cloudflare 的 `japan-travel-ops-routine`（只開 Account / D1 / Edit，範圍只有 Darren 的帳號，不設 IP 限制）。要換權杖時在 Cloudflare 按 Roll，再到環境的 Network secret 刪掉舊的、重新加一個。
 
-權杖不寫進 Git、文件或聊天。wrangler 會自動讀這個環境變數。
+本機不需要設定，`wrangler login` 的登入狀態就夠。權杖不寫進 Git、文件或聊天。
 
 ## 程式
 
-都透過 `scripts/ops-db.mjs` 呼叫 wrangler；加 `--local` 改用本機資料庫。
+都透過 `scripts/ops-db.mjs` 連線：本機用 wrangler，雲端（`OPS_DB_TRANSPORT=http`）用 REST API；加 `--local` 改用本機資料庫。
 
 | 指令 | 用途 |
 |---|---|

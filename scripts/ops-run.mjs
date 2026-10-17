@@ -10,7 +10,7 @@ import {randomUUID} from 'node:crypto'
 import path from 'node:path'
 import {pathToFileURL} from 'node:url'
 
-import {createWranglerExecutor, parseOptions, positionalArguments, sqlLiteral} from './ops-db.mjs'
+import {createOpsExecutor, parseOptions, positionalArguments, sqlLiteral} from './ops-db.mjs'
 
 export const RUN_KINDS = ['produce', 'maintain', 'plan', 'summary']
 export const RUN_RESULTS = ['accepted', 'published', 'fixed', 'parked', 'deferred', 'failed', 'no-work', 'done']
@@ -42,7 +42,7 @@ async function runCli() {
   const argumentsList = process.argv.slice(2)
   const [command] = positionalArguments(argumentsList)
   const options = parseOptions(argumentsList)
-  const execute = createWranglerExecutor({remote: !options.local})
+  const execute = createOpsExecutor({local: Boolean(options.local)})
 
   if (command === 'start') {
     const result = await startRun({

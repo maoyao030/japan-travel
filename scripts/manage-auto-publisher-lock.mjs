@@ -13,7 +13,7 @@ import path from 'node:path'
 import {pathToFileURL} from 'node:url'
 
 import {loadArticleQueue} from './article-automation-policy.mjs'
-import {createWranglerExecutor, parseOptions, positionalArguments, projectRoot, sqlLiteral} from './ops-db.mjs'
+import {createOpsExecutor, parseOptions, positionalArguments, projectRoot, sqlLiteral} from './ops-db.mjs'
 
 export const LOCK_NAME = 'auto-publisher'
 const queuePath = path.join(projectRoot, 'content-automation', 'article-queue.json')
@@ -87,7 +87,7 @@ async function runCli() {
   const argumentsList = process.argv.slice(2)
   const [command] = positionalArguments(argumentsList)
   const options = parseOptions(argumentsList)
-  const execute = createWranglerExecutor({remote: !options.local})
+  const execute = createOpsExecutor({local: Boolean(options.local)})
 
   if (command === 'acquire') {
     const queue = await loadArticleQueue(queuePath, projectRoot)
