@@ -175,3 +175,101 @@ test('連線方式：--local 用本機、OPS_DB_TRANSPORT=http 用 REST API、�
   assert.doesNotThrow(() => checkProxySetting({}))
   assert.equal(typeof createOpsExecutor({env: {}}), 'function')
 })
+
+test('文章生產狀態：事實錯誤可重寫一次，第二次停放並寫例外；架構問題直接停放', async (t) => {
+  const db = await openTestDatabase()
+  if (!db) return t.skip('這個 Node 版本沒有 node:sqlite')
+  const {execute} = db
+  const {startArticle, recordFailure, markAccepted, unparkArticle} = await import('../scripts/ops-article.mjs')
+  const base = {execute, articleId: 'rebun-island-transport', groupId: 'hokkaido-wakkanai', targetPath: '/places/rebun-island/transport/'}
+
+  assert.equal((await startArticle(base)).article.attempts, 1)
+  const retry = await recordFailure({execute, articleId: base.articleId, kind: 'facts', reason: '班次寫錯'})
+  assert.equal(retry.status, 'queued')
+  assert.equal((await startArticle(base)).article.attempts, 2)
+  const parked = await recordFailure({execute, articleId: base.articleId, kind: 'facts', reason: '班次又寫錯'})
+  assert.equal(parked.status, 'parked')
+  assert.equal((await startArticle(base)).status, 'refused')
+  const [exceptions] = await execute(["SELECT kind, subject FROM exceptions WHERE subject = 'rebun-island-transport'"])
+  assert.deepEqual(exceptions.map((row) => ({...row})), [{kind: 'parked', subject: 'rebun-island-transport'}])
+
+  assert.equal((await unparkArticle({execute, articleId: base.articleId})).article.attempts, 0)
+  await startArticle(base)
+  assert.equal((await markAccepted({execute, articleId: base.articleId})).status, 'accepted')
+
+  await startArticle({...base, articleId: 'rebun-island-food'})
+  assert.equal((await recordFailure({execute, articleId: 'rebun-island-food', kind: 'needs-outline', reason: '分工不對'})).parkKind, 'needs-outline')
+})
+
+test('來源打不開先延後一天，連續延後超過 3 天就停放', async (t) => {
+  const db = await openTestDatabase()
+  if (!db) return t.skip('這個 Node 版本沒有 node:sqlite')
+  const {execute} = db
+  const {startArticle, recordFailure} = await import('../scripts/ops-article.mjs')
+  const base = {execute, articleId: 'wakkanai-transport', groupId: 'g', targetPath: '/places/wakkanai/transport/'}
+  const day = (n: number) => new Date(Date.parse('2026-10-17T00:00:00Z') + n * 86400000)
+
+  await startArticle({...base, now: day(0)})
+  const deferred = await recordFailure({execute, articleId: base.articleId, kind: 'source-unreachable', reason: '503', now: day(0)})
+  assert.equal(deferred.status, 'deferred')
+  assert.equal((await startArticle({...base, now: day(0.5)})).status, 'refused')
+  await startArticle({...base, now: day(2)})
+  assert.equal((await recordFailure({execute, articleId: base.articleId, kind: 'source-unreachable', reason: '503', now: day(2)})).status, 'deferred')
+  await startArticle({...base, now: day(4)})
+  assert.equal((await recordFailure({execute, articleId: base.articleId, kind: 'source-unreachable', reason: '503', now: day(4)})).status, 'parked')
+})
+
+test('旅行群核准：意見與狀態優先，例外不默許，到自動核准日才默許', async (t) => {
+  const {decideGroupState, evaluateGroup} = await import('../scripts/ops-group.mjs')
+  const base = {autoApproveOn: '2026-10-24', today: '2026-10-20'}
+  assert.equal(decideGroupState(base).state, 'awaiting-approval')
+  assert.deepEqual(decideGroupState({...base, today: '2026-10-24'}), {state: 'approved', approvedBy: 'default'})
+  assert.equal(decideGroupState({...base, today: '2026-10-24', exception: '新頁型'}).state, 'awaiting-approval')
+  assert.equal(decideGroupState({...base, sheetComment: '利尻先不要做'}).state, 'changes-requested')
+  assert.equal(decideGroupState({...base, sheetStatus: '暫停'}).state, 'paused')
+  assert.deepEqual(decideGroupState({...base, sheetStatus: '已核准'}), {state: 'approved', approvedBy: 'darren'})
+
+  const db = await openTestDatabase()
+  if (!db) return t.skip('這個 Node 版本沒有 node:sqlite')
+  const result = await evaluateGroup({execute: db.execute, groupId: 'hokkaido-wakkanai', autoApproveOn: '2026-10-17', now: new Date('2026-10-17T02:00:00Z')})
+  assert.equal(result.row.state, 'approved')
+  assert.equal(result.row.approved_by, 'default')
+})
+
+test('每輪只做一件事：續做、補內連、核准檢查、生產、規劃、重查、摘要依序判斷', async () => {
+  const {decideNextAction} = await import('../scripts/routine-next-action.mjs')
+  const now = new Date('2026-10-20T00:00:00Z')
+  const items = [
+    {articleId: 'guide', groupId: 'g1', sanityStatus: 'published_indexable'},
+    {articleId: 'a', groupId: 'g1', sanityStatus: 'unpublished'},
+    {articleId: 'b', groupId: 'g1', sanityStatus: 'unpublished'},
+  ]
+  const groups = [{id: 'g1', autoApproveOn: '2026-10-19'}]
+  const approved = {g1: {state: 'approved'}}
+  const recent = '2026-10-19T00:00:00Z'
+
+  assert.equal(decideNextAction({items: [{...items[1], sanityStatus: 'staged_noindex'}], groups, now}).action, 'resume')
+  assert.equal(decideNextAction({items, groups, groupStates: approved, readyLinkCount: 1, now}).action, 'backfill-links')
+  assert.deepEqual(
+    {action: decideNextAction({items, groups, now}).action, groupId: decideNextAction({items, groups, now}).groupId},
+    {action: 'evaluate-group', groupId: 'g1'},
+  )
+  assert.equal(decideNextAction({items, groups, groupStates: approved, now}).articleId, 'a')
+  assert.equal(
+    decideNextAction({items, groups, groupStates: approved, articleStates: {a: {state: 'parked'}}, now}).articleId,
+    'b',
+  )
+  assert.equal(
+    decideNextAction({items, groups, groupStates: approved, articleStates: {a: {state: 'deferred', defer_until: '2026-10-21T00:00:00Z'}}, now}).articleId,
+    'b',
+  )
+  const capped = decideNextAction({items, groups, groupStates: approved, remainingDailyCapacity: 0, dailyCap: 2, lastSummaryAt: recent, now})
+  assert.equal(capped.action, 'plan-next-group')
+  assert.equal(
+    decideNextAction({items, groups: [...groups, {id: 'g2', autoApproveOn: '2026-11-01'}], groupStates: approved, remainingDailyCapacity: 0, lastSummaryAt: recent, now}).action,
+    'idle',
+  )
+  const paused = {g1: {state: 'paused'}}
+  assert.equal(decideNextAction({items, groups, groupStates: paused, dueFactCount: 3, lastSummaryAt: recent, now}).action, 'recheck-facts')
+  assert.equal(decideNextAction({items, groups, groupStates: paused, now}).action, 'weekly-summary')
+})

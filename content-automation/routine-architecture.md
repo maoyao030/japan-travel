@@ -62,11 +62,11 @@ routine 每次都是全新下載的雲端 session，進度只看 Sanity 與 D1�
 | `scripts/manage-auto-publisher-lock.mjs` | D1 執行鎖 | 已完成 |
 | `scripts/ops-run.mjs` | 每輪開始與結束紀錄 | 已完成 |
 | `scripts/ops-sheet-sync.mjs` | 例外與到期事實同步到規劃總表 | 已完成 |
-| `scripts/article-automation-policy.mjs` | 清單規則、旅行群、生產順序 | 本輪改版 |
-| `scripts/ops-article.mjs` | 文章生產狀態轉換（開始、通過、停放、延後、發布） | 本輪新增 |
-| `scripts/ops-group.mjs` | 旅行群核准狀態 | 本輪新增 |
-| `scripts/routine-next-action.mjs` | 決定這一輪做哪一件事 | 本輪新增 |
-| `studio/scripts/inspect-article-queue.mjs` | Sanity 狀態與下一篇 | 已有，改成依旅行群順序 |
+| `scripts/article-automation-policy.mjs` | 清單規則、旅行群、生產順序 | 已完成 |
+| `scripts/ops-article.mjs` | 文章生產狀態轉換（開始、通過、停放、延後、發布） | 已完成 |
+| `scripts/ops-group.mjs` | 旅行群核准狀態（讀規劃總表的回覆後判斷） | 已完成 |
+| `scripts/routine-next-action.mjs` | 決定這一輪做哪一件事（實測：空清單時回每週摘要） | 已完成 |
+| `studio/scripts/inspect-article-queue.mjs` | Sanity 狀態與下一篇；生產順序已依旅行群 | 已完成 |
 | `studio/scripts/publish-*.mjs`、`release-indexable-article.mjs`、`prepare-parent-hub.mjs` | 上稿、封面、開放索引、建 Hub | 已有 |
 | 定稿工具（文章封包 → Sanity 正文） | 從好材誌移植，改成本站的驗收檔案 | 待做 |
 | 補內連工具 | 讀 D1 待補內連，只加連結標記 | 待做 |
