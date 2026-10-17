@@ -315,3 +315,36 @@ test('待補內連登記不重複，兩端都上線才列為可以補', async (t
   assert.ok((await markLinked({execute: db.execute, linkId: ready[0].link_id}))?.linked_at)
   assert.equal((await listReadyLinks({execute: db.execute, publishedArticleIds: ['a', 'b']})).length, 0)
 })
+
+test('事實同步與重查：依來源網址分組列出到期事實，官方資料改變時寫例外', async (t) => {
+  const db = await openTestDatabase()
+  if (!db) return t.skip('這個 Node 版本沒有 node:sqlite')
+  const {syncFacts, listDueFacts, recordCheck} = await import('../scripts/ops-facts.mjs')
+  const table = {
+    schemaVersion: 1,
+    placeId: 'rebun-island',
+    facts: [
+      {factId: 'F1', claim: '班次', quote: 'q', sourceUrl: 'https://example.invalid/ferry', checkedAt: '2026-10-16', changeType: 'timetable', nextCheckAt: '2027-03-31'},
+      {factId: 'F2', claim: '票價', quote: 'q', sourceUrl: 'https://example.invalid/ferry', checkedAt: '2026-10-16', changeType: 'price', nextCheckAt: '2027-03-15'},
+      {factId: 'F3', claim: '港口位置', quote: 'q', sourceUrl: 'https://example.invalid/map', checkedAt: '2026-10-16', changeType: 'stable'},
+    ],
+  }
+  const outline = {pages: [{articleId: 'rebun-island-transport', headings: [{facts: ['rebun-island:F1', 'rebun-island:F2']}]}]}
+  assert.deepEqual(await syncFacts({execute: db.execute, factTables: [{table, evidencePath: 'content-planning/hokkaido/places/rebun-island/facts.json'}], outlines: [outline]}), {facts: 3, usage: 2})
+
+  assert.deepEqual(await listDueFacts({execute: db.execute, today: '2027-03-01'}), [])
+  const due = await listDueFacts({execute: db.execute, today: '2027-03-01', withinDays: 30})
+  assert.equal(due.length, 1)
+  assert.equal(due[0].sourceUrl, 'https://example.invalid/ferry')
+  assert.deepEqual(due[0].facts.map((fact: any) => fact.fact_id), ['rebun-island:F2', 'rebun-island:F1'])
+  assert.deepEqual(due[0].facts[0].articles, ['rebun-island-transport'])
+
+  const unchanged = await recordCheck({execute: db.execute, factId: 'rebun-island:F2', result: 'unchanged', nextCheckAt: '2028-03-15', now: new Date('2027-03-10T00:00:00Z')})
+  assert.equal(unchanged.next_check_at, '2028-03-15')
+  assert.equal(unchanged.last_checked_at, '2027-03-10')
+  const changed = await recordCheck({execute: db.execute, factId: 'rebun-island:F1', result: 'changed', nextCheckAt: '2027-10-01', note: '夏季班表改成 4 班'})
+  assert.equal(changed.status, 'changed')
+  const [exceptions] = await db.execute(["SELECT kind FROM exceptions WHERE subject = 'rebun-island:F1'"])
+  assert.equal(exceptions[0].kind, 'big-change')
+  await assert.rejects(recordCheck({execute: db.execute, factId: 'rebun-island:F1', result: 'unchanged'}), /下次查核日/)
+})
