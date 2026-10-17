@@ -520,3 +520,24 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 把 `plan/wakkanai-rishiri-rebun` 合併到 `main`（Darren 同意後）。
+
+## 2026-10-18 Claude Code（地端）：觀光協會照片與嵌入規則（分支 `plan/image-sources`）
+
+### Darren 的決定
+
+- 觀光協會與自治體的照片，網站條款允許轉載的就直接用、寫好 credit，不寫信詢問。業界做法是直接拿；Claude Code 指出條款禁止、第三者提供、遊客轉貼照片三種情況仍不能用，Darren 接受用條款判斷。
+- Instagram 與 YouTube 公開貼文用嵌入，不下載。
+
+### 已完成
+
+- 選圖 Skill（`japan-travel-image-finder`）的來源順序、一律不用清單、搜尋步驟、`references/selection-and-licensing.md`（新增條款判斷與「嵌入」一節）、`references/image-packet.md` 同步；圖片封包驗證程式原本就支援 `official-material` 與條款欄位，不用改。
+- `AGENTS.md` 新增「觀光協會照片與嵌入」段落。
+
+### 尚未決定（等 Darren）
+
+- 稚內群 26 頁是否整批核准；體驗與文化切入點研究步驟與觀光協會景點清單比對；客觀狀況直接寫；文章嵌入影片；資料圖元件。
+- 網站的嵌入區塊與資料圖元件還沒做。
+
+### 唯一下一步
+
+- Darren 決定上面五項；同意後寫進規則並開始做稚內群正式大綱。

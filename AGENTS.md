@@ -120,3 +120,10 @@
 
 - 雲端 routine 依 `japan-travel-auto-publisher` 執行時，本檔「每個任務在自己的分支做」「`.agents/working/claude-code.md` 工作檔」「每次最終回覆格式」三條不適用：routine 直接在 `main` 提交 Skill 允許的路徑，不寫工作檔，用 Skill 的「結束回報」。
 - 人工 session 仍照原本的規則。
+
+## 觀光協會照片與嵌入（Darren 2026-10-18 決定）
+
+- 觀光協會與自治體的照片，網站條款允許轉載的（素材庫，或網站採用「政府標準利用規約」、CC BY 等），直接下載使用、照規定寫好 credit，不用另外寫信詢問；條款頁網址記進圖片封包當證據。
+- 不用：條款禁止轉載或沒寫轉載條件的、標示第三者提供或攝影的、觀光協會 Instagram 轉貼的遊客照片。
+- Instagram 與 YouTube 的公開貼文只用平台的嵌入功能，不下載；官方帳號優先。網站的嵌入區塊還沒做。
+- 細節見 `japan-travel-image-finder` 的 `references/selection-and-licensing.md`。本段取代上方「本站固定原則」圖片一條中與此衝突的部分。

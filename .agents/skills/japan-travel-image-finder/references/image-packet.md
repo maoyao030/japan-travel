@@ -107,7 +107,7 @@
 - `sourceType`：
   - `commons-photo`：`provider` 為 `Wikimedia Commons`，`sourcePageUrl` 是 `commons.wikimedia.org/wiki/File:` 頁，`licenseName` 是 CC0、Public domain、CC BY 或 CC BY-SA 的版本之一，`creditDraft` 要含作者與授權名稱。
   - `stock-photo`：`provider` 為 Unsplash、Pexels 或 Pixabay，規則同好材誌。
-  - `official-material`：觀光協會或自治體素材。必填 `termsUrl`、`termsCheckedAt`、`commercialUseAllowed: true`、`modificationAllowed: true`、`creditRequirement`；`applicationRequired` 為 `true` 時要有 `applicationApprovedAt`。
+  - `official-material`：觀光協會或自治體的照片（素材庫，或網站條款允許轉載的照片）。`termsUrl` 填條款頁網址。必填 `termsUrl`、`termsCheckedAt`、`commercialUseAllowed: true`、`modificationAllowed: true`、`creditRequirement`；`applicationRequired` 為 `true` 時要有 `applicationApprovedAt`。
   - `own-photo`：必填 `photographer`、`takenAt`；不需要授權網址。
   - `ai-generated`：`provider` 為 `OpenAI ImageGen`，必填 `generatedAt`、`promptSummary`、`factualLimits`、`disclosureDraft`；圖說與揭露要含「AI」，`checks.onImageLabel` 為 `true` 表示圖片角落已印「AI 示意圖」。不得填寫任何來源或授權欄位。不能用在 `site-identification` 與 `route-timeline`。
   - `diagram`：`provider` 為 `self-made`，必填 `dataFile`（`images/diagrams/<diagramId>.json`）、`factIds`、`svgFile`；`route` 類型的資料檔要有 `scaleNote`。署名草案寫「本站製作示意圖」。
