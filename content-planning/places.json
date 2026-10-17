@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "note": "全站地點清單：地點的所屬群、出入口、鄰近地點與狀態。鄰近地點與出入口可以指向別群或還沒規劃的地點（先登記成 candidate）。格式見選題 Skill 的 next-group.md 第 6 步。",
+  "places": [
+    {
+      "placeId": "wakkanai",
+      "nameZh": "稚內",
+      "nameJa": "稚内",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": "hokkaido-wakkanai",
+      "status": "planned",
+      "gatewayPlaceIds": ["sapporo", "asahikawa"],
+      "nearbyPlaceIds": ["cape-soya", "rishiri-island", "rebun-island"]
+    },
+    {
+      "placeId": "cape-soya",
+      "nameZh": "宗谷岬",
+      "nameJa": "宗谷岬",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": "hokkaido-wakkanai",
+      "status": "planned",
+      "gatewayPlaceIds": ["wakkanai"],
+      "nearbyPlaceIds": ["wakkanai"]
+    },
+    {
+      "placeId": "rishiri-island",
+      "nameZh": "利尻島",
+      "nameJa": "利尻島",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": "hokkaido-wakkanai",
+      "status": "planned",
+      "gatewayPlaceIds": ["wakkanai"],
+      "nearbyPlaceIds": ["rebun-island", "wakkanai"]
+    },
+    {
+      "placeId": "rebun-island",
+      "nameZh": "禮文島",
+      "nameJa": "礼文島",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": "hokkaido-wakkanai",
+      "status": "planned",
+      "gatewayPlaceIds": ["wakkanai"],
+      "nearbyPlaceIds": ["rishiri-island", "wakkanai"]
+    },
+    {
+      "placeId": "asahikawa",
+      "nameZh": "旭川",
+      "nameJa": "旭川",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": null,
+      "status": "candidate",
+      "gatewayPlaceIds": [],
+      "nearbyPlaceIds": ["wakkanai"],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "稚內 到", "suggestion": "稚內 到 旭川", "checkedAt": "2026-10-17"},
+        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "紋別から ", "suggestion": "紋別から 旭川", "checkedAt": "2026-10-17"}
+      ],
+      "note": "稚內與紋別的共同出入口；找下一群時的第一名候選（2026-10-17 試跑）。"
+    },
+    {
+      "placeId": "sapporo",
+      "nameZh": "札幌",
+      "nameJa": "札幌",
+      "kind": "region",
+      "region": "hokkaido",
+      "groupId": null,
+      "status": "candidate",
+      "gatewayPlaceIds": [],
+      "nearbyPlaceIds": [],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "稚內 到", "suggestion": "稚內 到 札幌", "checkedAt": "2026-10-17"},
+        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "稚内から ", "suggestion": "稚内から 札幌", "checkedAt": "2026-10-17"}
+      ],
+      "note": "大城市，規劃時改用區當地點。"
+    }
+  ],
+  "groups": [
+    {
+      "groupId": "hokkaido-wakkanai",
+      "label": "稚內群",
+      "region": "hokkaido",
+      "placeIds": ["wakkanai", "cape-soya", "rishiri-island", "rebun-island"],
+      "gatewayPlaceIds": ["sapporo", "asahikawa"],
+      "selectedAt": "2026-10-16",
+      "reasons": [
+        "地區的第一群，Darren 選北海道（2026-10-16）。",
+        "四地共用稚內港與 Heartland Ferry，搜尋結果前十名有三個網址重複出現（2026-10-16 Ahrefs）。",
+        "出入口依中文自動完成「稚內 到 札幌」「稚內 到 旭川」（2026-10-17）。"
+      ]
+    }
+  ]
+}

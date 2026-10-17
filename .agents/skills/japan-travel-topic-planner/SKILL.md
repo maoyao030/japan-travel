@@ -11,7 +11,7 @@ description: Plan which pages the Japan travel site should build for a region be
 
 1. 讀取根目錄 `AGENTS.md`、`PROJECT_STATUS.md`、`content-planning/handoff-2026-10-15.md`、`content-planning/handoff-2026-10-16.md`，以及本區域既有的規劃檔與發現清單（`content-planning/<區域>/`）。
 2. 讀取 `src/data/categories.ts`、`content-automation/article-queue.json`，確認目前網站有哪些分類與已核准的頁面，避免重複規劃同一網址。
-3. 完整閱讀 [選題流程](references/selection-workflow.md)、[找下一群](references/next-group.md) 與 [關鍵字來源](references/keyword-sources.md)。要交接頁面規格時，再讀 [頁面規格](references/page-spec.md)；要處理研究帶回的新題目時，讀 [發現清單](references/discovery-log.md)。
+3. 完整閱讀 [選題流程](references/selection-workflow.md)、[找下一群](references/next-group.md) 與 [關鍵字來源](references/keyword-sources.md)。寫全站地點清單、分工表、地點事實表或群大綱時，讀 [規劃檔格式](references/planning-files.md) 並跑 `node scripts/check-planning.mjs`；要交接頁面規格時，再讀 [頁面規格](references/page-spec.md)；要處理研究帶回的新題目時，讀 [發現清單](references/discovery-log.md)。
 4. 鎖定本次範圍：一個區域，例如北海道；或區域內的一組地點，例如稚內、利尻島、禮文島。
 
 ## 核心原則

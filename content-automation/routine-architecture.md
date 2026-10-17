@@ -71,6 +71,7 @@ routine 每次都是全新下載的雲端 session，進度只看 Sanity 與 D1�
 | 定稿工具（文章封包 → Sanity 正文） | 從好材誌移植，改成本站的驗收檔案 | 待做 |
 | 補內連工具 | 讀 D1 待補內連，只加連結標記 | 待做 |
 | 地點事實表同步 | 把事實的變動類型與下次查核日寫進 D1 | 待做 |
+| `scripts/planning-formats.mjs`、`scripts/check-planning.mjs` | 全站地點清單、分工表、地點事實表、群大綱的格式檢查 | 已完成 |
 | `content-automation/routine-prompt.md` | routine 的提示全文 | 待做 |
 
 ## 不做的事
