@@ -212,6 +212,7 @@ test('來源打不開先延後一天，連續延後超過 3 天就停放', async
   await startArticle({...base, now: day(0)})
   const deferred = await recordFailure({execute, articleId: base.articleId, kind: 'source-unreachable', reason: '503', now: day(0)})
   assert.equal(deferred.status, 'deferred')
+  assert.equal(deferred.article.attempts, 0)
   assert.equal((await startArticle({...base, now: day(0.5)})).status, 'refused')
   await startArticle({...base, now: day(2)})
   assert.equal((await recordFailure({execute, articleId: base.articleId, kind: 'source-unreachable', reason: '503', now: day(2)})).status, 'deferred')
@@ -255,8 +256,14 @@ test('每輪只做一件事：續做、補登記、補內連、規劃、核准�
     decideNextAction({...base, items: [{...items[1], sanityStatus: 'staged_noindex'}], articleStates: {a: {state: 'parked'}}}).action,
     'idle',
   )
+  assert.equal(decideNextAction({...base, items: [{...items[1], sanityStatus: 'staged_noindex'}]}).resumeFrom, 'staged')
+  const finalize = decideNextAction({...base, articleStates: {a: {state: 'accepted'}}})
+  assert.deepEqual([finalize.action, finalize.resumeFrom, finalize.articleId], ['resume', 'finalize', 'a'])
+  const landing = decideNextAction({...base, items: [{...items[1], routeMode: 'hub-landing', sanityStatus: 'staged_noindex'}]})
+  assert.equal(landing.routeMode, 'hub-landing')
   const catchUp = decideNextAction({...base, articleStates: {guide: {state: 'accepted'}}})
   assert.deepEqual([catchUp.action, catchUp.articleId], ['catch-up', 'guide'])
+  assert.equal(decideNextAction({...base, articleStates: {guide: {state: 'parked'}}}).action, 'produce')
   assert.equal(decideNextAction({...base, readyLinkCount: 1}).action, 'backfill-links')
 
   const produce = decideNextAction(base)
@@ -365,6 +372,8 @@ test('上稿或 CI 失敗不停放、下一輪續做，連續 3 次才停放；�
   assert.equal((await recordFailure({...base, kind: 'publish', reason: 'CI 失敗'})).status, 'accepted')
   assert.equal((await recordFailure({...base, kind: 'publish', reason: 'CI 失敗'})).publishFailures, 2)
   assert.equal((await recordFailure({...base, kind: 'publish', reason: 'CI 失敗'})).status, 'parked')
+  const {unparkArticle} = await import('../scripts/ops-article.mjs')
+  assert.equal((await unparkArticle(base)).article.publish_failures, 0)
   await startArticle({...base, articleId: 'other'})
   await markAccepted({...base, articleId: 'other'})
   await recordFailure({...base, articleId: 'other', kind: 'publish', reason: 'x'})
@@ -376,4 +385,32 @@ test('上稿或 CI 失敗不停放、下一輪續做，連續 3 次才停放；�
   assert.equal((await listReadyLinks({execute: db.execute, publishedArticleIds: ['a', 'b']})).length, 0)
   const [exceptions] = await db.execute(["SELECT subject FROM exceptions WHERE kind = 'other'"])
   assert.equal(exceptions[0].subject, 'a → b')
+})
+
+test('補內連後 CI 連續失敗 3 次就略過；登記時沒有網址的跨群連結用清單網址補上', async (t) => {
+  const db = await openTestDatabase()
+  if (!db) return t.skip('這個 Node 版本沒有 node:sqlite')
+  const {registerPendingLinks, listReadyLinks, recordLinkFailure} = await import('../scripts/ops-links.mjs')
+  await registerPendingLinks({
+    execute: db.execute,
+    links: [
+      {fromArticleId: 'a', toArticleId: 'b', section: null, sentence: '看 B', anchorText: 'B', targetPath: '/b/', source: 'outline'},
+      {fromArticleId: 'a', toArticleId: 'c', section: null, sentence: '看 C', anchorText: 'C', targetPath: null, source: 'cross-group'},
+    ],
+  })
+  const published = ['a', 'b', 'c']
+  assert.deepEqual((await listReadyLinks({execute: db.execute, publishedArticleIds: published})).map((row) => row.to_article_id), ['b'])
+  const withPaths = await listReadyLinks({execute: db.execute, publishedArticleIds: published, pagePaths: {c: '/c/'}})
+  assert.deepEqual(withPaths.map((row) => [row.to_article_id, row.target_path]), [['b', '/b/'], ['c', '/c/']])
+
+  const linkId = withPaths[0].link_id
+  assert.equal((await recordLinkFailure({execute: db.execute, linkId, reason: 'CI 失敗'}))?.failures, 1)
+  assert.equal((await recordLinkFailure({execute: db.execute, linkId, reason: 'CI 失敗'}))?.failures, 2)
+  assert.ok((await recordLinkFailure({execute: db.execute, linkId, reason: 'CI 失敗'}))?.skipped_at)
+  assert.deepEqual(
+    (await listReadyLinks({execute: db.execute, publishedArticleIds: published, pagePaths: {c: '/c/'}})).map((row) => row.to_article_id),
+    ['c'],
+  )
+  const [exceptions] = await db.execute(["SELECT detail FROM exceptions WHERE kind = 'other'"])
+  assert.match(exceptions[0].detail, /CI 連續失敗 3 次/)
 })

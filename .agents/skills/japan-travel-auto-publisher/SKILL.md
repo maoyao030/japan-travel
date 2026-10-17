@@ -23,7 +23,7 @@ description: Run one scheduled round of the Japan travel site routine — take t
 1. 拿鎖：`node scripts/manage-auto-publisher-lock.mjs acquire --owner=routine`。回 `busy` 代表上一輪還沒結束：不記錄、不 commit，直接結束。回 `acquired` 時記下 token，**之後不論成功失敗都要放鎖**。
 2. 檢查規劃與清單：`npm run queue:validate`、`npm run planning:check`。失敗就記開始（第 5 步，種類 `maintain`）後直接收尾，結果 `failed`。
 3. 讀 Sanity 狀態：`studio/` 內 `npx sanity exec scripts/inspect-article-queue.mjs > ../.tmp/queue-state.json 2> ../.tmp/inspect.err`。
-4. 決定這一輪做什麼：`node scripts/routine-next-action.mjs --sanity=.tmp/queue-state.json`。輸出的 `action` 決定下面要執行哪一段；`articleId`、`groupId`、`batchId`、`targetPath` 直接用輸出的值。
+4. 決定這一輪做什麼：`node scripts/routine-next-action.mjs --sanity=.tmp/queue-state.json`。輸出的 `action` 決定下面要執行哪一段；`articleId`、`groupId`、`batchId`、`targetPath`、`routeMode`、`resumeFrom` 直接用輸出的值。
 5. 記錄開始：`node scripts/ops-run.mjs start --kind=<種類> [--article=<articleId>]`，記下 runId。種類對照：`resume`、`catch-up`、`produce`、`backfill-links` 用 `produce`；`plan-next-group` 用 `plan`（同一天只規劃一次就是看這個種類）；`evaluate-group`、`recheck-facts`、`idle` 用 `maintain`；`weekly-summary` 用 `summary`。
 
 ## 依 action 執行
@@ -51,32 +51,38 @@ description: Run one scheduled round of the Japan travel site routine — take t
    - 來源網站打不開：`--kind=source-unreachable`（延後一天；從第一次延後算起超過 3 天就停放）。
    - 其他：`--kind=other`。
    判退的整個資料夾移到 `content-experiments/<article-id>-<YYYYMMDD>-rejected/`（`content-production/<article-id>/` 不留檔），commit 這個資料夾當證據。結果：重寫 `fixed`、停放 `parked`、延後 `deferred`。
-6. 通過後，作者另存 `publication.json`（`seoTitle`、`seoDescription`、`excerpt`），執行 `npm run release:finalize -- content-production/<article-id>`。
-7. 依 `$japan-travel-image-finder` 完成封面與文內圖（含 `npm run image:prepare:cover -- content-production/<article-id> --download`）。
-8. 第 6、7 步任何一步失敗：`ops-article.mjs fail --article=<id> --kind=publish --reason=<原因>`，封包照樣 commit，結果 `failed`。
-9. `node scripts/ops-article.mjs accepted --article=<id>`。
-10. Sanity 暫存：`publish-prepared-article.mjs ../.tmp/auto-publisher/<article-id>/sanity/article.json` dry-run 後 `--apply`；`publish-article-cover.mjs ../content-production/<article-id>` dry-run 後 `--apply`；重新 inspect 確認 `staged_noindex` 且 `hasCover`。
+6. 驗收通過：`node scripts/ops-article.mjs accepted --article=<id>`（之後任何一步失敗，下一輪都從「續做」接手，不重寫）。
+7. 作者另存 `publication.json`（`seoTitle`、`seoDescription`、`excerpt`），執行 `npm run release:finalize -- content-production/<article-id>`。
+8. 依 `$japan-travel-image-finder` 完成封面與文內圖（含 `npm run image:prepare:cover -- content-production/<article-id> --download`）。
+9. 第 7、8 步任何一步失敗：`ops-article.mjs fail --article=<id> --kind=publish --reason=<原因>`，封包照樣 commit，結果 `failed`。
+10. Sanity 暫存：`publish-prepared-article.mjs ../.tmp/auto-publisher/<article-id>/sanity/article.json` dry-run 後 `--apply`；`publish-article-cover.mjs ../content-production/<article-id>` dry-run 後 `--apply`。`routeMode` 是 `hub-landing`（地點主頁）時，接著 `prepare-parent-hub.mjs <batchId> --set-landing` dry-run 取得 `currentRevision`，再 `--set-landing --expected-revision=<rev> --apply`，把這篇掛成父 Hub 的入口文章（沒掛的話網址會不符清單，開放索引一定失敗）。重新 inspect 確認 `staged_noindex` 且 `hasCover`。
 11. 開放索引：專案根目錄 `npm run ci`；通過後 `release-indexable-article.mjs ../content-production/<article-id>` dry-run 取得 revision，再 `--expected-revision=<rev> --apply`。第 10、11 步失敗：`fail --kind=publish`（狀態不變，下一輪從「續做」接手；連續 3 次才停放），**不得開放索引**，結果 `failed`。
 12. 開放索引後重新 inspect：`parentHubs[]` 裡這個 `batchId` 的 `shouldReleaseIndex` 是 true 時，`prepare-parent-hub.mjs <batchId> --release-index` dry-run 後帶 revision `--apply`。
-13. 登記：`ops-article.mjs published --article=<id>`；`node scripts/ops-links.mjs register --article=<id> --outline=<群大綱> --sanity=.tmp/queue-state.json`；`node scripts/ops-facts.mjs sync`。結果 `published`。
+13. 登記，**依這個順序**（前兩個重跑不會重複登記；最後才標已發布，中途斷掉下一輪會「補登記」）：`node scripts/ops-links.mjs register --article=<id> --outline=<群大綱> --sanity=.tmp/queue-state.json`；`node scripts/ops-facts.mjs sync`；`ops-article.mjs published --article=<id>`。結果 `published`。
+14. 第 12、13 步失敗：`fail --kind=publish`，結果 `failed`。文章已經開放索引，下一輪會「補登記」；連續 3 次就停放並寫例外。
 
-### resume：續做已暫存 noindex 的文章
+### resume：續做驗收已通過的文章
 
-不重新寫稿，也**不重跑定稿與 `publish-prepared-article`**（正文已經在 Sanity）。
+不重新寫稿。輸出的 `resumeFrom` 決定從哪裡接：
 
-- `content-production/<article-id>/manifest.json` 不存在（上一輪在提交前中斷）：不重寫，`ops-article.mjs fail --article=<id> --kind=other --reason=封包遺失`，結果 `failed`。
-- 沒有封面（`hasCover` 是 false）：做 produce 第 7 步，再執行 `publish-article-cover.mjs`（dry-run 後 `--apply`），接 produce 第 9、11、12、13 步。
-- 已有封面：先 `ops-article.mjs accepted --article=<id>`（已是 accepted 也沒關係），接 produce 第 11、12、13 步。
+- `finalize`（驗收通過，但定稿、選圖或上稿失敗，Sanity 還沒有這篇）：`content-production/<article-id>/` 裡沒有 `reader-preview.md` 就 `ops-article.mjs fail --article=<id> --kind=other --reason=封包遺失`，結果 `failed`；有就從 produce 第 7 步做到第 14 步。
+- `staged`（Sanity 已暫存 noindex）：**不重跑定稿與 `publish-prepared-article`**（正文已經在 Sanity）。
+  - `content-production/<article-id>/manifest.json` 不存在（上一輪在提交前中斷）：不重寫，`ops-article.mjs fail --article=<id> --kind=other --reason=封包遺失`，結果 `failed`。
+  - 沒有封面（`hasCover` 是 false）：做 produce 第 8 步，再執行 `publish-article-cover.mjs`（dry-run 後 `--apply`）。
+  - 先 `ops-article.mjs accepted --article=<id>`（已是 accepted 也沒關係）；`routeMode` 是 `hub-landing` 時做第 10 步的 `--set-landing`（已經掛好會回 `landing-already-set`，不用 apply）；接 produce 第 11～14 步。
 
 ### catch-up：補登記
 
-文章已經在 Sanity 開放索引，但上一輪在登記前中斷。只做 produce 第 12、13 步，結果 `published`。
+文章已經在 Sanity 開放索引，但上一輪在登記前中斷。只做 produce 第 12～14 步，結果 `published`；失敗照第 14 步記 `fail --kind=publish`。
 
 ### backfill-links：補內連
 
 1. `node scripts/ops-links.mjs ready --sanity=.tmp/queue-state.json`，一輪最多處理 5 個，依 `link_id` 由小到大。
-2. 每個先 `apply-pending-link.mjs --source=<from_article_id> --target=<to_article_id> --target-path=<target_path> --anchor=<anchor_text> --sentence=<sentence>` dry-run，再加 `--apply`，記下輸出的 `recoveryFile`。找不到連結句或錨文字不唯一：`node scripts/ops-links.mjs skip --id=<link_id> --reason=<錯誤訊息>`，不自己改字。
-3. 全部寫完後 `npm run ci`。失敗：依補的**相反順序**逐一 `apply-pending-link.mjs --rollback=<recoveryFile>` 回復，結果 `failed`。通過：逐一 `node scripts/ops-links.mjs linked --id=<link_id>`，結果 `done`。
+2. 每個先 `apply-pending-link.mjs --source=<from_article_id> --target=<to_article_id> --target-path=<target_path> --anchor=<anchor_text> --sentence=<sentence>` dry-run：
+   - 錯誤是「這個段落已經連到同一個網址」（上一輪補好了但沒標記）：`node scripts/ops-links.mjs linked --id=<link_id>`，不再 apply。
+   - 其他錯誤（找不到連結句、錨文字不唯一等）：`node scripts/ops-links.mjs skip --id=<link_id> --reason=<錯誤訊息>`，不自己改字。
+   - 沒有錯誤：加 `--apply`，記下輸出的 `recoveryFile`；apply 失敗就 `ops-links.mjs failed --id=<link_id> --reason=<錯誤訊息>`，換下一個。
+3. 一個都沒補上（全部標記或略過）：不跑 CI，結果 `done`。有補上才跑 `npm run ci`。失敗：依補的**相反順序**逐一 `apply-pending-link.mjs --rollback=<recoveryFile>` 回復，再對每個回復的連結 `ops-links.mjs failed --id=<link_id> --reason=CI 失敗`（同一個連結失敗 3 次會自動略過並寫例外），結果 `failed`。通過：逐一 `node scripts/ops-links.mjs linked --id=<link_id>`，結果 `done`。
 
 ### recheck-facts：事實重查
 

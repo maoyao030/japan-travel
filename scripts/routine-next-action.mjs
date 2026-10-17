@@ -24,11 +24,17 @@ function isWaiting(articleState, now) {
   return articleState.state === 'deferred' && Boolean(articleState.defer_until) && articleState.defer_until > now.toISOString()
 }
 
-const describe = (item) => ({articleId: item.articleId, groupId: item.groupId, batchId: item.batchId ?? null, targetPath: item.targetPath ?? null})
+const describe = (item) => ({
+  articleId: item.articleId,
+  groupId: item.groupId,
+  batchId: item.batchId ?? null,
+  targetPath: item.targetPath ?? null,
+  routeMode: item.routeMode ?? null,
+})
 
 /**
  * 純判斷，不讀寫任何東西。
- * items：依生產順序，每項 {articleId, groupId, batchId, targetPath, sanityStatus}；groupId 為 null 表示不屬於旅行群。
+ * items：依生產順序，每項 {articleId, groupId, batchId, targetPath, routeMode, sanityStatus}；groupId 為 null 表示不屬於旅行群。
  * groupStates：{groupId: {state, checkedToday}}；checkedToday 表示今天已經讀過規劃總表。
  * lastPlanAt：今天（台北日期）是否已經跑過規劃，用 plannedToday 表示。
  */
@@ -49,16 +55,20 @@ export function decideNextAction({
   const blocked = items.filter((item) => item.sanityStatus?.startsWith('blocked_'))
   if (blocked.length > 0) notes.push(`Sanity 狀態異常，已略過：${blocked.map((item) => item.articleId).join('、')}`)
 
-  // 1 續做：已暫存 noindex 的文章（停放的除外）。
-  const staged = items.find((item) => item.sanityStatus === 'staged_noindex' && articleStates[item.articleId]?.state !== 'parked')
-  if (staged) return {action: 'resume', ...describe(staged), notes}
+  // 1 續做（停放的除外）：已暫存 noindex 的文章從封面或 CI 接手（resumeFrom staged）；
+  //   驗收已通過、還沒暫存到 Sanity 的文章（定稿、選圖或上稿失敗）從定稿接手，不重寫（resumeFrom finalize）。
+  const stateOf = (item) => articleStates[item.articleId]?.state
+  const staged = items.find((item) => item.sanityStatus === 'staged_noindex' && stateOf(item) !== 'parked')
+  if (staged) return {action: 'resume', resumeFrom: 'staged', ...describe(staged), notes}
+  const acceptedUnstaged = items.find((item) => item.sanityStatus === 'unpublished' && stateOf(item) === 'accepted')
+  if (acceptedUnstaged) return {action: 'resume', resumeFrom: 'finalize', ...describe(acceptedUnstaged), notes}
 
-  // 2 補登記：Sanity 已開放索引，但 D1 還沒記成已發布（上一輪在登記前中斷）。
+  // 2 補登記：Sanity 已開放索引，但 D1 還沒記成已發布（上一輪在登記前中斷）；停放的除外，失敗照上稿失敗計次。
   const unregistered = items.find(
     (item) =>
       item.sanityStatus === 'published_indexable' &&
       articleStates[item.articleId] &&
-      articleStates[item.articleId].state !== 'published',
+      !['published', 'parked'].includes(stateOf(item)),
   )
   if (unregistered) return {action: 'catch-up', ...describe(unregistered), notes}
 
@@ -113,6 +123,7 @@ async function loadInputs({execute, sanityStatePath, now}) {
     groupId: getItemTravelGroup(queue, item)?.id ?? null,
     batchId: getItemBatch(queue, item)?.id ?? null,
     targetPath: item.targetPath,
+    routeMode: item.routeMode ?? null,
     sanityStatus: sanityById.get(item.articleId) ?? 'unknown',
   }))
   const groups = getTravelGroups(queue).map((group) => ({id: group.id, autoApproveOn: group.approval?.autoApproveOn ?? null}))
@@ -120,12 +131,13 @@ async function loadInputs({execute, sanityStatePath, now}) {
   const [articleRows, groupRows, linkRows, [facts], [summary], [plan]] = await execute([
     'SELECT article_id, state, defer_until FROM article_status',
     'SELECT group_id, state, updated_at FROM group_status',
-    'SELECT from_article_id, to_article_id FROM pending_links WHERE linked_at IS NULL AND skipped_at IS NULL',
+    'SELECT from_article_id, to_article_id, target_path FROM pending_links WHERE linked_at IS NULL AND skipped_at IS NULL',
     `SELECT COUNT(*) AS n FROM facts WHERE next_check_at IS NOT NULL AND next_check_at <= ${sqlLiteral(today)} AND status != 'removed'`,
     "SELECT MAX(started_at) AS last FROM runs WHERE kind = 'summary' AND result IN ('done', 'no-work')",
     "SELECT MAX(started_at) AS last FROM runs WHERE kind = 'plan'",
   ])
   const published = (articleId) => sanityById.get(articleId) === 'published_indexable'
+  const pathById = new Map((sanityState.items ?? []).map((item) => [item.articleId, item.targetPath]))
   const remaining = sanityState.cadence?.remainingDailyCapacity
   return {
     items,
@@ -136,7 +148,10 @@ async function loadInputs({execute, sanityStatePath, now}) {
     ),
     remainingDailyCapacity: typeof remaining === 'number' ? remaining : Number.POSITIVE_INFINITY,
     dailyCap: queue.publicationCadence.maxArticlesPerDay,
-    readyLinkCount: linkRows.filter((row) => published(row.from_article_id) && published(row.to_article_id)).length,
+    // 和 ops-links.mjs ready 同一個條件：兩端都上線，而且有網址（登記時沒有的用清單網址補）。
+    readyLinkCount: linkRows.filter(
+      (row) => published(row.from_article_id) && published(row.to_article_id) && (row.target_path || pathById.get(row.to_article_id)),
+    ).length,
     dueFactCount: facts?.n ?? 0,
     lastSummaryAt: summary?.last ?? null,
     plannedToday: Boolean(plan?.last) && taipeiDate(new Date(plan.last)) === today,

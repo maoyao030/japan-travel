@@ -74,7 +74,7 @@ export const markPublished = ({execute, articleId, now = new Date()}) => setStat
  * 記錄失敗並決定下一步：
  * - facts：還沒到 MAX_ATTEMPTS 回到 queued 讓下一輪重寫；到了就停放。
  * - needs-outline、other：直接停放。
- * - source-unreachable：延後一天；從第一次延後起超過 MAX_DEFER_DAYS 天就停放。
+ * - source-unreachable：延後一天；從第一次延後起超過 MAX_DEFER_DAYS 天就停放。這一輪不算一次寫作（輪數減回去）。
  * - publish（定稿、上稿、CI 等非內容失敗）：狀態不變，下一輪續做；累積 MAX_PUBLISH_FAILURES 次就停放。
  * 停放時同時寫一筆例外，每週同步到規劃總表。
  */
@@ -114,7 +114,7 @@ export async function recordFailure({execute, articleId, kind, reason, now = new
     }
     const deferUntil = new Date(now.getTime() + DAY).toISOString()
     await execute([
-      `UPDATE article_status SET state = 'deferred', defer_until = ${sqlLiteral(deferUntil)},
+      `UPDATE article_status SET state = 'deferred', defer_until = ${sqlLiteral(deferUntil)}, attempts = MAX(attempts - 1, 0),
         first_deferred_at = ${sqlLiteral(firstDeferredAt)}, park_reason = ${sqlLiteral(reason)}, updated_at = ${sqlLiteral(at)}
         WHERE article_id = ${sqlLiteral(articleId)}`,
     ])
@@ -134,10 +134,10 @@ export async function recordFailure({execute, articleId, kind, reason, now = new
   return park(kind, reason)
 }
 
-/** 人工處理完停放原因後，讓文章回到清單；輪數歸零。 */
+/** 人工處理完停放原因後，讓文章回到清單；輪數與上稿失敗次數歸零。 */
 export async function unparkArticle({execute, articleId, now = new Date()}) {
   const results = await execute([
-    `UPDATE article_status SET state = 'queued', attempts = 0, park_kind = NULL, park_reason = NULL,
+    `UPDATE article_status SET state = 'queued', attempts = 0, publish_failures = 0, park_kind = NULL, park_reason = NULL,
       defer_until = NULL, first_deferred_at = NULL, updated_at = ${sqlLiteral(now.toISOString())}
       WHERE article_id = ${sqlLiteral(articleId)}`,
     selectSql(articleId),

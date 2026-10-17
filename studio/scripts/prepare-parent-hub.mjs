@@ -1,7 +1,7 @@
 import path from 'node:path'
 import {getCliClient} from 'sanity/cli'
 
-import {findQueueBatch, loadArticleQueue} from '../../scripts/article-automation-policy.mjs'
+import {decideHubLandingAction, findQueueBatch, loadArticleQueue} from '../../scripts/article-automation-policy.mjs'
 
 /**
  * 依 article-queue.json 的 batches[].parentHub 建立（或開放索引）批次的父 Hub。
@@ -11,12 +11,17 @@ import {findQueueBatch, loadArticleQueue} from '../../scripts/article-automation
  *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --apply         # 建立父 Hub（ready、noindex=true）
  *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --release-index # 預覽開放索引
  *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --release-index --expected-revision=<rev> --apply
+ *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --set-landing   # 預覽把地點主頁掛成入口文章
+ *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --set-landing --expected-revision=<rev> --apply
  *
  * 父 Hub 一律先以 noindex=true 建立；只有本批至少一篇文章已開放索引後，才允許 --release-index。
+ * --set-landing：本批的地點主頁（routeMode hub-landing）暫存到 Sanity 後、開放索引前執行，
+ * 讓主頁的網址是 /<分類>/<Hub>/；主題頁是否可索引從此跟著入口文章的 noindex。
  */
 const argumentsList = process.argv.slice(2)
 const applyChanges = argumentsList.includes('--apply')
 const releaseIndex = argumentsList.includes('--release-index')
+const setLanding = argumentsList.includes('--set-landing')
 const expectedRevision = argumentsList
   .find((argument) => argument.startsWith('--expected-revision='))
   ?.slice('--expected-revision='.length)
@@ -24,7 +29,7 @@ const batchId = argumentsList.find((argument) => !argument.startsWith('--'))
 
 if (!batchId) {
   throw new Error(
-    '用法：sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> [--release-index] [--expected-revision=<rev>] [--apply]',
+    '用法：sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> [--release-index|--set-landing] [--expected-revision=<rev>] [--apply]',
   )
 }
 
@@ -35,10 +40,12 @@ const queue = await loadArticleQueue(
 )
 const batch = findQueueBatch(queue, batchId)
 if (!batch) throw new Error(`找不到批次：${batchId}`)
+if (releaseIndex && setLanding) throw new Error('--release-index 與 --set-landing 要分開執行')
 
 const copy = batch.parentHub
 const hubId = batch.parentHubId
 const batchDocumentIds = batch.items.map((item) => item.documentId)
+const landingArticleId = batch.items.find((item) => item.routeMode === 'hub-landing')?.documentId ?? null
 
 function paragraphsToBlocks(paragraphs) {
   return paragraphs.map((paragraph, index) => ({
@@ -92,12 +99,27 @@ async function fetchSnapshot() {
         "checklistCount": count(checklist),
         seoTitle,
         seoDescription,
-        "parentHubId": parentHub._ref
+        "parentHubId": parentHub._ref,
+        "landingArticleId": landingArticle._ref
       },
       "draftIds": *[_id == $draftId]._id,
-      "indexableArticleIds": *[_type == "article" && _id in $articleIds && noindex == false && defined(cover.asset)]._id
+      "indexableArticleIds": *[_type == "article" && _id in $articleIds && noindex == false && defined(cover.asset)]._id,
+      "landingArticle": *[_id == $landingId][0]{
+        _id,
+        _type,
+        "slug": slug.current,
+        "primaryHubId": primaryHub._ref,
+        "bodyCount": count(body)
+      },
+      "landingDraftIds": *[_id == $landingDraftId]._id
     }`,
-    {hubId, draftId: `drafts.${hubId}`, articleIds: batchDocumentIds},
+    {
+      hubId,
+      draftId: `drafts.${hubId}`,
+      articleIds: batchDocumentIds,
+      landingId: landingArticleId ?? '',
+      landingDraftId: landingArticleId ? `drafts.${landingArticleId}` : '',
+    },
   )
 }
 
@@ -127,8 +149,18 @@ if (before.draftIds.length > 0) {
 validateExistingHub(before.hub)
 
 const indexableCount = before.indexableArticleIds.length
+const landingDecision = setLanding
+  ? decideHubLandingAction({
+      batch,
+      hub: before.hub,
+      article: before.landingArticle,
+      articleDraftExists: before.landingDraftIds.length > 0,
+    })
+  : null
 let action = 'none'
-if (!before.hub) {
+if (landingDecision) {
+  action = landingDecision.action
+} else if (!before.hub) {
   action = releaseIndex ? 'blocked-hub-missing' : 'create-ready-noindex'
 } else if (releaseIndex) {
   if (before.hub.noindex === false) action = 'already-indexable'
@@ -148,18 +180,23 @@ console.log(
       currentRevision: before.hub?._rev ?? null,
       currentNoindex: before.hub?.noindex ?? null,
       indexableArticleCount: indexableCount,
+      ...(landingDecision ? {landingArticleId: landingDecision.articleId ?? null, currentLandingId: before.hub?.landingArticleId ?? null} : {}),
     },
     null,
     2,
   ),
 )
 
+const blockedMessages = {
+  'blocked-hub-missing': '父 Hub 尚未建立；請先不帶參數建立',
+  'blocked-no-indexable-article': '本批尚無已開放索引的文章，父 Hub 維持 noindex',
+  'blocked-no-landing-item': '本批沒有地點主頁（routeMode hub-landing），不需要 --set-landing',
+  'blocked-landing-conflict': '父 Hub 已經掛了別篇入口文章，拒絕覆蓋',
+  'blocked-article-draft': 'Sanity 有地點主頁的同 ID 草稿，拒絕自動處理',
+  'blocked-article-not-staged': '地點主頁還沒暫存到 Sanity，或 slug、主要 Hub 與清單不一致',
+}
 if (action.startsWith('blocked-')) {
-  throw new Error(
-    action === 'blocked-hub-missing'
-      ? '父 Hub 尚未建立，不能開放索引；請先不帶 --release-index 建立'
-      : '本批尚無已開放索引的文章，父 Hub 維持 noindex',
-  )
+  throw new Error(blockedMessages[action] ?? action)
 }
 
 if (!applyChanges) {
@@ -184,6 +221,20 @@ if (!applyChanges) {
   validateExistingHub(after.hub)
   if (after.hub.noindex !== false) throw new Error('父 Hub 開放索引後回讀驗證失敗')
   console.log(JSON.stringify({status: 'parent-hub-indexable-and-verified', revision: after.hub._rev}, null, 2))
+} else if (action === 'set-landing') {
+  if (!expectedRevision) throw new Error('--set-landing --apply 必須同時提供 --expected-revision=<rev>')
+  if (expectedRevision !== before.hub._rev) {
+    throw new Error(`Sanity Hub 版本已變更；目前為 ${before.hub._rev}，不是 ${expectedRevision}`)
+  }
+  await client
+    .patch(hubId)
+    .ifRevisionId(expectedRevision)
+    .set({landingArticle: {_type: 'reference', _ref: landingDecision.articleId}})
+    .commit()
+  const after = await fetchSnapshot()
+  validateExistingHub(after.hub)
+  if (after.hub.landingArticleId !== landingDecision.articleId) throw new Error('入口文章設定後回讀驗證失敗')
+  console.log(JSON.stringify({status: 'landing-set-and-verified', revision: after.hub._rev}, null, 2))
 } else {
   console.log('父 Hub 已在正確狀態，不重複修改。')
 }

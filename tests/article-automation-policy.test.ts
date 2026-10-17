@@ -8,6 +8,7 @@ import test from 'node:test'
 import {
   BOOKING_CHANNELS,
   CATEGORY_SLUGS,
+  decideHubLandingAction,
   findQueueItem,
   getArticlePathFromSnapshot,
   getDailyPublicationLimitForItem,
@@ -275,6 +276,31 @@ test('地點條目是地點 Hub 的入口文章，也要有訂房管道與查核
     createQueue([createBatch({items: [createItem({aspect: 'food', bookingChannels: undefined, factCheck: undefined})]})]),
   )
   assert.doesNotMatch(food.join('\n'), /bookingChannels/)
+})
+
+test('地點主頁暫存後要掛成父 Hub 的入口文章，網址才會是 Hub 網址', () => {
+  const batch = createBatch({items: [placeEntryItem()]})
+  const hub = {_id: 'hub-places-ginzan-onsen', landingArticleId: null}
+  const article = {_type: 'article', slug: 'ginzan-onsen', primaryHubId: 'hub-places-ginzan-onsen', bodyCount: 8}
+  assert.deepEqual(decideHubLandingAction({batch, hub, article}), {action: 'set-landing', articleId: 'article-ginzan-onsen'})
+  assert.equal(decideHubLandingAction({batch, hub: {...hub, landingArticleId: 'article-ginzan-onsen'}, article}).action, 'landing-already-set')
+  assert.equal(decideHubLandingAction({batch, hub: {...hub, landingArticleId: 'article-other'}, article}).action, 'blocked-landing-conflict')
+  assert.equal(decideHubLandingAction({batch, hub, article, articleDraftExists: true}).action, 'blocked-article-draft')
+  assert.equal(decideHubLandingAction({batch, hub, article: null}).action, 'blocked-article-not-staged')
+  assert.equal(decideHubLandingAction({batch, hub, article: {...article, primaryHubId: 'hub-x'}}).action, 'blocked-article-not-staged')
+  assert.equal(decideHubLandingAction({batch, hub: null, article}).action, 'blocked-hub-missing')
+  assert.equal(decideHubLandingAction({batch: createBatch(), hub, article}).action, 'blocked-no-landing-item')
+
+  const snapshot = {
+    articleId: 'article-ginzan-onsen',
+    slug: 'ginzan-onsen',
+    hub: {id: 'hub-places-ginzan-onsen', slug: 'ginzan-onsen', categorySlug: 'places', landingArticleId: null},
+  }
+  assert.equal(getArticlePathFromSnapshot(snapshot), '/places/ginzan-onsen/ginzan-onsen/')
+  assert.equal(
+    getArticlePathFromSnapshot({...snapshot, hub: {...snapshot.hub, landingArticleId: 'article-ginzan-onsen'}}),
+    '/places/ginzan-onsen/',
+  )
 })
 
 test('地點分類不使用子 Hub', () => {

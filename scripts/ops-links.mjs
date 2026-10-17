@@ -6,6 +6,7 @@
  *   node scripts/ops-links.mjs ready --sanity=.tmp/queue-state.json      列出目標已上線、可以補的連結
  *   node scripts/ops-links.mjs linked --id=<link_id>                    補好後標記
  *   node scripts/ops-links.mjs skip --id=<link_id> --reason=<原因>       補不上時略過，寫一筆例外，之後不再挑它
+ *   node scripts/ops-links.mjs failed --id=<link_id> --reason=<原因>     補上後 CI 失敗已回復：記一次，滿 MAX_LINK_FAILURES 次自動略過
  * 加 --local 改用本機資料庫。
  */
 import {readFile} from 'node:fs/promises'
@@ -14,6 +15,8 @@ import {pathToFileURL} from 'node:url'
 
 import {pendingLinksFromOutline} from './link-backfill.mjs'
 import {createOpsExecutor, parseOptions, positionalArguments, sqlLiteral} from './ops-db.mjs'
+
+export const MAX_LINK_FAILURES = 3
 
 export async function registerPendingLinks({execute, links, now = new Date()}) {
   if (links.length === 0) return {registered: 0}
@@ -32,11 +35,17 @@ export async function registerPendingLinks({execute, links, now = new Date()}) {
   return {registered: links.length}
 }
 
-/** 目標文章已開放索引、來源文章也已開放索引，而且還沒補的連結。 */
-export async function listReadyLinks({execute, publishedArticleIds}) {
+/**
+ * 目標文章已開放索引、來源文章也已開放索引，而且還沒補的連結。
+ * 登記時目標還不在清單裡（跨群）的連結沒有網址，這裡用目前的清單網址補上；補不到的不列出。
+ */
+export async function listReadyLinks({execute, publishedArticleIds, pagePaths = {}}) {
   const [rows] = await execute(['SELECT * FROM pending_links WHERE linked_at IS NULL AND skipped_at IS NULL ORDER BY link_id'])
   const published = new Set(publishedArticleIds)
-  return rows.filter((row) => published.has(row.to_article_id) && published.has(row.from_article_id))
+  return rows
+    .filter((row) => published.has(row.to_article_id) && published.has(row.from_article_id))
+    .map((row) => ({...row, target_path: row.target_path ?? pagePaths[row.to_article_id] ?? null}))
+    .filter((row) => row.target_path)
 }
 
 export async function markLinked({execute, linkId, now = new Date()}) {
@@ -60,6 +69,21 @@ export async function skipLink({execute, linkId, reason, now = new Date()}) {
     `SELECT link_id, skipped_at, skip_reason FROM pending_links WHERE link_id = ${linkId}`,
   ])
   return results[2]?.[0] ?? null
+}
+
+/** 補上後 CI 失敗、已經回復：記一次；累積 MAX_LINK_FAILURES 次就略過，不再每輪重挑。 */
+export async function recordLinkFailure({execute, linkId, reason, now = new Date()}) {
+  if (!Number.isInteger(linkId)) throw new Error('linkId 必須是整數')
+  const results = await execute([
+    `UPDATE pending_links SET failures = failures + 1 WHERE link_id = ${linkId} AND linked_at IS NULL AND skipped_at IS NULL`,
+    `SELECT link_id, failures, skipped_at FROM pending_links WHERE link_id = ${linkId}`,
+  ])
+  const row = results[1]?.[0] ?? null
+  if (!row || row.skipped_at) return row
+  if (row.failures >= MAX_LINK_FAILURES) {
+    return skipLink({execute, linkId, reason: `補上後 CI 連續失敗 ${row.failures} 次：${reason}`, now})
+  }
+  return row
 }
 
 async function publishedIdsFrom(sanityStatePath) {
@@ -86,8 +110,8 @@ async function runCli() {
   }
   if (command === 'ready') {
     if (typeof options.sanity !== 'string') throw new Error('ready 必須提供 --sanity')
-    const {published} = await publishedIdsFrom(options.sanity)
-    console.log(JSON.stringify(await listReadyLinks({execute, publishedArticleIds: published}), null, 2))
+    const {published, paths} = await publishedIdsFrom(options.sanity)
+    console.log(JSON.stringify(await listReadyLinks({execute, publishedArticleIds: published, pagePaths: paths}), null, 2))
     return
   }
   if (command === 'linked') {
@@ -103,7 +127,14 @@ async function runCli() {
     if (!row?.skipped_at) process.exitCode = 1
     return
   }
-  throw new Error('用法：ops-links.mjs register|ready|linked|skip ...')
+  if (command === 'failed') {
+    if (typeof options.reason !== 'string') throw new Error('failed 必須提供 --reason')
+    const row = await recordLinkFailure({execute, linkId: Number(options.id), reason: options.reason})
+    console.log(JSON.stringify(row, null, 2))
+    if (!row) process.exitCode = 1
+    return
+  }
+  throw new Error('用法：ops-links.mjs register|ready|linked|skip|failed ...')
 }
 
 const isCli = process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url

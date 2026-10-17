@@ -895,6 +895,29 @@ export async function loadArticleQueue(queuePath, projectRoot = path.resolve(imp
 // 發布前核對：Sanity 文件與文章封包必須和清單一致
 // ---------------------------------------------------------------------------
 
+/**
+ * 地點主頁（routeMode hub-landing）要掛成父 Hub 的入口文章，網址才會是 /<分類>/<Hub>/。
+ * 文章暫存到 Sanity 之後、開放索引之前呼叫；hub 與 article 是 Sanity 的現況（article 不存在時為 null）。
+ */
+export function decideHubLandingAction({batch, hub, article, articleDraftExists = false}) {
+  const item = (batch?.items ?? []).find((candidate) => candidate?.routeMode === 'hub-landing')
+  if (!item) return {action: 'blocked-no-landing-item'}
+  if (!hub) return {action: 'blocked-hub-missing', articleId: item.documentId}
+  if (hub.landingArticleId === item.documentId) return {action: 'landing-already-set', articleId: item.documentId}
+  if (hub.landingArticleId) return {action: 'blocked-landing-conflict', articleId: item.documentId, currentLandingId: hub.landingArticleId}
+  if (articleDraftExists) return {action: 'blocked-article-draft', articleId: item.documentId}
+  if (
+    article?._type !== 'article' ||
+    article.slug !== item.articleSlug ||
+    article.primaryHubId !== hub._id ||
+    !Number.isInteger(article.bodyCount) ||
+    article.bodyCount < 1
+  ) {
+    return {action: 'blocked-article-not-staged', articleId: item.documentId}
+  }
+  return {action: 'set-landing', articleId: item.documentId}
+}
+
 export function getArticlePathFromSnapshot(snapshot) {
   const hub = snapshot?.hub
   if (!hub) return null
