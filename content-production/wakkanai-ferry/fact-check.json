@@ -1,0 +1,1168 @@
+{
+  "schemaVersion": 1,
+  "articleId": "wakkanai-ferry",
+  "articleSha256": "ee3af73f966421e2df08a7b983711c7479d27cb6b605eb73426a1cff4715bad0",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理；非作者、非分段檢查者；唯讀文章與研究記錄，自行打開官方來源）",
+  "checkedAt": "2026-10-18",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "稚內到利尻島、禮文島的渡輪由Heartland Ferry（ハートランドフェリー）經營，從稚內港開往利尻島的鴛泊港和禮文島的香深港，兩島之間也有船互通。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "ハートランドフェリー｜稚内～利尻島｜稚内～礼文島｜利尻島～礼文島",
+      "verdict": "verified",
+      "notes": "譯名與 glossary.json 一致（ハートランドフェリー→Heartland Ferry）"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "依2026年時刻表，夏季6月到9月稚內往兩島各有3個來回，1月到4月27日與11月到12月的冬季班表只剩2個來回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30｜06:30～08:25｜08:55～10:50｜10:30～12:25｜14:20～16:15｜14:50～16:45｜17:10～19:05；1/1～4/27｜06:35～08:30｜09:00～10:55｜14:10～16:05｜17:05～19:00",
+      "verdict": "verified",
+      "notes": "稚內～鴛泊見 /timetable/：6/1～9/30 三往返，1/1～4/27 與 11/1～12/31 兩往返"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "颱風或低氣壓來時可能停航，原則上清晨5點到5點半決定當天開不開。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "原則は出港当日の朝（5：00～5：30頃）までに運航の可否を決定致します。※利尻礼文航路運航可否時間 通年（5：00～5：30）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "稚內到利尻島的鴛泊港約1小時40分，到禮文島的香深港直航約1小時55分。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表 日本語(稚内-鴛泊)｜ハートランドフェリー",
+      "sourceQuote": "07:15～08:55｜06:55～08:35｜06:45～08:25（稚内発～鴛泊着）；time1：06:30～08:25｜06:35～08:30（稚内発～香深着）",
+      "verdict": "verified",
+      "notes": "由開船與到港時間相減，各季一致"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "2等大人單程含稅票價，稚內到鴛泊是3,590日圓，稚內到香深是3,950日圓。",
+      "sourceUrl": "https://heartlandferry.jp/faretable/",
+      "sourceTitle": "運賃表｜ハートランドフェリー",
+      "sourceQuote": "2026年1月1日～2026年12月31日｜2等｜3,590（0）｜3,950（0）｜1,800（0）｜※運賃・料金には消費税を含みます。※表示された運賃・料金は片道分です。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。第 5 輪刪掉「2026年運賃表的」字樣，數字不變；運賃表適用 2026/1/1～12/31"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "船票從搭船日兩個月前的同一天0點開放網路預約，2等自由席也能在網路上訂。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "乗船日の2ヶ月前の同日午前0時から、乗船日の3時間前までご予約をお受けしております。｜２等室（利礼航路のみ2024年12月利用分から可能）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "只訂乘客的人，開船24小時前會收到乘船QR code，當天到渡輪站2樓的乘船口出示就能上船。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/static/reserve.jp.pdf",
+      "sourceTitle": "WEB予約方法（利礼航路用）",
+      "sourceQuote": "ご乗船当日、乗船口にて【乗船QRコード】を提示していただくと、そのままご乗船いただけます。※乗船QRコードは、出港時刻の24時間前から表示開始となります。",
+      "verdict": "verified",
+      "notes": "2 樓乘船口見稚內樓層圖「フェリー乗船口は2Fです」；WEB FAQ「旅客のみご利用のお客様は２４時間前に乗船QRコードが発行」"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "稚內港渡輪站離JR稚內站走路約15分鐘，售票櫃台在1樓。",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島）｜ハートランドフェリー",
+      "sourceQuote": "JR稚内駅より徒歩約15分",
+      "verdict": "verified",
+      "notes": "1 樓櫃台見稚內樓層圖 1F「発券カウンター Ticket Counter」"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "Heartland Ferry在這一帶有三段航線，分別是稚內到禮文島、稚內到利尻島，以及利尻島和禮文島之間的島間航線。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "ハートランドフェリー 稚内～利尻島 稚内～礼文島 利尻島～礼文島",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "目前公布的時刻表適用2026年1月1日到12月31日，一年分成三種班表。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "2026年1月1日～12月31日｜1/1～4/27｜4/28～5/31｜6/1～9/30｜10/1～10/31｜11/1～12/31",
+      "verdict": "verified",
+      "notes": "4/28～5/31 與 10 月時刻相同，1/1～4/27 與 11/1～12/31 相同，實質三種"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "夏季，6月1日到9月30日，班次最多，還多了沓形港往返香深的船。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 … 沓形発～香深着｜香深発～沓形着｜14:25～15:05｜12:50～13:30",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "春秋，4月28日到5月31日與10月，稚內往香深有一個來回會停靠鴛泊。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "＜ ＞は利尻島（鴛泊）経由便です。4/28～5/31｜＜10:10～13:00＞｜＜13:25～16:15＞；10/1～10/31 同",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "冬季，1月1日到4月27日、11月1日到12月31日，稚內往兩島各只有2個來回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表 日本語(稚内-鴛泊)｜ハートランドフェリー",
+      "sourceQuote": "1/1～4/27｜06:55～08:35｜09:05～10:45｜14:00～15:40｜17:30～19:10；11/1～12/31 同",
+      "verdict": "verified",
+      "notes": "香深側見 time1 同期兩往返"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "航程表：稚內→鴛泊約1小時40分、稚內→香深直航約1小時55分、稚內→鴛泊→香深約2小時50分、鴛泊→香深約45分、沓形→香深約40分",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島｜ハートランドフェリー",
+      "sourceQuote": "09:30～10:15｜16:00～16:45｜12:15～13:00（鴛泊発～香深着）｜14:25～15:05（沓形発～香深着）；time1 ＜10:10～13:00＞",
+      "verdict": "verified",
+      "notes": "依時刻相減：10:10→13:00＝2:50；鴛泊→香深各季 45 分；沓形→香深 40 分"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "除了表定班次，必要時每天最多會加開2班臨時船。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "※定時に運航する便の外、必要に応じて1日2便まで臨時便を運航することがあります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "停航與臨時船的消息都公布在官網的運航狀況頁，每一班由哪艘船行駛也看得到。",
+      "sourceUrl": "https://heartlandferry.jp/status/",
+      "sourceTitle": "運航状況｜欠航や臨時便などの最新情報｜ハートランドフェリー",
+      "sourceQuote": "運航状況｜欠航や臨時便などの最新情報；10:10～11:50 アマポーラ宗谷 運航",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "稚內到禮文島香深港的船，夏季一天3個來回，冬季2個來回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 … 17:10～19:05；4/28～5/31・10/1～10/31・1/1～4/27・11/1～12/31 … 17:05～19:00",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。第 5 輪刪掉本節末班船句，末班船移到開頭（見 C123）"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "稚內⇄香深表 6月1日～9月30日：6:30→8:25、10:30→12:25、14:50→16:45／8:55→10:50、14:20→16:15、17:10→19:05",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30｜06:30～08:25｜08:55～10:50｜10:30～12:25｜14:20～16:15｜14:50～16:45｜17:10～19:05",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "稚內⇄香深表 4月28日～5月31日、10月：6:30→8:25、10:10→13:00（經鴛泊）、14:45→16:40／8:55→10:50、13:25→16:15（經鴛泊）、17:05→19:00",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "4/28～5/31｜06:30～08:25｜08:55～10:50｜＜10:10～13:00＞｜＜13:25～16:15＞｜14:45～16:40｜17:05～19:00",
+      "verdict": "verified",
+      "notes": "10/1～10/31 欄相同"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "稚內⇄香深表 1月1日～4月27日、11月1日～12月31日：6:35→8:30、14:10→16:05／9:00→10:55、17:05→19:00",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "1/1～4/27｜06:35～08:30｜09:00～10:55｜14:10～16:05｜17:05～19:00",
+      "verdict": "verified",
+      "notes": "11/1～12/31 欄相同"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "春秋稚內10:10開和香深13:25開的船會先停靠鴛泊，到港時間比直航晚。想在禮文島待上一整天，夏季可以搭6:30去、17:10回，冬季是6:35去、17:05回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "＜ ＞は利尻島（鴛泊）経由便です。＜10:10～13:00＞｜＜13:25～16:15＞；6/1～9/30 06:30～08:25 … 17:10～19:05；1/1～4/27 06:35～08:30 … 17:05～19:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "稚內到利尻島鴛泊港的船同樣分成三季，夏季與春秋一天3個來回，冬季2個來回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表 日本語(稚内-鴛泊)｜ハートランドフェリー",
+      "sourceQuote": "4/28～5/31 … 16:40～18:20；6/1～9/30 … 16:40～18:20；1/1～4/27 … 17:30～19:10",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。第 5 輪刪掉本節末班船句，末班船移到開頭（見 C123）"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "稚內⇄鴛泊表 6月1日～9月30日：7:15→8:55、11:15→12:55、16:40→18:20／8:25→10:05、12:05→13:45、16:40→18:20",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表 日本語(稚内-鴛泊)｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30｜07:15～08:55｜08:25～10:05｜11:15～12:55｜12:05～13:45｜16:40～18:20｜16:40～18:20",
+      "verdict": "verified",
+      "notes": "左欄稚內發、右欄鴛泊發交錯排列"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "稚內⇄鴛泊表 4月28日～5月31日、10月：6:45→8:25、10:10→11:50、14:30→16:10／8:55→10:35、14:35→16:15、16:40→18:20",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表 日本語(稚内-鴛泊)｜ハートランドフェリー",
+      "sourceQuote": "4/28～5/31｜06:45～08:25｜08:55～10:35｜10:10～11:50｜14:35～16:15｜14:30～16:10｜16:40～18:20",
+      "verdict": "verified",
+      "notes": "10/1～10/31 相同；2026-10-18 運航狀況頁的稚内→鴛泊 06:45／10:10／14:30 與鴛泊→稚内 08:55／14:35／16:40 也證實配對"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "稚內⇄鴛泊表 1月1日～4月27日、11月1日～12月31日：6:55→8:35、14:00→15:40／9:05→10:45、17:30→19:10",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表 日本語(稚内-鴛泊)｜ハートランドフェリー",
+      "sourceQuote": "1/1～4/27｜06:55～08:35｜09:05～10:45｜14:00～15:40｜17:30～19:10",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "春秋稚內10:10開往鴛泊的船，就是繼續開往香深的經鴛泊班次。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "＜ ＞は利尻島（鴛泊）経由便です。4/28～5/31｜＜10:10～13:00＞；/timetable/ 4/28～5/31｜10:10～11:50",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。第 5 輪刪掉 2026-10-18 運航狀況頁配船一句；兩表同為 10:10 開船，time1 標為經鴛泊便"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "想在利尻島待上一整天，夏季可以搭7:15去、16:40回，春秋是6:45去、16:40回，冬季是6:55去、17:30回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表 日本語(稚内-鴛泊)｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 07:15～08:55 … 16:40～18:20；4/28～5/31 06:45～08:25 … 16:40～18:20；1/1～4/27 06:55～08:35 … 17:30～19:10",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "島間航線的班次最少，春秋和冬季一天都只有一個來回。夏季鴛泊和香深之間有2個來回，另外有一班往返沓形和香深的船，只在6月到9月行駛。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島｜ハートランドフェリー",
+      "sourceQuote": "4/28～5/31｜12:15～13:00｜13:25～14:10；1/1～4/27｜16:00～16:45｜16:25～17:10；6/1～9/30 09:30～10:15｜10:40～11:25｜13:15～14:00｜15:30～16:15｜沓形発～香深着 14:25～15:05｜12:50～13:30",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "島間表 6月1日～9月30日：鴛泊9:30→10:15、鴛泊13:15→14:00、沓形14:25→15:05／10:40→鴛泊11:25、12:50→沓形13:30、15:30→鴛泊16:15",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 09:30～10:15｜10:40～11:25｜13:15～14:00｜15:30～16:15｜沓形発～香深着｜香深発～沓形着｜14:25～15:05｜12:50～13:30",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "島間表 春秋：鴛泊12:15→13:00／13:25→鴛泊14:10；冬季：鴛泊16:00→16:45／16:25→鴛泊17:10。冬季想從利尻島前往禮文島，只有傍晚鴛泊16:00開的這一班。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島｜ハートランドフェリー",
+      "sourceQuote": "4/28～5/31｜12:15～13:00｜13:25～14:10；10/1～10/31 同；1/1～4/27｜16:00～16:45｜16:25～17:10；11/1～12/31 同",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "沓形港在利尻島西側，和鴛泊港是不同的港口",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島）｜ハートランドフェリー",
+      "sourceQuote": "鴛泊港フェリーターミナル 利尻郡利尻富士町鴛泊｜沓形港フェリーターミナル 利尻郡利尻町沓形",
+      "verdict": "verified",
+      "notes": "兩港分屬利尻富士町與利尻町，各有渡輪站；「西側」是地理位置描述（沓形在島西岸），與研究記錄 F10 一致"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "票價含消費稅，運賃表上的金額適用2026年1月1日到12月31日。",
+      "sourceUrl": "https://heartlandferry.jp/faretable/",
+      "sourceTitle": "運賃表｜ハートランドフェリー",
+      "sourceQuote": "2026年1月1日 ～2026年12月31日｜※ 運賃・料金には消費税を含みます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "2022年7月起導入燃油附加費，票價可能每3個月調整一次，目前的燃油調整金是0日圓。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "2022年7月1日より燃料サーチャージ導入により、3か月おきに運賃を改定する場合がございます。",
+      "verdict": "verified",
+      "notes": "運賃表「運賃・料金に含まれる燃料油価格変動調整金額は（ ）内のとおりです。」各欄皆為（0）"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "利尻、禮文航線由三艘船輪流行駛，各船的艙等不完全相同。",
+      "sourceUrl": "https://heartlandferry.jp/about_reservation/",
+      "sourceTitle": "ご予約について｜ハートランドフェリー",
+      "sourceQuote": "利尻島・礼文島航路｜アマポーラ宗谷｜サイプリア宗谷｜ボレアース宗谷",
+      "verdict": "verified",
+      "notes": "2026-10-18 運航狀況頁三艘船都有出勤"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "船名與艙等表：アマポーラ宗谷 特別室、1等アイランドビューシート、1等和室、2等；サイプリア宗谷、ボレアース宗谷 特別室、1等ラウンジ、1等和室、2等",
+      "sourceUrl": "https://heartlandferry.jp/about_reservation/",
+      "sourceTitle": "ご予約について｜ハートランドフェリー",
+      "sourceQuote": "アマポーラ宗谷｜特別室・１等アイランドビューシート・和室・２等自由席｜サイプリア宗谷｜特別室・１等ラウンジ席・和室・２等自由席｜ボレアース宗谷｜特別室・１等ラウンジ席・和室・２等自由席",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "2等是不對號的客艙，上船後找空位坐。1等可以在網路預約時指定座位，特別室則是按每組計費的獨立房間。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "利尻・礼文航路は、１等ラウンジ（１等アイランドビューシート）・１等和室に限り、座席を指定することができます。",
+      "verdict": "verified",
+      "notes": "2 等＝2等自由席（about_reservation）；特別室「１区間１グループ毎に上記特別室料金」（運賃表）"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "アマポーラ宗谷號原本有2等指定席，目前暫時當成2等自由席開放。",
+      "sourceUrl": "https://heartlandferry.jp/faretable/",
+      "sourceTitle": "運賃表｜ハートランドフェリー",
+      "sourceQuote": "※1等アイランドビューシート及び2等指定席は、アマポーラ宗谷のみでございます。※当面の間、アマポーラ宗谷の２等指定席を２等自由席として開放いたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "利尻島到香深這一段，從鴛泊或沓形出發都是同一個價格。",
+      "sourceUrl": "https://heartlandferry.jp/faretable/",
+      "sourceTitle": "運賃表｜ハートランドフェリー",
+      "sourceQuote": "利尻島(鴛泊・沓形) ～礼文島（香深）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "票價表：2等 3,590／3,950／1,800；1等（ラウンジ、アイランドビューシート、和室）6,610／7,270／3,290日圓",
+      "sourceUrl": "https://heartlandferry.jp/faretable/",
+      "sourceTitle": "運賃表｜ハートランドフェリー",
+      "sourceQuote": "1等ラウンジ 1等ｱｲﾗﾝﾄﾞﾋﾞｭｰｼｰﾄ｜6,610（0）｜7,270（0）｜3,290（0）｜1等和室｜6,610（0）｜7,270（0）｜3,290（0）｜2等｜3,590（0）｜3,950（0）｜1,800（0）",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。第 5 輪刪掉 2等指定席整列"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "乘客買來回票沒有折扣，網路預約的折扣也只給車輛。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "車輌運賃は5％割引となりますが、旅客のみの割引はございません。",
+      "verdict": "verified",
+      "notes": "往返折扣只在 FAQ ＜車輌＞欄：「往路から14日間以内に復路をご利用の場合は復路運賃のみ1割引」，＜旅客＞欄沒有往返折扣"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "小學生半價，不到10日圓的尾數5日圓以上進位。換算下來，2等稚內到鴛泊是1,800日圓，稚內到香深是1,980日圓，利尻島到香深是900日圓。",
+      "sourceUrl": "https://heartlandferry.jp/faretable/",
+      "sourceTitle": "運賃表｜ハートランドフェリー",
+      "sourceQuote": "※小学校に就学している小児旅客運賃は半額とし、10円未満の端数は、5円以上は切り上げ、5円未満は切り捨てとなります。",
+      "verdict": "verified",
+      "notes": "推算：3,590/2=1,795→1,800；3,950/2=1,975→1,980；1,800/2=900"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "每位大人可以免費帶2名1歲以上、還沒上小學的小孩，但小孩要坐指定席等座位時不適用。",
+      "sourceUrl": "https://heartlandferry.jp/faretable/",
+      "sourceTitle": "運賃表｜ハートランドフェリー",
+      "sourceQuote": "※大人1名に同伴される1才以上小学校に就学していない小児は2名無料です。但し、指定席等をご使用になられる場合は除きます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "需要買學齡前的幼兒乘船券時，自動售票機不賣，要到窗口辦理。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "※車・自転車・バイクの乗船券、指定席券、幼児乗船券（未就学児）…は窓口での発券となります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "特別室要另外按每段每組付20,000日圓，利尻島到香深這段是10,000日圓，每個人還要再付2等票價。",
+      "sourceUrl": "https://heartlandferry.jp/faretable/",
+      "sourceTitle": "運賃表｜ハートランドフェリー",
+      "sourceQuote": "特別室｜20,000｜20,000｜10,000｜※ 各人様２等運賃をお支払い頂く他、１区間１グループ毎に上記特別室料金を申し受けます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "定員是サイプリア宗谷號與ボレアース宗谷號6人，アマポーラ宗谷號4人，而且只能打電話預約。",
+      "sourceUrl": "https://heartlandferry.jp/faretable/",
+      "sourceTitle": "運賃表｜ハートランドフェリー",
+      "sourceQuote": "※ 特別室の定員：サイプリア宗谷・ボレアース宗谷は6名。アマポーラ宗谷は4名。",
+      "verdict": "verified",
+      "notes": "只能電話：WEB FAQ「ＷＥＢ予約システムでは、特別室のご予約は承っておりません。お電話でのご予約をお願い致します。」"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "機車和腳踏車不接受預約，當天在渡輪站依到達順序受理。腳踏車運費稚內航線是3,300日圓，島間航線是1,650日圓。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "【利礼航路】・ご予約は承っておりません。当日、フェリーターミナルにて先着順での受付となります。",
+      "verdict": "verified",
+      "notes": "運賃表 特殊手荷物運賃「自転車等｜3,300（0）｜3,300（0）｜1,650（0）」"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "要在開船40分鐘前辦好手續，空間有限，滿了可能就上不了船。",
+      "sourceUrl": "https://heartlandferry.jp/about_reservation/",
+      "sourceTitle": "ご予約について｜ハートランドフェリー",
+      "sourceQuote": "【利礼航路】ご乗船手続きは、出港時間の４０分前までにお済ませください。なお、スペースに限りがございますので、満船になり次第乗船をお断りする場合がございます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "折疊腳踏車裝進專用攜車袋，袋子要把座墊和輪胎蓋住，三邊合計2公尺以內、30公斤以下就不收運費。帶折疊腳踏車時，連同腳踏車手提行李共3件以上，要另付行李費。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "専用の輪行バックに入れて（サドルやタイヤが見えないように）3辺の和が2m以下で、かつ30kg以下のものであれば、無料になります。但し、折りたたみ式自転車を含めて手荷物が3つ以上になる場合は、受託手荷物運賃が発生いたします。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。第 5 輪改寫第二句，和原文「折りたたみ式自転車を含めて手荷物が3つ以上」更貼近"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "訂票方式有網路、電話和當天窗口三種，有空位時沒預約也能搭。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "車と個人・団体のお客様全て、空きがあれば、ご予約をされていなくてもご乗船いただけます。",
+      "verdict": "verified",
+      "notes": "網路與電話見 about_reservation「ご予約方法 ＷＥＢ予約／電話予約」"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "2024年12月起2等自由席也開放網路預約，現在除了特別室，各艙等都能在網路上訂。",
+      "sourceUrl": "https://heartlandferry.jp/about_reservation/",
+      "sourceTitle": "ご予約について｜ハートランドフェリー",
+      "sourceQuote": "2024年12月1日ご乗船分より、利礼航路の2等自由席のWEB予約ができる様になりました。",
+      "verdict": "verified",
+      "notes": "特別室不受理見 WEB FAQ。利礼航路的 2等指定席目前當自由席開放（WEB FAQ 寫「２等指定席（奥尻航路のみ）」），實際可訂的是 2 等與 1 等，與正文意思相符"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "搭船日兩個月前的同一天0點，網路預約開放，電話預約是同一天上午9點開始。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "車と個人のお客様のご予約は2ヶ月前の同日午前9：00より承ります。",
+      "verdict": "verified",
+      "notes": "網路 0 點見 WEB FAQ"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "開船24小時前，只訂乘客、不帶車的網路預約會收到乘船QR code，這也是自己在網站改票的截止時間。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "旅客のみご予約の場合は、出港の２４時間前までとなります。｜旅客のみご利用のお客様は２４時間前に乗船QRコードが発行されております",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "開船3小時前，網路預約截止。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "乗船日の3時間前までご予約をお受けしております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "開船前約1小時，渡輪站的窗口開始受理。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "出港時間の約1時間前から手続き可能です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "開船40分鐘前，2等乘客要辦好乘船手續，1等與特別室是20分鐘前。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "2等客室をご利用されるお客様は出港時間の40分前までにお済ませ下さい。また、1等客室（ラウンジ席・アイランドビューシート・和室）・特別室及び2等指定席をご予約されたお客様は出港時間の20分前まで",
+      "verdict": "verified",
+      "notes": "about_reservation 寫 2 等「30~40分前」，正文採 FAQ 較嚴的 40 分，不衝突"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "網路預約在渡輪公司的WEB予約頁，畫面可以切換成日文或英文。第一次使用要先註冊會員，日文畫面的姓名欄要用全形平假名填寫。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : WEB予約トップ",
+      "sourceQuote": "Language : 日本語 English｜初回ご利用のお客様は、画面下部のお客様情報登録リンクをクリックして、お客様情報登録画面へお進みください。",
+      "verdict": "verified",
+      "notes": "全形平假名見 user.jp.pdf「[必須]お客様名称（全角ひらがな）」（圖片 PDF，轉圖閱讀）"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "預約時要準備乘客姓名、電話、電子郵件與信用卡，費用用信用卡先付清，只能一次付款。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "乗船者の氏名 電話番号 メールアドレス 決済用のクレジットカード｜クレジットカードによる事前精算｜お支払回数は1回のみのお取り扱いとなります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "不帶車時，一次最多可以訂14人。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "車輌なしの場合で、各等級大人・小人合わせて14名まで",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "網路一次只訂一段單程，回程或繞兩島的行程也能在網路上訂。不過每一段都要等到該班的兩個月前才開放，時間還沒到的那一段只能之後再訂。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "ＷＥＢ予約では「片道」のご予約のみ受付しております。利礼航路に関しましては復路や周遊でのご予約をお取りすることが可能です。ただし、復路に関しても２か月前に予約可能になる為…片道ずつのご予約となります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "按鈕表：お客様情報登録（會員註冊）；お客様名称（全角ひらがな）姓和名分開填；ログイン 輸入註冊的電子郵件與密碼",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/static/user.jp.pdf",
+      "sourceTitle": "WEB新規登録",
+      "sourceQuote": "「お客様情報登録」をクリック｜[必須]お客様名称（全角ひらがな）姓：名：｜メールアドレス：パスワード：ログイン",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；user.jp.pdf 第 1 頁與 reserve.jp.pdf 第 1 頁"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "按鈕表：乗船日 在月曆上點選日期；行程 選例如「稚内→利尻島」；ご予約人数 大人是12歲以上，小人是6歲以上未滿12歲，幼児是未滿6歲",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/static/reserve.jp.pdf",
+      "sourceTitle": "WEB予約方法（利礼航路用）",
+      "sourceQuote": "[必須]乗船日：（月曆）｜[必須]行程：稚内→利尻島｜[必須]ご予約人数：大人合計（12歳以上）小人（6歳以上、12歳未満）幼児（6歳未満）",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；reserve.jp.pdf 第 1 頁「乗船日・行先選択」畫面"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "按鈕表：利用規約に同意する。 按下後再按「次へ」",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/static/reserve.jp.pdf",
+      "sourceTitle": "WEB予約方法（利礼航路用）",
+      "sourceQuote": "利用規約を確認して、同意いただける場合は「利用規約に同意する。」をクリックしてください。（畫面上「次へ」鈕以紅框標示）",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；reserve.jp.pdf 第 1 頁"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "按鈕表：○／數字／× 可預約／剩少數座位／客滿；WEB予約は締め切りました 已過開船前3小時，改打電話或到窗口",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/static/reserve.jp.pdf",
+      "sourceTitle": "WEB予約方法（利礼航路用）",
+      "sourceQuote": "「○」の場合：ご予約可能です。「数字」の場合：残席数です。残りわずかの場合、表示されます。「×」の場合：満席の為、選択頂けません。「WEB予約は締め切りました」：出港時刻の3時間前を超えている為、WEB予約は承っておりません。",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；reserve.jp.pdf 第 2 頁；「改打電話或到窗口」是當日預約受理方式的白話建議（about_reservation 當日預約至開船 2 小時前）"
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "按鈕表：この内容で予約する 確認日期與班次後按下；確定 填完信用卡資料按「次へ」，再按這個鈕",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/static/reserve.jp.pdf",
+      "sourceTitle": "WEB予約方法（利礼航路用）",
+      "sourceQuote": "「この内容で予約する」をクリックしてください。｜クレジットカード情報を入力し、「次へ」をクリックしてください。｜お支払内容にお間違いないかご確認の上、「確定」をクリックしてください。",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；reserve.jp.pdf 第 2～3 頁"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "付款過程中不要按瀏覽器的上一頁，沒付款就放置2小時以上，預約會被取消。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "未決済の状態で予約ページを2時間以上放置しますと、予約内容が取り消されます。｜※インターネットブラウザの「戻る」ボタン…を使用された場合、エラー表示になりますのでご注意ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "1等的座位可以在網路上自己挑，畫面上有框線圍起來的是靠窗的位子。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "１等ラウンジ（１等アイランドビューシート）・１等和室に限り、座席を指定することができます。｜枠で囲われた部分が窓側のお席です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "渡輪公司的電話是0162-23-3780，新預約與電話訂票的改票、取消在9:00到17:00受理。",
+      "sourceUrl": "https://heartlandferry.jp/about_reservation/",
+      "sourceTitle": "ご予約について｜ハートランドフェリー",
+      "sourceQuote": "電話予約をする〈予約受付時間〉9：00～17：00 ハートランドフェリー 稚内 0162-23-3780",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。改票、取消見 FAQ「予約の変更をしたいのですが。…TEL 0162-23-3780（9時～17時）にて承ります。」「予約をキャンセルしたいのですが。…同」"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "網路預約收到QR code後要取消，或詢問當天開不開航，5:30起就能打。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "既に乗船QRコードが発行されていて、お客様ご自身でキャンセルできない場合は 5：30 ～ 17：00 までお電話が繋がりますので、出航時間前までにご連絡下さい。（稚内フェリーターミナル TEL 0162-23-3780 ）",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。運航狀況見 FAQ「■ハートランドフェリー【利礼航路】 TEL 0162-23-3780  通年 05：30～」"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "未滿15人的2等客室不接受電話預約，打電話能訂的是1等與特別室，特別室更是只能打電話訂。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "予約するときの必要事項は何ですか。【利尻・礼文航路】…・1等客室(ラウンジ・アイランドビューシート、和室)はご予約人数をお教えください。（15名様未満の2等客室のご予約は承っておりません。）",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。特別室只能電話見 WEB FAQ「ＷＥＢ予約システムでは、特別室のご予約は承っておりません。お電話でのご予約をお願い致します。」；about_reservation 的預約開始日區塊也列特別室。研究記錄 F906 新補的摘錄與官網一致。旅客艙等以外，車輛也可電話預約，正文本段談旅客，不影響"
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "電話預約可以把回程與島間的船和去程一起訂，條件是在去程搭船日起14天內。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "往復利用、2島を廻る三角航路利用の場合、島間・復路のご予約は、往路乗船日より14日間以内までは同時にお申込みいただけます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "搭船當天才預約，只受理11點以後開的船，而且開船2小時前截止。",
+      "sourceUrl": "https://heartlandferry.jp/about_reservation/",
+      "sourceTitle": "ご予約について｜ハートランドフェリー",
+      "sourceQuote": "※ご乗船当日のご予約は、午前１１時以降の出港便からとなります。又、出港時間の２時間前にて受付を締め切らせていただきます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "只訂乘客的網路預約，開船24小時前都能在網站上自己改人數、日期與班次、艙等和座位，不收手續費。航路不能用改票功能修改，要改航路就先取消再重新預約。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "旅客人数、日付と便、座席の等級、指定済み座席の位置、車輌の有無と長さの変更が可能です。但し、航路の変更はできません…｜旅客のみご予約の場合は、出港の２４時間前まで｜手数料は頂戴しておりません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "開船前取消不收取消費，開船後才取消要收全額。退款會退回付款的信用卡，最久可能要約2個月。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "出港前の便は、キャンセル料（取消手数料）は頂戴しておりません。但し、出港後の便をキャンセルされる場合はご利用料金の100％を頂戴いたします。｜返金されるまで２ヶ月程度かかる場合があります",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "進入開船前24小時以後，網站上就不能自己改票或取消。這時要在開船前打電話，5:30到17:00有人接聽。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "既に乗船QRコードが発行されていて、お客様ご自身でキャンセルできない場合は 5：30 ～ 17：00 までお電話が繋がりますので、出航時間前までにご連絡下さい。（稚内フェリーターミナル TEL 0162-23-3780 ）",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。電話號碼移到電話預約段（C67）"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "電話訂的票改票與取消在9:00到17:00受理，取消同樣不收費，要報上預約號碼。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "TEL 0162-23-3780（9時～17時）にて承ります。予約番号をお申し出くさい。キャンセル料は発生いたしません。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。"
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "收到乘船QR code的電子郵件後，當天直接到2樓乘船口出示就能上船，不用先排窗口，想要紙本船票也可以到窗口換。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/static/check_in_qr.jp.pdf",
+      "sourceTitle": "乗船QRコード（予約確定後 QR乗船コード案内）",
+      "sourceQuote": "ご登録いただきましたメールアドレスに乗船QRコードをお送りいたします。｜ご乗船当日は、本メールの乗船QRコードをご持参の上、乗船口まで直接お越しください。｜※窓口で紙の乗船券に引き換えることも可能です。｜※乗船QRコードは出港時間の24時間前から表示可能",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。"
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "有指定座位的人，上船後也要出示QR code上的座位號碼。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/static/check_in_qr.jp.pdf",
+      "sourceTitle": "乗船QRコード（予約確定後 QR乗船コード案内）",
+      "sourceQuote": "※座席指定の場合は座席番号がございますので、船内での提示も必要になります。",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；check_in_qr.jp.pdf 第 2 頁"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "拿QR code的人，同樣要在開船40分鐘前到渡輪站。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "出港時間の40分前までに各フェリーターミナルにて乗船手続きをお済ませ下さい。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。WEB FAQ 對網路預約者一律寫 40 分前，未區分艙等"
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "1等與特別室晚於上面時間點清單的截止時間才辦手續，預約可能被取消。",
+      "sourceUrl": "https://heartlandferry.jp/faretable/",
+      "sourceTitle": "運賃表｜ハートランドフェリー",
+      "sourceQuote": "出港時間の20分前までに発券手続きがお済みでない場合は、ご予約が取り消しとなる場合がございますのでご注意ください。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。時間點清單寫 1 等與特別室 20 分鐘前，見 C55"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "沒有預約也能上船，只是客艙沒有候補，客滿就搭不上。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "車のキャンセル待ちはございますが、全ての客室のキャンセル待ちはございません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "在旅行社買了船票兌換券的人，當天要先到渡輪站櫃台換成船票。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "旅行会社でお買い求めになられましたクーポン券・バウチャー券を各フェリーターミナル受付カウンターで提出し乗船券と交換になります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "窗口可以付現金、信用卡或QR code支付，信用卡收VISA、Master、JCB、AMEX、Diners等。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "現金またはクレジットカードでのお支払いが可能です。VISA,MasterCard,JCB,AMERICAN EXPRESS,Diners等がご利用いただけます。QRコードでのお支払いも可能です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "自動售票機只賣2等自由席的大人與小學生票，稚內渡輪站有3台，鴛泊和香深各1台。售票機只收現金和有設定密碼的IC晶片信用卡，沒設密碼的卡、幼兒票和各種折扣都要到窗口辦。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "自動券売機では【2等自由席】大人（中学生以上）/小人（小学生）の乗船券をご購入いただけます。券売機は稚内フェリーターミナルに3台、鴛泊・香深フェリーターミナルに各1台ずつ…「現金」及び「暗証番号が登録されているICチップ付きクレジットカード」のみ可能です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "颱風或低氣壓使浪高、風向與風速不佳時，渡輪可能停航。天氣急變時，也可能臨時停航或改變出發與抵達的港口。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "台風や低気圧等による悪天候（波の高さ・風向・風速）の影響により、欠航となる可能性がございます。また、天候の急変等により、急遽欠航及び発着港が変更となる場合がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "渡輪公司公布了每月全天停航的天數，2023年到2025年分別是23天、13天和16天，6月到8月三年都是0天。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
+      "sourceTitle": "よくあるご質問「年間の全便欠航日数」表（画像）",
+      "sourceQuote": "2023年 利尻・礼文航路｜3｜2｜0｜3｜0｜0｜0｜0｜0｜2｜7｜6；2024年｜6｜2｜1｜0｜1｜0｜0｜0｜0｜1｜2｜0；2025年｜3｜2｜3｜1｜0｜0｜0｜0｜1｜1｜3｜2",
+      "verdict": "verified",
+      "notes": "FAQ 頁「年間の全便欠航日数は下記の通りです。」所附 JPG（2560×1002），查核者下載後直接看圖逐格讀；合計自行加總 23／13／16"
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "停航天數表（1月～12月、2023～2025年各格與合計）",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
+      "sourceTitle": "よくあるご質問「年間の全便欠航日数」表（画像）",
+      "sourceQuote": "1月 3/6/3、2月 2/2/2、3月 0/1/3、4月 3/0/1、5月 0/1/0、6～8月 0、9月 0/0/1、10月 2/1/1、11月 7/2/3、12月 6/0/2（利尻・礼文航路列）",
+      "verdict": "verified",
+      "notes": "與正文表格逐格一致；同圖的奧尻航路列沒有被誤用"
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "表中只算所有班次都停開的日子，三年加起來多半集中在11月到隔年3月。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
+      "sourceTitle": "よくあるご質問「年間の全便欠航日数」表（画像）",
+      "sourceQuote": "年間の全便欠航日数（圖表數字）",
+      "verdict": "verified",
+      "notes": "1～3 月加 11～12 月：2023 年 18/23、2024 年 11/13、2025 年 13/16，都超過一半"
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "利尻、禮文航線原則上在當天清晨5:00到5:30決定開不開。結果公布在官網的運航狀況頁，也可以打電話詢問。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "※利尻礼文航路運航可否時間 通年（5：00～5：30）",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。運航狀況頁見 https://heartlandferry.jp/status/「運航状況｜欠航や臨時便などの最新情報」；電話見 FAQ「TEL 0162-23-3780  通年 05：30～」。第 5 輪刪掉 2026-10-18 05:20 決定的例子"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "網路預約的人遇到停航，會收到寄到註冊信箱的通知。其他情況渡輪公司不會另外聯絡。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "欠航になった場合に運航会社から連絡はありますか。ご登録頂いたメールアドレスに、ご連絡を差し上げております。",
+      "verdict": "verified",
+      "notes": "FAQ「欠航の連絡はございませんので、予めご了承ください。」"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "LINE官方帳號「ハートランドフェリー　利尻礼文運航情報」加為好友，它只在停航、暫緩開航與加開臨時船時發訊息。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2024/10/icon_HLF.jpg",
+      "sourceTitle": "ハートランドフェリー株式会社×LINE公式アカウント 運航情報配信中（ポスター画像）",
+      "sourceQuote": "■フェリーが欠航する場合 ■運航見合わせの場合 ■臨時便を運航する場合 ※平常運航時の配信はいたしません。｜「ハートランドフェリー　利尻礼文運航情報」を友達リストに追加",
+      "verdict": "verified",
+      "notes": "海報為 JPG，查核者下載看圖；FAQ 也寫「平常運航以外の運航情報（欠航する場合・運航見合せの場合・臨時便運航の場合）が配信されます」"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "用LINE掃描官網頁首LINE圖示連到的海報上的QR code，就能加為好友。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2024/10/icon_HLF.jpg",
+      "sourceTitle": "ハートランドフェリー株式会社×LINE公式アカウント 運航情報配信中（ポスター画像）",
+      "sourceQuote": "2. QR コードリーダーで右の QR を読み取る 3.「ハートランドフェリー　利尻礼文運航情報」を友達リストに追加",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。官網各頁頁首 LINE 圖示連到這張海報（第 1 輪已確認 href）"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "預約的那班船停航時會自動取消，不收取消費，網路預約的票款全額退回信用卡。要搭其他班次，必須自己重新預約。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "欠航した便は、自動的にキャンセルとなります。…改めてご予約を頂く必要がございます。｜欠航の場合、キャンセル料（取消手数料）は発生いたしません。決済時にご利用頂きましたクレジットカードに全額返金いたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "訂了來回或繞兩島的行程，只有停航那一班會自動取消。其他相關班次要自己在開船前取消或改期，這樣做同樣不收費。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "欠航した便は、自動キャンセルになりますが、関連便については、自動キャンセルにはなりません。…関連便は、出港前にお客様ご自身でキャンセルまたは変更をお願い致します。なお、キャンセル料（取消手数料）は発生致しません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C95",
+      "articleExcerpt": "稚內、香深、鴛泊三個渡輪站的售票櫃台都在1樓，乘船口都在2樓，上船時走空橋直接登船。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "利尻・礼文航路に就航しているフェリーはすべてボーディングブリッジからご乗船できます。",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；三張樓層圖 1F 都有「発券カウンター」，2F 都標「フェリー乗船口は2Fです」（稚內為乗船口1・2，鴛泊與香深為「乗降口」）"
+    },
+    {
+      "claimId": "C96",
+      "articleExcerpt": "稚內港渡輪站在稚內市開運2-7-1，從JR稚內站走路約15分鐘，搭計程車約2分鐘，車資估計約610到720日圓。",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島）｜ハートランドフェリー",
+      "sourceQuote": "稚内市開運2-7-1｜JR稚内駅よりタクシーで約2分 (約720円)｜JR稚内駅より徒歩約15分｜※タクシー料金は目安です。",
+      "verdict": "verified",
+      "notes": "範圍兩端都有官方依據：利尻頁約 720 日圓；禮文頁 https://heartlandferry.jp/rebun/「JR稚内駅よりタクシーで約2分(約610円)」；兩頁都註明目安"
+    },
+    {
+      "claimId": "C97",
+      "articleExcerpt": "從稚內機場搭巴士約35分鐘，車資大人800日圓、小孩400日圓",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス｜宗谷バス",
+      "sourceQuote": "稚内市内から稚内空港を結ぶ路線バスです。所要時間３５分【予約不要】運賃：一律 大人８００円／小児４００円",
+      "verdict": "verified",
+      "notes": "第 2 輪（2026-10-18）：作者依第 1 輪 outdated 意見改為經營者宗谷巴士的固定票價，查核者重新打開宗谷巴士頁確認「一律 大人８００円／小児４００円」仍在。35 分鐘另見渡輪利尻頁、禮文頁「稚内空港よりバスで約35分」。第 1 輪原句「估計約700到800日圓」判 outdated（禮文頁 約700円 為舊數字）"
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "搭計程車約30分鐘，估計約4,000到5,000日圓。",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島）｜ハートランドフェリー",
+      "sourceQuote": "稚内空港よりタクシーで約30分 (約5,000円)｜※タクシー料金は目安です。",
+      "verdict": "verified",
+      "notes": "另一端見禮文頁「稚内空港よりタクシーで約30分(約4,000円)」；計程車沒有單一經營者，兩頁都標目安，寫成範圍合理"
+    },
+    {
+      "claimId": "C99",
+      "articleExcerpt": "售票櫃台在1樓，樓層圖上標示為「発券カウンター」，同一排還有宗谷巴士的售票櫃台與觀光服務處。宗谷巴士櫃台賣城際巴士與島上觀光巴士的票，就在渡輪櫃台旁。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/02/wakkanai-floor-map.pdf",
+      "sourceTitle": "稚内港フェリーターミナル フロアマップ",
+      "sourceQuote": "1F「発券カウンター Ticket Counter」；同排圖示「i」「BUS i」；圖例「観光インフォメーション」「宗谷バス(都市間バス・島内観光バス)チケット発券カウンター」",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；稚內樓層圖 1F 放大"
+    },
+    {
+      "claimId": "C100",
+      "articleExcerpt": "乘船口在2樓，搭手扶梯或電梯上樓後，候船大廳有乘船口1和乘船口2。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/02/wakkanai-floor-map.pdf",
+      "sourceTitle": "稚内港フェリーターミナル フロアマップ",
+      "sourceQuote": "2F「フェリー乗船口は2Fです」「待合ロビー Lounge」「乗船口1」「乗船口2」；1F・2F 有エスカレーター、エレベーター圖示",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；稚內樓層圖 2F"
+    },
+    {
+      "claimId": "C101",
+      "articleExcerpt": "基本資訊欄：日文名 稚内港フェリーターミナル；地址 稚內市開運2-7-1；怎麼去 JR稚內站走路約15分鐘；售票櫃台 1樓「発券カウンター」；乘船口 2樓「乗船口1」「乗船口2」；置物櫃 1樓，投幣式",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/02/wakkanai-floor-map.pdf",
+      "sourceTitle": "稚内港フェリーターミナル フロアマップ",
+      "sourceQuote": "稚内港フェリーターミナル フロアマップ｜1F 発券カウンター｜2F 乗船口1・乗船口2｜1F コインロッカー Locker 圖示",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；地址與步行時間見利尻頁；FAQ 置物櫃表「稚内港フェリーターミナル｜○」"
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "1樓大廳另一頭是賣店Heart Land Shop，營業到當天最後一班船開出為止。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "稚内港の最終出航時間まで通常営業しております。4/28～5/31 ……～14：45 6/1～9/30 …… ～16：40 10/1～10/31……～14：45 11/1～4/27……～14：10（12/31～翌1/2は休業となります）※欠航時は上記時間よりも営業が短くなる場合がございます。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。第 5 輪刪掉三段營業時間與年末休業句。位置見稚內樓層圖 1F「「Heart Land Shop」」"
+    },
+    {
+      "claimId": "C103",
+      "articleExcerpt": "投幣置物櫃在1樓廁所旁，2樓除了候船大廳，還有餐廳「シーサイドレストラン Yu～来」。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/02/wakkanai-floor-map.pdf",
+      "sourceTitle": "稚内港フェリーターミナル フロアマップ",
+      "sourceQuote": "1F 廁所旁「コインロッカー Locker」圖示；2F「待合ロビー Lounge」「シーサイドレストラン Yu～来 (yuura)」",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。第 1 輪將樓層圖轉成 PNG 放大看圖確認；FAQ 置物櫃表「稚内港フェリーターミナル｜○」"
+    },
+    {
+      "claimId": "C106",
+      "articleExcerpt": "渡輪站旁的停車場由渡輪公司經營，約90個車位。停一天基本1,000日圓，住一晚停兩天2,000日圓，依季節可能停滿。",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島）｜ハートランドフェリー",
+      "sourceQuote": "稚内フェリーターミナル駐車場｜運営｜ハートランドフェリー｜主な料金｜1泊2日 2,000円｜備考｜基本料金 1日1,000円｜台数｜約90台",
+      "verdict": "verified",
+      "notes": "禮文頁同；FAQ「時期により駐車場が満車になる場合もございます」"
+    },
+    {
+      "claimId": "C107",
+      "articleExcerpt": "停車場的精算機在1樓正面出入口旁。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/02/wakkanai-floor-map.pdf",
+      "sourceTitle": "稚内港フェリーターミナル フロアマップ",
+      "sourceQuote": "「稚内フェリーターミナル有料駐車場精算機 Parking Pay Box」引線指向正面出入口內側",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；1F 放大"
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "香深港渡輪站在禮文町公所沿著海邊走約800公尺處，發券櫃台在1樓右側，旁邊是宗谷巴士服務台。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/09/202609kafuka-floor-mapOL.pdf",
+      "sourceTitle": "香深港フェリーターミナル フロアマップ",
+      "sourceQuote": "1F 右側「発券カウンター Ticket Counter」，正上方「BUS i」（圖例 宗谷バスインフォメーション）",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；約 800m 見利尻頁「香深港フェリーターミナル 礼文郡礼文町香深 … 役場庁舎より海を左手に約800m進むとターミナルがあります。」"
+    },
+    {
+      "claimId": "C109",
+      "articleExcerpt": "鴛泊港渡輪站的1樓大廳同樣有發券櫃台、觀光服務處和宗谷巴士服務台。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/2026oshidomari-floor-mapOL.pdf",
+      "sourceTitle": "鴛泊港フェリーターミナル フロアマップ",
+      "sourceQuote": "1F「発券カウンター Ticket Counter」「i」（観光インフォメーション）「BUS i」（宗谷バスインフォメーション）",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；"
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "兩站的正面出口外都有計程車乘車處，觀光巴士則在建築側面上車。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/09/202609kafuka-floor-mapOL.pdf",
+      "sourceTitle": "香深港フェリーターミナル フロアマップ",
+      "sourceQuote": "香深 1F：正面出入口前「ハイヤー乗場 Taxi Stop」，建築右側「観光バス乗場」；鴛泊 1F：正面側「ハイヤー乗場」「循環バス乗場」，右側「観光バス乗場」",
+      "verdict": "verified",
+      "notes": "圖片來源：查核者下載後以 Windows.Data.Pdf 轉成 PNG（3000～3600px 寬）並裁切放大，用 Read 看圖；鴛泊樓層圖 https://heartlandferry.jp/wp/wp-content/uploads/2026/01/2026oshidomari-floor-mapOL.pdf"
+    },
+    {
+      "claimId": "C111",
+      "articleExcerpt": "利尻島另一個港口沓形港的渡輪站沒有賣店和餐飲，從沓形搭船前要先在別處準備吃的。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "沓形港フェリーターミナル｜×｜×（欄位：売店｜飲食店）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "船上有飲料販賣機，但沒有餐廳，可以自己帶食物上船吃。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "船内に飲食店はございませんが、お客様ご自身でお持ち込みいただいたお食事はお召し上がりいただけます。",
+      "verdict": "verified",
+      "notes": "about_reservation「船内では飲物の自動販売機はありますが、食堂はありません。」"
+    },
+    {
+      "claimId": "C113",
+      "articleExcerpt": "利尻、禮文航線的船上小賣部2026年的營業期間是5月1日到10月31日，另外還有賣冰淇淋的冷凍甜點販賣機。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "さらに、2026年5月1日～10月31日までの期間中は、利尻礼文航路の船内売店を営業いたします。｜利尻礼文航路では冷凍スイーツの自動販売機にて、アイスクリームを販売しております。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。研究記錄 F219 新補的摘錄與官網一致。預約頁「船内売店は利礼航路のみ2026年10月31日まで営業中」也相符"
+    },
+    {
+      "claimId": "C114",
+      "articleExcerpt": "船上沒有投幣置物櫃，アマポーラ宗谷號設有免費的行李間。船上不出借毛毯。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "全船ともコインロッカーの設備はございません。但し、「アマポーラ宗谷(利尻・礼文航路)」…には無料の荷物ルームがございます。｜毛布の貸出は行っておりません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C115",
+      "articleExcerpt": "怕暈船可以選下層、船身中段的位子，アマポーラ宗谷號和サイプリア宗谷號裝有減搖鰭。渡輪站和船上都不賣暈船藥，需要的人要在上船前備好。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "上階より下階の方が、また…中央部が揺れを感じるのが少ないとされています。…「アマポーラ宗谷」「サイプリア宗谷」…フィンスタビライザーが装備されております。｜酔い止め 販売しておりません。｜船内では、乗り物酔い止め薬を含む医薬品販売はございません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C116",
+      "articleExcerpt": "有空位時可以在船上的服務處升等到較高艙等，只收現金。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "空席がある場合、上等級への等級変更のみを船内にて承っております。（現金のみのお支払いとなります。）利尻礼文航路・・・案内所",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C117",
+      "articleExcerpt": "天氣許可時可以到甲板上，夏天到秋天有機會看到海豚或鯨魚。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "航海中に外に出ることはできますか。可能です。但し、当日の天候（荒天時等）などにより控えて頂く場合がございます。｜【利尻・礼文航路】夏から秋にかけて見られる場合がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C118",
+      "articleExcerpt": "航行中手機大致收得到訊號，講電話請到大廳或甲板。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "基本的には、つながります。…船内案内所のロビーやデッキにてお願い致します。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C119",
+      "articleExcerpt": "靠岸後下船可能要等約10分鐘",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "着岸後10分程度お時間をいただく場合がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C120",
+      "articleExcerpt": "15人以上的團體不能網路預約，要打電話給渡輪公司，團體票一般大人小孩都打9折。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "ＷＥＢ予約では、15名以上の団体のご予約は受け付けておりません。各支店へお問い合わせください。ご予約・お問い合わせ先【利尻・礼文航路】（0162-23-3780）",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。9 折見運賃表「団体割引（15名以上）一般（大人、小児とも）は、1割引。」；第 5 輪由常見問題 H2 移到網路預約段，刪掉傳真受理一句"
+    },
+    {
+      "claimId": "C122",
+      "articleExcerpt": "渡輪官網繁中頁，繁體中文的時刻表與票價。",
+      "sourceUrl": "https://heartlandferry.jp/chinese/",
+      "sourceTitle": "ハートランドフェリー 繁體中文",
+      "sourceQuote": "時刻、價目、料金表",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C123",
+      "articleExcerpt": "回稚內的末班船，香深出發夏季是17:10、其他季節17:05，鴛泊出發夏季與春秋是16:40、冬季17:30。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "香深発～稚内着：6/1～9/30 … 17:10～19:05；4/28～5/31・10/1～10/31・1/1～4/27・11/1～12/31 … 17:05～19:00",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。鴛泊見 https://heartlandferry.jp/timetable/：4/28～5/31・6/1～9/30・10/1～10/31「16:40～18:20」，1/1～4/27・11/1～12/31「17:30～19:10」"
+    },
+    {
+      "claimId": "C124",
+      "articleExcerpt": "利尻島和禮文島想一起排時，島間船是串起兩島的關鍵，鴛泊和香深之間夏季一天2個來回，春秋與冬季只有1個來回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 09:30～10:15｜10:40～11:25｜13:15～14:00｜15:30～16:15；4/28～5/31｜12:15～13:00｜13:25～14:10；1/1～4/27｜16:00～16:45｜16:25～17:10",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。10 月與 11～12 月同春秋、冬季。「兩島的先後順序與天數，整理在利尻島」是內連句，不含事實"
+    },
+    {
+      "claimId": "C125",
+      "articleExcerpt": "網路刷卡不順利時，也可以當天到窗口用現金或信用卡買票，有空位就能搭。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "車と個人・団体のお客様全て、空きがあれば、ご予約をされていなくてもご乗船いただけます。｜現金またはクレジットカードでのお支払いが可能です。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。「網路刷卡不順利時」是使用情境，不是官方條件；當天窗口購票也見 FAQ「当日、窓口または券売機にて乗船券をお買い求めください」"
+    },
+    {
+      "claimId": "C126",
+      "articleExcerpt": "兩個月前剛好沒有同一天時，從一個月前那個月的1日開放，例如4月30日的船從3月1日開放。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "なお、2ヶ月前に同日が無い場合は、1ヶ月前の月初日からの受付開始となります。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。例子驗算：4/30 的兩個月前是 2/30，不存在，改從一個月前（3 月）的月初 3/1 開放，正確"
+    },
+    {
+      "claimId": "C127",
+      "articleExcerpt": "不方便打日文電話的人，1等也能改用網路預約。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "２等室（利礼航路のみ2024年12月利用分から可能）、２等指定席（奥尻航路のみ）及び１等客室をご利用のお客様のご予約。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。"
+    },
+    {
+      "claimId": "C128",
+      "articleExcerpt": "電話預約從兩個月前同一天上午9點開始，預約時要提供姓名與聯絡電話。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "車と個人のお客様のご予約は2ヶ月前の同日午前9：00より承ります。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。姓名與電話見 about_reservation「※ご予約に際しては、お名前とご連絡先番号が必要となります。」"
+    },
+    {
+      "claimId": "C129",
+      "articleExcerpt": "辦乘船手續時，出示乘船QR code或報上9位數的預約號碼都可以。",
+      "sourceUrl": "https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "ハートランドフェリー WEB予約システム : よくあるご質問",
+      "sourceQuote": "乗船手続きに必要なものは何ですか。予約取得後に発行される、予約番号（数字9桁）またはQRコードが確認できるものをお持ちください。",
+      "verdict": "verified",
+      "notes": "第 3 輪（2026-10-18）重開官方頁確認。研究記錄 F37 新補的摘錄與官網一致；reserve.jp.pdf 範例預約號碼 2410-05487 也是 9 位數。原文是「帶可確認號碼或 QR 的東西」，正文「報上」語意相近，可接受"
+    }
+  ],
+  "summary": {
+    "verified": 125,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  },
+  "overallVerdict": "verified",
+  "overallNotes": "第 3 輪：依 section-checks/revisions.md 第 5 輪 17 列與「只刪不加」清單，把新版逐項改回舊句後 SHA-256 等於第 2 輪的 286a14c8…，證明沒有清單外的改動。改寫句更新 22 項 claim、刪除 4 項（見 removedClaims）、新增 7 項（C123～C129），全部重開官方頁確認。研究記錄 F37、F906、F219 新補摘錄都在現行官網上。手機日文鍵盤輸入羅馬拼音會打出平假名一句是一般輸入法操作，不算經營者事實，內容正確。正文沒有「官方沒寫」「未查」或交代查不到資料的句子。",
+  "round": 3,
+  "previousArticleSha256": "286a14c83fad5af0aa397ae514705d606e233edfed40ab2fc48a2cd32b556bf0",
+  "removedClaims": [
+    {
+      "claimId": "C89",
+      "articleExcerpt": "也可以打0162-23-3780詢問，這支電話全年5:30起接聽。",
+      "reason": "第 5 輪刪除「也可以打0162-23-3780詢問，這支電話全年5:30起接聽」，內容併入 C68 與 C88"
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "1樓「発券カウンター」，渡輪售票櫃台。1樓「Heart Land Shop」，賣店。",
+      "reason": "第 5 輪刪除樓層條列「1樓発券カウンター／Heart Land Shop」，同內容仍由 C8、C99、C102 涵蓋"
+    },
+    {
+      "claimId": "C105",
+      "articleExcerpt": "1樓「コインロッカー」，投幣置物櫃，在廁所旁。",
+      "reason": "第 5 輪刪除條列「1樓コインロッカー」，改寫進 C103"
+    },
+    {
+      "claimId": "C121",
+      "articleExcerpt": "團體票一般大人小孩都打9折，從搭船前一年的11月起用傳真受理，細節要洽詢渡輪公司。",
+      "reason": "第 5 輪刪除「從搭船前一年的11月起用傳真受理」等句，9 折併入 C120"
+    }
+  ]
+}

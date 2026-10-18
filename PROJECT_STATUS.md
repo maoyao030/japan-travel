@@ -653,3 +653,25 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 用渡輪頁（`wakkanai-ferry`）照新規則試寫一整篇，給 Darren 看品質。
+
+## 2026-10-18 Claude Code（地端）：渡輪頁整篇試寫與驗收（分支 `plan/wakkanai-outline`）
+
+### Darren 的要求
+
+- 照新規則用渡輪頁試寫一整篇，寫完經過檢查與驗收再給他看。
+
+### 結果
+
+- `content-production/wakkanai-ferry/`：`ready_for_user_preview`。格式 mechanical_clear、標題與讀者價值 acceptable、事實 125 項 verified、口吻檢查通過。驗收紀錄見 `review.md`。
+- 經過 8 輪：作者成稿、6 個分段檢查（27 處修改）、標題檢查、事實查核 3 輪（第 1 輪抓到協調者給錯的機場巴士票價）、讀者驗收兩階段與最終判定。
+- 寫作前重查：渡輪官網全部來源頁重開，只有 F44 賣店時間改變，已同步 `content-planning/hokkaido/places/wakkanai/facts.json`。之前讀不到的樓層圖與停航天數圖改用瀏覽器與圖片讀到。
+- 流程修正：範例的事實編號改放在句號前（配合 `fact_tags.py`）；寫作 Skill 的延伸資料位置改成獨立一節。
+
+### 尚未完成
+
+- `fact_tags.py` 讓延伸資料段不要求編號；讀者驗收列的 5 個選擇性小修改等 Darren 看過再決定。
+- 還沒選圖、還沒上 Sanity。
+
+### 唯一下一步
+
+- Darren 看 `content-production/wakkanai-ferry/reader-preview.md`，決定品質是否合格與每天篇數。
