@@ -132,15 +132,18 @@ test('AI 腔句型每個階段都擋，訊息附原句', () => {
   assert.ok(AI_PHRASES.length >= 10)
 })
 
-test('用字頻率只在定稿（final）且正文夠長時檢查', () => {
-  const sentence = '從稚內港搭船約1小時40分就到鴛泊港，所以帶腳踏車的人記得要先早點到渡輪站辦手續，而且要先確認班次。'
+test('用字頻率只在定稿（final）且正文夠長時提醒，不算失敗', () => {
+  const sentence = '從稚內港搭船約1小時40分就到鴛泊港，所以帶腳踏車的人記得要先早點到渡輪站辦手續，而且要先確認班次與預約。'
   const long = Array.from({length: Math.ceil(MIN_RATE_CHARS / sentence.length) + 1}, () => sentence).join('')
   const markdown = article(long)
-  assert.equal(checkVoice(markdown).issues.some((issue) => /真人文章少用/.test(issue)), false)
-  const final = checkVoice(markdown, {final: true}).issues.join('\n')
-  assert.match(final, /「所以」每千字[\d.]+次（上限0.6，真人文章少用）/)
-  assert.match(final, /「的人」每千字[\d.]+次（上限1，真人文章少用），「帶腳踏車的人要…」改成「帶腳踏車的話…」/)
+  assert.deepEqual(checkVoice(markdown).warnings, [])
+  const final = checkVoice(markdown, {final: true})
+  const warnings = final.warnings.join('\n')
+  assert.match(warnings, /「所以」每千字[\d.]+次（真人文章最多約0.6）/)
+  assert.match(warnings, /「的人」每千字[\d.]+次（真人文章最多約1），「帶腳踏車的人要…」改成「帶腳踏車的話…」/)
+  assert.equal(final.issues.some((issue) => /真人文章/.test(issue)), false, '頻率只提醒，不擋')
   assert.equal(FINAL_RATES.記得.limit, 0.5)
-  assert.deepEqual(checkVoice(article(good), {final: true}).issues, [], '短文不檢查頻率')
+  assert.equal('預約與約1小時'.match(FINAL_RATES.約.pattern)?.length, 1, '「預約」不算「約」')
+  assert.deepEqual(checkVoice(article(good), {final: true}).warnings, [], '短文不檢查頻率')
 })
 

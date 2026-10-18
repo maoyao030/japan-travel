@@ -18,14 +18,15 @@ const KANA = /[぀-ヿー・]{2,}/g
 const normalize = (text) => text.replace(/\r\n/g, '\n')
 const stripTags = (text) => text.replace(TAG, '').replace(/\s+(?=[。，、！？])/g, '')
 
-/** 依 H2 切段；H2 之前的開頭算一段「開頭」。 */
-export function sections(markdown) {
+/** 依 H2 切段（maxLevel=3 時連 H3 也切）；第一個標題之前的開頭算一段「開頭」。 */
+export function sections(markdown, maxLevel = 2) {
   const result = []
   let current = {title: '開頭', lines: []}
   for (const line of normalize(markdown).split('\n')) {
-    if (/^##\s+/.test(line) && !/^###/.test(line)) {
+    const level = (line.match(/^(#{2,6})\s+/) || [])[1]?.length
+    if (level && level <= maxLevel) {
       result.push(current)
-      current = {title: line.replace(/^##\s+/, '').trim(), lines: []}
+      current = {title: line.replace(/^#+\s+/, '').trim(), lines: []}
     } else current.lines.push(line)
   }
   result.push(current)
@@ -88,13 +89,15 @@ export function checkPolish(beforeText, afterText, {linkSentences = []} = {}) {
   const beforeSections = sections(before)
   const afterSections = sections(after)
   const afterByTitle = new Map(afterSections.map((section) => [section.title, section]))
-  const moves = []
   for (const section of beforeSections) {
-    const match = afterByTitle.get(section.title)
-    if (!match) {
-      issues.push(`段落「${section.title}」不見了`)
-      continue
-    }
+    if (!afterByTitle.has(section.title)) issues.push(`段落「${section.title}」不見了`)
+  }
+  // 搬動與刪重複以 H3 為單位列出，同一個 H2 底下不同小節之間的刪重複也看得到
+  const moves = []
+  const afterSubsections = new Map(sections(after, 3).map((section) => [section.title, section]))
+  for (const section of sections(before, 3)) {
+    const match = afterSubsections.get(section.title)
+    if (!match) continue
     const b = whole(section.lines.join('\n'))
     const a = whole(match.lines.join('\n'))
     for (const [label, key] of [['事實編號', 'ids'], ['數字', 'nums'], ['日文', 'kana']]) {

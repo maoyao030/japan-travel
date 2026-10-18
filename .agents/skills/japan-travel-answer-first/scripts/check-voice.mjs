@@ -29,7 +29,7 @@ export const LIMITS = {
   avgSentence: 38, // GLTJP 29～33 字
   longSentencePercent: 25, // 超過 50 字的句子比例，GLTJP 12%～17%
   commasPerSentence: 1.8, // GLTJP 0.9～1.4、Funliday 1.5；用「所以」「不然」串事實需要逗號，2026-10-18 從 1.4 放寬
-  ifClauses: 2.5, // 「的話」每千字；GLTJP 一整頁只用 1～2 次
+  ifClauses: 3.5, // 「的話」每千字；GLTJP 一整頁只用 1～2 次，Funliday 2.7～3.2；潤稿用條件句取代「所以」「…的人」，2026-10-18 從 2.5 放寬
   comeHere: 0, // 「來這裡」「來的話」「冬天來」這類現場感用字，改成前往、造訪、抵達
   notFound: 0, // 「官方沒寫」「官方沒有公布」「未查」：查不到的不寫（2026-10-18 Darren 決定）
 }
@@ -58,7 +58,9 @@ export const AI_PHRASES = [
 // 頻率在短文裡沒有意義，正文少於這個字數時不檢查用字頻率
 export const MIN_RATE_CHARS = 1500
 
-// 潤稿後的用字頻率，每千字上限。真人 9 篇的最大值附在旁邊；第2次潤稿的值在括號裡。
+// 潤稿後的用字頻率，每千字參考值。真人 9 篇的最大值附在旁邊；第2次潤稿的值在括號裡。
+// 只提醒、不擋：第4輪潤稿者為了過門檻把「預約」改成「訂」、「要」換成「得」，語氣沒變（Fable 審查指出的換字過關）。
+// 頻率是結果，不是原因；真正的檢查是盲測、編輯審稿與讀者任務。
 export const FINAL_RATES = {
   所以: {pattern: /所以/g, limit: 0.6, hint: '後果直接接在後面，或改用條件句「…的話，…」'}, // 0.43（2.3）
   記得: {pattern: /記得/g, limit: 0.5, hint: '不要每段都提醒，把該做的事直接寫成句子'}, // 0.79（1.34）
@@ -75,7 +77,7 @@ export const FINAL_RATES = {
   以免: {pattern: /以免/g, limit: 0.3, hint: '寫出會發生什麼事'}, // 0（0.38）
   // 第3次潤稿加量（真人最大值／第3次潤稿）
   和: {pattern: /和/g, limit: 3, hint: '列舉多用頓號「、」或「與」，不要每個並列都用「和」'}, // 2.7（6.3）
-  約: {pattern: /約/g, limit: 6, hint: '同一段不要每個數字都「約」，可以換成「…左右」「大約」，程度一樣'}, // 2.8（9.0）
+  約: {pattern: /(?<!預)約/g, limit: 6, hint: '同一段不要每個數字都「約」，可以換成「…左右」「大約」，程度一樣'}, // 2.8（9.0）
   公布: {pattern: /公布/g, limit: 0.3, hint: '不寫查資料的過程（「渡輪公司公布了」「樓層圖上標示為」），直接寫事情'}, // 0（0.5）
   逗號: {pattern: /，/g, limit: 40, hint: '短句用逗號一路接下去像條文，把同一件事併成一句，不同的事用句號分開'}, // 部落格與編輯 26～37（43.7）
 }
@@ -167,6 +169,7 @@ export function measure(paragraphs) {
 export function checkAiTone(paragraphs, {final = false} = {}) {
   const text = paragraphs.join('\n')
   const issues = []
+  const warnings = []
   for (const {label, pattern, hint} of AI_PHRASES) {
     const hits = text.match(pattern) || []
     if (!hits.length) continue
@@ -176,18 +179,20 @@ export function checkAiTone(paragraphs, {final = false} = {}) {
   if (final && text.length >= MIN_RATE_CHARS) {
     for (const [word, {pattern, limit, hint}] of Object.entries(FINAL_RATES)) {
       const rate = ((text.match(pattern) || []).length / text.length) * 1000
-      if (rate > limit) issues.push(`「${word}」每千字${rate.toFixed(1)}次（上限${limit}，真人文章少用），${hint}`)
+      if (rate > limit) warnings.push(`「${word}」每千字${rate.toFixed(1)}次（真人文章最多約${limit}），${hint}`)
     }
   }
-  return issues
+  return {issues, warnings}
 }
 
 export function checkVoice(markdown, {final = false} = {}) {
   const paragraphs = bodyParagraphs(markdown)
   const result = measure(paragraphs)
   const issues = []
-  if (result.chars === 0) return {result, issues}
-  issues.push(...checkAiTone(paragraphs, {final}))
+  if (result.chars === 0) return {result, issues, warnings: []}
+  const tone = checkAiTone(paragraphs, {final})
+  issues.push(...tone.issues)
+  const {warnings} = tone
   for (const [key, limit] of Object.entries(LIMITS)) {
     if (result[key] <= limit) continue
     const value = Number.isInteger(result[key]) ? result[key] : result[key].toFixed(1)
@@ -198,7 +203,7 @@ export function checkVoice(markdown, {final = false} = {}) {
     issues.push(`平均句長${result.avgSentence.toFixed(1)}字（下限${MIN_AVG_SENTENCE}），句子切太碎，把同一件事的短句併回去`)
   }
   if (result.bufang > MAX_BUFANG) issues.push(`「不妨」${result.bufang}次（整篇最多${MAX_BUFANG}次）`)
-  return {result, issues}
+  return {result, issues, warnings}
 }
 
 export function resolveTarget(target) {
@@ -223,11 +228,12 @@ if (isCli) {
   }
   const reports = targets.map((target) => checkVoiceTarget(target, {final}))
   if (asJson) {
-    console.log(JSON.stringify(reports.map(({file, result, issues}) => ({file, status: issues.length ? 'voice_failed' : 'voice_clear', issues, result})), null, 2))
+    console.log(JSON.stringify(reports.map(({file, result, issues, warnings}) => ({file, status: issues.length ? 'voice_failed' : 'voice_clear', issues, warnings, result})), null, 2))
   } else {
-    for (const {file, result, issues} of reports) {
+    for (const {file, result, issues, warnings} of reports) {
       console.log(`${issues.length ? '未通過' : '通過'}：${file}（正文${result.chars}字）`)
       for (const issue of issues) console.log(`  - ${issue}`)
+      for (const warning of warnings) console.log(`  提醒：${warning}`)
       for (const sentence of result.longest) console.log(`  長句：${sentence}`)
     }
   }
