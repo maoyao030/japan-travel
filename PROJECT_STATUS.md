@@ -728,3 +728,27 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 用新大綱與定案流程，把渡輪頁的 round-7i 版跑完整驗收，換成正式稿。
+
+## 2026-10-18 Claude Code（地端）：新結構渡輪頁完整驗收，換成正式稿（分支 `plan/wakkanai-outline`）
+
+### Darren 的要求
+
+- 「把新結構的渡輪頁跑完整驗收（事實查核、讀者驗收），通過就換成正式稿。」
+
+### 結果
+
+- `content-production/wakkanai-ferry/` 換成照旅客動線排的新版：**`ready_for_user_preview`**（SHA `7be9f8fe…7334`）。格式 mechanical_clear、標題與讀者價值 acceptable、事實 111 項 verified、口吻檢查通過。紀錄見 `review.md`。
+- 經過：標題檢查改 4 個標題 → 事實查核第 1 輪抓到沓形航線「一班」應為一個來回 → 讀者驗收兩階段必修 7 條 → 作者補研究（英文註冊畫面欄位 F245、狀況頁決定前顯示 F246、受託行李費 F247）並修改 → 事實查核第 2 輪抓到狀況頁沒有「発着港が変更」顯示，刪掉該列 → 第 3 輪 111 項全部 verified → 讀者最終判定可接受。
+- 大綱同步改了 4 個標題文字；譯名表加「觀景座」「休息室」。
+- 換行雜湊：`validate-fact-check.mjs` 與 `finalize-release.mjs` 改成把換行統一成 LF 再算 SHA-256，Windows 與雲端的雜湊對得上（之前的待辦）。
+- `finalize-release.mjs` 的各道檢查（正文、口吻、驗收紀錄雜湊、發布設定、事實查核、標題、格式）直接呼叫都通過；整支程式會停在「文章不在自動發布清單內」，因為稚內群還沒加進 `article-queue.json`。
+
+### 尚未完成
+
+- 稚內群加進 `article-queue.json`（要先決定每天篇數與發布時程）。
+- 選圖、上 Sanity。
+- 讀者驗收最終列的 6 條小加分；船上小賣部 2027 年營業期間公布時重查。
+
+### 唯一下一步
+
+- Darren 看新的 `content-production/wakkanai-ferry/reader-preview.md`，決定品質是否合格與每天篇數。

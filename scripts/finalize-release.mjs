@@ -244,7 +244,8 @@ export async function finalizeRelease({
     }
   }
   const readerPreview = files['reader-preview.md'].toString('utf8')
-  const readerPreviewSha256 = sha256(files['reader-preview.md'])
+  // 和 validate-fact-check.mjs 一樣，換行統一成 LF 再算雜湊（Windows 的 CRLF 與 Git 的 LF 要對得上）
+  const readerPreviewSha256 = sha256(Buffer.from(files['reader-preview.md'].toString('utf8').replace(/\r\n/g, '\n'), 'utf8'))
   const referenceReview = files['reference-review.md'].toString('utf8')
   let publication
   let factCheck
