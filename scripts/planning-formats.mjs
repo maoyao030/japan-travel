@@ -31,7 +31,7 @@ export const GAP_KINDS_WITH_RECHECK = ['not-announced', 'unreadable', 'conflicti
 export const OUTLINE_PAGE_TYPES = ['place-entry', 'aspect-page', 'cross-place-page', 'topic-page', 'shared-guide']
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
-const NON_TOPIC_HEADINGS = new Set(['常見問題', '資料來源'])
+const NON_TOPIC_HEADINGS = new Set(['常見問題', '延伸資料', '資料來源'])
 
 const hasText = (value) => typeof value === 'string' && value.trim().length > 0
 const isUrl = (value) => /^https?:\/\//.test(value ?? '')
