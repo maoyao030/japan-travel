@@ -80,7 +80,8 @@ export function inspectReaderPreview(markdown, item) {
 
 /** 口吻與標點檢查（寫作指南第 11 條）：門檻與訊息都在寫作 Skill 的 check-voice.mjs。 */
 export function inspectVoice(markdown) {
-  const {issues} = checkVoice(normalizeNewlines(markdown))
+  // 定稿是潤稿後的版本，用字頻率也要檢查
+  const {issues} = checkVoice(normalizeNewlines(markdown), {final: true})
   return {issues: issues.map((issue) => `口吻與標點檢查未通過：${issue}`)}
 }
 

@@ -5,7 +5,7 @@ import {tmpdir} from 'node:os'
 import path from 'node:path'
 import test from 'node:test'
 
-import {LIMITS, MIN_AVG_SENTENCE, bodyParagraphs, checkVoice} from '../.agents/skills/japan-travel-answer-first/scripts/check-voice.mjs'
+import {AI_PHRASES, FINAL_RATES, LIMITS, MIN_AVG_SENTENCE, MIN_RATE_CHARS, bodyParagraphs, checkVoice} from '../.agents/skills/japan-travel-answer-first/scripts/check-voice.mjs'
 import {inspectVoice} from '../scripts/finalize-release.mjs'
 
 const projectRoot = path.resolve(import.meta.dirname, '..')
@@ -120,3 +120,27 @@ test('定稿時會把口吻與標點問題當成失敗原因', () => {
   assert.equal(issues.length, 1)
   assert.match(issues[0], /^口吻與標點檢查未通過：分號每千字/)
 })
+
+test('AI 腔句型每個階段都擋，訊息附原句', () => {
+  const announced = checkVoice(article(good.replace('白色道路每年4月下旬開放', '排行程時，最先要搞清楚的是兩件事。第一是季節，白色道路每年4月下旬開放')))
+  const text = announced.issues.join('\n')
+  assert.match(text, /AI 腔「搞清楚」1次，直接講內容：排行程時，最先要搞清楚的是兩件事。/)
+  assert.match(text, /AI 腔「兩件事」「以下幾點」1次/)
+  assert.match(text, /AI 腔「第一是、第二是」1次/)
+  const key = checkVoice(article(good.replace('不開車也去得了', '關鍵是不開車也去得了')))
+  assert.match(key.issues.join('\n'), /AI 腔「關鍵」1次/)
+  assert.ok(AI_PHRASES.length >= 10)
+})
+
+test('用字頻率只在定稿（final）且正文夠長時檢查', () => {
+  const sentence = '從稚內港搭船約1小時40分就到鴛泊港，所以帶腳踏車的人記得要先早點到渡輪站辦手續，而且要先確認班次。'
+  const long = Array.from({length: Math.ceil(MIN_RATE_CHARS / sentence.length) + 1}, () => sentence).join('')
+  const markdown = article(long)
+  assert.equal(checkVoice(markdown).issues.some((issue) => /真人文章少用/.test(issue)), false)
+  const final = checkVoice(markdown, {final: true}).issues.join('\n')
+  assert.match(final, /「所以」每千字[\d.]+次（上限0.6，真人文章少用）/)
+  assert.match(final, /「的人」每千字[\d.]+次（上限1，真人文章少用），「帶腳踏車的人要…」改成「帶腳踏車的話…」/)
+  assert.equal(FINAL_RATES.記得.limit, 0.5)
+  assert.deepEqual(checkVoice(article(good), {final: true}).issues, [], '短文不檢查頻率')
+})
+

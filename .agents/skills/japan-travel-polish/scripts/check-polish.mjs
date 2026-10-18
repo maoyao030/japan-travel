@@ -1,6 +1,6 @@
 /**
  * 潤稿前後比對：潤稿只能改語氣與句子，不能改事實。
- * 每個 H2 段落比對：事實編號、數字（含時間、價格、日期）、日文片段的集合要一樣；
+ * 整篇比對：事實編號、數字（含時間、價格、日期）、日文片段的集合要一樣；各 H2 段落之間刪重複或搬動會列出來，交給意義比對；
  * 標題、表格要一字不差；大綱內連表的連結句要原樣出現在潤稿後的正文。
  *
  * 用法：node .agents/skills/japan-travel-polish/scripts/check-polish.mjs <潤稿前 draft-tagged.md> <潤稿後 draft-tagged.md> [--article=<articleId>] [--outline=<群大綱.json>]
@@ -12,7 +12,8 @@ import {pathToFileURL} from 'node:url'
 
 const TAG = /\[((?:[a-z-]+:)?[FR]\d+(?:\s*,\s*(?:[a-z-]+:)?[FR]\d+)*)\]/g
 const NUMBER = /\d[\d,]*(?:[.:]\d+)?/g
-const KANA = /[぀-ヿー][぀-ヿー一-鿿・ー]*[぀-ヿー]|[぀-ヿ]{2,}/g
+// 只抓連續的假名：夾著漢字的長串會把中文也抓進去（「アマポーラ宗谷號和サイプリア」），潤稿就不能改中間的中文
+const KANA = /[぀-ヿー・]{2,}/g
 
 const normalize = (text) => text.replace(/\r\n/g, '\n')
 const stripTags = (text) => text.replace(TAG, '').replace(/\s+(?=[。，、！？])/g, '')
@@ -73,29 +74,42 @@ export function checkPolish(beforeText, afterText, {linkSentences = []} = {}) {
   const afterTables = tables(after)
   if (beforeTables.join('\n') !== afterTables.join('\n')) issues.push('表格改變了：潤稿不能改表格')
 
+  // 整篇的事實編號、數字、日文要一樣。各段可以刪掉別段已經寫過的重複內容，或把內容搬到別段，
+  // 但段裡少掉的東西整篇一定還在、段裡多出來的東西潤稿前一定寫過。搬動是否合理交給意義比對。
+  const whole = (text) => ({ids: factIds(text), nums: numbers(text), kana: kana(text)})
+  const beforeAll = whole(before)
+  const afterAll = whole(after)
+  for (const issue of [
+    ...diff('事實編號', beforeAll.ids, afterAll.ids),
+    ...diff('數字', beforeAll.nums, afterAll.nums),
+    ...diff('日文', beforeAll.kana, afterAll.kana),
+  ]) issues.push(`整篇${issue}`)
+
   const beforeSections = sections(before)
   const afterSections = sections(after)
   const afterByTitle = new Map(afterSections.map((section) => [section.title, section]))
+  const moves = []
   for (const section of beforeSections) {
     const match = afterByTitle.get(section.title)
     if (!match) {
       issues.push(`段落「${section.title}」不見了`)
       continue
     }
-    const b = section.lines.join('\n')
-    const a = match.lines.join('\n')
-    for (const issue of [
-      ...diff('事實編號', factIds(b), factIds(a)),
-      ...diff('數字', numbers(b), numbers(a)),
-      ...diff('日文', kana(b), kana(a)),
-    ]) issues.push(`「${section.title}」${issue}`)
+    const b = whole(section.lines.join('\n'))
+    const a = whole(match.lines.join('\n'))
+    for (const [label, key] of [['事實編號', 'ids'], ['數字', 'nums'], ['日文', 'kana']]) {
+      const removed = [...b[key]].filter((value) => !a[key].has(value) && afterAll[key].has(value))
+      const added = [...a[key]].filter((value) => !b[key].has(value) && beforeAll[key].has(value))
+      if (removed.length) moves.push(`「${section.title}」刪掉或搬走的${label}（別段還有）：${removed.join('、')}`)
+      if (added.length) moves.push(`「${section.title}」從別段搬來的${label}：${added.join('、')}`)
+    }
   }
 
   const plainAfter = stripTags(after)
   for (const sentence of linkSentences) {
     if (!plainAfter.includes(sentence)) issues.push(`內連句沒有原樣出現：${sentence}`)
   }
-  return {status: issues.length ? 'polish_changed_facts' : 'polish_safe', issues}
+  return {status: issues.length ? 'polish_changed_facts' : 'polish_safe', issues, moves}
 }
 
 function linkSentencesFor(outlinePath, articleId) {
@@ -118,5 +132,7 @@ if (isCli) {
   const result = checkPolish(readFileSync(files[0], 'utf8'), readFileSync(files[1], 'utf8'), {linkSentences})
   console.log(result.status === 'polish_safe' ? `通過：潤稿沒有改到事實（檢查了 ${linkSentences.length} 句內連句）` : '未通過：潤稿改到了事實')
   for (const issue of result.issues) console.log(`  - ${issue}`)
+  if (result.moves.length) console.log('跨段刪重複或搬動（交給意義比對確認）：')
+  for (const move of result.moves) console.log(`  · ${move}`)
   if (result.issues.length) process.exitCode = 1
 }

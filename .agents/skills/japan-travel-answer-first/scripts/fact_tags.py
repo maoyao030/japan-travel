@@ -22,7 +22,8 @@ HEADING = re.compile(r"^#{1,6}\s")
 NEEDS_TAG = re.compile(
     r"[0-9０-９]|只收|不找零|免費|需要預約|要預約|預約制|封閉|停駛|停航|休館|不能|禁止|可以刷|收現金|含稅|未稅|評論常提到|評論多半|評分"
 )
-SKIP_SECTIONS = {"資料來源", "參考資料"}
+# 延伸資料是官方頁的連結與一句用途，網址裡的數字不是事實主張
+SKIP_SECTIONS = {"資料來源", "參考資料", "延伸資料"}
 
 
 def split_units(line: str) -> list[str]:

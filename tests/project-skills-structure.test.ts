@@ -514,7 +514,7 @@ test('標編號檢查會擋下沒有事實編號的數字句與不存在的編�
 
     await writeFile(
       path.join(directory, 'draft-tagged.md'),
-      '# 標題\n\n直航約 1 小時 55 分 [F1]。巴士只收現金 [F2]。\n\n| 項目 | 內容 |\n|---|---|\n| 船 | 約 2 小時 [F1] |\n\n## 資料來源\n\n- 2026 年時刻表\n',
+      '# 標題\n\n直航約 1 小時 55 分 [F1]。巴士只收現金 [F2]。\n\n| 項目 | 內容 |\n|---|---|\n| 船 | 約 2 小時 [F1] |\n\n## 延伸資料\n\n- **時刻表**，各季的開船時間。https://example.invalid/2026/time1/\n\n## 資料來源\n\n- 2026 年時刻表\n',
     )
     const passed = spawnSync(python, [script, directory], {encoding: 'utf8'})
     assert.equal(passed.status, 0, passed.stdout)
