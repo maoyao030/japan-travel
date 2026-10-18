@@ -6,7 +6,9 @@
  * 用法：
  *   node scripts/ops-facts.mjs sync                   把所有地點事實表與群大綱的引用登記到 D1
  *   node scripts/ops-facts.mjs due [--days=0]         列出到期（或 N 天內到期）的事實，依來源網址分組
- *   node scripts/ops-facts.mjs checked --fact=<地點:F12> --result=unchanged|changed|unreachable|removed --next=<YYYY-MM-DD> [--note=...]
+ *   node scripts/ops-facts.mjs checked --fact=<地點:F12> --result=unchanged|changed|unreachable|removed|found --next=<YYYY-MM-DD> [--note=...]
+ * 缺口（事實表 kind: gap）也登記在 facts，用同一套重查；found 表示缺口查到資料了，寫例外請規劃 session 補進事實表。
+ * 推算的事實（derivedFrom）在來源事實 changed 時一起標成 changed。
  * 加 --local 改用本機資料庫。
  */
 import {readdir, readFile} from 'node:fs/promises'
@@ -17,7 +19,7 @@ import {createOpsExecutor, parseOptions, positionalArguments, projectRoot, sqlLi
 
 const planningRoot = path.join(projectRoot, 'content-planning')
 const toPosix = (file) => file.split(path.sep).join('/')
-export const CHECK_RESULTS = ['unchanged', 'changed', 'unreachable', 'removed']
+export const CHECK_RESULTS = ['unchanged', 'changed', 'unreachable', 'removed', 'found']
 
 async function walk(directory) {
   const entries = await readdir(directory, {withFileTypes: true})
@@ -30,11 +32,33 @@ async function walk(directory) {
   return files
 }
 
+export const SYNC_BATCH_CHARS = 12000
+
+/** 依字數把 SQL 分批，每批不超過 maxChars（單句超過時自成一批）。 */
+export function batchByLength(statements, maxChars) {
+  const batches = []
+  let current = []
+  let length = 0
+  for (const statement of statements) {
+    if (current.length > 0 && length + statement.length > maxChars) {
+      batches.push(current)
+      current = []
+      length = 0
+    }
+    current.push(statement)
+    length += statement.length
+  }
+  if (current.length > 0) batches.push(current)
+  return batches
+}
+
 /** 從地點事實表與群大綱算出要登記的事實與引用；純函式。 */
 export function buildFactRecords({factTables, outlines}) {
   const facts = []
   for (const {table, evidencePath} of factTables) {
     for (const fact of table.facts ?? []) {
+      const isGap = fact.kind === 'gap'
+      const removed = fact.decision === 'removed'
       facts.push({
         factId: `${table.placeId}:${fact.factId}`,
         placeId: table.placeId,
@@ -42,8 +66,12 @@ export function buildFactRecords({factTables, outlines}) {
         sourceUrl: fact.sourceUrl ?? '',
         evidencePath,
         lastCheckedAt: fact.checkedAt ?? '1970-01-01',
-        nextCheckAt: fact.decision === 'removed' || fact.changeType === 'stable' ? null : fact.nextCheckAt ?? null,
-        status: fact.decision === 'removed' ? 'removed' : 'ok',
+        // 缺口照自己的下次查核日重查（沒填就不重查）；一般事實 stable 不重查
+        nextCheckAt: removed ? null : isGap ? fact.nextCheckAt ?? null : fact.changeType === 'stable' ? null : fact.nextCheckAt ?? null,
+        status: removed ? 'removed' : 'ok',
+        kind: isGap ? 'gap' : 'fact',
+        gapKind: isGap ? fact.gapKind ?? null : null,
+        derivedFrom: (fact.derivedFrom ?? []).map((ref) => (ref.includes(':') ? ref : `${table.placeId}:${ref}`)),
       })
     }
   }
@@ -62,12 +90,14 @@ export async function syncFacts({execute, factTables, outlines, now = new Date()
   const {facts, usage} = buildFactRecords({factTables, outlines})
   const at = sqlLiteral(now.toISOString())
   const statements = facts.map(
-    (fact) => `INSERT INTO facts (fact_id, place_id, change_type, source_url, evidence_path, last_checked_at, next_check_at, status, updated_at)
+    (fact) => `INSERT INTO facts (fact_id, place_id, change_type, source_url, evidence_path, last_checked_at, next_check_at, status, kind, gap_kind, derived_from, updated_at)
       VALUES (${sqlLiteral(fact.factId)}, ${sqlLiteral(fact.placeId)}, ${sqlLiteral(fact.changeType)}, ${sqlLiteral(fact.sourceUrl)},
-        ${sqlLiteral(fact.evidencePath)}, ${sqlLiteral(fact.lastCheckedAt)}, ${sqlLiteral(fact.nextCheckAt)}, ${sqlLiteral(fact.status)}, ${at})
+        ${sqlLiteral(fact.evidencePath)}, ${sqlLiteral(fact.lastCheckedAt)}, ${sqlLiteral(fact.nextCheckAt)}, ${sqlLiteral(fact.status)},
+        ${sqlLiteral(fact.kind)}, ${sqlLiteral(fact.gapKind)}, ${sqlLiteral(fact.derivedFrom.length ? JSON.stringify(fact.derivedFrom) : null)}, ${at})
       ON CONFLICT(fact_id) DO UPDATE SET
         change_type = excluded.change_type, source_url = excluded.source_url, evidence_path = excluded.evidence_path,
-        status = CASE WHEN excluded.status = 'removed' THEN 'removed' ELSE facts.status END,
+        kind = excluded.kind, gap_kind = excluded.gap_kind, derived_from = excluded.derived_from,
+        status = CASE WHEN facts.kind = 'gap' AND excluded.kind = 'fact' THEN 'ok' WHEN excluded.status = 'removed' THEN 'removed' ELSE facts.status END,
         last_checked_at = CASE WHEN excluded.last_checked_at > facts.last_checked_at THEN excluded.last_checked_at ELSE facts.last_checked_at END,
         next_check_at = CASE WHEN excluded.last_checked_at > facts.last_checked_at OR excluded.status = 'removed' THEN excluded.next_check_at ELSE facts.next_check_at END,
         updated_at = excluded.updated_at`,
@@ -77,7 +107,8 @@ export async function syncFacts({execute, factTables, outlines, now = new Date()
       (entry) => `INSERT OR IGNORE INTO fact_usage (fact_id, article_id) VALUES (${sqlLiteral(entry.factId)}, ${sqlLiteral(entry.articleId)})`,
     ),
   )
-  if (statements.length > 0) await execute(statements)
+  // 分批送出：一次送幾百句會超過 Windows 指令長度上限，也太接近 D1 API 的單次上限
+  for (const batch of batchByLength(statements, SYNC_BATCH_CHARS)) await execute(batch)
   return {facts: facts.length, usage: usage.length}
 }
 
@@ -85,7 +116,7 @@ export async function syncFacts({execute, factTables, outlines, now = new Date()
 export async function listDueFacts({execute, today, withinDays = 0}) {
   const until = new Date(Date.parse(`${today}T00:00:00Z`) + withinDays * 86400000).toISOString().slice(0, 10)
   const [rows] = await execute([
-    `SELECT f.fact_id, f.place_id, f.change_type, f.source_url, f.evidence_path, f.next_check_at, f.source_fingerprint,
+    `SELECT f.fact_id, f.place_id, f.change_type, f.source_url, f.evidence_path, f.next_check_at, f.source_fingerprint, f.kind, f.gap_kind,
         (SELECT GROUP_CONCAT(article_id) FROM fact_usage u WHERE u.fact_id = f.fact_id) AS articles
       FROM facts f WHERE f.next_check_at IS NOT NULL AND f.next_check_at <= ${sqlLiteral(until)} AND f.status != 'removed'
       ORDER BY f.source_url, f.next_check_at`,
@@ -107,10 +138,11 @@ export async function recordCheck({execute, factId, result, nextCheckAt = null, 
   if (!CHECK_RESULTS.includes(result)) throw new Error(`result 必須是 ${CHECK_RESULTS.join('、')} 之一`)
   if (result !== 'removed' && !/^\d{4}-\d{2}-\d{2}$/.test(nextCheckAt ?? '')) throw new Error('必須提供下次查核日 --next=YYYY-MM-DD')
   const at = now.toISOString()
-  const status = {unchanged: 'ok', changed: 'changed', unreachable: 'unreachable', removed: 'removed'}[result]
+  // fact_checks 的結果欄沒有 found；缺口查到資料在查核紀錄記成 changed，說明寫在 note
+  const status = {unchanged: 'ok', changed: 'changed', unreachable: 'unreachable', removed: 'removed', found: 'changed'}[result]
   const statements = [
     `INSERT INTO fact_checks (fact_id, run_id, checked_at, result, note)
-      VALUES (${sqlLiteral(factId)}, ${sqlLiteral(runId)}, ${sqlLiteral(at)}, ${sqlLiteral(result)}, ${sqlLiteral(note)})`,
+      VALUES (${sqlLiteral(factId)}, ${sqlLiteral(runId)}, ${sqlLiteral(at)}, ${sqlLiteral(result === 'found' ? 'changed' : result)}, ${sqlLiteral(note)})`,
     `UPDATE facts SET status = ${sqlLiteral(status)}, next_check_at = ${sqlLiteral(result === 'removed' ? null : nextCheckAt)},
       last_checked_at = ${result === 'unchanged' ? sqlLiteral(taipeiDate(now)) : 'last_checked_at'}, updated_at = ${sqlLiteral(at)}
       WHERE fact_id = ${sqlLiteral(factId)}`,
@@ -120,6 +152,16 @@ export async function recordCheck({execute, factId, result, nextCheckAt = null, 
       `INSERT INTO exceptions (created_at, kind, subject, detail, action_needed)
         VALUES (${sqlLiteral(at)}, 'big-change', ${sqlLiteral(factId)}, ${sqlLiteral(note ?? '重查發現官方資料改變')},
           '更新地點事實表與用到這筆事實的文章')`,
+      // 從這筆推算出來的事實（例如停留時間、比價）一起標成 changed
+      `UPDATE facts SET status = 'changed', updated_at = ${sqlLiteral(at)}
+        WHERE derived_from LIKE ${sqlLiteral(`%"${factId}"%`)} AND status != 'removed'`,
+    )
+  }
+  if (result === 'found') {
+    statements.push(
+      `INSERT INTO exceptions (created_at, kind, subject, detail, action_needed)
+        VALUES (${sqlLiteral(at)}, 'other', ${sqlLiteral(factId)}, ${sqlLiteral(note ?? '缺口查到資料了')},
+          '把這筆資料補進地點事實表（缺口改成一般事實），需要時更新用到的頁面')`,
     )
   }
   const results = await execute([...statements, `SELECT * FROM facts WHERE fact_id = ${sqlLiteral(factId)}`])

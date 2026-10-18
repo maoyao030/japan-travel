@@ -591,3 +591,26 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 看 `content-experiments/voice-study-2026-10-18/final-samples.md` 決定口吻。
+
+## 2026-10-18 Claude Code（地端）：地點百科流程第一步（分支 `plan/wakkanai-outline`）
+
+### Darren 的決定
+
+- 地點百科先行的方向；Fable 子代理審查後修正（交通改成「節點＋最後一段」、缺口當事實、routine 窄權限等，見 `content-automation/encyclopedia-design-draft.md`）。
+- 正文不寫「官方沒寫」「未查」，查不到的不寫；推算的數字附時刻表；讀不到的來源改用瀏覽器讀（驗證碼不繞過）。
+
+### 已完成
+
+- 寫作規則與 `AGENTS.md`：查不到的不寫、讀不到改用瀏覽器；`check-voice.mjs` 擋「官方沒寫」等字。
+- 事實表格式：缺口 `kind: "gap"`、六種原因、推算事實 `derivedFrom`；大綱標題不能引用缺口。測試 146 項通過。
+- D1 0007（facts 加 kind、gap_kind、derived_from），已套用到線上；重查發現改變時推算事實一起標記，缺口查到資料寫例外。
+- 稚內群 748 筆事實、817 筆引用同步到 D1；75 天內到期 124 筆（11 月 114 筆）。同步改成分批送出（原本一次送會超過 Windows 指令長度）。
+
+### 尚未完成
+
+- 景點「交通節點＋最後一段」欄位、稚內群補資料（先用瀏覽器重讀讀不到的缺口）、routine 寫作前重查的窄權限。
+- routine 還沒建立，11 月到期的重查要等 routine 啟用或手動處理。
+
+### 唯一下一步
+
+- 加景點「交通節點＋最後一段」欄位與檢查，再派子代理補齊稚內群資料。

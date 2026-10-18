@@ -107,6 +107,33 @@ test('地點事實表：會變的事實要有下次查核日，不會變的不�
   assert.match(validateFactTable(stable).join('\n'), /不會變的事實不填 nextCheckAt/)
 })
 
+test('地點事實表：缺口要寫原因，還沒公布、讀不到、說法不一致要有下次查核日；推算的事實要指到存在的編號', () => {
+  const table = factTable()
+  table.facts.push(
+    {factId: 'F3', kind: 'gap', gapKind: 'not-announced', claim: '2027 年祭典日期', checkedAt: '2026-10-18', nextCheckAt: '2027-05-01'},
+    {factId: 'F4', kind: 'gap', gapKind: 'no-source', claim: '計程車車資', checkedAt: '2026-10-18'},
+    {factId: 'F5', claim: '在岬上可待 44 分鐘', quote: '10:20 11:04', sourceUrl: 'https://example.invalid/t', checkedAt: '2026-10-16', changeType: 'timetable', nextCheckAt: '2027-03-31', derivedFrom: ['F1', 'wakkanai:F9']},
+  )
+  assert.deepEqual(validateFactTable(table), [])
+  const noDate = factTable()
+  noDate.facts.push({factId: 'F3', kind: 'gap', gapKind: 'unreadable', claim: '樓層圖', checkedAt: '2026-10-18'})
+  assert.match(validateFactTable(noDate).join('\n'), /這種缺口要填下次查核日/)
+  const badKind = factTable()
+  badKind.facts.push({factId: 'F3', kind: 'gap', gapKind: 'unknown', claim: 'x', checkedAt: '2026-10-18'})
+  assert.match(validateFactTable(badKind).join('\n'), /gapKind 必須是/)
+  const badRef = factTable()
+  badRef.facts[0].derivedFrom = ['F99']
+  assert.match(validateFactTable(badRef).join('\n'), /derivedFrom 指向不存在的 F99/)
+})
+
+test('群大綱：標題不能引用缺口', () => {
+  const ctx = context()
+  ctx.factTables['rebun-island'].facts.push({factId: 'F9', kind: 'gap', gapKind: 'no-source', claim: '計程車車資', checkedAt: '2026-10-18'})
+  const withGap = outline()
+  withGap.pages[0].headings[0].facts = ['rebun-island:F9']
+  assert.match(validateOutline(withGap, ctx).join('\n'), /是缺口；查不到的不寫進正文/)
+})
+
 test('群大綱：標題、必答問題、事實編號、分工、內連與寫作順序', () => {
   assert.deepEqual(validateOutline(outline(), context()), [])
 

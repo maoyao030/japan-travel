@@ -20,6 +20,7 @@ export const LIMITS = {
   commasPerSentence: 1.4, // GLTJP 0.9～1.4
   ifClauses: 2.5, // 「的話」每千字；GLTJP 一整頁只用 1～2 次
   comeHere: 0, // 「來這裡」「來的話」「冬天來」這類現場感用字，改成前往、造訪、抵達
+  notFound: 0, // 「官方沒寫」「官方沒有公布」「未查」：查不到的不寫（2026-10-18 Darren 決定）
 }
 // 句長下限：切太碎也不像人寫的（第 4 輪盲測：平均 26 字讀起來一頓一頓）
 export const MIN_AVG_SENTENCE = 28
@@ -55,6 +56,7 @@ export function measure(paragraphs) {
     ifClauses: per1k(/的話/g),
     comeHere: (text.match(/來這裡|來的話|冬天來|夏天來|搭火車來|開車來/g) || []).length,
     bufang: (text.match(/不妨/g) || []).length,
+    notFound: (text.match(/官方沒寫|官方沒有公布|官方未公布|官網沒寫|未查/g) || []).length,
     longest: sentences.filter((s) => s.length > 50).sort((a, b) => b.length - a.length).slice(0, 3),
   }
 }

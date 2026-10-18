@@ -37,7 +37,7 @@ description: Run one scheduled round of the Japan travel site routine — take t
 
 ### plan-next-group：規劃下一群
 
-照 `$japan-travel-topic-planner` 的 `references/next-group.md` 走完第 1～6 步：寫地點事實表、群大綱、頁面規格，跑 `npm run planning:check`；把新群寫進 `content-automation/article-queue.json` 的 `batches` 與 `travelGroups`（`approval.remindedAt` 是今天，`autoApproveOn` 依規則算），跑 `npm run queue:validate`；更新規劃總表「群清單」與「頁面清單」，在 Darren 的 Google 日曆加全天提醒。兩個檢查都通過才 commit，結果 `done`；任一沒過就不 commit 這些檔案，結果 `failed`。同一天不會再試第二次。
+照 `$japan-travel-topic-planner` 的 `references/next-group.md` 走完第 1～6 步：寫地點事實表、群大綱、頁面規格，跑 `npm run planning:check`；把新群寫進 `content-automation/article-queue.json` 的 `batches` 與 `travelGroups`（`approval.remindedAt` 是今天，`autoApproveOn` 依規則算），跑 `npm run queue:validate`；更新規劃總表「群清單」與「頁面清單」，在 Darren 的 Google 日曆加全天提醒。兩個檢查都通過才 commit，接著 `node scripts/ops-facts.mjs sync` 把新群的事實與缺口登記到 D1，結果 `done`；任一沒過就不 commit 這些檔案，結果 `failed`。同一天不會再試第二次。
 
 ### produce：生產一篇
 
