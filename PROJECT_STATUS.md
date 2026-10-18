@@ -700,3 +700,10 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 看 `round-6g/reader-preview.md`，決定口吻是否合格。
+
+### 補充（同日稍晚）：起承轉合的架構感
+
+- Darren 看 G 版後說還是有起承轉合的架構感。兩位評審（Opus、Fable）對照 Funliday 的診斷一致：每段都是「主題句→規則→例外→建議收尾」的小論證、每節同一個模子，根源是大綱照資料類別（航線、票價、訂票、停航、渡輪站、船上）切 H2。
+- 試了兩種（Opus 5.5）：只改段落形狀（H）幾乎沒用；照旅客動線重排標題（I：挑船班→訂票→搭船當天→船上→票價→停航→渡輪站）兩位評審都判最好，架構感 75～78 → 45、自然度 3～3.5 → 4。意義比對 6 處已修。成品：`content-experiments/polish-test-2026-10-18/round-7i/reader-preview.md`。
+- `check-polish.mjs` 也保護研究記錄「待補內連」表的連結句（H、I、G 三版都刪改過這種句子），新增 `tests/check-polish.test.ts`。
+- 唯一下一步改成：Darren 決定稚內群的大綱要不要改成照旅客動線排（影響 24 頁的 H2／H3）。

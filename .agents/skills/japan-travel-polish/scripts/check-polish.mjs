@@ -6,7 +6,7 @@
  * 用法：node .agents/skills/japan-travel-polish/scripts/check-polish.mjs <潤稿前 draft-tagged.md> <潤稿後 draft-tagged.md> [--article=<articleId>] [--outline=<群大綱.json>]
  * 有差異時結束碼為 1。用集合比較（不比次數），合併句子時重複的編號或數字少寫一次不算錯。
  */
-import {readFileSync} from 'node:fs'
+import {existsSync, readFileSync} from 'node:fs'
 import path from 'node:path'
 import {pathToFileURL} from 'node:url'
 
@@ -120,6 +120,21 @@ function linkSentencesFor(outlinePath, articleId) {
   return (outline.links ?? []).filter((link) => link.from === articleId && link.sentence).map((link) => link.sentence)
 }
 
+/** 研究記錄「### 待補內連」表的連結句（第一欄，去掉句尾括號註記）。第7輪潤稿把這種大綱外的連結句刪掉了，所以一起保護。 */
+export function pendingLinkSentences(referenceReview) {
+  const sentences = []
+  let inSection = false
+  for (const line of normalize(referenceReview).split('\n')) {
+    if (/^#{2,6}\s/.test(line)) inSection = /^#{2,6}\s+待補內連/.test(line)
+    else if (inSection && line.trim().startsWith('|')) {
+      const cell = line.split('|')[1]?.trim() ?? ''
+      if (!cell || /^[-:\s]+$/.test(cell) || cell === '連結句' || !/[。？]/.test(cell)) continue
+      sentences.push(cell.replace(/[（(][^）)]*[）)]\s*$/, '').trim())
+    }
+  }
+  return sentences
+}
+
 const isCli = process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url
 if (isCli) {
   const args = process.argv.slice(2)
@@ -132,6 +147,9 @@ if (isCli) {
   const articleId = option('article')
   const outlinePath = option('outline') ?? 'content-planning/hokkaido/hokkaido-wakkanai-outline.json'
   const linkSentences = articleId ? linkSentencesFor(outlinePath, articleId) : []
+  // 潤稿後檔案旁邊的研究記錄（或 --reference=）裡的待補內連句也要原樣保留
+  const referencePath = option('reference') ?? path.join(path.dirname(files[1]), 'reference-review.md')
+  if (existsSync(referencePath)) linkSentences.push(...pendingLinkSentences(readFileSync(referencePath, 'utf8')))
   const result = checkPolish(readFileSync(files[0], 'utf8'), readFileSync(files[1], 'utf8'), {linkSentences})
   console.log(result.status === 'polish_safe' ? `通過：潤稿沒有改到事實（檢查了 ${linkSentences.length} 句內連句）` : '未通過：潤稿改到了事實')
   for (const issue of result.issues) console.log(`  - ${issue}`)
