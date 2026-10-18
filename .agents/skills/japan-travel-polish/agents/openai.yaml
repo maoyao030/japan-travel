@@ -1,0 +1,7 @@
+interface:
+  display_name: "日本站文章潤稿"
+  short_description: "內容正確但讀起來僵硬時，取捨排序、接上後果、加上因果轉折，事實一個都不改"
+  default_prompt: "使用 $japan-travel-polish 潤稿指定文章：讀內容稿與事實表，每段先給結論、重要事實接後果、用因果轉折串起來，數字、日文、事實編號、標題、表格與內連句都不改。跑 check-polish.mjs 與寫作 Skill 的三項檢查，再派意義比對子代理找出不可接受的改變。"
+
+policy:
+  allow_implicit_invocation: false

@@ -22,6 +22,7 @@ const expectedSkills = [
   'japan-travel-answer-first',
   'japan-travel-auto-publisher',
   'japan-travel-image-finder',
+  'japan-travel-polish',
   'japan-travel-topic-planner',
 ]
 

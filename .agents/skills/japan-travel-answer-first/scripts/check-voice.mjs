@@ -26,7 +26,7 @@ export const LIMITS = {
   tildes: 1, // GLTJP 0～0.7；區間在正文寫成「5月到10月」
   avgSentence: 38, // GLTJP 29～33 字
   longSentencePercent: 25, // 超過 50 字的句子比例，GLTJP 12%～17%
-  commasPerSentence: 1.4, // GLTJP 0.9～1.4
+  commasPerSentence: 1.8, // GLTJP 0.9～1.4、Funliday 1.5；用「所以」「不然」串事實需要逗號，2026-10-18 從 1.4 放寬
   ifClauses: 2.5, // 「的話」每千字；GLTJP 一整頁只用 1～2 次
   comeHere: 0, // 「來這裡」「來的話」「冬天來」這類現場感用字，改成前往、造訪、抵達
   notFound: 0, // 「官方沒寫」「官方沒有公布」「未查」：查不到的不寫（2026-10-18 Darren 決定）
