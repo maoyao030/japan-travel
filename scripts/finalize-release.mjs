@@ -1,7 +1,8 @@
 /**
  * 發布封包定稿：把驗收通過的文章封包轉成 Sanity 正文，並寫出帶清單預先授權的 manifest。
  * 從好材誌的 finalize-answer-first-release.mjs 移植，改成本站的驗收檔案：
- * 事實查核紀錄 fact-check.json、標題檢查 heading-review.json、AI 圖或示意圖的 images/image-review.json。
+ * 事實查核紀錄 fact-check.json、標題檢查 heading-review.json、AI 圖或示意圖的 images/image-review.json，
+ * 以及 reader-preview.md 的口吻與標點檢查（寫作 Skill 的 check-voice.mjs）。
  *
  * 用法：node scripts/finalize-release.mjs content-production/<article-id> [--sanity-output=<dir>] [--queue=<path>]
  * 任何門檻沒過就失敗，不寫出任何檔案；routine 依失敗原因呼叫 ops-article.mjs fail。
@@ -12,6 +13,7 @@ import {access, mkdir, readFile, writeFile} from 'node:fs/promises'
 import path from 'node:path'
 import {fileURLToPath} from 'node:url'
 
+import {checkVoice} from '../.agents/skills/japan-travel-answer-first/scripts/check-voice.mjs'
 import {validateFactCheck} from '../.agents/skills/japan-travel-acceptance/scripts/validate-fact-check.mjs'
 import {validateImageReview} from '../.agents/skills/japan-travel-acceptance/scripts/validate-image-review.mjs'
 import {findQueueItem, getItemAuthorization, loadArticleQueue} from './article-automation-policy.mjs'
@@ -74,6 +76,12 @@ export function inspectReaderPreview(markdown, item) {
     if (!link.endsWith('/')) issues.push(`站內連結必須以斜線結尾：${link}`)
   }
   return {issues, h1, internalLinks}
+}
+
+/** 口吻與標點檢查（寫作指南第 11 條）：門檻與訊息都在寫作 Skill 的 check-voice.mjs。 */
+export function inspectVoice(markdown) {
+  const {issues} = checkVoice(normalizeNewlines(markdown))
+  return {issues: issues.map((issue) => `口吻與標點檢查未通過：${issue}`)}
 }
 
 export function inspectReview(reviewMarkdown, readerPreviewSha256) {
@@ -249,6 +257,7 @@ export async function finalizeRelease({
   const issues = []
   const previewResult = inspectReaderPreview(readerPreview, item)
   issues.push(...previewResult.issues)
+  issues.push(...inspectVoice(readerPreview).issues)
   issues.push(...inspectReview(files['review.md'].toString('utf8'), readerPreviewSha256).issues)
   issues.push(...inspectPublication(publication, {h1: previewResult.h1, referenceReview, articleId}).issues)
 

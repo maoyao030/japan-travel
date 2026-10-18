@@ -1,5 +1,7 @@
 # 寫作調性研究：像好運日本行，但不寫成去過（2026-10-18）
 
+**2026-10-18 晚：草案已採用進寫作 Skill。** 正式規則在 `.agents/skills/japan-travel-answer-first/references/writing-guide.md` 與 `examples.md`，檢查程式搬到同 Skill 的 `scripts/check-voice.mjs` 並接進定稿流程。本資料夾只保留研究過程，不再更新。
+
 Darren 睡前交代：研究競品旅遊網站怎麼寫，找出寫出那種調性的方法，不要像本站自己去過；先拿簡單的東西試寫，自己比對。
 
 ## 結論

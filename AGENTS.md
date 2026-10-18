@@ -141,3 +141,10 @@
 - 推算出來的數字（例如在岬上能待幾分鐘），附上推算依據的時刻表，讓讀者自己看得到；不另外說明推算方法。
 - 缺口與「未查」只記在研究紀錄與事實表，給重查用，不出現在正文。
 - 網頁讀取工具讀不到（PDF 是圖片、要執行 JavaScript、擋讀取工具）時，在規劃 session 用瀏覽器實際打開讀取；遇到驗證碼或機器人檢查不繞過。細節見寫作 Skill `references/japanese-sources.md`。
+
+## 寫作規則整併（2026-10-18）
+
+- 寫作規則整併成寫作 Skill 的 `references/writing-guide.md`（約一頁、13 條原則、衝突時的優先順序、三步流程）與 `references/examples.md`（口吻範例與完整版型範例）。寫文章時只讀這兩份；其他參考檔只在用到的步驟讀，分工寫在 `SKILL.md` 的任務與責任。
+- 口吻改成導覽編輯口吻（研究見 `content-experiments/voice-study-2026-10-18/`），取代 2026-10-16 的旅行手札。標點與句長由 `.agents/skills/japan-travel-answer-first/scripts/check-voice.mjs` 自動檢查，`scripts/finalize-release.mjs` 定稿時一起跑，沒通過不發布。
+- 以下各段的寫作細節現在以 `writing-guide.md` 為準，本檔只保留決定：「文章語氣與結構」的制式摘要與開頭直接回答；「旅行群流程、來源分級與評論統整」的評論統整寫法；「稚內群核准與研究、寫作規則」的客觀狀況直接寫；「查不到的不寫、讀不到改用瀏覽器」的正文寫法與推算附時刻表。新增的寫法：班次少（一天 4 班以下）就列時刻表、用白話說選擇，不算出能待幾分鐘；每個景點配一張認得出現場的照片與基本資訊欄；每頁結尾在 `## 資料來源` 底下列 `### 延伸資料`，只列官方頁；地點主頁多一節依旅客類型的排法。
+- `references/voice-and-seo.md` 刪除，SEO 規範併入 `references/heading-style.md`。`nanny-level.md`、`page-types.md`、`research-record.md`、`embeds-and-data-blocks.md`、`japanese-sources.md`、`reviews-and-popularity.md` 保留為各步驟的參考檔。

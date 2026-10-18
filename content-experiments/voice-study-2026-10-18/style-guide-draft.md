@@ -1,5 +1,7 @@
 # 導覽編輯口吻（草案，2026-10-18）
 
+> **已被取代（2026-10-18）**：正式規則見 `.agents/skills/japan-travel-answer-first/references/writing-guide.md`。本檔只保留研究紀錄，不再更新。
+
 Darren 2026-10-18 的要求：寫出像好運日本行（GLTJP）那種旅遊網站的調性，但不要像是本站自己去過。本草案是研究競品後整理的寫法，試寫與比對結果見同資料夾的 `README.md`。**Darren 確認前不取代寫作 Skill 的 `voice-and-seo.md`。**
 
 ## 一句話

@@ -72,7 +72,7 @@
 | `unsupported` | 找不到支持這個事實的原文 |
 | `outdated` | 有更新的官方資訊和正文不一致 |
 | `unreachable` | 來源打不開，無法查證 |
-| `not-stated` | 正文寫「官方沒有寫明」，查核者也確認官方頁沒有這項資訊 |
+| `not-stated` | 正文的否定句（例如「沒有大眾運輸」「不能刷卡」）在官方頁找不到正面依據，但查核者確認官方頁確實沒有這項資訊。正文寫「官方沒有寫明」「未查」本身是缺陷（2026-10-18 Darren 決定），在 `notes` 註明並交讀者驗收判需修改 |
 
 只要有 `incorrect`、`unsupported` 或 `outdated`，事實與條件就是 `reject`。`unreachable` 要另找官方來源；找不到就是 `not_checked`，不能放行。
 
