@@ -176,16 +176,6 @@
         },
         {
           "level": 3,
-          "text": "從稚內回札幌、旭川的特急",
-          "facts": [
-            "wakkanai:F58"
-          ],
-          "answers": [
-            0
-          ]
-        },
-        {
-          "level": 3,
           "text": "札幌到稚內的高速巴士わっかない號",
           "facts": [
             "wakkanai:F63",
@@ -201,7 +191,7 @@
         },
         {
           "level": 2,
-          "text": "稚內機場的航班與到市區的巴士",
+          "text": "搭飛機到稚內機場，怎麼進市區",
           "facts": [
             "wakkanai:F75",
             "wakkanai:F76",
@@ -234,8 +224,16 @@
           ]
         },
         {
+          "level": 3,
+          "text": "從稚內機場直接去宗谷岬與野寒布岬",
+          "facts": [
+            "wakkanai:F82"
+          ],
+          "answers": []
+        },
+        {
           "level": 2,
-          "text": "稚內車站、巴士總站與渡輪站的位置",
+          "text": "到了稚內車站，車站、巴士總站與渡輪站怎麼走",
           "facts": [
             "wakkanai:F69"
           ],
@@ -286,22 +284,25 @@
           ]
         },
         {
-          "level": 3,
-          "text": "從稚內機場到宗谷岬與野寒布岬",
-          "facts": [
-            "wakkanai:F82"
-          ],
-          "answers": []
-        },
-        {
           "level": 2,
           "text": "從稚內搭渡輪去利尻島、禮文島",
           "facts": [
             "wakkanai:F11"
           ],
           "answers": []
+        },
+        {
+          "level": 2,
+          "text": "從稚內回札幌、旭川的特急",
+          "facts": [
+            "wakkanai:F58"
+          ],
+          "answers": [
+            0
+          ]
         }
-      ]
+      ],
+      "headingOrder": "traveler-journey"
     },
     {
       "articleId": "wakkanai-stay",
@@ -1265,19 +1266,6 @@
         },
         {
           "level": 3,
-          "text": "宗谷岬站的上下車與回程候車",
-          "facts": [
-            "cape-soya:F63",
-            "cape-soya:F64",
-            "cape-soya:F65",
-            "cape-soya:F87"
-          ],
-          "answers": [
-            0
-          ]
-        },
-        {
-          "level": 3,
           "text": "宗谷岬巴士的票價、一日券與付款方式",
           "facts": [
             "cape-soya:F67",
@@ -1286,6 +1274,19 @@
             "cape-soya:F78",
             "cape-soya:F79",
             "cape-soya:F80"
+          ],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 3,
+          "text": "宗谷岬站的上下車與回程候車",
+          "facts": [
+            "cape-soya:F63",
+            "cape-soya:F64",
+            "cape-soya:F65",
+            "cape-soya:F87"
           ],
           "answers": [
             0
@@ -1418,7 +1419,8 @@
             1
           ]
         }
-      ]
+      ],
+      "headingOrder": "traveler-journey"
     },
     {
       "articleId": "rishiri-island",
@@ -1567,17 +1569,6 @@
         },
         {
           "level": 3,
-          "text": "抵達鴛泊港與沓形港",
-          "facts": [
-            "rishiri-island:F32",
-            "rishiri-island:F33"
-          ],
-          "answers": [
-            0
-          ]
-        },
-        {
-          "level": 3,
           "text": "利尻機場的航班，丘珠全年與 ANA 夏季航班",
           "facts": [
             "rishiri-island:F6",
@@ -1585,6 +1576,25 @@
             "rishiri-island:F8",
             "rishiri-island:F9",
             "rishiri-island:F10"
+          ],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 2,
+          "text": "抵達利尻島之後，從港口與機場出發",
+          "facts": [],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 3,
+          "text": "抵達鴛泊港與沓形港",
+          "facts": [
+            "rishiri-island:F32",
+            "rishiri-island:F33"
           ],
           "answers": [
             0
@@ -1601,6 +1611,39 @@
           ],
           "answers": [
             0
+          ]
+        },
+        {
+          "level": 2,
+          "text": "利尻島觀光巴士的路線與季節",
+          "facts": [
+            "rishiri-island:F26",
+            "rishiri-island:F27",
+            "rishiri-island:F31"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "text": "利尻 A 路線「秀峰利尻富士めぐり」",
+          "facts": [
+            "rishiri-island:F28"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "text": "利尻 B 路線「利尻スポットめぐり」",
+          "facts": [
+            "rishiri-island:F29",
+            "rishiri-island:F30"
+          ],
+          "answers": [
+            2
           ]
         },
         {
@@ -1645,39 +1688,6 @@
           ],
           "answers": [
             1
-          ]
-        },
-        {
-          "level": 2,
-          "text": "利尻島觀光巴士的路線與季節",
-          "facts": [
-            "rishiri-island:F26",
-            "rishiri-island:F27",
-            "rishiri-island:F31"
-          ],
-          "answers": [
-            2
-          ]
-        },
-        {
-          "level": 3,
-          "text": "利尻 A 路線「秀峰利尻富士めぐり」",
-          "facts": [
-            "rishiri-island:F28"
-          ],
-          "answers": [
-            2
-          ]
-        },
-        {
-          "level": 3,
-          "text": "利尻 B 路線「利尻スポットめぐり」",
-          "facts": [
-            "rishiri-island:F29",
-            "rishiri-island:F30"
-          ],
-          "answers": [
-            2
           ]
         },
         {
@@ -1745,7 +1755,8 @@
           ],
           "answers": []
         }
-      ]
+      ],
+      "headingOrder": "traveler-journey"
     },
     {
       "articleId": "rishiri-island-stay",
@@ -2825,74 +2836,6 @@
         },
         {
           "level": 2,
-          "text": "禮文島路線巴士的三條路線與班次",
-          "facts": [
-            "rebun-island:F21",
-            "rebun-island:F112",
-            "rebun-island:F22",
-            "rebun-island:F108",
-            "rebun-island:F220",
-            "rebun-island:F77"
-          ],
-          "answers": [
-            0
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文島巴士車資與一日券",
-          "facts": [
-            "rebun-island:F201",
-            "rebun-island:F202",
-            "rebun-island:F203",
-            "rebun-island:F204",
-            "rebun-island:F24",
-            "rebun-island:F64",
-            "rebun-island:F97",
-            "rebun-island:F221",
-            "rebun-island:F303",
-            "rebun-island:F301",
-            "rebun-island:F25"
-          ],
-          "answers": [
-            0
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文島巴士的冬季班表與末班",
-          "facts": [
-            "rebun-island:F60",
-            "rebun-island:F61",
-            "rebun-island:F62",
-            "rebun-island:F63",
-            "rebun-island:F99",
-            "rebun-island:F216",
-            "rebun-island:F217",
-            "rebun-island:F218",
-            "rebun-island:F219",
-            "rebun-island:F241",
-            "rebun-island:F83",
-            "rebun-island:F124"
-          ],
-          "answers": [
-            0
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文島巴士的自由上下車區間",
-          "facts": [
-            "rebun-island:F23",
-            "rebun-island:F65",
-            "rebun-island:F98"
-          ],
-          "answers": [
-            0
-          ]
-        },
-        {
-          "level": 2,
           "text": "禮文島觀光巴士的路線與季節",
           "facts": [
             "rebun-island:F26",
@@ -2953,6 +2896,104 @@
           ],
           "answers": [
             1
+          ]
+        },
+        {
+          "level": 2,
+          "text": "禮文島路線巴士的三條路線與班次",
+          "facts": [
+            "rebun-island:F21",
+            "rebun-island:F112",
+            "rebun-island:F22",
+            "rebun-island:F108",
+            "rebun-island:F220",
+            "rebun-island:F77"
+          ],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文島巴士車資與一日券",
+          "facts": [
+            "rebun-island:F201",
+            "rebun-island:F202",
+            "rebun-island:F203",
+            "rebun-island:F204",
+            "rebun-island:F24",
+            "rebun-island:F64",
+            "rebun-island:F97",
+            "rebun-island:F221",
+            "rebun-island:F303",
+            "rebun-island:F301",
+            "rebun-island:F25"
+          ],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文島的巴士可以刷卡或用 Suica 嗎？",
+          "facts": [
+            "rebun-island:F302"
+          ],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 3,
+          "text": "大件行李可以帶上禮文島的巴士嗎？",
+          "facts": [
+            "rebun-island:F304",
+            "rebun-island:F70"
+          ],
+          "answers": []
+        },
+        {
+          "level": 3,
+          "text": "禮文島巴士的自由上下車區間",
+          "facts": [
+            "rebun-island:F23",
+            "rebun-island:F65",
+            "rebun-island:F98"
+          ],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文島巴士的冬季班表與末班",
+          "facts": [
+            "rebun-island:F60",
+            "rebun-island:F61",
+            "rebun-island:F62",
+            "rebun-island:F63",
+            "rebun-island:F99",
+            "rebun-island:F216",
+            "rebun-island:F217",
+            "rebun-island:F218",
+            "rebun-island:F219",
+            "rebun-island:F241",
+            "rebun-island:F83",
+            "rebun-island:F124"
+          ],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文島的巴士停駛去哪裡查？",
+          "facts": [
+            "rebun-island:F305",
+            "rebun-island:F63"
+          ],
+          "answers": [
+            0
           ]
         },
         {
@@ -3059,44 +3100,9 @@
             "rebun-island:F312"
           ],
           "answers": []
-        },
-        {
-          "level": 2,
-          "text": "常見問題",
-          "facts": [],
-          "answers": []
-        },
-        {
-          "level": 3,
-          "text": "禮文島的巴士可以刷卡或用 Suica 嗎？",
-          "facts": [
-            "rebun-island:F302"
-          ],
-          "answers": [
-            0
-          ]
-        },
-        {
-          "level": 3,
-          "text": "大件行李可以帶上禮文島的巴士嗎？",
-          "facts": [
-            "rebun-island:F304",
-            "rebun-island:F70"
-          ],
-          "answers": []
-        },
-        {
-          "level": 3,
-          "text": "禮文島的巴士停駛去哪裡查？",
-          "facts": [
-            "rebun-island:F305",
-            "rebun-island:F63"
-          ],
-          "answers": [
-            0
-          ]
         }
-      ]
+      ],
+      "headingOrder": "traveler-journey"
     },
     {
       "articleId": "rebun-island-stay",
@@ -3736,7 +3742,7 @@
       "headings": [
         {
           "level": 2,
-          "text": "稚內渡輪的航線與各季稚內船班",
+          "text": "稚內船班怎麼挑，各季稚內渡輪時刻",
           "facts": [
             "wakkanai:F13",
             "wakkanai:F12",
@@ -3749,7 +3755,7 @@
         },
         {
           "level": 3,
-          "text": "稚內⇄香深（禮文島）的船班",
+          "text": "從稚內去禮文島香深港",
           "facts": [
             "wakkanai:F1",
             "wakkanai:F2",
@@ -3762,7 +3768,7 @@
         },
         {
           "level": 3,
-          "text": "稚內⇄鴛泊（利尻島）的船班",
+          "text": "從稚內去利尻島鴛泊港",
           "facts": [
             "wakkanai:F6",
             "wakkanai:F7",
@@ -3774,7 +3780,7 @@
         },
         {
           "level": 3,
-          "text": "利尻島與禮文島之間的島間航線",
+          "text": "在利尻島與禮文島之間坐船",
           "facts": [
             "wakkanai:F9",
             "wakkanai:F10"
@@ -3784,61 +3790,8 @@
           ]
         },
         {
-          "level": 3,
-          "text": "稚內渡輪的船與艙等",
-          "facts": [
-            "wakkanai:F52",
-            "wakkanai:F16"
-          ],
-          "answers": [
-            0
-          ]
-        },
-        {
           "level": 2,
-          "text": "稚內渡輪的票價與兒童票",
-          "facts": [
-            "wakkanai:F17"
-          ],
-          "answers": [
-            1
-          ]
-        },
-        {
-          "level": 3,
-          "text": "利尻島與禮文島船票",
-          "facts": [
-            "wakkanai:F14",
-            "wakkanai:F15"
-          ],
-          "answers": [
-            1
-          ]
-        },
-        {
-          "level": 3,
-          "text": "兒童與幼兒票價",
-          "facts": [
-            "wakkanai:F18"
-          ],
-          "answers": [
-            1
-          ]
-        },
-        {
-          "level": 3,
-          "text": "特別室與腳踏車運費",
-          "facts": [
-            "wakkanai:F19",
-            "wakkanai:F20"
-          ],
-          "answers": [
-            1
-          ]
-        },
-        {
-          "level": 2,
-          "text": "Heartland Ferry 稚內航線的網路訂票與報到時間",
+          "text": "稚內到利尻島、禮文島的船票怎麼訂",
           "facts": [],
           "answers": [
             2
@@ -3846,7 +3799,7 @@
         },
         {
           "level": 3,
-          "text": "網路預約",
+          "text": "用 Heartland Ferry 網站訂票",
           "facts": [
             "wakkanai:F21",
             "wakkanai:F23",
@@ -3863,7 +3816,7 @@
         },
         {
           "level": 3,
-          "text": "電話預約",
+          "text": "打電話訂",
           "facts": [
             "wakkanai:F22",
             "wakkanai:F27",
@@ -3875,7 +3828,7 @@
         },
         {
           "level": 3,
-          "text": "改票與取消",
+          "text": "改日期、改班次或取消",
           "facts": [
             "wakkanai:F28",
             "wakkanai:F29",
@@ -3887,41 +3840,17 @@
           ]
         },
         {
-          "level": 3,
-          "text": "報到時間與 QR code 登船",
-          "facts": [
-            "wakkanai:F36",
-            "wakkanai:F37",
-            "wakkanai:F38"
-          ],
-          "answers": [
-            2
-          ]
-        },
-        {
-          "level": 3,
-          "text": "窗口付款與自動售票機",
-          "facts": [
-            "wakkanai:F39",
-            "wakkanai:F40"
-          ],
-          "answers": [
-            2
-          ]
-        },
-        {
           "level": 2,
-          "text": "稚內渡輪停航怎麼知道、怎麼改票",
-          "facts": [
-            "wakkanai:F35"
-          ],
+          "text": "稚內渡輪搭船當天，從出門到上船",
+          "facts": [],
           "answers": [
+            2,
             3
           ]
         },
         {
           "level": 3,
-          "text": "停航當天怎麼確認",
+          "text": "出門前確認開不開船",
           "facts": [
             "wakkanai:F33",
             "wakkanai:F34",
@@ -3934,7 +3863,109 @@
         },
         {
           "level": 3,
-          "text": "停航後的預約怎麼處理",
+          "text": "到渡輪站報到、拿 QR code 上船",
+          "facts": [
+            "wakkanai:F36",
+            "wakkanai:F37",
+            "wakkanai:F38"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "text": "沒訂位，到窗口或售票機買票",
+          "facts": [
+            "wakkanai:F39",
+            "wakkanai:F40"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "text": "稚內渡輪船上的艙等與設施",
+          "facts": [],
+          "answers": []
+        },
+        {
+          "level": 3,
+          "text": "2等、1等與特別室怎麼選",
+          "facts": [
+            "wakkanai:F52",
+            "wakkanai:F16"
+          ],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 3,
+          "text": "船上吃東西、行李與暈船",
+          "facts": [
+            "wakkanai:F41",
+            "wakkanai:F46",
+            "wakkanai:F50",
+            "wakkanai:F51"
+          ],
+          "answers": []
+        },
+        {
+          "level": 2,
+          "text": "稚內到利尻島、禮文島船票多少錢？",
+          "facts": [
+            "wakkanai:F14",
+            "wakkanai:F15",
+            "wakkanai:F17"
+          ],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "帶小孩搭船怎麼買票？",
+          "facts": [
+            "wakkanai:F18"
+          ],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "包特別室或帶腳踏車要另外付多少？",
+          "facts": [
+            "wakkanai:F19",
+            "wakkanai:F20"
+          ],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "text": "稚內渡輪停航的機率與停航後怎麼辦",
+          "facts": [],
+          "answers": [
+            3
+          ]
+        },
+        {
+          "level": 3,
+          "text": "哪幾個月比較容易停航？",
+          "facts": [
+            "wakkanai:F35"
+          ],
+          "answers": [
+            3
+          ]
+        },
+        {
+          "level": 3,
+          "text": "停航後訂好的票怎麼處理？",
           "facts": [
             "wakkanai:F31"
           ],
@@ -3944,11 +3975,19 @@
         },
         {
           "level": 2,
-          "text": "稚內渡輪站的售票櫃台在哪",
+          "text": "稚內、香深、鴛泊渡輪站在哪、站內有什麼",
           "facts": [
             "wakkanai:F42",
             "rebun-island:F48"
           ],
+          "answers": [
+            4
+          ]
+        },
+        {
+          "level": 3,
+          "text": "怎麼去稚內港渡輪站",
+          "facts": [],
           "answers": [
             4
           ]
@@ -3967,7 +4006,7 @@
         },
         {
           "level": 3,
-          "text": "香深港與鴛泊港的渡輪站",
+          "text": "香深港、鴛泊港與沓形港的渡輪站",
           "facts": [
             "rebun-island:F70",
             "wakkanai:F47"
@@ -3975,19 +4014,9 @@
           "answers": [
             4
           ]
-        },
-        {
-          "level": 2,
-          "text": "稚內渡輪的船上設施",
-          "facts": [
-            "wakkanai:F41",
-            "wakkanai:F46",
-            "wakkanai:F50",
-            "wakkanai:F51"
-          ],
-          "answers": []
         }
-      ]
+      ],
+      "headingOrder": "traveler-journey"
     }
   ],
   "division": [
