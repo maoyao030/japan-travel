@@ -27,6 +27,7 @@
 - 大綱：`hokkaido-wakkanai-outline.json`（24 頁、312 個標題，每個標題附事實編號；分工表、內連表與連結句、寫作順序、官方景點比對、體驗與文化線索、媒體計畫、缺口）。
 - 地點事實表：`places/<地點>/facts.json`（稚內 187、宗谷岬 97、利尻島 184、禮文島 280 筆）。
 - 研究紀錄：`research/<地點>.json`（景點比對、體驗線索、客觀狀況、住宿清單、缺口）與 `research/<地點>-headings.json`（研究者對好事實的標題）。
+- 標題順序（2026-10-18）：照旅客動線排，見選題 Skill `references/selection-workflow.md` 第6節。重排過的頁在大綱裡標 `headingOrder: traveler-journey`。`build-outline.mjs` 是研究前產生骨架用的，大綱現在以 JSON 為準，不要重跑它覆蓋。
 - 研究後併頁：禮文島天氣（9 筆）與禮文島祭典（5 筆）事實少於 15 筆，併進禮文島主頁。其餘 24 頁都超過門檻。
 
 ## 已核准的 26 頁（Darren 2026-10-18）

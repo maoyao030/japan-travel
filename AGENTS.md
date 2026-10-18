@@ -156,3 +156,10 @@
 - 基本資訊欄先用 Markdown 表格寫，網站已支援表格（Sanity `contentTable`）。
 - 照片只放重點景點（有自己 H3、讀者要到現場認得出來），不是每段配圖。
 - 範文累積：Darren 看過並認可的段落放進寫作 Skill 的 `examples.md`，Darren 改過的地方記成修改前後對照；範例只留最好的 3 到 5 篇。模型本身不會記住，進步靠這些檔案。
+
+## 標題照旅客動線排（Darren 2026-10-18 決定）
+
+- 渡輪頁並排比較後，Darren 同意整群大綱改成照旅客動線排：H2 跟著讀者實際要做的事走（先決定、再訂票、搭乘當天、現場、費用、出狀況），不照資料類別切；H3 用讀者的動作或問題命名；不設「常見問題」H2。
+- 原因：照類別切每節都得自成一體，段落會寫成「主題句→規則→例外→建議」的小論證，讀起來有起承轉合的架構感。
+- 稚內群 24 頁的大綱已重排（`content-planning/hokkaido/hokkaido-wakkanai-outline.json`，重排過的頁標 `headingOrder: traveler-journey`）。各頁型的順序寫在選題 Skill `references/selection-workflow.md` 第6節與寫作 Skill `references/heading-style.md`。
+- 潤稿流程定案：Opus 5.5 照潤稿 Skill 潤稿 → 編輯挑錯一輪再修 → 意義比對 → 驗收。寫作與潤稿不用 Fable，Fable 只用在評審與策略。研究見 `content-experiments/polish-test-2026-10-18/ai-tone-study.md`。
