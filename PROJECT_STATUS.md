@@ -752,3 +752,23 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 看新的 `content-production/wakkanai-ferry/reader-preview.md`，決定品質是否合格與每天篇數。
+
+## 2026-10-19 Claude Code（地端）：照好運日本行與 MATCHA 的寫法改寫（分支 `plan/wakkanai-outline`）
+
+### Darren 的意見
+
+- 新版渡輪頁「不帶車、先…什麼什麼、然後有些了、看這張表、都查得到，這些都好怪」；問能不能用好運日本行和抹茶訓練一個寫作的模型。
+
+### 結果
+
+- 微調做不到（Claude 不開放微調，別人的文章也不能存進 repo 當訓練資料）。改成潤稿前執行時讀他們的同類文章、照講法重寫：repo 只存網址（潤稿 Skill `references/style-sources.md`），新增 `check-copy.mjs` 擋照抄（連續 12 字以上），潤稿 Skill 加第 1-1 步。
+- 試驗（Opus 5.5 改寫正式稿，兩位評審匿名並排）：怪句 24～42 → 10～13、像好運日本行／MATCHA 42～45 → 70～74、自然度 2.5 → 4、像AI 60～65 → 30～35。意義比對 3 處已修。成品：`content-experiments/polish-test-2026-10-18/round-8j/reader-preview.md`，研究記錄第8輪。
+- 測試 160 項通過。
+
+### 尚未完成
+
+- J 版還沒跑完整驗收（事實查核、讀者驗收），所以還沒換成正式稿；正式稿仍是第6輪的版本。
+
+### 唯一下一步
+
+- Darren 看 J 版；同意的話，跑完整驗收後換成正式稿。

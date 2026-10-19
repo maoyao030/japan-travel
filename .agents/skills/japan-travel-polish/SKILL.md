@@ -115,9 +115,10 @@ description: Polish (with Opus 5.5) a fact-checked Japan travel article draft so
 ## 流程
 
 1. 讀內容稿的 `draft-tagged.md`、研究記錄的事實表，以及大綱裡這一頁的內連句。
+1-1. **先讀好運日本行與 MATCHA 的同類文章**（Darren 2026-10-19 指定的口吻目標）。照 `references/style-sources.md` 依段落功能挑三到五篇，用 `curl` 或瀏覽器讀到暫存區（不進 repo），歸納他們怎麼開段、怎麼推薦、怎麼講步驟、怎麼帶讀者看日文、怎麼講費用，用自己的話寫進 `polish-notes.md`。改每一節前，先讀一次功能相同的參考段落，再照那種講法寫我們的事實。只學講法，不抄句子，不學他們的事實。2026-10-19 試驗：同一篇渡輪頁多這一步後，兩位評審的怪句從 24～42 條降到 10～13 條，像好運日本行／MATCHA 的程度從 42～45 升到 70～74。
 2. 照上面的原則改寫，輸出新的 `draft-tagged.md`，另寫 `polish-notes.md` 列出所有新加的推論句與跨節刪掉的重複。`reader-preview.md` 不用自己寫，第4步的 `fact_tags.py` 通過時會從 `draft-tagged.md` 拿掉事實編號自動產生。
 3. 執行 `node .agents/skills/japan-travel-polish/scripts/check-polish.mjs <潤稿前> <潤稿後> --article=<articleId>`，直到通過。它比對整篇的數字、日文、事實編號，以及標題、表格與內連句，並列出跨節刪掉或搬動的內容。
-4. 照寫作 Skill 重跑 `fact_tags.py <資料夾>`、`audit_answer_first.py <reader-preview.md> --article-type <頁型> --reference-review <研究記錄>`，以及 **`check-voice.mjs --final <reader-preview.md>`**（AI腔句型照擋，用字頻率只提醒）。檢查與「事實接後果」「動作串成一句」衝突時，順序是事實、讀者用得上、自然，最後才是檢查數字。
+4. 照寫作 Skill 重跑 `fact_tags.py <資料夾>`、`audit_answer_first.py <reader-preview.md> --article-type <頁型> --reference-review <研究記錄>`，以及 **`check-voice.mjs --final <reader-preview.md>`**（AI腔句型照擋，用字頻率只提醒），再跑 `node .agents/skills/japan-travel-polish/scripts/check-copy.mjs <reader-preview.md> <第1-1步讀下來的每一篇.txt>` 確認沒有照抄。檢查與「事實接後果」「動作串成一句」衝突時，順序是事實、讀者用得上、自然，最後才是檢查數字。
 4-1. 通過後自己從頭讀一次，用「先讀這段」裡程式抓不到的三種破綻逐段自查再改。
 4-2. **編輯挑錯→修一輪**：派一個沒參與潤稿的子代理，照 `agents/editor-review.md` 當台灣資深旅遊編輯，逐句挑出不像台灣人講的話（翻譯腔、公文腔、AI腔、重複、語意不通）並給改法。潤稿者逐條處理，寫進 `polish-notes.md`：照方向改，但編輯的改法會改到事實、加了事實沒有的操作建議、或要動標題與內連句時，以事實與本 Skill 為準，不同意的寫理由。改完重跑第 3、4 步。2026-10-18 試驗：多這一輪後兩位評審都判勝出（像AI的程度 45→30），但編輯的建議也帶進新的意義改變，所以後面一定要接意義比對。只修一輪，多輪會累積意義漂移。
 5. **意義比對**：派一個沒參與潤稿的子代理，對照潤稿前後的 `reader-preview.md` 與事實表，逐段列出所有意義上的差異，分成三類：
@@ -130,6 +131,6 @@ description: Polish (with Opus 5.5) a fact-checked Japan travel article draft so
 
 ## 完成條件
 
-`check-polish.mjs` 通過；`fact_tags.py`、`audit_answer_first.py`、`check-voice.mjs --final` 通過；意義比對沒有不可接受的差異；內連句原樣保留。
+`check-polish.mjs` 通過；`fact_tags.py`、`audit_answer_first.py`、`check-voice.mjs --final` 通過；`check-copy.mjs <reader-preview.md> <讀過的參考文章.txt…>` 通過（沒有和參考文章連續相同 12 字以上的片段）；意義比對沒有不可接受的差異；內連句原樣保留。
 
 研究過程與真人語料的量測見 `content-experiments/polish-test-2026-10-18/ai-tone-study.md`。
