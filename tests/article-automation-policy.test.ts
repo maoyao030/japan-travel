@@ -31,18 +31,23 @@ const queuePath = path.join(projectRoot, 'content-automation/article-queue.json'
 
 type AnyRecord = Record<string, any>
 
-test('repo 內的清單是通過驗證的空殼，分類代稱與分類樹一致', async () => {
+test('repo 內的清單通過驗證：稚內群 24 頁依大綱寫作順序排入，分類代稱與分類樹一致', async () => {
   const queue = JSON.parse(await readFile(queuePath, 'utf8'))
   assert.deepEqual(validateArticleQueue(queue), [])
-  assert.deepEqual(queue.batches, [])
   assert.deepEqual(CATEGORY_SLUGS, siteCategories.map((category) => category.slug))
+  assert.deepEqual(
+    queue.batches.map((batch: AnyRecord) => [batch.id, batch.items.length]),
+    [['hokkaido-wakkanai', 8], ['hokkaido-cape-soya', 2], ['hokkaido-rishiri-island', 8], ['hokkaido-rebun-island', 6]],
+  )
+  const outline = JSON.parse(await readFile(path.join(projectRoot, 'content-planning/hokkaido/hokkaido-wakkanai-outline.json'), 'utf8'))
+  assert.deepEqual(getProductionOrderedItems(queue).map((item) => item.articleId), outline.writingOrder)
 
   const result = spawnSync(process.execPath, ['scripts/validate-article-queue.mjs'], {
     cwd: projectRoot,
     encoding: 'utf8',
   })
   assert.equal(result.status, 0, result.stderr)
-  assert.match(result.stdout, /沒有任何已核准的批次/)
+  assert.match(result.stdout, /稚內批次 8 篇、宗谷岬批次 2 篇、利尻島批次 8 篇、禮文島批次 6 篇/)
 })
 
 test('完整的批次通過驗證，生產順序依批次與 order', () => {

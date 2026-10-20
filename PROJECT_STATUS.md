@@ -793,3 +793,23 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 看兩篇驗收通過的文章（渡輪、利尻島交通），決定品質是否合格與每天篇數。
+
+## 2026-10-20 Claude Code（地端）：稚內群排進發布清單（分支 `plan/wakkanai-outline`）
+
+- Darren：「品質可以，把稚內群排進發布清單，每天幾篇我再決定。」
+- `content-automation/article-queue.json`：稚內 8、宗谷岬 2、利尻島 8、禮文島 6，共 24 頁，四個地點各一個批次（Hub），旅行群 `hokkaido-wakkanai` 依大綱的寫作順序生產（渡輪頁第一、利尻島交通第 17）。欄位由 `content-planning/hokkaido/build-queue.mjs` 從 page-specs、candidates、大綱與地點研究產生，`npm run queue:validate` 通過。
+- 住宿頁與地點主頁的訂房管道依地點研究的住宿清單（官網、Trip.com、Agoda）；宗谷岬沒有住宿，依稚內清單並註明。
+- 每日上限 1、開始日 2026-10-21 是暫存值；routine 還沒啟用，不會自動發布。
+- `article-automation-policy.mjs` 把規劃狀態「approved」視為規劃完成（稚內群 page-specs 是 approved）。
+- 已驗收的兩篇（渡輪、利尻島交通）在清單裡跑定稿程式都到 `release-packet-ready`；渡輪頁還沒選圖、沒有封面。產生的定稿檔已刪除，正式發布時由 routine 重產。
+- 測試 160 項通過。
+
+### 尚未完成
+
+- 每天篇數由 Darren 決定後改 `publicationCadence`，再決定是否啟用 routine。
+- 渡輪頁選圖（封面與重點照片）；Sanity 的北海道各地點 Hub 尚未建立；網站的影片嵌入與資料圖元件還沒做。
+- 利尻島事實表 F23、F33、F37 的更正同步到 D1。
+
+### 唯一下一步
+
+- Darren 決定每天發幾篇。
