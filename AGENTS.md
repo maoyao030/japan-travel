@@ -169,3 +169,10 @@
 - Darren 擔心 Google 抓出太像 AI 的內容。Google 看的是對讀者有沒有用，處罰大量產出、內容空洞、每頁長一樣的頁面（scaled content abuse），不是 AI 偵測。所以寫作照寫作 Skill `writing-guide.md` 第14條：輕重有別、結構跟著主題走、有事實撐的編輯判斷、本站獨有的資料放前面；不故意放錯字、不假裝去過。
 - 口吻目標是好運日本行（GLTJP）與 MATCHA。潤稿前依段落功能讀他們的同類文章、照講法重寫（潤稿 Skill 第 1-1 步）；repo 只存網址，`check-copy.mjs` 擋照抄。真正訓練（微調）模型做不到。
 - 評審的「自然度」「怪句」分數有偏（會把真的好運日本行判成最怪），只當參考；最後由 Darren 看。
+
+## 本機自動寫作（Darren 2026-10-20 決定）
+
+- 每天 3 篇，跟好材誌一樣每 8 小時一輪、一輪一篇，時間錯開：台北 04:42、12:42、20:42（好材誌雲端 routine 是 00:12、08:12、16:12）。
+- 用 Claude 桌面 app 的排定工作 `japan-travel-daily-writer` 在本機跑，不用雲端 routine；**先不上傳**（不碰 Sanity、D1、規劃總表，不選圖）。排定工作建好後是暫停狀態，Darren 說好才啟用；啟用與暫停只由 Darren 決定。
+- 每輪流程在 `content-automation/local-writer.md`，執行紀錄在 `content-automation/local-run-log.md`。工作資料夾是 git worktree `C:\Users\ak472\Documents\GitHub\japan-travel-auto`（分支 `auto/wakkanai-writing`），不動主資料夾；人工 session 不要在那個資料夾改檔案。
+- 自動產出的文章封包一律當成另一個執行者的成果：不回退、不重做；要合併回 `main` 時照 Git 規則先跑測試。

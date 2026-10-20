@@ -841,3 +841,15 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 選觸發方式並說「好」之後才開始寫（下三篇照寫作順序：宗谷岬交通、稚內住宿、稚內天氣）。
+
+## 2026-10-20 Claude Code（地端）：本機自動寫作設定好，暫停中
+
+- Darren：「不能本地自動嗎」「跟好材誌一樣吧，錯開時間就好」。好材誌是雲端 routine，cron `12 */8 * * *`（台北 00:12、08:12、16:12），一輪一篇。
+- 建立桌面 app 排定工作 `japan-travel-daily-writer`：每天台北 04:42、12:42、20:42，一輪一篇；儲存為 Auto 模式；**已暫停**，Darren 說好才啟用。
+- 流程文件 `content-automation/local-writer.md`（照稚內交通的人工流程：作者 → 潤稿 → 編輯挑錯 → 意義比對 → 標題、事實查核、讀者驗收 → 作者修改 → 複查 → 驗收紀錄 → `scripts/local-article-gates.mjs`）；執行紀錄 `content-automation/local-run-log.md`；意義比對提示存進 `.agents/skills/japan-travel-polish/agents/meaning-drift.md`。
+- 安全設計：專用 worktree `japan-travel-auto`（分支 `auto/wakkanai-writing`）、執行鎖 `.auto-writer.lock`、5 小時額度 70% 以上或每週 80% 以上就略過、每天最多 3 篇、事實查核 4 輪不過就停放換下一篇。
+- 不上傳、不選圖、不改地點事實表（研究更正只記在文章封包，執行紀錄寫待同步）。
+
+### 唯一下一步
+
+- Darren 說好後：先手動跑一輪（宗谷岬交通）確認沒問題，再啟用每天自動跑。
