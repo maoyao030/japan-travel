@@ -778,3 +778,18 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 - Darren 擔心 Google 抓太像 AI 的內容，同意照「不寫成量產頁」的方向寫：寫作指南第14條（輕重有別、結構跟著主題走、有事實撐的編輯判斷、本站獨有的資料放前面；不放錯字、不假裝去過），AGENTS.md 記錄。
 - 用新大綱與新規則試寫利尻島交通：作者成稿 → 潤稿（先讀好運日本行 3 篇、MATCHA 2 篇）→ 編輯挑錯一輪 → 意義比對 4 處修正。五項檢查都過。成品：`content-experiments/polish-test-2026-10-18/trial-rishiri-transport/reader-preview.md`。還沒跑事實查核與讀者驗收。
 - 唯一下一步：Darren 看這篇試寫，覺得方向對再跑完整驗收。
+
+## 2026-10-20 Claude Code（地端）：利尻島交通完整驗收（分支 `plan/wakkanai-outline`）
+
+- `content-production/rishiri-island-transport/`：**`ready_for_user_preview`**（SHA `0c03b9e2…29cb8`）。格式 mechanical_clear、標題與讀者價值 acceptable、事實全部 verified（4 輪）、口吻檢查通過、圖片封包驗證通過。紀錄見 `review.md`，預覽 `preview.html`。
+- 經過：標題檢查改 9 個 → 事實查核第 1 輪 5 項未過 → 讀者驗收必修 12 條（住鴛泊怎麼去機場、環島巴士時刻表、早船接觀光巴士、付款方式等）→ 作者補研究 F185～F200 並修改 → 第 2 輪 2 項 unsupported 由協調者刪改 → 讀者最終判定可接受 → 第 3、4 輪全部 verified。
+- 地點事實表更正 F23、F33、F37，大綱同步 9 個標題文字。
+
+### 尚未完成
+
+- F23、F33、F37 同步到 D1；自行車上巴士費用下次打電話確認（只有 2022 年 PDF）。
+- 渡輪頁與利尻島交通都還沒加進 `article-queue.json`、還沒上 Sanity；網站的影片嵌入與資料圖元件還沒做。
+
+### 唯一下一步
+
+- Darren 看兩篇驗收通過的文章（渡輪、利尻島交通），決定品質是否合格與每天篇數。
