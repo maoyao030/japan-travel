@@ -594,3 +594,20 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 在 Cloudflare 後台把 Worker `japan-travel` 連上 GitHub（Workers Builds），推 `main` 就會自動部署。
+
+## 2026-10-20 Claude Code：Workers Builds 連上 GitHub
+
+### 已完成
+
+- Darren 在 Chrome 登入 Cloudflare 後，Claude Code 在 Worker `japan-travel` 的 Settings → Builds 連上 `maoyao030/japan-travel`（GitHub App 先前已授權，但最後一步 Connect 沒有存下來，Builds 一直顯示未連線）。
+- 設定：Production branch `main`；Build `npm test && npm run build`；Deploy `npx wrangler deploy`；預覽 `npx wrangler versions upload`；Root `/`；開啟非 main 分支建置；Build variables 不設（Sanity ID 已寫死預設值）。Build token 沿用好材誌建的「Workers Builds - 2026-08-26」，畫面提示缺 artifacts 權限，目前不影響。
+- 驗證：推測試分支 `test/builds-trigger-check` 會自動建置。第一次失敗在 `tests/ops-db.test.ts`：Cloudflare 建置機器本身帶 `CLOUDFLARE_API_TOKEN`，「不帶權杖」的測試讀到它。修正後預覽建置成功（版本 `2ace4514`，網址帶 noindex），正式網站維持原版本。
+
+### 新坑（好材誌沒有）
+
+- Workers Builds 的環境有 `CLOUDFLARE_API_TOKEN`；任何「沒有權杖」的測試都要先暫時拿掉這個環境變數。
+- Claude 桌面 app 的內建瀏覽器登不進 Cloudflare 後台（人機驗證 403），後台操作改用 Darren 的 Chrome。
+
+### 唯一下一步
+
+- 設定 Email Routing（`contact@offpathnotes.com` 轉寄到 Darren 的信箱），讓聯絡表單可以用。
