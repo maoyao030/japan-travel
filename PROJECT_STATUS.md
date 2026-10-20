@@ -537,3 +537,21 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 決定站名。
+
+## 2026-10-20 Claude Code：站名「繞路筆記」
+
+### 已完成
+
+- Darren 選定站名「繞路筆記」。網路搜尋「繞路筆記」「日本繞路筆記」都沒有同名網站或作品。
+- 改 `src/config/site.ts` 的 `SITE_NAME`（文章標題後綴、作者欄「繞路筆記編輯部」、結構化資料都跟著變）與 Sanity Studio 的標題。測試 143 項通過。
+- Skill 標題、交接文件、routine 提示裡的舊名「日本旅遊長尾站」是內部文件，沒有改；Sanity 管理頁上的專案名稱要改的話由 Darren 在 sanity.io 改。
+
+### 尚未完成
+
+- 網站標誌 `public/logo.png` 要配合新站名製作。
+- `contact@offpathnotes.com` 的 Email Routing 收信設定。
+- 建立 Cloudflare Workers 專案、第一次部署。
+
+### 唯一下一步
+
+- 在 Cloudflare 建立 Workers 專案並連接 GitHub，完成第一次部署。

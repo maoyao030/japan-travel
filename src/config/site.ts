@@ -1,7 +1,7 @@
 /**
- * 站名與網域尚未決定（交接文件第一節）。先用暫定名稱，確定後只改這個檔案與 site.config.mjs。
+ * 站名「繞路筆記」、網域 offpathnotes.com（Darren 2026-10-20 決定）。要改站名只改這個檔案。
  */
-export const SITE_NAME = '日本旅遊長尾站'
+export const SITE_NAME = '繞路筆記'
 export const EDITORIAL_AUTHOR_NAME = `${SITE_NAME}編輯部`
 export const PAGE_TITLE_SEPARATOR = ' - '
 

@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: '日本旅遊長尾站',
+  title: '繞路筆記',
 
   // 專案 ID 不是機密；沒有 studio/.env 的雲端 routine 直接用預設值。
   projectId: process.env.SANITY_STUDIO_PROJECT_ID ?? 'e8ctf7ee',
