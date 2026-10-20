@@ -147,8 +147,16 @@ test('雲端用 REST API 連 D1：不帶權杖時不送 Authorization，交給 n
       {status: 200, headers: {'content-type': 'application/json'}},
     )
   }
-  const execute = createHttpExecutor({fetchImpl: fetchImpl as any, config, token: undefined})
-  const results = await execute(['SELECT owner FROM run_lock;', 'SELECT 1'])
+  // Cloudflare Workers Builds 的建置機器本身就帶 CLOUDFLARE_API_TOKEN；這裡要模擬「沒有權杖」，先暫時拿掉。
+  const savedToken = process.env.CLOUDFLARE_API_TOKEN
+  delete process.env.CLOUDFLARE_API_TOKEN
+  let results
+  try {
+    const execute = createHttpExecutor({fetchImpl: fetchImpl as any, config})
+    results = await execute(['SELECT owner FROM run_lock;', 'SELECT 1'])
+  } finally {
+    if (savedToken !== undefined) process.env.CLOUDFLARE_API_TOKEN = savedToken
+  }
   assert.deepEqual(results, [[{owner: 'a'}], []])
   assert.equal(calls[0].url, `https://api.cloudflare.com/client/v4/accounts/${config.accountId}/d1/database/${config.databaseId}/query`)
   assert.equal(calls[0].init.headers.authorization, undefined)
