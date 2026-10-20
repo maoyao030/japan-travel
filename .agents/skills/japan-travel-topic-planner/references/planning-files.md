@@ -8,6 +8,8 @@ node scripts/check-planning.mjs
 
 `npm test` 也會檢查 repo 裡的規劃檔，沒通過就不能合併。格式規則寫在 `scripts/planning-formats.mjs`。
 
+規劃完成、檢查通過後，跑一次 `node scripts/ops-facts.mjs sync`，把事實與缺口登記到 D1，到期重查才不會漏（2026-10-18；原本要等文章發布才同步）。
+
 ## 全站地點清單 `content-planning/places.json`
 
 - `places[]`：每個地點一筆。`placeId`、繁中名 `nameZh`、日文名 `nameJa`、`kind`（`place`、`district` 大城市的區、`region` 地區）、`region`、`groupId`（還沒分群填 `null`）、`status`（`candidate`、`planned`、`published`、`merged`、`excluded`）、`gatewayPlaceIds`、`nearbyPlaceIds`。
@@ -25,11 +27,13 @@ node scripts/check-planning.mjs
 - 每個地點一份，整群的頁面共用同一套編號；大綱與正文用 `<地點>:F12` 引用。
 - `facts[]`：`factId`（`F` 加數字，一經使用不改號）、`claim`、`quote`（日文原文最短摘錄）、`sourceUrl`、`checkedAt`、`condition`（適用條件、算式）、`changeType`、`nextCheckAt`、`decision`（刪除時填 `removed`，保留列）。
 - `changeType` 與查核週期見寫作 Skill 的 `research-record.md`；`stable` 不填 `nextCheckAt`。
+- **缺口**（2026-10-18）：查不到的也記一筆，`kind: "gap"`、`gapKind`（`no-source` 沒有官方網站、`not-stated` 有網站但沒寫、`not-announced` 還沒公布、`unreadable` 這次讀不到、`conflicting` 官方說法不一致、`not-researched` 沒查到）、`claim` 寫缺什麼、`checkedAt`。`not-announced`、`unreadable`、`conflicting` 這三種要填 `nextCheckAt`。缺口只給重查用，大綱標題不能引用，正文不寫。
+- **推算的事實**：加 `derivedFrom`（例如 `["F72", "F73"]`），來源事實重查發現改變時一起標記。
 - 查核狀態（上次重查、來源是否改變）記在維護資料庫 D1 的 `facts`，由同步程式從這份檔案登記。
 
 ## 旅行群大綱 `content-planning/<地區>/<群>-outline.json`
 
-- `groupId`、`pages[]`、`division[]`、`links[]`、`writingOrder[]`、`gaps[]`。
+- `groupId`、`pages[]`、`division[]`、`links[]`、`writingOrder[]`、`gaps[]`；另有 `spotCoverage[]`、`experienceLeads[]`、`mediaPlan[]`（欄位見 [景點比對與體驗研究](experience-research.md)，檢查程式目前不檢查）。
 - `pages[]`：`articleId`、`pageType`、`placeId`、`targetPath`、`primaryQuery`、`secondaryQueries`、`h1`、`mustAnswer`、`headings[]`。每個標題：`level`（2 或 3）、`text`、`facts`（事實編號）、`answers`（回答第幾個必答問題，從 0 起算）。
 - `division[]`：`topicKey`、`description`、`owner`、`summarizedBy`。
 - `links[]`：`from`、`to`、`purpose`，可加 `section` 與連結句 `sentence`；連到群外頁面標 `external: true`。

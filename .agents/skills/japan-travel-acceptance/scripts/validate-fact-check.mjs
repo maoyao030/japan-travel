@@ -89,7 +89,8 @@ function runCli() {
     console.error('文章資料夾缺少 fact-check.json 或 reader-preview.md')
     process.exit(2)
   }
-  const articleSha256 = createHash('sha256').update(readFileSync(articlePath)).digest('hex')
+  // 換行先統一成 LF 再算：Windows 存成 CRLF、Git 存成 LF，雲端檢出時位元組不同，雜湊才對得上
+  const articleSha256 = createHash('sha256').update(readFileSync(articlePath, 'utf8').replace(/\r\n/g, '\n')).digest('hex')
   let record
   try {
     record = JSON.parse(readFileSync(recordPath, 'utf8'))

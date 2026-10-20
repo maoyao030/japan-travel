@@ -1,0 +1,764 @@
+{
+  "schemaVersion": 1,
+  "articleId": "wakkanai-transport",
+  "articleSha256": "ad7f5e3766af987bf18b82a22dae983edafad7c160bab169fdd002ab1e63c6a7",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，未參與本篇寫作、潤稿與修改）。第 2 輪：逐句重比對驗收後第 1 輪的正文；沿用第 1 輪已實際開啟查核且句子未變的 claim，改過與新增的句子於 2026-10-20 重新以 curl 與瀏覽器開啟 JR 北海道、えきねっと、ANA、宗谷巴士、発車オーライネット、日本巴士e路通、北海道機場公司、Heartland Ferry、稚內觀光協會官方頁查核。第 3 輪：把協調者的兩處修改倒回去，重算出第 2 輪的 SHA-256（e5006981…），確認全文只差 C20、C44 兩句，只重判這兩筆（C21 摘錄同句改字一併更新）",
+  "checkedAt": "2026-10-20",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "從札幌前往稚內，JR特急要5小時12分",
+      "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?search_target=route&search_way=time&sum_target=7&faretype=2&jr=on&privately=on&dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E7%A8%9A%E5%86%85&via_node01=&via_node02=&via_node03=&year=2026&month=10&day=21&hour=2&minute=00&search_type=departure&sort=time&max_route=5&sprexprs=on&utrexprs=on&exprs=on&slputr=on&slpexprs=on&sprnozomi=on&transfer=normal",
+      "sourceTitle": "経路検索結果｜JR北海道 時刻・運賃検索（札幌→稚内 2026年10月21日）",
+      "sourceQuote": "所要時間: 5 時間 12 分 … 7:30 札幌 … 特急宗谷 … 12:42 稚内",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "高速巴士大約5小時50分",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "101便 7：40 ⇒ 13：30 （332km)",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "從新千歲機場搭飛機則是1小時左右",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/wakkanai/access/",
+      "sourceTitle": "交通アクセス｜稚内空港",
+      "sourceQuote": "新千歳空港へは飛行機で約1時間00分",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "JR北海道的特急從2026年3月14日起改成全車指定席",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/zensha/",
+      "sourceTitle": "3.14ダイヤ改正 道内すべての特急列車は全車指定席へ | JR北海道",
+      "sourceQuote": "2026年3月14日（土）より JR北海道の特急列車は すべて 全車指定席 で運行しています。",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "札幌直達稚內的特急宗谷一天只有一班",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2890",
+      "sourceTitle": "時刻表 宗谷本線(旭川―名寄―稚内) 下り｜JR北海道",
+      "sourceQuote": "51D 宗谷 … 札幌 730 … 毎日 … 稚内 1242",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "高速巴士わっかない號只接受預約，沒訂位上不了車。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "バスは 完全予約制・全席指定席 となります 。",
+      "verdict": "verified",
+      "notes": "句子未變。日本巴士e路通常見問題寫「如巴士還未滿座，您也可以於出發當天直接在巴士上向司機付款」，是平台通則，與經營者官方的完全予約制不符，以宗谷巴士為準（研究記錄也已排除）。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "機場巴士不能刷卡",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス | 宗谷バス株式会社",
+      "sourceQuote": "（クレジットカード、タッチ決済、交通系ＩＣ、その他キャッシュレス決済には対応しておりません。）",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "JR稚內站也沒有置物櫃，行李可以寄在渡輪站的投幣置物櫃。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/network/station/station.html#4515",
+      "sourceTitle": "稚内｜駅の情報検索（時刻表・バリアフリー）｜JR北海道",
+      "sourceQuote": "駅ロッカー × ／（ハートランドフェリー よくあるご質問）稚内港フェリーターミナル ロッカー ○",
+      "verdict": "verified",
+      "notes": "改寫後不再有唯一性，官方頁完全支持。渡輪站置物櫃見 https://heartlandferry.jp/faq/ 。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "特急宗谷直達5小時12分、11,420日圓",
+      "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?search_target=route&search_way=time&sum_target=7&faretype=2&jr=on&privately=on&dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E7%A8%9A%E5%86%85&via_node01=&via_node02=&via_node03=&year=2026&month=10&day=21&hour=2&minute=00&search_type=departure&sort=time&max_route=5&sprexprs=on&utrexprs=on&exprs=on&slputr=on&slpexprs=on&sprnozomi=on&transfer=normal",
+      "sourceTitle": "経路検索結果｜JR北海道 時刻・運賃検索（札幌→稚内 2026年10月21日）",
+      "sourceQuote": "合計: 11,420 円 (運賃: 8,250 円 料金: 3,170 円) … 指定席: 3,170円",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "高速巴士わっかない號大約5小時50分、6,700日圓",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "片道 大人： 6,700円 、 小児： 3,350円",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "巴士多坐38分鐘，就能省下4,720日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "101便 7：40 ⇒ 13：30 ／ 大人： 6,700円",
+      "verdict": "verified",
+      "notes": "句子未變。重算 5:50 − 5:12 ＝ 38 分；11,420 − 6,700 ＝ 4,720。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "7:30的特急宗谷12:42就到，比7:40開的巴士早48分鐘，下午還能接著逛市區。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "101便 7：40 ⇒ 13：30",
+      "verdict": "verified",
+      "notes": "句子未變。重算 13:30 − 12:42 ＝ 48 分。"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "高速巴士從札幌白天有5班，出發時間比較好安排。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "101便 7：40 … 103便 10：30 … 105便 13：00 … 107便 15：00 … 109便 17：00",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "特急ライラック到旭川，轉特急サロベツ1號 | 12:00 | 17:25 | 11,420日圓",
+      "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?search_target=route&search_way=time&sum_target=7&faretype=2&jr=on&privately=on&dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E7%A8%9A%E5%86%85&via_node01=&via_node02=&via_node03=&year=2026&month=10&day=21&hour=2&minute=00&search_type=departure&sort=time&max_route=5&sprexprs=on&utrexprs=on&exprs=on&slputr=on&slpexprs=on&sprnozomi=on&transfer=normal",
+      "sourceTitle": "経路検索結果｜JR北海道 時刻・運賃検索（札幌→稚内 2026年10月21日）",
+      "sourceQuote": "12:00 札幌 … 特急ライラック17号 … 13:25 13:35 旭川 … 特急サロベツ1号 17:25 稚内 … 合計: 11,420 円",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "高速巴士わっかない號 | 7:40、10:30、13:00、15:00、17:00，夜班23:00 | 7:40那班13:30到 | 6,700日圓",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "101便 7：40 ⇒ 13：30 … 109便 17：00 ⇒ 22：50 … 111便 23：00 ⇒ 5：30 (3/20～11/30)",
+      "verdict": "verified",
+      "notes": "句子未變，夜班停駛期間正文 H3 有寫。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "特急宗谷每天7:30從札幌開出，全程396.2公里。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?search_target=route&search_way=time&sum_target=7&faretype=2&jr=on&privately=on&dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E7%A8%9A%E5%86%85&via_node01=&via_node02=&via_node03=&year=2026&month=10&day=21&hour=2&minute=00&search_type=departure&sort=time&max_route=5&sprexprs=on&utrexprs=on&exprs=on&slputr=on&slpexprs=on&sprnozomi=on&transfer=normal",
+      "sourceTitle": "経路検索結果｜JR北海道 時刻・運賃検索（札幌→稚内 2026年10月21日）",
+      "sourceQuote": "距離: 396.2 km … 7:30 札幌 … 特急宗谷",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "2026年3月14日起，JR北海道的特急不再賣自由席特急券，要確定有位子就得劃位。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/zensha/",
+      "sourceTitle": "3.14ダイヤ改正 道内すべての特急列車は全車指定席へ | JR北海道",
+      "sourceQuote": "自由席特急券の発売はございません。",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "不劃位也可以買「座席未指定券」，價格和指定席特急券一樣。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/zensha/",
+      "sourceTitle": "3.14ダイヤ改正 道内すべての特急列車は全車指定席へ | JR北海道",
+      "sourceQuote": "●価格は、 指定席特急券と同額です。",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "這種票是有空位就坐，劃了那個位子的乘客來了要讓座，客滿時只能站著。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/zensha/",
+      "sourceTitle": "3.14ダイヤ改正 道内すべての特急列車は全車指定席へ | JR北海道",
+      "sourceQuote": "指定席を予約されたお客様がお見えの際は、お席の移動をお願いします。 満席の場合は、 立席でのご利用となります。",
+      "verdict": "verified",
+      "notes": "改成「來了要讓座」，與原文一致。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "人在台灣想事先劃位，可以用「JR-EAST Train Reservation」。這是JR東日本經營的海外旅客訂位網站",
+      "sourceUrl": "https://secure.okbiz.jp/eki-net/faq/show/4131",
+      "sourceTitle": "海外在住ですが、「えきねっと」を利用できますか。 | えきねっと Q＆A よくあるご質問",
+      "sourceQuote": "海外にお住まいのお客さまは、海外向けインターネット指定席予約サービス「 JR-EAST Train Reservation」（JR東日本) をご利用ください。",
+      "verdict": "verified",
+      "notes": "第 3 輪修改後，經營者寫成 JR 東日本，與えきねっと官方 FAQ 一致；JR 北海道 Train Reservation 頁也寫「Among the JR-EAST Train Reservation services, only the information related to JR Hokkaido is mentioned here.」。"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "JR北海道的特急宗谷和サロベツ也訂得到。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/global/english/ticket/reservation/index.html",
+      "sourceTitle": "Train Reservation | Rail Passes & Tickets | HOKKAIDO RAILWAY COMPANY",
+      "sourceQuote": "Limited express trains (Hokuto, Suzuran, Ozora, Tokachi, Lilac, Kamui, Okhotsk, Soya, Sarobetsu)",
+      "verdict": "verified",
+      "notes": "同頁另寫「*You cannot reserve seats for temporary trains, sightseeing trains and local trains.」。本文提到的 13:01、20:06 指定日サロベツ（6064D、6063D，6000 號段）可能是臨時列車；JR 頁面沒有直接標明這兩班是不是臨時列車，所以沒判錯。交讀者驗收決定要不要補「臨時加開的班次訂不到」。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "乘車日1個月前的日本時間10:00開賣，台灣時間是早上9點，一直賣到開車前6分鐘。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/global/english/ticket/reservation/index.html",
+      "sourceTitle": "Train Reservation | Rail Passes & Tickets | HOKKAIDO RAILWAY COMPANY",
+      "sourceQuote": "Ticket Purchase (without a rail pass) … Purchase available from 10 am (JST) one month before the boarding date until 6 minutes before departure time",
+      "verdict": "verified",
+      "notes": "日本 10:00＝台灣 9:00。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "拿北海道鐵路周遊券也能在這個網站劃位，周遊券如果是在旅行社買的兌換券，劃位只到乘車日前兩天的23:50，前一天21:00前還要領票。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/global/english/ticket/reservation/index.html",
+      "sourceTitle": "Train Reservation | Rail Passes & Tickets | HOKKAIDO RAILWAY COMPANY",
+      "sourceQuote": "If you purchase an exchange order for a rail pass at travel agencies … until 11:50 pm (JST) on the two days before the boarding date *You must receive tickets by 9 pm (JST) on the day before the boarding date",
+      "verdict": "verified",
+      "notes": "Hokkaido Rail Pass 列在同頁 Rail Pass Purchase；在該網站買的周遊券劃位到開車前 6 分鐘。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "網路上訂好的票，上車前要到車站的指定席售票機領取。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/global/english/ticket/reservation/index.html",
+      "sourceTitle": "Train Reservation | Rail Passes & Tickets | HOKKAIDO RAILWAY COMPANY",
+      "sourceQuote": "Please receive the tickets you purchased and reserved before boarding. … Click here for how to receive tickets at reserved seat ticket vending machines",
+      "verdict": "verified",
+      "notes": "官方另列「where to receive tickets in Hokkaido」，領票地點不只指定席售票機；正文寫指定席售票機不算錯，但不是唯一地點。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "從旭川出發，每天有13:35開的特急サロベツ1號，17:25抵達稚內。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2890",
+      "sourceTitle": "時刻表 宗谷本線(旭川―名寄―稚内) 下り｜JR北海道",
+      "sourceQuote": "61D サロベツ 1 … 旭川 1335 … 毎日 … 稚内 1725",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "從札幌12:00搭特急ライラック到旭川轉這班，只要在旭川不出剪票口直接轉車，總共11,420日圓，和直達的特急宗谷同價。這樣上午還能在札幌待半天。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2890",
+      "sourceTitle": "時刻表 宗谷本線(旭川―名寄―稚内) 下り｜JR北海道",
+      "sourceQuote": "稚内(宗谷本線)―旭川―札幌間の停車駅相互を旭川駅で改札を出ないで特急列車どうしを乗り継ぐ場合に限り、通しの料金でご乗車になれます。",
+      "verdict": "verified",
+      "notes": "條件已補上；金額見轉乘查詢「2 乗換 1回 11,420円 12:00 ＞ 17:25」。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "旭川20:06開、23:47到的サロベツ只在JR指定的日子行駛。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2890&d=20261024",
+      "sourceTitle": "時刻表 宗谷本線(旭川―名寄―稚内) 下り｜JR北海道（2026年10月24日）",
+      "sourceQuote": "6063D サロベツ … 旭川 2006 … 稚内 2347",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪（10/21 沒有，10/23、10/24、11/20 有）。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "5月到6月左右的部分日子，還有觀光列車「花たびそうや號」。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/train/tr037_01.html",
+      "sourceTitle": "花たびそうや号｜列車ガイド（列車編成・設備など）｜JR北海道",
+      "sourceQuote": "例年、５月～６月頃の期間限定運行です。 通年運転ではございません。",
+      "verdict": "verified",
+      "notes": "句子未變，沿用第 1 輪。"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "わっかない號在札幌的上車地點是「大通バスセンター」1樓，不在札幌車站。全車對號座，可以上網或打電話訂位。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "発地 全便、大通バスセンター（1階）のみ乗車可能 … 全席指定席 … 電話予約のお客様は窓口で 乗車券購入 … インターネット予約はこちらから→ 発車オーライネット",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "23:00的夜班在2026年行駛到11月30日，12月1日到2027年3月19日停駛，白天班照常行駛。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2026/09/0fa30eb2d19fad5a7e2d7514264724bc.pdf",
+      "sourceTitle": "都市間バス「わっかない号」夜行便 冬期間の運行休止について（令和8年9月14日 宗谷バス）",
+      "sourceQuote": "2026 年 12 月 1 日から 2027 年 3 月 19 日までの冬期間、運行を休止することといたしました。… 昼行便につきましては、これまでどおり運行いたします。",
+      "verdict": "verified",
+      "notes": "わっかない號頁「111便 23：00 ⇒ 5：30 (3/20～11/30)」。第 1 輪的 PDF 以 Read 工具讀出日文全文。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "2027年春天以後的夜班，出發前到宗谷巴士的わっかない號頁面確認。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2026/09/0fa30eb2d19fad5a7e2d7514264724bc.pdf",
+      "sourceTitle": "都市間バス「わっかない号」夜行便 冬期間の運行休止について（令和8年9月14日 宗谷バス）",
+      "sourceQuote": "2027 年 3 月 20 日以降の夜行便の運行につきましては、決定次第、ホームページ等でお知らせいたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "大人單程6,700日圓，來回12,200日圓，比買兩次單程省1,200日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "往復 大人： 12,200円",
+      "verdict": "verified",
+      "notes": "句子未變。6,700×2 − 12,200 ＝ 1,200。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "從台灣上網訂，可以用発車オーライネット的多語言版「日本巴士e路通」，有繁體中文頁。",
+      "sourceUrl": "https://secure.j-bus.co.jp/hon/RouteList/List?uncd=0108&name=%E5%AE%97%E8%B0%B7%E3%83%90%E3%82%B9",
+      "sourceTitle": "宗谷バス 路線一覧｜発車オーライネット",
+      "sourceQuote": "Language (Divert to Japan Bus Online) 繁體中文 … © 2011-2024 KOBO CO., LTD.",
+      "verdict": "verified",
+      "notes": "宗谷巴士わっかない號頁的「発車オーライネット」連結即此頁。日本巴士e路通關於我們（https://japanbusonline.com/zh-tw/AboutUs ）：「本公司，即KOBO Co., Ltd. 於1999年推出了提供線上巴士預訂服務的日文網站：Hassha Alright Net」，頁尾「©Copyright 2019 KOBO CO., LTD.」。兩站同一家公司經營，多語言版的說法成立。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "票價6,030到6,700日圓，要用信用卡線上付款。",
+      "sourceUrl": "https://japanbusonline.com/zh-tw/CourseSearch/10100460001?AreaCd=101",
+      "sourceTitle": "稚内－札幌｜日本巴士e路通(Japan Bus Online)",
+      "sourceQuote": "稚内－札幌 … 票價 6,030 日圓 ～ 6,700 日圓",
+      "verdict": "verified",
+      "notes": "付款見常見問題 https://japanbusonline.com/zh-tw/FAQ ：「我們接受信用卡付款。若要完成預訂，則需要在線上刷卡付款。」"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "6,030日圓的網路折扣票只限部分座位，訂了也不能改。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "大人： 6,030円 (発車オーライネット予約限定） … ネット割は弊社で設定した一部座席にのみ適用されます。… 予約確定後の内容変更ができません。",
+      "verdict": "verified",
+      "notes": "日本巴士e路通顯示的 6,030 日圓下限與此一致。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "付款後會收到標題為「電子車票」的電子郵件，上車時給司機看列印本或手機畫面，不用再跑窗口。",
+      "sourceUrl": "https://japanbusonline.com/zh-tw/FAQ",
+      "sourceTitle": "常見問題｜日本巴士e路通(Japan Bus Online)",
+      "sourceQuote": "在您完成網站上付款後，會收到來自日本巴士e路通(Japan Bus Online)標題為「電子車票」的電子郵件。請在上車前向司機出示電子車票的列印副本，或以智慧型手機或行動裝置出示車票。",
+      "verdict": "verified",
+      "notes": "經營者面：宗谷巴士頁「発車オーライネット決済のお客様は乗務員に「購入確認メール」又は「モバイルチケット」をご提示ください。」。FAQ 另寫部分路線要列印、上車回收，正文寫列印本或手機畫面，與わっかない號頁一致。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "打電話訂的話，要到售票窗口付款取票，窗口只收現金或PayPay。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "電話予約のお客様は窓口で 乗車券購入 をお願いします。窓口決済は 現金 又は PayPay のみとなります。",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "2026年夏季，東京羽田每天都有直飛稚內的班機，6月到9月再多一班。從新千歲機場出發每天2個來回，飛1小時左右。",
+      "sourceUrl": "https://www.ana.co.jp/guide/plan/airinfo/dom-timetable/pdf/timetable_hokkaido_20260701_20261024.pdf",
+      "sourceTitle": "ANA国内線時刻表 北海道 2026/07/01～2026/10/24",
+      "sourceQuote": "NH0571 10:55 12:45 ANA ／ NH0573 13:20 15:10 ANA 7/1-31,8/1-31,9/1-30 ／ NH4841 10:15 11:10 AKX ／ NH4843 15:30 16:25 AKX",
+      "verdict": "verified",
+      "notes": "句子未變；6 月見 3/29～6/30 版「NH0573 13:20 15:10 ANA 6/1-30」。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "下了飛機搭機場巴士，大約30分鐘到JR稚內站前。坐到終點的稚內港渡輪站是35分鐘",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/airport/Airport_2026_0329-1024.pdf",
+      "sourceTitle": "稚内空港連絡バス 時刻表 2026年3月29日～2026年10月24日まで",
+      "sourceQuote": "空港ターミナル 11:15 ／ 稚内駅前ターミナル 11:45 ／ フェリーターミナル 11:50",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "日文站名是「稚内港フェリーターミナル」，地址稚內市開運2-7-1。",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島）｜ハートランドフェリー",
+      "sourceQuote": "稚内港フェリーターミナル 稚内市開運2-7-1",
+      "verdict": "verified",
+      "notes": "禮文頁同。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "機場巴士配合班機發車，2026年夏季各班巴士接的班機如下。",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス | 宗谷バス株式会社",
+      "sourceQuote": "空港連絡バスは飛行機の発着に合わせる形で運行しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "新千歲出發 NH4841 | 11:10 | 11:15 ／ 羽田出發 NH571 | 12:45 | 12:55 ／ 羽田出發 NH573，6月到9月 | 15:10 | 15:20 ／ 新千歲出發 NH4843 | 16:25 | 16:30",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/airport/Airport_2026_0329-1024.pdf",
+      "sourceTitle": "稚内空港連絡バス 時刻表 2026年3月29日～2026年10月24日まで",
+      "sourceQuote": "NH4841便 NH0571便 NH0573便 NH4843便 ／ 発 千歳10:15 羽田10:55 羽田13:20 千歳15:30 ／ 着 稚内11:10 稚内12:45 稚内15:10 稚内16:25 ／ ① ② ③6/1～9/30 ④ ／ 11:15 12:55 15:20 16:30",
+      "verdict": "verified",
+      "notes": "逐列重算：班機抵達與巴士發車對應正確，間隔 5、10、10、5 分。班機時刻另以 ANA 官方時刻表核對（7/1～10/24 版與 3/29～6/30 版），一致。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "搭羽田早上的班機，接12:55的巴士，13:30左右就到渡輪站。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/airport/Airport_2026_0329-1024.pdf",
+      "sourceTitle": "稚内空港連絡バス 時刻表 2026年3月29日～2026年10月24日まで",
+      "sourceQuote": "② … 空港ターミナル 12:55 … フェリーターミナル 13:30",
+      "verdict": "verified",
+      "notes": "NH571 羽田 10:55 起飛（ANA 時刻表），算早上的班機。適用 2026 夏季，正文前一句有寫期間。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "時刻表上這兩站寫成「稚内駅前ターミナル」與「フェリーターミナル」。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/airport/Airport_2026_0329-1024.pdf",
+      "sourceTitle": "稚内空港連絡バス 時刻表 2026年3月29日～2026年10月24日まで",
+      "sourceQuote": "停留所＼便 … 稚内駅前ターミナル … サフィールホテル前 … フェリーターミナル",
+      "verdict": "verified",
+      "notes": "第 3 輪改成「時刻表上…寫成」，和官方時刻表的停靠站名完全一致，不再推論車上顯示。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "10月25日起換成冬季班表，羽田的NH571改成12:30到，新千歲的NH4841、NH4843是11:15、16:30到。",
+      "sourceUrl": "https://www.ana.co.jp/guide/plan/airinfo/dom-timetable/pdf/timetable_hokkaido_20261025_20270131.pdf",
+      "sourceTitle": "ANA国内線時刻表 北海道 2026/10/25～2027/01/31",
+      "sourceQuote": "NH0571 10:40 12:30 AKX ／ NH4841 10:15 11:15 AKX ／ NH4843 15:30 16:30 AKX",
+      "verdict": "verified",
+      "notes": "沒有運航日限制。機場巴士冬季時刻表也從 2026/10/25 開始（宗谷巴士機場巴士頁「2026年10月25日～2027年1月31日」）。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "機場巴士一樣配合這些班機發車。",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス | 宗谷バス株式会社",
+      "sourceQuote": "空港連絡バスは飛行機の発着に合わせる形で運行しています。… 空港発バスは飛行機の到着後間もない時刻に出発予定となっております",
+      "verdict": "verified",
+      "notes": "冬季巴士時刻表（Airport_2026_1025-2027_0131.pdf）本輪沒有逐班讀出；這句是官方的通則說明，有原文支持。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "機場的觀光服務台9:00到18:00有人服務，時間偶爾會配合班機調整。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1202.html",
+      "sourceTitle": "稚内空港観光案内（宗谷観光連盟）｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "9:00～18:00 … 飛行機の運行時刻によって変更することがあります。",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "機場巴士大人800日圓、小孩400日圓，不用預約，下車時付現金或PayPay。信用卡、Suica這類交通IC卡與其他電子支付都不能用。",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス | 宗谷バス株式会社",
+      "sourceQuote": "【予約不要】 運賃：一律 大人８００円／小児４００円 支払い方法：現金 または PayPay で降車時にお支払いください。（クレジットカード、タッチ決済、交通系ＩＣ、その他キャッシュレス決済には対応しておりません。）",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "車上的兌幣機只換千圓鈔，五千圓、一萬圓的鈔票換不開。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa",
+      "sourceTitle": "よくあるご質問 | 宗谷バス株式会社",
+      "sourceQuote": "バス車内で両替可能な紙幣は千円札のみとなっております。",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "機場沒有宗谷巴士的窗口與售票機。離開稚內那天搭巴士去機場的話，單程票可以在站前巴士總站買。",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス | 宗谷バス株式会社",
+      "sourceQuote": "稚内駅前ターミナルでは空港連絡バスの片道乗車券を販売しています。なお、稚内空港には当社窓口及び券売機はございません",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "機場巴士跟著班機走，班機取消就停駛，班機延誤則會等飛機到了再開。班機晚到一樣搭得上巴士，只是巴士不會配合渡輪的時間。",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス | 宗谷バス株式会社",
+      "sourceQuote": "接続便の飛行機が欠航した場合、空港連絡バスは運休いたします。・稚内空港着の飛行機が遅れた場合、空港連絡バスは飛行機到着を待ってから出発します。… 他の公共交通機関との接続は想定しておりません",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "延誤後還要趕船，可以從機場搭計程車，到渡輪站30分鐘左右，車資大約5,000日圓。",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島）｜ハートランドフェリー",
+      "sourceQuote": "稚内空港よりタクシーで約30分 (約5,000円)",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "往機場的巴士中途不能下車，從機場往渡輪站的巴士，中途也不能上車。",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス | 宗谷バス株式会社",
+      "sourceQuote": "稚内空港へ向かう空港連絡バスは途中下車できません。・フェリーターミナルへ向かう空港連絡バスは道中バス停より途中乗車できません。",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "從機場搭巴士到宗谷岬約40分鐘，不過這班巴士只在特定期間行駛。去野寒布岬開車約35分鐘，搭巴士約60分鐘。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/wakkanai/access/",
+      "sourceTitle": "交通アクセス｜稚内空港",
+      "sourceQuote": "宗谷岬へは、バスで約40分 … ノシャップ岬へは、車で約35分、バスで約60分。※稚内空港から宗谷岬へのバスは期間限定運行となります。",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "JR稚內站和キタカラ大樓直接相連，稚內站前巴士總站與稚內市觀光案內所都在キタカラ1樓。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1200.html",
+      "sourceTitle": "稚内市観光案内所（キタカラ内）｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "北海道稚内市中央3丁目6-1キタカラ1階 … JR稚内駅直結キタカラ内1F",
+      "verdict": "verified",
+      "notes": "句子未變；巴士總站見わっかない號頁「駅前バスターミナルが「キタカラ（駅前再開発ビル）1階」に移転しました」。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "巴士總站的日文是「稚内駅前バスターミナル」，從機場搭巴士進市區，下車的站前也是這裡。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "稚内駅前バスターミナル (0162)22-3114 〒097-0022 北海道稚内市中央3丁目6番1号",
+      "verdict": "verified",
+      "notes": "地址與キタカラ相同；機場巴士停「稚内駅前ターミナル」，宗谷巴士也賣機場巴士票於「稚内駅前ターミナル」，同一處。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "巴士總站的售票窗口6:00到17:00開，晚上21:30到23:00再開一段，晚上這段只賣わっかない號的車票。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "営業時間 / 6:00～17:00 21:30～23:00(わっかない号のみ対応)",
+      "verdict": "verified",
+      "notes": "已改成只修飾晚上那段，與原文一致。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "觀光案內所10:00到18:00開，12月31日到1月5日休息。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1200.html",
+      "sourceTitle": "稚内市観光案内所（キタカラ内）｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "10:00～18:00 休業日 12月31日～1月5日",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "從JR稚內站走到稚內港渡輪站大約15分鐘。搭計程車2分鐘左右就到，車資約720日圓。",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島）｜ハートランドフェリー",
+      "sourceQuote": "JR稚内駅よりタクシーで約2分 (約720円) JR稚内駅より徒歩約15分",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "機場巴士雖然也開到渡輪站，但從車站搭不上。",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス | 宗谷バス株式会社",
+      "sourceQuote": "フェリーターミナルへ向かう空港連絡バスは道中バス停より途中乗車できません。",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "JR稚內站沒有置物櫃，稚內港渡輪站有投幣置物櫃，行李寄好就能空手逛市區。渡輪站裡也有商店與餐飲店。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "各フェリーターミナルにコインロッカーはありますか。… 稚内港フェリーターミナル ○ ／ 売店 飲食店 稚内港フェリーターミナル ○ ○",
+      "verdict": "verified",
+      "notes": "JR 站沒有置物櫃見車站頁「駅ロッカー ×」。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "租車櫃台在稚內機場1樓抵達大廳的綜合服務台旁邊。Nippon、Toyota、Times、日產等公司都在這裡，報到後搭免費接駁車到各店取車。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/wakkanai/access/",
+      "sourceTitle": "交通アクセス｜稚内空港",
+      "sourceQuote": "受付カウンターは、ターミナルビル1階の到着ロビー総合案内所となりにございます。また各店舗へは無料シャトルバスで送迎。",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "站旁的停車場有90個左右的車位。停1天1,000日圓，住一晚算2天2,000日圓。",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島）｜ハートランドフェリー",
+      "sourceQuote": "1泊2日 2,000円 … 基本料金 1日1,000円 台数 約90台",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "往野寒布岬的市內線巴士從站前巴士總站2號乘車處發車，15到20分鐘就有一班。坐到「ノシャップ」站250日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/noshappucape",
+      "sourceTitle": "ノシャップ岬へ行くには | 宗谷バス株式会社",
+      "sourceQuote": "「2番のりば」よりノシャップ行き … 15～20分おきに運行しています。… １区間250円です。",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "2026年5月3日到5日與5月20日到9月30日另有定期觀光巴士，要預約才能搭。稚內A線8:00從站前巴士總站出發，繞稚內公園、野寒布岬與宗谷岬，11:50回到站前。大人3,600日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧 | 宗谷バス株式会社",
+      "sourceQuote": "運行期間：2026年5月3日～5月5日、5月20日～9月30日まで … 『 予約制 』 … 稚内A … 大人 3,600円 … 8:00発 → 11:50着",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "這條路線可以在稚內機場中途下車，11:25左右到，但巴士不配合航班時間。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧 | 宗谷バス株式会社",
+      "sourceQuote": "（稚内空港途中下車11:25着） ※稚内空港途中下車では、航空便との接続を考慮しておりませんのでご注意ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "2026年夏季稚內11:45飛新千歲的班機來不及，適合搭13:30飛羽田以後的班機。",
+      "sourceUrl": "https://www.ana.co.jp/guide/plan/airinfo/dom-timetable/pdf/timetable_hokkaido_20260701_20261024.pdf",
+      "sourceTitle": "ANA国内線時刻表 北海道 2026/07/01～2026/10/24",
+      "sourceQuote": "NH4842 11:45 12:40 AKX ／ NH0572 13:30 15:30 ANA ／ NH0574 15:50 17:50 ANA 7/1-31,8/1-31,9/1-30 ／ NH4844 17:00 17:55 AKX",
+      "verdict": "verified",
+      "notes": "重算：11:25 到機場，NH4842 11:45 起飛只剩 20 分，來不及的判斷合理；NH572 13:30 有 2 小時 5 分。觀光巴士行駛的 5 月（3/29～6/30 版）NH572 也每天 13:30 起飛（4/7～5/6 由 AKX 執飛，時刻相同）。13:30 以後還有 NH4844 17:00，6～9 月另有 NH574 15:50。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "要叫計程車，可以打北都ハイヤー0162-33-2525或稚内日の丸交通0162-22-5000。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/wakkanai/access/",
+      "sourceTitle": "交通アクセス｜稚内空港",
+      "sourceQuote": "北都ハイヤー 0162-33-2525 稚内日の丸交通 0162-22-5000",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "稚內的路線巴士和機場巴士一樣只收現金或PayPay。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa",
+      "sourceTitle": "よくあるご質問 | 宗谷バス株式会社",
+      "sourceQuote": "お支払いは現金又はキャッシュレス決済の場合PayPayがご利用いただけます。それ以外の方法は対応しておりませんので、ご了承ください。",
+      "verdict": "verified",
+      "notes": "已刪掉高速巴士、觀光巴士，範圍正確。機場巴士見空港連絡バス頁。"
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "搭路線巴士時，上車先拿整理券，下車時在票價表上找到整理券號碼對應的金額付錢，車上不找零。兌幣機一樣只換千圓鈔，身上最好留幾張。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/howto",
+      "sourceTitle": "路線バスの乗り方 | 宗谷バス株式会社",
+      "sourceQuote": "入口にある整理券をお取りください。… 整理券番号と照らし合わせて運賃を確認します。… ※おつりは出ないので、両替してから入れて下さい。",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "去利尻島、禮文島的渡輪是Heartland Ferry（ハートランドフェリー），從稚內港渡輪站出發。到利尻島鴛泊港1小時40分左右，直航禮文島香深港大約1小時55分。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "稚内発～香深着 … 06:30～08:25 ／（稚内-鴛泊）稚内発～鴛泊着 07:15～08:55",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "搭2等艙要在開船40分鐘前辦好乘船手續，從JR稚內站出發還要再加上走路的15分鐘。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "2等客室をご利用されるお客様は出港時間の40分前までにお済ませ下さい。",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "從稚內回札幌，JR直達的只有17:44開的特急宗谷，22:56抵達札幌。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?search_target=route&search_way=time&sum_target=7&faretype=2&jr=on&privately=on&dep_node=%E7%A8%9A%E5%86%85&arv_node=%E6%9C%AD%E5%B9%8C&via_node01=&via_node02=&via_node03=&year=2026&month=10&day=21&hour=5&minute=00&search_type=departure&sort=time&max_route=5&sprexprs=on&utrexprs=on&exprs=on&slputr=on&slpexprs=on&sprnozomi=on&transfer=normal",
+      "sourceTitle": "経路検索結果｜JR北海道 時刻・運賃検索（稚内→札幌 2026年10月21日）",
+      "sourceQuote": "17:44 ＞ 22:56 … 特急宗谷",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "往旭川的特急サロベツ早上6:36開 ／ 6:36 | 特急サロベツ | 旭川10:19",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2891",
+      "sourceTitle": "時刻表 宗谷本線(稚内―名寄―旭川) 上り｜JR北海道",
+      "sourceQuote": "62D サロベツ … 稚内 636 … 毎日 … 旭川 1019",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "13:01那班只在JR指定的日子行駛 ／ 13:01 | 特急サロベツ，只在指定日行駛 | 旭川16:45",
+      "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?search_target=route&search_way=time&sum_target=7&faretype=2&jr=on&privately=on&dep_node=%E7%A8%9A%E5%86%85&arv_node=%E6%97%AD%E5%B7%9D&via_node01=&via_node02=&via_node03=&year=2026&month=10&day=24&hour=12&minute=30&search_type=departure&sort=time&max_route=5&sprexprs=on&utrexprs=on&exprs=on&slputr=on&slpexprs=on&sprnozomi=on&transfer=normal",
+      "sourceTitle": "経路検索結果｜JR北海道 時刻・運賃検索（稚内→旭川 2026年10月24日）",
+      "sourceQuote": "13:01 ＞ 16:45 … 特急サロベツ4号",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "JR稚內站的剪票口不能刷交通IC卡，車票要在綠色窗口或指定席售票機買。兩邊的營業時間都是6:10到17:45。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/network/station/station.html#4515",
+      "sourceTitle": "稚内｜駅の情報検索（時刻表・バリアフリー）｜JR北海道",
+      "sourceQuote": "自動改札機 × Kitaca対応改札機 × … みどりの窓口 6：10～17：45 指定席券売機の稼働時間 6：10～17：45",
+      "verdict": "verified",
+      "notes": "句子未變。"
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "搭高速巴士回札幌，白天有5班，發車地點依班次分成兩處。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "発地 2.4.12便(22便)は駅前バスターミナル発 6.8.10便はフェリーターミナル発",
+      "verdict": "verified",
+      "notes": "已改成「發車地點」，與「発地」一致。"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "6:30 | 2便 | 稚內站前巴士總站 | 12:20 ／ 8:30 | 4便 | 稚內站前巴士總站 | 14:20 ／ 11:30 | 6便 | 稚內港渡輪站 | 17:20 ／ 13:00 | 8便 | 稚內港渡輪站 | 18:50 ／ 16:40 | 10便 | 稚內港渡輪站 | 22:30",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "稚内→札幌着 ※到着時刻は大通バスセンター … 2便 6：30 ⇒ 12：20 … 4便 8：30 ⇒ 14：20 … 6便 11：30 ⇒ 17：20 … 8便 13：00 ⇒ 18：50 … 10便 16：40 ⇒ 22：30 … 発地 2.4.12便(22便)は駅前バスターミナル発 6.8.10便はフェリーターミナル発",
+      "verdict": "verified",
+      "notes": "逐列核對便號、發車時刻、發車地點、到大通時刻，全部一致。日本巴士e路通時刻表（https://japanbusonline.com/zh-tw/CourseSearch/10100460001?AreaCd=101 ）的大通巴士中心抵達時刻也一樣（12:20、14:20、17:20、18:50、22:30），而且顯示 6、8、10 便 5 分鐘後（11:35、13:05、16:45）也停稚內站前巴士總站。這是平台資料，不是經營者官方，表格照官方寫發車地點不算錯。"
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "白天班到大通巴士中心大約5小時50分，終點是札幌站前，途中的苗穂站前也能下車。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "※到着時刻は大通バスセンター … 着地 全便、札幌駅前着（苗穂駅前、大通バスセンターで降車可能）",
+      "verdict": "verified",
+      "notes": "5 班皆 5 小時 50 分。第 1 輪的 C77 已修正。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "23:00的夜班12便從站前巴士總站發車，停駛期間和札幌出發的夜班一樣。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "12便 23：00 ⇒ 5：30 (3/20～11/30) … 発地 2.4.12便(22便)は駅前バスターミナル発",
+      "verdict": "verified",
+      "notes": "停駛公告同時停「稚内発 22 便」與「札幌発 121 便」，期間相同。官方另寫「12便（夜行便）は稚内営業所より乗車」，屬於途中上車處，不影響發車地點的說法。"
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "從島上搭船回到稚內接著回札幌，訂渡輪站發車的6便、8便或10便，就不用再走15分鐘回車站。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "6.8.10便はフェリーターミナル発",
+      "verdict": "verified",
+      "notes": "走路 15 分見 Heartland Ferry 利尻頁。"
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "渡輪站的站牌不賣票，網路上付款的話，上車給司機看電子車票就好。打電話預約的話，要事先在站前巴士總站等售票處買好票，再到渡輪站上車。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌） | 宗谷バス株式会社",
+      "sourceQuote": "稚内フェリーターミナルは乗車券の販売所がございません。事前に最寄りの販売所で乗車券をご購入願います。… 発車オーライネット決済のお客様は乗務員に「 購入確認メール 」又は「 モバイルチケット 」をご提示ください。",
+      "verdict": "verified",
+      "notes": "「站前巴士總站等售票處」已不再是唯一地點，與官方「最寄りの販売所」一致。"
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "從札幌出發，JR和高速巴士差的主要是價格。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?search_target=route&search_way=time&sum_target=7&faretype=2&jr=on&privately=on&dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E7%A8%9A%E5%86%85&via_node01=&via_node02=&via_node03=&year=2026&month=10&day=21&hour=2&minute=00&search_type=departure&sort=time&max_route=5&sprexprs=on&utrexprs=on&exprs=on&slputr=on&slpexprs=on&sprnozomi=on&transfer=normal",
+      "sourceTitle": "経路検索結果｜JR北海道 時刻・運賃検索（札幌→稚内 2026年10月21日）",
+      "sourceQuote": "所要時間: 5 時間 12 分 … 合計: 11,420 円",
+      "verdict": "verified",
+      "notes": "句子未變。編輯判斷：時間差 38 分、價差 4,720 日圓，成立。"
+    }
+  ],
+  "summary": {
+    "verified": 83,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}

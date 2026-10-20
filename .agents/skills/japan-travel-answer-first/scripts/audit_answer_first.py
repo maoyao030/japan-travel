@@ -14,6 +14,8 @@ from pathlib import Path
 HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
 URL = re.compile(r"https?://[^\s)>\]\"']+")
 SOURCE_TITLES = {"資料來源", "參考資料"}
+# 延伸資料：緊接在資料來源之前的一節，只列官方頁，可以放外部連結（2026-10-18 Darren 決定）
+FURTHER_TITLES = {"延伸資料"}
 PACKAGED = re.compile(r"先看結論|重點先看|重點整理|懶人包|TL;DR", re.I)
 REVIEW_SIGNALS = (
     ("SOURCE_NARRATION", re.compile(r"(?:官網|網站|平台|來源).{0,6}(?:指出|表示|寫道)|目前查到|根據.{0,8}資料顯示"),
@@ -60,6 +62,9 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
     sources = [(number, title) for number, level, title in headings
                if level == 2 and title in SOURCE_TITLES]
     source_start = sources[0][0] if len(sources) == 1 else len(markdown.splitlines()) + 1
+    further = [(number, title) for number, level, title in headings
+               if level == 2 and title in FURTHER_TITLES]
+    further_start = further[0][0] if len(further) == 1 and further[0][0] < source_start else source_start
     issues, signals = [], []
     content_headings = [heading for heading in headings if heading[0] < source_start]
     content_h2s = [heading for heading in content_headings if heading[1] == 2]
@@ -103,17 +108,26 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
         fail("SOURCE_SECTION_COUNT", sources[1][0], "資料來源區塊不只一個。")
     elif any(number > source_start and level <= 2 for number, level, _ in headings):
         fail("SOURCE_SECTION_POSITION", source_start, "資料來源須為最後一節。")
+    if len(further) > 1:
+        fail("FURTHER_READING_COUNT", further[1][0], "延伸資料區塊不只一個。")
+    elif further and further[0][0] > source_start:
+        fail("FURTHER_READING_POSITION", further[0][0], "延伸資料要放在資料來源之前。")
+    elif further and any(further_start < number < source_start and level <= 2 for number, level, _ in headings):
+        fail("FURTHER_READING_POSITION", further_start, "延伸資料要緊接在資料來源之前，中間不能有其他章節。")
 
     definitions = {}
     for number, line in rows:
         match = re.match(r"^\s*\[([^\]]+)\]:\s*<?(https?://[^\s>]+)", line)
         if match:
             definitions[match.group(1).strip().casefold()] = match.group(2)
-    inline_links, source_links = 0, 0
+    inline_links, source_links, further_links = 0, 0, 0
     for number, line in rows:
         urls = URL.findall(line)
         if number >= source_start:
             source_links += len(urls)
+            continue
+        if number >= further_start:
+            further_links += len(urls)
             continue
         inline_links += len(urls)
         references = re.findall(r"\[([^\]]+)\](?:\[([^\]]*)\])?", line)
@@ -133,7 +147,7 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
                             "excerpt": line[:200]})
         if YEN.search(line) and not TAX.search(line):
             signals.append({"code": "PRICE_TAX_UNCLEAR", "line": number,
-                            "message": "日圓價格沒有寫明含稅或未稅；確認研究記錄並在正文標明。",
+                            "message": "日圓價格沒有寫明含稅或未稅；官網有標示就在正文寫出，沒有標示就照官網的數字寫。",
                             "excerpt": line[:200]})
     if len(sources) == 1 and not source_links:
         fail("SOURCE_LINK_MISSING", source_start, "資料來源沒有外部連結。")
@@ -148,7 +162,8 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
         "metrics": {"h1Count": len(h1s), "headingCount": len(headings),
                     "h2Count": len(content_h2s), "h3Count": len(content_h3s),
                     "faqSectionCount": len(faq_headings),
-                    "inlineSourceLinks": inline_links, "sourceLinks": source_links},
+                    "inlineSourceLinks": inline_links, "sourceLinks": source_links,
+                    "furtherReadingLinks": further_links},
         "issues": issues,
         "reviewSignals": signals,
         "referenceReviewProvided": bool(reference_review),
@@ -163,9 +178,12 @@ def self_test() -> int:
     # A weak article and a legitimate referral both remain editorial decisions.
     weak = clear.replace("單程船票以官網公告為準。", "建議提早規劃，請自行安排交通。")
     necessary = clear.replace("單程船票以官網公告為準。", "單程船票 2,780 円，請注意安全。")
+    further_ok = clear.replace("## 資料來源", "## 延伸資料\n\n- [宗谷巴士時刻表](https://example.com/bus)：班次與票價。\n\n## 資料來源")
+    further_misplaced = further_ok.replace("## 資料來源", "## 其他\n\n內容。\n\n## 資料來源")
     report = {"passingCase": audit(clear), "headingFailingCase": audit(headings),
               "inlineLinkFailingCase": audit(linked), "semanticWeakCase": audit(weak),
-              "necessaryConditionCase": audit(necessary)}
+              "necessaryConditionCase": audit(necessary), "furtherReadingCase": audit(further_ok),
+              "furtherReadingMisplacedCase": audit(further_misplaced)}
     expected = {"H1_COLON", "HEADING_LEVEL_SKIP", "DUPLICATE_HEADING", "PACKAGED_HEADING"}
     ok = (report["passingCase"]["status"] == "mechanical_clear"
           and expected <= {i["code"] for i in report["headingFailingCase"]["issues"]}
@@ -173,7 +191,10 @@ def self_test() -> int:
           and report["semanticWeakCase"]["articleDecision"] == "not_evaluated"
           and report["necessaryConditionCase"]["status"] == "mechanical_clear"
           and any(i["code"] == "PRICE_TAX_UNCLEAR" for i in report["necessaryConditionCase"]["reviewSignals"])
-          and any(i["code"] == "VAGUE_ADVICE" for i in report["semanticWeakCase"]["reviewSignals"]))
+          and any(i["code"] == "VAGUE_ADVICE" for i in report["semanticWeakCase"]["reviewSignals"])
+          and report["furtherReadingCase"]["status"] == "mechanical_clear"
+          and report["furtherReadingCase"]["metrics"]["furtherReadingLinks"] == 1
+          and any(i["code"] == "FURTHER_READING_POSITION" for i in report["furtherReadingMisplacedCase"]["issues"]))
     print(json.dumps({"status": "passed" if ok else "failed", **report}, ensure_ascii=False, indent=2))
     return 0 if ok else 1
 

@@ -521,6 +521,339 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 
 - 把 `plan/wakkanai-rishiri-rebun` 合併到 `main`（Darren 同意後）。
 
+## 2026-10-18 Claude Code（地端）：觀光協會照片與嵌入規則（分支 `plan/image-sources`）
+
+### Darren 的決定
+
+- 觀光協會與自治體的照片，網站條款允許轉載的就直接用、寫好 credit，不寫信詢問。業界做法是直接拿；Claude Code 指出條款禁止、第三者提供、遊客轉貼照片三種情況仍不能用，Darren 接受用條款判斷。
+- Instagram 與 YouTube 公開貼文用嵌入，不下載。
+
+### 已完成
+
+- 選圖 Skill（`japan-travel-image-finder`）的來源順序、一律不用清單、搜尋步驟、`references/selection-and-licensing.md`（新增條款判斷與「嵌入」一節）、`references/image-packet.md` 同步；圖片封包驗證程式原本就支援 `official-material` 與條款欄位，不用改。
+- `AGENTS.md` 新增「觀光協會照片與嵌入」段落。
+
+### 尚未決定（等 Darren）
+
+- 稚內群 26 頁是否整批核准；體驗與文化切入點研究步驟與觀光協會景點清單比對；客觀狀況直接寫；文章嵌入影片；資料圖元件。
+- 網站的嵌入區塊與資料圖元件還沒做。
+
+### 唯一下一步
+
+- Darren 決定上面五項；同意後寫進規則並開始做稚內群正式大綱。
+
+## 2026-10-18 Claude Code（地端）：稚內群正式大綱（分支 `plan/wakkanai-outline`）
+
+### Darren 的決定
+
+- 26 頁核准；加景點比對與體驗研究；客觀狀況直接寫；可以嵌入影片；做資料圖元件。規則已寫進 Skill 與 `AGENTS.md`。
+
+### 已完成
+
+- 四個地點各派一個研究子代理：地點事實表（稚內 187、宗谷岬 97、利尻島 184、禮文島 280 筆，全部來自實際開啟的官方頁，附日文摘錄、變動類型與下次查核日）、官方景點清單比對、YouTube 與部落格的體驗與文化線索（查證後才用）、客觀狀況、住宿清單與訂房管道、媒體計畫、缺口。
+- 研究後併頁：禮文島天氣與祭典事實不足 15 筆，併進禮文島主頁（規格 `decision: merge`）；其餘 24 頁保留。
+- 正式大綱 `content-planning/hokkaido/hokkaido-wakkanai-outline.json`：24 頁、312 個標題（每個附事實編號與必答問題）、33 項分工、65 條內連與連結句、寫作順序、182 筆景點比對、72 條體驗線索、27 條客觀狀況、52 個媒體與資料圖候選、55 個缺口。`npm run planning:check` 通過。產生程式 `content-planning/hokkaido/build-outline.mjs`。
+- 渡輪規則改成：稚內群三地航線由 `/places/wakkanai/ferry/` 負責（隨 26 頁核准）。`wakkanai-transport` 必答問題改成「機場巴士只收現金或 PayPay」。發現清單新增 23 筆，利尻島鴛泊煙火日期更正為 8/4。
+
+### 研究發現（寫作要注意）
+
+- 利尻山沓形路線九合目以上封閉，實際只能走鴛泊路線。
+- 宗谷丘陵風車 2026 年 5～10 月左右拆除，平日單線交替管制；2027 年以後未公布。
+- 稚內的流冰近年幾乎看不到；JR 特急 2026-03-14 起全車指定席；宗谷巴士只收現金或 PayPay。
+- 北方金絲雀公園是電影《北のカナリアたち》外景地（官方查證）；台灣片名只有維基百科來源，不寫。
+
+### 尚未完成
+
+- 把稚內群寫進 `content-automation/article-queue.json`（批次、旅行群、關鍵字證據），以及 Sanity 北海道地區 Hub、`src/data/categories.ts` 的地點。
+- 網站的嵌入區塊與資料圖元件。
+- 本分支與 `plan/image-sources` 還沒合併到 `main`。
+
+### 唯一下一步
+
+- 把稚內群寫進文章清單並建好 Sanity 與分類的前置（之後第一篇才能開始寫）。
+
+## 2026-10-18 Claude Code（地端）：寫作調性研究（分支 `plan/wakkanai-outline`）
+
+### Darren 的要求
+
+- 研究競品旅遊網站的寫法，找出寫出好運日本行那種調性、但不寫成本站去過的方法，先試寫再自己比對。
+
+### 已完成
+
+- 看了好運日本行（GLTJP，地球の歩き方經營）、tsunagu Japan、JNTO、北海道觀光機構、Funliday 的口吻與結構。
+- 寫法草案「導覽編輯口吻」：`content-experiments/voice-study-2026-10-18/style-guide-draft.md`。
+- 兩輪盲測（評審子代理對照競品）：新口吻四段都贏過現行「旅行手札」，實用性也較高；修掉評審抓到的問題後定稿 `final-samples.md`。報告見同資料夾 `README.md`。
+
+### 尚未決定（等 Darren）
+
+- 要不要把「導覽編輯口吻」定成正式規則，取代 `voice-and-seo.md` 的「旅行手札」。
+
+### 唯一下一步
+
+- Darren 看 `content-experiments/voice-study-2026-10-18/final-samples.md` 決定口吻。
+
+## 2026-10-18 Claude Code（地端）：地點百科流程第一步（分支 `plan/wakkanai-outline`）
+
+### Darren 的決定
+
+- 地點百科先行的方向；Fable 子代理審查後修正（交通改成「節點＋最後一段」、缺口當事實、routine 窄權限等，見 `content-automation/encyclopedia-design-draft.md`）。
+- 正文不寫「官方沒寫」「未查」，查不到的不寫；推算的數字附時刻表；讀不到的來源改用瀏覽器讀（驗證碼不繞過）。
+
+### 已完成
+
+- 寫作規則與 `AGENTS.md`：查不到的不寫、讀不到改用瀏覽器；`check-voice.mjs` 擋「官方沒寫」等字。
+- 事實表格式：缺口 `kind: "gap"`、六種原因、推算事實 `derivedFrom`；大綱標題不能引用缺口。測試 146 項通過。
+- D1 0007（facts 加 kind、gap_kind、derived_from），已套用到線上；重查發現改變時推算事實一起標記，缺口查到資料寫例外。
+- 稚內群 748 筆事實、817 筆引用同步到 D1；75 天內到期 124 筆（11 月 114 筆）。同步改成分批送出（原本一次送會超過 Windows 指令長度）。
+
+### 尚未完成
+
+- 景點「交通節點＋最後一段」欄位、稚內群補資料（先用瀏覽器重讀讀不到的缺口）、routine 寫作前重查的窄權限。
+- routine 還沒建立，11 月到期的重查要等 routine 啟用或手動處理。
+
+### 唯一下一步
+
+- 加景點「交通節點＋最後一段」欄位與檢查，再派子代理補齊稚內群資料。
+
+## 2026-10-18 Claude Code（地端）：寫作規則整併（分支 `plan/wakkanai-outline`）
+
+### Darren 的要求
+
+- 規則太多怕寫不好；用 Fable 子代理優化。班次少時列時刻表、用白話說明選擇，不算精確分鐘。
+
+### 已完成（Fable 子代理整併，Claude Code 檢查後小修）
+
+- 新增 `writing-guide.md`（13 條原則、衝突順序、三步流程）與 `examples.md`（範例）；寫作時必讀從約 630 行降到 130 行。
+- 刪除 `voice-and-seo.md`（旅行手札口吻改成導覽編輯口吻），SEO 規則併進 `heading-style.md`；其他參考檔改成只在用到的步驟讀。
+- `check-voice.mjs` 搬進寫作 Skill，接進 `finalize-release.mjs`，口吻與標點不通過就不能定稿；新增 7 項測試，共 153 項通過。
+- 驗收規則同步：「查不到直接說」改成「只寫能做的事」；推算數字沒附時刻表要修改。
+
+### 尚未決定（等 Darren）
+
+- 口吻正式改成導覽編輯；延伸資料放在「資料來源」底下或獨立一節；基本資訊欄先用表格；每個景點一張照片和選圖 Skill「不按段落配額」的取捨。
+
+### 唯一下一步
+
+- Darren 確認上面四點後，用渡輪頁試寫一整篇。
+
+## 2026-10-18 Claude Code（地端）：寫作四個取捨定案（分支 `plan/wakkanai-outline`）
+
+### Darren 的決定（都照建議）
+
+- 口吻正式改成導覽編輯；延伸資料獨立成 `## 延伸資料`，緊接在資料來源之前；基本資訊欄用表格；照片只放重點景點。
+- 討論「訓練模型」：模型本身不會記住，改進靠 Skill、範例與檢查程式；之後把 Darren 認可的段落與修改前後對照累積進 `examples.md`，只留最好的 3 到 5 篇。
+
+### 已完成
+
+- `audit_answer_first.py` 允許 `## 延伸資料` 放官方連結（要緊接在資料來源之前），自我測試加兩個案例；大綱檢查把「延伸資料」列為固定標題。
+- 確認基本資訊欄的表格可以發布：轉換程式與網站都支援 `contentTable`。
+- 寫作指南、範例、標題規範、選圖 Skill 的 `image-needs.md` 同步；範例的時刻表拆成去程與回程兩張（原本一列把無關的去回班次放在一起，容易誤讀）。
+- `AGENTS.md` 記錄四個取捨與範文累積的做法。測試 153 項通過。
+
+### 唯一下一步
+
+- 用渡輪頁（`wakkanai-ferry`）照新規則試寫一整篇，給 Darren 看品質。
+
+## 2026-10-18 Claude Code（地端）：渡輪頁整篇試寫與驗收（分支 `plan/wakkanai-outline`）
+
+### Darren 的要求
+
+- 照新規則用渡輪頁試寫一整篇，寫完經過檢查與驗收再給他看。
+
+### 結果
+
+- `content-production/wakkanai-ferry/`：`ready_for_user_preview`。格式 mechanical_clear、標題與讀者價值 acceptable、事實 125 項 verified、口吻檢查通過。驗收紀錄見 `review.md`。
+- 經過 8 輪：作者成稿、6 個分段檢查（27 處修改）、標題檢查、事實查核 3 輪（第 1 輪抓到協調者給錯的機場巴士票價）、讀者驗收兩階段與最終判定。
+- 寫作前重查：渡輪官網全部來源頁重開，只有 F44 賣店時間改變，已同步 `content-planning/hokkaido/places/wakkanai/facts.json`。之前讀不到的樓層圖與停航天數圖改用瀏覽器與圖片讀到。
+- 流程修正：範例的事實編號改放在句號前（配合 `fact_tags.py`）；寫作 Skill 的延伸資料位置改成獨立一節。
+
+### 尚未完成
+
+- `fact_tags.py` 讓延伸資料段不要求編號；讀者驗收列的 5 個選擇性小修改等 Darren 看過再決定。
+- 還沒選圖、還沒上 Sanity。
+
+### 唯一下一步
+
+- Darren 看 `content-production/wakkanai-ferry/reader-preview.md`，決定品質是否合格與每天篇數。
+
+## 2026-10-18 Claude Code（地端）：潤稿 Skill 與去掉 AI 腔（分支 `plan/wakkanai-outline`）
+
+### Darren 的要求
+
+- 渡輪頁讀起來僵硬，另做潤稿 Skill；第2次潤稿後仍有「關鍵是」「最先要搞清楚的是兩件事」這類 AI 腔。要我自己微調、多方論證、自己試出結果；不要只用改 Skill 一種方式，用 Fable 評估別的做法；寫作不會用 Fable，正式流程用 Opus 5.5。
+
+### 結果
+
+- 研究記錄：`content-experiments/polish-test-2026-10-18/ai-tone-study.md`（真人語料量測、第2到第6輪、六種做法的並排比較、定案）。
+- 定案流程：Opus 5.5 照潤稿 Skill（第4版加修正）潤稿 → 編輯挑錯一輪再修（`agents/editor-review.md`）→ 意義比對 → 驗收。
+- 效果：兩位不同模型的評審並排比較，「像AI的程度」內容稿 55～60 → 潤稿 25～30 → 加編輯挑錯一輪 25～30（同一稿再降 15）；沒看過的利尻島交通頁 40～55 → 20～30。
+- 檢查程式：`check-voice.mjs` 擋 AI 腔句型（真人 9 篇 4.7 萬字只出現 6 次）；用字頻率只提醒不擋（第4輪證明門檻會讓潤稿者換字過關）；「預約」不算進「約」；「的話」上限 2.5→3.5。`check-polish.mjs` 改成整篇比對事實、列出各小節刪重複；日文只比連續假名。`fact_tags.py` 不檢查延伸資料段。測試 155 項通過。
+- 範例第0節拿掉「最需要先搞清楚的只有兩件事」「查一下就知道」；寫作指南第4、11條同步；保母等級檢查表加「日本時間、外國人姓名怎麼填、只能打日文電話時」。
+- 不採用：從事實表直接重寫、事實表先去日文化、每節先口說再寫（對 Opus 退步）、再加規則或用字門檻、Fable 寫稿。
+
+### 尚未完成
+
+- 意義比對抓到的內容稿問題要交事實查核：利尻島住宿接送前後矛盾、租自行車價目列了10月、渡輪頁網路選位是否只限部分1等艙、「15人以上團體」怎麼訂。
+- 大綱的內連句拿掉連結後讀不通（「整理在利尻島」），要改大綱的連結句寫法。
+- 渡輪頁正式稿還是 `content-production/wakkanai-ferry/` 的驗收版；新流程的成品在 `content-experiments/polish-test-2026-10-18/round-6g/`，要不要換上去、再跑一次驗收，等 Darren 看過。
+
+### 唯一下一步
+
+- Darren 看 `round-6g/reader-preview.md`，決定口吻是否合格。
+
+### 補充（同日稍晚）：起承轉合的架構感
+
+- Darren 看 G 版後說還是有起承轉合的架構感。兩位評審（Opus、Fable）對照 Funliday 的診斷一致：每段都是「主題句→規則→例外→建議收尾」的小論證、每節同一個模子，根源是大綱照資料類別（航線、票價、訂票、停航、渡輪站、船上）切 H2。
+- 試了兩種（Opus 5.5）：只改段落形狀（H）幾乎沒用；照旅客動線重排標題（I：挑船班→訂票→搭船當天→船上→票價→停航→渡輪站）兩位評審都判最好，架構感 75～78 → 45、自然度 3～3.5 → 4。意義比對 6 處已修。成品：`content-experiments/polish-test-2026-10-18/round-7i/reader-preview.md`。
+- `check-polish.mjs` 也保護研究記錄「待補內連」表的連結句（H、I、G 三版都刪改過這種句子），新增 `tests/check-polish.test.ts`。
+- 唯一下一步改成：Darren 決定稚內群的大綱要不要改成照旅客動線排（影響 24 頁的 H2／H3）。
+
+## 2026-10-18 Claude Code（地端）：稚內群大綱照旅客動線重排（分支 `plan/wakkanai-outline`）
+
+### Darren 的要求
+
+- 「照旅客動線重新整理稚內群大綱，先從交通頁開始。」
+
+### 結果
+
+- 交通頁 5 頁（渡輪、稚內、宗谷岬、利尻島、禮文島交通）重排標題與部分改名：渡輪頁照第7輪 I 版；禮文島交通拿掉「常見問題」H2，問題併進路線巴士那節。
+- 其他頁照頁型重排：主頁（值得去→幾月→排幾天→怎麼接別的地點）、住宿（先選區→各區→訂房，稚內宿泊稅移到訂房那節）、禮文島景點（從香深港往北）、利尻島景點、稚內祭典（月曆移到最前）、禮文島健行（季節與封閉先）。美食、天氣、利尻山登山原本就順，不動。
+- 每頁事實集合不變；`npm run planning:check` 與測試 158 項通過。規則寫進選題 Skill 第6節、標題規範與 `AGENTS.md`。
+
+### 尚未完成
+
+- 渡輪頁正式稿（`content-production/wakkanai-ferry/`）還是舊結構；新結構的稿是 `content-experiments/polish-test-2026-10-18/round-7i/`，要照新大綱跑一次完整驗收（事實查核、讀者驗收）才能換上去。
+- 意義比對抓到要交事實查核的內容稿問題（見上一段）。
+
+### 唯一下一步
+
+- 用新大綱與定案流程，把渡輪頁的 round-7i 版跑完整驗收，換成正式稿。
+
+## 2026-10-18 Claude Code（地端）：新結構渡輪頁完整驗收，換成正式稿（分支 `plan/wakkanai-outline`）
+
+### Darren 的要求
+
+- 「把新結構的渡輪頁跑完整驗收（事實查核、讀者驗收），通過就換成正式稿。」
+
+### 結果
+
+- `content-production/wakkanai-ferry/` 換成照旅客動線排的新版：**`ready_for_user_preview`**（SHA `7be9f8fe…7334`）。格式 mechanical_clear、標題與讀者價值 acceptable、事實 111 項 verified、口吻檢查通過。紀錄見 `review.md`。
+- 經過：標題檢查改 4 個標題 → 事實查核第 1 輪抓到沓形航線「一班」應為一個來回 → 讀者驗收兩階段必修 7 條 → 作者補研究（英文註冊畫面欄位 F245、狀況頁決定前顯示 F246、受託行李費 F247）並修改 → 事實查核第 2 輪抓到狀況頁沒有「発着港が変更」顯示，刪掉該列 → 第 3 輪 111 項全部 verified → 讀者最終判定可接受。
+- 大綱同步改了 4 個標題文字；譯名表加「觀景座」「休息室」。
+- 換行雜湊：`validate-fact-check.mjs` 與 `finalize-release.mjs` 改成把換行統一成 LF 再算 SHA-256，Windows 與雲端的雜湊對得上（之前的待辦）。
+- `finalize-release.mjs` 的各道檢查（正文、口吻、驗收紀錄雜湊、發布設定、事實查核、標題、格式）直接呼叫都通過；整支程式會停在「文章不在自動發布清單內」，因為稚內群還沒加進 `article-queue.json`。
+
+### 尚未完成
+
+- 稚內群加進 `article-queue.json`（要先決定每天篇數與發布時程）。
+- 選圖、上 Sanity。
+- 讀者驗收最終列的 6 條小加分；船上小賣部 2027 年營業期間公布時重查。
+
+### 唯一下一步
+
+- Darren 看新的 `content-production/wakkanai-ferry/reader-preview.md`，決定品質是否合格與每天篇數。
+
+## 2026-10-19 Claude Code（地端）：照好運日本行與 MATCHA 的寫法改寫（分支 `plan/wakkanai-outline`）
+
+### Darren 的意見
+
+- 新版渡輪頁「不帶車、先…什麼什麼、然後有些了、看這張表、都查得到，這些都好怪」；問能不能用好運日本行和抹茶訓練一個寫作的模型。
+
+### 結果
+
+- 微調做不到（Claude 不開放微調，別人的文章也不能存進 repo 當訓練資料）。改成潤稿前執行時讀他們的同類文章、照講法重寫：repo 只存網址（潤稿 Skill `references/style-sources.md`），新增 `check-copy.mjs` 擋照抄（連續 12 字以上），潤稿 Skill 加第 1-1 步。
+- 試驗（Opus 5.5 改寫正式稿，兩位評審匿名並排）：怪句 24～42 → 10～13、像好運日本行／MATCHA 42～45 → 70～74、自然度 2.5 → 4、像AI 60～65 → 30～35。意義比對 3 處已修。成品：`content-experiments/polish-test-2026-10-18/round-8j/reader-preview.md`，研究記錄第8輪。
+- 測試 160 項通過。
+
+### 尚未完成
+
+- J 版還沒跑完整驗收（事實查核、讀者驗收），所以還沒換成正式稿；正式稿仍是第6輪的版本。
+
+### 唯一下一步
+
+- Darren 看 J 版；同意的話，跑完整驗收後換成正式稿。
+
+## 2026-10-20 Claude Code（地端）：不寫成量產頁的規則與利尻島交通試寫（分支 `plan/wakkanai-outline`）
+
+- Darren 擔心 Google 抓太像 AI 的內容，同意照「不寫成量產頁」的方向寫：寫作指南第14條（輕重有別、結構跟著主題走、有事實撐的編輯判斷、本站獨有的資料放前面；不放錯字、不假裝去過），AGENTS.md 記錄。
+- 用新大綱與新規則試寫利尻島交通：作者成稿 → 潤稿（先讀好運日本行 3 篇、MATCHA 2 篇）→ 編輯挑錯一輪 → 意義比對 4 處修正。五項檢查都過。成品：`content-experiments/polish-test-2026-10-18/trial-rishiri-transport/reader-preview.md`。還沒跑事實查核與讀者驗收。
+- 唯一下一步：Darren 看這篇試寫，覺得方向對再跑完整驗收。
+
+## 2026-10-20 Claude Code（地端）：利尻島交通完整驗收（分支 `plan/wakkanai-outline`）
+
+- `content-production/rishiri-island-transport/`：**`ready_for_user_preview`**（SHA `0c03b9e2…29cb8`）。格式 mechanical_clear、標題與讀者價值 acceptable、事實全部 verified（4 輪）、口吻檢查通過、圖片封包驗證通過。紀錄見 `review.md`，預覽 `preview.html`。
+- 經過：標題檢查改 9 個 → 事實查核第 1 輪 5 項未過 → 讀者驗收必修 12 條（住鴛泊怎麼去機場、環島巴士時刻表、早船接觀光巴士、付款方式等）→ 作者補研究 F185～F200 並修改 → 第 2 輪 2 項 unsupported 由協調者刪改 → 讀者最終判定可接受 → 第 3、4 輪全部 verified。
+- 地點事實表更正 F23、F33、F37，大綱同步 9 個標題文字。
+
+### 尚未完成
+
+- F23、F33、F37 同步到 D1；自行車上巴士費用下次打電話確認（只有 2022 年 PDF）。
+- 渡輪頁與利尻島交通都還沒加進 `article-queue.json`、還沒上 Sanity；網站的影片嵌入與資料圖元件還沒做。
+
+### 唯一下一步
+
+- Darren 看兩篇驗收通過的文章（渡輪、利尻島交通），決定品質是否合格與每天篇數。
+
+## 2026-10-20 Claude Code（地端）：稚內群排進發布清單（分支 `plan/wakkanai-outline`）
+
+- Darren：「品質可以，把稚內群排進發布清單，每天幾篇我再決定。」
+- `content-automation/article-queue.json`：稚內 8、宗谷岬 2、利尻島 8、禮文島 6，共 24 頁，四個地點各一個批次（Hub），旅行群 `hokkaido-wakkanai` 依大綱的寫作順序生產（渡輪頁第一、利尻島交通第 17）。欄位由 `content-planning/hokkaido/build-queue.mjs` 從 page-specs、candidates、大綱與地點研究產生，`npm run queue:validate` 通過。
+- 住宿頁與地點主頁的訂房管道依地點研究的住宿清單（官網、Trip.com、Agoda）；宗谷岬沒有住宿，依稚內清單並註明。
+- 每日上限 1、開始日 2026-10-21 是暫存值；routine 還沒啟用，不會自動發布。
+- `article-automation-policy.mjs` 把規劃狀態「approved」視為規劃完成（稚內群 page-specs 是 approved）。
+- 已驗收的兩篇（渡輪、利尻島交通）在清單裡跑定稿程式都到 `release-packet-ready`；渡輪頁還沒選圖、沒有封面。產生的定稿檔已刪除，正式發布時由 routine 重產。
+- 測試 160 項通過。
+
+### 尚未完成
+
+- 每天篇數由 Darren 決定後改 `publicationCadence`，再決定是否啟用 routine。
+- 渡輪頁選圖（封面與重點照片）；Sanity 的北海道各地點 Hub 尚未建立；網站的影片嵌入與資料圖元件還沒做。
+- 利尻島事實表 F23、F33、F37 的更正同步到 D1。
+
+### 唯一下一步
+
+- Darren 決定每天發幾篇。
+
+## 2026-10-20 Claude Code（地端）：稚內交通完整流程與一篇的用量（分支 `plan/wakkanai-outline`）
+
+- Darren：「先寫一篇，然後看一下 token 大概會用到一個 session 的多少，然後我再來評估一天要寫幾篇。」
+- 照寫作順序寫第二篇稚內交通（`content-production/wakkanai-transport/`）：作者 → 潤稿（參考好運日本行 4 篇、MATCHA 2 篇）→ 編輯挑錯 36 句 → 意義比對 → 標題檢查（改 2 個）→ 事實查核 3 輪（83 項，第 1 輪 4 錯、第 2 輪 1 錯，最後全部 verified）→ 讀者驗收兩階段（必修 8 條）與最終判定 acceptable。結果 `ready_for_user_preview`，定稿檢查（預覽、口吻、驗收紀錄、發布欄位、事實查核）都通過；沒有選圖、不發布。
+- 事實查核抓到的錯：えきねっと住海外不能用（改寫成 JR-EAST Train Reservation）、高速巴士可網路刷卡、5小時50分是到大通巴士中心、發車地點不是上車地點、JR-EAST Train Reservation 是 JR 東日本經營。
+- 大綱同步 2 個標題；譯名表加稚内駅前バスターミナル、大通バスセンター。
+- **用量**（Max 方案）：5 小時額度 24% → 40%（一篇約 16 個百分點），每週額度 9% → 11%（約 2 個百分點，整數顯示有誤差）；子代理合計約 130 萬 token（作者 29 萬、潤稿 24 萬、編輯 9.5 萬、意義比對 11 萬、標題 8 萬、事實查核 29 萬、讀者驗收 19 萬），不含主 session 協調與選圖（利尻島交通的選圖約 23 萬）。實際約 70 分鐘。
+
+### 尚未完成
+
+- 冬季（10/25 起）機場巴士時刻讀不出來，下次重查；研究記錄更正的 F61、F64、F68、F79 與新增 F188～F197 要同步回地點事實表與 D1。
+- 每天篇數由 Darren 決定後改 `publicationCadence`。
+
+### 唯一下一步
+
+- Darren 依一篇的用量決定每天寫幾篇。
+
+## 2026-10-20 Claude Code（地端）：每天 3 篇（先不執行）
+
+- Darren：「每一天三篇文章好了，但是先不要開始執行，先不考慮上傳的部分……等我說好的時候再開始執行。然後不要用 schedule 去做，看一下有沒有別的做法。」
+- `content-planning/hokkaido/build-queue.mjs` 的每日上限改成 3，重新產生 `article-queue.json`（四個批次 `maxArticlesPerDay: 3`；清單總上限 8 不變，取較小值是 3）。`npm run queue:validate` 通過，測試 160 項通過。
+- 沒有開始寫，也沒有建立或啟用任何 routine、排程。
+- 不用排程的做法整理給 Darren 選：在桌面 app 說一句話就連寫三篇（流程存成固定的工作流程腳本）、雲端 routine 不設排程改成手動按執行、GitHub Actions 按鈕（要另外的 API 費用，不建議）。
+
+### 唯一下一步
+
+- Darren 選觸發方式並說「好」之後才開始寫（下三篇照寫作順序：宗谷岬交通、稚內住宿、稚內天氣）。
+
+## 2026-10-20 Claude Code（地端）：本機自動寫作設定好，暫停中
+
+- Darren：「不能本地自動嗎」「跟好材誌一樣吧，錯開時間就好」。好材誌是雲端 routine，cron `12 */8 * * *`（台北 00:12、08:12、16:12），一輪一篇。
+- 建立桌面 app 排定工作 `japan-travel-daily-writer`：每天台北 04:42、12:42、20:42，一輪一篇；儲存為 Auto 模式；**已暫停**，Darren 說好才啟用。
+- 流程文件 `content-automation/local-writer.md`（照稚內交通的人工流程：作者 → 潤稿 → 編輯挑錯 → 意義比對 → 標題、事實查核、讀者驗收 → 作者修改 → 複查 → 驗收紀錄 → `scripts/local-article-gates.mjs`）；執行紀錄 `content-automation/local-run-log.md`；意義比對提示存進 `.agents/skills/japan-travel-polish/agents/meaning-drift.md`。
+- 安全設計：專用 worktree `japan-travel-auto`（分支 `auto/wakkanai-writing`）、執行鎖 `.auto-writer.lock`、5 小時額度 70% 以上或每週 80% 以上就略過、每天最多 3 篇、事實查核 4 輪不過就停放換下一篇。
+- 不上傳、不選圖、不改地點事實表（研究更正只記在文章封包，執行紀錄寫待同步）。
+
+### 唯一下一步
+
+- Darren 說好後：先手動跑一輪（宗谷岬交通）確認沒問題，再啟用每天自動跑。
+
 ## 2026-10-20 Claude Code：正式網域 offpathnotes.com
 
 ### 已完成

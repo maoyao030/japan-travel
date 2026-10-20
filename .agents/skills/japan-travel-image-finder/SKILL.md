@@ -1,6 +1,6 @@
 ---
 name: japan-travel-image-finder
-description: Find and select commercially usable images for an approved Japan travel article — Wikimedia Commons and free stock libraries first, then tourism-association photo materials with confirmed terms, own photos, and only when no real photo qualifies a clearly labelled AI illustration. Excludes non-commercial and no-derivatives licenses because the site earns affiliate income, never uses hotel, shop, Instagram, map or OG images, and records license evidence in an image packet. Use for cover images, inline images, or image replacement. Do not upload to Sanity or publish.
+description: Find and select commercially usable images for an approved Japan travel article — Wikimedia Commons and free stock libraries first, then tourism-association and municipal photos whose site terms allow reuse with credit, own photos, and only when no real photo qualifies a clearly labelled AI illustration. Excludes non-commercial and no-derivatives licenses because the site earns affiliate income, never downloads hotel, shop, Instagram, map or OG images (official Instagram and YouTube posts may only be embedded), and records license evidence in an image packet. Use for cover images, inline images, or image replacement. Do not upload to Sanity or publish.
 ---
 
 # 日本旅遊長尾站選圖
@@ -28,7 +28,7 @@ description: Find and select commercially usable images for an approved Japan tr
 |---|---|---|
 | 1 | 維基共享資源 Wikimedia Commons | 小地方、地標、料理、祭典、交通工具 |
 | 2 | Unsplash、Pexels、Pixabay | 封面、大地方、季節氛圍 |
-| 3 | 觀光協會或自治體公開的照片素材 | 小地方、祭典；條件逐一確認 |
+| 3 | 觀光協會或自治體的照片（素材庫，或網站條款允許轉載的照片） | 小地方、祭典；條款逐一確認，照規定寫 credit |
 | 4 | Darren 或作者自己拍的照片 | 目前不預期有；未來有實拍時才用 |
 | 5 | 自製示意圖 | 路線與時間；由程式依資料畫成 SVG |
 | 6 | AI 示意圖 | 前面都沒有合格照片時，必須標示，且不能用在現場辨識 |
@@ -39,7 +39,7 @@ description: Find and select commercially usable images for an approved Japan tr
 
 - 旅館、店家官網的照片（除非取得書面授權並保存）
 - 店家卡片放店家照片：交接文件規定店家卡片不放照片
-- Instagram、Facebook、部落格的照片
+- 下載 Instagram、Facebook、部落格的照片（觀光協會等官方帳號的公開貼文可以用平台的嵌入功能放進文章，見 [來源與授權](references/selection-and-licensing.md)「嵌入」）
 - Google 地圖、Tabelog、Jalan 上的照片
 - 對方網頁的分享預覽圖（OG 圖）
 - 授權含「非商業使用」（NC）或「禁止改作」（ND）的照片；裁切封面就算改作
@@ -55,7 +55,7 @@ description: Find and select commercially usable images for an approved Japan tr
 1. 用日文與英文描述畫面搜尋，例如「礼文島 桃岩」「Rebun Island Momoiwa」。維基共享資源可用日文地名的分類頁找。
 2. 只接受官方單張素材頁：維基共享資源的 `File:` 頁、圖庫的單張照片頁、觀光協會素材庫的單張頁。搜尋縮圖、轉貼網站與直接圖片網址不能當證據。
 3. 打開大圖看完整構圖；核對作者、授權條款、拍攝地點與說明。維基共享資源要看檔案頁下方的授權區塊，不只看縮圖旁的文字。
-4. 觀光協會素材要打開利用規約，確認允許商業網站使用、允許裁切、署名方式、是否需要申請。需要申請的，申請核准前不能使用。
+4. 觀光協會或自治體的照片要打開網站的利用規約（素材庫的規約，或網站的「著作權」「サイトポリシー」頁），確認允許商業網站使用、允許裁切、署名方式、是否需要申請。需要申請的，申請核准前不能使用。照片旁標示由第三者提供（例如「写真提供：○○」）的，不在網站條款的授權範圍內，不用。
 5. 排除 AI 生成、3D render、浮水印、可辨識人物肖像、醒目商標與看不出地點的照片。
 6. 每個位置以 2～3 張強候選為目標；只有一張合格就保留一張並說明。
 

@@ -368,6 +368,40 @@ test('事實同步與重查：依來源網址分組列出到期事實，官方�
   await assert.rejects(recordCheck({execute: db.execute, factId: 'rebun-island:F1', result: 'unchanged'}), /下次查核日/)
 })
 
+test('缺口也登記重查；來源事實改變時推算的事實一起標記；缺口查到資料時寫例外', async (t) => {
+  const db = await openTestDatabase()
+  if (!db) return t.skip('這個 Node 版本沒有 node:sqlite')
+  const {syncFacts, listDueFacts, recordCheck} = await import('../scripts/ops-facts.mjs')
+  const table = {
+    schemaVersion: 1,
+    placeId: 'cape-soya',
+    facts: [
+      {factId: 'F72', claim: '到達時間', quote: 'q', sourceUrl: 'https://example.invalid/bus', checkedAt: '2026-10-18', changeType: 'timetable', nextCheckAt: '2027-03-31'},
+      {factId: 'F75', claim: '三種排法', quote: 'q', sourceUrl: 'https://example.invalid/bus', checkedAt: '2026-10-18', changeType: 'timetable', nextCheckAt: '2027-03-31', derivedFrom: ['F72']},
+      {factId: 'F98', kind: 'gap', gapKind: 'not-announced', claim: '2027 年元旦接駁巴士', checkedAt: '2026-10-18', nextCheckAt: '2026-12-01'},
+      {factId: 'F99', kind: 'gap', gapKind: 'no-source', claim: '計程車車資', checkedAt: '2026-10-18'},
+    ],
+  }
+  await syncFacts({execute: db.execute, factTables: [{table, evidencePath: 'x'}], outlines: []})
+  const due = await listDueFacts({execute: db.execute, today: '2026-12-01'})
+  assert.deepEqual(due.flatMap((group: any) => group.facts.map((fact: any) => [fact.fact_id, fact.kind, fact.gap_kind])), [['cape-soya:F98', 'gap', 'not-announced']])
+
+  await recordCheck({execute: db.execute, factId: 'cape-soya:F72', result: 'changed', nextCheckAt: '2027-10-01', note: '改點'})
+  const [[derived]] = await db.execute(["SELECT status FROM facts WHERE fact_id = 'cape-soya:F75'"])
+  assert.equal(derived.status, 'changed')
+
+  await recordCheck({execute: db.execute, factId: 'cape-soya:F98', result: 'found', nextCheckAt: '2027-12-01', note: '2027 年接駁巴士公布'})
+  const [exceptions] = await db.execute(["SELECT kind, action_needed FROM exceptions WHERE subject = 'cape-soya:F98'"])
+  assert.equal(exceptions[0].kind, 'other')
+  assert.match(exceptions[0].action_needed, /補進地點事實表/)
+
+  // 缺口補成一般事實後重新同步，狀態回到 ok
+  table.facts[2] = {factId: 'F98', claim: '2027 年元旦接駁巴士 6:00 出發', quote: 'q', sourceUrl: 'https://example.invalid/new', checkedAt: '2026-12-02', changeType: 'annual-event', nextCheckAt: '2027-12-01'}
+  await syncFacts({execute: db.execute, factTables: [{table, evidencePath: 'x'}], outlines: []})
+  const [[filled]] = await db.execute(["SELECT kind, status FROM facts WHERE fact_id = 'cape-soya:F98'"])
+  assert.deepEqual({...filled}, {kind: 'fact', status: 'ok'})
+})
+
 test('上稿或 CI 失敗不停放、下一輪續做，連續 3 次才停放；略過的待補內連不再列出', async (t) => {
   const db = await openTestDatabase()
   if (!db) return t.skip('這個 Node 版本沒有 node:sqlite')

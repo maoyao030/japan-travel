@@ -17,10 +17,21 @@ export const CHANGE_TYPES = [
   'climate-normal',
   'stable',
 ]
+// 缺口的原因（2026-10-18）：缺口只記在事實表給重查用，不寫進正文。
+export const GAP_KINDS = [
+  'no-source', // 沒有官方或經營者網站
+  'not-stated', // 有來源，但沒寫這一項
+  'not-announced', // 還沒公布（例如明年的日期與班表）
+  'unreadable', // 來源存在但這次讀不到（PDF 是圖片、要執行 JavaScript、擋讀取工具）
+  'conflicting', // 官方說法不一致
+  'not-researched', // 這次沒查到這一格
+]
+// 這幾種有明確的重查時機，一定要填下次查核日
+export const GAP_KINDS_WITH_RECHECK = ['not-announced', 'unreadable', 'conflicting']
 export const OUTLINE_PAGE_TYPES = ['place-entry', 'aspect-page', 'cross-place-page', 'topic-page', 'shared-guide']
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
-const NON_TOPIC_HEADINGS = new Set(['常見問題', '資料來源'])
+const NON_TOPIC_HEADINGS = new Set(['常見問題', '延伸資料', '資料來源'])
 
 const hasText = (value) => typeof value === 'string' && value.trim().length > 0
 const isUrl = (value) => /^https?:\/\//.test(value ?? '')
@@ -122,6 +133,23 @@ export function validateFactTable(document) {
     if (ids.has(fact?.factId)) issues.push(`${label}.factId 重複：${fact?.factId}（編號一經使用不改號）`)
     ids.add(fact?.factId)
     if (fact?.decision === 'removed') continue
+    for (const ref of fact?.derivedFrom ?? []) {
+      const local = /^F\d+$/.test(ref)
+      if (!local && !/^[a-z0-9-]+:F\d+$/.test(ref)) issues.push(`${label}.derivedFrom 的 ${ref} 格式要是 F12 或 地點:F12`)
+      else if (local && !facts.some((other) => other?.factId === ref)) issues.push(`${label}.derivedFrom 指向不存在的 ${ref}`)
+    }
+    if (fact?.kind === 'gap') {
+      if (!hasText(fact?.claim)) issues.push(`${label} 缺口要在 claim 寫缺的是什麼`)
+      if (!GAP_KINDS.includes(fact?.gapKind)) issues.push(`${label}.gapKind 必須是 ${GAP_KINDS.join('、')} 之一`)
+      if (!ISO_DATE.test(fact?.checkedAt ?? '')) issues.push(`${label}.checkedAt 必須是 YYYY-MM-DD`)
+      if (fact?.sourceUrl && !isUrl(fact.sourceUrl)) issues.push(`${label}.sourceUrl 必須是網址`)
+      if (GAP_KINDS_WITH_RECHECK.includes(fact?.gapKind)) {
+        if (!ISO_DATE.test(fact?.nextCheckAt ?? '')) issues.push(`${label} 這種缺口要填下次查核日 nextCheckAt`)
+        else if (fact.nextCheckAt <= fact.checkedAt) issues.push(`${label}.nextCheckAt 必須晚於 checkedAt`)
+      }
+      continue
+    }
+    if (fact?.kind && fact.kind !== 'fact') issues.push(`${label}.kind 只能是 fact 或 gap`)
     if (!hasText(fact?.claim) || !hasText(fact?.quote)) issues.push(`${label} 必須有主張 claim 與原文摘錄 quote`)
     if (!isUrl(fact?.sourceUrl)) issues.push(`${label}.sourceUrl 必須是網址`)
     if (!ISO_DATE.test(fact?.checkedAt ?? '')) issues.push(`${label}.checkedAt 必須是 YYYY-MM-DD`)
@@ -139,6 +167,10 @@ export function validateFactTable(document) {
 
 export function factIdsOf(document) {
   return new Set((document?.facts ?? []).filter((fact) => fact?.decision !== 'removed').map((fact) => fact.factId))
+}
+
+export function gapIdsOf(document) {
+  return new Set((document?.facts ?? []).filter((fact) => fact?.kind === 'gap' && fact?.decision !== 'removed').map((fact) => fact.factId))
 }
 
 // ---------------------------------------------------------------------------
@@ -194,6 +226,7 @@ export function validateOutline(outline, {places = {places: []}, ownership = {ow
         const table = factTables[factPlace]
         if (!table) issues.push(`${headingLabel} 引用的 ${factRef} 找不到地點事實表`)
         else if (!factIdsOf(table).has(factId)) issues.push(`${headingLabel} 引用的 ${factRef} 不在事實表`)
+        else if (gapIdsOf(table).has(factId)) issues.push(`${headingLabel} 引用的 ${factRef} 是缺口；查不到的不寫進正文`)
       }
       for (const answerIndex of heading?.answers ?? []) answered.add(answerIndex)
     }

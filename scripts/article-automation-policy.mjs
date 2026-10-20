@@ -754,7 +754,8 @@ export function validateArticleQueue(queue) {
 // ---------------------------------------------------------------------------
 
 function isPlanningCompleteStatus(status) {
-  return typeof status === 'string' && (status === 'planning-complete' || status.endsWith('-complete'))
+  // 「approved」是 Darren 核准後的狀態（例如稚內群 page-specs.json），比規劃完成更進一步
+  return typeof status === 'string' && (status === 'planning-complete' || status === 'approved' || status.endsWith('-complete'))
 }
 
 function normalizePlanningSpec(spec) {

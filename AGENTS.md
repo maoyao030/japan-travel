@@ -120,3 +120,59 @@
 
 - 雲端 routine 依 `japan-travel-auto-publisher` 執行時，本檔「每個任務在自己的分支做」「`.agents/working/claude-code.md` 工作檔」「每次最終回覆格式」三條不適用：routine 直接在 `main` 提交 Skill 允許的路徑，不寫工作檔，用 Skill 的「結束回報」。
 - 人工 session 仍照原本的規則。
+
+## 觀光協會照片與嵌入（Darren 2026-10-18 決定）
+
+- 觀光協會與自治體的照片，網站條款允許轉載的（素材庫，或網站採用「政府標準利用規約」、CC BY 等），直接下載使用、照規定寫好 credit，不用另外寫信詢問；條款頁網址記進圖片封包當證據。
+- 不用：條款禁止轉載或沒寫轉載條件的、標示第三者提供或攝影的、觀光協會 Instagram 轉貼的遊客照片。
+- Instagram 與 YouTube 的公開貼文只用平台的嵌入功能，不下載；官方帳號優先。網站的嵌入區塊還沒做。
+- 細節見 `japan-travel-image-finder` 的 `references/selection-and-licensing.md`。本段取代上方「本站固定原則」圖片一條中與此衝突的部分。
+
+## 稚內群核准與研究、寫作規則（Darren 2026-10-18 決定）
+
+- **稚內群 26 頁整批核准**（`content-planning/hokkaido/page-specs.json`）。資料太少的主題仍照短頁規則併進主頁。
+- **景點比對與體驗研究**：地點研究多做兩件事，用官方景點清單比對、從 YouTube、部落格與競品行程頁找體驗與文化切入點，查證後才寫，見選題 Skill `references/experience-research.md`。
+- **客觀狀況直接寫**：風大、坡陡、人多、班次少等，有官方資料或三個獨立來源一致就直接寫結論與建議；對店家、旅館的評價維持「評論常提到」。見寫作 Skill `references/reviews-and-popularity.md`。
+- **嵌入影片與官方 Instagram 貼文**、**資料圖元件**（季節日曆、天氣圖表、路線圖、行程時間軸、基本資訊欄）：規則見寫作 Skill `references/embeds-and-data-blocks.md`；網站元件還沒做，做好前只列候選。
+
+## 查不到的不寫、讀不到改用瀏覽器（Darren 2026-10-18 決定）
+
+- 正文不寫「官方沒寫」「官方沒有公布」「未查」，也不向讀者交代哪些沒查到；查不到的就不寫。讀者真的會卡住的事，改寫成能做的事（例如出發前到觀光案內所確認）。
+- 推算出來的數字（例如在岬上能待幾分鐘），附上推算依據的時刻表，讓讀者自己看得到；不另外說明推算方法。
+- 缺口與「未查」只記在研究紀錄與事實表，給重查用，不出現在正文。
+- 網頁讀取工具讀不到（PDF 是圖片、要執行 JavaScript、擋讀取工具）時，在規劃 session 用瀏覽器實際打開讀取；遇到驗證碼或機器人檢查不繞過。細節見寫作 Skill `references/japanese-sources.md`。
+
+## 寫作規則整併（2026-10-18）
+
+- 寫作規則整併成寫作 Skill 的 `references/writing-guide.md`（約一頁、13 條原則、衝突時的優先順序、三步流程）與 `references/examples.md`（口吻範例與完整版型範例）。寫文章時只讀這兩份；其他參考檔只在用到的步驟讀，分工寫在 `SKILL.md` 的任務與責任。
+- 口吻改成導覽編輯口吻（研究見 `content-experiments/voice-study-2026-10-18/`），取代 2026-10-16 的旅行手札。標點與句長由 `.agents/skills/japan-travel-answer-first/scripts/check-voice.mjs` 自動檢查，`scripts/finalize-release.mjs` 定稿時一起跑，沒通過不發布。
+- 以下各段的寫作細節現在以 `writing-guide.md` 為準，本檔只保留決定：「文章語氣與結構」的制式摘要與開頭直接回答；「旅行群流程、來源分級與評論統整」的評論統整寫法；「稚內群核准與研究、寫作規則」的客觀狀況直接寫；「查不到的不寫、讀不到改用瀏覽器」的正文寫法與推算附時刻表。新增的寫法：班次少（一天 4 班以下）就列時刻表、用白話說選擇，不算出能待幾分鐘；每個景點配一張認得出現場的照片與基本資訊欄；每頁結尾在 `## 資料來源` 底下列 `### 延伸資料`，只列官方頁；地點主頁多一節依旅客類型的排法。
+- `references/voice-and-seo.md` 刪除，SEO 規範併入 `references/heading-style.md`。`nanny-level.md`、`page-types.md`、`research-record.md`、`embeds-and-data-blocks.md`、`japanese-sources.md`、`reviews-and-popularity.md` 保留為各步驟的參考檔。
+
+## 寫作的四個取捨與範文累積（Darren 2026-10-18 決定）
+
+- 口吻正式改成導覽編輯口吻（寫作 Skill `references/writing-guide.md`），旅行手札不再使用。
+- 延伸資料獨立成 `## 延伸資料` 一節，緊接在 `## 資料來源` 之前，可以放官方連結；格式檢查器已配合。
+- 基本資訊欄先用 Markdown 表格寫，網站已支援表格（Sanity `contentTable`）。
+- 照片只放重點景點（有自己 H3、讀者要到現場認得出來），不是每段配圖。
+- 範文累積：Darren 看過並認可的段落放進寫作 Skill 的 `examples.md`，Darren 改過的地方記成修改前後對照；範例只留最好的 3 到 5 篇。模型本身不會記住，進步靠這些檔案。
+
+## 標題照旅客動線排（Darren 2026-10-18 決定）
+
+- 渡輪頁並排比較後，Darren 同意整群大綱改成照旅客動線排：H2 跟著讀者實際要做的事走（先決定、再訂票、搭乘當天、現場、費用、出狀況），不照資料類別切；H3 用讀者的動作或問題命名；不設「常見問題」H2。
+- 原因：照類別切每節都得自成一體，段落會寫成「主題句→規則→例外→建議」的小論證，讀起來有起承轉合的架構感。
+- 稚內群 24 頁的大綱已重排（`content-planning/hokkaido/hokkaido-wakkanai-outline.json`，重排過的頁標 `headingOrder: traveler-journey`）。各頁型的順序寫在選題 Skill `references/selection-workflow.md` 第6節與寫作 Skill `references/heading-style.md`。
+- 潤稿流程定案：Opus 5.5 照潤稿 Skill 潤稿 → 編輯挑錯一輪再修 → 意義比對 → 驗收。寫作與潤稿不用 Fable，Fable 只用在評審與策略。研究見 `content-experiments/polish-test-2026-10-18/ai-tone-study.md`。
+
+## 不寫成量產頁、口吻照好運日本行與 MATCHA（Darren 2026-10-19 決定）
+
+- Darren 擔心 Google 抓出太像 AI 的內容。Google 看的是對讀者有沒有用，處罰大量產出、內容空洞、每頁長一樣的頁面（scaled content abuse），不是 AI 偵測。所以寫作照寫作 Skill `writing-guide.md` 第14條：輕重有別、結構跟著主題走、有事實撐的編輯判斷、本站獨有的資料放前面；不故意放錯字、不假裝去過。
+- 口吻目標是好運日本行（GLTJP）與 MATCHA。潤稿前依段落功能讀他們的同類文章、照講法重寫（潤稿 Skill 第 1-1 步）；repo 只存網址，`check-copy.mjs` 擋照抄。真正訓練（微調）模型做不到。
+- 評審的「自然度」「怪句」分數有偏（會把真的好運日本行判成最怪），只當參考；最後由 Darren 看。
+
+## 本機自動寫作（Darren 2026-10-20 決定）
+
+- 每天 3 篇，跟好材誌一樣每 8 小時一輪、一輪一篇，時間錯開：台北 04:42、12:42、20:42（好材誌雲端 routine 是 00:12、08:12、16:12）。
+- 用 Claude 桌面 app 的排定工作 `japan-travel-daily-writer` 在本機跑，不用雲端 routine；**先不上傳**（不碰 Sanity、D1、規劃總表，不選圖）。排定工作建好後是暫停狀態，Darren 說好才啟用；啟用與暫停只由 Darren 決定。
+- 每輪流程在 `content-automation/local-writer.md`，執行紀錄在 `content-automation/local-run-log.md`。工作資料夾是 git worktree `C:\Users\ak472\Documents\GitHub\japan-travel-auto`（分支 `auto/wakkanai-writing`），不動主資料夾；人工 session 不要在那個資料夾改檔案。
+- 自動產出的文章封包一律當成另一個執行者的成果：不回退、不重做；要合併回 `main` 時照 Git 規則先跑測試。

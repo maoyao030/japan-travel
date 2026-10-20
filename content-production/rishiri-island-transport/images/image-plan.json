@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-transport",
+  "articleTitle": "利尻島交通，稚內到利尻島、環島巴士與觀光巴士",
+  "targetUrl": "/places/rishiri-island/transport/",
+  "articleSource": "provisional-draft",
+  "articleSourceCheckedAt": "2026-10-20",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "試寫草稿的暫定選圖，只記錄單張頁與授權，沒有下載原圖、沒有上傳。影片嵌入候選不寫進候選欄位，列在 images/media-candidates.md。",
+  "selectedCandidateIds": {
+    "oshidomari-terminal": "terminal-01",
+    "rishiri-airport": "airport-01",
+    "cycling-road": "cycling-01"
+  },
+  "selectedAt": "2026-10-20",
+  "slots": [
+    {
+      "slotId": "oshidomari-terminal",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "抵達鴛泊港與沓形港",
+      "purpose": "讓從稚內搭船來的讀者下船後認得出鴛泊港渡輪站「海の駅おしどまり」，環島巴士也從這裡發車。",
+      "mustShow": ["鴛泊港渡輪站（海の駅おしどまり）的建築外觀", "看得到「海の駅 おしどまり」字樣或能確認是這棟建築"],
+      "mustNotShow": ["沓形港或稚內港的渡輪站冒充鴛泊", "可辨識的人物臉部", "已改建前的舊建築"],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "selectionNotes": "terminal-01 是陸側正面，牆上「海の駅 おしどまり」大字清楚，讀者走出站或從巴士乘車處回頭就是這個畫面；2019 年拍攝，建築至今沒有改建。terminal-02 解析度最高但是從海上拍的，下船的人看不到這個角度，列為備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-20",
+        "photoSearchNotes": "查過維基共享資源 Category:Oshidomari Ferry Terminal、Category:Oshidomari Port 與關鍵字「鴛泊 フェリーターミナル」「海の駅おしどまり」；Unsplash、Pexels、Pixabay 搜尋 rishiri 沒有渡輪站照片。利尻富士町官網與りしぷら沒有寫轉載條件，不用。"
+      },
+      "candidates": [
+        {
+          "candidateId": "terminal-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E9%B4%9B%E6%B3%8A%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E6%AD%A3%E9%9D%A2%E3%82%A8%E3%83%B3%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E5%81%B4.jpg",
+          "creatorName": "Senkaku Islands",
+          "sourceTitle": "File:鴛泊フェリーターミナル正面エントランス側.jpg",
+          "sourceDescription": "鴛泊フェリーターミナル正面エントランス側",
+          "takenAt": "2019-12-14",
+          "width": 1400,
+          "height": 1050,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-20",
+          "matchType": "exact",
+          "whyItFits": "檔案名與分類 Category:Oshidomari Ferry Terminal 都標明是鴛泊渡輪站正面入口側；畫面是陸側白色建築，牆面上方有「海の駅 おしどまり」大字，入口前是人行道與車道。",
+          "altDraft": "鴛泊港渡輪站陸側的正面，白色建築牆上寫著「海の駅 おしどまり」",
+          "captionDraft": "鴛泊港渡輪站「海の駅おしどまり」的陸側入口（2019 年）。",
+          "creditDraft": "照片：Senkaku Islands／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "入口附近遠處可能有一個很小的人影，無法辨識",
+            "logos": "設施名稱招牌「海の駅 おしどまり」，屬公共設施名稱",
+            "artwork": "none",
+            "property": "公共渡輪站建築外觀",
+            "risk": "low",
+            "notes": "沒有店家招牌當主體，不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "terminal-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Oshidomari_ferry_terminal.jpg",
+          "creatorName": "ブルーノ・プラス",
+          "sourceTitle": "File:Oshidomari ferry terminal.jpg",
+          "sourceDescription": "海の駅「おしどまり」",
+          "takenAt": "2017-10",
+          "width": 3840,
+          "height": 2160,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-20",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為海の駅「おしどまり」，分類 Category:Oshidomari Ferry Terminal；從港內海面拍渡輪站全貌，建築上方看得到站名，背後是綠色山坡。",
+          "altDraft": "從港內看鴛泊港渡輪站，白色與玻璃外牆的建築沿著碼頭",
+          "captionDraft": "從海上看鴛泊港渡輪站（2017 年）。",
+          "creditDraft": "照片：ブルーノ・プラス／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "設施名稱招牌，很小",
+            "artwork": "none",
+            "property": "公共渡輪站建築外觀",
+            "risk": "low",
+            "notes": "碼頭停車場有幾輛車，看不到人。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "terminal-03",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E9%B4%9B%E6%B3%8A%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E5%85%A8%E6%99%AF.jpg",
+          "creatorName": "Senkaku Islands",
+          "sourceTitle": "File:鴛泊フェリーターミナル全景.jpg",
+          "sourceDescription": "鴛泊フェリーターミナル全景",
+          "takenAt": "2019-12-14",
+          "width": 1600,
+          "height": 1200,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-20",
+          "matchType": "exact",
+          "whyItFits": "檔案名標明鴛泊渡輪站全景；從離港的船上拍，渡輪站與鴛泊市街在畫面中段，前景是航跡。",
+          "altDraft": "從渡輪上回望鴛泊港，渡輪站與鴛泊市街在山腳下",
+          "captionDraft": "從渡輪回望鴛泊港渡輪站（2019 年）。",
+          "creditDraft": "照片：Senkaku Islands／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "港口與市街遠景",
+            "risk": "low",
+            "notes": "渡輪站在畫面裡偏小，辨識效果比 terminal-01 差。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "rishiri-airport",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "利尻機場的空港專用巴士",
+      "purpose": "讓搭 ANA 抵達的讀者認得利尻機場航廈，知道出航廈後在哪裡轉空港專用巴士。",
+      "mustShow": ["利尻機場航廈外觀"],
+      "mustNotShow": ["其他機場冒充利尻機場", "可辨識的人物臉部", "飛機或航空公司標誌當主體"],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "selectionNotes": "airport-01 是從機場聯絡道路往航廈看，入口的「利尻空港」門柱、航廈與利尻山都在畫面裡，讀者出入航廈時看得到這個方向；2019 年拍攝。找不到看得到巴士乘車處或站牌的合格照片，這一點要靠正文說明。airport-02 是 2010 年的航廈側面加利尻山，較舊，列為備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-20",
+        "photoSearchNotes": "查過維基共享資源 Category:Rishiri Airport 全部 14 張與關鍵字「利尻空港 ターミナル」；室內照（到着客出口、カウンター、駐車場與礼文島是從室內隔玻璃拍）與航空照不符合「航廈外觀」，不列。Pixabay 有一張利尻機場跑道上的飛機，看不到航廈，不列。Unsplash、Pexels 沒有。官方網站沒有轉載條件。"
+      },
+      "candidates": [
+        {
+          "candidateId": "airport-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E5%88%A9%E5%B0%BB%E7%A9%BA%E6%B8%AF%E3%81%A8%E5%88%A9%E5%B0%BB%E5%B1%B1.jpg",
+          "creatorName": "Senkaku Islands",
+          "sourceTitle": "File:利尻空港と利尻山.jpg",
+          "sourceDescription": "利尻空港と利尻山",
+          "takenAt": "2019-11-22",
+          "width": 1400,
+          "height": 1050,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-20",
+          "matchType": "exact",
+          "whyItFits": "分類 Category:Rishiri Airport；畫面是機場聯絡道路與停車場，中間是寫著「利尻空港」的門柱，後方是航廈，背景是利尻山，陰天。",
+          "altDraft": "利尻機場入口的「利尻空港」門柱與航廈，後方是利尻山",
+          "captionDraft": "利尻機場航廈與入口（2019 年）。",
+          "creditDraft": "照片：Senkaku Islands／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "機場名稱門柱",
+            "artwork": "none",
+            "property": "公共機場設施外觀",
+            "risk": "low",
+            "notes": "停車場的車輛車牌在原尺寸下太小，無法辨識。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "airport-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rishiri-airport.jpg",
+          "creatorName": "しんかわな",
+          "sourceTitle": "File:Rishiri-airport.jpg",
+          "sourceDescription": "Rishiri airport terminal building with Mt. Rishiri",
+          "takenAt": "2010-09-12",
+          "width": 1840,
+          "height": 1141,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-20",
+          "matchType": "exact",
+          "matchLimits": "2010 年拍攝，航廈外觀可能有小幅變動。",
+          "whyItFits": "檔案頁說明為利尻機場航廈與利尻山；晴天，玻璃外牆的航廈在前，利尻山在後。",
+          "altDraft": "利尻機場的玻璃外牆航廈，背後是利尻山",
+          "captionDraft": "利尻機場航廈（2010 年）。",
+          "creditDraft": "照片：しんかわな／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "公共機場設施外觀",
+            "risk": "low",
+            "notes": "從場外遠拍，沒有人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "cycling-road",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "騎自行車繞利尻島一圈",
+      "purpose": "讓讀者看到利尻島自行車道是什麼樣子（獨立車道、橋與護欄），決定要不要租車騎一段。",
+      "mustShow": ["利尻島自行車道（利尻島サイクリングロード）的路面或橋"],
+      "mustNotShow": ["一般公路冒充自行車道", "其他地方的自行車道", "可辨識的人物臉部", "浮水印"],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "selectionNotes": "唯一合格的一張：檔案頁寫明是利尻島自行車道跨越 45 公尺深溪谷的橋，畫面是有中線與邊線的自行車專用道與兩側護欄。拍攝於 2006 年，路面標線或護欄可能已更新，但自行車道的路線與型態沒有改變。如果之後要更新的照片，影片候選裡北海道公式的影片終盤也有自行車道與湾内大橋畫面，可以先用嵌入補。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-20",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Rishiri cycling」「Rishiri bicycle」「利尻 自転車」「利尻 サイクリングロード」「利尻富士 自転車道」與 Category:Rishirifuji, Hokkaido、Category:Rishiri Island；另一張「利尻自転車道 - panoramio.jpg」（2005）有浮水印，排除。Unsplash、Pexels、Pixabay 搜尋 rishiri 沒有自行車道照片。利尻富士町官網、りしぷら沒有轉載條件。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cycling-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rishiri_142_01102006.JPG",
+          "creatorName": "Dmitry Petelin",
+          "sourceTitle": "File:Rishiri 142 01102006.JPG",
+          "sourceDescription": "Bicycle road bridge across a deep (45 m) ravine at the Rishiri Island (Japan)",
+          "takenAt": "2006-10-01",
+          "width": 2560,
+          "height": 1920,
+          "licenseName": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "licenseCheckedAt": "2026-10-20",
+          "publicDomainBasis": "PD-self：作者本人在檔案頁聲明放棄著作權。",
+          "matchType": "exact",
+          "matchLimits": "2006 年拍攝，標線與護欄可能已更新。",
+          "whyItFits": "檔案頁說明為利尻島自行車道跨越深 45 公尺溪谷的橋，分類 Rishirifuji, Hokkaido；畫面是筆直的自行車專用道，路面有白色中線與邊線，兩側金屬護欄，周圍是森林。",
+          "altDraft": "利尻島自行車道的橋，路面有白色標線，兩側是護欄與樹林",
+          "captionDraft": "利尻島自行車道跨越溪谷的橋段（2006 年）。",
+          "creditDraft": "照片：Dmitry Petelin／Wikimedia Commons／Public domain",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "公共自行車道",
+            "risk": "low",
+            "notes": "沒有人物、招牌或車輛。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "soya-bus-rishiri",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "路線巴士的 A、B 路線與班次",
+      "purpose": "讓讀者認得利尻島環島巴士（宗谷巴士利尻線）的車輛或站牌。",
+      "mustShow": ["在利尻島拍的宗谷巴士車輛或站牌"],
+      "mustNotShow": ["稚內市區或其他地方的宗谷巴士冒充利尻島", "可辨識的人物臉部", "十年以上的舊車型當現況"],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "missingImageId": "rishiri-island-transport-soya-bus-rishiri-line",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "no-qualified-photo",
+        "photoSearchCheckedAt": "2026-10-20",
+        "photoSearchNotes": "維基共享資源 Category:Soya Bus 約 40 張全部看過檔案資訊：多數在稚內、網走或札幌拍，拍攝年份 2006～2015；兩張 2006 年的「SOUYA Bus regular route」「SOUYA Bus periodical sightseeing bus」沒有拍攝地點，無法確認是利尻島，而且車型已有 20 年。關鍵字「利尻 バス」「宗谷バス 利尻」「Rishiri bus」「Oshidomari bus」都是 0 筆。Unsplash、Pexels、Pixabay 沒有。宗谷巴士與兩町官網沒有轉載條件。現場辨識不准用 AI，改用文字。"
+      },
+      "textFallback": {
+        "signTextJa": ["宗谷バス", "鴛泊フェリーターミナル"],
+        "locationDescription": "環島巴士從鴛泊港渡輪站（海の駅おしどまり）前發車；車身與站牌上是「宗谷バス」字樣。正文目前只寫中文「宗谷巴士」與「鴛泊渡輪站」，建議寫作端補上日文原文與乘車處位置。",
+        "officialPhotoLinks": ["https://www.soyabus.co.jp/routebus/rishiri"]
+      },
+      "candidates": []
+    }
+  ],
+  "missingImageDrafts": [
+    {
+      "gapId": "rishiri-island-transport-soya-bus-rishiri-line",
+      "articleId": "rishiri-island-transport",
+      "slotId": "soya-bus-rishiri",
+      "placeId": "rishiri-island",
+      "need": "site-identification",
+      "subject": "利尻島環島巴士（宗谷巴士利尻線）的車輛或站牌",
+      "mustShow": ["在利尻島拍的宗谷巴士車輛或站牌", "最好是鴛泊渡輪站前的乘車處"],
+      "searchedAt": "2026-10-20",
+      "searchedSources": ["Wikimedia Commons", "Unsplash", "Pexels", "Pixabay", "利尻富士町官網", "りしぷら RISHIRI PLUS", "宗谷バス官網"],
+      "status": "text-fallback",
+      "request": null,
+      "notes": "試寫草稿用，尚未寫進 content-planning/missing-images.json（本次任務不改資料夾以外的檔案）。沒有找到利尻島兩町或宗谷巴士的照片素材庫，所以 request 為 null。"
+    }
+  ],
+  "embedCandidatesNote": "影片嵌入候選（定期觀光巴士、自行車道各一支）見 images/media-candidates.md；依規則不寫進圖片候選。"
+}
