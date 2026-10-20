@@ -22,14 +22,19 @@ export function resolveSiteUrl(value = process.env.SITE_URL) {
   return new URL(siteUrl.origin + '/').href
 }
 
+// Sanity 專案 ID（公開 dataset，不是機密）。寫死預設值是記取好材誌的教訓：
+// 建置環境漏設變數時，網站會「靜悄悄建成空站」照樣部署。
+export const DEFAULT_SANITY_PROJECT_ID = 'e8ctf7ee'
+
 /**
- * Sanity 是存文章的後台。Darren 建好 Sanity 專案後，在環境變數設定
- * SANITY_PROJECT_ID（必要）與 SANITY_DATASET（預設 production）。
- * 還沒設定時回傳 null：網站會以「沒有任何文章」的狀態建置，方便先驗證骨架。
+ * Sanity 是存文章的後台。預設用本站專案 e8ctf7ee、dataset production；
+ * 環境變數 SANITY_PROJECT_ID／SANITY_DATASET 可以覆寫。
+ * 只有明確設成 SANITY_PROJECT_ID=none 時才回傳 null，以「沒有任何文章」的狀態建置（測試骨架用）。
  */
 export function resolveSanityConfig(env = process.env) {
-  const projectId = (env.SANITY_PROJECT_ID ?? '').trim()
-  if (!projectId) return null
+  const rawProjectId = (env.SANITY_PROJECT_ID ?? '').trim()
+  if (rawProjectId === 'none') return null
+  const projectId = rawProjectId || DEFAULT_SANITY_PROJECT_ID
   if (!/^[a-z0-9-]+$/.test(projectId)) {
     throw new Error('SANITY_PROJECT_ID 只能包含小寫英文、數字與連字號')
   }

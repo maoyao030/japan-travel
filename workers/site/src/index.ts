@@ -249,6 +249,18 @@ export function httpsRedirect(request: Request): Response | null {
   })
 }
 
+/**
+ * workers.dev 測試網址整站都打得開，會跟正式網域形成重複內容（好材誌的教訓）。
+ * 這類主機名一律加 X-Robots-Tag: noindex，正式網域不受影響。
+ */
+export function withTestHostNoindex(request: Request, response: Response): Response {
+  const {hostname} = new URL(request.url)
+  if (!hostname.endsWith('.workers.dev')) return response
+  const headers = new Headers(response.headers)
+  headers.set('X-Robots-Tag', 'noindex, nofollow')
+  return new Response(response.body, {status: response.status, statusText: response.statusText, headers})
+}
+
 const defaultServices: ContactServices = {
   validateTurnstile,
   sendEmail: sendContactEmail,
@@ -341,6 +353,6 @@ export default {
       return handleContactRequest(request, env)
     }
 
-    return env.ASSETS.fetch(request)
+    return withTestHostNoindex(request, await env.ASSETS.fetch(request))
   },
 } satisfies ExportedHandler<ContactRuntimeEnv>

@@ -159,7 +159,7 @@ function validateWebPage(nodes, errors) {
   return {pageType}
 }
 
-export async function checkStructuredData(directory, {requireArticles = resolveSanityConfig() !== null} = {}) {
+export async function checkStructuredData(directory, {requireArticles = false} = {}) {
   const htmlFiles = await listHtmlFiles(directory)
   const counts = {
     articleCount: 0,
@@ -207,7 +207,7 @@ export async function checkStructuredData(directory, {requireArticles = resolveS
   }
 
   if (failures.length > 0) throw new Error(failures.join('\n\n'))
-  // Sanity 已設定卻沒有任何文章頁，多半是查詢或設定壞了；還沒接 Sanity 的骨架則允許零篇。
+  // Sanity 裡已經有文章、建置結果卻沒有任何文章頁，多半是查詢或設定壞了。
   if (requireArticles && counts.articleCount === 0) throw new Error('建置結果沒有可驗證的文章頁')
   if (counts.webSiteCount === 0) throw new Error('建置結果沒有帶 WebSite 結構化資料的首頁')
 
@@ -224,9 +224,25 @@ export async function checkStructuredData(directory, {requireArticles = resolveS
 
 const isCli = process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url
 
+/**
+ * Sanity 公開 dataset 裡有沒有已發布的文章。還沒上任何文章時（例如第一次部署），
+ * 建置結果沒有文章頁是正常的；有文章卻一篇都沒建出來才算壞掉。
+ */
+export async function sanityHasPublishedArticles(config = resolveSanityConfig(), fetchImpl = fetch) {
+  if (!config) return false
+  const query = encodeURIComponent('count(*[_type == "article" && defined(slug.current)])')
+  const url = `https://${config.projectId}.api.sanity.io/v2026-08-26/data/query/${config.dataset}?query=${query}`
+  const response = await fetchImpl(url)
+  if (!response.ok) throw new Error(`查詢 Sanity 文章數失敗：HTTP ${response.status}`)
+  const body = await response.json()
+  if (typeof body?.result !== 'number') throw new Error('查詢 Sanity 文章數失敗：回傳格式不對')
+  return body.result > 0
+}
+
 if (isCli) {
   const directory = path.resolve(process.argv[2] ?? 'dist')
-  const result = await checkStructuredData(directory)
+  const requireArticles = await sanityHasPublishedArticles()
+  const result = await checkStructuredData(directory, {requireArticles})
   console.log(
     `結構化資料檢查通過：${result.articleCount} 篇文章、${result.faqPageCount} 組 FAQPage、${result.faqQuestionCount} 題 FAQ、` +
       `${result.webSiteCount} 個首頁 WebSite、${result.collectionPageCount} 個 CollectionPage、` +

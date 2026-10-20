@@ -57,3 +57,20 @@ test('http 的表單網址先轉址，不會直接處理表單', async () => {
   assert.equal(response.status, 301)
   assert.equal(response.headers.get('Location'), 'https://japan-travel.example/api/contact')
 })
+
+test('workers.dev 測試網址加上 noindex，正式網域不加', async () => {
+  const preview = await siteWorker.fetch(
+    new Request('https://japan-travel.example.workers.dev/places/'),
+    createEnv(),
+    {} as ExecutionContext,
+  )
+  assert.equal(preview.headers.get('X-Robots-Tag'), 'noindex, nofollow')
+  assert.equal(await preview.text(), 'asset fallback')
+
+  const production = await siteWorker.fetch(
+    new Request('https://offpathnotes.com/places/'),
+    createEnv(),
+    {} as ExecutionContext,
+  )
+  assert.equal(production.headers.get('X-Robots-Tag'), null)
+})
