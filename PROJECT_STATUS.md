@@ -772,3 +772,9 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 看 J 版；同意的話，跑完整驗收後換成正式稿。
+
+## 2026-10-20 Claude Code（地端）：不寫成量產頁的規則與利尻島交通試寫（分支 `plan/wakkanai-outline`）
+
+- Darren 擔心 Google 抓太像 AI 的內容，同意照「不寫成量產頁」的方向寫：寫作指南第14條（輕重有別、結構跟著主題走、有事實撐的編輯判斷、本站獨有的資料放前面；不放錯字、不假裝去過），AGENTS.md 記錄。
+- 用新大綱與新規則試寫利尻島交通：作者成稿 → 潤稿（先讀好運日本行 3 篇、MATCHA 2 篇）→ 編輯挑錯一輪 → 意義比對 4 處修正。五項檢查都過。成品：`content-experiments/polish-test-2026-10-18/trial-rishiri-transport/reader-preview.md`。還沒跑事實查核與讀者驗收。
+- 唯一下一步：Darren 看這篇試寫，覺得方向對再跑完整驗收。
