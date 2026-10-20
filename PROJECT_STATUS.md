@@ -638,3 +638,23 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 設定 Turnstile（防機器人驗證），讓網站聯絡表單可以送出。
+
+## 2026-10-20 Claude Code：聯絡表單接上 Turnstile
+
+### 已完成
+
+- 用 wrangler 建 Turnstile widget「繞路筆記聯絡表單」（Managed，只允許 offpathnotes.com），site key `0x4AAAAAAFd5xZWZb5SkhzxY` 寫進 `src/config/contact.ts`（公開值）。
+- secret 直接從 Cloudflare 讀出接到 `wrangler secret put TURNSTILE_SECRET_KEY`，沒有印出或寫進檔案。Worker Secrets 現在有 `CONTACT_FORM_RECIPIENT`、`TURNSTILE_SECRET_KEY`。
+- 推到 `main` 自動部署（版本 `88985daa` 起），線上聯絡頁出現驗證框，送出按鈕可用。
+
+### 新坑
+
+- `wrangler secret put` 要求「最新版本就是線上版本」。推到其他分支會產生預覽版本，變成最新版而沒上線，這時 secret put 會被拒。做法：只推 `main`、等自動部署完成後再設 secret（或改用 `wrangler versions secret put` 加部署）。
+
+### 尚未完成
+
+- Darren 在正式網站送一次測試表單，確認 Gmail 收到。
+
+### 唯一下一步
+
+- Darren 送測試表單。
