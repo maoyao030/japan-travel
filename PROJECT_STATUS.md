@@ -830,3 +830,14 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 依一篇的用量決定每天寫幾篇。
+
+## 2026-10-20 Claude Code（地端）：每天 3 篇（先不執行）
+
+- Darren：「每一天三篇文章好了，但是先不要開始執行，先不考慮上傳的部分……等我說好的時候再開始執行。然後不要用 schedule 去做，看一下有沒有別的做法。」
+- `content-planning/hokkaido/build-queue.mjs` 的每日上限改成 3，重新產生 `article-queue.json`（四個批次 `maxArticlesPerDay: 3`；清單總上限 8 不變，取較小值是 3）。`npm run queue:validate` 通過，測試 160 項通過。
+- 沒有開始寫，也沒有建立或啟用任何 routine、排程。
+- 不用排程的做法整理給 Darren 選：在桌面 app 說一句話就連寫三篇（流程存成固定的工作流程腳本）、雲端 routine 不設排程改成手動按執行、GitHub Actions 按鈕（要另外的 API 費用，不建議）。
+
+### 唯一下一步
+
+- Darren 選觸發方式並說「好」之後才開始寫（下三篇照寫作順序：宗谷岬交通、稚內住宿、稚內天氣）。

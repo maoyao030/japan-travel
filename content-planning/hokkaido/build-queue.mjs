@@ -18,9 +18,10 @@ const queue = await read(QUEUE)
 
 // Darren 2026-10-20：「品質可以，把稚內群排進發布清單，每天幾篇我再決定。」
 const AUTHORIZED_AT = '2026-10-20'
-const DECISION = '渡輪頁與利尻島交通通過完整驗收後，Darren 確認品質可以，把稚內群 24 頁排進發布清單；每天篇數之後由 Darren 決定，目前每日上限 1 是暫存值，routine 也還沒啟用。'
+const DECISION = '渡輪頁與利尻島交通通過完整驗收後，Darren 確認品質可以，把稚內群 24 頁排進發布清單；2026-10-20 量過一篇的用量後，Darren 決定每天 3 篇；先不開始執行、不上傳，等 Darren 說好才開始。'
 const START_DATE = '2026-10-21'
-const PLACEHOLDER_DAILY_LIMIT = 1
+// Darren 2026-10-20：每天 3 篇（先不啟用、不上傳，等 Darren 說好才開始）
+const DAILY_LIMIT = 3
 const VERIFIED_AT = '2026-10-18'
 
 // 地點 Hub 的文案只寫已查證的事實（渡輪航程見渡輪頁 F11），研究後可由 routine 定稿（researchMayFinalizeWorkingFields）。
@@ -205,7 +206,7 @@ for (const [placeId, place] of Object.entries(places)) {
     publicationCadence: {
       timezone: 'Asia/Taipei',
       startDate: START_DATE,
-      maxArticlesPerDay: PLACEHOLDER_DAILY_LIMIT,
+      maxArticlesPerDay: DAILY_LIMIT,
       maxProductionUnitsPerRun: 1,
       productionUnitMode: 'individual',
     },
