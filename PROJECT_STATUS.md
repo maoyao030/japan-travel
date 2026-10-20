@@ -575,3 +575,22 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 同意後執行第一次部署，確認 offpathnotes.com 打得開。
+
+## 2026-10-20 Claude Code：第一次部署上線
+
+### 已完成
+
+- Darren 同意後，從本機用 `npm run deploy`（`wrangler deploy`）完成第一次部署，Worker `japan-travel` 已建立，版本 `805cc782`。
+- 線上檢查：`https://offpathnotes.com/` 回 200，http 會 301 轉 https，不存在的網址回 404，`robots.txt`、`sitemap.xml` 回 200，canonical 指向正式網域；測試網址 `japan-travel.building-materials-tw.workers.dev` 帶 `X-Robots-Tag: noindex, nofollow`，正式網域沒有。手機版畫面正常、主控台沒有錯誤。
+- 目前 Sanity 沒有文章，網站只有首頁、四個分類頁、關於、聯絡、隱私權。
+
+### 尚未完成
+
+- Workers Builds 還沒連 GitHub：現在推到 `main` 不會自動部署，要 Darren 在 Cloudflare 後台授權（坑見 `DEPLOYMENT.md`）。
+- Email Routing（`contact@offpathnotes.com`）、Turnstile、Worker Secrets 還沒設，聯絡表單目前只顯示信箱。
+- Always Use HTTPS、Sanity Webhook → Deploy Hook、Search Console、GA4。
+- 稚內群已驗收文章還沒上傳 Sanity；影片嵌入與資料圖元件還沒做。
+
+### 唯一下一步
+
+- 在 Cloudflare 後台把 Worker `japan-travel` 連上 GitHub（Workers Builds），推 `main` 就會自動部署。
