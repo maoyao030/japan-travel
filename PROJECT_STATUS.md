@@ -629,3 +629,12 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 點 ak47200000@gmail.com 收到的 Cloudflare 驗證信。
+
+## 2026-10-20 Claude Code：contact@ 收信驗證通過
+
+- Darren 點了驗證信，Cloudflare 顯示 `ak47200000@gmail.com` 已驗證；公開 DNS 的 MX 指向 Cloudflare（route1～3）。
+- Darren 從另一個信箱寄測試信到 `contact@offpathnotes.com`，Gmail 收到，轉寄正常。
+
+### 唯一下一步
+
+- 設定 Turnstile（防機器人驗證），讓網站聯絡表單可以送出。
