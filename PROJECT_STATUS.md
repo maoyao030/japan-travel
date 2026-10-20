@@ -658,3 +658,13 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 送測試表單。
+
+## 2026-10-20 Claude Code：聯絡表單實測通過
+
+- Darren 在 https://offpathnotes.com/contact/ 送出測試表單，Gmail 收到「[繞路筆記聯絡表單]」來信。Turnstile、Worker Secrets、寄信全程正常。
+- 網站基礎設定完成：正式網域、自動部署、contact@ 收信、聯絡表單。
+- 還沒做（之後再決定）：Always Use HTTPS、Sanity Webhook → Deploy Hook（文章上傳後自動更新網站）、Search Console、GA4、影片嵌入與資料圖元件。
+
+### 唯一下一步
+
+- 把稚內群已驗收的文章上傳到 Sanity，讓網站有內容。
