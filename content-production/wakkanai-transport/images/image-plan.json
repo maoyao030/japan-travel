@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "articleId": "wakkanai-transport",
+  "articleTitle": "稚內交通，札幌、旭川到稚內與稚內機場、車站怎麼走",
+  "targetUrl": "/places/wakkanai/transport/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-21",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；發布工具還不支援文內圖，文內圖需求之後另外處理。原圖只下載到 .tmp/image-selection/wakkanai-transport/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-21",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "呈現 JR 稚內站現在的站房，讓讀者一眼知道這篇是稚內的交通（JR、巴士抵達與市內移動的起點）。",
+      "mustShow": ["JR 稚內站現在的站房（與キタカラ共構的建築）"],
+      "mustNotShow": ["其他車站冒充稚內站", "改建前的舊站房", "可辨識的人物臉部當主體", "已停用的舊車輛塗裝當現況"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Wakkanai-STA_Entrance.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.55},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 2024 年 8 月拍的稚內站正面：站名「稚内駅 WAKKANAI STATION」、JR 標誌、站前「日本最北端の線路」車擋與石碑都在畫面裡，晴天、5438 px 寬，CC0 不需署名、可自由裁切。cover-02 是 2021 年同角度，陰天、構圖較遠，列為備選。宗谷特急到站的照片（File:Kiroha 261-202 Limited express Sōya at Wakkanai Station.jpg，2018）月台上有人物（臉部已馬賽克）且是舊塗裝，不列。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-21",
+        "photoSearchNotes": "查過維基共享資源 Category:Wakkanai Station 全部檔案與子分類 Trains at Wakkanai Station，比對拍攝日期、尺寸與授權。改建前（2011 年以前）的照片是舊站房，排除；File:Wakkanai Station, Sōya Main Line, Hokkaido - Apr 27, 2020.jpg（CC BY 2.0）是傍晚、主體不如 cover-01 清楚；其餘多為室內、月台或寬度不足。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai-STA_Entrance.jpg",
+          "creatorName": "MaedaAkihiko",
+          "sourceTitle": "File:Wakkanai-STA Entrance.jpg",
+          "sourceDescription": "JR北海道・稚内駅の駅ビル（キタカラ）と、日本最北端の線路",
+          "takenAt": "2024-08-24",
+          "width": 5438,
+          "height": 3625,
+          "licenseName": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseCheckedAt": "2026-10-21",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為 JR 稚內站站房（キタカラ）與日本最北端的線路，分類 Category:Wakkanai Station；畫面正中是站房入口，屋簷上有 JR 標誌與「稚内駅 WAKKANAI STATION」，前景是黃色車擋與「日本最北端の線路」石碑，右側是往巴士與計程車乘車處的有頂步道。2024 年拍攝，就是現在的站房。",
+          "altDraft": "JR 稚內站的玻璃外牆站房，入口上方寫著「稚内駅」，站前有黃色車擋與日本最北端線路的石碑",
+          "captionDraft": "JR 稚內站與站前的「日本最北端の線路」（2024 年）。",
+          "creditDraft": "照片：MaedaAkihiko／Wikimedia Commons／CC0",
+          "commercialReview": {
+            "people": "入口與右側步道遠處有幾個很小的人影，無法辨識",
+            "logos": "JR 標誌與站名、キタカラ設施名稱，屬公共交通設施名稱",
+            "artwork": "none",
+            "property": "公共車站建築外觀",
+            "risk": "low",
+            "notes": "站名本身就是文章主題，不會讓人誤以為是本站實地拍攝或特定店家。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai_station_20211122.jpg",
+          "creatorName": "Rsa",
+          "sourceTitle": "File:Wakkanai station 20211122.jpg",
+          "sourceDescription": "稚内駅",
+          "takenAt": "2021-11-22",
+          "width": 5152,
+          "height": 2739,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-21",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為稚內站，分類 Category:Wakkanai Station；從站前廣場看現在的站房、車擋與右側巴士乘車處的有頂步道，陰天。",
+          "altDraft": "陰天的 JR 稚內站站房與站前廣場，右側是有頂步道與道路",
+          "captionDraft": "JR 稚內站與站前廣場（2021 年）。",
+          "creditDraft": "照片：Rsa／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "步道上有一個很小的人影，無法辨識",
+            "logos": "站名、道の駅わっかない招牌與キタカラ設施名稱",
+            "artwork": "none",
+            "property": "公共車站建築外觀",
+            "risk": "low",
+            "notes": "左側邊緣有一棟商家建築的招牌，裁切時可避開。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

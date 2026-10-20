@@ -1,3 +1,5 @@
+import placesRegistry from '../../content-planning/places.json' with {type: 'json'}
+
 export type CategoryStatus = '優先保留' | '保留' | '候選'
 
 export type SiteHub = {
@@ -15,6 +17,16 @@ export type SiteCategory = {
   readerQuestions: string[]
   topics: SiteHub[]
 }
+
+/**
+ * 地點分類的主題中心直接取自全站地點清單 content-planning/places.json：
+ * 狀態是 planned（旅行群已核准規劃）或 published 的地點與地區才建頁，candidate 不建。
+ * 這樣新群規劃好後不必改程式；routine 只能改規劃檔，不能改這支程式。
+ */
+const SITE_PLACE_STATUSES = ['planned', 'published']
+const placeTopics: SiteHub[] = placesRegistry.places
+  .filter((place) => SITE_PLACE_STATUSES.includes(place.status))
+  .map((place) => ({slug: place.placeId, title: place.nameZh, status: '保留' as const}))
 
 /**
  * 地點優先的分類樹（2026-10-16 Darren 確認網址最多三層）。
@@ -37,7 +49,7 @@ export const siteCategories: SiteCategory[] = [
       '旅館能在 Trip.com、Agoda 或官網訂到，還是只有日本國內平台？',
       '哪幾個月最適合去，那時候的氣溫、降雨與營業狀況如何？',
     ],
-    topics: [],
+    topics: placeTopics,
   },
   {
     slug: 'seasons',

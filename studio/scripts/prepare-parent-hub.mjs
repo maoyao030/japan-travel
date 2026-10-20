@@ -1,3 +1,4 @@
+import {readFile} from 'node:fs/promises'
 import path from 'node:path'
 import {getCliClient} from 'sanity/cli'
 
@@ -7,6 +8,13 @@ import {
   findQueueBatch,
   loadArticleQueue,
 } from '../../scripts/article-automation-policy.mjs'
+import {
+  buildPlaceHubFields,
+  buildRegionHubDocument,
+  diffPlaceHubFields,
+  findPlace,
+  placeHubId,
+} from '../../scripts/place-hubs.mjs'
 
 /**
  * 依 article-queue.json 的 batches[].parentHub 建立（或開放索引）批次的父 Hub。
@@ -20,6 +28,10 @@ import {
  *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --set-landing --expected-revision=<rev> --apply
  *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --unset-landing  # 預覽撤回入口文章
  *   npx sanity exec scripts/prepare-parent-hub.mjs -- <batch-id> --unset-landing --expected-revision=<rev> --apply
+ *
+ * 地點分類（places）的 Hub 另外依 content-planning/places.json 寫入地點種類、日文原名、所屬地區、
+ * 鄰近地點與出入口；所屬地區的 Hub（例如北海道）不存在時先建立（noindex）。不帶參數再跑一次，
+ * 既有 Hub 的地點欄位和清單不一致（例如新群上線後多了鄰近地點）就補齊（sync-place-fields）。
  *
  * 父 Hub 一律先以 noindex=true 建立；只有本批至少一篇文章已開放索引後，才允許 --release-index。
  * --set-landing：本批的地點主頁（routeMode hub-landing）網站 CI 通過後、開放索引前一刻執行，
@@ -76,6 +88,17 @@ function paragraphsToBlocks(paragraphs) {
   }))
 }
 
+const isPlaceHub = batch.categorySlug === 'places'
+const placesRegistry = isPlaceHub
+  ? JSON.parse(await readFile(path.join(projectRoot, 'content-planning', 'places.json'), 'utf8'))
+  : null
+const place = isPlaceHub ? findPlace(placesRegistry, batch.parentHubSlug) : null
+if (isPlaceHub && !place) throw new Error(`地點清單 places.json 裡沒有 ${batch.parentHubSlug}`)
+const regionPlace = place?.kind !== 'region' && place?.region ? findPlace(placesRegistry, place.region) : null
+if (place && place.kind !== 'region' && !regionPlace) {
+  throw new Error(`地點清單 places.json 裡沒有所屬地區 ${place.region}`)
+}
+
 const expectedHub = {
   _id: hubId,
   _type: 'hub',
@@ -124,7 +147,16 @@ async function fetchSnapshot() {
         "bodyCount": count(body),
         noindex
       },
-      "landingDraftIds": *[_id == $landingDraftId]._id
+      "landingDraftIds": *[_id == $landingDraftId]._id,
+      "placeHub": *[_id == $hubId][0]{
+        placeKind,
+        nameJa,
+        "regionId": region._ref,
+        "nearbyPlacesIds": nearbyPlaces[]._ref,
+        "gatewayPlacesIds": gatewayPlaces[]._ref
+      },
+      "placeHubIds": *[_type == "hub" && category == "places" && !(_id in path("drafts.**"))]._id,
+      "region": *[_id == $regionId][0]{_id, placeKind, "slug": slug.current, category}
     }`,
     {
       hubId,
@@ -132,6 +164,7 @@ async function fetchSnapshot() {
       articleIds: batchDocumentIds,
       landingId: landingArticleId ?? '',
       landingDraftId: landingArticleId ? `drafts.${landingArticleId}` : '',
+      regionId: regionPlace ? placeHubId(regionPlace.placeId) : '',
     },
   )
 }
@@ -161,6 +194,21 @@ if (before.draftIds.length > 0) {
 }
 validateExistingHub(before.hub)
 
+const existingPlaceHubIds = new Set(before.placeHubIds ?? [])
+const regionDocument = regionPlace ? buildRegionHubDocument(regionPlace) : null
+if (before.region && (before.region.placeKind !== 'region' || before.region.category !== 'places')) {
+  throw new Error(`所屬地區的 Hub 存在但不是地點分類裡的地區：${before.region._id}`)
+}
+const regionWillExist = Boolean(before.region) || Boolean(regionDocument)
+const placeFields = place
+  ? buildPlaceHubFields({
+      place,
+      existingHubIds: new Set([...existingPlaceHubIds, ...(regionWillExist && regionDocument ? [regionDocument._id] : [])]),
+    })
+  : null
+if (placeFields) Object.assign(expectedHub, placeFields)
+const placeDifferences = before.hub && placeFields ? diffPlaceHubFields(before.placeHub, placeFields) : []
+
 const indexableCount = before.indexableArticleIds.length
 const landingDecision = setLanding
   ? decideHubLandingAction({
@@ -181,9 +229,12 @@ if (landingDecision) {
   if (before.hub.noindex === false) action = 'already-indexable'
   else if (indexableCount < 1) action = 'blocked-no-indexable-article'
   else action = 'release-index'
+} else if (placeDifferences.length > 0) {
+  action = 'sync-place-fields'
 } else {
   action = 'already-exists'
 }
+const createRegion = Boolean(regionDocument) && !before.region && ['create-ready-noindex', 'sync-place-fields'].includes(action)
 
 console.log(
   JSON.stringify(
@@ -195,6 +246,7 @@ console.log(
       currentRevision: before.hub?._rev ?? null,
       currentNoindex: before.hub?.noindex ?? null,
       indexableArticleCount: indexableCount,
+      ...(placeFields ? {placeFields: {...placeFields, placeDifferences, createRegion: createRegion ? regionDocument._id : null}} : {}),
       ...(landingDecision ? {landingArticleId: landingDecision.articleId ?? null, currentLandingId: before.hub?.landingArticleId ?? null} : {}),
     },
     null,
@@ -217,6 +269,22 @@ if (action.startsWith('blocked-')) {
 
 if (!applyChanges) {
   console.log('目前為預覽模式；確認後加上 --apply 才會寫入 Sanity。')
+} else if (action === 'create-ready-noindex' || action === 'sync-place-fields') {
+  if (createRegion) {
+    await client.createIfNotExists(regionDocument)
+    console.log(JSON.stringify({status: 'region-hub-created', regionHubId: regionDocument._id}, null, 2))
+  }
+  if (action === 'sync-place-fields') {
+    await client.patch(hubId).ifRevisionId(before.hub._rev).set(placeFields).commit()
+    const synced = await fetchSnapshot()
+    validateExistingHub(synced.hub)
+    const remaining = diffPlaceHubFields(synced.placeHub, placeFields)
+    if (remaining.length > 0) throw new Error(`地點欄位補齊後回讀驗證失敗：${remaining.join('、')}`)
+    console.log(JSON.stringify({status: 'place-fields-synced', revision: synced.hub._rev}, null, 2))
+  }
+}
+if (!applyChanges || action === 'sync-place-fields') {
+  // 預覽模式或地點欄位補齊已在上面完成
 } else if (action === 'create-ready-noindex') {
   await client.create(expectedHub)
   const after = await fetchSnapshot()

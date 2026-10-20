@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "articleId": "wakkanai-ferry",
+  "articleTitle": "稚內到利尻島、禮文島渡輪，班次、票價與網路訂票",
+  "targetUrl": "/places/wakkanai/ferry/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-21",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；發布工具還不支援文內圖，文內圖位置之後另外規劃。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-21",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是 Heartland Ferry 往利尻島、禮文島的渡輪，作為文章封面。",
+      "mustShow": ["Heartland Ferry 塗裝的渡輪", "海面或稚內、利尻、禮文的港口"],
+      "mustNotShow": ["其他公司的渡輪或其他航線冒充", "可辨識的人物臉部", "停航、事故等會誤導的情境"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Boreas_Soya_17-Sept-2018.jpg",
+        "focalPoint": {"x": 0.54, "y": 0.5},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Heartland Ferry 的渡輪在利尻島鴛泊港外海航行的側面，船身「HeartLand Ferry」字樣清楚，背景是海與遠方的陸地，裁成 16:9 後船仍完整在畫面中間，最直接對應「稚內到利尻、禮文坐渡輪」。cover-02 是從ペシ岬俯瞰鴛泊港與正在進港的渡輪，港口資訊多但船偏小，列為備選。cover-03 是晴天的鴛泊港全景，船停在碼頭、很小，列為第二備選。三張都沒有可辨識人物。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-21",
+        "photoSearchNotes": "查過維基共享資源 Category:Boreas Soya (ship, 2003)、Category:Feelease Soya (ship, 2001)、Category:Oshidomari Port、Category:Kafuka Port、Category:Port of Wakkanai、Category:Ferry terminals in Hokkaido，以及關鍵字「ハートランドフェリー」「Rishiri ferry」。稚內渡輪站外觀（File:Wakkanai ferry terminal building.jpg）前景是計程車與可辨識的車牌、人物，不當封面；File:鴛泊港に入港するハートランドフェリー.jpg 寬度剛好 1600 px 且有路燈桿擋畫面，不列；File:Feelease Soya at Port of Wakkanai - Aug 5, 2014.jpg 是碼頭近拍船尾，看不出航行的感覺且有遠處人物，不列。已有合格維基共享資源實拍，沒有再比較免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Boreas_Soya_17-Sept-2018.jpg",
+          "creatorName": "皓月旗",
+          "sourceTitle": "File:Boreas Soya 17-Sept-2018.jpg",
+          "sourceDescription": "利尻島鴛泊港に入港するボレアース宗谷。ペシ岬にて撮影",
+          "takenAt": "2018-09-17",
+          "width": 3210,
+          "height": 2458,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-21",
+          "matchType": "exact",
+          "matchLimits": "2018 年拍攝；每一班由哪艘船開會變，封面不代表讀者會搭到這艘船。",
+          "whyItFits": "檔案頁說明為進入利尻島鴛泊港的 Heartland Ferry「ボレアース宗谷」，從ペシ岬拍攝，分類 Boreas Soya (ship, 2003)；畫面是白色船身、藍紅塗裝、印著「HeartLand Ferry」的渡輪在深藍海面航行，遠方是陸地。",
+          "altDraft": "Heartland Ferry 的白色渡輪在利尻島鴛泊港外的藍色海面上航行",
+          "captionDraft": "準備進入利尻島鴛泊港的 Heartland Ferry 渡輪（2018 年）。",
+          "creditDraft": "照片：皓月旗／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "甲板上可能有很小的人影，無法辨識",
+            "logos": "船身的「HeartLand Ferry」字樣，是本文介紹的營運公司本身",
+            "artwork": "none",
+            "property": "營運中的渡輪外觀",
+            "risk": "low",
+            "notes": "不會讓人誤以為是本站實地拍攝或與營運公司合作；圖說只寫進港的渡輪，不承諾船名。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Oshidomari_Port,_Rishirifuji,_Rishiri_Island,_Hokkaido_Prefecture,_Japan.jpg",
+          "creatorName": "OKJaguar",
+          "sourceTitle": "File:Oshidomari Port, Rishirifuji, Rishiri Island, Hokkaido Prefecture, Japan.jpg",
+          "sourceDescription": "View of Oshidomari Port from Cape Peshi, Rishirifuji, Rishiri Island, Hokkaido Prefecture, Japan",
+          "takenAt": "2019-06-05",
+          "width": 3670,
+          "height": 2150,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-21",
+          "matchType": "exact",
+          "matchLimits": "渡輪在畫面左上、偏小；前景是港邊的白色建築。",
+          "whyItFits": "檔案頁說明為從ペシ岬看鴛泊港，分類 Feelease Soya (ship, 2001)；畫面是 Heartland Ferry 塗裝的渡輪正在港內轉向，右後方是鴛泊渡輪站與碼頭。",
+          "altDraft": "從ペシ岬俯瞰利尻島鴛泊港，Heartland Ferry 的渡輪在港內，右後方是渡輪站",
+          "captionDraft": "從ペシ岬看鴛泊港與進港的渡輪（2019 年）。",
+          "creditDraft": "照片：OKJaguar／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "船身營運公司字樣，很小",
+            "artwork": "none",
+            "property": "港口與公共設施遠景",
+            "risk": "low",
+            "notes": "碼頭車輛車牌太小無法辨識。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-03",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Oshidomari_Port_17-Sept-2018.jpg",
+          "creatorName": "皓月旗",
+          "sourceTitle": "File:Oshidomari Port 17-Sept-2018.jpg",
+          "sourceDescription": "利尻島鴛泊港　ペシ岬より撮影",
+          "takenAt": "2018-09-17",
+          "width": 6016,
+          "height": 4016,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-21",
+          "matchType": "exact",
+          "matchLimits": "渡輪停在碼頭，在畫面裡很小；主體是港口全景。",
+          "whyItFits": "檔案頁說明為從ペシ岬拍的利尻島鴛泊港；晴天，左側碼頭停著渡輪，後方是渡輪站與山。",
+          "altDraft": "晴天的利尻島鴛泊港全景，碼頭邊停著渡輪，後方是綠色山坡",
+          "captionDraft": "從ペシ岬看利尻島鴛泊港（2018 年）。",
+          "creditDraft": "照片：皓月旗／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "港口與市街遠景",
+            "risk": "low",
+            "notes": "沒有可辨識人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

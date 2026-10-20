@@ -1001,3 +1001,42 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 把稚內群已驗收的文章上傳到 Sanity，讓網站有內容。
+
+## 2026-10-21 Claude Code：稚內群前三篇上線並開放索引
+
+### Darren 的要求
+
+- 「把稚內群已驗收的文章上傳到網站。」
+
+### 已完成
+
+- `plan/wakkanai-outline` 併進 `main`（文章封包、發布清單、規劃檔）。
+- 三篇已驗收文章照自動發布 Skill 的流程上線並開放索引：
+  - 稚內渡輪 https://offpathnotes.com/places/wakkanai/ferry/
+  - 稚內交通 https://offpathnotes.com/places/wakkanai/transport/
+  - 利尻島交通 https://offpathnotes.com/places/rishiri-island/transport/
+- 封面由三個子代理照選圖 Skill 選（皆維基共享資源）：渡輪 Heartland Ferry 進鴛泊港（皓月旗，CC BY-SA 4.0）、稚內站正面（MaedaAkihiko，CC0）、鴛泊港與利尻山（Koda6029，CC BY-SA 4.0）。目前流程只上傳封面，文內圖還沒接上。
+- Sanity：新增作者「繞路筆記編輯部」（`studio/scripts/ensure-editorial-author.mjs`）、地點 Hub 稚內與利尻島（已開放索引）、地區 Hub 北海道（noindex）。
+- D1：稚內群記為已核准（Darren 2026-10-20 的明確核准）；三篇記為 published；事實同步（748 筆）；待補內連登記。兩個同時上線的內連（稚內交通→渡輪、利尻島交通→渡輪）用 `apply-pending-link.mjs` 補上。
+- 程式修正（routine 之後每一群都會遇到）：
+  - `prepare-parent-hub.mjs` 依 `content-planning/places.json` 寫入地點種類、日文名、所屬地區、鄰近地點與出入口，所屬地區 Hub 不存在時先建立；既有 Hub 不一致時補齊（`sync-place-fields`）。共用邏輯在 `scripts/place-hubs.mjs`，有測試。
+  - 網站地點分類的主題中心改成取自 `places.json`（planned、published），新群不必改程式。
+  - `places.json` 新增地區「北海道」與它的 Hub 文案。
+- 測試 168 項、CI 建置通過（15 頁、3 篇文章）。
+
+### 新坑
+
+- Windows 的 Git Bash 會把 `--path=/places/...` 轉成 `C:/Program Files/Git/places/...`，D1 一度記錯（已修正）。本機執行任何帶 `/` 開頭參數的指令要先 `export MSYS_NO_PATHCONV=1`。雲端 Linux 不受影響。
+- 本機預覽伺服器開著時 `npm ci` 會因檔案被鎖住而裝不完整，之後建置會出現怪錯誤（找不到 zod/v4）。先停預覽伺服器再裝。
+- `ops-links.mjs register` 只登記「目標還沒上線」的連結；多篇同時上線時，彼此之間的連結不會被登記，要手動用 `apply-pending-link.mjs` 補。
+
+### 尚未完成
+
+- 北海道地區頁維持 noindex，流程還沒有開放地區頁索引的步驟。
+- 文內圖（利尻島交通已選 3 張）還沒有上傳工具。
+- Sanity Webhook → Deploy Hook 還沒設定：之後在 Sanity 改內容，網站要等下一次推 `main` 才會更新。
+- 宗谷岬交通在 `auto/wakkanai-writing`（本機自動寫作），還沒合併、還沒上線。
+
+### 唯一下一步
+
+- 設定 Sanity Webhook → Cloudflare Deploy Hook，讓文章上傳後網站自動更新。

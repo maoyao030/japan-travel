@@ -89,7 +89,10 @@ test('四個分類是地點、季節、神社與祭典、旅行教學的空殼',
     ].join('\n')
 
     assert.equal(category.readerQuestions.length, 3)
-    assert.deepEqual(category.topics, [], `${category.slug} 的主題中心要等 Darren 核准試點清單後才填`)
+    // 地點分類的主題中心取自地點清單（已核准規劃的旅行群，見 tests/place-hubs.test.ts）；其他分類還沒有核准的主題。
+    if (category.slug !== 'places') {
+      assert.deepEqual(category.topics, [], `${category.slug} 的主題中心要等 Darren 核准後才填`)
+    }
     assert.doesNotMatch(publicCopy, /先看|懶人包|重點整理|這三個問題/)
   }
 

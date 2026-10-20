@@ -9,12 +9,152 @@
   "selectionMode": "criteria-based-auto-selection",
   "selectionScopeNote": "試寫草稿的暫定選圖，只記錄單張頁與授權，沒有下載原圖、沒有上傳。影片嵌入候選不寫進候選欄位，列在 images/media-candidates.md。",
   "selectedCandidateIds": {
+    "cover": "cover-01",
     "oshidomari-terminal": "terminal-01",
     "rishiri-airport": "airport-01",
     "cycling-road": "cycling-01"
   },
   "selectedAt": "2026-10-20",
   "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "文章封面：一眼看出這篇講的是搭渡輪抵達利尻島、從鴛泊港開始的島上交通。",
+      "mustShow": ["利尻山（利尻富士）", "鴛泊港或往返稚內的渡輪"],
+      "mustNotShow": ["禮文島、稚內或其他地方冒充利尻島", "可辨識的人物臉部", "店家或旅館招牌當主體", "與文內圖重複的照片"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/%E9%B4%9B%E6%B3%8A%E6%B8%AF%E3%81%8B%E3%82%89%E3%81%AE%E5%88%A9%E5%B0%BB%E5%B1%B1.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.45},
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "cover-01 同時有利尻山與正在進鴛泊港的渡輪，正好是文章開頭「從稚內搭船到鴛泊港」的畫面；晴天傍晚、解析度 4896 px，裁成 16:9 後山頂與渡輪都留在畫面內，底部港邊建物大多裁掉。cover-02 也是鴛泊港望利尻山，但陰天、山頂被雲遮、沒有渡輪，列為備選。cover-03 是鴛泊市街與利尻山，2006 年拍、沒有港口與船，交通主題較弱。三張都不是文內已選的鴛泊渡輪站、機場或自行車道照片。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-21",
+        "photoSearchNotes": "查過維基共享資源 Category:Mount Rishiri、Category:Remote views of Mount Rishiri（全部 36 張看過檔案資訊）與 Category:Oshidomari Port；排除寬度不到 1600 px、從禮文島或稚內拍（不是在利尻島上）、空拍與太空照片，以及文內已選的機場照片。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E9%B4%9B%E6%B3%8A%E6%B8%AF%E3%81%8B%E3%82%89%E3%81%AE%E5%88%A9%E5%B0%BB%E5%B1%B1.jpg",
+          "creatorName": "Koda6029",
+          "sourceTitle": "File:鴛泊港からの利尻山.jpg",
+          "sourceDescription": "鴛泊港からの利尻山",
+          "takenAt": "2016-09-23",
+          "width": 4896,
+          "height": 3672,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-21",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為「鴛泊港からの利尻山」，分類 Mount Rishiri 與 Oshidomari Port；從港邊高處拍，白色渡輪正駛進鴛泊港的防波堤內，背景是晴天的利尻山，前景是港區碼頭。",
+          "altDraft": "渡輪駛進利尻島鴛泊港，後方是利尻山",
+          "captionDraft": "從鴛泊港望利尻山，渡輪正進港（2016 年）。",
+          "creditDraft": "照片：Koda6029／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "渡輪船身塗裝很小，看不清公司標誌；碼頭貨車字樣無法辨識",
+            "artwork": "none",
+            "property": "港口、渡輪與山景；右下角港邊建物在 16:9 裁切後大多不在畫面內",
+            "risk": "low",
+            "notes": "沒有可辨識人物，不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:130726_Mount_Rishiri_view_from_Oshidomari_Port_in_Rishiri_Island_Hokkaido_Japan02s3.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:130726 Mount Rishiri view from Oshidomari Port in Rishiri Island Hokkaido Japan02s3.jpg",
+          "sourceDescription": "Mount Rishiri view from Oshidomari Port in Rishiri Island, Hokkaido, Japan.（鴛泊港から望む利尻山）",
+          "takenAt": "2013-07-26",
+          "width": 4800,
+          "height": 3200,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-10-21",
+          "licenseNotes": "檔案頁為 GFDL、CC BY-SA 3.0、CC BY 2.5 多重授權，選用 CC BY 2.5。",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為從鴛泊港望利尻山，分類 Oshidomari Port；港內水面、碼頭與小船在前，利尻山在後。",
+          "altDraft": "從鴛泊港望利尻山，山頂有雲",
+          "captionDraft": "從鴛泊港望利尻山（2013 年）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "港口與山景",
+            "risk": "low",
+            "notes": "陰天，山頂被雲遮住一部分；畫面裡沒有渡輪。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-03",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rishiri_102_01102006.JPG",
+          "creatorName": "Dmitry Petelin",
+          "sourceTitle": "File:Rishiri 102 01102006.JPG",
+          "sourceDescription": "Oshidomari village and Mt. Rishiri in the background",
+          "takenAt": "2006-10-01",
+          "width": 2560,
+          "height": 1920,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-21",
+          "matchType": "exact",
+          "matchLimits": "2006 年拍攝，市街建物可能已有變動；畫面沒有港口設施或交通工具。",
+          "whyItFits": "檔案頁說明為鴛泊市街與後方的利尻山；從ペシ岬方向拍，海岸、草地、鴛泊市街與利尻山都在畫面裡。",
+          "altDraft": "鴛泊的海岸與市街，後方是利尻山",
+          "captionDraft": "鴛泊市街與利尻山（2006 年）。",
+          "creditDraft": "照片：Dmitry Petelin／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "市街遠景與山景",
+            "risk": "low",
+            "notes": "建物都是遠景，沒有可辨識招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
     {
       "slotId": "oshidomari-terminal",
       "kind": "inline",
