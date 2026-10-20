@@ -20,7 +20,7 @@ test('Cloudflare CI 會先跑完整測試，再建置網站', async () => {
   assert.match(packageJson.scripts.build, /check:links/)
 })
 
-test('Workers 靜態資產與分支預覽設定保持啟用，正式網域尚未綁定', async () => {
+test('Workers 靜態資產與分支預覽設定保持啟用，正式網域綁定 offpathnotes.com', async () => {
   const wranglerConfig = parseJsonc(
     await readFile(path.join(projectRoot, 'wrangler.jsonc'), 'utf8'),
   )
@@ -29,7 +29,7 @@ test('Workers 靜態資產與分支預覽設定保持啟用，正式網域尚未
   assert.equal(wranglerConfig.main, 'workers/site/src/index.ts')
   assert.equal(wranglerConfig.workers_dev, true)
   assert.equal(wranglerConfig.preview_urls, true)
-  assert.equal('routes' in wranglerConfig, false)
+  assert.deepEqual(wranglerConfig.routes, [{pattern: 'offpathnotes.com', custom_domain: true}])
   assert.equal(wranglerConfig.assets.directory, './dist')
   assert.equal(wranglerConfig.assets.binding, 'ASSETS')
   assert.equal(wranglerConfig.assets.not_found_handling, '404-page')

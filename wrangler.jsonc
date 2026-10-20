@@ -6,8 +6,8 @@
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
   "preview_urls": true,
-  // 正式網域決定後再加回：
-  // "routes": [{"pattern": "example.com", "custom_domain": true}],
+  // 正式網域（Custom Domain）：Cloudflare 會自動建立 DNS 紀錄與 HTTPS 憑證。
+  "routes": [{"pattern": "offpathnotes.com", "custom_domain": true}],
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
@@ -15,11 +15,11 @@
     "run_worker_first": true
   },
   // 聯絡表單寄信用。allowed_sender_addresses 必須是 Cloudflare Email Service 已驗證的寄件地址；
-  // 第一次部署前要換成正式網域的信箱，或暫時整段移除並停用聯絡表單。
+  // 第一次部署前要在 Cloudflare Email Service 驗證這個地址，或暫時整段移除並停用聯絡表單。
   "send_email": [
     {
       "name": "CONTACT_EMAIL",
-      "allowed_sender_addresses": ["contact@japan-travel.example"]
+      "allowed_sender_addresses": ["contact@offpathnotes.com"]
     }
   ],
   "observability": {

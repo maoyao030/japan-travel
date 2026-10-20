@@ -520,3 +520,20 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 把 `plan/wakkanai-rishiri-rebun` 合併到 `main`（Darren 同意後）。
+
+## 2026-10-20 Claude Code：正式網域 offpathnotes.com
+
+### 已完成
+
+- 在 Cloudflare 查了 goyorimichi.com 與 offpathnotes.com，兩個都能註冊，首年與續約都是每年 US$10.46。Darren 選了 offpathnotes.com 並自行購買。
+- 網域寫進 `site.config.mjs`、`src/config/contact.ts`（信箱 `contact@offpathnotes.com`）、`wrangler.jsonc`（Custom Domain 與寄件地址）、`.env.example`、`content-automation/article-queue.json` 的 `siteBaseUrl`，`DEPLOYMENT.md` 同步。
+
+### 尚未完成
+
+- 站名還沒決定（`src/config/site.ts` 仍是暫定名稱）。
+- 第一次部署前要在 Cloudflare Email Routing 設好 `contact@offpathnotes.com` 收信，並在 Email Service 驗證寄件地址；否則先移除 `send_email` 段落。
+- Cloudflare Workers 專案還沒建立，網站還沒部署。
+
+### 唯一下一步
+
+- 決定站名。

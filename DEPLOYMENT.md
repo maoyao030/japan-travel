@@ -1,6 +1,6 @@
 # 部署設定（尚未部署）
 
-本站沿用好材誌的部署方式：Cloudflare Workers Builds 連接 GitHub repo，每次推送自動跑測試、建置，通過後才部署。Sanity 專案已於 2026-10-17 建立（專案 ID `e8ctf7ee`、dataset `production` 公開，見 `studio/README.md`）；Cloudflare 專案與網域尚未建立，本文件先記錄設定基準，實際建立時照著做。
+本站沿用好材誌的部署方式：Cloudflare Workers Builds 連接 GitHub repo，每次推送自動跑測試、建置，通過後才部署。Sanity 專案已於 2026-10-17 建立（專案 ID `e8ctf7ee`、dataset `production` 公開，見 `studio/README.md`）；網域 `offpathnotes.com` 已於 2026-10-20 購買，Cloudflare Workers 專案尚未建立，本文件先記錄設定基準，實際建立時照著做。
 
 ## 自動流程
 
@@ -24,7 +24,9 @@
 
 ## 正式網域
 
-- 網域尚未決定。決定後：改 `site.config.mjs` 的 `DEFAULT_SITE_URL`、`src/config/contact.ts` 的信箱、`wrangler.jsonc` 加回 `routes` 的 Custom Domain，並把 `send_email.allowed_sender_addresses` 換成 Cloudflare Email Service 已驗證的寄件地址（或先整段移除、停用聯絡表單）。
+- 正式網域是 `offpathnotes.com`，2026-10-20 由 Darren 在 Cloudflare Registrar 購買（每年 US$10.46，續約同價）。已寫進 `site.config.mjs` 的 `DEFAULT_SITE_URL`、`src/config/contact.ts` 的信箱、`wrangler.jsonc` 的 `routes` Custom Domain 與 `send_email.allowed_sender_addresses`、`.env.example`、`content-automation/article-queue.json` 的 `siteBaseUrl`。
+- 第一次部署前還要做：在 Cloudflare Email Routing 設好 `contact@offpathnotes.com` 的收信轉寄，並在 Email Service 驗證這個寄件地址；做不到就先移除 `wrangler.jsonc` 的 `send_email` 段落、停用聯絡表單。
+- 站名還沒決定，仍是 `src/config/site.ts` 的暫定名稱。
 - Cloudflare 會為 Custom Domain 自動建立代理 DNS 紀錄與 HTTPS 憑證。
 - 網域綁定不代表開放搜尋引擎收錄；文章與主題中心預設 `noindex`，要經過驗收與核准才會由腳本開放索引。
 

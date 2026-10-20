@@ -1,6 +1,6 @@
-// 網站的根網址與 Sanity 專案設定。站名與網域尚未決定，先用佔位網址；
-// 正式網域確定後改這裡的 DEFAULT_SITE_URL（或在 Cloudflare 設 SITE_URL 環境變數）即可。
-export const DEFAULT_SITE_URL = 'https://japan-travel.example/'
+// 網站的根網址與 Sanity 專案設定。正式網域 offpathnotes.com（2026-10-20 購買）；
+// 要換網域時改這裡的 DEFAULT_SITE_URL（或在 Cloudflare 設 SITE_URL 環境變數）。
+export const DEFAULT_SITE_URL = 'https://offpathnotes.com/'
 
 export function resolveSiteUrl(value = process.env.SITE_URL) {
   const siteUrl = new URL(value || DEFAULT_SITE_URL)
