@@ -53,3 +53,23 @@ Sanity 專案建立後，在該專案的 dataset 加一個 Webhook，連到 Clou
 2. 確認 Cloudflare 建置成功並產生該分支的 Preview URL。
 3. 確認 Preview URL 可開啟，且正式 Workers 網址沒有被替換。
 4. 執行一次刻意失敗的預覽建置，確認失敗後正式網址仍維持上一個正常版本。
+
+## 好材誌踩過的坑（2026-10-20 整理，第一次部署照著檢查）
+
+程式已處理（2026-10-20）：
+
+- Sanity 專案 ID 寫死預設 `e8ctf7ee`（`site.config.mjs`），建置變數漏設也不會建成空站；只有 `SANITY_PROJECT_ID=none` 才以空內容建置。
+- Sanity 還沒有任何文章時，`check:schema` 不要求文章頁；有文章卻一篇都沒建出來才讓建置失敗。
+- `*.workers.dev` 測試網址回 `X-Robots-Tag: noindex, nofollow`，避免跟正式網域重複。
+- `.gitattributes` 統一 LF，避免 Windows 換行讓 CI 失敗。
+- 沿用好材誌已修好的：http 301 轉 https、首頁與分類頁開放索引、sitemap 只收可索引頁、裝置內建字體、圖片 srcset、Organization logo。
+
+後台操作時要注意：
+
+1. **Workers Builds 連 GitHub**：從 Worker 的 Settings → Build 連，GitHub App 只授權 `maoyao030/japan-travel`。好材誌第一次連時 GitHub 的二次驗證打斷回呼，結果觸發器是 0 個；連完要推一個非 `main` 分支確認真的有建置，沒有就卸載 GitHub App 重連。
+2. 第一次建置看 log 的 Node 版本，低於 22.18 就在 Build variables 加 `NODE_VERSION=24`。
+3. Worker Secrets 一律用 Secret（或 `wrangler secret put`），不要用純文字 Variables，否則可能被部署覆蓋。
+4. **大寫轉小寫的轉址規則一定要排除 `/_astro/`**（也排除 `/api/`）。好材誌誤套到 CSS 檔，全站版面壞掉，而且 301 會被瀏覽器快取。
+5. SSL/TLS → Edge Certificates 開「Always Use HTTPS」，跟程式的轉址雙重保險。
+6. 綁好網域後本機打不開不一定是設定錯，可能是 DNS 快取，用 `nslookup offpathnotes.com 1.1.1.1` 或手機網路確認。
+7. Deploy Hook 網址等同密碼，不貼進聊天或終端機輸出；外洩就刪掉重建。

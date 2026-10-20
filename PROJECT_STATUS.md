@@ -555,3 +555,23 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 在 Cloudflare 建立 Workers 專案並連接 GitHub，完成第一次部署。
+
+## 2026-10-20 Claude Code：網站建置與第一次部署準備（分支 `claude/website-setup-layout-505d3e`，已推到 `main`）
+
+### 已完成
+
+- 確認版面：網站程式與樣式已經沿用好材誌（首頁、分類、主題中心、文章頁、手機版目錄與表格捲動），本機實測桌機與手機版正常。
+- 子代理整理好材誌踩過的 28 個坑，對照本站。本站缺的已補上：Sanity 專案 ID 預設值（避免靜悄悄建成空站）、Sanity 沒文章時建置不卡、workers.dev 測試網址 noindex、`.gitattributes` 統一 LF。後台要注意的坑寫進 `DEPLOYMENT.md`「好材誌踩過的坑」。
+- 換掉沿用的人形佔位圖：新的 favicon、`public/logo.png`、`public/og.png`（繞路筆記）。
+- 測試 147 項通過，`npm run ci` 建置通過（9 頁，目前 Sanity 沒有文章）。
+
+### 尚未完成
+
+- 第一次部署：`npm run deploy` 被權限檢查擋下（正式部署），要 Darren 同意。
+- Workers Builds 連 GitHub、Email Routing（`contact@offpathnotes.com`）、Turnstile、Sanity Webhook，都要 Darren 在後台操作或同意。
+- 文章的影片嵌入與資料圖元件還沒做（寫作 Skill 註明「網站元件製作中」）。
+- 稚內群已驗收的文章在 `plan/wakkanai-outline`，還沒上傳 Sanity。
+
+### 唯一下一步
+
+- Darren 同意後執行第一次部署，確認 offpathnotes.com 打得開。
