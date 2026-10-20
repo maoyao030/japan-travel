@@ -1,0 +1,836 @@
+{
+  "schemaVersion": 1,
+  "articleId": "cape-soya-transport",
+  "articleSha256": "7a62a02a5485c932dfc1a46b07fd1cfe6400cacd353b40f4fce3438a77cf5666",
+  "checker": "事實查核 agent（Claude Opus 5.5，非作者，唯讀查核；2026-10-20 第1輪與驗收後第2輪複查，以 curl 實際打開宗谷巴士、稚內觀光協會、稚內市、稚內步道官方頁、PDF、宗谷巴士頁面照片與 YouTube 說明欄）",
+  "checkedAt": "2026-10-20",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "宗谷岬是北海道本島的最北端",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1018.html",
+      "sourceTitle": "宗谷岬｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "北海道本島の最北端、北緯45度31分22秒に位置する岬。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "離稚內市區往東32公里",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」",
+      "sourceQuote": "稚内市内から宗谷岬までは片道32km。",
+      "verdict": "verified",
+      "notes": "起點是「稚内市内」。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "宗谷岬交通以宗谷巴士的路線巴士為主，這也是全年行駛的唯一大眾運輸。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」",
+      "sourceQuote": "公共交通機関は路線バスのみで１日４往復。",
+      "verdict": "verified",
+      "notes": "原文出自元旦活動頁。改成「全年行駛的」之後，和夏季另有 Active Bus 不再矛盾。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "這條路線一天只有4個來回",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "宗谷岬 10：20 14：20 17：02 20：20／宗谷岬 7：21 8：44 11：04 15：20",
+      "verdict": "verified",
+      "notes": "上り第2、4、6、8便與下り第1、2、4、6便經過宗谷岬，各4班。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "從岬上回稚內的末班車是15:20。錯過這班，當天就沒有巴士回市區。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "下り 宗谷岬 7：21 8：44 11：04 15：20（第7、8便は鬼志別ターミナル止まり）",
+      "verdict": "verified",
+      "notes": "下り第7、8便在鬼志別ターミナル終點，不經宗谷岬。夏季 Active Bus 16:00、17:00 另有班次，正文後段已說明。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "搭16:12以後的車過去，當天也已經沒有車可以回來。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "稚内駅前ターミナル 16：12 → 宗谷岬 17：02",
+      "verdict": "verified",
+      "notes": "17:02 到達晚於回程末班 15:20。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "開車從JR稚內站過去約40分鐘",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1018.html",
+      "sourceTitle": "宗谷岬｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "●車：JR稚内駅から約40分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "還能順路開上用扇貝殼鋪成的白色道路",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1021.html",
+      "sourceTitle": "白い道｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "特産のホタテの貝殻を敷き詰めた、約3kmの美しい道。／●車：宗谷岬から約10分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "沒車的話，夏天可以在岬上租自行車",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_89.html",
+      "sourceTitle": "レンタサイクルで稚内の大自然を感じよう！",
+      "sourceQuote": "Base-Soya（宗谷岬）では6月より貸出を開始する予定です。（貸出時間：10：00～16：00 受付は15：00まで）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "或沿步道走到宗谷站搭巴士",
+      "sourceUrl": "http://www.wakkanai-cci.or.jp/wakkanai-footpath/course_guide/course_souya/index.html",
+      "sourceTitle": "宗谷丘陵コース | 稚内フットパス",
+      "sourceQuote": "復路：路線バス（「宗谷」（宗谷歴史公園）から「駅前ターミナル」）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "總站的窗口在JR稚內站旁的「キタカラ」裡。",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1154.html",
+      "sourceTitle": "初日の出inてっぺん｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "乗車券は前日からバスターミナルの窓口（キタカラ内）で購入可能です。",
+      "verdict": "verified",
+      "notes": "キタカラ在 JR稚內站旁見 feature/detail_89.html「JR稚内駅に併設されているキタカラ１F」。Active Bus 傳單的駅前ターミナル乘車處地圖也畫在 JR稚内駅旁。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "往宗谷岬要搭宗谷巴士的「天北宗谷岬線」，往浜頓別或鬼志別的車都可以坐。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/souyacape",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社",
+      "sourceQuote": "宗谷岬へ行くには路線バス「 天北宗谷岬線 」の「 浜頓別行き 」又は「 鬼志別行き 」をご利用ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "在稚內站前巴士總站（稚内駅前バスターミナル）的1號乘車處上車，大約50分鐘到宗谷岬。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/souyacape",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社",
+      "sourceQuote": "始発バス停「稚内駅前ターミナル」の「１番のりば」より鬼志別行き・浜頓別行きのバスへ乗車します／始発「 稚内駅前ターミナル 」からの所要時間は約50分です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "時刻表全年一樣，平日假日也相同",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/wakkanai",
+      "sourceTitle": "稚内エリア | 宗谷バス株式会社",
+      "sourceQuote": "天北宗谷岬線のみ平日・休日問わず通年ダイヤとなります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "風雪大的早上，可以在出發前到キタカラ裡的總站窗口當面問當天有沒有開，會講日文的話也可以打給宗谷巴士稚內營業所0162-33-5515。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa",
+      "sourceTitle": "よくあるご質問 | 宗谷バス株式会社",
+      "sourceQuote": "悪天候などで運休の際は、どのように情報を得られますか？ 各営業所へお問い合わせください。",
+      "verdict": "verified",
+      "notes": "宗谷巴士頁尾的「営業所一覧」列有「駅前ターミナル 0162-22-3114」，總站窗口屬官方營業所之一，當面問屬可行做法；稚內營業所電話見時刻表 PDF「運行状況のお問い合せは、宗谷バス㈱稚内営業所（０１６２ー３３ー５５１５）」。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "去程表：9:30→10:20、13:30→14:20、16:12→17:02、19:30→20:20",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "稚内駅前ターミナル 9：30 13：30 16：12 19：30／宗谷岬 10：20 14：20 17：02 20：20",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "回程表：7:21→8:26、8:44→9:46、11:04→12:04、15:20→16:18",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "宗谷岬 7：21 8：44 11：04 15：20／稚内駅前ターミナル 8：26 9：46 12：04 16：18",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "回程表上7:21與8:44這兩班，從稚內搭首班車過去也趕不上，首班車10:20才到岬上。從稚內當天來回，實際能搭的回程只有11:04和15:20。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "上り第2便 稚内駅前ターミナル 9：30 宗谷岬 10：20",
+      "verdict": "verified",
+      "notes": "以時刻表重算：首班到達 10:20 晚於 7:21、8:44。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "錯過15:20的末班車，夏季還有Active Bus可搭，2026年是6月1日到9月30日，宗谷岬16:00、17:00各有一班回站前。其他月份沒有巴士能回，只能叫計程車",
+      "sourceUrl": "http://www.soyabus.co.jp/active-bus",
+      "sourceTitle": "日本のてっぺんでアクティブバス | 宗谷バス株式会社",
+      "sourceQuote": "運行期間：2026年6月1日～9月30日／宗谷岬発 16：00 17：00／稚内駅前ターミナル着 17：00 18：00",
+      "verdict": "verified",
+      "notes": "其他月份：天北宗谷岬線時刻表宗谷岬往稚內最後一班 15:20，沒有其他巴士。「從岬上叫車對不會日文的人最難」「冬天隔天一早…適合9:30去、11:04回」是編輯判斷，沒有可查的事實，未另列。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "天氣惡劣時可能停駛。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "◎ 運行状況のお問い合せは、宗谷バス㈱稚内営業所（０１６２ー３３ー５５１５）◎ 悪天候及び都合により運休する場合があります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "上午去、中午前回：搭9:30的車，10:20到，搭11:04的車回，12:04回到稚內。下午去：搭13:30的車，14:20到，只能搭15:20的末班車回，16:18回到稚內。待一整天：搭9:30的車去，搭15:20的末班車回。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "宗谷岬 10：20 14：20 17：02 20：20／宗谷岬 7：21 8：44 11：04 15：20／稚内駅前ターミナル 8：26 9：46 12：04 16：18",
+      "verdict": "verified",
+      "notes": "三種組合以時刻表重算無誤，也沒有遺漏其他可行組合。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "稚內市的觀光手冊排模範路線時，在宗谷岬停30分鐘、宗谷丘陵停1小時。",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00008500/00008586/jp_p39-p40.pdf",
+      "sourceTitle": "稚内観光モデルコース（WAKKANAI GUIDE BOOK p39-40）",
+      "sourceQuote": "COURSE 01 絶景満喫コース 宗谷岬 滞在時間30分／宗谷丘陵 滞在時間1時間",
+      "verdict": "verified",
+      "notes": "COURSE 02 另有宗谷岬 10 分、宗谷岬公園 30 分；正文引的是 COURSE 01。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "稚內站前巴士總站到宗谷岬單程1,600圓，兒童800圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/souyacape",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社",
+      "sourceQuote": "稚内駅前ターミナル⇔バス停「宗谷岬」間は片道1,600円です。（小児・障がい者の方は800円）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "只往返宗谷岬，到總站窗口買2,880圓的「紀念來回乘車券」最划算，比單程買兩次的3,200圓省320圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/souyacape",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社",
+      "sourceQuote": "駅前ターミナル窓口にて、お得な記念往復乗車券（2,880円）を販売しております",
+      "verdict": "verified",
+      "notes": "1,600×2＝3,200；3,200−2,880＝320，重算無誤。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "稚內路線巴士一日券大人3,300圓，一樣只在總站窗口賣，用在天北宗谷岬線上只能坐到宗谷岬。一日券比來回券貴420圓…一日券兒童1,700圓",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/wakkanai",
+      "sourceTitle": "稚内エリア | 宗谷バス株式会社",
+      "sourceQuote": "【料金】大人3,300円、小児1,700円／【販売場所】稚内駅前ターミナル窓口／天北宗谷岬線は「宗谷岬」までの限定とする",
+      "verdict": "verified",
+      "notes": "3,300−2,880＝420，重算無誤；兒童1,700圓見同頁。紀念來回乘車券官方頁沒寫兒童價，正文改成請讀者在窗口問，正確。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "宗谷巴士收現金或PayPay，信用卡與交通IC卡都不能用，部分票種也不收PayPay。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa",
+      "sourceTitle": "よくあるご質問 | 宗谷バス株式会社",
+      "sourceQuote": "お支払いは現金又はキャッシュレス決済の場合PayPayがご利用いただけます。それ以外の方法は対応しておりませんので、ご了承ください。※商品によってはPayPay決済の出来ない場合がございます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "車上只能用千圓鈔換零錢",
+      "sourceUrl": "http://www.soyabus.co.jp/qa",
+      "sourceTitle": "よくあるご質問 | 宗谷バス株式会社",
+      "sourceQuote": "バス車内で両替可能な紙幣は千円札のみとなっております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "宗谷岬不是這條路線的終點，快到時要自己按鈴下車。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/souyacape",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社",
+      "sourceQuote": "バス停「宗谷岬」で降車します。（宗谷岬は終点ではないのでご注意ください。）",
+      "verdict": "verified",
+      "notes": "按鈴見 http://www.soyabus.co.jp/routebus/howto「降りたいバス停がアナウンスされたら近くの降車ボタンを押してください。」"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "回程搭往稚內站前巴士總站的車，大約1小時回到總站。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/souyacape",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社",
+      "sourceQuote": "終点「 稚内駅前ターミナル 」までの所要時間は約１時間です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "在候車室裡等，司機可能沒注意到有人要上車，車快到時要出來站在站牌旁邊。站牌的位置會隨季節稍微移動",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/souyacape",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社",
+      "sourceQuote": "※バス停ポール付近でお待ちください。時期によってポール位置が多少変わる場合があります。※バス時刻が近くなりましたら待合室から出てお待ちください。室内で待たれますと運転手が気づけない場合がありますのでご注意ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "岬上風很強，等車時穿著防寒、防風的外套比較好。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」",
+      "sourceQuote": "宗谷岬は非常に風が強い場所のため、充分な防寒・防風対策を講じてお越しください。",
+      "verdict": "verified",
+      "notes": "經營者官方以外的觀光協會官方說法，屬客觀狀況，有官方依據。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "夏天的Active Bus在宗谷岬上下車的地方跟路線巴士不同。",
+      "sourceUrl": "http://www.soyabus.co.jp/active-bus",
+      "sourceTitle": "日本のてっぺんでアクティブバス | 宗谷バス株式会社",
+      "sourceQuote": "※宗谷岬の乗降場所が路線バスのバス停と異なりますのでご注意ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "Active Bus停在國道238號旁、停車場一側的路邊，宗谷巴士傳單的地圖上，旁邊標著最北観光（株）柏屋與食堂最北端。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/pdf/2026_activebus.pdf",
+      "sourceTitle": "日本のてっぺんでアクティブバス 2026 チラシ（アクティブバス乗り場／宗谷岬）",
+      "sourceQuote": "宗谷岬 路線バスの停留所と異なります！（地圖：ココ／P／238／最北観光（株）柏屋／食堂最北端）",
+      "verdict": "verified",
+      "notes": "從 PDF 抽出內嵌圖片閱讀：「ココ」在國道238號旁、P 停車場附近的路邊，右側標「最北観光（株）柏屋」，左下標「食堂最北端」。和正文一致。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "定期觀光巴士「稚內A」…8:00從稚內站前出發、11:50回到站前，途中經過宗谷丘陵並停靠宗谷岬，大人3,600圓。宗谷丘陵這一段只從車窗看，不下車。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧 | 宗谷バス株式会社",
+      "sourceQuote": "稚内A 大人 3,600円／稚内駅前バスターミナル発～…～北海道遺産・宗谷丘陵(車窓)～宗谷岬～…～稚内駅前バスターミナル着／8:00発 → 11:50着",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "下午出發的「稚內B」大人3,900圓，5月3日到5日與5月20日到8月31日是14:00發、18:15回到站前。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧 | 宗谷バス株式会社",
+      "sourceQuote": "稚内B 大人 3,900円／5月3日～5月5日･5月20日～8月31日 14:00発 → 18:15着／9月1日～9月30日 13:45発 → 18:00着",
+      "verdict": "verified",
+      "notes": "第 2 輪已補 5月3日到5日，與官方期間一致。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "觀光巴士每年只在夏天開，2026年是5月3日到5日與5月20日到9月30日。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧 | 宗谷バス株式会社",
+      "sourceQuote": "2026年度 定期観光バス コース一覧 【今年度の運行は終了いたしました】 運行期間：2026年5月3日～5月5日、5月20日～9月30日まで ・定期観光バスは夏季限定の運行です。",
+      "verdict": "verified",
+      "notes": "稚內觀光協會常見問題頁寫「5月3日～5月6日」，與經營者官方差一天；以宗谷巴士為準，正文正確。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "要預約，乘車日前2個月開放訂位。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧 | 宗谷バス株式会社",
+      "sourceQuote": "定期観光バスは 『 予約制 』です 。予約は乗車日の『 ２か月前 』から受付開始いたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "宗谷岬每年元旦都有迎接日出的活動，2026年的日出是7:12。",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1154.html",
+      "sourceTitle": "初日の出inてっぺん｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "2026年1月1日(木)開催／7：12～ ご来光",
+      "verdict": "verified",
+      "notes": "每年舉辦見 feature/detail_32.html「昭和63年（1988）の元旦から開催しているイベントです」。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "2026年元旦稚內市內的路線巴士全部停駛，天北宗谷岬線與機場聯絡巴士例外。天北宗谷岬線照常開",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/wakkanai",
+      "sourceTitle": "稚内エリア | 宗谷バス株式会社",
+      "sourceQuote": "2025年度 年末年始の運行について／1月1日（木）…全便運休（天北宗谷岬線、空港連絡バスは除く）",
+      "verdict": "verified",
+      "notes": "已改成兩條例外，與官方一致。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "首班9:30從稚內出發、10:20才到，趕不上日出。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "稚内駅前ターミナル 9：30 … 宗谷岬 10：20",
+      "verdict": "verified",
+      "notes": "對照日出 7:12。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "2026年是6:00從稚內站前巴士總站出發、6:50到宗谷岬。回程8:00離開岬上，經野寒布岬，9:30回到站前。",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1154.html",
+      "sourceTitle": "初日の出inてっぺん｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "6:00 駅前バスターミナル／6:50 宗谷岬着／8:00 宗谷岬発／9:00 ノシャップ岬着／9:20 ノシャップ岬発／9:30 駅前バスターミナル",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "大人3,000圓、兒童1,500圓，前一天起可以在總站窗口買票。",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1154.html",
+      "sourceTitle": "初日の出inてっぺん｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "大人3,000円 小人1,500円／乗車券は前日からバスターミナルの窓口（キタカラ内）で購入可能です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "2027年的活動預定在1月1日舉辦，當年接駁巴士的時刻可以在活動頁或總站窗口確認。",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1154.html",
+      "sourceTitle": "初日の出inてっぺん｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "2027年１月1日（金）の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "活動現場只有飲料販賣機，除夕宗谷岬附近的餐廳和商店也沒開，吃的東西要在市區買好帶去。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」",
+      "sourceQuote": "飲料の自動販売機の設置はありますが、飲食店はございません。あらかじめ市内で必要な食料を調達の上、ご来場ください。／大晦日は宗谷岬付近の飲食店や売店は営業しておらず",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "跨年到元旦清晨，岬上的氣溫會降到零下10度左右。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」",
+      "sourceQuote": "大晦日から元旦にかけて宗谷岬の気温はマイナス10℃前後まで下がり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "從稚內市區搭計程車到宗谷岬，單程32公里，車程約40分鐘。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」",
+      "sourceQuote": "稚内市内から宗谷岬までは片道32km。／夏なら市内から車で約40分",
+      "verdict": "verified",
+      "notes": "來源是自駕時間，正文套用到計程車，屬合理推論。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "JR稚內站旁「キタカラ」1樓的稚內市觀光案內所…10:00到18:00開，12月31日到1月5日休息。",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/shisei/koryu/yonnkyokukouryuu.html",
+      "sourceTitle": "日本本土四極証明書｜稚内市",
+      "sourceQuote": "稚内市観光案内所 住所：稚内市中央3丁目6-1 キタカラ1F 営業時間：10時00分～18時00分 ※年末年始：12月31日～1月５日は休業",
+      "verdict": "verified",
+      "notes": "「可以到案內所問計程車車資與包車方案」「問好回程計程車怎麼叫」是建議寫法，官方頁沒寫案內所提供計程車服務，屬「改寫成能做的事」，未列為事實。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "從JR稚內站開到宗谷岬約32公里，大約40分鐘。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」",
+      "sourceQuote": "稚内市内から宗谷岬までは片道32km。／夏なら市内から車で約40分で到着する宗谷岬",
+      "verdict": "verified",
+      "notes": "官方起點是「稚内市内」，JR稚內站在市內，可接受；約40分另見 spot/detail_1018.html「●車：JR稚内駅から約40分」。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "宗谷岬的停車場免費，有72個車位。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1018.html",
+      "sourceTitle": "宗谷岬｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "駐車場 72台、無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "從宗谷岬再開約10分鐘就到白色道路。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1021.html",
+      "sourceTitle": "白い道｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "●車：宗谷岬から約10分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "稚內市建議從宗谷岬那一側的起點開進白色道路、往宗谷地區走，汽車導航卻常把路線排成反方向，從終點那一頭進去。稚內市的官方影片從宗谷岬一路拍到白色道路的起點",
+      "sourceUrl": "https://www.youtube.com/watch?v=ljibqeLKWi4",
+      "sourceTitle": "【稚内市公式】白い道への行き方と守ってほしい5つのお願い（稚内市観光動画）",
+      "sourceQuote": "白い道は宗谷岬側のスタート地点から宗谷地区側のゴール地点を目指すルートがオススメ。…しかし、カーナビなどではゴール地点からスタート地点を目指すルート（逆路）が表示されてしまいます。…そこで、今回は宗谷岬から白い道へ向かう順路のアクセス方法を、動画で紹介します！",
+      "verdict": "verified",
+      "notes": "影片說明欄，頻道「稚内市観光動画」，2021-05-26 上傳；說明欄寫影片介紹從宗谷岬到白い道的順路走法，「一路拍到起點」依說明欄可接受（影片畫面本身未逐格看）。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "觀光協會也拜託開車的旅客在宗谷岬一帶上好廁所、在白色道路上減速互讓、絕對不要開進牧草地。終點的宗谷地區是住宅區，開到那一段車速再放慢一點。",
+      "sourceUrl": "https://www.north-hokkaido.com/news/detail_269.html",
+      "sourceTitle": "【お知らせ】白い道が開通となりました！（稚内観光協会）",
+      "sourceQuote": "2.宗谷岬周辺でトイレを済ませよう 3.白い道ではスピードダウン＆譲り合い 4.牧草地には絶対入らないで 5.ゴール地点の宗谷地区（市街地）ではゆっくり走る",
+      "verdict": "verified",
+      "notes": "原文「市街地」，正文寫「住宅區」，意思接近。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "2026年5月到10月左右是拆除風車的工程期。平日8:00到17:00前後，大型車經過時，白色道路一帶會有交通指揮人員管制，兩個方向輪流單線通行。一天最多約20次，每次大約等5到10分鐘。",
+      "sourceUrl": "https://www.north-hokkaido.com/lsc/upfile/info/0000/0308/308_1_l.png",
+      "sourceTitle": "ユーラス宗谷岬ウインドファーム撤去工事 交通規制のお知らせ",
+      "sourceQuote": "2026年5月～10月頃 平日8:00～17:00頃／主に大型車両（トレーラー等）が通行する際に交通誘導員による片側交互通行を行う予定です。／交通規制の頻度は1日に最大20回程度、1回あたり5～10分程度お待ちいただく",
+      "verdict": "verified",
+      "notes": "附圖的區間是「稚内フットパス『宗谷丘陵コース』の一部道路」，紅線在宗谷ウインドファーム、短路線起點附近，位在圖上「白い道」框外；觀光協會公告文字寫「白い道周辺」，正文「白色道路一帶」可接受，但不是白色道路本身。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "白色道路11月中旬到隔年4月下旬封閉，2026年是4月24日開通。",
+      "sourceUrl": "https://www.north-hokkaido.com/news/detail_269.html",
+      "sourceTitle": "【お知らせ】白い道が開通となりました！（稚内観光協会）",
+      "sourceQuote": "「白い道」の冬季通行止めが解除し開通しました！！ 【日時】2026年4月24日 (金)～",
+      "verdict": "verified",
+      "notes": "封閉期見 spot/detail_1021.html「11月中旬-４月下旬まで閉鎖」。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "積雪的季節，從市區開到宗谷岬要1小時左右，夏天大約40分鐘。路面可能結冰，也可能碰上暴風雪或視線不良。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」",
+      "sourceQuote": "夏なら市内から車で約40分で到着する宗谷岬も、雪道となると車で１時間／冬道は路面凍結、吹雪、視界不良等の可能性がございます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "宗谷岬公園內往高台的路冬天也會封起來，2026年春天到4月10日16點才解除。",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/kurashi/koenkeikan/koen/tuukou32.html",
+      "sourceTitle": "公園内道路の冬期通行止め解除について | 北海道稚内市",
+      "sourceQuote": "稚内公園内道路 及び 宗谷岬公園内道路／令和8年（2026年）4月10日（金）16時から通行止め解除",
+      "verdict": "verified",
+      "notes": "原文只寫「宗谷岬公園内道路」，沒寫「往高台」；宗谷岬公園位在岬後方高台，意思可接受。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "沒車也去得了白色道路，夏天可以在宗谷岬租自行車騎過去，或沿步道從宗谷岬走到宗谷站再搭巴士。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1021.html",
+      "sourceTitle": "白い道｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "「稚内フットパス」のコースにも指定されており、サイクリングで風を感じながら巡るのもおすすめです。",
+      "verdict": "verified",
+      "notes": "Active Bus 已從這句刪除。步道部分見稚內步道頁「復路：路線バス（「宗谷」（宗谷歴史公園）から「駅前ターミナル」）」。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "白色道路是用稚內特產扇貝殼鋪成的路，全長約3公里，屬於稚內步道的一段，官方推薦騎自行車去。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1021.html",
+      "sourceTitle": "白い道｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "特産のホタテの貝殻を敷き詰めた、約3kmの美しい道。…「稚内フットパス」のコースにも指定されており、サイクリングで風を感じながら巡るのもおすすめです。",
+      "verdict": "verified",
+      "notes": "原文是「サイクリング…もおすすめ」，正文「官方推薦騎自行車去」略強，可接受。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "Base-Soya的自行車出租每年夏天才開，2026年是6月1日到9月30日。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1024.html",
+      "sourceTitle": "Base-Soya（宗谷岬展望台）｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "休業日 冬期間閉鎖（10月～5月下旬）",
+      "verdict": "verified",
+      "notes": "2026年期間見 feature/detail_83.html「※夏季開設期間中のみ 2026年6月1日～9月30日まで」。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "2026年稚內市內有人目擊棕熊，觀光協會提醒清晨、傍晚和夜間外出要特別小心。",
+      "sourceUrl": "https://www.north-hokkaido.com/news/detail_299.html",
+      "sourceTitle": "【お知らせ】ヒグマの出没にご注意ください！！（稚内観光協会）",
+      "sourceQuote": "稚内市で ヒグマ の目撃情報がありました。早朝や夕方、夜間の外出には特に注意する",
+      "verdict": "verified",
+      "notes": "公告日期 2026.06.07。"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "Active Bus不走白色道路，只在宗谷丘陵的攝影點停約5分鐘…「日本のてっぺんでアクティブバス」往返稚內機場、宗谷岬與JR稚內站，去回兩個方向都會經過「宗谷」站，在攝影點停車。2026年從6月1日開到9月30日。",
+      "sourceUrl": "http://www.soyabus.co.jp/active-bus",
+      "sourceTitle": "日本のてっぺんでアクティブバス | 宗谷バス株式会社",
+      "sourceQuote": "運行期間：2026年6月1日～9月30日／稚内空港ターミナル発 13：20 15：30 宗谷 13：40 15：50 宗谷丘陵（撮影スポット） 5分程度停車／宗谷岬発 16：00 17：00 宗谷丘陵（撮影スポット） 5分程度停車 宗谷 16：15 17：15",
+      "verdict": "verified",
+      "notes": "「不走白色道路」見傳單路線圖：アクティブバス経路（藍點）與白い道（白點）分開畫，藍點不走白い道。回程終點官方寫「稚内駅前ターミナル着」，票價欄寫「JR稚内駅」，兩種寫法都與原文一致。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "稚內機場往宗谷岬 13:20發，經宗谷13:40，14:10到／15:30發，經宗谷15:50，16:20到；宗谷岬往稚內站前巴士總站 16:00發，經宗谷16:15，17:00到／17:00發，經宗谷17:15，18:00到",
+      "sourceUrl": "http://www.soyabus.co.jp/active-bus",
+      "sourceTitle": "日本のてっぺんでアクティブバス | 宗谷バス株式会社",
+      "sourceQuote": "稚内空港ターミナル発 13：20 15：30／宗谷 13：40 15：50／宗谷岬着 14：10 16：20／宗谷岬発 16：00 17：00／宗谷 16：15 17：15／稚内駅前ターミナル着 17：00 18：00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "不用預約、自由入座，只是客滿時可能上不了車。",
+      "sourceUrl": "http://www.soyabus.co.jp/active-bus",
+      "sourceTitle": "日本のてっぺんでアクティブバス | 宗谷バス株式会社",
+      "sourceQuote": "●予約制ではありません。●満席の場合は乗車できないことがあります。●車内は全席禁煙で自由席となります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "從稚內機場坐到宗谷岬1,500圓，宗谷岬到JR稚內站2,000圓，只收現金。只有第1班，也就是宗谷岬16:00發的那班能載自行車，最多10台，載車費另收500圓，帶車搭17:00那班會上不了車。",
+      "sourceUrl": "http://www.soyabus.co.jp/active-bus",
+      "sourceTitle": "日本のてっぺんでアクティブバス | 宗谷バス株式会社",
+      "sourceQuote": "稚内空港から宗谷岬 1,500円／宗谷岬からJR稚内駅 2,000円／※お支払い方法は現金のみ。／●サイクルバスは1便のみ。最大自転車積載は10台までとなります。（積載料別途500円）",
+      "verdict": "verified",
+      "notes": "第1班在去程是機場13:20發，正文在回程脈絡只講宗谷岬16:00，沒錯。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "去程搭路線巴士、回程改搭16:00或17:00的Active Bus，就不必趕15:20的末班車。車資比路線巴士多400圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/active-bus",
+      "sourceTitle": "日本のてっぺんでアクティブバス | 宗谷バス株式会社",
+      "sourceQuote": "宗谷岬発 16：00 17：00／宗谷岬からJR稚内駅 2,000円",
+      "verdict": "verified",
+      "notes": "2,000−1,600＝400，重算無誤。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "Base-Soya（宗谷岬展望台）是宗谷岬的觀光服務台，離宗谷岬巴士站走路約3分鐘。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1024.html",
+      "sourceTitle": "Base-Soya（宗谷岬展望台）｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "レンタサイクル、観光インフォメーションデスク等、気軽にご利用いただくことが可能です。／「宗谷岬」下車徒歩約3分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "有電動クロスバイク、電動登山車與一般登山車",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_89.html",
+      "sourceTitle": "レンタサイクルで稚内の大自然を感じよう！",
+      "sourceQuote": "[Base-Soya] ・電動クロスバイク（カゴあり） ・電動マウンテンバイク ・マウンテンバイク",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "Base-Soya（宗谷岬展望台）…2026年只在6月1日到9月30日開，時間是10:00到16:00，15:00以後就不再受理租車。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_83.html",
+      "sourceTitle": "稚内についての≪よくあるお問合せ≫はこちらから！",
+      "sourceQuote": "Base-Soya（宗谷岬展望台）・営業時間 10:00～16:00 ※夏季開設期間中のみ 2026年6月1日～9月30日まで",
+      "verdict": "verified",
+      "notes": "受付到15:00見 feature/detail_89.html「（貸出時間：10：00～16：00 受付は15：00まで）」。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "JR稚內站旁「キタカラ」1樓的觀光案內所也有出租，9:30到17:00，16:00以後不再受理。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_89.html",
+      "sourceTitle": "レンタサイクルで稚内の大自然を感じよう！",
+      "sourceQuote": "レンタサイクルはJR稚内駅に併設されているキタカラ１Fにある「稚内観光案内所」にて借りることができます。（貸出時間：9:30～17:00 受付は16：00まで）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "2小時 電動2,000圓／一般1,000圓；4小時 2,500圓／1,500圓；一天，當天17:00前還 3,000圓／2,000圓；過夜，隔天17:00前還 不提供／4,000圓",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_89.html",
+      "sourceTitle": "レンタサイクルで稚内の大自然を感じよう！",
+      "sourceQuote": "2時間まで 2,000円 1,000円／4時間まで 2,500円 1,500円／1日利用(当日17：00まで) 3,000円 2,000円／1泊利用(翌日17：00まで) ─ 4,000円",
+      "verdict": "verified",
+      "notes": "價格與期限一致。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "租車要出示身分證件，護照也可以，沒帶證件就租不到。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_89.html",
+      "sourceTitle": "レンタサイクルで稚内の大自然を感じよう！",
+      "sourceQuote": "※身分証は運転免許証、マイナンバーカード、学生証、健康保険証、パスポートなどがご利用いただけます。※身分証をご用意いただけない場合はご利用できませんのでご了承ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "現金、信用卡、行動支付與交通IC卡都能用。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_89.html",
+      "sourceTitle": "レンタサイクルで稚内の大自然を感じよう！",
+      "sourceQuote": "お支払いは、現金／クレジットカード／コード決済／交通系ICで、 オンライン予約 による事前決済も可能です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "搭9:30的巴士10:20到宗谷岬，租電動車騎白色道路，再回來搭15:20的末班車…電動車4小時2,500圓，只比2小時多500圓。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_89.html",
+      "sourceTitle": "レンタサイクルで稚内の大自然を感じよう！",
+      "sourceQuote": "2時間まで 2,000円／4時間まで 2,500円",
+      "verdict": "verified",
+      "notes": "2,500−2,000＝500；Base-Soya 10:00 開、受付到15:00，時間可行。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "路上請減速互讓，也不要騎進牧草地。",
+      "sourceUrl": "https://www.north-hokkaido.com/news/detail_269.html",
+      "sourceTitle": "【お知らせ】白い道が開通となりました！（稚内観光協会）",
+      "sourceQuote": "3.白い道ではスピードダウン＆譲り合い 4.牧草地には絶対入らないで",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "稚內步道的「宗谷丘陵路線」長路線從宗谷岬出發、走到宗谷歷史公園，5月到10月左右可以走，冬天不能通行。",
+      "sourceUrl": "http://www.wakkanai-cci.or.jp/wakkanai-footpath/course_guide/course_souya/index.html",
+      "sourceTitle": "宗谷丘陵コース | 稚内フットパス",
+      "sourceQuote": "利用可能期間 5月～10月頃（冬季は通行不可）／スタート ロングコース・宗谷岬／ゴール 宗谷歴史公園",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "官方介紹的走法是去程搭路線巴士到「宗谷岬」，走完步道再從宗谷歷史公園附近的「宗谷」站搭路線巴士回稚內站前巴士總站。",
+      "sourceUrl": "http://www.wakkanai-cci.or.jp/wakkanai-footpath/course_guide/course_souya/index.html",
+      "sourceTitle": "宗谷丘陵コース | 稚内フットパス",
+      "sourceQuote": "往路：路線バス（「駅前ターミナル」から「宗谷岬」) 復路：路線バス（「宗谷」（宗谷歴史公園）から「駅前ターミナル」）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "宗谷歷史公園有廁所，到「宗谷」站走路約5分鐘。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1039.html",
+      "sourceTitle": "宗谷公園（宗谷歴史公園）｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "稚内フットパス「宗谷丘陵フットパスコース」のゴール地点周辺にあり、トイレ等も整備されています。／「宗谷」下車、徒歩約5分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "往稚內方向，經過宗谷站：7:31、8:54、11:14、15:29…路線巴士能接的是15:29那班，也是當天最後一班。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "下り 宗 谷 7：31 8：54 11：14 15：29",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "宗谷丘陵展望休息設施離宗谷岬巴士站走路約15分鐘，可以免費休息，11月上旬到4月下旬休館。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1022.html",
+      "sourceTitle": "ゲストハウス アルメリア（宗谷丘陵展望休憩施設）｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "「宗谷岬」下車、徒歩約15分／休業日 11月上旬～4下旬／休憩施設は無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "2026年5月到10月左右拆除風車期間，步道部分路段可能暫時管制，遇到指揮人員就照指示走。",
+      "sourceUrl": "https://www.north-hokkaido.com/news/detail_308.html",
+      "sourceTitle": "【お知らせ】白い道周辺におけるウインドファーム撤去工事に伴う通行等のご案内",
+      "sourceQuote": "5月～10月頃の作業期間中は、白い道周辺および稚内フットパス「宗谷丘陵コース」の一部区間で、一時的な交通規制が行われる場合があります。",
+      "verdict": "verified",
+      "notes": "照指示走見附圖「現地を通行される際は交通誘導員の指示に従っていただきますようお願いいたします」。"
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "回程的站在一棟白色小屋前，屋上寫著「宗谷岬公園休憩所」和「バス待合室」",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/souyamisaki_03.jpg",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社（回程「バス停「宗谷岬」」一節的照片）",
+      "sourceQuote": "照片招牌文字：宗谷岬公園休憩所／バス待合室",
+      "verdict": "verified",
+      "notes": "照片放在宗谷巴士宗谷岬頁「宗谷岬から稚内駅前バスターミナルへ行く場合／バス停「宗谷岬」」下，旁邊說明「待合室から出てお待ちください」，可撐住「回程的站」。照片未標拍攝年份。"
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "宗谷巴士的站牌是紅色圓牌，寫著「宗谷岬」。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/souyamisaki_02.jpg",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社（去程「バス停「宗谷岬」着」一節的照片）",
+      "sourceQuote": "照片站牌文字：停留所 宗谷岬 宗谷バス（紅色圓牌）",
+      "verdict": "verified",
+      "notes": "完整的紅色圓牌在去程照片 souyamisaki_02.jpg；第 2 輪改成「宗谷巴士的站牌」，不再指定回程站牌，與照片一致。"
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "下車時順便看好回程站牌在哪裡",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/souyacape",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社",
+      "sourceQuote": "時期によってポール位置が多少変わる場合があります。",
+      "verdict": "verified",
+      "notes": "建議寫法，依據是站牌位置會變動。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "順路多是緩下坡、視野好。",
+      "sourceUrl": "https://www.youtube.com/watch?v=ljibqeLKWi4",
+      "sourceTitle": "【稚内市公式】白い道への行き方と守ってほしい5つのお願い（稚内市観光動画）",
+      "sourceQuote": "順路は緩やかな下り坂が多く見通しが良いため、白い道のダイナミックな景色を楽しむことができます。",
+      "verdict": "verified",
+      "notes": "稚內市官方頻道說明欄，正文寫法與原文一致。"
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "站前借的車適合在市區騎，宗谷岬在32公里外，騎過去路程很長。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」",
+      "sourceQuote": "稚内市内から宗谷岬までは片道32km。",
+      "verdict": "verified",
+      "notes": "「適合在市區騎」是編輯判斷，32公里有來源。"
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "17:00的還車期限對的是站前キタカラ的營業時間，Base-Soya 16:00就關門，在岬上借的車要在16:00前還。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_89.html",
+      "sourceTitle": "レンタサイクルで稚内の大自然を感じよう！",
+      "sourceQuote": "「稚内観光案内所」にて借りることができます。（貸出時間：9:30～17:00 受付は16：00まで）／Base-Soya（宗谷岬）では…（貸出時間：10：00～16：00 受付は15：00まで）",
+      "verdict": "verified",
+      "notes": "官方沒有直接寫「岬上借的要16:00前還」，是從兩處貸出時間推得；後句「能不能岬上借、站前還，租車時當面問」把不確定的部分交給讀者確認，可接受。"
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "回程候車室旁就立著步道看板，寫著全程11.0km。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/souyamisaki_03.jpg",
+      "sourceTitle": "宗谷岬へ行くには | 宗谷バス株式会社（回程「バス停「宗谷岬」」一節的照片）",
+      "sourceQuote": "照片看板文字：宗谷丘陵フットパスコース …地点／全行程 11.0km",
+      "verdict": "verified",
+      "notes": "照片右側綠色看板在「バス待合室」小屋旁，看得到「宗谷丘陵フットパスコース」「全行程 11.0km」。照片未標年份，稚內步道官方頁沒寫距離；屬官方經營者頁面照片中的現場看板，可撐住「看板寫著全程11.0km」這個寫法（正文沒有把它寫成官方公告距離）。"
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "長路線前半經過放牧肉牛的牧場一帶，後半在宗谷丘陵的風車群之間走，最後下坡到歷史公園。這些風車2026年起陸續拆除改建。",
+      "sourceUrl": "https://www.north-hokkaido.com/news/detail_308.html",
+      "sourceTitle": "【お知らせ】白い道周辺におけるウインドファーム撤去工事に伴う通行等のご案内",
+      "sourceQuote": "2026年より、宗谷丘陵一帯に位置するユーラス宗谷岬ウインドファームで、建替工事に伴う既設風車の撤去作業が順次始まっております。",
+      "verdict": "verified",
+      "notes": "第 2 輪已刪「57座」。路線描述見稚內步道頁：「放牧されている肉牛…後半となる（ショートコースのスタート）からは…大風車群…最後の下りでは利尻山…ゴールは宗谷護国寺跡がある歴史公園」；拆除改建另見 spot/detail_1021.html「建替工事に伴う既設風車の撤去作業が2026年より順次始まっています」。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "Active Bus行駛的夏季，錯過了還有16:15、17:15經過「宗谷」站的車。",
+      "sourceUrl": "http://www.soyabus.co.jp/active-bus",
+      "sourceTitle": "日本のてっぺんでアクティブバス | 宗谷バス株式会社",
+      "sourceQuote": "宗谷岬発 16：00 17：00／宗谷 16：15 17：15",
+      "verdict": "verified",
+      "notes": "官方只寫「潮見5以降は路線バスの各停留所で降車可能」，「宗谷」是時刻表上的停靠站，在此上車屬時刻表支持的範圍。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "其他月份15:29是唯一的回程",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表 令和5年10月1日改正（令和6年8月1日天北号時刻改正）",
+      "sourceQuote": "下り 宗 谷 7：31 8：54 11：14 15：29",
+      "verdict": "verified",
+      "notes": "「唯一」指 10:20 後開始走的情況（11:14 理論上可接但步道走不完），語境清楚。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "前一天到キタカラ1樓的觀光案內所問好回程計程車怎麼叫，案內所10:00才開，比9:30那班車晚，12月31日到1月5日休息。／前一天到站前觀光案內所問好要走多久，案內所10:00才開，比9:30那班車晚。",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/shisei/koryu/yonnkyokukouryuu.html",
+      "sourceTitle": "日本本土四極証明書｜稚内市",
+      "sourceQuote": "稚内市観光案内所 住所：稚内市中央3丁目6-1 キタカラ1F 営業時間：10時00分～18時00分 ※年末年始：12月31日～1月５日は休業",
+      "verdict": "verified",
+      "notes": "9:30 是天北宗谷岬線首班（時刻表 PDF「稚内駅前ターミナル 9：30」），10:00 開門比它晚，重算無誤。「問好計程車怎麼叫／要走多久」是建議寫法，未另列事實。另：同一案內所的自行車出租寫 9:30 起（feature/detail_89.html「貸出時間：9:30～17:00」），兩頁時間不同但正文分別引用、各有來源，不矛盾。"
+    }
+  ],
+  "summary": {
+    "verified": 91,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
