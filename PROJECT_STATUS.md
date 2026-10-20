@@ -611,3 +611,21 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 設定 Email Routing（`contact@offpathnotes.com` 轉寄到 Darren 的信箱），讓聯絡表單可以用。
+
+## 2026-10-20 Claude Code：contact@offpathnotes.com 收信（Email Routing）
+
+### 已完成（用 wrangler，不經後台網頁）
+
+- 開啟 offpathnotes.com 的 Email Routing（Cloudflare 自動加 MX、SPF、DKIM 紀錄）。
+- 新增收件信箱 `ak47200000@gmail.com`（Darren 選定；好材誌轉寄到另一個已驗證的 Gmail），Cloudflare 已寄出驗證信。
+- 轉寄規則：`contact@offpathnotes.com` → `ak47200000@gmail.com`；Catch-all 關閉（其他地址一律丟棄）。
+- Worker Secret `CONTACT_FORM_RECIPIENT` 設成同一個信箱。
+
+### 尚未完成
+
+- Darren 點驗證信裡的連結後，轉寄才會生效；之後寄一封測試信到 contact@ 確認收得到。
+- 聯絡表單還要 Turnstile（site key 寫進 `src/config/contact.ts`、secret 用 `wrangler secret put TURNSTILE_SECRET_KEY`），以及在 Email Service 確認寄件地址 `contact@offpathnotes.com` 可用。
+
+### 唯一下一步
+
+- Darren 點 ak47200000@gmail.com 收到的 Cloudflare 驗證信。
