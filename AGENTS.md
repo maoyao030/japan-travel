@@ -163,3 +163,9 @@
 - 原因：照類別切每節都得自成一體，段落會寫成「主題句→規則→例外→建議」的小論證，讀起來有起承轉合的架構感。
 - 稚內群 24 頁的大綱已重排（`content-planning/hokkaido/hokkaido-wakkanai-outline.json`，重排過的頁標 `headingOrder: traveler-journey`）。各頁型的順序寫在選題 Skill `references/selection-workflow.md` 第6節與寫作 Skill `references/heading-style.md`。
 - 潤稿流程定案：Opus 5.5 照潤稿 Skill 潤稿 → 編輯挑錯一輪再修 → 意義比對 → 驗收。寫作與潤稿不用 Fable，Fable 只用在評審與策略。研究見 `content-experiments/polish-test-2026-10-18/ai-tone-study.md`。
+
+## 不寫成量產頁、口吻照好運日本行與 MATCHA（Darren 2026-10-19 決定）
+
+- Darren 擔心 Google 抓出太像 AI 的內容。Google 看的是對讀者有沒有用，處罰大量產出、內容空洞、每頁長一樣的頁面（scaled content abuse），不是 AI 偵測。所以寫作照寫作 Skill `writing-guide.md` 第14條：輕重有別、結構跟著主題走、有事實撐的編輯判斷、本站獨有的資料放前面；不故意放錯字、不假裝去過。
+- 口吻目標是好運日本行（GLTJP）與 MATCHA。潤稿前依段落功能讀他們的同類文章、照講法重寫（潤稿 Skill 第 1-1 步）；repo 只存網址，`check-copy.mjs` 擋照抄。真正訓練（微調）模型做不到。
+- 評審的「自然度」「怪句」分數有偏（會把真的好運日本行判成最怪），只當參考；最後由 Darren 看。
