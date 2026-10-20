@@ -1,8 +1,11 @@
-// 信箱要先在 Cloudflare Email Routing 設好收信才能公開；Turnstile 金鑰還沒有。
+// 收信：Email Routing 把 contact@ 轉寄到 Darren 的 Gmail（2026-10-20 設定並測試）。
 export const CONTACT_EMAIL = 'contact@offpathnotes.com'
 export const CONTACT_API_PATH = '/api/contact'
-/** Turnstile 站台金鑰（公開值）。留空時聯絡表單停用，只顯示信箱。 */
-export const TURNSTILE_SITE_KEY = ''
+/**
+ * Turnstile 站台金鑰（公開值，不是機密）。widget「繞路筆記聯絡表單」只允許 offpathnotes.com，
+ * 所以 workers.dev 預覽網址上驗證會失敗，這是正常的。secret 放在 Worker Secret TURNSTILE_SECRET_KEY。
+ */
+export const TURNSTILE_SITE_KEY = '0x4AAAAAAFd5xZWZb5SkhzxY'
 
 export const CONTACT_TOPICS = [
   {value: 'correction', label: '旅館、店家或資料更正'},
