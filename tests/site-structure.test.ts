@@ -42,7 +42,7 @@ test('導覽列、首頁與 404 只列出有內容的分類，並連到關於頁
   assert.match(layout, /<a href="\/about\/">關於\{SITE_NAME\}<\/a>/)
 
   assert.match(homepage, /getPublishedCategories\(publishableHubs\)/)
-  assert.match(homepage, /homeCategories\.map/)
+  assert.match(homepage, /homeCategories\s*\n?\s*\.filter/)
   assert.doesNotMatch(homepage, /siteCategories\.map/)
 
   assert.match(notFound, /getPublishedCategories\(publishableHubs\)/)
@@ -58,12 +58,12 @@ test('沒有公開主題的分類頁設為 noindex，有主題時列出文章', 
   assert.match(categoryPage, /getPublishedCategories\(publishableHubs\)/)
 })
 
-test('首頁依主題列出文章清單', async () => {
+test('首頁依地區與分類列出地點站牌', async () => {
   const homepage = await readProjectFile('src/pages/index.astro')
 
-  assert.match(homepage, /hubGroups\.map/)
-  assert.match(homepage, /class="article-list"/)
-  assert.match(homepage, /const hubArticleLimit = 6/)
+  assert.match(homepage, /signGroups\.map/)
+  assert.match(homepage, /regionHubs\.map/)
+  assert.match(homepage, /countArticles\(hub\) > 0/)
 })
 
 test('關於頁說明編輯方針、資料來源與廣告揭露，且可索引', async () => {

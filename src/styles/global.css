@@ -2,15 +2,16 @@
   color-scheme: light;
   /* Keep this value so browsers abandon the CSS URL cached during the 2026-08-30 redirect incident. */
   --asset-revision: "2026-08-30-css-redirect-fix";
-  --ink: #17211c;
-  --muted: #5d6862;
-  --paper: #f4f1e8;
-  --surface: #fffdf8;
-  --forest: #1e4d3a;
-  --forest-light: #dce8df;
+  /* 2026-10-21 改成「車站站牌」配色：淺灰底、白卡片、站牌綠。 */
+  --ink: #1a1f2b;
+  --muted: #5b6170;
+  --paper: #f5f6f8;
+  --surface: #ffffff;
+  --forest: #0b6e4f;
+  --forest-light: #e5f2ec;
   --clay: #a4532d; /* 2026-09-30 由 #c86f46 加深，小字對淺底對比達 4.5 以上 */
-  --line: #d7d6cc;
-  --shadow: 0 18px 50px rgb(22 38 29 / 8%);
+  --line: #e1e4e9;
+  --shadow: 0 6px 24px rgb(26 31 43 / 6%);
   --radius: 1.25rem;
   /* 字體只在這裡設定：2026-09-30 Darren 決定改用裝置內建中文字體，不再下載網頁字型（手機效能考量）。
      iPhone／Mac 用蘋方，Android 內建的思源黑體（Noto Sans CJK），Windows 用微軟正黑體。 */
@@ -2841,5 +2842,286 @@ a {
   .article-table-scroll th,
   .article-table-scroll td {
     padding: 0.75rem 0.8rem;
+  }
+}
+
+/* ===== 車站站牌風格：頁首、頁尾與首頁（2026-10-21 Darren 選定） =====
+   放在檔案最後，覆蓋前面沿用下來的頁首與頁尾樣式。 */
+
+.site-header {
+  border-bottom: 0;
+  background: var(--surface);
+}
+
+.masthead {
+  display: flex;
+  min-height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  justify-self: auto;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.brand-ring {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: none;
+  border: 4px solid var(--forest);
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.desktop-nav {
+  display: flex;
+  min-height: 0;
+  gap: 1.75rem;
+}
+
+.desktop-nav a {
+  padding: 0.35rem 0;
+  border-bottom: 2px solid transparent;
+  color: var(--ink);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus-visible {
+  border-color: var(--forest);
+  color: var(--ink);
+}
+
+.line-stripe {
+  height: 6px;
+  background: var(--forest);
+}
+
+.site-footer {
+  border-top: 6px solid var(--forest);
+  background: var(--surface);
+}
+
+.home-hero {
+  padding: clamp(2.5rem, 6vw, 4rem) 0 0;
+}
+
+.home-hero h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 4.2vw, 2.5rem);
+  line-height: 1.35;
+}
+
+.home-hero > p {
+  max-width: 42rem;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.home-block {
+  padding-top: clamp(2.5rem, 6vw, 3.5rem);
+}
+
+.home-block:last-child {
+  padding-bottom: clamp(3rem, 7vw, 4.5rem);
+}
+
+.line-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.1rem;
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+.line-heading::before {
+  width: 0.5rem;
+  height: 1.35rem;
+  flex: none;
+  border-radius: 2px;
+  background: var(--forest);
+  content: "";
+}
+
+.line-heading a {
+  text-decoration: none;
+}
+
+.line-heading a:hover,
+.line-heading a:focus-visible {
+  color: var(--forest);
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.5rem, 1fr));
+  gap: 1.25rem;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface);
+}
+
+.home-card-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.home-card-copy {
+  padding: 1rem 1.1rem 1.25rem;
+}
+
+.place-tag {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  border-radius: 0.3rem;
+  background: var(--forest-light);
+  color: var(--forest);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-card h3 {
+  margin: 0.55rem 0 0.45rem;
+  font-size: 1.06rem;
+  line-height: 1.5;
+}
+
+.home-card h3 a {
+  text-decoration: none;
+}
+
+.home-card h3 a:hover,
+.home-card h3 a:focus-visible {
+  color: var(--forest);
+}
+
+.home-card-copy > p {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.9rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.station-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.station-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  text-align: center;
+}
+
+.station-card-name {
+  display: block;
+  flex: 1;
+  padding: 1rem 1rem 0.85rem;
+  text-decoration: none;
+}
+
+.station-card-name span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+.station-card-name strong {
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  /* 字距會加在最後一個字後面，往右推回來才會置中 */
+  text-indent: 0.2em;
+}
+
+.station-card-name:hover strong,
+.station-card-name:focus-visible strong {
+  color: var(--forest);
+}
+
+.station-card-bar {
+  display: flex;
+  min-height: 2.2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.35rem 0.85rem;
+  background: var(--forest);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.station-card-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.station-card-bar a:hover,
+.station-card-bar a:focus-visible {
+  text-decoration: underline;
+}
+
+.station-card-foot {
+  padding: 0.65rem 1rem;
+  color: var(--forest);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.station-card-foot:hover,
+.station-card-foot:focus-visible {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .masthead {
+    min-height: 3.75rem;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu summary {
+    color: var(--ink);
   }
 }

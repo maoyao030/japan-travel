@@ -48,24 +48,22 @@ test('公開頁面沒有好材誌或建材的殘留字串', async () => {
   }
 })
 
-test('首頁說明地點條目與住宿、天氣的查證方式', async () => {
+test('首頁是車站站牌版型，地點與文章從已發布內容自動列出', async () => {
   const [homepage, layout] = await Promise.all([
     readProjectFile('src/pages/index.astro'),
     readProjectFile('src/layouts/BaseLayout.astro'),
   ])
 
-  assert.match(homepage, /一個地點一頁/)
-  assert.match(homepage, /訂房管道/)
-  assert.match(homepage, /查核日期/)
-  assert.match(homepage, /平年值/)
-  assert.match(homepage, /公開榜單/)
   assert.doesNotMatch(homepage, /先看結論|重點整理|懶人包|TL;DR/)
+  // 固定文字不寫特定地區或地點，地區擴充後不必回來改（2026-10-21 Darren 決定）
+  for (const source of [homepage, layout]) {
+    assert.doesNotMatch(source, /北海道|稚內|利尻|禮文|宗谷/)
+  }
   assert.match(homepage, /getPublishedContentRoutes/)
-  assert.match(homepage, /class="lead-story"/)
-  assert.match(homepage, /class="story-grid"/)
-  assert.match(homepage, /class="home-category-grid"/)
+  assert.match(homepage, /class="home-cards"/)
+  assert.match(homepage, /class="station-card"/)
   assert.match(layout, /class="shell masthead"/)
-  assert.match(layout, /class="site-nav-row"/)
+  assert.match(layout, /class="line-stripe"/)
 })
 
 test('四個分類是地點、季節、神社與祭典、旅行教學的空殼', async () => {
