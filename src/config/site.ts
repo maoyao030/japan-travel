@@ -7,10 +7,11 @@ export const PAGE_TITLE_SEPARATOR = ' - '
 
 /**
  * 網站簡介，放進 Organization 與 WebSite 結構化資料，也是首頁的 meta description。
- * 只寫網站一直不變的事，不寫特定地區，也不寫還沒有文章的題材（2026-10-21 改）。
+ * 只寫網站一直不變的事，不寫特定地區，也不寫還沒有文章的題材。
+ * 範圍是全日本，大城市和小地方都寫（Darren 2026-10-21）。
  */
 export const SITE_DESCRIPTION =
-  `${SITE_NAME}寫日本小地方怎麼去、住哪裡，給台灣旅人看。班次少的船和巴士列出時刻表與票價，也寫停航、錯過末班車時可以怎麼辦。`
+  `${SITE_NAME}是寫給台灣旅人的日本自由行資料，大城市和小地方都寫。每篇列出時刻表、票價與訂票步驟，也寫停航或錯過末班車時怎麼辦。`
 
 /** 網站的其他名稱，放進 WebSite 結構化資料，讓 Google 把網域和站名認成同一個網站。 */
 export const SITE_ALTERNATE_NAMES = ['offpathnotes.com']
