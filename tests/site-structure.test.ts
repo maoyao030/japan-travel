@@ -58,10 +58,10 @@ test('沒有公開主題的分類頁設為 noindex，有主題時列出文章', 
   assert.match(categoryPage, /getPublishedCategories\(publishableHubs\)/)
 })
 
-test('首頁依地區與分類把主題中心排成路線', async () => {
+test('首頁依地區與分類列出地點站牌', async () => {
   const homepage = await readProjectFile('src/pages/index.astro')
 
-  assert.match(homepage, /routeLines\.map/)
+  assert.match(homepage, /signGroups\.map/)
   assert.match(homepage, /regionHubs\.map/)
   assert.match(homepage, /countArticles\(hub\) > 0/)
 })

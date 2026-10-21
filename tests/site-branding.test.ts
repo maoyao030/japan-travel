@@ -60,9 +60,8 @@ test('首頁是車站站牌版型，地點與文章從已發布內容自動列�
     assert.doesNotMatch(source, /北海道|稚內|利尻|禮文|宗谷/)
   }
   assert.match(homepage, /getPublishedContentRoutes/)
-  assert.match(homepage, /class="station-sign"/)
   assert.match(homepage, /class="home-cards"/)
-  assert.match(homepage, /class="route-line"/)
+  assert.match(homepage, /class="station-card"/)
   assert.match(layout, /class="shell masthead"/)
   assert.match(layout, /class="line-stripe"/)
 })

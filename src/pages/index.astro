@@ -30,19 +30,17 @@ const stories = [
   )
 const latestStories = stories.slice(0, 6)
 
-// 站牌：最新一篇文章所在的主題中心，左右兩側是已上線的鄰近地點。
-const signHub = stories.find(({hub}) => indexableHubs.some((item) => item.id === hub.id))?.hub
-const signNeighbors = (signHub?.nearbyPlaces ?? []).filter((place) => place.path).slice(0, 2)
-const signRegion = signHub?.region
-  ? publishableHubs.find((hub) => hub.id === signHub.region?.id)
-  : undefined
-const signCount = signHub ? countArticles(signHub) : 0
-
-// 路線：地點依所屬地區排成一條線；其他分類各自一條線。只列已有文章的主題中心。
+// 地點站牌：地點依所屬地區分組，其他分類各自一組。只列已有文章的主題中心；
+// 站牌下方的綠條列出已上線的鄰近地點。
 const stopsOf = (hubs: HubPageData[]) =>
   hubs
     .filter((hub) => countArticles(hub) > 0)
-    .map((hub) => ({hub, path: getHubPath(hub), count: countArticles(hub)}))
+    .map((hub) => ({
+      hub,
+      path: getHubPath(hub),
+      count: countArticles(hub),
+      neighbors: (hub.nearbyPlaces ?? []).filter((place) => place.path).slice(0, 2),
+    }))
     .sort((left, right) => right.count - left.count || left.hub.title.localeCompare(right.hub.title, 'zh-Hant'))
 const placeHubs = indexableHubs.filter(
   (hub) => hub.categorySlug === PLACES_CATEGORY_SLUG && hub.placeKind !== 'region',
@@ -50,7 +48,7 @@ const placeHubs = indexableHubs.filter(
 const regionHubs = publishableHubs.filter(
   (hub) => hub.categorySlug === PLACES_CATEGORY_SLUG && hub.placeKind === 'region',
 )
-const routeLines = [
+const signGroups = [
   ...regionHubs.map((region) => ({
     title: region.title,
     path: getHubPath(region),
@@ -70,7 +68,7 @@ const routeLines = [
       path: `/${category.slug}/`,
       stops: stopsOf(indexableHubs.filter((hub) => hub.categorySlug === category.slug)),
     })),
-].filter((line) => line.stops.length > 0)
+].filter((group) => group.stops.length > 0)
 
 const siteUrl = new URL('/', Astro.site ?? Astro.url).href
 const structuredData = createWebSiteStructuredData(siteUrl)
@@ -86,32 +84,6 @@ const structuredData = createWebSiteStructuredData(siteUrl)
     <h1 id="home-title">日本小地方怎麼去、住哪裡</h1>
     <p>班次少的船和巴士，文章裡列出時刻表與票價，也寫停航、錯過末班車時可以怎麼辦。</p>
 
-    {signHub && (
-      <div class="station-sign">
-        <p class="station-sign-label">最近更新的地點</p>
-        <a class="station-sign-name" href={getHubPath(signHub)}>
-          {signHub.nameJa && signHub.nameJa !== signHub.title && (
-            <small lang="ja">{signHub.nameJa}</small>
-          )}
-          <strong>{signHub.title}</strong>
-          {signHub.eyebrow && <span>{signHub.eyebrow}</span>}
-        </a>
-        <nav class="station-sign-bar" aria-label={`${signHub.title}的鄰近地點`}>
-          <span class="station-sign-prev">
-            {signNeighbors[0] && <a href={signNeighbors[0].path}>← {signNeighbors[0].title}</a>}
-          </span>
-          <span class="station-sign-region">
-            {signRegion ? <a href={getHubPath(signRegion)}>{signRegion.title}</a> : null}
-          </span>
-          <span class="station-sign-next">
-            {signNeighbors[1] && <a href={signNeighbors[1].path}>{signNeighbors[1].title} →</a>}
-          </span>
-        </nav>
-        <p class="station-sign-foot">
-          <a href={getHubPath(signHub)}>{signHub.title}的文章 {signCount} 篇 →</a>
-        </p>
-      </div>
-    )}
   </section>
 
   {latestStories.length > 0 && (
@@ -142,23 +114,24 @@ const structuredData = createWebSiteStructuredData(siteUrl)
     </section>
   )}
 
-  {routeLines.map((line) => (
-    <section class="home-block shell" aria-label={line.title}>
-      <h2 class="line-heading"><a href={line.path}>{line.title}</a></h2>
-      <ol class="route-line">
-        {line.stops.map(({hub, path, count}) => (
-          <li>
-            <a href={path}>
-              <span class="route-stop" aria-hidden="true"></span>
-              <span class="route-name">
-                <b>{hub.title}</b>
-                {hub.eyebrow && <small>{hub.eyebrow}</small>}
-              </span>
-              <span class="route-count">{count} 篇 →</span>
+  {signGroups.map((group) => (
+    <section class="home-block shell" aria-label={group.title}>
+      <h2 class="line-heading"><a href={group.path}>{group.title}</a></h2>
+      <ul class="station-grid">
+        {group.stops.map(({hub, path, count, neighbors}) => (
+          <li class="station-card">
+            <a class="station-card-name" href={path}>
+              <strong>{hub.title}</strong>
+              {hub.eyebrow && <span>{hub.eyebrow}</span>}
             </a>
+            <p class="station-card-bar">
+              <span>{neighbors[0] && <a href={neighbors[0].path}>← {neighbors[0].title}</a>}</span>
+              <span>{neighbors[1] && <a href={neighbors[1].path}>{neighbors[1].title} →</a>}</span>
+            </p>
+            <a class="station-card-foot" href={path}>{count} 篇文章 →</a>
           </li>
         ))}
-      </ol>
+      </ul>
     </section>
   ))}
 
