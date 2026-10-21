@@ -1,5 +1,5 @@
 /** GA4 評估 ID（格式 G-XXXXXXXX）。留空時不載入分析，也不顯示同意視窗。 */
-export const GOOGLE_ANALYTICS_MEASUREMENT_ID = ''
+export const GOOGLE_ANALYTICS_MEASUREMENT_ID = 'G-2JRKYEPGXQ'
 
 /**
  * AdSense 發布商 ID（格式 ca-pub-XXXXXXXX）。

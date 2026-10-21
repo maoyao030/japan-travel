@@ -1041,7 +1041,18 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 
 - 設定 Sanity Webhook → Cloudflare Deploy Hook，讓文章上傳後網站自動更新。
 
-## 2026-10-21 Claude Code（雲端）：首頁改成車站站牌風格與首頁 SEO（分支 `claude/youthful-knuth-1ranhx`，還沒合併）
+## 2026-10-21 Claude Code（地端）：GA4 與 Google Search Console
+
+- Darren：「幫我把 GA 跟 Google Search Console 全部都設定好」，並同意建立 GA 資源、加 DNS 驗證紀錄、送 sitemap。內建瀏覽器沒登入 Google，改用 Darren 的 Chrome（已登入 Google 與 Cloudflare）。
+- GA4：在好材誌同一個帳戶（a406344333）下建立資源「繞路筆記 offpathnotes.com」（台灣時區、新台幣、產業旅遊），網頁資料串流「繞路筆記網站」https://offpathnotes.com，評估 ID `G-2JRKYEPGXQ`。
+- 網站：`src/config/google.ts` 填入評估 ID（commit c6c9a7d，已推到 `main` 並部署，首頁已帶 ID）。同意視窗原本就做好：訪客按「同意分析」才載入 GA，廣告個人化與 Google signals 在程式裡關閉，和隱私權頁說明一致。測試 168 項、建置通過。
+- Search Console：網域資源 `offpathnotes.com`，用 Cloudflare DNS 的 TXT 紀錄驗證（`google-site-verification=…`，不要刪，刪了驗證會失效）；沒有授權 Google 存取 Cloudflare。送出 sitemap `https://offpathnotes.com/sitemap.xml`，剛送出時狀態是「無法擷取」，新資源常見，用 Googlebot 身分抓得到（200）；渡輪頁的即時測試通過並已要求建立索引。另外兩篇要求建立索引被安全規則擋下（Darren 沒有逐一要求），交給 sitemap。
+
+### 尚未完成
+
+- 一兩天後回 Search Console 確認 sitemap 狀態變成「成功」；GA 要等有訪客同意分析後才會有資料（最多 48 小時）。
+
+## 2026-10-21 Claude Code（雲端）：首頁改成車站站牌風格與首頁 SEO（分支 `claude/youthful-knuth-1ranhx`，已合併回 `main`）
 
 ### Darren 的要求
 
@@ -1053,7 +1064,7 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 - 視覺風格選「車站站牌」（白卡片、站牌綠 `#0b6e4f`、頁首下方綠色路線條）。另外兩個樣稿（大照片、筆記本）沒選。
 - 首頁固定文字照寫作 Skill 的原則、站在讀者角度寫，不寫特定地區或還沒有文章的題材。
 - 首頁不放大站牌：大站牌看起來像整頁標題（Darren 意見），改成每個地點一張小站牌卡片。卡片不顯示和中文幾乎一樣的日文名。
-- Search Console 與 GA4 交給本機 session 做（要用 Darren 的 Google 與 Cloudflare 登入，雲端做不到）。
+- Search Console 與 GA4 交給本機 session 做（要用 Darren 的 Google 與 Cloudflare 登入，雲端做不到）；本機已完成，見上一段「GA4 與 Google Search Console」。
 
 ### 已完成（三個 commit，都在 `claude/youthful-knuth-1ranhx`）
 
@@ -1062,15 +1073,16 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 - SEO：`SITE_DESCRIPTION` 改寫並當首頁 meta description；WebSite 結構化資料加 `alternateName: offpathnotes.com`；首頁標題改成「繞路筆記｜日本小地方的交通與住宿」；地區頁還沒開放索引時首頁不連過去。
 - 測試跟著調整，並新增檢查「首頁與版型不寫特定地區名稱」。`npm run ci` 通過（測試 168 項、15 頁、站內連結與點擊深度檢查通過）。
 
+### 合併
+
+- Darren 同意後（「UI／UX 的東西可以直接 merge」），先把 `origin/main`（含本機的 GA4 設定）併進分支、跑 `npm run ci` 通過，再合併回 `main`。
+
 ### 尚未完成
 
-- **合併回 `main` 要 Darren 同意**（照規則先 fetch、併 `origin/main`、跑測試）。合併後網站才會換成新首頁。
-- Search Console：網站目前搜尋不到（`site:offpathnotes.com` 沒有結果）。要建「網域」資源 `offpathnotes.com`，用 Cloudflare 自動驗證，再提交 `sitemap.xml`。
-- GA4：建資源「繞路筆記」（時區台灣、新台幣、網站串流 offpathnotes.com），把評估 ID 填進 `src/config/google.ts` 的 `GOOGLE_ANALYTICS_MEASUREMENT_ID`。隱私權政策寫了「已關閉廣告個人化與 Google signals」，要在 GA 的資料收集設定確認是關的。程式的同意視窗已經寫好，上線後確認「同意」才載入、「不同意」不載入。
 - 文章頁與地點頁還是舊版面（只換了頁首與配色）；`/places/` 分類說明還寫著「從北海道開始」（`src/data/categories.ts`）。
 - `global.css` 留著舊首頁與舊頁首的樣式（沒有頁面在用），整站換完再清。
 - 網站地圖還沒有 `lastmod`。
 
 ### 唯一下一步
 
-- 本機 session：Darren 同意後合併首頁分支，接著用 Darren 的 Chrome 設定 Search Console 與 GA4。
+- 地點頁（`/places/<地點>/`）換成車站站牌風格，順便改掉 `/places/` 分類說明裡的「從北海道開始」。
