@@ -1118,3 +1118,25 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 照寫作 Skill 重寫北海道、稚內、利尻島三段地點介紹，並更新到網站。
+
+## 2026-10-21 Claude Code（雲端）：重寫地點介紹段落（已合併回 `main`）
+
+### Darren 的要求
+
+- 「介紹段落也重寫」：地點頁開頭的介紹不要寫死「繞路筆記從北端…開始」「這裡整理…」這種會過時、像 AI 的句子。
+
+### 已完成
+
+- 照寫作 Skill 重寫北海道、稚內、宗谷岬、利尻島、禮文島五段介紹：第一句是地方的身分或招牌畫面，接著是讀者最需要的交通事實；不列還沒寫的題目。事實都取自 `content-planning/hokkaido/places/<地點>/facts.json`，`check-voice.mjs --final` 通過。
+- 改了三個來源：`content-planning/places.json`（北海道）、`content-planning/hokkaido/build-queue.mjs` 與 `content-automation/article-queue.json`（四個地點的 hubCopy）。清單沒有用 `build-queue.mjs` 重建（會重建整份清單），只改這幾段文字；`queue:validate`、`planning:check` 通過。
+- Sanity：已上線的三個 Hub（`hub-places-hokkaido`、`hub-places-wakkanai`、`hub-places-rishiri-island`）用 `ifRevisionID` 只更新 `introduction` 欄位（transaction `KMvGWfmc38F3h3dpmlqji3`）。宗谷岬、禮文島還沒建 Hub，之後照清單建立時就會用新文字。
+- 北海道那段原稿寫「直達的車一天只有一班」，核對事實表後改成「直達的特急」（直達高速巴士不只一班）。
+
+### 尚未完成
+
+- Hub 的 `seoDescription`（搜尋結果的說明）還是舊寫法，例如「整理北海道稚內的交通、往利尻島與禮文島的渡輪、住宿、景點…」，列了還沒寫的題目。要改的話同樣要改清單與 Sanity。
+- 文章頁還是舊版面。
+
+### 唯一下一步
+
+- 文章頁換成車站站牌風格（地點小標、目錄、文章結尾的相關文章）。
