@@ -1086,3 +1086,10 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 地點頁（`/places/<地點>/`）換成車站站牌風格，順便改掉 `/places/` 分類說明裡的「從北海道開始」。
+
+## 2026-10-21 Claude Code（地端）：GA 改成預設開啟、可以退出
+
+- Darren：「把它改成預設開啟可以退出，然後確認一下好材誌是不是也是現在這個樣子。」
+- `src/components/AnalyticsConsent.astro`：沒選過或選「知道了」都載入 GA（consent 預設 `analytics_storage: granted`，廣告相關仍 denied，Google signals 與廣告個人化關閉）；第一次來會出現不擋畫面的提示，按「關閉分析」才記住 denied 並重新整理、不再載入；頁尾「分析資料設定」可以重新打開，已關閉的人按鈕顯示「重新開啟分析」。
+- `src/pages/privacy.astro` 同步改說明（最後更新 2026-10-21）；`tests/google-services.test.ts` 改成檢查新行為。本機實測三種情況都正確；測試 168 項、建置通過；併入另一個 session 的首頁改版後推到 `main`。
+- 好材誌（唯讀檢查，沒有改）：仍是「先問再開」——`AnalyticsConsent.astro` 只有 `preference === 'granted'` 才載入，按鈕「不同意／同意分析」，評估 ID `G-VJX1LG84DF`，隱私權頁也寫「選擇同意分析後才載入」。要不要一起改由 Darren 決定，改要在好材誌 repo 另外做。
