@@ -3108,6 +3108,98 @@ a {
   text-decoration: underline;
 }
 
+/* 地點頁與地區頁的頁首：站名牌就是這頁的標題 */
+.place-hero {
+  padding-top: 1.25rem;
+}
+
+.station-sign {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.station-sign-label {
+  margin: 0;
+  padding: 1.4rem 1rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.station-sign-name {
+  margin: 0;
+  padding: 0.2rem 1rem 1.4rem;
+  font-size: clamp(2.5rem, 8vw, 3.75rem);
+  letter-spacing: 0.3em;
+  line-height: 1.25;
+  /* 字距會加在最後一個字後面，往右推回來才會置中 */
+  text-indent: 0.3em;
+}
+
+.station-sign-bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  min-height: 2.6rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--forest);
+  font-weight: 700;
+}
+
+.station-sign-bar span:first-child {
+  text-align: left;
+}
+
+.station-sign-bar span:last-child {
+  text-align: right;
+}
+
+.station-sign-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.station-sign-bar a:hover,
+.station-sign-bar a:focus-visible {
+  text-decoration: underline;
+}
+
+.place-intro {
+  max-width: 44rem;
+  margin: 1.5rem 0 0;
+  font-size: 1.05rem;
+}
+
+.place-intro + .place-intro {
+  margin-top: 0.75rem;
+}
+
+.place-note {
+  margin: -0.5rem 0 1rem;
+  color: var(--muted);
+}
+
+/* 內容很少的頁面，頁尾也要貼在畫面底部 */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.place-hero:last-child {
+  padding-bottom: clamp(3rem, 7vw, 4.5rem);
+}
+
 @media (max-width: 760px) {
   .masthead {
     min-height: 3.75rem;
@@ -3123,5 +3215,10 @@ a {
 
   .mobile-menu summary {
     color: var(--ink);
+  }
+
+  .station-sign-bar {
+    gap: 0.5rem;
+    font-size: 0.92rem;
   }
 }

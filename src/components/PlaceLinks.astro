@@ -6,16 +6,18 @@ interface Props {
   hub: HubPageData
   monthPaths?: string[]
   regionPlaces?: {id: string; title: string; path: string}[]
+  /** 地點頁的站牌已經列出鄰近地點時，這裡不再重複。 */
+  hideNearby?: boolean
 }
 
-const {hub, monthPaths = [], regionPlaces = []} = Astro.props
+const {hub, monthPaths = [], regionPlaces = [], hideNearby = false} = Astro.props
 const availableMonths = new Set(monthPaths)
 const groups = [
   {
     title: `${hub.title}的地點`,
     links: regionPlaces.map((place) => ({label: place.title, path: place.path})),
   },
-  {title: '鄰近地點', links: (hub.nearbyPlaces ?? []).flatMap((place) => place.path ? [{label: place.title, path: place.path}] : [])},
+  {title: '鄰近地點', links: hideNearby ? [] : (hub.nearbyPlaces ?? []).flatMap((place) => place.path ? [{label: place.title, path: place.path}] : [])},
   {title: '出入口', links: (hub.gatewayPlaces ?? []).flatMap((place) => place.path ? [{label: place.title, path: place.path}] : [])},
   {
     title: '適合月份',

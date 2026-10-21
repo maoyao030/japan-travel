@@ -4,8 +4,11 @@ import PlaceLinks from './PlaceLinks.astro'
 import type {SiteCategory} from '../data/categories'
 import type {HubPageData} from '../data/hubs'
 import {getBreadcrumbParent, getHubPath} from '../data/hubs'
+import {getMonthPath} from '../data/listPages'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import type {ClusterNode} from '../lib/clusters'
+import {getPublishedContentRoutes} from '../lib/contentRoutes'
+import {IMAGE_SIZES, getResponsiveImage} from '../lib/images'
 import {createCollectionStructuredData, type CollectionListItem} from '../lib/structuredData'
 
 interface Props {
@@ -18,6 +21,31 @@ interface Props {
 
 const {category, hub, childClusters = [], regionPlaces = [], monthPaths = []} = Astro.props
 const publishedArticles = hub.articles.filter((article) => article.published)
+// 文章卡片的封面從已發布文章取（主題中心的文章清單只有標題與摘要）
+const {routableArticles} = await getPublishedContentRoutes()
+const articleCards = publishedArticles.map((article) => ({
+  ...article,
+  path: article.path ?? `${getHubPath(hub)}${article.slug}/`,
+  cover: routableArticles.find((route) => route.article._id === article.id)?.article.cover,
+}))
+// 站牌綠條：左右是已上線的鄰近地點，中間是所屬地區
+const publishedNeighbors = (hub.nearbyPlaces ?? []).filter((place) => place.path)
+const signNeighbors = publishedNeighbors.slice(0, 2)
+// 頁尾的地點連結：站牌放不下的鄰近地點、出入口、適合月份；都沒有就不顯示這一區
+const showAllNearby = publishedNeighbors.length > signNeighbors.length
+const hasPlaceLinks =
+  showAllNearby ||
+  (hub.gatewayPlaces ?? []).some((place) => place.path) ||
+  (hub.bestMonths ?? []).some((month) => monthPaths.includes(getMonthPath(month)))
+// 地區頁列出底下已上線的地點。地點清單頁有至少 3 個地點的門檻，地區頁本身只當導覽用，不受門檻限制。
+const {publishableHubs} = await getPublishedContentRoutes()
+const placeCards = regionPlaces.length > 0
+  ? regionPlaces
+  : hub.placeKind === 'region'
+    ? publishableHubs
+        .filter((item) => item.region?.id === hub.id)
+        .map((item) => ({id: item.id, title: item.title, description: item.eyebrow || item.seoDescription, path: getHubPath(item)}))
+    : []
 const childArticleCount = childClusters.reduce((total, child) => total + child.articleCount, 0)
 const introductionParagraphs = hub.description
   .split(/\n{2,}/)
@@ -68,112 +96,99 @@ const structuredData = createCollectionStructuredData({
     <span>{hub.title}</span>
   </div>
 
-  <header class="topic-hero">
-    <div class="shell topic-hero-grid">
-      <div>
-        <p class="eyebrow">{hub.eyebrow}</p>
-        <h1>{hub.title}{hub.nameJa && hub.nameJa !== hub.title && <span class="hub-name-ja" lang="ja">（{hub.nameJa}）</span>}</h1>
-        {introductionParagraphs.map((paragraph) => (
-          <p class="topic-intro">{paragraph}</p>
-        ))}
-      </div>
-      {hub.publicationPreview ? (
-        <aside class="prototype-alert" aria-label="發布前預覽說明">
-          <strong>發布前預覽</strong>
-          <p>此頁只在本機產生，仍禁止搜尋引擎索引，也尚未部署到測試站。</p>
-        </aside>
-      ) : null}
+  <header class="place-hero shell">
+    <div class="station-sign">
+      {hub.eyebrow && <p class="station-sign-label">{hub.eyebrow}</p>}
+      <h1 class="station-sign-name">{hub.title}</h1>
+      <nav class="station-sign-bar" aria-label={`${hub.title}的鄰近地點`}>
+        <span>{signNeighbors[0] && <a href={signNeighbors[0].path}>← {signNeighbors[0].title}</a>}</span>
+        <span>{hub.region?.path && <a href={hub.region.path}>{hub.region.title}</a>}</span>
+        <span>{signNeighbors[1] && <a href={signNeighbors[1].path}>{signNeighbors[1].title} →</a>}</span>
+      </nav>
     </div>
+    {introductionParagraphs.map((paragraph) => <p class="place-intro">{paragraph}</p>)}
+    {hub.publicationPreview ? (
+      <aside class="prototype-alert" aria-label="發布前預覽說明">
+        <strong>發布前預覽</strong>
+        <p>此頁只在本機產生，仍禁止搜尋引擎索引，也尚未部署到測試站。</p>
+      </aside>
+    ) : null}
   </header>
 
-  <section class="section topic-content">
-    <div class="shell topic-layout">
-      <div>
-        <p class="eyebrow">閱讀範圍</p>
-        <h2>{hub.title}的閱讀重點</h2>
-        <ol class="topic-checklist">
-          {hub.checklist.map((item) => <li>{item}</li>)}
-        </ol>
-        <PlaceLinks hub={hub} monthPaths={monthPaths} />
-      </div>
-      <div>
-        {regionPlaces.length > 0 && (
-          <div class="hub-children">
-            <div class="section-heading compact-heading">
-              <div>
-                <p class="eyebrow">地點清單</p>
-                <h2>{hub.title}的地點</h2>
-              </div>
-              <p>{regionPlaces.length} 個地點，每個地點都有自己的條目。</p>
-            </div>
-            <div class="article-list">
-              {regionPlaces.map((place, index) => (
-                <a class="article-row" href={place.path}>
-                  <span>{String(index + 1).padStart(2, '0')}</span>
-                  <div>
-                    <h3>{place.title}</h3>
-                    <p>{place.description}</p>
-                  </div>
-                  <b aria-hidden="true">→</b>
-                </a>
-              ))}
-            </div>
-          </div>
-        )}
-        {childClusters.length > 0 ? (
-          <div class="hub-children">
-            <div class="section-heading compact-heading">
-              <div>
-                <p class="eyebrow">延伸主題</p>
-                <h2>{hub.title}的子主題</h2>
-              </div>
-              <p>{childClusters.length} 個子主題、{childArticleCount} 篇文章，每個子主題都有自己的主題頁與文章。</p>
-            </div>
-            <ClusterHubList nodes={childClusters} headingTag="h3" />
-          </div>
-        ) : hub.childHubs && hub.childHubs.length > 0 && (
-          <div class="hub-children">
-            <div class="section-heading compact-heading">
-              <div>
-                <p class="eyebrow">延伸主題</p>
-                <h2>{hub.title}的子主題</h2>
-              </div>
-            </div>
-            <div class="article-list">
-              {hub.childHubs.map((child, index) => (
-                <a class="article-row" href={child.path}>
-                  <span>{String(index + 1).padStart(2, '0')}</span>
-                  <div>
-                    <h3>{child.title}</h3>
-                    <p>{child.description}</p>
-                  </div>
-                  <b aria-hidden="true">→</b>
-                </a>
-              ))}
-            </div>
-          </div>
-        )}
-        <div class="section-heading compact-heading">
-          <div>
-            <p class="eyebrow">主題文章</p>
-            <h2>{childClusters.length > 0 ? `${hub.title}的跨子主題文章` : `${hub.title}相關文章`}</h2>
-          </div>
-          {publishedArticles.length > 0 && <p>{publishedArticles.length} 篇文章</p>}
-        </div>
-        <div class="article-list">
-          {publishedArticles.map((article, index) => (
-            <a class="article-row" href={article.path ?? `${getHubPath(hub)}${article.slug}/`}>
-              <span>{String(index + 1).padStart(2, '0')}</span>
-              <div>
-                <h3>{article.title}</h3>
-                <p>{article.excerpt}</p>
-                {article.readTime && <small>{article.readTime}</small>}
-              </div>
-              <b aria-hidden="true">→</b>
+  {placeCards.length > 0 && (
+    <section class="home-block shell" aria-labelledby="region-places-heading">
+      <h2 class="line-heading" id="region-places-heading">{hub.title}的地點</h2>
+      <ul class="station-grid">
+        {placeCards.map((place) => (
+          <li class="station-card">
+            <a class="station-card-name" href={place.path}>
+              <strong>{place.title}</strong>
+              <span>{place.description}</span>
             </a>
-          ))}
-        </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {childClusters.length > 0 ? (
+    <section class="home-block shell" aria-labelledby="child-topics-heading">
+      <h2 class="line-heading" id="child-topics-heading">{hub.title}的子主題</h2>
+      <p class="place-note">{childClusters.length} 個子主題、{childArticleCount} 篇文章</p>
+      <ClusterHubList nodes={childClusters} headingTag="h3" />
+    </section>
+  ) : hub.childHubs && hub.childHubs.length > 0 && (
+    <section class="home-block shell" aria-labelledby="child-topics-heading">
+      <h2 class="line-heading" id="child-topics-heading">{hub.title}的子主題</h2>
+      <div class="article-list">
+        {hub.childHubs.map((child, index) => (
+          <a class="article-row" href={child.path}>
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            <div>
+              <h3>{child.title}</h3>
+              <p>{child.description}</p>
+            </div>
+            <b aria-hidden="true">→</b>
+          </a>
+        ))}
       </div>
-    </div>
-  </section>
+    </section>
+  )}
+
+  {articleCards.length > 0 && (
+    <section class="home-block shell" aria-labelledby="hub-articles-heading">
+      <h2 class="line-heading" id="hub-articles-heading">
+        {childClusters.length > 0 ? `${hub.title}的跨子主題文章` : `${hub.title}的文章`}
+      </h2>
+      <div class="home-cards">
+        {articleCards.map((article) => (
+          <article class="home-card">
+            {article.cover && (
+              <a class="home-card-media" href={article.path} tabindex="-1" aria-hidden="true">
+                <img
+                  {...getResponsiveImage(article.cover.url, article.cover.width)}
+                  sizes={IMAGE_SIZES.storyCard}
+                  width={article.cover.width}
+                  height={article.cover.height}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            )}
+            <div class="home-card-copy">
+              <h3><a href={article.path}>{article.title}</a></h3>
+              <p>{article.excerpt}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {hasPlaceLinks && (
+    <section class="home-block shell place-links-block" aria-label={`${hub.title}的相關地點與月份`}>
+      <PlaceLinks hub={hub} monthPaths={monthPaths} hideNearby={!showAllNearby} />
+    </section>
+  )}
 </BaseLayout>

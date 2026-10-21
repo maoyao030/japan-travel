@@ -40,7 +40,7 @@ export const siteCategories: SiteCategory[] = [
   {
     slug: 'places',
     title: '地點',
-    summary: '從北海道開始，一個地點一頁：怎麼去、住哪裡、什麼季節去、要準備什麼。',
+    summary: '各地點怎麼去、住哪裡、幾月去。',
     description:
       '每個地區與地點各有一頁條目，回答怎麼去、住哪裡、幾月去、吃什麼與當地規矩；搜尋需求夠大的題目，例如函館住宿或跳島渡輪，再往下分成面向頁。地點之間用鄰近地點與出入口互相連結，資料以日文官方來源為準並標示查核日期。',
     questionsHeading: '交通、住宿、季節與當地規矩',
