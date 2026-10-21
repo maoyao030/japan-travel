@@ -14,12 +14,13 @@
 | `placeId` | 屬於哪個地點 |
 | `nameJa`、`nameZh` | 日文名、繁中名（譯名照 `content-planning/glossary.json`） |
 | `sourceUrl` | 官方清單或景點頁 |
-| `decision` | `page`（負責頁）、`section`（寫在哪頁哪一節）或 `skip` |
+| `decision` | `section`（寫在哪頁哪一節，預設）、`page`（自己一頁，要符合[選題流程](selection-workflow.md)第 4 步的「景點升格」兩條）或 `skip` |
 | `articleId`、`heading` | `page` 與 `section` 要填 |
 | `reason` | `skip` 必填：已停業、只開放團體、不是旅遊景點、查不到可用資料等 |
 
 3. 官方清單沒有、但研究或下面的體驗研究找到的景點也加進來，`sourceUrl` 填查證用的官方頁。
 4. 每個 `section` 都要真的出現在那頁的標題或必答問題裡，寫作時才不會漏。
+5. 填 `page` 時，在 `reason` 記下升格的證據：中文自動完成看到的延伸詞（查詢日期）與只屬於這個景點的事實筆數。
 
 ## 二、體驗與文化切入點
 

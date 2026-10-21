@@ -176,3 +176,10 @@
 - 用 Claude 桌面 app 的排定工作 `japan-travel-daily-writer` 在本機跑，不用雲端 routine；**先不上傳**（不碰 Sanity、D1、規劃總表，不選圖）。排定工作建好後是暫停狀態，Darren 說好才啟用；啟用與暫停只由 Darren 決定。
 - 每輪流程在 `content-automation/local-writer.md`，執行紀錄在 `content-automation/local-run-log.md`。工作資料夾是 git worktree `C:\Users\ak472\Documents\GitHub\japan-travel-auto`（分支 `auto/wakkanai-writing`），不動主資料夾；人工 session 不要在那個資料夾改檔案。
 - 自動產出的文章封包一律當成另一個執行者的成果：不回退、不重做；要合併回 `main` 時照 Git 規則先跑測試。
+
+## 景點升格（Darren 2026-10-21 決定）
+
+- 景點預設寫在該地點景點頁裡的一個 H3，不單獨成頁。
+- 兩條都符合才給景點自己一頁：中文 Google 自動完成有這個景點的延伸詞（交通、路線、時間、開放之類）；只屬於它的事實達到短頁門檻（15 筆、800 字）。
+- 景點頁是面向頁的一種（`aspect-page`、主題 `sight`），網址 `/places/<地點>/<景點>/`；已核准的群要新增景點頁屬於例外，不默許。
+- 細節見選題 Skill `references/selection-workflow.md` 第 4 步「景點升格」。
