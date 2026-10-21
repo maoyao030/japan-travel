@@ -5,7 +5,7 @@ import {GOOGLE_ANALYTICS_MEASUREMENT_ID} from '../config/google'
 <section
   class="analytics-consent"
   data-analytics-consent
-  role="dialog"
+  role="region"
   aria-labelledby="analytics-consent-title"
   aria-describedby="analytics-consent-description"
   hidden
@@ -13,18 +13,19 @@ import {GOOGLE_ANALYTICS_MEASUREMENT_ID} from '../config/google'
   <div>
     <p class="analytics-consent-title" id="analytics-consent-title">分析資料設定</p>
     <p id="analytics-consent-description">
-      我們使用 Google Analytics 了解哪些內容被閱讀，只有在你同意後才會載入。AdSense 廣告目前尚未啟用，你可以隨時在頁尾更改設定。
+      本站使用 Google Analytics 了解哪些內容被閱讀，不收集姓名、電子郵件等個人資料，也不用於廣告。不想被記錄可以按「關閉分析」，之後也能在頁尾重新設定。
     </p>
     <a href="/privacy/">查看隱私權政策</a>
   </div>
   <div class="analytics-consent-actions">
-    <button type="button" data-analytics-decline>不同意</button>
-    <button type="button" class="analytics-consent-accept" data-analytics-accept>同意分析</button>
+    <button type="button" data-analytics-decline>關閉分析</button>
+    <button type="button" class="analytics-consent-accept" data-analytics-accept>知道了</button>
   </div>
 </section>
 
 <script is:inline define:vars={{measurementId: GOOGLE_ANALYTICS_MEASUREMENT_ID}}>
   (() => {
+    // 預設開啟、可以退出（Darren 2026-10-21 決定）：沒選過或選「知道了」都載入 GA，選「關閉分析」才不載入。
     const preferenceKey = 'japan-travel-analytics-consent-v1'
     const banner = document.querySelector('[data-analytics-consent]')
     const acceptButton = document.querySelector('[data-analytics-accept]')
@@ -48,12 +49,13 @@ import {GOOGLE_ANALYTICS_MEASUREMENT_ID} from '../config/google'
       }
     }
 
-    const setBannerVisibility = (visible) => {
+    const setBannerVisibility = (visible, {focus = false} = {}) => {
       if (!(banner instanceof HTMLElement)) return
       banner.hidden = !visible
-
       if (visible && acceptButton instanceof HTMLElement) {
-        acceptButton.focus()
+        // 已經關閉分析的人，從頁尾打開時按鈕改成重新開啟
+        acceptButton.textContent = readPreference() === 'denied' ? '重新開啟分析' : '知道了'
+        if (focus) acceptButton.focus()
       }
     }
 
@@ -67,13 +69,10 @@ import {GOOGLE_ANALYTICS_MEASUREMENT_ID} from '../config/google'
       }
 
       window.gtag('consent', 'default', {
-        analytics_storage: 'denied',
+        analytics_storage: 'granted',
         ad_storage: 'denied',
         ad_user_data: 'denied',
         ad_personalization: 'denied',
-      })
-      window.gtag('consent', 'update', {
-        analytics_storage: 'granted',
       })
       window.gtag('js', new Date())
       window.gtag('config', measurementId, {
@@ -88,9 +87,10 @@ import {GOOGLE_ANALYTICS_MEASUREMENT_ID} from '../config/google'
     }
 
     const preference = readPreference()
-    if (preference === 'granted') {
+    if (preference !== 'denied') {
       loadAnalytics()
-    } else if (preference !== 'denied') {
+    }
+    if (preference === null) {
       setBannerVisibility(true)
     }
 
@@ -111,7 +111,7 @@ import {GOOGLE_ANALYTICS_MEASUREMENT_ID} from '../config/google'
     })
 
     preferenceButtons.forEach((button) => {
-      button.addEventListener('click', () => setBannerVisibility(true))
+      button.addEventListener('click', () => setBannerVisibility(true, {focus: true}))
     })
   })()
 </script>
