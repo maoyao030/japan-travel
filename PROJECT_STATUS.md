@@ -1040,3 +1040,14 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 設定 Sanity Webhook → Cloudflare Deploy Hook，讓文章上傳後網站自動更新。
+
+## 2026-10-21 Claude Code（地端）：GA4 與 Google Search Console
+
+- Darren：「幫我把 GA 跟 Google Search Console 全部都設定好」，並同意建立 GA 資源、加 DNS 驗證紀錄、送 sitemap。內建瀏覽器沒登入 Google，改用 Darren 的 Chrome（已登入 Google 與 Cloudflare）。
+- GA4：在好材誌同一個帳戶（a406344333）下建立資源「繞路筆記 offpathnotes.com」（台灣時區、新台幣、產業旅遊），網頁資料串流「繞路筆記網站」https://offpathnotes.com，評估 ID `G-2JRKYEPGXQ`。
+- 網站：`src/config/google.ts` 填入評估 ID（commit c6c9a7d，已推到 `main` 並部署，首頁已帶 ID）。同意視窗原本就做好：訪客按「同意分析」才載入 GA，廣告個人化與 Google signals 在程式裡關閉，和隱私權頁說明一致。測試 168 項、建置通過。
+- Search Console：網域資源 `offpathnotes.com`，用 Cloudflare DNS 的 TXT 紀錄驗證（`google-site-verification=…`，不要刪，刪了驗證會失效）；沒有授權 Google 存取 Cloudflare。送出 sitemap `https://offpathnotes.com/sitemap.xml`，剛送出時狀態是「無法擷取」，新資源常見，用 Googlebot 身分抓得到（200）；渡輪頁的即時測試通過並已要求建立索引。另外兩篇要求建立索引被安全規則擋下（Darren 沒有逐一要求），交給 sitemap。
+
+### 尚未完成
+
+- 一兩天後回 Search Console 確認 sitemap 狀態變成「成功」；GA 要等有訪客同意分析後才會有資料（最多 48 小時）。
