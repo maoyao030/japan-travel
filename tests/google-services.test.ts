@@ -13,7 +13,7 @@ async function readProjectFile(path: string) {
   return readFile(new URL(path, projectRoot), 'utf8')
 }
 
-test('GA4 只在設定評估 ID 且訪客同意後載入，廣告相關儲存維持停用', async () => {
+test('GA4 設定評估 ID 後預設載入、訪客可以關閉，廣告相關儲存維持停用', async () => {
   const [layout, consent] = await Promise.all([
     readProjectFile('src/layouts/BaseLayout.astro'),
     readProjectFile('src/components/AnalyticsConsent.astro'),
@@ -24,13 +24,17 @@ test('GA4 只在設定評估 ID 且訪客同意後載入，廣告相關儲存維
   )
   assert.match(layout, /\{GOOGLE_ANALYTICS_MEASUREMENT_ID && <AnalyticsConsent \/>\}/)
   assert.match(layout, /\{GOOGLE_ANALYTICS_MEASUREMENT_ID && \(\s*<button type="button" data-open-analytics-consent>/)
-  assert.match(consent, /preference === 'granted'/)
+  // 預設開啟、可以退出：只有選過「關閉分析」（denied）才不載入
+  assert.match(consent, /if \(preference !== 'denied'\) \{\s*loadAnalytics\(\)/)
+  assert.match(consent, /savePreference\('denied'\)/)
+  assert.match(consent, /data-analytics-decline>關閉分析</)
   assert.match(consent, /googletagmanager\.com\/gtag\/js/)
-  assert.match(consent, /analytics_storage: 'denied'/)
+  assert.match(consent, /analytics_storage: 'granted'/)
   assert.match(consent, /ad_storage: 'denied'/)
   assert.match(consent, /ad_user_data: 'denied'/)
   assert.match(consent, /ad_personalization: 'denied'/)
-  assert.match(consent, /window\.gtag\('consent', 'update', \{\s*analytics_storage: 'granted'/)
+  assert.match(consent, /allow_google_signals: false/)
+  assert.match(consent, /allow_ad_personalization_signals: false/)
   assert.doesNotMatch(layout, /googletagmanager\.com\/gtag\/js/)
 })
 
