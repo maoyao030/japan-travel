@@ -1,241 +1,182 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import {EDITORIAL_AUTHOR_NAME, SITE_NAME} from '../config/site'
-import {getHubPath, getPublishedCategories} from '../data/hubs'
+import {SITE_NAME} from '../config/site'
+import {getHubPath, getPublishedCategories, PLACES_CATEGORY_SLUG, type HubPageData} from '../data/hubs'
 import {getPublishedContentRoutes} from '../lib/contentRoutes'
 import {IMAGE_SIZES, getResponsiveImage} from '../lib/images'
 import {createWebSiteStructuredData} from '../lib/structuredData'
 
+/**
+ * 首頁（2026-10-21 Darren 選定「車站站牌」風格）。
+ * 固定文字只寫網站一直不變的事；地點、地區與文章全部從已發布內容自動列出，
+ * 新地區上線時不用回來改這頁。
+ */
 const {aspectDirectories, indexableHubs, landingArticles, monthPages, publishableHubs, routableArticles} =
   await getPublishedContentRoutes()
 const homeCategories = getPublishedCategories(publishableHubs)
-const hubArticleLimit = 6
-const hubGroups = indexableHubs
-  .map((hub) => {
-    const articles = routableArticles
-      .filter((route) => route.hub.id === hub.id && !route.article.noindex)
-      .sort(
-        (left, right) =>
-          Date.parse(right.article.publishedAt) - Date.parse(left.article.publishedAt),
-      )
-    return {
-      hub,
-      path: getHubPath(hub),
-      totalCount: articles.length,
-      articles: articles.slice(0, hubArticleLimit),
-    }
-  })
-  .filter((group) => group.articles.length > 0)
-  .sort((left, right) => right.totalCount - left.totalCount)
+
+const indexableArticles = routableArticles.filter((route) => !route.article.noindex)
+const countArticles = (hub: HubPageData) =>
+  indexableArticles.filter((route) => route.hub.id === hub.id).length
+
 const stories = [
-  ...landingArticles.map(({article, hub}) => ({article, path: getHubPath(hub), hubPath: getHubPath(hub)})),
-  ...routableArticles.map(({article, hub, path}) => ({article, path, hubPath: getHubPath(hub)})),
+  ...landingArticles.map(({article, hub}) => ({article, hub, path: getHubPath(hub)})),
+  ...routableArticles.map(({article, hub, path}) => ({article, hub, path})),
 ]
-  .filter(({article}) => article.cover)
+  .filter(({article}) => article.cover && !article.noindex)
   .sort(
     (left, right) =>
       Date.parse(right.article.publishedAt) - Date.parse(left.article.publishedAt),
   )
+const latestStories = stories.slice(0, 6)
+
+// 站牌：最新一篇文章所在的主題中心，左右兩側是已上線的鄰近地點。
+const signHub = stories.find(({hub}) => indexableHubs.some((item) => item.id === hub.id))?.hub
+const signNeighbors = (signHub?.nearbyPlaces ?? []).filter((place) => place.path).slice(0, 2)
+const signRegion = signHub?.region
+  ? publishableHubs.find((hub) => hub.id === signHub.region?.id)
+  : undefined
+const signCount = signHub ? countArticles(signHub) : 0
+
+// 路線：地點依所屬地區排成一條線；其他分類各自一條線。只列已有文章的主題中心。
+const stopsOf = (hubs: HubPageData[]) =>
+  hubs
+    .filter((hub) => countArticles(hub) > 0)
+    .map((hub) => ({hub, path: getHubPath(hub), count: countArticles(hub)}))
+    .sort((left, right) => right.count - left.count || left.hub.title.localeCompare(right.hub.title, 'zh-Hant'))
+const placeHubs = indexableHubs.filter(
+  (hub) => hub.categorySlug === PLACES_CATEGORY_SLUG && hub.placeKind !== 'region',
+)
+const regionHubs = publishableHubs.filter(
+  (hub) => hub.categorySlug === PLACES_CATEGORY_SLUG && hub.placeKind === 'region',
+)
+const routeLines = [
+  ...regionHubs.map((region) => ({
+    title: region.title,
+    path: getHubPath(region),
+    stops: stopsOf(placeHubs.filter((hub) => hub.region?.id === region.id)),
+  })),
+  {
+    title: '其他地點',
+    path: `/${PLACES_CATEGORY_SLUG}/`,
+    stops: stopsOf(
+      placeHubs.filter((hub) => !regionHubs.some((region) => region.id === hub.region?.id)),
+    ),
+  },
+  ...homeCategories
+    .filter((category) => category.slug !== PLACES_CATEGORY_SLUG)
+    .map((category) => ({
+      title: category.title,
+      path: `/${category.slug}/`,
+      stops: stopsOf(indexableHubs.filter((hub) => hub.categorySlug === category.slug)),
+    })),
+].filter((line) => line.stops.length > 0)
+
 const siteUrl = new URL('/', Astro.site ?? Astro.url).href
 const structuredData = createWebSiteStructuredData(siteUrl)
-const leadStory = stories[0]
-const recentStories = stories.slice(1, 4)
 ---
 
 <BaseLayout
   title={`${SITE_NAME}｜日本小地方的交通、住宿與季節`}
   noindex={false}
   structuredData={structuredData}
-  description={`${SITE_NAME}是給台灣旅人看的日本旅遊實用資訊網站，從北海道開始一個地點一頁，整理前往小地方的交通、旅館與訂房管道、逐月的氣候與穿著、祭典與季節活動，資料以日文官方來源為準並標示查核日期。`}
+  description={`${SITE_NAME}寫日本小地方怎麼去、住哪裡。班次少的船和巴士列出時刻表與票價，也寫停航、錯過末班車時可以怎麼辦。`}
 >
-  <header class="home-intro">
-    <div class="shell home-intro-inner">
-      <p class="eyebrow">{SITE_NAME}｜給台灣旅人的日本旅遊實用資料</p>
-      <h1><span>{SITE_NAME}，</span><span>一個地點一頁，</span><span>交通、住宿、</span><span>季節放在一起查。</span></h1>
-      <p>稚內、利尻島、禮文島這類小地方，中文資料常只有一兩句。{SITE_NAME}從北海道開始，一個地點寫一頁：怎麼搭車搭船、旅館的房型與訂房管道、哪幾個月去與那時的氣候、祭典與地方料理，看不懂日文時要怎麼操作也一併寫清楚。文章由{EDITORIAL_AUTHOR_NAME}撰寫，事實以旅館與店家官網、觀光協會與氣象廳公開數據為準，住宿頁標示查核日期並每年重查。</p>
-    </div>
-  </header>
+  <section class="home-hero shell" aria-labelledby="home-title">
+    <h1 id="home-title">日本小地方怎麼去、住哪裡</h1>
+    <p>班次少的船和巴士，文章裡列出時刻表與票價，也寫停航、錯過末班車時可以怎麼辦。</p>
 
-  {leadStory && leadStory.article.cover && (
-    <section class="home-feature shell" aria-labelledby="lead-story-heading">
-      <div class="home-section-bar">
-        <p>{SITE_NAME}最新文章</p>
-        <a href={leadStory.hubPath}>
-          查看{leadStory.article.hubTitle ? `${leadStory.article.hubTitle}主題` : '主題頁'}
+    {signHub && (
+      <div class="station-sign">
+        <p class="station-sign-label">最近更新的地點</p>
+        <a class="station-sign-name" href={getHubPath(signHub)}>
+          {signHub.nameJa && signHub.nameJa !== signHub.title && (
+            <small lang="ja">{signHub.nameJa}</small>
+          )}
+          <strong>{signHub.title}</strong>
+          {signHub.eyebrow && <span>{signHub.eyebrow}</span>}
         </a>
+        <nav class="station-sign-bar" aria-label={`${signHub.title}的鄰近地點`}>
+          <span class="station-sign-prev">
+            {signNeighbors[0] && <a href={signNeighbors[0].path}>← {signNeighbors[0].title}</a>}
+          </span>
+          <span class="station-sign-region">
+            {signRegion ? <a href={getHubPath(signRegion)}>{signRegion.title}</a> : null}
+          </span>
+          <span class="station-sign-next">
+            {signNeighbors[1] && <a href={signNeighbors[1].path}>{signNeighbors[1].title} →</a>}
+          </span>
+        </nav>
+        <p class="station-sign-foot">
+          <a href={getHubPath(signHub)}>{signHub.title}的文章 {signCount} 篇 →</a>
+        </p>
       </div>
-      <article class="lead-story">
-        <a class="lead-story-media" href={leadStory.path} tabindex="-1" aria-hidden="true">
-          <img
-            {...getResponsiveImage(leadStory.article.cover.url, leadStory.article.cover.width)}
-            sizes={IMAGE_SIZES.leadStory}
-            width={leadStory.article.cover.width}
-            height={leadStory.article.cover.height}
-            alt=""
-            loading="eager"
-            decoding="async"
-            fetchpriority="high"
-          />
-        </a>
-        <div class="lead-story-copy">
-          <p class="story-kicker">{leadStory.article.hubTitle ?? '旅遊文章'}</p>
-          <h2 id="lead-story-heading"><a href={leadStory.path}>{leadStory.article.title}</a></h2>
-          <p>{leadStory.article.excerpt}</p>
-          <a class="text-link" href={leadStory.path}>閱讀完整文章</a>
-        </div>
-      </article>
-    </section>
-  )}
+    )}
+  </section>
 
-  {recentStories.length > 0 && (
-    <section class="home-section shell" aria-labelledby="recent-stories-heading">
-      <div class="home-section-header">
-        <div>
-          <p class="eyebrow">最近更新</p>
-          <h2 id="recent-stories-heading">{SITE_NAME}最近更新的文章</h2>
-        </div>
-        <p>依地區、月份、季節與交通方式查找符合這趟行程的文章；每篇都標示更新日期與資料來源。</p>
-      </div>
-      <div class="story-grid">
-        {recentStories.map(({article, path}) => article.cover && (
-          <article class="story-card">
-            <a class="story-card-media" href={path} tabindex="-1" aria-hidden="true">
+  {latestStories.length > 0 && (
+    <section class="home-block shell" aria-labelledby="latest-heading">
+      <h2 class="line-heading" id="latest-heading">最新文章</h2>
+      <div class="home-cards">
+        {latestStories.map(({article, hub, path}, index) => article.cover && (
+          <article class="home-card">
+            <a class="home-card-media" href={path} tabindex="-1" aria-hidden="true">
               <img
                 {...getResponsiveImage(article.cover.url, article.cover.width)}
                 sizes={IMAGE_SIZES.storyCard}
                 width={article.cover.width}
                 height={article.cover.height}
                 alt=""
-                loading="lazy"
+                loading={index === 0 ? 'eager' : 'lazy'}
                 decoding="async"
               />
             </a>
-            <p class="story-kicker">{article.hubTitle ?? '旅遊文章'}</p>
-            <h3><a href={path}>{article.title}</a></h3>
-            <p>{article.excerpt}</p>
+            <div class="home-card-copy">
+              <a class="place-tag" href={getHubPath(hub)}>{hub.title}</a>
+              <h3><a href={path}>{article.title}</a></h3>
+              <p>{article.excerpt}</p>
+            </div>
           </article>
         ))}
       </div>
     </section>
   )}
 
-  {hubGroups.length > 0 && (
-    <section class="home-section home-topic-lists shell" aria-labelledby="topic-lists-heading">
-      <div class="home-section-header">
-        <div>
-          <p class="eyebrow">依主題查找</p>
-          <h2 id="topic-lists-heading">{SITE_NAME}各主題的文章</h2>
-        </div>
-        <p>每個主題列出最近更新的文章，完整清單可到各主題頁查看。</p>
-      </div>
-      <div class="home-topic-groups">
-      {hubGroups.map(({hub, path, totalCount, articles}) => (
-        <div class="home-topic-group">
-          <div class="section-heading compact-heading">
-            <div>
-              <p class="eyebrow">{hub.title}</p>
-              <h3>{hub.title}文章</h3>
-            </div>
-            <a class="text-link" href={path}>查看{hub.title}主題頁</a>
-          </div>
-          <div class="article-list">
-            {articles.map(({article, path: articlePath}, index) => (
-              <a class="article-row" href={articlePath}>
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <div>
-                  <h4>{article.title}</h4>
-                  <p>{article.excerpt}</p>
-                </div>
-                <b aria-hidden="true">→</b>
-              </a>
-            ))}
-          </div>
-          {totalCount > articles.length && (
-            <p class="article-list-more">
-              <a class="text-link" href={path}>{hub.title}主題共 {totalCount} 篇文章，查看全部</a>
-            </p>
-          )}
-        </div>
-      ))}
-      </div>
-    </section>
-  )}
-
-  <section class="home-section home-categories" id="topics">
-    <div class="shell">
-      <div class="home-section-header">
-        <div>
-          <p class="eyebrow">內容分類</p>
-          <h2>按地點、季節、祭典或旅行教學查找</h2>
-        </div>
-        <p>{SITE_NAME}只列出已有文章的分類，可依這趟旅行要解決的問題查找對應的主題頁。</p>
-      </div>
-      <div class="home-category-grid">
-        {homeCategories.map((category, index) => (
-          <a class="home-category-item" href={`/${category.slug}/`}>
-            <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-            <h3>{category.title}</h3>
-            <p>{category.summary}</p>
-            <b aria-hidden="true"></b>
-          </a>
+  {routeLines.map((line) => (
+    <section class="home-block shell" aria-label={line.title}>
+      <h2 class="line-heading"><a href={line.path}>{line.title}</a></h2>
+      <ol class="route-line">
+        {line.stops.map(({hub, path, count}) => (
+          <li>
+            <a href={path}>
+              <span class="route-stop" aria-hidden="true"></span>
+              <span class="route-name">
+                <b>{hub.title}</b>
+                {hub.eyebrow && <small>{hub.eyebrow}</small>}
+              </span>
+              <span class="route-count">{count} 篇 →</span>
+            </a>
+          </li>
         ))}
-      </div>
-    </div>
-  </section>
+      </ol>
+    </section>
+  ))}
 
   {(aspectDirectories.length > 0 || monthPages.length > 0) && (
-    <section class="home-section home-lists" aria-labelledby="home-lists-heading">
-      <div class="shell">
-        <div class="home-section-header">
-          <div>
-            <p class="eyebrow">跨地點查找</p>
-            <h2 id="home-lists-heading">依面向或月份查找</h2>
-          </div>
-          <p>同一類問題或同一個月份的文章，跨地點集中在一頁。</p>
-        </div>
-        {aspectDirectories.length > 0 && (
-          <nav class="article-tags" aria-label="依面向查找">
-            <strong>依面向</strong>
-            <div>{aspectDirectories.map((directory) => <a href={directory.path}>{directory.title}</a>)}</div>
-          </nav>
-        )}
-        {monthPages.length > 0 && (
-          <nav class="article-tags" aria-label="依月份查找">
-            <strong>依月份</strong>
-            <div>{monthPages.map((page) => <a href={page.path}>{page.title}</a>)}</div>
-          </nav>
-        )}
-      </div>
+    <section class="home-block shell" aria-labelledby="home-lists-heading">
+      <h2 class="line-heading" id="home-lists-heading">跨地點查找</h2>
+      {aspectDirectories.length > 0 && (
+        <nav class="article-tags" aria-label="依主題查找">
+          <strong>依主題</strong>
+          <div>{aspectDirectories.map((directory) => <a href={directory.path}>{directory.title}</a>)}</div>
+        </nav>
+      )}
+      {monthPages.length > 0 && (
+        <nav class="article-tags" aria-label="依月份查找">
+          <strong>依月份</strong>
+          <div>{monthPages.map((page) => <a href={page.path}>{page.title}</a>)}</div>
+        </nav>
+      )}
     </section>
   )}
-
-  <section class="home-guide" id="guides">
-    <div class="shell">
-      <div class="home-guide-heading">
-        <div>
-          <p class="eyebrow">查資料的方式</p>
-          <h2>官網、公開數據與查核日期</h2>
-        </div>
-        <p>同一間旅館在不同平台的房價、含餐與取消條件可能不同；同一個月的天氣，看預報和看三十年平年值也會得到不同答案。{SITE_NAME}的每篇文章都說明數字來自哪裡、哪一天查的，方便讀者自己再核對一次。</p>
-      </div>
-      <ol class="home-guide-grid">
-        <li>
-          <h3>住宿以官網為準</h3>
-          <p>房型、含餐、接駁與營業狀態以旅館官網查核，註明可用的訂房管道與查核日期，每年重查一次。</p>
-        </li>
-        <li>
-          <h3>天氣用平年值</h3>
-          <p>各城市逐月的氣溫、降雨與日照採用氣象廳三十年平年值，不是當天預報，適合出發前一個月以上的準備。</p>
-        </li>
-        <li>
-          <h3>評價只引用公開榜單</h3>
-          <p>店家評價只列米其林、Tabelog 百名店等公開榜單並附上連結，不改寫網路評論，營業資訊以官網與 Hot Pepper 為準。</p>
-        </li>
-      </ol>
-      <p class="home-guide-about">
-        {SITE_NAME}文章內的訂房連結可能含有聯盟分潤，不影響內容判斷與價格。想知道內容怎麼查證與更新，請看
-        <a class="text-link" href="/about/">關於{SITE_NAME}</a>。
-      </p>
-    </div>
-  </section>
 </BaseLayout>
