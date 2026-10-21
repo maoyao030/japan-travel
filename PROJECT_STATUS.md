@@ -1040,3 +1040,37 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 設定 Sanity Webhook → Cloudflare Deploy Hook，讓文章上傳後網站自動更新。
+
+## 2026-10-21 Claude Code（雲端）：首頁改成車站站牌風格與首頁 SEO（分支 `claude/youthful-knuth-1ranhx`，還沒合併）
+
+### Darren 的要求
+
+- 調整網站架構與 UI／UX，一次只做一個看得到的改動；不改文章內容、Skill 與寫作規則。
+- 固定文字讀起來像 AI 寫的，而且寫死「從北海道開始」「稚內、利尻島、禮文島」，之後擴到其他地區會很奇怪；版面要有自己的樣子，不要像好材誌。
+
+### 已決定
+
+- 視覺風格選「車站站牌」（白卡片、站牌綠 `#0b6e4f`、頁首下方綠色路線條）。另外兩個樣稿（大照片、筆記本）沒選。
+- 首頁固定文字照寫作 Skill 的原則、站在讀者角度寫，不寫特定地區或還沒有文章的題材。
+- 首頁不放大站牌：大站牌看起來像整頁標題（Darren 意見），改成每個地點一張小站牌卡片。卡片不顯示和中文幾乎一樣的日文名。
+- Search Console 與 GA4 交給本機 session 做（要用 Darren 的 Google 與 Cloudflare 登入，雲端做不到）。
+
+### 已完成（三個 commit，都在 `claude/youthful-knuth-1ranhx`）
+
+- 首頁：標題「日本小地方怎麼去、住哪裡」＋一句說明 → 最新文章（最多 6 篇卡片）→ 依地區分組的地點站牌卡片（綠條是已上線的鄰近地點）。地點、地區、文章全部從已發布內容自動列出。
+- 頁首改成一列（綠圈＋站名、導覽），頁尾只留一句「日本小地方的交通、住宿與季節，寫給台灣旅人。」配色 token 改成淺灰底、白卡片、站牌綠（`--clay` 沒改，文章頁的橘色小標還在）。
+- SEO：`SITE_DESCRIPTION` 改寫並當首頁 meta description；WebSite 結構化資料加 `alternateName: offpathnotes.com`；首頁標題改成「繞路筆記｜日本小地方的交通與住宿」；地區頁還沒開放索引時首頁不連過去。
+- 測試跟著調整，並新增檢查「首頁與版型不寫特定地區名稱」。`npm run ci` 通過（測試 168 項、15 頁、站內連結與點擊深度檢查通過）。
+
+### 尚未完成
+
+- **合併回 `main` 要 Darren 同意**（照規則先 fetch、併 `origin/main`、跑測試）。合併後網站才會換成新首頁。
+- Search Console：網站目前搜尋不到（`site:offpathnotes.com` 沒有結果）。要建「網域」資源 `offpathnotes.com`，用 Cloudflare 自動驗證，再提交 `sitemap.xml`。
+- GA4：建資源「繞路筆記」（時區台灣、新台幣、網站串流 offpathnotes.com），把評估 ID 填進 `src/config/google.ts` 的 `GOOGLE_ANALYTICS_MEASUREMENT_ID`。隱私權政策寫了「已關閉廣告個人化與 Google signals」，要在 GA 的資料收集設定確認是關的。程式的同意視窗已經寫好，上線後確認「同意」才載入、「不同意」不載入。
+- 文章頁與地點頁還是舊版面（只換了頁首與配色）；`/places/` 分類說明還寫著「從北海道開始」（`src/data/categories.ts`）。
+- `global.css` 留著舊首頁與舊頁首的樣式（沒有頁面在用），整站換完再清。
+- 網站地圖還沒有 `lastmod`。
+
+### 唯一下一步
+
+- 本機 session：Darren 同意後合併首頁分支，接著用 Darren 的 Chrome 設定 Search Console 與 GA4。
