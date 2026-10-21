@@ -1,6 +1,7 @@
 import {CONTACT_EMAIL} from '../config/contact.ts'
 import {
   ORGANIZATION_SAME_AS,
+  SITE_ALTERNATE_NAMES,
   SITE_DESCRIPTION,
   SITE_LOGO_PATH,
   SITE_LOGO_SIZE,
@@ -68,6 +69,7 @@ export function createWebSiteNode(siteUrl: string) {
     '@type': 'WebSite',
     '@id': getWebSiteId(siteUrl),
     name: SITE_NAME,
+    alternateName: SITE_ALTERNATE_NAMES,
     url: siteUrl,
     description: SITE_DESCRIPTION,
     inLanguage: LANGUAGE,

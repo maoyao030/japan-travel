@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import {SITE_NAME} from '../config/site'
+import {SITE_DESCRIPTION, SITE_NAME} from '../config/site'
 import {getHubPath, getPublishedCategories, PLACES_CATEGORY_SLUG, type HubPageData} from '../data/hubs'
 import {getPublishedContentRoutes} from '../lib/contentRoutes'
 import {IMAGE_SIZES, getResponsiveImage} from '../lib/images'
@@ -51,7 +51,8 @@ const regionHubs = publishableHubs.filter(
 const signGroups = [
   ...regionHubs.map((region) => ({
     title: region.title,
-    path: getHubPath(region),
+    // 地區頁還不開放索引時，首頁不連過去，只當分組標題
+    path: indexableHubs.some((hub) => hub.id === region.id) ? getHubPath(region) : undefined,
     stops: stopsOf(placeHubs.filter((hub) => hub.region?.id === region.id)),
   })),
   {
@@ -75,10 +76,10 @@ const structuredData = createWebSiteStructuredData(siteUrl)
 ---
 
 <BaseLayout
-  title={`${SITE_NAME}｜日本小地方的交通、住宿與季節`}
+  title={`${SITE_NAME}｜日本小地方的交通與住宿`}
   noindex={false}
   structuredData={structuredData}
-  description={`${SITE_NAME}寫日本小地方怎麼去、住哪裡。班次少的船和巴士列出時刻表與票價，也寫停航、錯過末班車時可以怎麼辦。`}
+  description={SITE_DESCRIPTION}
 >
   <section class="home-hero shell" aria-labelledby="home-title">
     <h1 id="home-title">日本小地方怎麼去、住哪裡</h1>
@@ -116,7 +117,7 @@ const structuredData = createWebSiteStructuredData(siteUrl)
 
   {signGroups.map((group) => (
     <section class="home-block shell" aria-label={group.title}>
-      <h2 class="line-heading"><a href={group.path}>{group.title}</a></h2>
+      <h2 class="line-heading">{group.path ? <a href={group.path}>{group.title}</a> : group.title}</h2>
       <ul class="station-grid">
         {group.stops.map(({hub, path, count, neighbors}) => (
           <li class="station-card">

@@ -5,9 +5,15 @@ export const SITE_NAME = '繞路筆記'
 export const EDITORIAL_AUTHOR_NAME = `${SITE_NAME}編輯部`
 export const PAGE_TITLE_SEPARATOR = ' - '
 
-/** 一句話說明網站給誰看、寫什麼；會放進 Organization 與 WebSite 結構化資料。 */
+/**
+ * 網站簡介，放進 Organization 與 WebSite 結構化資料，也是首頁的 meta description。
+ * 只寫網站一直不變的事，不寫特定地區，也不寫還沒有文章的題材（2026-10-21 改）。
+ */
 export const SITE_DESCRIPTION =
-  `${SITE_NAME}是給台灣讀者看的日本旅遊實用資訊網站，整理小型溫泉地與鄉間的住宿選擇、各城市逐月的氣候與穿著、季節活動時間，以及地方料理與交通的實際安排，資料以旅館官網、觀光協會與氣象廳公開數據為準。`
+  `${SITE_NAME}寫日本小地方怎麼去、住哪裡，給台灣旅人看。班次少的船和巴士列出時刻表與票價，也寫停航、錯過末班車時可以怎麼辦。`
+
+/** 網站的其他名稱，放進 WebSite 結構化資料，讓 Google 把網域和站名認成同一個網站。 */
+export const SITE_ALTERNATE_NAMES = ['offpathnotes.com']
 
 /** 網站標誌檔案，供 Organization.logo 使用；Google 要求至少 112×112 像素、可被抓取的圖檔。 */
 export const SITE_LOGO_PATH = '/logo.png'
