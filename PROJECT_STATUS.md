@@ -1162,3 +1162,26 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 文章頁換成車站站牌風格（地點小標、目錄、文末相關文章）。
+
+## 2026-10-22 Claude Code（雲端）：本機自動寫作 4 篇合併回 `main`
+
+### Darren 的要求與決定
+
+- Darren 以為自動寫作停了。查過後是正常運作：10/20 22:39 起每 8 小時一輪，成果都在 `auto/wakkanai-writing` 分支，`main` 的執行紀錄才一直是「尚未自動執行」。
+- Darren 要求把完成的 4 篇合併回 `main`。
+
+### 已完成
+
+- `auto/wakkanai-writing` 合併回 `main`：`cape-soya-transport`、`wakkanai-weather`、`wakkanai-sights`、`wakkanai-food` 四篇的完成稿與驗收紀錄（`review.md` 都是 `ready_for_user_preview`），加上停放的 `wakkanai-stay` 資料夾、執行紀錄與大綱的標題同步。
+- 合併前檢查：`npm test` 168 項通過、`planning:check` 與 `queue:validate` 通過、四篇 `local-article-gates.mjs` 都是 `gates_clear`。
+- 只動 `main`，沒有推送 `auto/wakkanai-writing`，本機排定工作照常從那個分支拉。合併不會發布：沒上傳 Sanity、沒選圖。
+
+### 尚未完成
+
+- 四篇還沒選圖、沒上傳 Sanity，要等 Darren 看過樣本再決定。
+- `wakkanai-stay` 停放中：缺房價、含餐、訂房管道，分工表裡宗谷岬民宿的家數跟 F186 對不上，要人工規劃 session 補研究。
+- 待同步回地點事實表的更正與新事實（見執行紀錄「待同步的事實」）；`wakkanai-sights` 與 `wakkanai-food` 新增的事實都從 F198 開始編，同步時要重新編號。
+
+### 唯一下一步
+
+- Darren 讀這四篇的 `reader-preview.md`，決定品質是否合格、每天寫幾篇與怎麼抽查。
