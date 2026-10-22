@@ -1185,3 +1185,11 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - Darren 讀這四篇的 `reader-preview.md`，決定品質是否合格、每天寫幾篇與怎麼抽查。
+
+## 2026-10-22 Claude Code（地端）：本機自動寫作改成每天 5 篇
+
+- 已決定：Darren 看前幾輪成果後，把每天上限從 3 篇改成 5 篇。
+- 已完成：`article-queue.json` 的 `maxArticlesPerDay` 改 5（`build-queue.mjs` 同步），`local-writer.md` 與 `AGENTS.md` 記錄新時間；排定工作 `japan-travel-daily-writer` 改成每天台北 01:42、04:42、10:42、13:42、20:42（原本 04:42、12:42、20:42）。
+- 用量估計：前 4 輪一篇約用 5 小時額度 10%、每週額度約 1%，一天 5 篇約每週 35%，還要加上好材誌自己的用量。每輪開始前仍會檢查，週額度 80% 以上自動略過。
+- 自動寫作的分支 `auto/wakkanai-writing` 已快轉到 `main`，排定工作下一輪就會讀到新上限。
+- 唯一下一步：過兩三天看執行紀錄，確認每天真的完成 5 篇、週額度沒有逼近 80%。
