@@ -1,0 +1,557 @@
+{
+  "schemaVersion": 1,
+  "articleId": "wakkanai-weather",
+  "articleSha256": "84bc2e0d028a7b50be0e1be24d06245087bc7debb9bede8c4a31e7b16817acbd",
+  "checker": "事實查核 agent（Claude Opus 5.5，唯讀，非作者；2026-10-21 第 2 輪複查：驗收後第 1 輪修改版逐句重比，來源全部以 curl 下載重讀，含氣象廳稚內與宗谷岬アメダス平年值、稚內地方氣象台流冰頁、氣象廳 area.json 與宗谷地方預報 JSON、きた・北海道 DMO 各頁、宗谷巴士頁與兩份 PDF）",
+  "checkedAt": "2026-10-21",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "一年的平均氣溫只有7.0℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "年 | 1010.2 | 1011.7 | 1109.2 | 7.0 | 9.7 | 4.5",
+      "verdict": "verified",
+      "notes": "統計期間 1991～2020。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "最暖的8月平均19.5℃，12月到隔年3月每個月的平均都在0℃以下",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "8月 | … | 19.5｜12月 -2.1｜1月 -4.3｜2月 -4.3｜3月 -0.6",
+      "verdict": "verified",
+      "notes": "8月是12個月中最高。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "雪從11月一路下到4月，一整季的降雪量平均477公分",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "降雪の深さ合計 11月 41｜12月 122｜1月 129｜2月 105｜3月 68｜4月 9｜年 477",
+      "verdict": "verified",
+      "notes": "10月也有 1 公分、雪日數 10月 3.8 天、5月 2.1 天，「11月到4月」是主要降雪期的合理概括。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "風則是一年到頭都大",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a3",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（風・日照）",
+      "sourceQuote": "平均風速 年 4.6｜最弱 7月 3.9",
+      "verdict": "verified",
+      "notes": "編輯判斷：最弱的7月 3.9 m/s 仍高於札幌全年平均 3.6 m/s，可成立。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "冬天的穿著以防寒加防風為主，流冰則是30年裡只有一半的年份看得到",
+      "sourceUrl": "https://www.data.jma.go.jp/wakkanai/kishou/ryuhyou.html",
+      "sourceTitle": "宗谷の流氷｜稚内地方気象台",
+      "sourceQuote": "平年値 1991（平成3年）年～ 2020（令和2）年 2月19日 （15年）",
+      "verdict": "verified",
+      "notes": "15/30 年＝一半。穿著是依 C30（真冬日）、C24（冬季風最強）推出的編輯判斷，數字支持。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "下表的稚內氣溫用的是氣象廳的平年值，也就是1991年到2020年這30年的平均，不是天氣預報",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "統計期間 1991～2020｜資料年数 30",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "氣溫表（平均／白天最高／早晚最低）：1月 −4.3／−2.4／−6.4、2月 −4.3／−2.0／−6.7、3月 −0.6／1.6／−3.1、4月 4.5／7.4／1.8、5月 9.1／12.4／6.3、6月 13.0／16.1／10.4、7月 17.2／20.1／14.9、8月 19.5／22.3／17.2、9月 17.2／20.1／14.4、10月 11.3／14.1／8.4、11月 3.8／6.3／1.3、12月 −2.1／0.0／−4.2",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "気温 平均/日最高/日最低(℃)：1月 -4.3 -2.4 -6.4｜2月 -4.3 -2.0 -6.7｜3月 -0.6 1.6 -3.1｜4月 4.5 7.4 1.8｜5月 9.1 12.4 6.3｜6月 13.0 16.1 10.4｜7月 17.2 20.1 14.9｜8月 19.5 22.3 17.2｜9月 17.2 20.1 14.4｜10月 11.3 14.1 8.4｜11月 3.8 6.3 1.3｜12月 -2.1 0.0 -4.2",
+      "verdict": "verified",
+      "notes": "36 格逐一比對一致（F31、F32）。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "稚內一天裡的溫差不大，最冷的1月白天和早晚只差4度左右，最暖的8月也只差5度左右",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "1月 -4.3 | -2.4 | -6.4｜8月 19.5 | 22.3 | 17.2",
+      "verdict": "verified",
+      "notes": "重算 1月 4.0、8月 5.1。1月與2月平均同為 −4.3，「最冷的1月」可接受（2月最低更低，下一句有寫）。12 個月日較差最大的是 4、5 月（5.6、6.1），仍屬小，「溫差不大」成立。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "全年最冷的是2月的早晚，最低平均零下6.7℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "2月 | … | -4.3 | -2.0 | -6.7",
+      "verdict": "verified",
+      "notes": "−6.7 是 12 個月日最低平年值中最低。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "4月白天最高平均才7.4℃，秋天則涼得慢，10月白天還有14.1℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "4月 | … | 4.5 | 7.4 | 1.8｜10月 | … | 11.3 | 14.1 | 8.4",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "7月和9月的平均氣溫都是17.2℃，白天最高也同樣是20.1℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "7月 | … | 17.2 | 20.1 | 14.9｜9月 | … | 17.2 | 20.1 | 14.4",
+      "verdict": "verified",
+      "notes": "「9月可以當成夏天的尾巴」是由此推的編輯判斷，數字支持。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "降雪量表：11月 41公分、12月 122公分、1月 129公分、2月 105公分、3月 68公分、4月 9公分",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "降雪の深さ合計(cm)：1月 129｜2月 105｜3月 68｜4月 9｜11月 41｜12月 122",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "下得最多的是12月和1月，平均下雪的天數12月28.5天、1月30.4天，等於幾乎天天下雪",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "雪日数 1月 30.4｜12月 28.5",
+      "verdict": "verified",
+      "notes": "降雪量 1月 129、12月 122 為前兩名。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "積雪最深的時候在2月，平均64公分",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "最深積雪(cm) 1月 59｜2月 64｜3月 58",
+      "verdict": "verified",
+      "notes": "各月最深積雪的平年值。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "整年算起來，約有148天會下雪",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "雪日数 年 147.9",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "雨最多的是秋天，9月136.7毫米、10月129.7毫米，11月也有121.4毫米。春天的4月是50.3毫米",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "降水量 合計(mm)：4月 50.3｜9月 136.7｜10月 129.7｜11月 121.4",
+      "verdict": "verified",
+      "notes": "8月 123.1 略多於 11月，但正文沒說 11 月是第三。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "8月平均氣溫稚內19.5℃、札幌22.3℃，稚內低了將近3度。1月是稚內零下4.3℃、札幌零下3.2℃，只差1.1度",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=14&block_no=47412&year=&month=&day=&view=",
+      "sourceTitle": "札幌（石狩地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "1月 | … | -3.2 | -0.4 | -6.4｜8月 | … | 22.3 | 26.4 | 19.1",
+      "verdict": "verified",
+      "notes": "重算 2.8、1.1 度，「夏天兩地的落差比冬天大」成立。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "全年平均風速稚內每秒4.6公尺，札幌是3.6公尺",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=14&block_no=47412&year=&month=&day=&view=",
+      "sourceTitle": "札幌（石狩地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "札幌 年 | … | 69 | 3.6 | 南東｜稚内 年 | … | 75 | 4.6 | 西",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "12月一整個月的日照28.4小時，1月40.6小時。日照時數最多的是5月，有181.6小時",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a3",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（風・日照）",
+      "sourceQuote": "日照時間 合計(時)：1月 40.6｜5月 181.6｜12月 28.4",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "晴天的機會要看日照率達到40%以上的日子，9月平均17.1天最多，其次是4月16.1天、10月15.0天，5月是14.9天。想在晴天看海、看遠方的島，9月的機會最多",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a3",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（風・日照）",
+      "sourceQuote": "日照時間 各階級の日数 日照率≧40%：4月 16.1｜5月 14.9｜9月 17.1｜10月 15.0｜年 131.7",
+      "verdict": "verified",
+      "notes": "第 1 輪 incorrect 已修正。17.1 是 12 個月最多，排序 9→4→10→5 月正確。雲量資料（快晴日 9月最多）也一致。"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "6、7月是一年裡最潮濕的時候，平均相對濕度6月85%、7月87%",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a2",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（気温・蒸気圧・湿度）",
+      "sourceQuote": "相対湿度 平均(％)：6月 85｜7月 87｜8月 84｜年 75",
+      "verdict": "verified",
+      "notes": "7月、6月為全年最高與第二高。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "這兩個月也是最常起霧的季節，不過一個月也只有3到4天",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "霧日数 5月 2.0 @｜6月 3.0 @｜7月 3.5 @｜8月 1.8 @｜年 11.8 @；「@」の付いた値は、参考値です。",
+      "verdict": "verified",
+      "notes": "第 1 輪 unsupported（多霧）已修正：6、7月為全年霧日數最多的兩個月，3.0～3.5 天寫成「3到4天」正確，不再誇大。夏天外套句也已拿掉「多霧」。霧日數為參考值。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "夏天一樣有風，6、7月又潮濕，帶一件能擋風、不怕濕的薄外套",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a2",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（気温・蒸気圧・湿度）",
+      "sourceQuote": "相対湿度 6月 85｜7月 87；平均風速（view=a3）6月 4.2｜7月 3.9｜8月 4.0",
+      "verdict": "verified",
+      "notes": "穿著建議依據的數字成立。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "11月到1月最強，平均每秒5.0公尺，冬天多吹西風",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a3",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（風・日照）",
+      "sourceQuote": "1月 | 5.0 | 西｜11月 | 5.0 | 西｜12月 | 5.0 | 西｜2月 4.7 西｜3月 4.7 西",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "風最弱的7月也還有每秒3.9公尺，夏天多半吹南南西風",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a3",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（風・日照）",
+      "sourceQuote": "6月 | 4.2 | 南南西｜7月 | 3.9 | 南南西｜8月 | 4.0 | 東",
+      "verdict": "verified",
+      "notes": "8月最多風向為東，「多半」可接受。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "以氣象廳的日最大風速每秒10公尺以上來算，這樣的日子一年平均有88.9天。11月、12月和1月每個月都將近10天，7月和8月約3天",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a3",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（風・日照）",
+      "sourceQuote": "風向・風速 各階級の日数 ≧10.0m/s：1月 9.6｜7月 3.5｜8月 3.1｜11月 9.7｜12月 9.9｜年 88.9",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "稚內觀光協會的說法則是一年約有130天颳強風，兩種數字的算法不同",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1075.html",
+      "sourceTitle": "稚内港北防波堤ドーム｜きた・北海道 稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "年間約130日も強風が吹き荒れる稚内の海辺",
+      "verdict": "verified",
+      "notes": "經營者為「一般社団法人 稚内観光協会（きた・北海道DMO）」（https://www.north-hokkaido.com/organization）。觀光協會沒有寫 130 天的算法；「算法不同」是由兩個數字不一致推出的說法，沒有說觀光協會怎麼算，可接受。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "11月到1月去海邊、岬角這類空曠的地方，正好碰上一年裡風最大的時候",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a3",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（風・日照）",
+      "sourceQuote": "平均風速 11月・12月・1月 5.0（全年最高）",
+      "verdict": "verified",
+      "notes": "宗谷岬アメダス平年值也是 11、12、1 月最強（9.0、9.3、8.6 m/s），見 C53。"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "風大的影響不只在冬天，渡輪遇到颱風或低氣壓帶來的大浪與強風都可能停開，天氣突然變壞時也會臨時停航",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "台風や低気圧等による悪天候（波の高さ・風向・風速）の影響により、欠航となる可能性がございます。また、天候の急変等により、急遽欠航及び発着港が変更となる場合がございます。",
+      "verdict": "verified",
+      "notes": "官方寫「可能性」「場合がございます」，正文「可能停開」一致；「也會臨時停航」是「有時會」的意思，可接受。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "12月到2月每個月有16到24天白天最高氣溫不到0℃，一整天都在冰點以下，這樣的日子一年平均約73天",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a2",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（気温・蒸気圧・湿度）",
+      "sourceQuote": "各階級の日数(日最高) ＜0.0℃：1月 23.8｜2月 20.7｜12月 16.0｜年 72.6",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "12月和1月也正是一年裡風最強的時候",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a3",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（風・日照）",
+      "sourceQuote": "1月 | 5.0｜12月 | 5.0（11月同為 5.0）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "冬天的路面還可能結冰",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」｜きた・北海道 稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "冬道は路面凍結、吹雪、視界不良等の可能性がございます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "3月和11月平均氣溫是零下0.6℃與3.8℃，也各有68公分、41公分的降雪",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "3月 平均 -0.6・降雪 68｜11月 平均 3.8・降雪 41",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "4月平均4.5℃，雪只剩9公分左右",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "4月 | … | 4.5 | 7.4 | 1.8 | … | 9 | 5 | 17",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "稚內機場的機場巴士配合班機發車，班機取消就停駛，延誤時會等飛機到了再開",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス｜宗谷バス株式会社",
+      "sourceQuote": "空港連絡バスは飛行機の発着に合わせる形で運行しています。／接続便の飛行機が欠航した場合、空港連絡バスは運休いたします。／稚内空港着の飛行機が遅れた場合、空港連絡バスは飛行機到着を待ってから出発します。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "往返札幌的高速巴士わっかない號，2026年12月1日到2027年3月19日夜班停駛，白天的班次照常",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2026/09/0fa30eb2d19fad5a7e2d7514264724bc.pdf",
+      "sourceTitle": "都市間バス「わっかない号」夜行便 冬期間の運行休止について（宗谷バス株式会社 令和8年9月14日）",
+      "sourceQuote": "夜行便（稚内発・札幌発 23:00）につきまして、2026 年 12 月 1 日から 2027 年 3 月 19 日までの冬期間、運行を休止…なお、昼行便につきましては、これまでどおり運行いたします。",
+      "verdict": "verified",
+      "notes": "curl 下載後以 pypdf 讀文字。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "冬天的渡輪同樣可能因大浪與強風停航",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "台風や低気圧等による悪天候（波の高さ・風向・風速）の影響により、欠航となる可能性がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "接著要轉回台灣的航班時，建議中間多留一天，因為班機一取消，機場巴士也跟著停駛，渡輪也可能因天氣停航",
+      "sourceUrl": "http://www.soyabus.co.jp/airport",
+      "sourceTitle": "空港連絡バス｜宗谷バス株式会社",
+      "sourceQuote": "接続便の飛行機が欠航した場合、空港連絡バスは運休いたします。（渡輪：https://heartlandferry.jp/faq/「台風や低気圧等による悪天候（波の高さ・風向・風速）の影響により、欠航となる可能性がございます。」）",
+      "verdict": "verified",
+      "notes": "第 3 輪：第 2 輪 incorrect 已修正。前半「班機一取消，機場巴士也跟著停駛」對應宗谷巴士原文；後半「渡輪也可能因天氣停航」對應ハートランドフェリー FAQ（よくあるご質問），兩件事分開寫，不再暗示渡輪停航會讓機場巴士停駛。「多留一天」是編輯建議。已用雜湊確認：把本句換回第 2 輪原句後雜湊等於 1c510da5…dbfdb，全文只改這一句。以下為第 2 輪紀錄：「班機一停，機場巴士也跟著停」正確；「船一停，機場巴士也跟著停」與官方不符。宗谷巴士寫明機場巴士只配合飛機，不考慮和其他交通工具銜接，停駛條件只有「接続便の飛行機が欠航した場合」；渡輪停航不會讓機場巴士停駛（機場巴士也開到稚內渡輪碼頭，但不是配合船班）。這是本輪新加的句子，研究記錄 F14 本身也寫「不配合渡輪時間」。建議改成「因為班機一停，機場巴士也跟著停，渡輪也可能因天氣停航」這類把兩件事分開的寫法，或只寫班機。「多留一天」本身是編輯建議，可保留。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "THE STAY WAKKANAI走路約1分鐘",
+      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1244.html",
+      "sourceTitle": "THE STAY WAKKANAI｜きた・北海道 稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "●JR稚内駅から徒歩約1分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "天北の湯 Dormy Inn稚內約3分鐘",
+      "sourceUrl": "https://www.hotespa.net/hotels/wakkanai/",
+      "sourceTitle": "【公式】ドーミーイン稚内 - 最安値で宿泊予約 | ビジネスホテル",
+      "sourceQuote": "JR稚内駅から徒歩約3分。",
+      "verdict": "verified",
+      "notes": "旅館官網。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "依稚內地方氣象台1991年到2020年的紀錄，從海岸第一次看到流冰的日子平均是2月19日，但這30年裡只有15年有流冰",
+      "sourceUrl": "https://www.data.jma.go.jp/wakkanai/kishou/ryuhyou.html",
+      "sourceTitle": "宗谷の流氷｜稚内地方気象台",
+      "sourceQuote": "「流氷初日」： 流氷が海岸から初めて見えた日｜平年値 1991（平成3年）年～ 2020（令和2）年 2月19日 （15年）",
+      "verdict": "verified",
+      "notes": "定義與平年值一致；「（15年）」是統計期間內觀測到現象的年數。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "流冰期間的平年值是14天，這是從第一次看到算到最後一次看到的天數，不代表這段時間天天看得到",
+      "sourceUrl": "https://www.data.jma.go.jp/wakkanai/kishou/ryuhyou.html",
+      "sourceTitle": "宗谷の流氷｜稚内地方気象台",
+      "sourceQuote": "流氷期間 14日 （16年）｜流氷期間の平年値は、初日と終日の平年値から計算｜「流氷終日」： 海岸から最後に流氷が見られた日",
+      "verdict": "verified",
+      "notes": "初日 2月19日到終日 3月4日的平年值，含首尾 14 天，定義寫法正確。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "流冰擠滿岸邊、海面看不到水路的情形，30年裡只有2年",
+      "sourceUrl": "https://www.data.jma.go.jp/wakkanai/kishou/ryuhyou.html",
+      "sourceTitle": "宗谷の流氷｜稚内地方気象台",
+      "sourceQuote": "「接岸初日」： 流氷が海岸の大半に接岸し沿岸に水路がなくなった最初の日｜接岸初日 平年値 ×× （2年）",
+      "verdict": "verified",
+      "notes": "「擠滿岸邊」對應「海岸の大半に接岸」、「看不到水路」對應「沿岸に水路がなくなった」，可接受。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "宗谷岬流冰館（宗谷岬流氷館）",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1025.html",
+      "sourceTitle": "宗谷岬流氷館｜きた・北海道 稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "宗谷岬流氷館 日本最北端の岬でマイナス10度の冷気と本物の流氷に触れる",
+      "verdict": "verified",
+      "notes": "日文原名一致。glossary 未收錄，作者已記在待同步。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "展示室全年保持在零下10度以下，放著冬天運進來的真正流冰，免費參觀",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1025.html",
+      "sourceTitle": "宗谷岬流氷館｜きた・北海道 稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "室温がマイナス10度以下に保たれた極寒の展示室…室内には冬の間に運び込まれた巨大な本物の流氷が並び｜料金 無料",
+      "verdict": "verified",
+      "notes": "同頁「通年で氷点下の世界を体験できる施設」。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "4月到11月開8:00到18:00，12月到3月縮短成9:00到16:00，冬天不定期休館",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1025.html",
+      "sourceTitle": "宗谷岬流氷館｜きた・北海道 稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "営業時間 8:00-18:00（4月-11月） 9:00-16:00（12月-3月） 休業日 夏期無休、冬期不定休",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "可以到JR稚內站旁キタカラ1樓的稚內市觀光案內所確認當天有沒有開。案內所開10:00到18:00，12月31日到1月5日休息",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1200.html",
+      "sourceTitle": "稚内市観光案内所（キタカラ内）｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "所在地 北海道稚内市中央3丁目6-1キタカラ1階…営業時間 10:00～18:00 休業日 12月31日～1月5日 アクセス JR稚内駅直結キタカラ内1F",
+      "verdict": "verified",
+      "notes": "官方寫「JR稚内駅直結」，正文「站旁」可接受（更精確是「與車站相連」）。到案內所確認流冰館是否開館是給讀者的行動建議，不是事實主張。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "近五年裡，有觀測到流冰的是2023年和2025年（表：2025年 2月23日、2024年 沒有流冰、2023年 2月22日、2022年 沒有流冰、2021年 沒有流冰）",
+      "sourceUrl": "https://www.data.jma.go.jp/wakkanai/kishou/ryuhyou.html",
+      "sourceTitle": "宗谷の流氷｜稚内地方気象台",
+      "sourceQuote": "2025年（令和 7年） 2月23日｜2024年（令和 6年） ―｜2023年（令和 5年） 2月22日｜2022年（令和 4年） ―｜2021年（令和 3年） ― … 0日｜－：現象の観測なし",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "有流冰的年份，停留的時間有時很短，2018年2天，2020年5天",
+      "sourceUrl": "https://www.data.jma.go.jp/wakkanai/kishou/ryuhyou.html",
+      "sourceTitle": "宗谷の流氷｜稚内地方気象台",
+      "sourceQuote": "2020年（令和 2年） 3月 6日 ― 3月10日 5日｜2018年（平成30年） 2月 6日 ― 2月 7日 2日",
+      "verdict": "verified",
+      "notes": "這兩個數字是流冰期間（初日到終日），用「停留的時間」可接受，前文已說明期間的意思。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "稚內地方氣象台從1946年開始觀測流冰，2025年之後就不再觀測。想知道當年流冰來了沒，可以到稚內市觀光案內所問問",
+      "sourceUrl": "https://www.data.jma.go.jp/wakkanai/kishou/ryuhyou.html",
+      "sourceTitle": "宗谷の流氷｜稚内地方気象台",
+      "sourceQuote": "稚内地方気象台では、１９４６年から２０２５年まで流氷の観測を行っていました。｜流氷終日は2021年に観測終了 流氷初日は2025年に観測終了",
+      "verdict": "verified",
+      "notes": "案內所那句是行動建議（F34），不是事實主張。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "白天最高氣溫達到25℃的日子一年平均只有8.1天，大多集中在8月，30℃以上的日子平年值是0天",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a2",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 詳細（気温・蒸気圧・湿度）",
+      "sourceQuote": "各階級の日数(日最高) ≧25.0℃：7月 1.5｜8月 5.3｜9月 1.2｜年 8.1；≧30.0℃ 年 0.0",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "6月早晚最低平均10.4℃，7月是14.9℃，就連最暖的8月，白天最高平均也才22.3℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "6月 | … | 13.0 | 16.1 | 10.4｜7月 | … | 17.2 | 20.1 | 14.9｜8月 | … | 19.5 | 22.3 | 17.2",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "氣溫大致可以照稚內來看，但岬角的風非常強，跨年清晨也比稚內1月的平均最低更冷",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1284&year=&month=&day=&view=",
+      "sourceTitle": "宗谷岬（宗谷地方)　平年値（年・月ごとの値）　主な要素",
+      "sourceQuote": "宗谷岬 平均気温 1月 -4.5｜8月 18.7｜年 6.4；平均風速 1月 8.6｜12月 9.3｜年 7.6",
+      "verdict": "verified",
+      "notes": "以氣象廳宗谷岬アメダス平年值（1991～2020）重算：各月平均氣溫比稚內低 0～1.3℃（年 6.4 對 7.0），「大致可以照稚內來看」成立；全年平均風速 7.6 m/s，約為稚內 4.6 的 1.7 倍，「風非常強」有官方數字支持。跨年清晨部分見 C56。作者如要更精確，可直接引用宗谷岬アメダス平年值。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "本頁的氣溫都是稚內觀測站的平年值，排宗谷岬的行程時可以拿來當基準",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方)　平年値（年・月ごとの値） 主な要素",
+      "sourceQuote": "稚内（宗谷地方)　平年値（年・月ごとの値）",
+      "verdict": "verified",
+      "notes": "條件主詞正確；「拿來當基準」由 C53 的宗谷岬アメダス數字支持。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "站在宗谷岬尖端會被強風吹著，稚內觀光協會也提醒要穿得夠暖、夠擋風",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」｜きた・北海道 稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "宗谷岬は非常に風が強い場所のため、充分な防寒・防風対策を講じてお越しください。",
+      "verdict": "verified",
+      "notes": "另見宗谷岬頁 https://www.north-hokkaido.com/spot/detail_1018.html「宗谷岬の先端に立てば、吹き抜ける力強い風」。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "跨年夜到元旦清晨，宗谷岬的氣溫會降到零下10度左右，稚內1月的平均最低是零下6.4℃",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」｜きた・北海道 稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "大晦日から元旦にかけて宗谷岬の気温はマイナス10℃前後まで下がり",
+      "verdict": "verified",
+      "notes": "−6.4℃ 見 C7。官方「前後」對正文「左右」一致。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "從市區開車過去夏天約40分鐘，冬天走雪路要1小時左右。路面可能結冰，也可能碰上暴風雪或視線不良",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_32.html",
+      "sourceTitle": "日本最北の地「宗谷岬」で初日の出を見よう！「初日の出inてっぺん」｜きた・北海道 稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "夏なら市内から車で約40分で到着する宗谷岬も、雪道となると車で１時間｜冬道は路面凍結、吹雪、視界不良等の可能性がございます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "天候太差時，往宗谷岬的路線巴士也可能停駛，班次見宗谷岬交通",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_tenpoku_r6_08.pdf",
+      "sourceTitle": "天北宗谷岬線バス時刻表（宗谷バス 令和5年10月1日改正）",
+      "sourceQuote": "◎ 悪天候及び都合により運休する場合があります。",
+      "verdict": "verified",
+      "notes": "curl 下載後以 PyMuPDF 讀文字。「班次見宗谷岬交通」是內連句。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "天氣晴朗、空氣清澈的日子，從岬上可以望見40多公里外的庫頁島",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1018.html",
+      "sourceTitle": "宗谷岬｜きた・北海道 稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "空気が澄み渡る日には40km以上先のサハリンの島影がくっきりと浮かび上がり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "氣象廳宗谷地方天氣預報，出發前查實際的天氣與風。https://www.jma.go.jp/bosai/forecast/#area_type=class10s&area_code=011000",
+      "sourceUrl": "https://www.jma.go.jp/bosai/common/const/area.json",
+      "sourceTitle": "気象庁 防災情報 地域コード（area.json）",
+      "sourceQuote": "class10s 011000: {\"name\": \"宗谷地方\", \"enName\": \"Soya Region\"}｜forecast/011000.json: \"publishingOffice\":\"稚内地方気象台\",\"area\":{\"name\":\"宗谷地方\",\"code\":\"011000\"}",
+      "verdict": "verified",
+      "notes": "預報頁本體要執行 JavaScript，改用 curl 讀它的地域碼表與預報資料 JSON（https://www.jma.go.jp/bosai/forecast/data/forecast/011000.json，2026-10-21 11:00 發布），確認代碼 011000 就是宗谷地方、由稚內地方氣象台發布，內容含風的預報。"
+    }
+  ],
+  "summary": {
+    "verified": 60,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
