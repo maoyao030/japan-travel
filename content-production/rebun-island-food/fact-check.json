@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island-food",
+  "articleSha256": "e2715ff27e2d543961e263b7e8ed11cbcedabb34fe42ab73ace7ed1b3764c8c4",
+  "checker": "事實查核 agent（Claude Opus 5.5，非作者，唯讀查核；rebun-island.jp 與禮文町網站本站讀不到，改用 web.archive.org 存檔）；第 2 輪複查（依 revisions-round1.md）",
+  "checkedAt": "2026-10-23",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "禮文島觀光協會甚至直接說，島上的夏天就是「海膽」",
+      "sourceUrl": "https://web.archive.org/web/20261007115614/https://www.rebun-island.jp/welcome/gourmet.html",
+      "sourceTitle": "豊かな海の幸｜礼文島観光情報",
+      "sourceQuote": "礼文島の夏は「ウニ」",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 本站 2026-10-23 連線逾時（curl 與內建瀏覽器都失敗），改讀 web.archive.org 存檔。存檔 2026-10-07。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "香深的老店炉ばた ちどり只在6月到8月供應海膽丼",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "6～8月は「うに丼」や、うに、ボタンエビなどが入った「磯ラーメン」もございます。",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 本站 2026-10-23 連線逾時（curl 與內建瀏覽器都失敗），改讀 web.archive.org 存檔。存檔 2025-07-08（之後沒有更新的存檔）。「6～8月は」讀作季節限定，「只在」可接受。觀光協會頁寫「ちどり」，ぶらり MAP 寫「炉ばた ちどり」，一致。「老店」由店家說法「40年以上の歴史」推得。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "花魚最肥也正好是這三個月／花魚最肥是6月到8月",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "ホッケの旬は最も脂の乗る6～8月です。",
+      "verdict": "verified",
+      "notes": "2022-07-14 特集，北海道観光振興機構（©Hokkaido Tourism Organization）。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "島上的餐廳大多集中在南邊的香深港一帶，離渡輪站不遠",
+      "sourceUrl": "https://web.archive.org/web/20260617224255/https://www.rebun-island.jp/KYOsan/KYOsanAREKORE.html",
+      "sourceTitle": "台灣人在日本最北端的禮文島生活",
+      "sourceQuote": "島上的餐廳大部分聚集在南部的香深港，大多也是距離香深港渡輪站不遠。",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 本站 2026-10-23 連線逾時（curl 與內建瀏覽器都失敗），改讀 web.archive.org 存檔。原文是觀光協會中文頁（案內所職員專欄），不是日文。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "島上一家民宿在介紹裡寫，海膽的漁期是5月到9月",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "ペンション　う～に～ … とれたてのウニ（ウニの漁期は5月～9月）",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 本站 2026-10-23 連線逾時（curl 與內建瀏覽器都失敗），改讀 web.archive.org 存檔。存檔 2025-05-22。正文寫成民宿的說法，條件主詞正確。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "5月與9月雖然還撈得到，ちどり的菜單上卻已經沒有海膽丼",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "6～8月は「うに丼」…もございます。（ペンション う～に～：ウニの漁期は5月～9月）",
+      "verdict": "verified",
+      "notes": "由民宿的漁期與ちどり的供應月份推得，兩個來源都已核對；前一句已交代漁期是民宿的說法。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "禮文島的海膽有兩種（表格日文名キタムラサキウニ、エゾバフンウニ）",
+      "sourceUrl": "https://web.archive.org/web/20261007115614/https://www.rebun-island.jp/welcome/gourmet.html",
+      "sourceTitle": "豊かな海の幸｜礼文島観光情報",
+      "sourceQuote": "キタムラサキウニ … エゾバフンウニ",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 本站 2026-10-23 連線逾時（curl 與內建瀏覽器都失敗），改讀 web.archive.org 存檔。第 2 輪：改成不寫「觀光協會介紹」，來源仍列這兩種，可接受。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "キタムラサキウニ｜刺長，肉是明亮的淡黃色｜清淡爽口",
+      "sourceUrl": "https://web.archive.org/web/20261007115614/https://www.rebun-island.jp/welcome/gourmet.html",
+      "sourceTitle": "豊かな海の幸｜礼文島観光情報",
+      "sourceQuote": "棘が長いのが特徴。中の身は明るい黄色で、味は淡くあっさりしています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "エゾバフンウニ｜刺短，肉是濃濃的橘色｜偏甜",
+      "sourceUrl": "https://web.archive.org/web/20261007115614/https://www.rebun-island.jp/welcome/gourmet.html",
+      "sourceTitle": "豊かな海の幸｜礼文島観光情報",
+      "sourceQuote": "棘が短いのが特徴。中の身は濃いオレンジ色で、味は甘く最上級の味わいが楽しめます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "中文常見叫法：北紫海膽／蝦夷馬糞海膽",
+      "sourceUrl": "https://web.archive.org/web/20261007115614/https://www.rebun-island.jp/welcome/gourmet.html",
+      "sourceTitle": "豊かな海の幸｜礼文島観光情報",
+      "sourceQuote": "キタムラサキウニ／エゾバフンウニ",
+      "verdict": "verified",
+      "notes": "來源只有日文名；中文是日文名直譯（キタムラサキ＝北紫、エゾバフン＝蝦夷馬糞），對應正確。這兩個譯名還沒收進 content-planning/glossary.json，交規劃補。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "兩種剝開後顏色差很多，一眼就分得出來",
+      "sourceUrl": "https://web.archive.org/web/20261007115614/https://www.rebun-island.jp/welcome/gourmet.html",
+      "sourceTitle": "豊かな海の幸｜礼文島観光情報",
+      "sourceQuote": "中の身は明るい黄色／中の身は濃いオレンジ色",
+      "verdict": "verified",
+      "notes": "由兩種海膽的肉色描述推得。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "生海膽鋪在白飯上就是海膽丼，日文菜單寫「うに丼」，剛採上來的海膽也會拿去醃成一夜漬",
+      "sourceUrl": "https://web.archive.org/web/20260611102752/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000191.html",
+      "sourceTitle": "うに | 北海道礼文町",
+      "sourceQuote": "生のままごはんに乗せて「うに丼」にしたり、採れたての美味しさを一夜漬けにしたもの（觀光協會餐廳頁ちどり的料理名也寫「うに丼」）",
+      "verdict": "verified",
+      "notes": "禮文町網站 2026-10-23 顯示「ホームページの一時停止について」，改讀 web.archive.org 2026-06 存檔。第 2 輪：「うに丼」寫法有禮文町與ちどり料理名支持；HOKKAIDO LOVE! 寫「ウニ丼」，菜單也可能是片假名，正文寫一種寫法不算錯。"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "菜單或店頭看到「うにぎり」，就是把海膽放在飯糰上的海膽飯糰",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "人気のウニ丼の他には、おにぎりの上に乗った「うにぎり」を味わうのもよいでしょう。",
+      "verdict": "verified",
+      "notes": "HOKKAIDO LOVE! 由北海道観光振興機構營運（頁尾 ©2022-2026 Hokkaido Tourism Organization）。第 2 輪：不再寫來源名，只寫名稱與內容，原文支持。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "香深的炉ばた ちどり在6月到8月除了海膽丼，還有一碗海膽與牡丹蝦一起下的磯拉麵",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "6～8月は「うに丼」や、うに、ボタンエビなどが入った「磯ラーメン」もございます。",
+      "verdict": "verified",
+      "notes": "原文「うに、ボタンエビなど」，正文沒寫成只有這兩樣，可接受。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "島上的花魚油脂豐厚，直接烤就好吃，也會用米糠醃成糠漬花魚",
+      "sourceUrl": "https://web.archive.org/web/20260612084145/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000189.html",
+      "sourceTitle": "ほっけ | 北海道礼文町",
+      "sourceQuote": "礼文のほっけは脂がのっていて、そのまま焼いても、ヌカぼっけにしても美味しく",
+      "verdict": "verified",
+      "notes": "禮文町網站 2026-10-23 顯示「ホームページの一時停止について」，改讀 web.archive.org 2026-06 存檔。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "禮文島的花魚，最有名的吃法是鏘鏘燒，整片花魚放在炭火上慢慢烤",
+      "sourceUrl": "https://web.archive.org/web/20260612084145/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000189.html",
+      "sourceTitle": "ほっけ | 北海道礼文町",
+      "sourceQuote": "炭火でじっくりと焼きみそを付けて食べるチャンチャン焼きもまた格別です。（HOKKAIDO LOVE!：礼文島の名物は「ホッケのちゃんちゃん焼き」）",
+      "verdict": "verified",
+      "notes": "禮文町網站 2026-10-23 顯示「ホームページの一時停止について」，改讀 web.archive.org 2026-06 存檔。「最有名」由 HOKKAIDO LOVE! 的「礼文島の名物」支持。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "日文菜單上花魚寫成「ほっけ」或「ホッケ」，鏘鏘燒寫成「ちゃんちゃん焼き」，也有人寫成「チャンチャン焼き」",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "ホッケフライ／ホッケのちゃんちゃん焼／「元祖ほっけのちゃんちゃん焼き」（禮文町ほっけ頁：チャンチャン焼き）",
+      "verdict": "verified",
+      "notes": "觀光協會餐廳頁有「ほっけ」「ホッケ」「ちゃんちゃん焼」，禮文町頁寫「チャンチャン焼き」，四種寫法都有官方出處。第 2 輪：新增鏘鏘燒寫法，已核。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "花魚鏘鏘燒是禮文島的代表美食，配料不只一種，有的抹上味噌烤，有的在厚厚一片新鮮花魚上鋪蔥、淋上醬汁再烤",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "HOKKAIDO LOVE!：礼文島の名物は「ホッケのちゃんちゃん焼き」。…新鮮で肉厚なホッケにネギと秘伝のタレを乗せて焼き／禮文町：炭火でじっくりと焼きみそを付けて食べるチャンチャン焼き",
+      "verdict": "verified",
+      "notes": "第 2 輪：兩種配料各有官方來源（味噌：禮文町；蔥與醬汁：北海道観光振興機構），「有的…有的」沒有合成成同一做法，可接受。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "尾巴那頭最先熟，從尾巴吃起，魚肉、蔥與醬汁拌在一起吃",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "焼き上がりの早い尻尾の方から混ぜ合わせて食べていきます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "香深的炉ばた ちどり把這道當招牌，店家叫它「元祖ほっけのちゃんちゃん焼き」，說已經有40年以上的歷史",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "当店のおすすめは、40年以上の歴史を持つ「元祖ほっけのちゃんちゃん焼き」今では礼文島の名物料理になっています。",
+      "verdict": "verified",
+      "notes": "第 3 輪：改成店家的叫法，與觀光協會餐廳頁上店家介紹文一致（存檔 2025-07-08）。以雜湊比對確認本輪正文只改這一句。"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "店離渡輪站走路5分鐘（表格：渡輪站走路5分鐘）",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "香深港フェリーターミナルより徒歩5分、車2分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "渡輪站2樓的武ちゃん寿司有炸花魚，菜單上寫「ホッケフライ」",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "武ちゃん寿司 … ホッケフライ … （ターミナル内2階）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "禮文島觀光協會的YouTube頻道有一支島上料理教室做炸花魚塊的影片，日文叫ホッケザンキ",
+      "sourceUrl": "https://www.youtube.com/watch?v=aIaT3lcPt9A",
+      "sourceTitle": "超爆好吃花魚魚塊！！！！！！！！（ホッケザンキは死ぬほどに美味しい！！！！！！！）",
+      "sourceQuote": "標題「超爆好吃花魚魚塊！…（ホッケザンキは死ぬほどに美味しい！…）」；說明欄「動画の素材は礼文島の料理教室で撮影しました。」；開頭字卡「第一回料理教室 今日のメニュー ホッケのザンギ」",
+      "verdict": "verified",
+      "notes": "第 2 輪：已拿掉「島上的家常菜」，改成料理教室的影片，與影片一致。標題寫「ホッケザンキ」、字卡寫「ザンギ」，正文用標題寫法可以。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "（同一支影片）畫面上有中文字幕",
+      "sourceUrl": "https://www.youtube.com/watch?v=aIaT3lcPt9A",
+      "sourceTitle": "超爆好吃花魚魚塊！！！！！！！！（ホッケザンキは死ぬほどに美味しい！！！！！！！）",
+      "sourceQuote": "頻道「礼文島観光協会」，2024-12-17 上傳；說明欄「動画の素材は礼文島の料理教室で撮影しました。動畫是在禮文島的料理教室拍攝的。」",
+      "verdict": "verified",
+      "notes": "用內建瀏覽器看影片：畫面燒入繁體中文字幕（例如「今天參加了禮文島的料理教室。」）；YouTube 字幕軌只有日文自動字幕，中文字幕是燒在畫面上的。第 2 輪：改成「畫面上有中文字幕」，更精確。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "糠漬花魚的日文是ヌカぼっけ，和海膽一夜漬一樣是島上的特產",
+      "sourceUrl": "https://web.archive.org/web/20260612080013/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000188.html",
+      "sourceTitle": "特産品 | 北海道礼文町",
+      "sourceQuote": "うにの一夜漬けやトロロコンブなどの昆布製品、ヌカぼっけやタコの珍味など最北の海の幸を丸ごと味わえます。",
+      "verdict": "verified",
+      "notes": "禮文町網站 2026-10-23 顯示「ホームページの一時停止について」，改讀 web.archive.org 2026-06 存檔。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "島上唯一的便利商店離香深有一段距離",
+      "sourceUrl": "https://web.archive.org/web/20260617224255/https://www.rebun-island.jp/KYOsan/KYOsanAREKORE.html",
+      "sourceTitle": "台灣人在日本最北端的禮文島生活",
+      "sourceQuote": "因為島上唯一的超商距離鄉紳有一段距離",
+      "verdict": "verified",
+      "notes": "原文「鄉紳」是「香深」錯字。ぶらり MAP 全島只標一間セイコーマート，在香深市街以北，一致。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "觀光協會也建議在香深港的超市與商店把吃的喝的買齊，再往島上其他地方去",
+      "sourceUrl": "https://web.archive.org/web/20260617224255/https://www.rebun-island.jp/KYOsan/KYOsanAREKORE.html",
+      "sourceTitle": "台灣人在日本最北端的禮文島生活",
+      "sourceQuote": "所以還是建議大家多多利用香深港的超市及商店喔！",
+      "verdict": "verified",
+      "notes": "原文只說建議多利用香深港的超市與商店；「買齊再往其他地方去」是由「唯一的超商離香深遠」推出的合理延伸，不改原意。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "炉ばた ちどり｜只收現金｜0163-86-2130；兩家都只收現金，上島前先準備好日圓",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "ちどり … 決済方法 現金 … 電話：0163-86-2130；現金のお支払いは日本円のみです。",
+      "verdict": "verified",
+      "notes": "ぶらり MAP 也列「炉ばた ちどり 86－2130」。"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "武ちゃん寿司｜渡輪站2樓｜壽司，也有磯っ子拉麵、炸花魚｜只收現金｜0163-86-1865",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "武ちゃん寿司 磯っ子ラーメン ホッケフライ … 決済方法 現金 … 電話：0163-86-1865 … （ターミナル内2階）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "武ちゃん寿司號稱日本最北的壽司店，就開在渡輪站裡，等船時順路",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "日本最北の寿司屋です。… 香深港フェリーターミナルより徒歩0秒、車0秒（ターミナル内2階）",
+      "verdict": "verified",
+      "notes": "正文寫「號稱」，是店家自稱，條件正確。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "店裡有英文菜單，不懂日文也能點",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "英語メニューも用意しており、外国の方々にもわかりやすく対応させて頂いております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "5月或9月前往，可以到渡輪站1樓的禮文島觀光案內所問當時哪家店有海膽料理，案內所4月中旬到10月中旬都開著。（餐廳一節：不方便講日文的話，到渡輪站1樓的禮文島觀光案內所問會省事一點）",
+      "sourceUrl": "https://web.archive.org/web/20261007144913/https://www.rebun-island.jp/koutsu/",
+      "sourceTitle": "礼文島へのアクセス｜礼文島観光情報",
+      "sourceQuote": "礼文島観光案内所（香深フェリーターミナル内 4月中旬～10月中旬）電話・FAX：0163-86-2655；ぶらり MAP「フェリーターミナル1F観光案内所」",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 本站 2026-10-23 連線逾時（curl 與內建瀏覽器都失敗），改讀 web.archive.org 存檔。存檔 2026-10-07。ぶらり MAP 的 Information 欄寫「4月～10月中旬」，網站寫「4月中旬～10月中旬」，正文照網站；觀光協會中文頁 2026 年 5 月貼文「四月二十日觀光案內所已經開始正式營業了」與「4月中旬」相符。第 2 輪：開放期間移到海膽一節，4月中旬～10月中旬涵蓋 5 月與 9 月，建議成立。案內所會不會回答哪家店有海膽料理屬建議，不是事實主張。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "禮文觀光飯店咲涼2樓餐廳的午餐是海鮮のっけ丼，2025年的營業期間是6月到7月，當年的期間可以查觀光協會的餐廳頁",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "礼文観光ホテル咲涼 海鮮のっけ丼 … 昼食 … 営業期間 令和7年6月～7月 … 礼文観光ホテル咲涼2階レストラン",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 本站 2026-10-23 連線逾時（curl 與內建瀏覽器都失敗），改讀 web.archive.org 存檔。存檔 2025-07-08；研究記錄 2026-10-18 讀到的本站版本仍是令和7年。正文明寫 2025 年，條件正確。第 2 輪：新增「當年的期間可以查觀光協會的餐廳頁」，該頁確有「営業期間」欄。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "須古頓岬的土產店島の人賣昆布霜淇淋",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "「スコトン岬」の土産物店「島の人」で食べることのできる「昆布ソフトクリーム」。… 礼文島でしか食べられない異色のスイーツ",
+      "verdict": "verified",
+      "notes": "第 2 輪：已拿掉「要到…才吃得到」，與原文一致。來源是 2022-07-14 特集，島の人官網店舗頁沒提昆布霜淇淋，下次查核時再確認是否仍販售。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "島の人2026年從5月11日開到9月30日，營業時間是早上8點到下午5點",
+      "sourceUrl": "https://www.rebun.jp/shop/",
+      "sourceTitle": "店舗一覧｜株式会社レブニーズ",
+      "sourceQuote": "島の人 礼文島本店 ／ サテライト店 … 2026年度　5月11日（月）OPEN 9月30日（水）CLOSE 8時～17時",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "從香深渡輪站搭宗谷巴士開往スコトン的礼文線，坐到終點就是須古頓。宗谷巴士的路線圖把這條標成礼文線②",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/pdf/routemap/rosenzu-sukoton.pdf",
+      "sourceTitle": "路線図【礼文線(２)】（香深フェリーターミナル～南高山経由～スコトン間）宗谷バス 令和７年４月現在",
+      "sourceQuote": "路線図 【礼文線(２)】 （香深フェリーターミナル～南高山経由～スコトン間）",
+      "verdict": "verified",
+      "notes": "令和7年4月現在路線圖：起點香深フェリーターミナル、終點スコトン、標題「礼文線(２)」。第 2 輪：改寫後站名「スコトン」與站牌對得上，已核。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "中島商店有兩間，本店離渡輪站走路5分鐘，站前賣店只要1分鐘",
+      "sourceUrl": "https://web.archive.org/web/20260518053403/https://www.rebun-island.jp/inbound/shopping.html",
+      "sourceTitle": "お土産｜礼文島観光情報",
+      "sourceQuote": "中島商店（本店）… 香深港フェリーターミナルより徒歩5分、車2分；中島商店（駅前売店）… 徒歩1分、車1分",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 本站 2026-10-23 連線逾時（curl 與內建瀏覽器都失敗），改讀 web.archive.org 存檔。存檔 2026-05-18。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "禮文島的特產有海膽一夜漬、昆布絲這類昆布製品、糠漬花魚與章魚珍味",
+      "sourceUrl": "https://web.archive.org/web/20260612080013/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000188.html",
+      "sourceTitle": "特産品 | 北海道礼文町",
+      "sourceQuote": "うにの一夜漬けやトロロコンブなどの昆布製品、ヌカぼっけやタコの珍味など",
+      "verdict": "verified",
+      "notes": "禮文町網站 2026-10-23 顯示「ホームページの一時停止について」，改讀 web.archive.org 2026-06 存檔。トロロコンブ譯「昆布絲」可接受。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "還有加了禮文島昆布萃取液的燒酎",
+      "sourceUrl": "https://web.archive.org/web/20260612080013/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000188.html",
+      "sourceTitle": "特産品 | 北海道礼文町",
+      "sourceQuote": "礼文島の昆布のエキスの入った焼酎もまろやかな香りと味を届けます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "延伸資料：禮文島觀光協會的餐廳介紹，各店的付款方式、電話與招牌菜。https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "決済方法／お問い合わせ 電話／各店料理名（うに丼、ホッケのちゃんちゃん焼 等）",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 本站 2026-10-23 連線逾時（curl 與內建瀏覽器都失敗），改讀 web.archive.org 存檔。延伸資料網址與存檔的原網址一致。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "延伸資料：禮文島觀光協會的購物頁，土產店的位置與電話。https://www.rebun-island.jp/inbound/shopping.html",
+      "sourceUrl": "https://web.archive.org/web/20260518053403/https://www.rebun-island.jp/inbound/shopping.html",
+      "sourceTitle": "お土産｜礼文島観光情報",
+      "sourceQuote": "お土産店を紹介します。… お問い合わせ 電話 … アクセス",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "延伸資料：禮文島觀光協會「ぶらり MAP」，香深、元地、船泊的餐飲店位置。https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "ぶらり礼文島MAP（礼文島観光協会 PDF）",
+      "sourceQuote": "香深市街地MAP／船泊市街地MAP／凡例「食事」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "延伸資料：島の人官網的店舗一覽，須古頓岬賣店當年的營業期間在這裡公布。https://www.rebun.jp/shop/",
+      "sourceUrl": "https://www.rebun.jp/shop/",
+      "sourceTitle": "店舗一覧｜株式会社レブニーズ",
+      "sourceQuote": "2026年度　5月11日（月）OPEN 9月30日（水）CLOSE",
+      "verdict": "verified",
+      "notes": "營運公司株式会社レブニーズ的官網店舗一覽，稱「島の人官網」可接受。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "延伸資料：禮文島觀光協會的炸花魚塊影片，島上料理教室示範，畫面上有中文字幕。https://www.youtube.com/watch?v=aIaT3lcPt9A",
+      "sourceUrl": "https://www.youtube.com/watch?v=aIaT3lcPt9A",
+      "sourceTitle": "超爆好吃花魚魚塊！！！！！！！！（ホッケザンキは死ぬほどに美味しい！！！！！！！）",
+      "sourceQuote": "頻道「礼文島観光協会」；「動画の素材は礼文島の料理教室で撮影しました。」",
+      "verdict": "verified",
+      "notes": "畫面燒入繁體中文字幕，見 C24。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "資料來源標題：豊かな海の幸｜礼文島観光情報／食堂｜礼文島観光情報／お土産｜礼文島観光情報／宿泊｜礼文島観光情報／台灣人在日本最北端的禮文島生活｜礼文島観光協会／礼文島へのアクセス｜礼文島観光情報",
+      "sourceUrl": "https://web.archive.org/web/20261007115614/https://www.rebun-island.jp/welcome/gourmet.html",
+      "sourceTitle": "豊かな海の幸｜礼文島観光情報",
+      "sourceQuote": "各頁 <title>：豊かな海の幸｜礼文島観光情報／食堂｜礼文島観光情報／お土産｜礼文島観光情報／宿泊｜礼文島観光情報／台灣人在日本最北端的禮文島生活／礼文島へのアクセス｜礼文島観光情報",
+      "verdict": "verified",
+      "notes": "第 2 輪：六個標題都已改成存檔上的實際頁面標題（中文頁加了網站名，可以）。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "想吃海膽丼就排6月到8月",
+      "sourceUrl": "https://web.archive.org/web/20250708073142/https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "食堂｜礼文島観光情報",
+      "sourceQuote": "6～8月は「うに丼」…もございます。",
+      "verdict": "verified",
+      "notes": "第 2 輪：新增句，依ちどり的供應月份。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "另一條礼文線①開往知床，上車前看一下終點站名",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun",
+      "sourceTitle": "礼文エリア | 宗谷バス株式会社",
+      "sourceQuote": "礼文線①（香深～知床）／礼文線②（香深～スコトン）",
+      "verdict": "verified",
+      "notes": "第 2 輪：宗谷巴士禮文區頁直接讀取（http 轉址到 /routebus/rebun）。頁面另有元地線，不叫礼文線，「另一條礼文線」正確。這裡的知床是禮文島南端的地名，不是知床半島，讀者可能誤會，交讀者驗收判斷要不要加一句。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "想多幾個選擇，可以翻觀光協會的「ぶらり MAP」，香深、元地、船泊都還標了其他餐飲店，像是開在香深マリンストア2樓的海鮮処かふか",
+      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "ぶらり礼文島MAP（礼文島観光協会 PDF）",
+      "sourceQuote": "香深市街地MAP：〈1F〉香深マリンストア 〈2F〉海鮮処かふか；元地「Dining cafe 海」；船泊市街地MAP「双葉食堂」「プラージュ・ド・ラパン」",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 本站連線逾時，讀 2026-02-15 存檔（PDF 讀圖）。第 2 輪：取代原本的店名清單（第 1 輪 C34、C35）。"
+    }
+  ],
+  "summary": {
+    "verified": 48,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
