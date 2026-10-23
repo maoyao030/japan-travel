@@ -97,6 +97,7 @@ Darren 2026-10-22 改成**每天 5 篇**：一輪仍只寫一篇，改成一天�
 - 不選圖、不下載圖片。
 - 不改 `content-planning/` 的事實表、譯名表與規格（研究時發現的更正與新事實只記在文章的 `reference-review.md`，執行紀錄寫「待同步」）；大綱只同步標題文字。
 - 不在瀏覽器點下載（會在 Darren 的電腦跳出存檔視窗）。
+- 不讓電腦發出聲音（Darren 2026-10-23：影片自動播放的音樂會嚇到人）。不在瀏覽器打開 YouTube、Instagram、TikTok 或其他影片頁，影片資訊（標題、說明欄、章節、字幕）用 curl 或 WebFetch 讀。其他網頁要用瀏覽器開時，打開後第一個動作就執行 JavaScript `document.querySelectorAll('video,audio').forEach(m=>{m.muted=true;m.pause()})`，讀完立刻關掉分頁。派子代理會用到瀏覽器時，把這一條原文交代給它。
 - 不合併到 `main`、不 force-push。
 
 ## 執行紀錄
