@@ -1,0 +1,908 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island-sights",
+  "articleSha256": "17cd4ad62c3749639ed57efa81a64ff91d84da7381d670f65a1467e795edf761",
+  "checker": "事實查核 agent（Claude Opus 5.5，唯讀，非作者；2026-10-23 實際打開來源）",
+  "checkedAt": "2026-10-23",
+  "claims": [
+    {
+      "claimId": "C2",
+      "articleExcerpt": "禮文島景點在禮文町的官方導覽地圖上列了11個，最北的是位在島最北端的須古頓岬。",
+      "sourceUrl": "https://web.archive.org/web/20260310023448/https://www.town.rebun.hokkaido.jp/hotnews/category/122.html",
+      "sourceTitle": "ガイドマップ｜礼文町",
+      "sourceQuote": "スコトン岬／ゴロタ岬／レブンアツモリソウ群生地／澄海岬／高山植物園／久種湖／日食観測記念碑／地蔵岩／北のカナリアパーク／桃台猫台／桃岩展望台；スコトン岬頁「スコトン岬は礼文島最北端の地」",
+      "verdict": "verified",
+      "notes": "第 1 輪複查：原本錯誤的南北排列已刪除。11 個景點見導覽地圖頁（禮文町網站 2026-10-23 緊急維護，用 2026-03-10 保存版）；最北端見スコトン岬頁 2026-02-17 保存版。原 C1「花之浮島」句已刪除，不再列。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "從稚內搭早班船抵達香深港後，開車到最近的北方金絲雀公園約5分鐘，到須古頓岬約60分鐘。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11401.html",
+      "sourceTitle": "北のカナリアパーク｜北海道観光機構",
+      "sourceQuote": "●車：香深港フェリーターミナルから約5分（北のカナリアパーク）／●車：香深港フェリーターミナルから約60分（スコトン岬 detail_10389）",
+      "verdict": "verified",
+      "notes": "其他景點頁的開車時間（地藏岩、桃台猫台、桃岩展望台約10分、高山植物園約30分、澄海岬約50分）都介於兩者之間。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "景點大多在戶外，有室內展示的設施只在春末到秋天開放，北方金絲雀公園是5月到10月，高山植物園是5月到9月。",
+      "sourceUrl": "https://web.archive.org/web/20260514003242/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000176.html",
+      "sourceTitle": "高山植物園｜礼文町",
+      "sourceQuote": "開館 5月～9月／9時～17時；北のカナリアパーク「開　館 ５月～10月」（00000171.html 保存版）",
+      "verdict": "verified",
+      "notes": "禮文町網站維護中，用保存版（植物園 2026-05-14、金絲雀公園 2025-05-28）。觀光協會 2026 年公告也寫「カナリアパーク　5月～10月」。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "南部的地藏岩、桃台貓台、桃岩展望台與北方金絲雀公園都離香深港不遠，開車10分鐘以內就到。北部的高山植物園開車約30分鐘，澄海岬約50分鐘，須古頓岬約60分鐘。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10387.html",
+      "sourceTitle": "地蔵岩｜北海道観光機構",
+      "sourceQuote": "地蔵岩・桃台猫台・桃岩展望台「●車：香深港フェリーターミナルから約10分」、北のカナリアパーク「約5分」、礼文町高山植物園「約30分」、澄海岬「約50分」、スコトン岬「約60分」",
+      "verdict": "verified",
+      "notes": "各值分別見 detail_10387、11404、10386、11401、11454、10388、10389。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "郭洛塔岬也在北部，位在連接這幾個岬角的岬巡步道上。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10390.html",
+      "sourceTitle": "ゴロタ岬｜北海道観光機構",
+      "sourceQuote": "ゴロタ岬は、礼文島北部に位置する標高176mの岬です。島を代表するトレッキングコースである「岬めぐりコース」の途中にあり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "| 北方金絲雀公園 | 香深奮部 | 約5分鐘 | 觀光巴士禮文A或接駁巴士，或騎自行車約15分鐘 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11401.html",
+      "sourceTitle": "北のカナリアパーク｜北海道観光機構",
+      "sourceQuote": "所在地 北海道礼文郡礼文町香深奮部／●車：香深港フェリーターミナルから約5分；宗谷バス礼文A「～桃台猫台～※香深フェリーターミナル～北のカナリアパーク～香深フェリーターミナル着」；QR2「ターミナル8:50発(自転車)～カナリアパーク9:05着」",
+      "verdict": "verified",
+      "notes": "觀光巴士見 http://www.soyabus.co.jp/teikan/course/；接駁巴士見ぶらりMAP「北のカナリアパーク（シャトルバスのみ）」；自行車時間見觀光協會 QR2 保存版 https://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "| 地藏岩 | 元地海岸 | 約10分鐘 | 路線巴士元地線開往終點元地 |",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/01_rebun-motochi-line_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 元地線(1) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(新桃岩ﾄﾝﾈﾙ経由)元地間",
+      "sourceQuote": "香深ﾌｪﾘｰﾀｰﾐﾅﾙ…香深漁協前…神社前…元地港…元地（終點）；地蔵岩「元地海岸」「●車：香深港フェリーターミナルから約10分」",
+      "verdict": "verified",
+      "notes": "宗谷巴士令和8年10月1日改正時刻表（rebun_r8_winter.pdf）也有「香深～元地～香深」班次；元地線 5 便標「10/31まで」。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "| 桃台貓台 | 元地的高台 | 約10分鐘 | 觀光巴士禮文A，6月到9月另有接駁巴士，或從渡輪站走約1小時 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11404.html",
+      "sourceTitle": "桃台猫台｜北海道観光機構",
+      "sourceQuote": "元地地区の高台に位置する景勝地／●車：香深港フェリーターミナルから約10分；QR2「ターミナル8:50発～桃台猫台9:50着」",
+      "verdict": "verified",
+      "notes": "禮文A經桃台猫台見宗谷巴士全コース一覧；6～9 月接駁巴士見同頁「（6月-9月は、観光シャトルバス運行）」。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "| 桃岩展望台 | 桃岩周邊 | 約10分鐘 | 從渡輪站走約1小時 |",
+      "sourceUrl": "https://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf",
+      "sourceTitle": "滞在4時間のおすすめプラン 12:50発 沓形行｜礼文島観光協会",
+      "sourceQuote": "ターミナル8:50発～桃岩展望台9:50着；北海道観光機構「●車：香深港フェリーターミナルから約10分」",
+      "verdict": "verified",
+      "notes": "觀光協會 PDF 註明「時間配分は目安」。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "| 高山植物園 | 船泊村上泊 | 約30分鐘 | 接駁巴士，不在禮文A路線上 |",
+      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "ぶらり礼文島MAP｜礼文島観光協会",
+      "sourceQuote": "高山植物園（シャトルバスのみ）；宗谷巴士礼文A「香深フェリーターミナル発～スカイ岬～スコトン岬～桃台猫台～※香深フェリーターミナル～北のカナリアパーク～香深フェリーターミナル着」（無高山植物園）",
+      "verdict": "verified",
+      "notes": "第 1 輪複查：巴士時刻已刪除。位置與開車 30 分見北海道観光機構 detail_11454；不在禮文A路線上見 http://www.soyabus.co.jp/teikan/course/（2026 手冊同）。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "| 澄海岬 | 船泊西上泊 | 約50分鐘 | 觀光巴士禮文A、禮文B停靠 |",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "礼文A「香深フェリーターミナル発～スカイ岬～スコトン岬～…」；礼文Ｂ「香深フェリーターミナル発～スカイ岬～スコトン岬～香深フェリーターミナル着」；北海道観光機構「北海道礼文郡礼文町船泊西上泊」「約50分」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "| 須古頓岬 | 島的最北端 | 約60分鐘 | 路線巴士禮文線②的終點 |",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 礼文線(2) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)ｽｺﾄﾝ間",
+      "sourceQuote": "普通旅客運賃表　礼文線(2)　香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)ｽｺﾄﾝ間；礼文町「スコトン岬は礼文島最北端の地」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "| 郭洛塔岬 | 岬巡步道上 | 可開車，停車場3台 | 路線巴士禮文線②到江戶屋站，再走約30分鐘 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10390.html",
+      "sourceTitle": "ゴロタ岬｜北海道観光機構",
+      "sourceQuote": "駐車場 3台、無料／●車＋徒歩：香深港フェリーターミナルから約40分、徒歩約20分／●バス＋徒歩：香深港フェリーターミナルから約55分「江戸屋」下車、徒歩約30分",
+      "verdict": "verified",
+      "notes": "「江戸屋」站屬礼文線(2)：見宗谷巴士礼文線(2)運賃表與路線圖（令和7年4月現在，浜中→第2浜中→江戸屋→白浜→スコトン）。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "沒有車，最省事的是搭宗谷巴士的定期觀光巴士禮文A，一趟就繞過澄海岬、須古頓岬、桃台貓台與北方金絲雀公園。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "香深フェリーターミナル発～スカイ岬～スコトン岬～桃台猫台～※香深フェリーターミナル（6/1～9/30期間で途中下車可能）～北のカナリアパーク～香深フェリーターミナル着",
+      "verdict": "verified",
+      "notes": "「最省事」是編輯判斷：一班車涵蓋 4 處，路線巴士不停澄海岬、桃台猫台與公園站只停接駁巴士，判斷合理。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "2026年在5月3日到5日、5月20日到9月30日行駛，搭車日的2個月前開始接受預約。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "5月3日～5月5日・5月20日～9月30日／予約は乗車日の『２か月前』から受付開始／2026年度 定期観光バス時刻表です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "當天有空位也能直接上車，只是可能客滿。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス",
+      "sourceQuote": "空席があれば、当日でもご乗車いただくことが出来ますが、満席でお断りする場合がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C99",
+      "articleExcerpt": "票價禮文A大人3,600日圓、禮文B大人3,300日圓，車票當天在香深港渡輪站1樓下行手扶梯與電梯旁的「切符売場」買，只收現金或PayPay。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/pdf/course/2026_teikan_ja.pdf",
+      "sourceTitle": "2026年定期観光バス時刻表｜宗谷バス",
+      "sourceQuote": "礼文Aコース 大人3,600円／礼文Bコース 大人3,300円；「礼文定期観光（香深フェリーターミナル）」圖：1階、下りエスカレーター、EV、切符売場、のりば（駐車場側）；「窓口での支払方法は現金又はPayPay決済のみです。クレジットカードはご利用頂けません。」",
+      "verdict": "verified",
+      "notes": "手冊 PDF 無文字層，轉影像判讀（第 1 頁「定期観光バス のりば・乗車券売場のご案内」）。票價與網頁全コース一覧一致；「當天」見ご予約方法とのりば「前日発券は行っておりません。乗車当日に必ず現地窓口で購入・引き換えをお願いします。」。補充：發車オーライネット網路付款者免票上車，不必到窗口，正文寫的是窗口買票，沒有錯。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "路線巴士不停桃台貓台、北方金絲雀公園與高山植物園，觀光協會的地圖把這三處標成接駁巴士站，北海道觀光機構寫桃台貓台的接駁巴士在6月到9月行駛。",
+      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "ぶらり礼文島MAP｜礼文島観光協会",
+      "sourceQuote": "桃台猫台（シャトルバスのみ）／北のカナリアパーク（シャトルバスのみ）／高山植物園（シャトルバスのみ）；北海道観光機構 detail_11404「（6月-9月は、観光シャトルバス運行）」",
+      "verdict": "verified",
+      "notes": "否定句「路線巴士不停」以經營者資料核對：宗谷巴士三條路線運賃表（礼文線(1) 香深漁協前～香深FT～尺忍～差閉～第2差閉～奮部～知床；礼文線(2) 全站；元地線 香深FT～香深漁協前～神社前～元地港～元地）與礼文線(2)路線圖都沒有這三站。北のカナリアパーク距最近的第2差閉站約 600m（步道地圖移動時間表）。補充：礼文島各線全線是「自由乗降区間」，正文沒寫這點，不影響這句。"
+    },
+    {
+      "claimId": "C100",
+      "articleExcerpt": "桃台貓台與北方金絲雀公園搭禮文A就會到，高山植物園不在禮文A的路線上。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "香深フェリーターミナル発～スカイ岬～スコトン岬～桃台猫台～※香深フェリーターミナル（6/1～9/30期間で途中下車可能）～北のカナリアパーク～香深フェリーターミナル着",
+      "verdict": "verified",
+      "notes": "6/1～9/30 在渡輪站中途下車的人不會到北のカナリアパーク，正文行程表已說明。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "接駁巴士的班次可以到渡輪站1樓的觀光案內所問，案內所在4月中旬到10月中旬開放。",
+      "sourceUrl": "https://web.archive.org/web/20261007113011/https://www.rebun-island.jp/",
+      "sourceTitle": "礼文島観光協会",
+      "sourceQuote": "礼文島観光案内所（香深フェリーターミナル内 4月中旬～10月中旬）；ハートランドフェリー樓層圖 1F「観光インフォメーション」",
+      "verdict": "verified",
+      "notes": "rebun-island.jp 今天連不上，用 2026-10-07 保存版。ぶらりMAP 寫「4月～10月中旬」，網站頁尾寫「4月中旬～10月中旬」，正文用網站說法。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "地圖上另外還有元地燈塔、瑪瑙濱、海馬島展望台、久種湖畔展望台與禮文瀑布等地點，詳細的步道地圖可以在案內所拿到。",
+      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "ぶらり礼文島MAP｜礼文島観光協会",
+      "sourceQuote": "元地灯台／メノウ浜／トド島 展望台／久種湖畔 展望台／礼文滝／フェリーターミナル1F観光案内所にて 詳細なトレイルマップを配布しております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "想從稚內當天來回，6月到9月可以搭6:30的船去、17:10的船回，在島上待大約8小時。觀光協會排的一日來回行程，用的也是這兩班船。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30　06:30～08:25　08:55～10:50　10:30～12:25　14:20～16:15　14:50～16:45　17:10～19:05；觀光協會「稚内6:30発　香深8:25着」「17:10発 稚内行（滞在8時間）」",
+      "verdict": "verified",
+      "notes": "時刻表頁需 JavaScript，用瀏覽器讀取（2026年1月1日～12月31日）。觀光協會行程見 2026-10-07 保存版 planTATENAGA.pdf「礼文島フェリー到着便別モデルプラン（6月～9月）」。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "上岸後接8:40的觀光巴士禮文A，北部的岬角和南部的展望台一個上午就能繞完。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "8:40発 → 12:30着；香深フェリーターミナル発～スカイ岬～スコトン岬～桃台猫台～…～北のカナリアパーク～香深フェリーターミナル着",
+      "verdict": "verified",
+      "notes": "8:40 到 12:30 繞北部兩岬與南部桃台猫台，「一個上午」成立。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "| 6:30 | 稚內港搭渡輪出發 |／| 8:25 | 抵達香深港 |",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30　06:30～08:25",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "| 8:40 | 搭觀光巴士禮文A，經澄海岬、須古頓岬、桃台貓台 |",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "8:40発 → 12:30着／香深フェリーターミナル発～スカイ岬～スコトン岬～桃台猫台～",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "| 11:45左右 | 6月到9月可在渡輪站中途下車，不去北方金絲雀公園就在這裡下車 |",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "（6/1～9/30限定 香深FT途中下車11:45頃着）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "| 12:30 | 經北方金絲雀公園回到渡輪站 |",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "～北のカナリアパーク～香深フェリーターミナル着／8:40発 → 12:30着",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "| 17:10 | 香深港搭渡輪回稚內 |",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30　香深発～稚内着　17:10～19:05",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "船到港和觀光巴士發車只差15分鐘，宗谷巴士說15分鐘以上就趕得上，不過船上人多時，最好提早到下船口等。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa/",
+      "sourceTitle": "よくあるご質問｜宗谷バス",
+      "sourceQuote": "フェリーと島の定期観光バスへの乗り継ぎ時間が短いですが、乗車できますか？　はい。15分以上あれば間に合いますが、フェリーが混雑している場合は早めの下船をおすすめします。",
+      "verdict": "verified",
+      "notes": "8:25 到港、8:40 發車，差 15 分鐘。"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "觀光巴士的乘車處在渡輪站側面，不是正門口的路線巴士站。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/09/202609kafuka-floor-mapOL.pdf",
+      "sourceTitle": "香深港フェリーターミナル フロアマップ｜ハートランドフェリー",
+      "sourceQuote": "観光バス乗場 Sightseeing Bus Stop（建物側面）／正面出入口 前方「路線バス乗場 Bus Stop」「ハイヤー乗場 Taxi Stop」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "下午可以從渡輪站走1小時左右到桃岩展望台，在展望台周邊散步1小時再走回來。",
+      "sourceUrl": "https://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf",
+      "sourceTitle": "滞在4時間のおすすめプラン 12:50発 沓形行｜礼文島観光協会",
+      "sourceQuote": "ターミナル8:50発～桃岩展望台9:50着　展望台周辺散策1時間　桃岩展望台10:50発～ターミナル11:50着",
+      "verdict": "verified",
+      "notes": "步行時間不是交通營運資訊，觀光協會（步道管理方之一）可作來源。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "回程如果搭2等艙，開船40分鐘前要在渡輪站辦好乘船手續。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "車を積込みされるお客様と2等客室をご利用されるお客様は出港時間の40分前までにお済ませ下さい。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "想早點回稚內，可以改搭14:20的船，禮文A在12:30回到渡輪站，接這班船來得及，在島上大約待5小時。",
+      "sourceUrl": "https://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "礼文島フェリー到着便別モデルプラン（6月～9月）｜礼文島観光協会",
+      "sourceQuote": "稚内6:30発　香深8:25着／14:20発 稚内行（滞在5時間）",
+      "verdict": "verified",
+      "notes": "渡輪 14:20 見經營者時刻表 6/1～9/30「14:20～16:15」；12:30 回站、2 等報到截止 13:40，來得及。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "從稚內搭10:30那班過來，12:25才到，島上只剩4小時左右，排南部的景點就夠了。",
+      "sourceUrl": "https://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "礼文島フェリー到着便別モデルプラン（6月～9月）｜礼文島観光協会",
+      "sourceQuote": "稚内10:30発　香深12:25着／17:10発 稚内行（滞在4時間）",
+      "verdict": "verified",
+      "notes": "經營者時刻表 6/1～9/30「10:30～12:25」一致。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "下午14:15出發的禮文B也會繞到澄海岬與須古頓岬，不過16:40才回到渡輪站。這時17:10那班船2等艙的報到時間已經過了，比較適合在島上住一晚、隔天再搭船。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "礼文Ｂ　香深フェリーターミナル発～スカイ岬～スコトン岬～香深フェリーターミナル着　6月1日～9月30日　14:15発 → 16:40着",
+      "verdict": "verified",
+      "notes": "重算：17:10 − 40 分 = 16:30（ハートランドフェリー FAQ「2等客室…40分前」），16:40 已過。1 等或 2 等指定席是 20 分前（16:50），正文只說 2 等艙，條件主詞正確。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "觀光巴士沒開或客滿時，也可以走路繞，觀光協會排過一條步行路線。從渡輪站走到桃台貓台大約1小時，再走30分鐘左右到瑪瑙濱，從瑪瑙濱走回渡輪站也是1小時左右。",
+      "sourceUrl": "https://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf",
+      "sourceTitle": "滞在4時間のおすすめプラン 12:50発 沓形行｜礼文島観光協会",
+      "sourceQuote": "元地地区散策（所要時間2時間30分）ターミナル8:50発～桃台猫台9:50着　桃台猫台10:00発～メノウ浜10:30着　メノウ浜10:50発～ターミナル11:50着",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "島上有出租自行車，觀光協會列出CAT ROCK與ホテル礼文兩處，從渡輪站騎到北方金絲雀公園大約15分鐘。",
+      "sourceUrl": "https://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "礼文島フェリー到着便別モデルプラン（6月～9月）｜礼文島観光協会",
+      "sourceQuote": "レンタルサイクル・バイク：CAT ROCK TEL 090-7517-1095（問い合せ時間 9:00-11:00）／：ホテル礼文 TEL 0163-86-1990；QR2「ターミナル8:50発(自転車)～カナリアパーク9:05着」",
+      "verdict": "verified",
+      "notes": "第 1 輪複查：「渡輪站前」已刪除。看 PDF 影像確認ホテル礼文列在「レンタルサイクル・バイク」項下（第二行，冒號對齊）。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "離渡輪站走路1分鐘的トヨタレンタリース只有6台車，打算開車最好早點預約。",
+      "sourceUrl": "https://web.archive.org/web/20260410084448/https://www.rebun-island.jp/inbound/",
+      "sourceTitle": "外国人観光客向け情報｜礼文島観光協会",
+      "sourceQuote": "トヨタレンタリース…台数は少ないのでお早目のご連絡をお心がけください。貸出車 軽自動車1台、普通自動車5台…香深港フェリーターミナルより徒歩1分",
+      "verdict": "verified",
+      "notes": "第 1 輪複查：主詞改成トヨタレンタリース，6 台（1+5）與徒歩1分都有原文。rebun-island.jp 今天連不上，用 2026-04-10 保存版。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "禮文島溫泉薄雪之湯離香深港渡輪站走路約3分鐘，等回程船時去泡最順路。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
+      "sourceTitle": "礼文島温泉うすゆきの湯｜北海道観光機構",
+      "sourceQuote": "●徒歩：香深港フェリーターミナルから約3分／フェリーの乗船前後および待ち時間における立ち寄りスポットとして",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "4月到9月從12:00開到22:00，10月到3月是13:00到21:00，全年無休。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
+      "sourceTitle": "礼文島温泉うすゆきの湯｜北海道観光機構",
+      "sourceQuote": "営業時間 12:00-22:00（4-9月）13:00-21:00（10-3月）休業日 無休",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "這裡是源泉放流的溫泉，泡在露天風呂裡望得到利尻山，另外也有三溫暖。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
+      "sourceTitle": "礼文島温泉うすゆきの湯｜北海道観光機構",
+      "sourceQuote": "源泉かけ流しの天然温泉…ジャグジーバスやサウナを備えており、露天風呂からは海の向こうに位置する利尻山の姿を望むことができます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "入浴費600日圓，出示當天使用的路線巴士一日券是500日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/cee90bfcad3f70e950cabbba35f2378f.pdf",
+      "sourceTitle": "礼文島内路線バス 1Dayフリー乗車券｜宗谷バス",
+      "sourceQuote": "1Dayフリー乗車券をご利用の方当日に限り、礼文島温泉うすゆきの湯の入浴料が割引されます。通常600円が500円に！※温泉ご利用時に使用済チケットをご提示下さい。",
+      "verdict": "verified",
+      "notes": "PDF 是圖片，轉成影像判讀。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "想包租家庭浴池要事先預約，毛巾可以付費租借。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
+      "sourceTitle": "礼文島温泉うすゆきの湯｜北海道観光機構",
+      "sourceQuote": "貸切家族風呂も設けられており、利用にあたっては事前の予約手続きが必要となります。バスタオルやフェイスタオルの有料レンタルサービスが用意されている",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "| 日文名 | 礼文島温泉うすゆきの湯 |／| 營業時間 | 4月～9月12:00～22:00，10月～3月13:00～21:00，無休 |／| 入浴費 | 600日圓，出示當天用過的一日券500日圓 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
+      "sourceTitle": "礼文島温泉うすゆきの湯｜北海道観光機構",
+      "sourceQuote": "礼文島温泉うすゆきの湯／12:00-22:00（4-9月）13:00-21:00（10-3月）無休",
+      "verdict": "verified",
+      "notes": "入浴費見 C41。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "地藏岩、桃台貓台與桃岩展望台離香深港都不遠，開車大約10分鐘，停車場也都免費。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10387.html",
+      "sourceTitle": "地蔵岩｜北海道観光機構",
+      "sourceQuote": "地蔵岩「20台、無料」、桃台猫台「20台、無料」、桃岩展望台「12台、無料」；三處皆「●車：香深港フェリーターミナルから約10分」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "地藏岩是元地海岸上高約50公尺的奇岩，兩塊岩石彼此靠著，看起來像朝海合掌。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10387.html",
+      "sourceTitle": "地蔵岩｜北海道観光機構",
+      "sourceQuote": "海に向かって手を合わせるように立つ高さ約50mの奇岩／元地海岸にそびえる地蔵岩。二つの岩が寄り添うように重なり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "這一帶以夕陽沉入西邊海面出名，旁邊的瑪瑙海岸還能看到瑪瑙原石。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10387.html",
+      "sourceTitle": "地蔵岩｜北海道観光機構",
+      "sourceQuote": "メノウの原石が見られる「メノウ海岸」／西の海へ沈む太陽を背景に地蔵岩のシルエットが浮かび上がる夕暮れ時の景観も知られており",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "從香深港開車大約10分鐘，有20個免費車位。路線巴士元地線從渡輪站開到終點元地，車資520日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/01_rebun-motochi-line_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 元地線(1) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(新桃岩ﾄﾝﾈﾙ経由)元地間",
+      "sourceQuote": "元地 列、香深ﾌｪﾘｰﾀｰﾐﾅﾙ 欄「520」「3.6」",
+      "verdict": "verified",
+      "notes": "PDF 轉影像逐格判讀。開車與車位見 detail_10387。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "從地藏岩往北經禮文瀑布到宇遠內的海岸線不能通行，看完要沿原路回去。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2026/08/trekking-1-pdf.jpg",
+      "sourceTitle": "礼文島トレイルマップ（発行：礼文島観光協会）",
+      "sourceQuote": "※宇遠内～礼文滝～地蔵岩の海岸線は通れません",
+      "verdict": "verified",
+      "notes": "8時間コース頁（REST 取得）也寫海岸線區段高浪強風日不可通行。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "想待到夕陽再走，回程可以叫島上的礼文ハイヤー或イシドウハイヤー來接。不會講日文的話，可以請住宿的旅館幫忙叫車。",
+      "sourceUrl": "https://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "礼文島フェリー到着便別モデルプラン（6月～9月）｜礼文島観光協会",
+      "sourceQuote": "タクシー：礼文ハイヤー TEL 0163-86-1320　イシドウハイヤー TEL 0163-86-1148",
+      "verdict": "verified",
+      "notes": "第二句「請住宿的旅館幫忙叫車」是給讀者的建議，不是事實主張，不另查。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "| 日文名 | 地蔵岩 |／| 路線巴士 | 元地線到元地，520日圓 |／| 停車場 | 20台，免費 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10387.html",
+      "sourceTitle": "地蔵岩｜北海道観光機構",
+      "sourceQuote": "地蔵岩／駐車場 20台、無料",
+      "verdict": "verified",
+      "notes": "車資見 C47。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "桃台貓台是元地高台上的觀景點，從這裡看得到形狀像桃子的巨大桃岩，和海上像一隻貓的貓岩，天氣好時還望得到遠方的地藏岩。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11404.html",
+      "sourceTitle": "桃台猫台｜北海道観光機構",
+      "sourceQuote": "元地地区の高台に位置する景勝地／桃のような形をした巨大な桃岩と、海上に浮かぶ猫のような姿の猫岩を同時に眺めることができます／遠方の地蔵岩を望むことも可能です",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "觀光巴士禮文A會停這一站，搭禮文A就不用另外安排。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "～スカイ岬～スコトン岬～桃台猫台～",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "開車約10分鐘，停車場20台。6月到9月另有觀光接駁巴士。從渡輪站走路大約1小時，沿著觀光協會的步行路線還能接著走到瑪瑙濱。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11404.html",
+      "sourceTitle": "桃台猫台｜北海道観光機構",
+      "sourceQuote": "駐車場 20台、無料／●車：香深港フェリーターミナルから約10分（6月-9月は、観光シャトルバス運行）",
+      "verdict": "verified",
+      "notes": "步行見 QR2「ターミナル8:50発～桃台猫台9:50着　桃台猫台10:00発～メノウ浜10:30着」。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "| 日文名 | 桃台猫台 |／| 怎麼去 | 香深港開車約10分鐘，渡輪站走路約1小時 |／| 停車場 | 20台，免費 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11404.html",
+      "sourceTitle": "桃台猫台｜北海道観光機構",
+      "sourceQuote": "桃台猫台／20台、無料／約10分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "桃岩展望台一帶的高山植物群落，2022年列為國家天然紀念物。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10386.html",
+      "sourceTitle": "桃岩展望台｜北海道観光機構",
+      "sourceQuote": "周辺には多様で豊富な高山植物群落が広がっており、2022年には国の天然記念物に指定されました。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "展望台標高225公尺。清晨風小、冷霧壓在200公尺以下的時候，從這裡可以看到雲海。",
+      "sourceUrl": "https://web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/",
+      "sourceTitle": "雲海情報｜礼文島観光協会",
+      "sourceQuote": "この冷たい霧の層が標高200m以下にある時に見ることができます／霧がかる微風の朝／雲海スポット 桃岩展望台 標高225ｍ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "標高雖然不到300公尺，強風和濃霧並不少見，帶件防風外套比較保險。",
+      "sourceUrl": "https://rebun-trail.jp/momoiwaobservatorycourse/",
+      "sourceTitle": "桃岩展望台コース｜礼文島トレイル",
+      "sourceQuote": "標高は300m以下ですが、強風や濃霧も珍しくありません。",
+      "verdict": "verified",
+      "notes": "rebun-trail.jp 自 2026-10-22 起 HTML 顯示維護頁（503），改用同一官方伺服器的 WordPress REST API（/wp-json/wp/v2/pages）取得本文。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "從渡輪站走上去大約1小時，開車約10分鐘，停車場12台免費。從桃岩登山口到展望台這段都是鋪面路。",
+      "sourceUrl": "https://rebun-trail.jp/momoiwaobservatorycourse/",
+      "sourceTitle": "桃岩展望台コース｜礼文島トレイル",
+      "sourceQuote": "桃岩登山口から桃岩展望台周辺の路面は舗装されていますが；北海道観光機構「12台、無料」「約10分」",
+      "verdict": "verified",
+      "notes": "步行 1 小時見 QR2；REST API 取得。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "2026年10月20日起進入冬季，桃岩展望台步道只開放渡輪站到展望台這一段，近道全部封閉，其他區段請不要進入。",
+      "sourceUrl": "https://rebun-trail.jp/%e3%83%88%e3%83%ac%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b3%e3%83%bc%e3%82%b9%e5%86%ac%e5%ad%a3%e9%96%89%e9%8e%96%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ｜礼文島トレイル",
+      "sourceQuote": "１０月２０日現在の島内トレッキングコースの通行可否…【一部通行可】・桃岩展望台コース ※香深フェリーターミナル～桃岩展望台までは通行可能 (近道に関してはすべて通行止め) 閉鎖区間に関しては通行禁止の看板を設置しておりますので立ち入りされない様に皆様のご協力をお願いします。",
+      "verdict": "verified",
+      "notes": "第 1 輪複查：已照 2026-10-22 公告（REST API 重新取得，modified 2026-10-22T13:17，內容未再變）改寫，條件一致。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "| 冬季 | 2026年10月20日起只開放渡輪站到展望台，近道封閉 |",
+      "sourceUrl": "https://rebun-trail.jp/%e3%83%88%e3%83%ac%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b3%e3%83%bc%e3%82%b9%e5%86%ac%e5%ad%a3%e9%96%89%e9%8e%96%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ｜礼文島トレイル",
+      "sourceQuote": "【一部通行可】・桃岩展望台コース ※香深フェリーターミナル～桃岩展望台までは通行可能 (近道に関してはすべて通行止め)",
+      "verdict": "verified",
+      "notes": "第 1 輪複查：與 10/22 公告一致。"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "| 日文名 | 桃岩展望台 |／| 怎麼去 | 渡輪站走路約1小時，香深港開車約10分鐘 |／| 停車場 | 12台，免費 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10386.html",
+      "sourceTitle": "桃岩展望台｜北海道観光機構",
+      "sourceQuote": "桃岩展望台／12台、無料／●車：香深港フェリーターミナルから約10分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "北方金絲雀公園在香深奮部，離香深港開車約5分鐘，5月到10月每天9:00到17:00開放，11月到隔年4月左右休館。",
+      "sourceUrl": "https://web.archive.org/web/20250528083948/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000171.html",
+      "sourceTitle": "北のカナリアパーク｜礼文町",
+      "sourceQuote": "開　館 ５月～10月／北のカナリアパーク：無休（9:00～17:00）；北海道観光機構「冬期間休業（11-4月頃）」「香深奮部」「約5分」",
+      "verdict": "verified",
+      "notes": "禮文町頁最新保存版為 2025-05-28；觀光協會 2026 年公告「カナリアパーク　5月～10月　校舎・トイレ開放時間9:00～17:00」一致。"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "9:00到17:00開放的是校舍和廁所，園內的金絲雀咖啡另有營業日，2026年只開到8月29日，8月只有21、22、28、29日這4天。",
+      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
+      "sourceTitle": "イベント・施設情報｜礼文島観光協会",
+      "sourceQuote": "令和8年度、カナリアカフェは8月29日に今シーズンの営業が終了します。カナリアパーク　5月～10月　校舎・トイレ開放時間9:00～17:00　カナリアカフェ　5月～８月29日　11:00～15:30　※8月の営業はは21日、22日、28日、29日(ラスト営業日)です。",
+      "verdict": "verified",
+      "notes": "2026-10-10 保存版。"
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "觀光巴士禮文A回渡輪站前，最後停的就是這裡。自行前往的話，從渡輪站騎自行車大約15分鐘，這裡也是接駁巴士的停靠站。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "～北のカナリアパーク～香深フェリーターミナル着；QR2「ターミナル8:50発(自転車)～カナリアパーク9:05着」；ぶらりMAP「北のカナリアパーク（シャトルバスのみ）」",
+      "verdict": "verified",
+      "notes": "第 1 輪複查：原 C65 的範例巴士時刻已刪除，該筆不再列。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "開車有10個免費車位。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11401.html",
+      "sourceTitle": "北のカナリアパーク｜北海道観光機構",
+      "sourceQuote": "駐車場 10台、無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "| 日文名 | 北のカナリアパーク |／| 開放 | 5月～10月，9:00～17:00，無休 |／| 停車場 | 10台，免費 |",
+      "sourceUrl": "https://web.archive.org/web/20250528083948/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000171.html",
+      "sourceTitle": "北のカナリアパーク｜礼文町",
+      "sourceQuote": "開　館 ５月～10月　休館日 北のカナリアパーク：無休（9:00～17:00）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "公園保存的是2012年上映、吉永小百合主演的電影《北のカナリアたち》拍攝時用的木造校舍，也就是片中的「麗端小學校岬分校」。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島特集｜北海道観光機構",
+      "sourceQuote": "女優・吉永小百合主演の映画「北のカナリアたち」の公開を記念し、ロケ現場だった「麗端小学校岬分校」を一般公開；detail_11401「2012年公開の映画『北のカナリアたち』の撮影に使用された木造校舎を保存・公開」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "公園在2013年7月27日正式開園，校舍從此對外公開。",
+      "sourceUrl": "https://web.archive.org/web/20250528083948/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000171.html",
+      "sourceTitle": "北のカナリアパーク｜礼文町",
+      "sourceQuote": "北のカナリアパークは2013年7月27日にグランドオープンしました！",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "校舍裡重現了電影中的教室，也展示劇照與演員穿過的戲服",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11401.html",
+      "sourceTitle": "北のカナリアパーク｜北海道観光機構",
+      "sourceQuote": "校舎内では、撮影当時の様子が再現された教室をはじめ、映画に関連する写真や劇中で着用された衣装などの展示資料を見学できます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "群生地2026年只開到6月20日，植物園有控溫，禮文敦盛草能看到8月初左右。園內展示約50種、大約1萬株高山植物。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11454.html",
+      "sourceTitle": "礼文町高山植物園｜北海道観光機構",
+      "sourceQuote": "約50種類・約1万本におよぶ高山植物／園内では温度管理を行うことで8月初旬頃までその姿を観察できます",
+      "verdict": "verified",
+      "notes": "群生地閉園見步道官網「レブンアツモリソウ群生地閉園日時　令和8年6月20日（土）　午後4時30分」（REST 取得）。"
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "植物園5月到9月開放，時間是9:00到17:00，5月到8月無休，9月逢週日休館，門票大人310日圓、小孩160日圓。位置在北部的船泊村上泊，從香深港開車約30分鐘。",
+      "sourceUrl": "https://web.archive.org/web/20260514003242/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000176.html",
+      "sourceTitle": "高山植物園｜礼文町",
+      "sourceQuote": "開館 5月～9月／9時～17時　料金 大人310円・小人160円　休館日 5月～8月／無休　9月／日曜日",
+      "verdict": "verified",
+      "notes": "位置與開車時間見 detail_11454「船泊村上泊」「約30分」。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "植物園不在禮文A的路線上，不開車就搭接駁巴士，班次可以到渡輪站的觀光案內所問。",
+      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "ぶらり礼文島MAP｜礼文島観光協会",
+      "sourceQuote": "高山植物園（シャトルバスのみ）；フェリーターミナル1F観光案内所",
+      "verdict": "verified",
+      "notes": "第 1 輪複查：範例巴士時刻已刪除。不在禮文A路線見宗谷巴士全コース一覧。案內所季節（4月中旬～10月中旬）同一段沒寫，但前文 C19 已寫，讀者驗收可自行判斷是否重複。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "| 日文名 | 礼文町高山植物園 |／| 開放 | 5月～9月，9:00～17:00，9月週日休 |／| 門票 | 大人310日圓、小孩160日圓 |／| 電話 | 0163-87-2941 |",
+      "sourceUrl": "https://web.archive.org/web/20260514003242/https://www.town.rebun.hokkaido.jp/hotnews/detail/00000176.html",
+      "sourceTitle": "高山植物園｜礼文町",
+      "sourceQuote": "5月～9月／9時～17時／大人310円・小人160円／電話：0163-87-2941／9月／日曜日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "北部的須古頓岬、郭洛塔岬與澄海岬，由全長約12.4公里的岬巡步道串在一起，一路往南通到濱中。",
+      "sourceUrl": "https://rebun-trail.jp/capetourcourse/",
+      "sourceTitle": "岬めぐりコース｜礼文島トレイル",
+      "sourceQuote": "礼文島の最北端スコトン岬からゴロタ岬、澄海岬を抜け、レブンアツモリソウ群生地を経由して浜中へと続く全長約12.4kmのコースです。",
+      "verdict": "verified",
+      "notes": "REST API 取得。"
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "從香深港開車過去要50到60分鐘，觀光巴士禮文A與禮文B也都會繞到澄海岬與須古頓岬。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "礼文A・礼文Ｂ「香深フェリーターミナル発～スカイ岬～スコトン岬～」；北海道観光機構 澄海岬「約50分」スコトン岬「約60分」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "澄海岬讀作「すかいみさき」，觀光巴士路線表上的「スカイ岬」就是這裡。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10388.html",
+      "sourceTitle": "澄海岬｜北海道観光機構",
+      "sourceQuote": "data-ruby=\"すかいみさき\">澄海岬",
+      "verdict": "verified",
+      "notes": "宗谷巴士路線寫「スカイ岬」，與讀音一致。"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "岬角位在船泊西上泊，海水清澈，夏天隨光線變成藍綠色或翡翠色，這種海色有個名字叫「レブンブルー」。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10388.html",
+      "sourceTitle": "澄海岬｜北海道観光機構",
+      "sourceQuote": "北海道礼文郡礼文町船泊西上泊／夏には光の加減で青緑色や翡翠色に変わる海面を望める／現地では「レブンブルー」と呼ばれています",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "開車約50分鐘，有20個免費車位。路線巴士沒有停澄海岬",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 礼文線(2) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)ｽｺﾄﾝ間",
+      "sourceQuote": "站名：…船泊本町、病院前、浜中、第2浜中、江戸屋、白浜、スコトン（無西上泊、澄海岬）；北海道観光機構「20台、無料」「約50分」",
+      "verdict": "verified",
+      "notes": "礼文線(2) 是唯一往北的路線，運賃表列出全部停靠站，沒有澄海岬或西上泊；冬季時刻表亦同。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "從濱中站沿岬巡步道走過去約3.4公里，大約1小時30分，回程同樣要走這段。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-misaki-gl.jpg",
+      "sourceTitle": "岬めぐりコース起伏図｜礼文島トレイル",
+      "sourceQuote": "西上泊─澄海岬 0.2km 10分／西上泊分岐─西上泊 1.1km 30分／レブンアツモリソウ群生地─西上泊分岐 1.1km 30分／浜中─群生地 1.0km 20分",
+      "verdict": "verified",
+      "notes": "重算：1.0+1.1+1.1+0.2=3.4km；20+30+30+10=90 分；來回約 3 小時（下一句「來回走3小時」同此重算）。"
+    },
+    {
+      "claimId": "C101",
+      "articleExcerpt": "岬巡步道2026年10月20日起冬季封閉，這段路只能在開放期間走。不想來回走3小時，就搭觀光巴士。",
+      "sourceUrl": "https://rebun-trail.jp/%e3%83%88%e3%83%ac%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b3%e3%83%bc%e3%82%b9%e5%86%ac%e5%ad%a3%e9%96%89%e9%8e%96%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ｜礼文島トレイル",
+      "sourceQuote": "１０月２０日現在の島内トレッキングコースの通行可否…【冬季閉鎖】・岬めぐりコース；9/30 公告「礼文林道コースを除くその他のコースに関しましては、10月20日より冬期閉鎖となります。」",
+      "verdict": "verified",
+      "notes": "第 1 輪新增句，REST API 取得。"
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "| 日文名 | 澄海岬 |／| 怎麼去 | 香深港開車約50分鐘，觀光巴士禮文A、禮文B停靠 |／| 停車場 | 20台，免費 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10388.html",
+      "sourceTitle": "澄海岬｜北海道観光機構",
+      "sourceQuote": "澄海岬／20台、無料／約50分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "須古頓岬是禮文島的最北端，正前方約1公里的海上是無人島海馬島，島上立著海馬島燈塔。天氣晴朗時，還能遠望海對面的庫頁島。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10389.html",
+      "sourceTitle": "スコトン岬｜北海道観光機構",
+      "sourceQuote": "約1km沖合に浮かぶ無人島「トド島（海馬島）」／トド島には海馬島灯台が設置されています／晴天時には遠くサハリンの島影を望めることもあります",
+      "verdict": "verified",
+      "notes": "禮文町保存版：「スコトン岬は礼文島最北端の地で、正面には無人のトド島が浮かび、晴れた日には遠くサハリンを望むことができます。」"
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "岬上的土產店「島の人」有賣昆布霜淇淋，2026年5月11日到9月30日營業，時間是8:00到17:00。",
+      "sourceUrl": "https://www.rebun.jp/shop/",
+      "sourceTitle": "島の人 店舗情報",
+      "sourceQuote": "島の人 礼文島本店…北海道礼文郡礼文町船泊字須古頓1　2026年度　5月11日（月）OPEN　9月30日（水）CLOSE　8時～17時",
+      "verdict": "verified",
+      "notes": "昆布霜淇淋見北海道観光機構特集「「スコトン岬」の土産物店「島の人」で食べることのできる「昆布ソフトクリーム」」（2022 年特集）。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "開車約60分鐘，停車場20台免費。岬上就有巴士站，路線巴士禮文線②從渡輪站一路開到這裡，車資1,400日圓。岬巡步道也是從這裡起步。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 礼文線(2) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)ｽｺﾄﾝ間",
+      "sourceQuote": "スコトン 列、香深ﾌｪﾘｰﾀｰﾐﾅﾙ 欄「1,400」「30.3」；步道官網「スコトン岬と浜中にはバス停があり」；禮文町「岬めぐりコースの出発地点です」",
+      "verdict": "verified",
+      "notes": "停車場見 detail_10389「20台、無料」「約60分」。"
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "| 日文名 | スコトン岬 |／| 車資 | 渡輪站出發1,400日圓 |／| 停車場 | 20台，免費 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10389.html",
+      "sourceTitle": "スコトン岬｜北海道観光機構",
+      "sourceQuote": "スコトン岬／駐車場 20台、無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "郭洛塔岬標高176公尺，在岬巡步道上。從須古頓岬出發的第一段是江戶屋山道，是鋪面道路。",
+      "sourceUrl": "https://rebun-trail.jp/trekkingrule/",
+      "sourceTitle": "トレッキングルール｜礼文島トレイル",
+      "sourceQuote": "岬めぐりコースの江戸屋山道…は路面がアスファルトや砂利で舗装されています；岬めぐりコース頁「スコトン岬から江戸屋山道…の路面は舗装されています」；北海道観光機構「標高176mの岬」",
+      "verdict": "verified",
+      "notes": "REST API 取得；北海道観光機構特集也寫江戸屋山道「岬めぐりコース」の序盤…舗装されている」。"
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "岬的另一側是圓石灘テップ海岸，可以在石頭間找找天然穿孔的「穴あき貝」。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10390.html",
+      "sourceTitle": "ゴロタ岬｜北海道観光機構",
+      "sourceQuote": "反対側にあたるテップ側の海岸へ下りると、波によって形成された丸石の浜辺が広がっており、自然に穴が開いた貝殻として知られる「穴あき貝」を探すことも可能です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "停車場只有3台。搭路線巴士禮文線②從渡輪站坐大約55分鐘到江戶屋站，下車再走30分鐘左右。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10390.html",
+      "sourceTitle": "ゴロタ岬｜北海道観光機構",
+      "sourceQuote": "駐車場 3台、無料／●バス＋徒歩：香深港フェリーターミナルから約55分「江戸屋」下車、徒歩約30分",
+      "verdict": "verified",
+      "notes": "乘車時間的出處是北海道観光機構，以經營者資料核對：宗谷巴士令和8年10月1日改正時刻表，渡輪站 6:30 發、浜中 7:19、スコトン 7:29，江戸屋位在浜中與スコトン之間（運賃表站序），約 55 分鐘合理。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "| 日文名 | ゴロタ岬 |／| 怎麼去 | 路線巴士禮文線②到江戶屋站，再走約30分鐘 |／| 停車場 | 3台，免費 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10390.html",
+      "sourceTitle": "ゴロタ岬｜北海道観光機構",
+      "sourceQuote": "ゴロタ岬／3台、無料／「江戸屋」下車、徒歩約30分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "觀光協會的「ぶらりMAP」在金田之岬旁寫著「アザラシの群れ」，意思是這一帶有海豹群。",
+      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "ぶらり礼文島MAP｜礼文島観光協会",
+      "sourceQuote": "金田ノ岬／アザラシの 群れ（船泊市街地MAP 內，金田ノ岬東側海面附海豹照片）",
+      "verdict": "verified",
+      "notes": "已看地圖影像，標示在金田ノ岬東側海上。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "這份地圖放在禮文島觀光協會網站上，打開後找日文地名「金田ノ岬」就看得到位置，4月中旬到10月中旬也能到渡輪站1樓的觀光案內所拿詳細的地圖。",
+      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "ぶらり礼文島MAP｜礼文島観光協会",
+      "sourceQuote": "金田ノ岬（地圖上兩處標示）；フェリーターミナル1F観光案内所にて 詳細なトレイルマップを配布しております。；網站頁尾「礼文島観光案内所（香深フェリーターミナル内 4月中旬～10月中旬）」",
+      "verdict": "verified",
+      "notes": "地圖 PDF 位於 www.rebun-island.jp/panfu/burariMAP/ 下（觀光協會網站）。注意：rebun-island.jp 2026-10-23 curl、WebFetch、瀏覽器都連不上，讀者今天打不開這份地圖；屬網站暫時狀態，不改判，交讀者驗收參考。ぶらりMAP 寫「4月～10月中旬」，網站頁尾寫「4月中旬～10月中旬」，正文用網站說法。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "想把景點一次看完，6月到9月最合適，禮文A、禮文B兩條觀光巴士都有開，北方金絲雀公園與高山植物園也都開放。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "礼文A 5月3日～5月5日・5月20日～9月30日；礼文Ｂ 6月1日～9月30日；高山植物園 5月～9月；カナリアパーク 5月～10月",
+      "verdict": "verified",
+      "notes": "重算交集為 6/1～9/30；9 月植物園週日休，屬細節。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "花的種類最多是在6月中旬到8月初，禮文敦盛草則在5月下旬到6月中旬開花。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島特集｜北海道観光機構",
+      "sourceQuote": "6月中旬から8月初旬は、最も多くの種類の花を楽しめるベストシーズンです。…5月下旬から6月中旬頃には、礼文島の固有種である「レブンアツモリソウ」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "| 禮文敦盛草群生地 | 2026年船泊海岸濱5月11日起、鐵府5月15日起，到6月20日 | 船泊海岸濱7:00～17:00，鐵府8:30～17:00（16:30最後入場） |",
+      "sourceUrl": "https://rebun-trail.jp/%e3%83%ac%e3%83%96%e3%83%b3%e3%82%a2%e3%83%84%e3%83%a2%e3%83%aa%e3%82%bd%e3%82%a6%e7%be%a4%e7%94%9f%e5%9c%b0%e3%81%ae%e9%96%8b%e5%9c%92%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6-3/",
+      "sourceTitle": "レブンアツモリソウ群生地の開園について｜礼文島トレイル",
+      "sourceQuote": "〇船泊海岸浜 2026年５月11日（月）開園 〇鉄府木道エリアおよび展望エリア 2026年５月15日（金）開園＜開園時間＞〇船泊海岸浜 7：00～17：00 〇鉄府木道エリア 8：30～17：00（16：30最終入場）；閉園「令和8年6月20日（土）午後4時30分」",
+      "verdict": "verified",
+      "notes": "REST API 取得。第 1 輪複查：兩區開園日與鉄府最後入場已補，與公告一致。"
+    },
+    {
+      "claimId": "C95",
+      "articleExcerpt": "| 觀光巴士禮文A | 2026年5月3日～5日、5月20日～9月30日 | 8:40發車 |／| 觀光巴士禮文B | 2026年6月1日～9月30日 | 14:15發車 |",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "5月3日～5月5日・5月20日～9月30日　8:40発；6月1日～9月30日　14:15発",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C96",
+      "articleExcerpt": "| 步道 | 2026年禮文瀑布步道10月1日起封閉，岬巡步道等其他步道10月20日起封閉；禮文林道照常通行，桃岩展望台步道只開渡輪站到展望台 | |",
+      "sourceUrl": "https://rebun-trail.jp/%e3%83%88%e3%83%ac%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b3%e3%83%bc%e3%82%b9%e5%86%ac%e5%ad%a3%e9%96%89%e9%8e%96%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ｜礼文島トレイル",
+      "sourceQuote": "【通行可能】・礼文林道コース【冬季閉鎖】・岬めぐりコース・久種湖畔コース・礼文滝コース・礼文岳コース・８時間コース【一部通行可】・桃岩展望台コース ※香深フェリーターミナル～桃岩展望台までは通行可能",
+      "verdict": "verified",
+      "notes": "第 1 輪複查：與 9/30 公告（礼文滝 10/1、礼文林道以外 10/20）及 10/22 公告（礼文林道可通行、桃岩只開渡輪站到展望台）一致。"
+    },
+    {
+      "claimId": "C97",
+      "articleExcerpt": "| 觀光案內所 | 4月中旬～10月中旬 | |",
+      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
+      "sourceTitle": "イベント・施設情報｜礼文島観光協会",
+      "sourceQuote": "礼文島観光案内所（香深フェリーターミナル内 4月中旬～10月中旬）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "到了10月，觀光巴士停駛，步道陸續封閉，北方金絲雀公園也在10月底休館。冬天到島上，薄雪之湯照常營業，開到晚上21:00，可以排在搭船前去泡。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
+      "sourceTitle": "礼文島温泉うすゆきの湯｜北海道観光機構",
+      "sourceQuote": "13:00-21:00（10-3月）無休；宗谷巴士 礼文A～9月30日、礼文Ｂ～9月30日；北のカナリアパーク「開館 ５月～10月」",
+      "verdict": "verified",
+      "notes": "步道 10/1、10/20 分批封閉（步道官網公告），「陸續封閉」成立。"
+    }
+  ],
+  "summary": {
+    "verified": 99,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
