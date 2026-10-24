@@ -47,6 +47,20 @@ function runPython(script, args) {
   return run
 }
 
+/**
+ * 找出教日文會話的段落：「可以指給對方看的日文」這類標題、引號裡的日文問句或請求句、日文信件範本。
+ * 畫面按鈕、招牌、站名這類單詞不算（不是完整句子）。
+ */
+export function findJapanesePhraseLesson(markdown) {
+  for (const line of normalizeNewlines(markdown).split('\n')) {
+    const trimmed = line.trim()
+    if (/^#{2,3}\s.*(指給|照著念|會話|怎麼說|日文句|用日文問|日文範本|日文信)/.test(trimmed)) return trimmed
+    if (/「[^」]*[ぁ-ん][^」]*(ますか|ですか|ください|ませんか|でしょうか)[。？?]?」/.test(trimmed)) return trimmed
+    if (/(と申します|よろしくお願いいたします|ご担当者様)/.test(trimmed)) return trimmed
+  }
+  return null
+}
+
 export function inspectReaderPreview(markdown, item) {
   const issues = []
   const text = normalizeNewlines(markdown)
@@ -69,6 +83,9 @@ export function inspectReaderPreview(markdown, item) {
   const sourcesText = sourcesIndex >= 0 ? text.slice(sourcesIndex) : ''
   const bannedLabel = containsBannedLabel(bodyText) ?? containsBannedLabel(sourcesText.replace(/\[[^\]]*\]\([^)]*\)/g, ''))
   if (bannedLabel) issues.push(`正文出現制式摘要標籤「${bannedLabel}」`)
+
+  const phraseLesson = findJapanesePhraseLesson(bodyText)
+  if (phraseLesson) issues.push(`正文不教日文會話（寫作指南第 8 條），請刪掉：${phraseLesson}`)
 
   const internalLinks = [...text.matchAll(/\]\((\/[^)\s]*)\)/g)].map((match) => match[1])
   for (const link of internalLinks) {

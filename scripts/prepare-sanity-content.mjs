@@ -2,6 +2,8 @@ import {mkdir, readFile, writeFile} from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 
+import {linkBareUrls} from './markdown-to-portable-text.mjs'
+
 const [, , configArgument, outputArgument] = process.argv
 
 if (!configArgument || !outputArgument) {
@@ -21,7 +23,8 @@ function nextKey(prefix) {
   return `${prefix}${String(keyNumber).padStart(4, '0')}`
 }
 
-function parseInline(text) {
+function parseInline(source) {
+  const text = linkBareUrls(source)
   const children = []
   const markDefs = []
   const pattern = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g

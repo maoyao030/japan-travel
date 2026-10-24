@@ -1,3 +1,20 @@
+const BARE_URL = /(?<!\]\()https?:\/\/[^\s)）<>]+/g
+
+/**
+ * 把裸網址改成 Markdown 連結，轉換時才會變成可點的連結。
+ * 延伸資料的寫法「**名稱**，用途。https://…」改成「[名稱](https://…)，用途。」，網址不另外顯示；
+ * 其他地方的裸網址直接用網址當連結文字。
+ */
+export function linkBareUrls(text) {
+  const listing = text.match(/^\*\*([^*]+)\*\*(.*?)\s*(https?:\/\/[^\s)）<>]+)\s*$/)
+  if (listing && !/https?:\/\//.test(listing[2])) {
+    const description = listing[2].trim()
+    const ending = description === '' || /[。！？]$/.test(description) ? '' : '。'
+    return `[${listing[1]}](${listing[3]})${description}${ending}`
+  }
+  return text.replace(BARE_URL, (url) => `[${url}](${url})`)
+}
+
 function createKeyFactory() {
   let keyNumber = 0
   return (prefix) => {
@@ -35,7 +52,8 @@ function isSpecialLine(line, nextLine) {
 export function parseMarkdownBody(markdownSource) {
   const nextKey = createKeyFactory()
 
-  function parseInline(text) {
+  function parseInline(source) {
+    const text = linkBareUrls(source)
     const children = []
     const markDefs = []
     const pattern = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g

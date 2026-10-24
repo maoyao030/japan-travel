@@ -1193,3 +1193,28 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 - 用量估計：前 4 輪一篇約用 5 小時額度 10%、每週額度約 1%，一天 5 篇約每週 35%，還要加上好材誌自己的用量。每輪開始前仍會檢查，週額度 80% 以上自動略過。
 - 自動寫作的分支 `auto/wakkanai-writing` 已快轉到 `main`，排定工作下一輪就會讀到新上限。
 - 唯一下一步：過兩三天看執行紀錄，確認每天真的完成 5 篇、週額度沒有逼近 80%。
+
+## 2026-10-24 Claude Code（地端）：渡輪頁延伸資料連結、漏補內連、不教日文
+
+### Darren 的要求
+
+- 渡輪頁延伸資料的連結沒放進去、「稚內交通」這類內連沒做上去，要修好並重新上傳。
+- 另外覺得文章教讀者用日文怎麼問是多餘的。
+
+### 已完成
+
+- 原因：延伸資料照範例寫成「**名稱**，用途。https://…」，轉換程式只認 `[文字](網址)`，網址變成純文字。所有用這個範例寫的文章都一樣。
+- `scripts/markdown-to-portable-text.mjs` 新增 `linkBareUrls`：延伸資料的粗體名稱變成連結、網址不顯示，其他裸網址用網址當連結文字；`prepare-sanity-content.mjs` 共用它。新增 `tests/markdown-to-portable-text.test.ts`。
+- 新增 `studio/scripts/link-bare-urls.mjs`：只替換已上線文章正文裡含裸網址的段落，其他段落與欄位不動，寫入前存復原檔（用 `apply-pending-link.mjs --rollback` 回復）。沒用 `publish-prepared-article.mjs --update-existing`，因為它會把文章改回 noindex、清掉相關文章。
+- Sanity `article-wakkanai-ferry`：延伸資料 10 條改成連結；補上「JR稚內站、巴士總站與渡輪站之間怎麼走，整理在稚內交通。」的內連（`apply-pending-link.mjs`）。這條是 10/21 同批上線、沒被登記的那種，D1 沒有對應紀錄。復原檔在 `.tmp/auto-publisher/link-recovery/`（不進 Git）。
+- 不教日文：規則原本只寫在 `nanny-level.md`，寫作時不讀，所以禮文島原稿出現「可以指給對方看的日文」與日文訂房信。寫進 `writing-guide.md` 第 8 條；`finalize-release.mjs` 新增 `findJapanesePhraseLesson`，正文有這類標題、日文問句或請求句、日文信件範本就不能定稿（畫面按鈕與招牌單詞不擋）。現有成稿掃過都沒被擋。禮文島原稿（驗收 rejected、未上線）刪掉那一節。
+- 測試 172 項通過。
+
+### 尚未完成
+
+- 渡輪頁其餘 6 條待補內連等目標頁上線後由流程補。
+- 多篇同時上線時互相的內連仍不會自動登記（10/21 記過的坑）。
+
+### 唯一下一步
+
+- 合併後確認線上渡輪頁的延伸資料可以點、稚內交通有連結。

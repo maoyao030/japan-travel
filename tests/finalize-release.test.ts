@@ -61,3 +61,12 @@ test('定稿寫出的 manifest 符合清單預先授權的檢查，Sanity 首次
   assert.equal(sync.article.noindex, true)
   assert.equal(sync.article._id, 'article-ginzan-onsen-ryokan')
 })
+
+test('正文教日文會話時擋下，畫面上的日文單詞不擋', async () => {
+  const {findJapanesePhraseLesson} = await import('../scripts/finalize-release.mjs')
+  assert.match(findJapanesePhraseLesson('## 在禮文島可以指給對方看的日文') ?? '', /指給/)
+  assert.match(findJapanesePhraseLesson('- 「この船は香深に行きますか？」：這班船會到香深嗎？') ?? '', /行きますか/)
+  assert.match(findJapanesePhraseLesson('どうぞよろしくお願いいたします。') ?? '', /お願いいたします/)
+  assert.equal(findJapanesePhraseLesson('| この内容で予約する | 用這個內容預約 | 確認後按下 |'), null)
+  assert.equal(findJapanesePhraseLesson('售票櫃台在1樓「発券カウンター」。'), null)
+})
