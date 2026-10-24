@@ -27,6 +27,8 @@
 
 用瀏覽器讀到的事實，一樣記來源網址、日文原文摘錄與查閱日期。
 
+**不讓電腦發出聲音**（Darren 2026-10-23）：不在瀏覽器打開 YouTube、Instagram、TikTok 等影片頁，影片的標題、說明欄、章節與字幕用 curl 或 WebFetch 讀。其他網頁用瀏覽器打開後，第一個動作先執行 `document.querySelectorAll('video,audio').forEach(m=>{m.muted=true;m.pause()})`，讀完就關分頁。
+
 中文或英文官方頁可以當補充，但同一事實以日文頁為準；兩者不一致時寫日文頁的內容，並在研究記錄註明差異。
 
 ## 搜尋用字
