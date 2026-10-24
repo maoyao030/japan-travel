@@ -74,13 +74,14 @@ export function addLinkToPortableText(body, proposal) {
 }
 
 /**
- * 文章上線時，從群大綱找出「從這篇出發、目標還沒上線」的連結，登記成待補內連。
- * publishedArticleIds：目前已開放索引的文章；pagePaths：articleId → 網址。
+ * 文章上線時，從群大綱找出「從這篇出發」的連結，全部登記成待補內連。
+ * 目標已經上線的也登記：文章可能在目標上線前就寫好（積壓的稿子、同一批上線），連結句還是純文字；
+ * 補內連時正文已經有連結的，apply-pending-link 會回「已經連到同一個網址」，標記已補即可。
+ * publishedArticleIds：保留參數，相容舊的呼叫；pagePaths：articleId → 網址。
  */
-export function pendingLinksFromOutline({outline, articleId, publishedArticleIds, pagePaths = {}}) {
-  const published = new Set(publishedArticleIds)
+export function pendingLinksFromOutline({outline, articleId, pagePaths = {}}) {
   return (outline?.links ?? [])
-    .filter((link) => link.from === articleId && !published.has(link.to) && hasText(link.sentence) && hasText(link.anchor))
+    .filter((link) => link.from === articleId && hasText(link.sentence) && hasText(link.anchor))
     .map((link) => ({
       fromArticleId: link.from,
       toArticleId: link.to,

@@ -316,7 +316,8 @@ test('補內連只加連結標記，可見文字不變；找不到或不唯一�
   const pending = pendingLinksFromOutline({outline, articleId: 'rebun-island-transport', publishedArticleIds: ['rebun-island-transport']})
   assert.equal(pending.length, 1)
   assert.equal(pending[0].targetPath, '/guides/heartland-ferry-booking/')
-  assert.equal(pendingLinksFromOutline({outline, articleId: 'rebun-island-transport', publishedArticleIds: ['heartland-ferry-booking']}).length, 0)
+  // 目標已經上線也登記：積壓或同批上線的稿子，連結句可能還是純文字
+  assert.equal(pendingLinksFromOutline({outline, articleId: 'rebun-island-transport', publishedArticleIds: ['heartland-ferry-booking']}).length, 1)
 })
 
 test('待補內連登記不重複，兩端都上線才列為可以補', async (t) => {
