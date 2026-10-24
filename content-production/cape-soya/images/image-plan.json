@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "articleId": "cape-soya",
+  "articleTitle": "宗谷岬怎麼去、待多久？北海道最北端、宗谷丘陵與白色道路",
+  "targetUrl": "/places/cape-soya/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-25",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/cape-soya/，不加入 Git、不上傳。已上線的宗谷岬交通封面是宗谷巴士站牌（File:Cape-Soya(Soyamisaki)Busstop.jpg），本頁不重複使用。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-25",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "呈現宗谷岬的日本最北端之地碑與宗谷海峽，讓讀者一眼認出這是宗谷岬的地點主頁。",
+      "mustShow": ["宗谷岬現場的日本最北端之地碑與海"],
+      "mustNotShow": ["其他岬角冒充宗谷岬", "宗谷巴士站牌（已用於宗谷岬交通封面）", "可辨識的人物臉部當主體", "傍晚或夜間光線讓人誤以為搭路線巴士能在岬上看夕陽", "讓人誤以為是本站實地拍攝"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/The_northernmost_point_of_Japan_monument_in_Soya_cape.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.45},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 2014 年 8 月晴天正面拍的日本最北端之地碑，碑文「日本最北端の地／The Northernmost Point in Japan」清楚可讀，背後是宗谷海峽，沒有人物，正好是讀者到岬上要認的地標。原圖 3:2、3872 px 寬，裁成 16:9 時切掉上方少許天空與下方部分步道，碑頂與碑文都保留。cover-02 是 2022 年傍晚的同一座碑，構圖漂亮，但傍晚光線和文章提醒的末班巴士 15:20 不合，只當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-25",
+        "photoSearchNotes": "沿用 2026-10-25 宗谷岬交通選圖時查過的維基共享資源 Category:Cape Soya（寬 1600 px 以上約 45 張）；這次以 Commons API 重新確認兩張地碑候選的尺寸、作者、拍攝日期與授權，並下載看過大圖。File:Souya Cape.jpg（CC0）畫面有戴口罩的小孩，排除；File:SoyaCapeView.JPG 霧濛濛、主體不清。維基共享資源已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:The_northernmost_point_of_Japan_monument_in_Soya_cape.jpg",
+          "creatorName": "Suicasmo",
+          "sourceTitle": "File:The northernmost point of Japan monument in Soya cape.jpg",
+          "sourceDescription": "A monument at the northernmost point of Japan at Cape Sōya, Hokkaidō.（日本最北端の地の碑）",
+          "takenAt": "2014-08-13",
+          "width": 3872,
+          "height": 2592,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為宗谷岬的日本最北端之地碑；晴天正面，碑文「日本最北端の地」可讀，背後是宗谷海峽。文章開頭就說岬上立著這座地碑，讀者到現場要找的就是它。",
+          "altDraft": "宗谷岬的日本最北端之地碑，三角形的石碑立在圓形台座上，背後是藍色的宗谷海峽",
+          "captionDraft": "宗谷岬的日本最北端之地碑（2014 年）。",
+          "creditDraft": "照片：Suicasmo／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "公共紀念碑",
+            "property": "公園內的公共紀念碑",
+            "risk": "low",
+            "notes": "畫面沒有人物、招牌或車輛；紀念碑位於公共場所。CC BY-SA：裁切後的封面也以 CC BY-SA 4.0 標示。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cape_Soya_(52357579785).jpg",
+          "creatorName": "Raita Futo",
+          "sourceTitle": "File:Cape Soya (52357579785).jpg",
+          "sourceDescription": "宗谷岬（Flickr 轉載，FlickreviewR 已確認 CC BY 2.0）",
+          "takenAt": "2022-07-26",
+          "width": 6963,
+          "height": 4642,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "exact",
+          "whyItFits": "檔案頁座標在宗谷岬，畫面為傍晚的日本最北端之地碑與海，沒有人物。",
+          "altDraft": "傍晚的宗谷岬，日本最北端之地碑映著夕陽",
+          "captionDraft": "傍晚的宗谷岬（2022 年）。",
+          "creditDraft": "照片：Raita Futo／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "公共紀念碑",
+            "property": "公園內的公共紀念碑",
+            "risk": "low",
+            "notes": "傍晚光線，搭路線巴士看不到這個時段（末班回程 15:20），只當備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
