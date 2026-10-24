@@ -92,6 +92,22 @@ function safeHref(value?: string) {
   }
 }
 
+// 訂房分潤平台的網域；連到這些網站的連結要標 sponsored，讓搜尋引擎知道是有分潤的連結。
+const AFFILIATE_HOSTS = ['trip.com', 'agoda.com']
+
+export function isAffiliateHref(href: string) {
+  try {
+    const host = new URL(href).hostname.toLowerCase()
+    return AFFILIATE_HOSTS.some((domain) => host === domain || host.endsWith(`.${domain}`))
+  } catch {
+    return false
+  }
+}
+
+function externalRel(href: string) {
+  return isAffiliateHref(href) ? 'sponsored noopener noreferrer' : 'noopener noreferrer'
+}
+
 function renderSpans(block: PortableTextBlock) {
   const definitions = new Map((block.markDefs ?? []).map((definition) => [definition._key, definition]))
 
@@ -107,7 +123,7 @@ function renderSpans(block: PortableTextBlock) {
           const href = safeHref(definitions.get(mark)?.href)
           if (href) {
             const external = href.startsWith('http')
-            html = `<a href="${escapeHtml(href)}"${external ? ' rel="noopener noreferrer"' : ''}>${html}</a>`
+            html = `<a href="${escapeHtml(href)}"${external ? ` rel="${externalRel(href)}"` : ''}>${html}</a>`
           }
         }
       }
