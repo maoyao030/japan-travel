@@ -13,7 +13,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 - 有核准的旅行群大綱（`content-planning/<區域>/<群>-outline.json` 或同內容的 MD）時，照大綱寫：H1／H2／H3 用大綱的版本（標題檢查仍可改措辭，不增刪標題、不改層級）；分工表裡本頁負責的事寫細節，只摘要的事一兩句帶過並連到負責頁；內連表裡從本頁出發的連結句都要寫進正文。研究發現大綱有誤或缺事實時停止，退回大綱，不自己改分工。
 - 同一位作者負責研究、文章計畫與全文，一次成稿。不拆成先鎖標題再填段落，也不安排第二位編輯潤飾。
 - 終點是 `content-production/<article-id>/reader-preview.md` 與研究記錄，交給 `$japan-travel-acceptance` 驗收。本 Skill 不做選題、不選圖、不寫入 Sanity、不發布、不 commit 或 push。
-- **寫作時只需要記住 [寫作指南](references/writing-guide.md) 與 [範例](references/examples.md)**，開工前先讀完這兩份。其他參考檔只在用到的步驟讀：研究讀 [日文資料](references/japanese-sources.md) 與 [研究記錄格式](references/research-record.md)；文章計畫讀 [保母等級檢查表](references/nanny-level.md)、[頁型與分工](references/page-types.md)、[嵌入與資料圖](references/embeds-and-data-blocks.md)；寫評論統整或客觀狀況讀 [評論與人氣](references/reviews-and-popularity.md)；標題檢查 agent 讀 [標題與 SEO 規範](references/heading-style.md)。
+- **寫作時只需要記住 [寫作指南](references/writing-guide.md) 與 [範例](references/examples.md)**，開工前先讀完這兩份。其他參考檔只在用到的步驟讀：研究讀 [日文資料](references/japanese-sources.md) 與 [研究記錄格式](references/research-record.md)；文章計畫讀 [保母等級檢查表](references/nanny-level.md)、[頁型與分工](references/page-types.md)、[嵌入與資料圖](references/embeds-and-data-blocks.md)；寫評論統整或客觀狀況讀 [評論與人氣](references/reviews-and-popularity.md)；寫住宿段落與訂房連結讀 [訂房分潤連結](references/affiliate-links.md)；標題檢查 agent 讀 [標題與 SEO 規範](references/heading-style.md)。
 
 ## 研究
 
@@ -72,7 +72,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 ### 住宿段落
 
-列出旅館時，每間寫清楚：房型或住宿型態、是否含餐、接駁、訂房管道（官網、Trip.com、Agoda、僅 Jalan）。只有官網或 Jalan 能訂的旅館放官網連結。住宿頁標示查核日期。
+列出旅館時，每間寫清楚：房型或住宿型態、是否含餐、接駁、訂房管道（官網、Trip.com、Agoda、僅 Jalan）。只有官網或 Jalan 能訂的旅館放官網連結。住宿頁標示查核日期。Trip.com 與 Agoda 的連結怎麼放、連結文字怎麼寫、揭露句放哪裡，照 [訂房分潤連結](references/affiliate-links.md)。
 
 ### 來源與連結
 

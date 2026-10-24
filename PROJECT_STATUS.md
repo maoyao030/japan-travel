@@ -1193,3 +1193,30 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 - 用量估計：前 4 輪一篇約用 5 小時額度 10%、每週額度約 1%，一天 5 篇約每週 35%，還要加上好材誌自己的用量。每輪開始前仍會檢查，週額度 80% 以上自動略過。
 - 自動寫作的分支 `auto/wakkanai-writing` 已快轉到 `main`，排定工作下一輪就會讀到新上限。
 - 唯一下一步：過兩三天看執行紀錄，確認每天真的完成 5 篇、週額度沒有逼近 80%。
+
+## 2026-10-24 Claude Code（地端）：Trip.com 聯盟規則寫進 Skill
+
+### Darren 的要求與決定
+
+- Darren 請 Claude Code 查 Trip.com 聯盟計畫怎麼運作，看完後要求把查到的東西都寫進規則。
+
+### 已完成
+
+- 新增寫作 Skill `references/affiliate-links.md`：Trip.com 佣金（住宿 5%–7%，依每月完成筆數）、只算住完的訂單、付款門檻 200 美元、約 40 到 60 個工作天入帳、禁止的推廣方式（品牌字搜尋廣告、臉書廣告、寫成 Ctrip）；文章裡哪些旅館放分潤連結、連結文字、揭露句、表格格子放不了連結所以連結寫在段落。查核日期 2026-10-24。
+- 寫作 Skill `SKILL.md` 的住宿段落與參考檔清單指向這份檔案；驗收的 `fact-check-contract.md` 多一條分潤連結檢查。
+- 網站：`src/lib/portableText.ts` 對 `trip.com`、`agoda.com` 的連結自動加 `rel="sponsored"`，新增 `tests/affiliate-links.test.ts`。
+
+### 已決定（暫定，Darren 可改）
+
+- 有分潤連結的文章，在第一個分潤連結前放一句揭露，全文只出現一次。
+
+### 尚未完成
+
+- Darren 還沒申請 Trip.com 與 Agoda 聯盟帳號；申請時要在條款確認文章的自然搜尋流量（SEO）可以推連結。
+- Agoda 的規則還沒整理（`affiliate-links.md` 的「Agoda」一節）。
+- 關於頁「內容怎麼產出與查證」寫的來源規則還是 2026-10-15 的版本（例如評論只引用榜單），與 2026-10-16 之後的來源分級不一致，之後另外更新。
+- 本機自動寫作從 `auto/wakkanai-writing` 讀 Skill，要等這次合併回 `main` 且該分支跟上後才會用到新規則。
+
+### 唯一下一步
+
+- Darren 到 Trip.com Partners 申請聯盟帳號。

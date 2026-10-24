@@ -188,3 +188,10 @@
 
 - 本段取代「本機自動寫作（Darren 2026-10-20 決定）」的篇數與時間：每天 5 篇，一輪仍只寫一篇，一天跑 5 輪，台北 01:42、04:42、10:42、13:42、20:42，和好材誌（00:12、08:12、16:12）至少錯開 1 個半小時。
 - 上限寫在 `article-queue.json` 的 `maxArticlesPerDay`；其他規則（先不上傳、不碰 Sanity 與 D1、啟用與暫停只由 Darren 決定）不變。
+
+## 訂房分潤連結（2026-10-24）
+
+- Trip.com 聯盟計畫的佣金、付款與禁止方式，以及文章裡怎麼放 Trip.com 與 Agoda 連結，寫在寫作 Skill `references/affiliate-links.md`；數字以申請後的後台為準，有變就改那份檔案。
+- 網站對 `trip.com` 與 `agoda.com` 的連結自動加 `rel="sponsored"`。
+- 本站不買廣告推分潤連結，只靠文章的自然搜尋流量。
+- 聯盟帳號由 Darren 申請與管理，Claude Code 不代填帳號與銀行資料。
