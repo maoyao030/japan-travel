@@ -1,0 +1,1025 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-sights",
+  "articleSha256": "fa90ef07213654f737bb6cdfcba44bd01198874eaa0f499d3856366d6ce0e6bf",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，非作者；第 2 輪複查 2026-10-24，curl 與 PyMuPDF 讀官方頁面與 PDF，時刻表轉圖逐格核對）",
+  "checkedAt": "2026-10-24",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "這些景點散在標高1,721公尺、別名「利尻富士」的利尻山山腳與海岸",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1396.htm",
+      "sourceTitle": "利尻山｜利尻富士町",
+      "sourceQuote": "標高1,721mの独立峰、別名「利尻富士」とも呼ばれ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "路線巴士繞島一圈約1小時45分到2小時15分",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "夏期 鬼脇経由 鴛泊ＦＴ 6:20→8:05、7:15→9:20、12:30→14:30、14:40→16:26、16:25→18:10；沓形経由 7:35→9:23、9:40→11:31、13:00→14:56、15:30→17:46、16:45→18:38；冬期 鬼脇経由 7:00→8:45、9:20→11:10、12:30→14:25、15:25→17:15；沓形経由 7:40→9:27、9:40→11:27、12:30→14:22、16:20→18:15",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）PDF 轉圖逐格核對後重算：最短 1小時45分，最長 2小時16分（夏季沓形経由 15:30→17:46），「約1小時45分到2小時15分」成立。第 1 輪的 incorrect 已解決。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "利尻島景點大多只在5月到10月開放，姬沼的步道、Otatomari沼與仙法志御崎公園都是",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/himenuma/",
+      "sourceTitle": "姫沼｜りしぷら",
+      "sourceQuote": "姫沼 営業期間 ５月〜１０月 定休日 １１月〜４月は閉鎖します／オタトマリ沼 営業期間 ５月〜１０月／仙法志御崎公園 営業期間 5月～10月",
+      "verdict": "verified",
+      "notes": "Otatomari沼見 /shima-place/otatomari/，仙法志見 /shima-place/senhoshi-misaki/，三頁都寫5月～10月。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "這三處都有路線巴士站牌",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "姫沼口（09）／オタトマリ沼（23）／御崎公園（28）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "這三處都有路線巴士站牌，定期觀光巴士利尻A路線也一趟繞完，2026年在5月3日到5日與5月20日到9月30日行駛",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "運行期間：2026年5月3日～5月5日、5月20日～9月30日まで ／ 利尻A … 鴛泊フェリーターミナル発～姫沼～野塚展望台（車窓）～オタトマリ沼～仙法志御崎公園～利尻空港～鴛泊フェリーターミナル着",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）第 1 輪的 incorrect 已解決。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "島分屬兩個町，北邊與東側的鴛泊、鬼脇是利尻富士町，西側與南側的沓形、仙法志是利尻町",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/",
+      "sourceTitle": "島の観光スポット｜りしぷら",
+      "sourceQuote": "TOP > 利尻富士町 > 鴛泊エリア ／ TOP > 利尻富士町 > 鬼脇エリア ／ TOP > 利尻町 > 沓形エリア ／ TOP > 利尻町 > 仙法志エリア",
+      "verdict": "verified",
+      "notes": "各景點頁麵包屑確認兩町與四區的歸屬；方位（北、東、西、南）屬地理位置，來源未逐字寫。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "渡輪靠岸的鴛泊港旁就是Peshi岬",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/peshi-misaki/",
+      "sourceTitle": "ペシ岬｜りしぷら",
+      "sourceQuote": "鴛泊港を象徴する標高９０mほどの巨大な岩山「ペシ岬」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "甘露泉水與Pon山則要從鴛泊這一側的登山口往上走",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/ponyama/",
+      "sourceTitle": "ポン山｜りしぷら",
+      "sourceQuote": "北麓野営場から片道１時間ほどで登れ、道中には甘露泉水…／（甘露泉水頁）利尻山の鴛泊登山ルート三合目付近にあります",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "只有半天又沒開車，姬沼、Otatomari沼與仙法志御崎公園最好排。路線巴士與觀光巴士利尻A路線都到得了",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "利尻A - 所要時間 / 3:10 … 鴛泊フェリーターミナル発～姫沼～野塚展望台（車窓）～オタトマリ沼～仙法志御崎公園～利尻空港～鴛泊フェリーターミナル着",
+      "verdict": "verified",
+      "notes": "路線巴士站牌見時刻表PDF（姫沼口、オタトマリ沼、御崎公園）。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "姬沼原本是三個沼，大正時代攔住湧水才合成一個，名字取自當年放養的姬鱒",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/himenuma/",
+      "sourceTitle": "姫沼｜りしぷら",
+      "sourceQuote": "大正時代に湧き水をせき止め、当時あった３つの沼をひとつにして姫沼ができました。ヒメマスを放流していたことがその名の由来です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "沼的周圍有一圈約1公里的步道，只在5月到10月開放（表格：開放期間5月～10月、步道周圍約1公里）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/himenuma/",
+      "sourceTitle": "姫沼｜りしぷら",
+      "sourceQuote": "姫沼の周囲には約１ｋｍの遊歩道が整備され ／ 営業期間 ５月〜１０月 定休日 １１月〜４月は閉鎖します",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "停車場裡有公廁，沼前有商店（表格：停車場公廁、沼前商店）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/himenuma/",
+      "sourceTitle": "姫沼｜りしぷら",
+      "sourceQuote": "駐車場敷地内に公衆トイレあり。姫沼前に売店あり。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "從姬沼還有一條探勝步道通往Pon山",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1398.htm",
+      "sourceTitle": "携帯トイレ｜利尻富士町",
+      "sourceQuote": "●姫沼ポン山探勝路（中間地点）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "路線巴士「姫沼口」站，從鴛泊渡輪站360日圓；觀光巴士利尻A路線",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/09_rishiri-line_fare02.pdf",
+      "sourceTitle": "利尻線 運賃表｜宗谷バス",
+      "sourceQuote": "鴛泊ﾌｪﾘｰﾀｰﾐﾅﾙ … 姫沼口 360（利尻線三角運賃表）",
+      "verdict": "verified",
+      "notes": "A路線經姬沼見定期観光バス頁。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "爬Pon山從北麓野營場出發，也就是利尻山鴛泊登山口所在的地方，單程約1小時",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/ponyama/",
+      "sourceTitle": "ポン山｜りしぷら",
+      "sourceQuote": "北麓野営場から片道１時間ほどで登れ",
+      "verdict": "verified",
+      "notes": "北麓野營場即鴛泊登山口：利尻富士町1399頁「鴛泊コース登山口（北麓野営場）」。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "往返約2到3小時，途中會經過甘露泉水",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/ponyama/",
+      "sourceTitle": "ポン山｜りしぷら",
+      "sourceQuote": "道中には甘露泉水や… ／ 所要時間 往復２～３時間程度",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "從鴛泊渡輪站走到北麓野營場是3.6公里、約60分鐘。從「温泉」巴士站走過去近一些，2.2公里、約40分鐘（沒車怎麼去表格同）",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
+      "sourceTitle": "登山口へのアクセス｜利尻富士町",
+      "sourceQuote": "鴛泊コース登山口（北麓野営場）までのアクセスです。●徒歩の場合 「フェリーターミナル」～ 3.6ｋｍ 約60分 「温泉バス停」～ 2.2ｋｍ 約40分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "姬沼往Pon山的探勝步道中途設有攜帶式廁所用的隔間，裡面沒有衛生紙",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1398.htm",
+      "sourceTitle": "携帯トイレ｜利尻富士町",
+      "sourceQuote": "●姫沼ポン山探勝路（中間地点） ※トイレットペーパーはありません。",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）「山上沒有一般的廁所」已刪除，not-stated 已解決。下一句「攜帶式廁所在哪裡買，見利尻山登山」是內連句。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "島上最大的湖沼是Otatomari沼，周長約1公里，繞著看一圈大約30分鐘（表格：參觀時間約30分鐘、開放期間5月～10月）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/otatomari/",
+      "sourceTitle": "オタトマリ沼｜りしぷら",
+      "sourceQuote": "周囲約１km。利尻島最大の湖沼です。／所要時間 ３０分程度／営業期間 ５月〜１０月",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "沼在島的東南、鬼脇一帶，路線巴士設有「オタトマリ沼」站",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/otatomari/",
+      "sourceTitle": "オタトマリ沼｜りしぷら",
+      "sourceQuote": "TOP > 利尻富士町 > 鬼脇エリア > オタトマリ沼 ／ 島の南東に位置する「オタトマリ沼」",
+      "verdict": "verified",
+      "notes": "站名見時刻表 PDF「オタトマリ沼（23）」。"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "沼畔的利尻富士町レストハウス只在觀光季營業，8:00到17:00",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/fuji-resthouse/",
+      "sourceTitle": "利尻富士町レストハウス｜りしぷら",
+      "sourceQuote": "オタトマリ沼の湖畔にある利尻富士町レストハウス／営業時間 8：00〜17：00 営業期間 観光シーズンのみ営業",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "伴手禮店利尻亀一從4月中旬開到10月下旬，9:00到17:00營業",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/kameichi/",
+      "sourceTitle": "利尻亀一｜りしぷら",
+      "sourceQuote": "オタトマリ沼にあるお土産店「利尻亀一」／営業時間 9：00～17：00 営業期間 4月中旬～10月下旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "搭觀光巴士在Otatomari沼下車時可以順便逛",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "利尻A …～オタトマリ沼～… 9:05発 → 12:15着／利尻B …～オタトマリ沼～… 13:45発→16:15着",
+      "verdict": "verified",
+      "notes": "A、B路線都停Otatomari沼，停靠時段在利尻亀一營業時間內。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "白色戀人之丘就是沼浦展望台，從鴛泊渡輪站開車約35分鐘，有可以停10台車的免費停車場（表格同）",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11368.html",
+      "sourceTitle": "白い恋人の丘（沼浦展望台）｜HOKKAIDO LOVE!",
+      "sourceQuote": "駐車場 10台、無料 アクセス ●車：鴛泊港フェリーターミナルから約35分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "在這裡求婚、拍下照片，帶到利尻富士町觀光協會，就能領到石屋製菓認可的「求婚證明書」",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/shiroi-koibito/",
+      "sourceTitle": "白い恋人の丘｜りしぷら",
+      "sourceQuote": "ここでプロポーズをしてその写真を撮影し、利尻富士町観光協会へ持参すると、石屋製菓公認の「プロポーズ証明書」が進呈されます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "展望台和Otatomari沼同在鬼脇的沼浦…11月上旬到隔年4月下旬封閉（表格與開放期間表同）",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11368.html",
+      "sourceTitle": "白い恋人の丘（沼浦展望台）｜HOKKAIDO LOVE!",
+      "sourceQuote": "休業日 11月上旬-4月下旬（冬季閉鎖）",
+      "verdict": "verified",
+      "notes": "りしぷら頁寫「営業期間 ５月〜１０月／１１月〜４月は閉鎖」，與北海道觀光機構頁大致一致。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "沒有自己的車，可以搭路線巴士到「オタトマリ沼」站，再用Google地圖確認能不能走上坡道，或直接搭計程車（表格「怎麼去」同）",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "オタトマリ沼（23）／（利尻富士町1399）・タクシー会社 富士ハイヤー りしりハイヤー",
+      "verdict": "verified",
+      "notes": "站牌到展望台的步行路線官方未寫，正文沒有寫成能走到，交給讀者用地圖確認，可接受。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "北海道點心「白色戀人」包裝上的那座山就是利尻山，石屋製菓選它，是因為積雪的樣子讓人聯想到歐洲的阿爾卑斯山",
+      "sourceUrl": "https://www.ishiya.co.jp/news/007022.html",
+      "sourceTitle": "「白い恋人」パッケージデザイン刷新｜石屋製菓",
+      "sourceQuote": "※利尻山：北海道の北部、利尻島にある山。積雪した姿がヨーロッパのアルプスの山並みに似ていることから洋菓子を象徴するものとして、パッケージに採用されています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "2026年12月起包裝逐步換新，利尻山改成更抽象的插畫，這個冬天買到的新舊包裝都有可能",
+      "sourceUrl": "https://www.ishiya.co.jp/news/007022.html",
+      "sourceTitle": "「白い恋人」パッケージデザイン刷新｜石屋製菓",
+      "sourceQuote": "パッケージデザインを2026年12月より順次刷新します ／ 象徴的な利尻山は、抽象度を上げたイラストにリニューアル",
+      "verdict": "verified",
+      "notes": "公告日期2026.10.13。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "南濱濕原長滿水苔，是島上最大的高層濕原，約1公里的步道走一圈大約30到40分鐘",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/minamihama/",
+      "sourceTitle": "南浜湿原｜りしぷら",
+      "sourceQuote": "ミズゴケが発達した島最大の高層湿原。約１kmの遊歩道があり ／ 所要時間 30～40分程",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "仙法志御崎公園在利尻島最南端，5月到10月開放，園內有公廁（表格：開放期間5月～10月）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/senhoshi-misaki/",
+      "sourceTitle": "仙法志御崎公園｜りしぷら",
+      "sourceQuote": "島の最南端に位置する自然公園 ／ 営業期間 5月～10月 ／ 公衆トイレあり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "園內有海豹池，餵斑海豹的時間約在6月到9月的8:00到17:00，飼料一份100日圓，在隔壁的「みさき物産」買。視狀況海豹也可能不在，5月和10月造訪時公園開著，但不一定餵得到（表格看點欄、開放期間表「仙法志御崎公園的餵海豹 6月～9月左右」同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-taiken/%E3%82%A2%E3%82%B6%E3%83%A9%E3%82%B7%E9%A4%8C%E3%82%84%E3%82%8A%E4%BD%93%E9%A8%93/",
+      "sourceTitle": "アザラシ（餌やり）｜りしぷら",
+      "sourceQuote": "アザラシプールでは、ゴマフアザラシに餌を与えることができます。餌の魚は、園内の物産店で販売しています。／営業時間 8:00〜17:00（餌やり） 営業期間 6月頃〜9月頃（状況により不在の場合あり）／餌100円（隣接する「みさき物産」で購入可）",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）期間、時間、價格、購買處、可能不在都已補，第 1 輪的 incorrect 已解決。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "人面岩、寢熊岩與北之嚴島弁天宮都在西海岸的仙法志，三處常一起看",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/bentengu/",
+      "sourceTitle": "北のいつくしま弁天宮｜りしぷら",
+      "sourceQuote": "利尻島の西海岸、仙法志エリアにあり、「寝熊の岩」「人面岩」とセットで観光する人が多く立ち寄る観光スポット ／ 駐車場 なし",
+      "verdict": "verified",
+      "notes": "「現場沒有停車場」已刪除。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "甘露泉水入選日本名水百選，位在利尻山鴛泊登山路線的3合目附近",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kanro-sensui/",
+      "sourceTitle": "甘露泉水｜りしぷら",
+      "sourceQuote": "日本名水百選の湧水「甘露泉水」は、利尻山の鴛泊登山ルート三合目付近にあります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "開車可以停在利尻北麓野營場，不過野營場10月17日到隔年5月14日冬季封閉（開放期間表同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kanro-sensui/",
+      "sourceTitle": "甘露泉水｜りしぷら",
+      "sourceQuote": "車で訪れる人は、「利尻北麓野営場」パーキングへ駐車しましょう。／10月17日～5月14日まで「利尻北麓野営場」は冬季閉鎖します。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "麗峰湧水在西海岸仙法志的道道108號旁，湧出的地下水可以自己裝走",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/reiho-yusui/",
+      "sourceTitle": "麗峰湧水｜りしぷら",
+      "sourceQuote": "伏流水は、持ち帰り自由。利尻島の西海岸、仙法志エリアの道道１０８号沿いにあります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "鴛泊港旁那座約90公尺高的岩山就是Peshi岬，5月到10月開放，是島上看日出的好地方（開放期間表同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/peshi-misaki/",
+      "sourceTitle": "ペシ岬｜りしぷら",
+      "sourceQuote": "鴛泊港を象徴する標高９０mほどの巨大な岩山「ペシ岬」。…ご来光の名所 ／ 営業期間 ５月〜１０月（雪が降るまで）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "步道又窄又陡，天氣不好的日子上去很危險",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/peshi-misaki/",
+      "sourceTitle": "ペシ岬｜りしぷら",
+      "sourceQuote": "遊歩道は道が細く急なため悪天候時は危険です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "鴛泊一帶的夕日之丘展望台，從停車場沿坡道往上走約5分鐘就到，5月到10月開放，下雪後關閉（開放期間表同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/yuuhigaoka/",
+      "sourceTitle": "夕日ヶ丘展望台｜りしぷら",
+      "sourceQuote": "TOP > 利尻富士町 > 鴛泊エリア > 夕日ヶ丘展望台 ／ 駐車場から展望台まで５分ほど坂道を登り ／ 営業期間 ５月〜１０月（雪が降るまで）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "鴛泊一帶的富士野園地長滿一大片萱草，花期在6月下旬到7月中旬，園地5月到10月開放（開放期間表同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/fujinoenti/",
+      "sourceTitle": "富士野園地｜りしぷら",
+      "sourceQuote": "エゾカンゾウの大群落地（６月下旬〜７月中旬）／営業期間 ５月〜１０月",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "這幾週島上的海岸與濕原也會被萱草染成一片橘色",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-flower/",
+      "sourceTitle": "島の花｜りしぷら",
+      "sourceQuote": "エゾカンゾウ ６月下旬～７月中旬 海岸や道路脇の草原、湿原に群落をつくり、一面をオレンジ色に染めます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "野塚展望台在鴛泊的野塚，道路對面的野塚駐輪駐車公園是利尻島自行車道的起點，也是看利尻山的地點之一",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/noduka-tenboudai/",
+      "sourceTitle": "野塚展望台｜りしぷら",
+      "sourceQuote": "施設名 野塚展望台・野塚駐輪駐車公園 ／ 住所 北海道利尻郡利尻富士町鴛泊野塚 ／ 道路を挟んで向かい側にある野塚駐輪駐車公園は、「利尻島サイクリングロード」のスタート地点であり、利尻山絶景スポットのひとつにもなっています。",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）第 1 輪建議的措辭已採用。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "觀光巴士利尻A路線會經過這裡，但只從車窗看（沒車怎麼去表格同）",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "姫沼～野塚展望台（車窓）～オタトマリ沼",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "自行車道11月上旬到隔年4月下旬冬季封閉（開放期間表同）",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11383.html",
+      "sourceTitle": "利尻島サイクリングロード｜HOKKAIDO LOVE!",
+      "sourceQuote": "休業日 11月上旬-4月下旬（冬季間閉鎖）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "沓形岬公園在沓形的富士見町，和利尻Fureai溫泉在同一區",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kutsugata-misaki/",
+      "sourceTitle": "沓形岬公園｜りしぷら",
+      "sourceQuote": "沓形岬公園 住所 北海道利尻郡利尻町沓形字富士見町 ／（ふれあい温泉頁）北海道利尻郡利尻町沓形字富士見町90",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "想登上園內的展望台，出發前打電話問利尻町觀光案內所0163-84-2349，或在鴛泊渡輪站的觀光案內所確認能不能上去",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-he-iku/",
+      "sourceTitle": "島へ行く｜りしぷら",
+      "sourceQuote": "利尻町観光案内所 TEL.0163-84-2349",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）封閉現況句已刪除，改成出發前確認，unsupported 已解決。2026-10-24 沒有找到解除或延長公告（りしぷら 6901 公告仍是 2025-08-22 版）。鴛泊渡輪站有觀光案內所見利尻富士町 1488 頁。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "Kamui Terrace在沓形的神居，是面海的觀景台，也是看夕陽的好去處，有公廁，參觀約20分鐘。開放期間大約是4月到11月，11月中旬到3月左右冬季封閉（開放期間表同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kamui-terrace/",
+      "sourceTitle": "カムイテラス｜りしぷら",
+      "sourceQuote": "TOP > 利尻町 > 沓形エリア > カムイテラス ／ 海に向かって突き出た展望デッキ ／ 夕陽スポットでもあり ／ 所要時間 20分 ／ 住所 利尻町沓形字神居149-2 ／ 営業期間 4月～11月頃 定休日 11月中旬から3月頃まで冬季閉鎖 ／ 公衆トイレあり",
+      "verdict": "verified",
+      "notes": "2026-10-24頁面仍是此期間。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "見返台園地在利尻山標高約500公尺的5合目，往返展望台約30到50分鐘",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/mikaeridai/",
+      "sourceTitle": "見返台園地｜りしぷら",
+      "sourceQuote": "利尻山の５合目（標高約５００m）にある展望台。…展望台へは未舗装の急な階段を往復します。／所要時間 30～50分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "5月中旬到10月中旬可以上去，冬天積雪封路（開放期間表同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/mikaeridai/",
+      "sourceTitle": "見返台園地｜りしぷら",
+      "sourceQuote": "営業期間 5月中旬～１０月中旬 ／ 冬期は積雪による道路閉鎖あり。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "5月中旬開放後，山麓還有殘雪，可以在這裡玩雪",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の季節｜りしぷら",
+      "sourceQuote": "５月・MAY … 利尻山裾野には雪が残り、見返台園地などでは雪遊びができます。",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）已改成 5 月中旬開放後。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "見返台也是沓形路線的登山口",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1397.htm",
+      "sourceTitle": "登山コース｜利尻富士町",
+      "sourceQuote": "見返台登山口が５合目にあり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "島上的住宿幾乎都有登山口接送，但只送自己這一區，鴛泊的住宿不會送到見返台，住沓形這一側比較有機會（表格：見返台園地 沓形一側住宿的登山口接送）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/tozan/",
+      "sourceTitle": "利尻山登山｜りしぷら",
+      "sourceQuote": "ほぼ全ての宿泊施設が送迎を行っております。(鴛泊→沓形登山口や沓形→鴛泊登山口までの送迎は行っておりません)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "利尻島鄉土資料館用的是1913年建成的舊鬼脇村公所，參觀約30分鐘",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kyoudo-siryoukan/",
+      "sourceTitle": "利尻島郷土資料館｜りしぷら",
+      "sourceQuote": "大正２年に建てられた旧鬼脇村役場庁舎 ／ 所要時間 30分程度",
+      "verdict": "verified",
+      "notes": "大正2年＝1913年。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "5月到10月開館，時間是9:00到17:00，週二與假日隔天休館，7月與8月無休。11月到隔年4月閉館（開放期間表同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kyoudo-siryoukan/",
+      "sourceTitle": "利尻島郷土資料館｜りしぷら",
+      "sourceQuote": "営業時間 9：00〜17：00 営業期間 ５月〜１０月 定休日 火曜、祝日の翌日（７月〜８月無休、１１月〜４月閉館）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "利尻町立博物館9:00到17:00開館，16:30停止入館，門票200日圓，高中生以下免費。週一、假日隔天與年底年初休館，另有臨時休館日，出發前看官網的開館日曆（開放期間表同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/choritu-hakubutukan/",
+      "sourceTitle": "利尻町立博物館｜りしぷら",
+      "sourceQuote": "営業時間 9:00〜17:00（入館16:30まで） 営業期間 臨時休館日・臨時開館日あり（…詳しくは、HPの「開館カレンダー」をご確認ください。） 定休日 月曜日、祝日の翌日、年末年始 ／ 入館料：200円（高校生以下無料）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "鴛泊的利尻Art & Visitor Center在5月1日到10月15日開館，時間是9:00到17:00，16:30停止入館。5月與10月每週一休館（開放期間表同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/art-visitor-center/",
+      "sourceTitle": "りしり アート ･ ビジターセンター｜りしぷら",
+      "sourceQuote": "営業時間 9：00 〜 17：00（ 入館16：30まで ） 営業期間 5月1日〜10月15日 定休日 毎日開館（ 5月と10月は月曜休館日 ）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "館內附設介紹利尻山登山的利尻山遊客中心。打算登山，出發前一天可以到這裡看看路線介紹",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/art-visitor-center/",
+      "sourceTitle": "りしり アート ･ ビジターセンター｜りしぷら",
+      "sourceQuote": "利尻山登山の前に知っておきたい知識や、より登山が楽しくなる情報を展示している利尻山ビジターセンターも複合しております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "利尻富士溫泉保養設施從中午營業到21:00，最後入場20:30，大人500日圓",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1204.htm",
+      "sourceTitle": "利尻富士温泉保養施設｜利尻富士町",
+      "sourceQuote": "正午～21時(最終受付20:30） ／ 大人（中学生以上） 500円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "旁邊的足湯6月到10月底免費，水溫約35°C",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1204.htm",
+      "sourceTitle": "利尻富士温泉保養施設｜利尻富士町",
+      "sourceQuote": "温泉プール「湯泳館」横に【足湯】が誕生しました。お湯の温度は源泉をそのままの、約35℃…利用期間は6月から10月末までとなっており、利用料金は無料",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）「就是源泉原本的溫度」已刪除。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "沓形的利尻Fureai溫泉全年營業，13:00到21:00，露天風呂只在5月到10月開放（開放期間表同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/hureai-onsen/",
+      "sourceTitle": "天然温泉 利尻ふれあい温泉｜りしぷら",
+      "sourceQuote": "営業時間 13：00～21：00（受付は20：30まで） 営業期間 通年（露天風呂は５月～１０月のみ） 定休日 なし",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "11月到隔年4月，利尻富士溫泉每週三休館，這天想泡湯就改去Fureai溫泉（開放期間表同）",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1204.htm",
+      "sourceTitle": "利尻富士温泉保養施設｜利尻富士町",
+      "sourceQuote": "毎日営業（11月～4月 毎週水曜休館日）",
+      "verdict": "verified",
+      "notes": "Fureai溫泉定休日なし（りしぷら）。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "5月到9月有定期觀光巴士，10月以後靠路線巴士與計程車",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "運行期間：2026年5月3日～5月5日、5月20日～9月30日まで ／（RISHIRI ACTIVITY）2026年度の営業は9月30日（水）で終了します",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）第 1 輪的 incorrect 已解決。嚴格說 5 月只有 3 日到 5 日與 20 日以後有車，下一段已寫明日期。"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "觀光巴士利尻A路線從鴛泊渡輪站出發…大人3,500日圓。6月1日到9月30日是9:05出發、12:15回到鴛泊，5月3日到5日與5月20日到31日提早到8:35出發、11:45回來",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "利尻A - 所要時間 / 3:10秀峰利尻富士めぐり 大人3,500円 ／ 5月3日～5月5日･5月20日～5月31日 8:35発 → 11:45着 ／ 6月1日～9月30日9:05発 → 12:15着",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "一趟繞過姬沼、Otatomari沼、仙法志御崎公園與利尻空港，野塚展望台從車窗看",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "鴛泊フェリーターミナル発～姫沼～野塚展望台（車窓）～オタトマリ沼～仙法志御崎公園～利尻空港（途中下車可能）～鴛泊フェリーターミナル着",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "利尻B路線只在6月1日到9月30日行駛，13:45從沓形渡輪站出發，16:15到鴛泊渡輪站，大人3,300日圓",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "利尻B - 所要時間 / 2:30利尻スポットめぐり 大人3,300円 … 6月1日～9月30日 13:45発(沓形FT)→ 16:15着(鴛泊FT)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "B路線6月到7月停利尻町立博物館，8月到9月改停利尻島鄉土資料館（沒車怎麼去表格同）",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "沓形フェリーターミナル発～※利尻町立博物館(6/1～7/31限定)～仙法志御崎公園～オタトマリ沼～※利尻町郷土資料館(8/1～9/30限定)～鴛泊フェリーターミナル着",
+      "verdict": "verified",
+      "notes": "宗谷巴士頁寫「利尻町郷土資料館」，應是利尻島郷土資料館（利尻富士町鬼脇）的筆誤；正文用正確名稱。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "從稚內搭船到鴛泊，要自己移動到沓形才搭得上B路線",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "※利尻Ｂコースの出発地点は『沓形フェリーターミナル』です。稚内からお越しになる場合は鴛泊フェリーターミナルから沓形フェリーターミナルへ各自で移動する必要がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "觀光巴士是預約制，乘車日前2個月開放預約，可以打電話或用「発車オーライネット」訂",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "定期観光バスは『予約制』です。予約は乗車日の『２か月前』から受付開始いたします。…お電話または発車オーライネットよりご予約願います。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "鴛泊渡輪站1樓的觀光案內所也能預約與買票",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/oshidomari-ft/",
+      "sourceTitle": "鴛泊港フェリーターミナル｜りしぷら",
+      "sourceQuote": "観光案内所、お土産店、フェリー発券窓口（出港の時間帯のみ営業）などが1階にあり、観光案内所では島を一周する「定期観光バス」の予約受付、チケット販売も行っています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "定期觀光巴士利尻A路線 2026年5月3日～5日、5月20日～9月30日；定期觀光巴士利尻B路線 6月1日～9月30日（開放期間表）",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "運行期間：2026年5月3日～5月5日、5月20日～9月30日まで ／ 利尻B … 6月1日～9月30日 13:45発(沓形FT)→ 16:15着(鴛泊FT)",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）A、B 已分列。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "路線巴士分成鴛泊出發經鬼脇繞島的「鬼脇経由」，以及反方向經沓形繞回鴛泊的「沓形経由」",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "Ａコース 鴛泊→鬼脇経由→鴛泊 Ｂコース 鴛泊→沓形経由→鴛泊",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "6月1日到9月30日的夏季各5班，10月1日到隔年5月31日的冬季各4班",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "夏期ダイヤ（6月1日～9月30日） A・Bコース 便1～5 ／ 冬期ダイヤ（10月1日～5月31日） A・Bコース 便1～4",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "每年1月1日到3日全部停駛",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
+      "sourceTitle": "利尻エリア 路線バス｜宗谷バス",
+      "sourceQuote": "1月1日～3日は年始により路線バスが全便運休となります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "坐滿一圈以上再買2,500日圓的一日券，它也不能用在觀光巴士",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
+      "sourceTitle": "利尻エリア 路線バス｜宗谷バス",
+      "sourceQuote": "【料金】大人2,500円 ／ 利尻島内路線バスに限り利用可能（定期観光バスは除く） ／（運賃表）最高 2550",
+      "verdict": "verified",
+      "notes": "重算：一整圈單程最高 2,550＞2,500，一圈以上買一日券划算，成立。"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "沓形、鴛泊、仙法志、鬼脇市區以外的路段可以舉手攔車、跟司機說要下車，但彎道、隧道與視線差的地方司機可能拒絕",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/29a5c2badb576f42ad4d4d9e07aefa7f.pdf",
+      "sourceTitle": "【利尻】自由乗降区間について｜宗谷バス",
+      "sourceQuote": "沓形、鴛泊、仙法志、⿁脇の市街地区間を除いた全区間 ／ バスが来たら手を挙げるなど乗車する合図を出してください。／ 降車したいことを口頭でお知らせください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "利尻町立博物館 觀光巴士利尻B路線，6月～7月停靠；利尻島鄉土資料館 觀光巴士利尻B路線，8月～9月停靠（沒車怎麼去表格）",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "※利尻町立博物館(6/1～7/31限定)～…～※利尻町郷土資料館(8/1～9/30限定)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "計程車只有鴛泊的富士ハイヤー與沓形的りしりハイヤー兩家，清晨不營業",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-he-iku/",
+      "sourceTitle": "島へ行く｜りしぷら",
+      "sourceQuote": "タクシー りしりハイヤー （利尻町・沓形） ／ タクシー 富士ハイヤー （利尻富士町・鴛泊）",
+      "verdict": "verified",
+      "notes": "りしぷら「島へ行く」與利尻富士町 1399 頁都只列這兩家；清晨不營業見 1399 頁「早朝の営業は行っておりません」。"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "租自行車可以找RISHIRI ACTIVITY，鴛泊與沓形都有租車點",
+      "sourceUrl": "https://rishiri-activity.com/bicycle/",
+      "sourceTitle": "レンタサイクル｜RISHIRI ACTIVITY",
+      "sourceQuote": "利尻島の沓形（くつがた）と鴛泊（おしどまり）の2拠点にサイクルポート（Bikeshare station）を設置しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "電動自行車5、6、9月一天4,000日圓起。7月與8月是5,500日圓起",
+      "sourceUrl": "https://rishiri-activity.com/bicycle/",
+      "sourceTitle": "レンタサイクル｜RISHIRI ACTIVITY",
+      "sourceQuote": "通常期（5,6,9,10月） BRIDGESTONE E-Assist-bike 電動 ¥4,000 /日 ／ 繁忙期（7〜8月） ¥5,500 /日",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）已刪除 10 月。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "這家只收線上付款、不收現金，借車要上傳護照",
+      "sourceUrl": "https://rishiri-activity.com/bicycle/",
+      "sourceTitle": "レンタサイクル｜RISHIRI ACTIVITY",
+      "sourceQuote": "お支払い：オンライン決済 ※ 現金不可 ／ 海外からお越しの方はパスポートをご用意ください。チェックイン時にスマートフォンで撮影してアップロード",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "2026年營業到9月30日（開放期間段「RISHIRI ACTIVITY的自行車租借2026年也在9月30日結束」同）",
+      "sourceUrl": "https://rishiri-activity.com/bicycle/",
+      "sourceTitle": "レンタサイクル｜RISHIRI ACTIVITY",
+      "sourceQuote": "2026年度の営業は9月30日（水）で終了します",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "利尻島景點大多在5月到10月開放，11月以後陸續封閉，多數要等到隔年4月下旬或5月才重新開放",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/",
+      "sourceTitle": "島の観光スポット｜りしぷら",
+      "sourceQuote": "（各景點頁）営業期間 ５月〜１０月 ／ １１月〜４月は閉鎖します；HOKKAIDO LOVE! 休業日 11月上旬-4月下旬",
+      "verdict": "verified",
+      "notes": "綜合姬沼、Otatomari沼、白色戀人之丘、富士野園地等頁。"
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "這些景點全部都開著的時段是5月中旬到10月中旬",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/mikaeridai/",
+      "sourceTitle": "見返台園地｜りしぷら",
+      "sourceQuote": "営業期間 5月中旬～１０月中旬 ／（甘露泉水頁）10月17日～5月14日まで「利尻北麓野営場」は冬季閉鎖 ／（Art & Visitor Center頁）営業期間 5月1日〜10月15日",
+      "verdict": "verified",
+      "notes": "重算：最晚開5/15（野營場）、最早關10/15（Art & Visitor Center 最後開館日），交集5/15～10/15，成立。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "見返台園地與北麓野營場開得最晚，利尻Art & Visitor Center與見返台園地關得最早",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/art-visitor-center/",
+      "sourceTitle": "りしり アート ･ ビジターセンター｜りしぷら",
+      "sourceQuote": "営業期間 5月1日〜10月15日 ／（見返台）営業期間 5月中旬～１０月中旬 ／（甘露泉水）10月17日～5月14日まで「利尻北麓野営場」は冬季閉鎖",
+      "verdict": "verified",
+      "notes": "（第 2 輪複查）重算：開得最晚 見返台 5 月中旬、野營場 5/15；關得最早 Art & Visitor Center 10/15、見返台 10 月中旬。成立，第 1 輪的 incorrect 已解決。"
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "不自己開車，6月到9月最好排，觀光巴士A、B兩條都在跑，兩條都只到9月30日",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "運行期間：…5月20日～9月30日まで ／ 利尻B 6月1日～9月30日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "10月景點多半還開著，但這兩樣都停了，移動改靠路線巴士與計程車",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
+      "sourceTitle": "利尻エリア 路線バス｜宗谷バス",
+      "sourceQuote": "冬期ダイヤ(10/1～5/31) ／（RISHIRI ACTIVITY）2026年度の営業は9月30日（水）で終了します",
+      "verdict": "verified",
+      "notes": "姬沼、Otatomari沼等5～10月開放，10月仍開；路線巴士冬季每路線4班。"
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "11月到隔年4月，沼與展望台大多封閉。這段時間還能去的有利尻町立博物館、全年營業的利尻Fureai溫泉，以及週三以外的利尻富士溫泉",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/choritu-hakubutukan/",
+      "sourceTitle": "利尻町立博物館｜りしぷら",
+      "sourceQuote": "定休日 月曜日、祝日の翌日、年末年始 ／（ふれあい温泉）営業期間 通年 ／（利尻富士温泉）毎日営業（11月～4月 毎週水曜休館日）",
+      "verdict": "verified",
+      "notes": "博物館頁沒有冬季閉館，但有臨時休館與年末年始休館。"
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "利尻島景點一覽表：姬沼、Pon山、甘露泉水、Peshi岬、夕日之丘展望台、富士野園地、野塚展望台、利尻Art & Visitor Center 在鴛泊；Otatomari沼、白色戀人之丘、南濱濕原、利尻島鄉土資料館在鬼脇；仙法志御崎公園、人面岩一帶、麗峰湧水、利尻町立博物館在仙法志；沓形岬公園、Kamui Terrace、見返台園地、利尻Fureai溫泉在沓形",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/",
+      "sourceTitle": "島の観光スポット｜りしぷら",
+      "sourceQuote": "各頁麵包屑：利尻富士町 > 鴛泊エリア（姫沼、ポン山、甘露泉水、ペシ岬、夕日ヶ丘展望台、富士野園地、野塚展望台、りしり アート･ビジターセンター）／利尻富士町 > 鬼脇エリア（オタトマリ沼、白い恋人の丘、南浜湿原、利尻島郷土資料館）／利尻町 > 仙法志エリア（仙法志御崎公園、北のいつくしま弁天宮、麗峰湧水、利尻町立博物館）／利尻町 > 沓形エリア（沓形岬公園、カムイテラス、見返台園地、天然温泉 利尻ふれあい温泉）",
+      "verdict": "verified",
+      "notes": "逐頁核對麵包屑全部一致。利尻富士溫泉一列寫「利尻富士町」（町名而非區名），不算錯。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "景點一覽表的日文名：姫沼、ポン山、オタトマリ沼、白い恋人の丘（沼浦展望台）、南浜湿原、仙法志御崎公園、人面岩、寝熊の岩、北のいつくしま弁天宮、甘露泉水、麗峰湧水、ペシ岬、夕日ヶ丘展望台、富士野園地、野塚展望台、沓形岬公園、カムイテラス、見返台園地、利尻島郷土資料館、利尻町立博物館、りしり アート･ビジターセンター、利尻富士温泉保養施設、利尻ふれあい温泉",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/",
+      "sourceTitle": "島の観光スポット｜りしぷら",
+      "sourceQuote": "（各頁施設名）姫沼／ポン山／オタトマリ沼／沼浦展望台（白い恋人の丘）／南浜湿原／仙法志御崎公園／北のいつくしま弁天宮（「寝熊の岩」「人面岩」）／甘露泉水／麗峰湧水／ペシ岬／夕日ヶ丘展望台／富士野園地／野塚展望台・野塚駐輪駐車公園／沓形岬公園／カムイテラス／見返台園地／利尻島郷土資料館／利尻町立博物館／りしり アート ･ ビジターセンター／利尻ふれあい温泉；（利尻富士町1204）利尻富士温泉保養施設",
+      "verdict": "verified",
+      "notes": "與原頁一致。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "路線巴士的站名是「姫沼口」，從站牌走到沼邊的路線與時間，下車前用Google地圖查好",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "姫　沼　口（09）",
+      "verdict": "verified",
+      "notes": "站牌到沼邊的距離官方未寫，正文沒有寫距離，可接受。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "北麓野營場10月17日到隔年5月14日冬季封閉，這段期間打算走Pon山，出發前到鴛泊渡輪站的觀光案內所確認（沒車怎麼去表格同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kanro-sensui/",
+      "sourceTitle": "甘露泉水｜りしぷら",
+      "sourceQuote": "10月17日～5月14日まで「利尻北麓野営場」は冬季閉鎖します。",
+      "verdict": "verified",
+      "notes": "觀光案內所見利尻富士町 1488 頁。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "展望台和Otatomari沼同在鬼脇的沼浦，從沼浦露營場入口旁的坡道往上，可以望見Otatomari沼後方的利尻山",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/shiroi-koibito/",
+      "sourceTitle": "白い恋人の丘｜りしぷら",
+      "sourceQuote": "オタトマリ沼の先にたたずむ利尻山や、日本海と北海道本土を望むことができ ／ 白い恋人の丘は、沼浦キャンプ場入口横の坂道を進んだ先にあり、車で上がることが出来ます。 ／ 住所 利尻富士町鬼脇沼浦",
+      "verdict": "verified",
+      "notes": "オタトマリ沼地址同為利尻富士町鬼脇沼浦。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "濕原在鬼脇的南浜，路線巴士也有「南浜」站，不開車可以用Google地圖查從站牌走過去的路線（沒車怎麼去表格同）",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "南　　　浜（Aコース、Bコース停留所）／（りしぷら南浜湿原）住所 利尻富士町鬼脇南浜",
+      "verdict": "verified",
+      "notes": "只證明有同名站，正文沒寫距離。"
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "弁天宮位在仙法志的久連，路線巴士也有「久連」站，沒車可以用Google地圖查從這站走過去的路線，或搭計程車（沒車怎麼去表格同）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/bentengu/",
+      "sourceTitle": "北のいつくしま弁天宮｜りしぷら",
+      "sourceQuote": "住所 〒097-0311 北海道利尻郡利尻町仙法志久連 ／（時刻表）久　　　連",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C95",
+      "articleExcerpt": "所在地是仙法志的神磯，路線巴士也有「神磯」站",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/reiho-yusui/",
+      "sourceTitle": "麗峰湧水｜りしぷら",
+      "sourceQuote": "住所 北海道利尻郡利尻町仙法志字神磯 ／（時刻表）神　　　磯",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C96",
+      "articleExcerpt": "夕日之丘展望台…沒車的話搭計程車前往",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
+      "sourceTitle": "登山口へのアクセス｜利尻富士町",
+      "sourceQuote": "・タクシー会社 富士ハイヤー ℡0163-82-1181 りしりハイヤー ℡0163-84-2252",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C97",
+      "articleExcerpt": "野塚展望台…路線巴士也有「野塚」站（沒車怎麼去表格同）",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "野　　　塚",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "資料館在鬼脇，觀光巴士利尻B路線8月到9月會停，路線巴士也有「鬼脇」站（表格同）",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "※利尻町郷土資料館(8/1～9/30限定) ／（時刻表）鬼　　　脇 ／（りしぷら）利尻富士町鬼脇257",
+      "verdict": "verified",
+      "notes": "宗谷巴士頁的「利尻町郷土資料館」應為利尻島郷土資料館的筆誤。"
+    },
+    {
+      "claimId": "C99",
+      "articleExcerpt": "博物館和仙法志御崎公園同在仙法志，觀光巴士利尻B路線6月到7月會停",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "※利尻町立博物館(6/1～7/31限定) ／（りしぷら）TOP > 利尻町 > 仙法志エリア > 利尻町立博物館",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C100",
+      "articleExcerpt": "夏天鴛泊13:00開的沓形経由路線巴士13:40停沓形渡輪站，車資860日圓。時刻表上的「沓形」是下一站的市區站牌，要在沓形渡輪站下車才接得上13:45的B路線",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "夏期 Bコース 第3便 鴛泊ＦＴ 13:00 … 種富町 13:35 → 沓形ＦＴ（45） 13:40 → 沓　形（44） 13:46 ／（運賃表）鴛泊ﾌｪﾘｰﾀｰﾐﾅﾙ～沓形ﾌｪﾘｰﾀｰﾐﾅﾙ 860 ／（コース一覧）利尻B 13:45発(沓形FT)",
+      "verdict": "verified",
+      "notes": "（第 3 輪）原圖逐格核對：沓形ＦＴ 13:40 的下一站就是「沓形」13:46；自由乗降 PDF 把沓形列為市街地區間，「市區站牌」可接受。另：夏季鬼脇経由第 3 班（鴛泊FT 12:30）13:44 也停沓形FT，可補。"
+    },
+    {
+      "claimId": "C101",
+      "articleExcerpt": "上午搭A路線、下午接B路線，一天就能把兩條繞完",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "定期観光バス コース一覧｜宗谷バス",
+      "sourceQuote": "利尻A 6月1日～9月30日9:05発 → 12:15着 ／ 利尻B 6月1日～9月30日 13:45発(沓形FT)",
+      "verdict": "verified",
+      "notes": "A 12:15 回鴛泊 → 路線巴士 13:00 鴛泊發 13:40 沓形FT → B 13:45 發，時刻表上成立（限 6～9 月）。"
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "車資付現金或PayPay，車上換零錢只收千圓鈔（路線巴士段）",
+      "sourceUrl": "http://www.soyabus.co.jp/qa",
+      "sourceTitle": "よくあるご質問｜宗谷バス",
+      "sourceQuote": "宗谷バス全般（共通） お支払いは現金又はキャッシュレス決済の場合PayPayがご利用いただけます。それ以外の方法は対応しておりません ※商品によってはPayPay決済の出来ない場合がございます ／ バス車内で両替可能な紙幣は千円札のみとなっております。",
+      "verdict": "verified",
+      "notes": "（第 3 輪）觀光巴士段「車資付現金或PayPay」已刪除，只剩路線巴士段這句。FAQ 註明部分商品不能用 PayPay。"
+    },
+    {
+      "claimId": "C103",
+      "articleExcerpt": "夏季鬼脇経由時刻表：鴛泊渡輪站發 6:20／7:15／12:30／14:40／16:25；姫沼口 6:25／7:20／12:35／14:45／16:30；オタトマリ沼 6:56／7:51／13:06／15:16／17:01；御崎公園 7:04／7:59／13:14／15:24／17:09；沓形 7:29／8:24／13:39／15:49／17:34；回到鴛泊渡輪站 8:05／9:20／14:30／16:26／18:10",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "夏期ダイヤ Aコース 鴛泊ＦＴ 6:20 7:15 12:30 14:40 16:25 ／ 姫沼口 6:25 7:20 12:35 14:45 16:30 ／ オタトマリ沼 6:56 7:51 13:06 15:16 17:01 ／ 御崎公園 7:04 7:59 13:14 15:24 17:09 ／ 沓形 7:29 8:24 13:39 15:49 17:34 ／ 鴛泊ＦＴ 8:05 9:20 14:30 16:26 18:10",
+      "verdict": "verified",
+      "notes": "2026-04-28 改正 PDF，用 PyMuPDF 以 220dpi 轉圖後逐格核對，全部一致。"
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "夏季沓形経由時刻表：鴛泊渡輪站發 7:35／9:40／13:00／15:30／16:45；沓形 8:15／10:21／13:46／16:36／17:28；御崎公園 8:39／10:45／14:10／17:00／17:52；オタトマリ沼 8:47／10:53／14:18／17:08／18:00；姫沼口 9:17／11:24／14:49／17:39／18:31；回到鴛泊渡輪站 9:23／11:31／14:56／17:46／18:38",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "夏期ダイヤ Bコース 鴛泊ＦＴ 7:35 9:40 13:00 15:30 16:45 ／ 沓形 8:15 10:21 13:46 16:36 17:28 ／ 御崎公園 8:39 10:45 14:10 17:00 17:52 ／ オタトマリ沼 8:47 10:53 14:18 17:08 18:00 ／ 姫沼口 9:17 11:24 14:49 17:39 18:31 ／ 鴛泊ＦＴ 9:23 11:31 14:56 17:46 18:38",
+      "verdict": "verified",
+      "notes": "2026-04-28 改正 PDF，用 PyMuPDF 以 220dpi 轉圖後逐格核對，全部一致。"
+    },
+    {
+      "claimId": "C105",
+      "articleExcerpt": "冬季鬼脇経由時刻表：鴛泊渡輪站發 7:00／9:20／12:30／15:25；姫沼口 7:05／9:25／12:35／15:30；オタトマリ沼 7:36／9:56／13:06／16:01；御崎公園 7:44／10:04／13:14／16:09；沓形 8:09／10:29／13:39／16:34；回到鴛泊渡輪站 8:45／11:10／14:25／17:15",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "冬期ダイヤ Aコース 鴛泊ＦＴ 7:00 9:20 12:30 15:25 ／ 姫沼口 7:05 9:25 12:35 15:30 ／ オタトマリ沼 7:36 9:56 13:06 16:01 ／ 御崎公園 7:44 10:04 13:14 16:09 ／ 沓形 8:09 10:29 13:39 16:34 ／ 鴛泊ＦＴ 8:45 11:10 14:25 17:15",
+      "verdict": "verified",
+      "notes": "2026-04-28 改正 PDF，用 PyMuPDF 以 220dpi 轉圖後逐格核對，全部一致。"
+    },
+    {
+      "claimId": "C106",
+      "articleExcerpt": "冬季沓形経由時刻表：鴛泊渡輪站發 7:40／9:40／12:30／16:20；沓形 8:17／10:17／13:12／17:05；御崎公園 8:41／10:41／13:36／17:29；オタトマリ沼 8:49／10:49／13:44／17:37；姫沼口 9:20／11:20／14:15／18:08；回到鴛泊渡輪站 9:27／11:27／14:22／18:15",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "冬期ダイヤ Bコース 鴛泊ＦＴ 7:40 9:40 12:30 16:20 ／ 沓形 8:17 10:17 13:12 17:05 ／ 御崎公園 8:41 10:41 13:36 17:29 ／ オタトマリ沼 8:49 10:49 13:44 17:37 ／ 姫沼口 9:20 11:20 14:15 18:08 ／ 鴛泊ＦＴ 9:27 11:27 14:22 18:15",
+      "verdict": "verified",
+      "notes": "2026-04-28 改正 PDF，用 PyMuPDF 以 220dpi 轉圖後逐格核對，全部一致。"
+    },
+    {
+      "claimId": "C107",
+      "articleExcerpt": "三處有站牌的景點，照兩種繞法整理成時刻表，夏季是6月1日到9月30日，冬季是10月1日到隔年5月31日",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "夏期ダイヤ（6月1日～9月30日） 冬期ダイヤ（10月1日～5月31日）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "夏天想在一個上午看完Otatomari沼與姬沼，可以搭鬼脇経由7:15那班到Otatomari沼，再搭沓形経由8:47那班回頭。在姫沼口下車看完姬沼，搭11:24那班回鴛泊",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "Aコース 鴛泊ＦＴ 7:15 → オタトマリ沼 7:51 ／ Bコース オタトマリ沼 8:47 → 姫沼口 9:17 ／ Bコース第2便 姫沼口 11:24 → 鴛泊ＦＴ 11:31",
+      "verdict": "verified",
+      "notes": "重算成立。"
+    },
+    {
+      "claimId": "C109",
+      "articleExcerpt": "要加上仙法志御崎公園，就搭沓形経由7:35那班，8:39到御崎公園，看完搭10:45那班到Otatomari沼。從Otatomari沼往鴛泊方向的下一班是14:18，中途經過姫沼口，空檔可以在沼畔的レストハウス吃東西",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "Bコース第1便 鴛泊ＦＴ 7:35 → 御崎公園 8:39 ／ 第2便 御崎公園 10:45 → オタトマリ沼 10:53 ／ 第3便 オタトマリ沼 14:18 → 姫沼口 14:49 → 鴛泊ＦＴ 14:56",
+      "verdict": "verified",
+      "notes": "時刻成立。補充：Otatomari沼要等約3小時25分（10:53→14:18）。鬼脇経由第3班 13:06 從Otatomari沼繞沓形回鴛泊、14:30到，比14:56早，但不經姫沼口；正文寫「往鴛泊方向、中途經過姫沼口的下一班」不算錯，可視需要補這個選項。レストハウス觀光季 8:00～17:00 營業。"
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "5月與10月用冬季時刻，同樣的排法是鬼脇経由7:00去Otatomari沼、沓形経由8:49回頭到姫沼口，再搭11:20那班回鴛泊",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表 2026年4月28日改正（利尻線）｜宗谷バス",
+      "sourceQuote": "冬期ダイヤ（10月1日～5月31日） Aコース 鴛泊ＦＴ 7:00 → オタトマリ沼 7:36 ／ Bコース オタトマリ沼 8:49 → 姫沼口 9:20 ／ 第2便 姫沼口 11:20 → 鴛泊ＦＴ 11:27",
+      "verdict": "verified",
+      "notes": "重算成立；5 月與 10 月確屬冬期ダイヤ。"
+    },
+    {
+      "claimId": "C111",
+      "articleExcerpt": "不想打日文電話，可以到鴛泊渡輪站1樓的觀光案內所詢問叫車",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/oshidomari-ft/",
+      "sourceTitle": "鴛泊港フェリーターミナル｜りしぷら",
+      "sourceQuote": "観光案内所、お土産店、フェリー発券窓口（出港の時間帯のみ営業）などが1階にあり",
+      "verdict": "verified",
+      "notes": "正文寫「詢問」，沒寫成一定代叫，可接受。"
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "從景點回程的車最好在去程時就和司機約好（建議句，依據為車行只有兩家、清晨不營業）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-he-iku/",
+      "sourceTitle": "島へ行く｜りしぷら",
+      "sourceQuote": "タクシー りしりハイヤー （利尻町・沓形） ／ タクシー 富士ハイヤー （利尻富士町・鴛泊）",
+      "verdict": "verified",
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "verified": 112,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}

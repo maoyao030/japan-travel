@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 1,
+  "articleId": "wakkanai-festival",
+  "articleSha256": "57d7adb2689d4028f8c1dcca72f24f685da162c3e5149d054877e3213ce1107a",
+  "checker": "事實查核 agent（Claude Opus 5.5，非作者、非潤稿者，唯讀查核；驗收後第1輪複查，2026-10-22 以 curl／WebFetch 開啟來源，PDF 下載到暫存資料夾讀取）",
+  "checkedAt": "2026-10-22",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "南極觀測隊的樺太犬太郎、次郎，故鄉就是稚內",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00020400/00020482/20260615172533.pdf",
+      "sourceTitle": "南極観測70周年記念パンフレット（稚内市）",
+      "sourceQuote": "稚内公園で訓練を受けた稚内出身の樺太犬「タロ」と「ジロ」／稚内は……樺太犬・タロとジロの故郷であり",
+      "verdict": "verified",
+      "notes": "市府手冊寫「稚内出身」，並在稚內公園受訓約8個月；出生與受訓都成立。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "稚內祭典裡，夏天的重頭戲是8月第一個週末的稚內港南極祭（稚内みなと南極まつり）",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "最北の街の短い夏を彩る一大イベント「稚内みなと南極まつり」は、例年8月の第1土日の2日間日程で開催されます。",
+      "verdict": "verified",
+      "notes": "第1輪 C2 已改：「重頭戲」對應官方「一大イベント」，不再寫「規模最大」。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "兩天裡有舞蹈遊行，也有約2,500發的煙火",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "北海てっぺんおどりと南極おどりの2つの踊りや、2,500発もの大花火大会、観光物産まつりやボートレースなどが行われます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "到了冬天，主角換成2月底在大沼舉行的犬橇大會，觀賽免費",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
+      "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "令和９年２月２７日（土）・２８日（日）　10：00～15：00／会場　稚内市大沼特設会場／料金　観戦無料",
+      "verdict": "verified",
+      "notes": "「2月底」對2027年（2/27～28）成立；2026年是2/21～22，不算月底，但正文此處講下一屆，可接受。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "夏天還有6月在JR稚內站前辦的白夜祭",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1409.html",
+      "sourceTitle": "日本最北端わっかない白夜祭｜イベント｜稚内観光協会",
+      "sourceQuote": "・階催場所　JR稚内駅前広場／・開催時間　６月19日（金）15：00～21：00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "以及7月4日到6日在中央商店街擺攤的北門神社祭",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1159.html",
+      "sourceTitle": "北門神社例大祭｜イベント｜稚内観光協会",
+      "sourceQuote": "「北門神社祭」は毎年7/4～7/6の日程で開催されます。約250店舗ほどの露店が中央アーケードを中心に並び",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "日期每年固定的是北門神社祭與南極祭，北門神社祭是7月4日到6日，南極祭是8月第一個週六、週日",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1159.html",
+      "sourceTitle": "北門神社例大祭｜イベント｜稚内観光協会",
+      "sourceQuote": "「北門神社祭」は毎年7/4～7/6の日程で開催されます。（南極まつり頁：例年8月の第1土日の2日間日程で開催されます。）",
+      "verdict": "verified",
+      "notes": "第1輪 C7 已改，不再寫「只有兩個」。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "2027年已經排出日期的，有2月27日到28日的犬橇大會與2月1日到28日的雪樂園，其他活動多半只定到月份或上、中、下旬",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
+      "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "令和９年２月２７日（土）・２８日（日）　10：00～15：00（雪樂園頁：2027年2月1日（月）～28日（日）の開催予定です。）",
+      "verdict": "verified",
+      "notes": "其他活動：スノーアタック「1月下旬頃」、氷雪の広場「2月」、白夜祭「6月中旬」、みなとコンサート「7月上旬」、平和マラソン「9月上旬」，皆只到月份或旬。北門神社祭頁另有「2027年7月4日（日）～6日（火）」，但屬每年固定，正文前句已交代，不衝突。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "表格：1月下旬｜大沼スノーアタック冰上駕駛體驗｜2027年預定1月下旬，結冰的大沼",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1163.html",
+      "sourceTitle": "大沼スノーアタック（氷上スタッドレス体験走行トライアル）｜イベント｜稚内観光協会",
+      "sourceQuote": "主に稚内市声問にある大沼で冬に結氷した氷上を利用したイベント「大沼スノーアタック」／2027年1月下旬頃の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "表格：2月｜犬橇大會｜2027年2月27日～28日，大沼特設會場",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
+      "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "開催期間　2027年2月27日（土）から2027年2月28日（日）／開催場所　大沼特設会場",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "表格：2月｜稚內冰雪廣場｜每年2月，中央公園與北臨港停車場",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1156.html",
+      "sourceTitle": "わっかない氷雪の広場｜イベント｜稚内観光協会",
+      "sourceQuote": "場所：中央公園・北臨港駐車場／開催期間　2027年2月の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "表格：2月｜雪樂園｜2027年預定2月1日～28日，宗谷ふれあい公園",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
+      "sourceTitle": "宗谷ふれあい公園スノーランド｜イベント｜稚内観光協会",
+      "sourceQuote": "開催期間　2027年2月1日（月）～28日（日）の開催予定です。開催場所　稚内市　北海道立宗谷ふれあい公園",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "表格：6月｜白夜祭｜2026年6月19日～20日，JR稚內站前廣場，2027年預定6月中旬",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1409.html",
+      "sourceTitle": "日本最北端わっかない白夜祭｜イベント｜稚内観光協会",
+      "sourceQuote": "６月19日（金）15：00～21：00　６月20日（土）10：00～16：00／開催期間　2027年6月中旬の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "表格：7月｜北門神社祭｜每年7月4日～6日，中央商店街",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1159.html",
+      "sourceTitle": "北門神社例大祭｜イベント｜稚内観光協会",
+      "sourceQuote": "「北門神社祭」は毎年7/4～7/6の日程で開催されます。約250店舗ほどの露店が中央アーケードを中心に並び",
+      "verdict": "verified",
+      "notes": "官方「開催場所」是北門神社，攤位在中央アーケード；表格只寫中央商店街略簡，不構成錯誤。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "表格：7月上旬｜WAKKANAI みなとコンサート｜2027年預定7月上旬",
+      "sourceUrl": "https://www.north-hokkaido.com/event/index_2_1______.html",
+      "sourceTitle": "イベント一覧｜稚内観光協会",
+      "sourceQuote": "WAKKANAI みなとコンサート　稚内市内　2027年7月上旬の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "表格：8月｜南極祭｜每年8月第一個週六、週日，中央商店街、北防波堤穹頂公園、副港市場一帶",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "例年8月の第1土日の2日間日程で開催されます。／開催場所　稚内市中央アーケード街周辺・北防波堤ドーム公園・稚内副港市場",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "表格：9月上旬｜和平馬拉松｜每年9月上旬",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1162.html",
+      "sourceTitle": "第10回日本最北端わっかない平和マラソン大会｜イベント｜稚内観光協会",
+      "sourceQuote": "2027年9月上旬の開催予定です。",
+      "verdict": "verified",
+      "notes": "2026年為9月6日（宗谷巴士 archives/8655）。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "表格：9月～10月｜Wakkanai Night & Light｜2026年9月1日～10月25日，北防波堤穹頂與稚內公園",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1403.html",
+      "sourceTitle": "Wakkanai Night ＆ Light｜イベント｜稚内観光協会",
+      "sourceQuote": "日　程：令和8年9月1日～10月25日　18:00～21:00／場　所：稚内港北防波堤ドーム／稚内公園円形花壇付近",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "2月是活動最集中的月份，犬橇大會、冰雪廣場、雪樂園都在這個月",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
+      "sourceTitle": "宗谷ふれあい公園スノーランド｜イベント｜稚内観光協会",
+      "sourceQuote": "雪樂園：2027年2月1日～28日予定；冰雪廣場（1156）：2027年2月の開催予定；犬橇大會（1158）：令和９年２月２７日・２８日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "2027年犬橇大會的2月27日、28日，也落在雪樂園的開放期間裡",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
+      "sourceTitle": "宗谷ふれあい公園スノーランド｜イベント｜稚内観光協会",
+      "sourceQuote": "2027年2月1日（月）～28日（日）の開催予定です。",
+      "verdict": "verified",
+      "notes": "2/27～28 在 2/1～28 之內。"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "夏天的北門神社祭與南極祭隔了將近一個月，要排進同一趟並不容易",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1159.html",
+      "sourceTitle": "北門神社例大祭｜イベント｜稚内観光協会",
+      "sourceQuote": "「北門神社祭」は毎年7/4～7/6の日程で開催されます。（南極まつり：例年8月の第1土日）",
+      "verdict": "verified",
+      "notes": "相隔26～32天，推算成立。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "南極祭固定在8月第一個週六、週日，2026年是8月1日到2日，已經辦到第63屆",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "「第63回稚内みなと南極まつり」について■ 開催日程　令和8年8月1日（土）～2（日）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "2027年預定在8月第一個週末",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "開催期間　2027年8月第１土日の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "除了北海てっぺんおどり、南極おどり兩種舞蹈遊行，還有物產展、划船比賽，以及約2,500發的大型煙火",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "北海てっぺんおどりと南極おどりの2つの踊りや、2,500発もの大花火大会、観光物産まつりやボートレースなどが行われます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "舞蹈遊行辦在第一天晚上，2026年是8月1日週六18:00開幕，北海てっぺんおどり跳到18:50，接著19:00到19:35是南極おどり",
+      "sourceUrl": "https://www.north-hokkaido.com/lsc/upfile/spot/0000/1411/1411_d002_file.pdf",
+      "sourceTitle": "第６3回稚内みなと南極まつり　実施要領（北海てっぺんおどり）",
+      "sourceQuote": "実施年月日 令和８年８月 1 日（土）……（３）開 会 式 午後６時００分……（５）踊 り 終 了 午後６時５０分（６）南 極 お ど り 午後７時００分（３５分間）",
+      "verdict": "verified",
+      "notes": "南極おどり要領（d003）另寫「南極おどり終了 午後７時３５分」。PDF 以 curl 下載、pdftotext 讀取。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "路線在站前大街到中央商店街的車道上，當天也安排了給個人參加的隊伍",
+      "sourceUrl": "https://www.north-hokkaido.com/lsc/upfile/spot/0000/1411/1411_d002_file.pdf",
+      "sourceTitle": "第６3回稚内みなと南極まつり　実施要領（北海てっぺんおどり）",
+      "sourceQuote": "おどりのコースは、駅前縦通り～中央商店街の“車道上”とし……※個人での参加については、当日個人参加用の梯団を用意しております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "遇到下雨，舞蹈遊行順延到週日，大型煙火則延到週一",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "※雨天時について、おどりイベントは２日（日）に延期　大花火大会は３日（月）に延期",
+      "verdict": "verified",
+      "notes": "實施要領也寫「雨天の場合は、翌日８月 2 日（日）に順延します。（開始時間等の変更はありません。）」。這是2026年第63回的規定。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "看完煙火隔天一早就要離開稚內的話，行程最好多留一晚的彈性，下雨時煙火會往後延",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "大花火大会は３日（月）に延期",
+      "verdict": "verified",
+      "notes": "建議依雨天順延規定推出，成立。"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "會場散在中央商店街、北防波堤穹頂公園與副港市場一帶",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "開催場所　稚内市中央アーケード街周辺・北防波堤ドーム公園・稚内副港市場",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "北防波堤穹頂離JR稚內站走路約5分鐘，住車站附近的話，走路就到得了穹頂公園這個會場",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1075.html",
+      "sourceTitle": "稚内港北防波堤ドーム｜観光スポット｜稚内観光協会",
+      "sourceQuote": "●徒歩：JR稚内駅から約5分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "舞蹈遊行那晚，站前一帶從17:00封路到21:00，宗谷巴士在這段時間改道，遇雨順延就改在週日",
+      "sourceUrl": "http://www.soyabus.co.jp/archives/8639",
+      "sourceTitle": "2026稚内みなと南極まつりに伴う運行経路変更のお知らせ | 宗谷バス株式会社",
+      "sourceQuote": "当日17時～21時の間、稚内駅前周辺で通行止めが発生します。バス運行経路に変更がございます……※イベントが順延になった場合は8/1(土)の経路変更は実施されません。翌日8/2(日)に同様の内容で経路変更が実施されます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "北門神社祭與和平馬拉松當天也有改道或折返的班次",
+      "sourceUrl": "http://www.soyabus.co.jp/archives/8655",
+      "sourceTitle": "わっかない平和マラソン2026の交通規制に伴う迂回運行等について | 宗谷バス株式会社",
+      "sourceQuote": "令和8年9月6日「わっかない平和マラソン」開催に伴う交通規制により、一部バス路線で折り返し運行又は迂回運行となる便がございます。",
+      "verdict": "verified",
+      "notes": "北門神社祭見 archives/8607：「２０２６年（令和８年）７月４・５・６日の三日間は北門神社祭の開催に伴い稚内駅前周辺で通行止めが発生します。バス運行経路及び一部のバス停位置に変更がございます」。北門神社祭是三天都改道，「當天」可接受。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "宗谷巴士首頁的公告標題會寫「運行経路変更」或「迂回運行」",
+      "sourceUrl": "http://www.soyabus.co.jp/",
+      "sourceTitle": "宗谷バス株式会社（お知らせ一覧）",
+      "sourceQuote": "2026稚内みなと南極まつりに伴う運行経路変更のお知らせ／2026北門神社祭に伴う運行経路変更のお知らせ／わっかない平和マラソン2026の交通規制に伴う迂回運行等について",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "煙火幾點放、在哪裡看最清楚，可以趁白天到JR稚內站相連的キタカラ1樓觀光案內所問，案內所開到18:00",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1200.html",
+      "sourceTitle": "稚内市観光案内所（キタカラ内）｜観光スポット｜稚内観光協会",
+      "sourceQuote": "北海道稚内市中央3丁目6-1キタカラ1階／営業時間　10:00～18:00／JR稚内駅直結キタカラ内1F",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "活動期間市區住宿容易客滿",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "（官方活動頁、實施要領與研究紀錄都沒有住宿客滿的資訊）",
+      "verdict": "unsupported",
+      "notes": "作者也確認找不到來源，句子一字未改，只搬到南極祭一節最後。複查：南極祭活動頁與兩份實施要領 PDF、犬橇、雪樂園、白夜祭、北門神社祭、Night & Light、和平馬拉松活動頁、宗谷巴士公告都沒有住宿客滿或訂房困難的說法；只有來源不明的個人網站，不合來源分級。照實判 unsupported，不放寬。建議改成不需事實支持的內連句，例如「南極祭那個週末想住車站附近，住宿怎麼挑見稚內住宿。」，或由規劃端修改大綱指定句。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "因為南極觀測的樺太犬太郎、次郎出身稚內",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00020400/00020482/20260615172533.pdf",
+      "sourceTitle": "南極観測70周年記念パンフレット（稚内市）",
+      "sourceQuote": "この隊には、稚内公園で訓練を受けた稚内出身の樺太犬「タロ」と「ジロ」を含む 22 頭も参加し",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "日本第一代南極觀測船「宗谷」號的名字也取自這裡的地名",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00020400/00020482/20260615172533.pdf",
+      "sourceTitle": "南極観測70周年記念パンフレット（稚内市）",
+      "sourceQuote": "稚内は……樺太犬・タロとジロの故郷であり、初代南極観測船「宗谷」の船名の由来にもなった地です。",
+      "verdict": "verified",
+      "notes": "第1輪 C33 已更正為「第一代南極觀測船」。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "南極祭就是從這段淵源來的，1961年開始辦",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
+      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "「稚内みなと南極まつり」の歴史は古く、昭和36年（1961）に南極ゆかりの地を題材に登場した「稚内南極まつり」と以前から行われていた「稚内みなとまつり」を母体としています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "犬橇大會的正式名稱是JAPAN CUP全国犬ぞり稚内大会，每年2月在大沼舉行，觀賽免費",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
+      "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "JAPAN CUP 全国犬ぞり稚内大会／開催場所　大沼特設会場／料金　観戦無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "2027年排在2月27日週六、28日週日，兩天都是從早上10點比到下午3點",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
+      "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "「JAPAN CUP 2027 第41回全国犬ぞり稚内大会」開催について・開催日程　令和９年２月２７日（土）・２８日（日）　10：00～15：00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "比賽辦在大沼的特設會場，不在市區，從JR稚內站開車約20分鐘，會場有200個免費車位",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
+      "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "開催場所　大沼特設会場／駐車場　200台、無料／●車：JR稚内駅から約20分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "沒開車的話，大會期間有從宗谷ふれあい公園開往會場的臨時接駁車",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
+      "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "●臨時シャトルバス：「ふれあい公園」～「大沼特設会場」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "接駁時刻與當天賽程會在確定後公布在觀光協會的活動頁",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
+      "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "・レース参加の実施要項及び当日のタイムスケジュール　※決まり次第改めてお知らせいたします。",
+      "verdict": "unsupported",
+      "notes": "官方頁只說「當天的時間表（タイムスケジュール）確定後再公布」，指的是賽程；沒有寫接駁車時刻會公布、也沒寫在哪裡公布。「當天賽程確定後公布」成立，「接駁時刻」沒有依據。建議刪掉「接駁時刻」，改成「當天賽程確定後會公布在觀光協會的活動頁」。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "在稚內站前巴士總站（稚内駅前バスターミナル）搭宗谷巴士的声問線，在「ふれあい公園」站下車",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_teiki_0405.pdf",
+      "sourceTitle": "宗谷バス 稚内営業所 定期バス時刻表（2026年4月5日改正）土曜日･日曜日･祝日用",
+      "sourceQuote": "声問線　ノシャップ～駅前ターミナル～養護学校（ふれあい公園）～声問～駅前ターミナル～ノシャップ行（停留所欄：駅前ターミナル③…養護学校／ふれあい公園）",
+      "verdict": "verified",
+      "notes": "時刻表停留所寫「駅前ターミナル」；「稚内駅前バスターミナル」見觀光協會雪樂園頁。站名「ふれあい公園」與時刻表一致。PDF 以 curl 下載後用 PyMuPDF 轉圖判讀（第2頁，土曜日･日曜日･祝日用）。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "週末經過ふれあい公園的班次一天10班，第一班8:29從站前巴士總站開出，最後一班17:51，坐到公園約30分鐘",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_teiki_0405.pdf",
+      "sourceTitle": "宗谷バス 稚内営業所 定期バス時刻表（2026年4月5日改正）土曜日･日曜日･祝日用",
+      "sourceQuote": "駅前ターミナル③ 8:29→ふれあい公園 8:57、10:01→10:30、11:11→11:40、11:57→12:26、12:43→13:12、13:52→14:21、15:01→15:30、15:47→16:16、16:33→17:02、17:51→18:19（※12 の7:35、18:56 便はふれあい公園「｜」通過；欄外「※印はふれあい公園に入りません」）",
+      "verdict": "verified",
+      "notes": "10班、首末班與28～29分鐘都核對成立。這是2026-04-05改正的時刻表，2027年2月大會時可能已改正；另外9/6馬拉松日声問線部分班次折返。交讀者驗收判斷是否補「出發前確認時刻表」。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "同一班車會繞一圈開回站前巴士總站，從公園回市區也是搭声問線",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_teiki_0405.pdf",
+      "sourceTitle": "宗谷バス 稚内営業所 定期バス時刻表（2026年4月5日改正）土曜日･日曜日･祝日用",
+      "sourceQuote": "声問線　ノシャップ～駅前ターミナル～養護学校（ふれあい公園）～声問～駅前ターミナル～ノシャップ行（ふれあい公園 8:57 → 駅前ターミナル② 9:27 等）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "宗谷巴士只收現金或PayPay",
+      "sourceUrl": "http://www.soyabus.co.jp/qa",
+      "sourceTitle": "よくあるご質問 | 宗谷バス株式会社",
+      "sourceQuote": "お支払いは現金又はキャッシュレス決済の場合PayPayがご利用いただけます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "ふれあい公園同時是雪樂園的場地，同一天看犬橇又玩雪樂園，排起來最順",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
+      "sourceTitle": "宗谷ふれあい公園スノーランド｜イベント｜稚内観光協会",
+      "sourceQuote": "開催場所　北海道立宗谷ふれあい公園内及び稚内大沼周辺（犬ぞり大会頁：臨時シャトルバス：「ふれあい公園」～「大沼特設会場」）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "犬橇大會的起點，是電影《南極物語》裡飾演太郎、次郎的狗被贈給稚內市，1984年3月辦了第1屆",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00020400/00020482/20260615172533.pdf",
+      "sourceTitle": "南極観測70周年記念パンフレット（稚内市）",
+      "sourceQuote": "映画『南極物語』では、作品にも登場するタロやジロを演じた犬たちが寄贈されたことを契機として、1984（昭和 59）年 3 月に第 1 回の犬ぞり大会が開催されました。",
+      "verdict": "verified",
+      "notes": "第1輪 C43 已更正。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "這幾隻是電影裡的演員犬，不是南極祭由來裡真正參加南極觀測的那兩隻樺太犬",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00020400/00020482/20260615172533.pdf",
+      "sourceTitle": "南極観測70周年記念パンフレット（稚内市）",
+      "sourceQuote": "タロやジロを演じた犬たち／第 1 次南極観測隊にはタロとジロを含む 22 頭が選ばれました。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "2027年的大會已經是第41屆",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
+      "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "「JAPAN CUP 2027 第41回全国犬ぞり稚内大会」開催について",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "稚內冰雪廣場每年2月在中央公園與北臨港停車場舉行，有輪胎滑雪道、小型雪雕，從JR稚內站走路約7分鐘",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1156.html",
+      "sourceTitle": "わっかない氷雪の広場｜イベント｜稚内観光協会",
+      "sourceQuote": "現在は、中央公園で開催され、チュービングや滑り台など……可愛らしいミニ雪像が展示されている／場所：中央公園・北臨港駐車場／JR稚内駅から徒歩約7分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "這個活動也是因《南極物語》而來，電影曾在稚內公園拍攝",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1156.html",
+      "sourceTitle": "わっかない氷雪の広場｜イベント｜稚内観光協会",
+      "sourceQuote": "稚内公園でロケが行われた「南極物語」に因み、\"南極大陸\"をイメージした冬の一大イベントとして開催されたのが始まり。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "冬天其他幾個活動都在大沼或ふれあい公園，要搭車才到得了，冰雪廣場是沒租車也最容易排進行程的一個",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1156.html",
+      "sourceTitle": "わっかない氷雪の広場｜イベント｜稚内観光協会",
+      "sourceQuote": "JR稚内駅から徒歩約7分（犬ぞり大会：車でJR稚内駅から約20分；スノーアタック：大沼氷上特設会場）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "宗谷ふれあい公園的雪樂園，2027年也預定從2月1日開到28日，2026年那屆是每天10:00到16:00",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
+      "sourceTitle": "宗谷ふれあい公園スノーランド｜イベント｜稚内観光協会",
+      "sourceQuote": "2026年 2 月 1 日（日）から2026年 2 月 28 日（土）午前１０：００～午後４：００／2027年2月1日（月）～28日（日）の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "雪上車拉著跑的箱型雪橇坐一趟20分鐘，大人500日圓、小學生300日圓",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
+      "sourceTitle": "宗谷ふれあい公園スノーランド｜イベント｜稚内観光協会",
+      "sourceQuote": "【遊覧雪上車】 雪上車の牽引する箱型ソリに乗って周遊走行　所要時間約 20 分……体 験 料 金：大人５００円 小学生３００円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "雪鞋、越野滑雪與胖胎單車則免費",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
+      "sourceTitle": "宗谷ふれあい公園スノーランド｜イベント｜稚内観光協会",
+      "sourceQuote": "【スノーシュー】……無料（用具貸出も全て無料）【歩くスキー】……無料【ファットバイク】……無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "另有要預約的雪鞋導覽團，每人1,000日圓",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
+      "sourceTitle": "宗谷ふれあい公園スノーランド｜イベント｜稚内観光協会",
+      "sourceQuote": "【スノーシューガイド付ツアー】事前予約制……体 験 料 金：お1人様1,000 円（用具、保険料込み）",
+      "verdict": "verified",
+      "notes": "費用、預約制都是2026年資訊。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "2026年2月起還多了觀光周遊巴士，從稚內站前、稚內機場出發，經過宗谷岬再開到雪樂園",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
+      "sourceTitle": "宗谷ふれあい公園スノーランド｜イベント｜稚内観光協会",
+      "sourceQuote": "2月1日開催日からは稚内駅前・稚内空港から宗谷岬経由で周遊観光バスが運行いたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "1月下旬還有大沼スノーアタック，能在結冰的大沼上體驗冰上駕駛",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1163.html",
+      "sourceTitle": "大沼スノーアタック（氷上スタッドレス体験走行トライアル）｜イベント｜稚内観光協会",
+      "sourceQuote": "大沼で冬に結氷した氷上を利用したイベント「大沼スノーアタック」／2027年1月下旬頃の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "6月的白夜祭在車站前廣場，7月初的北門神社祭在中央商店街，兩場都在市區",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1409.html",
+      "sourceTitle": "日本最北端わっかない白夜祭｜イベント｜稚内観光協会",
+      "sourceQuote": "階催場所　JR稚内駅前広場（北門神社祭頁：露店が中央アーケードを中心に並び）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "日本最北端稚內白夜祭辦在夏至前後，主場是JR稚內站前廣場的啤酒花園",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1409.html",
+      "sourceTitle": "日本最北端わっかない白夜祭｜イベント｜稚内観光協会",
+      "sourceQuote": "日本でもっとも日が長くなる稚内の夏至。今年もキタカラを中心に「日本最北端わっかない白夜祭」が開催されます！○白夜祭ビアガーデン……階催場所　JR稚内駅前広場",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "2026年第一天6月19日從15:00開到21:00，第二天6月20日是10:00到16:00",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1409.html",
+      "sourceTitle": "日本最北端わっかない白夜祭｜イベント｜稚内観光協会",
+      "sourceQuote": "・開催時間　６月19日（金）15：00～21：00　６月20日（土）10：00～16：00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "2027年預定在6月中旬",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1409.html",
+      "sourceTitle": "日本最北端わっかない白夜祭｜イベント｜稚内観光協会",
+      "sourceQuote": "開催期間　2027年6月中旬の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "6月野寒布岬要到19:18至19:26才日落，第一天的啤酒花園開到21:00，日落後還開著",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1082.html",
+      "sourceTitle": "ノシャップ岬｜観光スポット｜稚内観光協会",
+      "sourceQuote": "日の入り時刻表……6月　19:18～19:26",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "白夜祭的週末還有白夜映画祭，2026年從6月20日放映到21日，場地是キタカラ2樓的電影院T・ジョイ稚內",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1409.html",
+      "sourceTitle": "日本最北端わっかない白夜祭｜イベント｜稚内観光協会",
+      "sourceQuote": "○白夜映画祭……・開催場所　Ｔ・ジョイ稚内（キタカラ２階）・開催時間　６月20日（土） 9：00から上映開始、６月21（日）18：15上映終了",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "特別上映的是在稚內取景的《南極物語》，預售票大人1,000日圓",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1409.html",
+      "sourceTitle": "日本最北端わっかない白夜祭｜イベント｜稚内観光協会",
+      "sourceQuote": "特別上映作品に、南極観測70周年協賛事業として、本市でもロケが行われた『南極物語』を上映する……【前売券】大人1,000円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "キタカラ和車站連在一起，下了火車就走得到啤酒花園與電影院",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1200.html",
+      "sourceTitle": "稚内市観光案内所（キタカラ内）｜観光スポット｜稚内観光協会",
+      "sourceQuote": "JR稚内駅直結キタカラ内1F",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "北門神社例大祭一般叫北門神社祭，每年固定在7月4日到6日，中央商店街會擺出約250個攤位",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1159.html",
+      "sourceTitle": "北門神社例大祭｜イベント｜稚内観光協会",
+      "sourceQuote": "北門神社例大祭／日本最北端の鎮守である「北門神社祭」は毎年7/4～7/6の日程で開催されます。約250店舗ほどの露店が中央アーケードを中心に並び",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "5日的神轎從北門神社出發繞行市區，6日御座船載著神轎出海，到野寒布岬一帶的恵山泊漁港祈求平安與漁獲",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1159.html",
+      "sourceTitle": "北門神社例大祭｜イベント｜稚内観光協会",
+      "sourceQuote": "5日本祭は北門神社から市内を巡る神輿渡御が行われます。……6日は底曳船が海上安全祈願祭を行った後、御神輿を乗せた御座船を先頭に、大漁旗を掲げてノシャップにある恵山泊漁港にて安全大漁祈願が行われます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "2027年的4日是週日，5日、6日落在週一、週二",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1159.html",
+      "sourceTitle": "北門神社例大祭｜イベント｜稚内観光協会",
+      "sourceQuote": "開催期間　2027年7月4日（日）～6日（火）の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "2026年的Wakkanai Night & Light從9月1日點到10月25日。每晚18:00到21:00，北防波堤穹頂與稚內公園都會打上燈",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1403.html",
+      "sourceTitle": "Wakkanai Night ＆ Light｜イベント｜稚内観光協会",
+      "sourceQuote": "日　程：令和8年9月1日～10月25日　18:00～21:00　※9月1日（火）は19:30から開始",
+      "verdict": "verified",
+      "notes": "穹頂會場首日19:30才開始，正文未註；影響小，作者決定不補。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "9月的每個週五、週六，穹頂還有啤酒花園",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1403.html",
+      "sourceTitle": "Wakkanai Night ＆ Light｜イベント｜稚内観光協会",
+      "sourceQuote": "9月の毎週金・土曜日は北防波堤ドーム会場にて稚内市料理飲食店組合によるビアガーデンが開催されます！",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "穹頂離車站近，晚上才到稚內也走得過去",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1075.html",
+      "sourceTitle": "稚内港北防波堤ドーム｜観光スポット｜稚内観光協会",
+      "sourceQuote": "●徒歩：JR稚内駅から約5分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "日本最北端稚內和平馬拉松每年9月上旬舉行，2018年起多了全馬組",
+      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1162.html",
+      "sourceTitle": "第10回日本最北端わっかない平和マラソン大会｜イベント｜稚内観光協会",
+      "sourceQuote": "平成30年からフルマラソンの部を新設し「日本最北端わっかない平和マラソン」としして開催されています。／2027年9月上旬の開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "9月上旬去，馬拉松、點燈與週末的啤酒花園可能碰在同一週",
+      "sourceUrl": "http://www.soyabus.co.jp/archives/8655",
+      "sourceTitle": "わっかない平和マラソン2026の交通規制に伴う迂回運行等について | 宗谷バス株式会社",
+      "sourceQuote": "令和8年9月6日「わっかない平和マラソン」開催に伴う交通規制",
+      "verdict": "verified",
+      "notes": "2026年馬拉松9/6（日），點燈9/1起，啤酒花園9月每週五六。"
+    }
+  ],
+  "summary": {
+    "verified": 74,
+    "incorrect": 0,
+    "unsupported": 2,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}

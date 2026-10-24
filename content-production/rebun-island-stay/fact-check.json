@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island-stay",
+  "articleSha256": "c79cd50a51ba4638948be07b37c89584f93735278cd5ae064cd1a5a213efef4b",
+  "checker": "獨立事實查核 agent（Claude Opus 5.5，非作者，唯讀）。第 2 輪複查（驗收後第 1 輪修改版），2026-10-23 以 curl、WebFetch 與瀏覽器實際打開來源，逐句重新比對整篇。礼文島観光協会 rebun-island.jp 2026-10-23 再試仍連不上（curl 逾時），rebun-trail.jp 仍是 Coming soon（503），ハートランドフェリー WEB 予約站仍導向 maintenance.html。觀光協會的事實改用 Internet Archive 存檔核對（住宿清單 2025-05-22、中文頁 2026-06-17、交通頁 2026-10-07、ぶらりMAP 2026-02-15），只採用存檔文字與研究記錄一致的項目；修改版已不再引用存檔與官網不一致的價格。Trip.com 與 Agoda 於 2026-10-23 用瀏覽器打開（Trip.com 礼文町搜尋展開滿房旅館後共 8 家）。PDF 下載到系統暫存資料夾讀取，未在瀏覽器點任何下載。",
+  "checkedAt": "2026-10-23",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "禮文島住宿集中在兩處，島南端有渡輪站的香深，以及島北邊的船泊。",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "香深（かふか）:礼文島の南側の地域・フェリーターミナルがあります。／船泊（ふなどまり）:礼文島の北側の地域です。",
+      "verdict": "verified",
+      "notes": "官網連不上，用 Wayback 2025-05-22 存檔；文字與研究記錄 2026-10-16 摘錄一致。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "禮文島觀光協會的住宿清單上有9家，香深6家、船泊3家。",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "香深：礼文観光ホテル咲涼-Saryo-、ホテル礼文、花れぶん、民宿きりり、ペンション　う～に～、民宿はな心／船泊：ホテル礼文荘、民宿海憧、星観荘（ユースホステル形式）",
+      "verdict": "verified",
+      "notes": "Wayback 存檔逐筆數過，與研究記錄一致。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "旅館官網寫了價格的幾家裡，附2餐從星觀莊多人房的每人7,500日圓起，其他幾家的價格要在訂房時用電話或信箱問。",
+      "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
+      "sourceQuote": "・1泊夕・朝食付き：7,500円 + 100円(北海道宿泊税)",
+      "verdict": "verified",
+      "notes": "重算：官網有附 2 餐價格的是星観荘 7,500、はな心冬季 9,900（夏季 12,500 税別）、礼文荘 13,500；民宿スコトン岬不供餐。最低是星観荘 7,500（另加住宿稅 100）。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "禮文敦盛草（レブンアツモリソウ）在5月下旬到6月中旬開花／禮文敦盛草每年大約5月下旬到6月中旬開花，群生地也配合花期開放。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11408.html",
+      "sourceTitle": "レブンアツモリソウ群生地｜HOKKAIDO LOVE!",
+      "sourceQuote": "例年5月下旬から6月中旬頃の開花期に合わせて会場が公開されます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "有的民宿前一年11月就開放隔年5月以後的訂房，船票卻要到乘船日2個月前才能訂。",
+      "sourceUrl": "https://pensionuni.main.jp/2026/10/10/%e3%80%90%e6%9d%a5%e3%82%b7%e3%83%bc%e3%82%ba%e3%83%b3%ef%bc%882027%e5%b9%b45%e6%9c%88%e4%bb%a5%e9%99%8d%ef%bc%89%e3%81%ae%e3%81%94%e4%ba%88%e7%b4%84%e5%8f%97%e4%bb%98%e3%81%ab%e3%81%a4%e3%81%84/",
+      "sourceTitle": "【来シーズン（2027年5月以降）のご予約受付について】 - ペンションうーにーHP",
+      "sourceQuote": "2027年5月以降のご宿泊予約につきましては、 2026年11月中旬頃 より受付開始を予定しております。",
+      "verdict": "verified",
+      "notes": "月份正確。原文是「予定」，開頭這句寫成「就開放」，正文第二節有寫「預定」；建議開頭也加「預定」，不影響事實判定。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "船票卻要到乘船日2個月前才能訂。／渡輪在乘船日2個月前的同一天開放預約",
+      "sourceUrl": "https://heartlandferry.jp/about_reservation/",
+      "sourceTitle": "ご予約について｜ハートランドフェリー",
+      "sourceQuote": "ご予約受付開始は、ご乗船日の２ヶ月前の同日からとなります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "港口正對面的禮文飯店下船走1分鐘就到。",
+      "sourceUrl": "https://hotel-rebun.jp/",
+      "sourceTitle": "HOTEL REBUN ホテル礼文",
+      "sourceQuote": "香深フェリーターミナルより 徒歩1分 （目の前）です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "島上的餐廳大多在香深港一帶，但島上唯一一家便利商店離香深有段距離。觀光協會也建議，買東西盡量在香深港的超市與商店買。",
+      "sourceUrl": "https://web.archive.org/web/20260617224255/https://www.rebun-island.jp/KYOsan/KYOsanAREKORE.html",
+      "sourceTitle": "礼文島あれこれ｜礼文島観光協会（繁體中文頁）",
+      "sourceQuote": "島上的餐廳大部分聚集在南部的香深港…島上唯一的超商距離鄉紳有一段距離，所以還是建議大家多多利用香深港的超市及商店喔！",
+      "verdict": "verified",
+      "notes": "官網連不上，用 Wayback 2026-06-17 存檔；原文是中文，「鄉紳」為「香深」錯字。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "渡輪站走路約3分鐘就有禮文島溫泉薄雪之湯，4月到9月開到晚上10點。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
+      "sourceTitle": "礼文島温泉 うすゆきの湯｜HOKKAIDO LOVE!",
+      "sourceQuote": "●徒歩：香深港フェリーターミナルから約3分／12:00-22:00（4-9月）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "夏天搭14:50從稚內出發、16:45到港的船，下船後還來得及去泡湯。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 稚内発～香深着 14:50～16:45",
+      "verdict": "verified",
+      "notes": "16:45 到港，溫泉 4～9 月開到 22:00。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "船泊在島的北側，觀光協會清單上的3家都有接送，從香深港開車25到40分鐘。",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "船泊（ふなどまり）:礼文島の北側の地域です。／ホテル礼文荘 送迎あり 車で約30分／民宿海憧 送迎あり 車25分／星観荘 送迎あり 車で約40分",
+      "verdict": "verified",
+      "notes": "Wayback 存檔，與研究記錄一致。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "接送配合的船班各家不同，訂房時寫明搭哪一班船到香深港，請旅館確認能不能接。",
+      "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
+      "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
+      "sourceQuote": "送迎 8：45と16：40着の稚内便に合わせて運行予定、事前連絡が必要です。一名様の場合は出来ないこともあります",
+      "verdict": "verified",
+      "notes": "星観荘官網「稚内港発着フェリーの始発便と最終便に合わせて、港まで送迎」，海憧（清單存檔）「行き帰りは無料送迎」，三家條件確實不同。"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "澄海岬就在船泊的西上泊，從香深港過去要開50分鐘左右",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10388.html",
+      "sourceTitle": "澄海岬｜HOKKAIDO LOVE!",
+      "sourceQuote": "北海道礼文郡礼文町船泊西上泊／●車：香深港フェリーターミナルから約50分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "到島最北端的須古頓岬約60分鐘。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10389.html",
+      "sourceTitle": "スコトン岬｜HOKKAIDO LOVE!",
+      "sourceQuote": "スコトン岬は、礼文島最北端に位置する代表的な岬です。／●車：香深港フェリーターミナルから約60分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "渡輪站到須古頓單程1,400日圓，一天來回就是2,800日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
+      "sourceTitle": "普通旅客運賃表　礼文線(2)　香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)スコトン間",
+      "sourceQuote": "香深ﾌｪﾘｰﾀｰﾐﾅﾙ欄 スコトン「1,400」「30.3」",
+      "verdict": "verified",
+      "notes": "PDF 轉圖逐格核對；大人票價，1,400×2＝2,800。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "自己開車的話，香深吃飯買東西方便，船泊離北邊的岬角近，看行程重心選就好。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10389.html",
+      "sourceTitle": "スコトン岬｜HOKKAIDO LOVE!",
+      "sourceQuote": "北海道礼文郡礼文町船泊順古頓／●車：香深港フェリーターミナルから約60分",
+      "verdict": "verified",
+      "notes": "由 C8（餐廳與商店在香深）、C13、C14（北邊岬角在船泊一帶、離香深 50～60 分）推得。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "禮文莊與民宿海憧都附2餐，晚上不必回香深找餐廳。",
+      "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
+      "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
+      "sourceQuote": "・店主お勧めのプラン　1泊2食付き　 税込み価格　13,500円",
+      "verdict": "verified",
+      "notes": "海憧清單存檔「(2食付、税込）」。礼文荘另有只含早餐方案，表格已寫。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "2026年群生地的木道區與展望區從5月15日開放。",
+      "sourceUrl": "https://www.rinya.maff.go.jp/hokkaido/koho/blog/rebun_Is/2026/2605.html",
+      "sourceTitle": "礼文島発！GSS活動日誌(2026) 2026年5月｜北海道森林管理局",
+      "sourceQuote": "今年度は木道エリアと展望エリアが5月15日から一般開放されています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "花季的房間，最好在旅館一開放訂房就訂下來，有的旅館開放得比船票早好幾個月。",
+      "sourceUrl": "https://sites.google.com/view/seikanso/%E6%98%9F%E8%A6%B3%E8%8D%98%E7%A9%BA%E5%AE%A4%E6%83%85%E5%A0%B1",
+      "sourceTitle": "ゆうひの丘Homepage - 星観荘空室情報",
+      "sourceQuote": "一般の皆さま お電話のみ 4-10月 3月31日(火)20時より",
+      "verdict": "verified",
+      "notes": "星観荘 3/31 一次開放 4～10 月；う～に～預定 11 月中旬開放隔年 5 月以後。都比船票 2 個月前早好幾個月。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "香深的ペンションう～に～預定2026年11月中旬開放2027年5月以後的訂房，確切日期會公告在官網。",
+      "sourceUrl": "https://pensionuni.main.jp/2026/10/10/%e3%80%90%e6%9d%a5%e3%82%b7%e3%83%bc%e3%82%ba%e3%83%b3%ef%bc%882027%e5%b9%b45%e6%9c%88%e4%bb%a5%e9%99%8d%ef%bc%89%e3%81%ae%e3%81%94%e4%ba%88%e7%b4%84%e5%8f%97%e4%bb%98%e3%81%ab%e3%81%a4%e3%81%84/",
+      "sourceTitle": "【来シーズン（2027年5月以降）のご予約受付について】 - ペンションうーにーHP",
+      "sourceQuote": "2027年5月以降のご宿泊予約につきましては、 2026年11月中旬頃 より受付開始を予定しております。具体的な受付開始日時につきましては、10月下旬〜11月上旬頃に本ウェブサイトにて改めてご案内いたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "船泊的星觀莊每年3月底前後開放當年4月到10月的訂房，一般旅客只接受電話預約，日期公告在官網的空室情報頁。2026年是3月31日晚上8點起開放。",
+      "sourceUrl": "https://sites.google.com/view/seikanso/%E6%98%9F%E8%A6%B3%E8%8D%98%E7%A9%BA%E5%AE%A4%E6%83%85%E5%A0%B1",
+      "sourceTitle": "ゆうひの丘Homepage - 星観荘空室情報",
+      "sourceQuote": "★2026年の宿泊予約方法に関するお知らせ／☆一般の皆さま 受付方法 お電話のみ 宿泊月 4-10月 受付開始日時 3月31日(火)20時より",
+      "verdict": "verified",
+      "notes": "瀏覽器讀圖。「每年3月底前後」是從 2026 年（3/31）與 2022 年起的舊規則（4/1）歸納，可接受。Facebook 社團成員 3/24～3/30 可用 Messenger 先訂，正文寫「一般旅客」已排除。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "想搭6月10日的船，4月10日就能訂。",
+      "sourceUrl": "https://heartlandferry.jp/about_reservation/",
+      "sourceTitle": "ご予約について｜ハートランドフェリー",
+      "sourceQuote": "ご予約受付開始は、ご乗船日の２ヶ月前の同日からとなります。",
+      "verdict": "verified",
+      "notes": "重算 6/10 的 2 個月前同日為 4/10。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "島上的定期觀光巴士也是乘車日2個月前開放預約。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス コース｜宗谷バス",
+      "sourceQuote": "定期観光バスは 『 予約制 』です 。予約は乗車日の『 ２か月前 』から受付開始いたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "訂房時一併問清楚渡輪停駛時的取消規定，像星觀莊從入住前10天起就收取消費。",
+      "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
+      "sourceQuote": "※キャンセル料は以下となります(1泊1名様あたり)・10日前より:1,000円・3日前より:宿泊料金の30％・1日前より:宿泊料金の50％・当日:宿泊料金の100％",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "觀光協會這份清單是給海外旅客看的版本，9家都附電話，其中5家另有電子郵件。",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "※海外の方へ／電子郵件：rebun@okcs.co.jp、info@hanarebun.com、kiriri-moto@cream.plala.or.jp、todo@d1.dion.ne.jp、kaido@hokkai.or.jp",
+      "verdict": "verified",
+      "notes": "網址在 /inbound/ 底下；9 家都有電話，電子郵件 5 家。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "打電話時，觀光協會建議用簡單的英語慢慢說。",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "電話でのお問い合わせの際は、簡単な英語を使う、ゆっくり話す、日本語の辞書を使用してください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "不想講電話的話，這5家可以用翻譯好的文字寫信，星觀莊不在其中，只接受電話預約。",
+      "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
+      "sourceQuote": "TEL・FAX 01638-7-2818 （携帯）090-3776-8714 予約の際は上記に電話をお願い致します",
+      "verdict": "verified",
+      "notes": "清單存檔星観荘沒有電子郵件。空室情報頁另有 Facebook 社團成員用 Messenger 預約的管道，對一般讀者寫「只接受電話預約」可接受。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "表上的價格是每晚，旅館官網寫明每人的才標每人，有幾家另收北海道住宿稅100到200日圓。",
+      "sourceUrl": "https://www.rebun.jp/guesthouse/",
+      "sourceTitle": "民宿スコトン岬",
+      "sourceQuote": "2026年4月1日より、宿泊税が導入されます。宿泊料金とは別に、1名様1泊あたり下記の通り頂戴いたします。● 20,000円未満：100円 ● 20,000円以上：200円",
+      "verdict": "verified",
+      "notes": "はな心「北海道宿泊税は、おひとり様1泊につき100円」、星観荘「+ 100円(北海道宿泊税)」。"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "表格的價格與訂房管道是2026年10月23日查核。",
+      "sourceUrl": "https://jp.trip.com/hotels/list?city=92451",
+      "sourceTitle": "礼文町の格安ホテル | Trip.comで宿泊予約",
+      "sourceQuote": "8軒のホテルがあります",
+      "verdict": "verified",
+      "notes": "本次 2026-10-23 已逐一打開表格引用的官網與兩個訂房網站，內容與表格一致。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "禮文飯店 ホテル礼文｜附2餐｜只收現金｜走路1分鐘，在香深港正面｜0163-86-1990",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "香深港の正面に建つ当ホテル／（税込・2食付・入湯税150円)／決済方法 現金／電話 : 0163-86-1990／香深港フェリーターミナルより徒歩1分、車1分",
+      "verdict": "verified",
+      "notes": "電話與徒歩1分也見 hotel-rebun.jp。價格欄已改成詢價，不再有數字。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "禮文飯店｜Trip.com、Agoda；咲涼｜Trip.com、Agoda；花れぶん｜Trip.com、Agoda",
+      "sourceUrl": "https://www.agoda.com/ja-jp/city/rebun-jp.html",
+      "sourceTitle": "礼文のホテル｜Agoda",
+      "sourceQuote": "礼文ホテル咲涼 (REBUN HOTEL SARYO)／ホテル礼文 (Hotel Rebun)／礼文温泉 花れぶん (Rebun Onsen Ryokan Hanarebun)",
+      "verdict": "verified",
+      "notes": "Trip.com 礼文町搜尋（2026-10-23）有「礼文観光ホテル 咲涼」「ホテル礼文」「花れぶん」。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "禮文觀光飯店咲涼｜附2餐｜現金、VISA、Mastercard｜走路10分鐘｜0163-86-1717、rebun@okcs.co.jp",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "（税込・2食付・入湯税150円)／現金、VISA、マスターカード／電話 : 0163-86-1717 rebun@okcs.co.jp／香深港フェリーターミナルより徒歩10分、車2分",
+      "verdict": "verified",
+      "notes": "咲涼官網也寫「車で約2分、徒歩約10分」。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "晚餐自助餐／接送車要預約／咲涼只在5月到10月營業，搭接送車要事先預約。",
+      "sourceUrl": "https://rebun.by-onko-chishin.com/",
+      "sourceTitle": "礼文観光ホテル 咲涼",
+      "sourceQuote": "5〜10月・シーズンホテル／ビュッフェ形式でご提供します。／ホテル送迎車あり（要予約）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "2026年10月18日查詢時，咲涼在Agoda是8.2分、29則評論。",
+      "sourceUrl": "https://www.agoda.com/ja-jp/city/rebun-jp.html",
+      "sourceTitle": "礼文のホテル｜Agoda",
+      "sourceQuote": "礼文ホテル咲涼 (REBUN HOTEL SARYO) 8.2 非常に満足 クチコミ29件",
+      "verdict": "verified",
+      "notes": "2026-10-23 數字相同。Agoda 另有「礼文観光ホテル　咲涼」頁 7.6 分 3 則。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "花れぶん｜附2餐｜現金、主要信用卡｜0163-86-1666、info@hanarebun.com",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "（税込・2食付・入湯税150円)／現金、マスター・アメックス・JCB・VISA・ダイナースクラブ／電話 : 0163-86-1666／info@hanarebun.com",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "花れぶん｜走路約8分鐘，接送巴士要先告知渡輪抵達時間／花れぶん想搭接送巴士，要提前告訴旅館搭的是幾點到港的渡輪。",
+      "sourceUrl": "http://www.hanarebun.com",
+      "sourceTitle": "花れぶん",
+      "sourceQuote": "香深港から徒歩約8分で「花れぶん」に。送迎バスをご利用のお客様は、予めフェリーの到着時間をお知らせください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "民宿はな心｜4/20～9/30 每人12,500～14,500日圓未稅，2人1室時",
+      "sourceUrl": "https://hanashin.crayonsite.net/p/2/",
+      "sourceTitle": "礼文島　はな心　宿泊料金 | 自然に親しむ宿 Nature Inn はな心",
+      "sourceQuote": "宿泊料金　夏季4月20日〜9月30日 1泊2食付き料金(2名様1室ご利用時・おひとり様) バストイレなし　12,500円(税別) バスなしトイレ洗面台付き　13,500円〜14,500円(税別)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "民宿はな心｜10/1～4/19 每人9,900～11,000日圓含稅；另加北海道住宿稅100日圓／淡季10月1日到4月19日附2餐每人9,900日圓起，含稅。",
+      "sourceUrl": "https://hanashin.crayonsite.net/p/2/",
+      "sourceTitle": "礼文島　はな心　宿泊料金 | 自然に親しむ宿 Nature Inn はな心",
+      "sourceQuote": "宿泊料金　冬季10月1日〜4月19日 ビジネスプラン　1泊2食付き 1名様 バストイレなし　9,900円(税込) バスなしトイレ洗面台付き　11,000円(税込)／北海道宿泊税は、おひとり様1泊につき100円です。",
+      "verdict": "verified",
+      "notes": "官網冬季只列「ビジネスプラン」，正文沒寫方案名；數字、含稅與期間一致，可考慮補「官網列的是商務方案」。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "民宿はな心｜附2餐｜現金、主要信用卡｜走路15分鐘｜0163-86-1648",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "(２食付、税込）／現金、マスター・アメックス・JCB・VISA・ダイナースクラブ／電話 : 0163-86-1648／香深港フェリーターミナルより徒歩15分、車5分",
+      "verdict": "verified",
+      "notes": "附 2 餐與電話也見店家官網。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "ペンションう～に～｜附2餐，5/20～9/30和洋折衷，其他時期和食",
+      "sourceUrl": "http://www.p-uni.burari.biz",
+      "sourceTitle": "ペンション う～に～",
+      "sourceQuote": "オンシーズン（5/20～9/30）は和洋折衷のメニュー／オフシーズンは和食の提供になります",
+      "verdict": "verified",
+      "notes": "舊網址內容與 https://pensionuni.main.jp/ 相同。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "ペンションう～に～｜可刷信用卡｜走路15分鐘，有接送到附近的公共溫泉｜0163-86-1541，官網有預約入口",
+      "sourceUrl": "https://pensionuni.main.jp/",
+      "sourceTitle": "ペンションうーにーホームページ【公式】",
+      "sourceQuote": "ご予約はこちらから（https://pensionuni.main.jp/reservation/）",
+      "verdict": "verified",
+      "notes": "信用卡、徒歩15分、公共溫泉接送、電話見清單存檔「カード可」「徒歩15分」「近くの公共温泉施設までの送迎」「TEL：0163-86-1541」。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "民宿きりり｜訂房時確認｜現金、American Express｜在香深井，開車10分鐘，有接送｜0163-89-6115、kiriri-moto@cream.plala.or.jp／民宿きりり位在香深井，往返渡輪站靠民宿接送。",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "送迎あり／現金、アメックス／電話 : 0163-89-6115／kiriri-moto@cream.plala.or.jp／礼文郡礼文町大字香深村字香深井 香深港フェリーターミナルより徒歩150分、車10分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "禮文飯店也出租電動自行車，1小時1,100日圓起，住這裡就不必另外找租車店。",
+      "sourceUrl": "https://hotel-rebun.jp/",
+      "sourceTitle": "HOTEL REBUN ホテル礼文",
+      "sourceQuote": "E-BIKEレンタル 1時間 1,100円〜 E-BIKE （電動アシスト自転車） レンタル／宿泊様以外の ご利用も 大歓迎です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "禮文莊 ホテル礼文荘｜附2餐13,500日圓、只含早餐9,900日圓，含稅｜附2餐或只含早餐",
+      "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
+      "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
+      "sourceQuote": "・店主お勧めのプラン　1泊2食付き　 税込み価格　13,500円／・朝食のみ（送迎はありません）　税込み価格　9,900円",
+      "verdict": "verified",
+      "notes": "官網沒寫每人或每室，正文也沒標每人，一致。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "禮文莊｜現金、主要信用卡｜開車約30分鐘，接送配合固定船班，要事先聯絡｜0163-87-2755、todo@d1.dion.ne.jp，訂房用電話",
+      "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
+      "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
+      "sourceQuote": "ご予約は電話で受け付けております。／送迎 8：45と16：40着の稚内便に合わせて運行予定、事前連絡が必要です。",
+      "verdict": "verified",
+      "notes": "付款、車約30分、電話與信箱見清單存檔。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "禮文莊的接送配合從稚內來的固定船班，要事先聯絡，一個人住有時沒辦法接送。只訂含早餐方案的話，禮文莊沒有接送。",
+      "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
+      "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
+      "sourceQuote": "8：45と16：40着の稚内便に合わせて運行予定、事前連絡が必要です。一名様の場合は出来ないこともあります／朝食のみ（送迎はありません）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "民宿海憧｜附2餐｜現金、主要信用卡｜開車25分鐘，渡輪站往返免費接送｜0163-87-2717、kaido@hokkai.or.jp／民宿海憧則有渡輪站往返的免費接送。",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "フェリーターミナルから当宿までの行き帰りは無料送迎をしています。／(2食付、税込）／現金、マスター・アメックス・JCB・VISA・ダイナースクラブ／TEL：0163-87-2717／kaido@hokkai.or.jp／車25分",
+      "verdict": "verified",
+      "notes": "價格欄已改成詢價。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "星觀莊 星観荘｜每人5,500日圓不含餐到7,500日圓附2餐，另加北海道住宿稅100日圓，個室每人加1,000日圓｜可選附2餐、只附晚餐、只附早餐或不含餐",
+      "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
+      "sourceQuote": "・1泊夕・朝食付き：7,500円 + 100円(北海道宿泊税) ・1泊夕食付き：7,000円 ・1泊朝食付き：6,500円 ・素泊まり：5,500円 + 100円(北海道宿泊税)／※個室利用は2名様用と3名様用で、1名様毎にプラス1,000円です",
+      "verdict": "verified",
+      "notes": "官網沒寫含稅或未稅，正文也沒寫，一致。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "星觀莊｜現金、PayPay",
+      "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
+      "sourceQuote": "※PayPay決済も利用可能です。",
+      "verdict": "verified",
+      "notes": "現金見清單存檔「現金のみ」。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "星觀莊｜開車約40分鐘，接送配合稚內港發著的第一班與最後一班渡輪｜0163-87-2818，只接受電話預約／接送只配合稚內港發著的第一班與最後一班渡輪，因故也可能臨時沒有接送",
+      "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
+      "sourceQuote": "稚内港発着フェリーの始発便と最終便に合わせて、港まで送迎をしております。※送迎できない船便もありますので、ご予約の際にお確かめください。／※諸事情により急遽 送迎なし,夕食なし,朝食なしの状況になる場合もあります。",
+      "verdict": "verified",
+      "notes": "電話號碼與車約40分見清單存檔（官網寫 01638-7-2818，同號）。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "星觀莊類似青年旅館，住男女分開的多人房，不含餐每人5,500日圓起。",
+      "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
+      "sourceQuote": "FIELD INN 星観荘は、男女別相部屋のユースホステル形式の民宿です。／素泊まり：5,500円 + 100円(北海道宿泊税)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "觀光協會的散步地圖ぶらりMAP上，還標了十多家清單以外的住宿，地圖上只有名稱與位置。",
+      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "礼文島 ぶらりMAP｜礼文島観光協会",
+      "sourceQuote": "宿泊アイコン：民宿宮島荘、旅館かもめ荘、民宿・居酒屋香栄丸、旅館一番館、しまのやど れぶんしり、旅館桜井、民宿やざわ、民宿山光、民宿 夕凪、民宿カメとはまなす、プチホテル コリンシアン、民宿 吹風",
+      "verdict": "verified",
+      "notes": "Wayback 2026-02-15 存檔 PDF 轉圖：清單以外帶宿泊圖示的 12 家（三井観光ホテル視為咲涼舊名不計）。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "香深有旅館桜井、民宿やざわ、民宿香栄丸、旅館かもめ荘、しまのやど れぶんしり、民宿宮島荘、旅館一番館、民宿山光。船泊有民宿夕凪、民宿カメとはまなす、民宿吹風、プチホテル コリンシアン。",
+      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "礼文島 ぶらりMAP｜礼文島観光協会",
+      "sourceQuote": "香深市街地MAP：旅館桜井、民宿やざわ、民宿・居酒屋香栄丸、旅館かもめ荘、しまのやど れぶんしり、民宿宮島荘、旅館一番館、民宿山光／船泊：民宿 夕凪、民宿カメとはまなす、プチホテル コリンシアン、民宿 吹風（浜中）",
+      "verdict": "verified",
+      "notes": "12 個名稱與地區都對。民宿吹風在船泊地區的浜中，不在船泊市街地小圖內；香栄丸圖上全名「民宿・居酒屋香栄丸」。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "Agoda上的評分，2026年10月18日時旅館桜井是8.4分、126則評論。プチホテル コリンシアン是8.0分、141則評論。",
+      "sourceUrl": "https://www.agoda.com/ja-jp/city/rebun-jp.html",
+      "sourceTitle": "礼文のホテル｜Agoda",
+      "sourceQuote": "旅館桜井 (Ryokan Sakurai (Rebun Kafuka)) 8.4 非常に満足 クチコミ126件／礼文島プチホテル コリンシアン (Petit Hotel Corinthian) 8.0 非常に満足 クチコミ141件",
+      "verdict": "verified",
+      "notes": "2026-10-23 數字相同。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "最北端的須古頓岬上有一家民宿スコトン岬，是岬上唯一的住宿，2026年6月15日到8月31日營業。",
+      "sourceUrl": "https://www.rebun.jp/shop/",
+      "sourceTitle": "スコトン岬 ショップ・宿",
+      "sourceQuote": "2026年度　6月15日（月）OPEN 8月31日（月）CLOSE",
+      "verdict": "verified",
+      "notes": "https://www.rebun.jp/guesthouse/「スコトン岬、唯一の宿」。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "民宿只有8間房，不供餐，海產等食材可以在店裡買，廚房免費出借但要事先預約。",
+      "sourceUrl": "https://www.rebun.jp/guesthouse/",
+      "sourceTitle": "民宿スコトン岬",
+      "sourceQuote": "お食事の提供は行っておりませんが、海産物などの食材の提供とキッチンの貸し出しをしております。／キッチンを無料貸し出しいたします。／キッチンの貸し出しを行っております。※事前予約となります",
+      "verdict": "verified",
+      "notes": "「わずか8室の民宿」見 https://www.rebun.jp/shop/；食材在「島の人」店舖販售。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "住宿費是每人含稅，3人以上一室12,500日圓、2人一室13,500日圓、1人一室25,500日圓，看不到海的山側房9,500日圓，另加北海道住宿稅。",
+      "sourceUrl": "https://www.rebun.jp/guesthouse/",
+      "sourceTitle": "民宿スコトン岬",
+      "sourceQuote": "1室3名以上利用 11,364 円（税込12,500円）／1室2名利用 12,273 円（税込13,500円）／1室1名利用 23,182 円（税込25,500円）／山部屋（海が見えないお部屋）8,636 円（税込9,500円）／※料金は１泊１名様ごとの料金です（サービス料込み）。",
+      "verdict": "verified",
+      "notes": "住宿稅見 C28。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "官網可以線上預約，也能打電話訂。",
+      "sourceUrl": "https://www.rebun.jp/guesthouse/",
+      "sourceTitle": "民宿スコトン岬",
+      "sourceQuote": "宿泊の予約はこちら／お電話でのご予約も可能になります。／ご予約電話番号 TEL 0120-777-164 受付時間／9：00～17：00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "2026年10月23日在Trip.com、Agoda搜尋禮文，觀光協會列的9家裡，咲涼、禮文飯店與花れぶん兩邊都找得到。其他6家用電話或電子郵件直接跟旅館訂。",
+      "sourceUrl": "https://jp.trip.com/hotels/list?city=92451",
+      "sourceTitle": "礼文町の格安ホテル | Trip.comで宿泊予約",
+      "sourceQuote": "8軒のホテルがあります／礼文観光ホテル 咲涼／れぶんしり (REBUNSHIRI)／民宿　山光／礼文島プチホテル コリンシアン／ホテル礼文／かもめ荘／旅館桜井／花れぶん",
+      "verdict": "verified",
+      "notes": "Agoda 礼文頁也有咲涼、ホテル礼文、花れぶん。兩站都沒有きりり、う～に～、はな心、礼文荘、海憧、星観荘，共 6 家。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "清單以外的旅館桜井、しまのやど れぶんしり、プチホテル コリンシアン兩個網站都有，民宿山光與旅館かもめ荘在Trip.com也找得到。",
+      "sourceUrl": "https://www.agoda.com/ja-jp/city/rebun-jp.html",
+      "sourceTitle": "礼文のホテル｜Agoda",
+      "sourceQuote": "しまのやど れぶんしり (Shimanoyado Rebunshiri)／旅館桜井 (Ryokan Sakurai (Rebun Kafuka))／礼文島プチホテル コリンシアン (Petit Hotel Corinthian)",
+      "verdict": "verified",
+      "notes": "Trip.com 礼文町搜尋（2026-10-23）有旅館桜井、れぶんしり、コリンシアン、民宿山光、かもめ荘（滿房顯示）。"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "2026年10月18日查詢時，Agoda上禮文共有13家可以訂。",
+      "sourceUrl": "https://www.agoda.com/ja-jp/city/rebun-jp.html",
+      "sourceTitle": "礼文のホテル｜Agoda",
+      "sourceQuote": "礼文にある全てのホテル 13軒を見る",
+      "verdict": "verified",
+      "notes": "同頁另有「宿泊施設 18軒」；2026-10-23 仍是 13 軒。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "直接跟旅館訂的話，禮文飯店只收現金，島上付現金也只能用日圓，最好出發前就換好。",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報",
+      "sourceQuote": "ホテル礼文 決済方法 現金／現金のお支払いは日本円のみです。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "11月1日到隔年4月27日是渡輪的冬季班表期間／11月1日到隔年4月27日，渡輪一天只有2個來回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "1/1～4/27 06:35～08:30 09:00～10:55 14:10～16:05 17:05～19:00／11/1～12/31 06:35～08:30 09:00～10:55 14:10～16:05 17:05～19:00",
+      "verdict": "verified",
+      "notes": "2026 年時刻表；4/28 起改 4/28～5/31 班表。"
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "咲涼是5月到10月營業的季節飯店，星觀莊只營業到10月上旬，須古頓岬的民宿也只開到8月底。",
+      "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
+      "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
+      "sourceQuote": "営業期間 4月下旬～10月上旬",
+      "verdict": "verified",
+      "notes": "咲涼「5〜10月・シーズンホテル」（https://rebun.by-onko-chishin.com/），民宿スコトン岬 2026 年 8/31 CLOSE（https://www.rebun.jp/shop/）。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "民宿はな心官網寫冬季10月1日到4月19日，附2餐每人9,900日圓起。",
+      "sourceUrl": "https://hanashin.crayonsite.net/p/2/",
+      "sourceTitle": "礼文島　はな心　宿泊料金 | 自然に親しむ宿 Nature Inn はな心",
+      "sourceQuote": "宿泊料金　冬季10月1日〜4月19日 ビジネスプラン　1泊2食付き 1名様 バストイレなし　9,900円(税込)",
+      "verdict": "verified",
+      "notes": "同 C38，官網冬季列的是商務方案。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "渡輪站裡的禮文島觀光案內所只在4月中旬到10月中旬開。冬天到島上沒有案內所可以問",
+      "sourceUrl": "https://web.archive.org/web/20261007144913/https://www.rebun-island.jp/koutsu/",
+      "sourceTitle": "交通情報｜礼文島観光協会",
+      "sourceQuote": "礼文島観光案内所（香深フェリーターミナル内 4月中旬～10月中旬）",
+      "verdict": "verified",
+      "notes": "官網連不上，用 Wayback 2026-10-07 存檔。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "去程（稚內往香深）6:35→8:30、14:10→16:05；回程（香深往稚內）9:00→10:55、17:05→19:00",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "期間 稚内発～香深着 香深発～稚内着 11/1～12/31 06:35～08:30 09:00～10:55 14:10～16:05 17:05～19:00",
+      "verdict": "verified",
+      "notes": "表格欄位交錯：稚内発 06:35、14:10；香深発 09:00、17:05。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "搭6:35的船去、17:05的船回，冬天也能當天來回，不一定要在島上過夜。搭14:10那班的話，當天能回的只剩17:05一班。要在島上逛，就得住一晚，隔天再搭9:00或17:05的船回稚內。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "06:35～08:30／14:10～16:05／09:00～10:55／17:05～19:00",
+      "verdict": "verified",
+      "notes": "重算：8:30 到港、17:05 開船；14:10 班 16:05 到港後只剩 17:05。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "延伸資料：禮文飯店官網 https://hotel-rebun.jp/、ペンションう～に～官網 https://pensionuni.main.jp/、禮文莊官網的住宿費頁，方案價格與接送船班。",
+      "sourceUrl": "https://www.hotel-rebun.info/",
+      "sourceTitle": "HOTEL REBUN",
+      "sourceQuote": "ホームページは新しくなりました HOTEL REBUN ホテル礼文 https://hotel-rebun.jp/",
+      "verdict": "verified",
+      "notes": "新網址都能打開，內容與說明一致。"
+    }
+  ],
+  "summary": {
+    "verified": 69,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
