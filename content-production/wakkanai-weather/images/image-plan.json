@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "articleId": "wakkanai-weather",
+  "articleTitle": "稚內天氣，各月氣溫、降雪與穿著",
+  "targetUrl": "/places/wakkanai/weather/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-24",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；發布工具還不支援文內圖，文內圖位置之後另外規劃。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-24",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是稚內的天氣，特別是冬天積雪的樣子，作為文章封面。",
+      "mustShow": ["稚內市區或稚內的地標", "看得出季節或天氣的景象（以冬季積雪為佳）"],
+      "mustNotShow": ["其他城市的雪景冒充稚內", "特定旅館或店家當主體", "某年祭典或活動的實況", "可辨識的人物臉部", "暴風雪災情、事故等會誤導的情境"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Snow_in_Chuo%2C_Wakkanai%2C_Hokkaido_-_Feb_27%2C_2025.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.45},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 2025 年 2 月稚內市中央一、二丁目的雪後晴天，屋頂與道路積著厚雪，後方是稚內公園的山丘與山頂的塔，熟悉稚內的人認得出來，也直接對應文章「冬天長又多雪」的主軸；4080 px 寬，裁成 16:9 時焦點放在 y 0.45，保留山頂的塔，右下角很小的剷雪行人會被裁掉。cover-02 是 2023 年 1 月下雪中的稚內街道，雪天感最強，但前景有巴士與多輛車、遠處車牌，主體偏交通，列為備選。cover-03 是 2012 年 12 月從高處看雪後的稚內海岸與市街，天色陰暗、寬度只有 2048 px，列為第二備選。三張都沒有可辨識人物臉部，都不以旅館或店家為主體。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-24",
+        "photoSearchNotes": "查過維基共享資源 Category:Wakkanai, Hokkaido、Category:Wakkanai Breakwater Dome、Category:Wakkanai Park、Category:Views from Wakkanai Park、Category:Cape Noshappu、Category:Transport in Wakkanai、Category:Buildings in Wakkanai、Category:Geography of Wakkanai。北防波堤穹頂的照片多半是夏季（File:Wakkanai Breakwater Dome 20140813.jpg 等），不如雪景貼近天氣主題；File:Heavy Snow at Wakkanai 03.jpg、05.jpg 只有 640 px 寬，不夠封面；File:Port of Wakkanai 北防波堤ドーム IMG 2649.jpg、File:防波堤ドーム-01.JPG 寬度不到 1600 px；File:Morning in Wakkanai 2023-03-15.jpg 是融雪中的街道與車輛，季節感弱。已有合格維基共享資源實拍，沒有再比較免費圖庫。檔案頁授權以 action=raw 讀取檔案頁原始碼確認（授權範本與 FlickreviewR 審核紀錄）。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Snow_in_Chuo,_Wakkanai,_Hokkaido_-_Feb_27,_2025.jpg",
+          "creatorName": "Ryo FUKAsawa",
+          "sourceTitle": "File:Snow in Chuo, Wakkanai, Hokkaido - Feb 27, 2025.jpg",
+          "sourceDescription": "稚内市中央二丁目、一丁目。道路より左が二丁目（雪かきしてる人がいる）、右が一丁目。小高い丘の上は稚内公園。（原始出處 Flickr fukapon/54353309859，FlickreviewR 2025-03-01 審核通過 cc-by-2.0）",
+          "takenAt": "2025-02-27",
+          "width": 4080,
+          "height": 3060,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-24",
+          "matchType": "exact",
+          "matchLimits": "2025 年 2 月某一天雪後的晴天；不代表每天都是晴天，稚內冬天多半是陰天或下雪。",
+          "whyItFits": "檔案頁說明為稚內市中央一、二丁目，丘上是稚內公園，分類 Wakkanai, Hokkaido 與 Snow in Hokkaido；畫面是屋頂積厚雪的住宅、被雪埋住的道路，後方是覆雪的稚內公園山丘與山頂的塔，藍天白雲。",
+          "altDraft": "2 月雪後晴天的稚內市區，住宅屋頂與道路積著厚雪，後方是覆雪的稚內公園山丘",
+          "captionDraft": "2 月雪後的稚內市中央一帶，後方山丘是稚內公園（2025 年）。",
+          "creditDraft": "照片：Ryo FUKAsawa／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "右下角有一位背對鏡頭剷雪的人，很小無法辨識，16:9 裁切後在畫面外",
+            "logos": "左側建築有很小的招牌文字，看不清楚，不是主體",
+            "artwork": "none",
+            "property": "一般住宅與市街遠景",
+            "risk": "low",
+            "notes": "不以任何旅館或店家為主體；不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Snow_in_Wakkanai_2023-01-18.jpg",
+          "creatorName": "Ryo FUKAsawa",
+          "sourceTitle": "File:Snow in Wakkanai 2023-01-18.jpg",
+          "sourceDescription": "Snow in Wakkanai.（原始出處 Flickr fukapon/52634252153，FlickreviewR 2023-04-09 審核通過 cc-by-2.0）",
+          "takenAt": "2023-01-18",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-24",
+          "matchType": "exact",
+          "matchLimits": "前景是路線巴士與車流，主體偏交通；遠處車輛車牌在原圖可能看得出。",
+          "whyItFits": "檔案頁說明為稚內的雪，分類 Snow in Wakkanai；畫面是下雪中的稚內街道，巴士與車輛在積雪路面行駛，後方覆雪的山坡，路牌指向野寒布岬方向。",
+          "altDraft": "1 月下雪中的稚內街道，巴士與車輛在積雪的路面上行駛",
+          "captionDraft": "1 月下雪中的稚內街道（2023 年）。",
+          "creditDraft": "照片：Ryo FUKAsawa／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "路線巴士車身塗裝，小",
+            "artwork": "none",
+            "property": "道路與市街",
+            "risk": "low",
+            "notes": "車牌很小；若改選此張要先確認裁切後看不清車牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-03",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai_20121215075418_(8678514786).jpg",
+          "creatorName": "inunami",
+          "sourceTitle": "File:Wakkanai 20121215075418 (8678514786).jpg",
+          "sourceDescription": "wakkanai_20121215075418（原始出處 Flickr 94693136@N05/8678514786，FlickreviewR 2023-03-28 審核通過 cc-by-2.0）",
+          "takenAt": "2012-12-15",
+          "width": 2048,
+          "height": 1536,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-24",
+          "matchType": "exact",
+          "matchLimits": "2012 年拍攝，天色陰暗；檔案頁只寫稚內，沒有寫拍攝位置。",
+          "whyItFits": "檔案頁標題與分類為稚內（Wakkanai, Hokkaido），12 月拍攝；畫面是從高處看雪後的海岸市街與防波堤，陰天的海。",
+          "altDraft": "12 月陰天下積雪的稚內海岸市街與海",
+          "captionDraft": "12 月雪後的稚內海岸（2012 年）。",
+          "creditDraft": "照片：inunami／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "市街與海岸遠景",
+            "risk": "low",
+            "notes": "沒有可辨識人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

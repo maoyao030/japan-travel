@@ -6,13 +6,16 @@ Darren 2026-10-22 改成**每天 5 篇**：一輪仍只寫一篇，改成一天�
 
 - 排定工作：`japan-travel-daily-writer`，每天台北 01:42、04:42、10:42、13:42、20:42（好材誌是 00:12、08:12、16:12，每輪至少錯開 1 個半小時）。
 - 每輪的流程就是本文件；排定工作的提示只叫它讀這份文件照做。要改流程就改這份文件，不用改排定工作。
+Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一篇後，上傳最多 2 篇已驗收、還沒上線的文章（照 `writingOrder` 先後），積壓的清完後就是每輪寫一篇、傳一篇。上傳照自動發布 Skill（`.agents/skills/japan-travel-auto-publisher/SKILL.md`）「produce」第 7～14 步，本機的差異寫在本文件「5. 上傳」。上傳完把分支合併推到 `main`，網站才會重建。
+
 - 這套流程和 2026-10-20 稚內交通的人工流程相同，一篇約用 5 小時額度的 16%、每週額度的 2%（不含選圖）。
 
 ## 工作資料夾與分支
 
 - 一律在專用資料夾 `C:\Users\ak472\Documents\GitHub\japan-travel-auto` 工作，分支 `auto/wakkanai-writing`。這是 git worktree（同一個 repo 的第二個工作資料夾），不會動到 Darren 或其他 session 正在用的 `japan-travel` 資料夾。
 - 每個指令都用這個資料夾的絕對路徑，或先 `cd` 進去。不要在 `japan-travel` 主資料夾改任何檔案、不要切換它的分支。
-- 一開始執行 `git pull --ff-only origin auto/wakkanai-writing`（遠端還沒有這個分支時略過）。拉不下來（有衝突或未提交的改動）就停止，寫執行紀錄說明原因。
+- 一開始執行 `git pull --ff-only origin auto/wakkanai-writing`（遠端還沒有這個分支時略過），接著 `git fetch origin` 與 `git merge --no-edit origin/main`，拿到人工 session 改過的規則與程式。拉不下來或合併有衝突（先 `git merge --abort`）就停止，寫執行紀錄說明原因。
+- 根目錄或 `studio/` 沒有 `node_modules` 時，先在那個資料夾執行 `npm ci`。
 
 ## 每輪的步驟
 
@@ -78,10 +81,53 @@ Darren 2026-10-22 改成**每天 5 篇**：一輪仍只寫一篇，改成一天�
 2. 寫 `<資料夾>/review.md`，格式照 `content-production/wakkanai-transport/review.md`：SHA-256、規則、作者／潤稿者／標題檢查／事實查核／讀者驗收／協調者的身分、結果表（格式 `mechanical_clear`、標題 `acceptable`、讀者價值 `acceptable`、事實與條件 `verified`、口吻、事實編號、防抄襲、圖片寫「這次沒有選圖」）、最終結果 `ready_for_user_preview`、經過表、查不到所以正文沒寫的、留給之後的事。
 3. 跑 `node scripts/local-article-gates.mjs <id>`，要印出 `gates_clear`。沒過就修到過（通常是 review.md 的 SHA 或欄位）。
 
-### 5. 收尾
+### 5. 上傳
+
+寫作停放、略過或停止的輪次也照樣做上傳（只有「工具或環境錯誤」不做）。上傳前先照第 6 步第 2 點的範圍 commit 寫作結果（先不 push），上傳失敗也不會丟稿。
+
+**前置**
+
+- 用量：5 小時額度 70% 以上或每週額度 80% 以上，就不上傳，執行紀錄寫「上傳略過：額度」。
+- Git Bash 先 `export MSYS_NO_PATHCONV=1`（不然 `/places/...` 這類參數會被改成 Windows 路徑）。
+- Sanity 指令在 `studio/` 執行：`npx sanity exec scripts/<檔名>.mjs --with-user-token -- <參數>`，用這台電腦的 Sanity 登入狀態。D1 指令（`scripts/ops-*.mjs`）用 wrangler 的登入狀態，不設 `OPS_DB_TRANSPORT`。
+- 下面說的「第 N 步」都是自動發布 Skill「produce」那一節的步驟，失敗時怎麼記錄也照它。
+
+**1. 讀狀態**：`studio/` 內 `npx sanity exec scripts/inspect-article-queue.mjs --with-user-token > ../.tmp/queue-state.json`，再 `node scripts/ops-article.mjs list` 看 D1 的生產狀態。
+
+**2. 挑文章**：照 `writingOrder` 順序，挑最多 2 篇符合下面全部條件的，一篇做完再做下一篇：
+
+- `review.md` 最終結果是 `ready_for_user_preview`，`node scripts/local-article-gates.mjs <id>` 是 `gates_clear`；
+- 不在執行紀錄的「停放」與「上傳停放」表；
+- `queue-state.json` 裡這篇不是 `published_indexable`，或是 `published_indexable` 但 D1 還沒標 `published`（只做第 4 點的登記）。
+
+`groupId`、`batchId`、`targetPath`、`routeMode` 用 `article-queue.json` 裡這篇的值。
+
+**3. 每一篇**
+
+1. D1：`ops-article.mjs list` 裡沒有這篇，先 `node scripts/ops-article.mjs start --article=<id> --group=<groupId> --path=<targetPath> --rules=$(git rev-parse --short HEAD)`（已有紀錄的不要再 start，它會把寫作輪數加一）；接著 `ops-article.mjs accepted --article=<id>`。狀態是 `parked` 就加進「上傳停放」表、換下一篇。
+2. 父 Hub：第 2 步（`queue-state.json` 的 `parentHubs[]`，`missing` 就 `prepare-parent-hub.mjs <batchId>` dry-run 後 `--apply`）。
+3. Sanity 狀態是 `staged_noindex`（上一輪做到一半）：跳過 4、5、6，照 Skill「resume」的 `staged`：沒封面才做第 5 點，再接第 7 點。
+4. 定稿：`npm run release:finalize -- content-production/<id>`。
+5. 封面：派一個子代理照 `.agents/skills/japan-travel-image-finder/SKILL.md` **只選封面**，只用實拍照片（維基共享資源、免費圖庫、條款允許的觀光協會照片），**不用 AI 圖**，圖片用 curl 下載、不在瀏覽器點下載，封包寫在 `content-production/<id>/images/`。選定後 `npm run image:prepare:cover -- content-production/<id> --download`，親自看一次裁切後的圖。找不到合格實拍：這篇加進「上傳停放」表（原因「缺封面」），`ops-article.mjs fail --article=<id> --kind=publish --reason=缺封面`，換下一篇。文內圖還沒有上傳工具，這一步不做。
+6. Sanity 暫存：第 10 步（`publish-prepared-article.mjs ../.tmp/auto-publisher/<id>/sanity/article.json` 與 `publish-article-cover.mjs ../content-production/<id>`，都先 dry-run 再 `--apply`），重新 inspect 確認 `staged_noindex` 而且 `hasCover`。
+7. 開放索引：第 11 步。CI 用 `SANITY_PROJECT_ID=e8ctf7ee SANITY_DATASET=production npm run ci`。`routeMode` 是 `hub-landing` 時照第 11 步掛入口文章、失敗時撤回。
+8. 第 12 步：重新 inspect，父 Hub 的 `shouldReleaseIndex` 是 true 就 `--release-index`。
+9. 登記：第 13 步，`--outline=content-planning/hokkaido/hokkaido-wakkanai-outline.json --sanity=.tmp/queue-state.json`（先重新 inspect）。
+
+任何一點失敗照 Skill 記 `ops-article.mjs fail --kind=publish`，**不開放索引**，在「上傳」表記「失敗」與停在哪一點，換下一篇；同一篇連續 3 次失敗會自動停放，加進「上傳停放」表。
+
+**4. 補內連**：兩篇做完後，照 Skill「backfill-links」補最多 5 個（`ops-links.mjs ready --sanity=.tmp/queue-state.json`，先重新 inspect）。CI 一樣要帶上面的兩個環境變數。
+
+**5. 推上網站**：有任何一篇開放索引或補了內連，才做這一點。
+
+1. commit 上傳的封包：`git add content-production/<上傳的 id>/`（`manifest.json`、`audit.json`、`sanity-sync.json`、`images/`），訊息 `feat(content): <id> 上線`。
+2. `git fetch origin`、`git merge --no-edit origin/main`，有衝突就 `git merge --abort`、不推 `main`，在執行紀錄寫明（文章已經在 Sanity，下一次推 `main` 網站才會更新）。
+3. `npm test` 通過後 `git push origin HEAD:main`，Cloudflare 會自動建置並更新網站，約 5 分鐘。不用等它完成；下一輪開始前用 `curl -s -o /dev/null -w "%{http_code}" https://offpathnotes.com<targetPath>` 確認上一輪上線的網址是 200，不是就寫進執行紀錄。
+
+### 6. 收尾
 
 1. 更新 `content-automation/local-run-log.md`（見「執行紀錄」）。
-2. `git add` 只限：`<資料夾>/`、`content-automation/local-run-log.md`、大綱檔（有同步標題時）。commit 訊息 `feat(content): <id> 本機寫作完成`（停放用 `<id> 停放`、略過用 `chore(automation): 本機寫作略過 <原因>`），結尾加 `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`。`git push origin auto/wakkanai-writing`。
+2. `git add` 只限：`<資料夾>/`、`content-automation/local-run-log.md`、大綱檔（有同步標題時），以及第 5 步上傳的 `content-production/<id>/`。commit 訊息 `feat(content): <id> 本機寫作完成`（停放用 `<id> 停放`、略過用 `chore(automation): 本機寫作略過 <原因>`），結尾加 `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`。`git push origin auto/wakkanai-writing`；第 5 步推過 `main` 的話，紀錄更新後再 `git push origin HEAD:main` 一次（先照第 5 步第 2、3 點合併與測試）。
 3. 刪掉 `.auto-writer.lock`。
 
 ## 失敗
@@ -90,24 +136,27 @@ Darren 2026-10-22 改成**每天 5 篇**：一輪仍只寫一篇，改成一天�
 - **來源打不開**（網站掛了，不是驗證碼）：那筆照查核規則記 unreachable；整篇不能放行時停放並寫原因。
 - **工具或環境錯誤**（腳本跑不動、git 拉不下來）：停止這一輪，寫執行紀錄，不換下一篇。
 - 不降低任何門檻、不跳過驗收、不改程式、Skill 或規則文件。
+- 上傳的任何一步失敗都不開放索引，也不為了上線改文章內容；寫作驗收沒過的文章不上傳。
 
 ## 不做的事
 
-- 不上傳 Sanity、不開放索引、不碰 D1 與規劃總表、不建 Hub。
-- 不選圖、不下載圖片。
+- 只做第 5 步列出的上傳動作；不碰規劃總表、不改已上線文章的文字（補內連只加連結）、不改 Hub 文案。
+- 不用 AI 圖、不選文內圖。
 - 不改 `content-planning/` 的事實表、譯名表與規格（研究時發現的更正與新事實只記在文章的 `reference-review.md`，執行紀錄寫「待同步」）；大綱只同步標題文字。
 - 不在瀏覽器點下載（會在 Darren 的電腦跳出存檔視窗）。
 - 不讓電腦發出聲音（Darren 2026-10-23：影片自動播放的音樂會嚇到人）。不在瀏覽器打開 YouTube、Instagram、TikTok 或其他影片頁，影片資訊（標題、說明欄、章節、字幕）用 curl 或 WebFetch 讀。其他網頁要用瀏覽器開時，打開後第一個動作就執行 JavaScript `document.querySelectorAll('video,audio').forEach(m=>{m.muted=true;m.pause()})`，讀完立刻關掉分頁。派子代理會用到瀏覽器時，把這一條原文交代給它。
-- 不合併到 `main`、不 force-push。
+- 只用第 5、6 步的方式推 `main`（先合併 `origin/main`、測試通過）；不 force-push、不 rebase。
 
 ## 執行紀錄
 
-`content-automation/local-run-log.md` 三段：
+`content-automation/local-run-log.md` 五段：
 
 - **最新一輪**：整段覆寫。台北時間、文章 ID、結果（`完成`／`停放`／`略過`／`停止`）、停在哪一步與原因、事實查核輪數與 claim 數、讀者驗收必修條數、開始與結束的用量（有 get_usage 時）、commit 短碼、下一輪預期文章。
 - **停放**：表格（文章 ID、日期、原因、要誰處理），解決後改狀態不刪列。
+- **上傳**：表格第一列插入本輪每一篇（台北時間、文章 ID、結果 `已上線`／`失敗`／`上傳停放`、網址、停在哪一點與原因、封面來源與授權）。
+- **上傳停放**：表格（文章 ID、日期、原因、要誰處理），解決後改狀態不刪列。
 - **紀錄**：表格第一列插入本輪（日期時間、文章 ID、結果、事實查核輪數、5 小時額度用量變化、待同步的事實）。
 
 ## 結束回報
 
-三行：這一輪做了哪篇（或略過與原因）、結果、下一輪預期哪篇。最後一行：執行紀錄是否已更新並推送、鎖是否已刪掉。
+四行：這一輪寫了哪篇（或略過與原因）與結果、上傳了哪幾篇與結果、下一輪預期寫哪篇。最後一行：執行紀錄是否已更新並推送（含 `main`）、鎖是否已刪掉。
