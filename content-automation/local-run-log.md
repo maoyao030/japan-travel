@@ -4,14 +4,16 @@
 
 ## 最新一輪
 
-- 台北時間：2026-10-24 20:44 開始，21:25 結束（排定工作自動執行）
-- 文章：`rishiri-island-weather`（利尻島天氣）
+- 台北時間：2026-10-25 01:44 開始，02:48 結束（排定工作自動執行）
+- 文章：`rishiri-island-food`（利尻島美食）
 - 結果：**完成**（`ready_for_user_preview`，`gates_clear`）
-- 事實查核：3 輪，claim 58 項（第 1 輪 55 項，unsupported 1：開頭「天氣受海風與這座山影響很大」；incorrect 5：中原旅館年底年初也休息、四個資料來源標題是擬的。第 2 輪 58 項剩 2 incorrect：氣象廳預報頁沒有「利尻・礼文」區域、登山傳單是 7 個單位聯名。第 3 輪全部 verified）；讀者驗收必修 7 條（第 1 輪後剩 1 條穿著句矛盾，收斂後 0 條，acceptable）
-- 標題檢查全數保留，大綱不用同步
-- 用量：5 小時額度 0% → 13%；每週額度 47% → 49%
-- commit：本輪 `feat(content): rishiri-island-weather 本機寫作完成`
-- 下一輪預期文章：`rishiri-island-food`
+- 事實查核：3 輪，claim 86 項（第 1 輪 71 項全部 verified，notes 建議 4 條；作者依讀者必修修改後第 2 輪 86 項：unsupported 1「季節裡最確定吃得到海膽的是神居海岸公園」〔四家食堂菜單有海膽丼〕、incorrect 2 對照表日文店名、not-stated 1「招牌多半只有日文」；第 3 輪全部 verified）；讀者驗收必修 7 條（第 1 輪後 0 條，acceptable）
+- 標題檢查改 1 個 H2（「利尻島海膽的產季」→「利尻島海膽與海產的產季」），大綱已同步
+- 上傳：`cape-soya-transport`、`wakkanai-sights` 已上線（開放索引）；新建並開放宗谷岬 Hub；補內連 2 個（稚內交通↔宗谷岬交通）；已推 `main`
+- 用量：5 小時額度 0% → 13%；每週額度 50% → 51%
+- commit：`d1873d9`（寫作）、`33991a2`（上線，已推 `main`）
+- 下一輪預期文章：`rishiri-island-festival`；下一輪預期上傳：`wakkanai-food`、`cape-soya`
+- 備註：工作資料夾本輪開始時沒有 `node_modules`，已在根目錄與 `studio/` 執行 `npm ci`
 
 ## 停放
 
@@ -21,10 +23,23 @@
 | wakkanai-festival | 2026-10-22 | 大綱指定內連句「活動期間市區住宿容易客滿」沒有官方來源（fact-check C35 unsupported）；其他驗收都過 | 待人工規劃 session 改大綱這句內連句（或找到官方來源），再複查 C35、C43 即可 |
 | rebun-island | 2026-10-24 | 大綱指定內連句「活動期間島上住宿容易客滿」沒有官方來源（fact-check C43 unsupported）；其他驗收都過（97 項中 96 verified、讀者 acceptable） | 待人工規劃 session 改大綱這句內連句（建議和 wakkanai-festival 一起處理），再複查 C43 即可 |
 
+## 上傳
+
+| 台北時間 | 文章 ID | 結果 | 網址 | 停在哪一點與原因 | 封面來源與授權 |
+|---|---|---|---|---|---|
+| 2026-10-25 02:40（自動） | wakkanai-sights | 已上線 | https://offpathnotes.com/places/wakkanai/sights/ | — | 維基共享資源 Wakkanai_Breakwater_Dome_20140813-2.jpg，Suicasmo，CC BY-SA 4.0 |
+| 2026-10-25 02:30（自動） | cape-soya-transport | 已上線 | https://offpathnotes.com/places/cape-soya/transport/ | —（先新建宗谷岬 Hub，上線後開放 Hub 索引） | 維基共享資源 Cape-Soya(Soyamisaki)Busstop.jpg，特急東海，CC BY-SA 4.0 |
+
+## 上傳停放
+
+| 文章 ID | 日期 | 原因 | 狀態 |
+|---|---|---|---|
+
 ## 紀錄
 
 | 台北時間 | 文章 ID | 結果 | 事實查核輪數 | 5 小時額度變化 | 待同步的事實 |
 |---|---|---|---|---|---|
+| 2026-10-25 02:48（自動） | rishiri-island-food | 完成 | 3 | 0% → 13% | 利尻島新增 F185～F191（神居海岸公園所在地、利尻富士溫泉在鴛泊栄町步行約 10 分鐘、磯焼亭時間※変更あり、丸善／さとう食堂／磯焼亭／ふる里食堂〔夏〕有海膽丼；與其他利尻島文章撞號，同步時重編）；譯名待同步（鴛泊港渡輪站、沓形港渡輪站、Satou食堂、蕎麥福、丸井食堂、Milpis商店、利尻故鄉食堂、利尻漁協商店、島之驛利尻 海藻之里、兩個祭典名）；大綱 H3「鴛泊渡輪站周邊的食堂」待改；島之驛營業時間官網與りしぷら不一致待重查；缺海膽種苗生產中心事實 |
 | 2026-10-24 21:25（自動） | rishiri-island-weather | 完成 | 3 | 0% → 13% | 利尻島新增 F185～F187（島の四季 12 月積了又融、沓形在島西岸、氣象廳宗谷地方預報頁市町村選択；與 rishiri-island-hiking、stay、sights 撞號，同步時重編）；譯名待同步（利尻海洋飯店、利尻富士觀光飯店、利尻飯店、旅館雪國、姬沼、白色戀人之丘；與 rishiri-island-stay 統一）；丘珠機場位置待補 |
 | 2026-10-24 14:45（自動） | rishiri-island-sights | 完成 | 3 | 2% → 16% | 利尻島新增 F185～F199（宗谷巴士付款、路線巴士夏冬景點站時刻、站名、A 路線 5 月班次、餵海豹、白色戀人之丘位置、各景點所在區、計程車兩家、觀光案內所；與 rishiri-island-hiking、rishiri-island-stay 撞號，同步時重編）、更正 F18、F55、F107、F108、F118，F112 不採用；沓形岬展望台封閉現況待重查；譯名待同步（Pon 山、Otatomari 沼、Kamui Terrace、Fureai 溫泉、寢熊岩、兩家計程車行）；大綱內連表缺 2 句（登山頁） |
 | 2026-10-24 11:30（自動） | rishiri-island-stay | 完成 | 2 | 3% → 14% | 利尻島新增 F185～F189（Heartland Ferry 利尻–禮文時刻、ぐりーんひる inn 在鴛泊與 11–2 月休館、ゆ〜に在鴛泊、森林公園露營場在沓形、りしぷら住宿頁有電話與 WEB 欄；與 rishiri-island-hiking 的 F185～F191 撞號，同步時重編）、更正 F91（オタトマリ沼有商店與食堂）、F93（週日與 8/13–16 不施工），F5 由 F185 取代、F67「約5公里」不用；缺逐家訂房管道與房價；譯名待同步（旅館與露營場名） |
