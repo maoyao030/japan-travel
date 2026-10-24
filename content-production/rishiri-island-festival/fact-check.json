@@ -1,0 +1,854 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-festival",
+  "articleSha256": "2b4c14e47f03052459e2b9b1e10caede74a721a5a8ae268be5054abe452fa242",
+  "checker": "事實查核 agent（Claude Opus 5.5，非作者；唯讀，2026-10-25 第2輪複查，逐句重新比對整篇，以 curl 實際打開各來源，宗谷巴士 PDF 與鬼脇海報看圖讀取）",
+  "checkedAt": "2026-10-25",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "利尻島的夏天，島上四個地區輪流辦祭典",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "［鬼脇エリア］ 毎年７月／第４日曜日 ／ ［鴛泊エリア］ 毎年８月３日 ／ ［1day:沓形、2day:仙法志］ 毎年８月５日〜８月６日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "從6月第1個週日的環島馬拉松開始，一路到8月下旬沓形的美食祭。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "利尻島一周遊悠覧人G ［利尻島全エリア］ 毎年６月／第１日曜日 ／ 飲むべや喰うべやフェスティバル ［沓形エリア］ 毎年8月下旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "利尻島祭典最密的是7月下旬到8月中旬。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "毎年７月／第４日曜日 ／ 毎年８月３日 ／ 毎年８月５日〜８月６日 ／ 毎年８月１１日 ／ 毎年８月中旬 ／ 毎年８月中旬",
+      "verdict": "verified",
+      "notes": "重數：7月下旬到8月中旬共6項，比其他時段密。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "2026年鴛泊港放了1,733發煙火，2025年浮島祭的沓形會場也在晚上8點放了煙火。",
+      "sourceUrl": "https://www.rishiri-plus.jp/7366/",
+      "sourceTitle": "第５２回北海島まつりの実施について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊会場花火大会 本年は1,733発の花火が打ち上げられます！ ／（6854）沓形会場では … 午後８時からは花火大会も開催予定です。",
+      "verdict": "verified",
+      "notes": "兩則都是事前公告（「打ち上げられます」「開催予定」），正文用過去式「放了」，官方沒有事後報告可證實實際施放與是否順延。數字與時間與公告一致，判 verified；作者可考慮改成「排了」。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "會場跨兩個町，鴛泊、鬼脇在利尻富士町，沓形、仙法志在利尻町。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-he-iku/",
+      "sourceTitle": "アクセス | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "（利尻富士町・鴛泊） ／ （利尻町・沓形）；島カレンダー：北海島まつり［鬼脇エリア］利尻富士町最大の夏祭り ／ 利尻浮島まつり［1day:沓形、2day:仙法志］利尻町最大の夏祭り",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "如果只能挑一段時間上島，就挑8月上旬到11日，這幾天的祭典日期每年都一樣。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "北海島まつり ［鴛泊エリア］ 毎年８月３日 ／ 利尻浮島まつり 毎年８月５日〜８月６日 ／ うにうにフェスティバル 毎年８月１１日",
+      "verdict": "verified",
+      "notes": "後句列的 8/3、8/5、8/6、8/11 都是「毎年」固定日期；煙火另句說明不固定。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "8月3日是鴛泊的北海島祭，5日、6日浮島祭在沓形、仙法志各辦一天，11日是吃海膽的海膽祭。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "北海島まつり ［鴛泊エリア］ 毎年８月３日 ／ 利尻浮島まつり ［1day:沓形、2day:仙法志］ 毎年８月５日〜８月６日 ／ うにうにフェスティバル 利尻特産の「ウニ」が主役 … 毎年８月１１日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "鴛泊港的煙火2024、2026年都排在8月4日，每年的日子還是看公告。",
+      "sourceUrl": "https://www.rishiri-plus.jp/6394/",
+      "sourceTitle": "【第５０回 北海島まつり】の開催について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "花火大会（鴛泊港付近）：８月 ４日（日）２０：００～２１：００ ／（7366）鴛泊会場花火大会 … 令和８年８月４日（火）２０時～２０時３０分 場 所 鴛泊港",
+      "verdict": "verified",
+      "notes": "島カレンダー沒有煙火的固定規則，「看公告」成立。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "多數活動不是固定在某一天，就是「每年第幾個週日」，隔年的日子推得出來。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "毎年６月２１日 ／ 毎年６月２５日 ／ 毎年６月２８日 ／ 毎年７月１日 ／ 毎年８月３日 ／ 毎年８月５日〜８月６日 ／ 毎年８月１１日 ／ 毎年６月／第１日曜日 ／ 毎年７月／第４日曜日 ／ 毎年８月／第４日曜日",
+      "verdict": "verified",
+      "notes": "活動曆17項中固定日期7項、第幾個週日（週六）4項，共11項。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "例外只有鴛泊港的煙火，表裡寫的是2026年的日期。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "（表中其他活動在島カレンダー都有「毎年…」規則；花火大会不在島カレンダー上，2026年日期見7366：令和８年８月４日（火））",
+      "verdict": "verified",
+      "notes": "表中以「中旬／下旬」表示的活動也不是固定某天或第幾個週日，但表裡都有「每年」規則可推，只有煙火沒有規則，「例外」的意思成立。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "| 環島馬拉松 | 利尻島一周悠遊覧人G | 每年6月第1個週日 | 環島 | 6月6日 |",
+      "sourceUrl": "https://rishiri-town.jp/%e8%a6%b3%e5%85%89%e3%83%bb%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88/%e8%a6%b3%e5%85%89%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e6%a1%88%e5%86%85/",
+      "sourceTitle": "観光イベント案内 – 利尻町公式サイト",
+      "sourceQuote": "6月 第1日曜日:利尻島一周悠遊覧人G",
+      "verdict": "verified",
+      "notes": "りしぷら寫「遊悠覧人G」，兩個官方寫法不同，正文用町公所寫法。2027年第1個週日6/6，重算正確。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "| 神社例大祭 | 各神社例大祭 | 6月21日～7月1日，各社日期固定 | 仙法志、沓形、鬼脇、鴛泊 | 同左 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "仙法志神社例大祭 ［仙法志エリア］ 毎年６月２１日 ／ 北見冨士神社例大祭 ［沓形エリア］ 毎年６月２５日 ／ 北見神社例大祭 ［鬼脇エリア］ 毎年６月２８日 ／ 利尻山神社例大祭 ［鴛泊エリア］ 毎年７月１日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "| 港口啤酒花園 | みなとビアガーデン | 每年7月中旬 | 鴛泊渡輪站附近的綠地公園（緑地公園） | 7月中旬 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "みなとビアガーデン ［鴛泊エリア］ 毎年７月中旬 鴛泊フェリーターミナル近くの「緑地公園」で開催され",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "| 北海島祭鬼脇會場 | 北海島まつり | 每年7月第4個週日，2026年是7月26日 | 鬼脇港 | 7月25日 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "北海島まつり ［鬼脇エリア］ 毎年７月／第４日曜日（7366：令和８年７月２６日（日）… 場 所 鬼脇港）",
+      "verdict": "verified",
+      "notes": "2026年7月第4個週日是26日、2027年是25日，重算正確。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "| 北海島祭鴛泊會場 | 北海島まつり | 每年8月3日 | 鴛泊，2026年在神社通特設會場（神社通り特設会場） | 8月3日 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "北海島まつり ［鴛泊エリア］ 毎年８月３日 ／（7366）鴛泊会場 … 場 所 神社通り特設会場",
+      "verdict": "verified",
+      "notes": "2024年會場是「鴛泊港付近」（6394），正文註明2026年，條件正確。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "| 鴛泊煙火大會 | 花火大会 | 2026年8月4日 | 鴛泊港 | 看當年公告 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/7366/",
+      "sourceTitle": "第５２回北海島まつりの実施について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊会場花火大会 … 実 施 日 令和８年８月４日（火）２０時～２０時３０分 … 場 所 鴛泊港",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "| 利尻浮島祭 | 利尻浮島まつり | 每年8月5日沓形、8月6日仙法志 | 沓形，2025年在沓形港耐震碼頭（沓形港耐震岸壁）；仙法志 | 8月5日、6日 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/6854/",
+      "sourceTitle": "【第５３回 利尻浮島まつり】の開催について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "沓形会場（沓形港耐震岸壁）：８月５日（火）１６：００～ 仙法志会場（利尻町公民館前）：８月６日（水）１６：００～（島カレンダー：毎年８月５日〜８月６日）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "| 海膽祭 | うにうにフェスティバル | 每年8月11日 | 鴛泊 | 8月11日 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "うにうにフェスティバル ［鴛泊エリア］ 毎年８月１１日 利尻特産の「ウニ」が主役の人気イベント",
+      "verdict": "verified",
+      "notes": "「海膽祭」是意譯，符合活動內容。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "| りしりん祭 | みんな集まれ～りしりん祭り | 每年8月中旬 | 沓形 | 8月中旬 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "みんな集まれ～りしりん祭り ［沓形エリア］ 毎年８月中旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "| 兒童盆舞 | 子ども盆踊り | 每年8月中旬 | 鴛泊 | 8月中旬 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "子ども盆踊り ［鴛泊エリア］ 毎年８月中旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "| 環島自行車活動 | 利尻島一周ふれあいサイクリング | 每年8月第4個週日 | 環島 | 8月22日 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "利尻島一周ふれあいサイクリング ［利尻島全エリア］ 毎年８月／第４日曜日",
+      "verdict": "verified",
+      "notes": "2027年8月第4個週日是22日，重算正確。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "| 夏末美食祭 | 飲むべや喰うべやフェスティバル | 每年8月下旬 | 沓形 | 8月下旬 |",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "飲むべや喰うべやフェスティバル ［沓形エリア］ 毎年8月下旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "出發前再到利尻島觀光協會「りしぷら」的島カレンダー確認。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1136.htm",
+      "sourceTitle": "観光協会利尻富士町",
+      "sourceQuote": "観光協会情報 利尻島の観光情報を随時更新しておりますので是非ご覧願います。 利尻島観光案内（りしぷら） 利尻富士町観光協会事務局",
+      "verdict": "verified",
+      "notes": "正式名稱是利尻富士町観光協会，「利尻島觀光協會」屬泛稱。頁名「島カレンダー」與實際頁面一致。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "6月第1個週日的「利尻島一周悠遊覧人G」是環島馬拉松，繞島一圈約55公里，限時10小時。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "毎年６月／第１日曜日 利尻の景色を楽しみながら一周およそ５５kmの島を、１０時間以内でひと回りするマラソンレース",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "6月21日是仙法志神社，25日是沓形的北見冨士神社，28日是鬼脇的北見神社，7月1日鴛泊的利尻山神社排在最後。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "仙法志神社例大祭 毎年６月２１日 ／ 北見冨士神社例大祭 ［沓形エリア］ 毎年６月２５日 ／ 北見神社例大祭 ［鬼脇エリア］ 毎年６月２８日 ／ 利尻山神社例大祭 ［鴛泊エリア］ 毎年７月１日 … 鴛泊地区が締めを飾ります",
+      "verdict": "verified",
+      "notes": "「日期每年固定」同樣成立。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "北見冨士神社的例大祭保留了松前登城奴行列與四ヶ散米舞兩項傳統藝能，隊伍裡還會出現天狗模樣的猿田彥。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "松前登城奴行列、四ヶ散米舞は、伝統芸能として伝承されています。行列には猿田彦（天狗）も現れ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "想看這些傳統藝能，就安排6月25日在沓形。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "北見冨士神社例大祭 ［沓形エリア］ 毎年６月２５日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "7月中旬的港口啤酒花園辦在鴛泊渡輪站附近的綠地公園。攤位有烤海膽，還有採海膽體驗。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊フェリーターミナル近くの「緑地公園」で開催され、焼ウニ・タコ・ホタテなど新鮮な海産物が味わえる露店や、ウニ採り体験などを楽しめます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "海膽6月中旬開放捕撈，7月正是產季。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "６月・JUNE … 中旬にはウニ（エゾバフンウニ）漁が解禁となり、新鮮なウニを食べることができます。",
+      "verdict": "verified",
+      "notes": "產季見利尻富士町「海の幸」：採取時期は6月から9月まで。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "北海島祭是利尻富士町最大的夏祭，鬼脇會場固定在7月第4個週日。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "北海島まつり ［鬼脇エリア］ 毎年７月／第４日曜日 利尻富士町最大の夏祭り！",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "2026年是第52屆，7月26日13點到19點半在鬼脇港",
+      "sourceUrl": "https://www.rishiri-plus.jp/7366/",
+      "sourceTitle": "第５２回北海島まつりの実施について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "第５２回目となる「北海島まつり」 … 鬼脇会場 実 施 日 令和８年７月２６日（日）１３時～１９時３０分 … 場 所 鬼脇港",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "划船比賽在15:45，18:30的大抽選會是最後一個節目。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/secure/2512/%E5%B3%B6%E3%81%BE%E3%81%A4%E3%82%8A%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC2026_%E9%AC%BC%E8%84%87._t.png",
+      "sourceTitle": "北海島まつり 第52回 2026 鬼脇 海報（島まつりポスター2026_鬼脇）",
+      "sourceQuote": "15:45 ボートレース ／ 17:00 アトラクション ミニライブ ／ 18:30 大抽選会",
+      "verdict": "verified",
+      "notes": "看圖確認，18:30 大抽選會是節目表最後一列。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "活動曆寫鬼脇會場也有煙火，2026年的節目表上沒有排。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鬼脇地区ではボートレースや花火大会も開催しており ／（2026海報節目：13:00〜18:30，無花火）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "天氣不好就延到隔天，2026年的順延日是7月27日。",
+      "sourceUrl": "https://www.rishiri-plus.jp/7366/",
+      "sourceTitle": "第５２回北海島まつりの実施について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "※悪天候の場合7/27（月）に順延",
+      "verdict": "verified",
+      "notes": "「延到隔天」是2026年的安排，正文同句以2026年為例，可接受。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "到了8月，北海島祭換到鴛泊，日期固定在8月3日。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "北海島まつり ［鴛泊エリア］ 毎年８月３日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "2026年是週一，12點到19點半，神社通的臨時會場有攤位，也賣迷你海膽碗。",
+      "sourceUrl": "https://www.rishiri-plus.jp/7366/",
+      "sourceTitle": "第５２回北海島まつりの実施について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊会場 実 施 日 令和８年８月３日（月）１２時～１９時３０分 … 場 所 神社通り特設会場 実施内容 露店、ミニうに椀",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "隔天晚上8點到8點半在鴛泊港放煙火，2026年一共1,733發。",
+      "sourceUrl": "https://www.rishiri-plus.jp/7366/",
+      "sourceTitle": "第５２回北海島まつりの実施について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "本年は1,733発の花火が打ち上げられます！ 実 施 日 令和８年８月４日（火）２０時～２０時３０分 … 場 所 鴛泊港",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "2026年的公告寫明，天氣不好時鴛泊會場延到8月4日，煙火延到8月5日。",
+      "sourceUrl": "https://www.rishiri-plus.jp/7366/",
+      "sourceTitle": "第５２回北海島まつりの実施について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊会場 … ※悪天候の場合8/4（火）に順延 ／ 鴛泊会場花火大会 … ※悪天候の場合8/5（水）に順延",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "當天可以到鴛泊渡輪站裡的觀光案內所問，或看りしぷら的活動公告，確認有沒有順延。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1488.htm",
+      "sourceTitle": "海の駅おしどまり利尻富士町",
+      "sourceQuote": "海の駅おしどまり ・待合所・ボーディングブリッジ・発券所 … ・Wi－Fi・観光案内所",
+      "verdict": "verified",
+      "notes": "鴛泊渡輪站設施內有觀光案內所；りしぷら以「ニュース」發布祭典公告（7366）。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "利尻浮島祭是利尻町最大的夏祭，8月5日在沓形、8月6日在仙法志。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "利尻浮島まつり ［1day:沓形、2day:仙法志］ 毎年８月５日〜８月６日 利尻町最大の夏祭り！",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "不管星期幾都是這兩天，2027年是週四、週五。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "毎年８月５日〜８月６日",
+      "verdict": "verified",
+      "notes": "2027-08-05 週四、08-06 週五，重算正確。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "2025年第53屆的沓形會場在沓形港的耐震碼頭，8月5日下午4點開場，晚上8點放煙火。",
+      "sourceUrl": "https://www.rishiri-plus.jp/6854/",
+      "sourceTitle": "【第５３回 利尻浮島まつり】の開催について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "沓形会場（沓形港耐震岸壁）：８月５日（火）１６：００～ … 午後８時からは花火大会も開催予定です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "仙法志會場則是隔天下午4點開始。",
+      "sourceUrl": "https://www.rishiri-plus.jp/6854/",
+      "sourceTitle": "【第５３回 利尻浮島まつり】の開催について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "仙法志会場（利尻町公民館前）：８月６日（水）１６：００～",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "煙火有沒有、幾點放，看當年的公告，2025年的時間可以當參考。",
+      "sourceUrl": "https://www.rishiri-plus.jp/6854/",
+      "sourceTitle": "【第５３回 利尻浮島まつり】の開催について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "午後８時からは花火大会も開催予定です。",
+      "verdict": "verified",
+      "notes": "島カレンダー與利尻町頁都沒有浮島祭煙火的固定規則，「看當年公告」成立。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "海膽祭うにうにフェスティバル每年8月11日在鴛泊，攤位賣烤海膽與迷你海膽丼，還有比誰吃海膽最快的比賽。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "うにうにフェスティバル ［鴛泊エリア］ 毎年８月１１日 … 焼きウニやミニうに丼などウニをたくさん食べられる出店や、「ウニ早食い競争」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "利尻的蝦夷馬糞海膽6月到9月採收，8月中旬正在產季裡。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm",
+      "sourceTitle": "海の幸利尻富士町",
+      "sourceQuote": "地元では「ガンゼ」と呼ばれるこのエゾバフンウニ！採取時期は6月から9月まで",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "2027年的8月11日是週三。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "うにうにフェスティバル ［鴛泊エリア］ 毎年８月１１日",
+      "verdict": "verified",
+      "notes": "2027-08-11 是週三，重算正確。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "8月中旬，沓形有夏日祭「みんな集まれ～りしりん祭り」，鴛泊同一時期辦兒童盆舞。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "子ども盆踊り ［鴛泊エリア］ 毎年８月中旬 ／ みんな集まれ～りしりん祭り ［沓形エリア］ 毎年８月中旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "到了8月下旬，沓形市區的停車場辦夏末美食祭「飲むべや喰うべやフェスティバル」，替島上的夏天收尾。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "飲んで食べることを楽しむ、利尻の夏を締めくくるイベント。沓形市街地駐車場に多くの飲食店出店が並び",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "8月第4個週日有環島自行車活動「利尻島一周ふれあいサイクリング」。路線串起自行車道與一般公路，繞島一圈約60公里。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "毎年８月／第４日曜日 自転車道と一般道道を結び、利尻島を一周するコースは約６０km",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "9月利尻町有秋季祭典「オータムフェスト」。",
+      "sourceUrl": "https://rishiri-town.jp/%e8%a6%b3%e5%85%89%e3%83%bb%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88/%e8%a6%b3%e5%85%89%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e6%a1%88%e5%86%85/",
+      "sourceTitle": "観光イベント案内 – 利尻町公式サイト",
+      "sourceQuote": "9月 オータムフェスト",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "10月第1個週六、週日，利尻富士町的港內辦利尻島釣鮭魚大會，屬於鬼脇一帶的活動，島外的人也能參加。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "利尻島サケ釣り大会 ［鬼脇エリア］ 毎年１０月／第１土曜日～日曜日 利尻富士町港内で開催される、秋の人気イベント！参加者は島内外を問いません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "冬天的活動在2月上旬，鴛泊有冬季祭典「りしり寒歓まつり」，鬼脇有雪地活動「雪ん子広場」。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "りしり寒歓（かんかん）まつり ［鴛泊エリア］ 毎年２月上旬 ／ 雪ん子広場 ［鬼脇エリア］ 毎年２月上旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "觀光協會網站列出的旅館、民宿、飯店與別墅共34間，另有5處露營場。",
+      "sourceUrl": "https://www.rishiri-plus.jp/wp-sitemap-posts-shima-htsp-1.xml",
+      "sourceTitle": "りしぷら 宿泊施設 sitemap（XML，無頁面標題）",
+      "sourceQuote": "<loc> 共39筆，其中 numaura-camp、kutsugata-camp、shinrin-park、yuuni-campsite、hokuroku-campsite 為露營場",
+      "verdict": "verified",
+      "notes": "39筆扣5處露營場為34間。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "祭典當晚島上住宿容易客滿",
+      "sourceUrl": "https://www.rishiri-plus.jp/reserve/error/",
+      "sourceTitle": "宿泊仮予約受付フォームエラー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "",
+      "verdict": "unsupported",
+      "notes": "原句未改（大綱指定內連句）。第1輪已查過りしぷら站內搜尋（満室、混雑、宿泊予約、お早めに）、各祭典公告（7366、6854、6394、5428）、利尻町與利尻富士町觀光頁、Heartland Ferry 與宗谷巴士時刻表，都沒有「祭典當晚」住宿客滿的說法。最接近的官方原文是「観光ハイシーズンの夏季は毎年大変な混雑が予想されることから、空室状況によっては条件に添えない場合もございます」，主詞是夏季旺季，與正文的「祭典當晚」條件不一致。須由 Darren 或規劃端改大綱連結句。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "晚上的祭典和煙火看完，島上已經沒有路線巴士。夏季兩條島內巴士線的末班車，18點前後就開過各個地區，19:30才結束的會場與晚上8點的煙火都趕不上。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "夏期ダイヤ（6月1日～9月30日） Ａコース 第5便 鴛泊ＦＴ 18:10 着 ／ Ｂコース 第5便 鴛泊ＦＴ 18:38 着（最終便）",
+      "verdict": "verified",
+      "notes": "兩線最後一班經過鬼脇、沓形、仙法志在16:57～18:07之間，最晚18:38回到鴛泊渡輪站；19:30結束、20:00煙火之後沒有班次。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "| 鬼脇 | A線，經沓形繞回 | 16:57 | 18:10 |",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "Ａコース 鴛泊→鬼脇経由→鴛泊 第5便 鬼脇 16:57 … 沓形 17:34 … 鴛泊ＦＴ 18:10",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "| 鬼脇 | B線 | 18:07 | 18:38 |",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "Ｂコース 鴛泊→沓形経由→鴛泊 第5便 鬼脇 18:07 … 鴛泊ＦＴ 18:38",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "| 沓形 | A線 | 17:34 | 18:10 |",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "Ａコース 第5便 沓形 17:34 … 鴛泊ＦＴ 18:10",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "| 沓形 | B線，經鬼脇繞回 | 17:28 | 18:38 |",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "Ｂコース 第5便 沓形 17:28 … 鬼脇 18:07 … 鴛泊ＦＴ 18:38",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "| 仙法志 | A線 | 17:15 | 18:10 |",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "Ａコース 第5便 仙法志 17:15 … 鴛泊ＦＴ 18:10",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "| 仙法志 | B線 | 17:45 | 18:38 |",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "Ｂコース 第5便 仙法志 17:45 … 鴛泊ＦＴ 18:38",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "從鴛泊去鬼脇會場，可以搭12:30的A線，13:02到鬼脇，看完15:45的划船比賽，再搭18:07的B線回鴛泊。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "Ａコース 第3便 鴛泊ＦＴ 12:30 … 鬼脇 13:02 ／ Ｂコース 第5便 鬼脇 18:07",
+      "verdict": "verified",
+      "notes": "划船比賽15:45見2026年鬼脇海報。"
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "浮島祭下午4點開場，從鴛泊搭14:40的A線，15:49就到沓形。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "Ａコース 第4便 鴛泊ＦＴ 14:40 … 沓形 15:49",
+      "verdict": "verified",
+      "notes": "下午4點開場是2025年公告（6854）的時間。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "想待到大抽選會或煙火，就住在會場所在的地區，或租車自己開。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "Ｂコース 第5便 鬼脇 18:07（最終便）",
+      "verdict": "verified",
+      "notes": "編輯建議，依據是18:30大抽選會、20:00煙火時已無巴士；租車見 C67。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "計程車行鴛泊、沓形各一家",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-he-iku/",
+      "sourceTitle": "アクセス | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "タクシー りしりハイヤー （利尻町・沓形） ／ タクシー 富士ハイヤー （利尻富士町・鴛泊）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "租車公司兩個地區都有。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-he-iku/",
+      "sourceTitle": "アクセス | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "レンタカー かめやレンタカー （利尻町・沓形） ／ レンタカー 利尻レンタカー （利尻富士町・鴛泊）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "從稚內搭渡輪到利尻島約1小時40分，夏天一天3個來回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "ー時刻表 日本語(稚内-鴛泊) | ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 稚内発～鴛泊着 07:15～08:55 11:15～12:55 16:40～18:20 ／ 鴛泊発～稚内着 08:25～10:05 12:05～13:45 16:40～18:20",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "從禮文島過來40到45分鐘",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島 | ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 香深発～鴛泊着 10:40～11:25 15:30～16:15 ／ 香深発～沓形着 12:50～13:30",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "6月到9月還有船直接開到沓形，但一天只有1個來回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島 | ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 … 沓形発～香深着 14:25～15:05 ／ 香深発～沓形着 12:50～13:30",
+      "verdict": "verified",
+      "notes": "10月以後的時刻表沒有沓形航線。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "香深12:50開的船13:30到沓形，趕得上浮島祭下午4點開場。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島 | ハートランドフェリー",
+      "sourceQuote": "香深発～沓形着 12:50～13:30",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "回香深的船，沓形14:25、鴛泊13:15就是最後一班，看完祭典當天回不了禮文島，要在利尻島住一晚。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島 | ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 鴛泊発～香深着 09:30～10:15 13:15～14:00 ／ 沓形発～香深着 14:25～15:05",
+      "verdict": "verified",
+      "notes": "時刻表另註「必要に応じて1日2便まで臨時便を運航することがあります」，臨時便不可預期，正文結論成立。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "**りしぷら島カレンダー（活動曆）**，利尻島觀光協會整理的全年活動與每年的日期規則。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "島カレンダー ／ 利尻島一周遊悠覧人G ［利尻島全エリア］ 毎年６月／第１日曜日 … 雪ん子広場 毎年２月上旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "**2026年北海島祭公告**，鬼脇會場、鴛泊會場與鴛泊煙火的當年日期、時間和順延日。",
+      "sourceUrl": "https://www.rishiri-plus.jp/7366/",
+      "sourceTitle": "第５２回北海島まつりの実施について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鬼脇会場 … ※悪天候の場合7/27（月）に順延 ／ 鴛泊会場 … ※悪天候の場合8/4（火）に順延 ／ 鴛泊会場花火大会 … ※悪天候の場合8/5（水）に順延",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "**利尻町觀光活動頁**，浮島祭與沓形一帶活動的町公所介紹。",
+      "sourceUrl": "https://rishiri-town.jp/%e8%a6%b3%e5%85%89%e3%83%bb%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88/%e8%a6%b3%e5%85%89%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e6%a1%88%e5%86%85/",
+      "sourceTitle": "観光イベント案内 – 利尻町公式サイト",
+      "sourceQuote": "8/5：利尻浮島まつり（沓形地区） 8/6：利尻浮島まつり（仙法志地区） 8月下旬：飲むべや喰うべやフェスティバル",
+      "verdict": "verified",
+      "notes": "頁面是月份清單，「介紹」略寬但可接受。"
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "**宗谷巴士利尻エリア頁**，島內A線、B線的夏季與冬季時刻表。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
+      "sourceTitle": "利尻エリア | 宗谷バス株式会社",
+      "sourceQuote": "路線バス時刻表は夏期ダイヤと冬期ダイヤをまとめて掲載しています … 見開き左が夏期ダイヤ(6/1～9/30)、右が冬期ダイヤ(10/1～5/31)となります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "[島カレンダー｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-no-susume/calendar/)",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "[第５２回北海島まつりの実施について｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/7366/)",
+      "sourceUrl": "https://www.rishiri-plus.jp/7366/",
+      "sourceTitle": "第５２回北海島まつりの実施について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "第５２回北海島まつりの実施について",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "[島まつりポスター2026 鬼脇｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/secure/2512/%E5%B3%B6%E3%81%BE%E3%81%A4%E3%82%8A%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC2026_%E9%AC%BC%E8%84%87._t.png)",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/secure/2512/%E5%B3%B6%E3%81%BE%E3%81%A4%E3%82%8A%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC2026_%E9%AC%BC%E8%84%87._t.png",
+      "sourceTitle": "北海島まつり 第52回 2026 鬼脇 海報（檔名 島まつりポスター2026_鬼脇._t.png）",
+      "sourceQuote": "第52回 北海島まつり 2026 7.26（日）13:00－19:30 鬼脇港",
+      "verdict": "verified",
+      "notes": "圖片檔沒有頁面標題，連結文字取自利尻富士町伺服器上的檔名，可接受；連結打開是 PNG 圖。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "[【第５０回 北海島まつり】の開催について｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/6394/)",
+      "sourceUrl": "https://www.rishiri-plus.jp/6394/",
+      "sourceTitle": "【第５０回 北海島まつり】の開催について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "【第５０回 北海島まつり】の開催について",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "[【第５３回 利尻浮島まつり】の開催について｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/6854/)",
+      "sourceUrl": "https://www.rishiri-plus.jp/6854/",
+      "sourceTitle": "【第５３回 利尻浮島まつり】の開催について | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "【第５３回 利尻浮島まつり】の開催について",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "[観光イベント案内｜利尻町](https://rishiri-town.jp/…/観光イベント案内/)",
+      "sourceUrl": "https://rishiri-town.jp/%e8%a6%b3%e5%85%89%e3%83%bb%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88/%e8%a6%b3%e5%85%89%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e6%a1%88%e5%86%85/",
+      "sourceTitle": "観光イベント案内 – 利尻町公式サイト",
+      "sourceQuote": "観光イベント案内",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "[島の四季｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-no-susume/season/)",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "島の四季",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "[名所｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-place/)",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/",
+      "sourceTitle": "名所 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "名所",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "[沓形港フェリーターミナル｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-place/kutsugata-ft/)",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kutsugata-ft/",
+      "sourceTitle": "沓形港フェリーターミナル | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "沓形港フェリーターミナル",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "[交通アクセス｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1416.htm)",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1416.htm",
+      "sourceTitle": "交通アクセス利尻富士町",
+      "sourceQuote": "交通アクセス",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "[アクセス｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-he-iku/)",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-he-iku/",
+      "sourceTitle": "アクセス | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "アクセス",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "[登山口へのアクセス｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm)",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
+      "sourceTitle": "登山口へのアクセス利尻富士町",
+      "sourceQuote": "登山口へのアクセス",
+      "verdict": "verified",
+      "notes": "標題一致。本版正文已不寫「清晨不營業」，此來源目前只支撐計程車行名稱，可保留。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "[海の駅おしどまり｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1488.htm)",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1488.htm",
+      "sourceTitle": "海の駅おしどまり利尻富士町",
+      "sourceQuote": "海の駅おしどまり",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "[バス運行時刻表（2026年4月28日改正）｜宗谷バス](http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf)",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（宗谷バス株利尻営業所，2026年4月28日改正）",
+      "sourceQuote": "2026年４月28日改正 バス運行時刻表 宗谷バス株利尻営業所",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "[利尻島～礼文島｜ハートランドフェリー](https://heartlandferry.jp/timetable/time2/)",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島 | ハートランドフェリー",
+      "sourceQuote": "利尻島～礼文島",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "[宿泊施設｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/)",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/",
+      "sourceTitle": "宿泊施設 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "宿泊施設",
+      "verdict": "verified",
+      "notes": "標題一致。34間＋5處露營場的計數依據是同站 sitemap（C54），這頁是給讀者看的清單頁。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "[海の幸｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm)",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm",
+      "sourceTitle": "海の幸利尻富士町",
+      "sourceQuote": "海の幸",
+      "verdict": "verified",
+      "notes": "標題一致。"
+    }
+  ],
+  "summary": {
+    "verified": 92,
+    "incorrect": 0,
+    "unsupported": 1,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
