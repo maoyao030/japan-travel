@@ -4,16 +4,16 @@
 
 ## 最新一輪
 
-- 台北時間：2026-10-25 01:44 開始，02:48 結束（排定工作自動執行）
-- 文章：`rishiri-island-food`（利尻島美食）
-- 結果：**完成**（`ready_for_user_preview`，`gates_clear`）
-- 事實查核：3 輪，claim 86 項（第 1 輪 71 項全部 verified，notes 建議 4 條；作者依讀者必修修改後第 2 輪 86 項：unsupported 1「季節裡最確定吃得到海膽的是神居海岸公園」〔四家食堂菜單有海膽丼〕、incorrect 2 對照表日文店名、not-stated 1「招牌多半只有日文」；第 3 輪全部 verified）；讀者驗收必修 7 條（第 1 輪後 0 條，acceptable）
-- 標題檢查改 1 個 H2（「利尻島海膽的產季」→「利尻島海膽與海產的產季」），大綱已同步
-- 上傳：`cape-soya-transport`、`wakkanai-sights` 已上線（開放索引）；新建並開放宗谷岬 Hub；補內連 2 個（稚內交通↔宗谷岬交通）；已推 `main`
-- 用量：5 小時額度 0% → 13%；每週額度 50% → 51%
-- commit：`d1873d9`（寫作）、`33991a2`（上線，已推 `main`）
-- 下一輪預期文章：`rishiri-island-festival`；下一輪預期上傳：`wakkanai-food`、`cape-soya`
-- 備註：工作資料夾本輪開始時沒有 `node_modules`，已在根目錄與 `studio/` 執行 `npm ci`
+- 台北時間：2026-10-25 04:44 開始，06:00 結束（排定工作自動執行）
+- 文章：`rishiri-island-festival`（利尻島祭典）
+- 結果：**停放**（停在第 3 步驗收收斂）：大綱指定內連句「祭典當晚島上住宿容易客滿」沒有官方來源（fact-check C55 unsupported），和 `wakkanai-festival`、`rebun-island` 同一個原因；其他驗收都過
+- 事實查核：2 輪，claim 93 項（第 1 輪 74 項中 16 項沒過：三地煙火、鴛泊會場其實每年 8/3、鬼脇 2026 沒排煙火、鮭魚釣地點、8 個資料來源標題等；作者修改後第 2 輪 92 項 verified，只剩 C55）；讀者驗收必修 10 條（修改後 0 條，acceptable）
+- 標題檢查改 2 個 H3（「利尻浮島祭」→「8 月 5、6 日的利尻浮島祭」、「うにうにフェスティバル」→「8 月 11 日的海膽祭うにうにフェスティバル」），大綱已同步
+- 上傳：**沒做**。D1 指令失敗（Cloudflare 7403「account is not valid or is not authorized」）；`wrangler whoami` 顯示帳號清單是空的、權限只剩讀取，這台電腦的 wrangler 登入狀態失效。需要 Darren 在工作資料夾執行 `npx wrangler login` 重新授權。沒碰 Sanity、沒開放索引、沒推 `main`
+- 用量：5 小時額度 13% → 24%；每週額度 51% → 53%
+- commit：`789c787`（停放）
+- 下一輪預期文章：`rishiri-island`（稚內群最後一篇）；下一輪預期上傳（wrangler 重新登入後）：`wakkanai-food`、`cape-soya`
+- 上一輪上線的兩個網址（`/places/cape-soya/transport/`、`/places/wakkanai/sights/`）本輪開始時確認都是 200
 
 ## 停放
 
@@ -21,12 +21,14 @@
 |---|---|---|---|
 | wakkanai-stay | 2026-10-21 | 事實表缺房價、含餐、房型與逐家訂房管道；分工表「宗谷岬唯一的民宿」與 F186 兩家不符 | 待人工規劃 session 補事實並修分工表 |
 | wakkanai-festival | 2026-10-22 | 大綱指定內連句「活動期間市區住宿容易客滿」沒有官方來源（fact-check C35 unsupported）；其他驗收都過 | 待人工規劃 session 改大綱這句內連句（或找到官方來源），再複查 C35、C43 即可 |
+| rishiri-island-festival | 2026-10-25 | 大綱指定內連句「祭典當晚島上住宿容易客滿」沒有官方來源（fact-check C55 unsupported；官方只有りしぷら reserve/error 頁「夏季は毎年大変な混雑」）；其他驗收都過（93 項中 92 verified、讀者 acceptable） | 待人工規劃 session 改大綱這句內連句（建議改成以夏季為主詞，和 wakkanai-festival、rebun-island 一起處理），再複查 C55 即可 |
 | rebun-island | 2026-10-24 | 大綱指定內連句「活動期間島上住宿容易客滿」沒有官方來源（fact-check C43 unsupported）；其他驗收都過（97 項中 96 verified、讀者 acceptable） | 待人工規劃 session 改大綱這句內連句（建議和 wakkanai-festival 一起處理），再複查 C43 即可 |
 
 ## 上傳
 
 | 台北時間 | 文章 ID | 結果 | 網址 | 停在哪一點與原因 | 封面來源與授權 |
 |---|---|---|---|---|---|
+| 2026-10-25 05:58（自動） | wakkanai-food、cape-soya | 失敗（沒開始） | — | 第 3 點第 1 步 D1：wrangler 登入失效（7403），沒碰 Sanity、沒開放索引 | — |
 | 2026-10-25 02:40（自動） | wakkanai-sights | 已上線 | https://offpathnotes.com/places/wakkanai/sights/ | — | 維基共享資源 Wakkanai_Breakwater_Dome_20140813-2.jpg，Suicasmo，CC BY-SA 4.0 |
 | 2026-10-25 02:30（自動） | cape-soya-transport | 已上線 | https://offpathnotes.com/places/cape-soya/transport/ | —（先新建宗谷岬 Hub，上線後開放 Hub 索引） | 維基共享資源 Cape-Soya(Soyamisaki)Busstop.jpg，特急東海，CC BY-SA 4.0 |
 
@@ -39,6 +41,7 @@
 
 | 台北時間 | 文章 ID | 結果 | 事實查核輪數 | 5 小時額度變化 | 待同步的事實 |
 |---|---|---|---|---|---|
+| 2026-10-25 06:00（自動） | rishiri-island-festival | 停放 | 2 | 13% → 24% | 利尻島新增 F185～F191（鴛泊會場每年 8/3、2024 與 2026 煙火 8/4、2026 鬼脇節目表、夏季末班巴士、Heartland Ferry 香深–沓形與鴛泊末班；與其他利尻島文章撞號，同步時重編）、更正 F150（北見冨士神社在沓形）、F153、F155、F156（雨延日）、F162（利尻富士町港內）；譯名待同步（北海島祭、利尻浮島祭、港口啤酒花園、海膽祭等；馬拉松日文名兩種寫法）；上傳因 wrangler 登入失效沒做 |
 | 2026-10-25 02:48（自動） | rishiri-island-food | 完成 | 3 | 0% → 13% | 利尻島新增 F185～F191（神居海岸公園所在地、利尻富士溫泉在鴛泊栄町步行約 10 分鐘、磯焼亭時間※変更あり、丸善／さとう食堂／磯焼亭／ふる里食堂〔夏〕有海膽丼；與其他利尻島文章撞號，同步時重編）；譯名待同步（鴛泊港渡輪站、沓形港渡輪站、Satou食堂、蕎麥福、丸井食堂、Milpis商店、利尻故鄉食堂、利尻漁協商店、島之驛利尻 海藻之里、兩個祭典名）；大綱 H3「鴛泊渡輪站周邊的食堂」待改；島之驛營業時間官網與りしぷら不一致待重查；缺海膽種苗生產中心事實 |
 | 2026-10-24 21:25（自動） | rishiri-island-weather | 完成 | 3 | 0% → 13% | 利尻島新增 F185～F187（島の四季 12 月積了又融、沓形在島西岸、氣象廳宗谷地方預報頁市町村選択；與 rishiri-island-hiking、stay、sights 撞號，同步時重編）；譯名待同步（利尻海洋飯店、利尻富士觀光飯店、利尻飯店、旅館雪國、姬沼、白色戀人之丘；與 rishiri-island-stay 統一）；丘珠機場位置待補 |
 | 2026-10-24 14:45（自動） | rishiri-island-sights | 完成 | 3 | 2% → 16% | 利尻島新增 F185～F199（宗谷巴士付款、路線巴士夏冬景點站時刻、站名、A 路線 5 月班次、餵海豹、白色戀人之丘位置、各景點所在區、計程車兩家、觀光案內所；與 rishiri-island-hiking、rishiri-island-stay 撞號，同步時重編）、更正 F18、F55、F107、F108、F118，F112 不採用；沓形岬展望台封閉現況待重查；譯名待同步（Pon 山、Otatomari 沼、Kamui Terrace、Fureai 溫泉、寢熊岩、兩家計程車行）；大綱內連表缺 2 句（登山頁） |
