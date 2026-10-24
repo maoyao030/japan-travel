@@ -5,14 +5,15 @@
 ## 最新一輪
 
 - 台北時間：2026-10-24 13:44 開始，14:45 結束（排定工作自動執行）
-- 文章：（利尻島景點）
-- 結果：**完成**（，）
+- 文章：`rishiri-island-sights`（利尻島景點）
+- 結果：**完成**（`ready_for_user_preview`，`gates_clear`）
 - 事實查核：3 輪，claim 112 項（第 1 輪 93 項，incorrect 5：繞島時間只寫最短班、觀光巴士 A 路線 5 月也有開、餵海豹限 6–9 月、自行車 9/30 停業、關得最早的景點；unsupported 1：沓形岬展望台封閉現況；not-stated 1：山上沒有一般廁所。第 2 輪 113 項剩 1 not-stated（留現金的建議）。第 3 輪協調者改三句後 112 項全部 verified）；讀者驗收必修 15 條（最終 0 條，acceptable）
 - 標題檢查全數保留，大綱不用同步
 - 用量：5 小時額度 2% → 16%；每週額度 45% → 47%
 - 注意：事實查核者第 1 輪曾用瀏覽器開宗谷巴士 PDF，跳出存檔對話框（沒有存檔，分頁已關）；之後 PDF 一律用 curl。local-writer.md 已寫「不在瀏覽器點下載」，可考慮補一句「PDF 不用瀏覽器開」（本輪不改規則文件）
-- commit：本輪 （短碼見 git log）
-- 下一輪預期文章：
+- commit：本輪 `bf7175e`（`feat(content): rishiri-island-sights 本機寫作完成`），紀錄修正另一個 commit
+- 下一輪預期文章：`rishiri-island-weather`
+
 ## 停放
 
 | 文章 ID | 日期 | 原因 | 狀態 |
