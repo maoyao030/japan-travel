@@ -4,17 +4,17 @@
 
 ## 最新一輪
 
-- 台北時間：2026-10-25 22:44 開始，22:57 結束（排定工作自動執行，週末加量的 22:42 輪）
+- 台北時間：2026-10-26 01:44 開始，01:56 結束（排定工作自動執行，01:42 輪）
 - 文章：無（寫作**略過**：稚內群已全部寫完或停放，停放 4 篇待人工處理）
-- 上傳：**`rishiri-island-weather`、`rishiri-island-food` 已上線**（都是 `parent-direct-article`，利尻島 Hub 已開放索引）；天氣頁上線前接好一個內連（連到 `/places/wakkanai/ferry/`）；CI 與 `npm test` 都通過後推 `main`
-- D1 兩篇原本沒有紀錄，先 `start` 再 `accepted`，這次有設 `MSYS_NO_PATHCONV`，`target_path` 正確
-- 封面由選圖子代理選（只選封面），裁切後親自看過；美食頁 Commons 上沒有能確定在利尻島拍的海膽照片，改用沓形一帶曬昆布的照片
-- 補內連：沒有待補的
-- 開始時確認 `/places/rishiri-island/sights/`、`/places/rishiri-island/stay/` 都是 200
-- 用量：5 小時額度 0% → 2%；每週額度 62% → 62%
-- commit：上線封包 `e1907de`（已推 `main`），本紀錄見 `git log`
-- 下一輪預期文章：寫作仍會略過；下一輪預期上傳：`rishiri-island`（之後稚內群可上傳的都上完，剩停放與上傳停放的待人工處理）
-- 下一輪開始時確認 `/places/rishiri-island/weather/`、`/places/rishiri-island/food/` 是 200
+- 上傳：**`rishiri-island` 已上線**（`hub-landing`：CI 通過後掛成利尻島 Hub 入口文章，再開放索引；Hub 原本已開放索引，不用 release-index）；上線前接好 7 個內連；CI 與 `npm test` 都通過後推 `main`
+- D1 原本沒有紀錄，先 `start` 再 `accepted`，有設 `MSYS_NO_PATHCONV`
+- 封面由選圖子代理選（只選封面），裁切後親自看過：從禮文島隔海拍的利尻島與利尻山全景
+- 補內連：5 個全部補上（利尻島登山、景點、住宿、天氣、美食五頁連到主頁「利尻島值得去嗎」，link 33、36、38、40、42），CI 通過後標 linked
+- 開始時確認 `/places/rishiri-island/weather/`、`/places/rishiri-island/food/` 都是 200
+- 用量：5 小時額度 9% → 17%；每週額度 63% → 64%
+- commit：上線封包 `7e8ae37`（已推 `main`），本紀錄見 `git log`
+- 下一輪預期文章：寫作仍會略過；上傳也沒有可上的（稚內群可上傳的都上完，剩停放 4 篇與上傳停放 1 篇待人工處理）
+- 下一輪開始時確認 `/places/rishiri-island/` 是 200
 
 ## 停放
 
@@ -29,6 +29,7 @@
 
 | 台北時間 | 文章 ID | 結果 | 網址 | 停在哪一點與原因 | 封面來源與授權 |
 |---|---|---|---|---|---|
+| 2026-10-26 01:52（自動） | rishiri-island | 已上線 | https://offpathnotes.com/places/rishiri-island/ | —（掛成利尻島 Hub 入口文章） | 維基共享資源 Rishiri Island 20140814.jpg（從禮文島隔海拍的利尻島），Suicasmo，CC BY-SA 4.0 |
 | 2026-10-25 22:52（自動） | rishiri-island-food | 已上線 | https://offpathnotes.com/places/rishiri-island/food/ | — | 維基共享資源 Rishiri 046 30092006.JPG（利尻島沓形一帶曬昆布），Dmitry Petelin，Public domain（PD-self） |
 | 2026-10-25 22:52（自動） | rishiri-island-weather | 已上線 | https://offpathnotes.com/places/rishiri-island/weather/ | — | 維基共享資源 Mt Rishiri.jpg（6 月殘雪的利尻山），Japanexperterna.se，CC BY-SA 3.0 |
 | 2026-10-25 20:57（自動） | rishiri-island-stay | 已上線 | https://offpathnotes.com/places/rishiri-island/stay/ | — | 維基共享資源 130726 Oshidomari Port in Rishiri Island Hokkaido Japan08n.jpg（鴛泊港與 Peshi 岬），663highland，CC BY 2.5 |
@@ -56,6 +57,7 @@
 
 | 台北時間 | 文章 ID | 結果 | 事實查核輪數 | 5 小時額度變化 | 待同步的事實 |
 |---|---|---|---|---|---|
+| 2026-10-26 01:56（自動） | — | 略過（稚內群已全部寫完） | — | 9% → 17% | 無；上傳 rishiri-island，補內連 5 個 |
 | 2026-10-25 22:57（自動） | — | 略過（稚內群已全部寫完） | — | 0% → 2% | 無；上傳 rishiri-island-weather、rishiri-island-food |
 | 2026-10-25 21:02（自動） | — | 略過（稚內群已全部寫完） | — | 33% → 42% | 無；上傳 rishiri-island-sights、rishiri-island-stay，補內連 1 個 |
 | 2026-10-25 17:58（自動） | — | 略過（稚內群已全部寫完） | — | 11% → 14% | 無；上傳 rishiri-island-hiking、rebun-island-food |
