@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island-hiking",
+  "articleTitle": "禮文島健行，各步道時間、起訖點巴士與花季",
+  "targetUrl": "/places/rebun-island/hiking/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-25",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-hiking/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-25",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是在禮文島走步道：草原稜線上的步道、夏天的花與海。",
+      "mustShow": ["禮文島的步道（看得出是可以走的路）", "禮文島的草原稜線、海岸或海"],
+      "mustNotShow": ["可辨識的人物臉部", "旅館、店家招牌或商標當主體", "利尻島或其他島嶼冒充禮文島", "AI 生成或合成畫面", "與住宿頁封面相同的照片（Rebun's Momoiwa (52357581315).jpg）"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Rebun_island_%2852357580650%29.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.55},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 2022 年 7 月 26 日在桃岩展望台附近（座標 45.2921, 141.0302）往南拍的稜線步道：前景是有白色木柵的步道與夏天的白花、紫花，步道沿綠色草原稜線一路延伸，右邊是海岸斷崖與海上的岩礁，遠處步道上有幾個很小的健行者背影，看不出是誰。畫面同時有「步道」「花」「海」，正好對應這篇的步道與花季，又不是住宿頁用過的桃岩那張。原圖 3:2、6713 px 寬，裁 16:9 時上下各切掉一點天空與前景草叢，焦點略往下放，木柵與稜線都保留。cover-02 是同一位作者同一天在桃岩登山口一帶拍的，前景是步道的木階梯，中景是山路與停車場上的紅色觀光巴士，可當備選；但巴士與停車場上的遊客比較搶眼，步道的感覺不如 cover-01。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-25",
+        "photoSearchNotes": "用維基共享資源 API 查關鍵字「Rebun trail」「Rebun hiking」「Rebun Island flowers」「礼文島 コース」「礼文林道」「Rebun Atsumoriso」「Leontopodium discolor Rebun」「Cypripedium macranthos var. rebunense」「Momoiwa trail」「Cape Sukoton」「Gorota」，並列出分類 Rebun Island、Cape Gorota、Momoiwa、Mount Rebun、Nekoiwa (Rebun)、Cape Sukai、Cape Sukoton、Tourism in Rebun 的檔案（只看寬 1600 px 以上的橫式）。看過 18 張縮圖：Raita Futo 2022 系列（CC BY 2.0）、Suicasmo 2014 系列（CC BY-SA 4.0，含礼文林道指標牌與山路）、663highland 2013 ゴロタ岬（CC BY 2.5）、hoge asdf 2012、間瀬晴之 2010 澄海岬。禮文敦盛草的照片有 ほくなん 2007（Public domain）、hoge asdf 2012（3008 px），都是花的特寫，看不出是步道，封面不用；sunoochi 系列標題是園藝品系名，可能是栽培株，不用。住宿頁已用的 Rebun's Momoiwa (52357581315).jpg 依指示排除。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rebun_island_(52357580650).jpg",
+          "creatorName": "Raita Futo",
+          "sourceTitle": "File:Rebun island (52357580650).jpg",
+          "sourceDescription": "礼文島（Flickr 匯入，FlickreviewR 2023-03-29 已核對 CC BY 2.0，分類 Rebun Island，座標 45.292075, 141.030236）",
+          "takenAt": "2022-07-26",
+          "width": 6713,
+          "height": 4475,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "檔案頁只寫「礼文島」，座標在桃岩展望台附近，畫面應是桃岩展望台步道往元地燈台方向的稜線，但檔案頁沒有寫明是哪一條步道；只當封面，不拿來指認特定步道。",
+          "whyItFits": "畫面主體就是一條穿過草原稜線的步道，前景有夏天的花，右邊是禮文島西側的海岸斷崖與海，直接對應這篇的步道與花季；拍攝座標在禮文島桃岩一帶。",
+          "altDraft": "禮文島草原稜線上的步道，前景有白色木柵與夏天的野花，右邊是斷崖與海",
+          "captionDraft": "禮文島桃岩一帶的稜線步道（2022 年 7 月）。",
+          "creditDraft": "照片：Raita Futo／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "遠處步道上有幾個很小的健行者背影，無法辨識",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀與步道木柵",
+            "risk": "low",
+            "notes": "沒有可辨識的人物、招牌或建築，不會讓人誤以為是本站實地拍攝或某間旅館的實景。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rebun_island_mountains_(52357474699).jpg",
+          "creatorName": "Raita Futo",
+          "sourceTitle": "File:Rebun island mountains (52357474699).jpg",
+          "sourceDescription": "礼文島の山（Flickr 匯入，FlickreviewR 2023-03-29 已核對 CC BY 2.0，分類 Rebun Island，座標 45.298922, 141.032961）",
+          "takenAt": "2022-07-26",
+          "width": 6719,
+          "height": 4479,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "看得出是禮文島的山與步道，但檔案頁沒有寫明是哪一條步道或哪個登山口；停車場上的巴士不代表本文介紹的路線巴士。",
+          "whyItFits": "前景是步道的木階梯，往下接到山路，遠處是禮文島的山稜與海，有走步道的感覺。",
+          "altDraft": "禮文島山坡上的步道木階梯，下方是彎曲的山路與停車場，遠處是山稜與海",
+          "captionDraft": "禮文島的山與步道（2022 年 7 月）。",
+          "creditDraft": "照片：Raita Futo／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "停車場上有一小群遊客，縮小後無法辨識臉",
+            "logos": "紅色觀光巴士車身有圖案，縮圖下看不清文字",
+            "artwork": "none",
+            "property": "山路、停車場與觀光巴士",
+            "risk": "low",
+            "notes": "巴士很小，不是畫面主體；但比 cover-01 多了車輛與人群，只當備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
