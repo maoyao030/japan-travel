@@ -74,15 +74,159 @@
       "nameJa": "旭川",
       "kind": "place",
       "region": "hokkaido",
+      "groupId": "hokkaido-asahikawa",
+      "status": "planned",
+      "gatewayPlaceIds": ["sapporo"],
+      "nearbyPlaceIds": ["higashikawa", "asahidake", "sounkyo", "wakkanai", "biei", "furano"],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "稚內 到", "suggestion": "稚內 到 旭川", "checkedAt": "2026-10-17"},
+        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "紋別から ", "suggestion": "紋別から 旭川", "checkedAt": "2026-10-17"},
+        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "旭川から ", "suggestion": "旭川から 層雲峡、旭川から 稚内、旭川から 富良野", "checkedAt": "2026-10-26"}
+      ],
+      "note": "旭川・大雪群的起點與出入口（JR 旭川站、旭川機場）。稚內群的出入口之一：旭川到稚內由已上線的稚內交通頁負責。旭山動物園升格成旭川的景點頁。往美瑛、富良野的交通歸之後的富良野・美瑛群。"
+    },
+    {
+      "placeId": "higashikawa",
+      "nameZh": "東川",
+      "nameJa": "東川町",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": "hokkaido-asahikawa",
+      "status": "planned",
+      "gatewayPlaceIds": ["asahikawa"],
+      "nearbyPlaceIds": ["asahidake", "asahikawa"],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "旭川 東川", "suggestion": "旭川 東川 バス", "checkedAt": "2026-10-26"},
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "東川町", "suggestion": "東川町景點、東川町美食", "checkedAt": "2026-10-26"}
+      ],
+      "note": "旭川機場旁、往旭岳路上的町；只做主頁，交通、景點、美食、住宿、祭典都寫在主頁。中文「東川町」前幾名是日本語學校，主要查詢用「東川町景點」。"
+    },
+    {
+      "placeId": "asahidake",
+      "nameZh": "旭岳",
+      "nameJa": "旭岳",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": "hokkaido-asahikawa",
+      "status": "planned",
+      "gatewayPlaceIds": ["asahikawa"],
+      "nearbyPlaceIds": ["higashikawa", "sounkyo", "asahikawa", "biei"],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "旭川 旭岳", "suggestion": "旭川 旭岳 バス", "checkedAt": "2026-10-26"},
+        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "層雲峡 旭岳", "suggestion": "層雲峡 旭岳 どっち", "checkedAt": "2026-10-26"}
+      ],
+      "note": "屬東川町，含旭岳溫泉、旭岳纜車、姿見の池與天人峽（併入主頁一節）。中文「大雪山」是台中的森林遊樂區，不當查詢詞。"
+    },
+    {
+      "placeId": "sounkyo",
+      "nameZh": "層雲峽",
+      "nameJa": "層雲峡",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": "hokkaido-asahikawa",
+      "status": "planned",
+      "gatewayPlaceIds": ["asahikawa"],
+      "nearbyPlaceIds": ["asahidake", "asahikawa", "akan-lake", "abashiri"],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "旭川 層雲峡", "suggestion": "旭川 層雲峡 バス時刻表", "checkedAt": "2026-10-26"},
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "層雲峽 交通", "suggestion": "層雲峽 到 阿寒湖 交通、網走 層雲峽 交通", "checkedAt": "2026-10-26"}
+      ],
+      "note": "屬上川町，上川町（上川站周邊、大雪森のガーデン）併入層雲峽。往北見、阿寒湖的サンライズ號是道東群的線索。"
+    },
+    {
+      "placeId": "kamikawa",
+      "nameZh": "上川",
+      "nameJa": "上川町",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": null,
+      "status": "merged",
+      "mergedInto": "sounkyo",
+      "gatewayPlaceIds": [],
+      "nearbyPlaceIds": [],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "上川町", "suggestion": "上川町層雲峡温泉、上川町景點", "checkedAt": "2026-10-26"}
+      ],
+      "note": "層雲峽就在上川町；查「上川町」只出層雲峽，併入層雲峽的景點頁與主頁。"
+    },
+    {
+      "placeId": "tenninkyo",
+      "nameZh": "天人峽",
+      "nameJa": "天人峡",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": null,
+      "status": "merged",
+      "mergedInto": "asahidake",
+      "gatewayPlaceIds": [],
+      "nearbyPlaceIds": [],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "天人峽", "suggestion": "天人峽溫泉、旭岳 天人峽", "checkedAt": "2026-10-26"}
+      ],
+      "note": "中文只有 2 個弱訊號、事實 14 筆，寫成旭岳主頁一節，住宿寫在旭岳溫泉住宿頁。"
+    },
+    {
+      "placeId": "biei",
+      "nameZh": "美瑛",
+      "nameJa": "美瑛",
+      "kind": "place",
+      "region": "hokkaido",
       "groupId": null,
       "status": "candidate",
       "gatewayPlaceIds": [],
-      "nearbyPlaceIds": ["wakkanai"],
+      "nearbyPlaceIds": [],
       "evidence": [
-        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "稚內 到", "suggestion": "稚內 到 旭川", "checkedAt": "2026-10-17"},
-        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "紋別から ", "suggestion": "紋別から 旭川", "checkedAt": "2026-10-17"}
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "旭川 到", "suggestion": "旭川 到美瑛 交通", "checkedAt": "2026-10-26"},
+        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "美瑛 富良野 ", "suggestion": "美瑛 富良野 モデルコース", "checkedAt": "2026-10-26"}
       ],
-      "note": "稚內與紋別的共同出入口；找下一群時的第一名候選（2026-10-17 試跑）。"
+      "note": "富良野・美瑛群（第三名）的地點；旭川到美瑛的交通歸之後的美瑛交通頁。"
+    },
+    {
+      "placeId": "furano",
+      "nameZh": "富良野",
+      "nameJa": "富良野",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": null,
+      "status": "candidate",
+      "gatewayPlaceIds": [],
+      "nearbyPlaceIds": [],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "旭川 到", "suggestion": "旭川 到富良野", "checkedAt": "2026-10-26"},
+        {"provider": "Google autocomplete", "locale": "ja-JP", "query": "旭川 富良野 ", "suggestion": "旭川 富良野 バス", "checkedAt": "2026-10-26"}
+      ],
+      "note": "富良野・美瑛群的地點；旭川群做完後接（選群報告 2026-10-26）。"
+    },
+    {
+      "placeId": "akan-lake",
+      "nameZh": "阿寒湖",
+      "nameJa": "阿寒湖",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": null,
+      "status": "candidate",
+      "gatewayPlaceIds": [],
+      "nearbyPlaceIds": [],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "層雲峽 交通", "suggestion": "層雲峽 到 阿寒湖 交通", "checkedAt": "2026-10-26"}
+      ],
+      "note": "道東的地點；層雲峽往阿寒湖有サンライズ號（層雲峽研究 F21～F27）。"
+    },
+    {
+      "placeId": "abashiri",
+      "nameZh": "網走",
+      "nameJa": "網走",
+      "kind": "place",
+      "region": "hokkaido",
+      "groupId": null,
+      "status": "candidate",
+      "gatewayPlaceIds": [],
+      "nearbyPlaceIds": [],
+      "evidence": [
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "層雲峽 交通", "suggestion": "網走 層雲峽 交通", "checkedAt": "2026-10-26"},
+        {"provider": "Google autocomplete", "locale": "zh-TW", "query": "旭川 到", "suggestion": "旭川 到 網走", "checkedAt": "2026-10-26"}
+      ],
+      "note": "流冰群的地點候選；旭川經石北本線往網走（旭川研究 F38）。"
     },
     {
       "placeId": "sapporo",
@@ -113,6 +257,20 @@
         "地區的第一群，Darren 選北海道（2026-10-16）。",
         "四地共用稚內港與 Heartland Ferry，搜尋結果前十名有三個網址重複出現（2026-10-16 Ahrefs）。",
         "出入口依中文自動完成「稚內 到 札幌」「稚內 到 旭川」（2026-10-17）。"
+      ]
+    },
+    {
+      "groupId": "hokkaido-asahikawa",
+      "label": "旭川・大雪群",
+      "region": "hokkaido",
+      "placeIds": ["asahikawa", "higashikawa", "asahidake", "sounkyo"],
+      "gatewayPlaceIds": ["sapporo", "wakkanai"],
+      "selectedAt": "2026-10-26",
+      "reasons": [
+        "照找下一群自動選出（content-planning/hokkaido/next-group-2026-10-26.md）：旭川和稚內群有 3 個相連訊號（共用出入口、JR 宗谷本線特急サロベツ、自動完成「稚内から旭川」「旭川 到 稚內」），冬季旺季 1～5 個月後，台灣需求最高。",
+        "東川、旭岳、層雲峽都以旭川站、旭川機場為出入口，旭川電氣軌道いで湯號、道北巴士層雲峽線各自連到旭川；日文自動完成「層雲峡 旭岳 どっち」「旭岳 層雲峡 縦走」。",
+        "第二名豐富・薩羅貝茲（中文需求很低、季節 8 個月後）；第三名富良野・美瑛（需求很高，但跟稚內群不直接相連，要經旭川接）。旭川周邊 8 個地點超過 6 個上限，依出入口拆成本群與富良野・美瑛群。",
+        "Darren 2026-10-26 同意這群大綱通過檢查就直接寫（AGENTS.md 最後一段）。"
       ]
     }
   ]

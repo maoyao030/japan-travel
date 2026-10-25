@@ -5,7 +5,11 @@
     "wakkanai",
     "cape-soya",
     "rishiri-island",
-    "rebun-island"
+    "rebun-island",
+    "asahikawa",
+    "sounkyo",
+    "asahidake",
+    "higashikawa"
   ],
   "status": "approved",
   "plannedAt": "2026-10-16",
@@ -1249,11 +1253,2506 @@
       "primaryQuery": "利尻昆布",
       "targetPath": null,
       "reason": "幾乎都是染髮劑意圖。"
+    },
+    {
+      "articleId": "asahikawa-transport",
+      "priority": 2,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "transport",
+      "planningTitle": "旭川機場到旭川車站怎麼搭，札幌、新千歲到旭川與站前巴士乘車處",
+      "primaryQuery": "旭川機場到旭川車站",
+      "secondaryQueries": [
+        "旭川到札幌",
+        "旭川到新千歲機場"
+      ],
+      "targetPath": "/places/asahikawa/transport/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahikawa",
+      "contentBoundary": "札幌、新千歲機場、旭川機場到旭川市區的交通，旭川站前巴士乘車處；旭川到稚內只摘要並連稚內交通頁，往動物園、旭岳、層雲峽、東川、美瑛富良野只寫旭川端的乘車處與路線名，細節在各地交通頁。",
+      "place": {
+        "nameZh": "旭川",
+        "japaneseNames": [
+          "旭川",
+          "旭川市",
+          "旭川駅",
+          "旭川空港",
+          "旭山動物園"
+        ],
+        "japaneseSearchTerms": [
+          "旭川 観光",
+          "旭川 観光 車なし",
+          "旭川 観光 冬",
+          "旭川空港から 旭川駅 バス",
+          "旭山動物園 営業時間",
+          "旭山動物園 入園料",
+          "旭川 ラーメン",
+          "旭川冬まつり",
+          "旭川 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "asahidake",
+          "sounkyo",
+          "wakkanai",
+          "biei",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "sapporo"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓第一次到旭川的台灣旅客知道怎麼從札幌、新千歲或旭川機場進旭川市區，並在站前找到往各地的巴士。",
+        "primaryReaderOutcome": "讀完能選好去程方式、在機場與站前找到正確的乘車處。",
+        "mustAnswer": [
+          "札幌、新千歲機場到旭川怎麼去（JR 特急、高速巴士、たいせつライナー）",
+          "旭川機場到旭川車站怎麼搭、多久、多少錢",
+          "台灣能不能直飛旭川",
+          "旭川站前巴士乘車處在哪，往動物園、旭岳、東川、層雲峽、美瑛富良野各在哪一號搭",
+          "從旭川回札幌、新千歲機場，以及往稚內、上川"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "札幌、旭川到稚內的 JR、高速巴士與飛機（稚內群已上線的負責，本群只摘要）",
+            "ownerArticleId": "wakkanai-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭山動物園的開園期間、門票、企鵝散步、公車與園內",
+            "ownerArticleId": "asahiyama-zoo",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川站、旭川機場、札幌到旭岳溫泉的いで湯號與自駕",
+            "ownerArticleId": "asahidake-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "東川町的景點、美食、交通、住宿、祭典（全部寫在主頁）",
+            "ownerArticleId": "higashikawa",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭川機場到旭川車站",
+          "autocompleteInput": "旭川機場 到",
+          "suggestions": [
+            "旭川機場 到旭川車站",
+            "旭川機場 到市區",
+            "旭川機場 到富良野"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "中文「旭川 交通」的建議詞全是交通事故新聞（選群報告意圖陷阱），主要查詢改用路線詞。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahikawa/facts.json；content-planning/hokkaido/research/asahikawa.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "道北巴士官網（機場直達、層雲峽 81 號、高速巴士的旭川端乘車處）讀不到，11/10 前用瀏覽器重試（a:F57、a:F150）",
+        "12/1 起機場巴士新運賃（a:F49、a:F50），11/20 重查"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahiyama-zoo",
+      "priority": 3,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "planningTitle": "旭山動物園門票、交通與開放時間，企鵝散步什麼時候有",
+      "primaryQuery": "旭山動物園",
+      "secondaryQueries": [
+        "旭山動物園開放時間",
+        "旭山動物園企鵝散步時間",
+        "旭山動物園門票",
+        "旭山動物園交通",
+        "旭山動物園逛多久"
+      ],
+      "targetPath": "/places/asahikawa/asahiyama-zoo/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahikawa",
+      "contentBoundary": "旭山動物園本身：開園期間與時間、門票、企鵝散步、從旭川站與旭川機場的公車、從札幌的走法、園內與旭山公園。旭川市區其他景點在旭川景點頁；札幌到旭川的交通在旭川交通頁，只摘要。",
+      "place": {
+        "nameZh": "旭川",
+        "japaneseNames": [
+          "旭川",
+          "旭川市",
+          "旭川駅",
+          "旭川空港",
+          "旭山動物園"
+        ],
+        "japaneseSearchTerms": [
+          "旭川 観光",
+          "旭川 観光 車なし",
+          "旭川 観光 冬",
+          "旭川空港から 旭川駅 バス",
+          "旭山動物園 営業時間",
+          "旭山動物園 入園料",
+          "旭川 ラーメン",
+          "旭川冬まつり",
+          "旭川 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "asahidake",
+          "sounkyo",
+          "wakkanai",
+          "biei",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "sapporo"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓台灣旅客排好旭山動物園那一天：哪天開、幾點到、怎麼去、門票怎麼買、冬天能不能看企鵝散步。",
+        "primaryReaderOutcome": "讀完能挑對日期與班次，買好票，知道最晚幾點要離開。",
+        "mustAnswer": [
+          "開園期間與時間、休園日（含冬季短開園）",
+          "門票多少、怎麼買、住旭川能買的おもてなし券",
+          "從旭川站、旭川機場、札幌怎麼去",
+          "企鵝散步什麼時候有",
+          "要待多久、回程末班車",
+          "冬天去要注意什麼、夜間開園"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "札幌、新千歲機場、旭川機場到旭川市區的 JR、高速巴士、機場巴士",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川站前バスタッチ各乘車處與巴士總合案內所",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭山動物園",
+          "autocompleteInput": "旭山動物園",
+          "suggestions": [
+            "旭山動物園門票",
+            "旭山動物園企鵝散步時間2026",
+            "旭山動物園 逛多久",
+            "旭山動物園一日遊",
+            "旭山動物園交通",
+            "旭山動物園開放時間"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahikawa/facts.json；content-planning/hokkaido/research/asahikawa.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "2026～27 季企鵝散步開始日與時刻（a:F15），12/10 重查",
+        "冬期（11/11 起）公車班表（a:F25），11/5 重查",
+        "要待多久：寫作前找三個獨立來源，不足就只寫開園時間與末班車"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahikawa-stay",
+      "priority": 4,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "planningTitle": "旭川住宿，車站周邊與市中心的飯店、訂房管道與住宿稅",
+      "primaryQuery": "旭川住宿",
+      "secondaryQueries": [
+        "旭川住宿推薦",
+        "旭川住宿稅"
+      ],
+      "targetPath": "/places/asahikawa/stay/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahikawa",
+      "contentBoundary": "旭川市內的住宿：區域、離車站多遠、訂房管道、住宿稅；不寫價格。旭岳溫泉、層雲峽、東川的住宿各在該地頁面。",
+      "place": {
+        "nameZh": "旭川",
+        "japaneseNames": [
+          "旭川",
+          "旭川市",
+          "旭川駅",
+          "旭川空港",
+          "旭山動物園"
+        ],
+        "japaneseSearchTerms": [
+          "旭川 観光",
+          "旭川 観光 車なし",
+          "旭川 観光 冬",
+          "旭川空港から 旭川駅 バス",
+          "旭山動物園 営業時間",
+          "旭山動物園 入園料",
+          "旭川 ラーメン",
+          "旭川冬まつり",
+          "旭川 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "asahidake",
+          "sounkyo",
+          "wakkanai",
+          "biei",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "sapporo"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定住旭川站周邊還是市中心，並找到訂得到的飯店。",
+        "primaryReaderOutcome": "讀完能挑區、挑飯店，知道住宿稅怎麼收。",
+        "mustAnswer": [
+          "住車站周邊還是市中心",
+          "有哪些飯店、各在哪裡、離車站多遠、怎麼訂",
+          "旭川住宿稅怎麼算",
+          "住旭川能用的旭山動物園おもてなし券"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭山動物園的開園期間、門票、企鵝散步、公車與園內",
+            "ownerArticleId": "asahiyama-zoo",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "research-required",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭川住宿",
+          "autocompleteInput": "旭川 住宿",
+          "suggestions": [
+            "旭川 住宿 推薦",
+            "旭川 住宿 親子",
+            "旭川 住宿稅",
+            "旭川 住宿 溫泉"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahikawa/facts.json；content-planning/hokkaido/research/asahikawa.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "必做：至少 12 間飯店的官網、離車站步行分鐘、營業期間、Trip.com／Agoda 是否訂得到（a:F138）；目前只有 9 筆本主題事實，補完仍不到 15 筆就停放"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahikawa-sights",
+      "priority": 8,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "planningTitle": "旭川景點推薦，車站周邊、展望台、酒藏與冬天才有的活動",
+      "primaryQuery": "旭川景點",
+      "secondaryQueries": [
+        "旭川景點推薦",
+        "旭川景點冬天"
+      ],
+      "targetPath": "/places/asahikawa/sights/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahikawa",
+      "contentBoundary": "旭川市內與近郊的景點（旭山動物園另有一頁，只寫兩三句並連過去）、冬季雪上活動；美食在美食頁，祭典在主頁。",
+      "place": {
+        "nameZh": "旭川",
+        "japaneseNames": [
+          "旭川",
+          "旭川市",
+          "旭川駅",
+          "旭川空港",
+          "旭山動物園"
+        ],
+        "japaneseSearchTerms": [
+          "旭川 観光",
+          "旭川 観光 車なし",
+          "旭川 観光 冬",
+          "旭川空港から 旭川駅 バス",
+          "旭山動物園 営業時間",
+          "旭山動物園 入園料",
+          "旭川 ラーメン",
+          "旭川冬まつり",
+          "旭川 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "asahidake",
+          "sounkyo",
+          "wakkanai",
+          "biei",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "sapporo"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客在動物園之外挑出旭川值得排的景點，依有沒有車、季節與天氣決定順序。",
+        "primaryReaderOutcome": "讀完能排出旭川市區半天到一天的景點路線。",
+        "mustAnswer": [
+          "旭川站走路就到的景點",
+          "動物園以外值得去的景點",
+          "冬天在旭川能玩什麼",
+          "不開車怎麼去、哪些要開車",
+          "下雨天或帶小孩去哪"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭山動物園的開園期間、門票、企鵝散步、公車與園內",
+            "ownerArticleId": "asahiyama-zoo",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭川景點",
+          "autocompleteInput": "旭川 景點",
+          "suggestions": [
+            "旭川 景點 冬天",
+            "旭川 景點 夏天",
+            "旭川 景點 推薦",
+            "旭川 景點 秋天",
+            "旭川 景點 11 月"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahikawa/facts.json；content-planning/hokkaido/research/asahikawa.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "主要館舍的開館時間、休館日、門票（a:F149）：寫作前到各館官網補，查不到的格子不放"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahikawa-food",
+      "priority": 12,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "food",
+      "planningTitle": "旭川美食推薦，旭川拉麵、成吉思汗與新子燒去哪吃",
+      "primaryQuery": "旭川美食",
+      "secondaryQueries": [
+        "旭川美食推薦",
+        "旭川拉麵村",
+        "旭川成吉思汗大黑屋"
+      ],
+      "targetPath": "/places/asahikawa/food/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahikawa",
+      "contentBoundary": "旭川市內的拉麵、成吉思汗、在地料理、夜間鬧區與伴手禮；層雲峽、東川的吃喝在各地主頁。",
+      "place": {
+        "nameZh": "旭川",
+        "japaneseNames": [
+          "旭川",
+          "旭川市",
+          "旭川駅",
+          "旭川空港",
+          "旭山動物園"
+        ],
+        "japaneseSearchTerms": [
+          "旭川 観光",
+          "旭川 観光 車なし",
+          "旭川 観光 冬",
+          "旭川空港から 旭川駅 バス",
+          "旭山動物園 営業時間",
+          "旭山動物園 入園料",
+          "旭川 ラーメン",
+          "旭川冬まつり",
+          "旭川 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "asahidake",
+          "sounkyo",
+          "wakkanai",
+          "biei",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "sapporo"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客知道旭川該吃什麼、去哪吃、要不要先訂位。",
+        "primaryReaderOutcome": "讀完能決定午晚餐去哪、哪家要預約。",
+        "mustAnswer": [
+          "旭川拉麵是什麼、拉麵村怎麼去",
+          "成吉思汗大黑屋在哪、要不要預約",
+          "新子燒、鹽荷爾蒙等在地料理",
+          "晚上去哪吃喝",
+          "伴手禮去哪買"
+        ],
+        "excludedDepth": [],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭川美食",
+          "autocompleteInput": "旭川 美食",
+          "suggestions": [
+            "旭川 美食推薦",
+            "旭川 美食 評分最高",
+            "旭川 美食 必 吃",
+            "旭川 美食 地圖"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahikawa/facts.json；content-planning/hokkaido/research/asahikawa.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "榜單人氣（Tabelog 百名店等）與店家營業時間（a:F105）；沒有官網的店只寫地點與特色"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahikawa-weather",
+      "priority": 16,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "weather",
+      "planningTitle": "旭川天氣，各月氣溫、降雪與冬天穿著",
+      "primaryQuery": "旭川天氣",
+      "secondaryQueries": [
+        "旭川冬天溫度"
+      ],
+      "targetPath": "/places/asahikawa/weather/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahikawa",
+      "contentBoundary": "旭川氣象台的平年值、冬季寒冷與積雪、夏季高溫、穿著；旭岳與層雲峽的山上天氣在各地頁面。",
+      "place": {
+        "nameZh": "旭川",
+        "japaneseNames": [
+          "旭川",
+          "旭川市",
+          "旭川駅",
+          "旭川空港",
+          "旭山動物園"
+        ],
+        "japaneseSearchTerms": [
+          "旭川 観光",
+          "旭川 観光 車なし",
+          "旭川 観光 冬",
+          "旭川空港から 旭川駅 バス",
+          "旭山動物園 営業時間",
+          "旭山動物園 入園料",
+          "旭川 ラーメン",
+          "旭川冬まつり",
+          "旭川 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "asahidake",
+          "sounkyo",
+          "wakkanai",
+          "biei",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "sapporo"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客依月份判斷旭川的冷熱與雪況，準備衣物。",
+        "primaryReaderOutcome": "讀完知道去的那個月要穿什麼、雪會多深。",
+        "mustAnswer": [
+          "各月氣溫與雨雪",
+          "冬天有多冷、雪多深、怎麼穿",
+          "夏天熱不熱",
+          "什麼時候看得到鑽石塵",
+          "冬季活動與交通受天氣影響"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭山動物園的開園期間、門票、企鵝散步、公車與園內",
+            "ownerArticleId": "asahiyama-zoo",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川冬まつり、夏まつり花火與食べマルシェ",
+            "ownerArticleId": "asahikawa",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭川天氣",
+          "autocompleteInput": "旭川",
+          "suggestions": [
+            "旭川動物園",
+            "旭川天氣",
+            "旭川景點",
+            "旭川拉麵村"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahikawa/facts.json；content-planning/hokkaido/research/asahikawa.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "本主題事實 14 筆，差 1 筆到短頁門檻；寫作前從同一張氣象廳平年值表補冬日、真冬日日數或降水日數，補完仍不到 15 筆就停放並併進旭川主頁"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahikawa",
+      "priority": 18,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "aspect": "other",
+      "planningTitle": "旭川自由行怎麼排，住幾晚、幾月去與往旭岳、層雲峽的轉乘",
+      "primaryQuery": "旭川",
+      "secondaryQueries": [
+        "旭川自由行",
+        "旭川冬天自由行",
+        "旭川冬季祭典"
+      ],
+      "targetPath": "/places/asahikawa/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "primaryHubId": "hub-places-asahikawa",
+      "contentBoundary": "旭川的主頁：值不值得去、排幾天、幾月去、怎麼接周邊地點；祭典（冬まつり、夏まつり花火）在這裡寫一節。各主題兩三句摘要並連到主題頁，細節不在主頁重寫。",
+      "place": {
+        "nameZh": "旭川",
+        "japaneseNames": [
+          "旭川",
+          "旭川市",
+          "旭川駅",
+          "旭川空港",
+          "旭山動物園"
+        ],
+        "japaneseSearchTerms": [
+          "旭川 観光",
+          "旭川 観光 車なし",
+          "旭川 観光 冬",
+          "旭川空港から 旭川駅 バス",
+          "旭山動物園 営業時間",
+          "旭山動物園 入園料",
+          "旭川 ラーメン",
+          "旭川冬まつり",
+          "旭川 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "asahidake",
+          "sounkyo",
+          "wakkanai",
+          "biei",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "sapporo"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓去過日本自由行的台灣旅客決定旭川要排幾天、幾月去、怎麼接旭岳與層雲峽。",
+        "primaryReaderOutcome": "讀完能排出旭川與周邊的天數與順序。",
+        "mustAnswer": [
+          "旭川值得去嗎、排幾天",
+          "幾月去、冬天去要注意什麼",
+          "旭川冬季祭典（冬まつり）與夏天的花火",
+          "怎麼到旭川、住哪裡",
+          "從旭川怎麼接旭岳、層雲峽、東川與稚內",
+          "依旅客類型怎麼排"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "札幌、旭川到稚內的 JR、高速巴士與飛機（稚內群已上線的負責，本群只摘要）",
+            "ownerArticleId": "wakkanai-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "札幌、新千歲機場、旭川機場到旭川市區的 JR、高速巴士、機場巴士",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭山動物園的開園期間、門票、企鵝散步、公車與園內",
+            "ownerArticleId": "asahiyama-zoo",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川市內住宿的區域、位置與訂房管道",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川市內與近郊的景點與冬季雪上活動",
+            "ownerArticleId": "asahikawa-sights",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川拉麵、成吉思汗、在地料理、鬧區與伴手禮",
+            "ownerArticleId": "asahikawa-food",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川各月氣溫、降雪、積雪與穿著",
+            "ownerArticleId": "asahikawa-weather",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭川",
+          "autocompleteInput": "旭川",
+          "suggestions": [
+            "旭川動物園",
+            "旭川天氣",
+            "旭川景點",
+            "旭川壽司",
+            "旭川機場",
+            "旭川拉麵村"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahikawa/facts.json；content-planning/hokkaido/research/asahikawa.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "2027 冬まつり各會場開放時間、煙火、接駁車（a:F112），12/15 重查；正文寫明是 2026 年的例子"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "sounkyo-transport",
+      "priority": 1,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "transport",
+      "planningTitle": "層雲峽交通，旭川到層雲峽的巴士、上川轉乘與冬天自駕",
+      "primaryQuery": "層雲峽交通",
+      "secondaryQueries": [
+        "旭川到層雲峽",
+        "札幌到層雲峽",
+        "層雲峽到阿寒湖"
+      ],
+      "targetPath": "/places/sounkyo/transport/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-sounkyo",
+      "contentBoundary": "從旭川、上川、札幌到層雲峽的巴士、JR 轉乘與自駕，冬季路況，層雲峽往大雪湖、銀泉台、高原溫泉與往道東的巴士。札幌、機場到旭川站只摘要並連旭川交通頁；黑岳纜車在登山頁。",
+      "place": {
+        "nameZh": "層雲峽",
+        "japaneseNames": [
+          "層雲峡",
+          "層雲峡温泉",
+          "上川町",
+          "黒岳",
+          "上川駅"
+        ],
+        "japaneseSearchTerms": [
+          "層雲峡 アクセス",
+          "旭川 層雲峡 バス時刻表",
+          "層雲峡 アクセス 冬",
+          "黒岳ロープウェイ",
+          "層雲峡 紅葉 見頃",
+          "層雲峡温泉氷瀑まつり",
+          "層雲峡 ホテル"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "asahidake",
+          "asahikawa",
+          "akan-lake",
+          "abashiri"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓不開車的旅客排好去層雲峽的巴士，開車的旅客知道冬季路況。",
+        "primaryReaderOutcome": "讀完能選好班次、買好網路票、記住回程末班。",
+        "mustAnswer": [
+          "旭川到層雲峽怎麼搭、一天幾班、多久、多少錢",
+          "札幌、新千歲機場怎麼到層雲峽",
+          "搭 JR 到上川再轉巴士",
+          "道北巴士網路票怎麼用",
+          "冬天自駕要注意什麼",
+          "從層雲峽往阿寒湖、北見",
+          "回旭川的末班車",
+          "層雲峽周邊（大雪湖、銀泉台、高原溫泉）怎麼去"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "札幌、新千歲機場、旭川機場到旭川市區的 JR、高速巴士、機場巴士",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川站前バスタッチ各乘車處與巴士總合案內所",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "層雲峽交通",
+          "autocompleteInput": "層雲峽 交通",
+          "suggestions": [
+            "層雲峽 交通方式",
+            "層雲峽 到 阿寒湖 交通",
+            "旭川 層雲峽 交通",
+            "札幌 層雲峽 交通",
+            "網走 層雲峽 交通",
+            "新千歲機場 層雲峽 交通"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/sounkyo/facts.json；content-planning/hokkaido/research/sounkyo.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "道北巴士官網讀不到（s:F176），冬季班次是否改點（s:F177）要對官網",
+        "JR 上川站時刻（s:F188）補讀，和上川發巴士的轉乘"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "sounkyo-hiking",
+      "priority": 6,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "hiking",
+      "planningTitle": "層雲峽纜車與黑岳登山，纜車吊椅時間、票價與登頂路線",
+      "primaryQuery": "層雲峽纜車",
+      "secondaryQueries": [
+        "黑岳登山"
+      ],
+      "targetPath": "/places/sounkyo/hiking/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-sounkyo",
+      "contentBoundary": "黑岳纜車與吊椅、五合目、黑岳登頂與石室、大雪高原溫泉沼めぐり、黑岳滑雪場（滑雪寫成一節，不另開滑雪頁）。黑岳⇄旭岳縱走全程在跨地點頁，這裡只寫黑岳端；往高原溫泉的交通管制在交通頁。",
+      "place": {
+        "nameZh": "層雲峽",
+        "japaneseNames": [
+          "層雲峡",
+          "層雲峡温泉",
+          "上川町",
+          "黒岳",
+          "上川駅"
+        ],
+        "japaneseSearchTerms": [
+          "層雲峡 アクセス",
+          "旭川 層雲峡 バス時刻表",
+          "層雲峡 アクセス 冬",
+          "黒岳ロープウェイ",
+          "層雲峡 紅葉 見頃",
+          "層雲峡温泉氷瀑まつり",
+          "層雲峡 ホテル"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "asahidake",
+          "asahikawa",
+          "akan-lake",
+          "abashiri"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定要不要搭黑岳纜車、只到五合目還是登頂，並知道各季的營業時間與準備。",
+        "primaryReaderOutcome": "讀完能排好上山時間、買對票、帶對裝備。",
+        "mustAnswer": [
+          "纜車、吊椅營業期間與時間、停駛期",
+          "票價（含 2027 年 6 月漲價）",
+          "不登山的話上五合目能做什麼",
+          "從七合目登黑岳山頂要多久、要準備什麼",
+          "黑岳石室與往旭岳縱走",
+          "冬天的黑岳滑雪場",
+          "大雪高原溫泉沼めぐり"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "層雲峽往大雪湖、銀泉台、高原溫泉的班次與紅葉期管制",
+            "ownerArticleId": "sounkyo-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "黑岳⇄旭岳縱走全程與下山後回程",
+            "ownerArticleId": "asahidake-or-sounkyo",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "層雲峽纜車",
+          "autocompleteInput": "層雲峽",
+          "suggestions": [
+            "層雲峽冰瀑祭",
+            "層雲峽觀光飯店",
+            "層雲峽天氣",
+            "層雲峽纜車",
+            "層雲峽溫泉"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/sounkyo/facts.json；content-planning/hokkaido/research/sounkyo.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "纜車夏季（6 月下旬～10 月中旬）營業時間（s:F178）2027 年 6 月前重查",
+        "沼めぐり 2026 年起的事前受理方式（s:F195）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "sounkyo-sights",
+      "priority": 17,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "planningTitle": "層雲峽景點，銀河流星瀑布、大函與沒車怎麼去",
+      "primaryQuery": "層雲峽景點",
+      "secondaryQueries": [
+        "上川町景點"
+      ],
+      "targetPath": "/places/sounkyo/sights/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-sounkyo",
+      "contentBoundary": "層雲峽溫泉街、峽谷沿線與上川町的景點；黑岳纜車與沼めぐり在登山頁，冰瀑祭在祭典頁，紅葉時期在天氣頁。",
+      "place": {
+        "nameZh": "層雲峽",
+        "japaneseNames": [
+          "層雲峡",
+          "層雲峡温泉",
+          "上川町",
+          "黒岳",
+          "上川駅"
+        ],
+        "japaneseSearchTerms": [
+          "層雲峡 アクセス",
+          "旭川 層雲峡 バス時刻表",
+          "層雲峡 アクセス 冬",
+          "黒岳ロープウェイ",
+          "層雲峡 紅葉 見頃",
+          "層雲峡温泉氷瀑まつり",
+          "層雲峡 ホテル"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "asahidake",
+          "asahikawa",
+          "akan-lake",
+          "abashiri"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客排出層雲峽一天的景點順序，知道沒車能到哪裡。",
+        "primaryReaderOutcome": "讀完能決定看哪些瀑布與峽谷、怎麼過去。",
+        "mustAnswer": [
+          "層雲峽有哪些景點，一天怎麼排",
+          "銀河瀑布、流星瀑布怎麼去",
+          "大函、紅葉谷",
+          "溫泉街裡的景點（遊客中心、寫真博物館、日歸溫泉）",
+          "上川町的景點（大雪森のガーデン、大雪展望台）",
+          "沒車怎麼去",
+          "導覽團"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "層雲峽往大雪湖、銀泉台、高原溫泉的班次與紅葉期管制",
+            "ownerArticleId": "sounkyo-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "黑岳纜車與吊椅的期間、時間、票價與五合目",
+            "ownerArticleId": "sounkyo-hiking",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "大雪高原溫泉沼めぐり的開放期間、受理與棕熊",
+            "ownerArticleId": "sounkyo-hiking",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "上川町景點",
+          "autocompleteInput": "上川町",
+          "suggestions": [
+            "上川町層雲峡温泉",
+            "上川町景點",
+            "上川町美食"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "「層雲峽景點」沒有出現在自動完成，用層雲峽所在的「上川町景點」與日文「層雲峡 観光」當證據；0 量照樣成頁。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/sounkyo/facts.json；content-planning/hokkaido/research/sounkyo.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "大雪森のガーデン 2027 年營業期間（s:F180）與大眾運輸（s:F181）",
+        "溫泉街走到銀河・流星瀑布的距離與冬季（s:F190）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "sounkyo-festival",
+      "priority": 9,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "festival",
+      "planningTitle": "層雲峽冰瀑祭，2027 年日期、交通、門票與煙火時間",
+      "primaryQuery": "層雲峽冰瀑祭",
+      "secondaryQueries": [
+        "層雲峽冰瀑祭2027",
+        "層雲峽冰瀑祭門票",
+        "層雲峽冰瀑祭煙火時間",
+        "層雲峽冰瀑祭交通"
+      ],
+      "targetPath": "/places/sounkyo/festival/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-sounkyo",
+      "contentBoundary": "層雲峽溫泉冰瀑祭（日期、時間、協力金、煙火、會場、交通、穿著）與層雲峽的其他祭典（峽谷火祭、紅葉谷點燈）；巴士全班次在交通頁，住宿在住宿頁。",
+      "place": {
+        "nameZh": "層雲峽",
+        "japaneseNames": [
+          "層雲峡",
+          "層雲峡温泉",
+          "上川町",
+          "黒岳",
+          "上川駅"
+        ],
+        "japaneseSearchTerms": [
+          "層雲峡 アクセス",
+          "旭川 層雲峡 バス時刻表",
+          "層雲峡 アクセス 冬",
+          "黒岳ロープウェイ",
+          "層雲峡 紅葉 見頃",
+          "層雲峡温泉氷瀑まつり",
+          "層雲峡 ホテル"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "asahidake",
+          "asahikawa",
+          "akan-lake",
+          "abashiri"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客排好看冰瀑祭的那一天：哪天、幾點到、怎麼去、看完住下還是回旭川。",
+        "primaryReaderOutcome": "讀完能決定當天來回或住一晚，並準備好禦寒衣物。",
+        "mustAnswer": [
+          "2027 年冰瀑祭日期與開放時間",
+          "門票（入場協力金）",
+          "煙火幾點",
+          "怎麼去、看完回得了旭川嗎、要不要住一晚",
+          "會場有什麼",
+          "要穿什麼",
+          "夏天的峽谷火祭與秋天的紅葉谷點燈"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭川、上川、札幌到層雲峽的巴士、JR 轉乘與自駕，回程末班",
+            "ownerArticleId": "sounkyo-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "層雲峽冰瀑祭",
+          "autocompleteInput": "層雲峽冰瀑祭",
+          "suggestions": [
+            "層雲峽冰瀑祭2027",
+            "層雲峽冰瀑祭煙火時間",
+            "層雲峽冰瀑祭門票",
+            "層雲峽冰瀑祭一日遊",
+            "層雲峽冰瀑祭交通"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/sounkyo/facts.json；content-planning/hokkaido/research/sounkyo.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "2027 年開放時間、協力金、煙火時間（s:F179），12 月中重查；正文寫明 2026 年的時間"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "sounkyo-stay",
+      "priority": 13,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "planningTitle": "層雲峽住宿，溫泉街各旅館的位置、接駁巴士與訂房管道",
+      "primaryQuery": "層雲峽住宿",
+      "secondaryQueries": [
+        "層雲峽住宿推薦"
+      ],
+      "targetPath": "/places/sounkyo/stay/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-sounkyo",
+      "contentBoundary": "層雲峽溫泉街、清川與上川站周邊的住宿：區域、離巴士站與纜車多遠、接駁巴士、營業期間、訂房管道；不寫價格，含餐只在冬季晚餐選擇少時寫。",
+      "place": {
+        "nameZh": "層雲峽",
+        "japaneseNames": [
+          "層雲峡",
+          "層雲峡温泉",
+          "上川町",
+          "黒岳",
+          "上川駅"
+        ],
+        "japaneseSearchTerms": [
+          "層雲峡 アクセス",
+          "旭川 層雲峡 バス時刻表",
+          "層雲峡 アクセス 冬",
+          "黒岳ロープウェイ",
+          "層雲峡 紅葉 見頃",
+          "層雲峡温泉氷瀑まつり",
+          "層雲峡 ホテル"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "asahidake",
+          "asahikawa",
+          "akan-lake",
+          "abashiri"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客挑層雲峽的旅館，知道哪些有旭川接駁、冬天要不要含晚餐。",
+        "primaryReaderOutcome": "讀完能挑好旅館並從對的管道訂房。",
+        "mustAnswer": [
+          "住溫泉街還是上川站",
+          "有哪些旅館、各在哪",
+          "從旭川、札幌出發的旅館接駁巴士",
+          "冬天要不要訂含晚餐",
+          "訂房管道"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "北海道與旭川市的住宿稅（2026-04-01 起）",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川、上川、札幌到層雲峽的巴士、JR 轉乘與自駕，回程末班",
+            "ownerArticleId": "sounkyo-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "層雲峽溫泉冰瀑祭與峽谷火祭、紅葉谷點燈",
+            "ownerArticleId": "sounkyo-festival",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "層雲峽溫泉街與上川站周邊的餐廳（資料少，併進主頁）",
+            "ownerArticleId": "sounkyo",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "research-required",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "層雲峽住宿",
+          "autocompleteInput": "層雲峽 住宿",
+          "suggestions": [
+            "層雲峽 住宿推薦",
+            "層雲峽 住宿 ptt"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/sounkyo/facts.json；content-planning/hokkaido/research/sounkyo.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "必做：逐館查 Trip.com、Agoda 能不能訂（s:F187）",
+        "朝陽亭、朝陽リゾート與ホテル大雪的接駁巴士這一季的時刻與條件（s:F185、s:F186）",
+        "各館是否接受純住宿、晚餐時間（s:F193）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "sounkyo-weather",
+      "priority": 10,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "weather",
+      "planningTitle": "層雲峽天氣與楓葉，各月氣溫、積雪與紅葉季",
+      "primaryQuery": "層雲峽天氣",
+      "secondaryQueries": [
+        "層雲峽氣溫",
+        "層雲峽楓葉"
+      ],
+      "targetPath": "/places/sounkyo/weather/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-sounkyo",
+      "contentBoundary": "上川與層雲峽觀測點的平年值、冬季積雪、紅葉時期與順序、查天氣的官方頁；紅葉谷點燈在祭典頁，黑岳登山的季節準備在登山頁。",
+      "place": {
+        "nameZh": "層雲峽",
+        "japaneseNames": [
+          "層雲峡",
+          "層雲峡温泉",
+          "上川町",
+          "黒岳",
+          "上川駅"
+        ],
+        "japaneseSearchTerms": [
+          "層雲峡 アクセス",
+          "旭川 層雲峡 バス時刻表",
+          "層雲峡 アクセス 冬",
+          "黒岳ロープウェイ",
+          "層雲峡 紅葉 見頃",
+          "層雲峡温泉氷瀑まつり",
+          "層雲峡 ホテル"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "asahidake",
+          "asahikawa",
+          "akan-lake",
+          "abashiri"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客依月份判斷層雲峽的冷熱與雪況，挑對看紅葉的日子。",
+        "primaryReaderOutcome": "讀完知道幾月去看紅葉或雪、要穿什麼。",
+        "mustAnswer": [
+          "各月氣溫與雨量",
+          "冬天多冷、積雪多深",
+          "楓葉什麼時候去、哪裡先紅",
+          "出發前怎麼查當天山上天氣"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "層雲峽往大雪湖、銀泉台、高原溫泉的班次與紅葉期管制",
+            "ownerArticleId": "sounkyo-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "層雲峽溫泉冰瀑祭與峽谷火祭、紅葉谷點燈",
+            "ownerArticleId": "sounkyo-festival",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "層雲峽天氣",
+          "autocompleteInput": "層雲峽",
+          "suggestions": [
+            "層雲峽天氣",
+            "層雲峽天氣預報10天",
+            "層雲峽 楓葉",
+            "層雲峽 氣溫"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/sounkyo/facts.json；content-planning/hokkaido/research/sounkyo.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "sounkyo",
+      "priority": 19,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "aspect": "other",
+      "planningTitle": "層雲峽值得去嗎？住一晚還是當天來回、幾月去與溫泉街吃什麼",
+      "primaryQuery": "層雲峽",
+      "secondaryQueries": [
+        "層雲峽溫泉",
+        "上川町美食"
+      ],
+      "targetPath": "/places/sounkyo/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "primaryHubId": "hub-places-sounkyo",
+      "contentBoundary": "層雲峽的主頁：值不值得去、當天來回或住一晚、幾月去、和旭岳怎麼選；美食（溫泉街與上川）資料少，在這裡寫一節。各主題兩三句摘要並連到主題頁。",
+      "place": {
+        "nameZh": "層雲峽",
+        "japaneseNames": [
+          "層雲峡",
+          "層雲峡温泉",
+          "上川町",
+          "黒岳",
+          "上川駅"
+        ],
+        "japaneseSearchTerms": [
+          "層雲峡 アクセス",
+          "旭川 層雲峡 バス時刻表",
+          "層雲峡 アクセス 冬",
+          "黒岳ロープウェイ",
+          "層雲峡 紅葉 見頃",
+          "層雲峡温泉氷瀑まつり",
+          "層雲峡 ホテル"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "asahidake",
+          "asahikawa",
+          "akan-lake",
+          "abashiri"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定層雲峽要不要排、當天來回還是住一晚、幾月去。",
+        "primaryReaderOutcome": "讀完能決定天數與季節，並知道接下來看哪一頁。",
+        "mustAnswer": [
+          "層雲峽是什麼地方、值得去嗎",
+          "從旭川當天來回或住一晚",
+          "幾月去（紅葉、冰瀑祭、雪季）",
+          "溫泉街與上川吃什麼、冬天晚上哪裡吃",
+          "和旭岳怎麼選",
+          "依旅客類型怎麼排"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭川、上川、札幌到層雲峽的巴士、JR 轉乘與自駕，回程末班",
+            "ownerArticleId": "sounkyo-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "層雲峽往北見、阿寒湖、釧路的サンライズ號",
+            "ownerArticleId": "sounkyo-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "黑岳纜車與吊椅的期間、時間、票價與五合目",
+            "ownerArticleId": "sounkyo-hiking",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "黑岳登頂、石室與黑岳滑雪場",
+            "ownerArticleId": "sounkyo-hiking",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "層雲峽溫泉街、峽谷沿線與上川町的景點",
+            "ownerArticleId": "sounkyo-sights",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "層雲峽溫泉冰瀑祭與峽谷火祭、紅葉谷點燈",
+            "ownerArticleId": "sounkyo-festival",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "層雲峽溫泉街與上川站周邊的住宿、接駁巴士",
+            "ownerArticleId": "sounkyo-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "上川與層雲峽的平年值、積雪、紅葉時期",
+            "ownerArticleId": "sounkyo-weather",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭岳與層雲峽怎麼選、兩地怎麼移動與一起排",
+            "ownerArticleId": "asahidake-or-sounkyo",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "層雲峽",
+          "autocompleteInput": "層雲峽",
+          "suggestions": [
+            "層雲峽冰瀑祭",
+            "層雲峽觀光飯店",
+            "層雲峽天氣",
+            "層雲峽溫泉",
+            "層雲峽纜車"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/sounkyo/facts.json；content-planning/hokkaido/research/sounkyo.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahidake-transport",
+      "priority": 5,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "transport",
+      "planningTitle": "旭岳交通，旭川到旭岳的いで湯號、機場出發與冬天自駕",
+      "primaryQuery": "旭岳交通",
+      "secondaryQueries": [
+        "旭川到旭岳",
+        "旭岳溫泉交通"
+      ],
+      "targetPath": "/places/asahidake/transport/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahidake",
+      "contentBoundary": "從旭川站、旭川機場、札幌到旭岳溫泉的巴士與自駕，旭岳溫泉的站名與停車場；纜車本身在纜車頁，東川市區的移動在東川主頁，札幌到旭川只摘要並連旭川交通頁。",
+      "place": {
+        "nameZh": "旭岳",
+        "japaneseNames": [
+          "旭岳",
+          "旭岳温泉",
+          "大雪山旭岳ロープウェイ",
+          "姿見の池",
+          "天人峡"
+        ],
+        "japaneseSearchTerms": [
+          "旭岳 アクセス バス",
+          "旭川 旭岳 バス 時刻表",
+          "旭岳 ロープウェイ",
+          "旭岳 登山",
+          "旭岳 紅葉",
+          "天人峡 羽衣の滝",
+          "旭岳温泉 宿泊"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "sounkyo",
+          "asahikawa",
+          "biei"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          8,
+          9,
+          12,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓不開車的旅客搭いで湯號去旭岳並排好回程，開車的旅客知道停車與冬季路況。",
+        "primaryReaderOutcome": "讀完能選好去回程班次與下車站。",
+        "mustAnswer": [
+          "旭川站、旭川機場到旭岳怎麼搭、時刻、多久、多少錢",
+          "車票怎麼買、能用什麼卡、行李",
+          "開車去旭岳、停車場、冬天輪胎",
+          "住宿在哪一站下車",
+          "當天來回怎麼排、回程末班",
+          "從札幌出發"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "札幌、新千歲機場、旭川機場到旭川市區的 JR、高速巴士、機場巴士",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川站前バスタッチ各乘車處與巴士總合案內所",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "東川町的景點、美食、交通、住宿、祭典（全部寫在主頁）",
+            "ownerArticleId": "higashikawa",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭岳交通",
+          "autocompleteInput": "旭岳 交通",
+          "suggestions": [
+            "旭岳 交通 方式",
+            "旭岳 纜車 交通",
+            "旭岳 溫泉 交通",
+            "旭川 到 旭岳 交通",
+            "札幌 旭岳 交通"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahidake/facts.json；content-planning/hokkaido/research/asahidake.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "北海道道 1160 號冬季路況與封路（d:F47）查道路管理者官方"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahidake-ropeway",
+      "priority": 7,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "planningTitle": "旭岳纜車與姿見の池，營業時間、票價與散策路怎麼走",
+      "primaryQuery": "旭岳纜車",
+      "secondaryQueries": [
+        "旭岳即時影像"
+      ],
+      "targetPath": "/places/asahidake/ropeway/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahidake",
+      "contentBoundary": "大雪山旭岳纜車（時間、票價、停駛期）與姿見站周邊的姿見の池散策路、季節、裝備；從姿見站往山頂在登山頁，去旭岳溫泉的交通在交通頁。",
+      "place": {
+        "nameZh": "旭岳",
+        "japaneseNames": [
+          "旭岳",
+          "旭岳温泉",
+          "大雪山旭岳ロープウェイ",
+          "姿見の池",
+          "天人峡"
+        ],
+        "japaneseSearchTerms": [
+          "旭岳 アクセス バス",
+          "旭川 旭岳 バス 時刻表",
+          "旭岳 ロープウェイ",
+          "旭岳 登山",
+          "旭岳 紅葉",
+          "天人峡 羽衣の滝",
+          "旭岳温泉 宿泊"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "sounkyo",
+          "asahikawa",
+          "biei"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          8,
+          9,
+          12,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓不登山的旅客搭纜車上姿見站，走完姿見の池散策路並準時下山。",
+        "primaryReaderOutcome": "讀完能挑對季節與時段、帶對鞋子、知道末班時間。",
+        "mustAnswer": [
+          "纜車營業時間、班距與停駛期",
+          "票價、要不要預約、能不能刷卡",
+          "姿見の池散策路怎麼走、要多久",
+          "要穿什麼、哪裡租雨鞋",
+          "什麼季節看什麼（高山植物、紅葉、雪）",
+          "出發前怎麼看山上天氣與即時影像",
+          "紅葉季人多怎麼辦"
+        ],
+        "excludedDepth": [],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭岳纜車",
+          "autocompleteInput": "旭岳",
+          "suggestions": [
+            "旭岳纜車",
+            "旭岳天氣",
+            "旭岳即時影像",
+            "旭岳滑雪場",
+            "旭岳一日遊",
+            "旭岳纜車官網"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahidake/facts.json；content-planning/hokkaido/research/asahidake.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "纜車秋季停駛起日兩處說法不一（d:F60）、2027 年月曆（d:F62）寫作前重查",
+        "姿見散策路地圖 PDF 是圖片（d:F85），寫作前用瀏覽器看"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahidake-hiking",
+      "priority": 14,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "hiking",
+      "planningTitle": "旭岳登山，從姿見站登頂的時間、裝備與入山規則",
+      "primaryQuery": "旭岳登山",
+      "secondaryQueries": [],
+      "targetPath": "/places/asahidake/hiking/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahidake",
+      "contentBoundary": "從姿見站登旭岳山頂、裾合平與環狀路線、登山季、裝備、登山計畫書、保全規則與棕熊；纜車與姿見の池散策在纜車頁，旭岳⇄黑岳縱走全程在跨地點頁。",
+      "place": {
+        "nameZh": "旭岳",
+        "japaneseNames": [
+          "旭岳",
+          "旭岳温泉",
+          "大雪山旭岳ロープウェイ",
+          "姿見の池",
+          "天人峡"
+        ],
+        "japaneseSearchTerms": [
+          "旭岳 アクセス バス",
+          "旭川 旭岳 バス 時刻表",
+          "旭岳 ロープウェイ",
+          "旭岳 登山",
+          "旭岳 紅葉",
+          "天人峡 羽衣の滝",
+          "旭岳温泉 宿泊"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "sounkyo",
+          "asahikawa",
+          "biei"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          8,
+          9,
+          12,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓有登山經驗的旅客決定能不能登旭岳，並做好入山準備。",
+        "primaryReaderOutcome": "讀完知道登頂要幾小時、哪個月能爬、出發前要辦什麼、帶什麼。",
+        "mustAnswer": [
+          "從姿見站登頂要多久、路線難度",
+          "登山季",
+          "要帶什麼、攜帶式廁所去哪買",
+          "登山計畫書、入林屆與保全規則",
+          "棕熊與山難",
+          "裾合平與環狀路線"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭岳纜車的時間、票價、停駛期與姿見の池散策路",
+            "ownerArticleId": "asahidake-ropeway",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "黑岳⇄旭岳縱走全程與下山後回程",
+            "ownerArticleId": "asahidake-or-sounkyo",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭岳登山",
+          "autocompleteInput": "旭岳 ",
+          "suggestions": [
+            "旭岳 天氣",
+            "旭岳 楓葉",
+            "旭岳 紅葉",
+            "旭岳 即時影像",
+            "旭岳 纜車",
+            "旭岳 登山",
+            "旭岳 滑雪"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahidake/facts.json；content-planning/hokkaido/research/asahidake.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahidake-stay",
+      "priority": 15,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "planningTitle": "旭岳溫泉住宿，各旅館位置、接送與訂房管道",
+      "primaryQuery": "旭岳溫泉住宿",
+      "secondaryQueries": [
+        "天人峽溫泉"
+      ],
+      "targetPath": "/places/asahidake/stay/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahidake",
+      "contentBoundary": "旭岳溫泉與天人峽溫泉的住宿：位置、離纜車站多遠、下車站、接送、營業期間、訂房管道；不寫價格，含餐只因附近沒餐廳而寫。東川市區的住宿在東川主頁。",
+      "place": {
+        "nameZh": "旭岳",
+        "japaneseNames": [
+          "旭岳",
+          "旭岳温泉",
+          "大雪山旭岳ロープウェイ",
+          "姿見の池",
+          "天人峡"
+        ],
+        "japaneseSearchTerms": [
+          "旭岳 アクセス バス",
+          "旭川 旭岳 バス 時刻表",
+          "旭岳 ロープウェイ",
+          "旭岳 登山",
+          "旭岳 紅葉",
+          "天人峡 羽衣の滝",
+          "旭岳温泉 宿泊"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "sounkyo",
+          "asahikawa",
+          "biei"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          8,
+          9,
+          12,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客挑旭岳溫泉或天人峽的旅館，知道附近吃飯不方便要怎麼訂。",
+        "primaryReaderOutcome": "讀完能挑好旅館、選對含餐方案與下車站。",
+        "mustAnswer": [
+          "旭岳溫泉有哪些住宿",
+          "各旅館離纜車多遠、在哪一站下車",
+          "要不要訂含餐（附近能吃的地方很少）",
+          "接送巴士",
+          "訂房管道",
+          "天人峽溫泉的住宿"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "北海道與旭川市的住宿稅（2026-04-01 起）",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "天人峽與羽衣の滝（併進旭岳主頁一節）",
+            "ownerArticleId": "asahidake",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "research-required",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭岳溫泉住宿",
+          "autocompleteInput": "旭岳溫泉",
+          "suggestions": [
+            "旭岳溫泉日歸",
+            "旭岳溫泉 交通",
+            "旭岳溫泉 hotel bearmonte",
+            "旭岳溫泉 住宿",
+            "旭岳溫泉 湧駒莊"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahidake/facts.json；content-planning/hokkaido/research/asahidake.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "必做：拉比斯塔、湧駒莊、しきしま莊、杜季的 Agoda（d:F146）；各館冬季營業與自家接駁（d:F147）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahidake-or-sounkyo",
+      "priority": 11,
+      "decision": "keep",
+      "pageType": "cross-place-page",
+      "aspect": "other",
+      "planningTitle": "旭岳與層雲峽怎麼選、怎麼一起排，黑岳到旭岳縱走與兩地交通",
+      "primaryQuery": "旭岳與層雲峽",
+      "secondaryQueries": [
+        "黑岳到旭岳縱走"
+      ],
+      "targetPath": "/places/asahidake/asahidake-or-sounkyo/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahidake",
+      "contentBoundary": "旭岳與層雲峽之間的選擇與銜接：兩地差異、兩地之間怎麼移動、一起排的天數、黑岳⇄旭岳縱走全程。各地自己的交通、纜車、住宿一句帶過並連到該地頁面。",
+      "place": {
+        "nameZh": "旭岳",
+        "japaneseNames": [
+          "旭岳",
+          "旭岳温泉",
+          "大雪山旭岳ロープウェイ",
+          "姿見の池",
+          "天人峡"
+        ],
+        "japaneseSearchTerms": [
+          "旭岳 アクセス バス",
+          "旭川 旭岳 バス 時刻表",
+          "旭岳 ロープウェイ",
+          "旭岳 登山",
+          "旭岳 紅葉",
+          "天人峡 羽衣の滝",
+          "旭岳温泉 宿泊"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "sounkyo",
+          "asahikawa",
+          "biei"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          8,
+          9,
+          12,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓只有一兩天的旅客決定去旭岳還是層雲峽，或兩地怎麼串、要不要縱走。",
+        "primaryReaderOutcome": "讀完能決定去哪一邊、天數與移動方式。",
+        "mustAnswer": [
+          "兩地差在哪、只去一個選哪個",
+          "兩地之間怎麼移動",
+          "兩地一起排幾天、怎麼排",
+          "黑岳到旭岳縱走要多久、下山後怎麼回去",
+          "紅葉與雪季怎麼選"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭川、上川、札幌到層雲峽的巴士、JR 轉乘與自駕，回程末班",
+            "ownerArticleId": "sounkyo-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "黑岳纜車與吊椅的期間、時間、票價與五合目",
+            "ownerArticleId": "sounkyo-hiking",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "上川與層雲峽的平年值、積雪、紅葉時期",
+            "ownerArticleId": "sounkyo-weather",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭岳纜車的時間、票價、停駛期與姿見の池散策路",
+            "ownerArticleId": "asahidake-ropeway",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "ja-JP",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "層雲峡 旭岳 どっち",
+          "autocompleteInput": "層雲峡 旭岳",
+          "suggestions": [
+            "層雲峡 旭岳温泉 バス",
+            "層雲峡 旭岳 バス",
+            "層雲峡 旭岳 どっち",
+            "旭岳 層雲峡 縦走"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "中文自動完成沒有這組詞；日文「層雲峡 旭岳 どっち」「旭岳 層雲峡 縦走」「バス」互相出現（選群報告）。0 量照樣成頁。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahidake/facts.json；content-planning/hokkaido/research/asahidake.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "必做：TAISETSU 縱走 PASS 與黑岳⇄旭岳相互回程巴士的經營者官方（目前只有二手資料，discoveries asahidake-kurodake-traverse-pass）；查不到就只寫兩邊纜車與回旭川轉車"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahidake",
+      "priority": 20,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "aspect": "other",
+      "planningTitle": "旭岳旅遊，一日遊或住一晚、幾月去與順路的天人峽",
+      "primaryQuery": "旭岳",
+      "secondaryQueries": [
+        "旭岳一日遊",
+        "旭岳滑雪",
+        "旭岳溫泉日歸"
+      ],
+      "targetPath": "/places/asahidake/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "primaryHubId": "hub-places-asahidake",
+      "contentBoundary": "旭岳的主頁：值不值得去、一日遊或住一晚、幾月去、冬季滑雪（寫成一節，不另開滑雪頁）、旭岳溫泉的設施、天人峽（併入本頁一節）、天氣（併入）。纜車、登山、住宿、交通各兩三句並連過去。",
+      "place": {
+        "nameZh": "旭岳",
+        "japaneseNames": [
+          "旭岳",
+          "旭岳温泉",
+          "大雪山旭岳ロープウェイ",
+          "姿見の池",
+          "天人峡"
+        ],
+        "japaneseSearchTerms": [
+          "旭岳 アクセス バス",
+          "旭川 旭岳 バス 時刻表",
+          "旭岳 ロープウェイ",
+          "旭岳 登山",
+          "旭岳 紅葉",
+          "天人峡 羽衣の滝",
+          "旭岳温泉 宿泊"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "sounkyo",
+          "asahikawa",
+          "biei"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          8,
+          9,
+          12,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定旭岳要一日遊還是住一晚、幾月去、要不要順路去天人峽。",
+        "primaryReaderOutcome": "讀完能決定天數與季節，並知道接下來看哪一頁。",
+        "mustAnswer": [
+          "旭岳是什麼地方、值得去嗎",
+          "一日遊或住一晚",
+          "幾月去（紅葉、花季、雪季）",
+          "冬天能做什麼（滑雪、雪鞋）",
+          "旭岳溫泉一帶有什麼（遊客中心、日歸溫泉、ATM、吃飯）",
+          "天人峽與羽衣の滝",
+          "依旅客類型怎麼排",
+          "天氣與氣溫"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭川站、旭川機場、札幌到旭岳溫泉的いで湯號與自駕",
+            "ownerArticleId": "asahidake-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭岳纜車的時間、票價、停駛期與姿見の池散策路",
+            "ownerArticleId": "asahidake-ropeway",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "從姿見站登旭岳、裾合平、入山規則與棕熊",
+            "ownerArticleId": "asahidake-hiking",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭岳溫泉與天人峽溫泉的住宿",
+            "ownerArticleId": "asahidake-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭岳與層雲峽怎麼選、兩地怎麼移動與一起排",
+            "ownerArticleId": "asahidake-or-sounkyo",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "旭岳",
+          "autocompleteInput": "旭岳",
+          "suggestions": [
+            "旭岳纜車",
+            "旭岳天氣",
+            "旭岳即時影像",
+            "旭岳大雪山",
+            "旭岳滑雪場",
+            "旭岳一日遊",
+            "旭岳滑雪"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "地名在台灣沒有同名地點（中文「大雪山」是台中的森林遊樂區，不用）；搜尋結果頁寫作前在台灣節點確認。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/asahidake/facts.json；content-planning/hokkaido/research/asahidake.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "higashikawa",
+      "priority": 21,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "aspect": "other",
+      "planningTitle": "東川町景點與美食，咖啡店、道草館與從旭川怎麼去",
+      "primaryQuery": "東川町景點",
+      "secondaryQueries": [
+        "東川町美食"
+      ],
+      "targetPath": "/places/higashikawa/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "primaryHubId": "hub-places-higashikawa",
+      "contentBoundary": "東川町市區與郊外（中心部、キトウシ、忠別湖、大雪旭岳源水）的主頁；交通、景點、美食、住宿、祭典資料都不到短頁門檻，全部寫在本頁各一節。旭岳溫泉、天人峽、旭岳纜車與步道歸旭岳的頁面；いで湯號全班次在旭岳交通頁。",
+      "place": {
+        "nameZh": "東川",
+        "japaneseNames": [
+          "東川町",
+          "道の駅ひがしかわ道草館",
+          "キトウシ森林公園",
+          "大雪旭岳源水"
+        ],
+        "japaneseSearchTerms": [
+          "東川町 観光",
+          "東川町 カフェ",
+          "東川町 ランチ",
+          "旭川 東川 バス",
+          "旭川空港 東川町 バス",
+          "東川町 道の駅"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "asahidake",
+          "asahikawa"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定要不要在旭川機場與旭岳之間停東川、停多久、怎麼移動、吃哪幾家。",
+        "primaryReaderOutcome": "讀完能排出東川半天到一天，挑好要去的店與營業日。",
+        "mustAnswer": [
+          "東川是什麼樣的地方",
+          "從旭川、旭川機場怎麼去、在町內怎麼移動",
+          "東川町景點（道草館、キトウシ、源水、忠別湖、せんとぴゅあ）",
+          "東川町美食（咖啡、麵包、豆腐、酒）",
+          "要排幾小時",
+          "住東川市區還是旭岳溫泉",
+          "幾月去、祭典與冬天",
+          "依旅客類型怎麼排"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "札幌、新千歲機場、旭川機場到旭川市區的 JR、高速巴士、機場巴士",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川站前バスタッチ各乘車處與巴士總合案內所",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "北海道與旭川市的住宿稅（2026-04-01 起）",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川站、旭川機場、札幌到旭岳溫泉的いで湯號與自駕",
+            "ownerArticleId": "asahidake-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭岳溫泉與天人峽溫泉的住宿",
+            "ownerArticleId": "asahidake-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-10-26",
+          "query": "東川町景點",
+          "autocompleteInput": "東川町",
+          "suggestions": [
+            "東川町日本語學校",
+            "東川町景點",
+            "東川町攝影比賽",
+            "東川町 家具",
+            "東川町美食"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "中文「東川町」前幾名是東川町日本語學校；主要查詢用「東川町景點」，搜尋結果頁要在寫作前看過。"
+        }
+      ],
+      "competition": "競爭比稚內群高：LIVE JAPAN、Funliday、japan.travel 繁中版寫過旭川、層雲峽、旭岳的交通與景點；本頁寫他們寫不細的班次、季節期間與冬季狀況。搜尋結果頁還沒在台灣節點看過。",
+      "researchSources": "content-planning/hokkaido/places/higashikawa/facts.json；content-planning/hokkaido/research/higashikawa.json；大綱 content-planning/hokkaido/hokkaido-asahikawa-outline.json",
+      "researchBeforeWriting": [
+        "必做：60 番等往東川的路線巴士時刻與所要時間（h:F28、h:F29），用瀏覽器讀 orikomi PDF",
+        "必做：美食一節挑 6～8 家，用店家官網或官方 Instagram 核對營業日後才寫"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahikawa-festival",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "festival",
+      "primaryQuery": "旭川祭典",
+      "targetPath": "/places/asahikawa/festival/",
+      "primaryHubId": "hub-places-asahikawa",
+      "travelGroupId": "hokkaido-asahikawa",
+      "mergeInto": "asahikawa",
+      "mergeReason": "2026-10-26 地點研究：本主題事實 9 筆（不含缺口），少於 15 筆；2027 冬まつり細節要 12 月才公布。寫成旭川主頁「旭川冬季祭典與夏天的花火」一節，冬まつり公布後達 15 筆再拆頁（中文有「旭川 冬季 祭典」）。"
+    },
+    {
+      "articleId": "sounkyo-food",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "food",
+      "primaryQuery": "層雲峽美食",
+      "targetPath": "/places/sounkyo/food/",
+      "primaryHubId": "hub-places-sounkyo",
+      "travelGroupId": "hokkaido-asahikawa",
+      "mergeInto": "sounkyo",
+      "mergeReason": "2026-10-26 地點研究：本主題事實 13 筆，少於 15 筆；併進層雲峽主頁「層雲峽溫泉街與上川町美食」一節，冬季晚餐少的事也寫進住宿頁。"
+    },
+    {
+      "articleId": "asahidake-weather",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "weather",
+      "primaryQuery": "旭岳天氣",
+      "targetPath": "/places/asahidake/weather/",
+      "primaryHubId": "hub-places-asahidake",
+      "travelGroupId": "hokkaido-asahikawa",
+      "mergeInto": "asahidake",
+      "mergeReason": "2026-10-26 地點研究：只有 5 筆，最近的氣溫觀測點志比内在標高 310 公尺，和旭岳溫泉差約 800 公尺；併進旭岳主頁季節一節。"
+    },
+    {
+      "articleId": "asahidake-sights",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "primaryQuery": "旭岳景點",
+      "targetPath": "/places/asahidake/sights/",
+      "primaryHubId": "hub-places-asahidake",
+      "travelGroupId": "hokkaido-asahikawa",
+      "mergeInto": "asahidake",
+      "mergeReason": "2026-10-26 地點研究：主要景點都在纜車與步道上，由纜車頁與登山頁負責；天人峽 14 筆，少於 15 筆，寫成旭岳主頁一節。"
+    },
+    {
+      "articleId": "asahidake-food",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "food",
+      "primaryQuery": "旭岳美食",
+      "targetPath": "/places/asahidake/food/",
+      "primaryHubId": "hub-places-asahidake",
+      "travelGroupId": "hokkaido-asahikawa",
+      "mergeInto": "asahidake",
+      "mergeReason": "2026-10-26 地點研究：能吃的只有纜車站食堂、賣店與一間便利商店，寫進主頁與住宿頁的含餐說明。"
+    },
+    {
+      "articleId": "higashikawa-transport",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "transport",
+      "primaryQuery": "東川町交通",
+      "targetPath": "/places/higashikawa/transport/",
+      "primaryHubId": "hub-places-higashikawa",
+      "travelGroupId": "hokkaido-asahikawa",
+      "mergeInto": "higashikawa",
+      "mergeReason": "2026-10-26 地點研究：只屬於東川的交通約 15 筆，剛好在門檻上，但 60 番時刻表讀不到、所要時間官方說法不一，中文也沒有東川交通的需求詞；併進主頁一節。"
+    },
+    {
+      "articleId": "higashikawa-food",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "food",
+      "primaryQuery": "東川町美食",
+      "targetPath": "/places/higashikawa/food/",
+      "primaryHubId": "hub-places-higashikawa",
+      "travelGroupId": "hokkaido-asahikawa",
+      "mergeInto": "higashikawa",
+      "mergeReason": "2026-10-26 地點研究：16 筆，但用店家官網或官方社群核對過的只有少數；先在主頁寫一節，核對夠 15 家再拆。"
+    },
+    {
+      "articleId": "higashikawa-stay",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "primaryQuery": "東川町住宿",
+      "targetPath": "/places/higashikawa/stay/",
+      "primaryHubId": "hub-places-higashikawa",
+      "travelGroupId": "hokkaido-asahikawa",
+      "mergeInto": "higashikawa",
+      "mergeReason": "2026-10-26 地點研究：10 筆，多數是包棟、民宿，只在 Airbnb 或官網訂；旭岳溫泉的住宿歸旭岳住宿頁；主頁寫一節「住東川市區還是旭岳溫泉」。"
+    },
+    {
+      "articleId": "higashikawa-festival",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "festival",
+      "primaryQuery": "東川町祭典",
+      "targetPath": "/places/higashikawa/festival/",
+      "primaryHubId": "hub-places-higashikawa",
+      "travelGroupId": "hokkaido-asahikawa",
+      "mergeInto": "higashikawa",
+      "mergeReason": "2026-10-26 地點研究：8 筆，2027 冰祭日期未公布；併進主頁季節一節。"
+    },
+    {
+      "articleId": "higashikawa-sights",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "primaryQuery": "東川景點",
+      "targetPath": "/places/higashikawa/sights/",
+      "primaryHubId": "hub-places-higashikawa",
+      "travelGroupId": "hokkaido-asahikawa",
+      "mergeInto": "higashikawa",
+      "mergeReason": "2026-10-26 地點研究：官方景點清單的主要景點（旭岳、天人峽）歸旭岳；市區與郊外剩五、六處，寫在主頁各一個 H3，中文「東川町景點」由主頁回答。"
+    },
+    {
+      "articleId": "asahikawa-hiking",
+      "decision": "remove",
+      "pageType": "aspect-page",
+      "primaryQuery": "旭川登山",
+      "targetPath": "/places/asahikawa/hiking/",
+      "travelGroupId": "hokkaido-asahikawa",
+      "reason": "旭川市區沒有登山主題；嵐山與北邦野草園的散步路寫進旭川景點頁。"
     }
   ],
   "approval": {
     "approvedBy": "darren",
     "approvedAt": "2026-10-18",
     "scope": "26 頁保留項目整批核准；資料太少的主題照短頁規則併進主頁"
-  }
+  },
+  "groupApprovals": [
+    {
+      "groupId": "hokkaido-wakkanai",
+      "approvedBy": "darren",
+      "approvedAt": "2026-10-18",
+      "scope": "26 頁保留項目整批核准（同頂層 approval）"
+    },
+    {
+      "groupId": "hokkaido-asahikawa",
+      "approvedBy": "darren",
+      "approvedAt": "2026-10-26",
+      "scope": "Darren 2026-10-26 同意大綱通過檢查就直接寫（AGENTS.md 最後一段）；21 頁保留、10 頁併進主頁、1 頁不做",
+      "outline": "content-planning/hokkaido/hokkaido-asahikawa-outline.json"
+    }
+  ]
 }

@@ -1,5 +1,385 @@
 {
   "schemaVersion": 1,
   "note": "全站分工表：一件事只有一頁負責（先上線的負責）。頁面上線後由規劃 session 把它負責的事加進來；格式與規則見選題 Skill 的 next-group.md 與 selection-workflow.md。",
-  "owners": []
+  "owners": [
+    {
+      "topicKey": "wakkanai-access",
+      "description": "札幌、旭川到稚內的 JR、高速巴士與飛機；稚內機場巴士",
+      "ownerArticleId": "wakkanai-transport",
+      "summaryArticleIds": [
+        "wakkanai",
+        "asahikawa-transport",
+        "asahikawa"
+      ],
+      "groupId": "hokkaido-wakkanai",
+      "status": "published",
+      "note": "稚內交通頁已上線（先上線的負責）；旭川群只摘要並連過去"
+    },
+    {
+      "topicKey": "asahikawa-overview",
+      "description": "旭川值不值得去、排幾天、幾月去、怎麼接周邊地點",
+      "ownerArticleId": "asahikawa",
+      "summaryArticleIds": [],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahikawa-access",
+      "description": "札幌、新千歲機場、旭川機場到旭川市區的 JR、高速巴士、機場巴士",
+      "ownerArticleId": "asahikawa-transport",
+      "summaryArticleIds": [
+        "asahikawa",
+        "asahiyama-zoo",
+        "sounkyo-transport",
+        "asahidake-transport",
+        "higashikawa"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahikawa-station-bus-stops",
+      "description": "旭川站前バスタッチ各乘車處與巴士總合案內所",
+      "ownerArticleId": "asahikawa-transport",
+      "summaryArticleIds": [
+        "asahiyama-zoo",
+        "sounkyo-transport",
+        "asahidake-transport",
+        "higashikawa"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahiyama-zoo-visit",
+      "description": "旭山動物園的開園期間、門票、企鵝散步、公車與園內",
+      "ownerArticleId": "asahiyama-zoo",
+      "summaryArticleIds": [
+        "asahikawa",
+        "asahikawa-sights",
+        "asahikawa-transport",
+        "asahikawa-stay",
+        "asahikawa-weather"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahikawa-stay-list",
+      "description": "旭川市內住宿的區域、位置與訂房管道",
+      "ownerArticleId": "asahikawa-stay",
+      "summaryArticleIds": [
+        "asahikawa"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "hokkaido-lodging-tax",
+      "description": "北海道與旭川市的住宿稅（2026-04-01 起）",
+      "ownerArticleId": "asahikawa-stay",
+      "summaryArticleIds": [
+        "sounkyo-stay",
+        "asahidake-stay",
+        "higashikawa"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahikawa-sights-list",
+      "description": "旭川市內與近郊的景點與冬季雪上活動",
+      "ownerArticleId": "asahikawa-sights",
+      "summaryArticleIds": [
+        "asahikawa"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahikawa-food-list",
+      "description": "旭川拉麵、成吉思汗、在地料理、鬧區與伴手禮",
+      "ownerArticleId": "asahikawa-food",
+      "summaryArticleIds": [
+        "asahikawa"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahikawa-climate",
+      "description": "旭川各月氣溫、降雪、積雪與穿著",
+      "ownerArticleId": "asahikawa-weather",
+      "summaryArticleIds": [
+        "asahikawa"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahikawa-events",
+      "description": "旭川冬まつり、夏まつり花火與食べマルシェ",
+      "ownerArticleId": "asahikawa",
+      "summaryArticleIds": [
+        "asahikawa-weather"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "sounkyo-overview",
+      "description": "層雲峽值不值得去、當天來回或住一晚、幾月去",
+      "ownerArticleId": "sounkyo",
+      "summaryArticleIds": [],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "sounkyo-access",
+      "description": "旭川、上川、札幌到層雲峽的巴士、JR 轉乘與自駕，回程末班",
+      "ownerArticleId": "sounkyo-transport",
+      "summaryArticleIds": [
+        "sounkyo",
+        "sounkyo-festival",
+        "sounkyo-stay",
+        "asahidake-or-sounkyo"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "sounkyo-local-routes",
+      "description": "層雲峽往大雪湖、銀泉台、高原溫泉的班次與紅葉期管制",
+      "ownerArticleId": "sounkyo-transport",
+      "summaryArticleIds": [
+        "sounkyo-sights",
+        "sounkyo-hiking",
+        "sounkyo-weather"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "sounkyo-sunrise-bus",
+      "description": "層雲峽往北見、阿寒湖、釧路的サンライズ號",
+      "ownerArticleId": "sounkyo-transport",
+      "summaryArticleIds": [
+        "sounkyo"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "kurodake-ropeway",
+      "description": "黑岳纜車與吊椅的期間、時間、票價與五合目",
+      "ownerArticleId": "sounkyo-hiking",
+      "summaryArticleIds": [
+        "sounkyo",
+        "sounkyo-sights",
+        "asahidake-or-sounkyo"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "kurodake-climb",
+      "description": "黑岳登頂、石室與黑岳滑雪場",
+      "ownerArticleId": "sounkyo-hiking",
+      "summaryArticleIds": [
+        "sounkyo"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "daisetsu-kogen-numa",
+      "description": "大雪高原溫泉沼めぐり的開放期間、受理與棕熊",
+      "ownerArticleId": "sounkyo-hiking",
+      "summaryArticleIds": [
+        "sounkyo-sights"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "sounkyo-sights-list",
+      "description": "層雲峽溫泉街、峽谷沿線與上川町的景點",
+      "ownerArticleId": "sounkyo-sights",
+      "summaryArticleIds": [
+        "sounkyo"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "sounkyo-hyobaku",
+      "description": "層雲峽溫泉冰瀑祭與峽谷火祭、紅葉谷點燈",
+      "ownerArticleId": "sounkyo-festival",
+      "summaryArticleIds": [
+        "sounkyo",
+        "sounkyo-stay",
+        "sounkyo-weather"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "sounkyo-stay-list",
+      "description": "層雲峽溫泉街與上川站周邊的住宿、接駁巴士",
+      "ownerArticleId": "sounkyo-stay",
+      "summaryArticleIds": [
+        "sounkyo"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "sounkyo-climate-koyo",
+      "description": "上川與層雲峽的平年值、積雪、紅葉時期",
+      "ownerArticleId": "sounkyo-weather",
+      "summaryArticleIds": [
+        "sounkyo",
+        "asahidake-or-sounkyo"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "sounkyo-food",
+      "description": "層雲峽溫泉街與上川站周邊的餐廳（資料少，併進主頁）",
+      "ownerArticleId": "sounkyo",
+      "summaryArticleIds": [
+        "sounkyo-stay"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahidake-overview",
+      "description": "旭岳值不值得去、一日遊或住一晚、幾月去、天氣、冬季滑雪",
+      "ownerArticleId": "asahidake",
+      "summaryArticleIds": [],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahidake-access",
+      "description": "旭川站、旭川機場、札幌到旭岳溫泉的いで湯號與自駕",
+      "ownerArticleId": "asahidake-transport",
+      "summaryArticleIds": [
+        "asahidake",
+        "higashikawa",
+        "asahikawa-transport"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahidake-ropeway-sugatami",
+      "description": "旭岳纜車的時間、票價、停駛期與姿見の池散策路",
+      "ownerArticleId": "asahidake-ropeway",
+      "summaryArticleIds": [
+        "asahidake",
+        "asahidake-hiking",
+        "asahidake-or-sounkyo"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahidake-climb",
+      "description": "從姿見站登旭岳、裾合平、入山規則與棕熊",
+      "ownerArticleId": "asahidake-hiking",
+      "summaryArticleIds": [
+        "asahidake"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahidake-stay-list",
+      "description": "旭岳溫泉與天人峽溫泉的住宿",
+      "ownerArticleId": "asahidake-stay",
+      "summaryArticleIds": [
+        "asahidake",
+        "higashikawa"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "tenninkyo",
+      "description": "天人峽與羽衣の滝（併進旭岳主頁一節）",
+      "ownerArticleId": "asahidake",
+      "summaryArticleIds": [
+        "asahidake-stay"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "asahidake-sounkyo-choice",
+      "description": "旭岳與層雲峽怎麼選、兩地怎麼移動與一起排",
+      "ownerArticleId": "asahidake-or-sounkyo",
+      "summaryArticleIds": [
+        "asahidake",
+        "sounkyo"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "kurodake-asahidake-traverse",
+      "description": "黑岳⇄旭岳縱走全程與下山後回程",
+      "ownerArticleId": "asahidake-or-sounkyo",
+      "summaryArticleIds": [
+        "sounkyo-hiking",
+        "asahidake-hiking"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    },
+    {
+      "topicKey": "higashikawa-overview",
+      "description": "東川町的景點、美食、交通、住宿、祭典（全部寫在主頁）",
+      "ownerArticleId": "higashikawa",
+      "summaryArticleIds": [
+        "asahidake-transport",
+        "asahikawa-transport"
+      ],
+      "groupId": "hokkaido-asahikawa",
+      "status": "approved",
+      "note": "兩群都還沒上線時先核准的群負責；上線後改 status published"
+    }
+  ]
 }

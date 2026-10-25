@@ -95,3 +95,77 @@
 - 宗谷巴士能不能刷 IC 卡，官網沒寫。
 - 稚內到庫頁島航線停航只有第二手資料。
 - 桃岩登山口巴士站不在宗谷巴士路線圖上，要向禮文營業所（0163-86-1020）確認。
+
+# 旭川・大雪群（2026-10-26）
+
+北海道第二群，旭川、東川、旭岳、層雲峽 4 個地點（群編號 `hokkaido-asahikawa`）。照選題 Skill `references/next-group.md` 自動選出，選群理由見 `next-group-2026-10-26.md`。Darren 2026-10-26 同意這群大綱通過檢查就直接寫，不等 3 天默許，只限這一次（`AGENTS.md` 最後一段）。
+
+## 檔案
+
+- 大綱：`hokkaido-asahikawa-outline.json`（21 頁、232 個標題，每個標題附事實編號；分工表 32 件事、內連表 103 條附連結句、寫作順序、官方景點比對、體驗線索、媒體計畫、併頁決定、例外 `exceptions`、跨群關聯 `crossGroup`、回頭補 `backfill`）。
+- 頁面規格：`page-specs.json` 裡 `travelGroupId: hokkaido-asahikawa` 的項目（21 頁保留、10 頁併進主頁、1 頁不做）；每頁有 `place` 欄位（鄰近地點、出入口）與 `researchBeforeWriting`（寫作前要補的研究）。
+- 關鍵字證據：`candidates.json` 同一批 articleId，來源是 `autocomplete-2026-10-26.json` 的 Google 自動完成，`ahrefsVerified: false`，搜尋結果頁還沒在台灣節點看過（`serpIntentConfirmed: false`）。
+- 地點事實表：`places/<地點>/facts.json`（旭川 150、東川 103、旭岳 162、層雲峽 195 筆，含缺口）；研究紀錄：`research/<地點>.json`。
+- 全站地點清單 `../places.json` 登記四地與這一群，另登記上川（併入層雲峽）、天人峽（併入旭岳）與群外的美瑛、富良野、阿寒湖、網走候選；全站分工表 `../ownership.json` 登記這群的事與已上線的稚內交通頁（旭川到稚內）。
+- 給 Darren 的白話摘要：`asahikawa-outline-summary-2026-10-26.md`。
+
+## 頁面（照寫作順序）
+
+「補研究」標「要」的頁，作者動筆前研究者要先補 `researchBeforeWriting` 列的事實。
+
+| 順序 | 頁面 | 主題 | 網址 | 主要查詢 | 補研究 |
+|---|---|---|---|---|---|
+| 1 | 層雲峽交通 | 交通 | `/places/sounkyo/transport/` | 層雲峽交通 | 要 |
+| 2 | 旭川交通（機場到車站、札幌到旭川） | 交通 | `/places/asahikawa/transport/` | 旭川機場到旭川車站 | 要 |
+| 3 | 旭山動物園 | 景點頁 | `/places/asahikawa/asahiyama-zoo/` | 旭山動物園 | 要 |
+| 4 | 旭川住宿 | 住宿 | `/places/asahikawa/stay/` | 旭川住宿 | 要（必做） |
+| 5 | 旭岳交通 | 交通 | `/places/asahidake/transport/` | 旭岳交通 | 要 |
+| 6 | 層雲峽纜車與黑岳登山 | 步道與登山 | `/places/sounkyo/hiking/` | 層雲峽纜車 | 要 |
+| 7 | 旭岳纜車與姿見の池 | 景點頁 | `/places/asahidake/ropeway/` | 旭岳纜車 | 要 |
+| 8 | 旭川景點 | 景點 | `/places/asahikawa/sights/` | 旭川景點 | 要 |
+| 9 | 層雲峽冰瀑祭 | 祭典 | `/places/sounkyo/festival/` | 層雲峽冰瀑祭 | 要 |
+| 10 | 層雲峽天氣與楓葉 | 天氣與季節 | `/places/sounkyo/weather/` | 層雲峽天氣 | |
+| 11 | 旭岳與層雲峽怎麼選 | 跨地點 | `/places/asahidake/asahidake-or-sounkyo/` | 旭岳與層雲峽 | 要（必做） |
+| 12 | 旭川美食 | 美食 | `/places/asahikawa/food/` | 旭川美食 | 要 |
+| 13 | 層雲峽住宿 | 住宿 | `/places/sounkyo/stay/` | 層雲峽住宿 | 要（必做） |
+| 14 | 旭岳登山 | 步道與登山 | `/places/asahidake/hiking/` | 旭岳登山 | |
+| 15 | 旭岳溫泉住宿 | 住宿 | `/places/asahidake/stay/` | 旭岳溫泉住宿 | 要（必做） |
+| 16 | 旭川天氣 | 天氣與季節 | `/places/asahikawa/weather/` | 旭川天氣 | 要（必做） |
+| 17 | 層雲峽景點 | 景點 | `/places/sounkyo/sights/` | 層雲峽景點 | 要 |
+| 18 | 旭川 | 主頁 | `/places/asahikawa/` | 旭川 | 要 |
+| 19 | 層雲峽 | 主頁 | `/places/sounkyo/` | 層雲峽 | |
+| 20 | 旭岳 | 主頁 | `/places/asahidake/` | 旭岳 | |
+| 21 | 東川町 | 主頁 | `/places/higashikawa/` | 東川町景點 | 要（必做） |
+
+寫作順序照「被最多頁連到的先寫」，地點主頁放最後。
+
+## 併進主頁、不做的題目
+
+| 題目 | 處理 | 理由 |
+|---|---|---|
+| 旭川祭典 | 併進旭川主頁 | 9 筆；2027 冬まつり細節 12 月才公布，達 15 筆再拆 |
+| 層雲峽美食 | 併進層雲峽主頁 | 13 筆 |
+| 旭岳天氣、景點、美食 | 併進旭岳主頁 | 天氣 5 筆、天人峽 14 筆、吃飯的地方只有纜車站與一間便利商店 |
+| 東川交通、景點、美食、住宿、祭典 | 併進東川主頁 | 都不到 15 筆，或來源還沒用官方核對 |
+| 旭川登山 | 不做 | 市區沒有登山主題，嵐山散步路寫進旭川景點 |
+
+## 例外（給 Darren 之後看）
+
+- 滑雪是新主題：不開滑雪頁，寫成旭岳主頁、層雲峽纜車與黑岳登山、旭川景點、東川主頁的一節。
+- 旭山動物園、旭岳纜車與姿見の池升格成景點頁（兩條條件都過）。
+- 旭川住宿（9 筆）與旭川天氣（14 筆）不到門檻，保留但寫作前補研究，補不到就停放。
+- 跨地點頁「旭岳與層雲峽怎麼選」只有日文需求詞。
+- 競爭比稚內群高很多（LIVE JAPAN、Funliday、japan.travel 繁中版）。
+
+## 跨群關聯
+
+- 旭川到稚內：已上線的稚內交通頁負責（全站分工表 `wakkanai-access`），旭川交通頁與旭川主頁只摘要並連過去。
+- 回頭補：旭川交通、旭川主頁上線後，routine 在稚內交通頁、稚內主頁結尾加連結（大綱 `backfill`）。
+- 旭川往美瑛、富良野：之後的富良野・美瑛群的交通頁負責；層雲峽往阿寒湖、北見：道東群上線前由層雲峽交通頁負責。
+- 北海道地區 Hub 文案目前只寫稚內群，旭川群上線前要由人工 session 改。
+
+## 讀不到的官方網站
+
+- 道北巴士 `dohokubus.com`（層雲峽 81 號、機場直達巴士、旭川端乘車處）：讀取工具與瀏覽器都連不上，層雲峽時刻表用 Internet Archive 存檔。
+- 旭川觀光コンベンション協會 `atca.jp`：資安維護暫停公開，重開日未定。
+- 旭川電氣軌道往東川的時刻表 PDF（圖片太小）、旭岳遊客中心的散策路與滑雪路線地圖 PDF（圖片）、大雪森のガーデン官網（維護中）、JR イン旭川官網（DNS 查不到）、東川ミーツ（驗證碼，不繞過）、Agoda 列表（要執行 JavaScript）。
