@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahidake-transport",
+  "articleSha256": "46105c3c268483e62d87cb19e2f92e1ef5c20dd76d1b4f7edb1e624a954049b7",
+  "checker": "fact-check agent（唯讀，非作者；2026-10-26 以 curl 實際下載官方頁面與 PDF 判讀；第 2 輪複查：纜車官網去掉 HTML 註解，只認頁面看得到的 2026 年 7～12 月月曆）",
+  "checkedAt": "2026-10-26",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "旭岳交通靠的是旭川電氣軌道（旭川電気軌道）的66號路線巴士いで湯號，不然就是自己開車。每天從旭川站發車，經旭川機場、東川町開到旭岳纜車站前。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川市内から東神楽町～旭川空港～東川町を経由し旭岳を結ぶ定期路線バス毎日運行中！／66番「いで湯号」",
+      "verdict": "verified",
+      "notes": "終點在纜車站前見 ひがしかわ観光協会「シャトルバスいで湯号を利用する場合は、旭岳ロープウエイ駅舎前が終点になります」。起點其實是 6条9丁目（7:04），旭川站是中途站，「從旭川站發車」對讀者無誤。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "一天只有4個來回，旭川站到旭岳要1小時48分鐘，大人單程2,300日圓。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "1往復増の4往復運行／旭川駅（のりば9） 7:15 … 旭岳 9:03／6条9丁目・旭川駅～旭岳 大人2,300円",
+      "verdict": "verified",
+      "notes": "重算 7:15→9:03＝1 小時 48 分。2026-12-01 運賃改定的 66 系統運賃表（un066_2026.12.pdf）旭川駅→旭岳仍是 2300（紅字只在市內區間），12/1 後不變。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "回程末班車16:55從旭岳開出，錯過了很難臨時找到車下山。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳→旭川市内 旭岳 | 9:55 | 11:55 | 14:55 | 16:55",
+      "verdict": "verified",
+      "notes": "「很難臨時找到車」由 ひがしかわ観光協会「旭岳温泉にはタクシー乗り場・レンタカー会社はございません…最寄りのタクシー会社にてご予約ください」支持。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "開車也到得了，從旭川機場約60分鐘、JR旭川站約1小時10分鐘。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "お車での旭岳迄の所要時間 … JR旭川駅 | 1時間10分 … 旭川空港 | 60分",
+      "verdict": "verified",
+      "notes": "遊客中心 access 頁寫空港約50分、JR旭川駅約70分；機場時間兩個官方來源不同（50／60 分），正文用纜車官網的 60 分，可接受。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "往旭岳溫泉的北海道道1160號冬天不在封路名單上，但每年10月中旬到4月上旬可能下雪結冰，需要換冬季輪胎。",
+      "sourceUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/kk/akk/87945.html",
+      "sourceTitle": "令和8年度冬期通行規制一覧 - 上川総合振興局旭川建設管理部",
+      "sourceQuote": "R8 冬期通行規制一覧(10.16更新).pdf：列出 70 芦別美瑛線、223 愛山渓上川線、1116 富良野上川線、1162 銀泉台線等，無 1160 号",
+      "verdict": "verified",
+      "notes": "下載一覽 PDF 逐條核對路線編號，沒有 1160。輪胎期間見 ラビスタ大雪山「冬タイヤ装着のお願い（例年10月中旬～4月上旬頃）期間中、降雪・路面凍結の可能性がございます。冬タイヤの装着 又は チェーンの裝着・携帯」——官方是「冬胎或雪鏈」，開頭這句只寫冬季輪胎，後文 C46 有補雪鏈，可接受。正文只說「不在名單上」，沒寫成不會封路，條件主詞正確。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "いで湯號在旭川站前公車站「バスタッチ」的9號乘車處上車。往富良野的車也停同一個乘車處，往旭岳的是66號。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "駅前バスタッチ／9 旭川空港・旭岳・富良野行／66 いで湯号 共栄BC-旭川空港-ひがしかわ道草館 旭岳／ふらのバス 旭川空港-美瑛-JR富良野駅前（快速ラベンダー号）",
+      "verdict": "verified",
+      "notes": "PDF 轉圖片判讀。時刻表頁也寫「旭川駅（のりば9）」。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "2025年10月1日起增加到一天4個來回，一年四季都用同一張時刻表。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川空港経由旭岳線は2025年10月1日ダイヤ改正を実施いたします。1往復増の4往復運行となり…／66番「いで湯号」運行時刻表 （2025年10月1日改正）",
+      "verdict": "verified",
+      "notes": "頁面只有一張 2025-10-01 改正時刻表，沒有夏冬季別或運行期間的區分；「一年四季同一張」是由此推得，與研究紀錄 F25 一致。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "往旭岳時刻表：旭川站 7:15／9:15／12:15／14:15，旭川機場 8:00／10:00／13:00／15:00，ひがしかわ道草館 8:12／10:12／13:12／15:12，旭岳 9:03／11:03／14:03／16:03",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川駅（のりば9） | 7:15 | 9:15 | 12:15 | 14:15／旭川空港 | 8:00 | 10:00 | 13:00 | 15:00／ひがしかわ道草館 | 8:12 | 10:12 | 13:12 | 15:12／旭岳 | 9:03 | 11:03 | 14:03 | 16:03",
+      "verdict": "verified",
+      "notes": "16 格逐格比對一致。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "回旭川時刻表：旭岳 9:55／11:55／14:55／16:55，ひがしかわ道草館 10:34／12:34／15:34／17:34，旭川機場 10:50／12:50／15:50／17:50，旭川站 11:33／13:33／16:33／18:33",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳 | 9:55 | 11:55 | 14:55 | 16:55／ひがしかわ道草館 | 10:34 | 12:34 | 15:34 | 17:34／旭川空港 | 10:50 | 12:50 | 15:50 | 17:50／旭川駅（のりば9） | 11:33 | 13:33 | 16:33 | 18:33",
+      "verdict": "verified",
+      "notes": "16 格逐格比對一致。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "旭川站到旭岳去程1小時48分鐘，回程1小時38分鐘。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川駅 7:15 → 旭岳 9:03／旭岳 9:55 → 旭川駅 11:33",
+      "verdict": "verified",
+      "notes": "重算：四班去程都是 1:48；回程 9:55→11:33、11:55→13:33、14:55→16:33、16:55→18:33 都是 1:38。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "14:15那班到旭岳已經16:03，10月21日起纜車下山的末班是16:00，12月11日起更早，都在這之前就收班了，比較適合當晚住旭岳溫泉的行程。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "🚠営業時間変更のお知らせ⏰10/21より 9:00～16:00（上り最終15:40）／2026年12月 11～31 G；G 始発（上り） 9:00am 〜 最終（下り） 3:40pm",
+      "verdict": "verified",
+      "notes": "第 2 輪複查：只用頁面看得到的內容（去掉 HTML 註解後重讀）。16:03 晚於 10/21 起下行末班 16:00 與 12/11 起的 15:40，成立。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "東川町的ひがしかわ道草館在路線中段，去程、回程都會停。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川市内→旭岳 … ひがしかわ道草館 | 8:12 …／旭岳→旭川市内 … ひがしかわ道草館 | 10:34 …",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "從機場出發不用先進旭川市區。發車時間是8:00、10:00、13:00、15:00，到旭岳約1小時3分鐘。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川空港 | 8:00 | 10:00 | 13:00 | 15:00／旭岳 | 9:03 | 11:03 | 14:03 | 16:03",
+      "verdict": "verified",
+      "notes": "重算四班都是 63 分。路線經 旭川空港→ひがしかわ道草館→旭岳，機場上車不經市區。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "大人車資1,650日圓，比從旭川站上車便宜650日圓。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川空港～旭岳 大人1,650円/小人830円／6条9丁目・旭川駅～旭岳 大人2,300円",
+      "verdict": "verified",
+      "notes": "重算 2,300−1,650＝650。12/1 改定表 旭川空港→旭岳 仍 1650。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "走出航廈的出入口4，左手邊就是公車站，往東川、旭岳的車停2號乘車處，1號乘車處是往旭川站的車。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+      "sourceTitle": "バス-交通アクセス｜旭川空港",
+      "sourceQuote": "出入口4を出て左側にバスのりばがございます。旭川駅方面はバスのりば①、その他はバスのりば②でございます。／② … 東川・旭岳",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "售票機在一樓國內線入境大廳的出入口3附近，出航廈前就可以把票買好。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+      "sourceTitle": "バス-交通アクセス｜旭川空港",
+      "sourceQuote": "1階国内線到着ロビー(出入口3付近)にバス券売機がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "いで湯號照時刻表開，不等班機。飛機晚到錯過10:00那班，下一班就要等到13:00。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "※66番旭岳線「いで湯号」は定時運行の路線バスにつき旭川空港の航空機接続は行っておりません。／旭川空港 | 8:00 | 10:00 | 13:00 | 15:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "Suica、Kitaca這類全國交通IC卡不能用。いで湯號能刷的只有旭川電氣軌道的Asaca與道北巴士的DoCARD兩種。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
+      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川電気軌道運行便につきましては当社ICカード「Asaca」、道北バスICカード「DoCARD」が使用できます。※全国交通系ICカードには対応しておりません",
+      "verdict": "verified",
+      "notes": "旭岳線頁「使用可能なICカード ・Asaca（旭川電気軌道） ・DoCARD（道北バス）」，乘車指南 PDF「使用できるIC乗車カード 旭川電気軌道「Asaca」道北バス「DoCARD」」。「全国交通系 IC 不對應」是對旭川電氣軌道運行便整體的說明，いで湯號是旭川電氣軌道運行，主詞成立。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "手上只有其他IC卡，就付現金，或在上車前用售票機買票。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "下記の場所に設置の券売機にて乗車券を事前に購入できます。・旭川電気軌道総合案内所 ・旭川空港",
+      "verdict": "verified",
+      "notes": "現金支付見 路線バスご利用ガイド「現金でご利用の方 整理券をお取りください」。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "無現金售票機收信用卡與QR支付，可以買「旭岳線」車票，一次買好幾個人的份也行。畫面有日、英、中、韓文。",
+      "sourceUrl": "http://www.asahikawa-denkikidou.jp/%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%83%ac%e3%82%b9%e6%b1%ba%e6%b8%88%e7%94%a8%e8%87%aa%e5%8b%95%e5%88%b8%e5%a3%b2%e6%a9%9f/",
+      "sourceTitle": "キャッシュレス決済用自動券売機 – 旭川電気軌道株式会社",
+      "sourceQuote": "クレジットカードとＱＲ決済サービスを利用してバス乗車券の購入…／券売機は日本語のほか英語、中国語、韓国語の表示が可能です。／・旭岳線バス乗車券／複数人まとめての購入も可能です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "旭川站那一台放在旭川電氣軌道的服務處綜合案內所，就在站前Tsuruha大樓1樓。售票機5:45到22:00都能用",
+      "sourceUrl": "http://www.asahikawa-denkikidou.jp/%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%83%ac%e3%82%b9%e6%b1%ba%e6%b8%88%e7%94%a8%e8%87%aa%e5%8b%95%e5%88%b8%e5%a3%b2%e6%a9%9f/",
+      "sourceTitle": "キャッシュレス決済用自動券売機 – 旭川電気軌道株式会社",
+      "sourceQuote": "・旭川電気軌道総合案内所（Tsuruha Bldg.旭川駅前１F） 利用時間 5:45～22:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "服務處的窗口只開8:00到18:30。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/%e4%b9%97%e5%90%88%e3%83%90%e3%82%b9%e4%bb%a4%e5%92%8c8%e5%b9%b412%e6%9c%881%e6%97%a5%e9%81%8b%e8%b3%83%e6%94%b9%e5%ae%9a%e3%81%ae%e6%9c%aa%e5%ae%9f%e6%96%bd%e5%8c%ba%e9%96%93%e3%80%81%e5%ae%9f/",
+      "sourceTitle": "乗合バス令和8年12月1日運賃改定の未実施区間、実施運賃値上げについて – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川電気軌道バス総合案内所（営業時間 8:00～18:30） TEL 0166-23-3355",
+      "verdict": "verified",
+      "notes": "お知らせ一覽（/topics/）本身沒有這行，要點進 2026-10-22 與 2026-08-31（令和8年9月1日運賃改定）兩則公告才有；資料來源列的是 /topics/ 一覽頁，研究紀錄可改記這則公告網址。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "旭川機場的入境大廳也有一台，機場營業時間內都能買。",
+      "sourceUrl": "http://www.asahikawa-denkikidou.jp/%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%83%ac%e3%82%b9%e6%b1%ba%e6%b8%88%e7%94%a8%e8%87%aa%e5%8b%95%e5%88%b8%e5%a3%b2%e6%a9%9f/",
+      "sourceTitle": "キャッシュレス決済用自動券売機 – 旭川電気軌道株式会社",
+      "sourceQuote": "・旭川空港（到着ロビー内） 利用時間 空港営業時間内",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "來回沒有折扣，要買2張單程票，旭川站到旭岳來回是4,600日圓。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "往復でご利用の方はきっぷを2枚ご購入ください（往復割引はございません）／6条9丁目・旭川駅～旭岳 大人2,300円",
+      "verdict": "verified",
+      "notes": "重算 2,300×2＝4,600。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "售票機買的票不能直接取消。要退票，到買票那台售票機所在的窗口辦，扣100日圓手續費後退現金，旭川站的窗口開到18:30。",
+      "sourceUrl": "http://www.asahikawa-denkikidou.jp/%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%83%ac%e3%82%b9%e6%b1%ba%e6%b8%88%e7%94%a8%e8%87%aa%e5%8b%95%e5%88%b8%e5%a3%b2%e6%a9%9f/",
+      "sourceTitle": "キャッシュレス決済用自動券売機 – 旭川電気軌道株式会社",
+      "sourceQuote": "決済金額から手数料100円を差し引いた額を現金にて払戻しいたします。払戻しの際は発券場所の窓口にお申し出ください。※キャッシュレス機にて乗車券購入後は決済の取り消しができません",
+      "verdict": "verified",
+      "notes": "「発券場所の窓口」＝買票那台售票機所在的窗口，第 2 輪改寫後更貼近原文。旭川站窗口 18:30 見 C22（旭川電氣軌道 2026-10-22 公告「旭川電気軌道バス総合案内所（営業時間 8:00～18:30）」）。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "付現金就從中門上車、抽一張整理券，下車時把整理券和車資一起投進車上的投幣箱（運賃箱）。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/07/norikata-rosen.pdf",
+      "sourceTitle": "路線バスご利用ガイド｜旭川電気軌道",
+      "sourceQuote": "バスの入口は中間の扉です。(前ドアが出入口の車両もあります)／現金でご利用の方 整理券をお取りください／運賃投入口へ整理券を先に入れてからお金を入れてください",
+      "verdict": "verified",
+      "notes": "官方註明也有前門上下車的車輛；正文寫「從中門上車」是一般情形，可接受。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "先買好票也一樣拿整理券，下車時連同車票投進去。",
+      "sourceUrl": "http://www.asahikawa-denkikidou.jp/%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%83%ac%e3%82%b9%e6%b1%ba%e6%b8%88%e7%94%a8%e8%87%aa%e5%8b%95%e5%88%b8%e5%a3%b2%e6%a9%9f/",
+      "sourceTitle": "キャッシュレス決済用自動券売機 – 旭川電気軌道株式会社",
+      "sourceQuote": "バスご利用の際は乗車時に整理券を取り、降車時に整理券と乗車券を運賃箱にお入れください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "車上只能換千圓鈔，零錢最好在旭川備好。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/07/norikata-rosen.pdf",
+      "sourceTitle": "路線バスご利用ガイド｜旭川電気軌道",
+      "sourceQuote": "紙幣の両替は千円札のみとなっております。／現金でご利用の方は小銭のご用意をお願いいたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "旭岳周邊沒有銀行、郵局與ATM，最近的ATM開車要30到40分鐘。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A｜旭岳ビジターセンター",
+      "sourceQuote": "旭岳近辺に銀行、郵便局、ATMはありません。一番近いATMまで車で約30～40分程度かかりますので、事前にご準備ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "大件行李放車底的行李艙，原則上每人1件，體積0.25立方公尺、長2公尺、重30公斤以內。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "トランクに収納できる荷物は、原則としてお１人様1個（容積0.25㎥、長さ2ｍ以内、重さ/30kg以内）でお願い致します。",
+      "verdict": "verified",
+      "notes": "官方寫「トランク」，沒寫在車底；いで湯號的行李艙位置原文未寫，「車底」屬一般巴士常識，輕微，可改成「行李艙」。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "空間有限，帶第二件可能被拒收。就算行李艙還有位子，會影響其他乘客放行李時，也可能不收。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "トランクスペースには限りがある為、複数お持ちの場合はお断りさせて頂く場合がございます。（スペースに空きがある状態でも、他のお客様の荷物の積込みに影響する恐れがある場合はお断りをさせて頂きます。）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "從札幌搭大眾運輸，要先到旭川再轉いで湯號。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳温泉｜ひがしかわ観光協会",
+      "sourceQuote": "旭岳へ公共交通機関を利用して行く場合は旭川駅発、旭川空港経由のシャトルバス「いで湯号」をご利用ください。",
+      "verdict": "verified",
+      "notes": "同頁另有「札幌・旭川から宿泊者向けの送迎バスを運行しているホテルもあります」，屬住宿者專用接送，不算大眾運輸，正文不受影響。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "札幌往旭川的特急一天約24班。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=110",
+      "sourceTitle": "時刻表（［特急］ライラック・カムイ・オホーツク・宗谷・サロベツ・［特快］大雪・［快速］きたみ 下り）｜北海道旅客鉄道株式会社",
+      "sourceQuote": "始発：札幌 629 札幌 652 札幌 713 札幌 730 … 札幌 2100 札幌 2200；旭川 1238（大雪）旭川 1335（サロベツ）旭川 1508（きたみ）旭川 1905（大雪）旭川 2006（サロベツ）",
+      "verdict": "verified",
+      "notes": "第 1 輪判 incorrect（原句「特急與快速」）。第 2 輪：已改成「特急」，資料來源也換成 vtime.php?s=110。重數札幌始發 24 班，全為特急（ライラック、カムイ、オホーツク、宗谷），6:29～22:00。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "特急最快1小時25分鐘，普通車指定席5,440日圓。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260528_KO_arujan.pdf",
+      "sourceTitle": "「あるじゃん、特急。」～６月からは特急「カムイ」「ライラック」をアピールします～｜JR北海道（2026年5月28日）",
+      "sourceQuote": "最速１時間25 分の快適な移動を体験ください。／通常価格５，４４０円から、20～55％割引！（札幌～旭川間・大人１名・片道・普通車指定席）",
+      "verdict": "verified",
+      "notes": "時刻表 2007M カムイ 札幌 900→旭川 1025 也是 1 小時 25 分。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "高速巴士「高速あさひかわ号」單程2,500日圓，車資比特急便宜，車程4月到11月約2小時5分鐘，12月到3月約2小時25分鐘。",
+      "sourceUrl": "https://www.jrhokkaidobus.com/timetable/highway02/",
+      "sourceTitle": "高速乗合バス | 高速あさひかわ号 | JHB：ジェイ・アール北海道バス",
+      "sourceQuote": "（札幌 － 旭川間）片道2,500円／4月～11月 所要時間（見込） 2時間05分／12月～3月 所要時間（見込） 2時間25分",
+      "verdict": "verified",
+      "notes": "第 1 輪判 incorrect（「約2小時」沒交代冬季）。第 2 輪已補冬夏車程，與 JR 北海道巴士頁一致；北海道中央巴士頁也是片道 2,500 円。2,500＜5,440。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "開車從JR札幌站到旭岳約3小時。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "JR札幌駅 | 3時間",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "いで湯號在旭岳溫泉一帶停4站。依序是「旭岳温泉入口」「旭岳キャンプ場」「ホテルベアモンテ前」，最後是纜車站前的終點「旭岳」。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳源水公園前 … 旭岳温泉入口 | 8:49／旭岳キャンプ場 | 8:50／ホテルベアモンテ前 | 8:54／旭岳 | 9:03",
+      "verdict": "verified",
+      "notes": "觀光協會「旭岳ロープウエイ駅舎前が終点…3か所あるバス停からお近くのバス停で上下車できます」，3 站＋終點＝4 站。站名日文與時刻表一致。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "各站時間表：7:15旭川站發的車 旭岳温泉入口 8:49、旭岳キャンプ場 8:50、ホテルベアモンテ前 8:54、旭岳 9:03；9:55旭岳發的車 旭岳温泉入口 9:57、旭岳キャンプ場 9:56、ホテルベアモンテ前 9:55、旭岳 9:55",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳温泉入口 | 8:49／旭岳キャンプ場 | 8:50／ホテルベアモンテ前 | 8:54／旭岳 | 9:03；旭岳 | 9:55／ホテルベアモンテ前 | 9:55／旭岳キャンプ場 | 9:56／旭岳温泉入口 | 9:57",
+      "verdict": "verified",
+      "notes": "8 格逐格比對一致。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "住K's House北海道，在「旭岳温泉入口」下車。",
+      "sourceUrl": "https://kshouse.jp/hokkaido-j/index.html",
+      "sourceTitle": "K's House Hokkaido",
+      "sourceQuote": "旭川駅、旭川空港からは６６番 旭川空港・旭岳線（いで湯号）をご利用ください。バス停 旭岳温泉入り口にて下車",
+      "verdict": "verified",
+      "notes": "旅館頁寫「旭岳温泉入り口」，正式站名是時刻表的「旭岳温泉入口」，正文用正式站名正確。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "住拉比斯塔大雪山，在「旭岳キャンプ場」下車。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/access/",
+      "sourceTitle": "アクセス｜ラビスタ大雪山",
+      "sourceQuote": "旭川電気軌道バス いで湯号「旭岳キャンプ場」下車",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "坐到旭岳温泉入口的車資和坐到終點一樣，旭川站上車2,300日圓、機場上車1,650日圓。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/10/un066_2026.12.pdf",
+      "sourceTitle": "普通旅客運賃表 運賃改定日:令和08年12月01日 系統:旭川空港経由旭岳線",
+      "sourceQuote": "旭川駅 行：旭岳温泉入口 2300 ／ 旭岳 2300；旭川空港 行：旭岳温泉入口 1650 ／ 旭岳 1650（紅字＝変更箇所只在市內區間）",
+      "verdict": "verified",
+      "notes": "PDF 轉圖片判讀。12/1 改定後也不變。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "往旭岳溫泉走北海道道1160號旭岳溫泉線。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
+      "sourceTitle": "2026年ヒグマ情報｜旭岳ビジターセンター",
+      "sourceQuote": "旭岳温泉線1160号線標高800ｍ看板付近／道道1160号線の旭岳温泉街にあと5分くらいで到着する付近",
+      "verdict": "verified",
+      "notes": "觀光協會也寫「旭岳ロープウエイ山麓駅から続く道道1160号線」。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "旭川機場開過去約60分鐘，JR旭川站約1小時10分鐘，旭川北IC約1小時20分鐘。美瑛過來約40分鐘、白金溫泉約1小時10分鐘",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "旭川北ＩＣ | 1時間20分／JR旭川駅 | 1時間10分／旭川空港 | 60分／美瑛 | 40分／白金温泉 | 1時間10分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "東川町市區到旭岳遊客中心約40分鐘。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/access/",
+      "sourceTitle": "アクセス｜旭岳ビジターセンター",
+      "sourceQuote": "お車でお越しの方 … 発：東川町中心街 →約40分 → 着：旭岳ビジターセンター",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "從層雲峽溫泉開車約2小時30分鐘",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "層雲峡温泉 | 2時間30分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "夏天到紅葉季，旭岳附近的道路與停車場容易擁擠，遊客中心也呼籲盡量搭公共交通。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/access/",
+      "sourceTitle": "アクセス｜旭岳ビジターセンター",
+      "sourceQuote": "※夏期から紅葉期は旭岳付近の道路および駐車場は混雑が予想されます。ご来館の際はできるだけ公共交通機関をご利用いただきますようご協力よろしくお願いします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "紅葉旺季的週末與假日，纜車停車場會停滿，入口常排起車隊。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※紅葉トップシーズン中の土日祭日は満車となり、駐車スペースが空くまでお待ちいただく事となります。",
+      "verdict": "verified",
+      "notes": "「等車位空出來」寫成「入口排起車隊」屬合理轉述。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "纜車停車場有150個小客車車位，6月到10月每天500日圓，11月到5月免費。車可以連續停好幾天，除了每天的停車費，還要另外加收費用。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "１日１回／営業時間内駐車 | 普通自動車・バイク … | 500円／※駐車スペースは普通自動車150台…／※日をまたぐ継続駐車には駐車日数分の通常料金以外に追加料金をいただいております。／※11月～5月の駐車料金は無料となっております。",
+      "verdict": "verified",
+      "notes": "500 日圓是「1 日 1 次、營業時間內」；6～10 月收費由「11月～5月無料」反推，觀光協會「夏期有料」一致。連續停車＋追加料金照原文「日をまたぐ継続駐車には駐車日数分の通常料金以外に追加料金」。第 2 輪確認這些文字不在 HTML 註解內。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "不過纜車收班後，停車場出入口就會關閉，車子開不出來，也不能睡在車上。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※ロープウェイの営業終了後、駐車場出入口は閉鎖いたします。／※駐車場内での宿泊（車中泊・テント宿泊等）はお断りしております。",
+      "verdict": "verified",
+      "notes": "「車子開不出來」由出入口閉鎖推得，並有「無断で閉鎖を解除し車両を侵入・駐車等される行為は固くお断りします」。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "遊客中心停車場有91個車位，7月1日到9月30日收500日圓，大型車不能停，也不能在車上過夜。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/access/",
+      "sourceTitle": "アクセス｜旭岳ビジターセンター",
+      "sourceQuote": "駐車場 | 91台＋身障者用2台 ■有料期間あり（7月1日～9月30日）二輪・四輪 500円/台・日 ■車中泊禁止 ■バス等の大型自動車は駐車できません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "遊客中心前的公共停車場冬季關閉，冬天自駕就停纜車停車場。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳温泉｜ひがしかわ観光協会",
+      "sourceQuote": "車でお越しの際は公共駐車場（冬季閉鎖）ほか、旭岳ロープウエイ駐車場（夏期有料）をご利用ください。／11月から5月までは旭岳ロープウエイの駐車場が無料で利用できます",
+      "verdict": "verified",
+      "notes": "公共停車場冬季關閉、纜車停車場 11～5 月免費可用，「冬天停纜車停車場」成立。作者說明兩頁都沒寫明 91 台停車場與公共停車場是否同一座，保留兩句可接受。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "拉比斯塔大雪山提醒自駕旅客，每年10月中旬到4月上旬要裝冬季輪胎或帶雪鏈。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/access/",
+      "sourceTitle": "アクセス｜ラビスタ大雪山",
+      "sourceQuote": "冬タイヤ装着のお願い（例年10月中旬～4月上旬頃）期間中、降雪・路面凍結の可能性がございます。冬タイヤの装着 又は チェーンの装着・携帯をお願いいたします。",
+      "verdict": "verified",
+      "notes": "原文是「例年…頃」，正文「每年10月中旬到4月上旬」已帶「中旬、上旬」的概略語氣，可接受。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "1160號不在道路管理者旭川建設管理部的冬季封路名單上。",
+      "sourceUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/kk/akk/87945.html",
+      "sourceTitle": "令和8年度冬期通行規制一覧 - 上川総合振興局旭川建設管理部",
+      "sourceQuote": "令和8年度冬期通行規制一覧を更新しました (PDF)：路線 70・126・223・251・528・579・611・688・718・938・964・966・1116・1136・1162 … 無 1160",
+      "verdict": "verified",
+      "notes": "一覽 PDF 檔名「R8 冬期通行規制一覧(10.16更新).pdf」。一覽涵蓋東川町的道道（611 瑞穂東川線、1116 富良野上川線、1162 銀泉台線），1160 屬同部所轄合理；所轄表本身沒有另外打開核對。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "東川町觀光協會也說，冬天這條路的除雪做得很好，只要天氣不是很差，開到旭岳溫泉沒有問題。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳温泉｜ひがしかわ観光協会",
+      "sourceQuote": "冬期間でも道路の除雪が行き届いているため、悪天候でない限り旭岳温泉までの往来に問題はありません。",
+      "verdict": "verified",
+      "notes": "官方名稱是「ひがしかわ観光協会」，譯「東川町觀光協會」可接受。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "往旭岳的路上有幾段收不到手機訊號，出發前最好下載離線地圖。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A｜旭岳ビジターセンター",
+      "sourceQuote": "旭岳に向かう途中の道路と、旭岳（山岳エリア）では通じない場所もありますのでご注意ください。",
+      "verdict": "verified",
+      "notes": "離線地圖是建議，不是事實。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "2026年9月到10月，遊客中心的紀錄裡有好幾次是開車時從車上看到棕熊，髮夾彎附近也有。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
+      "sourceTitle": "2026年ヒグマ情報｜旭岳ビジターセンター",
+      "sourceQuote": "【日時】10月10日（土）…【状況】車で走行中、車内からヒグマを目撃した／【日時】10月5日（月）16：30頃【場所】道道1160号線ヘアピンカーブを曲がってすぐ【状況】車で走行中…",
+      "verdict": "verified",
+      "notes": "「車で走行中」至少 3 筆（10/10 兩筆、10/5），9 月有多筆在道道 1160 號上的目擊紀錄。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "不開車當天來回，能在山上待多久由巴士決定。最早的一班9:03到旭岳，最晚的回程是16:55。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳 | 9:03 | 11:03 | 14:03 | 16:03／旭岳 | 9:55 | 11:55 | 14:55 | 16:55",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "當天來回時間軸：7:15 旭川站發車、8:00 旭川機場、9:03 抵達旭岳、16:55 旭岳發末班車、17:50 旭川機場、18:33 抵達旭川站",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川駅（のりば9） 7:15／旭川空港 8:00／旭岳 9:03；旭岳 16:55／旭川空港 17:50／旭川駅（のりば9） 18:33",
+      "verdict": "verified",
+      "notes": "6 格逐格一致；在山上可待 9:03～16:55，約 7 小時 52 分（正文沒寫此數字）。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "2026年7月到9月，纜車平日多半6:30、週末與連假多半6:00開始，下山末班都是17:30。纜車比末班巴士晚收，回程只要看巴士時間。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "D 始発（上り） 6:30am 〜 最終（下り） 5:30pm／E 始発（上り） 6:00am 〜 最終（下り） 5:30pm；2026年7月～9月月曆只有 D、E（例：7月11 E 12 E 13 D…；9月19～23 E）",
+      "verdict": "verified",
+      "notes": "第 2 輪：去掉 HTML 註解後，頁面看得到的月曆是 2026 年 7～12 月。7～9 月逐日只有 D、E，E 落在週六日與連假（9/21～23），末班都是 17:30＞16:55。第 1 輪我引用的 6 月月曆在註解裡，已不再使用。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "10月21日起改成9:00到16:00",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "【営業時間変更のお知らせ】🚠営業時間変更のお知らせ⏰10/21より 9:00～16:00（上り最終15:40）；2026年10月 21～31 A、11月 1～15 A",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "11月16日到12月10日停駛。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "2026年11月運行スケジュール 16 × … 30 ×／12月 1 × … 10 × 11 G",
+      "verdict": "verified",
+      "notes": "第 1 輪判 unsupported（「檢修」無原文）。第 2 輪已刪「檢修」，日期與看得到的月曆一致。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "12月11日起是9:00到15:40，9:03下車時纜車已經開門，下山的末班纜車卻比末班巴士16:55早。官網月曆目前只排到12月，其他月份出發前看纜車官網的營業月曆。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "2026年12月運行スケジュール … 11 G … 31 G；G 始発（上り） 9:00am 〜 最終（下り） 3:40pm",
+      "verdict": "verified",
+      "notes": "第 2 輪：頁面看得到的月曆最後是 2026 年 12 月，「只排到12月」成立；不再延伸到 1～2 月。9:00＜9:03、15:40＜16:55 重算成立。"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "纜車的發車時間與班距可能臨時微調，纜車官網也提醒要接いで湯號的旅客抓好時間。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※状況により発車時刻・運行間隔を若干変動させていただく場合がございます。いで湯号・飛行機・ＪＲ等の交通機関をご利用予定のお客様はくれぐれもご注意くださいませ。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "排行程時把14:55那班當回程，錯過了還有16:55，比一開始就排末班車多一層保險。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳 | 9:55 | 11:55 | 14:55 | 16:55",
+      "verdict": "verified",
+      "notes": "14:55 之後下一班確實是 16:55（間隔 2 小時）。冬季（12/11 起）纜車下行末班 15:40 晚於 14:55，會讓「14:55 當回程」在冬季要提早下山；正文前一段已說明冬季末班纜車 15:40，邏輯不衝突。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "旭岳開出的末班いで湯號是16:55，17:50到旭川機場、18:33到旭川站。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳 16:55／旭川空港 17:50／旭川駅（のりば9） 18:33",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "要搭當天的飛機離開，得配合17:50到機場的這班車，或搭更早的車。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川空港 | 10:50 | 12:50 | 15:50 | 17:50",
+      "verdict": "verified",
+      "notes": "17:50 是回程最晚到機場的一班；正文沒寫航班時間，邏輯成立。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "真的錯過了，旭岳溫泉沒有計程車招呼站與租車公司，計程車要向最近的計程車公司預約。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳温泉｜ひがしかわ観光協会",
+      "sourceQuote": "旭岳温泉にはタクシー乗り場・レンタカー会社はございません。…最寄りのタクシー会社にてご予約ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "從旭岳溫泉搭計程車到JR旭川站約1小時。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/access/",
+      "sourceTitle": "アクセス｜ラビスタ大雪山",
+      "sourceQuote": "JR旭川駅 タクシー約1時間 ラビスタ大雪山",
+      "verdict": "verified",
+      "notes": "原文方向是旭川站→拉比斯塔，反方向同距離，可接受。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "不會講日文，建議到遊客中心或纜車站請工作人員協助叫車，住在旭岳溫泉就請旅館櫃台幫忙，遊客中心開到17:00。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/access/",
+      "sourceTitle": "アクセス｜旭岳ビジターセンター",
+      "sourceQuote": "開館時間 | 9：00－17：00 | 休館日 | 年末年始",
+      "verdict": "verified",
+      "notes": "事實部分只有遊客中心開到 17:00，成立（年末年始休館，正文沒寫，16:55 錯過末班時 17:00 前仍開著）。「請工作人員協助叫車」「旅館櫃台幫忙」是本站建議，沒寫成官方服務，不需來源；遊客中心 Q&A 也寫館內與纜車站附近手機可通。"
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "延伸資料：旭川電氣軌道的旭岳線頁（時刻表、車資與行李規定）、無現金售票機說明（位置、可用時間與退票方式）、旭岳纜車官網（營業月曆與停車場收費）、旭川機場的巴士交通頁（乘車處位置）、旭岳遊客中心的交通頁（開車時間與遊客中心停車場）、旭川建設管理部的冬季通行規制一覽（當年冬季封路的路段）",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "66番「いで湯号」運行時刻表／主要区間運賃／手荷物の取り扱いについて",
+      "verdict": "verified",
+      "notes": "六個連結都以 curl 打開（HTTP 200），內容與描述相符：售票機頁有設置處、利用時間與払戻し；纜車官網有月曆與駐車場料金；機場頁有出入口4與①②のりば；遊客中心頁有お車での所要時間與91台駐車場；建設管理部頁有令和8年度一覽 PDF。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "12月1日起的車資調整，旭岳線這幾段的車資不變。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/10/un066_2026.12.pdf",
+      "sourceTitle": "普通旅客運賃表 運賃改定日:令和08年12月01日 系統:旭川空港経由旭岳線",
+      "sourceQuote": "旭川駅→旭岳 2300、旭川駅→旭岳温泉入口 2300、旭川空港→旭岳 1650、旭川空港→旭岳温泉入口 1650（赤字は運賃変更箇所：只在 6条9丁目～共栄バスセンター間）",
+      "verdict": "verified",
+      "notes": "10/22 公告把 66 號列為 12/1 改定對象，但運賃表紅字只在市內區間；正文寫「這幾段」（旭川站、機場到旭岳）不變，主詞正確。"
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "10月1日到20日是8:00到17:00，也比末班巴士晚。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "C 始発（上り） 8:00am 〜 最終（下り） 5:00pm；2026年10月 1～20 C",
+      "verdict": "verified",
+      "notes": "17:00＞16:55，重算成立（只晚 5 分鐘）。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "札幌6:29發的第一班特急7:56到旭川，接得上9:15的いで湯號。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=110",
+      "sourceTitle": "時刻表（［特急］ライラック・カムイ・オホーツク・宗谷・サロベツ・［特快］大雪・［快速］きたみ 下り）｜北海道旅客鉄道株式会社",
+      "sourceQuote": "3001M ライラック1号 毎日 札幌 発 629 … 旭川 着 756",
+      "verdict": "verified",
+      "notes": "札幌始發最早一班確為 6:29；7:56 到旭川，距 9:15 いで湯號 79 分。其實 7:15 那班也接不上（7:56＞7:15），9:15 是第一班接得上的，正文正確。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "另一個做法是在旭岳溫泉住一晚，隔天搭9:55的頭班車回旭川。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳→旭川市内 旭岳 | 9:55 | 11:55 | 14:55 | 16:55",
+      "verdict": "verified",
+      "notes": "9:55 是旭岳發的第一班。"
+    }
+  ],
+  "summary": {
+    "verified": 74,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
