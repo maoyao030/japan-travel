@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island-transport",
+  "articleTitle": "禮文島交通，路線巴士、觀光巴士與沒車怎麼去景點",
+  "targetUrl": "/places/rebun-island/transport/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-26",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-transport/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-26",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是禮文島上靠宗谷巴士移動，而不是渡輪或景點介紹。",
+      "mustShow": ["禮文島上的宗谷巴士，或香深港一帶的交通場景"],
+      "mustNotShow": ["可辨識的人物臉部", "利尻島或稚內的巴士冒充禮文島", "旅館或店家招牌當主體", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/130726_Kafuka_Port_in_Rebun_Island_Hokkaido_Japan17s3.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.62},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 663highland 2013 年 7 月在香深港拍的宗谷巴士：右下方停著幾輛白底橘藍條紋、車身寫「宗谷バス」的大型巴士，左邊是港邊的有頂走廊，背後是綠色山坡與「歓迎」看板。文章的主角就是從香深港渡輪站發車的宗谷巴士，這張是唯一同時看得出禮文島與宗谷巴士的合格實拍。限制：拍攝時間早於現在的渡輪站啟用，畫面不代表現在的巴士乘車處位置，所以圖說寫明拍攝年份，只當情境封面。原圖 3:2、4912 px 寬，裁 16:9 時焦點往下放，上方切掉一點天空，巴士完整保留。cover-02 是 Raita Futo 2022 年在禮文島北部拍的島上道路，可當備選，但看不出巴士，交通主題不如 cover-01 直接。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-26",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Kafuka port」「Kafuka ferry terminal」「Rebun bus」「宗谷バス 礼文」「礼文島 路線バス」與分類 Rebun, Hokkaido、Kafuka Port。現在的香深港渡輪站照片（Senkaku Islands 2020，CC BY-SA 4.0）寬度只有 1400 px，不到封面門檻；Ka23 13 2014 年的渡輪站是施工中畫面；663highland 2013 年香深港系列 19 張只有 17s3 拍到宗谷巴士，其他是港口、渡輪與舊候船室。站上其他禮文島頁已用過 Gorota1.JPG、Rebun 20140725 110632.jpg、Rebun island (52357580650).jpg、Rebun's Momoiwa (52357581315).jpg、Grilled Fish HokkeChanChanYaki.jpg，這次兩張候選都不重複。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:130726_Kafuka_Port_in_Rebun_Island_Hokkaido_Japan17s3.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:130726 Kafuka Port in Rebun Island Hokkaido Japan17s3.jpg",
+          "sourceDescription": "Kafuka Port in Rebun Island, Hokkaido, Japan.（Own work，分類 Kafuka Port，座標 45.3027, 141.0474）",
+          "takenAt": "2013-07-26",
+          "width": 4912,
+          "height": 3264,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "contextual",
+          "matchLimits": "2013 年拍攝，早於現在的香深港渡輪站；畫面不代表現在的巴士乘車處位置或現役車輛塗裝。",
+          "whyItFits": "檔案頁說明與分類標示為禮文島香深港，座標在香深港；畫面主體是車身寫著宗谷バス的巴士，正是文章說的島上交通。",
+          "altDraft": "禮文島香深港停著幾輛宗谷巴士，背後是長滿綠草的山坡",
+          "captionDraft": "香深港的宗谷巴士（2013 年 7 月）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "none",
+            "logos": "巴士車身的「宗谷バス」字樣；文章主題就是宗谷巴士的路線，不是推銷",
+            "artwork": "none",
+            "property": "港邊停車場與有頂走廊、山坡上的歡迎看板",
+            "risk": "low",
+            "notes": "沒有可辨識的人物；車身字樣是業者名稱，與正文內容一致，不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rebun_island_roads_(52356209702).jpg",
+          "creatorName": "Raita Futo",
+          "sourceTitle": "File:Rebun island roads (52356209702).jpg",
+          "sourceDescription": "礼文島（Flickr 匯入，CC BY 2.0）",
+          "takenAt": "2022-07-26",
+          "width": 6656,
+          "height": 4437,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "contextual",
+          "matchLimits": "只拍到島上道路與遠處一輛小車，看不出巴士或路線。",
+          "whyItFits": "檔案頁標示為禮文島，畫面是穿過草原丘陵的島上道路。",
+          "altDraft": "禮文島穿過綠色丘陵的道路，遠處有山",
+          "captionDraft": "禮文島的道路（2022 年 7 月）。",
+          "creditDraft": "照片：Raita Futo／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "道路與自然景觀",
+            "risk": "low",
+            "notes": "遠處車輛很小，看不出車牌或人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
