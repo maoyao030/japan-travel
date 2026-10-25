@@ -9,6 +9,7 @@ Darren 2026-10-22 改成**每天 5 篇**：一輪仍只寫一篇，改成一天�
 Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一篇後，上傳最多 2 篇已驗收、還沒上線的文章（照 `writingOrder` 先後），積壓的清完後就是每輪寫一篇、傳一篇。上傳照自動發布 Skill（`.agents/skills/japan-travel-auto-publisher/SKILL.md`）「produce」第 7～14 步，本機的差異寫在本文件「5. 上傳」。上傳完把分支合併推到 `main`，網站才會重建。
 
 - 這套流程和 2026-10-20 稚內交通的人工流程相同，一篇約用 5 小時額度的 16%、每週額度的 2%（不含選圖）。
+- Darren 2026-10-25 加上第 2 步第 0 點「寫作前補研究」：作者動筆前先補這頁缺的事實，補完還太薄就停放、不上線。每篇預估多用 5 小時額度 3～5%（還沒實測）。
 
 ## 工作資料夾與分支
 
@@ -42,10 +43,22 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 子代理一律用 Agent 工具、`model: "opus"`（Opus 5.5），**`run_in_background: false`**，等它完整回傳才做下一步。每一步都要親自確認檔案存在，不能只憑子代理的說法。寫作與潤稿不用 Fable。
 
+0. **寫作前補研究**（新子代理「研究者」，不寫文章；Darren 2026-10-25 決定加這一步，因為事實表薄的頁面寫出來會用「打電話問」填滿表格）。交代：
+   - 讀大綱這一頁（mustAnswer、headings、`links`、分工表）、`.agents/skills/japan-travel-answer-first/references/page-types.md` 裡這種頁型的必備欄位、`references/research-record.md`、`references/japanese-sources.md`。
+   - 從 `content-planning/hokkaido/places/<地點>/facts.json` 建 `<資料夾>/reference-review.md`：格式照 `content-production/wakkanai-transport/reference-review.md`（原始任務、事實表、推算、查到但不寫、待補內連），事實表收大綱這頁標題用到的事實，加上跟本頁主題直接相關的事實，編號不帶地點前綴。
+   - 在 `reference-review.md` 加「## 寫作前缺口檢查」表：每條 mustAnswer、每個大綱或頁型要的表格欄位一行（住宿頁是每一家的價格、含餐、接送、訂房管道），欄位是項目、已有的事實編號、夠不夠、缺什麼、補研究結果。
+   - 缺的去查，照來源分級：經營者官網與旅館、店家官網優先，再來是觀光協會與自治體；Trip.com、Agoda 只用來核對有沒有上架、訂不訂得到。網頁讀取工具讀不到就用瀏覽器打開，照本文件「不做的事」（打開後先靜音、不點下載、不開影片頁、遇到驗證碼或機器人檢查不繞過）。原站連不上時可以用網頁存檔，記下存檔日期，下次查核日設在 30 天內。新事實照事實表格式接著編號加進去，採用決定欄寫「寫作前補研究」。
+   - 補不到的照實記在缺口表，不讓作者用「訂房時問」之類的句子補位。
+   - 範圍只限 mustAnswer 與表格欄位，不擴充別的題目，大約 30 分鐘內做完。
+   - 最後寫「## 寫作前判定」：`ready` 或 `thin`。下面任何一種就是 `thin`：有一條 mustAnswer 找不到事實可以正面回答；大綱或頁型要的表格有一半以上的格子沒有事實；本主題事實少於 15 筆（短頁門檻）。判定附一句原因。
+   - 不改資料夾以外的檔案、不 commit。Windows 的 heredoc 會吃反斜線，寫檔用 Write 工具。
+
+   協調者親自讀「寫作前判定」：`thin` 就**停放**這篇（見「失敗」），停放表的原因寫「寫作前補研究後資料仍不足」與缺什麼，要誰處理寫「人工 session：補研究或併進地點主頁」；`ready` 才接第 1 步。
+
 1. **作者**（新子代理）。交代：
-   - 用 `.agents/skills/japan-travel-answer-first/SKILL.md` 寫內容稿；寫作前讀完 `references/writing-guide.md`（特別是第14條「不要寫成量產頁」）、`references/examples.md`、`references/nanny-level.md`。研究已做完，跳過研究步驟。
+   - 用 `.agents/skills/japan-travel-answer-first/SKILL.md` 寫內容稿；寫作前讀完 `references/writing-guide.md`（特別是第14條「不要寫成量產頁」）、`references/examples.md`、`references/nanny-level.md`。研究由第 0 步的研究者做完，跳過研究步驟。
    - H1、H2／H3 照大綱這一頁的 headings 一字不改、順序層級不變；mustAnswer 都要正面回答；大綱 `links` 裡 from 是這頁的 sentence 一字不改寫進正文；分工表歸別頁的事一兩句帶過並用內連句連過去。
-   - 先從 `content-planning/hokkaido/places/<地點>/facts.json` 建 `<資料夾>/reference-review.md`：格式照 `content-production/wakkanai-transport/reference-review.md`（原始任務、事實表、推算、查到但不寫、待補內連），事實表收大綱這頁標題用到的事實，加上跟本頁主題直接相關的事實，編號不帶地點前綴。只能用地點事實表的事實。
+   - 讀研究者建好的 `<資料夾>/reference-review.md`，只能用裡面的事實。缺口表標「補不到」的不寫；單一格子可以寫成讀者能做的事，但不能用「訂房時用電話問」之類的句子填滿一整欄。
    - Darren 的寫法要求：讀者會卡住的事講細，其他一兩句帶過，不要每節一樣長；班次少（一天 4 班以下）就列時刻表，用白話說選擇，不算出能待幾分鐘；段落從讀者的處境起頭；有事實撐的判斷直接給、理由寫在同一句，划不划算要用事實的數字算；不寫成去過、不用第一人稱、不加沒有事實的感想；不用「看這張表」「都查得到」「先…」「關鍵是」「最先要搞清楚的是」這類硬裝口語或宣告句；同一個條件詞不整篇重複；查不到的不寫，也不寫「官方沒寫」。
    - 輸出 `<資料夾>/draft-tagged.md`（每句有數字、時間、價格、條件的句子在句號前標 `[F編號]`；結尾 `## 延伸資料`（官方頁）、`## 資料來源`）與 `<資料夾>/publication.json`（`articleId`、`targetPath`、`seoTitle` 與 H1 相同、`seoDescription` 120 字內含具體數字、`excerpt`）。
    - 跑到通過：`python .agents/skills/japan-travel-answer-first/scripts/fact_tags.py <資料夾>`（產生 `reader-preview.md`）、`node .agents/skills/japan-travel-answer-first/scripts/check-voice.mjs <資料夾>/reader-preview.md`、`python .agents/skills/japan-travel-answer-first/scripts/audit_answer_first.py <資料夾>/reader-preview.md --json --article-type <大綱這頁的 pageType（place-entry 或 aspect-page）> --reference-review <資料夾>/reference-review.md`（要 `mechanical_clear`）。
@@ -133,7 +146,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 ## 失敗
 
-- **停放**：事實查核 4 輪還沒全部 verified、讀者最終判 reject、大綱或分工和事實對不上、作者回報缺事實寫不出 mustAnswer。把資料夾留著（不刪），review.md 的最終結果寫 `parked` 與原因；執行紀錄「停放」表加一列；下一輪自動換下一篇。停放的文章等 Darren 或人工 session 處理。
+- **停放**：寫作前補研究判定 `thin`、事實查核 4 輪還沒全部 verified、讀者最終判 reject、大綱或分工和事實對不上、作者回報缺事實寫不出 mustAnswer。把資料夾留著（不刪），review.md 的最終結果寫 `parked` 與原因；執行紀錄「停放」表加一列；下一輪自動換下一篇。停放的文章等 Darren 或人工 session 處理。
 - **來源打不開**（網站掛了，不是驗證碼）：那筆照查核規則記 unreachable；整篇不能放行時停放並寫原因。
 - **工具或環境錯誤**（腳本跑不動、git 拉不下來）：停止這一輪，寫執行紀錄，不換下一篇。
 - 不降低任何門檻、不跳過驗收、不改程式、Skill 或規則文件。

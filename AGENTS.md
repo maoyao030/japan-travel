@@ -214,3 +214,8 @@
 - 文章上線前，大綱連結句的目標已經上線的，直接加上連結（`scripts/link-at-publish.mjs`），不等之後補內連。
 - 補內連每輪都做，列出可以補的全部補完，不再一輪只補 5 條。
 - 細節見自動發布 Skill produce 第 10、13 步與 backfill-links、`content-automation/local-writer.md` 第 3、4 步。
+
+## 寫作前補研究（Darren 2026-10-25 決定）
+
+- 本機自動寫作每篇在作者動筆前，先由研究者逐條檢查 mustAnswer 與表格欄位、用官方來源補事實；補完仍太薄（有 mustAnswer 沒事實可答、表格過半格子沒事實、或本主題事實少於 15 筆）就停放，不上線。
+- 原因：自動寫作的住宿、主頁等頁面用「訂房時用電話問」填表格，品質不如人工流程的交通頁。細節見 `content-automation/local-writer.md` 第 2 步第 0 點。
