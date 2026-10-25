@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahikawa-transport",
+  "articleTitle": "旭川機場到旭川車站怎麼搭，札幌、新千歲到旭川與站前巴士乘車處",
+  "targetUrl": "/places/asahikawa/transport/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-26",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-transport/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-26",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是以旭川車站為轉車點的交通，站舍、站前廣場與旁邊的巴士乘車處都在畫面裡。",
+      "mustShow": ["旭川車站站舍或站前一帶，或旭川機場、旭川的巴士"],
+      "mustNotShow": ["可辨識的人物臉部", "新旭川站、東旭川站等其他車站冒充旭川車站", "旅館或店家招牌當主體", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Asahikawa_Station_in_October_2026.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.6},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 姒姓賢寧 2026 年 10 月 23 日從高處拍的旭川車站北口：整面玻璃的站舍正面寫著「JR 旭川駅」，前面是紅磚的北口站前廣場，左邊看得到停著白色巴士的站前巴士乘車區，背後是秋天的丘陵與遠山。文章的主角是旭川車站與站前的巴士乘車處，這張同時拍到站舍、廣場與巴士區，又是最近拍的現況。原圖 4:3、4000 px 寬，裁 16:9 時焦點放在 y 0.6，切掉上方大部分天空，保留站舍與遠山。限制：左下有一座大型看板鐵架擋住部分前景；右側大樓牆上有 AEON STYLE 等小招牌，不是主體。cover-02 是 663highland 2014 年拍的旭川機場航廈外觀，可當備選，但看不出旭川車站與市區巴士，和文章後半的站前乘車處連不起來。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-26",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Asahikawa Station」「旭川駅」「Asahikawa Airport」「旭川電気軌道」「Dohoku Bus」，篩掉寬度不到 1600 px 的檔案。看過大圖的有：Asahikawa Station in October 2026（選定）、Asahikawa Station in August 2025（北口正面，右側 AEON STYLE 大招牌太醒目）、Asahikawa Station - 2022 Aug 9 various（拍到左側巴士乘車區，但左上 Y's HOTEL 旅館招牌醒目，不用）、JR Asahikwa Station building (South Exit)（南口站舍，看不到巴士乘車處）、Asahikawa station front 2014（前景被巴士車頂擋住大半）、140724 Asahikawa Airport Hokkaido Japan01s3（備選）。旭川電氣軌道與道北巴士的車輛照片多是 2009～2013 年的舊塗裝與郊外站牌，不如車站照片能代表現況。站上沒有其他旭川文章用過這幾張。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahikawa_Station_in_October_2026.jpg",
+          "creatorName": "姒姓賢寧",
+          "sourceTitle": "File:Asahikawa Station in October 2026.jpg",
+          "sourceDescription": "Asahikawa Station（Own work，分類 Asahikawa Station）",
+          "takenAt": "2026-10-23",
+          "width": 4000,
+          "height": 3000,
+          "licenseName": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明與分類為旭川車站，站舍正面看得到「旭川駅 ASAHIKAWA STATION」字樣；畫面同時有北口站前廣場與左側的巴士乘車區，正是文章講的轉車點。",
+          "altDraft": "從高處看旭川車站北口，玻璃站舍前是紅磚站前廣場，左邊停著巴士，遠處是秋天的山",
+          "captionDraft": "旭川車站北口與站前廣場（2026 年 10 月）。",
+          "creditDraft": "照片：姒姓賢寧／Wikimedia Commons／CC BY 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "站舍的 JR 旭川駅站名；右側大樓牆上的 AEON STYLE 等小招牌，不是主體",
+            "artwork": "none",
+            "property": "車站建築、站前廣場與周邊大樓",
+            "risk": "low",
+            "notes": "沒有可辨識的人物；站名是地點本身，商場小招牌在畫面邊緣，不會讓人誤以為是推薦或本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:140724_Asahikawa_Airport_Hokkaido_Japan01s3.JPG",
+          "creatorName": "663highland",
+          "sourceTitle": "File:140724 Asahikawa Airport Hokkaido Japan01s3.JPG",
+          "sourceDescription": "Asahikawa Airport in Asahikawa, Hokkaido prefecture, Japan.（Own work，座標 43.6708, 142.4475）",
+          "takenAt": "2014-07-24",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "contextual",
+          "matchLimits": "2014 年拍攝的航廈外觀，之後航廈有擴建；看不出旭川車站或站前巴士乘車處。",
+          "whyItFits": "檔案頁說明與座標為旭川機場，畫面是航廈與前方車道，遠處有一輛巴士，對應文章開頭的機場到車站。",
+          "altDraft": "旭川機場航廈的玻璃外牆與前方車道",
+          "captionDraft": "旭川機場航廈（2014 年 7 月）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "機場航廈與車道",
+            "risk": "low",
+            "notes": "沒有可辨識的人物與醒目招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

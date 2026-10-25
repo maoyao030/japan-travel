@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "sounkyo-transport",
+  "articleTitle": "層雲峽交通，旭川到層雲峽的巴士、上川轉乘與冬天自駕",
+  "targetUrl": "/places/sounkyo/transport/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-26",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-transport/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-26",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是搭道北巴士進出層雲峽，而不是溫泉或景點介紹。",
+      "mustShow": ["層雲峽的巴士總站或道北巴士，或認得出層雲峽的街景與峽谷道路"],
+      "mustNotShow": ["可辨識的人物臉部", "其他地方的巴士站冒充層雲峽", "旅館或店家招牌當主體", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/D%C5%8Dhoku_bus_S%C5%8Dunky%C5%8D01.JPG",
+        "focalPoint": {"x": 0.5, "y": 0.47},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 221.20 在 2009 年 7 月拍的層雲峽巴士總站（層雲峡観光ビル）正面：一樓左邊是「道北バス案内所」與「観光・宿泊案内所」，中間有道北巴士的站牌，右邊是層雲峽郵局，前方是巴士停車格，背後是峽谷的綠色山壁。文章說直達巴士的終點「層雲峡」站、回程也在同一站上車，這張就是那個地方，是唯一直接拍到層雲峽巴士總站的合格實拍。限制：2009 年拍攝，畫面裡的看板與站牌不代表現況，所以只當情境封面。原圖 4:3、2048 px 寬，裁 16:9 時焦點放在建築中段，屋頂與前方停車格都保留。cover-02 是 Toshihiro Matsui 2013 年 10 月在溫泉街入口拍的「層雲峡温泉」木造看板與紅葉山壁，旁邊有國道的紅綠燈，認得出層雲峽但看不出巴士，交通主題不如 cover-01 直接，當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-26",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Sounkyo bus」「Sounkyo bus terminal」「Sounkyo Onsen」「Sounkyo」「Dohoku bus」「Kamikawa Station Hokkaido」「Route 39 Sounkyo」與分類 Sōunkyō、Dohoku Bus。上川站相關：上川駅前.JPG（2013，CC BY-SA 3.0）只有站房與計程車，看不出巴士；道北バス上川駅前営業所乗り場外観.JPG 沒有拍攝日期；Dōhoku bus Kamikawa.JPG 只是上川站的站牌。峽谷道路：Sounkyo.Rock-shed01.JPG（RJD 2022，CC BY 3.0）是舊道的覆道，Tunnel in the Sounkyo Gorge.jpg 是 2008 年 2048 px 的隧道，都看不出層雲峽本身。溫泉街：Sounkyo Promenade.JPG 是步道街景、Wikivoyage banner 比例太扁、lienyuan lee 2003 年系列太舊、Sounkyo.jpg 與 Sounkyo 01.jpg 解析度不夠。站上其他文章的圖片封包沒有用過層雲峽的照片。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:D%C5%8Dhoku_bus_S%C5%8Dunky%C5%8D01.JPG",
+          "creatorName": "221.20",
+          "sourceTitle": "File:Dōhoku bus Sōunkyō01.JPG",
+          "sourceDescription": "Sōunkyō information／層雲峡出張所 層雲峡観光ビル（道北バス，日本国北海道上川郡上川町，座標 43.726245, 142.948104，Own work，PD-self）",
+          "takenAt": "2009-07-29",
+          "width": 2048,
+          "height": 1536,
+          "licenseName": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "contextual",
+          "matchLimits": "2009 年拍攝；畫面裡的看板、站牌與停車格不代表現在的乘車處配置。",
+          "whyItFits": "檔案頁標示為道北巴士層雲峽出張所（層雲峡観光ビル），座標在層雲峽溫泉街，分類 Sōunkyō 與 Dohoku Bus；畫面主體是道北巴士案內所與站牌，正是文章說的直達巴士終點。",
+          "altDraft": "層雲峽巴士總站的建築正面，一樓有道北巴士案內所與郵局，背後是峽谷的綠色山壁",
+          "captionDraft": "層雲峽的巴士總站（2009 年 7 月）。",
+          "creditDraft": "照片：221.20／Wikimedia Commons／Public domain",
+          "commercialReview": {
+            "people": "none",
+            "logos": "「道北バス案内所」與郵局標誌；文章主題就是道北巴士的路線，不是推銷",
+            "artwork": "none",
+            "property": "巴士總站建築（觀光大樓）與前方停車格",
+            "risk": "low",
+            "notes": "沒有人物；右側遠處一輛小車看不清車牌。作者在檔案頁以 PD-self 放棄權利，理由明確。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E5%B1%A4%E9%9B%B2%E5%B3%A1%E6%B8%A9%E6%B3%89_-_panoramio.jpg",
+          "creatorName": "Toshihiro Matsui",
+          "sourceTitle": "File:層雲峡温泉 - panoramio.jpg",
+          "sourceDescription": "層雲峡温泉（Panoramio 匯入，座標 43.726992, 142.947222）",
+          "takenAt": "2013-10-19",
+          "width": 5472,
+          "height": 3648,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "contextual",
+          "matchLimits": "只拍到溫泉街入口看板與紅葉山壁，看不出巴士或乘車處。",
+          "whyItFits": "畫面右邊是寫著「大雪山国立公園 層雲峡温泉」的木造看板，背景是層雲峽的岩壁，左下有國道的紅綠燈。",
+          "altDraft": "層雲峽溫泉入口的木造看板，背後是秋天轉紅的山壁",
+          "captionDraft": "層雲峽溫泉的入口看板（2013 年 10 月）。",
+          "creditDraft": "照片：Toshihiro Matsui／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "地名看板",
+            "artwork": "none",
+            "property": "溫泉街入口看板與自然景觀",
+            "risk": "low",
+            "notes": "沒有人物或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
