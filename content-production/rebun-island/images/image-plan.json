@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island",
+  "articleTitle": "禮文島旅遊，值得去嗎、住幾晚與一日來回",
+  "targetUrl": "/places/rebun-island/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-26",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island/，不加入 Git、不上傳。archive-2026-10-16-manual/ 是舊的人工版，不在這次範圍。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-26",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "禮文島地點主頁的封面，讓讀者一眼認出是禮文島：海岸線、平緩的草原丘陵與北端的須古頓岬，呼應正文「花之浮島」、海岸步道與須古頓岬。",
+      "mustShow": ["能確定在禮文島拍的島景（海岸線與丘陵、北部岬角或花季原野）"],
+      "mustNotShow": ["可辨識的人物臉部當主體", "利尻島或其他島冒充禮文島", "單一旅館、民宿或店家的招牌當主體", "AI 生成或合成畫面", "本站其他頁已用的封面（Rebun_island_(52357580650).jpg、Rebun_20140725_110632.jpg、Rebun's_Momoiwa_(52357581315).jpg、Grilled_Fish_HokkeChanChanYaki.jpg、利尻與稚內各頁封面）"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Gorota1.JPG",
+        "focalPoint": {"x": 0.5, "y": 0.45},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Furiko7e 2012 年 6 月 12 日在禮文島北部拍的「ゴロタ岬から見たスコトン岬とトド島」（分類 Cape Sukoton、Cape Gorota、Todo Island (Rebun)）。畫面從ゴロタ岬的草坡往北看，前景是初夏的草原，中景是鮑古丹一帶的海灣與通往須古頓岬的海岸道路，遠處是須古頓岬與海驢島（トド島），藍天藍海，一眼看得出是禮文島北端的島景，也是正文提到的須古頓岬與北部賞花一帶，和桃岩一帶的封面不重複。原圖 2592×1944，裁成 16:9 後是 2592×1458，焦點放在 y 0.45，保留岬角、海灣與草坡。草坡上有幾位遠處的健行者，最近的一位低著頭、臉看不清楚，不是主體。cover-02（663highland 2013 年從須古頓岬看ゴロタ岬）也能確定是禮文島，但陰天、畫面偏灰，主題感較弱，保留為備案。Raita Futo 2022-07-26 那組（Rebun's coastline、Rebun island mountains 等）與 Suicasmo 2014-08-14 那組多在桃岩展望台一帶，和已用的桃岩封面同區域，不選；Cape Sukoton 2019 畫面有民宿招牌，不選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-26",
+        "photoSearchNotes": "用維基共享資源 API 列出分類 Rebun Island、Rebun, Hokkaido、Cape Sukoton、Cape Gorota 的檔案，逐一讀授權與說明，看過 12 張候選的預覽圖。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Gorota1.JPG",
+          "creatorName": "Furiko7e",
+          "sourceTitle": "File:Gorota1.JPG",
+          "sourceDescription": "ゴロタ岬から見たスコトン岬とトド島（作者自己上傳，{{own}}；授權 {{self|cc-by-sa-3.0}}）",
+          "takenAt": "2012-06-12",
+          "width": 2592,
+          "height": 1944,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "exact",
+          "matchLimits": "2012 年 6 月拍的初夏景色；只代表禮文島北部ゴロタ岬一帶，不代表全島，也不是特定花種的花期照片。",
+          "whyItFits": "檔案頁寫明是從ゴロタ岬看須古頓岬與海驢島，能確定在禮文島北端；海岸線、草原丘陵與北端岬角都在畫面裡。",
+          "altDraft": "從禮文島ゴロタ岬的草坡往北看，海灣對面是須古頓岬與海驢島",
+          "captionDraft": "從ゴロタ岬望向須古頓岬與海驢島（2012 年 6 月）。",
+          "creditDraft": "照片：Furiko7e／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "遠處幾位健行者，最近一位低頭、臉看不清楚，不是主體",
+            "logos": "none",
+            "artwork": "none",
+            "property": "遠處海岸邊的零星民家，看不出店名",
+            "risk": "low",
+            "notes": "沒有招牌或商標；人物很小、無法辨識。CC BY-SA 3.0 允許商業使用與改作，裁切後的封面要用相同授權標示並署名。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:130726_Cape_Gorota_in_Rebun_Island_Hokkaido_Japan01s5.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:130726 Cape Gorota in Rebun Island Hokkaido Japan01s5.jpg",
+          "sourceDescription": "Cape Gorota view from Cape Sukoton in Rebun Island, Hokkaido, Japan.",
+          "takenAt": "2013-07-26",
+          "width": 4320,
+          "height": 2880,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "exact",
+          "matchLimits": "陰天，海與天空偏灰；只代表北部ゴロタ岬一帶。",
+          "whyItFits": "檔案頁寫明是從須古頓岬看ゴロタ岬，能確定在禮文島；有斷崖、草坡與海岸線。",
+          "altDraft": "從禮文島須古頓岬看過去的ゴロタ岬，前景是草坡",
+          "captionDraft": "從須古頓岬望向ゴロタ岬（2013 年 7 月）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "none",
+            "risk": "low",
+            "notes": "沒有人物與建物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

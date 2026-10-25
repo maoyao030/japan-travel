@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-festival",
+  "articleTitle": "利尻島祭典，7、8 月的祭典與煙火",
+  "targetUrl": "/places/rishiri-island/festival/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-26",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island-festival/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-26",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是利尻島夏天的祭典；鴛泊港是正文北海島祭鴛泊會場與煙火大會的所在地，港口啤酒花園也辦在鴛泊渡輪站附近。",
+      "mustShow": ["能確定在利尻島拍的祭典、煙火畫面；沒有合格的祭典照片時，改用祭典會場一帶（鴛泊港或沓形港）的夏季實景"],
+      "mustNotShow": ["可辨識的人物臉部當主體", "其他地方的祭典或煙火冒充利尻島", "讓人以為是某一年祭典實況或本站實地拍攝的畫面", "AI 生成或合成畫面", "本站其他頁已用的封面（Rishiri_046_30092006.JPG、Mt._Rishiri_summit_(52357470229).jpg、姫沼からの利尻山.jpg、130726_Oshidomari_Port_in_Rishiri_Island_Hokkaido_Japan08n.jpg、鴛泊港からの利尻山.jpg、Mt_Rishiri.jpg 與稚內、禮文各頁封面）"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Oshidomari_Port_17-Sept-2018.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.55},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "維基共享資源、免費圖庫都沒有能確定在利尻島拍的祭典或煙火照片，所以退一步用祭典會場一帶的實景。cover-01 是皓月旗 2018 年 9 月 17 日從ペシ岬拍的鴛泊港全景（檔案頁說明「利尻島鴛泊港　ペシ岬より撮影」，分類 Oshidomari Port）：港內停著渡輪，渡輪站、碼頭、漁船與港邊市街都在畫面裡，前景是綠色草坡與黃花，晴天夏末的顏色。鴛泊港是正文北海島祭鴛泊會場、8 月 4 日煙火大會與港口啤酒花園的所在地，讀者看得出是祭典舉辦的港町，又不會誤以為是祭典當天的實況。沒有可辨識的人物。原圖 6016×4016，裁成 16:9 後寬 6016 px、高 3384 px，焦點放在港內與渡輪，裁掉部分天空與前景草叢。其他看過的：130726 Oshidomari Port 系列（663highland，2013 年 7 月）06n 構圖好、季節也對，但漁船上的人放大後臉看得清楚，又在畫面中央，不用；01s3、02s3 是施工中的港區與臨時渡輪站，不像現況；08n 本站已用。OKJaguar 2019 年 6 月的鴛泊港俯瞰，前景大樓佔太多。沓形港兩張（Snap55，2004 年 8 月）只有 1024 px 寬，不到封面門檻。利尻島觀光協會「りしぷら」網站頁尾有「利尻島PR写真素材フリーフォトライブラリー」（Google 雲端硬碟資料夾，含北海島まつり、利尻浮島まつり、うにうにフェスティバル等祭典照片），但網站與資料夾都找不到利用條件（商業使用、裁切、署名、是否要申請），照規則不用；之後若觀光協會公布條款，可以改用祭典實拍。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-26",
+        "photoSearchNotes": "用維基共享資源 API 查關鍵字「Rishiri fireworks」「Rishiri festival」「Rishiri matsuri」「利尻 花火」「利尻 祭」「利尻 まつり」「鴛泊 花火」「沓形 祭」「浮島まつり」「北海島まつり」「利尻山神社」「北見富士神社」「Rishiri bon odori」「Rishiri uni festival」「Rishiri July」「Rishiri August」「Oshidomari」「Kutsugata」，並列出分類 Rishiri Island、Rishiri, Hokkaido、Rishirifuji, Hokkaido、Oshidomari Port、Port of Kutsugata、Buildings in Rishirifuji, Hokkaido 的檔案，沒有祭典或煙火照片。Unsplash 搜尋介面要登入、Pexels 擋讀取工具、Pixabay 要 API 金鑰，沒有再查；小島祭典在免費圖庫也不預期有。觀光協會「りしぷら」的免費照片庫找不到利用條件，不用。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Oshidomari_Port_17-Sept-2018.jpg",
+          "creatorName": "皓月旗",
+          "sourceTitle": "File:Oshidomari Port 17-Sept-2018.jpg",
+          "sourceDescription": "利尻島鴛泊港　ペシ岬より撮影（作者自己上傳，2018-09-17 12:39 拍攝；授權 CC BY-SA 4.0）",
+          "takenAt": "2018-09-17",
+          "width": 6016,
+          "height": 4016,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "contextual",
+          "matchLimits": "2018 年 9 月中旬平日拍的鴛泊港，不是祭典或煙火當天的畫面；只代表祭典會場一帶的港町樣子，港區建物之後可能有變動。",
+          "whyItFits": "檔案頁寫明是從ペシ岬拍的利尻島鴛泊港；鴛泊港是正文北海島祭鴛泊會場、煙火大會與港口啤酒花園的所在地，畫面是晴天的港內全景。",
+          "altDraft": "從ペシ岬俯瞰利尻島鴛泊港，港內停著渡輪，岸邊是漁船與港町",
+          "captionDraft": "從ペシ岬看鴛泊港，8 月的煙火大會就在這個港口施放（2018 年 9 月拍攝）。",
+          "creditDraft": "照片：皓月旗／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "渡輪船身的公司塗裝很小，不是主體",
+            "artwork": "none",
+            "property": "港區建物與一般住宅，沒有店家招牌當主體",
+            "risk": "low",
+            "notes": "遠景俯瞰，沒有可辨識人物；裁切後主體是港內海面、渡輪與港町。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
