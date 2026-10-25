@@ -1,7 +1,7 @@
 # 驗收紀錄：cape-soya-transport（2026-10-20）
 
 - 文章：`content-production/cape-soya-transport/reader-preview.md`
-- SHA-256（換行統一成 LF 後計算）：`7a62a02a5485c932dfc1a46b07fd1cfe6400cacd353b40f4fce3438a77cf5666`
+- SHA-256（換行統一成 LF 後計算）：`c18e966961fbf79738effb6a1d5586015106ef20d58ca68d9d29eb758d1cd6f5`
 - 規則：照旅客動線排的大綱、寫作指南第14條（不寫成量產頁）、潤稿參考好運日本行與 MATCHA（潤稿 Skill 第 1-1 步）
 - 作者：作者子代理（Opus 5.5），驗收後依必修修改也由作者子代理處理
 - 潤稿者：潤稿子代理（Opus 5.5，讀了好運日本行 3 篇、MATCHA 2 篇），編輯挑錯 1 個子代理、意義比對 1 個子代理；潤稿紀錄在 `polish-notes.md`、`editor-review.md`、`meaning-drift.md`
@@ -54,3 +54,12 @@
 - 新譯名（天北宗谷岬線、稚内駅前ターミナル、Active Bus、Base-Soya、宗谷歴史公園等）待補進譯名表。
 - 讀者驗收的加分（キタカラ自行車 9:30 受理與案內所 10:00 分開講、Active Bus「宗谷」站上車處、總站窗口營業時間、步道段拆段）不影響結果。
 - 事實查核第 1 輪用瀏覽器開時刻表 PDF 時，網站直接回傳下載檔，Darren 的電腦跳出過一次存檔對話框（沒有點下載，之後改用 curl）。
+
+## 上線後修正（2026-10-25）
+
+- 起因：人工 session 試跑「寫作前補研究」時發現過時事實，Darren 2026-10-25 同意修正，只改相關句子。
+- 改了什麼：步道一句拿掉「在風車群之間走」「拆除改建」，改成風車 2026 年 4 月停止運轉、5 月起陸續拆除（F108）。新事實與更正記在 `reference-review.md` 最後一節。
+- 舊 SHA-256：`7a62a02a5485c932dfc1a46b07fd1cfe6400cacd353b40f4fce3438a77cf5666`；新 SHA-256 見本檔開頭。
+- 檢查：`fact_tags.py`、`check-voice.mjs --final`、`audit_answer_first.py`（mechanical_clear）都通過。
+- 事實查核：另一個唯讀子代理只複查改過的句子（C88 改句），`validate-fact-check.mjs` 通過，91 項全部 verified。
+- 標題、讀者驗收、口吻與防抄襲沒有重做：改動只換掉過時的營業期間與風車現況，不動結構與其他段落。

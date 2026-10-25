@@ -1,7 +1,7 @@
 # 驗收紀錄：rishiri-island-stay（2026-10-24）
 
 - 文章：`content-production/rishiri-island-stay/reader-preview.md`
-- SHA-256（換行統一成 LF 後計算）：`3cd2bf7e11df973e9c64f30d42c059278094ecedbf1215cb3cfdbcee1dc8b0fb`
+- SHA-256（換行統一成 LF 後計算）：`2b6dc250d5096ecf4fa1c78d7cda1b8243713acfc667c1f47dfb198162eea5f8`
 - 規則：照旅客動線排的大綱、寫作指南第14條（不寫成量產頁）、潤稿參考好運日本行與 MATCHA（潤稿 Skill 第 1-1 步）
 - 作者：作者子代理（Opus 5.5），驗收後依必修修改也由作者子代理處理
 - 潤稿者：潤稿子代理（Opus 5.5，讀好運日本行 2 篇、MATCHA 3 篇住宿類；`style-sources.md` 沒有住宿類，另外挑同類文章），編輯挑錯 1 個子代理、意義比對 1 個子代理；潤稿紀錄在 `polish-notes.md`、`editor-review.md`、`meaning-drift.md`
@@ -17,7 +17,7 @@
 | 格式 | `mechanical_clear`（`audit_answer_first.py --article-type aspect-page`） |
 | 標題 | `acceptable`（標題檢查改 2 個 H2：「利尻島住宿怎麼選區，鴛泊、沓形與其他」→「利尻島住宿怎麼選區，鴛泊、沓形、鬼脇與仙法志」、「利尻島冬季休館的住宿」→「利尻島住宿的冬季休館與全年營業」，`headings_applied`；讀者驗收判可接受；SEO Title 與 H1 相同；大綱已同步） |
 | 讀者價值 | `acceptable`（讀者驗收最終判定，第二階段必修 6 條都處理完成，剩 0 條） |
-| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，78 項 claim 都 verified） |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，79 項 claim 都 verified） |
 | 口吻與標點 | `check-voice.mjs --final` 通過（正文 2262 字；2 句長句只是提醒） |
 | 事實編號 | `tags_clear`（研究記錄 58 筆，正文用到 55 筆） |
 | 防抄襲 | 潤稿階段 `check-copy.mjs` 通過（比對 5 篇） |
@@ -52,3 +52,12 @@
 - 待同步譯名：本頁旅館與露營場照日文原名寫，研究記錄列有要補進 glossary 的名稱。
 - 內連句「還沒決定要不要排利尻島，可以先看利尻島值得去嗎。」「對面島上的住宿見禮文島住宿。」「路線巴士與觀光巴士的時刻見利尻島交通。」「兩條路線的時間與攜帶式廁所見利尻山登山。」「船班與票價見稚內到利尻島、禮文島渡輪。」目標頁上線後加連結。
 - 圖片需求候選記在研究記錄，選圖時處理。
+
+## 上線前修正（2026-10-25）
+
+- 起因：人工 session 試跑「寫作前補研究」時發現過時事實，Darren 2026-10-25 同意修正，只改相關句子。
+- 改了什麼：アイランドインリシリ 2026/9/30 結束本年營業、2027/5/22 預定開幕（F190）；レラモシリ 10/15～12/20 休業（F191），從全年營業清單拿掉並加進冬季休館表。新事實與更正記在 `reference-review.md` 最後一節。
+- 舊 SHA-256：`3cd2bf7e11df973e9c64f30d42c059278094ecedbf1215cb3cfdbcee1dc8b0fb`；新 SHA-256 見本檔開頭。
+- 檢查：`fact_tags.py`、`check-voice.mjs --final`、`audit_answer_first.py`（mechanical_clear）都通過。
+- 事實查核：另一個唯讀子代理只複查改過的句子（C39、C67 改句，新增 C80），`validate-fact-check.mjs` 通過，79 項全部 verified。
+- 標題、讀者驗收、口吻與防抄襲沒有重做：改動只換掉過時的營業期間與風車現況，不動結構與其他段落。
