@@ -2,7 +2,8 @@
  * 待補內連（維護資料庫 D1 的 pending_links）：連結句已經寫在正文，目標頁上線後只把錨文字加上連結。
  *
  * 用法：
- *   node scripts/ops-links.mjs register --article=<剛上線的文章> --outline=<群大綱 JSON> --sanity=.tmp/queue-state.json
+ *   node scripts/ops-links.mjs register --article=<剛上線的文章> --outline=<群大綱 JSON> --sanity=.tmp/queue-state.json [--body=<article.json>]
+ *     有 --body 時，正文裡已經接好的連結（上線前 link-at-publish 接的）直接登記成已補。
  *   node scripts/ops-links.mjs ready --sanity=.tmp/queue-state.json      列出目標已上線、可以補的連結
  *   node scripts/ops-links.mjs linked --id=<link_id>                    補好後標記
  *   node scripts/ops-links.mjs skip --id=<link_id> --reason=<原因>       補不上時略過，寫一筆例外，之後不再挑它
@@ -13,26 +14,27 @@ import {readFile} from 'node:fs/promises'
 import path from 'node:path'
 import {pathToFileURL} from 'node:url'
 
-import {pendingLinksFromOutline} from './link-backfill.mjs'
+import {isLinkInBody, pendingLinksFromOutline} from './link-backfill.mjs'
 import {createOpsExecutor, parseOptions, positionalArguments, sqlLiteral} from './ops-db.mjs'
 
 export const MAX_LINK_FAILURES = 3
 
 export async function registerPendingLinks({execute, links, now = new Date()}) {
-  if (links.length === 0) return {registered: 0}
+  if (links.length === 0) return {registered: 0, alreadyLinked: 0}
   const at = sqlLiteral(now.toISOString())
+  const sameLink = (link) => `from_article_id = ${sqlLiteral(link.fromArticleId)}
+            AND to_article_id = ${sqlLiteral(link.toArticleId)} AND sentence = ${sqlLiteral(link.sentence)}`
   await execute(
-    links.map(
-      (link) => `INSERT INTO pending_links (from_article_id, to_article_id, section, sentence, anchor_text, target_path, source, created_at)
+    links.flatMap((link) => [
+      `INSERT INTO pending_links (from_article_id, to_article_id, section, sentence, anchor_text, target_path, source, created_at, linked_at)
         SELECT ${sqlLiteral(link.fromArticleId)}, ${sqlLiteral(link.toArticleId)}, ${sqlLiteral(link.section)}, ${sqlLiteral(link.sentence)},
-          ${sqlLiteral(link.anchorText)}, ${sqlLiteral(link.targetPath)}, ${sqlLiteral(link.source)}, ${at}
-        WHERE NOT EXISTS (
-          SELECT 1 FROM pending_links WHERE from_article_id = ${sqlLiteral(link.fromArticleId)}
-            AND to_article_id = ${sqlLiteral(link.toArticleId)} AND sentence = ${sqlLiteral(link.sentence)}
-        )`,
-    ),
+          ${sqlLiteral(link.anchorText)}, ${sqlLiteral(link.targetPath)}, ${sqlLiteral(link.source)}, ${at}, ${link.linked ? at : 'NULL'}
+        WHERE NOT EXISTS (SELECT 1 FROM pending_links WHERE ${sameLink(link)})`,
+      // 之前登記過、這次正文已經接好的，也標成已補。
+      ...(link.linked ? [`UPDATE pending_links SET linked_at = ${at} WHERE ${sameLink(link)} AND linked_at IS NULL`] : []),
+    ]),
   )
-  return {registered: links.length}
+  return {registered: links.length, alreadyLinked: links.filter((link) => link.linked).length}
 }
 
 /**
@@ -104,7 +106,10 @@ async function runCli() {
     for (const name of ['article', 'outline', 'sanity']) if (typeof options[name] !== 'string') throw new Error(`register 必須提供 --${name}`)
     const outline = JSON.parse(await readFile(path.resolve(options.outline), 'utf8'))
     const {published, paths} = await publishedIdsFrom(options.sanity)
-    const links = pendingLinksFromOutline({outline, articleId: options.article, publishedArticleIds: published, pagePaths: paths})
+    const body = typeof options.body === 'string' ? JSON.parse(await readFile(path.resolve(options.body), 'utf8')).body : null
+    const links = pendingLinksFromOutline({outline, articleId: options.article, publishedArticleIds: published, pagePaths: paths}).map((link) =>
+      body && link.targetPath && isLinkInBody(body, link) ? {...link, linked: true} : link,
+    )
     console.log(JSON.stringify({...(await registerPendingLinks({execute, links})), links}, null, 2))
     return
   }

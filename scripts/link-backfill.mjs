@@ -92,3 +92,48 @@ export function pendingLinksFromOutline({outline, articleId, pagePaths = {}}) {
       source: link.external ? 'cross-group' : 'outline',
     }))
 }
+
+/** 這條連結句所在的段落是不是已經連到目標網址。找不到或不唯一的句子算沒連上。 */
+export function isLinkInBody(body, link) {
+  try {
+    const block = findLinkBlock(body, {sentence: link.sentence, anchorText: link.anchorText})
+    return (block.markDefs ?? []).some((definition) => definition?._type === 'link' && definition.href === link.targetPath)
+  } catch {
+    return false
+  }
+}
+
+/**
+ * 文章上線前，把大綱裡「從這篇出發、目標已經上線」的連結句直接加上連結，不用等之後補內連。
+ * 已經有連結的跳過；找不到句子的不改字，留給之後登記與補內連處理。
+ * publishedArticleIds：已開放索引的文章；pagePaths：articleId → 網址。
+ */
+export function linkOutlineSentencesAtPublish(body, {outline, articleId, publishedArticleIds = [], pagePaths = {}}) {
+  const published = new Set(publishedArticleIds)
+  const candidates = pendingLinksFromOutline({outline, articleId, pagePaths}).filter(
+    (link) => link.toArticleId !== articleId && published.has(link.toArticleId) && link.targetPath,
+  )
+  let current = body
+  const linked = []
+  const alreadyLinked = []
+  const notLinked = []
+  for (const link of candidates) {
+    const summary = {toArticleId: link.toArticleId, targetPath: link.targetPath, anchorText: link.anchorText}
+    if (isLinkInBody(current, link)) {
+      alreadyLinked.push(summary)
+      continue
+    }
+    try {
+      current = addLinkToPortableText(current, {
+        sourceArticleId: articleId,
+        targetPath: link.targetPath,
+        anchorText: link.anchorText,
+        sentence: link.sentence,
+      }).body
+      linked.push(summary)
+    } catch (error) {
+      notLinked.push({...summary, reason: error.message})
+    }
+  }
+  return {body: current, linked, alreadyLinked, notLinked}
+}

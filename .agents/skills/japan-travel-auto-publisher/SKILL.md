@@ -55,7 +55,7 @@ description: Run one scheduled round of the Japan travel site routine — take t
 7. 作者另存 `publication.json`（`seoTitle`、`seoDescription`、`excerpt`），執行 `npm run release:finalize -- content-production/<article-id>`。
 8. 依 `$japan-travel-image-finder` 完成封面與文內圖（含 `npm run image:prepare:cover -- content-production/<article-id> --download`）。
 9. 第 7、8 步任何一步失敗：`ops-article.mjs fail --article=<id> --kind=publish --reason=<原因>`，封包照樣 commit，結果 `failed`。
-10. Sanity 暫存：`publish-prepared-article.mjs ../.tmp/auto-publisher/<article-id>/sanity/article.json` dry-run 後 `--apply`；`publish-article-cover.mjs ../content-production/<article-id>` dry-run 後 `--apply`。重新 inspect 確認 `staged_noindex` 且 `hasCover`。
+10. Sanity 暫存：先接內連，`node scripts/link-at-publish.mjs .tmp/auto-publisher/<article-id>/sanity/article.json --article=<id> --outline=<群大綱> --sanity=.tmp/queue-state.json`（大綱連結句的目標已經上線的，上線前就加上連結；可見文字不變，找不到句子的不擋，之後由補內連處理）。再 `publish-prepared-article.mjs ../.tmp/auto-publisher/<article-id>/sanity/article.json` dry-run 後 `--apply`；`publish-article-cover.mjs ../content-production/<article-id>` dry-run 後 `--apply`。重新 inspect 確認 `staged_noindex` 且 `hasCover`。
 11. 開放索引：
     1. 專案根目錄 `npm run ci`。
     2. CI 通過後、`routeMode` 是 `hub-landing`（地點主頁）時，**緊接著**把這篇掛成父 Hub 的入口文章：`prepare-parent-hub.mjs <batchId> --set-landing` dry-run 取得 `currentRevision`，再 `--set-landing --expected-revision=<rev> --apply`（已經掛好會回 `landing-already-set`，不用 apply）。沒掛的話網址會不符清單，開放索引一定失敗；掛上後到開放索引之前，已上線的主題頁會暫時不被索引，所以中間不做別的事。
@@ -63,7 +63,7 @@ description: Run one scheduled round of the Japan travel site routine — take t
     4. 第 2 步掛上入口文章後，第 3 步失敗：先撤回，`prepare-parent-hub.mjs <batchId> --unset-landing` dry-run 取得 `currentRevision`，再 `--unset-landing --expected-revision=<rev> --apply`，讓主題頁恢復原狀；撤回也失敗就在執行紀錄寫明「父 Hub 入口文章未撤回」。
     5. 第 10、11 步失敗：`fail --kind=publish`（狀態不變，下一輪從「續做」接手；連續 3 次才停放），**不得開放索引**，結果 `failed`。
 12. 開放索引後重新 inspect：`parentHubs[]` 裡這個 `batchId` 的 `shouldReleaseIndex` 是 true 時，`prepare-parent-hub.mjs <batchId> --release-index` dry-run 後帶 revision `--apply`。
-13. 登記，**依這個順序**（前兩個重跑不會重複登記；最後才標已發布，中途斷掉下一輪會「補登記」）：`node scripts/ops-links.mjs register --article=<id> --outline=<群大綱> --sanity=.tmp/queue-state.json`；`node scripts/ops-facts.mjs sync`；`ops-article.mjs published --article=<id>`。結果 `published`。
+13. 登記，**依這個順序**（前兩個重跑不會重複登記；最後才標已發布，中途斷掉下一輪會「補登記」）：`node scripts/ops-links.mjs register --article=<id> --outline=<群大綱> --sanity=.tmp/queue-state.json --body=.tmp/auto-publisher/<article-id>/sanity/article.json`（已經接好的直接標成已補；檔案不在就不帶 `--body`）；`node scripts/ops-facts.mjs sync`；`ops-article.mjs published --article=<id>`。結果 `published`。
 14. 第 12、13 步失敗：`fail --kind=publish`，結果 `failed`。文章已經開放索引，下一輪會「補登記」；連續 3 次就停放並寫例外。
 
 ### resume：續做驗收已通過的文章
@@ -82,7 +82,7 @@ description: Run one scheduled round of the Japan travel site routine — take t
 
 ### backfill-links：補內連
 
-1. `node scripts/ops-links.mjs ready --sanity=.tmp/queue-state.json`，一輪最多處理 5 個，依 `link_id` 由小到大。
+1. `node scripts/ops-links.mjs ready --sanity=.tmp/queue-state.json`，列出的全部處理（不設上限，2026-10-25 取消一輪 5 個的限制），依 `link_id` 由小到大，全部補完再跑一次 CI。
 2. 每個先 `apply-pending-link.mjs --source=<from_article_id> --target=<to_article_id> --target-path=<target_path> --anchor=<anchor_text> --sentence=<sentence>` dry-run：
    - 錯誤是「這個段落已經連到同一個網址」（上一輪補好了但沒標記）：`node scripts/ops-links.mjs linked --id=<link_id>`，不再 apply。
    - 其他錯誤（找不到連結句、錨文字不唯一等）：`node scripts/ops-links.mjs skip --id=<link_id> --reason=<錯誤訊息>`，不自己改字。

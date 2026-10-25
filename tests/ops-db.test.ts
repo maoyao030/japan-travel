@@ -336,6 +336,53 @@ test('待補內連登記不重複，兩端都上線才列為可以補', async (t
   assert.equal((await listReadyLinks({execute: db.execute, publishedArticleIds: ['a', 'b']})).length, 0)
 })
 
+test('上線前接內連：目標已上線的大綱連結句直接加連結，未上線與找不到的不改字', async () => {
+  const {linkOutlineSentencesAtPublish, visibleText} = await import('../scripts/link-backfill.mjs')
+  const block = (key: string, text: string) => ({_type: 'block', _key: key, style: 'normal', markDefs: [], children: [{_type: 'span', _key: `${key}s`, text, marks: []}]})
+  const body = [block('b1', '怎麼到稚內，見稚內交通。'), block('b2', '住哪裡，見稚內住宿。'), block('b3', '天氣另外整理。')]
+  const outline = {
+    pages: [
+      {articleId: 'wakkanai', targetPath: '/places/wakkanai/'},
+      {articleId: 'wakkanai-transport', targetPath: '/places/wakkanai/transport/'},
+      {articleId: 'wakkanai-stay', targetPath: '/places/wakkanai/stay/'},
+      {articleId: 'wakkanai-weather', targetPath: '/places/wakkanai/weather/'},
+    ],
+    links: [
+      {from: 'wakkanai', to: 'wakkanai-transport', sentence: '怎麼到稚內，見稚內交通。', anchor: '稚內交通'},
+      {from: 'wakkanai', to: 'wakkanai-stay', sentence: '住哪裡，見稚內住宿。', anchor: '稚內住宿'},
+      {from: 'wakkanai', to: 'wakkanai-weather', sentence: '季節與天氣，見稚內天氣。', anchor: '稚內天氣'},
+      {from: 'wakkanai-transport', to: 'wakkanai', sentence: '先看稚內值得去嗎。', anchor: '稚內值得去嗎'},
+    ],
+  }
+  const result = linkOutlineSentencesAtPublish(body, {outline, articleId: 'wakkanai', publishedArticleIds: ['wakkanai-transport', 'wakkanai-weather']})
+  assert.equal(visibleText(result.body), visibleText(body))
+  assert.deepEqual(result.linked.map((link: any) => link.toArticleId), ['wakkanai-transport'])
+  assert.equal(result.body[0].markDefs[0].href, '/places/wakkanai/transport/')
+  assert.equal(result.body[1].markDefs.length, 0, '目標沒上線不加連結')
+  assert.deepEqual(result.notLinked.map((link: any) => link.toArticleId), ['wakkanai-weather'], '找不到句子不改字')
+
+  const again = linkOutlineSentencesAtPublish(result.body, {outline, articleId: 'wakkanai', publishedArticleIds: ['wakkanai-transport']})
+  assert.equal(again.linked.length, 0)
+  assert.deepEqual(again.alreadyLinked.map((link: any) => link.toArticleId), ['wakkanai-transport'])
+})
+
+test('登記時正文已經接好的連結直接標成已補，不會被列為待補', async (t) => {
+  const db = await openTestDatabase()
+  if (!db) return t.skip('這個 Node 版本沒有 node:sqlite')
+  const {registerPendingLinks, listReadyLinks} = await import('../scripts/ops-links.mjs')
+  const linkA = {fromArticleId: 'a', toArticleId: 'b', section: null, sentence: '先看 B 頁', anchorText: 'B 頁', targetPath: '/b/', source: 'outline'}
+  const linkC = {...linkA, toArticleId: 'c', sentence: '再看 C 頁', anchorText: 'C 頁', targetPath: '/c/'}
+  await registerPendingLinks({execute: db.execute, links: [linkA, linkC]})
+  assert.equal((await listReadyLinks({execute: db.execute, publishedArticleIds: ['a', 'b', 'c']})).length, 2)
+  // 之前登記成待補的，這次正文已經接好就改成已補
+  const result = await registerPendingLinks({execute: db.execute, links: [{...linkA, linked: true}, linkC]})
+  assert.equal(result.alreadyLinked, 1)
+  const ready = await listReadyLinks({execute: db.execute, publishedArticleIds: ['a', 'b', 'c']})
+  assert.deepEqual(ready.map((row: any) => row.to_article_id), ['c'])
+  const [rows] = await db.execute(['SELECT COUNT(*) AS n FROM pending_links'])
+  assert.equal(rows[0].n, 2)
+})
+
 test('事實同步與重查：依來源網址分組列出到期事實，官方資料改變時寫例外', async (t) => {
   const db = await openTestDatabase()
   if (!db) return t.skip('這個 Node 版本沒有 node:sqlite')

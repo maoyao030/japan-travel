@@ -110,14 +110,14 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 3. Sanity 狀態是 `staged_noindex`（上一輪做到一半）：跳過 4、5、6，照 Skill「resume」的 `staged`：沒封面才做第 5 點，再接第 7 點。
 4. 定稿：`npm run release:finalize -- content-production/<id>`。
 5. 封面：派一個子代理照 `.agents/skills/japan-travel-image-finder/SKILL.md` **只選封面**，只用實拍照片（維基共享資源、免費圖庫、條款允許的觀光協會照片），**不用 AI 圖**，圖片用 curl 下載、不在瀏覽器點下載，封包寫在 `content-production/<id>/images/`。選定後 `npm run image:prepare:cover -- content-production/<id> --download`，親自看一次裁切後的圖。找不到合格實拍：這篇加進「上傳停放」表（原因「缺封面」），`ops-article.mjs fail --article=<id> --kind=publish --reason=缺封面`，換下一篇。文內圖還沒有上傳工具，這一步不做。
-6. Sanity 暫存：第 10 步（`publish-prepared-article.mjs ../.tmp/auto-publisher/<id>/sanity/article.json` 與 `publish-article-cover.mjs ../content-production/<id>`，都先 dry-run 再 `--apply`），重新 inspect 確認 `staged_noindex` 而且 `hasCover`。
+6. Sanity 暫存：第 10 步（先 `node scripts/link-at-publish.mjs .tmp/auto-publisher/<id>/sanity/article.json --article=<id> --outline=content-planning/hokkaido/hokkaido-wakkanai-outline.json --sanity=.tmp/queue-state.json` 接上已上線頁面的內連，再 `publish-prepared-article.mjs ../.tmp/auto-publisher/<id>/sanity/article.json` 與 `publish-article-cover.mjs ../content-production/<id>`，都先 dry-run 再 `--apply`），重新 inspect 確認 `staged_noindex` 而且 `hasCover`。
 7. 開放索引：第 11 步。CI 用 `SANITY_PROJECT_ID=e8ctf7ee SANITY_DATASET=production npm run ci`。`routeMode` 是 `hub-landing` 時照第 11 步掛入口文章、失敗時撤回。
 8. 第 12 步：重新 inspect，父 Hub 的 `shouldReleaseIndex` 是 true 就 `--release-index`。
-9. 登記：第 13 步，`--outline=content-planning/hokkaido/hokkaido-wakkanai-outline.json --sanity=.tmp/queue-state.json`（先重新 inspect）。
+9. 登記：第 13 步，`--outline=content-planning/hokkaido/hokkaido-wakkanai-outline.json --sanity=.tmp/queue-state.json --body=.tmp/auto-publisher/<id>/sanity/article.json`（先重新 inspect；resume 的 `staged` 沒有這個檔案就不帶 `--body`）。
 
 任何一點失敗照 Skill 記 `ops-article.mjs fail --kind=publish`，**不開放索引**，在「上傳」表記「失敗」與停在哪一點，換下一篇；同一篇連續 3 次失敗會自動停放，加進「上傳停放」表。
 
-**4. 補內連**：兩篇做完後，照 Skill「backfill-links」補最多 5 個（`ops-links.mjs ready --sanity=.tmp/queue-state.json`，先重新 inspect）。CI 一樣要帶上面的兩個環境變數。
+**4. 補內連**：上傳做完後（這輪沒上傳也要做），先重新 inspect，照 Skill「backfill-links」把 `ops-links.mjs ready --sanity=.tmp/queue-state.json` 列出的**全部補完**，不設上限（2026-10-25 取消一輪 5 個）。CI 一樣要帶上面的兩個環境變數。
 
 **5. 推上網站**：有任何一篇開放索引或補了內連，才做這一點。
 
