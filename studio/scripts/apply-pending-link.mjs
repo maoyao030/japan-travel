@@ -5,6 +5,7 @@
  *
  * 用法（在 studio/ 目錄）：
  *   npx sanity exec scripts/apply-pending-link.mjs --with-user-token -- --source=<article-id> --target=<article-id> --target-path=<網址> --anchor=<錨文字> [--sentence=<連結句>] [--apply]
+ *   目標地點主頁還沒上線、Hub 已開放索引時，加 --target-hub=hub-places-<地點>，改檢查 Hub。
  *   npx sanity exec scripts/apply-pending-link.mjs --with-user-token -- --rollback=<apply 輸出的 recoveryFile>
  * 同一篇文章補了好幾個連結又要回復時，從最後補的那一個開始依序回復（每次回復都會核對目前正文）。
  */
@@ -61,8 +62,10 @@ for (const name of ['source', 'target', 'target-path', 'anchor']) {
   if (typeof options[name] !== 'string' || options[name] === '') throw new Error(`必須提供 --${name}`)
 }
 const sourceId = articleId(options.source)
-const targetId = articleId(options.target)
-const snapshot = await client.fetch('*[_id in $ids]{_id,_rev,_type,noindex,body}', {
+// --target-hub=<hub 文件 ID>：目標地點主頁還沒上線，先連到同一個網址、已開放索引的地點 Hub（主頁上線後網址不變）。
+const targetHubId = typeof options['target-hub'] === 'string' ? options['target-hub'] : null
+const targetId = targetHubId ?? articleId(options.target)
+const snapshot = await client.fetch('*[_id in $ids]{_id,_rev,_type,noindex,body,"slug": slug.current}', {
   ids: [sourceId, targetId, `drafts.${sourceId}`, `drafts.${targetId}`],
 })
 const byId = new Map(snapshot.map((document) => [document._id, document]))
@@ -70,7 +73,12 @@ if (byId.has(`drafts.${sourceId}`) || byId.has(`drafts.${targetId}`)) throw new 
 const source = byId.get(sourceId)
 const target = byId.get(targetId)
 if (source?._type !== 'article' || source.noindex !== false) throw new Error('來源文章尚未開放索引')
-if (target?._type !== 'article' || target.noindex !== false) throw new Error('目標文章尚未開放索引')
+if (targetHubId) {
+  if (target?._type !== 'hub' || target.noindex !== false) throw new Error('目標 Hub 尚未開放索引')
+  if (options['target-path'] !== `/places/${target.slug}/`) throw new Error(`目標網址和 Hub 網址不符：/places/${target.slug}/`)
+} else if (target?._type !== 'article' || target.noindex !== false) {
+  throw new Error('目標文章尚未開放索引')
+}
 
 const update = addLinkToPortableText(source.body, {
   sourceArticleId: options.source,

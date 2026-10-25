@@ -1311,3 +1311,11 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 ### 唯一下一步
 
 - 看下一輪本機自動寫作的紀錄，確認上傳的文章上線時就有內連、補內連沒有上限。
+
+## 2026-10-25 Claude Code（地端）：稚內主頁先連到利尻島、禮文島 Hub
+
+- Darren 決定：稚內主頁「利尻島值得去嗎」「禮文島值得去嗎」兩句，主頁還沒上線，先連到已開放索引的 Hub（`/places/rishiri-island/`、`/places/rebun-island/`）。主頁上線後掛成 Hub 入口文章，網址不變，連結不用再改。
+- `studio/scripts/apply-pending-link.mjs` 新增 `--target-hub=<hub 文件 ID>`：改檢查 Hub 已開放索引、網址相符。
+- Sanity 補上這 2 條，CI 通過，D1 標已補（link 22、23）；另外 2 條線上本來就連到 Hub 的（link 5 利尻島交通 → 利尻島、link 24 禮文島住宿 → 禮文島）一起標記。
+- 目前稚內群已上線文章的大綱內連全部接上。
+- 唯一下一步：看下一輪本機自動寫作的紀錄，確認上線時就有內連。
