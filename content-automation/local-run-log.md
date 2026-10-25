@@ -20,15 +20,18 @@
 
 | 文章 ID | 日期 | 原因 | 狀態 |
 |---|---|---|---|
-| wakkanai-stay | 2026-10-21 | 事實表缺房價、含餐、房型與逐家訂房管道；分工表「宗谷岬唯一的民宿」與 F186 兩家不符 | 待人工規劃 session 補事實並修分工表 |
-| wakkanai-festival | 2026-10-22 | 大綱指定內連句「活動期間市區住宿容易客滿」沒有官方來源（fact-check C35 unsupported）；其他驗收都過 | 待人工規劃 session 改大綱這句內連句（或找到官方來源），再複查 C35、C43 即可 |
-| rishiri-island-festival | 2026-10-25 | 大綱指定內連句「祭典當晚島上住宿容易客滿」沒有官方來源（fact-check C55 unsupported；官方只有りしぷら reserve/error 頁「夏季は毎年大変な混雑」）；其他驗收都過（93 項中 92 verified、讀者 acceptable） | 待人工規劃 session 改大綱這句內連句（建議改成以夏季為主詞，和 wakkanai-festival、rebun-island 一起處理），再複查 C55 即可 |
-| rebun-island | 2026-10-24 | 大綱指定內連句「活動期間島上住宿容易客滿」沒有官方來源（fact-check C43 unsupported）；其他驗收都過（97 項中 96 verified、讀者 acceptable） | 待人工規劃 session 改大綱這句內連句（建議和 wakkanai-festival 一起處理），再複查 C43 即可 |
+| wakkanai-stay | 2026-10-21 | 事實表缺房價、含餐、房型與逐家訂房管道；分工表「宗谷岬唯一的民宿」與 F186 兩家不符 | 2026-10-26 人工 session 處理中：住宿頁改成不寫價格、ニューチコウ移到南稚內，補研究判定 ready，重寫中 |
+| wakkanai-festival | 2026-10-22 | 大綱指定內連句「活動期間市區住宿容易客滿」沒有官方來源（fact-check C35 unsupported）；其他驗收都過 | 已解決：2026-10-26 人工 session 把大綱內連句改成導覽句、複查通過，已上線 |
+| rishiri-island-festival | 2026-10-25 | 大綱指定內連句「祭典當晚島上住宿容易客滿」沒有官方來源（fact-check C55 unsupported；官方只有りしぷら reserve/error 頁「夏季は毎年大変な混雑」）；其他驗收都過（93 項中 92 verified、讀者 acceptable） | 已解決：2026-10-26 人工 session 把大綱內連句改成導覽句、複查通過，已上線 |
+| rebun-island | 2026-10-24 | 大綱指定內連句「活動期間島上住宿容易客滿」沒有官方來源（fact-check C43 unsupported）；其他驗收都過（97 項中 96 verified、讀者 acceptable） | 已解決：2026-10-26 人工 session 把大綱內連句改成導覽句、複查通過，已上線 |
 
 ## 上傳
 
 | 台北時間 | 文章 ID | 結果 | 網址 | 停在哪一點與原因 | 封面來源與授權 |
 |---|---|---|---|---|---|
+| 2026-10-26 02:40（人工） | rebun-island | 已上線 | https://offpathnotes.com/places/rebun-island/ | —（掛成禮文島 Hub 入口文章） | 維基共享資源 Gorota1.JPG（Gorota 岬望向須古頓岬），Furiko7e，CC BY-SA 3.0 |
+| 2026-10-26 02:30（人工） | rishiri-island-festival | 已上線 | https://offpathnotes.com/places/rishiri-island/festival/ | — | 維基共享資源 Oshidomari_Port_17-Sept-2018.jpg，皓月旗，CC BY-SA 4.0 |
+| 2026-10-26 02:20（人工） | wakkanai-festival | 已上線 | https://offpathnotes.com/places/wakkanai/festival/ | — | 維基共享資源 稚内中央アーケード商店街 Feb 11, 2012.jpg，ict.wa4，CC BY 2.0 |
 | 2026-10-26 01:52（自動） | rishiri-island | 已上線 | https://offpathnotes.com/places/rishiri-island/ | —（掛成利尻島 Hub 入口文章） | 維基共享資源 Rishiri Island 20140814.jpg（從禮文島隔海拍的利尻島），Suicasmo，CC BY-SA 4.0 |
 | 2026-10-25 22:52（自動） | rishiri-island-food | 已上線 | https://offpathnotes.com/places/rishiri-island/food/ | — | 維基共享資源 Rishiri 046 30092006.JPG（利尻島沓形一帶曬昆布），Dmitry Petelin，Public domain（PD-self） |
 | 2026-10-25 22:52（自動） | rishiri-island-weather | 已上線 | https://offpathnotes.com/places/rishiri-island/weather/ | — | 維基共享資源 Mt Rishiri.jpg（6 月殘雪的利尻山），Japanexperterna.se，CC BY-SA 3.0 |
@@ -51,7 +54,7 @@
 
 | 文章 ID | 日期 | 原因 | 狀態 |
 |---|---|---|---|
-| rebun-island-transport | 2026-10-25 | 2026-10-20 人工流程的舊稿，沒有 `publication.json`（也沒有潤稿紀錄），`local-article-gates.mjs` 無法通過 | 待人工 session 補 `publication.json` 並確認 `gates_clear` |
+| rebun-island-transport | 2026-10-25 | 2026-10-20 人工流程的舊稿，沒有 `publication.json`（也沒有潤稿紀錄），`local-article-gates.mjs` 無法通過 | 2026-10-26 人工 session 處理中：照新大綱整篇重寫 |
 
 ## 紀錄
 
