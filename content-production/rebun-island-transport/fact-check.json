@@ -1,0 +1,1556 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island-transport",
+  "articleSha256": "d561bce30747e07d96bb4146faf7007629ad1124c76e80cc63b3c7502279fb5e",
+  "checker": "事實查核子代理（Claude Opus 5.5，唯讀，非作者、非潤稿者；本機自動寫作驗收第 2 點）",
+  "checkedAt": "2026-10-26",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "不開車的旅客，禮文島交通靠的是宗谷巴士。島上有三條路線巴士，夏天另有繞行北部岬角的定期觀光巴士，都從香深港渡輪站出發。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア｜宗谷バス株式会社",
+      "sourceQuote": "「礼文線①（香深～知床）」「礼文線②（香深～スコトン）」「元地線（香深～元地）」；全コース一覧「香深フェリーターミナル発～スカイ岬～スコトン岬…」",
+      "verdict": "verified",
+      "notes": "禮文線①的始發站是香深漁協前，1 分鐘後經過渡輪站（冬季班表）；正文後面的路線表有寫明，開頭「都從渡輪站出發」以乘客角度可接受。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "能搭的車隨季節差很多，2026年的觀光巴士5月到9月行駛，10月起就停了。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
+      "sourceQuote": "「運行期間：2026年5月3日～5月5日、5月20日～9月30日まで」「定期観光バスは夏季限定の運行です。それ以外の期間で運行はございません。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "路線巴士也換成冬季班表，往北的禮文線②平日只剩4班開到須古頓。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "船泊方面行 平日運行 第1～3便、第5便が「スコトン着」7:29、8:39、11:44、17:46／17:19；第4便は船泊病院前15:56止まり",
+      "verdict": "verified",
+      "notes": "10/31 前與 11/1 起都是 4 班到スコトン。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "沒有租車時，澄海岬、地藏岩這些景點要搭觀光巴士，或搭路線巴士再走一段路，只是冬天步道大多封閉。",
+      "sourceUrl": "https://rebun-trail.jp/%e3%83%88%e3%83%ac%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b3%e3%83%bc%e3%82%b9%e5%86%ac%e5%ad%a3%e9%96%89%e9%8e%96%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ（2026-10-21 公告）｜礼文島トレイル",
+      "sourceQuote": "「【冬季閉鎖】・岬めぐりコース　・久種湖畔コース　・礼文滝コース　・礼文岳コース　・８時間コース」",
+      "verdict": "verified",
+      "notes": "「大多封閉」與 2026-10-20 現況一致（林道通行可、桃岩一部通行可）。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "去禮文島只有渡輪可搭。",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000193.html",
+      "sourceTitle": "交通案内 | 北海道礼文町",
+      "sourceQuote": "「礼文へ」「フェリー」「稚内→礼文：1時間55分」「利尻→礼文：40分」（礼文へ只列フェリー）",
+      "verdict": "verified",
+      "notes": "機場休止見下一筆。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "從稚內直航香深港約1小時55分，中途停靠利尻島的班次約2小時50分。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "「06:30～08:25」「＜ 10:10～13:00 ＞」「＜ ＞ は利尻島（鴛泊）経由便です。」",
+      "verdict": "verified",
+      "notes": "06:30→08:25＝1:55；10:10→13:00＝2:50。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "從利尻島過去約40分鐘。",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000193.html",
+      "sourceTitle": "交通案内 | 北海道礼文町",
+      "sourceQuote": "「利尻→礼文：40分」",
+      "verdict": "verified",
+      "notes": "Heartland 時刻表沓形→香深 14:25→15:05＝40 分，鴛泊→香深 9:30→10:15＝45 分（2026 觀光巴士時刻表下方的渡輪表）。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "島上的禮文機場目前停用（休止中），沒有航班。",
+      "sourceUrl": "http://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "ぶらり礼文島MAP（web.archive.org 2026-02-15 存檔）",
+      "sourceQuote": "「礼文空港（休止中）」",
+      "verdict": "verified",
+      "notes": "觀光協會官網今天整站連不上，讀 web.archive.org 2026-02-15 存檔；禮文町交通案內「礼文へ」只列渡輪，互相印證。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "香深港渡輪站是島上搭巴士、計程車的起點。乘船口在2樓，巴士、計程車與服務台都在1樓。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/09/202609kafuka-floor-mapOL.pdf",
+      "sourceTitle": "香深港フェリーターミナル フロアマップ（2026年9月版 PDF）",
+      "sourceQuote": "「フェリー乗船口は2Fです」1F に「路線バス乗場」「ハイヤー乗場」「観光バス乗場」「宗谷バスインフォメーション」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "1樓右手邊是售票櫃台，宗谷巴士的服務台就在旁邊，觀光服務處與投幣置物櫃也在這一層。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/09/202609kafuka-floor-mapOL.pdf",
+      "sourceTitle": "香深港フェリーターミナル フロアマップ（2026年9月版 PDF）",
+      "sourceQuote": "1F 右側「発券カウンター Ticket Counter」、すぐ上に「宗谷バスインフォメーション」；1F に「観光インフォメーション」「コインロッカー」アイコン",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "正面出口前就是路線巴士站與計程車招呼站，觀光巴士則在建築側面上車。招牌分別寫著「路線バス乗場」「ハイヤー乗場」「観光バス乗場」。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/09/202609kafuka-floor-mapOL.pdf",
+      "sourceTitle": "香深港フェリーターミナル フロアマップ（2026年9月版 PDF）",
+      "sourceQuote": "「正面出入口」の前に「ハイヤー乗場 Taxi Stop」「路線バス乗場 Bus Stop」、建物右側に「観光バス乗場 Sightseeing Bus Stop」",
+      "verdict": "verified",
+      "notes": "三個日文名稱是樓層圖上的標示；現場招牌的實際文字無法從官網確認，正文寫「招牌」是合理推定，讀者驗收可考慮改「樓層圖上寫」。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "巴士的問題可以問1樓的宗谷巴士服務台，或打宗谷巴士禮文營業所0163-86-1020。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア｜宗谷バス株式会社",
+      "sourceQuote": "「礼文営業所 0163-86-1020」；樓層圖 1F「宗谷バスインフォメーション」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "禮文島的定期觀光巴士由宗谷巴士經營，從香深港渡輪站發車，不是從稚內，2026年有A線與B線。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
+      "sourceQuote": "「利尻島、礼文島の定期観光バスは現地出発です。稚内からの出発ではありませんのでご注意ください。」「礼文A」「礼文Ｂ」「香深フェリーターミナル発」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "2026年的班次已經全部跑完。2027年的路線、日期與票價要等宗谷巴士決定後才公告，下表是2026年的資料。",
+      "sourceUrl": "http://www.soyabus.co.jp/traffic/",
+      "sourceTitle": "運行状況｜宗谷バス株式会社",
+      "sourceQuote": "「2026年度の運行は終了いたしました。来年度の運行につきましては決まり次第お知らせいたします。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "觀光巴士表 礼文A：5/3～5/5、5/20～9/30｜8:40發，12:30回到｜3,600日圓／1,900日圓｜澄海岬、須古頓岬、桃台貓台、香深渡輪站、北方金絲雀公園",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
+      "sourceQuote": "「礼文A - 所要時間 / 3:50」「大人 3,600円」「小児 1,900円」「香深フェリーターミナル発～スカイ岬～スコトン岬～桃台猫台～※香深フェリーターミナル（6/1～9/30期間で途中下車可能）～北のカナリアパーク～香深フェリーターミナル着」「5月3日～5月5日・5月20日～9月30日 8:40発 → 12:30着」",
+      "verdict": "verified",
+      "notes": "整列逐格核對。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "觀光巴士表 礼文B：6/1～9/30｜14:15發，16:40回到｜3,300日圓／1,800日圓｜澄海岬、須古頓岬",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
+      "sourceQuote": "「礼文Ｂ - 所要時間 / 2:25」「大人 3,300円」「小児 1,800円」「香深フェリーターミナル発～スカイ岬～スコトン岬～香深フェリーターミナル着」「6月1日～9月30日 14:15発 → 16:40着」",
+      "verdict": "verified",
+      "notes": "整列逐格核對。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "A線全程3小時50分，繞完北部再去桃台貓台與北方金絲雀公園。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
+      "sourceQuote": "「礼文A - 所要時間 / 3:50」「スコトン岬～桃台猫台～※香深フェリーターミナル～北のカナリアパーク」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "6月1日到9月30日，A線約11:45會先經過渡輪站，不去北方金絲雀公園就能在這裡下車，票價一樣。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
+      "sourceQuote": "「（6/1～9/30限定 香深FT途中下車11:45頃着）」「（運賃は途中下車でも同額です）」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "B線2小時25分，只繞澄海岬與須古頓岬，路線表上的澄海岬寫成「スカイ岬」。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
+      "sourceQuote": "「礼文Ｂ - 所要時間 / 2:25」「香深フェリーターミナル発～スカイ岬～スコトン岬～香深フェリーターミナル着」",
+      "verdict": "verified",
+      "notes": "2026 觀光巴士時刻表 PDF 寫「澄海岬」並注音「すかい」，同一處。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "觀光巴士的票跟船票分開買，沒有套票，稚內目前也不賣這兩條的車票，要到島上的窗口買。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa/",
+      "sourceTitle": "よくあるご質問｜宗谷バス株式会社",
+      "sourceQuote": "「現在、稚内での利尻・礼文定期観光バスの乗車券販売を行っておりません。」「セットでの販売はおこなっておりません。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "行程不含餐，原則上不能在路線以外的地方上下車。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス株式会社",
+      "sourceQuote": "「定期観光バスにお食事は含まれておりません。」「コース内容以外での途中乗車、途中下車は原則お断りしております。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "巴士不能帶寵物，遇到交通或參觀設施有狀況，路線內容也可能更動。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス株式会社",
+      "sourceQuote": "「ペットの持ち込みは不可です。」「運輸機関、見学施設、交通事情、その他事由によりコース内容などを予告なしに変更する場合がございます。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "從稚內當天來回，可以搭06:30開的渡輪，08:25到香深，正好接8:40的A線。這班船5月和6月到9月的時刻都一樣。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "4/28～5/31「06:30～08:25」、6/1～9/30「06:30～08:25」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "中間只隔15分鐘，宗谷巴士表示有15分鐘以上就來得及，船上人多時最好早點下船。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa/",
+      "sourceTitle": "よくあるご質問｜宗谷バス株式会社",
+      "sourceQuote": "「はい。15分以上あれば間に合いますが、フェリーが混雑している場合は早めの下船をおすすめします。」",
+      "verdict": "verified",
+      "notes": "08:25→8:40＝15 分。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "A線12:30回到渡輪站，6月到9月可以接14:20的船回稚內，要是想晚點走，還有17:10的末班船。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 香深発「14:20～16:15」「17:10～19:05」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "B線16:40才回到渡輪站。17:10末班船的2等客室要在開船40分鐘前，也就是16:30前辦好乘船手續，B線回到時已經過了。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問 | ハートランドフェリー",
+      "sourceQuote": "「2等客室をご利用されるお客様は出港時間の40分前までにお済ませ下さい。」",
+      "verdict": "verified",
+      "notes": "17:10−0:40＝16:30，早於 16:40（礼文B 16:40着，全コース一覧）。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "1等、特別室與2等指定席的期限是開船20分鐘前，也只剩10分鐘，所以B線比較適合住在島上的行程。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問 | ハートランドフェリー",
+      "sourceQuote": "「1等客室（ラウンジ席・アイランドビューシート・和室）・特別室及び2等指定席をご予約されたお客様は出港時間の20分前までに各フェリーターミナルにて乗船手続きをお済ませ下さい。」",
+      "verdict": "verified",
+      "notes": "17:10−0:20＝16:50；16:50−16:40＝10 分。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "觀光巴士要預約，可以打電話、到窗口或上発車オーライネット訂，電子郵件、傳真與郵寄都不收。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス株式会社",
+      "sourceQuote": "「お電話・窓口・ 発車オーライネット（インターネット） にてご予約をお願いします。」「E‐mail、FAX、郵便等での予約は受け付けておりません。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "乘車日2個月前開始接受預約。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス株式会社",
+      "sourceQuote": "「各コース、ご利用日の 2ヶ月前より 受付を開始しています。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "當天有空位也能上車，客滿就搭不到，也沒有候補。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス株式会社",
+      "sourceQuote": "「空席があれば、当日でもご乗車いただくことが出来ますが、満席でお断りする場合がございます。」「満席時のキャンセル待ちは行っておりません。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "不方便講日文，就用網路預約，不用講電話又能刷卡付款。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2024/02/1fe7c035f5c6dd0020e75f6de6e36449.pdf",
+      "sourceTitle": "定期観光バスのインターネット予約に関する注意事項（2024年2月1日）",
+      "sourceQuote": "「クレジットカード、ｄ払い、PayPay でお支払いが可能です。」",
+      "verdict": "verified",
+      "notes": "編輯建議，依據網路可刷卡；窗口不收信用卡（ご予約方法とのりば）。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "発車オーライネット在乘車日2個月前的同一天開放預約，日本時間早上5點，也就是台灣早上4點。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2024/02/1fe7c035f5c6dd0020e75f6de6e36449.pdf",
+      "sourceTitle": "定期観光バスのインターネット予約に関する注意事項（2024年2月1日）",
+      "sourceQuote": "「予約開始は、2ヶ月前の同日午前5時から WEB で予約が可能です。」",
+      "verdict": "verified",
+      "notes": "時差：JNTO 時區頁「台北 -1小時」，5:00−1:00＝4:00。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "每天日本時間凌晨2點到5點系統維護，這段時間訂不了。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2024/02/1fe7c035f5c6dd0020e75f6de6e36449.pdf",
+      "sourceTitle": "定期観光バスのインターネット予約に関する注意事項（2024年2月1日）",
+      "sourceQuote": "「WEB では午前2時～5時までメンテナンスにより予約が出来ません。」",
+      "verdict": "verified",
+      "notes": "本次查核於日本時間約 3:30 連線，発車オーライネット回「ただいまサービス提供時間外です」，與此一致。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "進網站後選「宗谷バスの定期観光バス」，預約姓名要填本名，不能用暱稱。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス株式会社",
+      "sourceQuote": "「発車オーライネットWEBサイト 又はアプリから、 宗谷バスの定期観光バス を選んでご予約ください。※予約氏名は本人確認の可能な氏名でお願いします。ハンドルネームなどはお控えください。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "第一次用要先註冊會員，姓名欄只收全形片假名，電話號碼不加連字號。",
+      "sourceUrl": "http://web.archive.org/web/20260917121023/https://secure.j-bus.co.jp/hon/Howto/Ktouroku",
+      "sourceTitle": "会員登録方法 - 発車オ～ライネット（web.archive.org 2026-09-17 存檔）",
+      "sourceQuote": "「※ お電話番号の｢－｣ハイフンは入力しないで下さい。」「※ お名前は全角カタカナで入力して下さい。」；予約方法頁「ご予約には会員登録が必要です。」",
+      "verdict": "verified",
+      "notes": "発車オーライネット今天在維護時段，讀 web.archive.org 存檔（2026-09-17、2026-06-09）。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "送出後打開信箱裡的確認信，點「自動認証URL」，註冊才算完成。",
+      "sourceUrl": "http://web.archive.org/web/20260917121023/https://secure.j-bus.co.jp/hon/Howto/Ktouroku",
+      "sourceTitle": "会員登録方法 - 発車オ～ライネット（web.archive.org 2026-09-17 存檔）",
+      "sourceQuote": "「会員登録をご希望される場合はメールに記載されている「 自動認証URL 」にアクセスいただくことで本登録が完了します。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "2026年10月查詢時，北海道的路線清單上已經沒有禮文，看不到禮文的預約畫面。",
+      "sourceUrl": "https://secure.j-bus.co.jp/hon/Tour?area=1",
+      "sourceTitle": "北海道 地方コース一覧 - 発車オ～ライネット",
+      "sourceQuote": "",
+      "verdict": "unreachable",
+      "notes": "2026-10-26 台北 02:28 與 03:33（日本 03:28、04:33）直接打開 https://secure.j-bus.co.jp/hon/Tour?area=1，都被轉到 /hon/Maintenance，回 503「ただいまサービス提供時間外です」（每天日本 2:00～5:00 維護時段，宗谷巴士注意事項 PDF 有寫），看不到路線清單；沒有繞過。web.archive.org 最新存檔是 2026-07-31，當時清單上還有「礼文Aコース「夢の浮島礼文めぐり」（2026年6月～9月）」，不能支持「10月清單上已經沒有禮文」。研究記錄 F230 是 2026-10-16 的觀察，本次無法重現。建議：日本時間 5:00 以後重開確認；若要定稿前不再查，可刪掉這句（不影響讀者操作，觀光巴士季外本來就訂不到，正文已寫 2026 年班次跑完）。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "按鈕表：会員規約に同意する｜同意會員條款｜勾選後按「次へ」；登録｜註冊｜會員資料填完後按",
+      "sourceUrl": "http://web.archive.org/web/20260917121023/https://secure.j-bus.co.jp/hon/Howto/Ktouroku",
+      "sourceTitle": "会員登録方法 - 発車オ～ライネット（web.archive.org 2026-09-17 存檔）",
+      "sourceQuote": "「「 会員規約に同意する 」を選択し「次へ」ボタンを押してください。」「指定の項目を全て入力後｢登録｣ボタンを押して下さい。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "按鈕表：地域を選択｜選地區｜選北海道；空席照会｜查詢空位｜選好禮文的路線後按",
+      "sourceUrl": "http://web.archive.org/web/20260609210307/https://secure.j-bus.co.jp/hon/Howto/Tours",
+      "sourceTitle": "定期観光バスの予約方法 - 発車オ～ライネット（web.archive.org 2026-06-09 存檔）",
+      "sourceQuote": "「地域を選択 観光する地域を選択してください。」「希望する観光コースを選択し、「空席照会」ボタンをクリックします。」",
+      "verdict": "verified",
+      "notes": "禮文在北海道地區清單內（存檔 2026-07-31 的「北海道 地方コース一覧」有「礼文Aコース」）。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "按鈕表：カレンダーから出発日をクリック｜在日曆點出發日；乗降停留所、乗車人数｜上下車站、乘車人數｜選好後按「次へ」",
+      "sourceUrl": "http://web.archive.org/web/20260609210307/https://secure.j-bus.co.jp/hon/Howto/Tours",
+      "sourceTitle": "定期観光バスの予約方法 - 発車オ～ライネット（web.archive.org 2026-06-09 存檔）",
+      "sourceQuote": "「表示されているカレンダーから出発日をクリックして下さい。」「乗降停留所と乗車人数を指定し、「次へ」ボタンをクリックします。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "按鈕表：小児｜小孩｜小學生以下",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2024/02/1fe7c035f5c6dd0020e75f6de6e36449.pdf",
+      "sourceTitle": "定期観光バスのインターネット予約に関する注意事項（2024年2月1日）",
+      "sourceQuote": "「小児料金は小学生以下のお子様が対象です。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "按鈕表：予約を確定｜確定預約｜沒按這一顆就沒有訂成",
+      "sourceUrl": "http://web.archive.org/web/20260609210307/https://secure.j-bus.co.jp/hon/Howto/Tours",
+      "sourceTitle": "定期観光バスの予約方法 - 発車オ～ライネット（web.archive.org 2026-06-09 存檔）",
+      "sourceQuote": "「※ 「予約を確定」ボタンをクリックしないと予約の受付は完了しません。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "網路付款可以用信用卡、d払い或PayPay，刷卡時可能要過發卡銀行的3D驗證。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2024/02/1fe7c035f5c6dd0020e75f6de6e36449.pdf",
+      "sourceTitle": "定期観光バスのインターネット予約に関する注意事項（2024年2月1日）",
+      "sourceQuote": "「クレジットカード、ｄ払い、PayPay でお支払いが可能です。クレジットカードについては高度なセキュリティーサービス「3Dセキュア」を導入しており、決済時にカード会社指定の本人確認が必要な場合があります。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "訂好後沒在期限內付款會自動取消，當天與前一天的預約則要馬上付款。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2024/02/1fe7c035f5c6dd0020e75f6de6e36449.pdf",
+      "sourceTitle": "定期観光バスのインターネット予約に関する注意事項（2024年2月1日）",
+      "sourceQuote": "「期限までに購入されない場合は予約が自動キャンセルとなります。なお。当日予約及び前日予約は即時決済が必須となります。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "付款後收到的郵件就是車票，乘車2小時前起也能在手機叫出「モバイルチケット」。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2024/02/1fe7c035f5c6dd0020e75f6de6e36449.pdf",
+      "sourceTitle": "定期観光バスのインターネット予約に関する注意事項（2024年2月1日）",
+      "sourceQuote": "「クレジットカード決済後に届くメール又は乗車2時間前より表示が可能となるモバイルチケットを乗務員へご提示ください。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "沒有手機或替別人訂，就要把郵件全文印出來。車上不劃位，上車自己找位子。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2024/02/1fe7c035f5c6dd0020e75f6de6e36449.pdf",
+      "sourceTitle": "定期観光バスのインターネット予約に関する注意事項（2024年2月1日）",
+      "sourceQuote": "「スマートフォン等が用意できない場合、又は代理人が予約した場合は予め印刷したものをご用意ください。（メール本文全ての印刷をお願いします）」「バス車内は全席自由席となります。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "出發1小時前都能在網站上取消，刷卡付款後取消要收100日圓手續費。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2024/02/1fe7c035f5c6dd0020e75f6de6e36449.pdf",
+      "sourceTitle": "定期観光バスのインターネット予約に関する注意事項（2024年2月1日）",
+      "sourceQuote": "「予約の取り消しは各コースの出発１時間前までWEBより可能です。」「カード決済後の取り消しは１００円の取消手数料が発生します。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "改日期不收手續費，只是網路上改不了，要打電話或到窗口。想換路線只能取消再重訂，一樣要收取消手續費。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2024/02/1fe7c035f5c6dd0020e75f6de6e36449.pdf",
+      "sourceTitle": "定期観光バスのインターネット予約に関する注意事項（2024年2月1日）",
+      "sourceQuote": "「予約後コースの出発日を変更する場合は手数料無しで対応します。変更方法は電話又は窓口で変更手続きを行ってください。インターネットからの変更手続きは出来ません。」「別のコースに変更する場合…予約の取り直しとなるため取消手数料が発生します。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "打電話訂時，報上乘車日、路線名、代表人姓名與電話，對方會給一組11位數的預約號碼。電話打不通時，隔一段時間再打。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス株式会社",
+      "sourceQuote": "「乗車日、コース名、代表者氏名、電話番号、をご連絡ください。11桁の予約番号が発行されますので忘れずに控えてください。」「お電話が繋がりにくい場合がございます。その場合、一度お時間を空けてから再度ご連絡ください。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "窗口表：宗谷巴士禮文營業所 0163-86-1020；稚內站前巴士總站 0162-22-3114，9:00～17:00；宗谷巴士稚內營業所 0162-33-5515；宗谷巴士利尻營業所 0163-84-2550",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス株式会社",
+      "sourceQuote": "「TEL：0162-22-3114 稚内駅前ターミナル [ 9:00～17:00まで]」「TEL：0162-33-5515」「TEL：0163-84-2550」「TEL：0163-86-1020」；頁尾営業所一覧「稚内営業所 0162-33-5515」「利尻営業所 0163-84-2550」「礼文営業所 0163-86-1020」",
+      "verdict": "verified",
+      "notes": "四列逐格核對。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "打電話或透過旅行社訂的，乘車當天都要到當地窗口買票或換票，前一天去窗口也拿不到票。旅行社給的船車券或憑證不能直接上車，一定要先換成車票。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス株式会社",
+      "sourceQuote": "「チケットの前日発券は行っておりません。乗車当日に必ず現地窓口で購入・引き換えをお願いします。」「旅行会社より発行されたクーポン券（船車券やバウチャー券）では乗車することができません。必ず窓口でチケットに引き換えをお願いします。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "窗口只收現金或PayPay，不能刷卡。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス株式会社",
+      "sourceQuote": "「窓口での決済方法は現金又はPayPay払いのみです。クレジットカード、その他キャッシュレス決済には対応しておりません。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "香深渡輪站的售票處在1樓下行手扶梯與電梯旁，招牌寫「切符売場」，上車的「のりば」在停車場那一側。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/pdf/course/2026_teikan_ja.pdf",
+      "sourceTitle": "2026年定期観光バス時刻表（PDF）",
+      "sourceQuote": "「礼文定期観光（香深フェリーターミナル）」圖：「1階」「下りエスカレーター」「EV」「切符売場」「のりば」「駐車場」",
+      "verdict": "verified",
+      "notes": "圖上的標示；「招牌寫」同上筆，是圖上用語。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "禮文島的路線巴士有三條，都經過香深港渡輪站。往北到須古頓的是禮文線②，往南到知床的是禮文線①，穿過新桃岩隧道到元地的是元地線。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア｜宗谷バス株式会社",
+      "sourceQuote": "「礼文線①（香深～知床）」「礼文線②（香深～スコトン）」「元地線（香深～元地）」；元地線運賃表「香深ﾌｪﾘｰﾀｰﾐﾅﾙ(新桃岩ﾄﾝﾈﾙ経由)元地間」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "路線表：禮文線②，香深～スコトン｜須古頓｜香深井、內路、船泊本町、船泊病院前、濱中",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "船泊方面行の停留所「香深井」「内路」「船泊本町」「船泊病院前」「浜中」「スコトン着」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "路線表：禮文線①，香深～知床｜知床｜從香深漁協前發車，1分鐘後經過渡輪站",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "平日運行 香深～知床～香深「香深漁協前発 7:00」「フェリーターミナル 7:01」",
+      "verdict": "verified",
+      "notes": "假日也是 9:25→9:26。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "路線表：元地線｜元地｜香深漁協前、神社前、元地港",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/01_rebun-motochi-line_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 元地線(1) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(新桃岩ﾄﾝﾈﾙ経由)元地間",
+      "sourceQuote": "元地線運賃表の停留所「香深ﾌｪﾘｰﾀｰﾐﾅﾙ」「香深漁協前」「神社前」「元地港」「元地」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "往須古頓的車從渡輪站出發，11分鐘到香深井，49分鐘到濱中，坐到終點須古頓約1小時。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "平日第1便「フェリーターミナル発 6:30」「香深井 6:41」「浜中 7:19」「スコトン着 7:29」",
+      "verdict": "verified",
+      "notes": "6:30→6:41＝11 分，→7:19＝49 分，→7:29＝59 分。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "站牌上濱中寫「浜中」、須古頓寫「スコトン」，對站名時直接看日文比較快。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "「浜中」「スコトン着」",
+      "verdict": "verified",
+      "notes": "時刻表與運賃表的站名寫法；與 glossary 一致。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "班表分夏冬兩季。每年大約4月下旬到9月走夏季班表，平日假日時刻一樣。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア｜宗谷バス株式会社",
+      "sourceQuote": "「路線バス時刻表は例年4月後半～9月が夏ダイヤ、10月～4月後半が冬ダイヤとなります。」「夏ダイヤは平日休日問わず」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "10月到隔年4月下旬走冬季班表，平日與假日分開，假日指週六日、國定假日與休校日。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア｜宗谷バス株式会社",
+      "sourceQuote": "「冬ダイヤは平日運行（月～金曜日）と休日運行（土～日曜日、祝祭日、休校日）に分かれます。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "2026年是4月28日換夏季班表、10月1日換冬季班表。",
+      "sourceUrl": "http://www.soyabus.co.jp/archives/8689",
+      "sourceTitle": "利尻・礼文冬ダイヤへの変更について | 宗谷バス株式会社",
+      "sourceQuote": "「本日10月1日(木)より、利尻・礼文で運行する路線バスは冬ダイヤでの運行となります。」；8544「令和８年４月２８日(火)よりダイヤ改正を実施いたします。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "宗谷巴士禮文頁目前只放冬季班表，2027年的夏季班表還沒出來，夏天去之前再看一次。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア｜宗谷バス株式会社",
+      "sourceQuote": "時刻表欄只有「礼文線、知床、元地線 2026年10月1日改正」（rebun_r8_winter.pdf）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "從渡輪站出發的大人車資如下，表上的距離是巴士行駛的公里數。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 礼文線(2) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)スコトン間",
+      "sourceQuote": "「実施運賃／キロ程」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "車資表：香深井 340日圓 4.9公里；船泊本町 1,070日圓 23.2公里；船泊病院前 1,110日圓 23.9公里；濱中 1,210日圓 26.0公里；須古頓 1,400日圓 30.3公里",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 礼文線(2) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)スコトン間",
+      "sourceQuote": "香深ﾌｪﾘｰﾀｰﾐﾅﾙ列：香深井「340」「4.9」、船泊本町「1,070」「23.2」、病院前「1,110」「23.9」、浜中「1,210」「26.0」、スコトン「1,400」「30.3」",
+      "verdict": "verified",
+      "notes": "五列逐格核對（運賃表寫「病院前」，時刻表寫「船泊病院前」）。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "車資表：知床 340日圓 3.6公里",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/04_rebun-line-1_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 礼文線(1) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(香深経由)知床間",
+      "sourceQuote": "知床列 香深ﾌｪﾘｰﾀｰﾐﾅﾙ欄「340」「3.6」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "車資表：元地港 480日圓 3.0公里；元地 520日圓 3.6公里",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/01_rebun-motochi-line_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 元地線(1) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(新桃岩ﾄﾝﾈﾙ経由)元地間",
+      "sourceQuote": "元地港列 香深ﾌｪﾘｰﾀｰﾐﾅﾙ欄「480」「3.0」、元地列「520」「3.6」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "表上沒列的站，除了指定的站以外，都照較遠那一側的車資算。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア｜宗谷バス株式会社",
+      "sourceQuote": "「三角表に記載が無い停留所は指定停留所を除き、外方運賃が適用になります。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "小孩是大人的半價，國中生以上算大人，未滿6歲的小孩有6歲以上的旅客陪同就免費。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa/",
+      "sourceTitle": "よくあるご質問｜宗谷バス株式会社",
+      "sourceQuote": "「小児運賃は大人運賃の半額となります。（十円未満は四捨五入）」「中学生以上は大人運賃、小学生以下は小児運賃となります。また、小学生未満の子供の運賃は6歳以上のお客様1人に同伴された場合、6歳未満のお客様は無料となります。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "上車先拿整理券，下車時把車資連同整理券投進運賃箱，車上不找零。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/howto/",
+      "sourceTitle": "路線バスの乗り方｜宗谷バス株式会社",
+      "sourceQuote": "「入口にある整理券をお取りください。」「お金と整理券を運賃箱に入れてください。」「※おつりは出ないので、両替してから入れて下さい。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "一日自由乘車券大人3,000日圓、小孩1,500日圓，全年都買得到，禮文營業所或車上都能買，只收現金。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア｜宗谷バス株式会社",
+      "sourceQuote": "「【料金】大人3,000円、小児1,500円」「【販売場所】礼文営業所窓口、路線バス車内」「販売期間：通年販売」；1Day PDF「現金のみの扱いとなります」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "它只能搭島內的路線巴士，不能搭觀光巴士。券上填的乘車日當天才有效，一張限一人，沒用完也不退費。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア｜宗谷バス株式会社",
+      "sourceQuote": "「礼文島内路線バスに限り利用可能（定期観光バスは除く）・記入乗車日のみ何度でも乗降自由・乗車券1枚で1名利用可能・利用中止しても料金の払い戻しはできません」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "當天拿用過的一日券去禮文島溫泉薄雪之湯，泡湯費用從600日圓降到500日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/cee90bfcad3f70e950cabbba35f2378f.pdf",
+      "sourceTitle": "礼文島内路線バス 1Dayフリー乗車券（PDF）",
+      "sourceQuote": "「1Dayフリー乗車券をご利用の方当日に限り、礼文島温泉うすゆきの湯の入浴料が割引されます。通常600円が500円に！」「※温泉ご利用時に使用済チケットをご提示下さい。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "只從渡輪站來回須古頓是2,800日圓，來回濱中是2,420日圓，單買都比一日券便宜。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 礼文線(2) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)スコトン間",
+      "sourceQuote": "香深ﾌｪﾘｰﾀｰﾐﾅﾙ列 スコトン「1,400」、浜中「1,210」",
+      "verdict": "verified",
+      "notes": "1,400×2＝2,800；1,210×2＝2,420；都小於一日券 3,000（礼文エリア）。"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "同一天來回濱中再來回元地，合計3,460日圓，這時買一日券才比較便宜。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/01_rebun-motochi-line_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 元地線(1) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(新桃岩ﾄﾝﾈﾙ経由)元地間",
+      "sourceQuote": "元地列 香深ﾌｪﾘｰﾀｰﾐﾅﾙ欄「520」",
+      "verdict": "verified",
+      "notes": "2,420＋520×2＝3,460＞3,000。"
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "不行。宗谷巴士只收現金或PayPay，信用卡與Suica這類電子錢包都不能用，部分商品也不能用PayPay。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa/",
+      "sourceTitle": "よくあるご質問｜宗谷バス株式会社",
+      "sourceQuote": "「クレジットカード・電子マネーでの支払いはできますか？」「お支払いは現金又はキャッシュレス決済の場合PayPayがご利用いただけます。」「※商品によってはPayPay決済の出来ない場合がございますのでご注意ください。」",
+      "verdict": "verified",
+      "notes": "Suica 屬電子マネー；官網也沒有 IC 卡乘車說明。"
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "一日券只收現金。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/cee90bfcad3f70e950cabbba35f2378f.pdf",
+      "sourceTitle": "礼文島内路線バス 1Dayフリー乗車券（PDF）",
+      "sourceQuote": "「現金のみの扱いとなります」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "運賃箱只換得開千圓鈔，二千圓以上的紙鈔在車上換不了，上車前先準備好零錢與千圓鈔。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa/",
+      "sourceTitle": "よくあるご質問｜宗谷バス株式会社",
+      "sourceQuote": "「バス車内で両替可能な紙幣は千円札のみとなっております。大変恐れ入りますが、二千円札以上の両替は車内対応ができませんので、ご乗車前に硬貨または千円札のご用意をお願いします。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "路線巴士能帶上車的手提行李，限重10公斤、長度1公尺以內，容積不超過0.027立方公尺。0.027立方公尺大約是邊長30公分的箱子。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa/",
+      "sourceTitle": "よくあるご質問｜宗谷バス株式会社",
+      "sourceQuote": "「重量10キログラム以内、容積0.027立方メートル以内、長さ1メートル以内を手回品と扱います。」",
+      "verdict": "verified",
+      "notes": "0.3m×0.3m×0.3m＝0.027m³。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "大行李箱可以先寄放在渡輪站1樓的投幣置物櫃，再輕裝搭巴士。",
+      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/09/202609kafuka-floor-mapOL.pdf",
+      "sourceTitle": "香深港フェリーターミナル フロアマップ（2026年9月版 PDF）",
+      "sourceQuote": "1F に「コインロッカー Locker」アイコン",
+      "verdict": "verified",
+      "notes": "置物櫃尺寸官網沒寫，正文也沒寫。"
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "嬰兒車可以直接推上車，人多時要收起來。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa/",
+      "sourceTitle": "よくあるご質問｜宗谷バス株式会社",
+      "sourceQuote": "「はい、乗車可能です。ただし、車両のタイプによっては乗車が難しい場合がございます…混雑時にはベビーカーの折り畳みをお願いする場合がございます」",
+      "verdict": "verified",
+      "notes": "原文是「可能請你折起來」，正文「要收起來」略強，可接受。"
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "往元地、知床與須古頓的路線，市區以外的路段都是自由上下車區間，不在站牌也能上下車。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/1e26d59c3b36be6234cf67eb119fd456.pdf",
+      "sourceTitle": "【礼文】自由乗降区間について（PDF）",
+      "sourceQuote": "「元地行き、知床行き、スコトン行きの路線バスで市街地以外の全区間を自由乗降区間に設定しています。」「バス停以外でも運行経路上の任意の位置で乗降できる制度です。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "想上車就站在路的左側舉手，要下車就在快到之前告訴司機，車資照較遠一側的區界站算。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/1e26d59c3b36be6234cf67eb119fd456.pdf",
+      "sourceTitle": "【礼文】自由乗降区間について（PDF）",
+      "sourceQuote": "「バス進行方向に向かって道路左側の安全な場所で、バスが来たら手を挙げるなど乗車する合図を出してください。」「降車したい場所に近づいてきましたら乗務員に降車したいことを口頭でお知らせください。」「外方運賃（遠方の区界停留所の運賃とみなして算出）」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "不過在斑馬線前後、彎道、隧道裡、視線不好的地方，以及市區與住宅區，司機可能不停。觀光巴士沒有這種上下車方式。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/1e26d59c3b36be6234cf67eb119fd456.pdf",
+      "sourceTitle": "【礼文】自由乗降区間について（PDF）",
+      "sourceQuote": "「横断歩道の前後、カーブ、トンネル内、見通しの悪い場所、市街地や住宅地、道路状況により乗務員が危険と判断する場所」；礼文エリア「（定期観光バスは対象外です。）」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "有些地方只在去程或回程其中一側設站牌。回程找不到站牌時，就在另一側站牌對面的人行道等車。",
+      "sourceUrl": "http://www.soyabus.co.jp/important-notices",
+      "sourceTitle": "重要なお知らせ｜宗谷バス株式会社",
+      "sourceQuote": "「往路・復路のどちらか一方にしかバス停を設置していない箇所がございます。」「片側のみバス停が設置されている場所では、バス停の向かい側の歩道等でお待ちくださいますようお願いいたします。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "冬季班表從2026年10月1日用到隔年4月下旬，11月1日起部分傍晚的班次會提早。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "「令和8年10月1日改正」；第5便「10/1～10/31」16:50、「11/1～」16:20；礼文エリア「10月～4月後半が冬ダイヤ」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "10月31日以前，往須古頓的平日末班是16:50，回程是17:48，元地線平日也多一班渡輪站16:52發的車。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "船泊方面行 第5便「10/1～10/31」「16:50」；香深方面行 第5便「10/1～10/31」「スコトン発 17:48」；元地線 第5便「10/31まで」「フェリーターミナル発 16:52」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "冬天想從稚內當天來回須古頓，一早搭06:35的船，08:30到香深，平日接得上的是10:45那班。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "11/1～12/31「06:35～08:30」；冬季班表 平日 7:40 の次は「10:45」",
+      "verdict": "verified",
+      "notes": "11 月起的渡輪時刻；10 月中是 06:30→08:25，結論相同（7:40 已開走）。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "這班11:44到須古頓，回程只有2分鐘後的11:46。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "「スコトン着 11:44」「スコトン発 11:46」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "錯過這班，下一班17:21發，18:20才回到渡輪站，已經趕不上17:05的末班船。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "「11/1～」「スコトン発 17:21」「フェリーターミナル着 18:20」；渡輪 11/1～12/31 香深発「17:05～19:00」",
+      "verdict": "verified",
+      "notes": "11 月起的條件與上下文一致。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "要在須古頓岬多停留，就要住在島上。平日搭7:40去、11:46回，12:45回到渡輪站，還趕得上17:05的船回稚內。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "「7:40」「スコトン着 8:39」「スコトン発 11:46」「フェリーターミナル着 12:45」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "時刻表：禮文線②往須古頓，平日，11月1日起 6:30｜6:41｜7:19｜7:29",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第1便「6:30」「香深井 6:41」「浜中 7:19」「スコトン着 7:29」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "時刻表：禮文線②往須古頓，平日，11月1日起 7:40｜7:51｜8:29｜8:39",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第2便「7:40」「7:51」「8:29」「8:39」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "時刻表：禮文線②往須古頓，平日，11月1日起 10:45｜10:56｜11:34｜11:44",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第3便「10:45」「10:56」「11:34」「11:44」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C95",
+      "articleExcerpt": "時刻表：禮文線②往須古頓，平日，11月1日起 15:10｜15:21｜不到｜只到船泊病院前，15:56到",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第4便「15:10」「香深井 15:21」「船泊病院前 15:56」、浜中・スコトン欄空白",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C96",
+      "articleExcerpt": "時刻表：禮文線②往須古頓，平日，11月1日起 16:20｜16:31｜17:09｜17:19",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第5便「11/1～」「16:20」「16:31」「17:09」「17:19」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C97",
+      "articleExcerpt": "時刻表：禮文線②往須古頓，假日 7:30｜7:41｜8:19",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "休日運行 第1便「7:30」「香深井 7:41」「浜中 8:19」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "時刻表：禮文線②往須古頓，假日 10:45｜10:56｜11:34",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "休日 第2便「10:45」「10:56」「11:34」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C99",
+      "articleExcerpt": "時刻表：禮文線②往須古頓，假日 12:10｜12:21｜不到，只到船泊病院前，12:56到",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "休日 第3便「12:10」「12:21」「船泊病院前 12:56」、浜中欄空白",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C100",
+      "articleExcerpt": "時刻表：禮文線②往須古頓，假日 15:30｜15:41｜16:19",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "休日 第4便「15:30」「15:41」「16:19」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C101",
+      "articleExcerpt": "時刻表：禮文線②往渡輪站，平日，11月1日起 7:31｜7:41｜8:19",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "香深方面行 平日 第1便「スコトン発 7:31」「浜中 7:41」「香深井 8:19」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "時刻表：禮文線②往渡輪站，平日，11月1日起 8:41｜8:51｜9:29",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第2便「8:41」「8:51」「9:29」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C103",
+      "articleExcerpt": "時刻表：禮文線②往渡輪站，平日，11月1日起 11:46｜11:56｜12:34",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第3便「11:46」「11:56」「12:34」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "時刻表：禮文線②往渡輪站，平日，11月1日起 船泊病院前16:01發｜不經過｜16:36",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第4便「船泊病院前 16:01」「香深井 16:36」、スコトン・浜中欄空白",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C105",
+      "articleExcerpt": "時刻表：禮文線②往渡輪站，平日，11月1日起 17:21｜17:31｜18:09",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第5便「11/1～」「17:21」「17:31」「18:09」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C106",
+      "articleExcerpt": "時刻表：禮文線②往渡輪站，假日 8:31｜8:41｜9:19",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "休日 香深方面行 第1便「8:31」「8:41」「9:19」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C107",
+      "articleExcerpt": "時刻表：禮文線②往渡輪站，假日 11:46｜11:56｜12:34",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第2便「11:46」「11:56」「12:34」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "時刻表：禮文線②往渡輪站，假日 船泊病院前13:01發｜不經過｜13:36",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第3便「船泊病院前 13:01」「香深井 13:36」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C109",
+      "articleExcerpt": "時刻表：禮文線②往渡輪站，假日 16:31｜16:41｜17:19",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "第4便「16:31」「16:41」「17:19」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "末班車平日18:20、假日17:30回到渡輪站。從船泊病院前發的那班，平日16:47、假日13:47到渡輪站。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "平日「11/1～」「フェリーターミナル着 18:20」、第4便「16:47」；休日 第4便「17:30」、第3便「13:47」",
+      "verdict": "verified",
+      "notes": "平日 18:20 是 11/1 起（10/31 前 18:44）；緊接在標「11月1日起」的表格後，條件可由上下文讀出。"
+    },
+    {
+      "claimId": "C111",
+      "articleExcerpt": "時刻表：元地線平日 7:00｜7:12｜7:22；8:55｜9:07｜9:17；11:25｜11:37｜11:47；15:45｜15:57｜16:07",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "平日 香深～元地～香深「フェリーターミナル発 7:00 8:55 11:25 15:45」「元地 7:12 9:07 11:37 15:57」（各2段目＝発）「フェリーターミナル着 7:22 9:17 11:47 16:07」",
+      "verdict": "verified",
+      "notes": "四列逐格核對；表題寫「11月1日起」，第 5 便 16:52 只到 10/31，未列正確。"
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "時刻表：元地線假日 9:50｜10:02｜10:12；11:25｜11:37｜11:47；14:50｜15:02｜15:12",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "休日 香深～元地～香深「9:50 11:25 14:50」「元地 10:02 11:37 15:02」「フェリーターミナル着 10:12 11:47 15:12」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C113",
+      "articleExcerpt": "時刻表：知床線平日 7:01｜7:11｜7:19；8:56｜9:06｜9:14；12:03｜12:13｜12:21；14:46｜14:56｜15:04；16:53｜17:03｜17:11",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "平日 香深～知床～香深「フェリーターミナル 7:01 8:56 12:03 14:46 16:53」「知床（発）7:11 9:06 12:13 14:56 17:03」「フェリーターミナル 7:19 9:14 12:21 15:04 17:11」",
+      "verdict": "verified",
+      "notes": "五列逐格核對。"
+    },
+    {
+      "claimId": "C114",
+      "articleExcerpt": "時刻表：知床線假日 9:26｜9:36｜9:44；12:03｜12:13｜12:21；14:26｜14:36｜14:44",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "休日 香深～知床～香深「フェリーターミナル 9:26 12:03 14:26」「知床（発）9:36 12:13 14:36」「フェリーターミナル 9:44 12:21 14:44」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C115",
+      "articleExcerpt": "這些是宗谷巴士2026年10月1日起的冬季班表，期間與內容之後還可能調整。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "「令和8年10月1日改正」「運行期間や、内容に変更が生じる場合もございますのでご了承願います。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C116",
+      "articleExcerpt": "2027年1月1日到3日全線停駛，寒假、春假與休校日走假日班表。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "「※ 令和9年1月元旦、2日、3日は全便運休致します。」「※ 休祭日、休校日、冬休み、春休みは休日運行です。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C117",
+      "articleExcerpt": "最新狀況直接問宗谷巴士禮文營業所，電話0163-86-1020。",
+      "sourceUrl": "http://www.soyabus.co.jp/traffic/",
+      "sourceTitle": "運行状況｜宗谷バス株式会社",
+      "sourceQuote": "「最新の情報は最寄りの営業所へお問い合せください。」；頁尾「礼文営業所 0163-86-1020」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C118",
+      "articleExcerpt": "官網的「運行状況」頁也會公告，只是清晨、夜間與週六日、假日不更新，平日也可能晚一點才反映。",
+      "sourceUrl": "http://www.soyabus.co.jp/traffic/",
+      "sourceTitle": "運行状況｜宗谷バス株式会社",
+      "sourceQuote": "「早朝・夜間及び土休日のホームページの更新はしておりません。」「ホームページの更新は遅れることがありますので」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C119",
+      "articleExcerpt": "不想打日文電話，可以看宗谷巴士的X帳號，上面也會發布運行狀況。",
+      "sourceUrl": "http://www.soyabus.co.jp/traffic/",
+      "sourceTitle": "運行状況｜宗谷バス株式会社",
+      "sourceQuote": "「また、X（旧Twitter）でも運行状況を配信しております。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C120",
+      "articleExcerpt": "天候、路況不好時，巴士可能沒有預告就延誤或停駛，冬天還可能因為除雪臨時改走別的路線。",
+      "sourceUrl": "http://www.soyabus.co.jp/traffic/",
+      "sourceTitle": "運行状況｜宗谷バス株式会社",
+      "sourceQuote": "「天候及び道路状況により予告なく遅延・運休することがあります。」「※冬季間は天候や道路状況次第で遅延が発生する場合がございます。また道路の除雪等により急きょ運行ルートを変更する場合がございます。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C121",
+      "articleExcerpt": "預約了觀光巴士，遇到停駛時宗谷巴士會主動聯絡。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa/",
+      "sourceTitle": "よくあるご質問｜宗谷バス株式会社",
+      "sourceQuote": "「定期観光バスや都市間バスにつきましては、予約をされている方の連絡先に、当社よりご連絡を差し上げています。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C122",
+      "articleExcerpt": "地藏岩、澄海岬與群生地不開車也去得了。步道的起點與終點多半有巴士站，只是班次少，回程的車要事先排好。",
+      "sourceUrl": "https://rebun-trail.jp/momoiwaobservatorycourse/",
+      "sourceTitle": "桃岩展望台コース｜礼文島トレイルオフィシャルウェブ（WordPress REST API 讀取）",
+      "sourceQuote": "「桃岩登山口と知床にはバス停があり…本数は少ないですが」；岬めぐり「スコトン岬と浜中にはバス停があり」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C123",
+      "articleExcerpt": "禮文林道步道以外的步道從10月20日起冬季封閉，禮文瀑布步道更早，10月1日就封閉了。",
+      "sourceUrl": "https://rebun-trail.jp/%e3%83%88%e3%83%ac%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b3%e3%83%bc%e3%82%b9%e5%86%ac%e5%ad%a3%e9%96%89%e9%8e%96%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ（2026-10-21 公告）｜礼文島トレイル",
+      "sourceQuote": "「１０月２０日現在…【通行可能】・礼文林道コース【冬季閉鎖】・岬めぐりコース　・久種湖畔コース　・礼文滝コース　・礼文岳コース　・８時間コース【一部通行可】・桃岩展望台コース ※香深フェリーターミナル～桃岩展望台までは通行可能 (近道に関してはすべて通行止め)」",
+      "verdict": "outdated",
+      "notes": "2026-10-21 的最新公告：桃岩展望台步道「一部通行可」，香深渡輪站到桃岩展望台仍可通行，所以「林道以外都封閉」不對。「禮文瀑布 10/1 封閉」出自資料來源列的舊公告（WordPress 日期 2025-10-20，是 2025 年的公告），2026 年公告只寫 10/20 現在已封閉，沒寫 10/1。建議：改成「到2026年10月20日，禮文林道步道還能走，桃岩展望台步道只開放渡輪站到展望台一段，其他步道都已冬季封閉」，資料來源換成 2026-10-21 公告。"
+    },
+    {
+      "claimId": "C124",
+      "articleExcerpt": "沒車表：禮文敦盛草群生地｜禮文線②在濱中下車，走1.0公里",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-misaki-gl.jpg",
+      "sourceTitle": "岬めぐりコース 起伏図",
+      "sourceQuote": "起伏図「レブンアツモリソウ群生地」—「浜中」「1.0km 20分」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C125",
+      "articleExcerpt": "沒車表：澄海岬｜夏天搭觀光巴士A線或B線，或從濱中走巡岬步道",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
+      "sourceQuote": "礼文A・礼文B とも「スカイ岬」経由；岬めぐりコース「澄海岬を抜け、レブンアツモリソウ群生地を経由して浜中へ」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C126",
+      "articleExcerpt": "沒車表：地藏岩｜元地線坐到元地",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10387.html",
+      "sourceTitle": "地蔵岩｜HOKKAIDO LOVE!",
+      "sourceQuote": "「北海道礼文町の元地海岸にそびえる地蔵岩」；元地線終点「元地」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C127",
+      "articleExcerpt": "沒車表：桃岩登山口｜從渡輪站走1.6公里",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-momo-g.jpg",
+      "sourceTitle": "桃岩展望台コース 起伏図",
+      "sourceQuote": "「香深港フェリーターミナル」—「礼香寺前」「0.8km 20分」—「桃岩登山口」「0.8km 20分」",
+      "verdict": "verified",
+      "notes": "0.8＋0.8＝1.6km。"
+    },
+    {
+      "claimId": "C128",
+      "articleExcerpt": "沒車表：知床｜禮文線①的終點",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア｜宗谷バス株式会社",
+      "sourceQuote": "「礼文線①（香深～知床）」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C129",
+      "articleExcerpt": "沒車表：禮文林道｜禮文線②在香深井下車",
+      "sourceUrl": "https://rebun-trail.jp/forestcourse/",
+      "sourceTitle": "礼文林道コース｜礼文島トレイルオフィシャルウェブ（WordPress REST API 讀取）",
+      "sourceQuote": "「…香深井除雪センターを経て香深井までを結ぶ全長約8.2kmのコース」「香深と礼文林道元地口や香深井の区間は、路線バスを利用すると効率的です。」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C130",
+      "articleExcerpt": "沒車表：北方金絲雀公園｜夏天搭觀光巴士A線，或騎自行車約15分鐘",
+      "sourceUrl": "http://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf",
+      "sourceTitle": "フェリー到着便別日帰りプラン 滞在4時間（web.archive.org 2024-06-10 存檔）",
+      "sourceQuote": "「ターミナル8:50発(自転車)～カナリアパーク9:05着」；礼文A「～北のカナリアパーク～」",
+      "verdict": "verified",
+      "notes": "觀光協會原站連不上，讀 2024-06-10 存檔。"
+    },
+    {
+      "claimId": "C131",
+      "articleExcerpt": "沒車表：高山植物園｜觀光巴士不經過，搭計程車或租車",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
+      "sourceQuote": "礼文A「スカイ岬～スコトン岬～桃台猫台～香深FT～北のカナリアパーク」、礼文B「スカイ岬～スコトン岬」（高山植物園なし）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C132",
+      "articleExcerpt": "去禮文敦盛草群生地，搭禮文線②在濱中下車最近。群生地就在站牌往南的巡岬步道上，沿步道走1.0公里，約20分鐘。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-misaki-gl.jpg",
+      "sourceTitle": "岬めぐりコース 起伏図",
+      "sourceQuote": "「浜中」と「レブンアツモリソウ群生地」の区間「1.0km 20分」；トレイルマップ 浜中 N18 バス停の南に「レブンアツモリソウ群生地（鉄府地区）」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C133",
+      "articleExcerpt": "群生地每年5月中旬到6月中旬開園，日期隨開花狀況前後移動，免費入場。",
+      "sourceUrl": "https://rebun-trail.jp/capetourcourse/",
+      "sourceTitle": "岬めぐりコース｜礼文島トレイルオフィシャルウェブ（WordPress REST API 讀取）",
+      "sourceQuote": "「レブンアツモリソウ群生地は５月中旬から６月中旬まで開園します（その年の開花状況によって期間は前後します）。」；礼文町「料金 無料」",
+      "verdict": "verified",
+      "notes": "禮文町頁寫「５月中旬～６月上旬」，步道官網寫到 6 月中旬，兩者略有差異；正文照步道官網。"
+    },
+    {
+      "claimId": "C134",
+      "articleExcerpt": "2026年鐵府木棧道一帶是5月15日開園，8:30到17:00開放，16:30最後入場。",
+      "sourceUrl": "https://rebun-trail.jp/%e3%83%ac%e3%83%96%e3%83%b3%e3%82%a2%e3%83%84%e3%83%a2%e3%83%aa%e3%82%bd%e3%82%a6%e7%be%a4%e7%94%9f%e5%9c%b0%e3%81%ae%e9%96%8b%e5%9c%92%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6-3/",
+      "sourceTitle": "レブンアツモリソウ群生地の開園について（2026-05-11 公告）｜礼文島トレイル",
+      "sourceQuote": "「〇鉄府木道エリアおよび展望エリア 2026年５月15日（金） 開園」「〇鉄府木道エリア 8：30～17：00（16：30最終入場）」",
+      "verdict": "verified",
+      "notes": "步道官網頁面維護中（503），用該站 WordPress REST API 讀到公告原文。"
+    },
+    {
+      "claimId": "C135",
+      "articleExcerpt": "開園期間巴士走夏季班表，2027年的時刻出來後再對一次。",
+      "sourceUrl": "http://www.soyabus.co.jp/archives/8544",
+      "sourceTitle": "【礼文】【利尻】 ダイヤ改正のお知らせ | 宗谷バス株式会社",
+      "sourceQuote": "「令和８年４月２８日(火)よりダイヤ改正を実施いたします。」；礼文エリア「例年4月後半～9月が夏ダイヤ」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C136",
+      "articleExcerpt": "路線巴士沒有澄海岬這一站，也沒有它所在的西上泊。夏天搭觀光巴士就到得了，A線與B線都會停澄海岬。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 礼文線(2) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)スコトン間",
+      "sourceQuote": "礼文線(2) 運賃表の停留所に「西上泊」「澄海岬」なし（浜中、第2浜中、江戸屋、白浜、スコトン）",
+      "verdict": "verified",
+      "notes": "觀光巴士兩線都經スカイ岬（全コース一覧）。"
+    },
+    {
+      "claimId": "C137",
+      "articleExcerpt": "想用走的，就在濱中下車，沿巡岬步道經過群生地、西上泊走到澄海岬，西上泊到濱中這段是鋪面路。",
+      "sourceUrl": "https://rebun-trail.jp/capetourcourse/",
+      "sourceTitle": "岬めぐりコース｜礼文島トレイルオフィシャルウェブ（WordPress REST API 讀取）",
+      "sourceQuote": "「西上泊から浜中の区間の路面は舗装されています」；起伏図 浜中—群生地—西上泊分岐—西上泊—澄海岬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C138",
+      "articleExcerpt": "從澄海岬走回濱中約3.4公里，大約1小時30分，再從濱中搭往香深的巴士回去。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-misaki-gl.jpg",
+      "sourceTitle": "岬めぐりコース 起伏図",
+      "sourceQuote": "「0.2km 10分」「1.1km 30分」「1.1km 30分」「1.0km 20分」",
+      "verdict": "verified",
+      "notes": "0.2＋1.1＋1.1＋1.0＝3.4km；10＋30＋30＋20＝90 分，起伏圖方向（スコトン→浜中）與正文相同。"
+    },
+    {
+      "claimId": "C139",
+      "articleExcerpt": "10月20日起步道封閉，冬天觀光巴士也停駛。",
+      "sourceUrl": "https://rebun-trail.jp/%e3%83%88%e3%83%ac%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b3%e3%83%bc%e3%82%b9%e5%86%ac%e5%ad%a3%e9%96%89%e9%8e%96%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ（2026-10-21 公告）｜礼文島トレイル",
+      "sourceQuote": "「１０月２０日現在…【冬季閉鎖】・岬めぐりコース」",
+      "verdict": "verified",
+      "notes": "觀光巴士冬季不運行見全コース一覧。"
+    },
+    {
+      "claimId": "C140",
+      "articleExcerpt": "冬天去澄海岬，可以租車或搭計程車，從渡輪站開車約50分鐘。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10388.html",
+      "sourceTitle": "澄海岬｜HOKKAIDO LOVE!",
+      "sourceQuote": "「●車：香深港フェリーターミナルから約50分」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C141",
+      "articleExcerpt": "地藏岩在元地海岸，搭元地線坐到終點元地，從渡輪站單程520日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/01_rebun-motochi-line_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 元地線(1) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(新桃岩ﾄﾝﾈﾙ経由)元地間",
+      "sourceQuote": "元地列 香深ﾌｪﾘｰﾀｰﾐﾅﾙ欄「520」；HOKKAIDO LOVE!「元地海岸にそびえる地蔵岩」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C142",
+      "articleExcerpt": "冬季班表的渡輪站發車時刻，平日是7:00、8:55、11:25、15:45，假日是9:50、11:25、14:50。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "平日「フェリーターミナル発 7:00 8:55 11:25 15:45 16:52（10/31まで）」；休日「9:50 11:25 14:50」",
+      "verdict": "incorrect",
+      "notes": "條件漏寫：冬季班表 10/1～10/31 平日還有第 5 班 16:52，正文列的 4 班是 11 月 1 日起的平日時刻。建議改「11月1日起的平日是7:00、8:55、11:25、15:45」（或補「10月31日以前另有16:52」）。"
+    },
+    {
+      "claimId": "C143",
+      "articleExcerpt": "冬天從稚內當天來回，08:30到港後接得上平日8:55那班。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "平日「フェリーターミナル発 8:55」；渡輪 11/1～12/31「06:35～08:30」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C144",
+      "articleExcerpt": "回程從元地搭11:37或15:57的車，都趕得上17:05的末班船。假日就搭9:50去，11:37或15:02回。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "元地発 11:37→「フェリーターミナル着 11:47」、15:57→「16:07」；休日「9:50」、元地発「11:37」「15:02」→「11:47」「15:12」",
+      "verdict": "verified",
+      "notes": "渡輪香深末班 17:05（10/1 起都是）。"
+    },
+    {
+      "claimId": "C145",
+      "articleExcerpt": "走路也到得了，從渡輪站經過「トンネル元地口」到元地約3.0公里，走約42分鐘。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2026/08/trekking-1-pdf.jpg",
+      "sourceTitle": "礼文島トレイルマップ（発行：礼文島観光協会）",
+      "sourceQuote": "移動時間【元地方面】「トンネル元地口 2.3km / 33分」「元地 700m / 9分 Motochi / E07」",
+      "verdict": "verified",
+      "notes": "2.3＋0.7＝3.0km；33＋9＝42 分。"
+    },
+    {
+      "claimId": "C146",
+      "articleExcerpt": "觀光協會有一條全程走路的一日行程。從渡輪站走到桃台貓台約1小時，再走到瑪瑙濱約30分鐘，最後從瑪瑙濱走回渡輪站約1小時。",
+      "sourceUrl": "http://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf",
+      "sourceTitle": "フェリー到着便別日帰りプラン 滞在4時間（web.archive.org 2024-06-10 存檔）",
+      "sourceQuote": "「元地地区散策（所要時間2時間30分）」「ターミナル8:50発～桃台猫台9:50着」「桃台猫台10:00発～メノウ浜10:30着」「メノウ浜10:50発～ターミナル11:50着」",
+      "verdict": "verified",
+      "notes": "原文是「日帰りプラン」裡 2 小時 30 分的元地散策，正文「一日行程」指日歸行程，可接受。觀光協會原站連不上，讀 2024-06-10 存檔。"
+    },
+    {
+      "claimId": "C147",
+      "articleExcerpt": "桃岩展望台步道的起點是桃岩登山口，從渡輪站經禮香寺前走過去，兩段各0.8公里、各走約20分鐘。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-momo-g.jpg",
+      "sourceTitle": "桃岩展望台コース 起伏図",
+      "sourceQuote": "「香深港フェリーターミナル」「0.8km 20分」「礼香寺前」「0.8km 20分」「桃岩登山口」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C148",
+      "articleExcerpt": "有些地圖把桃岩登山口標成巴士站。不過元地線沒有這一站，車子穿過新桃岩隧道直接開到元地。從渡輪站走過去就好。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/01_rebun-motochi-line_fare.pdf",
+      "sourceTitle": "普通旅客運賃表 元地線(1) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(新桃岩ﾄﾝﾈﾙ経由)元地間",
+      "sourceQuote": "「元地線(1) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(新桃岩ﾄﾝﾈﾙ経由)元地間」停留所：香深ﾌｪﾘｰﾀｰﾐﾅﾙ、香深漁協前、神社前、元地港、元地（桃岩登山口なし）；トレイルマップ「桃岩登山口 Momoiwa Tozanguchi」バス停アイコン「E03」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C149",
+      "articleExcerpt": "步道另一端的知床是禮文線①的終點，搭回渡輪站單程340日圓，走路約4公里、1小時。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-momo-g.jpg",
+      "sourceTitle": "桃岩展望台コース 起伏図",
+      "sourceQuote": "「知床〜香深港フェリーターミナル間は約4km、歩くと1時間ほどです。」；運賃表 知床「340」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C150",
+      "articleExcerpt": "桃岩展望台步道10月20日起封閉，步道開放期間的知床班次看夏季班表。",
+      "sourceUrl": "https://rebun-trail.jp/%e3%83%88%e3%83%ac%e3%83%83%e3%82%ad%e3%83%b3%e3%82%b0%e3%82%b3%e3%83%bc%e3%82%b9%e5%86%ac%e5%ad%a3%e9%96%89%e9%8e%96%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ（2026-10-21 公告）｜礼文島トレイル",
+      "sourceQuote": "「【一部通行可】・桃岩展望台コース ※香深フェリーターミナル～桃岩展望台までは通行可能 (近道に関してはすべて通行止め)」",
+      "verdict": "outdated",
+      "notes": "2026-10-21 最新公告：桃岩展望台步道 10/20 起是「一部通行可」，渡輪站到桃岩展望台仍可走，不是全段封閉。建議改「10月20日起桃岩展望台步道只開放渡輪站到展望台一段，往知床方向已封閉」。"
+    },
+    {
+      "claimId": "C151",
+      "articleExcerpt": "禮文林道步道兩端分別是元地那一側的禮文林道元地口與香深井。香深井在禮文線②上，從渡輪站坐11分鐘，車資340日圓。",
+      "sourceUrl": "https://rebun-trail.jp/forestcourse/",
+      "sourceTitle": "礼文林道コース｜礼文島トレイルオフィシャルウェブ（WordPress REST API 讀取）",
+      "sourceQuote": "「道道元地香深線の元地側入口(礼文林道元地口)から…香深井までを結ぶ」；冬季班表 6:30→香深井 6:41；運賃表 香深井「340」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C152",
+      "articleExcerpt": "從渡輪站也可以直接走到林道上的禮文薄雪草群生地，約1小時30分。",
+      "sourceUrl": "http://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf",
+      "sourceTitle": "フェリー到着便別日帰りプラン 滞在4時間（web.archive.org 2024-06-10 存檔）",
+      "sourceQuote": "「ターミナル8:50発～ウスユキソウ群生地10:20着」",
+      "verdict": "verified",
+      "notes": "觀光協會存檔 2024-06-10。"
+    },
+    {
+      "claimId": "C153",
+      "articleExcerpt": "反過來從香深井這一端走到薄雪草群生地，約6.2公里、2小時，一路往標高約200公尺爬坡。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-rindo-gl.jpg",
+      "sourceTitle": "礼文林道コース 起伏図",
+      "sourceQuote": "「ウスユキソウ群生地」—「1.3km 30分」—「礼文滝入口」—「3.0km 1時間00分」—「宇遠内分岐」—「0.8km 10分」—「香深井除雪センター」—「1.1km 20分」—「香深井」；標高 香深井 約0m、群生地 約200m",
+      "verdict": "verified",
+      "notes": "1.1＋0.8＋3.0＋1.3＝6.2km；20＋10＋60＋30＝120 分。起伏圖時間是元地口→香深井方向（下坡），反向上坡可能更久，正文用「約」可接受。"
+    },
+    {
+      "claimId": "C154",
+      "articleExcerpt": "香深井往渡輪站的冬季班次，平日在8:19、9:29、12:34、16:36、18:09開出。假日是9:19、12:34、13:36、17:19。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "香深方面行 平日「香深井 8:19 9:29 12:34 16:36 18:33（10/1～10/31） 18:09（11/1～）」；休日「9:19 12:34 13:36 17:19」",
+      "verdict": "incorrect",
+      "notes": "條件漏寫：平日最後一班 18:09 是 11 月 1 日起，10/1～10/31 是 18:33。這段沒有「11月1日起」，禮文林道冬天仍可通行（2026-10-21 公告），10 月底去的讀者會看錯。建議改「11月1日起的平日…18:09開出（10月31日以前末班是18:33）」。"
+    },
+    {
+      "claimId": "C155",
+      "articleExcerpt": "北方金絲雀公園在觀光巴士A線的路線上，從渡輪站騎自行車約15分鐘。",
+      "sourceUrl": "http://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf",
+      "sourceTitle": "フェリー到着便別日帰りプラン 滞在4時間（web.archive.org 2024-06-10 存檔）",
+      "sourceQuote": "「ターミナル8:50発(自転車)～カナリアパーク9:05着」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C156",
+      "articleExcerpt": "觀光協會的地圖把北方金絲雀公園、高山植物園與桃台貓台的站牌標成只停接駁巴士。",
+      "sourceUrl": "http://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
+      "sourceTitle": "ぶらり礼文島MAP（web.archive.org 2026-02-15 存檔）",
+      "sourceQuote": "「北のカナリアパーク（シャトルバスのみ）」「高山植物園（シャトルバスのみ）」「桃台猫台（シャトルバスのみ）」",
+      "verdict": "verified",
+      "notes": "觀光協會原站連不上，讀 2026-02-15 存檔。"
+    },
+    {
+      "claimId": "C157",
+      "articleExcerpt": "北海道觀光機構也寫桃台貓台在6月到9月有觀光接駁巴士。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11404.html",
+      "sourceTitle": "桃台猫台｜HOKKAIDO LOVE!",
+      "sourceQuote": "「（6月-9月は、観光シャトルバス運行）」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C158",
+      "articleExcerpt": "高山植物園不在兩條觀光巴士的路線上，沒車可以搭計程車去。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
+      "sourceQuote": "礼文A・礼文B の経路に高山植物園なし",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C159",
+      "articleExcerpt": "渡輪站正面出口前有計程車招呼站，島上的計程車有礼文ハイヤー與イシドウハイヤー兩家。",
+      "sourceUrl": "http://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "礼文島フェリー到着便別モデルプラン（web.archive.org 2026-10-07 存檔）",
+      "sourceQuote": "「タクシー: 礼文ハイヤー TEL 0163-86-1320」「イシドウハイヤーTEL 0163-86-1148」；樓層圖「正面出入口」前「ハイヤー乗場」",
+      "verdict": "verified",
+      "notes": "觀光協會原站連不上，讀 2026-10-07 存檔。"
+    },
+    {
+      "claimId": "C160",
+      "articleExcerpt": "夏天另有礼文島ハイヤーサービス做香深港接送與島內觀光，也出租電動輔助自行車，10月到4月休業。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/access/detail_13228.html",
+      "sourceTitle": "礼文島ハイヤーサービス｜HOKKAIDO LOVE!",
+      "sourceQuote": "「香深港送迎や島内観光に利用できる移動サービス」「電動アシスト自転車のレンタル」「休業日 10月-4月」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C161",
+      "articleExcerpt": "業者表：計程車 礼文ハイヤー 0163-86-1320；計程車 イシドウハイヤー 0163-86-1148",
+      "sourceUrl": "http://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "礼文島フェリー到着便別モデルプラン（web.archive.org 2026-10-07 存檔）",
+      "sourceQuote": "「礼文ハイヤー TEL 0163-86-1320」「イシドウハイヤーTEL 0163-86-1148」",
+      "verdict": "verified",
+      "notes": "存檔 2026-10-07。"
+    },
+    {
+      "claimId": "C162",
+      "articleExcerpt": "業者表：接送、島內觀光、電動輔助自行車｜礼文島ハイヤーサービス｜0163-86-1990，10月到4月休業",
+      "sourceUrl": "https://www.visit-hokkaido.jp/access/detail_13228.html",
+      "sourceTitle": "礼文島ハイヤーサービス｜HOKKAIDO LOVE!",
+      "sourceQuote": "「電話番号 0163-86-1990（リゾート礼文）」「休業日 10月-4月」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C163",
+      "articleExcerpt": "業者表：租車｜トヨタレンタカー礼文店｜0163-86-1117",
+      "sourceUrl": "https://rent.toyota.co.jp/shop/?muni=01517",
+      "sourceTitle": "礼文郡礼文町のレンタカー予約【公式】トヨタレンタカーの店舗一覧",
+      "sourceQuote": "「礼文店」「電話番号：0163-86-1117」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C164",
+      "articleExcerpt": "業者表：租自行車、機車｜CAT ROCK｜090-7517-1095",
+      "sourceUrl": "http://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "礼文島フェリー到着便別モデルプラン（web.archive.org 2026-10-07 存檔）",
+      "sourceQuote": "「レンタルサイクル・バイク: CAT ROCK TEL 090-7517-1095」",
+      "verdict": "verified",
+      "notes": "存檔 2026-10-07；只有觀光協會一個來源。"
+    },
+    {
+      "claimId": "C165",
+      "articleExcerpt": "業者表：租自行車｜ホテル礼文｜0163-86-1990",
+      "sourceUrl": "http://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "礼文島フェリー到着便別モデルプラン（web.archive.org 2026-10-07 存檔）",
+      "sourceQuote": "「: ホテル礼文 TEL 0163-86-1990」（レンタルサイクル欄）",
+      "verdict": "verified",
+      "notes": "存檔 2026-10-07；HOKKAIDO LOVE! 礼文島ハイヤーサービス同號碼（リゾート礼文）。"
+    },
+    {
+      "claimId": "C166",
+      "articleExcerpt": "租車找トヨタレンタカー礼文店，從渡輪站前往左走30公尺就到。",
+      "sourceUrl": "https://rent.toyota.co.jp/shop/?muni=01517",
+      "sourceTitle": "礼文郡礼文町のレンタカー予約【公式】トヨタレンタカーの店舗一覧",
+      "sourceQuote": "「礼文町香深フェリーターミナル前を左へ徒歩30m」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C167",
+      "articleExcerpt": "4月25日到10月31日的營業時間是8:00到18:00。11月1日到12月27日與1月16日到4月24日是8:30到18:00，12月28日到1月15日休息。",
+      "sourceUrl": "https://rent.toyota.co.jp/shop/?muni=01517",
+      "sourceTitle": "礼文郡礼文町のレンタカー予約【公式】トヨタレンタカーの店舗一覧",
+      "sourceQuote": "「営業時間：8:00～18:00(4/25～10/31) / 8:30～18:00(11/1～12/27) / 8:30～18:00(1/16～4/24) 休業日：12/28～1/15」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C168",
+      "articleExcerpt": "店裡車子不多，確定要開車就早點聯絡。",
+      "sourceUrl": "http://web.archive.org/web/20260410084448/https://www.rebun-island.jp/inbound/",
+      "sourceTitle": "Inbound｜礼文島観光協会（web.archive.org 2026-04-10 存檔）",
+      "sourceQuote": "「台数は少ないのでお早目のご連絡をお心がけください。」「軽自動車1台、普通自動車5台」",
+      "verdict": "verified",
+      "notes": "觀光協會原站連不上，讀 2026-04-10 存檔。"
+    },
+    {
+      "claimId": "C169",
+      "articleExcerpt": "出租自行車與機車的CAT ROCK就在租車店隔壁，出了渡輪站正門在斜對面。",
+      "sourceUrl": "http://web.archive.org/web/20260617224255/https://www.rebun-island.jp/KYOsan/KYOsanAREKORE.html",
+      "sourceTitle": "禮文島中文介紹｜礼文島観光協会（web.archive.org 2026-06-17 存檔）",
+      "sourceQuote": "「在豐田旁邊的『Cat Rock』有提供租賃腳踏車及摩托車服務。」「從香深港渡輪站正門出去大概步行約一兩分鐘左右，就在斜對面而已。」",
+      "verdict": "verified",
+      "notes": "原文為中文；存檔 2026-06-17。"
+    },
+    {
+      "claimId": "C170",
+      "articleExcerpt": "冬天觀光巴士停駛，往須古頓的路線巴士平日也只有4班，想一天跑完北邊的岬角與西邊的地藏岩，租車最實際。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
+      "sourceTitle": "バス運行時刻表 令和8年10月1日改正（礼文線 冬ダイヤ PDF）",
+      "sourceQuote": "船泊方面行 平日 スコトン着 4便；定期観光バス「夏季限定の運行です」",
+      "verdict": "verified",
+      "notes": "編輯判斷，有班次數字支撐。"
+    },
+    {
+      "claimId": "C171",
+      "articleExcerpt": "其他交通問題可以問禮文島觀光協會（設在禮文町產業課）。電話0163-86-1001，週一到週五8:30到17:15。",
+      "sourceUrl": "http://web.archive.org/web/20261007144913/https://www.rebun-island.jp/koutsu/",
+      "sourceTitle": "交通アクセス｜礼文島観光協会（web.archive.org 2026-10-07 存檔）",
+      "sourceQuote": "「礼文島観光協会」「北海道礼文町香深村トンナイ 礼文町役場産業課内」「電話：0163-86-1001」「【開庁時間】月曜日～金曜日の8時30分～17時15分」",
+      "verdict": "verified",
+      "notes": "觀光協會原站連不上，讀 2026-10-07 存檔；禮文町官網頁尾同為 0163-86-1001、開庁時間一致（2026-10-26 直接打開）。"
+    }
+  ],
+  "summary": {
+    "verified": 166,
+    "incorrect": 2,
+    "unsupported": 0,
+    "outdated": 2,
+    "unreachable": 1,
+    "not-stated": 0
+  }
+}

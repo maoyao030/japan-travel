@@ -52,6 +52,7 @@
 | F415 | おもてなし券的販售處（旭川觀光コンベンション協會）：旭山動物園售票處、JR 旭川站東大廳的旭川観光物産情報センター、協會窗口，以及 OMO7、Art、コート、クレッセント、KOKO、トーヨー、CABIN、JR イン、WBF グランデ、ワイズ、東橫 INN 兩間等飯店。本頁 12 間裡ドーミーイン、アマネク、ルートイン兩間不在販售處名單。使用條件是住旭川市內的飯店或旅館，第一天 12 時後入園、第二天 12 時前入園，入園後不限時間。 | ①旭川市内のホテル・旅館に宿泊される方が対象となります。／旭川観光物産情報センター 旭川市宮下通9丁目 （ＪＲ旭川駅東コンコース） | https://web.archive.org/web/20260618020211/http://www.atca.jp/omotenashi/ | 2026-10-26 | 原站（atca.jp）2026-10-26 維修中，讀網頁存檔（存檔日 2026-06-18）；販售處名單只有這個來源 | price | 2026-11-25 | 寫作前補研究（「住沒在名單上的飯店，可以在車站的觀光物產情報中心或動物園售票處買」可以寫；名單細節以上線前原站能開為準） |
 | F416 | 北海道宿泊稅從 2026 年 4 月起徵收，每人每晚房價未滿 2 萬日圓 100 日圓、2 萬以上未滿 5 萬 200 日圓、5 萬以上 500 日圓；校外教學等可免稅。 | 令和8年4月から北海道宿泊税を導入しました。／2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円 | https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html | 2026-10-26 | 北海道廳稅務頁；與旭川市頁 F131 的北海道欄一致 | price | 2027-03-31 | 寫作前補研究（交叉核對 F131；給層雲峽、旭岳、東川頁連過來用） |
 | F417 | 12 間的官網都有自己的線上訂房（宿泊予約、空室検索）；ルートイン、東橫 INN、ドーミーイン的官網寫官網訂最便宜或官網訂才有的優惠。 | 当サイトからの予約が最安値（東横INN）／【公式】ドーミーイン旭川 - 最安値で宿泊予約 | https://www.toyoko-inn.com/search/detail/00173/ ；https://dormy-hotels.com/dormyinn/hotels/asahikawa/ ；https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/ | 2026-10-26 | 其他各館官網首頁都有宿泊予約或空室検索按鈕（F401～F412 的網址） | stay | 2027-10-26 | 寫作前補研究（訂房管道欄：12 間都是官網＋Trip.com＋Agoda） |
+| F418 | Trip.com 台灣站上的館名（中文名與英文名）：旭川JR飯店（Jr Inn Asahikawa）、Y飯店-旭川站前（Y’s HOTEL ASAHIKAWA EKIMAE）、KOKO HOTEL 旭川前旭川站（KOKO HOTEL Asahikawa Station）、旭川普樂美雅凱賓飯店（Premier Hotel -Cabin- Asahikawa）、旭川HOTEL AMANEK（HOTEL AMANEK Asahikawa）、露櫻飯店旭川站前一條通店（Hotel Route-Inn Asahikawa Ekimae Ichijodori）、OMO7 旭川 by 星野集團（OMO7 Asahikawa by Hoshino Resorts）、北海道旭川多美迎天然溫泉飯店（Dormy Inn Asahikawa Natural Hot Spring）、ART旭川飯店（Art Hotel Asahikawa）。ルートインGrand 與東橫 INN 兩間的個別頁本輪沒讀到館名，只看到 Trip.com 旭川清單的品牌篩選有「露櫻」「東橫INN」。 | "name":"旭川JR飯店(Jr Inn Asahikawa)"／"name":"KOKO HOTEL 旭川前旭川站","enName":"KOKO HOTEL Asahikawa Station"／{"title":"東橫INN"}／{"title":"露櫻"} | https://tw.trip.com/hotels/asahikawa-hotel-detail-2509710/ 等各館詳細頁（2509710、19572867、2509933、73296664、703477、703410、703413）；https://tw.trip.com/hotels/list?city=4280&checkin=2026-12-10&checkout=2026-12-11&adult=1&crn=1 | 2026-10-26 | 作者為「館名附訂房網站名稱」查（curl 讀頁面結構化資料的 Hotel name 與清單的 name／enName）；只當讀者搜尋用的名稱，不是事實主張 | stay | 2027-10-26 | 作者寫作時補（館名對照） |
 
 ## 寫作前缺口檢查
 
@@ -92,6 +93,7 @@
 |---|---|---|
 | 住站前走到 JR 旭川站 1～5 分，住市中心 13～15 分 | 各館官網的步行分鐘 | F401～F412 |
 | 市中心三間比站前遠約 10 分鐘路 | 13～15 分減 1～5 分 | 同上 |
+| 房價每人每晚未滿 2 萬日圓、兩人住兩晚，住宿稅合計 1,200 日圓 | 300 日圓 × 2 人 × 2 晚（作者寫作時加） | F131 |
 
 ## 查到但不寫
 
