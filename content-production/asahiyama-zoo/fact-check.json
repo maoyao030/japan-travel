@@ -1,0 +1,827 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahiyama-zoo",
+  "articleSha256": "1b22d5736947e58beb3e637009f8dbb761d831dacf9ba31fb4abd005b1171319",
+  "checker": "fact-check agent（唯讀，非作者；2026-10-26 以 curl 實際下載旭山動物園官網、旭川電氣軌道、旭川機場官網頁面與 PDF，PDF 用 PyMuPDF 轉文字並以文字座標確認時刻表欄位）",
+  "checkedAt": "2026-10-26",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "旭山動物園是日本最北的動物園，在旭川市東旭川町，用「行動展示」讓動物照天性活動，看得到牠們原本的樣子。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "sourceTitle": "旭川市の観光スポット｜旭川観光",
+      "sourceQuote": "動物たちの特長を生かした「行動展示」により，生き生きとした姿が見られる日本最北の動物園。",
+      "verdict": "verified",
+      "notes": "園長公告（d084043）也寫「日本最北の動物園として」；所在地「北海道旭川市東旭川町倉沼」見交通頁 d053767。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "1967年7月1日開園，2027年7月就滿60週年。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/2200top/d052450.html",
+      "sourceTitle": "統計・施設概要・その他資料｜旭山動物園",
+      "sourceQuote": "開園日：昭和42(1967)年7月1日",
+      "verdict": "verified",
+      "notes": "60 週年：園長公告 d084043（2026-05-13）「旭山動物園は来年7月に節目となる開園60周年を迎えます」。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "從旭川站前的6號乘車處搭旭川電氣軌道41、47號公車，大約40分鐘就到，單程大人670日圓。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "所要時間 約40分 料金 大人670円 バス会社：旭川電気軌道 路線：旭山動物園線41・47番線 乗り場：旭川駅前バスタッチの6番",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "開園時間分夏冬兩季，冬季只開10:30到15:30。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園",
+      "sourceQuote": "1/2〜4/7 10:30〜15:30 15:00／11/11〜12/29 10:30〜15:30 15:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "一年裡另有三段休園，分別在4月8日到4月下旬、11月上旬的一週，以及年底年初。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園",
+      "sourceQuote": "通常開園（2027年） 1/2〜4/7／4/29〜10/15／10/16〜11/3／11/11〜12/29",
+      "verdict": "verified",
+      "notes": "由開園表的空檔推算：4/8～4/28（2026 年到 4/30）、11/4～11/10、12/30～1/1。11/4～11/10 休園另見 d083941「令和8年11月4日（水曜日）から11月10日（火曜日）まで休園」。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "企鵝散步只在冬天積雪以後舉行。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/d054855.html",
+      "sourceTitle": "イベントスケジュールと紹介｜旭山動物園",
+      "sourceQuote": "ペンギンの散歩（冬期の積雪期のみ実施）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "門票大人目前1,000日圓，2027年4月29日起調成1,400日圓。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d084291.html",
+      "sourceTitle": "旭山動物園入園料の改定について｜旭山動物園",
+      "sourceQuote": "令和9年4月29日（木）の夏期開園から入園料を改定／大人 1,400円 1,000円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "| 日文名 | 旭山動物園 |／| 地址 | 北海道旭川市東旭川町倉沼 |",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "〒078-8205 北海道旭川市東旭川町倉沼 旭川市旭山動物園",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "| 開園時間 | 夏季9:30～17:15，10/16～11/3到16:30，冬季10:30～15:30 |",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園",
+      "sourceQuote": "4/29〜10/15 9:30〜17:15 16:00 10/16〜11/3 9:30〜16:30 16:00 11/11〜12/29 10:30〜15:30 15:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "| 休園 | 4/8～4月下旬、11/4～11/10、12/30～1/1 |",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d083941.html",
+      "sourceTitle": "令和8年度夏期開園について｜旭山動物園",
+      "sourceQuote": "※令和8年11月4日（水曜日）から11月10日（火曜日）まで休園 ※令和8年度冬期開園は11月11日（水曜日）から",
+      "verdict": "verified",
+      "notes": "4/8～4 月下旬與 12/30～1/1 由 event.html 開園表空檔推算。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "| 門票 | 大人1,000日圓，2027/4/29起1,400日圓，國中生以下免費 |",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d084291.html",
+      "sourceTitle": "旭山動物園入園料の改定について｜旭山動物園",
+      "sourceQuote": "大人 1,400円 1,000円／子供 （中学生以下） 無料 無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "| 怎麼去 | 旭川站前6號乘車處搭41、47號公車約40分鐘 |",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "所要時間 約40分／路線：旭山動物園線41・47番線 乗り場：旭川駅前バスタッチの6番",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "開園時間跟著季節換，2026年秋天到2027年底分成下面幾段。（表：2026/10/16～11/3 9:30～16:30 16:00；2026/11/11～12/29 10:30～15:30 15:00；2027/1/2～4/7 10:30～15:30 15:00；2027/4/29～10/15 9:30～17:15 16:00；2027/10/16～11/3 9:30～16:30 16:00；2027/11/11～12/29 10:30～15:30 15:00）",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園",
+      "sourceQuote": "通常開園（2026年）…10/16〜11/3 9:30〜16:30 16:00 11/11〜12/29 10:30〜15:30 15:00 通常開園（2027年） 1/2〜4/7 10:30〜15:30 15:00 4/29〜10/15 9:30〜17:15 16:00 10/16〜11/3 9:30〜16:30 16:00 11/11〜12/29 10:30〜15:30 15:00",
+      "verdict": "verified",
+      "notes": "六列每一格都和開園表一致。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "2026年11月4日到10日休園一週，11月11日起換成冬季的開園時間。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d083941.html",
+      "sourceTitle": "令和8年度夏期開園について｜旭山動物園",
+      "sourceQuote": "※令和8年11月4日（水曜日）から11月10日（火曜日）まで休園 ※令和8年度冬期開園は11月11日（水曜日）から",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "12月30日到隔年1月1日也不開。冬季和夏季之間還有一段休園，2027年是4月8日到28日，夏季從4月29日開始。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園",
+      "sourceQuote": "11/11〜12/29 10:30〜15:30／通常開園（2027年） 1/2〜4/7 10:30〜15:30 15:00 4/29〜10/15 9:30〜17:15",
+      "verdict": "verified",
+      "notes": "由開園表空檔推算；月別入園者數 PDF 也註記「冬期:11月11日-4月7日(12/30-1/1休園)」。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "如果行程剛好卡在換季或休園前後，出發前再上官網首頁看一次，首頁會寫當天的開園時間。餵食解說這些活動每天幾點，看「本日のスケジュール」那一頁。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/",
+      "sourceTitle": "旭山動物園トップページ",
+      "sourceQuote": "10 月 26 日 (月) 本日の開園時間 9:30 から 16:30 （最終入園 16:00）／イベント・ 本日のスケジュール",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "11月11日到隔年4月7日是冬季，開園時間10:30到15:30、最後入園15:00。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園",
+      "sourceQuote": "11/11〜12/29 10:30〜15:30 15:00／1/2〜4/7 10:30〜15:30 15:00",
+      "verdict": "verified",
+      "notes": "中間 12/30～1/1 休園，正文前段已寫。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "一天只開5小時，比夏季少了2小時45分。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園",
+      "sourceQuote": "5/1〜10/15 9:30〜17:15 16:00／11/11〜12/29 10:30〜15:30 15:00",
+      "verdict": "verified",
+      "notes": "重算：15:30−10:30＝5 小時；夏季 9:30～17:15＝7 小時 45 分，差 2 小時 45 分。10/16～11/3 只開到 16:30（差 2 小時），正文表格與前文已分開寫，「夏季」指 9:30～17:15 那段可接受。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "開園前最後到站的公車是9:40發、10:22到的41號，閉園後的末班車是16:10，要在旭山公園入口上車。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/zootime_2026w.pdf",
+      "sourceTitle": "旭川駅～旭山動物園 路線バス時刻表（2026年冬期開園期間）｜旭川電気軌道",
+      "sourceQuote": "41 9：40 10：22／47 9：55 10：34／47 16：10 → 16：55",
+      "verdict": "verified",
+      "notes": "第 1 輪 incorrect（「公車最早10:10到」）已刪。9:55 的 47 號 10:34 到、在開園後，10:22 是開園前最後到站。16:10 閉園後從旭山公園入口發：旭川電氣軌道時刻頁「旭山動物園の閉園時間帯および休園日（臨時休園日を除く）は旭山公園入口発着となります。」"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "嬰兒車與輪椅只在夏季免費出借，冬天帶幼兒去，推車得自己帶。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053773.html",
+      "sourceTitle": "利用案内・おやくそく｜旭山動物園",
+      "sourceQuote": "ベビーカー貸出 … 無料、各門合計70台 貸出は、夏期開園期間中に限ります。／車椅子などの貸出（無料）… 貸出は、夏期開園期間中に限ります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "冬天的夜間開園叫「雪あかりの動物園」，園內點滿冰燈籠。2027年是2月5日到7日，開到20:30，最後入園20:00。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園",
+      "sourceQuote": "特別開園（2027年） 2/5～2/7 10:30～20:30 20:00",
+      "verdict": "verified",
+      "notes": "活動內容見 d054855「雪あかりの動物園 アイスキャンドルに囲まれた園内で…午後8時半まで開園時間を延長します（入園は午後8時00分まで）」。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "2026年2月那一回，點了大約800個冰燈籠。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/2200top/d052450_d/fil/R7nenpou.pdf",
+      "sourceTitle": "令和7年度旭山動物園年報",
+      "sourceQuote": "７日から９日に「雪あかりの動物園」を実施。約８００個のアイスキャンドルが園内を優しく照らした。",
+      "verdict": "verified",
+      "notes": "年報 2 月條目；event.html 2026 年特別開園 2/7～2/9 一致。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "這三天旭川機場往動物園的78號直達車都有開。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/78_2026.11-11.pdf",
+      "sourceTitle": "78番 旭川空港・旭山動物園線 冬期｜旭川電気軌道",
+      "sourceQuote": "開園日の土日祝日のみ運行（ゆきあかりの動物園期間は毎日運行） 2026年11月11日（水）～2027年4月7日（水）の運行時刻",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "夏天盆節期間則有「夜の動物園」，2027年是8月10日到16日，開到21:00，最後入園一樣是20:00。晚上有保育員帶隊的導覽「ナイトウォッチング」，也有攤販。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/d054855.html",
+      "sourceTitle": "イベントスケジュールと紹介｜旭山動物園",
+      "sourceQuote": "夏休みのお盆時期に夜の動物園として夜9時まで（入園は午後8時まで）開園時間を延長／飼育スタッフによるガイド「ナイトウォッチング」や屋台の出店",
+      "verdict": "verified",
+      "notes": "2027 年日期見 event.html「特別開園（2027年）… 8/10〜8/16 9:30〜21:00 20:00」。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "2025年那7天來了91,008人，那一年度入園人數最多的也是8月，有208,771人。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/2200top/d052450_d/fil/R7nenpou.pdf",
+      "sourceTitle": "令和7年度旭山動物園年報",
+      "sourceQuote": "１０日から１６日に夜の動物園を開催し、期間中は91,008 人が来園した。…多くの来園者が訪れ、賑わいを見せた。",
+      "verdict": "verified",
+      "notes": "208,771 見月別入園者數 R8number.pdf「2025(R7)年度シーズン … ８月 208,771」，文字座標確認在 R7 欄，同欄 8 月最多。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "企鵝散步只在冬天積雪以後才有，原本是為了讓企鵝冬天也能活動身體，也讓遊客看看國王企鵝成群走路的樣子。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/d054855.html",
+      "sourceTitle": "イベントスケジュールと紹介｜旭山動物園",
+      "sourceQuote": "冬場のペンギン達の運動不足解消を目的として、野生ではキングペンギンが集団で海にエサをとりに行く習性を見ていただこうと実施しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "上一季從2025年12月18日開始。到了2026年3月12日，旭川市內、離動物園半徑10公里以內發生高病原性禽流感，企鵝散步就提早結束了。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/2200top/d052450_d/fil/R7nenpou.pdf",
+      "sourceTitle": "令和7年度旭山動物園年報",
+      "sourceQuote": "１８日に「ペンギンの散歩」がスタート。／１２日に当園から半径１０キロ圏内の旭川市内において、高病原性鳥インフルエンザが発生したため、ペンギンの散歩を終了した。",
+      "verdict": "verified",
+      "notes": "年報 12 月與 3 月條目（令和 7 年度＝2025/4～2026/3）。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "每年開始的日子，要看旭川什麼時候積雪。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/facilityinformation/d055082.html",
+      "sourceTitle": "ぺんぎん館｜旭山動物園",
+      "sourceQuote": "毎年雪が降り積もった時期には「ペンギンの散歩」が行われます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "幾點走、走幾場，出發前看官網首頁，當天的行程放在首頁的「イベント・本日のスケジュール」裡。到了園內，各入園門與服務中心旁的看板也會貼出當天的活動時間。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053773.html",
+      "sourceTitle": "利用案内・おやくそく｜旭山動物園",
+      "sourceQuote": "各入園門及びサポートセンター付近にて、園内で飼育スタッフによるガイド「もぐもぐタイム」「なるほどガイド」などのイベントの時間やお知らせを掲示しています。 本日のタイムスケジュールを参照",
+      "verdict": "verified",
+      "notes": "首頁確有「イベント・ 本日のスケジュール」入口（https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/ ），利用案内頁「本日のタイムスケジュールを参照」也連到這裡；每日行程由 JavaScript 載入，10 月不是散步期，未能看到企鵝散步的列。看板一句原文直接支持。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "企鵝住在2000年9月開館的ぺんぎん館，有國王、巴布亞、洪堡與跳岩四種。館內有一條360度的水中隧道，不在散步期間，也能從隧道裡看企鵝游泳。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/facilityinformation/d055082.html",
+      "sourceTitle": "ぺんぎん館｜旭山動物園",
+      "sourceQuote": "2000年9月にオープンした「ぺんぎん館」。…キングペンギン、ジェンツーペンギン、フンボルトペンギン、イワトビペンギンを飼育…360度見渡せる水中トンネル",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "門票大人1,000日圓，國中生以下免費，這個價格用到2027年4月28日。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "sourceTitle": "開園期間・入園料・チケット｜旭山動物園",
+      "sourceQuote": "大人 1,000円 … 子供 （中学生以下） 無料",
+      "verdict": "verified",
+      "notes": "4/29 起改價見 d084291「令和9年4月29日（木）の夏期開園から入園料を改定」。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "入園門有售票窗口，也可以先在網路上買票。另外7-Eleven與Lawson有賣超商票，不過網路票與超商票都只有大人一般票。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "sourceTitle": "開園期間・入園料・チケット｜旭山動物園",
+      "sourceQuote": "Webチケット・コンビニチケット事前購入（個人・通常料金1,000円のみ）／コンビニ セブンイレブン ローソン",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "如果一次買好幾張網路票，所有人要一起入園。網路票也不能走旭山三浦庭園連絡門進去。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "sourceTitle": "開園期間・入園料・チケット｜旭山動物園",
+      "sourceQuote": "入園券を複数枚購入される場合、別々に使用することはできません。…皆様一緒にご入園ください。 Webチケットは旭山三浦庭園連絡ゲートから入園できません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "搭公車去，旭川電氣軌道公車總合案內所的售票機能把公車票和門票一起買好，也有能刷信用卡的機台。來回搭乘的話，售票機的車票要買兩張。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "当社バス総合案内所に乗車券自動販売機を設置しております（往復で乗車券をご利用の場合はきっぷを2枚ご購入ください） 券売機ではバス乗車券と旭山動物園入園券を事前に購入することができます クレジット決済対応のキャッシュレス券売機もご利用いただけます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "出園後就不能再進去，園內有商店與餐廳，午餐在裡面吃就好。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053773.html",
+      "sourceTitle": "利用案内・おやくそく｜旭山動物園",
+      "sourceQuote": "再入園はできません。／民営の売店・飲食店が園内に5カ所のほか東門建物内に売店・レストランがあります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "一年內會去兩次以上，1,400日圓的年票比兩張一般票加起來的2,000日圓便宜。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "sourceTitle": "開園期間・入園料・チケット｜旭山動物園",
+      "sourceQuote": "初回入園日から 1年間 入園（入館）可能な券です。 旭山動物園パスポート 1,400円",
+      "verdict": "verified",
+      "notes": "重算 1,000×2＝2,000 > 1,400。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "手上有北海道內其他動物園、水族館同年度的年票，在售票窗口出示，可以用900日圓入園。旭川市博物館等市內設施的當年度票根也能用。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "sourceTitle": "開園期間・入園料・チケット｜旭山動物園",
+      "sourceQuote": "割引後の一般料金 900円 … 北海道内の動物園・水族館の同一年度の年間パスポートの提示によって適用される料金です。 券売窓口でのみ対応。／旭川市内対象施設の同一年度内の観覧券・入館券半券の提示…対象施設：旭川市博物館",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "住在旭川市內的旅館，可以買1,000日圓的「おもてなし券」，第一天中午以後入園，隔天中午前還能再進一次。價錢跟一般票一樣，等於多了一個上午，想分兩天看餵食解說或企鵝散步，買這張最划算。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "sourceTitle": "開園期間・入園料・チケット｜旭山動物園",
+      "sourceQuote": "おもてなし券（1泊2日券） 1,000円 入園初日正午以降から入園、翌日正午まで入園の2日連続で入園可能 旭川市内宿泊施設の宿泊利用者対象",
+      "verdict": "verified",
+      "notes": "與一般票同為 1,000 日圓，划算的判斷有數字撐。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "おもてなし券要出示住宿證明，旭川市內的飯店見旭川住宿。動物園售票窗口、旭川觀光コンベンション協會與旭川市內的飯店都買得到。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "sourceTitle": "開園期間・入園料・チケット｜旭山動物園",
+      "sourceQuote": "購入の際に宿泊を証明する書類の提示が必要／販売所一覧：旭山動物園 券売窓口 ●… 旭川観光コンベンション協会 ● … 旭川市内ホテル ○ ●",
+      "verdict": "verified",
+      "notes": "協會與飯店賣おもてなし券另由販售處 PDF 的欄位合計確認（おもてなし券欄 28 處＝1～25 號住宿＋三浦庭園＋觀光物產情報中心＋協會）。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "旭川觀光コンベンション協會經手的販售處，2026年5月1日時有28個。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849_d/fil/hotelnadohanndai.pdf",
+      "sourceTitle": "令和8年度動物園チケット販売箇所",
+      "sourceQuote": "販売箇所数 28 31 6 1 (旭川観光コンベンション協会取扱分) 令和8年5月1日時点",
+      "verdict": "verified",
+      "notes": "第 1 輪 incorrect（「一共有28個」）已改成協會經手的範圍。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "其中25家是旅館，例如OMO7旭川、JRイン旭川與東横イン。旭山三浦庭園與JR旭川站的旭川觀光物產情報中心也有賣。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849_d/fil/hotelnadohanndai.pdf",
+      "sourceTitle": "令和8年度動物園チケット販売箇所",
+      "sourceQuote": "4 星野リゾートOMO７旭川 … 10 JRイン旭川 … 18 東横INN旭川駅東口 19 東横イン旭川駅前一条通 … 25 高砂温泉 … 31 三浦庭園 32 旭川観光物産情報センター",
+      "verdict": "verified",
+      "notes": "1～25 號為住宿（含和風旅館、高砂温泉）；欄位合計確認 26～30 號（厚友會各店）不賣おもてなし券。觀光物產情報中心在 JR 旭川站：旭川觀光網站（do-hoku.com）「旭川駅東コンコースにある観光案内所」。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "2027年4月29日夏季開園起，門票大人調成1,400日圓，國中生以下一樣免費。在那之前的2027年1月2日到4月7日冬季，還是1,000日圓。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d084291.html",
+      "sourceTitle": "旭山動物園入園料の改定について｜旭山動物園",
+      "sourceQuote": "令和9年4月29日（木）の夏期開園から入園料を改定／大人 1,400円 1,000円／子供 （中学生以下） 無料 無料",
+      "verdict": "verified",
+      "notes": "2027 冬季開園 1/2～4/7 見 event.html。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "年票同一天起調成1,600日圓，4月29日以前買的年票照舊價用滿一年。打算2027年冬天和夏天都去，趕在4月28日前用1,400日圓買年票比較划算。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d084291.html",
+      "sourceTitle": "旭山動物園入園料の改定について｜旭山動物園",
+      "sourceQuote": "旭山動物園パスポート 1,600円 1,400円 1,400円／※令和9年4月29日より前に購入された動物園パスポート…最初に動物園に入園した日…から1年間、改定前の料金のままご利用いただけます。",
+      "verdict": "verified",
+      "notes": "重算：冬天 1,000＋夏天 1,400＝2,400 > 年票 1,400。2027 冬季開園到 4/7，4/8～4/28 休園，實際上是在冬季入園時買。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "動物園官網建議搭大眾運輸過去。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "旭山動物園は、環境にやさしい公共交通機関での来園を推奨しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "旭川站前的公車乘車處叫「バスタッチ」，往動物園的41、47號在6號上車。大約30分鐘一班，車程40分鐘左右。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "運行間隔 約30分 所要時間 約40分／乗り場：旭川駅前バスタッチの6番",
+      "verdict": "verified",
+      "notes": "動物園官網的概略說法；經營者時刻表上午 9:40～11:40 約 15 分一班（見 C47）。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "動物園閉園的時段與休園日，41、47號只開到旭山公園入口，不進動物園。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭山動物園の閉園時間帯および休園日（臨時休園日を除く）は旭山公園入口発着となります。",
+      "verdict": "verified",
+      "notes": "冬期 PDF 也寫「動物園休園日42番は運休、41・47番は旭山公園入口発着にて運行」。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "2026年的夏季時刻表用到11月3日，41、47號從旭川站7:40發到15:10。上午9:40到11:40大約15分鐘一班，其他時段30分鐘左右一班。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "2026年度期開園期間中の運行時刻表（ 2026年4月29日～11月3日）／41番 09:40 → 10:22 47番 09:55 → 10:34 47番 10:10 → 10:49 41番 10:25 → 11:07 41番 10:40 → 11:22 47番 10:55 → 11:34 47番 11:10 → 11:49 41番 11:25 → 12:07 41番 11:40 → 12:22",
+      "verdict": "verified",
+      "notes": "第 1 輪 incorrect 已更正。7:40、8:10、8:40、9:10 與 12:10 以後約 30 分一班，9:40～11:40 每 15 分。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "最後一班是15:10的47號，15:49到動物園。41號走4条通，車程約42到47分鐘；47號走10条通，大約39到44分鐘。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "47番 15:10 → 15:49／41番は4条通経由、47番は10条通経由です。",
+      "verdict": "verified",
+      "notes": "重算：41 號 7:40→8:27、8:40→9:27 為 47 分，9:40→10:22 等為 42 分；47 號 8:10→8:54 為 44 分，其餘 39 分。表上 41 號 14:40→15:10 只有 30 分，疑為時刻表本身的特例或誤植，不影響「約」的說法。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "42號急行35分鐘左右就到，9:35那班天天開，10:35、11:35兩班只有週末假日才開。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "42番 09:25 → 09:35 → 10:10／〇 42番 10:35 → 11:10／〇 42番 11:35 → 12:10／※〇の42番は土日祝日のみ運行",
+      "verdict": "verified",
+      "notes": "9:35→10:10＝35 分。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "回程從動物園9:40到17:40都有車，42號急行15:00那班天天開，15:30那班一樣是週末假日才有。最後一班是17:40的41號，18:28回到旭川站。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭山動物園発 … 41番 09:40 → 10:23 … 42番 15:00 → 15:30 → 15:45 … 〇 42番 15:30 → 16:00 → 16:15 … 41番 17:40 → 18:28／※〇の42番は土日祝のみ運行",
+      "verdict": "verified",
+      "notes": "時刻都對。下一句已補「到10月15日是17:15閉園，17:40的末班車要到旭山公園入口搭」，「從動物園」的範圍由下一句限定。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "到10月15日是17:15閉園，17:40的末班車要到旭山公園入口搭。10月16日到11月3日動物園16:30就閉園，閉園後的16:40、17:10與17:40三班，也是在旭山公園入口上車。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "41番 16:40 → 17:28 47番 17:10 → 17:55 41番 17:40 → 18:28／旭山動物園の閉園時間帯および休園日（臨時休園日を除く）は旭山公園入口発着となります。",
+      "verdict": "verified",
+      "notes": "第 1 輪 incorrect 已補上車地點。閉園 17:15（5/1～10/15）、16:30（10/16～11/3）見 event.html；三班時刻見同頁。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "車資單程大人670日圓、小孩340日圓，來回1,340日圓。交通IC卡只收當地的Asaca和DoCARD，全國通用的交通IC卡不能用。信用卡感應付款也可以，只是部分車輛不支援。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/zootime_2026w.pdf",
+      "sourceTitle": "旭川駅～旭山動物園 路線バス時刻表（2026年冬期開園期間）｜旭川電気軌道",
+      "sourceQuote": "運賃：大人670円小人340円 クレジットのタッチ決済が利用できます（一部使用できない車両もあり） ※使用可能なICカードはAsaca・DoCardのみです。全国交通系ICカードには対応しておりません。",
+      "verdict": "verified",
+      "notes": "夏期網頁同為「片道 大人670円 小人340円（2026年9月1日改定）（IC乗車カードはAsaca・DoCARDのみ使用できます）」；來回 670×2＝1,340。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "冬季時刻表從2026年11月11日用到2027年4月7日，41、47號從旭川站8:40發到14:10。上午9:40到11:40大約15分鐘一班，其他時段30分鐘左右一班。最後一班是14:10的47號，14:49到動物園。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/zootime_2026w.pdf",
+      "sourceTitle": "旭川駅～旭山動物園 路線バス時刻表（2026年冬期開園期間）｜旭川電気軌道",
+      "sourceQuote": "運行期間2026年11月11日（水）～2027年4月7日（水）／41 8：40 9：27 … 41 9：40 10：22 47 9：55 10：34 47 10：10 10：49 … 41 11：40 12：22 … 47 14：10 14：49",
+      "verdict": "verified",
+      "notes": "文字座標確認 41、47 的第一個時刻在「旭川駅⑥発」欄。9:40～11:40 每 15 分，8:40、9:10 與 12:10 以後每 30 分。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "第一班8:40的41號9:27就到，得在門口等到10:30開園。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/zootime_2026w.pdf",
+      "sourceTitle": "旭川駅～旭山動物園 路線バス時刻表（2026年冬期開園期間）｜旭川電気軌道",
+      "sourceQuote": "41 8：40 9：27",
+      "verdict": "verified",
+      "notes": "冬期開園 10:30（event.html）。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "9:35的42號急行也在6號乘車處上車，10:10抵達，車程最短，而且天天都有。9:40的41號10:22到，剛好趕在開園前。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/zootime_2026w.pdf",
+      "sourceTitle": "旭川駅～旭山動物園 路線バス時刻表（2026年冬期開園期間）｜旭川電気軌道",
+      "sourceQuote": "42急行 9：25 9：35 10：10／41 9：40 10：22／47 9：55 10：34",
+      "verdict": "verified",
+      "notes": "第 1 輪 incorrect（「最接近開園時間」）已刪。文字座標確認 9:35 在「旭川駅⑥発」欄（x≈159，欄頭 x≈167），42 號也在 6 號乘車；9:35→10:10 為 35 分，41、47 號約 39～47 分，車程最短成立；42 號 9:35 無〇，天天開。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "42號急行其他班次與回程的時刻與行駛日，都跟夏季一樣。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/zootime_2026w.pdf",
+      "sourceTitle": "旭川駅～旭山動物園 路線バス時刻表（2026年冬期開園期間）｜旭川電気軌道",
+      "sourceQuote": "42急行 〇10：35 〇11：10／42急行 〇11：35 〇12:10／42急行 15：00 15：30 15：45／42急行 〇15：30 〇16：00 〇16：15／〇の便は土日祝日のみ運行",
+      "verdict": "verified",
+      "notes": "和夏期網頁（10:35、11:35 週末假日；回程 15:00 每天、15:30 週末假日）一致。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "回程從動物園11:40發到16:10。15:30閉園以後的15:40、15:55與16:10三班，改在旭山公園入口上車。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭山動物園の閉園時間帯および休園日（臨時休園日を除く）は旭山公園入口発着となります。",
+      "verdict": "verified",
+      "notes": "第 1 輪 incorrect 已補上車地點。時刻見冬期 PDF（41 15：40 → 16：28、47 15：55 → 16：40、47 16：10 → 16：55）。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "最後一班是16:10的47號，16:55回到旭川站。冬季休園日42號停駛。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/zootime_2026w.pdf",
+      "sourceTitle": "旭川駅～旭山動物園 路線バス時刻表（2026年冬期開園期間）｜旭川電気軌道",
+      "sourceQuote": "47 16：10 → 16：55／動物園休園日42番は運休、41・47番は旭山公園入口発着にて運行",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "旭川機場有78號公車直達動物園，車程約35分鐘，不用預約。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川空港～旭山動物園を約35分で結ぶ直行バスです（予約不要）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "這班車只在動物園開園期間的週末與假日行駛。夏季7月25日到8月16日每天開，冬季則是雪あかりの動物園那幾天每天開。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "※夏期開園期間中（4/29～11/3）土日祝日のみ運行（7/25～8/16は毎日運行） 1日1往復",
+      "verdict": "verified",
+      "notes": "冬期 78 號 PDF：「開園日の土日祝日のみ運行（ゆきあかりの動物園期間は毎日運行）」；旭川機場公車頁同寫 7/25～8/16 毎日運行。"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "一天只有一個來回，夏冬時刻一樣。（表：旭川機場→旭山動物園 9:55 10:30；旭山動物園→旭川機場 14:55 15:30）",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/78_2026.11-11.pdf",
+      "sourceTitle": "78番 旭川空港・旭山動物園線 冬期｜旭川電気軌道",
+      "sourceQuote": "旭川空港発 旭山動物園着 旭山動物園発 旭川空港着 9:55 10:30 14:55 15:30",
+      "verdict": "verified",
+      "notes": "夏期網頁同為 09:55 10:30 14:55 15:30；動物園交通頁「1日1往復」。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "去程搭9:55，回程只有14:55這班，冬天等於要在15:30閉園前先走。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/78_2026.11-11.pdf",
+      "sourceTitle": "78番 旭川空港・旭山動物園線 冬期｜旭川電気軌道",
+      "sourceQuote": "旭山動物園発 14:55",
+      "verdict": "verified",
+      "notes": "冬期閉園 15:30（event.html），14:55 早 35 分。"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "這班車的時間沒有配合航班，車資夏季大人840日圓，冬季大人870日圓、小孩420日圓。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/78_2026.11-11.pdf",
+      "sourceTitle": "78番 旭川空港・旭山動物園線 冬期｜旭川電気軌道",
+      "sourceQuote": "料金大人８７０円 小人４２０円 （非予約制）／※ 航空機との接続便ではございません",
+      "verdict": "verified",
+      "notes": "夏期網頁「片道（運賃後払い） 大人 840円 小人 420円（2026年9月1日改定）」。"
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "機場的公車站從出入口4出去左手邊，往動物園的車在2號乘車處。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+      "sourceTitle": "旭川空港 バス｜北海道エアポート",
+      "sourceQuote": "出入口4を出て左側にバスのりばがございます。 旭川駅方面はバスのりば①、その他はバスのりば②でございます。",
+      "verdict": "verified",
+      "notes": "同頁表格旭山動物園列在②。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "平日沒有78號，從機場要先到旭川站，再轉41、47號。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+      "sourceTitle": "旭川空港 バス｜北海道エアポート",
+      "sourceQuote": "旭川駅前(直行便) 約35分／旭山動物園 約35分 … 開園期間中（4/29～11/3）土日祝日のみ運行（7/25～8/16は毎日運行）",
+      "verdict": "verified",
+      "notes": "平日不行駛（7/25～8/16 與雪あかり期間除外，前句已寫例外）。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "不開車又想從札幌一天來回，可以搭定期觀光巴士。動物園官網列了北海道中央巴士、札幌通運Club Get's、北海道アクセスネットワーク與ワンダーツアーズ四家。行程、價格和預約方式，看各家網站。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "日帰り定期観光バス 札幌市内～動物園間を運行。予約・購入方法は、各社ホームページでご確認ください。 北海道中央バス 札幌通運Club Get's 北海道アクセスネットワーク ワンダーツアーズ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "自己開車，從札幌市約152公里、2小時左右，從新千歲機場約189公里、大約2小時30分。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "札幌市～動物園 152.0km 約2時間 新千歳空港～動物園 189.0km 約2時間30分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "高速公路在旭川北交流道下，沿道道37號往旭川機場方向開約8公里，到東旭川町上兵村左轉，再開約2公里就是正門。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "旭川北ＩＣで降り、道道37号線を旭川空港方面へ左折します。 道なりに約8km進み、東旭川町上兵村（工業団地1条1丁目）…で左折し、道なりに約2km進むと、旭山動物園正門に到着します。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "停車場免費，正門約200台、東門約300台。正門與西門周邊另有免費或一天最多500日圓的民間停車場，加起來約1,100台。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "無料駐車場 … 正門 約200台 東門 約300台 … 正門・西門周辺に民間の無料・有料（上限1日500円）駐車場（合わせて約1,100台）がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "從旭川站搭計程車30分鐘左右，車資大約3,500日圓。從旭川機場出發約25分鐘。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "旭川駅～動物園（約11.3km）… 自動車 所要時間 約30分 料金 タクシー：約3,500円／旭川空港～動物園（約14.5km）… 自動車 所要時間 約25分",
+      "verdict": "verified",
+      "notes": "旭川站約 3,500 日圓只有動物園官網一個官方估計；機場金額兩官方不一致（動物園官網約 3,500、機場官網概算 5,000），正文沒寫機場金額，正確。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "從機場搭計程車，11月25日到3月31日冬季車資會加2成，最好也先預約。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/taxi/",
+      "sourceTitle": "旭川空港 タクシー｜北海道エアポート",
+      "sourceQuote": "事前予約をおすすめいたします。／冬季（11月25日～3月31日）は料金2割増",
+      "verdict": "verified",
+      "notes": "「2割増」寫在機場出發的料金概算表下，主詞是從機場出發，和正文一致。"
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "園內有30處展示設施，從1號フラミンゴ舎編到30號きりん舎。企鵝、海豹與北極熊住的ぺんぎん館、あざらし館、ほっきょくぐま館是3、4、5號。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/facilityinformation/d055315.html",
+      "sourceTitle": "施設紹介（園内マップ）｜旭山動物園",
+      "sourceQuote": "1. フラミンゴ舎 2. ととりの村 3. ぺんぎん館 4. あざらし館 5. ほっきょくぐま館 … 29. かば館 30. きりん舎",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "園區沿著山坡蓋，東門在高處，從東門進去一路都是下坡。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/2200top/d052450_d/fil/R7nenpou.pdf",
+      "sourceTitle": "令和7年度旭山動物園年報",
+      "sourceQuote": "東門から園に下る坂の途中に小型猛きん舎オープン（４月26 日）",
+      "verdict": "verified",
+      "notes": "第二來源 banzokubiology「園内は山の斜面に沿って作られているため、東門から入園すると、緩やかな下り坂を進みながら効率的に回れます」；研究記錄另列 MATCHA。「一路都是下坡」比原文的「緩やかな下り坂」略強，可接受。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "東門到くもざる・かぴばら館之間有免費接駁小巴，全年大約10分鐘一班，可以省點爬坡的腳力。天氣不好時，接駁小巴可能會停。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053773.html",
+      "sourceTitle": "利用案内・おやくそく｜旭山動物園",
+      "sourceQuote": "東門～くもざる・かぴばら館シャトルバス（マイクロバス） 約10分間隔で通年運行、乗車無料 天候の状況により運行を中止することがあります",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "門口已經不放紙本導覽冊，改成用手機看的園內地圖，有繁體中文版，想要紙本地圖可以另外索取。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053783.html",
+      "sourceTitle": "園内マップ｜旭山動物園",
+      "sourceQuote": "希望する方にのみ配布する紙の園内マップ／言語を選択してご覧ください 日本語 English 簡体字 繁体字",
+      "verdict": "verified",
+      "notes": "紙本停止見 d083941「園内パンフレットの紙配布および設置は終了し、スマートフォン等でご覧いただける園内マップへ移行」。"
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "保育員邊餵食邊解說的「もぐもぐタイム」和解說「なるほどガイド」每天都有。週日與假日13:30，另有主題每次不同的「ワンポイントガイド」。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/d054855.html",
+      "sourceTitle": "イベントスケジュールと紹介｜旭山動物園",
+      "sourceQuote": "もぐもぐタイム・なるほどガイド（毎日もしくは随時）…飼育スタッフが動物にエサを与えながら、特徴ある行動について解説／毎週日曜・祝日に13時30分から…動物・テーマは毎回変わります。",
+      "verdict": "verified",
+      "notes": "原文是「毎日もしくは随時」。"
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "各館當天的時間貼在入園門旁的看板，照時間排路線，一天能多看幾場。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053773.html",
+      "sourceTitle": "利用案内・おやくそく｜旭山動物園",
+      "sourceQuote": "各入園門及びサポートセンター付近にて、…「もぐもぐタイム」「なるほどガイド」などのイベントの時間やお知らせを掲示しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "帶小孩可以排こども牧場，每天都有動物互動時間，夏天在室外、冬天在室內摸兔子和天竺鼠。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/d054855.html",
+      "sourceTitle": "イベントスケジュールと紹介｜旭山動物園",
+      "sourceQuote": "毎日実施している動物ふれあいの時間では、夏期は屋外で、冬期は屋内でウサギやモルモットをさわることができます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "正門、西門、東門都有投幣置物櫃，一次400或500日圓，放得下行李箱的是500日圓那種。正門的置物櫃可以刷卡。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053773.html",
+      "sourceTitle": "利用案内・おやくそく｜旭山動物園",
+      "sourceQuote": "正門（キャッシュレス決済対応） H86×W42×D60(キャリーバッグ用)、56個口、1回500円 H60×W42×D60、36個口、1回400円 西門 … 東門 …",
+      "verdict": "verified",
+      "notes": "西門、東門也是 400／500 日圓，行李箱用（キャリーバッグ用）皆 500 日圓。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "雨傘可以免費借，共有800支。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053773.html",
+      "sourceTitle": "利用案内・おやくそく｜旭山動物園",
+      "sourceQuote": "雨傘の貸出（無料） 800本 各門改札口で貸し出し。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "吃飯可以到東門2樓的カムイチカプ，或あざらし館2樓的中央食堂。東門建築以外，園內共有5處民營的商店與餐廳。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053773.html",
+      "sourceTitle": "利用案内・おやくそく｜旭山動物園",
+      "sourceQuote": "民営の売店・飲食店が園内に5カ所のほか東門建物内に売店・レストランがあります。",
+      "verdict": "verified",
+      "notes": "第 1 輪 incorrect（「另外還有5家」）已改。店名與位置見 p008636（カムイチカプ 場所：東門2階；旭山動物園中央食堂 場所：あざらし館2階）。"
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "靠公車進出旭山動物園，冬天平常最多能逛10:30開園到15:30閉園這5小時，夏季平常可以從9:30待到17:15，10月16日以後到16:30。園內有30處展示設施，沿著山坡從高處的東門一路往下走。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園",
+      "sourceQuote": "通常開園（2027年） 1/2〜4/7 10:30〜15:30 15:00 4/29〜10/15 9:30〜17:15 16:00 10/16〜11/3 9:30〜16:30 16:00 11/11〜12/29 10:30〜15:30 15:00",
+      "verdict": "verified",
+      "notes": "第 3 輪 incorrect（「冬天最多」沒排除雪あかり期間）已加「平常」，對應開園表的「通常開園」，特別開園（2/5～2/7、8/10～8/16）不在範圍內。公車不會再縮短停留：冬季第一班 9:27 到（開園前），閉園後 15:40～16:10 從旭山公園入口發；夏季第一班 8:27 到，17:15 閉園後還有 17:40，10/16 以後 16:30 閉園後還有三班（旭川電氣軌道時刻頁與冬期 PDF）。30 處見 d055315；東門在高處往下見 R7nenpou.pdf「東門から園に下る坂」與 banzokubiology。"
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "冬天搭9:35的42號急行10:10抵達，可以一路逛到15:30閉園，回程最晚是16:10從旭山公園入口發的末班車。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/zootime_2026w.pdf",
+      "sourceTitle": "旭川駅～旭山動物園 路線バス時刻表（2026年冬期開園期間）｜旭川電気軌道",
+      "sourceQuote": "42急行 9：25 9：35 10：10／41 15：40 → 16：28 … 47 16：10 → 16：55",
+      "verdict": "verified",
+      "notes": "時刻見冬期 PDF；閉園後從旭山公園入口發見旭川電氣軌道時刻頁 F23。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "夏季到10月15日開得比較久，旭川站7:40就有車。想剛好趕上9:30開園，搭8:40的41號，9:27到。17:15閉園以後，還有17:40的末班車。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "41番 07:40 → 08:27／41番 08:40 → 09:27／41番 17:40 → 18:28",
+      "verdict": "verified",
+      "notes": "開園 9:30、閉園 17:15（event.html）。17:40 在旭山公園入口上車，同頁「公車班次與車資」一節已寫，這裡沒重複，可接受。"
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "動物園旁的旭山公園是一片天然林，春天有櫻花與片栗花，秋天看紅葉。冬天可以穿雪鞋找野生動物的足跡，也看得到蝦夷松鼠和野鳥。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "sourceTitle": "旭川市の観光スポット｜旭川観光",
+      "sourceQuote": "旭山動物園に隣接する風致公園で，春には桜やカタクリ，エゾエンゴサクなどの野花が咲きほこり，秋は紅葉に彩られる美しい天然林の中，散策やハイキングを楽しめます。冬にはスノーシューを履いて野生動物の足跡を辿ったり，エゾリスや野鳥を観察したりするのもおすすめです。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "拉麵村離動物園開車約 15 分鐘，見旭川美食。",
+      "sourceUrl": "https://www.ramenmura.com/access.html",
+      "sourceTitle": "アクセス - あさひかわラーメン村",
+      "sourceQuote": "自動車の場合 … 旭山動物園より15分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "2026年那一回，旭川電氣軌道的路線公車也延長了行駛時間。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/700/723/729/d083354_d/fil/0205-02.pdf",
+      "sourceTitle": "旭川市報道依頼 旭山動物園「雪あかりの動物園」実施について（2026年2月5日）",
+      "sourceQuote": "10 路線バス 期間中において路線バス（旭川電気軌道）の運行時間が延長",
+      "verdict": "verified",
+      "notes": "2026/2/7～2/9 實施概要第 3 頁。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "當時15:00以後入園、15:30以後出園，只能走正門與西門。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/700/723/729/d083354_d/fil/0205-02.pdf",
+      "sourceTitle": "旭川市報道依頼 旭山動物園「雪あかりの動物園」実施について（2026年2月5日）",
+      "sourceQuote": "入 退 園　 15:00以降の入園と15:30以降の退園については、正門及び西門のみとさせていただきます。",
+      "verdict": "verified",
+      "notes": "2026 年雪あかり期間的規定；正文已加「當時」，限定在 2026 年那一回，條件一致。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "夜間開園的回程班次，出發前到旭川電氣軌道官網確認。搭不上公車時，旭川站和動物園之間搭計程車30分鐘左右，大約3,500日圓。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "旭川駅～動物園（約11.3km）… 自動車 所要時間 約30分 料金 タクシー：約3,500円",
+      "verdict": "verified",
+      "notes": "動物園官網估計值；夜間是否加成沒有官方資料，正文沒寫。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "閉園以後回旭川站，要走到這一站上車，站牌上的日文是「旭山公園入口」，出園時可以問正門的工作人員怎麼走。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭山動物園の閉園時間帯および休園日（臨時休園日を除く）は旭山公園入口発着となります。",
+      "verdict": "verified",
+      "notes": "站名照經營者原文。「問正門的工作人員」：利用案内頁（https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053773.html）寫各門改札口有工作人員（「各門改札スタッフにお声かけください」「各門改札口で貸し出し」），雪あかり實施概要也寫委託業者負責「園内管理及び案内業務及び売改札」，所以正門有工作人員有官方依據；閉園後是否還留人沒寫明，這句是寫給讀者能做的事，不是事實主張，可以保留。站與正門的距離仍無官方資料，正文沒寫，正確。"
+    }
+  ],
+  "summary": {
+    "verified": 90,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
