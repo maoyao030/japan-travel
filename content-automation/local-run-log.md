@@ -4,16 +4,16 @@
 
 ## 最新一輪
 
-- 台北時間：2026-10-25 10:44 開始，11:00 結束（排定工作自動執行）
+- 台北時間：2026-10-25 13:44 開始，14:00 結束（排定工作自動執行）
 - 文章：無（寫作**略過**：稚內群已全部寫完或停放，停放 4 篇待人工處理）
-- 上傳：**`wakkanai`、`rebun-island-stay` 已上線**。`wakkanai` 掛成稚內 Hub 入口文章；新建禮文島 Hub，`rebun-island-stay` 上線後開放 Hub 索引；補內連 5 個（link 1、3、6、10、11，都是「稚內值得去嗎」連到 `/places/wakkanai/`）；CI 與 `npm test` 通過後推 `main`
-- `rebun-island-transport` 不上傳：是 2026-10-20 人工流程的舊稿，缺 `publication.json`，`local-article-gates.mjs` 跑不過，加進「上傳停放」
-- D1 第一次讀取回 7403（登入失效），隔幾秒重試就正常，之後全部正常
-- 開始時確認 `/places/wakkanai/food/`、`/places/cape-soya/` 都是 200
-- 用量：5 小時額度 16% → 18%；每週額度 55% → 55%
-- commit：上線封包 `dc3bd90`（已推 `main`），本紀錄見 `git log`
-- 下一輪預期文章：寫作仍會略過；下一輪預期上傳：`rebun-island-hiking`、`rebun-island-sights`
-- 下一輪開始時確認 `/places/wakkanai/`、`/places/rebun-island/stay/` 是 200
+- 上傳：**`rebun-island-hiking`、`rebun-island-sights` 已上線**（都是 `parent-direct-article`，禮文島 Hub 已開放索引，不用再放 Hub）；`rebun-island-sights` 上線前接好連到 `/places/rebun-island/hiking/` 的內連；兩次 CI 與 `npm test` 都通過後推 `main`
+- 補內連：`ops-links.mjs ready` 是空的，這輪沒有要補的
+- 兩個封面由選圖子代理同時選（只選圖），裁切後親自看過
+- 開始時確認 `/places/wakkanai/`、`/places/rebun-island/stay/` 都是 200
+- 用量：5 小時額度 4% → 6%；每週額度 55% → 56%
+- commit：上線封包 `c963a0d`（已推 `main`），本紀錄見 `git log`
+- 下一輪預期文章：寫作仍會略過；下一輪預期上傳：`rebun-island-food`、`rishiri-island-hiking`
+- 下一輪開始時確認 `/places/rebun-island/hiking/`、`/places/rebun-island/sights/` 是 200
 
 ## 停放
 
@@ -28,6 +28,8 @@
 
 | 台北時間 | 文章 ID | 結果 | 網址 | 停在哪一點與原因 | 封面來源與授權 |
 |---|---|---|---|---|---|
+| 2026-10-25 13:54（自動） | rebun-island-sights | 已上線 | https://offpathnotes.com/places/rebun-island/sights/ | — | 維基共享資源 Rebun 20140725 110632.jpg（澄海岬），Ka23 13，CC BY-SA 4.0 |
+| 2026-10-25 13:50（自動） | rebun-island-hiking | 已上線 | https://offpathnotes.com/places/rebun-island/hiking/ | — | 維基共享資源 Rebun island (52357580650).jpg，Raita Futo，CC BY 2.0 |
 | 2026-10-25 10:55（自動） | rebun-island-stay | 已上線 | https://offpathnotes.com/places/rebun-island/stay/ | —（先新建禮文島 Hub，上線後開放 Hub 索引） | 維基共享資源 Rebun's Momoiwa (52357581315).jpg，Raita Futo，CC BY 2.0 |
 | 2026-10-25 10:50（自動） | wakkanai | 已上線 | https://offpathnotes.com/places/wakkanai/ | —（掛成稚內 Hub 入口文章） | 維基共享資源 Wakkanai_harbor.JPG，100yen，CC BY-SA 3.0 |
 | 2026-10-25 10:46（自動） | rebun-island-transport | 上傳停放 | — | 第 2 點挑文章：缺 `publication.json`，gates 不過 | — |
@@ -47,6 +49,7 @@
 
 | 台北時間 | 文章 ID | 結果 | 事實查核輪數 | 5 小時額度變化 | 待同步的事實 |
 |---|---|---|---|---|---|
+| 2026-10-25 14:00（自動） | — | 略過（稚內群已全部寫完） | — | 4% → 6% | 無；上傳 rebun-island-hiking、rebun-island-sights |
 | 2026-10-25 11:00（自動） | — | 略過（稚內群已全部寫完） | — | 16% → 18% | 無；上傳 wakkanai、rebun-island-stay |
 | 2026-10-25 07:50（自動） | rishiri-island | 完成 | 2 | 0% → 13% | 利尻島新增 F185～F194（稚內⇄鴛泊各季船班、鴛泊⇄香深與沓形⇄香深船班、臨時船最多 2 班、觀光巴士 A 路線 5 月 8:35／11:45、往機場空港巴士只有沓形 13:15、路線巴士 B 13:00 鴛泊→13:20 機場→13:40 沓形；與其他利尻島文章撞號，同步時重編）、更正 F5（鴛泊航線 45 分）、F16（A 路線起點利尻營業所）、F18（環島 1 小時 45 分～2 小時 16 分）、F82（全年營業 13 家）；觀光協會登山頁攜帶式廁所仍寫 400 圓；ANA 時刻待改對官網；譯名待同步（姬沼、Otatomari沼、Peshi岬、Kamui Terrace、利尻雛罌粟）；上傳 wakkanai-food、cape-soya |
 | 2026-10-25 06:00（自動） | rishiri-island-festival | 停放 | 2 | 13% → 24% | 利尻島新增 F185～F191（鴛泊會場每年 8/3、2024 與 2026 煙火 8/4、2026 鬼脇節目表、夏季末班巴士、Heartland Ferry 香深–沓形與鴛泊末班；與其他利尻島文章撞號，同步時重編）、更正 F150（北見冨士神社在沓形）、F153、F155、F156（雨延日）、F162（利尻富士町港內）；譯名待同步（北海島祭、利尻浮島祭、港口啤酒花園、海膽祭等；馬拉松日文名兩種寫法）；上傳因 wrangler 登入失效沒做 |
