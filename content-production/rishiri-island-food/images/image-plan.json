@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-food",
+  "articleTitle": "利尻島美食，海膽產季與哪裡吃",
+  "targetUrl": "/places/rishiri-island/food/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-25",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island-food/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-25",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是利尻島的海產與食材；利尻昆布是正文的兩個主角之一，也是味楽拉麵湯頭的來源。",
+      "mustShow": ["能確定在利尻島拍的海產或食材（海膽、海膽丼或利尻昆布）"],
+      "mustNotShow": ["可辨識的人物臉部", "其他產地的海膽丼或昆布冒充利尻島", "單一店家的招牌或店內料理當主體（會讓人以為是某家店的實景或本站推薦）", "AI 生成或合成畫面", "本站其他頁已用的封面（Grilled_Fish_HokkeChanChanYaki.jpg、Takoshabu.jpg、稚内ラーメン (4932167075).jpg 等）"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Rishiri_046_30092006.JPG",
+        "focalPoint": {"x": 0.5, "y": 0.68},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Dmitry Petelin 2006 年 9 月 30 日在利尻島拍的路邊曬昆布（檔案頁說明 Drying seeweeds on a wayside at the Rishiri Island, Japan，座標 45°11′55″N 141°8′39″E，在利尻町沓形一帶；分類 Kombu、Rishiri, Hokkaido、Drying edible seaweed）。一整片昆布用繩子壓著鋪在路邊曬，後面是漁家的黑色小屋，能確定是利尻島本地的利尻昆布，呼應正文「利尻昆布」一節與味楽拉麵的昆布湯頭，也沒有人物或店家招牌。原圖是直式 1920×2560，裁成 16:9 後寬 1920 px、高 1080 px，取畫面下半部整片昆布與壓繩，後面的漁家小屋大多被裁掉。海膽與海膽丼找過，但維基共享資源沒有能確定在利尻島拍的；積丹、南三陸、浅虫等地的海膽丼會讓人誤以為是利尻島的料理，不用。利尻昆布的其他照片：JapaneseRishiriKombu1、2 是禮文島香深產的利尻昆布，不是利尻島；利尻昆布? (50179561397) 說明是坂の下海水浴場的漂流昆布，地點無法確定在利尻島；Marie-Sophie Mejan 1985 年的北海道曬昆布地點不明。所以只保留一張候選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-25",
+        "photoSearchNotes": "用維基共享資源 API 查關鍵字「Rishiri food」「Rishiri ramen」「味楽 利尻」「利尻 丼」「Rishiri uni」「Rishiri sea urchin」「うに丼 利尻」「利尻昆布」「Rishiri kombu」「バフンウニ」「Ezo bafun uni」「Strongylocentrotus intermedius」，並列出分類 Uni-don、Kombu、Rishiri Island、Rishiri, Hokkaido、Rishirifuji, Hokkaido 的檔案。能確定在利尻島拍的食材照片只有這張曬昆布；海膽丼都在其他產地。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rishiri_046_30092006.JPG",
+          "creatorName": "Dmitry Petelin",
+          "sourceTitle": "File:Rishiri 046 30092006.JPG",
+          "sourceDescription": "Drying seeweeds on a wayside at the Rishiri Island, Japan.（作者自己上傳，座標 45°11′55″N 141°8′39″E；授權 PD-self，作者自行將作品釋出為公有領域）",
+          "takenAt": "2006-09-30",
+          "width": 1920,
+          "height": 2560,
+          "licenseName": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "exact",
+          "matchLimits": "2006 年 9 月拍的，只表現利尻島路邊曬昆布的樣子；不代表每年都在同一個地方曬，也不是海膽。",
+          "whyItFits": "檔案頁寫明在利尻島拍、座標在沓形一帶，畫面是一整片用繩子壓著曬的昆布，就是正文說的利尻昆布。",
+          "altDraft": "利尻島路邊的水泥地上，一整片用繩子壓著曬的昆布",
+          "captionDraft": "利尻島路邊曬的昆布（2006 年 9 月）。",
+          "creditDraft": "照片：Dmitry Petelin／Wikimedia Commons／Public domain",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "漁家小屋與住宅外牆，不是店家",
+            "risk": "low",
+            "notes": "沒有人物、招牌或店名；原圖後方是一般漁家小屋，裁切後只剩昆布、壓繩與路面。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

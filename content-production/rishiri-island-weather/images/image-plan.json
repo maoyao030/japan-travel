@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-weather",
+  "articleTitle": "利尻島天氣，各月氣溫與冬季停航",
+  "targetUrl": "/places/rishiri-island/weather/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-25",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island-weather/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-25",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼感受到利尻島的天候：利尻山被雲包住、山上還留著殘雪，呼應這篇「夏天涼、冬天長、山麓到初夏還有殘雪」的主軸。",
+      "mustShow": ["利尻山（看得出是利尻島）", "雲或殘雪等能表現天候、季節的元素"],
+      "mustNotShow": ["可辨識的人物臉部", "其他山或島嶼冒充利尻山", "AI 生成或合成畫面", "暗示是特定日期的天氣實況或預報", "本站其他頁已用的封面（130726_Oshidomari_Port_in_Rishiri_Island_Hokkaido_Japan08n.jpg、姫沼からの利尻山.jpg、Mt._Rishiri_summit_(52357470229).jpg、Rebun 系列與 Raita Futo 的禮文島照片）"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mt_Rishiri.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.4},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Japanexperterna.se 2013 年 6 月 14 日拍的利尻山（檔案頁說明「利尻山」，分類 Remote views of Mount Rishiri、June 2013 in Hokkaido）：山頂被雲包住，山稜還有一條條殘雪，前景是島上的針葉林。6 月中旬山上仍有雪、山頂常有雲，正好表現正文說的「夏天涼」「山麓留著殘雪」與利尻山頂的低溫，又沒有人物、招牌。原圖 5184×3456（3:2），裁 16:9 只切掉下方一點森林，山頂與雲都保留。cover-02 是 Furiko7e 2012 年 6 月從飛往稚內的飛機上拍的利尻島全景，山頂有雲帽與殘雪，也很有天候感，但是空拍視角加上下方大片北海道本島陸地，容易被讀成從本島看的風景，列為備選。另外看過 Searobin 2006 年 5 月從遠別町拍的白雪利尻山（前景是本島的工廠與堤防，不是島上）、snotch 2010 年（已被其他頁列為候選）、Emmanuel Eragne 2016 年的黃昏剪影、Douglas P Perkins、Suicasmo 2014 年從禮文島看利尻山等，前景不是利尻島或天候感較弱，不選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-25",
+        "photoSearchNotes": "用維基共享資源 API 查關鍵字「Rishiri snow」「Rishiri winter」「利尻 冬」，並列出分類 Rishiri Island、Mount Rishiri、Remote views of Mount Rishiri、Views from Mount Rishiri、Rishiri, Hokkaido、Rishirifuji, Hokkaido、Otatomari Pond、Port of Kutsugata 的檔案與尺寸，看過約 12 張候選的縮圖。維基共享資源沒有利尻島冬季在島上拍的雪景；有合格實拍表現殘雪與雲，所以沒有再查免費圖庫與觀光協會素材。指示排除的封面都沒有用。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Mt_Rishiri.jpg",
+          "creatorName": "Japanexperterna.se",
+          "sourceTitle": "File:Mt Rishiri.jpg",
+          "sourceDescription": "利尻山（作者自己上傳，Own work；分類 Remote views of Mount Rishiri、June 2013 in Hokkaido；授權 CC BY-SA 3.0）",
+          "takenAt": "2013-06-14",
+          "width": 5184,
+          "height": 3456,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "2013 年 6 月中旬某一天的天氣，只表現利尻島初夏山上留雪、山頂有雲的樣子，不代表任何一年、任何一天的實際天氣；檔案頁沒有寫拍攝位置，只能確定是利尻山。",
+          "whyItFits": "利尻山頂被雲包住、山稜留著殘雪，前景是島上的森林，一張圖同時傳達利尻島夏天也涼、山上天候多變。",
+          "altDraft": "6 月的利尻山，山頂被雲包住，山稜還留著一條條殘雪，山腳是綠色的針葉林",
+          "captionDraft": "6 月中旬的利尻山，山上還留著殘雪（2013 年 6 月）。",
+          "creditDraft": "照片：Japanexperterna.se／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "只有山、雲與森林，沒有人物、招牌或建物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rishiri_island1.JPG",
+          "creatorName": "Furiko7e",
+          "sourceTitle": "File:Rishiri island1.JPG",
+          "sourceDescription": "利尻島（稚内空港行き航空機より）（作者自己上傳；分類 Rishiri Island、Aerial photographs of Hokkaido；授權 CC BY-SA 3.0）",
+          "takenAt": "2012-06-11",
+          "width": 4416,
+          "height": 3312,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "從飛往稚內的飛機上拍，前景是北海道本島的陸地，不是島上；只表現 6 月利尻山的雲帽與殘雪。",
+          "whyItFits": "整座利尻島浮在海上，山頂有一圈雲、山上有殘雪，看得出島上天候。",
+          "altDraft": "從飛機上看到的利尻島，利尻山頂圍著一圈雲，山上還有殘雪",
+          "captionDraft": "從飛往稚內的飛機上看利尻島（2012 年 6 月）。",
+          "creditDraft": "照片：Furiko7e／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "空拍風景，沒有人物、招牌或可辨識建物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
