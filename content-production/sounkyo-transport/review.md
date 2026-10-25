@@ -2,7 +2,7 @@
 
 - 文章：層雲峽交通（`/places/sounkyo/transport/`，aspect-page，地點 `sounkyo`，旭川・大雪群）
 - 日期：2026-10-26（人工 session，Darren 要求今天持續寫作；旭川・大雪群大綱 Darren 同意做好就寫）
-- 稿件 SHA-256（LF）：`fe713512f8c30342bdef4a0f2b8f2ab36d2bac5aeaad87edc2e848b15ffff185`
+- 稿件 SHA-256（LF）：`4f47a9804b3138dfe38402b58224ad30a44bde2269e15fb836bd9aede7586931`
 - 規則：`content-automation/local-writer.md` 第 2～4 步，大綱 `content-planning/hokkaido/hokkaido-asahikawa-outline.json`
 
 ## 結果
@@ -30,7 +30,7 @@
 | 標題檢查 | 另一個子代理（Opus 5.5） |
 | 事實查核 | 另一個子代理（Opus 5.5），唯讀 |
 | 讀者驗收 | 另一個子代理（Opus 5.5），唯讀 |
-| 協調者 | 人工 session 主代理（Opus 5.5）；讀者最終判定後照查核建議直接改兩句（林道關閘主詞、瀧見台去掉沒有來源的「銀河、流星瀑布一帶」），請查核者複查 |
+| 協調者 | 人工 session 主代理（Opus 5.5）；讀者最終判定後照查核建議直接改兩句（林道關閘主詞、瀧見台去掉沒有來源的「銀河、流星瀑布一帶」）；定稿檢查擋下整句日文按鈕文字，改成只引「受付用チケット」，請查核者複查 |
 
 ## 經過
 
@@ -44,7 +44,7 @@
 | 事實查核第 1 輪 | 85 項，incorrect 1（C42 機場巴士主詞）、unsupported 1（C53 隔年 6 月開放） |
 | 讀者驗收 | 第一階段 revise 必修 6；第二階段最終必修 10 |
 | 作者驗收後第 1 輪 | 10 條必修處理，補研究 F211～F220（層雲峽端下車處、サンライズ號只能下車、紅葉期林道管制、網路票按鈕對照、計程車公司） |
-| 事實查核第 2、3 輪 | 93 項全部 verified |
+| 事實查核第 2～4 輪 | 93 項全部 verified |
 | 讀者最終 | acceptable，剩餘必修 0 |
 
 ## 查不到所以正文沒寫的
