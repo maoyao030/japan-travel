@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-stay",
+  "articleTitle": "利尻島住宿，怎麼選區與冬季休館",
+  "targetUrl": "/places/rishiri-island/stay/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-25",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island-stay/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-25",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是住在利尻島的港町：鴛泊港邊的漁港、民宿與旅館所在的街區。",
+      "mustShow": ["鴛泊或沓形的港口與港邊街區（看得出住宿就在港町裡）"],
+      "mustNotShow": ["可辨識的人物臉部", "單一旅館的外觀或招牌當畫面主體（會讓人以為是某間旅館的實景或本站推薦）", "其他島嶼或港口冒充利尻島", "AI 生成或合成畫面", "本站其他頁已用的封面（Mt. Rishiri summit (52357470229).jpg、Rebun island (52357580650).jpg、Rebun's Momoiwa (52357581315).jpg、鴛泊港からの利尻山.jpg）"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/130726_Oshidomari_Port_in_Rishiri_Island_Hokkaido_Japan08n.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.55},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 663highland 2013 年 7 月 26 日在鴛泊港拍的（檔案頁說明 Oshidomari Port in Rishiri Island，座標 45.243715, 141.227267，就在鴛泊港內）：前景是停在碼頭的漁船，中間是紅屋頂的黃色漁業倉庫與一排小型漁船，右邊是港邊的民宿，背景是正文提到的鴛泊港旁ペシ岬。ペシ岬的形狀很好認，能證明是利尻島鴛泊，也呼應正文「從渡輪站走路幾分鐘就到的港邊小旅館」與「不登山的早上走上ペシ岬」。右側有一家民宿招牌（ペンションみさき，正文沒有提到）與利尻マリンホテル的建物邊緣，但都在畫面邊上、不是主體，不會被看成某間旅館的實景。原圖 4912×3264（3:2），裁 16:9 只切掉上方天空與下方碼頭一小段，ペシ岬山頂與漁船都保留。cover-02 是同一位作者同一天從港內看ペシ岬與港邊街區，構圖更完整，但畫面正中央是利尻マリンホテル的建物與招牌，容易被讀成這間旅館的形象照，所以列為備選。663highland 同系列的 At Oshidomari 02n（國立公園解說牌與ペシ岬）前景有大面積解說牌、交通標誌與施工圍欄，不選；05n、07n 是單一旅館外觀，不選。沓形港的照片只找到 1024 px 的舊照、渡輪與沓形渡輪站，都不夠寬或是交通主題。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-25",
+        "photoSearchNotes": "用維基共享資源 API 查關鍵字「Kutsugata」「Oshidomari」，並列出分類 Port of Kutsugata、Oshidomari Port、Buildings in Rishirifuji, Hokkaido、Rishiri, Hokkaido、Rishirifuji, Hokkaido 的檔案。看過的縮圖：663highland 2013-07-26 的 At Oshidomari 系列 01n～15n 與 Oshidomari Port 系列 01s3～09n（CC BY 2.5／CC BY-SA 3.0／GFDL 多重授權）、Kutsugata ferry terminal.jpg（ブルーノ・プラス，CC BY-SA 4.0，渡輪站主題）、Kutsugata port.jpg 與 Kutsugata port 2004-08-24.jpg（Snap55，1024×768，太小）、Kutsugata-port-with-Nipponmaru.jpg（1600×1066，以帆船為主）、FeeleaseSoya in KutsugataPort Rishiri JUL2014.jpg（渡輪主題）、Oshidomari Port, Rishirifuji... .jpg（OKJaguar，渡輪港鳥瞰，已是交通頁候選）、Rishiri Green hill 2011.JPG（單一住宿外觀）。指示排除的封面與交通頁封面都沒有用。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:130726_Oshidomari_Port_in_Rishiri_Island_Hokkaido_Japan08n.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:130726 Oshidomari Port in Rishiri Island Hokkaido Japan08n.jpg",
+          "sourceDescription": "Oshidomari Port in Rishiri Island, Hokkaido, Japan.（作者自己上傳，座標 45.243715, 141.227267；授權 CC BY 2.5、CC BY-SA 3.0、GFDL 多重授權，本站採 CC BY 2.5）",
+          "takenAt": "2013-07-26",
+          "width": 4912,
+          "height": 3264,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "2013 年夏天拍的鴛泊港，港邊建物與招牌可能已經改變；只當封面表現鴛泊港町的樣子，不拿來指認特定住宿或現況。",
+          "whyItFits": "鴛泊港內的漁船、港邊倉庫與民宿，背景是正文提到的ペシ岬，一看就是利尻島鴛泊的港町，對應這篇「住鴛泊、離渡輪站走路就到」的主軸。",
+          "altDraft": "利尻島鴛泊港停靠的漁船與港邊的倉庫、民宿，背景是長滿綠草的ペシ岬",
+          "captionDraft": "鴛泊港與港邊街區，背後是ペシ岬（2013 年 7 月）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "none",
+            "logos": "港邊一家民宿招牌與漁船船名，位在畫面邊上，不是主體",
+            "artwork": "none",
+            "property": "漁港、漁業倉庫、港邊民宿與自然景觀",
+            "risk": "low",
+            "notes": "沒有可辨識人物；民宿招牌不是正文介紹的住宿，也不在畫面中心，不會讓人誤以為是某間旅館的實景或本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:130726_Oshidomari_Port_in_Rishiri_Island_Hokkaido_Japan07n.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:130726 Oshidomari Port in Rishiri Island Hokkaido Japan07n.jpg",
+          "sourceDescription": "Oshidomari Port in Rishiri Island, Hokkaido, Japan.（作者自己上傳，座標 45.242543, 141.227608，分類 Oshidomari Port、Cape Peshi；CC BY 2.5、CC BY-SA 3.0、GFDL 多重授權）",
+          "takenAt": "2013-07-26",
+          "width": 4912,
+          "height": 3264,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "畫面中央是利尻マリンホテル的建物與招牌，容易被讀成這間旅館的形象照；2013 年拍攝，不代表現況。",
+          "whyItFits": "從鴛泊港內看港邊街區與ペシ岬，構圖完整，看得出旅館民宿就在港邊。",
+          "altDraft": "鴛泊港邊的漁船、民宿與旅館，背景是ペシ岬與燈塔",
+          "captionDraft": "鴛泊港與ペシ岬（2013 年 7 月）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "none",
+            "logos": "旅館與民宿招牌清楚可讀",
+            "artwork": "none",
+            "property": "漁港、旅館、民宿與自然景觀",
+            "risk": "low",
+            "notes": "沒有可辨識人物；因為旅館招牌在中央，只列備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

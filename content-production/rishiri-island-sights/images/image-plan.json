@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-sights",
+  "articleTitle": "利尻島景點，開放期間與沒車怎麼去",
+  "targetUrl": "/places/rishiri-island/sights/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-25",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island-sights/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-25",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是利尻島上的景點：文章重點景點之一的姬沼，加上背後的利尻山。",
+      "mustShow": ["文章列出的利尻島景點之一（姬沼、Otatomari沼、仙法志御崎公園等），且認得出是利尻島"],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "旅館、店家招牌或商標當主體",
+        "其他地方冒充利尻島",
+        "AI 生成或合成畫面",
+        "本站其他頁已用過的封面（Mt. Rishiri summit (52357470229).jpg、Rebun island (52357580650).jpg、Rebun's Momoiwa (52357581315).jpg、鴛泊港からの利尻山.jpg）"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/%E5%A7%AB%E6%B2%BC%E3%81%8B%E3%82%89%E3%81%AE%E5%88%A9%E5%B0%BB%E5%B1%B1.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.45},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Koda6029 2016 年 9 月 24 日上午在姬沼拍的利尻山（檔案頁標題與說明都是「姫沼からの利尻山」，作者自己上傳，分類 Mount Rishiri、Ponds in Hokkaido）：前景是平靜的姬沼水面倒映山與雲，中景是沼邊的針闊葉混合林，背景是完整的利尻山山形。姬沼是正文第一個介紹的重點景點，也是沒車也能排的三處之一；利尻山入鏡讓讀者一看就知道是利尻島。原圖 4896×3672（4:3），裁 16:9 切掉上方部分天空與下方部分倒影，山頂與沼面都保留。沒有人物、招牌或建築。cover-02 是ブルーノ・プラス 2019 年 7 月拍的姬沼入口木牌（寫著「利尻礼文サロベツ国立公園 姫沼 利尻富士町」），能直接證明地點，原圖就是 16:9；但主體是木牌，畫面看不到利尻山，封面的吸引力不如 cover-01，留作備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-25",
+        "photoSearchNotes": "用維基共享資源 API 查「Otatomari」「Himenuma Rishiri」「Senposhi」「Rishiri pond」「オタトマリ沼」「姫沼 利尻」，並列出分類 Rishiri Island、Otatomari Pond。看過的縮圖：姫沼からの利尻山.jpg（Koda6029，CC BY-SA 4.0）、Rishirifuji town himenuma.jpg（ブルーノ・プラス，CC BY-SA 4.0）、130727 Himenuma Rishiri Island Hokkaido Japan01s3.jpg（663highland，CC BY-SA 4.0，霧天看不到山、不易認出是利尻島）、Lava rocks, Senhoshi Misaki Park, Rishiri Island, Japan.jpg（OKJaguar，CC BY-SA 4.0，只有熔岩礁石與海，看不出是利尻島）、Kitanoitsukushima.jpg（ブルーノ・プラス，北之嚴島弁天宮，有說明看板文字、景點偏小）。Otatomari 沼只有 1977 年空拍與 640×480 的 Mt Rishiri(2004).jpg，尺寸或年代不合。依指示排除本站其他頁已用過的封面，也避開另一個子代理替住宿頁找的港町街景。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E5%A7%AB%E6%B2%BC%E3%81%8B%E3%82%89%E3%81%AE%E5%88%A9%E5%B0%BB%E5%B1%B1.jpg",
+          "creatorName": "Koda6029",
+          "sourceTitle": "File:姫沼からの利尻山.jpg",
+          "sourceDescription": "姫沼からの利尻山（作者自己上傳 Own work，授權 {{self|cc-by-sa-4.0}}，分類 Mount Rishiri、Ponds in Hokkaido）",
+          "takenAt": "2016-09-24",
+          "width": 4896,
+          "height": 3672,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "exact",
+          "matchLimits": "2016 年 9 月拍攝；沼邊林相與水位可能和現在略有不同，只當封面。",
+          "whyItFits": "檔案頁寫明是從姬沼看利尻山，畫面同時有正文重點景點姬沼的水面與利尻山，認得出是利尻島。",
+          "altDraft": "平靜的姬沼水面倒映著森林與利尻山，背景是晴天的利尻山",
+          "captionDraft": "從姬沼看利尻山（2016 年 9 月）。",
+          "creditDraft": "照片：Koda6029／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築，不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rishirifuji_town_himenuma.jpg",
+          "creatorName": "ブルーノ・プラス",
+          "sourceTitle": "File:Rishirifuji town himenuma.jpg",
+          "sourceDescription": "姫沼（利尻礼文サロベツ国立公園）",
+          "takenAt": "2019-07",
+          "width": 3840,
+          "height": 2160,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "exact",
+          "matchLimits": "主體是姬沼入口的木牌，看不到利尻山。",
+          "whyItFits": "木牌寫著「姫沼 利尻富士町」，直接證明是利尻島的姬沼。",
+          "altDraft": "姬沼入口的木牌，後方是沼面與森林",
+          "captionDraft": "姬沼入口（2019 年 7 月）。",
+          "creditDraft": "照片：ブルーノ・プラス／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "國立公園的地名木牌與自然景觀",
+            "risk": "low",
+            "notes": "木牌是公共地名標示，不是商標；沒有人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
