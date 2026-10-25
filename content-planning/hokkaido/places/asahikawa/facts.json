@@ -1,0 +1,1448 @@
+{
+  "schemaVersion": 1,
+  "placeId": "asahikawa",
+  "facts": [
+    {
+      "factId": "F1",
+      "claim": "旭山動物園位於旭川市東旭川町倉沼，離旭川車站約 11.3 公里。",
+      "quote": "〒078-8205 北海道旭川市東旭川町倉沼／旭川駅～動物園（約11.3km）",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭山動物園官網交通頁（2026-08-14 更新）",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F2",
+      "claim": "旭山動物園 2026 年一般開園期間與時間：1/2～4/7 10:30～15:30（最後入園 15:00）；5/1～10/15 9:30～17:15（最後入園 16:00）；10/16～11/3 9:30～16:30（最後入園 16:00）；11/11～12/29 10:30～15:30（最後入園 15:00）。",
+      "quote": "1/2〜4/7 | 10:30〜15:30 | 15:00 | 5/1〜10/15 | 9:30〜17:15 | 16:00 | 10/16〜11/3 | 9:30〜16:30 | 16:00 | 11/11〜12/29 | 10:30〜15:30 | 15:00",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網「開園日カレンダー」通常開園（2026年）表",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-11-05"
+    },
+    {
+      "factId": "F3",
+      "claim": "2026 年 11/4～11/10 休園，冬期開園從 11/11 開始。",
+      "quote": "※令和8年11月4日（水曜日）から11月10日（火曜日）まで休園 ※令和8年度冬期開園は11月11日（水曜日）から",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d083941.html",
+      "checkedAt": "2026-10-26",
+      "condition": "令和8年度夏期開園について（2026-04-29 更新）",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-11-05"
+    },
+    {
+      "factId": "F4",
+      "claim": "照開園表推算，旭山動物園一年有三段不開：4/8～4 月下旬（2026 年到 4/30，2027 年到 4/28）、11/4～11/10、12/30～1/1。",
+      "quote": "1/2〜4/7｜5/1〜10/15（2027年は4/29〜10/15）｜10/16〜11/3｜11/11〜12/29",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "checkedAt": "2026-10-26",
+      "condition": "推算：F2、F5 開園期間之間的空檔；12/30～1/1 休園另見 F3 頁面與開園表",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-11-05",
+      "derivedFrom": ["F2", "F3", "F5"]
+    },
+    {
+      "factId": "F5",
+      "claim": "2027 年開園表已公布：1/2～4/7 10:30～15:30；4/29～10/15 9:30～17:15；10/16～11/3 9:30～16:30；11/11～12/29 10:30～15:30（最後入園分別是 15:00、16:00、16:00、15:00）。",
+      "quote": "通常開園（2027年）| 1/2〜4/7 | 10:30〜15:30 | 15:00 | 4/29〜10/15 | 9:30〜17:15 | 16:00 | 10/16〜11/3 | 9:30〜16:30 | 16:00 | 11/11〜12/29",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網開園日カレンダー 2027 年表",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-29"
+    },
+    {
+      "factId": "F6",
+      "claim": "2027 年夜間特別開園：2/5～2/7 開到 20:30（最後入園 20:00）；8/10～8/16 開到 21:00（最後入園 20:00）。2026 年冬季的是 2/7～2/9。",
+      "quote": "特別開園（2027年）| 2/5～2/7 | 10:30～20:30 | 20:00 | 8/10〜8/16 | 9:30〜21:00 | 20:00",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "checkedAt": "2026-10-26",
+      "condition": "2026 年特別開園為 2/7～2/9、8/10～8/16",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-05"
+    },
+    {
+      "factId": "F7",
+      "claim": "旭山動物園冬季的夜間活動叫「雪あかりの動物園」，夏季的叫「夜の動物園」。",
+      "quote": "夜の動物園／雪あかりの動物園",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/d054855.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網イベント紹介「その他のイベント」清單；對應 F6 的特別開園日",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-05"
+    },
+    {
+      "factId": "F8",
+      "claim": "旭山動物園門票目前大人 1,000 日圓，國中生以下免費；25 人以上團體大人 900 日圓。",
+      "quote": "大人 | 1,000円 | 子供（中学生以下） | 無料",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "checkedAt": "2026-10-26",
+      "condition": "一回券、個人；適用到 2027-04-28（見 F9）",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F9",
+      "claim": "2027 年 4/29 夏期開園起門票調漲：大人 1,400 日圓（團體 1,300），國中生以下仍免費；年票 1,600 日圓。",
+      "quote": "令和9年4月29日（木）の夏期開園から入園料を改定／大人 | 1,400円 | 1,000円",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d084291.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網公告（2026-07-01 更新）",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F10",
+      "claim": "網路票與超商票只賣大人一般票（1,000 日圓）；一次買多張要所有人一起入園，網路票不能從旭山三浦庭園連絡門進。",
+      "quote": "Webチケット・コンビニチケット事前購入（個人・通常料金1,000円のみ）／Webチケットは旭山三浦庭園連絡ゲートから入園できません。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "checkedAt": "2026-10-26",
+      "condition": "開園期間・入園料・チケット頁",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F11",
+      "claim": "住旭川市內旅館的人可買「おもてなし券」（1,000 日圓）：第一天中午後入園、隔天中午前可再入園，兩天連續進；買時要出示住宿證明。",
+      "quote": "おもてなし券（1泊2日券）1,000円 入園初日正午以降から入園、翌日正午まで入園の2日連続で入園可能 旭川市内宿泊施設の宿泊利用者対象",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "checkedAt": "2026-10-26",
+      "condition": "購入の際に宿泊を証明する書類の提示が必要；販売所見官網一覽",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F12",
+      "claim": "旭山動物園年票（初次入園起一年）目前 1,400 日圓。",
+      "quote": "旭山動物園パスポート | 1,400円",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "checkedAt": "2026-10-26",
+      "condition": "2027-04-29 起 1,600 日圓（F9）",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F13",
+      "claim": "企鵝散步只在冬天積雪期舉行，目的是讓企鵝冬天運動，同時讓遊客看國王企鵝成群走去海邊覓食的習性。",
+      "quote": "ペンギンの散歩（冬期の積雪期のみ実施）／冬場のペンギン達の運動不足解消を目的として",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/d054855.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網イベント紹介；開始日依積雪決定",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-12-10"
+    },
+    {
+      "factId": "F14",
+      "claim": "企鵝館 2000 年 9 月開館，養國王、巴布亞、洪堡、跳岩四種企鵝，館內有 360 度的水中隧道。",
+      "quote": "2000年9月にオープンした「ぺんぎん館」／360度見渡せる水中トンネル",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/facilityinformation/d055082.html",
+      "checkedAt": "2026-10-26",
+      "condition": "施設紹介頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F15",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "2026～27 冬季企鵝散步的開始日、一天幾場與時刻還沒公布；上一季的公告頁已下架。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "checkedAt": "2026-10-26",
+      "nextCheckAt": "2026-12-10"
+    },
+    {
+      "factId": "F16",
+      "claim": "園內紙本導覽冊已停止發放，改用手機看的園內地圖。",
+      "quote": "令和7年度夏期開園より、園内パンフレットの紙配布および設置は終了し、スマートフォン等でご覧いただける園内マップへ移行",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d083941.html",
+      "checkedAt": "2026-10-26",
+      "condition": "2025 年度起",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-29"
+    },
+    {
+      "factId": "F17",
+      "claim": "動物園有免費停車場：正門約 200 台、東門約 300 台；正門與西門周邊另有民間停車場（免費或一天最多 500 日圓），合計約 1,100 台。",
+      "quote": "正門 | 約200台 | 東門 | 約300台／民間の無料・有料（上限1日500円）駐車場（合わせて約1,100台）",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網交通頁",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F18",
+      "claim": "從旭川車站到動物園搭旭川電氣軌道 41、47 號公車，在車站前公車站「バスタッチ」6 號乘車，約 30 分鐘一班、約 40 分鐘到。",
+      "quote": "運行間隔 | 約30分 | 所要時間 | 約40分／路線：旭山動物園線41・47番線 乗り場：旭川駅前バスタッチの6番",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "checkedAt": "2026-10-26",
+      "condition": "動物園官網交通頁；班表以 F19 經營者頁為準",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F19",
+      "claim": "夏期開園期間（2026/4/29～11/3）旭川站往動物園的公車從 7:40 到 15:10 大約每 30 分鐘一班（41 號約 42 分、47 號約 39 分）；動物園回旭川站從 9:40 到 17:40。",
+      "quote": "41番 | 07:40 → 08:27／47番 | 15:10 → 15:49／41番 | 17:40 　→　 18:28",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "checkedAt": "2026-10-26",
+      "condition": "表上第一個時刻是 7 条昭和通發、第二個是旭川站發；41 號經 4 条通、47 號經 10 条通",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F20",
+      "claim": "42 號急行只在指定期間行駛（夏期部分班次限週末與假日），旭川站 9:35 發、10:10 到動物園。",
+      "quote": "42番 | 09:25 → 09:35 → 10:10／※〇の42番は土日祝日のみ運行",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "checkedAt": "2026-10-26",
+      "condition": "2026 年夏期時刻表；旭川站周邊乘車處案內圖標「急行（期間限定運行）」",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F21",
+      "claim": "旭川站到動物園公車單程大人 670 日圓、小孩 340 日圓（2026-09-01 調整）；交通 IC 卡只收 Asaca 與 DoCARD。",
+      "quote": "片道 大人670円 小人340円（2026年9月1日改定）（IC乗車カードはAsaca・DoCARDのみ使用できます）",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "checkedAt": "2026-10-26",
+      "condition": "7条昭和通・旭川駅～旭山動物園",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F22",
+      "claim": "旭川電氣軌道的公車總合案內所有售票機，可以先買公車票和動物園門票，也有能刷信用卡的售票機；來回要買兩張。",
+      "quote": "券売機ではバス乗車券と旭山動物園入園券を事前に購入することができます クレジット決済対応のキャッシュレス券売機",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "checkedAt": "2026-10-26",
+      "condition": "往復で乗車券をご利用の場合はきっぷを2枚ご購入ください",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F23",
+      "claim": "動物園閉園時段與休園日，41、47 號公車改在「旭山公園入口」發抵，不進動物園。",
+      "quote": "旭山動物園の閉園時間帯および休園日（臨時休園日を除く）は旭山公園入口発着となります。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "checkedAt": "2026-10-26",
+      "condition": "臨時休園日除外",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F24",
+      "claim": "旭川機場與動物園之間有 78 號直達公車，約 35 分鐘、大人 840 日圓：機場 9:55 發，動物園 14:55 發；只在夏期開園的週末與假日行駛（7/25～8/16 每天）。",
+      "quote": "旭川空港発 | 旭山動物園着 | 旭山動物園発 | 旭川空港着 | 09:55 | 10:30 | 14:55 | 15:30／片道 大人 840円",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
+      "checkedAt": "2026-10-26",
+      "condition": "每天行駛期間引自動物園官網交通頁「7/25～8/16は毎日運行」；不需預約",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F25",
+      "kind": "gap",
+      "gapKind": "unreadable",
+      "claim": "2026 年度冬期開園期間 41、42、47、78 號公車的運行計畫已公告，但公告頁文字沒有班表，內容在附圖或附件裡，這次讀不到。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/topics/",
+      "checkedAt": "2026-10-26",
+      "nextCheckAt": "2026-11-05"
+    },
+    {
+      "factId": "F26",
+      "claim": "搭計程車從旭川站到動物園約 30 分鐘、約 3,500 日圓；從旭川機場約 25 分鐘、約 3,500 日圓。",
+      "quote": "自動車 | 所要時間 | 約30分 | 料金 | タクシー：約3,500円／旭川空港～動物園…約25分 | タクシー：約3,500円",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網估計值",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F27",
+      "claim": "開車從札幌市到動物園約 152 公里、約 2 小時；從新千歲機場約 189 公里、約 2 小時 30 分；從旭川北交流道約 10 公里、約 20 分鐘。",
+      "quote": "札幌市～動物園 152.0km | 約2時間 | 新千歳空港～動物園 189.0km | 約2時間30分／旭川北ICから動物園 約10km(約20分)",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網估計值",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F28",
+      "claim": "札幌出發到動物園的當日來回定期觀光巴士，官網列出北海道中央巴士、札幌通運 Club Get's、北海道アクセスネットワーク、ワンダーツアーズ四家。",
+      "quote": "日帰り定期観光バス 札幌市内～動物園間を運行。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "checkedAt": "2026-10-26",
+      "condition": "預約與價格看各社網站",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F29",
+      "claim": "旭山動物園 1967 年 7 月 1 日開園（2026 年 7/1 是第 59 個開園紀念日）。",
+      "quote": "7月1日は旭山動物園59回目の開園記念日です！",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/",
+      "checkedAt": "2026-10-26",
+      "condition": "推算：2026 年為第 59 次紀念日，開園年 = 2026 − 59 = 1967",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F30",
+      "claim": "旭山動物園以「行動展示」讓動物展現原本的樣子，是日本最北的動物園。",
+      "quote": "動物たちの特長を生かした「行動展示」により，生き生きとした姿が見られる日本最北の動物園。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "あさひかわ観光誘致宣伝協議会（旭川市）的觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F31",
+      "claim": "動物園旁的旭山公園是天然林，春天有櫻花與片栗花，秋天有紅葉，冬天可以穿雪鞋找野生動物足跡、看蝦夷松鼠和野鳥。",
+      "quote": "旭山動物園に隣接する風致公園で，春には桜やカタクリ…冬にはスノーシューを履いて野生動物の足跡を辿ったり",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F32",
+      "claim": "動物園每天有「もぐもぐタイム」（飼育員邊餵食邊解說），週日與假日 13:30 有飼育員的「ワンポイントガイド」。",
+      "quote": "もぐもぐタイム：飼育スタッフが動物にエサを与えながら…毎週日曜・祝日に13時30分から行っています",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/d054855.html",
+      "checkedAt": "2026-10-26",
+      "condition": "當天時間看官網「本日のスケジュール」",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-29"
+    },
+    {
+      "factId": "F33",
+      "claim": "特急カムイ（5 節）與特急ライラック（6 節）都行駛札幌⇔旭川，全車指定席。",
+      "quote": "特急カムイは札幌−旭川間を結ぶ5両編成の特急列車です／特急ライラック（789系 0代）全車指定席",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/train/tr013_01.html",
+      "checkedAt": "2026-10-26",
+      "condition": "ライラック見 https://www.jrhokkaido.co.jp/train/tr033_01.html；全車指定席的規則與座席未指定券由稚內交通頁負責（wakkanai:F53、wakkanai:F54）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F34",
+      "claim": "札幌到旭川搭特急最快 1 小時 25 分。",
+      "quote": "最速１時間25 分の快適な移動を体験ください。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260528_KO_arujan.pdf",
+      "checkedAt": "2026-10-26",
+      "condition": "JR 北海道新聞稿（2026-05-28）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F35",
+      "claim": "札幌到旭川特急普通車指定席正常價 5,440 日圓；えきねっと「特急トクだ値１」2,440～4,340 日圓（乘車前一天前訂），「在來線チケットレス特急券（トク割）」特急券 1,530～2,120 日圓另付車資（可當天訂）。",
+      "quote": "札幌-旭川間価格 2,440 円～4,340 円 4,610 円～5,200 円 5,440 円",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260528_KO_arujan.pdf",
+      "checkedAt": "2026-10-26",
+      "condition": "大人 1 名、單程、普通車指定席；折扣票價格依訂位時間浮動、席數有限",
+      "changeType": "price",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F36",
+      "claim": "札幌往旭川方向的特急、快速一天約 24 班，第一班 6:29、最後一班 22:00，白天大致 30 分到 1 小時一班。",
+      "quote": "札幌 629 札幌 652 札幌 713 札幌 730 札幌 800 … 札幌 2100 札幌 2200",
+      "sourceUrl": "https://jrhokkaidonorikae.com/linelist/linelist.php",
+      "checkedAt": "2026-10-26",
+      "condition": "JR 北海道「列車名/路線名から時刻検索」［特急］ライラック・カムイ・オホーツク・宗谷・サロベツ 下り，2026 年 9/18～12/31；計數只算札幌發的班次（含往網走的オホーツク、往稚內的宗谷）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F37",
+      "claim": "札幌經旭川到宗谷本線各站，在旭川站不出剪票口轉乘特急，特急費用可以合併計算。",
+      "quote": "札幌―旭川―稚内(宗谷本線)間の停車駅相互を旭川駅で改札を出ないで特急列車どうしを乗り継ぐ場合に限り、通しの料金でご乗車になれます。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/linelist/linelist.php",
+      "checkedAt": "2026-10-26",
+      "condition": "時刻表頁的《ご案内》；旭川到稚內的班次由稚內交通頁負責（wakkanai:F57、wakkanai:F59）",
+      "changeType": "price",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F38",
+      "claim": "從旭川站往石北本線（上川、北見、網走方向）有旭川始發的特快「大雪」12:38、19:05 與快速「きたみ」15:08。",
+      "quote": "旭川 1238（大雪）／旭川 1508（きたみ）／旭川 1905（大雪）",
+      "sourceUrl": "https://jrhokkaidonorikae.com/linelist/linelist.php",
+      "checkedAt": "2026-10-26",
+      "condition": "2026 年 9/18～12/31 下り時刻表；往層雲峽的上川站轉乘細節交給層雲峽研究",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F39",
+      "claim": "ライラック車頭有六種沿線彩繪，其中「旭川」款畫的是旭山動物園的動物；搭到哪一款當天才知道。",
+      "quote": "旭川　旭山動物園にいる動物　旭川の名所／どの編成に乗れるかは当日のお楽しみ！",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/train/tr033_01.html",
+      "checkedAt": "2026-10-26",
+      "condition": "6 編成・全 24 種類",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-10-26"
+    },
+    {
+      "factId": "F40",
+      "claim": "新千歲機場站到札幌站搭 JR 約 40 分鐘，札幌站到旭川站約 1 小時 30 分。",
+      "quote": "新千歳空港駅～札幌駅 | 約40分 | 札幌駅～旭川駅 | 約1時間30分",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "checkedAt": "2026-10-26",
+      "condition": "動物園官網的估計",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F41",
+      "claim": "札幌⇔旭川的高速巴士「高速あさひかわ号」由北海道中央巴士、JR 北海道巴士、道北巴士共同營運，大人單程 2,500 日圓、來回 4,700 日圓，約 2 小時。",
+      "quote": "旭川から | 2,500円 | 4,700円／札幌駅周辺～旭川駅周辺 高速あさひかわ号 | 約2時間",
+      "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8",
+      "checkedAt": "2026-10-26",
+      "condition": "所要時間引自動物園官網交通頁；冬季較久",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F42",
+      "claim": "高速あさひかわ号不用預約，客滿時可能請乘客坐輔助座或改搭下一班；可用交通 IC 卡，但道北巴士的班次不能用 SAPICA。",
+      "quote": "満席の際は、補助席でのご利用をお願いする場合や、次の便へご案内することがございます。／道北バス便では、ＳＡＰＩＣＡはご利用いただけません",
+      "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8",
+      "checkedAt": "2026-10-26",
+      "condition": "北海道中央巴士路線頁",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F43",
+      "claim": "旭川⇔新千歲機場的預約制巴士「たいせつライナー」，大人單程 4,500 日圓、來回 8,000 日圓，早鳥單程 4,200 日圓；乘車前 2 個月開放預約。",
+      "quote": "片道 4,500円 往復 8,000円／特別片道 4,200円／乗車券のご予約は乗車2カ月前より承ります",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川電氣軌道與北都交通共同營運；外國旅客用「JAPAN BUS LINES」訂",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F44",
+      "claim": "たいせつライナー從旭川站前バスタッチ 9 號發車 6:50、8:50（12/1 起加 12:50），分別 9:35、11:35、15:35 到新千歲機場國內線航廈；回程機場 14:25、16:25（12/1 起加 19:15）發。",
+      "quote": "旭川駅（バスタッチのりば9） | 6：50 | 8：50 | ▲12：50／新千歳空港国内線21番のりば | 14：25 | 16：25 | ▲19：15",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
+      "checkedAt": "2026-10-26",
+      "condition": "▲の便は12/1より運行；新千歲機場只在國內線航廈下車",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F45",
+      "claim": "旭川機場的機場專用巴士到旭川市區約 30～40 分鐘，配合班機起降行駛；路線巴士也有直達旭川站前的道北巴士（約 35 分）。",
+      "quote": "空港専用バスは飛行機の発着時刻に接続して運行しております。／旭川駅前(直行便) | 約35分 | 時刻表はこちら[道北バス]",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川機場官網巴士頁",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F46",
+      "claim": "旭川機場出入口 4 出去左手邊是公車站：往旭川站方向在 1 號乘車處，其他（動物園、美瑛・富良野、東川・旭岳、帶廣）在 2 號；一樓國內線入境大廳出入口 3 附近有售票機。",
+      "quote": "出入口4を出て左側にバスのりばがございます。旭川駅方面はバスのりば①、その他はバスのりば②でございます。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+      "checkedAt": "2026-10-26",
+      "condition": "1階国内線到着ロビー(出入口3付近)にバス券売機",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F47",
+      "claim": "從旭川機場 2 號乘車處：往美瑛・富良野的ふらのバス約 60 分鐘、往東川・旭岳的旭川電氣軌道約 50 分鐘、往帶廣的預約制巴士約 4 小時。",
+      "quote": "美瑛・富良野 | 約60分 | 時刻表はこちら[ふらのバス] | 東川・旭岳 | 約50分 | 時刻表はこちら[旭川電気軌道]",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+      "checkedAt": "2026-10-26",
+      "condition": "班次細節交給東川、旭岳研究與之後的美瑛、富良野研究",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F48",
+      "claim": "旭川電氣軌道機場巴士 10/25～11/30 時刻舉例：機場 9:05 發、9:44 到旭川站；旭川站（9 號）7:06 發、7:50 到機場。往機場途中不能下車，往市區途中不能上車。",
+      "quote": "7:06 | 7:11 | 7:13 | 7:16 | 7:19 | 7:24 | 7:50／9:05 | 9:35 | 9:58 | 10:02 | 10:04 | 10:06 | 10:08 | 10:14",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
+      "checkedAt": "2026-10-26",
+      "condition": "運行期間 2026/10/25～11/30（第一例為 10/1～10/24 表與 10/25 起表相同時刻）；接續班機時刻見原表",
+      "changeType": "timetable",
+      "nextCheckAt": "2026-11-20"
+    },
+    {
+      "factId": "F49",
+      "claim": "旭川站到旭川機場的機場巴士大人 750 日圓，小孩半價。",
+      "quote": "750円 | 690円 | 料金 Fare | 子供半額 Child half price",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
+      "checkedAt": "2026-10-26",
+      "condition": "推算：表上 750 日圓對應 6の9～旭川站一側、690 日圓對應宮前通東以後；2026-12-01 起機場相關路線運賃再調整（F50）",
+      "changeType": "timetable",
+      "nextCheckAt": "2026-11-20"
+    },
+    {
+      "factId": "F50",
+      "claim": "旭川電氣軌道 2026 年 12 月 1 日起調整旭川機場相關路線（66 號旭岳線、77 號機場線等）的運賃。",
+      "quote": "旭川空港関連路線における競合区間の運賃改定に伴い…令和8年12月1日より運賃改定を実施いたします。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/topics/",
+      "checkedAt": "2026-10-26",
+      "condition": "新運賃見公告附的系統別運賃表",
+      "changeType": "price",
+      "nextCheckAt": "2026-11-20"
+    },
+    {
+      "factId": "F51",
+      "claim": "台北（桃園）⇔旭川目前沒有定期航班；長榮航空 2026 年 9/23～10/29 飛了 10 個往返的包機，只在台灣當成旭川周邊遊覽團販售，2026 年 1～2 月也飛過。",
+      "quote": "本便は、台北発着のお客さまを対象に旭川周辺地域を周遊するツアーとして台湾のみで販売されております",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/corporate/pressrelease/assets/docs/260810_Release_HAP.pdf",
+      "checkedAt": "2026-10-26",
+      "condition": "北海道エアポート新聞稿（2026-08-10）；台灣虎航旭川線 3/29 起停飛為北海道新聞報導，未見經營者官方，不寫進正文",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-01-15"
+    },
+    {
+      "factId": "F52",
+      "claim": "旭川站前的公車站叫「バスタッチ」：4 號往春光・末廣、5 號往東川・東神樂方向、6 號往旭山動物園、9 號往旭川機場・旭岳・富良野。",
+      "quote": "４ 春光・末広方面／５ 東川・東神楽方面／６ 旭山動物園行／９ 旭川空港・旭岳・富良野行",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川駅周辺バスのりば案内（2026 年 5 月 10 日改定）；乘車處編號從案內圖讀出",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F53",
+      "claim": "往旭岳的 66 號「いで湯号」從旭川站出發，經共榮巴士中心、旭川機場、道の駅ひがしかわ道草館到旭岳。",
+      "quote": "66 共栄BC-旭川空港-ひがしかわ道草館 旭岳 いで湯号",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "checkedAt": "2026-10-26",
+      "condition": "乘車處在 9 號一帶（案內圖「旭川空港・旭岳・富良野行」）；班次交給旭岳研究",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F54",
+      "claim": "ふらのバス「快速ラベンダー号」從旭川站經旭川機場、美瑛到 JR 富良野站前與新富良野王子飯店。",
+      "quote": "ふらの バス 旭川空港 - 美瑛 - JR富良野駅前 （快速ラベンダー号） 新富良野プリンスホテル",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川站周邊乘車處案內；班次交給之後的富良野・美瑛群",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F55",
+      "claim": "往東川的 60、67 號公車（經共榮巴士中心到道の駅ひがしかわ道草館、東川東町 4 丁目）也在旭川站前發車。",
+      "quote": "60 東光6の7－共栄バスセンター―ひがしかわ道草館 東川東町４丁目",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "checkedAt": "2026-10-26",
+      "condition": "東川・東神楽方面乘車處；班次交給東川研究",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F56",
+      "claim": "旭川電氣軌道巴士總合案內所在旭川站前 Tsuruha 大樓 1 樓，營業 8:00～18:30。",
+      "quote": "〒070-0030　旭川市宮下通9丁目2番17号 Tsuruha Bldg.旭川駅前１F／旭川電気軌道バス総合案内所（営業時間　8:00～18:30）",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/topics/",
+      "checkedAt": "2026-10-26",
+      "condition": "TEL 0166-23-3355",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F57",
+      "kind": "gap",
+      "gapKind": "unreadable",
+      "claim": "道北巴士官網（往層雲峽的 81 號、機場直達巴士、旭川站前乘車處）這次用讀取工具與瀏覽器都連不上。",
+      "sourceUrl": "https://www.dohokubus.com/",
+      "checkedAt": "2026-10-26",
+      "nextCheckAt": "2026-11-10"
+    },
+    {
+      "factId": "F58",
+      "kind": "gap",
+      "gapKind": "unreadable",
+      "claim": "旭川觀光コンベンション協會官網因資安維護暫停公開，重新開放日期未定；景點清單改用旭川市的觀光入口網站。",
+      "sourceUrl": "https://www.atca.jp/",
+      "checkedAt": "2026-10-26",
+      "nextCheckAt": "2026-11-26"
+    },
+    {
+      "factId": "F59",
+      "claim": "旭川觀光物產情報中心在 JR 旭川站東側通道，有日、英、中文服務；夏天出租胖胎自行車、冬天出租雪鞋。",
+      "quote": "旭川駅東コンコースにある観光案内所で…日本語・英語・中国語でご案内／夏季はファットバイク，冬季はスノーシューなどレンタル",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；營業時間未查",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F60",
+      "claim": "旭川站旁的「あさひかわ北彩都ガーデン」與車站直接相連，南邊是忠別川，冬天變成雪上活動區，花園中心可租雪鞋與越野滑雪板。",
+      "quote": "旭川駅に直結した街の中心部にある…ガーデンセンター」では…スノーシューや歩くスキーのレンタル",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站（夏、冬兩則）",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-10-01"
+    },
+    {
+      "factId": "F61",
+      "claim": "1～2 月最冷的時候，旭川站北廣場會做天然冰的溜冰場「ゆっきリンク」。",
+      "quote": "寒さのピークを迎える１月～２月頃，旭川駅北広場には，全国的にも珍しい天然氷のスケートリンクが出来上がります。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；營業期間每年看天氣",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-26"
+    },
+    {
+      "factId": "F62",
+      "claim": "平和通買物公園是 1972 年開設的日本第一條常設行人徒步區，從旭川站往北延伸約 1 公里，有百貨、餐廳與戶外雕刻。",
+      "quote": "昭和47年（1972年）に開設された全国初の恒久的な歩行者天国です。JR旭川駅から北へ約1km",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川八景",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F63",
+      "claim": "旭川八景是 1997 年選定的八處風景：旭橋、嵐山與嵐山眺望、外國樹種見本林、神居古潭、舊旭川偕行社、鑽石塵、常磐公園、平和通買物公園。",
+      "quote": "市民公募などをもとに平成9年に旭川八景を選定しました。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F64",
+      "claim": "旭橋是旭川市 750 多座橋的代表，鋼造拱橋，背景是大雪山連峰與石狩川，冬天有川霧。",
+      "quote": "750以上も橋がある旭川の代表的な橋です。…鋼でできたアーチ型の形状",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川八景",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F65",
+      "claim": "嵐山公園的展望台可以一次看到旭川市區、石狩川與大雪山連峰，也是看夜景與煙火的地點；山腳的北邦野草園有 600 種以上北方系野草。",
+      "quote": "展望台からは旭川の市街地と石狩川の雄大な流れ、大雪山連峰の迫力ある姿が一望できます。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川八景；夜景與煙火見旭川市觀光入口網站「嵐山展望台」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F66",
+      "claim": "北邦野草園的散步路全長 5.2 公里，有 30 分鐘、1 小時、2 小時等路線；地址在鷹栖町嵐山公園中心。",
+      "quote": "散策路は全長5.2kmあり、30分・1時間・2時間などのコースがあります。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；開放期間未查",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F67",
+      "claim": "外國樹種見本林是北海道最古老的外國樹人工林，因三浦綾子小說《冰點》的舞台而聞名；旁邊是三浦綾子紀念文學館。",
+      "quote": "北海道内で最も古い外国樹の人工植栽地です。旭川ゆかりの小説家・三浦綾子の小説「氷点」の舞台として全国的に有名になりました。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川八景",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F68",
+      "claim": "三浦綾子紀念文學館在神樂 7 条 8 丁目，介紹《冰點》《鹽狩峠》《銃口》的作者；分館可以體驗口述筆記。",
+      "quote": "「氷点」「塩狩峠」「銃口」など多くの名作を著し…「口述筆記」のなりきり体験が可能に。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；開館時間與門票未查",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F69",
+      "claim": "神居古潭在愛努語是「神之里」，石狩川急流兩岸奇岩怪石延續約 10 公里，吊橋附近的壺穴群 1966 年被指定為市天然紀念物。",
+      "quote": "アイヌ語で「神の里」を意味し、石狩川の急流沿いに奇岩怪石が約10km続く景勝地です。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川八景",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F70",
+      "claim": "舊旭川偕行社 1902 年建成，是舊陸軍第七師團軍官的社交俱樂部建築，1989 年列為國家重要文化財，現在是中原悌二郎紀念旭川市雕刻美術館。",
+      "quote": "旧陸軍第七師団の将校たちの社交場として１９０２年に建設された洋風の本格的クラブ建築物",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "重要文化財指定年見旭川八景頁「平成元年（1989 年）、国の重要文化財に指定」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F71",
+      "claim": "常磐公園 1910 年開設，是旭川第一座公園，約 16 公頃，園內有千鳥池、中央圖書館與北海道立旭川美術館，1989 年選入「日本都市公園 100 選」。",
+      "quote": "常磐公園は明治43年（1910年）に旭川で初めて開設された公園です。約16ヘクタール",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川八景",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F72",
+      "claim": "鑽石塵出現在隆冬晴天的早晨，輻射冷卻讓地面降到零下十幾度，空氣中的冰晶反射陽光閃閃發亮，是旭川的冬季代表景象。",
+      "quote": "真冬の晴れた日の朝、地表の熱が急激に奪われて零下十数度になる放射冷却現象の時に見られます。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川八景",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F73",
+      "claim": "川村カ子トアイヌ記念館（北門町 11 丁目）是日本最早的愛努資料館，也是唯一的私立愛努資料館，可以體驗樂器演奏與古式舞蹈。",
+      "quote": "日本最古のアイヌ資料館で，私立としては唯一のもの。…楽器演奏や古式舞踊などの体験",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；開館時間與門票未查",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F74",
+      "claim": "旭川市博物館在神樂 3 条 7 丁目的大雪クリスタルホール內，展示北北海道的歷史、愛努文化與自然。",
+      "quote": "旭川市神楽3条7丁目（大雪クリスタルホール内）",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；開館時間與門票未查",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F75",
+      "claim": "北鎮記念館（春光町、旭川駐屯地旁）展示屯田兵開拓與舊陸軍第七師團進駐的資料；東旭川的旭川兵村記念館復原了屯田兵屋。",
+      "quote": "屯田兵による開拓の歴史や，旧陸軍第七師団の移駐の経緯などについての貴重な資料が展示してある資料館。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F76",
+      "claim": "男山酒造的「男山酒造り資料舘」免費參觀，有試飲區與酒藏限定商品，釀酒期間可以看到釀酒過程；地址永山 2 条 7 丁目。",
+      "quote": "入館無料で試飲コーナー・売店コーナーが併設され、蔵元限定商品も多数。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；營業時間未查",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F77",
+      "claim": "髙砂酒造的明治酒藏 1909 年竣工，現在是附資料館的直賣店，工廠參觀要事先預約；地址宮下通 17 丁目。",
+      "quote": "1909年に竣工された髙砂明治酒蔵…資料館併設の直売店／事前予約制で工場見学も可能。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F78",
+      "claim": "上野ファーム在動物園附近（永山町 16 丁目），春到秋有 2,000 種以上的花，可登上射的山看田園景色。",
+      "quote": "ガーデンには春から秋にかけて2000種類以上の花々が咲き乱れ／射的山（しゃてきやま）の山頂からは田園風景を一望",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；開園期間與門票未查",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F79",
+      "claim": "就實之丘在旭川機場開車約 10 分鐘處，像雲霄飛車般起伏的道路盡頭可以看到旭川市區、大雪山連峰與十勝岳連峰。",
+      "quote": "旭川空港から車で10分ほどの絶景スポット…ジェットコースターのようなアップダウンの道",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F80",
+      "claim": "旭川是日本主要家具產地之一，旭川デザインセンター（永山 2 条 10 丁目）2023 年整修，集合約 30 家廠商的旭川家具與工藝，設有博物館與體驗工房。",
+      "quote": "約３０のメーカーによる旭川家具・クラフトが一堂に集う複合施設・旭川デザインセンターが2023年にリニューアルしました。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F81",
+      "claim": "旭川市科學館「サイパル」（宮前 1 条 3 丁目）以北國、地球、宇宙為主題，有天象儀與天文台。",
+      "quote": "「北国」「地球」「宇宙」をテーマにした常設展示のほか，人気のプラネタリムや天文台",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F82",
+      "claim": "道の駅あさひかわ在 JR 旭川站開車約 5 分鐘處（神樂 4 条 6 丁目），有道北特產、美食區；門口的寶可夢人孔蓋提到旭川測得的日本最低氣溫零下 41.0 度。",
+      "quote": "JR旭川駅から車で５分のアクセス良好。／日本の最低気温-41.0度を記録している旭川市の「ポケふた」",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F83",
+      "claim": "男山自然公園（東山）是北海道規模最大的片栗花群生地之一，園內步道約 20 分鐘可繞一圈。",
+      "quote": "北海道最大規模を誇るカタクリの群生地（突哨山含む）として有名な自然公園です。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；花期未查",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F84",
+      "claim": "旭川市內的滑雪場有カムイスキーリンクス（神居町西丘，25 條雪道，有市區路線公車）與サンタプレゼントパーク（旭川站開車約 15 分鐘，可租雪具與雪衣）。",
+      "quote": "変化に富んだ２５コースがあり…市内からの路線バスもあるのでアクセスも良好です。／JR旭川駅から車で１５分、気軽に行けるスキー場です。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；營業期間與票價未查",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-11-26"
+    },
+    {
+      "factId": "F85",
+      "claim": "北海道道 1116 號富良野上川線（東川町忠別水庫旁到旭川ペーパン地區）每年只在 9～10 月開放約 1 個月，視路況可能縮短。",
+      "quote": "毎年９月～１０月のわずか1か月のみ通行可能、まさに「幻」。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站「幻の道」；開放日期要看道路管理者（北海道）公告",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-08-01"
+    },
+    {
+      "factId": "F86",
+      "claim": "旭川拉麵的特徵是醬油底、魚介與豬骨合起來的湯頭，配中細捲麵。",
+      "quote": "旭川ラーメンは、醤油ベースに魚介と豚骨を合わせたスープと、中細の縮れ麺が特徴。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11227.html",
+      "checkedAt": "2026-10-26",
+      "condition": "北海道觀光機構 HOKKAIDO LOVE!",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F87",
+      "claim": "あさひかわラーメン村 1996 年 8 月開幕，集合旭川市內 8 家拉麵店，在永山 11 条 4 丁目購物中心「パワーズ」一角，免費入場。",
+      "quote": "１９９６年８月に誕生しました。／ショッピングセンター「パワーズ」の一角に位置します。…入場無料",
+      "sourceUrl": "https://www.ramenmura.com/",
+      "checkedAt": "2026-10-26",
+      "condition": "官網",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F88",
+      "claim": "拉麵村營業 11:00～20:00，目前各店縮短營業時間不一；8 家合計 220 席，有外文菜單，可用 PayPay、LINE Pay、Alipay。",
+      "quote": "営業時間　11:00～20:00　入場無料 (当面の間、各店により営業時間短縮中）／収容席数　８店舗合計220席",
+      "sourceUrl": "https://www.ramenmura.com/",
+      "checkedAt": "2026-10-26",
+      "condition": "官網",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F89",
+      "claim": "拉麵村有免費停車場（大型巴士也免費）；開車從 JR 旭川站約 20 分鐘、從動物園約 15 分鐘、從旭川機場約 30 分鐘；搭電車從 JR 南永山站走路約 7 分鐘。",
+      "quote": "旭山動物園より15分 旭川空港より30分 ＪＲ旭川駅より20分／●徒歩：JR南永山駅から約7分",
+      "sourceUrl": "https://www.ramenmura.com/access.html",
+      "checkedAt": "2026-10-26",
+      "condition": "步行時間引自 HOKKAIDO LOVE! https://www.visit-hokkaido.jp/spot/detail_11227.html",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F90",
+      "claim": "拉麵村目前的店家：青葉、いってつ庵、一心、天金、山頭火、さいじょう、梅光軒，加上全國名店期間限定進駐的「ラーメンキャラバン」。",
+      "quote": "青葉　Aoba／いってつ庵　Ittetsu-an／一心　Isshin／天金　Tenkin／山頭火　Santoka／さいじょう　Saijo／梅光軒　Baikoken／ラーメンキャラバン",
+      "sourceUrl": "https://www.ramenmura.com/shopinfo.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網店舗紹介",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F91",
+      "claim": "拉麵村的「青葉」1947 年從路邊攤起家，是旭川的老店。",
+      "quote": "昭和22年創業、屋台から始まった北海道・旭川の老舗。",
+      "sourceUrl": "https://www.ramenmura.com/shopinfo.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網店舗紹介",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F92",
+      "claim": "拉麵村裡有「あさひかわラーメン神社」，是拍照點。",
+      "quote": "施設内には「あさひかわラーメン神社」があり",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11227.html",
+      "checkedAt": "2026-10-26",
+      "condition": "HOKKAIDO LOVE!",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F93",
+      "claim": "成吉思汗大黑屋旭川五丁目店在 4 条通 5 丁目，從旭川站走路約 11 分鐘，每天 16:00～23:00，12/31～1/2 休息，沒有停車場。",
+      "quote": "北海道 旭川市4条通5丁目1425番地（3・4仲通）／徒歩11分／全日　16:00～23:00（LO23:30)／12月31日～1月2日",
+      "sourceUrl": "https://daikoku-jgs.com/free/asahikawa",
+      "checkedAt": "2026-10-26",
+      "condition": "官網店舗頁；官網的最後點餐寫 LO23:30、另一欄寫ラストオーダー 21:50，兩者不一致，正文不寫最後點餐",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F94",
+      "claim": "大黑屋旭川店可以電話（0166-24-2424）或官網連結預約；外帶另有專用電話，11:00～19:00 受理、13:00～19:00 取餐。",
+      "quote": "電話で予約する：0166-24-2424／【テイクアウト専用予約番号】0166-25-2424 受付時間：11:00～19:00 引き渡し：13:00～19:00",
+      "sourceUrl": "https://daikoku-jgs.com/free/asahikawa",
+      "checkedAt": "2026-10-26",
+      "condition": "官網店舗頁",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F95",
+      "claim": "大黑屋的招牌是厚切、柔軟的小羊肉沾秘傳醬汁；有包廂與吧檯，也在台灣展店。",
+      "quote": "創業当時からのこだわりである肉厚で柔らかいラムは、秘伝のタレにつけるとまさに極上の一品。／ー台湾（営業時間の詳細は各店ページにて）ー",
+      "sourceUrl": "https://daikoku-jgs.com/",
+      "checkedAt": "2026-10-26",
+      "condition": "官網首頁",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F96",
+      "claim": "新子燒是戰後在旭川誕生的料理，把若雞半隻整個烤，是旭川人的平民大餐。",
+      "quote": "若鶏の半身を素焼きにした豪快な焼き鳥で，今でも庶民のごちそうとして愛され続けている旭川のソウルフードです。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站「新子焼き」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F97",
+      "claim": "5・7 小路「ふらりーと」（5 条通 7 丁目）戰前是魚菜市場，現在是燒鳥小巷；1950 年創業的「焼鳥専門 ぎんねこ」以新子燒聞名。",
+      "quote": "戦前から魚菜市場として栄えていたこの小路は…昭和25年、秘伝のタレで焼き上げた旭川名物「新子焼き」が有名な「焼鳥専門　ぎんねこ」",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；ぎんねこ營業時間沒有店家官網可查",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F98",
+      "claim": "鹽荷爾蒙是用鹽味調味液醃的豬內臟，據說源自養豬業興盛的旭川。",
+      "quote": "塩ベースの調味液で塩漬けにされた豚のホルモンです。…旭川発祥と言われる塩ホルモン。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F99",
+      "claim": "ゲソ丼是把炸花枝腳放在白飯上、淋甜鹹醬汁的丼飯，多在地方蕎麥麵店吃到。",
+      "quote": "イカのゲソ天ぷらをご飯の上に乗せ，甘辛いタレをかけた丼です。地元のそば屋などで提供されていることが多く",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F100",
+      "claim": "旭川醬油炒麵的條件：麵用旭川產米粉加道產小麥、用旭川產醬油醬汁、配料至少一樣旭川（道北）產食材。",
+      "quote": "①麺は旭川産米粉と道産小麦を配合したものを使用し，②味付けは旭川産のしょうゆダレを使用し，③具材は旭川（道北）産の食材を一品以上使用",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F101",
+      "claim": "さんろく街（3 条通 6 丁目一帶）約有 1,000 家餐飲店，是道北最大的鬧區；旭川也以調酒聞名。",
+      "quote": "約１，０００軒の飲食店がひしめく、道北最大の歓楽街。／旭川はカクテルの街としても知られております。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F102",
+      "claim": "旭川はれて屋台村在 5 条通 8 丁目，是集合多家小店的屋台村。",
+      "quote": "Asahikawa Harete は，きた北海道の食や文化の魅力がつまったコミュニケーション型商業施設です",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；營業時間未查",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F103",
+      "claim": "日本醤油工業是旭川歷史最久的醬油廠，旭川很多拉麵店用它的醬油；直賣所也賣醬油冰淇淋等加工品。",
+      "quote": "歴史ある建物で造られる醤油は，旭川市内の多くのラーメン店でも使われています。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；地址曙 1 条 1 丁目",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F104",
+      "claim": "大雪地ビール館（宮下通 11 丁目）常備 4～5 種自釀啤酒，餐廳可以配成吉思汗。",
+      "quote": "地ビールは、常時４～５種類！…美味しいジンギスカンを一緒に食べながら",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；營業時間未查",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F105",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "旭川店家的榜單事實（Tabelog 百名店、米其林指南北海道版）這次沒查；拉麵、成吉思汗的人氣只能等寫作前補研究。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "factId": "F106",
+      "claim": "第 68 屆旭川冬まつり訂在 2027 年 2 月 6 日（六）到 2 月 11 日（四・國定假日），共 6 天。",
+      "quote": "２０２７年２月６日（土）～２月１１日（木・祝日） ６日間",
+      "sourceUrl": "https://asahikawa-winterfes.jp/5034/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川冬まつり實行委員會官網（2026-02-17 公告）；細節順次公布",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-06"
+    },
+    {
+      "factId": "F107",
+      "claim": "冬まつり會場是平和通買物公園會場（宮下通～7 条通，JR 旭川站走路 1 分鐘）與旭橋河畔會場等。",
+      "quote": "平和通買物公園会場（旭川市宮下通-7条通）、旭橋河畔会場ほか／●平和通買物公園会場：JR旭川駅から徒歩1分",
+      "sourceUrl": "https://www.visit-hokkaido.jp/event/detail_11013.html",
+      "checkedAt": "2026-10-26",
+      "condition": "HOKKAIDO LOVE!（2027 年版）；旭橋河畔會場的交通寫「シャトルバスで約30分」，接駁車細節未公布",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-06"
+    },
+    {
+      "factId": "F108",
+      "claim": "旭橋河畔會場的主雪像寬 140 公尺、高 20 公尺，曾獲金氏世界紀錄認定；還有全長 100 公尺的雪溜滑梯、雪迷宮，晚上在雪像後方放冬季煙火，冰雕會點燈。",
+      "quote": "幅140m、高さ20mという圧倒的なスケールのメイン雪像／全長100mの雪のすべり台／夜になると、大雪像の背景から冬花火が打ちあがり",
+      "sourceUrl": "https://www.visit-hokkaido.jp/event/detail_11013.html",
+      "checkedAt": "2026-10-26",
+      "condition": "HOKKAIDO LOVE!；每年雪像尺寸可能不同",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-06"
+    },
+    {
+      "factId": "F109",
+      "claim": "冬まつり會場有「冬マルシェ」賣在地美食與熱的鄉土料理。",
+      "quote": "寒さで赤くなった頬をなでる冷たい風を感じた後は「冬マルシェ」へ。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/event/detail_11013.html",
+      "checkedAt": "2026-10-26",
+      "condition": "HOKKAIDO LOVE!",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-06"
+    },
+    {
+      "factId": "F110",
+      "claim": "現在的旭川冬まつり從 1960 年 2 月第 1 屆開始；源頭是 1946 年把除雪堆成的雪山做成雪像的提案。",
+      "quote": "昭和35年2月に現在の冬まつりのスタートである「第1回旭川冬まつり」が開催されました。",
+      "sourceUrl": "https://asahikawa-winterfes.jp/history/",
+      "checkedAt": "2026-10-26",
+      "condition": "官網「冬まつりの歴史」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F111",
+      "claim": "2026 年第 67 屆（2/6～2/11）開幕當天因暴風雪預報，煙火延期、舞台活動取消。",
+      "quote": "【2月6日暴風雪予報に伴う花火順延等について】／【本日（２月６日）のステージイベント中止について】",
+      "sourceUrl": "https://asahikawa-winterfes.jp/",
+      "checkedAt": "2026-10-26",
+      "condition": "官網 NEWS 標題；2026 年會期見 https://asahikawa-winterfes.jp/4425/",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-06"
+    },
+    {
+      "factId": "F112",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "2027 年冬まつり各會場開放時間、煙火日期與時間、接駁車班次還沒公布。",
+      "sourceUrl": "https://asahikawa-winterfes.jp/",
+      "checkedAt": "2026-10-26",
+      "nextCheckAt": "2026-12-15"
+    },
+    {
+      "factId": "F113",
+      "claim": "2026 年旭川夏まつり的道新納涼花火大會 7/30 19:45 開放，約 4,000 發，在石狩川河畔旭橋～新橋之間；在右岸打上、左岸（常磐公園側）觀賞，遇惡劣天候延到隔天。",
+      "quote": "２０２６年７月３０日（木）１９時４５分打ち上げ開始予定 荒天時は翌７月３１日（金）に延期／約４，０００発（予定）",
+      "sourceUrl": "https://www.hokkaido-np.co.jp/hanabi2026/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "主辦的北海道新聞社花火頁；是旭川夏まつり的開幕活動",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F114",
+      "claim": "花火大會交通：JR 旭川站搭旭川電氣軌道公車（5、6 號等）約 10 分鐘到「常磐公園前」，再走 5 分鐘；會場周邊有交通管制。",
+      "quote": "ＪＲ旭川駅から旭川電気軌道バス（５番、６番など）で１０分、「常磐公園前」下車、バス停から徒歩５分。",
+      "sourceUrl": "https://www.hokkaido-np.co.jp/hanabi2026/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "2026 年版",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F115",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "2027 年旭川夏まつり與花火大會的日期還沒公布；夏まつり整體會期（2026 年）沒有找到主辦單位官方頁。",
+      "sourceUrl": "https://www.hokkaido-np.co.jp/hanabi2026/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F116",
+      "claim": "「北の恵み あさひかわ食べマルシェ」2026 年 9/19～9/21 在旭川站前廣場與平和通買物公園舉行，從 JR 旭川站走路約 5 分鐘。",
+      "quote": "開催期間 / 2026/9/19-9/21／●徒歩：JR旭川駅から約5分",
+      "sourceUrl": "https://www.visit-hokkaido.jp/event/detail_11446.html",
+      "checkedAt": "2026-10-26",
+      "condition": "HOKKAIDO LOVE!；會場見常磐公園與買物公園的旭川八景說明；2027 年日期未公布",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-06-15"
+    },
+    {
+      "factId": "F117",
+      "claim": "旭川（氣象台）1 月平均氣溫零下 7.0 度、平均最高零下 3.3 度、平均最低零下 11.7 度；2 月平均零下 6.0 度、最低零下 11.8 度。",
+      "quote": "1月 | … | -7.0 | -3.3 | -11.7／2月 | … | -6.0 | -1.7 | -11.8",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F118",
+      "claim": "旭川 3 月平均零下 1.4 度（最高 3.0、最低零下 6.1）；4 月平均 5.6 度（最高 11.2、最低 0.2）；5 月平均 12.3 度（最高 18.8、最低 6.1）。",
+      "quote": "3月 | … | -1.4 | 3.0 | -6.1／4月 | … | 5.6 | 11.2 | 0.2／5月 | … | 12.3 | 18.8 | 6.1",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F119",
+      "claim": "旭川 6 月平均 17.0 度（最高 22.8）；7 月平均 20.7 度（最高 26.2、最低 16.4）；8 月平均 21.2 度（最高 26.6、最低 16.9）。",
+      "quote": "6月 | … | 17.0 | 22.8 | 12.0／7月 | … | 20.7 | 26.2 | 16.4／8月 | … | 21.2 | 26.6 | 16.9",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F120",
+      "claim": "旭川 9 月平均 16.4 度（最高 21.9、最低 11.7）；10 月平均 9.4 度（最高 14.9、最低 4.4）；11 月平均 2.3 度（最高 6.2、最低零下 1.5）；12 月平均零下 4.2 度（最高零下 0.8、最低零下 8.0）。",
+      "quote": "9月 | … | 16.4 | 21.9 | 11.7／10月 | … | 9.4 | 14.9 | 4.4／11月 | … | 2.3 | 6.2 | -1.5／12月 | … | -4.2 | -0.8 | -8.0",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F121",
+      "claim": "旭川年平均氣溫 7.2 度，年降水量 1,104.4 毫米，雨最多的是 8 月（152.9 毫米）、9 月（136.3）、7 月（129.5）。",
+      "quote": "年 | … | 1104.4 | 7.2 | 12.2 | 2.4／8月 | … | 152.9／9月 | … | 136.3／7月 | … | 129.5",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F122",
+      "claim": "旭川年降雪量平年 557 公分；月降雪最多的是 12 月（158 公分）、1 月（125）、2 月（97）、11 月（82）、3 月（80）。",
+      "quote": "12月 | … | 158 | 26 | 58／1月 | … | 125 | 18 | 72／年 | … | 557 | 30 | 89",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "降雪の深さ合計（cm）；氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F123",
+      "claim": "旭川最深積雪平年值：12 月 58 公分、1 月 72 公分、2 月 84 公分、3 月 82 公分、4 月 33 公分，最厚在 2～3 月。",
+      "quote": "最深積雪 12月 58／1月 72／2月 84／3月 82／4月 33",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "最深積雪（cm）；氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F124",
+      "claim": "旭川 5 月以後到 9 月平年沒有降雪，10 月平年降雪只有 2 公分，11 月開始變多。",
+      "quote": "5月 | … | 0 | 0 | 0／6月 | … | --- ／10月 | … | 2 | 1 | 2／11月 | … | 82 | 20 | 27",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F125",
+      "claim": "旭川 1 月與 12 月的雪日數平年約 30 天，2～3 月約 26 天，一年約 151 天會下雪。",
+      "quote": "雪日数 1月 30.2／2月 26.5／3月 26.0／12月 30.1／年 151.5",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "雪日數（降雪觀測的日數）；氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F126",
+      "claim": "旭川冬天日照少：12 月平年 58.1 小時、1 月 75.3 小時；5 月最多 197.4 小時。",
+      "quote": "日照時間 12月 58.1／1月 75.3／5月 197.4",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F127",
+      "claim": "旭川觀測史上最低氣溫零下 41.0 度（1902 年 1 月 25 日），最高 37.9 度（2021 年 8 月 7 日）；最深積雪紀錄 138 公分（1987 年 3 月 4 日）。",
+      "quote": "日最低気温の低い方から (℃) -41.0 (1902/1/25)／日最高気温の高い方から (℃) 37.9 (2021/8/7)／月最深積雪の大きい方から (cm) 138 (1987/3/4)",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_s.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "氣象廳觀測史上 1～10 位",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F128",
+      "claim": "旭川夏天也會熱：2025 年最高氣溫 25 度以上有 96 天、30 度以上有 37 天，都是觀測史上最多。",
+      "quote": "日最高気温25℃以上年間日数 (日) 96 (2025)／日最高気温30℃以上年間日数 (日) 37 (2025)",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_s.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "氣象廳觀測史上順位；單一年份，不是平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F129",
+      "claim": "旭川 1～3 月平均風速約每秒 2.7～3.4 公尺，比稚內小很多；冬天最多風向是南南東。",
+      "quote": "1月 | … | 2.7 | 南南東／2月 | … | 3.1 | 南南東／3月 | … | 3.4 | 南南東",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "checkedAt": "2026-10-26",
+      "condition": "氣象廳平年值 1991～2020；與稚內比較用稚內天氣事實",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-20"
+    },
+    {
+      "factId": "F130",
+      "claim": "旭川市從 2026 年 4 月 1 日起對住宿者課住宿稅，北海道與旭川市分別課稅。",
+      "quote": "令和8年（2026年）4月1日から、旭川市内の宿泊施設にご宿泊される方に対しまして、宿泊税を課税いたします。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市稅務頁（2025-12-01 更新）",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F131",
+      "claim": "住宿稅每人每晚：房價（未稅）未滿 2 萬日圓合計 300 日圓（北海道 100、旭川市 200）；2 萬以上未滿 5 萬合計 400 日圓（各 200）；5 萬以上合計 700 日圓（北海道 500、旭川市 200）。",
+      "quote": "2万円未満 | 100円 | 200円 | 300円 | 2万円以上5万円未満 | 200円 | 400円 | 5万円以上 | 500円 | 700円",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市稅率各級都是 200 日圓（表格合併儲存格）；房價為未稅金額",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F132",
+      "claim": "住宿稅適用旭川市內的飯店、旅館、簡易宿所與民宿；付給住宿設施，事前付款時一起收或現場收，各設施不同。",
+      "quote": "旭川市内に所在するホテル・旅館・簡易宿所・民泊施設への宿泊行為に対して…「事前決済の際に宿泊料金と併せて徴収する」「現地で徴収する」など、宿泊施設によって異なります。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市稅務頁",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F133",
+      "claim": "校外教學等符合條件的住宿免稅；嬰幼兒同床等不收房費的住宿不課稅。",
+      "quote": "乳幼児の添い寝が無料となるケースのような、宿泊料金のかからない宿泊については課税の対象となりません。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市稅務頁",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F134",
+      "claim": "JR イン旭川與 JR 旭川站直接相連，有男女分開的大浴場與半露天風呂。",
+      "quote": "ＪＲ旭川駅直結の好立地。男女別大浴場と半露天風呂で癒され",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260528_KO_arujan.pdf",
+      "checkedAt": "2026-10-26",
+      "condition": "JR 北海道新聞稿的推薦設施；飯店官網這次讀不到",
+      "changeType": "stay",
+      "nextCheckAt": "2027-10-26"
+    },
+    {
+      "factId": "F135",
+      "claim": "OMO7 旭川 by 星野リゾート從 JR 旭川站走路約 13 分鐘，從旭川機場開車約 30 分鐘。",
+      "quote": "JR「旭川」駅より徒歩約13分 / 旭川空港より車で約30分",
+      "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "官網",
+      "changeType": "stay",
+      "nextCheckAt": "2027-10-26"
+    },
+    {
+      "factId": "F136",
+      "claim": "ドーミーイン旭川最上層 10 樓有天然溫泉大浴場「神威の湯」，露天風呂引地下 1,200 公尺的溫泉；從旭川機場搭巴士約 40 分鐘。",
+      "quote": "10F最上階に、天然温泉大浴場「神威の湯」。／地下1200mから汲み上げた天然温泉",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "官網（瀏覽器讀取；離車站步行分鐘數這次沒讀到）",
+      "changeType": "stay",
+      "nextCheckAt": "2027-10-26"
+    },
+    {
+      "factId": "F137",
+      "claim": "旭川站北口周邊的飯店（巴士經營者的乘車處案內圖上標示）：JR イン旭川、KOKO HOTEL 旭川駅前、プレミアホテル-CABIN-、ホテルアマネク旭川、ルートイングランド（旭川駅前）、コートホテル等。",
+      "quote": "JRイン旭川／KOKO HOTEL 旭川駅前／プレミアH CABIN／ホテルアマネク旭川／ルートイン グランド／コートＨ",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "checkedAt": "2026-10-26",
+      "condition": "只證明位置在車站前一帶；各館距離、訂房管道要在住宿頁補研究時查官網",
+      "changeType": "stay",
+      "nextCheckAt": "2027-10-26"
+    },
+    {
+      "factId": "F138",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "旭川住宿清單（各館官網、離車站步行分鐘、Trip.com／Agoda 是否訂得到）這次只查到 3 間；JR イン旭川官網網域連不上。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d000000b.html",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "factId": "F139",
+      "claim": "旭川市觀光頁的「泊まる」與「観る・遊ぶ」都導向旭川觀光コンベンション協會的網站（目前暫停公開，見 F58）。",
+      "quote": "見どころ・遊ぶスポットをお探しの方はこちら 旭川観光コンベンション協会「見る・遊ぶ」のページへ",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d000000.html",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F140",
+      "claim": "旭川市的旭山動物園頁、市觀光頁都建議搭大眾運輸前往動物園。",
+      "quote": "旭山動物園は、環境にやさしい公共交通機関での来園を推奨しています。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "checkedAt": "2026-10-26",
+      "condition": "動物園官網交通頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F141",
+      "claim": "冬期開園時間比夏季短：11/11～4/7 只開 10:30～15:30，最後入園 15:00。",
+      "quote": "11/11〜12/29 | 10:30〜15:30 | 15:00／1/2〜4/7 | 10:30〜15:30 | 15:00",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "checkedAt": "2026-10-26",
+      "condition": "推算：冬期 5 小時，夏期（5/1～10/15）7 小時 45 分；路面狀況沒有官方來源，不寫",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-11-05",
+      "derivedFrom": ["F2"]
+    },
+    {
+      "factId": "F142",
+      "claim": "動物園官網有「本日のスケジュール」頁，每天的餵食解說等活動時間看這頁；當天開園時間也顯示在官網首頁。",
+      "quote": "本日の開園時間 9:30から16:30 （最終入園 16:00）／イベント・本日のスケジュール",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/",
+      "checkedAt": "2026-10-26",
+      "condition": "2026-10-26 首頁顯示",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F143",
+      "claim": "旭山動物園的入園費可以用ふるなびトラベル支付（2026-10-21 公告）。",
+      "quote": "ふるなびトラベルによる入園料の支払が可能となりました",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/",
+      "checkedAt": "2026-10-26",
+      "condition": "官網首頁新聞；台灣讀者用處不大，不一定寫",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F144",
+      "claim": "旭川市內有可以免費參觀的釀酒相關景點：男山酒造資料舘（F76）、髙砂酒造明治酒藏直賣店（F77）；合同酒精沒有工廠參觀，在道の駅あさひかわ等地買。",
+      "quote": "工場見学はできませんが、道の駅あさひかわ等でお買い求めください。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站「合同酒精」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F145",
+      "claim": "旭川周邊有農業體驗：あらかわ牧場（江丹別，擠牛奶、做奶油起司的農家民宿）、ファームカントリーロード（動物園後方ペーパン地區，番茄採收要預約）。",
+      "quote": "乳搾りや仔牛のミルクやり等の酪農体験／トマトの収穫体験ができます。（収穫体験は事前予約制）",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F146",
+      "claim": "クラークホースガーデン（東旭川町）冬天可以騎馬走雪地，有教學，初學者也可以。",
+      "quote": "馬に乗り白銀の世界へ。…レクチャーとレッスンもしてくれるので初心者の方も安心です。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站；價格與預約方式未查",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-11-26"
+    },
+    {
+      "factId": "F147",
+      "claim": "旭川駅的觀光物產情報中心旁有「アクティビティセンター」，介紹大雪地區 1 市 7 町（旭川、鷹栖、東神樂、當麻、比布、愛別、上川、東川）的體驗與冬季雪上活動。",
+      "quote": "大雪地域１市７町エリア（旭川市・鷹栖町・東神楽町・当麻町・比布町・愛別町・上川町・東川町）",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "checkedAt": "2026-10-26",
+      "condition": "旭川市觀光入口網站",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-04-26"
+    },
+    {
+      "factId": "F148",
+      "claim": "開車到動物園正門：旭川北交流道下道道 37 號往旭川機場方向約 8 公里，在東旭川町上兵村左轉再約 2 公里到正門。",
+      "quote": "旭川北ＩＣで降り、道道37号線を旭川空港方面へ左折します。道なりに約8km進み",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "checkedAt": "2026-10-26",
+      "condition": "官網交通頁；自駕細節只在交通頁一句帶過",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F149",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "旭川市內主要博物館與景點（川村カ子トアイヌ記念館、北鎮記念館、雕刻美術館、上野ファーム、雪の美術館等）的開館時間、休館日與門票這次沒查。",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "factId": "F150",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "旭川站到旭川機場、層雲峽、東川方向道北巴士的旭川端乘車處編號，因道北巴士官網連不上沒有確認（F57）。",
+      "checkedAt": "2026-10-26"
+    }
+  ]
+}
