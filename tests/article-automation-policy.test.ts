@@ -31,23 +31,44 @@ const queuePath = path.join(projectRoot, 'content-automation/article-queue.json'
 
 type AnyRecord = Record<string, any>
 
-test('repo 內的清單通過驗證：稚內群 24 頁依大綱寫作順序排入，分類代稱與分類樹一致', async () => {
+test('repo 內的清單通過驗證：稚內群 24 頁與旭川・大雪群 21 頁依大綱寫作順序排入，稚內群在前，分類代稱與分類樹一致', async () => {
   const queue = JSON.parse(await readFile(queuePath, 'utf8'))
   assert.deepEqual(validateArticleQueue(queue), [])
   assert.deepEqual(CATEGORY_SLUGS, siteCategories.map((category) => category.slug))
   assert.deepEqual(
     queue.batches.map((batch: AnyRecord) => [batch.id, batch.items.length]),
-    [['hokkaido-wakkanai', 8], ['hokkaido-cape-soya', 2], ['hokkaido-rishiri-island', 8], ['hokkaido-rebun-island', 6]],
+    [
+      ['hokkaido-wakkanai', 8],
+      ['hokkaido-cape-soya', 2],
+      ['hokkaido-rishiri-island', 8],
+      ['hokkaido-rebun-island', 6],
+      ['hokkaido-asahikawa', 7],
+      ['hokkaido-sounkyo', 7],
+      ['hokkaido-asahidake', 6],
+      ['hokkaido-higashikawa', 1],
+    ],
   )
-  const outline = JSON.parse(await readFile(path.join(projectRoot, 'content-planning/hokkaido/hokkaido-wakkanai-outline.json'), 'utf8'))
-  assert.deepEqual(getProductionOrderedItems(queue).map((item) => item.articleId), outline.writingOrder)
+  // 本機排定工作只讀 travelGroups[0]，稚內群必須保持第一個
+  assert.deepEqual(queue.travelGroups.map((group: AnyRecord) => group.id), ['hokkaido-wakkanai', 'hokkaido-asahikawa'])
+  const outlines = await Promise.all(
+    ['hokkaido-wakkanai-outline.json', 'hokkaido-asahikawa-outline.json'].map(async (file) =>
+      JSON.parse(await readFile(path.join(projectRoot, 'content-planning/hokkaido', file), 'utf8')),
+    ),
+  )
+  assert.deepEqual(
+    getProductionOrderedItems(queue).map((item) => item.articleId),
+    outlines.flatMap((outline) => outline.writingOrder),
+  )
+  const crossPlace = findQueueItem(queue, 'asahidake-or-sounkyo')
+  assert.equal(crossPlace?.pageType, 'cross-place-page')
+  assert.equal(crossPlace?.pageRole, '跨地點頁')
 
   const result = spawnSync(process.execPath, ['scripts/validate-article-queue.mjs'], {
     cwd: projectRoot,
     encoding: 'utf8',
   })
   assert.equal(result.status, 0, result.stderr)
-  assert.match(result.stdout, /稚內批次 8 篇、宗谷岬批次 2 篇、利尻島批次 8 篇、禮文島批次 6 篇/)
+  assert.match(result.stdout, /稚內批次 8 篇、宗谷岬批次 2 篇、利尻島批次 8 篇、禮文島批次 6 篇、旭川批次 7 篇、層雲峽批次 7 篇、旭岳批次 6 篇、東川町批次 1 篇/)
 })
 
 test('完整的批次通過驗證，生產順序依批次與 order', () => {
