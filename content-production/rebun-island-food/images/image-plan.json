@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island-food",
+  "articleTitle": "禮文島美食，海膽產季與花魚怎麼吃",
+  "targetUrl": "/places/rebun-island/food/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-25",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-food/source.jpg，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-25",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "呈現禮文島的代表料理，讓讀者一眼知道這篇講的是禮文島的吃，而不是景點或住宿。",
+      "mustShow": ["禮文島的海產料理，例如花魚鏘鏘燒或海膽丼，檔案頁要能證明是在禮文島拍的"],
+      "mustNotShow": ["店家招牌、菜單或店名", "可辨識的人物臉部", "其他地方的料理冒充禮文島", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Grilled_Fish_HokkeChanChanYaki.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.48},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是檔案頁寫明「北海道礼文島のホッケのちゃんちゃん焼き」的實拍：整片剖開的花魚放在炭火網上，魚身抹了味噌、鋪滿蔥花，正好是正文說的「在厚厚一片新鮮花魚上鋪蔥、淋上醬汁再烤」，也是正文稱的禮文島代表美食。原圖 3072×2304（4:3），裁成 16:9 會切掉上下各約 12%，焦點放在 y=0.48，魚身與味噌蔥花完整，尾鰭末端會被切掉一部分，不影響辨識。畫面沒有招牌、人物或店名，檔案頁也沒寫是哪家店，圖說不寫店名，避免讓人以為是某間店的實景。cover-02 是 2010 年 9 月的禮文島元地漁港，認得出是禮文島的漁村與海岸，但畫面是起浪的海與芒草，和美食主題只有間接關係，而且是 4:3 寬 2592 px，排第二。另外看過 File:Various Japanese food in Hokkaido, Japan (256).jpg（分類在 Rebun Island，但只是一桌家常菜，沒有海膽或花魚，畫面偏暗），File:鉄府漁港 Teppu Fishing Port, Rebun - Jun 20, 2017.jpg（CC BY-SA 2.0，陰天，天空占一半，與美食無關），File:Uni don in shakotan.jpg 等海膽丼照片都是積丹或其他地方拍的，不能冒充禮文島，不列為候選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-25",
+        "photoSearchNotes": "用維基共享資源 API 查過關鍵字「礼文島 ウニ」「礼文 うに」「礼文 ホッケ」「ホッケ ちゃんちゃん焼き」「hokke grilled」「Rebun uni」「Rebun sea urchin」「Rebun food」「Rebun sushi」「Rebun fishing」「Rishiri uni」「うに漁」，以及分類 Category:Rebun Island、Category:Rebun, Hokkaido、Category:Tourism in Rebun、Category:Restaurants in Rebun、Category:Kafuka Port、Category:Transport in Rebun。能證明是禮文島海膽的照片一張都沒有；禮文島的花魚鏘鏘燒有一張（cover-01）。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Fish_HokkeChanChanYaki.jpg",
+          "creatorName": "サフィル",
+          "sourceTitle": "File:Grilled Fish HokkeChanChanYaki.jpg",
+          "sourceDescription": "北海道礼文島のホッケのちゃんちゃん焼き（Own work，分類 Pleurogrammus azonus、Charcoal grills、Grilled fish of Japan）",
+          "takenAt": "2017-05-31",
+          "width": 3072,
+          "height": 2304,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明寫明是禮文島的花魚鏘鏘燒；畫面是炭火網上抹味噌、鋪蔥花的整片花魚，就是正文介紹的禮文島代表美食。",
+          "altDraft": "炭火網上整片剖開的花魚，魚身抹了味噌、鋪滿蔥花，正在烤成鏘鏘燒",
+          "captionDraft": "禮文島的花魚鏘鏘燒，整片花魚抹上味噌、鋪蔥花，放在炭火上烤（2017 年 5 月）。",
+          "creditDraft": "照片：サフィル／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "料理與炭火烤網；看不出店名",
+            "risk": "low",
+            "notes": "沒有人物、招牌或包裝，不會讓人誤以為是本站實地拍攝或某間店的實景；圖說不寫店名。裁切後的封面要以 CC BY-SA 4.0 標示。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rebun-Island_%E7%A4%BC%E6%96%87%E5%B3%B6%E5%85%83%E5%9C%B0%E6%BC%81%E6%B8%AFIMG_2281.JPG",
+          "creatorName": "松岡明芳",
+          "sourceTitle": "File:Rebun-Island 礼文島元地漁港IMG 2281.JPG",
+          "sourceDescription": "礼文島元地漁港（Own work，分類 Rebun Island、Fishing ports in Hokkaido；GFDL 與 CC BY-SA 3.0 雙授權，本站採 CC BY-SA 3.0）",
+          "takenAt": "2010-09-21",
+          "width": 2592,
+          "height": 1944,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "畫面是禮文島西岸元地的漁港與聚落，能傳達島上漁村的氛圍，但沒有海膽、花魚或料理。",
+          "whyItFits": "檔案頁寫明是禮文島元地漁港，畫面是島上的漁港與海岸，可當海產主題的地區情境。",
+          "altDraft": "禮文島元地的漁港與聚落，前方是起浪的海與芒草，後方是長滿綠草的山壁",
+          "captionDraft": "禮文島西岸的元地漁港（2010 年 9 月）。",
+          "creditDraft": "照片：松岡明芳／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "漁港與民宅，距離遠，看不出招牌",
+            "risk": "low",
+            "notes": "沒有可辨識人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-hiking",
+  "articleTitle": "利尻山登山，兩條路線、時間與攜帶式廁所",
+  "targetUrl": "/places/rishiri-island/hiking/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-25",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island-hiking/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-25",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是爬利尻山：山上的登山步道與利尻山的山頂一帶。",
+      "mustShow": ["利尻山的登山步道或山頂一帶（看得出是在山上走的路）"],
+      "mustNotShow": ["可辨識的人物臉部", "旅館、店家招牌或商標當主體", "其他山冒充利尻山", "AI 生成或合成畫面", "與交通頁封面相同的照片（鴛泊港からの利尻山.jpg）"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Mt._Rishiri_summit_%2852357470229%29.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.55},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 2022 年 7 月 25 日上午在利尻山山頂一帶拍的（檔案頁說明「利尻富士の山頂」，分類 Summit of Mount Rishiri，座標 45.1803, 141.2415）：一條窄窄的登山步道沿著綠色山稜往上，左下是紅褐色的崩塌坡，右邊是利尻山山頂附近的尖岩，背景是一整片雲海。畫面同時有「步道」與「利尻山山頂一帶」，正好對應這篇的登山主題，也呼應正文說的山頂附近路窄、坡陡。原圖 7978×4555（約 1.75:1），裁 16:9 只切掉上下少許天空與前景，主體不受影響。沒有可辨識人物。cover-02 是 Koda6029 2016 年 9 月 23 日從 8 合目長官山拍的利尻山山頂（鴛泊路線上的視角），山形完整、有秋天的紅葉，可當備選；但畫面沒有步道，登山的感覺不如 cover-01，原圖是 4:3，裁切比較多。Raita Futo 同一天拍的 Mt. Rishiri hiking (52357583050).jpg 有步道木階梯，但登山者正面朝鏡頭，不選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-25",
+        "photoSearchNotes": "用維基共享資源 API 查關鍵字「Rishiri trail」「Rishiri summit」「Rishiri hiking」「Mount Rishiri climbing」，並列出分類 Mount Rishiri 的檔案（只看寬 1600 px 以上的橫式）。看過的縮圖：Raita Futo 2022 系列（CC BY 2.0，含 Mount Rishiri hiking、Mt. Rishiri hiking 兩張、Mt. Rishiri summit、Mount Rishiri hills、Mount Rishiri）、Koda6029 2016 系列（CC BY-SA 4.0，含長官山から見た利尻岳山頂２、九合目の急登、利尻山山頂のヤセ尾根、夜明けの鴛泊コース、北峰からの南峰とローソク岩）。Douglas Perkins 2009、regvn 2008 的山頂照尺寸偏小或構圖以人為主，不用。交通頁封面用的鴛泊港からの利尻山.jpg 依指示排除。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Mt._Rishiri_summit_(52357470229).jpg",
+          "creatorName": "Raita Futo",
+          "sourceTitle": "File:Mt. Rishiri summit (52357470229).jpg",
+          "sourceDescription": "利尻富士の山頂（Flickr 匯入，FlickreviewR 2023-03-29 已核對 CC BY 2.0，分類 Summit of Mount Rishiri，座標 45.180272, 141.241511）",
+          "takenAt": "2022-07-25",
+          "width": 7978,
+          "height": 4555,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "檔案頁寫明是利尻山山頂一帶，但沒有寫明是鴛泊路線還是沓形路線的哪一段；只當封面，不拿來指認特定路段。",
+          "whyItFits": "畫面主體是一條沿著山稜往上的窄登山步道，旁邊是利尻山山頂附近的尖岩，背景是雲海，直接對應這篇的利尻山登山。",
+          "altDraft": "利尻山山頂附近沿著綠色山稜往上的窄登山步道，右邊是尖岩，背景是雲海",
+          "captionDraft": "利尻山山頂一帶的登山步道（2022 年 7 月）。",
+          "creditDraft": "照片：Raita Futo／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀與登山步道",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築，不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E9%95%B7%E5%AE%98%E5%B1%B1%E3%81%8B%E3%82%89%E8%A6%8B%E3%81%9F%E5%88%A9%E5%B0%BB%E5%B2%B3%E5%B1%B1%E9%A0%82%EF%BC%92.jpg",
+          "creatorName": "Koda6029",
+          "sourceTitle": "File:長官山から見た利尻岳山頂２.jpg",
+          "sourceDescription": "長官山から見た利尻岳山頂（作者自己上傳，分類 Mount Rishiri）",
+          "takenAt": "2016-09-23",
+          "width": 4896,
+          "height": 3672,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "從 8 合目長官山看山頂，畫面沒有步道；秋天紅葉不代表登山季的一般景色。",
+          "whyItFits": "從鴛泊路線上的長官山看利尻山山頂，山形完整，認得出是利尻山。",
+          "altDraft": "從長官山看利尻山山頂，前景是轉紅的灌木",
+          "captionDraft": "從長官山看利尻山山頂（2016 年 9 月）。",
+          "creditDraft": "照片：Koda6029／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

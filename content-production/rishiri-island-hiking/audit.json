@@ -1,0 +1,40 @@
+{
+  "status": "mechanical_clear",
+  "scope": "mechanical_only",
+  "articleDecision": "not_evaluated",
+  "evidenceDecision": "not_evaluated",
+  "articleType": "place-entry",
+  "inputSha256": "dd7d662003a00411dd7b5c0f3af290cb8da584aeecca95d3b3d839e3c187f986",
+  "metrics": {
+    "h1Count": 1,
+    "headingCount": 17,
+    "h2Count": 4,
+    "h3Count": 11,
+    "faqSectionCount": 0,
+    "inlineSourceLinks": 0,
+    "sourceLinks": 21,
+    "furtherReadingLinks": 7
+  },
+  "issues": [],
+  "reviewSignals": [
+    {
+      "code": "FAQ_MISSING",
+      "line": 1,
+      "message": "沒有常見問題區；請核對研究中是否仍有正文未直接回答的真實問題。"
+    },
+    {
+      "code": "PRICE_TAX_UNCLEAR",
+      "line": 42,
+      "message": "日圓價格沒有寫明含稅或未稅；官網有標示就在正文寫出，沒有標示就照官網的數字寫。",
+      "excerpt": "| 住宿 | 小屋一棟一晚6,000日圓，帳篷區大人每人600日圓 |"
+    },
+    {
+      "code": "PRICE_TAX_UNCLEAR",
+      "line": 70,
+      "message": "日圓價格沒有寫明含稅或未稅；官網有標示就在正文寫出，沒有標示就照官網的數字寫。",
+      "excerpt": "攜帶式廁所一套450日圓，島上的住宿、商店、便利商店、町公所、觀光案內所都有賣。北麓野營場等3處露營場也買得到。"
+    }
+  ],
+  "referenceReviewProvided": true,
+  "notice": "格式結果與退出碼不能核准文章。仍須另做讀者價值與事實查核。"
+}
