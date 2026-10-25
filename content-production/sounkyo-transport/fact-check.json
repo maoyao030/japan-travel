@@ -1,0 +1,854 @@
+{
+  "schemaVersion": 1,
+  "articleId": "sounkyo-transport",
+  "articleSha256": "fe713512f8c30342bdef4a0f2b8f2ab36d2bac5aeaad87edc2e848b15ffff185",
+  "checker": "事實查核子代理（Claude Opus 5.5，唯讀，非作者、非潤稿者；本機自動寫作驗收第 2 點）。道北巴士官網 www.dohokubus.com 2026-10-26 連線逾時，時刻表 PDF 改用 Internet Archive 2026-10-08 存檔、層雲峽觀光協會交通頁轉貼的同一張時刻表圖檔與道北巴士官方販售網站（tourbooking-japan）三方核對，三者一致。JR 時刻用 curl 讀 JR 北海道官方路線時刻表（全日版，資料依「JR時刻表」令和8年10月號）。上川町紅葉期管制原頁已 404，改讀 Internet Archive 2026-08-23 存檔。第 2 輪複查（2026-10-26，對 revisions-round1.md 後的版本）：全文逐句重新比對，改過與新增的句子重新打開來源（黑岳纜車交通頁、阿寒巴士 PDF 第 2 頁、上川町管制公告存檔、觀光協會接駁車公告、販售網站 1497 頁原始碼與 en-US／zh-TW 網址、上川町層雲峽交通機關頁）。",
+  "checkedAt": "2026-10-26",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "層雲峽溫泉街在旭川東邊約66公里，開車走國道39號就會抵達",
+      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
+      "sourceTitle": "アクセス｜層雲峡観光協会",
+      "sourceQuote": "旭川 - 層雲峡 旭川 - (国道39号)- 層雲峡 66Km",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "再往東翻過石北峠就是北見",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
+      "sourceTitle": "アクセス｜大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "国道39号線を旭川方面に石北峠を越え約1時間30分（北見から）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "層雲峽交通要靠巴士，鐵路沒有通到層雲峽，搭火車最近只到上川站，再轉道北巴士（道北バス）進溫泉街。",
+      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
+      "sourceTitle": "アクセス｜層雲峡観光協会",
+      "sourceQuote": "JR上川駅から層雲峡までは電車はありません（バスもしくはタクシーをご利用下さい）",
+      "verdict": "verified",
+      "notes": "同 H3「搭 JR 到上川站轉巴士」開頭一句。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "從JR旭川站前搭直達巴士，一天7班，車程1小時59分",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "所要時間 ： 1時間 59分｜6:55 旭川駅前発 ⇒ 8:54 層雲峡着 … 18:25 旭川駅前発 ⇒ 20:24 層雲峡着（7便）",
+      "verdict": "verified",
+      "notes": "存檔 PDF（2026.7.1改正）旭川→層雲峽 7 班，每班都是 1 小時 59 分。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "單程2,140日圓",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "◎層雲峡～旭川 片道料金 ¥2,140",
+      "verdict": "verified",
+      "notes": "官網原站連線逾時，以存檔讀取；觀光協會轉貼圖檔相同。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "也可以搭JR到上川站再轉巴士，上川到層雲峽30分鐘，一天有10班。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1498",
+      "sourceTitle": "【片道券】 上川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "所要時間 ： 30分｜8:24 上川駅前発 ⇒ 8:54 層雲峡着 … 19:54 上川駅前発 ⇒ 20:24 層雲峡着（10便）",
+      "verdict": "verified",
+      "notes": "存檔 PDF 上川森のテラス バスタッチ発 10 班一致。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "回程的巴士收得早，直達旭川的末班車17:00就從層雲峽開出",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "層雲峡 発 … 17:00（旭川行き最終）｜旭川駅前 着 18:55",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "18:55往上川那班是當天最後一班能搭的巴士。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "層雲峡 発 18:55 → 上川森のテラスバスタッチ 着 19:25（層雲峡発の最終）",
+      "verdict": "verified",
+      "notes": "サンライズ號往旭川方向 18:57 也會經過層雲峽，但阿寒巴士時刻表 PDF 標層雲峽以西各站為「降」（只能下車），所以 18:55 是最後一班能搭的巴士。第 2 輪：正文已改成「最後一班能搭的巴士」。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "最省事的是在JR旭川站前的巴士總站「駅前バスタッチ」裡的8號乘車處上車，中途不用換車就一路坐到層雲峽。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "●旭川駅前のりば … のりば⑧（駅前バスタッチ内）｜旭川駅前のりば ⑧ 旭川・上川から層雲峡・大雪湖方面行",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "直達車會在上川站前停5分鐘，搭火車到上川，也能在那裡上同一班車。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "上川森のテラス バスタッチ 着 8:19 11:19 12:19 14:49 15:49 17:59 19:49｜発 8:24 11:24 12:24 14:54 15:54 18:04 19:54",
+      "verdict": "verified",
+      "notes": "每班直達車上川到站與發車都差 5 分鐘。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "去程表：6:55/8:24/8:54、上川始發 9:30/10:00、上川始發 10:50/11:20、9:55/11:24/11:54、10:55/12:24/12:54、上川始發 14:00/14:30、13:25/14:54/15:24、14:25/15:54/16:24、16:35/18:04/18:34、18:25/19:54/20:24",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "旭川駅前 発 6:55 9:55 10:55 13:25 14:25 16:35 18:25｜上川森のテラス バスタッチ 発 8:24 9:30 10:50 11:24 12:24 14:00 14:54 15:54 18:04 19:54｜層雲峡 着 8:54 10:00 11:20 11:54 12:54 14:30 15:24 16:24 18:34 20:24",
+      "verdict": "verified",
+      "notes": "30 格逐一核對；觀光協會轉貼圖檔（https://sounkyo.net/common/img/content/content_20260630_164326.jpg）與販售網站 1497、1498 頁的時刻相同。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "回程表：6:20旭川8:15、7:30旭川9:25、9:10上川9:40、10:10旭川12:05、11:30旭川13:25、13:30旭川15:25、14:40旭川16:35、16:40上川17:10、17:00旭川18:55、18:55上川19:25",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "層雲峡 発 6:20 7:30 9:10 10:10 11:30 13:30 14:40 16:40 17:00 18:55｜上川 着 … 9:40 … 17:10 … 19:25｜旭川駅前 着 8:15 9:25 12:05 13:25 15:25 16:35 18:55",
+      "verdict": "verified",
+      "notes": "30 格逐一核對；觀光協會轉貼圖檔、販售網站 1497、1498 頁相同。"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "兩張表是道北巴士2026年7月1日改點後的時刻，平日與假日相同。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "●旭川駅前から層雲峡行き：おすすめの時間（平日・休日同じです）",
+      "verdict": "verified",
+      "notes": "存檔 PDF 標「2026．7．1 改正」，PDF 只有一張表、沒有分平日假日。販售頁標「2025/7/1改定」但時刻與 2026.7.1 版相同。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "冬天出發前，到道北巴士官網或層雲峽觀光協會的交通頁看一下當季時刻表，也可以打旭川站前營業所0166-23-4161問。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "【問い合わせ先】◎上川営業所 ☎01658-2-1316 ◎旭川駅前営業所 ☎0166-23-4161",
+      "verdict": "verified",
+      "notes": "觀光協會交通頁確實貼著時刻表（「2026年7月以降 道北バス時刻表」）。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "單程車資旭川到層雲峽2,140日圓、上川到層雲峽890日圓、旭川到上川1,280日圓",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "◎層雲峡～旭川 片道料金 ¥2,140｜◎上 川～旭川 片道料金 ¥1,280｜◎上 川～層雲峡 片道料金 ¥890",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "從旭川來回一趟是4,280日圓。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "◎層雲峡～旭川 片道料金 ¥2,140",
+      "verdict": "verified",
+      "notes": "重算 2,140 × 2 = 4,280。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "想從旭川當天來回，搭9:55的車11:54抵達，回程坐17:00的直達末班車就能在溫泉街待到傍晚。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "旭川駅前 発 9:55 → 層雲峡 着 11:54｜層雲峡 発 17:00 → 旭川駅前 着 18:55",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "大件行李可以帶上車，但件數太多、或大到妨礙行車，可能不讓你帶上車。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "車内にお持ち込みいただけます。ただし、手回り品と判断できないほど数が多い場合や大きすぎるお荷物等、運行に支障をきたす恐れがある場合には、持ち込みをお断りすることがございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "道北巴士的官方販售網站上有兩種單程票。旭川站前到層雲峽大人2,140日圓、兒童1,070日圓，上川站前到層雲峽大人890日圓、兒童450日圓。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-list?tagIds=270",
+      "sourceTitle": "道北バス公式販売サイト プラン一覧",
+      "sourceQuote": "【片道券】 旭川駅前 ー 層雲峡（大人2,140円、子供1,070円）｜【片道券】 上川駅前 ー 層雲峡（大人890円、子供450円）",
+      "verdict": "verified",
+      "notes": "網站署名「道北バス公式販売サイト」，販售・催行會社道北バス株式会社。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "網路票在道北巴士的官方販售網站用信用卡買，搭車時出示手機畫面就好，不用註冊會員或下載App。",
+      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
+      "sourceTitle": "アクセス｜層雲峡観光協会",
+      "sourceQuote": "旭川駅/上川駅⇔層雲峡区間の便利なウェブ乗車券販売中（会員登録・アプリダウンロード不要）",
+      "verdict": "verified",
+      "notes": "信用卡付款與票附在完成信見販售網站 1497 頁「予約時にクレジットカード…でお支払いください」「乗車券は購入完了メールに付いています」。官方寫的是下車時出示，下一段步驟已寫清楚；「搭車時」可理解為搭這班車時。"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "價格跟上車付現金一樣，只是出發前就付清。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "◎層雲峡～旭川 片道料金 ¥2,140｜◎上 川～層雲峡 片道料金 ¥890",
+      "verdict": "verified",
+      "notes": "比較：時刻表車資 2,140／890 與網路票大人價 2,140／890 相同；販售頁寫「当日の現金払いが不要で便利な事前購入のWEB乗車券」。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "車上是自由座，有票不代表一定有位子。遇到客滿或停駛搭不上，改搭下一班就好，同一張票哪一班都能用。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "この乗車券はご乗車を確約するものではありません。満席や運休などでご乗車いただけない場合もございます。また、車内は自由席です。｜満席でご希望の便に乗車出来ない場合は、次の便にご乗車をお願いいたします。｜この乗車券はどの便でもご利用いただけます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "上車時抽一張整理券。下車前打開購票完成信，點「受付用チケットを表示するにはここをクリックしてください」叫出票券畫面。下車時把票券畫面和整理券一起給司機看，司機確認後會按下「使用する」。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "①乗車時に整理券をお取りください。…④降車時に、購入完了メールの「受付用チケットを表示するにはここをクリックしてください」をクリックして整理券と一緒に乗車券を提示してください。⑤乗務員が乗車券の内容を確認したら、整理券を運賃箱に入れて、乗車券画面の「使用する」ボタンをクリックします。",
+      "verdict": "verified",
+      "notes": "按鈕文字與原頁一致。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "票都是單程，去程回程要分開買。幾個人一起買會合成一張票，大家要搭同一班，有人中途下車，剩下的區間就作廢。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "片道券なので、行きと帰りをまとめてご購入はできません。｜複数人分購入した場合でも乗車券はまとめての発行になりますので、お連れ様と一緒にご乗車ください。｜途中下車された場合、前途無効となります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "改班次要先取消再重買，取消退票每張收100日圓手續費，網路上也開不出收據。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "変更される際はキャンセル（払い戻し）の上、新たな内容で改めてご購入をおねがいいたします。｜払い戻しに際しては1枚につき100円の手数料をいただきます。｜WEBでの領収書の発行はできません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "萬一手機沒電叫不出畫面，改付現金就行。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "スマートフォンなど故障、バッテリー切れ、通信不要などにより画面表示が出来ない場合、現金でのお支払いをお願いいたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "目前網站上這款票賣到2027年6月30日。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-list?tagIds=270",
+      "sourceTitle": "道北バス公式販売サイト プラン一覧",
+      "sourceQuote": "2026/06/08(月)～2027/06/30(水)",
+      "verdict": "verified",
+      "notes": "兩款單程票都是同一期間。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "從札幌出發，搭JR特急「オホーツク」不用換車就能坐到上川，在站前轉巴士30分鐘到層雲峽。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2920&d=20261210",
+      "sourceTitle": "石北本線(旭川―遠軽―網走) 下り 時刻表｜北海道旅客鉄道株式会社",
+      "sourceQuote": "71D オホーツク 1 始発 札幌 652 … 上川 着 912｜73D オホーツク 3 始発 札幌 1530 … 上川 着 1753",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "早上搭オホーツク1號，札幌6:52開、9:12到上川，接得上9:30的巴士，10:00就抵達溫泉街。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2920&d=20261210",
+      "sourceTitle": "石北本線(旭川―遠軽―網走) 下り 時刻表｜北海道旅客鉄道株式会社",
+      "sourceQuote": "71D オホーツク 1 札幌/652 … 上川 着 912",
+      "verdict": "verified",
+      "notes": "巴士端：存檔 PDF 上川発 9:30 → 層雲峡着 10:00。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "下午出發可以搭3號，15:30從札幌開出、17:53到上川，轉18:04的巴士18:34抵達。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2920&d=20261210",
+      "sourceTitle": "石北本線(旭川―遠軽―網走) 下り 時刻表｜北海道旅客鉄道株式会社",
+      "sourceQuote": "73D オホーツク 3 札幌/1530 … 上川 着 1753",
+      "verdict": "verified",
+      "notes": "巴士端：上川発 18:04 → 層雲峡着 18:34。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "也可以先搭JR特急到旭川，最快1小時25分，再到旭川站前轉直達巴士。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260528_KO_arujan.pdf",
+      "sourceTitle": "JR北海道 プレスリリース（2026年5月28日）",
+      "sourceQuote": "最速１時間25 分の快適な移動を体験ください。",
+      "verdict": "verified",
+      "notes": "札幌～旭川間。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "開車約205公里，走道央道接旭川紋別道到上川層雲峽IC約2小時30分，下交流道再開約30分鐘。",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
+      "sourceTitle": "アクセス｜大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "道央自動車道から比布JCTにて旭川紋別道に乗り換え上川層雲峡ICまで約2時間30分 そこから北見・網走方面へ約30分",
+      "verdict": "verified",
+      "notes": "205 km 見觀光協會交通頁「札幌-（道央自動車道）-比布JCT -（旭川紋別自動車道）-上川層雲峡IC - (国道39号) - 層雲峡 205Km」。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "住朝陽亭或朝陽リゾート的話，2026年10月到2027年3月有從札幌與旭川出發的付費接駁車。只載住宿客",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "アクセス｜層雲峡温泉 朝陽亭",
+      "sourceQuote": "※札幌発着送迎バスは2026年10月1日から2027年3月31日までの運行となります。旭川発着送迎バスは2026年10月1日から2027年3月31日までの運行となります。｜【ご料金：片道 お一人 2,500円税込み】｜送迎バスの予約は宿泊予約がキャンセルとなった時点で、自動的にキャンセルとなります。",
+      "verdict": "verified",
+      "notes": "時刻表列朝陽亭與朝陽リゾートホテル；送迎綁定宿泊預約。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "巴士站「上川森のテラス バスタッチ」就在JR上川站前，旭川開來的直達車也停這裡，到層雲峽30分鐘、單程890日圓。",
+      "sourceUrl": "https://sounkyo.net/hyoubaku/access/",
+      "sourceTitle": "層雲峡温泉氷瀑まつり アクセス",
+      "sourceQuote": "JR上川駅前にある、道北バス“上川森のテラス バスタッチ”からご乗車ください。",
+      "verdict": "verified",
+      "notes": "直達車停靠、30 分、890 日圓見存檔 PDF 與販售網站 1498 頁。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "JR轉乘表：7:01普通8:01→8:24/8:54、8:31特急オホーツク1號9:12→9:30/10:00、10:01普通11:01→11:24/11:54、12:38特急大雪13:21→14:00/14:30、13:48普通14:47→14:54/15:24、15:08特別快速きたみ16:00→18:04/18:34、16:31普通17:30→18:04/18:34、17:08特急オホーツク3號17:53→18:04/18:34、18:32普通19:32→19:54/20:24、19:05特急大雪19:46→19:54/20:24",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2920&d=20261210",
+      "sourceTitle": "石北本線(旭川―遠軽―網走) 下り 時刻表｜北海道旅客鉄道株式会社",
+      "sourceQuote": "旭川 発 701 831 1001 1238 1348 1508 1631 1708 1832 1905｜上川 着 801 912 1101 1321 1447 1600 1730 1753 1932 1946｜列車名 普通 オホーツク1 普通 大雪 普通 きたみ 普通 オホーツク3 普通 大雪",
+      "verdict": "verified",
+      "notes": "JR 50 格與巴士轉乘欄逐格核對；每列都接上川到站後的第一班巴士（例 10:01→11:01 到站時 10:50 已開走，接 11:24）。旭川 8:00（◆運轉日限定）與 17:31 兩班不到上川，表上未列正確。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "火車時刻取自JR北海道，2026年10月26日和12月10日的班次相同。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2920&d=20261210",
+      "sourceTitle": "石北本線(旭川―遠軽―網走) 下り 時刻表｜北海道旅客鉄道株式会社",
+      "sourceQuote": "運転日 毎日（表中各列車）｜※JRデータの内容は、株式会社交通新聞社発行の「JR時刻表」令和8年10月号に基づいています。",
+      "verdict": "verified",
+      "notes": "curl 讀到的是「全日」版，表中列車運轉日都是「毎日」，兩個日期同一張表。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "像是搭12:38的特急大雪轉上川14:00的巴士，14:30就到層雲峽，比13:25從旭川開出的直達車早54分鐘。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "上川 発 14:00 → 層雲峡 着 14:30｜旭川駅前 発 13:25 → 層雲峡 着 15:24",
+      "verdict": "verified",
+      "notes": "重算 15:24 − 14:30 = 54 分；JR 大雪 12:38 → 上川 13:21。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "15:08的特別快速きたみ就不好接，到上川時15:54的巴士剛開走，得等到18:04。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2920&d=20261210",
+      "sourceTitle": "石北本線(旭川―遠軽―網走) 下り 時刻表｜北海道旅客鉄道株式会社",
+      "sourceQuote": "3583D きたみ 旭川 発 1508 … 上川 着 1600",
+      "verdict": "verified",
+      "notes": "16:00 到站時 15:54 那班已開；上川下一班是 18:04（存檔 PDF）。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "最晚還接得上當天最後一班巴士的，是旭川19:05開的特急大雪，再晚開的火車到上川時已經沒有巴士。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2920&d=20261210",
+      "sourceTitle": "石北本線(旭川―遠軽―網走) 下り 時刻表｜北海道旅客鉄道株式会社",
+      "sourceQuote": "3593D 大雪 旭川 1905 → 上川 着 1946｜4533D 普通 旭川 1954 → 上川 着 2052",
+      "verdict": "verified",
+      "notes": "末班巴士上川 19:54 發；下一班火車 20:52 才到。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "從層雲峽回札幌，上午搭9:10的巴士到上川，接9:56的特急オホーツク2號，12:10到札幌。傍晚則是16:40的巴士接17:40的オホーツク4號，20:02回到札幌。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2921&d=20261210",
+      "sourceTitle": "石北本線(網走―遠軽―旭川) 上り 時刻表｜北海道旅客鉄道株式会社",
+      "sourceQuote": "72D オホーツク 2 上川 発 956 … 終着 札幌/1210｜74D オホーツク 4 上川 発 1740 … 終着 札幌/2002",
+      "verdict": "verified",
+      "notes": "巴士端：層雲峡 9:10 → 上川 9:40、16:40 → 17:10。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "從新千歲機場出發，可以搭往旭川的預約制巴士「たいせつライナー」，大人單程4,500日圓。乘車前2個月開放預約，到旭川後在站前轉道北巴士。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
+      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港｜旭川電気軌道株式会社",
+      "sourceQuote": "乗車券のご予約は 乗車2カ月前より 承ります｜片道 4,500 円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "飛到旭川機場，可以搭配合班機起降的機場專用巴士到旭川市區，約30到40分鐘，再轉往層雲峽的道北巴士。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+      "sourceTitle": "バス｜旭川空港",
+      "sourceQuote": "空港専用バスは飛行機の発着時刻に接続して運行しております。｜空港専用バス 旭川市内 約30～40分",
+      "verdict": "verified",
+      "notes": "第 1 輪判 incorrect（把配合班機的專用巴士和不配合班機的道北巴士直行便混在一起）；第 2 輪正文已改，主詞與時間都和官方一致。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "層雲峽的計程車公司「層雲峡観光ハイヤー」也能到機場、車站接人，電話01658-5-3221。",
+      "sourceUrl": "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo00000004ba.html",
+      "sourceTitle": "層雲峡温泉街 交通機関｜北海道上川町",
+      "sourceQuote": "層雲峡観光ハイヤー 電話番号：01658-5-3221",
+      "verdict": "verified",
+      "notes": "上川町頁最終更新 2014-01-24，較舊；但電話與現行觀光協會交通頁一致（「空港や駅へのお迎えにも伺います…電話番号（層雲峡営業所）01658-5-3221」），判 verified。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "從旭川走國道39號往北見方向約66公里，開車約1小時30分。",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
+      "sourceTitle": "アクセス｜大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "国道39号線を北見・網走方面に約1時間30分（旭川から）",
+      "verdict": "verified",
+      "notes": "66 km 見觀光協會交通頁。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "從北見翻石北峠約90公里、1小時30分，帶廣走國道273號翻三國峠約122公里、2小時。",
+      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
+      "sourceTitle": "アクセス｜層雲峡観光協会",
+      "sourceQuote": "北見 - (国道39号) - 層雲峡 90Km｜帯広 - (国道273号) - 層雲峡 122Km",
+      "verdict": "verified",
+      "notes": "時間見黑岳纜車頁「石北峠を越え約1時間30分」「国道273号を旭川方面に三国峠を越え約2時間」。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "層雲峽溫泉街2026年10月22日就已經積雪，早晚路面可能結冰。遊客中心提醒前往層雲峽一定要換冬季輪胎，夏季輪胎開山路非常危險。開始積雪的時間跟前一年差不多",
+      "sourceUrl": "https://sounkyovc.net/blog/92605",
+      "sourceTitle": "層雲峡は雪景色｜層雲峡ビジターセンター",
+      "sourceQuote": "2026年10月22日 09時45分｜層雲峡温泉街にも雪が積もりました。昨年とほぼ同時期の雪景色となります。…朝晩を中心に路面凍結の恐れがあり、夏タイヤでの峠道の走行は大変危険です。層雲峡へお越しの際は、必ず冬タイヤを装着の上",
+      "verdict": "verified",
+      "notes": "「10月下旬以後租車…選冬季輪胎」是依此的建議。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "冬天碰上暴風雪、大雪或有雪崩危險時，國道會臨時封路。",
+      "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll000000b6t2-att/pm5osg00000004sh.pdf",
+      "sourceTitle": "管内の国道の通行止めについて（第３報）令和７年２月４日｜北海道開発局旭川開発建設部",
+      "sourceQuote": "解除未定（大雪による道路障害のおそれのため）｜解除未定（大雪による雪崩のおそれのため）",
+      "verdict": "verified",
+      "notes": "吹雪見令和4年2月21日新聞稿「解除未定（吹雪のため）」。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "像2025年2月4日早上7點，國道39號從層雲峽溫泉到北見市留邊蘂町富士見的石北峠路段封閉32.5公里。國道273號三國峠前一晚10點就封了31.4公里，兩段都沒有預定的解除時間。",
+      "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll000000b6t2-att/pm5osg00000004sh.pdf",
+      "sourceTitle": "管内の国道の通行止めについて（第３報）令和７年２月４日｜北海道開発局旭川開発建設部",
+      "sourceQuote": "⑤国道２７３号 上士幌町三股～上川町層雲峡大学平 Ｌ＝３１．４ｋｍ ２月３日（月）２２：００～ 解除未定｜⑥国道３９号 上川町層雲峡温泉～北見市留辺蘂町富士見 Ｌ＝３２．５ｋｍ ２月４日（火）７：００～ 解除未定",
+      "verdict": "verified",
+      "notes": "令和7年＝2025年。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "封路要等天氣轉好、檢查完才會解除。冬天想翻石北峠往北見、或翻三國峠往帶廣，出發當天到「北海道地區道路情報」查一次路況。",
+      "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll0000001j9b-att/a079ll0000004amb.pdf",
+      "sourceTitle": "管内の国道の通行止めについて（第１報）令和４年２月２１日｜北海道開発局旭川開発建設部",
+      "sourceQuote": "なお、通行止め解除は、天候回復後、点検を行った上で行う予定です。｜「北海道地区道路情報」 https://info-road.hdb.hkd.mlit.go.jp/",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "從溫泉街往大雪湖的巴士只在夏秋行駛，大雪高原溫泉則完全沒有公車。",
+      "sourceUrl": "https://www.higuma-center.com/blank-4",
+      "sourceTitle": "アクセス｜大雪高原温泉ヒグマ情報センター",
+      "sourceQuote": "※公共交通機関はありません。自家用車またはタクシーでお越しください。",
+      "verdict": "verified",
+      "notes": "大雪湖班次見存檔 PDF「※層雲峡～大雪湖（令和8年7月1日～10月31日の運行）」。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "2026年往大雪湖的季節班到10月31日結束",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "※層雲峡～大雪湖（令和8年7月1日～10月31日の運行）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "往銀泉台和高原溫泉的林道也已經封閉",
+      "sourceUrl": "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo00000004vu.html",
+      "sourceTitle": "観光道路情報｜北海道上川町",
+      "sourceQuote": "道道1162号 銀泉台線 … 通行止め開始 令和8年9月29日（火）11時から｜町道高原温泉道路 … 通行止め開始 令和8年10月11日（日）17時から",
+      "verdict": "verified",
+      "notes": "頁面最終更新 2026-09-28。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "2026年這兩條林道是6月10日、11日才開放，開放日會因天候變動，隔年的日期要看上川町的公告。",
+      "sourceUrl": "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo00000004vu.html",
+      "sourceTitle": "観光道路情報｜北海道上川町",
+      "sourceQuote": "道道1162号 銀泉台線 開通 令和8年6月11日（木）11時から｜町道高原温泉道路 開通 令和8年6月10日（水）9時00分から ※気象状況その他事情により開通日が変更となる場合があります",
+      "verdict": "verified",
+      "notes": "第 1 輪原句「要到隔年6月才會開放」判 unsupported；第 2 輪改成 2026 年的日期加條件，和官方一致。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "沒有公車的季節，可以叫層雲峽的計程車，他們也做北海道內的觀光行程。",
+      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
+      "sourceTitle": "アクセス｜層雲峡観光協会",
+      "sourceQuote": "層雲峡の観光はもとより、道内観光もしております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "2026年7月1日到10月31日，每天有一班巴士往返大雪湖。（表）層雲峽12:50開／14:00到、瀧見台13:09／13:49、大函入口13:15／13:43、大雪湖13:23到／13:38開",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "層雲峡 発 ※12:50｜滝見台 発 ※13:09｜大函入口 発 ※13:15｜大雪湖 着 ※13:23｜大雪湖 発 ※13:38｜大函入口 発 ※13:43｜滝見台 発 ※13:49｜層雲峡 着 ※14:00｜※令和8年7月1日～10月31日の運行",
+      "verdict": "verified",
+      "notes": "第 2 輪新表 8 格逐一核對。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "單程車資到大雪湖450日圓、到瀧見台220日圓。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "◎層雲峡～大雪湖 片道料金 ¥450｜◎層雲峡～滝見台 片道料金 ¥220",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "紅葉季的銀泉台和大雪高原溫泉都有交通管制，下面寫的是2026年的做法。兩條林道管制期間都能自己開車上去，但要先在上川町指定的網站預約並付協力金，每台2,000日圓，前一天15:00截止，網站要註冊會員。沒預約可能進不去，兩條林道都是16:30關閘。",
+      "sourceUrl": "https://web.archive.org/web/20260823191057id_/https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo0000000eco.html",
+      "sourceTitle": "【予約開始】令和8年度紅葉期の車両交通規制（マイカー規制）｜北海道上川町（Internet Archive 2026-08-23 存檔）",
+      "sourceQuote": "②マイカー交互通行（予約制）｜高原温泉線は、上りと下りを分けてマイカーでの交互通行となります。｜マイカー： 2,000円／1台あたり｜会員登録が必要になりますのでご注意下さい。※予約は前日の15時までに締め切ります｜予約が無いと通行できない場合があります｜16：30にゲートが閉鎖されます",
+      "verdict": "verified",
+      "notes": "兩條林道的條件逐項核對一致。上川町原頁現在 404，以 2026-08-23 存檔讀取；觀光協會轉貼公告（content=101）也寫「事前申し込み 必要」。「16：30にゲートが閉鎖されます」在上川町公告的銀泉台線（マイカー交互通行）與高原温泉線兩節各出現一次，正文「兩條林道都是16:30關閘」與官方一致（第 3 輪確認）。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "表格：林道開放 銀泉台6月11日11:00、大雪高原溫泉6月10日9:00",
+      "sourceUrl": "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo00000004vu.html",
+      "sourceTitle": "観光道路情報｜北海道上川町",
+      "sourceQuote": "道道1162号 銀泉台線 開通 令和8年6月11日（木）11時から｜町道高原温泉道路 開通 令和8年6月10日（水）9時00分から",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "表格：夏季登山接駁車 銀泉台7月11日～9月6日的週末與假日；大雪高原溫泉沒有公車",
+      "sourceUrl": "https://sounkyo.net/news/detail.html?content=98",
+      "sourceTitle": "層雲峡⇔銀泉台 登山シャトルバス運行が開始いたします｜層雲峡観光協会",
+      "sourceQuote": "運行期間：2026年7月11～9月6日（土日・祝のみ）",
+      "verdict": "verified",
+      "notes": "高原溫泉沒有大眾運輸見ヒグマ情報センター「公共交通機関はありません」。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "表格：紅葉期車輛管制 銀泉台9月12日～9月23日、大雪高原溫泉9月19日～9月30日",
+      "sourceUrl": "https://sounkyo.net/news/detail.html?content=101",
+      "sourceTitle": "令和8年度 紅葉期の車両交通規制（マイカー規制）｜層雲峡観光協会",
+      "sourceQuote": "1．道道銀泉台線 ●令和8年9月12日～9月23日｜2．町道高原温泉線 ●令和8年9月19日～9月30日",
+      "verdict": "verified",
+      "notes": "上川町存檔頁相同。"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "表格：管制期間自己開車 兩地都是「預約分時段交互通行，每台2,000日圓」；管制期間不開車 銀泉台「上川町的預約制包車」、大雪高原溫泉「沒有接駁巴士」",
+      "sourceUrl": "https://web.archive.org/web/20260823191057id_/https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo0000000eco.html",
+      "sourceTitle": "【予約開始】令和8年度紅葉期の車両交通規制（マイカー規制）｜北海道上川町（Internet Archive 2026-08-23 存檔）",
+      "sourceQuote": "令和8年度は、①層雲峡インフォメーションセンター発着とする 予約制貸切バス の運行 ②マイカー交互交通規制 （予約制）を実施します。｜高原温泉線は、上りと下りを分けてマイカーでの交互通行となります。マイカー交互通行（事前予約制）｜マイカー： 2,000円／1台あたり",
+      "verdict": "verified",
+      "notes": "高原溫泉線沒有接駁巴士另見觀光協會沼めぐりニュースNo.8「今年度はシャトルバスの運行はありません」。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "表格：林道封閉 銀泉台9月29日11:00起、大雪高原溫泉10月11日17:00起",
+      "sourceUrl": "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo00000004vu.html",
+      "sourceTitle": "観光道路情報｜北海道上川町",
+      "sourceQuote": "通行止め開始 令和8年9月29日（火）11時から｜通行止め開始 令和8年10月11日（日）17時から",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "2026年道北巴士的赤岳登山巴士（往銀泉台）7月到9月都沒有開，紅葉期9月12日到23日改由上川町安排要預約的包車。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "令和8年7月～9月末までの大雪山赤岳登山バスにつきましては運行いたしません。9月12日～23日までの紅葉期間については、上川町で貸切（予約制）を運行いたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "包車從層雲峽インフォメーションセンター前6:00、7:00出發，1小時到銀泉台，回程15:00、15:30開出。單程2,500日圓、來回5,000日圓，……每班40人，和自用車一樣在上川町指定的網站事先付款，前一天15:00截止。沒預約的話，只有當天還有空位才能上車。",
+      "sourceUrl": "https://web.archive.org/web/20260823191057id_/https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo0000000eco.html",
+      "sourceTitle": "【予約開始】令和8年度紅葉期の車両交通規制（マイカー規制）｜北海道上川町（Internet Archive 2026-08-23 存檔）",
+      "sourceQuote": "バス① 層雲峡発6：00 ～ 銀泉台着7：00 バス② 層雲峡発7：00 ～ 銀泉台着8：00｜バス① 銀泉台発15：00 ～ 層雲峡着16：00 バス② 銀泉台発15：30 ～ 層雲峡着16：30｜片道 2,500円 往復 5,000円｜1台あたり 40人｜予約（事前決済）｜※予約は前日の15時までに締め切ります｜事前予約が無い場合、乗車できない可能性があります。（当日、空席がある場合のみご利用いただけます）",
+      "verdict": "verified",
+      "notes": "研究記錄原本只靠販售頁（activityjapan），本次找到上川町官方頁存檔佐證；層雲峽遊客中心 2026-09-11 公告（sounkyovc.net/blog/92483）也寫片道2,500円、往復5,000円、1台40名、事前予約・事前決済。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "3到12歲1,250日圓",
+      "sourceUrl": "https://activityjapan.com/product/721464",
+      "sourceTitle": "層雲峡⇔銀泉台 貸切バス乗車チケット 予約｜アクティビティジャパン",
+      "sourceQuote": "2,500円 13歳以上｜1,250円 3〜12歳",
+      "verdict": "verified",
+      "notes": "兒童價只出現在販售頁。上川町官方頁指定的預約網站是 KKday（kkday.com/ja/product/764324，curl 回 403 讀不到），activityjapan 這頁的提供事業者同為「株式会社KKDAY JAPAN」，視為官方指定販售管道的同一商品而判 verified；若驗收者要求只用經營者頁，可刪掉兒童價。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "赤岳登山巴士與包車的事，可以打上川町役場01658-2-1211問。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "（赤岳登山バス・紅葉期貸切の注記の下）お問合せ先 上川町役場： 01658-2-1211",
+      "verdict": "verified",
+      "notes": "上川町的管制頁窗口是產業經濟課商工觀光係 01658-2-4058；正文寫的役場代表號也是官方列出的洽詢處，可接受。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "銀泉台線9月11日19:00關閘進入管制，9月23日16:30以後不用預約也能開上去。",
+      "sourceUrl": "https://sounkyo.net/news/detail.html?content=101",
+      "sourceTitle": "令和8年度 紅葉期の車両交通規制（マイカー規制）｜層雲峡観光協会",
+      "sourceQuote": "※ゲート閉鎖は、9月11日 19時から 24時間規制｜道道銀泉台線は、規制期間終了後、9月23日16：30からは一般車両の通行が可能となっています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "夏天7月11日到9月6日的週末與假日，另有只載登山客的接駁車。早上6:00從層雲峽巴士總站與層雲峽ホステル出發，15:30從銀泉台開回來。車子是8人座，單程2,500日圓，要在搭車前一天17:00前，用層雲峽觀光協會公告頁下方的表單預約，去程和回程分開訂。",
+      "sourceUrl": "https://sounkyo.net/news/detail.html?content=98",
+      "sourceTitle": "層雲峡⇔銀泉台 登山シャトルバス運行が開始いたします｜層雲峡観光協会",
+      "sourceQuote": "運行期間：2026年7月11～9月6日（土日・祝のみ）｜早朝6時に層雲峡バスターミナル・層雲峡ホステルから出発し、7時に銀泉台に到着。帰りは15時30分に銀泉台を出発｜定員：8名（ハイエース）料金：2,500円（片道）対象：登山者限定｜ご利用の前日17時までのご予約が必須です。｜↓予約は下のフォームから↓ シャトルバス往路 予約 シャトルバス復路 予約",
+      "verdict": "verified",
+      "notes": "表單本身（外部網站）沒有打開，正文只寫有表單、去回分開，與公告頁一致。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "大雪高原溫泉只能開車或搭計程車前往。從國道39號轉進往糠平、帶廣方向的國道273號，看到「高原温泉入口」的看板後再走約10公里沒鋪柏油的林道。從層雲峽開車約50分鐘。",
+      "sourceUrl": "https://www.higuma-center.com/blank-4",
+      "sourceTitle": "アクセス｜大雪高原温泉ヒグマ情報センター",
+      "sourceQuote": "国道39号線から国道273号線「糠平・帯広方面」へ進みます。右側にある「高原温泉入口」の看板を入り、林道を道なりに10km程｜※公共交通機関はありません。自家用車またはタクシーでお越しください。｜層雲峡温泉から車で50分程｜※舗装されていない道です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "紅葉期管制時沒有接駁巴士，開車同樣要在指定網站預約、付協力金。想排隔年的行程，夏天前留意上川町與層雲峽觀光協會的公告，預約方式也可能改，2026年的做法就和前一年不同。",
+      "sourceUrl": "https://web.archive.org/web/20260823191057id_/https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo0000000eco.html",
+      "sourceTitle": "【予約開始】令和8年度紅葉期の車両交通規制（マイカー規制）｜北海道上川町（Internet Archive 2026-08-23 存檔）",
+      "sourceQuote": "令和8年度の紅葉期の車両交通規制（マイカー規制）について、 昨年度から実施方法に変更があります｜高原温泉線は、上りと下りを分けてマイカーでの交互通行となります。｜マイカー： 2,000円／1台あたり",
+      "verdict": "verified",
+      "notes": "沒有接駁巴士見觀光協會沼めぐりニュースNo.8「今年度はシャトルバスの運行はありません」；林道要預約見 No.10「林道通行には事前予約が必要です」。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "搭的是阿寒巴士和道北巴士合營的都市間巴士「サンライズ號」。這班車從旭川出發，經過上川、層雲峽、溫根湯、北見與阿寒湖，終點是釧路，全車禁菸，一定要先預約。",
+      "sourceUrl": "https://www.akanbus.co.jp/express/sunrise.html",
+      "sourceTitle": "サンライズ号（旭川～北見～釧路）｜阿寒バス株式会社",
+      "sourceQuote": "サンライズ号（旭川～北見～釧路）｜【全席禁煙・予約定員制】｜旭川駅前（バスタッチ⑧）… 上川森のテラスバスタッチ 層雲峡 温根湯 … 北見バスターミナル … 阿寒湖 … 釧路駅前",
+      "verdict": "verified",
+      "notes": "合營見時刻表 PDF「道北バス・阿寒バス」；PDF 另寫「ご利用の際は、必ず予約を行い、事前に乗車券を購入の上」。"
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "往阿寒湖與回旭川的方向一天各2班，下面是2025年9月1日改點的時刻。",
+      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
+      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
+      "sourceQuote": "2025年9月1日改正｜旭川 ▶▶▶ 北見 ▶▶▶ 釧路（2便）｜釧路 ▶▶▶ 北見 ▶▶▶ 旭川（2便）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "往北見、阿寒湖表：旭川站前7:50、層雲峽9:22、北見11:15到11:45開、阿寒湖13:13；13:05、14:37、16:30到17:00開、18:28",
+      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
+      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
+      "sourceQuote": "旭川駅前 7：50／13：05｜層雲峡 9：22／14：37｜北見バスターミナル 11：15 11：45／16：30 17：00｜阿寒湖バスセンター 13：13／18：28",
+      "verdict": "verified",
+      "notes": "8 格逐一核對。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "往層雲峽、旭川表：阿寒湖9:43、北見11:45、到層雲峽13:42、到旭川站前15:15；14:58、17:00、18:57、20:30",
+      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
+      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
+      "sourceQuote": "阿寒湖バスセンター 9：43／14：58｜北見バスターミナル 発 11：45／17：00｜層雲峡 13：42／18：57｜旭川駅前 15：15／20：30",
+      "verdict": "verified",
+      "notes": "8 格逐一核對。往旭川方向層雲峽以西各站標「降」，只能下車（正文沒有寫可以在層雲峽上車回旭川，無衝突）。"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "想在阿寒湖過夜又不想太晚到，就搭層雲峽9:22那班，13:13抵達阿寒湖，車程約3小時51分。",
+      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
+      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
+      "sourceQuote": "層雲峡 9：22 … 阿寒湖バスセンター 13：13",
+      "verdict": "verified",
+      "notes": "重算 9:22 → 13:13 = 3 小時 51 分。"
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "從層雲峽出發的單程車資，到溫根湯2,200日圓、北見3,050日圓、阿寒湖4,400日圓、釧路6,050日圓，兒童半價。",
+      "sourceUrl": "https://www.akanbus.co.jp/express/sunrise.html",
+      "sourceTitle": "サンライズ号（旭川～北見～釧路）｜阿寒バス株式会社",
+      "sourceQuote": "運賃 （2023年10月1日改定） 片道運賃（小人は半額）｜層雲峡欄：釧路 6,050円 阿寒湖 4,400円 北見 3,050円 温根湯 2,200円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "層雲峽和上川都沒有售票窗口，預約好之後用網路付款或到便利商店取票。",
+      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
+      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
+      "sourceQuote": "※永山、当麻、愛別橋、上川、層雲峡、温根湯、津別、阿寒町では乗車券発売所窓口はございませんのでご予約の上、Web決済、コンビニでの発券等をご利用ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "網路上可以用「バスぷらざ」或「発車オーライネット」訂，想打電話訂，一樣是打道北巴士旭川站前營業所。",
+      "sourceUrl": "https://www.akanbus.co.jp/express/sunrise.html",
+      "sourceTitle": "サンライズ号（旭川～北見～釧路）｜阿寒バス株式会社",
+      "sourceQuote": "インターネットで予約・購入 バスぷらざ … 発車オーライネット｜電話・窓口で予約・購入 旭 川 道北バス旭川駅前営業所 0166-23-4161",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "層雲峽的乘車處在層雲峽インフォメーションセンター前一帶，靠近ホテル雲井與黒岳の湯。",
+      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
+      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
+      "sourceQuote": "■層雲峡（地図）層雲峡インフォメーションセンター｜ホテル雲井●｜●黒岳の湯｜のりば・おりば",
+      "verdict": "verified",
+      "notes": "PDF 第 2 頁站牌圖，のりば・おりば標在インフォメーションセンター旁。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "旭川市區往上川、層雲峽也不能只搭這一段，這兩段都要坐道北巴士。",
+      "sourceUrl": "https://www.akanbus.co.jp/express/sunrise.html",
+      "sourceTitle": "サンライズ号（旭川～北見～釧路）｜阿寒バス株式会社",
+      "sourceQuote": "旭川市内から当麻20丁目、愛別橋、上川、層雲峡へはご利用できません",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "路況差的時候車子可能大幅誤點、停駛，甚至開到一半折返。",
+      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
+      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
+      "sourceQuote": "●交通状況により大幅な遅延、運休、運行開始後の打切り及び経路変更となる場合があります。",
+      "verdict": "verified",
+      "notes": "「打切り」譯成「開到一半折返」略意譯（原意是中途停止運行），可接受。"
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "直達旭川的末班車17:00從層雲峽開出，18:55到旭川站前。錯過了還有18:55往上川的巴士，19:25到上川再轉JR回旭川。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "層雲峡 発 17:00 → 旭川駅前 着 18:55｜層雲峡 発 18:55 → 上川森のテラス バスタッチ 着 19:25",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "末班表：16:40→17:10→17:40特急オホーツク4號→18:22；17:00直達巴士→18:55；18:55→19:25→20:24普通→21:22；18:55→19:25→21:04特急大雪→21:44",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2921&d=20261210",
+      "sourceTitle": "石北本線(網走―遠軽―旭川) 上り 時刻表｜北海道旅客鉄道株式会社",
+      "sourceQuote": "74D オホーツク 4 上川 発 1740 … 旭川 着 1822｜4534D 普通 上川 発 2024 … 旭川 着 2122｜3594D 大雪 上川 発 2104 … 旭川 着 2144",
+      "verdict": "verified",
+      "notes": "巴士端見存檔 PDF；16 格逐一核對。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "16:40那班巴士到上川轉オホーツク4號，18:22就回到旭川，比17:00的直達末班車早到。想多待一會兒，就搭18:55的巴士轉21:04的特急大雪，21:44抵達旭川，這是當天最晚的回法。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2921&d=20261210",
+      "sourceTitle": "石北本線(網走―遠軽―旭川) 上り 時刻表｜北海道旅客鉄道株式会社",
+      "sourceQuote": "74D オホーツク 4 上川 発 1740 → 旭川 着 1822｜3594D 大雪 上川 発 2104 → 旭川 着 2144（上川発の最終）",
+      "verdict": "verified",
+      "notes": "比較：18:22 早於直達 18:55 到；21:04 是上川發往旭川的最後一班，層雲峽最後一班巴士是 18:55。"
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "層雲峽觀光協會的交通頁，貼著道北巴士層雲峽・上川線的時刻表，也有開車距離與計程車電話。",
+      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
+      "sourceTitle": "アクセス｜層雲峡観光協会",
+      "sourceQuote": "2026年7月以降 道北バス時刻表｜旭川 - (国道39号)- 層雲峡 66Km｜電話番号（層雲峡営業所）01658-5-3221",
+      "verdict": "verified",
+      "notes": "延伸資料一節。第 2 輪：延伸資料已拿掉打不開的道北巴士 PDF 原址；資料來源仍列原址與存檔，原址今天仍逾時（只影響資料來源連結，存檔可讀）。"
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "層雲峽這一端是終點「層雲峡」站，下車走到黑岳纜車約5分鐘，回程也在同一站上車。",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
+      "sourceTitle": "アクセス｜大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "JR石北線上川駅より道北バス「層雲峡・上川線」乗車約30分終点「層雲峡」下車、徒歩5分",
+      "verdict": "verified",
+      "notes": "回程同站上車：道北巴士存檔 PDF 去程「層雲峡 着」、回程「層雲峡 発」是同一站名。"
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "坐回旭川時，下車處是駅前バスタッチ裡標著「降」的下車處。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "●旭川駅前おりば … おりば 降（駅前バスタッチ内）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "網站只有日文介面，購買時照這幾個按鈕走。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "Language 日本語",
+      "verdict": "verified",
+      "notes": "語言選單只有「日本語」；本人用 curl 試 /A/en-US/ 與 /A/zh-TW/ 的同一頁都回 404，頁內連結只有 /A/ja-JP/。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "按鈕表：日付・人数（選搭車日，填大人、兒童人數）、次へ（選好日期人數後按）、時間（只會出現「午後10:00」，照選就好，哪一班都能用）、お手続きへ（填資料、用信用卡付款）",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "日付・人数 未選択｜次へ｜時間 未選択｜お手続きへ｜※なお、システムの都合上、時間に「午後10:00」と表示されておりますが、この乗車券はどの便でもご利用いただけます。",
+      "verdict": "verified",
+      "notes": "按鈕日文與頁面原始碼一致；只讀原始碼，沒有在瀏覽器操作或填表。「只會出現」是依官方「表示されております」的說明，合理。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "信用卡可以用Visa、Mastercard、JCB、AMEX與Diners Club，票會附在購票完成信裡。收信的信箱最好不用電信業者的手機信箱，官方說這類信箱可能收不到完成信。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "予約時にクレジットカード（Visa、Mastercard®、JCB、AMEX、Diners Club）でお支払いください。｜乗車券は購入完了メールに付いています。｜携帯キャリアメールで購入完了メールが受信できないケースが発生しておりますので、購入時はそれ以外のメールアドレスの使用を推奨いたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "坐到大雪湖就是搭同一班車回來，也可以在瀧見台下車，搭13:49經過的回程車回去。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線 時刻表 2026.7.1改正（Internet Archive 2026-10-08 存檔）｜道北バス",
+      "sourceQuote": "滝見台 発 ※13:09（去程）｜大雪湖 発 ※13:38 … 滝見台 発 ※13:49（回程，一日1便）",
+      "verdict": "verified",
+      "notes": "第 3 輪：已刪掉沒有官方來源的「銀河、流星瀑布一帶」，剩下的去程 13:09 在瀧見台下車、回程 13:49 經過瀧見台、一天只有一班回程，都由時刻表支持，判 verified。以下為第 2 輪紀錄：前半（一天只有一班回程、瀧見台去程 13:09 下車、回程 13:49 經過可再上車）時刻表支持。但「瀧見台＝銀河、流星瀑布一帶」沒有官方來源：道北巴士時刻表只寫站名「滝見台（Takimidai）」，觀光協會銀河・流星の滝頁、上川町流星・銀河の滝頁都沒有寫最近的巴士站；研究記錄 F7 的這個條件也沒附來源。這是交通事實，需要經營者或自治體官方寫明。建議：找到官方寫明站與瀑布位置的來源（例如道北巴士站牌圖、觀光協會或遊客中心的交通說明）再保留；找不到就刪掉「想在銀河、流星瀑布一帶多停一點」，只寫「也可以在瀧見台下車，搭13:49的回程車回去」。另外「搭同一班車回來」指的是當天唯一的回程班次，可接受。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "往旭川方向的車在層雲峽、上川只能下車，不能上車，表上18:57經過層雲峽那班也一樣。",
+      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
+      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
+      "sourceQuote": "釧路 ▶▶▶ 北見 ▶▶▶ 旭川｜層雲峡 降 13：42 18：57｜上川森のテラスバスタッチ 降 14：10 19：25",
+      "verdict": "verified",
+      "notes": "PDF 第 2 頁時刻表乘降欄，往旭川方向層雲峽、上川都只標「降」。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "道北巴士網路票販售網站，購買旭川站前、上川站前到層雲峽的單程票，票券頁也列出旭川直達車的時刻。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト",
+      "sourceQuote": "●旭川駅前から層雲峡行き：おすすめの時間（平日・休日同じです）… 6:55 旭川駅前発 ⇒ 8:54 層雲峡着",
+      "verdict": "verified",
+      "notes": "延伸資料一節；連結是 product-list?tagIds=270，兩款單程票都在列表上。"
+    }
+  ],
+  "summary": {
+    "verified": 93,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
