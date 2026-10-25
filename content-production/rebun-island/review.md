@@ -3,7 +3,7 @@
 - 文章：禮文島主頁（`/places/rebun-island/`，place-entry，地點 `rebun-island`）
 - 日期：2026-10-24（台北 01:45 開始，本機排定工作自動執行）
 - 稿件 SHA-256（LF）：`eca1d4964e5c681a7cd3d477c04b6fbeda2feaea8fe0389049f11d895a2f3214`
-- 最終結果：`parked`
+- 最終結果：見最後一節「停放解除」（2026-10-26 改成 `ready_for_user_preview`）
 - 舊版：2026-10-16 人工版（結果 `rejected`，只差讀者價值）整包移到 `archive-2026-10-16-manual/` 保留，這次從頭重寫，沒有沿用舊稿。
 
 ## 停放原因
@@ -83,3 +83,20 @@
 - 新譯名待加進 glossary：礼文ふるさとまつり（禮文故鄉祭）、ピスカ２１、リボンプロジェクト、禮文金梅草、花魚鏘鏘燒、アツモリ感謝祭、最北フラワーマラソン、うめーべやフェスティバル、燕山（ツバメ山）。
 - 規劃端可考慮：H3「溫泉美食健行活動」補地名。
 - 讀者加分（未做，不影響判定）：一日遊範例第四點「11:50」重複；活動表空白地點改填「—」；リボンプロジェクト補中文說明。
+
+
+## 停放解除（2026-10-26 人工 session）
+
+- 人工規劃 session（Claude Code，Darren 2026-10-26 要求今天持續寫作）把大綱 `links` 的內連句改成不帶事實主張的導覽句：「活動期間要住島上，各區旅館與訂房方式見禮文島住宿。」，正文同步替換這一句，其他句子沒動（git diff 確認 reader-preview 只差這一句）。
+- 新稿件 SHA-256（LF）：`b265e9f0bcc683c1ef2c35a9a7d0c5bbdecfa48dfeb0d3cb7d5d2b5df4c3172e`
+- 事實查核（另一個子代理，不是作者）只複查改過的句子：C43 改查導覽句是否屬實，引用已上線的禮文島住宿頁，verified。97 項全部 verified。 `validate-fact-check.mjs` 通過。
+- 讀者驗收與標題檢查沿用停放前的結果（讀者最終 `acceptable`、剩餘必修 0；標題 `acceptable`），這一句不影響讀者價值。
+
+| 項目 | 結果 |
+|---|---|
+| 格式 | `mechanical_clear` |
+| 標題 | `acceptable` |
+| 讀者價值 | `acceptable` |
+| 事實與條件 | `verified` |
+
+最終結果：`ready_for_user_preview`

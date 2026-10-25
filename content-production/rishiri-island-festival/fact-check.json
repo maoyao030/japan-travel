@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "articleId": "rishiri-island-festival",
-  "articleSha256": "2b4c14e47f03052459e2b9b1e10caede74a721a5a8ae268be5054abe452fa242",
-  "checker": "事實查核 agent（Claude Opus 5.5，非作者；唯讀，2026-10-25 第2輪複查，逐句重新比對整篇，以 curl 實際打開各來源，宗谷巴士 PDF 與鬼脇海報看圖讀取）",
-  "checkedAt": "2026-10-25",
+  "articleSha256": "de557e63be26eafd2f1cfe856921b4b2adf386176a2ae546f3e1e45c69e090c2",
+  "checker": "事實查核 agent（Claude Opus 5.5，非作者；唯讀，2026-10-25 第2輪複查，逐句重新比對整篇，以 curl 實際打開各來源，宗谷巴士 PDF 與鬼脇海報看圖讀取；2026-10-26 第3輪只複查改過的 C55 導覽句）",
+  "checkedAt": "2026-10-26",
   "claims": [
     {
       "claimId": "C1",
@@ -493,12 +493,12 @@
     },
     {
       "claimId": "C55",
-      "articleExcerpt": "祭典當晚島上住宿容易客滿",
-      "sourceUrl": "https://www.rishiri-plus.jp/reserve/error/",
-      "sourceTitle": "宿泊仮予約受付フォームエラー | 利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "",
-      "verdict": "unsupported",
-      "notes": "原句未改（大綱指定內連句）。第1輪已查過りしぷら站內搜尋（満室、混雑、宿泊予約、お早めに）、各祭典公告（7366、6854、6394、5428）、利尻町與利尻富士町觀光頁、Heartland Ferry 與宗谷巴士時刻表，都沒有「祭典當晚」住宿客滿的說法。最接近的官方原文是「観光ハイシーズンの夏季は毎年大変な混雑が予想されることから、空室状況によっては条件に添えない場合もございます」，主詞是夏季旺季，與正文的「祭典當晚」條件不一致。須由 Darren 或規劃端改大綱連結句。"
+      "articleExcerpt": "祭典當晚想住島上，各區旅館與訂房方式見利尻島住宿。",
+      "sourceUrl": "https://offpathnotes.com/places/rishiri-island/stay/",
+      "sourceTitle": "利尻島住宿（本站已上線頁面）",
+      "sourceQuote": "H2／H3：利尻島住宿怎麼選區，鴛泊、沓形、鬼脇與仙法志／鴛泊的住宿／沓形的住宿／鬼脇與仙法志的住宿／利尻島住宿的訂房管道與住宿稅",
+      "verdict": "verified",
+      "notes": "2026-10-26 複查：原句「祭典當晚島上住宿容易客滿」已由規劃端改成站內導覽句，沒有事實主張，「容易客滿」的 unsupported 問題消失。這筆改查導覽是否屬實：以 curl 打開已上線的利尻島住宿頁（HTTP 200），標題樹確實分鴛泊、沓形、鬼脇與仙法志各區列旅館，並有「利尻島住宿的訂房管道與住宿稅」一節，導覽句成立。以下為舊句的查核紀錄：原句未改（大綱指定內連句）。第1輪已查過りしぷら站內搜尋（満室、混雑、宿泊予約、お早めに）、各祭典公告（7366、6854、6394、5428）、利尻町與利尻富士町觀光頁、Heartland Ferry 與宗谷巴士時刻表，都沒有「祭典當晚」住宿客滿的說法。最接近的官方原文是「観光ハイシーズンの夏季は毎年大変な混雑が予想されることから、空室状況によっては条件に添えない場合もございます」，主詞是夏季旺季，與正文的「祭典當晚」條件不一致。須由 Darren 或規劃端改大綱連結句。"
     },
     {
       "claimId": "C56",
@@ -844,9 +844,9 @@
     }
   ],
   "summary": {
-    "verified": 92,
+    "verified": 93,
     "incorrect": 0,
-    "unsupported": 1,
+    "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,
     "not-stated": 0

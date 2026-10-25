@@ -3,7 +3,7 @@
 - 文章：利尻島祭典（`/places/rishiri-island/festival/`，aspect-page，地點 `rishiri-island`）
 - 日期：2026-10-25（台北 04:44 開始，本機排定工作自動執行）
 - 稿件 SHA-256（LF）：`2b4c14e47f03052459e2b9b1e10caede74a721a5a8ae268be5054abe452fa242`
-- 最終結果：`parked`
+- 最終結果：見最後一節「停放解除」（2026-10-26 改成 `ready_for_user_preview`）
 
 ## 停放原因
 
@@ -82,3 +82,20 @@
 - 新譯名待加進 glossary：北海島祭（北海島まつり）、利尻浮島祭、港口啤酒花園（みなとビアガーデン）、海膽祭（うにうにフェスティバル）、りしりん祭り、夏末美食祭（飲むべや喰うべやフェスティバル）、寒歓まつり、雪ん子広場；馬拉松日文名りしぷら寫「遊悠覧人G」、利尻町寫「悠遊覧人G」，待統一。
 - 規劃端可考慮：把祭典類參考文章補進潤稿 Skill 的 `style-sources.md`；大綱內連表加「島內巴士、租車與渡輪的細節，見利尻島交通」這句（作者自加）。
 - 讀者加分（未做，不影響判定）：見 reader-final.md。
+
+
+## 停放解除（2026-10-26 人工 session）
+
+- 人工規劃 session（Claude Code，Darren 2026-10-26 要求今天持續寫作）把大綱 `links` 的內連句改成不帶事實主張的導覽句：「祭典當晚想住島上，各區旅館與訂房方式見利尻島住宿。」，正文同步替換這一句，其他句子沒動（git diff 確認 reader-preview 只差這一句）。
+- 新稿件 SHA-256（LF）：`de557e63be26eafd2f1cfe856921b4b2adf386176a2ae546f3e1e45c69e090c2`
+- 事實查核（另一個子代理，不是作者）只複查改過的句子：C55 改查導覽句是否屬實，引用已上線的利尻島住宿頁，verified。93 項全部 verified。 `validate-fact-check.mjs` 通過。
+- 讀者驗收與標題檢查沿用停放前的結果（讀者最終 `acceptable`、剩餘必修 0；標題 `acceptable`），這一句不影響讀者價值。
+
+| 項目 | 結果 |
+|---|---|
+| 格式 | `mechanical_clear` |
+| 標題 | `acceptable` |
+| 讀者價值 | `acceptable` |
+| 事實與條件 | `verified` |
+
+最終結果：`ready_for_user_preview`

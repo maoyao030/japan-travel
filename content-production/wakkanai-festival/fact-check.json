@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "articleId": "wakkanai-festival",
-  "articleSha256": "57d7adb2689d4028f8c1dcca72f24f685da162c3e5149d054877e3213ce1107a",
-  "checker": "事實查核 agent（Claude Opus 5.5，非作者、非潤稿者，唯讀查核；驗收後第1輪複查，2026-10-22 以 curl／WebFetch 開啟來源，PDF 下載到暫存資料夾讀取）",
-  "checkedAt": "2026-10-22",
+  "articleSha256": "10048f509d292901c901be4509b0b510022d7f9f2b5be3b16dcd14e99ecb2be5",
+  "checker": "事實查核 agent（Claude Opus 5.5，非作者、非潤稿者，唯讀查核；驗收後第1輪複查，2026-10-22 以 curl／WebFetch 開啟來源，PDF 下載到暫存資料夾讀取；2026-10-26 第2輪只複查改過的 C35、C43，以 curl 與 Wayback 存檔查）",
+  "checkedAt": "2026-10-26",
   "claims": [
     {
       "claimId": "C1",
@@ -312,15 +312,6 @@
       "notes": ""
     },
     {
-      "claimId": "C35",
-      "articleExcerpt": "活動期間市區住宿容易客滿",
-      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
-      "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
-      "sourceQuote": "（官方活動頁、實施要領與研究紀錄都沒有住宿客滿的資訊）",
-      "verdict": "unsupported",
-      "notes": "作者也確認找不到來源，句子一字未改，只搬到南極祭一節最後。複查：南極祭活動頁與兩份實施要領 PDF、犬橇、雪樂園、白夜祭、北門神社祭、Night & Light、和平馬拉松活動頁、宗谷巴士公告都沒有住宿客滿或訂房困難的說法；只有來源不明的個人網站，不合來源分級。照實判 unsupported，不放寬。建議改成不需事實支持的內連句，例如「南極祭那個週末想住車站附近，住宿怎麼挑見稚內住宿。」，或由規劃端修改大綱指定句。"
-    },
-    {
       "claimId": "C36",
       "articleExcerpt": "因為南極觀測的樺太犬太郎、次郎出身稚內",
       "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00020400/00020482/20260615172533.pdf",
@@ -385,12 +376,12 @@
     },
     {
       "claimId": "C43",
-      "articleExcerpt": "接駁時刻與當天賽程會在確定後公布在觀光協會的活動頁",
+      "articleExcerpt": "當天賽程確定後會公布在觀光協會的活動頁",
       "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
       "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
       "sourceQuote": "・レース参加の実施要項及び当日のタイムスケジュール　※決まり次第改めてお知らせいたします。",
-      "verdict": "unsupported",
-      "notes": "官方頁只說「當天的時間表（タイムスケジュール）確定後再公布」，指的是賽程；沒有寫接駁車時刻會公布、也沒寫在哪裡公布。「當天賽程確定後公布」成立，「接駁時刻」沒有依據。建議刪掉「接駁時刻」，改成「當天賽程確定後會公布在觀光協會的活動頁」。"
+      "verdict": "verified",
+      "notes": "2026-10-26 複查：正文已刪掉「接駁時刻」，只剩「當天賽程確定後公布在活動頁」，就是第1輪判定成立的部分；接駁車存在由 C42 涵蓋（事實表 F159）。今天官方網站因 PHP 漏洞緊急維護，全站顯示「当サイトの一時閲覧停止について」、再開時期未定，live 頁打不開；上面摘錄是 2026-10-22 查核者實際開啟 2027 年版頁面時的原文。另以 Wayback 2026-06-12 存檔（https://web.archive.org/web/20260612041832/https://www.north-hokkaido.com/event/detail_1158.html）佐證：2026 年那屆的「当日のタイムスケジュール」PDF 確實就掛在這個活動頁，也有「●臨時シャトルバス：「ふれあい公園」～「大沼特設会場」」。官網恢復後，下次重查以 live 頁為準。"
     },
     {
       "claimId": "C44",
@@ -691,11 +682,12 @@
     }
   ],
   "summary": {
-    "verified": 74,
+    "verified": 75,
     "incorrect": 0,
-    "unsupported": 2,
+    "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,
-    "not-stated": 0
+    "not-stated": 0,
+    "notes": "2026-10-26 複查：原 C35「活動期間市區住宿容易客滿」已由規劃端改成站內導覽句「活動期間要住市區，各區旅館與訂房方式見稚內住宿。」，沒有事實主張，規格沒有導覽句的 verdict，所以移除這筆 claim。目標頁 wakkanai-stay 尚未上線，依大綱 headings 確認會寫各區（稚內站前、南稚內與機場周邊、野寒布與宗谷岬）旅館與「稚內住宿的訂房管道」。C43 刪掉「接駁時刻」後改判 verified（官網今天維護中，見該筆 notes）。"
   }
 }

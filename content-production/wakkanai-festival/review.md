@@ -3,7 +3,7 @@
 - 文章：稚內祭典（`/places/wakkanai/festival/`，aspect-page，地點 `wakkanai`）
 - 日期：2026-10-22（台北 13:44 開始，本機排定工作自動執行）
 - 稿件 SHA-256（LF）：`42bdcac31c1d3b51e4f67bf3debbd0e73f0d1e8f125b365771b927cfcb35cd8e`
-- 最終結果：`parked`
+- 最終結果：見最後一節「停放解除」（2026-10-26 改成 `ready_for_user_preview`）
 
 ## 停放原因
 
@@ -56,3 +56,20 @@
 
 - 新增事實 F210～F215 與更正 F152、F154、F156～F160、F162 只記在本篇 `reference-review.md`，待同步回地點事實表；F210～F215 和 wakkanai-food 的 F210～F215 撞號，同步時要重編。F113（2 月平均氣溫）氣象廳今天 404，正文已拿掉，待重查。
 - 声問線時刻表是 2026-04-05 改正版，2027 年 2 月前要重查。
+
+
+## 停放解除（2026-10-26 人工 session）
+
+- 人工規劃 session（Claude Code，Darren 2026-10-26 要求今天持續寫作）把大綱 `links` 的內連句改成不帶事實主張的導覽句：「活動期間要住市區，各區旅館與訂房方式見稚內住宿。」，正文同步替換這一句，其他句子沒動（git diff 確認 reader-preview 只差這一句）。
+- 新稿件 SHA-256（LF）：`10048f509d292901c901be4509b0b510022d7f9f2b5be3b16dcd14e99ecb2be5`
+- 事實查核（另一個子代理，不是作者）只複查改過的句子：C35 移除（站內導覽句，沒有事實主張；目標頁還沒上線，大綱 headings 確認會寫各區旅館與訂房管道）；C43 改字後複查 verified（觀光協會官網 10/26 整站維修停止閱覽，依 10/22 查核者打開官網的原文與 Wayback 2026-06-12 存檔判定，官網恢復後要再開一次）。75 項全部 verified。 `validate-fact-check.mjs` 通過。
+- 讀者驗收與標題檢查沿用停放前的結果（讀者最終 `acceptable`、剩餘必修 0；標題 `acceptable`），這一句不影響讀者價值。
+
+| 項目 | 結果 |
+|---|---|
+| 格式 | `mechanical_clear` |
+| 標題 | `acceptable` |
+| 讀者價值 | `acceptable` |
+| 事實與條件 | `verified` |
+
+最終結果：`ready_for_user_preview`
