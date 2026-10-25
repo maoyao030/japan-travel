@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "wakkanai",
+  "articleTitle": "稚內值得去嗎？稚內旅遊排幾天、幾月去與怎麼接利尻禮文",
+  "targetUrl": "/places/wakkanai/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-25",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖由 image:prepare:cover 下載到 .tmp/image-selection/wakkanai/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-25",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "呈現稚內這座港町的整體樣貌（市區、港口與宗谷灣），讓讀者一眼知道這是稚內地點主頁，並帶出「從這個港出發去利尻禮文」的角色。",
+      "mustShow": ["稚內市區與稚內港，或從稚內看出去的海與利尻島"],
+      "mustNotShow": ["其他城市或港口冒充稚內", "可辨識的人物臉部", "以單一旅館或店家為主體的畫面", "AI 生成或合成畫面", "與同站其他文章重複的封面（北防波堤穹頂特寫、宗谷岬最北端紀念碑、宗谷岬巴士站、稚內站入口、中央雪景、章魚涮涮鍋、鴛泊港利尻山、Boreas Soya 渡輪）"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Wakkanai_harbor.JPG",
+        "focalPoint": {"x": 0.5, "y": 0.55},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是從稚內公園往下看的夏季全景：左邊是市區與北防波堤，中間是稚內港與宗谷灣，右邊是綠色山坡與通往公園的彎路，一張就看得出稚內是靠港的小城，和文章開頭「稚內是搭渡輪去利尻島、禮文島的出發港」與稚內公園的段落相符。北防波堤穹頂在畫面裡只是遠景的一小部分，不會和稚內景點頁的穹頂特寫封面撞圖。原圖 3:2、3008 px 寬，裁成 16:9 時切掉上方一部分天空，保留市區、港口與山坡。cover-02 是 2010 年 8 月從稚內市看利尻山的照片（CC BY 2.0），主題貼近「怎麼接利尻禮文」，但當天有霧、山形朦朧，前景是郊外住宅與草地，看不出是稚內市區，代表性不如 cover-01，列為備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-25",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Wakkanai Park」「稚内公園」「Noshappu」「Wakkanai port ferry」「稚内港」「Wakkanai city view」「Wakkanai Rishiri」。File:Wakkanai city view.jpg（CC BY-SA 4.0，2016 年 5 月）也是從稚內公園看市區，但陰天灰濛、前景住宅雜亂，畫面中央是一棟旅館大樓，較像在拍那棟旅館；File:Mt.RISHIRI&SOUYA bay.JPG、野寒布岬看利尻富士與 panoramio 夕陽照寬度不到 1600 px 或解析度不足；File:Wakkanai Lighthouse, Cape Noshappu 是燈塔特寫，較適合野寒布岬相關頁。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai_harbor.JPG",
+          "creatorName": "100yen",
+          "sourceTitle": "File:Wakkanai harbor.JPG",
+          "sourceDescription": "Wakkanai harbor.（Own work，分類 Port of Wakkanai、Soya Bay、Views from Wakkanai Park、Surfeel Hotel Wakkanai；授權 GFDL／CC BY-SA 3.0 migrated／CC BY-SA 2.5、2.0、1.0，本站採 CC BY-SA 3.0）",
+          "takenAt": "2006-08-29",
+          "width": 3008,
+          "height": 2000,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "exact",
+          "matchLimits": "2006 年 8 月拍攝，市區建築與港口設施之後可能有變化；只當地點主頁的整體氛圍封面，不代表現況細節。",
+          "whyItFits": "檔案頁分類為稚內港與「從稚內公園看出去的風景」，畫面是稚內市區、北防波堤、稚內港與宗谷灣的全景，正是讀者到稚內看到的港町樣貌。",
+          "altDraft": "從稚內公園的山坡俯瞰稚內市區，房屋沿著海邊排開，前方是稚內港的防波堤與宗谷灣",
+          "captionDraft": "從稚內公園看稚內市區與稚內港（2006 年）。",
+          "creditDraft": "照片：100yen／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none；遠景的建築物看不到可讀的招牌",
+            "artwork": "none",
+            "property": "城市與港口遠景；中間偏左的白色圓柱大樓是一間旅館（Commons 分類 Surfeel Hotel Wakkanai，現名不同），只占畫面一小部分，不是主體",
+            "risk": "low",
+            "notes": "沒有可辨識人物或店名招牌，不是旅館或店家提供的照片；城市遠景不會讓人以為是本站推薦某間旅館或實地拍攝。CC BY-SA：裁切後的封面也以 CC BY-SA 3.0 標示。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Japan,_Hokkaido_-_Rishirisan_2010_1.jpg",
+          "creatorName": "snotch",
+          "sourceTitle": "File:Japan, Hokkaido - Rishirisan 2010 1.jpg",
+          "sourceDescription": "Japan: mount Rishiri from Wakkanai city (Hokkaidō).／稚内市から見た利尻島。（Flickr 匯入，FlickreviewR 已核對 CC BY 2.0，分類 Remote views of Mount Rishiri）",
+          "takenAt": "2010-08-23",
+          "width": 4256,
+          "height": 2832,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "霧中的利尻山遠景，前景是稚內市郊的住宅與草地，看不出稚內市區或港口。",
+          "whyItFits": "檔案頁寫明是從稚內市看利尻島，能帶出文章「怎麼接利尻禮文」的主題。",
+          "altDraft": "從稚內市郊望向海上的利尻山，山形在薄霧中，前方是海邊的房屋與草地",
+          "captionDraft": "從稚內望見的利尻山（2010 年）。",
+          "creditDraft": "照片：snotch／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "遠處的民宅，看不出門牌或名稱",
+            "risk": "low",
+            "notes": "沒有人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

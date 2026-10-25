@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island-stay",
+  "articleTitle": "禮文島住宿，香深或船泊、價格與花季多早訂",
+  "targetUrl": "/places/rebun-island/stay/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-25",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-stay/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-25",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "呈現禮文島本身的景色，讓讀者一眼知道這篇講的是住在禮文島，而不是某一間旅館。",
+      "mustShow": ["禮文島可辨認的地區景色，例如桃岩一帶的山稜與海，或香深港"],
+      "mustNotShow": ["任何一間旅館或民宿的外觀、招牌或房間", "旅館官網或訂房網站的照片", "可辨識的人物臉部", "利尻島或其他島嶼冒充禮文島", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Rebun%27s_Momoiwa_%2852357581315%29.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.5},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 2022 年 7 月從桃岩展望台步道往元地方向看的景色：右邊是桃岩的岩壁，左邊是綠色山稜，中間是一路通到海的草谷，海上有貓岩。畫面只有自然景觀與遠處很小的停車場，沒有任何旅館或招牌，不會讓讀者以為是某間住宿的實景，又是禮文島最常被認出來的景色之一。原圖 3:2、6801 px 寬，裁 16:9 時上下各切掉一點天空與前景草地，桃岩、山谷與海都保留。cover-02 是 2019 年 6 月從展望台步道看桃岩本體，授權 CC BY-SA 4.0，可當備選，但畫面只有一座山，看不太出是島，空間感不如 cover-01。香深港的照片（663highland 2013 年等）畫面正中有「HOTEL REBUN」大招牌，會讓人以為封面在推某間旅館，不列為候選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-25",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Kafuka Rebun」「Momoiwa Rebun」「Rebun Island」「礼文島 香深」「礼文島 桃岩」。香深港有 663highland（2013，CC BY 2.5）、Furiko7e（2012，CC BY-SA 3.0）、しんかわな（2010，寬 1600 px）等，但俯瞰港口的畫面都拍到港邊旅館的招牌，或寬度不足，封面不用。桃岩一帶有 Raita Futo（2022，CC BY 2.0，多張）、OKJaguar（2019，CC BY-SA 4.0）、hoge asdf（2012，CC BY 2.0，寬 3008 px，同一角度但較舊）、Suicasmo（2014，CC BY-SA 4.0）。File:桃岩荘 系列是特定青年旅館，不用。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。目前站上其他封包都沒有用過禮文島的照片。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rebun%27s_Momoiwa_(52357581315).jpg",
+          "creatorName": "Raita Futo",
+          "sourceTitle": "File:Rebun's Momoiwa (52357581315).jpg",
+          "sourceDescription": "礼文島の桃岩（Flickr 匯入，FlickreviewR 2023-03-29 已核對 CC BY 2.0，分類 Momoiwa，座標 45.2962, 141.0340）",
+          "takenAt": "2022-07-26",
+          "width": 6801,
+          "height": 4534,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "拍的是桃岩一帶的景色，不是香深或船泊的住宿區；只當地區封面，不代表任何一間旅館的窗景。",
+          "whyItFits": "檔案頁說明與分類標示為禮文島的桃岩，座標也在桃岩展望台附近；山稜、草谷與海是禮文島典型的風景，又完全沒有旅館，適合當住宿頁的地區封面。",
+          "altDraft": "禮文島桃岩一帶的景色，右邊是桃岩的岩壁，綠色草谷一路延伸到藍色的海",
+          "captionDraft": "禮文島的桃岩一帶（2022 年 7 月）。",
+          "creditDraft": "照片：Raita Futo／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀；谷底遠處有一小塊停車場與小建物，看不出是什麼設施",
+            "risk": "low",
+            "notes": "沒有人物、招牌或旅館，不會讓人誤以為是本站實地拍攝或某間旅館的實景。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Momoiwa_(Peach_Rock),_Rebun_Island,_Japan.jpg",
+          "creatorName": "OKJaguar",
+          "sourceTitle": "File:Momoiwa (Peach Rock), Rebun Island, Japan.jpg",
+          "sourceDescription": "Momoiwa (Peach Rock), Rebun Island（Own work，分類 Momoiwa、Lava domes in Japan）",
+          "takenAt": "2019-06-05",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-25",
+          "matchType": "contextual",
+          "matchLimits": "只拍桃岩本體與背後的海，不是住宿區。",
+          "whyItFits": "檔案頁寫明是禮文島的桃岩，是島上最有名的地標之一。",
+          "altDraft": "禮文島的桃岩，長滿綠草的圓頂岩山，岩壁露出灰色岩層，後方是海",
+          "captionDraft": "禮文島的桃岩（2019 年 6 月）。",
+          "creditDraft": "照片：OKJaguar／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
