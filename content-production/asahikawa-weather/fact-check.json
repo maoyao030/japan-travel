@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahikawa-weather",
+  "articleSha256": "6dff385dbae26087f6c0be9fb325d7056a395054a3f84d784e9683ab44a96083",
+  "checker": "fact-check-agent（唯讀事實查核子代理，非作者、非潤稿者；2026-10-26 以 curl 重新讀取官方頁、去除 HTML 註解後比對）",
+  "checkedAt": "2026-10-26",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "旭川位在上川地方的盆地裡。",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "旭川を含めて上川地方は、盆地にあるため",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "1902年1月25日，旭川測到零下41.0°C，到現在仍是日本氣象廳正式觀測站測過最低的氣溫。",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "1902年(明治35年)1月25日…氷点下41.0℃を記録しました。この氷点下41.0℃は気象官署が観測した日本の気温で最も低い気温となっています。",
+      "verdict": "verified",
+      "notes": "另以歴代全国ランキング（https://www.data.jma.go.jp/stats/etrn/view/rankall.php）確認「最低気温の低い方から 1 北海道 上川地方 旭川 * -41.0 1902年1月25日」，到 2026/10 仍是第 1。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "12月到3月每個月的平均氣溫都在冰點以下",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "12月 -4.2／1月 -7.0／2月 -6.0／3月 -1.4（平均気温）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "1、2月的早上平均接近零下12°C。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "日最低 1月 -11.7／2月 -11.8",
+      "verdict": "verified",
+      "notes": "氣象廳的日最低氣溫是一整天（0～24時）的最低值，不一定出現在早上；冬季晴天多在清晨，寫成「早上」是常見簡化，數字本身正確。建議第一次出現時寫「最低氣溫（多半出現在清晨）」，之後再簡稱早上。非阻擋。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "2月的最深積雪平均有84公分",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "最深積雪 2月 84",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "1月到3月地上幾乎天天都有雪。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a4",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（雪）｜気象庁",
+      "sourceQuote": "最深積雪 ≧1cm の日数 1月 31.0／2月 28.3／3月 30.3",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "以下數字都是氣象廳旭川氣象台1991年到2020年的平均，日本稱為「平年值」",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "統計期間 1991～2020／旭川（上川地方)　平年値",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "旭川一年平均7.2°C",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "年 平均気温 7.2",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "最冷的1月平均零下7.0°C，最熱的8月平均21.2°C。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "1月 -7.0／8月 21.2（各月で最低・最高）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "雪季從10月的初雪一路下到隔年4月",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "降雪の深さ合計 10月 2／11月 82／…／4月 15／5月 0",
+      "verdict": "verified",
+      "notes": "5月雪日數仍有 1.6 天但降雪合計 0cm，寫到 4 月可接受。初雪 10/19 見後面的初雪 claim。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "一整年的降雪加起來有557公分。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "年 降雪の深さ合計 557",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "表格 1月：-7.0°C｜-3.3°C｜-11.7°C｜66.9mm｜125cm｜72cm",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "1月|…|66.9|-7.0|-3.3|-11.7|…|125|18|72",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "表格 2月：-6.0°C｜-1.7°C｜-11.8°C｜54.7mm｜97cm｜84cm",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "2月|…|54.7|-6.0|-1.7|-11.8|…|97|17|84",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "表格 3月：-1.4°C｜3.0°C｜-6.1°C｜55.0mm｜80cm｜82cm",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "3月|…|55.0|-1.4|3.0|-6.1|…|80|18|82",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "表格 4月：5.6°C｜11.2°C｜0.2°C｜48.5mm｜15cm｜33cm",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "4月|…|48.5|5.6|11.2|0.2|…|15|6|33",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "表格 5月：12.3°C｜18.8°C｜6.1°C｜66.6mm｜0cm｜0cm",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "5月|…|66.6|12.3|18.8|6.1|…|0|0|0",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "表格 6月：17.0°C｜22.8°C｜12.0°C｜71.4mm｜—｜—",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "6月|…|71.4|17.0|22.8|12.0|…|---|---|---",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "表格 7月：20.7°C｜26.2°C｜16.4°C｜129.5mm｜—｜—",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "7月|…|129.5|20.7|26.2|16.4|…|---|---|---",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "表格 8月：21.2°C｜26.6°C｜16.9°C｜152.9mm｜—｜—",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "8月|…|152.9|21.2|26.6|16.9|…|---|---|---",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "表格 9月：16.4°C｜21.9°C｜11.7°C｜136.3mm｜—｜—",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "9月|…|136.3|16.4|21.9|11.7|…|---|---|---",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "表格 10月：9.4°C｜14.9°C｜4.4°C｜105.8mm｜2cm｜2cm",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "10月|…|105.8|9.4|14.9|4.4|…|2|1|2",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "表格 11月：2.3°C｜6.2°C｜-1.5°C｜114.5mm｜82cm｜27cm",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "11月|…|114.5|2.3|6.2|-1.5|…|82|20|27",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "表格 12月：-4.2°C｜-0.8°C｜-8.0°C｜102.4mm｜158cm｜58cm",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "12月|…|102.4|-4.2|-0.8|-8.0|…|158|26|58",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "表格 全年：7.2°C｜—｜—｜1,104.4mm｜557cm｜89cm",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "年|…|1104.4|7.2|12.2|2.4|…|557|30|89",
+      "verdict": "verified",
+      "notes": "數字正確。年欄最深積雪 89cm 是「每年最深積雪」的平年值，各年最深的月份不同，所以比任何單月平年值（2月 84cm）高，這是正常的，但讀者容易以為表格錯了，建議表下加一句說明（例如「全年欄是每年積得最深那天的平均」）。年欄平均最高 12.2°C、平均最低 2.4°C 官方有值，表格寫「—」不算錯，可補上。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "雨最多的是夏末到初秋，8月152.9毫米、9月136.3毫米",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "降水量合計 8月 152.9／9月 136.3（7月 129.5）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "一天下到10毫米以上的大雨也集中在7月到9月。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a1",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気圧・降水量）｜気象庁",
+      "sourceQuote": "≧10.0mm 7月 4.0／8月 4.6／9月 4.2（10月 3.6／11月 3.7）",
+      "verdict": "verified",
+      "notes": "7～9 月是最多的三個月，但 10、11 月也有 3.6、3.7 天，「集中」略強，可接受。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "12月一個月有21.1天降水在1毫米以上。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a1",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気圧・降水量）｜気象庁",
+      "sourceQuote": "12月 ≧1.0mm 21.1",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "日照時間也短，12月整個月只有58.1小時，約是5月197.4小時的三成。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a3",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（風・日照）｜気象庁",
+      "sourceQuote": "日照時間 12月 58.1／5月 197.4",
+      "verdict": "verified",
+      "notes": "58.1÷197.4＝0.29，約三成正確。"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "1月平均有25.8天整天都在0°C以下",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a2",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気温・蒸気圧・湿度）｜気象庁",
+      "sourceQuote": "1月 各階級の日数(日最高) ＜0.0℃ 25.8",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "早上更是31.0天都低於冰點。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a2",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気温・蒸気圧・湿度）｜気象庁",
+      "sourceQuote": "1月 各階級の日数(日最低) ＜0.0℃ 31.0",
+      "verdict": "verified",
+      "notes": "氣象廳的日最低氣溫是一整天（0～24時）的最低值，不一定出現在早上；冬季晴天多在清晨，寫成「早上」是常見簡化，數字本身正確。建議第一次出現時寫「最低氣溫（多半出現在清晨）」，之後再簡稱早上。非阻擋。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "12月到2月的平均最高氣溫分別是零下0.8°C、零下3.3°C與零下1.7°C。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "日最高 12月 -0.8／1月 -3.3／2月 -1.7",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "1954年1月24日測到零下30.0°C之後，旭川就沒有再冷到零下30°C以下。",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "1954年（昭和29年）1月24日に氷点下30.0℃を観測して以来、旭川で氷点下30℃以下は観測していません。（2024年4月1日現在）",
+      "verdict": "verified",
+      "notes": "氣象台原文截至 2024-04-01；另查氣象廳旭川「年ごとの値」（annually_s.php），年最低 2024 -21.6、2025 -15.7、2026 -19.9（暫定），到 2026/10 仍成立。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "旭川地方氣象台認為，原因之一是都市化，讓每年最冷的那天慢慢變得沒那麼冷。",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "最近の旭川は都市化の影響などで年間の最低気温は徐々に上昇してきており、氷点下30℃以下まで下がる日は稀になってきました。",
+      "verdict": "verified",
+      "notes": "「都市化の影響など」＝原因之一；「年間の最低気温」＝每年最冷那天的氣溫，條件一致。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "12月平均一個月就下158公分，是全年下最多的月份。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "降雪の深さ合計 12月 158（各月で最大）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "地上的雪到2月、3月積得最厚，最深平均84公分與82公分",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "最深積雪 2月 84／3月 82",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "2月有24.2天積雪在50公分以上。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a4",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（雪）｜気象庁",
+      "sourceQuote": "2月 最深積雪 ≧50cm 24.2",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "1月有30.2天、2月有26.5天在下雪。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a3",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（風・日照）｜気象庁",
+      "sourceQuote": "雪日数 1月 30.2／2月 26.5",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "有紀錄以來積得最深的一次，是1987年3月4日的138公分。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_s.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "観測史上1～10位の値（年間を通じての値）旭川｜気象庁",
+      "sourceQuote": "月最深積雪の大きい方から(cm) 138(1987/3/4)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "旭山動物園11月11日到隔年4月7日是冬季開園，開園時間縮短，最後入園是15:00。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園（旭川市）",
+      "sourceQuote": "通常開園（2026年）1/2〜4/7 10:30〜15:30 15:00／11/11〜12/29 10:30〜15:30 15:00／通常開園（2027年）1/2〜4/7 10:30〜15:30 15:00",
+      "verdict": "incorrect",
+      "notes": "官方開園表冬期分兩段：11/11～12/29 與 1/2～4/7，12/30～1/1 休園；正文寫成連續的「11月11日到隔年4月7日」，年底去的人會撲空。冬期日期在 2026、2027 兩年的表都一樣，但只公布到 2027 年，不能寫成每年固定。另外冬期中有特別開園（2026 年 2/7～2/9、2027 年 2/5～2/7 開到 20:30），「開園時間縮短」在這幾天不成立。建議：「旭山動物園冬季（2026年11月11日到12月29日、2027年1月2日到4月7日，年底年初休園）開到15:30，最後入園15:00。」並和下一句「冬季動物園只開到15:30」合併，細節歸 asahiyama-zoo 頁。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "冬季動物園只開到 15:30，見旭山動物園。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント｜旭山動物園（旭川市）",
+      "sourceQuote": "11/11〜12/29 10:30〜15:30／1/2〜4/7 10:30〜15:30",
+      "verdict": "verified",
+      "notes": "和上一句資訊重複，可合併。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "12月到2月的衣服，建議以早上零下10°C以下的低溫來準備。1、2月的平均最低氣溫是零下11.7°C與零下11.8°C，12月也有零下8.0°C。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "日最低 1月 -11.7／2月 -11.8／12月 -8.0",
+      "verdict": "verified",
+      "notes": "編輯判斷，依平年最低氣溫；12月 -8.0 未到 -10，但以「準備」而言合理。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "白天的最高氣溫多半不到0°C",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a2",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気温・蒸気圧・湿度）｜気象庁",
+      "sourceQuote": "日最高 ＜0.0℃ 12月 18.8／1月 25.8／2月 19.5",
+      "verdict": "verified",
+      "notes": "12～2 月真冬日都超過當月一半，「多半」成立。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "地上一整季都有積雪",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a4",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（雪）｜気象庁",
+      "sourceQuote": "最深積雪 ≧1cm 12月 30.0／1月 31.0／2月 28.3／3月 30.3",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "旭川冬天的風不大，1月到3月的平均風速每秒2.7到3.4公尺。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a3",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（風・日照）｜気象庁",
+      "sourceQuote": "平均風速 1月 2.7／2月 3.1／3月 3.4",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "一天最大風速到每秒10公尺以上的日子，12月到2月每月只有2到3天。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a3",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（風・日照）｜気象庁",
+      "sourceQuote": "日最大風速 ≧10.0m/s 12月 3.0／1月 2.0／2月 2.8",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "到每秒15公尺以上的，一整年平均也只有2.0天。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a3",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（風・日照）｜気象庁",
+      "sourceQuote": "年 ≧15.0m/s 2.0",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "旭川的冷主要來自盆地的輻射冷卻，風弱的晴天早上特別冷",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "旭川を含めて上川地方は、盆地にあるため、風の弱い晴れた日の朝は放射冷却により特に冷えやすく非常に寒い地域です。",
+      "verdict": "unsupported",
+      "notes": "「風弱的晴天早上特別冷」有原文支持；但「旭川的冷主要來自盆地的輻射冷卻」是原文沒有的因果強度（氣象台只說盆地使風弱的晴天早上特別容易變冷，沒說整體寒冷主要來自這一點）。建議改成「旭川在盆地，風弱的晴天早上容易因輻射冷卻變得特別冷」。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "3月也還是冬天，平均氣溫零下1.4°C，早上零下6.1°C，積雪最深平均有82公分。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "3月 -1.4|3.0|-6.1／最深積雪 82",
+      "verdict": "verified",
+      "notes": "氣象廳的日最低氣溫是一整天（0～24時）的最低值，不一定出現在早上；冬季晴天多在清晨，寫成「早上」是常見簡化，數字本身正確。建議第一次出現時寫「最低氣溫（多半出現在清晨）」，之後再簡稱早上。非阻擋。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "鑽石塵（ダイヤモンドダスト）出現在無風的日子，空氣中的水蒸氣凍成細小冰晶慢慢飄下來，陽光一照就閃閃發亮。",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "風のない日に、空気中の水蒸気が凍って出来た非常に小さな氷の結晶がゆっくり落ちてくる現象です。氷の結晶が、ダイヤモンドの粉ようにきらきら輝いて見えることから名づけられました。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "旭川市把它列進旭川八景，是這裡冬天嚴寒的代表景象。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "sourceTitle": "旭川八景 | 旭川市",
+      "sourceQuote": "ダイヤモンドダスト…旭川では厳寒を物語る冬の風物詩となっています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "以北海道來說，1月到2月清晨氣溫降到零下10°C以下的地方，就有機會看到。",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "北海道では厳冬期の1月から2月頃に、明け方の気温が氷点下10℃以下になる地域で見られる事があります。",
+      "verdict": "verified",
+      "notes": "「見られる事があります」寫成「有機會看到」，條件一致。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "旭川這兩個月的平均最低氣溫是零下11.7°C與零下11.8°C。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "日最低 1月 -11.7／2月 -11.8",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "隆冬晴天的早上，輻射冷卻讓地面降到零下十幾度時，旭川就有機會看到鑽石塵。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "sourceTitle": "旭川八景 | 旭川市",
+      "sourceQuote": "ダイヤモンドダストは、真冬の晴れた日の朝、地表の熱が急激に奪われて零下十数度になる放射冷却現象の時に見られます。",
+      "verdict": "verified",
+      "notes": "忠於旭川市原文（原文是「地表の熱が奪われて零下十数度になる」，沒明說是地溫還是氣溫）。但同節上一段氣象台寫的是「明け方の気温」，一段講氣溫、一段講地面，讀者會混淆；建議改成「氣溫降到零下十幾度」或「輻射冷卻特別強、冷到零下十幾度的早上」。非阻擋。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "想碰上一次，可以挑1月或2月裡前一晚預報晴朗、風又弱的日子，清晨出門。",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "風のない日に…／北海道では厳冬期の1月から2月頃に、明け方の気温が氷点下10℃以下になる地域で見られる事があります。／風の弱い晴れた日の朝は放射冷却により特に冷えやすく",
+      "verdict": "verified",
+      "notes": "編輯建議，由官方條件（1～2 月、無風、晴天的清晨、明け方 -10°C 以下）推得；「看前一晚預報」是把條件轉成讀者能做的事，官方沒有這句，但沒有加新事實。可接受。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "冰晶反射陽光時，還可能出現太陽柱。",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "ダイヤモンドダストに太陽の光が反射して出来るサンピラーや、サブサンという現象もあります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "2026年第67屆旭川冬季祭典（旭川冬まつり）開幕的2月6日，就因為暴風雪預報，煙火延期、舞台活動也取消了。",
+      "sourceUrl": "https://asahikawa-winterfes.jp/4918/",
+      "sourceTitle": "【2月6日暴風雪予報に伴う花火順延等について】 - 旭川冬まつり公式サイト",
+      "sourceQuote": "2月6日の天候が暴風雪の予報により…１．花火打ち上げ日の順延について…変更前 2026年2月6日（金）19:30～ 変更後 2026年2月8日（日）19:30～／２．ステージイベントの中止 12:00 に予定しておりました「オープニングセレモニー」は中止",
+      "verdict": "verified",
+      "notes": "官網首頁 NEWS 另有「【本日（２月６日）のステージイベント中止について】」。2/6 預定開幕式，開幕日成立。這是 2026 年單次事件，正文有寫年份與屆次，事實正確；是否符合「臨時異動不寫進文章」屬寫作規則，交讀者驗收判斷。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "祭典期間造訪，當天出門前到官網看一次最新消息。",
+      "sourceUrl": "https://asahikawa-winterfes.jp/",
+      "sourceTitle": "第67回 旭川冬まつり 2026",
+      "sourceQuote": "2026.2.5お知らせ【2月6日暴風雪予報に伴う花火順延等について】／2026.2.6お知らせ【本日（２月６日）のステージイベント中止について】",
+      "verdict": "verified",
+      "notes": "官網 NEWS 確實在當天發布異動，建議有依據。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "北海道觀光機構介紹，旭川機場約99%的航班都正常起飛、沒有停飛，冬天除雪做得確實，很少停飛。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_13163.html",
+      "sourceTitle": "旭川空港｜観光スポット｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "驚異の就航率99％を誇る旭川空港…冬の厳しい寒さの中でも、徹底した除雪体制により欠航が極めて少ない安定した運用を維持しており",
+      "verdict": "verified",
+      "notes": "頁尾署名「公益社団法人 北海道観光機構」，歸屬正確。原文沒有年度或統計期間（旭川機場官方年度就航率沒找到；北海道新聞報導另有 99.5% 等不同年度數字），正文已寫「北海道觀光機構介紹」，可接受。「就航率」只算有沒有停飛、不含延誤，「正常起飛」可能被讀成準時，建議改成「約99%的航班照常有飛」；句尾「很少停飛」與前半重複，可刪一處。非阻擋。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "7月、8月的平均最高是26.2°C與26.6°C，最低是16.4°C與16.9°C，早晚跟白天差了將近10度。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "7月 26.2|16.4／8月 26.6|16.9",
+      "verdict": "verified",
+      "notes": "差 9.8、9.7 度。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "一般年份7月有20.9天、8月有21.7天熱到25°C以上，夜裡還在25°C以上的熱帶夜則是0天。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a2",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気温・蒸気圧・湿度）｜気象庁",
+      "sourceQuote": "日最高 ≧25.0℃ 7月 20.9／8月 21.7；日最低 ≧25.0℃ 各月 0.0",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "2021年8月7日測到觀測史上最高的37.9°C，那年光是35°C以上就有10天。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_s.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "観測史上1～10位の値（年間を通じての値）旭川｜気象庁",
+      "sourceQuote": "日最高気温の高い方から(℃) 37.9(2021/8/7)／日最高気温35℃以上年間日数(日) 10(2021)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "2025年最高氣溫25°C以上有96天、30°C以上有37天，都是觀測史上最多。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_s.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "観測史上1～10位の値（年間を通じての値）旭川｜気象庁",
+      "sourceQuote": "日最高気温25℃以上年間日数(日) 96(2025)|87(2023)…／日最高気温30℃以上年間日数(日) 37(2025)|37(1928)|35(1916)",
+      "verdict": "verified",
+      "notes": "單一年份紀錄，正文有標 2025 年，沒和平年值混。但 30°C 以上 37 天是與 1928 年並列第一，建議寫「25°C以上96天是觀測史上最多，30°C以上37天追平1928年的最多紀錄」。非阻擋。"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "這兩項的往年平均是63.0天與10.9天。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a2",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気温・蒸気圧・湿度）｜気象庁",
+      "sourceQuote": "年 日最高 ≧25.0℃ 63.0／≧30.0℃ 10.9",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "2025年7月的月平均氣溫25.3°C，也是歷來最高。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_s.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "観測史上1～10位の値（年間を通じての値）旭川｜気象庁",
+      "sourceQuote": "月平均気温の高い方から(℃) 25.3(2025/7)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "這幾年的夏天比往年熱。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_s.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "観測史上1～10位の値（年間を通じての値）旭川｜気象庁",
+      "sourceQuote": "年平均気温の高い方から(℃) 9.0(2025) 8.8(2023) 8.3(2024) 8.3(2021) 8.2(2022)／月平均気温の高い方から 25.3(2025/7) 24.6(2023/8) 24.4(2021/7)",
+      "verdict": "verified",
+      "notes": "年平均氣溫前 5 名都是 2021～2025 年，月平均前 3 名也是近年。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "一般年份7月也有4.0天、8月有5.4天熱到30°C以上",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a2",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気温・蒸気圧・湿度）｜気象庁",
+      "sourceQuote": "日最高 ≧30.0℃ 7月 4.0／8月 5.4",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "7月到9月一天下到10毫米以上的日子每個月有4.0到4.6天",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a1",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気圧・降水量）｜気象庁",
+      "sourceQuote": "≧10.0mm 7月 4.0／8月 4.6／9月 4.2",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "4月平均氣溫5.6°C，早上平均只有0.2°C，一個月裡還有14.4天早上在冰點以下。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a2",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気温・蒸気圧・湿度）｜気象庁",
+      "sourceQuote": "4月 5.6|11.2|0.2…日最低＜0.0℃ 14.4",
+      "verdict": "verified",
+      "notes": "氣象廳的日最低氣溫是一整天（0～24時）的最低值，不一定出現在早上；冬季晴天多在清晨，寫成「早上」是常見簡化，數字本身正確。建議第一次出現時寫「最低氣溫（多半出現在清晨）」，之後再簡稱早上。非阻擋。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "4月平均會下15公分，積雪最深33公分，有8.8天地上還有積雪。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a4",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（雪）｜気象庁",
+      "sourceQuote": "4月 降雪の深さ合計 15／最深積雪 33／≧1cm 8.8",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "旭川的蝦夷山櫻往年平均5月4日開花，近年提早，2021年到2026年都在4月21日到4月30日之間開花。",
+      "sourceUrl": "https://www.data.jma.go.jp/sakura/data/sakura003_07.html",
+      "sourceTitle": "気象庁 | さくらの開花日(2021-2026年)",
+      "sourceQuote": "旭川 * 4 29 4 26 4 25 4 24 4 30 4 21 5 4 えぞやまざくら（地点名 2021 2022 2023 2024 2025 2026 平年値 代替種目）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "到了5月，平均氣溫回到12.3°C，日照也是全年最多的197.4小時。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a3",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（風・日照）｜気象庁",
+      "sourceQuote": "5月 日照時間 197.4（各月で最大）；平均気温 12.3（主な要素）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "9月平均還有16.4°C，到10月就降到9.4°C，早上只剩4.4°C。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "9月 16.4／10月 9.4|14.9|4.4",
+      "verdict": "verified",
+      "notes": "氣象廳的日最低氣溫是一整天（0～24時）的最低值，不一定出現在早上；冬季晴天多在清晨，寫成「早上」是常見簡化，數字本身正確。建議第一次出現時寫「最低氣溫（多半出現在清晨）」，之後再簡稱早上。非阻擋。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "旭川氣象台用來判定紅葉的山紅葉，往年平均10月23日轉紅、11月2日落葉。",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "旭川では、毎年決まった標本木「やまもみじ」…旭川のやまもみじの平年値は「紅葉日」の平年は10月23日「落葉日」の平年は11月2日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "初雪往年平均在10月19日就下了，11月4日地上開始積雪，11月24日起積雪就一路不融。",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "旭川の初雪の平年値は10月19日、積雪…初日の平年値は11月4日、長期積雪…初日の平年値は11月24日です。／日最深積雪が１㎝以上となった状態を積雪といい、さらにその状態が30日以上続くと長期積雪(根雪)といいます。",
+      "verdict": "verified",
+      "notes": "長期積雪的定義是積雪連續 30 天以上；旭川的根雪通常持續到春天，「一路不融」可接受。"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "11月平均氣溫2.3°C，有20.2天早上在冰點以下。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=12&block_no=47407&year=&month=&day=&view=a2",
+      "sourceTitle": "旭川（上川地方)　平年値（年・月ごとの値）　詳細（気温・蒸気圧・湿度）｜気象庁",
+      "sourceQuote": "11月 2.3…日最低＜0.0℃ 20.2",
+      "verdict": "verified",
+      "notes": "氣象廳的日最低氣溫是一整天（0～24時）的最低值，不一定出現在早上；冬季晴天多在清晨，寫成「早上」是常見簡化，數字本身正確。建議第一次出現時寫「最低氣溫（多半出現在清晨）」，之後再簡稱早上。非阻擋。"
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "延伸資料：氣象廳旭川平年值、旭川地方氣象台季節話題、旭川冬まつり官網三個網址與說明",
+      "sourceUrl": "https://www.data.jma.go.jp/asahikawa/shosai/kisetsu_topics.html",
+      "sourceTitle": "上川・留萌地方の季節のトピックス｜旭川地方気象台",
+      "sourceQuote": "三個網址 2026-10-26 以 curl 實際打開，內容與說明一致（平年値主表、季節のトピックス含ダイヤモンドダスト・雪・紅葉、冬まつり官網 NEWS）",
+      "verdict": "verified",
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "verified": 74,
+    "incorrect": 1,
+    "unsupported": 1,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
