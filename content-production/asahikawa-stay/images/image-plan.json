@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahikawa-stay",
+  "articleTitle": "旭川住宿，車站周邊與市中心的飯店、訂房管道與住宿稅",
+  "targetUrl": "/places/asahikawa/stay/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-26",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-stay/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-26",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "呈現旭川車站到市中心這一帶的街景，讓讀者一眼看出這篇講的是住在旭川市區哪一區，而不是介紹某一間飯店。",
+      "mustShow": ["旭川市中心街景，例如平和通買物公園、站前一帶或市中心夜景"],
+      "mustNotShow": ["單一旅館的招牌或外觀當主體", "可辨識的人物臉部", "旭川交通頁已用的 Asahikawa Station in October 2026.jpg", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Kaimono_Koen_20250801.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.55},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Miss 501 在 2025 年 8 月 1 日拍的平和通買物公園，從市中心往車站方向拍：石板步行街兩旁是行道樹、花盆與百貨大樓，街道盡頭就是 JR 旭川站的站舍。文章講的正是「站前」與「往市中心走 13 到 15 分鐘」這兩區，這條步行街就是兩區之間的路，又是近一年內的現況。原圖 4:3、5184 px 寬，裁 16:9 時焦點放在 y 0.55，切掉上方部分天空與大樓頂，保留盡頭的車站與步行街。限制：左邊是 Feeeal 旭川百貨的外牆（Seria、PEARLY GATES 小招牌），右上是公寓大樓的「モデルルーム公開中」看板，中間偏左的深色格紋大樓不確定用途，都不是畫面主體；畫面中沒有任何旅館招牌。cover-02 是くろふね 2012 年拍的同一條步行街（雨後），可當備選，但已是十多年前的樣子，招牌也較多。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-26",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Heiwa-dori Asahikawa」「Asahikawa Kaimono Koen」「平和通買物公園」「Asahikawa night」「Asahikawa city」「旭川 夜景」，篩掉寬度不到 1600 px 的檔案。看過大圖的有：Kaimono Koen 20250801（選定）、旭川平和通買物公園 - panoramio（2012，備選）、Asahikawa - Asahikawa6012（CC0，2025 年 10 月黃昏的步行街，氣氛好，但左側「歌屋」卡拉 OK 大招牌是畫面主體之一，不用）、Asahikawa city Heiwa street shopping park（2008，marui imai、EXC 等大招牌與廣告人物照醒目，不用）、Asahikawa Station from above - 2022 Aug 10（從飯店房間高處拍的站前夜景，取景位置等於某間旅館的窗景，畫質偏暗，不用）、Asahikawa-city in winter (31989158020)（空拍住宅區，看不出市中心與車站，不用）。依指示不用旭川交通頁已用的 Asahikawa Station in October 2026。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kaimono_Koen_20250801.jpg",
+          "creatorName": "Miss 501",
+          "sourceTitle": "File:Kaimono Koen 20250801.jpg",
+          "sourceDescription": "平和通買物公園（駅側に向けて撮影）（Own work，分類 Heiwa-dōri Kaimono Kōen、Asahikawa Station、Feeeal Asahikawa）",
+          "takenAt": "2025-08-01",
+          "width": 5184,
+          "height": 3888,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為平和通買物公園、朝車站方向拍攝，街道盡頭看得到 JR 旭川站；畫面就是文章說的站前與市中心之間的步行街，沒有任何一間旅館當主體。",
+          "altDraft": "旭川平和通買物公園的石板步行街，兩旁是行道樹與大樓，盡頭是JR旭川站",
+          "captionDraft": "從平和通買物公園往 JR 旭川站方向看（2025 年 8 月）。",
+          "creditDraft": "照片：Miss 501／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "遠處有幾位行人，臉部無法辨識",
+            "logos": "左側 Feeeal 旭川外牆的 Seria、PEARLY GATES 小招牌；右上公寓看板；都不是主體",
+            "artwork": "none",
+            "property": "步行街、百貨與周邊大樓，盡頭為 JR 旭川站",
+            "risk": "low",
+            "notes": "沒有旅館招牌，不會讓讀者以為是某間飯店；商家小招牌在畫面邊緣，不會被誤認為推薦或本站實地拍攝。裁切後的圖要以 CC BY-SA 4.0 標示。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E6%97%AD%E5%B7%9D%E5%B9%B3%E5%92%8C%E9%80%9A%E8%B2%B7%E7%89%A9%E5%85%AC%E5%9C%92_-_panoramio.jpg",
+          "creatorName": "くろふね",
+          "sourceTitle": "File:旭川平和通買物公園 - panoramio.jpg",
+          "sourceDescription": "旭川平和通買物公園（Panoramio 轉存，座標 43.7653）",
+          "takenAt": "2012-06-23",
+          "width": 5184,
+          "height": 3456,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "contextual",
+          "matchLimits": "2012 年拍攝，兩旁店家與招牌已和現在不同；看不到旭川車站。",
+          "whyItFits": "檔案頁說明與分類為平和通買物公園，畫面是雨後的石板步行街與行道樹，呈現市中心的街景。",
+          "altDraft": "雨後的旭川平和通買物公園，石板路兩旁停著腳踏車與行道樹",
+          "captionDraft": "旭川平和通買物公園（2012 年 6 月）。",
+          "creditDraft": "照片：くろふね／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "遠處少數行人，臉部無法辨識",
+            "logos": "Feeeal、asatan 等商家招牌在畫面兩側，不是主體",
+            "artwork": "none",
+            "property": "步行街與商業大樓",
+            "risk": "low",
+            "notes": "沒有旅館招牌；商家招牌在邊緣。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

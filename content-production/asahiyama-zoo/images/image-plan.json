@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahiyama-zoo",
+  "articleTitle": "旭山動物園門票、交通與開放時間，企鵝散步什麼時候有",
+  "targetUrl": "/places/asahikawa/asahiyama-zoo/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-26",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahiyama-zoo/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-26",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼認出這篇講的是旭山動物園，最好是冬天有積雪的園內，對應文章的開園時間與只在冬天舉行的企鵝散步。",
+      "mustShow": ["旭山動物園園內認得出來的展示館或設施（企鵝館、北極熊館、海豹館、正門等），或園內的企鵝散步"],
+      "mustNotShow": ["可辨識的人物臉部當主體", "其他動物園冒充旭山動物園", "旭川車站等園外地點", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Asahiyama_Zoo%2C_Asahikawa_-_Mar_12%2C_2026_%281%29.jpg",
+        "focalPoint": {"x": 0.55, "y": 0.6},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 keiichiro shikano 2026 年 3 月 12 日從高處拍的旭山動物園園內：中間是企鵝館（看板寫「ぺんぎん館」，水池玻璃與岩壁造景都看得到），右邊是紅磚鐘塔與企鵝館旁的白色天橋，左邊是水泥展示館與廁所，地上還有積雪，背後是旭山的樹林。文章講開園時間、冬季開放與企鵝散步，這張是冬天尾聲的企鵝館一帶、又是近期現況，最能代表文章。原圖 3:2、4704 px 寬，裁 16:9 只切掉上下少量，焦點放在 x 0.55、y 0.6，保留企鵝館與鐘塔。限制：畫面裡有幾位遊客，但都很小、多是背影，認不出臉；前景有兩根包著白布的欄桿柱；鐘面上有很小的 SEIKO 字樣，不是主體。這張不是企鵝散步的實況，圖說只寫企鵝館一帶，不暗示正在舉行企鵝散步。cover-02 是 2009 年企鵝散步中的國王企鵝特寫，主題最貼近企鵝散步，但原圖是直式，裁成 16:9 只剩胸口一段，而且看不出是旭山動物園，留作備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-26",
+        "photoSearchNotes": "查過維基共享資源分類 Category:Asahikawa Asahiyama Zoological Park 與所有子分類（企鵝、北極熊、海豹、哺乳類、鳥類、旭山動物園號列車等），共 182 個檔案，篩掉寬度不到 1600 px 的。看過大圖的有：Asahiyama Zoo, Asahikawa - Mar 12, 2026 (1)（選定）、同日 (2)（同一角度，遊客較多）、Walking King Penguins in Asahiyama Zoo（企鵝散步，但左邊飼育員的臉清楚可辨，不用）、Walking Penguins in Asahiyama Zoo (back)（企鵝散步背影，畫面有工作人員與排隊人群）、Walking Ohsama-Penguin at Asahiyama Zoo（備選）、Asahiyama zoo entrance（2009 年正門，前面有計程車司機與行人，舊照）、Asahiyama Zoo 2022 Aug 10 various（夏天主步道，前景兩位遊客是主體）、同日 17 00 12 全景（「夜の動物園」拱門，看不出展示館）、Swimming Seal at Asahiyama Zoo、Asahiyama polar bear、Swimming polar bear 2012-06-19（動物特寫，看不出是旭山動物園）、Winter in Hokkaido (Asahiyama Zoo) 03、04（狼的特寫，右下有攝影者浮水印，不用）、2010.01.29 蜜月DAY9（自動販賣機，主體是商品）。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。站上其他文章沒有用過這幾張。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahiyama_Zoo,_Asahikawa_-_Mar_12,_2026_(1).jpg",
+          "creatorName": "keiichiro shikano",
+          "sourceTitle": "File:Asahiyama Zoo, Asahikawa - Mar 12, 2026 (1).jpg",
+          "sourceDescription": "Asahikawa Asahiyama Zoological Park, Hokkaido, Japan（Flickr 轉載，經 FlickreviewR 2 核對授權；分類 Asahikawa Asahiyama Zoological Park）",
+          "takenAt": "2026-03-12",
+          "width": 4704,
+          "height": 3136,
+          "licenseName": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明與分類為旭山動物園，畫面中間的看板寫「ぺんぎん館」，旁邊是企鵝館的水池與岩壁造景，地上有積雪，正是文章講的冬季園內與企鵝館一帶。",
+          "altDraft": "從高處看冬天的旭山動物園，中間是企鵝館的水池與岩壁，右邊是紅磚鐘塔，地上留著積雪，背後是樹林",
+          "captionDraft": "旭山動物園企鵝館一帶（2026 年 3 月）。",
+          "creditDraft": "照片：keiichiro shikano／Wikimedia Commons／CC BY 4.0",
+          "commercialReview": {
+            "people": "幾位遊客在遠處，人很小、多是背影，認不出臉，不是主體",
+            "logos": "企鵝館的「ぺんぎん館」看板是地點本身；鐘面上很小的 SEIKO 字樣",
+            "artwork": "鐘塔上的動物浮雕，在畫面邊緣",
+            "property": "動物園的展示館、步道與鐘塔",
+            "risk": "low",
+            "notes": "沒有可辨識的人物；看板是地點名稱，不會讓人誤以為是推薦或本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Walking_Ohsama-Penguin_at_Asahiyama_Zoo.JPG",
+          "creatorName": "青子守歌",
+          "sourceTitle": "File:Walking Ohsama-Penguin at Asahiyama Zoo.JPG",
+          "sourceDescription": "Walking King Penguin in Asahiyama Zoo (Hokkaido, Japan).（Own work，分類 Aptenodytes patagonicus in Asahikawa Asahiyama Zoological Park；檔案頁另列 GFDL 與 CC BY-NC 3.0，選用 CC BY-SA 3.0）",
+          "takenAt": "2009-02-24",
+          "width": 2736,
+          "height": 3648,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "licenseCheckedAt": "2026-10-26",
+          "matchType": "contextual",
+          "matchLimits": "2009 年拍攝；直式原圖裁成 16:9 只剩企鵝胸口一段；畫面只有企鵝與雪地，看不出是旭山動物園。",
+          "whyItFits": "檔案頁說明為旭山動物園企鵝散步中的國王企鵝，雪地與後方的繩索圍欄就是散步路線，對應文章的企鵝散步。",
+          "altDraft": "雪地上走著的國王企鵝，後面還有兩隻",
+          "captionDraft": "旭山動物園的企鵝散步（2009 年 2 月）。",
+          "creditDraft": "照片：青子守歌／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "動物園的雪地與圍欄",
+            "risk": "low",
+            "notes": "沒有人物與招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
