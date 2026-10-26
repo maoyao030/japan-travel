@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "articleId": "sounkyo-festival",
-  "articleSha256": "f45bc3d2d05c68c432b740b92824c602638a5c86759e37b5cd168404c03e8685",
+  "articleSha256": "04cdd9b28d82073e1dbedb16db3977cb66ced2680354378fa37b170635c33d28",
   "checker": "fact-check-agent（Claude Opus 5.5 事實查核子代理，非作者、非潤稿者；唯讀，2026-10-26 以 curl 重開官方頁並剝除 HTML 註解後判讀，PDF 以 curl 下載轉圖判讀，JavaScript 頁面以瀏覽器新分頁讀取後關閉）",
   "checkedAt": "2026-10-26",
   "claims": [
@@ -151,12 +151,12 @@
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "冰瀑祭官網的購票頁連到KKday的票券頁面，2027年的金額與售票方式，出發前到冰瀑祭官網看。",
-      "sourceUrl": "https://sounkyo.net/hyoubaku/ticket/",
-      "sourceTitle": "チケット購入 | 層雲峡温泉 氷瀑まつり-北海道層雲峡観光協会",
-      "sourceQuote": "（頁面上看得到的唯一內容連結）<a href=\"https://www.kkday.com/ja/product/153730?cid=17323&ud1=officialsite\"><img …></a>",
+      "articleExcerpt": "2026年官網首頁放了KKday電子票的橫幅，寫著用手機就能順暢入場，購票頁也連到同一個KKday頁面。",
+      "sourceUrl": "https://web.archive.org/web/20260215020212id_/https://sounkyo.net/hyoubaku/",
+      "sourceTitle": "層雲峡温泉 氷瀑まつり-北海道層雲峡観光協会（Internet Archive 2026-02-15 存檔）",
+      "sourceQuote": "<div class=\"par-overview-info2026\"> … <a href='https://www.kkday.com/ja/product/153730?cid=17323&ud1=officialsite'><img src='img/common/e-ticet.png'></a>｜橫幅圖文字：スマホで簡単・スムーズ入場 便利な電子チケット",
       "verdict": "verified",
-      "notes": "剝除 HTML 註解後，ticket 頁仍有連到 KKday 商品 153730 的橫幅；KKday 本身 403 未讀取、未繞過，正文沒寫 KKday 價格。"
+      "notes": "第1輪複查：2026-02-15 首頁存檔剝除 HTML 註解後橫幅仍在（2026 年版區塊 par-overview-info2026）；橫幅文字讀 2026-03-20 存檔的 e-ticet.png 圖檔。現行購票頁 https://sounkyo.net/hyoubaku/ticket/ 剝除註解後連到同一個 KKday 商品 153730。KKday 403 未繞過，正文沒寫價格。"
     },
     {
       "claimId": "C18",
@@ -177,17 +177,8 @@
       "notes": "倒數見 https://sounkyo.net/hyoubaku/map/ 頁面上看得到的文字。"
     },
     {
-      "claimId": "C20",
-      "articleExcerpt": "前一年的2025年第50回，也是每晚20:30放。",
-      "sourceUrl": "https://www.hokkaido-np.co.jp/movies/detail/6367932475112/",
-      "sourceTitle": "北海道新聞（第50回層雲峡温泉氷瀑まつり 開幕の報道）",
-      "sourceQuote": "今年は50回目を記念して毎日午後8時半から花火を打ち上げる",
-      "verdict": "unsupported",
-      "notes": "唯一支持來源是北海道新聞報導；依來源分級，新聞只能找候選，寫進正文前要用官方再查證。已查官方：Internet Archive 2025-02-20 的冰瀑祭官網首頁存檔（https://web.archive.org/web/20250220114306id_/https://sounkyo.net/hyoubaku/ ，剝除註解後只有開催時間、期間 2025/1/25～3/9、協力金，沒有煙火時間）與 2025-03-16 會場圖存檔（只寫「花火打ち上げのカウントダウン」「花火特別観覧エリア」，沒有時間），都找不到 20:30。建議刪掉這句（對讀者決定沒有影響），或找到 2025 年主辦官方的煙火時間再寫。"
-    },
-    {
       "claimId": "C21",
-      "articleExcerpt": "去層雲峽的路線巴士是道北巴士的層雲峡・上川線。",
+      "articleExcerpt": "去層雲峽的路線巴士是道北巴士的層雲峽・上川線。",
       "sourceUrl": "https://sounkyo.net/common/img/content/content_20260630_164326.jpg",
       "sourceTitle": "層雲峡・上川線 時刻表（層雲峡観光協会 掲載）",
       "sourceQuote": "層雲峡・上川線（Sounkyo・Kamikawa Line）｜道北バス株式会社",
@@ -277,7 +268,7 @@
     },
     {
       "claimId": "C31",
-      "articleExcerpt": "照2026年的開放時間，平日17:00才開場，去程搭14:25從旭川出發的車。回程搭18:55的末班車到上川，再轉JR回旭川。",
+      "articleExcerpt": "照2026年的開放時間，平日17:00才開場，去程搭14:25從旭川出發的車。回程搭18:55的末班車到上川，再轉JR回旭川。錯過14:25這班，其他走法見層雲峽交通。",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "道北バス 層雲峡・上川線 時刻表（2026.7.1改正）",
       "sourceQuote": "旭川駅前 発 14:25 → 層雲峡 着 16:24｜層雲峡 発 18:55 → 上川森のテラス バスタッチ 着 19:25",
@@ -286,16 +277,16 @@
     },
     {
       "claimId": "C32",
-      "articleExcerpt": "週末假日11:00就開場，上午出發，回程坐17:00的直達車就能回到旭川。還想多待一會兒，也可以改搭18:55的末班車轉JR。",
-      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
-      "sourceTitle": "道北バス 層雲峡・上川線 時刻表（2026.7.1改正）",
-      "sourceQuote": "旭川駅前 発 9:55 10:55｜層雲峡 発 17:00 → 旭川駅前 着 18:55｜層雲峡 発 18:55 → 上川 着 19:25",
+      "articleExcerpt": "週末假日11:00就開場，上午出發。冰雕要入夜後才打上七彩燈光，回程坐17:00的直達車，看到的主要是白天的冰雕。想看點燈，回程就搭18:55的末班車到上川轉JR。",
+      "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
+      "sourceTitle": "【北海道・層雲峡】氷点下の峡谷に輝く30基の氷像と冬花火。「第51回 氷瀑まつり」1/24開幕！",
+      "sourceQuote": "夜には七色のライトアップで幻想的な空間を演出。｜（官網）土日祝 11：00～21：30｜（道北バス 2026.7.1改正）層雲峡 発 17:00 → 旭川駅前 着 18:55｜層雲峡 発 18:55 → 上川 着 19:25",
       "verdict": "verified",
-      "notes": "開場時間見冰瀑祭官網（2026）。"
+      "notes": "第1輪複查：打燈是「夜には」，17:00 發車前在會場的時間大半在白天，「看到的主要是白天的冰雕」是有條件、不帶數字的說法，可以接受（官方沒公布打燈開始時刻，正文也沒寫）。18:55→上川 19:25 接 JR 20:24／21:04 見 C35。開放時間為 2026 年資料。"
     },
     {
       "claimId": "C33",
-      "articleExcerpt": "| 平日 | 14:25→16:24 | 層雲峡18:55→上川19:25，轉JR普通20:24或特急大雪21:04 | 21:22或21:44 |",
+      "articleExcerpt": "| 平日 | 14:25→16:24 | 層雲峽18:55→上川19:25，轉JR普通20:24或特急大雪21:04 | 21:22或21:44 |",
       "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2921&d=20261210",
       "sourceTitle": "時刻表|北海道旅客鉄道株式会社（石北本線 上り）",
       "sourceQuote": "4534D 普通 上川 2024 … 旭川 2122｜3594D 大雪 上川 2104 … 旭川 2144",
@@ -304,7 +295,7 @@
     },
     {
       "claimId": "C34",
-      "articleExcerpt": "| 週末假日 | 9:55→11:54、10:55→12:54 | 層雲峡17:00直達旭川站前 | 18:55 |",
+      "articleExcerpt": "| 週末假日，白天看冰雕 | 9:55→11:54、10:55→12:54 | 層雲峽17:00直達旭川站前 | 18:55 |",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "道北バス 層雲峡・上川線 時刻表（2026.7.1改正）",
       "sourceQuote": "旭川駅前 発 9:55 10:55 → 層雲峡 着 11:54 12:54｜層雲峡 発 17:00 → 旭川駅前 着 18:55",
@@ -313,7 +304,7 @@
     },
     {
       "claimId": "C35",
-      "articleExcerpt": "| 週末假日，晚一點回 | 9:55→11:54、10:55→12:54 | 層雲峡18:55→上川19:25，轉JR普通20:24或特急大雪21:04 | 21:22或21:44 |",
+      "articleExcerpt": "| 週末假日，看點燈 | 9:55→11:54、10:55→12:54 | 層雲峽18:55→上川19:25，轉JR普通20:24或特急大雪21:04 | 21:22或21:44 |",
       "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2921&d=20261210",
       "sourceTitle": "時刻表|北海道旅客鉄道株式会社（石北本線 上り）",
       "sourceQuote": "4534D 普通 上川 2024 → 旭川 2122｜3594D 大雪 上川 2104 → 旭川 2144（運転日 毎日）",
@@ -331,12 +322,12 @@
     },
     {
       "claimId": "C37",
-      "articleExcerpt": "來回都坐旭川直達車，巴士車資是4,280日圓。回程改從上川轉JR，巴士段是890日圓。",
+      "articleExcerpt": "來回都坐旭川直達車，巴士車資是4,280日圓。回程改從上川轉JR，巴士是去程2,140日圓加回程890日圓，合計3,030日圓，JR另計。",
       "sourceUrl": "https://sounkyo.net/common/img/content/content_20260630_164326.jpg",
       "sourceTitle": "層雲峡・上川線 時刻表（層雲峡観光協会 掲載）",
       "sourceQuote": "◎層雲峡～旭川 片道料金 ¥2,140｜◎上 川～層雲峡 片道料金 ¥890",
       "verdict": "verified",
-      "notes": "2,140×2＝4,280 重算一致；回程巴士段層雲峽→上川 890。"
+      "notes": "2,140×2＝4,280；2,140＋890＝3,030，重算一致。"
     },
     {
       "claimId": "C38",
@@ -358,12 +349,12 @@
     },
     {
       "claimId": "C40",
-      "articleExcerpt": "層雲峽溫泉街2026年10月22日就積雪了。遊客中心提醒早晚路面可能結冰，一定要換冬季輪胎，夏季輪胎走山路非常危險。",
+      "articleExcerpt": "層雲峽遊客中心提醒早晚路面可能結冰，一定要換冬季輪胎，夏季輪胎走山路非常危險。",
       "sourceUrl": "https://sounkyovc.net/blog/92605",
       "sourceTitle": "層雲峡は雪景色 | 層雲峡ビジターセンター",
       "sourceQuote": "2026年10月22日 09時45分 天候: 雪｜層雲峡温泉街にも雪が積もりました。｜朝晩を中心に路面凍結の恐れがあり、夏タイヤでの峠道の走行は大変危険です。層雲峡へお越しの際は、必ず冬タイヤを装着の上",
       "verdict": "verified",
-      "notes": "原文「峠道」譯成「山路」可接受。"
+      "notes": "第1輪複查：10/22 積雪那句已刪，剩下的提醒仍與部落格原文一致；原文「峠道」譯成「山路」可接受。"
     },
     {
       "claimId": "C41",
@@ -372,7 +363,7 @@
       "sourceTitle": "管内の国道の通行止めについて（第1報）｜国土交通省北海道開発局旭川開発建設部（令和4年2月21日）",
       "sourceQuote": "国道39号 上川町層雲峡温泉～北見市留辺蘂町富士見 … 解除未定（吹雪のため）｜備考 石北峠｜（令和7年2月4日 第3報）解除未定（大雪による雪崩のおそれのため）",
       "verdict": "verified",
-      "notes": "吹雪（2022）、大雪による雪崩のおそれ（2025，https://www.hkd.mlit.go.jp/as/release/a079ll000000b6t2-att/pm5osg00000004sh.pdf）兩份開發局新聞稿。另注意：正文資料來源列的標題「冬期の通行止めについて」與這份 PDF 的實際標題「管内の国道の通行止めについて（第1報）」不同，建議作者順手改正來源標題（不影響事實判定）。"
+      "notes": "吹雪（2022 第1報）、大雪による雪崩のおそれ（2025 第3報，https://www.hkd.mlit.go.jp/as/release/a079ll000000b6t2-att/pm5osg00000004sh.pdf）兩份開發局新聞稿。第1輪複查：資料來源兩份 PDF 的標題已改成實際標題（第３報／第1報），網址與標題對應正確。"
     },
     {
       "claimId": "C42",
@@ -601,12 +592,12 @@
     },
     {
       "claimId": "C67",
-      "articleExcerpt": "從溫泉街到會場另有只載上山的20人座接駁車，18:30到20:30行駛，人多時優先讓行動不便的人搭。",
+      "articleExcerpt": "從溫泉街到會場另有20人座接駁車，18:30到20:30行駛，只載上山，回程得走路下來。人多時優先讓行動不便的人搭。",
       "sourceUrl": "https://sounkyo-illuminate.com/",
       "sourceTitle": "【公式】奇跡のイルミネート | 層雲峡観光協会",
       "sourceQuote": "層雲峡温泉街 ⇔ 会場 シャトルバス 運行時間：18：30〜20：30｜混雑時は自力での歩行が困難な方を優先してご案内いたします｜登り専用で運航しております。マイクロバス20名乗り",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第1輪複查：「登り専用」＝只載上山，回程沒有接駁車、要走下來，推論成立。"
     },
     {
       "claimId": "C68",
@@ -625,12 +616,21 @@
       "sourceQuote": "21:00～ 花火打上｜夏花火 20:30～ 花火打上｜（道北バス）層雲峡 発 18:55（最終）｜（イルミネート）18:00 - 21:00",
       "verdict": "verified",
       "notes": "夏天時刻表同為 2026.7.1 改正版，層雲峽最後一班 18:55，早於 20:30／21:00 煙火；推算一致。"
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "想在入口少一道手續，可以出發前在官網連到的KKday買好，2027年的金額與售票方式也在官網購票頁確認。",
+      "sourceUrl": "https://web.archive.org/web/20260320090356id_/https://sounkyo.net/hyoubaku/img/common/e-ticet.png",
+      "sourceTitle": "氷瀑まつり 電子チケット バナー（e-ticet.png，Internet Archive 2026-03-20 存檔）",
+      "sourceQuote": "スマホで簡単・スムーズ入場 便利な電子チケット",
+      "verdict": "verified",
+      "notes": "協調者請判斷的推論：官方橫幅明說電子票讓入場「簡単・スムーズ」，正文「想在入口少一道手續，可以出發前買好」是同一個意思的白話說法，沒說一定要先買、沒說比較便宜、沒寫現場付款方式，推論成立。若要更貼原文，可改成「想入場更順一點」，非必要。"
     }
   ],
   "summary": {
-    "verified": 68,
+    "verified": 69,
     "incorrect": 0,
-    "unsupported": 1,
+    "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,
     "not-stated": 0
