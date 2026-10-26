@@ -1388,3 +1388,40 @@ Darren 於 2026-10-16 確認交接文件 `content-planning/handoff-2026-10-16.md
 - 同時記下 Darren 的決定：臨時維修不寫進文章，渡輪頁不改。
 - 19 篇用新規則檢查的結果與 6 篇的連結資料在共用筆記資料夾 `recheck-2026-10-25/`、`links-2026-10-25/`（不在 repo）。
 - 唯一下一步：Darren 確認住宿頁不寫價格與含餐的做法，再照它改規則與 6 篇文章。
+
+## 2026-10-26 Claude Code（地端）：持續寫作一整天，稚內群全部上線、旭川・大雪群上線 6 篇
+
+Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫到 Claude 每週額度用完（10/27 凌晨）為止。
+
+### 已決定（Darren 2026-10-26）
+
+- 住宿頁不寫價格（寫進 AGENTS.md、RULES_OVERVIEW.md、local-writer.md、page-types.md）。
+- 稚內群後的下一群（旭川・大雪群）大綱通過檢查就直接寫，不等 3 天默許，只限這一次。
+
+### 已完成
+
+- 稚內群 26 頁全部上線：今天上線 wakkanai-festival、rishiri-island-festival、rebun-island、rebun-island-transport、wakkanai-stay（照不寫價格重寫）。
+- 旭川・大雪群大綱（`content-planning/hokkaido/hokkaido-asahikawa-outline.json`，21 頁）與 article-queue 建好；上線 6 篇並開放收錄：asahikawa-transport、sounkyo-transport、asahidake-transport、asahiyama-zoo、asahikawa-stay、asahidake-ropeway，另建 3 個 Hub（旭川、層雲峽、旭岳）。
+- 驗收通過、還沒上線 4 篇：sounkyo-festival、sounkyo-weather、asahikawa-sights、asahidake-hiking（都 gates_clear、已 commit）。上傳代理已開始第二批（四篇的 manifest／sanity-sync 已產生、還沒 commit），被額度打斷。
+- 排定工作 `japan-travel-daily-writer` 時間表照 AGENTS.md 改回 `42 1,4,10,13,20 * * *`（週末加量結束）。
+
+### 尚未完成（都停在中途，脈絡在各資料夾）
+
+- asahikawa-food：讀者最終剩 1 條（南永山「第3站」要改成「過了新旭川的下一站」），事實查核第 2 輪做到一半。
+- asahikawa-weather：作者驗收後第 1 輪做到一半；要新增一條連到旭川交通的內連句進大綱。
+- sounkyo-stay：作者驗收後第 1 輪剛開始（原作者找不到，換新作者）。
+- sounkyo-sights：事實查核做到一半；讀者第一階段必修 4。
+- asahidake-stay：意義比對做到一半。
+- asahidake-or-sounkyo：標題檢查、讀者第一階段完成（必修 4），事實查核沒交回結果，要重派。
+- sounkyo-hiking：事實查核做完後沒有接續，要從讀者第二階段接。
+- 還沒開始：主頁 asahikawa、sounkyo、asahidake、higashikawa（最後寫）。
+- 已上線的 wakkanai-stay：事實查核發現平台現況與表格不符（ホテル美雪 Agoda 可訂；casa hotel 與ホテルめぐま的 Trip.com 目前不接受預訂），要走修正流程。
+- 大綱摘要寫進規劃總表與日曆提醒、下一群（富良野・美瑛）研究、各篇新事實同步回地點事實表與 D1、local-run-log 上傳表補今天的上傳。
+
+### 阻礙
+
+- Claude 每週額度用完，台北 10/27 22:00 重置。
+
+### 唯一下一步
+
+- 額度重置後說「繼續」：先讓上傳代理把 4 篇已驗收的文章傳完，再把上面停在中途的各篇接著做完。
