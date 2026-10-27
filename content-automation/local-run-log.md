@@ -29,6 +29,7 @@
 
 | 台北時間 | 文章 ID | 結果 | 網址 | 停在哪一點與原因 | 封面來源與授權 |
 |---|---|---|---|---|---|
+| 2026-10-27 12:05（人工） | sounkyo-sights | 已上線 | https://offpathnotes.com/places/sounkyo/sights/ | —（11:14 定稿失敗，標題紀錄對齊後 b1fc3c5 重新上傳） | 維基共享資源 Ryūsei Falls 2003-09-14 - panoramio.jpg，lienyuan lee，CC BY 3.0 |
 | 2026-10-27 11:46（人工） | asahidake-or-sounkyo | 已上線 | https://offpathnotes.com/places/asahidake/asahidake-or-sounkyo/ | —（第 13 步登記第一次遇到 D1 暫時錯誤 7403，重試完成） | 維基共享資源 黒岳から旭岳方面.jpg，Koda6029，CC BY-SA 4.0 |
 | 2026-10-27 11:42（人工） | asahidake-stay | 已上線 | https://offpathnotes.com/places/asahidake/stay/ | — | 維基共享資源 Asahidake, Daisetsuzan Volcanic Group - Asahidake6029.jpg，lumoplank，CC0 |
 | 2026-10-27 11:38（人工） | sounkyo-hiking | 已上線 | https://offpathnotes.com/places/sounkyo/hiking/ | — | 維基共享資源 Summit Sign, Mount Kuro, Hokkaido - Aug 9, 2012.jpg，Kunitaka NIIDATE，CC BY-SA 2.0 |
