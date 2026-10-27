@@ -1425,3 +1425,36 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 ### 唯一下一步
 
 - 額度重置後說「繼續」：先讓上傳代理把 4 篇已驗收的文章傳完，再把上面停在中途的各篇接著做完。
+
+## 2026-10-27 Claude Code（地端）：旭川・大雪群做一半的 7 篇做完並上線
+
+### 已決定
+
+- Darren 要求把做一半的都做完（2026-10-27）。
+- asahidake-or-sounkyo 作者問推算時刻要不要留：保留「照約7小時，6:45出發約13:45到姿見」「最晚約8:45從七合目出發」，因為兩個都附上依據的官方時間，並寫明照8～9小時估多半趕不上與備案（協調者決定）。
+- 標題與內連句避開「……的話」：asahidake-or-sounkyo H3 改「旭岳和層雲峽只去一個選哪個？」、sounkyo-hiking 內連句改「當天要搭巴士回旭川，下山時間得對上末班車，班次見層雲峽交通。」
+
+### 已完成
+
+- 上線並開放收錄 11 篇（D1 都是 published，封面都是維基共享資源實拍，紀錄見 `content-automation/local-run-log.md` 上傳表）：
+  - 第二批：sounkyo-festival、sounkyo-weather、asahikawa-sights、asahidake-hiking。
+  - 第三批：asahikawa-food、asahikawa-weather、sounkyo-stay、sounkyo-hiking、sounkyo-sights、asahidake-stay、asahidake-or-sounkyo。
+- 7 篇的驗收紀錄在各自的 `review.md`，都是 `ready_for_user_preview`、gates_clear。協調者收斂時直接改的小地方都記在 review.md 備註（每次都由查核者用雜湊比對確認只差那幾處）。
+- 上線時接上與補上的內連共 16 條；三條因錨文字在同段重複標成 skip（asahikawa-sights→旭山動物園、asahikawa-weather→旭山動物園）。
+- 大綱同步：各篇改過的標題、內連 section，新增 4 條內連句（asahikawa-weather→asahikawa-transport、sounkyo-hiking→sounkyo-transport、asahidake-stay→asahidake-ropeway，及先前的 asahikawa-sights→asahikawa-transport）。
+- 旭川・大雪群 21 頁：已上線 17 篇＋3 個 Hub。
+
+### 尚未完成
+
+- 主頁 asahikawa、sounkyo、asahidake、higashikawa 還沒寫（照規劃最後寫）。
+- 已上線的 wakkanai-stay：ホテル美雪 Agoda 可訂；casa hotel 與ホテルめぐま的 Trip.com 目前不接受預訂，要走修正流程。
+- 各篇新事實同步回地點事實表（各 review.md「留給之後的事」列了編號）；規劃總表與日曆提醒；下一群（富良野・美瑛）研究。
+- 事實查核者讀不到黑岳纜車夏季時間的經營者存檔（web.archive.org 有機器人檢查，沒有繞過；瀏覽器那次被拒絕後就沒再用），asahidake-or-sounkyo 引用 sounkyo-hiking 已查核的同一筆事實。
+
+### 阻礙
+
+- 無。
+
+### 唯一下一步
+
+- 寫旭川・大雪群的 4 篇地點主頁（asahikawa、sounkyo、asahidake，最後 higashikawa）。
