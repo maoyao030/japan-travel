@@ -1458,3 +1458,13 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 ### 唯一下一步
 
 - 寫旭川・大雪群的 4 篇地點主頁（asahikawa、sounkyo、asahidake，最後 higashikawa）。
+
+## 2026-10-27 Claude Code（雲端）：文內照片上傳程式，利尻島交通試傳
+
+- Darren 發現文章都只有封面。原因：網站與 Sanity 早就能顯示文內照片，但缺「下載、縮圖、插進正文指定段落」的程式，所以自動寫作規定只選封面。
+- 新增：`scripts/inline-image-placement.mjs`（照片插在哪個標題下第幾段之後）、`scripts/prepare-inline-images.mjs`（`npm run image:prepare:inline`，下載並縮成 webp、記雜湊，只縮小不裁切）、`studio/scripts/publish-article-inline-images.mjs`（`npm run publish:article-inline-images`，預設預覽，`--apply` 上傳插入，`--remove --apply` 拿掉）、`tests/inline-image-placement.test.ts`。
+- 圖片封包新增兩個欄位：`placement`（`heading` 標題全文、`afterBlocks` 第幾段之後）與文內照片的 `preparation`。利尻島交通三張（鴛泊渡輪站、利尻機場、自行車道）已加上，照片接在各節第一段之後。
+- 預覽模式已對 Sanity 實跑通過，三個插入位置正確。
+- 阻礙：維基共享資源對雲端機器的共用 IP 回 429，原圖下載不了，還沒真的上傳。已排 45 分鐘後重試一次；仍被擋就改在 Darren 電腦上跑。
+- 尚未做：自動寫作加回選文內照片、已上線文章分批補照片。
+- 唯一下一步：照片下載成功後上傳利尻島交通三張，給 Darren 看網頁。
