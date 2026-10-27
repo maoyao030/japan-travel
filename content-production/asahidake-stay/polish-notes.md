@@ -113,3 +113,19 @@
 - `check-voice.mjs --final`：通過（提醒：逗號每千字40.2次，3句長句）
 - `check-copy.mjs`（4 篇）：通過
 - reader-preview.md SHA-256（LF）：fbaded3082b412a52222bbd226c81b35f67109e420b0476f2d843c7b1012b5ab
+
+## 第 5 步後：照意義比對修正（2026-10-27）
+
+依 `meaning-drift.md` 改了不可接受 3 處、遺失 2 處，另採納 1 處建議。
+
+| 類別 | 位置 | 改成 |
+|---|---|---|
+| 不可接受 #8 | 含餐 H2 | 「K's House北海道有住客24小時能用的廚房，附近沒有超市，官網請住客在山下買好食材再上山」（拿掉「要自己煮」） |
+| 不可接受 #23 | 山莊段 | 「資訊放在官方Facebook」（拿掉「都」） |
+| 不可接受 #32 | 訂房 H2 | 「在Agoda上用中文名搜不到，就改搜英文名Oyado Shikishimasou。它在Agoda上的地區標成富良野，不是找錯旅館」（刪掉沒查證過的「在富良野地區找」；分號拆成兩句） |
+| 遺失 #9 | 含餐 H2 | 「晚餐最晚18:30要入座，過了就不供餐」 |
+| 遺失 #27 | 天人峽 H2 | 「也可以訂只含早餐的「朝食付」或不含餐的「素泊」」。意義比對建議寫「素泊まり」，但 check-polish 不准多出潤稿前沒有的假名「まり」，所以照潤稿前的寫法用「素泊」（F141 也寫素泊） |
+| 建議 #19 | 白樺莊段 | 「出發前」改回「排行程前」 |
+
+檢查：check-polish 通過；fact_tags 結果 tags_clear；audit_answer_first 結果 mechanical_clear；check-voice --final 通過；check-copy 比對 4 篇都通過。
+reader-preview.md SHA-256（LF）：1ae20e2c9bd6c6408100fb17767fa17a224fd75bc5fdf0a6a503209f320b265f

@@ -1,0 +1,863 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahidake-stay",
+  "articleSha256": "83d61a9e28ffa12b1c34a1dc3bb9477b5e4b42f1b7f5d5f17c36e4e327e73290",
+  "checker": "fact-check-agent（唯讀事實查核子代理，非作者、非潤稿者；2026-10-27 以 curl 讀各旅館官網、ひがしかわ観光協会、旭岳ビジターセンター、旭川電気軌道，HTML 註解先剝除；ラビスタ大雪山的冬季送迎 PDF 用 curl 下載到暫存資料夾轉圖閱讀；Trip.com、Agoda 與しきしま荘的 489ban 方案頁用自己開的瀏覽器分頁唯讀查詢，開頁先靜音、不登入、不填表單、不送出，讀完關閉分頁）；第 2 輪複查（驗收後第 1 輪修改與協調者小改，對照 revisions-round1.md 逐句重比全文，改過與新增的句子重開來源；白樺莊お知らせ一覽 https://www.shirakabasou.com/news 另以 curl 讀；沒改到的句子沿用第 1 輪結果）",
+  "checkedAt": "2026-10-27",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "旭岳溫泉住宿能選的只有7間，東川町觀光協會清單上的8間旅館裡，Hotel Deer Valley停業中。｜旭岳溫泉能住的有7間，下表連天人峽溫泉的1間一起列出。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/stay",
+      "sourceTitle": "宿泊 | ようこそ東川",
+      "sourceQuote": "旭岳温泉　ケイズハウス北海道｜ラビスタ大雪山｜湯元湧駒荘｜大雪山白樺荘｜旭岳温泉ホテルディアバレー｜大雪山山荘｜アートヴィレッジ杜季｜旭岳温泉ホテルベアモンテ",
+      "verdict": "verified",
+      "notes": "住宿頁旭岳温泉一節列 8 間；Deer Valley 官網「※ホテルディアバレーは現在休業中です。」（https://www.deervalley.jp/）。旭岳・天人峡温泉頁另寫「宿泊できる施設は9件」，正文以清單為準，不衝突。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "規模從56室的飯店到只有3間客房的小宿都有。",
+      "sourceUrl": "https://www.bearmonte.jp/",
+      "sourceTitle": "東川・旭岳温泉 ホテルベアモンテ【公式HP】",
+      "sourceQuote": "リラックスシングルからメゾネットやミニキッチン付きのタイプなどの全56室｜（観光協会）客室3室の個性的な宿泊施設",
+      "verdict": "verified",
+      "notes": "3 室出自觀光協會住宿頁的アートヴィレッジ杜季介紹。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "旁邊的天人峽溫泉，現在只剩1間旅館。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/onsen",
+      "sourceTitle": "旭岳・天人峡温泉 | ようこそ東川",
+      "sourceQuote": "天人峡温泉では現在1件の温泉施設があり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "進出這些旅館多半靠旭川電氣軌道的いで湯號公車，從旭川站出發、經過旭川機場開上山，一天只有4班。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川市内から東神楽町～旭川空港～東川町を経由し旭岳を結ぶ定期路線バス毎日運行中！｜1往復増の4往復運行となり",
+      "verdict": "verified",
+      "notes": "第 2 輪：「要靠」改成「多半靠」，拉比斯塔冬季接送另寫在 H3（C88），和 2025-10-08 冬季送迎 PDF 不再衝突。しきしま莊的接送也接いで湯號，說法成立。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "當天上山的最後一班，是旭川站14:15、旭川機場15:00發的車，16:03到終點。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川駅（のりば9） 7:15 9:15 12:15 14:15｜旭川空港 8:00 10:00 13:00 15:00｜旭岳 9:03 11:03 14:03 16:03",
+      "verdict": "verified",
+      "notes": "第 2 輪：原句「當天要上山過夜，旭川站最後一班是14:15發車」已刪，改成這句。K's House 官網也寫「※最終バスは、旭川駅14：15発、旭川空港15：00発」。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "溫泉區能吃飯的地方很少，周邊也沒有ATM，晚餐建議跟住宿一起訂，現金也在山下就領好。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "近隣で食事ができる場所はありますか？ 食堂…旭岳ロープウェイ山麓駅2階 売店…旭岳ロープウェイ山麓駅1階 コンビニ…ラビスタ大雪山1階｜旭岳近辺に銀行、郵便局、ATMはありません。",
+      "verdict": "verified",
+      "notes": "建議句是依官方事實的編輯判斷。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "住旭岳溫泉，建議直接訂含晚餐的方案。旭岳遊客中心列出的用餐地點只有三處，纜車山麓站2樓的食堂、1樓的販賣部，和拉比斯塔大雪山1樓的便利商店。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "食堂　…　旭岳ロープウェイ山麓駅2階｜売店　…　旭岳ロープウェイ山麓駅1階｜コンビニ　…　ラビスタ大雪山1階｜がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "拉比斯塔大雪山的晚餐有創意法式與創意日式兩種可選，早餐是日式加西式的自助餐。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/",
+      "sourceTitle": "【公式】ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "sourceQuote": "夕食は創作フレンチか創作和食のどちらかを選択。朝食は豊富なメニューが並ぶ和洋バイキングを心ゆくまでご堪能いただけます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "大雪山山莊只有1泊2食的方案，也就是含當天晚餐與隔天早餐。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/hotels/%e5%a4%a7%e9%9b%aa%e5%b1%b1%e5%b1%b1%e8%8d%98/",
+      "sourceTitle": "大雪山山荘 | ようこそ東川",
+      "sourceQuote": "宿泊：１泊２食付",
+      "verdict": "verified",
+      "notes": "觀光協會個別頁只列「１泊２食付」一種住宿形式；山莊沒有官網，官方 Facebook 未讀（需登入或 JavaScript）。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "K's House北海道有住客24小時能用的廚房，附近沒有超市，官網請住客在山下買好食材再上山。",
+      "sourceUrl": "https://kshouse.jp/hokkaido-j/index.html",
+      "sourceTitle": "旭岳温泉で宿泊・日帰り入浴｜ケイズハウス北海道【公式サイト】",
+      "sourceQuote": "*近隣にスーパー・コンビニはございませんので、食材等お持ちこみください。｜滞在中は、当館ゲスト専用ラウンジやキッチンが２４時間利用可能です。",
+      "verdict": "verified",
+      "notes": "「在山下買好」是「お持ちこみください」的白話。官網同句也寫附近沒有便利商店，但拉比斯塔 1 樓已有 Yショップ（2025-10-31 開），正文只寫超市，沒有矛盾。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "天人峽的御宿しきしま莊，晚餐最晚18:30要入座，過了就不供餐。",
+      "sourceUrl": "https://www.sikisimasou.jp/",
+      "sourceTitle": "【公式】天人峡温泉　「御やど　しきしま荘」　【公式ホームページ】",
+      "sourceQuote": "夕食 17:30〜20:00（最終入場 18:30）※最終入場以降はお食事のご提供ができませんのでお気をつけください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "旭岳周邊沒有銀行、郵局，也沒有ATM，最近一台開車要30到40分鐘。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "旭岳近辺に銀行、郵便局、ATMはありません。一番近いATMまで車で約30～40分程度かかりますので、事前にご準備ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "大雪山山莊不能刷卡",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/hotels/%e5%a4%a7%e9%9b%aa%e5%b1%b1%e5%b1%b1%e8%8d%98/",
+      "sourceTitle": "大雪山山荘 | ようこそ東川",
+      "sourceQuote": "クレジットカード使用不可",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "Art Village杜季只在官網賣的限定方案也不收卡，住這兩間得把現金帶夠。",
+      "sourceUrl": "https://www.asahidake-toki.jp/%E5%AE%BF%E6%B3%8A%E3%83%97%E3%83%A9%E3%83%B3/",
+      "sourceTitle": "懐石料理と源泉かけ流しの温泉満喫プラン（HPまたは電話予約の方のみプレゼント付き） - asahidake-toki ページ！",
+      "sourceQuote": "ＨＰ予約限定　おひとりさま宿貸し切りプラン 一泊二食・貸し切り露天風呂 一名様で…（消費税込・入湯税込）・カード不可｜懐石料理と源泉かけ流しの温泉満喫プラン…（税別)カード不可",
+      "verdict": "verified",
+      "notes": "官網方案頁兩個方案都寫カード不可（一個 HP 限定、一個 HP 或電話預約）。摘錄省略了金額，正文沒有寫價格。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "觀光協會清單上的Hotel Deer Valley，2024年4月就公告延長停業。官網目前把旅客導到同區的Hotel Bear Monte",
+      "sourceUrl": "https://www.deervalley.jp/",
+      "sourceTitle": "旭岳温泉 ホテルディアバレー【公式HP】",
+      "sourceQuote": "※ホテルディアバレーは現在休業中です。同エリア内、旭岳温泉ホテルベアモンテをご利用ください。｜2024.04.02 ホテルディアバレー休業延長のご案内",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "可是Agoda上還搜得到這間，訂房時別選錯。",
+      "sourceUrl": "https://www.agoda.com/",
+      "sourceTitle": "Agoda（搜尋建議）",
+      "sourceQuote": "（平台頁面，2026-10-27 搜尋「Deer Valley Asahidake」）Asahidake Onsen Hotel Deer Valley",
+      "verdict": "verified",
+      "notes": "平台現況，查核日期 2026-10-27。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "表裡的冬季營業，是2026年10月26日在Trip.com查2026年12月16日、2027年1月20日與2月17日三天空房的結果。",
+      "sourceUrl": "https://tw.trip.com/hotels/list?city=66865",
+      "sourceTitle": "東川町飯店推薦 - 最新東川町人氣住宿預訂 - Trip.com",
+      "sourceQuote": "（平台頁面，2026-10-27 重查一人一晚）12/16：熊蒙特、大雪山遠景、佐渡日式旅館有房，湧駒莊售罄，K之屋未出現｜1/20：熊蒙特、遠景、湧駒莊、佐渡有房，K之屋「須連續入住至少 2 晚才能預訂」｜2/17：五間都有房",
+      "verdict": "verified",
+      "notes": "第 2 輪：表格「冬季營業」欄現在只有 5 間寫了「查到有房」，全是 Trip.com 結果，和這句一致。白樺莊、山莊、杜季三格改成「訂房時向旅館確認」，沒有寫任何查詢結果，不再和說明句衝突。白樺莊、山莊不在 Trip.com（C80），杜季在 Trip.com 有上架但研究記錄只查到 1/20 售罄，三格都不寫結果是合理的呈現；正文訂房管道一節另寫明白樺莊與山莊在 Trip.com、Agoda 搜不到，讀者看得出為什麼這兩格沒有 Trip.com 結果。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "下車站用的是各旅館官網寫的站名。",
+      "sourceUrl": "https://www.bearmonte.jp/access/",
+      "sourceTitle": "交通案内｜東川・旭岳温泉 ホテルベアモンテ",
+      "sourceQuote": "※「ホテルベアモンテ前」下車、目の前です｜（ラビスタ）いで湯号「旭岳キャンプ場」下車｜（湧駒荘）「旭岳温泉入口」で下車｜（ケイズハウス）バス停　旭岳温泉入り口にて下車｜（しきしま荘）最寄りバス停： 旭岳源水公園前",
+      "verdict": "verified",
+      "notes": "K's House 官網寫「旭岳温泉入り口」，表格用時刻表的「旭岳温泉入口」，是同一站。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "| Hotel Bear Monte | 旭岳温泉ホテルベアモンテ | 旭岳溫泉 | ホテルベアモンテ前 | 12月、1月、2月查到有房 | 官網、Trip.com、Agoda |",
+      "sourceUrl": "https://www.bearmonte.jp/access/",
+      "sourceTitle": "交通案内｜東川・旭岳温泉 ホテルベアモンテ",
+      "sourceQuote": "※「ホテルベアモンテ前」下車、目の前です｜（Trip.com 2026-10-27）東川旭岳溫泉熊蒙特飯店 12/16、1/20、2/17 有房｜（Agoda）Higashikawa Asahidake Onsen Hotel Bear Monte",
+      "verdict": "verified",
+      "notes": "日文名與觀光協會清單「旭岳温泉ホテルベアモンテ」一致；官網訂房另見 C66。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "| 拉比斯塔大雪山 | ラビスタ大雪山 | 旭岳溫泉 | 旭岳キャンプ場 | 12月、1月、2月查到有房 | 官網、電話、Trip.com、Agoda |",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/access/",
+      "sourceTitle": "アクセス | ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "sourceQuote": "旭川電気軌道バス いで湯号 「旭岳キャンプ場」下車｜TEL. 0166-97-2339 （代表） ／ 0166-97-2323 （予約）｜（Trip.com 2026-10-27）大雪山遠景飯店 三天都有房｜（Agoda）Hotel La Vista Daisetsuzan -Kyoritsu Resort",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "| 湯元湧駒莊 | 湯元湧駒荘 | 旭岳溫泉 | 旭岳温泉入口 | 1月、2月查到有房 | 官網、電話、Trip.com、Agoda |",
+      "sourceUrl": "https://www.yukoman.jp/information",
+      "sourceTitle": "お問合せ・アクセス | 【公式】湯元 湧駒荘 | 北海道 大雪山国立公園 旭岳温泉",
+      "sourceQuote": "■湧駒荘へお越しの方は「旭岳温泉入口」で下車してください。｜phone_in_talk 0166-97-2101(代)｜（Trip.com 2026-10-27）旭川旭岳湯元湧駒莊 1/20、2/17 有房，12/16 售罄｜（Agoda）Asahidake Onsen Yumoto Yukomansou",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "| 大雪山白樺莊 | 大雪山白樺荘 | 旭岳溫泉 | 訂房時向旅館確認 | 訂房時向旅館確認 | 官網表單、電話 |",
+      "sourceUrl": "https://www.shirakabasou.com/reserve",
+      "sourceTitle": "ご予約 - 大雪山白樺荘（旭岳温泉）【公式サイト】",
+      "sourceQuote": "下記フォームでの宿泊予約の申込は、宿泊日の１週間前までとなっております。それ以降の予約は、お電話（0166-97-2246）でお願いいたします。｜（観光協会）旭岳温泉　大雪山白樺荘",
+      "verdict": "verified",
+      "notes": "第 2 輪：下車站與冬季營業兩格改成「訂房時向旅館確認」，沒有事實主張；官網交通頁只寫搭いで湯號、沒寫下車站，冬季沒有休館公告也沒有平台空房資料，這樣寫不過頭。區域與訂房管道照第 1 輪。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "| K's House北海道 | ケイズハウス北海道 | 旭岳溫泉 | 旭岳温泉入口 | 1月、2月查到有房，另有休館日 | 只收網路預約（官網、Trip.com、Agoda） |",
+      "sourceUrl": "https://kshouse.jp/hokkaido-j/index.html",
+      "sourceTitle": "旭岳温泉で宿泊・日帰り入浴｜ケイズハウス北海道【公式サイト】",
+      "sourceQuote": "*オンライン予約のみです。電話でのご予約は受け付けておりません。｜＊時短営業日、休業日あり｜バス停　旭岳温泉入り口にて下車｜（Trip.com 2026-10-27）北海道K之屋-旭岳溫泉青年旅館 2/17 有房、1/20 須連住 2 晚｜（Agoda）K's House Hokkaido - Asahidake Onsen Hostel",
+      "verdict": "verified",
+      "notes": "2026-10-27 重查時 1/20 顯示「須連續入住至少 2 晚才能預訂」，仍有房可訂，和 10-26 的結果不衝突。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "| 大雪山山莊 | 大雪山山荘 | 旭岳溫泉 | 訂房時向旅館確認 | 訂房時向旅館確認 | 電話、傳真 |",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/hotels/%e5%a4%a7%e9%9b%aa%e5%b1%b1%e5%b1%b1%e8%8d%98/",
+      "sourceTitle": "大雪山山荘 | ようこそ東川",
+      "sourceQuote": "TEL/FAX：0166-97-2326",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "| Art Village杜季 | アートヴィレッジ杜季 | 旭岳溫泉 | 訂房時向旅館確認 | 訂房時向旅館確認 | 電話、官網表單、Jalan、Trip.com |",
+      "sourceUrl": "https://www.asahidake-toki.jp/",
+      "sourceTitle": "ホーム - asahidake-toki ページ！",
+      "sourceQuote": "電話 ：0166(97)2222｜「じゃらん」から予約できます。｜（予約頁）入力フォームからのお申込みも出来ます。｜（Trip.com 2026-10-27 搜尋建議）アートヴィレッジ杜季 東川町, 上川郡, 北海道, 日本（住宿圖示）",
+      "verdict": "verified",
+      "notes": "Agoda 只有 Google 地址結果、沒有可訂的住宿頁，表格沒寫 Agoda，一致。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "| 御宿しきしま莊 | 御やど しきしま荘 | 天人峽溫泉 | 旭岳源水公園前，旅館接送 | 12月、1月、2月查到有房 | 官網、電話、Trip.com、Agoda |",
+      "sourceUrl": "https://www.sikisimasou.jp/",
+      "sourceTitle": "【公式】天人峡温泉　「御やど　しきしま荘」　【公式ホームページ】",
+      "sourceQuote": "「旭岳源水公園前」下車後送迎（要予約）｜TEL 0166-97-2141｜空室検索｜（Trip.com 2026-10-27）佐渡日式旅館 Shikishimaso 三天都有房｜（Agoda）Oyado Shikishimasou",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "いで湯號的「ホテルベアモンテ前」站就在飯店門口，走到纜車山麓站約3分鐘，到旭岳遊客中心約2分鐘",
+      "sourceUrl": "https://www.bearmonte.jp/access/",
+      "sourceTitle": "交通案内｜東川・旭岳温泉 ホテルベアモンテ",
+      "sourceQuote": "※「ホテルベアモンテ前」下車、目の前です｜発着駅はホテルから徒歩 約3分。｜ホテルから徒歩 約2分／旭岳ビジターセンター",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "飯店2003年開業，2022年6月增加客房床位、改裝餐廳後重新開幕，現在共56間客房。",
+      "sourceUrl": "https://www.hamano-hotels.co.jp/company/",
+      "sourceTitle": "会社概要｜ハマノホテルズ",
+      "sourceQuote": "2003年(H15)7月 旭岳温泉ホテルベアモンテ 開業｜2022年(R4)6月 ホテルベアモンテ 客室増床・レストランほか改装｜（官網）宿泊予約 ［令和4年6月Reオープン］｜全56室",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "官網上寫的「シャトルバス」其實就是いで湯號，全年都有開、車資自付，不是飯店自己的接駁車。",
+      "sourceUrl": "https://www.bearmonte.jp/access/",
+      "sourceTitle": "交通案内｜東川・旭岳温泉 ホテルベアモンテ",
+      "sourceQuote": "空港をはじめ、旭川市内と旭岳温泉を結ぶシャトルバスも毎日運行しています。｜旭岳温泉行き「いで湯号」のご案内 ◎通年運行／ 有料",
+      "verdict": "verified",
+      "notes": "同頁交通說明只有いで湯號，沒有自家接駁；觀光協會旭岳頁也把いで湯號叫「シャトルバス『いで湯号』」。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "從旭川機場搭巴士上山約50分鐘。",
+      "sourceUrl": "https://www.bearmonte.jp/access/",
+      "sourceTitle": "交通案内｜東川・旭岳温泉 ホテルベアモンテ",
+      "sourceQuote": "旭川空港からバスで約50分。",
+      "verdict": "verified",
+      "notes": "時刻表旭川空港 15:00→ホテルベアモンテ前 15:54，約 54 分，官網的概略值。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "拉比斯塔大雪山屬於共立度假村（共立リゾート）",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/",
+      "sourceTitle": "【公式】ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "sourceQuote": "【公式】ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "1樓的Y Shop是溫泉區唯一的便利商店",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/news/",
+      "sourceTitle": "お知らせ | ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "sourceQuote": "旭岳エリア初となるコンビニエンスストア「Yショップ ラビスタ大雪山店」がオープンいたしました。｜（旭岳VC）ラビスタ大雪山1階にヤマザキショップがあります。",
+      "verdict": "verified",
+      "notes": "旭岳 VC 的 Q&A 只列這一間便利商店。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "2025年10月底開幕。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/news/",
+      "sourceTitle": "お知らせ | ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "sourceQuote": "2025.11.06 お知らせ 「Yショップ ラビスタ大雪山店」オープンのお知らせ … 2025年10月31日(金)、旭岳エリア初となるコンビニエンスストア「Yショップ ラビスタ大雪山店」がオープンいたしました。",
+      "verdict": "verified",
+      "notes": "第 2 輪：改成「2025年10月底開幕」，和開幕日 2025-10-31 一致（F274）。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "搭いで湯號在「旭岳キャンプ場」下車。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/access/",
+      "sourceTitle": "アクセス | ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "sourceQuote": "JR旭川駅 旭川電気軌道バス いで湯号 「旭岳キャンプ場」下車",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "自駕可以停旅館的免費停車場，共54個車位，不用預約。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/access/",
+      "sourceTitle": "アクセス | ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "sourceQuote": "無料駐車場をご用意しております。（予約不要） 収容台数 54台",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "從旭川開約60分鐘，從札幌約2小時30分。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/",
+      "sourceTitle": "【公式】ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "sourceQuote": "旭川から車で約60分、札幌から車で約2時間30分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "通常每年10月中旬到4月上旬，開車上山要用冬季輪胎，租車時問清楚車子換好了沒。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/access/",
+      "sourceTitle": "アクセス | ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "sourceQuote": "冬タイヤ装着のお願い （例年10月中旬～4月上旬頃） 期間中、降雪・路面凍結の可能性がございます。冬タイヤの装着 又は チェーンの装着・携帯をお願いいたします。※積雪地域のため、期間中は必ずご準備をお願いたします。",
+      "verdict": "verified",
+      "notes": "官網寫冬季輪胎或鏈條擇一；正文只寫冬季輪胎，方向一致、沒有比原文強。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "湯元湧駒莊有五個源泉，標榜100%源泉放流，浴池裡的溫泉水直接流掉、不循環再用。",
+      "sourceUrl": "https://www.yukoman.jp/",
+      "sourceTitle": "【公式】湯元 湧駒荘 | 北海道 大雪山国立公園 旭岳温泉",
+      "sourceQuote": "五源泉100% かけ流し",
+      "verdict": "verified",
+      "notes": "第 2 輪：新增的白話解釋只說明「かけ流し」是溢流、不循環使用，是這個詞的一般意思，沒有加上「不加水」「不加熱」等官網沒寫的主張，沒有說過頭。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "它也是「日本秘湯守護會」（日本秘湯を守る会）的會員旅館。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/stay",
+      "sourceTitle": "宿泊 | ようこそ東川",
+      "sourceQuote": "湯元湧駒荘 日本の秘湯を守る会の会員宿。",
+      "verdict": "verified",
+      "notes": "觀光協會寫「日本の秘湯を守る会」，正文括號寫該會正式名稱「日本秘湯を守る会」，指同一團體。譯名表沒有收錄這些旅館與團體名。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "大雪山白樺莊是青年旅館",
+      "sourceUrl": "https://www.shirakabasou.com/",
+      "sourceTitle": "大雪山白樺荘（旭岳温泉）【公式サイト】",
+      "sourceQuote": "大雪山旭岳のアクティビティ拠点として、旭岳温泉のユースホステル大雪山白樺荘です。（meta description）｜ユースホステル会員証の有無（予約フォーム）",
+      "verdict": "verified",
+      "notes": "meta description 不是 HTML 註解；預約表單也有ユースホステル會員欄。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "夏天住的多半是登山客，到了冬天換成滑雪與單板滑雪的旅客。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/stay",
+      "sourceTitle": "宿泊 | ようこそ東川",
+      "sourceQuote": "大雪山白樺荘 清潔な館内は夏は登山、冬はスキー・スノーボーダーで賑わう。",
+      "verdict": "verified",
+      "notes": "第 2 輪：改成滑雪與單板滑雪，和觀光協會原文一致（F275）。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "近兩年的休館公告，春天是3月20日到4月底，初夏是5月中到6月中，秋天是10月15日到11月中前後。",
+      "sourceUrl": "https://www.shirakabasou.com/news",
+      "sourceTitle": "お知らせ - 大雪山白樺荘（旭岳温泉）【公式サイト】",
+      "sourceQuote": "2026.05.11 休館のお知らせ (5月中頃～6月中頃まで)｜2026.03.23 …3月20日 (金) から4月の末頃まで休館いたします。｜2025.10.10 …10月15日 (水) から11月の中頃まで休館いたします。｜2025.05.17 …5月18日から6月12日まで休館いたします。｜2024.10.14 …10月15日～11月10日まで休館いたします。",
+      "verdict": "verified",
+      "notes": "第 2 輪：初夏（2025、2026）與秋天（2024、2025）都有兩年的公告，日期吻合「5月中到6月中」「10月15日到11月中前後」。春天 3/20～4 月底只有 2026 年一則，2025 年沒有春季休館公告（お知らせ一覽 2022～2026 只有 2022.03.27 一則 3/28～4/1 的春季休館）；「近兩年的公告」是列出近兩年公告寫過的時段，不算錯，但讀者可能以為每年春天都休。可考慮改成「春天（2026年）是3月20日到4月底」，非必修。後一句「日期每年不同，訂房前看一下官網首頁的休館公告」有提醒。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "日期每年不同，訂房前看一下官網首頁的休館公告。",
+      "sourceUrl": "https://www.shirakabasou.com/",
+      "sourceTitle": "大雪山白樺荘（旭岳温泉）【公式サイト】",
+      "sourceQuote": "2025.05.17 休館のお知らせ (5月18日～6月12日)｜2026.05.11 休館のお知らせ (5月中頃～6月中頃まで)｜2024.10.14 休館のお知らせ (10月15日～11月10日)｜2025.10.10 休館のお知らせ (10月15日～11月中頃まで)",
+      "verdict": "verified",
+      "notes": "同季節的休館日期逐年不同；公告在首頁 Topics / News。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "K's House北海道是溫泉青年旅館，房間有和室、洋室、木屋風的團體房，還有附廚房、方便長住的和洋室。",
+      "sourceUrl": "https://kshouse.jp/hokkaido-j/index.html",
+      "sourceTitle": "旭岳温泉で宿泊・日帰り入浴｜ケイズハウス北海道【公式サイト】",
+      "sourceQuote": "旭岳温泉ホステル ケイズハウス北海道は…お部屋は、和室や洋室、ログハウス風のドミトリールームと長期滞在に便利なキッチン付き和洋室がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "交誼廳與廚房，住客24小時都能用。",
+      "sourceUrl": "https://kshouse.jp/hokkaido-j/index.html",
+      "sourceTitle": "旭岳温泉で宿泊・日帰り入浴｜ケイズハウス北海道【公式サイト】",
+      "sourceQuote": "滞在中は、当館ゲスト専用ラウンジやキッチンが２４時間利用可能です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "搭いで湯號在「旭岳温泉入口」下車。（第 2 輪：原本「從旭川機場上山的末班車是15:00發」移到交通段，見 C5）",
+      "sourceUrl": "https://kshouse.jp/hokkaido-j/index.html",
+      "sourceTitle": "旭岳温泉で宿泊・日帰り入浴｜ケイズハウス北海道【公式サイト】",
+      "sourceQuote": "バス停　旭岳温泉入り口にて下車 ※最終バスは、旭川駅14：15発、旭川空港15：00発となりますので、ご注意ください。",
+      "verdict": "verified",
+      "notes": "時刻表旭川空港第 4 班 15:00 一致。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "入住時間15:00到20:00，櫃台8:00到20:00有人，搭末班車到也來得及辦入住。",
+      "sourceUrl": "https://kshouse.jp/hokkaido-j/index.html",
+      "sourceTitle": "旭岳温泉で宿泊・日帰り入浴｜ケイズハウス北海道【公式サイト】",
+      "sourceQuote": "チェックイン 15:00〜20:00｜Reception Hours 8:00～20:00",
+      "verdict": "verified",
+      "notes": "末班車 15:49 到旭岳温泉入口（旭川電気軌道時刻表），在入住時間內。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "2027年1月、2月查的兩天都有空房，不過館內有休館日，也有營業時間縮短的日子。",
+      "sourceUrl": "https://kshouse.jp/hokkaido-j/index.html",
+      "sourceTitle": "旭岳温泉で宿泊・日帰り入浴｜ケイズハウス北海道【公式サイト】",
+      "sourceQuote": "＊時短営業日、休業日あり｜（Trip.com 2026-10-27）2/17 有房，1/20 須連續入住至少 2 晚才能預訂",
+      "verdict": "verified",
+      "notes": "空房是平台現況，查核日期 2026-10-27。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "車可以停在免費停車場，一樣不必預約。",
+      "sourceUrl": "https://kshouse.jp/hokkaido-j/index.html",
+      "sourceTitle": "旭岳温泉で宿泊・日帰り入浴｜ケイズハウス北海道【公式サイト】",
+      "sourceQuote": "Parking あり（無料・予約不要）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "大雪山山莊與Art Village杜季都只有幾個房間。山莊是家庭式的小旅館，5間和室最多住10人，全館禁菸。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/hotels/%e5%a4%a7%e9%9b%aa%e5%b1%b1%e5%b1%b1%e8%8d%98/",
+      "sourceTitle": "大雪山山荘 | ようこそ東川",
+      "sourceQuote": "山小屋に滞在しているようなアットホームな宿泊施設。｜和室５室　収容１０名｜全館：Wifi接続可。　禁煙。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "它沒有自己的官網，資訊放在官方Facebook。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/hotels/%e5%a4%a7%e9%9b%aa%e5%b1%b1%e5%b1%b1%e8%8d%98/",
+      "sourceTitle": "大雪山山荘 | ようこそ東川",
+      "sourceQuote": "詳しい情報は、 大雪山山荘の公式Facebookページ にてご覧いただけます。",
+      "verdict": "verified",
+      "notes": "觀光協會住宿清單其他旅館都放「公式サイト」連結，只有山荘是「詳細をみる」導到協會個別頁，個別頁指向官方 Facebook。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "Art Village杜季更小，只有3間客房，餐點由當過專業廚師的人掌廚。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/stay",
+      "sourceTitle": "宿泊 | ようこそ東川",
+      "sourceQuote": "山岳の麓にいながら元料理人による料理が提供される客室3室の個性的な宿泊施設。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "河邊有可以包租的源泉放流露天浴池，也有室內浴池。",
+      "sourceUrl": "https://www.asahidake-toki.jp/",
+      "sourceTitle": "ホーム - asahidake-toki ページ！",
+      "sourceQuote": "川沿いの貸し切り露天風呂です。内湯もございます。｜好評の貸し切り１００％源泉かけ流し、川沿いの露天風呂",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "旅館就在旭岳的高山植物園旁邊，15:00開始入住，晚餐18:00起。",
+      "sourceUrl": "https://www.asahidake-toki.jp/%E3%81%94%E4%BA%88%E7%B4%84-%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/",
+      "sourceTitle": "ご予約とお問い合わせ - asahidake-toki ページ！",
+      "sourceQuote": "（チェックイン開始15:00～　食事18:00～です。）｜（首頁）高山植物園に隣接して可憐な花を観察できます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "天人峽溫泉現在只剩御宿しきしま莊一間旅館，全館18室，部分特別室附源泉放流的半露天浴池。",
+      "sourceUrl": "https://www.sikisimasou.jp/",
+      "sourceTitle": "【公式】天人峡温泉　「御やど　しきしま荘」　【公式ホームページ】",
+      "sourceQuote": "全18室の小さな宿｜源泉掛け流し半露天風呂付 特別和洋室｜源泉掛け流し半露天風呂付 コーナー特別室｜（観光協会）天人峡温泉では現在1件の温泉施設があり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "從旅館走約15分鐘，就到北海道落差最大的羽衣瀑布。",
+      "sourceUrl": "https://www.sikisimasou.jp/",
+      "sourceTitle": "【公式】天人峡温泉　「御やど　しきしま荘」　【公式ホームページ】",
+      "sourceQuote": "日本の滝百選「羽衣の滝」まで徒歩約15分｜（観光協会）北海道で最も落差がある「羽衣の滝」（落差270ｍ）",
+      "verdict": "verified",
+      "notes": "落差出自 https://www.welcome-higashikawa.jp/daisetsu 。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "不過遊步道只在夏秋開放，2026年是6月6日到10月30日。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/%e7%be%bd%e8%a1%a3%e3%81%ae%e6%bb%9d%e9%81%8a%e6%ad%a9%e9%81%93%e9%96%8b%e9%80%9a-2/",
+      "sourceTitle": "羽衣の滝遊歩道開通 | 旭岳ビジターセンター",
+      "sourceQuote": "羽衣の滝遊歩道 令和８年６月６日（土）午前９時　～　10月30日（金）通行可",
+      "verdict": "verified",
+      "notes": "しきしま荘官網 2026.06.06「【羽衣の滝遊歩道】冬期通行止め解除のお知らせ」同日期。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "天人峽沒有大眾運輸直達，いで湯號也不開進天人峽。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/tenninkyo/",
+      "sourceTitle": "天人峡エリア | ようこそ東川",
+      "sourceQuote": "天人峡への公共交通機関はございません。レンタカーかタクシーをご利用ください。｜（湧駒荘）■国立公園入口より天人峡温泉までの区間は運行いたしませんのでご注意願います。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "開車從旭川機場約40分鐘，從旭川站約60分鐘。",
+      "sourceUrl": "https://www.sikisimasou.jp/",
+      "sourceTitle": "【公式】天人峡温泉　「御やど　しきしま荘」　【公式ホームページ】",
+      "sourceQuote": "お車で 旭川空港より約40分 ／ 旭川駅より約60分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "沒有開車，就搭いで湯號到「旭岳源水公園前」，再由旅館開車接送，接送要事先預約。",
+      "sourceUrl": "https://www.sikisimasou.jp/",
+      "sourceTitle": "【公式】天人峡温泉　「御やど　しきしま荘」　【公式ホームページ】",
+      "sourceQuote": "バスで 旭川駅前より66番旭川電気軌道バス「いで湯号」にて約90分「旭岳源水公園前」下車後送迎（要予約）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "含晚餐的方案有「しきしま膳」與「華膳」兩種，也可以訂只含早餐的「朝食付」或不含餐的「素泊」。",
+      "sourceUrl": "https://reserve.489ban.net/client/sikisimasou/0/plan",
+      "sourceTitle": "御やど　しきしま荘 | プランから選ぶ",
+      "sourceQuote": "【1泊2食-スタンダード・しきしま膳】…お食事 朝夕食付｜【1泊2食-量控えめ-華膳】…お食事 朝夕食付｜【1泊夕食のみ-スタンダード‐しきしま膳】…お食事 夕食付｜【一泊朝食】…お食事 朝食付｜【素泊まり】…お食事 食事なし",
+      "verdict": "verified",
+      "notes": "官網首頁方案選單是「しきしま膳／華膳／朝食付／素泊まり」；489ban 方案頁（瀏覽器唯讀）確認兩種膳是晚餐會席，華膳是份量較少的版本。正文寫「素泊」，官方是「素泊まり」，意思相同。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "晚餐17:30到20:00，早餐7:00到9:00，入住15:00，退房10:00。",
+      "sourceUrl": "https://www.sikisimasou.jp/",
+      "sourceTitle": "【公式】天人峡温泉　「御やど　しきしま荘」　【公式ホームページ】",
+      "sourceQuote": "夕食 17:30〜20:00（最終入場 18:30）｜朝食 7:00〜9:00（最終入場 8:30）｜全18室 ／ チェックイン 15:00 ／ チェックアウト 10:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "いで湯號一年到頭都用同一張時刻表，每天4個來回。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川市内から東神楽町～旭川空港～東川町を経由し旭岳を結ぶ定期路線バス毎日運行中！｜1往復増の4往復運行となり｜66番「いで湯号」運行時刻表　（2025年10月1日改正）",
+      "verdict": "verified",
+      "notes": "官網只有一張時刻表、沒有季節別；Bear Monte 官網「◎通年運行」。"
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "車從旭川站9號乘車處出發，經過旭川機場，終點「旭岳」站就在纜車站前。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川駅（のりば9） 7:15｜旭川空港 8:00｜旭岳 Mt.Asahidake 9:03｜（観光協会）シャトルバスいで湯号を利用する場合は、旭岳ロープウエイ駅舎前が終点になります。",
+      "verdict": "verified",
+      "notes": "路線實際起點是旭川站前更早的「6条9丁目」（7:04），讀者上車點是旭川站 9 號乘車處，正文寫法可接受。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "往旭岳時刻表：旭川站 7:15、9:15、12:15、14:15 → 旭川機場 8:00、10:00、13:00、15:00 → 旭岳源水公園前 8:34、10:34、13:34、15:34 → 旭岳温泉入口 8:49、10:49、13:49、15:49 → 旭岳キャンプ場 8:50、10:50、13:50、15:50 → ホテルベアモンテ前 8:54、10:54、13:54、15:54 → 旭岳 9:03、11:03、14:03、16:03",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川駅（のりば9） 7:15 9:15 12:15 14:15｜旭川空港 8:00 10:00 13:00 15:00｜旭岳源水公園前 8:34 10:34 13:34 15:34｜旭岳温泉入口 8:49 10:49 13:49 15:49｜旭岳キャンプ場 8:50 10:50 13:50 15:50｜ホテルベアモンテ前 8:54 10:54 13:54 15:54｜旭岳 9:03 11:03 14:03 16:03",
+      "verdict": "verified",
+      "notes": "第 2 輪：加了旭川機場欄，28 格逐格一致（F273）。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "回旭川時刻表：旭岳 9:55、11:55、14:55、16:55 → ホテルベアモンテ前 9:55、11:55、14:55、16:55 → 旭岳キャンプ場 9:56、11:56、14:56、16:56 → 旭岳温泉入口 9:57、11:57、14:57、16:57 → 旭岳源水公園前 10:14、12:14、15:14、17:14 → 旭川機場 10:50、12:50、15:50、17:50 → 旭川站 11:33、13:33、16:33、18:33",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳 9:55 11:55 14:55 16:55｜ホテルベアモンテ前 9:55 11:55 14:55 16:55｜旭岳キャンプ場 9:56 11:56 14:56 16:56｜旭岳温泉入口 9:57 11:57 14:57 16:57｜旭岳源水公園前 10:14 12:14 15:14 17:14｜旭川空港 10:50 12:50 15:50 17:50｜旭川駅（のりば9） 11:33 13:33 16:33 18:33",
+      "verdict": "verified",
+      "notes": "第 2 輪：加了旭川機場欄，28 格逐格一致（F273）。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "旭岳温泉入口、旭岳キャンプ場、ホテルベアモンテ前三站之間只差幾分鐘，在哪一站下，照旅館官網寫的就好。湧駒莊與K's House北海道在「旭岳温泉入口」下車。拉比斯塔大雪山是「旭岳キャンプ場」，Hotel Bear Monte是「ホテルベアモンテ前」。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳温泉入口 8:49｜旭岳キャンプ場 8:50｜ホテルベアモンテ前 8:54",
+      "verdict": "verified",
+      "notes": "各館下車站見 C18。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "巴士照時刻表開，不等飛機，班機延誤就可能搭不上。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "※66番旭岳線「いで湯号」は定時運行の路線バスにつき旭川空港の航空機接続は行っておりません。",
+      "verdict": "verified",
+      "notes": "第 2 輪：原句「下午才到旭川，要趕的是14:15那班…」已刪（併進 C5），這個編號改查新增句（F273）。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "錯過了就得搭計程車，從JR旭川站到拉比斯塔大雪山約1小時。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/access/",
+      "sourceTitle": "アクセス | ラビスタ大雪山 - 最低価格保証 | 共立リゾート",
+      "sourceQuote": "JR旭川駅 タクシー 約1時間 ラビスタ大雪山",
+      "verdict": "verified",
+      "notes": "「只能」是對沒有開車的讀者而言；拉比斯塔冬季送迎（C4）旭川站 14:00 發，比 14:15 早，錯過 14:15 也趕不上，句子成立。"
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "下山的末班車16:55從旭岳發，17:50到旭川機場，18:33回到旭川站。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳 … 16:55｜旭川空港 … 17:50｜旭川駅（のりば9） … 18:33",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "御宿しきしま莊的接送在「旭岳源水公園前」，只接送固定幾班車，要事先聯絡旅館。",
+      "sourceUrl": "https://www.sikisimasou.jp/%e3%81%84%e3%81%a7%e6%b9%af%e5%8f%b7%e3%82%92%e3%81%94%e5%88%a9%e7%94%a8%e3%81%ae%e3%81%8a%e5%ae%a2%e6%a7%98%e3%81%b82024-10%e3%80%9c%ef%bc%89/",
+      "sourceTitle": "いで湯号をご利用のお客様へ(2025.10〜） | 御やど しきしま荘",
+      "sourceQuote": "下記の時間に合わせて当館で送迎を対応いたしますので、ご宿泊のお客様は予めご連絡くださいませ。最寄りバス停： 旭岳源水公園前",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "去旅館，搭14:15從旭川站發、15:34到站的車，或白天先上旭岳，再搭14:55、16:55從旭岳發的回程車，15:14或17:14在源水公園前下車。",
+      "sourceUrl": "https://www.sikisimasou.jp/%e3%81%84%e3%81%a7%e6%b9%af%e5%8f%b7%e3%82%92%e3%81%94%e5%88%a9%e7%94%a8%e3%81%ae%e3%81%8a%e5%ae%a2%e6%a7%98%e3%81%b82024-10%e3%80%9c%ef%bc%89/",
+      "sourceTitle": "いで湯号をご利用のお客様へ(2025.10〜） | 御やど しきしま荘",
+      "sourceQuote": "お越しの際：（旭川駅行） 15：14着 or 17:14着 （旭岳行） 15：34着｜※上記いずれも”旭岳源水公園前”のバス到着時刻となります",
+      "verdict": "verified",
+      "notes": "對照旭川電気軌道時刻表：15:34 到站是旭川站 14:15 發；15:14、17:14 到站是旭岳 14:55、16:55 發。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "退房後，旅館會送到源水公園前，接10:14往旭川站的車，或8:34、10:34往旭岳的車，搭往旭岳的可以直接上山坐纜車。",
+      "sourceUrl": "https://www.sikisimasou.jp/%e3%81%84%e3%81%a7%e6%b9%af%e5%8f%b7%e3%82%92%e3%81%94%e5%88%a9%e7%94%a8%e3%81%ae%e3%81%8a%e5%ae%a2%e6%a7%98%e3%81%b82024-10%e3%80%9c%ef%bc%89/",
+      "sourceTitle": "いで湯号をご利用のお客様へ(2025.10〜） | 御やど しきしま荘",
+      "sourceQuote": "お帰りの際：（旭岳行） 8：34着 or 10:34着 　（旭川駅行） 10：14着",
+      "verdict": "verified",
+      "notes": "往旭岳的車終點在纜車站前（觀光協會：旭岳ロープウエイ駅舎前が終点）。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "Hotel Bear Monte、拉比斯塔大雪山、湯元湧駒莊、K's House北海道與御宿しきしま莊這5間，Trip.com與Agoda上都找得到。",
+      "sourceUrl": "https://tw.trip.com/hotels/list?city=66865",
+      "sourceTitle": "東川町飯店推薦 - 最新東川町人氣住宿預訂 - Trip.com",
+      "sourceQuote": "（平台頁面，2026-10-27）Trip.com：東川旭岳溫泉熊蒙特飯店｜大雪山遠景飯店｜旭川旭岳湯元湧駒莊｜北海道K之屋-旭岳溫泉青年旅館｜佐渡日式旅館 Shikishimaso；Agoda 搜尋建議：Higashikawa Asahidake Onsen Hotel Bear Monte｜Hotel La Vista Daisetsuzan -Kyoritsu Resort｜Asahidake Onsen Yumoto Yukomansou｜K's House Hokkaido - Asahidake Onsen Hostel｜Oyado Shikishimasou",
+      "verdict": "verified",
+      "notes": "平台現況，查核日期 2026-10-27。正文與表格沒有分潤連結。"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "御宿しきしま莊在Trip.com的中文名是「佐渡日式旅館」。",
+      "sourceUrl": "https://tw.trip.com/hotels/list?city=66865",
+      "sourceTitle": "東川町飯店推薦 - 最新東川町人氣住宿預訂 - Trip.com",
+      "sourceQuote": "（平台頁面，2026-10-27）佐渡日式旅館 Shikishimaso 鄰近天女足湯天人峽",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "在Agoda上用中文名搜不到，就改搜英文名Oyado Shikishimasou。它在Agoda上的地區標成富良野，不是找錯旅館。",
+      "sourceUrl": "https://www.agoda.com/",
+      "sourceTitle": "Agoda（搜尋建議與搜尋結果）",
+      "sourceQuote": "（平台頁面，2026-10-27）搜「佐渡日式旅館」「御宿しきしま莊」都沒有這間的住宿結果；搜「Oyado Shikishimasou」→ Oyado Shikishimasou，結果頁「224 properties in Furano」「Biei, Furano」",
+      "verdict": "verified",
+      "notes": "用日文「御やど しきしま荘」也搜得到，正文沒寫，不影響。"
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "Hotel Bear Monte的官網有繁體中文版，可以只訂住宿，也有住宿加機票、住宿加租車的方案。",
+      "sourceUrl": "https://www.bearmonte.jp/",
+      "sourceTitle": "東川・旭岳温泉 ホテルベアモンテ【公式HP】",
+      "sourceQuote": "宿泊予約｜宿泊＋ 航空券予約｜宿泊＋ レンタカー｜Language English 繁体字 簡体字 한국어",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "湯元湧駒莊可以在官網訂，電話預約原則上從入住前6個月開放，入住當月也算在這6個月裡。",
+      "sourceUrl": "https://www.yukoman.jp/news/index.html",
+      "sourceTitle": "新着情報一覧 | 【公式】湯元 湧駒荘 | 北海道 大雪山国立公園 旭岳温泉",
+      "sourceQuote": "《お電話でのご予約》基本的に当月を含む6か月前より開始いたします。｜（首頁）ご宿泊プラン検索・ご予約",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "K's House北海道只收網路預約、不接電話，官網說在自己網站訂比其他訂房網站便宜，有折扣活動時例外。",
+      "sourceUrl": "https://kshouse.jp/hokkaido-j/index.html",
+      "sourceTitle": "旭岳温泉で宿泊・日帰り入浴｜ケイズハウス北海道【公式サイト】",
+      "sourceQuote": "*オンライン予約のみです。電話でのご予約は受け付けておりません。 *公式サイトでの予約は他の予約サイトよりもお得です。（割引キャンペーン付きを除く）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "大雪山白樺莊與大雪山山莊在Trip.com、Agoda都搜不到，只能直接跟旅館訂。",
+      "sourceUrl": "https://www.agoda.com/",
+      "sourceTitle": "Agoda／Trip.com（搜尋建議）",
+      "sourceQuote": "（平台頁面，2026-10-27）Trip.com 搜「大雪山白樺荘」只出現地標（定位圖示）、沒有住宿；搜「大雪山山荘」無此館；Agoda 搜「Shirakabaso」「大雪山白樺荘」「大雪山山荘」「Daisetsuzan Sanso」都沒有這兩館（「shirakabasou」結果在福島県只見町）",
+      "verdict": "verified",
+      "notes": "平台現況，查核日期 2026-10-27。「只能直接跟旅館訂」指在這兩個平台的範圍內；白樺莊官網的「オンライン予約」也是導到自家表單。"
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "白樺莊的官網表單收到入住一週前為止，更晚就改打電話，8:00到22:00有人接。",
+      "sourceUrl": "https://www.shirakabasou.com/reserve",
+      "sourceTitle": "ご予約 - 大雪山白樺荘（旭岳温泉）【公式サイト】",
+      "sourceQuote": "下記フォームでの宿泊予約の申込は、宿泊日の１週間前までとなっております。それ以降の予約は、お電話（0166-97-2246）でお願いいたします。｜(受付時間:8:00~22:00)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "送出表單後，旅館會在4天內寄預約完成信，沒收到就是還沒訂到。",
+      "sourceUrl": "https://www.shirakabasou.com/reserve",
+      "sourceTitle": "ご予約 - 大雪山白樺荘（旭岳温泉）【公式サイト】",
+      "sourceQuote": "必ず当荘からの予約確認メールをお確かめください。確認のない申込はお部屋が確保されておりませんので、ご注意ください。※予約確認メールは4日以内に返信いたします。",
+      "verdict": "verified",
+      "notes": "首頁也提醒要確認「大雪山白樺荘よりの予約完了メール」，不是自動回覆信。"
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "山莊只接電話與傳真，號碼是0166-97-2326。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/hotels/%e5%a4%a7%e9%9b%aa%e5%b1%b1%e5%b1%b1%e8%8d%98/",
+      "sourceTitle": "大雪山山荘 | ようこそ東川",
+      "sourceQuote": "TEL/FAX：0166-97-2326",
+      "verdict": "verified",
+      "notes": "觀光協會個別頁只列電話與傳真；官方 Facebook 沒有讀（需登入或 JavaScript）。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "Art Village杜季只能用日語溝通，官網請會說日語的人才預約。",
+      "sourceUrl": "https://www.asahidake-toki.jp/",
+      "sourceTitle": "ホーム - asahidake-toki ページ！",
+      "sourceQuote": "※当館は日本語での対応しかできないため日本語の話せる方のみご予約ください。（ Only those who can speak Japanese can make a reservation. ）",
+      "verdict": "verified",
+      "notes": "第 2 輪：主詞改成「預約的人」，和原文一致（F260）。H3 的「杜季要用日語聯絡」同樣成立。"
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "可以用電話、傳真、email、官網表單或Jalan預約，Trip.com上也找得到。",
+      "sourceUrl": "https://www.asahidake-toki.jp/%E3%81%94%E4%BA%88%E7%B4%84-%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/",
+      "sourceTitle": "ご予約とお問い合わせ - asahidake-toki ページ！",
+      "sourceQuote": "お電話またはファックスまたはメールにてご連絡をお待ちしています。｜（入力フォームからのお申込みも出来ます。）｜（首頁）「じゃらん」から予約できます。｜（Trip.com 2026-10-27 搜尋建議）アートヴィレッジ杜季 東川町, 上川郡, 北海道, 日本",
+      "verdict": "verified",
+      "notes": "Trip.com 搜尋建議裡是住宿圖示（不是地標）。"
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "延伸資料 11 個官方網址（觀光協會住宿一覽、いで湯號時刻表、Bear Monte、拉比斯塔、拉比斯塔お知らせ、湧駒莊交通、白樺莊表單、K's House、杜季、しきしま莊、旭岳遊客中心 Q&A）",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/stay",
+      "sourceTitle": "宿泊 | ようこそ東川（等 11 頁）",
+      "sourceQuote": "11 個網址 2026-10-27 curl 皆回 200（第 2 輪新增的拉比斯塔お知らせ頁有 2025.10.08【冬季】無料送迎バスのご案内），頁面內容與延伸資料的說明相符（例：しきしま荘首頁有方案選單、お食事時間與「いで湯号をご利用のお客様へ」公告；旭岳 VC Q&A 有 ATM、コンビニ、食堂）",
+      "verdict": "verified",
+      "notes": "白樺莊表單頁說明「休館公告在官網首頁」也一致。"
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "（全文）住宿頁不寫價格",
+      "sourceUrl": "https://www.bearmonte.jp/access/",
+      "sourceTitle": "全文檢查（不是來源事實）",
+      "sourceQuote": "reader-preview.md 全文搜尋「円」「日圓」「TWD」「NT$」「元」「價」：正文沒有任何房價、方案價或車資",
+      "verdict": "verified",
+      "notes": "符合 Darren 2026-10-26 住宿頁不寫價格。sourceUrl 只是格式需要，填其中一個查過的頁面。第 2 輪重新搜尋全文：新增的拉比斯塔接送段與時刻表也沒有車資或價格。"
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "2025年12月1日到2026年3月31日的冬季，旅館開了住客限定的免費接送巴士。去程14:00從JR旭川站北口的團體巴士乘車處出發，15:30到旅館。回程10:00從旅館發車，11:30回到旭川站。搭車要在出發4天前打電話預約。2026年起的冬天有沒有接送、日期是哪幾天，看官網的公告。",
+      "sourceUrl": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/news/images/la_daisetsuzan_news.pdf",
+      "sourceTitle": "【冬季】無料送迎バスのご案内｜ラビスタ大雪山（2025.10.08 お知らせ）",
+      "sourceQuote": "無料送迎バス 旭川駅⇔ラビスタ大雪山｜運行期間 2025年12月1日(月)▼2026年3月31日(火)｜12月1日～3月31日までは毎日運行！｜〈申込締切〉ご出発の4日前 お電話にて事前予約制｜※当館宿泊予約がある方のみ対象となります。｜JR旭川駅 北口(東側)団体バス乗り場｜往路 旭川駅 14:00発 … ラビスタ大雪山 15:30着｜復路 ラビスタ大雪山 10:00発 … 旭川駅 11:30着",
+      "verdict": "verified",
+      "notes": "F272。期間、住客限定、免費、乘車處、四個時刻、4 天前電話預約逐項一致。「出發4天前」對應「ご出発の4日前」申込締切，正文「要在出發4天前打電話預約」可讀成截止日，沒有比原文強。2026-27 冬季的接送，お知らせ頁到 2026-10-27 還沒公告，正文請讀者看官網公告，一致。往路中途在「東川道の駅」休息的細節正文沒寫，不影響。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "住Hotel Bear Monte以外的旅館，隔天要搭纜車，可以搭いで湯號坐到終點「旭岳」。例如8:49從旭岳温泉入口上車，9:03就到纜車站前。想走過去，走多久可以在入住時問旅館。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳温泉入口 Asahidake Onsen Entrance 8:49｜旭岳 Mt.Asahidake 9:03｜（Bear Monte 交通頁）※旭岳ロープウェイは「旭岳」下車｜（観光協会）シャトルバスいで湯号を利用する場合は、旭岳ロープウエイ駅舎前が終点になります。",
+      "verdict": "verified",
+      "notes": "8:49→9:03 與時刻表第 1 班一致；終點在纜車站舍前。步行時間正文沒寫數字，交給旅館，沒有推算。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "纜車各季的營業時間，見旭岳纜車與姿見の池。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "內連句（目標頁 content-production/asahidake-ropeway/reader-preview.md）",
+      "sourceQuote": "（目標頁 H1）旭岳纜車與姿見の池，營業時間、票價與散策路怎麼走｜（H2）旭岳纜車的營業時間與停駛期",
+      "verdict": "verified",
+      "notes": "內連句本身不含事實；確認目標頁 asahidake-ropeway 確實負責纜車各季營業時間（H2「旭岳纜車的營業時間與停駛期」），連過去的說法成立。sourceUrl 填目標頁引用的纜車官網，只是格式需要。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "白樺莊也在旭岳溫泉區內，在哪一站下車與離站多遠，訂房時請旅館說明。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/stay",
+      "sourceTitle": "宿泊 | ようこそ東川",
+      "sourceQuote": "旭岳温泉 … 大雪山白樺荘｜（白樺荘官網）〒071-1472 北海道上川郡東川町 旭岳温泉｜（アクセス頁）「いで湯号」運行時刻表・料金表（旭川電気軌道）へ",
+      "verdict": "verified",
+      "notes": "觀光協會把白樺莊列在旭岳温泉一節，官網地址也是旭岳温泉；官網交通頁只連到いで湯號時刻表、沒寫下車站，請讀者向旅館確認合理。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "兩間都在旭岳溫泉區內，在哪一站下車與下車後怎麼走，訂房時請旅館說明。杜季要用日語聯絡。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/stay",
+      "sourceTitle": "宿泊 | ようこそ東川",
+      "sourceQuote": "旭岳温泉 … 大雪山山荘 … アートヴィレッジ杜季｜（杜季官網）※当館は日本語での対応しかできないため日本語の話せる方のみご予約ください。",
+      "verdict": "verified",
+      "notes": "兩間都列在觀光協會旭岳温泉一節；杜季官網地址「東川町勇駒別1418」（勇駒別是旭岳温泉舊名，観光協会温泉頁「かつては勇駒別（ゆこまんべつ）と呼ばれ」）。杜季官網交通頁只寫いで湯號所要 86 分，沒寫下車站。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "不會說日文，改訂能在Trip.com、Agoda預約的那5間比較順。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/hotels/%e5%a4%a7%e9%9b%aa%e5%b1%b1%e5%b1%b1%e8%8d%98/",
+      "sourceTitle": "大雪山山荘 | ようこそ東川",
+      "sourceQuote": "TEL/FAX：0166-97-2326｜（Trip.com、Agoda 2026-10-27）Bear Monte、拉比斯塔、湧駒莊、K's House、しきしま莊五間都有上架",
+      "verdict": "verified",
+      "notes": "編輯建議。依據是白樺莊與山莊只能用電話、傳真或日文表單直接訂（C80～C83），另外 5 間兩個平台都有（C74）。官方沒有寫山莊只能說日語，但正文沒有這樣主張，只是建議，沒有說過頭。"
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "大雪山山莊只有1泊2食的方案，也就是含當天晚餐與隔天早餐。（白話解釋）",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/hotels/%e5%a4%a7%e9%9b%aa%e5%b1%b1%e5%b1%b1%e8%8d%98/",
+      "sourceTitle": "大雪山山荘 | ようこそ東川",
+      "sourceQuote": "宿泊：１泊２食付",
+      "verdict": "verified",
+      "notes": "「1泊2食」是一晚含晚餐與隔天早餐的日本住宿慣用說法，解釋沒有加官網沒寫的內容。"
+    }
+  ],
+  "summary": {
+    "verified": 94,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
