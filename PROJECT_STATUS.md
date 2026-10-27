@@ -1467,4 +1467,5 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 預覽模式已對 Sanity 實跑通過，三個插入位置正確。
 - 阻礙：維基共享資源對雲端機器的共用 IP 回 429，原圖下載不了，還沒真的上傳。已排 45 分鐘後重試一次；仍被擋就改在 Darren 電腦上跑。
 - 尚未做：自動寫作加回選文內照片、已上線文章分批補照片。
-- 唯一下一步：照片下載成功後上傳利尻島交通三張，給 Darren 看網頁。
+- 10/27 18:22（台北）重試仍是 429，雲端不再重試。
+- 唯一下一步：在 Darren 電腦的主資料夾（不是自動寫作的 worktree）開 Claude Code，說「把利尻島交通的三張文內照片傳上去」。要做的事：切到分支 `claude/upbeat-mayer-y94jl9`，`npm run image:prepare:inline -- content-production/rishiri-island-transport --download`，親自看三張圖，`cd studio` 後 `npm run publish:article-inline-images -- ../content-production/rishiri-island-transport` 預覽、確認後加 `--apply`；本機 build 看網頁，照 Git 規則合併到 `main` 讓網站重建。不滿意用 `--remove --apply` 拿掉。
