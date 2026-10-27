@@ -1440,7 +1440,7 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
   - 第二批：sounkyo-festival、sounkyo-weather、asahikawa-sights、asahidake-hiking。
   - 第三批：asahikawa-food、asahikawa-weather、sounkyo-stay、sounkyo-hiking、sounkyo-sights、asahidake-stay、asahidake-or-sounkyo。
 - 7 篇的驗收紀錄在各自的 `review.md`，都是 `ready_for_user_preview`、gates_clear。協調者收斂時直接改的小地方都記在 review.md 備註（每次都由查核者用雜湊比對確認只差那幾處）。
-- 上線時接上與補上的內連共 16 條；三條因錨文字在同段重複標成 skip（asahikawa-sights→旭山動物園、asahikawa-weather→旭山動物園）。
+- 上線時接上與補上的內連共 16 條；兩條因錨文字在同段重複標成 skip（asahikawa-sights→旭山動物園、asahikawa-weather→旭山動物園）。
 - 大綱同步：各篇改過的標題、內連 section，新增 4 條內連句（asahikawa-weather→asahikawa-transport、sounkyo-hiking→sounkyo-transport、asahidake-stay→asahidake-ropeway，及先前的 asahikawa-sights→asahikawa-transport）。
 - 旭川・大雪群 21 頁：已上線 17 篇＋3 個 Hub。
 
