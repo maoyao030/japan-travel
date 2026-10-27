@@ -309,6 +309,21 @@ test('補內連只加連結標記，可見文字不變；找不到或不唯一�
   assert.throws(() => addLinkToPortableText(body, {targetPath: '/x/', anchorText: '不存在的句子'}), /找不到連結句/)
   assert.throws(() => addLinkToPortableText(body, {targetPath: 'no-slash', anchorText: '巴士'}), /站內路徑/)
 
+  // 段落前面已經提到同一個地名、連結句裡也出現兩次：連到連結句裡最後一個（「見○○」）
+  const repeated = [
+    {_type: 'block', _key: 'b3', style: 'normal', markDefs: [{_key: 'old', _type: 'link', href: '/places/asahikawa/'}], children: [
+      {_type: 'span', _key: 's3', text: '旭山動物園冬天也開園。', marks: []},
+      {_type: 'span', _key: 's4', text: '旭川', marks: ['old']},
+      {_type: 'span', _key: 's5', text: '出發：旭山動物園的開園時間與公車，見旭山動物園。', marks: []},
+    ]},
+  ]
+  const zoo = addLinkToPortableText(repeated, {targetPath: '/places/asahiyama-zoo/', anchorText: '旭山動物園', sentence: '旭山動物園的開園時間與公車，見旭山動物園。'})
+  assert.equal(visibleText(zoo.body), visibleText(repeated))
+  assert.deepEqual(zoo.body[0].children.map((child: any) => child.text), ['旭山動物園冬天也開園。', '旭川', '出發：旭山動物園的開園時間與公車，見', '旭山動物園', '。'])
+  assert.equal(zoo.body[0].children[3].marks.length, 1)
+  // 錨文字跨過既有連結的片段就拒絕
+  assert.throws(() => addLinkToPortableText(repeated, {targetPath: '/x/', anchorText: '園。旭川', sentence: '開園。旭川出發'}), /同一個文字片段/)
+
   const outline = {
     pages: [{articleId: 'rebun-island-transport', targetPath: '/places/rebun-island/transport/'}, {articleId: 'heartland-ferry-booking', targetPath: '/guides/heartland-ferry-booking/'}],
     links: [{from: 'rebun-island-transport', to: 'heartland-ferry-booking', purpose: '怎麼訂票', sentence: '訂船票前先看渡輪訂票教學', anchor: '渡輪訂票教學'}],

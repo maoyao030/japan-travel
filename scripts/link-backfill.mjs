@@ -44,14 +44,36 @@ export function addLinkToPortableText(body, proposal) {
   if ((block.markDefs ?? []).some((definition) => definition?._type === 'link' && definition.href === proposal.targetPath)) {
     throw new Error('這個段落已經連到同一個網址')
   }
-  const spans = (block.children ?? []).filter(
-    (child) => child?._type === 'span' && typeof child.text === 'string' && child.text.split(proposal.anchorText).length - 1 === 1,
-  )
-  if (spans.length !== 1) throw new Error('錨文字必須完整且只出現在同一個文字片段一次')
-  const span = spans[0]
+  // 錨文字的位置：有連結句就找連結句裡的錨文字（同一句出現兩次取最後一個，也就是「見○○」那個），
+  // 段落前面提到同一個地名不影響；沒有連結句時，錨文字在整段只能出現一次。
+  const text = blockText(block)
+  let anchorStart
+  if (hasText(proposal.sentence)) {
+    const sentenceStart = text.indexOf(proposal.sentence)
+    if (sentenceStart < 0) throw new Error(`正文找不到連結句：${proposal.sentence.slice(0, 40)}`)
+    if (text.indexOf(proposal.sentence, sentenceStart + 1) >= 0) throw new Error('連結句在同一段出現不只一次')
+    anchorStart = sentenceStart + proposal.sentence.lastIndexOf(proposal.anchorText)
+  } else {
+    if (text.split(proposal.anchorText).length - 1 !== 1) throw new Error('錨文字必須完整且只出現在同一個文字片段一次')
+    anchorStart = text.indexOf(proposal.anchorText)
+  }
+  let offset = 0
+  let span = null
+  let start = -1
+  for (const child of block.children ?? []) {
+    const length = (child?.text ?? '').length
+    if (anchorStart >= offset && anchorStart + proposal.anchorText.length <= offset + length) {
+      if (child?._type === 'span' && typeof child.text === 'string') {
+        span = child
+        start = anchorStart - offset
+      }
+      break
+    }
+    offset += length
+  }
+  if (!span) throw new Error('錨文字必須完整且只出現在同一個文字片段一次')
   if ((span.marks ?? []).some((mark) => linkKeys.has(mark))) throw new Error('錨文字已經在別的連結裡')
 
-  const start = span.text.indexOf(proposal.anchorText)
   const before = span.text.slice(0, start)
   const after = span.text.slice(start + proposal.anchorText.length)
   const keyParts = [proposal.sourceArticleId ?? '', block._key, proposal.targetPath, proposal.anchorText]
