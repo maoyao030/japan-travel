@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "sounkyo-weather",
+  "articleTitle": "層雲峽天氣與楓葉，各月氣溫、積雪與紅葉季",
+  "targetUrl": "/places/sounkyo/weather/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-weather/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "用層雲峽峽谷的秋季景色帶出這篇講的天氣、氣溫與紅葉季，讓讀者一眼看出是層雲峽的季節頁。",
+      "mustShow": ["認得出層雲峽的峽谷地形（柱狀節理岩壁、石狩川）或瀑布，並看得出季節"],
+      "mustNotShow": ["可辨識的人物臉部", "其他峽谷冒充層雲峽", "冰瀑祭等祭典畫面", "旅館或店家招牌當主體", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/%E7%A7%8B%E5%87%BD%EF%BC%88Autumn_in_valley%EF%BC%89_-_panoramio.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.57},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 pakku 拍的層雲峽大函：左邊是橘灰色的柱狀節理岩壁，中間是石狩川，右岸岩壁上方的樹林開始轉黃轉紅，天空晴朗，一看就是層雲峽的秋天。文章主軸是各月氣溫與紅葉季，這張同時有峽谷地形與秋色，比單純楓葉特寫更認得出地點。原圖 2288×1712，下緣中間有一個背對鏡頭的人頭（看不出臉），裁 16:9 時焦點 y 放 0.57，裁掉最下方約 90 px，人頭不會出現在封面。限制：大函在溫泉街東南方直線約 6 公里的國道旁，不是溫泉街本身；檔案頁的拍攝日期 2004-02-07 是相機時鐘，和畫面的秋景不符，實際拍攝時間不明。cover-02 是同一位作者拍的「秋の層雲」，黃葉山坡上方有層雲峽的岩峰，季節感更強但地形不如大函好認，當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Sounkyo autumn」「Sounkyo gorge」「Ginga waterfall」與分類 Sōunkyō、Ginga Falls、Ryūsei Falls、Sounkyo Onsen。排除：Dōhoku bus Sōunkyō01.JPG 已用在交通頁、層雲峡温泉 - panoramio.jpg 是溫泉街看板（交通頁備選）；層雲峡の紅葉 03 Oct 2008（640 px，有浮水印）、Oobako(hokkaido).jpg（640 px）、Sounkyo.jpg 與 Sounkyo 01 a.jpg 解析度不夠；Japan Hokkaido, Sounkyo gorge 01/02（1985 年直式掃描）；Ginga Waterfall during rainstorm.jpg 與 Kamikawa.Ginga-Falls2022.JPG 是直式，裁 16:9 只剩岩壁一段；銀河瀑布 Gin Ga no Taki 與 Ryūsei Falls 2003-09-14（lienyuan lee 2003，夏綠、天空偏白）可用但季節感弱；紅葉谷への路 是楓葉特寫，看不出層雲峽；Night sky over Sounkyo Canyon 是夜空星軌，與天氣季節主題較遠；Sounkyo Hyoubaku Festival 分類是祭典，避開。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E5%87%BD%EF%BC%88Autumn_in_valley%EF%BC%89_-_panoramio.jpg",
+          "creatorName": "pakku",
+          "sourceTitle": "File:秋函（Autumn in valley） - panoramio.jpg",
+          "sourceDescription": "層雲峡の大函。石狩川とニセイチャロマップ川の合流点付近。（Panoramio 匯入，座標 43.699775, 143.015707，分類 Sōunkyō、Ishikari River、Columnar igneous rocks in Japan）",
+          "takenAt": "不明（檔案頁標 2004-02-07，為相機時鐘，畫面是秋天）",
+          "width": 2288,
+          "height": 1712,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "contextual",
+          "matchLimits": "拍的是溫泉街東南方直線約 6 公里的大函，不是溫泉街；實際拍攝年份與月份不明，只能當秋季氛圍，不代表某一年的紅葉進度。",
+          "whyItFits": "檔案頁說明為層雲峽大函、石狩川與ニセイチャロマップ川合流點附近，座標在大函；畫面是柱狀節理岩壁、石狩川與開始轉色的樹林，對應文章的紅葉季與峽谷季節景色。",
+          "altDraft": "層雲峽大函的柱狀節理岩壁與石狩川，岸上樹林開始轉黃轉紅",
+          "captionDraft": "層雲峽大函的秋天。",
+          "creditDraft": "照片：pakku／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "原圖下緣有一個背對鏡頭的人頭，看不出臉；16:9 裁切後不在畫面內",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "裁切後只有岩壁、河流與樹林，沒有招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E3%81%AE%E5%B1%A4%E9%9B%B2_-_panoramio.jpg",
+          "creatorName": "pakku",
+          "sourceTitle": "File:秋の層雲 - panoramio.jpg",
+          "sourceDescription": "秋の層雲（Panoramio 匯入，座標 43.738608, 142.940025，分類 Sōunkyō）",
+          "takenAt": "不明（檔案頁標 2004-02-07，為相機時鐘，畫面是秋天）",
+          "width": 2288,
+          "height": 1712,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "contextual",
+          "matchLimits": "只拍到黃葉山坡與遠處岩峰，峽谷地形不如大函好認；實際拍攝時間不明。",
+          "whyItFits": "座標在層雲峽溫泉街西側，畫面是轉黃轉紅的山坡與層雲峽的岩峰，秋季感明顯。",
+          "altDraft": "層雲峽轉黃的山坡，上方是突出的岩峰",
+          "captionDraft": "層雲峽的秋天。",
+          "creditDraft": "照片：pakku／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "下緣有電線，沒有人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

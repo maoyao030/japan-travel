@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahikawa-sights",
+  "articleTitle": "旭川景點推薦，車站周邊、展望台、酒藏與冬天才有的活動",
+  "targetUrl": "/places/asahikawa/sights/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-sights/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是旭川市區的景點，用正文介紹的旭橋與背後的大雪山連峰當代表畫面。",
+      "mustShow": ["旭橋、嵐山展望台、常磐公園、上野ファーム、神居古潭等正文介紹的旭川景點之一，且認得出是旭川"],
+      "mustNotShow": ["可辨識的人物臉部", "宮津市等其他地方的同名旭橋冒充旭川旭橋", "旭川車站、平和通買物公園、旭山動物園當主體（別頁已用）", "旅館或店家招牌當主體", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Asahibashi_Bridge_and_Mt._Daisetsuzan_Range.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.5},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Masal64 2016 年 10 月 19 日在石狩川河岸拍的旭橋：綠色鋼造拱橋橫跨石狩川，背後是覆雪的大雪山連峰，前景是秋天紅葉的河岸公園。正文旭橋一段寫的正是「鋼造的拱橋跨在石狩川上，背景是大雪山連峰」，畫面直接對上，又能一眼認出是旭川。原圖就是 16:9（1920×1080），裁切只做縮放。限制：手機拍攝，細節不如單眼銳利；前景有遊具與涼亭，橋在畫面中段偏小；2016 年拍攝，但旭橋 1932 年完工、外觀沒有大改。cover-02 是 MIKI Yoshihito 2025 年 7 月從河床仰拍的旭橋，畫質高，但看不到大雪山與市區，較難一眼認出是旭川。cover-03 是同一作者 Masal64 從嵐山展望台俯瞰旭川市區與大雪山的照片，對應正文嵐山展望台一段，但市區很遠、主體不明確。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Asahibashi Asahikawa」「旭橋 旭川」「Kamuikotan」「Arashiyama Asahikawa」「Ueno Farm」「Otokoyama Asahikawa」「Tokiwa Park Asahikawa」，篩掉寬度不到 1600 px 的檔案。看過大圖的有：Asahibashi Bridge and Mt. Daisetsuzan Range（選定）、Asahi Bridge, Asahikawa - Jul 20, 2025（備選）、Cityscape of Asahikawa from Mt. Arashiyama（備選）。Asahi Bridge Haji ac (1)～(4) 是京都府宮津市的同名旭橋，不用。旭橋 2008 年 pakku 的檔案只有 1600×1200，裁 16:9 後不到 900 高的餘裕小。上野ファーム的 panoramio 與 Nao Iizuka 照片多是花壇近景與招牌，男山自然公園只有 RJD 兩張花叢近景，神居古潭照片多為 2009～2018 年的岩石近景，都不如旭橋能代表旭川。站上其他旭川文章沒有用過這三張。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahibashi_Bridge_and_Mt._Daisetsuzan_Range.jpg",
+          "creatorName": "Masal64",
+          "sourceTitle": "File:Asahibashi Bridge and Mt. Daisetsuzan Range.jpg",
+          "sourceDescription": "Asahibashi Bridge and Daisetsuzan Mountain Range, in Asahikawa, Hokkaido, Japan（Self-published work，分類 Asahi Bridge (Asahikawa)）",
+          "takenAt": "2016-10-19",
+          "width": 1920,
+          "height": 1080,
+          "licenseName": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明與分類為旭川的旭橋，畫面是跨石狩川的綠色拱橋與背後的大雪山連峰，和正文旭橋一段的描述一致。",
+          "altDraft": "石狩川上的綠色鋼造拱橋旭橋，背後是覆雪的大雪山連峰，河岸公園的樹葉轉紅",
+          "captionDraft": "石狩川上的旭橋與大雪山連峰（2016 年 10 月）。",
+          "creditDraft": "照片：Masal64／Wikimedia Commons／CC0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "橋梁、河岸公園與遠處的大樓",
+            "risk": "low",
+            "notes": "沒有可辨識的人物與醒目招牌；遠處大樓不是主體。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahi_Bridge,_Asahikawa_-_Jul_20,_2025.jpg",
+          "creatorName": "MIKI Yoshihito",
+          "sourceTitle": "File:Asahi Bridge, Asahikawa - Jul 20, 2025.jpg",
+          "sourceDescription": "Asahi Bridge, Asahikawa, Hokkaido, Japan（Flickr 轉載，經 FlickreviewR 2 審核，分類 Asahi Bridge (Asahikawa)）",
+          "takenAt": "2025-07-20",
+          "width": 5656,
+          "height": 3771,
+          "licenseName": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明與分類為旭川的旭橋，從河床仰拍拱橋與石砌橋墩。",
+          "altDraft": "從石狩川河床仰望綠色鋼造拱橋旭橋與石砌橋墩",
+          "captionDraft": "從河床看旭橋（2025 年 7 月）。",
+          "creditDraft": "照片：MIKI Yoshihito／Wikimedia Commons／CC BY 4.0",
+          "commercialReview": {
+            "people": "橋上遠處有一個很小的人影，認不出是誰",
+            "logos": "none",
+            "artwork": "none",
+            "property": "橋梁與河岸",
+            "risk": "low",
+            "notes": "沒有可辨識的人物與招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-03",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cityscape_of_Asahikawa_from_Mt._Arashiyama.jpg",
+          "creatorName": "Masal64",
+          "sourceTitle": "File:Cityscape of Asahikawa from Mt. Arashiyama.jpg",
+          "sourceDescription": "Cityscape of Asahikawa from Mt. Arashiyama observatory, Hokkaido, Japan（Self-published work，分類 Cityscapes in Asahikawa）",
+          "takenAt": "2016-10-19",
+          "width": 4000,
+          "height": 2250,
+          "licenseName": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為從嵐山展望台看旭川市區，畫面有市區、石狩川與遠處的大雪山，對應正文嵐山展望台一段。",
+          "altDraft": "從嵐山展望台俯瞰旭川市區與石狩川，遠處是大雪山連峰，前景是秋天的樹林",
+          "captionDraft": "從嵐山展望台看旭川市區（2016 年 10 月）。",
+          "creditDraft": "照片：Masal64／Wikimedia Commons／CC0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "遠景市街",
+            "risk": "low",
+            "notes": "沒有人物與招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

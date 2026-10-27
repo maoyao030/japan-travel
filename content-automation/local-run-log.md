@@ -29,6 +29,16 @@
 
 | 台北時間 | 文章 ID | 結果 | 網址 | 停在哪一點與原因 | 封面來源與授權 |
 |---|---|---|---|---|---|
+| 2026-10-27 11:02（人工） | asahidake-hiking | 已上線 | https://offpathnotes.com/places/asahidake/hiking/ | — | 維基共享資源 140724 Asahi-dake Hokkaido Japan02s3.jpg，663highland，CC BY 2.5 |
+| 2026-10-27 10:58（人工） | asahikawa-sights | 已上線 | https://offpathnotes.com/places/asahikawa/sights/ | —（連往旭山動物園的連結句錨文字不唯一，補內連略過） | 維基共享資源 Asahibashi Bridge and Mt. Daisetsuzan Range.jpg，Masal64，CC0 |
+| 2026-10-27 10:54（人工） | sounkyo-weather | 已上線 | https://offpathnotes.com/places/sounkyo/weather/ | — | 維基共享資源 秋函（Autumn in valley） - panoramio.jpg，pakku，CC BY 3.0 |
+| 2026-10-27 10:50（人工） | sounkyo-festival | 已上線 | https://offpathnotes.com/places/sounkyo/festival/ | — | 維基共享資源 Souunkyouhyoubakumatsuri.jpg，Outside147，CC BY-SA 3.0 |
+| 2026-10-26 09:12（人工） | asahidake-ropeway | 已上線 | https://offpathnotes.com/places/asahidake/ropeway/ | — | 維基共享資源 Asahidake, Daisetsuzan Volcanic Group - Asahidake6036.jpg，lumoplank，CC0 |
+| 2026-10-26 09:08（人工） | asahikawa-stay | 已上線 | https://offpathnotes.com/places/asahikawa/stay/ | — | 維基共享資源 Kaimono Koen 20250801.jpg，Miss 501，CC BY-SA 4.0 |
+| 2026-10-26 09:05（人工） | asahiyama-zoo | 已上線 | https://offpathnotes.com/places/asahikawa/asahiyama-zoo/ | — | 維基共享資源 Asahiyama Zoo, Asahikawa - Mar 12, 2026 (1).jpg，keiichiro shikano，CC BY 4.0 |
+| 2026-10-26 09:02（人工） | asahidake-transport | 已上線 | https://offpathnotes.com/places/asahidake/transport/ | —（旭岳 Hub 建立並開放索引；04:10 第一次試傳在第 7 點被授權日期擋下） | 維基共享資源 The way to Asahidake Ropeway on June 14th, 2019.jpg，Choi2451，CC0 |
+| 2026-10-26 08:58（人工） | sounkyo-transport | 已上線 | https://offpathnotes.com/places/sounkyo/transport/ | —（層雲峽 Hub 建立並開放索引；04:10 第一次試傳在第 7 點被授權日期擋下） | 維基共享資源 Dōhoku bus Sōunkyō01.JPG，221.20，Public domain |
+| 2026-10-26 08:55（人工） | asahikawa-transport | 已上線 | https://offpathnotes.com/places/asahikawa/transport/ | —（旭川 Hub 建立並開放索引；04:10 第一次試傳在第 7 點失敗：定稿 approvedAt 用 UTC 日期 10-25，早於清單授權日 10-26，台北 08:00 後重新定稿通過） | 維基共享資源 Asahikawa Station in October 2026.jpg，姒姓賢寧，CC BY 4.0 |
 | 2026-10-26 04:36（人工） | wakkanai-stay | 已上線 | https://offpathnotes.com/places/wakkanai/stay/ | — | 維基共享資源 Wakkanai city view.jpg，Kitayama，CC BY-SA 4.0 |
 | 2026-10-26 03:30（人工） | rebun-island-transport | 已上線 | https://offpathnotes.com/places/rebun-island/transport/ | — | 維基共享資源 130726 Kafuka Port in Rebun Island Hokkaido Japan17s3.jpg，663highland，CC BY 2.5 |
 | 2026-10-26 02:40（人工） | rebun-island | 已上線 | https://offpathnotes.com/places/rebun-island/ | —（掛成禮文島 Hub 入口文章） | 維基共享資源 Gorota1.JPG（Gorota 岬望向須古頓岬），Furiko7e，CC BY-SA 3.0 |
