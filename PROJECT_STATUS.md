@@ -1458,3 +1458,41 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 ### 唯一下一步
 
 - 寫旭川・大雪群的 4 篇地點主頁（asahikawa、sounkyo、asahidake，最後 higashikawa）。
+
+## 2026-10-27 Claude Code（地端）：旭川・大雪群 4 篇地點主頁上線，整群 21 頁完成
+
+### 已決定
+
+- Darren 要求接著寫 4 篇地點主頁（2026-10-27）。
+- 東川町大綱「依旅客類型」原本沒有 H3，照研究者建議在寫作前加 4 個（不開車從旭川站去半天、從旭川機場往旭岳中途在東川停、自駕往旭岳順路停、帶小孩）。
+- 東川町與旭岳主頁沒有（或少有）面向頁，景點、美食、冬季、天人峽等由主頁負責，篇幅比一般主頁長，不硬刪只出現一次的事實。
+- 旭川主頁標題檢查建議把「幾月去旭川」改成「旭川各月的天氣與活動」，協調者改成「旭川幾月去？」，保留讀者搜尋的問法。
+- 東川 Hub 名稱與 `content-planning/places.json` 不一致（「東川町」對「東川」）導致全站建置失敗：改 Hub 這邊為「東川」（Sanity 與 `article-queue.json`），因為改地點清單會讓各 H2 都得帶「東川町」。Hub 介紹文「熱門麵包店常常過中午就賣完」照查核改成「有的」。
+
+### 已完成
+
+- 上線並開放收錄 4 篇地點主頁，各自掛成地點 Hub 的入口文章：
+  - sounkyo（封面 層雲峡温泉 - panoramio.jpg，Toshihiro Matsui，CC BY-SA 3.0）
+  - asahikawa（Asahikawa cityscape seen from Asahikawa Grand Hotel，Yuichi Kosio，CC BY 2.0）
+  - asahidake（姿見ノ池からの旭岳２.jpg，Koda6029，CC BY-SA 4.0）
+  - higashikawa（Michinoeki Higashikawa 「Michikusakan」 Appearance.jpg，Mister0124，CC BY-SA 4.0）
+- 4 個 Hub（層雲峽、旭川、旭岳、東川）都是 ready_indexable。新建東川 Hub。
+- 事實查核最後一輪：sounkyo 113、asahikawa 116、asahidake 121、higashikawa 166 項全部 verified；讀者最終都 acceptable。驗收紀錄在各自 `review.md`。
+- 上線時接上內連 24 條，補內連 19 條（層雲峽那輪 6 條、後三篇那輪 13 條）。
+- 大綱同步：各篇改過的標題與內連 section；sounkyo 新增 2 條內連句（→sounkyo-stay 冬天含晚餐、→sounkyo-transport 包車）。
+- 旭川・大雪群 21 頁全部上線，另有 4 個地點 Hub。網址都確認回 200、沒有 noindex。npm test 179 項全過，main 在 e0d61c2 之後。
+
+### 尚未完成
+
+- 11 條內連因錨文字在同一段重複被 skip（81、107、113、135、154、163、165、166、172、176 與上一輪的 136），其中 5 條指向東川町，要人工改句子後再接。
+- 已上線 sounkyo-stay：ビアグリル・キャニオン寫「週三休、開到20:00」，店家官網是週二、週三公休、17:30～20:30，要走修正流程。
+- 已上線 wakkanai-stay：訂房管道與現況不符（ホテル美雪 Agoda 可訂；casa hotel 與ホテルめぐま的 Trip.com 目前不接受預訂）。
+- 4 篇主頁的新事實同步回地點事實表（各 review.md「留給之後的事」列了編號）；規劃總表與日曆提醒；下一群（富良野・美瑛）研究。
+
+### 阻礙
+
+- 無。
+
+### 唯一下一步
+
+- 修正已上線文章：sounkyo-stay 的餐廳公休與時間、wakkanai-stay 的訂房管道，並把 11 條被 skip 的內連改句子接上。

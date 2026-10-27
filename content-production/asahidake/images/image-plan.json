@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahidake",
+  "articleTitle": "旭岳旅遊，一日遊或住一晚、幾月去與順路的天人峽",
+  "targetUrl": "/places/asahidake/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "旭岳地點主頁的封面，用姿見の池與旭岳山體全景，讓讀者一眼認出旭岳。",
+      "mustShow": ["旭岳山體與噴氣孔，或姿見の池與旭岳同框"],
+      "mustNotShow": ["可辨識的人物臉部", "其他山冒充旭岳", "AI 生成或合成畫面", "已用於旭岳其他頁的封面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/%E5%A7%BF%E8%A6%8B%E3%83%8E%E6%B1%A0%E3%81%8B%E3%82%89%E3%81%AE%E6%97%AD%E5%B2%B3%EF%BC%92.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.45},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Koda6029 2021 年 7 月 26 日從姿見の池拍的旭岳：前景是深藍色的姿見の池，後方是紅褐色的旭岳山體，左側山腰的噴氣孔冒著白煙，池邊還有殘雪，天空晴朗。旭岳山體、噴氣孔與姿見の池同框，正是讀者搭纜車上去會看到的畫面。原圖 5472×3648（3:2），裁 16:9 焦點 y 0.45，保留整個山頂與噴氣孔，只裁掉下方部分池面與上方一點天空。左側步道上有兩個極小的人影，無法辨識。限制：夏天的畫面，不代表紅葉季或積雪期。cover-02 是 663highland 2014 年 7 月拍的同一角度（Featured/Quality image），但它已列在纜車頁的候選裡，且同作者同日的照片是登山頁封面，不選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源分類 Sugatami Pond，關鍵字「Sugatami pond Asahidake」「姿見の池」。排除已用於其他頁封面的 140724 Asahi-dake Hokkaido Japan02s3.jpg、Asahidake, Daisetsuzan Volcanic Group - Asahidake6036.jpg、Asahidake6029.jpg、The way to Asahidake Ropeway on June 14th, 2019.jpg、黒岳から旭岳方面.jpg；橫幅過長的 Mount Asahi panorama (46537568281).jpg、140724 Asahi-dake Hokkaido Japan10s3.jpg（裁 16:9 會失去山頂或兩側）。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E5%A7%BF%E8%A6%8B%E3%83%8E%E6%B1%A0%E3%81%8B%E3%82%89%E3%81%AE%E6%97%AD%E5%B2%B3%EF%BC%92.jpg",
+          "creatorName": "Koda6029",
+          "sourceTitle": "File:姿見ノ池からの旭岳２.jpg",
+          "sourceDescription": "Mount Asahi as seen from the Sugatami Pond（Own work，分類 Sugatami Pond）",
+          "takenAt": "2021-07-26",
+          "width": 5472,
+          "height": 3648,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為從姿見の池看旭岳，畫面是旭岳山體、噴氣孔與姿見の池，是旭岳最具代表性的景色。",
+          "altDraft": "從姿見の池望向旭岳，山腰的噴氣孔冒著白煙，池邊還有殘雪",
+          "captionDraft": "從姿見の池看旭岳。",
+          "creditDraft": "照片：Koda6029／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "two tiny unidentifiable hikers",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "只有山、池與草地；步道上兩個極小人影無法辨識。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:140724_Asahi-dake_and_Sugatami-no-ike_Hokkaido_Japan01bs3.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:140724 Asahi-dake and Sugatami-no-ike Hokkaido Japan01bs3.jpg",
+          "sourceDescription": "Asahi-dake and Sugatami Pond in Higashikawa, Hokkaido, Japan.",
+          "takenAt": "2014-07-24",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "matchLimits": "同作者同日的照片已是登山頁封面，畫面相近。",
+          "whyItFits": "姿見の池與旭岳噴氣孔同框。",
+          "altDraft": "姿見の池與後方冒著噴氣的旭岳",
+          "captionDraft": "姿見の池與旭岳。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "只有山與池。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
