@@ -29,6 +29,13 @@
 
 | 台北時間 | 文章 ID | 結果 | 網址 | 停在哪一點與原因 | 封面來源與授權 |
 |---|---|---|---|---|---|
+| 2026-10-27 11:46（人工） | asahidake-or-sounkyo | 已上線 | https://offpathnotes.com/places/asahidake/asahidake-or-sounkyo/ | —（第 13 步登記第一次遇到 D1 暫時錯誤 7403，重試完成） | 維基共享資源 黒岳から旭岳方面.jpg，Koda6029，CC BY-SA 4.0 |
+| 2026-10-27 11:42（人工） | asahidake-stay | 已上線 | https://offpathnotes.com/places/asahidake/stay/ | — | 維基共享資源 Asahidake, Daisetsuzan Volcanic Group - Asahidake6029.jpg，lumoplank，CC0 |
+| 2026-10-27 11:38（人工） | sounkyo-hiking | 已上線 | https://offpathnotes.com/places/sounkyo/hiking/ | — | 維基共享資源 Summit Sign, Mount Kuro, Hokkaido - Aug 9, 2012.jpg，Kunitaka NIIDATE，CC BY-SA 2.0 |
+| 2026-10-27 11:34（人工） | sounkyo-stay | 已上線 | https://offpathnotes.com/places/sounkyo/stay/ | — | 維基共享資源 Sounkyo Promenade.JPG，Soica2001，Public domain |
+| 2026-10-27 11:26（人工） | asahikawa-weather | 已上線 | https://offpathnotes.com/places/asahikawa/weather/ | —（連往旭山動物園的連結句錨文字不唯一，補內連略過） | 維基共享資源 Asahikawa-city in winter. 旭川 冬 (25014245151).jpg，T.Kiya，CC BY-SA 2.0 |
+| 2026-10-27 11:22（人工） | asahikawa-food | 已上線 | https://offpathnotes.com/places/asahikawa/food/ | — | 維基共享資源 新子焼き.jpg，久保竜弥，CC BY-SA 4.0 |
+| 2026-10-27 11:14（人工） | sounkyo-sights | 失敗 | https://offpathnotes.com/places/sounkyo/sights/ | 第 4 點定稿：heading-review.json 記錄的 H3「沒車怎麼去瀑布與大函？」與文章「沒車怎麼去大函與瀑布？」不一致；D1 記 fail --kind=publish | — |
 | 2026-10-27 11:02（人工） | asahidake-hiking | 已上線 | https://offpathnotes.com/places/asahidake/hiking/ | — | 維基共享資源 140724 Asahi-dake Hokkaido Japan02s3.jpg，663highland，CC BY 2.5 |
 | 2026-10-27 10:58（人工） | asahikawa-sights | 已上線 | https://offpathnotes.com/places/asahikawa/sights/ | —（連往旭山動物園的連結句錨文字不唯一，補內連略過） | 維基共享資源 Asahibashi Bridge and Mt. Daisetsuzan Range.jpg，Masal64，CC0 |
 | 2026-10-27 10:54（人工） | sounkyo-weather | 已上線 | https://offpathnotes.com/places/sounkyo/weather/ | — | 維基共享資源 秋函（Autumn in valley） - panoramio.jpg，pakku，CC BY 3.0 |

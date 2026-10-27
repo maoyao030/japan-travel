@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahikawa-weather",
+  "articleTitle": "旭川天氣，各月氣溫、降雪與冬天穿著",
+  "targetUrl": "/places/asahikawa/weather/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-weather/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "天氣頁封面，讓讀者一眼看出旭川冬天整座城市被雪蓋住的樣子，呼應正文「12月到3月平均氣溫在冰點以下、雪積得深」。",
+      "mustShow": ["旭川市區或旭川境內的冬季雪景，檔案頁能證明拍攝地點是旭川"],
+      "mustNotShow": ["可辨識的人物臉部", "旭川冬まつり會場或雪像（避免誤以為是某年祭典實況）", "旭川車站、平和通買物公園、旭橋、旭山動物園當主體（別頁已用）", "旅館或店家招牌當主體", "其他城市的雪景冒充旭川", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Asahikawa-city_in_winter._%E6%97%AD%E5%B7%9D_%E5%86%AC_%2825014245151%29.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.5},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 T.Kiya 2016 年 2 月 18 日從飛機上空拍的旭川市區：棋盤狀的街道與屋頂全被雪蓋住，一眼就看得出旭川冬天的積雪量，正好對應正文 2 月最深積雪平均 84 公分的說明。檔案頁說明為「雪の旭川市空撮」，分類 Snow in Asahikawa 與 Cityscapes in Asahikawa。原圖 4608×3456（4:3），裁成 16:9 只切掉上下少量街區，主體不變。限制：空拍看不出特定地標，讀者靠標題與圖說知道是旭川；2016 年拍攝，市區街廓沒有大改；畫面有輕微移軸感的模糊。cover-02 是 DrTerraKhan 2013 年 12 月 30 日拍的ツインハープ橋（忠別川上的斜張橋）雪景，地標明確但畫面灰、主體是橋梁而不是天氣。cover-03 是同一作者同一天從ツインハープ橋看的忠別川雪景，冬天氛圍好但看不出是旭川。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Asahikawa winter snow」「Asahikawa snow」「旭川 雪」「Asahikawa December／January／February」「Asahikawa diamond dust」「Asahikawa frost／hoarfrost」「Kamuikotan winter／snow」「Asahikawa Ishikari River winter」，以及分類 Snow in Asahikawa 全部檔案。看過大圖的有：Asahikawa-city in winter (25014245151)（選定）、同組空拍 (31989158020)（色調較灰，不列）、Twin Harp Bridge, Asahikawa（備選）、ChuBeTsu-River（備選）、Asahikawa Ishikari River Asahi Bridge 1（旭橋雪景，主體與 sights 封面重複，且有車輛與巴士中心招牌、路人，不用）、Tokiwakoen panoramio (1)～(3)（(1) 是常磐公園雪中步道但看不出旭川；(2)(3) 是冬まつり雪像、人群與飲料販賣機商標，不用）、Asahikawa, Hokkaido Prefecture, Japan - panoramio（冬まつり攤位與旭橋，不用）、Asahikawa 21 Century Forest（看不出旭川市區）、Japanese Red Cross Asahikawa Hospital and snow（醫院招牌與可辨識路人，不用）。鑽石塵、霧氷、神居古潭冬景在維基共享資源查無合格大圖。冬まつり雪像（Asahikawa Winter Festival Snow Statue 1～3）依規格排除。站上其他旭川文章沒有用過這三張。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahikawa-city_in_winter._%E6%97%AD%E5%B7%9D_%E5%86%AC_(25014245151).jpg",
+          "creatorName": "T.Kiya",
+          "sourceTitle": "File:Asahikawa-city in winter. 旭川 冬 (25014245151).jpg",
+          "sourceDescription": "雪の旭川市空撮／Aerial view of Asahikawa in snow. Bird's-eye view by plane.（Flickr 轉載，經 FlickreviewR 2 審核，分類 Snow in Asahikawa、Cityscapes in Asahikawa）",
+          "takenAt": "2016-02-18",
+          "width": 4608,
+          "height": 3456,
+          "licenseName": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明與分類為雪中的旭川市空拍，畫面是整片被雪覆蓋的棋盤狀街區，直接呈現正文說的旭川冬季積雪。",
+          "altDraft": "從飛機上俯瞰冬天的旭川市區，棋盤狀的街道與屋頂全被白雪覆蓋",
+          "captionDraft": "2 月從空中看旭川市區，街道與屋頂都被雪蓋住（2016 年 2 月）。",
+          "creditDraft": "照片：T.Kiya／Wikimedia Commons／CC BY-SA 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "遠景住宅與市街",
+            "risk": "low",
+            "notes": "空拍遠景，沒有人物、招牌或可辨識的單一建物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Twin_Harp_Bridge,_Asahikawa.JPG",
+          "creatorName": "DrTerraKhan",
+          "sourceTitle": "File:Twin Harp Bridge, Asahikawa.JPG",
+          "sourceDescription": "ツインハープ橋(北海道旭川市)／Twin Harp Bridge, a cable-stayed bridge in Asahikawa, Hokkaido（Own work，分類 Snow in Asahikawa、Bridges over the Chubetsu River）",
+          "takenAt": "2013-12-30",
+          "width": 3648,
+          "height": 2736,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明與分類為旭川的ツインハープ橋，畫面是積雪的河岸與斜張橋，呈現旭川 12 月的雪景。",
+          "altDraft": "積雪河岸旁的ツインハープ橋，兩座斜張橋塔立在陰天的雪景中",
+          "captionDraft": "12 月底的ツインハープ橋與忠別川河岸（2013 年 12 月）。",
+          "creditDraft": "照片：DrTerraKhan／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "橋梁與河岸",
+            "risk": "low",
+            "notes": "沒有人物；左側有一小塊藍色道路標誌，不是主體。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-03",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:ChuBeTsu-River.JPG",
+          "creatorName": "DrTerraKhan",
+          "sourceTitle": "File:ChuBeTsu-River.JPG",
+          "sourceDescription": "旭川市、ツインハープ橋から望む忠別川（Own work，分類 Snow in Asahikawa、Chubetsu River）",
+          "takenAt": "2013-12-30",
+          "width": 3648,
+          "height": 2736,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "contextual",
+          "matchLimits": "檔案頁證明是旭川的忠別川，但畫面只有河流與雪中樹林，讀者認不出是旭川。",
+          "whyItFits": "從ツインハープ橋看忠別川，兩岸積雪、天空飄雪，傳達旭川冬天的氛圍。",
+          "altDraft": "飄雪的陰天裡，忠別川兩岸的河灘與樹林覆滿白雪",
+          "captionDraft": "從ツインハープ橋看 12 月底的忠別川（2013 年 12 月）。",
+          "creditDraft": "照片：DrTerraKhan／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築；遠處有電塔。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

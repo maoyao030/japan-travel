@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahikawa-food",
+  "articleTitle": "旭川美食推薦，旭川拉麵、成吉思汗與新子燒去哪吃",
+  "targetUrl": "/places/asahikawa/food/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-food/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是旭川的在地料理，用正文開頭列的三塊招牌之一當代表畫面。",
+      "mustShow": ["正文介紹的旭川代表料理之一（旭川醬油拉麵、成吉思汗、新子燒），且拍攝地或店家在旭川"],
+      "mustNotShow": ["可辨識的人物臉部", "單一店家招牌或標誌當主體", "旭川車站、平和通買物公園、旭橋、旭山動物園當主體（別頁已用）", "其他地方的料理冒充旭川", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/%E6%96%B0%E5%AD%90%E7%84%BC%E3%81%8D.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.5},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是久保竜弥 2013 年 3 月用單眼拍的「焼鳥専門ぎんねこ」新子燒：半隻仔雞烤到外皮焦香、淋上醬汁，放在長盤上，深灰背景，沒有招牌、標誌與人物。ぎんねこ正是正文在地料理一節表格列出的新子燒店，新子燒也是正文開頭列的旭川三塊招牌之一，而且是旭川以外少見的料理，比拉麵更能一眼代表旭川。原圖 3:2（4341×2894），裁 16:9 只切掉上下少許背景，仔雞幾乎完整（原圖左側雞腿本來就超出畫面，裁後上緣貼齊畫面）。限制：檔案頁說明只寫店名、分類是 Cuisine of Hokkaido，沒有寫「旭川」，旭川是由店名對到正文表格確認；2013 年拍攝，盛盤可能和現在略有不同。cover-02 是 Famicon 2021 年拍的天金四条店醬油拉麵，店家也在正文百名店清單上，但原圖是正方形，背景菜單上印著天金的店名標誌，裁 16:9 很難完全切掉。cover-03 是 Nesnad 2022 年在旭川市區拍的醬油拉麵，直式構圖，上方有啤酒杯與 Sapporo Classic 標誌，要裁掉一大半。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Asahikawa ramen」「旭川ラーメン」「Asahikawa Ramen Village」「新子焼」「Shinkoyaki」「ふらりーと」「Furari-to Asahikawa」「5・7小路」「Asahikawa food」「さんろく街」「Hachiya ramen」「Baikohken」「Aoba ramen Asahikawa」「Asahikawa jingisukan」「Daikokuya Asahikawa」「Tenkin ramen」。看過大圖的有：新子焼き（選定）、Asahikawa Tenkin Shoyu Ramen（備選）、Asahikawa shoyu ramen Aug 09 2022 06PM（備選）、Asahikawa ramen 2022 Aug 10 03-26PM（醬色湯底，湯匙橫過畫面、背景有店內告示，不用）、Baikohken Ramen 與 Lamb BBQ (4902265217)（大黑屋成吉思汗，CC BY-SA 2.0）已下載未採用：前者是正方形且 EXIF 需旋轉，後者 2010 年拍攝。5・7小路ふらりーと.jpg 與 Furari-to kanban.JPG 只有 640×480 與 1024×768，旭川ラーメン.jpg 1200×900、Asahikawara-men.jpg 640×480，都不到 1600 px；orangeobject 的青葉拉麵是 2007 年手機拍攝。蜂屋店面照片以招牌為主體，不用。站上其他旭川文章沒有用過這三張。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E5%AD%90%E7%84%BC%E3%81%8D.jpg",
+          "creatorName": "久保竜弥",
+          "sourceTitle": "File:新子焼き.jpg",
+          "sourceDescription": "新子焼き（焼鳥専門ぎんねこ）（Own work，分類 Cuisine of Hokkaido、Yakitori、March 2013 in Hokkaido）",
+          "takenAt": "2013-03-07",
+          "width": 4341,
+          "height": 2894,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為焼鳥専門ぎんねこ的新子燒，ぎんねこ是正文表格列出的旭川新子燒店；畫面是半隻烤仔雞，和正文「用半隻仔雞烤成的新子燒」一致。",
+          "altDraft": "長盤上的新子燒，半隻仔雞烤到外皮焦黑發亮，盤底有醬汁",
+          "captionDraft": "旭川焼鳥専門ぎんねこ的新子燒（2013 年 3 月）。",
+          "creditDraft": "照片：久保竜弥／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "料理與餐盤",
+            "risk": "low",
+            "notes": "只有料理與盤子，沒有人物、招牌或包裝。裁切後的封面依 CC BY-SA 4.0 標示。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahikawa_Tenkin_Shoyu_Ramen.jpg",
+          "creatorName": "Famicon",
+          "sourceTitle": "File:Asahikawa Tenkin Shoyu Ramen.jpg",
+          "sourceDescription": "旭川市「らーめんや天金 4条店」の正油ラーメン（大盛）（Own work，分類 Asahikawa ramen）",
+          "takenAt": "2021-12-31",
+          "width": 2293,
+          "height": 2293,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為旭川天金四条店的醬油拉麵，天金四条店在正文百名店清單上。",
+          "altDraft": "龍紋碗裡的旭川醬油拉麵，上面有叉燒、筍乾與蔥花",
+          "captionDraft": "天金四条店的醬油拉麵（2021 年 12 月）。",
+          "creditDraft": "照片：Famicon／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "背景菜單上有天金店名標誌，不是主體",
+            "artwork": "none",
+            "property": "料理與店內桌面",
+            "risk": "low",
+            "notes": "沒有人物；使用時要裁掉背景菜單。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-03",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahikawa_shoyu_ramen_Aug_09_2022_06PM.jpeg",
+          "creatorName": "Nesnad",
+          "sourceTitle": "File:Asahikawa shoyu ramen Aug 09 2022 06PM.jpeg",
+          "sourceDescription": "旭川の醤油ラーメン (Asahikawa shoyu ramen)（Own work，EXIF 座標在旭川市中心，分類 Cuisine of Asahikawa）",
+          "takenAt": "2022-08-09",
+          "width": 3021,
+          "height": 4027,
+          "licenseName": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為旭川的醬油拉麵，拍攝座標在旭川市中心。",
+          "altDraft": "紅色桌面上的旭川醬油拉麵，捲麵、叉燒、筍乾與大量蔥花",
+          "captionDraft": "旭川市區的醬油拉麵（2022 年 8 月）。",
+          "creditDraft": "照片：Nesnad／Wikimedia Commons／CC BY 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "上方啤酒杯有 Sapporo Classic 標誌，裁切時要切掉",
+            "artwork": "none",
+            "property": "料理與店內桌面",
+            "risk": "low",
+            "notes": "沒有人物；使用時只取碗的部分。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

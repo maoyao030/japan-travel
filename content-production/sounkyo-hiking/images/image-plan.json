@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "articleId": "sounkyo-hiking",
+  "articleTitle": "層雲峽纜車與黑岳登山，纜車吊椅時間、票價與登頂路線",
+  "targetUrl": "/places/sounkyo/hiking/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-hiking/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是搭黑岳纜車與吊椅上山、從七合目走上黑岳山頂的登山。",
+      "mustShow": ["黑岳的登山道或山頂景色，最好看得出是黑岳本身"],
+      "mustNotShow": ["可辨識的人物臉部", "旭岳的照片冒充黑岳（旭岳頁已用 140724 Asahi-dake Hokkaido Japan02s3.jpg 與 Asahidake6036.jpg）", "層雲峽溫泉街、巴士與冰瀑祭（已用在層雲峽其他頁）", "積雪的冬山畫面（文章以夏季登山為主）", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Summit_Sign%2C_Mount_Kuro%2C_Hokkaido_-_Aug_9%2C_2012.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.55},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Kunitaka NIIDATE 2012 年 8 月 9 日在黑岳山頂拍的山頂標柱，木柱上寫著「黒岳頂上」與標高「一九八四」，和正文寫的山頂標高 1,984 公尺一致，主體不用猜。背景是山頂往南看的大雪山御鉢平一帶，前景是山頂的碎石地，中景有拉繩的登山道往下延伸。原圖 4032x3024（4:3），裁 16:9 時焦點放在 y=0.55，切掉上方一些雲與最下方的碎石，標柱上的字完整保留。放大看過，中景步道上只有一個極小的人影，看不出是誰。8 月是夏季登山期，與文章主軸一致；山頂標柱可能已更換，但只當封面使用，不當現場辨識。cover-02 是 Yasu 2017 年 9 月 16 日拍的黑岳石室一帶紅葉，碎石步道、石室與雪溪都在畫面裡，但中景有幾位背對鏡頭的小人影，且主角是石室而非黑岳登頂，當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Kurodake」「Kuro-dake」「Kurodake ropeway」「Mount Kuro Daisetsuzan」（大量同名的山梨、富山黑岳與水晶岳結果已排除）。看過的北海道黑岳檔案：Summit Sign, Mount Kuro, Hokkaido - Aug 9, 2012.jpg（Kunitaka NIIDATE，CC BY-SA 2.0，Flickr 來源經 FlickreviewR 2 審核，選定）、Kurodake Ishimuro and coloured leaves.jpg（Yasu，CC BY-SA 3.0／GFDL，備選）、Trekking near Mt. Kurodake, Hokkaido.jpg 與 Snowfield on Mt. Kurodake, Hokkaido, Japan.jpg（Kingfiser，CC BY-SA 4.0，2021-08，畫面主體是背著大背包的登山客，人物太醒目）、Kurodake, Daisetsuzan Volcanic Group - Kurodake6052／6058／6063.jpg（lumoplank，CC0，2025-10，纜車沿線的紅葉森林與谷地，看不出登山道或山頂）、Kurodake6068.jpg（大雪山神社，與登山無關）、Kurodake Chairlift.jpg 與 Gondola of Daisetsuzan Sounkyo Kurodake Ropeway.jpg（Mukasora，2008，解析度 2400 與 1200 px，且吊椅與車廂照不如登山道切題）、Daisetsuzan Sounkyo Kurodake Ropeway Kurodake Station.jpg（車站建築）、Kurodake seen from the SW.jpg（948 px）、Mount Niseykauspe and Mount Kuro.jpg（1600x1064，1998，裁切後不足寬）、Mount Eboshi and Mount Kuro from Mount Aka.jpg（1600 px，黑岳在遠處很小）、KuroDake IMG 0569C.JPG（2000 px，遠景）、黒岳山頂 panoramio 兩張（解析度不足）。正文主角路線是黑岳纜車＋吊椅到黑岳，沒有寫銀泉台到赤岳，所以未另找赤岳。依指示不用已用過的旭岳與層雲峽照片。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Summit_Sign,_Mount_Kuro,_Hokkaido_-_Aug_9,_2012.jpg",
+          "creatorName": "Kunitaka NIIDATE",
+          "sourceTitle": "File:Summit Sign, Mount Kuro, Hokkaido - Aug 9, 2012.jpg",
+          "sourceDescription": "Summit Sign, Mount Kuro, Hokkaido, Japan（Flickr 來源，CC BY-SA 2.0，FlickreviewR 2 已審核）",
+          "takenAt": "2012-08-09",
+          "width": 4032,
+          "height": 3024,
+          "licenseName": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明是北海道黑岳的山頂標柱；標柱寫著「黒岳頂上」與「一九八四」，就是文章從七合目登上的黑岳山頂。",
+          "altDraft": "黑岳山頂的木製標柱，寫著黒岳頂上與標高一九八四，背後是夏天殘雪點點的大雪山群",
+          "captionDraft": "標高 1,984 公尺的黑岳山頂（2012 年 8 月）。",
+          "creditDraft": "照片：Kunitaka NIIDATE／Wikimedia Commons／CC BY-SA 2.0",
+          "commercialReview": {
+            "people": "none（中景步道上有一個極小、無法辨識的人影）",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape；山頂標柱是登山標示，不是商標",
+            "risk": "low",
+            "notes": "沒有可辨識人物、招牌或商標；不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kurodake_Ishimuro_and_coloured_leaves.jpg",
+          "creatorName": "Yasu",
+          "sourceTitle": "File:Kurodake Ishimuro and coloured leaves.jpg",
+          "sourceDescription": "Coloured leaves around the Kurodake Ishimuro hut on Mount Kuro in the Daisetsu Mountains, Hokkaido, Japan（CC BY-SA 3.0／GFDL 雙授權，選 CC BY-SA 3.0）",
+          "takenAt": "2017-09-16",
+          "width": 5472,
+          "height": 3648,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明是黑岳石室一帶的紅葉；畫面是黑岳山頂往石室下降的碎石步道，對應文章的住黑岳石室與往旭岳縱走。",
+          "altDraft": "秋天的黑岳石室一帶，紅葉與殘雪之間有一條步道通往石室",
+          "captionDraft": "黑岳石室一帶的紅葉（2017 年 9 月）。",
+          "creditDraft": "照片：Yasu／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "中景有幾位背對鏡頭的小人影，無法辨識",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape；遠處有黑岳石室建築",
+            "risk": "low",
+            "notes": "沒有招牌或商標；人物很小且背對鏡頭。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahidake-stay",
+  "articleTitle": "旭岳溫泉住宿，各旅館位置、接送與訂房管道",
+  "targetUrl": "/places/asahidake/stay/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-stay/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是住在旭岳溫泉：森林裡零星的溫泉地建築，背後就是旭岳，而不是介紹某一間旅館。",
+      "mustShow": ["旭岳溫泉一帶的整體情境，例如森林中的溫泉地、從溫泉地看旭岳"],
+      "mustNotShow": ["以單一旅館建築、浴池或招牌為主體", "旅館或店家名稱招牌", "可辨識的人物臉部", "看得清的車牌", "其他溫泉地冒充旭岳溫泉", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Asahidake%2C_Daisetsuzan_Volcanic_Group_-_Asahidake6029.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.5},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 lumoplank 2025 年 10 月 4 日從旭岳溫泉拍的旭岳：上方是旭岳山頂，中間是黃葉與針葉樹混生的森林，右側樹林間露出一棟白色建築的一角，下方是溫泉街的小停車場。整體看起來是「森林裡的溫泉地、抬頭就是旭岳」，符合住宿頁需要的情境；白色建築被樹擋住大半、沒有招牌，不是畫面主體，不會讓人認成某一間旅館。原圖 5330×2892，比 16:9 寬，裁切只會左右各切掉約 95 px，構圖幾乎不變。輸出 1600 px 寬時，停車場的車牌與下方兩個很小的行人都看不清。Remote views of Mount Asahi from Asahidake Onsen.jpg（Tzu-hsun, Hsu，2010，CC BY-SA 4.0）也是從旭岳溫泉看旭岳的殘雪景，但右下角有旅館「白雲荘」的招牌、左下有印 HITACHI 字樣的挖土機與木材堆，會帶出特定住宿與商標，商業風險不是 low，不列為候選。所以只保留一張候選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源分類 Asahidake Onsen 的全部檔案，以及關鍵字「Asahidake Onsen」「Asahidake hot spring」「旭岳温泉」「Asahidake Onsen forest」「Sugatami Asahidake Onsen」「Asahidake Daisetsuzan Volcanic Group lumoplank」。排除：Asahidake onsen.JPG 只有 1280 px 寬；Asahidake spa Yukomaso.JPG 是湧駒莊的浴室，會被認成特定旅館；Asahidake spa Higashikawa Hokkaido Japan.jpg（2006）是雪山遠景，看不出溫泉地；旭川電氣軌道巴士照片是在旭川市區拍的；Remote views of Mount Asahi from Asahidake Onsen.jpg 有旅館招牌與挖土機商標；lumoplank 同系列的 Asahidake6036、6039、6045、6047 是姿見池、纜車支柱與山坡，不是溫泉地情境，6036 也已用在其他頁；The way to Asahidake Ropeway on June 14th, 2019.jpg 與 140724 Asahi-dake Hokkaido Japan02s3.jpg 已用在其他頁，依指示不用。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材；沒有使用旅館官網照片。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahidake,_Daisetsuzan_Volcanic_Group_-_Asahidake6029.jpg",
+          "creatorName": "lumoplank",
+          "sourceTitle": "File:Asahidake, Daisetsuzan Volcanic Group - Asahidake6029.jpg",
+          "sourceDescription": "View of Asahidake from Asahidake Onsen.（Flickr 匯入，CC0，FlickreviewR 已核對；分類 Asahidake Onsen、Leaves in autumn in Hokkaido）",
+          "takenAt": "2025-10-04",
+          "width": 5330,
+          "height": 2892,
+          "licenseName": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "contextual",
+          "matchLimits": "2025 年 10 月初的紅葉景象，不代表冬天或其他季節；畫面右側的白色建築看不出是哪一間住宿，不代表文中任何一間旅館的外觀。",
+          "whyItFits": "檔案頁說明是從旭岳溫泉看旭岳，畫面是森林中的溫泉地、零星建築與停車場，背後就是旭岳，傳達住在旭岳溫泉的整體環境，沒有單一旅館當主體。",
+          "altDraft": "從旭岳溫泉看旭岳，前景是黃葉的白樺與針葉林，樹林間有建築與停車場",
+          "captionDraft": "從旭岳溫泉看旭岳（2025 年 10 月）。",
+          "creditDraft": "照片：lumoplank／Wikimedia Commons／CC0",
+          "commercialReview": {
+            "people": "下方停車場有兩個很小的行人，看不出臉",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀與溫泉地建築一角、停車場；建築沒有招牌",
+            "risk": "low",
+            "notes": "車輛在 1600 px 輸出時看不清車牌；白色建築大半被樹擋住、沒有名稱，不會讓人誤以為是某間旅館的實景或本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
