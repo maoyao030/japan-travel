@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "articleId": "wakkanai-stay",
-  "articleSha256": "0d5f5a7b4dcc30f606762bebb89a4dbf33748332db4200bd24cccf59352850b6",
+  "articleSha256": "81e5e0e471dab698a1c8b242c5557e0449191a1313f98bec53a7d68fe82b375d",
   "checker": "fact-check-agent（事實查核子代理，唯讀，非作者；2026-10-26 以 curl 讀旅館官網、ハートランドフェリー、北海道廳、總務省 PDF 與觀光協會網頁存檔，Trip.com／Agoda 用瀏覽器分頁讀）",
-  "checkedAt": "2026-10-26",
+  "checkedAt": "2026-10-27",
   "notes": "第 1 輪複查（2026-10-26）：對 revisions-round1.md 逐條與全文重新比對；新增利尻航線第一班與英文館名兩筆，改寫的句子重新查來源，刪掉的句子移除對應 claim。文章沒有 Trip.com／Agoda 分潤連結（資料來源只列一般網址），分潤連結檢查不適用。稚內觀光協會 north-hokkaido.com 2026-10-26 回 503，用 web.archive.org 存檔（みのり、casa 2026-05-19；民宿宗谷岬 2026-01-23）。",
   "claims": [
     {
@@ -368,12 +368,12 @@
     },
     {
       "claimId": "C41",
-      "articleExcerpt": "表格：ホテル美雪 訂房管道：官網、電話",
-      "sourceUrl": "http://www.hotelmiyuki.jp/",
-      "sourceTitle": "ホテル美雪",
-      "sourceQuote": "宿泊プランの検索／TEL：0162-22-5866",
+      "articleExcerpt": "表格：ホテル美雪 訂房管道：官網、電話、Trip.com、Agoda",
+      "sourceUrl": "https://tw.trip.com/hotels/detail/?hotelId=3065774",
+      "sourceTitle": "美雪飯店｜Trip.com 詳細頁；Hotel Miyuki｜Agoda",
+      "sourceQuote": "單人房，無煙（洋式客房，22平方米）… 只剩 5 間！ 訂房｜（Agoda）1 adult | Cancel for free before Jan 16, 2027 … Book | Pay later",
       "verdict": "verified",
-      "notes": "Trip.com 頁顯示「本飯店目前不接受預訂」、2027-01-20 列表標售罄；Agoda 有 Hotel Miyuki 頁，但 2026-11-11 與 2027-01-20 都沒有可訂房型（「4 room types have already sold out」），不寫成能在 Agoda 訂不算錯。"
+      "notes": "2026-10-27 上線後修正句，另一個唯讀子代理用瀏覽器打開詳細頁複查（2026-11-20、2027-01-20 各一晚 1 位大人）。官網有「宿泊プランの検索」、TEL：0162-22-5866。10-26 查核的「不接受預訂」「售罄」是查的日期與 Agoda 房型列表未載入造成。"
     },
     {
       "claimId": "C42",
@@ -638,12 +638,12 @@
     },
     {
       "claimId": "C71",
-      "articleExcerpt": "訂房用官網的方案搜尋或打電話，Trip.com上訂不到",
-      "sourceUrl": "https://tw.trip.com/hotels/wakkanai-hotel-detail-3065774/hotel-miyuki/",
-      "sourceTitle": "美雪飯店｜Trip.com",
-      "sourceQuote": "本飯店目前不接受預訂",
+      "articleExcerpt": "訂房用官網的方案搜尋或打電話，Trip.com與Agoda也訂得到",
+      "sourceUrl": "https://tw.trip.com/hotels/detail/?hotelId=3065774",
+      "sourceTitle": "美雪飯店｜Trip.com 詳細頁",
+      "sourceQuote": "只剩 5 間！ 訂房",
       "verdict": "verified",
-      "notes": "官網有「宿泊プラン検索」與 TEL：0162-22-5866；Trip.com 2027-01-20 列表的 Hotel Miyuki 標「售罄」。"
+      "notes": "2026-10-27 上線後修正句，另一個唯讀子代理用瀏覽器打開詳細頁複查（2026-11-20、2027-01-20 各一晚 1 位大人）。同 C41。"
     },
     {
       "claimId": "C72",
@@ -782,12 +782,12 @@
     },
     {
       "claimId": "C87",
-      "articleExcerpt": "想在宗谷岬過夜，可以住民宿宗谷岬或ペンション斗夢ソーヤ",
+      "articleExcerpt": "想在宗谷岬過夜，可以住民宿宗谷岬或ペンション斗夢ソーヤ。ペンション斗夢ソーヤ冬天休業，官網公告2027年4月下旬才恢復營業，休業期間也不回覆聯絡。",
       "sourceUrl": "https://primenet2010.biz/tomsoya/",
-      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
-      "sourceQuote": "宗谷岬すぐそばに位置する、日本最北端のペンションです。",
+      "sourceTitle": "ペンション斗夢ソーヤ 公式サイト",
+      "sourceQuote": "現在、当館は2027年4月下旬まで冬季休業をいただいております。…休業中にいただいたご連絡・お問い合わせへのご対応はできかねます",
       "verdict": "verified",
-      "notes": "第 1 輪 C87 已修，不寫家數。民宿宗谷岬見 2026-01-23 存檔（北海道稚内市宗谷岬4丁目10）。"
+      "notes": "2026-10-27 上線後修正句，另一個唯讀子代理用瀏覽器打開詳細頁複查（2026-11-20、2027-01-20 各一晚 1 位大人）。官網沒寫休業開始日，正文不寫開始日。兩家位置見 C88 等原查核。"
     },
     {
       "claimId": "C88",
@@ -859,34 +859,34 @@
       "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
       "sourceQuote": "お電話でのご予約・お問い合わせは 0162-76-2551 … ご予約",
       "verdict": "verified",
-      "notes": "Trip.com 搜尋「斗夢ソーヤ」只出現地標，結果是以它為中心的 50 處住宿，最近的是 11.4 公里外的 Pension Arumeria，沒有這家；Agoda 搜尋建議「Tom Soya」「Pension Tom Soya」沒有稚內的旅館。官網預約系統（jhpds.net）2026-10-26 研究時維修，本次只確認官網有「ご予約」入口。"
+      "notes": "2026-10-27 上線後修正句，另一個唯讀子代理用瀏覽器打開詳細頁複查（2026-11-20、2027-01-20 各一晚 1 位大人）。官網「ご予約」連到 jhpds.net（yadNo=316162）；Trip.com、Agoda 搜尋與城市頁都沒有。"
     },
     {
       "claimId": "C96",
-      "articleExcerpt": "冬天照常營業的旅館包括站前的Dormy Inn、サフィール、THE STAY、モシリパ、TRUNK，以及南稚內的グランド與ニューチコウ。在Trip.com查2027年1月20日入住一晚，這7家都有房",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=6297&checkin=2027-01-20&checkout=2027-01-21&adult=1&crn=1",
-      "sourceTitle": "稚內飯店推薦 - 最新稚內人氣住宿預訂 - Trip.com（2027-01-20 入住）",
-      "sourceQuote": "Dormy Inn Wakkanai Natural Hot Spring … Hotel Trunk Wakkanai … Guest House Moshiripa … Surfeel Hotel Wakkanai … Wakkanai Grand Hotel … The Stay Wakkanai … Hotel New Chiko …（各有房型與價格、「查看空房情況」）",
+      "articleExcerpt": "冬天也營業的旅館包括站前的Dormy Inn、サフィール、THE STAY、モシリパ、TRUNK，以及南稚內的グランド與ニューチコウ。グランド年底12月29日到1月4日全館休業。2026年10月27日在Agoda查2027年1月20日入住一晚，這7家都有房。同一天在Trip.com查，モシリパ顯示目前不接受預訂，其他6家有房。",
+      "sourceUrl": "https://www.agoda.com/guest-house-moshiripa/hotel/wakkanai-jp.html",
+      "sourceTitle": "Agoda 英文頁（7 家詳細頁）；Trip.com 詳細頁",
+      "sourceQuote": "（Agoda 1/20 Book 鈕）Dormy 12、サフィール 9、THE STAY 8、モシリパ 4、TRUNK 11、グランド 6、ニューチコウ 3｜（Trip.com モシリパ 1/20）本飯店目前不接受預訂",
       "verdict": "verified",
-      "notes": "2026-10-26 開 2027-01-20 一晚的列表，這 7 家都有房型與價格；Hotel Miyuki 標「售罄」。グランド的年末年始休業（12/29～1/4）不影響 1/20。"
+      "notes": "2026-10-27 上線後修正句，另一個唯讀子代理用瀏覽器打開詳細頁複查（2026-11-20、2027-01-20 各一晚 1 位大人）。第一版寫「Agoda台灣站」，實際是英文頁（/zh-tw/ 會導回），改成「Agoda」；「照常營業」與グランド年末年始休館（官網「１２月２９日～１月４日の間、全館休業」）牴觸，改成「也營業」並補休館一句。"
     },
     {
       "claimId": "C97",
-      "articleExcerpt": "這幾家在Agoda台灣站也有上架",
-      "sourceUrl": "https://www.agoda.com/zh-tw/city/wakkanai-jp.html",
-      "sourceTitle": "Wakkanai hotels｜Agoda（轉址到 agoda.com/city/wakkanai-jp.html）",
-      "sourceQuote": "Dormy Inn Wakkanai Natural Hot Spring / Surfeel Hotel Wakkanai / Guest House Moshiripa / Hotel Trunk Wakkanai / Wakkanai Grand Hotel",
+      "articleExcerpt": "兩個平台的評分算法不同，分數不能拿來互比。除了冬天休業的ペンション斗夢ソーヤ，其他幾家冬天要住，可以在官網或訂房網站選好日期，看那幾天能不能訂。",
+      "sourceUrl": "https://primenet2010.biz/tomsoya/",
+      "sourceTitle": "ペンション斗夢ソーヤ 公式サイト",
+      "sourceQuote": "2027年4月下旬まで冬季休業",
       "verdict": "verified",
-      "notes": "THE STAY 在城市頁評分卡；ニューチコウ另有 Hotel New Chikou 頁（https://www.agoda.com/new-chiko-hotel_2/hotel/wakkanai-jp.html）。"
+      "notes": "2026-10-27 上線後修正句，另一個唯讀子代理用瀏覽器打開詳細頁複查（2026-11-20、2027-01-20 各一晚 1 位大人）。原句「這幾家在Agoda台灣站也有上架」刪除（改由 C96 的 Agoda 查詢結果）。評分算法一句照原查核 F183。"
     },
     {
       "claimId": "C98",
-      "articleExcerpt": "ホテル美雪與ペンション斗夢ソーヤ要用官網或電話訂",
-      "sourceUrl": "http://www.hotelmiyuki.jp/",
-      "sourceTitle": "ホテル美雪",
-      "sourceQuote": "宿泊プランの検索／TEL：0162-22-5866",
+      "articleExcerpt": "ペンション斗夢ソーヤ在營業期間用官網的預約系統或電話訂",
+      "sourceUrl": "https://primenet2010.biz/tomsoya/",
+      "sourceTitle": "ペンション斗夢ソーヤ 公式サイト",
+      "sourceQuote": "ご予約（jhpds.net yadNo=316162）｜2027年4月下旬まで冬季休業",
       "verdict": "verified",
-      "notes": "美雪：Trip.com 不接受預訂、Agoda 頁兩個日期都沒有可訂房型；斗夢ソーヤ：Trip.com、Agoda 都沒有（見前面）。"
+      "notes": "2026-10-27 上線後修正句，另一個唯讀子代理用瀏覽器打開詳細頁複查（2026-11-20、2027-01-20 各一晚 1 位大人）。美雪從這句拿掉（C41）；加「在營業期間」避免和休業公告衝突。"
     },
     {
       "claimId": "C99",
