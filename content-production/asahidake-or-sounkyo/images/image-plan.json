@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahidake-or-sounkyo",
+  "articleTitle": "旭岳與層雲峽怎麼選、怎麼一起排，黑岳到旭岳縱走與兩地交通",
+  "targetUrl": "/places/asahidake/asahidake-or-sounkyo/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-or-sounkyo/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是旭岳與層雲峽（黑岳）兩側一起排，尤其是從黑岳那一側往旭岳走的大雪山表大雪縱走。",
+      "mustShow": ["大雪山表大雪一帶跨兩地的畫面，最好從黑岳一側望向旭岳，或看得到黑岳與旭岳之間的縱走路、御鉢平、北鎮岳、間宮岳、裾合平"],
+      "mustNotShow": ["可辨識的人物臉部", "已用在其他頁的照片（旭岳纜車路、Asahidake6036／6029、140724 Asahi-dake Japan02s3、黑岳山頂標柱、道北巴士、冰瀑祭、層雲峽峽谷與步道）", "其他山冒充旭岳或黑岳", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/%E9%BB%92%E5%B2%B3%E3%81%8B%E3%82%89%E6%97%AD%E5%B2%B3%E6%96%B9%E9%9D%A2.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.62},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Koda6029 2012 年 9 月 18 日早上在黑岳拍的西南方向：檔案頁寫「中央が旭岳、右端が北鎮岳」。前景是黑岳山頂一帶的碎石地與拉著白色樁繩的登山道，路一路往下穿過偃松與初秋轉紅的草地，通往遠方的御鉢平外輪山與旭岳，正好就是文章講的從黑岳那一側往旭岳走的縱走方向，同時代表層雲峽（黑岳）與旭岳兩地。原圖 3388x2541（4:3），上半部是大片藍天，裁 16:9 時焦點放在 y=0.62，切掉多數天空，保留山稜、旭岳、北鎮岳與前景登山道。登山道中段有一位穿紅衣的登山客，只是幾個像素大的背影，看不到臉，不可辨識。9 月中旬是紅葉剛開始的時期，與文章「黑岳山頂附近 9 月上旬開始變色」一致；拍攝年份較舊，但畫面是自然地形，不影響封面。cover-02 是 pakku 2010 年 8 月從北海岳拍的御鉢平與北鎮岳，完全沒有人，但畫面看不到旭岳，跨兩地的意思較弱，當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Ohachidaira」「Mamiyadake」「Hokuchindake」「Susoaidaira」「お鉢平」「間宮岳」「北鎮岳」「裾合平」「表大雪」「Mount Asahi Daisetsu Hokkaido」「Daisetsuzan national park hiking」，與分類 Category:Ohachidaira Caldera、Category:Mount Hokuchin、Category:Mount Kuro (Hokkaido)、Category:Views from Mount Kuro (Hokkaido)。看過的檔案：黒岳から旭岳方面.jpg（Koda6029，CC BY-SA 4.0，選定）、お鉢平と北鎮岳 - panoramio.jpg（pakku，CC BY 3.0，備選）、黒岳から北鎮岳・桂月岳方面.jpg（同作者同日，看不到旭岳）、Ohachidaira caldera 2006-07-13.jpg（2304 px）、Ohachidaira Caldera (6049035195).jpg（4912x1080 全景比例）、中岳から見るお鉢 - panoramio.jpg、お鉢平（A big crater） - panoramio.jpg、Daisetsuzan range seen looking west from Kurodake.jpg（2048 px，2008 年 10 月）與 Mt Daisetu banner.jpg（2048x293 橫幅）、旭岳と裾合平 - panoramio.jpg（1600x1200，剛好達最低寬度）、裾合平への道／裾合平の木道 - panoramio.jpg、表大雪（緑岳から黒岳） - panoramio.jpg（1600 px）、Mount Hokuchin 2010-09-23 - panoramio.jpg、Mount Ryōun & Mount Hokuchin (28068351943).jpg（看不到旭岳）、緑岳から旭岳・白雲岳・小泉岳.jpg（8192x1856 全景）、Asahidake 2015-09-16.jpg、Daisetsu-zan in summer.jpg、Kurodake Ishimuro and coloured leaves.jpg、Trekking near Mt. Kurodake, Hokkaido.jpg、Syced 的 August 2009 Daisetsuzan 縱走系列（CC0，但各張沒寫拍攝地點，無法確認畫面是哪座山）。依指示不用已用過的 9 張照片。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E9%BB%92%E5%B2%B3%E3%81%8B%E3%82%89%E6%97%AD%E5%B2%B3%E6%96%B9%E9%9D%A2.jpg",
+          "creatorName": "Koda6029",
+          "sourceTitle": "File:黒岳から旭岳方面.jpg",
+          "sourceDescription": "黒岳から南西を見る。中央が旭岳、右端が北鎮岳。（CC BY-SA 4.0，作者自行拍攝）",
+          "takenAt": "2012-09-18",
+          "width": 3388,
+          "height": 2541,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是從黑岳往西南看，中央是旭岳、右端是北鎮岳；前景是黑岳一帶拉著樁繩的登山道，一路通往旭岳，就是文章講的黑岳到旭岳縱走方向，一張圖同時代表層雲峽側與旭岳側。",
+          "altDraft": "從黑岳往西南望的大雪山，拉著白色樁繩的登山道穿過初秋的草地，遠方中央是旭岳",
+          "captionDraft": "從黑岳一帶望向旭岳（中央）與北鎮岳（右）（2012 年 9 月）。",
+          "creditDraft": "照片：Koda6029／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "登山道中段有一位穿紅衣的登山客，僅數像素大的背影，無法辨識",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape；登山道的樁繩",
+            "risk": "low",
+            "notes": "沒有可辨識人物、招牌或商標；不會讓人誤以為是本站實地拍攝。裁切後的圖要照 CC BY-SA 4.0 標示。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E3%81%8A%E9%89%A2%E5%B9%B3%E3%81%A8%E5%8C%97%E9%8E%AE%E5%B2%B3_-_panoramio.jpg",
+          "creatorName": "pakku",
+          "sourceTitle": "File:お鉢平と北鎮岳 - panoramio.jpg",
+          "sourceDescription": "お鉢平カルデラと北鎮岳(右)。北海岳から北西を撮影。（CC BY 3.0，Panoramio 審查通過）",
+          "takenAt": "2010-08-28",
+          "width": 2048,
+          "height": 1536,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是從北海岳看御鉢平火口與北鎮岳；御鉢平位在黑岳與旭岳之間，是縱走會繞過的地方。",
+          "altDraft": "夏天的御鉢平火口，白色的火口底後方是北鎮岳",
+          "captionDraft": "從北海岳看御鉢平與北鎮岳（2010 年 8 月）。",
+          "creditDraft": "照片：pakku／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

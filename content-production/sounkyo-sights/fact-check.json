@@ -1,0 +1,845 @@
+{
+  "schemaVersion": 1,
+  "articleId": "sounkyo-sights",
+  "articleSha256": "251dbd278d44b7abcd599097f67c1cb8d0c7cf3a38c3a9b80090cfceaf9abdd7",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，唯讀，非作者、非潤稿者；第 1 輪 2026-10-26～27、第 2 輪 2026-10-27 依 revisions-round1.md 重查改動句，以 curl 重開官方頁、PDF 下載到系統暫存資料夾用 PyMuPDF 讀取或轉圖片檢視；道北巴士 PDF 直連逾時改讀 Internet Archive 2026-10-08 存檔；奇跡のイルミネート官網需 JavaScript，用瀏覽器新分頁靜音讀取後關閉）",
+  "checkedAt": "2026-10-27",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "層雲峽是石狩川沿岸綿延約24公里的斷崖峽谷，柱狀節理的岩壁一路並列",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "石狩川沿いに延々２４kmにわたって続く断崖絶壁。",
+      "verdict": "verified",
+      "notes": "柱狀節理岩壁見大函頁「柱状節理の巨大な岩壁が屏風のように」（content=10）。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "谷底有大雪山系最大的溫泉街",
+      "sourceUrl": "https://sounkyo.net/view/",
+      "sourceTitle": "層雲峡の見どころ｜層雲峡観光協会",
+      "sourceQuote": "層雲峡には、大雪山系最大の温泉街があり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "2026年往大雪湖的季節巴士只跑7月1日到10月31日，一天一個來回，中途停大函入口。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線（2026.7.1改正）｜道北バス株式会社",
+      "sourceQuote": "※層雲峡～大雪湖（令和8年7月1日～10月31日の運行）｜層雲峡 発 ※12:50｜大函入口 発 ※13:15｜大雪湖 着 ※13:23",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）時刻表中途另有「滝見台」站，正文不提該站不算錯（表格仍列出）。dohokubus.com 直連逾時，讀 Internet Archive 2026-10-08 存檔。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "去瀑布就是開車或叫計程車，週末也有騎自行車去瀑布的導覽團。（H3「沒車怎麼去大函與瀑布？」與沒車段落「瀑布就叫計程車，或參加週末騎自行車的導覽團」同義）",
+      "sourceUrl": "https://sounkyo.net/enjoy/detail.html?content=78",
+      "sourceTitle": "【層雲峡】大雪山アドベンチャー｜層雲峡観光協会",
+      "sourceQuote": "週末は層雲峡からすぐ近くの大自然に遊びに行きましょう！温泉街のお隣にある「紅葉谷ハイキング」や「銀河流星の滝サイクリング」など",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）上輪 unsupported（瀧見台暗示為瀑布下車站）已解決：正文不再把巴士當成去瀑布的方法。開車：瀑布停車場 150 台免費（sounkyo.net content=7）；計程車：層雲峡観光ハイヤー（sounkyo.net/go/detail.html?content=62）。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "週末也有騎自行車去瀑布的導覽團。",
+      "sourceUrl": "https://sounkyo.net/enjoy/detail.html?content=78",
+      "sourceTitle": "【層雲峡】大雪山アドベンチャー｜層雲峡観光協会",
+      "sourceQuote": "週末は層雲峡からすぐ近くの大自然に遊びに行きましょう！温泉街のお隣にある「紅葉谷ハイキング」や「銀河流星の滝サイクリング」など",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "上午開到銀河瀑布與流星瀑布，在停車場就看得到兩道瀑布。體力還夠再爬上展望台雙瀑台，來回留1小時左右。",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/soubakudai.pdf",
+      "sourceTitle": "大雪山山情報 コース：双瀑台｜層雲峡ビジターセンター",
+      "sourceQuote": "滝ミンタラの建物から２５分程で双瀑台に到着です。",
+      "verdict": "verified",
+      "notes": "停車場近看見 sounkyo.net content=7「駐車場から間近に見る」；單程約25分×2＋停留，來回約1小時是合理推算。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "接著往北見方向再開一小段到大函看岩壁，中午回到溫泉街。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=10",
+      "sourceTitle": "【層雲峡】大函｜層雲峡観光協会",
+      "sourceQuote": "層雲峡温泉より北見方面へ約６Km、新大函トンネルを過ぎるとすぐ左手に大函への入口があります。",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）上輪 incorrect 已修正。瀑布離溫泉街約 3 公里（sounkyovc.net/blog/90389「温泉街から3㎞離れたところにある銀河・流星の滝」），大函約 6 公里，從瀑布再往前約 3 公里，「一小段」正確。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "從溫泉街走進紅葉谷、到紅葉の滝再走回來大約1個半小時",
+      "sourceUrl": "https://sounkyovc.net/info",
+      "sourceTitle": "層雲峡情報｜層雲峡ビジターセンター",
+      "sourceQuote": "層雲峡温泉街から紅葉谷入口まで徒歩にして約15分｜距離にして片道約700m、所要時間は往復1時間程度です。",
+      "verdict": "verified",
+      "notes": "15分×2＋往復1時間＝約1小時半，推算正確。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "步道開放期間是6月到11月上旬。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=8",
+      "sourceTitle": "【層雲峡】紅葉谷の散策道｜層雲峡観光協会",
+      "sourceQuote": "期間 6月～11月上旬",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）已拿掉「只」，與觀光協會期間欄一致，也不和遊客中心「冬季はスノーシューが必要」的說法衝突。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "遊客中心開到17:00，散步前後都排得進去，只是11月到隔年5月逢週一休館。",
+      "sourceUrl": "https://sounkyovc.net/",
+      "sourceTitle": "層雲峡ビジターセンター",
+      "sourceQuote": "開館時間 9時～17時｜休館日 6月～10月:無休 11月～5月:毎月曜日（祝日の場合は翌日）",
+      "verdict": "verified",
+      "notes": "官網首頁、施設案內頁、觀光協會頁三處一致。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "晚上去黒岳の湯泡湯，5月到10月開到22:00，最晚21:30入場。",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=25",
+      "sourceTitle": "【層雲峡】黒岳の湯（日帰り入浴のみ）｜層雲峡観光協会",
+      "sourceQuote": "5月1日～10月31日 10時～22時00分 （最終受付は21時30分まで)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "沒有車，往大雪湖的季節巴士一天只有中午一班，而且只跑7月到10月。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線（2026.7.1改正）｜道北バス株式会社",
+      "sourceQuote": "※層雲峡～大雪湖（令和8年7月1日～10月31日の運行）｜※12:50",
+      "verdict": "verified",
+      "notes": "大雪湖方向的欄位只有一欄（12:50 發）。"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "上午走紅葉谷、逛遊客中心，12:50搭往大雪湖的巴士到大函入口下車，再搭13:43的回程車在14:00回到溫泉街。瀑布就叫計程車，或參加週末騎自行車的導覽團。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線（2026.7.1改正）｜道北バス株式会社",
+      "sourceQuote": "層雲峡 発 ※12:50｜大函入口 発 ※13:15｜大函入口 発 ※13:43｜層雲峡 着 ※14:00",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）時刻正確；遊客中心 9:00 開館，上午行程可行；瀑布部分見 C4。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "黑岳纜車的山麓站在巴士總站走路約5分鐘的地方。",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
+      "sourceTitle": "施設案内｜大雪山層雲峡・黒岳ロープウェイ（りんゆう観光）",
+      "sourceQuote": "JR石北線上川駅より道北バス「層雲峡・上川線」乗車約30分終点「層雲峡」下車、徒歩5分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "離開層雲峽往旭川的路上會經過上川町，開車回程可以順路停大雪森のガーデン或大雪展望台。",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=102",
+      "sourceTitle": "【上川駅周辺】KAMIKAWA HOTEL｜層雲峡観光協会",
+      "sourceQuote": "層雲峡温泉は車で30分、大雪森のガーデンは車で15分です。",
+      "verdict": "verified",
+      "notes": "大雪展望台在「上川駅周辺」（sounkyo.net content=15 標題）；上川位於旭川—層雲峽的國道39號沿線（觀光協會交通頁「上川 - (国道39号)- 層雲峡 25Km」）。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "搭巴士來，在終點站「層雲峡」下車，遊客中心、黑岳纜車與紅葉谷入口都走得到。",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
+      "sourceTitle": "施設案内｜大雪山層雲峡・黒岳ロープウェイ（りんゆう観光）",
+      "sourceQuote": "終点「層雲峡」下車、徒歩5分",
+      "verdict": "verified",
+      "notes": "遊客中心在纜車右隔壁（sounkyovc.net/access「黒岳ロープウェイさんの右隣です。」）；紅葉谷入口從溫泉街走約15分（sounkyovc.net/info）。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "總站裡有觀光服務處（觀光案內所），10:30到17:00開放，廁所免費，路況或交通有疑問可以進去問。",
+      "sourceUrl": "https://www.daisetsuzantours.com/service",
+      "sourceTitle": "サービス｜大雪山ツアーズ",
+      "sourceQuote": "層雲峡インフォメーションセンター 層雲峡バスターミナル内にある観光案内所です。…トイレも無料でご利用いただけます。｜営業時間：10：30～17：00（年末・年始休業日あり）",
+      "verdict": "verified",
+      "notes": "年末年始有休業日，正文沒寫，屬可接受的省略。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "層雲峽遊客中心由環境省設立",
+      "sourceUrl": "https://www.env.go.jp/saigai/novel_coronavirus_2020/temporary_closure_of_national_parks_and_other_facilities_210615.pdf",
+      "sourceTitle": "緊急事態宣言の発令に伴う国立公園等の環境省直轄施設の臨時閉館について（環境省）",
+      "sourceQuote": "下記の環境省直轄施設について当面の間、閉館すること…｜層雲峡ビジターセンター",
+      "verdict": "verified",
+      "notes": "環境省 2021-06 文件把層雲峽遊客中心列為環境省直轄施設；遊客中心官網本身沒寫設置者。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "就在黑岳纜車站右邊，從巴士總站走過去約5分鐘。",
+      "sourceUrl": "https://sounkyovc.net/access",
+      "sourceTitle": "アクセス｜層雲峡ビジターセンター",
+      "sourceQuote": "黒岳ロープウェイさんの右隣です。",
+      "verdict": "verified",
+      "notes": "走路約5分以纜車經營者的「終点「層雲峡」下車、徒歩5分」推算（C14）。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "入館免費。",
+      "sourceUrl": "https://sounkyo.net/enjoy/detail.html?content=46",
+      "sourceTitle": "【層雲峡】層雲峡ビジターセンター｜層雲峡観光協会",
+      "sourceQuote": "料金 無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "館內輪播大雪山四季與「層雲峽峽谷的祕密」的高畫質影片",
+      "sourceUrl": "https://sounkyovc.net/aboutus",
+      "sourceTitle": "施設案内｜層雲峡ビジターセンター",
+      "sourceQuote": "ハイビジョン映像 大雪山の四季「春」「夏」「秋」「冬」と「層雲峡峡谷の秘密」がご覧になれます。",
+      "verdict": "verified",
+      "notes": "「輪播」是措辭，原文只說可以觀看。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "地形模型重現7月上旬還留著雪溪的大雪山。",
+      "sourceUrl": "https://sounkyovc.net/aboutus",
+      "sourceTitle": "施設案内｜層雲峡ビジターセンター",
+      "sourceQuote": "地形ジオラマ 7月上旬の雪渓の残る大雪山を地形模型で表現しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "大窗前的休息區看得到整片峽谷。",
+      "sourceUrl": "https://sounkyovc.net/aboutus",
+      "sourceTitle": "施設案内｜層雲峡ビジターセンター",
+      "sourceQuote": "休憩コーナー …大きな窓からは層雲峡峡谷が展望できます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "天氣差沒辦法出去走，也可以戴VR眼鏡看「層雲峡VR360」，有13種可以選。",
+      "sourceUrl": "https://sounkyovc.net/aboutus",
+      "sourceTitle": "施設案内｜層雲峡ビジターセンター",
+      "sourceQuote": "VRゴーグルと非接触型モニターで…「層雲峡VR360」が人気です。…充実の13コンテンツを用意しています。｜悪天候で野外でのアクティビティーができなくても、手軽に楽しめる疑似体験",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "展示說明是日文，館內工作人員可以免費借多語言解說導覽，裡面有繁體中文。",
+      "sourceUrl": "https://sounkyovc.net/aboutus",
+      "sourceTitle": "施設案内｜層雲峡ビジターセンター",
+      "sourceQuote": "館内の展示解説を多言語でご覧頂ける展示ガイドを無料で貸し出ししています。ご利用の際は事務所の係員までお申し付け下さい。｜対応言語:英語・中国語簡体字・中国語繁体字・韓国語・タイ語",
+      "verdict": "verified",
+      "notes": "「展示說明是日文」原文沒有直接寫，是從另備多語展示導覽推論，可接受。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "要爬山或走步道之前，也能在這裡請教登山與戶外活動的建議，館內還有大雪山最新的自然狀況。",
+      "sourceUrl": "https://sounkyo.net/enjoy/detail.html?content=46",
+      "sourceTitle": "【層雲峡】層雲峡ビジターセンター｜層雲峡観光協会",
+      "sourceQuote": "自然学習や自然体験のアドバイスや情報提供｜館内では、リアルタイムの自然、見どころの情報や…",
+      "verdict": "verified",
+      "notes": "登山建議另見遊客中心施設案內「登山ガイド…リアルタイムの自然情報と見どころ情報を確認して」。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "表格：開館 9:00～17:00；休館 6～10月無休；11～5月每週一（遇假日改隔天）、12/31～1/5；費用 免費；怎麼去 巴士終點「層雲峡」走路約5分鐘",
+      "sourceUrl": "https://sounkyovc.net/",
+      "sourceTitle": "層雲峡ビジターセンター",
+      "sourceQuote": "開館時間 9時～17時｜休館日 6月～10月:無休 11月～5月:毎月曜日（祝日の場合は翌日） 年末年始:12月31日〜1月5日",
+      "verdict": "verified",
+      "notes": "費用見 sounkyo.net content=46「料金 無料」；怎麼去見 C19。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "紅葉谷散策道從溫泉街旁沿著溪谷走進山裡，單程約700公尺。",
+      "sourceUrl": "https://sounkyovc.net/info",
+      "sourceTitle": "層雲峡情報｜層雲峡ビジターセンター",
+      "sourceQuote": "散策路は、沢沿いを通る山の中のコースで、距離にして片道約700m",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "走到底是紅葉の滝，柱狀節理與瀑布就在同一個畫面裡。這種景色本來要到小函才看得到",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=8",
+      "sourceTitle": "【層雲峡】紅葉谷の散策道｜層雲峡観光協会",
+      "sourceQuote": "片道約30分の散策で「紅葉の滝」に到着します。今では見ることが出来なくなった「小函」の様な柱状節理と滝が同時に見られる場所です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "但小函的步道有落石危險，現在封閉不能走。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=10",
+      "sourceTitle": "【層雲峡】大函｜層雲峡観光協会",
+      "sourceQuote": "※「小函遊歩道」は落石の危険があるため通行禁止となっています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "入口離溫泉街走路約15分鐘。從黑岳纜車站前沿著往ホテル大雪、層雲峡朝陽亭兩家旅館的坡道往上，過了九十九橋就看得到入口看板。",
+      "sourceUrl": "https://sounkyovc.net/info",
+      "sourceTitle": "層雲峡情報｜層雲峡ビジターセンター",
+      "sourceQuote": "層雲峡温泉街から紅葉谷入口まで徒歩にして約15分、黒岳ロープウェイ駅舎前からホテル大雪・層雲峡朝陽亭に向かう坂道を上がり、九十九橋を渡ると看板が見えてきます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "從入口停車場出發，經過赤石川岔路、オンコ岩到紅葉の滝，每段約10分鐘，再原路走回來。",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/momiji_valley_map.pdf",
+      "sourceTitle": "紅葉谷散策マップ｜層雲峡ビジターセンター",
+      "sourceQuote": "①紅葉谷駐車場→（10 分）②赤石川分岐→（10 分）③オンコ岩→（10 分）④紅葉滝 ＊帰路は往路を辿る",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "步道有些上下坡，新手也走得了，夏天穿運動鞋、帶簡單的健行裝備就夠。",
+      "sourceUrl": "https://sounkyovc.net/info",
+      "sourceTitle": "層雲峡情報｜層雲峡ビジターセンター",
+      "sourceQuote": "若干のアップダウンはありますが、初心者向けの散策路｜夏季~軽ハイキング装備で十分です。但し、靴は最低でも運動靴が必要です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "紅葉谷一帶有棕熊，走的時候要帶著鈴鐺。",
+      "sourceUrl": "https://sounkyovc.net/info",
+      "sourceTitle": "層雲峡情報｜層雲峡ビジターセンター",
+      "sourceQuote": "ヒグマの生息域です。鈴などの鳴り物をご用意下さい。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "天氣差、路面結冰或有雪崩危險的日子別進步道，沿路也請待在繩索內側。",
+      "sourceUrl": "https://sounkyovc.net/info",
+      "sourceTitle": "層雲峡情報｜層雲峡ビジターセンター",
+      "sourceQuote": "悪天候時や路面凍結、雪崩の発生危険がある場合は入らないで下さい。｜コース外には立ち入らないで下さい。(ロープ内を歩いて下さい)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "入口停車位不多，大型、中型車也不能停。",
+      "sourceUrl": "https://sounkyovc.net/info",
+      "sourceTitle": "層雲峡情報｜層雲峡ビジターセンター",
+      "sourceQuote": "駐車スペースは2ヶ所あり、合計15台ほどの駐車が可能です。尚、大型・中型車は駐車できません。",
+      "verdict": "verified",
+      "notes": "觀光協會寫 5 台、遊客中心寫約 15 台，兩者都屬「不多」，正文不寫數字可接受。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "停不下就改停層雲峽立體停車場，附近都是旅館與住宅，別停在路邊。",
+      "sourceUrl": "https://sounkyovc.net/info",
+      "sourceTitle": "層雲峡情報｜層雲峡ビジターセンター",
+      "sourceQuote": "近隣に、ホテルや住宅がありますので、路上駐車はご遠慮下さい。｜紅葉谷入口に駐車できない場合は、層雲峡立体駐車場をご利用下さい。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "峽谷裡約七成是岳樺的黃葉，楓樹的紅混在裡面特別顯眼，往年10月上旬到中旬最美。",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/momiji_valley_guide.pdf",
+      "sourceTitle": "紅葉谷散策ガイド｜層雲峡ビジターセンター",
+      "sourceQuote": "峡谷の色合いは、７割ほどがダケカンバ類の黄葉で占められている事からカエデ類の深みのある紅葉は特に目立ち、見頃は例年１０月上旬～中旬頃。",
+      "verdict": "verified",
+      "notes": "原文是「紅葉谷入口」一節的說明。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "入夜後另有收費點燈。",
+      "sourceUrl": "https://sounkyo-illuminate.com/",
+      "sourceTitle": "【公式】奇跡のイルミネート｜層雲峡観光協会",
+      "sourceQuote": "奇跡のイルミネート 9th 大雪国立公園・層雲峡温泉紅葉谷 9/13 - 10/12 18:00〜21:00 （最終入場 20:30） 【紅葉谷保全協力金】 1,000 円",
+      "verdict": "verified",
+      "notes": "需 JavaScript，瀏覽器讀取頁面可見文字。2026 年已於 10/12 結束；正文不寫日期，連到祭典頁。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "表格：開放 6月～11月上旬；距離 入口到紅葉の滝單程約700公尺，來回約1小時；怎麼去 溫泉街走路約15分鐘到入口",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=8",
+      "sourceTitle": "【層雲峡】紅葉谷の散策道｜層雲峡観光協会",
+      "sourceQuote": "期間 6月～11月上旬",
+      "verdict": "verified",
+      "notes": "距離與時間見 sounkyovc.net/info「片道約700m、所要時間は往復1時間程度」；15分見 C31。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "這裡只泡湯不住宿，有兩個大浴場、3樓的露天浴池與三溫暖。",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=25",
+      "sourceTitle": "【層雲峡】黒岳の湯（日帰り入浴のみ）｜層雲峡観光協会",
+      "sourceQuote": "２つの大浴場と３階露天風呂に、サウナ、水風呂等を備えた｜※宿泊施設ではありませんのでご注意ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "大人800日圓，兒童400日圓。",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=25",
+      "sourceTitle": "【層雲峡】黒岳の湯（日帰り入浴のみ）｜層雲峡観光協会",
+      "sourceQuote": "大人 ：800円 子ども：400円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "營業時間跟著季節換。全年無休，只是遇到設施維護會休館。",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=25",
+      "sourceTitle": "【層雲峡】黒岳の湯（日帰り入浴のみ）｜層雲峡観光協会",
+      "sourceQuote": "定休日 無休（施設メンテナンスのため休館日あり）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "表格：5/1～10/31 10:00～22:00 最後入場21:30；11/1～4/30 11:00～21:30 最後入場21:00；12/31～1/3 11:00～18:00 最後入場17:30",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=25",
+      "sourceTitle": "【層雲峡】黒岳の湯（日帰り入浴のみ）｜層雲峡観光協会",
+      "sourceQuote": "5月1日～10月31日 10時～22時00分 （最終受付は21時30分まで) 11月1日～4月30日 11時～21時30分 (最終受付は21時まで)｜12月31日～1月3日 11時～18時まで （受付17時30分まで）",
+      "verdict": "verified",
+      "notes": "九格全部一致。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "層雲峽寫真博物館（層雲峡・大雪山写真ミュージアム）是一座攝影博物館，蓋在以前層雲峽小學的校地上，展出山岳攝影家市根井孝悅拍的大雪山。",
+      "sourceUrl": "http://museum.sounkyo-daisetsu.jp/",
+      "sourceTitle": "層雲峡・大雪山写真ミュージアム 市根井孝悦の世界",
+      "sourceQuote": "北海道上川郡上川町字層雲峡（旧層雲峡小学校跡）｜神々の遊ぶ庭「大雪山系」の春夏秋冬の表情。日本山岳写真界を代表する市根井孝悦が",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "2026年5月1日到10月31日開館，時間是9:00到17:00，一般600日圓，中學生以下免費。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=6",
+      "sourceTitle": "【層雲峡】層雲峡写真ミュージアム｜層雲峡観光協会",
+      "sourceQuote": "期間 5月1日（金）～10月31日（土） 午前9時～午後5時｜料金 一般600円・中学生以下無料",
+      "verdict": "verified",
+      "notes": "5/1（金）、10/31（土）的星期與 2026 年相符；開館日另有館方部落格 2025-10-27「来年度は令和８年５月１日より開館致します」。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "休館日出發前可以到巴士總站的觀光服務處確認。",
+      "sourceUrl": "https://www.daisetsuzantours.com/service",
+      "sourceTitle": "サービス｜大雪山ツアーズ",
+      "sourceQuote": "層雲峡インフォメーションセンター 層雲峡バスターミナル内にある観光案内所です。層雲峡周辺や層雲峡温泉の情報など気軽にお問い合わせください。",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）改成可以做的事，沒有新的事實主張；案內所在巴士總站內、可詢問層雲峽周邊資訊，有官方依據。原本「官網寫每週二休館」已刪。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "銀河瀑布與流星瀑布分別從絕壁不動岩的左右兩側落下，兩道都列入日本瀑布百選。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "２本の滝が絶壁・不動岩の左右を流れ落ちる姿｜日本の滝百選にも入っている名瀑です",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "銀河瀑布落差120公尺，細白得像絲線一樣垂下來，別名女瀑。流星瀑布落差90公尺，是一道粗壯有力的水流，別名男瀑。",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/soubakudai.pdf",
+      "sourceTitle": "大雪山山情報 コース：双瀑台｜層雲峡ビジターセンター",
+      "sourceQuote": "銀河ノ滝 １２０ｍ｜流星ノ滝 ９０ｍ",
+      "verdict": "verified",
+      "notes": "形容與別名見 sounkyo.net content=7「細く繊細な白糸のように優美な姿で流れ落ちる「銀河の滝」、太い１本の滝となって力強く流れ落ちる「流星の滝」｜別名女滝・男滝」。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "兩道瀑布在停車場就能近看，下車拍幾張照、看一看，幾分鐘就夠了。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "日本の滝百選にも入っている名瀑を、 駐車場から間近に見る迫力ある姿は圧巻です。",
+      "verdict": "verified",
+      "notes": "「幾分鐘就夠」是編輯判斷。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "這裡全年開放也不收費，停車場有150個免費車位。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "期間 通年｜料金 無料｜駐車場 150台（無料）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "步道從瀑布前的建物「滝ミンタラ」起步，一開始就是連續的陡階梯，約10分鐘到第一展望台，再10分鐘到有長椅的地方，最後5分鐘抵達。",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/soubakudai.pdf",
+      "sourceTitle": "大雪山山情報 コース：双瀑台｜層雲峡ビジターセンター",
+      "sourceQuote": "滝ミンタラの建物から２５分程で双瀑台に到着です。｜①：急な階段が続きます｜②：約１０分で第一展望台｜③：②から約１０分でベンチがあります｜④：③から約５分で双瀑台に到着です。",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）原文「滝ミンタラの建物から」，加「建物」與原文一致。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "單程約20到25分鐘，加上在展望台待一下，來回抓1小時左右。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "滝を背に２０分ほど斜面を登ると、「双瀑台」の展望台へ。",
+      "verdict": "verified",
+      "notes": "遊客中心 PDF 寫 25 分，兩處合寫 20～25 分正確。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "雙瀑台上面很窄，站的時候要小心。路上也可能遇到野生動物，熊鈴一樣要帶。",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/soubakudai.pdf",
+      "sourceTitle": "大雪山山情報 コース：双瀑台｜層雲峡ビジターセンター",
+      "sourceQuote": "狭い場所になりますので、十分注意してください。｜野生動物との急な接触を避けるため、鳴り物を持参してください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "瀑布一帶秋天也會轉紅。以2024年為例，遊客中心10月1日公告這裡的紅葉正好看。",
+      "sourceUrl": "https://sounkyovc.net/blog/90389",
+      "sourceTitle": "銀河・流星の滝｜層雲峡ビジターセンター（2024年10月1日）",
+      "sourceQuote": "温泉街から3㎞離れたところにある銀河・流星の滝。…今、こちらも紅葉が見頃です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "表格：日文名 銀河の滝・流星の滝、展望台は双瀑台；開放 全年、免費；停車 150台、免費；雙瀑台 單程約20～25分鐘，開頭是陡階梯",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "【層雲峡】銀河・流星の滝｜「双瀑台」の展望台へ｜期間 通年｜料金 無料｜駐車場 150台（無料）",
+      "verdict": "verified",
+      "notes": "陡階梯見雙瀑台 PDF「①：急な階段が続きます」。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "從溫泉街往北見方向約6公里，一穿過新大函隧道，左手邊就是大函的入口。巨大的柱狀節理岩壁在這裡像屏風一樣排開。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=10",
+      "sourceTitle": "【層雲峡】大函｜層雲峡観光協会",
+      "sourceQuote": "層雲峡温泉より北見方面へ約６Km、新大函トンネルを過ぎるとすぐ左手に大函への入口があります。柱状節理の巨大な岩壁が屏風のように規格正しく並ぶ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "大函全年開放、免費，停車場有50個車位。旁邊的小函步道目前封閉",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=10",
+      "sourceTitle": "【層雲峡】大函｜層雲峡観光協会",
+      "sourceQuote": "期間 通年｜料金 無料｜駐車場 50台｜※「小函遊歩道」は落石の危険があるため通行禁止となっています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "再往上游就是大雪水壩，位在石狩川本流最上游，1975年9月完工。水庫的湖區可以釣魚。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=13",
+      "sourceTitle": "【大雪山】大雪ダム｜層雲峡観光協会",
+      "sourceQuote": "石狩川本流最上部の大雪ダムは、昭和50年9月に完成し｜澄んだ水には、アメマスなどの魚が泳いでおり…のんびりと釣りを楽しむこともできます。",
+      "verdict": "verified",
+      "notes": "昭和50年＝1975年。"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "停車可以用水壩管理支所的5個車位，或大雪レイクサイド的40個車位。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=13",
+      "sourceTitle": "【大雪山】大雪ダム｜層雲峡観光協会",
+      "sourceQuote": "駐車場 大雪ダム管理支所5台 大雪レイクサイド40台",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "季節巴士的終點就是大雪湖。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線（2026.7.1改正）｜道北バス株式会社",
+      "sourceQuote": "大雪湖 着 ※13:23",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "表格：日文名 大函；位置 溫泉街往北見方向約6公里，新大函隧道過後左手邊；開放 全年、免費；停車 50台",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=10",
+      "sourceTitle": "【層雲峡】大函｜層雲峡観光協会",
+      "sourceQuote": "【層雲峡】大函｜層雲峡温泉より北見方面へ約６Km、新大函トンネルを過ぎるとすぐ左手に大函への入口があります。｜期間 通年｜料金 無料｜駐車場 50台",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "大函可以搭7月到10月每天一班的道北巴士，瀑布就叫計程車或跟導覽團。巴士在7月1日到10月31日往返大雪湖，中途停大函入口，2026年的時刻如下。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線（2026.7.1改正）｜道北バス株式会社",
+      "sourceQuote": "※層雲峡～大雪湖（令和8年7月1日～10月31日の運行）｜大函入口 発 ※13:15｜大函入口 発 ※13:43",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）瀑布交通見 C4、C70。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "去程表：層雲峡 發車 12:50；滝見台 13:09；大函入口 13:15；大雪湖 抵達 13:23",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線（2026.7.1改正）｜道北バス株式会社",
+      "sourceQuote": "層雲峡 発 ※12:50｜滝見台 発 ※13:09｜大函入口 発 ※13:15｜大雪湖 着 ※13:23",
+      "verdict": "verified",
+      "notes": "四格與站名日文一致。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "回程表：大雪湖 發車 13:38；大函入口 13:43；滝見台 13:49；層雲峡 抵達 14:00",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線（2026.7.1改正）｜道北バス株式会社",
+      "sourceQuote": "大雪湖 発 ※13:38｜大函入口 発 ※13:43｜滝見台 発 ※13:49｜層雲峡 着 ※14:00",
+      "verdict": "verified",
+      "notes": "四格與站名日文一致。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "去程、回程都只有這一班。13:15在大函入口下車，回程搭13:43那班，14:00回到溫泉街。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線（2026.7.1改正）｜道北バス株式会社",
+      "sourceQuote": "大函入口 発 ※13:15｜大函入口 発 ※13:43｜層雲峡 着 ※14:00",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）時刻表兩個方向的※（大雪湖）欄各只有一欄；大函入口停留 28 分，時刻原值。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "單程車資到大雪湖450日圓。",
+      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "層雲峡・上川線（2026.7.1改正）｜道北バス株式会社",
+      "sourceQuote": "◎層雲峡～大雪湖 片道料金 ¥450",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）瀧見台 220 日圓已刪；時刻表沒有「層雲峡～大函入口」車資，正文也沒寫。"
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "要去瀑布、在巴士沒開的月份去大函，或想一趟多停幾個地方，可以找溫泉街的計程車行層雲峡観光ハイヤー，機場和車站也能接送。",
+      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
+      "sourceTitle": "アクセス・タクシー｜層雲峡観光協会",
+      "sourceQuote": "層雲峡の観光はもとより、道内観光もしております。空港や駅へのお迎えにも伺いますので、お気軽にお問い合わせ下さい。｜住所 上川町層雲峡温泉",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）公司名見上川町交通頁「層雲峡観光ハイヤー 電話番号：01658-5-3221」；觀光協會寫「層雲峡の観光はもとより」，觀光用途有依據。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "叫車要打電話，不會講日文，可以到巴士總站裡的觀光服務處問。",
+      "sourceUrl": "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo00000004ba.html",
+      "sourceTitle": "層雲峡温泉街 交通機関｜上川町",
+      "sourceQuote": "層雲峡観光ハイヤー 電話番号：01658-5-3221",
+      "verdict": "verified",
+      "notes": "官方只列電話；案內所在巴士總站內見 daisetsuzantours.com/service。"
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "上川町是層雲峽與旭川之間的轉乘點，從JR上川站轉搭道北巴士就能進溫泉街，開車過去約30分鐘。",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
+      "sourceTitle": "施設案内｜大雪山層雲峡・黒岳ロープウェイ（りんゆう観光）",
+      "sourceQuote": "JR石北線上川駅より道北バス「層雲峡・上川線」乗車約30分終点「層雲峡」下車",
+      "verdict": "verified",
+      "notes": "開車約30分見 sounkyo.net/stay/detail.html?content=102「層雲峡温泉は車で30分」。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "站附近有大雪展望台，開車約10分鐘有大雪かみかわヌクモ，約15分鐘有大雪森のガーデン",
+      "sourceUrl": "https://nukumo.net/",
+      "sourceTitle": "大雪かみかわヌクモ",
+      "sourceQuote": "JR 上川駅 車10 分",
+      "verdict": "verified",
+      "notes": "大雪展望台標「【上川駅周辺】」（sounkyo.net content=15）；森のガーデン「車で15分」（content=102，上川站旁旅館）。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "大雪森のガーデン在上川町菊水的大雪高原旭ヶ丘。園區分成三區，色彩繽紛的「森の花園」、種著樹木與山野草的「森の迎賓館」，再往裡走是「遊びの森」。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=71",
+      "sourceTitle": "【旭ヶ丘】大雪 森のガーデン｜層雲峡観光協会",
+      "sourceQuote": "大雪高原旭丘に、色彩豊かな「森の花園」と樹木や山野草に癒される「森の迎賓館」とさらにその奥に緑あふれる「遊びの森」 ３つのエリアで構成された庭が広がります。｜住所 上川町字菊水841番地8",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "園內有三國清三與堀川秀樹兩位主廚合作的花園餐廳FRATELLO DI MIKUNI",
+      "sourceUrl": "https://sounkyo.net/eat/detail.html?content=30",
+      "sourceTitle": "【旭ヶ丘】FRATELLO DI MIKUNI｜層雲峡観光協会",
+      "sourceQuote": "FRATELLO DI MIKUNIは、三國清三シェフと堀川秀樹シェフのコラボレーションによる地元食材を楽しむ「ガーデンレストラン＆ヴィラ」です。｜住所 北海道上川郡上川町 大雪高原旭ヶ丘",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "也有拿上川大雪酒造的酒粕做輕食的綠丘茶房。",
+      "sourceUrl": "https://sounkyo.net/eat/",
+      "sourceTitle": "食べる｜層雲峡観光協会",
+      "sourceQuote": "【旭ヶ丘】緑丘茶房 上川大雪酒造緑丘蔵の酒粕を使った軽食メニューや上川町産ミルクのジェラートなどが揃っています。",
+      "verdict": "verified",
+      "notes": "森のガーデン官網存檔的選單也列「緑丘茶房」。"
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "2026年開園的頭一段，4月25日到5月15日免費入園，不過只開放森的區域，2025年同一段期間開的是森の花園區。",
+      "sourceUrl": "https://web.archive.org/web/20260910145451id_/https://www.daisetsu-asahigaoka.jp/?feed=rss2&post_type=news",
+      "sourceTitle": "大雪 森のガーデン お知らせ（Internet Archive 2026-09-10 存檔）",
+      "sourceQuote": "※無料期間:4⽉25⽇(⼟)〜5⽉15⽇(⾦) （森のエリアのみ営業）",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）2025 年見官網存檔 new_garden_guide.html「※無料期間:4⽉26⽇（⼟）〜5⽉16⽇（⾦）（森の花園エリアのみ営業）」與觀光協會 content=71。「同一段期間」指 2025 年的免費期間（日期差一天），可接受。官網 2026-10-26 回 503，讀 2026-09-10 存檔，摘錄在可見文字內。"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "收費期間另有和上野ファーム一起逛的套票，2025年是1,600日圓。",
+      "sourceUrl": "https://web.archive.org/web/20260112112049id_/https://daisetsu-asahigaoka.jp/new_garden_guide.html",
+      "sourceTitle": "大雪 森のガーデン ガーデンガイド（Internet Archive 2026-01-12 存檔）",
+      "sourceQuote": "共通入園券 大雪 森のガーデン＆上野ファーム 1,600 円 （税込）",
+      "verdict": "verified",
+      "notes": "同頁營業期間是 2025 年（2025年4月26日～10月13日），標 2025 年正確。"
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "表格：2026年營業 4/25～10/12，9:00～17:00，最後入園16:00",
+      "sourceUrl": "https://web.archive.org/web/20260910145451id_/https://www.daisetsu-asahigaoka.jp/?feed=rss2&post_type=news",
+      "sourceTitle": "大雪 森のガーデン お知らせ（Internet Archive 2026-09-10 存檔）",
+      "sourceQuote": "□2026年4⽉25⽇(⼟) 〜10⽉12⽇(⽉・祝)｜[営業時間] □9:00～17:00(最終入園16:00)",
+      "verdict": "verified",
+      "notes": "2026 年已於 10/12 結束，表格標年份可接受。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "表格：票價（2025年） 大人1,000日圓、13歲以上未滿16歲500日圓、小學生以下免費",
+      "sourceUrl": "https://web.archive.org/web/20260112112049id_/https://daisetsu-asahigaoka.jp/new_garden_guide.html",
+      "sourceTitle": "大雪 森のガーデン ガーデンガイド（Internet Archive 2026-01-12 存檔）",
+      "sourceQuote": "大 人（16歳以上）1,000 円 （税込）｜13歳以上500 円 （税込）｜※小学生以下無料",
+      "verdict": "verified",
+      "notes": "官網寫「大人（16歳以上）」與「13歳以上」，13 歲以上這一級的上限就是未滿 16 歲，正文解讀正確；觀光協會頁同一級寫「中学生500円」。12 歲的中學一年級生屬哪一級原文沒寫，正文沒有涉及。"
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "表格：停車 免費",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=71",
+      "sourceTitle": "【旭ヶ丘】大雪 森のガーデン｜層雲峡観光協会",
+      "sourceQuote": "駐車場 あり（無料）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "表格：怎麼去 JR上川站開車約15分鐘",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=102",
+      "sourceTitle": "【上川駅周辺】KAMIKAWA HOTEL｜層雲峡観光協会",
+      "sourceQuote": "JR上川駅からほど近いビジネスホテル｜大雪森のガーデンは車で15分です。",
+      "verdict": "verified",
+      "notes": "起點是上川站旁的旅館，等同從上川站算。"
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "大雪展望台「エスポワールの鐘」在上川站附近，是上川町開拓90週年時蓋的",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=15",
+      "sourceTitle": "【上川駅周辺】エスポワールの鐘(大雪展望台)｜層雲峡観光協会",
+      "sourceQuote": "上川町の開基９０周年を記念して建造された大雪展望台",
+      "verdict": "verified",
+      "notes": "原文是「開基」（建町）90 週年，正文「開拓」意思相近，可接受。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "五個大鐘從早上9點起每3小時響一次。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=15",
+      "sourceTitle": "【上川駅周辺】エスポワールの鐘(大雪展望台)｜層雲峡観光協会",
+      "sourceQuote": "毎日午前９時から３時間ごとに時を告げる美しい鐘の音が響き渡ります。｜巨大な５つの鐘",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "展望台9:00到16:00開放，不收費。",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=15",
+      "sourceTitle": "【上川駅周辺】エスポワールの鐘(大雪展望台)｜層雲峡観光協会",
+      "sourceQuote": "エスポワールの鐘 展望台開館時間 9：00～16：00｜料金 無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "大雪かみかわヌクモ是上川町的室內活動中心，裡面有teamLab的「あそぶ！天才プログラミング」遊戲區與咖啡廳，免費入館，下雨天帶小孩正好。",
+      "sourceUrl": "https://sounkyo.net/enjoy/detail.html?content=44",
+      "sourceTitle": "【東雲】大雪かみかわ ヌクモ｜層雲峡観光協会",
+      "sourceQuote": "未来型公民館の『大雪かみかわヌクモ』｜チームラボによる全国唯一の『あそぶ！天才プログラミング』｜カフェも併設｜全天候型施設ですので、天候を気にせず遊べます！｜入館無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "程式體驗一台平板1,000日圓，最多玩80分鐘，建議小學生以上，可以在官網預約。",
+      "sourceUrl": "https://nukumo.net/",
+      "sourceTitle": "大雪かみかわヌクモ",
+      "sourceQuote": "『あそぶ！天才プログラミング』（小学生以上推奨） １台１０００円｜※料金は専用タブレット1台につき1000円（最大80分間）｜できるだけ本サイトからの事前予約をお勧めしております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "營業時間10:00到16:30，咖啡15:30最後點餐，每週二休館，遇假日改成週三休。",
+      "sourceUrl": "https://nukumo.net/",
+      "sourceTitle": "大雪かみかわヌクモ",
+      "sourceQuote": "営業時間 10:00 ～ 16:30 ※カフェラストオーダー 15:30｜定休日 火曜日定休（祝日の場合は翌日の水曜日が休み）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "從JR上川站開車約10分鐘。",
+      "sourceUrl": "https://nukumo.net/",
+      "sourceTitle": "大雪かみかわヌクモ",
+      "sourceQuote": "JR 上川駅 車10 分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "大雪山ツアーズ週末有紅葉谷健行、騎自行車去銀河流星瀑布這類行程，大人3,000日圓起、兒童1,500日圓起。集合地點在黑岳纜車山麓站1樓。",
+      "sourceUrl": "https://sounkyo.net/enjoy/detail.html?content=78",
+      "sourceTitle": "【層雲峡】大雪山アドベンチャー｜層雲峡観光協会",
+      "sourceQuote": "週末は層雲峡からすぐ近くの大自然に遊びに行きましょう！…「紅葉谷ハイキング」や「銀河流星の滝サイクリング」｜住所（集合場所） 層雲峡黒岳ロープウェイ山麓駅1階｜大人3000円～/子ども1500円～",
+      "verdict": "verified",
+      "notes": "經營者官網沒有行程與價格頁，用觀光協會頁（研究記錄同此判斷）。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "泛舟可以找Alpine River Guides。行程有半日與一日兩種，大人8,000日圓起，家庭團是含稅25,000日圓。",
+      "sourceUrl": "https://www.alpineriver-guides.com/",
+      "sourceTitle": "Alpine River Guides（アルパインリバーガイド）",
+      "sourceQuote": "ラフティング（半日 or 1日） ￥8,000～ (大人)｜ファミリーツアー ￥25,000（税込）",
+      "verdict": "verified",
+      "notes": "含稅：官網只在家庭團與カヤックガイド標「税込」，大人 8,000 起沒標；正文只對家庭團寫含稅、大人價沒寫含稅，和原文一致。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "5月到10月各月走哪一段河，官網有分月介紹，出發基地離層雲峽溫泉約15分鐘。",
+      "sourceUrl": "https://www.alpineriver-guides.com/",
+      "sourceTitle": "Alpine River Guides（アルパインリバーガイド）",
+      "sourceQuote": "アルパインリバーガイドで行きそうな川を、季節ごとに紹介します。 5月・MAY …10月・OCT｜層雲峡温泉はアルパインリバーガイドのベースから約15分ほどです。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "遊客中心的觀察會只收住在日本、能用日文溝通的人，從台灣去的旅客報不了名。",
+      "sourceUrl": "https://sounkyovc.net/event",
+      "sourceTitle": "イベント｜層雲峡ビジターセンター",
+      "sourceQuote": "参加対象 … 日本語での意思疎通が可能な、国内在住の１０歳から７０歳までの方。｜参加者ご本人が直接お申し込みください。受付は電話のみになります。",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）各場條件都寫「日本語での意思疎通が可能な、国内在住」；住在台灣不符「国内在住」，推論正確。"
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "延伸資料：觀光協會瀑布、大函頁，遊客中心官網，雙瀑台路線圖與紅葉谷散策地圖 PDF，道北巴士時刻表，黒岳の湯，大雪森のガーデン官網，大雪かみかわヌクモ官網（各附說明）",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/soubakudai.pdf",
+      "sourceTitle": "大雪山山情報 コース：双瀑台｜層雲峡ビジターセンター",
+      "sourceQuote": "滝ミンタラの建物から２５分程で双瀑台に到着です。",
+      "verdict": "verified",
+      "notes": "（第 2 輪 2026-10-27 重查）延伸資料九條未改；道北巴士 PDF 直連逾時（存檔可讀），森のガーデン官網 503 維護中（網址是官網首頁，沒寫錯）。"
+    }
+  ],
+  "summary": {
+    "verified": 92,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}

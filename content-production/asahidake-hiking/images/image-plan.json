@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahidake-hiking",
+  "articleTitle": "旭岳登山，從姿見站登頂的時間、裝備與入山規則",
+  "targetUrl": "/places/asahidake/hiking/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-hiking/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是從姿見一帶沿登山道走向旭岳山頂的登山。",
+      "mustShow": ["旭岳的登山道（姿見一帶往山頂的步道或山頂附近的碎石坡），最好同時看得到旭岳山體"],
+      "mustNotShow": ["可辨識的人物臉部", "姿見の池倒映旭岳的構圖（已用在旭岳纜車頁）", "旭岳溫泉街道路與遊客中心（已用在旭岳交通頁）", "其他山冒充旭岳", "積雪的冬山畫面（文章以夏季登山為主）", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/140724_Asahi-dake_Hokkaido_Japan02s3.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.5},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 663highland 2014 年 7 月 24 日拍的旭岳：前景是兩側拉著繩索、鋪著石塊的登山步道，穿過偃松一路通往後方冒著噴氣的旭岳，山腳右側看得到很小的旭岳石室。畫面就是讀者從姿見站出發、朝山頂走的方向，主體不用猜，也不是姿見の池倒影的構圖。原圖 6000x4000（3:2），裁 16:9 時焦點放在正中，上方切掉一些雲、下方切掉一點步道，山頂、噴氣與步道都保留。放大看過步道與山腳，沒有看到人物。7 月是夏季登山期，與文章主軸一致；拍攝年份較舊，但山體與步道是自然地形，不影響封面。cover-02 是 Raita Futo 2017 年 7 月拍的山頂附近碎石坡與拉繩登山道（旁邊有石堆），完全沒有人，但看不到旭岳山體、遠景有霧，辨識度較低，當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Asahidake summit」「Asahi-dake」「旭岳 山頂」「Asahidake trail」「Asahidake Hokkaido」。看過的檔案：140724 Asahi-dake Hokkaido Japan02s3.jpg（663highland，CC BY 2.5，選定）、Mt. Asahi hiking (46485451532).jpg（Raita Futo，CC BY 2.0，備選）、140724 Asahi-dake Hokkaido Japan01s3.jpg（同角度但步道上有一小群登山客）、Japan03s3／04s5／07s3／08s3／09s3／11s3（噴氣孔、山壁特寫、雪溪，看不出是登山道）、Asahi-dake (9099318414).jpg（nAok0，3968 px，遠景草原無步道）、Mt. Asahi Hiking way (46485455832).jpg 與 Panorama from Asahi's summit (46537562181).jpg（全景比例，山頂稜線上有多名登山客）、Daisetsuzan National Park (44720157870).jpg（山頂往北看的遠山，不見旭岳本身）、旭岳山頂 - panoramio.jpg（2003，1280 px，解析度不足）、旭岳山頂から大雪山の山々（北西）.jpg（Koda6029，CC BY-SA 4.0，8192x1856 全景，條件較多未列）、Asahidake.JPG（2005，1280 px）、Mount Asahi (Daisetsuzan) under snow, April 2023 系列（積雪季，不符夏季登山）。依指示不用 Asahidake, Daisetsuzan Volcanic Group - Asahidake6036.jpg 與 The way to Asahidake Ropeway on June 14th, 2019.jpg，也避開 140724 Asahi-dake and Sugatami-no-ike 等姿見の池倒影構圖。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:140724_Asahi-dake_Hokkaido_Japan02s3.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:140724 Asahi-dake Hokkaido Japan02s3.jpg",
+          "sourceDescription": "Asahi-dake in Higashikawa, Hokkaido, Japan.（CC BY 2.5）",
+          "takenAt": "2014-07-24",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明是東川町的旭岳；畫面是姿見一帶拉著繩索的登山步道，一路通往後方冒著噴氣的旭岳山頂，就是文章講的登頂方向。",
+          "altDraft": "夏天的旭岳登山步道，石塊鋪成的小路穿過偃松，通往後方冒著白煙的旭岳",
+          "captionDraft": "姿見一帶往旭岳山頂的登山步道（2014 年 7 月）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape；山腳有很小的旭岳石室",
+            "risk": "low",
+            "notes": "沒有人物、招牌或商標；不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Mt._Asahi_hiking_(46485451532).jpg",
+          "creatorName": "Raita Futo",
+          "sourceTitle": "File:Mt. Asahi hiking (46485451532).jpg",
+          "sourceDescription": "旭岳の登山（2017-07-15 13:10 拍攝，CC BY 2.0）",
+          "takenAt": "2017-07-15",
+          "width": 5998,
+          "height": 3999,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明是旭岳的登山；畫面是山頂附近拉著繩索的碎石登山道與石堆，對應文章說的一路砂礫、石頭很多。",
+          "altDraft": "旭岳上半段的碎石坡，拉著繩索的登山道旁有一座石堆",
+          "captionDraft": "旭岳上半段的碎石登山道（2017 年 7 月）。",
+          "creditDraft": "照片：Raita Futo／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

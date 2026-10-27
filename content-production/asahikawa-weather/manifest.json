@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "answer-first-release-1",
+  "articleId": "asahikawa-weather",
+  "workingTitle": "旭川天氣，各月氣溫、降雪與冬天穿著",
+  "primaryKeyword": "旭川天氣",
+  "primaryQuery": "旭川天氣",
+  "targetUrl": "/places/asahikawa/weather/",
+  "primaryHub": "hub-places-asahikawa",
+  "planning": {
+    "source": "content-automation/article-queue.json",
+    "recordId": "asahikawa-weather",
+    "status": "keep",
+    "publicationAuthorization": "authorized",
+    "authorizedAt": "2026-10-26",
+    "topicDirection": "旭川天氣，各月氣溫、降雪與冬天穿著",
+    "pageRole": "天氣頁",
+    "contentBoundary": "旭川氣象台的平年值、冬季寒冷與積雪、夏季高溫、穿著；旭岳與層雲峽的山上天氣在各地頁面。",
+    "primaryHubId": "hub-places-asahikawa"
+  },
+  "market": "TW",
+  "searchLocale": "zh-TW",
+  "status": "approved",
+  "approvedAt": "2026-10-27",
+  "approval": {
+    "mode": "standing-authorization",
+    "queue": "content-automation/article-queue.json",
+    "authorizedAt": "2026-10-26",
+    "approvedAt": "2026-10-27",
+    "workflow": "japan-travel-answer-first"
+  },
+  "h1": "旭川天氣，各月氣溫、降雪與冬天穿著",
+  "seoTitle": "旭川天氣，各月氣溫、降雪與冬天穿著",
+  "seoDescription": "旭川1月平均零下7.0°C、早上零下11.7°C，2月最深積雪84公分，全年降雪557公分；8月平均最高26.6°C。整理氣象廳平年值的各月氣溫雨雪、冬天怎麼穿與鑽石塵出現條件。",
+  "excerpt": "旭川12月到3月月平均氣溫都在冰點以下，1、2月早上接近零下12°C，雪從10月中旬的初雪下到隔年4月。這篇用氣象廳平年值整理各月氣溫、雨雪與積雪，說明冬天怎麼穿、鑽石塵在什麼條件下看得到、暴風雪對冬季活動與交通的影響，以及夏天和春秋的氣溫。",
+  "review": {
+    "readerPreviewSha256": "6aadc41ca7785b16f70998f965a486cae1b18b6c6f2f26074f95e6730728fd93",
+    "result": "ready_for_user_preview",
+    "mechanical": "mechanical_clear"
+  },
+  "files": {
+    "research": "reference-review.md",
+    "preview": "reader-preview.md",
+    "review": "review.md",
+    "factCheck": "fact-check.json",
+    "headingReview": "heading-review.json",
+    "publication": "publication.json",
+    "audit": "audit.json",
+    "sanitySync": "sanity-sync.json",
+    "images": "images/image-plan.json"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "sounkyo-stay",
+  "articleTitle": "層雲峽住宿，溫泉街各旅館的位置、接駁巴士與訂房管道",
+  "targetUrl": "/places/sounkyo/stay/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-stay/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "用層雲峽溫泉街的整體街景帶出這篇講的溫泉街住宿，讓讀者一眼看出是住在峽谷裡的溫泉街，而不是某一間旅館。",
+      "mustShow": ["認得出層雲峽溫泉街的整體情境（溫泉街街景、入口看板或峽谷旁的溫泉街），背景看得到峽谷岩壁"],
+      "mustNotShow": ["以單一旅館建築或招牌為主體", "旅館客房、浴池或料理", "可辨識的人物臉部", "其他溫泉街冒充層雲峽", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Sounkyo_Promenade.JPG",
+        "focalPoint": {"x": 0.5, "y": 0.4},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Soica2001 2011 年 7 月拍的層雲峽溫泉街プロムナード：石板步道兩旁是同一風格的三角屋頂山形建築與花盆，後方是長滿綠樹的柱狀節理岩峰，晴天。畫面是整條溫泉街的街景，沒有哪一棟旅館當主體，左側店家的小招牌（珈琲、霜淇淋立牌）很小、看不清店名，不會讓讀者以為是某間旅館。原圖 2560×1920，裁 16:9 時焦點 y 放 0.4，保留岩峰頂端，裁掉下緣一部分步道與花盆。限制：拍攝已是 2011 年，店家與招牌可能已有變動，只當溫泉街氛圍；畫面是夏天，不代表冬季樣貌。cover-02 是 lienyuan lee 2003 年拍的同一條步道，霧天、季節感較弱，右側看得到旅館招牌與溫泉街地圖看板，當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源分類 Sounkyo Onsen 的全部檔案，並沿用 sounkyo-weather 與 sounkyo-transport 選圖時查過的分類 Sōunkyō。排除：Dōhoku bus Sōunkyō01.JPG、Souunkyouhyoubakumatsuri.jpg、秋函（Autumn in valley） - panoramio.jpg 已用在其他頁；層雲峡温泉 - panoramio.jpg 溫泉街入口看板已是交通頁備選，另有同類看板照；層雲峽溫泉 Sounkyo Spa - panoramio.jpg（入口看板，但右側白色大樓旅館與招牌醒目，可能被當成那間旅館）；Sounkaku Grand Hotel roten.JPG、層雲峡観光ホテル 浴衣、Sounkyo YH 2011.JPG、Sōunkyō Youth Hostel.jpg 都是單一旅館；HPIM2742.JPG 只有 1257 px 寬；Sounkyo Onsen Wikivoyage banner.jpg 是 2560×366 的橫幅，裁不出 16:9。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sounkyo_Promenade.JPG",
+          "creatorName": "Soica2001",
+          "sourceTitle": "File:Sounkyo Promenade.JPG",
+          "sourceDescription": "層雲峡温泉街プロムナード（作者自己拍攝，Permission 為 PD-self，分類 Sounkyo Onsen）",
+          "takenAt": "2011-07-29",
+          "width": 2560,
+          "height": 1920,
+          "licenseName": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "contextual",
+          "matchLimits": "2011 年夏天拍的，店家與招牌可能已有變動；只代表溫泉街整體氛圍，不代表任何一間旅館，也不代表冬季樣貌。",
+          "whyItFits": "檔案頁說明為層雲峽溫泉街的步道，畫面是溫泉街整體街景與背後的峽谷岩峰，對應文章「層雲峽住宿多半集中在溫泉街」，沒有單一旅館當主體。",
+          "altDraft": "層雲峽溫泉街的石板步道，兩旁是三角屋頂的建築，後方是長滿樹的岩峰",
+          "captionDraft": "層雲峽溫泉街的步道。",
+          "creditDraft": "照片：Soica2001／Wikimedia Commons／Public domain",
+          "commercialReview": {
+            "people": "none",
+            "logos": "左側店家有小招牌與立牌，畫面中很小、看不清店名",
+            "artwork": "none",
+            "property": "溫泉街街景，多棟建築並列，沒有單一建築當主體",
+            "risk": "low",
+            "notes": "沒有可辨識人物；不會讓讀者誤以為是某間旅館的實景。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sounkyo_Spa_%E5%B1%A4%E9%9B%B2%E5%B3%BD%E6%BA%AB%E6%B3%89_-_panoramio.jpg",
+          "creatorName": "lienyuan lee",
+          "sourceTitle": "File:Sounkyo Spa 層雲峽溫泉 - panoramio.jpg",
+          "sourceDescription": "Sounkyo Spa 層雲峽溫泉（Panoramio 匯入，座標 43.728073, 142.945197，分類 Sounkyo Onsen）",
+          "takenAt": "2003-09-14",
+          "width": 2532,
+          "height": 1794,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "contextual",
+          "matchLimits": "2003 年的霧天照片，岩峰模糊；右側有一間旅館的招牌與溫泉街地圖看板，裁切時要避開。",
+          "whyItFits": "同一條溫泉街步道，畫面有多棟溫泉街建築與後方的岩峰。",
+          "altDraft": "霧中的層雲峽溫泉街步道，後方是長滿樹的岩峰",
+          "captionDraft": "層雲峽溫泉街。",
+          "creditDraft": "照片：lienyuan lee／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "右側建築有一間旅館的小招牌",
+            "artwork": "none",
+            "property": "溫泉街街景",
+            "risk": "low",
+            "notes": "沒有人物；旅館招牌很小，不是主體。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
