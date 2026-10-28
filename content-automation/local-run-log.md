@@ -5,12 +5,12 @@
 ## 最新一輪
 
 - 台北時間：2026-10-29 04:44 開始，04:50 結束（排定工作自動執行，04:42 輪）
-- 文章：無（寫作**略過**：稚內群 24 頁已全部寫完；本流程只寫  稚內群）
-- 上傳：無。Sanity 上 45 篇都是 ，45 篇已驗收文章都已上線；D1  因 wrangler 登入失效（7403）讀不到，但沒有要上傳的文章，不受影響
-- 補內連： 回傳空清單，沒有要補的
-- 開始時 pull 與合併 origin/main 都是 Already up to date；確認  是 200
+- 文章：無（寫作**略過**：稚內群 24 頁已全部寫完；本流程只寫 `travelGroups[0]` 稚內群）
+- 上傳：無。Sanity 上 45 篇都是 `published_indexable`，45 篇已驗收文章都已上線；D1 `ops-article.mjs list` 因 wrangler 登入失效（7403）讀不到，但沒有要上傳的文章，不受影響
+- 補內連：`ops-links.mjs ready` 回傳空清單，沒有要補的
+- 開始時 pull 與合併 origin/main 都是 Already up to date；確認 `/places/rishiri-island/` 是 200
 - 用量：5 小時額度 1% → 1%；每週額度 27% → 27%
-- commit：本紀錄見 ；沒推 （沒有上線文章）
+- commit：本紀錄見 `git log`；沒推 `main`（沒有上線文章）
 - 待處理：D1 的 wrangler 登入失效（7403），需 Darren 在這台電腦重新執行 wrangler login，之後上傳才能登記 D1
 - 下一輪預期文章：寫作仍會略過（稚內群已寫完）；要讓本機排定工作繼續有事做，需人工 session 決定是否把流程改成寫旭川群或下一群
 
