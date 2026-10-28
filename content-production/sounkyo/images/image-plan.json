@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "articleId": "sounkyo",
+  "articleTitle": "層雲峽值得去嗎？住一晚還是當天來回、幾月去與溫泉街吃什麼",
+  "targetUrl": "/places/sounkyo/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "地點主頁的封面，讓讀者一眼認出是層雲峽：溫泉街入口的峽谷岩壁與紅葉。",
+      "mustShow": ["層雲峽溫泉街一帶的峽谷岩壁或山景，認得出是層雲峽"],
+      "mustNotShow": ["可辨識的人物臉部", "其他地方冒充層雲峽", "旅館或店家招牌當主體", "AI 生成或合成畫面", "已用於層雲峽其他頁的封面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/%E5%B1%A4%E9%9B%B2%E5%B3%A1%E6%B8%A9%E6%B3%89_-_panoramio.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.55},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Toshihiro Matsui 2013 年 10 月 19 日拍的層雲峽溫泉入口：左邊是染成黃橘色的紅葉山坡與岩壁，山溝裡有初雪，右後方是另一座山，右前方是大雪山國立公園「層雲峡温泉 SOUNKYO SPA」的木製地名標示。標示是公共地名牌，不是店家招牌，又讓讀者一眼認出地點。原圖 5472×3648（3:2），裁 16:9 焦點 y 0.55，保留整個山坡與地名牌，只裁掉上方部分天空與最下方的石座。畫面有電線、紅綠燈與路燈，沒有人物。限制：紅葉季的畫面，不代表其他季節。cover-02 是 lienyuan lee 2003 年拍的溫泉街廣場與後方岩峰，霧天、畫面有旅館招牌，當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "從層雲峽各面向頁選圖時查過的維基共享資源候選中挑選（分類 Sōunkyō、Sounkyo Onsen）。排除已用於其他頁封面的 Dōhoku bus Sōunkyō01.JPG、Souunkyouhyoubakumatsuri.jpg、秋函（Autumn in valley） - panoramio.jpg、Sounkyo Promenade.JPG、Summit Sign, Mount Kuro、黒岳から旭岳方面.jpg、Ryūsei Falls 2003-09-14 - panoramio.jpg。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E5%B1%A4%E9%9B%B2%E5%B3%A1%E6%B8%A9%E6%B3%89_-_panoramio.jpg",
+          "creatorName": "Toshihiro Matsui",
+          "sourceTitle": "File:層雲峡温泉 - panoramio.jpg",
+          "sourceDescription": "層雲峡温泉（Panoramio 匯入，座標 43.726992, 142.947222，分類 Sōunkyō）",
+          "takenAt": "2013-10-19",
+          "width": 5472,
+          "height": 3648,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為層雲峽溫泉，座標在溫泉街入口一帶；畫面有層雲峽溫泉地名牌與紅葉岩壁，適合當層雲峽主頁封面。",
+          "altDraft": "層雲峽溫泉入口的木製地名牌，後方是紅葉的山坡與岩壁",
+          "captionDraft": "層雲峽溫泉入口，秋天的山坡。",
+          "creditDraft": "照片：Toshihiro Matsui／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "public place-name sign and natural landscape",
+            "risk": "low",
+            "notes": "公共地名牌與山景，有電線與紅綠燈，沒有人物或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sounkyo_Spa_%E5%B1%A4%E9%9B%B2%E5%B3%BD%E6%BA%AB%E6%B3%89_-_panoramio.jpg",
+          "creatorName": "lienyuan lee",
+          "sourceTitle": "File:Sounkyo Spa 層雲峽溫泉 - panoramio.jpg",
+          "sourceDescription": "Sounkyo Spa 層雲峽溫泉（Panoramio 匯入，座標 43.728073, 142.945197，分類 Sounkyo Onsen）",
+          "takenAt": "2003-09-14",
+          "width": 2532,
+          "height": 1794,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "matchLimits": "霧天、畫面有旅館招牌；2003 年拍攝。",
+          "whyItFits": "溫泉街廣場與後方岩峰同框。",
+          "altDraft": "層雲峽溫泉街的廣場，後方是被霧籠罩的岩峰",
+          "captionDraft": "層雲峽溫泉街。",
+          "creditDraft": "照片：lienyuan lee／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "small hotel sign",
+            "artwork": "none",
+            "property": "buildings",
+            "risk": "low",
+            "notes": "旅館招牌很小，不是主體。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

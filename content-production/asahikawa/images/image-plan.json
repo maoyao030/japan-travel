@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahikawa",
+  "articleTitle": "旭川自由行怎麼排，住幾晚、幾月去與往旭岳、層雲峽的轉乘",
+  "targetUrl": "/places/asahikawa/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "旭川地點主頁的封面，用旭川市中心的街景俯瞰，讓讀者一眼看出是旭川市區、遠方是山。",
+      "mustShow": ["旭川市街，認得出是旭川市區"],
+      "mustNotShow": ["可辨識的人物臉部", "其他城市冒充旭川", "旅館或店家招牌當主體", "AI 生成或合成畫面", "已用於旭川其他頁的封面（旭橋與大雪山、旭川車站、買物公園、新子燒、冬天市街、旭山動物園）"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Asahikawa_cityscape_seen_from_Asahikawa_Grand_Hotel_-_Sep_4%2C_2010.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.62},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Yuichi Kosio 2010 年 9 月 4 日從旭川グランドホテル（現 OMO7 旭川）往下拍的旭川市中心：前景右邊是旭川市役所、中央是旭川市民文化會館，左邊是筆直的大街與行道樹，遠方是一路平坦的市區與地平線上的山。檔案頁說明寫明地點與建築，分類 Cityscapes in Asahikawa。原圖 3648×2736（4:3），裁 16:9 焦點 y 0.62，裁掉上方大半天空，保留市街與遠山。沒有可辨識的人物或店家招牌當主體。限制：2010 年拍攝，市區建築可能有變動（左下有工地）；夏天的畫面，不代表冬天。cover-02 是 MIKI Yoshihito 2025 年從河床仰拍的旭橋，畫質高，但旭橋已是景點頁封面的主體，當備選。cover-03 是くろふね 2012 年拍的平和通買物公園，住宿頁已用買物公園，且畫面有多個店家招牌，不選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源分類 Asahikawa、Asahi Bridge (Asahikawa)、Asahikawa Station，關鍵字「Asahikawa cityscape」「Asahikawa Kaimono Koen」「旭川 市街」「Asahikawa Hokkaido street」。排除已用於其他頁封面的 Asahibashi Bridge and Mt. Daisetsuzan Range.jpg、Asahikawa Station in October 2026.jpg、Kaimono Koen 20250801.jpg、Asahikawa-city in winter. 旭川 冬 (25014245151).jpg、新子焼き.jpg、Asahiyama Zoo 照片。旭川車站一帶已是交通頁封面，主頁不重複同一主題。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahikawa_cityscape_seen_from_Asahikawa_Grand_Hotel_-_Sep_4,_2010.jpg",
+          "creatorName": "Yuichi Kosio",
+          "sourceTitle": "File:Asahikawa cityscape seen from Asahikawa Grand Hotel - Sep 4, 2010.jpg",
+          "sourceDescription": "旭川市。手前が旭川市役所、画面中央が旭川市民文化会館。旭川グランドホテルから見ている。（Flickr 匯入，FlickreviewR 2 已審核，分類 Cityscapes in Asahikawa）",
+          "takenAt": "2010-09-04",
+          "width": 3648,
+          "height": 2736,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為旭川市中心，從市中心飯店俯瞰市役所與市民文化會館，看得出旭川是平地上的城市、遠方有山，適合當旭川主頁封面。",
+          "altDraft": "從高處俯瞰旭川市中心，前景是市役所與市民文化會館，遠方是平坦的市區與山",
+          "captionDraft": "旭川市中心的街景。",
+          "creditDraft": "照片：Yuichi Kosio／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none identifiable",
+            "logos": "none prominent",
+            "artwork": "none",
+            "property": "public buildings and cityscape",
+            "risk": "low",
+            "notes": "城市俯瞰，主體是公共建築與街道，沒有可辨識的人物或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahi_Bridge,_Asahikawa_-_Jul_20,_2025.jpg",
+          "creatorName": "MIKI Yoshihito",
+          "sourceTitle": "File:Asahi Bridge, Asahikawa - Jul 20, 2025.jpg",
+          "sourceDescription": "Asahi Bridge, Asahikawa, Hokkaido, Japan（Flickr 匯入，分類 Asahi Bridge (Asahikawa)）",
+          "takenAt": "2025-07-20",
+          "width": 5656,
+          "height": 3771,
+          "licenseName": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "matchLimits": "旭橋已是景點頁封面的主體；仰拍看不到市區。",
+          "whyItFits": "旭川代表地標旭橋。",
+          "altDraft": "從石狩川河床仰望旭橋的綠色鋼拱",
+          "captionDraft": "旭川的旭橋。",
+          "creditDraft": "照片：MIKI Yoshihito／Wikimedia Commons／CC BY 4.0",
+          "commercialReview": {
+            "people": "none identifiable",
+            "logos": "none",
+            "artwork": "none",
+            "property": "public bridge",
+            "risk": "low",
+            "notes": "橋上有遠處行人，不可辨識。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

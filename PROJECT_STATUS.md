@@ -1459,6 +1459,66 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 
 - 寫旭川・大雪群的 4 篇地點主頁（asahikawa、sounkyo、asahidake，最後 higashikawa）。
 
+## 2026-10-27 Claude Code（地端）：旭川・大雪群 4 篇地點主頁上線，整群 21 頁完成
+
+### 已決定
+
+- Darren 要求接著寫 4 篇地點主頁（2026-10-27）。
+- 東川町大綱「依旅客類型」原本沒有 H3，照研究者建議在寫作前加 4 個（不開車從旭川站去半天、從旭川機場往旭岳中途在東川停、自駕往旭岳順路停、帶小孩）。
+- 東川町與旭岳主頁沒有（或少有）面向頁，景點、美食、冬季、天人峽等由主頁負責，篇幅比一般主頁長，不硬刪只出現一次的事實。
+- 旭川主頁標題檢查建議把「幾月去旭川」改成「旭川各月的天氣與活動」，協調者改成「旭川幾月去？」，保留讀者搜尋的問法。
+- 東川 Hub 名稱與 `content-planning/places.json` 不一致（「東川町」對「東川」）導致全站建置失敗：改 Hub 這邊為「東川」（Sanity 與 `article-queue.json`），因為改地點清單會讓各 H2 都得帶「東川町」。Hub 介紹文「熱門麵包店常常過中午就賣完」照查核改成「有的」。
+
+### 已完成
+
+- 上線並開放收錄 4 篇地點主頁，各自掛成地點 Hub 的入口文章：
+  - sounkyo（封面 層雲峡温泉 - panoramio.jpg，Toshihiro Matsui，CC BY-SA 3.0）
+  - asahikawa（Asahikawa cityscape seen from Asahikawa Grand Hotel，Yuichi Kosio，CC BY 2.0）
+  - asahidake（姿見ノ池からの旭岳２.jpg，Koda6029，CC BY-SA 4.0）
+  - higashikawa（Michinoeki Higashikawa 「Michikusakan」 Appearance.jpg，Mister0124，CC BY-SA 4.0）
+- 4 個 Hub（層雲峽、旭川、旭岳、東川）都是 ready_indexable。新建東川 Hub。
+- 事實查核最後一輪：sounkyo 113、asahikawa 116、asahidake 121、higashikawa 166 項全部 verified；讀者最終都 acceptable。驗收紀錄在各自 `review.md`。
+- 上線時接上內連 24 條，補內連 19 條（層雲峽那輪 6 條、後三篇那輪 13 條）。
+- 大綱同步：各篇改過的標題與內連 section；sounkyo 新增 2 條內連句（→sounkyo-stay 冬天含晚餐、→sounkyo-transport 包車）。
+- 旭川・大雪群 21 頁全部上線，另有 4 個地點 Hub。網址都確認回 200、沒有 noindex。npm test 179 項全過，main 在 e0d61c2 之後。
+
+### 尚未完成
+
+- 11 條內連因錨文字在同一段重複被 skip（81、107、113、135、154、163、165、166、172、176 與上一輪的 136），其中 5 條指向東川町，要人工改句子後再接。
+- 已上線 sounkyo-stay：ビアグリル・キャニオン寫「週三休、開到20:00」，店家官網是週二、週三公休、17:30～20:30，要走修正流程。
+- 已上線 wakkanai-stay：訂房管道與現況不符（ホテル美雪 Agoda 可訂；casa hotel 與ホテルめぐま的 Trip.com 目前不接受預訂）。
+- 4 篇主頁的新事實同步回地點事實表（各 review.md「留給之後的事」列了編號）；規劃總表與日曆提醒；下一群（富良野・美瑛）研究。
+
+### 阻礙
+
+- 無。
+
+### 唯一下一步
+
+- 修正已上線文章：sounkyo-stay 的餐廳公休與時間、wakkanai-stay 的訂房管道，並把 11 條被 skip 的內連改句子接上。
+
+## 2026-10-27 Claude Code（地端）：兩篇已上線住宿頁修正、13 條略過的內連補上
+
+### Darren 的要求
+
+- 修正已上線的 sounkyo-stay 餐廳資料和 wakkanai-stay 訂房管道，並接上被跳過的內連。Darren 看過改法後同意寫進網站。
+
+### 已完成
+
+- 內連：`scripts/link-backfill.mjs` 改成在連結句裡找錨文字（同一句出現兩次取「見○○」那個），段落前面提到同一個地名不再略過；加測試。D1 裡 13 條略過的（81、105、107、113、118、135、136、154、163、165、166、172、176）全部補上、CI 通過、標成已補，對應的 13 筆例外標成 resolved。
+- sounkyo-stay：ビアグリル・キャニオン照店家官網週二、週三公休、晚上 17:30～20:30；Taisetsu Bakery Café & Bar 兩個官網只到 18:00，冬天晚上剩 2 家；補居酒屋大雪茶屋（F308～F311）。查核子代理只複查改過的句子，89 項全部 verified。
+- wakkanai-stay：ホテル美雪 Trip.com、Agoda 可訂（F422）；ペンション斗夢ソーヤ冬季休業到 2027 年 4 月下旬（F424）；1/20 查詢結果與グランド年末年始休館（F423、F411）。casa hotel、めぐま不用改：Trip.com「不接受預訂」會隨日期出現。查核子代理複查 104 項全部 verified。
+- Sanity：`replace-article-paragraphs.mjs` 換 sounkyo-stay 2 段、wakkanai-stay 5 段，住宿表美雪那一格用一次性腳本改（用完刪除）；CI 通過。
+
+### 尚未完成
+
+- 兩篇網站上的資料來源清單沒有加新連結（清單是連結格式，替換工具不處理），只在 Git 稿子裡。
+- 新事實同步回地點事實表與 D1；規劃總表與日曆提醒；下一群（富良野・美瑛）研究。
+
+### 唯一下一步
+
+- 下一群（富良野・美瑛）的研究與大綱。
+
 ## 2026-10-27 Claude Code（雲端）：文內照片上傳程式，利尻島交通試傳
 
 - Darren 發現文章都只有封面。原因：網站與 Sanity 早就能顯示文內照片，但缺「下載、縮圖、插進正文指定段落」的程式，所以自動寫作規定只選封面。

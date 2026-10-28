@@ -1,0 +1,1511 @@
+{
+  "schemaVersion": 1,
+  "articleId": "higashikawa",
+  "articleSha256": "ff9090c6265d7eb0270a053f138a57fd20b6d2b8d424bb99908b6025f5ac2150",
+  "checker": "fact-check-agent（唯讀事實查核者，非作者；以 curl 讀官方網頁，PDF 下載到暫存資料夾用 pymupdf 轉圖或抽文字讀；RESERVA 頁 curl 已含內容，未用瀏覽器；第 2 輪複查同方法）",
+  "checkedAt": "2026-10-27",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "東川町是緊鄰旭川的小鎮，離旭川機場約7公里",
+      "sourceUrl": "https://higashikawa-town.jp/portal/machi/panel/4",
+      "sourceTitle": "交通｜東川町",
+      "sourceQuote": "旭川市の中心部から13km（車で約22分）、旭川空港から7km（車で約13分）の地点にあります。",
+      "verdict": "verified",
+      "notes": "「緊鄰旭川」：觀光協會 about 頁「北海道第２の都市「旭川市」に隣接し」。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "北海道最高峰旭岳也在町境內",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/about",
+      "sourceTitle": "東川町について｜ひがしかわ観光協会",
+      "sourceQuote": "大雪山連峰の最高峰旭岳（2,291m）は、東川町域に所在しています。",
+      "verdict": "verified",
+      "notes": "「北海道最高峰」見町公所產業頁 panel/12 與觀光協會 journey 頁「北海道最高峰の旭岳」。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "咖啡店在市中心就有好幾間，走路就到，離市中心一段路的地方也散著幾間",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/modelplan",
+      "sourceTitle": "町あるき モデルプラン｜ひがしかわ観光協会",
+      "sourceQuote": "東川の中心部には徒歩でいける範囲にいくつも素敵なカフェがあり／町内中心部から一歩離れたところにも、素敵なお店やカフェ、ギャラリーが点在しています。",
+      "verdict": "verified",
+      "notes": "第 1 輪 C3 修正後的句子。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "東川町景點在市中心的有道の駅ひがしかわ「道草館」與せんとぴゅあ，郊外有キトウシ森林公園、大雪旭岳源水與忠別湖",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/areaguide",
+      "sourceTitle": "エリアガイド｜ひがしかわ観光協会",
+      "sourceQuote": "東川町中心部から旭岳・天人峡方面へ向かう途中、大きく広がる忠別湖が見えてきます。",
+      "verdict": "verified",
+      "notes": "道草館「道道旭川旭岳温泉線沿い」、せんとぴゅあI 北町1丁目1-1（市中心）；キトウシ見 /areaguide/kitoushi/（東川町の北側にあるキトウシ山）；源水見 /water。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "東川沒有鐵路，從旭川站搭路線巴士約44到57分鐘，最快的60番車資880日圓",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "60 12:25（旭川駅⑤）… 13:09（ひがしかわ道草館）｜76 7:10 … 8:07",
+      "verdict": "verified",
+      "notes": "60番 12:25→13:09＝44分；76番 7:10→8:07＝57分。車資見 un60_2026.09.pdf（運賃改定日:令和08年09月01日）旭川駅～ひがしかわ道草館 880（15.2km），12/1 改定名單不含 60 番。沒有鐵路見觀光協會 about「東川町に鉄道は通っていません」。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "從旭川機場搭往旭岳的いで湯號12分鐘就到，不過いで湯號一天只有4班",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川空港 8:00 10:00 13:00 15:00｜ひがしかわ道草館 8:12 10:12 13:12 15:12／1往復増の4往復運行となり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "熱門的麵包店與甜點店，有的過中午就賣完",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/modelplan",
+      "sourceTitle": "町あるき モデルプラン｜ひがしかわ観光協会",
+      "sourceQuote": "人気のベーカリーやスイーツショップを目指してお越しになる人も多く、昼過ぎには商品が全て完売してしまうところも。",
+      "verdict": "verified",
+      "notes": "第 1 輪 C7 修正後的句子。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "各店公休日也不一樣",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/modelplan",
+      "sourceTitle": "町あるき モデルプラン｜ひがしかわ観光協会",
+      "sourceQuote": "季節によって営業時間や休業日が変更になるお店もお多いため",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "東川是北海道唯一沒有自來水的町，家家戶戶用的是大雪山雪水滲進地底形成的地下水",
+      "sourceUrl": "https://higashikawa-town.jp/portal/machi/panel/2",
+      "sourceTitle": "水の豊かな町｜東川町",
+      "sourceQuote": "北海道でも唯一の、上水道の無い町です。／大雪山の大自然が蓄えた雪解け水が、長い年月をかけて地中深くにしみ込み",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "米、豆腐與酒都用這個水做",
+      "sourceUrl": "https://higashikawa-town.jp/portal/machi/panel/2",
+      "sourceTitle": "水の豊かな町｜東川町",
+      "sourceQuote": "天然の美味しい水で育ったお米や野菜は格別です。豆腐や味噌、お酒など、東川町の地下水を惜しみなく使い",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "市區不少咖啡店與麵包店，也是為了這裡的水搬來的人開的",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/water",
+      "sourceTitle": "大雪旭岳源水｜ひがしかわ観光協会",
+      "sourceQuote": "東川町内のレストラン・カフェ・ベーカリーなどは、この水を求めてやってきた移住者がオープンしたお店も少なくありません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "1985年起東川自稱「寫真之町」，町裡到處掛著攝影作品，整個町就像一座藝廊",
+      "sourceUrl": "https://higashikawa-town.jp/portal/photo/panel/16",
+      "sourceTitle": "写真の町宣言｜東川町",
+      "sourceQuote": "1985年、私たちは…「写真の町」を宣言し",
+      "verdict": "verified",
+      "notes": "「町内の各所に写真が掲げられている場所があり、町全体がギャラリーのようです」見觀光協會 modelplan。"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "逛市區時，可以留意各店門口的原創木雕招牌，每塊都照店的特色刻成",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/areaguide",
+      "sourceTitle": "エリアガイド｜ひがしかわ観光協会",
+      "sourceQuote": "お店にはそれぞれの特徴やロゴをかたどった木彫看板が掲げられており、それを眺めて町歩きをするのも楽しみのひとつ。",
+      "verdict": "verified",
+      "notes": "町公所 panel/12 也寫「オリジナルの木彫看板がかけられ」。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "最近的火車站是JR旭川站，從車站轉搭路線巴士或計程車進町",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/about",
+      "sourceTitle": "東川町について｜ひがしかわ観光協会",
+      "sourceQuote": "最寄りの駅はJR 旭川駅となり、東川町中心部までの移動は路線バスまたはタクシーをご利用ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "開車從旭川市中心約22分鐘，從旭川機場約13分鐘",
+      "sourceUrl": "https://higashikawa-town.jp/portal/machi/panel/4",
+      "sourceTitle": "交通｜東川町",
+      "sourceQuote": "旭川市の中心部から13km（車で約22分）、旭川空港から7km（車で約13分）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "要開車，觀光協會建議在旭川站或旭川機場一帶租車",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/about",
+      "sourceTitle": "東川町について｜ひがしかわ観光協会",
+      "sourceQuote": "レンタカーは旭川駅、旭川空港周辺にある各レンタカー会社をご利用ください。",
+      "verdict": "verified",
+      "notes": "第 1 輪 C17 修正後的句子。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "旭川站往東川的路線巴士有60、67、76、176番，一律在旭川站前5號乘車處上車、在「ひがしかわ道草館」站下車",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "旭川駅⑤｜ひがしかわ道草館（60・67・76 表）／176 旭川駅⑤ 21:45 … ひがしかわ道草館 22:35",
+      "verdict": "verified",
+      "notes": "路線一覽頁 /regular-route/routes/：60 東川線、67 東川・東神楽循環線、76 東神楽・東川循環線、176 東神楽・東川線都經ひがしかわ道草館。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "60番最快，約44分鐘。67番約52分鐘，76番會先經過東神楽，約57分鐘",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "60 12:25→13:09｜67 8:50→9:42｜76 7:10（旭川駅⑤）→7:54（東神楽バスセンター）→8:07（ひがしかわ道草館）",
+      "verdict": "verified",
+      "notes": "相減 44、52、57 分。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "60、67、76番從旭川站到道草館都是880日圓，67、76番在12月1日起的新運賃表上，這一段也還是880日圓",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/10/un067.076_2026.12.pdf",
+      "sourceTitle": "普通旅客運賃表 運賃改定日:令和08年12月01日 系統:67番 東川・東神楽循環線 76番 東神楽・東川循環線",
+      "sourceQuote": "ひがしかわ道草館 … 旭川駅 880（15.2）／ひがしかわ道草館 … 旭川駅 880（17.9）",
+      "verdict": "verified",
+      "notes": "9/1 版 un67.76_2026.09.pdf 同兩格也是 880（15.2）／880（17.9）；12/1 版這兩格不變。60 番 880 見 un60_2026.09.pdf，60 番不在 12/1 改定名單。兩張 PDF 用 pymupdf 取字座標找到「ひがしかわ道草館」列與兩端「旭川駅」，放大轉圖讀。正文沒把 176 番放進這句，正確。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "這幾路巴士不收Suica、Kitaca這類全國交通IC卡，IC卡只能用當地發行的Asaca與DoCARD",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
+      "sourceTitle": "旭川空港のバス｜旭川電気軌道",
+      "sourceQuote": "旭川電気軌道運行便につきましては当社ICカード「Asaca」、道北バスICカード「DoCARD」が使用できます。 ※全国交通系ICカードには対応しておりません",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "白天從旭川站出發的班次如下，是2026年5月10日改正的時刻，標▲的只在平日行駛",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "令和８年５月10日改正 バス時刻表／▲の便は平日ダイヤのみ運行",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "旭川站⑤出發表：7:10 76番 8:07、7:20 67番 8:12、▲7:35 60番 8:19、8:10 76番 9:07、8:50 67番 9:42、9:40 76番 10:37",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "67 7:20…8:12｜60 ▲7:35…▲8:19｜67 8:50…9:42｜76 7:10…8:07｜76 8:10…9:07｜76 9:40…10:37",
+      "verdict": "verified",
+      "notes": "PDF 是圖片，放大轉圖逐格讀；76 在（旭川駅方面）表，經東神楽後到道草館再回旭川駅。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "旭川站⑤出發表：11:45 76番 12:42、12:25 60番 13:09、13:25 67番 14:17、14:45 76番 15:42、15:00 67番 15:52",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "76 11:45…12:42｜60 12:25…13:09｜67 13:25…14:17｜76 14:45…15:42｜67 15:00…15:52",
+      "verdict": "verified",
+      "notes": "白天班次沒有漏列（另有 6:45 的 67 番，是清晨班）。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "傍晚以後還有67、76與60番，晚上9點以後只剩21:45的176番",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "67 16:25、17:25｜76 17:45、18:45｜60 18:25、19:25、20:20｜※21時以降の東川方面は176番系統の東神楽・東川線をご利用願います｜176 21:45",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "回旭川的末班車是19:42的76番，20:33到旭川站",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "76 … 19:42（ひがしかわ道草館）… 20:33（旭川駅）",
+      "verdict": "verified",
+      "notes": "60 番回程最晚 ▲18:02；176 番 22:35 道草館之後只到共栄バスセンター（23:06），不到旭川駅。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "道草館出發表：10:37 76番 11:29、12:42 76番 13:34、13:42 60番 14:34、14:17 67番 15:19、15:42 76番 16:39、15:52 67番 16:59",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "76 10:37…11:29｜76 12:42…13:34｜60 13:42…14:34｜67 14:17…15:19｜76 15:42…16:39｜67 15:52…16:59",
+      "verdict": "verified",
+      "notes": "67 番從道草館繞東神楽回旭川駅。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "道草館出發表：16:02 60番 16:59、17:17 67番 18:24、▲18:02 60番 18:59、18:17 67番 19:19、18:42 76番 19:34、19:42 76番 20:33",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "60 16:02…16:59｜67 17:17…18:24｜60 ▲18:02…▲18:59｜67 18:17…19:19｜76 18:42…19:34｜76 19:42…20:33",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "いで湯號是往旭岳的巴士，從旭川站出發，經過旭川機場與道草館",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川市内から東神楽町～旭川空港～東川町を経由し旭岳を結ぶ定期路線バス",
+      "verdict": "verified",
+      "notes": "起點其實是 6条9丁目（7:04），經旭川站；對讀者而言從旭川站上車，不影響判斷。"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "在旭川站是從9號乘車處上車，和往東川的路線巴士不在同一處",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川駅（のりば9）",
+      "verdict": "verified",
+      "notes": "路線巴士 60、67、76、176 是旭川駅⑤（orikomi 時刻表）。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "在旭川機場出了4號出入口，左手邊就是公車站，往東川與旭岳的車停2號乘車處",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+      "sourceTitle": "バスのご案内｜旭川空港",
+      "sourceQuote": "出入口4を出て左側にバスのりばがございます。旭川駅方面はバスのりば①、その他はバスのりば②でございます。",
+      "verdict": "verified",
+      "notes": "同頁乘車處表列「東川・旭岳」。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "いで湯號往旭岳：旭川站⑨ 7:15、9:15、12:15、14:15；旭川機場 8:00、10:00、13:00、15:00；道草館 8:12、10:12、13:12、15:12；到旭岳 9:03、11:03、14:03、16:03",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川駅（のりば9） 7:15 9:15 12:15 14:15｜旭川空港 8:00 10:00 13:00 15:00｜ひがしかわ道草館 8:12 10:12 13:12 15:12｜旭岳 9:03 11:03 14:03 16:03",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "いで湯號回程：旭岳 9:55、11:55、14:55、16:55；道草館 10:34、12:34、15:34、17:34；旭川機場 10:50、12:50、15:50、17:50；到旭川站 11:33、13:33、16:33、18:33",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳 9:55 11:55 14:55 16:55｜ひがしかわ道草館 10:34 12:34 15:34 17:34｜旭川空港 10:50 12:50 15:50 17:50｜旭川駅（のりば9） 11:33 13:33 16:33 18:33",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "從機場到道草館約12分鐘、500日圓，從旭川站約57分鐘、1,110日圓",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/10/un066_2026.12.pdf",
+      "sourceTitle": "普通旅客運賃表 運賃改定日:令和08年12月01日 系統:旭川空港経由旭岳線",
+      "sourceQuote": "旭川空港→ひがしかわ道草館 500（7.6）｜旭川駅→ひがしかわ道草館 1110（24.9）",
+      "verdict": "verified",
+      "notes": "9/1 版（un66_2026.09.pdf）同樣 1,110／500，12/1 這兩格不是紅字（不變）；時間 8:00→8:12、7:15→8:12。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "從旭川站到東川，搭60番是880日圓，比いで湯號便宜",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/08/un60_2026.09.pdf",
+      "sourceTitle": "普通旅客運賃表 運賃改定日:令和08年09月01日 系統:60番 東川線",
+      "sourceQuote": "旭川駅→ひがしかわ道草館 880（15.2）",
+      "verdict": "verified",
+      "notes": "880＜1,110。60 番不在 12/1 改定名單（price-revision_2026.12.pdf）。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "道草館到旭岳大人1,450日圓、小孩730日圓",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "ひがしかわ道草館～旭岳 大人1,450円/小人730円",
+      "verdict": "verified",
+      "notes": "12/1 版運賃表道草館列旭岳 1450 不變。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "中途在道草館下車，同方向的下一班要等2到3小時",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "ひがしかわ道草館 8:12 10:12 13:12 15:12",
+      "verdict": "verified",
+      "notes": "間隔 2、3、2 小時。中途下車就是兩段各付普通車資：運賃表有旭川空港→道草館 500、道草館→旭岳 1,450，合計 1,950，比直達旭川空港～旭岳 1,650（官網「旭川空港～旭岳 大人1,650円」）多 300 日圓；官網沒有途中下車票或轉乘優惠的說明。正文目前沒寫分段付款或合計，只列兩段車資，沒有錯。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "いで湯號照時刻表發車，不會等誤點的班機，飛機晚到就改搭下一班",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "66番旭岳線「いで湯号」は定時運行の路線バスにつき旭川空港の航空機接続は行っておりません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "旭川站前的巴士綜合案內所與機場抵達大廳有無現金售票機，收信用卡與QR支付，畫面有中文",
+      "sourceUrl": "http://www.asahikawa-denkikidou.jp/%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%83%ac%e3%82%b9%e6%b1%ba%e6%b8%88%e7%94%a8%e8%87%aa%e5%8b%95%e5%88%b8%e5%a3%b2%e6%a9%9f/",
+      "sourceTitle": "キャッシュレス決済用自動券売機｜旭川電気軌道",
+      "sourceQuote": "クレジットカードとＱＲ決済サービスを利用してバス乗車券の購入…／券売機は日本語のほか英語、中国語、韓国語の表示が可能です。／旭川電気軌道総合案内所（Tsuruha Bldg.旭川駅前１F）／旭川空港（到着ロビー内）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "來回得買兩張單程票，沒有來回折扣",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "往復でご利用の方はきっぷを2枚ご購入ください（往復割引はございません）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "市中心的咖啡店走路就到",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/modelplan",
+      "sourceTitle": "町あるき モデルプラン｜ひがしかわ観光協会",
+      "sourceQuote": "東川の中心部には徒歩でいける範囲にいくつも素敵なカフェがあり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "町內沒有排班計程車，要叫車得打電話預約",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/about",
+      "sourceTitle": "東川町について｜ひがしかわ観光協会",
+      "sourceQuote": "東川町内にタクシー乗り場はありません。タクシーを利用する場合は電話予約をするか、直接タクシー会社でお申込み下さい。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "沒有積雪的季節很適合騎自行車，市區外圍是一格格的水田，坡度小，邊騎邊看田園、找工房與咖啡店剛好",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/activity",
+      "sourceTitle": "アクティビティ｜ひがしかわ観光協会",
+      "sourceQuote": "水田が碁盤の目のように並んでおり、傾斜も少ないため気軽に田園風景を見ながらサイクリングを楽しむことができます。個性的なクラフトギャラリーや一軒家のカフェなどを目指して",
+      "verdict": "verified",
+      "notes": "「雪のない時期であれば自転車で」見 modelplan。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "道草館的自行車出租在RESERVA預約網站訂，營業9:00到17:00",
+      "sourceUrl": "https://reserva.be/higashikawa_rental/about",
+      "sourceTitle": "ひがしかわレンタサイクル｜RESERVA",
+      "sourceQuote": "道の駅ひがしかわ道草館を拠点に自転車をレンタルすることが可能です。…ご利用可能時間 9:00～17:00",
+      "verdict": "verified",
+      "notes": "第 2 輪 curl（一般 UA，沒有偽裝或繞過）重讀，回應 47KB，內容完整一致。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "e-bike只有一台，想騎e-bike最好事先上網訂好",
+      "sourceUrl": "https://reserva.be/higashikawa_rental",
+      "sourceTitle": "ひがしかわレンタサイクル｜RESERVA",
+      "sourceQuote": "ミニベロモデル【e-bike】BLULANS X2 ￥2,000（税込）／3時間（e-bike 只列這一台）",
+      "verdict": "verified",
+      "notes": "第 2 輪 curl 重讀 RESERVA 列表頁（89KB，與第 1 輪同大小、內容完整，沒有機器人檢查），e-bike 只有 BLULANS X2 一筆，其他是子ども用自転車 A／B、クロスバイク C1～C11、ロードバイク S／M／L。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "騎車經驗多的人，還有從キトウシ森林公園出發、繞忠別湖一圈約48公里的路線",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/activity",
+      "sourceTitle": "アクティビティ｜ひがしかわ観光協会",
+      "sourceQuote": "経験者であれば、キトウシ森林公園から忠別湖を目指し、湖畔を一周して戻る約48㎞のルートがおすすめ。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "租車價格：公路車、クロスバイク 3小時2,500日圓、一天6,000日圓；電動小徑車e-bike 3小時2,000日圓、一天4,000日圓；兒童車，身高129到145公分 3小時500日圓、一天2,000日圓",
+      "sourceUrl": "https://reserva.be/higashikawa_rental",
+      "sourceTitle": "ひがしかわレンタサイクル｜RESERVA",
+      "sourceQuote": "クロスバイク ￥2,500（税込）／3時間 ￥6,000（税込）／日｜ミニベロモデル【e-bike】BLULANS X2 ￥2,000（税込）／3時間 ￥4,000（税込）／日｜【129cm ～ 145cm】子ども用自転車 ￥500／3時間 ￥2,000／日",
+      "verdict": "verified",
+      "notes": "ロードバイク同為 2,500／6,000。預約頁只列一台 e-bike（BLULANS X2）。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "共享電動輔助自行車COGICOGI在旭川機場、道草館與きとろん等4個據點之間能甲借乙還。用手機App開鎖，24小時都能借，不必到櫃台",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/assist-bike2026/",
+      "sourceTitle": "アシスト付き自転車シェアリング｜ひがしかわ観光協会",
+      "sourceQuote": "下記4つの拠点間で自転車の乗り捨てができます。□旭川空港 到着口４番出入口 □道の駅ひがしかわ「道草館」 □ yoshinori coffee 旭川駅前店 □キトウシの森きとろん／24時間どの時間でも非対面で借りることが出来る／スマートフォンアプリ「COGICOGI」が必要です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "町營的しずくらいん是要預約的共乘巴士，町外的旅客也能搭，車資一樣是每人每次100日圓，下車付現金",
+      "sourceUrl": "https://higashikawa-town.jp/storage/files/files/%E3%81%97%E3%81%9A%E3%81%8F%E3%82%89%E3%81%84%E3%82%93FAQ.pdf",
+      "sourceTitle": "東川町乗合バスしずくらいん よくあるお問い合わせＱ＆Ａ",
+      "sourceQuote": "Ａ２:東川町内にお住まいの方だけでなく、どなたでもご利用いただけます。／Ａ４:現金または【東川版Asaca】（現金チャージ）でお支払いください。",
+      "verdict": "verified",
+      "notes": "車資見しずくらいんご案內 PDF「利用料金は、小学生以上一律100円」，表上町民與町民以外都是 100 円、降車時付款。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "運行時間平日6:30到21:30、週末與假日7:50到18:50",
+      "sourceUrl": "https://higashikawa-town.jp/storage/files/files/%E3%81%97%E3%81%9A%E3%81%8F%E3%82%89%E3%81%84%E3%82%93%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85%EF%BC%88R8.4.1%E6%94%B9%E6%AD%A3%EF%BC%89.pdf",
+      "sourceTitle": "東川町乗合バスしずくらいんご案内（令和８年４月１日改正）",
+      "sourceQuote": "平日 １便 6：30 道草館到着 … 17便 21：30／土日祝 １便 7：50 道草館到着 … 11便 18：50",
+      "verdict": "verified",
+      "notes": "第 1 輪 C47 拿掉班數後的寫法。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "キトウシの森與きとろん都有上下車的點",
+      "sourceUrl": "https://higashikawa-town.jp/storage/files/files/%E3%81%97%E3%81%9A%E3%81%8F%E3%82%89%E3%81%84%E3%82%93%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85%EF%BC%88R8.4.1%E6%94%B9%E6%AD%A3%EF%BC%89.pdf",
+      "sourceTitle": "東川町乗合バスしずくらいんご案内（令和８年４月１日改正）",
+      "sourceQuote": "乗降ポイントは、中心市街地28か所のほか、郊外10か所（学校、コミュニティセンター(コミセン)、キトウシの森、きとろん、おひさま）の計38か所に設置しています",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "第一次搭要用網路或LINE登錄姓名、地址與常用的站，預約最晚到前一天18:00",
+      "sourceUrl": "https://higashikawa-town.jp/storage/files/files/%E3%81%97%E3%81%9A%E3%81%8F%E3%82%89%E3%81%84%E3%82%93FAQ.pdf",
+      "sourceTitle": "東川町乗合バスしずくらいん よくあるお問い合わせＱ＆Ａ",
+      "sourceQuote": "Ａ６:初回利用時のみ、事前登録が必要です。事前登録は、インターネットまたはLINE より予約システムにアクセスのうえ、お名前・ご住所・よく使うバス停など情報の入力を／電話予約はご利用日の前日18 時が締め切りとなります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "當天只有早上9點以後的班次能用網路或LINE訂，最晚出發前45分鐘",
+      "sourceUrl": "https://higashikawa-town.jp/storage/files/files/%E3%81%97%E3%81%9A%E3%81%8F%E3%82%89%E3%81%84%E3%82%93%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85%EF%BC%88R8.4.1%E6%94%B9%E6%AD%A3%EF%BC%89.pdf",
+      "sourceTitle": "東川町乗合バスしずくらいんご案内（令和８年４月１日改正）",
+      "sourceQuote": "朝9時台以降の便に限り、➀インターネットまたは②LINEによる予約のみ、運行時間の45分前まで受け付けます（③電話は当日予約不可）",
+      "verdict": "verified",
+      "notes": "FAQ 也寫「6 時～8 時台の便については、前日18 時以降のご予約（当日予約）はできません」。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "路線照預約排，上車時刻前一天傍晚才通知",
+      "sourceUrl": "https://higashikawa-town.jp/storage/files/files/%E3%81%97%E3%81%9A%E3%81%8F%E3%82%89%E3%81%84%E3%82%93FAQ.pdf",
+      "sourceTitle": "東川町乗合バスしずくらいん よくあるお問い合わせＱ＆Ａ",
+      "sourceQuote": "運行ルートは予約状況によって決められ、それによってお迎えの時刻と目的地までの所要時間が異なります。／実際の乗車時刻については利用日前日の18:00～18:30の間に通知いたします。",
+      "verdict": "verified",
+      "notes": "前一天 18 點以後才訂的，當天運行時間 30 分鐘前通知；正文寫一般情況，可接受。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "12月31日到1月5日停駛",
+      "sourceUrl": "https://higashikawa-town.jp/portal/kurashi/panel/179",
+      "sourceTitle": "東川町乗合バスしずくらいん｜東川町",
+      "sourceQuote": "１２月３１日～１月５日は運行しておりません",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "市中心的せんとぴゅあ與きとろん之間另有循環巴士，車程約5分鐘，せんとぴゅあ10:00、13:30、16:30發，きとろん13:15、16:15、20:00發",
+      "sourceUrl": "https://www.higashikawa-kitoron.jp/access/",
+      "sourceTitle": "アクセス｜キトウシの森きとろん",
+      "sourceQuote": "循環バス（せんとぴゅあ出発 ⇄ キトウシの森きとろん）所要時間 約5分｜せんとぴゅあ：10:00発、13:30発、16:30発｜キトウシの森きとろん：13:15発、16:15発、20:00発",
+      "verdict": "verified",
+      "notes": "HTML 表格兩欄確認左欄せんとぴゅあ、右欄きとろん。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "道の駅ひがしかわ「道草館」在往旭岳溫泉的公路旁，是大雪山國立公園的入口",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/michikusa/",
+      "sourceTitle": "道の駅ひがしかわ「道草館」｜ひがしかわ観光協会",
+      "sourceQuote": "日本最大の大雪山国立公園の玄関口に位置し、北海道第2 の都市である旭川市と旭岳・天人峡温泉を結ぶ道道旭川旭岳温泉線沿いに位置しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "巴士站、自行車出租與服務台都在這裡，適合當進町的第一站",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/michikusa/",
+      "sourceTitle": "道の駅ひがしかわ「道草館」｜ひがしかわ観光協会",
+      "sourceQuote": "まずはそれを手に入れてから東川町めぐりを楽しむのがおすすめです。",
+      "verdict": "verified",
+      "notes": "巴士站名「ひがしかわ道草館」（時刻表）；自行車出租見 RESERVA「道草館を拠点に」。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "服務台發美食地圖、工藝地圖與「旭岳・天人峡マップ」",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/michikusa/",
+      "sourceTitle": "道の駅ひがしかわ「道草館」｜ひがしかわ観光協会",
+      "sourceQuote": "オリジナルマップ「旭岳・天人峡マップ」「クラフトマップ」「グルメマップ」は常に更新し最新の情報を提供しています",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "很多店會依季節改營業時間與公休，最新資訊以這份美食地圖為準",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/modelplan",
+      "sourceTitle": "町あるき モデルプラン｜ひがしかわ観光協会",
+      "sourceQuote": "季節によって営業時間や休業日が変更になるお店もお多いため、東川町内のグルメスポットの最新情報は道の駅ひがしかわ道草館内のインフォメーションにてお配りしているグルメマップをご利用ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "特產區夏天到秋天有剛採的蔬菜，也賣町內店家做的飯糰、麵包與甜點",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/michikusa/",
+      "sourceTitle": "道の駅ひがしかわ「道草館」｜ひがしかわ観光協会",
+      "sourceQuote": "夏から秋にかけては取れたての新鮮野菜が並び、朝早くから賑わっています。町内から配達されるおにぎり、サンドイッチ、パン、スイーツは人気のため",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "霜淇淋「きらり」附一片雪結晶形狀的派，霜淇淋櫃9:00開到16:00，7月與8月開到17:00",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/michikusa/",
+      "sourceTitle": "道の駅ひがしかわ「道草館」｜ひがしかわ観光協会",
+      "sourceQuote": "ソフトクリーム「きらり」は雪の結晶型のパイが添えられ／ソフトクリーム売店 9:00 ～ 16:00 /～17:00（7 月～ 8 月のみ）※営業時間短縮の場合あり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "道草館表：地址東川町東町1丁目1-15；開館4～9月9:00～18:00，10～3月9:00～17:00；休館12月31日～1月4日；廁所全年24小時",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/michikusa/",
+      "sourceTitle": "道の駅ひがしかわ「道草館」｜ひがしかわ観光協会",
+      "sourceQuote": "上川郡東川町東町1 丁目1 番15 号／9:00～18:00（4月～9月）、9:00～17:00（10月～3月）／年末年始（12/31 ～ 1/4） お手洗いは一年中24時間ご利用できます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "道草館表：停車普通車51台、大型車2台；巴士站ひがしかわ道草館",
+      "sourceUrl": "https://www.hokkaido-michinoeki.jp/michinoeki/2668/",
+      "sourceTitle": "道の駅ひがしかわ「道草館」｜北海道の道の駅",
+      "sourceQuote": "大型：2台 普通車：51台",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "せんとぴゅあI在市中心的北町，藝廊常設展示「織田コレクション」。這是椅子研究者織田憲嗣的收藏，展出以北歐為主的椅子與生活用品",
+      "sourceUrl": "https://higashikawa-town.jp/CENTPURE/facilityinfo/centpure1",
+      "sourceTitle": "せんとぴゅあⅠ 施設案内｜東川町",
+      "sourceQuote": "北欧家具を中心とした「織田コレクション」の常設展示…※椅子研究家の織田憲嗣氏が所有する椅子等の生活日用品に関する資料群／せんとぴゅあⅠ 〒071-1426北海道上川郡東川町北町1丁目1番1号",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "館內咖啡11:30開到17:00",
+      "sourceUrl": "https://higashikawa-town.jp/CENTPURE/facilityinfo/centpure1",
+      "sourceTitle": "せんとぴゅあⅠ 施設案内｜東川町",
+      "sourceQuote": "カフェ １１：３０〜１７：００",
+      "verdict": "verified",
+      "notes": "第 1 輪 C61 刪掉公休後的句子。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "對面的Roaster Coaster外帶咖啡，春天到秋天能拿到せんとぴゅあ的中庭坐著喝",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/roaster-coaster/",
+      "sourceTitle": "Roaster coaster｜ひがしかわ観光協会",
+      "sourceQuote": "春から秋にかけてはテイクアウトして正面にある「せんとぴゅあ」の中庭やテーブルスペースもゆっくり出来ておすすめです。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "攝影作品則在東川町文化ギャラリー，一般展每人100日圓，國中以下免費",
+      "sourceUrl": "https://higashikawa-town.jp/bunkagallery/facilityinfo",
+      "sourceTitle": "東川町文化ギャラリー 施設案内｜東川町",
+      "sourceQuote": "一般展示 一人100円／企画展示 企画展ごとに設定／※一般・企画展示ともに中学生以下は無料。",
+      "verdict": "verified",
+      "notes": "「優れた写真などを展示」見 modelplan。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "せんとぴゅあ表：地址東川町北町1丁目1-1；藝廊10:00～17:00；休館週一，遇假日改隔天",
+      "sourceUrl": "https://higashikawa-town.jp/CENTPURE/facilityinfo/centpure1",
+      "sourceTitle": "せんとぴゅあⅠ 施設案内｜東川町",
+      "sourceQuote": "ギャラリー 開館時間 １０：００〜１７：００／休館日 月曜、月曜祝日の場合は開館して翌日火曜休館",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "文化ギャラリー：東町1丁目19-8，10:00～17:00，12月31日～1月5日與換展日休",
+      "sourceUrl": "https://higashikawa-town.jp/bunkagallery/facilityinfo",
+      "sourceTitle": "東川町文化ギャラリー 施設案内｜東川町",
+      "sourceQuote": "10：00～17：00（展示内容により最終日が15：00までとなる場合あり）／12月31日～翌年1月5日（年末年始） 作品入替日（展示期間中は無休）／東町1丁目19番8号",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "キトウシ森林公園在市區北側標高457公尺的キトウシ山。園內有步道、露營場、滑雪場、公園高爾夫、卡丁車、小木屋與飯店",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/areaguide/kitoushi/",
+      "sourceTitle": "キトウシの森｜ひがしかわ観光協会",
+      "sourceQuote": "東川町の北側にあるキトウシ山（標高457ｍ）／ハイキングコース、キャンプ場、スキー場、パークゴルフ場、ゴーカートなど／ケビンやホテルなど宿泊場所もあり",
+      "verdict": "verified",
+      "notes": "露營場 2026 季已在 10/23 結束，正文只說園內有露營場，沒寫期間，不算錯。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "高處有仿日本城的展望閣，走步道約30分鐘，從展望台看得到隨季節變色的棋盤狀水田，晚上還有遠方旭川的燈光。展望閣冬季關閉",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/areaguide/kitoushi/",
+      "sourceTitle": "キトウシの森｜ひがしかわ観光協会",
+      "sourceQuote": "高台にある日本のお城を模した展望閣を目指して行くコースは約30分のトレッキングで到着。…碁盤の目のように整った水田が季節ごとに色を変える様子や、町を囲む山並み、遠くに輝く旭川の明かりなどが一望できます。（冬季閉鎖）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "園內的キトウシの森きとろん有大浴場、露天風呂與芬蘭式三溫暖，市區附近要泡湯就到這裡",
+      "sourceUrl": "https://www.higashikawa-kitoron.jp/",
+      "sourceTitle": "キトウシの森きとろん",
+      "sourceQuote": "東川町の豊かな水資源を利用したトロン浴素と露天風呂／眺望も楽しめる本格フィンランド式サウナ",
+      "verdict": "verified",
+      "notes": "町公所日歸溫泉地圖列的都在旭岳溫泉與天人峽，市區附近只有きとろん。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "泡湯與館內的餐廳都是週三休",
+      "sourceUrl": "https://www.higashikawa-kitoron.jp/",
+      "sourceTitle": "キトウシの森きとろん",
+      "sourceQuote": "休館日 水曜日／レストラン定休日 水曜日（火曜日はランチのみの営業）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "公園高爾夫一天600日圓，每年的營業期間以キトウシの森官網為準，2026年是4月25日到10月31日",
+      "sourceUrl": "https://www.kazokuryokoumura.jp/parkgolf/",
+      "sourceTitle": "2026年 パークゴルフ場情報 - キトウシの森",
+      "sourceQuote": "キトウシパークゴルフ場 営業期間（予定） 2026年4月25日（土）～10月31日（土）／一般（高校生以上） １日利用料金 600円",
+      "verdict": "verified",
+      "notes": "官網每年發「20XX年パークゴルフ場情報」，「以官網為準」有依據。同頁 4/18 起的是東川親水河川公園パークゴルフ場，不是キトウシ。"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "不開車，從せんとぴゅあ搭約5分鐘的循環巴士最直接，或在道草館租自行車騎過去",
+      "sourceUrl": "https://www.higashikawa-kitoron.jp/access/",
+      "sourceTitle": "アクセス｜キトウシの森きとろん",
+      "sourceQuote": "循環バス（せんとぴゅあ出発 ⇄ キトウシの森きとろん） 所要時間 約5分",
+      "verdict": "verified",
+      "notes": "自行車出租見 RESERVA「道草館を拠点に自転車をレンタル」。「最直接」是編輯判斷：しずくらいん要前一天預約、時刻前一天傍晚才定（FAQ），循環巴士定時、約 5 分。"
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "キトウシ表：道草館開車約7分鐘",
+      "sourceUrl": "https://www.higashikawa-kitoron.jp/access/",
+      "sourceTitle": "アクセス｜キトウシの森きとろん",
+      "sourceQuote": "東川町中心地（道の駅）> キトウシの森 約 7 分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "キトウシ表：停車約300台，免費",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/areaguide/kitoushi/",
+      "sourceTitle": "キトウシの森｜ひがしかわ観光協会",
+      "sourceQuote": "お車をご利用のかたは約300台の無料駐車場がご利用いただけます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "きとろん溫浴10:00～22:00，最後受理20:30，週三休館",
+      "sourceUrl": "https://www.higashikawa-kitoron.jp/",
+      "sourceTitle": "キトウシの森きとろん",
+      "sourceQuote": "温浴 10:00―22:00（最終受付 20:30）／休館日 水曜日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "入浴大人1,000日圓，國中小學生500日圓，租毛巾300日圓",
+      "sourceUrl": "https://www.higashikawa-kitoron.jp/guide/",
+      "sourceTitle": "ご利用案内｜キトウシの森きとろん",
+      "sourceQuote": "大人（高校生以上）1,000円 小人（小・中学生） 500円 幼児（無料）／レンタルタオル 300円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "從市區往旭岳的路上會經過大雪旭岳源水，這處湧泉誰都能免費取水。取水處全年開放，冬天停車場也會除雪",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/water",
+      "sourceTitle": "大雪旭岳源水｜ひがしかわ観光協会",
+      "sourceQuote": "「大雪旭岳源水岩」の取水場では、どなたもご自由に水をくみ取ることができます。冬期間も駐車場と取水場付近はきれいに除雪されており、一年を通してご利用いただけます。",
+      "verdict": "verified",
+      "notes": "2026 年 6/11～6/30 取水處因棕熊關閉、7/1 重開，木道仍封閉（info-kuma 公告），屬臨時措施，正文不寫符合規則。"
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "搭いで湯號也到得了「旭岳源水公園前」站，從道草館約22分鐘、950日圓",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "ひがしかわ道草館 8:12｜旭岳源水公園前 8:34",
+      "verdict": "verified",
+      "notes": "950 日圓見 un066_2026.12.pdf 道草館列「旭岳源水公園前 950（17.7）」，不是紅字，12/1 前後相同。"
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "往旭岳的車8:34、10:34、13:34、15:34到這站，回旭川方向10:14、12:14、15:14、17:14發",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳源水公園前 8:34 10:34 13:34 15:34｜（旭岳→旭川市内）旭岳源水公園前 10:14 12:14 15:14 17:14",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "繼續往山裡是忠別湖，湖邊有幾處觀景停車處，晴天沒風時湖面會倒映旭岳",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/areaguide",
+      "sourceTitle": "エリアガイド｜ひがしかわ観光協会",
+      "sourceQuote": "忠別湖畔には景観の良い駐車帯が数か所あり、晴れた穏やかな日には湖面に旭岳の姿が写る美しい景色をご覧になれます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "源水表：取水全年開放，免費；廁所11月～4月關閉；停車小型車12台、大型車2台",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/water",
+      "sourceTitle": "大雪旭岳源水｜ひがしかわ観光協会",
+      "sourceQuote": "利用：年中無休 ※トイレは11月～4月閉鎖／駐車場：小型 12台 大型 2台",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "以キトウシの森為起點的クラフト街道，沿路散著附設藝廊的木工與陶藝工房",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/areaguide/kitoushi/",
+      "sourceTitle": "キトウシの森｜ひがしかわ観光協会",
+      "sourceQuote": "キトウシの森を始点としたクラフト街道は、ウッドクラフトや陶芸作品のギャラリーを併設した工房が点在しており",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "北の住まい設計社把町內廢校的小學改成工房，從道草館開車約15分鐘，園區有家具與生活雜貨展示間、食品館、咖啡與麵包店",
+      "sourceUrl": "https://www.kitanosumaisekkeisha.com/",
+      "sourceTitle": "北の住まい設計社",
+      "sourceQuote": "北海道東川町の廃校になった小学校を工房に／家具やインテリア雑貨を揃えたショールーム、カフェ&ベーカリーも併設／・東川町道の駅より車で15分程度／■食品館",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "展示間、食品館與咖啡都是週三休，食品館10:00到18:00，咖啡11:00到17:00，餐點14:00最後點餐",
+      "sourceUrl": "https://www.kitanosumaisekkeisha.com/",
+      "sourceTitle": "北の住まい設計社",
+      "sourceQuote": "■食品館 Open 10:00〜18:00 水曜定休／■カフェ Open 11:00〜17:00 水曜定休 食事-14:00 L.O",
+      "verdict": "verified",
+      "notes": "9/29～10/2 的臨時休業已結束（官網公告 10/3 起營業），正文不寫符合規則。"
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "最新營業資訊以官方Instagram為準，出發前看一眼比較保險",
+      "sourceUrl": "https://www.kitanosumaisekkeisha.com/",
+      "sourceTitle": "北の住まい設計社",
+      "sourceQuote": "※営業時間が変更となる場合がございます。最新の情報は インスタグラム をご確認ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "北の住まい表：地址東川町東7號北7線；展示間10:00～18:00，週三休；麵包店週五、六、日與假日10:00～18:00",
+      "sourceUrl": "https://www.kitanosumaisekkeisha.com/",
+      "sourceTitle": "北の住まい設計社",
+      "sourceQuote": "〒071-1437 北海道東川町東7号北７線／【北の住まい設計社 東川ショールーム】 Open 10:00〜18:00 水曜定休／■ベーカリー Open 10:00〜18:00 金曜、土曜、日曜、祝日のみ営業",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "說到東川町美食，主角是咖啡店，市中心就有好幾間",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/modelplan",
+      "sourceTitle": "町あるき モデルプラン｜ひがしかわ観光協会",
+      "sourceQuote": "東川の中心部には徒歩でいける範囲にいくつも素敵なカフェがあり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "yoshinori coffee是農家倉庫改的店面，專做自家烘焙的精品咖啡，以外帶為主",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/yoshinori-coffee/",
+      "sourceTitle": "Yoshinori Coffee｜ひがしかわ観光協会",
+      "sourceQuote": "スペシャルティコーヒーに特化した自家焙煎ビーンズショップ＆コーヒースタンドです。…お店は農家の納屋を改装した自宅兼店舗。カフェスペースはありませんが…テイクアウトで",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "Roaster Coaster是TAISETSU COFFEE的旗艦店，咖啡用法式濾壓壺沖，店裡只有10個座位",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/roaster-coaster/",
+      "sourceTitle": "Roaster coaster｜ひがしかわ観光協会",
+      "sourceQuote": "TAISETSU COFFEEのフラッグシップ店として…ブレンドコーヒーをフレンチプレスでお召し上がりいただけます。…席数が10席と少ないですが",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "CAFEtune用旭岳源水沖咖啡，招牌是夾長香腸的YAMADOG",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/cafetune/",
+      "sourceTitle": "CAFEtune｜ひがしかわ観光協会",
+      "sourceQuote": "旭岳源水のスペシャルティコーヒー…大雪笹豚のロングソーセージを挟んだ『YAMADOG』が人気です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "麵包可以在道草館的特產區買，町內店家做的麵包、甜點與飯糰都擺在那裡",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/michikusa/",
+      "sourceTitle": "道の駅ひがしかわ「道草館」｜ひがしかわ観光協会",
+      "sourceQuote": "町内から配達されるおにぎり、サンドイッチ、パン、スイーツは人気のため昼過ぎには完売することも。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C95",
+      "articleExcerpt": "北の住まい設計社的麵包店只在週五、週六、週日與假日開，從道草館開車約15分鐘",
+      "sourceUrl": "https://www.kitanosumaisekkeisha.com/",
+      "sourceTitle": "北の住まい設計社",
+      "sourceQuote": "■ベーカリー Open 10:00〜18:00 金曜、土曜、日曜、祝日のみ営業／・東川町道の駅より車で15分程度",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C96",
+      "articleExcerpt": "平田とうふ店用大雪山的地下水手工做豆腐，早上6點開門，賣完就收",
+      "sourceUrl": "https://higashikawa-town.jp/portal/meguru",
+      "sourceTitle": "町をめぐる（カフェ・グルメMAP／クラフト・ギャラリーMAP）｜東川町",
+      "sourceQuote": "平田とうふ店 営業時間 6：00～なくなるまで 定休日 1月1.2.3日／大雪山の伏流水を使用した手作り豆腐。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C97",
+      "articleExcerpt": "玄米おむすび ちゃみせ用東川米捏糙米飯糰，週二、週三與週五只開到早上9點",
+      "sourceUrl": "https://higashikawa-town.jp/portal/meguru",
+      "sourceTitle": "町をめぐる（カフェ・グルメMAP／クラフト・ギャラリーMAP）｜東川町",
+      "sourceQuote": "玄米おむすび ちゃみせ 営業時間 火、水、金 7：30～9：00 木、土、日 7：30～14：00 なくなり次第閉店 定休日 月、不定休あり／大雪山の伏流水で育った東川米をふっくら炊き",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "yoshinori coffee 表：精品咖啡、外帶，10:00～18:00，公休週三、週四",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/yoshinori-coffee/",
+      "sourceTitle": "Yoshinori Coffee｜ひがしかわ観光協会",
+      "sourceQuote": "定休日 水曜日・木曜日 営業時間 １０：００〜１８：００",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C99",
+      "articleExcerpt": "Roaster Coaster 表：咖啡，10:00～17:00，公休週日～週二與假日，另有不定休",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/roaster-coaster/",
+      "sourceTitle": "Roaster coaster｜ひがしかわ観光協会",
+      "sourceQuote": "定休日 日・月・火・祝日 不定休あり 営業時間 １０:００～１７:００",
+      "verdict": "verified",
+      "notes": "第 1 輪 C93 修正後。"
+    },
+    {
+      "claimId": "C100",
+      "articleExcerpt": "北の住まい設計社麵包店 表：麵包，10:00～18:00，只開週五、六、日與假日",
+      "sourceUrl": "https://www.kitanosumaisekkeisha.com/",
+      "sourceTitle": "北の住まい設計社",
+      "sourceQuote": "■ベーカリー Open 10:00〜18:00 金曜、土曜、日曜、祝日のみ営業",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C101",
+      "articleExcerpt": "CAFEtune 表：咖啡、YAMADOG，10:00～17:00，公休週四，另有不定休",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/cafetune/",
+      "sourceTitle": "CAFEtune｜ひがしかわ観光協会",
+      "sourceQuote": "定休日 木曜/不定休あり 営業時間 10：00-17：00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "RAKUDA Café 表：咖啡、午餐，11:30～16:00，公休週日～週二，12月中旬～2月底休",
+      "sourceUrl": "https://higashikawa-town.jp/portal/meguru",
+      "sourceTitle": "町をめぐる（カフェ・グルメMAP／クラフト・ギャラリーMAP）｜東川町",
+      "sourceQuote": "RAKUDA Café 営業時間 11：30～16：00 ランチ～14：00 定休日 日、月、火 12月中旬～2月末まで休み",
+      "verdict": "verified",
+      "notes": "只有町公所地圖一個來源（町公所是官方）。"
+    },
+    {
+      "claimId": "C103",
+      "articleExcerpt": "平田とうふ店 表：6:00開到賣完，公休1月1日～3日；ちゃみせ 表：週二、三、五7:30～9:00，週四、六、日7:30～14:00，週一休，另有不定休",
+      "sourceUrl": "https://higashikawa-town.jp/portal/meguru",
+      "sourceTitle": "町をめぐる（カフェ・グルメMAP／クラフト・ギャラリーMAP）｜東川町",
+      "sourceQuote": "平田とうふ店 6：00～なくなるまで 定休日 1月1.2.3日／ちゃみせ 定休日 月、不定休あり",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "町公所的美食地圖列了約60家店，各有不同公休日",
+      "sourceUrl": "https://higashikawa-town.jp/portal/meguru",
+      "sourceTitle": "町をめぐる（カフェ・グルメMAP／クラフト・ギャラリーMAP）｜東川町",
+      "sourceQuote": "カフェ・グルメMAP（各店に営業時間・定休日を掲載）",
+      "verdict": "verified",
+      "notes": "カフェ・グルメMAP 區塊數到 60 多家（營業時間欄 68 筆含少數重複），「約60家」可接受。"
+    },
+    {
+      "claimId": "C105",
+      "articleExcerpt": "表上沒列的，還有自製果醬的Tam Jam、做米粉可麗露的Wednesday café&bake，以及讃岐うどん千幸、石臼蕎麦 橅等",
+      "sourceUrl": "https://higashikawa-town.jp/portal/meguru",
+      "sourceTitle": "町をめぐる（カフェ・グルメMAP／クラフト・ギャラリーMAP）｜東川町",
+      "sourceQuote": "ジャム＆カフェ Tam Jam…無添加のジャムの販売／Wednesday café&bake…東川町産の素材で焼き上げた【米粉のカヌレ】／讃岐うどん 千幸／石臼蕎麦 橅（ぶな）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C106",
+      "articleExcerpt": "東川町有6家酒廠，日本酒、葡萄酒、啤酒與精釀琴酒都有",
+      "sourceUrl": "https://michizakura.jp/2026/08/397/",
+      "sourceTitle": "三千櫻SHOP 2026年9月定休日のお知らせ - 三千櫻酒造",
+      "sourceQuote": "東川町にある酒蔵（日本酒、ワイン、ビール、クラフトジン）6社が集合し",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C107",
+      "articleExcerpt": "三千櫻酒造離道草館開車約5分鐘，酒藏目前不開放參觀，從入口與店內窗戶看得到一部分",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_12278.html",
+      "sourceTitle": "三千櫻酒造｜HOKKAIDO LOVE!",
+      "sourceQuote": "※現在、酒蔵見学は実施しておりません。エントランス及びショップ内の窓から蔵の一部を見ることができます／●車：道の駅ひがしかわ「道草館」から約5分",
+      "verdict": "verified",
+      "notes": "北海道觀光振興機構的官方觀光網站。"
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "商店10:00到15:30，週二公休，遇假日照常營業",
+      "sourceUrl": "https://michizakura.jp/2026/08/397/",
+      "sourceTitle": "三千櫻SHOP 2026年9月定休日のお知らせ - 三千櫻酒造",
+      "sourceQuote": "1日（火）…8日（火）15日（火）29日（火）／祝日の21日・22日・23日は10：00～15：30まで営業いたします。",
+      "verdict": "verified",
+      "notes": "HOKKAIDO LOVE! 也寫 10:00-15:30、休業日 火曜日。官網每月公告公休，2026 年 9 月另有 9/6（日）臨時休；10 月以後的公告官網還沒有。"
+    },
+    {
+      "claimId": "C109",
+      "articleExcerpt": "丹丘蒸留所用旭岳的湧水做威士忌與琴酒，商店10:00到17:00、全年無休",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/tankyu-distillery/",
+      "sourceTitle": "丹丘蒸留所（TANKYU DISTILLERY）｜ひがしかわ観光協会",
+      "sourceQuote": "大雪山旭岳の湧水と北海道の厳選素材を用い、ウイスキーやクラフトジンを醸す蒸留所です。／定休日 なし 営業時間 10:00〜17:00（ショップ）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "參觀蒸餾所要預約，每人2,000日圓、一次最多9人，參觀後可以試飲",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/tankyu-distillery/",
+      "sourceTitle": "丹丘蒸留所（TANKYU DISTILLERY）｜ひがしかわ観光協会",
+      "sourceQuote": "見学ツアー（要予約・¥2,000）では、仕込みから蒸留までの工程をご案内し、テイスティングもお楽しみいただけます。／見学ツアー：要予約（1回最大9名）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C111",
+      "articleExcerpt": "NATURES Brewing是精釀啤酒廠，附設啤酒吧，營業15:00到21:00，週一、週四休",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/natures-brewing/",
+      "sourceTitle": "NATURES Brewing｜ひがしかわ観光協会",
+      "sourceQuote": "クラフトビールのブルワリー＆タップルームです。／定休日 月曜日、木曜日 営業時間 15：00～21：00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "選物店Less Higashikawa賣東川做的家具、衣服、皮件與飾品，也有書與音樂。營業12:00到18:00，週二、週三休，另有不定休",
+      "sourceUrl": "https://higashikawa-town.jp/portal/meguru",
+      "sourceTitle": "町をめぐる（カフェ・グルメMAP／クラフト・ギャラリーMAP）｜東川町",
+      "sourceQuote": "Less Higashikawa 営業時間 12:00~18:00 定休日 火、水、不定休／東川で作られる家具や洋服、服飾雑貨、革小物、アクセサリー等を…書籍、音楽など",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C113",
+      "articleExcerpt": "吃的伴手禮，道草館的特產區買得到平田とうふ店、Tam Jam、ちゃみせ與JA東川等町內品牌",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/michikusa/",
+      "sourceTitle": "道の駅ひがしかわ「道草館」｜ひがしかわ観光協会",
+      "sourceQuote": "Tam Jam／JA東川／平田とうふ店／平田こうじ店／玄米おむすび ちゃみせ（物産品紹介）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C114",
+      "articleExcerpt": "キトウシの森的物產中心也賣東川特產，4月到9月開到17:00，10月到隔年3月開到16:30",
+      "sourceUrl": "https://www.kazokuryokoumura.jp/about/",
+      "sourceTitle": "施設案内｜キトウシ森林公園家族旅行村",
+      "sourceQuote": "物産センター（キトウシの森管理事務所） 夏期間( 4月1日～ 9月30日) 9:00～17:00 冬期間(10月1日～3月31日) 9:30～16:30／物産センターでは東川町の特産品などを展示販売しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C115",
+      "articleExcerpt": "只逛市中心的咖啡店、道草館與せんとぴゅあ，半天剛好，早上搭巴士去、午後就能回旭川",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "67 8:50→ひがしかわ道草館 9:42｜76 道草館 12:42→旭川駅 13:34｜60 道草館 13:42→14:34",
+      "verdict": "verified",
+      "notes": "停留 3～4 小時，時刻表支持「早上去、午後回」。"
+    },
+    {
+      "claimId": "C116",
+      "articleExcerpt": "再加上キトウシ森林公園、北の住まい設計社與酒藏，各點之間開車5到15分鐘，排一整天比較適合",
+      "sourceUrl": "https://www.higashikawa-kitoron.jp/access/",
+      "sourceTitle": "アクセス｜キトウシの森きとろん",
+      "sourceQuote": "東川町中心地（道の駅）> キトウシの森 約 7 分",
+      "verdict": "verified",
+      "notes": "北の住まい設計社「道の駅より車で15分程度」（官網）、三千櫻「道草館から約5分」（HOKKAIDO LOVE!）。"
+    },
+    {
+      "claimId": "C117",
+      "articleExcerpt": "騎自行車慢慢繞也差不多一天",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/activity",
+      "sourceTitle": "アクティビティ｜ひがしかわ観光協会",
+      "sourceQuote": "1日かけてのんびりと東川町を探索するのに自転車は最適です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C118",
+      "articleExcerpt": "各店公休日錯開，週六不遇假日，表上的咖啡店、北の住まい設計社的麵包店與三千櫻酒造都有開。RAKUDA Café則在12月中旬到2月底休息",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/roaster-coaster/",
+      "sourceTitle": "Roaster coaster｜ひがしかわ観光協会",
+      "sourceQuote": "定休日 日・月・火・祝日 不定休あり",
+      "verdict": "verified",
+      "notes": "第 1 輪 C111 修正後。逐店重算：yoshinori（休三、四）、Roaster Coaster（休日～火與假日，週六非假日開）、CAFEtune（休四）、RAKUDA（休日～火，12 月中旬～2 月底休，已另句寫明）、北の住まい麵包店（五六日與假日開）、三千櫻（休二）。CAFEtune 與 ちゃみせ 的不定休已寫在表上。"
+    },
+    {
+      "claimId": "C119",
+      "articleExcerpt": "週三北の住まい設計社、yoshinori coffee與きとろん都休，這天最好避開",
+      "sourceUrl": "https://www.kitanosumaisekkeisha.com/",
+      "sourceTitle": "北の住まい設計社",
+      "sourceQuote": "東川ショールーム Open 10:00〜18:00 水曜定休／食品館 水曜定休／カフェ 水曜定休／ベーカリー 金曜、土曜、日曜、祝日のみ営業",
+      "verdict": "verified",
+      "notes": "yoshinori coffee 定休日 水曜日・木曜日（觀光協會）；きとろん 休館日 水曜日（官網）。三家週三都休，Less Higashikawa 週三也休；「最好避開」是有依據的編輯判斷。"
+    },
+    {
+      "claimId": "C120",
+      "articleExcerpt": "隔天一早要上旭岳又不開車，住旭岳溫泉比較方便，從東川搭最早的いで湯號，到旭岳已經9:03",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "ひがしかわ道草館 8:12｜旭岳 9:03",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C121",
+      "articleExcerpt": "旭岳溫泉有7間旅館可住，多半靠いで湯號進出",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/stay",
+      "sourceTitle": "宿泊｜ひがしかわ観光協会",
+      "sourceQuote": "旭岳温泉 ケイズハウス北海道／ラビスタ大雪山／湯元湧駒荘／大雪山白樺荘／旭岳温泉ホテルディアバレー／大雪山山荘／アートヴィレッジ杜季／旭岳温泉ホテルベアモンテ",
+      "verdict": "verified",
+      "notes": "清單 8 間扣掉 Hotel Deer Valley（官網 deervalley.jp「ホテルディアバレーは現在休業中です」）＝7 間。觀光協會溫泉頁寫「宿泊できる施設は9件」，和住宿頁清單不一致；本文用清單數字，與已上線的 asahidake-stay 一致。いで湯號在旭岳溫泉有 4 站（旭岳温泉入口、旭岳キャンプ場、ホテルベアモンテ前、旭岳）。"
+    },
+    {
+      "claimId": "C122",
+      "articleExcerpt": "天人峽溫泉只剩1間，而且沒有大眾運輸",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/tenninkyo/",
+      "sourceTitle": "天人峡｜ひがしかわ観光協会",
+      "sourceQuote": "天人峡への公共交通機関はございません。レンタカーかタクシーをご利用ください。",
+      "verdict": "verified",
+      "notes": "「天人峡温泉では現在1件の温泉施設があり」見 /onsen。"
+    },
+    {
+      "claimId": "C123",
+      "articleExcerpt": "晚上想泡きとろん、隔天在市區逛咖啡店，或幾個人包一棟，就住東川市區。市區與キトウシ一帶多是包棟、民宿與青年旅館，沒有大型飯店",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/stay",
+      "sourceTitle": "宿泊｜ひがしかわ観光協会",
+      "sourceQuote": "キトウシ：LeLien、blooming villa higashikawa、東川ペリカン、キトウシ森林公園家族旅行村／東川町中心部：FOX CONTAINER HOTEL、P-DASH GARDEN、The Peak Villa Suite Hokkaido、クレインハウス、MUSH ROOMS、旅人宿 ゆう、Villaニセウコロコロ",
+      "verdict": "verified",
+      "notes": "兩區 11 間都是包棟、小型民宿或青年旅館；「沒有大型飯店」是由清單推出的判斷，可接受。"
+    },
+    {
+      "claimId": "C124",
+      "articleExcerpt": "FOX CONTAINER HOTEL｜三個貨櫃組成的包棟，四季營業｜官網",
+      "sourceUrl": "https://foxcontainerhotel.com/",
+      "sourceTitle": "FOX CONTAINER HOTEL",
+      "sourceQuote": "宿泊のご予約はこちら／2027年1月、2月の予約受付開始",
+      "verdict": "verified",
+      "notes": "「コンテナ3つを1つにした貸別荘タイプのホテル…四季を通して快適に」見觀光協會住宿頁。"
+    },
+    {
+      "claimId": "C125",
+      "articleExcerpt": "P-DASH GARDEN｜宿舍床位與個室，免費借自行車｜Trip.com",
+      "sourceUrl": "https://us.trip.com/hotels/higashikawa-hotels-list-66865/",
+      "sourceTitle": "Higashikawa hotels｜Trip.com",
+      "sourceQuote": "P-Dash Garden Backpackers",
+      "verdict": "verified",
+      "notes": "設施內容見觀光協會住宿頁「ドミトリールームのベッドと個室、無料Wi-Fi、無料のレンタル自転車」。Trip.com 列表 2026-10-27 curl 仍有。"
+    },
+    {
+      "claimId": "C126",
+      "articleExcerpt": "MUSH ROOMS｜冬天有柴火暖爐，可租單板滑雪板與SUP｜Trip.com",
+      "sourceUrl": "https://us.trip.com/hotels/higashikawa-hotels-list-66865/",
+      "sourceTitle": "Higashikawa hotels｜Trip.com",
+      "sourceQuote": "Mush Rooms",
+      "verdict": "verified",
+      "notes": "設施內容見觀光協會住宿頁「冬は薪ストーブ、夏はＢＢＱ…レンタルでスノーボード、ＳＵＰあります」。"
+    },
+    {
+      "claimId": "C127",
+      "articleExcerpt": "東川ペリカン｜夫婦經營、2間房的葡萄酒小旅館｜官網（Instagram或電話）",
+      "sourceUrl": "https://higashikawa-perican.com/",
+      "sourceTitle": "北海道ワインオーベルジュ 東川PERICAN（ペリカン）",
+      "sourceQuote": "夫婦で営むちいさな宿です。…2部屋をご用意しています。／宿泊のご予約・お問い合わせは Instagram・お電話からも 受付けています。 … Tel. 0166-56-8846",
+      "verdict": "verified",
+      "notes": "第 2 輪重開官網一致。官網另連樂天 Travel，正文不列（本站不用樂天、Jalan），不算錯；Jalan 仍只在 HTML 註解裡。"
+    },
+    {
+      "claimId": "C128",
+      "articleExcerpt": "東川ペリカン也接受用Instagram訂房，不必打電話",
+      "sourceUrl": "https://higashikawa-perican.com/",
+      "sourceTitle": "北海道ワインオーベルジュ 東川PERICAN（ペリカン）",
+      "sourceQuote": "宿泊のご予約・お問い合わせは Instagram・お電話からも 受付けています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C129",
+      "articleExcerpt": "blooming villa higashikawa｜一天一組的3LDK別墅，最多7人、至少3晚｜官網",
+      "sourceUrl": "https://bloomingvillahigashikawa.com/reservation/",
+      "sourceTitle": "Reserve Blooming Villa Higashikawa / ブルーミングヴィラ東川を予約",
+      "sourceQuote": "「リクエスト」 ボタンをクリックすると、予約リクエストが承認のために送信されます。「reservations[at]bloomingvillahigashikawa.com」からリクエスト確認のメールがすぐに届きます。",
+      "verdict": "verified",
+      "notes": "第 1 輪 C121 修正後；最多 7 人、至少 3 晚見官網首頁，3LDK、一天一組見觀光協會住宿頁。"
+    },
+    {
+      "claimId": "C130",
+      "articleExcerpt": "クレインハウス｜屋齡50年老房子改的包棟，一天一組｜官網",
+      "sourceUrl": "https://crane-house.jp/",
+      "sourceTitle": "クレインハウス",
+      "sourceQuote": "ご予約はこちら（https://crane-house.jp/reservation）",
+      "verdict": "verified",
+      "notes": "第 1 輪 C122 修正後。"
+    },
+    {
+      "claimId": "C131",
+      "articleExcerpt": "キトウシ森林公園家族旅行村｜一棟出租的小木屋，A棟可住8人｜官網",
+      "sourceUrl": "https://www.kazokuryokoumura.jp/cabin/",
+      "sourceTitle": "ケビン｜キトウシ森林公園家族旅行村",
+      "sourceQuote": "A棟（平屋・8名様）／ケビンご予約 … ご予約はこちら（https://kitoushinomori.tomarin.co/login/）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C132",
+      "articleExcerpt": "キトウシ的小木屋附家具與炊具，官網有網路預約系統，可以訂到一年後的同月底，但不能指定棟",
+      "sourceUrl": "https://www.kazokuryokoumura.jp/cabin/",
+      "sourceTitle": "ケビン｜キトウシ森林公園家族旅行村",
+      "sourceQuote": "寝具や食器、調理器具が揃っている／各棟には東川町内の家具工房が制作したこだわりの家具／ご予約は一年後の同月末日分まで承っております。／※棟(部屋)の指定はできません！／ご予約はこちら（kitoushinomori.tomarin.co）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C133",
+      "articleExcerpt": "入住15:00、退房10:00，現場刷卡結帳只到17:00",
+      "sourceUrl": "https://www.kazokuryokoumura.jp/cabin/",
+      "sourceTitle": "ケビン｜キトウシ森林公園家族旅行村",
+      "sourceQuote": "チェックイン 15:00 / チェックアウト 10:00／(クレジットでの精算は17:00まで)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C134",
+      "articleExcerpt": "另有舊農家改成的旅人宿ゆう，以男女分開的多人房為主",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/stay",
+      "sourceTitle": "宿泊｜ひがしかわ観光協会",
+      "sourceQuote": "離農した家屋を利用し男女別相部屋を基本として（空きがあれば個室対応可能）旅人宿をやっております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C135",
+      "articleExcerpt": "2026年4月1日入住起，北海道的住宿要另付住宿稅，キトウシ小木屋的住宿稅只收現金",
+      "sourceUrl": "https://www.kazokuryokoumura.jp/cabin/",
+      "sourceTitle": "ケビン｜キトウシ森林公園家族旅行村",
+      "sourceQuote": "※2026年4月1日宿泊分より、別途宿泊税がかかります。(宿泊税のお支払いは現金のみです)",
+      "verdict": "verified",
+      "notes": "同站 2026-02-22 公告標題「北海道宿泊税について」。"
+    },
+    {
+      "claimId": "C136",
+      "articleExcerpt": "寫真之町最熱鬧是7月底到8月上旬，這段時間町內各設施常有攝影相關的活動",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/modelplan",
+      "sourceTitle": "町あるき モデルプラン｜ひがしかわ観光協会",
+      "sourceQuote": "写真甲子園と東川町国際写真フェスティバルの時期にはこれらの施設で写真にまつわるプログラムが実施されていることが多く、町全体がイベントムードで盛り上がります。",
+      "verdict": "verified",
+      "notes": "2026 年甲子園 7/28～31、寫真節主會期 8/1～2（觀光協會活動頁）。"
+    },
+    {
+      "claimId": "C137",
+      "articleExcerpt": "全國高中攝影社比賽「写真甲子園」通常在7月下旬一連4天，2026年是7月28日到31日",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/events",
+      "sourceTitle": "イベント｜ひがしかわ観光協会",
+      "sourceQuote": "例年は7月下旬の4日間で「写真文化首都東川町」とその周辺の地域をステージとし…／開催日：2026年7月28（火）～31日（金）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C138",
+      "articleExcerpt": "東川町國際寫真節每年夏天舉辦，2026年的主會期是8月1日、2日",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/events",
+      "sourceTitle": "イベント｜ひがしかわ観光協会",
+      "sourceQuote": "東川町フォトフェスタは、1985年から毎年夏に行われ／開催日：2026年8月1（土）・2日（日）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C139",
+      "articleExcerpt": "同兩天還有放煙火的どんとこい祭り。2026年8月17日到23日，另有邀請海外學校參加的高校生國際交流寫真節",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/events",
+      "sourceTitle": "イベント｜ひがしかわ観光協会",
+      "sourceQuote": "ひがしかわどんとこい祭り…花火大会は、会場のすぐそばで打ちあがる…開催日：2026年8月1（土）・2日（日）／高校生国際交流写真フェスティバル 開催日：2026年8月17（月）～23日（日）／海外選抜校13校（各国1校）及び日本選抜校3校がフェスティバルへ参加",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C140",
+      "articleExcerpt": "冬天的大活動是ひがしかわ氷まつり，每年1月第三個週末在羽衣公園舉行，2026年是1月17日、18日",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/events",
+      "sourceTitle": "イベント｜ひがしかわ観光協会",
+      "sourceQuote": "例年1月の第三週目の週末に開催されているひがしかわ氷まつり。会場の羽衣公園では…／開催日：2026年1月17（土）・18日（日） 場所：羽衣公園",
+      "verdict": "verified",
+      "notes": "2026 年日期已過，正文有標年份。"
+    },
+    {
+      "claimId": "C141",
+      "articleExcerpt": "會場有分組雪雕比賽、迷你雪人與冰燈，第一天晚上放煙火",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/events",
+      "sourceTitle": "イベント｜ひがしかわ観光協会",
+      "sourceQuote": "グループごとで制作する雪像コンテスト、会場周辺を飾るミニ雪ダルマ、アイスランタンも見ごたえあります。初日の夜に開催の花火大会には",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C142",
+      "articleExcerpt": "RAKUDA Café這類店冬天也會休息",
+      "sourceUrl": "https://higashikawa-town.jp/portal/meguru",
+      "sourceTitle": "町をめぐる（カフェ・グルメMAP／クラフト・ギャラリーMAP）｜東川町",
+      "sourceQuote": "RAKUDA Café 定休日 日、月、火 12月中旬～2月末まで休み",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C143",
+      "articleExcerpt": "キャンモアスキーヴィレッジ離市中心開車約5分鐘，有8條不同難度的滑道，適合全家一起滑",
+      "sourceUrl": "https://www.canmore-ski.jp/",
+      "sourceTitle": "キャンモアスキーヴィレッジ - CANMORE SKI VILLAGE",
+      "sourceQuote": "コース状況 ラビットコース／メイプルコース／ロッキーコース／カリブーコース／マーモットコース／バッファローコース／キャニオンコース／デスバレーコース",
+      "verdict": "verified",
+      "notes": "第 1 輪 C135 修正後；離中心 5 分、家庭見觀光協會活動頁。"
+    },
+    {
+      "claimId": "C144",
+      "articleExcerpt": "還有夜間滑雪、越野滑雪道、器材租借與教室",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/areaguide/kitoushi/",
+      "sourceTitle": "キトウシの森｜ひがしかわ観光協会",
+      "sourceQuote": "クロスカントリーコースも備わり…ナイターも完備しており…各種レンタル品も充実し…初心者から上級者まで各レベルに対応したスクールもあります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C145",
+      "articleExcerpt": "營業9:00到20:30，夜間滑雪16:30開始，年底年初會縮短",
+      "sourceUrl": "https://www.canmore-ski.jp/",
+      "sourceTitle": "キャンモアスキーヴィレッジ - CANMORE SKI VILLAGE",
+      "sourceQuote": "営業時間：9:00～20:30(ナイター 16:30～20:30)",
+      "verdict": "verified",
+      "notes": "年末年始縮短見 HOKKAIDO LOVE!「※年末年始は営業時間を短縮して営業」。"
+    },
+    {
+      "claimId": "C146",
+      "articleExcerpt": "キトウシ森林公園冬天可以穿雪鞋走白樺林道，公園就有雪鞋租借",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/activity",
+      "sourceTitle": "アクティビティ｜ひがしかわ観光協会",
+      "sourceQuote": "キトウシ森林公園では白樺並木を抜けるコース…／スノーシューは キトウシ森林公園 、 旭岳ビジターセンター でレンタルを実施しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C147",
+      "articleExcerpt": "忠別湖有SUP活動，以及從湖上划獨木舟、騎車再登旭岳的SEA TO SUMMIT",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/events",
+      "sourceTitle": "イベント｜ひがしかわ観光協会",
+      "sourceQuote": "カムイミンタラ SUP FES in ひがしかわ…場所：忠別湖／大雪旭岳大会は忠別湖でカヤック、忠別湖から旭岳温泉までを自転車、その後ロープウエイに乗車し、旭岳の山頂を目指すもので、2011年に第1回大会を実施しました。",
+      "verdict": "verified",
+      "notes": "第 1 輪 C139 刪掉「每年」後。"
+    },
+    {
+      "claimId": "C148",
+      "articleExcerpt": "2026年分別在6月27日、28日與7月4日、5日舉行",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/events",
+      "sourceTitle": "イベント｜ひがしかわ観光協会",
+      "sourceQuote": "カムイミンタラ SUP FES 開催日：2026年6月27日（土）・28日（日）／大雪旭岳SEA TO SUMMIT 開催日：2026年7月4（土）・5日（日）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C149",
+      "articleExcerpt": "湖水盛夏也不到20度，下水要準備防寒衣物",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/activity",
+      "sourceTitle": "アクティビティ｜ひがしかわ観光協会",
+      "sourceQuote": "真夏でも水温20℃を下回る冷たい水のため、ウエットスーツや防寒着などをご用意ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C150",
+      "articleExcerpt": "忠別川則水流相對平穩，泛舟親子也能參加",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/activity",
+      "sourceTitle": "アクティビティ｜ひがしかわ観光協会",
+      "sourceQuote": "忠別川は夏でも豊富な水量で軽快に川下りができますが、比較的穏やかな流れでファミリー層にも人気があります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C151",
+      "articleExcerpt": "上午去最好，從旭川站搭8:50的67番，9:42到道草館",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "67 8:50（旭川駅⑤）…9:42（ひがしかわ道草館）",
+      "verdict": "verified",
+      "notes": "非▲，週末也開。"
+    },
+    {
+      "claimId": "C152",
+      "articleExcerpt": "事先在網路訂好道草館的e-bike，到了直接取車，3小時2,000日圓，騎去市中心的咖啡店與せんとぴゅあ",
+      "sourceUrl": "https://reserva.be/higashikawa_rental",
+      "sourceTitle": "ひがしかわレンタサイクル｜RESERVA",
+      "sourceQuote": "ミニベロモデル【e-bike】BLULANS X2 ￥2,000（税込）／3時間 … 予約する",
+      "verdict": "verified",
+      "notes": "出租 9:00 起，9:42 到可以取車。"
+    },
+    {
+      "claimId": "C153",
+      "articleExcerpt": "e-bike被訂走了，改租クロスバイク，3小時2,500日圓",
+      "sourceUrl": "https://reserva.be/higashikawa_rental",
+      "sourceTitle": "ひがしかわレンタサイクル｜RESERVA",
+      "sourceQuote": "【Sサイズ 145㎝~165㎝】クロスバイク C1 ￥2,500（税込）／3時間（C1～C11 共 6 台、ロードバイク 3 台同價）",
+      "verdict": "verified",
+      "notes": "第 2 輪 curl 重讀確認。"
+    },
+    {
+      "claimId": "C154",
+      "articleExcerpt": "回程搭12:42的76番或13:42的60番，13:34或14:34回到旭川站，搭12:42那班得提早幾分鐘還車",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "76 12:42（ひがしかわ道草館）…13:34（旭川駅）｜60 13:42…14:34",
+      "verdict": "verified",
+      "notes": "9:42 到、約 9:45～9:50 取車，3 小時到 12:45～12:50，比 12:42 晚幾分鐘，「提早幾分鐘還車」成立；兩班都非▲。"
+    },
+    {
+      "claimId": "C155",
+      "articleExcerpt": "下午才出發，搭12:25的60番，13:09到道草館，回程有15:42的76番與16:02的60番",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "60 12:25…13:09｜76 15:42…16:39｜60 16:02（ひがしかわ道草館）…16:59",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C156",
+      "articleExcerpt": "玩到傍晚也別錯過19:42的末班車",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/orikomi_2026.05-3mini.pdf",
+      "sourceTitle": "バス時刻表 令和8年5月10日改正（旭川電気軌道）",
+      "sourceQuote": "76 19:42（ひがしかわ道草館）… 20:33（旭川駅）",
+      "verdict": "verified",
+      "notes": "道草館往旭川駅最後一班（60 番最晚 ▲18:02；176 番不到旭川駅）。"
+    },
+    {
+      "claimId": "C157",
+      "articleExcerpt": "從機場搭10:00的いで湯號，10:12到道草館，逛完市區再搭13:12那班，14:03到旭岳。搭早班機到的，可以搭8:00那班到道草館、10:12那班上山，11:03到旭岳",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川空港 8:00 10:00 13:00 15:00｜ひがしかわ道草館 8:12 10:12 13:12 15:12｜旭岳 9:03 11:03 14:03 16:03",
+      "verdict": "verified",
+      "notes": "車資：中途下車分兩段付（旭川空港→道草館 500、道草館→旭岳 1,450，共 1,950），直達是 1,650；正文沒寫合計，不算錯。"
+    },
+    {
+      "claimId": "C158",
+      "articleExcerpt": "這個排法適合行李少的人，因為行李得一路帶著逛市區",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "トランクに収納できる荷物は、原則としてお１人様 1 個（容積 0.25 ㎥、長さ 2 ｍ以内、重さ /30kg 以内）でお願い致します。",
+      "verdict": "verified",
+      "notes": "道草館沒有寄物資訊（F150），所以行李要自己帶著；這是由「查不到寄物」推出的提醒，沒有寫成「道草館沒有置物櫃」，可接受。いで湯號行李艙每人原則 1 件（66番頁「お１人様 1 個」）。"
+    },
+    {
+      "claimId": "C159",
+      "articleExcerpt": "帶著大行李，就從機場直接搭いで湯號到旭岳溫泉。在旭岳溫泉住兩晚以上，中間那天把行李留在旅館，搭旭岳9:55或11:55發的車下山，10:34或12:34到道草館，逛完搭13:12或15:12的いで湯號回旭岳，14:03或16:03到",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川空港 8:00 10:00 13:00 15:00 … 旭岳温泉入口／旭岳キャンプ場／ホテルベアモンテ前／旭岳｜（旭岳→旭川市内）旭岳 9:55 11:55 … ひがしかわ道草館 10:34 12:34｜（旭川市内→旭岳）ひがしかわ道草館 13:12 15:12 … 旭岳 14:03 16:03",
+      "verdict": "verified",
+      "notes": "協調者第 3 版：不再假設入住前寄放行李，改成連住兩晚、中間那天行李留在自己房間，不需要旅館另外保管。班次逐一核對官網時刻表：機場可直達旭岳溫泉各站；9:55→10:34、11:55→12:34；13:12→14:03、15:12→16:03。12:34 到、13:12 走只有 38 分鐘，讀者可自行看表。只差這一段：把新句換回第 2 輪原句後 SHA-256 為 b60be519…f98f。"
+    },
+    {
+      "claimId": "C160",
+      "articleExcerpt": "自駕進東川，車可以停在道草館",
+      "sourceUrl": "https://www.hokkaido-michinoeki.jp/michinoeki/2668/",
+      "sourceTitle": "道の駅ひがしかわ「道草館」｜北海道の道の駅",
+      "sourceQuote": "大型：2台 普通車：51台",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C161",
+      "articleExcerpt": "往旭岳的路上順路停大雪旭岳源水與忠別湖的觀景停車處，東川市中心到旭岳遊客中心開車約40分鐘",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/access/",
+      "sourceTitle": "アクセス｜旭岳ビジターセンター",
+      "sourceQuote": "発：東川町中心街 →約40分 → 着：旭岳ビジターセンター",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C162",
+      "articleExcerpt": "登山用的攜帶式廁所，町內的Seicomart東川店與mont-bell大雪東川店都買得到",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
+      "sourceTitle": "フィールドマナー｜旭岳ビジターセンター",
+      "sourceQuote": "【携帯トイレ販売箇所・東川町内】 ・ セイコーマート東川店 ・ モンベル大雪ひがしかわ店",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C163",
+      "articleExcerpt": "Roaster Coaster沒有停車場，三千櫻酒造有24個免費車位",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/members/roaster-coaster/",
+      "sourceTitle": "Roaster coaster｜ひがしかわ観光協会",
+      "sourceQuote": "駐車場 なし",
+      "verdict": "verified",
+      "notes": "三千櫻「駐車場 24台、無料」見 HOKKAIDO LOVE!。"
+    },
+    {
+      "claimId": "C164",
+      "articleExcerpt": "キトウシ森林公園有公園高爾夫與卡丁車，玩完到きとろん泡湯，國中小學生500日圓",
+      "sourceUrl": "https://www.higashikawa-kitoron.jp/guide/",
+      "sourceTitle": "ご利用案内｜キトウシの森きとろん",
+      "sourceQuote": "小人（小・中学生） 500円",
+      "verdict": "verified",
+      "notes": "公園高爾夫與ゴーカート見觀光協會キトウシ頁；公園高爾夫 2026 季到 10/31。"
+    },
+    {
+      "claimId": "C165",
+      "articleExcerpt": "道草館也租兒童自行車",
+      "sourceUrl": "https://reserva.be/higashikawa_rental",
+      "sourceTitle": "ひがしかわレンタサイクル｜RESERVA",
+      "sourceQuote": "【129cm ～ 145cm】子ども用自転車 A／B ￥500（税込）／3時間",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C166",
+      "articleExcerpt": "夏天的忠別川泛舟親子也能參加，冬天的キャンモアスキーヴィレッジ有教室與租借",
+      "sourceUrl": "http://www.welcome-higashikawa.jp/areaguide/kitoushi/",
+      "sourceTitle": "キトウシの森｜ひがしかわ観光協会",
+      "sourceQuote": "スキー・スノーボードほか各種レンタル品も充実し…初心者から上級者まで各レベルに対応したスクールもあります。",
+      "verdict": "verified",
+      "notes": "泛舟見 activity 頁「ファミリー層にも人気」。"
+    }
+  ],
+  "summary": {
+    "verified": 166,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "articleId": "higashikawa",
+  "articleTitle": "東川町景點與美食，咖啡店、道草館與從旭川怎麼去",
+  "targetUrl": "/places/higashikawa/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-10-27",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/higashikawa/，不加入 Git、不上傳。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-10-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "東川町地點主頁的封面，用正文多次提到的道之驛「道草館」外觀，讓讀者到現場認得出東川町市街的起點。",
+      "mustShow": ["東川町的道草館、市街或從東川看大雪山，認得出是東川町"],
+      "mustNotShow": ["可辨識的人物臉部", "其他地方冒充東川町", "店家招牌當主體", "AI 生成或合成畫面", "已用於旭岳頁的旭岳照片"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Michinoeki_Higashikawa_%E3%80%8CMichikusakan%E3%80%8D_Appearance.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.52},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 Mister0124 2020 年 9 月 21 日拍的道之驛「道草館」外觀：綠色屋頂、米白外牆的兩層洋館，前方是草地、木柵欄露天座位與一座手壓幫浦造型的水龍頭，右邊是町內的道路。道草館是正文提到 36 次的東川町市街起點（巴士站、觀光案內），讀者到東川第一個會看到的建築。原圖 4133×2507，裁 16:9 焦點 y 0.52，只裁掉上下少許天空與草地。右側遠處有兩個行人，很小、無法辨識。限制：陰天傍晚拍攝，色調偏灰；看不到大雪山。cover-02 是 MNRNSD 2010 年 11 月在東川拍的農田與遠方覆雪大雪山，但前景有大量農作業中的人、主體不明確；cover-03 是 Tzu-hsun Hsu 在旭岳纜車姿見站拍的旭岳，主題屬旭岳頁，不選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-27",
+        "photoSearchNotes": "查過維基共享資源分類 Higashikawa, Hokkaido，關鍵字「Higashikawa Hokkaido」「Michikusakan Higashikawa」「東川町」。旭岳、天人峽、忠別湖的照片屬旭岳與天人峽主題，不當東川町市街封面；Higashikawa Museum.jpg、Higashikawa Town Hall.jpg 寬度 2016 px 可用，但不是旅客會去的地方。維基共享資源已有合格實拍，沒有再查免費圖庫與觀光協會素材。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Michinoeki_Higashikawa_%E3%80%8CMichikusakan%E3%80%8D_Appearance.jpg",
+          "creatorName": "Mister0124",
+          "sourceTitle": "File:Michinoeki Higashikawa 「Michikusakan」 Appearance.jpg",
+          "sourceDescription": "Appearance of Michinoeki Higashikawa 「Michikusakan」（Own work，分類 Higashikawa, Hokkaido；Michinoeki in Hokkaido）",
+          "takenAt": "2020-09-21",
+          "width": 4133,
+          "height": 2507,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為東川町道之驛道草館外觀，是正文的市街起點與巴士站，讀者到現場認得出來。",
+          "altDraft": "東川町道之驛道草館，綠色屋頂的兩層洋館，前方有草地與露天座位",
+          "captionDraft": "東川町的道之驛道草館。",
+          "creditDraft": "照片：Mister0124／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "two tiny unidentifiable pedestrians",
+            "logos": "facility name plate only",
+            "artwork": "none",
+            "property": "public roadside station building",
+            "risk": "low",
+            "notes": "公共設施道之驛外觀；行人極小無法辨識；沒有店家招牌當主體。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Higashikawa,_Hokkaido_-_panoramio.jpg",
+          "creatorName": "MNRNSD",
+          "sourceTitle": "File:Higashikawa, Hokkaido - panoramio.jpg",
+          "sourceDescription": "Higashikawa, Hokkaido（Panoramio 匯入，座標 43.647038, 142.600554）",
+          "takenAt": "2010-11-20",
+          "width": 3648,
+          "height": 2736,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-27",
+          "matchType": "exact",
+          "matchLimits": "前景有許多農作業中的人；大雪山只在右側遠方露出一角。",
+          "whyItFits": "東川町的農田與遠方大雪山。",
+          "altDraft": "東川町的農田，遠方是覆雪的大雪山",
+          "captionDraft": "東川町的農田。",
+          "creditDraft": "照片：MNRNSD／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "many small workers",
+            "logos": "none",
+            "artwork": "none",
+            "property": "farmland",
+            "risk": "medium",
+            "notes": "人很小但數量多。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

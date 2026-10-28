@@ -1081,7 +1081,7 @@
       "headings": [
         {
           "level": 2,
-          "text": "旭川值得去嗎，排幾天",
+          "text": "旭川值得去嗎？",
           "facts": [
             "asahikawa:F30",
             "asahikawa:F62",
@@ -1093,7 +1093,7 @@
         },
         {
           "level": 3,
-          "text": "旭川排幾天，動物園一天、市區半天",
+          "text": "旭川排幾天，動物園與市區的時間分配",
           "facts": [
             "asahikawa:F2",
             "asahikawa:F19",
@@ -1106,7 +1106,7 @@
         },
         {
           "level": 2,
-          "text": "幾月去旭川",
+          "text": "旭川幾月去？",
           "facts": [
             "asahikawa:F117",
             "asahikawa:F119",
@@ -1132,7 +1132,7 @@
         },
         {
           "level": 2,
-          "text": "旭川冬季祭典與夏天的花火",
+          "text": "旭川冬季祭典、夏天花火與秋天的食べマルシェ",
           "facts": [
             "asahikawa:F106",
             "asahikawa:F113",
@@ -1180,7 +1180,7 @@
         },
         {
           "level": 2,
-          "text": "怎麼到旭川、住哪裡",
+          "text": "旭川怎麼去、住哪裡？",
           "facts": [
             "asahikawa:F34",
             "asahikawa:F45",
@@ -3022,7 +3022,7 @@
         },
         {
           "level": 2,
-          "text": "冬天的旭岳滑雪與粉雪",
+          "text": "冬天的旭岳滑雪、雪鞋與粉雪",
           "facts": [
             "asahidake:F110",
             "asahidake:F111",
@@ -3175,7 +3175,7 @@
       "headings": [
         {
           "level": 2,
-          "text": "東川是什麼樣的地方",
+          "text": "東川是什麼樣的地方？",
           "facts": [
             "higashikawa:F1",
             "higashikawa:F3",
@@ -3348,7 +3348,7 @@
         },
         {
           "level": 2,
-          "text": "東川要排幾小時",
+          "text": "東川要排幾小時？",
           "facts": [
             "higashikawa:F25",
             "higashikawa:F40",
@@ -3360,7 +3360,7 @@
         },
         {
           "level": 2,
-          "text": "住東川市區還是旭岳溫泉",
+          "text": "住東川市區還是旭岳溫泉？",
           "facts": [
             "higashikawa:F77",
             "higashikawa:F78",
@@ -3423,6 +3423,54 @@
             "higashikawa:F25",
             "higashikawa:F33",
             "higashikawa:F38"
+          ],
+          "answers": [
+            7
+          ]
+        },
+        {
+          "level": 3,
+          "text": "不開車，從旭川站去東川半天",
+          "facts": [
+            "higashikawa:F25",
+            "higashikawa:F33",
+            "higashikawa:F40"
+          ],
+          "answers": [
+            7
+          ]
+        },
+        {
+          "level": 3,
+          "text": "從旭川機場往旭岳，中途在東川停",
+          "facts": [
+            "higashikawa:F22",
+            "higashikawa:F24",
+            "higashikawa:F25"
+          ],
+          "answers": [
+            7
+          ]
+        },
+        {
+          "level": 3,
+          "text": "自駕往旭岳順路停",
+          "facts": [
+            "higashikawa:F38",
+            "higashikawa:F55",
+            "higashikawa:F57"
+          ],
+          "answers": [
+            7
+          ]
+        },
+        {
+          "level": 3,
+          "text": "帶小孩",
+          "facts": [
+            "higashikawa:F48",
+            "higashikawa:F49",
+            "higashikawa:F50"
           ],
           "answers": [
             7
@@ -3848,7 +3896,7 @@
     {
       "from": "asahikawa",
       "to": "asahikawa-transport",
-      "section": "怎麼到旭川、住哪裡",
+      "section": "旭川怎麼去、住哪裡？",
       "purpose": "主頁摘要旭川交通並連過去",
       "sentence": "札幌、新千歲機場與旭川機場怎麼到市區，見旭川交通。",
       "anchor": "旭川交通"
@@ -3856,7 +3904,7 @@
     {
       "from": "asahikawa",
       "to": "asahikawa-stay",
-      "section": "怎麼到旭川、住哪裡",
+      "section": "旭川怎麼去、住哪裡？",
       "purpose": "主頁摘要住宿並連過去",
       "sentence": "住車站周邊還是市中心、住宿稅怎麼算，見旭川住宿。",
       "anchor": "旭川住宿"
@@ -3864,7 +3912,7 @@
     {
       "from": "asahikawa",
       "to": "asahiyama-zoo",
-      "section": "旭川值得去嗎，排幾天",
+      "section": "旭川值得去嗎？",
       "purpose": "主頁提到動物園時連到景點頁",
       "sentence": "開園時間、門票與公車，見旭山動物園。",
       "anchor": "旭山動物園"
@@ -3872,7 +3920,7 @@
     {
       "from": "asahikawa",
       "to": "asahikawa-sights",
-      "section": "旭川值得去嗎，排幾天",
+      "section": "旭川值得去嗎？",
       "purpose": "主頁摘要景點並連過去",
       "sentence": "動物園以外的展望台、酒藏與冬天的雪上活動，見旭川景點。",
       "anchor": "旭川景點"
@@ -3880,7 +3928,7 @@
     {
       "from": "asahikawa",
       "to": "asahikawa-food",
-      "section": "旭川值得去嗎，排幾天",
+      "section": "旭川值得去嗎？",
       "purpose": "主頁摘要美食並連過去",
       "sentence": "拉麵村、成吉思汗與新子燒去哪吃，見旭川美食。",
       "anchor": "旭川美食"
@@ -3888,7 +3936,7 @@
     {
       "from": "asahikawa",
       "to": "asahikawa-weather",
-      "section": "幾月去旭川",
+      "section": "旭川幾月去？",
       "purpose": "主頁摘要天氣並連過去",
       "sentence": "各月氣溫與冬天怎麼穿，見旭川天氣。",
       "anchor": "旭川天氣"
@@ -4528,7 +4576,7 @@
     {
       "from": "higashikawa",
       "to": "asahidake-stay",
-      "section": "住東川市區還是旭岳溫泉",
+      "section": "住東川市區還是旭岳溫泉？",
       "purpose": "旭岳溫泉的旅館",
       "sentence": "旭岳溫泉的旅館，見旭岳溫泉住宿。",
       "anchor": "旭岳溫泉住宿"
@@ -4560,7 +4608,7 @@
     {
       "from": "higashikawa",
       "to": "asahikawa-stay",
-      "section": "住東川市區還是旭岳溫泉",
+      "section": "住東川市區還是旭岳溫泉？",
       "purpose": "北海道住宿稅的算法",
       "sentence": "北海道住宿稅的算法，見旭川住宿。",
       "anchor": "旭川住宿"
@@ -4598,6 +4646,22 @@
       "purpose": "錯過末班巴士改住旭岳溫泉",
       "sentence": "旭岳溫泉的旅館，見旭岳溫泉住宿。",
       "anchor": "旭岳溫泉住宿"
+    },
+    {
+      "from": "sounkyo",
+      "to": "sounkyo-stay",
+      "section": "冬天晚上還開的店",
+      "purpose": "冬天晚餐要不要訂含晚餐方案，歸住宿頁",
+      "sentence": "冬天住溫泉街要不要訂含晚餐的方案，見層雲峽住宿。",
+      "anchor": "層雲峽住宿"
+    },
+    {
+      "from": "sounkyo",
+      "to": "sounkyo-transport",
+      "section": "秋天看紅葉",
+      "purpose": "銀泉台包車費用與預約，歸交通頁",
+      "sentence": "包車的費用與預約網站，整理在層雲峽交通。",
+      "anchor": "層雲峽交通"
     }
   ],
   "writingOrder": [
