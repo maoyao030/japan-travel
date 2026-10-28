@@ -1529,3 +1529,25 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 尚未做：自動寫作加回選文內照片、已上線文章分批補照片。
 - 10/27 18:22（台北）重試仍是 429，雲端不再重試。
 - 唯一下一步：在 Darren 電腦的主資料夾（不是自動寫作的 worktree）開 Claude Code，說「把利尻島交通的三張文內照片傳上去」。要做的事：切到分支 `claude/upbeat-mayer-y94jl9`，`npm run image:prepare:inline -- content-production/rishiri-island-transport --download`，親自看三張圖，`cd studio` 後 `npm run publish:article-inline-images -- ../content-production/rishiri-island-transport` 預覽、確認後加 `--apply`；本機 build 看網頁，照 Git 規則合併到 `main` 讓網站重建。不滿意用 `--remove --apply` 拿掉。
+
+## 2026-10-28 Claude Code（地端）：利尻島交通三張文內照片上線
+
+### 已完成
+
+- 在本機跑 `npm run image:prepare:inline -- content-production/rishiri-island-transport --download`，維基共享資源在本機可以直接下載，不用改 curl。三張縮成 webp：鴛泊渡輪站 1400×1050、利尻機場 1400×1050、自行車道 1600×1200。
+- 親自看過三張圖。渡輪站與自行車道和圖片封包描述一致。機場那張放大原圖讀不到「利尻空港」字樣，畫面中間是航廈入口的白色雨棚，替代文字、`whyItFits`、`selectionNotes` 改成照實描述，`commercialReview.logos` 改成 none。
+- `npm run publish:article-inline-images` 預覽三張都是 upload-and-insert、各在節內第一段之後；`--apply` 結果 `inline-images-published-and-verified`（文章版本 754kKp7BwnXUjLmPcSVlAo）。
+- 本機 `npm run build`（e8ctf7ee／production）通過；電腦 1280 寬與手機 390 寬截圖，照片、圖說、署名連結都正常。Darren 看過截圖同意上線。
+
+### 發現的問題（未處理）
+
+- 手機寬度下利尻島交通頁可以整頁往右滑約 120px，原因是「延伸資料」清單裡的長網址不換行，跟照片無關，加照片前就有；有長網址的其他頁可能也一樣。修法是讓文章內連結可以斷行（例如 `overflow-wrap: anywhere`）。
+- 文內照片的 `<img>` 直接用原尺寸網址，沒有像封面一樣給 srcset，手機會下載 1400～1600px 的圖。之後可以補。
+
+### 測試與 Git
+
+- 併入 `origin/main`（PROJECT_STATUS.md 兩邊都在檔尾追加，兩段都保留），`npm test` 184 項全過，合併推到 `main` 讓網站重建。分支 `claude/upbeat-mayer-y94jl9`。
+
+### 唯一下一步
+
+- `content-automation/local-writer.md` 第 5 步加回選文內照片（照片插在指定段落、上傳用 `publish:article-inline-images`），然後分批替已上線的景點頁補照片。
