@@ -7,9 +7,13 @@
   "articleSourceCheckedAt": "2026-10-25",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-sights/source.jpg，不加入 Git、不上傳。文章尚未定稿，image:prepare:cover 由協調者在定稿後執行。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-sights/source.jpg，不加入 Git、不上傳。文章尚未定稿，image:prepare:cover 由協調者在定稿後執行。2026-10-28 文內圖：地藏岩、桃岩展望台、北方金絲雀公園的電影校舍、須古頓岬四張加上 placement 與 preparation，照片接在各節第一段之後；澄海岬已是封面、桃台貓台與桃岩展望台相鄰，不另放。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "jizoiwa": "jizoiwa-01",
+    "momoiwa-observatory": "momoiwa-01",
+    "canary-park-school": "school-01",
+    "cape-sukoton": "sukoton-01"
   },
   "selectedAt": "2026-10-25",
   "slots": [
@@ -17,15 +21,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "呈現禮文島北部岬角的海景，讓讀者一眼知道這篇講的是禮文島的景點，並避開住宿頁已用的桃岩與步道頁可能用的桃岩、花。",
-      "mustShow": ["禮文島可辨認的岬角或海岸景色，例如澄海岬的海灣或須古頓岬外海"],
-      "mustNotShow": ["桃岩（住宿頁已用、步道頁可能用）", "民宿、旅館或土產店的招牌", "可辨識的人物臉部", "利尻島或其他島嶼冒充禮文島", "AI 生成或合成畫面"],
+      "mustShow": [
+        "禮文島可辨認的岬角或海岸景色，例如澄海岬的海灣或須古頓岬外海"
+      ],
+      "mustNotShow": [
+        "桃岩（住宿頁已用、步道頁可能用）",
+        "民宿、旅館或土產店的招牌",
+        "可辨識的人物臉部",
+        "利尻島或其他島嶼冒充禮文島",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Rebun_20140725_110632.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.5},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 2014 年 7 月晴天的澄海岬：藍綠色的海灣被兩側長滿綠草的岩壁圍住，前景是草坡與礫石灘，正好呼應正文說的「レブンブルー」海色。原圖 3568×2000，本來就接近 16:9，裁切幾乎不損失畫面；檔案頁座標在澄海岬（45.4116, 140.986），也是日文維基百科的每月圖片。右上角山坡上有一小段落石防護網，不影響主體。cover-02 是 2016 年 10 月的須古頓岬「最北限の地の碑」與外海的島，授權同樣是 CC BY-SA 4.0，可當備選，但前景是木柱碑與碎石地，海景比例小，而且正文寫外海是海馬島、檔案頁寫トド島，圖說不能寫島名，所以排第二。另外看過 File:Cape Sukoton 2019.jpg，畫面中有「民宿スコトン岬」大招牌，會讓人以為在推某間民宿，不列為候選；File:Sukai.jpg 與 File:Sukaicape.jpg（2010，陰天）構圖和 cover-01 幾乎一樣但天空灰白、海色不明顯，不如 cover-01。",
       "sourcing": {
@@ -98,6 +118,345 @@
             "property": "地名木柱碑與環境省的小標示，屬公共標示，不是商標",
             "risk": "low",
             "notes": "沒有人物或店家招牌。外海島名檔案頁與正文不一致，圖說不寫島名。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "jizoiwa",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "地藏岩",
+      "purpose": "讓搭元地線或開車到元地海岸的讀者認得地藏岩的尖形岩柱。",
+      "mustShow": [
+        "元地海岸的地藏岩岩柱"
+      ],
+      "mustNotShow": [
+        "其他海岸的奇岩冒充地藏岩",
+        "可辨識的人物臉部",
+        "店家或旅館招牌"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "地藏岩",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Rebun_island_jizoiwa.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "jizoiwa-01 是 2019 年 5 月晴天從元地海岸道路往北拍：左側是尖形的地藏岩岩柱，旁邊立著地名標柱，右側是長草的岩壁與落石防護網，左下是海浪。讀者沿海岸道路走到盡頭看到的就是這個方向。維基共享資源上地藏岩只有這一張符合寬度與年份。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Rebun Island、Category:Tourism in Rebun 與關鍵字「Jizoiwa」「Jizo rock Rebun」「地蔵岩 礼文」；Jizoiwa 搜尋結果其他幾張是別處的地藏岩。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "jizoiwa-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rebun_island_jizoiwa.jpg",
+          "creatorName": "ブルーノ・プラス",
+          "sourceTitle": "File:Rebun island jizoiwa.jpg",
+          "sourceDescription": "礼文島の地蔵岩（Own work，分類 Rebun, Hokkaido）",
+          "takenAt": "2019-05",
+          "width": 3648,
+          "height": 2736,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明寫明是禮文島的地藏岩；畫面裡尖形岩柱旁有地名標柱，海岸與岩壁也和元地海岸一致。",
+          "altDraft": "元地海岸的地藏岩，尖形岩柱立在海邊，旁邊是地名標柱與長草的岩壁",
+          "captionDraft": "元地海岸的地藏岩（2019 年）。",
+          "creditDraft": "照片：ブルーノ・プラス／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀；地名標柱、護欄與落石防護網屬公共設施",
+            "risk": "low",
+            "notes": "沒有人物、車輛或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "momoiwa-observatory",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "桃岩展望台",
+      "purpose": "讓走桃岩展望台步道的讀者認得桃岩的形狀，知道展望台就在這座岩山旁。",
+      "mustShow": [
+        "桃岩整體的圓頂形狀"
+      ],
+      "mustNotShow": [
+        "利尻山或其他山冒充桃岩",
+        "可辨識的人物臉部",
+        "民宿或青年旅館招牌"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "桃岩展望台",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Momoiwa_%28Peach_Rock%29%2C_Rebun_Island%2C_Japan.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "momoiwa-01 是 2019 年 6 月從高處斜看桃岩：長滿綠草的圓頂岩山，左側是裸露的灰色岩壁，前景草坡上有白色小花，背景是海。桃岩的圓頂形狀最清楚，解析度 6000 px。momoiwa-02（2022 年 7 月）畫面以山谷與海灣為主，桃岩只在右側一半，備選。Peach rock 20140814-2（2014）構圖和 momoiwa-01 幾乎一樣但較舊，不列。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Momoiwa 全部 9 張：Momoiwa.jpg（1600 px）、MOMOIWA - panoramio 與夕景照（1280 px）寬度不足；Momoiwa.JPG（2009）較舊；Suicasmo 三張（2014）可用但比 2019 與 2022 的舊。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "momoiwa-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Momoiwa_(Peach_Rock),_Rebun_Island,_Japan.jpg",
+          "creatorName": "OKJaguar",
+          "sourceTitle": "File:Momoiwa (Peach Rock), Rebun Island, Japan.jpg",
+          "sourceDescription": "Momoiwa (\"Peach Rock\"), Rebun Island（Own work，說明桃岩的成因，分類 Momoiwa）",
+          "takenAt": "2019-06-05",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案名、說明與分類都寫明是禮文島的桃岩；畫面是桃岩整體的圓頂形狀，正是桃岩展望台步道上看到的岩山。",
+          "altDraft": "禮文島的桃岩，長滿綠草的圓頂岩山露出灰色岩壁，前方是開著小白花的草坡，背後是海",
+          "captionDraft": "禮文島的桃岩（2019 年）。",
+          "creditDraft": "照片：OKJaguar／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀；左下角遠處有一小塊停車場",
+            "risk": "low",
+            "notes": "沒有人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "momoiwa-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rebun%27s_Momoiwa_(52357581315).jpg",
+          "creatorName": "Raita Futo",
+          "sourceTitle": "File:Rebun's Momoiwa (52357581315).jpg",
+          "sourceDescription": "礼文島の桃岩（Flickr 轉載，FlickreviewR 確認授權，座標 45.2962, 141.0340）",
+          "takenAt": "2022-07-26",
+          "width": 6801,
+          "height": 4534,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為禮文島的桃岩，座標在桃岩旁；右側是桃岩的岩壁，中間是往海邊延伸的綠色山谷。",
+          "altDraft": "右側是桃岩的岩壁，中間綠色山谷延伸到藍色海灣",
+          "captionDraft": "桃岩與旁邊的山谷（2022 年）。",
+          "creditDraft": "照片：Raita Futo／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀；山谷底部有一棟小建物",
+            "risk": "low",
+            "notes": "桃岩只佔畫面右半，辨識效果比 momoiwa-01 差。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "canary-park-school",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "吉永小百合主演電影的外景地",
+      "purpose": "讓到北方金絲雀公園的讀者認得園內保存的電影校舍「麗端小學校岬分校」。",
+      "mustShow": [
+        "北方金絲雀公園的木造校舍外觀"
+      ],
+      "mustNotShow": [
+        "電影劇照或海報",
+        "可辨識的人物臉部",
+        "咖啡館菜單或店家招牌當主體"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "吉永小百合主演電影的外景地",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Reiban_elementary_school_Misaki_branch.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "school-01 是 2019 年 5 月從正面拍的木造校舍：紅色屋頂、咖啡色木板外牆、白框窗，入口旁掛著校名木牌，背後是海。檔案頁寫明是為拍攝蓋的麗端小學校岬分校，地點在香深村字フンベネフ（奮部），和正文的北方金絲雀公園一致。放在講校舍的 H3，而不是 H2 開頭，因為照片主體是校舍。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源關鍵字「北のカナリアパーク」「Canary Park Rebun」「Kitanokanaria」「麗端小学校」，只有這一張。已有合格實拍，沒有再查免費圖庫；觀光協會網站沒有查轉載條件。"
+      },
+      "candidates": [
+        {
+          "candidateId": "school-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Reiban_elementary_school_Misaki_branch.jpg",
+          "creatorName": "ブルーノ・プラス",
+          "sourceTitle": "File:Reiban elementary school Misaki branch.jpg",
+          "sourceDescription": "撮影のために建設された麗端小学校岬分校（礼文町香深村字フンベネフ）（Own work）",
+          "takenAt": "2019-05",
+          "width": 3648,
+          "height": 2736,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明寫明是為電影拍攝建的麗端小學校岬分校，地點在香深村奮部，就是北方金絲雀公園保存的校舍。",
+          "altDraft": "紅色屋頂的木造校舍，咖啡色木板外牆與白框窗，入口旁掛著校名木牌，前方是草地，背後是海",
+          "captionDraft": "北方金絲雀公園保存的電影校舍（2019 年）。",
+          "creditDraft": "照片：ブルーノ・プラス／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "入口旁的校名木牌，屬電影布景的一部分，不是商標",
+            "artwork": "電影布景建築，作為公園公開展示的建物外觀拍攝",
+            "property": "公共公園內的建物外觀；前景有人孔蓋與碎石地，右側有電線桿與小溫室",
+            "risk": "low",
+            "notes": "沒有人物；不放電影劇照或海報。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "cape-sukoton",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "須古頓岬",
+      "purpose": "讓到島最北端的讀者認得須古頓岬的最北限之碑與正前方的海馬島。",
+      "mustShow": [
+        "須古頓岬的岬角與展望處",
+        "外海的海馬島"
+      ],
+      "mustNotShow": [
+        "民宿或土產店招牌當主體",
+        "可辨識的人物臉部",
+        "與封面重複的澄海岬照片"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "須古頓岬",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sukoton.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "sukoton-01 是 2010 年 8 月晴天從岬上的坡道往下拍：前景是圍著木柵的碎石展望處與長草的岬角，左側是礁岩，後方海上是島頂有白色燈塔的海馬島，左邊還有一塊小礁島。讀者走到岬尖前看到的就是這個畫面，也對應正文「正前方約1公里的海上是海馬島，島上立著海馬島燈塔」。檔案頁說明「スコトン岬とトド島」，トド島就是海馬島的日文讀法。封面備選 cover-02（2016 年最北限之碑）同一封包不能重複使用，所以文內改用這張；右下角有兩棟小屋的屋頂，看不到招牌。File:SukotonCape.jpg（2010，1600 px）右下角有「民宿スコトン岬」招牌、File:Cape Sukoton 2019.jpg 有民宿大招牌，都不用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Cape Sukoton（10 張）：cover-02 已列在封面備選、不能重複；兩張有民宿招牌；Cape Sukoton.JPG（1536 px）、8192×1856 的全景與 Banner 太窄長或不符；公共廁所照 640 px。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "sukoton-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sukoton.JPG",
+          "creatorName": "FlyMeToFullmoon",
+          "sourceTitle": "File:Sukoton.JPG",
+          "sourceDescription": "スコトン岬とトド島（Own work，分類 Cape Sukoton、Todo Island (Rebun)）",
+          "takenAt": "2010-08-17",
+          "width": 2048,
+          "height": 1536,
+          "licenseName": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "licenseCheckedAt": "2026-10-28",
+          "publicDomainBasis": "PD-self：作者本人在檔案頁聲明放棄著作權。",
+          "matchType": "exact",
+          "matchLimits": "2010 年拍攝，展望處的木柵與周邊小屋可能已有變動。",
+          "whyItFits": "檔案頁說明為須古頓岬與海馬島（トド島），分類 Cape Sukoton；畫面是岬尖的展望處與正前方有燈塔的海馬島。",
+          "altDraft": "須古頓岬圍著木柵的展望處與長草的岬角，前方海上是島頂有白色燈塔的海馬島",
+          "captionDraft": "須古頓岬與海上的海馬島（2010 年）。",
+          "creditDraft": "照片：FlyMeToFullmoon／Wikimedia Commons／Public domain",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "岬上的展望處木柵；右下角兩棟小屋只拍到屋頂，看不到招牌",
+            "risk": "low",
+            "notes": "沒有人物或店家招牌。"
           },
           "checks": {
             "fullImageInspected": true,

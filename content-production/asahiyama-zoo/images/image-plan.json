@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-26",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahiyama-zoo/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahiyama-zoo/，不加入 Git、不上傳。 2026-10-28 文內圖：企鵝散步、正門、北極熊館水中三張加上 placement 與 preparation，照片接在各節第一段之後；原圖下載到 .tmp/image-selection/asahiyama-zoo/inline/。海豹館圓柱水槽沒有找到合格照片，不放。 2026-10-28 人工檢查：北極熊水中特寫看不出是旭山動物園，讀者到現場認不出，拿掉。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "penguin-walk": "penguin-walk-01",
+    "main-gate": "main-gate-01"
   },
   "selectedAt": "2026-10-26",
   "slots": [
@@ -17,15 +19,30 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼認出這篇講的是旭山動物園，最好是冬天有積雪的園內，對應文章的開園時間與只在冬天舉行的企鵝散步。",
-      "mustShow": ["旭山動物園園內認得出來的展示館或設施（企鵝館、北極熊館、海豹館、正門等），或園內的企鵝散步"],
-      "mustNotShow": ["可辨識的人物臉部當主體", "其他動物園冒充旭山動物園", "旭川車站等園外地點", "AI 生成或合成畫面"],
+      "mustShow": [
+        "旭山動物園園內認得出來的展示館或設施（企鵝館、北極熊館、海豹館、正門等），或園內的企鵝散步"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部當主體",
+        "其他動物園冒充旭山動物園",
+        "旭川車站等園外地點",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Asahiyama_Zoo%2C_Asahikawa_-_Mar_12%2C_2026_%281%29.jpg",
-        "focalPoint": {"x": 0.55, "y": 0.6},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.55,
+          "y": 0.6
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 keiichiro shikano 2026 年 3 月 12 日從高處拍的旭山動物園園內：中間是企鵝館（看板寫「ぺんぎん館」，水池玻璃與岩壁造景都看得到），右邊是紅磚鐘塔與企鵝館旁的白色天橋，左邊是水泥展示館與廁所，地上還有積雪，背後是旭山的樹林。文章講開園時間、冬季開放與企鵝散步，這張是冬天尾聲的企鵝館一帶、又是近期現況，最能代表文章。原圖 3:2、4704 px 寬，裁 16:9 只切掉上下少量，焦點放在 x 0.55、y 0.6，保留企鵝館與鐘塔。限制：畫面裡有幾位遊客，但都很小、多是背影，認不出臉；前景有兩根包著白布的欄桿柱；鐘面上有很小的 SEIKO 字樣，不是主體。這張不是企鵝散步的實況，圖說只寫企鵝館一帶，不暗示正在舉行企鵝散步。cover-02 是 2009 年企鵝散步中的國王企鵝特寫，主題最貼近企鵝散步，但原圖是直式，裁成 16:9 只剩胸口一段，而且看不出是旭山動物園，留作備選。",
       "sourcing": {
@@ -99,6 +116,171 @@
             "property": "動物園的雪地與圍欄",
             "risk": "low",
             "notes": "沒有人物與招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "penguin-walk",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "旭川旭山動物園企鵝散步時間",
+      "purpose": "讓讀者看到企鵝散步實際的樣子：國王企鵝在雪地上排成一列走，幫助決定要不要配合冬天的散步時間去。",
+      "mustShow": [
+        "旭山動物園冬天企鵝散步中的國王企鵝與雪地路線"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部當主體",
+        "其他動物園的企鵝散步",
+        "封面已用的企鵝館俯瞰角度"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭川旭山動物園企鵝散步時間",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Asahiyama_zoo_Penguin.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "ペンギンの散歩"
+        ],
+        "locationDescription": "冬天積雪後，國王企鵝從企鵝館出來，沿著雪地上用繩子圍起來的路線走；當天時間看官網首頁或入園門旁的看板。",
+        "officialPhotoLinks": []
+      },
+      "selectionNotes": "penguin-walk-01 是 2009 年 2 月 24 日企鵝散步的正面：幾隻國王企鵝在雪地上排成一列朝鏡頭走，左邊一隻趴在雪上，後面是圍繩、白樺樹與白色建築，左後方有一位穿藍外套的工作人員，人很小、不是主體，原圖上傳者已把臉打上馬賽克。原圖 2676×2088（約 4:3），晴天、主體清楚。同一位作者同日拍的 Walking King Penguins in Asahiyama Zoo 飼育員的臉清楚，Walking Penguins in Asahiyama Zoo (back) 前景有工作人員半身、後方排隊人群，都不用；Asahiyama zoo Penguin 01、02 與 King Penguin's Toboggan 是單隻企鵝趴雪特寫，看不出是散步路線。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Aptenodytes patagonicus in Asahikawa Asahiyama Zoological Park（20 個檔案）與關鍵字「Asahiyama zoo」。寬度足夠的企鵝散步照片都是 2009 年 2 月 24 日同一場；旭山動物園 (2310666076) 等 2008 年 Flickr 照片寬 1280 px；panoramio 的企鵝照是直式。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "penguin-walk-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahiyama_zoo_Penguin.jpg",
+          "creatorName": "欅 (Keyaki)",
+          "sourceTitle": "File:Asahiyama zoo Penguin.jpg",
+          "sourceDescription": "旭川市旭山動物園でのペンギンの散歩（Own work，分類 Aptenodytes patagonicus in Asahikawa Asahiyama Zoological Park；檔案頁另列 GFDL，選用 CC BY-SA 3.0）",
+          "takenAt": "2009-02-24",
+          "width": 2676,
+          "height": 2088,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明寫明是旭山動物園的企鵝散步，畫面是國王企鵝在雪地路線上排成一列走，正是這一節講的活動。",
+          "altDraft": "雪地上排成一列走過來的國王企鵝，其中一隻趴在雪上，後方是圍繩、白樺樹與一位穿藍外套的工作人員",
+          "captionDraft": "旭山動物園冬天的企鵝散步（2009 年 2 月）。",
+          "creditDraft": "照片：欅 (Keyaki)／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "左後方一位穿藍外套的工作人員，人很小、不是主體，原圖已把臉打上馬賽克",
+            "logos": "none",
+            "artwork": "none",
+            "property": "動物園的雪地路線、圍繩與建築",
+            "risk": "low",
+            "notes": "主體是企鵝；沒有招牌或商標。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "main-gate",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "旭川旭山動物園怎麼去",
+      "purpose": "讓搭41、47、42號公車到動物園的讀者認得下車處前的正門與售票處。",
+      "mustShow": [
+        "旭山動物園正門的建築與「旭川市旭山動物園」字樣"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部當主體",
+        "東門或西門冒充正門",
+        "計程車公司或廣告當主體"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭川旭山動物園怎麼去",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Asahiyama_zoo_entrance.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "旭川市旭山動物園",
+          "入園券売場"
+        ],
+        "locationDescription": "公車在正門前停車；正門是深綠色框、木條外牆的門樓，上面有「旭川市旭山動物園」字樣，右邊是入園券售票處。",
+        "officialPhotoLinks": []
+      },
+      "selectionNotes": "main-gate-01 是 2009 年 5 月 16 日晴天的正門正面：深綠色框、木條外牆的門樓寫著「旭川市旭山動物園」，上方飄著動物園旗子，右邊是寫「入園券売場」的售票處，門前停著計程車。2022 年 8 月的 File:Asahiyama Zoo 2022 Aug 10 various 17 00 29 588000.jpeg 拍到同一座門樓，外觀沒變，但前景遊客正面入鏡、是主體，不用；所以採用 2009 年這張。限制：畫面有幾位計程車司機與行人，人都很小，看不清臉；左邊有一塊動物園的宣傳看板。File:Asahiyama-zoo-seimon.jpg 寬 1024 px 不足；旭山動物園東門 - panoramio 是東門招牌特寫，右下有日期字樣，不用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Asahikawa Asahiyama Zoological Park 的正門、東門照片與關鍵字「Asahiyama zoo」。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "main-gate-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahiyama_zoo_entrance.jpg",
+          "creatorName": "欅 (Keyaki)",
+          "sourceTitle": "File:Asahiyama zoo entrance.jpg",
+          "sourceDescription": "旭川市旭山動物園、正門。（Own work，分類 Asahikawa Asahiyama Zoological Park；檔案頁另列 GFDL，選用 CC BY-SA 3.0）",
+          "takenAt": "2009-05-16",
+          "width": 3648,
+          "height": 2736,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明寫明是旭山動物園正門；門樓上的「旭川市旭山動物園」字樣與 2022 年照片一致，讀者下公車後看到的就是這座門。",
+          "altDraft": "旭山動物園正門，木條外牆的門樓寫著「旭川市旭山動物園」，右邊是入園券售票處，門前停著幾輛計程車",
+          "captionDraft": "旭山動物園正門（2009 年 5 月）。",
+          "creditDraft": "照片：欅 (Keyaki)／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "幾位計程車司機與行人，人很小，看不清臉，不是主體",
+            "logos": "動物園自己的名稱與標誌是地點本身；計程車車頂燈在邊緣",
+            "artwork": "none",
+            "property": "動物園正門與售票處",
+            "risk": "low",
+            "notes": "主體是正門建築；左邊的看板是動物園自己的宣傳。右側黑色計程車的車牌看得到，在公共停車場、不是主體。"
           },
           "checks": {
             "fullImageInspected": true,

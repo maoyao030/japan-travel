@@ -7,9 +7,12 @@
   "articleSourceCheckedAt": "2026-10-25",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/cape-soya/，不加入 Git、不上傳。已上線的宗谷岬交通封面是宗谷巴士站牌（File:Cape-Soya(Soyamisaki)Busstop.jpg），本頁不重複使用。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/cape-soya/，不加入 Git、不上傳。已上線的宗谷岬交通封面是宗谷巴士站牌（File:Cape-Soya(Soyamisaki)Busstop.jpg），本頁不重複使用。 2026-10-28 文內圖：宗谷岬燈塔、宗谷丘陵的周冰河地形、白色道路三張加上 placement 與 preparation，照片接在各節第一段之後；地碑已是封面，間宮林藏立像與音樂碑是雕塑作品，風車正在拆除，都不放；宗谷岬神社在維基共享資源找不到合格實拍，不放。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "lighthouse": "lighthouse-01",
+    "soya-hills": "soya-hills-01",
+    "white-road": "white-road-01"
   },
   "selectedAt": "2026-10-25",
   "slots": [
@@ -17,15 +20,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "呈現宗谷岬的日本最北端之地碑與宗谷海峽，讓讀者一眼認出這是宗谷岬的地點主頁。",
-      "mustShow": ["宗谷岬現場的日本最北端之地碑與海"],
-      "mustNotShow": ["其他岬角冒充宗谷岬", "宗谷巴士站牌（已用於宗谷岬交通封面）", "可辨識的人物臉部當主體", "傍晚或夜間光線讓人誤以為搭路線巴士能在岬上看夕陽", "讓人誤以為是本站實地拍攝"],
+      "mustShow": [
+        "宗谷岬現場的日本最北端之地碑與海"
+      ],
+      "mustNotShow": [
+        "其他岬角冒充宗谷岬",
+        "宗谷巴士站牌（已用於宗谷岬交通封面）",
+        "可辨識的人物臉部當主體",
+        "傍晚或夜間光線讓人誤以為搭路線巴士能在岬上看夕陽",
+        "讓人誤以為是本站實地拍攝"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/The_northernmost_point_of_Japan_monument_in_Soya_cape.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.45},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 2014 年 8 月晴天正面拍的日本最北端之地碑，碑文「日本最北端の地／The Northernmost Point in Japan」清楚可讀，背後是宗谷海峽，沒有人物，正好是讀者到岬上要認的地標。原圖 3:2、3872 px 寬，裁成 16:9 時切掉上方少許天空與下方部分步道，碑頂與碑文都保留。cover-02 是 2022 年傍晚的同一座碑，構圖漂亮，但傍晚光線和文章提醒的末班巴士 15:20 不合，只當備選。",
       "sourcing": {
@@ -98,6 +117,326 @@
             "property": "公園內的公共紀念碑",
             "risk": "low",
             "notes": "傍晚光線，搭路線巴士看不到這個時段（末班回程 15:20），只當備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "lighthouse",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "宗谷岬公園高台的燈塔與紀念碑",
+      "purpose": "讓走上宗谷岬公園高台的讀者認得紅白相間的宗谷岬燈塔。",
+      "mustShow": [
+        "紅白橫條的宗谷岬燈塔"
+      ],
+      "mustNotShow": [
+        "其他地方的燈塔冒充宗谷岬燈塔",
+        "間宮林藏立像或其他雕像當主體",
+        "可辨識的人物臉部",
+        "與封面重複的日本最北端之地碑"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "宗谷岬公園高台的燈塔與紀念碑",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Soyamisaki_lighthouse.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "宗谷岬灯台"
+        ],
+        "locationDescription": "從岬角最前端的日本最北端之地碑往南約120公尺的高台上，紅白相間的四角形塔身，旁邊連著一棟白色平房。",
+        "officialPhotoLinks": []
+      },
+      "selectionNotes": "lighthouse-01 是 2006 年 10 月下午晴天近拍的宗谷岬燈塔：方形塔身是紅白相間的橫條，塔頂有圍著欄杆的燈室，下方連著一棟白色平房，右側是一根白色細長的構造物，前景是秋天轉黃的草叢，沒有人物、車輛或招牌。原圖 1536×1024（3:2），燈塔佔畫面大半，讀者在高台上一眼就能對上。lighthouse-02（2011 年 9 月，2768×1601）從高處拍到燈塔與海，但燈塔只佔畫面一小塊、上方大半是天空，左前景有一座銅像（雕塑），右下角有停車場的車輛，只當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Soyamisaki Lighthouse（3 張）、Category:Cape Soya 與關鍵字「宗谷岬灯台」「Soya lighthouse」。Cape Soya Light Tower.jpg 寬 900 px 不足；Karafuto SakhalinISLAND.JPG 主體是對岸的庫頁島；宗谷丘陵と宗谷岬 - panoramio.jpg 燈塔太小。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "lighthouse-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Soyamisaki_lighthouse.JPG",
+          "creatorName": "100yen",
+          "sourceTitle": "File:Soyamisaki lighthouse.JPG",
+          "sourceDescription": "Soyamisaki lighthouse.（Self-published work，分類 Soyamisaki Lighthouse）",
+          "takenAt": "2006-10-26",
+          "width": 1536,
+          "height": 1024,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明與分類都是宗谷岬燈塔；紅白橫條的方形塔身與正文「紅白相間的宗谷岬燈塔」一致，是讀者到高台上要認的建築。",
+          "altDraft": "宗谷岬燈塔，紅白相間橫條的方形塔身連著一棟白色平房，前面是轉黃的草叢",
+          "captionDraft": "宗谷岬公園高台上的宗谷岬燈塔（2006 年）。",
+          "creditDraft": "照片：100yen／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "海上保安廳管理的燈塔建築，屬公共設施",
+            "risk": "low",
+            "notes": "沒有人物、車輛或店家招牌；燈塔是建築，不是雕塑。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "lighthouse-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E6%9C%AC%E6%9C%80%E5%8C%97%E3%81%AE%E7%81%AF%E5%8F%B0_-_panoramio.jpg",
+          "creatorName": "Mamusi Taka",
+          "sourceTitle": "File:日本最北の灯台 - panoramio.jpg",
+          "sourceDescription": "日本最北の灯台（Panoramio 轉載，分類 Cape Soya）",
+          "takenAt": "2011-09-20",
+          "width": 2768,
+          "height": 1601,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁標題寫日本最北的燈塔、分類在宗谷岬，畫面是高台上的紅白燈塔與宗谷海峽。",
+          "altDraft": "從高處看宗谷岬燈塔與宗谷海峽，右下是海邊道路與停車場",
+          "captionDraft": "宗谷岬燈塔與宗谷海峽（2011 年 9 月）。",
+          "creditDraft": "照片：Mamusi Taka／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "左前景有一座銅像，不是主體",
+            "property": "燈塔與公共道路、停車場",
+            "risk": "low",
+            "notes": "燈塔太小、上方大半是天空，前景有雕塑，只當備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "soya-hills",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "宗谷丘陵的周冰河地形與牧場",
+      "purpose": "讓讀者看懂宗谷丘陵周冰河地形的起伏草原長什麼樣子，決定要不要從岬上走過去或開車上丘陵。",
+      "mustShow": [
+        "宗谷丘陵起伏的草原與谷地"
+      ],
+      "mustNotShow": [
+        "風車當主體（正文寫風車正在拆除）",
+        "可辨識的人物臉部",
+        "其他地方的牧場冒充宗谷丘陵"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "宗谷丘陵的周冰河地形與牧場",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Souya_hill.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "宗谷丘陵"
+        ],
+        "locationDescription": "宗谷岬南邊的高地，從宗谷岬巴士站往丘陵上的觀景休息站走約15分鐘，沿路是一片高低起伏的牧草地。",
+        "officialPhotoLinks": []
+      },
+      "selectionNotes": "soya-hills-01 是 2008 年 8 月晴天的宗谷丘陵：整片綠色草坡一層層起伏，中間夾著長滿灌木的谷地，遠方稜線上有一排紅屋頂的建築，再後面是海。看不到風車，也沒有人物或招牌。原圖 3072×2304（4:3），正好呈現正文說的周冰河地形起伏。soya-hills-02（2016 年 10 月，6000×4000）地形也清楚，但太陽直射鏡頭有眩光，左側是大型牛舍，遠方稜線上有一排風車，正文說風車在拆除，排第二。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Soya Hills（8 張）。Soya Hills in autumn.jpg 是 2:1 寬幅；Periglacial landforms (2) 是直式；Sōya Hills.jpg 是正方形；1977 年的老照片寬 866 px；空拍照不像讀者在現場看到的畫面。白色道路那張另放在白色道路一節。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "soya-hills-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Souya_hill.JPG",
+          "creatorName": "Opqr",
+          "sourceTitle": "File:Souya hill.JPG",
+          "sourceDescription": "souya hill（Self-published work，分類 Soya Hills、Periglacial landforms in Japan）",
+          "takenAt": "2008-08-05",
+          "width": 3072,
+          "height": 2304,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁分類是宗谷丘陵與日本的周冰河地形；畫面是起伏的草坡與谷地，對應正文說的周冰河地形與牧場。",
+          "altDraft": "宗谷丘陵起伏的綠色草坡，中間夾著長滿灌木的谷地，遠方稜線上有紅屋頂的建築，後面是海",
+          "captionDraft": "宗谷丘陵的周冰河地形（2008 年 8 月）。",
+          "creditDraft": "照片：Opqr／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀與牧草地；遠方有幾棟小小的建築，看不到招牌",
+            "risk": "low",
+            "notes": "沒有人物、風車或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "soya-hills-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Periglacial_landforms,_Soya_Hills,_Hokkaido_-_Oct_29,_2016_(1).jpg",
+          "creatorName": "T.Kiya",
+          "sourceTitle": "File:Periglacial landforms, Soya Hills, Hokkaido - Oct 29, 2016 (1).jpg",
+          "sourceDescription": "Periglacial landforms, Soya Hills, Hokkaido, Japan（Flickr 轉載，FlickreviewR 已確認 CC BY-SA 2.0）",
+          "takenAt": "2016-10-29",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明寫明是宗谷丘陵的周冰河地形，畫面是起伏的谷地與山丘。",
+          "altDraft": "宗谷丘陵起伏的草坡與谷地，左邊是牛舍，遠方稜線上有一排風車",
+          "captionDraft": "宗谷丘陵的周冰河地形（2016 年 10 月）。",
+          "creditDraft": "照片：T.Kiya／Wikimedia Commons／CC BY-SA 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "牛舍與遠方風車",
+            "risk": "low",
+            "notes": "逆光有眩光，遠方有風車，只當備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "white-road",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "白色道路的開放期間與通行方向",
+      "purpose": "讓開車、騎車或走步道的讀者認得用扇貝殼鋪成的白色道路。",
+      "mustShow": [
+        "宗谷丘陵上白色的扇貝殼道路"
+      ],
+      "mustNotShow": [
+        "風車當主體（正文寫風車正在拆除）",
+        "可辨識的人物臉部",
+        "車牌清楚的車輛",
+        "一般柏油路冒充白色道路"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "白色道路的開放期間與通行方向",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Soya_Hills_White_Shell_Road.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "白い道"
+        ],
+        "locationDescription": "宗谷丘陵上往宗谷地區方向延伸約3公里的白色碎貝殼路，從宗谷岬那頭進去，兩旁是牧草地與矮竹叢，遠方看得到海。",
+        "officialPhotoLinks": []
+      },
+      "selectionNotes": "white-road-01 是 2019 年 10 月晴天的白色道路：白色的貝殼路面從左下往遠方延伸，兩旁是矮竹叢，右側是一片綠色牧草地，後方是藍色的海與白雲。沒有人物、車輛、風車或招牌。原圖 5431×3621（3:2），路面顏色清楚，讀者一看就知道為什麼叫白色道路。維基共享資源上白色道路只有這一張。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Soya Hills 與關鍵字「白い道 宗谷」「White Shell Road」。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "white-road-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Soya_Hills_White_Shell_Road.jpg",
+          "creatorName": "Yasu",
+          "sourceTitle": "File:Soya Hills White Shell Road.jpg",
+          "sourceDescription": "White Shell Road (Shiroi michi) in the Soya Hills, Wakkanai City, Hokkaido, Japan（Self-published work，分類 Soya Hills）",
+          "takenAt": "2019-10-20",
+          "width": 5431,
+          "height": 3621,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明寫明是稚內市宗谷丘陵的白色道路（白い道）；白色貝殼路面、兩旁牧草地與遠方的海，和正文描述一致。",
+          "altDraft": "宗谷丘陵的白色道路，白色的貝殼路面往遠方延伸，兩旁是矮竹叢與綠色牧草地，後方是藍色的海",
+          "captionDraft": "宗谷丘陵上用扇貝殼鋪成的白色道路（2019 年 10 月）。",
+          "creditDraft": "照片：Yasu／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "公共道路與牧草地",
+            "risk": "low",
+            "notes": "沒有人物、車輛、風車或招牌。"
           },
           "checks": {
             "fullImageInspected": true,

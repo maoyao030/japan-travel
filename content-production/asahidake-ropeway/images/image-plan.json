@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-26",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-ropeway/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-ropeway/，不加入 Git、不上傳。 2026-10-28 文內圖：纜車山麓站（放在「旭岳纜車站的食堂與賣店」）與姿見站和散策路起點（放在「旭岳姿見池散策路怎麼走？」）兩張，原圖在 .tmp/image-selection/asahidake-ropeway/inline/。「高山植物與紅葉的時期」沒有放：維基共享資源找不到姿見一帶清楚的高山植物或紅葉實拍（Asahidake6029 是旭岳溫泉街的黃葉、前景有停車場與建築；Sugatami-ike, Japan.jpg 是 2011 年陰霧天、和封面同角度；姿見ノ池からの旭岳.jpg 和封面同角度；Asahidake6047 看不出紅葉；Remote views of Mount Asahi from Tsudatami.jpg 是 2010 年 6 月雪地），該節第一段講春天積雪，放紅葉照也對不上。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "base-station": "base-01",
+    "sugatami-station": "sugatami-01"
   },
   "selectedAt": "2026-10-26",
   "slots": [
@@ -17,15 +19,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼看出這篇講的是搭旭岳纜車上到姿見站、走姿見の池散策路看到的景色。",
-      "mustShow": ["姿見の池池面與冒著噴氣的旭岳，或大雪山旭岳纜車的車廂、山麓站、姿見站"],
-      "mustNotShow": ["可辨識的人物臉部", "旭岳溫泉街道路與遊客中心（已用在旭岳交通頁）", "其他山或池冒充旭岳與姿見の池", "旅館或店家招牌當主體", "AI 生成或合成畫面"],
+      "mustShow": [
+        "姿見の池池面與冒著噴氣的旭岳，或大雪山旭岳纜車的車廂、山麓站、姿見站"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "旭岳溫泉街道路與遊客中心（已用在旭岳交通頁）",
+        "其他山或池冒充旭岳與姿見の池",
+        "旅館或店家招牌當主體",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Asahidake%2C_Daisetsuzan_Volcanic_Group_-_Asahidake6036.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.42},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.42
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 lumoplank 2025 年 10 月 2 日拍的姿見の池：池面倒映著旭岳山頂，山腰的地獄谷噴氣孔冒著白煙，正是文章開頭說的散策路景色，主體不用猜。原圖約 1.37:1、5174 px 寬，裁 16:9 時焦點放在 0.42，山頂、噴氣與倒影都完整保留，只切掉上方一點藍天與下方一點池面。畫面左邊散策路上有一個很小的登山客，看不出臉。拍攝時是 10 月初的秋色，散策路 6 月到 10 月中旬開放，季節在開放期內。cover-02 是 663highland 2014 年 7 月拍的同一個角度（夏天綠草），也合格，但年代較舊、授權要署名，當備選。纜車車廂照（663highland 2014、Ozizo 2011）車廂裡有乘客身影、年代較舊，沒有列為候選。",
       "sourcing": {
@@ -98,6 +116,156 @@
             "property": "natural landscape",
             "risk": "low",
             "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "base-station",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "旭岳纜車站的食堂與賣店",
+      "purpose": "讓讀者認得纜車山麓站的站舍：買票、上車、食堂與賣店都在這棟建築，回旭川的巴士也停在站前。",
+      "mustShow": [
+        "大雪山旭岳纜車山麓站的站舍外觀"
+      ],
+      "mustNotShow": [
+        "旭岳遊客中心或旅館冒充山麓站",
+        "可辨識的人物臉部",
+        "店家招牌當主體"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭岳纜車站的食堂與賣店",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/140724_Asahidake_Ropeway_Hokkaido_Japan05s3.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "base-01 是 663highland 2014 年 7 月晴天拍的纜車山麓站正面：紅色圓柱撐起的入口雨棚、木板與磚牆的兩層站舍，玻璃窗後看得到樓梯。和 Ozizo 2011 年拍的 Asahidake Ropeway Foot Station.jpg 是同一棟建築（同樣的紅柱與玻璃樓梯間），確定是山麓站。入口長椅上坐著一個人、門口站著一個人、草地邊有一個小孩，都很小，縮到 1600 px 寬看不出臉。Ozizo 那張是雨天、前景停滿車、有撐傘的遊客，寬度只有 2016 px，不如 base-01。站舍上的名稱字在這張照片裡看不清楚，替代文字與圖說不寫招牌字。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Asahidake Ropeway 與關鍵字「Asahidake Ropeway」「Asahidake ropeway station」。山麓站有 663highland 2014（6000×4000，CC BY 2.5，選定）與 Ozizo 2011（Asahidake Ropeway Foot Station.jpg，2016×1512，CC0，雨天、前景停車與遊客）。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "base-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:140724_Asahidake_Ropeway_Hokkaido_Japan05s3.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:140724 Asahidake Ropeway Hokkaido Japan05s3.jpg",
+          "sourceDescription": "Asahidake Ropeway at Higashikawa, Hokkaido, Japan.（CC BY 2.5，分類 Asahidake Ropeway）",
+          "takenAt": "2014-07-24",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是旭岳纜車，建築和 Ozizo 標明「Foot station」的照片是同一棟；正文說食堂、賣店都在山麓站，讀者到現場就是走進這個紅柱雨棚的入口。",
+          "altDraft": "旭岳纜車山麓站的站舍，入口前有一排紅色圓柱撐起的雨棚，旁邊是木板與磚牆的兩層建築和大片玻璃窗",
+          "captionDraft": "旭岳纜車的山麓站，入口在紅色圓柱的雨棚下（2014 年 7 月）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "入口長椅上一人、門口一人、草地邊一個小孩，都很小、看不出臉",
+            "logos": "none",
+            "artwork": "none",
+            "property": "纜車站建築外觀；建築屬於可自由拍攝的外觀，不是藝術作品",
+            "risk": "low",
+            "notes": "沒有店家招牌或商標當主體，不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "sugatami-station",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "旭岳姿見池散策路怎麼走？",
+      "purpose": "讓讀者認得姿見站的站舍與散策路起點，知道出站後沿著池邊的木棧道與碎石路往前走。",
+      "mustShow": [
+        "姿見站站舍與旁邊的散策路、池塘"
+      ],
+      "mustNotShow": [
+        "和封面相同的姿見池倒映旭岳角度",
+        "可辨識的人物臉部",
+        "其他山上車站冒充姿見站"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭岳姿見池散策路怎麼走？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/140724_Asahidake_Ropeway_Hokkaido_Japan04s3.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "sugatami-01 是 663highland 2014 年 7 月從散策路高處往回拍的姿見站：中間是深色屋頂的長形站舍，右邊是掛著纜車名稱的米色機房，左邊是通訊鐵塔；前景是低矮的偃松、小池塘、殘雪，木棧道和碎石路從站舍往外延伸。讀者出站後走的就是這段路，和封面的姿見池倒映旭岳不重複。路上有三四個很小的登山客，看不出臉。另外看過 140724 Asahidake Ropeway Hokkaido Japan07s5.jpg（同一天，站舍側面與後方冒煙的旭岳，站舍占滿畫面、看不出散策路）、Asahidake Ropeway Sugatami Station.jpg（Ozizo 2011，1971 px 寬）、Upper station of Asahidake Ropeway, Hokkaido, April 2023 01.jpg（積雪期，散策路開放期看不到這個樣子）、Sugatami Ropeway Station (46537569211).jpg（10126×3635 全景，太窄長）。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Asahidake Ropeway、Category:Sugatami Pond 與關鍵字「Asahidake ropeway station」「Sugatami station」。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "sugatami-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:140724_Asahidake_Ropeway_Hokkaido_Japan04s3.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:140724 Asahidake Ropeway Hokkaido Japan04s3.jpg",
+          "sourceDescription": "Asahidake Ropeway at Higashikawa, Hokkaido, Japan.（CC BY 2.5，分類 Asahidake Ropeway）",
+          "takenAt": "2014-07-24",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是旭岳纜車，機房牆上寫著大雪山旭岳纜車的名稱，周圍的池塘、木棧道與偃松就是姿見站出站後的散策路起點。",
+          "altDraft": "旭岳纜車姿見站的站舍與通訊鐵塔，前方是偃松、小池塘與殘雪，木棧道和碎石路從站舍往外延伸",
+          "captionDraft": "從散策路回望姿見站，出站後沿著池邊的木棧道與碎石路走（2014 年 7 月）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "散策路上有三四個很小的登山客，看不出臉",
+            "logos": "纜車機房牆上的設施名稱，屬設施標示，不是主體",
+            "artwork": "none",
+            "property": "纜車站建築與自然景觀",
+            "risk": "low",
+            "notes": "沒有可辨識人物或商業招牌當主體。"
           },
           "checks": {
             "fullImageInspected": true,

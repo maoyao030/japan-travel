@@ -236,3 +236,11 @@
 - Darren 覺得文章日文太多。店名、旅館名、景點名、站名、菜名、商品名第一次寫「中文寫法（日文原名）」，之後只寫中文；標題與表格只寫中文。沒有漢字的名字用羅馬拼音（うろこ亭寫Uroko亭），寫法統一記在 `content-planning/glossary.json`。
 - 日文只留在括號、「」裡的畫面按鈕與招牌字、「畫面上的日文」對照表、基本資訊欄的「日文名」列，以及資料來源的網頁標題。
 - `check-voice.mjs` 會擋括號外的日文，定稿時一起跑，沒通過不發布；放原名的括號不算進括號上限。細節見寫作 Skill `references/writing-guide.md` 第15條。
+
+## 自動寫作加回文內照片（Darren 2026-10-28 決定）
+
+- 本段取代「本機自動寫作改成自動上傳」一段裡「文內圖還沒有上傳工具」與 `local-writer.md`「不選文內圖」的限制。
+- 自動寫作每篇上傳時，封面之外也選文內照片：只放重點景點與交通據點，一篇最多 4 張、一節最多 1 張，接在那一節第一段之後；只用實拍，找不到就不放，不因缺文內照片停放。
+- 上傳用 `npm run image:prepare:inline`（下載、縮成 webp）與 `studio` 的 `npm run publish:article-inline-images`（預覽、`--apply` 插入、`--remove --apply` 拿掉）。上傳前親自看每一張，畫面和替代文字對不上就改文字或拿掉。
+- 已上線的頁面分批補照片，由人工 session 做，每批做完照 Git 規則推 `main`。
+- 細節見 `content-automation/local-writer.md` 第 5 步與選圖 Skill `references/image-packet.md`。

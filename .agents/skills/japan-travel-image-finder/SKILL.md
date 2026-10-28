@@ -86,6 +86,8 @@ node .agents/skills/japan-travel-image-finder/scripts/validate-image-packet.mjs 
 
 封面選定後執行 `npm run image:prepare:cover -- content-production/<article-id> --download`（自己拍的照片與 AI 圖先放到 `.tmp/image-selection/<article-id>/`，省略 `--download`），用人眼確認 16:9 裁切沒有誤導。原始大圖不加入 Git。
 
+要上傳的文內照片加上 `placement` 與 `preparation`（見 `references/image-packet.md`「文內照片的位置與準備」），執行 `npm run image:prepare:inline -- content-production/<article-id> --download`，逐張打開 webp 確認畫面和替代文字、圖說一致。
+
 向使用者提供一次簡潔的結果預覽：選定圖、來源頁、為何符合、限制與署名草案。不要求逐張核准。本 Skill 不上傳 Sanity、不發布、不 commit 或 push。
 
 ## 完成條件
