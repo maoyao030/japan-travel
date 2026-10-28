@@ -2054,6 +2054,11 @@ a {
   padding-left: 1.5rem;
 }
 
+/* 延伸資料、資料來源裡的長網址（有些是純文字）在手機上要能斷行，否則會撐開整頁 */
+.portable-content li {
+  overflow-wrap: anywhere;
+}
+
 .portable-content li + li {
   margin-top: 0.55rem;
 }
@@ -2072,6 +2077,7 @@ a {
 .portable-content a {
   color: var(--forest);
   text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
 }
 
 .portable-content blockquote {
