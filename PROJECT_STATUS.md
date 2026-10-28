@@ -1552,6 +1552,13 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 
 - `content-automation/local-writer.md` 第 5 步加回選文內照片（照片插在指定段落、上傳用 `publish:article-inline-images`），然後分批替已上線的景點頁補照片。
 
+## 2026-10-28 Claude Code（地端）：手機上長網址撐開頁面修正
+
+- 問題：「延伸資料」與「資料來源」清單裡的長網址不換行，手機（390 寬）上利尻島交通頁撐到 511、稚內交通頁撐到 624，整頁可以往右滑。有些網址是純文字、不是連結。
+- 修正：`src/styles/global.css` 讓文章內的清單項目與連結在放不下時可以斷行（`overflow-wrap: anywhere`）。表格不受影響，表格本來就是左右捲動。
+- 驗證：本機 build 通過；用 390 寬逐頁檢查 54 頁，撐開的頁從 2 頁變 0 頁；截圖確認延伸資料的網址在手機上正常斷行。`npm test` 184 項全過，推到 `main`。分支 `claude/mobile-long-url-wrap`。
+- 唯一下一步：同上一段，`content-automation/local-writer.md` 第 5 步加回選文內照片，再分批替已上線的景點頁補照片。
+
 ## 2026-10-28 Claude Code（雲端）：文章日文太多，規則與檢查補上，稚內美食改一篇樣本
 
 ### Darren 的要求
