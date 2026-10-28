@@ -1518,3 +1518,116 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 ### 唯一下一步
 
 - 下一群（富良野・美瑛）的研究與大綱。
+
+## 2026-10-27 Claude Code（雲端）：文內照片上傳程式，利尻島交通試傳
+
+- Darren 發現文章都只有封面。原因：網站與 Sanity 早就能顯示文內照片，但缺「下載、縮圖、插進正文指定段落」的程式，所以自動寫作規定只選封面。
+- 新增：`scripts/inline-image-placement.mjs`（照片插在哪個標題下第幾段之後）、`scripts/prepare-inline-images.mjs`（`npm run image:prepare:inline`，下載並縮成 webp、記雜湊，只縮小不裁切）、`studio/scripts/publish-article-inline-images.mjs`（`npm run publish:article-inline-images`，預設預覽，`--apply` 上傳插入，`--remove --apply` 拿掉）、`tests/inline-image-placement.test.ts`。
+- 圖片封包新增兩個欄位：`placement`（`heading` 標題全文、`afterBlocks` 第幾段之後）與文內照片的 `preparation`。利尻島交通三張（鴛泊渡輪站、利尻機場、自行車道）已加上，照片接在各節第一段之後。
+- 預覽模式已對 Sanity 實跑通過，三個插入位置正確。
+- 阻礙：維基共享資源對雲端機器的共用 IP 回 429，原圖下載不了，還沒真的上傳。已排 45 分鐘後重試一次；仍被擋就改在 Darren 電腦上跑。
+- 尚未做：自動寫作加回選文內照片、已上線文章分批補照片。
+- 10/27 18:22（台北）重試仍是 429，雲端不再重試。
+- 唯一下一步：在 Darren 電腦的主資料夾（不是自動寫作的 worktree）開 Claude Code，說「把利尻島交通的三張文內照片傳上去」。要做的事：切到分支 `claude/upbeat-mayer-y94jl9`，`npm run image:prepare:inline -- content-production/rishiri-island-transport --download`，親自看三張圖，`cd studio` 後 `npm run publish:article-inline-images -- ../content-production/rishiri-island-transport` 預覽、確認後加 `--apply`；本機 build 看網頁，照 Git 規則合併到 `main` 讓網站重建。不滿意用 `--remove --apply` 拿掉。
+
+## 2026-10-28 Claude Code（地端）：利尻島交通三張文內照片上線
+
+### 已完成
+
+- 在本機跑 `npm run image:prepare:inline -- content-production/rishiri-island-transport --download`，維基共享資源在本機可以直接下載，不用改 curl。三張縮成 webp：鴛泊渡輪站 1400×1050、利尻機場 1400×1050、自行車道 1600×1200。
+- 親自看過三張圖。渡輪站與自行車道和圖片封包描述一致。機場那張放大原圖讀不到「利尻空港」字樣，畫面中間是航廈入口的白色雨棚，替代文字、`whyItFits`、`selectionNotes` 改成照實描述，`commercialReview.logos` 改成 none。
+- `npm run publish:article-inline-images` 預覽三張都是 upload-and-insert、各在節內第一段之後；`--apply` 結果 `inline-images-published-and-verified`（文章版本 754kKp7BwnXUjLmPcSVlAo）。
+- 本機 `npm run build`（e8ctf7ee／production）通過；電腦 1280 寬與手機 390 寬截圖，照片、圖說、署名連結都正常。Darren 看過截圖同意上線。
+
+### 發現的問題（未處理）
+
+- 手機寬度下利尻島交通頁可以整頁往右滑約 120px，原因是「延伸資料」清單裡的長網址不換行，跟照片無關，加照片前就有；有長網址的其他頁可能也一樣。修法是讓文章內連結可以斷行（例如 `overflow-wrap: anywhere`）。
+- 文內照片的 `<img>` 直接用原尺寸網址，沒有像封面一樣給 srcset，手機會下載 1400～1600px 的圖。之後可以補。
+
+### 測試與 Git
+
+- 併入 `origin/main`（PROJECT_STATUS.md 兩邊都在檔尾追加，兩段都保留），`npm test` 184 項全過，合併推到 `main` 讓網站重建。分支 `claude/upbeat-mayer-y94jl9`。
+
+### 唯一下一步
+
+- `content-automation/local-writer.md` 第 5 步加回選文內照片（照片插在指定段落、上傳用 `publish:article-inline-images`），然後分批替已上線的景點頁補照片。
+
+## 2026-10-28 Claude Code（地端）：手機上長網址撐開頁面修正
+
+- 問題：「延伸資料」與「資料來源」清單裡的長網址不換行，手機（390 寬）上利尻島交通頁撐到 511、稚內交通頁撐到 624，整頁可以往右滑。有些網址是純文字、不是連結。
+- 修正：`src/styles/global.css` 讓文章內的清單項目與連結在放不下時可以斷行（`overflow-wrap: anywhere`）。表格不受影響，表格本來就是左右捲動。
+- 驗證：本機 build 通過；用 390 寬逐頁檢查 54 頁，撐開的頁從 2 頁變 0 頁；截圖確認延伸資料的網址在手機上正常斷行。`npm test` 184 項全過，推到 `main`。分支 `claude/mobile-long-url-wrap`。
+- 唯一下一步：同上一段，`content-automation/local-writer.md` 第 5 步加回選文內照片，再分批替已上線的景點頁補照片。
+
+## 2026-10-28 Claude Code（雲端）：文章日文太多，規則與檢查補上，稚內美食改一篇樣本
+
+### Darren 的要求
+
+- 「現在的問題是太多日文了」。
+
+### 找到的原因
+
+- 寫作規則本來就要求「中文譯名（日文原名）、之後只寫中文」，但沒有程式檢查；口吻檢查又把括號限制在每千字1個，作者把店名寫成括號就超標，直接寫日文反而通過。結果店名、旅館名、菜名、列車與船名常整個用日文寫。
+- 用新檢查量現有 45 篇：只有 1 篇（利尻島天氣）沒有括號外的日文，合計約 1,200 處；最多的是東川町、旭川景點、旭川美食、稚內美食、利尻島住宿（50～90 處）。
+
+### 已完成
+
+- `check-voice.mjs` 新增日文檢查：正文、標題、表格、條列、延伸資料裡括號外的假名與日本字形漢字（稚内、観光、黒岳）都擋。可以留日文的地方：括號裡的原名、「」裡的畫面按鈕與招牌字、表頭含「日文」「畫面」「按鈕」「站牌」的欄、基本資訊欄的「日文名」列、資料來源。「」裡的日文超過 8 處只提醒。放日文原名的括號不再算進括號上限。加 2 項測試，範例檔兩部電影名一起改。
+- 寫作指南加第15條「日文只放在括號與「」裡」，第8、12條同步；`japanese-sources.md` 寫明中文寫法的找法（官方繁中名→官方英文名→漢字轉繁體→一般名詞意譯→沒有漢字的用羅馬拼音）；`local-writer.md` 第 2 步提醒讀第15條。
+- 樣本：`content-production/wakkanai-food` 全篇改成中文寫法（拉麵大王本店、Uroko亭、Hiiragi軒、Teppen食堂、KITAcolor 等），事實編號與內容不變；3 個 H3 標題改中文，大綱與 `heading-review.json` 同步；`fact_tags.py`、`check-voice.mjs --final`、`audit_answer_first.py`、`heading_review.py`、`planning:check` 都通過。譯名表加 26 筆。
+- 改完的稿子只在 Git，還沒寫進網站（Sanity）。
+
+### 影響
+
+- 規則併到 `main` 後，本機自動寫作新寫的文章會照第15條寫；已寫好、還沒上線的文章若有括號外的日文，定稿檢查會擋下，要改完才會上傳。
+
+### 測試與 Git
+
+- `npm test` 186 項中 185 項通過；沒過的是 D1 連線方式那一項，乾淨的 `main` 在這台雲端機器上也一樣失敗（環境變數造成），跟這次修改無關。分支 `claude/loving-mccarthy-re4dz5`。
+
+### 唯一下一步
+
+- Darren 看稚內美食樣本（`content-production/wakkanai-food/reader-preview.md`），同意寫法後把樣本寫進網站，再分批改其他 44 篇（日文最多的先改）。
+
+## 2026-10-28 Claude Code（雲端）：45 篇已上線文章改成中文寫法，全部寫進網站
+
+### Darren 的要求
+
+- 「羅馬拼音可以，寫進網站並改其他篇」。
+
+### 已完成
+
+- 稚內美食樣本與另外 44 篇（稚內 9、利尻 8、禮文 6、旭川 8、旭岳 6、層雲峽 7）全部改成中文寫法並寫進 Sanity。每篇都通過 `scripts/check-text-revision.mjs`：事實編號、數字、段落與表格結構、H1、資料來源都沒變，且通過 `check-voice.mjs --final`。
+- 寫完後逐篇比對：Sanity 上 45 篇正文的每一段都和 Git 的 `reader-preview.md` 一致；括號外還有日文的只剩「日文名」列、「畫面上的日文」對照表這些規則允許的表格格子。
+- 新工具：`scripts/revise-body-text.mjs`＋`studio/scripts/revise-article-text.mjs`（只改有變的字，連結、文內照片、索引狀態不動，表格只換有變的格子；寫入前存復原檔）；`scripts/check-text-revision.mjs`（修訂安全檢查）；測試 `tests/revise-body-text.test.ts`。
+- 兩篇 H1 與 SEO 標題的日文改掉：旭岳纜車與姿見池、旭岳交通的 Ideyu號。另有十多篇的 SEO 描述與摘要一起改。
+- 譯名表從 80 筆增加到約 560 筆；大綱的標題、連結句與 `heading-review.json` 同步。
+- `check-voice.mjs` 修正兩處誤判：「・」「ー」單獨出現不算日文，「釣」不算日本字形。
+- 層雲峽天氣頁有一處 Git 稿子比網站舊（「1 月」多一個空格），已改回並重寫網站。
+
+### 主要的寫法（細節在譯名表）
+
+- 列車用 JR 北海道英文名：特急Lilac號、特急Kamui號、特急Sarobetsu號、特急Okhotsk號；巴士 Ideyu號、Taisetsu Liner、稚內號；訂票網站 Hassha Orai Net；船 Amapola宗谷號等。
+- 有官方英文名的飯店用英文名（Hotel Miyuki、Dormy Inn），沒有漢字的店名用羅馬拼音（Uroko亭、Tomochan食堂），一般名詞意譯（ペンション→民宿、ロープウェイ→纜車）。
+- 電影片名沒查到台灣片名的，只放在括號裡。
+
+### 還不確定的譯名（之後重查時可以改）
+
+- 自己意譯、沒有官方中文的：雪光動物園、款待券（おもてなし券）、北之住設計社、旭川觀光會議協會、禮文導覽服務等；羅馬拼音的店名少數讀音不確定（Ishido計程車、武Chan壽司）。
+- 已知的另一件事（這次沒動）：禮文島住宿頁仍寫價格，和 10/26「住宿頁不寫價格」不一致，要另外處理。
+
+### 測試與 Git
+
+- `npm test` 192 項中 191 項通過，沒過的仍是 D1 連線方式那一項（雲端機器環境造成，乾淨的 main 也一樣）；`planning:check`、`queue:validate` 通過。已合併推到 `main` 讓網站重建。
+
+### 唯一下一步
+
+- Darren 打開幾篇上線的文章（例如旭川景點、稚內住宿）看讀起來順不順；有想改的寫法告訴 Claude Code，改譯名表後用 `revise-article-text.mjs` 一起改。
+
+## 2026-10-28 Claude Code（雲端）：禮文島住宿頁拿掉價格
+
+- Darren：「把禮文島住宿頁的價格拿掉」（照 10/26「住宿頁不寫價格」）。
+- `rebun-island-stay`：H1 與 SEO 標題的「價格」改成「訂房管道」；H2「禮文島住宿一覽與價格」改成「禮文島住宿一覽」；兩個住宿表拿掉「價格」欄；開頭、民宿Hana心、星觀莊、民宿須古頓岬、冬季段落的住宿費改成含餐方案與「價格看官網或訂房網站」；SEO 描述與摘要同步。巴士票價、電動自行車租金、只收日圓現金照留（不是房價）。
+- 改過的句子對照研究紀錄的 F50～F57、F496、F497、F500 確認；`fact_tags.py`、`check-voice.mjs --final`、`audit_answer_first.py`、`heading_review.py`、`planning:check` 都通過。大綱的 H1、標題與 mustAnswer（「9 家訂房管道與聯絡方式」）同步。
+- 已用 `revise-article-text.mjs` 寫進 Sanity（網址不變、維持開放收錄），合併推到 `main` 讓網站重建。
+- 其他住宿頁檢查過：旭川、稚內、層雲峽住宿頁的金額是住宿稅、動物園門票、接駁車費，沒有房價。

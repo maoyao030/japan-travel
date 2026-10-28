@@ -24,7 +24,7 @@ export const LIMITS = {
   cjkAsciiSpaces: 2, // GLTJP 0～0.4
   semicolons: 0.5, // GLTJP 0～0.3
   colons: 0.5, // GLTJP 0～0.1
-  parentheses: 1, // GLTJP 0.1～0.4
+  parentheses: 1, // GLTJP 0.1～0.4；放日文原名的括號不算
   tildes: 1, // GLTJP 0～0.7；區間在正文寫成「5月到10月」
   avgSentence: 38, // GLTJP 29～33 字
   longSentencePercent: 25, // 超過 50 字的句子比例，GLTJP 12%～17%
@@ -152,7 +152,8 @@ export function measure(paragraphs) {
     cjkAsciiSpaces: per1k(/[一-鿿] [0-9A-Za-z]|[0-9A-Za-z] [一-鿿]/g),
     semicolons: per1k(/；/g),
     colons: per1k(/：/g),
-    parentheses: per1k(/（|\(/g),
+    // 放日文原名的括號不算（寫作指南第15條要求第一次出現附原名），只算補充說明
+    parentheses: (((text.match(/（[^（）]*）|\([^()]*\)/g) || []).filter((group) => !new RegExp(JAPANESE_CHAR).test(group)).length) / length) * 1000,
     tildes: per1k(/[～~]/g),
     avgSentence: sentences.reduce((sum, s) => sum + s.length, 0) / count,
     longSentencePercent: (sentences.filter((s) => s.length > 50).length / count) * 100,
@@ -185,6 +186,84 @@ export function checkAiTone(paragraphs, {final = false} = {}) {
   return {issues, warnings}
 }
 
+// 日文：括號外不能有假名，也不能有日本字形的漢字（稚内、観光、駅前）。Darren 2026-10-28：文章日文太多。
+// 專有名詞第一次出現寫「繁中譯名（日文原名）」，之後只寫中文；「」裡是讀者要在畫面或招牌上認的字，可以照原文。
+// 「・」「ー」中文也會用，單獨出現不算日文
+const KANA = /[\u3040-\u309f\u30a0-\u30fa\u30fd-\u30ff\u31f0-\u31ff\uff66-\uff9f]/
+// 和台灣正體寫法不同的日本字形，只收不會誤判的常用字
+export const JAPANESE_KANJI = '駅内礼観黒温鉄広沢浜県図関売発歳楽栄覧転営団辺稲来実処気区桜渓炉恵応当両様断経総縄竜亀斎戦変歩銭塩写単弁帯庁滝豊舗継険検権剣価帰駆灯姫焼涙軽拡郷'
+const JAPANESE_KANJI_PATTERN = new RegExp(`[${JAPANESE_KANJI}]`)
+const JAPANESE_CHAR = `[\\u3040-\\u309f\\u30a0-\\u30fa\\u30fd-\\u30ff\\u31f0-\\u31ff\\uff66-\\uff9f々〆${JAPANESE_KANJI}]`
+// 前後最多帶3個漢字，訊息才看得出是哪個名字
+const JAPANESE_TERM = new RegExp(`[\\u4e00-\\u9fff]{0,3}(?:${JAPANESE_CHAR}[・ー]*)+(?:[\\u4e00-\\u9fff]{1,3}(?:${JAPANESE_CHAR}[・ー]*)+)*[\\u4e00-\\u9fff]{0,3}`, 'g')
+// 「」裡的日文超過這個數字就提醒：只留畫面按鈕、招牌與站牌
+export const MAX_QUOTED_JAPANESE = 8
+
+const stripParentheses = (text) => {
+  let previous
+  let current = text
+  do {
+    previous = current
+    current = current.replace(/（[^（）]*）|\([^()]*\)/g, '')
+  } while (current !== previous)
+  return current
+}
+
+// 表格裡專門放原文的欄或列（「畫面上的日文」欄、基本資訊欄的「日文名」列）可以照原文
+const ORIGINAL_LABEL = /日文|原文|畫面|按鈕|招牌上|站牌|上的名稱/
+const tableCells = (line) => line.replace(/^\|/, '').replace(/\|$/, '').split('|').map((cell) => cell.trim())
+
+/** 正文、標題、表格、條列、延伸資料裡括號外的日文。資料來源、圖片與程式區塊不算。 */
+export function checkJapanese(markdown) {
+  const terms = []
+  const quoted = []
+  let fenced = false
+  let inSources = false
+  let header = null
+  for (const raw of markdown.replace(/\r\n/g, '\n').split('\n')) {
+    const line = raw.trim()
+    if (/^(`{3,}|~{3,})/.test(line)) {
+      fenced = !fenced
+      continue
+    }
+    if (fenced) continue
+    if (/^#{1,6}\s/.test(line)) inSources = SOURCE_HEADING.test(line)
+    if (!line.startsWith('|')) header = null
+    if (inSources || !line || /^(!\[|〔|<)/.test(line)) continue
+    let text = line
+    if (line.startsWith('|')) {
+      if (/^\|[\s:|-]+\|$/.test(line)) continue
+      const cells = tableCells(line)
+      if (!header) header = cells
+      text = cells
+        .filter((cell, index) => !ORIGINAL_LABEL.test(header[index] || '') && !(index > 0 && ORIGINAL_LABEL.test(cells[0])))
+        .join('｜')
+    }
+    text = text
+      .replace(FACT_TAG, '')
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+      .replace(/https?:\/\/\S+/g, '')
+    text = stripParentheses(text)
+    text = text.replace(/「[^「」]*」/g, (match) => {
+      if (KANA.test(match) || JAPANESE_KANJI_PATTERN.test(match)) quoted.push(match)
+      return ''
+    })
+    terms.push(...(text.match(JAPANESE_TERM) || []))
+  }
+  const unique = [...new Set(terms)]
+  const issues = []
+  const warnings = []
+  if (terms.length) {
+    issues.push(
+      `括號外有日文${terms.length}處，店名、旅館名、菜名、站名第一次寫「繁中譯名（日文原名）」，之後只寫中文，譯名照 content-planning/glossary.json：${unique.slice(0, 12).join('、')}`,
+    )
+  }
+  if (quoted.length > MAX_QUOTED_JAPANESE) {
+    warnings.push(`「」裡的日文有${quoted.length}處，只留讀者要在畫面或招牌上認的字：${[...new Set(quoted)].slice(0, 8).join('')}`)
+  }
+  return {issues, warnings, terms: unique, quoted}
+}
+
 export function checkVoice(markdown, {final = false} = {}) {
   const paragraphs = bodyParagraphs(markdown)
   const result = measure(paragraphs)
@@ -192,7 +271,10 @@ export function checkVoice(markdown, {final = false} = {}) {
   if (result.chars === 0) return {result, issues, warnings: []}
   const tone = checkAiTone(paragraphs, {final})
   issues.push(...tone.issues)
-  const {warnings} = tone
+  const warnings = [...tone.warnings]
+  const japanese = checkJapanese(markdown)
+  issues.push(...japanese.issues)
+  warnings.push(...japanese.warnings)
   for (const [key, limit] of Object.entries(LIMITS)) {
     if (result[key] <= limit) continue
     const value = Number.isInteger(result[key]) ? result[key] : result[key].toFixed(1)

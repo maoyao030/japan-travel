@@ -7,7 +7,7 @@
   "articleSourceCheckedAt": "2026-10-20",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "試寫草稿的暫定選圖，只記錄單張頁與授權，沒有下載原圖、沒有上傳。影片嵌入候選不寫進候選欄位，列在 images/media-candidates.md。",
+  "selectionScopeNote": "試寫草稿的暫定選圖，只記錄單張頁與授權，沒有下載原圖、沒有上傳。影片嵌入候選不寫進候選欄位，列在 images/media-candidates.md。2026-10-27 文內圖試傳：鴛泊渡輪站、利尻機場、自行車道三張加上 placement 與 preparation，照片接在各節第一段之後；巴士站牌仍在缺圖清單。",
   "selectedCandidateIds": {
     "cover": "cover-01",
     "oshidomari-terminal": "terminal-01",
@@ -165,6 +165,12 @@
       "mustNotShow": ["沓形港或稚內港的渡輪站冒充鴛泊", "可辨識的人物臉部", "已改建前的舊建築"],
       "targetAspectRatio": "4:3",
       "minimumWidth": 1200,
+      "placement": {"heading": "抵達鴛泊港與沓形港", "afterBlocks": 1},
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/%E9%B4%9B%E6%B3%8A%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E6%AD%A3%E9%9D%A2%E3%82%A8%E3%83%B3%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E5%81%B4.jpg",
+        "output": {"maxWidth": 1600, "format": "webp", "quality": 82}
+      },
       "selectionNotes": "terminal-01 是陸側正面，牆上「海の駅 おしどまり」大字清楚，讀者走出站或從巴士乘車處回頭就是這個畫面；2019 年拍攝，建築至今沒有改建。terminal-02 解析度最高但是從海上拍的，下船的人看不到這個角度，列為備選。",
       "sourcing": {
         "policy": "real-photo-first-ai-if-none",
@@ -287,13 +293,19 @@
       "slotId": "rishiri-airport",
       "kind": "inline",
       "need": "site-identification",
-      "section": "利尻機場的空港專用巴士",
+      "section": "從利尻機場搭空港專用巴士",
       "purpose": "讓搭 ANA 抵達的讀者認得利尻機場航廈，知道出航廈後在哪裡轉空港專用巴士。",
       "mustShow": ["利尻機場航廈外觀"],
       "mustNotShow": ["其他機場冒充利尻機場", "可辨識的人物臉部", "飛機或航空公司標誌當主體"],
       "targetAspectRatio": "4:3",
       "minimumWidth": 1200,
-      "selectionNotes": "airport-01 是從機場聯絡道路往航廈看，入口的「利尻空港」門柱、航廈與利尻山都在畫面裡，讀者出入航廈時看得到這個方向；2019 年拍攝。找不到看得到巴士乘車處或站牌的合格照片，這一點要靠正文說明。airport-02 是 2010 年的航廈側面加利尻山，較舊，列為備選。",
+      "placement": {"heading": "從利尻機場搭空港專用巴士", "afterBlocks": 1},
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/%E5%88%A9%E5%B0%BB%E7%A9%BA%E6%B8%AF%E3%81%A8%E5%88%A9%E5%B0%BB%E5%B1%B1.jpg",
+        "output": {"maxWidth": 1600, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "airport-01 是從機場聯絡道路往航廈看，入口的白色雨棚、航廈與利尻山都在畫面裡（2026-10-27 本機放大原圖確認，畫面上讀不到「利尻空港」字樣），讀者出入航廈時看得到這個方向；2019 年拍攝。找不到看得到巴士乘車處或站牌的合格照片，這一點要靠正文說明。airport-02 是 2010 年的航廈側面加利尻山，較舊，列為備選。",
       "sourcing": {
         "policy": "real-photo-first-ai-if-none",
         "photoSearchOutcome": "qualified-photo-found",
@@ -317,13 +329,13 @@
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
           "licenseCheckedAt": "2026-10-20",
           "matchType": "exact",
-          "whyItFits": "分類 Category:Rishiri Airport；畫面是機場聯絡道路與停車場，中間是寫著「利尻空港」的門柱，後方是航廈，背景是利尻山，陰天。",
-          "altDraft": "利尻機場入口的「利尻空港」門柱與航廈，後方是利尻山",
+          "whyItFits": "分類 Category:Rishiri Airport；畫面是機場聯絡道路與停車場，中間是航廈入口的白色雨棚，右側是玻璃外牆的航廈，背景是利尻山，陰天。",
+          "altDraft": "從利尻機場聯絡道路看航廈入口的白色雨棚與玻璃外牆航廈，後方是利尻山",
           "captionDraft": "利尻機場航廈與入口（2019 年）。",
           "creditDraft": "照片：Senkaku Islands／Wikimedia Commons／CC BY-SA 4.0",
           "commercialReview": {
             "people": "none",
-            "logos": "機場名稱門柱",
+            "logos": "none",
             "artwork": "none",
             "property": "公共機場設施外觀",
             "risk": "low",
@@ -386,6 +398,12 @@
       "mustNotShow": ["一般公路冒充自行車道", "其他地方的自行車道", "可辨識的人物臉部", "浮水印"],
       "targetAspectRatio": "4:3",
       "minimumWidth": 1200,
+      "placement": {"heading": "騎自行車繞利尻島一圈", "afterBlocks": 1},
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Rishiri_142_01102006.JPG",
+        "output": {"maxWidth": 1600, "format": "webp", "quality": 82}
+      },
       "selectionNotes": "唯一合格的一張：檔案頁寫明是利尻島自行車道跨越 45 公尺深溪谷的橋，畫面是有中線與邊線的自行車專用道與兩側護欄。拍攝於 2006 年，路面標線或護欄可能已更新，但自行車道的路線與型態沒有改變。如果之後要更新的照片，影片候選裡北海道公式的影片終盤也有自行車道與湾内大橋畫面，可以先用嵌入補。",
       "sourcing": {
         "policy": "real-photo-first-ai-if-none",

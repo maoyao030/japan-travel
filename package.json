@@ -27,6 +27,7 @@
     "planning:check": "node scripts/check-planning.mjs",
     "release:finalize": "node scripts/finalize-release.mjs",
     "image:prepare:cover": "node scripts/prepare-selected-cover.mjs",
+    "image:prepare:inline": "node scripts/prepare-inline-images.mjs",
     "test": "node --test tests/*.test.ts",
     "deploy": "npm run build && wrangler deploy",
     "preview": "astro preview",
