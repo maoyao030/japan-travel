@@ -147,3 +147,53 @@ test('用字頻率只在定稿（final）且正文夠長時提醒，不算失敗
   assert.deepEqual(checkVoice(article(good), {final: true}).warnings, [], '短文不檢查頻率')
 })
 
+
+test('日文只能放在括號與「」裡，括號外的假名與日本字形漢字會擋（Darren 2026-10-28）', () => {
+  const pass = article(
+    [
+      good,
+      '',
+      '車站附近的拉麵大王本店（ラーメン大王本店）中午就開，稚內炒麵有鹽味與醬油兩種。拉麵大王週三公休，只收現金，出發前可以先到觀光案內所確認當天有沒有開。',
+      '',
+      '訂票畫面最後一步按「この内容で予約する」，就會收到確認信，信裡的預約編號在窗口取票時要出示給站務人員看。',
+      '',
+      '| 畫面上的日文 | 意思 |',
+      '|---|---|',
+      '| お客様情報登録 | 會員註冊 |',
+      '',
+      '| 項目 | 內容 |',
+      '|---|---|',
+      '| 日文名 | ラーメン大王本店 |',
+      '| 公休 | 週三 |',
+    ].join('\n'),
+  )
+  const passed = checkVoice(pass)
+  assert.deepEqual(passed.issues, [])
+
+  const fail = article(
+    [
+      good,
+      '',
+      '### 海鮮炉端うろこ亭',
+      '',
+      '中午可以去車站附近的ラーメン大王本店，晚上改去稚内港旁的店，稚內炒麵有鹽味與醬油兩種，兩家都只收現金，出發前可以先到案內所確認。',
+      '',
+      '| 店名 | 招牌 |',
+      '|---|---|',
+      '| 拉麵大王本店 | チャーメン |',
+    ].join('\n'),
+  )
+  const failed = checkVoice(fail)
+  const issue = failed.issues.find((text) => text.startsWith('括號外有日文'))
+  assert.ok(issue, '括號外的日文要擋')
+  assert.match(issue, /うろこ亭/)
+  assert.match(issue, /ラーメン大王/)
+  assert.match(issue, /稚内/)
+  assert.match(issue, /チャーメン/)
+  assert.match(issue, /括號外有日文4處/)
+})
+
+test('資料來源的日文網頁標題不算日文太多', () => {
+  const markdown = article(good) + '- [ご当地グルメ大集合！稚内・利尻・礼文｜稚内観光協会](https://example.invalid/)\n'
+  assert.deepEqual(checkVoice(markdown).issues, [])
+})
