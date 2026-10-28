@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-26",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-transport/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-transport/，不加入 Git、不上傳。 2026-10-28 文內照片第 3 批：Ideyu號車輛、旭川機場航廈前車道兩張加上 placement 與 preparation，照片接在各節第一段之後；旭岳溫泉的巴士站牌與纜車停車場在維基共享資源與免費圖庫找不到合格實拍（纜車站前停車場只有 2003 年的照片、山麓站前站牌只有 2011 年雨天且有行人的照片，山麓站也已是纜車頁的照片），不放。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "ideyu-bus": "ideyu-bus-01",
+    "asahikawa-airport-curb": "airport-curb-01"
   },
   "selectedAt": "2026-10-26",
   "slots": [
@@ -100,6 +102,182 @@
             "property": "自然景觀與溫泉街建築、停車場",
             "risk": "low",
             "notes": "停車場車輛很小，看不出車牌或人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "ideyu-bus",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "旭川到旭岳的Ideyu號",
+      "purpose": "讓讀者在旭川站前 Bus Touch 9 號乘車處認得出往旭岳的旭川電氣軌道 66 號Ideyu號，和同一個乘車處往富良野的車分開。",
+      "mustShow": ["旭川電氣軌道往旭岳的 66 號巴士", "看得到「66」路線號碼或「旭岳行」字樣"],
+      "mustNotShow": ["其他路線或其他公司的巴士冒充Ideyu號", "可辨識的人物臉部", "旭岳纜車車廂"],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {"heading": "旭川到旭岳的Ideyu號", "afterBlocks": 1},
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Asahikawa_denkikid%C5%8D_A200F_0110.JPG",
+        "output": {"maxWidth": 1600, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "ideyu-bus-01 是 221.20 在 2011 年拍的旭川電氣軌道 66 號往旭岳的車，前方路線牌寫「66 旭川空港 経由 旭岳行」，車身側面也有 66 路線牌與雪花圖案、「旭川電気軌道」字樣，讀者在乘車處看路線牌就認得出來；司機臉部原圖已打馬賽克。限制是 2011 年拍攝，現在的車輛與塗裝可能不同，認車仍以路線牌的 66 與「旭岳」為準。ideyu-bus-02 是同一條路線的另一台車，但路線牌顯示「回送」，看不出往旭岳，列為備選。2025 到 2026 年的旭川電氣軌道新車照片都是活動展示或其他路線，看不出是 66 號，不列。",
+      "textFallback": {
+        "signTextJa": ["66", "旭岳行", "旭川電気軌道"],
+        "locationDescription": "旭川站前巴士總站 Bus Touch 的 9 號乘車處，往富良野的車也停同一個乘車處，車頭路線牌顯示 66 與「旭岳」的就是Ideyu號。",
+        "officialPhotoLinks": ["https://www.asahikawa-denkikidou.jp/asahidaek_line/"]
+      },
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Asahikawa Denkikidou 全部檔案與關鍵字「旭川電気軌道 バス」「Asahidake bus」「Asahidake onsen bus」；只有 221.20 的三張（0110 正面、0110 背面、1263 回送）檔案頁標明是旭川站到旭岳溫泉的車。Unsplash 搜尋 asahidake 沒有巴士照片。"
+      },
+      "candidates": [
+        {
+          "candidateId": "ideyu-bus-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahikawa_denkikid%C5%8D_A200F_0110.JPG",
+          "creatorName": "221.20",
+          "sourceTitle": "File:Asahikawa denkikidō A200F 0110.JPG",
+          "sourceDescription": "Asahikawa Station to Asahidake Onsen",
+          "takenAt": "2011-10-12",
+          "width": 2800,
+          "height": 2100,
+          "licenseName": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "licenseCheckedAt": "2026-10-28",
+          "licenseNotes": "檔案頁為 PD-self，作者自行放棄著作權。",
+          "matchType": "exact",
+          "matchLimits": "2011 年拍攝，現在行駛的車輛與車身圖案可能不同。",
+          "whyItFits": "檔案頁說明為旭川站往旭岳溫泉，分類 Number 66 on buses；畫面裡車頭路線牌寫「66 旭川空港 経由 旭岳行」，車身有 66 路線牌與「旭川電気軌道」字樣，是在旭川市區路口拍的白色車身大巴。",
+          "altDraft": "旭川電氣軌道往旭岳的白色巴士，車頭路線牌寫著 66 與「旭岳行」",
+          "captionDraft": "往旭岳的旭川電氣軌道 66 號巴士（2011 年）。",
+          "creditDraft": "照片：221.20／Wikimedia Commons／Public domain",
+          "commercialReview": {
+            "people": "司機臉部在原圖已打馬賽克，無法辨識",
+            "logos": "巴士公司名稱與車身「超特殊低公害バス」字樣；背景大樓招牌很小，不是主體",
+            "artwork": "車身的鼠兔與花卉圖案，是巴士塗裝的一部分",
+            "property": "路線巴士與市區街景",
+            "risk": "low",
+            "notes": "不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "ideyu-bus-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahikawa_denkikid%C5%8D_A022F_1263.JPG",
+          "creatorName": "221.20",
+          "sourceTitle": "File:Asahikawa denkikidō A022F 1263.JPG",
+          "sourceDescription": "Asahidake Onsen to Asahikawa Station",
+          "takenAt": "2011-10-12",
+          "width": 2000,
+          "height": 1500,
+          "licenseName": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "licenseCheckedAt": "2026-10-28",
+          "licenseNotes": "檔案頁為 PD-self，作者自行放棄著作權。",
+          "matchType": "exact",
+          "matchLimits": "2011 年拍攝；車頭路線牌顯示「回送」，只有車身側面的小路線牌看得到 66。",
+          "whyItFits": "檔案頁說明為旭岳溫泉往旭川站，分類 Bus routes designated 66；白色車身有雪花圖案與「旭川電気軌道」字樣。",
+          "altDraft": "旭川電氣軌道的白色巴士，車身有雪花圖案",
+          "captionDraft": "旭川電氣軌道旭岳線的車輛（2011 年）。",
+          "creditDraft": "照片：221.20／Wikimedia Commons／Public domain",
+          "commercialReview": {
+            "people": "司機在擋風玻璃後，看不清臉",
+            "logos": "背景有租車公司招牌，在畫面左上角",
+            "artwork": "車身的鳥與雪花圖案",
+            "property": "路線巴士與市區街景",
+            "risk": "low",
+            "notes": "背景招牌比 ideyu-bus-01 明顯，所以列為備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "asahikawa-airport-curb",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "從旭川機場直接搭Ideyu號",
+      "purpose": "讓從旭川機場出發的讀者認得出航廈正面與門口的車道，知道走出航廈後就在這一排上巴士。",
+      "mustShow": ["旭川機場航廈正面", "航廈前的車道與巴士、計程車上下客處"],
+      "mustNotShow": ["其他機場冒充旭川機場", "可辨識的人物臉部", "飛機或航空公司標誌當主體", "與旭川交通頁重複的照片"],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {"heading": "從旭川機場直接搭Ideyu號", "afterBlocks": 1},
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/140724_Asahikawa_Airport_Hokkaido_Japan02s3.jpg",
+        "output": {"maxWidth": 1600, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "airport-curb-01 是 663highland 2014 年 7 月沿航廈前車道拍的旭川機場正面，屋頂上「旭川空港」大字清楚，門口車道停著計程車，遠處有兩輛巴士，讀者走出航廈就是這一排車道；晴天、6000 px。限制：2014 年拍攝，之後航廈有擴建，巴士乘車處的編號看板在畫面上讀不到，2 號乘車處的位置仍靠正文說明。同一位作者的 01s3 已列在旭川交通頁的候選，這裡不用。",
+      "textFallback": {
+        "signTextJa": ["旭川空港", "到着"],
+        "locationDescription": "走出航廈的出入口4，左手邊就是公車站；往東川、旭岳的車停 2 號乘車處，1 號乘車處是往旭川站的車。",
+        "officialPhotoLinks": ["https://www.hokkaido-airports.com/ja/asahikawa/access/bus/"]
+      },
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Asahikawa Airport 全部檔案與關鍵字「旭川空港 バス」「Asahikawa Airport bus」；室內照、航空照與飛機照不符合，巴士乘車處站牌沒有單獨的照片。01s3 已是旭川交通頁的候選，不重複使用。"
+      },
+      "candidates": [
+        {
+          "candidateId": "airport-curb-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:140724_Asahikawa_Airport_Hokkaido_Japan02s3.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:140724 Asahikawa Airport Hokkaido Japan02s3.jpg",
+          "sourceDescription": "Asahikawa Airport in Asahikawa, Hokkaido, Japan",
+          "takenAt": "2014-07-24",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-10-28",
+          "licenseNotes": "檔案頁為 GFDL、CC BY-SA 3.0、CC BY 2.5 多重授權，選用 CC BY 2.5。",
+          "matchType": "exact",
+          "matchLimits": "2014 年拍攝，之後航廈有擴建；畫面讀不到巴士乘車處的編號。",
+          "whyItFits": "檔案頁說明為旭川機場，分類 Asahikawa Airport 與 Airport terminals in Japan；畫面右邊航廈屋頂寫著「旭川空港」，門口車道停著一排計程車，遠處有兩輛巴士，左邊是有屋頂的人行通道。",
+          "altDraft": "旭川機場航廈正面，屋頂寫著「旭川空港」，門口車道停著計程車，遠處有巴士",
+          "captionDraft": "旭川機場航廈前的車道（2014 年）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "門口有幾位旅客與一位計程車司機，都很小或背對鏡頭，縮到 1600 px 後無法辨識",
+            "logos": "機場名稱「旭川空港」，屬公共設施名稱；計程車車身字樣很小",
+            "artwork": "none",
+            "property": "公共機場設施外觀",
+            "risk": "low",
+            "notes": "車牌在縮圖後無法辨識。"
           },
           "checks": {
             "fullImageInspected": true,

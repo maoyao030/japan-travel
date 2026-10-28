@@ -7,9 +7,10 @@
   "articleSourceCheckedAt": "2026-10-26",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-transport/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-transport/，不加入 Git、不上傳。2026-10-28 文內照片第 3 批：香深港渡輪站陸側正面一張加上 placement 與 preparation，接在「香深港渡輪站」第一段之後；路線巴士、觀光巴士與租車店沒有找到合格照片，不放。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "kafuka-terminal": "kafuka-terminal-01"
   },
   "selectedAt": "2026-10-26",
   "slots": [
@@ -100,6 +101,95 @@
             "property": "道路與自然景觀",
             "risk": "low",
             "notes": "遠處車輛很小，看不出車牌或人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kafuka-terminal",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "香深港渡輪站",
+      "purpose": "讓到禮文島下船、要找巴士站與計程車招呼站的讀者，認得出香深港渡輪站陸側的正面出口。",
+      "mustShow": [
+        "香深港渡輪站的陸側正面",
+        "正面出口前的屋頂走廊或乘車處"
+      ],
+      "mustNotShow": [
+        "鴛泊港或稚內港的渡輪站冒充香深",
+        "2014 年施工中的照片",
+        "與稚內渡輪頁重複的碼頭側照片",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "香深港渡輪站",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/%E9%A6%99%E6%B7%B1%E6%B8%AF%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "香深港フェリーターミナル",
+          "路線バス乗場",
+          "ハイヤー乗場"
+        ],
+        "locationDescription": "香深港渡輪站是米白色磁磚外牆的兩層樓建築，陸側正面有帶屋頂的走廊連到入口；正面出口前是路線巴士站與計程車招呼站，觀光巴士在停車場那一側上車。",
+        "officialPhotoLinks": [
+          "https://heartlandferry.jp/wp/wp-content/uploads/2026/09/202609kafuka-floor-mapOL.pdf"
+        ]
+      },
+      "selectionNotes": "kafuka-terminal-01 是陸側正面，入口前帶屋頂的走廊、最左邊柱子上的「ハイヤー乗降口」與牆上的站名都在畫面裡，就是讀者走出正面出口後回頭看到的樣子；牆上站名字小，放大才看得出「フェリーターミナル」，所以替代文字不寫可以讀到站名。碼頭側那張（香深港フェリーターミナルのボーディングブリッジ.jpg）站名較容易看出，但已放在稚內渡輪頁，而且下船的人從正面出去不會看到那一面，這頁不用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Kafuka Port（全部看過檔案資訊）、Category:Rebun, Hokkaido、Category:Soya Bus 與關鍵字「香深港」「Kafuka ferry terminal」「礼文 バス」「Rebun bus」。2010 到 2013 年的香深港照片是新渡輪站完工前，KafukaPortFerryTerminal Rebun Hokkaido Japan JUL2014.jpg 是施工中，都不用。宗谷巴士的照片都不是在禮文島拍的，禮文島的巴士站牌、觀光巴士與租車店沒有找到合格照片。"
+      },
+      "candidates": [
+        {
+          "candidateId": "kafuka-terminal-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E9%A6%99%E6%B7%B1%E6%B8%AF%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB.jpg",
+          "creatorName": "Senkaku Islands",
+          "sourceTitle": "File:香深港フェリーターミナル.jpg",
+          "sourceDescription": "香深港フェリーターミナル",
+          "takenAt": "2020-02-01",
+          "width": 1400,
+          "height": 1050,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "matchLimits": "檔案頁的日期和上傳日同一天，畫面沒有積雪，實際拍攝日可能更早；建築是 2014 年 7 月還在施工的新渡輪站，外觀與現況一致。牆上站名字小，縮圖上看不清楚。",
+          "whyItFits": "檔案頁說明為「香深港フェリーターミナル」，分類 Kafuka Port；畫面是陸側正面，米白色磁磚外牆的兩層樓建築，入口前有深色木柱撐起的屋頂走廊，左邊柱子上有「ハイヤー乗降口」直式招牌，前面是車道與停車格。",
+          "altDraft": "香深港渡輪站陸側的正面，米白色兩層樓建築前有帶屋頂的走廊連到入口",
+          "captionDraft": "禮文島香深港渡輪站的陸側正面入口（2020 年以前）。",
+          "creditDraft": "照片：Senkaku Islands／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "入口裡面隱約有人影，很小，無法辨識",
+            "logos": "設施名稱與「ハイヤー乗降口」標示，屬公共設施標示",
+            "artwork": "none",
+            "property": "公共渡輪站建築外觀",
+            "risk": "low",
+            "notes": "陰天但主體清楚；右邊停著一輛小貨車，車牌很小。"
           },
           "checks": {
             "fullImageInspected": true,

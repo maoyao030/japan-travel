@@ -7,9 +7,12 @@
   "articleSourceCheckedAt": "2026-10-26",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-transport/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-transport/，不加入 Git、不上傳。2026-10-28 文內照片第 3 批：加上特急Lilac號、站前巴士乘車處Bus Touch、Taisetsu Liner 三張，照片接在各節第一段之後；旭川機場航廈外觀只找到 2017 年以前的照片，看不出 2018 年擴建後的現況，不放。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "limited-express-lilac": "lilac-01",
+    "asahikawa-bus-touch": "bustouch-01",
+    "taisetsu-liner-bus": "liner-01"
   },
   "selectedAt": "2026-10-26",
   "slots": [
@@ -99,6 +102,339 @@
             "property": "機場航廈與車道",
             "risk": "low",
             "notes": "沒有可辨識的人物與醒目招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "limited-express-lilac",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "札幌到旭川的特急Kamui號與Lilac號",
+      "purpose": "讓從札幌搭特急來的讀者認得出Lilac號的綠色車頭，也看到旭川站高架月台的樣子。",
+      "mustShow": [
+        "JR北海道789系特急Lilac號（綠色車頭）",
+        "旭川車站月台或能確認是旭川車站"
+      ],
+      "mustNotShow": [
+        "已退役的781系、785系或其他車種冒充現役車",
+        "可辨識的人物臉部",
+        "札幌站或其他車站冒充旭川站"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "札幌到旭川的特急Kamui號與Lilac號",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/DMU261-100_SE-201_Sarobetsu_789-100_HE-105_Lilac_at_Asahikawa_Station.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "ライラック",
+          "旭川駅"
+        ],
+        "locationDescription": "旭川車站是高架車站，特急停在月台上；Lilac號是綠色車頭、銀色車身的789系，Kamui號是銀色車頭的789系1000番台。",
+        "officialPhotoLinks": [
+          "https://www.jrhokkaido.co.jp/train/tr033_01.html",
+          "https://www.jrhokkaido.co.jp/train/tr013_01.html"
+        ]
+      },
+      "selectionNotes": "lilac-01 是 IRishikawa521 2018 年 5 月在旭川站月台拍的：右邊是 789 系 HE-105 編成的特急Lilac號，車頭顯示「ライラック」，左邊是特急Sarobetsu號的 Kiha261 系，中間是高架月台與往剪票口的黃色指標。車種是現役的 789 系，旭川站 2011 年完成高架化後月台沒有改建，2018 年的照片仍能代表現況。畫面清楚、光線均勻。lilac-02 是 2025 年 10 月的 Kamui號，車種也對，但下大雪、畫面滿是雪點，看不清月台，列為備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Lilac (train)、Category:Trains at Asahikawa Station 與關鍵字「特急カムイ 789系」「Kamui 789」。781 系、785 系與 Super Kamui 時代的照片是退役車種或舊名稱，不用；2025 年 10 月 Takeshi Aida 拍的 Lilac號與 Kamui號都在大雪中，雪點多；2017 年 Rsa 拍的 Lilac號在白石站，不是旭川。站上其他文章沒有用過這張。"
+      },
+      "candidates": [
+        {
+          "candidateId": "lilac-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:DMU261-100_SE-201_Sarobetsu_789-100_HE-105_Lilac_at_Asahikawa_Station.jpg",
+          "creatorName": "IRishikawa521",
+          "sourceTitle": "File:DMU261-100 SE-201 Sarobetsu 789-100 HE-105 Lilac at Asahikawa Station.jpg",
+          "sourceDescription": "旭川駅で接続する特急「サロベツ2号」と特急「ライラック18号」（Own work，分類 Lilac (train)、Trains at Asahikawa Station）",
+          "takenAt": "2018-05-06",
+          "width": 6016,
+          "height": 4000,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為在旭川站接續的特急Sarobetsu 2號與特急Lilac 18號，分類有 Trains at Asahikawa Station；右邊綠色車頭的 789 系顯示「ライラック」，是文章說的札幌到旭川主力特急。",
+          "altDraft": "旭川車站高架月台，右邊停著綠色車頭的特急Lilac號，左邊是藍色車頭的特急Sarobetsu號",
+          "captionDraft": "停在旭川車站月台的特急Lilac號（右）與特急Sarobetsu號（2018 年）。",
+          "creditDraft": "照片：IRishikawa521／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "月台遠處有一個很小的人影，無法辨識",
+            "logos": "車身的 HET 標誌與列車名稱顯示，是車輛本身",
+            "artwork": "none",
+            "property": "車站月台與列車",
+            "risk": "low",
+            "notes": "沒有店家招牌，不會讓人誤以為是推薦或本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "lilac-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:JR_789-1000_%E3%82%AB%E3%83%A0%E3%82%A4_Kamui_%E6%97%AD%E5%B7%9D%E9%A7%85_(20251028)_(54909895720).jpg",
+          "creatorName": "Takeshi Aida from Hong Kong, Hong Kong",
+          "sourceTitle": "File:JR 789-1000 カムイ Kamui 旭川駅 (20251028) (54909895720).jpg",
+          "sourceDescription": "JR Hokkaido 789-1000 series on a Kamui service at Asahikawa Station",
+          "takenAt": "2025-10-28",
+          "width": 6630,
+          "height": 4420,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為在旭川站的 789 系 1000 番台特急Kamui號；銀色車頭、車號 HL-1004，是現役車種。",
+          "altDraft": "大雪中駛進旭川車站的銀色特急Kamui號",
+          "captionDraft": "雪中駛進旭川車站的特急Kamui號（2025 年 10 月）。",
+          "creditDraft": "照片：Takeshi Aida from Hong Kong, Hong Kong／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "車頭的列車標誌",
+            "artwork": "none",
+            "property": "鐵道設施與列車",
+            "risk": "low",
+            "notes": "畫面滿是雪點，看不清月台，所以列為備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "asahikawa-bus-touch",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "到了旭川車站，站前巴士乘車處怎麼找？",
+      "purpose": "讓走出旭川站北口的讀者知道巴士乘車處Bus Touch在站前廣場東邊（出站後的右前方），Tsuruha大樓就在乘車處旁邊。",
+      "mustShow": [
+        "旭川站北口站前廣場",
+        "站前廣場東邊的巴士乘車處與停著的巴士",
+        "Tsuruha大樓或能確認乘車處位置的建築"
+      ],
+      "mustNotShow": [
+        "旭川站南口或北彩都花園（旭川景點頁已用）",
+        "可辨識的人物臉部",
+        "旅館招牌當主體",
+        "封面已用的 2026 年 10 月高處俯瞰照"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "到了旭川車站，站前巴士乘車處怎麼找？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/JR-Asahikawa-North-Entrance01.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "旭川駅前バスタッチ",
+          "のりば"
+        ],
+        "locationDescription": "從JR旭川站北口出來是紅磚站前廣場，巴士乘車處Bus Touch在廣場東邊；7到10號那一排靠近Tsuruha大樓，大樓1樓是旭川電氣軌道的巴士總合案內所。",
+        "officialPhotoLinks": [
+          "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf"
+        ]
+      },
+      "selectionNotes": "bustouch-01 是 RJD 2020 年 8 月從旭川站北口高處往北拍的站前廣場：前景是紅磚廣場，中段右邊是巴士乘車處的島式月台與停靠的巴士，右後方是 Tsuruha 大樓（TSURUHA BLDG.），左邊是計程車招呼站與停車場。讀者出站後面對的就是這個方向，能看出乘車處在廣場右前方、靠近 Tsuruha 大樓，對應正文「Bus Touch 就在站前廣場的東邊」「7到10號靠近 Tsuruha 大樓」。封面是從北邊高處往站舍拍，這張是從站舍往外看，方向相反，不重複。限制：左上 Route Inn Grand、右上 Y's HOTEL 招牌看得到，但在畫面邊緣，不是主體；天空偏陰。bustouch-02 是 Nesnad 2022 年從北邊大樓拍的站舍與廣場，巴士區在左邊偏小，和封面角度太像，列為備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Asahikawa Station、Category:Asahikawa Denkikidou 與關鍵字「旭川駅前 バス」「旭川駅前 バスプール」「バスタッチ」「Asahikawa Station bus stop」。站前巴士的照片多是 2007～2013 年 Sinryow、Rsa 等人拍的單一車輛，站前廣場與 Tsuruha 大樓還沒整建完成；Animataru 2018 年的站牌照是直式，而且拍的是不停車的站牌。Nesnad 2022 年的幾張多是站舍正面或從北邊俯瞰，看不清乘車處。站上其他文章沒有用過這張。"
+      },
+      "candidates": [
+        {
+          "candidateId": "bustouch-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:JR-Asahikawa-North-Entrance01.JPG",
+          "creatorName": "RJD",
+          "sourceTitle": "File:JR-Asahikawa-North-Entrance01.JPG",
+          "sourceDescription": "北海道旅客鉄道（JR北海道）函館本線・宗谷本線・富良野線旭川駅北口・旭川駅前広場（旭川市）",
+          "takenAt": "2020-08-01",
+          "width": 4032,
+          "height": 3024,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為旭川站北口與旭川站前廣場，分類 Asahikawa Station、Station forecourts in Hokkaido；畫面右邊的巴士乘車處與 Tsuruha 大樓，正是正文說的 Bus Touch 位置。",
+          "altDraft": "從旭川車站北口往外看，紅磚站前廣場右前方是停著巴士的乘車處，後面是 Tsuruha 大樓",
+          "captionDraft": "旭川站北口的站前廣場，右前方是巴士乘車處Bus Touch（2020 年）。",
+          "creditDraft": "照片：RJD／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "廣場上有幾個很小的行人，無法辨識",
+            "logos": "周邊大樓的 Route Inn Grand、Y's HOTEL、北彩都病院等招牌，在畫面邊緣，不是主體",
+            "artwork": "none",
+            "property": "站前廣場、巴士乘車處與周邊大樓",
+            "risk": "low",
+            "notes": "旅館招牌不是主體，不會讓人誤以為是推薦或本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "bustouch-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahikawa_Station_-_2022_Aug_9_various.jpeg",
+          "creatorName": "Nesnad",
+          "sourceTitle": "File:Asahikawa Station - 2022 Aug 9 various.jpeg",
+          "sourceDescription": "Asahikawa Station (旭川駅)（Own work）",
+          "takenAt": "2022-08-09",
+          "width": 4032,
+          "height": 3024,
+          "licenseName": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為旭川站；從北邊高處拍站舍與站前廣場，左邊看得到巴士乘車處與 Tsuruha 大樓。",
+          "altDraft": "從高處看旭川車站北口與紅磚站前廣場，左邊是停著巴士的乘車處",
+          "captionDraft": "旭川站北口與站前廣場，左邊是巴士乘車處（2022 年）。",
+          "creditDraft": "照片：Nesnad／Wikimedia Commons／CC BY 4.0",
+          "commercialReview": {
+            "people": "廣場上有很小的行人，無法辨識",
+            "logos": "左上 Y's HOTEL 招牌",
+            "artwork": "none",
+            "property": "車站與站前廣場",
+            "risk": "low",
+            "notes": "角度和封面太像，巴士區偏小，列為備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "taisetsu-liner-bus",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "旭川到新千歲機場的Taisetsu Liner",
+      "purpose": "讓在旭川站前9號乘車處等車的讀者認得出Taisetsu Liner的車子：白色車身、雪花圖案，車頭顯示「たいせつライナー」。",
+      "mustShow": [
+        "旭川電氣軌道的Taisetsu Liner車輛",
+        "車頭或車側看得到「たいせつライナー」字樣"
+      ],
+      "mustNotShow": [
+        "一般路線巴士或其他公司的高速巴士冒充",
+        "可辨識的人物臉部",
+        "退役的舊車"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭川到新千歲機場的Taisetsu Liner",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/%E6%97%AD%E5%B7%9D%E9%9B%BB%E6%B0%97%E8%BB%8C%E9%81%93%E3%81%AE%E9%83%BD%E5%B8%82%E9%96%93%E8%BB%8A.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "たいせつライナー",
+          "旭川"
+        ],
+        "locationDescription": "Taisetsu Liner從旭川站前9號乘車處發車，由旭川電氣軌道與北都交通合營，車子是高速巴士型的大型車。",
+        "officialPhotoLinks": [
+          "https://www.asahikawa-denkikidou.jp/taisetsu_liner/"
+        ]
+      },
+      "selectionNotes": "liner-01 是 道北のバスマニア 2025 年 4 月拍的旭川電氣軌道高速車：白色車身、側面有雪花與鳥的圖案，車頭與車側的 LED 顯示「たいせつライナー 旭川」，檔案頁說明寫明是 Taisetsu Liner 用的車。讀者在站前等車要認的就是這台。原圖 1634 px 寬，夠文內使用；路面是濕的、天色偏陰，但車身清楚。限制：Taisetsu Liner 與北都交通合營，搭到的也可能是北都交通的車；司機在擋風玻璃後戴口罩，看不出臉。拍攝地點檔案頁沒寫，圖說只寫車輛，不寫地點。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Asahikawa Denkikidou、Category:Buses in Asahikawa, Hokkaido 與關鍵字「旭川電気軌道」「Taisetsu Liner」「Asahikawa Airport bus」。旭川電氣軌道的機場巴士照片都是 2008～2013 年的舊車與舊塗裝，看不出現在的車；2023 年的 MR430 與 2026 年的新塗裝車是巴士節展示車，不是文章提到的路線。Taisetsu Liner 只找到這一張。站上其他文章沒有用過。"
+      },
+      "candidates": [
+        {
+          "candidateId": "liner-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E6%97%AD%E5%B7%9D%E9%9B%BB%E6%B0%97%E8%BB%8C%E9%81%93%E3%81%AE%E9%83%BD%E5%B8%82%E9%96%93%E8%BB%8A.jpg",
+          "creatorName": "道北のバスマニア",
+          "sourceTitle": "File:旭川電気軌道の都市間車.jpg",
+          "sourceDescription": "たいせつライナーに使用される高速車両（Own work，分類 Asahikawa Denkikidou、Buses in Asahikawa, Hokkaido）",
+          "takenAt": "2025-04-25",
+          "width": 1634,
+          "height": 1167,
+          "licenseName": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為 Taisetsu Liner 使用的高速車，分類 Asahikawa Denkikidou；車頭與車側的 LED 顯示「たいせつライナー」，正是本節的直達巴士。",
+          "altDraft": "白色車身、側面有雪花圖案的旭川電氣軌道高速巴士，車頭顯示「たいせつライナー 旭川」",
+          "captionDraft": "旭川電氣軌道的Taisetsu Liner車輛（2025 年）。",
+          "creditDraft": "照片：道北のバスマニア／Wikimedia Commons／CC0",
+          "commercialReview": {
+            "people": "司機在擋風玻璃後戴口罩，看不出臉",
+            "logos": "車頭的 FUSO 車廠標誌與巴士公司的車身圖案，是車輛本身；背景大樓有小招牌，不是主體",
+            "artwork": "車身的雪花與鳥的圖案，是公司塗裝",
+            "property": "巴士與街道",
+            "risk": "low",
+            "notes": "沒有可辨識的人物，不會讓人誤以為是推薦或本站實地拍攝。"
           },
           "checks": {
             "fullImageInspected": true,

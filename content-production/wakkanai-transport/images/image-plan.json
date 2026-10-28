@@ -7,9 +7,12 @@
   "articleSourceCheckedAt": "2026-10-21",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；發布工具還不支援文內圖，文內圖需求之後另外處理。原圖只下載到 .tmp/image-selection/wakkanai-transport/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；發布工具還不支援文內圖，文內圖需求之後另外處理。原圖只下載到 .tmp/image-selection/wakkanai-transport/，不加入 Git、不上傳。2026-10-28 文內照片第 3 批：特急宗谷號、稚內機場航廈、站前巴士總站三張加上 placement 與 preparation，照片接在各節第一段之後；高速巴士稚內號與渡輪站沒有合格照片，不加槽位。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "limited-express-soya": "soya-01",
+    "wakkanai-airport": "airport-01",
+    "station-bus-terminal": "terminal-01"
   },
   "selectedAt": "2026-10-21",
   "slots": [
@@ -98,6 +101,337 @@
             "property": "公共車站建築外觀",
             "risk": "low",
             "notes": "左側邊緣有一棟商家建築的招牌，裁切時可避開。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "limited-express-soya",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "札幌到稚內的特急宗谷號",
+      "purpose": "讓要搭特急宗谷號的讀者認得出這班車：藍色車頭的キハ261系柴油特急，在札幌站月台上車。",
+      "mustShow": [
+        "現在行駛特急宗谷號的キハ261系車頭",
+        "檔案頁能確認是特急宗谷號"
+      ],
+      "mustNotShow": [
+        "已退役的舊型車輛或舊塗裝當現況",
+        "其他路線的列車冒充宗谷號",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "札幌到稚內的特急宗谷號",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/%E6%9C%AD%E5%B9%8C%E9%A7%85%E3%81%AB%E5%85%A5%E7%B7%9A%E3%81%99%E3%82%8B%E7%89%B9%E6%80%A5%E5%AE%97%E8%B0%B7%E5%8F%B7%E3%81%AE%E3%82%AD%E3%83%8F261%E7%B3%BB.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "特急 宗谷",
+          "稚内"
+        ],
+        "locationDescription": "特急宗谷號每天7:30從札幌站發車，車輛是JR北海道的キハ261系柴油特急，藍色車頭、車身有黃色線條。",
+        "officialPhotoLinks": [
+          "https://www.jrhokkaido.co.jp/"
+        ]
+      },
+      "selectionNotes": "soya-01 是2026年2月早上7點多、特急宗谷號稚內行駛進札幌站的畫面，時間和正文寫的7:30發車同一班，車型是現在行駛的キハ261系，沒有人物；雪地反光但車頭清楚。soya-02 在稚內站拍到站的キハ261系，但月台上的乘客臉部被打馬賽克，列為備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Sōya (train)、Category:Trains at Wakkanai Station 與關鍵字「キハ261 宗谷」「稚内駅」。排除行駛中遠景（函館本線沿線，不是讀者上車的地方）、夜間昏暗的札幌站停車照、橫向過窄的稚內站月台照（4712×1830）與有乘客的月台照。"
+      },
+      "candidates": [
+        {
+          "candidateId": "soya-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E6%9C%AD%E5%B9%8C%E9%A7%85%E3%81%AB%E5%85%A5%E7%B7%9A%E3%81%99%E3%82%8B%E7%89%B9%E6%80%A5%E5%AE%97%E8%B0%B7%E5%8F%B7%E3%81%AE%E3%82%AD%E3%83%8F261%E7%B3%BB.jpg",
+          "creatorName": "スミス1919",
+          "sourceTitle": "File:札幌駅に入線する特急宗谷号のキハ261系.jpg",
+          "sourceDescription": "特急宗谷号稚内行きのキハ261系。",
+          "takenAt": "2026-02-04",
+          "width": 3120,
+          "height": 2080,
+          "licenseName": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為特急宗谷號稚內行的キハ261系，分類 Sōya (train)、Trains at Sapporo Station；2026年2月4日7:13拍攝，正是早上從札幌開往稚內的那一班。藍色車頭（編號SE-103）亮著頭燈駛進札幌站，月台與雪地在前。",
+          "altDraft": "藍色車頭的キハ261系特急宗谷號，在雪地裡駛進札幌站月台",
+          "captionDraft": "往稚內的特急宗谷號駛進札幌站（2026 年）。",
+          "creditDraft": "照片：スミス1919／Wikimedia Commons／CC BY 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "鐵路車輛與車站設施",
+            "risk": "low",
+            "notes": "月台告示牌「立入禁止」很小；沒有人物，不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "soya-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kiroha_261-202_Limited_express_S%C5%8Dya_at_Wakkanai_Station.jpg",
+          "creatorName": "Suikotei",
+          "sourceTitle": "File:Kiroha 261-202 Limited express Sōya at Wakkanai Station.jpg",
+          "sourceDescription": "稚内駅に到着したキハ261系特急「宗谷」",
+          "takenAt": "2018-08-13",
+          "width": 3214,
+          "height": 2410,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為抵達稚內站的キハ261系特急宗谷，分類 Sōya (train)、Trains at Wakkanai Station；車頭近拍，右側是稚內站的站房。",
+          "altDraft": "抵達稚內站的キハ261系特急宗谷號車頭",
+          "captionDraft": "抵達稚內站的特急宗谷號（2018 年）。",
+          "creditDraft": "照片：Suikotei／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "月台左側有幾位乘客，臉部已被上傳者打馬賽克",
+            "logos": "none",
+            "artwork": "none",
+            "property": "鐵路車輛與車站設施",
+            "risk": "low",
+            "notes": "馬賽克人像在正文裡顯得突兀，所以列為備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "wakkanai-airport",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "搭飛機到稚內機場，怎麼進市區",
+      "purpose": "讓搭飛機來的讀者認得出稚內機場航廈，機場巴士與計程車就在航廈前的車道上車。",
+      "mustShow": [
+        "稚內機場航廈外觀",
+        "看得到「稚内空港」字樣或能確認是這棟航廈"
+      ],
+      "mustNotShow": [
+        "其他機場冒充稚內機場",
+        "空拍或遠景看不出航廈入口",
+        "可讀的車牌",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "搭飛機到稚內機場，怎麼進市區",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Wakkanai_airports_terminal_building.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "稚内空港"
+        ],
+        "locationDescription": "稚內機場航廈是淺綠色的兩層樓建築，屋頂上有紅字「稚内空港」；航廈前的車道有拱形雨遮，機場巴士與計程車在這裡上車。",
+        "officialPhotoLinks": [
+          "https://wkj-airport.jp/"
+        ]
+      },
+      "selectionNotes": "airport-01 是晴天的航廈正面斜角，屋頂「稚内空港」紅字與航廈前的拱形雨遮、計程車排班都在畫面裡，讀者出航廈就是這個方向；16:9、3840 px。airport-02 是同一位作者同月從停車場路口拍的4:3版本，路燈與標誌桿擋在前面，列為備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Wakkanai Airport 與關鍵字「稚内空港」「Wakkanai Airport」。排除空拍照、寬度不到 1200 px 的 2006 年照片（1533×604、834×468）、2012 年的展望台照片與航廈外觀舊照。"
+      },
+      "candidates": [
+        {
+          "candidateId": "airport-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai_airports_terminal_building.jpg",
+          "creatorName": "ブルーノ・プラス",
+          "sourceTitle": "File:Wakkanai airports terminal building.jpg",
+          "sourceDescription": "稚内空港ターミナルビル",
+          "takenAt": "2019-05",
+          "width": 3840,
+          "height": 2160,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為稚内空港ターミナルビル，分類 Wakkanai Airport；淺綠色兩層樓航廈，屋頂紅字「稚内空港」與塔台都在畫面裡，航廈前是拱形雨遮的上下車處，排著幾輛計程車。",
+          "altDraft": "稚內機場淺綠色的航廈，屋頂有紅字「稚内空港」，航廈前的車道停著計程車",
+          "captionDraft": "稚內機場航廈與前方的上下車處（2019 年）。",
+          "creditDraft": "照片：ブルーノ・プラス／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "機場名稱招牌，屬公共設施名稱",
+            "artwork": "none",
+            "property": "公共機場航廈外觀",
+            "risk": "low",
+            "notes": "計程車在遠處，車牌無法辨識；看不到人。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "airport-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai_airport_terminal_building.jpg",
+          "creatorName": "ブルーノ・プラス",
+          "sourceTitle": "File:Wakkanai airport terminal building.jpg",
+          "sourceDescription": "稚内空港ターミナルビル",
+          "takenAt": "2019-05",
+          "width": 3648,
+          "height": 2736,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為稚内空港ターミナルビル，分類 Wakkanai Airport；從停車場路口拍航廈全景，屋頂「稚内空港」字樣與塔台清楚。",
+          "altDraft": "從停車場路口看稚內機場航廈，屋頂有紅字「稚内空港」",
+          "captionDraft": "稚內機場航廈（2019 年）。",
+          "creditDraft": "照片：ブルーノ・プラス／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "機場名稱招牌",
+            "artwork": "none",
+            "property": "公共機場航廈外觀",
+            "risk": "low",
+            "notes": "前景有路燈與交通標誌桿。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "station-bus-terminal",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "到了稚內車站，車站、巴士總站與渡輪站怎麼走",
+      "purpose": "讓讀者在KITAcolor1樓找到稚內站前巴士總站的入口，觀光案內所就在旁邊。",
+      "mustShow": [
+        "稚內站前巴士總站的入口與「駅前バスターミナル」招牌"
+      ],
+      "mustNotShow": [
+        "封面已用的JR稚內站正面同一張照片",
+        "改建前的舊巴士總站",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "到了稚內車站，車站、巴士總站與渡輪站怎麼走",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Soya_Bus_20211122_wakkanai_station_bus_terminal.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "駅前バスターミナル",
+          "宗谷バス",
+          "稚内市観光案内所"
+        ],
+        "locationDescription": "巴士總站在KITAcolor（キタカラ）大樓1樓的轉角，藍色招牌寫著「駅前バスターミナル」與「宗谷バス株式会社」；左邊的玻璃門進去是稚內市觀光案內所。",
+        "officialPhotoLinks": [
+          "https://www.soyabus.co.jp/"
+        ]
+      },
+      "selectionNotes": "terminal-01 是KITAcolor1樓轉角，右邊藍色招牌「駅前バスターミナル Bus Terminal」與宗谷巴士公司名清楚，左邊玻璃門上看得到「稚内市観光案内所」字樣，正好對上正文「巴士總站與觀光案內所都在KITAcolor1樓」；2021年拍攝，和封面的JR稚內站正面不是同一個角度。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Wakkanai Station Bus Terminal、Category:Soya Bus 與關鍵字「稚内駅前バスターミナル」。排除2012年改建前的舊巴士總站、疫情期間拍的候車室座椅照（傾斜且主題是防疫標示），以及封面已用的 Wakkanai-STA Entrance.jpg。"
+      },
+      "candidates": [
+        {
+          "candidateId": "terminal-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Soya_Bus_20211122_wakkanai_station_bus_terminal.JPG",
+          "creatorName": "Rsa",
+          "sourceTitle": "File:Soya Bus 20211122 wakkanai station bus terminal.JPG",
+          "sourceDescription": "宗谷バス稚内駅前バスターミナル",
+          "takenAt": "2021-11-22",
+          "width": 5184,
+          "height": 3456,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "licenseNotes": "檔案頁為 GFDL 與 CC BY-SA 3.0 雙重授權，選用 CC BY-SA 3.0。",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為宗谷バス稚内駅前バスターミナル，分類 Wakkanai Station Bus Terminal、Wakkanai Station；畫面是KITAcolor1樓轉角，藍色招牌「駅前バスターミナル Bus Terminal」，左側玻璃門是稚內市觀光案內所，中間的樓層指引牌列著キタカラ各設施。",
+          "altDraft": "KITAcolor大樓1樓轉角，藍色招牌寫著「駅前バスターミナル」，左邊玻璃門是稚內市觀光案內所",
+          "captionDraft": "KITAcolor1樓的稚內站前巴士總站入口，左邊是觀光案內所（2021 年）。",
+          "creditDraft": "照片：Rsa／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "玻璃門內遠處有一個很小的人影，無法辨識",
+            "logos": "巴士總站與宗谷巴士公司名招牌；樓層指引牌上有便利商店等設施名稱，字很小",
+            "artwork": "none",
+            "property": "車站共構大樓的公共設施入口",
+            "risk": "low",
+            "notes": "主體是巴士總站入口，店家名稱只出現在指引牌上，不是主體。"
           },
           "checks": {
             "fullImageInspected": true,
