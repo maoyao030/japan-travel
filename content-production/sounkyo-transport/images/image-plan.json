@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-26",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-transport/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-transport/，不加入 Git、不上傳。 2026-10-28 文內照片第 3 批：往層雲峽的道北巴士、JR上川站兩張加上 placement 與 preparation，照片接在各節第一段之後；層雲峽巴士總站已是封面，上川森之露台 Bus Touch、大雪湖巴士站、銀泉台、Sunrise號在維基共享資源找不到合格實拍，大雪湖只有湖景照，不是讀者要認的乘車處，不放。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "dohoku-bus": "dohoku-bus-01",
+    "kamikawa-station": "kamikawa-01"
   },
   "selectedAt": "2026-10-26",
   "slots": [
@@ -100,6 +102,217 @@
             "property": "溫泉街入口看板與自然景觀",
             "risk": "low",
             "notes": "沒有人物或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "dohoku-bus",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "旭川到層雲峽的道北巴士",
+      "purpose": "讓讀者在旭川站前 Bus Touch 8 號乘車處認得出往層雲峽的道北巴士。",
+      "mustShow": ["道北巴士的車輛與藍綠色條紋塗裝", "看得到「層雲峡」行先或能確認是往層雲峽的車"],
+      "mustNotShow": ["其他公司的巴士冒充道北巴士", "可辨識的人物臉部", "與封面重複的層雲峽巴士總站照片"],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {"heading": "旭川到層雲峽的道北巴士", "afterBlocks": 1},
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/D%C5%8Dhoku_bus_A200F_0822.JPG",
+        "output": {"maxWidth": 1600, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "dohoku-bus-01 是 221.20 在 2011 年於旭川市區拍的道北巴士，車頭行先牌寫「81 永山・上川駅 経由 層雲峡」，白色車身配藍色與藍綠色條紋，車身寫「道北バス」，讀者在乘車處看行先牌就認得出來；司機臉部原圖已打馬賽克。限制是 2011 年拍攝，這台是一般路線車型，現在的車輛可能不同，但道北巴士的條紋塗裝沿用至今（對照 dohoku-bus-02 的 2025 年新車）。dohoku-bus-02 是 2025 年的新車，塗裝與現在一致、車身有「Dohoku Bus」字樣，但行先牌讀不出來，檔案頁也沒寫是層雲峽線，列為備選。",
+      "textFallback": {
+        "signTextJa": ["層雲峡", "道北バス"],
+        "locationDescription": "旭川站前巴士總站 Bus Touch 的 8 號乘車處，車頭行先牌顯示「層雲峡」的道北巴士，中途經過上川站前。",
+        "officialPhotoLinks": ["https://sounkyo.net/go/detail.html?content=62"]
+      },
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Dohoku Bus、Category:Buses of Dohoku Bus 全部檔案名稱與關鍵字「Sounkyo bus」「層雲峡 バス」；檔案頁標明往層雲峽的只有 0822 與封面用的層雲峽巴士總站照片。2025 到 2026 年的新車照片都沒寫行駛路線。"
+      },
+      "candidates": [
+        {
+          "candidateId": "dohoku-bus-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:D%C5%8Dhoku_bus_A200F_0822.JPG",
+          "creatorName": "221.20",
+          "sourceTitle": "File:Dōhoku bus A200F 0822.JPG",
+          "sourceDescription": "Asahikawa to Sōunkyō",
+          "takenAt": "2011-10-12",
+          "width": 2500,
+          "height": 1875,
+          "licenseName": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "licenseCheckedAt": "2026-10-28",
+          "licenseNotes": "檔案頁為 PD-self，作者自行放棄著作權。",
+          "matchType": "exact",
+          "matchLimits": "2011 年拍攝，現在行駛的車型可能不同；路線號碼與經由地以道北巴士現行時刻表為準。",
+          "whyItFits": "檔案頁說明為旭川往層雲峽，分類 Buses of Dohoku Bus；畫面裡車頭行先牌寫「81 永山・上川駅 経由 層雲峡」，車身是道北巴士的白底藍色、藍綠色條紋，車側寫「道北バス」。",
+          "altDraft": "往層雲峽的道北巴士，白色車身配藍色條紋，車頭行先牌寫著「層雲峡」",
+          "captionDraft": "旭川市區往層雲峽的道北巴士（2011 年）。",
+          "creditDraft": "照片：221.20／Wikimedia Commons／Public domain",
+          "commercialReview": {
+            "people": "司機臉部在原圖已打馬賽克，無法辨識",
+            "logos": "巴士公司名稱；背景有保險公司與租車公司招牌，在畫面邊緣、不是主體",
+            "artwork": "none",
+            "property": "路線巴士與市區街景",
+            "risk": "low",
+            "notes": "不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "dohoku-bus-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E9%81%93%E5%8C%97%E3%83%90%E3%82%B9%E8%B7%AF%E7%B7%9A_%E6%96%B0%E5%9E%8B%E3%82%A8%E3%82%A2%E3%83%AD%E3%82%A8%E3%83%BC%E3%82%B9.jpg",
+          "creatorName": "北のエレファン",
+          "sourceTitle": "File:道北バス路線 新型エアロエース.jpg",
+          "sourceDescription": "道北バスの路線登録エアロエース",
+          "takenAt": "2025-08-09",
+          "width": 1655,
+          "height": 1192,
+          "licenseName": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "matchLimits": "檔案頁沒寫行駛路線，行先牌讀不出來，不能證明是層雲峽線的車。",
+          "whyItFits": "檔案頁說明為道北巴士的路線車，分類 Buses of Dohoku Bus；白色車身配藍色、藍綠色條紋，車側寫「Dohoku Bus」，在旭川市區拍攝。",
+          "altDraft": "道北巴士的白色大型巴士，車身有藍色與藍綠色條紋",
+          "captionDraft": "道北巴士的車輛（2025 年）。",
+          "creditDraft": "照片：北のエレファン／Wikimedia Commons／CC BY 4.0",
+          "commercialReview": {
+            "people": "看不到人",
+            "logos": "巴士公司名稱與交通標誌",
+            "artwork": "none",
+            "property": "路線巴士",
+            "risk": "low",
+            "notes": "沒有人物或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kamikawa-station",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "搭 JR 到上川站轉巴士",
+      "purpose": "讓搭 JR 到上川站的讀者出站時認得出站房，知道往層雲峽的巴士就在站前轉乘。",
+      "mustShow": ["JR上川站站房外觀", "看得到「上川駅」站名"],
+      "mustNotShow": ["其他車站冒充上川站", "可辨識的人物臉部", "已改建前的舊站房"],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {"heading": "搭 JR 到上川站轉巴士", "afterBlocks": 1},
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Kamikawa-STA_Entrance.jpg",
+        "output": {"maxWidth": 1600, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "kamikawa-01 是 MaedaAkihiko 2021 年 5 月拍的上川站站房入口，牆上「JR 上川駅 KAMIKAWA STATION」站名清楚，左邊有黃色的「バスのりば」指示牌，畫面沒有人；5411 px。限制：2021 年拍攝，現在站前的巴士站是上川森之露台 Bus Touch，指示牌與乘車處位置可能和照片不同，替代文字與圖說不寫巴士乘車處方向。kamikawa-02 是 2013 年從站前圓環拍的站房全景，看得到圓環與計程車，但站名字小、陰天，列為備選。",
+      "textFallback": {
+        "signTextJa": ["上川駅", "バスのりば"],
+        "locationDescription": "出上川站站房就是站前廣場，巴士站上川森之露台 Bus Touch 在站前，旭川開來的直達車也停這裡。",
+        "officialPhotoLinks": ["https://sounkyo.net/go/detail.html?content=62"]
+      },
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Kamikawa Station 全部檔案與關鍵字「上川森のテラス」「上川 バスタッチ」；上川森之露台 Bus Touch 沒有照片，舊的道北巴士上川駅前營業所照片是 2009 年以前、設施已不同，不用；站內、月台照不符合。"
+      },
+      "candidates": [
+        {
+          "candidateId": "kamikawa-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kamikawa-STA_Entrance.jpg",
+          "creatorName": "MaedaAkihiko",
+          "sourceTitle": "File:Kamikawa-STA Entrance.jpg",
+          "sourceDescription": "JR石北本線・上川駅舎の入口外観",
+          "takenAt": "2021-05-04",
+          "width": 5411,
+          "height": 3607,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "matchLimits": "2021 年拍攝，照片裡的指示牌與現在的巴士站（上川森之露台 Bus Touch）位置可能不同。",
+          "whyItFits": "檔案頁說明為石北本線上川站站房的入口外觀，分類 Kamikawa Station；畫面是灰色屋簷的站房，入口上方寫「JR 上川駅 KAMIKAWA STATION」，左邊有黃色指示牌與紅色郵筒，陰天、沒有人。",
+          "altDraft": "JR上川站站房入口，灰色牆面上寫著「上川駅」，左邊有黃色指示牌",
+          "captionDraft": "JR上川站的站房入口（2021 年）。",
+          "creditDraft": "照片：MaedaAkihiko／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "JR 標誌與站名，屬公共交通設施名稱；右邊玻璃窗內有一張很小的飲料海報",
+            "artwork": "none",
+            "property": "公共車站建築外觀",
+            "risk": "low",
+            "notes": "不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "kamikawa-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E5%B7%9D%E9%A7%85%E5%89%8D.JPG",
+          "creatorName": "2KEIYO18",
+          "sourceTitle": "File:上川駅前.JPG",
+          "sourceDescription": "駅舎全景とロータリー",
+          "takenAt": "2013-08-17",
+          "width": 4608,
+          "height": 3456,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "matchLimits": "2013 年拍攝，站前設施之後有變動；站名在畫面裡偏小。",
+          "whyItFits": "檔案頁說明為上川站站房全景與站前圓環，分類 Kamikawa Station；長條形的站房在畫面中段，前方是空曠的圓環，停著兩輛計程車。",
+          "altDraft": "從站前圓環看 JR上川站的長條形站房，門口停著計程車",
+          "captionDraft": "JR上川站與站前圓環（2013 年）。",
+          "creditDraft": "照片：2KEIYO18／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "站名與活動布條，都很小",
+            "artwork": "none",
+            "property": "公共車站建築與站前廣場",
+            "risk": "low",
+            "notes": "陰天，畫面下半部是空曠的柏油路面。"
           },
           "checks": {
             "fullImageInspected": true,

@@ -7,9 +7,12 @@
   "articleSourceCheckedAt": "2026-10-21",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；發布工具還不支援文內圖，文內圖位置之後另外規劃。",
+  "selectionScopeNote": "這次只選封面；發布工具還不支援文內圖，文內圖位置之後另外規劃。2026-10-28 文內照片第 3 批：稚內港渡輪站、Cypria宗谷號、香深港渡輪站三張加上 placement 與 preparation，照片接在各節第一段之後；鴛泊渡輪站的照片已用在利尻島交通，這頁不放。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "wakkanai-terminal": "wakkanai-terminal-01",
+    "ferry-ship": "ferry-ship-01",
+    "kafuka-terminal": "kafuka-terminal-01"
   },
   "selectedAt": "2026-10-21",
   "slots": [
@@ -137,6 +140,303 @@
             "property": "港口與市街遠景",
             "risk": "low",
             "notes": "沒有可辨識人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "wakkanai-terminal",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "怎麼去稚內港渡輪站？",
+      "purpose": "讓從 JR 稚內站走過來或搭計程車來的讀者，認得出稚內港渡輪站的建築與正面的計程車乘車處。",
+      "mustShow": [
+        "稚內港渡輪站的建築外觀",
+        "看得到「稚内フェリーターミナル」字樣或能確認是這棟建築"
+      ],
+      "mustNotShow": [
+        "香深港、鴛泊港或其他港口的渡輪站冒充稚內",
+        "可辨識的人物臉部",
+        "改建前的舊建築"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "怎麼去稚內港渡輪站？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Wakkanai_ferry_terminal_building.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "稚内フェリーターミナル",
+          "Heart Land Ferry"
+        ],
+        "locationDescription": "從 JR 稚內站走路約 15 分鐘；建築是米色兩層樓，正面牆上寫著「稚内フェリーターミナル」，左側牆上是 Heart Land Ferry 標誌，正面前面是計程車與停車場。",
+        "officialPhotoLinks": [
+          "https://heartlandferry.jp/wp/wp-content/uploads/2026/02/wakkanai-floor-map.pdf"
+        ]
+      },
+      "selectionNotes": "wakkanai-terminal-01 是陸側正面，「稚内フェリーターミナル」字樣與 Heart Land Ferry 標誌都清楚，前面正好有排班計程車，對應正文「搭計程車 2 分鐘左右」；2019 年 5 月拍、3648 px，建築與現況一致。另一張 2008 年的稚内新フェリーターミナル.jpg 是同一棟建築，但只有 1024 px，寬度不到 1200 px，不列候選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Ferry terminals in Hokkaido、Category:Port of Wakkanai 與關鍵字「稚内港フェリーターミナル」「Wakkanai ferry terminal」。Port of Wakkanai 裡其他照片是港區遠景或船，看不出渡輪站入口；Wakkanai harbor.JPG 已用在其他頁。"
+      },
+      "candidates": [
+        {
+          "candidateId": "wakkanai-terminal-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai_ferry_terminal_building.jpg",
+          "creatorName": "ブルーノ・プラス",
+          "sourceTitle": "File:Wakkanai ferry terminal building.jpg",
+          "sourceDescription": "稚内港フェリーターミナル",
+          "takenAt": "2019-05",
+          "width": 3648,
+          "height": 2736,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為「稚内港フェリーターミナル」，分類 Ferry terminals in Hokkaido 與 Buildings in Wakkanai；畫面是陸側正面，牆上「稚内フェリーターミナル」大字清楚，左側牆上有 Heart Land Ferry 標誌，前面停著排班計程車。",
+          "altDraft": "稚內港渡輪站的正面，米色建築牆上寫著「稚内フェリーターミナル」，前面停著計程車",
+          "captionDraft": "稚內港渡輪站陸側正面，前面是計程車乘車處（2019 年）。",
+          "creditDraft": "照片：ブルーノ・プラス／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "中間有一位男性側身背對鏡頭、臉轉向旁邊，在畫面裡很小，無法辨識",
+            "logos": "設施名稱「稚内フェリーターミナル」與渡輪公司標誌，屬公共設施名稱；計程車車身有車行名稱，不是主體",
+            "artwork": "none",
+            "property": "公共渡輪站建築外觀",
+            "risk": "low",
+            "notes": "沒有店家招牌當主體，不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "ferry-ship",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "挑選2等、1等或特別室",
+      "purpose": "讓讀者認得出利尻、禮文航線的渡輪外觀與船名，對照正文三艘船的艙等表。",
+      "mustShow": [
+        "Heart Land Ferry 利尻、禮文航線的渡輪（Amapola宗谷號、Cypria宗谷號或 Boreas宗谷號）",
+        "看得到船名或公司名稱"
+      ],
+      "mustNotShow": [
+        "其他航線或其他公司的船",
+        "與封面重複的 Boreas宗谷號照片",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "挑選2等、1等或特別室",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Cypria_Soya_17-Sept-2018.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "サイプリア宗谷",
+          "Heart Land Ferry"
+        ],
+        "locationDescription": "利尻、禮文航線由 Amapola宗谷號、Cypria宗谷號與 Boreas宗谷號輪流開；船身是白底配深藍與粉紅色塊，側面寫著 Heart Land Ferry，船尾與船頭有船名。",
+        "officialPhotoLinks": [
+          "https://heartlandferry.jp/rishiri/",
+          "https://heartlandferry.jp/rebun/"
+        ]
+      },
+      "selectionNotes": "ferry-ship-01 是 Cypria宗谷號停在香深港的正側面，船名「Cypria Soya」與「Heart Land Ferry」都看得清楚，晴天、5455 px；封面已經用 Boreas宗谷號，這張是另一艘船，畫面不重複。ferry-ship-02 是在鴛泊港的同一艘 Cypria宗谷號，陰天、前景有碼頭欄杆擋住船身下緣，寬度也只有 1600 px，列為備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Heart Land Ferry、Category:Cypria Soya (ship, 2008)、Category:Boreas Soya (ship, 2003)、Category:Kafuka Port 與關鍵字「ハートランドフェリー」「Amapola Soya」。Amapola宗谷號沒有找到單獨的分類或合格照片；船內客艙照片沒有找到。Boreas Soya 17-Sept-2018.jpg 已是封面；鴛泊港に入港するハートランドフェリー.jpg 拍的是 Feelease宗谷號，不在正文的三艘船裡，不用。"
+      },
+      "candidates": [
+        {
+          "candidateId": "ferry-ship-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cypria_Soya_17-Sept-2018.jpg",
+          "creatorName": "皓月旗",
+          "sourceTitle": "File:Cypria Soya 17-Sept-2018.jpg",
+          "sourceDescription": "礼文島香深港に停泊するサイプリア宗谷",
+          "takenAt": "2018-09-17",
+          "width": 5455,
+          "height": 3960,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為停在禮文島香深港的 Cypria宗谷號，分類 Cypria Soya (ship, 2008) 與 Kafuka Port；從碼頭拍船的正側面，船尾「Cypria Soya」、船身「Heart Land Ferry」字樣清楚，左邊是香深港渡輪站。",
+          "altDraft": "白底配深藍與粉紅色塊的 Cypria宗谷號停在香深港，船身寫著 Heart Land Ferry",
+          "captionDraft": "Cypria宗谷號停在禮文島香深港（2018 年）。",
+          "creditDraft": "照片：皓月旗／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "船身的渡輪公司名稱與船名，是交通工具本身的標示，不是店家招牌",
+            "artwork": "none",
+            "property": "渡輪與港口設施",
+            "risk": "low",
+            "notes": "看不到人，不會讓人誤以為是本站實地拍攝或渡輪公司提供。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "ferry-ship-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:CypriaSoya.jpg",
+          "creatorName": "しんかわな",
+          "sourceTitle": "File:CypriaSoya.jpg",
+          "sourceDescription": "Cypria Soya in Oshidomari port. Rishirifuji town Hokkaido Japan",
+          "takenAt": "2010-09-14",
+          "width": 1600,
+          "height": 1066,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "matchLimits": "檔案頁日期為 2010 年，但船身已是 Heart Land Ferry 塗裝，日期可能有誤；陰天，前景有碼頭欄杆，甲板上有很小的人影。",
+          "whyItFits": "檔案頁說明為停在鴛泊港的 Cypria宗谷號，分類 Cypria Soya (ship, 2008)；船名「Cypria Soya」與「Heart Land Ferry」字樣清楚。",
+          "altDraft": "Cypria宗谷號停在鴛泊港",
+          "captionDraft": "Cypria宗谷號停在鴛泊港（2010 年）。",
+          "creditDraft": "照片：しんかわな／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "船身的公司名稱",
+            "artwork": "none",
+            "property": "渡輪與港口",
+            "risk": "low",
+            "notes": "甲板人影很小、無法辨識；只當備選紀錄。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kafuka-terminal",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "香深港、鴛泊港與沓形港的渡輪站",
+      "purpose": "讓到禮文島下船、或回程要找渡輪站的讀者認得出香深港渡輪站。",
+      "mustShow": [
+        "香深港渡輪站的建築外觀",
+        "看得到「香深港フェリーターミナル」字樣或能確認是這棟建築"
+      ],
+      "mustNotShow": [
+        "鴛泊港渡輪站（已用在利尻島交通）",
+        "與禮文島交通頁重複的香深港渡輪站陸側照片",
+        "2014 年施工中的照片",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "香深港、鴛泊港與沓形港的渡輪站",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/%E9%A6%99%E6%B7%B1%E6%B8%AF%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E3%83%9C%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "香深港フェリーターミナル"
+        ],
+        "locationDescription": "禮文島香深港的渡輪站，離禮文町公所沿著海邊走 800 公尺左右；靠碼頭的一側牆上寫著「香深港フェリーターミナル」，2 樓有連到船的空橋。",
+        "officialPhotoLinks": [
+          "https://heartlandferry.jp/wp/wp-content/uploads/2026/09/202609kafuka-floor-mapOL.pdf"
+        ]
+      },
+      "selectionNotes": "kafuka-terminal-01 是香深港渡輪站靠碼頭的一側，牆上看得出「香深港フェリーターミナル」字樣，比陸側正面那張清楚，左邊是上下船的空橋那一段建築，就是下船後走出來看到的樣子。陸側正面那張（香深港フェリーターミナル.jpg）放在禮文島交通，這頁不重複。Cypria宗谷號那張雖然也拍到香深港渡輪站，但放在艙等一節當船的照片。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Kafuka Port（全部看過檔案資訊）與關鍵字「香深港」「Kafuka ferry terminal」。2010 到 2013 年的香深港照片是新渡輪站完工前，KafukaPortFerryTerminal Rebun Hokkaido Japan JUL2014.jpg 是施工中，都不用。沓形港渡輪站沒有找到合格照片。"
+      },
+      "candidates": [
+        {
+          "candidateId": "kafuka-terminal-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E9%A6%99%E6%B7%B1%E6%B8%AF%E3%83%95%E3%82%A7%E3%83%AA%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB%E3%81%AE%E3%83%9C%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8.jpg",
+          "creatorName": "Senkaku Islands",
+          "sourceTitle": "File:香深港フェリーターミナルのボーディングブリッジ.jpg",
+          "sourceDescription": "香深港フェリーターミナルのボーディングブリッジ",
+          "takenAt": "2020-02-01",
+          "width": 1400,
+          "height": 1050,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "matchLimits": "檔案頁的日期和上傳日同一天，畫面沒有積雪，實際拍攝日可能更早；建築是 2014 年 7 月還在施工的新渡輪站，外觀與現況一致。",
+          "whyItFits": "檔案頁說明為香深港渡輪站的空橋，分類 Kafuka Port；畫面是靠碼頭的一側，右邊建築牆上看得出「香深港フェリーターミナル」字樣，左邊是連到船的空橋那一段建築，前景是碼頭。",
+          "altDraft": "香深港渡輪站靠碼頭的一側，牆上寫著「香深港フェリーターミナル」，左邊是連到船的空橋",
+          "captionDraft": "禮文島香深港渡輪站靠碼頭的一側（2020 年以前）。",
+          "creditDraft": "照片：Senkaku Islands／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "設施名稱「香深港フェリーターミナル」，屬公共設施名稱",
+            "artwork": "none",
+            "property": "公共渡輪站建築外觀",
+            "risk": "low",
+            "notes": "陰天但主體清楚，看不到人。"
           },
           "checks": {
             "fullImageInspected": true,
