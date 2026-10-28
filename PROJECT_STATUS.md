@@ -1618,7 +1618,7 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 
 ### 測試與 Git
 
-- `npm test` 見本段 commit；網站重建靠合併推到 `main`。
+- `npm test` 192 項中 191 項通過，沒過的仍是 D1 連線方式那一項（雲端機器環境造成，乾淨的 main 也一樣）；`planning:check`、`queue:validate` 通過。已合併推到 `main` 讓網站重建。
 
 ### 唯一下一步
 
