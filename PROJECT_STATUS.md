@@ -1623,3 +1623,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 ### 唯一下一步
 
 - Darren 打開幾篇上線的文章（例如旭川景點、稚內住宿）看讀起來順不順；有想改的寫法告訴 Claude Code，改譯名表後用 `revise-article-text.mjs` 一起改。
+
+## 2026-10-28 Claude Code（雲端）：禮文島住宿頁拿掉價格
+
+- Darren：「把禮文島住宿頁的價格拿掉」（照 10/26「住宿頁不寫價格」）。
+- `rebun-island-stay`：H1 與 SEO 標題的「價格」改成「訂房管道」；H2「禮文島住宿一覽與價格」改成「禮文島住宿一覽」；兩個住宿表拿掉「價格」欄；開頭、民宿Hana心、星觀莊、民宿須古頓岬、冬季段落的住宿費改成含餐方案與「價格看官網或訂房網站」；SEO 描述與摘要同步。巴士票價、電動自行車租金、只收日圓現金照留（不是房價）。
+- 改過的句子對照研究紀錄的 F50～F57、F496、F497、F500 確認；`fact_tags.py`、`check-voice.mjs --final`、`audit_answer_first.py`、`heading_review.py`、`planning:check` 都通過。大綱的 H1、標題與 mustAnswer（「9 家訂房管道與聯絡方式」）同步。
+- 已用 `revise-article-text.mjs` 寫進 Sanity（網址不變、維持開放收錄），合併推到 `main` 讓網站重建。
+- 其他住宿頁檢查過：旭川、稚內、層雲峽住宿頁的金額是住宿稅、動物園門票、接駁車費，沒有房價。
