@@ -25,7 +25,7 @@
 
 ### 春季（3–5 月）
 
-3月的利尻島還是冬天，月平均−0.3℃、白天最高約2℃。每年這時還有低氣壓帶來的暴風，當地稱為「彼岸荒れ」。4月白天平均最高7.6℃、早晚1.4℃，冬天那件外套還收不起來。5月才回暖到平均9.6℃，早晚仍只有6℃左右，帶上保暖外套與毛衣比較穩當。利尻山麓這時還留著殘雪，見返台園地5月中旬開放後，那一帶可以玩雪。
+3月的利尻島還是冬天，月平均−0.3℃、白天最高約2℃。每年這時還有低氣壓帶來的暴風，當地稱為彼岸風暴（彼岸荒れ）。4月白天平均最高7.6℃、早晚1.4℃，冬天那件外套還收不起來。5月才回暖到平均9.6℃，早晚仍只有6℃左右，帶上保暖外套與毛衣比較穩當。利尻山麓這時還留著殘雪，見返台園地5月中旬開放後，那一帶可以玩雪。
 
 ### 夏季（6–8 月）
 
@@ -72,7 +72,7 @@
 
 - **氣象廳沓形觀測站平年值**，各月氣溫、降水量、風速與日照的原始數字。https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=
 - **氣象廳本泊觀測站平年值**，島北側機場一帶的氣溫與風速。https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1512&year=&month=&day=&view=
-- **りしぷら「島の四季」**，每個月的天氣、雪況與島上風景的變化。https://www.rishiri-plus.jp/shima-no-susume/season/
+- **RISHIRI PLUS「島之四季」**，每個月的天氣、雪況與島上風景的變化。https://www.rishiri-plus.jp/shima-no-susume/season/
 - **氣象廳宗谷地方天氣預報**，出發前在「市町村選択」選利尻町或利尻富士町，查實際預報。https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=011000
 
 ## 資料來源

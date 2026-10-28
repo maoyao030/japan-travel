@@ -188,11 +188,12 @@ export function checkAiTone(paragraphs, {final = false} = {}) {
 
 // 日文：括號外不能有假名，也不能有日本字形的漢字（稚内、観光、駅前）。Darren 2026-10-28：文章日文太多。
 // 專有名詞第一次出現寫「繁中譯名（日文原名）」，之後只寫中文；「」裡是讀者要在畫面或招牌上認的字，可以照原文。
-const KANA = /[\u3040-\u309f\u30a0-\u30ff\u31f0-\u31ff\uff66-\uff9f]/
+// 「・」「ー」中文也會用，單獨出現不算日文
+const KANA = /[\u3040-\u309f\u30a0-\u30fa\u30fd-\u30ff\u31f0-\u31ff\uff66-\uff9f]/
 // 和台灣正體寫法不同的日本字形，只收不會誤判的常用字
-export const JAPANESE_KANJI = '駅内礼観黒温鉄広沢浜県図関売発歳楽栄覧転営団辺稲来実処気区桜渓炉恵応当両様断経総縄竜亀斎戦変歩銭塩写単弁帯庁滝豊舗継険検権剣価帰駆灯姫焼釣涙軽拡郷'
+export const JAPANESE_KANJI = '駅内礼観黒温鉄広沢浜県図関売発歳楽栄覧転営団辺稲来実処気区桜渓炉恵応当両様断経総縄竜亀斎戦変歩銭塩写単弁帯庁滝豊舗継険検権剣価帰駆灯姫焼涙軽拡郷'
 const JAPANESE_KANJI_PATTERN = new RegExp(`[${JAPANESE_KANJI}]`)
-const JAPANESE_CHAR = `[\\u3040-\\u309f\\u30a0-\\u30ff\\u31f0-\\u31ff\\uff66-\\uff9f々〆${JAPANESE_KANJI}]`
+const JAPANESE_CHAR = `[\\u3040-\\u309f\\u30a0-\\u30fa\\u30fd-\\u30ff\\u31f0-\\u31ff\\uff66-\\uff9f々〆${JAPANESE_KANJI}]`
 // 前後最多帶3個漢字，訊息才看得出是哪個名字
 const JAPANESE_TERM = new RegExp(`[\\u4e00-\\u9fff]{0,3}(?:${JAPANESE_CHAR}[・ー]*)+(?:[\\u4e00-\\u9fff]{1,3}(?:${JAPANESE_CHAR}[・ー]*)+)*[\\u4e00-\\u9fff]{0,3}`, 'g')
 // 「」裡的日文超過這個數字就提醒：只留畫面按鈕、招牌與站牌
