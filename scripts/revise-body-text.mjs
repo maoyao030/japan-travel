@@ -99,13 +99,20 @@ export function reviseBodyText(body, beforeMarkdown, afterMarkdown) {
       const oldText = blockPlainText(oldBlock)
       const newText = blockPlainText(newBlock)
       if (oldText === newText) return
-      const matches = next.map((block, position) => ({block, position})).filter(({block}) => block._type === 'block' && blockPlainText(block) === oldText)
+      // 早期上線的延伸資料，標籤是連結、網址還留在句尾當文字；這種只多一個網址的也算同一段
+      const trailingUrl = (block) => {
+        const text = blockPlainText(block)
+        if (text === oldText) return ''
+        const rest = text.startsWith(oldText) ? text.slice(oldText.length) : null
+        return rest !== null && /^https?:\/\/\S+$/.test(rest) ? rest : null
+      }
+      const matches = next.map((block, position) => ({block, position})).filter(({block}) => block._type === 'block' && trailingUrl(block) !== null)
       if (matches.length !== 1) {
         unmatched.push({kind: 'text', count: matches.length, before: oldText, after: newText})
         return
       }
       const [{block, position}] = matches
-      const {block: revised, linkTextChanged} = reviseBlockSpans(block, newText)
+      const {block: revised, linkTextChanged} = reviseBlockSpans(block, newText + trailingUrl(block))
       next[position] = revised
       changes.push({kind: 'text', blockKey: block._key, style: block.style, before: oldText, after: newText, linkTextChanged})
       return

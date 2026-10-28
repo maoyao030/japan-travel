@@ -1588,3 +1588,38 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 ### 唯一下一步
 
 - Darren 看稚內美食樣本（`content-production/wakkanai-food/reader-preview.md`），同意寫法後把樣本寫進網站，再分批改其他 44 篇（日文最多的先改）。
+
+## 2026-10-28 Claude Code（雲端）：45 篇已上線文章改成中文寫法，全部寫進網站
+
+### Darren 的要求
+
+- 「羅馬拼音可以，寫進網站並改其他篇」。
+
+### 已完成
+
+- 稚內美食樣本與另外 44 篇（稚內 9、利尻 8、禮文 6、旭川 8、旭岳 6、層雲峽 7）全部改成中文寫法並寫進 Sanity。每篇都通過 `scripts/check-text-revision.mjs`：事實編號、數字、段落與表格結構、H1、資料來源都沒變，且通過 `check-voice.mjs --final`。
+- 寫完後逐篇比對：Sanity 上 45 篇正文的每一段都和 Git 的 `reader-preview.md` 一致；括號外還有日文的只剩「日文名」列、「畫面上的日文」對照表這些規則允許的表格格子。
+- 新工具：`scripts/revise-body-text.mjs`＋`studio/scripts/revise-article-text.mjs`（只改有變的字，連結、文內照片、索引狀態不動，表格只換有變的格子；寫入前存復原檔）；`scripts/check-text-revision.mjs`（修訂安全檢查）；測試 `tests/revise-body-text.test.ts`。
+- 兩篇 H1 與 SEO 標題的日文改掉：旭岳纜車與姿見池、旭岳交通的 Ideyu號。另有十多篇的 SEO 描述與摘要一起改。
+- 譯名表從 80 筆增加到約 560 筆；大綱的標題、連結句與 `heading-review.json` 同步。
+- `check-voice.mjs` 修正兩處誤判：「・」「ー」單獨出現不算日文，「釣」不算日本字形。
+- 層雲峽天氣頁有一處 Git 稿子比網站舊（「1 月」多一個空格），已改回並重寫網站。
+
+### 主要的寫法（細節在譯名表）
+
+- 列車用 JR 北海道英文名：特急Lilac號、特急Kamui號、特急Sarobetsu號、特急Okhotsk號；巴士 Ideyu號、Taisetsu Liner、稚內號；訂票網站 Hassha Orai Net；船 Amapola宗谷號等。
+- 有官方英文名的飯店用英文名（Hotel Miyuki、Dormy Inn），沒有漢字的店名用羅馬拼音（Uroko亭、Tomochan食堂），一般名詞意譯（ペンション→民宿、ロープウェイ→纜車）。
+- 電影片名沒查到台灣片名的，只放在括號裡。
+
+### 還不確定的譯名（之後重查時可以改）
+
+- 自己意譯、沒有官方中文的：雪光動物園、款待券（おもてなし券）、北之住設計社、旭川觀光會議協會、禮文導覽服務等；羅馬拼音的店名少數讀音不確定（Ishido計程車、武Chan壽司）。
+- 已知的另一件事（這次沒動）：禮文島住宿頁仍寫價格，和 10/26「住宿頁不寫價格」不一致，要另外處理。
+
+### 測試與 Git
+
+- `npm test` 見本段 commit；網站重建靠合併推到 `main`。
+
+### 唯一下一步
+
+- Darren 打開幾篇上線的文章（例如旭川景點、稚內住宿）看讀起來順不順；有想改的寫法告訴 Claude Code，改譯名表後用 `revise-article-text.mjs` 一起改。
