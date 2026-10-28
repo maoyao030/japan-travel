@@ -1631,3 +1631,29 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 改過的句子對照研究紀錄的 F50～F57、F496、F497、F500 確認；`fact_tags.py`、`check-voice.mjs --final`、`audit_answer_first.py`、`heading_review.py`、`planning:check` 都通過。大綱的 H1、標題與 mustAnswer（「9 家訂房管道與聯絡方式」）同步。
 - 已用 `revise-article-text.mjs` 寫進 Sanity（網址不變、維持開放收錄），合併推到 `main` 讓網站重建。
 - 其他住宿頁檢查過：旭川、稚內、層雲峽住宿頁的金額是住宿稅、動物園門票、接駁車費，沒有房價。
+
+## 2026-10-28 Claude Code（地端）：自動寫作加回文內照片，已上線頁補照片第 1 批
+
+### 已完成
+
+- 自動寫作每篇上傳時也選文內照片：`content-automation/local-writer.md` 第 5 步（選圖、`image:prepare:inline`、親自看每一張、`publish:article-inline-images` 預覽後 `--apply`、續做時補傳、失敗就拿掉不擋上線）、「不做的事」、執行紀錄欄位；自動發布 Skill produce 第 8、10 步；選圖 Skill `SKILL.md` 與 `references/image-packet.md` 新增「文內照片的位置與準備」（橫式、畫面清楚、一篇最多 4 張、一節最多 1 張）；`RULES_OVERVIEW.md` 第 7 節；`AGENTS.md` 新增段落。找不到合格文內照片不停放。
+- 補照片第 1 批（三島景點頁），子代理選圖、我逐張看過後上傳，三頁都是 `inline-images-published-and-verified`：
+  - 稚內景點 2 張：野寒布岬燈塔、野寒布寒流水族館。開基百年紀念塔那張天色暗、雜訊多又是直式，拿掉；冰雪之門是雕塑，日本沒有雕塑的全景自由，維基共享資源沒有可用照片；北防波堤穹頂已是封面。
+  - 禮文島景點 4 張：地藏岩、桃岩、北方金絲雀公園電影校舍、須古頓岬與海馬島。澄海岬已是封面。
+  - 利尻島景點 4 張：Otatomari 沼（Pixabay，網頁只有上傳年份，圖說不寫年份）、仙法志御崎公園熔岩礁、北之嚴島辯天宮、Peshi 岬。姬沼已是封面；人面岩、寢熊岩找不到可用照片。
+- 本機 build 通過，手機 390 寬截圖確認照片、圖說、署名正常，54 頁都沒有撐開。
+
+### 補照片的批次（之後照這個順序）
+
+- 第 2 批：旭川・大雪群景點類，`asahikawa-sights`、`sounkyo-sights`、`asahiyama-zoo`、`asahidake-ropeway`，加上 `cape-soya`。
+- 第 3 批：交通頁的渡輪站、機場、車站，`wakkanai-ferry`、`wakkanai-transport`、`cape-soya-transport`、`rebun-island-transport`、`asahikawa-transport`、`asahidake-transport`、`sounkyo-transport`。
+- 第 4 批：健行頁與地點主頁（`rebun-island-hiking`、`rishiri-island-hiking`、`sounkyo-hiking`、`asahidake-hiking` 與各地點主頁）。
+- 住宿、美食、天氣、祭典頁不補（店家照片不用；天氣、祭典沒有要到現場認的地方）。
+
+### 測試與 Git
+
+- 併入 `origin/main`、`npm test` 通過後推到 `main`。分支 `claude/auto-inline-images`。推上 `main` 後，本機自動寫作下一輪合併 `origin/main` 就會照新規則選文內照片。
+
+### 唯一下一步
+
+- 補照片第 2 批（旭川・大雪群景點類與宗谷岬），做法同第 1 批。

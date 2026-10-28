@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-25",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；發布工具還不支援文內圖，文內圖位置之後另外規劃。",
+  "selectionScopeNote": "封面選定於 2026-10-25。2026-10-28 加入文內照片：野寒布岬、野寒布寒流水族館、開基百年紀念塔三張，照片接在各節第一段之後。稚內公園的冰雪之門是雕塑（日本沒有雕塑的全景自由），維基共享資源沒有可用檔案，不放；北防波堤穹頂已是封面，不重複。 2026-10-28 人工檢查：開基百年紀念塔那張（Mamusi Taka，2011）天色昏暗、雜訊多又是直式，放進正文會佔滿一整個螢幕，拿掉，這一節不放照片。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "noshappu-cape": "noshappu-01",
+    "noshappu-aquarium": "aquarium-01"
   },
   "selectedAt": "2026-10-25",
   "slots": [
@@ -17,15 +19,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼認出稚內市區最具代表性的景點北防波堤穹頂，作為稚內景點頁的封面。",
-      "mustShow": ["稚內港北防波堤穹頂的拱廊與圓柱", "稚內市區或近郊的景點"],
-      "mustNotShow": ["宗谷岬（另有頁面）", "其他城市的拱廊冒充稚內", "可辨識的人物臉部", "AI 生成或合成畫面"],
+      "mustShow": [
+        "稚內港北防波堤穹頂的拱廊與圓柱",
+        "稚內市區或近郊的景點"
+      ],
+      "mustNotShow": [
+        "宗谷岬（另有頁面）",
+        "其他城市的拱廊冒充稚內",
+        "可辨識的人物臉部",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Wakkanai_Breakwater_Dome_20140813-2.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.45},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是從穹頂入口斜看整條拱廊，入口上方「稚内港北防波堤ドーム」的名牌清楚，讀者到現場一看就認得；藍天白雲、沒有可辨識人物，裁成 16:9 後名牌與拱廊都留在畫面裡。cover-02 是 2021 年晴天從車道側拍的拱廊外觀，CC0、比較新，但左下角有兩個小人影（無法辨識臉部），沒有名牌，列為備選。cover-03 是穹頂內部的拱頂透視，構圖漂亮但 2007 年拍攝、右側有半輛車，列為第二備選。野寒布岬的照片（Category:Cape Noshappu）解析度或構圖不如穹頂，且穹頂是文章第一個景點、離車站最近，選穹頂。",
       "sourcing": {
@@ -137,6 +155,159 @@
             "property": "公共港灣設施內部",
             "risk": "low",
             "notes": "車牌不在畫面中。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "noshappu-cape",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "野寒布岬",
+      "purpose": "讓搭市內線或開車到野寒布岬的讀者，一到就認得出岬邊紅白條紋的稚內燈塔與海面，知道看夕陽的位置就在這一帶。",
+      "mustShow": [
+        "野寒布岬的稚內燈塔（紅白條紋）",
+        "岬邊的海面"
+      ],
+      "mustNotShow": [
+        "根室的納沙布岬冒充野寒布岬",
+        "可辨識的人物臉部",
+        "與封面或水族館一節重複的照片"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "野寒布岬",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/The_lighthouse_at_Cape_Noshappu%2C_Wakkanai%2C_Japan.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "noshappu-01 是 2019 年 6 月傍晚 19 點半在岬邊拍的稚內燈塔，燈已亮、海面平靜，正好對上正文「看夕陽的好地方」；沒有人物。水族館一節另用從廣場看燈塔與水族館的照片，這張只放海與燈塔，兩張角度不同。岬上廣場的海豚時鐘紀念碑（NoshappuCape.JPG，2015 年）是雕塑，日本沒有雕塑的全景自由，商用風險高，不用。CapeNoshappu Hokkaido Japan AUG2010.jpg 是夕陽剪影，主體同樣是那座紀念碑、還有多個人影，不用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Cape Noshappu（10 個檔案）、Category:Wakkanai Lighthouse（7 個檔案）。排除空拍、寬度不到 1200 px（Wakkanai lighrhouse.JPG、WAKKANAI-NOSYAPPU-TOUDAI.jpg、Rishiri Fuji seen from noshappu-cape）、2006 年舊照、檔名「納沙布岬」實為根室的檔案，以及以紀念碑雕塑為主體的照片。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "noshappu-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:The_lighthouse_at_Cape_Noshappu,_Wakkanai,_Japan.jpg",
+          "creatorName": "OKJaguar",
+          "sourceTitle": "File:The lighthouse at Cape Noshappu, Wakkanai, Japan.jpg",
+          "sourceDescription": "The lighthouse at Cape Noshappu, Wakkanai, Japan（Own work，分類 Cape Noshappu）",
+          "takenAt": "2019-06-06",
+          "width": 3820,
+          "height": 2608,
+          "licenseName": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明為野寒布岬的燈塔，分類 Cape Noshappu，拍攝座標在岬上；畫面右側是燈已點亮的紅白條紋稚內燈塔與白色建築，左側是傍晚多雲的海面與消波塊堤。",
+          "altDraft": "傍晚的野寒布岬，紅白條紋的稚內燈塔亮著燈，旁邊是平靜的海面與消波塊",
+          "captionDraft": "傍晚的野寒布岬與稚內燈塔（2019 年）。",
+          "creditDraft": "照片：OKJaguar／Wikimedia Commons／CC BY 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "公共燈塔與海岸",
+            "risk": "low",
+            "notes": "沒有人物、招牌或雕塑，不會讓人誤以為是本站實地拍攝。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "noshappu-aquarium",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "野寒布寒流水族館",
+      "purpose": "讓讀者在野寒布岬認得水族館與青少年科學館的建築與入口，知道兩館就在燈塔旁邊。",
+      "mustShow": [
+        "野寒布寒流水族館的建築或招牌",
+        "讓讀者知道水族館就在燈塔旁"
+      ],
+      "mustNotShow": [
+        "其他水族館冒充",
+        "可辨識的人物臉部",
+        "看得清的車牌"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "野寒布寒流水族館",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Wakkanai_Lighthouse%2C_Cape_Noshappu_-_Aug_8%2C_2014.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "aquarium-01 從岬上的廣場往回看，紅白條紋燈塔、白色的水族館、有白色圓頂的藍色青少年科學館與水族館入口的彩繪外牆都在同一張，讀者到現場一眼就能對照；2014 年拍。aquarium-02（2018 年）水族館外牆的「ノシャップ寒流水族館」大字最清楚，但前景停車場的車牌看得出號碼，商用風險不是低，不列為候選（https://commons.wikimedia.org/wiki/File:Wakkanai_Noshappu_Kan-ryu_aquarium.jpg ，Totti，CC BY-SA 4.0）。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Wakkanai Noshappu aquarium 與 Category:Wakkanai Lighthouse；館內魚類照片不符合「建築外觀」，2006 年的 1536 px 舊照寬度與年代都不合。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "aquarium-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai_Lighthouse,_Cape_Noshappu_-_Aug_8,_2014.jpg",
+          "creatorName": "Toru Miwa",
+          "sourceTitle": "File:Wakkanai Lighthouse, Cape Noshappu - Aug 8, 2014.jpg",
+          "sourceDescription": "野寒布岬（ノシャップ岬）にある稚内灯台。（Flickr 匯入，FlickreviewR 已核對 CC BY 2.0，分類 Wakkanai Lighthouse、Wakkanai Noshappu aquarium）",
+          "takenAt": "2014-08-08",
+          "width": 5300,
+          "height": 3534,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "matchLimits": "2014 年 8 月拍攝；建築外觀與現在相同，外牆彩繪與停車場車輛可能不同。",
+          "whyItFits": "檔案頁說明為野寒布岬的稚內燈塔，分類同時有 Wakkanai Noshappu aquarium；畫面左邊是紅白條紋燈塔與白色的水族館建築，右邊是有白色圓頂的藍色青少年科學館，前方矮牆上有魚類彩繪與水族館入口的字樣，前景是玫瑰灌木與廣場。",
+          "altDraft": "野寒布岬的紅白條紋稚內燈塔，旁邊是白色的野寒布寒流水族館與有白色圓頂的藍色青少年科學館",
+          "captionDraft": "野寒布岬的燈塔、水族館與青少年科學館（2014 年）。",
+          "creditDraft": "照片：Toru Miwa／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "停車場與步道上有兩三個很小的人影，無法辨識",
+            "logos": "水族館入口外牆的設施名稱與彩繪，屬公共設施",
+            "artwork": "外牆上的魚類彩繪很小，不是畫面主體",
+            "property": "市立水族館、科學館與燈塔外觀",
+            "risk": "low",
+            "notes": "車牌太小無法辨識。"
           },
           "checks": {
             "fullImageInspected": true,

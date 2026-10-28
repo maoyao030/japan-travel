@@ -131,6 +131,7 @@
 - `placement.heading`：照片所在那一節的 H2 或 H3 **全文**，正文裡只能有一個同名標題。
 - `placement.afterBlocks`：從標題往下數第幾個區塊之後，預設 1（第一段之後）。照片放在介紹那個地方的段落後面，不放在表格中間。
 - `preparation.sourceDownloadUrl`：維基共享資源用 `upload.wikimedia.org` 的原檔網址。只縮小、不裁切，寬度超過 `maxWidth` 才縮。
+- 文內照片用橫式（4:3、3:2、16:9 之類）；直式照片在正文裡會佔滿一整個螢幕，不用。天色太暗、雜訊多、主體看不清楚的也不用。
 - 範例範圍：一篇最多 4 張、一節最多 1 張，只放讀者到現場要認得出來的地方（自動寫作的規定見 `content-automation/local-writer.md` 第 5 步）。
 - 準備後的圖在 `.tmp/image-selection/<article-id>/inline/`，不加入 Git。上傳前要親自看每一張，確認和 `altDraft`、`captionDraft` 一致。
 

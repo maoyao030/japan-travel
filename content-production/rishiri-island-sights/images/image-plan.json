@@ -7,9 +7,13 @@
   "articleSourceCheckedAt": "2026-10-25",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island-sights/，不加入 Git、不上傳。",
+  "selectionScopeNote": "封面 2026-10-25 選定。2026-10-28 加上文內照片：Otatomari 沼、仙法志御崎公園、北之嚴島辯天宮、Peshi 岬四張，各接在該節第一段之後；人面岩、寢熊岩與海豹池沒有合格照片。原圖下載到 .tmp/image-selection/rishiri-island-sights/，不加入 Git。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "otatomari-pond": "otatomari-01",
+    "senposhi-misaki-park": "misaki-01",
+    "kitanoitsukushima": "itsukushima-01",
+    "cape-peshi": "peshi-01"
   },
   "selectedAt": "2026-10-25",
   "slots": [
@@ -17,7 +21,9 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼看出這篇講的是利尻島上的景點：文章重點景點之一的姬沼，加上背後的利尻山。",
-      "mustShow": ["文章列出的利尻島景點之一（姬沼、Otatomari沼、仙法志御崎公園等），且認得出是利尻島"],
+      "mustShow": [
+        "文章列出的利尻島景點之一（姬沼、Otatomari沼、仙法志御崎公園等），且認得出是利尻島"
+      ],
       "mustNotShow": [
         "可辨識的人物臉部",
         "旅館、店家招牌或商標當主體",
@@ -30,8 +36,16 @@
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/%E5%A7%AB%E6%B2%BC%E3%81%8B%E3%82%89%E3%81%AE%E5%88%A9%E5%B0%BB%E5%B1%B1.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.45},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 Koda6029 2016 年 9 月 24 日上午在姬沼拍的利尻山（檔案頁標題與說明都是「姫沼からの利尻山」，作者自己上傳，分類 Mount Rishiri、Ponds in Hokkaido）：前景是平靜的姬沼水面倒映山與雲，中景是沼邊的針闊葉混合林，背景是完整的利尻山山形。姬沼是正文第一個介紹的重點景點，也是沒車也能排的三處之一；利尻山入鏡讓讀者一看就知道是利尻島。原圖 4896×3672（4:3），裁 16:9 切掉上方部分天空與下方部分倒影，山頂與沼面都保留。沒有人物、招牌或建築。cover-02 是ブルーノ・プラス 2019 年 7 月拍的姬沼入口木牌（寫著「利尻礼文サロベツ国立公園 姫沼 利尻富士町」），能直接證明地點，原圖就是 16:9；但主體是木牌，畫面看不到利尻山，封面的吸引力不如 cover-01，留作備選。",
       "sourcing": {
@@ -106,6 +120,310 @@
             "property": "國立公園的地名木牌與自然景觀",
             "risk": "low",
             "notes": "木牌是公共地名標示，不是商標；沒有人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "otatomari-pond",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "Otatomari 沼",
+      "purpose": "讓搭路線巴士或觀光巴士到 Otatomari 沼的讀者認得出沼面與周圍的森林。",
+      "mustShow": [
+        "Otatomari 沼的沼面",
+        "沼周圍的森林或背後的利尻山山稜"
+      ],
+      "mustNotShow": [
+        "姬沼或其他湖沼冒充 Otatomari 沼",
+        "可辨識的人物臉部",
+        "休憩所或伴手禮店招牌當主體",
+        "與封面重複的姬沼照片"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "Otatomari 沼",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://cdn.pixabay.com/photo/2017/05/30/10/55/it-2356576_1280.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "otatomari-01 是 Pixabay 上傳者 mac02quackey 的照片，照片頁標題「It Otatomari Pond」、說明寫明是利尻島 Otatomari 沼與利尻山的夏景；同一天上傳的同系列還有幾張利尻島照片。畫面前景是蘆葦，中間是深藍沼面與遠處水鳥，後方是一整片森林與頂部被雲遮住的山稜。不登入只能下載 1280×959 版本，寬度仍超過 1200 px。維基共享資源的 Otatomari 沼只有 1977 年空拍與 640×480 的 2004 年照片，不合規定。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "用維基共享資源 API 列出分類 Rishiri Island、Rishiri, Hokkaido、Rishirifuji, Hokkaido、Otatomari Pond、Cape Peshi、Mount Rishiri、Rishiri Town Museum，並搜尋「Otatomari」「Rishiri pond」「Senhoshi」「Misaki park Rishiri」「Jinmen rock Rishiri」「Nekuma Rishiri」「Rishiri seal」「Kutsugata」。 Otatomari 沼在維基共享資源只有 1977 年空拍（Japan, Hokkaido, Rishiri island - Mikazuki Otatomari ponds 1、2）與 640×480 的 Mt Rishiri(2004).jpg，年代或尺寸不合；改查 Pixabay「rishiri」，找到 It Otatomari Pond。Unsplash 搜尋介面需要登入，沒有查到。"
+      },
+      "candidates": [
+        {
+          "candidateId": "otatomari-01",
+          "sourceType": "stock-photo",
+          "provider": "Pixabay",
+          "assetType": "photo",
+          "sourcePageUrl": "https://pixabay.com/photos/it-otatomari-pond-mt-natural-2356576/",
+          "creatorName": "mac02quackey",
+          "sourceTitle": "It Otatomari Pond",
+          "sourceDescription": "Summer view of Otatomari Pond and Mount Rishiri on Rishiri Island, Japan.（標籤：It、Otatomari Pond、Mt、Natural）",
+          "takenAt": "2017-05-30",
+          "width": 1280,
+          "height": 959,
+          "licenseName": "Pixabay Content License",
+          "licenseUrl": "https://pixabay.com/service/license-summary/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "matchLimits": "照片頁沒有拍攝日期，takenAt 用的是 Pixabay 的上傳日期 2017-05-30，實際拍攝不晚於這天；山頂被雲遮住。",
+          "whyItFits": "照片頁標題與說明都寫明是利尻島的 Otatomari 沼；畫面是沼面、沼邊蘆葦與後方森林，讀者到沼邊看到的就是這種景色。",
+          "altDraft": "前景是蘆葦，中間是深藍色的沼面，後方是一整片森林與頂部被雲遮住的山稜",
+          "captionDraft": "Otatomari 沼的沼面與周圍森林。",
+          "creditDraft": "照片：mac02quackey／Pixabay",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築；沼面遠處有水鳥。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "senposhi-misaki-park",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "仙法志御崎公園",
+      "purpose": "讓讀者認得出仙法志御崎公園海岸的熔岩礁石與潮池，知道到了島的最南端。",
+      "mustShow": [
+        "仙法志御崎公園海岸的熔岩礁石與潮池"
+      ],
+      "mustNotShow": [
+        "其他海岸冒充仙法志御崎公園",
+        "可辨識的人物臉部",
+        "Misaki 物產的招牌當主體"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "仙法志御崎公園",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Lava_rocks%2C_Senhoshi_Misaki_Park%2C_Rishiri_Island%2C_Japan.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "misaki-01 是 OKJaguar 2019 年 6 月在仙法志御崎公園拍的熔岩礁石，檔案名與說明都寫明地點（說明提到熔岩流入海後冷卻、在南岸的仙法志御崎公園可以看到，礁石間形成潮池）。畫面是黑色熔岩礁石圍著平靜的潮池，遠方是海與更多礁石。海豹池沒有合格照片。封面時不選這張是因為看不出是利尻島，但放在本節就是讀者到現場會看到的海岸。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "用維基共享資源 API 列出分類 Rishiri Island、Rishiri, Hokkaido、Rishirifuji, Hokkaido、Otatomari Pond、Cape Peshi、Mount Rishiri、Rishiri Town Museum，並搜尋「Otatomari」「Rishiri pond」「Senhoshi」「Misaki park Rishiri」「Jinmen rock Rishiri」「Nekuma Rishiri」「Rishiri seal」「Kutsugata」。 仙法志御崎公園只找到這一張；沒有海豹池的照片。"
+      },
+      "candidates": [
+        {
+          "candidateId": "misaki-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Lava_rocks,_Senhoshi_Misaki_Park,_Rishiri_Island,_Japan.jpg",
+          "creatorName": "OKJaguar",
+          "sourceTitle": "File:Lava rocks, Senhoshi Misaki Park, Rishiri Island, Japan.jpg",
+          "sourceDescription": "熔岩流入海後冷卻形成的礁石，在南岸的 Senhoshi-Misaki Park 可以看到，礁石間有許多潮池；白色痕跡是黑尾鷗的糞便（作者自己上傳，{{self|cc-by-sa-4.0}}，分類 Rishiri Island、Lava reefs）",
+          "takenAt": "2019-06-03",
+          "width": 5655,
+          "height": 3812,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案名與說明都寫明是利尻島仙法志御崎公園的熔岩礁石；畫面就是公園海岸的礁石與潮池。",
+          "altDraft": "黑色的熔岩礁石圍著平靜的潮池，遠方是海面與散布的礁石，天空多雲",
+          "captionDraft": "仙法志御崎公園海岸的熔岩礁石與潮池（2019 年）。",
+          "creditDraft": "照片：OKJaguar／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kitanoitsukushima",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "人面岩、寢熊岩與北之嚴島辯天宮",
+      "purpose": "讓讀者認得出北之嚴島辯天宮海邊的紅色鳥居與小祠。",
+      "mustShow": [
+        "北之嚴島辯天宮的紅色鳥居",
+        "鳥居後方海中礁石上的小祠"
+      ],
+      "mustNotShow": [
+        "其他神社冒充北之嚴島辯天宮",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "人面岩、寢熊岩與北之嚴島辯天宮",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Kitanoitsukushima.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "itsukushima-01 是ブルーノ・プラス 2017 年 10 月拍的北之嚴島辯天宮（檔案頁說明「龍神の岩（北のいつくしま弁天宮）」、位於利尻島西南岸，分類 Rishiri Island、Torii in Hokkaido）。畫面是紅色鳥居與通往海中礁石小祠的步道，左邊有寫著名稱的木柱，右邊有說明看板。人面岩與寢熊岩在維基共享資源沒有找到照片。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "用維基共享資源 API 列出分類 Rishiri Island、Rishiri, Hokkaido、Rishirifuji, Hokkaido、Otatomari Pond、Cape Peshi、Mount Rishiri、Rishiri Town Museum，並搜尋「Otatomari」「Rishiri pond」「Senhoshi」「Misaki park Rishiri」「Jinmen rock Rishiri」「Nekuma Rishiri」「Rishiri seal」「Kutsugata」。 人面岩、寢熊岩沒有照片；北之嚴島辯天宮只有這一張。"
+      },
+      "candidates": [
+        {
+          "candidateId": "itsukushima-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kitanoitsukushima.jpg",
+          "creatorName": "ブルーノ・プラス",
+          "sourceTitle": "File:Kitanoitsukushima.jpg",
+          "sourceDescription": "龍神の岩（北のいつくしま弁天宮）；This shrine is located on the southwest coast of Rishiri Island.（作者自己上傳，{{self|cc-by-sa-4.0}}）",
+          "takenAt": "2017-10",
+          "width": 3840,
+          "height": 2160,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是利尻島西南岸的北之嚴島辯天宮；紅色鳥居與海中礁石上的小祠是讀者到現場第一眼看到的畫面。",
+          "altDraft": "海邊的紅色鳥居，鳥居後方的小橋通往海中礁石上的紅色小祠，左邊木柱寫著「北のいつくしま弁天宮」，右邊是「龍神の岩」說明看板",
+          "captionDraft": "北之嚴島辯天宮的紅色鳥居與海中的小祠（2017 年）。",
+          "creditDraft": "照片：ブルーノ・プラス／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "神社的鳥居與小祠，屬宗教設施外觀",
+            "property": "神社設施外觀與說明看板",
+            "risk": "low",
+            "notes": "分類 Absence of people in Japan，畫面沒有人。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "cape-peshi",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "Peshi 岬",
+      "purpose": "讓搭渡輪到鴛泊港的讀者認得出港邊那座長滿草的岩山就是 Peshi 岬。",
+      "mustShow": [
+        "Peshi 岬的岩山",
+        "鴛泊港的防波堤或燈塔，看得出就在港邊"
+      ],
+      "mustNotShow": [
+        "其他岬角冒充 Peshi 岬",
+        "可辨識的人物臉部",
+        "與交通頁鴛泊渡輪站照片重複"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "Peshi 岬",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/130726_Cape_Peshi_in_Rishiri_Island_Hokkaido_Japan01s3.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "peshi-01 是 663highland 2013 年 7 月拍的 Peshi 岬（檔案頁說明「ペシ岬。所在地は北海道利尻島」，分類 Cape Peshi），從鴛泊港內拍：綠色岩山、右側的岩壁、山頂的白色小燈塔，前景是防波堤與紅色燈塔，正是渡輪進港時看到的角度。同系列其他張多是登頂步道或山頂風景；At Oshidomari 02n 有路標與市街，資訊較雜。檔案頁標示 GFDL、CC BY-SA 3.0、CC BY 2.5 三種授權，選 CC BY 2.5。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "用維基共享資源 API 列出分類 Rishiri Island、Rishiri, Hokkaido、Rishirifuji, Hokkaido、Otatomari Pond、Cape Peshi、Mount Rishiri、Rishiri Town Museum，並搜尋「Otatomari」「Rishiri pond」「Senhoshi」「Misaki park Rishiri」「Jinmen rock Rishiri」「Nekuma Rishiri」「Rishiri seal」「Kutsugata」。 Category:Cape Peshi 有 663highland 2013 年的二十多張與 Tatsuya Sakai 2001 年 640×480 的一張。"
+      },
+      "candidates": [
+        {
+          "candidateId": "peshi-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:130726_Cape_Peshi_in_Rishiri_Island_Hokkaido_Japan01s3.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:130726 Cape Peshi in Rishiri Island Hokkaido Japan01s3.jpg",
+          "sourceDescription": "Cape Peshi in Rishiri Island, Hokkaido, Japan.／ペシ岬。所在地は北海道利尻島。（作者自己上傳，{{Self|GFDL|Cc-by-sa-3.0-migrated|Cc-by-2.5}}）",
+          "takenAt": "2013-07-26",
+          "width": 4912,
+          "height": 3264,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是利尻島的 Peshi 岬，分類 Cape Peshi；從港內拍岩山與防波堤，讀者下船時看到的就是這個方向。",
+          "altDraft": "長滿綠草的岩山，右側是陡峭的岩壁，山頂有白色小燈塔，前景是港內的防波堤與紅色燈塔",
+          "captionDraft": "從鴛泊港內看 Peshi 岬與防波堤上的紅色燈塔（2013 年）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀與港口設施",
+            "risk": "low",
+            "notes": "沒有人物或招牌。"
           },
           "checks": {
             "fullImageInspected": true,
