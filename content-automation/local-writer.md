@@ -131,10 +131,14 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 1. D1：`ops-article.mjs list` 裡沒有這篇，先 `node scripts/ops-article.mjs start --article=<id> --group=<groupId> --path=<targetPath> --rules=$(git rev-parse --short HEAD)`（已有紀錄的不要再 start，它會把寫作輪數加一）；接著 `ops-article.mjs accepted --article=<id>`。狀態是 `parked` 就加進「上傳停放」表、換下一篇。
 2. 父 Hub：第 2 步（`queue-state.json` 的 `parentHubs[]`，`missing` 就 `prepare-parent-hub.mjs <batchId>` dry-run 後 `--apply`）。
-3. Sanity 狀態是 `staged_noindex`（上一輪做到一半）：跳過 4、5、6，照 Skill「resume」的 `staged`：沒封面才做第 5 點，再接第 7 點。
+3. Sanity 狀態是 `staged_noindex`（上一輪做到一半）：跳過 4、5、6，照 Skill「resume」的 `staged`：沒封面才做第 5 點的封面；封包裡有文內照片的，照第 6 點最後一段補傳（已插入的會顯示 `already-matching`），再接第 7 點。
 4. 定稿：`npm run release:finalize -- content-production/<id>`。
-5. 封面：派一個子代理照 `.agents/skills/japan-travel-image-finder/SKILL.md` **只選封面**，只用實拍照片（維基共享資源、免費圖庫、條款允許的觀光協會照片），**不用 AI 圖**，圖片用 curl 下載、不在瀏覽器點下載，封包寫在 `content-production/<id>/images/`。選定後 `npm run image:prepare:cover -- content-production/<id> --download`，親自看一次裁切後的圖。找不到合格實拍：這篇加進「上傳停放」表（原因「缺封面」），`ops-article.mjs fail --article=<id> --kind=publish --reason=缺封面`，換下一篇。文內圖還沒有上傳工具，這一步不做。
+5. 選圖：派一個子代理照 `.agents/skills/japan-travel-image-finder/SKILL.md` 選**封面與文內照片**，只用實拍照片（維基共享資源、免費圖庫、條款允許的觀光協會照片），**不用 AI 圖**，圖片用 curl 下載、不在瀏覽器點下載，User-Agent 不放 email，封包寫在 `content-production/<id>/images/`。
+   - 封面：選定後 `npm run image:prepare:cover -- content-production/<id> --download`，親自看一次裁切後的圖。找不到合格實拍：這篇加進「上傳停放」表（原因「缺封面」），`ops-article.mjs fail --article=<id> --kind=publish --reason=缺封面`，換下一篇。
+   - 文內照片（2026-10-28 加回）：只放重點景點與交通據點，就是有自己一節、讀者到現場要認得出來的地方（渡輪站、機場、車站、主要景點），一篇最多 4 張，一節最多 1 張。每個位置要有 `placement`（那一節標題全文、`afterBlocks` 預設 1，接在第一段之後）與 `preparation`，格式見 image-finder `references/image-packet.md`「文內照片的位置與準備」。找不到合格實拍的位置就不放、不列進封包，**不因為缺文內照片停放**。
+   - 有文內照片時，`npm run image:prepare:inline -- content-production/<id> --download`，**親自打開每一張 webp**，確認畫面和 `altDraft`、`captionDraft` 寫的一致（例如寫了看得到招牌字樣，就要真的讀得到）；不一致就改文字，改不了就拿掉那個位置。下載被擋（HTTP 429 之類）就照 `.tmp/image-selection/<id>/inline/<slotId>-source.jpg` 用 curl 下載後重跑（不加 `--download`）；還是不行，這篇先不放文內照片，照樣上線。
 6. Sanity 暫存：第 10 步（先 `node scripts/link-at-publish.mjs .tmp/auto-publisher/<id>/sanity/article.json --article=<id> --outline=content-planning/hokkaido/hokkaido-wakkanai-outline.json --sanity=.tmp/queue-state.json` 接上已上線頁面的內連，再 `publish-prepared-article.mjs ../.tmp/auto-publisher/<id>/sanity/article.json` 與 `publish-article-cover.mjs ../content-production/<id>`，都先 dry-run 再 `--apply`），重新 inspect 確認 `staged_noindex` 而且 `hasCover`。
+   - 有文內照片時接著在 `studio/` 跑 `npm run publish:article-inline-images -- ../content-production/<id>` 預覽：每張都要是 `upload-and-insert`（續做時可以是 `already-matching`），位置在指定那一節。再加 `--apply`，看到 `inline-images-published-and-verified` 才算完成。文內照片上傳失敗**不擋上線**：先 `--remove --apply` 拿掉已插入的照片，在「上傳」表備註原因，繼續第 7 點。
 7. 開放索引：第 11 步。CI 用 `SANITY_PROJECT_ID=e8ctf7ee SANITY_DATASET=production npm run ci`。`routeMode` 是 `hub-landing` 時照第 11 步掛入口文章、失敗時撤回。
 8. 第 12 步：重新 inspect，父 Hub 的 `shouldReleaseIndex` 是 true 就 `--release-index`。
 9. 登記：第 13 步，`--outline=content-planning/hokkaido/hokkaido-wakkanai-outline.json --sanity=.tmp/queue-state.json --body=.tmp/auto-publisher/<id>/sanity/article.json`（先重新 inspect；resume 的 `staged` 沒有這個檔案就不帶 `--body`）。
@@ -145,7 +149,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 **5. 推上網站**：有任何一篇開放索引或補了內連，才做這一點。
 
-1. commit 上傳的封包：`git add content-production/<上傳的 id>/`（`manifest.json`、`audit.json`、`sanity-sync.json`、`images/`），訊息 `feat(content): <id> 上線`。
+1. commit 上傳的封包：`git add content-production/<上傳的 id>/`（`manifest.json`、`audit.json`、`sanity-sync.json`、`images/`；`.tmp/` 裡的原圖與 webp 不加入 Git），訊息 `feat(content): <id> 上線`。
 2. `git fetch origin`、`git merge --no-edit origin/main`，有衝突就 `git merge --abort`、不推 `main`，在執行紀錄寫明（文章已經在 Sanity，下一次推 `main` 網站才會更新）。
 3. `npm test` 通過後 `git push origin HEAD:main`，Cloudflare 會自動建置並更新網站，約 5 分鐘。不用等它完成；下一輪開始前用 `curl -s -o /dev/null -w "%{http_code}" https://offpathnotes.com<targetPath>` 確認上一輪上線的網址是 200，不是就寫進執行紀錄。
 
@@ -166,7 +170,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 ## 不做的事
 
 - 只做第 5 步列出的上傳動作；不碰規劃總表、不改已上線文章的文字（補內連只加連結）、不改 Hub 文案。
-- 不用 AI 圖、不選文內圖。
+- 不用 AI 圖。文內照片只放第 5 步「每一篇」第 5 點說的重點景點與交通據點。
 - 不改 `content-planning/` 的事實表、譯名表與規格（研究時發現的更正與新事實只記在文章的 `reference-review.md`，執行紀錄寫「待同步」）；大綱只同步標題文字。
 - 不在瀏覽器點下載（會在 Darren 的電腦跳出存檔視窗）。
 - 不讓電腦發出聲音（Darren 2026-10-23：影片自動播放的音樂會嚇到人）。不在瀏覽器打開 YouTube、Instagram、TikTok 或其他影片頁，影片資訊（標題、說明欄、章節、字幕）用 curl 或 WebFetch 讀。其他網頁要用瀏覽器開時，打開後第一個動作就執行 JavaScript `document.querySelectorAll('video,audio').forEach(m=>{m.muted=true;m.pause()})`，讀完立刻關掉分頁。派子代理會用到瀏覽器時，把這一條原文交代給它。
@@ -178,7 +182,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 - **最新一輪**：整段覆寫。台北時間、文章 ID、結果（`完成`／`停放`／`略過`／`停止`）、停在哪一步與原因、事實查核輪數與 claim 數、讀者驗收必修條數、開始與結束的用量（有 get_usage 時）、commit 短碼、下一輪預期文章。
 - **停放**：表格（文章 ID、日期、原因、要誰處理），解決後改狀態不刪列。
-- **上傳**：表格第一列插入本輪每一篇（台北時間、文章 ID、結果 `已上線`／`失敗`／`上傳停放`、網址、停在哪一點與原因、封面來源與授權）。
+- **上傳**：表格第一列插入本輪每一篇（台北時間、文章 ID、結果 `已上線`／`失敗`／`上傳停放`、網址、停在哪一點與原因、封面來源與授權、文內照片張數與沒放的原因）。
 - **上傳停放**：表格（文章 ID、日期、原因、要誰處理），解決後改狀態不刪列。
 - **紀錄**：表格第一列插入本輪（日期時間、文章 ID、結果、事實查核輪數、5 小時額度用量變化、待同步的事實）。
 

@@ -115,6 +115,25 @@
 - 授權或利用規約查核超過 30 天要重新查核。
 - 所有候選的 `commercialReview.risk` 必須是 `low`。
 
+## 文內照片的位置與準備
+
+要上傳到網站的文內照片（`kind: "inline"`、已選定實拍）多兩個欄位，給 `npm run image:prepare:inline` 與 `npm run publish:article-inline-images` 使用：
+
+```json
+"placement": {"heading": "抵達鴛泊港與沓形港", "afterBlocks": 1},
+"preparation": {
+  "sourceFile": "source.jpg",
+  "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/example.jpg",
+  "output": {"maxWidth": 1600, "format": "webp", "quality": 82}
+}
+```
+
+- `placement.heading`：照片所在那一節的 H2 或 H3 **全文**，正文裡只能有一個同名標題。
+- `placement.afterBlocks`：從標題往下數第幾個區塊之後，預設 1（第一段之後）。照片放在介紹那個地方的段落後面，不放在表格中間。
+- `preparation.sourceDownloadUrl`：維基共享資源用 `upload.wikimedia.org` 的原檔網址。只縮小、不裁切，寬度超過 `maxWidth` 才縮。
+- 範例範圍：一篇最多 4 張、一節最多 1 張，只放讀者到現場要認得出來的地方（自動寫作的規定見 `content-automation/local-writer.md` 第 5 步）。
+- 準備後的圖在 `.tmp/image-selection/<article-id>/inline/`，不加入 Git。上傳前要親自看每一張，確認和 `altDraft`、`captionDraft` 一致。
+
 ## 驗證
 
 ```bash
