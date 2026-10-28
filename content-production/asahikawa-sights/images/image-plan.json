@@ -7,9 +7,12 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-sights/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-sights/，不加入 Git、不上傳。2026-10-28 文內圖：北彩都花園（車站南側與河堤）、嵐山展望台、神居古潭三張加上 placement 與 preparation，照片接在各節第一段之後；旭橋已是封面不另放；男山酒造只有招牌當主體的照片、見本林與三浦綾子紀念文學館只有認不出地點的樹林照或寬度不足的建築照，都不放。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "kitasaito-garden": "kitasaito-01",
+    "arashiyama-observatory": "arashiyama-01",
+    "kamuikotan": "kamuikotan-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -17,17 +20,33 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼看出這篇講的是旭川市區的景點，用正文介紹的旭橋與背後的大雪山連峰當代表畫面。",
-      "mustShow": ["旭橋、嵐山展望台、常磐公園、上野ファーム、神居古潭等正文介紹的旭川景點之一，且認得出是旭川"],
-      "mustNotShow": ["可辨識的人物臉部", "宮津市等其他地方的同名旭橋冒充旭川旭橋", "旭川車站、平和通買物公園、旭山動物園當主體（別頁已用）", "旅館或店家招牌當主體", "AI 生成或合成畫面"],
+      "mustShow": [
+        "旭橋、嵐山展望台、常磐公園、上野ファーム、神居古潭等正文介紹的旭川景點之一，且認得出是旭川"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "宮津市等其他地方的同名旭橋冒充旭川旭橋",
+        "旭川車站、平和通買物公園、旭山動物園當主體（別頁已用）",
+        "旅館或店家招牌當主體",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Asahibashi_Bridge_and_Mt._Daisetsuzan_Range.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.5},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
-      "selectionNotes": "cover-01 是 Masal64 2016 年 10 月 19 日在石狩川河岸拍的旭橋：綠色鋼造拱橋橫跨石狩川，背後是覆雪的大雪山連峰，前景是秋天紅葉的河岸公園。正文旭橋一段寫的正是「鋼造的拱橋跨在石狩川上，背景是大雪山連峰」，畫面直接對上，又能一眼認出是旭川。原圖就是 16:9（1920×1080），裁切只做縮放。限制：手機拍攝，細節不如單眼銳利；前景有遊具與涼亭，橋在畫面中段偏小；2016 年拍攝，但旭橋 1932 年完工、外觀沒有大改。cover-02 是 MIKI Yoshihito 2025 年 7 月從河床仰拍的旭橋，畫質高，但看不到大雪山與市區，較難一眼認出是旭川。cover-03 是同一作者 Masal64 從嵐山展望台俯瞰旭川市區與大雪山的照片，對應正文嵐山展望台一段，但市區很遠、主體不明確。",
+      "selectionNotes": "cover-01 是 Masal64 2016 年 10 月 19 日在石狩川河岸拍的旭橋：綠色鋼造拱橋橫跨石狩川，背後是覆雪的大雪山連峰，前景是秋天紅葉的河岸公園。正文旭橋一段寫的正是「鋼造的拱橋跨在石狩川上，背景是大雪山連峰」，畫面直接對上，又能一眼認出是旭川。原圖就是 16:9（1920×1080），裁切只做縮放。限制：手機拍攝，細節不如單眼銳利；前景有遊具與涼亭，橋在畫面中段偏小；2016 年拍攝，但旭橋 1932 年完工、外觀沒有大改。cover-02 是 MIKI Yoshihito 2025 年 7 月從河床仰拍的旭橋，畫質高，但看不到大雪山與市區，較難一眼認出是旭川。cover-03 是同一作者 Masal64 從嵐山展望台俯瞰旭川市區與大雪山的照片，對應正文嵐山展望台一段，但市區很遠、主體不明確。（2026-10-28：cover-03 的嵐山展望台市區照改當文內圖 arashiyama-01，因同一封包不能重複使用同一來源，從封面候選移除。）",
       "sourcing": {
         "policy": "real-photo-first-ai-if-none",
         "photoSearchOutcome": "qualified-photo-found",
@@ -106,34 +125,224 @@
             "notAiGenerated": true,
             "noWatermark": true
           }
-        },
+        }
+      ]
+    },
+    {
+      "slotId": "kitasaito-garden",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "旭川北彩都花園與忠別川",
+      "purpose": "讓從旭川站南側出來的讀者認得車站南面的玻璃立面、花園草地與忠別川河堤，知道北彩都花園就在車站正後方。",
+      "mustShow": [
+        "旭川站南側立面與站前的花園草地或忠別川河堤"
+      ],
+      "mustNotShow": [
+        "旭川站北口與站前廣場（交通頁已用）",
+        "可辨識的人物臉部",
+        "旅館招牌當主體",
+        "冬天雪上活動區冒充夏天花園"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭川北彩都花園與忠別川",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/Asahikawa_Station_south_entrance_202605.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "kitasaito-01 是 2026 年 5 月晴天從忠別川河堤往北拍的旭川站南側：玻璃立面的車站前是花園的草地與樹木，前景是河堤草坡與自行車道。讀者從車站南口出來往河邊走看到的就是這一帶，正文寫花園「從車站南側的廣場走出去」就到。後方有 JR Inn 與 Route Inn 的小招牌，不是主體。另外看過 2012 年與 2017 年同方向的照片（Asahikawa station south view、JR Asahikwa Station building (South Exit)），前者花園還在整建、後者陰天，都不如這張。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Kitasaito Garden」「北彩都ガーデン」「北彩都」「Chubetsu river Asahikawa」與 Category:Asahikawa Station；北彩都花園本身沒有專屬分類與照片，改用能同時看到車站南側與花園的照片。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
         {
-          "candidateId": "cover-03",
+          "candidateId": "kitasaito-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asahikawa_Station_south_entrance_202605.jpg",
+          "creatorName": "Sashimiteishoku",
+          "sourceTitle": "File:Asahikawa Station south entrance 202605.jpg",
+          "sourceDescription": "函館本線旭川駅南口。（Own work，座標 43.761049, 142.359120）",
+          "takenAt": "2026-05-14",
+          "width": 4000,
+          "height": 3000,
+          "licenseName": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明寫明是旭川站南口，座標在車站南側的忠別川河堤；畫面裡車站與河堤之間的草地與樹木就是北彩都花園，正文寫花園從車站南側直接走出去就到。",
+          "altDraft": "從忠別川河堤看旭川站南側，玻璃立面的車站前是花園的草地與樹木，前景是長草的河堤與自行車道",
+          "captionDraft": "旭川站南側與站前的北彩都花園（2026 年 5 月）。",
+          "creditDraft": "照片：Sashimiteishoku／Wikimedia Commons／CC0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "車站的 JR 標誌與站名、後方旅館建築頂端的小招牌，都很小且不是主體",
+            "artwork": "none",
+            "property": "車站建築、河堤與公園",
+            "risk": "low",
+            "notes": "沒有可辨識的人物；旅館招牌只佔畫面很小一角，不會讓人以為在推某間旅館。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "arashiyama-observatory",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "嵐山展望台與北邦野草園",
+      "purpose": "讓讀者看到從嵐山展望台實際看得到的景色（市區、石狩川、大雪山連峰），決定值不值得開車或搭車上去。",
+      "mustShow": [
+        "從嵐山展望台往旭川市區方向看的景色"
+      ],
+      "mustNotShow": [
+        "京都的嵐山冒充旭川嵐山",
+        "可辨識的人物臉部",
+        "旭橋當主體（封面已用）"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "嵐山展望台與北邦野草園",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Cityscape_of_Asahikawa_from_Mt._Arashiyama.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "arashiyama-01 是 2016 年 10 月晴天從嵐山展望台拍的旭川市區：前景是轉黃的樹林，中段是住宅區與蜿蜒的石狩川和橋，遠處是頂上有雪的大雪山連峰，正好是正文寫的「旭川市區、石狩川與大雪山連峰一次看盡」。封面選圖時原本列為備選 cover-03（已從封面候選移除，改放這裡），因為市區太遠不適合當封面，但當文內圖剛好說明展望台看得到什麼。手機拍攝，細節普通，但構圖清楚。另一張 Mt. Arashiyama (Hokkaido).jpg 是嵐山山體本身，對讀者決定要不要上去幫助較小。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源關鍵字「Arashiyama Asahikawa」；結果多數是京都嵐山，排除。旭川嵐山合格的有 Masal64 的市區遠景（選定）與山體照，另有 2003 年寬 1261 px 的舊照。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "arashiyama-01",
           "sourceType": "commons-photo",
           "provider": "Wikimedia Commons",
           "assetType": "photo",
           "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cityscape_of_Asahikawa_from_Mt._Arashiyama.jpg",
           "creatorName": "Masal64",
           "sourceTitle": "File:Cityscape of Asahikawa from Mt. Arashiyama.jpg",
-          "sourceDescription": "Cityscape of Asahikawa from Mt. Arashiyama observatory, Hokkaido, Japan（Self-published work，分類 Cityscapes in Asahikawa）",
+          "sourceDescription": "Cityscape of Asahikawa from Mt. Arashiyama observatory, Hokkaido, Japan（Own work，座標 43.793889, 142.303528，分類 Cityscapes in Asahikawa）",
           "takenAt": "2016-10-19",
           "width": 4000,
           "height": 2250,
           "licenseName": "CC0",
           "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "licenseCheckedAt": "2026-10-27",
+          "licenseCheckedAt": "2026-10-28",
           "matchType": "exact",
-          "whyItFits": "檔案頁說明為從嵐山展望台看旭川市區，畫面有市區、石狩川與遠處的大雪山，對應正文嵐山展望台一段。",
-          "altDraft": "從嵐山展望台俯瞰旭川市區與石狩川，遠處是大雪山連峰，前景是秋天的樹林",
-          "captionDraft": "從嵐山展望台看旭川市區（2016 年 10 月）。",
+          "whyItFits": "檔案頁說明寫明是從嵐山展望台看旭川市區，座標在嵐山；畫面有市區、石狩川與遠處的大雪山，和正文嵐山展望台一段一致。",
+          "altDraft": "從嵐山展望台俯瞰旭川市區，右邊是蜿蜒的石狩川與橋，遠處是頂上有雪的大雪山連峰，前景是轉黃的樹林",
+          "captionDraft": "從嵐山展望台看旭川市區與大雪山連峰（2016 年 10 月）。",
           "creditDraft": "照片：Masal64／Wikimedia Commons／CC0",
           "commercialReview": {
             "people": "none",
             "logos": "none",
             "artwork": "none",
-            "property": "遠景市街",
+            "property": "遠景市街與橋梁",
             "risk": "low",
             "notes": "沒有人物與招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kamuikotan",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "神居古潭",
+      "purpose": "讓讀者看到神居古潭石狩川急流與兩岸奇岩的樣子，決定要不要開車 40 分鐘過去。",
+      "mustShow": [
+        "神居古潭一帶的石狩川與岸邊的岩石"
+      ],
+      "mustNotShow": [
+        "其他河谷冒充神居古潭",
+        "可辨識的人物臉部",
+        "店家招牌"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "神居古潭",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Kamuikotan_Asahikawa_18-05-22.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "kamuikotan-01 是 2018 年 5 月晴天在河岸拍的神居古潭：石狩川在灰白色的岩石之間轉彎，兩岸是新綠的山林，看得出正文說的急流與奇岩。畫面右後方有一段圍籬與建築，不寫成特定設施。另外看過 2014 年從吊橋上拍的石狩川（石狩川 - panoramio.jpg，CC BY 3.0，魚眼變形、左下角有欄杆）與 2006 年從吊橋拍的岩石近景（Kamuikotan - panoramio.jpg，前景有吊橋鋼索擋住），構圖都不如這張。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Kamuikotan (Asahikawa) 與關鍵字「Kamuikotan」「Kamui Kotan」。2009 年的壺穴近景看不出整體地形，2006 年另兩張只有 320 px，Kamui Ohashi Bridge 只有 1600×1200 且主體是橋。已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "kamuikotan-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kamuikotan_Asahikawa_18-05-22.jpg",
+          "creatorName": "Totti",
+          "sourceTitle": "File:Kamuikotan Asahikawa 18-05-22.jpg",
+          "sourceDescription": "神居古潭を流れる石狩川（Own work，分類 Kamuikotan (Asahikawa)）",
+          "takenAt": "2018-05-22",
+          "width": 4032,
+          "height": 3024,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明寫明是流經神居古潭的石狩川，分類也是神居古潭；畫面是岩石之間的急流與兩岸山林，和正文的描述一致。",
+          "altDraft": "神居古潭的石狩川在灰白色岩石之間轉彎流過，兩岸是新綠的山林，左前方是河岸草地",
+          "captionDraft": "神居古潭一帶的石狩川與岸邊岩石（2018 年 5 月）。",
+          "creditDraft": "照片：Totti／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀；右後方有圍籬與遠處的建築，不是主體",
+            "risk": "low",
+            "notes": "沒有人物、店家或招牌。"
           },
           "checks": {
             "fullImageInspected": true,

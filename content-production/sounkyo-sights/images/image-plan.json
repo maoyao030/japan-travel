@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-sights/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-sights/，不加入 Git、不上傳。 2026-10-28 文內圖：層雲峽遊客中心、大函兩張加上 placement 與 preparation，照片接在各節第一段之後；流星瀑布已是封面，銀河瀑布沒有比封面更好的單獨照片；紅葉谷與紅葉瀑布、大雪水壩、大雪森之花園在維基共享資源與免費圖庫找不到合格實拍，不放。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "visitor-center": "vc-01",
+    "obako": "obako-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -17,15 +19,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "用層雲峽最具代表性的景點銀河瀑布與流星瀑布帶出這篇景點頁，讓讀者一眼看出是層雲峽的峽谷與瀑布。",
-      "mustShow": ["層雲峽的瀑布（流星瀑布或銀河瀑布）與兩旁的柱狀節理岩壁"],
-      "mustNotShow": ["可辨識的人物臉部", "其他地方的瀑布冒充層雲峽", "冰瀑祭等祭典畫面", "旅館或店家招牌當主體", "AI 生成或合成畫面"],
+      "mustShow": [
+        "層雲峽的瀑布（流星瀑布或銀河瀑布）與兩旁的柱狀節理岩壁"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他地方的瀑布冒充層雲峽",
+        "冰瀑祭等祭典畫面",
+        "旅館或店家招牌當主體",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ry%C5%ABsei_Falls_2003-09-14_-_panoramio.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.46},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.46
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 lienyuan lee 2003 年 9 月 14 日拍的流星瀑布：畫面中央偏右是白色的瀑布從岩壁間落下，左上方是層雲峽特有的柱狀節理岩峰，右邊是直立的岩壁，前景是樹林，天空晴朗。正文第一個峽谷景點就是銀河瀑布與流星瀑布，這張瀑布、岩峰與岩壁同框，認得出是層雲峽。原圖 2558×1795，裁 16:9 時焦點 y 放 0.46，保留左上岩峰的大部分與整道瀑布，只裁掉上方一點天空與下方部分樹林。沒有人物、招牌或建築。限制：2003 年拍攝，畫面是初秋仍偏綠的樹林，不代表紅葉季；瀑布水量隨季節變化。cover-02 是同一位作者同一天拍的銀河瀑布，柱狀節理岩壁更醒目，但瀑布細、在畫面中只占一條細線，當備選。",
       "sourcing": {
@@ -99,6 +117,169 @@
             "property": "natural landscape",
             "risk": "low",
             "notes": "只有岩壁、瀑布與樹林。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "visitor-center",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "層雲峽遊客中心",
+      "purpose": "讓從巴士總站走過來的讀者認得層雲峽遊客中心的木造建築與入口。",
+      "mustShow": [
+        "層雲峽遊客中心的建築外觀與入口"
+      ],
+      "mustNotShow": [
+        "其他地方的遊客中心冒充",
+        "可辨識的人物臉部",
+        "店家或旅館招牌當主體"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "層雲峽遊客中心",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Sounkyo_Visitor_Center.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "層雲峡ビジターセンター"
+        ],
+        "locationDescription": "黑岳纜車站右邊，從巴士總站走約5分鐘；木造雙層建築，入口雨遮上寫著館名，前面是寬的石階。",
+        "officialPhotoLinks": []
+      },
+      "selectionNotes": "vc-01 是 2017 年 9 月 15 日拍的遊客中心正面：咖啡色木板外牆的斜屋頂建築，入口深色雨遮上有日英館名，左側石碑刻著「大雪山国立公園 層雲峡ビジターセンター」，前景是寬石階，背後是山坡樹林，少數葉子開始轉黃。讀者走到館前看到的就是這個方向。原圖 5298×2980 接近 16:9，畫質清楚。限制：左下角停著兩輛車，原圖放大可能看到車牌，縮到 1600 寬後看不清。維基共享資源上遊客中心外觀只有這一張夠大。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Sōunkyō、Category:Visitor centres in Hokkaido 與 Category:Kamikawa, Hokkaido；已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "vc-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sounkyo_Visitor_Center.jpg",
+          "creatorName": "Yasu",
+          "sourceTitle": "File:Sounkyo Visitor Center.jpg",
+          "sourceDescription": "Sounkyo Visitor Center in Kamikawa Town, Hokkaido, Japan（Own work，分類 Sōunkyō、Visitor centres in Hokkaido）",
+          "takenAt": "2017-09-15",
+          "width": 5298,
+          "height": 2980,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是上川町的層雲峽遊客中心；畫面裡入口雨遮與石碑都寫著層雲峡ビジターセンター。",
+          "altDraft": "層雲峽遊客中心正面，咖啡色木板外牆的斜屋頂建築，入口雨遮上有館名，前面是寬石階，背後是山坡樹林",
+          "captionDraft": "層雲峽遊客中心的正面與入口（2017 年 9 月）。",
+          "creditDraft": "照片：Yasu／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "環境省設立的公共設施外觀；館名招牌與石碑屬設施名稱",
+            "risk": "low",
+            "notes": "沒有人物；左下角停著兩輛車，不是主體，縮圖後車牌看不清。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "obako",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "層雲峽往大雪湖方向，大函與大雪水壩",
+      "purpose": "讓搭季節巴士或開車到大函入口的讀者認得河邊像屏風一樣排開的柱狀節理岩壁。",
+      "mustShow": [
+        "大函的柱狀節理岩壁與石狩川"
+      ],
+      "mustNotShow": [
+        "小函或其他峽谷冒充大函",
+        "可辨識的人物臉部",
+        "店家或旅館招牌"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "層雲峽往大雪湖方向，大函與大雪水壩",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/%E7%A7%8B%E5%87%BD%EF%BC%88Autumn_in_valley%EF%BC%89_-_panoramio.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "textFallback": {
+        "signTextJa": [
+          "大函"
+        ],
+        "locationDescription": "溫泉街往北見方向約6公里，穿過新大函隧道後左手邊的停車場，走到河邊就看得到對岸直立的柱狀節理岩壁。",
+        "officialPhotoLinks": []
+      },
+      "selectionNotes": "obako-01 是 pakku 拍的大函秋景：晴天藍天，左邊是一大片橘白色直立紋路的柱狀節理岩壁，右邊沿河還有一排岩壁延伸進峽谷，中間是石狩川淺灘與河石，岩壁上方是針葉樹與轉色的闊葉樹。檔案頁說明寫「層雲峡の大函。石狩川とニセイチャロマップ川の合流点付近」。原圖 2288×1712（4:3），寬度夠。限制：檔案頁的拍攝日期寫 2004 年 2 月 7 日，但畫面是秋天，日期不可信，圖說不寫年份；畫面最下緣有一個人的後腦，很小、看不到臉。舊的 Oobako(hokkaido).jpg 只有 640 寬，不用。大雪水壩的兩張（Taisetsu Dam.jpg 角度是從堤頂往下看洩洪道、看不出水壩全貌；大雪湖と石狩連峰 偏暗）不合格，這一節只放大函。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-28",
+        "photoSearchNotes": "查過維基共享資源 Category:Sōunkyō、Category:Kamikawa, Hokkaido、Category:Taisetsu Dam 與關鍵字「Obako」「大函 上川町」；已有合格實拍，沒有再查免費圖庫。"
+      },
+      "candidates": [
+        {
+          "candidateId": "obako-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E5%87%BD%EF%BC%88Autumn_in_valley%EF%BC%89_-_panoramio.jpg",
+          "creatorName": "pakku",
+          "sourceTitle": "File:秋函（Autumn in valley） - panoramio.jpg",
+          "sourceDescription": "層雲峡の大函。石狩川とニセイチャロマップ川の合流点付近。（Panoramio 轉存，分類 Sōunkyō、Ishikari River、Columnar igneous rocks in Japan）",
+          "width": 2288,
+          "height": 1712,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-28",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是層雲峽的大函、石狩川與ニセイチャロマップ川匯流點附近；畫面的柱狀節理岩壁沿河排開，和正文說的屏風般岩壁一致。",
+          "altDraft": "大函的柱狀節理岩壁，橘白色直立紋路的岩壁沿著石狩川排開，河上是淺灘與河石，上方是樹林與藍天",
+          "captionDraft": "大函的柱狀節理岩壁與石狩川，秋天。",
+          "creditDraft": "照片：pakku／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "畫面最下緣有一個人的後腦，很小、看不到臉，不可辨識",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有招牌、建築或車輛。"
           },
           "checks": {
             "fullImageInspected": true,
