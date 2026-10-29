@@ -1,6 +1,6 @@
 ---
 name: japan-travel-image-finder
-description: Find and select commercially usable images for an approved Japan travel article — Wikimedia Commons and free stock libraries first, then tourism-association and municipal photos whose site terms allow reuse with credit, own photos, and only when no real photo qualifies a clearly labelled AI illustration. Excludes non-commercial and no-derivatives licenses because the site earns affiliate income, never downloads hotel, shop, Instagram, map or OG images (official Instagram and YouTube posts may only be embedded), and records license evidence in an image packet. Use for cover images, inline images, or image replacement. Do not upload to Sanity or publish.
+description: Find and select commercially usable images for an approved Japan travel article — tourism-association, municipal and Ministry of the Environment photos whose site terms allow reuse with credit first, then free stock libraries, then Wikimedia Commons, own photos, and only when no real photo qualifies a clearly labelled AI illustration. Excludes non-commercial and no-derivatives licenses because the site earns affiliate income, never downloads hotel, shop, Instagram, map or OG images (official Instagram and YouTube posts may only be embedded), and records license evidence in an image packet. Use for cover images, inline images, or image replacement. Do not upload to Sanity or publish.
 ---
 
 # 日本旅遊長尾站選圖
@@ -26,14 +26,14 @@ description: Find and select commercially usable images for an approved Japan tr
 
 | 順序 | 來源 | 適合用在 |
 |---|---|---|
-| 1 | 維基共享資源 Wikimedia Commons | 小地方、地標、料理、祭典、交通工具 |
-| 2 | Unsplash、Pexels、Pixabay | 封面、大地方、季節氛圍 |
-| 3 | 觀光協會或自治體的照片（素材庫，或網站條款允許轉載的照片） | 小地方、祭典；條款逐一確認，照規定寫 credit |
+| 1 | 觀光協會、自治體、環境省等官方的照片（素材庫，或網站條款允許轉載的照片） | 小地方、地標、步道、祭典；條款逐一確認，照規定寫 credit |
+| 2 | Unsplash、Pexels、Pixabay | 封面、大地方、季節氛圍；文內只用說明寫明地點、畫面對得上的照片 |
+| 3 | 維基共享資源 Wikimedia Commons | 前兩種都沒有時；交通工具、站房、料理常只有這裡有 |
 | 4 | Darren 或作者自己拍的照片 | 目前不預期有；未來有實拍時才用 |
 | 5 | 自製示意圖 | 路線與時間；由程式依資料畫成 SVG |
 | 6 | AI 示意圖 | 前面都沒有合格照片時，必須標示，且不能用在現場辨識 |
 
-小地方在免費圖庫幾乎找不到照片，所以先查維基共享資源。重點店家與旅館位置用 Google 地圖嵌入呈現，那不是圖片來源，不在本 Skill 處理。
+Darren 2026-10-29 覺得維基共享資源的照片太多，所以先找官方照片與免費圖庫，維基共享資源放到後面。環境省國立公園網站與很多自治體採用「政府標準利用規約」，照片旁沒有標示第三者提供的，註明出處就能用。只有照片看不夠的地方（步道、祭典、交通工具的實際樣子），另外找影片或官方 Instagram 貼文用嵌入補，見 [嵌入封包](references/embed-plan.md)。
 
 ## 一律不用
 

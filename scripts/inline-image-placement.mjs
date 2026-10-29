@@ -1,6 +1,7 @@
 // 文內照片插在正文哪裡、長什麼樣子。準備程式與 Sanity 上傳程式共用。
 
 export const INLINE_IMAGE_KEY_PREFIX = 'inline-image-'
+export const MEDIA_EMBED_KEY_PREFIX = 'media-embed-'
 
 export function inlineImageKey(slotId) {
   if (!/^[a-z0-9-]+$/.test(slotId)) throw new Error(`slotId 只能用小寫英數與連字號：${slotId}`)
@@ -19,9 +20,10 @@ function isHeading(block) {
  * 找出照片要接在哪個區塊後面。
  * placement.heading：照片所在那一節的 H2 或 H3 全文。
  * placement.afterBlocks：從標題往下數第幾個區塊之後（預設 1，就是標題下第一段之後）。
- * 已經插過的文內照片不算進區塊數，重跑時位置不變。
+ * 已經插過的文內照片與嵌入不算進區塊數，重跑時位置不變。
+ * skipPrefixes：不算進區塊數的 _key 前綴；嵌入用時只略過嵌入，照片照算（放在照片之後）。
  */
-export function findInsertionKey(body, placement) {
+export function findInsertionKey(body, placement, {skipPrefixes = [INLINE_IMAGE_KEY_PREFIX, MEDIA_EMBED_KEY_PREFIX]} = {}) {
   if (!Array.isArray(body)) throw new Error('文章正文不是陣列')
   const heading = placement?.heading
   if (typeof heading !== 'string' || heading.trim() === '') throw new Error('placement.heading 必須填標題全文')
@@ -38,7 +40,7 @@ export function findInsertionKey(body, placement) {
     index += 1
     const block = body[index]
     if (!block) throw new Error(`「${heading}」底下不到 ${afterBlocks} 個區塊`)
-    if (block._key?.startsWith(INLINE_IMAGE_KEY_PREFIX)) continue
+    if (skipPrefixes.some((prefix) => block._key?.startsWith(prefix))) continue
     if (isHeading(block)) throw new Error(`「${heading}」底下不到 ${afterBlocks} 個區塊就到下一個標題`)
     counted += 1
   }

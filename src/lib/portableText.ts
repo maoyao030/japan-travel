@@ -41,10 +41,23 @@ export type ArticleImage = {
   height?: number
 }
 
+export type MediaEmbed = {
+  _key?: string
+  _type: 'mediaEmbed'
+  platform?: 'youtube' | 'instagram'
+  url?: string
+  startSeconds?: number
+  title?: string
+  channelName?: string
+  publishedAt?: string
+  caption?: string
+}
+
 export type ArticleBodyBlock =
   | PortableTextBlock
   | ContentTable
   | ArticleImage
+  | MediaEmbed
   | {_key?: string; _type: string}
 
 export type ArticleHeading = {
@@ -150,6 +163,63 @@ function renderImage(image: ArticleImage) {
   return `<figure class="article-image"><img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.alt)}"${size} loading="lazy" decoding="async">${caption ? `<figcaption>${caption}</figcaption>` : ''}</figure>`
 }
 
+/** YouTube 網址取出 11 碼影片 ID；不是 YouTube 影片網址就回傳 null。 */
+export function youtubeVideoId(value?: string) {
+  if (!value) return null
+  try {
+    const url = new URL(value)
+    const host = url.hostname.replace(/^www\.|^m\./, '')
+    let id: string | null = null
+    if (host === 'youtube.com') {
+      id = url.pathname === '/watch' ? url.searchParams.get('v') : (url.pathname.match(/^\/(?:shorts|embed|live)\/([^/]+)/)?.[1] ?? null)
+    } else if (host === 'youtu.be') {
+      id = url.pathname.slice(1)
+    }
+    return id && /^[A-Za-z0-9_-]{11}$/.test(id) ? id : null
+  } catch {
+    return null
+  }
+}
+
+/** Instagram 貼文網址取出貼文類型與代碼；不是貼文網址就回傳 null。 */
+export function instagramPost(value?: string) {
+  if (!value) return null
+  try {
+    const url = new URL(value)
+    if (url.hostname.replace(/^www\./, '') !== 'instagram.com') return null
+    const match = url.pathname.match(/^\/(p|reel)\/([A-Za-z0-9_-]+)\/?$/)
+    return match ? {kind: match[1], code: match[2]} : null
+  } catch {
+    return null
+  }
+}
+
+// 嵌入只先放縮圖或按鈕，讀者點了才載入 YouTube 或 Instagram（ArticlePage 的小程式負責換成 iframe）。
+function renderEmbed(embed: MediaEmbed) {
+  if (!embed.caption || !embed.channelName || !embed.title) return ''
+  const year = /^\d{4}/.exec(embed.publishedAt ?? '')?.[0]
+  const yearText = year ? `（${year}）` : ''
+
+  if (embed.platform === 'youtube') {
+    const id = youtubeVideoId(embed.url)
+    if (!id) return ''
+    const start = Number.isInteger(embed.startSeconds) && (embed.startSeconds ?? 0) > 0 ? (embed.startSeconds as number) : 0
+    const src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0${start ? `&start=${start}` : ''}`
+    const watch = `https://www.youtube.com/watch?v=${id}${start ? `&t=${start}s` : ''}`
+    return `<figure class="article-embed article-embed-youtube"><div class="article-embed-frame"><button type="button" class="article-embed-play" data-embed-src="${escapeHtml(src)}" data-embed-title="${escapeHtml(embed.title)}"><img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="article-embed-icon" aria-hidden="true"></span><span class="visually-hidden">播放 YouTube 影片：${escapeHtml(embed.title)}</span></button></div><figcaption><span>${escapeHtml(embed.caption)}</span><small class="article-embed-credit">影片：<a href="${escapeHtml(watch)}" rel="noopener noreferrer">${escapeHtml(embed.channelName)}</a>${yearText}・實際資訊以本文為準</small></figcaption></figure>`
+  }
+
+  if (embed.platform === 'instagram') {
+    const post = instagramPost(embed.url)
+    if (!post) return ''
+    const permalink = `https://www.instagram.com/${post.kind}/${post.code}/`
+    const src = `${permalink}embed/captioned/`
+    return `<figure class="article-embed article-embed-instagram"><div class="article-embed-card"><p class="article-embed-card-title">Instagram 貼文・${escapeHtml(embed.channelName)}</p><button type="button" class="article-embed-load" data-embed-src="${escapeHtml(src)}" data-embed-title="${escapeHtml(embed.title)}">載入貼文</button><a href="${escapeHtml(permalink)}" rel="noopener noreferrer">在 Instagram 開啟</a></div><figcaption><span>${escapeHtml(embed.caption)}</span><small class="article-embed-credit">貼文：<a href="${escapeHtml(permalink)}" rel="noopener noreferrer">${escapeHtml(embed.channelName)}</a>${yearText}・實際資訊以本文為準</small></figcaption></figure>`
+  }
+
+  return ''
+}
+
 export function getArticleHeadings(blocks: ArticleBodyBlock[]): ArticleHeading[] {
   let headingNumber = 0
 
@@ -236,6 +306,12 @@ export function renderPortableText(blocks: ArticleBodyBlock[]) {
     if (block._type === 'image') {
       closeList()
       html += renderImage(block as ArticleImage)
+      continue
+    }
+
+    if (block._type === 'mediaEmbed') {
+      closeList()
+      html += renderEmbed(block as MediaEmbed)
       continue
     }
 

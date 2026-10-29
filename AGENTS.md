@@ -244,3 +244,9 @@
 - 上傳用 `npm run image:prepare:inline`（下載、縮成 webp）與 `studio` 的 `npm run publish:article-inline-images`（預覽、`--apply` 插入、`--remove --apply` 拿掉）。上傳前親自看每一張，畫面和替代文字對不上就改文字或拿掉。
 - 已上線的頁面分批補照片，由人工 session 做，每批做完照 Git 規則推 `main`。
 - 細節見 `content-automation/local-writer.md` 第 5 步與選圖 Skill `references/image-packet.md`。
+
+## 照片來源順序與影片、Instagram 嵌入（Darren 2026-10-29）
+
+- Darren 覺得維基共享資源的照片太多。照片改成先找觀光協會、自治體、環境省等條款允許轉載的官方照片，再找免費圖庫，最後才用維基共享資源（選圖 Skill `SKILL.md` 的來源順序）。
+- 網站的嵌入區塊做好了（Sanity `mediaEmbed`），本段取代上方「觀光協會照片與嵌入」「稚內群核准與研究、寫作規則」兩段裡「嵌入區塊還沒做」的說明。YouTube 影片與官方 Instagram 貼文用平台的嵌入功能放進文章，一篇最多 2 個；讀者點了才載入對方的播放器。
+- 紀錄寫在 `content-production/<id>/images/embed-plan.json`，上傳用 `studio` 的 `npm run publish:article-embeds`（預覽、`--apply`、`--remove --apply`），格式見選圖 Skill `references/embed-plan.md`。自動寫作每篇也找嵌入（`content-automation/local-writer.md` 第 5 步）。
