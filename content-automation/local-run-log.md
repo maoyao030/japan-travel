@@ -5,13 +5,13 @@
 ## 最新一輪
 
 - 台北時間：2026-10-29 13:45 開始，13:50 結束（排定工作自動執行，13:42 輪）
-- 文章：無（寫作**略過**：稚內群 24 頁已全部寫完；本流程只寫  稚內群）
-- 上傳：無。Sanity 45 篇都是 ，D1 45 篇都是 ；沒有已驗收但還沒上 Sanity 的文章
-- 補內連： 回傳空清單
-- 開始時 pull 是 Already up to date，合併 origin/main 帶進 b3c8805（日式用詞改台灣說法）等；確認  是 200
-- 備註：第一次  時 wrangler 失敗一次，隨即重試成功，判斷為暫時錯誤
+- 文章：無（寫作**略過**：稚內群 24 頁已全部寫完；本流程只寫 `travelGroups[0]` 稚內群）
+- 上傳：無。Sanity 45 篇都是 `published_indexable`，D1 45 篇都是 `published`；沒有已驗收但還沒上 Sanity 的文章
+- 補內連：`ops-links.mjs ready` 回傳空清單
+- 開始時 pull 是 Already up to date，合併 origin/main 帶進 b3c8805（日式用詞改台灣說法）等；確認 `/places/sounkyo/sights/` 是 200
+- 備註：第一次 `ops-article.mjs list` 時 wrangler 失敗一次，隨即重試成功，判斷為暫時錯誤
 - 用量：5 小時額度 30% → 30%；每週額度 31% → 31%
-- commit：本紀錄見 ；沒推 （沒有上線文章）
+- commit：本紀錄見 `git log`；沒推 `main`（沒有上線文章）
 - 下一輪預期文章：寫作仍會略過（稚內群已寫完）；要讓本機排定工作繼續有事做，需人工 session 決定是否把流程改成寫旭川群或下一群
 
 ## 停放
