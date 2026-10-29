@@ -213,8 +213,27 @@ const stripParentheses = (text) => {
 const ORIGINAL_LABEL = /日文|原文|畫面|按鈕|招牌上|站牌|上的名稱/
 const tableCells = (line) => line.replace(/^\|/, '').replace(/\|$/, '').split('|').map((cell) => cell.trim())
 
+// 日文漢字詞直接搬進中文、台灣讀者會看錯或覺得怪的詞（Darren 2026-10-29：「檢討」不是台灣用語）。
+// 只檢查括號、「」與資料來源以外的正文；放原名的括號照樣可以寫日文。
+export const JAPANESE_STYLE_WORDS = {
+  檢討: '評估、研議（台灣的「檢討」是反省錯誤）',
+  運休: '停駛、停航',
+  欠航: '停航、取消',
+  運賃: '車資、票價',
+  料金: '費用、票價',
+  割引: '折扣、優惠',
+  片道: '單程',
+  往復: '來回',
+  見學: '參觀',
+  混雜: '擁擠',
+  最寄: '最近的',
+  入場料: '門票',
+}
+const JAPANESE_STYLE_PATTERN = new RegExp(Object.keys(JAPANESE_STYLE_WORDS).join('|'), 'g')
+
 /** 正文、標題、表格、條列、延伸資料裡括號外的日文。資料來源、圖片與程式區塊不算。 */
 export function checkJapanese(markdown) {
+  const styleWords = []
   const terms = []
   const quoted = []
   let fenced = false
@@ -249,6 +268,7 @@ export function checkJapanese(markdown) {
       return ''
     })
     terms.push(...(text.match(JAPANESE_TERM) || []))
+    styleWords.push(...(text.match(JAPANESE_STYLE_PATTERN) || []))
   }
   const unique = [...new Set(terms)]
   const issues = []
@@ -258,10 +278,15 @@ export function checkJapanese(markdown) {
       `括號外有日文${terms.length}處，店名、旅館名、菜名、站名第一次寫「繁中譯名（日文原名）」，之後只寫中文，譯名照 content-planning/glossary.json：${unique.slice(0, 12).join('、')}`,
     )
   }
+  if (styleWords.length) {
+    issues.push(
+      `日式用詞${styleWords.length}處，改成台灣說法：${[...new Set(styleWords)].map((word) => `${word}→${JAPANESE_STYLE_WORDS[word]}`).join('；')}`,
+    )
+  }
   if (quoted.length > MAX_QUOTED_JAPANESE) {
     warnings.push(`「」裡的日文有${quoted.length}處，只留讀者要在畫面或招牌上認的字：${[...new Set(quoted)].slice(0, 8).join('')}`)
   }
-  return {issues, warnings, terms: unique, quoted}
+  return {issues, warnings, terms: unique, quoted, styleWords: [...new Set(styleWords)]}
 }
 
 export function checkVoice(markdown, {final = false} = {}) {
