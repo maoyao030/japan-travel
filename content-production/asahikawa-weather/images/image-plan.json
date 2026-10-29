@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-weather/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-weather/，不加入 Git、不上傳。 2026-10-29 文內照片（官方素材優先）：隆冬積雪一張來自上川総合振興局「VIEW OF KAMIKAWA」（CC BY，相簿寫明個人企業都可免費自由使用，請事後告知用途），初雪一張來自旭川市ホームページフォトライブラリー。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "deep-winter-snow": "deep-winter-01",
+    "first-snow": "first-snow-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -17,15 +19,32 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "天氣頁封面，讓讀者一眼看出旭川冬天整座城市被雪蓋住的樣子，呼應正文「12月到3月平均氣溫在冰點以下、雪積得深」。",
-      "mustShow": ["旭川市區或旭川境內的冬季雪景，檔案頁能證明拍攝地點是旭川"],
-      "mustNotShow": ["可辨識的人物臉部", "旭川冬まつり會場或雪像（避免誤以為是某年祭典實況）", "旭川車站、平和通買物公園、旭橋、旭山動物園當主體（別頁已用）", "旅館或店家招牌當主體", "其他城市的雪景冒充旭川", "AI 生成或合成畫面"],
+      "mustShow": [
+        "旭川市區或旭川境內的冬季雪景，檔案頁能證明拍攝地點是旭川"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "旭川冬まつり會場或雪像（避免誤以為是某年祭典實況）",
+        "旭川車站、平和通買物公園、旭橋、旭山動物園當主體（別頁已用）",
+        "旅館或店家招牌當主體",
+        "其他城市的雪景冒充旭川",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Asahikawa-city_in_winter._%E6%97%AD%E5%B7%9D_%E5%86%AC_%2825014245151%29.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.5},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 T.Kiya 2016 年 2 月 18 日從飛機上空拍的旭川市區：棋盤狀的街道與屋頂全被雪蓋住，一眼就看得出旭川冬天的積雪量，正好對應正文 2 月最深積雪平均 84 公分的說明。檔案頁說明為「雪の旭川市空撮」，分類 Snow in Asahikawa 與 Cityscapes in Asahikawa。原圖 4608×3456（4:3），裁成 16:9 只切掉上下少量街區，主體不變。限制：空拍看不出特定地標，讀者靠標題與圖說知道是旭川；2016 年拍攝，市區街廓沒有大改；畫面有輕微移軸感的模糊。cover-02 是 DrTerraKhan 2013 年 12 月 30 日拍的ツインハープ橋（忠別川上的斜張橋）雪景，地標明確但畫面灰、主體是橋梁而不是天氣。cover-03 是同一作者同一天從ツインハープ橋看的忠別川雪景，冬天氛圍好但看不出是旭川。",
       "sourcing": {
@@ -136,6 +155,164 @@
             "risk": "low",
             "notes": "沒有人物、招牌或建築；遠處有電塔。"
           },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "deep-winter-snow",
+      "need": "season-contrast",
+      "section": "旭川冬天溫度與積雪",
+      "purpose": "讓讀者看到旭川隆冬的樣子：河岸積雪、樹枝積雪，但晴天時天空很藍。",
+      "mustShow": [
+        "旭川市區1月的積雪"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他城市冒充旭川",
+        "秋天或初雪的畫面"
+      ],
+      "kind": "inline",
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭川冬天溫度與積雪",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/fs/7/0/2/6/1/1/6/_/%E6%97%AD%E6%A9%8B%E3%83%BB%E5%86%AC2.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "deep-winter-01 是上川総合振興局相簿「旭橋・冬２」，2008 年 1 月拍：粗樹枝上積了厚厚一層雪，河岸雪原一片白，下方是旭橋。放在第一段（白天也不回暖）之後。旭川市照片庫的「冬景色」「冬囲い」都還有紅葉，是初冬，不適合隆冬這一節。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "查過上川総合振興局 VIEW OF KAMIKAWA 旭川市的冬季照片（旭橋・冬1～3、常盤公園の樹氷、石狩川・冬の川霧）與旭川市ホームページフォトライブラリー「中心市街地」冬季照片。鑽石塵沒有合格照片，那一節改放影片。"
+      },
+      "candidates": [
+        {
+          "sourceType": "official-material",
+          "assetType": "photo",
+          "provider": "北海道上川総合振興局「かみかわの風景～VIEW OF KAMIKAWA～」",
+          "creatorName": "北海道上川総合振興局",
+          "termsName": "VIEW OF KAMIKAWA 利用說明＋上川総合振興局サイトポリシー（CC BY）",
+          "termsUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view_of_kamikawa_top.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "網站採 CC BY（サイトポリシー第3章），要標示出處：北海道上川総合振興局「VIEW OF KAMIKAWA」。",
+          "applicationRequired": false,
+          "termsNotes": "相簿首頁寫明「画像の利用は、個人、企業に関わらず全て無料です」「ホームページ、ブログ…など使い方は自由です」，並請使用者事後用問合表單告知圖片編號、用途等（事後告知，不是事前申請）。サイトポリシー（https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html）：特に記載の無い限りすべてのページを CC BY とする，第三者權利的照片除外；照片頁沒有第三者提供或攝影的標示。",
+          "candidateId": "deep-winter-01",
+          "sourcePageUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/structure/132007.html",
+          "sourceTitle": "旭橋・冬２",
+          "sourceDescription": "かみかわの風景「構造物」；撮影場所 旭川市；撮影年月日 2008年1月。",
+          "takenAt": "2008-01",
+          "width": 3648,
+          "height": 2736,
+          "whyItFits": "相簿標明 2008 年 1 月在旭川市拍的旭橋；畫面是積著厚雪的樹枝與一片雪白的石狩川河岸，能看出旭川 1 月的積雪。",
+          "altDraft": "1月的旭川，樹枝上積著厚雪，河岸一片雪白，遠處是旭橋，天空晴朗",
+          "captionDraft": "1月的旭橋河岸，晴天也是一片積雪（2008 年）。",
+          "creditDraft": "照片：北海道上川総合振興局「VIEW OF KAMIKAWA」／CC BY",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "公共橋梁",
+            "risk": "low",
+            "notes": "2008 年拍攝，但河岸與橋的樣子沒有改變；積雪量依年份不同，圖說只寫 1 月。"
+          },
+          "matchType": "exact",
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "first-snow",
+      "need": "season-contrast",
+      "section": "旭川春秋的氣溫與初雪",
+      "purpose": "讓讀者看到旭川10月下旬到11月初雪時的樣子：樹葉還沒掉光，雪已經積在樹上與地上。",
+      "mustShow": [
+        "旭川市區初雪，樹上還留著秋天的葉子"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "隆冬的深雪畫面"
+      ],
+      "kind": "inline",
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭川春秋的氣溫與初雪",
+        "afterBlocks": 2
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4150/4155/d058612_d/img/001.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "first-snow-01 是旭川市照片庫「冬景色」：七條綠道兩旁的樹還留著紅褐色葉子，枝上已積了一層雪，左邊路標寫著「西川徹郎文學館 30m」，可以確認是旭川市中心。放在第二段（入秋以後冷得很快、初雪）之後。另一張 d058613 也是初雪紅葉，但畫面是車道，選有地標的這張。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "查過旭川市ホームページフォトライブラリー「中心市街地」的冬景色、冬囲い、ナナカマドの木。"
+      },
+      "candidates": [
+        {
+          "sourceType": "official-material",
+          "assetType": "photo",
+          "provider": "旭川市ホームページフォトライブラリー",
+          "creatorName": "旭川市",
+          "termsName": "旭川市ホームページフォトライブラリー利用規約（2025年9月3日更新）",
+          "termsUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4451/d055106.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "規約第3條第2項：申請與著作權者標示都不需要。本站仍自願標示出處「旭川市フォトライブラリー」。",
+          "applicationRequired": false,
+          "termsNotes": "規約第1條：個人與商用都可免費使用，但用途限於傳播旭川魅力、提升知名度與形象、振興觀光；本站介紹旭川旅遊符合。第4條第3項：不損及照片獨特性的加工（裁切、畫質修正）不在禁止範圍；第4條第4、5項禁止做成寫真集、明信片等商品或轉售散布，本站只作文章插圖。著作權屬旭川市。照片頁沒有「写真提供」「撮影」等第三者標示。",
+          "candidateId": "first-snow-01",
+          "sourcePageUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4150/4155/d058612.html",
+          "sourceTitle": "冬景色（ページID 058612）",
+          "sourceDescription": "旭川市フォトライブラリー「自然・風景＞中心市街地」。",
+          "width": 1500,
+          "height": 1003,
+          "whyItFits": "照片庫歸在旭川中心市街地；路標寫「西川徹郎文學館 30m」，確定是旭川市區。樹上紅褐色的葉子還在，枝頭與步道已經積雪，是初雪時的景象。",
+          "altDraft": "旭川市區的綠道下了初雪，樹上還留著紅褐色的葉子，枝頭和步道都積了一層雪",
+          "captionDraft": "旭川市區的初雪，樹葉還沒掉光就下雪了。",
+          "creditDraft": "照片：旭川市フォトライブラリー",
+          "commercialReview": {
+            "people": "遠處一個很小的人影，無法辨識",
+            "logos": "左邊有公共路標與號誌",
+            "artwork": "綠道上有石雕",
+            "property": "公共綠道",
+            "risk": "low",
+            "notes": "沒有店家招牌。"
+          },
+          "matchType": "exact",
           "checks": {
             "fullImageInspected": true,
             "officialSourcePage": true,

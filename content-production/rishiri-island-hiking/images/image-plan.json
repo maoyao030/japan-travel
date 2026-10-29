@@ -7,9 +7,12 @@
   "articleSourceCheckedAt": "2026-10-25",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island-hiking/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island-hiking/，不加入 Git、不上傳。 2026-10-29 加上文內照片：鴛泊路線、攜帶式廁所的購買與使用、利尻山的登山季節，原圖下載到 .tmp/image-selection/rishiri-island-hiking/inline/，不加入 Git。這次先查官方素材與圖庫，沒有合格的才用維基共享資源。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "chokanzan-view": "chokanzan-01",
+    "toilet-booth": "toilet-01",
+    "rishiri-poppy": "poppy-01"
   },
   "selectedAt": "2026-10-25",
   "slots": [
@@ -17,15 +20,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼看出這篇講的是爬利尻山：山上的登山步道與利尻山的山頂一帶。",
-      "mustShow": ["利尻山的登山步道或山頂一帶（看得出是在山上走的路）"],
-      "mustNotShow": ["可辨識的人物臉部", "旅館、店家招牌或商標當主體", "其他山冒充利尻山", "AI 生成或合成畫面", "與交通頁封面相同的照片（鴛泊港からの利尻山.jpg）"],
+      "mustShow": [
+        "利尻山的登山步道或山頂一帶（看得出是在山上走的路）"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "旅館、店家招牌或商標當主體",
+        "其他山冒充利尻山",
+        "AI 生成或合成畫面",
+        "與交通頁封面相同的照片（鴛泊港からの利尻山.jpg）"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Mt._Rishiri_summit_%2852357470229%29.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.55},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 2022 年 7 月 25 日上午在利尻山山頂一帶拍的（檔案頁說明「利尻富士の山頂」，分類 Summit of Mount Rishiri，座標 45.1803, 141.2415）：一條窄窄的登山步道沿著綠色山稜往上，左下是紅褐色的崩塌坡，右邊是利尻山山頂附近的尖岩，背景是一整片雲海。畫面同時有「步道」與「利尻山山頂一帶」，正好對應這篇的登山主題，也呼應正文說的山頂附近路窄、坡陡。原圖 7978×4555（約 1.75:1），裁 16:9 只切掉上下少許天空與前景，主體不受影響。沒有可辨識人物。cover-02 是 Koda6029 2016 年 9 月 23 日從 8 合目長官山拍的利尻山山頂（鴛泊路線上的視角），山形完整、有秋天的紅葉，可當備選；但畫面沒有步道，登山的感覺不如 cover-01，原圖是 4:3，裁切比較多。Raita Futo 同一天拍的 Mt. Rishiri hiking (52357583050).jpg 有步道木階梯，但登山者正面朝鏡頭，不選。",
       "sourcing": {
@@ -100,6 +119,232 @@
             "property": "自然景觀",
             "risk": "low",
             "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "chokanzan-view",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "鴛泊路線",
+      "purpose": "讓讀者看到鴛泊路線出了森林線之後的樣子，以及 8 合目長官山的位置。",
+      "mustShow": [
+        "鴛泊路線上的長官山",
+        "森林線以上的山稜"
+      ],
+      "mustNotShow": [
+        "沓形路線冒充鴛泊路線",
+        "可辨識的人物臉部",
+        "與封面重複的山頂照片"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "鴛泊路線",
+        "afterBlocks": 3
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Mt._Rishiri_hiking_%2852357159841%29.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "chokanzan-01 的說明寫明是從鴛泊路線看長官山，2022 年 7 月拍，晴天、山腳是一整片雲海，長官山的綠色山稜與步道清楚，接在講「8 合目長官山休息」那段之後。官方素材與 Pixabay 都沒有登山路線照片；PAKUTASO 有利尻山登山照，但不在本站允許的圖庫裡，沒有用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：環境省利尻禮文佐呂別國立公園頁（env.go.jp/park/rishiri/，政府標準利用規約）首頁輪播圖只有 450×270、英文版 405×270，舊的照片庫頁已經 404，沒有 1200 px 以上的照片；利尻富士町官網與りしぷら沒有寫轉載條件（りしぷら標示 All Rights Reserved），利尻町官網查核時回 503；北海道各振興局的觀光照片庫清單（pref.hokkaido.lg.jp/ss/tkk/koho/kouhou_24kankou.html）沒有宗谷。再查 Pixabay「rishiri」（8 張）；Unsplash、Pexels 用工具讀取被擋，網頁搜尋也沒有利尻島的單張頁。 維基共享資源查 Category:Mountaineering in Mount Rishiri、Mount Rishiri。"
+      },
+      "candidates": [
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseCheckedAt": "2026-10-29",
+          "candidateId": "chokanzan-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Mt._Rishiri_hiking_(52357159841).jpg",
+          "creatorName": "Raita Futo",
+          "sourceTitle": "File:Mt. Rishiri hiking (52357159841).jpg",
+          "sourceDescription": "利尻富士の鴛泊コースから長官山を見る（Flickr 轉存，FlickreviewR 已確認授權）",
+          "takenAt": "2022-07-25",
+          "width": 6936,
+          "height": 4624,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "matchType": "exact",
+          "whyItFits": "檔案說明寫明是從鴛泊路線看長官山；畫面是長滿矮樹與草的綠色山稜，山稜上有一條步道，山腳下是雲海，前景是偃松。",
+          "altDraft": "綠色的長官山山稜，一條步道沿著山稜往上，山腳下是一整片雲海，前景是低矮的偃松",
+          "captionDraft": "從鴛泊路線往下看 8 合目長官山，這一段已經出了森林線（2022 年）。",
+          "creditDraft": "照片：Raita Futo／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "山腰有一棟紅色屋頂的小屋，很小",
+            "risk": "low",
+            "notes": "沒有人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "toilet-booth",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "攜帶式廁所的購買與使用",
+      "purpose": "讓登山者認得出山上的攜帶式廁所專用隔間長什麼樣子。",
+      "mustShow": [
+        "攜帶式廁所專用隔間（携帯トイレ専用ブース）"
+      ],
+      "mustNotShow": [
+        "一般廁所冒充",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "攜帶式廁所的購買與使用",
+        "afterBlocks": 2
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Rishiri-toilet.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "toilet-01 是鴛泊路線 6.5 合目的隔間，牆上看板寫「携帯トイレ専用ブース」「ここは鴛泊コース 6.5合目 標高790m」，和文章的隔間位置表對得上。2010 年拍的，隔間外觀可能已換過，寫進 matchLimits；只有這一張。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：環境省利尻禮文佐呂別國立公園頁（env.go.jp/park/rishiri/，政府標準利用規約）首頁輪播圖只有 450×270、英文版 405×270，舊的照片庫頁已經 404，沒有 1200 px 以上的照片；利尻富士町官網與りしぷら沒有寫轉載條件（りしぷら標示 All Rights Reserved），利尻町官網查核時回 503；北海道各振興局的觀光照片庫清單（pref.hokkaido.lg.jp/ss/tkk/koho/kouhou_24kankou.html）沒有宗谷。再查 Pixabay「rishiri」（8 張）；Unsplash、Pexels 用工具讀取被擋，網頁搜尋也沒有利尻島的單張頁。 維基共享資源 Category:Mountaineering in Mount Rishiri 有隔間外觀與內部兩張，選外觀。"
+      },
+      "candidates": [
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseCheckedAt": "2026-10-29",
+          "candidateId": "toilet-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rishiri-toilet.jpg",
+          "creatorName": "しんかわな",
+          "sourceTitle": "File:Rishiri-toilet.jpg",
+          "sourceDescription": "A booth for portable latrine. Mt. Rishiri（作者自己上傳，GFDL／CC BY 3.0 雙授權）",
+          "takenAt": "2010-09-13",
+          "width": 1600,
+          "height": 1200,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "matchType": "exact",
+          "matchLimits": "2010 年拍的，隔間外觀與看板可能已經更新。",
+          "whyItFits": "畫面是木造的小隔間，牆上看板寫「携帯トイレ専用ブース」與「鴛泊コース 6.5合目 標高790m」，就是文章表格列的 6.5 合目隔間。",
+          "altDraft": "登山步道旁的木造小隔間，牆上掛著寫「携帯トイレ専用ブース」與 6.5 合目的看板，旁邊是矮樹與碎石",
+          "captionDraft": "鴛泊路線 6.5 合目的攜帶式廁所專用隔間（2010 年）。",
+          "creditDraft": "照片：しんかわな／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "公共設施看板",
+            "artwork": "none",
+            "property": "登山步道的公共設施",
+            "risk": "low",
+            "notes": "沒有人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "rishiri-poppy",
+      "kind": "inline",
+      "need": "season-contrast",
+      "section": "利尻山的登山季節",
+      "purpose": "讓讀者知道 7 月上旬到中旬 9 合目附近開的利尻雛罌粟長什麼樣子。",
+      "mustShow": [
+        "利尻雛罌粟（リシリヒナゲシ）的花"
+      ],
+      "mustNotShow": [
+        "其他罌粟或園藝品種冒充",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "利尻山的登山季節",
+        "afterBlocks": 2
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Papaver_fauriei_%27-200214%27_%28Fedde%29_Fedde_ex_Miyabe_%26_Tatew.%2C_Trans._Sapporo_Nat._Hist._Soc._14%284%29_258_%281936%29_%2850133253922%29.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "poppy-01 是植物攝影者 sunoochi（Motohiro Sunouchi）2020 年 7 月 19 日在利尻島拍的利尻雛罌粟，兩朵淡黃色的花清楚；同系列其他橫式多是花心特寫，看不出整朵花。背景是閃光燈打出的黑色，看不到生長環境，所以圖說只說花，不說在哪個合目拍的。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：環境省利尻禮文佐呂別國立公園頁（env.go.jp/park/rishiri/，政府標準利用規約）首頁輪播圖只有 450×270、英文版 405×270，舊的照片庫頁已經 404，沒有 1200 px 以上的照片；利尻富士町官網與りしぷら沒有寫轉載條件（りしぷら標示 All Rights Reserved），利尻町官網查核時回 503；北海道各振興局的觀光照片庫清單（pref.hokkaido.lg.jp/ss/tkk/koho/kouhou_24kankou.html）沒有宗谷。再查 Pixabay「rishiri」（8 張）；Unsplash、Pexels 用工具讀取被擋，網頁搜尋也沒有利尻島的單張頁。 維基共享資源搜尋「Papaver fauriei」有十幾張 2020-07-19 在利尻島拍的照片。"
+      },
+      "candidates": [
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseCheckedAt": "2026-10-29",
+          "candidateId": "poppy-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Papaver_fauriei_%27-200214%27_(Fedde)_Fedde_ex_Miyabe_%26_Tatew.,_Trans._Sapporo_Nat._Hist._Soc._14(4)_258_(1936)_(50133253922).jpg",
+          "creatorName": "sunoochi",
+          "sourceTitle": "File:Papaver fauriei '-200214' (Fedde) Fedde ex Miyabe & Tatew., Trans. Sapporo Nat. Hist. Soc. 14(4) 258 (1936) (50133253922).jpg",
+          "sourceDescription": "[Rishiri Is., Hokkaido, Japan / 北海道利尻島] Japanese Name: リシリヒナゲシ, 利尻雛芥子（Flickr 轉存，FlickreviewR 已確認授權）",
+          "takenAt": "2020-07-19",
+          "width": 8256,
+          "height": 5504,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "matchType": "exact",
+          "matchLimits": "黑色背景是閃光燈造成的，看不到生長的碎石地；圖說不寫拍攝的合目。",
+          "whyItFits": "檔案說明寫明是在北海道利尻島拍的利尻雛罌粟，7 月中旬拍，正是文章寫的花期；畫面是兩朵淡黃色四瓣花與綠色花心。",
+          "altDraft": "兩朵淡黃色的四瓣小花，中間是綠色的花心與黃色雄蕊，背景是黑色",
+          "captionDraft": "利尻雛罌粟，7 月上旬到中旬開花（2020 年 7 月攝於利尻島）。",
+          "creditDraft": "照片：sunoochi／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "植物",
+            "risk": "low",
+            "notes": "沒有人物或招牌。"
           },
           "checks": {
             "fullImageInspected": true,

@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-26",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rishiri-island/，不加入 Git、不上傳。 2026-10-29 加上文內照片：北海道利尻島旅遊值得去嗎？、跳島順序與沓形港的營業季節，原圖下載到 .tmp/image-selection/rishiri-island/inline/，不加入 Git。這次先查官方素材與圖庫，沒有合格的才用維基共享資源。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "rishiri-coast-view": "coast-01",
+    "kutsugata-terminal": "kutsugata-01"
   },
   "selectedAt": "2026-10-26",
   "slots": [
@@ -17,15 +19,32 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "地點主頁的封面，讓讀者一眼認出利尻島：海上一座圓錐形的利尻山，整座島浮在海面，呼應開頭「島的正中央是利尻山、也被叫做利尻富士」與夏季最適合去的主軸。",
-      "mustShow": ["整座利尻島或利尻山（看得出是海上的島）", "海"],
-      "mustNotShow": ["可辨識的人物臉部", "其他山或島嶼冒充利尻山", "AI 生成或合成畫面", "暗示特定日期的天氣或航班實況", "本站其他頁已用的封面（Mt_Rishiri.jpg、姫沼からの利尻山.jpg、鴛泊港からの利尻山.jpg、130726_Oshidomari_Port_in_Rishiri_Island_Hokkaido_Japan08n.jpg、Mt._Rishiri_summit_(52357470229).jpg、Rishiri_046_30092006.JPG、Raita Futo 的禮文島照片）"],
+      "mustShow": [
+        "整座利尻島或利尻山（看得出是海上的島）",
+        "海"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他山或島嶼冒充利尻山",
+        "AI 生成或合成畫面",
+        "暗示特定日期的天氣或航班實況",
+        "本站其他頁已用的封面（Mt_Rishiri.jpg、姫沼からの利尻山.jpg、鴛泊港からの利尻山.jpg、130726_Oshidomari_Port_in_Rishiri_Island_Hokkaido_Japan08n.jpg、Mt._Rishiri_summit_(52357470229).jpg、Rishiri_046_30092006.JPG、Raita Futo 的禮文島照片）"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Rishiri_Island_20140814.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.6},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.6
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 Suicasmo 2014 年 8 月 14 日從禮文島拍的利尻島（檔案頁說明「Rishiri Island」，分類 Rishiri Island、Rebun Island）：藍天下整座利尻島浮在海上，利尻山頂圍著白雲，前景只有一小角禮文島的草坡。一眼就是「海上的利尻富士」，又是 8 月夏季，符合正文說的 6 到 9 月最適合去；沒有人物、招牌或建物。原圖 3872×2592（3:2），裁 16:9 只切掉上方部分天空與下方部分海面，島與山頂完整保留。cover-02 是 Emmanuel Eragne 2016 年 8 月 20 日傍晚從禮文島拍的利尻山剪影，前景有海上礁岩，構圖漂亮，但畫面偏暗、看不清島上地形，列為備選。另外看過 Raita Futo 2022 年從禮文島步道看利尻島（Mount_Rishiri_(52357474234).jpg 與 panorama，前景步道占大半、島很小）、Vickerman625 2009 年從禮文島看利尻島（島被雲層壓住、山頂模糊）、Koda6029 富士野園地からの利尻山（前景有醒目的人物插畫紀念牌）、663highland 鴛泊港傍晚（同系列已被其他頁使用、畫面偏暗）、Douglas P Perkins 長官山（前景有路標，屬登山題材），都不選。",
       "sourcing": {
@@ -100,6 +119,159 @@
             "property": "natural landscape",
             "risk": "low",
             "notes": "只有山、海、雲與礁岩，沒有人物、招牌或建物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "rishiri-coast-view",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "北海道利尻島旅遊值得去嗎？",
+      "purpose": "讓還在考慮要不要去的讀者看到利尻島的樣子：海岸的熔岩礁石，後面就是整座利尻山。",
+      "mustShow": [
+        "利尻山（利尻富士）",
+        "利尻島的海岸"
+      ],
+      "mustNotShow": [
+        "禮文島或稚內冒充利尻島",
+        "可辨識的人物臉部",
+        "店家或旅館招牌當主體",
+        "與封面重複的照片"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "北海道利尻島旅遊值得去嗎？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://cdn.pixabay.com/photo/2017/05/30/10/55/it-2356575_1280.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "coast-01 是 Pixabay 上傳者 mac02quackey 同一天上傳的利尻島系列（另一張 Otatomari 沼已用在景點頁），照片頁說明寫明是從利尻島仙法志御崎公園一帶的海岸望利尻山。晴天，前景是黑色熔岩礁石與海面，中景是海邊聚落，後方是山頂帶雲的利尻山，正好接在「想登百名山、想在產地吃海膽」那段之後。維基共享資源同類照片很多，但這次 Darren 希望少用維基，有圖庫照片就用圖庫。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：環境省利尻禮文佐呂別國立公園頁（env.go.jp/park/rishiri/，政府標準利用規約）首頁輪播圖只有 450×270、英文版 405×270，舊的照片庫頁已經 404，沒有 1200 px 以上的照片；利尻富士町官網與りしぷら沒有寫轉載條件（りしぷら標示 All Rights Reserved），利尻町官網查核時回 503；北海道各振興局的觀光照片庫清單（pref.hokkaido.lg.jp/ss/tkk/koho/kouhou_24kankou.html）沒有宗谷。再查 Pixabay「rishiri」（8 張）；Unsplash、Pexels 用工具讀取被擋，網頁搜尋也沒有利尻島的單張頁。 Pixabay 的 it-2356575 合格。"
+      },
+      "candidates": [
+        {
+          "sourceType": "stock-photo",
+          "provider": "Pixabay",
+          "assetType": "photo",
+          "licenseName": "Pixabay Content License",
+          "licenseUrl": "https://pixabay.com/service/license-summary/",
+          "licenseCheckedAt": "2026-10-29",
+          "candidateId": "coast-01",
+          "sourcePageUrl": "https://pixabay.com/photos/it-article-is-this-mt-natural-sea-2356575/",
+          "creatorName": "mac02quackey",
+          "sourceTitle": "It Article Is This Mt",
+          "sourceDescription": "Coastal view of Mount Rishiri from Senhoshi Misaki Park on Rishiri Island.（照片頁說明；同一上傳者同日上傳的利尻島系列）",
+          "takenAt": "2017-05-30",
+          "width": 1280,
+          "height": 960,
+          "matchType": "exact",
+          "matchLimits": "照片頁沒有拍攝日期，takenAt 是 Pixabay 上傳日；拍攝地點只寫到仙法志御崎公園一帶，圖說只寫「利尻島南岸」，不指名哪個點。",
+          "whyItFits": "利尻山獨特的尖峰清楚，前景是利尻島南岸常見的熔岩礁石，讀者一看就知道島的樣子：海岸、聚落與整座山。",
+          "altDraft": "前景是黑色的熔岩礁石與深藍色海面，海邊有一排房子，後方是山頂帶著雲的利尻山，天空晴朗",
+          "captionDraft": "從利尻島南岸的海邊望利尻山。",
+          "creditDraft": "照片：mac02quackey／Pixabay",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "遠處海邊民家很小，看不出是哪一棟",
+            "risk": "low",
+            "notes": "沒有人物、招牌；自然景觀為主。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kutsugata-terminal",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "跳島順序與沓形港的營業季節",
+      "purpose": "讓排沓形港進出的讀者認得出沓形渡輪站的建築。",
+      "mustShow": [
+        "沓形港渡輪站的建築外觀"
+      ],
+      "mustNotShow": [
+        "鴛泊港渡輪站冒充沓形",
+        "可辨識的人物臉部",
+        "店家招牌當主體"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "跳島順序與沓形港的營業季節",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Kutsugata_ferry_terminal.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "kutsugata-01 是陸側看沓形港渡輪站，牆上「沓形港フェリーターミナル」字樣看得到，右後方是利尻山，下船走出站就是這個方向。官方素材與 Pixabay 都沒有沓形渡輪站，只能用維基共享資源；同分類另一張 Feelease Soya 2014 年在沓形港的船照片，主體是船不是站，沒有選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：環境省利尻禮文佐呂別國立公園頁（env.go.jp/park/rishiri/，政府標準利用規約）首頁輪播圖只有 450×270、英文版 405×270，舊的照片庫頁已經 404，沒有 1200 px 以上的照片；利尻富士町官網與りしぷら沒有寫轉載條件（りしぷら標示 All Rights Reserved），利尻町官網查核時回 503；北海道各振興局的觀光照片庫清單（pref.hokkaido.lg.jp/ss/tkk/koho/kouhou_24kankou.html）沒有宗谷。再查 Pixabay「rishiri」（8 張）；Unsplash、Pexels 用工具讀取被擋，網頁搜尋也沒有利尻島的單張頁。 Pixabay 沒有沓形港；改查維基共享資源 Category:Port of Kutsugata。"
+      },
+      "candidates": [
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseCheckedAt": "2026-10-29",
+          "candidateId": "kutsugata-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kutsugata_ferry_terminal.jpg",
+          "creatorName": "ブルーノ・プラス",
+          "sourceTitle": "File:Kutsugata ferry terminal.jpg",
+          "sourceDescription": "沓形港フェリーターミナル（利尻郡利尻町）（作者自己上傳，分類 Port of Kutsugata）",
+          "takenAt": "2019-07",
+          "width": 3840,
+          "height": 2160,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "matchType": "exact",
+          "whyItFits": "檔案說明寫明是沓形港渡輪站；畫面是白色的平房建築，牆上有「沓形港フェリーターミナル」字樣，前面是停車場，右後方是利尻山。",
+          "altDraft": "白灰色的沓形港渡輪站建築，牆上寫著站名，前面是空曠的停車場，右後方是利尻山",
+          "captionDraft": "沓形港渡輪站，夏天往禮文島香深的船從這裡開（2019 年）。",
+          "creditDraft": "照片：ブルーノ・プラス／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "設施名稱「沓形港フェリーターミナル」，屬公共設施",
+            "artwork": "none",
+            "property": "公共渡輪站建築外觀",
+            "risk": "low",
+            "notes": "沒有人物；遠處港邊建物很小。"
           },
           "checks": {
             "fullImageInspected": true,

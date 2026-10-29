@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake/，不加入 Git、不上傳。 2026-10-29 文內照片：旭岳噴氣孔（上川總合振興局官方相簿）、天人峽柱狀節理（維基共享資源，官方相簿只有直式小圖）兩張，各接在該節第一段之後；紅葉段改放影片嵌入（embed-plan.json），不重複放紅葉照片。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "volcano-fumarole": "volcano-01",
+    "tenninkyo-columns": "tenninkyo-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -99,6 +101,162 @@
             "property": "natural landscape",
             "risk": "low",
             "notes": "只有山與池。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "volcano-fumarole",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "旭岳是什麼樣的地方",
+      "purpose": "讓讀者看到旭岳是冒著噴氣的活火山，山腰的噴氣孔就在纜車上方的散策路一帶。",
+      "mustShow": [
+        "旭岳山頂與冒白煙的噴氣孔"
+      ],
+      "mustNotShow": [
+        "和封面相同的姿見池倒映旭岳角度",
+        "可辨識的人物臉部",
+        "其他火山冒充旭岳"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭岳是什麼樣的地方",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/fs/7/1/2/6/4/1/7/_/%E6%97%AD%E5%B2%B3%E3%81%A8%E5%99%B4%E7%85%99.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "volcano-01 是上川總合振興局職員 2007 年 11 月在東川町拍的「旭岳と噴煙」：前景是碎石坡上兩處噴氣孔冒出大團白煙，孔邊有黃色硫磺，後方是紅褐色的旭岳山頂與藍天。正文第一段說旭岳是由氣象廳監測的活火山，第二段講沿路冒白煙的地獄谷，這張讓讀者一眼看懂。封面是從姿見池看旭岳，這張是噴氣孔近景，不重複。原圖 3648×2736（4:3），只縮小不裁切。噴氣量每年不同，圖說標拍攝年月。另看過同相簿的「姿見の池１」（留給登山頁）、「旭岳と松」（同為旭岳與噴氣，偃松佔前景一半）、「ロープウェイと旭岳」（右側有一棟沒有招牌、無法確認用途的建築，可能是住宿設施，不用）。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這輪照「官方素材優先、維基共享資源最後」：環境省大雪山國立公園頁（env.go.jp/park/daisetsu/、nationalparks/list/daisetsuzan/spot/）的景點照片最大只有 890×500，低於 1200 px，不用；東川町與ひがしかわ観光協會查不到允許轉載的照片素材庫；北海道上川總合振興局「VIEW OF KAMIKAWA」相簿允許個人與企業免費自由使用、站方政策為 CC BY，照片由職員拍攝。"
+      },
+      "candidates": [
+        {
+          "candidateId": "volcano-01",
+          "sourceType": "official-material",
+          "provider": "北海道上川総合振興局「北海道の風景～VIEW OF KAMIKAWA～」",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view/133650.html",
+          "sourceTitle": "旭岳と噴煙",
+          "sourceDescription": "撮影場所：東川町；撮影年月日：2007年11月（VIEW OF KAMIKAWA「大雪山」分類）",
+          "takenAt": "2007-11",
+          "width": 3648,
+          "height": 2736,
+          "termsUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view_of_kamikawa_top.html",
+          "termsCheckedAt": "2026-10-29",
+          "termsNotes": "相簿首頁寫明「画像の利用は、個人、企業に関わらず全て無料です。ホームページ、ブログ、はがき、カレンダーなど使い方は自由です」，照片由振興局職員拍攝；同站サイトポリシー（https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html）寫明本站內容原則上為 CC BY（出典表示）。照片頁沒有「写真提供」等第三者標示。利用後用詢問表單回報使用情形是「お手数ですが」的請託，不是事前申請。",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "サイトポリシーにより CC BY：出典（北海道上川総合振興局）を表示。相簿頁另請利用者以詢問表單回報使用的畫像與用途（任意）。",
+          "applicationRequired": false,
+          "licenseName": "CC BY（北海道サイトポリシー）",
+          "licenseUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "官方相簿標題寫明是旭岳與噴煙，畫面是旭岳山頂與山腰噴氣孔，和正文說的活火山與冒白煙的地獄谷一致。",
+          "altDraft": "旭岳山腰的噴氣孔冒出大團白煙，孔邊的石頭帶著黃色硫磺，後方是紅褐色的旭岳山頂",
+          "captionDraft": "旭岳山腰的噴氣孔，後方是山頂（2007 年 11 月）。",
+          "creditDraft": "照片：北海道上川總合振興局（VIEW OF KAMIKAWA）／CC BY",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "tenninkyo-columns",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "旭岳順路去天人峽與羽衣瀑布",
+      "purpose": "讓讀者看到天人峽招牌的柱狀節理岩壁，判斷值不值得開車繞過去。",
+      "mustShow": [
+        "天人峽的柱狀節理岩壁"
+      ],
+      "mustNotShow": [
+        "旅館或溫泉設施",
+        "可辨識的人物臉部",
+        "層雲峽的柱狀節理冒充天人峽"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭岳順路去天人峽與羽衣瀑布",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/%E5%A4%A9%E4%BA%BA%E5%B3%A1_-_panoramio_%281%29.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "tenninkyo-01 是 alonfloc 2008 年 6 月 17 日在天人峽拍的岩壁：灰白色的柱狀節理一根根直立，頂上和腳下都是新綠的樹林。座標 43.6213, 142.7803 在天人峽溫泉一帶，和正文第一段「招牌是約 3 萬年前大噴發留下的柱狀節理」對得上。原圖 2048×1536（4:3）。官方來源先查過：上川總合振興局相簿的「羽衣の滝」只有 428×642 直式；環境省國立公園頁的「天人峡・羽衣ノ滝」「柱状節理」只有 890×500。維基共享資源的羽衣瀑布照片全是直式（Hagoromo Falls in Taisetsuzan.jpg 1068×1600、Hagoromo fall.JPG 1200×1600 等），同作者另一張「天人峡 - panoramio.jpg」下方有停車場與車輛，不用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這輪照「官方素材優先、維基共享資源最後」：環境省大雪山國立公園頁（env.go.jp/park/daisetsu/、nationalparks/list/daisetsuzan/spot/）的景點照片最大只有 890×500，低於 1200 px，不用；東川町與ひがしかわ観光協會查不到允許轉載的照片素材庫；北海道上川總合振興局「VIEW OF KAMIKAWA」相簿允許個人與企業免費自由使用、站方政策為 CC BY，照片由職員拍攝。 天人峽在官方來源找不到合格橫式大圖，才查維基共享資源 Category:Hagoromo Falls 與關鍵字「天人峡」「Tenninkyo」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "tenninkyo-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E4%BA%BA%E5%B3%A1_-_panoramio_(1).jpg",
+          "creatorName": "alonfloc",
+          "sourceTitle": "File:天人峡 - panoramio (1).jpg",
+          "sourceDescription": "天人峡（Panoramio 匯入，座標 43.621312, 142.780252，分類 Higashikawa, Hokkaido）",
+          "takenAt": "2008-06-17",
+          "width": 2048,
+          "height": 1536,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "檔案頁標題是天人峡、座標在天人峽溫泉一帶，畫面是天人峽招牌的柱狀節理岩壁。",
+          "altDraft": "天人峽灰白色的柱狀節理岩壁一根根直立，上下都是新綠的樹林",
+          "captionDraft": "天人峽的柱狀節理岩壁（2008 年 6 月）。",
+          "creditDraft": "照片：alonfloc／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
           },
           "checks": {
             "fullImageInspected": true,

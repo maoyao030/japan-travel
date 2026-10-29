@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-weather/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-weather/，不加入 Git、不上傳。 2026-10-29 文內照片第 4 批（先查官方素材：銀泉台用北海道上川總合振興局照片庫 VIEW OF KAMIKAWA 的官方照片；黑岳山坡紅葉在官方與免費圖庫找不到合格的，才用維基共享資源）：kurodake-autumn、ginsendai 共 2 張（銀泉台改用上川總合振興局照片庫的官方照片），放在「層雲峽楓葉什麼時候去？、紅葉期的車輛管制」，接在各節第一段之後（銀泉台接在該節最後）。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "kurodake-autumn": "foliage-01",
+    "ginsendai": "ginsendai-official-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -17,15 +19,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "用層雲峽峽谷的秋季景色帶出這篇講的天氣、氣溫與紅葉季，讓讀者一眼看出是層雲峽的季節頁。",
-      "mustShow": ["認得出層雲峽的峽谷地形（柱狀節理岩壁、石狩川）或瀑布，並看得出季節"],
-      "mustNotShow": ["可辨識的人物臉部", "其他峽谷冒充層雲峽", "冰瀑祭等祭典畫面", "旅館或店家招牌當主體", "AI 生成或合成畫面"],
+      "mustShow": [
+        "認得出層雲峽的峽谷地形（柱狀節理岩壁、石狩川）或瀑布，並看得出季節"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他峽谷冒充層雲峽",
+        "冰瀑祭等祭典畫面",
+        "旅館或店家招牌當主體",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/%E7%A7%8B%E5%87%BD%EF%BC%88Autumn_in_valley%EF%BC%89_-_panoramio.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.57},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.57
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 pakku 拍的層雲峽大函：左邊是橘灰色的柱狀節理岩壁，中間是石狩川，右岸岩壁上方的樹林開始轉黃轉紅，天空晴朗，一看就是層雲峽的秋天。文章主軸是各月氣溫與紅葉季，這張同時有峽谷地形與秋色，比單純楓葉特寫更認得出地點。原圖 2288×1712，下緣中間有一個背對鏡頭的人頭（看不出臉），裁 16:9 時焦點 y 放 0.57，裁掉最下方約 90 px，人頭不會出現在封面。限制：大函在溫泉街東南方直線約 6 公里的國道旁，不是溫泉街本身；檔案頁的拍攝日期 2004-02-07 是相機時鐘，和畫面的秋景不符，實際拍攝時間不明。cover-02 是同一位作者拍的「秋の層雲」，黃葉山坡上方有層雲峽的岩峰，季節感更強但地形不如大函好認，當備選。",
       "sourcing": {
@@ -100,6 +118,195 @@
             "property": "natural landscape",
             "risk": "low",
             "notes": "下緣有電線，沒有人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kurodake-autumn",
+      "kind": "inline",
+      "need": "season-contrast",
+      "section": "層雲峽楓葉什麼時候去？",
+      "purpose": "讓讀者看到紅葉季黑岳山坡從上往下變色的樣子。",
+      "mustShow": [
+        "秋天黑岳的山坡紅葉"
+      ],
+      "mustNotShow": [
+        "旭岳或其他地方冒充黑岳",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "層雲峽楓葉什麼時候去？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Kurodake%2C_Daisetsuzan_Volcanic_Group_-_Kurodake6052.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "foliage-01 是 2025 年 10 月 5 日從黑岳纜車一帶拍的山坡：前景整片黃色、橘色的闊葉樹，夾著紅色的楓樹與白色樹幹，後方山坡針葉樹與紅葉混在一起，右邊遠處是層雲峽峽谷的岩壁。原圖 5444×3629，CC0。和 sounkyo 主頁選的 autumn-01 是同一位作者同一天，但構圖不同（這張沒有溫泉街）。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：層雲峡観光協会 sounkyo.net 只有個資政策頁、沒有照片轉載條款，不能用；上川町官網這次連不上（DNS 查不到），無法確認條款；環境省大雪山國立公園頁的照片只有 450 px 寬、相簿頁已 404；北海道上川總合振興局照片庫 VIEW OF KAMIKAWA（CC BY）的銀泉台照片已用在 ginsendai；黑岳纜車沿線的秋景在照片庫裡沒有。再查 Pexels「sounkyo」「kurodake」「sounkyo ice」、Pixabay「sounkyo」「daisetsuzan」、Unsplash「sounkyo」：Pexels 唯一標層雲峽的一張其實是上川平原遠望大雪山的雪原，畫面對不上，其他都不是這裡。最後才用維基共享資源 Category:Sōunkyō、Category:Sounkyo Onsen、Category:Daisetsuzan Sounkyo - Kurodake Ropeway、Category:Mount Kuro (Hokkaido)、Category:Views from Mount Kuro (Hokkaido) 與關鍵字「層雲峡」「銀泉台」「黒岳 紅葉」「黒岳ロープウェイ」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "foliage-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kurodake,_Daisetsuzan_Volcanic_Group_-_Kurodake6052.jpg",
+          "creatorName": "lumoplank",
+          "sourceTitle": "File:Kurodake, Daisetsuzan Volcanic Group - Kurodake6052.jpg",
+          "sourceDescription": "Autumn foliage covering the forested slopes of Kurodake in the Daisetsuzan Volcanic Group.",
+          "takenAt": "2025-10-05",
+          "width": 5444,
+          "height": 3629,
+          "licenseName": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是黑岳山坡的紅葉，2025 年 10 月 5 日拍；正文說 2025 年 10 月 1 日紅葉已經下到標高 800 到 900 公尺，畫面正是纜車沿線山腰轉色的樣子。",
+          "altDraft": "秋天的黑岳山坡，前景整片黃色與橘色的樹林夾著紅色楓樹，後方山坡與遠處峽谷岩壁也轉了色",
+          "captionDraft": "10 月初黑岳纜車沿線的山坡紅葉（2025 年）。",
+          "creditDraft": "照片：lumoplank／Wikimedia Commons／CC0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "ginsendai",
+      "kind": "inline",
+      "need": "season-contrast",
+      "section": "紅葉期的車輛管制",
+      "purpose": "讓讀者看到要預約接駁或管制期間開車上去的銀泉台，紅葉季山坡是什麼樣子。",
+      "mustShow": [
+        "赤岳銀泉台一帶的紅葉山坡"
+      ],
+      "mustNotShow": [
+        "黑岳或旭岳冒充銀泉台",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "紅葉期的車輛管制",
+        "afterBlocks": 2
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/fs/7/0/9/4/9/6/5/_/%E5%A4%A7%E9%9B%AA%E5%B1%B1%E8%B5%A4%E5%B2%B3%E9%8A%80%E6%B3%89%E5%8F%B0%E3%81%AE%E7%B4%85%E8%91%89.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "ginsendai-official-01 是上川總合振興局照片庫的「大雪山赤岳銀泉台の紅葉」：晴天藍天下，左邊整面山坡是鮮紅的灌木紅葉夾著綠色偃松，往右下接到黃綠色的樹林，右後方是山頂已經積雪的山。原圖 1379×1080，寬度剛好過 1200，只縮不裁。照片頁沒寫拍攝日期，圖說不寫年份。放在這一節最後「要看銀泉台的紅葉，排9月中旬最穩」之後。原本的維基共享資源候選（Koda6029「日本一紅葉の早い銀泉台」，陰天偏灰）改列備選；同照片庫的「銀泉台紅葉」1296×972 也合格，但紅葉沒有這張鮮明。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：北海道上川總合振興局的照片庫「北海道の風景～VIEW OF KAMIKAWA～」（職員拍攝、商業網站可免費使用、CC BY）有合格照片，直接採用。層雲峡観光協会 sounkyo.net 沒有轉載條款、上川町官網連不上、環境省頁面照片太小，都不能用。同照片庫另有「銀泉台紅葉」（view/133310）可當備選。"
+      },
+      "candidates": [
+        {
+          "candidateId": "ginsendai-official-01",
+          "sourceType": "official-material",
+          "provider": "北海道上川総合振興局「北海道の風景～VIEW OF KAMIKAWA～」",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view/133296.html",
+          "sourceTitle": "大雪山赤岳銀泉台の紅葉",
+          "sourceDescription": "撮影場所：上川町；撮影年月日：未記載",
+          "width": 1379,
+          "height": 1080,
+          "termsUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view_of_kamikawa_top.html",
+          "termsCheckedAt": "2026-10-29",
+          "termsNotes": "相簿首頁寫明「画像の利用は、個人、企業に関わらず全て無料です。ホームページ、ブログ、はがき、カレンダーなど使い方は自由です」，照片由上川總合振興局職員拍攝；同站サイトポリシー（https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html）寫明「特に記載の無い限り、すべてのページをCreative Commonsの表示CC-BYとします」。照片頁沒有「写真提供」等第三者標示。利用後用詢問表單回報使用情形是「お手数ですが」的請託，不是事前申請。",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "サイトポリシーにより CC BY：出典（北海道上川総合振興局）を表示。相簿頁另請利用者以詢問表單回報使用的畫像編號與用途（任意）。",
+          "applicationRequired": false,
+          "licenseName": "CC BY（北海道サイトポリシー）",
+          "licenseUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "官方照片庫寫明是大雪山赤岳銀泉台的紅葉、拍攝地上川町；畫面是銀泉台一帶整面轉紅的山坡，正是本節說要預約接駁或管制期間開車上去看的紅葉。",
+          "altDraft": "赤岳銀泉台的紅葉，晴天下整面山坡是鮮紅的灌木夾著綠色偃松，右後方是山頂積雪的山",
+          "captionDraft": "赤岳銀泉台的山坡紅葉。",
+          "creditDraft": "照片：北海道上川總合振興局（VIEW OF KAMIKAWA）／CC BY",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "ginsendai-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E6%9C%AC%E4%B8%80%E7%B4%85%E8%91%89%E3%81%AE%E6%97%A9%E3%81%84%E9%8A%80%E6%B3%89%E5%8F%B0.jpg",
+          "creatorName": "Koda6029",
+          "sourceTitle": "File:日本一紅葉の早い銀泉台.jpg",
+          "sourceDescription": "日本一紅葉の早い銀泉台（分類 Mount Aka (Daisetsu)、September 2016 in Hokkaido）",
+          "takenAt": "2016-09-18",
+          "width": 4896,
+          "height": 3672,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明「日本一紅葉の早い銀泉台」，分類赤岳；9 月 18 日拍，正好落在正文說的銀泉台 9 月中旬最佳觀賞期。",
+          "altDraft": "赤岳銀泉台的山坡紅葉，整片紅色與橘色的灌木夾著綠色偃松與白樺，稜線被白霧遮住",
+          "captionDraft": "9 月中旬的赤岳銀泉台紅葉（2016 年）。",
+          "creditDraft": "照片：Koda6029／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "陰天偏灰，但主體清楚。"
           },
           "checks": {
             "fullImageInspected": true,

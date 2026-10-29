@@ -7,9 +7,12 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa/，不加入 Git、不上傳。 2026-10-29 文內照片（這輪官方素材優先）：冬祭雪滑梯、美食市集新子燒、旭橋與大雪山三張都來自旭川市ホームページフォトライブラリー（利用規約允許商用、裁切，不需申請與標示）；影片嵌入另見 images/embed-plan.json。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "winter-festival-slide": "winter-slide-01",
+    "food-marche": "marche-01",
+    "daisetsuzan-from-city": "daisetsu-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -17,15 +20,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "旭川地點主頁的封面，用旭川市中心的街景俯瞰，讓讀者一眼看出是旭川市區、遠方是山。",
-      "mustShow": ["旭川市街，認得出是旭川市區"],
-      "mustNotShow": ["可辨識的人物臉部", "其他城市冒充旭川", "旅館或店家招牌當主體", "AI 生成或合成畫面", "已用於旭川其他頁的封面（旭橋與大雪山、旭川車站、買物公園、新子燒、冬天市街、旭山動物園）"],
+      "mustShow": [
+        "旭川市街，認得出是旭川市區"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他城市冒充旭川",
+        "旅館或店家招牌當主體",
+        "AI 生成或合成畫面",
+        "已用於旭川其他頁的封面（旭橋與大雪山、旭川車站、買物公園、新子燒、冬天市街、旭山動物園）"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Asahikawa_cityscape_seen_from_Asahikawa_Grand_Hotel_-_Sep_4%2C_2010.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.62},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.62
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 Yuichi Kosio 2010 年 9 月 4 日從旭川グランドホテル（現 OMO7 旭川）往下拍的旭川市中心：前景右邊是旭川市役所、中央是旭川市民文化會館，左邊是筆直的大街與行道樹，遠方是一路平坦的市區與地平線上的山。檔案頁說明寫明地點與建築，分類 Cityscapes in Asahikawa。原圖 3648×2736（4:3），裁 16:9 焦點 y 0.62，裁掉上方大半天空，保留市街與遠山。沒有可辨識的人物或店家招牌當主體。限制：2010 年拍攝，市區建築可能有變動（左下有工地）；夏天的畫面，不代表冬天。cover-02 是 MIKI Yoshihito 2025 年從河床仰拍的旭橋，畫質高，但旭橋已是景點頁封面的主體，當備選。cover-03 是くろふね 2012 年拍的平和通買物公園，住宿頁已用買物公園，且畫面有多個店家招牌，不選。",
       "sourcing": {
@@ -100,6 +119,243 @@
             "risk": "low",
             "notes": "橋上有遠處行人，不可辨識。"
           },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "winter-festival-slide",
+      "need": "decide-visit",
+      "section": "旭川冬祭",
+      "purpose": "讓讀者看到旭橋會場的長雪滑梯，以及會場就在石狩川旭橋旁的河灘上。",
+      "mustShow": [
+        "旭川冬祭旭橋會場的雪滑梯",
+        "背景認得出旭橋"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "贊助商招牌當主體",
+        "札幌雪祭或其他祭典冒充"
+      ],
+      "kind": "inline",
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭川冬祭",
+        "afterBlocks": 2
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4100/4108/d066037_d/fil/original.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "winter-slide-01 從雪滑梯頂端往下拍，滑道一路延伸到河灘會場，背景是綠色鋼拱的旭橋與石狩川，正好對應正文「全長100公尺的雪滑梯」與「主會場在旭橋河畔」。滑梯上的人都背對鏡頭，遠處人影很小。放在第二段（講雪滑梯與煙火）之後。旭川市照片庫冬祭類別還有夜間大雪像投影、煙火、攤販等 77 張，投影與大雪像照片多數拍到贊助商招牌，或有正面人臉，不選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這輪先查官方素材：旭川市ホームページフォトライブラリー「旭川冬まつり」77 張全部看過縮圖；上川総合振興局 VIEW OF KAMIKAWA 的冬祭照片只有 448 px，不夠寬。旭川観光コンベンション協会網站沒有照片素材頁。"
+      },
+      "candidates": [
+        {
+          "sourceType": "official-material",
+          "assetType": "photo",
+          "provider": "旭川市ホームページフォトライブラリー",
+          "creatorName": "旭川市",
+          "termsName": "旭川市ホームページフォトライブラリー利用規約（2025年9月3日更新）",
+          "termsUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4451/d055106.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "規約第3條第2項：申請與著作權者標示都不需要。本站仍自願標示出處「旭川市フォトライブラリー」。",
+          "applicationRequired": false,
+          "termsNotes": "規約第1條：個人與商用都可免費使用，但用途限於傳播旭川魅力、提升知名度與形象、振興觀光；本站介紹旭川旅遊符合。第4條第3項：不損及照片獨特性的加工（裁切、畫質修正）不在禁止範圍；第4條第4、5項禁止做成寫真集、明信片等商品或轉售散布，本站只作文章插圖。著作權屬旭川市。照片頁沒有「写真提供」「撮影」等第三者標示。",
+          "candidateId": "winter-slide-01",
+          "sourcePageUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4100/4108/d066037.html",
+          "sourceTitle": "旭川冬まつり（ページID 066037）",
+          "sourceDescription": "旭川市フォトライブラリー「イベント＞旭川冬まつり」，原尺寸 JPG。",
+          "width": 6016,
+          "height": 4000,
+          "whyItFits": "照片庫分類為旭川冬まつり；畫面是雪牆圍起的長滑梯，前方河灘上有會場帳篷與巴士，背景是石狩川與旭橋的綠色鋼拱，可以確認是旭橋河畔主會場。",
+          "altDraft": "旭川冬祭旭橋會場的長雪滑梯，滑道往下延伸到河灘，背景是石狩川上的旭橋",
+          "captionDraft": "旭川冬祭旭橋會場的雪滑梯，背後就是旭橋。",
+          "creditDraft": "照片：旭川市フォトライブラリー",
+          "commercialReview": {
+            "people": "滑梯上兩三人背對鏡頭，遠處人影很小，無法辨識",
+            "logos": "遠處帳篷有很小的布條，看不清字",
+            "artwork": "右側遠處有小雪像",
+            "property": "公共河灘會場與橋",
+            "risk": "low",
+            "notes": "不會讓人誤以為是本站實地拍攝或特定年份的活動實況；圖說不寫年份。"
+          },
+          "matchType": "exact",
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "food-marche",
+      "need": "decide-visit",
+      "section": "秋天的旭川美食市集",
+      "purpose": "讓讀者看到美食市集攤位現烤的在地料理，判斷值不值得排進9月的行程。",
+      "mustShow": [
+        "旭川美食市集的攤位料理"
+      ],
+      "mustNotShow": [
+        "店家招牌當主體",
+        "可辨識的人物臉部"
+      ],
+      "kind": "inline",
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "秋天的旭川美食市集",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4100/4106/d055648_d/img/001.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "marche-01 是 2015 年旭川美食市集攤位在網架上烤新子燒（整隻半雞），只拍到夾子與雞肉，看不到店名與人臉。照片庫的會場全景（駅前広場、買物公園、常磐公園會場）只有 750 px 寬，不夠用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "查過旭川市ホームページフォトライブラリー「北の恵み 食べマルシェ」10 張，只有這張寬度超過 1200 px；上川総合振興局 VIEW OF KAMIKAWA「食べマルシェ1～3」都在 640 px 以下。"
+      },
+      "candidates": [
+        {
+          "sourceType": "official-material",
+          "assetType": "photo",
+          "provider": "旭川市ホームページフォトライブラリー",
+          "creatorName": "旭川市",
+          "termsName": "旭川市ホームページフォトライブラリー利用規約（2025年9月3日更新）",
+          "termsUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4451/d055106.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "規約第3條第2項：申請與著作權者標示都不需要。本站仍自願標示出處「旭川市フォトライブラリー」。",
+          "applicationRequired": false,
+          "termsNotes": "規約第1條：個人與商用都可免費使用，但用途限於傳播旭川魅力、提升知名度與形象、振興觀光；本站介紹旭川旅遊符合。第4條第3項：不損及照片獨特性的加工（裁切、畫質修正）不在禁止範圍；第4條第4、5項禁止做成寫真集、明信片等商品或轉售散布，本站只作文章插圖。著作權屬旭川市。照片頁沒有「写真提供」「撮影」等第三者標示。",
+          "candidateId": "marche-01",
+          "sourcePageUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4100/4106/d055648.html",
+          "sourceTitle": "北の恵み 食べマルシェ2015 新子焼き（ページID 055648）",
+          "sourceDescription": "旭川市フォトライブラリー「イベント＞北の恵み食べマルシェ」。",
+          "takenAt": "2015-09",
+          "width": 1500,
+          "height": 997,
+          "whyItFits": "照片頁標題寫明是 2015 年食べマルシェ的新子燒；畫面是攤位網架上一排烤到金黃的半隻雞，夾子正在翻面，正好是美食市集吃得到的旭川在地料理。",
+          "altDraft": "美食市集攤位的網架上排滿烤得金黃的半隻雞新子燒，夾子正在翻面",
+          "captionDraft": "旭川美食市集攤位現烤的新子燒（2015 年）。",
+          "creditDraft": "照片：旭川市フォトライブラリー",
+          "commercialReview": {
+            "people": "none（只有夾子）",
+            "logos": "none",
+            "artwork": "none",
+            "property": "none",
+            "risk": "low",
+            "notes": "看不出是哪一家店，不當成店家照片。"
+          },
+          "matchType": "exact",
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "daisetsuzan-from-city",
+      "need": "decide-visit",
+      "section": "從旭川去旭岳、層雲峽、東川與稚內",
+      "purpose": "讓讀者看到從旭川市區就望得見大雪山連峰，旭岳在市區東邊不遠。",
+      "mustShow": [
+        "從旭川市區看得到的大雪山連峰"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他城市冒充旭川"
+      ],
+      "kind": "inline",
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "從旭川去旭岳、層雲峽、東川與稚內",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4150/4152/d053623_d/fil/53623.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "daisetsu-01 是旭川市照片庫「旭橋」：清晨的旭橋與石狩川河岸，背後是被朝陽染紅、覆雪的大雪山連峰。放在 Ideyu 號時刻表前的第一段之後。景點頁已用維基共享資源的另一張旭橋與大雪山，這張是旭川市照片庫的另一張照片，不是重複使用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "查過旭川市ホームページフォトライブラリー「川・橋」「嵐山からの展望」與上川総合振興局「旭岳と旭川市」「旭橋と大雪山」。上川那張「旭岳と旭川市」右下有大型商店建築，改選這張。"
+      },
+      "candidates": [
+        {
+          "sourceType": "official-material",
+          "assetType": "photo",
+          "provider": "旭川市ホームページフォトライブラリー",
+          "creatorName": "旭川市",
+          "termsName": "旭川市ホームページフォトライブラリー利用規約（2025年9月3日更新）",
+          "termsUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4451/d055106.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "規約第3條第2項：申請與著作權者標示都不需要。本站仍自願標示出處「旭川市フォトライブラリー」。",
+          "applicationRequired": false,
+          "termsNotes": "規約第1條：個人與商用都可免費使用，但用途限於傳播旭川魅力、提升知名度與形象、振興觀光；本站介紹旭川旅遊符合。第4條第3項：不損及照片獨特性的加工（裁切、畫質修正）不在禁止範圍；第4條第4、5項禁止做成寫真集、明信片等商品或轉售散布，本站只作文章插圖。著作權屬旭川市。照片頁沒有「写真提供」「撮影」等第三者標示。",
+          "candidateId": "daisetsu-01",
+          "sourcePageUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4150/4152/d053623.html",
+          "sourceTitle": "旭橋（ページID 053623）",
+          "sourceDescription": "旭川市フォトライブラリー「自然・風景＞川・橋」，原尺寸 JPG。",
+          "width": 3072,
+          "height": 2048,
+          "whyItFits": "照片庫標題為旭橋；畫面前景是石狩川河岸公園與旭橋的綠色鋼拱，遠方是覆雪的大雪山連峰，看得出從旭川市區就望得見往旭岳方向的山。",
+          "altDraft": "清晨的旭橋橫跨石狩川，背後是被朝陽染成粉紅色、覆著雪的大雪山連峰",
+          "captionDraft": "從旭橋望向大雪山連峰，旭岳就在這片山裡。",
+          "creditDraft": "照片：旭川市フォトライブラリー",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "公共橋梁與河岸公園，左側遠處有大樓",
+            "risk": "low",
+            "notes": "河岸有薄雪，不代表冬天積雪深度；圖說不提季節。"
+          },
+          "matchType": "exact",
           "checks": {
             "fullImageInspected": true,
             "officialSourcePage": true,

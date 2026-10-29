@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo/，不加入 Git、不上傳。 2026-10-29 文內照片第 4 批（先查官方素材與免費圖庫，都沒有合格的，才用維基共享資源）：gorge-cliffs、autumn-from-kurodake 共 2 張，放在「層雲峽是什麼樣的地方、幾月去層雲峽，紅葉、冰瀑祭與雪季」，接在各節第一段之後（銀泉台接在該節最後）。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "gorge-cliffs": "gorge-01",
+    "autumn-from-kurodake": "autumn-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -17,15 +19,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "地點主頁的封面，讓讀者一眼認出是層雲峽：溫泉街入口的峽谷岩壁與紅葉。",
-      "mustShow": ["層雲峽溫泉街一帶的峽谷岩壁或山景，認得出是層雲峽"],
-      "mustNotShow": ["可辨識的人物臉部", "其他地方冒充層雲峽", "旅館或店家招牌當主體", "AI 生成或合成畫面", "已用於層雲峽其他頁的封面"],
+      "mustShow": [
+        "層雲峽溫泉街一帶的峽谷岩壁或山景，認得出是層雲峽"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他地方冒充層雲峽",
+        "旅館或店家招牌當主體",
+        "AI 生成或合成畫面",
+        "已用於層雲峽其他頁的封面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/%E5%B1%A4%E9%9B%B2%E5%B3%A1%E6%B8%A9%E6%B3%89_-_panoramio.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.55},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 Toshihiro Matsui 2013 年 10 月 19 日拍的層雲峽溫泉入口：左邊是染成黃橘色的紅葉山坡與岩壁，山溝裡有初雪，右後方是另一座山，右前方是大雪山國立公園「層雲峡温泉 SOUNKYO SPA」的木製地名標示。標示是公共地名牌，不是店家招牌，又讓讀者一眼認出地點。原圖 5472×3648（3:2），裁 16:9 焦點 y 0.55，保留整個山坡與地名牌，只裁掉上方部分天空與最下方的石座。畫面有電線、紅綠燈與路燈，沒有人物。限制：紅葉季的畫面，不代表其他季節。cover-02 是 lienyuan lee 2003 年拍的溫泉街廣場與後方岩峰，霧天、畫面有旅館招牌，當備選。",
       "sourcing": {
@@ -99,6 +117,157 @@
             "property": "buildings",
             "risk": "low",
             "notes": "旅館招牌很小，不是主體。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "gorge-cliffs",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "層雲峽是什麼樣的地方",
+      "purpose": "讓讀者看到層雲峽「柱狀節理岩壁一路並排的斷崖峽谷」長什麼樣子。",
+      "mustShow": [
+        "層雲峽的柱狀節理岩壁"
+      ],
+      "mustNotShow": [
+        "其他峽谷冒充層雲峽",
+        "可辨識的人物臉部",
+        "旅館或店家招牌"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "層雲峽是什麼樣的地方",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/%E5%B1%A4%E9%9B%B2%E5%B3%BD_Sounkyo_-_panoramio.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "gorge-01 從谷底仰拍層雲峽：左右兩側是灰白色直立紋路的柱狀節理岩壁，中間一根尖塔狀岩峰，前景是綠色闊葉樹，晴天藍天。檔案頁標題「層雲峽 Sounkyo」、分類 Sōunkyō。原圖 2558×1794，橫式。限制：2003 年拍，但岩壁地形不會變。同分類的 Night sky over Sounkyo Canyon 是夜景、畫面暗，不用；Japan Hokkaido, Sounkyo gorge 01/02 是 1985 年直式掃描，不用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：層雲峡観光協会 sounkyo.net 只有個資政策頁、沒有照片轉載條款，不能用；上川町官網這次連不上（DNS 查不到），無法確認條款；環境省大雪山國立公園頁的照片只有 450 px 寬、相簿頁已 404；北海道上川總合振興局照片庫 VIEW OF KAMIKAWA（CC BY）查過層雲峡、秋の層雲峡（都只有 640 px）與層雲峡温泉街（旅館招牌是主體），沒有合格的。再查 Pexels「sounkyo」「kurodake」「sounkyo ice」、Pixabay「sounkyo」「daisetsuzan」、Unsplash「sounkyo」：Pexels 唯一標層雲峽的一張其實是上川平原遠望大雪山的雪原，畫面對不上，其他都不是這裡。最後才用維基共享資源 Category:Sōunkyō、Category:Sounkyo Onsen、Category:Daisetsuzan Sounkyo - Kurodake Ropeway、Category:Mount Kuro (Hokkaido)、Category:Views from Mount Kuro (Hokkaido) 與關鍵字「層雲峡」「銀泉台」「黒岳 紅葉」「黒岳ロープウェイ」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "gorge-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E5%B1%A4%E9%9B%B2%E5%B3%BD_Sounkyo_-_panoramio.jpg",
+          "creatorName": "lienyuan lee",
+          "sourceTitle": "File:層雲峽 Sounkyo - panoramio.jpg",
+          "sourceDescription": "層雲峽 Sounkyo（Panoramio 轉存，分類 Sōunkyō）",
+          "takenAt": "2003-09-14",
+          "width": 2558,
+          "height": 1794,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "matchLimits": "2003 年拍攝；岩壁地形不變，畫面裡沒有建物。",
+          "whyItFits": "檔案頁標題與分類都是層雲峽；畫面是峽谷兩側直立的柱狀節理岩壁與尖塔狀岩峰，正是正文說的斷崖峽谷。",
+          "altDraft": "層雲峽的柱狀節理岩壁，灰白色直立岩壁與尖塔狀岩峰立在綠色樹林上方，背景是藍天",
+          "captionDraft": "層雲峽兩側的柱狀節理岩壁。",
+          "creditDraft": "照片：lienyuan lee／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "autumn-from-kurodake",
+      "kind": "inline",
+      "need": "season-contrast",
+      "section": "幾月去層雲峽，紅葉、冰瀑祭與雪季",
+      "purpose": "讓讀者看到紅葉季從黑岳往下看層雲峽溫泉街與峽谷的樣子，對應「9月山上、10月溫泉街」的紅葉順序。",
+      "mustShow": [
+        "秋天的層雲峽峽谷與溫泉街"
+      ],
+      "mustNotShow": [
+        "旭岳或其他地方冒充層雲峽",
+        "可辨識的人物臉部",
+        "旅館招牌當主體"
+      ],
+      "targetAspectRatio": "16:10",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "幾月去層雲峽，紅葉、冰瀑祭與雪季",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Kurodake%2C_Daisetsuzan_Volcanic_Group_-_Kurodake6063.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "autumn-01 是 2025 年 10 月 5 日從黑岳往下拍：谷底是層雲峽溫泉街的建物群，兩側山坡是黃褐與紅色的紅葉，右上岩壁是柱狀節理，遠方是大雪山的稜線，下方看得到纜車的索道。原圖 5106×3128，CC0。旅館建物只是遠景小點，招牌看不見。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：層雲峡観光協会 sounkyo.net 只有個資政策頁、沒有照片轉載條款，不能用；上川町官網這次連不上（DNS 查不到），無法確認條款；環境省大雪山國立公園頁的照片只有 450 px 寬、相簿頁已 404；北海道上川總合振興局照片庫 VIEW OF KAMIKAWA（CC BY）查過層雲峡、秋の層雲峡（都只有 640 px）與層雲峡温泉街（旅館招牌是主體），沒有合格的。再查 Pexels「sounkyo」「kurodake」「sounkyo ice」、Pixabay「sounkyo」「daisetsuzan」、Unsplash「sounkyo」：Pexels 唯一標層雲峽的一張其實是上川平原遠望大雪山的雪原，畫面對不上，其他都不是這裡。最後才用維基共享資源 Category:Sōunkyō、Category:Sounkyo Onsen、Category:Daisetsuzan Sounkyo - Kurodake Ropeway、Category:Mount Kuro (Hokkaido)、Category:Views from Mount Kuro (Hokkaido) 與關鍵字「層雲峡」「銀泉台」「黒岳 紅葉」「黒岳ロープウェイ」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "autumn-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kurodake,_Daisetsuzan_Volcanic_Group_-_Kurodake6063.jpg",
+          "creatorName": "lumoplank",
+          "sourceTitle": "File:Kurodake, Daisetsuzan Volcanic Group - Kurodake6063.jpg",
+          "sourceDescription": "View from Kurodake over a mountain valley settlement surrounded by autumn foliage, with the Daisetsuzan volcanic peaks in the background.",
+          "takenAt": "2025-10-05",
+          "width": 5106,
+          "height": 3128,
+          "licenseName": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是從黑岳往下看紅葉包圍的山谷聚落，畫面裡谷底的溫泉街、柱狀節理岩壁與纜車索道都對得上層雲峽；2025 年 10 月 5 日拍，正是正文說的紅葉往山下走的時期。",
+          "altDraft": "從黑岳往下看秋天的層雲峽，谷底是溫泉街的建物，兩側山坡轉成黃色與紅色，遠方是大雪山的山稜",
+          "captionDraft": "10 月初從黑岳往下看層雲峽溫泉街，山坡已經轉色（2025 年）。",
+          "creditDraft": "照片：lumoplank／Wikimedia Commons／CC0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "溫泉街建物只是遠景小點，看不到招牌",
+            "risk": "low",
+            "notes": "不會讓人誤以為是特定旅館的實景。"
           },
           "checks": {
             "fullImageInspected": true,

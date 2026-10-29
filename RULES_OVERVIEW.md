@@ -73,14 +73,14 @@
 
 ## 7. 圖片與嵌入
 
-- **封面**：只用實拍照片，依序找維基共享資源、免費圖庫、條款允許轉載的觀光協會照片。
+- **封面與文內照片**：只用實拍照片，依序找觀光協會、自治體、環境省等條款允許轉載的官方照片、免費圖庫，最後才用維基共享資源（Darren 2026-10-29 覺得維基的照片太多）。
 - **不用的授權**：「非商業使用」（NC）與「禁止改作」（ND）一律不用。
 - **AI 圖**：要 Darren 親眼確認，而且要明確標示。
 - **文內照片**：只放重點景點與交通據點（渡輪站、機場、車站），就是有自己一節、讀者到現場要認得出來的地方；一篇最多 4 張、一節最多 1 張，接在那一節第一段後面。自動寫作每篇都會選（2026-10-28 起），找不到合格實拍就不放，不會因此停放。
-- **Instagram、YouTube**：只用官方帳號的嵌入功能，不下載。
+- **影片與 Instagram 嵌入**：2026-10-29 網站做好嵌入區塊。用平台的嵌入功能，不下載；放在步道、景點、交通、祭典這類看了才懂的段落，一篇最多 2 個；Instagram 只用官方帳號，YouTube 官方優先，要近兩年、看得出內容對題。讀者點了才載入，頁面不會變慢；圖說下方會寫頻道與年份、「實際資訊以本文為準」。
 - **不能用的圖**：店家照片、地圖截圖、網頁分享預覽圖（OG 圖）都不用。
 
-依據：選圖 Skill `japan-travel-image-finder`（`references/selection-and-licensing.md`、`references/image-packet.md`）、`content-automation/local-writer.md` 第 5 步。
+依據：選圖 Skill `japan-travel-image-finder`（`references/selection-and-licensing.md`、`references/image-packet.md`、`references/embed-plan.md`）、寫作 Skill `references/embeds-and-data-blocks.md`、`content-automation/local-writer.md` 第 5 步。
 
 ## 8. 分潤連結
 

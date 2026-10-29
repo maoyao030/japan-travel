@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-or-sounkyo/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-or-sounkyo/，不加入 Git、不上傳。 2026-10-29 文內照片：姿見池、黑岳山頂標柱兩張，都來自上川總合振興局官方相簿，各接在該節第一段之後；影片嵌入另記在 embed-plan.json。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "sugatami-pond": "sugatami-pond-01",
+    "kurodake-summit": "kurodake-summit-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -98,6 +100,167 @@
             "property": "natural landscape",
             "risk": "low",
             "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "sugatami-pond",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "旭岳和層雲峽只去一個選哪個？",
+      "purpose": "讓只有一天的讀者看到搭纜車上姿見站後就能走到的火口池景色。",
+      "mustShow": [
+        "姿見池與高山草原"
+      ],
+      "mustNotShow": [
+        "和登山頁、主頁相同的照片",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭岳和層雲峽只去一個選哪個？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/fs/7/1/1/8/5/8/0/_/%E5%A7%BF%E8%A6%8B%E3%81%AE%E6%B1%A02.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "sugatami-pond-01 是上川總合振興局職員 2007 年 10 月拍的「姿見の池２」：前景是平靜的姿見池，池邊是秋天轉黃的草地，中間有偃松與一段步道，遠方是綠色的山稜，晴天。正文這節說搭纜車約 10 分鐘就到姿見站，散策路一圈約 1 小時，不用登山也看得到火口池，這張就是那個景色。遠方的山無法從頁面資料確認是哪一座，圖說只寫姿見池。和登山頁用的「姿見の池１」是同日不同角度，不同張。原圖 3648×2736（4:3）。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這輪照「官方素材優先、維基共享資源最後」：環境省大雪山國立公園頁（env.go.jp/park/daisetsu/、nationalparks/list/daisetsuzan/spot/）的景點照片最大只有 890×500，低於 1200 px，不用；東川町與ひがしかわ観光協會查不到允許轉載的照片素材庫；北海道上川總合振興局「VIEW OF KAMIKAWA」相簿允許個人與企業免費自由使用、站方政策為 CC BY，照片由職員拍攝。"
+      },
+      "candidates": [
+        {
+          "candidateId": "sugatami-pond-01",
+          "sourceType": "official-material",
+          "provider": "北海道上川総合振興局「北海道の風景～VIEW OF KAMIKAWA～」",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view/133584.html",
+          "sourceTitle": "姿見の池２",
+          "sourceDescription": "撮影場所：大雪山国立公園 旭岳；撮影年月日：2007年10月",
+          "takenAt": "2007-10",
+          "width": 3648,
+          "height": 2736,
+          "termsUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view_of_kamikawa_top.html",
+          "termsCheckedAt": "2026-10-29",
+          "termsNotes": "相簿首頁寫明「画像の利用は、個人、企業に関わらず全て無料です。ホームページ、ブログ、はがき、カレンダーなど使い方は自由です」，照片由振興局職員拍攝；同站サイトポリシー（https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html）寫明本站內容原則上為 CC BY（出典表示）。照片頁沒有「写真提供」等第三者標示。利用後用詢問表單回報使用情形是「お手数ですが」的請託，不是事前申請。",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "サイトポリシーにより CC BY：出典（北海道上川総合振興局）を表示。相簿頁另請利用者以詢問表單回報使用的畫像與用途（任意）。",
+          "applicationRequired": false,
+          "licenseName": "CC BY（北海道サイトポリシー）",
+          "licenseUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "官方相簿寫明拍攝地是大雪山國立公園旭岳、標題是姿見の池，畫面是姿見池與周圍的高山草原。",
+          "altDraft": "平靜的姿見池倒映藍天，池邊是秋天轉黃的草地與偃松，遠方是綠色的山稜",
+          "captionDraft": "旭岳纜車姿見站附近的姿見池（2007 年 10 月）。",
+          "creditDraft": "照片：北海道上川總合振興局（VIEW OF KAMIKAWA）／CC BY",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kurodake-summit",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "黑岳到旭岳縱走",
+      "purpose": "讓讀者認得縱走前段的黑岳山頂，以及山頂往旭岳方向展開的高原。",
+      "mustShow": [
+        "黑岳山頂標柱",
+        "山頂往外看的大雪山高原"
+      ],
+      "mustNotShow": [
+        "層雲峽頁已用的照片",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "黑岳到旭岳縱走",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/fs/7/0/9/5/5/0/8/_/%E9%BB%92%E5%B2%B3%E5%B1%B1%E9%A0%82.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "kurodake-summit-01 是上川總合振興局職員 2008 年 9 月在上川町拍的「黒岳山頂」：左邊是寫著「黒岳頂上」與「一九八四」的木頭標柱，腳下是碎石，繩索圍出步道，後方是轉紅的高山與殘雪的谷地，雲層低、遠處起霧。縱走從黑岳七合目上來先經過這裡，畫面也看得到稜線一起霧就看不遠，和正文說的天氣一變能見度很快變差一致。標柱是登山標示，不是商業招牌。層雲峽各頁目前的照片都是維基共享資源，沒有用這張。原圖 3648×2736（4:3）。另看過同相簿「黒岳山頂からの眺め」（只有山景，看不出在黑岳）、「黒岳と雲」「黒岳の招き岩」。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這輪照「官方素材優先、維基共享資源最後」：環境省大雪山國立公園頁（env.go.jp/park/daisetsu/、nationalparks/list/daisetsuzan/spot/）的景點照片最大只有 890×500，低於 1200 px，不用；東川町與ひがしかわ観光協會查不到允許轉載的照片素材庫；北海道上川總合振興局「VIEW OF KAMIKAWA」相簿允許個人與企業免費自由使用、站方政策為 CC BY，照片由職員拍攝。"
+      },
+      "candidates": [
+        {
+          "candidateId": "kurodake-summit-01",
+          "sourceType": "official-material",
+          "provider": "北海道上川総合振興局「北海道の風景～VIEW OF KAMIKAWA～」",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view/133317.html",
+          "sourceTitle": "黒岳山頂",
+          "sourceDescription": "撮影場所：上川町；撮影年月日：2008年9月",
+          "takenAt": "2008-09",
+          "width": 3648,
+          "height": 2736,
+          "termsUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view_of_kamikawa_top.html",
+          "termsCheckedAt": "2026-10-29",
+          "termsNotes": "相簿首頁寫明「画像の利用は、個人、企業に関わらず全て無料です。ホームページ、ブログ、はがき、カレンダーなど使い方は自由です」，照片由振興局職員拍攝；同站サイトポリシー（https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html）寫明本站內容原則上為 CC BY（出典表示）。照片頁沒有「写真提供」等第三者標示。利用後用詢問表單回報使用情形是「お手数ですが」的請託，不是事前申請。",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "サイトポリシーにより CC BY：出典（北海道上川総合振興局）を表示。相簿頁另請利用者以詢問表單回報使用的畫像與用途（任意）。",
+          "applicationRequired": false,
+          "licenseName": "CC BY（北海道サイトポリシー）",
+          "licenseUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "官方相簿標題是黑岳山頂，畫面裡的標柱寫著「黒岳頂上」與標高，後方是縱走路線所在的大雪山高原。",
+          "altDraft": "黑岳山頂的木頭標柱，看得到「一九八四」字樣，後方是轉紅的高山與殘雪，雲層壓低",
+          "captionDraft": "縱走前段經過的黑岳山頂（2008 年 9 月）。",
+          "creditDraft": "照片：北海道上川總合振興局（VIEW OF KAMIKAWA）／CC BY",
+          "commercialReview": {
+            "people": "none",
+            "logos": "登山標柱的山名與標高，不是商業招牌",
+            "artwork": "none",
+            "property": "山頂標柱與自然景觀",
+            "risk": "low",
+            "notes": "沒有人物；標柱是登山標示。"
           },
           "checks": {
             "fullImageInspected": true,

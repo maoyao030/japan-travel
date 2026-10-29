@@ -7,9 +7,13 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-hiking/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-hiking/，不加入 Git、不上傳。 2026-10-29 文內照片第 4 批（先查官方素材與免費圖庫，都沒有合格的，才用維基共享資源）：ropeway-base、kurodake-station、kurodake-peak、ishimuro 共 4 張，放在「層雲峽纜車與吊椅的營業期間、搭層雲峽纜車上五合目，不登山也能做的事、層雲峽黑岳登山，從七合目到山頂、住黑岳石室或往旭岳縱走」，接在各節第一段之後（銀泉台接在該節最後）。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "ropeway-base": "base-01",
+    "kurodake-station": "station-01",
+    "kurodake-peak": "peak-01",
+    "ishimuro": "ishimuro-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -17,15 +21,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼看出這篇講的是搭黑岳纜車與吊椅上山、從七合目走上黑岳山頂的登山。",
-      "mustShow": ["黑岳的登山道或山頂景色，最好看得出是黑岳本身"],
-      "mustNotShow": ["可辨識的人物臉部", "旭岳的照片冒充黑岳（旭岳頁已用 140724 Asahi-dake Hokkaido Japan02s3.jpg 與 Asahidake6036.jpg）", "層雲峽溫泉街、巴士與冰瀑祭（已用在層雲峽其他頁）", "積雪的冬山畫面（文章以夏季登山為主）", "AI 生成或合成畫面"],
+      "mustShow": [
+        "黑岳的登山道或山頂景色，最好看得出是黑岳本身"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "旭岳的照片冒充黑岳（旭岳頁已用 140724 Asahi-dake Hokkaido Japan02s3.jpg 與 Asahidake6036.jpg）",
+        "層雲峽溫泉街、巴士與冰瀑祭（已用在層雲峽其他頁）",
+        "積雪的冬山畫面（文章以夏季登山為主）",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Summit_Sign%2C_Mount_Kuro%2C_Hokkaido_-_Aug_9%2C_2012.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.55},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 Kunitaka NIIDATE 2012 年 8 月 9 日在黑岳山頂拍的山頂標柱，木柱上寫著「黒岳頂上」與標高「一九八四」，和正文寫的山頂標高 1,984 公尺一致，主體不用猜。背景是山頂往南看的大雪山御鉢平一帶，前景是山頂的碎石地，中景有拉繩的登山道往下延伸。原圖 4032x3024（4:3），裁 16:9 時焦點放在 y=0.55，切掉上方一些雲與最下方的碎石，標柱上的字完整保留。放大看過，中景步道上只有一個極小的人影，看不出是誰。8 月是夏季登山期，與文章主軸一致；山頂標柱可能已更換，但只當封面使用，不當現場辨識。cover-02 是 Yasu 2017 年 9 月 16 日拍的黑岳石室一帶紅葉，碎石步道、石室與雪溪都在畫面裡，但中景有幾位背對鏡頭的小人影，且主角是石室而非黑岳登頂，當備選。",
       "sourcing": {
@@ -98,6 +118,306 @@
             "property": "natural landscape；遠處有黑岳石室建築",
             "risk": "low",
             "notes": "沒有招牌或商標；人物很小且背對鏡頭。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "ropeway-base",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "層雲峽纜車與吊椅的營業期間",
+      "purpose": "讓讀者認得纜車的山麓層雲峽站，以及從站後一路往山上拉的索道。",
+      "mustShow": [
+        "黑岳纜車山麓站",
+        "往上的纜車索道"
+      ],
+      "mustNotShow": [
+        "旭岳纜車冒充黑岳纜車",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "層雲峽纜車與吊椅的營業期間",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/%E9%BB%92%E5%B2%B3%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4_-_panoramio.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "base-01 是 2009 年 10 月 16 日拍的山麓層雲峽站：白牆木框的山屋式站房在中間，站後兩條索道沿山坡直上到山頂的黑岳站，右後方是已經下過雪的山頭，四周是秋天的樹林，前景是木柵欄與道路。原圖 2288×1712。限制：2025 年換了新車廂，但站房外觀與索道位置照片看得出來。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：層雲峡観光協会 sounkyo.net 只有個資政策頁、沒有照片轉載條款，不能用；上川町官網這次連不上（DNS 查不到），無法確認條款；環境省大雪山國立公園頁的照片只有 450 px 寬、相簿頁已 404；北海道上川總合振興局照片庫 VIEW OF KAMIKAWA（CC BY）查過黒岳ロープウェイ（2008 年的舊車廂，2026 年已換新車廂，會誤導）、黒岳山頂（旭岳比較頁已用）、黒岳と雲、黒岳の招き岩、黒岳山頂からの眺め，沒有比選定照片更對題的山麓站、黑岳站、石室照片。再查 Pexels「sounkyo」「kurodake」「sounkyo ice」、Pixabay「sounkyo」「daisetsuzan」、Unsplash「sounkyo」：Pexels 唯一標層雲峽的一張其實是上川平原遠望大雪山的雪原，畫面對不上，其他都不是這裡。最後才用維基共享資源 Category:Sōunkyō、Category:Sounkyo Onsen、Category:Daisetsuzan Sounkyo - Kurodake Ropeway、Category:Mount Kuro (Hokkaido)、Category:Views from Mount Kuro (Hokkaido) 與關鍵字「層雲峡」「銀泉台」「黒岳 紅葉」「黒岳ロープウェイ」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "base-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E9%BB%92%E5%B2%B3%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4_-_panoramio.jpg",
+          "creatorName": "pakku",
+          "sourceTitle": "File:黒岳ロープウェイ - panoramio.jpg",
+          "sourceDescription": "大雪山層雲峡・黒岳ロープウェイ（Panoramio 轉存，分類 Daisetsuzan Sounkyo - Kurodake Ropeway）",
+          "takenAt": "2009-10-16",
+          "width": 2288,
+          "height": 1712,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "matchLimits": "2009 年拍攝；纜車車廂 2026 年已換新，照片只用來認站房與索道。",
+          "whyItFits": "檔案頁寫明是大雪山層雲峽・黒岳ロープウェイ，分類也是這條纜車；畫面是山麓站房與往五合目的索道，讀者到溫泉街就看得到這個景。",
+          "altDraft": "黑岳纜車的山麓層雲峽站，山屋式站房後方有兩條索道沿著秋天的山坡往上拉到山頂的車站",
+          "captionDraft": "黑岳纜車山麓的層雲峽站，索道從站後直上五合目。",
+          "creditDraft": "照片：pakku／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "站房招牌太小看不清",
+            "artwork": "none",
+            "property": "纜車站房外觀",
+            "risk": "low",
+            "notes": "停車場的車輛是遠景，車牌看不見。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kurodake-station",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "搭層雲峽纜車上五合目，不登山也能做的事",
+      "purpose": "讓讀者認得五合目的黑岳站，散步道、展望台與食堂都從這裡出發。",
+      "mustShow": [
+        "五合目黑岳站的建物與「黒岳駅」字樣"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "旭岳纜車的車站"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "搭層雲峽纜車上五合目，不登山也能做的事",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Daisetsuzan_Sounkyo_Kurodake_Ropeway_Kurodake_Station.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "station-01 是 2017 年 9 月 16 日拍的黑岳站正面：咖啡色木造山屋，二樓外牆寫「黒岳駅」，屋頂上有展望台，前面是石板廣場，左邊有幾位登山客。原圖 5472×3648。人物都是小遠景、背對或側身，縮到 1600 px 看不清臉。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：層雲峡観光協会 sounkyo.net 只有個資政策頁、沒有照片轉載條款，不能用；上川町官網這次連不上（DNS 查不到），無法確認條款；環境省大雪山國立公園頁的照片只有 450 px 寬、相簿頁已 404；北海道上川總合振興局照片庫 VIEW OF KAMIKAWA（CC BY）查過黒岳ロープウェイ（2008 年的舊車廂，2026 年已換新車廂，會誤導）、黒岳山頂（旭岳比較頁已用）、黒岳と雲、黒岳の招き岩、黒岳山頂からの眺め，沒有比選定照片更對題的山麓站、黑岳站、石室照片。再查 Pexels「sounkyo」「kurodake」「sounkyo ice」、Pixabay「sounkyo」「daisetsuzan」、Unsplash「sounkyo」：Pexels 唯一標層雲峽的一張其實是上川平原遠望大雪山的雪原，畫面對不上，其他都不是這裡。最後才用維基共享資源 Category:Sōunkyō、Category:Sounkyo Onsen、Category:Daisetsuzan Sounkyo - Kurodake Ropeway、Category:Mount Kuro (Hokkaido)、Category:Views from Mount Kuro (Hokkaido) 與關鍵字「層雲峡」「銀泉台」「黒岳 紅葉」「黒岳ロープウェイ」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "station-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Daisetsuzan_Sounkyo_Kurodake_Ropeway_Kurodake_Station.jpg",
+          "creatorName": "Yasu",
+          "sourceTitle": "File:Daisetsuzan Sounkyo Kurodake Ropeway Kurodake Station.jpg",
+          "sourceDescription": "Daisetsuzan Sounkyo Kurodake Ropeway Kurodake Station in Kamikawa Town, Hokkaido, Japan",
+          "takenAt": "2017-09-16",
+          "width": 5472,
+          "height": 3648,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是黑岳纜車的黑岳站，外牆的「黒岳駅」三個字在畫面中央，屋頂展望台也看得到，讀者下纜車就認得出來。",
+          "altDraft": "五合目的黑岳纜車黑岳站，咖啡色木造站房外牆寫著「黒岳駅」，屋頂有展望台，前面是石板廣場與幾位登山客",
+          "captionDraft": "五合目的黑岳站，屋頂上是展望台。",
+          "creditDraft": "照片：Yasu／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "左邊與右下有幾位登山客，都是小遠景、背對或側身，看不清臉",
+            "logos": "玻璃門上有很小的「Rinyu Kanko」字樣，不是主體",
+            "artwork": "none",
+            "property": "纜車站房外觀",
+            "risk": "low",
+            "notes": "人物不是主體，不會讓人誤以為代言。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kurodake-peak",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "層雲峽黑岳登山，從七合目到山頂",
+      "purpose": "讓讀者看到要爬的黑岳山頂，以及吊椅終點七合目在山腰的位置。",
+      "mustShow": [
+        "黑岳的山頂"
+      ],
+      "mustNotShow": [
+        "旭岳或其他山冒充黑岳",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "層雲峽黑岳登山，從七合目到山頂",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Mt._Kuro_%28Daisetsu%29.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "peak-01 是 2024 年 9 月 5 日從黑岳纜車一帶拍的黑岳：中間是頂端平而陡的黑岳山頂，山腰樹林中間看得到吊椅終點的小建物，右邊是另一座岩稜山，前景是樹林與展望台欄杆。原圖 2049×1537。多雲，但山形清楚。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：層雲峡観光協会 sounkyo.net 只有個資政策頁、沒有照片轉載條款，不能用；上川町官網這次連不上（DNS 查不到），無法確認條款；環境省大雪山國立公園頁的照片只有 450 px 寬、相簿頁已 404；北海道上川總合振興局照片庫 VIEW OF KAMIKAWA（CC BY）查過黒岳ロープウェイ（2008 年的舊車廂，2026 年已換新車廂，會誤導）、黒岳山頂（旭岳比較頁已用）、黒岳と雲、黒岳の招き岩、黒岳山頂からの眺め，沒有比選定照片更對題的山麓站、黑岳站、石室照片。再查 Pexels「sounkyo」「kurodake」「sounkyo ice」、Pixabay「sounkyo」「daisetsuzan」、Unsplash「sounkyo」：Pexels 唯一標層雲峽的一張其實是上川平原遠望大雪山的雪原，畫面對不上，其他都不是這裡。最後才用維基共享資源 Category:Sōunkyō、Category:Sounkyo Onsen、Category:Daisetsuzan Sounkyo - Kurodake Ropeway、Category:Mount Kuro (Hokkaido)、Category:Views from Mount Kuro (Hokkaido) 與關鍵字「層雲峡」「銀泉台」「黒岳 紅葉」「黒岳ロープウェイ」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "peak-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Mt._Kuro_(Daisetsu).jpg",
+          "creatorName": "保姆虫と登山",
+          "sourceTitle": "File:Mt. Kuro (Daisetsu).jpg",
+          "sourceDescription": "黒岳ロープウェイから望む黒岳",
+          "takenAt": "2024-09-05",
+          "width": 2049,
+          "height": 1537,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明「黒岳ロープウェイから望む黒岳」；畫面是從纜車一帶望黑岳山頂，山腰的吊椅終點也在畫面裡，對應正文「搭吊椅到七合目再爬上山頂」。",
+          "altDraft": "從黑岳纜車一帶望黑岳，頂端平而陡的山頂在中間，山腰樹林裡有吊椅終點的小建物，前景是展望台欄杆",
+          "captionDraft": "從纜車一帶望黑岳山頂，山腰的小建物是吊椅終點七合目（2024 年 9 月）。",
+          "creditDraft": "照片：保姆虫と登山／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀，右下有展望台欄杆",
+            "risk": "low",
+            "notes": "沒有人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "ishimuro",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "住黑岳石室或往旭岳縱走",
+      "purpose": "讓要住黑岳石室或縱走的讀者看到石室在山上平緩草原裡的位置與周圍環境。",
+      "mustShow": [
+        "黑岳石室的小屋",
+        "石室周圍的草原與步道"
+      ],
+      "mustNotShow": [
+        "其他山屋冒充黑岳石室",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "住黑岳石室或往旭岳縱走",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/%E9%BB%92%E5%B2%B3%E7%9F%B3%E5%AE%A4%EF%BC%88Stone_hut%EF%BC%89_-_panoramio.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "ishimuro-01 是 2010 年 8 月 28 日從黑岳山頂一側往下拍的黑岳石室：中間平緩的綠色草原上有幾棟深色小屋與營地帳篷，一條步道從前景往小屋延伸，後方是北鎮岳一帶的山與殘雪，右邊有一片雪溪。原圖 2048×1536。限制：2010 年拍，小屋位置不變，但設施（生質廁所等）可能更新過，圖說不寫設施細節。另一張 Kurodake Ishimuro and coloured leaves.jpg 已經是 sounkyo-hiking 封面候選，不重複用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：層雲峡観光協会 sounkyo.net 只有個資政策頁、沒有照片轉載條款，不能用；上川町官網這次連不上（DNS 查不到），無法確認條款；環境省大雪山國立公園頁的照片只有 450 px 寬、相簿頁已 404；北海道上川總合振興局照片庫 VIEW OF KAMIKAWA（CC BY）查過黒岳ロープウェイ（2008 年的舊車廂，2026 年已換新車廂，會誤導）、黒岳山頂（旭岳比較頁已用）、黒岳と雲、黒岳の招き岩、黒岳山頂からの眺め，沒有比選定照片更對題的山麓站、黑岳站、石室照片。再查 Pexels「sounkyo」「kurodake」「sounkyo ice」、Pixabay「sounkyo」「daisetsuzan」、Unsplash「sounkyo」：Pexels 唯一標層雲峽的一張其實是上川平原遠望大雪山的雪原，畫面對不上，其他都不是這裡。最後才用維基共享資源 Category:Sōunkyō、Category:Sounkyo Onsen、Category:Daisetsuzan Sounkyo - Kurodake Ropeway、Category:Mount Kuro (Hokkaido)、Category:Views from Mount Kuro (Hokkaido) 與關鍵字「層雲峡」「銀泉台」「黒岳 紅葉」「黒岳ロープウェイ」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "ishimuro-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E9%BB%92%E5%B2%B3%E7%9F%B3%E5%AE%A4%EF%BC%88Stone_hut%EF%BC%89_-_panoramio.jpg",
+          "creatorName": "pakku",
+          "sourceTitle": "File:黒岳石室（Stone hut） - panoramio.jpg",
+          "sourceDescription": "黒岳石室（Stone hut）（Panoramio 轉存，分類 Views from Mount Kuro (Hokkaido)、Mount Hokuchin）",
+          "takenAt": "2010-08-28",
+          "width": 2048,
+          "height": 1536,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "matchLimits": "2010 年拍攝；只用來看石室的位置與環境，設施可能已更新。",
+          "whyItFits": "檔案頁標題就是黑岳石室，分類在 Views from Mount Kuro；畫面是黑岳山頂後方平緩草原上的石室與營地，和正文「從山頂再走 20 分鐘」的位置一致。",
+          "altDraft": "黑岳石室，平緩的綠色高山草原中間有幾棟深色小屋與營地帳篷，步道從前方延伸過去，後方是帶殘雪的山",
+          "captionDraft": "黑岳山頂後方草原上的黑岳石室與營地。",
+          "creditDraft": "照片：pakku／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "營地附近可能有人，但只有幾個像素，看不出是人",
+            "logos": "none",
+            "artwork": "none",
+            "property": "山屋遠景",
+            "risk": "low",
+            "notes": "沒有可辨識人物或招牌。"
           },
           "checks": {
             "fullImageInspected": true,

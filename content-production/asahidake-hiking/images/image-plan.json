@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-hiking/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahidake-hiking/，不加入 Git、不上傳。 2026-10-29 文內照片：姿見池與旭岳（上川總合振興局官方相簿）、裾合平紅葉（維基共享資源）兩張，各接在該節第一段之後；影片嵌入另記在 embed-plan.json。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "sugatami-to-summit": "sugatami-01",
+    "susoaidaira-autumn": "susoaidaira-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -91,6 +93,162 @@
           "altDraft": "旭岳上半段的碎石坡，拉著繩索的登山道旁有一座石堆",
           "captionDraft": "旭岳上半段的碎石登山道（2017 年 7 月）。",
           "creditDraft": "照片：Raita Futo／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "sugatami-to-summit",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "從姿見站登旭岳山頂",
+      "purpose": "讓讀者看到登山起點姿見池一帶與要爬的旭岳碎石坡、噴氣孔的位置關係。",
+      "mustShow": [
+        "姿見池與旭岳山體",
+        "山腰噴氣孔"
+      ],
+      "mustNotShow": [
+        "和封面相同的照片",
+        "可辨識的人物臉部",
+        "其他山冒充旭岳"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "從姿見站登旭岳山頂",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/fs/7/1/1/8/5/4/3/_/%E5%A7%BF%E8%A6%8B%E3%81%AE%E6%B1%A01.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "sugatami-01 是上川總合振興局職員 2007 年 10 月拍的「姿見の池１」：前景是姿見池的一角，中間是秋天轉黃的草地與偃松、往山腳延伸的步道，右上方是紅褐色的旭岳山頂，山腰噴氣孔冒著白煙，藍天無雲。正文這節講從姿見池旁的 5 合目登山道一路是碎石坡往上，這張讓讀者看懂起點和要爬的山。登山頁封面是 663highland 2014 年拍的旭岳山體，這張有姿見池前景，角度與季節都不同。原圖 3648×2736（4:3）。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這輪照「官方素材優先、維基共享資源最後」：環境省大雪山國立公園頁（env.go.jp/park/daisetsu/、nationalparks/list/daisetsuzan/spot/）的景點照片最大只有 890×500，低於 1200 px，不用；東川町與ひがしかわ観光協會查不到允許轉載的照片素材庫；北海道上川總合振興局「VIEW OF KAMIKAWA」相簿允許個人與企業免費自由使用、站方政策為 CC BY，照片由職員拍攝。"
+      },
+      "candidates": [
+        {
+          "candidateId": "sugatami-01",
+          "sourceType": "official-material",
+          "provider": "北海道上川総合振興局「北海道の風景～VIEW OF KAMIKAWA～」",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view/133530.html",
+          "sourceTitle": "姿見の池１",
+          "sourceDescription": "撮影場所：大雪山国立公園 旭岳；撮影年月日：2007年10月",
+          "takenAt": "2007-10",
+          "width": 3648,
+          "height": 2736,
+          "termsUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view_of_kamikawa_top.html",
+          "termsCheckedAt": "2026-10-29",
+          "termsNotes": "相簿首頁寫明「画像の利用は、個人、企業に関わらず全て無料です。ホームページ、ブログ、はがき、カレンダーなど使い方は自由です」，照片由振興局職員拍攝；同站サイトポリシー（https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html）寫明本站內容原則上為 CC BY（出典表示）。照片頁沒有「写真提供」等第三者標示。利用後用詢問表單回報使用情形是「お手数ですが」的請託，不是事前申請。",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "サイトポリシーにより CC BY：出典（北海道上川総合振興局）を表示。相簿頁另請利用者以詢問表單回報使用的畫像與用途（任意）。",
+          "applicationRequired": false,
+          "licenseName": "CC BY（北海道サイトポリシー）",
+          "licenseUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "官方相簿寫明拍攝地是大雪山國立公園旭岳、標題是姿見の池，畫面是姿見池、旭岳山頂與噴氣孔，就是登山起點看出去的景色。",
+          "altDraft": "姿見池的水面一角，後方是秋天轉黃的草地與紅褐色的旭岳山頂，山腰的噴氣孔冒著白煙",
+          "captionDraft": "從姿見池一帶望向旭岳山頂，登山道從這裡往上走（2007 年 10 月）。",
+          "creditDraft": "照片：北海道上川總合振興局（VIEW OF KAMIKAWA）／CC BY",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "natural landscape",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "susoaidaira-autumn",
+      "kind": "inline",
+      "need": "season-contrast",
+      "section": "旭岳的裾合平與環狀路線",
+      "purpose": "讓讀者看到裾合平秋天轉紅的高山草原，以及 9 月下旬山上可能已經下雪。",
+      "mustShow": [
+        "裾合平的紅葉草原"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他高原冒充裾合平"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭岳的裾合平與環狀路線",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/%E8%A3%BE%E5%90%88%E5%B9%B3%E3%81%AE%E7%B4%85%E8%91%89%EF%BC%88Colored_leaves_of_Susoaidaira%EF%BC%89_-_panoramio.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "susoaidaira-01 是 pakku 2010 年 9 月 23 日拍的裾合平：前景是一片偃松與轉紅、轉黃的低矮灌叢，後方尖頂的山與稜線覆著一層薄雪，天空陰。正文這節說裾合平秋天葉子轉紅、9 月下旬是紅葉季，季節段也提到 9 月隨時可能下雪，這張同時看得到兩件事。座標 43.6804, 142.8471 在裾合平。官方相簿沒有裾合平的照片，環境省頁的「チングルマ花畑」只有 890×500。另看過同作者「旭岳と裾合平」（1600×1200，背光、山體偏暗）、「裾合平の花たち」（花的特寫，看不出地點）、「裾合平への道」（兩名登山客背影佔畫面）。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "官方來源（上川總合振興局相簿、環境省國立公園頁）沒有裾合平的合格大圖，才查維基共享資源關鍵字「裾合平」「Susoaidaira」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "susoaidaira-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E8%A3%BE%E5%90%88%E5%B9%B3%E3%81%AE%E7%B4%85%E8%91%89%EF%BC%88Colored_leaves_of_Susoaidaira%EF%BC%89_-_panoramio.jpg",
+          "creatorName": "pakku",
+          "sourceTitle": "File:裾合平の紅葉（Colored leaves of Susoaidaira） - panoramio.jpg",
+          "sourceDescription": "Colored leaves of Susoai-daira in Daisetsu.（Panoramio 匯入，座標 43.680350, 142.847092）",
+          "takenAt": "2010-09-23",
+          "width": 2048,
+          "height": 1536,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "檔案頁寫明是大雪山裾合平的紅葉，座標在裾合平，畫面是轉紅的高山灌叢與覆著薄雪的山。",
+          "altDraft": "裾合平的偃松與轉紅、轉黃的低矮灌叢，後方尖頂的山與稜線覆著一層薄雪",
+          "captionDraft": "9 月下旬的裾合平，草原轉紅、後方山上已經下過雪（2010 年 9 月）。",
+          "creditDraft": "照片：pakku／Wikimedia Commons／CC BY 3.0",
           "commercialReview": {
             "people": "none",
             "logos": "none",

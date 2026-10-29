@@ -67,6 +67,7 @@ export const article = defineType({
           },
         },
         {type: 'contentTable'},
+        {type: 'mediaEmbed'},
         {
           type: 'image',
           options: {hotspot: true},

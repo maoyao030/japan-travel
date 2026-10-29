@@ -7,9 +7,10 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-festival/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-festival/，不加入 Git、不上傳。 2026-10-29 文內照片第 4 批：ice-venue 一張，用北海道上川總合振興局照片庫（VIEW OF KAMIKAWA，CC BY）的官方照片，放在「層雲峽冰瀑祭會場的冰雕與玩法」第一段之後。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "ice-venue": "ice-venue-official-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -17,15 +18,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼看出這篇講的是層雲峽冰瀑祭：石狩川河岸、夜間打上彩色燈光的冰雕會場。",
-      "mustShow": ["層雲峽冰瀑祭會場的冰雕與燈光，或認得出是層雲峽冬天的祭典現場"],
-      "mustNotShow": ["可辨識的人物臉部", "其他地方的冰雪祭冒充層雲峽", "旅館或店家招牌當主體", "AI 生成或合成畫面", "暗示是 2027 年當年實況"],
+      "mustShow": [
+        "層雲峽冰瀑祭會場的冰雕與燈光，或認得出是層雲峽冬天的祭典現場"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他地方的冰雪祭冒充層雲峽",
+        "旅館或店家招牌當主體",
+        "AI 生成或合成畫面",
+        "暗示是 2027 年當年實況"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Souunkyouhyoubakumatsuri.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.52},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.52
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 Outside147 在 2006 年 2 月 28 日拍的層雲峽氷瀑まつり夜景：左邊是打上藍光的大冰牆，中間是走道與遊客、後方有綠光的冰雕隧道與冰柱，右邊是石狩川的河面映著燈光，背後是溫泉街的建築。文章說會場在石狩川河岸、冰雕入夜打上七彩燈光，這張直接拍到。維基共享資源分類 Sounkyo Hyoubaku Festival 只有兩張，另一張 Hyoubakumatsuri Festival Hokkaido Japan.jpg 只有 640×480，解析度不夠，所以只有一張合格。限制：2006 年拍攝，冰雕配置每年不同，不代表 2026、2027 年的會場，圖說寫拍攝年份。遊客都在遠處、夜間背光，看不出臉。原圖 4:3、2592 px 寬，裁 16:9 時焦點放在中段略下，保留冰牆、走道與河面，裁掉部分夜空與前景雪堆。",
       "sourcing": {
@@ -63,6 +80,87 @@
             "property": "祭典會場與背後溫泉街建築的燈光",
             "risk": "low",
             "notes": "沒有招牌或商標當主體；人物很小、無法辨識，不會被誤認為推薦本站。檔案頁授權為 GFDL、CC BY-SA 3.0（migrated）與 CC BY-SA 2.5、2.0、1.0，選用 CC BY-SA 3.0。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "ice-venue",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "層雲峽冰瀑祭會場的冰雕與玩法",
+      "purpose": "讓讀者看到冰瀑祭會場晚上打燈後的樣子：河岸上一座座冰雕、冰牆與步道。",
+      "mustShow": [
+        "層雲峽冰瀑祭會場打燈的冰雕"
+      ],
+      "mustNotShow": [
+        "札幌雪祭或其他冰雪活動冒充",
+        "可辨識的人物臉部",
+        "旅館招牌當主體"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "層雲峽冰瀑祭會場的冰雕與玩法",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/fs/7/0/4/2/0/9/0/_/%E5%B1%A4%E9%9B%B2%E5%B3%A1%E6%B0%B7%E7%88%86%E3%81%BE%E3%81%A4%E3%82%8A.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "ice-venue-official-01 是上川總合振興局照片庫的「層雲峡氷瀑まつり」：夜裡的會場，河岸上一座座冰雕、冰牆與冰柱打上綠、藍、橘、紫的燈光，中間是石狩川的水面，左邊有冰造的階梯步道，背景是溫泉街的旅館燈光（遠景、看不到招牌）。原圖 1600×1200，畫面裡沒有人。限制：照片頁沒寫拍攝年份，會場每年重做，冰雕配置和今年不同，圖說不寫年份、不說是某一年的配置。同照片庫的「氷瀑まつり１」（2002 年 1 月，2272×1704）有大量遊客且年代太舊，「氷瀑まつり（花火）」是直式，「氷瀑まつり２」只有 641 px，不用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "先查官方素材：北海道上川總合振興局的照片庫「北海道の風景～VIEW OF KAMIKAWA～」（職員拍攝、商業網站可免費使用、CC BY）有合格照片，直接採用。層雲峡観光協会 sounkyo.net 沒有轉載條款、上川町官網連不上、環境省頁面照片太小，都不能用。"
+      },
+      "candidates": [
+        {
+          "candidateId": "ice-venue-official-01",
+          "sourceType": "official-material",
+          "provider": "北海道上川総合振興局「北海道の風景～VIEW OF KAMIKAWA～」",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/event/132314.html",
+          "sourceTitle": "層雲峡氷瀑まつり",
+          "sourceDescription": "撮影場所：上川町；撮影年月日：未記載（イベント分類）",
+          "width": 1600,
+          "height": 1200,
+          "termsUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view_of_kamikawa_top.html",
+          "termsCheckedAt": "2026-10-29",
+          "termsNotes": "相簿首頁寫明「画像の利用は、個人、企業に関わらず全て無料です。ホームページ、ブログ、はがき、カレンダーなど使い方は自由です」，照片由上川總合振興局職員拍攝；同站サイトポリシー（https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html）寫明「特に記載の無い限り、すべてのページをCreative Commonsの表示CC-BYとします」。照片頁沒有「写真提供」等第三者標示。利用後用詢問表單回報使用情形是「お手数ですが」的請託，不是事前申請。",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "サイトポリシーにより CC BY：出典（北海道上川総合振興局）を表示。相簿頁另請利用者以詢問表單回報使用的畫像編號與用途（任意）。",
+          "applicationRequired": false,
+          "licenseName": "CC BY（北海道サイトポリシー）",
+          "licenseUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "matchLimits": "拍攝年份不明；冰雕每年重做，配置與今年不同，只用來呈現會場夜間打燈的樣子。",
+          "whyItFits": "官方照片庫標題就是層雲峡氷瀑まつり、拍攝地上川町；畫面是石狩川河岸上打燈的冰雕與冰牆，和本節說的冰雕、冰柱與夜間燈光一致。",
+          "altDraft": "層雲峽冰瀑祭的夜間會場，石狩川河岸上的冰雕與冰牆打上綠、藍、橘色燈光，左邊有冰造的階梯步道",
+          "captionDraft": "冰瀑祭會場入夜後打上燈光的冰雕。",
+          "creditDraft": "照片：北海道上川總合振興局（VIEW OF KAMIKAWA）／CC BY",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "冰雕是祭典作品，照片由主辦地區的振興局公開、允許商業使用",
+            "property": "背景遠處的旅館燈光，看不到招牌",
+            "risk": "low",
+            "notes": "畫面裡沒有人，不會讓人誤以為是今年的實況，圖說不寫年份。"
           },
           "checks": {
             "fullImageInspected": true,

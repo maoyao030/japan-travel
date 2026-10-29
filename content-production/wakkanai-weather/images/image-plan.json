@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-24",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；發布工具還不支援文內圖，文內圖位置之後另外規劃。",
+  "selectionScopeNote": "這次只選封面；發布工具還不支援文內圖，文內圖位置之後另外規劃。 2026-10-29 加入文內照片：稚內冬天要穿什麼？、宗谷岬的天氣和稚內一樣嗎？兩節各放一張冬季照片（第一段之後）。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "noshappu-snow": "noshappu-snow-01",
+    "cape-soya-snow": "cape-soya-snow-01"
   },
   "selectedAt": "2026-10-24",
   "slots": [
@@ -17,15 +19,32 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼看出這篇講的是稚內的天氣，特別是冬天積雪的樣子，作為文章封面。",
-      "mustShow": ["稚內市區或稚內的地標", "看得出季節或天氣的景象（以冬季積雪為佳）"],
-      "mustNotShow": ["其他城市的雪景冒充稚內", "特定旅館或店家當主體", "某年祭典或活動的實況", "可辨識的人物臉部", "暴風雪災情、事故等會誤導的情境"],
+      "mustShow": [
+        "稚內市區或稚內的地標",
+        "看得出季節或天氣的景象（以冬季積雪為佳）"
+      ],
+      "mustNotShow": [
+        "其他城市的雪景冒充稚內",
+        "特定旅館或店家當主體",
+        "某年祭典或活動的實況",
+        "可辨識的人物臉部",
+        "暴風雪災情、事故等會誤導的情境"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Snow_in_Chuo%2C_Wakkanai%2C_Hokkaido_-_Feb_27%2C_2025.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.45},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 2025 年 2 月稚內市中央一、二丁目的雪後晴天，屋頂與道路積著厚雪，後方是稚內公園的山丘與山頂的塔，熟悉稚內的人認得出來，也直接對應文章「冬天長又多雪」的主軸；4080 px 寬，裁成 16:9 時焦點放在 y 0.45，保留山頂的塔，右下角很小的剷雪行人會被裁掉。cover-02 是 2023 年 1 月下雪中的稚內街道，雪天感最強，但前景有巴士與多輛車、遠處車牌，主體偏交通，列為備選。cover-03 是 2012 年 12 月從高處看雪後的稚內海岸與市街，天色陰暗、寬度只有 2048 px，列為第二備選。三張都沒有可辨識人物臉部，都不以旅館或店家為主體。",
       "sourcing": {
@@ -137,6 +156,159 @@
             "property": "市街與海岸遠景",
             "risk": "low",
             "notes": "沒有可辨識人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "noshappu-snow",
+      "kind": "inline",
+      "need": "season-contrast",
+      "section": "稚內冬天要穿什麼？",
+      "purpose": "讓讀者看到稚內冬天海邊積雪、天色灰暗的樣子，對上正文要穿防風防雪外套的建議。",
+      "mustShow": [
+        "稚內市內的冬季雪景",
+        "空曠的海邊"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "與封面重複的照片",
+        "雕塑當主體"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "稚內冬天要穿什麼？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Wakkanai_20121215095516_%288677415047%29.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "noshappu-snow-01 是 2012 年 12 月 15 日上午在野寒布岬拍的：木牌寫著「ノシャップ岬」，欄杆、消波塊與地面都積著雪，天空灰白、還在飄雪，海面起浪。正文這一節講冬天要防風防雪、在冰點以下，照片接在第一段之後。同一組裡有一張拍到岬上的海豚時鐘紀念碑，那是雕塑（日本沒有雕塑的全景自由），不用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "官方素材先查過：稚內市網站「免責事項・著作権・リンク」寫明未經許可禁止複製、轉載、改作，不能用；北海道開發局稚內開發建設部網站採公共資料利用規約 PDL1.0（可商用、可加工），但網頁上的照片最大只有 540 px 寬，達不到 1200 px；北海道廳與宗谷總合振興局網站是 CC BY，但沒找到這個主題、寬度夠又沒標第三者提供的照片；稚內觀光協會的觀光網站（north-hokkaido.com）目前暫停公開，查不到素材條款。免費圖庫：Unsplash 搜尋要過機器人檢查（不繞過），用搜尋引擎查 Unsplash、Pexels、Pixabay 的稚內照片沒有找到。所以這一張改用維基共享資源。維基共享資源查 Category:Snow in Wakkanai、「Wakkanai 2023」「Wakkanai 2025」與 inunami 2012 年 12 月的一組：File:Snow in Wakkanai, Hokkaido 2023-02-12.jpg 前景有戴口罩但認得出的行人、店家廂型車的字，不用；機場那張是黃昏、偏暗；Snow in Wakkanai 2023-01-18 與 Snow in Chuo 2025 已經用過。"
+      },
+      "candidates": [
+        {
+          "candidateId": "noshappu-snow-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai_20121215095516_(8677415047).jpg",
+          "creatorName": "inunami",
+          "sourceTitle": "File:Wakkanai 20121215095516 (8677415047).jpg",
+          "sourceDescription": "wakkanai_20121215095516（Flickr 轉存，FlickreviewR 已審核，分類 Wakkanai, Hokkaido）",
+          "takenAt": "2012-12-15",
+          "width": 2048,
+          "height": 1536,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "matchLimits": "2012 年 12 月拍攝，只代表冬天的天色與積雪；木牌與欄杆可能已換過。",
+          "whyItFits": "同一組 inunami 照片是 2012 年 12 月 15 日在稚內拍的；畫面左邊的木牌寫「ノシャップ岬」，可確定是稚內的野寒布岬；地面、欄杆與消波塊積雪，天空灰白。",
+          "altDraft": "冬天的野寒布岬，寫著岬名的木牌與欄杆積著雪，後方是灰色的海與天空",
+          "captionDraft": "12 月下雪的野寒布岬（2012 年）。",
+          "creditDraft": "照片：inunami／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "公共海岸與欄杆",
+            "risk": "low",
+            "notes": "沒有人物、招牌或商標；木牌只有地名。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "cape-soya-snow",
+      "kind": "inline",
+      "need": "season-contrast",
+      "section": "宗谷岬的天氣和稚內一樣嗎？",
+      "purpose": "讓讀者看到冬天宗谷岬積雪、天色陰沉的樣子，對上正文岬角風強、要穿夠暖的說明。",
+      "mustShow": [
+        "冬天的宗谷岬",
+        "日本最北端之地碑"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "與宗谷岬頁封面重複的照片"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "宗谷岬的天氣和稚內一樣嗎？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Wakkanai_20121215122456_%288678522052%29.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "cape-soya-snow-01 是 2012 年 12 月 15 日中午在宗谷岬拍的：步道兩旁堆著剷過的雪，盡頭是三角形的日本最北端之地碑，海面與天空都是灰色，右下角是宗谷岬公園的導覽圖。宗谷岬頁封面用的是夏天的同一座碑（另一位作者），這張是冬天、角度也不同。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "官方素材先查過：稚內市網站「免責事項・著作権・リンク」寫明未經許可禁止複製、轉載、改作，不能用；北海道開發局稚內開發建設部網站採公共資料利用規約 PDL1.0（可商用、可加工），但網頁上的照片最大只有 540 px 寬，達不到 1200 px；北海道廳與宗谷總合振興局網站是 CC BY，但沒找到這個主題、寬度夠又沒標第三者提供的照片；稚內觀光協會的觀光網站（north-hokkaido.com）目前暫停公開，查不到素材條款。免費圖庫：Unsplash 搜尋要過機器人檢查（不繞過），用搜尋引擎查 Unsplash、Pexels、Pixabay 的稚內照片沒有找到。所以這一張改用維基共享資源。宗谷岬冬天的照片在維基共享資源只找到 inunami 這一組；Category:Cape Soya 其他照片多是夏天，或已在宗谷岬頁、宗谷岬交通頁用過。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cape-soya-snow-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai_20121215122456_(8678522052).jpg",
+          "creatorName": "inunami",
+          "sourceTitle": "File:Wakkanai 20121215122456 (8678522052).jpg",
+          "sourceDescription": "wakkanai_20121215122456（Flickr 轉存，FlickreviewR 已審核，分類 Cape Soya、December 2012 in Hokkaido、Snow in Hokkaido）",
+          "takenAt": "2012-12-15",
+          "width": 2048,
+          "height": 1536,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "matchLimits": "2012 年 12 月拍攝，只代表冬天的樣子；導覽圖等設施可能已更新。",
+          "whyItFits": "檔案分類為 Cape Soya 與 Snow in Hokkaido；畫面盡頭是宗谷岬的日本最北端之地碑，右下的導覽牌寫「宗谷岬公園」，地面積雪、天色陰沉。",
+          "altDraft": "冬天的宗谷岬，積雪步道盡頭是三角形的日本最北端之地碑，後方是灰色的海",
+          "captionDraft": "12 月的宗谷岬與日本最北端之地碑（2012 年）。",
+          "creditDraft": "照片：inunami／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "公園導覽牌，只有地名與地圖",
+            "artwork": "公共紀念碑（與宗谷岬頁封面同一座）",
+            "property": "公園內的公共紀念碑",
+            "risk": "low",
+            "notes": "沒有人物；導覽牌是公共標示。"
           },
           "checks": {
             "fullImageInspected": true,

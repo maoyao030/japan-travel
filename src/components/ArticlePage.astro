@@ -211,6 +211,35 @@ const structuredData = createArticleStructuredData({
 
       <div class="article-body">
         <div class="portable-content" set:html={renderPortableText(article.body)} />
+        {article.body.some((block) => block._type === 'mediaEmbed') && (
+          <script is:inline>
+            // 嵌入的影片與 Instagram 貼文：讀者點了才載入對方的 iframe，頁面不先連到 YouTube 或 Instagram。
+            document.querySelectorAll('.article-embed [data-embed-src]').forEach((button) => {
+              button.addEventListener('click', () => {
+                const figure = button.closest('.article-embed')
+                const holder = figure.querySelector('.article-embed-frame, .article-embed-card')
+                const frame = document.createElement('iframe')
+                frame.src = button.dataset.embedSrc
+                frame.title = button.dataset.embedTitle || '嵌入內容'
+                frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'
+                frame.allowFullscreen = true
+                frame.referrerPolicy = 'strict-origin-when-cross-origin'
+                holder.replaceChildren(frame)
+                holder.classList.add('is-loaded')
+              }, {once: true})
+            })
+            window.addEventListener('message', (event) => {
+              if (event.origin !== 'https://www.instagram.com') return
+              let data = event.data
+              try { if (typeof data === 'string') data = JSON.parse(data) } catch { return }
+              const height = data?.details?.height
+              if (data?.type !== 'MEASURE' || !height) return
+              document.querySelectorAll('.article-embed-instagram iframe').forEach((frame) => {
+                if (frame.contentWindow === event.source) frame.style.height = `${Math.min(Math.max(height, 300), 1200)}px`
+              })
+            })
+          </script>
+        )}
 
         {isHubLanding && childClusters.length > 0 && (
           <section class="hub-related-articles" aria-labelledby="hub-children-heading">
