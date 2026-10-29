@@ -1716,3 +1716,10 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 全站掃過，另外三頁有「運賃箱」「新運賃表」：東川、禮文島交通、利尻島交通改成「投幣箱」「新車資表」。四頁都用 `revise-article-text.mjs` 改 Sanity，寫入後驗證通過。
 - `check-voice.mjs` 加 `JAPANESE_STYLE_WORDS`（檢討、運休、欠航、運賃、料金、割引、片道、往復、見學、混雜、最寄、入場料），括號、「」與資料來源以外出現就擋；`tests/check-voice.test.ts` 加測試。寫作 Skill 第15條、`RULES_OVERVIEW.md`、`AGENTS.md` 同步。
 - 唯一下一步：觀察自動寫作下一輪是否照新規則選官方照片與嵌入、不再出現日式用詞。
+
+## 2026-10-29 Claude Code：五篇加官方 Instagram 貼文
+
+- Darren 問 IG 能不能幫忙找。用 Darren 已登入的 Chrome 一般瀏覽官方帳號（只讀，不按讚不追蹤），帳號從官網連結或貼文標記確認是官方。
+- 放上的五則（都在 2026 年內、畫面與說明和正文對得上）：旭山動物園「夜之動物園」公告（asahiyamazoo1）、層雲峽三段紅葉（sounkyo_onsen）、禮文敦盛草開花（rebun_island_kanko）、禮文島花期介紹與利尻山登頂（hokkaido_soya，宗谷總合振興局）。紀錄在各篇 `images/embed-plan.json`。
+- 找過但沒用：東川町（多是町民活動公告）、旭岳纜車（說明只有 hashtag，對不上段落）。利尻兩町、稚內市觀光協會找不到官方帳號。可用的官方帳號還有 heartlandferry（渡輪）、goodday_hokkaido（北海道觀光機構），之後自動寫作可以從這些帳號找。
+- 發現：Heartland 渡輪公告 Boreas宗谷號 2026-10-31 退役，稚內渡輪頁船艙表仍列這艘船，待修正。
