@@ -197,3 +197,13 @@ test('資料來源的日文網頁標題不算日文太多', () => {
   const markdown = article(good) + '- [ご当地グルメ大集合！稚内・利尻・礼文｜稚内観光協会](https://example.invalid/)\n'
   assert.deepEqual(checkVoice(markdown).issues, [])
 })
+
+test('日式用詞要改成台灣說法；放原名的括號、「」與資料來源不算', async () => {
+  const {checkJapanese} = await import('../.agents/skills/japan-travel-answer-first/scripts/check-voice.mjs')
+  const body = '拆完之後，經營者打算換成新的風車，目前還在檢討。單程車資看運賃表。'
+  const result = checkJapanese(body)
+  assert.deepEqual(result.styleWords, ['檢討', '運賃'])
+  assert.match(result.issues.join('\n'), /日式用詞2處，改成台灣說法：檢討→評估/)
+  const allowed = ['停航時（欠航）改搭隔天的船，畫面會顯示「運休」。', '', '## 資料來源', '', '- [運賃表｜宗谷巴士](https://example.com/)'].join('\n')
+  assert.deepEqual(checkJapanese(allowed).styleWords, [])
+})
