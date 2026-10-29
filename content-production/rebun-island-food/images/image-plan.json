@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-25",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-food/source.jpg，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-food/source.jpg，不加入 Git、不上傳。 2026-10-29 文內圖：海膽丼與烤花魚兩張料理照片，只放料理、不放店家；官方素材（禮文町、環境省）沒有寬 1200 px 以上的料理照，Unsplash 與 Pexels 查不到海膽丼，改用維基共享資源。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "uni-don": "unidon-01",
+    "grilled-hokke": "hokke-01"
   },
   "selectedAt": "2026-10-25",
   "slots": [
@@ -17,15 +19,30 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "呈現禮文島的代表料理，讓讀者一眼知道這篇講的是禮文島的吃，而不是景點或住宿。",
-      "mustShow": ["禮文島的海產料理，例如花魚鏘鏘燒或海膽丼，檔案頁要能證明是在禮文島拍的"],
-      "mustNotShow": ["店家招牌、菜單或店名", "可辨識的人物臉部", "其他地方的料理冒充禮文島", "AI 生成或合成畫面"],
+      "mustShow": [
+        "禮文島的海產料理，例如花魚鏘鏘燒或海膽丼，檔案頁要能證明是在禮文島拍的"
+      ],
+      "mustNotShow": [
+        "店家招牌、菜單或店名",
+        "可辨識的人物臉部",
+        "其他地方的料理冒充禮文島",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Grilled_Fish_HokkeChanChanYaki.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.48},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.48
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是檔案頁寫明「北海道礼文島のホッケのちゃんちゃん焼き」的實拍：整片剖開的花魚放在炭火網上，魚身抹了味噌、鋪滿蔥花，正好是正文說的「在厚厚一片新鮮花魚上鋪蔥、淋上醬汁再烤」，也是正文稱的禮文島代表美食。原圖 3072×2304（4:3），裁成 16:9 會切掉上下各約 12%，焦點放在 y=0.48，魚身與味噌蔥花完整，尾鰭末端會被切掉一部分，不影響辨識。畫面沒有招牌、人物或店名，檔案頁也沒寫是哪家店，圖說不寫店名，避免讓人以為是某間店的實景。cover-02 是 2010 年 9 月的禮文島元地漁港，認得出是禮文島的漁村與海岸，但畫面是起浪的海與芒草，和美食主題只有間接關係，而且是 4:3 寬 2592 px，排第二。另外看過 File:Various Japanese food in Hokkaido, Japan (256).jpg（分類在 Rebun Island，但只是一桌家常菜，沒有海膽或花魚，畫面偏暗），File:鉄府漁港 Teppu Fishing Port, Rebun - Jun 20, 2017.jpg（CC BY-SA 2.0，陰天，天空占一半，與美食無關），File:Uni don in shakotan.jpg 等海膽丼照片都是積丹或其他地方拍的，不能冒充禮文島，不列為候選。",
       "sourcing": {
@@ -106,6 +123,156 @@
             "licenseVerified": true,
             "notAiGenerated": true,
             "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "uni-don",
+      "kind": "inline",
+      "need": "food",
+      "section": "海膽丼與海膽飯糰",
+      "purpose": "讓讀者知道海膽丼端上來是什麼樣子，方便在菜單上認出うに丼。",
+      "mustShow": [
+        "生海膽鋪在白飯上的海膽丼"
+      ],
+      "mustNotShow": [
+        "店家招牌或店名",
+        "可辨識的人物臉部",
+        "和海膽丼無關的海鮮丼"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "海膽丼與海膽飯糰",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Uni_don_in_shakotan.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "unidon-01 是 2017 年 7 月在北海道積丹拍的海膽丼：紅黑色漆碗裡鋪滿橘黃色的生海膽，上面插一片紫蘇葉。原圖 2400×1800。畫面只有料理，右下角有一小角紙墊，看不出店名。圖說寫明攝於積丹，不讓人以為是禮文島的店。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "官方素材先查：禮文町照片素材沒有料理；環境省國立公園頁的「ウニ、鮭などの海の幸」只有 890×500。Unsplash、Pexels 搜尋 uni don 沒有單張頁結果。維基共享資源查「uni don」「うに丼」「Unidon」「sea urchin rice bowl」：Uni don in shakotan.jpg（2017，CC BY-SA 4.0，2400×1800）畫面只有一碗海膽丼；Unidon Murakami.jpg 檔名是店名，不用；UniIkuraDon.jpg 有鮭魚卵，不是純海膽丼；Rice bowl topped with sea urchin 是 2013 年。"
+      },
+      "candidates": [
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          },
+          "candidateId": "unidon-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Uni_don_in_shakotan.jpg",
+          "creatorName": "切干大根",
+          "sourceTitle": "File:Uni don in shakotan.jpg",
+          "sourceDescription": "北海道積丹で提供されるうに丼。（Own work）",
+          "takenAt": "2017-07",
+          "width": 2400,
+          "height": 1800,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "whyItFits": "畫面是一碗鋪滿生海膽的海膽丼，就是正文說的うに丼；拍攝地是北海道。",
+          "altDraft": "紅黑色漆碗裡鋪滿橘黃色生海膽的海膽丼，上面放一片紫蘇葉",
+          "captionDraft": "海膽丼，日文菜單寫「うに丼」（照片攝於北海道積丹）。",
+          "creditDraft": "照片：切干大根／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "料理；碗盤與桌面，沒有店名",
+            "risk": "low",
+            "notes": "右下紙墊有一角印刷字，看不出店名。"
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "grilled-hokke",
+      "kind": "inline",
+      "need": "food",
+      "section": "禮文島的花魚怎麼吃？",
+      "purpose": "讓讀者認得整片烤花魚（ほっけ），和封面的鏘鏘燒做區別。",
+      "mustShow": [
+        "整片烤花魚"
+      ],
+      "mustNotShow": [
+        "店家招牌或店名",
+        "可辨識的人物臉部",
+        "和封面重複的鏘鏘燒"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "禮文島的花魚怎麼吃？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Grilled_Okhotsk_Atka_Mackerel.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "hokke-01 是 2023 年 6 月拍的烤花魚：白色長盤上一整片剖開烤好的花魚，旁邊有白飯、味噌湯與小菜。原圖 6000×4000。正文這一節開頭說島上的花魚直接烤就好吃，這張讓讀者認得菜單上的ほっけ。檔案頁說明寫了供應的食堂名稱，但畫面上沒有店名，圖說也不寫店名。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "官方素材沒有花魚料理照片。維基共享資源查「ホッケ」「Pleurogrammus azonus」「Hokke fish」：Grilled Okhotsk Atka Mackerel.jpg（2023，CC BY-SA 4.0，6000×4000）橫式清楚；Grilled ホッケ fish in Tokyo.jpg 是直式；ホッケ開き.jpg 是直式生魚；Hokke.jpg（2004）、知床斜里的烤花魚定食（2007）太舊。封面已是鏘鏘燒，炸花魚與糠漬花魚找不到照片。"
+      },
+      "candidates": [
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          },
+          "candidateId": "hokke-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Okhotsk_Atka_Mackerel.jpg",
+          "creatorName": "Fred Cherrygarden",
+          "sourceTitle": "File:Grilled Okhotsk Atka Mackerel.jpg",
+          "sourceDescription": "A grilled Okhotsk Atka mackerel (Pleurogrammus azonus), locally known as hokke（北海道小樽的食堂，Own work）",
+          "takenAt": "2023-06",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "whyItFits": "檔案頁寫明是烤花魚（ホッケ）；畫面是整片剖開烤好的花魚，對應正文說的直接烤。",
+          "altDraft": "白色長盤上一整片剖開烤成金黃色的花魚，旁邊有白飯、味噌湯與小菜",
+          "captionDraft": "整片烤花魚，日文菜單寫「ほっけ」（照片攝於北海道小樽）。",
+          "creditDraft": "照片：Fred Cherrygarden／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "料理；碗盤與桌面，沒有店名",
+            "risk": "low",
+            "notes": "畫面只有料理。"
           }
         }
       ]

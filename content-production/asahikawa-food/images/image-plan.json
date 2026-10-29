@@ -7,9 +7,10 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-food/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/asahikawa-food/，不加入 Git、不上傳。 2026-10-29 文內照片：旭川拉麵一張，來自旭川市ホームページフォトライブラリー（利用規約允許商用、裁切，不需申請與標示）。這頁沒有合適的影片嵌入，不建 embed-plan.json。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "asahikawa-ramen": "ramen-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -17,15 +18,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼看出這篇講的是旭川的在地料理，用正文開頭列的三塊招牌之一當代表畫面。",
-      "mustShow": ["正文介紹的旭川代表料理之一（旭川醬油拉麵、成吉思汗、新子燒），且拍攝地或店家在旭川"],
-      "mustNotShow": ["可辨識的人物臉部", "單一店家招牌或標誌當主體", "旭川車站、平和通買物公園、旭橋、旭山動物園當主體（別頁已用）", "其他地方的料理冒充旭川", "AI 生成或合成畫面"],
+      "mustShow": [
+        "正文介紹的旭川代表料理之一（旭川醬油拉麵、成吉思汗、新子燒），且拍攝地或店家在旭川"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "單一店家招牌或標誌當主體",
+        "旭川車站、平和通買物公園、旭橋、旭山動物園當主體（別頁已用）",
+        "其他地方的料理冒充旭川",
+        "AI 生成或合成畫面"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/%E6%96%B0%E5%AD%90%E7%84%BC%E3%81%8D.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.5},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是久保竜弥 2013 年 3 月用單眼拍的「焼鳥専門ぎんねこ」新子燒：半隻仔雞烤到外皮焦香、淋上醬汁，放在長盤上，深灰背景，沒有招牌、標誌與人物。ぎんねこ正是正文在地料理一節表格列出的新子燒店，新子燒也是正文開頭列的旭川三塊招牌之一，而且是旭川以外少見的料理，比拉麵更能一眼代表旭川。原圖 3:2（4341×2894），裁 16:9 只切掉上下少許背景，仔雞幾乎完整（原圖左側雞腿本來就超出畫面，裁後上緣貼齊畫面）。限制：檔案頁說明只寫店名、分類是 Cuisine of Hokkaido，沒有寫「旭川」，旭川是由店名對到正文表格確認；2013 年拍攝，盛盤可能和現在略有不同。cover-02 是 Famicon 2021 年拍的天金四条店醬油拉麵，店家也在正文百名店清單上，但原圖是正方形，背景菜單上印著天金的店名標誌，裁 16:9 很難完全切掉。cover-03 是 Nesnad 2022 年在旭川市區拍的醬油拉麵，直式構圖，上方有啤酒杯與 Sapporo Classic 標誌，要裁掉一大半。",
       "sourcing": {
@@ -135,6 +152,84 @@
             "risk": "low",
             "notes": "沒有人物；使用時只取碗的部分。"
           },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "asahikawa-ramen",
+      "need": "food",
+      "section": "旭川美食推薦，旭川拉麵與百名店",
+      "purpose": "讓讀者看到旭川拉麵的樣子：醬油色的湯、中細捲麵、叉燒與筍乾。",
+      "mustShow": [
+        "一碗旭川醬油拉麵"
+      ],
+      "mustNotShow": [
+        "特定拉麵店的店內、招牌或包裝",
+        "可辨識的人物臉部"
+      ],
+      "kind": "inline",
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "旭川美食推薦，旭川拉麵與百名店",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4300/4301/d059606_d/fil/_MG_6540.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "ramen-01 是旭川市照片庫「旭川ラーメン」：紅色桌面上一碗醬油色湯頭的拉麵，看得到捲麵、三片叉燒、筍乾與蔥。棚拍，沒有店名或店內畫面，不會被當成某一家店。照片庫另一張直式、一張只有 1500 px 的黑碗版本，選這張橫式高解析度。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "查過旭川市ホームページフォトライブラリー「グルメ・物産品・産業」6 張（旭川ラーメン 3、旭川ラーメン村 3）。拉麵村照片是店家集合建築與招牌，不用。旭川醬油炒麵（食べマルシェ 2015）只有 750 px，不夠寬，所以醬油炒麵一節不放圖；新子燒已是本頁封面，正文不再放。"
+      },
+      "candidates": [
+        {
+          "sourceType": "official-material",
+          "assetType": "photo",
+          "provider": "旭川市ホームページフォトライブラリー",
+          "creatorName": "旭川市",
+          "termsName": "旭川市ホームページフォトライブラリー利用規約（2025年9月3日更新）",
+          "termsUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4451/d055106.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "規約第3條第2項：申請與著作權者標示都不需要。本站仍自願標示出處「旭川市フォトライブラリー」。",
+          "applicationRequired": false,
+          "termsNotes": "規約第1條：個人與商用都可免費使用，但用途限於傳播旭川魅力、提升知名度與形象、振興觀光；本站介紹旭川旅遊符合。第4條第3項：不損及照片獨特性的加工（裁切、畫質修正）不在禁止範圍；第4條第4、5項禁止做成寫真集、明信片等商品或轉售散布，本站只作文章插圖。著作權屬旭川市。照片頁沒有「写真提供」「撮影」等第三者標示。",
+          "candidateId": "ramen-01",
+          "sourcePageUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4300/4301/d059606.html",
+          "sourceTitle": "旭川ラーメン（ページID 059606）",
+          "sourceDescription": "旭川市フォトライブラリー「グルメ・物産品・産業」，原尺寸 JPG（_MG_6540.jpg）。",
+          "width": 3057,
+          "height": 2038,
+          "whyItFits": "旭川市照片庫把這張歸為旭川ラーメン；畫面是醬油色湯頭、中細捲麵、叉燒、筍乾與蔥花，和正文說的醬油口味、中細捲麵一致。",
+          "altDraft": "一碗旭川醬油拉麵，湯是醬油色，上面有三片叉燒、筍乾和蔥，碗緣是藍色花紋",
+          "captionDraft": "旭川拉麵，醬油湯頭配中細捲麵。",
+          "creditDraft": "照片：旭川市フォトライブラリー",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "碗上的藍色花紋",
+            "property": "none",
+            "risk": "low",
+            "notes": "棚拍，看不出是哪一家店。"
+          },
+          "matchType": "exact",
           "checks": {
             "fullImageInspected": true,
             "officialSourcePage": true,

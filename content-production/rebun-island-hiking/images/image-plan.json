@@ -7,9 +7,13 @@
   "articleSourceCheckedAt": "2026-10-25",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-hiking/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-hiking/，不加入 Git、不上傳。 2026-10-29 文內圖：從禮文町官網照片素材（允許商用、加工，不用聯絡）選四張，放在花季、桃岩展望台步道、8小時步道、久種湖畔步道；巡岬步道的郭洛塔岬、澄海岬素材只有 800 px，維基共享資源的澄海岬不是太舊（2004、2005）就是已用過，不放。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "flower-season": "season-01",
+    "momoiwa-trail": "momoiwa-01",
+    "eight-hour-coast": "coast-01",
+    "kushu-lake": "kushu-01"
   },
   "selectedAt": "2026-10-25",
   "slots": [
@@ -17,15 +21,32 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "讓讀者一眼看出這篇講的是在禮文島走步道：草原稜線上的步道、夏天的花與海。",
-      "mustShow": ["禮文島的步道（看得出是可以走的路）", "禮文島的草原稜線、海岸或海"],
-      "mustNotShow": ["可辨識的人物臉部", "旅館、店家招牌或商標當主體", "利尻島或其他島嶼冒充禮文島", "AI 生成或合成畫面", "與住宿頁封面相同的照片（Rebun's Momoiwa (52357581315).jpg）"],
+      "mustShow": [
+        "禮文島的步道（看得出是可以走的路）",
+        "禮文島的草原稜線、海岸或海"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "旅館、店家招牌或商標當主體",
+        "利尻島或其他島嶼冒充禮文島",
+        "AI 生成或合成畫面",
+        "與住宿頁封面相同的照片（Rebun's Momoiwa (52357581315).jpg）"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Rebun_island_%2852357580650%29.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.55},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 2022 年 7 月 26 日在桃岩展望台附近（座標 45.2921, 141.0302）往南拍的稜線步道：前景是有白色木柵的步道與夏天的白花、紫花，步道沿綠色草原稜線一路延伸，右邊是海岸斷崖與海上的岩礁，遠處步道上有幾個很小的健行者背影，看不出是誰。畫面同時有「步道」「花」「海」，正好對應這篇的步道與花季，又不是住宿頁用過的桃岩那張。原圖 3:2、6713 px 寬，裁 16:9 時上下各切掉一點天空與前景草叢，焦點略往下放，木柵與稜線都保留。cover-02 是同一位作者同一天在桃岩登山口一帶拍的，前景是步道的木階梯，中景是山路與停車場上的紅色觀光巴士，可當備選；但巴士與停車場上的遊客比較搶眼，步道的感覺不如 cover-01。",
       "sourcing": {
@@ -100,6 +121,310 @@
             "property": "山路、停車場與觀光巴士",
             "risk": "low",
             "notes": "巴士很小，不是畫面主體；但比 cover-01 多了車輛與人群，只當備選。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "flower-season",
+      "kind": "inline",
+      "need": "season-contrast",
+      "section": "禮文島的花季",
+      "purpose": "讓讀者看到 6 月下旬到 7 月禮文島山坡開花的樣子。",
+      "mustShow": [
+        "禮文島山坡上的夏季野花"
+      ],
+      "mustNotShow": [
+        "其他地方的花田",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "禮文島的花季",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_45_l.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "season-01 是禮文町素材「エゾカンゾウ」，2006 年 6 月 24 日拍：橘黃色的蝦夷萱草與白色的繖形花開滿山坡，背景是藍天。原圖 1280×850。正文這一節講 6 月中旬到 8 月初花種最多，拍攝日期剛好在這段時間。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這次先查官方素材：環境省利尻禮文サロベツ國立公園（env.go.jp）的景點照片只有 890×500、首頁圖庫 405×270，主視覺 2732×920 是利尻山與佐呂別，都不合格；禮文島觀光協會網站連線被拒，讀不到條款，不用。禮文町官網「礼文町の観光地の写真」允許商用與加工、不用聯絡，62 張裡寬 1200 px 以上的只有 18 張（其餘 800 px），從中挑出。 這一節用「エゾカンゾウ」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "season-01",
+          "sourceType": "official-material",
+          "provider": "礼文町（礼文町の観光地の写真）",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_45_l.jpg",
+          "sourceTitle": "礼文町の観光地の写真「エゾカンゾウ」",
+          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「エゾカンゾウ」（kanko_45）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-06-24。",
+          "takenAt": "2006-06",
+          "width": 1280,
+          "height": 850,
+          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
+          "applicationRequired": false,
+          "matchType": "exact",
+          "whyItFits": "禮文町官方素材，素材標題寫明是エゾカンゾウ；6 月下旬山坡開滿橘黃色的花，對應正文的花季。",
+          "altDraft": "禮文島的山坡上開滿橘黃色的蝦夷萱草，夾雜白色與紫色的小花，背景是藍天",
+          "captionDraft": "6 月下旬山坡上的蝦夷萱草（エゾカンゾウ，2006 年）。",
+          "creditDraft": "照片：禮文町",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、車輛或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "momoiwa-trail",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "桃岩展望台步道",
+      "purpose": "讓要走桃岩展望台步道的讀者知道沿路是什麼樣子：草坡、花與山稜。",
+      "mustShow": [
+        "桃岩一帶的草坡與山稜"
+      ],
+      "mustNotShow": [
+        "其他步道冒充桃岩",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "桃岩展望台步道",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_56_l.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "momoiwa-01 是禮文町素材「桃岩2」，2006 年 7 月 23 日拍：前景是粉紅色穗狀的野花和繖形花，後方是長滿綠草的山稜與岩壁。原圖 1280×851。素材標題只寫桃岩，所以圖說寫「桃岩一帶」，不說是哪一座山。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這次先查官方素材：環境省利尻禮文サロベツ國立公園（env.go.jp）的景點照片只有 890×500、首頁圖庫 405×270，主視覺 2732×920 是利尻山與佐呂別，都不合格；禮文島觀光協會網站連線被拒，讀不到條款，不用。禮文町官網「礼文町の観光地の写真」允許商用與加工、不用聯絡，62 張裡寬 1200 px 以上的只有 18 張（其餘 800 px），從中挑出。 這一節用「桃岩2」；「桃岩3」是逆光剪影、「桃岩」只有 800 px。維基共享資源的桃岩照片已用在景點頁與住宿頁。"
+      },
+      "candidates": [
+        {
+          "candidateId": "momoiwa-01",
+          "sourceType": "official-material",
+          "provider": "礼文町（礼文町の観光地の写真）",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_56_l.jpg",
+          "sourceTitle": "礼文町の観光地の写真「桃岩2」",
+          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「桃岩2」（kanko_56）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-07-23。",
+          "takenAt": "2006-07",
+          "width": 1280,
+          "height": 851,
+          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
+          "applicationRequired": false,
+          "matchType": "exact",
+          "whyItFits": "禮文町官方素材，標題寫桃岩；畫面是桃岩一帶夏天的草坡、花與山稜，就是步道沿路看到的景色。",
+          "altDraft": "桃岩一帶的綠色山稜，前景開著粉紅色穗狀的野花與白色繖形花",
+          "captionDraft": "桃岩一帶的山坡與夏天的野花（2006 年 7 月）。",
+          "creditDraft": "照片：禮文町",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、車輛或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "eight-hour-coast",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "8小時步道",
+      "purpose": "讓讀者看到 8 小時步道經過的西海岸地形：草坡與斷崖，沒有村落。",
+      "mustShow": [
+        "召國一帶的西海岸草坡與海"
+      ],
+      "mustNotShow": [
+        "東海岸或其他地方的海岸",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "8小時步道",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_54_l.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "coast-01 是禮文町素材「召国1」，2006 年 9 月 25 日拍：從草坡高處往下看，綠色山稜延伸進深藍色的海，岸邊是岩礁，沒有房子。原圖 2592×1944（4:3）。正文寫召國分岔到宇遠內之間沒有村落，這張正好呈現這一段的海岸地形。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這次先查官方素材：環境省利尻禮文サロベツ國立公園（env.go.jp）的景點照片只有 890×500、首頁圖庫 405×270，主視覺 2732×920 是利尻山與佐呂別，都不合格；禮文島觀光協會網站連線被拒，讀不到條款，不用。禮文町官網「礼文町の観光地の写真」允許商用與加工、不用聯絡，62 張裡寬 1200 px 以上的只有 18 張（其餘 800 px），從中挑出。 這一節用「召国1」；素材「8時間コース」是直式而且只有 800 px。"
+      },
+      "candidates": [
+        {
+          "candidateId": "coast-01",
+          "sourceType": "official-material",
+          "provider": "礼文町（礼文町の観光地の写真）",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_54_l.jpg",
+          "sourceTitle": "礼文町の観光地の写真「召国1」",
+          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「召国1」（kanko_54）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-09-25。",
+          "takenAt": "2006-09",
+          "width": 2592,
+          "height": 1944,
+          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
+          "applicationRequired": false,
+          "matchType": "exact",
+          "whyItFits": "禮文町官方素材，標題是召國；8 小時步道經過召國，畫面是沒有村落的西海岸草坡與海。",
+          "altDraft": "禮文島召國一帶的西海岸，長滿矮草的山坡延伸到深藍色的海，岸邊是岩礁",
+          "captionDraft": "8 小時步道經過的召國一帶海岸（2006 年 9 月）。",
+          "creditDraft": "照片：禮文町",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、車輛或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kushu-lake",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "久種湖畔步道",
+      "purpose": "讓讀者看到久種湖畔春天的水芭蕉濕地，認得步道的西側路段。",
+      "mustShow": [
+        "久種湖畔的水芭蕉"
+      ],
+      "mustNotShow": [
+        "其他地方的水芭蕉群落",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "久種湖畔步道",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_47_l.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "kushu-01 是禮文町素材「久種湖2」，2006 年 5 月 6 日拍：還沒長葉的樹幹橫在積水的濕地上，四周冒出白色的水芭蕉。原圖 1280×851。正文寫湖西側有木棧道、露營場到水芭蕉停車場這段可以單走，這張就是那一帶春天的樣子。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這次先查官方素材：環境省利尻禮文サロベツ國立公園（env.go.jp）的景點照片只有 890×500、首頁圖庫 405×270，主視覺 2732×920 是利尻山與佐呂別，都不合格；禮文島觀光協會網站連線被拒，讀不到條款，不用。禮文町官網「礼文町の観光地の写真」允許商用與加工、不用聯絡，62 張裡寬 1200 px 以上的只有 18 張（其餘 800 px），從中挑出。 這一節用「久種湖2」；「久種湖」只有 800 px。維基共享資源的 Lake Kusyu.JPG 是 2007 年、寬 1536 px，看不到步道，不如這張。"
+      },
+      "candidates": [
+        {
+          "candidateId": "kushu-01",
+          "sourceType": "official-material",
+          "provider": "礼文町（礼文町の観光地の写真）",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_47_l.jpg",
+          "sourceTitle": "礼文町の観光地の写真「久種湖2」",
+          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「久種湖2」（kanko_47）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-05-06。",
+          "takenAt": "2006-05",
+          "width": 1280,
+          "height": 851,
+          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
+          "applicationRequired": false,
+          "matchType": "exact",
+          "whyItFits": "禮文町官方素材，標題是久種湖；畫面是湖畔濕地的水芭蕉，對應正文的水芭蕉停車場與西側路段。",
+          "altDraft": "久種湖畔的濕地，積水中冒出許多白色的水芭蕉，橫著幾根還沒長葉的樹幹",
+          "captionDraft": "久種湖畔濕地的水芭蕉（2006 年 5 月）。",
+          "creditDraft": "照片：禮文町",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、車輛或店家招牌。"
           },
           "checks": {
             "fullImageInspected": true,

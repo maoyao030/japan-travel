@@ -7,9 +7,10 @@
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/higashikawa/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/higashikawa/，不加入 Git、不上傳。 2026-10-29 文內照片（官方素材優先）：大雪旭岳源水一張，來自上川総合振興局「VIEW OF KAMIKAWA」（CC BY，相簿寫明個人企業都可免費自由使用，請事後告知用途）。ひがしかわ観光協會禁止轉載、東川町官網沒有轉載條件，不用。 2026-10-29 拿掉未選用的封面備選 cover-02（商業風險中等，驗證器不接受）。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "asahidake-gensui": "gensui-01"
   },
   "selectedAt": "2026-10-27",
   "slots": [
@@ -17,15 +18,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "東川町地點主頁的封面，用正文多次提到的道之驛「道草館」外觀，讓讀者到現場認得出東川町市街的起點。",
-      "mustShow": ["東川町的道草館、市街或從東川看大雪山，認得出是東川町"],
-      "mustNotShow": ["可辨識的人物臉部", "其他地方冒充東川町", "店家招牌當主體", "AI 生成或合成畫面", "已用於旭岳頁的旭岳照片"],
+      "mustShow": [
+        "東川町的道草館、市街或從東川看大雪山，認得出是東川町"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他地方冒充東川町",
+        "店家招牌當主體",
+        "AI 生成或合成畫面",
+        "已用於旭岳頁的旭岳照片"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Michinoeki_Higashikawa_%E3%80%8CMichikusakan%E3%80%8D_Appearance.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.52},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.52
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 Mister0124 2020 年 9 月 21 日拍的道之驛「道草館」外觀：綠色屋頂、米白外牆的兩層洋館，前方是草地、木柵欄露天座位與一座手壓幫浦造型的水龍頭，右邊是町內的道路。道草館是正文提到 36 次的東川町市街起點（巴士站、觀光案內），讀者到東川第一個會看到的建築。原圖 4133×2507，裁 16:9 焦點 y 0.52，只裁掉上下少許天空與草地。右側遠處有兩個行人，很小、無法辨識。限制：陰天傍晚拍攝，色調偏灰；看不到大雪山。cover-02 是 MNRNSD 2010 年 11 月在東川拍的農田與遠方覆雪大雪山，但前景有大量農作業中的人、主體不明確；cover-03 是 Tzu-hsun Hsu 在旭岳纜車姿見站拍的旭岳，主題屬旭岳頁，不選。",
       "sourcing": {
@@ -70,36 +87,78 @@
             "notAiGenerated": true,
             "noWatermark": true
           }
-        },
+        }
+      ]
+    },
+    {
+      "slotId": "asahidake-gensui",
+      "need": "site-identification",
+      "section": "往旭岳路上的大雪旭岳源水與忠別湖",
+      "purpose": "讓往旭岳途中順路停的讀者認得出大雪旭岳源水：木頭招牌、石堆裡湧出的泉水與小瀑布。",
+      "mustShow": [
+        "大雪旭岳源水的招牌或湧泉"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他湧泉冒充"
+      ],
+      "kind": "inline",
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "往旭岳路上的大雪旭岳源水與忠別湖",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/fs/7/1/2/6/5/2/8/_/%E6%97%AD%E5%B2%B3%E6%BA%90%E6%B0%B4.JPG",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "gensui-01 是上川総合振興局相簿「旭岳源水」，2008 年 9 月拍：左邊木招牌寫「大雪旭岳源水 東川町」，長青苔的石堆間有泉水從竹管流出，旁邊是小瀑布，背後是闊葉林。招牌直接寫出地名，讀者到現場認得出來。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "ひがしかわ観光協会網站寫明照片素材禁止無斷使用與轉載，不用；東川町官網沒有寫轉載條件，不用；旭川市照片庫「周辺市町村＞東川町」3 張只有 1024 px。上川総合振興局 VIEW OF KAMIKAWA 東川町 39 張逐張看過尺寸，大雪旭岳源水另一張只有 642 px、忠別湖兩張是 640 px 或直式，Kitoushi 森林公園只有野鳥特寫，北の住まい設計社是店家不用。維基共享資源 Category:Higashikawa, Hokkaido 沒有 Sentopyua 與 Kitoushi 展望閣的照片，這兩節不放圖。"
+      },
+      "candidates": [
         {
-          "candidateId": "cover-02",
-          "sourceType": "commons-photo",
-          "provider": "Wikimedia Commons",
+          "sourceType": "official-material",
           "assetType": "photo",
-          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Higashikawa,_Hokkaido_-_panoramio.jpg",
-          "creatorName": "MNRNSD",
-          "sourceTitle": "File:Higashikawa, Hokkaido - panoramio.jpg",
-          "sourceDescription": "Higashikawa, Hokkaido（Panoramio 匯入，座標 43.647038, 142.600554）",
-          "takenAt": "2010-11-20",
+          "provider": "北海道上川総合振興局「かみかわの風景～VIEW OF KAMIKAWA～」",
+          "creatorName": "北海道上川総合振興局",
+          "termsName": "VIEW OF KAMIKAWA 利用說明＋上川総合振興局サイトポリシー（CC BY）",
+          "termsUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view_of_kamikawa_top.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "網站採 CC BY（サイトポリシー第3章），要標示出處：北海道上川総合振興局「VIEW OF KAMIKAWA」。",
+          "applicationRequired": false,
+          "termsNotes": "相簿首頁寫明「画像の利用は、個人、企業に関わらず全て無料です」「ホームページ、ブログ…など使い方は自由です」，並請使用者事後用問合表單告知圖片編號、用途等（事後告知，不是事前申請）。サイトポリシー（https://www.kamikawa.pref.hokkaido.lg.jp/site-info/sitepolicy.html）：特に記載の無い限りすべてのページを CC BY とする，第三者權利的照片除外；照片頁沒有第三者提供或攝影的標示。",
+          "candidateId": "gensui-01",
+          "sourcePageUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/ts/tss/album/view/133653.html",
+          "sourceTitle": "旭岳源水",
+          "sourceDescription": "かみかわの風景「眺め」；撮影場所 東川町；撮影年月日 2008年9月。",
+          "takenAt": "2008-09",
           "width": 3648,
           "height": 2736,
-          "licenseName": "CC BY-SA 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-          "licenseCheckedAt": "2026-10-27",
-          "matchType": "exact",
-          "matchLimits": "前景有許多農作業中的人；大雪山只在右側遠方露出一角。",
-          "whyItFits": "東川町的農田與遠方大雪山。",
-          "altDraft": "東川町的農田，遠方是覆雪的大雪山",
-          "captionDraft": "東川町的農田。",
-          "creditDraft": "照片：MNRNSD／Wikimedia Commons／CC BY-SA 3.0",
+          "whyItFits": "畫面左側木招牌寫著「大雪旭岳源水 東川町」，正是正文說的源水；長青苔的岩石間有泉水從竹管流出，旁邊是小瀑布。",
+          "altDraft": "大雪旭岳源水，木招牌寫著「大雪旭岳源水 東川町」，青苔石堆間有泉水和小瀑布流下",
+          "captionDraft": "往旭岳路上的大雪旭岳源水。",
+          "creditDraft": "照片：北海道上川総合振興局「VIEW OF KAMIKAWA」／CC BY",
           "commercialReview": {
-            "people": "many small workers",
-            "logos": "none",
+            "people": "none",
+            "logos": "公共設施名稱木招牌",
             "artwork": "none",
-            "property": "farmland",
-            "risk": "medium",
-            "notes": "人很小但數量多。"
+            "property": "公園內的湧泉",
+            "risk": "low",
+            "notes": "2008 年拍攝，招牌與湧泉的位置可能有調整；圖說不寫年份以外的設施細節。"
           },
+          "matchType": "exact",
           "checks": {
             "fullImageInspected": true,
             "officialSourcePage": true,

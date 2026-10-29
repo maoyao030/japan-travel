@@ -7,9 +7,10 @@
   "articleSourceCheckedAt": "2026-10-25",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖由 image:prepare:cover 下載到 .tmp/image-selection/wakkanai/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖由 image:prepare:cover 下載到 .tmp/image-selection/wakkanai/，不加入 Git、不上傳。 2026-10-29 加入文內照片：稚內值得去嗎？一節放北防波堤穹頂（接在介紹穹頂的第二段之後）。照片來源先查官方素材與免費圖庫，都沒有合格的，才用維基共享資源，經過記在 photoSearchNotes。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "breakwater-dome": "dome-01"
   },
   "selectedAt": "2026-10-25",
   "slots": [
@@ -17,15 +18,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "呈現稚內這座港町的整體樣貌（市區、港口與宗谷灣），讓讀者一眼知道這是稚內地點主頁，並帶出「從這個港出發去利尻禮文」的角色。",
-      "mustShow": ["稚內市區與稚內港，或從稚內看出去的海與利尻島"],
-      "mustNotShow": ["其他城市或港口冒充稚內", "可辨識的人物臉部", "以單一旅館或店家為主體的畫面", "AI 生成或合成畫面", "與同站其他文章重複的封面（北防波堤穹頂特寫、宗谷岬最北端紀念碑、宗谷岬巴士站、稚內站入口、中央雪景、章魚涮涮鍋、鴛泊港利尻山、Boreas Soya 渡輪）"],
+      "mustShow": [
+        "稚內市區與稚內港，或從稚內看出去的海與利尻島"
+      ],
+      "mustNotShow": [
+        "其他城市或港口冒充稚內",
+        "可辨識的人物臉部",
+        "以單一旅館或店家為主體的畫面",
+        "AI 生成或合成畫面",
+        "與同站其他文章重複的封面（北防波堤穹頂特寫、宗谷岬最北端紀念碑、宗谷岬巴士站、稚內站入口、中央雪景、章魚涮涮鍋、鴛泊港利尻山、Boreas Soya 渡輪）"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Wakkanai_harbor.JPG",
-        "focalPoint": {"x": 0.5, "y": 0.55},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是從稚內公園往下看的夏季全景：左邊是市區與北防波堤，中間是稚內港與宗谷灣，右邊是綠色山坡與通往公園的彎路，一張就看得出稚內是靠港的小城，和文章開頭「稚內是搭渡輪去利尻島、禮文島的出發港」與稚內公園的段落相符。北防波堤穹頂在畫面裡只是遠景的一小部分，不會和稚內景點頁的穹頂特寫封面撞圖。原圖 3:2、3008 px 寬，裁成 16:9 時切掉上方一部分天空，保留市區、港口與山坡。cover-02 是 2010 年 8 月從稚內市看利尻山的照片（CC BY 2.0），主題貼近「怎麼接利尻禮文」，但當天有霧、山形朦朧，前景是郊外住宅與草地，看不出是稚內市區，代表性不如 cover-01，列為備選。",
       "sourcing": {
@@ -100,6 +117,80 @@
             "property": "遠處的民宅，看不出門牌或名稱",
             "risk": "low",
             "notes": "沒有人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "breakwater-dome",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "稚內值得去嗎？",
+      "purpose": "讓還在決定要不要排稚內的讀者，看到市區最顯眼的北防波堤穹頂長什麼樣子，照片接在介紹穹頂的段落後。",
+      "mustShow": [
+        "稚內港北防波堤穹頂的圓柱長廊"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "與稚內景點頁封面重複的照片"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "稚內值得去嗎？",
+        "afterBlocks": 2
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Wakkanai_Breakwater_Dome_20140813.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "dome-01 是 2014 年 8 月晴天從穹頂公園對面的馬路拍的全景，圓柱與拱頂一路排到遠處，看得出長廊的規模，正好對上第二段「70根圓柱排成、全長427公尺的長廊」。稚內景點頁封面用的是同一位作者同一天的另一張（File:Wakkanai Breakwater Dome 20140813-2.jpg），這張角度不同、不重複。畫面上方有電線、左下角有一台機車，騎士戴全罩安全帽、看不到臉。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "官方素材先查過：稚內市網站「免責事項・著作権・リンク」寫明未經許可禁止複製、轉載、改作，不能用；北海道開發局稚內開發建設部網站採公共資料利用規約 PDL1.0（可商用、可加工），但網頁上的照片最大只有 540 px 寬，達不到 1200 px；北海道廳與宗谷總合振興局網站是 CC BY，但沒找到這個主題、寬度夠又沒標第三者提供的照片；稚內觀光協會的觀光網站（north-hokkaido.com）目前暫停公開，查不到素材條款。免費圖庫：Unsplash 搜尋要過機器人檢查（不繞過），用搜尋引擎查 Unsplash、Pexels、Pixabay 的稚內照片沒有找到。所以這一張改用維基共享資源。維基共享資源查 Category:Wakkanai Breakwater Dome（11 個檔案）：Wakkanai dome.jpg、Wakkanai Breakwater.jpg、20140813-2 已在本站其他頁用過；Wakkanai dome1/dome2.JPG 是 2001 年、Port of Wakkanai 北防波堤ドーム IMG 2649.jpg 只有 1280 px 且 2010 年；夜景那張是 1993 年。"
+      },
+      "candidates": [
+        {
+          "candidateId": "dome-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Wakkanai_Breakwater_Dome_20140813.jpg",
+          "creatorName": "Suicasmo",
+          "sourceTitle": "File:Wakkanai Breakwater Dome 20140813.jpg",
+          "sourceDescription": "Wakkanai Breakwater Dome（Own work，分類 Wakkanai Breakwater Dome）",
+          "takenAt": "2014-08-13",
+          "width": 3872,
+          "height": 2592,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "whyItFits": "檔案頁說明與分類都是稚內港北防波堤穹頂；畫面是晴天下的半拱形長廊，一整排圓柱從左延伸到右後方，前面是穹頂公園的草地與馬路。",
+          "altDraft": "晴天的稚內港北防波堤穹頂，一整排圓柱與拱頂沿著港邊延伸",
+          "captionDraft": "稚內港北防波堤穹頂（2014 年）。",
+          "creditDraft": "照片：Suicasmo／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "遠處幾個行人與一名騎士都很小，騎士戴全罩安全帽，認不出臉",
+            "logos": "none",
+            "artwork": "none",
+            "property": "公共港灣設施（北海道遺產）",
+            "risk": "low",
+            "notes": "沒有可辨識人物、招牌或商標；CC BY-SA，縮圖後的圖也以 CC BY-SA 4.0 標示。"
           },
           "checks": {
             "fullImageInspected": true,

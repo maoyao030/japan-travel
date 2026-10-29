@@ -7,9 +7,12 @@
   "articleSourceCheckedAt": "2026-10-26",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island/，不加入 Git、不上傳。archive-2026-10-16-manual/ 是舊的人工版，不在這次範圍。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island/，不加入 Git、不上傳。archive-2026-10-16-manual/ 是舊的人工版，不在這次範圍。 2026-10-29 文內圖：從禮文町官網照片素材（允許商用、加工，不用聯絡）選三張，接在「值得去嗎」「霧與雲海」「和利尻島怎麼一起排」三節；照片都是 2006 年拍的自然景觀。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "flowers-west-coast": "flowers-01",
+    "sea-of-clouds": "clouds-01",
+    "rishiri-view": "rishiri-01"
   },
   "selectedAt": "2026-10-26",
   "slots": [
@@ -17,15 +20,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "禮文島地點主頁的封面，讓讀者一眼認出是禮文島：海岸線、平緩的草原丘陵與北端的須古頓岬，呼應正文「花之浮島」、海岸步道與須古頓岬。",
-      "mustShow": ["能確定在禮文島拍的島景（海岸線與丘陵、北部岬角或花季原野）"],
-      "mustNotShow": ["可辨識的人物臉部當主體", "利尻島或其他島冒充禮文島", "單一旅館、民宿或店家的招牌當主體", "AI 生成或合成畫面", "本站其他頁已用的封面（Rebun_island_(52357580650).jpg、Rebun_20140725_110632.jpg、Rebun's_Momoiwa_(52357581315).jpg、Grilled_Fish_HokkeChanChanYaki.jpg、利尻與稚內各頁封面）"],
+      "mustShow": [
+        "能確定在禮文島拍的島景（海岸線與丘陵、北部岬角或花季原野）"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部當主體",
+        "利尻島或其他島冒充禮文島",
+        "單一旅館、民宿或店家的招牌當主體",
+        "AI 生成或合成畫面",
+        "本站其他頁已用的封面（Rebun_island_(52357580650).jpg、Rebun_20140725_110632.jpg、Rebun's_Momoiwa_(52357581315).jpg、Grilled_Fish_HokkeChanChanYaki.jpg、利尻與稚內各頁封面）"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Gorota1.JPG",
-        "focalPoint": {"x": 0.5, "y": 0.45},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是 Furiko7e 2012 年 6 月 12 日在禮文島北部拍的「ゴロタ岬から見たスコトン岬とトド島」（分類 Cape Sukoton、Cape Gorota、Todo Island (Rebun)）。畫面從ゴロタ岬的草坡往北看，前景是初夏的草原，中景是鮑古丹一帶的海灣與通往須古頓岬的海岸道路，遠處是須古頓岬與海驢島（トド島），藍天藍海，一眼看得出是禮文島北端的島景，也是正文提到的須古頓岬與北部賞花一帶，和桃岩一帶的封面不重複。原圖 2592×1944，裁成 16:9 後是 2592×1458，焦點放在 y 0.45，保留岬角、海灣與草坡。草坡上有幾位遠處的健行者，最近的一位低著頭、臉看不清楚，不是主體。cover-02（663highland 2013 年從須古頓岬看ゴロタ岬）也能確定是禮文島，但陰天、畫面偏灰，主題感較弱，保留為備案。Raita Futo 2022-07-26 那組（Rebun's coastline、Rebun island mountains 等）與 Suicasmo 2014-08-14 那組多在桃岩展望台一帶，和已用的桃岩封面同區域，不選；Cape Sukoton 2019 畫面有民宿招牌，不選。",
       "sourcing": {
@@ -100,6 +119,236 @@
             "property": "none",
             "risk": "low",
             "notes": "沒有人物與建物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "flowers-west-coast",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "北海道禮文島旅遊值得去嗎？",
+      "purpose": "讓還在考慮的讀者看到「花之浮島」夏天的樣子：野花開在面海的山坡上。",
+      "mustShow": [
+        "禮文島山坡上的野花",
+        "海與島上的山稜"
+      ],
+      "mustNotShow": [
+        "其他地方的花田冒充禮文島",
+        "可辨識的人物臉部",
+        "店家或旅館招牌"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "北海道禮文島旅遊值得去嗎？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_48_l.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "flowers-01 是禮文町素材「元地灯台1」，2006 年 7 月 1 日拍：前景是紫色的鳶尾與黃色的金鳳花，背後是綠色山稜、岩壁與海灣，右下看得到海邊的聚落。原圖 1280×851，橫式清楚。正文這一節講夏天約 300 種高山植物與西海岸的斷崖，這張同時有花和海岸山稜。圖說不寫花的確切種名，只寫顏色。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這次先查官方素材：環境省利尻禮文サロベツ國立公園（env.go.jp）的景點照片只有 890×500、首頁圖庫 405×270，主視覺 2732×920 是利尻山與佐呂別，都不合格；禮文島觀光協會網站連線被拒，讀不到條款，不用。禮文町官網「礼文町の観光地の写真」允許商用與加工、不用聯絡，62 張裡寬 1200 px 以上的只有 18 張（其餘 800 px），從中挑出。 這一節用「元地灯台1」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "flowers-01",
+          "sourceType": "official-material",
+          "provider": "礼文町（礼文町の観光地の写真）",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_48_l.jpg",
+          "sourceTitle": "礼文町の観光地の写真「元地灯台1」",
+          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「元地灯台1」（kanko_48）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-07-01。",
+          "takenAt": "2006-07",
+          "width": 1280,
+          "height": 851,
+          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
+          "applicationRequired": false,
+          "matchType": "exact",
+          "whyItFits": "禮文町官方素材，標題是元地燈塔一帶；畫面是夏天山坡上的野花與後方的海岸山稜，對應正文「花之浮島」與西海岸斷崖。",
+          "altDraft": "禮文島元地燈塔一帶的山坡，前景開著紫色鳶尾與黃色小花，後方是綠色山稜與海灣",
+          "captionDraft": "元地燈塔一帶山坡上的夏季野花（2006 年 7 月）。",
+          "creditDraft": "照片：禮文町",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀；遠處有小聚落，看不出招牌",
+            "risk": "low",
+            "notes": "沒有人物、車輛或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "sea-of-clouds",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "禮文島的霧與雲海",
+      "purpose": "讓讀者看到從禮文島高處看雲海的樣子，判斷要不要為了雲海在島上住一晚。",
+      "mustShow": [
+        "從禮文島高處看到的雲海"
+      ],
+      "mustNotShow": [
+        "利尻島上拍的雲海冒充禮文島",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "禮文島的霧與雲海",
+        "afterBlocks": 2
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_60_l.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "clouds-01 是禮文町素材「利尻11」，2006 年 6 月 24 日拍：前景是禮文島長滿樹林的山坡，中間一整片雲海蓋住海峽，對面是露出雲海的利尻山。素材頁全是禮文町的觀光地，拍攝位置在禮文島；正文第二段講冷霧在 200 公尺以下時從高處看得到雲海，所以放在第二段之後。原圖 1280×851。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這次先查官方素材：環境省利尻禮文サロベツ國立公園（env.go.jp）的景點照片只有 890×500、首頁圖庫 405×270，主視覺 2732×920 是利尻山與佐呂別，都不合格；禮文島觀光協會網站連線被拒，讀不到條款，不用。禮文町官網「礼文町の観光地の写真」允許商用與加工、不用聯絡，62 張裡寬 1200 px 以上的只有 18 張（其餘 800 px），從中挑出。 這一節用「利尻11」。"
+      },
+      "candidates": [
+        {
+          "candidateId": "clouds-01",
+          "sourceType": "official-material",
+          "provider": "礼文町（礼文町の観光地の写真）",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_60_l.jpg",
+          "sourceTitle": "礼文町の観光地の写真「利尻11」",
+          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「利尻11」（kanko_60）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-06-24。",
+          "takenAt": "2006-06",
+          "width": 1280,
+          "height": 851,
+          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
+          "applicationRequired": false,
+          "matchType": "exact",
+          "whyItFits": "禮文町官方素材；畫面是從禮文島山上看出去的雲海，對面的利尻山露出雲層，正好對應正文說的雲海。",
+          "altDraft": "從禮文島的樹林山坡望出去，海面被一片雲海蓋住，對岸的利尻山露出在雲上",
+          "captionDraft": "從禮文島看出去的雲海與對岸的利尻山（2006 年 6 月）。",
+          "creditDraft": "照片：禮文町",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、車輛或店家招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "rishiri-view",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "禮文島和利尻島怎麼一起排？",
+      "purpose": "讓讀者看到兩座島隔著海峽相望的距離感，理解兩島可以一起排。",
+      "mustShow": [
+        "從禮文島隔海看到的利尻山"
+      ],
+      "mustNotShow": [
+        "利尻島上拍的照片",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "禮文島和利尻島怎麼一起排？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_59_l.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "rishiri-01 是禮文町素材「利尻10」，2006 年 7 月 1 日晴天拍：前景是禮文島的草坡，隔著藍色海峽是完整的利尻山。原圖 1280×851。和雲海那張同樣看得到利尻山，但這張是晴天、海面清楚，表現的是兩島的距離，放在講兩島怎麼排的這一節。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "這次先查官方素材：環境省利尻禮文サロベツ國立公園（env.go.jp）的景點照片只有 890×500、首頁圖庫 405×270，主視覺 2732×920 是利尻山與佐呂別，都不合格；禮文島觀光協會網站連線被拒，讀不到條款，不用。禮文町官網「礼文町の観光地の写真」允許商用與加工、不用聯絡，62 張裡寬 1200 px 以上的只有 18 張（其餘 800 px），從中挑出。 這一節用「利尻10」；同系列的「利尻9」逆光、「利尻12」山頂被雲遮住，不選。"
+      },
+      "candidates": [
+        {
+          "candidateId": "rishiri-01",
+          "sourceType": "official-material",
+          "provider": "礼文町（礼文町の観光地の写真）",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_59_l.jpg",
+          "sourceTitle": "礼文町の観光地の写真「利尻10」",
+          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「利尻10」（kanko_59）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-07-01。",
+          "takenAt": "2006-07",
+          "width": 1280,
+          "height": 851,
+          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
+          "termsCheckedAt": "2026-10-29",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
+          "applicationRequired": false,
+          "matchType": "exact",
+          "whyItFits": "禮文町官方素材；從禮文島草坡隔著海峽看利尻山，直接呈現兩座島的相對位置。",
+          "altDraft": "從禮文島的綠色草坡隔著藍色海峽望向利尻島，利尻山山頂還有殘雪",
+          "captionDraft": "從禮文島隔海看到的利尻山（2006 年 7 月）。",
+          "creditDraft": "照片：禮文町",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、車輛或店家招牌。"
           },
           "checks": {
             "fullImageInspected": true,

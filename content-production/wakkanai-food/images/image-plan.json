@@ -7,9 +7,11 @@
   "articleSourceCheckedAt": "2026-10-25",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/wakkanai-food/，不加入 Git、不上傳。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/wakkanai-food/，不加入 Git、不上傳。 2026-10-29 加入文內照片：扇貝與海鮮丼、生海膽丼的季節兩節各放一張料理照（第一段之後）。料理照片只代表料理，不代表店家。",
   "selectedCandidateIds": {
-    "cover": "cover-01"
+    "cover": "cover-01",
+    "seafood-bowl": "seafood-01",
+    "uni-ikura-don": "uni-ikura-01"
   },
   "selectedAt": "2026-10-25",
   "slots": [
@@ -17,15 +19,31 @@
       "slotId": "cover",
       "kind": "cover",
       "purpose": "呈現稚內美食的招牌章魚涮涮鍋（たこしゃぶ），讓讀者一眼知道這篇講的是稚內吃什麼。",
-      "mustShow": ["稚內的地方料理，優先是水章魚做的章魚涮涮鍋（薄切章魚片與鍋）"],
-      "mustNotShow": ["店家外觀、招牌或店家官網照片", "可辨識的人物臉部", "其他地方的料理冒充稚內", "AI 生成或合成畫面", "讓人誤以為是本站實地拍攝或特定店家的實景"],
+      "mustShow": [
+        "稚內的地方料理，優先是水章魚做的章魚涮涮鍋（薄切章魚片與鍋）"
+      ],
+      "mustNotShow": [
+        "店家外觀、招牌或店家官網照片",
+        "可辨識的人物臉部",
+        "其他地方的料理冒充稚內",
+        "AI 生成或合成畫面",
+        "讓人誤以為是本站實地拍攝或特定店家的實景"
+      ],
       "targetAspectRatio": "16:9",
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Takoshabu.jpg",
-        "focalPoint": {"x": 0.5, "y": 0.58},
-        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.58
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
       },
       "selectionNotes": "cover-01 是在稚內市的餐廳拍的章魚涮涮鍋：左邊是瓦斯爐上的鍋，右邊盤子上是切成薄片的水章魚、白菜與金針菇，正好是文章開頭與第一節的主角。檔案頁沒有寫店名，畫面也沒有店名、招牌或人物，不會讓人以為是某家店的實景或店家照片。原圖 4:3、4032 px 寬，裁成 16:9 時以盤子為中心，保留鍋與章魚片、切掉下方小菜碟的大半。cover-02 是 2010 年的稚內拉麵（鹽味湯頭、海苔），授權 CC BY 2.0，可當備選，但拉麵是文章後段的主題，而且只看得出是一碗拉麵，代表性不如章魚涮涮鍋。",
       "sourcing": {
@@ -100,6 +118,157 @@
             "property": "料理特寫",
             "risk": "low",
             "notes": "背景模糊，沒有店名或人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "seafood-bowl",
+      "kind": "inline",
+      "need": "food",
+      "section": "扇貝與海鮮丼",
+      "purpose": "讓讀者看到北海道海鮮丼的樣子，碗裡有正文說的扇貝。",
+      "mustShow": [
+        "海鮮丼，看得到扇貝"
+      ],
+      "mustNotShow": [
+        "店名、招牌或特定店家的實景",
+        "可辨識的人物"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "扇貝與海鮮丼",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Seafood_bowl.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "seafood-01 是 2015 年在北海道吃到的海鮮丼特寫：扇貝、海膽、鮭魚卵、飛魚卵、鮭魚、鮪魚、蟹肉與玉子燒鋪在飯上。檔案頁只寫北海道、沒寫店名，畫面也沒有店名或招牌，不會被當成某家店的照片。正文這一節先講扇貝、再講副港市場的海鮮丼，照片接在講扇貝的第一段之後。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "官方素材先查過：稚內市網站「免責事項・著作権・リンク」寫明未經許可禁止複製、轉載、改作，不能用；北海道開發局稚內開發建設部網站採公共資料利用規約 PDL1.0（可商用、可加工），但網頁上的照片最大只有 540 px 寬，達不到 1200 px；北海道廳與宗谷總合振興局網站是 CC BY，但沒找到這個主題、寬度夠又沒標第三者提供的照片；稚內觀光協會的觀光網站（north-hokkaido.com）目前暫停公開，查不到素材條款。免費圖庫：Unsplash 搜尋要過機器人檢查（不繞過），用搜尋引擎查 Unsplash、Pexels、Pixabay 的稚內照片沒有找到。所以這一張改用維基共享資源。維基共享資源查「Wakkanai scallop」「ホタテ バター焼き」「scallop butter grilled Hokkaido」「kaisendon Hokkaido」「海鮮丼 北海道」：沒有稚內拍的扇貝料理；小樽三角市場的海鮮丼一組照片檔名寫了店名，不用；File:Jumbo kaisendon.JPG 是余市的散壽司、也寫了店名，不用。"
+      },
+      "candidates": [
+        {
+          "candidateId": "seafood-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Seafood_bowl.jpg",
+          "creatorName": "Douglas Perkins",
+          "sourceTitle": "File:Seafood bowl.jpg",
+          "sourceDescription": "A bowl of seafood obtained in Hokkaido, Japan. There are several kinds of fish, some salmon eggs, and sea urchin on top.（分類 Cuisine of Hokkaido）",
+          "takenAt": "2015-08-14",
+          "width": 4000,
+          "height": 3000,
+          "licenseName": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "matchLimits": "在北海道拍的海鮮丼，不是稚內某家店的；圖說只寫海鮮丼，不說是哪一家。",
+          "whyItFits": "檔案頁說明是在北海道吃到的海鮮丼；畫面左邊有兩片扇貝，中間是海膽與鮭魚卵，對上正文的扇貝與海鮮丼。",
+          "altDraft": "一碗海鮮丼，飯上鋪著扇貝、海膽、鮭魚卵、鮭魚與鮪魚",
+          "captionDraft": "北海道的海鮮丼，左邊白色的是扇貝。",
+          "creditDraft": "照片：Douglas Perkins／Wikimedia Commons／CC0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "料理特寫",
+            "risk": "low",
+            "notes": "沒有人物、店名或商標，不會被當成特定店家照片。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "uni-ikura-don",
+      "kind": "inline",
+      "need": "food",
+      "section": "生海膽丼的季節",
+      "purpose": "讓讀者看到生海膽丼的樣子，對上正文的生海膽丼與生海膽鮭魚卵丼。",
+      "mustShow": [
+        "生海膽鋪在飯上的丼飯"
+      ],
+      "mustNotShow": [
+        "店名、招牌或特定店家的實景",
+        "可辨識的人物",
+        "與禮文島美食頁重複的照片"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "生海膽丼的季節",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/UniIkuraDon.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "uni-ikura-01 是 2011 年拍的生海膽鮭魚卵丼俯視特寫：碗的一半是生海膽、一半是鮭魚卵，加上玉子燒與山葵。正文這一節寫 Hiiragi軒的生海膽丼與源氏的生海膽鮭魚卵丼，畫面兩樣都看得到。檔案頁沒寫拍攝地，所以圖說只寫料理名，不說是稚內或哪家店。茶杯上的字只看得到一部分，認不出店名。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-10-29",
+        "photoSearchNotes": "官方素材先查過：稚內市網站「免責事項・著作権・リンク」寫明未經許可禁止複製、轉載、改作，不能用；北海道開發局稚內開發建設部網站採公共資料利用規約 PDL1.0（可商用、可加工），但網頁上的照片最大只有 540 px 寬，達不到 1200 px；北海道廳與宗谷總合振興局網站是 CC BY，但沒找到這個主題、寬度夠又沒標第三者提供的照片；稚內觀光協會的觀光網站（north-hokkaido.com）目前暫停公開，查不到素材條款。免費圖庫：Unsplash 搜尋要過機器人檢查（不繞過），用搜尋引擎查 Unsplash、Pexels、Pixabay 的稚內照片沒有找到。所以這一張改用維基共享資源。維基共享資源查「uni don」「ウニ丼」「sea urchin rice bowl Hokkaido」：File:Uni don in shakotan.jpg 已用在禮文島美食頁；File:Unidon Murakami.jpg 檔名是函館的店名；岩手、青森的幾張檔名寫了店名；File:Uni don by LWY in Fukuoka.jpg 是福岡的便宜海膽丼、畫面與稚內的生海膽丼差很多。"
+      },
+      "candidates": [
+        {
+          "candidateId": "uni-ikura-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:UniIkuraDon.jpg",
+          "creatorName": "Douglas P. Perkins",
+          "sourceTitle": "File:UniIkuraDon.jpg",
+          "sourceDescription": "Uni-ikura-don. The bottom half is sea urchin, and the top half is roe. Underlying those layers is a bed of rice.（分類 Uni-don）",
+          "takenAt": "2011-07-26",
+          "width": 3648,
+          "height": 2736,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseCheckedAt": "2026-10-29",
+          "matchType": "exact",
+          "matchLimits": "檔案頁沒寫拍攝地，只代表生海膽鮭魚卵丼這道料理，不代表稚內的店。",
+          "whyItFits": "檔案頁說明是海膽鮭魚卵丼（uni-ikura-don），分類 Uni-don；畫面是一碗生海膽與鮭魚卵各半的丼飯，正是正文說的生海膽丼與生海膽鮭魚卵丼。",
+          "altDraft": "俯視一碗生海膽鮭魚卵丼，一半鋪生海膽、一半鋪鮭魚卵，旁邊有玉子燒",
+          "captionDraft": "生海膽鮭魚卵丼。",
+          "creditDraft": "照片：Douglas P. Perkins／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "茶杯上有部分毛筆字，認不出店名",
+            "artwork": "none",
+            "property": "料理特寫",
+            "risk": "low",
+            "notes": "沒有人物；茶杯文字不完整，不會被當成特定店家照片。"
           },
           "checks": {
             "fullImageInspected": true,
