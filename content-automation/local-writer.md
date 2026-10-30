@@ -74,11 +74,9 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
    - 輸出 `<資料夾>/draft-tagged.md`（每句有數字、時間、價格、條件的句子在句號前標 `[F編號]`；結尾 `## 延伸資料`（官方頁）、`## 資料來源`）與 `<資料夾>/publication.json`（`articleId`、`targetPath`、`seoTitle` 與 H1 相同、`seoDescription` 120 字內含具體數字、`excerpt`）。
    - 跑到通過：`python .agents/skills/japan-travel-answer-first/scripts/fact_tags.py <資料夾>`（產生 `reader-preview.md`）、`node .agents/skills/japan-travel-answer-first/scripts/check-voice.mjs <資料夾>/reader-preview.md`、`python .agents/skills/japan-travel-answer-first/scripts/audit_answer_first.py <資料夾>/reader-preview.md --json --article-type <大綱這頁的 pageType（place-entry 或 aspect-page）> --reference-review <資料夾>/reference-review.md`（要 `mechanical_clear`）。
    - 不讀 `content-production` 其他文章的正文、不改資料夾以外的檔案、不 commit。Windows 的 heredoc 會吃反斜線，寫檔用 Write 工具。
-2. **潤稿者**（新子代理，沒寫過這篇）。照 `.agents/skills/japan-travel-polish/SKILL.md` 做第 1～4-1 步：第 1-1 步依 `references/style-sources.md` 挑三到五篇好運日本行與 MATCHA 的同類文章，用 curl 存到系統暫存資料夾（不放進 repo），講法寫進 `<資料夾>/polish-notes.md`；先把 `draft-tagged.md`、`reader-preview.md` 各複製成 `before-draft-tagged.md`、`before-reader-preview.md`；五項檢查（`check-polish.mjs --article=<id>`、`fact_tags.py`、`audit_answer_first.py`、`check-voice.mjs --final`、`check-copy.mjs` 列進讀過的每篇）全部通過。
-3. **編輯挑錯**（新子代理）：讀 `.agents/skills/japan-travel-polish/agents/editor-review.md` 照做，審 `<資料夾>/reader-preview.md`，輸出 `<資料夾>/editor-review.md`，只讀這篇文章。另外告訴它：網站經營者希望讀起來像好運日本行、MATCHA，特別討厭硬裝口語與同一個條件詞整篇重複。
-4. **潤稿者修一輪**（用 SendMessage 回到第 2 步的潤稿者）：照潤稿 Skill 第 4-2 步，只處理措辭，「內容疑問」留給驗收；改完重跑五項檢查，採納與不採納寫進 `polish-notes.md`。
-5. **意義比對**（新子代理）：讀 `.agents/skills/japan-travel-polish/agents/meaning-drift.md` 照做（把 `<文章資料夾>`、`<地點>` 換成實際值）。
-6. **潤稿者修正**（SendMessage 回潤稿者）：只改意義比對列出的「不可接受」與「遺失」，重跑五項檢查，記進 `polish-notes.md`。
+2. **潤稿者**（新子代理，沒寫過這篇）。照 `.agents/skills/japan-travel-polish/SKILL.md` 做第 1～3 步（2026-10-30 起改成短原則加範例，不讀參考文章、沒有編輯挑錯一輪）：讀 `references/examples.md`；先把 `draft-tagged.md`、`reader-preview.md` 各複製成 `before-draft-tagged.md`、`before-reader-preview.md`；四項檢查（`check-polish.mjs --article=<id>`、`fact_tags.py`、`audit_answer_first.py`、`check-voice.mjs --final`）全部通過。
+3. **意義比對**（新子代理）：先跑 `node .agents/skills/japan-travel-polish/scripts/check-modifiers.mjs <資料夾>/before-reader-preview.md <資料夾>/reader-preview.md`，把輸出一起交給它當線索；它讀 `.agents/skills/japan-travel-polish/agents/meaning-drift.md` 照做（把 `<文章資料夾>`、`<地點>` 換成實際值）。
+4. **潤稿者修正**（SendMessage 回潤稿者）：只改意義比對列出的「不可接受」與「遺失」，盡量保留潤稿後的寫法，重跑四項檢查，記進 `polish-notes.md`。
 
 ### 3. 驗收
 

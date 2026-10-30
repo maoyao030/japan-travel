@@ -65,12 +65,14 @@ test('合格的正文通過，門檻和研究時的 check-voice.mjs 一樣', () 
   assert.deepEqual(checkVoice('# 只有標題\n\n短句。\n').issues, [])
 })
 
-test('中英數之間的空格、分號與「官方沒寫」「來這裡」會被擋下，訊息是繁體中文', () => {
+test('「官方沒寫」「來這裡」會被擋下；空格、分號、「不妨」這類數字只記錄（Darren 2026-10-30）', () => {
   const spaced = checkVoice(article(good.replaceAll('3公里', '3 公里').replaceAll('2004年', '2004 年').replaceAll('4月', '4 月').replaceAll('11月', '11 月')))
-  assert.match(spaced.issues.join('\n'), /中英數之間的空格每千字[\d.]+（上限2），寫「約5分鐘」/)
+  assert.deepEqual(spaced.issues, [])
+  assert.ok(spaced.result.cjkAsciiSpaces > LIMITS.cjkAsciiSpaces, '數字照樣量出來')
 
   const semicolon = checkVoice(article(good.replace('，觀光協會稱它', '；觀光協會稱它')))
-  assert.match(semicolon.issues.join('\n'), /分號每千字[\d.]+（上限0.5）/)
+  assert.deepEqual(semicolon.issues, [])
+  assert.ok(semicolon.result.semicolons > 0)
 
   const notFound = checkVoice(article(good.replace('出發前最好先確認路線', '開放時間官方沒寫，出發前最好先確認路線')))
   assert.match(notFound.issues.join('\n'), /「官方沒寫」「未查」這類用字1次（上限0），查不到的不寫/)
@@ -79,13 +81,15 @@ test('中英數之間的空格、分號與「官方沒寫」「來這裡」會�
   assert.match(comeHere.issues.join('\n'), /「來這裡」「來的話」這類用字1次（上限0），改成前往、造訪、抵達/)
 
   const bufang = checkVoice(article(good.replace('出發前最好先確認路線', '出發前不妨先確認路線').replace('不開車也去得了', '不開車不妨搭巴士')))
-  assert.match(bufang.issues.join('\n'), /「不妨」2次（整篇最多1次）/)
+  assert.deepEqual(bufang.issues, [])
+  assert.equal(bufang.result.bufang, 2)
 })
 
-test('句子切太碎也不通過，提示把短句併回去', () => {
+test('句長不擋，只記錄（Darren 2026-10-30）', () => {
   const choppy = '白色道路是扇貝殼鋪成的路。全長約3公里。觀光協會說它很美。宗谷丘陵是冰河期形成的地形。2004年列為北海道遺產。5月下旬到10月下旬有放牧的黑牛。'
-  const {issues} = checkVoice(article(choppy))
-  assert.match(issues.join('\n'), new RegExp(`平均句長[\\d.]+字（下限${MIN_AVG_SENTENCE}），句子切太碎`))
+  const {issues, result} = checkVoice(article(choppy))
+  assert.deepEqual(issues, [])
+  assert.ok(result.avgSentence < MIN_AVG_SENTENCE)
 })
 
 test('範例檔本身通過口吻與標點檢查', async () => {
@@ -99,11 +103,11 @@ test('範例檔本身通過口吻與標點檢查', async () => {
 test('命令列接受文章封包資料夾，沒通過時結束碼為 1', async () => {
   const directory = await mkdtemp(path.join(tmpdir(), 'japan-travel-voice-'))
   try {
-    await writeFile(path.join(directory, 'reader-preview.md'), article(good.replace('，觀光協會稱它', '；觀光協會稱它')))
+    await writeFile(path.join(directory, 'reader-preview.md'), article(good.replace('不開車也去得了', '關鍵是不開車也去得了')))
     const failed = spawnSync(process.execPath, [script, directory], {encoding: 'utf8'})
     assert.equal(failed.status, 1)
     assert.match(failed.stdout, /未通過/)
-    assert.match(failed.stdout, /分號每千字/)
+    assert.match(failed.stdout, /AI 腔「關鍵」/)
 
     await writeFile(path.join(directory, 'reader-preview.md'), article(good))
     const passed = spawnSync(process.execPath, [script, directory, '--json'], {encoding: 'utf8'})
@@ -116,9 +120,9 @@ test('命令列接受文章封包資料夾，沒通過時結束碼為 1', async 
 
 test('定稿時會把口吻與標點問題當成失敗原因', () => {
   assert.deepEqual(inspectVoice(article(good)).issues, [])
-  const issues = inspectVoice(article(good.replace('，觀光協會稱它', '；觀光協會稱它'))).issues
+  const issues = inspectVoice(article(good.replace('不開車也去得了', '關鍵是不開車也去得了'))).issues
   assert.equal(issues.length, 1)
-  assert.match(issues[0], /^口吻與標點檢查未通過：分號每千字/)
+  assert.match(issues[0], /^口吻與標點檢查未通過：AI 腔「關鍵」/)
 })
 
 test('AI 腔句型每個階段都擋，訊息附原句', () => {
@@ -132,19 +136,20 @@ test('AI 腔句型每個階段都擋，訊息附原句', () => {
   assert.ok(AI_PHRASES.length >= 10)
 })
 
-test('用字頻率只在定稿（final）且正文夠長時提醒，不算失敗', () => {
+test('用字頻率預設不提醒，加 --rates（showRates）才列出，永遠不算失敗（Darren 2026-10-30）', () => {
   const sentence = '從稚內港搭船約1小時40分就到鴛泊港，所以帶腳踏車的人記得要先早點到渡輪站辦手續，而且要先確認班次與預約。'
   const long = Array.from({length: Math.ceil(MIN_RATE_CHARS / sentence.length) + 1}, () => sentence).join('')
   const markdown = article(long)
   assert.deepEqual(checkVoice(markdown).warnings, [])
-  const final = checkVoice(markdown, {final: true})
+  assert.deepEqual(checkVoice(markdown, {final: true}).warnings, [], '預設不提醒')
+  const final = checkVoice(markdown, {final: true, showRates: true})
   const warnings = final.warnings.join('\n')
   assert.match(warnings, /「所以」每千字[\d.]+次（真人文章最多約0.6）/)
   assert.match(warnings, /「的人」每千字[\d.]+次（真人文章最多約1），「帶腳踏車的人要…」改成「帶腳踏車的話…」/)
   assert.equal(final.issues.some((issue) => /真人文章/.test(issue)), false, '頻率只提醒，不擋')
   assert.equal(FINAL_RATES.記得.limit, 0.5)
   assert.equal('預約與約1小時'.match(FINAL_RATES.約.pattern)?.length, 1, '「預約」不算「約」')
-  assert.deepEqual(checkVoice(article(good), {final: true}).warnings, [], '短文不檢查頻率')
+  assert.deepEqual(checkVoice(article(good), {final: true, showRates: true}).warnings, [], '短文不檢查頻率')
 })
 
 
