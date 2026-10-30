@@ -36,5 +36,5 @@ node scripts/check-planning.mjs
 - `groupId`、`pages[]`、`division[]`、`links[]`、`writingOrder[]`、`gaps[]`；另有 `spotCoverage[]`、`experienceLeads[]`、`mediaPlan[]`（欄位見 [景點比對與體驗研究](experience-research.md)，檢查程式目前不檢查）。
 - `pages[]`：`articleId`、`pageType`、`placeId`、`targetPath`、`primaryQuery`、`secondaryQueries`、`h1`、`mustAnswer`、`headings[]`。每個標題：`level`（2 或 3）、`text`、`facts`（事實編號）、`answers`（回答第幾個必答問題，從 0 起算）。
 - `division[]`：`topicKey`、`description`、`owner`、`summarizedBy`。
-- `links[]`：`from`、`to`、`purpose`，可加 `section` 與連結句 `sentence`；連到群外頁面標 `external: true`。
+- `links[]`：`from`、`to`、`purpose`，可加 `section` 與連結句 `sentence`（寫法照寫作 Skill `writing-guide.md` 第10條：先講讀者什麼情況要點過去，再說那頁整理了什麼，不寫「…，見○○」）；連到群外頁面標 `external: true`。
 - 檢查程式擋下：H1 沒有主要查詢或用冒號、正文 H2 沒帶地名、次要查詢不在任何標題、必答問題沒有對應標題、事實編號不在事實表、同一件事兩個負責頁或搶了全站分工表裡別頁的事、主題頁沒連回主頁或主頁沒連到主題頁、地點主頁沒排在該地點主題頁之後。
