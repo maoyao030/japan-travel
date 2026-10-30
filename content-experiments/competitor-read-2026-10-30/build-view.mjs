@@ -1,7 +1,8 @@
 // 產生 view.html：旭山動物園「先讀競品再寫」試寫，跟上線版與舊初稿一節一節對照，手機好讀。
 // 用法：node build-view.mjs（在本資料夾執行）
 import fs from 'node:fs';
-const dir = 'asahiyama-zoo';
+const arts = [['asahiyama-zoo', '旭山動物園'], ['sounkyo-stay', '層雲峽住宿'], ['wakkanai-food', '稚內美食']].filter(([d]) => fs.existsSync(`${d}/draft-only/reader-preview.md`));
+let dir = arts[0][0];
 const read = f => fs.readFileSync(`${dir}/${f}`, 'utf8');
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const inline = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
@@ -41,13 +42,20 @@ function paired(aFile, bFile, aLabel, bLabel) {
   }).join('\n');
 }
 
-const views = [
+const viewsFor = () => [
   ['P1', '成品對照', `新寫法（讀競品＋潤稿）是綠色，目前上線版是藍色。`, paired('reader-preview.md', 'live.md', '新寫法', '上線版')],
   ['P2', '初稿對照', `兩位作者還沒潤稿前的樣子：綠色讀過競品，藍色沒讀（當初的初稿，事實是舊的）。語順的差別在這裡最明顯。`, paired('draft-only/reader-preview.md', 'old-draft.md', '讀競品的初稿', '舊初稿')],
   ['N', '新寫法全文', '讀競品寫、再照新流程潤稿的成品。', md(read('reader-preview.md'))],
   ['L', '上線版全文', '目前網站上的版本。', md(read('live.md'))],
 ];
-const notes = fs.existsSync(`${dir}/summary.html`) ? fs.readFileSync(`${dir}/summary.html`, 'utf8') : '';
+let mainHtml = '';
+for (const [d] of arts) {
+  dir = d;
+  const notes = fs.existsSync(`${d}/summary.html`) ? fs.readFileSync(`${d}/summary.html`, 'utf8') : '';
+  const cols = viewsFor().map(([k, , meta, body]) => `<section class="col" data-v="${k}"><div class="meta">${meta}</div><article lang="zh-Hant">${body}</article></section>`).join('\n');
+  mainHtml += `<div class="art" data-a="${d}">${notes}${cols}</div>`;
+}
+const vlabels = [['P1', '成品對照'], ['P2', '初稿對照'], ['N', '新寫法全文'], ['L', '上線版全文']];
 const html = `<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>先讀競品再寫</title>
 <style>
 :root{--bg:#fbfaf7;--fg:#1f1e1c;--muted:#6b6862;--line:#e4e1da;--card:#fff;--n:#15803d;--nb:#eef7f0;--l:#1d4ed8;--lb:#eef2fb;--th:#f3f1ec}
@@ -67,7 +75,7 @@ details ul{padding-left:1.2em;margin:6px 0}
 .row button{flex:none;font:inherit;font-size:.92rem;padding:5px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;line-height:1.5}
 .row button.on{background:var(--fg);color:var(--bg);border-color:var(--fg);font-weight:700}
 main{padding:8px 16px 80px;max-width:760px;margin:0 auto}
-.col{display:none}.col.on{display:block}
+.art,.col{display:none}.art.on,.col.on{display:block}
 .meta{font-size:.88rem;color:var(--muted);line-height:1.6;margin:6px 0 4px}
 article h2{font-size:1.4rem;line-height:1.5;margin:20px 0 10px}
 article h3{font-size:1.2rem;line-height:1.5;margin:30px 0 8px}
@@ -98,20 +106,22 @@ th{background:var(--th)}
 }
 </style></head><body>
 <div class="top">
-<h1 class="t">旭山動物園：先讀競品再寫</h1>
-<p class="note">作者動筆前先讀了五篇排在前面的中文文章，只學他們先講什麼、後講什麼，事實照樣只用我們的事實表。標題是大綱定的，兩版一樣。延伸資料與資料來源沒列。</p>
-${notes}
+<h1 class="t">先讀競品再寫：試寫對照</h1>
+<p class="note">作者動筆前先讀了排在前面的中文文章，只學他們先講什麼、後講什麼，事實照樣只用我們的事實表。標題是大綱定的，兩版一樣。延伸資料與資料來源沒列。</p>
 </div>
-<div class="bar"><div class="row" id="vers">${views.map(([k, l], i) => `<button data-v="${k}"${i ? '' : ' class="on"'}>${l}</button>`).join('')}</div></div>
+<div class="bar"><div class="row" id="arts">${arts.map(([d, n], i) => `<button data-a="${d}"${i ? '' : ' class="on"'}>${n}</button>`).join('')}</div><div class="row" id="vers" style="margin-top:6px">${vlabels.map(([k, l], i) => `<button data-v="${k}"${i ? '' : ' class="on"'}>${l}</button>`).join('')}</div></div>
 <main>
-${views.map(([k, , meta, body]) => `<section class="col" data-v="${k}"><div class="meta">${meta}</div><article lang="zh-Hant">${body}</article></section>`).join('\n')}
+${mainHtml}
 </main>
 <script>
-let V='P1';
+let V='P1', A='${arts[0][0]}';
 function draw(){
+  document.querySelectorAll('.art').forEach(e=>e.classList.toggle('on',e.dataset.a===A));
   document.querySelectorAll('.col').forEach(e=>e.classList.toggle('on',e.dataset.v===V));
+  document.querySelectorAll('#arts button').forEach(b=>b.classList.toggle('on',b.dataset.a===A));
   document.querySelectorAll('#vers button').forEach(b=>b.classList.toggle('on',b.dataset.v===V));
 }
+document.getElementById('arts').onclick=e=>{const b=e.target.closest('button');if(!b)return;A=b.dataset.a;draw();scrollTo(0,0);};
 document.getElementById('vers').onclick=e=>{const b=e.target.closest('button');if(!b)return;V=b.dataset.v;draw();scrollTo(0,0);};
 draw();
 </script></body></html>`;
