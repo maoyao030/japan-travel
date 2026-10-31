@@ -45,6 +45,7 @@ function paired(aFile, bFile, aLabel, bLabel) {
 const viewsFor = () => [
   ['P1', '成品對照', `新寫法（讀競品＋潤稿）是綠色，目前上線版是藍色。`, paired('reader-preview.md', 'live.md', '新寫法', '上線版')],
   ['P2', '初稿對照', `兩位作者還沒潤稿前的樣子：綠色讀過競品，藍色沒讀（當初的初稿，事實是舊的）。語順的差別在這裡最明顯。`, paired('draft-only/reader-preview.md', 'old-draft.md', '讀競品的初稿', '舊初稿')],
+  ['P3', '先刪再調', `2026-10-31 照「先刪再調」再潤一次：綠色是這一版，藍色是上一版。刪掉讀者用不到的規格，用逗號接的句子寫出彼此的關係。`, fs.existsSync(`${dir}/v1/reader-preview.md`) ? paired('reader-preview.md', 'v1/reader-preview.md', '這一版', '上一版') : '<p>這篇還沒試。</p>'],
   ['N', '新寫法全文', '讀競品寫、再照新流程潤稿的成品。', md(read('reader-preview.md'))],
   ['L', '上線版全文', '目前網站上的版本。', md(read('live.md'))],
 ];
@@ -55,7 +56,7 @@ for (const [d] of arts) {
   const cols = viewsFor().map(([k, , meta, body]) => `<section class="col" data-v="${k}"><div class="meta">${meta}</div><article lang="zh-Hant">${body}</article></section>`).join('\n');
   mainHtml += `<div class="art" data-a="${d}">${notes}${cols}</div>`;
 }
-const vlabels = [['P1', '成品對照'], ['P2', '初稿對照'], ['N', '新寫法全文'], ['L', '上線版全文']];
+const vlabels = [['P1', '成品對照'], ['P2', '初稿對照'], ['P3', '先刪再調'], ['N', '新寫法全文'], ['L', '上線版全文']];
 const html = `<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>先讀競品再寫</title>
 <style>
 :root{--bg:#fbfaf7;--fg:#1f1e1c;--muted:#6b6862;--line:#e4e1da;--card:#fff;--n:#15803d;--nb:#eef7f0;--l:#1d4ed8;--lb:#eef2fb;--th:#f3f1ec}

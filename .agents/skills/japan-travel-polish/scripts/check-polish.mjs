@@ -61,7 +61,34 @@ function diff(label, before, after) {
   return issues
 }
 
-export function checkPolish(beforeText, afterText, {linkSentences = []} = {}) {
+/** polish-notes.md「## 刪掉的事實」一節列出的事實編號（2026-10-31 先刪再調）。 */
+export function removedFactIds(polishNotes) {
+  const ids = new Set()
+  let inSection = false
+  for (const line of normalize(polishNotes).split('\n')) {
+    if (/^#{1,6}\s/.test(line)) inSection = /^#{1,6}\s+刪掉的事實/.test(line)
+    else if (inSection) for (const match of line.matchAll(/(?:[a-z-]+:)?[FR]\d+/g)) ids.add(match[0])
+  }
+  return ids
+}
+
+/** 潤稿前的句子裡，帶有刪掉事實編號的那些句子；只出現在這些句子裡的數字與日文可以跟著消失。 */
+function removableValues(before, removed) {
+  const keep = {nums: new Set(), kana: new Set()}
+  const drop = {nums: new Set(), kana: new Set()}
+  for (const sentence of before.split(/(?<=[。！？\n])/)) {
+    const ids = factIds(sentence)
+    const target = [...ids].some((id) => removed.has(id)) ? drop : keep
+    for (const value of numbers(sentence)) target.nums.add(value)
+    for (const value of kana(sentence)) target.kana.add(value)
+  }
+  return {
+    nums: new Set([...drop.nums].filter((value) => !keep.nums.has(value))),
+    kana: new Set([...drop.kana].filter((value) => !keep.kana.has(value))),
+  }
+}
+
+export function checkPolish(beforeText, afterText, {linkSentences = [], removed = new Set()} = {}) {
   const issues = []
   const before = normalize(beforeText)
   const after = normalize(afterText)
@@ -80,6 +107,20 @@ export function checkPolish(beforeText, afterText, {linkSentences = []} = {}) {
   const whole = (text) => ({ids: factIds(text), nums: numbers(text), kana: kana(text)})
   const beforeAll = whole(before)
   const afterAll = whole(after)
+  // 刪掉的事實：編號從潤稿前的集合拿掉，只出現在那些句子裡的數字與日文也拿掉；刪了什麼列出來交給意義比對
+  const removedReport = []
+  if (removed.size) {
+    const allowed = removableValues(before, removed)
+    for (const [key, set] of [['ids', removed], ['nums', allowed.nums], ['kana', allowed.kana]]) {
+      for (const value of set) if (beforeAll[key].has(value) && !afterAll[key].has(value)) {
+        beforeAll[key].delete(value)
+        removedReport.push(value)
+      }
+    }
+    const unknown = [...removed].filter((id) => !factIds(before).has(id))
+    if (unknown.length) issues.push(`刪掉的事實不在潤稿前：${unknown.join('、')}`)
+    // 一個編號常包好幾件事，只刪其中一部分時編號會留著，這樣可以
+  }
   for (const issue of [
     ...diff('事實編號', beforeAll.ids, afterAll.ids),
     ...diff('數字', beforeAll.nums, afterAll.nums),
@@ -112,7 +153,7 @@ export function checkPolish(beforeText, afterText, {linkSentences = []} = {}) {
   for (const sentence of linkSentences) {
     if (!plainAfter.includes(sentence)) issues.push(`內連句沒有原樣出現：${sentence}`)
   }
-  return {status: issues.length ? 'polish_changed_facts' : 'polish_safe', issues, moves}
+  return {status: issues.length ? 'polish_changed_facts' : 'polish_safe', issues, moves, removed: removedReport}
 }
 
 function linkSentencesFor(outlinePath, articleId) {
@@ -150,9 +191,13 @@ if (isCli) {
   // 潤稿後檔案旁邊的研究記錄（或 --reference=）裡的待補內連句也要原樣保留
   const referencePath = option('reference') ?? path.join(path.dirname(files[1]), 'reference-review.md')
   if (existsSync(referencePath)) linkSentences.push(...pendingLinkSentences(readFileSync(referencePath, 'utf8')))
-  const result = checkPolish(readFileSync(files[0], 'utf8'), readFileSync(files[1], 'utf8'), {linkSentences})
+  // 潤稿後檔案旁邊的 polish-notes.md（或 --notes=）「## 刪掉的事實」列的編號可以不見
+  const notesPath = option('notes') ?? path.join(path.dirname(files[1]), 'polish-notes.md')
+  const removed = existsSync(notesPath) ? removedFactIds(readFileSync(notesPath, 'utf8')) : new Set()
+  const result = checkPolish(readFileSync(files[0], 'utf8'), readFileSync(files[1], 'utf8'), {linkSentences, removed})
   console.log(result.status === 'polish_safe' ? `通過：潤稿沒有改到事實（檢查了 ${linkSentences.length} 句內連句）` : '未通過：潤稿改到了事實')
   for (const issue of result.issues) console.log(`  - ${issue}`)
+  if (result.removed.length) console.log(`刪掉的事實與跟著消失的數字、日文（交給意義比對確認讀者用不到）：${result.removed.join('、')}`)
   if (result.moves.length) console.log('跨段刪重複或搬動（交給意義比對確認）：')
   for (const move of result.moves) console.log(`  · ${move}`)
   if (result.issues.length) process.exitCode = 1
