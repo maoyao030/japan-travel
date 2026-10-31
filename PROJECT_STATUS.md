@@ -1742,3 +1742,12 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 新工具：`check-modifiers.mjs`（實驗資料夾內），適合當意義比對的線索，不適合擋發布。
 - 唯一下一步：Darren 決定要不要把評審抓到的日文詞（2等艙、9合目、夏期、冬期、始發）加進 `check-voice.mjs`。
 - Git：分支 `claude/gemini-editing-test-95cb32`，未合併 `main`。
+
+## 2026-10-31 Claude Code：讀競品、先刪再調併進 main
+
+- **已完成**：旭山動物園、層雲峽住宿、稚內美食三篇試跑「讀競品再寫」與「先刪再調」潤稿，Darren 看過三篇都認可。對照頁 `content-experiments/competitor-read-2026-10-30/view.html`。
+- **已決定**：寫作前讀競品（只學順序）；官方普通事實直接寫、事實表不用每筆都寫；連結句不寫「見○○」；潤稿先刪讀者用不到的規格，再寫出句子之間的關係，不靠加句號也不併長句。網路上沒有處理中文逗號過多的現成套件，中英文去 AI 味 Skill 只借了「先刪再調」（deslop-zh）與「改完要像真人」（humanizer）的想法。
+- **改的檔案**：寫作 Skill `writing-guide.md`、`competitor-reading.md`、`page-types.md`；潤稿 Skill `SKILL.md`、`agents/meaning-drift.md`、`scripts/check-polish.mjs`（`## 刪掉的事實`）；`content-automation/local-writer.md`；`RULES_OVERVIEW.md`；`AGENTS.md`。
+- **自動寫作**：每輪開始會合併 `origin/main`，下一輪起就用新流程；排定工作本身沒動。
+- **尚未完成**：三篇試跑稿還沒上線，要不要換掉上線版由 Darren 決定；試跑中新出現的名稱還沒加進 `glossary.json`。
+- **唯一下一步**：看自動寫作下一輪的產出，確認新流程在排定工作裡照做。
