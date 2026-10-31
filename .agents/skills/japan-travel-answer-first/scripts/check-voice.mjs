@@ -9,6 +9,10 @@
  * 門檻依 2026-10-18 量的 9 篇台灣旅遊文章訂，見 content-experiments/polish-test-2026-10-18/ai-tone-study.md。
  * 只量正文段落：標題、表格、條列、引言、圖片與元件標記、程式區塊、事實編號、資料來源段落都不算。
  * scripts/finalize-release.mjs 會在定稿時呼叫 checkVoice，沒通過就不發布。
+ *
+ * 2026-10-30 Darren 決定：數字門檻（句長、逗號、「的話」、標點次數、用字頻率）只記錄在 result，不擋也不提醒。
+ * 寫的人照數字對答案會把文章寫彆扭（換字過關、規則互相夾殺），見 content-experiments/polish-compare-2026-10-30/README.md。
+ * 照擋的只有「出現就是錯」的東西：AI 腔句型、括號外的日文與日式漢字詞、「官方沒寫」與「來這裡」這類用字。
  */
 import {readFileSync, statSync} from 'node:fs'
 import path from 'node:path'
@@ -33,6 +37,9 @@ export const LIMITS = {
   comeHere: 0, // 「來這裡」「來的話」「冬天來」這類現場感用字，改成前往、造訪、抵達
   notFound: 0, // 「官方沒寫」「官方沒有公布」「未查」：查不到的不寫（2026-10-18 Darren 決定）
 }
+// 會擋的只有用字禁令；其他數字只記錄（2026-10-30）
+export const BLOCKING_LIMITS = new Set(['comeHere', 'notFound'])
+// 以下兩個數字也只記錄，不擋（2026-10-30）
 // 句長下限：切太碎也不像人寫的（第 4 輪盲測：平均 26 字讀起來一頓一頓）
 export const MIN_AVG_SENTENCE = 28
 // 整篇最多一次
@@ -167,7 +174,7 @@ export function measure(paragraphs) {
 }
 
 /** AI 腔句型與（定稿時的）用字頻率。 */
-export function checkAiTone(paragraphs, {final = false} = {}) {
+export function checkAiTone(paragraphs, {final = false, showRates = false} = {}) {
   const text = paragraphs.join('\n')
   const issues = []
   const warnings = []
@@ -177,7 +184,8 @@ export function checkAiTone(paragraphs, {final = false} = {}) {
     const sentences = text.split(/(?<=[。！？\n])/).filter((sentence) => sentence.match(pattern)).map((sentence) => sentence.trim())
     issues.push(`AI 腔${label}${hits.length}次，${hint}：${sentences.slice(0, 2).join('／')}`)
   }
-  if (final && text.length >= MIN_RATE_CHARS) {
+  // 用字頻率只記錄（2026-10-30），要看時加 --rates
+  if (final && showRates && text.length >= MIN_RATE_CHARS) {
     for (const [word, {pattern, limit, hint}] of Object.entries(FINAL_RATES)) {
       const rate = ((text.match(pattern) || []).length / text.length) * 1000
       if (rate > limit) warnings.push(`「${word}」每千字${rate.toFixed(1)}次（真人文章最多約${limit}），${hint}`)
@@ -289,27 +297,24 @@ export function checkJapanese(markdown) {
   return {issues, warnings, terms: unique, quoted, styleWords: [...new Set(styleWords)]}
 }
 
-export function checkVoice(markdown, {final = false} = {}) {
+export function checkVoice(markdown, {final = false, showRates = false} = {}) {
   const paragraphs = bodyParagraphs(markdown)
   const result = measure(paragraphs)
   const issues = []
   if (result.chars === 0) return {result, issues, warnings: []}
-  const tone = checkAiTone(paragraphs, {final})
+  const tone = checkAiTone(paragraphs, {final, showRates})
   issues.push(...tone.issues)
   const warnings = [...tone.warnings]
   const japanese = checkJapanese(markdown)
   issues.push(...japanese.issues)
   warnings.push(...japanese.warnings)
   for (const [key, limit] of Object.entries(LIMITS)) {
+    if (!BLOCKING_LIMITS.has(key)) continue
     if (result[key] <= limit) continue
     const value = Number.isInteger(result[key]) ? result[key] : result[key].toFixed(1)
     const unit = key === 'avgSentence' ? '字' : key === 'comeHere' || key === 'notFound' ? '次' : ''
     issues.push(`${LABELS[key]}${value}${unit}（上限${limit}），${HINTS[key]}`)
   }
-  if (result.avgSentence < MIN_AVG_SENTENCE) {
-    issues.push(`平均句長${result.avgSentence.toFixed(1)}字（下限${MIN_AVG_SENTENCE}），句子切太碎，把同一件事的短句併回去`)
-  }
-  if (result.bufang > MAX_BUFANG) issues.push(`「不妨」${result.bufang}次（整篇最多${MAX_BUFANG}次）`)
   return {result, issues, warnings}
 }
 
@@ -328,12 +333,13 @@ if (isCli) {
   const args = process.argv.slice(2)
   const asJson = args.includes('--json')
   const final = args.includes('--final')
+  const showRates = args.includes('--rates')
   const targets = args.filter((arg) => !arg.startsWith('--'))
   if (targets.length === 0) {
     console.error('用法：node check-voice.mjs <文章封包資料夾或 .md 檔> [...更多] [--final] [--json]')
     process.exit(2)
   }
-  const reports = targets.map((target) => checkVoiceTarget(target, {final}))
+  const reports = targets.map((target) => checkVoiceTarget(target, {final, showRates}))
   if (asJson) {
     console.log(JSON.stringify(reports.map(({file, result, issues, warnings}) => ({file, status: issues.length ? 'voice_failed' : 'voice_clear', issues, warnings, result})), null, 2))
   } else {
@@ -341,7 +347,7 @@ if (isCli) {
       console.log(`${issues.length ? '未通過' : '通過'}：${file}（正文${result.chars}字）`)
       for (const issue of issues) console.log(`  - ${issue}`)
       for (const warning of warnings) console.log(`  提醒：${warning}`)
-      for (const sentence of result.longest) console.log(`  長句：${sentence}`)
+      if (showRates) for (const sentence of result.longest) console.log(`  長句：${sentence}`)
     }
   }
   if (reports.some(({issues}) => issues.length > 0)) process.exitCode = 1

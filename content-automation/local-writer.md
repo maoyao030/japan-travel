@@ -62,23 +62,23 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
      - 不是必備的表格欄位不到一半，就寫「整欄拿掉」，不算 `thin`。
      - `outline-error`：大綱寫錯事實，例如旅館放錯區、地點或分工跟官方資料對不上。寫出大綱原文、官方資料與網址。
      - 只有一兩筆事實的 H3（不到 3 個）不影響判定，列進「## 大綱待調整」。
+   - **讀競品**（2026-10-31 加入）：判定是 `ready` 才做。照 `.agents/skills/japan-travel-answer-first/references/competitor-reading.md` 搜大綱這頁的查詢、讀 3 到 5 篇排在前面的中文文章，寫 `<資料夾>/competitor-notes.md`：只記先講什麼、後講什麼與句子習慣，不拿競品的事實、不抄句子。競品有、我們缺的，回官方來源查，查到才加進事實表。約 15 分鐘。
    - 不改資料夾以外的檔案、不 commit。Windows 的 heredoc 會吃反斜線，寫檔用 Write 工具。
 
    協調者親自讀「寫作前判定」：`thin` 或 `outline-error` 就**停放**這篇（見「失敗」），停放表的原因寫「寫作前補研究後資料仍不足」或「大綱錯誤」與缺什麼、錯在哪，要誰處理寫「人工 session：補研究、改大綱或併進地點主頁」；`ready` 才接第 1 步。有「## 大綱待調整」時，把內容寫進執行紀錄「紀錄」表的待同步欄，文章照寫。
 
 1. **作者**（新子代理）。交代：
    - 用 `.agents/skills/japan-travel-answer-first/SKILL.md` 寫內容稿；寫作前讀完 `references/writing-guide.md`（特別是第14條「不要寫成量產頁」與第15條「日文只放在括號與「」裡」）、`references/examples.md`、`references/nanny-level.md`。研究由第 0 步的研究者做完，跳過研究步驟。
+   - 讀 `<資料夾>/competitor-notes.md`（讀競品的筆記）：每一節照讀者期待的順序排資訊，只學順序，事實照樣只用 `reference-review.md`。寫完另寫 `<資料夾>/order-notes.md`：每個 H2 用了什麼順序、照筆記的哪一點。
    - H1、H2／H3 照大綱這一頁的 headings 一字不改、順序層級不變；mustAnswer 都要正面回答；大綱 `links` 裡 from 是這頁的 sentence 一字不改寫進正文；分工表歸別頁的事一兩句帶過並用內連句連過去。
    - 讀研究者建好的 `<資料夾>/reference-review.md`，只能用裡面的事實。缺口表標「補不到」的不寫；單一格子可以寫成讀者能做的事，但不能用「訂房時用電話問」之類的句子填滿一整欄。缺口檢查寫「整欄拿掉」的欄不放進表格；「官方不公布」的欄位不放。
    - Darren 的寫法要求：讀者會卡住的事講細，其他一兩句帶過，不要每節一樣長；班次少（一天 4 班以下）就列時刻表，用白話說選擇，不算出能待幾分鐘；段落從讀者的處境起頭；有事實撐的判斷直接給、理由寫在同一句，划不划算要用事實的數字算；不寫成去過、不用第一人稱、不加沒有事實的感想；不用「看這張表」「都查得到」「先…」「關鍵是」「最先要搞清楚的是」這類硬裝口語或宣告句；同一個條件詞不整篇重複；查不到的不寫，也不寫「官方沒寫」。
    - 輸出 `<資料夾>/draft-tagged.md`（每句有數字、時間、價格、條件的句子在句號前標 `[F編號]`；結尾 `## 延伸資料`（官方頁）、`## 資料來源`）與 `<資料夾>/publication.json`（`articleId`、`targetPath`、`seoTitle` 與 H1 相同、`seoDescription` 120 字內含具體數字、`excerpt`）。
    - 跑到通過：`python .agents/skills/japan-travel-answer-first/scripts/fact_tags.py <資料夾>`（產生 `reader-preview.md`）、`node .agents/skills/japan-travel-answer-first/scripts/check-voice.mjs <資料夾>/reader-preview.md`、`python .agents/skills/japan-travel-answer-first/scripts/audit_answer_first.py <資料夾>/reader-preview.md --json --article-type <大綱這頁的 pageType（place-entry 或 aspect-page）> --reference-review <資料夾>/reference-review.md`（要 `mechanical_clear`）。
    - 不讀 `content-production` 其他文章的正文、不改資料夾以外的檔案、不 commit。Windows 的 heredoc 會吃反斜線，寫檔用 Write 工具。
-2. **潤稿者**（新子代理，沒寫過這篇）。照 `.agents/skills/japan-travel-polish/SKILL.md` 做第 1～4-1 步：第 1-1 步依 `references/style-sources.md` 挑三到五篇好運日本行與 MATCHA 的同類文章，用 curl 存到系統暫存資料夾（不放進 repo），講法寫進 `<資料夾>/polish-notes.md`；先把 `draft-tagged.md`、`reader-preview.md` 各複製成 `before-draft-tagged.md`、`before-reader-preview.md`；五項檢查（`check-polish.mjs --article=<id>`、`fact_tags.py`、`audit_answer_first.py`、`check-voice.mjs --final`、`check-copy.mjs` 列進讀過的每篇）全部通過。
-3. **編輯挑錯**（新子代理）：讀 `.agents/skills/japan-travel-polish/agents/editor-review.md` 照做，審 `<資料夾>/reader-preview.md`，輸出 `<資料夾>/editor-review.md`，只讀這篇文章。另外告訴它：網站經營者希望讀起來像好運日本行、MATCHA，特別討厭硬裝口語與同一個條件詞整篇重複。
-4. **潤稿者修一輪**（用 SendMessage 回到第 2 步的潤稿者）：照潤稿 Skill 第 4-2 步，只處理措辭，「內容疑問」留給驗收；改完重跑五項檢查，採納與不採納寫進 `polish-notes.md`。
-5. **意義比對**（新子代理）：讀 `.agents/skills/japan-travel-polish/agents/meaning-drift.md` 照做（把 `<文章資料夾>`、`<地點>` 換成實際值）。
-6. **潤稿者修正**（SendMessage 回潤稿者）：只改意義比對列出的「不可接受」與「遺失」，重跑五項檢查，記進 `polish-notes.md`。
+2. **潤稿者**（新子代理，沒寫過這篇）。照 `.agents/skills/japan-travel-polish/SKILL.md` 做第 1～3 步（2026-10-30 起改成短原則加範例，不讀參考文章、沒有編輯挑錯一輪）：讀 `references/examples.md`；先把 `draft-tagged.md`、`reader-preview.md` 各複製成 `before-draft-tagged.md`、`before-reader-preview.md`；照「怎麼改」**先刪再調**（2026-10-31 Darren 認可）：先整筆刪掉讀者用不到的規格（客房數、年份、設施清單），列在 `polish-notes.md` 的 `## 刪掉的事實`，再把用逗號接的句子寫出關係，但不併成長句；四項檢查（`check-polish.mjs --article=<id> --outline=<這群的大綱檔>`、`fact_tags.py`、`audit_answer_first.py`、`check-voice.mjs --final`）全部通過。
+3. **意義比對**（新子代理）：先跑 `node .agents/skills/japan-travel-polish/scripts/check-modifiers.mjs <資料夾>/before-reader-preview.md <資料夾>/reader-preview.md`，把輸出和 `check-polish.mjs` 印出的「刪掉的事實」一起交給它當線索；它讀 `.agents/skills/japan-travel-polish/agents/meaning-drift.md` 照做（把 `<文章資料夾>`、`<地點>` 換成實際值）。
+4. **潤稿者修正**（SendMessage 回潤稿者）：只改意義比對列出的「不可接受」與「遺失」，盡量保留潤稿後的寫法，重跑四項檢查，記進 `polish-notes.md`。
 
 ### 3. 驗收
 

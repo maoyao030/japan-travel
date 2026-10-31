@@ -1723,3 +1723,31 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 放上的五則（都在 2026 年內、畫面與說明和正文對得上）：旭山動物園「夜之動物園」公告（asahiyamazoo1）、層雲峽三段紅葉（sounkyo_onsen）、禮文敦盛草開花（rebun_island_kanko）、禮文島花期介紹與利尻山登頂（hokkaido_soya，宗谷總合振興局）。紀錄在各篇 `images/embed-plan.json`。
 - 找過但沒用：東川町（多是町民活動公告）、旭岳纜車（說明只有 hashtag，對不上段落）。利尻兩町、稚內市觀光協會找不到官方帳號。可用的官方帳號還有 heartlandferry（渡輪）、goodday_hokkaido（北海道觀光機構），之後自動寫作可以從這些帳號找。
 - 發現：Heartland 渡輪公告 Boreas宗谷號 2026-10-31 退役，稚內渡輪頁船艙表仍列這艘船，待修正。
+
+## 2026-10-29 Claude Code：Gemini 潤稿測試（宗谷岬頁）
+
+- 已完成：用內建瀏覽器開 Gemini（Darren 登入，模型 3.1 Pro），把宗谷岬上線版正文加上潤稿規則精簡版送進去，取回結果做逐段並排比較。紀錄在 `content-experiments/gemini-polish-test-2026-10-29/`（`README.md`、並排頁 `compare.html`）。
+- 結果：60 段改 26 段，數字、標題、表格、內連句都沒動，`check-polish`、`check-voice --final` 都過；但有 5 段意思被改（拿掉觀光手冊依據並加「大約」兩處、四極證明書寫成在流冰館拿、「要出示證件」變「出示就可以了」、白色道路「要從宗谷岬進去」拿掉「要」），「的話」從 0 次變 12 次。改得好的只有 2 段。
+- 已決定（建議，待 Darren 確認）：不改用 Gemini 潤稿；不管用哪個模型，意義比對都不能省。
+- 限制：只測一篇已潤過的稿，判定沒有另找盲測評審。
+- 上線文章沒有改動。
+- 唯一下一步：觀察自動寫作下一輪是否照新規則選官方照片與嵌入、不再出現日式用詞。
+- 2026-10-29 修正：Darren 指出判成「變難讀」的段落其實比較好讀（少逗號、修飾語收到名詞前面）。重看後改成：意思被改 5 段、差不多 14 段、改得好 7 段。結論改成「Gemini 讀起來比上線版順，但有 5 處改掉意思，不能直接用，潤完一定要接意義比對」；要不要改流程由 Darren 決定。
+
+## 2026-10-30 Claude Code：三種潤稿做法比較
+
+- 已完成：三篇潤稿前內容稿（旭川交通、禮文島景點、利尻島住宿）各做三版，A 現行流程、B Opus 看範例、C Gemini 3.1 Pro，B、C 過修飾詞檢查與意義比對修正後，兩位評審盲測。結果與檔案在 `content-experiments/polish-compare-2026-10-30/README.md`。
+- 結果：現行流程三篇都排第一（好讀 81.7、像AI 29.7）；Gemini 意思被改最多（兩篇各 12、13 處），還漏標題與半段；Opus 看範例很守事實，但讀起來輸給現行流程。
+- 已決定：無（等 Darren 看結果）。潤稿流程與 Skill 都沒改。
+- 新工具：`check-modifiers.mjs`（實驗資料夾內），適合當意義比對的線索，不適合擋發布。
+- 唯一下一步：Darren 決定要不要把評審抓到的日文詞（2等艙、9合目、夏期、冬期、始發）加進 `check-voice.mjs`。
+- Git：分支 `claude/gemini-editing-test-95cb32`，未合併 `main`。
+
+## 2026-10-31 Claude Code：讀競品、先刪再調併進 main
+
+- **已完成**：旭山動物園、層雲峽住宿、稚內美食三篇試跑「讀競品再寫」與「先刪再調」潤稿，Darren 看過三篇都認可。對照頁 `content-experiments/competitor-read-2026-10-30/view.html`。
+- **已決定**：寫作前讀競品（只學順序）；官方普通事實直接寫、事實表不用每筆都寫；連結句不寫「見○○」；潤稿先刪讀者用不到的規格，再寫出句子之間的關係，不靠加句號也不併長句。網路上沒有處理中文逗號過多的現成套件，中英文去 AI 味 Skill 只借了「先刪再調」（deslop-zh）與「改完要像真人」（humanizer）的想法。
+- **改的檔案**：寫作 Skill `writing-guide.md`、`competitor-reading.md`、`page-types.md`；潤稿 Skill `SKILL.md`、`agents/meaning-drift.md`、`scripts/check-polish.mjs`（`## 刪掉的事實`）；`content-automation/local-writer.md`；`RULES_OVERVIEW.md`；`AGENTS.md`。
+- **自動寫作**：每輪開始會合併 `origin/main`，下一輪起就用新流程；排定工作本身沒動。
+- **尚未完成**：三篇試跑稿還沒上線，要不要換掉上線版由 Darren 決定；試跑中新出現的名稱還沒加進 `glossary.json`。
+- **唯一下一步**：看自動寫作下一輪的產出，確認新流程在排定工作裡照做。
