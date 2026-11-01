@@ -1,61 +1,46 @@
-# asahidake-transport 驗收紀錄
+# 驗收紀錄：asahidake-transport（2026-11-01，已上線文章重寫一輪）
 
-- 文章：旭岳交通（`/places/asahidake/transport/`，aspect-page，地點 `asahidake`，旭川・大雪群）
-- 日期：2026-10-26（人工 session，Darren 要求今天持續寫作；旭川・大雪群大綱 Darren 同意做好就寫）
-- 稿件 SHA-256（LF）：`46105c3c268483e62d87cb19e2f92e1ef5c20dd76d1b4f7edb1e624a954049b7`
-- 規則：`content-automation/local-writer.md` 第 2～4 步，大綱 `content-planning/hokkaido/hokkaido-asahikawa-outline.json`
+- 文章：`content-production/asahidake-transport/reader-preview.md`
+- SHA-256（換行統一成 LF 後計算）：`26ab0bbe1c60e5f83bca41ca16c3608432f1a8cabd3f56f865d2959159a206db`
+- 規則：`content-automation/rewrite-live.md`（重查、讀競品後重寫、先刪再調、意義比對、完整驗收）；重寫前的版本在 `pre-rewrite/`
+- 研究者：研究子代理（Opus 5.5，重查 37 筆會變資料，0 筆更正，新增 F183；讀競品 3 篇）
+- 作者：作者子代理（Opus 5.5，讀競品後重寫；連結句照寫作指南第10條改寫 4 句，見 `link-sentences.json`）；驗收後修改也由作者處理（`revisions-round1.md`）
+- 潤稿者：潤稿子代理（Opus 5.5，先刪再調，沒寫過這篇）；意義比對 1 個子代理
+- 標題檢查：標題、SEO Title 沿用網站版本，沒改，沿用 `heading-review.json`
+- 事實查核：1 個子代理（Opus 5.5，沒參與寫作、潤稿與修改），共 2 輪
+- 讀者驗收：1 個子代理（沒寫過、潤過或查核過），第一階段只看大綱、文章與規則，第二階段才看研究記錄與事實查核
+- 協調：人工 session（Claude Code，Darren 2026-11-01 要求把剩下的文章全部重寫一輪）
 
 ## 結果
 
 | 項目 | 結果 |
 |---|---|
-| 格式 | `mechanical_clear`（audit_answer_first，aspect-page） |
-| 標題 | `acceptable`（heading-review.json 改 2 個 H2；heading_review.py `headings_applied`；大綱同步） |
-| 讀者價值 | `acceptable`（reader-final.md，剩餘必修 0） |
-| 事實與條件 | `verified`（fact-check.json 第 2 輪 74 項全部 verified） |
-| 口吻 | check-voice --final 通過（只有長句提醒） |
-| 事實編號 | tags_clear，事實表 52 筆、正文用 46 筆 |
-| 防抄襲 | check-copy 通過（潤稿時比對 GLTJP 3 篇、MATCHA 1 篇） |
-| 圖片 | 這次沒有選圖 |
+| 格式 | `mechanical_clear`（`audit_answer_first.py --article-type aspect-page`） |
+| 標題 | `acceptable`（標題沒改；讀者最終判定可接受） |
+| 讀者價值 | `acceptable`（讀者最終判定，第二階段必修 4 條都已解決） |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，81 項 claim 全部 verified） |
+| 口吻與標點 | `check-voice.mjs --final` 通過（正文 3,176 字） |
+| 事實編號 | `tags_clear`（研究記錄 54 筆，正文用到 47 筆） |
+| 圖片 | 沿用線上的文內照片與嵌入 3 個（位置由換正文工具搬過去），沒有 AI 圖或自製示意圖 |
 
-## 身分
-
-| 角色 | 身分 |
-|---|---|
-| 研究者 | 子代理（Opus 5.5），寫作前補研究，判定 `ready` |
-| 作者 | 另一個子代理（Opus 5.5），寫初稿與驗收後第 1 輪 |
-| 潤稿者 | 另一個子代理（Opus 5.5），沒寫過這篇 |
-| 編輯挑錯 | 另一個子代理（Opus 5.5） |
-| 意義比對 | 另一個子代理（Opus 5.5） |
-| 標題檢查 | 另一個子代理（Opus 5.5） |
-| 事實查核 | 另一個子代理（Opus 5.5），唯讀 |
-| 讀者驗收 | 另一個子代理（Opus 5.5），唯讀 |
-| 協調者 | 人工 session 主代理（Opus 5.5），同步大綱標題，沒有改正文 |
+**最終結果：`ready_for_user_preview`。** Darren 2026-11-01 要求重寫後換上網站。
 
 ## 經過
 
-| 步驟 | 結果 |
-|---|---|
-| 寫作前補研究 | `ready`；事實 48 筆（新增 F163～F169：全國交通 IC 卡不能用、無現金售票機、12/1 運賃調整不影響旭岳線、道道 1160 號不在冬季封路名單） |
-| 作者 | 初稿 mechanical_clear；帶前綴事實複製成 F170～F178；協調者要求刪掉沒有事實的「層雲峽沒有直通巴士」 |
-| 潤稿 | 讀 GLTJP 3 篇、MATCHA 1 篇；五項檢查通過 |
-| 編輯挑錯 | 22 句（末班 16:55 出現 5 次、重講、日文直搬），採納大部分 |
-| 意義比對 | 不可接受 0、遺失 0 |
-| 事實查核第 1 輪 | 70 項，incorrect 2（C33 特急與快速、C35 高速巴士冬季時間）、unsupported 1（C61「檢修」） |
-| 讀者驗收 | 第一階段 revise 必修 8；第二階段最終必修 9 |
-| 作者驗收後第 1 輪 | 9 條必修處理；纜車營業時間只寫頁面看得到的 2026 年 7～12 月（官網原始碼裡被註解掉的舊月曆不當來源）；新增 F179～F182 |
-| 事實查核第 2 輪 | 74 項全部 verified |
-| 讀者最終 | acceptable，剩餘必修 0 |
+| 輪 | 做了什麼 | 結果 |
+|---|---|---|
+| 研究 | 重查會變資料 37 筆、讀競品 3 篇 | 0 筆更正；當天來回一節改成照 11 月以後的日期先講 |
+| 寫作 | 讀競品後重排、改寫 4 句連結句；先刪再調潤稿（刪 F41、F20 車位數）；意義比對後補完一句半句 | 四項檢查通過 |
+| 1 | 事實查核第 1 輪（80 項） | 1 unsupported（C53「導航輸入纜車電話」官方沒這種說法） |
+| 2 | 讀者驗收第一、二階段 | 必修 4 條：14:15 那班的推論只在 11～12 月成立、纜車時段照日期排、停車場收班與跨日追加費、C53 |
+| 3 | 作者照必修修改，新增 F184 | 三項檢查通過 |
+| 4 | 事實查核第 2 輪（81 項）；讀者最終判定 | 全部 verified；讀者價值與標題可接受、無剩餘必修 |
 
 ## 查不到所以正文沒寫的
 
-- 纜車 2027 年與 1～6 月的營業時間（正文請讀者看官網月曆）。
-- 錯過末班的計程車公司名稱（只寫成本站建議：請遊客中心、纜車站或旅館櫃台協助叫車）。
-- 看到棕熊怎麼辦、雪天延誤提醒（要新研究）。
+- 纜車停車場跨日追加費金額（正文寫先到纜車站窗口確認）、計程車車資（只有過期資料）、Mapcode。
 
 ## 留給之後的事
 
-- 事實表待同步：F163～F182、F58 刪 6 月、F63 不採用；旭川事實表 asahikawa:F36「特急、快速」更正。
-- 纜車官網公布 2027 年月曆後，刪掉「官網月曆目前只排到12月」半句並補營業時間。
-
-最終結果：`ready_for_user_preview`
+- 新增 F183、F184 要同步回地點事實表與 D1。
+- 讀者最終判定加分 3 條（Bear Monte 住客下車站、旭岳回程站牌位置、機場售票機的票去哪裡退）要新研究，不影響結果。

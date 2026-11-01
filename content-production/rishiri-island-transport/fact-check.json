@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "rishiri-island-transport",
-  "articleSha256": "4adae8169393ce449dc160a54565602feba17e89b74454fd3314a9eae1c3cea4",
-  "checker": "事實查核 agent（Claude Opus 5.5 子 agent，未參與本文寫作、潤稿與修改）。2026-11-01 重寫稿第 1 輪：curl 重新下載全部來源與 sobafuku、isoyakitei 頁；HTML 轉文字比對；利尻線時刻表 PDF 以 PyMuPDF 取字座標重建四張表逐格比對；運賃表 PDF 渲染成圖逐格讀取；自転車積込與登山傳單為圖片 PDF，渲染後目視。未使用瀏覽器。",
+  "articleSha256": "e7b8c3ab021178e443d4cefe72827d0297f899151094fe9a40f179fafc5774f6",
+  "checker": "事實查核 agent（Claude Opus 5.5 子 agent，未參與本文寫作、潤稿與修改）。2026-11-01 重寫稿第 1 輪：curl 重新下載全部來源與 sobafuku、isoyakitei 頁；HTML 轉文字比對；利尻線時刻表 PDF 以 PyMuPDF 取字座標重建四張表逐格比對；運賃表 PDF 渲染成圖逐格讀取；自転車積込與登山傳單為圖片 PDF，渲染後目視。未使用瀏覽器。第 2 輪（複查，2026-11-01）：依 revisions-round1.md 逐句比對新稿，改過與新增的句子重新下載來源查證（新增 りしぷら鴛泊港フェリーターミナル頁、ニッポンレンタカー利尻營業所頁、トヨタレンタカー利尻店頁），notes 標【複查】。",
   "checkedAt": "2026-11-01",
   "claims": [
     {
@@ -241,12 +241,12 @@
     },
     {
       "claimId": "C27",
-      "articleExcerpt": "不搭巴士的話，搭計程車到鴛泊市區約10分鐘。",
+      "articleExcerpt": "不想等車，不分季節都可以搭計程車，到鴛泊市區約10分鐘。",
       "sourceUrl": "http://www.kamuirishiri.com/",
       "sourceTitle": "しまのやど かむいりしり",
       "sourceQuote": "鴛泊港フェリーターミナルから宿まで徒歩8分。利尻空港からタクシーで約10分",
       "verdict": "verified",
-      "notes": "旅館在鴛泊渡輪站步行 8 分，即鴛泊市區。"
+      "notes": "【複查】句子移到冬季段。旅館在鴛泊渡輪站步行 8 分，即鴛泊市區；Toyota 利尻店頁亦寫「利尻空港より鴛泊港方面へ車10分」。計程車全年營業（只寫清晨不營業）。"
     },
     {
       "claimId": "C28",
@@ -331,15 +331,51 @@
     },
     {
       "claimId": "C37",
-      "articleExcerpt": "10月到隔年5月沒有空港專用巴士，改從鴛泊渡輪站搭B路線去機場，12:30與16:20兩班會停機場。",
+      "articleExcerpt": "10月到隔年5月沒有空港專用巴士，從機場往鴛泊要搭環島巴士A路線，14:00或16:55從「空港」站上車，14:25與17:15回到鴛泊渡輪站。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
+      "sourceQuote": "冬期ダイヤ Ａコース 空港 ↓ ↓ 14:00 16:55／鴛泊ＦＴ 8:45 11:10 14:25 17:15",
+      "verdict": "verified",
+      "notes": "【複查新增】空港専用バス只有 2026年6月1日～9月30日。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "B路線12:50與16:45停機場的兩班是往沓形方向，要去沓形才搭。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
+      "sourceQuote": "Ｂコース　鴛泊→沓形経由→鴛泊／冬期 空港 ↓ ↓ 12:50 16:45／沓形 8:17 10:17 13:12 17:05",
+      "verdict": "verified",
+      "notes": "【複查新增】冬季 B 停空港後續往沓形（13:12、17:05）。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "回程從鴛泊渡輪站搭B路線去機場，12:30與16:20兩班會停機場。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
       "sourceQuote": "冬期ダイヤ Ｂコース 鴛泊ＦＴ 7:40 9:40 12:30 16:20／空港 ↓ ↓ 12:50 16:45",
       "verdict": "verified",
-      "notes": ""
+      "notes": "【複查】句子小改，判定不變。"
     },
     {
-      "claimId": "C38",
+      "claimId": "C40",
+      "articleExcerpt": "冬季班機停飛時，可以改搭渡輪回稚內，11月到4月下旬每天2個來回。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表（稚内～利尻・礼文）｜ハートランドフェリー",
+      "sourceQuote": "1/1～4/27 06:55～08:35 09:05～10:45 14:00～15:40 17:30～19:10 … 11/1～12/31 06:55～08:35 09:05～10:45 14:00～15:40 17:30～19:10",
+      "verdict": "verified",
+      "notes": "【複查新增】11/1～12/31 與 1/1～4/27 都是 2 個來回（4/28 起 3 個）。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "表上寫「免費」的接送不收費，寫「有」的，費用在訂房時問。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/marin-hotel/",
+      "sourceTitle": "利尻マリンホテル｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "利尻山登山口、近隣施設までの送迎あり。事前にお問合せください。",
+      "verdict": "verified",
+      "notes": "【複查新增】「免費」對應原文「無料送迎」（あや瀬、雲丹御殿、田中家）；「有」的利尻マリンホテル寫「送迎あり。事前にお問合せください」、ホテル利尻 FAQ 只寫有送迎，均未寫費用，正文改成訂房時問。"
+    },
+    {
+      "claimId": "C42",
       "articleExcerpt": "想讓住宿直接送到機場，就訂有機場接送的住宿，接送要事先聯絡。",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/unigoten/",
       "sourceTitle": "ホテル雲丹御殿｜りしぷら RISHIRI PLUS",
@@ -348,7 +384,7 @@
       "notes": "田中家「事前連絡が必要です」、マリン「事前にお問合せください」、あや瀬「到着地と到着時刻を事前に連絡してください」、ホテル利尻「前日までにご連絡願います」。"
     },
     {
-      "claimId": "C39",
+      "claimId": "C43",
       "articleExcerpt": "例如鴛泊的Shima no Yado Kamuirishiri（しまのやど かむいりしり）就請客人自己搭巴士或計程車前往。",
       "sourceUrl": "http://www.kamuirishiri.com/",
       "sourceTitle": "しまのやど かむいりしり",
@@ -357,7 +393,7 @@
       "notes": ""
     },
     {
-      "claimId": "C40",
+      "claimId": "C44",
       "articleExcerpt": "住宿表：利尻海洋飯店 鴛泊 3月～10月 有",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/marin-hotel/",
       "sourceTitle": "利尻マリンホテル｜りしぷら RISHIRI PLUS",
@@ -366,7 +402,7 @@
       "notes": "原文接送含鴛泊フェリーターミナル、利尻空港；麵包屑鴛泊エリア。"
     },
     {
-      "claimId": "C41",
+      "claimId": "C45",
       "articleExcerpt": "住宿表：Aya瀨飯店 鴛泊 4月～10月 免費",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/hotel-ayase/",
       "sourceTitle": "ホテルあや瀬｜りしぷら RISHIRI PLUS",
@@ -375,7 +411,7 @@
       "notes": ""
     },
     {
-      "claimId": "C42",
+      "claimId": "C46",
       "articleExcerpt": "住宿表：雲丹御殿飯店 鴛泊 6月～9月 免費",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/unigoten/",
       "sourceTitle": "ホテル雲丹御殿｜りしぷら RISHIRI PLUS",
@@ -384,7 +420,7 @@
       "notes": ""
     },
     {
-      "claimId": "C43",
+      "claimId": "C47",
       "articleExcerpt": "住宿表：旅館田中家Hinageshi館 鴛泊 5月～10月 免費",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/tanakahinagesi/",
       "sourceTitle": "旅館 田中家ひなげし館｜りしぷら RISHIRI PLUS",
@@ -393,16 +429,16 @@
       "notes": ""
     },
     {
-      "claimId": "C44",
-      "articleExcerpt": "住宿表：利尻飯店 沓形 住宿2026/11/30～2027年3月下旬休業 有",
+      "claimId": "C48",
+      "articleExcerpt": "住宿表：利尻飯店 沓形 住宿到2026/11/29，2027年3月下旬再開 有",
       "sourceUrl": "https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
       "sourceTitle": "【重要】ご宿泊の冬季休業のお知らせ｜ホテル利尻",
       "sourceQuote": "2026年11月30日より2027年3月下旬まで、ご宿泊の営業を冬季休業とさせていただきます。",
       "verdict": "verified",
-      "notes": "接送見官網 FAQ「鴛泊フェリーターミナル・沓形フェリーターミナル・利尻空港それぞれとホテル利尻間の送迎をしています。」；地點見りしぷら アクセス「レンタサイクル ホテル利尻 （利尻町・沓形）」。"
+      "notes": "【複查】改寫法：11/30 起休業即營業到 11/29；官網首頁亦寫「2026年4/1～11/29ご宿泊分のご予約受付」。接送見官網 FAQ「鴛泊フェリーターミナル・沓形フェリーターミナル・利尻空港それぞれとホテル利尻間の送迎をしています。」；地點見りしぷら アクセス「レンタサイクル ホテル利尻 （利尻町・沓形）」。"
     },
     {
-      "claimId": "C45",
+      "claimId": "C49",
       "articleExcerpt": "宗谷巴士的定期觀光巴士2026年只在5月3日到5日與5月20日到9月30日運行，而且要預約，最早可以在搭車日前2個月訂。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
       "sourceTitle": "全コース一覧｜宗谷バス",
@@ -411,8 +447,8 @@
       "notes": ""
     },
     {
-      "claimId": "C46",
-      "articleExcerpt": "觀光巴士會一路停靠姬沼、Otatomari沼與島南端的仙法志御崎公園。",
+      "claimId": "C50",
+      "articleExcerpt": "不開車又想在半天內看完姬沼、Otatomari沼（オタトマリ沼）與島南端的仙法志御崎公園，觀光巴士會一路停靠這些地方。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
       "sourceTitle": "全コース一覧｜宗谷バス",
       "sourceQuote": "鴛泊フェリーターミナル発 ～姫沼～野塚展望台（車窓）～オタトマリ沼～仙法志御崎公園～利尻空港（途中下車可能）～鴛泊フェリーターミナル着",
@@ -420,7 +456,7 @@
       "notes": ""
     },
     {
-      "claimId": "C47",
+      "claimId": "C51",
       "articleExcerpt": "5月的運行日只有A路線，從鴛泊渡輪站8:35出發，比6月以後早半小時。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
       "sourceTitle": "全コース一覧｜宗谷バス",
@@ -429,7 +465,7 @@
       "notes": "B 路線只列 6月1日～9月30日；6月以後 9:05 發。"
     },
     {
-      "claimId": "C48",
+      "claimId": "C52",
       "articleExcerpt": "打電話、到窗口或上巴士訂票網站Hassha Orai Net（発車オーライネット）都可以。在Hassha Orai Net線上付款的話，付款完成的畫面就是車票，上車給司機看就好。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
       "sourceTitle": "ご予約方法とのりば｜宗谷バス",
@@ -438,25 +474,34 @@
       "notes": ""
     },
     {
-      "claimId": "C49",
-      "articleExcerpt": "用電話或窗口預約的人，搭車當天要到渡輪站的觀光巴士窗口買票，不能在前一天買。窗口只收現金或PayPay，不收信用卡。",
+      "claimId": "C53",
+      "articleExcerpt": "用電話或窗口預約的人，搭車當天要到利尻島上鴛泊或沓形渡輪站的觀光巴士窗口（利尻定期観光）買票，不能在前一天買。窗口只收現金或PayPay，不收信用卡。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
       "sourceTitle": "ご予約方法とのりば｜宗谷バス",
-      "sourceQuote": "現地の販売窓口でチケットをご購入ください。（現金払い又はPayPay決済が可能です。クレジットカードは対応しておりません。）前日発券は行っておりませんのでご注意ください。",
+      "sourceQuote": "定期観光バス乗車券は、 それぞれ現地の販売窓口 でご購入ください。…利尻定期観光（鴛泊フェリーターミナル）…利尻定期観光（沓形フェリーターミナル）…・窓口での決済方法は現金又はPayPay払いのみです。…・チケットの前日発券は行っておりません。乗車当日に必ず現地窓口で購入・引き換えをお願いします。",
       "verdict": "verified",
-      "notes": "利尻的販售窗口為「利尻定期観光（鴛泊フェリーターミナル）」「利尻定期観光（沓形フェリーターミナル）」。"
+      "notes": "【複查】改寫後重查（F206）。"
     },
     {
-      "claimId": "C50",
-      "articleExcerpt": "稚內的窗口不賣利尻的觀光巴士票，而且車從島上的渡輪站出發，得自己搭渡輪上島。",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
-      "sourceTitle": "ご予約方法とのりば｜宗谷バス",
-      "sourceQuote": "定期観光バス乗車券は、 それぞれ現地の販売窓口 でご購入ください。",
+      "claimId": "C54",
+      "articleExcerpt": "前一天已經住在島上，可以直接到鴛泊渡輪站的觀光案內所預約，不必打電話，找不到觀光巴士窗口也可以在那裡問。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/oshidomari-ft/",
+      "sourceTitle": "鴛泊港フェリーターミナル「海の駅おしどまり」｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "観光案内所、お土産店、フェリー発券窓口（出港の時間帯のみ営業）などが1階にあり、観光案内所では島を一周する「定期観光バス」の予約受付、チケット販売も行っています。",
       "verdict": "verified",
-      "notes": "全コース一覧：「利尻島、礼文島の定期観光バスは現地出発です。稚内からの出発ではありませんのでご注意ください。」舊版的「稚内での…乗車券販売を行っておりません」一句已不在頁面，改以「それぞれ現地の販売窓口」（稚內窗口列為「稚内定期観光」）支撐。"
+      "notes": "【複查新增】現行りしぷら鴛泊港フェリーターミナル頁（2026-11-01 取得）明寫觀光案內所受理定期觀光巴士預約與售票，故「直接到觀光案內所預約」「在那裡問窗口」有現行來源支撐。宗谷巴士「ご予約方法とのりば」亦列「お電話・窓口・発車オーライネット」三種預約方式。"
     },
     {
-      "claimId": "C51",
+      "claimId": "C55",
+      "articleExcerpt": "觀光巴士從島上的渡輪站出發，得自己先搭渡輪上島。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "利尻島、礼文島の定期観光バスは現地出発です。稚内からの出発ではありませんのでご注意ください。",
+      "verdict": "verified",
+      "notes": "【複查】改寫後重查。"
+    },
+    {
+      "claimId": "C56",
       "articleExcerpt": "環島巴士的一日券不能搭觀光巴士。",
       "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
       "sourceTitle": "利尻エリア｜宗谷バス",
@@ -465,7 +510,7 @@
       "notes": ""
     },
     {
-      "claimId": "C52",
+      "claimId": "C57",
       "articleExcerpt": "A路線（秀峰利尻富士めぐり）9:05從鴛泊渡輪站出發，12:15回到鴛泊。全程約3小時10分，成人3,500日圓。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
       "sourceTitle": "全コース一覧｜宗谷バス",
@@ -474,7 +519,7 @@
       "notes": ""
     },
     {
-      "claimId": "C53",
+      "claimId": "C58",
       "articleExcerpt": "沿路經過姬沼、野塚展望台、Otatomari沼、仙法志御崎公園與利尻機場。其中野塚展望台只從車窗看，利尻機場可以中途下車。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
       "sourceTitle": "全コース一覧｜宗谷バス",
@@ -483,7 +528,7 @@
       "notes": ""
     },
     {
-      "claimId": "C54",
+      "claimId": "C59",
       "articleExcerpt": "從稚內搭7:15的船在8:55抵達鴛泊，9:05的A路線就從同一個渡輪站出發。",
       "sourceUrl": "https://heartlandferry.jp/timetable/",
       "sourceTitle": "時刻表（稚内～利尻・礼文）｜ハートランドフェリー",
@@ -492,25 +537,43 @@
       "notes": "A 路線 9:05 鴛泊フェリーターミナル發（全コース一覧）。"
     },
     {
-      "claimId": "C55",
-      "articleExcerpt": "宗谷巴士說船到觀光巴士之間有15分鐘以上就來得及，這裡卻只有10分鐘，所以船上人多時最好早點下船。",
+      "claimId": "C60",
+      "articleExcerpt": "宗谷巴士說船到觀光巴士之間要有15分鐘以上才來得及，這裡只有10分鐘。",
       "sourceUrl": "http://www.soyabus.co.jp/qa/",
       "sourceTitle": "よくあるご質問｜宗谷バス",
       "sourceQuote": "はい。15分以上あれば間に合いますが、フェリーが混雑している場合は早めの下船をおすすめします。",
       "verdict": "verified",
-      "notes": "8:55→9:05＝10 分。"
+      "notes": "【複查】改寫後重查。8:55→9:05＝10 分。"
     },
     {
-      "claimId": "C56",
-      "articleExcerpt": "想接這班就先在Hassha Orai Net預約並線上付款，下船後拿付款完成的畫面直接上車，不必再到窗口買票。",
+      "claimId": "C61",
+      "articleExcerpt": "想接這班，最穩的是先在Hassha Orai Net預約並線上付款，下船後拿付款完成的畫面直接上車，省掉到窗口買票的時間，船上人多時也早點下船。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
       "sourceTitle": "ご予約方法とのりば｜宗谷バス",
       "sourceQuote": "乗務員に決済完了画面を提示すればチケットレスで乗車できます。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "【複查】改寫後重查。早點下船見よくあるご質問「フェリーが混雑している場合は早めの下船をおすすめします」。"
     },
     {
-      "claimId": "C57",
+      "claimId": "C62",
+      "articleExcerpt": "不想趕的話，可以前一天就上島住鴛泊，或改搭環島巴士自己排。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "6月1日～9月30日 9:05発 → 12:15着",
+      "verdict": "verified",
+      "notes": "【複查新增】選擇性建議；A 路線 9:05 從鴛泊FT 發，前一晚住鴛泊即可步行搭車；環島巴士替代見同段一日券句。"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "A路線12:15回到鴛泊時，12:05開往稚內的船已經開走，當天要回稚內就搭16:40那班。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表（稚内～利尻・礼文）｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 07:15～08:55 08:25～10:05 11:15～12:55 12:05～13:45 16:40～18:20 16:40～18:20",
+      "verdict": "verified",
+      "notes": "【複查新增】A 路線 12:15 著（全コース一覧）；鴛泊發稚內 12:05 之後下一班 16:40。"
+    },
+    {
+      "claimId": "C64",
       "articleExcerpt": "如果目的地是Otatomari沼與仙法志御崎公園這兩處，環島巴士也有站牌。買2,500日圓的一日券比A路線便宜1,000日圓，不過要照環島巴士的時刻表搭。",
       "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
       "sourceTitle": "利尻エリア｜宗谷バス",
@@ -519,7 +582,7 @@
       "notes": "站牌見時刻表「オタトマリ沼」「御崎公園」；3,500−2,500＝1,000。"
     },
     {
-      "claimId": "C58",
+      "claimId": "C65",
       "articleExcerpt": "B路線（利尻スポットめぐり）只在6月1日到9月30日運行，13:45從沓形渡輪站出發，16:15抵達鴛泊渡輪站。全程約2小時30分，成人3,300日圓。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
       "sourceTitle": "全コース一覧｜宗谷バス",
@@ -528,7 +591,7 @@
       "notes": ""
     },
     {
-      "claimId": "C59",
+      "claimId": "C66",
       "articleExcerpt": "沿路停仙法志御崎公園與Otatomari沼，6月1日到7月31日加停利尻町立博物館，8月1日到9月30日改停利尻島鄉土資料館。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
       "sourceTitle": "全コース一覧｜宗谷バス",
@@ -537,7 +600,7 @@
       "notes": "宗谷巴士寫「利尻町郷土資料館」，正文依 glossary.json 用設施正式名「利尻島郷土資料館」，指同一設施。"
     },
     {
-      "claimId": "C60",
+      "claimId": "C67",
       "articleExcerpt": "從禮文島坐船到沓形港的話，B路線很順。香深12:50開的船13:30抵達沓形，下船的渡輪站就是起點，終點鴛泊又是回稚內的渡輪出發的地方。",
       "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
       "sourceTitle": "利尻島～礼文島｜ハートランドフェリー",
@@ -546,7 +609,7 @@
       "notes": "B 路線 13:45 沓形FT 發、16:15 鴛泊FT 著；鴛泊發稚內 16:40（ハートランドフェリー時刻表）。"
     },
     {
-      "claimId": "C61",
+      "claimId": "C68",
       "articleExcerpt": "從稚內坐船到鴛泊的人，就要自己先移動到沓形。",
       "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
       "sourceTitle": "全コース一覧｜宗谷バス",
@@ -555,7 +618,7 @@
       "notes": ""
     },
     {
-      "claimId": "C62",
+      "claimId": "C69",
       "articleExcerpt": "夏季的環島巴士B路線只有13:00從鴛泊渡輪站出發的那班停沓形渡輪站，13:40到，車資860日圓。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -564,7 +627,7 @@
       "notes": "運賃表利尻線⑥ 鴛泊フェリーターミナル→沓形フェリーターミナル 860。"
     },
     {
-      "claimId": "C63",
+      "claimId": "C70",
       "articleExcerpt": "稚內7:15與11:15的船分別在8:55與12:55抵達鴛泊，兩班都接得上，不過11:15那班到港後5分鐘巴士就開。",
       "sourceUrl": "https://heartlandferry.jp/timetable/",
       "sourceTitle": "時刻表（稚内～利尻・礼文）｜ハートランドフェリー",
@@ -573,7 +636,7 @@
       "notes": "12:55→13:00＝5 分。"
     },
     {
-      "claimId": "C64",
+      "claimId": "C71",
       "articleExcerpt": "環島巴士是宗谷巴士利尻線的路線巴士。A路線從鴛泊經鬼脇繞一圈回鴛泊，B路線從鴛泊經沓形往反方向繞回來。A路線繞一圈約1小時45分。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -582,7 +645,7 @@
       "notes": "夏季 A 第 1 班鴛泊ＦＴ 6:20 → 8:05＝1 小時 45 分。"
     },
     {
-      "claimId": "C65",
+      "claimId": "C72",
       "articleExcerpt": "時刻表分夏冬兩套，夏季A、B各5班，冬季各4班。平日與假日的班次一樣。",
       "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
       "sourceTitle": "利尻エリア｜宗谷バス",
@@ -591,7 +654,7 @@
       "notes": ""
     },
     {
-      "claimId": "C66",
+      "claimId": "C73",
       "articleExcerpt": "5月觀光巴士已經開始跑，環島巴士卻還是冬季的各4班。每年1月1日到3日，環島巴士全部停駛。",
       "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
       "sourceTitle": "利尻エリア｜宗谷バス",
@@ -600,7 +663,7 @@
       "notes": ""
     },
     {
-      "claimId": "C67",
+      "claimId": "C74",
       "articleExcerpt": "宗谷巴士時刻表上的站名寫作「鴛泊ＦＴ」、「姫沼口」、「オタトマリ沼」、「御崎公園」、「沓形」與「空港」。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -609,7 +672,7 @@
       "notes": ""
     },
     {
-      "claimId": "C68",
+      "claimId": "C75",
       "articleExcerpt": "夏季6月到9月的A路線，從鴛泊經姬沼口與鬼脇，再經沓形回到鴛泊，中間3班停機場。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -618,7 +681,7 @@
       "notes": "7:15、12:30、14:40 三班停空港。"
     },
     {
-      "claimId": "C69",
+      "claimId": "C76",
       "articleExcerpt": "夏季A路線表（6:20/7:15/12:30/14:40/16:25 各站時刻）",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -627,7 +690,7 @@
       "notes": "逐格比對一致。"
     },
     {
-      "claimId": "C70",
+      "claimId": "C77",
       "articleExcerpt": "夏季的B路線反方向繞，先到沓形再經仙法志與鬼脇回到鴛泊，13:00那班另外在13:40停沓形渡輪站。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -636,7 +699,7 @@
       "notes": ""
     },
     {
-      "claimId": "C71",
+      "claimId": "C78",
       "articleExcerpt": "夏季B路線表（7:35/9:40/13:00/15:30/16:45 各站時刻）",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -645,7 +708,7 @@
       "notes": "逐格比對一致（15:30 班空港 15:55 著、16:15 發）。"
     },
     {
-      "claimId": "C72",
+      "claimId": "C79",
       "articleExcerpt": "例如搭稚內7:15的船抵達鴛泊後，可以接9:40的B路線在10:53到Otatomari沼。看完搭13:06的A路線到仙法志御崎公園，再搭14:10的B路線經姬沼口，14:56回到鴛泊。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -654,7 +717,7 @@
       "notes": ""
     },
     {
-      "claimId": "C73",
+      "claimId": "C80",
       "articleExcerpt": "夏季回到鴛泊的末班，A路線是18:10，B路線是18:38。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -663,7 +726,7 @@
       "notes": ""
     },
     {
-      "claimId": "C74",
+      "claimId": "C81",
       "articleExcerpt": "冬季A路線表（7:00/9:20/12:30/15:25 各站時刻）",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -672,7 +735,7 @@
       "notes": "逐格比對一致。"
     },
     {
-      "claimId": "C75",
+      "claimId": "C82",
       "articleExcerpt": "冬季的B路線不停沓形渡輪站；冬季B路線表（7:40/9:40/12:30/16:20 各站時刻）",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
       "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス利尻営業所",
@@ -681,7 +744,7 @@
       "notes": "逐格比對一致。"
     },
     {
-      "claimId": "C76",
+      "claimId": "C83",
       "articleExcerpt": "一日券成人2,500日圓、兒童1,300日圓，當天不限次數搭環島巴士。宗谷巴士利尻營業所的窗口與車上有賣。",
       "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
       "sourceTitle": "利尻エリア｜宗谷バス",
@@ -690,7 +753,7 @@
       "notes": ""
     },
     {
-      "claimId": "C77",
+      "claimId": "C84",
       "articleExcerpt": "從鴛泊渡輪站坐完整圈的單程票要2,550日圓，已經比一日券貴。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/09_rishiri-line_fare02.pdf",
       "sourceTitle": "普通旅客運賃表 利尻線｜宗谷バス",
@@ -699,7 +762,7 @@
       "notes": "運賃表利尻線①與⑥兩方向的鴛泊FT欄最末列皆為 2550（渲染成圖逐格確認）。"
     },
     {
-      "claimId": "C78",
+      "claimId": "C85",
       "articleExcerpt": "在鴛泊與沓形之間來回是1,720日圓，比一日券便宜780日圓。再從鴛泊去一趟姬沼口來回720日圓，總共2,440日圓，也還便宜60日圓。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/09_rishiri-line_fare02.pdf",
       "sourceTitle": "普通旅客運賃表 利尻線｜宗谷バス",
@@ -708,7 +771,7 @@
       "notes": "860×2＝1,720；2,500−1,720＝780；360×2＝720；1,720＋720＝2,440；差 60。"
     },
     {
-      "claimId": "C79",
+      "claimId": "C86",
       "articleExcerpt": "宗谷巴士只收現金或PayPay，信用卡、Suica這類IC卡與其他電子支付都不能用。有些票種連PayPay也不收。",
       "sourceUrl": "http://www.soyabus.co.jp/qa/",
       "sourceTitle": "よくあるご質問｜宗谷バス",
@@ -717,7 +780,7 @@
       "notes": "提問為「クレジットカード・電子マネーでの支払いはできますか？」；Suica 屬電子マネー，為舉例。"
     },
     {
-      "claimId": "C80",
+      "claimId": "C87",
       "articleExcerpt": "在車上付車資時投幣箱不找零，要先用車上的換錢機換成硬幣，而換錢機只收千圓鈔。",
       "sourceUrl": "http://www.soyabus.co.jp/howto/",
       "sourceTitle": "路線バスの乗り方｜宗谷バス",
@@ -726,7 +789,7 @@
       "notes": "よくあるご質問：「運転手席横の運賃箱で硬貨に両替可能です。 バス車内で両替可能な紙幣は千円札のみとなっております。」"
     },
     {
-      "claimId": "C81",
+      "claimId": "C88",
       "articleExcerpt": "除了鴛泊、沓形、仙法志、鬼脇的市區，利尻線其他路段大多能隨招隨停。不過斑馬線前後、彎道、隧道內與視線不好的地方可能不停。不必走到站牌，站在巴士前進方向的道路左側安全處舉手就能攔車，要下車時直接跟司機說。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/29a5c2badb576f42ad4d4d9e07aefa7f.pdf",
       "sourceTitle": "【利尻】自由乗降区間について｜宗谷バス",
@@ -735,8 +798,44 @@
       "notes": ""
     },
     {
-      "claimId": "C82",
-      "articleExcerpt": "租車公司多半在鴛泊，有Nippon Rent-A-Car、Toyota Rent a Lease、利尻租車（利尻レンタカー）、Maruzen（マルゼン）與Magokoro（まごころ）。沓形則有Kameya租車（かめやレンタカー）。Magokoro只接受電話預約。",
+      "claimId": "C89",
+      "articleExcerpt": "下船就想取車，Nippon Rent-A-Car與Toyota Rent a Lease的營業所都在鴛泊渡輪站正對面，搭飛機抵達也能請營業所到機場接。",
+      "sourceUrl": "https://store.nipponrentacar.co.jp/b/nrs/info/810573/",
+      "sourceTitle": "利尻営業所｜ニッポンレンタカー",
+      "sourceQuote": "アクセス 鴛泊港フェリーターミナルビル正面 … 【利尻空港ご利用のお客さま】 ご出発：到着口正面のNRカウンターにご来店後、営業所までお送りします。",
+      "verdict": "verified",
+      "notes": "【複查新增】Toyota 利尻店頁：「利尻富士町鴛泊フェリーターミナル前」「送迎 〇 利尻空港発着便に対してのみ送迎可能」。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "租車表：Nippon Rent-A-Car｜鴛泊渡輪站大樓正對面｜4/25～10/31，8:00～17:15｜網路的利尻島預約專用頁｜預約時告知航班，到機場到站出口對面的櫃台，接駁到營業所，車程10分鐘",
+      "sourceUrl": "https://store.nipponrentacar.co.jp/b/nrs/info/810573/",
+      "sourceTitle": "利尻営業所｜ニッポンレンタカー",
+      "sourceQuote": "営業時間 月 08:00～17:15 … 祝祭日 08:00～17:15 臨時休業 11月01日～04月24日 … ●個人のお客さま 利尻島予約専用ページ からお申し込みください。 … ご出発：到着口正面のNRカウンターにご来店後、営業所までお送りします。 ご返却：営業所にご返車後、空港までお送りします。（車で10分） ※ご予約の際は必ずフライト便をお伝えください。",
+      "verdict": "verified",
+      "notes": "【複查新增】營業期間 4/25～10/31 由臨時休業 11/01～04/24 推得。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "租車表：Toyota Rent a Lease｜鴛泊渡輪站正對面｜12/28～1/15休業，4/25～10/31是8:00～18:00，其他期間8:30～18:00｜只接受電話｜只接利尻機場起降的航班",
+      "sourceUrl": "https://rent.toyota.co.jp/shop/detail.aspx?rCode=61101&eCode=002&udFlg=2&sFlg=12",
+      "sourceTitle": "利尻店｜トヨタレンタカー",
+      "sourceQuote": "利尻富士町鴛泊フェリーターミナル前。…8:00～18:00(4/25～10/31) 8:30～18:00(11/1～12/27) 8:30～18:00(1/16～4/24) 休業日：12/28～1/15 … この店舗はお電話にて承ります。(インターネットではご利用いただけません。) … 送迎 〇 利尻空港発着便に対してのみ送迎可能",
+      "verdict": "verified",
+      "notes": "【複查新增】官方店名トヨタレンタカー利尻店；りしぷら列為「トヨタレンタリース旭川利尻営業所」，正文 Toyota Rent a Lease 指同一店。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "11月到隔年4月24日Nippon Rent-A-Car休業，這段期間上島，兩家連鎖裡只剩Toyota Rent a Lease能租，而且要打電話訂。",
+      "sourceUrl": "https://store.nipponrentacar.co.jp/b/nrs/info/810573/",
+      "sourceTitle": "利尻営業所｜ニッポンレンタカー",
+      "sourceQuote": "臨時休業 11月01日～04月24日",
+      "verdict": "verified",
+      "notes": "【複查新增】Toyota 該期間營業（12/28～1/15 除外，正文表格已列）且只接受電話。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "鴛泊另有利尻租車（利尻レンタカー）、Maruzen（マルゼン）與Magokoro（まごころ），沓形則有Kameya租車（かめやレンタカー）。Magokoro只接受電話預約。",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-he-iku/",
       "sourceTitle": "アクセス｜りしぷら RISHIRI PLUS",
       "sourceQuote": "かめやレンタカー （利尻町・沓形）…利尻レンタカー （利尻富士町・鴛泊）…ニッポンレンタカー 利尻営業所 （利尻富士町・鴛泊）…トヨタレンタリース旭川利尻営業所 …マルゼンレンタカー （利尻富士町・鴛泊）…まごころレンタカー 鴛泊営業所 …※ご予約は全てお電話にて受け付けております。",
@@ -744,7 +843,7 @@
       "notes": "まごころ另有鬼脇營業所，正文「多半在鴛泊」無誤。"
     },
     {
-      "claimId": "C83",
+      "claimId": "C94",
       "articleExcerpt": "計程車有鴛泊的富士計程車（富士ハイヤー）與沓形的Rishiri計程車（りしりハイヤー）兩家，清晨不營業。",
       "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
       "sourceTitle": "登山口へのアクセス｜利尻富士町",
@@ -753,7 +852,7 @@
       "notes": "りしぷら アクセス：「タクシー りしりハイヤー （利尻町・沓形）」。"
     },
     {
-      "claimId": "C84",
+      "claimId": "C95",
       "articleExcerpt": "電動自行車可以找RISHIRI ACTIVITY，沓形與鴛泊都有租車點，鴛泊那處無人看守。兩處都能借還，在另一處還車不另收費。",
       "sourceUrl": "https://rishiri-activity.com/bicycle/",
       "sourceTitle": "レンタル自転車｜RISHIRI ACTIVITY",
@@ -762,7 +861,7 @@
       "notes": ""
     },
     {
-      "claimId": "C85",
+      "claimId": "C96",
       "articleExcerpt": "營業時間6:00到18:00。沒預約的人當天申請只受理到15:30，事前預約的人到18:00前報到都可以。預約要在使用日2天前完成。",
       "sourceUrl": "https://rishiri-activity.com/bicycle/",
       "sourceTitle": "レンタル自転車｜RISHIRI ACTIVITY",
@@ -771,7 +870,7 @@
       "notes": ""
     },
     {
-      "claimId": "C86",
+      "claimId": "C97",
       "articleExcerpt": "這裡不收現金，只收線上付款。租車還要上傳有照片的證件，外國旅客用護照。",
       "sourceUrl": "https://rishiri-activity.com/bicycle/",
       "sourceTitle": "レンタル自転車｜RISHIRI ACTIVITY",
@@ -780,7 +879,7 @@
       "notes": ""
     },
     {
-      "claimId": "C87",
+      "claimId": "C98",
       "articleExcerpt": "價格分5、6、9、10月的一般期與7、8月的旺季。電動自行車租一天4,000日圓起，旺季5,500日圓起。一般自行車一天2,500日圓，旺季是3,500日圓。",
       "sourceUrl": "https://rishiri-activity.com/bicycle/",
       "sourceTitle": "レンタル自転車｜RISHIRI ACTIVITY",
@@ -789,7 +888,7 @@
       "notes": ""
     },
     {
-      "claimId": "C88",
+      "claimId": "C99",
       "articleExcerpt": "也可以到沓形的利尻飯店（ホテル利尻）租變速自行車，每小時300日圓，5小時以上算一天1,500日圓。比RISHIRI ACTIVITY的一般車便宜1,000日圓以上，但沒有電動車。",
       "sourceUrl": "https://hotel-rishiri.jp/",
       "sourceTitle": "ホテル利尻",
@@ -798,7 +897,7 @@
       "notes": "2,500−1,500＝1,000（旺季差 2,000）。"
     },
     {
-      "claimId": "C89",
+      "claimId": "C100",
       "articleExcerpt": "鴛泊的Space Travel（スペーストラベル）有半天3.5小時與全天7小時的E-bike導覽，也可以單純租車。",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-taiken/e-bike-tour/",
       "sourceTitle": "E-BIKEツアー/ E-BIKEレンタル｜りしぷら RISHIRI PLUS",
@@ -807,7 +906,7 @@
       "notes": "麵包屑鴛泊エリア。"
     },
     {
-      "claimId": "C90",
+      "claimId": "C101",
       "articleExcerpt": "繞島一圈約60公里，路線是自行車道接上一般公路。自行車道從野塚駐輪駐車公園起騎。",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
       "sourceTitle": "島カレンダー｜りしぷら RISHIRI PLUS",
@@ -816,7 +915,7 @@
       "notes": "野塚展望台頁：「野塚駐輪駐車公園は、「利尻島サイクリングロード」のスタート地点であり」。"
     },
     {
-      "claimId": "C91",
+      "claimId": "C102",
       "articleExcerpt": "可以把自行車直接推上環島巴士，不必折疊。一班只載2到3台，搭車前要向宗谷巴士利尻營業所預約。上學尖峰的班次不能載。",
       "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
       "sourceTitle": "利尻エリア｜宗谷バス",
@@ -825,7 +924,7 @@
       "notes": ""
     },
     {
-      "claimId": "C92",
+      "claimId": "C103",
       "articleExcerpt": "載車費每台每次500日圓。手上有一日券的話，另加500日圓就能讓自行車整天跟著上下車，當天載兩次以上就比每次付划算。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2022/07/rishiri-bicycle-in-bus-2022.pdf",
       "sourceTitle": "路線バスへの自転車積込 利用方法｜宗谷バス",
@@ -834,7 +933,7 @@
       "notes": "PDF 為圖片，渲染後目視讀取。兩次 1,000＞500。"
     },
     {
-      "claimId": "C93",
+      "claimId": "C104",
       "articleExcerpt": "利尻島沒有巴士開到登山口，路線巴士只到時刻表上的溫泉（温泉）站，所以最實際的是請住宿接送。",
       "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
       "sourceTitle": "登山口へのアクセス｜利尻富士町",
@@ -843,7 +942,7 @@
       "notes": ""
     },
     {
-      "claimId": "C94",
+      "claimId": "C105",
       "articleExcerpt": "爬利尻山要一早出發、日落前下山，偏偏計程車清晨不營業。",
       "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/secure/1717/02-1%20%E6%B3%A8%E6%84%8F%E5%96%9A%E8%B5%B7%E3%83%81%E3%83%A9%E3%82%B7%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89.pdf",
       "sourceTitle": "夏の利尻山に登る皆さまへ（注意喚起チラシ）｜利尻富士町ほか",
@@ -852,7 +951,7 @@
       "notes": "傳單文字為圖片，渲染後目視讀取。計程車見 1399「早朝の営業は行っておりません」。"
     },
     {
-      "claimId": "C95",
+      "claimId": "C106",
       "articleExcerpt": "島上幾乎所有住宿都有登山口接送，但原則上不跨區。鴛泊的住宿不送沓形登山口，沓形的住宿也不送鴛泊登山口。",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/tozan/",
       "sourceTitle": "利尻山登山｜りしぷら RISHIRI PLUS",
@@ -861,7 +960,7 @@
       "notes": ""
     },
     {
-      "claimId": "C96",
+      "claimId": "C107",
       "articleExcerpt": "例外是沓形的利尻飯店，可以送到鴛泊登山口。",
       "sourceUrl": "https://hotel-rishiri.jp/",
       "sourceTitle": "ホテル利尻",
@@ -870,7 +969,7 @@
       "notes": "出自官網首頁嵌入的官方 Instagram 貼文 FAQ。"
     },
     {
-      "claimId": "C97",
+      "claimId": "C108",
       "articleExcerpt": "現在沓形路線9合目以上封閉，要登頂只能走鴛泊路線，所以住宿訂在鴛泊最省事。",
       "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/secure/1717/02-1%20%E6%B3%A8%E6%84%8F%E5%96%9A%E8%B5%B7%E3%83%81%E3%83%A9%E3%82%B7%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89.pdf",
       "sourceTitle": "夏の利尻山に登る皆さまへ（注意喚起チラシ）｜利尻富士町ほか",
@@ -879,7 +978,7 @@
       "notes": "令和8年6月18日傳單；ホテル利尻官網亦提「沓形コースは登山道の崩落の影響」。"
     },
     {
-      "claimId": "C98",
+      "claimId": "C109",
       "articleExcerpt": "從鴛泊渡輪站走到鴛泊登山口的北麓野營場有3.6公里，大約60分鐘。從溫泉巴士站走過去是2.2公里、約40分鐘。開車從鴛泊市區約10分鐘。",
       "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
       "sourceTitle": "登山口へのアクセス｜利尻富士町",
@@ -889,7 +988,7 @@
     }
   ],
   "summary": {
-    "verified": 98,
+    "verified": 109,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

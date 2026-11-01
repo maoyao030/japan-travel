@@ -1,61 +1,46 @@
-# asahikawa-transport 驗收紀錄
+# 驗收紀錄：asahikawa-transport（2026-11-01，已上線文章重寫一輪）
 
-- 文章：旭川交通（`/places/asahikawa/transport/`，aspect-page，地點 `asahikawa`，旭川・大雪群）
-- 日期：2026-10-26（人工 session，Darren 要求今天持續寫作；旭川・大雪群大綱 Darren 同意做好就寫）
-- 稿件 SHA-256（LF）：`4661fe5a981f452cd1c3194ed9f6fec5b7f7dc06436b0af032b1699a506f58d3`
-- 規則：`content-automation/local-writer.md` 第 2～4 步，大綱 `content-planning/hokkaido/hokkaido-asahikawa-outline.json`
+- 文章：`content-production/asahikawa-transport/reader-preview.md`
+- SHA-256（換行統一成 LF 後計算）：`d440077cd85c04cbe35b8ca3179f69bcd5b41f435cb722168b43ce60dac3a30c`
+- 規則：`content-automation/rewrite-live.md`（重查、讀競品後重寫、先刪再調、意義比對、完整驗收）；重寫前的版本在 `pre-rewrite/`
+- 研究者：研究子代理（Opus 5.5，重查 40 筆會變資料，更正 F154（12/1 起機場巴士時刻已公布）、F159，新增 F179～F181；讀競品 4 篇）
+- 作者：作者子代理（Opus 5.5，讀競品後重寫；連結句照寫作指南第10條改寫 6 句，見 `link-sentences.json`）；驗收後修改也由作者處理（`revisions-round1.md`）
+- 潤稿者：潤稿子代理（Opus 5.5，先刪再調，沒寫過這篇）；意義比對 1 個子代理
+- 標題檢查：標題、SEO Title 沿用網站版本，沒改，沿用 `heading-review.json`
+- 事實查核：1 個子代理（Opus 5.5，沒參與寫作、潤稿與修改），共 2 輪
+- 讀者驗收：1 個子代理（沒寫過、潤過或查核過），第一階段只看大綱、文章與規則，第二階段才看研究記錄與事實查核
+- 協調：人工 session（Claude Code，Darren 2026-11-01 要求把剩下的文章全部重寫一輪）
 
 ## 結果
 
 | 項目 | 結果 |
 |---|---|
-| 格式 | `mechanical_clear`（audit_answer_first，aspect-page） |
-| 標題 | `acceptable`（heading-review.json 改 4 個標題：第一個 H2 加新千歲機場、三個問句補全形「？」；heading_review.py `headings_applied`；大綱同步） |
-| 讀者價值 | `acceptable`（reader-final.md，剩餘必修 0） |
-| 事實與條件 | `verified`（fact-check.json 第 2 輪 77 項全部 verified） |
-| 口吻 | check-voice --final 通過（提醒：「約」每千字 6.1、逗號 41.2） |
-| 事實編號 | tags_clear，事實表 59 筆、正文用 51 筆 |
-| 防抄襲 | check-copy 通過（潤稿時比對 GLTJP 3 篇、MATCHA 1 篇） |
-| 圖片 | 這次沒有選圖 |
+| 格式 | `mechanical_clear`（`audit_answer_first.py --article-type aspect-page`） |
+| 標題 | `acceptable`（標題沒改；讀者最終判定可接受） |
+| 讀者價值 | `acceptable`（讀者最終判定，第二階段必修 3 條都已解決） |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，84 項 claim 全部 verified） |
+| 口吻與標點 | `check-voice.mjs --final` 通過（正文 4,237 字） |
+| 事實編號 | `tags_clear`（研究記錄 67 筆，正文用到 57 筆） |
+| 圖片 | 沿用線上的文內照片與嵌入 4 個（位置由換正文工具搬過去），沒有 AI 圖或自製示意圖 |
 
-## 身分
-
-| 角色 | 身分 |
-|---|---|
-| 研究者 | 子代理（Opus 5.5），寫作前補研究，判定 `ready` |
-| 作者 | 另一個子代理（Opus 5.5），寫初稿與驗收後第 1 輪 |
-| 潤稿者 | 另一個子代理（Opus 5.5），沒寫過這篇 |
-| 編輯挑錯 | 另一個子代理（Opus 5.5） |
-| 意義比對 | 另一個子代理（Opus 5.5） |
-| 標題檢查 | 另一個子代理（Opus 5.5） |
-| 事實查核 | 另一個子代理（Opus 5.5），唯讀 |
-| 讀者驗收 | 另一個子代理（Opus 5.5），唯讀 |
-| 協調者 | 人工 session 主代理（Opus 5.5），同步大綱標題，沒有改正文 |
+**最終結果：`ready_for_user_preview`。** Darren 2026-11-01 要求重寫後換上網站。
 
 ## 經過
 
-| 步驟 | 結果 |
-|---|---|
-| 寫作前補研究 | `ready`；事實 56 筆（新增 F151～F172：12/1 起機場巴士 1,000 日圓、冬期動物園巴士、たいせつライナー、高速あさひかわ號等） |
-| 作者 | 初稿 mechanical_clear；帶前綴的事實複製成 F173～F175 |
-| 潤稿 | 讀 GLTJP 3 篇、MATCHA 1 篇；五項檢查通過 |
-| 編輯挑錯 | 21 條（「……的話」10 次、重講、日文直搬），採納 15 以上 |
-| 意義比對 | 不可接受 1（行李「只能」改強）、遺失 0，已修 |
-| 事實查核第 1 輪 | 74 項，incorrect 7（C10、C20、C44、C47、C51、C66、C68） |
-| 讀者驗收 | 第一階段 revise 必修 7；第二階段最終必修 14 |
-| 作者驗收後第 1 輪 | 14 條必修處理，補研究 F176～F178（バスタッチ位置，經營者位置圖 PDF） |
-| 事實查核第 2 輪 | 77 項全部 verified |
-| 讀者最終 | acceptable，剩餘必修 0 |
+| 輪 | 做了什麼 | 結果 |
+|---|---|---|
+| 研究 | 重查 40 筆、讀競品 4 篇 | 更正 F154、F159；新增 F179～F181（12/1～1/8 機場巴士表、班機晚到延後發車、叫車 App） |
+| 寫作 | 讀競品後重排、改寫 6 句連結句；先刪再調潤稿（刪 F39 整筆與 F33、F41、F170、F46/F156 的一部分）；意義比對 | 四項檢查通過；0 不可接受、0 遺失 |
+| 1 | 事實查核第 1 輪（80 項） | 全部 verified |
+| 2 | 讀者驗收第一、二階段 | 必修 3 條：JR 特急指定席怎麼買、新千歲沒預約怎麼買 Taisetsu Liner、轉國內線飛旭川機場 |
+| 3 | 作者照必修修改，新增 F182～F186 | 三項檢查通過 |
+| 4 | 事實查核第 2 輪（84 項）；讀者最終判定 | 全部 verified；讀者價值與標題可接受、無剩餘必修 |
 
 ## 查不到所以正文沒寫的
 
-- 道北巴士機場直達車的時刻與車資（道北巴士官網整天連不上，只有 2022 年版存檔）。
-- JR 新千歲到旭川全程車資、高速巴士來回票販售處、ふらのバス車資（要新研究）。
-- 12 月以後的機場巴士時刻表（正文改成告訴讀者去哪裡看）。
+- 道北巴士官網（連不上，F157 照舊不寫）、特別快速大雪與快速北見號要不要另外買票
 
 ## 留給之後的事
 
-- 事實表待同步：F151～F178、F41 與 F48 更正、F49 期限註記；旭山動物園研究發現 F19、F152 的 41、47 號起點是旭川站發。
-- 道北巴士官網恢復後重查（下次查核 2026-11-10）。
-
-最終結果：`ready_for_user_preview`
+- F154、F159 更正與新增 F179～F186 要同步回地點事實表與 D1；F183 在 2026-12-01 重查。
+- glossary 的 Taisetsu Liner 說明已改成旭川–新千歲機場。

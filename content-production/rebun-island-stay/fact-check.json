@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island-stay",
-  "articleSha256": "1de045756dc55514576f5b4548af05a08ea53e34e8e45843e21e90422ff8e374",
-  "checker": "獨立事實查核 agent（Claude Opus 5.5，非作者、潤稿者或修改者，唯讀）。重寫稿第 1 輪查核，2026-11-01 以 curl 實際打開各官方來源；星観荘空室情報（圖片）、ホテル礼文訂房頁、Trip.com、Agoda 用瀏覽器新分頁讀取，讀完關閉，未點下載、未遇驗證碼。礼文島観光協会 rebun-island.jp 2026-11-01 curl 逾時仍連不上，觀光協會的事實改用 Internet Archive 存檔（住宿清單 2025-05-22、中文頁 2026-06-17、交通頁 2026-10-07、ぶらりMAP 2026-02-15）。",
+  "articleSha256": "33b6ddb43555c987385af1eda8c62d6eda18d46657d3e5aa71fdc141e07463a3",
+  "checker": "獨立事實查核 agent（Claude Opus 5.5，非作者、潤稿者或修改者，唯讀）。重寫稿第 1 輪查核，2026-11-01 以 curl 實際打開各官方來源；星観荘空室情報（圖片）、ホテル礼文訂房頁、Trip.com、Agoda 用瀏覽器新分頁讀取，讀完關閉，未點下載、未遇驗證碼。礼文島観光協会 rebun-island.jp 2026-11-01 curl 逾時仍連不上，觀光協會的事實改用 Internet Archive 存檔（住宿清單 2025-05-22、中文頁 2026-06-17、交通頁 2026-10-07、ぶらりMAP 2026-02-15）。 第 2 輪複查（驗收後第 1 輪修改，SHA 198fc367…）：逐句重新比對整篇，改過與新增的句子重開來源（禮文莊料金頁、星観荘宿泊のご案内、咲涼 FAQ、ペンションうーにー首頁與 2026-08-03 公告），C53 改 verified，新增 C71～C74。 第 3 輪複查（SHA 33b6ddb4…）：以雜湊確認和上一版只差 C73 一句（把新句換回舊句得到 198fc367…），C73 改 verified。",
   "checkedAt": "2026-11-01",
   "claims": [
     {
@@ -16,12 +16,12 @@
     },
     {
       "claimId": "C2",
-      "articleExcerpt": "主要的9家旅館與民宿裡，香深有6家、船泊有3家。多數附2餐。",
+      "articleExcerpt": "島上主要的旅館與民宿有9家，香深6家、船泊3家，另外還有十多家小民宿散在兩區。多數附2餐。",
       "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
       "sourceTitle": "宿泊｜礼文島観光情報（Internet Archive 2025-05-22 存檔）",
       "sourceQuote": "香深：咲涼、ホテル礼文、花れぶん、民宿きりり、ペンション う～に～、民宿はな心／船泊：ホテル礼文荘、民宿海憧、星観荘；料金欄「2食付」7 家",
       "verdict": "verified",
-      "notes": "9 家中咲涼、ホテル礼文、花れぶん、う～に～、はな心、礼文荘、海憧標 2 食付；きりり未寫、星観荘官網可選含 2 餐。"
+      "notes": "9 家中咲涼、ホテル礼文、花れぶん、う～に～、はな心、礼文荘、海憧標 2 食付；きりり未寫、星観荘官網可選含 2 餐。 十多家見 ぶらりMAP 存檔（12 個住宿名稱，C44）。"
     },
     {
       "claimId": "C3",
@@ -313,7 +313,7 @@
     },
     {
       "claimId": "C35",
-      "articleExcerpt": "民宿Hana心（民宿はな心）在10月1日到4月19日的淡季也有附2餐的方案。",
+      "articleExcerpt": "民宿Hana心在10月1日到隔年4月19日也有附2餐的方案。",
       "sourceUrl": "https://hanashin.crayonsite.net/p/2/",
       "sourceTitle": "礼文島 はな心 宿泊料金 | 自然に親しむ宿 Nature Inn はな心",
       "sourceQuote": "宿泊料金 冬季10月1日〜4月19日 ビジネスプラン 1泊2食付き 1名様",
@@ -331,12 +331,12 @@
     },
     {
       "claimId": "C37",
-      "articleExcerpt": "禮文莊 | 附2餐或只含早餐 | 開車約30分鐘，接送配合固定船班，要事先聯絡 | 電話，0163-87-2755、todo@d1.dion.ne.jp",
+      "articleExcerpt": "| 禮文莊 | 附2餐或只含早餐 | 開車約30分鐘，接送配合固定船班，要事先聯絡 | 只接受電話，0163-87-2755 |",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
       "sourceTitle": "宿泊料金 - あつもりの里 礼文荘",
       "sourceQuote": "店主お勧めのプラン 1泊2食付き／朝食のみ（送迎はありません）／ご予約は電話で受け付けております。／8：45と16：40着の稚内便に合わせて運行予定、事前連絡が必要です。",
       "verdict": "verified",
-      "notes": "車程、電話、信箱見觀光協會清單存檔（「香深港より、車で約30分」「0163-87-2755」「todo@d1.dion.ne.jp」）。"
+      "notes": "複查：信箱已拿掉、改「只接受電話」，與官網一致。車程與電話見觀光協會清單存檔。"
     },
     {
       "claimId": "C38",
@@ -349,16 +349,16 @@
     },
     {
       "claimId": "C39",
-      "articleExcerpt": "星觀莊 | 可選附2餐、只附晚餐、只附早餐或不含餐 | 開車約40分鐘，接送配合稚內港發著的第一班與最後一班渡輪 | 只接受電話，0163-87-2818",
+      "articleExcerpt": "| 星觀莊 | 可選附2餐、只附晚餐、只附早餐或不含餐 | 開車約40分鐘，接送配合往返稚內港渡輪的第一班與最後一班 | 只接受電話，0163-87-2818，可用PayPay付款 |",
       "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
       "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
-      "sourceQuote": "1泊夕・朝食付き／1泊夕食付き／1泊朝食付き／素泊まり／稚内港発着フェリーの始発便と最終便に合わせて、港まで送迎をしております。／予約の際は上記に電話をお願い致します",
+      "sourceQuote": "1泊夕・朝食付き／1泊夕食付き／1泊朝食付き／素泊まり／稚内港発着フェリーの始発便と最終便に合わせて、港まで送迎をしております。／予約の際は上記に電話をお願い致します／※PayPay決済も利用可能です。",
       "verdict": "verified",
-      "notes": "官網電話寫 01638-7-2818（同號碼舊式分段）；車約 40 分見觀光協會清單存檔。"
+      "notes": "複查：「往返稚內港渡輪」對應「稚内港発着フェリー」；PayPay 2026-11-01 官網原文確認。官網電話寫 01638-7-2818（同號碼舊式分段）；車約 40 分見觀光協會清單存檔。"
     },
     {
       "claimId": "C40",
-      "articleExcerpt": "因故也可能臨時沒有接送，訂房時確認搭的船能不能接。",
+      "articleExcerpt": "有些船班不接，因故也可能臨時沒有接送，訂房時說清楚搭哪一班船。",
       "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
       "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
       "sourceQuote": "※諸事情により急遽 送迎なし,夕食なし,朝食なしの状況になる場合もあります。／※送迎できない船便もありますので、ご予約の際にお確かめください。",
@@ -394,7 +394,7 @@
     },
     {
       "claimId": "C44",
-      "articleExcerpt": "觀光協會的散步地圖Burari MAP（ぶらりMAP）上，還標了十多家清單以外的住宿，地圖上只有名稱與位置。",
+      "articleExcerpt": "除了上面9家，觀光協會的散步地圖Burari MAP（ぶらりMAP）上還標了十多家住宿，地圖上只有名稱與位置。",
       "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
       "sourceTitle": "礼文島 ぶらりMAP（Internet Archive 2026-02-15 存檔）",
       "sourceQuote": "旅館桜井／民宿やざわ／民宿・居酒屋香栄丸／旅館かもめ荘／しまのやど れぶんしり／民宿宮島荘／旅館一番館／民宿山光／民宿 夕凪／民宿カメとはまなす／民宿 吹風／コリンシアン",
@@ -466,7 +466,7 @@
     },
     {
       "claimId": "C52",
-      "articleExcerpt": "禮文莊與星觀莊用電話訂，民宿Hana心用電話或傳真，民宿Kiriri與民宿海憧可以打電話或寫電子郵件。",
+      "articleExcerpt": "禮文莊與星觀莊用電話訂，民宿Hana心（民宿はな心）用電話或傳真，民宿Kiriri與民宿海憧可以打電話或寫電子郵件。",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
       "sourceTitle": "宿泊料金 - あつもりの里 礼文荘",
       "sourceQuote": "ご予約は電話で受け付けております。",
@@ -475,12 +475,12 @@
     },
     {
       "claimId": "C53",
-      "articleExcerpt": "不想講電話的人，可以用翻譯好的文字寫電子郵件給咲涼、花Rebun、民宿Kiriri、禮文莊或民宿海憧。",
-      "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
-      "sourceTitle": "宿泊料金 - あつもりの里 礼文荘",
-      "sourceQuote": "ご予約は電話で受け付けております。",
-      "verdict": "incorrect",
-      "notes": "禮文莊官網明寫只用電話受理訂房（信箱 todo@d1.dion.ne.jp 只出現在觀光協會清單的「お問い合わせ」欄）。這句接在訂房管道之後，讀者會以為能寫信訂禮文莊；同一節前句也寫「禮文莊與星觀莊用電話訂」，前後矛盾。修改方向：名單拿掉禮文莊，或改寫成禮文莊信箱只用來詢問、訂房仍要打電話。其餘四家的信箱見觀光協會清單存檔，咲涼與花れぶん另有官網線上訂房。"
+      "articleExcerpt": "不想講電話的人，可以用翻譯好的文字寫電子郵件給咲涼、花Rebun、民宿Kiriri或民宿海憧。禮文莊與星觀莊只接受電話預約",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報（Internet Archive 2025-05-22 存檔）",
+      "sourceQuote": "咲涼 rebun@okcs.co.jp／花れぶん info@hanarebun.com／民宿きりり kiriri-moto@cream.plala.or.jp／民宿海憧 kaido@hokkai.or.jp",
+      "verdict": "verified",
+      "notes": "複查（驗收後第 1 輪）：禮文莊已移出寫信名單並改成只接受電話，與禮文莊官網「ご予約は電話で受け付けております。」一致；星觀莊「予約の際は上記に電話をお願い致します」。四家信箱見觀光協會清單存檔。"
     },
     {
       "claimId": "C54",
@@ -538,7 +538,7 @@
     },
     {
       "claimId": "C60",
-      "articleExcerpt": "民宿Hana心在10月1日到隔年4月19日也有附2餐的方案，冬天要在島上過夜，可以從這家問起。",
+      "articleExcerpt": "冬天要在島上過夜，可以先問兩家民宿。民宿Hana心在10月1日到隔年4月19日也有附2餐的方案。",
       "sourceUrl": "https://hanashin.crayonsite.net/p/2/",
       "sourceTitle": "礼文島 はな心 宿泊料金 | 自然に親しむ宿 Nature Inn はな心",
       "sourceQuote": "宿泊料金 冬季10月1日〜4月19日 ビジネスプラン 1泊2食付き 1名様",
@@ -634,11 +634,47 @@
       "sourceQuote": "（存檔）宿泊｜礼文島観光情報",
       "verdict": "verified",
       "notes": "2026-11-01 curl 原網址 20 秒逾時（exit 28），確認仍連不上。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "住宿費可以事先付清，也能選到現場付，之後還能改付款方式。",
+      "sourceUrl": "https://rebun.by-onko-chishin.com/faq/",
+      "sourceTitle": "よくあるご質問｜礼文観光ホテル 咲涼",
+      "sourceQuote": "宿泊料金を事前に支払えますか？ 事前精算も承っております。／事前決済・現地決済の変更は可能ですか？ 支払い方法の変更が可能でございます。",
+      "verdict": "verified",
+      "notes": "F513；2026-11-01 curl 讀官網 FAQ。"
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "民宿Uni在5月20日到9月30日以外的淡季也供餐，晚餐是和食",
+      "sourceUrl": "https://pensionuni.main.jp/",
+      "sourceTitle": "ペンションうーにー ホームページ【公式】",
+      "sourceQuote": "オンシーズン（5/20～9/30）は和洋折衷のメニュー オフシーズンは和食の提供になります",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "2026年10月起的淡季已經開放訂房。",
+      "sourceUrl": "https://pensionuni.main.jp/2026/08/03/10%e6%9c%88%e3%81%8b%e3%82%89%e3%81%ae%e4%ba%88%e7%b4%84%e5%8f%97%e4%bb%98%e9%96%8b%e5%a7%8b%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
+      "sourceTitle": "10月からの予約受付開始について - ペンションうーにーHP",
+      "sourceQuote": "投稿日: 2026年8月3日／2026年10月1日からのオフシーズンの当館のご予約開始のお知らせをいたします。",
+      "verdict": "verified",
+      "notes": "第 3 輪複查：改成「10 月起的淡季已經開放訂房」，與官網 2026-08-03 公告（10/1 起淡季的訂房開始受理）一致。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "花Rebun、民宿Kiriri與民宿海憧可以寫信問冬天有沒有營業，禮文莊則打電話問。",
+      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊｜礼文島観光情報（Internet Archive 2025-05-22 存檔）",
+      "sourceQuote": "info@hanarebun.com／kiriri-moto@cream.plala.or.jp／kaido@hokkai.or.jp／ホテル礼文荘 電話 : 0163-87-2755",
+      "verdict": "verified",
+      "notes": "建議句；聯絡方式與 C53 一致。禮文莊官網只用電話受理訂房。"
     }
   ],
   "summary": {
-    "verified": 69,
-    "incorrect": 1,
+    "verified": 74,
+    "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,

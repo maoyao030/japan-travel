@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "articleId": "rishiri-island-stay",
-  "articleSha256": "53fc12d4927ca5067c3a81566dadbff6475e018671302bb0d0f268b7ddcc4ff3",
-  "checker": "事實查核 agent（Claude Opus 5.5，唯讀，非作者、潤稿者或修改者）；重寫稿第 1 輪查核，2026-11-01 以 curl 讀原始網頁、PyMuPDF 讀宗谷巴士與町公所 PDF，Agoda 城市頁與飯店頁以瀏覽器自己的分頁讀取後關閉",
+  "articleSha256": "e520329dfff91cee709d153fcbdf553906f1dc13dd42a30b5503b6a7e1755fcf",
+  "checker": "事實查核 agent（Claude Opus 5.5，唯讀，非作者、潤稿者或修改者）；重寫稿第 2 輪複查（驗收後第 1 輪修改版；改過與新增的句子重開來源），2026-11-01 以 curl 讀原始網頁、PyMuPDF 讀宗谷巴士與町公所 PDF，Agoda 城市頁與飯店頁以瀏覽器自己的分頁讀取後關閉",
   "checkedAt": "2026-11-01",
   "claims": [
     {
       "claimId": "C1",
-      "articleExcerpt": "利尻島的住宿分在鴛泊、沓形、鬼脇與仙法志四個區域",
+      "articleExcerpt": "利尻島住宿分在鴛泊、沓形、鬼脇與仙法志四個區域",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-place/",
       "sourceTitle": "名所｜利尻島｜りしぷら RISHIRI PLUS",
       "sourceQuote": "島のエリアから探す 鴛泊エリア 鬼脇エリア 沓形エリア 仙法志エリア",
@@ -295,7 +295,7 @@
     },
     {
       "claimId": "C33",
-      "articleExcerpt": "利尻Umineko旅舍（利尻うみねこゲストハウス）2026年的營業已經結束，2027年的營業期間與訂房都還沒定；表列「2026年營業已結束，2027年營業期間未定」",
+      "articleExcerpt": "利尻Umineko旅舍（利尻うみねこゲストハウス）2026年的營業已經結束，2027年的營業期間與訂房都還沒定；表列「2026年營業已結束，2027年營業期間未定」；接送表「2026年已結束營業」",
       "sourceUrl": "https://www.rishiriumineko.com",
       "sourceTitle": "利尻うみねこゲストハウス",
       "sourceQuote": "2026年の営業は終了しました。 ／ 2027年の営業期間、ご予約受付は未定です。",
@@ -394,7 +394,7 @@
     },
     {
       "claimId": "C44",
-      "articleExcerpt": "路線巴士出了四個鎮上的街區後，多數路段可以在路邊舉手攔車，要下車就直接跟司機說",
+      "articleExcerpt": "路線巴士出了鴛泊、沓形、仙法志、鬼脇四個市區後，多數路段可以在路邊舉手攔車，要下車就直接跟司機說",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/29a5c2badb576f42ad4d4d9e07aefa7f.pdf",
       "sourceTitle": "【利尻】自由乗降区間について｜宗谷バス",
       "sourceQuote": "沓形、鴛泊、仙法志、⿁脇の市街地区間を除いた全区間 ／ バスが来たら手を挙げるなど乗車する合図を出してください。 ／ 降車したい場所に近づいてきましたら乗務員に降車したいことを口頭でお知らせください。",
@@ -457,7 +457,7 @@
     },
     {
       "claimId": "C51",
-      "articleExcerpt": "利尻町森林公園露營場｜沓形｜5月1日～10月31日",
+      "articleExcerpt": "利尻町森林公園露營場｜沓形｜5月1日～10月31日；沓形岬公園露營場…與利尻町森林公園露營場…都在沓形",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/shinrin-park/",
       "sourceTitle": "利尻町森林公園キャンプ場｜利尻島｜りしぷら RISHIRI PLUS",
       "sourceQuote": "北海道利尻郡利尻町沓形字富野 ／ 5月1日～10月31日 ／ 冬期間閉鎖（11月～4月）",
@@ -466,12 +466,12 @@
     },
     {
       "claimId": "C52",
-      "articleExcerpt": "12月到隔年2月，下表的住宿只有Maruzen民宿Rera Moshiri在12月20日休業結束後重新營業，其他全部不營業",
+      "articleExcerpt": "12月到隔年2月，下表的住宿全部不營業",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/",
       "sourceTitle": "宿泊施設｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "依表內各家來源重算：マリン・富士観光 11～2月休館、ぐりーんひる 11～2月休館、あや瀬 11～3月、ひなげし館 11～4月、はまだ 11～4月、雲丹御殿 10～5月、うみねこ 2026年終了、アイランドイン 2027/5/22 開業、ホテル利尻 2026/11/30～2027/3下旬休；レラモシリ官網 10/15～12/20 休業（りしぷら為通年）",
+      "sourceQuote": "依表內各家來源重算：マリン・富士観光 11～2月休館、ぐりーんひる 11～2月休館、あや瀬 11～3月、ひなげし館 11～4月、はまだ 11～4月、雲丹御殿 10～5月、うみねこ 2026年終了、アイランドイン 2027/5/22 開業、ホテル利尻 2026/11/30～2027/3下旬休",
       "verdict": "verified",
-      "notes": "推算與各家原文一致"
+      "notes": "推算與各家原文一致；Rera Moshiri 已移出本表"
     },
     {
       "claimId": "C53",
@@ -493,12 +493,12 @@
     },
     {
       "claimId": "C55",
-      "articleExcerpt": "表列Maruzen民宿Rera Moshiri（鴛泊）2026年10月15日～12月20日休業；Rera Moshiri休業期間不接電話，要用e-mail聯絡",
+      "articleExcerpt": "（全年營業鴛泊清單）Maruzen民宿Rera Moshiri，10月15日到12月20日休業，休業期間不接電話，要用e-mail聯絡",
       "sourceUrl": "http://www.maruzen.com/tic/oyado/",
       "sourceTitle": "マルゼンペンション レラモシリ",
       "sourceQuote": "2026年10月15日から12月20日まで休業期間となります。 ／ お電話での対応は出来ませんのでe-mailでお願い致します。",
       "verdict": "verified",
-      "notes": "鴛泊：りしぷら 鴛泊エリア"
+      "notes": "りしぷら レラモシリ頁：鴛泊エリア、営業期間 通年；正文只寫休業期間，列在全年營業清單與りしぷら一致"
     },
     {
       "claimId": "C56",
@@ -520,12 +520,12 @@
     },
     {
       "claimId": "C58",
-      "articleExcerpt": "觀光協會網站上利尻飯店還寫著全年營業，不過飯店官網已公告今年冬天停止住宿",
+      "articleExcerpt": "在其他網站看到利尻飯店全年營業，今年冬天其實不能住，住宿從11月30日起休業",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/hotel-rishiri/",
       "sourceTitle": "ホテル利尻｜利尻島｜りしぷら RISHIRI PLUS",
       "sourceQuote": "営業期間 通年（年末年始は除く）",
       "verdict": "verified",
-      "notes": "官網公告見ホテル利尻冬季休業公告那筆"
+      "notes": "11月30日起休業見ホテル利尻冬季休業公告那筆"
     },
     {
       "claimId": "C59",
@@ -733,10 +733,28 @@
       "sourceQuote": "ゆ～に 5月1日～10月31日 ／ 利尻北麓野営場 5月15日～10月15日 ／ 沼浦 6月1日～9月30日",
       "verdict": "verified",
       "notes": ""
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "冬天渡輪只停鴛泊港，要到沓形這幾家，可以從鴛泊港搭經沓形的B路線巴士過去",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表 日本語(稚内-鴛泊)｜ハートランドフェリー",
+      "sourceQuote": "稚内発～鴛泊着（各期間 1/1～4/27、4/28～5/31、6/1～9/30、10/1～10/31、11/1～12/31 皆為鴛泊）／ 利尻島～礼文島頁：沓形発～香深着 只列在 6/1～9/30",
+      "verdict": "verified",
+      "notes": "B路線經沓形：宗谷巴士 PDF「Ｂコース 鴛泊→沓形経由→鴛泊」"
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "（B路線）10月到隔年5月一天4班",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "利尻線 夏期時刻表（宗谷バス）",
+      "sourceQuote": "冬期ダイヤ（10月1日～5月31日） 便 1 2 3 4 ／ Ｂコース 鴛泊→沓形経由→鴛泊",
+      "verdict": "verified",
+      "notes": ""
     }
   ],
   "summary": {
-    "verified": 81,
+    "verified": 83,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
