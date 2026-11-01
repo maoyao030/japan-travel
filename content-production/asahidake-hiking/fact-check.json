@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "articleId": "asahidake-hiking",
-  "articleSha256": "e95ceb0fc0d7a3bacaf5b17b81f9bee5711c5ad1d691366c10f99df41f82da6c",
-  "checker": "fact-check-agent（唯讀事實查核，非作者、非潤稿者；2026-10-26 以 curl 重新下載所有來源，PDF 下載到系統暫存資料夾用 pymupdf 轉圖判讀，未使用瀏覽器）。第 2 輪：對驗收後第 1 輪修改稿逐句重比，改過與新增的句子重查來源",
-  "checkedAt": "2026-10-26",
+  "articleSha256": "d79d32b89ef6819c81dba1aed06ab67371beb9632fc56cc44ec5e45986f6540e",
+  "checker": "fact-check-agent（唯讀事實查核，非作者、非潤稿者、非修改者）。2026-11-02 對重寫稿逐句抽出事實，以 curl 重新下載全部 29 個來源與 mont-bell 防熊噴霧租借頁，HTML 轉文字比對；PDF（たすかるマップ、姿見散策マップ、協議會地圖）用 pymupdf 轉圖判讀；纜車營運月曆從頁面 HTML 解析（排除註解掉的舊表）。未使用瀏覽器。第 2 輪：對重寫後驗收第 1 輪修改稿逐句重比，改過與新增的句子（等級說明、Compass／YAMAP、裝備清單主詞、6 月查官網、棕熊一節三段、保全規則開頭）重新下載來源查證，另讀協議會「ヒグマについて」頁。",
+  "checkedAt": "2026-11-02",
   "claims": [
     {
       "claimId": "C1",
       "articleExcerpt": "旭岳標高2,291公尺，是北海道最高峰，也是大雪山的主峰。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/about/",
       "sourceTitle": "旭岳の概要 | 旭岳ビジターセンター",
-      "sourceQuote": "2,291 m｜大雪山の主峰であり、北海道の最高峰です。",
+      "sourceQuote": "標高 2,291 m｜2,000ｍ級の山々が連なる大雪山の主峰であり、北海道の最高峰です。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C2",
       "articleExcerpt": "旭岳登山多半從纜車抵達的5合目姿見站起步。",
-      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/grades/",
-      "sourceTitle": "大雪山グレード - 大雪山国立公園連絡協議会",
-      "sourceQuote": "グレード３の事例：姿見の池園地～旭岳　この区間は、旭岳登頂、旭岳から裾合平の周回…で利用されている大雪山のメインルートで、道内外から多くの登山者が訪れています。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e6%97%ad%e5%b2%b3/",
+      "sourceTitle": "旭岳 - 大雪山国立公園連絡協議会",
+      "sourceQuote": "旭岳山麓駅からロープウェイで一気に旭岳５合目の姿見駅まで。",
       "verdict": "verified",
-      "notes": "「5合目の姿見駅」見協議會旭岳頁「旭岳５合目の姿見駅まで」。"
+      "notes": "「多半」另見大雪山グレード頁：姿見の池園地～旭岳は「大雪山のメインルート」。"
     },
     {
       "claimId": "C3",
@@ -30,92 +30,74 @@
       "sourceTitle": "旭岳 - 大雪山国立公園連絡協議会",
       "sourceQuote": "コースタイム 姿見駅舎より 登り２時間50分 下り２時間05分",
       "verdict": "verified",
-      "notes": "正文表格前後、H2「從姿見站登旭岳山頂」重複出現的 2:50／2:05 同此。"
+      "notes": ""
     },
     {
       "claimId": "C4",
-      "articleExcerpt": "路線屬於大雪山等級3，一路是砂礫，石頭很多。",
+      "articleExcerpt": "路線屬於大雪山等級3。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e6%97%ad%e5%b2%b3/",
       "sourceTitle": "旭岳 - 大雪山国立公園連絡協議会",
-      "sourceQuote": "大雪山グレード グレード3｜登山道は砂礫で、石がゴロゴロしている。",
+      "sourceQuote": "大雪山グレード グレード3",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C5",
-      "articleExcerpt": "5合目以上沒有樹可以擋風，起濃霧時下山很容易走錯方向。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
-      "sourceTitle": "旭岳たすかるマップ（夏）",
-      "sourceQuote": "旭岳のP-5（5合目）から上は、風や日光を遮る樹木などがありません。",
+      "articleExcerpt": "大雪山的登山道照難易度分成5級，往裾合平的等級2是初學者也好走的路，登頂這段則是迎風的碎石坡，一路石頭很多。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/grades/",
+      "sourceTitle": "大雪山グレード - 大雪山国立公園連絡協議会",
+      "sourceQuote": "「グレード１」から「グレード５」までの５段階にわけた「大雪山グレード」｜グレード２の事例：姿見の園地～裾合平…登山初級者が自然とのふれ合いを楽しむことができる、歩きやすく整備された道｜グレード３の事例：姿見の池園地～旭岳…ガレ場も出てくる風衝地です。",
       "verdict": "verified",
-      "notes": "後半見協議會大雪山グレード頁「濃霧になると旭岳からの下山時にルートを見失いやすく、遭難事故も発生しています」。「很容易」對應「見失いやすく」，強度一致。"
+      "notes": "「石頭很多」見協議會旭岳頁「登山道は砂礫で、石がゴロゴロしている」。"
     },
     {
       "claimId": "C6",
-      "articleExcerpt": "只帶夏季登山裝備就能登頂的季節，大約從6月第3個週末開山，到9月下旬初冠雪為止。",
-      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
-      "sourceTitle": "旭岳 | ようこそ東川",
-      "sourceQuote": "例年6月第3週末が山開きになっており、それから9月下旬に初冠雪が降る頃までが登山シーズンです。",
+      "articleExcerpt": "5合目以上沒有樹可以擋風，起濃霧時下山也很容易走錯方向。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
+      "sourceTitle": "旭岳たすかるマップ（夏・PDF、東川町大雪山国立公園保護協会）",
+      "sourceQuote": "旭岳のP-5（5合目）から上は、風や日光を遮る樹木などがありません。",
       "verdict": "verified",
-      "notes": "「只帶夏季裝備」是編輯判斷，和協議會「10月初めには…登山道は雪に埋まります」、遊客中心「初冠雪…旭岳山頂への登山は、完全に冬山装備が必要」一致。"
+      "notes": "起霧迷路另見大雪山グレード頁「濃霧になると旭岳からの下山時にルートを見失いやすく」。"
     },
     {
       "claimId": "C7",
-      "articleExcerpt": "纜車下行末班在2026年7月到9月是17:30",
-      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
-      "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "2026年7月～9月運行スケジュール：全日 D または E｜D 始発（上り） 6:30am 〜 最終（下り） 5:30pm｜E 始発（上り） 6:00am 〜 最終（下り） 5:30pm",
+      "articleExcerpt": "只帶夏季登山裝備就能登頂的季節，大約從6月第3個週末開山，到9月下旬初冠雪為止。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳エリア | ようこそ東川",
+      "sourceQuote": "例年6月第3週末が山開きになっており、それから9月下旬に初冠雪が降る頃までが登山シーズンです。",
       "verdict": "verified",
-      "notes": "月曆 7/1～9/30 每天都是 D 或 E，沒有 F（6:00～18:00）。圖例在 HTML 註解外、頁面可見。"
+      "notes": "初冠雪後需完全冬山裝備見遊客中心 10/2 文章。"
     },
     {
       "claimId": "C8",
-      "articleExcerpt": "想趕上它，最晚中午12:25就得從姿見站往山頂出發。",
+      "articleExcerpt": "想趕上2026年7月到9月17:30的纜車下行末班，最晚中午12:25就得從姿見站往山頂出發。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "最終（下り） 5:30pm｜ロープウェイ所要時間 片道約10分",
+      "sourceQuote": "2026年7～9月運行スケジュール：平日 D「始発（上り）6:30am 〜 最終（下り）5:30pm」、土日祝 E「6:00am 〜 5:30pm」｜片道約10分",
       "verdict": "verified",
-      "notes": "重算：17:30−0:10−(2:50+2:05)＝12:25。路線時間來源協議會旭岳頁。扣掉纜車 10 分鐘屬保守算法（下行末班時刻若指姿見站發車則多留 10 分），不會讓讀者趕不上。"
+      "notes": "17:30−10分−下山2:05−上山2:50＝12:25，重算一致。月曆由頁面 HTML 解析（7～9 月每天都是 D 或 E）。"
     },
     {
       "claimId": "C9",
       "articleExcerpt": "上山前向北海道警察交登山計畫書，在登山口再寫入林屆簿，攜帶式廁所也要在山下先買好。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
       "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
-      "sourceQuote": "入山の前には『登山計画書(登山届)』を北海道警察に提出、『入林届』を記入してください。｜『入 林 届』・・・登山開始前に、登山口に設置された”入林届簿”に必要事項を記入してください。",
+      "sourceQuote": "入山の前には『登山計画書(登山届)』を北海道警察に提出、『入林届』を記入してください。｜携帯トイレ販売箇所・東川町内",
       "verdict": "verified",
-      "notes": "攜帶式廁所先買好：同頁販售處都在山下（東川町內與遊客中心），石室以上沒有廁所。"
+      "notes": ""
     },
     {
       "claimId": "C10",
-      "articleExcerpt": "2026年的開山祭「旭岳山のまつり」在6月20日舉行，會以愛奴族傳統的儀式與舞蹈祈求登山者平安。",
-      "sourceUrl": "https://www.welcome-higashikawa.jp/event-mountinfes2026/",
-      "sourceTitle": "【イベント】ヌプリコロカムイノミ 旭岳山のまつり 6月20日開催 | ようこそ東川",
-      "sourceQuote": "ヌプリコロカムイノミ 旭岳山のまつり 6月20日開催｜登山者や観光客、旭岳で働く関係者の安全を祈願する「安全祈願祭」を実施します。当日は、アイヌ民族伝統の儀式や舞踊、ムックリ演奏などを通して、山の神様へ感謝と祈りを捧げます。",
+      "articleExcerpt": "旭岳遊客中心把6月開山到10月上旬的紅葉季算成旺季，不過紅葉一過，就是漫長的冬天。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/about/",
+      "sourceTitle": "旭岳の概要 | 旭岳ビジターセンター",
+      "sourceQuote": "6月の山開きから10月初旬の紅葉期にハイシーズンを迎え｜紅葉が終わると長い冬が訪れ",
       "verdict": "verified",
-      "notes": "第 2 輪重查主辦方頁。原文的安全祈願祭與愛奴儀式是同一天的兩個節目，正文合成一句「以愛奴族儀式與舞蹈祈求登山者平安」略有簡化，但祈求平安與愛奴儀式舞蹈都有原文，可接受。火把遊行已拿掉。"
+      "notes": ""
     },
     {
       "claimId": "C11",
-      "articleExcerpt": "只帶夏季登山裝備能登頂的期間，是6月第3個週末開山到9月下旬初冠雪。",
-      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
-      "sourceTitle": "旭岳 | ようこそ東川",
-      "sourceQuote": "例年6月第3週末が山開きになっており、それから9月下旬に初冠雪が降る頃までが登山シーズンです。",
-      "verdict": "verified",
-      "notes": "第 2 輪：原本比對兩種說法的句子已刪，改成結論句。「只帶夏季裝備」的界線有協議會「10月初めには…登山道は雪に埋まります」與遊客中心 10/2「完全に冬山装備が必要」支持。"
-    },
-    {
-      "claimId": "C12",
-      "articleExcerpt": "旭岳遊客中心把6月開山到10月上旬的紅葉季算成旺季，但10月上旬山頂附近就會積雪，紅葉一過就是漫長的冬天。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/about/",
-      "sourceTitle": "旭岳の概要 | 旭岳ビジターセンター",
-      "sourceQuote": "6月の山開きから10月初旬の紅葉期にハイシーズンを迎え…紅葉が終わると長い冬が訪れ",
-      "verdict": "verified",
-      "notes": "「10月上旬山頂附近就會積雪」見協議會安全登山頁「10月初めには、大雪山山頂付近は雪が積もり」，強度一致。"
-    },
-    {
-      "claimId": "C13",
-      "articleExcerpt": "開山到8月中旬大雪山仍留著雪溪，有些地方要用輕冰爪，夏天遇上天氣變差也可能失溫。",
+      "articleExcerpt": "開山到8月中旬大雪山仍留著雪溪，有些地方要用輕冰爪。遇上天氣變差，夏天也可能失溫。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
       "sourceQuote": "山開き～８月中旬 大雪山は夏でも雪渓が残ります。軽アイゼンが必要な場所もあります。また、夏でも天候が悪化すると、低体温症になる危険もあります。",
@@ -123,124 +105,151 @@
       "notes": ""
     },
     {
-      "claimId": "C14",
-      "articleExcerpt": "2026年開山後第一週的6月24日，姿見の池一帶還被殘雪蓋住，有的地方泥濘，有的地方成了雪橋。",
+      "claimId": "C12",
+      "articleExcerpt": "2026年開山後第一週的6月24日，姿見池（姿見の池）一帶還被殘雪蓋住，有的地方泥濘，有的地方成了雪橋。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/6-24%e3%81%ae%e6%97%ad%e5%b2%b3%e3%83%bb%e9%96%93%e5%ae%ae%e5%b2%b3%e3%83%bb%e8%a3%be%e5%90%88%e5%b9%b3%e6%96%b9%e9%9d%a2%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "6/24　旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
+      "sourceTitle": "6/24 旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
       "sourceQuote": "姿見園地内はまだ残雪に覆われています。｜姿見駅から姿見の池方面の登山道はぬかるみやスノーブリッジになっている箇所が一部ございます。",
       "verdict": "verified",
-      "notes": "開山 6/20，6/24 屬開山後第一週。"
+      "notes": "2026 年開山（山のまつり）是 6/20，6/24 在第一週內。"
     },
     {
-      "claimId": "C15",
-      "articleExcerpt": "旭岳的紅葉由山頂往山下推進。8月下旬山頂附近開始轉紅",
+      "claimId": "C13",
+      "articleExcerpt": "8月下旬山頂附近開始轉紅，9月中旬到下旬輪到姿見一帶",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
       "sourceQuote": "８月下旬になると、山頂付近から紅葉が始まります。",
+      "verdict": "verified",
+      "notes": "姿見一帶 9 月中旬～下旬見遊客中心 Q&A「姿見園地では例年9月中旬～下旬頃に見頃」。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "之後一天天往下染到旭岳溫泉。最好看的時間每年前後差很多。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "姿見園地では例年9月中旬～下旬頃に見頃を迎える事が多いですが、年によって大きく前後します。",
+      "verdict": "verified",
+      "notes": "紅葉到山腳另見纜車 2026-09-30 部落格「紅葉は麓まで到達」。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "9月山上隨時可能下雪，下旬的日落大約在17點。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
+      "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
+      "sourceQuote": "９月はいつ雪が降ってもおかしくはありません。｜９月下旬の日没時間は５時頃",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C16",
-      "articleExcerpt": "9月中旬到下旬輪到姿見一帶，之後一天天往下染到旭岳溫泉",
-      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
-      "sourceTitle": "旭岳 | ようこそ東川",
-      "sourceQuote": "9月中旬から下旬にかけて見られる紅葉は、姿見エリアから始まり日ごとに旭岳温泉へと移っていきます。",
+      "articleExcerpt": "10月上旬山頂附近已經積雪、登山道被雪埋住，10月到隔年5月入山還要提防暴風雪造成的能見度不良與雪崩。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
+      "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
+      "sourceQuote": "10月初めには、大雪山山頂付近は雪が積もり、登山道は雪に埋まります。また、吹雪による視界不良により、遭難事故も発生しています。｜雪崩等にも気をつけて下さい。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "最好看的時間每年前後差很多。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
-      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
-      "sourceQuote": "姿見園地では例年9月中旬～下旬頃に見頃を迎える事が多いですが、年によって大きく前後します",
+      "articleExcerpt": "2026年旭岳在10月2日初冠雪，當天早上9點姿見站是-1℃、風速每秒9公尺。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
+      "sourceTitle": "10/2 姿見駅周辺の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "10/2 旭岳では初冠雪を観測しました。朝9:00現在の標高1600ｍの姿見駅では、気温：－1℃ 風速：9ｍ/s",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C18",
-      "articleExcerpt": "9月山上隨時可能下雪。到了9月下旬，日落大約在17點。",
-      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
-      "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
-      "sourceQuote": "９月はいつ雪が降ってもおかしくはありません。｜（９月下旬の日没時間は５時頃）",
-      "verdict": "verified",
-      "notes": "H2「從姿見站登旭岳山頂」再出現一次的「9月下旬日落大約在17點」同此。"
-    },
-    {
-      "claimId": "C19",
-      "articleExcerpt": "10月上旬山頂附近已經積雪、登山道被雪埋住，10月到隔年5月入山還要提防暴風雪造成的能見度不良與雪崩。",
-      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
-      "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
-      "sourceQuote": "10月～5月 10月初めには、大雪山山頂付近は雪が積もり、登山道は雪に埋まります。また、吹雪による視界不良により、遭難事故も発生しています。…雪崩等にも気をつけて下さい。",
+      "articleExcerpt": "初雪之後要登頂，就需要完整的冬季登山裝備。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
+      "sourceTitle": "10/2 姿見駅周辺の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "旭岳山頂への登山は、完全に冬山装備が必要になります。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C20",
-      "articleExcerpt": "2026年旭岳在10月2日初冠雪，當天早上9點姿見站是-1℃、風速每秒9公尺。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
-      "sourceQuote": "10/2 旭岳では初冠雪を観測しました。朝9:00現在の標高1600ｍの姿見駅では、気温：－1℃ 風速：9ｍ/s",
-      "verdict": "verified",
-      "notes": "文章 2026.10.03 發布。"
-    },
-    {
-      "claimId": "C21",
-      "articleExcerpt": "初雪之後要登頂，就需要完整的冬季登山裝備。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
-      "sourceQuote": "旭岳山頂への登山は、完全に冬山装備が必要になります。",
-      "verdict": "verified",
-      "notes": "表格「10月2日初冠雪後要完整冬山裝備」同此。"
-    },
-    {
-      "claimId": "C22",
+      "claimId": "C19",
       "articleExcerpt": "遊客中心也提醒，10月到11月容易因為裝備不足發生事故與山難。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
+      "sourceTitle": "10/2 姿見駅周辺の状況 | 旭岳ビジターセンター",
       "sourceQuote": "10月から11月にかけて、装備不足に因る事故や遭難が発生しやすい時期です。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C23",
-      "articleExcerpt": "如果手邊只有夏季登山裝備，登頂就排在開山到9月之間，8月中旬以前多帶一副輕冰爪，9月再多帶一件保暖衣。",
+      "claimId": "C20",
+      "articleExcerpt": "8月中旬以前多帶一副輕冰爪，9月再多帶一件保暖衣。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
       "sourceQuote": "山開き～８月中旬…軽アイゼンが必要な場所もあります。｜９月はいつ雪が降ってもおかしくはありません。フリース、ダウンジャケットなどの防寒具の用意を忘れずにしましょう。",
       "verdict": "verified",
-      "notes": "編輯判斷，有官方依據。"
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "剛開山那個週末上山，會遇上開山祭旭岳山之祭（旭岳山のまつり）。2026年在6月20日舉行",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/event-mountinfes2026/",
+      "sourceTitle": "【イベント】ヌプリコロカムイノミ 旭岳山のまつり 6月20日開催 | ようこそ東川",
+      "sourceQuote": "ヌプリコロカムイノミ 旭岳山のまつり 6月20日開催｜旭岳の「山開き」は、今年も例年どおり6月第3土曜日に開催されます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "以愛努族傳統的儀式與舞蹈祈求登山者平安。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/event-mountinfes2026/",
+      "sourceTitle": "【イベント】ヌプリコロカムイノミ 旭岳山のまつり 6月20日開催 | ようこそ東川",
+      "sourceQuote": "登山者や観光客、旭岳で働く関係者の安全を祈願する「安全祈願祭」を実施します。｜アイヌ民族伝統の儀式や舞踊、ムックリ演奏などを通して、山の神様へ感謝と祈りを捧げます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "上山前要交登山計畫書、在山下買好攜帶式廁所，裝備也要照清單備齊。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
+      "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
+      "sourceQuote": "入山の前には『登山計画書(登山届)』を北海道警察に提出｜携帯トイレを使用して、山を汚さないようご協力ください。｜【携帯トイレ販売箇所・東川町内】",
+      "verdict": "verified",
+      "notes": "裝備清單見協議會安全登山頁與道警夏山装備品チェックリスト。"
     },
     {
       "claimId": "C24",
-      "articleExcerpt": "登山計畫書事先交給北海道警察，到了現場，再在入林屆簿上登記。入林屆是登山口放的一本登記簿，入山前在上面填寫必要事項。旭岳的入林屆簿放在纜車山麓站、姿見站與登山口三個地方。",
+      "articleExcerpt": "登山計畫書事先交給北海道警察，到了現場，再在入林屆簿上登記。入林屆是登山口放的一本登記簿，入山前在上面填寫必要事項。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
       "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
-      "sourceQuote": "『入 林 届』・・・登山開始前に、登山口に設置された”入林届簿”に必要事項を記入してください。（旭岳の入林届設置場所）・旭岳ロープウェイ山麓駅・旭岳ロープウェイ姿見駅・登山口",
+      "sourceQuote": "『入 林 届』・・・登山開始前に、登山口に設置された”入林届簿”に必要事項を記入してください。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C25",
-      "articleExcerpt": "登山計畫書可以在網路上交，管道有北海道警察的線上表單、コンパス與YAMAP三種。",
-      "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/info/chiiki/sangaku/sangaku-top.html",
-      "sourceTitle": "北海道警察ホームページ－安全登山情報・クマ出没情報－",
-      "sourceQuote": "北海道警察オンライン登山計画書届出｜公益財団法人日本山岳ガイド協会「コンパス」｜株式会社ヤマップ「YAMAP」",
+      "articleExcerpt": "旭岳的入林屆簿放在纜車山麓站、姿見站與登山口三個地方。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
+      "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
+      "sourceQuote": "（旭岳の入林届設置場所）・旭岳ロープウェイ山麓駅・旭岳ロープウェイ姿見駅・登山口",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C26",
-      "articleExcerpt": "道警和コンパス、YAMAP簽了協定，發生山難時，警方查得到登山者在這兩個平台交的計畫。",
+      "articleExcerpt": "登山計畫書可以在網路上交，管道有北海道警察的線上表單、Compass（コンパス）與YAMAP三種。",
       "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/info/chiiki/sangaku/sangaku-top.html",
-      "sourceTitle": "北海道警察ホームページ－安全登山情報・クマ出没情報－",
-      "sourceQuote": "北海道警察では、遭難の対応を目的に登山届の閲覧協定を結んでいます。",
+      "sourceTitle": "安全登山情報 | 北海道警察",
+      "sourceQuote": "北海道警察オンライン登山計画書届出｜公益財団法人日本山岳ガイド協会「コンパス」｜株式会社ヤマップ「YAMAP」",
       "verdict": "verified",
-      "notes": "兩個平台各自都有這句。"
+      "notes": ""
     },
     {
       "claimId": "C27",
+      "articleExcerpt": "道警和Compass、YAMAP簽了協定，發生山難時警方查得到登山者在這兩個平台交的計畫。",
+      "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/info/chiiki/sangaku/sangaku-top.html",
+      "sourceTitle": "安全登山情報 | 北海道警察",
+      "sourceQuote": "北海道警察では、遭難の対応を目的に登山届の閲覧協定を結んでいます。（コンパス、YAMAP 各自一段）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
       "articleExcerpt": "計畫除了交給警察，也要告訴家人或身邊的人哪天爬哪座山。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
       "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
@@ -249,34 +258,43 @@
       "notes": ""
     },
     {
-      "claimId": "C28",
-      "articleExcerpt": "道警的線上計畫書用電子郵件寄出，警方只在平日早上8:45和下午5點左右查看信件。週末、假日與年末年始收到的，等到下一個平日才看。",
+      "claimId": "C29",
+      "articleExcerpt": "道警的線上計畫書是用電子郵件寄出，警方只在平日早上8:45和下午5點左右查看信件。週末、假日與年末年始收到的，等到下一個平日才看。",
       "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/consult/yama-mail/tozan_mail.html",
-      "sourceTitle": "登山計画書（メール用）",
-      "sourceQuote": "この「登山計画書」は、平日の午前８時45分と午後５時頃に開封し…土曜、日曜、祝日、年末年始などの平日以外の日に受信した分は、翌日あるいは翌週の平日（開庁日）に開封します",
+      "sourceTitle": "登山計画書（メール用）| 北海道警察",
+      "sourceQuote": "この「登山計画書」は、平日の午前８時45分と午後５時頃に開封し、関係部署に通知します。土曜、日曜、祝日、年末年始などの平日以外の日に受信した分は、翌日あるいは翌週の平日（開庁日）に開封します",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C29",
+      "claimId": "C30",
       "articleExcerpt": "週五晚上才寄出週六上山的計畫書，週一才有人看到，那時人早就下山了。",
       "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/consult/yama-mail/tozan_mail.html",
-      "sourceTitle": "登山計画書（メール用）",
-      "sourceQuote": "平日の午前８時45分と午後５時頃に開封し…平日以外の日に受信した分は、翌日あるいは翌週の平日（開庁日）に開封します",
+      "sourceTitle": "登山計画書（メール用）| 北海道警察",
+      "sourceQuote": "平日の午前８時45分と午後５時頃に開封｜土曜、日曜…に受信した分は…翌週の平日（開庁日）に開封します",
       "verdict": "verified",
-      "notes": "推論：週五 17 點後收到的要等下一個平日（週一，若非假日）8:45 開封。"
+      "notes": "週五 17 點後寄出，下一次開信是週一 8:45，推論一致。"
     },
     {
-      "claimId": "C30",
-      "articleExcerpt": "趕時間可以改傳真到道警本部地域企畫課（011-251-3535），或直接交到警察署、派出所。",
+      "claimId": "C31",
+      "articleExcerpt": "週五晚上到週日才要交的人，改用Compass或YAMAP比較穩，道警為了處理山難，查閱得到這兩個平台的計畫。",
+      "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/info/chiiki/sangaku/sangaku-top.html",
+      "sourceTitle": "安全登山情報 | 北海道警察",
+      "sourceQuote": "北海道警察では、遭難の対応を目的に登山届の閲覧協定を結んでいます。（コンパス、YAMAP 各自一段）",
+      "verdict": "verified",
+      "notes": "「比較穩」是依「道警郵件只在平日開信」與「閱覽協定」兩項官方事實做的建議，沒有超出來源；正文沒寫兩平台的週末處理方式。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "也可以傳真到道警本部地域企畫課（011-251-3535），或直接交到警察署、派出所。",
       "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/consult/yama-mail/tozan_mail.html",
-      "sourceTitle": "登山計画書（メール用）",
+      "sourceTitle": "登山計画書（メール用）| 北海道警察",
       "sourceQuote": "お急ぎの人は、北海道警察本部地域企画課にＦＡＸ（０１１－２５１－３５３５）していただくか、お近くの警察署または交番・駐在所に提出してください。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C31",
+      "claimId": "C33",
       "articleExcerpt": "往山上走，最後一間沖水廁所在纜車姿見站。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
       "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
@@ -285,44 +303,89 @@
       "notes": ""
     },
     {
-      "claimId": "C32",
-      "articleExcerpt": "姿見の池旁的旭岳石室可以容納20人，但除非緊急狀況，否則不能過夜。石室沒有廁所也沒有水源",
+      "claimId": "C34",
+      "articleExcerpt": "姿見池旁的旭岳石室沒有廁所也沒有水源，只有讓人使用攜帶式廁所的隔間。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/shelter/",
       "sourceTitle": "避難小屋・トイレ - 大雪山国立公園連絡協議会",
-      "sourceQuote": "旭岳石室 場所：姿見の池に隣接 人数：20人 トイレ：なし 水場：なし 備考：緊急時以外の宿泊はできません。",
+      "sourceQuote": "旭岳石室 場所：姿見の池に隣接 人数：20人 トイレ：なし 水場：なし",
       "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C33",
-      "articleExcerpt": "只有讓人使用攜帶式廁所的隔間。依遊客中心2023年的說明，石室再往上就沒有廁所了。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
-      "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
-      "sourceQuote": "ロープウェイを出ると、石室に携帯トイレブースが設置されてるのを最後に、トイレ（またはトイレブース）は設置されていません。（2023年現在）",
-      "verdict": "verified",
-      "notes": "同頁另註「期間限定で登山道に携帯トイレ―ブースが設置される事もあります」，正文沒寫，不算錯。"
-    },
-    {
-      "claimId": "C34",
-      "articleExcerpt": "在登山道上留下排泄物，是自然公園法限制的行為。沒有常設廁所的地方要用攜帶式廁所，用完丟進登山口的回收箱。",
-      "sourceUrl": "https://www.daisetsuzan.or.jp/info/rules/",
-      "sourceTitle": "大雪山の保全ルール - 大雪山国立公園連絡協議会",
-      "sourceQuote": "登山道等においてし尿を放置する行為は、自然公園法により規制されています。…常設トイレのない場所では携帯トイレを活用する…使い終わった携帯トイレは、各登山口に設置されている回収ボックスに捨ててください。",
-      "verdict": "verified",
-      "notes": ""
+      "notes": "攜帶式廁所隔間見遊客中心フィールドマナー「石室に携帯トイレブースが設置されてる」。"
     },
     {
       "claimId": "C35",
+      "articleExcerpt": "依遊客中心2023年的說明，石室再往上就沒有廁所了。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
+      "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
+      "sourceQuote": "石室に携帯トイレブースが設置されてるのを最後に、トイレ（またはトイレブース）は設置されていません。（2023年現在）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "石室可以容納20人，不過緊急狀況以外不能過夜。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/shelter/",
+      "sourceTitle": "避難小屋・トイレ - 大雪山国立公園連絡協議会",
+      "sourceQuote": "人数：20人｜備考：緊急時以外の宿泊はできません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "東川市區有Seicomart東川店、mont-bell大雪東川店與Transit東川（トランジット東川）三處在賣。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
+      "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
+      "sourceQuote": "【携帯トイレ販売箇所・東川町内】・セイコーマート東川店・モンベル大雪ひがしかわ店・トランジット東川・旭岳ビジターセンター",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "mont-bell在東川道草館（道の駅ひがしかわ「道草館」）旁，從旭川機場開車約10分鐘。",
+      "sourceUrl": "https://store.montbell.jp/search/shopinfo/?shop_no=618944",
+      "sourceTitle": "モンベル 大雪ひがしかわ店",
+      "sourceQuote": "旭川市街から車で約30分、旭川空港から約10分、道の駅ひがしかわ「道草館」のそばにあります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "營業時間9:00到18:00，全年無休。",
+      "sourceUrl": "https://store.montbell.jp/search/shopinfo/?shop_no=618944",
+      "sourceTitle": "モンベル 大雪ひがしかわ店",
+      "sourceQuote": "営業時間 9:00～18:00｜定休日 年中無休",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "旭岳溫泉的旭岳遊客中心也有賣，但每一處都可能賣完。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
+      "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
+      "sourceQuote": "売り切れ等の可能性もありますので、販売状況については直接各店舗へお問合せください。｜・旭岳ビジターセンター",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "在登山道上留下排泄物，是自然公園法限制的行為。沒有常設廁所的地方要用攜帶式廁所，用完丟進登山口的回收箱。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/rules/",
+      "sourceTitle": "大雪山の保全ルール - 大雪山国立公園連絡協議会",
+      "sourceQuote": "登山道等においてし尿を放置する行為は、自然公園法により規制されています。｜常設トイレのない場所では携帯トイレを活用する｜使い終わった携帯トイレは、各登山口に設置されている回収ボックスに捨ててください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
       "articleExcerpt": "旭岳這一側的回收箱只在夏季設在旭岳遊客中心入口，營業時間外也能丟。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
       "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
       "sourceQuote": "【携帯トイレ回収BOX】夏期のみ、旭岳ビジターセンターエントランスに設置。時間外でも入れていただけます。",
       "verdict": "verified",
-      "notes": "協議會「避難小屋・トイレ」頁也列「旭岳ビジターセンター携帯トイレ回収BOX」「回収BOXは夏山登山の時期に設置」；全區回收箱 11 處（層雲峽、愛山溪、大雪高原、旭岳溫泉、十六の沢、幌加、トムラウシ、白金、望岳台、吹上、十勝岳），正文沒寫 11 處，無需查此數字。"
+      "notes": ""
     },
     {
-      "claimId": "C36",
-      "articleExcerpt": "如果從別的登山口下山，而那裡沒有回收箱，就自己帶回家處理。",
+      "claimId": "C43",
+      "articleExcerpt": "從別的登山口下山、那裡又沒有回收箱，就自己帶回家處理。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/shelter/",
       "sourceTitle": "避難小屋・トイレ - 大雪山国立公園連絡協議会",
       "sourceQuote": "すべての登山口に回収BOXが設置されていないので、下山した登山口に回収ＢＯＸがない場合は自宅に持ち帰って処分してください。",
@@ -330,34 +393,7 @@
       "notes": ""
     },
     {
-      "claimId": "C37",
-      "articleExcerpt": "攜帶式廁所在東川市區有Seicomart東川店、mont-bell大雪東川店與トランジット東川三處在賣。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
-      "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
-      "sourceQuote": "【携帯トイレ販売箇所・東川町内】・セイコーマート東川店・モンベル大雪ひがしかわ店・トランジット東川・旭岳ビジターセンター",
-      "verdict": "verified",
-      "notes": "第 2 輪：官方清單 4 處，正文拆成市區 3 處＋旭岳溫泉的遊客中心。mont-bell 地址東川町東町 1 丁目（市區）有店家官網支持；Seicomart 東川店與トランジット東川的地址官方頁沒寫（Seicomart 門市頁打不開、トランジット只有 Facebook），「市區」是合理描述，未逐家確認地址。"
-    },
-    {
-      "claimId": "C38",
-      "articleExcerpt": "mont-bell在道の駅ひがしかわ「道草館」旁，從旭川機場開車約10分鐘，9:00到18:00營業、全年無休。",
-      "sourceUrl": "https://store.montbell.jp/search/shopinfo/?shop_no=618944",
-      "sourceTitle": "モンベル ｜ 店舗 ｜ モンベル 大雪ひがしかわ店",
-      "sourceQuote": "旭川市街から車で約30分、旭川空港から約10分、道の駅ひがしかわ「道草館」のそばにあります。｜営業時間 9:00～18:00｜定休日 年中無休",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C39",
-      "articleExcerpt": "旭岳溫泉的旭岳遊客中心也有賣，但每一處都可能賣完，經過東川市區時買好、遊客中心當備案比較穩。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
-      "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
-      "sourceQuote": "売り切れ等の可能性もありますので、販売状況については直接各店舗へお問合せください。｜・旭岳ビジターセンター",
-      "verdict": "verified",
-      "notes": "遊客中心地址見頁尾「〒071-1472 北海道上川郡東川町旭岳温泉」。後半是編輯建議。"
-    },
-    {
-      "claimId": "C40",
+      "claimId": "C44",
       "articleExcerpt": "大雪山是2,000公尺上下的山，但因為緯度高，山上的天氣相當於本州3,000公尺上下的高山。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
@@ -366,61 +402,70 @@
       "notes": ""
     },
     {
-      "claimId": "C41",
+      "claimId": "C45",
       "articleExcerpt": "旭岳5合目以上沒有能擋風、遮陽的樹木，夏天氣溫也可能降到接近0℃。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
-      "sourceTitle": "旭岳たすかるマップ（夏）",
+      "sourceTitle": "旭岳たすかるマップ（夏・PDF、東川町大雪山国立公園保護協会）",
       "sourceQuote": "旭岳のP-5（5合目）から上は、風や日光を遮る樹木などがありません。｜夏でも気温が0℃近くまで下がることがあります。",
-      "verdict": "verified",
-      "notes": "PDF 轉圖判讀。"
-    },
-    {
-      "claimId": "C42",
-      "articleExcerpt": "纜車官網列的登山鞋或厚底鞋、雨衣，只是在姿見の池散步的最低裝備，要登頂的話，裝備照協議會的清單準備。",
-      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
-      "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "散策コース（6月～10月中旬）…必要な装備 登山靴または、底が厚めの靴 レインウェアまたは、雨風をしのげる長袖の上着 など",
-      "verdict": "verified",
-      "notes": "確認這組裝備列在「散策コース」之下。"
-    },
-    {
-      "claimId": "C43",
-      "articleExcerpt": "上下分開的雨具，加上刷毛或羽絨保暖衣",
-      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
-      "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
-      "sourceQuote": "夏山（日帰り）～紅葉シーズン 雨具上下 防寒着(フリース、ダウンジャケット）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C44",
-      "articleExcerpt": "紙本地圖，只靠登山App不行，道警的檢查表寫的是2萬5千分之1地形圖",
-      "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/info/chiiki/sangaku/003-safe_mountain_climbing/05-check-list-natu.pdf",
-      "sourceTitle": "夏山装備品チェックリスト（北海道警察）",
-      "sourceQuote": "地形図 ２万５千分の１",
-      "verdict": "verified",
-      "notes": "前半見協議會「地図(登山アプリのみはNG）」；「紙本」是合理的白話。"
-    },
-    {
-      "claimId": "C45",
-      "articleExcerpt": "頭燈，當天來回也要帶",
-      "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/info/chiiki/sangaku/003-safe_mountain_climbing/05-check-list-natu.pdf",
-      "sourceTitle": "夏山装備品チェックリスト（北海道警察）",
-      "sourceQuote": "ヘッドランプ 日帰りでも",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C46",
-      "articleExcerpt": "指北針、GPS與哨子",
-      "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/info/chiiki/sangaku/003-safe_mountain_climbing/05-check-list-natu.pdf",
-      "sourceTitle": "夏山装備品チェックリスト（北海道警察）",
-      "sourceQuote": "コンパス｜ＧＰＳ｜ホイッスル 非常用",
+      "articleExcerpt": "纜車官網列的登山鞋或厚底鞋、雨衣，只是在姿見池散步的最低裝備。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "散策コース（6月～10月中旬）…必要な装備 登山靴または、底が厚めの靴 レインウェアまたは、雨風をしのげる長袖の上着 など",
       "verdict": "verified",
-      "notes": "協議會清單有 GPS、ホイッスル，沒有指北針；指北針來自道警檢查表。清單前一句寫「照協議會的清單準備」，實際混用協議會與道警兩份清單，可考慮改成「照協議會與道警的清單」，非必修。"
+      "notes": ""
     },
     {
       "claimId": "C47",
+      "articleExcerpt": "要登頂，裝備就照協議會與北海道警察的清單準備。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
+      "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
+      "sourceQuote": "夏山（日帰り）～紅葉シーズン（裝備清單）",
+      "verdict": "verified",
+      "notes": "道警清單見夏山装備品チェックリスト；底下各項都在兩份清單之一。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "上下分開的雨具，加上刷毛或羽絨保暖衣",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
+      "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
+      "sourceQuote": "夏山（日帰り）～紅葉シーズン 雨具上下｜防寒着(フリース、ダウンジャケット）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "紙本地圖，只靠登山App不行，道警的檢查表寫的是2萬5千分之1地形圖",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
+      "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
+      "sourceQuote": "地図(登山アプリのみはNG）",
+      "verdict": "verified",
+      "notes": "2萬5千分之1見道警夏山装備品チェックリスト「地形図 ２万５千分の１」。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "頭燈，當天來回也要帶",
+      "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/info/chiiki/sangaku/003-safe_mountain_climbing/05-check-list-natu.pdf",
+      "sourceTitle": "夏山装備品チェックリスト | 北海道警察",
+      "sourceQuote": "ヘッドランプ □ 日帰りでも",
+      "verdict": "verified",
+      "notes": "協議會清單標題也是「夏山（日帰り）」並列ヘッドランプ。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "指北針、GPS與哨子",
+      "sourceUrl": "https://www.police.pref.hokkaido.lg.jp/info/chiiki/sangaku/003-safe_mountain_climbing/05-check-list-natu.pdf",
+      "sourceTitle": "夏山装備品チェックリスト | 北海道警察",
+      "sourceQuote": "コンパス □｜ＧＰＳ □｜ホイッスル □ 非常用",
+      "verdict": "verified",
+      "notes": "協議會清單有 GPS 與ホイッスル，指北針出自道警檢查表，正文已改成「照協議會與北海道警察的清單」。"
+    },
+    {
+      "claimId": "C52",
       "articleExcerpt": "熊鈴與防熊噴霧，噴霧出發前練習怎麼用",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
@@ -429,7 +474,7 @@
       "notes": ""
     },
     {
-      "claimId": "C48",
+      "claimId": "C53",
       "articleExcerpt": "水，夏天1.5公升以上",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
@@ -438,17 +483,26 @@
       "notes": ""
     },
     {
-      "claimId": "C49",
-      "articleExcerpt": "攜帶式廁所／輕冰爪，夏天也有雪溪",
+      "claimId": "C54",
+      "articleExcerpt": "攜帶式廁所",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
-      "sourceQuote": "携帯トイレ｜軽アイゼン(夏でも雪渓が残るため）",
+      "sourceQuote": "携帯トイレ",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C50",
-      "articleExcerpt": "現金，部分廁所收協力金",
+      "claimId": "C55",
+      "articleExcerpt": "輕冰爪，夏天也有雪溪",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
+      "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
+      "sourceQuote": "軽アイゼン(夏でも雪渓が残るため）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "現金，部分廁所要付維護費用",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
       "sourceQuote": "現金(トイレ協力金、宿泊協力金が必要な場所がある）",
@@ -456,44 +510,98 @@
       "notes": ""
     },
     {
-      "claimId": "C51",
+      "claimId": "C57",
       "articleExcerpt": "登山杖的杖尖套",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
       "sourceQuote": "キャップをつけた登山ストック",
       "verdict": "verified",
-      "notes": "道警檢查表「ストック 石突きにプロテクター」一致。"
+      "notes": ""
     },
     {
-      "claimId": "C52",
-      "articleExcerpt": "沒帶登山杖，可以在旭岳遊客中心租。上山用的是伸縮杖，一天含稅1,000日圓，500日圓的是給姿見一帶散步用的。租借時要出示附照片的證件。",
+      "claimId": "C58",
+      "articleExcerpt": "遊客中心出租的是登山杖、雨鞋與Cocoheli（ココヘリ）這類用品，輕冰爪則要自己準備。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/rental_goods/",
       "sourceTitle": "レンタル | 旭岳ビジターセンター",
-      "sourceQuote": "レンタル料金一覧（税込）（1日あたり）ストック 500円｜ストック（伸縮式） 1,000円｜姿見散策はこちらのストックをお貸ししております。｜山岳地帯に行かれる方にお貸ししております。｜※顔写真入りの身分証をご提示いただいております。",
+      "sourceQuote": "長靴｜ストック｜ストック（伸縮式）｜スノーシュー｜クロスカントリースキー｜雪遊び道具｜ココヘリ",
+      "verdict": "verified",
+      "notes": "租借表沒有軽アイゼン。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "防熊噴霧不能帶上飛機也不能託運，從台灣帶不過去，不過可以在mont-bell大雪東川店租。",
+      "sourceUrl": "https://store.montbell.jp/common/system/information/disp.php?c=5&id=415",
+      "sourceTitle": "モンベル ｜ 店舗 ｜ クマよけスプレーの貸し出し店舗が増え、レンタル在庫も充実しました",
+      "sourceQuote": "ベアスプレーは、航空機に持ち込むことも荷物として預けることも禁止されています。｜（貸し出し店舗一覧）大雪ひがしかわ店",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C53",
-      "articleExcerpt": "遊客中心也出租山難定位器ココヘリ，第一天1,100日圓，之後每天加550日圓。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/rental_goods/",
-      "sourceTitle": "レンタル | 旭岳ビジターセンター",
-      "sourceQuote": "ココヘリ 1,100円 以後、1日毎に550円追加｜金額は全て税込です。",
+      "claimId": "C60",
+      "articleExcerpt": "這家店最晚要在取件日3天前上官網預約，沒預約可能沒有貨。",
+      "sourceUrl": "https://store.montbell.jp/common/system/information/disp.php?c=5&id=415",
+      "sourceTitle": "モンベル ｜ 店舗 ｜ クマよけスプレーの貸し出し店舗が増え、レンタル在庫も充実しました",
+      "sourceQuote": "予約の締め切り：お受け取り希望日の3日前まで｜予約のないまま、店舗に直接ご来店いただいた場合、在庫がなくレンタルを承ることができない場合がございます。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C54",
-      "articleExcerpt": "萬一出事，由本人或家人打電話給ココヘリ的客服中心，搜救直升機就會出動，靠它找出登山者的位置，再交給救援單位。",
+      "claimId": "C61",
+      "articleExcerpt": "租金含稅3天以內每罐2,500日圓，另收保證金12,000日圓，沒噴過、沒損壞就退。",
+      "sourceUrl": "https://store.montbell.jp/common/system/information/disp.php?c=5&id=415",
+      "sourceTitle": "モンベル ｜ 店舗 ｜ クマよけスプレーの貸し出し店舗が増え、レンタル在庫も充実しました",
+      "sourceQuote": "レンタル料金（1本あたり）料金（税込）～3日間まで 2,500円｜保証金（1本あたり）12,000円｜ベアスプレーをご使用になった場合や、破損・紛失があった場合を除き、レンタル品の返却時にお返しします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "取件時要出示身分證件，未滿18歲不能租。",
+      "sourceUrl": "https://store.montbell.jp/common/system/information/disp.php?c=5&id=415",
+      "sourceTitle": "モンベル ｜ 店舗 ｜ クマよけスプレーの貸し出し店舗が増え、レンタル在庫も充実しました",
+      "sourceQuote": "レンタルには身分証のご提示が必要です。｜18歳未満の方はレンタルできません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "沒帶登山杖，可以在旭岳遊客中心租。上山用的是一天含稅1,000日圓的伸縮杖，500日圓的那種是給姿見一帶散步用的。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/rental_goods/",
+      "sourceTitle": "レンタル | 旭岳ビジターセンター",
+      "sourceQuote": "レンタル料金一覧（税込）ストック 500円｜ストック（伸縮式）1,000円｜姿見散策はこちらのストックをお貸ししております。｜（伸縮式）山岳地帯に行かれる方にお貸ししております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "租借時要出示附照片的證件。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/rental_goods/",
+      "sourceTitle": "レンタル | 旭岳ビジターセンター",
+      "sourceQuote": "※顔写真入りの身分証をご提示いただいております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "遊客中心也出租山難定位器Cocoheli，第一天1,100日圓，之後每天加550日圓。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/rental_goods/",
+      "sourceTitle": "レンタル | 旭岳ビジターセンター",
+      "sourceQuote": "ココヘリ 1,100円 以後、1日毎に550円追加",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "萬一出事，由本人或家人打電話給Cocoheli的客服中心，搜救直升機就會出動。直升機靠定位器找出登山者的位置，再交給救援單位。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/rental_goods/",
       "sourceTitle": "レンタル | 旭岳ビジターセンター",
       "sourceQuote": "もしもの際はご本人・ご家族からコールセンターへ連絡を入れる事で、捜索ヘリが飛び立ち、遭難者の位置を救助組織に引き継ぎます。",
       "verdict": "verified",
-      "notes": "第 1 輪 incorrect（缺打電話的條件），第 2 輪已補上條件，和原文一致。"
+      "notes": ""
     },
     {
-      "claimId": "C55",
-      "articleExcerpt": "協議會也建議考慮加入山岳保險或ココヘリ。",
+      "claimId": "C67",
+      "articleExcerpt": "協議會也建議考慮加入山岳保險或Cocoheli。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
       "sourceQuote": "万一の遭難に備え、山岳保険やココヘリのご加入も検討ください",
@@ -501,25 +609,25 @@
       "notes": ""
     },
     {
-      "claimId": "C56",
-      "articleExcerpt": "從山麓站搭纜車約10分鐘到姿見站，出站後先穿過姿見の池園地，才開始正式登山。",
+      "claimId": "C68",
+      "articleExcerpt": "從山麓站搭纜車約10分鐘到姿見站，出站後先穿過姿見池園地，才開始正式登山。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e6%97%ad%e5%b2%b3/",
       "sourceTitle": "旭岳 - 大雪山国立公園連絡協議会",
-      "sourceQuote": "旭岳山麓駅からロープウェイで一気に旭岳５合目の姿見駅まで。…姿見の池園地を通り抜け、本格的な登山が始まる。",
+      "sourceQuote": "姿見の池園地を通り抜け、本格的な登山が始まる。",
       "verdict": "verified",
       "notes": "約 10 分鐘見纜車官網「片道約10分」。"
     },
     {
-      "claimId": "C57",
-      "articleExcerpt": "往山頂的登山道在姿見の池旁的5合目分出去，旁邊就是旭岳石室與第5展望台，散策地圖上標成「登山道（旭岳山頂方面）」。",
+      "claimId": "C69",
+      "articleExcerpt": "往山頂的登山道在姿見池旁的5合目分出去，旁邊就是旭岳石室與第5展望台，散策地圖上標成「登山道（旭岳山頂方面）」。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
-      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～",
-      "sourceQuote": "5合目 fifth station｜旭岳石室｜第5展望台｜登山道（旭岳山頂方面）",
+      "sourceTitle": "姿見の池周辺散策マップ（PDF）",
+      "sourceQuote": "登山道（旭岳山頂方面）Mountain Trail (to Mt.Asahidake)｜5合目 fifth station｜旭岳石室｜第5展望台",
       "verdict": "verified",
-      "notes": "PDF 轉圖判讀，登山道起點在 5 合目、旭岳石室與第 5 展望台旁。"
+      "notes": "PDF 轉圖判讀。"
     },
     {
-      "claimId": "C58",
+      "claimId": "C70",
       "articleExcerpt": "協議會的上山2小時50分、下山2小時5分，是從姿見站的站舍算起。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e6%97%ad%e5%b2%b3/",
       "sourceTitle": "旭岳 - 大雪山国立公園連絡協議会",
@@ -528,79 +636,79 @@
       "notes": ""
     },
     {
-      "claimId": "C59",
+      "claimId": "C71",
       "articleExcerpt": "遊客中心散策地圖寫的上山2小時30分、下山1小時50分，則從5合目的登山道入口算起。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
-      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～",
-      "sourceQuote": "登山道（旭岳山頂方面）2：30→ ←1：50（標在 5 合目往山頂的登山道上）",
+      "sourceTitle": "姿見の池周辺散策マップ（PDF）",
+      "sourceQuote": "登山道（旭岳山頂方面）2：30↑ ↓1：50（5合目旁的登山道起點）",
       "verdict": "verified",
       "notes": "PDF 轉圖判讀。"
     },
     {
-      "claimId": "C60",
+      "claimId": "C72",
       "articleExcerpt": "兩邊差的20分鐘與15分鐘，大約就是從姿見站走到5合目這段步道的時間。排行程用從姿見站算的數字，上下合計4小時55分。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
-      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～",
-      "sourceQuote": "姿見展望台→姿見駅 約20分",
+      "sourceTitle": "姿見の池周辺散策マップ（PDF）",
+      "sourceQuote": "姿見展望台→姿見駅. 約20分",
       "verdict": "verified",
-      "notes": "重算：2:50−2:30＝20 分、2:05−1:50＝15 分；2:50＋2:05＝4:55。姿見展望台在 5 合目旁，散策地圖標它到姿見站約 20 分，推論合理。"
+      "notes": "2:50−2:30＝20 分、2:05−1:50＝15 分；2:50＋2:05＝4:55，重算一致。"
     },
     {
-      "claimId": "C61",
+      "claimId": "C73",
       "articleExcerpt": "從5合目到山頂一路都是碎石坡。遊客中心2026年6月24日走這段時，步道兩側都拉了繩子，不太會走錯，但不要走到繩子外面。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/6-24%e3%81%ae%e6%97%ad%e5%b2%b3%e3%83%bb%e9%96%93%e5%ae%ae%e5%b2%b3%e3%83%bb%e8%a3%be%e5%90%88%e5%b9%b3%e6%96%b9%e9%9d%a2%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "6/24　旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
-      "sourceQuote": "5合目から山頂までの登山道は雪が溶けていました。山頂まではザレ場が続きます。両側にロープが張ってありますので、道は迷いずらいです。ロープの外に出ないように注意してください。",
+      "sourceTitle": "6/24 旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "山頂まではザレ場が続きます。両側にロープが張ってありますので、道は迷いずらいです。ロープの外に出ないように注意してください。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C62",
-      "articleExcerpt": "火山礫的斜面容易滑，7月、8月常有人在下山途中跌倒、摔斷腳踝。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
-      "sourceTitle": "旭岳たすかるマップ（夏）",
-      "sourceQuote": "火山礫の斜面のため滑りやすいです。｜旭岳で発生の多い遭難と防止方法 7月・8月 脱水による疲労。下山時に転倒し足首の骨折。（P-9～P-6）",
-      "verdict": "verified",
-      "notes": "第 1 輪 unsupported（多了扭傷），第 2 輪已改成原文的「跌倒摔斷腳踝」。"
-    },
-    {
-      "claimId": "C63",
+      "claimId": "C74",
       "articleExcerpt": "那天過了9合目風就變強，能見度也開始變差。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/6-24%e3%81%ae%e6%97%ad%e5%b2%b3%e3%83%bb%e9%96%93%e5%ae%ae%e5%b2%b3%e3%83%bb%e8%a3%be%e5%90%88%e5%b9%b3%e6%96%b9%e9%9d%a2%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "6/24　旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
+      "sourceTitle": "6/24 旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
       "sourceQuote": "9合目を過ぎると風が強くなり、視界も悪くなり始めました。",
       "verdict": "verified",
-      "notes": "第 1 輪 unsupported（單日觀察寫成規律），第 2 輪已改成「那天」並緊接在 2026-06-24 那句之後，主詞與時態都和原文一致。"
+      "notes": ""
     },
     {
-      "claimId": "C64",
+      "claimId": "C75",
+      "articleExcerpt": "火山礫的斜面容易滑，7月、8月常有人在下山途中跌倒、摔斷腳踝。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
+      "sourceTitle": "旭岳たすかるマップ（夏・PDF、東川町大雪山国立公園保護協会）",
+      "sourceQuote": "火山礫の斜面のため滑りやすいです。｜7月・8月 下山時に転倒し足首の骨折。（P-9～P-6）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C76",
       "articleExcerpt": "旭岳一帶的登山道上立著P-1到P-14的標柱，上面有地點編號、標高、經緯度與往下一個點的方向。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
-      "sourceTitle": "旭岳たすかるマップ（夏）",
-      "sourceQuote": "標識の見方：地図上のP-8地点です｜現在地点の標高｜現在地点の緯度｜現在地点の経度｜P-7地点への方向（地圖列 P-1～P-14）",
-      "verdict": "verified",
-      "notes": "P-1～P-4 在天女ヶ原登山道、P-11～P-14 在間宮岳、中岳、裾合平一帶。第 2 輪已改成「旭岳一帶的登山道上」，和地圖一致。"
-    },
-    {
-      "claimId": "C65",
-      "articleExcerpt": "P-5姿見の池標高1,665公尺、P-8金庫岩2,065公尺、P-9ニセ金庫岩2,196公尺，P-10就是山頂。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
-      "sourceTitle": "旭岳たすかるマップ（夏）",
-      "sourceQuote": "P-5 1665m｜P-8 2065m｜P-9 2196m｜P-10 2290m（地圖上 P-5 姿見の池、P-8 金庫岩、P-9 ニセ金庫岩、P-10 旭岳）",
+      "sourceTitle": "旭岳たすかるマップ（夏・PDF、東川町大雪山国立公園保護協会）",
+      "sourceQuote": "地図上のP-8地点です｜現在地点の標高｜現在地点の緯度｜現在地点の経度｜P-7地点への方向（地圖列 P-1～P-14）",
       "verdict": "verified",
       "notes": "PDF 轉圖判讀。"
     },
     {
-      "claimId": "C66",
-      "articleExcerpt": "標柱的編號跟「旭岳たすかるマップ」上的一一對應，起霧時對照地圖就知道自己走到哪裡。地圖在遊客中心發放，6月到10月姿見櫃台也拿得到。",
+      "claimId": "C77",
+      "articleExcerpt": "P-5姿見池標高1,665公尺、P-8金庫岩2,065公尺、P-9假金庫岩（ニセ金庫岩）2,196公尺，P-10就是山頂。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
+      "sourceTitle": "旭岳たすかるマップ（夏・PDF、東川町大雪山国立公園保護協会）",
+      "sourceQuote": "P-5 1665m｜P-8 2065m｜P-9 2196m｜P-10 2290m（地圖標旭岳）｜金庫岩｜ニセ金庫岩",
+      "verdict": "verified",
+      "notes": "PDF 轉圖判讀。"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "標柱的編號跟旭岳Tasukaru地圖（旭岳たすかるマップ）上的一一對應，起霧時對照地圖就知道自己走到哪裡。地圖在遊客中心發放，6月到10月姿見櫃台也拿得到。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/8-3%e3%80%80%e6%97%ad%e5%b2%b3%ef%bd%9e%e9%96%93%e5%ae%ae%e5%b2%b3%ef%bd%9e%e8%a3%be%e5%90%88%e5%b9%b3%e6%96%b9%e9%9d%a2%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "8/3　旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
+      "sourceTitle": "8/3 旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
       "sourceQuote": "この標柱カードは、たすかるマップと連動しています。たすかるマップは旭岳ビジターセンター、姿見カウンター（6-10月）で配布しています。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C67",
+      "claimId": "C79",
       "articleExcerpt": "濃霧裡從旭岳下山常會迷路，也曾因此發生山難，協議會特別提醒不要往南坡下錯方向。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/grades/",
       "sourceTitle": "大雪山グレード - 大雪山国立公園連絡協議会",
@@ -609,26 +717,26 @@
       "notes": "南坡見協議會旭岳頁「濃霧時は、南斜面に下らないように注意すること」。"
     },
     {
-      "claimId": "C68",
-      "articleExcerpt": "旭岳是活火山，2019年3月18日起實施噴火警戒等級，2026年10月26日是等級1。",
+      "claimId": "C80",
+      "articleExcerpt": "旭岳是活火山，2026年10月26日的噴火警戒等級是1。",
       "sourceUrl": "https://www.data.jma.go.jp/vois/data/tokyo/STOCK/activity_info/107.html",
-      "sourceTitle": "火山活動の状況（大雪山）｜気象庁",
-      "sourceQuote": "大雪山の活動状況 噴火予報（噴火警戒レベル１、活火山であることに留意）",
+      "sourceTitle": "大雪山の火山活動解説資料 | 気象庁",
+      "sourceQuote": "噴火予報（噴火警戒レベル１、活火山であることに留意）",
       "verdict": "verified",
-      "notes": "2019-03-18 見遊客中心旭岳概要頁「2019年3月18日より、旭岳を中心とする大雪山で「噴火警戒レベル」の運用が開始されました」。"
+      "notes": "2026-11-02 重開仍是等級 1。"
     },
     {
-      "claimId": "C69",
+      "claimId": "C81",
       "articleExcerpt": "即使是等級1，預想的火口範圍內仍可能突然噴出火山灰、噴氣與火山氣體。",
       "sourceUrl": "https://www.data.jma.go.jp/vois/data/tokyo/STOCK/activity_info/107.html",
-      "sourceTitle": "火山活動の状況（大雪山）｜気象庁",
-      "sourceQuote": "火山活動の状況によっては、想定火口域内で火山灰、噴気、火山ガス等が突発的に噴出する可能性がありますので、登山や観光などで山に立ち入る場合には注意してください。",
+      "sourceTitle": "大雪山の火山活動解説資料 | 気象庁",
+      "sourceQuote": "火山活動の状況によっては、想定火口域内で火山灰、噴気、火山ガス等が突発的に噴出する可能性があります",
       "verdict": "verified",
-      "notes": "強度「仍可能」對應「可能性があります」。"
+      "notes": ""
     },
     {
-      "claimId": "C70",
-      "articleExcerpt": "遊客中心與纜車站一帶手機收訊沒問題，往山上走就有收不到的地方。",
+      "claimId": "C82",
+      "articleExcerpt": "遊客中心與纜車站一帶手機收訊沒問題，不過往山上走就有收不到的地方。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
       "sourceTitle": "Q＆A | 旭岳ビジターセンター",
       "sourceQuote": "ビジターセンター、ロープウェイ駅舎付近は問題なく携帯電話を使用していただけます。旭岳に向かう途中の道路と、旭岳（山岳エリア）では通じない場所もあります",
@@ -636,52 +744,70 @@
       "notes": ""
     },
     {
-      "claimId": "C71",
-      "articleExcerpt": "表格：7月到9月平日｜上行首班6:30｜下行末班17:30｜最晚從姿見站往山頂出發12:25｜最晚從山頂往下走15:15｜夏山",
+      "claimId": "C83",
+      "articleExcerpt": "下表是2026年7月到10月20日的纜車營業時間，最晚出發時間照路線時間與纜車單程約10分鐘，從末班往回推。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "D 始発（上り） 6:30am 〜 最終（下り） 5:30pm｜ロープウェイ所要時間 片道約10分",
+      "sourceQuote": "2026年7月～10月運行スケジュール｜●ロープウェイ所要時間 片道約10分",
       "verdict": "verified",
-      "notes": "重算：17:30−0:10−4:55＝12:25；17:30−0:10−2:05＝15:15。7～9 月平日都是 D。"
+      "notes": ""
     },
     {
-      "claimId": "C72",
-      "articleExcerpt": "表格：7月到9月週末與連假｜上行首班6:00｜下行末班17:30｜12:25｜15:15｜夏山",
+      "claimId": "C84",
+      "articleExcerpt": "7月到9月平日 | 6:30 | 17:30 | 12:25 | 15:15",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "E 始発（上り） 6:00am 〜 最終（下り） 5:30pm（7/11・12、7/18～20、8/11、9/19～23 等週末與假日為 E）",
+      "sourceQuote": "D「始発（上り）6:30am 〜 最終（下り）5:30pm」，7～9 月平日均為 D",
       "verdict": "verified",
-      "notes": "重算同 C71。"
+      "notes": "17:30−0:10−2:05＝15:15；15:15−2:50＝12:25。"
     },
     {
-      "claimId": "C73",
-      "articleExcerpt": "表格：10月1日～10月20日｜上行首班8:00｜下行末班17:00｜11:55｜14:45｜10月2日初冠雪後要完整冬山裝備",
-      "sourceUrl": "https://asahidake.hokkaido.jp/archives/blog/26275",
-      "sourceTitle": "営業時間🚠変更の知らせ | Daisetsuzan Asahidake Ropeway",
-      "sourceQuote": "２０２６年１０月１日（木）より～ ８：００～１７：００（上り最終１６：４０）に変更です！",
-      "verdict": "verified",
-      "notes": "官網月曆 10/1～10/20 全是 C（8:00～17:00），10/21 起 A。重算：17:00−0:10−4:55＝11:55；17:00−0:10−2:05＝14:45。"
-    },
-    {
-      "claimId": "C74",
-      "articleExcerpt": "表上的時間只算了上山2小時50分、下山2小時5分與纜車單程約10分鐘，沒有留休息與拍照的時間。",
+      "claimId": "C85",
+      "articleExcerpt": "7月到9月週末與連假 | 6:00 | 17:30 | 12:25 | 15:15",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "ロープウェイ所要時間 片道約10分",
+      "sourceQuote": "E「始発（上り）6:00am 〜 最終（下り）5:30pm」，7～9 月週末與假日均為 E",
       "verdict": "verified",
-      "notes": "算法說明與 C71～C73 重算一致。"
+      "notes": "月曆中 7/20、9/21～23 等假日也是 E。"
     },
     {
-      "claimId": "C75",
-      "articleExcerpt": "9月下旬日落大約在17點，比末班17:30還早，9月下山不要拖到末班。",
+      "claimId": "C86",
+      "articleExcerpt": "10月1日～10月20日 | 8:00 | 17:00 | 11:55 | 14:45 | 10月2日初冠雪後要完整冬山裝備",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "2026年10月運行スケジュール 1～20日 C「始発（上り）8:00am 〜 最終（下り）5:00pm」",
+      "verdict": "verified",
+      "notes": "另見纜車部落格「２０２６年１０月１日（木）より～８：００～１７：００」；17:00−0:10−2:05＝14:45，−2:50＝11:55。"
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "表上的時間只算了上山2小時50分、下山2小時5分與纜車單程約10分鐘",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "片道約10分",
+      "verdict": "verified",
+      "notes": "與協議會 2:50／2:05 合算一致。"
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "6月上山，出發前到纜車官網查當天的下行末班，往回推5小時5分，就是最晚從姿見站出發的時間。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "旭岳ロープウェイ運行予定表｜現在決まっているスケジュールは下記の期間迄となっております。以降は決まり次第更新致します",
+      "verdict": "verified",
+      "notes": "2:50＋2:05＋0:10＝5:05。官網公布營運時間與月曆。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "9月下旬日落大約在17點，比末班17:30還早，所以9月下旬下山不要拖到末班。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
-      "sourceQuote": "9月は日が短くなります。早めに下山できるように計画を立て、活動してください。（９月下旬の日没時間は５時頃）",
+      "sourceQuote": "９月下旬の日没時間は５時頃",
       "verdict": "verified",
-      "notes": "9 月末班 17:30 見纜車月曆（D／E）。"
+      "notes": "9 月下旬纜車末班 17:30（月曆 D／E）。"
     },
     {
-      "claimId": "C76",
+      "claimId": "C90",
       "articleExcerpt": "曾有人錯過下行末班，被旁人報警、當成山難處理。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -690,16 +816,16 @@
       "notes": ""
     },
     {
-      "claimId": "C77",
+      "claimId": "C91",
       "articleExcerpt": "營業時間外請纜車緊急開車，除了車資還另收運行的費用。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
       "sourceQuote": "※万が一、山岳事故等により営業時間外に緊急運行の要請が発生した場合は、乗車運賃以外に別途運行代金を頂戴致します。",
       "verdict": "verified",
-      "notes": "金額未公布，正文沒寫金額，正確。"
+      "notes": ""
     },
     {
-      "claimId": "C78",
+      "claimId": "C92",
       "articleExcerpt": "強風或有落雷危險時，纜車也可能暫停。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -708,25 +834,25 @@
       "notes": ""
     },
     {
-      "claimId": "C79",
-      "articleExcerpt": "為了防止山難，上行單程票可能提前停賣，只買上行單程的人，也可能因為接近日落被拒絕搭乘。",
+      "claimId": "C93",
+      "articleExcerpt": "為了防止山難，上行單程票可能提前停賣。只買上行單程的人，也可能因為接近日落被拒絕搭乘。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "※上り（山麓駅→姿見駅）片道券の販売は山岳事故防止のため、事前に販売を終了する場合があります。｜※上り片道（山麓駅→姿見駅）のみご利用のお客様は日没時間に合わせて、ご乗車をお断りさせていただく場合がございます。（安全面）",
+      "sourceQuote": "※上り（山麓駅→姿見駅）片道券の販売は山岳事故防止のため、事前に販売を終了する場合があります。｜※上り片道（山麓駅→姿見駅）のみご利用のお客様は日没時間に合わせて、ご乗車をお断りさせていただく場合がございます。",
       "verdict": "verified",
-      "notes": "強度「可能」對應「場合があります」。「打算縱走、從別處下山的話，就會受這條規定影響」是合理推論。"
+      "notes": ""
     },
     {
-      "claimId": "C80",
-      "articleExcerpt": "裾合平標高1,690公尺，號稱日本最大級的チングルマ群生地，夏天地上開滿這種白色的花，秋天葉子轉紅。",
+      "claimId": "C94",
+      "articleExcerpt": "裾合平標高1,690公尺，號稱日本最大級的稚兒車（チングルマ）群生地，夏天地上開滿這種白色的花，秋天葉子轉紅。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e8%a3%be%e5%90%88%e5%b9%b3/",
       "sourceTitle": "裾合平 - 大雪山国立公園連絡協議会",
-      "sourceQuote": "標高 1,690m｜裾合平は日本最大級とも言われるチングルマの群生地。夏は地面を埋め尽くすように咲く真っ白なチングルマが密生し、秋は葉が真っ赤な絨毯となる",
+      "sourceQuote": "標高 1,690m｜裾合平は日本最大級とも言われるチングルマの群生地。｜夏は地面を埋め尽くすように咲く真っ白なチングルマが密生し、秋は葉が真っ赤な絨毯となる",
       "verdict": "verified",
-      "notes": "第 2 輪已改成「號稱」，對應原文「とも言われる」。"
+      "notes": ""
     },
     {
-      "claimId": "C81",
+      "claimId": "C95",
       "articleExcerpt": "不上山頂也去得了，從姿見站沿著旭岳山腳往北，走過和緩的起伏約3小時抵達。協議會的路線時間是去程3小時、回程2小時40分。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e8%a3%be%e5%90%88%e5%b9%b3/",
       "sourceTitle": "裾合平 - 大雪山国立公園連絡協議会",
@@ -735,25 +861,34 @@
       "notes": ""
     },
     {
-      "claimId": "C82",
-      "articleExcerpt": "這段是等級2，夏天路線清楚好走，但季初還有殘雪，協議會請登山者先在姿見站聽過講解，再小心前進。",
-      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/grades/",
-      "sourceTitle": "大雪山グレード - 大雪山国立公園連絡協議会",
-      "sourceQuote": "グレード２の事例：姿見の園地～裾合平…夏山シーズン中はルートが明瞭で…歩きやすい道になっています。ただし、シーズン初めは雪渓が残っているため、旭岳ロープウェイ姿見駅のレクチャーを参考に慎重な行動が必要です。",
+      "claimId": "C96",
+      "articleExcerpt": "9月下旬看紅葉，想在日落大約17點前回到姿見站，最晚11:20就要從姿見站出發。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e8%a3%be%e5%90%88%e5%b9%b3/",
+      "sourceTitle": "裾合平 - 大雪山国立公園連絡協議会",
+      "sourceQuote": "登り３時間00分 下り２時間40分",
       "verdict": "verified",
-      "notes": "協議會裾合平頁標「グレード3, グレード2」，姿見～裾合平這段是等級 2，正文主詞正確。"
+      "notes": "17:00−2:40−3:00＝11:20，重算一致；日落見協議會安全登山頁「９月下旬の日没時間は５時頃」。"
     },
     {
-      "claimId": "C83",
-      "articleExcerpt": "2026年6月24日的裾合平一面殘雪，積雪約1公尺，幾乎看不到登山道，只能沿著每隔約20公尺的桿子走，不要走出桿外。",
+      "claimId": "C97",
+      "articleExcerpt": "這段是等級2，夏天路線清楚好走。不過季初還有殘雪，協議會請登山者先在姿見站聽過講解再小心前進。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/grades/",
+      "sourceTitle": "大雪山グレード - 大雪山国立公園連絡協議会",
+      "sourceQuote": "グレード２の事例：姿見の園地～裾合平｜夏山シーズン中はルートが明瞭｜シーズン初めは雪渓が残っているため、旭岳ロープウェイ姿見駅のレクチャーを参考に慎重な行動が必要です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "2026年6月24日的裾合平一面殘雪，積雪約1公尺，幾乎看不到登山道。那天只能沿著每隔約20公尺的桿子走，不要走出桿外。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/6-24%e3%81%ae%e6%97%ad%e5%b2%b3%e3%83%bb%e9%96%93%e5%ae%ae%e5%b2%b3%e3%83%bb%e8%a3%be%e5%90%88%e5%b9%b3%e6%96%b9%e9%9d%a2%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "6/24　旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
+      "sourceTitle": "6/24 旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
       "sourceQuote": "裾合平は一面残雪で、登山道はほぼ見られません。積雪約1mほどでした。約20m感覚でポールは立っていますので、遭難防止のため、ポールの外に出ないようにしてください。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C84",
+      "claimId": "C99",
       "articleExcerpt": "路不險，雨衣與保暖衣等登山裝備還是要帶齊。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e8%a3%be%e5%90%88%e5%b9%b3/",
       "sourceTitle": "裾合平 - 大雪山国立公園連絡協議会",
@@ -762,151 +897,160 @@
       "notes": ""
     },
     {
-      "claimId": "C85",
-      "articleExcerpt": "2026年8月3日遊客中心走的一圈，是姿見站、旭岳山頂、裏旭、荒井岳、間宮岳、中岳分岐、中岳溫泉、裾合平，再回姿見站。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/8-3%e3%80%80%e6%97%ad%e5%b2%b3%ef%bd%9e%e9%96%93%e5%ae%ae%e5%b2%b3%ef%bd%9e%e8%a3%be%e5%90%88%e5%b9%b3%e6%96%b9%e9%9d%a2%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "8/3　旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
-      "sourceQuote": "山頂に到着。…裏旭の雪渓です。…荒井岳～間宮岳～中岳分岐まで…中岳分岐を過ぎ中岳温泉に入ると…裾合分岐～姿見間の登山道上も",
+      "claimId": "C100",
+      "articleExcerpt": "把登頂和裾合平接成一圈，就是環狀路線，難度也比單純登頂高一級。協議會地圖把過了山頂往東的一段標成等級4，指的是面對大雪山嚴峻自然的登山路線。姿見到山頂則是等級3。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/wp-content/uploads/2024/03/fronte-pdf.pdf",
+      "sourceTitle": "大雪山国立公園 登山者のみなさまへ（PDF地図）",
+      "sourceQuote": "グレード４『大雪山の厳しい自然に挑む登山ルート』｜グレード３『大雪山の自然を体感する登山ルート』",
       "verdict": "verified",
-      "notes": "那天另外「少し足を伸ばして北鎮岳まで」繞去北鎮岳，正文省略支線，不影響環狀路線的描述。"
+      "notes": "PDF 轉圖判讀：姿見ノ池～旭岳為黃色（G3），旭岳以東往北海岳、中岳溫泉方向為橘色並標 G4。"
     },
     {
-      "claimId": "C86",
-      "articleExcerpt": "姿見到山頂是旭岳的主路線，姿見到裾合平這段，協議會也列為登旭岳後的下山路線。",
+      "claimId": "C101",
+      "articleExcerpt": "2026年8月3日遊客中心走的一圈，是姿見站、旭岳山頂、裏旭、荒井岳、間宮岳、中岳分岐、中岳溫泉、裾合平，再回姿見站。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/8-3%e3%80%80%e6%97%ad%e5%b2%b3%ef%bd%9e%e9%96%93%e5%ae%ae%e5%b2%b3%ef%bd%9e%e8%a3%be%e5%90%88%e5%b9%b3%e6%96%b9%e9%9d%a2%e3%81%ae%e7%8a%b6%e6%b3%81/",
+      "sourceTitle": "8/3 旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "山頂に到着。｜裏旭の雪渓です。｜荒井岳～間宮岳～中岳分岐まで｜中岳分岐を過ぎ中岳温泉に入ると｜裾合平のチングルマなど開花状況です。｜姿見駅に戻る頃は",
+      "verdict": "verified",
+      "notes": "當天另外順道到北鎮岳，不影響。"
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "姿見到裾合平這段，協議會也列為登旭岳後的下山路線。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/grades/",
       "sourceTitle": "大雪山グレード - 大雪山国立公園連絡協議会",
-      "sourceQuote": "姿見の池園地～旭岳…大雪山のメインルート｜姿見園地から裾合平の往復に利用されるほか、旭岳登頂の下山コースや黒岳からの縦走、愛山渓からの縦走に利用されています。",
+      "sourceQuote": "この区間は、姿見園地から裾合平の往復に利用されるほか、旭岳登頂の下山コースや黒岳からの縦走、愛山渓からの縦走に利用されています。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C87",
-      "articleExcerpt": "環狀路線過了山頂往東的一段，協議會地圖標的是等級4，指的是面對大雪山嚴峻自然的登山路線，比登頂的等級3高一級。",
-      "sourceUrl": "https://www.daisetsuzan.or.jp/wp-content/uploads/2024/03/fronte-pdf.pdf",
-      "sourceTitle": "大雪山国立公園 登山者のみなさまへ（大雪山国立公園連絡協議会 発行 ご案内マップ）",
-      "sourceQuote": "グレード４『大雪山の厳しい自然に挑む登山ルート』｜グレード３『大雪山の自然を体感する登山ルート』（地圖上旭岳以東往北海平、中岳温泉一帶的路段為橘色 G4，姿見～旭岳黃色 G3，姿見～裾合平綠色 G2）",
-      "verdict": "verified",
-      "notes": "PDF 轉圖判讀，圖例與路段顏色一致。"
-    },
-    {
-      "claimId": "C88",
-      "articleExcerpt": "光是姿見站到山頂就要上山2小時50分，裾合平回姿見站還要2小時40分，中間再接山頂經間宮岳、中岳溫泉到裾合平那一段，走一圈要排上一整天。",
+      "claimId": "C103",
+      "articleExcerpt": "光是姿見站到山頂就要上山2小時50分，裾合平回姿見站還要2小時40分",
       "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e8%a3%be%e5%90%88%e5%b9%b3/",
       "sourceTitle": "裾合平 - 大雪山国立公園連絡協議会",
       "sourceQuote": "姿見駅舎から 登り３時間00分 下り２時間40分",
       "verdict": "verified",
-      "notes": "2:50 見協議會旭岳頁。已知兩段合計 5 小時 30 分，再加中間段（官方未給時間），「排上一整天」是有數字撐的編輯判斷；遊客中心 8/3 是 6:30 從姿見站出發。"
+      "notes": "2:50 見協議會旭岳頁。"
     },
     {
-      "claimId": "C89",
+      "claimId": "C104",
       "articleExcerpt": "遊客中心8月3日那天，早上6:30姿見站是晴天、13℃、無風，11點過後就起霧了。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/8-3%e3%80%80%e6%97%ad%e5%b2%b3%ef%bd%9e%e9%96%93%e5%ae%ae%e5%b2%b3%ef%bd%9e%e8%a3%be%e5%90%88%e5%b9%b3%e6%96%b9%e9%9d%a2%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "8/3　旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
+      "sourceTitle": "8/3 旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
       "sourceQuote": "8月3日（月）6：30 姿見駅 天候：晴 気温：13℃ 風速：0m/ｓ｜朝は晴天でしたが11時過ぎからガスがかかり",
       "verdict": "verified",
-      "notes": "研究記錄 F232 寫「回到姿見站時雲已散開」與原文「雲が広がっていました」相反，但正文沒有用到這點。"
+      "notes": ""
     },
     {
-      "claimId": "C90",
+      "claimId": "C105",
       "articleExcerpt": "裏旭的雪溪下坡約三分之一踩在雪上，中岳溫泉有人在泡腳，裾合分岐到姿見之間只剩2處小雪溪，走起來沒有問題。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/8-3%e3%80%80%e6%97%ad%e5%b2%b3%ef%bd%9e%e9%96%93%e5%ae%ae%e5%b2%b3%ef%bd%9e%e8%a3%be%e5%90%88%e5%b9%b3%e6%96%b9%e9%9d%a2%e3%81%ae%e7%8a%b6%e6%b3%81/",
-      "sourceTitle": "8/3　旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
+      "sourceTitle": "8/3 旭岳～間宮岳～裾合平方面の状況 | 旭岳ビジターセンター",
       "sourceQuote": "登山道として雪渓の上を歩くのは下り斜面の1/3程度。｜今日も足湯を楽しまれる方で賑わっていました。｜登山道上に小さめの雪渓が2カ所ありますが、歩くのに問題はありません。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C91",
-      "articleExcerpt": "登頂路線和環狀路線上，2026年都有棕熊紀錄。7月3日早上，裏旭野營指定地有一頭接近登山者約10公尺，之後往旭岳方向走",
+      "claimId": "C106",
+      "articleExcerpt": "登頂路線和環狀路線上，2026年都有棕熊紀錄。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
       "sourceTitle": "2026年ヒグマ関連情報（10/10更新） | 旭岳ビジターセンター",
-      "sourceQuote": "【日時】7月3日（金）朝【場所】裏旭野営場指定地【状況】ヒグマ１頭が登山者と10mくらい接近、そのまま通り過ぎて旭岳方面に向かった",
+      "sourceQuote": "2026年ヒグマ関連情報（10/10更新）｜旭岳登山道8合目付近｜間宮岳から中岳分岐間の登山道",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C92",
-      "articleExcerpt": "7月7日，8合目附近一頭往地獄谷方向走，同一天間宮岳到中岳分岐的登山道上也有一頭",
+      "claimId": "C107",
+      "articleExcerpt": "7月的登頂路線，5合目到8合目之間與山頂東側的裏旭都有人看到，在裏旭野營指定地還曾接近登山者到約10公尺。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
       "sourceTitle": "2026年ヒグマ関連情報（10/10更新） | 旭岳ビジターセンター",
-      "sourceQuote": "7月7日（火）8：47頃【場所】旭岳登山道8合目付近【状況】ヒグマ1頭が地獄谷方面へ歩いてた｜7月7日（火）12：00頃【場所】間宮岳から中岳分岐間の登山道【状況】ヒグマ成獣1頭が、登山道上を歩いて",
+      "sourceQuote": "7月3日（金）朝 裏旭野営場指定地 ヒグマ１頭が登山者と10mくらい接近｜7月7日 旭岳登山道8合目付近｜7月22日 旭岳登山道6合目直下｜７月24日 旭岳登山道5合目と６合目の間",
+      "verdict": "verified",
+      "notes": "裏旭在山頂東側見たすかるマップ地圖。"
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "7月到8月，環狀路線的間宮岳經中岳溫泉到裾合平分岐一帶有目擊與足跡，8月還看到母熊帶著兩隻小熊。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
+      "sourceTitle": "2026年ヒグマ関連情報（10/10更新） | 旭岳ビジターセンター",
+      "sourceQuote": "7月7日（火）12：00頃 間宮岳から中岳分岐間の登山道 ヒグマ成獣1頭｜8月12日 中岳温泉から裾合平分岐中間地点 ヒグマ親子目撃 成獣1頭・幼生2頭｜8月17日 中岳分岐から中岳温泉途中の登山道 小熊の足跡",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C93",
-      "articleExcerpt": "資料來源：[【イベント】ヌプリコロカムイノミ 旭岳山のまつり 6月20日開催｜ひがしかわ観光協会](https://www.welcome-higashikawa.jp/event-mountinfes2026/)",
-      "sourceUrl": "https://www.welcome-higashikawa.jp/event-mountinfes2026/",
-      "sourceTitle": "【イベント】ヌプリコロカムイノミ 旭岳山のまつり 6月20日開催 | ようこそ東川",
-      "sourceQuote": "「ようこそ東川」は一般社団法人ひがしかわ観光協会が運営する北海道東川町の観光情報を提供するホームページです。",
-      "verdict": "verified",
-      "notes": "第 1 輪 incorrect（ぐうたび頁標成北海道観光振興機構），第 2 輪換成主辦方頁，標題與機構名都和原頁一致。"
-    },
-    {
-      "claimId": "C94",
-      "articleExcerpt": "7月22日，鏡池到涸れ沢的階梯附近與6合目下方，各有一頭成獸橫越",
+      "claimId": "C109",
+      "articleExcerpt": "9月下旬到10月初，裾合平分岐往姿見站的P13到P14附近一再發現糞便和雪上的足跡。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
       "sourceTitle": "2026年ヒグマ関連情報（10/10更新） | 旭岳ビジターセンター",
-      "sourceQuote": "7月22日（水）11：20頃【場所】旭岳登山道6合目直下【状況】ヒグマ成獣1頭（小さめ）が、地獄谷側から南斜面に横切った。｜7月22日（水）10：15頃【場所】旭岳登山道 鏡池から涸れ沢先の階段付近【状況】ヒグマ成獣1頭（大きめ）が、登山道階段を…横切って",
+      "sourceQuote": "9月20日 裾合平分岐から姿見駅方面中間のP14付近 糞｜9月26日 P13とP14の間 糞｜10月3日 裾合平方面P14の登山道上周辺 雪上に…ヒグマと思われる足跡",
+      "verdict": "verified",
+      "notes": "最早一筆是 9/20（嚴格說是中旬最後一天），其餘 9/26、10/3 落在範圍內，不影響讀者判斷。"
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "上山時帶著熊鈴這類會發出聲音的東西，垃圾與吃剩的食物一律帶下山。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/brownbear/",
+      "sourceTitle": "ヒグマについて - 大雪山国立公園連絡協議会",
+      "sourceQuote": "ヒグマとの突然の出会いを避けるため、鈴など音の出るものをつけて歩くこと。｜ゴミ、残飯などを絶対に捨ててはいけません。…必ず持ち帰りましょう。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C95",
-      "articleExcerpt": "7月24日，5合目到6合目之間，下山的人看到一頭成獸在登山道左側50到60公尺",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
-      "sourceTitle": "2026年ヒグマ関連情報（10/10更新） | 旭岳ビジターセンター",
-      "sourceQuote": "【日時】７月24日（金）11：00頃【場所】旭岳登山道5合目と６合目の間（地獄谷から南側斜面）付近【状況】登山者が下山中、ヒグマ成獣1頭が登山道左側から50～60ｍ先にいるのを確認。",
+      "claimId": "C111",
+      "articleExcerpt": "防熊噴霧是熊靠到很近時用的，出發前先練習怎麼噴。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/brownbear/",
+      "sourceTitle": "ヒグマについて - 大雪山国立公園連絡協議会",
+      "sourceQuote": "ヒグマが至近距離まで近づいてきたら、ヒグマ撃退スプレーを使うなどの行動が必要になります。",
+      "verdict": "verified",
+      "notes": "事先練習見協議會安全登山頁「クマスプレー(事前に使い方を練習しておくこと）」。"
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "真的遇上了，不要跑。距離還遠就冷靜看著熊的動作慢慢退開，距離近時不要驚叫，也不要丟東西。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/brownbear/",
+      "sourceTitle": "ヒグマについて - 大雪山国立公園連絡協議会",
+      "sourceQuote": "走って逃げてはいけません。ヒグマとの距離が相当ある場合は、冷静に相手の行動を見ながら退避することが大切です。｜ヒグマとの距離が接近している場合、驚いて大声を出したり、物を投げつけるのは禁物です。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C96",
-      "articleExcerpt": "8月12日，中岳溫泉到裾合平分岐途中，看到母熊帶著兩隻小熊",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
-      "sourceTitle": "2026年ヒグマ関連情報（10/10更新） | 旭岳ビジターセンター",
-      "sourceQuote": "8月12日（水）14：30頃【場所】中岳温泉から裾合平分岐中間地点【状況】…ヒグマ親子目撃【頭数】成獣1頭・幼生2頭",
-      "verdict": "verified",
-      "notes": "原文是登山道往北數百公尺外的斜面上看到；「途中看到」不算錯。"
-    },
-    {
-      "claimId": "C97",
-      "articleExcerpt": "8月17日，中岳分岐到中岳溫泉途中有小熊的足跡",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
-      "sourceTitle": "2026年ヒグマ関連情報（10/10更新） | 旭岳ビジターセンター",
-      "sourceQuote": "8月17日（月）13：25頃【場所】中岳分岐から中岳温泉途中の登山道【状況】小熊の足跡",
+      "claimId": "C113",
+      "articleExcerpt": "看到小熊，附近一定有母熊，不要靠近。熊走了以後，盡快離開那裡。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/brownbear/",
+      "sourceTitle": "ヒグマについて - 大雪山国立公園連絡協議会",
+      "sourceQuote": "小熊の付近には必ず親熊がいるので警戒が必要です。小熊に近づいたり、小熊を驚かせてはいけません。｜ヒグマが立ち去った場合、その場からすばやく離れましょう。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C98",
-      "articleExcerpt": "9月20日到10月3日，裾合平分岐往姿見站方向的P13到P14附近多次發現糞便與雪上足跡，9月30日中岳分岐也有目擊",
+      "claimId": "C114",
+      "articleExcerpt": "出發前看一次遊客中心網站的棕熊紀錄，每一筆的日期與地點都寫在上面。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
       "sourceTitle": "2026年ヒグマ関連情報（10/10更新） | 旭岳ビジターセンター",
-      "sourceQuote": "9月20日…裾合平分岐から姿見駅方面中間のP14付近 登山道上に、ヒグマのものと思われる糞｜9月26日…P13とP14の間 ヒグマのものと思われる糞｜10月3日…裾合平方面P14の登山道上周辺 雪上に…ヒグマと思われる足跡｜9月30日…中岳分岐付近 外国の方がヒグマを目撃",
+      "sourceQuote": "【日時】…【場所】…【状況】（每筆紀錄都列日時與場所）",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C99",
+      "claimId": "C115",
       "articleExcerpt": "國立公園內禁止對野生動物餵食、過度接近或尾隨，看到熊不要為了拍照靠近。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/rules/",
       "sourceTitle": "大雪山の保全ルール - 大雪山国立公園連絡協議会",
-      "sourceQuote": "自然公園法により、国立公園の特別地域内等において、野生動物（鳥類又は哺乳類）に対して、餌を与えること、著しく接近すること、つきまとうことは、規制されています。｜写真撮影のために野生動物に接近したり、つきまとわないようにしてください。",
+      "sourceQuote": "国立公園の特別地域内等において、野生動物（鳥類又は哺乳類）に対して、餌を与えること、著しく接近すること、つきまとうことは、規制されています。｜写真撮影のために野生動物に接近したり、つきまとわないようにしてください。",
       "verdict": "verified",
-      "notes": "原文適用範圍是「特別地域内等」，旭岳登山道在其中。"
+      "notes": ""
     },
     {
-      "claimId": "C100",
+      "claimId": "C116",
       "articleExcerpt": "纜車官網提醒，2026年大雪山山難多，出發時晴朗也常遇上天氣急變。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
       "sourceQuote": "今シーズンは特に大雪山山域に入山しての山岳事故が多発しております。たとえ入山開始時に晴れていても天気が急変し、一気に視界不良となるケースは頻繁にあります",
       "verdict": "verified",
-      "notes": "「今シーズン」＝2026 年（2026-10-26 首頁）。"
+      "notes": ""
     },
     {
-      "claimId": "C101",
+      "claimId": "C117",
       "articleExcerpt": "在山上「不知道路」「迷路了」，就已經是山難，要立刻打110求救。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/course/%E5%A4%A7%E9%9B%AA%E5%B1%B1%E3%81%AE%E5%85%A5%E5%B1%B1%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6/",
       "sourceTitle": "大雪山の入山に関して | 旭岳ビジターセンター",
@@ -915,143 +1059,80 @@
       "notes": ""
     },
     {
-      "claimId": "C102",
-      "articleExcerpt": "9月下旬看紅葉，想在日落大約17點前回到姿見站，最晚11:20就要從姿見站出發。",
-      "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e8%a3%be%e5%90%88%e5%b9%b3/",
-      "sourceTitle": "裾合平 - 大雪山国立公園連絡協議会",
-      "sourceQuote": "姿見駅舎から 登り３時間00分 下り２時間40分",
-      "verdict": "verified",
-      "notes": "第 2 輪新增句（原 C102 全道山難統計句已刪，本 claimId 改記新句）。重算：17:00−(3:00＋2:40)＝11:20。日落約 17 點見協議會安全登山頁「９月下旬の日没時間は５時頃」。9 月下行末班 17:30（纜車月曆 D／E）晚於日落，所以以日落為界正確。注意：路線時間不含休息，正文沒寫，但「最晚」的用法與登頂表一致。另：統計句刪除後，資料來源仍列「令和8年 山岳遭難発生状況｜北海道警察」（r08.pdf），正文已無對應事實，可考慮移除，非必修。"
-    },
-    {
-      "claimId": "C103",
-      "articleExcerpt": "旭岳たすかるマップ把旭岳常見的山難依月份整理出來，P後面的數字對應登山道上的標柱。",
+      "claimId": "C118",
+      "articleExcerpt": "6月 | 下山時在P-9到P-7迷路，裾合平的P-12到P-14也會迷路 | 用GPS、指北針、高度計確認位置與下山方向",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
-      "sourceTitle": "旭岳たすかるマップ（夏）",
-      "sourceQuote": "旭岳で発生の多い遭難と防止方法（月 6月／7月・8月／9月）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C104",
-      "articleExcerpt": "表格：6月｜下山時在P-9到P-7迷路，裾合平的P-12到P-14也會迷路｜用GPS、指北針、高度計確認位置與下山方向",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
-      "sourceTitle": "旭岳たすかるマップ（夏）",
+      "sourceTitle": "旭岳たすかるマップ（夏・PDF、東川町大雪山国立公園保護協会）",
       "sourceQuote": "6月 下山時にP-9～P-7での道迷い。裾合平(P-12～P-14)での道迷い。｜GPS、コンパス、高度計などで現在地を確認し、下山方向を確かめる。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "PDF 轉圖判讀。"
     },
     {
-      "claimId": "C105",
-      "articleExcerpt": "表格：7月、8月｜脫水造成疲勞，下山時在P-9到P-6跌倒、摔斷腳踝｜登山前喝500cc運動飲料，用登山杖慢慢走",
+      "claimId": "C119",
+      "articleExcerpt": "7月、8月 | 脫水造成疲勞，下山時在P-9到P-6跌倒、摔斷腳踝 | 登山前喝500cc運動飲料，用登山杖慢慢走",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
-      "sourceTitle": "旭岳たすかるマップ（夏）",
+      "sourceTitle": "旭岳たすかるマップ（夏・PDF、東川町大雪山国立公園保護協会）",
       "sourceQuote": "7月・8月 脱水による疲労。下山時に転倒し足首の骨折。（P-9～P-6）｜登山前に500ccのスポーツドリンクを飲む。ポールを使いゆっくり歩く。",
       "verdict": "verified",
-      "notes": "第 1 輪 unsupported（多了扭傷），第 2 輪已改成原文說法。"
+      "notes": "PDF 轉圖判讀。"
     },
     {
-      "claimId": "C106",
-      "articleExcerpt": "表格：9月｜強風造成失溫，在P-10到P-7、P-11到P-12，降雪後在P-9到P-7迷路｜做好防寒、勤吃東西、確認下山方向",
+      "claimId": "C120",
+      "articleExcerpt": "9月 | 強風造成失溫，在P-10到P-7、P-11到P-12，降雪後在P-9到P-7迷路 | 做好防寒、勤吃東西、確認下山方向",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2019/06/asahidake_tasukarumap_summer_jp.pdf",
-      "sourceTitle": "旭岳たすかるマップ（夏）",
+      "sourceTitle": "旭岳たすかるマップ（夏・PDF、東川町大雪山国立公園保護協会）",
       "sourceQuote": "9月 強風による低体温症。（P-10～P-7、P-11～P-12）降雪による道迷い。（P-9～P-7）｜防寒対策、こまめに食べる。現在地と下山方向の確認。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "PDF 轉圖判讀。"
     },
     {
-      "claimId": "C107",
+      "claimId": "C121",
       "articleExcerpt": "天氣差的日子不要勉強，走到一半回頭，或當天乾脆不上山都可以。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
       "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
-      "sourceQuote": "また悪天候の際は、無理をせず引き返す、最初から登らない事も選択肢に入れましょう。",
+      "sourceQuote": "悪天候の際は、無理をせず引き返す、最初から登らない事も選択肢に入れましょう。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C108",
-      "articleExcerpt": "在大雪山國立公園只能走登山道或殘雪期的指定路線，殘雪的地方照繩索與引導桿走，並聽從巡視員的指示。",
+      "claimId": "C122",
+      "articleExcerpt": "大雪山國立公園為了保護自然訂了幾條規定，登山時只能走登山道或殘雪期的指定路線。殘雪的地方照繩索與引導桿走，並聽從巡視員的指示。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/rules/",
       "sourceTitle": "大雪山の保全ルール - 大雪山国立公園連絡協議会",
-      "sourceQuote": "登山道または残雪時に指定されたルート以外を歩行したり、立ち入ったりせず｜登山道が残雪で覆われている場所ではロープや誘導ポールに従う他、登山道を管理している巡視員等の指示や指導に従ってください。",
+      "sourceQuote": "大雪山を守るため、みんなで守る基本の４ルール｜登山道または残雪時に指定されたルート以外を歩行したり、立ち入ったりせず｜登山道が残雪で覆われている場所ではロープや誘導ポールに従う他、登山道を管理している巡視員等の指示や指導に従ってください。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C109",
-      "articleExcerpt": "野營指定地以外不能紮營，也不能生營火，旭岳這一側的指定地是山頂東側的裏旭。",
+      "claimId": "C123",
+      "articleExcerpt": "野營指定地以外不能紮營，也不能生營火。旭岳這一側的指定地是山頂東側的裏旭。寵物不能帶進山。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/rules/",
       "sourceTitle": "大雪山の保全ルール - 大雪山国立公園連絡協議会",
-      "sourceQuote": "野営指定地以外での野営は行わないこと。たき火を行わないこと。｜【野営指定地】黒岳、裏旭、白雲岳…",
+      "sourceQuote": "野営指定地以外での野営は行わないこと。たき火を行わないこと。｜【野営指定地】黒岳、裏旭、白雲岳…｜ペットを持ち込まないこと。",
       "verdict": "verified",
-      "notes": "裏旭在山頂東側見たすかるマップ地圖（裏旭キャンプ指定地在旭岳東）。營火是全面不行，正文句構可讀成兩件事，可接受。"
+      "notes": "裏旭在山頂東側見たすかるマップ地圖（裏旭キャンプ指定地位於 P-10 東側）。"
     },
     {
-      "claimId": "C110",
-      "articleExcerpt": "寵物不能帶進山。",
-      "sourceUrl": "https://www.daisetsuzan.or.jp/info/rules/",
-      "sourceTitle": "大雪山の保全ルール - 大雪山国立公園連絡協議会",
-      "sourceQuote": "ペットを持ち込まないこと。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C111",
+      "claimId": "C124",
       "articleExcerpt": "想在大雪山國立公園內空拍，要先申請許可，纜車也不能帶沒有許可的空拍機上山。",
       "sourceUrl": "https://www.welcome-higashikawa.jp/daisetsu",
-      "sourceTitle": "大雪山国立公園 | ようこそ東川",
+      "sourceTitle": "大雪山国立公園◆ドローンについて | ようこそ東川",
       "sourceQuote": "大雪山国立公園内でドローン撮影を実施する場合は許可申請が必要です。｜※旭岳ロープウェイは無許可のドローンの持込みはできませんのでご注意ください。",
       "verdict": "verified",
-      "notes": "纜車官網也寫「小型無人飛行機等…ロープウェイ内持ち込み乗車はお断り致しております。但し、関係省庁・行政機関等から許可・承認済みの場合は除きます」。"
+      "notes": ""
     },
     {
-      "claimId": "C112",
+      "claimId": "C125",
       "articleExcerpt": "動身前查一次天氣、棕熊出沒與雪溪的最新消息，遊客中心網站的棕熊紀錄與登山道情報會隨時更新。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
       "sourceQuote": "最新の登山道情報を確認してください。天気の情報、ヒグマ出没の情報、林道の情報、雪渓の情報、水場の情報等、事前に調べましょう。",
       "verdict": "verified",
-      "notes": "遊客中心棕熊頁標「10/10更新」，登山道情報 6/24、8/3、10/2 等陸續發布；6/24 文章「登山道状況は日々変化していますので、最新情報を確認し」。"
-    },
-    {
-      "claimId": "C113",
-      "articleExcerpt": "遊客中心出租的是登山杖、雨鞋與ココヘリ這類用品，防熊噴霧與輕冰爪要自己準備。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/rental_goods/",
-      "sourceTitle": "レンタル | 旭岳ビジターセンター",
-      "sourceQuote": "レンタル料金一覧（税込）長靴｜ストック｜ストック（伸縮式）｜スノーシュー｜クロスカントリースキー｜雪遊び道具（単品）｜雪遊び道具（2個以上）｜ココヘリ",
-      "verdict": "verified",
-      "notes": "第 2 輪新增句。重讀全表，非積雪期可租的只有雨鞋、兩種登山杖與ココヘリ，沒有防熊噴霧與輕冰爪，「要自己準備」有依據。"
-    },
-    {
-      "claimId": "C114",
-      "articleExcerpt": "mont-bell大雪東川店以登山用品為主，抵達後可以到店裡問有沒有現貨。",
-      "sourceUrl": "https://store.montbell.jp/search/shopinfo/?shop_no=618944",
-      "sourceTitle": "モンベル ｜ 店舗 ｜ モンベル 大雪ひがしかわ店",
-      "sourceQuote": "登山用品を中心にスキーウエア、防寒服、サイクリング用品、カヌー、カヤック用品…なども取り扱っています。",
-      "verdict": "verified",
-      "notes": "第 2 輪新增句。店舖頁沒有防熊噴霧、輕冰爪的品項清單，正文只寫「可以到店裡問有沒有現貨」，沒有說一定有賣，強度恰當。"
-    },
-    {
-      "claimId": "C115",
-      "articleExcerpt": "6月上山，可以到纜車官網的月曆查當天的下行末班，往回推5小時5分，就是最晚從姿見站出發的時間。",
-      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
-      "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "ロープウェイ所要時間 片道約10分｜旭岳ロープウェイ運行予定表（月別運行スケジュール）",
-      "verdict": "verified",
-      "notes": "第 2 輪新增句。重算：上山 2:50＋下山 2:05＋纜車 0:10＝5:05，和表格的算法一致（17:30−5:05＝12:25）。官網目前月曆只列 2026 年 7～12 月（「現在決まっているスケジュールは下記の期間迄」），正文沒寫 6 月的時刻，只叫讀者到時查月曆，不衝突。"
-    },
-    {
-      "claimId": "C116",
-      "articleExcerpt": "想走一圈，當天出發前可以到遊客中心或姿見站問路況，跟著早班纜車上山。",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
-      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～",
-      "sourceQuote": "最新状況を知りたい方はスタッフへお尋ねください。",
-      "verdict": "verified",
-      "notes": "第 2 輪新增句，屬建議。姿見站有櫃台（たすかるマップ「姿見カウンター（6-10月）で配布」），協議會也請登山者參考姿見站的講解；遊客中心 8/3 是 6:30 從姿見站出發走這一圈。"
+      "notes": "遊客中心棕熊頁標「10/10更新」並持續追加。"
     }
   ],
   "summary": {
-    "verified": 116,
+    "verified": 125,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
