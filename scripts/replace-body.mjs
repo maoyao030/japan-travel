@@ -79,7 +79,11 @@ function hasLink(body, {anchorText, targetPath}) {
   })
 }
 
-export function rebuildBody(liveBody, markdown, {articleId} = {}) {
+/**
+ * renamedSentences：連結句改寫過時的新舊對照（content-production/<id>/link-sentences.json），
+ * 線上句子等於 old 時先找 new，錨文字不用全文唯一。
+ */
+export function rebuildBody(liveBody, markdown, {articleId, renamedSentences = []} = {}) {
   let body = parseMarkdownBody(markdown).blocks
   const text = visibleText(body)
   const carried = []
@@ -90,7 +94,8 @@ export function rebuildBody(liveBody, markdown, {articleId} = {}) {
       carried.push({kind: 'link', ...link, how: 'already'})
       continue
     }
-    const attempts = [{sentence: link.sentence}, {sentence: undefined}]
+    const renamed = renamedSentences.find((item) => item.old === link.sentence && item.anchor === link.anchorText)
+    const attempts = [...(renamed ? [{sentence: renamed.new}] : []), {sentence: link.sentence}, {sentence: undefined}]
     let done = false
     for (const attempt of attempts) {
       try {

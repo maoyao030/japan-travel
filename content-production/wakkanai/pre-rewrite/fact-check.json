@@ -1,0 +1,719 @@
+{
+  "schemaVersion": 1,
+  "articleId": "wakkanai",
+  "articleSha256": "ce40d905d5ce9096c7fd5419c3f4fa29ae8a1a92867dbb22288f05ac1f4b9394",
+  "checker": "事實查核 agent（Claude Opus 5.5，唯讀，非作者；2026-10-23 第 2 輪複查：驗收後第 1 輪修改版逐句重比，改過與新增的句子重新 curl／瀏覽器查來源。稚內觀光協會 north-hokkaido.com 仍整站 503，讀 Internet Archive 存檔並以網址標示存檔日期；活動日期另以稚內市官網核對）",
+  "checkedAt": "2026-10-23",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "稚內是搭渡輪去利尻島、禮文島的出發港，到利尻島的鴛泊港約1小時40分，到禮文島的香深港約1小時55分。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表（稚内-鴛泊）｜ハートランドフェリー",
+      "sourceQuote": "稚内発～鴛泊着 6/1～9/30 07:15～08:55／（稚内～礼文島）稚内発～香深着 06:30～08:25",
+      "verdict": "verified",
+      "notes": "07:15→08:55 為 1 小時 40 分；06:30→08:25 為 1 小時 55 分（https://heartlandferry.jp/timetable/time1/）。2026 年時刻表。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "去日本最北端的宗谷岬，也是從稚內出發。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "稚内A　日本最北端と北海道遺産めぐり … 稚内駅前バスターミナル発～…～宗谷岬～…～稚内駅前バスターミナル着",
+      "verdict": "verified",
+      "notes": "宗谷岬為日本最北端的細節歸 cape-soya 頁。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "夏天的定期觀光巴士稚內A線早上8點從站前出發，繞完稚內公園、野寒布岬與宗谷岬後，11:50就回到站前。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "稚内駅前バスターミナル発～北海道遺産・北防波堤ドーム（車窓）～稚内公園～ノシャップ岬～…～宗谷岬～… 5月3日～5月5日･5月20日～9月30日8:00発 → 11:50着",
+      "verdict": "verified",
+      "notes": "2026 年度運行已結束（頁面標示「今年度の運行は終了いたしました」），正文寫「夏天」未寫具體年度，條件一致。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "稚內旅遊排1晚就夠，多出來的天數留給利尻島與禮文島。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "稚内A　-　所要時間 / 3:50 … 稚内B　-　所要時間 / 4:15",
+      "verdict": "verified",
+      "notes": "編輯判斷：A 線 3 小時 50 分、B 線 4 小時 15 分即繞完稚內公園、野寒布岬、宗谷岬，有事實支撐。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "冬天往兩座島的渡輪一天只剩2個來回，稚內公園與百年記念塔也會關閉。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 06:30～08:25｜08:55～10:50｜10:30～12:25｜14:20～16:15｜14:50～16:45｜17:10～19:05／1/1～4/27 06:35～08:30｜09:00～10:55｜14:10～16:05｜17:05～19:00",
+      "verdict": "verified",
+      "notes": "禮文冬季（1/1～4/27、11/1～12/31）稚內發 06:35、14:10；利尻（timetable/）冬季稚內發 06:55、14:00，鴛泊發 09:05、17:30。稚內公園「11月中旬-4月中旬まで閉鎖」、百年記念塔「11月1日～4月28日」休館（觀光協會存檔）。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "第一次去，6月到9月最好排，景點都開放，觀光巴士也在行駛。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "運行期間：2026年5月3日～5月5日、5月20日～9月30日まで",
+      "verdict": "verified",
+      "notes": "景點：稚內公園 4 月中旬～11 月中旬開放、百年記念塔 6～9 月無休、水族館只有 4/1～28 與 12、1 月休（觀光協會存檔）。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "從札幌搭特急單程要5小時12分",
+      "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?search_target=route&search_way=time&sum_target=7&faretype=2&jr=on&privately=on&dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E7%A8%9A%E5%86%85&via_node01=&via_node02=&via_node03=&year=2026&month=10&day=24&hour=2&minute=00&search_type=departure&sort=time&max_route=5&sprexprs=on&utrexprs=on&exprs=on&slputr=on&slpexprs=on&sprnozomi=on&transfer=normal",
+      "sourceTitle": "札幌→稚内 乗換案内｜JR北海道",
+      "sourceQuote": "所要時間: 5時間12分 乗換: 0回 距離: 396.2km … 出発 7:30 札幌 … 特急宗谷 … 12:42 稚内",
+      "verdict": "verified",
+      "notes": "2026-10-24 出發條件查詢。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "市區主要景點加上宗谷岬，觀光巴士一個上午就繞完。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "8:00発 → 11:50着",
+      "verdict": "verified",
+      "notes": "A 線含北防波堤（車窗）、稚內公園、野寒布岬、宗谷岬。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "市區最顯眼的稚內港北防波堤穹頂是70根圓柱排成、全長427公尺的長廊，當初是為了擋強風而蓋。從JR稚內站走路約5分鐘就到。",
+      "sourceUrl": "https://web.archive.org/web/20260901123157/https://www.north-hokkaido.com/spot/detail_1075.html",
+      "sourceTitle": "稚内港北防波堤ドーム｜稚内観光協会",
+      "sourceQuote": "強風から港を守るために築かれた、世界でも類を見ない半アーチ式の防波堤で、70本の円柱が並ぶ姿は圧巻です。…高さ14m、全長427mに及ぶこのドーム／●徒歩：JR稚内駅から約5分",
+      "verdict": "verified",
+      "notes": "原站 503，讀 2026-09-01 存檔。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "稚內公園的冰雪之門紀念在樺太過世的人。天氣好時，從這裡望得見海對面的庫頁島",
+      "sourceUrl": "https://web.archive.org/web/20251205083415/https://www.north-hokkaido.com/spot/detail_1046.html",
+      "sourceTitle": "氷雪の門（樺太島民慰霊碑）｜稚内観光協会",
+      "sourceQuote": "かつて日本の領土だった樺太（サハリン）で亡くなった日本人のための慰霊碑です。…高さ8mの門の向こうにはサハリンの島影が浮かび上がります。",
+      "verdict": "verified",
+      "notes": "原站 503，讀存檔。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "同在公園裡的百年記念塔展望室離地70公尺，連利尻島、禮文島都看得到。",
+      "sourceUrl": "https://web.archive.org/web/20250828024036/https://www.north-hokkaido.com/spot/detail_1048.html",
+      "sourceTitle": "稚内市北方記念館・開基百年記念塔｜稚内観光協会",
+      "sourceQuote": "展望台は、高さ70mのガラス張り。天気が良ければ利尻（りしり）、礼文（れぶん）、そして宗谷海峡を隔ててサハリンの島影を望むことができます。",
+      "verdict": "verified",
+      "notes": "所在地「稚内公園内」。原站 503，讀存檔。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "野寒布岬以夕陽出名，6月要等到晚上7點20分前後，12月不到下午4點太陽就下山了。",
+      "sourceUrl": "https://web.archive.org/web/20260901123142/https://www.north-hokkaido.com/spot/detail_1082.html",
+      "sourceTitle": "ノシャップ岬｜稚内観光協会",
+      "sourceQuote": "特に夕日の美しさで知られます。／日の入り時刻表 … 6月 | 19:18～19:26 … 12月 | 15:51～15:59",
+      "verdict": "verified",
+      "notes": "原站 503，讀存檔。"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "第一次去稚內，6月到9月最適合。這4個月市區景點都開放，定期觀光巴士也在行駛，月平均氣溫在13.0℃到19.5℃之間。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁",
+      "sourceQuote": "6月 … 13.0 … 7月 … 17.2 … 8月 … 19.5 … 9月 … 17.2（気温 平均）",
+      "verdict": "verified",
+      "notes": "觀光巴士運行期間「5月20日～9月30日」（宗谷巴士全コース一覧）；景點開放見 C6。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "7月平均風速每秒3.9公尺，是一年裡風最弱的月份，8月平均19.5℃最暖。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁",
+      "sourceQuote": "7月 … 3.9 | 南南西 … 8月 … 19.5（平均風速最小 3.9、平均気温最高 19.5）",
+      "verdict": "verified",
+      "notes": "其他月份平均風速 4.0～5.0。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "日最高氣溫超過25℃的日子一年只有8天左右，6月的平均最低氣溫只有10.4℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a2",
+      "sourceTitle": "稚内（宗谷地方）平年値（年・月ごとの値）詳細（気温・蒸気圧・湿度）｜気象庁",
+      "sourceQuote": "年 | 7.0 | 9.7 | 4.5 | 101.5 | 0.2 | 130.8 | 0.0 | 72.6 | 8.1（日最高≧25.0℃）／6月 | 13.0 | 16.1 | 10.4",
+      "verdict": "verified",
+      "notes": "氣象廳階級為「≧25.0℃」，正文「超過」語意可接受。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "9月與10月是一年裡雨最多的月份。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=",
+      "sourceTitle": "稚内（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁",
+      "sourceQuote": "降水量 合計：9月 136.7／10月 129.7（其餘月份最多為 8月 123.1）",
+      "verdict": "verified",
+      "notes": "第 1 輪已更正（原「9月到11月」）。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "夏至前後有白夜祭，7月4日到6日是北門神社祭",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/sangyo/kanko/1234.html",
+      "sourceTitle": "稚内観光イベント情報｜稚内市",
+      "sourceQuote": "日本最北端わっかない白夜祭 | 6/19～20 | 北門神社例大祭 | 7/4～6",
+      "verdict": "verified",
+      "notes": "觀光協會白夜祭頁 event/detail_1409 原站 503 且無存檔，改用稚內市官網。北門神社祭另見存檔 https://web.archive.org/web/20260612044140/https://www.north-hokkaido.com/event/detail_1159.html「毎年7/4～7/6の日程で開催されます」。2026 年夏至為 6/21，6/19～20 屬前後。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "8月第一個週六、週日的南極祭會放約2,500發煙火。",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/sangyo/kowan/oashisu/ibento.html",
+      "sourceTitle": "イベントスケジュール｜北海道稚内市",
+      "sourceQuote": "令和8年8月1日、2日 | 第64回稚内みなと南極まつり大花火大会／みなと南極まつりの最後に海上から打ち上げられる2500発の花火は、稚内の夜をきれいに彩ります。",
+      "verdict": "verified",
+      "notes": "觀光協會南極祭頁 event/detail_1411 原站 503 且無存檔。2026/8/1、8/2 為 8 月第一個週六、週日，與正文一致；「每年第一個週末」的通則本次只從 2026 年日期確認。另：稚內市此頁寫第 64 回，研究記錄 F152 寫第 63 回，正文未寫回數，不影響。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "| 6月～9月 | 13.0～19.5℃ | 各一天3個來回 | 景點都開放，定期觀光巴士行駛，有白夜祭、北門神社祭、南極祭 |",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 06:30～08:25｜10:30～12:25｜14:50～16:45（稚内発）",
+      "verdict": "verified",
+      "notes": "氣溫見 C13；稚內公園、百年記念塔（6～9月無休）、水族館 6～9 月開館；觀光巴士 5/20～9/30；活動見 C17、C18。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "| 4月28日～5月、10月 | 5月9.1℃、10月11.3℃ | 各一天3個來回，部分往禮文島的船經過利尻島 | 稚內公園4月中旬開放，百年記念塔4月29日起開館 |",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "時刻表内の＜ ＞は利尻島（鴛泊）経由便です。4/28～5/31 06:30～08:25｜＜10:10～13:00＞｜14:45～16:40 … 10/1～10/31 同",
+      "verdict": "verified",
+      "notes": "利尻航線同期稚內發 06:45、10:10、14:30，鴛泊發 08:55、14:35、16:40。氣溫：5月 9.1、10月 11.3（氣象廳）。稚內公園「11月中旬-4月中旬まで閉鎖」、百年記念塔休館「11月1日～4月28日」（觀光協會存檔）。"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "| 11月～4月27日 | 1月、2月−4.3℃ | 各一天2個來回 | 稚內公園11月中旬到4月中旬封閉，百年記念塔11月1日到4月28日休館，2月有犬橇大會與冰雪廣場 |",
+      "sourceUrl": "https://web.archive.org/web/20260901123143/https://www.north-hokkaido.com/spot/detail_1045.html",
+      "sourceTitle": "稚内公園｜稚内観光協会",
+      "sourceQuote": "休業日 11月中旬-4月中旬まで閉鎖",
+      "verdict": "verified",
+      "notes": "第 1 輪已更正。百年記念塔存檔「休業日 … 11月1日～4月28日」；渡輪 2 個來回見 C5；1、2 月 −4.3℃（氣象廳）；2 月活動見稚內市活動表。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "全國犬橇大會在大沼的臨時會場舉行，免費觀賽，2026年辦在2月21日、22日，2027年預計也在2月舉辦。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/event/detail_11038.html",
+      "sourceTitle": "JAPAN CUP全国犬ぞり稚内大会｜北海道公式観光サイト",
+      "sourceQuote": "開催期間 2027年2月の開催予定です。開催場所 大沼特設会場 … 観戦無料",
+      "verdict": "verified",
+      "notes": "2026 年日期見觀光協會存檔 https://web.archive.org/web/20260612041832/https://www.north-hokkaido.com/event/detail_1158.html「令和８年２月２1日（土）・２2日（日）　10：00～15：00 ・会場 稚内市大沼特設会場」。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "中央公園一帶同樣在2月有冰雪廣場，可以玩輪胎滑雪道、看小雪雕，從JR稚內站走路約7分鐘。",
+      "sourceUrl": "https://web.archive.org/web/20250909041901/https://www.north-hokkaido.com/event/detail_1156.html",
+      "sourceTitle": "わっかない氷雪の広場｜稚内観光協会",
+      "sourceQuote": "現在は、中央公園で開催され、チュービングや滑り台など…可愛らしいミニ雪像が展示されている／開催場所 稚内市　中央公園・北臨港駐車場／JR稚内駅から徒歩約7分",
+      "verdict": "verified",
+      "notes": "2027 年預定見稚內市「令和9年2月上旬 2027わっかない氷雪の広場」（https://www.city.wakkanai.hokkaido.jp/sangyo/kowan/oashisu/ibento.html）。原站 503，讀存檔。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "這兩個活動都和電影《南極物語》有關。",
+      "sourceUrl": "https://web.archive.org/web/20250909041901/https://www.north-hokkaido.com/event/detail_1156.html",
+      "sourceTitle": "わっかない氷雪の広場｜稚内観光協会",
+      "sourceQuote": "稚内公園でロケが行われた「南極物語」に因み、\"南極大陸\"をイメージした冬の一大イベントとして開催されたのが始まり。",
+      "verdict": "verified",
+      "notes": "第 1 輪已改寫。犬橇大會存檔「映画『南極物語』で知られる兄弟犬タロとジロが市に贈られたことを機に始まった」（https://web.archive.org/web/20260612041832/https://www.north-hokkaido.com/event/detail_1158.html）。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "稚內在1991年到2020年的30年裡只有15年看到流冰，2021、2022與2024年都沒出現。就算出現，平均也只有14天左右，而且幾乎不會靠岸。",
+      "sourceUrl": "https://www.data.jma.go.jp/wakkanai/kishou/ryuhyou.html",
+      "sourceTitle": "宗谷の流氷｜稚内地方気象台",
+      "sourceQuote": "平年値 1991（平成3年）年～2020（令和2）年 | 2月19日（15年） | ××（2年） | 3月4日（15年） | 14日（16年）／2024年 ― ／2022年 ― ／2021年 ― | 0日",
+      "verdict": "verified",
+      "notes": "接岸初日平年值「××（2年）」＝30 年中只有 2 年接岸。另：頁面寫「流氷初日は2025年に観測終了」，正文沒有寫之後的年份，不衝突。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "12月與1月幾乎天天下雪，2月平均積雪最深約64公分，12月風速每秒10公尺以上的日子將近10天。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_ym.php?prec_no=11&block_no=47401&year=&month=&day=&view=a3",
+      "sourceTitle": "稚内（宗谷地方）平年値（年・月ごとの値）詳細（風・日照）｜気象庁",
+      "sourceQuote": "12月 | 5.0 | 西 | 9.9（≧10.0m/s 日数）… 雪日数 28.5／1月 雪日数 30.4／（主な要素）2月 最深積雪 64",
+      "verdict": "verified",
+      "notes": "雪日數與最深積雪見主な要素頁（view=）。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "野寒布寒流水族館12月與1月休館。",
+      "sourceUrl": "https://web.archive.org/web/20251103230651/https://www.north-hokkaido.com/spot/detail_1084.html",
+      "sourceTitle": "ノシャップ寒流水族館｜稚内観光協会",
+      "sourceQuote": "休業日 4月1日～28日、12・1月（整備休館）",
+      "verdict": "verified",
+      "notes": "原站 503，讀存檔。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "副港市場的溫泉港のゆ冬天照常開，2樓的樺太記念館也有開，只是週一休。",
+      "sourceUrl": "https://web.archive.org/web/20260208221646/https://www.north-hokkaido.com/spot/detail_1068.html",
+      "sourceTitle": "稚内市樺太記念館｜稚内観光協会",
+      "sourceQuote": "所在地 … （稚内副港市場2階）／休業日 4～10月：無休 11～3月：毎週月曜日（月曜日が祝日の場合は翌平日）・年末年始（12月31日～1月5日）",
+      "verdict": "verified",
+      "notes": "港のゆ見存檔 https://web.archive.org/web/20251009042712/https://www.north-hokkaido.com/spot/detail_1382.html「営業時間 10:00～22:00 休業日 不定休」，沒有冬季休館。樺太記念館另有年末年始 12/31～1/5 休館，正文未寫，屬省略非錯誤。"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "抵達當天下午與隔天上午各有一班定期觀光巴士，兩條路線都會繞稚內公園、野寒布岬與宗谷岬，挑一班搭就好。觀光巴士只在夏季行駛，2026年是5月3日到5日與5月20日到9月30日，每年的期間可以在宗谷巴士的定期觀光巴士頁確認。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "運行期間：2026年5月3日～5月5日、5月20日～9月30日まで ・定期観光バスは夏季限定の運行です。／稚内B … 百年記念塔～稚内公園～…～宗谷岬～…～ノシャップ岬",
+      "verdict": "verified",
+      "notes": "A 線 8:00、B 線 14:00（9 月 13:45）發車。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "| 從札幌搭火車、不開車 | 搭7:30的特急宗谷12:42抵達，接14:00出發的稚內B線，住一晚 | 第一次去、不想自己轉車的人。B線9月改13:45出發，只在夏季行駛 |",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "5月3日～5月5日･5月20日～8月31日14:00発 → 18:15着 9月1日～9月30日 13:45発 → 18:00着",
+      "verdict": "verified",
+      "notes": "特急宗谷 札幌 7:30→稚內 12:42 每天行駛（JR 宗谷本線下行時刻表 51D）。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "| 隔天要搭飛機離開 | 住一晚，隔天搭8:00出發的稚內A線，11:25左右在稚內機場下車 | 搭機離開的人。A線不配合航班時間，班機最好訂在下午、留出報到時間，A線只在夏季行駛，要預約 |",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "稚内空港（途中下車可能）… 8:00発 → 11:50着（稚内空港途中下車11:25着）※稚内空港途中下車では、航空便との接続を考慮しておりませんのでご注意ください。",
+      "verdict": "verified",
+      "notes": "「班機最好訂在下午」是依 11:25 到機場的編輯建議。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "| 開車自駕 | 白天逛市區，傍晚到野寒布岬看夕陽，再泡露天浴池看得到夕陽的稚內溫泉童夢 | 想看日落的人。野寒布岬的免費車位只有20個 |",
+      "sourceUrl": "https://web.archive.org/web/20260905152816/https://www.north-hokkaido.com/spot/detail_1102.html",
+      "sourceTitle": "稚内温泉「童夢」｜稚内観光協会",
+      "sourceQuote": "露天風呂から眺める利尻・礼文の島影や黄金色の夕景は絶景です。",
+      "verdict": "verified",
+      "notes": "野寒布岬「駐車場 20台、無料」（存檔 https://web.archive.org/web/20260901123142/https://www.north-hokkaido.com/spot/detail_1082.html）。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "| 接利尻島、禮文島 | 前一晚住稚內，隔天搭早班船上島 | 要上島的人。船可能因天候停開，從島上回稚內那天和離開北海道之間最好留一天 |",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "台風や低気圧等による悪天候（波の高さ・風向・風速）の影響により、欠航となる可能性がございます。",
+      "verdict": "verified",
+      "notes": "早班船：稚內發 06:30（禮文）、06:45～07:15（利尻，依季節）。「留一天」是依停航可能性的編輯建議。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "| 冬天前往 | 排在2月，配合犬橇大會與冰雪廣場 | 想看雪的人。稚內公園與百年記念塔關閉 |",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/sangyo/kanko/1234.html",
+      "sourceTitle": "稚内観光イベント情報｜稚内市",
+      "sourceQuote": "わっかない氷雪の広場 | 2月予定 | JAPAN CUP 全国犬ぞり稚内大会 | 2月予定",
+      "verdict": "verified",
+      "notes": "2 月稚內公園、百年記念塔都在封閉期間內。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "從札幌當天來回稚內，搭特急單程就要5小時12分，一天會有超過10小時在車上",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2891",
+      "sourceTitle": "時刻表 宗谷本線 稚内発｜JR北海道",
+      "sourceQuote": "52D 宗谷 稚内 1744 … 札幌 2256",
+      "verdict": "verified",
+      "notes": "去程 7:30→12:42（5 小時 12 分）＋回程 17:44→22:56（5 小時 12 分）＝10 小時 24 分。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "特急一個方向一天只有兩三班，能當天來回的只有一種搭法。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2890",
+      "sourceTitle": "時刻表 宗谷本線 稚内方面｜JR北海道",
+      "sourceQuote": "51D 宗谷（札幌730→稚内1242 毎日）／61D サロベツ（旭川1335→1725 毎日）／6063D サロベツ（旭川2006→2347 ◆）",
+      "verdict": "verified",
+      "notes": "上行（s=2891）：62D 06:36、6064D 13:01（◆）、52D 17:44。往札幌直達只有 17:44，從札幌直達只有 7:30，故從札幌當天來回只有一組。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "| 特急宗谷 | 札幌7:30 | 12:42 |",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2890",
+      "sourceTitle": "時刻表 宗谷本線 稚内方面｜JR北海道",
+      "sourceQuote": "51D 宗谷 札幌 730 … 稚内着 1242（運転日 毎日）",
+      "verdict": "verified",
+      "notes": "資料依「JR時刻表」令和8年10月号。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "| 特急サロベツ1號 | 旭川13:35 | 17:25 |",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2890",
+      "sourceTitle": "時刻表 宗谷本線 稚内方面｜JR北海道",
+      "sourceQuote": "61D サロベツ 1 旭川 1335 … 稚内着 1725（運転日 毎日）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "| 特急サロベツ，只在指定日行駛 | 旭川20:06 | 23:47 |",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2890",
+      "sourceTitle": "時刻表 宗谷本線 稚内方面｜JR北海道",
+      "sourceQuote": "6063D サロベツ 3 旭川 2006 … 稚内着 2347（運転日 ◆＝運転日注意）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "| 6:36 | 特急サロベツ | 旭川10:19 |",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2891",
+      "sourceTitle": "時刻表 宗谷本線 稚内発｜JR北海道",
+      "sourceQuote": "62D サロベツ 稚内 636 … 旭川 1019（毎日）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "| 13:01 | 特急サロベツ，只在指定日行駛 | 旭川16:45 |",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2891",
+      "sourceTitle": "時刻表 宗谷本線 稚内発｜JR北海道",
+      "sourceQuote": "6064D サロベツ 稚内 1301 … 旭川 1645（運転日 ◆）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "| 17:44 | 特急宗谷 | 札幌22:56 |",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2891",
+      "sourceTitle": "時刻表 宗谷本線 稚内発｜JR北海道",
+      "sourceQuote": "52D 宗谷 稚内 1744 … 札幌 2256（毎日）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "中間的下午可以走路去北防波堤穹頂，或搭市內線巴士到野寒布岬。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/noshappucape",
+      "sourceTitle": "ノシャップ岬へ行くには｜宗谷バス",
+      "sourceQuote": "ノシャップ岬へ行くには「稚内市内線」の「ノシャップ行き、富士見・坂の下行き（ノシャップ経由）」をご利用ください。",
+      "verdict": "verified",
+      "notes": "北防波堤走路約 5 分見 C9。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "定期觀光巴士稚內B線要到18:15才回到站前，搭了就趕不上17:44的特急。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "14:00発 → 18:15着　9月1日～9月30日 13:45発 → 18:00着",
+      "verdict": "verified",
+      "notes": "9 月 18:00 回站仍晚於 17:44（JR 52D）。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "高速巴士わっかない號單程6,700日圓，比特急的11,420日圓便宜。只不過單程約5小時50分，當天來回能在稚內停留的時間更短。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌）｜宗谷バス",
+      "sourceQuote": "大人：6,700円／2便　6：30 ⇒ 12：20／101便　7：40 ⇒ 13：30 … 10便16：40 ⇒ 22：30",
+      "verdict": "verified",
+      "notes": "特急 11,420 円見 JR 轉乘查詢「合計: 11,420円 (運賃: 8,250円 料金: 3,170円)」。巴士札幌 7:40 發 13:30 到、稚內最晚白天班 16:40 發，停留 3 小時 10 分，比特急 12:42～17:44 的 5 小時 2 分短。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "夏天隔天可以搭6:30的渡輪去禮文島，或搭8:00出發的A線再看一次宗谷岬。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 06:30～08:25",
+      "verdict": "verified",
+      "notes": "A 線 8:00 發、含宗谷岬（宗谷巴士）。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "6月到9月百年記念塔開到晚上9點，吃完晚餐還能上去，稚內公園也被選為日本夜景遺產。",
+      "sourceUrl": "https://web.archive.org/web/20250828024036/https://www.north-hokkaido.com/spot/detail_1048.html",
+      "sourceTitle": "稚内市北方記念館・開基百年記念塔｜稚内観光協会",
+      "sourceQuote": "営業時間 9:00～17:00（6～9月は～21:00）最終入館は閉館の20分前",
+      "verdict": "verified",
+      "notes": "夜景遺產見稚內公園存檔「2018年（平成30年）に「日本夜景遺産」に登録された」。最後入館是 20:40，正文「開到晚上9點」與原文一致。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "去利尻島、禮文島都是從稚內港渡輪站搭Heartland Ferry。渡輪站離JR稚內站走路約15分鐘，搭計程車約2分鐘。",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島）｜ハートランドフェリー",
+      "sourceQuote": "JR稚内駅よりタクシーで約2分／JR稚内駅より徒歩約15分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "JR稚內站沒有置物櫃，上島前想寄放大件行李的話，渡輪站有投幣置物櫃。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/network/station/station.html#4515",
+      "sourceTitle": "駅の情報検索 稚内駅｜JR北海道",
+      "sourceQuote": "駅ロッカー×",
+      "verdict": "verified",
+      "notes": "以瀏覽器讀取（需 JavaScript）。渡輪站見 Heartland Ferry FAQ「各フェリーターミナルにコインロッカーはありますか。… 稚内港フェリーターミナル ○」。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "搭早上從札幌開出的特急宗谷12:42到稚內，6月到9月接得上14:50往禮文島或16:40往利尻島的船，當天就能上島。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 … 14:50～16:45（稚内発～香深着）",
+      "verdict": "verified",
+      "notes": "利尻 6/1～9/30 稚內發 16:40（timetable/）。12:42 到站＋走路約 15 分＝約 12:57 到渡輪站；2 等艙 40 分前手續截止為 14:10、16:00，接得上。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "4月28日到5月與10月，下午往利尻島是14:30、往禮文島是14:45，冬天則是往利尻島14:00、往禮文島14:10，一樣接得上。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表（稚内-鴛泊）｜ハートランドフェリー",
+      "sourceQuote": "4/28～5/31 … 14:30～16:10／10/1～10/31 同／1/1～4/27 … 14:00～15:40（稚内発～鴛泊着，11/1～12/31 同）",
+      "verdict": "verified",
+      "notes": "禮文（time1/）：4/28～5/31 與 10 月稚內發 14:45，冬季 14:10。12:42 到站＋走路約 15 分＝約 12:57 到渡輪站，最早的 14:00 船 2 等手續截止 13:20，都接得上。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "搭2等艙的話，開船前40分鐘要辦好登船手續。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "車を積込みされるお客様と2等客室をご利用されるお客様は出港時間の40分前までにお済ませ下さい。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "從島上回來、當天還想搭17:44的特急回札幌，6月到9月可以從香深搭14:20的船，16:15到稚內。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 … 14:20～16:15（香深発～稚内着）",
+      "verdict": "verified",
+      "notes": "16:15 到港＋走路 15 分約 16:30 到站，早於 17:44。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "從鴛泊回來最晚要搭12:05那班，鴛泊16:40開的末班船到稚內時，特急已經開走了。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表（稚内-鴛泊）｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 … 08:25～10:05｜12:05～13:45｜16:40～18:20（鴛泊発～稚内着）",
+      "verdict": "verified",
+      "notes": "承前句「6月到9月」：12:05 船 13:45 到；16:40 船 18:20 到，晚於 17:44。其他季節由後句另寫（C70、C71）。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "船遇到颱風或低氣壓可能停開，當天開不開，原則上會在清晨5點到5點半決定。",
+      "sourceUrl": "https://web.archive.org/web/20241107100811/https://reserve.heartlandferry.jp/hlf/wrv/faq.jp.html",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー WEB予約システム",
+      "sourceQuote": "原則は出港当日の朝（5：00～5：30頃）までに運航の可否を決定致します。…※利尻礼文航路運航可否時間 通年（5：00～5：30）",
+      "verdict": "verified",
+      "notes": "預約系統 FAQ 今天顯示維護中，讀 2024-11-07 存檔；今天的運航狀況頁 https://heartlandferry.jp/status/ 也寫「本日10月23日の運航は、午前05時30分頃決定いたします。」停航原因見 FAQ「台風や低気圧等による悪天候」。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "兩座島之間也有船，鴛泊到香深約45分鐘，可以從稚內上其中一座島，再經另一座島回稚內。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島｜ハートランドフェリー",
+      "sourceQuote": "鴛泊発～香深着 … 6/1～9/30 09:30～10:15｜13:15～14:00",
+      "verdict": "verified",
+      "notes": "冬季、春秋也各有 1 班（16:00、12:15）。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "JR北海道的特急從2026年3月14日起全部改成指定席，搭特急宗谷去稚內最好事先劃位。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/zensha/",
+      "sourceTitle": "3.14ダイヤ改正 道内すべての特急列車は全車指定席へ｜JR北海道",
+      "sourceQuote": "2026年3月14日（土）よりJR北海道の特急列車はすべて全車指定席で運行しています。…自由席特急券の発売はございません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "市內的宗谷巴士只收現金或PayPay，交通IC卡不能用。",
+      "sourceUrl": "http://www.soyabus.co.jp/qa",
+      "sourceTitle": "よくあるご質問｜宗谷バス",
+      "sourceQuote": "お支払いは現金又はキャッシュレス決済の場合PayPayがご利用いただけます。それ以外の方法は対応しておりませんので、ご了承ください。",
+      "verdict": "verified",
+      "notes": "「それ以外の方法は対応しておりません」涵蓋交通 IC 卡。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "從JR稚內站走路5分鐘內就有天北の湯Dormy Inn稚內、サフィールホテル稚内與HOTEL TRUNK WAKKANAI等旅館。",
+      "sourceUrl": "https://web.archive.org/web/20260519221946/https://www.north-hokkaido.com/booking/detail_1216.html",
+      "sourceTitle": "サフィールホテル稚内｜稚内観光協会",
+      "sourceQuote": "稚内駅から徒歩約5分、フェリーターミナルは車で約3分の場所にある",
+      "verdict": "verified",
+      "notes": "HOTEL TRUNK 存檔 https://web.archive.org/web/20251205092524/https://www.north-hokkaido.com/booking/detail_1213.html「●JR稚内駅から徒歩で約5分」；Dormy Inn 官網「JR稚内駅から徒歩約3分」，館名「天然温泉 天北の湯 ドーミーイン稚内」。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "Dormy Inn離車站約3分鐘，10樓有天然溫泉大浴場。",
+      "sourceUrl": "https://www.hotespa.net/hotels/wakkanai/",
+      "sourceTitle": "ドーミーイン稚内 公式サイト",
+      "sourceQuote": "JR稚内駅から徒歩約3分。最上階10Fに、男女別天然温泉大浴場「天北の湯」。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "北海道從2026年4月1日起收住宿稅，房價每人每晚未滿2萬日圓收100日圓。",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
+      "sourceTitle": "宿泊税｜北海道",
+      "sourceQuote": "宿泊者1人1泊につき … 宿泊料金（1人1泊）2万円未満 | 100円",
+      "verdict": "verified",
+      "notes": "開徵日見 https://www.pref.hokkaido.lg.jp/kz/kkd/230824.html「令和8年（2026年）4月1日より宿泊税を導入しています」。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "稚內市預計從2027年3月1日起再加收每人每晚200日圓。",
+      "sourceUrl": "https://www.soumu.go.jp/main_content/001080173.pdf",
+      "sourceTitle": "北海道稚内市「宿泊税」の新設｜総務省",
+      "sourceQuote": "税率 １人１泊につき 200 円 … ・令和９年 ３月 １日 条例施行（予定）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "搭市內線到野寒布岬約10分鐘，15到20分鐘就有一班，車資250日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/noshappucape",
+      "sourceTitle": "ノシャップ岬へ行くには｜宗谷バス",
+      "sourceQuote": "15～20分おきに運行しています。…稚内駅前バスターミナルからバス停「ノシャップ」間は１区間250円です。",
+      "verdict": "verified",
+      "notes": "約 10 分見觀光協會存檔 https://web.archive.org/web/20260901123142/https://www.north-hokkaido.com/spot/detail_1082.html「●バス：JR稚内駅から約10分」。"
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "副港市場這棟設施裡有餐廳、市場、溫泉與樺太記念館，從JR稚內站走路約13分鐘，稚內A線也能在這裡中途下車。",
+      "sourceUrl": "https://web.archive.org/web/20260612054212/https://www.north-hokkaido.com/spot/detail_1066.html",
+      "sourceTitle": "稚内副港市場｜稚内観光協会",
+      "sourceQuote": "飲食店や市場、温泉、歴史館が揃う複合施設。",
+      "verdict": "verified",
+      "notes": "走路時間：港のゆ（副港市場 2 樓）存檔 https://web.archive.org/web/20251009042712/https://www.north-hokkaido.com/spot/detail_1382.html「JR稚内駅から車で約3分、徒歩で約13分（1.1km）」。A 線：宗谷巴士全コース一覧「副港市場（途中下車可能）」。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "章魚涮涮鍋是稚內的招牌菜，市內很多餐廳都吃得到。",
+      "sourceUrl": "https://web.archive.org/web/20260712213819/https://www.north-hokkaido.com/feature/gourmet-local",
+      "sourceTitle": "ご当地グルメ大集合！稚内・利尻・礼文に行くなら絶対に食べたいおすすめメニュー｜稚内観光協会",
+      "sourceQuote": "この稚内名物「タコしゃぶ」です。…市内多数の飲食店で提供されているので、是非ご賞味あれ。",
+      "verdict": "verified",
+      "notes": "原站 503，讀存檔。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "用的是宗谷地區的水章魚，漁獲量日本第一，肉軟、煮過也不太會變硬。",
+      "sourceUrl": "http://wakkanai-brand.jp/genzairyou/g02_souyanotako.html",
+      "sourceTitle": "宗谷のたこ｜稚内ブランド公式ウェブサイト",
+      "sourceQuote": "宗谷では主に「ミズダコ」が漁獲され、その水揚げ量は日本一を誇ります。",
+      "verdict": "verified",
+      "notes": "肉軟、不易變硬見觀光協會特輯存檔「ミズダコは水分を多く含んでいるので、柔らかい身と強い甘味が特徴」「火を通してもあまり固くならない」。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "另一樣在地吃法是チャーメン，把中華麵煎得焦脆，再淋上海鮮、豬肉與蔬菜做的勾芡。",
+      "sourceUrl": "https://web.archive.org/web/20260712214103/https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の\"推し麺\" ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
+      "sourceQuote": "茹でた中華麺に油を引いた中華鍋で軽く焼き目をつけ、魚介や豚肉、野菜など具材がたっぷり入った\"あんかけ\"を焼いた麺に乗せ完成。…焼けた麺のカリカリ食感",
+      "verdict": "verified",
+      "notes": "原站 503，讀存檔。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "夏天也是活動最多的季節。",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/sangyo/kanko/1234.html",
+      "sourceTitle": "稚内観光イベント情報｜稚内市",
+      "sourceQuote": "日本最北端わっかない白夜祭 | 6/19～20 | 北門神社例大祭 | 7/4～6 | 稚内みなと南極まつり | 8/1～2",
+      "verdict": "verified",
+      "notes": "編輯判斷：市府 2026 年度活動表中，6～8 月有三個大型祭典，冬季為 2 月兩項。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "冬天的稚內看的是雪與活動，2月最熱鬧。",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/sangyo/kanko/1234.html",
+      "sourceTitle": "稚内観光イベント情報｜稚内市",
+      "sourceQuote": "わっかない氷雪の広場 | 2月予定 | JAPAN CUP 全国犬ぞり稚内大会 | 2月予定",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "4月28日到5月與10月，鴛泊可以搭14:35的船，香深則搭13:25經鴛泊的船，都是16:15到稚內。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表（稚内-鴛泊）｜ハートランドフェリー",
+      "sourceQuote": "4/28～5/31 … 14:35～16:15（鴛泊発～稚内着）／10/1～10/31 同",
+      "verdict": "verified",
+      "notes": "禮文（time1/）4/28～5/31 與 10 月「＜13:25～16:15＞」，＜＞為經鴛泊便。16:15 到港＋走路 15 分，趕得上 17:44。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "冬天兩座島下午都沒有接得上的船，要搭早上鴛泊9:05或香深9:00開的那班。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表（稚内-鴛泊）｜ハートランドフェリー",
+      "sourceQuote": "1/1～4/27 … 09:05～10:45｜17:30～19:10（鴛泊発～稚内着，11/1～12/31 同）",
+      "verdict": "verified",
+      "notes": "禮文（time1/）冬季香深發 09:00～10:55、17:05～19:00。傍晚兩班 19:00、19:10 到，晚於 17:44；島間船冬季香深發 16:25 也接不上。"
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "往利尻島、禮文島的渡輪從4月28日到10月底都是一天3個來回，季節之間差的是天氣與景點。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島｜ハートランドフェリー",
+      "sourceQuote": "4/28～5/31 06:30～08:25｜＜10:10～13:00＞｜14:45～16:40／6/1～9/30 06:30｜10:30｜14:50／10/1～10/31 06:30｜＜10:10＞｜14:45（稚内発）",
+      "verdict": "verified",
+      "notes": "利尻（timetable/）4/28～10/31 稚內發與鴛泊發都是每天 3 班。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "從新千歲機場飛稚內機場約1小時，飛機與巴士的走法見稚內交通。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/wakkanai/access/",
+      "sourceTitle": "稚内空港 アクセス｜北海道エアポート",
+      "sourceQuote": "新千歳空港へは飛行機で約1時間00分",
+      "verdict": "verified",
+      "notes": "官方寫稚內往新千歲方向，正文寫反方向，同一航線，可接受。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "會場有200個免費車位，2025年還有從宗谷ふれあい公園開往會場的臨時接駁車，到公園可以搭宗谷巴士的聲問線。",
+      "sourceUrl": "https://web.archive.org/web/20260612041832/https://www.north-hokkaido.com/event/detail_1158.html",
+      "sourceTitle": "JAPAN CUP全国犬ぞり稚内大会｜稚内観光協会",
+      "sourceQuote": "駐車場 200台、無料／●臨時シャトルバス：「ふれあい公園」～「大沼特設会場」 ※ふれあい公園までは、宗谷バス　声問線をご利用ください。臨時シャトルバス時刻表【令和7年度】",
+      "verdict": "verified",
+      "notes": "同頁列「北海道立宗谷ふれあい公園」。200 台免費另見 visit-hokkaido 頁「200台、無料」。原站 503，讀存檔。"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "預約從乘車日2個月前開放，可以打電話、到窗口，也能在巴士訂票網站発車オーライネット訂位。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "ご予約方法とのりば｜宗谷バス",
+      "sourceQuote": "各コース、ご利用日の2ヶ月前より受付を開始しています。お電話・窓口・発車オーライネット（インターネット）にてご予約をお願いします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "從札幌搭サロベツ1號，要先坐12:00的特急ライラック到旭川轉車，車資和直達的特急宗谷一樣。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?search_target=route&search_way=time&sum_target=7&faretype=2&jr=on&privately=on&dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E7%A8%9A%E5%86%85&via_node01=&via_node02=&via_node03=&year=2026&month=10&day=24&hour=2&minute=00&search_type=departure&sort=time&max_route=5&sprexprs=on&utrexprs=on&exprs=on&slputr=on&slpexprs=on&sprnozomi=on&transfer=normal",
+      "sourceTitle": "札幌→稚内 乗換案内｜JR北海道",
+      "sourceQuote": "所要時間: 5時間25分 乗換: 1回 … 合計: 11,420円 (運賃: 8,250円 料金: 3,170円) 出発 12:00 札幌 … 特急ライラック17号 … 13:25 13:35 旭川",
+      "verdict": "verified",
+      "notes": "直達宗谷同為 11,420 円（同一查詢第 1 條）。旭川 13:35 起為サロベツ 1 號（宗谷本線下行時刻表 61D）。"
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "站前巴士總站（稚内駅前バスターミナル）在和JR稚內站相連的キタカラ1樓，觀光巴士與市內線都從這裡出發。",
+      "sourceUrl": "http://www.soyabus.co.jp/highway/wakkanai-hamanasu",
+      "sourceTitle": "わっかない号（稚内～札幌）｜宗谷バス",
+      "sourceQuote": "駅前バスターミナルが「キタカラ（駅前再開発ビル）1階」に移転しました。",
+      "verdict": "verified",
+      "notes": "日文名與觀光巴士出發地：全コース一覧「稚内駅前バスターミナル発」；市內線：ノシャップ岬へ行くには「稚内駅前ターミナルの「2番のりば」より」。「和JR稚內站相連」：宗谷巴士只寫「駅前再開発ビル」，沒有明寫相連；キタカラ是 JR 稚內站所在的站前再開發大樓，屬常識層級，判 verified 但附註。"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "當天早上可以到Heartland Ferry官網的運航狀況頁看結果，回稚內那天和離開北海道的班機或火車之間，最好留一天彈性。",
+      "sourceUrl": "https://heartlandferry.jp/status/",
+      "sourceTitle": "運航状況｜欠航や臨時便などの最新情報 | ハートランドフェリー",
+      "sourceQuote": "本日10月23日の運航は、午前05時30分頃決定いたします。",
+      "verdict": "verified",
+      "notes": "「留一天彈性」是依停航可能性（FAQ「台風や低気圧等による悪天候…欠航となる可能性」）的編輯建議。"
+    }
+  ],
+  "summary": {
+    "verified": 78,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}

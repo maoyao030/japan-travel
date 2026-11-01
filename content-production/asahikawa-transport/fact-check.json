@@ -1,232 +1,232 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-transport",
-  "articleSha256": "4661fe5a981f452cd1c3194ed9f6fec5b7f7dc06436b0af032b1699a506f58d3",
-  "checker": "fact-check-agent（事實查核子代理，唯讀，非作者、非潤稿者；第 2 輪複查：逐句比對驗收後第 1 輪修改的全文，改過與新增的句子重新開來源）",
-  "checkedAt": "2026-10-26",
+  "articleSha256": "4420c7d0714a32a7994554816673a90d39e35113808c304068e557bd3b3f8101",
+  "checker": "fact-check-agent（事實查核子代理，唯讀，非作者、非潤稿者、非修改者；重寫稿第 1 輪：逐句比對 reader-preview.md 全文，來源以 curl 實際下載，PDF 以 PyMuPDF 轉文字並看頁面畫面確認）",
+  "checkedAt": "2026-11-01",
   "claims": [
     {
       "claimId": "C1",
-      "articleExcerpt": "旭川車站是前往旭山動物園、旭岳、東川、層雲峽與美瑛、富良野的轉車點，往這些地方的公車都從站前的巴士站バスタッチ發車。",
+      "articleExcerpt": "旭川車站是前往旭山動物園、旭岳、東川、層雲峽與美瑛、富良野的轉車點，往這些地方的公車都從旭川站前巴士總站Bus Touch（旭川駅前バスタッチ）發車。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バスのりば案内（2026年5月10日改定）",
-      "sourceQuote": "５ 東川・東神楽方面／６ 旭山動物園行／９ 旭川空港・旭岳・富良野行（駅前バスタッチ）",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "駅前バスタッチ／５ 東川・東神楽方面／６ 旭山動物園行／９ 旭川空港・旭岳・富良野行",
       "verdict": "verified",
-      "notes": "層雲峽的 8 號同在バスタッチ內，見 C40（道北巴士時刻表「のりば⑧（駅前バスタッチ内）」）。"
+      "notes": "層雲峽在 8 號：道北巴士頁「旭川駅前バス乗り場案内 のりば⑧から乗車」"
     },
     {
       "claimId": "C2",
       "articleExcerpt": "從旭川機場到旭川車站，最順的是旭川電氣軌道（旭川電気軌道）配合班機開的機場巴士，約39分鐘，大人750日圓。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
-      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
-      "sourceQuote": "旭川空港⇔旭川市内方面への接続バスは航空機の発着日に合わせて運行致します。／(Ａ)ADO 81 … 9:05 … 旭川駅(9) 9:44／料金 750円",
+      "sourceTitle": "旭川空港連絡バス｜旭川電気軌道",
+      "sourceQuote": "※旭川空港⇔旭川市内方面への接続バスは航空機の発着日に合わせて運行致します。／空港発 9:05 … 旭川駅(9) 9:44／750円",
       "verdict": "verified",
-      "notes": "2026/10/25～11/30 表每班機場發到旭川站都是 39 分（9:05→9:44 等）。750 日圓到 11/30，12/1 起見 C3。"
+      "notes": ""
     },
     {
       "claimId": "C3",
       "articleExcerpt": "2026年12月1日起，這段車資調成1,000日圓。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2022/05/price-revision_2026.12.pdf",
-      "sourceTitle": "乗合バス令和8年12月1日運賃改定の未実施区間、実施運賃値上げについて（旭川電気軌道、令和8年10月22日）",
-      "sourceQuote": "【７７番】 旭川空港線／実施予定日： 2026 年 12 月 1 日／旭川駅前 ～ 旭川空港 750 円 → 1000 円",
+      "sourceTitle": "乗合バス令和8年12月1日運賃改定",
+      "sourceQuote": "実施予定日 2026年12月1日／旭川駅前～旭川空港 750円 → 1000円",
       "verdict": "verified",
-      "notes": ""
+      "notes": "12/1～1/8 時刻表 PDF 也標 ¥1,000"
     },
     {
       "claimId": "C4",
       "articleExcerpt": "從札幌過來，JR特急最快1小時25分，普通車指定席5,440日圓。",
       "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260528_KO_arujan.pdf",
-      "sourceTitle": "札幌－旭川間の特急料金に関するお知らせ（JR北海道 2026年5月28日）",
-      "sourceQuote": "最速１時間 25 分の快適な移動を体験ください。／通常の特急券＋乗車券 … 札幌-旭川間価格 … 5,440 円",
+      "sourceTitle": "「あるじゃん、特急。」～６月からは特急「カムイ」「ライラック」をアピールします～",
+      "sourceQuote": "最速１時間25 分の快適な移動を体験ください。／通常の特急券＋乗車券 札幌-旭川間価格 5,440 円",
       "verdict": "verified",
-      "notes": "JR 列車時刻（vtime.php?s=110）2007M 札幌 9:00→旭川 10:25 等也是 1 小時 25 分。"
+      "notes": ""
     },
     {
       "claimId": "C5",
       "articleExcerpt": "高速巴士單程2,500日圓，不到特急的一半，夏天的車程大約2小時5分。",
       "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8",
       "sourceTitle": "高速あさひかわ号｜北海道中央バス",
-      "sourceQuote": "札幌まで ／ 2,500円 ／ 4,700円／所要時間 夏：約2時間5分 冬：約2時間25分",
+      "sourceQuote": "札幌まで 2,500円 4,700円／所要時間 夏：約2時間5分 冬：約2時間25分",
       "verdict": "verified",
-      "notes": "5,440 ÷ 2 = 2,720 > 2,500，「不到一半」成立。"
+      "notes": "5,440 的一半是 2,720"
     },
     {
       "claimId": "C6",
-      "articleExcerpt": "從新千歲機場出發，可以搭JR到札幌轉特急，或搭預約制的直達巴士たいせつライナー。",
+      "articleExcerpt": "從新千歲機場出發，可以搭JR到札幌轉特急，或搭預約制的直達巴士Taisetsu Liner（たいせつライナー）。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "直行バス 旭川 ⇔ 新千歳空港・南千歳駅／乗車券のご予約は乗車2カ月前より承ります",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "乗車券のご予約は 乗車2カ月前より 承ります／新千歳空港国内線21番のりば 14：25 16：25 ▲19：15",
       "verdict": "verified",
-      "notes": "「預約制」另見乘車處案內 PDF「たいせつライナー（予約制・北都交通共同運行）」；不預約也能買票上車見 C17。"
+      "notes": "站前乘車處案內：たいせつライナー（予約制・北都交通共同運行）"
     },
     {
       "claimId": "C7",
-      "articleExcerpt": "札幌到旭川的車很多，特急白天大致30分到1小時一班，高速巴士約30分一班，不太需要遷就車次排行程。",
-      "sourceUrl": "https://jrhokkaidonorikae.com/linelist/linelist.php",
-      "sourceTitle": "列車名/路線名から時刻検索（［特急］ライラック・カムイ・オホーツク・宗谷・サロベツ・［特快］大雪・［快速］きたみ 下り）",
-      "sourceQuote": "札幌 900 札幌 1000 札幌 1100 … 札幌 1400 札幌 1430 札幌 1500 札幌 1530 札幌 1600",
+      "articleExcerpt": "札幌到旭川，趕時間就搭JR特急，最快1小時25分。想省錢就搭高速巴士，車資比特急便宜2,940日圓。代價是夏天多坐40分鐘左右，12月到3月則多坐1小時左右。",
+      "sourceUrl": "https://www.jrhokkaidobus.com/timetable/highway02/",
+      "sourceTitle": "高速あさひかわ号｜ジェイ・アール北海道バス",
+      "sourceQuote": "（札幌－旭川間）片道2,500円／4月～11月 所要時間 2時間05分／12月～3月 所要時間 2時間25分",
       "verdict": "verified",
-      "notes": "以瀏覽器讀 vtime.php?s=110（2026-10-26）。高速巴士札幌站前 7:00～21:30 每 15～40 分一班（中央巴士 ope=det&n=8&o=1）。"
+      "notes": "5,440−2,500＝2,940；2:05−1:25＝40 分；2:25−1:25＝60 分"
     },
     {
       "claimId": "C8",
-      "articleExcerpt": "高速巴士比特急便宜2,940日圓，代價是夏天多坐40分鐘左右，12月到3月多坐1小時左右。",
-      "sourceUrl": "https://www.jrhokkaidobus.com/timetable/highway02/",
-      "sourceTitle": "高速乗合バス | 高速あさひかわ号 | JHB：ジェイ・アール北海道バス",
-      "sourceQuote": "（札幌　－　旭川間）片道2,500円／4月～11月 所要時間（見込） 2時間05分／12月～3月 所要時間（見込） 2時間25分",
+      "articleExcerpt": "兩種車的班次都多，特急白天大致30分到1小時一班，高速巴士約30分一班，排行程不太需要遷就車次。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=110",
+      "sourceTitle": "時刻表 ［特急］ライラック★・カムイ★・オホーツク・宗谷・サロベツ★・［特快］大雪・［快速］きたみ 下り｜JR北海道",
+      "sourceQuote": "札幌 900 札幌 1000 札幌 1100 札幌 1200 札幌 1300 札幌 1400 札幌 1430 札幌 1500 札幌 1530 札幌 1600",
       "verdict": "verified",
-      "notes": "重算：5,440 − 2,500 = 2,940；2:05 − 1:25 = 40 分；2:25 − 1:25 = 1 小時。"
+      "notes": "高速巴士：中央巴士札幌發 7:00 7:30 8:00 8:30 …"
     },
     {
       "claimId": "C9",
-      "articleExcerpt": "札幌到旭川的主力是特急カムイ與特急ライラック，カムイ5節車廂、ライラック6節，兩種都是全車指定席。",
-      "sourceUrl": "https://www.jrhokkaido.co.jp/train/tr013_01.html",
-      "sourceTitle": "特急カムイ（789系 1000代）｜列車ガイド｜JR北海道",
-      "sourceQuote": "特急カムイ（789系 1000代）全車指定席／特急カムイは札幌−旭川間を結ぶ5両編成の特急列車です。",
-      "verdict": "verified",
-      "notes": "ライラック頁（tr033_01.html）：「特急ライラック（789系 0代）全車指定席」「札幌−旭川間を結ぶ6両編成の特急列車です。」"
-    },
-    {
-      "claimId": "C10",
-      "articleExcerpt": "從札幌往旭川方向的特急一天約24班，最早6:29、最晚22:00，往網走、稚內途中停靠旭川的特急也算在裡面。",
-      "sourceUrl": "https://jrhokkaidonorikae.com/linelist/linelist.php",
-      "sourceTitle": "列車名/路線名から時刻検索（［特急］ライラック・カムイ・オホーツク・宗谷・サロベツ・［特快］大雪・［快速］きたみ 下り）",
-      "sourceQuote": "札幌 629 札幌 652 札幌 713 … 札幌 2100 札幌 2200（列車名：ライラック オホーツク ライラック 宗谷 …）",
-      "verdict": "verified",
-      "notes": "以瀏覽器讀 vtime.php?s=110：札幌發 24 班全是特急，6:29～22:00，含オホーツク、宗谷。 第 1 輪判 incorrect，第 2 輪（驗收後第 1 輪修改）已改，重查通過。"
-    },
-    {
-      "claimId": "C11",
-      "articleExcerpt": "JR北海道網站上會看到えきねっと的折扣票，不過えきねっと只給住在日本的人用，住在台灣的旅客買不到。",
-      "sourceUrl": "https://secure.okbiz.jp/eki-net/faq/show/4131",
-      "sourceTitle": "海外在住ですが、「えきねっと」を利用できますか。 | えきねっと Q＆A",
-      "sourceQuote": "いいえ、海外にお住まいの方は「えきねっと」をご利用いただけません。",
-      "verdict": "verified",
-      "notes": "JR 新聞稿（20260528_KO_arujan.pdf）的「特急トクだ値１」「在来線チケットレス特急券（トク割）」是えきねっと商品。"
-    },
-    {
-      "claimId": "C12",
-      "articleExcerpt": "ライラック的車頭有六種沿線彩繪，旭川款畫的是旭山動物園的動物，會搭到哪一款當天才知道。",
-      "sourceUrl": "https://www.jrhokkaido.co.jp/train/tr033_01.html",
-      "sourceTitle": "特急ライラック（789系 0代）｜列車ガイド｜JR北海道",
-      "sourceQuote": "先頭部のラッピングについて … ラッピングは、6編成・全24種類。どの編成に乗れるかは当日のお楽しみ！／旭川　旭山動物園にいる動物　旭川の名所",
-      "verdict": "verified",
-      "notes": "編成ごとのデザイン為宗谷、オホーツク、上川、空知、旭川、札幌六種。"
-    },
-    {
-      "claimId": "C13",
-      "articleExcerpt": "高速あさひかわ號由北海道中央巴士、JR北海道巴士與道北巴士三家共同營運。",
-      "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8",
-      "sourceTitle": "高速あさひかわ号｜北海道中央バス",
-      "sourceQuote": "共同運行会社 北海道中央バス、ジェイ・アール北海道バス、道北バス",
+      "articleExcerpt": "從新千歲機場出發，則要在札幌轉JR特急，或搭直達的Taisetsu Liner。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "直行バス 旭川 ⇔ 新千歳空港・南千歳駅",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C14",
-      "articleExcerpt": "札幌站前7:00到21:30之間30分鐘左右一班，其中有些班次只在週五或週末假日開。",
-      "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8&o=1",
-      "sourceTitle": "高速あさひかわ号 札幌発＞旭川行き｜北海道中央バス",
-      "sourceQuote": "☆便：土曜日・日曜日・祝日運行 ★便：金曜日・土曜日・日曜日・祝日運行 ◆便：金曜日のみ運行／札幌駅前 7:00 … 札幌駅前 21:30",
+      "claimId": "C10",
+      "articleExcerpt": "札幌到旭川的主力是特急Kamui號（特急カムイ）與特急Lilac號（特急ライラック），最快1小時25分到，普通車指定席原價5,440日圓。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260528_KO_arujan.pdf",
+      "sourceTitle": "「あるじゃん、特急。」～６月からは特急「カムイ」「ライラック」をアピールします～",
+      "sourceQuote": "特急「カムイ」「ライラック」の基本情報…最速１時間25 分／札幌-旭川間価格 … 5,440 円",
       "verdict": "verified",
-      "notes": "2026年7月1日更新（夏ダイヤ）。札幌站前發 36 班，其中 5 班標☆★◆。"
+      "notes": ""
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "兩種都是全車指定席，所以上車前要先買好指定席。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/train/tr013_01.html",
+      "sourceTitle": "特急カムイ｜JR北海道",
+      "sourceQuote": "特急カムイ（789系 1000代） 全車指定席",
+      "verdict": "verified",
+      "notes": "ライラック頁 tr033_01：特急ライラック（789系 0代） 全車指定席"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "從札幌往旭川方向的特急一天約24班，往網走、稚內途中停靠旭川的特急也算在裡面，最早一班6:29，最晚一班22:00。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=110",
+      "sourceTitle": "時刻表 ［特急］ライラック★・カムイ★・オホーツク・宗谷・サロベツ★・［特快］大雪・［快速］きたみ 下り｜JR北海道",
+      "sourceQuote": "札幌 629 札幌 652 札幌 713 … 札幌 2100 札幌 2200 札幌 2205（列車名 ライラック オホーツク ライラック 宗谷 …）",
+      "verdict": "verified",
+      "notes": "札幌發 25 列，22:05 為臨時 9095M（運轉日標記），每天開 24 列、6:29～22:00；依「JR時刻表」令和8年11月号"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "JR北海道網站上會看到Eki-net（えきねっと）的折扣票，不過那只給住在日本的人用，住在台灣的旅客買不到。",
+      "sourceUrl": "https://secure.okbiz.jp/eki-net/faq/show/4131",
+      "sourceTitle": "えきねっとよくある質問",
+      "sourceQuote": "いいえ、海外にお住まいの方は「えきねっと」をご利用いただけません。",
+      "verdict": "verified",
+      "notes": "JR 新聞稿：在来線チケットレス特急券（トク割）はインターネット予約「えきねっと」にて発売"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "高速旭川號（高速あさひかわ號）從札幌到旭川，4月到11月約2小時5分，12月到3月約2小時25分。",
+      "sourceUrl": "https://www.jrhokkaidobus.com/timetable/highway02/",
+      "sourceTitle": "高速あさひかわ号｜ジェイ・アール北海道バス",
+      "sourceQuote": "4月～11月 所要時間 2時間05分／12月～3月 所要時間 2時間25分",
+      "verdict": "verified",
+      "notes": ""
     },
     {
       "claimId": "C15",
-      "articleExcerpt": "大人單程2,500日圓，來回4,700日圓，確定會回札幌的話，買來回比兩次單程省300日圓。",
+      "articleExcerpt": "大人單程2,500日圓、來回4,700日圓。確定會回札幌的話，買來回比兩次單程省300日圓。",
       "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8",
       "sourceTitle": "高速あさひかわ号｜北海道中央バス",
-      "sourceQuote": "札幌まで ／ 大人片道 2,500円 ／ 大人往復 4,700円",
+      "sourceQuote": "大人片道 2,500円 大人往復 4,700円",
       "verdict": "verified",
-      "notes": "重算：2,500 × 2 − 4,700 = 300。"
+      "notes": "2,500×2−4,700＝300"
     },
     {
       "claimId": "C16",
-      "articleExcerpt": "車程4月到11月約2小時5分，12月到3月約2小時25分。札幌這頭可以在札幌站前2號乘車處或中央巴士札幌總站3號乘車處上車。",
-      "sourceUrl": "https://www.jrhokkaidobus.com/timetable/highway02/",
-      "sourceTitle": "高速乗合バス | 高速あさひかわ号 | JHB：ジェイ・アール北海道バス",
-      "sourceQuote": "4月～11月 2時間05分／12月～3月 2時間25分／札幌駅前 2番のりば／中央バス札幌ターミナル 3番のりば／旭川駅前 7番のりば",
+      "articleExcerpt": "札幌站前7:00到21:30之間30分鐘左右一班，其中有些班次只在週五或週末假日開。",
+      "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8&o=1",
+      "sourceTitle": "高速あさひかわ号 札幌発時刻表｜北海道中央バス",
+      "sourceQuote": "☆便：土曜日・日曜日・祝日運行 ★便：金曜日・土曜日・日曜日・祝日運行 ◆便：金曜日のみ運行／乗 札幌駅前 7:00 7:30 8:00 8:30 … 21:30",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "不用預約，客滿時可能要坐輔助座，或等下一班。",
-      "sourceUrl": "https://www.chuo-bus.co.jp/support/faq/",
-      "sourceTitle": "よくある問い合わせと回答｜北海道中央バス",
-      "sourceQuote": "その他の都市間高速バス（旭川、富良野、滝川、…）につきましては予約不要です。／（路線頁）満席の際は、補助席でのご利用をお願いする場合や、次の便へご案内することがございます。",
+      "articleExcerpt": "札幌這頭可以在札幌站前2號乘車處或中央巴士札幌總站3號乘車處上車。",
+      "sourceUrl": "https://www.jrhokkaidobus.com/timetable/highway02/",
+      "sourceTitle": "高速あさひかわ号｜ジェイ・アール北海道バス",
+      "sourceQuote": "札幌駅前 2番のりば／中央バス札幌ターミナル 3番のりば／旭川駅前 7番のりば",
       "verdict": "verified",
-      "notes": "補助席與次の便的原文在 https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8 。"
+      "notes": ""
     },
     {
       "claimId": "C18",
-      "articleExcerpt": "車資下車時付，Kitaca、Suica這類交通IC卡與信用卡感應都能用，車上有廁所和免費Wi-Fi。",
+      "articleExcerpt": "不用預約，客滿時可能要坐輔助座，或等下一班。",
+      "sourceUrl": "https://www.chuo-bus.co.jp/support/faq/",
+      "sourceTitle": "よくあるご質問｜北海道中央バス",
+      "sourceQuote": "その他の都市間高速バス（旭川、富良野、…）につきましては予約不要です。",
+      "verdict": "verified",
+      "notes": "路線頁：満席の際は、補助席でのご利用をお願いする場合や、次の便へご案内することがございます。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "車資下車時付，Kitaca、Suica這類交通IC卡與信用卡感應都能用。車上有廁所和免費Wi-Fi。",
       "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8",
       "sourceTitle": "高速あさひかわ号｜北海道中央バス",
       "sourceQuote": "運賃は降車時にお支払いください。クレジットカードのタッチ決済がご利用いただけます。またICカードもご利用いただけます。／車内設備 トイレ、4列リクライニングシート、無料Wi-Fiサービス",
       "verdict": "verified",
-      "notes": "IC 卡種類見 JR 北海道巴士頁「SAPICAおよび交通系ICカード（KitacaやSuicaなど）・クレジットカードタッチ決済」。中央巴士頁另寫「道北バス便では、ＳＡＰＩＣＡはご利用いただけません」，正文沒寫 SAPICA，不衝突。"
-    },
-    {
-      "claimId": "C19",
-      "articleExcerpt": "JR從新千歲機場站到札幌站約40分鐘，再轉特急最快1小時25分",
-      "sourceUrl": "https://www.jrhokkaido.co.jp/airport/",
-      "sourceTitle": "札幌↔新千歳空港間 快速「エアポート」最速37分／特別快速「エアポート」最速33分｜JR北海道",
-      "sourceQuote": "日中時間帯の札幌〜新千歳空港間の所要時間は、特別快速最速36分・快速最速37分・区間快速最速43分。",
-      "verdict": "verified",
-      "notes": "經營者寫 33～43 分，「約40分鐘」可接受；旭山動物園官網也寫「新千歳空港駅～札幌駅 約40分」。1 小時 25 分見 C4。"
+      "notes": "JR北海道巴士頁：SAPICAおよび交通系ICカード（KitacaやSuicaなど）・クレジットカードタッチ決済"
     },
     {
       "claimId": "C20",
-      "articleExcerpt": "加起來約2小時起，還沒算轉車等車的時間。",
+      "articleExcerpt": "JR從新千歲機場站到札幌站約40分鐘，轉特急最快1小時25分。加起來約2小時起，還沒算轉車等車的時間。",
       "sourceUrl": "https://www.jrhokkaido.co.jp/airport/",
-      "sourceTitle": "札幌↔新千歳空港間 快速「エアポート」最速37分／特別快速「エアポート」最速33分｜JR北海道",
-      "sourceQuote": "札幌↔新千歳空港間 快速「エアポート」最速37分／特別快速「エアポート」最速33分（特急は「最速１時間 25 分」：20260528_KO_arujan.pdf）",
+      "sourceTitle": "新千歳空港アクセス｜JR北海道",
+      "sourceQuote": "日中時間帯の札幌〜新千歳空港間の所要時間は、特別快速 最速36分・快速 最速37分・区間快速 最速43分",
       "verdict": "verified",
-      "notes": "重算：40 分 + 1 小時 25 分 = 2 小時 5 分；JR 最速 33～37 分 + 1 小時 25 分 = 1 小時 58 分～2 小時 2 分。「約2小時起」成立。 第 1 輪判 incorrect，第 2 輪（驗收後第 1 輪修改）已改，重查通過。"
+      "notes": "36～43 分＋1:25 ≒ 2 小時起"
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "直達的巴士是たいせつライナー，由旭川電氣軌道與北都交通合營，搭車前2個月就能預約。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "②運行会社 旭川電気軌道（株）/北都交通（株）／乗車券のご予約は乗車2カ月前より承ります",
+      "articleExcerpt": "札幌往旭川的特急班次多，到了札幌通常不用等太久。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=110",
+      "sourceTitle": "時刻表 ［特急］ライラック★・カムイ★・オホーツク・宗谷・サロベツ★・［特快］大雪・［快速］きたみ 下り｜JR北海道",
+      "sourceQuote": "札幌 1400 札幌 1430 札幌 1500 札幌 1530 札幌 1600 札幌 1630 札幌 1700 札幌 1730 札幌 1800 札幌 1830",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C22",
-      "articleExcerpt": "從機場出發一天只有2班，12月1日起增為3班，國內線與國際線航廈各有乘車處。",
+      "articleExcerpt": "直達的巴士是Taisetsu Liner，搭車前2個月就能預約。從機場出發一天只有2班，12月1日起增為3班。國內線與國際線航廈各有乘車處。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "2026年12月1日より3往復運行！／新千歳空港国内線21番のりば ／ 14：25 ／ 16：25 ／ ▲19：15／新千歳空港国際線85番のりば ／ 14：27 ／ 16：27 ／ ▲19：17",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "乗車券のご予約は 乗車2カ月前より 承ります／2026年12月1日より3往復運行！／新千歳空港国内線21番のりば 14：25 16：25 ▲19：15／新千歳空港国際線85番のりば 14：27 16：27 ▲19：17",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C23",
-      "articleExcerpt": "| 國內線21號乘車處 | 國際線85號乘車處 | 到旭川站 |（14:25／14:27／17:05、16:25／16:27／19:05、19:15／19:17／21:55（12月1日起））",
+      "articleExcerpt": "| 14:25 | 14:27 | 17:05 |／| 16:25 | 16:27 | 19:05 |／| 19:15（12月1日起） | 19:17（12月1日起） | 21:55 |",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "旭川駅（バスタッチ） ／ 17：05 ／ 19：05 ／ ▲21：55／▲の便は12/1より運行",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "国内線21番のりば 14：25 16：25 ▲19：15／国際線85番のりば 14：27 16：27 ▲19：17／旭川駅（バスタッチ） 17：05 19：05 ▲21：55",
       "verdict": "verified",
-      "notes": "表格三列逐格核對一致。"
+      "notes": "▲の便は12/1より運行"
     },
     {
       "claimId": "C24",
-      "articleExcerpt": "途中會在岩見沢SA停下來休息。",
+      "articleExcerpt": "途中會在岩見澤SA（岩見沢SA）停下來休息。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "途中のサービスエリアにて10分間の開放休憩あり／所定の休憩場所は道央自動車道岩見沢SAとなっておりますが、交通障害や規制等により…休憩場所の変更、または開放休憩を省略させていただく場合がございます",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "途中のサービスエリアにて10分間の開放休憩あり ※所定の休憩場所は道央自動車道岩見沢SAとなっておりますが、交通障害や規制等により…休憩場所の変更、または開放休憩を省略させていただく場合がございます",
       "verdict": "verified",
-      "notes": "官方有「可能變更或省略」的但書，正文沒寫，屬一般情況說法，可接受。"
+      "notes": ""
     },
     {
       "claimId": "C25",
       "articleExcerpt": "大人單程4,500日圓，來回8,000日圓。在乘車日2個月前到14天前上網預約並付款，單程只要4,200日圓，只是訂了就不能改。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "大人運賃　［片道］4,500円　［往復］8,000円／ネット予約限定早割運賃（乗車日の2カ月前～14日前までの予約決済に適用・予約後の変更不可） 大人運賃　［片道］4,200円",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "運賃（2025年12月1日改定） 通常運賃 大人運賃［片道］4,500円［往復］8,000円／ネット予約限定早割運賃（乗車日の2カ月前～14日前までの予約決済に適用・予約後の変更不可） 大人運賃［片道］4,200円",
       "verdict": "verified",
       "notes": ""
     },
@@ -234,311 +234,365 @@
       "claimId": "C26",
       "articleExcerpt": "外國旅客另有專用的預約網站JAPAN BUS LINES。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "国内の方向け予約サイト「バスNAVI北海道」／外国人専用の予約サイト「JAPAN　BUS　LINES」",
-      "verdict": "verified",
-      "notes": "協調者提醒「只在 F160 條件欄」：經營者頁面本身就有這一句，直接支持正文。"
-    },
-    {
-      "claimId": "C27",
-      "articleExcerpt": "沒預約也能上車，但預約的人坐滿時可能上不去。沒預約的乘車券在旭川站前的巴士總合案內所售票機賣，從新千歲出發想搭這班車，先上網預約付款最穩。落地後趕不上最後一班的話，就改搭JR。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "事前予約なしでも利用できる乗車券を旭川電気軌道総合案内所（ツルハビル旭川駅前1F）設置の現金自動券売機にて発売しております。／※事前予約で満席の場合は乗車できない場合がございます",
-      "verdict": "verified",
-      "notes": "新增的「沒預約的乘車券在旭川站前案內所售票機賣」與頁面一致；頁面沒寫新千歲端不預約的買法，正文改成建議先上網預約，不寫成新千歲買不到，可接受。"
-    },
-    {
-      "claimId": "C28",
-      "articleExcerpt": "旭川機場往市區的機場專用巴士配合班機起降開，到旭川市區約30到40分鐘。另外也有道北巴士（道北バス）的路線巴士直達旭川站前，車程35分鐘左右。",
-      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
-      "sourceTitle": "バス｜旭川空港",
-      "sourceQuote": "空港専用バスは飛行機の発着時刻に接続して運行しております。／空港専用バス ／ 旭川市内 ／ 約30～40分／路線バス … 旭川駅前(直行便) ／ 約35分 ／ 時刻表はこちら[道北バス]",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "外国人専用の予約サイト「JAPAN　BUS　LINES」",
       "verdict": "verified",
       "notes": ""
     },
     {
+      "claimId": "C27",
+      "articleExcerpt": "沒預約也能上車，但預約的人坐滿時可能上不去。沒預約的乘車券是在旭川站前巴士總合案內所的售票機賣，所以從新千歲出發想搭這班車，先上網預約付款最穩。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "事前予約なしでも利用できる乗車券を旭川電気軌道総合案内所（ツルハビル旭川駅前1F）設置の現金自動券売機にて発売しております。…※事前予約で満席の場合は乗車できない場合がございます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "落地後趕不上最後一班的話，就改搭JR。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/airport/",
+      "sourceTitle": "新千歳空港アクセス｜JR北海道",
+      "sourceQuote": "日中時間帯の札幌〜新千歳空港間の所要時間は、特別快速 最速36分・快速 最速37分",
+      "verdict": "verified",
+      "notes": "建議句；JR 機場線與札幌—旭川特急皆有班次"
+    },
+    {
       "claimId": "C29",
-      "articleExcerpt": "路線巴士和長途巴士都不配合班機，搭這些車去機場，最好替誤點多留點時間。",
+      "articleExcerpt": "旭川機場往市區的機場專用巴士配合班機起降開，到旭川市區約30到40分鐘。另外也有道北巴士（道北バス）的路線巴士直達旭川站前，車程35分鐘左右。",
       "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
       "sourceTitle": "バス｜旭川空港",
-      "sourceQuote": "路線・都市間バスは飛行機の発着時刻に接続した運行ではございませんので、バスの遅れなどにより飛行機の乗り遅れの無いようご注意ください。",
+      "sourceQuote": "空港専用バスは飛行機の発着時刻に接続して運行しております。／空港専用バス 旭川市内 約30～40分／路線バス … 旭川駅前 (直行便) 約35分 時刻表はこちら[道北バス]",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C30",
-      "articleExcerpt": "目前沒有台灣直飛旭川的定期航班，旭川機場的國際線航班表上也沒有排任何班次。",
-      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/airport/time/inter/",
-      "sourceTitle": "フライトスケジュール（国際線）-フライト｜旭川空港",
-      "sourceQuote": "フライトスケジュール（国際線） 今月のフライトスケジュールを確認することができます。 … 運航予定はございません",
+      "articleExcerpt": "路線巴士和長途巴士都不配合班機，搭這些車去機場的話，最好替巴士誤點多留點時間。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+      "sourceTitle": "バス｜旭川空港",
+      "sourceQuote": "路線・都市間バスは飛行機の発着時刻に接続した運行ではございませんので、バスの遅れなどにより飛行機の乗り遅れの無いようご注意ください。",
       "verdict": "verified",
-      "notes": "要 JavaScript，2026-10-26 用自己開的瀏覽器分頁點「国際線」讀取後關閉。"
+      "notes": ""
     },
     {
       "claimId": "C31",
-      "articleExcerpt": "長榮航空在2026年1月到2月與9月到10月都有飛到旭川的包機，但只在台灣賣，而且是包在旭川周邊的旅遊團裡。",
-      "sourceUrl": "https://www.hokkaido-airports.com/ja/corporate/pressrelease/assets/docs/260810_Release_HAP.pdf",
-      "sourceTitle": "エバー航空による台北－旭川線のチャーター便就航について（北海道エアポート 2026年8月10日）",
-      "sourceQuote": "2026年9月23日(水)から10月29日(木)のあいだ／本チャーター便は2026年1月から2月にかけても運航され／計 10往復 / 18便／本便は、台北発着のお客さまを対象に旭川周辺地域を周遊するツアーとして台湾のみで販売されております",
+      "articleExcerpt": "目前沒有台灣直飛旭川的定期航班，旭川機場的國際線航班表上也沒有排任何班次。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/airport/time/inter/",
+      "sourceTitle": "フライトスケジュール（国際線）｜旭川空港",
+      "sourceQuote": "フライトスケジュール（国際線） 今月のフライトスケジュールを確認することができます。… 運航予定はございません",
       "verdict": "verified",
-      "notes": "9/23～10/29 共 10 往返（「9月到10月」）。"
+      "notes": "頁面原始碼裡 2026/3 タイガーエア台湾時刻在 HTML 註解內，不顯示"
     },
     {
       "claimId": "C32",
-      "articleExcerpt": "自由行可以從新千歲機場搭JR經札幌，或搭たいせつライナー到旭川。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "都市間バス たいせつライナー 旭川⇔新千歳空港",
+      "articleExcerpt": "長榮航空在2026年1月到2月與9月到10月都有飛到旭川的包機，但只在台灣賣，而且是包在旭川周邊的旅遊團裡。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/corporate/pressrelease/assets/docs/260810_Release_HAP.pdf",
+      "sourceTitle": "エバー航空による台北－旭川線のチャーター便就航について",
+      "sourceQuote": "2026年9月23日(水)から10月29日(木)のあいだ、エバー航空による台北(桃園)－旭川間のチャーター便／本チャーター便は2026年1月から2月にかけても運航され／本便は、台北発着のお客さまを対象に旭川周辺地域を周遊するツアーとして台湾のみで販売されております",
       "verdict": "verified",
-      "notes": "JR 走法見 C19。"
+      "notes": ""
     },
     {
       "claimId": "C33",
-      "articleExcerpt": "旭川電氣軌道的機場巴士在有班機起降的日子開，每班車都配合一個航班。機場到旭川站約39分鐘，反方向從旭川站到機場約44分鐘。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
-      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
-      "sourceQuote": "※旭川空港⇔旭川市内方面への接続バスは航空機の発着日に合わせて運行致します。／旭川駅(9) 7:06 … 旭川空港着 7:50 … 接続便名 (Ａ)ADO 82",
+      "articleExcerpt": "自由行可以從新千歲機場搭JR經札幌，或搭Taisetsu Liner到旭川。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "直行バス 旭川 ⇔ 新千歳空港・南千歳駅",
       "verdict": "verified",
-      "notes": "10/25～11/30 兩方向各 9 班，每班有一個接続便名；機場→站 39 分、站→機場 44 分逐班相同。"
+      "notes": ""
     },
     {
       "claimId": "C34",
-      "articleExcerpt": "2026年11月30日前大人750日圓，小孩半價；12月1日起大人1,000日圓，貴了250日圓。",
+      "articleExcerpt": "旭川電氣軌道的機場巴士在有班機起降的日子開，每班車都配合一個航班。機場到旭川站約39分鐘，反方向從旭川站到機場約44分鐘。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
-      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
-      "sourceQuote": "750円 ／ 690円 ／ 料金 Fare ／ 子供半額 Child half price",
+      "sourceTitle": "旭川空港連絡バス｜旭川電気軌道",
+      "sourceQuote": "※旭川空港⇔旭川市内方面への接続バスは航空機の発着日に合わせて運行致します。／(Ａ)ADO 81 … 9:05 … 旭川駅(9) 9:44／旭川駅(9) 7:06 … 旭川空港着 7:50 9:25 (Ａ)ADO 82",
       "verdict": "verified",
-      "notes": "12/1 起 1,000 日圓見 C3（price-revision_2026.12.pdf）；1,000 − 750 = 250。690 日圓是 IC 卡等其他票價，正文沒用。"
+      "notes": ""
     },
     {
       "claimId": "C35",
-      "articleExcerpt": "2026年10月25日到11月30日的時刻如下。12月以後的時刻表會放在旭川電氣軌道的機場巴士頁，出發前再查一次。",
+      "articleExcerpt": "2026年11月30日前大人750日圓，小孩半價。12月1日起大人1,000日圓，貴了250日圓，小孩一樣半價。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
-      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
-      "sourceQuote": "運行期間：2026年10月25日 ～ 2026年11月30日",
+      "sourceTitle": "旭川空港連絡バス｜旭川電気軌道",
+      "sourceQuote": "運行期間：2026年10月25日～2026年11月30日 … 750円 料金 子供半額／運行期間：2026年12月1日～2027年1月8日 … 1000円 料金 Fare 子供半額",
       "verdict": "verified",
-      "notes": "頁面目前只有到 11/30 的表（10/1～10/24、10/25～11/30 兩期都放在同一頁），「12 月以後會放在這頁」是照現有作法的說法，沒有官方預告；當成建議可接受。"
+      "notes": ""
     },
     {
       "claimId": "C36",
-      "articleExcerpt": "| 旭川機場發 | 到旭川站 | 旭川站9號發 | 到旭川機場 |（9:05/9:44/7:06/7:50 … 19:30/20:09/17:36/18:20，共9列）",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
-      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
-      "sourceQuote": "旭川市内行き（2026年10月25日～11月30日）旭川空港発 9:05/9:45/11:00/13:10/14:20/15:00/16:20/19:20/19:30 → 旭川駅(9) 9:44/10:24/11:39/13:49/14:59/15:39/16:59/19:59/20:09；旭川空港行き 旭川駅(9) 7:06/8:01/9:06/11:16/11:56/13:11/14:41/17:21/17:36 → 旭川空港着 7:50/8:45/9:50/12:00/12:40/13:55/15:25/18:05/18:20",
+      "articleExcerpt": "2026年10月25日到2027年1月8日的時刻如下，12月1日起只有機場16:20那班改成16:25發、17:04到，其他班次不變。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/10/airport_timetable.R8.12.1-R9.1.8.pdf",
+      "sourceTitle": "旭川空港線バス時刻表【2026年12月01日～2027年01月08日】",
+      "sourceQuote": "JAL 555（東京）15:55 16:25 … 旭川駅⑨ 17:04（2026年12月01日～2027年01月08日）",
       "verdict": "verified",
-      "notes": "36 格逐格核對一致。"
+      "notes": "10/25～11/30（機場巴士頁）：JAL 555 15:50 16:20 … 旭川駅(9) 16:59；其餘往市區 8 班與往機場 9 班兩期相同"
     },
     {
       "claimId": "C37",
+      "articleExcerpt": "往市區的車遇到班機晚到，也會跟著延後發車，不必擔心落地晚了就搭不上。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/10/airport_timetable.R8.12.1-R9.1.8.pdf",
+      "sourceTitle": "旭川空港線バス時刻表【2026年12月01日～2027年01月08日】",
+      "sourceQuote": "航空機到着が遅れた場合バスも遅れて発車いたします。",
+      "verdict": "verified",
+      "notes": "12/1～1/8 時刻表「旭川方面行き」表頭註記（看 PDF 畫面確認）"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "1月9日以後的班次，出發前到旭川電氣軌道的機場巴士頁確認。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
+      "sourceTitle": "旭川空港連絡バス｜旭川電気軌道",
+      "sourceQuote": "・旭川空港線バス時刻表(2026年10月25日から2026年11月30日) PDF ・旭川空港線バス時刻表(2026年12月1日から2027年1月8日) PDF",
+      "verdict": "verified",
+      "notes": "官網目前只公布到 1/8"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "時刻表：9:05/9:44/7:06/7:50、9:45/10:24/8:01/8:45、11:00/11:39/9:06/9:50、13:10/13:49/11:16/12:00、14:20/14:59/11:56/12:40、15:00/15:39/13:11/13:55、16:20（12月起16:25）/16:59（12月起17:04）/14:41/15:25、19:20/19:59/17:21/18:05、19:30/20:09/17:36/18:20",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
+      "sourceTitle": "旭川空港連絡バス｜旭川電気軌道",
+      "sourceQuote": "旭川市内行き（10/25～11/30）空港発 9:05 9:45 11:00 13:10 14:20 15:00 16:20 19:20 19:30 → 旭川駅(9) 9:44 10:24 11:39 13:49 14:59 15:39 16:59 19:59 20:09／旭川空港行き 旭川駅(9) 7:06 8:01 9:06 11:16 11:56 13:11 14:41 17:21 17:36 → 旭川空港着 7:50 8:45 9:50 12:00 12:40 13:55 15:25 18:05 18:20",
+      "verdict": "verified",
+      "notes": "12/1～1/8 PDF 只差 16:25→17:04"
+    },
+    {
+      "claimId": "C40",
       "articleExcerpt": "往市區的車從機場開出後，中途各站只下不上，往機場的車則是中途只上不下。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
-      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
+      "sourceTitle": "旭川空港連絡バス｜旭川電気軌道",
       "sourceQuote": "※空港まで途中下車はできません。／※途中からの乗車はできません。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C38",
+      "claimId": "C41",
       "articleExcerpt": "Suica這類全國交通IC卡不能用，IC卡只收旭川電氣軌道的Asaca與道北巴士的DoCARD。手上沒有這兩張卡就在售票機買票，機場航廈和旭川站前的巴士總合案內所都有。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
-      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
+      "sourceTitle": "旭川空港連絡バス｜旭川電気軌道",
       "sourceQuote": "旭川電気軌道運行便につきましては当社ICカード「Asaca」、道北バスICカード「DoCARD」が使用できます。※全国交通系ICカードには対応しておりません／旭川空港ターミナル・旭川電気軌道総合案内所に乗車券券売機（領収書発行機能付き）を設置しております。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C39",
-      "articleExcerpt": "行李艙原則上請每人放1件，長度2公尺、重量30公斤以內，體積不超過0.25立方公尺。空間有限，帶兩件以上的大箱子可能會被拒。",
+      "claimId": "C42",
+      "articleExcerpt": "行李艙原則上請每人放1件，長度2公尺、重量30公斤以內，體積不超過0.25立方公尺。因為空間有限，帶兩件以上的大箱子可能會被拒。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
-      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
-      "sourceQuote": "トランクに収納できる荷物は、１人様1個（容積0.25㎥、長さ2ｍ以内、重さ/30kg以内）でのご協力をお願い致します。トランクスペースには限りがある為、複数お持ちの場合はお断りさせて頂く場合がございます。",
+      "sourceTitle": "旭川空港連絡バス｜旭川電気軌道",
+      "sourceQuote": "トランクに収納できる荷物は、１人様 1 個（容積 0.25 ㎥、長さ 2 ｍ以内、重さ /30kg 以内）でのご協力をお願い致します。トランクスペースには限りがある為、複数お持ちの場合はお断りさせて頂く場合がございます。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C40",
+      "claimId": "C43",
       "articleExcerpt": "搭計程車從機場到旭川站大約6,000日圓，11月25日到3月31日車資再加2成，約7,200日圓。機場建議搭計程車先預約。",
       "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/taxi/",
       "sourceTitle": "タクシー｜旭川空港",
-      "sourceQuote": "旭川駅 ／ 6,000円／冬季（11月25日～3月31日）は料金2割増／事前予約をおすすめいたします。",
+      "sourceQuote": "概算料金 旭川駅 6,000円／冬季（11月25日～3月31日）は料金2割増／事前予約をおすすめいたします。",
       "verdict": "verified",
-      "notes": "重算 6,000 × 1.2 = 7,200。"
+      "notes": "6,000×1.2＝7,200"
     },
     {
-      "claimId": "C41",
-      "articleExcerpt": "巴士站在航廈外，從出入口4出去左手邊就是。往旭川站方向的車在1號乘車處，往旭山動物園、美瑛、富良野、東川、旭岳與帶廣的車都在2號。",
+      "claimId": "C44",
+      "articleExcerpt": "2026年10月起也能用GO、DiDi、Uber這類叫車App，在「配車アプリのりば」上車。",
+      "sourceUrl": "https://www.hokkaido-airports.com/ja/corporate/pressrelease/assets/docs/261006_Release_HAP.pdf",
+      "sourceTitle": "旭川空港のタクシー配車アプリサービスを拡充!",
+      "sourceQuote": "これまで旭川空港では、タクシー配車アプリ”GO”を利用した配車サービスを提供してまいりましたが、新たに”DiDi”・”Uber”の配車アプリで手配したタクシーにもご乗車いただけます。／実施日時: 2026年10月1日(木) 運用開始／「GOのりば」を「配車アプリのりば」に変更",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "巴士站在航廈外，從出入口4出去左手邊就是。往旭川站方向的車在1號乘車處，往動物園、美瑛、富良野、東川、旭岳與帶廣的車都在2號。",
       "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
       "sourceTitle": "バス｜旭川空港",
       "sourceQuote": "出入口4を出て左側にバスのりばがございます。旭川駅方面はバスのりば①、その他はバスのりば②でございます。",
       "verdict": "verified",
-      "notes": "「その他」在同頁表格是旭山動物園、美瑛・富良野、東川・旭岳、帯広。"
+      "notes": ""
     },
     {
-      "claimId": "C42",
-      "articleExcerpt": "售票機在1樓國內線入境大廳的出入口3附近，可以印收據，也有能刷信用卡的無現金售票機。",
+      "claimId": "C46",
+      "articleExcerpt": "售票機在1樓國內線入境大廳的出入口3附近，其中也有能刷信用卡的無現金售票機。",
       "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
       "sourceTitle": "バス｜旭川空港",
       "sourceQuote": "1階国内線到着ロビー(出入口3付近)にバス券売機がございます。",
       "verdict": "verified",
-      "notes": "收據與無現金售票機見旭川電氣軌道機場巴士頁「乗車券券売機（領収書発行機能付き）…クレジット決済対応のキャッシュレス券売機もご利用いただけます」。"
+      "notes": "旭川電氣軌道機場巴士頁：クレジット決済対応のキャッシュレス券売機もご利用いただけます"
     },
     {
-      "claimId": "C43",
-      "articleExcerpt": "ふらのバス往美瑛、富良野約60分鐘，旭川電氣軌道往東川、旭岳約50分鐘，往帶廣另有預約制巴士，大約4小時。",
+      "claimId": "C47",
+      "articleExcerpt": "要去美瑛、旭岳或動物園，不必先進旭川市區，在2號乘車處直接上車就行。富良野巴士往美瑛、富良野約60分鐘，旭川電氣軌道往東川、旭岳約50分鐘。往帶廣另有預約制巴士，大約4小時。",
       "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
       "sourceTitle": "バス｜旭川空港",
-      "sourceQuote": "美瑛・富良野 ／ 約60分 ／ 時刻表はこちら[ふらのバス] ／ 東川・旭岳 ／ 約50分 ／ 時刻表はこちら[旭川電気軌道] ／ 都市間バス ／ 【予約制】帯広 (狩勝峠経由) ／ 約4時間",
+      "sourceQuote": "美瑛・富良野 約60分 時刻表はこちら[ふらのバス]／東川・旭岳 約50分 時刻表はこちら[旭川電気軌道]／都市間バス 【予約制】帯広 (狩勝峠経由) 約4時間",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C44",
+      "claimId": "C48",
       "articleExcerpt": "這幾條都不配合班機，落地後得對照時刻表等車。",
       "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
       "sourceTitle": "バス｜旭川空港",
-      "sourceQuote": "路線・都市間バスは飛行機の発着時刻に接続した運行ではございませんので、バスの遅れなどにより飛行機の乗り遅れの無いようご注意ください。",
+      "sourceQuote": "路線・都市間バスは飛行機の発着時刻に接続した運行ではございませんので",
       "verdict": "verified",
-      "notes": "美瑛富良野、東川旭岳是路線巴士，帶廣是都市間巴士，都不配合班機。 第 1 輪判 incorrect，第 2 輪（驗收後第 1 輪修改）已改，重查通過。"
+      "notes": "機場巴士頁：「いで湯号」「ラベンダー号」は定期路線バスのため航空機との接続は行っておりません"
     },
     {
-      "claimId": "C45",
-      "articleExcerpt": "往旭山動物園的78號直達車不用預約，一天只有一個來回。機場9:55發、10:30到動物園，回程動物園14:55發、15:30到機場，車程約35分鐘。",
+      "claimId": "C49",
+      "articleExcerpt": "往動物園的78號直達車不用預約，一天只有一個來回。機場9:55發、10:30到動物園，回程動物園14:55發、15:30到機場，車程約35分鐘。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
-      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社（78番線 旭山動物園～旭川空港線時刻表）",
-      "sourceQuote": "旭川空港～旭山動物園を約35分で結ぶ直行バスです（予約不要）／09:55 ／ 10:30 ／ 14:55 ／ 15:30",
+      "sourceTitle": "旭山動物園・旭川空港線時刻表｜旭川電気軌道",
+      "sourceQuote": "旭川空港～旭山動物園を約35分で結ぶ直行バスです（予約不要）／09:55 10:30 14:55 15:30",
       "verdict": "verified",
-      "notes": "冬期 PDF 同時刻、「非予約制」。"
+      "notes": ""
     },
     {
-      "claimId": "C46",
-      "articleExcerpt": "夏期開園的4月29日到11月3日只在週末與假日行駛，7月25日到8月16日則是每天開，大人840日圓。",
+      "claimId": "C50",
+      "articleExcerpt": "夏期開園的4月29日到11月3日只在週末與假日行駛，7月25日到8月16日則是每天開，車資大人840日圓。",
       "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
       "sourceTitle": "バス｜旭川空港",
       "sourceQuote": "開園期間中（4/29～11/3）土日祝日のみ運行（7/25～8/16は毎日運行）",
       "verdict": "verified",
-      "notes": "840 日圓見旭川電氣軌道 zoo-airport-timetable 頁「片道（運賃後払い）　大人　840円　小人　420円（2026年9月1日改定）」。"
-    },
-    {
-      "claimId": "C47",
-      "articleExcerpt": "冬期開園的11月11日到隔年4月7日，一樣在開園日的週末與假日開，冬季夜間開園「ゆきあかりの動物園」期間則每天開，大人870日圓。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/78_2026.11-11.pdf",
-      "sourceTitle": "78番線直行便 旭川空港⇔旭山動物園（2026年11月11日～2027年4月7日の運行時刻）",
-      "sourceQuote": "2026年11月11日（水）～2027年4月7日（水）の運行時刻／開園日の土日祝日のみ運行 （ゆきあかりの動物園期間は毎日運行）／料金 大人 ８７０円 小人 ４２０円 （非予約制）",
-      "verdict": "verified",
-      "notes": "例外已補。「冬季夜間開園」：旭山動物園官方開園カレンダー（https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event202702.html）列「特別開園（2027年） 2/5～2/7 10:30～20:30 最終入園 20:00」，2026 年同形式 2/7～2/9；名稱照經營者 PDF 寫法「ゆきあかり」（動物園寫「雪あかり」）。正文沒補日期，符合 PDF。 第 1 輪判 incorrect，第 2 輪（驗收後第 1 輪修改）已改，重查通過。"
-    },
-    {
-      "claimId": "C48",
-      "articleExcerpt": "平日落地，改搭機場巴士到旭川站，再轉往動物園的公車。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/zootime_2026w.pdf",
-      "sourceTitle": "旭川駅～旭山動物園 路線バス時刻表（2026年冬期開園期間中）",
-      "sourceQuote": "系統番号 41 … 旭川駅⑥発 … 旭山動物園着",
-      "verdict": "verified",
-      "notes": "建議路線；機場巴士見 C36，站前往動物園每天有 41、47 號。"
-    },
-    {
-      "claimId": "C49",
-      "articleExcerpt": "旭川站前的巴士站叫バスタッチ，各路線照編號分在不同的乘車處。……往旭川機場、旭岳、富良野的公車，和往新千歲機場的たいせつライナー都在9號上車，往札幌的高速あさひかわ號則在7號。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バスのりば案内（2026年5月10日改定）",
-      "sourceQuote": "９ 旭川空港・旭岳・富良野行 たいせつライナー 新千歳空港行",
-      "verdict": "verified",
-      "notes": "7 號見 JR 北海道巴士頁「旭川 ／ 旭川駅前 ／ 7番のりば」；たいせつライナー頁也寫「旭川駅（バスタッチのりば9）」。"
-    },
-    {
-      "claimId": "C50",
-      "articleExcerpt": "找不到乘車處時，可以到JR旭川站東側通道的旭川觀光物產情報中心問，那裡有日、英、中文服務。",
-      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
-      "sourceTitle": "きた北海道観光ポータルサイト » 旭川市",
-      "sourceQuote": "旭川観光物産情報センター 旭川駅東コンコースにある観光案内所で，…日本語・英語・中国語でご案内しているほか，夏季はファットバイク，冬季はスノーシューなどレンタルし",
-      "verdict": "verified",
-      "notes": "網站由あさひかわ觀光誘致宣傳協議會（旭川市）營運。出租那句已刪。"
+      "notes": "旭川電氣軌道頁：片道（運賃後払い） 大人 840円 小人 420円（2026年9月1日改定）"
     },
     {
       "claimId": "C51",
-      "articleExcerpt": "| 旭山動物園 | 6號 | 旭川電氣軌道41、47號，另有班次較少的42號急行 |",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バスのりば案内（2026年5月10日改定）",
-      "sourceQuote": "６ 旭山動物園行／41 豊岡4の3 － 東旭川1の6 旭山動物園／42 急行（期間限定運行） 旭山動物園",
+      "articleExcerpt": "冬期開園的11月11日到隔年4月7日，一樣在開園日的週末與假日開，冬季夜間開園雪光動物園（ゆきあかりの動物園）期間則每天開，車資大人870日圓。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/78_2026.11-11.pdf",
+      "sourceTitle": "78番線直行便 旭川空港⇔旭山動物園（冬期）",
+      "sourceQuote": "2026年11月11日（水）～2027年4月7日（水）の運行時刻／開園日の土日祝日のみ運行（ゆきあかりの動物園期間は毎日運行）／料金大人８７０円 小人４２０円（非予約制）",
       "verdict": "verified",
-      "notes": "班次較少：冬期 PDF 42急行 9:35 每天＋〇10:35、〇11:35（土日祝），夏期表同樣 9:35 每天＋兩班週末假日，遠少於 41、47 號。41、47 號冬期時刻在「旭川駅⑥発」欄（座標確認）。 第 1 輪判 incorrect，第 2 輪（驗收後第 1 輪修改）已改，重查通過。"
+      "notes": ""
     },
     {
       "claimId": "C52",
-      "articleExcerpt": "| 旭岳 | 9號 | 旭川電氣軌道66號いで湯號 |",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
-      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
-      "sourceQuote": "66番　旭川空港・旭岳線「いで湯号」 バス時刻 … 旭川駅(9) JR Asahikawa Sta.(9)",
+      "articleExcerpt": "平日落地的人，就改搭機場巴士到旭川站，再轉往動物園的公車。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2025/10/zootime_2026w.pdf",
+      "sourceTitle": "旭川駅～旭山動物園 路線バス時刻表（2026年冬期）",
+      "sourceQuote": "運行期間2026年11月11日（水）～2027年4月7日（水） 系統番号 41 8：40 9：27 … 47 9：10 9：49",
       "verdict": "verified",
-      "notes": "乘車處案內 PDF 也把 66 いで湯号列在 9 號「旭川空港・旭岳・富良野行」。"
+      "notes": "41、47 號每天開"
     },
     {
       "claimId": "C53",
-      "articleExcerpt": "| 東川 | 5號 | 旭川電氣軌道60、67號 |",
+      "articleExcerpt": "從JR旭川站的北口東側出來，站前廣場的東邊就是旭川站前的巴士站Bus Touch，各路線照編號分在不同的乘車處。往春光、東川和動物園的4、5、6號排在站前廣場這一側。7到10號在對面那一排，靠近巴士總合案內所所在的Tsuruha大樓。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バスのりば案内（2026年5月10日改定）",
-      "sourceQuote": "５ 東川・東神楽方面／旭川駅 東川・東神楽方面 60 東光6の7－共栄バスセンター―ひがしかわ道草館 東川東町４丁目／67 東光6の7－共栄バスセンター―ひがしかわ道草館 東川→東神楽（循環）",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "北口（東側）／駅前広場／駅前バスタッチ／４ 春光・末広方面／５ 東川・東神楽方面／６ 旭山動物園行／７ ８ ９ 10／ツルハビル 旭川電気軌道総合案内所",
       "verdict": "verified",
-      "notes": "協調者要求回原 PDF 確認 67 號：PDF 確實列 67 號（經共榮巴士中心、道草館，行先「東川→東神楽（循環）」）。"
+      "notes": "看 PDF 畫面確認位置"
     },
     {
       "claimId": "C54",
-      "articleExcerpt": "| 層雲峽 | 8號 | 道北巴士層雲峽・上川線 |",
-      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
-      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡｜道北バス公式販売サイト（© 2026 - 道北バス株式会社）",
-      "sourceQuote": "旭川駅前バス乗り場案内 のりば⑧から乗車",
+      "articleExcerpt": "往旭川機場、旭岳、富良野的公車，和往新千歲機場的Taisetsu Liner都在9號上車，往札幌的高速旭川號則在7號。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "９ 旭川空港・旭岳・富良野行 たいせつライナー 新千歳空港行",
       "verdict": "verified",
-      "notes": "道北巴士官網 dohokubus.com 連不上；路線名與乘車處另以 Internet Archive 存檔的 https://www.dohokubus.com/files/kamikawa_souun.pdf（2026.7.1 改正版）確認：標題「層雲峡・上川線」、「旭川駅前のりば ⑧ 旭川・上川から層雲峡・大雪湖方面行」。"
+      "notes": "7 號：JR北海道巴士頁「旭川駅前 7番のりば」"
     },
     {
       "claimId": "C55",
-      "articleExcerpt": "去動物園的車大約30分鐘一班，坐40分鐘左右到，冬天也在6號搭。",
-      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
-      "sourceTitle": "アクセス｜旭山動物園",
-      "sourceQuote": "運行間隔 ／ 約30分 ／ 所要時間 ／ 約40分 ／ 料金 ／ 大人670円 ／ バス会社：旭川電気軌道 ／ 路線：旭山動物園線41・47番線 ／ 乗り場：旭川駅前バスタッチの6番",
+      "articleExcerpt": "旭川站和Tsuruha大樓裡都有巴士動態看板，冬天可以在室內看著看板等車。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "のマークが付いている施設はバス運行情報表示モニターを設置し、バス待ち可能となっております",
       "verdict": "verified",
-      "notes": "經營者冬期 PDF（zootime_2026w.pdf）欄名「旭川駅⑥発」，8:40 發 9:27 到、9:10 發 9:49 到等，班距 15～30 分、車程約 35～47 分，與「約30分一班、40分鐘左右」相符。"
+      "notes": "圖上 JR旭川駅與ツルハビル都有此標記"
     },
     {
       "claimId": "C56",
-      "articleExcerpt": "往旭岳的66號從旭川站出發，經旭川機場與道の駅ひがしかわ道草館開往旭岳，在機場也能直接上車。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バスのりば案内（2026年5月10日改定）",
-      "sourceQuote": "66 共栄BC-旭川空港-ひがしかわ道草館 旭岳 いで湯号",
+      "articleExcerpt": "找不到乘車處時，可以到JR旭川站東側通道的旭川觀光物產情報中心問，那裡有日、英、中文服務。",
+      "sourceUrl": "https://do-hoku.com/category/asahikawa/",
+      "sourceTitle": "旭川市の観光案内所｜北海道道北観光",
+      "sourceQuote": "旭川観光物産情報センター 旭川駅東コンコースにある観光案内所で，旭川市内を中心に道北地域の観光について日本語・英語・中国語でご案内",
       "verdict": "verified",
-      "notes": "機場上車：機場巴士頁 66 號表有「旭川空港」欄（7:35 等）。"
+      "notes": ""
     },
     {
       "claimId": "C57",
-      "articleExcerpt": "60、67號經共榮巴士中心、道の駅ひがしかわ道草館開往東川。",
+      "articleExcerpt": "| 旭山動物園 | 6號 | 旭川電氣軌道41、47號，另有班次較少的42號急行 |",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バスのりば案内（2026年5月10日改定）",
-      "sourceQuote": "60 東光6の7－共栄バスセンター―ひがしかわ道草館 東川東町４丁目／67 東光6の7－共栄バスセンター―ひがしかわ道草館 東川→東神楽（循環）",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "６ 旭山動物園行／41 豊岡4の3 － 東旭川1の6／47 10の22 － 東旭川1の6／42 急行（期間限定運行） 旭山動物園",
       "verdict": "verified",
-      "notes": "67 號是東川→東神樂的循環線，仍經道草館到東川，「開往東川」可接受。"
+      "notes": ""
     },
     {
       "claimId": "C58",
-      "articleExcerpt": "去美瑛、富良野搭ふらのバス的快速ラベンダー號，在9號乘車處上車。車子經旭川機場、美瑛開到JR富良野站前與新富良野王子飯店。",
+      "articleExcerpt": "| 旭岳 | 9號 | 旭川電氣軌道66號Ideyu號 |",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バスのりば案内（2026年5月10日改定）",
-      "sourceQuote": "９ 旭川空港・旭岳・富良野行／ふらのバス 旭川空港 - 美瑛 - JR富良野駅前 （快速ラベンダー号） 新富良野プリンスホテル",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "９ … 66 いで湯号 共栄BC-旭川空港-ひがしかわ道草館 旭岳",
       "verdict": "verified",
-      "notes": "機場巴士頁「ふらのバス　ラベンダー号 … 旭川駅(9)」為第二來源。"
+      "notes": ""
     },
     {
       "claimId": "C59",
-      "articleExcerpt": "旭川站一天發7班，9:55、11:25、12:30、13:55、15:45、16:45、19:20。",
-      "sourceUrl": "https://www.furanobus.jp/rosen/",
-      "sourceTitle": "路線バス｜ふらのバス",
-      "sourceQuote": "時刻表（2026年4月1日改正）旭川発（旭川空港経由）富良野行き … 旭川駅 ／ 9:55 ／ 11:25 ／ 12:30 ／ 13:55 ／ 15:45 ／ 16:45 ／ 19:20",
+      "articleExcerpt": "| 東川 | 5號 | 旭川電氣軌道60、67號 |",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "５ 東川・東神楽方面／60 東光6の7－共栄バスセンター―ひがしかわ道草館 東川東町４丁目／67 … 東川→東神楽（循環）",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C60",
-      "articleExcerpt": "這是路線巴士，直接上車就好，不能訂位，上車抽整理券、下車再付錢。班次不配合班機也不配合JR，從火車轉過來得自己對好時間。",
+      "articleExcerpt": "| 層雲峽 | 8號 | 道北巴士層雲峽上川線 |",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "層雲峡・上川線｜道北バス公式販売サイト",
+      "sourceQuote": "旭川駅前バス乗り場案内 のりば⑧から乗車",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "去動物園的車大約30分鐘一班，坐40分鐘左右到，冬天也在6號搭。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
+      "sourceTitle": "アクセス｜旭山動物園",
+      "sourceQuote": "運行間隔 約30分 所要時間 約40分 … 路線：旭山動物園線41・47番線 乗り場：旭川駅前バスタッチの6番",
+      "verdict": "verified",
+      "notes": "冬期時刻表：旭川駅⑥ 発"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "往旭岳的66號從旭川站出發，經旭川機場與東川休息站道草館開往旭岳，在機場也能直接上車。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "66 いで湯号 共栄BC-旭川空港-ひがしかわ道草館 旭岳",
+      "verdict": "verified",
+      "notes": "12/1～1/8 時刻表：いで湯号（空港経由旭岳行）旭川駅⑨ 7:15 … 旭川空港 8:00 … 旭岳 9:03"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "60、67號經共榮巴士中心、東川休息站道草館開往東川。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "60 東光6の7－共栄バスセンター―ひがしかわ道草館 東川東町４丁目／67 東光6の7－共栄バスセンター―ひがしかわ道草館 東川→東神楽（循環）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "去美瑛、富良野搭富良野巴士的快速Lavender號（快速ラベンダー號），在9號乘車處上車。車子經旭川機場、美瑛開到JR富良野站前與新富良野王子飯店。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceQuote": "９ … ふらのバス 旭川空港 - 美瑛 - JR富良野駅前（快速ラベンダー号） 新富良野プリンスホテル",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "旭川站一天發7班，9:55、11:25、12:30、13:55、15:45、16:45、19:20。",
+      "sourceUrl": "https://www.furanobus.jp/rosen/",
+      "sourceTitle": "路線バス｜ふらのバス",
+      "sourceQuote": "１便 ２便 ３便 ４便 ５便 ６便 ７便 … 旭川駅 9:55 11:25 12:30 13:55 15:45 16:45 19:20",
+      "verdict": "verified",
+      "notes": "12/1～1/8 旭川電氣軌道時刻表的ラベンダー號旭川駅⑨發車時刻相同"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "這是路線巴士，不能訂位，直接上車就好；上車抽整理券，下車再付錢。班次不配合班機也不配合JR，從火車轉過來得自己對好時間。",
       "sourceUrl": "https://www.furanobus.jp/rosen/",
       "sourceTitle": "路線バス｜ふらのバス",
       "sourceQuote": "路線バス【予約不要】です。運賃は後払い方式です。ご乗車の際に整理券をお取りいただき、降車時に運賃をお支払いください。※お座席の予約は承っておりません。※航空便・JRなどとの接続はございません。",
@@ -546,161 +600,134 @@
       "notes": ""
     },
     {
-      "claimId": "C61",
+      "claimId": "C67",
       "articleExcerpt": "旭川電氣軌道的巴士總合案內所在旭川站前Tsuruha大樓1樓，8:00到18:30營業。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/topics/",
-      "sourceTitle": "乗合バス令和8年12月1日運賃改定の未実施区間、実施運賃値上げについて – 旭川電気軌道株式会社（お知らせ 2026年10月22日）",
-      "sourceQuote": "旭川電気軌道バス総合案内所（営業時間　8:00～18:30）／〒070-0030　旭川市宮下通9丁目2番17号 Tsuruha Bldg.旭川駅前１F バス総合案内所",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/%e4%b9%97%e5%90%88%e3%83%90%e3%82%b9%e4%bb%a4%e5%92%8c8%e5%b9%b412%e6%9c%881%e6%97%a5%e9%81%8b%e8%b3%83%e6%94%b9%e5%ae%9a%e3%81%ae%e6%9c%aa%e5%ae%9f%e6%96%bd%e5%8c%ba%e9%96%93%e3%80%81%e5%ae%9f/",
+      "sourceTitle": "乗合バス令和8年12月1日運賃改定の未実施区間…｜旭川電気軌道",
+      "sourceQuote": "旭川電気軌道バス総合案内所（営業時間　8:00～18:30）",
       "verdict": "verified",
-      "notes": "營業時間在 10/22 公告個別頁（從 /topics/ 連結進入），地址在網站頁尾。"
+      "notes": "お知らせ頁：〒070-0030 旭川市宮下通9丁目2番17号 Tsuruha Bldg.旭川駅前１F バス総合案内所"
     },
     {
-      "claimId": "C62",
+      "claimId": "C68",
       "articleExcerpt": "這裡的售票機能先買好公車票與動物園門票，也有可以刷信用卡的售票機。搭來回的話，去程與回程要各買一張票。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/schedule/zoo-airport-timetable/",
-      "sourceTitle": "旭川駅～旭山動物園線時刻表 – 旭川電気軌道株式会社",
+      "sourceTitle": "旭山動物園・旭川空港線時刻表｜旭川電気軌道",
       "sourceQuote": "当社バス総合案内所に乗車券自動販売機を設置しております（往復で乗車券をご利用の場合はきっぷを2枚ご購入ください）券売機ではバス乗車券と旭山動物園入園券を事前に購入することができます クレジット決済対応のキャッシュレス券売機もご利用いただけます",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C63",
-      "articleExcerpt": "沒預約たいせつライナー，也能在這裡的現金售票機買票，機器5:45到21:00都能用。",
+      "claimId": "C69",
+      "articleExcerpt": "沒預約Taisetsu Liner，也能在這裡的現金售票機買票，機器5:45到21:00都能用。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
       "sourceQuote": "事前予約なしでも利用できる乗車券を旭川電気軌道総合案内所（ツルハビル旭川駅前1F）設置の現金自動券売機にて発売しております。現金自動券売機稼働時間：5:45～21:00",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C64",
-      "articleExcerpt": "從札幌經旭川去宗谷本線各站，只要在旭川站不出剪票口轉搭特急，特急費用就以全程合起來算，不必在旭川分段買。",
-      "sourceUrl": "https://jrhokkaidonorikae.com/linelist/linelist.php",
-      "sourceTitle": "列車名/路線名から時刻検索（［特急］ライラック・カムイ・オホーツク・宗谷・サロベツ・［特快］大雪・［快速］きたみ 下り）",
-      "sourceQuote": "●≪ご案内≫札幌―旭川―稚内(宗谷本線)間の停車駅相互を旭川駅で改札を出ないで特急列車どうしを乗り継ぐ場合に限り、通しの料金でご乗車になれます。",
-      "verdict": "verified",
-      "notes": "以瀏覽器讀 vtime.php?s=110。"
-    },
-    {
-      "claimId": "C65",
-      "articleExcerpt": "去上川、北見、網走要搭石北本線，從旭川往上川方向一天約12班。",
-      "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E6%97%AD%E5%B7%9D&linename=%EF%BC%AA%EF%BC%B2%E7%9F%B3%E5%8C%97%E6%9C%AC%E7%B7%9A&directionname=%E4%B8%8A%E5%B7%9D%E3%83%BB%E7%B6%B2%E8%B5%B0&next_node_id=4461&directionname2=",
-      "sourceTitle": "駅発時刻表 旭川駅ＪＲ石北本線上川・網走方面｜JR北海道",
-      "sourceQuote": "7 01｜8 東 00 網特 31｜10 遠 01｜12 網特 38｜13 48｜15 網快 08｜16 31｜17 網特 08 伊 31｜18 32｜19 網特 05 54｜21 57（凡例：伊 伊香牛 遠 遠軽 無印 上川 東 東旭川 網 網走）",
-      "verdict": "verified",
-      "notes": "以瀏覽器讀 2026-10-26（月）的表。去掉只到東旭川的 8:00 與只到伊香牛的 17:31，到上川以遠剛好 12 班。"
-    },
-    {
-      "claimId": "C66",
-      "articleExcerpt": "從旭川發車的特別快速大雪有12:38與19:05兩班，快速きたみ15:08開，都往網走方向。",
-      "sourceUrl": "https://jrhokkaidonorikae.com/linelist/linelist.php",
-      "sourceTitle": "列車名/路線名から時刻検索（［特急］ライラック・カムイ・オホーツク・宗谷・サロベツ・［特快］大雪・［快速］きたみ 下り）",
-      "sourceQuote": "［特急］ライラック★・カムイ★・オホーツク・宗谷・サロベツ★・［特快］大雪・［快速］きたみ／3591D 大雪 旭川 1238 … 網走 1632／3583D きたみ 旭川 1508 … 網走 1941／3593D 大雪 旭川 1905 … 網走 2254",
-      "verdict": "verified",
-      "notes": "JR 標［特快］大雪＝特別快速。 第 1 輪判 incorrect，第 2 輪（驗收後第 1 輪修改）已改，重查通過。"
-    },
-    {
-      "claimId": "C67",
-      "articleExcerpt": "回程的特急一樣是全車指定席，最快1小時25分，普通車指定席5,440日圓。",
-      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260528_KO_arujan.pdf",
-      "sourceTitle": "札幌－旭川間の特急料金に関するお知らせ（JR北海道 2026年5月28日）",
-      "sourceQuote": "最速１時間 25 分の快適な移動を体験ください。／札幌-旭川間価格 … 5,440 円",
-      "verdict": "verified",
-      "notes": "新聞稿以「札幌－旭川間」寫，不分方向；全車指定席見 C9。"
-    },
-    {
-      "claimId": "C68",
-      "articleExcerpt": "高速あさひかわ號從旭川站前7號乘車處發車，6:00到21:30之間30分鐘左右一班，部分班次只在週五或週末假日開。搭6:00那班，8:04就到札幌站前。",
-      "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8&o=2",
-      "sourceTitle": "高速あさひかわ号 旭川発＞札幌行き｜北海道中央バス",
-      "sourceQuote": "☆便：土曜日・日曜日・祝日運行 ▲便：日曜日・祝日のみ運行 ★便：金曜日・土曜日・日曜日・祝日運行 ●便：土曜日のみ運行 ◆便：金曜日のみ運行／旭川駅前 6:00 … 21:30／降 札幌駅前 8:04",
-      "verdict": "verified",
-      "notes": "旭川站前發 37 個時刻，間隔多為 15～30 分（6:00→7:00、20:40→21:30 較長），「30分鐘左右一班」可接受；限定班次有金のみ、土のみ、日祝のみ、土日祝、金土日祝，「週五或週末假日」涵蓋。7 號見 JR 北海道巴士頁。 第 1 輪判 incorrect，第 2 輪（驗收後第 1 輪修改）已改，重查通過。"
-    },
-    {
-      "claimId": "C69",
-      "articleExcerpt": "車資與車程跟去程相同，也不用預約。",
-      "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8&o=2",
-      "sourceTitle": "高速あさひかわ号 旭川発＞札幌行き｜北海道中央バス",
-      "sourceQuote": "旭川から ／ 札幌まで ／ 2,500円 ／ 4,700円／所要時間 夏：約2時間5分 冬：約2時間25分",
-      "verdict": "verified",
-      "notes": "不用預約見 C17（中央巴士 FAQ「旭川…予約不要です」）。"
-    },
-    {
       "claimId": "C70",
-      "articleExcerpt": "たいせつライナー從旭川站前9號乘車處發車，一天2班，12月1日起增為3班，2小時45分左右到新千歲機場。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "旭川駅（バスタッチのりば9） ／ 6：50 ／ 8：50 ／ ▲12：50／④所要時間（見込み） 旭川駅～新千歳空港　2時間45分",
+      "articleExcerpt": "從札幌經旭川去宗谷本線各站，只要在旭川站不出剪票口轉搭特急，特急費用就以全程合起來算，不必在旭川分段買。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=110",
+      "sourceTitle": "時刻表 ［特急］ライラック★・カムイ★・オホーツク・宗谷・サロベツ★・［特快］大雪・［快速］きたみ 下り｜JR北海道",
+      "sourceQuote": "●≪ご案内≫札幌―旭川―稚内(宗谷本線)間の停車駅相互を旭川駅で改札を出ないで特急列車どうしを乗り継ぐ場合に限り、通しの料金でご乗車になれます。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C71",
-      "articleExcerpt": "| 旭川站9號發 | 到新千歲機場國內線航廈 |（6:50/9:35、8:50/11:35、12:50（12月1日起）/15:35）",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "新千歳空港国内線ターミナル ／ 9：35 ／ 11：35 ／ ▲15：35／▲の便は12/1より運行",
+      "articleExcerpt": "去上川、北見、網走要搭石北本線，從旭川往上川方向一天約12班。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/data/get/SearchEkihatsuTime.php?node=%E6%97%AD%E5%B7%9D&linename=%EF%BC%AA%EF%BC%B2%E7%9F%B3%E5%8C%97%E6%9C%AC%E7%B7%9A&directionname=%E4%B8%8A%E5%B7%9D%E3%83%BB%E7%B6%B2%E8%B5%B0&next_node_id=4461&year=2026&month=11&day=2",
+      "sourceTitle": "旭川駅 石北本線 上川・網走方面 駅発時刻表｜JR北海道",
+      "sourceQuote": "上川・網走方面 7:01、8:00（東）、8:31（網 特）、10:01（遠）、12:38（網 特）、13:48、15:08（網 快）、16:31、17:08（網 特）、17:31（伊）、18:32、19:05（網 特）、19:54、21:57",
       "verdict": "verified",
-      "notes": ""
+      "notes": "共 14 班，扣掉只到東旭川（8:00）與伊香牛（17:31）的 2 班，到上川以遠 12 班"
     },
     {
       "claimId": "C72",
-      "articleExcerpt": "在新千歲機場只停國內線航廈，搭國際線回台灣，下車後走連通道到國際線航廈。班次少，沒預約可能上不了車",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "※新千歳空港での降車場所は国内線ターミナルのみとなりました。国際線ターミナルへは連絡通路をご利用願います。／※事前予約で満席の場合は乗車できない場合がございます",
+      "articleExcerpt": "從旭川發車的特別快速大雪有12:38與19:05兩班，快速北見號（快速きたみ）15:08開，都往網走方向。",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=110",
+      "sourceTitle": "時刻表 ［特急］ライラック★・カムイ★・オホーツク・宗谷・サロベツ★・［特快］大雪・［快速］きたみ 下り｜JR北海道",
+      "sourceQuote": "［特快］大雪・［快速］きたみ／3591D 大雪 旭川 1238 … 網走 1632／3583D きたみ 旭川 1508 … 網走 1941／3593D 大雪 旭川 1905 … 網走 2254",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C73",
-      "articleExcerpt": "想搭的時間沒有巴士，就搭JR特急到札幌，再轉JR約40分鐘到新千歲機場。",
-      "sourceUrl": "https://www.jrhokkaido.co.jp/airport/",
-      "sourceTitle": "札幌↔新千歳空港間 快速「エアポート」最速37分／特別快速「エアポート」最速33分｜JR北海道",
-      "sourceQuote": "日中時間帯の札幌〜新千歳空港間の所要時間は、特別快速最速36分・快速最速37分・区間快速最速43分。",
+      "articleExcerpt": "回程的特急一樣是全車指定席，最快1小時25分，普通車指定席5,440日圓。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260528_KO_arujan.pdf",
+      "sourceTitle": "「あるじゃん、特急。」～６月からは特急「カムイ」「ライラック」をアピールします～",
+      "sourceQuote": "最速１時間25 分の快適な移動を体験ください。／札幌-旭川間価格 … 5,440 円",
       "verdict": "verified",
-      "notes": "33～43 分，約 40 分可接受。"
+      "notes": "全車指定席見 JR 特急カムイ／ライラック頁"
     },
     {
       "claimId": "C74",
-      "articleExcerpt": "延伸資料：旭川電氣軌道的たいせつライナー頁，時刻、車資與JAPAN BUS LINES預約入口；北海道中央巴士的高速あさひかわ號頁，完整時刻表與只在週末開的班次；旭川機場的巴士交通頁，機場出發的各路線與乘車處；旭川站周邊巴士乘車處案內，バスタッチ各號乘車處的位置圖。",
-      "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8",
-      "sourceTitle": "高速あさひかわ号｜北海道中央バス",
-      "sourceQuote": "☆便：土曜日・日曜日・祝日運行 ★便：金曜日・土曜日・日曜日・祝日運行 ◆便：金曜日のみ運行",
+      "articleExcerpt": "高速旭川號從旭川站前7號乘車處發車，6:00到21:30之間30分鐘左右一班，部分班次只在週五或週末假日開。搭6:00那班，8:04就到札幌站前。",
+      "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8&o=2",
+      "sourceTitle": "高速あさひかわ号 旭川発時刻表｜北海道中央バス",
+      "sourceQuote": "☆便：土曜日・日曜日・祝日運行 ★便：金曜日・土曜日・日曜日・祝日運行 ◆便：金曜日のみ運行／旭川駅前 6:00 … 21:30／降 札幌駅前 8:04 9:04 …",
       "verdict": "verified",
-      "notes": "四個連結都打開確認內容相符（たいせつライナー頁有時刻、運賃與「JAPAN BUS LINES」連結；機場巴士頁有各路線與①②乘車處；乘車處案內 PDF 有バスタッチ位置圖）。中央巴士頁的限定班次也含「金曜日のみ」，「只在週末開」略窄，不影響。"
+      "notes": "7 號：JR北海道巴士頁「旭川駅前 7番のりば」"
     },
     {
       "claimId": "C75",
-      "articleExcerpt": "從JR旭川站的北口東側出來，バスタッチ就在站前廣場的東邊。往春光、東川和動物園的4、5、6號排在站前廣場這一側。7到10號在對面那一排，靠近巴士總合案內所所在的Tsuruha大樓。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バスのりば案内（2026年5月10日改定）",
-      "sourceQuote": "北口（西側）／北口（中央）／北口（東側）／駅前バスタッチ／春光・末広方面 ４／東川・東神楽方面 ５／６ 旭山動物園行／７ ８ ９ 10／ツルハビル 旭川電気軌道総合案内所",
+      "articleExcerpt": "車資與車程跟去程相同，也不用預約。",
+      "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=8&o=2",
+      "sourceTitle": "高速あさひかわ号 旭川発時刻表｜北海道中央バス",
+      "sourceQuote": "旭川から 札幌まで 2,500円 4,700円／所要時間 夏：約2時間5分 冬：約2時間25分",
       "verdict": "verified",
-      "notes": "把 PDF 轉成圖片對照位置圖：バスタッチ是北口（東側）前、駅前広場東邊的一條；4、5、6 在廣場側（西），7、8、9、10 在東側、緊鄰ツルハビル。1～3 號也在廣場側（駐車場旁），正文沒寫，不影響。"
+      "notes": "中央巴士 FAQ：旭川…につきましては予約不要です"
     },
     {
       "claimId": "C76",
-      "articleExcerpt": "旭川站和Tsuruha大樓裡都有巴士動態看板，可以在室內等車。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バスのりば案内（2026年5月10日改定）",
-      "sourceQuote": "のマークが付いている施設はバス運行情報表示モニターを設置し、バス待ち可能となっております",
+      "articleExcerpt": "Taisetsu Liner從旭川站前9號乘車處發車，一天2班，12月1日起增為3班，2小時45分左右到新千歲機場。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "旭川駅（バスタッチのりば9） 6：50 8：50 ▲12：50／④所要時間（見込み） 旭川駅～新千歳空港 2時間45分",
       "verdict": "verified",
-      "notes": "圖上 JR旭川駅與ツルハビル都畫有「バスタッチ」標誌。"
+      "notes": ""
     },
     {
       "claimId": "C77",
-      "articleExcerpt": "從新千歲機場出發，則要在札幌轉JR特急，或搭直達的たいせつライナー。",
+      "articleExcerpt": "| 6:50 | 9:35 |／| 8:50 | 11:35 |／| 12:50（12月1日起） | 15:35 |",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
-      "sourceTitle": "都市間バス たいせつライナー 旭川⇔新千歳空港 – 旭川電気軌道株式会社",
-      "sourceQuote": "直行バス 旭川 ⇔ 新千歳空港・南千歳駅",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "旭川駅（バスタッチのりば9） 6：50 8：50 ▲12：50／新千歳空港国内線ターミナル 9：35 11：35 ▲15：35",
       "verdict": "verified",
-      "notes": "JR 走法：JR 北海道下り時刻表札幌發往旭川的特急，新千歲機場無直達旭川列車（vtime.php?s=110 各車始發都是札幌或旭川）。"
+      "notes": ""
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "在新千歲機場只停國內線航廈，搭國際線回台灣的話，下車後走連通道到國際線航廈。因為班次少、沒預約可能上不了車，回程日期一確定就上網訂比較保險。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/taisetsu_liner/",
+      "sourceTitle": "たいせつライナー｜旭川電気軌道",
+      "sourceQuote": "※新千歳空港での降車場所は国内線ターミナルのみとなりました。国際線ターミナルへは連絡通路をご利用願います。／※事前予約で満席の場合は乗車できない場合がございます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "想搭的時間沒有巴士，就搭JR特急到札幌，再轉JR約40分鐘到新千歲機場。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/airport/",
+      "sourceTitle": "新千歳空港アクセス｜JR北海道",
+      "sourceQuote": "日中時間帯の札幌〜新千歳空港間の所要時間は、特別快速 最速36分・快速 最速37分・区間快速 最速43分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "延伸資料：機場巴士頁時刻表分期間公布、1月9日以後的班次在這裡查；Taisetsu Liner頁有時刻、車資與JAPAN BUS LINES預約入口；中央巴士頁有完整時刻表與只在週末開的班次；機場巴士交通頁有各路線與乘車處；乘車處案內有各號位置圖。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
+      "sourceTitle": "旭川空港連絡バス｜旭川電気軌道",
+      "sourceQuote": "運行期間：2026年10月25日 ～ 2026年11月30日／運行期間：2026年12月1日 ～ 2027年1月8日",
+      "verdict": "verified",
+      "notes": "TL 頁有 JAPAN BUS LINES；CB 頁有 ☆★◆ 便；AB 頁有のりば①②；EM 為位置圖；五個網址都打得開"
     }
   ],
   "summary": {
-    "verified": 77,
+    "verified": 80,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

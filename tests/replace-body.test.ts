@@ -64,3 +64,14 @@ test('標題不見了的照片列在搬不過去', () => {
   const {notCarried} = rebuildBody(liveBody, markdown)
   assert.deepEqual(notCarried.map((item: any) => item.key), ['inline-image-penguin', 'media-embed-video'])
 })
+
+test('連結句改寫過：照新舊對照找新句，錨文字出現兩次也接得上', () => {
+  const markdown = ['# 旭山動物園', '', '## 怎麼去', '', '旭川交通很方便。還要從札幌先到旭川站的話，旭川交通整理了各種走法。', '', '## 企鵝散步', '', '冬天。', ''].join('\n')
+  const renamedSentences = [{to: 'asahikawa-transport', old: '從札幌過來，可以看旭川交通。', new: '還要從札幌先到旭川站的話，旭川交通整理了各種走法。', anchor: '旭川交通'}]
+  const {body, notCarried} = rebuildBody(liveBody, markdown, {renamedSentences})
+  assert.equal(notCarried.filter((item: any) => item.kind === 'link').length, 0)
+  const block = body.find((candidate: any) => candidate.markDefs?.length)
+  const linked = block.children.find((child: any) => child.marks?.length)
+  assert.equal(linked.text, '旭川交通')
+  assert.ok(blockText(block).indexOf('旭川交通整理') > 0)
+})
