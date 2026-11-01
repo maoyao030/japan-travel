@@ -58,3 +58,9 @@ HOLD：wakkanai-ferry（訂票系統 11 月上旬重開）
 - 讀者第二階段：sounkyo（a038accde5ef9dca1；查核 a55b9cc8797695a0d；作者 abf0199e03725c34a）、asahikawa（ace8758869870f071；查核 a9b6533b3296b36d3；作者 a499adddf44d05094）、asahidake（a786b316d92336568；查核 a9355dcb70ad7a74e；作者 a56f2b494c6840187）
 - 查核中：asahidake-or-sounkyo（ae46ef7df45c3677b；讀者 a42e6c2a3ccc47ad2 第一階段完成；作者 a0f5579fa98bc5f6c）
 - glossary：北の桜守 改成已查證台灣片名；Taisetsu Liner 說明更新
+## 狀態快照（2026-11-02，main 43d22b3 已推）
+- 第 3 批已上線（Sanity＋main）：cape-soya、rishiri-island、wakkanai-sights、higashikawa、wakkanai、rebun-island
+- 複查＋最終判定中：asahidake（SHA 7ae0b8b4…，查核 a9355dcb70ad7a74e、讀者 a786b316d92336568）、asahikawa（SHA 036ddee9…，查核 a9b6533b3296b36d3、讀者 ace8758869870f071）、sounkyo（SHA 4e000009…，查核 a55b9cc8797695a0d、讀者 a038accde5ef9dca1）
+- asahidake-or-sounkyo：等查核 ae46ef7df45c3677b（讀者 a42e6c2a3ccc47ad2 第一階段完成；作者 a0f5579fa98bc5f6c；潤稿 ac02eef9ef0327faf）
+- 工具：scratchpad/sync-links2.mjs（照 from/to/anchor 同步，可新增）、write-review.mjs + review-spec-N.json
+- 每篇完成後：寫 spec→write-review→local-article-gates→studio replace dry-run→--apply；一批完成後 commit、merge origin/main、npm test、push HEAD:main
