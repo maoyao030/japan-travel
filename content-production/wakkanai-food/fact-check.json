@@ -1,625 +1,1030 @@
 {
   "schemaVersion": 1,
   "articleId": "wakkanai-food",
-  "articleSha256": "7f17d3ba807c16df9ef662dc8665af906b4bc228f7085ccc614c88ab23938ab7",
-  "checker": "事實查核 agent（Claude Opus 5.5，唯讀，非作者；2026-10-22 第 2 輪複查＋第 3 輪差異比對（只改四處），以 curl 實際讀取各來源，未用 Wayback 存檔作為查證）",
-  "checkedAt": "2026-10-22",
+  "articleSha256": "643f62cbd70eb264f21eb94a2a8757770cdc2eb9f6e8e5307c4b2bb81ba66e16",
+  "checker": "事實查核 agent（Claude Opus 5.5，唯讀，非作者；2026-11-01 針對讀競品重排、先刪再調後的新稿重查，同日再對驗收後第 1 輪修改稿逐句複查。以 curl 實際讀取觀光協會、店家官網、副港市場官網、稚內品牌網站與 Dormy Inn 頁面，うろこ亭營業日曆圖片實際打開看；未用 Wayback 存檔）",
+  "checkedAt": "2026-11-01",
   "claims": [
     {
       "claimId": "C1",
-      "articleExcerpt": "稚內所屬的宗谷地區，是日本水章魚（ミズダコ）漁獲量最多的地方，一年大約2千噸。",
+      "articleExcerpt": "宗谷地區一年捕約2千噸水章魚，漁獲量是日本第一。",
       "sourceUrl": "http://wakkanai-brand.jp/genzairyou/g02_souyanotako.html",
       "sourceTitle": "宗谷のたこ | 稚内ブランド公式ウェブサイト",
       "sourceQuote": "宗谷では主に「ミズダコ」が漁獲され、その水揚げ量は日本一を誇ります。一年間で約２千トンのたこが水揚げされ",
       "verdict": "verified",
-      "notes": ""
+      "notes": "沿用舊紀錄 C1，2026-11-01 重開確認。原文的 2 千噸是「たこ」總量（主要是水章魚），正文寫成「水章魚」略收窄，意思無衝突；要更精確可寫「捕約2千噸章魚，大多是水章魚」。"
     },
     {
       "claimId": "C2",
-      "articleExcerpt": "這種北太平洋巨型章魚，大的一隻超過40公斤。",
-      "sourceUrl": "http://wakkanai-brand.jp/genzairyou/g02_souyanotako.html",
-      "sourceTitle": "宗谷のたこ | 稚内ブランド公式ウェブサイト",
-      "sourceQuote": "大きいものになると40㎏を超えます。",
+      "articleExcerpt": "想吃章魚涮涮鍋，可以到JR稚內站走路約7分鐘的車屋源氏（車屋・源氏），或約10分鐘的海鮮爐端Uroko亭（海鮮炉端うろこ亭）。",
+      "sourceUrl": "http://kurumaya-genji.jp/",
+      "sourceTitle": "車屋・源氏 ｜日本最北稚内市　日本料理と郷土料理の店",
+      "sourceQuote": "JR宗谷本線「稚内駅」・キタカラ・稚内バスターミナルより徒歩7分 ／（うろこ亭公式）JR稚内駅から 車 ３分 徒歩 １０分 ／ たこしゃぶ定食：3,000円（税込） たこしゃぶ（単品）：2,500円（税込）",
       "verdict": "verified",
-      "notes": "「北太平洋巨型章魚」是ミズダコ的通用中文名，來源未用此詞但無衝突。"
+      "notes": "うろこ亭步行時間與章魚涮涮鍋見 https://urocotei.uroco1.jp/ 與 item10.html。觀光協會 detail_37 寫源氏徒歩約6分，正文用官網的7分。"
     },
     {
       "claimId": "C3",
-      "articleExcerpt": "用水章魚做的章魚涮涮鍋是稚內美食的招牌，市內很多餐廳都有。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/gourmet-local",
-      "sourceTitle": "ご当地グルメ大集合！稚内・利尻・礼文に行くなら絶対に食べたいおすすめメニュー｜特集｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
-      "sourceQuote": "この稚内名物「タコしゃぶ」です。…市内多数の飲食店で提供されているので",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C4",
-      "articleExcerpt": "車站附近能吃章魚涮涮鍋的，有走路大約7分鐘的日本料理店車屋・源氏。",
-      "sourceUrl": "http://kurumaya-genji.jp/",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店",
-      "sourceQuote": "日本料理と郷土料理 車屋・源氏 … JR宗谷本線「稚内駅」・キタカラ・稚内バスターミナルより徒歩7分",
-      "verdict": "verified",
-      "notes": "已拿掉上一版「最近的兩家」排名。"
-    },
-    {
-      "claimId": "C5",
-      "articleExcerpt": "扇貝在源氏也點得到，奶油鹽烤一份1,600日圓。",
-      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店（お品書き）",
-      "sourceQuote": "ホタテ貝の塩バター焼 1,600円 ／ ※価格は全て税込みです。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C6",
-      "articleExcerpt": "在地的麵食是稚內炒麵（チャーメン），煎過的麵淋上一層勾芡。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "茹でた中華麺に油を引いた中華鍋で軽く焼き目をつけ、…”あんかけ”を焼いた麺に乗せ完成。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C7",
-      "articleExcerpt": "中午可以去車站附近的拉麵店ラーメン大王本店，晚上或週三改去開到22:30的ラーメン広宣。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "ラーメン大王本店 … 営業時間：平日 11:30～14:30,17:00～20:00 土日祝 11:30～20:00 定休日：水曜日 ／ ラーメン広宣 … 営業時間：18:00～22:30 定休日：第１または第２月曜日",
-      "verdict": "verified",
-      "notes": "觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。"
-    },
-    {
-      "claimId": "C8",
-      "articleExcerpt": "下表的店都能從JR稚內站走過去，最遠的是副港市場，大約13分鐘。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "（なごみ）アクセス：JR稚内駅から徒歩約13分 ／ ラーメン広宣 JR稚内駅から徒歩約5分 ／ 食堂よしおか JR稚内駅から徒歩約4分",
-      "verdict": "verified",
-      "notes": "表內其他店：源氏 7 分（官網）、うろこ亭 10 分、ひいらぎ軒 1 分（detail_37）、大王 4 分（detail_40），最遠確為副港市場 13 分。"
-    },
-    {
-      "claimId": "C9",
-      "articleExcerpt": "各家營業時間差很多，下午才到，或是碰上週日、週三，選擇會少一些。",
+      "articleExcerpt": "扇貝和海鮮丼可以去副港市場的海鮮丼魚常，或搭巴士到野寒布岬的漁師之店（漁師の店）吃現烤扇貝。",
       "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "うろこ亭 定休日：日曜日・年末年始（12/31～1/6）",
-      "verdict": "verified",
-      "notes": "由表內各店時間推得：源氏午後休息、うろこ亭週日休、大王週三休。"
-    },
-    {
-      "claimId": "C10",
-      "articleExcerpt": "表格：車屋・源氏｜たこしゃぶ鍋 3,800日圓（含稅）",
-      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店（お品書き）",
-      "sourceQuote": "たこしゃぶ鍋 3,800円 ／ ※価格は全て税込みです。",
-      "verdict": "verified",
-      "notes": "官網 2026-08-12 更新菜單。"
-    },
-    {
-      "claimId": "C11",
-      "articleExcerpt": "表格：車屋・源氏｜11:00～13:30、17:00～21:00｜不定休｜走路約7分",
-      "sourceUrl": "http://kurumaya-genji.jp/",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店",
-      "sourceQuote": "午前11時～午後1時30分、午後5時～午後9時 ／ 定休日 不定休 ／ …より徒歩7分",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C12",
-      "articleExcerpt": "表格：海鮮炉端うろこ亭｜うろこ市丼、たこしゃぶ｜10:30開門｜週日、年底到1/6休｜走路約10分",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "営業時間：10:30～21:00 定休日：日曜日・年末年始（12/31～1/6） アクセス：JR稚内駅から徒歩約10分",
-      "verdict": "verified",
-      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。たこしゃぶ見稚內品牌網站認定品店家頁。觀光協會特輯寫「年末年始（12/31～1/6）」，稚內品牌網站寫「12月30日～1月6日」；正文改成「年底到1/6」，兩說都涵蓋。"
-    },
-    {
-      "claimId": "C13",
-      "articleExcerpt": "表格：ひいらぎ軒｜生海膽丼｜11:00～16:00，6月～8月時間會調整｜週一、週四休，生海膽丼只在6月～9月，數量有限要預約｜走路約1分",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "営業時間：11:00～16:00 定休日：月曜日・木曜日 （６月～8月は営業時間が変わります） … ウニ丼のご提供はウニは漁期（6月～９月）のみ … 数量限定のため、事前にお店の公式HPまたはDMでご予約の上 … JR稚内駅から徒歩約１分",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "「てっぺん食堂/海鮮丼魚常」…稚内副港市場 ／ 漁師の店 … ツブ・ホタテを目の前で焼きながら食べられる … 駅前バスターミナル～ノシャップ(バスで約１０分）",
       "verdict": "verified",
       "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。"
     },
     {
-      "claimId": "C14",
-      "articleExcerpt": "表格：ラーメン大王本店｜チャーメン｜平日11:30～14:30、17:00～20:00，週六日與國定假日11:30～20:00｜週三休、只收現金｜走路約4分",
+      "claimId": "C4",
+      "articleExcerpt": "在地的麵食是稚內炒麵（チャーメン），煎過的麵淋上海鮮勾芡。",
       "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "営業時間：平日 11:30～14:30,17:00～20:00 土日祝 11:30～20:00 定休日：水曜日 アクセス：JR稚内駅から徒歩約4分 お支払方法：現金",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "茹でた中華麺に油を引いた中華鍋で軽く焼き目をつけ、魚介や豚肉、野菜など具材がたっぷり入った”あんかけ”を焼いた麺に乗せ完成。",
       "verdict": "verified",
-      "notes": "觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。 仍未找到店家官網或官方社群可確認現況。"
+      "notes": ""
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "下午4點前下了火車，在JR稚內站裡的餐廳Fuji田（お食事処 ふじ田）就吃得到。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "お食事処 ふじ田のチャーメンは、海鮮がたっぷり入った海鮮チャーメン。JR稚内駅構内にあるので、列車の到着後・出発前にサッと食べられる … 営業時間：10:00～16:00",
+      "verdict": "verified",
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "稚內美食以宗谷的海鮮為主，章魚涮涮鍋、扇貝、海鮮丼與夏天的生海膽丼都吃得到。麵食有稚內炒麵，肉類則有宗谷黑牛。",
+      "sourceUrl": "https://www.north-hokkaido.com/gourmet",
+      "sourceTitle": "グルメ・お土産｜きた・北海道",
+      "sourceQuote": "稚内・宗谷のミズダコやホタテなどの新鮮な海の幸を存分にお楽しみください。…「タコしゃぶ」… ブランド牛「宗谷黒牛」",
+      "verdict": "verified",
+      "notes": "生海膽丼見 detail_37（ひいらぎ軒 6～9月）與源氏菜單（5～9月）；稚內炒麵見 detail_40。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "表裡的店大多在JR稚內站走路範圍與副港市場，只有野寒布岬的兩家要搭巴士。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "（漁師の店）駅前バスターミナル～ノシャップ(バスで約１０分）、下車後、徒歩約２分 ／（樺太食堂）駅前バスターミナル～ノシャップ(バスで約10分）、下車後、徒歩約4分",
+      "verdict": "verified",
+      "notes": "其他店步行 1～13 分（detail_37、detail_40、源氏官網）。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "有的店中午和晚上分兩段營業，有的只做晚餐，能去哪幾家要看抵達稚內的時間。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "（ラーメン大王本店）平日 11:30～14:30,17:00～20:00 ／（食堂よしおか）夜のみの営業 … 18:00～22:00",
+      "verdict": "verified",
+      "notes": "源氏官網也分兩段。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "也有店只收現金。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "（ラーメン大王本店）お支払方法：現金",
+      "verdict": "verified",
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "表格：車屋源氏｜章魚涮涮鍋、扇貝、宗谷黑牛｜走路約7分鐘｜11:00～13:30、17:00～21:00｜不定期｜可刷卡與電子錢包",
+      "sourceUrl": "http://kurumaya-genji.jp/",
+      "sourceTitle": "車屋・源氏 ｜日本最北稚内市　日本料理と郷土料理の店",
+      "sourceQuote": "徒歩7分 ／ 午前11時～午後1時30分、午後5時～午後9時 ／ 定休日 不定休 ／ クレジットカード VISA、Master、JCB… ／ 電子マネー（Apple Pay、iD、QUICPay、Suica）",
+      "verdict": "verified",
+      "notes": "菜色見 menu.html：たこしゃぶ鍋、ホタテ貝の塩バター焼、宗谷黒牛の鉄板焼。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "表格：海鮮爐端Uroko亭｜海鮮丼、章魚涮涮鍋｜走路約10分鐘｜11:00～15:00、17:00～21:00｜週日、12/30～1/6｜可刷卡與QR支付",
+      "sourceUrl": "https://urocotei.uroco1.jp/item30.html",
+      "sourceTitle": "食事処 - 海鮮炉端 うろこ亭（公式・営業時間、2026-2027年営業カレンダー画像を掲載）",
+      "sourceQuote": "●食事処 AM11:00～PM2:30(L.O)PM3:00(CLOSE) PM5:00～PM8:30(L.O)PM9:00(CLOSE) ／（item10.html）現金の他、各種クレジットカード・QRコード決済（…）に対応 ／（2026-2027年営業カレンダー img/2026_1003calendar.jpg）12/30・12/31・1/1～1/6 が休業日、日曜日は原則休業日",
+      "verdict": "verified",
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。官網食事處頁另寫收交通系 IC 等電子錢包，正文只寫刷卡與 QR，沒有寫不收，無衝突。週日原則休（日曆上 10/11 週日因連假營業，稚內品牌網站寫「振替あり」）。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "表格：Hiiragi軒｜生海膽丼｜走路約1分鐘｜11:00～15:00，6月～9月時間會變｜不定期｜海膽丼只在6月～9月",
+      "sourceUrl": "https://hiiragiken200620.wixsite.com/unidon",
+      "sourceTitle": "うに丼 | ひいらぎ軒（公式、© 2024 HIIRAGIKEN）",
+      "sourceQuote": "HOURS 11:00~15:00(LO.14:30) 定休日：不定休 6月〜9月間は、営業時間が変ります。",
+      "verdict": "verified",
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。海膽丼 6～9 月與步行 1 分見 detail_37：ウニ丼のご提供はウニは漁期（6月～９月）のみ／JR稚内駅から徒歩約１分。"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "表格：Teppen食堂／海鮮丼魚常｜海鮮丼、稚內炒麵｜走路約13分鐘｜11:00～15:00｜無｜在副港市場",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "（てっぺん食堂）鉄板チャーメン … 住所：稚内市港1-6-28 稚内副港市場 … 営業時間：11:00～15:00 定休日：なし アクセス：JR稚内駅から徒歩約13分",
+      "verdict": "verified",
+      "notes": "副港市場公式（fukkoichiba.hokkaido.jp/meal/）てっぺん食堂、海鮮丼専門店 魚常 都是 11:00〜15:00（LO 14:30），未寫公休。觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "表格：北之台所Nagomi｜稚內炒麵｜走路約13分鐘｜11:00～15:00、17:00～22:00｜不定期，港之湯休館日也休｜在副港市場2樓",
+      "sourceUrl": "https://fukkoichiba.hokkaido.jp/meal/",
+      "sourceTitle": "お食事 〜稚内副港市場〜（副港市場公式、トップのお知らせは2026.10.01更新）",
+      "sourceQuote": "北の台所 なごみ 副港市場2階のレストランです。… 営業時間 昼11:00〜15:00 夜17:00〜22:00",
+      "verdict": "verified",
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。公休與港之湯同休、步行13分見 detail_40：定休日：不定休（港のゆが定休日の場合、お休みとなります）／徒歩約13分。"
     },
     {
       "claimId": "C15",
-      "articleExcerpt": "表格：ラーメン広宣｜チャーメン｜18:00～22:30｜每月第1或第2個週一休、只收現金｜走路約5分",
+      "articleExcerpt": "表格：Fuji田｜稚內炒麵｜車站內｜10:00～16:00｜不定期｜只收現金",
       "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "営業時間：18:00～22:30 定休日：第１または第２月曜日 アクセス：JR稚内駅から徒歩約5分 お支払い方法：現金",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "営業時間：10:00～16:00 定休日：不定休 アクセス：JR稚内駅構内 お支払方法：現金",
       "verdict": "verified",
-      "notes": "觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。"
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
     },
     {
       "claimId": "C16",
-      "articleExcerpt": "表格：食堂よしおか｜定食、拉麵、チャーメン｜18:00～22:00｜不定休、只收現金｜走路約4分",
+      "articleExcerpt": "表格：拉麵大王本店｜稚內炒麵｜走路約4分鐘｜平日11:30～14:30、17:00～20:00，週六日與國定假日11:30～20:00｜週三｜只收現金",
       "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "夜のみの営業ですが、定食、丼物、おでん、ラーメン、…営業時間：18:00～22:00 定休日：不定休 アクセス：JR稚内駅から徒歩約4分 お支払方法：現金",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "営業時間：平日 11:30～14:30,17:00～20:00 土日祝 11:30～20:00 定休日：水曜日 アクセス：JR稚内駅から徒歩約4分 お支払方法：現金",
       "verdict": "verified",
-      "notes": "觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。"
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "表格：副港市場 てっぺん食堂／海鮮丼魚常｜海鮮丼、拉麵、鐵板チャーメン｜11:00～15:00｜無公休｜走路約13分",
+      "articleExcerpt": "表格：Yoshioka食堂｜稚內炒麵｜走路約4分鐘｜18:00～22:00｜不定期｜只收現金",
       "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "てっぺん食堂の鉄板チャーメンはまさに鉄板メニュー！ … 営業時間：11:00～15:00 定休日：なし アクセス：JR稚内駅から徒歩約13分",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "営業時間：18:00～22:00 定休日：不定休 アクセス：JR稚内駅から徒歩約4分 お支払方法：現金",
       "verdict": "verified",
-      "notes": "觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。 海鮮丼見 detail_37「てっぺん食堂/海鮮丼魚常」，拉麵見 detail_1066。detail_37 的定休日欄空白。"
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
     },
     {
       "claimId": "C18",
-      "articleExcerpt": "表格：副港市場 北の台所 なごみ｜鹽味チャーメン｜11:00～21:00｜不定休，港のゆ休館日也休｜走路約13分",
+      "articleExcerpt": "表格：拉麵廣宣｜稚內炒麵｜走路約5分鐘｜18:00～22:30｜每月第1或第2個週一｜只收現金",
       "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "塩ベースの濃厚なあんと野菜のうまみが絡むチャーメン … 営業時間：11:00～21:00 定休日：不定休（港のゆが定休日の場合、お休みとなります） アクセス：JR稚内駅から徒歩約13分",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "営業時間：18:00～22:30 定休日：第１または第２月曜日 アクセス：JR稚内駅から徒歩約5分 お支払い方法：現金",
       "verdict": "verified",
-      "notes": "觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。 風險：副港市場官網（今天維護中打不開）先前版本寫なごみ分午晚兩段、15:00～17:00 休息；觀光協會 2023 年資料可能已過時，官網恢復後應優先重查。"
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
     },
     {
       "claimId": "C19",
-      "articleExcerpt": "源氏13:30到17:00之間不營業。下午才到稚內，可以去副港市場吃一碗海鮮丼或稚內炒麵，てっぺん食堂開到15:00，なごみ一路開到21:00。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "（てっぺん食堂）営業時間：11:00～15:00 ／（なごみ）営業時間：11:00～21:00",
+      "articleExcerpt": "表格：漁師之店｜現烤扇貝｜巴士約10分鐘，下車走約2分鐘｜8:00～17:00｜不定期，1月～4月中旬休業｜只收現金",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "営業時間：08:00～17:00 定休日：不定休 ・冬期休業(１月～４月中旬） アクセス：駅前バスターミナル～ノシャップ(バスで約１０分）、下車後、徒歩約２分 お支払い方法：現金",
       "verdict": "verified",
-      "notes": "源氏時段見官網。觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。「一路開到21:00」依觀光協會 2023 年資料成立，但見上一筆的風險（官網曾寫 15:00～17:00 休息）；若官網恢復後確認有午休，這句要改。"
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。未找到店家官網。"
     },
     {
       "claimId": "C20",
-      "articleExcerpt": "晚上收得最晚的是ラーメン広宣，開到22:30。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "ラーメン広宣 … 営業時間：18:00～22:30",
+      "articleExcerpt": "表格：樺太食堂｜生海膽三色丼｜巴士約10分鐘，下車走約4分鐘｜9:00～14:30｜不定期，10月上旬～4月下旬休業｜只收現金",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "人気メニューは「生うに三色丼」… 営業時間：09:00～14:30 (L/O 14:00） 定休日：不定休・冬期休業 (10月上旬～4月下旬） アクセス：…(バスで約10分）、下車後、徒歩約4分 お支払い方法：現金",
       "verdict": "verified",
-      "notes": "表內各店收店：源氏 21:00、大王 20:00、広宣 22:30、よしおか 22:00、てっぺん 15:00、なごみ 21:00；正文提到的なら鮨 22:00。成立。"
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。detail_37 連到的「公式」unidon.net 現在是停放網域（轉址到廣告路由），未跟隨；沒有其他店家官方來源可再確認。"
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "週日或過年期間抵達，可以請JR稚內站相連的車站大樓キタカラ1樓的觀光案內所推薦當天有開的店。案內所10:00到18:00開著，12/31到1/5休。",
-      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1200.html",
-      "sourceTitle": "稚内市観光案内所（キタカラ内）｜稚内観光協会",
-      "sourceQuote": "北海道稚内市中央3丁目6-1キタカラ1階 … 営業時間 10:00～18:00 休業日 12月31日～1月5日 … JR稚内駅直結キタカラ内1F",
+      "articleExcerpt": "車屋源氏下午1點半到5點之間休息。",
+      "sourceUrl": "http://kurumaya-genji.jp/",
+      "sourceTitle": "車屋・源氏 ｜日本最北稚内市　日本料理と郷土料理の店",
+      "sourceQuote": "午前11時～午後1時30分、午後5時～午後9時",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C22",
-      "articleExcerpt": "水章魚水分多、肉質軟又帶甜味，煮過也不太會變硬，切成薄片下鍋涮正好。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/gourmet-local",
-      "sourceTitle": "ご当地グルメ大集合！稚内・利尻・礼文に行くなら絶対に食べたいおすすめメニュー｜特集｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
-      "sourceQuote": "ミズダコは水分を多く含んでいるので、柔らかい身と強い甘味が特徴です。…火を通してもあまり固くならないミズダコはしゃぶしゃぶと非常に相性が良く",
+      "articleExcerpt": "這段時間抵達的人，可以在下午4點前到車站裡的Fuji田。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "（お食事処 ふじ田）営業時間：10:00～16:00 … アクセス：JR稚内駅構内",
       "verdict": "verified",
-      "notes": ""
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
     },
     {
       "claimId": "C23",
-      "articleExcerpt": "除了源氏，うろこ亭與壽司店なら鮨的菜單上也有章魚涮涮鍋，なら鮨寫的是一人份。",
-      "sourceUrl": "https://wakkanai-brand.jp/e-shop/index.html",
-      "sourceTitle": "認定品を食べられるお店 | 稚内ブランド公式ウェブサイト",
-      "sourceQuote": "海鮮炉端うろこ亭 … たこしゃぶ（単品）：2,200円、たこしゃぶ定食：2,800円 ／ なら鮨 … たこしゃぶ1人前：2,500円",
+      "articleExcerpt": "週六、週日與國定假日，拉麵大王本店11:30到20:00中間不休息，也接得上這段空檔。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "（ラーメン大王本店）営業時間：平日 11:30～14:30,17:00～20:00 土日祝 11:30～20:00",
       "verdict": "verified",
-      "notes": "稚內品牌推進協議會頁面，無日期。"
+      "notes": "新加句。土日祝連續營業涵蓋源氏 13:30～17:00 的休息時段，推論成立。觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
     },
     {
       "claimId": "C24",
-      "articleExcerpt": "週日うろこ亭休息，可以改找源氏或なら鮨，但這兩家都是不定休。",
-      "sourceUrl": "https://wakkanai-brand.jp/e-shop/index.html",
-      "sourceTitle": "認定品を食べられるお店 | 稚内ブランド公式ウェブサイト",
-      "sourceQuote": "なら鮨 … 【定休日】 不定休 ／ 海鮮炉端うろこ亭 … 【定休日】 日曜日（振替あり）",
+      "articleExcerpt": "Uroko亭與副港市場的Nagomi下午3點到5點也休息，午餐分別點到2點半與2點40分。",
+      "sourceUrl": "https://urocotei.uroco1.jp/item30.html",
+      "sourceTitle": "食事処 - 海鮮炉端 うろこ亭（公式・営業時間、2026-2027年営業カレンダー画像を掲載）",
+      "sourceQuote": "（うろこ亭）●食事処 AM11:00～PM2:30(L.O)PM3:00(CLOSE) PM5:00～PM8:30(L.O)PM9:00(CLOSE) ／（副港市場公式 /meal/ なごみ）昼11:00〜15:00 夜17:00〜22:00 … 昼のラストオーダーは14:40です",
       "verdict": "verified",
-      "notes": "源氏不定休見官網。うろこ亭週日休另見 detail_37。"
+      "notes": "新加句。Nagomi 原文見 https://fukkoichiba.hokkaido.jp/meal/。"
     },
     {
       "claimId": "C25",
-      "articleExcerpt": "車屋・源氏的招牌たこしゃぶ鍋用宗谷產的水章魚，一鍋3,800日圓，官網的價格都含稅。",
-      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店（お品書き）",
-      "sourceQuote": "車屋・源氏のおすすめは宗谷のミズタコを使用した稚内名物「たこしゃぶ鍋」です。…※価格は全て税込みです。…たこしゃぶ鍋 3,800円",
+      "articleExcerpt": "晚上9點以後還能點餐的是Yoshioka食堂與拉麵廣宣，兩家都只收現金。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "（食堂よしおか）営業時間：18:00～22:00 … お支払方法：現金 ／（ラーメン広宣）営業時間：18:00～22:30 … お支払い方法：現金",
       "verdict": "verified",
-      "notes": ""
+      "notes": "改寫句。表內其他店最後點餐：源氏 20:30（官網）、Uroko亭 20:30（官網）、Nagomi 平日 21:00／週末與 7～9 月 20:00（副港市場官網）、拉麵大王收店 20:00；Yoshioka、廣宣沒有公布最後點餐，依收店時間判斷 9 點後可點，成立。觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
     },
     {
       "claimId": "C26",
-      "articleExcerpt": "章魚涮完，鍋裡的湯還能下稚內拉麵，做成沾麵吃。",
-      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店（お品書き）",
-      "sourceQuote": "〆には稚内ラーメンをつけ麺でどうぞ",
+      "articleExcerpt": "Nagomi雖然開到晚上10點，平日9點就停止點餐，週六日、國定假日與7月到9月是8點。",
+      "sourceUrl": "https://fukkoichiba.hokkaido.jp/meal/",
+      "sourceTitle": "お食事 〜稚内副港市場〜（副港市場公式、トップのお知らせは2026.10.01更新）",
+      "sourceQuote": "夜17:00〜22:00 … 夜(平日)のラストオーダーは21:00です … 夜(土日祝)のラストオーダーは20:00ですがドリンクは21:00まで承ります … 7月〜9月の夜のラストオーダーは20:00までとさせていただきます",
       "verdict": "verified",
-      "notes": ""
+      "notes": "新加句。官網另寫混雜時最後點餐可能提早、週末飲料可點到 21:00，正文未寫，不影響。"
     },
     {
       "claimId": "C27",
-      "articleExcerpt": "一個人想吃成套的，另有5,500日圓的たこしゃぶ御膳。",
-      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店（お品書き）",
-      "sourceQuote": "たこしゃぶ御膳 5,500円",
+      "articleExcerpt": "店家的營業時間與公休會變動，出發前可以看店家的官網或官方社群。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "※営業時間・定休日は変更となる場合がございますので、ご来店前に店舗にご確認ください。 ／ ご来店前にひいらぎ軒公式SNSにて、ご確認ください。",
       "verdict": "verified",
-      "notes": "菜單沒寫たこしゃぶ御膳是一人份；「御膳」一般為一人份套餐，屬合理推論，若要嚴謹可改成「想吃成套的，另有…」。"
+      "notes": "改寫句，建議句。拉麵大王、Yoshioka、廣宣、Fuji田、漁師之店沒有找到官網或官方社群，讀者對這幾家只能靠案內所（下一句），無衝突。"
     },
     {
       "claimId": "C28",
-      "articleExcerpt": "營業分成午餐11:00到13:30與晚餐17:00到21:00兩段，最後點餐是20:30。公休日不固定",
-      "sourceUrl": "http://kurumaya-genji.jp/",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店",
-      "sourceQuote": "午前11時～午後1時30分、午後5時～午後9時 （オーダーストップ午後8時30分） 定休日 不定休",
+      "articleExcerpt": "白天抵達的人，也能到JR稚內站旁的觀光案內所確認，案內所營業10:00到18:00。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1200.html",
+      "sourceTitle": "稚内市観光案内所（キタカラ内）｜きた・北海道",
+      "sourceQuote": "営業時間 10:00～18:00 休業日 12月31日～1月5日 アクセス JR稚内駅直結キタカラ内1F",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C29",
-      "articleExcerpt": "從站前巴士總站走過來，一樣大約7分鐘。店裡可以刷信用卡，也收Suica等電子錢包。",
-      "sourceUrl": "http://kurumaya-genji.jp/",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店",
-      "sourceQuote": "稚内バスターミナルより徒歩7分 … クレジットカード VISA、Master、JCB… 電子マネー（Apple Pay、iD、QUICPay、Suica）",
+      "articleExcerpt": "稚內的章魚涮涮鍋用的是宗谷捕的水章魚（ミズダコ）。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/gourmet-local",
+      "sourceTitle": "ご当地グルメ大集合！稚内・利尻・礼文に行くなら絶対に食べたいおすすめメニュー｜きた・北海道",
+      "sourceQuote": "「宗谷の大タコ」とも呼ばれる新鮮なミズダコを使った絶品のタコしゃぶ",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C30",
-      "articleExcerpt": "爐端燒海鮮店うろこ亭和海產店うろこ市在同一個地址，是市場直營的食堂。",
-      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1398.html",
-      "sourceTitle": "うろこ市｜稚内観光協会",
-      "sourceQuote": "所在地 北海道稚内市中央5丁目6-8 … 市場直営のお食事処で獲れたての海産物を炉端焼きにしていただくことができます。 … 関連リンク 海鮮炉端 うろこ亭",
+      "articleExcerpt": "水章魚含水多、肉質軟、甜味強，煮過也不太會變硬，觀光協會說它和涮涮鍋特別合。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/gourmet-local",
+      "sourceTitle": "ご当地グルメ大集合！稚内・利尻・礼文に行くなら絶対に食べたいおすすめメニュー｜きた・北海道",
+      "sourceQuote": "ミズダコは水分を多く含んでいるので、柔らかい身と強い甘味が特徴です。…火を通してもあまり固くならないミズダコはしゃぶしゃぶと非常に相性が良く",
       "verdict": "verified",
-      "notes": "うろこ亭地址見 detail_37「住所：稚内市中央5-6-8」。"
+      "notes": ""
     },
     {
       "claimId": "C31",
-      "articleExcerpt": "招牌うろこ市丼鋪了8種海鮮，內容會隨季節與漁況調整，菜單上也有章魚涮涮鍋。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "新鮮とれたてな８種類の魚介がドーンと乗った豪華な海鮮丼「うろこ市丼」が人気No1メニュー … ※季節・漁模様によりうろこ市丼の内容が変更になることがあります。",
+      "articleExcerpt": "市內很多餐廳都有這道菜，車站附近吃得到的有車屋源氏、Uroko亭，以及市區的壽司店Nara鮨（なら鮨）。",
+      "sourceUrl": "http://wakkanai-brand.jp/e-shop/index.html",
+      "sourceTitle": "稚内ブランド認定品を食べられるお店 | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "（JR稚内駅周辺）海鮮炉端うろこ亭 … たこしゃぶ（単品）… ／ なら鮨 稚内市中央2丁目13-3 … たこしゃぶ1人前：2,500円",
       "verdict": "verified",
-      "notes": "章魚涮涮鍋見稚內品牌網站認定品店家頁。"
+      "notes": "「市內很多餐廳」見 gourmet-local：市内多数の飲食店で提供されている。源氏見官網菜單。"
     },
     {
       "claimId": "C32",
-      "articleExcerpt": "店10:30開門，週日與年底到1月6日公休。午後到傍晚之間的營業時間可能變動，下午才要去，出發前最好確認。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "営業時間：10:30～21:00 定休日：日曜日・年末年始（12/31～1/6）",
+      "articleExcerpt": "一個人旅行時，Nara鮨的菜單上有一人份的章魚涮涮鍋。",
+      "sourceUrl": "http://wakkanai-brand.jp/e-shop/index.html",
+      "sourceTitle": "稚内ブランド認定品を食べられるお店 | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "なら鮨 … たこしゃぶ1人前：2,500円",
       "verdict": "verified",
-      "notes": "稚內品牌網站寫「10：30～15：30（LO15：00）17：00～20：30（LO20：00）」，與觀光協會 10:30～21:00 不一致；正文寫「可能變動、出發前確認」，處理得當。觀光協會特輯寫「年末年始（12/31～1/6）」，稚內品牌網站寫「12月30日～1月6日」；正文改成「年底到1/6」，兩說都涵蓋。"
+      "notes": "稚內品牌網站，無日期；なら鮨官網（narazushi.com）是 2004 年的舊頁，沒有菜單與營業時間。"
     },
     {
       "claimId": "C33",
-      "articleExcerpt": "付款可以用現金、信用卡與QR支付。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "お支払い方法：現金・カード可・QRコード決済可・電子マネー不可",
+      "articleExcerpt": "它營業11:30到14:00、17:00到22:00，公休不固定。",
+      "sourceUrl": "http://wakkanai-brand.jp/e-shop/index.html",
+      "sourceTitle": "稚内ブランド認定品を食べられるお店 | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "なら鮨 … 【営業時間】 11:30～14:00、17:00～22:00 【定休日】 不定休",
       "verdict": "verified",
-      "notes": "上一版的「電子錢包不能用」已刪除。現金、信用卡、QR 三項在觀光協會特輯（2022-12-28）與研究記錄 F136 所記的店家官網說法都一致；今天官網仍 502。"
+      "notes": "稚內品牌網站，無日期；店家官網無營業資訊。"
     },
     {
       "claimId": "C34",
-      "articleExcerpt": "宗谷海峽潮流快，這裡的扇貝個頭偏小，肉卻緊實，甜味也強。",
-      "sourceUrl": "https://wakkanai-brand.jp/genzairyou/g01_souyanohotate.html",
+      "articleExcerpt": "地址是稚內市中央2-13-3，可以貼進地圖App查路線。",
+      "sourceUrl": "http://wakkanai-brand.jp/e-shop/index.html",
+      "sourceTitle": "稚内ブランド認定品を食べられるお店 | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "なら鮨 【住所】 稚内市中央2丁目13-3",
+      "verdict": "verified",
+      "notes": "新加句。稚內品牌網站與「宗谷のたこ」頁都寫同一地址。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "車屋源氏離JR稚內站和站前巴士總站走路約7分鐘。",
+      "sourceUrl": "http://kurumaya-genji.jp/",
+      "sourceTitle": "車屋・源氏 ｜日本最北稚内市　日本料理と郷土料理の店",
+      "sourceQuote": "JR宗谷本線「稚内駅」・キタカラ・稚内バスターミナルより徒歩7分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "招牌是宗谷水章魚做的章魚涮涮鍋，一鍋3,800日圓。",
+      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
+      "sourceTitle": "車屋・源氏 お品書き（2026/08/12 更新）",
+      "sourceQuote": "車屋・源氏のおすすめは宗谷のミズタコを使用した稚内名物「たこしゃぶ鍋」です。… たこしゃぶ鍋 3,800円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "一鍋適合幾個人吃，點餐時可以問店員。",
+      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
+      "sourceTitle": "車屋・源氏 お品書き（2026/08/12 更新）",
+      "sourceQuote": "たこしゃぶ鍋　3,800円 〆には稚内ラーメンをつけ麺でどうぞ…",
+      "verdict": "verified",
+      "notes": "新加的建議句，不含事實主張；官網菜單沒寫一鍋幾人份，正文也沒寫，所以建議去問，無衝突。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "也有套餐形式的章魚涮涮鍋御膳，5,500日圓，這家的價格都含稅。",
+      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
+      "sourceTitle": "車屋・源氏 お品書き（2026/08/12 更新）",
+      "sourceQuote": "たこしゃぶ御膳 5,500円 ／ ※価格は全て税込みです。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "鍋吃到最後，可以加稚內拉麵當沾麵收尾。",
+      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
+      "sourceTitle": "車屋・源氏 お品書き（2026/08/12 更新）",
+      "sourceQuote": "〆には稚内ラーメンをつけ麺でどうぞ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "營業分成中午11:00到13:30、晚上17:00到21:00兩段，晚上最後點餐是20:30，公休不固定。",
+      "sourceUrl": "http://kurumaya-genji.jp/",
+      "sourceTitle": "車屋・源氏 ｜日本最北稚内市　日本料理と郷土料理の店",
+      "sourceQuote": "午前11時～午後1時30分、午後5時～午後9時 （オーダーストップ午後8時30分） 定休日 不定休",
+      "verdict": "verified",
+      "notes": "官網只寫一個「オーダーストップ午後8時30分」，正文寫成晚上最後點餐，與時段相符。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "搭下午的火車或渡輪，在中間休息的時段抵達，排成當天的晚餐比較順。",
+      "sourceUrl": "http://kurumaya-genji.jp/",
+      "sourceTitle": "車屋・源氏 ｜日本最北稚内市　日本料理と郷土料理の店",
+      "sourceQuote": "午前11時～午後1時30分、午後5時～午後9時",
+      "verdict": "verified",
+      "notes": "編輯建議，依營業時段推得，無衝突。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "可以刷信用卡，也收Suica等電子錢包。",
+      "sourceUrl": "http://kurumaya-genji.jp/",
+      "sourceTitle": "車屋・源氏 ｜日本最北稚内市　日本料理と郷土料理の店",
+      "sourceQuote": "クレジットカード VISA、Master、JCB、AMEX、Diners、Discover、銀聯（ユニオンペイ） 電子マネー（Apple Pay、iD、QUICPay、Suica）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "Uroko亭離JR稚內站走路約10分鐘，是市場直營的食堂，也吃得到現烤的爐端燒。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1398.html",
+      "sourceTitle": "うろこ市｜きた・北海道",
+      "sourceQuote": "市場直営のお食事処で獲れたての海産物を炉端焼きにしていただくことができます。 … 関連リンク 海鮮炉端　うろこ亭",
+      "verdict": "verified",
+      "notes": "步行10分見うろこ亭官網首頁：JR稚内駅から … 徒歩 １０分。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "它和海產店Uroko市（うろこ市）在同一個地址。",
+      "sourceUrl": "https://urocotei.uroco1.jp/",
+      "sourceTitle": "稚内グルメと観光・工場見学体験｜食事処 - 海鮮炉端 うろこ亭（公式トップ）",
+      "sourceQuote": "株式会社うろこ市 （海鮮炉端うろこ亭） 〒097-0022 北海道稚内市中央５丁目６番８号",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "招牌的Uroko市丼（うろこ市丼）放了8種海鮮，內容依季節與漁況調整。",
+      "sourceUrl": "https://urocotei.uroco1.jp/item10.html",
+      "sourceTitle": "食事処 - 海鮮炉端 うろこ亭（公式・お品書き）",
+      "sourceQuote": "うろこ市丼：3,900円（税込） ８種類の魚介が入った豪華海鮮丼です。うろこ亭人気No.1メニューです。 ※季節・漁模様により内容が変更になる場合がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "章魚涮涮鍋在這裡有單點，也有定食。",
+      "sourceUrl": "https://urocotei.uroco1.jp/item10.html",
+      "sourceTitle": "食事処 - 海鮮炉端 うろこ亭（公式・お品書き）",
+      "sourceQuote": "たこしゃぶ定食：3,000円（税込） たこしゃぶ（単品）：2,500円（税込）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "4月到9月還吃得到生海膽丼，遇到風浪可能沒貨。",
+      "sourceUrl": "https://urocotei.uroco1.jp/item10.html",
+      "sourceTitle": "食事処 - 海鮮炉端 うろこ亭（公式・お品書き）",
+      "sourceQuote": "ムラサキウニ・うろこ市丼：5,700円（税込）（４月～９月限定） … ※生うにはシケなどにより入荷できない日もございます。",
+      "verdict": "verified",
+      "notes": "新加句。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "營業分成中午11:00到15:00、晚上17:00到21:00兩段，最後點餐是14:30與20:30。",
+      "sourceUrl": "https://urocotei.uroco1.jp/item30.html",
+      "sourceTitle": "食事処 - 海鮮炉端 うろこ亭（公式・営業時間、2026-2027年営業カレンダー画像を掲載）",
+      "sourceQuote": "●食事処 AM11:00～PM2:30(L.O)PM3:00(CLOSE) PM5:00～PM8:30(L.O)PM9:00(CLOSE)",
+      "verdict": "verified",
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "付款收現金、信用卡與QR支付。",
+      "sourceUrl": "https://urocotei.uroco1.jp/",
+      "sourceTitle": "稚内グルメと観光・工場見学体験｜食事処 - 海鮮炉端 うろこ亭（公式トップ）",
+      "sourceQuote": "お支払い方法 ・現金 ・各種クレジットカード ・QRコード決済（PayPay、楽天ペイ、au PAY、d払い、LINE Pay、メルペイ、Alipay、WeChat Pay）",
+      "verdict": "verified",
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。食事處頁 item10 另寫收交通系 IC 等電子錢包，正文沒寫不收，無衝突。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "週日與12月30日到1月6日公休。",
+      "sourceUrl": "https://urocotei.uroco1.jp/item30.html",
+      "sourceTitle": "食事処 - 海鮮炉端 うろこ亭（公式・営業時間、2026-2027年営業カレンダー画像を掲載）",
+      "sourceQuote": "（2026-2027年営業カレンダー img/2026_1003calendar.jpg）12月30日・31日、1月1日～6日が休業日、日曜日は原則休業日",
+      "verdict": "verified",
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。日曆另有 12/29 只營業午餐、10/11 週日因連假營業；稚內品牌網站：日曜日（振替あり）／12月30日～1月6日。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "如果週日抵達稚內又想吃章魚涮涮鍋，可以改去車屋源氏或Nara鮨，兩家都是不定期公休。",
+      "sourceUrl": "http://wakkanai-brand.jp/e-shop/index.html",
+      "sourceTitle": "稚内ブランド認定品を食べられるお店 | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "なら鮨 … 【定休日】 不定休 ／ 海鮮炉端うろこ亭 … 【定休日】 日曜日（振替あり）",
+      "verdict": "verified",
+      "notes": "源氏不定休見官網。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "宗谷海峽的潮流快，在這裡長大的扇貝個頭小，肉卻緊實、甜味強。",
+      "sourceUrl": "http://wakkanai-brand.jp/genzairyou/g01_souyanohotate.html",
       "sourceTitle": "宗谷のほたて貝 | 稚内ブランド公式ウェブサイト",
       "sourceQuote": "宗谷海峡は潮の流れが速く、ここで育ったほたて貝は小ぶりながらも身がギュッと締まり歯応え抜群なのが特徴です。また、年間を通し低水温のため、旨味が凝縮され、甘みが強く",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C35",
-      "articleExcerpt": "車站附近的源氏有奶油鹽烤扇貝，一份1,600日圓，也有2,300日圓的迷你扇貝丼。",
-      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店（お品書き）",
-      "sourceQuote": "ホタテ貝の塩バター焼 1,600円 ／ ミニホタテ丼 2,300円",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C36",
-      "articleExcerpt": "野寒布岬有兩家海鮮店",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "漁師が営む魚屋と食堂「漁師の店」 … ノシャップ岬の人気店。その名も「漁師の店」 ／ ノシャップ岬の「樺太食堂」は海鮮丼のお店として全国にファンを持つ名店。",
-      "verdict": "verified",
-      "notes": "上一版的「漁港邊」已刪除。"
-    },
-    {
-      "claimId": "C37",
-      "articleExcerpt": "從站前巴士總站搭巴士約10分鐘，在ノシャップ下車走幾分鐘就到。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "駅前バスターミナル～ノシャップ(バスで約１０分）、下車後、徒歩約２分 ／（樺太食堂）下車後、徒歩約4分",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C38",
-      "articleExcerpt": "魚店兼食堂的漁師の店，在魚店點好的扇貝和螺會在眼前烤。營業時間8:00到17:00，只收現金。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "漁師が営む魚屋と食堂「漁師の店」 … 魚屋で注文して、横の食堂で料理を待つスタイル。…ツブ・ホタテを目の前で焼きながら食べられるのが嬉しい。…営業時間：08:00～17:00 … お支払い方法：現金",
-      "verdict": "verified",
-      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。 不定休，正文未寫。"
-    },
-    {
-      "claimId": "C39",
-      "articleExcerpt": "樺太食堂的人氣菜是生海膽三色丼，生海膽、蟹肉之外，還鋪了生扇貝與醃漬扇貝，營業到14:30，同樣只收現金。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "人気メニューは「生うに三色丼」。生ウニ・カニと生ホタテ、漬けホタテのホタテ2種類が乗った … 営業時間：09:00～14:30 (L/O 14:00） … お支払い方法：現金",
-      "verdict": "verified",
-      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。 最後點餐 14:00，正文只寫營業到 14:30，可考慮補。"
-    },
-    {
-      "claimId": "C40",
-      "articleExcerpt": "漁師の店1月到4月中旬休業，樺太食堂10月上旬到4月下旬休業，冬天想吃扇貝就到源氏。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "（漁師の店）定休日：不定休 ・冬期休業(１月～４月中旬） ／（樺太食堂）定休日：不定休・冬期休業 (10月上旬～4月下旬）",
-      "verdict": "verified",
-      "notes": "源氏菜單的ホタテ貝の塩バター焼、ミニホタテ丼沒有標季節。"
-    },
-    {
-      "claimId": "C41",
-      "articleExcerpt": "てっぺん食堂和海鮮丼魚常是同一個地方，由在地魚店經營，食材不經中盤商、直接在市場進貨，人氣第一的是魚常特製海鮮丼。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "「てっぺん食堂/海鮮丼魚常」は地元の魚屋が運営するお食事処。仲買人を通さず市場で直接仕入れた新鮮なネタを使った、コスパ最強の海鮮丼「魚常特製海鮮丼」が人気No1メニューです。",
-      "verdict": "verified",
-      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。"
-    },
-    {
-      "claimId": "C42",
-      "articleExcerpt": "想吃海鮮丼點魚常的菜，想吃拉麵或稚內炒麵點てっぺん食堂的，11:00到15:00營業，沒有公休日。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "（てっぺん食堂）営業時間：11:00～15:00 定休日：なし",
-      "verdict": "verified",
-      "notes": "點菜分法是由店名「てっぺん食堂/海鮮丼魚常」推得的編輯建議，無衝突。觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。"
-    },
-    {
-      "claimId": "C43",
-      "articleExcerpt": "帶著還沒上小學的小孩，兒童拉麵、烏龍麵與咖哩飯免費。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "小学生未満のお子様限定でお子様用のラーメン・うどん・カレーライスが、なんと無料！",
-      "verdict": "verified",
-      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。"
-    },
-    {
-      "claimId": "C44",
-      "articleExcerpt": "2樓的餐廳北の台所 なごみ和溫泉港のゆ在同一層，11:00到21:00營業，港のゆ休館的日子也跟著休。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "稚内副港市場2階にある「北の台所 なごみ」 … 同じフロアにあるヤムワッカナイ温泉「港のゆ」 … 営業時間：11:00～21:00 定休日：不定休（港のゆが定休日の場合、お休みとなります）",
-      "verdict": "verified",
-      "notes": "觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。 見表格なごみ那筆的風險說明。"
-    },
-    {
-      "claimId": "C45",
-      "articleExcerpt": "市場裡還有樺太記念館，從車站開車大約3分鐘，有99個免費停車位。",
-      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1066.html",
-      "sourceTitle": "稚内副港市場｜稚内観光協会",
-      "sourceQuote": "駐車場 99台、無料 アクセス ●車：JR稚内駅から約3分 … 副港市場の主な施設の紹介 稚内市樺太記念館",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C46",
-      "articleExcerpt": "稚內的生海膽丼跟著夏天的海膽漁期走。海膽丼專門店ひいらぎ軒只在6月到9月賣生海膽丼，其他季節改賣鯛魚燒。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "「ひいらぎ軒」は夏のウニ漁期間はウニ丼、その他のシーズンはたい焼きのお店です。…ウニ丼専門店のため、ウニ丼のご提供はウニは漁期（6月～９月）のみ。",
-      "verdict": "verified",
-      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。 第一句是概括，源氏的生うに・イクラ丼（5～9月）也符合夏季。"
-    },
-    {
-      "claimId": "C47",
-      "articleExcerpt": "數量有限，店家建議透過官網或社群私訊預約，不必打日文電話。店就在JR稚內站旁，走路約1分鐘。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "数量限定のため、事前にお店の公式HPまたはDMでご予約の上、ご来店ください。…JR稚内駅から徒歩約１分",
-      "verdict": "verified",
-      "notes": "「不必打日文電話」是合理推論。"
-    },
-    {
-      "claimId": "C48",
-      "articleExcerpt": "ひいらぎ軒平常11:00到16:00營業，週一與週四公休。6月到8月營業時間會調整，最新時間看店家的官方社群。付款收現金與QR支付。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
-      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜稚内観光協会",
-      "sourceQuote": "営業時間：11:00～16:00 定休日：月曜日・木曜日 （６月～8月は営業時間が変わります） … お支払い方法：現金・QRコード決済 ※営業時間・定休日は変更となる場合がございます。ご来店前にひいらぎ軒公式SNSにて、ご確認ください。",
-      "verdict": "verified",
-      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。"
-    },
-    {
-      "claimId": "C49",
-      "articleExcerpt": "源氏5月到9月也有生海膽鮭魚卵丼，價格隨行情變動。",
-      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店（お品書き）",
-      "sourceQuote": "生うに・イクラ丼（5～9月） 時価",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C50",
-      "articleExcerpt": "在稚內說到在地麵食，指的是稚內炒麵。觀光協會稱它「勾芡煎拉麵」，用的是煮過的中華麵，不是勾芡炒麵用的蒸麵。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "あんかけ焼そば（かた焼きそば）は”蒸した中華麺”を使いますが、チャーメンは”茹でた中華麺”を使い油で炒めるのが特徴。ありそうでない「あんかけ焼きラーメン」なのです。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C51",
-      "articleExcerpt": "麵下鍋用油煎到表面焦脆，再淋上海鮮、豬肉與蔬菜做成的芡汁，吃的時候可以依喜好加醋。芡汁有鹽味、醬油、味噌，每家口味不同。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "魚介や豚肉、野菜など具材がたっぷり入った”あんかけ”を焼いた麺に乗せ完成。食べ方は、お好みでお酢をかけ … 味も醤油、塩、味噌などお店の数だけ味のバリエーションがあります。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C52",
-      "articleExcerpt": "起源有幾種說法，一般認為來自已經歇業的香蘭與味の角さん，香蘭做鹽味，味の角さん做醬油。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "稚内のチャーメン発祥については諸説ありますが、約30年ほど前に閉店した「香蘭」と2016年に惜しまれながら閉店した「味の角さん」が起源だと言われています。当時は前者は「塩チャーメン」後者は「醤油チャーメン」が評判",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
       "claimId": "C53",
-      "articleExcerpt": "ラーメン大王本店的炒麵有鹽味、醬油兩種。平日營業分成11:30到14:30、17:00到20:00兩段，週六、週日與國定假日11:30到20:00中間不休息。週三公休，只收現金。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "チャーメンは塩味・醤油味の二種類からお好みで！ … 営業時間：平日 11:30～14:30,17:00～20:00 土日祝 11:30～20:00 定休日：水曜日 … お支払方法：現金",
+      "articleExcerpt": "這種扇貝被認定為稚內品牌的食材。",
+      "sourceUrl": "http://wakkanai-brand.jp/genzairyou/g01_souyanohotate.html",
+      "sourceTitle": "宗谷のほたて貝 | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "トップページ » 原材料（7品） » 宗谷のほたて貝",
       "verdict": "verified",
-      "notes": "觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。 現況仍無店家官方來源可再確認。"
+      "notes": "「宗谷のほたて貝」列在稚內品牌推進協議會網站的認定原材料。"
     },
     {
       "claimId": "C54",
-      "articleExcerpt": "週三或晚上，車站走路5分鐘內還有兩家。ラーメン広宣18:00開到22:30，食堂よしおか18:00開到22:00，兩家的炒麵都是醬油口味，也都只收現金。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "（ラーメン広宣）チャーメンは醤油ベースとなります。…営業時間：18:00～22:30 … JR稚内駅から徒歩約5分 お支払い方法：現金 ／（食堂よしおか）チャーメンは醤油ベース … 営業時間：18:00～22:00 … 徒歩約4分 お支払方法：現金",
+      "articleExcerpt": "想吃價格實在的海鮮丼，可以去副港市場的海鮮丼魚常。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "稚内副港市場内にある、「てっぺん食堂/海鮮丼魚常」… コスパ最強の海鮮丼「魚常特製海鮮丼」",
       "verdict": "verified",
-      "notes": "觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。 広宣每月第 1 或第 2 個週一休，週三可去，成立。"
+      "notes": "副港市場官網：仲買人を通さずに市場で直接仕入れた食材を使用した格安海鮮丼。"
     },
     {
       "claimId": "C55",
-      "articleExcerpt": "JR稚內站裡的お食事処 ふじ田賣海鮮炒麵，10:00到16:00營業，下了火車就吃得到。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "お食事処 ふじ田のチャーメンは、海鮮がたっぷり入った海鮮チャーメン。JR稚内駅構内にあるので … 営業時間：10:00～16:00 定休日：不定休",
+      "articleExcerpt": "它和Teppen食堂（てっぺん食堂）是同一處。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "「てっぺん食堂/海鮮丼魚常」は地元の魚屋が運営するお食事処。",
       "verdict": "verified",
-      "notes": "觀光協會チャーメン特輯 2023-01-13，頁面註明營業時間與公休可能變動。 不定休、只收現金未寫，可補。"
+      "notes": "副港市場官網把兩者分開列，但同在 1 樓、同一電話 0162-73-0120、同樣 11:00〜15:00。"
     },
     {
       "claimId": "C56",
-      "articleExcerpt": "住在天北の湯 Dormy Inn稚內的話，自助早餐也有炒麵，還有海鮮丼。旅館離車站走路3分鐘左右。",
-      "sourceUrl": "https://www.hotespa.net/hotels/wakkanai/",
-      "sourceTitle": "【公式】ドーミーイン稚内",
-      "sourceQuote": "地元メニュー「チャーメン」の追加で品数アップに加え、大人気のご当地逸品メニュー「海鮮丼」が更にグレードアップ！！ ／ JR稚内駅から徒歩約3分。",
+      "articleExcerpt": "店由在地魚店經營，不經中盤商、直接在市場進貨。",
+      "sourceUrl": "https://fukkoichiba.hokkaido.jp/meal/",
+      "sourceTitle": "お食事 〜稚内副港市場〜（副港市場公式、トップのお知らせは2026.10.01更新）",
+      "sourceQuote": "海鮮丼専門店 魚常 魚屋が運営する海鮮丼の専門店です。仲買人を通さずに市場で直接仕入れた食材を使用した格安海鮮丼を楽しめます。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C57",
-      "articleExcerpt": "想吃一碗湯拉麵，白天副港市場的てっぺん食堂有拉麵，營業到15:00，晚上食堂よしおか的菜單上也有。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
-      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜稚内観光協会",
-      "sourceQuote": "（食堂よしおか）夜のみの営業ですが、定食、丼物、おでん、ラーメン … ／（てっぺん食堂）営業時間：11:00～15:00",
+      "articleExcerpt": "人氣第一的是魚常特製海鮮丼。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "コスパ最強の海鮮丼「魚常特製海鮮丼」が人気No1メニューです。",
       "verdict": "verified",
-      "notes": "てっぺん食堂有ラーメン見 detail_1066。來源只寫「ラーメン」，正文「湯拉麵」為一般理解。"
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。"
     },
     {
       "claimId": "C58",
-      "articleExcerpt": "宗谷黑牛是在日本最北的宗谷岬牧場養大的品牌牛，紅肉味道濃、肉質軟。",
-      "sourceUrl": "https://www.north-hokkaido.com/gourmet",
-      "sourceTitle": "稚内・利尻・礼文で食べたいおすすめ定番グルメ｜稚内観光協会",
-      "sourceQuote": "日本最北の宗谷岬牧場で飼育されたブランド牛「宗谷黒牛」。…濃厚な赤身と淡泊な脂肪の絶妙なハーモニーが特徴。柔らかい肉質",
+      "articleExcerpt": "從JR稚內站走路約13分鐘，營業11:00到15:00，收現金、信用卡與QR支付。",
+      "sourceUrl": "https://fukkoichiba.hokkaido.jp/meal/",
+      "sourceTitle": "お食事 〜稚内副港市場〜（副港市場公式、トップのお知らせは2026.10.01更新）",
+      "sourceQuote": "海鮮丼専門店 魚常 … 営業時間 11:00〜15:00 … ラストオーダーは14:30です … 決済方法:（アイコン）日本円・クレジットカード・PayPay・楽天ペイ・d払い・au PAY・メルペイ・Alipay・WeChat Pay・銀聯・JKOPAY",
       "verdict": "verified",
-      "notes": ""
+      "notes": "步行13分見 detail_37：JR稚内駅から徒歩約13分；同頁付款：現金・カード可・QRコード決済可。"
     },
     {
       "claimId": "C59",
-      "articleExcerpt": "市內的牛排館「ステーキハウス Vin」就以宗谷牛出名。這家店在《米其林指南北海道》2012與2017特別版都拿到一星。",
-      "sourceUrl": "https://www.north-hokkaido.com/feature/gourmet-local",
-      "sourceTitle": "ご当地グルメ大集合！稚内・利尻・礼文に行くなら絶対に食べたいおすすめメニュー｜特集｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
-      "sourceQuote": "「ステーキハウスVin（ヴァン）」は、宗谷牛が食べられるお店として知られ、ミシュランガイド北海道2012特別版と北海道2017特別版で1つ星を獲得しています！",
+      "articleExcerpt": "帶未上小學的小孩同行，兒童拉麵、烏龍麵與咖哩飯免費。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "小学生未満のお子様限定でお子様用のラーメン・うどん・カレーライスが、なんと無料！",
       "verdict": "verified",
-      "notes": "公開榜單事實，未寫成現況。"
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。副港市場官網沒寫這項服務，也沒寫取消。"
     },
     {
       "claimId": "C60",
-      "articleExcerpt": "車站附近的源氏也有宗谷黑牛鐵板燒，2,500日圓。",
-      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
-      "sourceTitle": "車屋・源氏 ｜日本最北稚内市 日本料理と郷土料理の店（お品書き）",
-      "sourceQuote": "宗谷黒牛の鉄板焼 2,500円",
+      "articleExcerpt": "野寒布岬的漁師之店是漁師經營的魚店兼食堂。在魚店點好再到旁邊的食堂等，螺和扇貝會在面前烤。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "漁師が営む魚屋と食堂「漁師の店」 … ノシャップ岬の人気店。… 魚屋で注文して、横の食堂で料理を待つスタイル。… ツブ・ホタテを目の前で焼きながら食べられるのが嬉しい。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。"
     },
     {
       "claimId": "C61",
-      "articleExcerpt": "說到稚內伴手禮，觀光協會介紹的是在地農產做的甜點與乳製品。稚內的品牌馬鈴薯「勇知いも」做成餅乾與布丁，低溫殺菌的稚內牛乳則做成冰淇淋、優酪乳。",
-      "sourceUrl": "https://www.north-hokkaido.com/gourmet",
-      "sourceTitle": "稚内・利尻・礼文で食べたいおすすめ定番グルメ｜稚内観光協会",
-      "sourceQuote": "じゃがいもクッキー「ワッカナイポテマルコ」や、アイス焼きプリン「ポテラーナワッカナイ」は、「勇知いも」を使用した人気のお土産。…アイスクリームや飲むヨーグルトは「稚内牛乳」を使用したものをぜひ！ 低温殺菌で",
+      "articleExcerpt": "從站前巴士總站搭巴士約10分鐘到野寒布站，下車再走約2分鐘。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "アクセス：駅前バスターミナル～ノシャップ(バスで約１０分）、下車後、徒歩約２分",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C62",
-      "articleExcerpt": "JR稚內站相連的キタカラ裡有伴手禮店ワッカナイセレクト，開到19:00",
-      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1306.html",
-      "sourceTitle": "ワッカナイセレクト｜稚内観光協会",
-      "sourceQuote": "北海道中から逸品を集めたフードセレクトショップです。…営業時間 9:00～19:00 アクセス JR稚内駅直結キタカラ内",
+      "articleExcerpt": "營業8:00到17:00，只收現金。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "営業時間：08:00～17:00 … お支払い方法：現金",
       "verdict": "verified",
-      "notes": ""
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。"
     },
     {
       "claimId": "C63",
-      "articleExcerpt": "勇知いも餅乾叫ワッカナイポテマルコ，有白巧克力與黑巧克力兩種，賞味期60天。",
-      "sourceUrl": "https://wakkanai-brand.jp/kakouhin/12_potemaruko.html",
-      "sourceTitle": "ワッカナイ ポテマルコ | 稚内ブランド公式ウェブサイト",
-      "sourceQuote": "「勇知いも」を皮ごと使った風味豊かなじゃがいもクッキー。中にホワイトチョコレートを入れた“しろポテマルコ”とブラックチョコレートを入れた“くろポテマルコ”があります。…賞味期間 60日 … ワッカナイセレクト 稚内市中央3丁目6-1 キタカラ1F",
+      "articleExcerpt": "1月到4月中旬是冬季休業，同樣在野寒布岬的樺太食堂這段期間也休，這幾個月搭巴士過去兩家都吃不到。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "（漁師の店）定休日：不定休 ・冬期休業(１月～４月中旬） ／（樺太食堂）定休日：不定休・冬期休業 (10月上旬～4月下旬）",
       "verdict": "verified",
-      "notes": "販售店名單含ワッカナイセレクト。"
+      "notes": "樺太食堂的休業期間涵蓋 1 月到 4 月中旬，推論成立。"
     },
     {
       "claimId": "C64",
-      "articleExcerpt": "冰烤布丁ポテラーナワッカナイ是冷凍品，要放在零下18度以下保存，半解凍吃最好。",
-      "sourceUrl": "https://wakkanai-brand.jp/kakouhin/13_poterana.html",
-      "sourceTitle": "ポテラーナ ワッカナイ | 稚内ブランド公式ウェブサイト",
-      "sourceQuote": "ポテトカタラーナ（アイス焼きプリン）。半解凍で食べるのがおすすめです。…保存方法 冷凍（－18℃以下） … ワッカナイセレクト 稚内市中央3丁目6-1 キタカラ1F",
+      "articleExcerpt": "晚上想在車站附近吃扇貝，車屋源氏的菜單上有扇貝鹽奶油燒1,600日圓與迷你扇貝丼2,300日圓，都是含稅價。",
+      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
+      "sourceTitle": "車屋・源氏 お品書き（2026/08/12 更新）",
+      "sourceQuote": "ホタテ貝の塩バター焼 1,600円 ／ ミニホタテ丼 2,300円 ／ ※価格は全て税込みです。",
       "verdict": "verified",
-      "notes": "販售店名單含ワッカナイセレクト。"
+      "notes": "兩道列在一般菜單，不在ランチメニュー，晚上可點。"
     },
     {
       "claimId": "C65",
-      "articleExcerpt": "吃完うろこ亭，可以在同一處的うろこ市買稚內近海的海產與稚內品牌商品，加工場還能免費參觀。うろこ市營業到下午5點，週日休。",
-      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1398.html",
-      "sourceTitle": "うろこ市｜稚内観光協会",
-      "sourceQuote": "稚内近郊で獲れた新鮮な海の幸や稚内ブランド製品をお土産として購入できるほか、無料の加工場見学 … 営業時間 7：30～17：00 休業日 日曜日",
+      "articleExcerpt": "稚內吃得到生海膽丼的時間大約是4月到9月。最早開賣的是Uroko亭，4月就有。",
+      "sourceUrl": "https://urocotei.uroco1.jp/item10.html",
+      "sourceTitle": "食事処 - 海鮮炉端 うろこ亭（公式・お品書き）",
+      "sourceQuote": "ムラサキウニ・うろこ市丼：5,700円（税込）（４月～９月限定） … むらさきうに丼（小結盛）：7,800円（税込）～（４～９月限定）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "新加／改寫句。本頁提到的店中：Uroko亭 4～9月、源氏 5～9月（官網菜單）、Hiiragi軒 6～9月（detail_37）、樺太食堂 4 月下旬才開店（detail_37），Uroko亭最早，成立。漁師之店 4 月中旬開店、觀光協會說有ウニ丼但沒寫季節，正文沒把它列進比較。"
     },
     {
       "claimId": "C66",
-      "articleExcerpt": "稚內品牌的扇貝在うろこ市、ワッカナイセレクト都買得到。",
-      "sourceUrl": "https://wakkanai-brand.jp/genzairyou/g01_souyanohotate.html",
-      "sourceTitle": "宗谷のほたて貝 | 稚内ブランド公式ウェブサイト",
-      "sourceQuote": "うろこ市 稚内市中央5丁目6-8 … ワッカナイセレクト 稚内市中央3丁目6-1 キタカラ1F",
+      "articleExcerpt": "車屋源氏的生海膽鮭魚卵丼5月到9月供應，價格是時價。",
+      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
+      "sourceTitle": "車屋・源氏 お品書き（2026/08/12 更新）",
+      "sourceQuote": "生うに・イクラ丼（5～9月）　時価",
       "verdict": "verified",
-      "notes": "「宗谷のほたて貝」頁的店家清單。"
+      "notes": ""
     },
     {
       "claimId": "C67",
-      "articleExcerpt": "副港市場的魚常明田鮮魚店也賣「宗谷のたこ」品牌的稚內章魚。",
-      "sourceUrl": "http://wakkanai-brand.jp/genzairyou/g02_souyanotako.html",
-      "sourceTitle": "宗谷のたこ | 稚内ブランド公式ウェブサイト",
-      "sourceQuote": "魚常明田鮮魚店 稚内市港1丁目6-28副港市場",
+      "articleExcerpt": "Hiiragi軒（ひいらぎ軒）只在6月到9月的海膽漁期賣。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "ウニ丼専門店のため、ウニ丼のご提供はウニは漁期（6月～９月）のみ。",
       "verdict": "verified",
-      "notes": "「宗谷のたこ」頁的店家清單。"
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。店家官網寫「冬は たい焼き専門店に変わります」「6月〜9月間は、営業時間が変ります」，無衝突。"
     },
     {
       "claimId": "C68",
-      "articleExcerpt": "營業時間是8:00到16:00，冬季縮短成9:00到15:00。",
-      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1305.html",
-      "sourceTitle": "（株）魚常 明田鮮魚店｜稚内観光協会",
-      "sourceQuote": "営業時間 8:00～16:00（冬季 9:00～15:00）",
+      "articleExcerpt": "10月起這三家都停賣，野寒布岬的樺太食堂也在10月上旬冬季休業，所以10月到隔年3月這幾家都吃不到生海膽丼。",
+      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
+      "sourceTitle": "車屋・源氏 お品書き（2026/08/12 更新）",
+      "sourceQuote": "生うに・イクラ丼（5～9月） 時価 ／（うろこ亭 item10）（４月～９月限定） ／（detail_37）ひいらぎ軒 ウニ丼のご提供はウニは漁期（6月～９月）のみ ／ 樺太食堂 冬期休業 (10月上旬～4月下旬）",
+      "verdict": "verified",
+      "notes": "新加／改寫句。三家都到 9 月為止；樺太食堂的休業從「10月上旬」開始，10 月頭幾天可能還開，但同一句已寫明是 10 月上旬休業，讀者看得出來，不算把條件寫強。4 月起有 Uroko亭，所以只寫到 3 月，正確。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "Hiiragi軒是海膽丼專門店，離JR稚內站走路約1分鐘。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "ウニ丼専門店 … アクセス：JR稚内駅から徒歩約１分",
+      "verdict": "verified",
+      "notes": "店家官網：漁師が営む小さな #ウニ丼 専門店です。"
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "海膽季以外改賣鯛魚燒。",
+      "sourceUrl": "https://hiiragiken200620.wixsite.com/unidon",
+      "sourceTitle": "うに丼 | ひいらぎ軒（公式、© 2024 HIIRAGIKEN）",
+      "sourceQuote": "冬は #たい焼き 専門店に変わります！",
       "verdict": "verified",
       "notes": ""
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "海膽丼數量有限，店家建議透過官網或社群私訊預約。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "数量限定のため、事前にお店の公式HPまたはDMでご予約の上、ご来店ください。",
+      "verdict": "verified",
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。店家官網首頁只寫「お店の情報はSNSから随時、発信中」，沒有寫取消預約。"
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "營業11:00到15:00，最後點餐14:30，公休不固定。",
+      "sourceUrl": "https://hiiragiken200620.wixsite.com/unidon",
+      "sourceTitle": "うに丼 | ひいらぎ軒（公式、© 2024 HIIRAGIKEN）",
+      "sourceQuote": "HOURS 11:00~15:00(LO.14:30) 定休日：不定休",
+      "verdict": "verified",
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "6月到9月營業時間會調整，最新時間看店家的官方社群。",
+      "sourceUrl": "https://hiiragiken200620.wixsite.com/unidon",
+      "sourceTitle": "うに丼 | ひいらぎ軒（公式、© 2024 HIIRAGIKEN）",
+      "sourceQuote": "6月〜9月間は、営業時間が変ります。 ／ お店の情報はSNSから随時、発信中です。",
+      "verdict": "verified",
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "付款收現金或QR支付。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "お支払い方法：現金・QRコード決済",
+      "verdict": "verified",
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。店家官網未寫付款方式。"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "野寒布岬的樺太食堂人氣菜是生海膽三色丼，放了生海膽、蟹肉，還有生扇貝與醃漬扇貝兩種扇貝。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "人気メニューは「生うに三色丼」。生ウニ・カニと生ホタテ、漬けホタテのホタテ2種類が乗った何とも豪華な海鮮丼です。",
+      "verdict": "verified",
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。"
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "營業9:00到14:30，最後點餐14:00，只收現金。10月上旬到4月下旬冬季休業。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "営業時間：09:00～14:30 (L/O 14:00） 定休日：不定休・冬期休業 (10月上旬～4月下旬） … お支払い方法：現金",
+      "verdict": "verified",
+      "notes": "觀光協會海鮮丼特輯 2022-12-28，頁面註明營業時間與公休可能變動。detail_37 連的官網 unidon.net 已是停放網域，無法再確認。"
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "和漁師之店在同一站下車，再走約4分鐘。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "（漁師の店）駅前バスターミナル～ノシャップ(バスで約１０分）、下車後、徒歩約２分 ／（樺太食堂）駅前バスターミナル～ノシャップ(バスで約10分）、下車後、徒歩約4分",
+      "verdict": "verified",
+      "notes": "改寫句。兩家都在ノシャップ下車。"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "在稚內想吃拉麵，最有在地特色的是稚內炒麵。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "チャーメンは稚内市民が愛するソウルフード … 市内の多くの飲食店で提供され … 稚内のようにソウルフードと言えるほど浸透はしていないようです（他地域）",
+      "verdict": "verified",
+      "notes": "改寫句，「最有在地特色」是編輯判斷，有觀光協會「ご当地グルメ」「ソウルフード」「あんかけ焼きラーメン」撐。"
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "它用煮過的中華麵下鍋煎出焦脆，再淋上海鮮、豬肉與蔬菜的勾芡。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "作り方は、茹でた中華麺に油を引いた中華鍋で軽く焼き目をつけ、魚介や豚肉、野菜など具材がたっぷり入った”あんかけ”を焼いた麺に乗せ完成。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "觀光協會把它叫作勾芡煎拉麵。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "チャーメンは”茹でた中華麺”を使い油で炒めるのが特徴。ありそうでない「あんかけ焼きラーメン」なのです。",
+      "verdict": "verified",
+      "notes": "新加句。"
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "鹽味、醬油、味噌各店不同，可以依喜好加醋。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "食べ方は、お好みでお酢をかけ … 味も醤油、塩、味噌などお店の数だけ味のバリエーションがあります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "剛下火車或等車時，和車站相連的KITAcolor（キタカラ）1樓有Fuji田賣海鮮稚內炒麵。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "お食事処 ふじ田のチャーメンは、海鮮がたっぷり入った海鮮チャーメン。… 列車の到着後・出発前にサッと食べられる … 住所：稚内市中央3-6-1 キタカラ1階",
+      "verdict": "verified",
+      "notes": "キタカラ與車站相連見 detail_1069：●JR稚内駅直結。觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "營業10:00到16:00，只收現金。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "（お食事処 ふじ田）営業時間：10:00～16:00 … お支払方法：現金",
+      "verdict": "verified",
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "拉麵大王本店（ラーメン大王本店）離車站走路約4分鐘，稚內炒麵有鹽味和醬油兩種。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "チャーメンは塩味・醤油味の二種類からお好みで！ … アクセス：JR稚内駅から徒歩約4分",
+      "verdict": "verified",
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "平日營業11:30到14:30、17:00到20:00，週六日與國定假日11:30到20:00中間不休息。週三公休，只收現金。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "営業時間：平日 11:30～14:30,17:00～20:00 土日祝 11:30～20:00 定休日：水曜日 … お支払方法：現金",
+      "verdict": "verified",
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "副港市場裡有兩家，從車站走路約13分鐘。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "（てっぺん食堂）住所：稚内市港1-6-28 稚内副港市場 … 徒歩約13分 ／（北の台所 なごみ）住所：稚内市港1-6-28 副港市場2F … 徒歩約13分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "Teppen食堂的鐵板稚內炒麵是醬油口味，北之台所Nagomi（北の台所 なごみ）是鹽味。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "てっぺん食堂の鉄板チャーメン … チャーメンは醤油ベースとなります。 ／ 塩ベースの濃厚なあんと野菜のうまみが絡むチャーメン",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "Nagomi營業分成11:00到15:00、17:00到22:00兩段。",
+      "sourceUrl": "https://fukkoichiba.hokkaido.jp/meal/",
+      "sourceTitle": "お食事 〜稚内副港市場〜（副港市場公式、トップのお知らせは2026.10.01更新）",
+      "sourceQuote": "北の台所 なごみ … 営業時間 昼11:00〜15:00 夜17:00〜22:00",
+      "verdict": "verified",
+      "notes": "驗收後第 1 輪改寫，2026-11-01 重開來源確認。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "它和溫泉港之湯（港のゆ）在同一層，港之湯休館時也跟著休。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "同じフロアにあるヤムワッカナイ温泉「港のゆ」 … 定休日：不定休（港のゆが定休日の場合、お休みとなります）",
+      "verdict": "verified",
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。副港市場官網說なごみ「温泉施設とつながっている」，未寫公休。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "Teppen食堂沒有公休日，週三遇上拉麵大王公休，白天可以改去這裡。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "（てっぺん食堂）定休日：なし ／（ラーメン大王本店）定休日：水曜日",
+      "verdict": "verified",
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。依兩店資料推得的建議。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "晚上才開的有Yoshioka食堂（食堂よしおか）與拉麵廣宣（ラーメン広宣），稚內炒麵都是醬油口味，也都只收現金。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "（食堂よしおか）夜のみの営業 … チャーメンは醤油ベース … お支払方法：現金 ／（ラーメン広宣）チャーメンは醤油ベースとなります。… お支払い方法：現金",
+      "verdict": "verified",
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "Yoshioka食堂離車站走路約4分鐘，營業18:00到22:00。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "営業時間：18:00～22:00 … アクセス：JR稚内駅から徒歩約4分",
+      "verdict": "verified",
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "除了炒麵，也有定食、丼飯、拉麵、關東煮與海鮮單點。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "夜のみの営業ですが、定食、丼物、おでん、ラーメン、魚介・海鮮の一品料理があり",
+      "verdict": "verified",
+      "notes": "新加「拉麵」，原文有。觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "拉麵廣宣走路約5分鐘，營業18:00到22:30，每月第1或第2個週一公休。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "営業時間：18:00～22:30 定休日：第１または第２月曜日 アクセス：JR稚内駅から徒歩約5分",
+      "verdict": "verified",
+      "notes": "觀光協會チャーメン特輯，頁面註明營業時間與公休可能變動；未找到店家官網或官方社群。"
+    },
+    {
+      "claimId": "C95",
+      "articleExcerpt": "想吃一般的拉麵，中午可以去副港市場的Teppen食堂，晚上可以去Yoshioka食堂。",
+      "sourceUrl": "https://fukkoichiba.hokkaido.jp/meal/",
+      "sourceTitle": "お食事 〜稚内副港市場〜（副港市場公式、トップのお知らせは2026.10.01更新）",
+      "sourceQuote": "てっぺん食堂 … 和食・洋食・ラーメン・海鮮丼などの多種多様なお料理を楽しめます … 営業時間 11:00〜15:00（メニュー写真：塩ラーメン、醤油ラーメン） ／（detail_40 食堂よしおか）夜のみの営業ですが、定食、丼物、おでん、ラーメン … 18:00～22:00",
+      "verdict": "verified",
+      "notes": "改寫句。"
+    },
+    {
+      "claimId": "C96",
+      "articleExcerpt": "吃車屋源氏的章魚涮涮鍋，最後也能加稚內拉麵收尾。",
+      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
+      "sourceTitle": "車屋・源氏 お品書き（2026/08/12 更新）",
+      "sourceQuote": "たこしゃぶ鍋　3,800円 〆には稚内ラーメンをつけ麺でどうぞ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C97",
+      "articleExcerpt": "住在離JR稚內站走路約3分鐘的天北之湯Dormy Inn稚內（天北の湯 ドーミーイン稚内）的人，自助早餐裡也吃得到稚內炒麵。",
+      "sourceUrl": "https://www.hotespa.net/hotels/wakkanai/",
+      "sourceTitle": "天然温泉 天北の湯 ドーミーイン稚内",
+      "sourceQuote": "JR稚内駅から徒歩約3分。 ／ 地元メニュー「チャーメン」の追加で品数アップ … 朝食は、全国のドーミーインチェーン共通の和洋バイキング",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "宗谷黑牛是在日本最北的宗谷岬牧場養大的品牌牛，赤身味道濃、肉質軟。",
+      "sourceUrl": "https://www.north-hokkaido.com/gourmet",
+      "sourceTitle": "グルメ・お土産｜きた・北海道",
+      "sourceQuote": "日本最北の宗谷岬牧場で飼育されたブランド牛「宗谷黒牛」。…濃厚な赤身と淡泊な脂肪の絶妙なハーモニーが特徴。柔らかい肉質",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C99",
+      "articleExcerpt": "牛排館Vin（ステーキハウス Vin）以宗谷牛出名，在《米其林指南北海道》2012與2017特別版都拿到一星。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/gourmet-local",
+      "sourceTitle": "ご当地グルメ大集合！稚内・利尻・礼文に行くなら絶対に食べたいおすすめメニュー｜きた・北海道",
+      "sourceQuote": "「ステーキハウスVin（ヴァン）」は、宗谷牛が食べられるお店として知られ、ミシュランガイド北海道2012特別版と北海道2017特別版で1つ星を獲得しています！",
+      "verdict": "verified",
+      "notes": "公開榜單事實，正文沒寫成現況。"
+    },
+    {
+      "claimId": "C100",
+      "articleExcerpt": "車屋源氏也吃得到，宗谷黑牛鐵板燒是含稅2,500日圓。",
+      "sourceUrl": "http://kurumaya-genji.jp/menu.html",
+      "sourceTitle": "車屋・源氏 お品書き（2026/08/12 更新）",
+      "sourceQuote": "宗谷黒牛の鉄板焼　2,500円 ／ ※価格は全て税込みです。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C101",
+      "articleExcerpt": "稚內必買的伴手禮可以在車站的伴手禮店、Uroko市與副港市場的魚店買。",
+      "sourceUrl": "http://wakkanai-brand.jp/genzairyou/g01_souyanohotate.html",
+      "sourceTitle": "宗谷のほたて貝 | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "（販売店）うろこ市 稚内市中央5丁目6-8 ／ 魚常明田鮮魚店 稚内市港1丁目6-28副港市場 ／ ワッカナイセレクト 稚内市中央3丁目6-1　キタカラ1F",
+      "verdict": "verified",
+      "notes": "「必買」是標題用語，正文接著介紹的是稚內品牌商品。"
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "KITAcolor和JR稚內站直接相連，裡面的伴手禮店Wakkanai Select（ワッカナイセレクト）營業9:00到19:00，搭火車前順路就能買。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1306.html",
+      "sourceTitle": "ワッカナイセレクト｜きた・北海道",
+      "sourceQuote": "カテゴリー おみやげ・ショッピング … 営業時間 9:00～19:00 アクセス JR稚内駅直結キタカラ内",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C103",
+      "articleExcerpt": "兩樣甜點都用稚內品牌的勇知馬鈴薯（勇知いも）做成，在Wakkanai Select都買得到。",
+      "sourceUrl": "https://www.north-hokkaido.com/gourmet",
+      "sourceTitle": "グルメ・お土産｜きた・北海道",
+      "sourceQuote": "じゃがいもクッキー「ワッカナイポテマルコ」や、アイス焼きプリン「ポテラーナワッカナイ」は、「勇知いも」を使用した人気のお土産。勇知いもは、果物並みの糖度を誇る稚内ブランドのジャガイモ。",
+      "verdict": "verified",
+      "notes": "兩樣商品的稚內品牌頁販售店都列ワッカナイセレクト キタカラ1F。"
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "Wakkanai Potemaruko（ワッカナイポテマルコ）是連皮做的馬鈴薯餅乾，有白巧克力與黑巧克力兩種。",
+      "sourceUrl": "http://wakkanai-brand.jp/kakouhin/12_potemaruko.html",
+      "sourceTitle": "ワッカナイ　ポテマルコ | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "「勇知いも」を皮ごと使った風味豊かなじゃがいもクッキー。中にホワイトチョコレートを入れた“しろポテマルコ”とブラックチョコレートを入れた“くろポテマルコ”があります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C105",
+      "articleExcerpt": "賞味期60天，帶回台灣送人時間比較寬裕。",
+      "sourceUrl": "http://wakkanai-brand.jp/kakouhin/12_potemaruko.html",
+      "sourceTitle": "ワッカナイ　ポテマルコ | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "保存方法 直射日光・高温多湿を避けて保存 賞味期間 60日",
+      "verdict": "verified",
+      "notes": "後半句是依賞味期與常溫保存推得的建議。"
+    },
+    {
+      "claimId": "C106",
+      "articleExcerpt": "Poterana Wakkanai（ポテラーナワッカナイ）是冰烤布丁，建議半解凍再吃。",
+      "sourceUrl": "http://wakkanai-brand.jp/kakouhin/13_poterana.html",
+      "sourceTitle": "ポテラーナ　ワッカナイ | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "ポテトカタラーナ（アイス焼きプリン）。半解凍で食べるのがおすすめです。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C107",
+      "articleExcerpt": "它要在零下18℃以下冷凍保存，帶著移動得一路保持冷凍，比餅乾麻煩。",
+      "sourceUrl": "http://wakkanai-brand.jp/kakouhin/13_poterana.html",
+      "sourceTitle": "ポテラーナ　ワッカナイ | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "保存方法 冷凍（－18℃以下）",
+      "verdict": "verified",
+      "notes": "後半句是和餅乾（常溫保存）比較的推論。"
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "想買海產的話，Uroko市是水產加工的魚店，賣稚內近海的海產與稚內品牌商品。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1398.html",
+      "sourceTitle": "うろこ市｜きた・北海道",
+      "sourceQuote": "稚内港のすぐ近くに建つ、水産加工を営む魚屋さんです。稚内近郊で獲れた新鮮な海の幸や稚内ブランド製品をお土産として購入できる",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C109",
+      "articleExcerpt": "加工場可以免費參觀，營業到下午5點，週日公休。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1398.html",
+      "sourceTitle": "うろこ市｜きた・北海道",
+      "sourceQuote": "無料の加工場見学 … 営業時間 7：30～17：00 休業日 日曜日",
+      "verdict": "verified",
+      "notes": "うろこ市官方：うろこ亭官網營業時間頁「●直売所 AM9:00～PM5:00」、uroco1.com「営業時間 9：00～17：00 定休日 日曜日」；工場見學（無料）見 item20.html。"
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "副港市場裡的魚常明田鮮魚店也賣稚內品牌的宗谷章魚，營業8:00到16:00，冬季是9:00到15:00。",
+      "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1305.html",
+      "sourceTitle": "（株）魚常　明田鮮魚店｜きた・北海道",
+      "sourceQuote": "営業時間 8:00～16:00（冬季 9:00～15:00）",
+      "verdict": "verified",
+      "notes": "賣宗谷のたこ見稚內品牌頁販售店：魚常明田鮮魚店 稚内市港1丁目6-28副港市場。"
+    },
+    {
+      "claimId": "C111",
+      "articleExcerpt": "稚內品牌的宗谷扇貝，在Uroko市、魚常明田鮮魚店與Wakkanai Select都買得到。",
+      "sourceUrl": "http://wakkanai-brand.jp/genzairyou/g01_souyanohotate.html",
+      "sourceTitle": "宗谷のほたて貝 | 稚内ブランド公式ウェブサイト",
+      "sourceQuote": "うろこ市 稚内市中央5丁目6-8 … 魚常明田鮮魚店 稚内市港1丁目6-28副港市場 … ワッカナイセレクト 稚内市中央3丁目6-1　キタカラ1F",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "延伸資料：稚內觀光協會的海鮮丼名店特集，海鮮丼魚常與野寒布岬兩家店的營業時間與付款方式。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_37.html",
+      "sourceTitle": "コスパが最高！稚内の海鮮丼の名店特集｜きた・北海道（2022.12.28）",
+      "sourceQuote": "てっぺん食堂/海鮮丼魚常 … 漁師の店 … 樺太食堂（各店に営業時間・お支払い方法を掲載）",
+      "verdict": "verified",
+      "notes": "改寫句，連結可開。"
+    },
+    {
+      "claimId": "C113",
+      "articleExcerpt": "延伸資料：稚內觀光協會的稚內炒麵特集，各店的口味、營業時間與公休；車屋源氏的菜單；稚內品牌吃得到認定品的餐廳。",
+      "sourceUrl": "https://www.north-hokkaido.com/feature/detail_40.html",
+      "sourceTitle": "稚内の”推し麺” ご当地グルメ「チャーメン」を食べに行こう！｜きた・北海道",
+      "sourceQuote": "チャーメン … 営業時間 … 定休日（各店）",
+      "verdict": "verified",
+      "notes": "menu.html、wakkanai-brand.jp/e-shop/index.html 也都可開（HTTP 200）。"
     }
   ],
   "summary": {
-    "verified": 68,
+    "verified": 113,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
