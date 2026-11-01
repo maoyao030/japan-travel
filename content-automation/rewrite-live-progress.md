@@ -139,3 +139,5 @@ HOLD：wakkanai-ferry（訂票系統 11 月上旬重開）
 - 5 小時額度 91- sounkyo-sights：**已換上 Sanity**（拿掉一條壞掉的存檔外連）
 - rishiri-island-sights、asahikawa-food、rebun-island-hiking：複查與最終判定中
 - 5 小時額度 91%（台北 09:30 重置），批次 5 暫緩
+- 已換上：rishiri-island-sights、asahikawa-food、rebun-island-hiking（main ec85654）
+- 第 4 批剩：asahikawa-sights（作者修改中）、rebun-island-sights（第二階段中）、asahidake-or-sounkyo（新 FC ad35c9ab3e390b841）
