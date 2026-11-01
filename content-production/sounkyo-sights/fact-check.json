@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "sounkyo-sights",
-  "articleSha256": "718c23e71f5050d6db70b37f5a05f39d593539fd862d134d1c41e120abd591f0",
-  "checker": "事實查核子代理（Claude Opus 5.5，已上線文章重寫一輪；未參與 sounkyo-sights 的寫作、潤稿與修改；來源 2026-11-02 以 curl 重開，PDF 下載以 pdftotext 讀，奇跡のイルミネート用瀏覽器讀，道北巴士 PDF 連線失敗改看觀光協會轉貼的同版時刻表圖檔）",
+  "articleSha256": "04f77b2376668dc86c09010a30ad20f86f1db1e081f9867853895308396ca062",
+  "checker": "事實查核子代理（Claude Opus 5.5，已上線文章重寫一輪；未參與 sounkyo-sights 的寫作、潤稿與修改；來源 2026-11-02 以 curl 重開，PDF 下載以 pdftotext 讀，奇跡のイルミネート用瀏覽器讀，道北巴士 PDF 連線失敗改看觀光協會轉貼的同版時刻表圖檔）；2026-11-02 複查第 1 輪（revisions-round1.md），改寫句與新增句重新對來源",
   "checkedAt": "2026-11-02",
   "claims": [
     {
@@ -43,21 +43,21 @@
     },
     {
       "claimId": "C5",
-      "articleExcerpt": "今年的班次已經結束。",
+      "articleExcerpt": "2026年的班次已在10月31日結束。",
       "sourceUrl": "https://sounkyo.net/common/img/content/content_20260630_164326.jpg",
       "sourceTitle": "層雲峡・上川線 2026.7.1改正 時刻表（道北バス、層雲峡観光協会アクセス頁掲載の画像）",
       "sourceQuote": "※層雲峡～大雪湖（令和8年7月1日～10月31日の運行）",
       "verdict": "verified",
-      "notes": "查核日 2026-11-02，已過 10/31。"
+      "notes": "複查第 1 輪：改寫成確定日期；時刻表圖檔「令和8年7月1日～10月31日の運行」。"
     },
     {
       "claimId": "C6",
-      "articleExcerpt": "巴士沒開的月份要去瀑布與大函，就是開車或叫計程車，週末也有騎自行車去瀑布的導覽團。",
+      "articleExcerpt": "巴士沒開的月份要去瀑布與大函，就是開車或叫計程車。在地的大雪山Tours（大雪山ツアーズ）也有週末騎自行車去瀑布的行程。",
       "sourceUrl": "https://sounkyo.net/enjoy/detail.html?content=78",
       "sourceTitle": "【層雲峡】大雪山アドベンチャー｜層雲峡観光協会",
       "sourceQuote": "週末は層雲峡からすぐ近くの大自然に遊びに行きましょう！｜「紅葉谷ハイキング」や「銀河流星の滝サイクリング」",
       "verdict": "verified",
-      "notes": "計程車見觀光協會交通頁「層雲峡の観光はもとより…空港や駅へのお迎えにも伺います」。觀光協會頁沒寫導覽團的營業季節，11 月到隔年春天自行車行程是否還辦無官方說法；讀者在停駛月份照這句找自行車團可能撲空。"
+      "notes": "複查第 1 輪：自行車行程不再接在巴士停駛月份後面；計程車見觀光協會交通頁。頁面沒寫行程季節，正文也沒寫季節，一致。"
     },
     {
       "claimId": "C7",
@@ -70,12 +70,12 @@
     },
     {
       "claimId": "C8",
-      "articleExcerpt": "沒車就以溫泉街為主，因為季節巴士停駛後，瀑布要叫計程車或跟導覽團，大函要叫計程車。",
+      "articleExcerpt": "沒車就以溫泉街為主，2026年的季節巴士已在10月31日停駛，瀑布與大函要叫計程車，或看看大雪山Tours有沒有騎自行車的行程。",
       "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
       "sourceTitle": "アクセス｜層雲峡観光協会",
       "sourceQuote": "タクシー 層雲峡の観光はもとより、道内観光もしております。",
       "verdict": "verified",
-      "notes": "巴士只在 7/1～10/31（時刻表圖檔）；自行車導覽見 C6 的季節備註。"
+      "notes": "複查第 1 輪：巴士 7/1～10/31（時刻表圖檔）；自行車行程寫成「看看有沒有」，與官方未寫季節一致。"
     },
     {
       "claimId": "C9",
@@ -151,12 +151,12 @@
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "12:50搭往大雪湖的巴士在大函入口下車，看完搭13:43的回程車，14:00回到溫泉街。",
+      "articleExcerpt": "中午搭往大雪湖的巴士到大函入口，看完岩壁搭同一天唯一的回程車回溫泉街。",
       "sourceUrl": "https://sounkyo.net/common/img/content/content_20260630_164326.jpg",
       "sourceTitle": "層雲峡・上川線 2026.7.1改正 時刻表（道北バス、層雲峡観光協会アクセス頁掲載の画像）",
-      "sourceQuote": "※層雲峡～大雪湖（令和8年7月1日～10月31日の運行）｜層雲峡 発 ※12:50｜滝見台 ※13:09｜大函入口 ※13:15｜大雪湖 着 ※13:23｜大雪湖 発 ※13:38｜大函入口 ※13:43｜滝見台 ※13:49｜層雲峡 着 ※14:00",
+      "sourceQuote": "層雲峡 発 ※12:50｜大函入口 発 ※13:15｜大函入口 発 ※13:43｜層雲峡 着 ※14:00",
       "verdict": "verified",
-      "notes": ""
+      "notes": "複查第 1 輪：回程方向只有一欄。"
     },
     {
       "claimId": "C18",
@@ -439,12 +439,12 @@
     },
     {
       "claimId": "C49",
-      "articleExcerpt": "2026年的開館期間是5月1日到10月31日，現在已經閉館。",
+      "articleExcerpt": "2026年是5月1日開館，已在10月31日閉館。",
       "sourceUrl": "https://sounkyo.net/view/detail.html?content=6",
       "sourceTitle": "【層雲峡】層雲峡写真ミュージアム｜層雲峡観光協会",
       "sourceQuote": "期間 5月1日（金）～10月31日（土）",
       "verdict": "verified",
-      "notes": "星期與 2026 年一致；館方部落格「来年度は令和８年５月１日より開館致します」。查核日 11/2 已過 10/31。"
+      "notes": "複查第 1 輪：星期（金、土）與 2026 年一致；館方部落格「来年度は令和８年５月１日より開館致します」。"
     },
     {
       "claimId": "C50",
@@ -511,12 +511,12 @@
     },
     {
       "claimId": "C57",
-      "articleExcerpt": "瀑布一帶秋天也會轉紅。以2024年為例，遊客中心10月1日公告這裡的紅葉正好看。",
+      "articleExcerpt": "瀑布一帶10月上旬也會轉紅。",
       "sourceUrl": "https://sounkyovc.net/blog/90389",
       "sourceTitle": "銀河・流星の滝 | 層雲峡ビジターセンター",
       "sourceQuote": "2024年10月1日｜温泉街から3㎞離れたところにある銀河・流星の滝。…今、こちらも紅葉が見頃です。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "複查第 1 輪：2024-10-01 公告瀑布紅葉見頃；2026 年遊客中心 blog/92581 寫溫泉街 10 月上旬紅葉高峰。"
     },
     {
       "claimId": "C58",
@@ -574,30 +574,30 @@
     },
     {
       "claimId": "C64",
-      "articleExcerpt": "去大函，7月到10月每天有一班道北巴士可以搭，2026年已在10月31日停駛。瀑布則要叫計程車或跟導覽團。",
+      "articleExcerpt": "去大函，7月到10月每天有一班道北巴士可以搭，2026年已在10月31日停駛。瀑布則要叫計程車，或看看大雪山Tours有沒有騎自行車的行程。",
       "sourceUrl": "https://sounkyo.net/common/img/content/content_20260630_164326.jpg",
       "sourceTitle": "層雲峡・上川線 2026.7.1改正 時刻表（道北バス、層雲峡観光協会アクセス頁掲載の画像）",
       "sourceQuote": "※層雲峡～大雪湖（令和8年7月1日～10月31日の運行）｜大函入口 発 ※13:15",
       "verdict": "verified",
-      "notes": "時刻表上同一班也停「滝見台」（13:09、13:49），但沒有官方說明滝見台站與瀑布的位置關係；正文表格列了瀧見台、內文又說瀑布要叫計程車，讀者可能困惑能不能在瀧見台下車看瀑布。"
+      "notes": "複查第 1 輪：時刻表的瀧見台兩列已刪，正文不再出現瀧見台，原本的困惑消除。"
     },
     {
       "claimId": "C65",
-      "articleExcerpt": "去程時刻表：層雲峡12:50發、瀧見台13:09、大函入口13:15、大雪湖13:23到",
+      "articleExcerpt": "去程時刻表：層雲峽12:50發車、大函入口13:15、大雪湖13:23抵達",
       "sourceUrl": "https://sounkyo.net/common/img/content/content_20260630_164326.jpg",
       "sourceTitle": "層雲峡・上川線 2026.7.1改正 時刻表（道北バス、層雲峡観光協会アクセス頁掲載の画像）",
-      "sourceQuote": "層雲峡 発 ※12:50｜滝見台 発 ※13:09｜大函入口 発 ※13:15｜大雪湖 着 ※13:23",
+      "sourceQuote": "層雲峡 発 ※12:50｜大函入口 発 ※13:15｜大雪湖 着 ※13:23",
       "verdict": "verified",
-      "notes": ""
+      "notes": "複查第 1 輪：瀧見台列刪除，其餘時刻不變。"
     },
     {
       "claimId": "C66",
-      "articleExcerpt": "回程時刻表：大雪湖13:38發、大函入口13:43、瀧見台13:49、層雲峡14:00到",
+      "articleExcerpt": "回程時刻表：大雪湖13:38發車、大函入口13:43、層雲峽14:00抵達",
       "sourceUrl": "https://sounkyo.net/common/img/content/content_20260630_164326.jpg",
       "sourceTitle": "層雲峡・上川線 2026.7.1改正 時刻表（道北バス、層雲峡観光協会アクセス頁掲載の画像）",
-      "sourceQuote": "大雪湖 発 ※13:38｜大函入口 発 ※13:43｜滝見台 発 ※13:49｜層雲峡 着 ※14:00",
+      "sourceQuote": "大雪湖 発 ※13:38｜大函入口 発 ※13:43｜層雲峡 着 ※14:00",
       "verdict": "verified",
-      "notes": ""
+      "notes": "複查第 1 輪：瀧見台列刪除，其餘時刻不變。"
     },
     {
       "claimId": "C67",
@@ -628,12 +628,12 @@
     },
     {
       "claimId": "C70",
-      "articleExcerpt": "叫車要打電話，不會講日文可以到巴士總站裡的觀光服務處問。",
+      "articleExcerpt": "叫車要打電話，叫車前先問清楚到瀑布、大函來回大約多少錢，以及能不能刷卡。不會講日文，可以到巴士總站裡的觀光服務處問怎麼叫車。",
       "sourceUrl": "https://www.daisetsuzantours.com/service",
       "sourceTitle": "サービス｜大雪山ツアーズ",
       "sourceQuote": "層雲峡バスターミナル内にある観光案内所です。層雲峡周辺や層雲峡温泉の情報など気軽にお問い合わせください。",
       "verdict": "verified",
-      "notes": "觀光協會交通頁只列計程車電話，沒有網路叫車；案內所是否代為叫車頁面沒寫，正文寫成「可以到…問」屬建議。"
+      "notes": "複查第 1 輪：觀光協會交通頁只列計程車電話；車資與付款方式寫成讀者要先問的事，沒寫結論；案內所寫「問怎麼叫車」，不寫代叫，和頁面「気軽にお問い合わせ」一致。"
     },
     {
       "claimId": "C71",
@@ -823,10 +823,37 @@
       "sourceQuote": "参加対象 … 日本語での意思疎通が可能な、国内在住の１０歳から７０歳までの方。",
       "verdict": "verified",
       "notes": "春季觀察會同樣「国内在住の10歳以上」。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "瀑布離溫泉街約3公里，大函約6公里。",
+      "sourceUrl": "https://sounkyovc.net/blog/90389",
+      "sourceTitle": "銀河・流星の滝 | 層雲峡ビジターセンター",
+      "sourceQuote": "温泉街から3㎞離れたところにある銀河・流星の滝。",
+      "verdict": "verified",
+      "notes": "複查第 1 輪新增（F330）；大函約 6 公里見觀光協會大函頁「層雲峡温泉より北見方面へ約６Km」。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "出發前可以到巴士總站的觀光服務處問當季有沒有出團。",
+      "sourceUrl": "https://www.daisetsuzantours.com/service",
+      "sourceTitle": "サービス｜大雪山ツアーズ",
+      "sourceQuote": "層雲峡バスターミナル内にある観光案内所です。層雲峡周辺や層雲峡温泉の情報など気軽にお問い合わせください。",
+      "verdict": "verified",
+      "notes": "複查第 1 輪新增；案內所列在大雪山ツアーズ自己的服務頁，屬建議句。"
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "沒有車的話，預約時確認能不能從溫泉街接送。",
+      "sourceUrl": "https://www.alpineriver-guides.com/",
+      "sourceTitle": "Alpine River Guides",
+      "sourceQuote": "層雲峡温泉はアルパインリバーガイドのベースから約15分ほどです。",
+      "verdict": "verified",
+      "notes": "複查第 1 輪新增；建議句，沒有寫接送有無的結論，和官網一致（基地在溫泉街外約 15 分）。"
     }
   ],
   "summary": {
-    "verified": 91,
+    "verified": 94,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

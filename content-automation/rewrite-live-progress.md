@@ -126,3 +126,14 @@ HOLD：wakkanai-ferry（訂票系統 11 月上旬重開）
 - asahidake-hiking：作者修改完（F246、F247），SHA d79d32b8；複查與最終判定中
 - rebun-island-hiking：FC 114/113，C106 incorrect；第二階段帶協調者規則（存檔只撐不太變的事實）
 - rebun-island-sights：作者補來源後 52 筆事實（F564～F567）；SHA 07efa1bc；FC、讀者已派
+- 已推 main f6ed720（利尻山、旭岳登山換上）
+- asahidake-or-sounkyo：舊 FC 卡住已停，新 FC 已派（SHA c9d0cc35）；讀者 a42e6c2a3ccc47ad2 等第二階段，作者 a0f5579fa98bc5f6c
+- sounkyo-sights：作者修改中（a873624899fd66d8c）
+- rebun-island-hiking：作者修改中（a07ba50d8bc952b71）；WP API 算現行官方
+- rishiri-island-sights：作者修改中（a6cbf7b338169863b）
+- asahikawa-food：第二階段中（C78 18 處）
+- rebun-island-sights：讀者第一階段完成（必修 3），等 FC a36cedfe6e2e074ff
+- asahikawa-sights：等 FC aeb3b5fe476f520d1
+- sounkyo-sights：**已換上 Sanity**（drop 了一條壞掉的存檔外連）
+- rishiri-island-sights、asahikawa-food、rebun-island-hiking：複查與最終判定中
+- 5 小時額度 91
