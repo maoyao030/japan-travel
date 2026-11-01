@@ -236,6 +236,10 @@ export const JAPANESE_STYLE_WORDS = {
   混雜: '擁擠',
   最寄: '最近的',
   入場料: '門票',
+  // 2026-11-01 層雲峽交通讀者驗收提出
+  交互通行: '單線輪流通行',
+  協力金: '環境維護費、清潔費（照用途寫）',
+  都市間巴士: '長途巴士、城際巴士',
 }
 const JAPANESE_STYLE_PATTERN = new RegExp(Object.keys(JAPANESE_STYLE_WORDS).join('|'), 'g')
 

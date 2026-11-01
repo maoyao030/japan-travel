@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-weather",
+  "articleSha256": "90bfcd25013b6b90c7c88a294ee550740a3d975e5854b4562e12cb9d3b138b9a",
+  "checker": "事實查核 agent（Claude Opus 5.5，本機自動執行，非作者；唯讀，2026-10-24 以 curl 實際讀取氣象廳、りしぷら、利尻富士町、宗谷バス、ホテル利尻、HOKKAIDO LOVE! 各頁，PDF 下載後以 PyMuPDF 轉圖閱讀；第 1 輪修改後逐句複查，氣象廳預報頁需 JavaScript，以瀏覽器打開讀取後關閉；第 3 輪複查以上一版內容反向替換重算 SHA，確認只改三處四句，再以瀏覽器重查市町村選択）",
+  "checkedAt": "2026-10-24",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "利尻島正中央是標高1,721公尺的獨立峰利尻山。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1396.htm",
+      "sourceTitle": "登山情報｜利尻富士町",
+      "sourceQuote": "日本最北の島に美しい姿を見せる標高1,721mの独立峰、別名「利尻富士」",
+      "verdict": "verified",
+      "notes": "「正中央」原頁未寫，屬地理常識，不影響。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "島西岸沓形觀測站的年平均氣溫只有7.4℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "年 916.2 7.4 10.3 4.3 3.8 1492.5",
+      "verdict": "verified",
+      "notes": "欄位：降水量、平均気温、日最高、日最低、平均風速、日照時間。「島西岸」見 C56。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "最熱的8月平均也不到20℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "8月 118.2 19.9 23.1 16.6 2.7 162.0",
+      "verdict": "verified",
+      "notes": "8 月 19.9℃ 為全年最高月平均（7 月 18.0、9 月 17.3）。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "11月起天候惡劣的日子變多，渡輪停航也跟著變多／因為這個月起天候惡劣的日子一多，渡輪停航也跟著增加。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "１１月・NOVEMBER … 厳しい天候が多くなり、フェリーの欠航が多くなります。",
+      "verdict": "verified",
+      "notes": "開頭與停航 H2 第一段為同一事實。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "晚秋到冬天的行程排法會因此不同。／11月以後前往利尻島，預定離開的那天之後最好再空一天……船停一天，後面的行程就整個往後延，排在同一天的轉機或回台班機很可能趕不上。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "厳しい天候が多くなり、フェリーの欠航が多くなります。",
+      "verdict": "verified",
+      "notes": "編輯判斷，依據 11 月停航變多（F181）與 11、12 月平均風速最大（氣象廳 4.8 m/s），判斷合理。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "這頁的數字是氣象廳沓形觀測站1991年到2020年的平年值，也就是30年的平均，不是天氣預報。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "統計期間 1991～2020",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "全年雨量916.2毫米",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "年 916.2 7.4 10.3 4.3 3.8 1492.5",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "8月到11月每個月都超過100毫米，夏末到晚秋是島上雨最多的時候。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "8月 118.2 ／ 9月 117.9 ／ 10月 117.5 ／ 11月 106.5 ／ 7月 93.8 ／ 12月 72.6",
+      "verdict": "verified",
+      "notes": "其他月份都在 100 毫米以下。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "6月到9月白天與早晚只差7℃左右，帶一件能穿脫的薄外套就夠，不同月份換的是外套的厚薄。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "6月 … 17.3 10.4 ／ 7月 … 21.4 14.9 ／ 8月 … 23.1 16.6 ／ 9月 … 20.6 13.5",
+      "verdict": "verified",
+      "notes": "重算：6.9、6.5、6.5、7.1℃。後半是依日較差的穿著判斷；收斂輪改寫後與夏季 H3「早晚加一件薄長袖或薄外套」、6 月「刷毛或薄羽絨外套」一致（後者由「不同月份換的是外套的厚薄」涵蓋）。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "各月平均氣溫、平均最高、平均最低、降水量表格（1月−4.0／−1.8／−6.4／46.4 … 12月−1.8／0.5／−4.2／72.6）",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "1月 46.4 -4.0 -1.8 -6.4 ／ 2月 33.3 -3.8 -1.4 -6.5 ／ 3月 34.8 -0.3 2.1 -3.2 ／ 4月 41.2 4.6 7.6 1.4 ／ 5月 68.4 9.6 13.2 6.1 ／ 6月 62.1 13.7 17.3 10.4 ／ 7月 93.8 18.0 21.4 14.9 ／ 8月 118.2 19.9 23.1 16.6 ／ 9月 117.9 17.3 20.6 13.5 ／ 10月 117.5 11.5 14.4 8.0 ／ 11月 106.5 4.0 6.7 1.2 ／ 12月 72.6 -1.8 0.5 -4.2",
+      "verdict": "verified",
+      "notes": "第 1 輪複查再逐格比對，48 個數字全部一致，欄位對應正確。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "3月的利尻島還是冬天，月平均−0.3℃、白天最高約2℃。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "3月 34.8 -0.3 2.1 -3.2 4.2 133.1",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "每年這時還有低氣壓帶來的暴風，當地稱為「彼岸荒れ」。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "「彼岸荒れ」と呼ばれる発達した低気圧の嵐が毎年おこり、嵐がすぎると春は間近です。",
+      "verdict": "verified",
+      "notes": "列在３月・MARCH。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "4月白天平均最高7.6℃、早晚1.4℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "4月 41.2 4.6 7.6 1.4 3.7 173.0",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "5月才回暖到平均9.6℃，早晚仍只有6℃左右",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "5月 68.4 9.6 13.2 6.1 3.3 184.3",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "利尻山麓這時還留著殘雪，……那一帶可以玩雪。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "５月・MAY … 利尻山裾野には雪が残り、見返台園地などでは雪遊びができます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "見返台園地5月中旬開放後",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/mikaeridai/",
+      "sourceTitle": "見返台園地 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業期間 5月中旬～１０月中旬 ／ 冬期は積雪による道路閉鎖あり。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "最熱的8月白天平均最高也只有23.1℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "8月 118.2 19.9 23.1 16.6 2.7 162.0",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "6月早晚平均10.4℃，短袖之外再帶一件刷毛或薄羽絨外套。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "6月 62.1 13.7 17.3 10.4 2.9 153.4",
+      "verdict": "verified",
+      "notes": "穿著建議是依平年值的編輯判斷。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "7月與8月白天平均最高在21℃到23℃之間，早晚約15℃到17℃。白天穿短袖就夠，早晚加一件薄長袖或薄外套。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "7月 93.8 18.0 21.4 14.9 2.6 152.5 ／ 8月 118.2 19.9 23.1 16.6 2.7 162.0",
+      "verdict": "verified",
+      "notes": "第 1 輪新句。平均最高 21.4、23.1；平均最低 14.9、16.6，取整後與「21～23℃」「約15～17℃」一致。穿著為編輯判斷。"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "8月的雨量118.2毫米，是全年最多的月份",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "8月 118.2 ／ 9月 117.9 ／ 10月 117.5",
+      "verdict": "verified",
+      "notes": "118.2 為 12 個月最大值（與 9、10 月相差不到 1 毫米）。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "9月平均17.3℃，跟7月的18.0℃差不多",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "7月 93.8 18.0 ／ 9月 117.9 17.3",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "10月平均降到11.5℃",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "10月 117.5 11.5 14.4 8.0 4.3 137.7",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "上旬是利尻山頂開始積雪的初冠雪時期，下旬平地也可能飄雪",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "１０月・OCTOBER 上旬は、利尻山の初冠雪が見られる時期です。… 下旬には、平地にも雪が舞う時期です。",
+      "verdict": "verified",
+      "notes": "第 1 輪改用「時期」「可能」，與原文語氣一致。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "氣溫降最快的是11月，月平均從10月的11.5℃一口氣掉到4.0℃，早晚只剩1.2℃。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "10月 117.5 11.5 14.4 8.0 ／ 11月 106.5 4.0 6.7 1.2",
+      "verdict": "verified",
+      "notes": "重算相鄰月差：10→11 月 7.5℃；9→10 月 5.8、11→12 月 5.8，其他更小。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "這個月利尻山從山頂白到山腳，下旬平地開始積雪。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "利尻山は裾野まで真っ白な雪化粧をし、下旬には平地でも根雪となります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "日照也少了一大截，9月還有175.1小時，11月只剩65.8小時，不到四成。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "9月 117.9 17.3 20.6 13.5 3.3 175.1 ／ 11月 106.5 4.0 6.7 1.2 4.8 65.8",
+      "verdict": "verified",
+      "notes": "重算 65.8÷175.1＝0.376，不到四成正確。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "12月平均−1.8℃，白天最高也只有0.5℃，一整個月的日照不到38小時。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "12月 72.6 -1.8 0.5 -4.2 4.8 37.8",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "1月與2月更冷，連白天都在零下。平均最高是−1.8℃與−1.4℃，早晚約−6℃。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "1月 46.4 -4.0 -1.8 -6.4 ／ 2月 33.3 -3.8 -1.4 -6.5",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "11月下旬起平地就有積雪，12月的雪則是積了又融，路面容易濕滑，鞋子選防水、鞋底防滑的款式。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "１１月 … 下旬には平地でも根雪となります。／１２月・DECEMBER（沓形エリアのデータです）雪が積もったり融けたりを繰り返し、少しずつ冬色に染まります。",
+      "verdict": "verified",
+      "notes": "第 1 輪改寫（F181、F185），兩欄原文都涵蓋。「路面容易濕滑」原頁沒寫，是由「積了又融」推出的編輯判斷，用來帶出鞋子建議，判斷合理。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "12月的平均風速每秒4.8公尺，與11月並列一年最大。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "11月 … 4.8 65.8 ／ 12月 … 4.8 37.8 ／ 1月 … 4.6",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "沓形的風在7月最弱，平均每秒2.6公尺，到了11、12月最強。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "沓形（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "7月 93.8 18.0 21.4 14.9 2.6 152.5",
+      "verdict": "verified",
+      "notes": "12 個月平均風速最小 2.6（7 月），最大 4.8（11、12 月）。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "島北側機場一帶的風更大，那裡的本泊觀測站",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/select/prefecture.php?prec_no=11&block_no=&year=&month=&day=&view=",
+      "sourceTitle": "気象庁｜過去の気象データ検索（宗谷地方 地点選択）",
+      "sourceQuote": "viewPoint('a','1512','本泊','モトドマリ','45','14.5','141','11.2' … ／ viewPoint('a','0002','沓形','クツガタ','45','10.7','141','08.3' …",
+      "verdict": "verified",
+      "notes": "本泊站北緯 45°14.5′，比沓形 45°10.7′ 偏北；利尻空港地址為「北海道利尻郡利尻富士町鴛泊本泊１１４３番地」（https://www.rishiri-plus.jp/shima-place/rishiri-airport/），與本泊站同地區。延伸資料「島北側機場一帶的氣溫與風速」同。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "本泊觀測站全年平均風速每秒6.4公尺，將近沓形3.8公尺的1.7倍",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1512&year=&month=&day=&view=",
+      "sourceTitle": "本泊（宗谷地方)　平年値（年・月ごとの値）　主な要素｜気象庁",
+      "sourceQuote": "年 /// 7.1 10.1 3.8 6.4 /// /// ///",
+      "verdict": "verified",
+      "notes": "沓形年平均風速 3.8（沓形頁「年 916.2 7.4 10.3 4.3 3.8」）。重算 6.4÷3.8＝1.68，「將近 1.7 倍」正確。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "爬利尻山時，就算山腳覺得熱，山頂附近也可能不到10℃，夏天登山一樣要帶保暖衣物。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/secure/1717/02-1%20%E6%B3%A8%E6%84%8F%E5%96%9A%E8%B5%B7%E3%83%81%E3%83%A9%E3%82%B7%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89.pdf",
+      "sourceTitle": "夏の利尻山に登る皆さまへ～安全で快適な登山のために～",
+      "sourceQuote": "ふもとは暑くても山頂付近は10℃以下になることもあります。／十分な食料、水、防寒具など、万全な装備を準備しましょう。",
+      "verdict": "verified",
+      "notes": "令和8年（2026年）6月18日 稚内地方気象台等聯名傳單。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "6合目以上已經超出森林線，沒有樹擋風。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/tozan/",
+      "sourceTitle": "利尻山登山 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊コースは、沓形コースと同じく6合目あたりで森林限界を超えます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "在6合目要是風大到連雨衣都穿不上，就該折返。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/tozan/",
+      "sourceTitle": "利尻山登山 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "6合目でカッパを着られないほどの強風が吹いていた場合、ここが引き返す際のポイントになります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "札幌丘珠機場全年都有飛利尻的航班",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1416.htm",
+      "sourceTitle": "利尻島へのアクセス｜利尻富士町",
+      "sourceQuote": "飛行機は通年運航で丘珠から、利尻島までひとっ飛びできます。",
+      "verdict": "verified",
+      "notes": "頁面 title 標籤為「交通アクセス｜利尻富士町」，頁內標題為「利尻島へのアクセス」，資料來源標題可接受。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "航程約50分鐘，平常一天1個來回。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/rishiri-airport/",
+      "sourceTitle": "利尻空港 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "札幌の丘珠空港から利尻まで(約50分)の便が1日1往復就航しており、夏場には土日祝を中心に1日2往復になります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "冬天開著的住宿比夏天少，被天氣困在島上多住一晚時選擇不多",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/marin-hotel/",
+      "sourceTitle": "利尻マリンホテル | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業期間 ３月〜１０月 定休日 １１月〜２月は休館します。",
+      "verdict": "verified",
+      "notes": "由多間住宿冬季休館推得（マリンホテル、利尻富士観光ホテル 11–2 月休館，ホテル利尻冬季停止住宿），判斷合理。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "鴛泊的利尻海洋飯店（利尻マリンホテル）……11月到2月休館。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/marin-hotel/",
+      "sourceTitle": "利尻マリンホテル | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "住所 北海道利尻郡利尻富士町鴛泊字港町81-5 ／ 営業期間 ３月〜１０月 定休日 １１月〜２月は休館します。",
+      "verdict": "verified",
+      "notes": "日文原名與原頁一致；繁中譯名見 C59。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "鴛泊的……利尻富士觀光飯店（利尻富士観光ホテル），11月到2月休館。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/fujikanko-hotel/",
+      "sourceTitle": "利尻富士観光ホテル | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "住所 北海道利尻郡利尻富士町鴛泊字港町194-2 ／ 営業期間 ３月〜１０月 定休日 １１月～２月は休館します。",
+      "verdict": "verified",
+      "notes": "日文原名與原頁一致。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "沓形的利尻飯店（ホテル利尻），2026年11月30日起暫停住宿。",
+      "sourceUrl": "https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "【重要】ご宿泊の冬季休業のお知らせ | ホテル利尻",
+      "sourceQuote": "2026年11月30日より2027年3月下旬まで、ご宿泊の営業を冬季休業とさせていただきます。／当ホテルは、利尻島の西海岸・沓形（くつがた）地区に位置し",
+      "verdict": "verified",
+      "notes": "公告日 2026.10.14。資料來源標題少了開頭「【重要】」，可接受。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "全年營業的有鴛泊的旅館雪國（旅館雪国）……旅館雪國12月31日到1月5日休息",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/ryokan-yukiguni/",
+      "sourceTitle": "旅館 雪国 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "住所 北海道利尻郡利尻富士町鴛泊字港町4番地2 ／ 営業期間 通年 ／ 定休日 １２月３１日〜１月５日",
+      "verdict": "verified",
+      "notes": "正文資料來源列的是清單頁 https://www.rishiri-plus.jp/shima-htsp/（清單由 JavaScript 載入，各館營業期間在個別頁）。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "全年營業的有鴛泊的……夕陽館",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/yuuhikan/",
+      "sourceTitle": "夕陽館 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "住所 北海道利尻郡利尻富士町鴛泊字本泊 ／ 営業期間 通年",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "沓形的中原旅館等，……中原旅館年底年初也休息。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/nakahara/",
+      "sourceTitle": "中原旅館 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "住所 北海道利尻郡利尻町沓形字本町 ／ 営業期間 通年（年末年始を除く）",
+      "verdict": "verified",
+      "notes": "第 1 輪已補上年底年初休息，條件一致。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "島上的路線巴士從10月1日起換成冬季時刻表",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
+      "sourceTitle": "利尻エリア | 宗谷バス株式会社",
+      "sourceQuote": "2026年4月28日改正 ※左が夏期ダイヤ(6/1～9/30まで)、右が冬期ダイヤ(10/1～5/31まで)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "環島的A、B路線一天各4班。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス㈱利尻営業所",
+      "sourceQuote": "冬期ダイヤ（10月1日～5月31日） Aコース 鴛泊→鬼脇経由→鴛泊 便 1 2 3 4 ／ Bコース 鴛泊→沓形経由→鴛泊 便 1 2 3 4",
+      "verdict": "verified",
+      "notes": "PDF 轉圖閱讀；A、B 皆從鴛泊出發繞島回鴛泊，冬期各 4 便。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "1月1日到3日全部停駛",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
+      "sourceTitle": "利尻エリア | 宗谷バス株式会社",
+      "sourceQuote": "1月1日～3日は年始により路線バスが全便運休",
+      "verdict": "verified",
+      "notes": "時刻表 PDF 也寫「1月1日・2日・3日 全便運休です」。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "姬沼（姫沼）的步道，11月到4月關閉。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/himenuma/",
+      "sourceTitle": "姫沼 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "姫沼の周囲には約１ｋｍの遊歩道が整備され ／ 営業期間 ５月〜１０月 定休日 １１月〜４月は閉鎖します",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "白色戀人之丘（白い恋人の丘），11月上旬到4月下旬關閉。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11368.html",
+      "sourceTitle": "白い恋人の丘（沼浦展望台）｜観光スポット｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "休業日 11月上旬-4月下旬（冬季閉鎖）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "資料來源：[登山情報｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1396.htm)",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1396.htm",
+      "sourceTitle": "登山情報｜利尻富士町",
+      "sourceQuote": "<title>登山情報利尻富士町</title> ／ 頁內 H1「登山情報」",
+      "verdict": "verified",
+      "notes": "第 1 輪已改成原標題。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "資料來源：[夏の利尻山に登る皆さまへ～安全で快適な登山のために～（稚内地方気象台など7機関の注意喚起チラシ）｜利尻富士町](…02-1 注意喚起チラシ（日本語）.pdf)",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/secure/1717/02-1%20%E6%B3%A8%E6%84%8F%E5%96%9A%E8%B5%B7%E3%83%81%E3%83%A9%E3%82%B7%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89.pdf",
+      "sourceTitle": "夏の利尻山に登る皆さまへ～安全で快適な登山のために～",
+      "sourceQuote": "夏の利尻山に登る皆さまへ ～安全で快適な登山のために～ 令和８年（2026年）6月18日 稚内地方気象台 環境省稚内自然保護官事務所 北海道旭川方面稚内警察署 利尻町・利尻富士町・礼文町 北海道宗谷総合振興局",
+      "verdict": "verified",
+      "notes": "收斂輪已改成「7機関」：傳單聯名為稚内地方気象台、環境省稚内自然保護官事務所、北海道旭川方面稚内警察署、利尻町、利尻富士町、礼文町、北海道宗谷総合振興局，共 7 個機關。原標題部分正確。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "資料來源：[利尻エリア｜宗谷バス株式会社](http://www.soyabus.co.jp/routebus/rishiri)",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
+      "sourceTitle": "利尻エリア | 宗谷バス株式会社",
+      "sourceQuote": "<title>利尻エリア | 宗谷バス株式会社",
+      "verdict": "verified",
+      "notes": "第 1 輪已改成原標題。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "資料來源：[バス運行時刻表（2026年4月28日改正）｜宗谷バス㈱利尻営業所](…rishiri_r8_summer.pdf)",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（2026年4月28日改正）｜宗谷バス㈱利尻営業所",
+      "sourceQuote": "2026年4月28日改正 バス運行時刻表 宗谷バス㈱利尻営業所",
+      "verdict": "verified",
+      "notes": "第 1 輪已改成原標題。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "島西岸沓形觀測站",
+      "sourceUrl": "https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "【重要】ご宿泊の冬季休業のお知らせ | ホテル利尻",
+      "sourceQuote": "当ホテルは、利尻島の西海岸・沓形（くつがた）地区に位置し",
+      "verdict": "verified",
+      "notes": "第 1 輪新增（F186）。氣象廳站點座標也吻合：沓形 東經 141°08.3′，比本泊 141°11.2′ 偏西。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "出發前幾天的實際預報，可以看氣象廳的宗谷地方預報頁，在「市町村選択」選利尻町或利尻富士町。／延伸資料：氣象廳宗谷地方天氣預報，出發前在「市町村選択」選利尻町或利尻富士町，查實際預報。",
+      "sourceUrl": "https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=011000",
+      "sourceTitle": "気象庁 | 天気予報",
+      "sourceQuote": "宗谷地方の天気予報（明後日までの詳細） 2026年10月24日17時 稚内地方気象台 発表 … 宗谷地方 天気 … 気温 稚内 ／ 市町村選択 [ら行] 利尻町 利尻富士町 礼文町",
+      "verdict": "verified",
+      "notes": "第 3 輪複查（收斂輪改寫後）：以瀏覽器打開預報頁，點「市町村選択」後 [ら行] 列出「利尻町」「利尻富士町」「礼文町」；點「利尻町」進入 #area_type=class20s&area_code=0151800，頁面標題列「利尻町の天気予報」，內容為稚内地方気象台發表的宗谷地方預報（氣溫點仍為稚内）。按鈕文字「市町村選択」與原頁一致，正文說法正確。—— 上一輪紀錄：以瀏覽器實際打開預報頁（2026-10-24）：宗谷地方的預報只有「宗谷地方」一個預報區，氣溫只列「稚内」，頁面上找不到「利尻・礼文」字樣（展開注意警戒事項後也沒有）；讀者要在「市町村選択」選「利尻町」或「利尻富士町」。「利尻・礼文」只出現在氣象廳地區定義 area.json 的 class15s（011013，parent 011000，子項 礼文町・利尻町・利尻富士町），是警報・注意報用的細分區，預報頁不顯示；預報資料 011000.json 的 areas 也只有「宗谷地方」與「稚内」。建議改成例如「可以看氣象廳的宗谷地方預報頁，在『市町村選択』選利尻町或利尻富士町」，延伸資料說明同步改。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "資料來源：[天気予報｜気象庁](https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=011000)",
+      "sourceUrl": "https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=011000",
+      "sourceTitle": "気象庁 | 天気予報",
+      "sourceQuote": "<title>気象庁｜天気予報 ／ 宗谷地方の天気予報 … 稚内地方気象台 発表",
+      "verdict": "verified",
+      "notes": "標題與網址正確，網址打開即為宗谷地方（area_code=011000）預報。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "利尻海洋飯店（利尻マリンホテル）、利尻富士觀光飯店（利尻富士観光ホテル）、利尻飯店（ホテル利尻）、旅館雪國（旅館雪国）、姬沼（姫沼）、白色戀人之丘（白い恋人の丘）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/marin-hotel/",
+      "sourceTitle": "利尻マリンホテル | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "利尻マリンホテル ／ 利尻富士観光ホテル ／ ホテル利尻 ／ 旅館 雪国 ／ 姫沼 ／ 白い恋人の丘（沼浦展望台）",
+      "verdict": "verified",
+      "notes": "第 1 輪新增的中日對照：括號內日文與各官方頁（りしぷら、ホテル利尻官網、HOKKAIDO LOVE!）名稱一致。繁中譯名是本站譯名，content-planning/glossary.json 尚未收錄（研究記錄已列「待同步：譯名」）；利尻海洋飯店與 Agoda 上架名一致。另提醒：同群 rishiri-island-stay 正文只用日文原名，兩頁寫法不同，交讀者驗收與規劃同步譯名時統一。"
+    }
+  ],
+  "summary": {
+    "verified": 58,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}

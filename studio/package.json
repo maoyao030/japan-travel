@@ -17,7 +17,8 @@
     "release:indexable-article": "sanity exec scripts/release-indexable-article.mjs --with-user-token --",
     "prepare:parent-hub": "sanity exec scripts/prepare-parent-hub.mjs --with-user-token --",
     "prepare:child-hub": "sanity exec scripts/prepare-child-hub.mjs --with-user-token --",
-    "activate:child-hub": "sanity exec scripts/activate-child-hub.mjs --with-user-token --"
+    "activate:child-hub": "sanity exec scripts/activate-child-hub.mjs --with-user-token --",
+    "publish:article-body-replace": "sanity exec scripts/replace-article-body.mjs --with-user-token --"
   },
   "keywords": [
     "sanity"

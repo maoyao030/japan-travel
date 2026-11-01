@@ -1,39 +1,48 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay",
-  "articleSha256": "e4e5e79cb159c5ba87a68784f3ffab4b7cb9a36cd9f6bebb3683f611c3e9c588",
-  "checker": "fact-check-agent（唯讀事實查核子代理，非作者、非潤稿者；2026-10-26 以 curl 讀官網與旭川市、北海道廳頁面，Trip.com 與 Agoda 用瀏覽器分頁唯讀搜尋，未填表單未送出）；第 2 輪複查（驗收後第 1 輪修改，對照 revisions-round1.md 逐句重比全文）",
-  "checkedAt": "2026-10-26",
+  "articleSha256": "7ca3ae821267d3e875cf1259447a0acb57e294c80709730bce5464afcb5454fd",
+  "checker": "fact-check-agent（唯讀事實查核子代理，非作者、非潤稿者、非修改者；2026-11-01 以 curl 讀旭川市、北海道廳、旭川觀光コンベンション協會、旭川電氣軌道、各飯店官網與 Trip.com 詳細頁，PDF 用讀取工具看版面；Agoda 城市頁與 Trip.com 關鍵字搜尋用自己的瀏覽器分頁唯讀讀取，未填表、未下載，讀完關閉）；第 2 輪複查（驗收後第 1 輪修改，2026-11-01，對照 revisions-round1.md 逐句重比全文，改過與新增的句子重讀 OMO7 交通頁、旭川電氣軌道機場巴士時刻表、動物園開園日曆、Art／Dormy 交通頁）",
+  "checkedAt": "2026-11-01",
   "claims": [
     {
       "claimId": "C1",
       "articleExcerpt": "旭川住宿集中在兩區，一區在JR旭川站前，走路1到5分鐘就到車站。",
       "sourceUrl": "https://yshotel-asahikawa.com/",
-      "sourceTitle": "【公式】ワイズホテル旭川駅前（另見各館官網交通頁）",
+      "sourceTitle": "【公式】ワイズホテル旭川駅前（另見各館官網）",
       "sourceQuote": "JR旭川駅より徒歩1分。／（ルートイン一条通）函館本線旭川駅より徒歩約5分",
       "verdict": "verified",
-      "notes": "站前 9 間官網步行分鐘介於 1～5 分（ワイズ 1、KOKO 2、ルートインGrand 2、CABIN 3、アマネク 3、東横東口 3、ルートイン一条通 約5、東横一条通 5くらい；JRイン直結）。「集中在兩區」是依本文 12 間地址的分區編輯判斷。"
+      "notes": "站前 9 間官網：JRイン直結、ワイズ1、KOKO 2、ルートインGrand 2、CABIN 3、アマネク 3、東横東口 3、ルートイン一条通 約5、東横一条通「徒歩５分くらい」。「集中在兩區」是依本文 12 間地址分區的編輯判斷。"
     },
     {
       "claimId": "C2",
-      "articleExcerpt": "另一區是5条通到7条通的市中心，離車站要走13到15分鐘。",
+      "articleExcerpt": "另一區是5條通到7條通的市中心，離車站要走13到15分鐘。",
       "sourceUrl": "https://www.art-asahikawa.com/access/",
       "sourceTitle": "アクセス・駐車場｜【公式】アートホテル旭川（另見 OMO7、ドーミーイン官網）",
-      "sourceQuote": "〒070-0037 北海道旭川市7条通6丁目／JR旭川駅（北口）から車で5分、徒歩約15分。／（OMO7）北海道旭川市6条通9丁目 JR「旭川」駅より徒歩約13分／（ドーミーイン）旭川市５条通6丁目964-1 「旭川駅」から徒歩約15分",
+      "sourceQuote": "北海道旭川市7条通6丁目／JR旭川駅（北口）から車で5分、徒歩約15分。／（OMO7）北海道旭川市6条通9丁目 JR「旭川」駅より徒歩約13分／（ドーミーイン）旭川市５条通6丁目964-1 「旭川駅」から徒歩約15分",
       "verdict": "verified",
-      "notes": "同一事實也出現在「只不過從市中心走到JR旭川站要13到15分」一句，一併核對。"
+      "notes": "「不過走到JR旭川站要13到15分鐘」一句一併核對。"
     },
     {
       "claimId": "C3",
-      "articleExcerpt": "行程主要是旭山動物園、旭岳，或在旭川轉JR，住車站周邊最順，往動物園、旭岳與機場的巴士都能在站前搭。",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
-      "sourceQuote": "駅前バスタッチ ６ 旭山動物園行／９ 旭川空港・旭岳・富良野行",
+      "articleExcerpt": "從車站往北延伸約1公里的行人徒步區平和通買物公園連起這兩區，沿路是百貨與餐廳。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html",
+      "sourceTitle": "旭川八景 平和通買物公園｜旭川市",
+      "sourceQuote": "平和通買物公園は、昭和47年（1972年）に開設された全国初の恒久的な歩行者天国です。JR旭川駅から北へ約1km、百貨店や飲食店などが続きます。",
       "verdict": "verified",
-      "notes": "PDF 轉圖片核對版面。第 2 輪：改成「都能在站前搭」，仍由 6、9 號乘車處支持。"
+      "notes": "「連起這兩區」屬地理描述：買物公園由站前往北穿過1条通一帶到8条通附近，市中心三館在5～7条通。glossary.json 沒收「平和通買物公園」（漢字直接轉繁體），供協調者參考。"
     },
     {
       "claimId": "C4",
+      "articleExcerpt": "行程主要排動物園、旭岳，或要在旭川轉JR的人，住車站周邊最順，因為往動物園、旭岳與機場的巴士都在站前上車。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）｜旭川電気軌道",
+      "sourceQuote": "駅前バスタッチ ６ 旭山動物園行／９ 旭川空港・旭岳・富良野行",
+      "verdict": "verified",
+      "notes": "PDF 用讀取工具看版面確認。"
+    },
+    {
+      "claimId": "C5",
       "articleExcerpt": "從2026年4月起，住旭川市內每人每晚另付300到700日圓的住宿稅，依房價分三級。",
       "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
       "sourceTitle": "【旭川市内で宿泊される方へ】旭川市宿泊税制度が始まります｜旭川市",
@@ -42,457 +51,439 @@
       "notes": ""
     },
     {
-      "claimId": "C5",
-      "articleExcerpt": "站前的巴士站叫「バスタッチ」，站前的飯店走過去只要幾分鐘。",
+      "claimId": "C6",
+      "articleExcerpt": "站前的飯店走到巴士站Bus Touch（バスタッチ）只要幾分鐘。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
-      "sourceQuote": "駅前バスタッチ",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）｜旭川電気軌道",
+      "sourceQuote": "駅前バスタッチ（案內圖上站前各館位於バスタッチ周邊街區）／（CABIN官網）旭川駅前バスタッチより、徒歩5分。",
       "verdict": "verified",
-      "notes": "「走過去只要幾分鐘」：CABIN 官網「旭川駅前バスタッチより、徒歩5分」，案內圖上站前各館都在バスタッチ周邊街區，算一致。"
+      "notes": "譯名與 glossary.json「旭川駅前バスタッチ→Bus Touch」一致。"
     },
     {
-      "claimId": "C6",
-      "articleExcerpt": "往動物園搭6號乘車處，往旭川機場、旭岳與富良野搭9號。",
+      "claimId": "C7",
+      "articleExcerpt": "往動物園在6號乘車處上車，往旭川機場、旭岳與富良野在9號。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf",
-      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）",
+      "sourceTitle": "旭川駅周辺バス乗り場案内（2026年5月10日改定）｜旭川電気軌道",
       "sourceQuote": "6 旭山動物園行／9 旭川空港・旭岳・富良野行",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C7",
-      "articleExcerpt": "KOKO HOTEL 旭川駅前離站前的機場巴士乘車處也很近。",
+      "claimId": "C8",
+      "articleExcerpt": "KOKO HOTEL旭川站前（KOKO HOTEL 旭川駅前）走到9號的機場巴士乘車處特別近。",
       "sourceUrl": "https://koko-hotels.com/asahikawa_station/",
       "sourceTitle": "KOKO HOTEL 旭川駅前",
-      "sourceQuote": "JR「旭川駅」から徒歩2分、空港行きリムジンバスの発着点も至近",
+      "sourceQuote": "JR「旭川駅」から徒歩2分、空港行きリムジンバスの発着点も至近で、道内移動にとても便利な好立地です。／（巴士案內圖）KOKO HOTEL 旭川駅前 位於駅前バスタッチ 9「旭川空港・旭岳・富良野行」旁街區",
       "verdict": "verified",
-      "notes": "curl 遇到 Windows 憑證鏈錯誤，用 -k 唯讀讀取。第 2 輪改句：「発着点も至近」對應「乘車處也很近」，機場巴士在站前 9 號乘車處（巴士案內圖）。"
+      "notes": "第 2 輪複查（revisions-round1.md）：改句。官網「発着点も至近」＋旭川電氣軌道案內圖 9 號乘車處位置支持「特別近」。"
     },
     {
-      "claimId": "C8",
-      "articleExcerpt": "市中心的OMO7旭川與アートホテル旭川，搭機場巴士就能直接坐到飯店附近。",
-      "sourceUrl": "https://www.art-asahikawa.com/access/",
-      "sourceTitle": "アクセス・駐車場｜【公式】アートホテル旭川",
-      "sourceQuote": "旭川空港からバスで40分/7条昭和通停留所下車（ホテル目の前）／（OMO7）空港から市内までは空港バスで約40分。OMO7旭川はバスの終着点なので初めてでも安心ラクラク。",
+      "claimId": "C9",
+      "articleExcerpt": "市中心的三間飯店，從機場搭巴士就能坐到門口附近。",
+      "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
+      "sourceTitle": "OMO7旭川 by 星野リゾート【公式】（另見アートホテル、ドーミーイン官網）",
+      "sourceQuote": "OMO7旭川はバスの終着点なので初めてでも安心ラクラク。／（アート）旭川空港からバスで40分/7条昭和通停留所下車（ホテル目の前）／（ドーミーイン）旭川空港からバスで約40分、 バス停の眼の前という立地。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C9",
-      "articleExcerpt": "機場巴士的終點站就在OMO7旭川，從機場搭過來約40分鐘。",
-      "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
-      "sourceTitle": "OMO7旭川 by 星野リゾート【公式】",
-      "sourceQuote": "空港から市内までは空港バスで約40分。OMO7旭川はバスの終着点なので初めてでも安心ラクラク。",
-      "verdict": "verified",
-      "notes": "文字在官網行程範例的結構化資料裡。"
-    },
-    {
       "claimId": "C10",
-      "articleExcerpt": "アートホテル旭川（Art Hotel Asahikawa）門口就是「7条昭和通」站，一樣搭40分鐘左右。",
-      "sourceUrl": "https://www.art-asahikawa.com/access/",
-      "sourceTitle": "アクセス・駐車場｜【公式】アートホテル旭川",
-      "sourceQuote": "旭川空港からバスで40分/7条昭和通停留所下車（ホテル目の前）",
+      "articleExcerpt": "機場巴士的終點站就在OMO7旭川旁的「6条9丁目」站，車程約50分鐘。",
+      "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/access/",
+      "sourceTitle": "アクセス｜OMO7旭川 by 星野リゾート【公式】",
+      "sourceQuote": "旭川空港バス乗り場から空港連絡バスで「6条9丁目」バス停まで約50分／（旭川電気軌道時刻表）旭川市内行き … 7条昭和通 6の9着；JAL 551 旭川空港発 9:05 → 6の9着 9:55",
       "verdict": "verified",
-      "notes": "同句也出現在 H3「搭機場巴士在「7条昭和通」下車，飯店就在正前方」，一併核對。"
+      "notes": "第 2 輪複查（revisions-round1.md）：作者指定複查。OMO7 交通頁寫約 50 分，經營者時刻表空港發到 6の9 著也是 50 分（9:05→9:55 等），終點站是 6の9。首頁行程範例的「約40分」是舊說法，以交通頁與時刻表為準。OMO7 地址 6条通9丁目，與站名一致，「旁」成立。"
     },
     {
       "claimId": "C11",
-      "articleExcerpt": "住在旭川市內的飯店或旅館，可以買旭山動物園的「おもてなし券」。這是只賣給住宿旅客的兩天入園券，1,000日圓能連續兩天入園。",
-      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
-      "sourceTitle": "開園期間・入園料・チケット｜旭山動物園（旭川市，更新日 2026年10月1日）",
-      "sourceQuote": "おもてなし券（1泊2日券） 1,000円 入園初日正午以降から入園、翌日正午まで入園の2日連続で入園可能 旭川市内宿泊施設の宿泊利用者対象",
+      "articleExcerpt": "Art Hotel旭川（アートホテル旭川）正對著「7条昭和通」站，Dormy Inn旭川（ドーミーイン旭川）門口也有巴士站。這兩間從機場搭過來也都是40分鐘左右。",
+      "sourceUrl": "https://www.art-asahikawa.com/access/",
+      "sourceTitle": "アクセス・駐車場｜【公式】アートホテル旭川（另見ドーミーイン官網）",
+      "sourceQuote": "旭川空港からバスで40分/7条昭和通停留所下車（ホテル目の前）／（ドーミーイン）旭川空港からバスで約40分、 バス停の眼の前という立地。",
       "verdict": "verified",
-      "notes": "第 2 輪新增「只賣給住宿旅客」：官方頁「旭川市内宿泊施設の宿泊利用者対象」支持。"
+      "notes": "第 2 輪複查（revisions-round1.md）：未改句，重讀確認。Art、Dormy 官網寫 40 分／約 40 分；經營者時刻表空港發到 7条昭和通約 45 分、5条昭和通約 42 分，「40分鐘左右」與官網一致。"
     },
     {
       "claimId": "C12",
-      "articleExcerpt": "第一天中午12點以後進場，隔天中午12點前可以再進一次，入園後不限停留時間。",
-      "sourceUrl": "https://web.archive.org/web/20260618020211/http://www.atca.jp/omotenashi/",
-      "sourceTitle": "旭山動物園おもてなし券｜旭川観光コンベンション協会（ウェブ存檔 2026-06-18）",
-      "sourceQuote": "１日目（購入日）は 12時以降 よりご入園可能です。 ２日目（購入翌日）は 12時までに ご入園していただくことが条件です。 ※入園後の時間制限はございません、閉園時間までご滞在いただけます。",
+      "articleExcerpt": "不管住站前還是市中心，只要住在旭川市內的飯店或旅館，就能買動物園只賣給住宿旅客的兩天入園券，叫款待券（おもてなし券），一張1,000日圓。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "sourceTitle": "旭山動物園 開園期間・入園料・チケット｜旭川市",
+      "sourceQuote": "おもてなし券（1泊2日券） 1,000円 入園初日正午以降から入園、翌日正午まで入園の2日連続で入園可能 旭川市内宿泊施設の宿泊利用者対象",
       "verdict": "verified",
-      "notes": "前半（正午以降／翌日正午まで）另有旭山動物園官方頁一致。「入園後不限停留時間」只有發行單位旭川觀光コンベンション協會的頁面，原站 2026-10-26 仍維修中（curl 回「セキュリティメンテナンスに伴うウェブサイト一時休止」），用網頁存檔判定；下次查核 2026-11-25 原站恢復後重查。"
+      "notes": "第 2 輪複查（revisions-round1.md）：新增面額 1,000 日圓，2026-11-01 官方頁仍是 1,000円。譯名與 glossary.json 一致。"
     },
     {
       "claimId": "C13",
-      "articleExcerpt": "買的時候要出示能證明住在旭川市內的文件。",
-      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
-      "sourceTitle": "開園期間・入園料・チケット｜旭山動物園（旭川市）",
-      "sourceQuote": "購入の際に宿泊を証明する書類の提示が必要",
+      "articleExcerpt": "第一天中午12點以後進場，隔天中午12點前可以再進一次，入園後不限停留時間。",
+      "sourceUrl": "https://www.atca.jp/omotenashi/",
+      "sourceTitle": "旭山動物園おもてなし券｜旭川観光コンベンション協会",
+      "sourceQuote": "１日目（購入日）は 12時以降 よりご入園可能です。 ２日目（購入翌日）は 12時までに ご入園していただくことが条件です。 ※入園後の時間制限はございません、閉園時間までご滞在いただけます。",
       "verdict": "verified",
-      "notes": "第 2 輪改句（F421）：「宿泊を証明する書類」加上對象條件「旭川市内宿泊施設の宿泊利用者」，寫成證明住在旭川市內的文件一致；正文沒舉文件例子，沒有超出原文。"
+      "notes": "協會原站已恢復（上一版用網頁存檔），本輪直接讀原站。前半另有動物園官方頁「入園初日正午以降から入園、翌日正午まで入園」。"
     },
     {
       "claimId": "C14",
-      "articleExcerpt": "照2026年5月的販售名單，本篇12間裡有8間的櫃台有賣，分別是JRイン旭川、ワイズホテル、KOKO HOTEL、CABIN、東横INN兩間、OMO7旭川與アートホテル旭川。",
-      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849_d/fil/hotelnadohanndai.pdf",
-      "sourceTitle": "令和8年度動物園チケット販売箇所（旭川観光コンベンション協会取扱分，令和8年5月1日時点）",
-      "sourceQuote": "1泊2日券（おもてなし券）… 星野リゾートOMO７旭川 ○／アートホテル旭川 ○／プレミアホテル-CABIN-旭川 ○／JRイン旭川 ○／ワイズホテル旭川駅前 ○／KOKO HOTEL 旭川駅前 ○／東横INN旭川駅東口 ○／東横イン旭川駅前一条通 ○",
+      "articleExcerpt": "買的時候要出示能證明住在旭川市內的文件。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
+      "sourceTitle": "旭山動物園 開園期間・入園料・チケット｜旭川市",
+      "sourceQuote": "旭川市内宿泊施設の宿泊利用者対象 購入の際に宿泊を証明する書類の提示が必要",
       "verdict": "verified",
-      "notes": "第 2 輪改句（F420）：旭川市 PDF「令和8年5月1日時点」逐一核對 8 間都在おもてなし券欄打○。加分建議：這份 PDF（https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849_d/fil/hotelnadohanndai.pdf）是本段的依據，可補進「## 資料來源」。"
+      "notes": ""
     },
     {
       "claimId": "C15",
-      "articleExcerpt": "住這幾間的話，入住時問櫃台能拿什麼當住宿證明，再到旭川站東大廳的「旭川観光物産情報センター」或動物園售票處買。",
-      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html",
-      "sourceTitle": "開園期間・入園料・チケット｜旭山動物園（旭川市）",
-      "sourceQuote": "券売所・販売所一覧 … 販売場所 1回券（個人） 1回券(団体) 年間パスポート おもてなし券 … 旭山動物園 券売窓口 ● ● ● ● ● ● ●／（販売箇所PDF）32 旭川観光物産情報センター ○（おもてなし券欄）",
+      "articleExcerpt": "後面表格的12間裡有8間的櫃台就有賣，分別是JR Inn旭川（JRイン旭川）、Y's Hotel旭川站前（ワイズホテル旭川駅前）、KOKO HOTEL旭川站前、天然溫泉Premier Hotel-CABIN-旭川（天然温泉プレミアホテル-CABIN-旭川）、東橫INN旭川站東口、東橫INN旭川站前一條通、OMO7旭川與Art Hotel旭川。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849_d/fil/hotelnadohanndai.pdf",
+      "sourceTitle": "令和8年度動物園チケット販売箇所（旭川観光コンベンション協会取扱分）令和8年5月1日時点",
+      "sourceQuote": "1泊2日券（おもてなし券）欄○：4 星野リゾートOMO７旭川／5 アートホテル旭川／9 プレミアホテル-CABIN-旭川／10 JRイン旭川／12 ワイズホテル旭川駅前／13 KOKO HOTEL 旭川駅前／18 東横INN旭川駅東口／19 東横イン旭川駅前一条通",
       "verdict": "verified",
-      "notes": "動物園售票窗口：動物園官方頁販售表的おもてなし券欄有●。物產情報中心：旭川市 PDF（令和8年5月1日時點）おもてなし券欄有○；位置「ＪＲ旭川駅東コンコース」見協會頁存檔（旭川観光物産情報センター 旭川市宮下通9丁目 （ＪＲ旭川駅東コンコース）），巴士案內圖也把觀光物產情報センター標在車站東側。"
+      "notes": "第 2 輪複查（revisions-round1.md）：改成全名，8 間仍逐一對到 PDF おもてなし券欄○。"
     },
     {
       "claimId": "C16",
-      "articleExcerpt": "下表的12間飯店，站前9間從車站直結到走路5分鐘，市中心3間要走13到15分鐘。",
-      "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
-      "sourceTitle": "OMO7旭川 by 星野リゾート【公式】（及其餘 11 間官網）",
-      "sourceQuote": "JR「旭川」駅より徒歩約13分",
+      "articleExcerpt": "Dormy Inn旭川、HOTEL AMANEK旭川（ホテルアマネク旭川）、Route Inn Grand旭川站前（ホテルルートインGrand旭川駅前）與Route Inn旭川站前一條通（ホテルルートイン旭川駅前一条通）沒有賣。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849_d/fil/hotelnadohanndai.pdf",
+      "sourceTitle": "令和8年度動物園チケット販売箇所（旭川観光コンベンション協会取扱分）令和8年5月1日時点",
+      "sourceQuote": "販売箇所 1～33 列（東花苑…旭川観光コンベンション協会）中無ドーミーイン旭川、ホテルアマネク旭川、ルートイン2館",
       "verdict": "verified",
-      "notes": "各館分鐘數逐列見 C20～C31（JRイン直結、其餘站前 8 間 1～約5 分）。"
+      "notes": "第 2 輪複查（revisions-round1.md）：改成全名。全 33 列逐一看過，這 4 間都不在；名單是令和8年5月1日時點。"
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "第二欄是Trip.com台灣站上顯示的館名，搜尋時可以直接打。",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=4280&checkin=2027-01-20&checkout=2027-01-21&adult=1&crn=1",
-      "sourceTitle": "旭川飯店推薦 - 最新旭川人氣住宿預訂 - Trip.com（及各館詳細頁）",
-      "sourceQuote": "第二欄 12 格逐一對到 Trip.com 台灣站館名（見 C18、C19）",
+      "articleExcerpt": "住這四間的人，入住時先問櫃台能拿什麼當住宿證明，再到旭川站東大廳的旭川觀光物產情報中心（旭川観光物産情報センター）或動物園售票處買。",
+      "sourceUrl": "https://www.atca.jp/omotenashi/",
+      "sourceTitle": "旭山動物園おもてなし券｜旭川観光コンベンション協会",
+      "sourceQuote": "おもてなし券 販売場所 … 旭山動物園券売所 旭川市東旭川倉沼／旭川観光物産情報センター 旭川市宮下通9丁目 （ＪＲ旭川駅東コンコース）",
       "verdict": "verified",
-      "notes": "第 1 輪 incorrect（「日文名搜不到」與實測相反），第 2 輪已改成中性說法，不再主張日文名搜不到。館名是 Trip.com 顯示的名稱，可直接搜尋。"
+      "notes": "另見動物園官方頁販售表「旭山動物園 券売窓口」おもてなし券欄●、旭川市 PDF 第 32 列「旭川観光物産情報センター」○。譯名與 glossary.json 一致。"
     },
     {
       "claimId": "C18",
-      "articleExcerpt": "旭川JR飯店（Jr Inn Asahikawa）／Y飯店-旭川站前（Y’s HOTEL ASAHIKAWA EKIMAE）／KOKO HOTEL 旭川前旭川站（KOKO HOTEL Asahikawa Station）／旭川普樂美雅凱賓飯店（Premier Hotel -Cabin- Asahikawa）／旭川HOTEL AMANEK（HOTEL AMANEK Asahikawa）／露櫻飯店旭川站前一條通店（Hotel Route-Inn Asahikawa Ekimae Ichijodori）／OMO7 旭川 by 星野集團（OMO7 Asahikawa by Hoshino Resorts）／北海道旭川多美迎天然溫泉飯店（Dormy Inn Asahikawa Natural Hot Spring）／ART旭川飯店（Art Hotel Asahikawa）",
-      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2509710/",
-      "sourceTitle": "Trip.com 台灣站各館詳細頁（2509710、19572867、2509933、73296664、703477、703410、703413）與旭川清單頁",
-      "sourceQuote": "\"name\":\"旭川JR飯店(Jr Inn Asahikawa)／\"name\":\"Y飯店-旭川站前(Y’s HOTEL ASAHIKAWA EKIMAE)／\"name\":\"旭川普樂美雅凱賓飯店(Premier Hotel -Cabin- Asahikawa)／\"name\":\"OMO7 旭川 by 星野集團(OMO7 Asahikawa by Hoshino Resorts)／\"name\":\"ART旭川飯店(Art Hotel Asahikawa)／\"name\":\"露櫻飯店旭川站前一條通店(Hotel Route-Inn Asahikawa Ekimae Ichijodori／\"name\":\"旭川HOTEL AMANEK(HOTEL AMANEK Asahikawa)／清單頁 \"name\":\"KOKO HOTEL 旭川前旭川站\",\"enName\":\"KOKO HOTEL Asahikawa Station／北海道旭川多美迎天然溫泉飯店（多美迎・御宿野乃 飯店集團）, enName Dormy Inn Asahikawa Natural Hot Spring",
+      "articleExcerpt": "下表12間照離車站的遠近排，站前9間從車站直結到走路5分鐘，市中心3間要走13到15分鐘。",
+      "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
+      "sourceTitle": "OMO7旭川 by 星野リゾート【公式】（各館分鐘數見 C20～C31）",
+      "sourceQuote": "JR「旭川」駅より徒歩約13分",
       "verdict": "verified",
-      "notes": "表格第二欄 9 格逐一核對。ドーミーイン在 Trip.com 的全名後面還有「（多美迎・御宿野乃 飯店集團）」，正文取前段，搜尋得到。"
+      "notes": "逐列見 C20～C31；表格順序與分鐘數由近到遠一致（直結、1、2、2、3、3、3、約5、約5、約13、約15、約15）。"
     },
     {
       "claimId": "C19",
-      "articleExcerpt": "| ホテルルートインGrand旭川駅前 | 露櫻GRAND飯店旭川站前店（Hotel Route Inn Grand Asahikawa Ekimae） |／| 東横INN旭川駅東口 | 東橫INN-旭川站東口（Toyoko Inn Hokkaido Asahikawa Eki Higashi Guchi） |／| 東横INN旭川駅前一条通 | 北海道旭川站前一條通東橫飯店（Toyoko Inn Hokkaido Asahikawa Ekimae Ichijo Dori） |",
+      "articleExcerpt": "第二欄是Trip.com台灣站上顯示的館名，搜尋時可以直接打。",
       "sourceUrl": "https://tw.trip.com/hotels/list?city=4280&checkin=2027-01-20&checkout=2027-01-21&adult=1&crn=1",
       "sourceTitle": "旭川飯店推薦 - 最新旭川人氣住宿預訂 - Trip.com",
-      "sourceQuote": "露櫻GRAND飯店旭川站前店 Hotel Route Inn Grand Asahikawa Ekimae／東橫INN-旭川站東口 Toyoko Inn Hokkaido Asahikawa Eki Higashi Guchi／北海道旭川站前一條通東橫飯店 Toyoko Inn Hokkaido Asahikawa Ekimae Ichijo Dori",
+      "sourceQuote": "第二欄 12 格逐一對到 Trip.com 台灣站館名（見 C20～C31）",
       "verdict": "verified",
-      "notes": "第 2 輪改成完整館名（F419），與 2026-10-26 清單頁的 name／enName 逐字一致。"
+      "notes": "2026-11-01 以 curl 讀各館 Trip.com 詳細頁 h1 與英文名；CABIN、ルートイン一条通的頁面 ID 用自己的瀏覽器分頁內 Trip.com 關鍵字搜尋取得（唯讀，未登入、未填表）。"
     },
     {
       "claimId": "C20",
-      "articleExcerpt": "| JRイン旭川 | 旭川JR飯店（Jr Inn Asahikawa） | 宮下通7丁目 | 車站直結 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| JR Inn旭川 | 旭川JR飯店（Jr Inn Asahikawa） | 宮下通7丁目 | 車站直結 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://www.jr-inn.jp/asahikawa/",
       "sourceTitle": "JRイン旭川【公式】",
-      "sourceQuote": "北海道旭川市宮下通7丁目2番5号／旭川駅直結のアクセスの良さ",
+      "sourceQuote": "〒070-0030 北海道旭川市宮下通7丁目2番5号／旭川駅直結のアクセスの良さ（meta description）／Trip.com 2509710：旭川JR飯店(Jr Inn Asahikawa)／Agoda：jr-inn-asahikawa",
       "verdict": "verified",
-      "notes": "區域與距離列；訂房管道見 C32。"
+      "notes": "訂房管道：官網「宿泊予約」、Trip.com 詳細頁、Agoda 城市頁連結都在。"
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "| ワイズホテル旭川駅前 | Y飯店-旭川站前（Y’s HOTEL ASAHIKAWA EKIMAE） | 宮下通9丁目 | 走路約1分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| Y's Hotel旭川站前 | Y飯店-旭川站前（Y’s HOTEL ASAHIKAWA EKIMAE） | 宮下通9丁目 | 走路約1分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://yshotel-asahikawa.com/",
       "sourceTitle": "【公式】ワイズホテル旭川駅前",
-      "sourceQuote": "北海道旭川市宮下通９－２－１７／JR旭川駅より徒歩1分。",
+      "sourceQuote": "北海道旭川市宮下通９－２－１７／JR旭川駅より徒歩1分。／Trip.com 19572867：Y飯店-旭川站前（Y’s HOTEL ASAHIKAWA EKIMAE）／Agoda：y-s-hotel-asahikawa",
       "verdict": "verified",
-      "notes": "官網另一處寫「北口東側から徒歩30秒」，與約 1 分不衝突。"
+      "notes": ""
     },
     {
       "claimId": "C22",
-      "articleExcerpt": "| KOKO HOTEL 旭川駅前 | KOKO HOTEL 旭川前旭川站（KOKO HOTEL Asahikawa Station） | 宮下通7丁目 | 走路2分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| KOKO HOTEL旭川站前 | KOKO HOTEL 旭川前旭川站（KOKO HOTEL Asahikawa Station） | 宮下通7丁目 | 走路2分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://koko-hotels.com/asahikawa_station/",
       "sourceTitle": "KOKO HOTEL 旭川駅前",
-      "sourceQuote": "北海道旭川市宮下通7-3112 電車でお越しの方 JR「旭川駅」より徒歩2分",
+      "sourceQuote": "北海道旭川市宮下通7-3112／JR「旭川駅」より徒歩2分／Trip.com 31195786：KOKO HOTEL 旭川前旭川站 / KOKO HOTEL Asahikawa Station／Agoda：hotel-wing-international-asahikawa-ekimae",
       "verdict": "verified",
-      "notes": "H3「KOKO HOTEL 旭川駅前與ホテルルートインGrand旭川駅前都是走路2分鐘」一併核對。"
+      "notes": "官網有「空室検索」。H3「KOKO HOTEL旭川站前與Route Inn Grand旭川站前都是走路2分鐘」一併核對。"
     },
     {
       "claimId": "C23",
-      "articleExcerpt": "| ホテルルートインGrand旭川駅前 | 露櫻GRAND飯店旭川站前店（Hotel Route Inn Grand Asahikawa Ekimae） | 宮下通8丁目 | 北口走路2分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| Route Inn Grand旭川站前 | 露櫻GRAND飯店旭川站前店（Hotel Route Inn Grand Asahikawa Ekimae） | 宮下通8丁目 | 北口走路2分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/",
       "sourceTitle": "ホテルルートインGrand旭川駅前｜HOTEL ROUTE-INN",
-      "sourceQuote": "北海道旭川市宮下通8丁目1962-1／旭川駅北口より徒歩2分",
+      "sourceQuote": "〒070-0030 北海道旭川市宮下通8丁目1962-1／旭川駅北口より徒歩2分／Trip.com 6085668：露櫻GRAND飯店旭川站前店 / Hotel Route Inn Grand Asahikawa Ekimae／Agoda：hotel-route-inn-grand-asahikawa-ekimae",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C24",
-      "articleExcerpt": "| 天然温泉プレミアホテル-CABIN-旭川 | 旭川普樂美雅凱賓飯店（Premier Hotel -Cabin- Asahikawa） | 1条通7丁目 | 走路3分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| 天然溫泉Premier Hotel-CABIN-旭川 | 旭川普樂美雅凱賓飯店（Premier Hotel -Cabin- Asahikawa） | 1條通7丁目 | 走路3分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://cabin.kenhotels.com/asahikawa/",
-      "sourceTitle": "プレミアホテル-CABIN-旭川【公式】｜旭川駅から徒歩3分の天然温泉付きホテル",
-      "sourceQuote": "〒070-0031 北海道旭川市1条通7丁目 JR「旭川駅」より、徒歩3分。",
+      "sourceTitle": "プレミアホテル-CABIN-旭川【公式】",
+      "sourceQuote": "〒070-0031 北海道旭川市1条通7丁目／旭川駅から徒歩3分の天然温泉付きホテル／Trip.com 2509933：旭川普樂美雅凱賓飯店 / Premier Hotel -Cabin- Asahikawa／Agoda：premier-hotel-cabin-asahikawa_7",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C25",
-      "articleExcerpt": "| ホテルアマネク旭川 | 旭川HOTEL AMANEK（HOTEL AMANEK Asahikawa） | 1条通8丁目 | 北口走路3分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| HOTEL AMANEK旭川 | 旭川HOTEL AMANEK（HOTEL AMANEK Asahikawa） | 1條通8丁目 | 北口走路3分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://amanekhotels.jp/asahikawa/",
-      "sourceTitle": "旭川駅徒歩3分のホテル【公式】ホテルアマネク旭川",
-      "sourceQuote": "北海道旭川市1条通8丁目218／旭川駅北口より徒歩3分",
+      "sourceTitle": "【公式】ホテルアマネク旭川",
+      "sourceQuote": "〒070-0031 北海道旭川市1条通8丁目218／旭川駅北口より徒歩3分／Trip.com 73296664：旭川HOTEL AMANEK / HOTEL AMANEK Asahikawa／Agoda：hotel-amanek-asahikawa-ekimae",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C26",
-      "articleExcerpt": "| 東横INN旭川駅東口 | 東橫INN-旭川站東口（Toyoko Inn Hokkaido Asahikawa Eki Higashi Guchi） | 宮下通11丁目 | 東口走路3分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| 東橫INN旭川站東口 | 東橫INN-旭川站東口（Toyoko Inn Hokkaido Asahikawa Eki Higashi Guchi） | 宮下通11丁目 | 東口走路3分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://www.toyoko-inn.com/search/detail/00173/",
       "sourceTitle": "【公式】東横INN旭川駅東口",
-      "sourceQuote": "北海道旭川市宮下通11-1176 Googleマップ 電車でお越しの方 JR旭川駅東口から徒歩3分",
+      "sourceQuote": "〒070-0030 北海道旭川市宮下通11-1176／JR旭川駅東口から徒歩3分／Trip.com 705201：東橫INN-旭川站東口 / Toyoko Inn Hokkaido Asahikawa Eki Higashi Guchi／Agoda：toyoko-inn-hokkaido-asahikawa-eki-higashi-guchi",
       "verdict": "verified",
-      "notes": "H3「東横INN旭川駅東口要從東口出站，走路3分鐘」一併核對。"
+      "notes": "H3「東橫INN旭川站東口要從東口出站，走路3分鐘」一併核對。"
     },
     {
       "claimId": "C27",
-      "articleExcerpt": "| ホテルルートイン旭川駅前一条通 | 露櫻飯店旭川站前一條通店（Hotel Route-Inn Asahikawa Ekimae Ichijodori） | 1条通6丁目 | 走路約5分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| Route Inn旭川站前一條通 | 露櫻飯店旭川站前一條通店（Hotel Route-Inn Asahikawa Ekimae Ichijodori） | 1條通6丁目 | 走路約5分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/",
       "sourceTitle": "ホテルルートイン旭川駅前一条通｜HOTEL ROUTE-INN",
-      "sourceQuote": "北海道旭川市１条通6丁目39-1／函館本線旭川駅より徒歩約5分",
+      "sourceQuote": "〒070-0031 北海道旭川市１条通6丁目39-1／函館本線旭川駅より徒歩約5分／Trip.com 703477：露櫻飯店旭川站前一條通店 / Hotel Route-Inn Asahikawa Ekimae Ichijodori／Agoda：hotel-route-inn-asahikawa-ekimae-ichijo-dori",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C28",
-      "articleExcerpt": "| 東横INN旭川駅前一条通 | 北海道旭川站前一條通東橫飯店（Toyoko Inn Hokkaido Asahikawa Ekimae Ichijo Dori） | 1条通9丁目 | 走路約5分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| 東橫INN旭川站前一條通 | 北海道旭川站前一條通東橫飯店（Toyoko Inn Hokkaido Asahikawa Ekimae Ichijo Dori） | 1條通9丁目 | 走路約5分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://www.toyoko-inn.com/search/detail/00069/access/",
       "sourceTitle": "東横INN旭川駅前一条通 ホテルまでの道案内",
-      "sourceQuote": "JR旭川駅から徒歩５分くらいです。／（詳細頁）北海道旭川市一条通9-164-1",
+      "sourceQuote": "JR旭川駅から徒歩５分くらいです。／（詳細頁）〒070-0031 北海道旭川市一条通9／Trip.com 清單：北海道旭川站前一條通東橫飯店 / Toyoko Inn Hokkaido Asahikawa Ekimae Ichijo Dori／Agoda：toyoko-inn-hokkaido-asahikawa-ekimae-ichijo-dori",
       "verdict": "verified",
-      "notes": "同一官網的詳細頁 https://www.toyoko-inn.com/search/detail/00069/ 寫「JR旭川駅北口から徒歩3分」，道案內頁寫「徒歩５分くらい」，官網內部兩種說法；正文照道案內頁寫約 5 分可接受，作者可自行決定是否改「走路3到5分」。H3「同牌子的東横INN旭川駅前一条通在1条通，走路約5分鐘」一併核對。"
+      "notes": "同官網詳細頁另寫「JR旭川駅北口から徒歩3分」，官網內部兩種說法，正文照道案內頁寫約5分可接受。H3「在1條通，走路約5分鐘」一併核對。"
     },
     {
       "claimId": "C29",
-      "articleExcerpt": "| OMO7旭川 | OMO7 旭川 by 星野集團（OMO7 Asahikawa by Hoshino Resorts） | 6条通9丁目 | 走路約13分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| OMO7旭川 | OMO7 旭川 by 星野集團（OMO7 Asahikawa by Hoshino Resorts） | 6條通9丁目 | 走路約13～15分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
       "sourceTitle": "OMO7旭川 by 星野リゾート【公式】",
-      "sourceQuote": "070-0036 北海道旭川市6条通9丁目 … JR「旭川」駅より徒歩約13分",
+      "sourceQuote": "070-0036 北海道旭川市6条通9丁目／（首頁）JR「旭川」駅より徒歩約13分／（交通頁）JR「旭川」駅より徒歩約15分、またはタクシーで約5分／Trip.com 703410：OMO7 旭川 by 星野集團 / OMO7 Asahikawa by Hoshino Resorts",
       "verdict": "verified",
-      "notes": "H3「OMO7旭川在6条通9丁目，從JR旭川站走路約13分鐘」一併核對。"
+      "notes": "第 2 輪複查（revisions-round1.md）：作者指定複查。官網首頁 13 分、交通頁 https://hoshinoresorts.com/ja/hotels/omo7asahikawa/access/ 15 分，寫 13～15 分涵蓋兩種官方說法。H3「走到JR旭川站約13到15分鐘，搭計程車約5分鐘」一併核對（見 C55）。"
     },
     {
       "claimId": "C30",
-      "articleExcerpt": "| ドーミーイン旭川 | 北海道旭川多美迎天然溫泉飯店（Dormy Inn Asahikawa Natural Hot Spring） | 5条通6丁目 | 走路約15分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| Dormy Inn旭川 | 北海道旭川多美迎天然溫泉飯店（Dormy Inn Asahikawa Natural Hot Spring） | 5條通6丁目 | 走路約15分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/access/",
       "sourceTitle": "アクセス｜【公式】天然温泉 神威の湯 ドーミーイン旭川",
-      "sourceQuote": "北海道 旭川市５条通6丁目964-1／JR 石北本線 「旭川駅」から徒歩約15分",
+      "sourceQuote": "北海道 旭川市５条通6丁目964-1／「旭川駅」から徒歩約15分／Trip.com：北海道旭川多美迎天然溫泉飯店（多美迎・御宿野乃 飯店集團） / Dormy Inn Asahikawa Natural Hot Spring／Agoda：dormy-inn-asahikawa-natural-hot-spring",
       "verdict": "verified",
-      "notes": "H3「ドーミーイン旭川在5条通6丁目，走路約15分鐘」一併核對。"
+      "notes": "Trip.com 全名後面還有括號集團名，正文取前段，可搜到。H3「Dormy Inn旭川在5條通6丁目，走到車站約15分鐘」一併核對。"
     },
     {
       "claimId": "C31",
-      "articleExcerpt": "| アートホテル旭川 | ART旭川飯店（Art Hotel Asahikawa） | 7条通6丁目 | 走路約15分 | 官網、Trip.com、Agoda |",
+      "articleExcerpt": "| Art Hotel旭川 | ART旭川飯店（Art Hotel Asahikawa） | 7條通6丁目 | 走路約15分 | 官網、Trip.com、Agoda |",
       "sourceUrl": "https://www.art-asahikawa.com/access/",
       "sourceTitle": "アクセス・駐車場｜【公式】アートホテル旭川",
-      "sourceQuote": "〒070-0037 北海道旭川市7条通6丁目／JR旭川駅（北口）から車で5分、徒歩約15分。",
+      "sourceQuote": "北海道旭川市7条通6丁目／JR旭川駅（北口）から車で5分、徒歩約15分。／Trip.com 703413：ART旭川飯店 / Art Hotel Asahikawa／Agoda：art-hotel-asahikawa",
       "verdict": "verified",
-      "notes": "H3「同一區還有7条通6丁目的アートホテル旭川…走到車站約15分鐘」一併核對。"
+      "notes": "H3「7條通6丁目的Art Hotel旭川，走到車站一樣約15分鐘」一併核對。"
     },
     {
       "claimId": "C32",
-      "articleExcerpt": "這12間都能在官網直接訂，Trip.com與Agoda台灣站也都有上架。",
-      "sourceUrl": "https://www.agoda.com/zh-tw/city/asahikawa-jp.html",
-      "sourceTitle": "旭川飯店｜Agoda（城市頁）＋ Trip.com 台灣站清單與詳細頁＋各館官網",
-      "sourceQuote": "Agoda 城市頁連結：jr-inn-asahikawa、y-s-hotel-asahikawa、hotel-wing-international-asahikawa-ekimae、hotel-route-inn-grand-asahikawa-ekimae、premier-hotel-cabin-asahikawa_7、hotel-amanek-asahikawa-ekimae、toyoko-inn-hokkaido-asahikawa-eki-higashi-guchi、hotel-route-inn-asahikawa-ekimae-ichijo-dori、toyoko-inn-hokkaido-asahikawa-ekimae-ichijo-dori、dormy-inn-asahikawa-natural-hot-spring、art-hotel-asahikawa（OMO7 見 C46）；官網：宿泊予約／空室検索（12 間官網皆有）",
+      "articleExcerpt": "JR Inn旭川和JR旭川站直接相連，搭JR進出旭川的人出站就到。館內有男女分開的大浴場與半露天風呂，下火車就能泡湯。",
+      "sourceUrl": "https://www.jr-inn.jp/asahikawa/facilitys/",
+      "sourceTitle": "館内施設｜JRイン旭川（另見 JR北海道 2026-05-28 新聞稿）",
+      "sourceQuote": "大浴場 （男女別） … 1日の疲れをいやす大浴場は半露天風呂もあり／（JR北海道新聞稿）◎ＪＲイン旭川 ＪＲ旭川駅直結の好立地。男女別大浴場と半露天風呂で癒され",
       "verdict": "verified",
-      "notes": "也涵蓋表格「訂房管道」欄 12 格。Trip.com：9 間詳細頁或清單頁讀到館名與 2026-12 或 2027-01 的房價，其餘 3 間（ルートインGrand、東横兩間）在 2027-01-20 清單頁出現且有房價。官網：KOKO 有 book.koko-hotels.com 訂房連結，OMO7 有「空室検索 当サイトが最もお得」，其餘各館首頁有宿泊予約或空室検索。Agoda 用瀏覽器開時被導到英文版城市頁，列表內容即上列 11 間。本文沒有分潤連結（資料來源裡的 Trip.com／Agoda 連結是城市清單，不是分潤連結）。"
+      "notes": "直結另見官網 meta description「旭川駅直結のアクセスの良さ」。"
     },
     {
       "claimId": "C33",
-      "articleExcerpt": "JRイン旭川和JR旭川站直接相連，搭JR進出旭川出站就到，館內有男女分開的大浴場與半露天風呂。",
-      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260528_KO_arujan.pdf",
-      "sourceTitle": "JR北海道 プレスリリース（2026年5月28日）",
-      "sourceQuote": "◎ＪＲイン旭川 ＪＲ旭川駅直結の好立地。男女別大浴場と半露天風呂で癒され",
+      "articleExcerpt": "從西改札出來走北口出站，AEON MALL旭川站前（イオンモール旭川駅前）朝站前廣場那一側有個入口，進去左手邊就是飯店專用電梯，搭到5樓櫃台。",
+      "sourceUrl": "https://www.jr-inn.jp/pdf_new/asahikawa/access_map_new.pdf",
+      "sourceTitle": "JRイン旭川 アクセスマップ（PDF，官網アクセス頁連結）",
+      "sourceQuote": "1 JR旭川駅西改札口から出る 2 旭川駅北口から外へ出る 3 イオンモール旭川駅前駅前広場入口より店内へ 4 店内に入ってすぐ左側にあるホテル専用エレベーターで5階へ／（地圖）ホテル用エレベーター ホテルフロント5階",
       "verdict": "verified",
-      "notes": "直結另見官網 description「旭川駅直結のアクセスの良さ」。"
+      "notes": "上一版刪掉「櫃台」是因交通頁文字沒寫；本輪查到交通頁連結的案內圖 PDF 標「ホテルフロント5階」，「5樓櫃台」成立。"
     },
     {
       "claimId": "C34",
-      "articleExcerpt": "從西改札出來走北口出站，イオンモール旭川駅前朝站前廣場那一側有個入口，進去左手邊就是飯店專用電梯，搭到5樓。",
-      "sourceUrl": "https://www.jr-inn.jp/asahikawa/access/",
-      "sourceTitle": "アクセス｜JRイン旭川",
-      "sourceQuote": "1 JR旭川駅西改札口から出る 2 旭川駅北口から外へ出る 3 イオンモール旭川駅前駅前広場入口より店内へ 4 店内に入ってすぐ左側にあるホテル専用エレベーターで5階へ",
-      "verdict": "verified",
-      "notes": "第 2 輪拿掉「櫃台」，改成「搭到5樓」，與官網原文完全一致。"
-    },
-    {
-      "claimId": "C35",
-      "articleExcerpt": "離車站最近的是ワイズホテル旭川駅前，從東改札出來走北口東側出口，出站往右就到，走路約1分鐘。",
+      "articleExcerpt": "站前這幾間裡，Y's Hotel旭川站前離車站最近，走路約1分鐘，從東改札出來走北口東側出口，出站往右就到。",
       "sourceUrl": "https://yshotel-asahikawa.com/",
       "sourceTitle": "【公式】ワイズホテル旭川駅前",
       "sourceQuote": "JR旭川駅より徒歩1分。 （東改札→北口東側出口→すぐ右にあります）",
       "verdict": "verified",
-      "notes": "「最近」排除直結的 JRイン，在站前 8 間裡官網分鐘數最少（1 分）。"
+      "notes": "「最近」排除直結的 JR Inn，站前其餘 8 間裡官網分鐘數最少。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "再遠一點的天然溫泉Premier Hotel-CABIN-旭川與HOTEL AMANEK旭川走路3分鐘，Route Inn旭川站前一條通約5分鐘。",
+      "sourceUrl": "https://cabin.kenhotels.com/asahikawa/",
+      "sourceTitle": "プレミアホテル-CABIN-旭川【公式】（另見アマネク、ルートイン官網）",
+      "sourceQuote": "旭川駅から徒歩3分の天然温泉付きホテル／（アマネク）旭川駅北口より徒歩3分／（ルートイン一条通）函館本線旭川駅より徒歩約5分",
+      "verdict": "verified",
+      "notes": "第 2 輪複查（revisions-round1.md）：只拿掉日文原名，事實不變。"
     },
     {
       "claimId": "C36",
-      "articleExcerpt": "KOKO HOTEL 旭川駅前以前叫ホテルウィングインターナショナル旭川駅前。",
-      "sourceUrl": "https://www.hotelwing.co.jp/asahikawa/",
-      "sourceTitle": "ホテルウィングインターナショナル旭川駅前",
-      "sourceQuote": "「ホテルウィングインターナショナル旭川駅前」は新たなブランドとして「 KOKO HOTEL 旭川駅前 」に生まれ変わりました。",
+      "articleExcerpt": "想在飯店泡湯，CABIN、AMANEK與Route Inn兩間都有大浴場。CABIN泡的是天然溫泉，AMANEK的大浴場在頂樓。",
+      "sourceUrl": "https://amanekhotels.jp/asahikawa/",
+      "sourceTitle": "【公式】ホテルアマネク旭川（另見 CABIN、ルートイン官網）",
+      "sourceQuote": "3Fには朝食会場兼ラウンジ、最上階には大浴場を設けており／（CABIN）ビジネスホテルとは思えない広い大浴場／お肌なめらか源泉直下の天然温泉／（ルートイン Grand、一条通）設備欄「大浴場」",
       "verdict": "verified",
-      "notes": "Agoda 網址仍是 hotel-wing-international-asahikawa-ekimae，與「在訂房網站或舊資料上看到這個舊名」一致。"
+      "notes": ""
     },
     {
       "claimId": "C37",
-      "articleExcerpt": "ホテルルートインGrand旭川駅前與ホテルルートイン旭川駅前一条通都有大浴場。",
+      "articleExcerpt": "Route Inn Grand的1樓就是便利商店Seicomart（セイコーマート）。",
       "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/",
-      "sourceTitle": "ホテルルートインGrand旭川駅前｜HOTEL ROUTE-INN（另見一条通官網）",
-      "sourceQuote": "大浴場が 日々の疲れを癒します／（一条通）朝食 大浴場 駐車場 コインランドリー",
+      "sourceTitle": "ホテルルートインGrand旭川駅前｜HOTEL ROUTE-INN",
+      "sourceQuote": "最寄りのコンビニ セイコーマートすぐ(当館1F)／当ホテル1Fの営業店舗です。…●セイコーマート ルートイングランド旭川駅前店",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C38",
-      "articleExcerpt": "Grand的1樓就是便利商店セイコーマート。",
-      "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/",
-      "sourceTitle": "ホテルルートインGrand旭川駅前｜HOTEL ROUTE-INN",
-      "sourceQuote": "最寄りのコンビニ セイコーマートすぐ(当館1F)",
+      "articleExcerpt": "Route Inn一條通那間則附免費自助早餐。",
+      "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/",
+      "sourceTitle": "ホテルルートイン旭川駅前一条通｜HOTEL ROUTE-INN",
+      "sourceQuote": "和洋食の無料バイキング朝食",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C39",
-      "articleExcerpt": "一条通稍遠一點，走路約5分鐘，附免費自助早餐。",
-      "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/",
-      "sourceTitle": "ホテルルートイン旭川駅前一条通｜HOTEL ROUTE-INN",
-      "sourceQuote": "函館本線旭川駅より徒歩約5分／30品目以上の和洋バイキング朝食を無料でお楽しみいただけます。",
+      "articleExcerpt": "同牌子的東橫INN旭川站前一條通在1條通，走路約5分鐘。兩間在Trip.com上的館名分別帶「旭川站東口」與「一條通」，訂房時看清楚是哪一間。",
+      "sourceUrl": "https://tw.trip.com/hotels/list?city=4280&checkin=2027-01-20&checkout=2027-01-21&adult=1&crn=1",
+      "sourceTitle": "旭川飯店推薦 - 最新旭川人氣住宿預訂 - Trip.com",
+      "sourceQuote": "東橫INN-旭川站東口／北海道旭川站前一條通東橫飯店",
       "verdict": "verified",
-      "notes": ""
+      "notes": "地址與分鐘數見 C28。"
     },
     {
       "claimId": "C40",
-      "articleExcerpt": "天然温泉プレミアホテル-CABIN-旭川泡的是天然溫泉。",
-      "sourceUrl": "https://cabin.kenhotels.com/asahikawa/",
-      "sourceTitle": "プレミアホテル-CABIN-旭川【公式】｜旭川駅から徒歩3分の天然温泉付きホテル",
-      "sourceQuote": "お肌なめらか源泉直下の天然温泉",
+      "articleExcerpt": "KOKO HOTEL旭川站前以前叫Hotel Wing International旭川站前（ホテルウィングインターナショナル旭川駅前），在訂房網站或舊資料上看到這個名字，就是同一間。",
+      "sourceUrl": "https://www.hotelwing.co.jp/asahikawa/",
+      "sourceTitle": "ホテルウィングインターナショナル旭川駅前",
+      "sourceQuote": "「ホテルウィングインターナショナル旭川駅前」は新たなブランドとして「KOKO HOTEL 旭川駅前」に生まれ変わりました。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "Agoda 網址仍是 hotel-wing-international-asahikawa-ekimae。譯名與 glossary.json 一致。"
     },
     {
       "claimId": "C41",
-      "articleExcerpt": "2021年開幕的ホテルアマネク旭川頂樓有大浴場，3樓是早餐餐廳兼交誼廳。",
-      "sourceUrl": "https://amanekhotels.jp/asahikawa/news/1118/",
-      "sourceTitle": "ホテルアマネク旭川 開業五周年 | 【公式】ホテルアマネク旭川",
-      "sourceQuote": "2026.10.8 ホテルアマネク旭川 お陰様で、開業五周年を迎えることができました。 コロナ禍での開業から／（トップ）3Fには朝食会場兼ラウンジ、最上階には大浴場を設けており",
+      "articleExcerpt": "飯店沒有接送，搭機場巴士坐到終點站「6条9丁目」就到，回機場也在這一站上車。",
+      "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
+      "sourceTitle": "OMO7旭川 by 星野リゾート【公式】",
+      "sourceQuote": "送迎 なし／（交通頁）空港連絡バスで「6条9丁目」バス停まで約50分／（旭川電気軌道）旭川空港行き … 6の9発",
       "verdict": "verified",
-      "notes": "開業年由 2026-10-08 的五周年公告推回 2021 年。"
+      "notes": "第 2 輪複查（revisions-round1.md）：新增回程：時刻表往機場由 6の9 發車。"
     },
     {
       "claimId": "C42",
-      "articleExcerpt": "飯店沒有接送，搭機場巴士坐到終點站就到。",
-      "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
-      "sourceTitle": "OMO7旭川 by 星野リゾート【公式】",
-      "sourceQuote": "送迎 なし／OMO7旭川はバスの終着点なので初めてでも安心ラクラク。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C43",
-      "articleExcerpt": "ドーミーイン旭川在5条通6丁目，走路約15分鐘。從機場搭巴士約40分鐘，巴士站就在飯店正前方。",
+      "articleExcerpt": "從機場搭巴士約40分鐘，巴士站就在飯店正前方，回程要在哪一站搭往機場的車，入住時問櫃台最確實。",
       "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/",
       "sourceTitle": "【公式】ドーミーイン旭川",
       "sourceQuote": "旭川空港からバスで約40分、 バス停の眼の前という立地。",
       "verdict": "verified",
-      "notes": "第 2 輪新增「巴士站就在飯店正前方」（F422）：官網「バス停の眼の前という立地」。正文沒寫站名，沒有超出原文。地址與步行分鐘見 C30。"
+      "notes": "第 2 輪複查（revisions-round1.md）：新增「回程問櫃台」為建議句，無事實主張；官網交通頁沒寫回程站名，正文沒有寫「官方沒寫」，符合規則。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "想在市中心泡湯，頂樓10樓有天然溫泉大浴場神威之湯（神威の湯），露天風呂引的是地下1,200公尺的溫泉。",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/",
+      "sourceTitle": "【公式】ドーミーイン旭川",
+      "sourceQuote": "10F最上階に、天然温泉大浴場「神威の湯」。 当館の男女別大浴場は、野趣あふれる露天風呂は地下1200mから汲み上げた天然温泉となっています。",
+      "verdict": "verified",
+      "notes": "譯名與 glossary.json 一致。"
     },
     {
       "claimId": "C44",
-      "articleExcerpt": "頂樓10樓是天然溫泉大浴場「神威の湯」，露天風呂引的是地下1,200公尺的溫泉。",
-      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/",
-      "sourceTitle": "【公式】ドーミーイン旭川",
-      "sourceQuote": "10F最上階に 天然温泉大浴場「神威の湯」。／当館の男女別大浴場は、野趣あふれる露天風呂は地下1200mから汲み上げた天然温泉となっています。",
+      "articleExcerpt": "這12間都能在官網直接訂，Trip.com與Agoda台灣站也都有上架。",
+      "sourceUrl": "https://www.agoda.com/zh-tw/city/asahikawa-jp.html",
+      "sourceTitle": "旭川飯店｜Agoda（另見 Trip.com 各館詳細頁）",
+      "sourceQuote": "Agoda 城市頁 54 個住宿連結含 jr-inn-asahikawa、y-s-hotel-asahikawa、hotel-wing-international-asahikawa-ekimae、hotel-route-inn-grand-asahikawa-ekimae、premier-hotel-cabin-asahikawa_7、hotel-amanek-asahikawa-ekimae、toyoko-inn-hokkaido-asahikawa-eki-higashi-guchi、hotel-route-inn-asahikawa-ekimae-ichijo-dori、toyoko-inn-hokkaido-asahikawa-ekimae-ichijo-dori、dormy-inn-asahikawa-natural-hot-spring、art-hotel-asahikawa；OMO7 見 C41",
       "verdict": "verified",
-      "notes": ""
+      "notes": "Agoda 城市頁用自己的瀏覽器分頁開啟、捲到底讀連結（唯讀）。Trip.com 12 間都有詳細頁（ID 見 C20～C31）。官網 12 間首頁都有「宿泊予約」或「空室検索」。也涵蓋表格「訂房管道」欄。"
     },
     {
       "claimId": "C45",
-      "articleExcerpt": "同一區還有7条通6丁目的アートホテル旭川，走到車站約15分鐘。",
-      "sourceUrl": "https://www.art-asahikawa.com/access/",
-      "sourceTitle": "アクセス・駐車場｜【公式】アートホテル旭川",
-      "sourceQuote": "〒070-0037 北海道旭川市7条通6丁目／JR旭川駅（北口）から車で5分、徒歩約15分。",
+      "articleExcerpt": "市區飯店冬天照常營業。",
+      "sourceUrl": "https://tw.trip.com/hotels/list?city=4280&checkin=2027-01-20&checkout=2027-01-21&adult=1&crn=1",
+      "sourceTitle": "旭川飯店推薦 - 最新旭川人氣住宿預訂 - Trip.com",
+      "sourceQuote": "（2027-01-20 入住）ART旭川飯店 TWD6,907／KOKO HOTEL 旭川前旭川站 TWD2,001／東橫INN-旭川站東口 TWD1,591／北海道旭川站前一條通東橫飯店 TWD1,587／北海道旭川多美迎天然溫泉飯店 TWD3,715／露櫻GRAND飯店旭川站前店 TWD2,212",
       "verdict": "verified",
-      "notes": "第 1 輪 unsupported（「前身是ロワジールホテル旭川」只有第三方來源），第 2 輪已刪除舊名，剩下的地址與分鐘數官網支持。"
+      "notes": "清單頁冬季日期有房價；本文 12 間都是全年營業的市區飯店，官網未見冬季休業。主詞指本文 12 間時成立。"
     },
     {
       "claimId": "C46",
-      "articleExcerpt": "OMO7旭川不在Agoda的旭川城市列表裡。在搜尋框直接打「OMO7旭川」，就會跳出「OMO7旭川 - 由星野集團管理」。",
-      "sourceUrl": "https://www.agoda.com/api/cronos/search/GetUnifiedSuggestResult/3/20/1/0/zh-tw/?searchText=OMO7%E6%97%AD%E5%B7%9D&origin=TW",
-      "sourceTitle": "Agoda 台灣站搜尋建議（zh-tw）",
-      "sourceQuote": "\"ResultText\":\"OMO7旭川 - 由星野集團管理, 旭川, 日本\"",
-      "verdict": "verified",
-      "notes": "城市列表：瀏覽器打開 https://www.agoda.com/zh-tw/city/asahikawa-jp.html 捲到底，列表 54 個住宿連結中沒有 OMO7（見 C32）。搜尋框實測（英文介面）也跳出 OMO7 Asahikawa by Hoshino Resorts。"
-    },
-    {
-      "claimId": "C47",
-      "articleExcerpt": "市區飯店冬天照常營業。",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=4280&checkin=2027-01-20&checkout=2027-01-21&adult=1&crn=1",
-      "sourceTitle": "旭川飯店推薦 - 最新旭川人氣住宿預訂 - Trip.com（及各館詳細頁）",
-      "sourceQuote": "（2027-01-20 入住）東橫INN-旭川站東口 CAD69／KOKO HOTEL 旭川前旭川站 CAD98／北海道旭川站前一條通東橫飯店 CAD69／北海道旭川多美迎天然溫泉飯店 CAD212／露櫻GRAND飯店旭川站前店 CAD105；詳細頁 OMO7、ART、CABIN、ルートイン一条通 2027-01-20 有房價；JRイン、アマネク、ワイズ 2026-12-10 有房價",
-      "verdict": "verified",
-      "notes": "依 F413 的範圍判定：本文 12 間在冬季日期都訂得到，主詞「市區飯店」指本文這 12 間時成立。研究記錄提到アートホテル 2027-02-28～03-02 電氣設備更新休館（只見於日本旅行頁），屬短期停機，照 Darren 2026-10-25 規則不寫，不影響本句。"
-    },
-    {
-      "claimId": "C48",
-      "articleExcerpt": "ホテルルートインGrand旭川駅前只有在官網訂才附免費自助早餐，跟訂房網站比價時，這份早餐也要算進去。",
+      "articleExcerpt": "Route Inn Grand旭川站前只有在官網訂才附免費自助早餐，跟訂房網站比價時，這份早餐也要算進去。",
       "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/",
       "sourceTitle": "ホテルルートインGrand旭川駅前｜HOTEL ROUTE-INN",
-      "sourceQuote": "公式サイトからのご宿泊予約なら、バイキング朝食を無料でお召し上がり頂けます。／（外部サイト移動時）ルートインホテルズの公式サイト予約特典は付きません。",
+      "sourceQuote": "公式サイトからのご宿泊予約なら、バイキング朝食を無料でお召し上がり頂けます。／ルートインホテルズの公式サイト予約特典は付きません。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C49",
-      "articleExcerpt": "東橫INN與ドーミーイン的官網也標榜，在自家網站訂房最便宜。",
+      "claimId": "C47",
+      "articleExcerpt": "東橫INN與Dormy Inn的官網也標榜，在自家網站訂房最便宜。",
       "sourceUrl": "https://www.toyoko-inn.com/search/detail/00173/",
-      "sourceTitle": "【公式】東横INN旭川駅東口（另見ドーミーイン旭川官網）",
-      "sourceQuote": "当サイトからの予約が最安値！／（ドーミーイン）【公式】ドーミーイン旭川 - 最安値で宿泊予約／公式サイトは最安値 ▲ 1）いつでも最低価格保証",
+      "sourceTitle": "【公式】東横INN旭川駅東口（另見ドーミーイン官網）",
+      "sourceQuote": "当サイトからの予約が最安値！／（ドーミーイン）【公式】ドーミーイン旭川 - 最安値で宿泊予約／公式サイトは最安値▲",
       "verdict": "verified",
-      "notes": "東横一条通詳細頁也有同一句「当サイトからの予約が最安値！」。正文用「標榜」轉述官網自稱，修飾詞恰當。"
+      "notes": "東横一条通詳細頁也有同一句。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "在Agoda找OMO7旭川，旭川的城市列表裡沒有它。在搜尋框直接打「OMO7旭川」，就會跳出「OMO7旭川 - 由星野集團管理」。",
+      "sourceUrl": "https://www.agoda.com/api/cronos/search/GetUnifiedSuggestResult/3/20/1/0/zh-tw/?searchText=OMO7%E6%97%AD%E5%B7%9D&origin=TW",
+      "sourceTitle": "Agoda 搜尋建議（zh-tw）",
+      "sourceQuote": "\"Name\":\"OMO7旭川 - 由星野集團管理\",\"ResultText\":\"OMO7旭川 - 由星野集團管理, 旭川, 日本\"",
+      "verdict": "verified",
+      "notes": "城市列表：瀏覽器打開 Agoda 旭川城市頁捲到底，54 個住宿連結裡沒有 OMO7（2026-11-01）。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "住旭川每人每晚付300到700日圓的住宿稅，金額看未稅的每人每晚住宿費，分成三級。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
+      "sourceTitle": "【旭川市内で宿泊される方へ】旭川市宿泊税制度が始まります｜旭川市",
+      "sourceQuote": "税額につきましては、1人1泊につき … 宿泊料金区分 （税抜き） … 2万円未満 100円 200円 300円 2万円以上5万円未満 200円 400円 5万円以上 500円 700円",
+      "verdict": "verified",
+      "notes": ""
     },
     {
       "claimId": "C50",
       "articleExcerpt": "這筆稅從2026年4月1日開始收，北海道與旭川市各收一份，兩份一起付給飯店。",
       "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
       "sourceTitle": "【旭川市内で宿泊される方へ】旭川市宿泊税制度が始まります｜旭川市",
-      "sourceQuote": "宿泊税は、旭川市内に所在するホテル・旅館・簡易宿所・民泊施設への宿泊行為に対して、北海道と旭川市からそれぞれ課税されます。／宿泊税は宿泊される方が宿泊施設に支払い",
+      "sourceQuote": "令和8年（2026年）4月1日から…宿泊税を課税いたします。／北海道と旭川市からそれぞれ課税されます。／宿泊税は宿泊される方が宿泊施設に支払い",
       "verdict": "verified",
-      "notes": "北海道宿泊稅另見道廳頁「令和8年4月から北海道宿泊税を導入しました」。"
+      "notes": "北海道另見道廳頁「令和8年4月から北海道宿泊税を導入しました」。"
     },
     {
       "claimId": "C51",
-      "articleExcerpt": "住旭川每人每晚付300到700日圓的住宿稅，金額看未稅的每人每晚住宿費，分成三級。",
-      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
-      "sourceTitle": "【旭川市内で宿泊される方へ】旭川市宿泊税制度が始まります｜旭川市",
-      "sourceQuote": "1人1泊につき … 宿泊料金区分 （税抜き） 税 率 北海道 旭川市 合 計 2万円未満 100円 200円 300円 2万円以上5万円未満 200円 400円 5万円以上 500円 700円",
-      "verdict": "verified",
-      "notes": "第 2 輪改成第一句直接答金額，300～700 日圓與三級一致。"
-    },
-    {
-      "claimId": "C52",
       "articleExcerpt": "| 未滿2萬日圓 | 100日圓 | 200日圓 | 300日圓 |／| 2萬以上、未滿5萬日圓 | 200日圓 | 200日圓 | 400日圓 |／| 5萬日圓以上 | 500日圓 | 200日圓 | 700日圓 |",
       "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
       "sourceTitle": "【旭川市内で宿泊される方へ】旭川市宿泊税制度が始まります｜旭川市",
       "sourceQuote": "2万円未満 100円 200円 300円 2万円以上5万円未満 200円 400円 5万円以上 500円 700円",
       "verdict": "verified",
-      "notes": "旭川市欄三級都是 200 日圓（合計減北海道欄）。北海道欄另以道廳頁核對一致：「2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円」（https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html）。"
+      "notes": "北海道欄另以道廳頁核對：「2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円」（https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html）。旭川市欄三級都是 200 日圓。"
     },
     {
-      "claimId": "C53",
+      "claimId": "C52",
       "articleExcerpt": "例如兩人住兩晚、每人每晚住宿費未滿2萬日圓，住宿稅一共是1,200日圓。",
       "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
       "sourceTitle": "【旭川市内で宿泊される方へ】旭川市宿泊税制度が始まります｜旭川市",
-      "sourceQuote": "1人1泊につき … 2万円未満 100円 200円 300円",
+      "sourceQuote": "1人1泊につき … 2万円未満 … 合計 300円",
       "verdict": "verified",
-      "notes": "重算：300 日圓 × 2 人 × 2 晚 = 1,200 日圓。"
+      "notes": "重算：300 × 2 人 × 2 晚 = 1,200 日圓。"
     },
     {
-      "claimId": "C54",
+      "claimId": "C53",
       "articleExcerpt": "住宿稅可能在事前付款時和房費一起收，也可能入住時在櫃台另收，每間做法不同。",
       "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
       "sourceTitle": "【旭川市内で宿泊される方へ】旭川市宿泊税制度が始まります｜旭川市",
       "sourceQuote": "支払い方法は「事前決済の際に宿泊料金と併せて徴収する」「現地で徴収する」など、宿泊施設によって異なります。",
       "verdict": "verified",
-      "notes": "「現地で徴収」寫成「入住時在櫃台另收」屬合理白話。"
+      "notes": ""
     },
     {
-      "claimId": "C55",
+      "claimId": "C54",
       "articleExcerpt": "校外教學之類符合條件的住宿免稅，像嬰幼兒跟大人同床、不另收房費的住宿，也不課稅。",
       "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html",
       "sourceTitle": "【旭川市内で宿泊される方へ】旭川市宿泊税制度が始まります｜旭川市",
@@ -501,26 +492,62 @@
       "notes": ""
     },
     {
-      "claimId": "C56",
-      "articleExcerpt": "ドーミーイン旭川、ホテルアマネク旭川與ルートイン兩間沒有賣。",
-      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849_d/fil/hotelnadohanndai.pdf",
-      "sourceTitle": "令和8年度動物園チケット販売箇所（旭川観光コンベンション協会取扱分，令和8年5月1日時点）",
-      "sourceQuote": "販売箇所 1～33（東花苑…旭川観光コンベンション協会）中無ドーミーイン旭川、ホテルアマネク旭川、ホテルルートインGrand旭川駅前、ホテルルートイン旭川駅前一条通",
+      "claimId": "C55",
+      "articleExcerpt": "OMO7旭川在6條通9丁目，走到JR旭川站約13到15分鐘，搭計程車約5分鐘。",
+      "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/access/",
+      "sourceTitle": "アクセス｜OMO7旭川 by 星野リゾート【公式】",
+      "sourceQuote": "JR「旭川」駅より徒歩約15分、またはタクシーで約5分／（首頁）JR「旭川」駅より徒歩約13分",
       "verdict": "verified",
-      "notes": "第 2 輪新增。名單全 33 列逐一看過，這 4 間都不在；正文前一句已寫明是「照2026年5月的販售名單」，否定句有時間範圍。"
+      "notes": "第 2 輪複查（revisions-round1.md）：新增句。作者指定複查：13（首頁）～15（交通頁）分都是官方說法。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "回程往機場的巴士也從「6条9丁目」發車，沿途停「7条昭和通」，再經旭川站9號乘車處開往機場。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
+      "sourceTitle": "旭川空港バス｜旭川電気軌道",
+      "sourceQuote": "旭川空港行き バス時刻 運行期間：2026年10月25日 ～ 2026年11月30日 6の9発 5条昭和通 7条昭和通 1条昭和通 旭川駅(9) 宮前通東 ホクト電子 東光9の2 …",
+      "verdict": "verified",
+      "notes": "第 2 輪複查（revisions-round1.md）：新增句。經營者時刻表。"
     },
     {
       "claimId": "C57",
-      "articleExcerpt": "兩間在Trip.com上的館名分別帶「旭川站東口」與「一條通」，訂房時看清楚是哪一間。",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=4280&checkin=2027-01-20&checkout=2027-01-21&adult=1&crn=1",
-      "sourceTitle": "旭川飯店推薦 - 最新旭川人氣住宿預訂 - Trip.com",
-      "sourceQuote": "東橫INN-旭川站東口／北海道旭川站前一條通東橫飯店",
+      "articleExcerpt": "7條通6丁目的Art Hotel旭川，走到車站一樣約15分鐘，開車約5分鐘。搭機場巴士在「7条昭和通」下車，飯店就在正前方，回機場的巴士也停這一站。",
+      "sourceUrl": "https://www.art-asahikawa.com/access/",
+      "sourceTitle": "アクセス・駐車場｜【公式】アートホテル旭川",
+      "sourceQuote": "JR旭川駅（北口）から車で5分、徒歩約15分。／7条昭和通停留所下車（ホテル目の前）／ホテル前には旭川空港とホテルを結ぶ直行バスの停留所がございます。",
       "verdict": "verified",
-      "notes": "第 2 輪新增（F419）。"
+      "notes": "第 2 輪複查（revisions-round1.md）：新增句。往機場的車停 7条昭和通另見旭川電氣軌道時刻表。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "Dormy Inn旭川在5條通6丁目，走到車站約15分鐘，開車約2分鐘，拖著行李可以在站前搭計程車。",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/access/",
+      "sourceTitle": "アクセス｜【公式】天然温泉 神威の湯 ドーミーイン旭川",
+      "sourceQuote": "「旭川駅」から徒歩約15分／JR旭川駅から車で2分。",
+      "verdict": "verified",
+      "notes": "第 2 輪複查（revisions-round1.md）：新增句。站前計程車乘車處見旭川電氣軌道巴士案內圖「タクシー乗り場」。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "11月11日到4月7日的冬季只開到15:30，最後入園是15:00，第一天要在12點到15點之間進場。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント・開園カレンダー｜旭川市旭山動物園",
+      "sourceQuote": "通常開園（2026年）… 11/11〜12/29 10:30〜15:30 15:00／通常開園（2027年） 1/2〜4/7 10:30〜15:30 15:00",
+      "verdict": "verified",
+      "notes": "第 2 輪複查（revisions-round1.md）：新增句。「12點到15點」＝款待券第一天正午以後＋冬季最後入園 15:00，推算一致。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "動物園在11月4日到10日、12月30日到1月1日與4月8日到4月下旬休園（2027年到4月28日），兩天都要遇上開園日才用得完，買之前先對一下日期。",
+      "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
+      "sourceTitle": "イベント・開園カレンダー｜旭川市旭山動物園",
+      "sourceQuote": "2026年11月日曆 4～10 日「休園」／通常開園 10/16〜11/3、11/11〜12/29、1/2〜4/7、（2027年）4/29〜10/15",
+      "verdict": "verified",
+      "notes": "第 2 輪複查（revisions-round1.md）：新增句。12/30～1/1 與 4/8～4/28 由開園期間之間的空檔推得；2027 年夏季開園 4/29。"
     }
   ],
   "summary": {
-    "verified": 57,
+    "verified": 60,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

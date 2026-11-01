@@ -1,0 +1,791 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island-food",
+  "articleSha256": "557dbd7058bb4e3af1ad6415a6788b79a2b1483af4be7ea5e0ddcc419a2b6eb9",
+  "checker": "事實查核 agent（Claude Opus 5.5，非作者；2026-10-25 實際以 curl 與內建瀏覽器打開各來源，宗谷巴士 PDF 以 PyMuPDF 轉圖判讀；第2、3輪複查作者修改版）",
+  "checkedAt": "2026-10-25",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "利尻島美食最有名的是海膽，主角是蝦夷馬糞海膽，當地人叫它ガンゼ。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm",
+      "sourceTitle": "海の幸｜利尻富士町",
+      "sourceQuote": "利尻といえば「りしり昆布」！…このりしりこんぶを食しているのが「うに」 ／ 地元では「ガンゼ」と呼ばれるこのエゾバフンウニ！",
+      "verdict": "verified",
+      "notes": "第1輪建議已改，不再寫成只有一種海膽。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "每年6月中旬解禁，一直採到9月。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "中旬にはウニ（エゾバフンウニ）漁が解禁となり（６月） ／ 町公所：採取時期は6月から9月まで",
+      "verdict": "verified",
+      "notes": "解禁時間取自りしぷら島の四季6月欄；採到9月取自利尻富士町海の幸頁。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "另一個主角是利尻昆布，名氣最大的味楽拉麵，湯頭就是昆布熬的。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "味楽の看板メニュー「焼き醤油らーめん」は、甘みのある利尻昆布の出汁をベースに",
+      "verdict": "verified",
+      "notes": "「最有名」為編輯判斷，依據是官網的米其林北海道版必比登兩期連續，可接受。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "鴛泊港渡輪站2樓的食堂14:00打烊。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/maruzen/",
+      "sourceTitle": "食堂 丸善 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊フェリーターミナル2階にある食堂丸善 ／ 営業時間 11：00～14：00",
+      "verdict": "verified",
+      "notes": "そば福同為2階、11：00〜14：00（shima-shop/sobafuku/）。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "味楽平常也是14:00收，只有6月到9月延長到14:30。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "営業時間 : 11:30～14:00（6~9月のみ14:30まで）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "島上的餐廳多半只做午餐",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/",
+      "sourceTitle": "グルメ | 利尻島｜りしぷら RISHIRI PLUS（エリア・キーワード検索結果）",
+      "sourceQuote": "りしぷらグルメ檢索（2026-10-25 以瀏覽器執行站內篩選）：「昼食」22家、「夕食」10家，兩者都有的7家",
+      "verdict": "verified",
+      "notes": "用官方觀光網站的篩選重算：飲食店約25家中只標午餐的約15家，「多半」成立。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "錯過午餐時段，能坐下來吃飯的店就不多了。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/",
+      "sourceTitle": "グルメ | 利尻島｜りしぷら RISHIRI PLUS（エリア・キーワード検索結果）",
+      "sourceQuote": "「夕食」標籤只有10家（利尻ふる里食堂、食事処 凡天、食堂 勿忘草、麺夢 鍋ちゃん、和洋創咲 いろは、大漁亭、グランスポット、味処 なぎさ、居酒屋 かもめ 本店、常寿司），「昼食」22家",
+      "verdict": "verified",
+      "notes": "下午14:00後仍開的只有さとう食堂（到16:00）、磯焼亭（到17:00）等少數，晚上10家，「不多」成立。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "海膽季從6月中旬到9月，10月以後去就過了採收期。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm",
+      "sourceTitle": "海の幸｜利尻富士町",
+      "sourceQuote": "採取時期は6月から9月まで",
+      "verdict": "verified",
+      "notes": "推算：10月在採取期間外。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "想自己剝開當場吃，可以去神居海岸公園，這項體驗只辦到9月30日。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kamui-park/",
+      "sourceTitle": "神居海岸パーク | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業期間 6/1～9/30（５月は予約者のみ可）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "7月中旬鴛泊港渡輪站附近的港口啤酒花園「みなとビアガーデン」，有烤海膽攤位。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "みなとビアガーデン［鴛泊エリア］毎年７月中旬 鴛泊フェリーターミナル近くの「緑地公園」で開催され、焼ウニ・タコ・ホタテなど新鮮な海産物が味わえる露店や、ウニ採り体験などを楽しめます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "8月11日在鴛泊舉辦的海膽祭「うにうにフェスティバル」，攤位有迷你海膽丼。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "うにうにフェスティバル［鴛泊エリア］毎年８月１１日 焼きウニやミニうに丼などウニをたくさん食べられる出店や、「ウニ早食い競争」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "季節表：海膽（蝦夷馬糞海膽，當地叫ガンゼ）｜6月中旬解禁～9月",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "中旬にはウニ（エゾバフンウニ）漁が解禁 ／ 町公所：採取時期は6月から9月まで",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "表格：利尻昆布｜7月下旬解禁",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "下旬からは利尻昆布漁が解禁となり（７月）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "表格：鮑魚｜10月～12月左右",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm",
+      "sourceTitle": "海の幸｜利尻富士町",
+      "sourceQuote": "アワビ … 採取時期は10月から12月ごろまで",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "神居海岸公園（神居海岸パーク）在利尻町沓形地區的神居，可以自己剝帶殼的海膽，剝開當場吃。",
+      "sourceUrl": "https://rishiri-kamui.com/experience/",
+      "sourceTitle": "うにむき体験・昆布お土産づくり体験紹介 | 神居海岸パーク（Kamui Seaside Park）",
+      "sourceQuote": "ウニ割りからウニ剥きまでの手順を体験。そして自分で剥いたウニをその場でそのまま食べていただけます。 ／ 神居海岸パーク（Kamui Seaside Park） 〒097-0401 北海道利尻郡利尻町沓形字神居149-2",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "一人2,000日圓含稅，最多玩30分鐘。",
+      "sourceUrl": "https://rishiri-kamui.com/experience/",
+      "sourceTitle": "うにむき体験・昆布お土産づくり体験紹介 | 神居海岸パーク（Kamui Seaside Park）",
+      "sourceQuote": "体験時間：最大３０分 ／ 体験料金：２,０００円（税込）/１人",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "6月1日到9月30日每天9:30開到16:30，16:00以後就不再收新的客人。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kamui-park/",
+      "sourceTitle": "神居海岸パーク | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業時間 9：30〜16：30（最終受付16:00） 営業期間 6/1～9/30 定休日 なし（期間中無休）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "5月只收有預約的客人。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kamui-park/",
+      "sourceTitle": "神居海岸パーク | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "（５月は予約者のみ可）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "不到5人不必預約，5人以上的團體一定要預約。旺季人多時現場可能要等。",
+      "sourceUrl": "https://rishiri-kamui.com/",
+      "sourceTitle": "神居海岸パーク",
+      "sourceQuote": "４ヶ月間限定の施設ということもあり、時期によっては大変混雑します。５名様以上のグループのご利用は予約必須",
+      "verdict": "verified",
+      "notes": "第1輪建議已改；「不到5人不必預約」由「5人以上必須預約」推得，「可能要等」對應「大変混雑」。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "基本資訊欄：日文名 神居海岸パーク；開放期間 6/1～9/30，期間無休；時間 9:30～16:30，最後受理16:00",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kamui-park/",
+      "sourceTitle": "神居海岸パーク | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "施設名 神居海岸パーク 〈 Kamui Seaside Park 〉 営業時間 9：30〜16：30（最終受付16:00） 営業期間 6/1～9/30 定休日 なし（期間中無休）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "基本資訊欄：費用 剝海膽體驗每人2,000日圓（含稅），最多30分鐘；預約 5人以上團體必須預約，5月只接受預約",
+      "sourceUrl": "https://rishiri-kamui.com/experience/",
+      "sourceTitle": "うにむき体験・昆布お土産づくり体験紹介 | 神居海岸パーク（Kamui Seaside Park）",
+      "sourceQuote": "体験時間：最大３０分 体験料金：２,０００円（税込）/１人 ／ トップ：５名様以上のグループのご利用は予約必須",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "利尻昆布漁在7月下旬解禁，天晴沒風的日子，有機會看到海邊有人在採昆布。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "下旬からは利尻昆布漁が解禁となり、晴れた凪の日には昆布漁風景が見られます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "包裝上寫著利尻昆布的，不一定是島上採的，稚內、留萌與鄂霍次克一帶的昆布也用這個名字。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm",
+      "sourceTitle": "海の幸｜利尻富士町",
+      "sourceQuote": "利尻昆布は利尻・礼文ばかりではなく稚内や留萌やオホーツク方面で採れる昆布も利尻昆布と呼ばれています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "海膽季一過就輪到鮑魚，產季在10月到12月左右。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm",
+      "sourceTitle": "海の幸｜利尻富士町",
+      "sourceQuote": "ウニ：採取時期は6月から9月まで ／ アワビ：採取時期は10月から12月ごろまで",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "吃飯的地方散在島上四個地區，島北與東側的鴛泊、鬼脇屬於利尻富士町，西側與南側的沓形、仙法志屬於利尻町。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/",
+      "sourceTitle": "グルメ | 利尻島｜りしぷら RISHIRI PLUS（エリア・キーワード検索結果）",
+      "sourceQuote": "島のエリアから探す 鴛泊エリア 鬼脇エリア 沓形エリア 仙法志エリア ／ 各店麵包屑：利尻富士町 > 鴛泊エリア、利尻富士町 > 鬼脇エリア、利尻町 > 沓形エリア、利尻町 > 仙法志エリア",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "從渡輪靠岸的鴛泊到沓形，可以搭經過機場的路線巴士B路線，單程860日圓。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/09_rishiri-line_fare02.pdf",
+      "sourceTitle": "普通旅客運賃表 利尻線⑥ 鴛泊FT～利尻営業所～利尻空港～沓形FT～沓形～鴛泊FT～利尻富士温泉～利尻営業所間",
+      "sourceQuote": "利尻線⑥ 鴛泊FT～利尻営業所～利尻空港～沓形FT～沓形：鴛泊フェリーターミナル→沓形 860（沓形フェリーターミナルも 860）",
+      "verdict": "verified",
+      "notes": "時刻表 Bコース 鴛泊→沓形経由→鴛泊，經空港；夏期第5班與冬期第1、2班在空港不停（↓），但路線仍經過機場，說法成立。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "路線巴士B路線夏天一天5班、冬天4班",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（2026年4月28日改正）宗谷バス株利尻営業所",
+      "sourceQuote": "夏期ダイヤ（6月1日～9月30日）Bコース 便 1 2 3 4 5 ／ 冬期ダイヤ（10月1日～5月31日）Bコース 便 1 2 3 4",
+      "verdict": "verified",
+      "notes": "2026年4月28日改正版。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "大部分的店集中在中午營業，晚上能選的店比中午少。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/",
+      "sourceTitle": "グルメ | 利尻島｜りしぷら RISHIRI PLUS（エリア・キーワード検索結果）",
+      "sourceQuote": "りしぷらグルメ檢索：「昼食」22家、「夕食」10家",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "沓形的味楽招牌是燒醬油拉麵，用帶甜味的利尻昆布熬高湯，再配上燒到快焦的醬油。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "味楽の看板メニュー「焼き醤油らーめん」は、甘みのある利尻昆布の出汁をベースに、焦げる寸前まで焼き上げた醤油を合わせる",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "米其林指南北海道2012與2017特別版，味楽連續兩次拿到必比登推介。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "ミシュランガイド北海道2012・2017特別版にて ビブグルマン 2期連続受賞",
+      "verdict": "verified",
+      "notes": "這段文字由 JavaScript 產生，curl 抓不到，以內建瀏覽器打開官網首頁讀取確認。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "本店營業時間是11:30到14:00，6月到9月延長到14:30，每週四公休。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "営業時間 : 11:30～14:00（6~9月のみ14:30まで） 定休日 : 木曜日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "晚上不開，碰上週四或下午才到沓形，這一趟就吃不到。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "営業時間 : 11:30～14:00（6~9月のみ14:30まで） 定休日 : 木曜日",
+      "verdict": "verified",
+      "notes": "推算：只做午餐、週四休。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "臨時休息會發在官方Instagram，店家建議出門前看一眼。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "ご来店前に、SNSで営業時間をチェック！ ▶︎ Instagramにて最新の営業情報を発信しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "6月到9月想把味楽和環島排在同一天，可以早上從鴛泊搭路線巴士B路線到沓形，中午吃味楽。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（2026年4月28日改正）宗谷バス株利尻営業所",
+      "sourceQuote": "夏期ダイヤ Bコース 鴛泊ＦＴ 7:35 → 沓形 8:15、鴛泊ＦＴ 9:40 → 沓形 10:21 ／ 味楽官網：営業時間 : 11:30～14:00（6~9月のみ14:30まで） 定休日 : 木曜日",
+      "verdict": "verified",
+      "notes": "推算：早上兩班B路線都在味楽11:30開門前到沓形；週四公休前一段已寫。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "接著搭定期觀光巴士B線「利尻スポットめぐり」環島，這班車13:45從沓形港渡輪站出發。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス 定期観光バス",
+      "sourceQuote": "コース名 / 利尻B - 所要時間 / 2:30 利尻スポットめぐり ／ 6月1日～9月30日 13:45発 (沓形FT)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "終點是鴛泊港渡輪站，16:15抵達。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス 定期観光バス",
+      "sourceQuote": "沓形フェリーターミナル発 ～…～鴛泊フェリーターミナル着 ／ 13:45発 (沓形FT) → 16:15着 (鴛泊FT)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "這條觀光巴士從沓形發車，從稚內坐船到鴛泊的話，得自己移動到沓形。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス 定期観光バス",
+      "sourceQuote": "※利尻Ｂコースの出発地点は『 沓形フェリーターミナル』 です。稚内からお越しになる場合は鴛泊フェリーターミナルから沓形フェリーターミナルへ各自で移動する必要がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "沒空去沓形，新橫濱拉麵博物館、北海道俱知安與美國波士頓也吃得到味楽的拉麵。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "現在は新横浜ラーメン博物館や北海道 ・ 倶知安町、アメリカ・ボストンでも提供しています",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "基本資訊欄：日文名 利尻らーめん味楽 本店；地址 利尻町沓形字本町67",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "所在地 : 北海道利尻郡利尻町沓形字本町67",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "基本資訊欄：營業時間 11:30～14:00，6～9月到14:30；公休 週四",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "営業時間 : 11:30～14:00（6~9月のみ14:30まで） 定休日 : 木曜日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "基本資訊欄：招牌 焼き醤油らーめん（燒醬油拉麵）；獲獎 米其林指南北海道2012、2017特別版必比登推介",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "看板メニュー「焼き醤油らーめん」 ／ ミシュランガイド北海道2012・2017特別版にて ビブグルマン 2期連続受賞",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "沓形的GOLLEY’S用柴火窯烤披薩，晚上也有營業。",
+      "sourceUrl": "https://www.golleys.co.jp/",
+      "sourceTitle": "利尻ピザ by GOLLEY’S | Golley's（ゴリーズ）",
+      "sourceQuote": "薪の炎が引き立てる海と大地のカムイのレシピ ／ 住所 北海道利尻郡利尻町沓形字本町53番地 ／ 17:00 – 21:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "9月午餐11:00到14:30、晚餐17:00到21:00，到了10月，午餐提早在14:00結束。",
+      "sourceUrl": "https://www.golleys.co.jp/",
+      "sourceTitle": "利尻ピザ by GOLLEY’S | Golley's（ゴリーズ）",
+      "sourceQuote": "【9月】 11:00 – 14:30 / 17:00 – 21:00 【10月】 11:00 – 14:00 / 17:00 – 21:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "每週二公休，其他月份的營業時間會在官方Instagram更新。",
+      "sourceUrl": "https://www.golleys.co.jp/",
+      "sourceTitle": "利尻ピザ by GOLLEY’S | Golley's（ゴリーズ）",
+      "sourceQuote": "定休日：毎週火曜日 ／ 最新情報はインスタまで",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "日本最北的蒸餾所Kamui Whisky在2021年落成。",
+      "sourceUrl": "https://kamuiwhisky.com/ja/home-ja/",
+      "sourceTitle": "Kamui Whisky K.K.",
+      "sourceQuote": "日本最北の蒸留所 ／ 当社の蒸留所は2021年に建設されました。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "參觀只在特定日子的17:00開放，要事先預約。",
+      "sourceUrl": "https://kamuiwhisky.com/ja/visit-ja/",
+      "sourceTitle": "蒸留所見学ツアー - Kamui Whisky K.K.",
+      "sourceQuote": "特定の日に 午後5時 から蒸留所の見学ツアーを開催しています。 事前予約が必要です",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "導覽約45分鐘含試飲，每人2,500日圓。",
+      "sourceUrl": "https://kamuiwhisky.com/ja/visit-ja/",
+      "sourceTitle": "蒸留所見学ツアー - Kamui Whisky K.K.",
+      "sourceQuote": "見学は約 45分間 で、 受賞歴のあるカムイ原酒の試飲 が含まれます。 料金は お一人様2,500円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "鴛泊港渡輪站的建築叫海之驛鴛泊，裡面有投幣置物櫃與觀光案內所。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1488.htm",
+      "sourceTitle": "海の駅おしどまり｜利尻富士町",
+      "sourceQuote": "海の駅おしどまり ・待合所・ボーディングブリッジ・発券所…・コインロッカー…・飲食店・売店 ・Wi－Fi・観光案内所",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "2樓的食堂丸善與蕎麥福在11:00到14:00供應午餐，蕎麥福每週二公休。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/sobafuku/",
+      "sourceTitle": "海と山と蕎麦 そば福 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊フェリーターミナル2階にある「そば福」 営業時間 11：00〜14：00 定休日 火曜 ／ 丸善：鴛泊フェリーターミナル2階 営業時間 11：00～14：00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "6月到9月的定期觀光巴士A線「秀峰利尻富士めぐり」9:05從鴛泊港渡輪站出發，12:15回到原地。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス 定期観光バス",
+      "sourceQuote": "利尻A - 所要時間 / 3:10 秀峰利尻富士めぐり … 鴛泊フェリーターミナル発 … 鴛泊フェリーターミナル着 6月1日～9月30日 9:05発 → 12:15着",
+      "verdict": "verified",
+      "notes": "A線另有5/3～5/5、5/20～5/31 8:35發，正文限定6～9月，無誤。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "下車直接上2樓吃午餐，時間剛好。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/maruzen/",
+      "sourceTitle": "食堂 丸善 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業時間 11：00～14：00",
+      "verdict": "verified",
+      "notes": "推算：12:15回鴛泊渡輪站，2樓食堂到14:00。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "渡輪站正對面還有Satou食堂與磯焼亭，兩家都只在4月到10月營業。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/satou-shokudou/",
+      "sourceTitle": "さとう食堂 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊フェリーターミナルの目の前にある「さとう食堂」 営業期間 4月～10月 ／ 磯焼亭：鴛泊フェリーターミナルの目の前にある「磯焼亭」 営業期間 4月～10月",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "Satou食堂9:00開到16:00，磯焼亭10:00開到17:00，都比2樓的食堂晚打烊。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/isoyakitei/",
+      "sourceTitle": "磯焼亭 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "磯焼亭 営業時間 10：00～17：00 ※変更あり ／ さとう食堂 営業時間 9:00〜16:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "磯焼亭的時間有時會調整，可以在渡輪站的觀光案內所問。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/isoyakitei/",
+      "sourceTitle": "磯焼亭 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業時間 10：00～17：00 ※変更あり ／ 町公所海の駅おしどまり頁：・Wi－Fi・観光案内所",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "要買海膽、昆布或鮮魚帶走，可以去鴛泊港的利尻漁協商店，只有週一到週五8:30到17:00營業。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/kumiai-store/",
+      "sourceTitle": "利尻漁業協同組合ストアー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊港にある「漁業協同組合ストアー」。ウニや昆布、魚など様々な島の海産物 … 営業時間 8：30〜17：00 定休日 土曜、日曜",
+      "verdict": "verified",
+      "notes": "國定假日是否營業頁面沒寫。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "沓形港附近的利尻故鄉食堂中午與晚上都開。午餐11:00到13:30，晚餐17:00到21:00，週日公休。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/furusato-shokudo/",
+      "sourceTitle": "利尻ふる里食堂 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "沓形港近くにある利尻ふる里食堂 … 営業時間 (昼) 11：00～13：30 (夜) 17：00～21：00 定休日 日曜",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "島之驛利尻 海藻之里是用島上現存最老的房子改建的，屋齡超過130年。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/shimano-eki/",
+      "sourceTitle": "利尻島の駅海藻の里利尻 | りしぷら RISHIRI PLUS",
+      "sourceQuote": "築130年以上、現存する利尻最古の建物内をリノベーションし",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "裡面的咖啡館10:00到15:00營業，14:00最後點餐。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/shimano-eki/",
+      "sourceTitle": "利尻島の駅海藻の里利尻 | りしぷら RISHIRI PLUS",
+      "sourceQuote": "「カフェ自休自足」… 営業時間 10：00〜15：00（ラストオーダー14:00）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "5月到10月每週二休，11月到隔年4月只開週五到週日。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/shimano-eki/",
+      "sourceTitle": "利尻島の駅海藻の里利尻 | りしぷら RISHIRI PLUS",
+      "sourceQuote": "定休日 火（5月～10月）／月～木（11月～4月）",
+      "verdict": "verified",
+      "notes": "注意：經營者島の駅官網 shimanoeki-rishiri.com 頁尾寫「営業時間 10:00～16:00 定休日 火曜日(4月～9月) 月・火曜日(10月～3月)」，與りしぷら不同。りしぷら頁 dateModified 2025-02-17，官網最新消息停在 2021-09-08，以較新的りしぷら為準判 verified；建議重查時打電話或看官方社群確認。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "Milpis商店從1967年就在島上賣乳酸飲料Milpis，每天7:00到20:00營業、全年無休。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/milpis-store/",
+      "sourceTitle": "ミルピス商店 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "1967年から半世紀以上、利尻島で販売している「ミルピス」。乳酸菌飲料ではなく乳酸飲料 … 営業時間 7：00〜20：00 定休日 無休",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "島的南側與東側能吃飯的地方少",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/",
+      "sourceTitle": "グルメ | 利尻島｜りしぷら RISHIRI PLUS（エリア・キーワード検索結果）",
+      "sourceQuote": "檢索結果：仙法志エリアの飲食店はマルヰ食堂のみ（另有御崎物産），鬼脇エリアは利尻富士町レストハウス、利尻亀一、味彩 川一、寺嶋菓子舗；沓形エリアは20家以上",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "Otatomari沼與仙法志御崎公園都有路線巴士站牌。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（2026年4月28日改正）宗谷バス株利尻営業所",
+      "sourceQuote": "オタトマリ沼（23） ／ 御崎公園（28）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "沼旁的利尻富士町休憩所只在觀光季開，8:00到17:00。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/fuji-resthouse/",
+      "sourceTitle": "利尻富士町レストハウス | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "オタトマリ沼の湖畔にある利尻富士町レストハウス … 営業時間 8：00〜17：00 営業期間 観光シーズンのみ営業",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "同在沼邊的伴手禮店利尻亀一從4月中旬開到10月下旬，營業時間9:00到17:00。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/kameichi/",
+      "sourceTitle": "利尻亀一 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "オタトマリ沼にあるお土産店「利尻亀一」… 営業時間 9：00～17：00 営業期間 4月中旬～10月下旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "仙法志這一區唯一的餐廳是丸井食堂，11:30開門，每週二公休。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/marui-shokudo/",
+      "sourceTitle": "マルヰ食堂 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "仙法志エリアで唯一の飲食店 マルヰ食堂 … 営業時間 11：30〜 定休日 火曜",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "週二繞南側的話，午餐改排在鴛泊或沓形比較穩。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/marui-shokudo/",
+      "sourceTitle": "マルヰ食堂 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "仙法志エリアで唯一の飲食店 … 定休日 火曜",
+      "verdict": "verified",
+      "notes": "推算：仙法志唯一餐廳週二休。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "鬼脇的寺嶋菓子舗1878年創業",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/terasimakasiho/",
+      "sourceTitle": "寺嶋菓子舗 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "1878年に創業し、146年以上の歴史を誇る寺嶋菓子舗 ／ 住所 北海道利尻郡利尻富士町鬼脇鬼脇 90",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "路線巴士A路線會經過鬼脇，環島時可以順路買點心。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "バス運行時刻表（2026年4月28日改正）宗谷バス株利尻営業所",
+      "sourceQuote": "Aコース 鴛泊→鬼脇経由→鴛泊 ／ 鬼脇 6:52 7:47 13:02 15:12 16:57",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "11月到隔年4月，鴛泊港渡輪站對面的兩家食堂休息，沓形的島之驛利尻咖啡館只開週五到週日。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/satou-shokudou/",
+      "sourceTitle": "さとう食堂 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "さとう食堂 営業期間 4月～10月 ／ 磯焼亭 営業期間 4月～10月 ／ 島の駅（りしぷら）定休日 月～木（11月～4月）",
+      "verdict": "verified",
+      "notes": "島の駅官網頁尾的冬季休日不同（月・火曜日、10月～3月），以較新的りしぷら為準，見「5月到10月每週二休」那筆的註記。"
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "季節裡想吃海膽，鴛泊港渡輪站2樓的食堂丸善、對面的Satou食堂與磯焼亭，菜單上都有海膽丼，沓形的利尻故鄉食堂夏天也有。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/maruzen/",
+      "sourceTitle": "食堂 丸善 | 利尻島｜りしぷら RISHIRI PLUS（另見 さとう食堂、磯焼亭、利尻ふる里食堂 各頁）",
+      "sourceQuote": "丸善：他にもウニ丼やホタテらーめんなど ／ さとう食堂：メニューにはウニ丼やほっけ焼き定食はもちろん ／ 磯焼亭：人気メニューは名物の利尻らーめんや、うに丼、ホタテ丼など ／ 利尻ふる里食堂：夏にはウニ丼などが楽しめる食堂",
+      "verdict": "verified",
+      "notes": "第2輪已改。四家頁面都寫有海膽丼；ふる里食堂原文限「夏には」，正文寫「夏天也有」一致。Satou食堂、磯焼亭只在4～10月營業，與海膽季重疊，無衝突。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "想買海膽帶走，鴛泊港的利尻漁協商店有賣。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/kumiai-store/",
+      "sourceTitle": "利尻漁業協同組合ストアー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊港にある「漁業協同組合ストアー」。ウニや昆布、魚など様々な島の海産物",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "對照表：海之驛鴛泊（鴛泊港渡輪站的建築）｜海の駅おしどまり｜鴛泊",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1488.htm",
+      "sourceTitle": "海の駅おしどまり｜利尻富士町",
+      "sourceQuote": "海の駅おしどまり（利尻島の玄関口【鴛泊港】）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "對照表：食堂丸善｜食堂 丸善｜鴛泊；蕎麥福｜そば福｜鴛泊；Satou食堂｜さとう食堂｜鴛泊",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/sobafuku/",
+      "sourceTitle": "海と山と蕎麦 そば福 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "施設名 海と山と蕎麦 そば福（鴛泊エリア） ／ 食堂 丸善（鴛泊エリア） ／ さとう食堂（鴛泊エリア）",
+      "verdict": "verified",
+      "notes": "そば福的全名是「海と山と蕎麦 そば福」，表中只寫そば福可接受。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "對照表：利尻漁協商店｜利尻漁業協同組合ストアー｜鴛泊",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/kumiai-store/",
+      "sourceTitle": "利尻漁業協同組合ストアー | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "施設名 利尻漁業協同組合ストアー ／ 本文：鴛泊港にある「漁業協同組合ストアー」",
+      "verdict": "verified",
+      "notes": "第2輪已改，與原頁施設名一致。"
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "對照表：味楽｜利尻らーめん味楽｜沓形；GOLLEY’S｜利尻ピザ by GOLLEY’S｜沓形",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】| 利尻昆布の旨味を一杯に、日本最北端の島から生まれたラーメン。",
+      "sourceQuote": "利尻らーめん味楽【公式】 所在地 : 北海道利尻郡利尻町沓形字本町67 ／ GOLLEY’S官網：利尻ピザ by GOLLEY’S 北海道利尻郡利尻町沓形字本町53番地",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "對照表：利尻故鄉食堂｜利尻ふる里食堂｜沓形；Milpis商店｜ミルピス商店｜沓形",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/furusato-shokudo/",
+      "sourceTitle": "利尻ふる里食堂 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "施設名 利尻ふる里食堂（沓形エリア） ／ ミルピス商店（沓形エリア）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "對照表：島之驛利尻 海藻之里｜島の駅利尻 海藻の里｜沓形",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/shimano-eki/",
+      "sourceTitle": "利尻島の駅海藻の里利尻 | りしぷら RISHIRI PLUS",
+      "sourceQuote": "りしぷら：施設名 島の駅利尻～海藻の里～ ／ 經營者官網 shimanoeki-rishiri.com：島の駅利尻 海藻の里",
+      "verdict": "verified",
+      "notes": "第2輪已改，與經營者官網「島の駅利尻 海藻の里」一致（りしぷら寫「島の駅利尻～海藻の里～」）。"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "對照表：利尻富士町休憩所｜利尻富士町レストハウス｜Otatomari沼；丸井食堂｜マルヰ食堂｜仙法志",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/fuji-resthouse/",
+      "sourceTitle": "利尻富士町レストハウス | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "オタトマリ沼の湖畔にある利尻富士町レストハウス ／ マルヰ食堂（仙法志エリア）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "店家的日文名稱對照如下。（對照表欄名：日文店名）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/",
+      "sourceTitle": "グルメ | 利尻島｜りしぷら RISHIRI PLUS（各店頁的施設名）",
+      "sourceQuote": "各店頁「施設名」欄：食堂 丸善、海と山と蕎麦 そば福、さとう食堂、利尻漁業協同組合ストアー、利尻ふる里食堂、ミルピス商店、利尻富士町レストハウス、マルヰ食堂；島の駅官網「島の駅利尻 海藻の里」；味楽官網「利尻らーめん味楽」；GOLLEY’S官網「利尻ピザ by GOLLEY’S」；町公所「海の駅おしどまり」",
+      "verdict": "verified",
+      "notes": "第2輪已改，不再宣稱招牌內容；表中日文店名逐列對過原頁。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "基本資訊欄：地點｜利尻町沓形字神居149-2",
+      "sourceUrl": "https://rishiri-kamui.com/experience/",
+      "sourceTitle": "うにむき体験・昆布お土産づくり体験紹介 | 神居海岸パーク（Kamui Seaside Park）",
+      "sourceQuote": "神居海岸パーク（Kamui Seaside Park） 〒097-0401 北海道利尻郡利尻町沓形字神居149-2",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "沓形晚上營業的店中，利尻故鄉食堂的晚餐開到21:00，週日休。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/furusato-shokudo/",
+      "sourceTitle": "利尻ふる里食堂 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "(夜) 17：00～21：00 定休日 日曜",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "GOLLEY’S在9月與10月的晚餐也開到21:00，週二休。",
+      "sourceUrl": "https://www.golleys.co.jp/",
+      "sourceTitle": "利尻ピザ by GOLLEY’S | Golley's（ゴリーズ）",
+      "sourceQuote": "【9月】 … 17:00 – 21:00 【10月】 … 17:00 – 21:00 定休日：毎週火曜日",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "兩家的公休日正好錯開，9、10月住沓形，週日晚上可以改去GOLLEY’S，週二改去利尻故鄉食堂。",
+      "sourceUrl": "https://www.golleys.co.jp/",
+      "sourceTitle": "利尻ピザ by GOLLEY’S | Golley's（ゴリーズ）",
+      "sourceQuote": "【9月】【10月】 … 定休日：毎週火曜日 ／ ふる里食堂：定休日 日曜",
+      "verdict": "verified",
+      "notes": "第1輪建議已改（限9、10月、「晚上營業的店中」）。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "利尻富士溫泉在鴛泊的栄町，從鴛泊港走路約10分鐘，是住鴛泊時的晚餐選項之一。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1204.htm",
+      "sourceTitle": "利尻富士温泉｜利尻富士町",
+      "sourceQuote": "鴛泊港から徒歩で10分 ／ 利尻富士温泉保養施設 住所：利尻富士町鴛泊字栄町",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "館內的餐廳想恋路是漁夫開的，主要在傍晚以後營業，泡完湯可以直接在館內吃晚餐。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1204.htm",
+      "sourceTitle": "利尻富士温泉｜利尻富士町",
+      "sourceQuote": "レストラン「想恋路」は、漁師さんが営業しているため、主に夕方頃からのオープンとなります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "溫泉從中午開到21:00，20:30停止入場，大人500日圓。11月到隔年4月每週三休館。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1204.htm",
+      "sourceTitle": "利尻富士温泉｜利尻富士町",
+      "sourceQuote": "正午～21時(最終受付20:30） 毎日営業（11月～4月 毎週水曜休館日） ／ 大人（中学生以上） 500円",
+      "verdict": "verified",
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "verified": 86,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}

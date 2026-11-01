@@ -1,61 +1,47 @@
-# asahikawa-stay 驗收紀錄
+# 驗收紀錄：asahikawa-stay（2026-11-01，已上線文章重寫一輪）
 
-- 文章：旭川住宿（`/places/asahikawa/stay/`，aspect-page，地點 `asahikawa`，旭川・大雪群）
-- 日期：2026-10-26（人工 session，Darren 要求今天持續寫作；旭川・大雪群大綱 Darren 同意做好就寫）
-- 稿件 SHA-256（LF）：`e4e5e79cb159c5ba87a68784f3ffab4b7cb9a36cd9f6bebb3683f611c3e9c588`
-- 規則：`content-automation/local-writer.md` 第 2～4 步，大綱 `content-planning/hokkaido/hokkaido-asahikawa-outline.json`；住宿頁不寫價格（Darren 2026-10-26）
+- 文章：`content-production/asahikawa-stay/reader-preview.md`
+- SHA-256（換行統一成 LF 後計算）：`7ca3ae821267d3e875cf1259447a0acb57e294c80709730bce5464afcb5454fd`
+- 規則：`content-automation/rewrite-live.md`（重查、讀競品後重寫、先刪再調、意義比對、完整驗收）；重寫前的版本在 `pre-rewrite/`
+- 研究者：研究子代理（Opus 5.5，重查 27 筆會變資料，0 筆更正，新增 F423（平和通買物公園）、F424；讀競品 5 篇）
+- 作者：作者子代理（Opus 5.5，讀競品後重寫；連結句照寫作指南第10條改寫 2 句，見 `link-sentences.json`）；驗收後修改也由作者處理（`revisions-round1.md`）
+- 潤稿者：潤稿子代理（Opus 5.5，先刪再調，沒寫過這篇）；意義比對 1 個子代理
+- 標題檢查：標題、SEO Title 沿用網站版本，沒改，沿用 `heading-review.json`
+- 事實查核：1 個子代理（Opus 5.5，沒參與寫作、潤稿與修改），共 2 輪
+- 讀者驗收：1 個子代理（沒寫過、潤過或查核過），第一階段只看大綱、文章與規則，第二階段才看研究記錄與事實查核
+- 協調：人工 session（Claude Code，Darren 2026-11-01 要求把剩下的文章全部重寫一輪）
 
 ## 結果
 
 | 項目 | 結果 |
 |---|---|
-| 格式 | `mechanical_clear`（audit_answer_first，aspect-page） |
-| 標題 | `acceptable`（heading-review.json 改 3 個標題；heading_review.py `headings_applied`；大綱同步） |
-| 讀者價值 | `acceptable`（reader-final.md，剩餘必修 0） |
-| 事實與條件 | `verified`（fact-check.json 第 2 輪 57 項全部 verified） |
-| 口吻 | check-voice --final 通過 |
-| 事實編號 | tags_clear，事實表 33 筆、正文用 31 筆 |
-| 防抄襲 | check-copy 通過（潤稿時比對 GLTJP 2 篇、MATCHA 3 篇） |
-| 圖片 | 這次沒有選圖 |
+| 格式 | `mechanical_clear`（`audit_answer_first.py --article-type aspect-page`） |
+| 標題 | `acceptable`（標題沒改；讀者最終判定可接受） |
+| 讀者價值 | `acceptable`（讀者最終判定，第二階段必修 3 條都已解決） |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，60 項 claim 全部 verified） |
+| 口吻與標點 | `check-voice.mjs --final` 通過（正文 2,782 字） |
+| 事實編號 | `tags_clear`（研究記錄 42 筆，正文用到 38 筆） |
+| 分潤連結 | 沒有單一旅館的分潤連結，不需揭露句 |
+| 圖片 | 線上沒有文內照片，沒有 AI 圖或自製示意圖 |
 
-## 身分
-
-| 角色 | 身分 |
-|---|---|
-| 研究者 | 子代理（Opus 5.5），寫作前補研究，判定 `ready` |
-| 作者 | 另一個子代理（Opus 5.5），寫初稿與驗收後第 1 輪 |
-| 潤稿者 | 另一個子代理（Opus 5.5），沒寫過這篇 |
-| 編輯挑錯 | 另一個子代理（Opus 5.5） |
-| 意義比對 | 另一個子代理（Opus 5.5） |
-| 標題檢查 | 另一個子代理（Opus 5.5） |
-| 事實查核 | 另一個子代理（Opus 5.5），唯讀 |
-| 讀者驗收 | 另一個子代理（Opus 5.5），唯讀 |
-| 協調者 | 人工 session 主代理（Opus 5.5）；大綱 H3「旭川站北口前的飯店」改成「旭川站前的飯店」，同步標題，沒有改正文 |
+**最終結果：`ready_for_user_preview`。** Darren 2026-11-01 要求重寫後換上網站。
 
 ## 經過
 
-| 步驟 | 結果 |
-|---|---|
-| 寫作前補研究 | `ready`；12 家住宿的區域、離車站分鐘、營業期間、訂房管道都有事實；新增 F401～F417；不查價格 |
-| 作者 | 初稿 mechanical_clear；新增 F418（Trip.com 台灣站館名） |
-| 潤稿 | 讀 GLTJP 2 篇、MATCHA 3 篇；五項檢查通過 |
-| 編輯挑錯 | 17 條（巴士從站前發車講三次、段首條件句型、語意不通） |
-| 意義比對 | 不可接受 3、遺失 0，已修；另修正「12 月或 1 月都訂得到」超出 F413 |
-| 事實查核第 1 輪 | 55 項，incorrect 1（C17 日文名搜不到）、unsupported 1（C45 前身館名） |
-| 讀者驗收 | 第一階段 revise 必修 4；第二階段最終必修 8 |
-| 作者驗收後第 1 輪 | 8 條必修處理，新增 F419～F422（完整館名、おもてなし券販售飯店、證明文件、ドーミーイン巴士站） |
-| 事實查核第 2 輪 | 57 項全部 verified |
-| 讀者最終 | acceptable，剩餘必修 0 |
+| 輪 | 做了什麼 | 結果 |
+|---|---|---|
+| 研究 | 重查 27 筆、讀競品 5 篇 | 0 筆更正；F415 來源改回原站 |
+| 寫作 | 讀競品後重排（站前→市中心→誰適合）、改寫 2 句連結句；先刪再調潤稿（刪重複一句）；意義比對 | 四項檢查通過；0 不可接受、0 遺失 |
+| 1 | 事實查核第 1 輪（54 項） | 全部 verified |
+| 2 | 讀者驗收第一、二階段 | 必修 3 條：款待券面額與冬季入園、市中心回機場怎麼搭、車站到市中心飯店的走法與計程車 |
+| 3 | 作者照必修修改，新增 F425～F431（款待券面額不是房價，可以寫） | 三項檢查通過 |
+| 4 | 事實查核第 2 輪（60 項）；讀者最終判定 | 全部 verified；讀者價值與標題可接受、無剩餘必修 |
 
 ## 查不到所以正文沒寫的
 
-- 各家價格（住宿頁不寫價格）。
-- ドーミーイン門口巴士站的站名。
-- 住宿稅能不能刷卡、各官網有沒有中英文版、12 家是否都有大浴場。
+- Dormy Inn 門口的回機場站名、三間飯店與買物公園的相對位置、2027 年門票調價後款待券面額會不會調
 
 ## 留給之後的事
 
-- 事實表待同步：F401～F422、F412 前身館名不採用。
-- おもてなし券「入園後不限停留時間」只有旭川觀光コンベンション協會存檔一個來源，2026-11-25 重查。
-
-最終結果：`ready_for_user_preview`
+- 新增 F423～F431 要同步回地點事實表與 D1；動物園開園表 F3、F4、F141 在 2026-11-05 到期要重查。
+- 款待券 H3 放在「選哪一區」底下，要不要移位置留給改大綱時決定。

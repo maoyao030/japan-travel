@@ -1,0 +1,953 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahidake-ropeway",
+  "articleSha256": "0a72e593498b00269a48dec68a0ebd74423ff0f68289e38874f8290fd2a310f4",
+  "checker": "fact-check-agent（事實查核子代理，未參與寫作與潤稿；2026-10-26 用 curl 重新下載各來源，去掉 HTML 註解後只讀頁面顯示的文字；散策地圖 PDF 下載到暫存資料夾、取出內嵌 JPEG 判讀；沒有用瀏覽器。複查第 1 輪：逐句比對驗收後第 1 輪全文，改過與新增的句子重抓旭川電氣軌道、東川町觀光頁、遊客中心首頁確認）",
+  "checkedAt": "2026-10-26",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "大雪山旭岳纜車（大雪山旭岳ロープウェイ）從海拔約1,100公尺的山麓站，上到約1,600公尺的姿見站。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳 | ようこそ東川",
+      "sourceQuote": "旭岳温泉は標高1,100ｍ地点にあり、終点には旭岳ロープウェイがあります。｜標高1,600m地点までは旭岳ロープウエイが運行している",
+      "verdict": "verified",
+      "notes": "山麓站海拔以旭岳溫泉 1,100 公尺、終點是纜車推得，正文有「約」；姿見站 1,600 公尺另見纜車官網「姿見駅の現在の天候（標高1600m）」。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "單程約10分鐘，一個車廂最多載101人。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳 | ようこそ東川",
+      "sourceQuote": "約10分間の空中散歩｜一度に101人まで乗ることができ",
+      "verdict": "verified",
+      "notes": "纜車官網「●ロープウェイ所要時間 片道約10分」一致。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "姿見の池散策路就從姿見站出發，一圈約1.7公里、走約1小時，每年6月到10月中旬開放。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "散策コース （6月～10月中旬）｜1周 約 1時間 ※ / 約 1.7km",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "沿路看得到冒著白煙的地獄谷，還有舊火口形成的姿見の池。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e5%a7%bf%e8%a6%8b%e3%81%ae%e6%b1%a0%e5%9c%92%e5%9c%b0/",
+      "sourceTitle": "姿見の池園地 - 大雪山国立公園連絡協議会",
+      "sourceQuote": "噴煙を上げる地獄谷、かつての噴火口である姿見の池や夫婦池",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "旭岳纜車全年運行，只是營業時間隨季節變動，夏天週末清晨6:00開，冬天15:40收。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "始発（上り） 6:00am 〜 最終（下り） 5:30pm（E）｜始発（上り） 9:00am 〜 最終（下り） 3:40pm（G）｜2026年12月 11 G …",
+      "verdict": "verified",
+      "notes": "全年運行見東川町觀光協會「一年を通して運行し（※点検期間あり）」。2026 年 7～9 月週末連假是 E、12/11 起是 G。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "春秋兩季各有一段檢修停駛，2026年秋季從11月16日停到12月10日。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "2026年11月運行スケジュール … 15 A 16 × …｜2026年12月 … 10 × 11 G",
+      "verdict": "verified",
+      "notes": "點檢停駛見東川町「一年を通して運行し（※点検期間あり）」；春季有停駛的頁面可見依據是官方部落格 2026-05-23「運行再開」與「運休初日も☀でしたね」（2026 年春季停駛日期只在被註解掉的舊月曆，不當來源；正文也沒寫春季日期）。"
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "纜車官網的月曆上，每天標著A到G其中一個代號，代號對應當天的營業時間，打叉的日子停駛。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "旭岳ロープウェイ運行予定表（left_A～left_G 七種營業時間、left_X 運休）｜月曆每日標 A～G 或 ×",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "營業時間表：7月～9月 平日6:30～17:30，週末與連假6:00～17:30",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "D 始発（上り） 6:30am 〜 最終（下り） 5:30pm｜E 始発（上り） 6:00am 〜 最終（下り） 5:30pm｜2026年7～9月：平日 D、土日祝 E",
+      "verdict": "verified",
+      "notes": "逐日比對：7/11-12、18-20（海の日）、25-26；8/1-2、8-9、11（山の日）、15-16、22-23、29-30；9/5-6、12-13、19-23、26-27 為 E，其餘平日 D。2026 年沒有用到 F（6:00～18:00）。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "營業時間表：10月1日～10月20日 8:00～17:00",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "C 始発（上り） 8:00am 〜 最終（下り） 5:00pm｜2026年10月 1～20 C",
+      "verdict": "verified",
+      "notes": "官方部落格 2026-09-30「２０２６年１０月１日（木）より～ ８：００～１７：００」一致。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "營業時間表：10月21日～11月15日 9:00～16:00",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "10月21日（水）より 9:00～16:00 （上り最終15:40）｜2026年10月 21～31 A｜11月 1～15 A",
+      "verdict": "verified",
+      "notes": "官方部落格 2026-10-20「夏季営業も残りわずか（～１１月１５日まで）」一致。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "營業時間表：11月16日～12月10日 停駛；12月11日～12月31日 9:00～15:40",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "11月 16～30 ×｜12月 1～10 ×、11～31 G｜G 始発（上り） 9:00am 〜 最終（下り） 3:40pm",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "時間從上行首班算到下行末班。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "始発（上り） 9:00am 〜 最終（下り） 4:00pm",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "6月1日到10月20日每15分鐘一班，在每小時的00、15、30、45分發車。10月21日到隔年5月31日改成20分鐘一班，00、20、40分發車。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "6/1～10/20 15分間隔 (00・15・30・45)｜10/21～5/31 20分間隔 (00・20・40)",
+      "verdict": "verified",
+      "notes": "頁面顯示的文字；被註解掉的「10/21～11/10、12/11～5/31」舊文字未採用。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "秋季檢修後，2026年與前一年都是12月11日恢復運行，前一年的壓雪滑雪道也在同一天開放。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/%e6%97%ad%e5%b2%b3%e3%83%ad%e3%83%bc%e3%83%97%e3%82%a6%e3%82%a7%e3%82%a4%e5%86%8d%e9%96%8b%ef%bc%86%e5%9c%a7%e9%9b%aa%e3%82%b3%e3%83%bc%e3%82%b9%e5%88%a9%e7%94%a8%e9%96%8b%e5%a7%8b/",
+      "sourceTitle": "旭岳ロープウェイ再開＆圧雪コース利用開始 | 旭岳ビジターセンター",
+      "sourceQuote": "明日 12/11 （木） から 旭岳ロープウェイ再開 とともに、 圧雪コース利用開始 になります。",
+      "verdict": "verified",
+      "notes": "遊客中心 2025-12-10 文章；2026 年見纜車官網月曆 12/11 G。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "遇到強風或有打雷危險的天氣，平常營業的日子也可能停駛。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※強風観測、落雷の危険等の悪天候時には運行を休止する場合がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "隔年1月到6月要去，出發前到纜車官網的月曆查當天的代號，官方也提醒可能臨時停業。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "●現在決まっているスケジュールは下記の期間迄となっております。以降は決まり次第更新致しますが臨時休業等の場合もございます。",
+      "verdict": "verified",
+      "notes": "頁面月曆只到 2026 年 12 月。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "票價表：大人來回 3,500日圓（6/1～10/31）、2,800日圓（11/1～5/31）；大人單程 2,200日圓、1,700日圓（含稅）",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "運賃（税込）｜大人（中学生以上） シーズン（11/1～5/31） 2,800円 1,700円 トップシーズン（6/1～10/31） 3,500円 2,200円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "票價表：兒童來回 1,750日圓、兒童單程 1,100日圓（兩季相同）",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "小人 シーズン（11/1～5/31） 1,750円 1,100円 トップシーズン（6/1～10/31） 1,750円 1,100円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "纜車票價分成兩季，6月到10月比較貴，下表都是含稅價。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "運賃（税込）｜シーズン（11/1～5/31）｜トップシーズン（6/1～10/31）",
+      "verdict": "verified",
+      "notes": "兒童票兩季同價，「比較貴」指大人票，表格一看即知。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "國中生以上買大人票，每位大人可以免費帶1位學齡前的小孩。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "大人（中学生以上）｜※未就学児は大人1名につき1名無料。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "6月到10月比兩張單程省900日圓，11月到5月省600日圓。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "トップシーズン 3,500円 2,200円｜シーズン 2,800円 1,700円",
+      "verdict": "verified",
+      "notes": "重算：2,200×2−3,500＝900；1,700×2−2,800＝600。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "搭纜車不用預約，不管個人還是團體，都是到現場買票上車。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※ロープウェイの乗車は個人・団体様共に予約乗車制ではございません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "買票可以刷卡，收VISA、Master、JCB、AMEX、Diners、DISCOVER與JCB PREMO。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※クレジットカードはVISA・Master・JCB・AMEX・Diners・DISCOVER・JCB PREMOが使用できます。",
+      "verdict": "verified",
+      "notes": "「お支払にクレジットカードは使用できません」只在 HTML 註解裡，頁面不顯示，不當來源。基本資訊欄的「刷卡」列同此。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "為了防範山難，纜車可能提早停賣上行單程票，或在接近日落時拒載只買上行單程的人。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※上り（山麓駅→姿見駅）片道券の販売は山岳事故防止のため、事前に販売を終了する場合があります。｜※上り片道（山麓駅→姿見駅）のみご利用のお客様は日没時間に合わせて、ご乗車をお断りさせていただく場合がございます。（安全面）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "基本資訊欄：日文名 大雪山旭岳ロープウェイ；區間 山麓站（約1,100公尺）到姿見站（約1,600公尺），單程約10分鐘",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "大雪山 旭岳ロープウェイ｜姿見駅の現在の天候（標高1600m）｜片道約10分",
+      "verdict": "verified",
+      "notes": "1,100 公尺同 C1。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "基本資訊欄：班距 6月1日～10月20日每15分鐘，10月21日～5月31日每20分鐘；預約 不用預約，現場購票",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "6/1～10/20 15分間隔｜10/21～5/31 20分間隔｜予約乗車制ではございません",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "基本資訊欄：電話 0166-68-9111",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "電話によるお問合せ TEL：0166-68-9111",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "9月中旬進入紅葉季，週末與假日的纜車非常擁擠。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※紅葉シーズン9月中旬の土日祭日はロープウェイが大変混雑致しますのでご了承ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "9月シルバーウィーク連假的後半，車窗外的紅葉正好最美，日本國內外的遊客都多。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳 | ようこそ東川",
+      "sourceQuote": "9月のシルバーウィーク後半は、車窓から眺める紅葉のピークを一目見ようと国内外から多くの観光客が訪れます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "這段時間的週末與連假，纜車清晨6:00就開，比平日的6:30早半小時。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "E 始発（上り） 6:00am｜D 始発（上り） 6:30am｜2026年9月 土日祝 E、平日 D",
+      "verdict": "verified",
+      "notes": "6:30−6:00＝30 分。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "2026年是9月12、13日，19日到23日，以及26、27日。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "2026年9月運行スケジュール … 12 E 13 E … 19 E 20 E 21 E 22 E 23 E 24 D 25 D 26 E 27 E",
+      "verdict": "verified",
+      "notes": "複查第 1 輪：已補 9/12、9/13，9 月中旬以後的 E 日全部列出（9/5、9/6 屬上旬，不在紅葉季範圍）。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "纜車停車場有150個普通車位，紅葉旺季的週末與假日會停滿，只能在入口等到有車位空出來。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※駐車スペースは普通自動車150台・中型自動車以上（バス等）10台ご用意しております。｜※紅葉トップシーズン中の土日祭日は満車となり、駐車スペースが空くまでお待ちいただく事となります。",
+      "verdict": "verified",
+      "notes": "原文只寫「空くまでお待ちいただく」，沒寫在入口等；「在入口」屬合理描述，不影響事實。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "出門前打開纜車官網首頁，「ロープウェイ運行状況」欄寫著當天的運行時間與狀態。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "ロープウェイ運行状況 運行開始前です。本日の運行時間は 以下 をご確認下さい。 本日 2026/10/26 の運行時間",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "旁邊是姿見站當下的天氣、氣溫、風速與能見度。例如2026年10月25日15:00，姿見站陰天、4℃、風速每秒8公尺，能見度還算好。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "旭岳の現在の状況 ［姿見駅の現在の天候（標高1600m）］ 2026/10/25 3:00 pm 天候 曇り 気温 4℃ 風速 8m/s 視界 視界やや良",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "纜車官方也有X、Facebook與Instagram帳號可以追蹤。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "href=\"https://twitter.com/asahidake_2291\"｜href=\"https://www.facebook.com/asahidakeropeway/\"｜href=\"https://www.instagram.com/asahidakeropeway/\"（未被註解的頁面連結）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "想看山上現在的樣子，可以到東川町網站的「旭岳山頂カメラ」，鏡頭架在姿見站前。旭岳遊客中心首頁標著「ロープウェイ姿見駅前より」的畫面也連到這裡",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/",
+      "sourceTitle": "大雪山国立公園　旭岳ビジターセンター",
+      "sourceQuote": "現在の旭岳 ロープウェイ姿見駅前より（href=\"https://town.higashikawa.hokkaido.jp/jp/topage/camera2.html\"）",
+      "verdict": "verified",
+      "notes": "複查第 1 輪：改寫後正確。東川町頁標題「旭岳山頂カメラ」。"
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "纜車官網首頁則直接放了一張姿見站的攝影機畫面。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "旭岳ライブカメラ（<img src=\"https://webcam.wakasagroup.com/asahidake_webcam_now.jpg\">）旭岳ロープウェイ姿見駅より",
+      "verdict": "verified",
+      "notes": "複查第 1 輪新增句。原本下一句的「它」容易被讀成纜車首頁畫面；複查第 2 輪已改成「東川町的山頂カメラ是每小時更新一次的照片」，主詞明確，與東川町頁「更新は一時間毎に行います」一致（把這處換回舊字後的雜湊等於上一版 ed08d1d7…，確認只差這一處）。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "它是每小時更新一次的照片，不是直播，也能往回翻過去7天的畫面。連線不穩時照片可能沒更新",
+      "sourceUrl": "https://town.higashikawa.hokkaido.jp/jp/topage/camera2.html",
+      "sourceTitle": "旭岳山頂 | 写真の町　北海道上川郡東川町",
+      "sourceQuote": "旭岳山頂カメラ 更新は一時間毎に行います。 過去７日間の画像を見る｜※電話回線不調により転送されない場合があります。",
+      "verdict": "verified",
+      "notes": "頁面是靜態 JPG（/webcam/webimg/asahidake.JPG）。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "山上風一大，纜車就可能停。2026年10月2日下午姿見站風速到了每秒13公尺，姿見站已經掛出可能停駛的告示。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
+      "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "午後には風速が13m/sになり、姿見駅では安全の為、運休の可能性の看板も出るほどでした。",
+      "verdict": "verified",
+      "notes": "複查第 1 輪：已照原文改成「姿見站」。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "到了山麓，離山麓站約100公尺的旭岳遊客中心，進門左手邊的展示板貼著纜車運行狀況與登山道資訊。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/guide/",
+      "sourceTitle": "館内のご案内 | 旭岳ビジターセンター",
+      "sourceQuote": "入って左手に展示されているパネルでロープウェイの運行状況や、登山道情報を発信してますので入山前にお立ち寄りいただき",
+      "verdict": "verified",
+      "notes": "100 公尺見東川町「ロープウエイ山麓駅から100ｍほどの場所」。複查第 1 輪：已改成「進門左手邊的展示板」，與原文「入って左手」一致。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "遊客中心與纜車站一帶手機有訊號，往山區走就有收不到的地方，要查的東西在山下查好。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "ビジターセンター、ロープウェイ駅舎付近は問題なく携帯電話を使用していただけます。旭岳に向かう途中の道路と、旭岳（山岳エリア）では通じない場所もありますのでご注意ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "姿見站比山麓站高約500公尺",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳 | ようこそ東川",
+      "sourceQuote": "旭岳温泉は標高1,100ｍ地点｜標高1,600m地点までは旭岳ロープウエイが運行",
+      "verdict": "verified",
+      "notes": "1,600−1,100＝500。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "這一帶從9月下旬到隔年6月都積著雪，一年有三分之二的時間是雪地。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e5%a7%bf%e8%a6%8b%e3%81%ae%e6%b1%a0%e5%9c%92%e5%9c%b0/",
+      "sourceTitle": "姿見の池園地 - 大雪山国立公園連絡協議会",
+      "sourceQuote": "９月下旬～６月まで一年の３分の２が雪に覆われている。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "鞋子照纜車官方的建議，穿登山鞋或鞋底較厚的鞋，再帶件雨衣或能擋風雨的長袖外套。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "必要な装備 登山靴または、底が厚めの靴 レインウェアまたは、雨風をしのげる長袖の上着 など",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "遊客中心提醒，只穿運動鞋走散策路，鞋子會濕，也容易出意外。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
+      "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "運動靴では濡れて危険ですので、姿見駅で長靴をレンタル（500円）する事が出来ますので是非ご利用ください。",
+      "verdict": "verified",
+      "notes": "原文是 10/2 積雪時的提醒。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "姿見站可以租雨鞋，一雙500日圓，防滑用的登山杖也是500日圓。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
+      "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "姿見駅で長靴をレンタル（500円）｜転倒防止用にポール（500円）も姿見駅でレンタルしています。",
+      "verdict": "verified",
+      "notes": "纜車官網「※山頂駅でレンタル長靴をご用意しております」、大雪山國立公園連絡協議會「長靴レンタルも可能（１足500円）」一致。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "山麓旁的遊客中心也出租雨鞋與姿見散策用的登山杖，一天各500日圓，雨鞋有男女與兒童的尺寸。租借時要出示有照片的身分證件。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/rental/",
+      "sourceTitle": "レンタル | 旭岳ビジターセンター",
+      "sourceQuote": "※顔写真入りの身分証をご提示いただいております。｜レンタル料金一覧（税込）（1日あたり） 長靴 500円 ストック 500円｜男性用、女性用、お子様用各種サイズございます。｜姿見散策はこちらのストックをお貸ししております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "纜車站有投幣置物櫃，但沒有更衣室。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "更衣室はありませんが、旭岳ロープウェイにコインロッカーがあります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "10月到11月特別容易有人因為裝備不夠出事、遇上山難。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
+      "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "10月から11月にかけて、装備不足に因る事故や遭難が発生しやすい時期です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "2026年10月2日旭岳山頂第一次積雪，那天早上9點姿見站零下1℃、風速每秒9公尺。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
+      "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "10/2　旭岳では初冠雪を観測しました。 朝9:00現在の標高1600ｍの姿見駅では、 気温：－1℃ 風速：9ｍ/s",
+      "verdict": "verified",
+      "notes": "文章日期 2026-10-03；纜車官方部落格「初冠雪（10/2観測）」一致。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "散策路有些地方結冰，有些被雪蓋住看不出路在哪。遊客中心的建議是，下雪時只在姿見站前一帶散步，裝備不夠就折返。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
+      "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "姿見の池へ向かう散策路や階段は一部凍結して、積雪で散策路が見えません。装備不足の場合は無理をせず引き返してください。｜降雪の際は、駅前周辺での散策をお勧めします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "旭岳遊客中心的散策地圖抓得寬一點，寫1小時到1小時30分。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
+      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～（旭岳ビジターセンター）",
+      "sourceQuote": "所要時間 1周 1.7km 約1時間～1時間30分",
+      "verdict": "verified",
+      "notes": "PDF 內嵌圖片判讀。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "這一帶在大雪山國立公園的分級裡是最容易的等級1，路線不只一條，30分鐘到1小時的走法都有。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e5%a7%bf%e8%a6%8b%e3%81%ae%e6%b1%a0%e5%9c%92%e5%9c%b0/",
+      "sourceTitle": "姿見の池園地 - 大雪山国立公園連絡協議会",
+      "sourceQuote": "大雪山グレード グレード1｜コースタイム 姿見駅から30分～１時間　複数のルートあり",
+      "verdict": "verified",
+      "notes": "等級 1～5 五段，見 https://www.daisetsuzan.or.jp/info/hiking/grades/ 「「グレード１」から「グレード５」までの ５段階」，5 是トムラウシ縱走，1 最容易。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "散策路各段時間表：姿見站到第1展望台5分鐘；第1到第3展望台10分鐘；第3到第4展望台10分鐘；第4展望台到姿見展望台15分鐘；姿見展望台回姿見站20分鐘",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
+      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～（旭岳ビジターセンター）",
+      "sourceQuote": "姿見駅→第1展望台 約5分｜第1展望台→第3展望台 約10分｜第3展望台→第4展望台 約10分｜第4展望台→姿見展望台 約15分｜姿見展望台→姿見駅 約20分",
+      "verdict": "verified",
+      "notes": "合計 60 分，與「約1小時」一致。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "沿路會經過噴氣孔冒著白煙的地獄谷、舊火口形成的姿見の池，還有鏡池與すり鉢池合稱的夫婦池，以及満月沼。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
+      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～（旭岳ビジターセンター）",
+      "sourceQuote": "噴気孔 Fumarole｜姿見の池｜夫婦池 Meoto-ike pond（鏡池・すり鉢池）｜満月沼 Mangetsu-numa pond",
+      "verdict": "verified",
+      "notes": "地獄谷、舊火口見大雪山國立公園連絡協議會「噴煙を上げる地獄谷、かつての噴火口である姿見の池や夫婦池」。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "這一帶也有機會看到花栗鼠，以及松雀、紅喉歌鴝這些野鳥。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e5%a7%bf%e8%a6%8b%e3%81%ae%e6%b1%a0%e5%9c%92%e5%9c%b0/",
+      "sourceTitle": "姿見の池園地 - 大雪山国立公園連絡協議会",
+      "sourceQuote": "高山植物やシマリス、ギンザンマシコやノゴマ等の野鳥も観察でき",
+      "verdict": "verified",
+      "notes": "複查第 1 輪：中文名對照 ギンザンマシコ＝松雀（Pinicola enucleator）、ノゴマ＝紅喉歌鴝（Calliope calliope），為通用中文鳥名，正確。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "走累了，展望台大多有長椅可以坐，只有第2展望台沒有。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
+      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～（旭岳ビジターセンター）",
+      "sourceQuote": "展望台 View Point 眺望ポイント。ベンチも設置されてます（第２展望台のみベンチなし）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "時間不夠時，從第2展望台附近走約10分鐘的中道接回東側的路，就不必繞到姿見の池。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
+      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～（旭岳ビジターセンター）",
+      "sourceQuote": "中道 Inner trail 約10分",
+      "verdict": "verified",
+      "notes": "地圖判讀：中道從第 1／第 2 展望台之間的岔路往東接到東側下坡路，不經姿見の池。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "路上有岩石路段與不少階梯，東側往姿見站那段下坡的階梯特別陡。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
+      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～（旭岳ビジターセンター）",
+      "sourceQuote": "※散策路内は岩場や急な段差があります。｜下り・急な段差あり Downhill: steep steps",
+      "verdict": "verified",
+      "notes": "急段差標在東側姿見展望台下方那段；再往下標「下り・徐々にゆるやかに」，正文「那段」可接受。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "姿見の池旁邊是旭岳的5合目，往山頂的登山道從這裡分出去。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
+      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～（旭岳ビジターセンター）",
+      "sourceQuote": "5合目 fifth station｜登山道（旭岳山頂方面） Mountain Trail (to Mt.Asahidake)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "池邊的旭岳石室能容納20人，是緊急時才用的避難小屋。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/shelter/",
+      "sourceTitle": "避難小屋・トイレ - 大雪山国立公園連絡協議会",
+      "sourceQuote": "旭岳石室 場所：姿見の池に隣接 人数：20人 トイレ：なし 水場：なし 備考：緊急時以外の宿泊はできません。",
+      "verdict": "verified",
+      "notes": "散策地圖亦標「Shelter hut for emergencies」。"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "姿見一帶屬於特別保護地區，不能帶植物進來，也不能採集。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
+      "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
+      "sourceQuote": "※旭岳姿見園地内は、『特別保護地区』に該当し、植物の持ち込み・採取は禁止されています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "寵物不能搭纜車，導盲犬與輔助犬除外。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※ペットのご乗車はお断りさせて頂いておりますのでご了承くださいませ。（盲導犬・介助犬可）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "沒有許可的空拍機不能帶上車，纜車公司也請大家別在散策路上飛。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※小型無人飛行機等（ドローン・ラジコン等）のロープウェイ内持ち込み乗車はお断り致しております。但し、関係省庁・行政機関等から許可・承認済みの場合は除きます｜姿見散策コース内での飛行もお断りさせて頂く喚起を行っております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "往山上走，最後一間沖水廁所就在姿見站，開放時間跟纜車營業時間一樣",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
+      "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
+      "sourceQuote": "旭岳にある水洗トイレは、旭岳ロープウェイ姿見駅が最後です。",
+      "verdict": "verified",
+      "notes": "開放時間見遊客中心 Q&A「旭岳ロープウェイ姿見駅（ロープウェイ営業時間に準ずる）」。基本資訊欄「廁所」列同此。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "散策路資訊欄：日文名 姿見の池；開放期間 6月～10月中旬；一圈約1.7公里，1小時～1小時30分；難度 大雪山等級1，最容易",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
+      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～（旭岳ビジターセンター）",
+      "sourceQuote": "1周 1.7km 約1時間～1時間30分",
+      "verdict": "verified",
+      "notes": "開放期間見纜車官網「散策コース （6月～10月中旬）」；等級見 C52。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "5月下旬，旭岳山麓的濕地開出水芭蕉，春天從這裡開始。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "旭岳の春は５月下旬からです。長い冬が終わると、旭岳山麓では雪解け水が流れ込む湿地に咲くミズバショウやエゾノリュウキンカが春の訪れを告げます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "這時山上還是雪地，2026年纜車在春季檢修後於5月23日恢復運行，那天散策路還埋在雪裡。官方當天的建議是條件好時穿租來的雨鞋，走到第1展望台看看。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/archives/blog/25070",
+      "sourceTitle": "運行再開 | Daisetsuzan Asahidake Ropeway",
+      "sourceQuote": "2026.05.23 運行 初日から 旭岳です。…運休初日もでしたね｜この通り 散策路は雪の中｜条件が良ければ レンタルの長靴を履いて～ 第一展望台まで行ってみてはいかがでしょうか",
+      "verdict": "verified",
+      "notes": "部落格寫「運行再開」與「運休初日」，沒寫「点検」二字；停駛是點檢期間以東川町「点検期間あり」理解。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "6月上旬到8月中旬換高山植物登場，黃花石楠與稚兒車（チングルマ）成片開花。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "6月上旬から8月中旬頃までは高山植物が咲き誇り、キバナシャクナゲ、チングルマなどの群落が見られます。",
+      "verdict": "verified",
+      "notes": "複查第 1 輪：キバナシャクナゲ＝黃花石楠、チングルマ＝稚兒車（漢字「稚児車」），對照正確。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "7月下旬是花最多的時候，遊客中心的地圖也把7月標成最盛期。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳 | ようこそ東川",
+      "sourceQuote": "7月下旬に向けてピークとなる高山植物の花々",
+      "verdict": "verified",
+      "notes": "散策地圖「夏季（6～8月）は7月を最盛期に高山植物が開花します。」"
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "愛奴語把這一帶叫作カムイミンタラ，纜車官網寫成「神々の遊ぶ庭」，也就是眾神遊玩的庭園。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "カムイミンタラ（神々の遊ぶ庭）の散歩をお楽しみください。",
+      "verdict": "verified",
+      "notes": "愛奴語見東川町「アイヌ語で「カムイミンタラ」」。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "旭岳的紅葉號稱日本最早，9月中旬到下旬從姿見一帶開始轉紅，再一天天往下移到旭岳溫泉。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳 | ようこそ東川",
+      "sourceQuote": "日本で最も早く紅葉が訪れる場所として知られており、9月中旬から下旬にかけて見られる紅葉は、姿見エリアから始まり日ごとに旭岳温泉へと移っていきます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "主角是七竈（ナナカマド）的紅與岳樺的黃。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "ロープウェイから望むナナカマドやダケカンバの赤や黄、緑のコントラスト",
+      "verdict": "verified",
+      "notes": "複查第 1 輪：ナナカマド＝七竈、ダケカンバ＝岳樺（漢字「岳樺」），對照正確。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "2026年海拔約1,600公尺的散策路在9月17日正是最好看的時候，到了9月30日，紅葉已經下到山麓。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/archives/blog/26146",
+      "sourceTitle": "今です | Daisetsuzan Asahidake Ropeway",
+      "sourceQuote": "2026.09.17 大雪山旭岳の紅葉は現在標高約１６００ｍの散策路内で見頃です",
+      "verdict": "verified",
+      "notes": "9/30 見 https://asahidake.hokkaido.jp/archives/blog/26275 「2026.09.30 紅葉は麓まで到達旭岳です。」"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "遊客中心說，最好看的時候通常落在9月中旬到下旬，只是每年前後差很多",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "姿見園地では例年9月中旬～下旬頃に見頃を迎える事が多いですが、年によって大きく前後します。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C75",
+      "articleExcerpt": "9月也可能碰上第一場雪。想知道當下紅到哪裡，可以問遊客中心的工作人員。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
+      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～（旭岳ビジターセンター）",
+      "sourceQuote": "9月に紅葉が始まり初冠雪となる事もありますが、花や紅葉の最盛期、初冠雪の時期は年によって大きく異なります。最新状況を知りたい方はスタッフへお尋ねください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C76",
+      "articleExcerpt": "散策路到10月中旬就不開放，冬天的旭岳換成雪景。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "散策コース （6月～10月中旬）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "這裡的雪輕到被稱為Silky Snow，天氣好時能看到鑽石塵、日柱與霧凇，晴天從姿見站一帶望出去視野開闊。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "旭岳の雪は「シルキースノー」（水分ほほとんど含まないサラサラの雪）と呼ぶ方もいるほど軽く｜晴れた日の姿見駅周辺からは壮大な景色を楽しんでいただけます。",
+      "verdict": "verified",
+      "notes": "鑽石塵等見纜車官網冬段「その時の気象条件によって、「ダイヤモンドダスト」や「サンピラー」、自然の造形物である「霧氷」・「風紋」などを見ることができます。」原文是「依氣象條件」，正文「天氣好時」略寬，可接受。"
+    },
+    {
+      "claimId": "C78",
+      "articleExcerpt": "積雪期到遊客中心租雪鞋，一天1,000日圓，就能穿著在周邊散步。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/rental/",
+      "sourceTitle": "レンタル | 旭岳ビジターセンター",
+      "sourceQuote": "スノーシュー 1,000円 900円 積雪期のみ。",
+      "verdict": "verified",
+      "notes": "Q&A「スノーシューを使って周辺散策をしたり」。1,000 日圓為一般價（モンベル會員 900）。"
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "旭岳溫泉一帶能吃東西的地方很少，遊客中心列出的只有三處。纜車山麓站2樓有食堂、1樓有賣店，另一處是ラビスタ大雪山1樓的便利商店Yamazaki Shop。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "近隣で食事ができる場所はありますか？ 食堂 … 旭岳ロープウェイ山麓駅2階 売店 … 旭岳ロープウェイ山麓駅1階 コンビニ … ラビスタ大雪山1階｜ラビスタ大雪山1階にヤマザキショップがあります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "食堂夏天最受歡迎的是東川產蔬菜煮的咖哩，也有炸豬排拉麵與燉內臟拉麵。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "山麓駅 食堂では…夏は地元東川産の野菜ゴロゴロカレーが一番人気です。カツをのせたラーメンや、煮込みホルモンのラーメンはボリューム満点です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "山麓站1樓的賣店賣輕食、點心、飲料與伴手禮。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "旭岳ロープウェイ1階に売店があり、軽食、お菓子、飲み物、観光品などの販売、2階には食堂があります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "纜車站的賣店還有啤酒、點心這類纜車限定的原創商品，飲食區另外賣香腸與冰淇淋。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "ビールやお菓子などの旭岳ロープウェイ限定のオリジナル商品をたくさん販売しています。また飲食コーナーではソーセージやアイスクリームなどもご用意しております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C83",
+      "articleExcerpt": "上到姿見站，站內賣東川產馬鈴薯與旭川笹豚做的手工可樂餅，還有用旭岳源水沖的有機咖啡。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "山頂駅 旭岳ロープウェイでしか食べられない地元東川産のじゃがいもと旭川笹豚を使用した手づくりコロッケや、旭岳源水で淹れたオーガニックコーヒーを是非ご賞味ください。",
+      "verdict": "verified",
+      "notes": "山頂駅即姿見站（遊客中心寫姿見駅出租雨鞋，纜車官網寫山頂駅出租雨鞋）。"
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "旭岳一帶沒有銀行、郵局與ATM，最近的ATM開車要30到40分鐘，現金最好在出發前備好。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "旭岳近辺に銀行、郵便局、ATMはありません。一番近いATMまで車で約30～40分程度かかりますので、事前にご準備ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "當天營業時間的結束時間，就是最後一班下山纜車的時間。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "始発（上り） 9:00am 〜 最終（下り） 4:00pm",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "曾有人錯過這班，被人報警當成山難處理。營業時間外要請纜車緊急發車，除了車資還要另付一筆運行費用，需要出動雪地車也要另外收費。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※過去に最終下り便への乗り遅れが、他方からの警察通報により山岳事故扱いとなる事例が発生しています。｜※万が一、山岳事故等により営業時間外に緊急運行の要請が発生した場合は、乗車運賃以外に別途運行代金を頂戴致します。雪上車等を使用した場合には使用料を頂戴致します。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "上山的末班比下山的早。2026年10月1日起是散策路開放期的尾聲，下行末班17:00，上行末班16:40。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/archives/blog/26275",
+      "sourceTitle": "営業時間変更の知らせ | Daisetsuzan Asahidake Ropeway",
+      "sourceQuote": "２０２６年１０月１日（木）より～ ８：００～１７：００（上り最終１６：４０）に変更です！",
+      "verdict": "verified",
+      "notes": "散策路到 10 月中旬，10/1 起屬尾聲，合理。"
+    },
+    {
+      "claimId": "C88",
+      "articleExcerpt": "搭16:40那班上去，約16:50到姿見站，只剩10分鐘左右，走不了散策路。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/archives/blog/26275",
+      "sourceTitle": "営業時間変更の知らせ | Daisetsuzan Asahidake Ropeway",
+      "sourceQuote": "８：００～１７：００（上り最終１６：４０）",
+      "verdict": "verified",
+      "notes": "重算：16:40＋單程約 10 分（纜車官網「片道約10分」）＝16:50；17:00−16:50＝10 分，散策路最短 30 分（大雪山國立公園連絡協議會），走不完。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "想繞完一圈，最好在下行末班前1小時30分以上就到姿見站，因為一圈要走1小時到1小時30分。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/wp-content/uploads/2024/08/sugatami2024.pdf",
+      "sourceTitle": "姿見の池周辺散策マップ～Sugatami Area Map～（旭岳ビジターセンター）",
+      "sourceQuote": "1周 1.7km 約1時間～1時間30分",
+      "verdict": "verified",
+      "notes": "推算依地圖上限時間，合理。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "10月21日起已過散策路的開放期，營業時間改成9:00到16:00，上行末班是15:40。這時坐最後一班上山，到站約15:50，只夠在站前看一眼。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/archives/blog/26444",
+      "sourceTitle": "営業時間変更のお知らせ 10/21より | Daisetsuzan Asahidake Ropeway",
+      "sourceQuote": "２０２６年１０月２１日（水）より ９：００～１６：００（上り最終１５：４０）※２０分間隔で運行です",
+      "verdict": "verified",
+      "notes": "15:40＋10 分＝15:50，離 16:00 下行末班約 10 分。「已過散策路的開放期」依纜車官網「散策コース （6月～10月中旬）」，10/21 已過中旬（複查第 1 輪改寫，正確）。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "從旭岳發車的末班是16:55，18:33到旭川站，前一班是14:55。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "66番「いで湯号」旭岳→旭川市内 旭岳 9:55 11:55 14:55 16:55 … 旭川駅（のりば9） 11:33 13:33 16:33 18:33",
+      "verdict": "verified",
+      "notes": "2025年10月1日改正時刻表，頁面現行。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "10月21日以後纜車16:00收，坐最後一班下山約16:10回到山麓，接得上16:55的巴士。冬天纜車15:40收，一樣來得及。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "A 最終（下り） 4:00pm｜G 最終（下り） 3:40pm｜片道約10分",
+      "verdict": "verified",
+      "notes": "重算：16:00＋10＝16:10、15:40＋10＝15:50，都早於いで湯號 16:55（旭川電気軌道時刻表）。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "7月到10月20日，纜車營業到17:30或17:00，比16:55的末班巴士還晚。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "D・E 最終（下り） 5:30pm｜C 最終（下り） 5:00pm｜2026年7～9月 D・E、10月1～20日 C",
+      "verdict": "verified",
+      "notes": "複查第 1 輪：原「17:00才收的日子…趕不上」改寫成本句與下面 C101、C102。"
+    },
+    {
+      "claimId": "C99",
+      "articleExcerpt": "回旭川的いで湯號全年每天行駛，用的是同一份時刻表。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "旭岳を結ぶ定期路線バス毎日運行中！｜66番「いで湯号」運行時刻表　（2025年10月1日改正）",
+      "verdict": "verified",
+      "notes": "複查第 1 輪新增。頁面只有一份時刻表，沒有季節別或冬季運休的記載（重抓頁面搜尋「冬」「夏」「季」「運休」皆無）；「全年」由「毎日運行中」與單一時刻表推得，可接受。"
+    },
+    {
+      "claimId": "C100",
+      "articleExcerpt": "巴士的終點「旭岳」站就在纜車山麓站的站舍前。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳 | ようこそ東川",
+      "sourceQuote": "シャトルバスいで湯号を利用する場合は、旭岳ロープウエイ駅舎前が終点になります。",
+      "verdict": "verified",
+      "notes": "複查第 1 輪新增；時刻表終點站名「旭岳 Mt.Asahidake」。"
+    },
+    {
+      "claimId": "C101",
+      "articleExcerpt": "這段期間下山纜車每15分鐘一班，在00、15、30、45分發車，單程約10分鐘。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "●ロープウェイ所要時間 片道約10分 ●ロープウェイ運行間隔 6/1～10/20 15分間隔 (00・15・30・45)",
+      "verdict": "verified",
+      "notes": "官網班距沒分上下行，正文套用在下行，合理。"
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "要接16:55的巴士，最晚搭16:30那班下山，約16:40回到山麓。16:45那班到山麓約16:55，和巴士發車同一時間，太趕了。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "6/1～10/20 15分間隔 (00・15・30・45)｜片道約10分",
+      "verdict": "verified",
+      "notes": "重算：16:30＋10＝16:40、16:45＋10＝16:55，與いで湯號旭岳 16:55 發（旭川電気軌道時刻表）同時；終點在纜車站舍前（C100），不另加步行。推算附了班距與單程時間給讀者看。"
+    },
+    {
+      "claimId": "C103",
+      "articleExcerpt": "回程時間沒把握，可以改搭14:55那班巴士，或乾脆在旭岳溫泉住一晚。",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
+      "sourceQuote": "66番「いで湯号」旭岳→旭川市内 旭岳 9:55 11:55 14:55 16:55",
+      "verdict": "verified",
+      "notes": "複查第 1 輪新增。"
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "從纜車山麓站沿著道道1160號線約1公里內，有7間住宿設施。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳 | ようこそ東川",
+      "sourceQuote": "旭岳ロープウエイ山麓駅から続く道道1160号線に沿って、約1kmの距離に7件の宿泊施設があります。",
+      "verdict": "verified",
+      "notes": "複查第 1 輪新增。"
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "纜車發車時間可能依狀況微調，回程要接巴士、飛機或JR，時間別抓得太緊。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "※状況により発車時刻・運行間隔を若干変動させていただく場合がございます。いで湯号・飛行機・ＪＲ等の交通機関をご利用予定のお客様はくれぐれもご注意くださいませ。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C95",
+      "articleExcerpt": "萬一錯過16:55的末班巴士，旭岳溫泉沒有計程車招呼站，也沒有租車公司，要搭計程車必須事先向計程車公司預約。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
+      "sourceTitle": "旭岳 | ようこそ東川",
+      "sourceQuote": "旭岳温泉にはタクシー乗り場・レンタカー会社はございません。大雪山系縦走の下山口として旭岳温泉をご利用される場合は、最寄りのタクシー会社にてご予約ください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C96",
+      "articleExcerpt": "延伸資料：大雪山旭岳纜車官網，當天的運行狀況、營業時間月曆、票價與姿見站天氣都在首頁。",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "ロープウェイ運行状況｜旭岳ロープウェイ運行予定表｜運賃（税込）｜姿見駅の現在の天候（標高1600m）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C97",
+      "articleExcerpt": "延伸資料：東川町的旭岳山頂攝影機，每小時更新的姿見站前照片，可以往回看過去7天；旭岳遊客中心的姿見の池散策地圖，各展望台之間的時間、中道與段差的位置；旭岳遊客中心的出租用品，雨鞋、登山杖與雪鞋的租借說明。",
+      "sourceUrl": "https://town.higashikawa.hokkaido.jp/jp/topage/camera2.html",
+      "sourceTitle": "旭岳山頂 | 写真の町　北海道上川郡東川町",
+      "sourceQuote": "旭岳山頂カメラ 更新は一時間毎に行います。 過去７日間の画像を見る",
+      "verdict": "verified",
+      "notes": "散策地圖 PDF 與 /rental/ 頁都打開確認內容相符。"
+    }
+  ],
+  "summary": {
+    "verified": 104,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
