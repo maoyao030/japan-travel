@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island-hiking",
-  "articleSha256": "7620ce727890e4a6fd73f57dfaf332ec4561c3f1e3d94dcc3f3d29dc8d2c06fb",
+  "articleSha256": "a2d00c1e9314d777d667a4176a185bbf5798daac2611637dd1ccd33437def953",
   "checker": "事實查核子代理（Claude Opus 5.5，重寫一輪；未參與本篇寫作、潤稿與修改）",
   "checkedAt": "2026-11-02",
   "claims": [
@@ -250,12 +250,12 @@
     },
     {
       "claimId": "C28",
-      "articleExcerpt": "開園與閉園日每年依開花狀況前後移動，排行程時看禮文町群生地頁公布的當年公開期間。",
+      "articleExcerpt": "開園與閉園日每年依開花狀況前後移動，例年大約是5月中旬到6月上旬，當年的日期出發前到渡輪站1樓的觀光案內所確認。",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000178.html",
       "sourceTitle": "レブンアツモリソウ群生地｜礼文町",
-      "sourceQuote": "公開 ５月中旬～６月上旬／無休 ＊開花状況によって変更あり 料金 無料",
-      "verdict": "incorrect",
-      "notes": "2026-11-02 重開禮文町群生地頁：只寫例年的「５月中旬～６月上旬」，沒有當年日期，也和 2026 年實際（5/11～6/20 16:30，步道官網公告）不一致。讀者照正文去看會拿到錯的期間。建議改成到渡輪站1樓觀光案內所確認，或說明町公所頁只列例年大概期間。"
+      "sourceQuote": "公開 ５月中旬～６月上旬／無休 ＊開花状況によって変更あり",
+      "verdict": "verified",
+      "notes": "2026-11-02 重開禮文町頁確認。案內所在渡輪站 1 樓見礼文滝コース頁「礼文島観光案内所（香深フェリーターミナル１Ｆ）」。"
     },
     {
       "claimId": "C29",
@@ -988,12 +988,12 @@
     },
     {
       "claimId": "C110",
-      "articleExcerpt": "禮文町的禮文敦盛草群生地頁，當年的公開期間與費用。https://www.town.rebun.hokkaido.jp/hotnews/detail/00000178.html",
+      "articleExcerpt": "禮文町的禮文敦盛草群生地頁，例年的公開期間與費用。https://www.town.rebun.hokkaido.jp/hotnews/detail/00000178.html",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000178.html",
       "sourceTitle": "レブンアツモリソウ群生地｜礼文町",
       "sourceQuote": "公開 ５月中旬～６月上旬／無休 ＊開花状況によって変更あり 料金 無料",
-      "verdict": "incorrect",
-      "notes": "頁面只有例年期間（５月中旬～６月上旬），不是當年公開期間，也和 2026 年實際 5/11～6/20 不符。費用「無料」正確。建議改成「例年的公開期間與費用」或換掉這一列。"
+      "verdict": "verified",
+      "notes": ""
     },
     {
       "claimId": "C111",
@@ -1024,8 +1024,8 @@
     }
   ],
   "summary": {
-    "verified": 111,
-    "incorrect": 2,
+    "verified": 113,
+    "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,
