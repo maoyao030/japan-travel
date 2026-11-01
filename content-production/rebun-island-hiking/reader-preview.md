@@ -22,7 +22,7 @@
 
 ## 禮文島的禮文敦盛草群生地開放期間
 
-2026年群生地分兩區開園，船泊海岸濱是5月11日，鐵府木道與展望區是5月15日。兩區都在6月20日下午4點半閉園。開園與閉園日每年依開花狀況前後移動，排行程時看禮文町群生地頁公布的當年公開期間。
+2026年群生地分兩區開園，船泊海岸濱是5月11日，鐵府木道與展望區是5月15日。兩區都在6月20日下午4點半閉園。開園與閉園日每年依開花狀況前後移動，例年大約是5月中旬到6月上旬，當年的日期出發前到渡輪站1樓的觀光案內所確認。
 
 船泊海岸濱早上7點開到下午5點，鐵府木道早上8點半開到下午5點，最後入場16:30，兩區都免費。
 
@@ -120,7 +120,7 @@
 
 ## 延伸資料
 
-- **禮文町的禮文敦盛草群生地頁**，當年的公開期間與費用。https://www.town.rebun.hokkaido.jp/hotnews/detail/00000178.html
+- **禮文町的禮文敦盛草群生地頁**，例年的公開期間與費用。https://www.town.rebun.hokkaido.jp/hotnews/detail/00000178.html
 - **環境省國立公園的知床到桃岩展望台步道頁**，路線介紹與花導覽的聯絡方式。https://www.japan.travel/national-parks/zh-hans/parks/rishiri-rebun-sarobetsu/see-and-do/shiretoko-momoiwa-observatory-traverse/
 - **宗谷巴士禮文頁**，島上路線巴士的時刻表、路線圖與一日券。http://www.soyabus.co.jp/routebus/rebun/
 - **Heartland Ferry時刻表**，稚內往禮文島各季節的船班。https://heartlandferry.jp/timetable/time1/

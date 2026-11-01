@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island-hiking",
-  "articleSha256": "d379ca0cffd502b57f43c2df81249251a873f8ead13b407a67e674921f6dfb42",
+  "articleSha256": "7620ce727890e4a6fd73f57dfaf332ec4561c3f1e3d94dcc3f3d29dc8d2c06fb",
   "checker": "事實查核子代理（Claude Opus 5.5，重寫一輪；未參與本篇寫作、潤稿與修改）",
   "checkedAt": "2026-11-02",
   "claims": [
@@ -106,21 +106,21 @@
     },
     {
       "claimId": "C12",
-      "articleExcerpt": "當天來回的話，6月1日到9月30日可以搭06:30從稚內出發的船，08:25到香深。",
+      "articleExcerpt": "當天來回的話，4月28日到10月31日都有06:30從稚內出發、08:25到香深的船，5月下旬的禮文敦盛草花期也排得進來。",
       "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
       "sourceTitle": "時刻表｜ハートランドフェリー（2026年1月1日～12月31日）",
-      "sourceQuote": "6/1～9/30 06:30～08:25",
+      "sourceQuote": "4/28～5/31 06:30～08:25 … 6/1～9/30 06:30～08:25 … 10/1～10/31 06:30～08:25",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C13",
-      "articleExcerpt": "回稚內的末班船是17:10，錯過了當天就沒有船回稚內。",
+      "articleExcerpt": "回稚內的末班船6月到9月是17:10，5月和10月是17:05，錯過了當天就沒有船回稚內。",
       "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
       "sourceTitle": "時刻表｜ハートランドフェリー（2026年1月1日～12月31日）",
-      "sourceQuote": "6/1～9/30 … 14:50～16:45 17:10～19:05",
+      "sourceQuote": "4/28～5/31 … 17:05～19:00 6/1～9/30 … 17:10～19:05 10/1～10/31 … 17:05～19:00",
       "verdict": "verified",
-      "notes": "條件：6/1～9/30 期間；香深發最後一班 17:10。"
+      "notes": "4/28～4/30 也是 17:05，不影響正文。"
     },
     {
       "claimId": "C14",
@@ -169,10 +169,10 @@
     },
     {
       "claimId": "C19",
-      "articleExcerpt": "渡輪站1樓的觀光案內所拿得到詳細的步道地圖。",
-      "sourceUrl": "https://web.archive.org/web/20260215203616/https://www.rebun-island.jp/panfu/burariMAP/burariMAP_PDF1.pdf",
-      "sourceTitle": "ぶらりMAP｜礼文島観光協会（網頁存檔 2026-02-15）",
-      "sourceQuote": "フェリーターミナル1F観光案内所にて 詳細なトレイルマップを配布しております。",
+      "articleExcerpt": "步道地圖可以到渡輪站1樓的觀光案內所詢問。",
+      "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/999",
+      "sourceTitle": "礼文滝コース｜礼文島トレイル（WordPress API）",
+      "sourceQuote": "礼文島観光案内所（香深フェリーターミナル１Ｆ）",
       "verdict": "verified",
       "notes": ""
     },
@@ -196,12 +196,12 @@
     },
     {
       "claimId": "C22",
-      "articleExcerpt": "禮文敦盛草大約5月下旬到6月中旬開，禮文薄雪草要等到6月下旬。",
+      "articleExcerpt": "禮文敦盛草開淡黃白色的大花，大約5月下旬到6月中旬開，禮文薄雪草要等到6月下旬。",
       "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
       "sourceTitle": "礼文島特集｜HOKKAIDO LOVE!",
       "sourceQuote": "5月下旬から6月中旬頃には…「レブンアツモリソウ」が、6月下旬には「レブンウスユキソウ」が見られます。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "淡黃白色大花見環境省頁「淡黄白（クリーム）色の大きく優美な花をつける」。"
     },
     {
       "claimId": "C23",
@@ -250,12 +250,12 @@
     },
     {
       "claimId": "C28",
-      "articleExcerpt": "開園與閉園日每年依開花狀況前後移動，排行程時看步道官網當年的開園公告。",
-      "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/247",
-      "sourceTitle": "岬めぐりコース｜礼文島トレイル（WordPress API）",
-      "sourceQuote": "レブンアツモリソウ群生地は５月中旬から６月中旬まで開園します（その年の開花状況によって期間は前後します）。",
-      "verdict": "verified",
-      "notes": ""
+      "articleExcerpt": "開園與閉園日每年依開花狀況前後移動，排行程時看禮文町群生地頁公布的當年公開期間。",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000178.html",
+      "sourceTitle": "レブンアツモリソウ群生地｜礼文町",
+      "sourceQuote": "公開 ５月中旬～６月上旬／無休 ＊開花状況によって変更あり 料金 無料",
+      "verdict": "incorrect",
+      "notes": "2026-11-02 重開禮文町群生地頁：只寫例年的「５月中旬～６月上旬」，沒有當年日期，也和 2026 年實際（5/11～6/20 16:30，步道官網公告）不一致。讀者照正文去看會拿到錯的期間。建議改成到渡輪站1樓觀光案內所確認，或說明町公所頁只列例年大概期間。"
     },
     {
       "claimId": "C29",
@@ -304,15 +304,6 @@
     },
     {
       "claimId": "C34",
-      "articleExcerpt": "禮文敦盛草開的是淡黃白色的大花。",
-      "sourceUrl": "https://www.env.go.jp/nature/kisho/hogozoushoku/rebunatsumoriso.html",
-      "sourceTitle": "レブンアツモリソウ｜環境省",
-      "sourceQuote": "５月下旬～６月下旬に淡黄白（クリーム）色の大きく優美な花をつける。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C35",
       "articleExcerpt": "2026年的冬季封閉分兩階段，禮文瀑布步道10月1日先封，10月20日起巡岬、久種湖畔、禮文岳與8小時步道也封閉。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/posts/1661",
       "sourceTitle": "トレッキングコースの冬期閉鎖について｜礼文島トレイル（2026-09-30更新）",
@@ -321,7 +312,7 @@
       "notes": "2026-10-21 公告 posts/1749 列【冬季閉鎖】岬めぐり、久種湖畔、礼文滝、礼文岳、８時間。"
     },
     {
-      "claimId": "C36",
+      "claimId": "C35",
       "articleExcerpt": "禮文林道照常可以走，桃岩展望台步道從渡輪站到展望台這段也還能走，捷徑則全部禁止通行。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/posts/1749",
       "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ｜礼文島トレイル（2026-10-21）",
@@ -330,7 +321,7 @@
       "notes": ""
     },
     {
-      "claimId": "C37",
+      "claimId": "C36",
       "articleExcerpt": "10月下旬才抵達，可以走禮文林道，或從渡輪站走到桃岩展望台再原路回來。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/posts/1749",
       "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ｜礼文島トレイル（2026-10-21）",
@@ -339,7 +330,7 @@
       "notes": ""
     },
     {
-      "claimId": "C38",
+      "claimId": "C37",
       "articleExcerpt": "封閉的路段都立了禁止通行的告示牌，不要進入。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/posts/1749",
       "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ｜礼文島トレイル（2026-10-21）",
@@ -348,7 +339,7 @@
       "notes": ""
     },
     {
-      "claimId": "C39",
+      "claimId": "C38",
       "articleExcerpt": "2026年4月6日巡岬步道先解除禁止通行，4月15日桃岩展望台步道除了捷徑都能走。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/posts/1669",
       "sourceTitle": "岬めぐりコース通行止め解除のご案内｜礼文島トレイル（2026-04-06）",
@@ -357,7 +348,7 @@
       "notes": "4/15 見 posts/1675（2026-04-15）「桃岩展望台コースが一部を除き通行可能となりました。（桃岩展望台近道のルートは通行不可）」。"
     },
     {
-      "claimId": "C40",
+      "claimId": "C39",
       "articleExcerpt": "到5月26日已有6條能走，禮文岳步道還在等安全檢查。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/posts/1583",
       "sourceTitle": "トレッキングコースの通行について｜礼文島トレイル（2026-05-26更新）",
@@ -366,25 +357,25 @@
       "notes": ""
     },
     {
-      "claimId": "C41",
-      "articleExcerpt": "到7月9日的公告，才寫全線都能通行。",
+      "claimId": "C40",
+      "articleExcerpt": "到7月9日，全線都能通行。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/posts/1643",
       "sourceTitle": "トレッキングコースの通行について｜礼文島トレイル（2026-07-09更新）",
       "sourceQuote": "7/9現在、島内のトレッキングコースは全線通行可能です。",
       "verdict": "verified",
-      "notes": "API 顯示此文 2026-07-09 更新。"
+      "notes": "2026-11-02 經 WordPress API 讀取，此文 2026-07-09 更新。"
     },
     {
-      "claimId": "C42",
-      "articleExcerpt": "開放的先後每年不同，5月到7月上旬想爬禮文岳或走捷徑，出發前先看步道官網的公告。",
+      "claimId": "C41",
+      "articleExcerpt": "開放的先後每年不同，5月到7月上旬想爬禮文岳或走捷徑，出發前到渡輪站1樓的觀光案內所確認。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/posts/1643",
       "sourceTitle": "トレッキングコースの通行について｜礼文島トレイル（2026-07-09更新）",
       "sourceQuote": "通行止めになっていました桃岩展望台コースの旧尺忍小学校への近道が通行可能となりました。",
       "verdict": "verified",
-      "notes": "比對 2025 年存檔首頁（2025-10-20 全線封閉、2025-09-02 元地灯台～知床開放）與 2026 年順序不同，「每年不同」成立。注意：步道官網 2026-11-02 整站顯示維護頁（Coming soon），公告目前只讀得到 WordPress API。"
+      "notes": "比對 2025 年存檔首頁（2025-10-20 全線封閉、2025-09-02 元地灯台～知床開放）與 2026 年順序不同，「每年不同」成立。案內所在渡輪站 1 樓見礼文滝コース頁。"
     },
     {
-      "claimId": "C43",
+      "claimId": "C42",
       "articleExcerpt": "知床、須古頓、濱中、香深井都有宗谷巴士的站。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
       "sourceTitle": "普通旅客運賃表 礼文線(2) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)スコトン間｜宗谷バス",
@@ -393,16 +384,16 @@
       "notes": "知床見礼文線(1)運賃表最末站「知床」。"
     },
     {
-      "claimId": "C44",
-      "articleExcerpt": "桃岩登山口與禮文林道元地口不在宗谷巴士的票價表上，直接從渡輪站走過去最確實。",
-      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/01_rebun-motochi-line_fare.pdf",
-      "sourceTitle": "普通旅客運賃表 元地線(1)｜宗谷バス",
-      "sourceQuote": "香深ﾌｪﾘｰﾀｰﾐﾅﾙ 香深漁協前 神社前 元地港 元地（元地線停留所全部）",
+      "claimId": "C43",
+      "articleExcerpt": "宗谷巴士沒有設桃岩登山口與禮文林道元地口這兩站，直接從渡輪站走過去最確實。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/pdf/routemap/rosenzu-motochi.pdf",
+      "sourceTitle": "路線図【元地線(１)】（香深フェリーターミナル～元地間）｜宗谷バス（令和７年４月現在）",
+      "sourceQuote": "香深フェリーターミナル 香深漁協前 神社前 元地港 元地",
       "verdict": "verified",
-      "notes": "礼文線(1) 停留所為 香深FT、漁協前、尺忍、差閉、第２差閉、奮部、知床，礼文線(2) 也沒有這兩站。"
+      "notes": "經營者資料一致：元地線路線圖、元地線與礼文線(1)(2)運賃表、2026-10-01 改正冬季時刻表都沒有這兩站。注意：步道官網桃岩展望台コース頁（2021）寫「桃岩登山口と知床にはバス停があり」，步道地圖也在桃岩登山口標 E03；交通事實照經營者官方判定。"
     },
     {
-      "claimId": "C45",
+      "claimId": "C44",
       "articleExcerpt": "排巡岬步道這類要搭巴士去起點、再從終點坐車回來的長程路線，可以打開禮文島交通，那頁有宗谷巴士各路線的班次，去回的車對好再出發。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/247",
       "sourceTitle": "岬めぐりコース｜礼文島トレイル（WordPress API）",
@@ -411,7 +402,7 @@
       "notes": "站內連結頁內容不在本次查核範圍。"
     },
     {
-      "claimId": "C46",
+      "claimId": "C45",
       "articleExcerpt": "桃岩展望台步道｜桃岩登山口到知床｜5.7公里｜3小時｜★★｜登山口從渡輪站走約40分鐘，知床有巴士站",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-momo-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（桃岩展望台コース・拡大）",
@@ -420,7 +411,7 @@
       "notes": "知床巴士站見礼文線(1)運賃表。"
     },
     {
-      "claimId": "C47",
+      "claimId": "C46",
       "articleExcerpt": "桃岩展望台來回｜桃岩登山口往返展望台｜2.4公里｜1小時30分｜★｜從渡輪站走約40分鐘",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-momo-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（桃岩展望台コース・拡大）",
@@ -429,7 +420,7 @@
       "notes": ""
     },
     {
-      "claimId": "C48",
+      "claimId": "C47",
       "articleExcerpt": "巡岬步道｜須古頓岬到濱中｜12.4公里｜5小時20分｜★★★★｜須古頓、濱中",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-misaki-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（岬めぐりコース）",
@@ -438,7 +429,7 @@
       "notes": ""
     },
     {
-      "claimId": "C49",
+      "claimId": "C48",
       "articleExcerpt": "8小時步道｜濱中到香深井｜16.5公里｜6小時50分｜★★★★★｜濱中、香深井",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-hachi-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（8時間コース）",
@@ -447,7 +438,7 @@
       "notes": ""
     },
     {
-      "claimId": "C50",
+      "claimId": "C49",
       "articleExcerpt": "禮文林道｜元地口到香深井｜8.2公里｜3小時｜★★★｜從渡輪站走到薄雪草群生地約1小時30分，香深井有巴士站",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-rindo-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（礼文林道コース）",
@@ -456,7 +447,7 @@
       "notes": "渡輪站到群生地 1 小時 30 分見觀光協會日帰りプラン（8:50→10:20）。"
     },
     {
-      "claimId": "C51",
+      "claimId": "C50",
       "articleExcerpt": "薄雪草群生地來回｜元地口往返群生地｜4.0公里｜2小時｜★｜渡輪站走到群生地約1小時30分",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-rindo-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（礼文林道コース）",
@@ -465,7 +456,7 @@
       "notes": ""
     },
     {
-      "claimId": "C52",
+      "claimId": "C51",
       "articleExcerpt": "禮文岳步道｜內路往返山頂｜9.0公里｜4小時｜★★★★｜內路",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-rebundake-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（礼文岳コース）",
@@ -474,7 +465,7 @@
       "notes": ""
     },
     {
-      "claimId": "C53",
+      "claimId": "C52",
       "articleExcerpt": "禮文瀑布步道｜元地口往返禮文瀑布｜10.6公里｜5小時30分｜★★★★｜從渡輪站走到薄雪草群生地約1小時30分，再走30分鐘到瀑布入口",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-rebuntaki-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（礼文滝コース）",
@@ -483,7 +474,7 @@
       "notes": ""
     },
     {
-      "claimId": "C54",
+      "claimId": "C53",
       "articleExcerpt": "久種湖畔步道｜久種湖畔露營場一圈｜4.2公里｜1小時40分｜★★｜船泊診療所附近",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-kusyuko-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（久種湖畔コース）",
@@ -492,7 +483,7 @@
       "notes": ""
     },
     {
-      "claimId": "C55",
+      "claimId": "C54",
       "articleExcerpt": "只走一條步道的話，車票單買比一日券便宜。以巡岬步道來說，去程從渡輪站到須古頓1,400日圓，回程從濱中1,210日圓。兩段加起來2,610日圓，還不到大人一日券的3,000日圓。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
       "sourceTitle": "普通旅客運賃表 礼文線(2) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)スコトン間｜宗谷バス",
@@ -501,7 +492,7 @@
       "notes": "一日券見宗谷巴士禮文頁「【料金】大人3,000円、小児1,500円」。重算 1,400＋1,210＝2,610＜3,000。"
     },
     {
-      "claimId": "C56",
+      "claimId": "C55",
       "articleExcerpt": "8小時步道更省，去濱中1,210日圓、從香深井回渡輪站340日圓，合計1,550日圓。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/06_rebun-line-2_fare.pdf",
       "sourceTitle": "普通旅客運賃表 礼文線(2) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(高山経由)スコトン間｜宗谷バス",
@@ -510,7 +501,7 @@
       "notes": "重算 1,210＋340＝1,550。"
     },
     {
-      "claimId": "C57",
+      "claimId": "C56",
       "articleExcerpt": "桃岩展望台步道從香深出發，經過桃岩展望台、元地燈塔，一路走到島南端的知床。全長從香深算起約6.4公里，從桃岩登山口算是5.7公里。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/245",
       "sourceTitle": "桃岩展望台コース｜礼文島トレイル（WordPress API）",
@@ -519,7 +510,7 @@
       "notes": "5.7km 見起伏圖。"
     },
     {
-      "claimId": "C58",
+      "claimId": "C57",
       "articleExcerpt": "從渡輪站走到桃岩登山口，中間經過禮香寺，1.6公里大約40分鐘。",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-momo-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（桃岩展望台コース・拡大）",
@@ -528,7 +519,7 @@
       "notes": ""
     },
     {
-      "claimId": "C59",
+      "claimId": "C58",
       "articleExcerpt": "想省點腳力，從渡輪站騎自行車到登山口往上的巡山員小屋大約25分鐘，小屋離展望台只剩0.2公里。",
       "sourceUrl": "https://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf",
       "sourceTitle": "フェリー到着便別日帰りプラン｜礼文島観光協会（網頁存檔）",
@@ -537,7 +528,7 @@
       "notes": "0.2km 見起伏圖「レンジャーハウス 0.2km 10分 桃岩展望台」，小屋在登山口往上 1.0km。"
     },
     {
-      "claimId": "C60",
+      "claimId": "C59",
       "articleExcerpt": "開車約10分鐘，展望台有12個免費車位。",
       "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10386.html",
       "sourceTitle": "桃岩展望台｜HOKKAIDO LOVE!",
@@ -546,7 +537,7 @@
       "notes": ""
     },
     {
-      "claimId": "C61",
+      "claimId": "C60",
       "articleExcerpt": "登山口到展望台這段鋪了柏油或碎石，雨後步道泥濘時可以改走這段。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/255",
       "sourceTitle": "トレッキングルール｜礼文島トレイル（WordPress API）",
@@ -555,7 +546,7 @@
       "notes": ""
     },
     {
-      "claimId": "C62",
+      "claimId": "C61",
       "articleExcerpt": "標高225公尺的桃岩展望台，在起霧又風弱的清晨、冷霧壓在200公尺以下時，有機會看到雲海。",
       "sourceUrl": "https://web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/",
       "sourceTitle": "礼文の雲海｜礼文島観光情報（網頁存檔 2026-10-09）",
@@ -564,7 +555,7 @@
       "notes": ""
     },
     {
-      "claimId": "C63",
+      "claimId": "C62",
       "articleExcerpt": "這一帶標高不到300公尺，強風與濃霧卻不少見。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/245",
       "sourceTitle": "桃岩展望台コース｜礼文島トレイル（WordPress API）",
@@ -573,7 +564,7 @@
       "notes": ""
     },
     {
-      "claimId": "C64",
+      "claimId": "C63",
       "articleExcerpt": "從展望台往知床走1.5公里、約50分鐘，會經過金梅之谷。",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-momo-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（桃岩展望台コース・拡大）",
@@ -582,7 +573,7 @@
       "notes": ""
     },
     {
-      "claimId": "C65",
+      "claimId": "C64",
       "articleExcerpt": "走到知床可以搭巴士回渡輪站，車資340日圓，觀光協會排的一日行程也是這樣走。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/fare/04_rebun-line-1_fare.pdf",
       "sourceTitle": "普通旅客運賃表 礼文線(1) 香深ﾌｪﾘｰﾀｰﾐﾅﾙ(香深経由)知床間｜宗谷バス",
@@ -591,7 +582,7 @@
       "notes": "行程見觀光協會日帰りプラン「桃岩登山口8:50発(徒歩)～知床バス停12:00着 知床12:08発(バス)→ターミナル12:16着」。"
     },
     {
-      "claimId": "C66",
+      "claimId": "C65",
       "articleExcerpt": "不搭車的話，從知床走回渡輪站1小時左右。",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-momo-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（桃岩展望台コース・拡大）",
@@ -600,7 +591,7 @@
       "notes": ""
     },
     {
-      "claimId": "C67",
+      "claimId": "C66",
       "articleExcerpt": "想搭巴士去登山口，出發前到渡輪站1樓的觀光案內所問清楚搭哪一班、在哪裡下車。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/999",
       "sourceTitle": "礼文滝コース｜礼文島トレイル（WordPress API）",
@@ -609,7 +600,7 @@
       "notes": "觀光協會頁寫案內所開放期間 4 月中旬～10 月中旬（網頁存檔 2026-10-07）。"
     },
     {
-      "claimId": "C68",
+      "claimId": "C67",
       "articleExcerpt": "巡岬步道從島北端的須古頓岬出發，經過郭洛塔岬、澄海岬與禮文敦盛草群生地，走到濱中結束，全長約12.4公里。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/247",
       "sourceTitle": "岬めぐりコース｜礼文島トレイル（WordPress API）",
@@ -618,7 +609,7 @@
       "notes": ""
     },
     {
-      "claimId": "C69",
+      "claimId": "C68",
       "articleExcerpt": "由北往南大約5小時20分，起點須古頓和終點濱中都有宗谷巴士的站。急坡多、海風也強，難度四顆星。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/247",
       "sourceTitle": "岬めぐりコース｜礼文島トレイル（WordPress API）",
@@ -627,7 +618,7 @@
       "notes": "5 小時 20 分見起伏圖。"
     },
     {
-      "claimId": "C70",
+      "claimId": "C69",
       "articleExcerpt": "一開始須古頓岬與郭洛塔岬之間的江戶屋山道是有鋪面的路。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/247",
       "sourceTitle": "岬めぐりコース｜礼文島トレイル（WordPress API）",
@@ -636,7 +627,7 @@
       "notes": "起伏圖上江戸屋山道位於スコトン岬與ゴロタ岬之間。"
     },
     {
-      "claimId": "C71",
+      "claimId": "C70",
       "articleExcerpt": "澄海岬的海水透明度高，夏天隨著光線會變成藍綠色或翡翠色。",
       "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10388.html",
       "sourceTitle": "澄海岬｜HOKKAIDO LOVE!",
@@ -645,7 +636,7 @@
       "notes": ""
     },
     {
-      "claimId": "C72",
+      "claimId": "C71",
       "articleExcerpt": "最後從西上泊到濱中這段也有鋪面。群生地開園期間來走，路上就能順道看禮文敦盛草。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/247",
       "sourceTitle": "岬めぐりコース｜礼文島トレイル（WordPress API）",
@@ -654,7 +645,7 @@
       "notes": ""
     },
     {
-      "claimId": "C73",
+      "claimId": "C72",
       "articleExcerpt": "8小時步道是禮文島最難的一條步道，需要跟登利尻山一樣的體力與裝備。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/1005",
       "sourceTitle": "８時間コース｜礼文島トレイル（WordPress API）",
@@ -663,7 +654,7 @@
       "notes": ""
     },
     {
-      "claimId": "C74",
+      "claimId": "C73",
       "articleExcerpt": "大半路段收不到手機訊號，一個人走很危險。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/1005",
       "sourceTitle": "８時間コース｜礼文島トレイル（WordPress API）",
@@ -672,7 +663,7 @@
       "notes": "西上泊～香深井口約占全程 16.5km 中 14km 以上（起伏圖重算），「大半」成立。"
     },
     {
-      "claimId": "C75",
+      "claimId": "C74",
       "articleExcerpt": "召國分岔到宇遠內之間也沒有村落，出發前要準備齊全。",
       "sourceUrl": "https://web.archive.org/web/20261008002107/https://www.rebun-island.jp/welcome/trekking.html",
       "sourceTitle": "トレッキング｜礼文島観光情報（網頁存檔 2026-10-08）",
@@ -681,7 +672,7 @@
       "notes": ""
     },
     {
-      "claimId": "C76",
+      "claimId": "C75",
       "articleExcerpt": "沒有同伴的話，改走巡岬步道或禮文林道，或找花導覽同行。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/1005",
       "sourceTitle": "８時間コース｜礼文島トレイル（WordPress API）",
@@ -690,16 +681,16 @@
       "notes": "替代方案是編輯建議，依據官方「單獨行動危險」。"
     },
     {
-      "claimId": "C77",
-      "articleExcerpt": "路線從濱中經宇遠內走到香深井，全長約16.5公里。走路時間約6小時50分，加上休息要排一整天。",
+      "claimId": "C76",
+      "articleExcerpt": "路線從濱中經西上泊、宇遠內走到香深井，全長約16.5公里。走路時間約6小時50分，加上休息要排一整天。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/1005",
       "sourceTitle": "８時間コース｜礼文島トレイル（WordPress API）",
-      "sourceQuote": "礼文島北部の浜中を出発し、宇遠内を経由して香深井へと至る…全長約16.5kmのコースです。",
+      "sourceQuote": "礼文島北部の浜中を出発し、宇遠内を経由して香深井へと至る…全長約16.5kmのコースです。／浜中から西上泊分岐(岬めぐりコースとの分岐点)まで",
       "verdict": "verified",
-      "notes": "6 小時 50 分見起伏圖。"
+      "notes": "路線實際經過的是西上泊分岐，官網內文也以「西上泊から宇遠内まで」稱呼這段，可接受。6 小時 50 分見起伏圖。"
     },
     {
-      "claimId": "C78",
+      "claimId": "C77",
       "articleExcerpt": "西上泊到宇遠內這段路徑不明顯，容易迷路，所以要由北往南走，從濱中出發。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/1005",
       "sourceTitle": "８時間コース｜礼文島トレイル（WordPress API）",
@@ -708,7 +699,7 @@
       "notes": ""
     },
     {
-      "claimId": "C79",
+      "claimId": "C78",
       "articleExcerpt": "浪高或風強的日子，沿海岸的路段可能過不去。宇遠內到元地的海岸線有落石與跌落的危險，禁止通行。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/1005",
       "sourceTitle": "８時間コース｜礼文島トレイル（WordPress API）",
@@ -717,7 +708,7 @@
       "notes": ""
     },
     {
-      "claimId": "C80",
+      "claimId": "C79",
       "articleExcerpt": "禮文林道從元地口經過禮文薄雪草群生地走到香深井，全長約8.2公里，從渡輪站一路走到薄雪草群生地大約1小時30分。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/249",
       "sourceTitle": "礼文林道コース｜礼文島トレイル（WordPress API）",
@@ -726,7 +717,7 @@
       "notes": "1 小時 30 分見觀光協會日帰りプラン（8:50→10:20）。"
     },
     {
-      "claimId": "C81",
+      "claimId": "C80",
       "articleExcerpt": "林道是柏油或碎石路面。10月20日以後其他步道大多封閉，它照常可以走。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/249",
       "sourceTitle": "礼文林道コース｜礼文島トレイル（WordPress API）",
@@ -735,7 +726,7 @@
       "notes": "10/20 後照常可走見 posts/1749。"
     },
     {
-      "claimId": "C82",
+      "claimId": "C81",
       "articleExcerpt": "6月下旬到8月，沿途的禮文薄雪草成片開花。從元地口走到群生地是2.0公里，約1小時。",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-rindo-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（礼文林道コース）",
@@ -744,25 +735,25 @@
       "notes": "花期見北海道觀光機構特集與觀光協會健行頁（6月下旬起、6月から8月）。"
     },
     {
+      "claimId": "C82",
+      "articleExcerpt": "元地口在渡輪站往元地的方向，步道地圖上從渡輪站走到元地口一帶約2.3公里、33分鐘。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2026/08/trekking-1-pdf.jpg",
+      "sourceTitle": "礼文島トレイルマップ（発行：礼文島観光協会）",
+      "sourceQuote": "【元地方面】香深港フェリーターミナル → トンネル元地口 2.3km／33分",
+      "verdict": "verified",
+      "notes": "地圖上的點是「トンネル元地口」（隧道元地口），礼文林道元地口在它附近，正文寫「一帶」可接受；33 分＋元地口到群生地 1 小時，與「渡輪站到群生地約 1 小時 30 分」相符。"
+    },
+    {
       "claimId": "C83",
-      "articleExcerpt": "元地口是元地香深線這條公路靠元地那一頭的入口。",
-      "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/249",
-      "sourceTitle": "礼文林道コース｜礼文島トレイル（WordPress API）",
-      "sourceQuote": "道道元地香深線の元地側入口(礼文林道元地口)",
+      "articleExcerpt": "想搭巴士的話，出發前到渡輪站1樓的觀光案內所，問清楚搭哪一班、在哪裡下車。",
+      "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/999",
+      "sourceTitle": "礼文滝コース｜礼文島トレイル（WordPress API）",
+      "sourceQuote": "礼文島観光案内所（香深フェリーターミナル１Ｆ）",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C84",
-      "articleExcerpt": "想搭巴士的話，4月中旬到10月中旬可以在出發前到渡輪站1樓的觀光案內所，問清楚搭哪一班、在哪裡下車。",
-      "sourceUrl": "https://web.archive.org/web/20261007113011/https://www.rebun-island.jp/",
-      "sourceTitle": "礼文島観光情報（網頁存檔 2026-10-07）",
-      "sourceQuote": "礼文島観光案内所 （香深フェリーターミナル内 4月中旬～10月中旬）",
-      "verdict": "verified",
-      "notes": "觀光協會站 2026-11-02 連線逾時，用網頁存檔；1 樓見礼文滝コース頁「香深フェリーターミナル１Ｆ」。"
-    },
-    {
-      "claimId": "C85",
       "articleExcerpt": "元地線出了市區是自由乘降區間，路線上任意地點都能跟司機說要下車。不過在彎道、隧道裡、視線差的地方，司機可能不停。",
       "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/1e26d59c3b36be6234cf67eb119fd456.pdf",
       "sourceTitle": "【礼文】自由乗降区間について｜宗谷バス",
@@ -771,7 +762,7 @@
       "notes": ""
     },
     {
-      "claimId": "C86",
+      "claimId": "C85",
       "articleExcerpt": "林道上也有車子開，官方請車輛由元地往香深井單向行駛。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/249",
       "sourceTitle": "礼文林道コース｜礼文島トレイル（WordPress API）",
@@ -780,7 +771,7 @@
       "notes": ""
     },
     {
-      "claimId": "C87",
+      "claimId": "C86",
       "articleExcerpt": "禮文岳是禮文島最高點，標高490公尺。步道從東海岸的內路上山，單程約4.5公里，往返難度四顆星。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/978",
       "sourceTitle": "礼文岳コース｜礼文島トレイル（WordPress API）",
@@ -789,16 +780,16 @@
       "notes": ""
     },
     {
-      "claimId": "C88",
-      "articleExcerpt": "內路有巴士站，但班次少。",
-      "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/978",
-      "sourceTitle": "礼文岳コース｜礼文島トレイル（WordPress API）",
-      "sourceQuote": "登山口がある内路にはバス停があり…本数は少ないですが",
+      "claimId": "C87",
+      "articleExcerpt": "內路有巴士站，但班次少，宗谷巴士禮文頁每年4月下旬到9月貼出夏季班表，排禮文岳時先對好去回的車。",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア 路線バス｜宗谷バス",
+      "sourceQuote": "路線バス時刻表は例年4月後半～9月が夏ダイヤ、10月～4月後半が冬ダイヤとなります。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "「班次少」見 pages/978「本数は少ないですが」。原文是夏季班表的適用期間，「貼出」是正文的推論說法，意思可接受。"
     },
     {
-      "claimId": "C89",
+      "claimId": "C88",
       "articleExcerpt": "上山約2小時30分，下山1小時30分左右。大約過了標高350公尺，就會走進偃松林。路上陡坡與碎石坡多，腳步要踩穩。",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-rebundake-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（礼文岳コース）",
@@ -807,7 +798,7 @@
       "notes": "偃松與陡坡見 pages/978「標高350m前後からハイマツ帯」「急斜面やガレ場が多いため」。"
     },
     {
-      "claimId": "C90",
+      "claimId": "C89",
       "articleExcerpt": "禮文瀑布步道的起點同樣是禮文林道元地口，從林道分岔後往西海岸的禮文瀑布下切。分岔點到瀑布單程約2公里，往返難度四顆星。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/999",
       "sourceTitle": "礼文滝コース｜礼文島トレイル（WordPress API）",
@@ -816,7 +807,7 @@
       "notes": ""
     },
     {
-      "claimId": "C91",
+      "claimId": "C90",
       "articleExcerpt": "全線沒有鋪面，途中有要拉著繩子下的陡坡，也要涉溪過河。下到瀑布大約1小時，回程一路上坡，要1小時30分左右。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/999",
       "sourceTitle": "礼文滝コース｜礼文島トレイル（WordPress API）",
@@ -825,7 +816,7 @@
       "notes": "時間見起伏圖「礼文滝入口→礼文滝：1時間00分 礼文滝→礼文滝入口：1時間30分」。"
     },
     {
-      "claimId": "C92",
+      "claimId": "C91",
       "articleExcerpt": "下過雨、溪水上漲時可能封閉，出發前可以問現場的巡山員或渡輪站1樓的觀光案內所。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/999",
       "sourceTitle": "礼文滝コース｜礼文島トレイル（WordPress API）",
@@ -834,7 +825,7 @@
       "notes": ""
     },
     {
-      "claimId": "C93",
+      "claimId": "C92",
       "articleExcerpt": "禮文瀑布往元地與宇遠內兩側的海岸線都禁止通行，看完瀑布就原路回到林道。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/999",
       "sourceTitle": "礼文滝コース｜礼文島トレイル（WordPress API）",
@@ -843,7 +834,7 @@
       "notes": ""
     },
     {
-      "claimId": "C94",
+      "claimId": "C93",
       "articleExcerpt": "久種湖畔步道從久種湖畔露營場出發，繞湖一圈再回來。只想輕鬆走一段，可以從露營場走到水芭蕉停車場，1.7公里、約40分鐘，難度一顆星。",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-kusyuko-gl.jpg",
       "sourceTitle": "礼文島トレイル 起伏図（久種湖畔コース）",
@@ -852,7 +843,7 @@
       "notes": ""
     },
     {
-      "claimId": "C95",
+      "claimId": "C94",
       "articleExcerpt": "前往時搭往須古頓或病院前的巴士，在船泊診療所附近下車。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/1001",
       "sourceTitle": "久種湖畔コース｜礼文島トレイル（WordPress API）",
@@ -861,7 +852,7 @@
       "notes": ""
     },
     {
-      "claimId": "C96",
+      "claimId": "C95",
       "articleExcerpt": "久種湖是日本最北的湖，春秋有候鳥飛來，天氣好的日子湖面會倒映禮文岳。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/1001",
       "sourceTitle": "久種湖畔コース｜礼文島トレイル（WordPress API）",
@@ -870,7 +861,7 @@
       "notes": ""
     },
     {
-      "claimId": "C97",
+      "claimId": "C96",
       "articleExcerpt": "湖西側1.7公里是沒有鋪面的路，有一段是木棧道，東側2.5公里則走有鋪面的車道。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/1001",
       "sourceTitle": "久種湖畔コース｜礼文島トレイル（WordPress API）",
@@ -879,16 +870,16 @@
       "notes": ""
     },
     {
-      "claimId": "C98",
-      "articleExcerpt": "出發前要準備好登山鞋和雨具，也先確認廁所在哪裡。",
-      "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/255",
-      "sourceTitle": "トレッキングルール｜礼文島トレイル（WordPress API）",
-      "sourceQuote": "トレッキングシューズや雨具などの装備を整えてください。また、事前にトイレの場所も確認しておきましょう。",
+      "claimId": "C97",
+      "articleExcerpt": "出發前要準備好登山鞋和雨具。步道上廁所不多，步道地圖標的廁所在渡輪站、巡山員小屋、知床、須古頓岬、濱中、鐵府、西上泊、內路與宇遠內，出發前在渡輪站先上一趟。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2026/08/trekking-1-pdf.jpg",
+      "sourceTitle": "礼文島トレイルマップ（発行：礼文島観光協会）",
+      "sourceQuote": "凡例「トイレ／Restrooms」；圖示標在 香深港フェリーターミナル、レンジャーハウス、知床、スコトン岬、浜中、鉄府、西上泊、内路、宇遠内",
       "verdict": "verified",
-      "notes": ""
+      "notes": "裝備見 pages/255「トレッキングシューズや雨具などの装備を整えてください」。地圖上ウスユキソウ群生地與久種湖畔キャンプ場附近也有圖示，前者 2025 年公告停用，正文不列可接受。"
     },
     {
-      "claimId": "C99",
+      "claimId": "C98",
       "articleExcerpt": "走之前把鞋底的泥土清掉，避免把外來種帶上島",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/255",
       "sourceTitle": "トレッキングルール｜礼文島トレイル（WordPress API）",
@@ -897,7 +888,7 @@
       "notes": ""
     },
     {
-      "claimId": "C100",
+      "claimId": "C99",
       "articleExcerpt": "不踏出步道，不採植物",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/255",
       "sourceTitle": "トレッキングルール｜礼文島トレイル（WordPress API）",
@@ -906,7 +897,7 @@
       "notes": ""
     },
     {
-      "claimId": "C101",
+      "claimId": "C100",
       "articleExcerpt": "路面泥濘時不要硬走，改走江戶屋山道、桃岩登山口到展望台、禮文林道這些鋪了柏油或碎石的路段",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/255",
       "sourceTitle": "トレッキングルール｜礼文島トレイル（WordPress API）",
@@ -915,7 +906,7 @@
       "notes": ""
     },
     {
-      "claimId": "C102",
+      "claimId": "C101",
       "articleExcerpt": "國立公園內只能在指定地點露營",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/255",
       "sourceTitle": "トレッキングルール｜礼文島トレイル（WordPress API）",
@@ -924,7 +915,7 @@
       "notes": ""
     },
     {
-      "claimId": "C103",
+      "claimId": "C102",
       "articleExcerpt": "不帶寵物上步道",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/255",
       "sourceTitle": "トレッキングルール｜礼文島トレイル（WordPress API）",
@@ -933,7 +924,7 @@
       "notes": ""
     },
     {
-      "claimId": "C104",
+      "claimId": "C103",
       "articleExcerpt": "宇遠內經禮文瀑布到地藏岩的海岸線不能通行，觀光協會的步道地圖上也標了出來。",
       "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2026/08/trekking-1-pdf.jpg",
       "sourceTitle": "礼文島トレイルマップ（発行：礼文島観光協会）",
@@ -942,7 +933,7 @@
       "notes": ""
     },
     {
-      "claimId": "C105",
+      "claimId": "C104",
       "articleExcerpt": "夏天走長程多帶水，天熱時要小心中暑。",
       "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/posts/1730",
       "sourceTitle": "注意｜礼文島トレイル（2026-08-14）",
@@ -951,17 +942,17 @@
       "notes": ""
     },
     {
-      "claimId": "C106",
-      "articleExcerpt": "想有人邊走邊介紹花草，可以找花導覽同行，不過導覽都用日文。",
+      "claimId": "C105",
+      "articleExcerpt": "想有人邊走邊介紹花草，可以找Rebun Hana Guide Club（礼文はなガイドクラブ），事先聯絡可以安排英語或繁體中文導覽。",
       "sourceUrl": "https://www.japan.travel/national-parks/zh-hans/parks/rishiri-rebun-sarobetsu/see-and-do/shiretoko-momoiwa-observatory-traverse/",
       "sourceTitle": "知床～桃岩观景台纵走路线｜日本国立公园（环境省）",
-      "sourceQuote": "外语服务 英语 (需要事前联络)、简体中文 (需要事前联络)、繁体中文 (需要事前联络)（礼文花卉导览团）",
-      "verdict": "incorrect",
-      "notes": "觀光協會花導覽頁（網頁存檔 2026-06-17）寫「ガイドは日本語になります」，但環境省國立公園頁列礼文はなガイドクラブ可事先聯絡安排英語、簡中、繁中導覽。兩個官方來源不一致，正文「都用日文」對台灣讀者會漏掉可預約繁中的選項；建議改成「觀光協會列的導覽以日文為主，禮文花導覽社事先聯絡可以安排英語或中文」或刪掉「都」。"
+      "sourceQuote": "外语服务 英语 (需要事前联络)、简体中文 (需要事前联络)、繁体中文 (需要事前联络)",
+      "verdict": "verified",
+      "notes": ""
     },
     {
-      "claimId": "C107",
-      "articleExcerpt": "Rebun Hana Guide Club（礼文はなガイドクラブ）的導覽在6月到8月的夏季，半日行程約4小時。",
+      "claimId": "C106",
+      "articleExcerpt": "導覽在6月到8月的夏季，半日行程約4小時。",
       "sourceUrl": "https://www.japan.travel/national-parks/zh-hans/parks/rishiri-rebun-sarobetsu/see-and-do/shiretoko-momoiwa-observatory-traverse/",
       "sourceTitle": "知床～桃岩观景台纵走路线｜日本国立公园（环境省）",
       "sourceQuote": "开放时间 夏季（6 月至 8 月） 游览时间 半日课程：（约4小时）",
@@ -969,7 +960,7 @@
       "notes": ""
     },
     {
-      "claimId": "C108",
+      "claimId": "C107",
       "articleExcerpt": "2026年度的導覽已在10月13日公告結束。",
       "sourceUrl": "https://hanaguideclub.com/",
       "sourceTitle": "礼文はなガイドクラブ",
@@ -978,63 +969,63 @@
       "notes": ""
     },
     {
+      "claimId": "C108",
+      "articleExcerpt": "夏季的電話是0163-89-6330，也可以寫信到rebun@hanaguideclub.com。",
+      "sourceUrl": "https://www.japan.travel/national-parks/zh-hans/parks/rishiri-rebun-sarobetsu/see-and-do/shiretoko-momoiwa-observatory-traverse/",
+      "sourceTitle": "知床～桃岩观景台纵走路线｜日本国立公园（环境省）",
+      "sourceQuote": "联系电话 (+81)163-89-6330 电子邮件地址 rebun@hanaguideclub.com",
+      "verdict": "verified",
+      "notes": "「夏季」標示見觀光協會花導覽頁存檔「0163-89-6330（夏季）」；環境省頁的電話與郵件一致。"
+    },
+    {
       "claimId": "C109",
-      "articleExcerpt": "夏季的電話是0163-89-6330。",
+      "articleExcerpt": "島上還有其他導覽，可以到渡輪站1樓的觀光案內所詢問。",
       "sourceUrl": "https://web.archive.org/web/20260617231817/https://www.rebun-island.jp/inbound/hanaguide.html",
       "sourceTitle": "花ガイド｜礼文島観光情報（網頁存檔 2026-06-17）",
-      "sourceQuote": "礼文はなガイドクラブ 電話 0163-89-6330（夏季）",
+      "sourceQuote": "礼文ガイドサービス … 礼文アウトドアガイド … Hokkaido Guide Service",
       "verdict": "verified",
-      "notes": "環境省國立公園頁同列 (+81)163-89-6330。"
+      "notes": "案內所在渡輪站 1 樓見礼文滝コース頁。觀光協會站 2026-11-02 連線逾時，其他導覽存在只用存檔佐證，屬穩定事實。"
     },
     {
       "claimId": "C110",
-      "articleExcerpt": "其他還有禮文導覽服務（礼文ガイドサービス）、禮文戶外導覽（礼文アウトドアガイド）與Hokkaido Guide Service，聯絡方式在觀光協會的花導覽頁。",
-      "sourceUrl": "https://web.archive.org/web/20260617231817/https://www.rebun-island.jp/inbound/hanaguide.html",
-      "sourceTitle": "花ガイド｜礼文島観光情報（網頁存檔 2026-06-17）",
-      "sourceQuote": "礼文ガイドサービス 電話 080‐5548‐6464 … 礼文アウトドアガイド 電話 090‐2690‐4175 … Hokkaido Guide Service 電話 070‐4441‐0890",
-      "verdict": "verified",
-      "notes": "觀光協會站 2026-11-02 連線逾時，用網頁存檔。"
+      "articleExcerpt": "禮文町的禮文敦盛草群生地頁，當年的公開期間與費用。https://www.town.rebun.hokkaido.jp/hotnews/detail/00000178.html",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000178.html",
+      "sourceTitle": "レブンアツモリソウ群生地｜礼文町",
+      "sourceQuote": "公開 ５月中旬～６月上旬／無休 ＊開花状況によって変更あり 料金 無料",
+      "verdict": "incorrect",
+      "notes": "頁面只有例年期間（５月中旬～６月上旬），不是當年公開期間，也和 2026 年實際 5/11～6/20 不符。費用「無料」正確。建議改成「例年的公開期間與費用」或換掉這一列。"
     },
     {
       "claimId": "C111",
-      "articleExcerpt": "禮文島步道（礼文島トレイル），步道官網，當年群生地開園、步道開放與冬季封閉的公告都在首頁。https://rebun-trail.jp/",
-      "sourceUrl": "https://web.archive.org/web/20260308161415/https://rebun-trail.jp/",
-      "sourceTitle": "礼文島トレイル トップ（網頁存檔 2026-03-08）",
-      "sourceQuote": "トレイルニュース お知らせ トレッキングコースの冬季閉鎖について … レブンアツモリソウ群生地の閉園（6/20まで）について",
+      "articleExcerpt": "環境省國立公園的知床到桃岩展望台步道頁，路線介紹與花導覽的聯絡方式。https://www.japan.travel/national-parks/zh-hans/parks/rishiri-rebun-sarobetsu/see-and-do/shiretoko-momoiwa-observatory-traverse/",
+      "sourceUrl": "https://www.japan.travel/national-parks/zh-hans/parks/rishiri-rebun-sarobetsu/see-and-do/shiretoko-momoiwa-observatory-traverse/",
+      "sourceTitle": "知床～桃岩观景台纵走路线｜日本国立公园（环境省）",
+      "sourceQuote": "联系方式 礼文花卉导览团 … 联系电话 (+81)163-89-6330",
       "verdict": "verified",
-      "notes": "網頁存檔首頁有公告列表。注意：2026-11-02 實際打開 rebun-trail.jp 回 503，整站顯示「Our Website is Coming soon」維護頁，各子頁 302 轉回首頁；讀者點連結目前看不到公告與地圖。"
+      "notes": ""
     },
     {
       "claimId": "C112",
-      "articleExcerpt": "禮文島步道官網的步道地圖，7條步道與巴士站位置的地圖。https://rebun-trail.jp/trailmap/",
-      "sourceUrl": "https://rebun-trail.jp/wp-json/wp/v2/pages/257",
-      "sourceTitle": "礼文島トレイルマップ｜礼文島トレイル（WordPress API）",
-      "sourceQuote": "マップをクリックすると拡大画像が別ウィンドウで表示されます／地圖圖例「バス停／Bus Stop」",
+      "articleExcerpt": "宗谷巴士禮文頁，島上路線巴士的時刻表、路線圖與一日券。http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
+      "sourceTitle": "礼文エリア 路線バス｜宗谷バス",
+      "sourceQuote": "礼文エリア 定期路線バス時刻表 … 礼文島内路線バス１DAYフリー乗車券 … 運行経路図",
       "verdict": "verified",
-      "notes": "地圖檔 trekking-1-pdf.jpg 可直接下載，畫有 7 條步道與巴士站。頁面本身目前 302 轉到維護首頁。"
+      "notes": ""
     },
     {
       "claimId": "C113",
-      "articleExcerpt": "禮文島觀光協會的花導覽頁，各家導覽的聯絡方式。https://www.rebun-island.jp/inbound/hanaguide.html",
-      "sourceUrl": "https://web.archive.org/web/20260617231817/https://www.rebun-island.jp/inbound/hanaguide.html",
-      "sourceTitle": "花ガイド｜礼文島観光情報（網頁存檔 2026-06-17）",
-      "sourceQuote": "掲載名 お問い合わせ 礼文はなガイドクラブ 電話 0163-89-6330（夏季）",
+      "articleExcerpt": "Heartland Ferry時刻表，稚內往禮文島各季節的船班。https://heartlandferry.jp/timetable/time1/",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "時刻表｜ハートランドフェリー（2026年1月1日～12月31日）",
+      "sourceQuote": "稚内発～香深着 香深発～稚内着 1/1～4/27 … 11/1～12/31",
       "verdict": "verified",
-      "notes": "觀光協會站 2026-11-02 連線逾時。"
-    },
-    {
-      "claimId": "C114",
-      "articleExcerpt": "禮文島觀光協會的健行頁，各步道的簡介。https://www.rebun-island.jp/welcome/trekking.html",
-      "sourceUrl": "https://web.archive.org/web/20261008002107/https://www.rebun-island.jp/welcome/trekking.html",
-      "sourceTitle": "トレッキング｜礼文島観光情報（網頁存檔 2026-10-08）",
-      "sourceQuote": "礼文島の魅力を満喫する7つのコース",
-      "verdict": "verified",
-      "notes": "觀光協會站 2026-11-02 連線逾時。"
+      "notes": ""
     }
   ],
   "summary": {
-    "verified": 113,
-    "incorrect": 1,
+    "verified": 111,
+    "incorrect": 2,
     "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,
