@@ -75,3 +75,15 @@ test('連結句改寫過：照新舊對照找新句，錨文字出現兩次也�
   assert.equal(linked.text, '旭川交通')
   assert.ok(blockText(block).indexOf('旭川交通整理') > 0)
 })
+
+test('同一頁連到同一篇兩次：兩條都接上', () => {
+  const twoLinks = [
+    {_key: 'h', _type: 'block', style: 'h2', markDefs: [], children: [span('a', '怎麼去')]},
+    {_key: 'p1', _type: 'block', style: 'normal', markDefs: [{_key: 'l1', _type: 'link', href: '/places/asahikawa/transport/'}], children: [span('b', '先看'), span('c', '旭川交通', ['l1']), span('d', '。')]},
+    {_key: 'p2', _type: 'block', style: 'normal', markDefs: [{_key: 'l2', _type: 'link', href: '/places/asahikawa/transport/'}], children: [span('e', '回程也看'), span('f', '旭川交通', ['l2']), span('g', '。')]},
+  ]
+  const markdown = ['# 旭山動物園', '', '## 怎麼去', '', '先看旭川交通。', '', '回程也看旭川交通。', ''].join('\n')
+  const {body, notCarried} = rebuildBody(twoLinks, markdown)
+  assert.equal(notCarried.length, 0)
+  assert.equal(body.filter((block: any) => block.markDefs?.length).length, 2)
+})

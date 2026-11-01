@@ -37,7 +37,7 @@ Darren 2026-11-01 要求把網站上還沒重寫的 42 篇全部照新流程（�
 
 ## 意義比對
 
-照 `local-writer.md` 第 2 步第 3 點。
+照 `local-writer.md` 第 2 步第 3 點。`check-polish.mjs` 要拿帶事實編號的稿子比：`node .agents/skills/japan-travel-polish/scripts/check-polish.mjs <資料夾>/before-draft-tagged.md <資料夾>/draft-tagged.md --article=<id> --outline=<大綱>`（用 reader-preview 比會誤報「刪掉的事實不在潤稿前」）。
 
 ## 事實查核
 

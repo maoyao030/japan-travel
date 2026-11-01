@@ -1,50 +1,60 @@
-# 重寫追蹤（agent id 對照）。流程：content-automation/rewrite-live.md；連結句同步工具 scratchpad/apply-links.mjs
-| id | researcher | author | polisher | drift | factcheck | reader | 狀態 |
+# 第 3 批追蹤（第 1、2 批 13 篇已上線，main 0793a0f）
+流程：content-automation/rewrite-live.md；連結句同步 scratchpad/apply-links.mjs；驗收紀錄產生器 scratchpad/write-review.mjs（spec 範例 review-spec-1.json）
+| id | 研究 | 作者 | 潤稿 | 比對 | 查核 | 讀者 | 狀態 |
 |---|---|---|---|---|---|---|---|
-| wakkanai-transport | ab6817a5b60736388 | aac20642faffd7e9b | a16c2bdf48e27a5a6 | | | | polish（links synced） |
-| wakkanai-ferry | af59f84d319a1ad5f | | | | | | HOLD 預約系統改版（11月上旬重開） |
-| rishiri-island-transport | a5aa14396ed68b447 | aa7bbdb651d4f0be9 | a6494081b9b6acbe7 | | | | polish（links synced） |
-| rebun-island-transport | ada669dd2bfdcae22 | a24da318bc47365cc | a514d17c638a2f34c | | | | polish（links synced） |
-| asahikawa-transport | a02bab028d09722d9 | a53d7bfe591809b6c | a13b6aab61f85090e | | | | polish（links synced） |
-| sounkyo-transport | ae50c7ae3ca2212a8 | a6872b0a09bf1370b | a91c1ee9cd37ce383 | a5d5d5c8713a183bf | | | drift |
-| asahidake-transport | a1aeb3b860bd5d705 | a226f0172145b2b54 | af7d55a49331fa8de | | | | polish（links synced） |
-| cape-soya-transport | a97db33e494358b9b | af17b9ec296ab0474 | a20985171421abe78 | | | | polish（links synced） |
-| wakkanai-stay | a57b1863c03571327 | aaf3dbb3bb69329a9 | ab9cf3b908d87643b | | | | polish（links []） |
-| rishiri-island-stay | ac8d34b6b22efc339 | abfeadecbe7b46e48 | aaac1c573df17b591 | | | | polish（links synced） |
-| rebun-island-stay | ac79b312727228425 | a6b2558bf250e2336 | | | | | author |
-| asahikawa-stay | a4424e5d5cb46bf05 | a1aeaaa31b5b958b3 | a4ff30a02daf2d3d8 | | | | polish（links synced） |
-| asahidake-stay | a3b102bb3fbac2297 | a7fa55effce891cfe | ad6380e758d450b7c | ae8dcab9ddf249e94 | | | drift |
-| asahidake-ropeway | aee5c08f108e0be52 | a47c5adba8d33b109 | a20273ade6b158fe4 | | | | polish（links synced） |
-後續 28 篇尚未開始研究。replace-body.mjs 已加 renamedSentences（測試 6 項通過，未 commit）。
-## 進度補記（覆蓋上表）
-- polish: rebun-island-stay a616aa9e224cef25d；asahikawa-stay a4ff30a02daf2d3d8；rishiri-island-stay aaac1c573df17b591；rebun-island-transport a514d17c638a2f34c；wakkanai-stay ab9cf3b908d87643b；asahidake-transport af7d55a49331fa8de；wakkanai-transport a16c2bdf48e27a5a6
-- drift: asahidake-stay ae8dcab9ddf249e94；sounkyo-transport a5d5d5c8713a183bf；rishiri-island-transport a995ab52092200548；asahikawa-transport a6ae6be90670c60f8；asahidake-ropeway ab6d1ebf745f12210；cape-soya-transport a4bca306574532e26
-- 驗收中：asahidake-stay（SHA cb14e7ac… 查核 ae37f872ce60e1ccc，讀者 a7aaba2e65ac97242）；sounkyo-transport（SHA 7ae67dec… 查核 afba2f64809633492，讀者 a19c7e5526c9ab5fc）
-- drift 加：wakkanai-transport a4b375165a0b888fc；rebun-island-transport a28f96d8b45d7391b；wakkanai-stay aa6968e5e11e4bfec
-- 注意：check-polish 要用 before-draft-tagged.md / draft-tagged.md 位置參數
-- 驗收中加：rishiri-island-transport（SHA 4adae816… 查核 ae94a0c9b8ac26784 讀者 ac89326c70442b3c7）；asahidake-ropeway（SHA 14aba407… 查核 a463af87e82dde9ee 讀者 a81b2ae9da95b23f8）；asahikawa-transport（SHA 4420c7d0… 查核 aefc836c21043ea4d 讀者 a85956dca1d4ae0a9）
-- cape-soya-transport：潤稿者 a20985171421abe78 修 1 處不可接受中
-- drift 加：rebun-island-stay a5b2ee43bb2baefe8；rishiri-island-stay a5f87335b7389a116；asahikawa-stay a65aaf999020158c9；asahidake-transport aeec4835c1db71f85
-- 驗收中加：wakkanai-stay（SHA 4b3190d2… 查核 a5eb474fb89740f96 讀者 aaccd3eadea7a2c5c）；wakkanai-transport（SHA 4564051c… 查核 acd8d8e83314c42a4 讀者 a235e1d0648f2d0a2）；rebun-island-transport（SHA 3c71f735… 查核 a043c74ef87fa803d 讀者 a949a204c04b5ed53）；cape-soya-transport（SHA 61663b55… 查核 a6a2edd037ef3f748 讀者 a1526b936bdf61093）；asahikawa-stay（SHA fd4567f1… 查核 a9ee342ed7cf12dd1 讀者 a9d7aec89c283a2cb）；rebun-island-stay（SHA 1de04575… 查核 a2136f2514463e596 讀者 a045602fee43612f1）
-- 讀者第一階段完成（等查核完再做第二階段）：asahidake-stay、sounkyo-transport、asahikawa-transport、rishiri-island-transport、asahidake-ropeway
-- 修稿中：asahidake-transport 潤稿者 af7d55a49331fa8de（半句）；rishiri-island-stay 潤稿者 aaac1c573df17b591（Rera Moshiri 句）
-- 同時上限 20 個子代理
-- check-voice 詞表建議補：交互通行、協力金、都市間巴士（sounkyo 讀者提）
-- 驗收中加：asahidake-transport（SHA 32cb3dcf… 查核 a0d5b06110f6ffd08 讀者 aa0e82a4cebf7bbe7）；rishiri-island-stay（SHA 53fc12d4… 查核 adc3a47a1d0f9e08d，讀者第一階段還沒派——等空位）
-- 讀者第一階段完成加：wakkanai-stay、wakkanai-transport、rebun-island-transport、rebun-island-stay、asahikawa-stay
-- asahikawa-stay 修稿時告訴作者：款待券的面額不是房價，可以寫回（住宿頁不寫價格只限房價）
-## 狀態快照（較新）
-- asahidake-ropeway：已換上 Sanity（rev dEME9PgxExwemMSAoHQvbR），review.md gates_clear；要推 main 才會重建
-- 修稿中（作者）：cape-soya-transport af17b9ec296ab0474、asahidake-stay a7fa55effce891cfe、asahikawa-transport a53d7bfe591809b6c、sounkyo-transport a6872b0a09bf1370b、asahidake-transport a226f0172145b2b54、rishiri-island-transport aa7bbdb651d4f0be9
-- 讀者第二階段中：asahikawa-stay a9d7aec89c283a2cb、rebun-island-stay a045602fee43612f1
-- 等查核：wakkanai-stay（a5eb474fb89740f96）、wakkanai-transport（acd8d8e83314c42a4）、rebun-island-transport（a043c74ef87fa803d）、rishiri-island-stay（adc3a47a1d0f9e08d）
-- 複查/最終判定時：事實查核者=上面各查核 id；讀者=各讀者 id
-- check-voice 詞表已加交互通行、協力金、都市間巴士；glossary Taisetsu Liner note 已改（未 commit）
-## 額度用完時的狀態（2026-11-01）
-- 已換上 Sanity：asahidake-ropeway
-- 全部通過、待寫 review.md 並換正文：asahidake-stay（SHA 9e861812…）、cape-soya-transport（841d2132…）、asahidake-transport（26ab0bbe…）
-- 複查＋最終判定中：asahikawa-transport（查核 aefc836c21043ea4d、讀者 a85956dca1d4ae0a9）
-- 修稿中：sounkyo-transport a6872b0a09bf1370b、rishiri-island-transport aa7bbdb651d4f0be9、asahikawa-stay a1aeaaa31b5b958b3、rebun-island-stay a6b2558bf250e2336、wakkanai-transport aac20642faffd7e9b
-- 待派修稿：wakkanai-stay（作者 aaf3dbb3bb69329a9，必修見 reader-stage2.md 3 條）
-- 讀者第二階段中：rebun-island-transport a949a204c04b5ed53、rishiri-island-stay a578b39b10cabaf19
-- HOLD：wakkanai-ferry；未開始：其餘 28 篇
+| wakkanai | aeb947fb7a295d1be | af4a4d72027ca6ea1 | a60a2ab8af958df12 | | | | polish（links synced） |
+| rishiri-island | acfd324397645336e | a8fce2b17e9784a76 | a48d938729835748e | a029a5288dae21103 | | | drift |
+| rebun-island | aee9d26573ca3cac0 | a0573e19ec76787ef | a81c64603dac778d6 | | | | polish（links synced） |
+| asahikawa | a7d1e7c372c6bfdfe | a499adddf44d05094 | | | | | author |
+| sounkyo | adb54c88ef0ea649e | abf0199e03725c34a | | | | | author |
+| asahidake | a2880afb9657644bc | a56f2b494c6840187 | | | | | author |
+| cape-soya | a7d43aa864710a6a7 | a93c8d3dbbdfd5a0b | aeb22e57395110ff0 | ac496525e216771b1 | | | drift |
+| higashikawa | a8d223a14a2bc24ec | a5910fe5c55264f0a | ae0a5643b9fe65df3 | | | | polish（links synced） |
+| asahidake-or-sounkyo | a72087deadcd92d2d | a0f5579fa98bc5f6c | ac02eef9ef0327faf | | | | polish（links synced） |
+| wakkanai-sights | a51f065a8264895e1 | af3d6f3e21dc1f8f1 | abdd1ed55afbd578e | | | | polish（links []） |
+未開始（18）：asahidake-hiking asahikawa-food asahikawa-sights asahikawa-weather rebun-island-food rebun-island-hiking rebun-island-sights rishiri-island-festival rishiri-island-food rishiri-island-hiking rishiri-island-sights rishiri-island-weather sounkyo-festival sounkyo-hiking sounkyo-sights sounkyo-weather wakkanai-festival wakkanai-weather
+HOLD：wakkanai-ferry（訂票系統 11 月上旬重開）
+- 待辦：sounkyo-transport 正文寫 Taisetsu Liner「預約制巴士」，asahikawa 研究 F665 發現沒預約也能在旭川站前售票機買（客滿可能上不了車），下次修訂該頁時順手改。
+## 狀態（較新）
+- cape-soya：驗收中（SHA 2f66c891… 查核 a28de18de4d6fcefe、讀者 a65cd17b9b528adb8）；潤稿者 aeb22e57395110ff0
+- sounkyo：潤稿 add5f0c4302e029ba（作者 abf0199e03725c34a）
+- wakkanai-sights：比對 ad7920ca484ce9de6（潤稿 abdd1ed55afbd578e）
+- rebun-island：比對 a1a4c0bcc015dddc9（潤稿 a81c64603dac778d6）
+- rishiri-island：比對 a029a5288dae21103（潤稿 a48d938729835748e）
+- 潤稿中：asahidake-or-sounkyo ac02eef9ef0327faf、wakkanai a60a2ab8af958df12、higashikawa ae0a5643b9fe65df3
+- 重寫中：asahidake a56f2b494c6840187、asahikawa a499adddf44d05094
+- replace-body.mjs 已修同一頁重複連結（countLinks），測試 7 項通過，未 commit
+- rishiri-island：驗收中（SHA c0071c65… 查核 a97eb468f29f03978、讀者 ae49d76fc40333e65）
+- asahidake：潤稿 a860a908455a62208（作者 a56f2b494c6840187）
+- wakkanai：比對 ab36a973ab65e1b4b（潤稿 a60a2ab8af958df12）
+- wakkanai-sights：驗收中（SHA cd5fc58b… 查核 a90c180d6940966ed、讀者 a750c061676af4963）
+- rebun-island：潤稿者 a81c64603dac778d6 修 2 不可接受＋2 舊問題
+- cape-soya：讀者第一階段完成（必修 3：一天 4 來回但表只列 2 班、11 月封閉日期前後不一、60 分鐘算不攏），等查核
+- asahikawa：潤稿 a28ed89301b73b85d；higashikawa：比對 ae967fde67e6bcefc
+- glossary Taisetsu Liner 說明再改為「可網路預約、旭川站前也能現場買票」
+- wakkanai：驗收中（SHA ed355fb8… 查核 a139c76ce25b691d9、讀者 a0a6b06dbbf8dced4）
+- rebun-island：驗收中（SHA 25faf880… 查核 a9d47e7b8613e8d74、讀者 aaf5d0788a52ba7cf）
+- sounkyo：比對 a90550d3c08978fd4（潤稿 add5f0c4302e029ba）
+- asahidake-or-sounkyo：比對 ace223e21eac18ad7（潤稿 ac02eef9ef0327faf）
+- rishiri-island：讀者第一階段完成（必修 4），等查核 a97eb468f29f03978
+- sounkyo：驗收中（SHA 873f8954… 查核 a55b9cc8797695a0d、讀者 a038accde5ef9dca1）
+- higashikawa：驗收中（SHA 4c6adb6d… 查核 ab03211bb3a6eb689、讀者 a4e8f8f210172e12e）
+- asahidake：比對 a957507ecfd9d0ee7（潤稿 a860a908455a62208）
+- asahikawa：比對 a98c0673b7747571f（潤稿 a28ed89301b73b85d）
+- asahidake-or-sounkyo：潤稿者 ac02eef9ef0327faf 修 1+3 處中
+- 讀者第一階段完成：wakkanai-sights（7 必修）、wakkanai（3）、rebun-island（4）、rishiri-island（4）、cape-soya（3）
+- asahidake-or-sounkyo：驗收中（SHA c9d0cc35… 查核 ae46ef7df45c3677b、讀者 a42e6c2a3ccc47ad2）
+- asahidake：潤稿者 a860a908455a62208 修舊問題 3 處中
+- higashikawa：讀者第一階段完成（4 必修）
+- asahidake：驗收中（SHA 7464721e… 查核 a9355dcb70ad7a74e、讀者 a786b316d92336568）
+- asahikawa：驗收中（SHA 4f5cb9ce… 查核 a9b6533b3296b36d3、讀者 ace8758869870f071）
+- cape-soya：讀者第二階段 a65cd17b9b528adb8（查核 89/89 完成）
+=> 第 3 批 10 篇全部進入驗收
+- asahidake 修稿時告訴作者：纜車 11/16～12/10 停駛是每年的季節停駛整備，不算臨時停機，照讀者必修寫明 2026 年的日期。
+## 狀態快照（2026-11-02）
+- 已換上 Sanity（第 3 批）：cape-soya、rishiri-island、wakkanai-sights（未推 main）
+- 複查＋最終判定中：wakkanai（SHA 758d2100…，查核 a139c76ce25b691d9、讀者 a0a6b06dbbf8dced4；大綱連結已同步，新增 wakkanai→cape-soya-transport）、higashikawa（SHA 86e1b5b8…，查核 ab03211bb3a6eb689、讀者 a4e8f8f210172e12e）
+- 修稿中：rebun-island（作者 a0573e19ec76787ef；查核 a9d47e7b8613e8d74、讀者 aaf5d0788a52ba7cf）
+- 讀者第二階段：sounkyo（a038accde5ef9dca1；查核 a55b9cc8797695a0d；作者 abf0199e03725c34a）、asahikawa（ace8758869870f071；查核 a9b6533b3296b36d3；作者 a499adddf44d05094）、asahidake（a786b316d92336568；查核 a9355dcb70ad7a74e；作者 a56f2b494c6840187）
+- 查核中：asahidake-or-sounkyo（ae46ef7df45c3677b；讀者 a42e6c2a3ccc47ad2 第一階段完成；作者 a0f5579fa98bc5f6c）
+- glossary：北の桜守 改成已查證台灣片名；Taisetsu Liner 說明更新
