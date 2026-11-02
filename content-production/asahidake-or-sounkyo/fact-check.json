@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "asahidake-or-sounkyo",
-  "articleSha256": "c9d0cc3546ca8432e59140c8ecc8422ecea7ea96994c0d84661f964282b0f68c",
-  "checker": "事實查核 agent（Claude Opus 5.5 子代理，未參與本篇寫作、潤稿與修改；2026-11-02 以 curl 實際打開各來源，道北巴士官網連不上改用 Internet Archive 存檔與層雲峽觀光協會轉貼表）",
+  "articleSha256": "703c2d7b29a84ff27b39340471f253b3d7f532899e474924073bc5e00eb24c4b",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，未參與本篇寫作、潤稿與修改；2026-11-02 以 curl 實際打開各來源；同日第2輪複查改過與新增的句子，道北巴士官網連不上改用 Internet Archive 存檔與層雲峽觀光協會轉貼表）",
   "checkedAt": "2026-11-02",
   "claims": [
     {
@@ -61,24 +61,33 @@
     },
     {
       "claimId": "C7",
-      "articleExcerpt": "夏天還可以從黑岳那一側上山、一路走到旭岳纜車，黑岳纜車官網寫的是約7小時。",
+      "articleExcerpt": "夏天還可以從黑岳那一側上山、一路走到旭岳纜車，約7到9小時。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
       "sourceTitle": "登山情報｜【公式】大雪山層雲峡・黒岳ロープウェイ",
       "sourceQuote": "黒岳7合目登山口～旭岳ロープウェイ姿見駅 約7時間",
       "verdict": "verified",
-      "notes": ""
+      "notes": "8～9小時見協議會回程巴士傳單「黒岳⇔旭岳縦走標準コースタイム８～９時間」"
     },
     {
       "claimId": "C8",
-      "articleExcerpt": "旭岳溫泉是散在樹林裡的幾間旅館；表格「沒有溫泉街，住宿分散在樹林裡」",
-      "sourceUrl": "https://www.welcome-higashikawa.jp/onsen",
-      "sourceTitle": "旭岳・天人峡温泉 | ようこそ東川",
-      "sourceQuote": "旭岳温泉には温泉街はなく、景観を配慮して建てられた宿泊施設は高さ制限があり、建物間もある一定の距離を保ってゆったりとした雰囲気が特徴です。",
-      "verdict": "unsupported",
-      "notes": "官方只寫沒有溫泉街、住宿有高度限制、彼此保持距離；「樹林裡」在東川町觀光協會旭岳頁、溫泉頁、遊客中心、纜車官網都找不到。改成「沒有溫泉街，幾間旅館彼此隔開一段距離」即可"
+      "articleExcerpt": "走完人在旭岳那一側，當天要回層雲峽得趕上旭岳14:55發的Ideyu號，或搭2026年夏天指定日的回程巴士。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/wp-content/uploads/2026/07/3d085f94b250bb1cec1b35928c73561b.jpg",
+      "sourceTitle": "大雪山黒岳⇔旭岳 縦走リターンBUS チラシ（大雪山国立公園連絡協議会 2026-07-23 掲載）",
+      "sourceQuote": "黒岳⇔旭岳縦走ルートを繋ぐ出発地への送迎サービス｜無料乗車券｜運行日程（○は運行日）",
+      "verdict": "verified",
+      "notes": "14:55→旭川16:33轉18:25道北巴士20:24到層雲峽（旭川電氣軌道、道北巴士時刻表）；16:55那班趕不上當天末班"
     },
     {
       "claimId": "C9",
+      "articleExcerpt": "旭岳溫泉沒有溫泉街，幾間旅館彼此隔開一段距離；表格「沒有溫泉街，幾間旅館彼此隔開一段距離」",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/onsen",
+      "sourceTitle": "旭岳・天人峡温泉 | ようこそ東川",
+      "sourceQuote": "旭岳温泉には温泉街はなく、景観を配慮して建てられた宿泊施設は高さ制限があり、建物間もある一定の距離を保ってゆったりとした雰囲気が特徴です。",
+      "verdict": "verified",
+      "notes": "複查：第1輪 unsupported 的「樹林裡」已刪"
+    },
+    {
+      "claimId": "C10",
       "articleExcerpt": "層雲峽則是一整條溫泉街；表格「大雪山系最大的溫泉街，旅館集中在街上」",
       "sourceUrl": "https://sounkyo.net/view/",
       "sourceTitle": "観る｜層雲峡観光協会",
@@ -87,16 +96,16 @@
       "notes": ""
     },
     {
-      "claimId": "C10",
-      "articleExcerpt": "旭岳的纜車停得比較高，一下車就是火口池。",
+      "claimId": "C11",
+      "articleExcerpt": "旭岳的纜車停得比較高，一下車就是姿見池園地，舊火口姿見池就在散策路上。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e5%a7%bf%e8%a6%8b%e3%81%ae%e6%b1%a0%e5%9c%92%e5%9c%b0/",
       "sourceTitle": "姿見の池園地 - 大雪山国立公園連絡協議会",
       "sourceQuote": "噴煙を上げる地獄谷、かつての噴火口である姿見の池や夫婦池",
       "verdict": "verified",
-      "notes": "姿見站約1,600公尺（纜車官網）、黑岳五合目1,300公尺（黑岳纜車官網），旭岳較高成立。姿見站一帶是姿見の池園地，舊火口姿見の池在散策路上；「一下車就是」是口語，讀者驗收可考慮改成「下車就是姿見池園地」"
+      "notes": "姿見站約1,600公尺（纜車官網）、黑岳五合目1,300公尺（黑岳纜車官網），旭岳較高成立；姿見の池園地與散策路見協議會與纜車官網"
     },
     {
-      "claimId": "C11",
+      "claimId": "C12",
       "articleExcerpt": "表格：Ideyu號一天4班，約1小時48分",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
       "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
@@ -105,7 +114,7 @@
       "notes": "7:15→9:03 為1小時48分；2025年10月1日改正時刻表，4往復"
     },
     {
-      "claimId": "C12",
+      "claimId": "C13",
       "articleExcerpt": "表格：道北巴士直達一天7班，1小時59分",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -114,7 +123,7 @@
       "notes": "車程另見 tourbooking 道北巴士商品頁「所要時間 1時間59分」；道北巴士官網 dohokubus.com 2026-11-02 仍連不上，用 Internet Archive 2026-10-08 存檔，層雲峽觀光協會交通頁貼的是同一張 2026.7.1 改正表"
     },
     {
-      "claimId": "C13",
+      "claimId": "C14",
       "articleExcerpt": "表格：旭川站前發的末班 旭岳14:15發、16:03到；層雲峽18:25發、20:24到",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
       "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
@@ -123,7 +132,7 @@
       "notes": "層雲峽：道北巴士時刻表 18:25 發 20:24 著"
     },
     {
-      "claimId": "C14",
+      "claimId": "C15",
       "articleExcerpt": "表格：巴士單程車資 旭岳大人2,300日圓",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
       "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
@@ -132,7 +141,7 @@
       "notes": "2026年9月1日改定運賃"
     },
     {
-      "claimId": "C15",
+      "claimId": "C16",
       "articleExcerpt": "表格：巴士單程車資 層雲峽大人2,140日圓",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -141,7 +150,7 @@
       "notes": ""
     },
     {
-      "claimId": "C16",
+      "claimId": "C17",
       "articleExcerpt": "表格：旭岳纜車，約1,100公尺上到約1,600公尺的姿見站，單程約10分",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -150,7 +159,7 @@
       "notes": "山麓1,100公尺見東川町觀光協會「旭岳温泉は標高1,100ｍ地点にあり、終点には旭岳ロープウェイがあります」"
     },
     {
-      "claimId": "C17",
+      "claimId": "C18",
       "articleExcerpt": "表格：黑岳纜車，670公尺上到1,300公尺的五合目，約7分，再轉吊椅到1,520公尺的七合目",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
       "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -159,7 +168,7 @@
       "notes": ""
     },
     {
-      "claimId": "C18",
+      "claimId": "C19",
       "articleExcerpt": "表格：旭岳纜車大人來回 6/1～10/31 3,500日圓，11/1～5/31 2,800日圓，含稅",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -168,7 +177,7 @@
       "notes": ""
     },
     {
-      "claimId": "C19",
+      "claimId": "C20",
       "articleExcerpt": "表格：黑岳纜車大人來回 3,000日圓，到2027/5/31",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
       "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -177,7 +186,7 @@
       "notes": ""
     },
     {
-      "claimId": "C20",
+      "claimId": "C21",
       "articleExcerpt": "表格：姿見池散策路一圈約1小時、約1.7公里，6月～10月中旬；選旭岳要看月份，散策路只在6月到10月中旬開放",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -186,7 +195,7 @@
       "notes": ""
     },
     {
-      "claimId": "C21",
+      "claimId": "C22",
       "articleExcerpt": "表格：五合目一圈約30分，七合目單程約15分的步道",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/sightseeing/",
       "sourceTitle": "見どころ｜【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -195,7 +204,7 @@
       "notes": ""
     },
     {
-      "claimId": "C22",
+      "claimId": "C23",
       "articleExcerpt": "表格：吃飯與現金 旭岳 纜車山麓站的食堂、賣店與一家便利商店，周邊沒有ATM；能吃飯的地方主要是纜車山麓站的食堂、賣店，加上La Vista大雪山的便利商店",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
       "sourceTitle": "Q＆A | 旭岳ビジターセンター",
@@ -204,7 +213,7 @@
       "notes": ""
     },
     {
-      "claimId": "C23",
+      "claimId": "C24",
       "articleExcerpt": "周邊沒有銀行與郵局，最近的ATM開車要30到40分鐘，所以現金在出發前就要備齊。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
       "sourceTitle": "Q＆A | 旭岳ビジターセンター",
@@ -213,7 +222,7 @@
       "notes": ""
     },
     {
-      "claimId": "C24",
+      "claimId": "C25",
       "articleExcerpt": "表格：層雲峽溫泉街有多家餐廳，冬天晚上還開的只剩3家；到了冬天，晚上還開著的就剩少數幾家",
       "sourceUrl": "https://sounkyo.net/eat/",
       "sourceTitle": "食す｜層雲峡観光協会",
@@ -222,7 +231,7 @@
       "notes": "逐家打開觀光協會「食す」裡層雲峽各店詳細頁（content=32、33、34、75、91、35、79）：晚上有營業的只有 Beer Grill Canyon、大雪山食堂、飯店大雪的 Bakery Café & Bar；Tree Bird 5～10月左右、登山軒11～5月休業；Tomochan食堂與 Black Mountain Coffee 只有白天"
     },
     {
-      "claimId": "C25",
+      "claimId": "C26",
       "articleExcerpt": "沿著姿見池散策路走，可以看到冒著煙的地獄谷、舊火口姿見池與夫婦池，運氣好還會遇到花栗鼠。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e5%a7%bf%e8%a6%8b%e3%81%ae%e6%b1%a0%e5%9c%92%e5%9c%b0/",
       "sourceTitle": "姿見の池園地 - 大雪山国立公園連絡協議会",
@@ -231,7 +240,7 @@
       "notes": ""
     },
     {
-      "claimId": "C26",
+      "claimId": "C27",
       "articleExcerpt": "層雲峽的黑岳纜車只到五合目，再往上要轉吊椅，山頂還得自己爬。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
       "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -240,7 +249,7 @@
       "notes": ""
     },
     {
-      "claimId": "C27",
+      "claimId": "C28",
       "articleExcerpt": "從七合目登山口爬到黑岳山頂，上行約1個半小時。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
       "sourceTitle": "登山情報｜【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -249,8 +258,8 @@
       "notes": ""
     },
     {
-      "claimId": "C28",
-      "articleExcerpt": "日歸溫泉黑岳之湯5月到10月開到22:00，11月到4月開到21:30。",
+      "claimId": "C29",
+      "articleExcerpt": "不住宿也能泡的黑岳之湯5月到10月開到22:00，11月到4月開到21:30。",
       "sourceUrl": "https://sounkyo.net/stay/detail.html?content=25",
       "sourceTitle": "【層雲峡】黒岳の湯（日帰り入浴のみ）｜層雲峡観光協会",
       "sourceQuote": "5月1日～10月31日 10時～22時00分 （最終受付は21時30分まで) 11月1日～4月30日 11時～21時30分 (最終受付は21時まで)",
@@ -258,7 +267,7 @@
       "notes": "年末年始12/31～1/3另為11:00～18:00，正文沒寫，不影響這句"
     },
     {
-      "claimId": "C29",
+      "claimId": "C30",
       "articleExcerpt": "只有一天…搭纜車約10分鐘就到姿見站，散策路一圈約1小時，不用登山也看得到火口池。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -267,7 +276,7 @@
       "notes": ""
     },
     {
-      "claimId": "C30",
+      "claimId": "C31",
       "articleExcerpt": "從旭川當天來回也可以，去程搭7:15或9:15發的Ideyu號。回程搭旭岳14:55或16:55發的車，16:33或18:33回到旭川。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
       "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
@@ -276,7 +285,7 @@
       "notes": ""
     },
     {
-      "claimId": "C31",
+      "claimId": "C32",
       "articleExcerpt": "往旭岳的Ideyu號末班14:15就開走，往層雲峽的道北巴士一天7班，末班到18:25才發車。",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -285,7 +294,7 @@
       "notes": "いで湯號末班14:15見旭川電氣軌道時刻表"
     },
     {
-      "claimId": "C32",
+      "claimId": "C33",
       "articleExcerpt": "入選日本瀑布百選的銀河瀑布與流星瀑布全年開放，也不收費。",
       "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
       "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
@@ -294,8 +303,8 @@
       "notes": ""
     },
     {
-      "claimId": "C33",
-      "articleExcerpt": "2026年10月2日旭岳初冠雪，當天姿見站早上-1℃，路面部分結冰、積雪。",
+      "claimId": "C34",
+      "articleExcerpt": "2026年10月2日旭岳山頂第一次積雪，當天姿見站早上-1℃，路面部分結冰、積雪。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
       "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
       "sourceQuote": "10/2 旭岳では初冠雪を観測しました。｜気温：－1℃｜姿見の池へ向かう散策路や階段は一部凍結して、積雪で散策路が見えません。",
@@ -303,7 +312,7 @@
       "notes": ""
     },
     {
-      "claimId": "C34",
+      "claimId": "C35",
       "articleExcerpt": "大雪山9月隨時可能下雪，上姿見要帶保暖外套。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
@@ -312,7 +321,7 @@
       "notes": ""
     },
     {
-      "claimId": "C35",
+      "claimId": "C36",
       "articleExcerpt": "大雪山的紅葉從山頂一路往下染，從黑岳山頂開始變色到層雲峽溫泉街轉紅，前後差了將近一個月。",
       "sourceUrl": "https://sounkyovc.net/blog/92540",
       "sourceTitle": "層雲峡温泉街、紅葉見頃に | 層雲峡ビジターセンター",
@@ -321,7 +330,7 @@
       "notes": "黑岳山頂9月上旬（黑岳纜車「山頂付近は9月上旬頃から紅葉し始めます」）到溫泉街10月初，約4週，「將近一個月」成立"
     },
     {
-      "claimId": "C36",
+      "claimId": "C37",
       "articleExcerpt": "紅葉季過後，旭岳纜車2026年11月16日到12月10日停駛整備，這段時間上不了姿見。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -330,7 +339,7 @@
       "notes": "每年固定的秋季停駛整備，不是臨時停機"
     },
     {
-      "claimId": "C37",
+      "claimId": "C38",
       "articleExcerpt": "黑岳纜車2026年是11月9日到30日停駛，和旭岳重疊的11月16日到30日兩邊都上不了山。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
       "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -339,7 +348,7 @@
       "notes": "重疊期間用兩邊官網日期重算，11/16～11/30 成立"
     },
     {
-      "claimId": "C38",
+      "claimId": "C39",
       "articleExcerpt": "紅葉表：黑岳山頂附近 9月上旬開始變色",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/about/",
       "sourceTitle": "ロープウェイ・リフトについて｜【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -348,7 +357,7 @@
       "notes": ""
     },
     {
-      "claimId": "C39",
+      "claimId": "C40",
       "articleExcerpt": "紅葉表：旭岳姿見一帶 9月中旬～下旬，之後一天天往下移到旭岳溫泉",
       "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
       "sourceTitle": "旭岳 | ようこそ東川",
@@ -357,7 +366,7 @@
       "notes": ""
     },
     {
-      "claimId": "C40",
+      "claimId": "C41",
       "articleExcerpt": "紅葉表：赤岳銀泉台 9月中旬高峰，紅葉期有自用車管制；赤岳銀泉台離層雲峽開車約50分鐘，但紅葉期有自用車管制",
       "sourceUrl": "https://sounkyo.net/view/detail.html?content=9",
       "sourceTitle": "【大雪山】赤岳銀泉台｜層雲峡観光協会",
@@ -366,16 +375,16 @@
       "notes": ""
     },
     {
-      "claimId": "C41",
-      "articleExcerpt": "紅葉表：層雲峽溫泉街 2026年10月初轉紅，最美的時候到10月12日體育節連假前後",
+      "claimId": "C42",
+      "articleExcerpt": "紅葉表：層雲峽溫泉街 2026年10月初轉紅，預估最美的時候到10月12日體育節連假前後",
       "sourceUrl": "https://sounkyovc.net/blog/92540",
       "sourceTitle": "層雲峡温泉街、紅葉見頃に | 層雲峡ビジターセンター",
       "sourceQuote": "十月に入り、層雲峡の温泉街まで下ってきました。この後二・三日で色づきのピークを迎え「スポーツの日」の三連休ころまで見頃期が続くと予想されます。（2026年10月1日）",
       "verdict": "verified",
-      "notes": "原文是10/1的預測（予想されます）；2026年體育節是10/12、三連休10/10～12。表格加「前後」語氣可接受，讀者驗收可考慮寫成「預估」"
+      "notes": "原文是10/1的預測（予想されます），正文已寫「預估」；2026年體育節是10/12"
     },
     {
-      "claimId": "C42",
+      "claimId": "C43",
       "articleExcerpt": "紅葉表：天人峽 10月初旬",
       "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide",
       "sourceTitle": "エリア案内 | ようこそ東川",
@@ -384,7 +393,7 @@
       "notes": ""
     },
     {
-      "claimId": "C43",
+      "claimId": "C44",
       "articleExcerpt": "只是旭岳遊客中心也提醒，姿見最漂亮的時候每年前後差很多。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
       "sourceTitle": "Q＆A | 旭岳ビジターセンター",
@@ -393,7 +402,7 @@
       "notes": ""
     },
     {
-      "claimId": "C44",
+      "claimId": "C45",
       "articleExcerpt": "旭岳滑雪路線從12月開到5月，觀光協會說是全日本開放最久的。",
       "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
       "sourceTitle": "旭岳 | ようこそ東川",
@@ -402,7 +411,7 @@
       "notes": ""
     },
     {
-      "claimId": "C45",
+      "claimId": "C46",
       "articleExcerpt": "黑岳滑雪場2026到2027年這一季預定12月1日開幕、5月5日結束，實際哪天開還要看積雪。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/information/02/p0053.htm",
       "sourceTitle": "黒岳スキー場OPEN予定日について｜大雪山層雲峡・黒岳ロープウェイ",
@@ -411,7 +420,7 @@
       "notes": "5/5見黑岳纜車首頁「〈2026-2027スキー場営業時間〉12月1日～5月5日(予定）」"
     },
     {
-      "claimId": "C46",
+      "claimId": "C47",
       "articleExcerpt": "不滑雪也可以去層雲峽看冰瀑祭，2027年是1月23日到3月7日。",
       "sourceUrl": "https://sounkyo.net/hyoubaku/",
       "sourceTitle": "層雲峡温泉 氷瀑まつり-北海道層雲峡観光協会",
@@ -420,7 +429,7 @@
       "notes": ""
     },
     {
-      "claimId": "C47",
+      "claimId": "C48",
       "articleExcerpt": "車資加起來4,440日圓。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
       "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
@@ -429,7 +438,7 @@
       "notes": "2,300＋道北巴士層雲峽～旭川2,140＝4,440 日圓"
     },
     {
-      "claimId": "C48",
+      "claimId": "C49",
       "articleExcerpt": "Ideyu號在9號乘車處上下車",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
       "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
@@ -438,7 +447,7 @@
       "notes": "旭川電氣軌道站前乘車處圖（2026年5月10日改定）9號「旭川空港・旭岳・富良野行」；時刻表去回都標「旭川駅（のりば9）」"
     },
     {
-      "claimId": "C49",
+      "claimId": "C50",
       "articleExcerpt": "道北巴士在8號乘車處上車，下車則在標著「降」的下車處。",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -447,7 +456,7 @@
       "notes": ""
     },
     {
-      "claimId": "C50",
+      "claimId": "C51",
       "articleExcerpt": "旭川站前巴士總站Bus Touch（バスタッチ）",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -456,16 +465,16 @@
       "notes": ""
     },
     {
-      "claimId": "C51",
-      "articleExcerpt": "Ideyu號可以用Asaca與DoCARD兩種IC卡，買票的話來回要買兩張，沒有來回折扣。",
+      "claimId": "C52",
+      "articleExcerpt": "Ideyu號能刷的IC卡是旭川當地的Asaca與DoCARD，也可以先在旭川電氣軌道綜合案內所或旭川機場的售票機買票，來回要買兩張，沒有來回折扣。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
       "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
-      "sourceQuote": "使用可能なICカード ・Asaca（旭川電気軌道）・DoCARD（道北バス）｜往復でご利用の方はきっぷを2枚ご購入ください（往復割引はございません）",
+      "sourceQuote": "使用可能なICカード ・Asaca（旭川電気軌道）・DoCARD（道北バス）｜下記の場所に設置の券売機にて乗車券を事前に購入できます。・旭川電気軌道総合案内所・旭川空港｜往復でご利用の方はきっぷを2枚ご購入ください（往復割引はございません）",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C52",
+      "claimId": "C53",
       "articleExcerpt": "往層雲峽另有從上川出發的班次，上川到層雲峽約30分。",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -474,7 +483,7 @@
       "notes": "上川～層雲峽所要30分另見道北巴士商品頁"
     },
     {
-      "claimId": "C53",
+      "claimId": "C54",
       "articleExcerpt": "層雲峽往旭岳轉乘表（6:20/7:30/10:10/11:30 → 旭川8:15/9:25/12:05/13:25 → Ideyu 9:15/12:15/12:15/14:15 → 旭岳11:03/14:03/14:03/16:03）",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -483,7 +492,7 @@
       "notes": "Ideyu旭川站發7:15、9:15、12:15、14:15，到旭岳9:03、11:03、14:03、16:03（旭川電氣軌道）；每列接最早一班重算一致"
     },
     {
-      "claimId": "C54",
+      "claimId": "C55",
       "articleExcerpt": "層雲峽往旭岳轉得最順的是10:10那班，在旭川只等10分鐘，全程3小時53分。7:30那班到旭川後要一路等到12:15，抵達旭岳的時間跟10:10那班一樣",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -492,7 +501,7 @@
       "notes": "12:05→12:15 等10分；10:10→14:03 為3小時53分；7:30→9:25，9:15已開，下一班12:15，同樣14:03到"
     },
     {
-      "claimId": "C55",
+      "claimId": "C56",
       "articleExcerpt": "旭岳往層雲峽轉乘表（9:55/11:55/14:55/16:55 → 旭川11:33/13:33/16:33/18:33 → 道北13:25/14:25/18:25/當天沒有車 → 層雲峽15:24/16:24/20:24/到不了）",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -501,7 +510,7 @@
       "notes": "いで湯回程時刻見旭川電氣軌道；逐列重算一致"
     },
     {
-      "claimId": "C56",
+      "claimId": "C57",
       "articleExcerpt": "旭岳14:55那班16:33到旭川，道北巴士16:35就開，趕上的話18:34就到層雲峽。不過只差2分鐘、乘車處又不同",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -510,7 +519,7 @@
       "notes": "いで湯在9號下車、道北在8號上車"
     },
     {
-      "claimId": "C57",
+      "claimId": "C58",
       "articleExcerpt": "冬天搭這班20:24才到層雲峽，溫泉街還開著的餐廳不多，大雪山食堂開到20:30。",
       "sourceUrl": "https://sounkyo.net/eat/detail.html?content=34",
       "sourceTitle": "【層雲峡】大雪山食堂｜層雲峡観光協会",
@@ -519,7 +528,7 @@
       "notes": ""
     },
     {
-      "claimId": "C58",
+      "claimId": "C59",
       "articleExcerpt": "16:55那班回到旭川時，往層雲峽的末班車已經開走，當天就到不了。",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -528,8 +537,8 @@
       "notes": "16:55發18:33到旭川，晚於18:25"
     },
     {
-      "claimId": "C59",
-      "articleExcerpt": "自己開車的話，旭岳纜車官網寫的時間是約2小時30分。",
+      "claimId": "C60",
+      "articleExcerpt": "自己開車約2小時30分。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
       "sourceQuote": "層雲峡温泉｜2時間30分",
@@ -537,7 +546,7 @@
       "notes": ""
     },
     {
-      "claimId": "C60",
+      "claimId": "C61",
       "articleExcerpt": "旭岳纜車的停車場11月到5月免費，其他月份普通車一天500日圓。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -546,7 +555,7 @@
       "notes": ""
     },
     {
-      "claimId": "C61",
+      "claimId": "C62",
       "articleExcerpt": "最緊的排法：從旭川站前搭7:15的Ideyu號，9:03到旭岳。接著搭11:55的車回旭川，轉14:25的道北巴士，16:24到層雲峽。",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -555,8 +564,8 @@
       "notes": "いで湯7:15→9:03、11:55→13:33（旭川電氣軌道）；13:33到旭川可轉14:25"
     },
     {
-      "claimId": "C62",
-      "articleExcerpt": "這段時間夠搭纜車上姿見站、走完一圈約1小時的散策路，但沒有時間登旭岳山頂。",
+      "claimId": "C63",
+      "articleExcerpt": "散策路開放的6月到10月中旬，這段時間夠搭纜車上姿見站、走完一圈約1小時的散策路，但沒有時間登旭岳山頂。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/grades/",
       "sourceTitle": "大雪山グレード - 大雪山国立公園連絡協議会",
       "sourceQuote": "（姿見～旭岳山頂）コースタイム 姿見駅舎より 登り２時間50分 下り２時間05分",
@@ -564,7 +573,7 @@
       "notes": "9:03到11:55發約2小時52分；纜車單程約10分＋散策1小時可行，登頂來回約5小時不可行。路線時間見協議會旭岳頁"
     },
     {
-      "claimId": "C63",
+      "claimId": "C64",
       "articleExcerpt": "反過來先住層雲峽的話，隔天搭10:10的巴士，14:03到旭岳",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -573,7 +582,7 @@
       "notes": "轉いで湯12:15→14:03"
     },
     {
-      "claimId": "C64",
+      "claimId": "C65",
       "articleExcerpt": "2026年10月21日起纜車上行末班是15:40，14:03到站只剩約1個半小時。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -582,7 +591,7 @@
       "notes": "10月月曆21日起為A（9:00～16:00）；14:03到15:40為1小時37分"
     },
     {
-      "claimId": "C65",
+      "claimId": "C66",
       "articleExcerpt": "夏天的營業時間比較寬，7月到9月開到17:30；2026年7月到9月纜車營業到17:30。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -591,7 +600,7 @@
       "notes": ""
     },
     {
-      "claimId": "C66",
+      "claimId": "C67",
       "articleExcerpt": "三天兩夜第一天：旭川站前7:15或9:15搭Ideyu號，9:03或11:03到旭岳",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
       "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
@@ -600,7 +609,7 @@
       "notes": ""
     },
     {
-      "claimId": "C67",
+      "claimId": "C68",
       "articleExcerpt": "第二天：旭岳9:55或11:55發，在旭川轉道北巴士，15:24或16:24到層雲峽",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -609,7 +618,7 @@
       "notes": "いで湯9:55→11:33、11:55→13:33"
     },
     {
-      "claimId": "C68",
+      "claimId": "C69",
       "articleExcerpt": "第三天：下午搭13:30或14:40發的道北巴士回旭川，15:25或16:35到。",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -618,7 +627,7 @@
       "notes": ""
     },
     {
-      "claimId": "C69",
+      "claimId": "C70",
       "articleExcerpt": "黑岳到旭岳的縱走是一日路線，從層雲峽搭黑岳纜車、吊椅上到七合目，一路走到旭岳纜車的姿見站，再搭纜車下到旭岳溫泉。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/grades/",
       "sourceTitle": "大雪山グレード - 大雪山国立公園連絡協議会",
@@ -627,7 +636,7 @@
       "notes": ""
     },
     {
-      "claimId": "C70",
+      "claimId": "C71",
       "articleExcerpt": "大雪山國立公園連絡協議會公告的2026年回程巴士傳單，寫的則是黑岳⇔旭岳的標準路線時間8到9小時，並提醒時間抓寬一點。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/wp-content/uploads/2026/07/3d085f94b250bb1cec1b35928c73561b.jpg",
       "sourceTitle": "大雪山黒岳⇔旭岳 縦走リターンBUS チラシ（大雪山国立公園連絡協議会 2026-07-23 掲載）",
@@ -636,8 +645,8 @@
       "notes": "傳單由協議會2026-07-23公告頁連結"
     },
     {
-      "claimId": "C71",
-      "articleExcerpt": "最後從旭岳下到姿見這一段有碎石坡，也是沒有遮蔽、強風直吹的風衝地，天氣一變能見度很快就變差。起濃霧時從旭岳下山容易迷路，過去也發生過山難。",
+      "claimId": "C72",
+      "articleExcerpt": "最後從旭岳下到姿見這一段有碎石坡，沒有遮蔽、強風直吹，天氣一變能見度很快就變差。起濃霧時從旭岳下山容易迷路，過去也發生過山難。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/grades/",
       "sourceTitle": "大雪山グレード - 大雪山国立公園連絡協議会",
       "sourceQuote": "この区間は、ガレ場も出てくる風衝地です。…悪天時には視界が著しく悪化しルート判別が難しくなります。そのため、濃霧になると旭岳からの下山時にルートを見失いやすく、遭難事故も発生しています",
@@ -645,7 +654,7 @@
       "notes": ""
     },
     {
-      "claimId": "C72",
+      "claimId": "C73",
       "articleExcerpt": "2026年黑岳吊椅的夏季營業是6月27日到10月15日。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
       "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -654,7 +663,7 @@
       "notes": ""
     },
     {
-      "claimId": "C73",
+      "claimId": "C74",
       "articleExcerpt": "但大雪山10月初山頂一帶就會積雪、登山道被雪埋住，只帶夏季登山裝備能走的時間大約只到9月。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
@@ -663,7 +672,7 @@
       "notes": "「大約只到9月」是依此推論；黑岳纜車2026-10-25也公告五合目以上積雪、夏山裝備不能登山"
     },
     {
-      "claimId": "C74",
+      "claimId": "C75",
       "articleExcerpt": "同一年黑岳纜車更換車廂，6月26日前停駛，協議會也提醒那段時間縱走改走別的路線。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/%e3%80%90%e9%bb%92%e5%b2%b3%ef%bd%9e%e6%97%ad%e5%b2%b3%e7%b8%a6%e8%b5%b0%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e3%80%91mt-kurodake%ef%bd%9emt-asahidake-traverse/",
       "sourceTitle": "【黒岳～旭岳縦走について】Mt.Kurodake～Mt.Asahidake traverse - 大雪山国立公園連絡協議会",
@@ -672,7 +681,7 @@
       "notes": "更換車廂見黑岳纜車官網2026-05-01存檔「6月1日～6月26日 ゴンドラ更新運休」"
     },
     {
-      "claimId": "C75",
+      "claimId": "C76",
       "articleExcerpt": "兩邊的纜車遇到強風都可能停駛",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -681,7 +690,7 @@
       "notes": "黑岳纜車官網2026-11-01運行狀況「終日運休（強風）」"
     },
     {
-      "claimId": "C76",
+      "claimId": "C77",
       "articleExcerpt": "2026年夏季的黑岳纜車6:00、吊椅6:30開始營業。吊椅單程15分，搭首班上去最早大約6:45到七合目。",
       "sourceUrl": "https://web.archive.org/web/20260816173415id_/https://www.rinyu.co.jp/kurodake/",
       "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ（Internet Archive 2026-08-16 存檔）",
@@ -690,7 +699,7 @@
       "notes": "現行頁面只列10/16起的纜車時間，2026夏季用黑岳纜車官網 Internet Archive 2026-08-16 存檔；吊椅「夏山片道15分」見現行首頁；6:30＋15分＝6:45"
     },
     {
-      "claimId": "C77",
+      "claimId": "C78",
       "articleExcerpt": "2026年6月27日到9月30日，兩邊的纜車合賣過一張「TAISETSU縱走PASS」，由大雪Kamuimintara DMO發行，一張4,600日圓含稅。",
       "sourceUrl": "https://taisetsu-kamui.jp/features/30277",
       "sourceTitle": "【TAISETSU縦走PASS 2026好評販売中！】｜北海道まんなか観光ナビ",
@@ -699,7 +708,7 @@
       "notes": ""
     },
     {
-      "claimId": "C78",
+      "claimId": "C79",
       "articleExcerpt": "內容是兩邊纜車的單程，黑岳這一側連吊椅也包在內。",
       "sourceUrl": "https://taisetsu-kamui.jp/cms/wp-content/uploads/2026/05/【縦走パス】券面.jpg",
       "sourceTitle": "TAISETSU縦走PASS 券面（大雪カムイミンタラDMO）",
@@ -708,7 +717,7 @@
       "notes": ""
     },
     {
-      "claimId": "C79",
+      "claimId": "C80",
       "articleExcerpt": "照當年的價格分開買，旭岳纜車夏季單程2,200日圓加黑岳的纜車吊椅套票單程2,400日圓，合計也是4,600日圓。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
       "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -717,7 +726,7 @@
       "notes": "旭岳纜車トップシーズン（6/1～10/31）大人片道2,200円（旭岳纜車官網）；2,200＋2,400＝4,600"
     },
     {
-      "claimId": "C80",
+      "claimId": "C81",
       "articleExcerpt": "PASS的好處在於天氣變差或身體撐不住時，可以改當其中一邊纜車的來回票用。只是它只收現金，任何情況都不退款。",
       "sourceUrl": "https://taisetsu-kamui.jp/features/30277",
       "sourceTitle": "【TAISETSU縦走PASS 2026好評販売中！】｜北海道まんなか観光ナビ",
@@ -726,7 +735,7 @@
       "notes": ""
     },
     {
-      "claimId": "C81",
+      "claimId": "C82",
       "articleExcerpt": "黑岳的纜車吊椅套票單程，2027年6月起會漲到2,800日圓。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/img/fare_table_revised_20270601.jpg",
       "sourceTitle": "2027年6月1日改正 運賃表｜大雪山層雲峡・黒岳ロープウェイ",
@@ -735,7 +744,7 @@
       "notes": "含消費稅"
     },
     {
-      "claimId": "C82",
+      "claimId": "C83",
       "articleExcerpt": "出發前要向北海道警察提交登山計畫書，可以線上提交。到了登山口，另外還有入林登記表（入林屆）要填。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/fieldmanners/",
       "sourceTitle": "フィールドマナー | 旭岳ビジターセンター",
@@ -744,7 +753,7 @@
       "notes": ""
     },
     {
-      "claimId": "C83",
+      "claimId": "C84",
       "articleExcerpt": "沒有常設廁所的地方要用攜帶式廁所，因為自然公園法有規範，不能把排泄物留在登山道上。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/rules/",
       "sourceTitle": "大雪山の保全ルール - 大雪山国立公園連絡協議会",
@@ -753,7 +762,7 @@
       "notes": ""
     },
     {
-      "claimId": "C84",
+      "claimId": "C85",
       "articleExcerpt": "從黑岳出發，纜車五合目的黑岳站是最後一間廁所，吊椅的乘車處、下車處與七合目都沒有。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
       "sourceTitle": "山麓駅・5合目駅｜【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -762,7 +771,7 @@
       "notes": ""
     },
     {
-      "claimId": "C85",
+      "claimId": "C86",
       "articleExcerpt": "途中的黑岳石室夏季有管理人，生質廁所每次付500日圓維護費。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
       "sourceTitle": "登山情報｜【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -771,7 +780,7 @@
       "notes": "有人管理期間見協議會2026-09-28公告（到10/4）"
     },
     {
-      "claimId": "C86",
+      "claimId": "C87",
       "articleExcerpt": "有人管理的期間一結束廁所也跟著關閉，2026年是到10月4日。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/%e3%80%90%e7%99%bd%e9%9b%b2%e5%b2%b3%e9%81%bf%e9%9b%a3%e5%b0%8f%e5%b1%8b%e3%83%bb%e9%bb%92%e5%b2%b3%e7%9f%b3%e5%ae%a4%e3%80%91hakuunrrefuge-hut-kurodake-ishimuro%e6%9c%89%e4%ba%ba%e7%ae%a1%e7%90%86/",
       "sourceTitle": "【白雲岳避難小屋・黒岳石室】有人管理終了日 - 大雪山国立公園連絡協議会",
@@ -780,7 +789,7 @@
       "notes": "廁所隨有人管理結束而關閉見協議會2025-10-06公告「黒岳石室は10/5に有人管理を終了いたしました。また、黒岳石室のトイレも利用できません。」"
     },
     {
-      "claimId": "C87",
+      "claimId": "C88",
       "articleExcerpt": "協議會建議帶上下分開的雨具、刷毛或羽絨保暖衣、紙本地圖、頭燈、熊鈴與防熊噴霧。夏季的水要1.5公升以上，輕冰爪與付廁所維護費的現金也要帶，地圖不能只靠登山App。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
@@ -789,7 +798,7 @@
       "notes": ""
     },
     {
-      "claimId": "C88",
+      "claimId": "C89",
       "articleExcerpt": "大雪山到8月中旬都還有雪溪，9月隨時可能下雪，9月下旬日落約17點。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/info/hiking/safety/",
       "sourceTitle": "安全登山のために - 大雪山国立公園連絡協議会",
@@ -798,7 +807,7 @@
       "notes": ""
     },
     {
-      "claimId": "C89",
+      "claimId": "C90",
       "articleExcerpt": "旭岳遊客中心也提醒，10月到11月容易有人因為裝備不足而出事、遇上山難。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
       "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
@@ -807,7 +816,7 @@
       "notes": ""
     },
     {
-      "claimId": "C90",
+      "claimId": "C91",
       "articleExcerpt": "2026年6月，旭岳往黑岳方向、黑岳石室前一帶有棕熊足跡與目擊紀錄。",
       "sourceUrl": "https://www.asahidake-vc-2291.jp/2026-brownbear/",
       "sourceTitle": "2026年ヒグマ関連情報（10/10更新） | 旭岳ビジターセンター",
@@ -816,7 +825,7 @@
       "notes": "原頁曜日寫（土），2026-06-05 實為星期五，正文沒寫日期，不影響"
     },
     {
-      "claimId": "C91",
+      "claimId": "C92",
       "articleExcerpt": "想分兩天走的人可以住黑岳石室，大人2,000日圓，不接受預約、當天先到先住。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
       "sourceTitle": "登山情報｜【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -825,7 +834,7 @@
       "notes": ""
     },
     {
-      "claimId": "C92",
+      "claimId": "C93",
       "articleExcerpt": "石室不供餐、幾乎沒有手機訊號。水要用雨水，或走到往返約30到40分鐘的北海澤取，兩者都要煮沸。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
       "sourceTitle": "登山情報｜【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -834,7 +843,7 @@
       "notes": ""
     },
     {
-      "claimId": "C93",
+      "claimId": "C94",
       "articleExcerpt": "縱走的最後一段是搭旭岳纜車約10分鐘下到旭岳溫泉。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -843,7 +852,7 @@
       "notes": ""
     },
     {
-      "claimId": "C94",
+      "claimId": "C95",
       "articleExcerpt": "過去有人錯過下行末班，被別人報警，最後當成山難處理。要纜車在營業時間外緊急開一趟，除了車資還要另付費用。",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
@@ -852,7 +861,7 @@
       "notes": ""
     },
     {
-      "claimId": "C95",
+      "claimId": "C96",
       "articleExcerpt": "想從旭岳回層雲峽，路線巴士要經旭川轉車，最晚要搭旭岳14:55發的Ideyu號。16:33到旭川後再轉18:25的道北巴士，20:24到層雲峽。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
       "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
@@ -861,7 +870,7 @@
       "notes": "道北18:25→20:24；16:55那班18:33到旭川已趕不上"
     },
     {
-      "claimId": "C96",
+      "claimId": "C97",
       "articleExcerpt": "照黑岳纜車官網的約7小時算，最早6:45從七合目出發約13:45到姿見站，才趕得上14:55那班。照協議會的8到9小時估，多半趕不上。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
       "sourceTitle": "登山情報｜【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -870,7 +879,7 @@
       "notes": "重算：6:45＋7h＝13:45；＋8h＝14:45，再加纜車約10分與班距，趕不上14:55"
     },
     {
-      "claimId": "C97",
+      "claimId": "C98",
       "articleExcerpt": "趕不上的話…或搭16:55的Ideyu號18:33到旭川住一晚。",
       "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
       "sourceTitle": "66番　旭川空港経由　旭岳線 – 旭川電気軌道株式会社",
@@ -879,7 +888,7 @@
       "notes": ""
     },
     {
-      "claimId": "C98",
+      "claimId": "C99",
       "articleExcerpt": "旭岳溫泉沒有計程車招呼站與租車公司，臨時叫車不容易。",
       "sourceUrl": "https://www.welcome-higashikawa.jp/areaguide/asahidake/",
       "sourceTitle": "旭岳 | ようこそ東川",
@@ -888,7 +897,7 @@
       "notes": ""
     },
     {
-      "claimId": "C99",
+      "claimId": "C100",
       "articleExcerpt": "反方向從旭岳走到黑岳也走得通，只是黑岳纜車公布的約7小時是黑岳往旭岳的方向。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
       "sourceTitle": "登山情報｜【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -897,16 +906,16 @@
       "notes": "回程巴士傳單「黒岳⇔旭岳」兩方向都可"
     },
     {
-      "claimId": "C100",
-      "articleExcerpt": "2026年夏季旭岳纜車週末連假6:00、平日6:30開始營業",
+      "claimId": "C101",
+      "articleExcerpt": "2026年夏季旭岳纜車平日6:30開始營業，7月11日起的週末連假提早到6:00",
       "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
       "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "2026年7月運行スケジュール 1 D 2 D 3 D 4 D 5 D … 11 E 12 E｜D：始発（上り） 6:30am｜E：始発（上り） 6:00am",
-      "verdict": "incorrect",
-      "notes": "7/1～7/10 每天都是 D（6:30），7/4（六）、7/5（日）週末也是6:30；從7/11起週末連假才是 E（6:00），7/13～9/30 平日 D。正文寫成整個夏季週末連假6:00，與官網月曆不一致；改成「7月中旬起週末連假6:00、平日6:30」或「6:00或6:30」即可"
+      "sourceQuote": "2026年7月運行スケジュール 1 D … 10 D 11 E 12 E … 18 E 19 E 20 E … 25 E 26 E｜D：始発（上り） 6:30am｜E：始発（上り） 6:00am",
+      "verdict": "verified",
+      "notes": "複查：逐日核對7～9月月曆，7/1～7/10 全為D；7/11起所有週六日與祝日（7/20、8/11、9/21～23）為E，平日為D（9/24、25為D）"
     },
     {
-      "claimId": "C101",
+      "claimId": "C102",
       "articleExcerpt": "另一頭的黑岳吊椅營業到17:30、纜車到18:00。",
       "sourceUrl": "https://web.archive.org/web/20260816173415id_/https://www.rinyu.co.jp/kurodake/",
       "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ（Internet Archive 2026-08-16 存檔）",
@@ -915,7 +924,7 @@
       "notes": "2026夏季（6/27～9/30）"
     },
     {
-      "claimId": "C102",
+      "claimId": "C103",
       "articleExcerpt": "下山後搭路線巴士，當天回不了旭岳溫泉。從層雲峽搭14:40或17:00的道北巴士，分別在16:35、18:55到旭川。可是旭川往旭岳的Ideyu號末班14:15就發車，接不上。",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -924,7 +933,7 @@
       "notes": "いで湯旭川站末班14:15（旭川電氣軌道）"
     },
     {
-      "claimId": "C103",
+      "claimId": "C104",
       "articleExcerpt": "走完可以當晚住層雲峽，隔天搭10:10的巴士，14:03回到旭岳。",
       "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
       "sourceTitle": "層雲峡・上川線（道北バス、2026.7.1改正、Internet Archive 2026-10-08 存檔）",
@@ -933,7 +942,7 @@
       "notes": "轉いで湯12:15→14:03"
     },
     {
-      "claimId": "C104",
+      "claimId": "C105",
       "articleExcerpt": "2026年夏天另外有免費的縱走回程巴士（縦走リターンBUS），由旭川交通（あさひかわ交通）運行。行駛日是7月中旬到9月下旬的指定日，會把走完全程的人從另一側的纜車載回出發地，兩個方向都能用。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/wp-content/uploads/2026/07/3d085f94b250bb1cec1b35928c73561b.jpg",
       "sourceTitle": "大雪山黒岳⇔旭岳 縦走リターンBUS チラシ（大雪山国立公園連絡協議会 2026-07-23 掲載）",
@@ -942,7 +951,7 @@
       "notes": "傳單月曆：7/18、19、20、25～31，8/1～20、22、23、29、30，9/5、6、12、13、19～23、26、27"
     },
     {
-      "claimId": "C105",
+      "claimId": "C106",
       "articleExcerpt": "要搭回程巴士，就在出發那一側的纜車窗口說要搭縱走回程巴士（縦走バス利用），領一張免費乘車券。窗口開門後收到早上8:00為止，名額20人，先到先登記。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/wp-content/uploads/2026/07/3d085f94b250bb1cec1b35928c73561b.jpg",
       "sourceTitle": "大雪山黒岳⇔旭岳 縦走リターンBUS チラシ（大雪山国立公園連絡協議会 2026-07-23 掲載）",
@@ -951,7 +960,7 @@
       "notes": ""
     },
     {
-      "claimId": "C106",
+      "claimId": "C107",
       "articleExcerpt": "走到另一側的纜車下山後，在指定的乘車處搭16:00發的車，預定18:30回到出發地。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/wp-content/uploads/2026/07/3d085f94b250bb1cec1b35928c73561b.jpg",
       "sourceTitle": "大雪山黒岳⇔旭岳 縦走リターンBUS チラシ（大雪山国立公園連絡協議会 2026-07-23 掲載）",
@@ -960,7 +969,7 @@
       "notes": ""
     },
     {
-      "claimId": "C107",
+      "claimId": "C108",
       "articleExcerpt": "照約7小時走，最晚約8:45從七合目出發，16:00前才下得到另一側的纜車山麓。",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
       "sourceTitle": "登山情報｜【公式】大雪山層雲峡・黒岳ロープウェイ",
@@ -969,7 +978,7 @@
       "notes": "重算：8:45＋7h＝15:45到姿見，纜車約10分下到山麓約15:55"
     },
     {
-      "claimId": "C108",
+      "claimId": "C109",
       "articleExcerpt": "巴士一律準時發車，沒到或打電話說會晚都不等。中途不能下車，額滿就要改搭路線巴士。",
       "sourceUrl": "https://www.daisetsuzan.or.jp/wp-content/uploads/2026/07/3d085f94b250bb1cec1b35928c73561b.jpg",
       "sourceTitle": "大雪山黒岳⇔旭岳 縦走リターンBUS チラシ（大雪山国立公園連絡協議会 2026-07-23 掲載）",
@@ -978,7 +987,7 @@
       "notes": ""
     },
     {
-      "claimId": "C109",
+      "claimId": "C110",
       "articleExcerpt": "回程巴士和縱走PASS是不同的服務，PASS的票根不能當乘車券，買票時要另外說要搭回程巴士。",
       "sourceUrl": "https://taisetsu-kamui.jp/features/30277",
       "sourceTitle": "【TAISETSU縦走PASS 2026好評販売中！】｜北海道まんなか観光ナビ",
@@ -987,7 +996,70 @@
       "notes": ""
     },
     {
-      "claimId": "C110",
+      "claimId": "C111",
+      "articleExcerpt": "想看高山雪景、天氣好時遇上鑽石塵與霧凇，或想玩越野滑雪，選旭岳",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "その時の気象条件によって、「ダイヤモンドダスト」や「サンピラー」、自然の造形物である「霧氷」・「風紋」などを見ることができます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "旭岳溫泉約8公里的越野滑雪路線11月到5月都能用。",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/onsen",
+      "sourceTitle": "旭岳・天人峡温泉 | ようこそ東川",
+      "sourceQuote": "旭岳温泉には11月から5月まで利用できるクロスカントリーコースが整備されており",
+      "verdict": "verified",
+      "notes": "約8公里見東川町觀光協會旭岳頁「旭岳温泉からスタートする全長約8kmのクロスカントリーコース」"
+    },
+    {
+      "claimId": "C113",
+      "articleExcerpt": "想晚上有地方吃飯、順便看冰瀑祭，選層雲峽，只是冬天晚上還開的餐廳只剩3家。",
+      "sourceUrl": "https://sounkyo.net/eat/",
+      "sourceTitle": "食す｜層雲峡観光協会",
+      "sourceQuote": "ビアグリル・キャニオン 17:30〜20:00｜大雪山食堂 17:30〜20:30｜Taisetsu Bakery Café & Bar 20：00〜22：30｜ツリーバード 5月〜10月頃｜登山軒（11～5月は休業）",
+      "verdict": "verified",
+      "notes": "同第1輪逐店核對"
+    },
+    {
+      "claimId": "C114",
+      "articleExcerpt": "下面的排法照黑岳吊椅與姿見池散策路都開放的6月下旬到10月中旬寫。",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
+      "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "〈2026夏期〉6月27日～9月30日 6:30～17:30｜10月1日〜10月15日 7:30〜16:30｜10月16日～ 夏季シーズン終了",
+      "verdict": "verified",
+      "notes": "散策路6月～10月中旬見旭岳纜車官網「散策コース（6月～10月中旬）」"
+    },
+    {
+      "claimId": "C115",
+      "articleExcerpt": "10月16日起黑岳吊椅停駛，第三天只能搭纜車到五合目。",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
+      "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "リフト 整備運休 CLOSED 10/16～11/30｜〈2026夏期〉… 10月16日～ 夏季シーズン終了",
+      "verdict": "verified",
+      "notes": "冬季吊椅只限帶滑雪用具者（首頁「冬季リフトは、スキーやスノーボードなどの滑走具等をお持ちの方しかご乗車いただけません」）"
+    },
+    {
+      "claimId": "C116",
+      "articleExcerpt": "散策路關閉或下雪時，上了姿見站就在站前一帶看看。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/10-2%e3%80%80%e5%a7%bf%e8%a6%8b%e9%a7%85%e5%91%a8%e8%be%ba%e3%81%ae%e7%8a%b6%e6%b3%81/",
+      "sourceTitle": "10/2　姿見駅周辺の状況 | 旭岳ビジターセンター",
+      "sourceQuote": "降雪の際は、駅前周辺での散策をお勧めします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C117",
+      "articleExcerpt": "2026年11月9日到30日黑岳纜車、11月16日到12月10日旭岳纜車停駛，這段期間排不了兩邊上山。",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
+      "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "11月9日～11月30日 整備運休",
+      "verdict": "verified",
+      "notes": "旭岳纜車月曆11/16～12/10為×（運休），每年固定的停駛整備"
+    },
+    {
+      "claimId": "C118",
       "articleExcerpt": "延伸資料：大雪Kamuimintara DMO的北海道Mannaka觀光導覽（北海道まんなか観光ナビ）",
       "sourceUrl": "https://taisetsu-kamui.jp/features/30277",
       "sourceTitle": "【TAISETSU縦走PASS 2026好評販売中！】｜北海道まんなか観光ナビ",
@@ -997,9 +1069,9 @@
     }
   ],
   "summary": {
-    "verified": 108,
-    "incorrect": 1,
-    "unsupported": 1,
+    "verified": 118,
+    "incorrect": 0,
+    "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,
     "not-stated": 0

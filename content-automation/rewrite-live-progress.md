@@ -141,3 +141,10 @@ HOLD：wakkanai-ferry（訂票系統 11 月上旬重開）
 - 5 小時額度 91%（台北 09:30 重置），批次 5 暫緩
 - 已換上：rishiri-island-sights、asahikawa-food、rebun-island-hiking（main ec85654）
 - 第 4 批剩：asahikawa-sights（作者修改中）、rebun-island-sights（第二階段中）、asahidake-or-sounkyo（新 FC ad35c9ab3e390b841）
+- 已換上：rebun-island-sights（main 6f70895）
+- asahikawa-sights：讀者最終判定通過，再修 2 小處，SHA 6225285c，複查中（aeb3b5fe476f520d1）
+- asahidake-or-sounkyo：新 FC 108/110（C8、C100），第二階段必修 8 條，作者修改中（a0f5579fa98bc5f6c）
+## 批次 5（2026-11-02 台北 09:30 後開始）
+- 研究者已派 9 篇：asahikawa-weather ac8f576b2ec1f1dc0、rishiri-island-festival aa6842ba1cf91d103、rishiri-island-food aa3d907fd80fc059f、rishiri-island-weather a3e1e739928e6cb70、sounkyo-festival afb98433668d6920d、sounkyo-hiking a474c5f7cc901a6f8、sounkyo-weather a071afbb02a92e83b、wakkanai-festival a6eab9fff7105c92c、wakkanai-weather aaff52b174f1526cb
+- 已換上：asahikawa-sights（另補旭川冬季祭典連結，復原檔 .tmp/auto-publisher/link-recovery/asahikawa-sights-link33518edf53.json）、asahidake-or-sounkyo
+- **第 4 批完成**：8 篇換上，rebun-island-food 維持線上版
