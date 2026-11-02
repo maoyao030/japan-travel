@@ -148,3 +148,19 @@ HOLD：wakkanai-ferry（訂票系統 11 月上旬重開）
 - 研究者已派 9 篇：asahikawa-weather ac8f576b2ec1f1dc0、rishiri-island-festival aa6842ba1cf91d103、rishiri-island-food aa3d907fd80fc059f、rishiri-island-weather a3e1e739928e6cb70、sounkyo-festival afb98433668d6920d、sounkyo-hiking a474c5f7cc901a6f8、sounkyo-weather a071afbb02a92e83b、wakkanai-festival a6eab9fff7105c92c、wakkanai-weather aaff52b174f1526cb
 - 已換上：asahikawa-sights（另補旭川冬季祭典連結，復原檔 .tmp/auto-publisher/link-recovery/asahikawa-sights-link33518edf53.json）、asahidake-or-sounkyo
 - **第 4 批完成**：8 篇換上，rebun-island-food 維持線上版
+- 批次 5 作者：asahikawa-weather ab75f8fcbfd0d39f1、sounkyo-weather abe2e4b098e5e91f6（F481 標年份、道路資訊改國交省頁）、rishiri-island-weather a4e4ac686e310611f、sounkyo-festival a120beaf437afc166（觀察會句刪）、rishiri-island-festival a37f885aa6583676a（會場只寫沓形港）、wakkanai-weather a41ca3809520d7982（F35 網走一句）
+- 之後可規劃：北海道共用冬天教學頁（室內層次、防滑、結冰路面），研究者找不到官方來源，留給 Darren 決定
+- 批次 5：潤稿中 asahikawa-weather a76ee0f67ce73faba、sounkyo-weather a3c2d1493f71030c1、rishiri-island-weather a7d2c15de6756702f、rishiri-island-festival aaabbea62f409bf6b、wakkanai-weather ad0812f19499779da、sounkyo-festival ae992a40a07381bf7（協調者把 H3 改成「層雲峽冰瀑祭門票」，大綱同步）；作者中 rishiri-island-food aa5ab2df734a516cb、wakkanai-festival a8477337422abdcd8、sounkyo-hiking（新）
+- glossary 加「どんと市→Donto市」
+## 批次 5 狀態
+| 篇 | 作者 | 潤稿 | 查核 | 讀者 | 階段 |
+|---|---|---|---|---|---|
+| asahikawa-weather | ab75f8fcbfd0d39f1 | a76ee0f67ce73faba | a1339bf53236e9e60 69/69 | abe52542e32e7b038 | 第二階段 |
+| rishiri-island-weather | a4e4ac686e310611f | a7d2c15de6756702f | a4fd080b702fa2dfc 50/50 | a629ab68caa3fc90c | 第二階段 |
+| rishiri-island-festival | a37f885aa6583676a | aaabbea62f409bf6b | a959a8cfcfbf3665b 62/63 C54 | ae31ca85e645c1494 | 第二階段 |
+| sounkyo-weather | abe2e4b098e5e91f6 | a3c2d1493f71030c1 | ae010a2afd794b287 | a9d00b1aca7e643ae（一階 2 必修） | 查核中 |
+| wakkanai-weather | a41ca3809520d7982 | ad0812f19499779da | a4d0ff1a187d8142d | a7ecfe2b5d3cdb6d0（一階 2 必修） | 查核中 |
+| sounkyo-festival | a120beaf437afc166 | ae992a40a07381bf7 | ae3d9fc209bc1d860 | a3336564c9bad9684（一階 3 必修） | 查核中 |
+| wakkanai-festival | a8477337422abdcd8 | a0f7fc48ffcecc7cf | af801b458f4f7684f | af2af2e3571f82e40（一階 2 必修） | 查核中 |
+| rishiri-island-food | aa5ab2df734a516cb | ae06dd9ecd8db4071 | a8c7cc076c162f77a | aa5b835e3901f0902 | 驗收中 |
+| sounkyo-hiking | acee53a2eb2549567 | a5789a2b1ebeed468 | | | 意義比對 a5e41c7eec8d87307 |
