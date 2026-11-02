@@ -64,3 +64,103 @@ HOLD：wakkanai-ferry（訂票系統 11 月上旬重開）
 - asahidake-or-sounkyo：等查核 ae46ef7df45c3677b（讀者 a42e6c2a3ccc47ad2 第一階段完成；作者 a0f5579fa98bc5f6c；潤稿 ac02eef9ef0327faf）
 - 工具：scratchpad/sync-links2.mjs（照 from/to/anchor 同步，可新增）、write-review.mjs + review-spec-N.json
 - 每篇完成後：寫 spec→write-review→local-article-gates→studio replace dry-run→--apply；一批完成後 commit、merge origin/main、npm test、push HEAD:main
+## 狀態快照（main 831210f）
+- 第 3 批已上線 9 篇：cape-soya、rishiri-island、wakkanai-sights、higashikawa、wakkanai、rebun-island、asahikawa、sounkyo、asahidake
+- asahidake-or-sounkyo：等查核 ae46ef7df45c3677b（讀者 a42e6c2a3ccc47ad2 第一階段完成 6 必修；作者 a0f5579fa98bc5f6c）
+- 第 4 批研究中（9）：asahidake-hiking a93afbe747e47ff1e、asahikawa-food a354689f008181c23、asahikawa-sights a3ca21138afc29d61、rebun-island-food ac8e32b34597ab85c、rebun-island-hiking afe6f531730477370、rebun-island-sights a3e9b4b0b2f3577a4、rishiri-island-hiking a028a4c6f81ad1ef6、rishiri-island-sights a9fc59505936ea1de、sounkyo-sights a175df9af3e4c42db
+- 未開始（9）：asahikawa-weather rishiri-island-festival rishiri-island-food rishiri-island-weather sounkyo-festival sounkyo-hiking sounkyo-weather wakkanai-festival wakkanai-weather
+- HOLD：wakkanai-ferry
+- asahidake-hiking：作者 a59ef9172455824d8（研究完成）
+- rishiri-island-hiking：作者 aa4e81fb6823d80b2（野營場費用拿掉）
+- rishiri-island-sights：作者 a6cbf7b338169863b
+- sounkyo-sights：作者 a873624899fd66d8c
+- asahidake-hiking：潤稿 a25ec050b07ce0092（links synced）
+- rebun-island-hiking：作者 a07ba50d8bc952b71
+- asahikawa-sights：作者 ac1de4b5e2b8c4d22
+- 留給規劃 session：旭川神社、上川神社頓宮競品有列，大綱沒有
+- rishiri-island-hiking：潤稿 a3037143866638a51（links synced，新增往住宿頁連結）
+- asahikawa-food：作者 a6d973a39768aa1d5
+- 留給規劃 session：旭川壽司／海鮮丼競品都有、大綱沒有（asahikawa-food 競品筆記第 7 節）
+- rishiri-island-sights：潤稿 a17776e414580b36e（links synced）
+- rebun-island-food：作者 ad4d45044010456de（Chidori 月份與付款只靠觀光協會，不寫）
+- rebun-island-sights：作者 a6d0a258dd99340d3
+- sounkyo-sights：潤稿 ac00c4c88a841ad1a（links synced）
+- asahidake-hiking：比對 a6babcb683e8c5e2b（潤稿 a25ec050b07ce0092）
+- rebun-island-hiking：潤稿 afd12683d75e4b1ed（links synced）
+- rishiri-island-hiking：比對 a0db752ab9a798aaf（潤稿 a3037143866638a51）
+- asahidake-hiking：驗收中（SHA 120e3105… 查核 acf07725641fe8269、讀者 ae9c4c4471703c040）
+- asahikawa-food：潤稿 ada8614d469f98283（links synced；作者 a6d973a39768aa1d5）
+- rishiri-island-hiking：驗收中（SHA 4c5d642e… 查核 a63fea8e5d9e3076d、讀者 a6829b3645706701c）
+- rebun-island-food：潤稿 ab0e10c8627936533（作者 ad4d45044010456de）
+- rishiri-island-sights：比對 a0a3f2732dbce7665（潤稿 a17776e414580b36e）
+- asahikawa-sights：潤稿 a057b57c8f13cbbbe（links synced，新增往主頁「旭川冬季祭典」；作者 ac1de4b5e2b8c4d22）
+- rebun-island-sights：潤稿 a1d02141a785c7dfa（links synced；作者 a6d0a258dd99340d3）
+=> 第 4 批 9 篇都已寫完重寫稿
+- sounkyo-sights：比對 a2bac96815bfcc181（潤稿 ac00c4c88a841ad1a）
+- asahidake-hiking：讀者第一階段完成（5 必修；H2 父題涵蓋不到，標題可能要改，第二階段後決定）
+- rebun-island-hiking：潤稿完成（刪 F429、F425 部分、F309 部分），意義比對進行中
+- rishiri-island-hiking：讀者第一階段完成（必修 3：計畫書交哪裡、沓形先講封閉、官方當主詞 8 處），等事實查核 a63fea8e5d9e3076d
+## 2026-11-02 狀態
+- sounkyo-sights：意義比對 0/0，修正潤稿前事實問題（大函不跟導覽團）；SHA 718c23e7；FC a1bbcde95953d3e14、讀者 a47520be9c1c88e54
+- rishiri-island-sights：意義比對修 3 處；SHA f377e8d9；FC a1c22833d79fe7e81、讀者 af6da31cd3ce6b091
+- rebun-island-hiking：意義比對 0/0；SHA d379ca0c；FC a94aa9281a9cb9ea4、讀者 a2ab41c6ce70344c4
+- asahikawa-food：意義比對 ac569a5d4d8be4fe2（潤稿 ada8614d469f98283）
+- rebun-island-food：意義比對 ab8c261ad308ffb33（潤稿 ab0e10c8627936533）；注意 F419 觀光協會來源
+- rebun-island-sights：意義比對 a653f47cfc5e413c4（潤稿 a1d02141a785c7dfa）；潤稿者改了 F441 採用欄
+- asahikawa-sights：潤稿 a057b57c8f13cbbbe 進行中
+- 批次 5：先等第 4 批推進（週用量 77%，11/2 22:00 重置）
+- sounkyo-sights：讀者第一階段完成（必修 4：瀧見台巴士站、計程車車資、泛舟接送、2026 年份）
+- asahikawa-food：意義比對遺失 1（F472 寶可夢人孔蓋），已退潤稿者補
+- rebun-island-food：意義比對不可接受 2（觀光協會來源），已請作者 ad4d45044010456de 補官方來源，不夠就維持線上版
+- asahikawa-food：潤稿修正完成；SHA b6afc924；FC a5432b929202f91b5、讀者 a295e9588f5854293
+- asahikawa-sights：潤稿完成（刪 9 筆部分），意義比對 a1df09cb574ad4766
+- rebun-island-hiking：讀者第一階段完成（必修 4）
+- rebun-island-sights：意義比對 0/0；但多筆只靠打不開網站，協調者決定：無來源刪或改寫；存檔只用在不會變的事實；延伸資料 rebun-island.jp 拿掉。作者 a6d0a258dd99340d3 處理中
+- rishiri-island-sights：讀者第一階段完成（必修 3：巴士排法空等、所在區、明年期間去哪看）
+- rebun-island-food：**HOLD，維持線上版**（拿掉無來源事實後只剩 14 筆；等 rebun-island.jp 恢復，研究記錄定 2026-12-02 重開；F541～F546 可用）
+- asahikawa-sights：意義比對 0/0；SHA df5bee8c；FC、讀者已派
+- rishiri-island-hiking：FC 76 全 verified；讀者第二階段中
+- asahidake-hiking：FC 120 全 verified；讀者第二階段中
+- asahikawa-food：讀者第一階段完成（必修 1：拉麵村時間衝突）
+- rishiri-island-hiking：**已換上 Sanity**（review gates_clear；另用 apply-pending-link 補利尻島住宿連結，復原檔 .tmp/auto-publisher/link-recovery/rishiri-island-hiking-linkf55a251d38.json）
+- asahidake-hiking：作者修改完（F246、F247），SHA d79d32b8；複查與最終判定中
+- rebun-island-hiking：FC 114/113，C106 incorrect；第二階段帶協調者規則（存檔只撐不太變的事實）
+- rebun-island-sights：作者補來源後 52 筆事實（F564～F567）；SHA 07efa1bc；FC、讀者已派
+- 已推 main f6ed720（利尻山、旭岳登山換上）
+- asahidake-or-sounkyo：舊 FC 卡住已停，新 FC 已派（SHA c9d0cc35）；讀者 a42e6c2a3ccc47ad2 等第二階段，作者 a0f5579fa98bc5f6c
+- sounkyo-sights：作者修改中（a873624899fd66d8c）
+- rebun-island-hiking：作者修改中（a07ba50d8bc952b71）；WP API 算現行官方
+- rishiri-island-sights：作者修改中（a6cbf7b338169863b）
+- asahikawa-food：第二階段中（C78 18 處）
+- rebun-island-sights：讀者第一階段完成（必修 3），等 FC a36cedfe6e2e074ff
+- asahikawa-sights：等 FC aeb3b5fe476f520d1
+- sounkyo-sights：**已換上 Sanity**（drop 了一條壞掉的存檔外連）
+- rishiri-island-sights、asahikawa-food、rebun-island-hiking：複查與最終判定中
+- 5 小時額度 91- sounkyo-sights：**已換上 Sanity**（拿掉一條壞掉的存檔外連）
+- rishiri-island-sights、asahikawa-food、rebun-island-hiking：複查與最終判定中
+- 5 小時額度 91%（台北 09:30 重置），批次 5 暫緩
+- 已換上：rishiri-island-sights、asahikawa-food、rebun-island-hiking（main ec85654）
+- 第 4 批剩：asahikawa-sights（作者修改中）、rebun-island-sights（第二階段中）、asahidake-or-sounkyo（新 FC ad35c9ab3e390b841）
+- 已換上：rebun-island-sights（main 6f70895）
+- asahikawa-sights：讀者最終判定通過，再修 2 小處，SHA 6225285c，複查中（aeb3b5fe476f520d1）
+- asahidake-or-sounkyo：新 FC 108/110（C8、C100），第二階段必修 8 條，作者修改中（a0f5579fa98bc5f6c）
+## 批次 5（2026-11-02 台北 09:30 後開始）
+- 研究者已派 9 篇：asahikawa-weather ac8f576b2ec1f1dc0、rishiri-island-festival aa6842ba1cf91d103、rishiri-island-food aa3d907fd80fc059f、rishiri-island-weather a3e1e739928e6cb70、sounkyo-festival afb98433668d6920d、sounkyo-hiking a474c5f7cc901a6f8、sounkyo-weather a071afbb02a92e83b、wakkanai-festival a6eab9fff7105c92c、wakkanai-weather aaff52b174f1526cb
+- 已換上：asahikawa-sights（另補旭川冬季祭典連結，復原檔 .tmp/auto-publisher/link-recovery/asahikawa-sights-link33518edf53.json）、asahidake-or-sounkyo
+- **第 4 批完成**：8 篇換上，rebun-island-food 維持線上版
+- 批次 5 作者：asahikawa-weather ab75f8fcbfd0d39f1、sounkyo-weather abe2e4b098e5e91f6（F481 標年份、道路資訊改國交省頁）、rishiri-island-weather a4e4ac686e310611f、sounkyo-festival a120beaf437afc166（觀察會句刪）、rishiri-island-festival a37f885aa6583676a（會場只寫沓形港）、wakkanai-weather a41ca3809520d7982（F35 網走一句）
+- 之後可規劃：北海道共用冬天教學頁（室內層次、防滑、結冰路面），研究者找不到官方來源，留給 Darren 決定
+- 批次 5：潤稿中 asahikawa-weather a76ee0f67ce73faba、sounkyo-weather a3c2d1493f71030c1、rishiri-island-weather a7d2c15de6756702f、rishiri-island-festival aaabbea62f409bf6b、wakkanai-weather ad0812f19499779da、sounkyo-festival ae992a40a07381bf7（協調者把 H3 改成「層雲峽冰瀑祭門票」，大綱同步）；作者中 rishiri-island-food aa5ab2df734a516cb、wakkanai-festival a8477337422abdcd8、sounkyo-hiking（新）
+- glossary 加「どんと市→Donto市」
+## 批次 5 狀態
+| 篇 | 作者 | 潤稿 | 查核 | 讀者 | 階段 |
+|---|---|---|---|---|---|
+| asahikawa-weather | ab75f8fcbfd0d39f1 | a76ee0f67ce73faba | a1339bf53236e9e60 69/69 | abe52542e32e7b038 | 第二階段 |
+| rishiri-island-weather | a4e4ac686e310611f | a7d2c15de6756702f | a4fd080b702fa2dfc 50/50 | a629ab68caa3fc90c | 第二階段 |
+| rishiri-island-festival | a37f885aa6583676a | aaabbea62f409bf6b | a959a8cfcfbf3665b 62/63 C54 | ae31ca85e645c1494 | 第二階段 |
+| sounkyo-weather | abe2e4b098e5e91f6 | a3c2d1493f71030c1 | ae010a2afd794b287 | a9d00b1aca7e643ae（一階 2 必修） | 查核中 |
+| wakkanai-weather | a41ca3809520d7982 | ad0812f19499779da | a4d0ff1a187d8142d | a7ecfe2b5d3cdb6d0（一階 2 必修） | 查核中 |
+| sounkyo-festival | a120beaf437afc166 | ae992a40a07381bf7 | ae3d9fc209bc1d860 | a3336564c9bad9684（一階 3 必修） | 查核中 |
+| wakkanai-festival | a8477337422abdcd8 | a0f7fc48ffcecc7cf | af801b458f4f7684f | af2af2e3571f82e40（一階 2 必修） | 查核中 |
+| rishiri-island-food | aa5ab2df734a516cb | ae06dd9ecd8db4071 | a8c7cc076c162f77a | aa5b835e3901f0902 | 驗收中 |
+| sounkyo-hiking | acee53a2eb2549567 | a5789a2b1ebeed468 | | | 意義比對 a5e41c7eec8d87307 |
