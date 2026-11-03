@@ -293,3 +293,4 @@
 - Darren 要系統每天主動推一篇還沒優化的文章給他。雲端排定工作「繞路筆記每日優化提醒」（`trig_015Yq9K6kSXsTH3RDzxjghvJ`）每天台北 08:47 跑 `node scripts/daily-optimize-pick.mjs`，結果推播到 Darren 手機的 Claude app。
 - 只讀後台公開資料，不改檔案、不 commit、不寫 Sanity。挑選規則：還沒手動優化過的上線文章，住宿頁最前，其次交通、景點；每天換下一篇，優化過的自動不再出現。附網站與後台連結，以及逗號最多的三段。
 - 排定工作的時間、啟用與暫停只由 Darren 決定。分支併進 `main` 後程式會自動改用 `main`，不用改排定工作。
+- 2026-11-03 補充：Darren 要後台也有按鈕。後台第一頁「今天優化哪篇」（`studio/lib/optimizeTool.tsx`）用同一套挑選規則，按「開始改這篇」直接進編輯畫面，「換一篇」看下一篇；挑選規則只在 `scripts/daily-optimize.mjs` 改，推播與後台會一起變。

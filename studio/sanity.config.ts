@@ -5,6 +5,7 @@ import {visionTool} from '@sanity/vision'
 import {SITE_URL, articlePath} from './lib/articleUrl'
 import {withStudioEditStamp} from './lib/studioEditStamp'
 import {ViewOnSiteAction} from './lib/viewOnSiteAction'
+import {optimizeTool} from './lib/optimizeTool'
 import {structure} from './lib/structure'
 import {schemaTypes} from './schemaTypes'
 
@@ -22,6 +23,9 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
+
+  // 「今天優化哪篇」放第一個，打開後台先看到它。
+  tools: (previous) => [optimizeTool, ...previous],
 
   document: {
     // 在後台按「發布」時記下手動修改的時間，自動工具就不會蓋掉。

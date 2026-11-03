@@ -11,7 +11,7 @@ export const SITE_URL = 'https://offpathnotes.com'
 
 // 住宿頁是收入主幹，排最前面；其次是讀者最常卡住的交通，天氣這類流量頁放後面。
 const ASPECT_ORDER = ['stay', 'transport', 'sight', 'hiking', 'food', 'festival', 'weather', 'other']
-const ASPECT_NAMES = {
+export const ASPECT_NAMES = {
   stay: '住宿',
   transport: '交通',
   sight: '景點',
