@@ -5,7 +5,10 @@ export default defineCliConfig({
     projectId: process.env.SANITY_STUDIO_PROJECT_ID ?? 'e8ctf7ee',
     dataset: process.env.SANITY_STUDIO_DATASET ?? 'production',
   },
+  // 線上後台網址 https://offpathnotes.sanity.studio（見 README「部署線上後台」）。
+  studioHost: 'offpathnotes',
   deployment: {
+    appId: 'dmhhekmiclb0k7n8s7fa8c38',
     /**
      * Enable auto-updates for studios.
      * Learn more at https://www.sanity.io/docs/studio/latest-version-of-sanity#k47faf43faf56

@@ -21,3 +21,41 @@ Sanity 是存放文章、主題中心、作者與情境 Tag 的後台；網站�
 ## 腳本
 
 `scripts/` 內的腳本都先 dry-run，再用同一份輸入加 `--apply`。本機用 `--with-user-token` 登入；雲端 routine 用 `SANITY_AUTH_TOKEN`。用途見各檔案開頭與 `package.json` 的 scripts。
+
+## 手動修改文章（2026-11-03）
+
+後台就是 Darren 直接改文章的地方：打字改、按「發布」，不用碰 Git 或程式。
+
+- **線上後台**：<https://offpathnotes.sanity.studio>（要先部署一次，見下面）。用建立 Sanity 專案的同一個帳號登入。介面是繁體中文。
+- **找文章**：左邊「網站上的文章」，最近改過的排在前面；上方放大鏡可以搜標題。
+- **改完**：右下角按「發布」。網站要等下一次重建才會變（目前是每次推 `main` 時，自動寫作一天會推好幾次）。
+- **編輯畫面**：打開文章先看到「標題與正文」分頁；摘要、封面與 SEO 在「摘要、封面與搜尋結果」，網址與其他設定在「網址與設定」。正文框右上角的「展開編輯器」可以全螢幕改。表格在正文裡顯示成一張卡片（例如「店家｜特色，7 列資料」），點開才改得到格子。
+- **看網站上的樣子**：右下角「發布」旁邊的「⋯」選「在網站上看這篇」，會打開網站上的這一頁（還沒上線的文章這個按鈕是灰的）。
+- **改不到的東西**：文章有發布日期後，網址代稱就鎖住（改了舊連結會失效）。後台沒有「刪除」與「複製」，要下架文章請交給 Claude Code 照流程處理。
+- **按發布時後台會自動記下「最後在後台手動發布」**。會用 Git 稿件改寫正文的工具（`replace-article-body`、`revise-article-text`、`replace-article-paragraphs`、`link-bare-urls`、`publish-prepared-article --update-existing`）看到還沒同步的手動修改就停下來，不會蓋掉 Darren 的修改。補內連、加照片與嵌入的工具只在現有正文上加東西，照常可以用。
+- **把手動修改抓回 Git**：左邊「後台改過、還沒同步回 Git」會列出這些文章。人工 session 在 `studio/` 跑：
+
+  ```bash
+  npm run pull:studio-edits -- --article=<文章>
+  ```
+
+  先只產生 `content-production/<文章>/studio-edits/<時間>/changes.md`（修改前後對照）與 `studio-version.md`，看過後加 `--apply`：把後台版本寫回 `reader-preview.md`、標題與摘要寫回 `publication.json`，並在後台記下「已同步回 Git」。之後照 `changes.md` 最後的清單補事實來源、同步 `draft-tagged.md`，值得學的改法記進寫作 Skill 的 `examples.md`。
+- 主題中心（Hub）的手動修改還沒有這個保護，Hub 文案先不要在後台改。
+- **優化紀錄**：每次在後台按「發布」，文章的「網址與設定」分頁裡「後台手動修改紀錄」會自動加一筆時間；文章清單會顯示「手動改過 N 次」，左邊「手動優化過的文章」列出全部。抓回 Git 時（`pull:studio-edits --apply`）同時寫進 `content-automation/manual-edits-log.json`，後台紀錄之後被覆蓋也還在。
+- **今天優化哪篇**：打開後台的第一頁。顯示一篇還沒優化的文章（規則和每日提醒一樣），按「開始改這篇」直接進編輯畫面，「在網站上看」打開網站，「換一篇」看下一篇。程式在 `lib/optimizeTool.tsx`，挑選規則共用 `scripts/daily-optimize.mjs`。
+- **每日提醒**：每天台北 08:47，手機的 Claude app 會收到一篇還沒優化的文章（住宿頁先），點後台連結就能改。想先看今天輪到哪篇，在專案根目錄跑 `npm run optimize:today`。
+- **成效報表**：在專案根目錄跑 `npm run report:manual-edits`，產生 `content-automation/manual-edits-report.md`：每篇優化了幾次、哪幾天，以及有 Search Console 資料時，第一次優化前後各 28 天的點擊、曝光、平均排名，和同期沒優化的文章比。Search Console 資料放 `content-automation/search-console/pages-daily.csv`（欄位 `date,page,clicks,impressions,position`，每頁每天一列）。
+
+### 部署線上後台
+
+第一次（或改了 `sanity.config.ts`、`schemaTypes/`、`lib/` 之後）在 Darren 已登入 Sanity CLI 的電腦上，於 `studio/` 執行：
+
+```bash
+npm install
+```
+
+```bash
+npx sanity deploy
+```
+
+網址代稱寫在 `sanity.cli.ts` 的 `studioHost`（`offpathnotes`）；被別人用走時改一個再部署。部署完 CLI 會提示把 `appId` 加進 `sanity.cli.ts`，照做並 commit。

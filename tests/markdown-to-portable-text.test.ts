@@ -30,3 +30,10 @@ test('轉換後延伸資料每條都有連結', () => {
   assert.equal(item.children.map((child: {text: string}) => child.text).join(''), '運航狀況，當天是否停航。')
   assert.equal(item.children[0].marks[0], item.markDefs[0]._key)
 })
+
+test('只有一欄的表格直接報錯，不會變成一串亂碼上線', () => {
+  assert.throws(
+    () => parseMarkdownBody(['# 標題', '', '| 往稚內 |', '|---|', '| 7:31 |'].join('\n')),
+    /只有一欄/,
+  )
+})

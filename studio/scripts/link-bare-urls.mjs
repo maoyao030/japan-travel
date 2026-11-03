@@ -12,6 +12,7 @@ import path from 'node:path'
 import {getCliClient} from 'sanity/cli'
 
 import {parseMarkdownBody} from '../../scripts/markdown-to-portable-text.mjs'
+import {assertNoUnsyncedStudioEdits} from '../../scripts/studio-edit-guard.mjs'
 
 const projectRoot = path.resolve(import.meta.dirname, '../..')
 const options = Object.fromEntries(
@@ -53,11 +54,12 @@ function relinkBlock(block) {
 
 const client = getCliClient({apiVersion: '2026-08-29'})
 const [article, draft] = await Promise.all([
-  client.fetch('*[_id == $id][0]{_id,_rev,_type,body}', {id: articleId}),
+  client.fetch('*[_id == $id][0]{_id,_rev,_type,body,studioEditedAt,studioEditsSyncedAt}', {id: articleId}),
   client.fetch('*[_id == $id][0]{_id}', {id: `drafts.${articleId}`}),
 ])
 if (article?._type !== 'article') throw new Error(`找不到文章：${articleId}`)
 if (draft) throw new Error('文章有未發布草稿，拒絕自動修改')
+assertNoUnsyncedStudioEdits(article)
 
 const changed = []
 const body = article.body.map((block) => {

@@ -275,3 +275,29 @@
 - 本段補充「三篇重寫稿上線（2026-11-01）」：已上線文章照 `content-automation/rewrite-live.md` 重寫一輪，40 篇已換上網站，`wakkanai-ferry`（渡輪預約系統停機中）、`rebun-island-food`（觀光協會網站打不開、事實不夠）維持線上版，細節見 `PROJECT_STATUS.md` 2026-11-02 段落。
 - 官網打不開時：不太變的事實可以用網頁存檔；會變的要有現行官方來源，否則刪或改成到觀光案內所確認；正文不叫讀者去看打不開的網站。
 - 只查到一季的停駛或休業公告，只寫那一季、標年份，不寫「每年」。
+
+## 後台手動修改（Darren 2026-11-03）
+
+- Darren 覺得只靠 AI 寫的品質不夠，研究與大綱參考競品的方向可以留；文字要能自己動手改。手動修改的地方是 Sanity 後台（線上網址 `offpathnotes.sanity.studio`，繁體中文介面），用法見 `studio/README.md`「手動修改文章」。
+- 在後台按「發布」會自動記下 `studioEditedAt`。用 Git 稿件改寫正文的工具看到還沒同步的手動修改就停下來；不得繞過、不得清掉這個時間。自動寫作遇到時照 `content-automation/local-writer.md`「失敗」記進上傳停放。
+- 手動修改由人工 session 用 `studio` 的 `npm run pull:studio-edits` 抓回 Git（先看對照，再 `--apply`），之後補事實來源、同步 `draft-tagged.md`，值得學的改法記進寫作 Skill 的 `examples.md`。Darren 改過的文字以他的版本為準，不由 AI 改回去。
+
+## 手動優化紀錄與成效（Darren 2026-11-03）
+
+- Darren 要知道哪幾篇在幾月幾號手動優化、優化了幾次，才判斷得出優化有沒有效。每次在後台按「發布」自動記一筆（`studioEditLog`），抓回 Git 時寫進 `content-automation/manual-edits-log.json`；兩份紀錄都不得刪改。
+- 報表 `npm run report:manual-edits` 產生 `content-automation/manual-edits-report.md`。成效看第一次優化前後各 28 天的 Search Console 點擊、曝光與平均排名，並和同期沒優化的文章比；優化後未滿 28 天標「累積中」，不下結論。
+- Search Console 資料怎麼自動取得還沒定（雲端沒有 Darren 的 Google 權限）。
+
+## 每日優化提醒（Darren 2026-11-03）
+
+- Darren 要系統每天主動推一篇還沒優化的文章給他。雲端排定工作「繞路筆記每日優化提醒」（`trig_015Yq9K6kSXsTH3RDzxjghvJ`）每天台北 08:47 跑 `node scripts/daily-optimize-pick.mjs`，結果推播到 Darren 手機的 Claude app。
+- 只讀後台公開資料，不改檔案、不 commit、不寫 Sanity。挑選規則：還沒手動優化過的上線文章，住宿頁最前，其次交通、景點；每天換下一篇，優化過的自動不再出現。附網站與後台連結，以及逗號最多的三段。
+- 排定工作的時間、啟用與暫停只由 Darren 決定。分支併進 `main` 後程式會自動改用 `main`，不用改排定工作。
+- 2026-11-03 補充：Darren 要後台也有按鈕。後台第一頁「今天優化哪篇」（`studio/lib/optimizeTool.tsx`）用同一套挑選規則，按「開始改這篇」直接進編輯畫面，「換一篇」看下一篇；挑選規則只在 `scripts/daily-optimize.mjs` 改，推播與後台會一起變。
+
+## 在 Claude Code 對話裡優化文章（Darren 2026-11-03）
+
+- Darren 在後台改文章時常需要 Claude 幫忙（查事實、找連結、順句子），後台做不到。改成在 Claude Code 對話裡優化：Darren 說「優化一篇」，Claude 挑今天輪到的那篇（`npm run optimize:today`），一節一節貼出 Markdown 稿，Darren 在對話裡改，Claude 寫進 `reader-preview.md`、查事實，Darren 說好才上傳。
+- Darren 的文字為準；錯字列出來、他同意才改。後台還沒發布的草稿用 `pull:studio-edits --draft` 先搬進 Git，上傳時確認草稿沒再改過才清掉。
+- 上傳用 `studio` 的 `replace-article-body.mjs --manual`（可改標題，記一筆優化紀錄，來源「在 Claude Code 對話裡改」）。後台照樣可以用。
+- 流程細節見 `content-automation/chat-optimize.md`。

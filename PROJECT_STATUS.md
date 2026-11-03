@@ -1787,3 +1787,63 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **沒同步的 13 筆**：只有跨地點引用、沒有日文原文摘錄，或欄位不完整（多是禮文島美食停放稿），清單在紀錄檔。
 - **之後**：D1 裡有 202 筆事實下次查核日在 11 月底前，自動寫作的重查流程會照到期清單處理。新文章寫完後，可以再跑一次這兩支工具同步。
 - **唯一下一步**：看自動寫作下一輪是否正常讀到更新後的地點事實表。
+
+## 2026-11-03 Claude Code：後台手動修改（分支 `claude/gallant-ptolemy-vrfqnz`）
+
+- **起因**：Darren 覺得只靠 AI 寫的文章品質不夠，研究與大綱參考競品的方向可以留，想要一個能自己動手改文章的地方。
+- **已完成**：
+  - Sanity 後台改成給 Darren 用：繁體中文介面（`@sanity/locale-zh-hant`）；左邊清單分成「網站上的文章」（最近改過的在前）、「還沒開放搜尋的文章」、「後台改過、還沒同步回 Git」；文章「⋯」選單的「開啟預覽」打開網站上的那一頁（網址規則和網站一致，45 篇都對過）；查詢工具 Vision 只在本機開發時出現。`sanity build` 通過。
+  - 手動修改的保護：在後台按「發布」自動記 `studioEditedAt`。`replace-article-body`、`revise-article-text`、`replace-article-paragraphs`、`link-bare-urls`、`publish-prepared-article --update-existing` 看到還沒同步的手動修改就停下來（`scripts/studio-edit-guard.mjs`）。自動寫作遇到時記進上傳停放（`local-writer.md`「失敗」）。
+  - 抓回手動修改：`studio` 的 `npm run pull:studio-edits`，產生修改前後對照 `content-production/<文章>/studio-edits/<時間>/changes.md`；`--apply` 才寫回 `reader-preview.md`、`publication.json` 並記 `studioEditsSyncedAt`。後台正文轉回 Markdown 的工具 `scripts/portable-text-to-markdown.mjs`，用旭川美食線上版來回轉換，文字完全一致。
+  - 線上後台網址代稱設成 `offpathnotes`（`studio/sanity.cli.ts`），還沒部署。
+- **順便修的**：旭川美食、宗谷岬交通兩篇各有一張只有一欄的時刻表，網站顯示成一串「| 9:37 | |---|」。Git 稿件改成一句話列四個時間；`markdown-to-portable-text.mjs` 以後遇到單欄表格直接報錯。**線上版還沒改**，可以當 Darren 在後台的第一個練習，或由人工 session 用 `revise-article-text` 換上。
+- **測試**：`npm test` 214 項通過（新增 `tests/portable-text-to-markdown.test.ts`、`tests/studio-edits.test.ts`）。
+- **尚未完成**：
+  - 線上後台要在 Darren 已登入 Sanity CLI 的電腦部署一次（`studio/` 裡 `npm install`、`npx sanity deploy`），雲端 session 沒有 Sanity 權限。
+  - Sanity 沒有 Webhook 接 Cloudflare 重建，後台改完要等下一次推 `main` 網站才更新；要即時更新就得設定 Webhook（`DEPLOYMENT.md`）。
+  - 主題中心（Hub）的手動修改還沒有保護。
+- **唯一下一步**：在 Darren 的電腦（主資料夾）部署線上後台，登入後試改一篇。
+
+### 2026-11-03 補充：後台預覽
+
+- Darren 要先看後台長什麼樣子再決定。在雲端把後台建置起來、模擬登入，用線上真實文章截圖給 Darren 看（截圖沒有進 Git）。
+- 預覽抓到並修好：左邊清單少了必要的 `id`，後台會顯示「讀取結構時遇到錯誤」；正文擠在欄位最下面的小框裡，改成文章分三個分頁、預設只顯示「標題與正文」；「開啟預覽」在這個 Sanity 版本沒出現，改成在「發布」旁加「在網站上看這篇」（`studio/lib/viewOnSiteAction.ts`）。
+- 另外拿掉文章的「刪除」「複製」，網址代稱在有發布日期後鎖住，避免手動修改時誤動。
+- 唯一下一步不變：在 Darren 的電腦合併分支並部署線上後台。
+
+### 2026-11-03 補充：手動優化紀錄與成效
+
+- Darren 要記錄哪幾篇在幾月幾號優化、優化幾次，才知道優化有沒有效。
+- 已完成：後台每次按「發布」自動加一筆 `studioEditLog`（文章清單顯示「手動改過 N 次」，左邊多「手動優化過的文章」）；`pull:studio-edits --apply` 同時寫 `content-automation/manual-edits-log.json`；`npm run report:manual-edits`（`scripts/manual-edits.mjs`、`scripts/manual-edits-report.mjs`）產生 `content-automation/manual-edits-report.md`，次數照台北日期算（同一天按幾次發布算一次），成效比較第一次優化前後各 28 天，和同期沒優化的文章比。報表讀後台公開資料，不用權杖，雲端也能跑。
+- `studio/package.json` 加 `"type": "module"`（Node 讀 `studio/lib/articleUrl.ts` 不再跳警告），`sanity build` 與 `sanity exec` 照常。
+- 測試 217 項通過（新增 `tests/manual-edits.test.ts`）。
+- 尚未完成：Search Console 每頁每天的資料還沒有自動取得的方法；Ahrefs 裡沒有本站專案。第一次優化後要滿 28 天才比得出來，不急。
+- 唯一下一步不變：在 Darren 的電腦合併分支並部署線上後台。
+
+### 2026-11-03 補充：每日優化提醒
+
+- Darren 想要每天直接收到一篇還沒優化的文章。新增 `scripts/daily-optimize.mjs`、`scripts/daily-optimize-pick.mjs`（`npm run optimize:today`）與 `tests/daily-optimize.test.ts`：只讀後台公開資料，挑還沒手動優化的上線文章（住宿最前，其次交通、景點，同類越早上線越前），每天換下一篇；扣掉已優化的篇數，優化掉一篇後隔天不會跳過下一篇。訊息附網站連結、後台連結與逗號最多的三段。
+- 後台的「面向」欄位 45 篇都沒填，頁型從網址代稱判斷（stay、transport、ferry、sights…），地點主頁排最後。
+- 建立雲端排定工作「繞路筆記每日優化提醒」（`trig_015Yq9K6kSXsTH3RDzxjghvJ`），每天台北 08:47，每次開新 session、推播到 Darren 手機；唯讀。程式在 `main` 上找不到時改用本分支，所以合併後不用改排定工作。11/3 手動觸發一次測試。
+- 測試 220 項通過。
+- 後台還沒部署前，提醒裡的後台連結會打不開；網站連結正常。
+
+### 2026-11-03 補充：後台的「今天優化哪篇」
+
+- Darren 想在後台按一下就跳出一篇。後台新增第一頁「今天優化哪篇」（`studio/lib/optimizeTool.tsx`，打開後台先看到它）：顯示今天輪到的文章、為什麼是這篇、進度與逗號最多的三段；按「開始改這篇」直接打開編輯畫面，「在網站上看」開網站，「換一篇」看下一篇。挑選規則共用 `scripts/daily-optimize.mjs`，和每日推播同一篇。
+- `studio/package.json` 加 `@sanity/ui`（原本就由 sanity 帶進來，現在寫明）。`sanity build` 通過；模擬登入實測三個按鈕都正常。
+- 唯一下一步不變：在 Darren 的電腦合併分支並部署線上後台。
+
+## 2026-11-03 Claude Code：在對話裡優化文章
+
+- **起因**：Darren 在後台優化東川時，很多地方需要 Claude 幫忙（查事實、找連結、順句子），後台做不到。Darren 決定改成在 Claude Code 對話裡叫 Claude、挑一篇、在對話裡改 Markdown 稿。
+- **已完成**：
+  - 流程說明 `content-automation/chat-optimize.md`，`AGENTS.md`、`RULES_OVERVIEW.md` 加段落。口令「優化一篇」「繼續優化 <文章>」「上傳」。
+  - `pull:studio-edits --draft`：抓後台還沒發布的草稿，`--apply` 只寫 Git，草稿版本記在 `content-production/<文章>/chat-optimize.json`。抓回時沒改的資料來源條目維持 Git 原本寫法（`keepGitSourceLines`，新測試）。
+  - `replace-article-body.mjs --manual`：可以改標題、SEO 欄位照 `publication.json`；後台 `studioEditLog` 加一筆（新欄位 `source: chat`，後台顯示「在 Claude Code 對話裡改」），Git 的 `manual-edits-log.json` 加一筆；`--discard-draft` 確認草稿和抓進 Git 的版本一樣才清掉。
+  - 東川：Darren 的後台草稿（標題＋12 段，到「搭 Ideyu 號／自行車」為止）已搬進 `content-production/higashikawa/reader-preview.md`，草稿還留在後台，線上版沒動。預覽上傳：7 個連結、照片、影片都搬得過去，`check-voice` 通過。
+- **測試**：`npm test` 221 項通過（雲端機器先跑了根目錄 `npm ci`），`sanity build` 通過。
+- **尚未完成**：
+  - 東川有幾個錯字與建議（因次、的的、要會、「東川町市中心的有」、H2 只寫 JR 站但底下有機場的 H3、SEO 標題還是舊的）等 Darren 決定；之後從「東川町景點」那一節繼續優化。
+  - 後台的新欄位要重新部署後台才會顯示中文名稱（在 Darren 電腦 `studio/` 跑 `npx sanity deploy`）；不部署也不影響使用。
+- **唯一下一步**：Darren 決定東川那幾個錯字怎麼改，然後在對話裡繼續優化下一節。

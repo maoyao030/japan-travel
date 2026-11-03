@@ -2,6 +2,7 @@ import {createHash} from 'node:crypto'
 import {readFile} from 'node:fs/promises'
 import path from 'node:path'
 import {getCliClient} from 'sanity/cli'
+import {assertNoUnsyncedStudioEdits} from '../../scripts/studio-edit-guard.mjs'
 
 const argumentsList = process.argv.slice(2)
 const applyChanges = argumentsList.includes('--apply')
@@ -72,7 +73,9 @@ const documents = await client.fetch(
     "relatedArticleIds": relatedArticles[]._ref,
     "coverAssetId": cover.asset._ref,
     "bodyCount": count(body),
-    body
+    body,
+    studioEditedAt,
+    studioEditsSyncedAt
   }`,
   {ids: [...referenceIds, article._id, draftId]},
 )
@@ -138,6 +141,7 @@ if (existingArticle && !matchesPreparedArticle(existingArticle) && !updateExisti
 }
 
 if (existingArticle && updateExisting) {
+  assertNoUnsyncedStudioEdits(existingArticle)
   if (
     existingArticle.slug !== article.slug.current ||
     existingArticle.authorId !== authorId ||
