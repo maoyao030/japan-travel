@@ -294,3 +294,10 @@
 - 只讀後台公開資料，不改檔案、不 commit、不寫 Sanity。挑選規則：還沒手動優化過的上線文章，住宿頁最前，其次交通、景點；每天換下一篇，優化過的自動不再出現。附網站與後台連結，以及逗號最多的三段。
 - 排定工作的時間、啟用與暫停只由 Darren 決定。分支併進 `main` 後程式會自動改用 `main`，不用改排定工作。
 - 2026-11-03 補充：Darren 要後台也有按鈕。後台第一頁「今天優化哪篇」（`studio/lib/optimizeTool.tsx`）用同一套挑選規則，按「開始改這篇」直接進編輯畫面，「換一篇」看下一篇；挑選規則只在 `scripts/daily-optimize.mjs` 改，推播與後台會一起變。
+
+## 在 Claude Code 對話裡優化文章（Darren 2026-11-03）
+
+- Darren 在後台改文章時常需要 Claude 幫忙（查事實、找連結、順句子），後台做不到。改成在 Claude Code 對話裡優化：Darren 說「優化一篇」，Claude 挑今天輪到的那篇（`npm run optimize:today`），一節一節貼出 Markdown 稿，Darren 在對話裡改，Claude 寫進 `reader-preview.md`、查事實，Darren 說好才上傳。
+- Darren 的文字為準；錯字列出來、他同意才改。後台還沒發布的草稿用 `pull:studio-edits --draft` 先搬進 Git，上傳時確認草稿沒再改過才清掉。
+- 上傳用 `studio` 的 `replace-article-body.mjs --manual`（可改標題，記一筆優化紀錄，來源「在 Claude Code 對話裡改」）。後台照樣可以用。
+- 流程細節見 `content-automation/chat-optimize.md`。

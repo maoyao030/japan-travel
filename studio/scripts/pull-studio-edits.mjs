@@ -8,12 +8,17 @@
  *   npm run pull:studio-edits                         # 列出所有還沒同步的手動修改
  *   npm run pull:studio-edits -- --article=<文章>     # 只看一篇
  *   npm run pull:studio-edits -- --article=<文章> --apply
+ *
+ * 加 --draft：改抓後台還沒按「發布」的草稿（Darren 在後台改到一半，改到對話裡繼續優化時用）。
+ * --draft --apply 只寫 Git（reader-preview.md、publication.json），不動 Sanity、不記優化紀錄；
+ * 草稿的版本記在 content-production/<文章>/chat-optimize.json，上傳時
+ * replace-article-body.mjs --manual --discard-draft 確認草稿沒再改過才清掉（流程見 content-automation/chat-optimize.md）。
  */
 import {mkdir, readFile, writeFile} from 'node:fs/promises'
 import path from 'node:path'
 import {getCliClient} from 'sanity/cli'
 
-import {applyFieldChanges, buildStudioEditReport, editFolderName} from '../../scripts/studio-edits.mjs'
+import {applyFieldChanges, buildStudioEditReport, editFolderName, keepGitSourceLines} from '../../scripts/studio-edits.mjs'
 
 const projectRoot = path.resolve(import.meta.dirname, '../..')
 const options = Object.fromEntries(
@@ -28,6 +33,8 @@ const options = Object.fromEntries(
 const applyChanges = options.apply === true
 const onlySlug = typeof options.article === 'string' ? options.article.replace(/^article-/, '') : null
 if (applyChanges && !onlySlug) throw new Error('--apply 一次只處理一篇，請加 --article=<文章>')
+const draftMode = options.draft === true
+if (draftMode && !onlySlug) throw new Error('--draft 一次只處理一篇，請加 --article=<文章>')
 
 const readOptional = async (file) => {
   try {
@@ -39,6 +46,7 @@ const readOptional = async (file) => {
 }
 
 const client = getCliClient({apiVersion: '2026-08-29'})
+if (draftMode) await pullDraft()
 const articles = await client.fetch(
   `*[_type == "article" && !(_id in path("drafts.**")) && defined(studioEditedAt)
     && (!defined(studioEditsSyncedAt) || dateTime(studioEditedAt) > dateTime(studioEditsSyncedAt))
@@ -82,7 +90,7 @@ for (const article of articles) {
   if (applyChanges) {
     if (article.hasDraft) throw new Error(`${article._id} 在後台還有沒發布的草稿，請先在後台按「發布」或捨棄草稿`)
     if (gitMarkdown !== null) await writeFile(path.join(editDir, 'git-before.md'), gitMarkdown)
-    await writeFile(previewFile, studioMarkdown)
+    await writeFile(previewFile, keepGitSourceLines(gitMarkdown, studioMarkdown))
     if (publication && fieldChanges.length > 0) {
       await writeFile(publicationFile, `${JSON.stringify(applyFieldChanges(publication, fieldChanges), null, 2)}\n`)
     }
@@ -115,3 +123,55 @@ for (const article of articles) {
 
 console.log(JSON.stringify({mode: applyChanges ? 'apply' : 'preview', articles: summary}, null, 2))
 if (!applyChanges) console.log('\n看過 changes.md 後，用 --article=<文章> --apply 把修改寫回稿件並標記已同步。')
+
+async function pullDraft() {
+  const draftId = `drafts.article-${onlySlug}`
+  const draft = await client.fetch(
+    '*[_id == $id][0]{_id, _rev, _updatedAt, title, seoTitle, seoDescription, excerpt, body}',
+    {id: draftId},
+    {perspective: 'raw'},
+  )
+  if (!draft) {
+    console.log(JSON.stringify({message: `article-${onlySlug} 在後台沒有草稿`}, null, 2))
+    process.exit(0)
+  }
+  const packetDir = path.join(projectRoot, 'content-production', onlySlug)
+  const previewFile = path.join(packetDir, 'reader-preview.md')
+  const publicationFile = path.join(packetDir, 'publication.json')
+  const gitMarkdown = await readOptional(previewFile)
+  const publicationText = await readOptional(publicationFile)
+  const publication = publicationText ? JSON.parse(publicationText) : null
+  const {studioMarkdown, fieldChanges, paragraphChanges, report} = buildStudioEditReport(
+    {...draft, _id: `article-${onlySlug}`, studioEditedAt: draft._updatedAt},
+    gitMarkdown,
+    publication,
+  )
+  const editDir = path.join(packetDir, 'studio-edits', `draft-${editFolderName(draft._updatedAt)}`)
+  await mkdir(editDir, {recursive: true})
+  await writeFile(path.join(editDir, 'studio-version.md'), studioMarkdown)
+  await writeFile(path.join(editDir, 'changes.md'), report.replace('- 後台發布時間：', '- 後台草稿最後修改：'))
+  const item = {
+    article: `article-${onlySlug}`,
+    draftRev: draft._rev,
+    draftUpdatedAt: draft._updatedAt,
+    changedFields: fieldChanges.map((change) => change.field),
+    changedParagraphs: paragraphChanges.length,
+    changesFile: path.relative(projectRoot, path.join(editDir, 'changes.md')),
+  }
+  if (applyChanges) {
+    if (gitMarkdown !== null) await writeFile(path.join(editDir, 'git-before.md'), gitMarkdown)
+    await writeFile(previewFile, keepGitSourceLines(gitMarkdown, studioMarkdown))
+    if (publication && fieldChanges.length > 0) {
+      await writeFile(publicationFile, `${JSON.stringify(applyFieldChanges(publication, fieldChanges), null, 2)}\n`)
+    }
+    const stateFile = path.join(packetDir, 'chat-optimize.json')
+    const state = JSON.parse((await readOptional(stateFile)) ?? '{}')
+    await writeFile(
+      stateFile,
+      `${JSON.stringify({...state, draftRev: draft._rev, draftPulledAt: new Date().toISOString(), draftChangesFile: item.changesFile}, null, 2)}\n`,
+    )
+    item.applied = true
+  }
+  console.log(JSON.stringify({mode: applyChanges ? 'draft-apply' : 'draft-preview', ...item}, null, 2))
+  process.exit(0)
+}

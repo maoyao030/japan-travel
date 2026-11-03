@@ -8,6 +8,11 @@
  *
  * 用法（在 studio/ 目錄）：
  *   npx sanity exec scripts/replace-article-body.mjs --with-user-token -- --article=<article-id> [--before-publication=<修改前 publication.json>] [--apply]
+ *
+ * --manual：Darren 在 Claude Code 對話裡優化的稿（流程見 content-automation/chat-optimize.md）。
+ *   H1 可以改（一起換文章標題），SEO 標題、SEO 描述與摘要直接照 publication.json；
+ *   寫入時記一筆優化紀錄（後台 studioEditLog 的來源記「chat」，Git 寫 content-automation/manual-edits-log.json）。
+ *   加 --discard-draft：後台有草稿、而且和 chat-optimize.json 記的版本一樣（已經抓進 Git）時，寫入同時清掉草稿。
  */
 import {createHash} from 'node:crypto'
 import {mkdir, readFile, writeFile} from 'node:fs/promises'
@@ -15,6 +20,7 @@ import path from 'node:path'
 import {getCliClient} from 'sanity/cli'
 
 import {rebuildBody} from '../../scripts/replace-body.mjs'
+import {buildStudioEditReport} from '../../scripts/studio-edits.mjs'
 import {assertNoUnsyncedStudioEdits} from '../../scripts/studio-edit-guard.mjs'
 
 const projectRoot = path.resolve(import.meta.dirname, '../..')
@@ -36,6 +42,9 @@ const markdown = await readFile(path.join(packetDir, 'reader-preview.md'), 'utf8
 const FIELDS = ['title', 'seoTitle', 'seoDescription', 'excerpt']
 const beforePublication = typeof options['before-publication'] === 'string' ? JSON.parse(await readFile(resolve(options['before-publication']), 'utf8')) : null
 const afterPublication = JSON.parse(await readFile(path.join(packetDir, 'publication.json'), 'utf8'))
+const manual = options.manual === true
+const chatStateFile = path.join(packetDir, 'chat-optimize.json')
+const chatState = manual ? await readFile(chatStateFile, 'utf8').then(JSON.parse, () => ({})) : {}
 
 function canonicalJson(value) {
   if (Array.isArray(value)) return `[${value.map(canonicalJson).join(',')}]`
@@ -51,14 +60,19 @@ const externalHrefs = (body) =>
 const client = getCliClient({apiVersion: '2026-08-29'})
 const [article, draft] = await Promise.all([
   client.fetch('*[_id == $id][0]{_id,_rev,_type,body,studioEditedAt,studioEditsSyncedAt,title,seoTitle,seoDescription,excerpt}', {id: articleId}),
-  client.fetch('*[_id == $id][0]{_id}', {id: `drafts.${articleId}`}),
+  client.fetch('*[_id == $id][0]{_id,_rev}', {id: `drafts.${articleId}`}, {perspective: 'raw'}),
 ])
 if (article?._type !== 'article') throw new Error(`找不到文章：${articleId}`)
-if (draft) throw new Error('文章有未發布草稿，拒絕自動修改')
+const discardDraft = Boolean(draft) && manual && options['discard-draft'] === true
+if (draft && !discardDraft) throw new Error('文章有未發布草稿，拒絕自動修改')
+if (discardDraft && draft._rev !== chatState.draftRev) {
+  throw new Error('後台草稿在抓進 Git 之後又改過，先用 pull:studio-edits --draft 重新抓回再上傳')
+}
 assertNoUnsyncedStudioEdits(article)
 
 const h1 = markdown.match(/^# (.+)$/m)?.[1].trim()
-if (h1 !== article.title) throw new Error(`H1 和線上標題不同，這支程式不改標題：\n新稿：${h1}\n線上：${article.title}`)
+if (!h1) throw new Error('稿件沒有 H1')
+if (h1 !== article.title && !manual) throw new Error(`H1 和線上標題不同，這支程式不改標題：\n新稿：${h1}\n線上：${article.title}`)
 
 const renamedFile = path.join(packetDir, 'link-sentences.json')
 const renamedSentences = await readFile(renamedFile, 'utf8').then(JSON.parse, () => [])
@@ -70,7 +84,13 @@ const externalAdded = [...newExternal].filter((href) => !liveExternal.has(href))
 
 const fields = {}
 const fieldsSkipped = []
-if (beforePublication) {
+if (manual) {
+  if (h1 !== article.title) fields.title = h1
+  for (const field of FIELDS.filter((name) => name !== 'title')) {
+    const newValue = afterPublication[field]
+    if (newValue && newValue !== article[field]) fields[field] = newValue
+  }
+} else if (beforePublication) {
   for (const field of FIELDS.filter((name) => name !== 'title')) {
     const newValue = afterPublication[field]
     if (!newValue || newValue === article[field]) continue
@@ -93,6 +113,7 @@ const result = {
   externalAdded,
   fields,
   fieldsSkipped,
+  ...(manual ? {manual: true, discardDraft} : {}),
 }
 console.log(JSON.stringify(result, null, 2))
 if (notCarried.length > 0) throw new Error(`有 ${notCarried.length} 個照片、嵌入或連結搬不過去，沒有寫入`)
@@ -111,8 +132,36 @@ const recovery = {
 }
 await mkdir(path.dirname(recoveryFile), {recursive: true})
 await writeFile(recoveryFile, `${JSON.stringify(recovery, null, 2)}\n`)
-await client.patch(articleId).ifRevisionId(article._rev).set({body, ...fields}).commit({autoGenerateArrayKeys: false})
+const editedAt = new Date().toISOString()
+const patch = client.patch(articleId).ifRevisionId(article._rev).set({body, ...fields})
+if (manual) {
+  // 對話裡的優化也算一次手動優化：記進後台紀錄，同時標成已同步（稿件本來就在 Git）。
+  patch
+    .set({studioEditedAt: editedAt, studioEditsSyncedAt: editedAt})
+    .setIfMissing({studioEditLog: []})
+    .append('studioEditLog', [{_key: `chat${Date.now().toString(36)}`, _type: 'studioEdit', at: editedAt, source: 'chat'}])
+}
+const transaction = client.transaction().patch(patch)
+if (discardDraft) transaction.delete(draft._id)
+await transaction.commit({autoGenerateArrayKeys: false})
 
 const verified = await client.fetch('*[_id == $id][0]{_rev, body}', {id: articleId})
 if (bodyHash(verified?.body) !== recovery.expectedAppliedBodyHash) throw new Error('寫入後的正文與預期不一致，請用 --rollback 回復')
+if (manual) {
+  const {paragraphChanges} = buildStudioEditReport(article, markdown, null)
+  const logFile = path.join(projectRoot, 'content-automation', 'manual-edits-log.json')
+  const log = await readFile(logFile, 'utf8').then(JSON.parse, () => ({edits: []}))
+  log.edits.push({
+    article: articleId,
+    pulledAt: editedAt,
+    publishTimes: [editedAt],
+    source: 'chat',
+    changedParagraphs: paragraphChanges.length,
+    changedFields: Object.keys(fields),
+    ...(chatState.draftChangesFile ? {changesFile: chatState.draftChangesFile} : {}),
+  })
+  await writeFile(logFile, `${JSON.stringify(log, null, 2)}\n`)
+  const {draftRev: _draftRev, ...rest} = chatState
+  await writeFile(chatStateFile, `${JSON.stringify({...rest, lastPublishedAt: editedAt}, null, 2)}\n`)
+}
 console.log(JSON.stringify({verifiedRevision: verified._rev, recoveryFile}, null, 2))

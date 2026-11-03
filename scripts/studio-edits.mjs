@@ -82,3 +82,23 @@ export function applyFieldChanges(publication, fieldChanges) {
   }
   return next
 }
+
+/**
+ * 後台正文轉回 Markdown 時，資料來源與延伸資料的條目會變成「- [名稱](網址)，說明」，
+ * Git 稿件原本寫「- **名稱**，說明網址」。名稱與網址都一樣的條目改回 Git 的原文，免得被當成修改。
+ */
+export function keepGitSourceLines(gitMarkdown, studioMarkdown) {
+  if (!gitMarkdown) return studioMarkdown
+  const original = new Map()
+  for (const line of gitMarkdown.split('\n')) {
+    const match = line.match(/^- \*\*(.+?)\*\*，.*?(https?:\/\/\S+)$/)
+    if (match) original.set(`${match[1]}\n${match[2]}`, line)
+  }
+  return studioMarkdown
+    .split('\n')
+    .map((line) => {
+      const match = line.match(/^- \[(.+?)\]\((https?:\/\/[^)\s]+)\)，/)
+      return (match && original.get(`${match[1]}\n${match[2]}`)) ?? line
+    })
+    .join('\n')
+}

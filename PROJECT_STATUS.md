@@ -1833,3 +1833,17 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - Darren 想在後台按一下就跳出一篇。後台新增第一頁「今天優化哪篇」（`studio/lib/optimizeTool.tsx`，打開後台先看到它）：顯示今天輪到的文章、為什麼是這篇、進度與逗號最多的三段；按「開始改這篇」直接打開編輯畫面，「在網站上看」開網站，「換一篇」看下一篇。挑選規則共用 `scripts/daily-optimize.mjs`，和每日推播同一篇。
 - `studio/package.json` 加 `@sanity/ui`（原本就由 sanity 帶進來，現在寫明）。`sanity build` 通過；模擬登入實測三個按鈕都正常。
 - 唯一下一步不變：在 Darren 的電腦合併分支並部署線上後台。
+
+## 2026-11-03 Claude Code：在對話裡優化文章
+
+- **起因**：Darren 在後台優化東川時，很多地方需要 Claude 幫忙（查事實、找連結、順句子），後台做不到。Darren 決定改成在 Claude Code 對話裡叫 Claude、挑一篇、在對話裡改 Markdown 稿。
+- **已完成**：
+  - 流程說明 `content-automation/chat-optimize.md`，`AGENTS.md`、`RULES_OVERVIEW.md` 加段落。口令「優化一篇」「繼續優化 <文章>」「上傳」。
+  - `pull:studio-edits --draft`：抓後台還沒發布的草稿，`--apply` 只寫 Git，草稿版本記在 `content-production/<文章>/chat-optimize.json`。抓回時沒改的資料來源條目維持 Git 原本寫法（`keepGitSourceLines`，新測試）。
+  - `replace-article-body.mjs --manual`：可以改標題、SEO 欄位照 `publication.json`；後台 `studioEditLog` 加一筆（新欄位 `source: chat`，後台顯示「在 Claude Code 對話裡改」），Git 的 `manual-edits-log.json` 加一筆；`--discard-draft` 確認草稿和抓進 Git 的版本一樣才清掉。
+  - 東川：Darren 的後台草稿（標題＋12 段，到「搭 Ideyu 號／自行車」為止）已搬進 `content-production/higashikawa/reader-preview.md`，草稿還留在後台，線上版沒動。預覽上傳：7 個連結、照片、影片都搬得過去，`check-voice` 通過。
+- **測試**：`npm test` 221 項通過（雲端機器先跑了根目錄 `npm ci`），`sanity build` 通過。
+- **尚未完成**：
+  - 東川有幾個錯字與建議（因次、的的、要會、「東川町市中心的有」、H2 只寫 JR 站但底下有機場的 H3、SEO 標題還是舊的）等 Darren 決定；之後從「東川町景點」那一節繼續優化。
+  - 後台的新欄位要重新部署後台才會顯示中文名稱（在 Darren 電腦 `studio/` 跑 `npx sanity deploy`）；不部署也不影響使用。
+- **唯一下一步**：Darren 決定東川那幾個錯字怎麼改，然後在對話裡繼續優化下一節。

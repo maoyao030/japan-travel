@@ -3,7 +3,7 @@ import test from 'node:test'
 
 import {parseMarkdownBody} from '../scripts/markdown-to-portable-text.mjs'
 import {assertNoUnsyncedStudioEdits, hasUnsyncedStudioEdits} from '../scripts/studio-edit-guard.mjs'
-import {applyFieldChanges, buildStudioEditReport, editFolderName} from '../scripts/studio-edits.mjs'
+import {applyFieldChanges, buildStudioEditReport, editFolderName, keepGitSourceLines} from '../scripts/studio-edits.mjs'
 import {articlePath} from '../studio/lib/articleUrl.ts'
 
 test('後台改過、還沒同步回 Git 時，改寫正文的工具會停下來', () => {
@@ -59,4 +59,14 @@ test('後台的「開啟預覽」網址和網站的文章網址規則一致', ()
     '/places/hokkaido/sounkyo-stay/',
   )
   assert.equal(articlePath({id: 'article-x', slug: 'stay', hub: null}), undefined)
+})
+
+test('抓回後台版本時，沒改的資料來源條目維持 Git 原本的寫法', () => {
+  const git = ['## 延伸資料', '', '- **東川觀光協會**，官方介紹。https://example.jp/', '- **道草館**，開館時間。https://example.jp/m/'].join('\n')
+  const studio = ['## 延伸資料', '', '- [東川觀光協會](https://example.jp/)，官方介紹。', '- [道草館](https://example.jp/other/)，開館時間。'].join('\n')
+  assert.equal(
+    keepGitSourceLines(git, studio),
+    ['## 延伸資料', '', '- **東川觀光協會**，官方介紹。https://example.jp/', '- [道草館](https://example.jp/other/)，開館時間。'].join('\n'),
+  )
+  assert.equal(keepGitSourceLines(null, studio), studio)
 })

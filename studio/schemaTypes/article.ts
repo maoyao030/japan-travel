@@ -301,7 +301,7 @@ export const article = defineType({
       group: 'settings',
       title: '後台手動修改紀錄',
       description:
-        '每次在後台按「發布」自動加一筆，不用填。優化了幾次、哪幾天看這裡；成效報表見 content-automation/manual-edits-report.md。',
+        '每次在後台按「發布」、或在 Claude Code 對話裡優化後上傳，自動加一筆，不用填。優化了幾次、哪幾天看這裡；成效報表見 content-automation/manual-edits-report.md。',
       type: 'array',
       readOnly: true,
       of: [
@@ -309,13 +309,22 @@ export const article = defineType({
           type: 'object',
           name: 'studioEdit',
           title: '手動發布',
-          fields: [defineField({name: 'at', title: '時間', type: 'datetime'})],
+          fields: [
+            defineField({name: 'at', title: '時間', type: 'datetime'}),
+            defineField({
+              name: 'source',
+              title: '在哪裡改的',
+              type: 'string',
+              options: {list: [{title: '在 Claude Code 對話裡改', value: 'chat'}]},
+            }),
+          ],
           preview: {
-            select: {at: 'at'},
-            prepare: ({at}) => ({
+            select: {at: 'at', source: 'source'},
+            prepare: ({at, source}) => ({
               title: at
                 ? new Date(at).toLocaleString('zh-TW', {timeZone: 'Asia/Taipei', hour12: false})
                 : '手動發布',
+              subtitle: source === 'chat' ? '在 Claude Code 對話裡改' : '在後台改',
             }),
           },
         },
