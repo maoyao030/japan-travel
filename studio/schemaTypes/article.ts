@@ -4,23 +4,34 @@ export const article = defineType({
   name: 'article',
   title: '文章',
   type: 'document',
+  // 打開文章先看到標題與正文；摘要、封面與網址等設定放在其他分頁，避免手動修改時誤動。
+  groups: [
+    {name: 'content', title: '標題與正文', default: true},
+    {name: 'summary', title: '摘要、封面與搜尋結果'},
+    {name: 'settings', title: '網址與設定'},
+  ],
   fields: [
     defineField({
       name: 'title',
+      group: 'content',
       title: '文章標題（H1）',
       type: 'string',
       validation: (rule) => rule.required().error('請填寫文章標題'),
     }),
     defineField({
       name: 'slug',
+      group: 'settings',
+      readOnly: ({document}) => Boolean(document?.publishedAt),
       title: '網址代稱',
-      description: '使用英文小寫與連字號，例如：ginzan-onsen-ryokan。發布後不要任意更改。',
+      description:
+        '使用英文小寫與連字號，例如：ginzan-onsen-ryokan。文章有發布日期後就鎖住，改了網址舊連結會失效。',
       type: 'slug',
       options: {source: 'title', maxLength: 96},
       validation: (rule) => rule.required().error('請產生網址代稱'),
     }),
     defineField({
       name: 'excerpt',
+      group: 'summary',
       title: '站內摘要',
       description: '用於文章列表與相關文章區塊。',
       type: 'text',
@@ -29,6 +40,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'body',
+      group: 'content',
       title: '文章正文',
       description:
         'FAQ 請使用含「常見問題」或「FAQ」的二級標題，每題使用三級標題，下一段直接填答案；網站會從同一份正文自動產生 FAQPage 資料。',
@@ -107,6 +119,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'cover',
+      group: 'summary',
       title: '封面圖片',
       type: 'image',
       options: {hotspot: true},
@@ -141,6 +154,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'author',
+      group: 'settings',
       title: '作者',
       type: 'reference',
       to: [{type: 'author'}],
@@ -148,6 +162,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'primaryHub',
+      group: 'settings',
       title: '主要主題中心',
       description: '每篇文章只能歸屬一個主要主題中心，這個關係會決定正式網址。',
       type: 'reference',
@@ -156,6 +171,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'aspect',
+      group: 'settings',
       title: '面向',
       description: '這篇在回答哪一類問題。同一面向收錄滿 5 篇時，網站會建立目錄頁，例如 /stay/。',
       type: 'string',
@@ -175,6 +191,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'months',
+      group: 'settings',
       title: '相關月份',
       description:
         '這篇特別適合哪幾個月閱讀，例如 12 月天氣頁填 12。月份頁收錄滿 5 個項目才會建立。',
@@ -194,6 +211,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'tags',
+      group: 'settings',
       title: '橫向情境 Tag',
       description:
         '從已建立的受控 Tag 選擇（例如親子、冬季、自駕），不自行輸入近義詞。Tag 不會改變文章正式網址。',
@@ -203,6 +221,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'relatedArticles',
+      group: 'settings',
       title: '相關文章',
       type: 'array',
       of: [{type: 'reference', to: [{type: 'article'}]}],
@@ -210,13 +229,15 @@ export const article = defineType({
     }),
     defineField({
       name: 'publishedAt',
+      group: 'settings',
       title: '發布日期',
       type: 'datetime',
       validation: (rule) => rule.required().error('請填寫發布日期'),
     }),
-    defineField({name: 'updatedAt', title: '重要更新日期', type: 'datetime'}),
+    defineField({name: 'updatedAt', title: '重要更新日期', type: 'datetime', group: 'settings'}),
     defineField({
       name: 'seoTitle',
+      group: 'summary',
       title: 'SEO 標題',
       description: '顯示在搜尋結果的標題，建議不超過 60 個字元。',
       type: 'string',
@@ -224,6 +245,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'seoDescription',
+      group: 'summary',
       title: 'SEO 描述',
       description: '搜尋結果摘要，建議約 70～155 個字元。',
       type: 'text',
@@ -232,12 +254,14 @@ export const article = defineType({
     }),
     defineField({
       name: 'canonicalUrl',
+      group: 'settings',
       title: '指定標準網址',
       description: '只有內容原始版本位於其他網址時才填寫。',
       type: 'url',
     }),
     defineField({
       name: 'noindex',
+      group: 'settings',
       title: '禁止搜尋引擎索引',
       description: '新文章預設開啟；正式上線前完成檢查並取得核准後才關閉。',
       type: 'boolean',
@@ -245,6 +269,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'sponsored',
+      group: 'settings',
       title: '贊助內容',
       description: '若文章涉及付費合作，請開啟此項目。',
       type: 'boolean',
@@ -252,6 +277,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'sponsorName',
+      group: 'settings',
       title: '合作廠商名稱',
       type: 'string',
       hidden: ({document}) => !document?.sponsored,
@@ -263,6 +289,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'studioEditedAt',
+      group: 'settings',
       title: '最後在後台手動發布',
       description:
         '在後台按「發布」時自動記錄，不用填。這個時間比下面的「已同步回 Git」新，代表這篇有手動修改還沒抓回 Git，自動工具不會整篇覆蓋這篇。',
@@ -271,6 +298,7 @@ export const article = defineType({
     }),
     defineField({
       name: 'studioEditsSyncedAt',
+      group: 'settings',
       title: '手動修改已同步回 Git',
       description: '抓回手動修改的工具（pull:studio-edits）寫的，不用填。',
       type: 'datetime',
