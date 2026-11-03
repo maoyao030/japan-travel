@@ -261,8 +261,28 @@ export const article = defineType({
           return true
         }),
     }),
+    defineField({
+      name: 'studioEditedAt',
+      title: '最後在後台手動發布',
+      description:
+        '在後台按「發布」時自動記錄，不用填。這個時間比下面的「已同步回 Git」新，代表這篇有手動修改還沒抓回 Git，自動工具不會整篇覆蓋這篇。',
+      type: 'datetime',
+      readOnly: true,
+    }),
+    defineField({
+      name: 'studioEditsSyncedAt',
+      title: '手動修改已同步回 Git',
+      description: '抓回手動修改的工具（pull:studio-edits）寫的，不用填。',
+      type: 'datetime',
+      readOnly: true,
+    }),
   ],
   orderings: [
+    {
+      title: '最近修改（新到舊）',
+      name: 'updatedDesc',
+      by: [{field: '_updatedAt', direction: 'desc'}],
+    },
     {
       title: '發布日期（新到舊）',
       name: 'publishedAtDesc',

@@ -1787,3 +1787,19 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **沒同步的 13 筆**：只有跨地點引用、沒有日文原文摘錄，或欄位不完整（多是禮文島美食停放稿），清單在紀錄檔。
 - **之後**：D1 裡有 202 筆事實下次查核日在 11 月底前，自動寫作的重查流程會照到期清單處理。新文章寫完後，可以再跑一次這兩支工具同步。
 - **唯一下一步**：看自動寫作下一輪是否正常讀到更新後的地點事實表。
+
+## 2026-11-03 Claude Code：後台手動修改（分支 `claude/gallant-ptolemy-vrfqnz`）
+
+- **起因**：Darren 覺得只靠 AI 寫的文章品質不夠，研究與大綱參考競品的方向可以留，想要一個能自己動手改文章的地方。
+- **已完成**：
+  - Sanity 後台改成給 Darren 用：繁體中文介面（`@sanity/locale-zh-hant`）；左邊清單分成「網站上的文章」（最近改過的在前）、「還沒開放搜尋的文章」、「後台改過、還沒同步回 Git」；文章「⋯」選單的「開啟預覽」打開網站上的那一頁（網址規則和網站一致，45 篇都對過）；查詢工具 Vision 只在本機開發時出現。`sanity build` 通過。
+  - 手動修改的保護：在後台按「發布」自動記 `studioEditedAt`。`replace-article-body`、`revise-article-text`、`replace-article-paragraphs`、`link-bare-urls`、`publish-prepared-article --update-existing` 看到還沒同步的手動修改就停下來（`scripts/studio-edit-guard.mjs`）。自動寫作遇到時記進上傳停放（`local-writer.md`「失敗」）。
+  - 抓回手動修改：`studio` 的 `npm run pull:studio-edits`，產生修改前後對照 `content-production/<文章>/studio-edits/<時間>/changes.md`；`--apply` 才寫回 `reader-preview.md`、`publication.json` 並記 `studioEditsSyncedAt`。後台正文轉回 Markdown 的工具 `scripts/portable-text-to-markdown.mjs`，用旭川美食線上版來回轉換，文字完全一致。
+  - 線上後台網址代稱設成 `offpathnotes`（`studio/sanity.cli.ts`），還沒部署。
+- **順便修的**：旭川美食、宗谷岬交通兩篇各有一張只有一欄的時刻表，網站顯示成一串「| 9:37 | |---|」。Git 稿件改成一句話列四個時間；`markdown-to-portable-text.mjs` 以後遇到單欄表格直接報錯。**線上版還沒改**，可以當 Darren 在後台的第一個練習，或由人工 session 用 `revise-article-text` 換上。
+- **測試**：`npm test` 214 項通過（新增 `tests/portable-text-to-markdown.test.ts`、`tests/studio-edits.test.ts`）。
+- **尚未完成**：
+  - 線上後台要在 Darren 已登入 Sanity CLI 的電腦部署一次（`studio/` 裡 `npm install`、`npx sanity deploy`），雲端 session 沒有 Sanity 權限。
+  - Sanity 沒有 Webhook 接 Cloudflare 重建，後台改完要等下一次推 `main` 網站才更新；要即時更新就得設定 Webhook（`DEPLOYMENT.md`）。
+  - 主題中心（Hub）的手動修改還沒有保護。
+- **唯一下一步**：在 Darren 的電腦（主資料夾）部署線上後台，登入後試改一篇。

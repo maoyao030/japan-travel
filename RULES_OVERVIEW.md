@@ -141,6 +141,7 @@
   5. CI 通過後推到 `main`。
 - 改之前先給 Darren 看改法。
 - 停放的文章由人工 session 處理。
+- **Darren 自己改**（2026-11-03）：在後台（`offpathnotes.sanity.studio`）直接改字、按「發布」。後台會記下改過，自動工具就不會蓋掉；人工 session 用 `pull:studio-edits` 把修改抓回 Git，好的改法收進範文。用法見 `studio/README.md`「手動修改文章」。
 
 ## 12. 資料放在哪
 

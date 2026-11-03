@@ -1,6 +1,10 @@
-import {defineConfig} from 'sanity'
+import {zhHantLocale} from '@sanity/locale-zh-hant'
+import {defineConfig, isDev} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
+import {SITE_URL, articlePath} from './lib/articleUrl'
+import {withStudioEditStamp} from './lib/studioEditStamp'
+import {structure} from './lib/structure'
 import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
@@ -11,9 +15,31 @@ export default defineConfig({
   projectId: process.env.SANITY_STUDIO_PROJECT_ID ?? 'e8ctf7ee',
   dataset: process.env.SANITY_STUDIO_DATASET ?? 'production',
 
-  plugins: [structureTool(), visionTool()],
+  // 介面用繁體中文；查詢工具（Vision）只在本機開發時出現，線上後台不放。
+  plugins: [zhHantLocale(), structureTool({structure}), ...(isDev ? [visionTool()] : [])],
 
   schema: {
     types: schemaTypes,
+  },
+
+  document: {
+    // 在後台按「發布」時記下手動修改的時間，自動工具就不會蓋掉。
+    actions: (previous, context) =>
+      context.schemaType === 'article'
+        ? previous.map((action) =>
+            action.action === 'publish' ? withStudioEditStamp(action) : action,
+          )
+        : previous,
+
+    // 文章右上角選單的「開啟預覽」會打開網站上的這一頁（網站要重建後才看得到新內容）。
+    productionUrl: async (previous, {document, getClient}) => {
+      if (document._type !== 'article') return previous
+      const data = await getClient({apiVersion: '2026-08-29'}).fetch(
+        `*[_id == $id][0]{"slug": slug.current, "hub": primaryHub->{"slug": slug.current, category, "landing": landingArticle._ref, "parent": parentHub->slug.current}}`,
+        {id: document._id.replace(/^drafts\./, '')},
+      )
+      const path = data ? articlePath({id: document._id, ...data}) : undefined
+      return path ? `${SITE_URL}${path}` : previous
+    },
   },
 })

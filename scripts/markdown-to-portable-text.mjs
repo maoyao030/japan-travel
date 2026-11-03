@@ -134,6 +134,10 @@ export function parseMarkdownBody(markdownSource) {
       continue
     }
 
+    if (trimmed.startsWith('|') && /^\|\s*:?-{3,}:?\s*\|$/.test(lines[index + 1]?.trim() ?? '')) {
+      throw new Error(`表格「${trimmed}」只有一欄，網站顯示不出來；請改成兩欄以上，或改寫成句子`)
+    }
+
     if (trimmed.startsWith('|') && lines[index + 1] && isTableDivider(lines[index + 1])) {
       const columns = splitTableRow(trimmed)
       const rows = []

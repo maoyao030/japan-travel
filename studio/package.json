@@ -18,12 +18,14 @@
     "prepare:parent-hub": "sanity exec scripts/prepare-parent-hub.mjs --with-user-token --",
     "prepare:child-hub": "sanity exec scripts/prepare-child-hub.mjs --with-user-token --",
     "activate:child-hub": "sanity exec scripts/activate-child-hub.mjs --with-user-token --",
-    "publish:article-body-replace": "sanity exec scripts/replace-article-body.mjs --with-user-token --"
+    "publish:article-body-replace": "sanity exec scripts/replace-article-body.mjs --with-user-token --",
+    "pull:studio-edits": "sanity exec scripts/pull-studio-edits.mjs --with-user-token --"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
+    "@sanity/locale-zh-hant": "^2.2.39",
     "@sanity/vision": "^6.10.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",

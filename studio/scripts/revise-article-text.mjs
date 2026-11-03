@@ -13,6 +13,7 @@ import path from 'node:path'
 import {getCliClient} from 'sanity/cli'
 
 import {reviseBodyText} from '../../scripts/revise-body-text.mjs'
+import {assertNoUnsyncedStudioEdits} from '../../scripts/studio-edit-guard.mjs'
 
 const projectRoot = path.resolve(import.meta.dirname, '../..')
 const options = Object.fromEntries(
@@ -47,11 +48,12 @@ const bodyHash = (body) => createHash('sha256').update(canonicalJson(body)).dige
 
 const client = getCliClient({apiVersion: '2026-08-29'})
 const [article, draft] = await Promise.all([
-  client.fetch('*[_id == $id][0]{_id,_rev,_type,body,title,seoTitle,seoDescription,excerpt}', {id: articleId}),
+  client.fetch('*[_id == $id][0]{_id,_rev,_type,body,studioEditedAt,studioEditsSyncedAt,title,seoTitle,seoDescription,excerpt}', {id: articleId}),
   client.fetch('*[_id == $id][0]{_id}', {id: `drafts.${articleId}`}),
 ])
 if (article?._type !== 'article') throw new Error(`找不到文章：${articleId}`)
 if (draft) throw new Error('文章有未發布草稿，拒絕自動修改')
+assertNoUnsyncedStudioEdits(article)
 
 const {body, changes, unmatched} = reviseBodyText(article.body, beforeMarkdown, afterMarkdown)
 const fields = {}

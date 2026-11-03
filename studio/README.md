@@ -21,3 +21,35 @@ Sanity 是存放文章、主題中心、作者與情境 Tag 的後台；網站�
 ## 腳本
 
 `scripts/` 內的腳本都先 dry-run，再用同一份輸入加 `--apply`。本機用 `--with-user-token` 登入；雲端 routine 用 `SANITY_AUTH_TOKEN`。用途見各檔案開頭與 `package.json` 的 scripts。
+
+## 手動修改文章（2026-11-03）
+
+後台就是 Darren 直接改文章的地方：打字改、按「發布」，不用碰 Git 或程式。
+
+- **線上後台**：<https://offpathnotes.sanity.studio>（要先部署一次，見下面）。用建立 Sanity 專案的同一個帳號登入。介面是繁體中文。
+- **找文章**：左邊「網站上的文章」，最近改過的排在前面；上方放大鏡可以搜標題。
+- **改完**：右下角按「發布」。網站要等下一次重建才會變（目前是每次推 `main` 時，自動寫作一天會推好幾次）。
+- **看網站上的樣子**：文章右上角「⋯」選單的「開啟預覽」，會打開網站上的這一頁。
+- **按發布時後台會自動記下「最後在後台手動發布」**。會用 Git 稿件改寫正文的工具（`replace-article-body`、`revise-article-text`、`replace-article-paragraphs`、`link-bare-urls`、`publish-prepared-article --update-existing`）看到還沒同步的手動修改就停下來，不會蓋掉 Darren 的修改。補內連、加照片與嵌入的工具只在現有正文上加東西，照常可以用。
+- **把手動修改抓回 Git**：左邊「後台改過、還沒同步回 Git」會列出這些文章。人工 session 在 `studio/` 跑：
+
+  ```bash
+  npm run pull:studio-edits -- --article=<文章>
+  ```
+
+  先只產生 `content-production/<文章>/studio-edits/<時間>/changes.md`（修改前後對照）與 `studio-version.md`，看過後加 `--apply`：把後台版本寫回 `reader-preview.md`、標題與摘要寫回 `publication.json`，並在後台記下「已同步回 Git」。之後照 `changes.md` 最後的清單補事實來源、同步 `draft-tagged.md`，值得學的改法記進寫作 Skill 的 `examples.md`。
+- 主題中心（Hub）的手動修改還沒有這個保護，Hub 文案先不要在後台改。
+
+### 部署線上後台
+
+第一次（或改了 `sanity.config.ts`、`schemaTypes/`、`lib/` 之後）在 Darren 已登入 Sanity CLI 的電腦上，於 `studio/` 執行：
+
+```bash
+npm install
+```
+
+```bash
+npx sanity deploy
+```
+
+網址代稱寫在 `sanity.cli.ts` 的 `studioHost`（`offpathnotes`）；被別人用走時改一個再部署。部署完 CLI 會提示把 `appId` 加進 `sanity.cli.ts`，照做並 commit。

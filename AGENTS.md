@@ -275,3 +275,9 @@
 - 本段補充「三篇重寫稿上線（2026-11-01）」：已上線文章照 `content-automation/rewrite-live.md` 重寫一輪，40 篇已換上網站，`wakkanai-ferry`（渡輪預約系統停機中）、`rebun-island-food`（觀光協會網站打不開、事實不夠）維持線上版，細節見 `PROJECT_STATUS.md` 2026-11-02 段落。
 - 官網打不開時：不太變的事實可以用網頁存檔；會變的要有現行官方來源，否則刪或改成到觀光案內所確認；正文不叫讀者去看打不開的網站。
 - 只查到一季的停駛或休業公告，只寫那一季、標年份，不寫「每年」。
+
+## 後台手動修改（Darren 2026-11-03）
+
+- Darren 覺得只靠 AI 寫的品質不夠，研究與大綱參考競品的方向可以留；文字要能自己動手改。手動修改的地方是 Sanity 後台（線上網址 `offpathnotes.sanity.studio`，繁體中文介面），用法見 `studio/README.md`「手動修改文章」。
+- 在後台按「發布」會自動記下 `studioEditedAt`。用 Git 稿件改寫正文的工具看到還沒同步的手動修改就停下來；不得繞過、不得清掉這個時間。自動寫作遇到時照 `content-automation/local-writer.md`「失敗」記進上傳停放。
+- 手動修改由人工 session 用 `studio` 的 `npm run pull:studio-edits` 抓回 Git（先看對照，再 `--apply`），之後補事實來源、同步 `draft-tagged.md`，值得學的改法記進寫作 Skill 的 `examples.md`。Darren 改過的文字以他的版本為準，不由 AI 改回去。
