@@ -1819,3 +1819,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 測試 217 項通過（新增 `tests/manual-edits.test.ts`）。
 - 尚未完成：Search Console 每頁每天的資料還沒有自動取得的方法；Ahrefs 裡沒有本站專案。第一次優化後要滿 28 天才比得出來，不急。
 - 唯一下一步不變：在 Darren 的電腦合併分支並部署線上後台。
+
+### 2026-11-03 補充：每日優化提醒
+
+- Darren 想要每天直接收到一篇還沒優化的文章。新增 `scripts/daily-optimize.mjs`、`scripts/daily-optimize-pick.mjs`（`npm run optimize:today`）與 `tests/daily-optimize.test.ts`：只讀後台公開資料，挑還沒手動優化的上線文章（住宿最前，其次交通、景點，同類越早上線越前），每天換下一篇；扣掉已優化的篇數，優化掉一篇後隔天不會跳過下一篇。訊息附網站連結、後台連結與逗號最多的三段。
+- 後台的「面向」欄位 45 篇都沒填，頁型從網址代稱判斷（stay、transport、ferry、sights…），地點主頁排最後。
+- 建立雲端排定工作「繞路筆記每日優化提醒」（`trig_015Yq9K6kSXsTH3RDzxjghvJ`），每天台北 08:47，每次開新 session、推播到 Darren 手機；唯讀。程式在 `main` 上找不到時改用本分支，所以合併後不用改排定工作。11/3 手動觸發一次測試。
+- 測試 220 項通過。
+- 後台還沒部署前，提醒裡的後台連結會打不開；網站連結正常。

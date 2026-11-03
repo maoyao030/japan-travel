@@ -287,3 +287,9 @@
 - Darren 要知道哪幾篇在幾月幾號手動優化、優化了幾次，才判斷得出優化有沒有效。每次在後台按「發布」自動記一筆（`studioEditLog`），抓回 Git 時寫進 `content-automation/manual-edits-log.json`；兩份紀錄都不得刪改。
 - 報表 `npm run report:manual-edits` 產生 `content-automation/manual-edits-report.md`。成效看第一次優化前後各 28 天的 Search Console 點擊、曝光與平均排名，並和同期沒優化的文章比；優化後未滿 28 天標「累積中」，不下結論。
 - Search Console 資料怎麼自動取得還沒定（雲端沒有 Darren 的 Google 權限）。
+
+## 每日優化提醒（Darren 2026-11-03）
+
+- Darren 要系統每天主動推一篇還沒優化的文章給他。雲端排定工作「繞路筆記每日優化提醒」（`trig_015Yq9K6kSXsTH3RDzxjghvJ`）每天台北 08:47 跑 `node scripts/daily-optimize-pick.mjs`，結果推播到 Darren 手機的 Claude app。
+- 只讀後台公開資料，不改檔案、不 commit、不寫 Sanity。挑選規則：還沒手動優化過的上線文章，住宿頁最前，其次交通、景點；每天換下一篇，優化過的自動不再出現。附網站與後台連結，以及逗號最多的三段。
+- 排定工作的時間、啟用與暫停只由 Darren 決定。分支併進 `main` 後程式會自動改用 `main`，不用改排定工作。

@@ -42,6 +42,7 @@ Sanity 是存放文章、主題中心、作者與情境 Tag 的後台；網站�
   先只產生 `content-production/<文章>/studio-edits/<時間>/changes.md`（修改前後對照）與 `studio-version.md`，看過後加 `--apply`：把後台版本寫回 `reader-preview.md`、標題與摘要寫回 `publication.json`，並在後台記下「已同步回 Git」。之後照 `changes.md` 最後的清單補事實來源、同步 `draft-tagged.md`，值得學的改法記進寫作 Skill 的 `examples.md`。
 - 主題中心（Hub）的手動修改還沒有這個保護，Hub 文案先不要在後台改。
 - **優化紀錄**：每次在後台按「發布」，文章的「網址與設定」分頁裡「後台手動修改紀錄」會自動加一筆時間；文章清單會顯示「手動改過 N 次」，左邊「手動優化過的文章」列出全部。抓回 Git 時（`pull:studio-edits --apply`）同時寫進 `content-automation/manual-edits-log.json`，後台紀錄之後被覆蓋也還在。
+- **每日提醒**：每天台北 08:47，手機的 Claude app 會收到一篇還沒優化的文章（住宿頁先），點後台連結就能改。想先看今天輪到哪篇，在專案根目錄跑 `npm run optimize:today`。
 - **成效報表**：在專案根目錄跑 `npm run report:manual-edits`，產生 `content-automation/manual-edits-report.md`：每篇優化了幾次、哪幾天，以及有 Search Console 資料時，第一次優化前後各 28 天的點擊、曝光、平均排名，和同期沒優化的文章比。Search Console 資料放 `content-automation/search-console/pages-daily.csv`（欄位 `date,page,clicks,impressions,position`，每頁每天一列）。
 
 ### 部署線上後台
