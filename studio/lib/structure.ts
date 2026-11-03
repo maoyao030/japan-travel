@@ -50,6 +50,17 @@ export const structure: StructureResolver = (S) => {
             '_type == "article" && defined(studioEditedAt) && (!defined(studioEditsSyncedAt) || studioEditedAt > studioEditsSyncedAt)',
           ),
         ),
+      S.listItem()
+        .id('manually-edited-articles')
+        .title('手動優化過的文章')
+        .schemaType('article')
+        .child(
+          articles(
+            'manually-edited-articles-list',
+            '手動優化過的文章（最近改過的在前）',
+            '_type == "article" && count(studioEditLog) > 0',
+          ),
+        ),
       S.divider(),
       S.documentTypeListItem('article').title('全部文章'),
       S.documentTypeListItem('hub').title('主題中心'),

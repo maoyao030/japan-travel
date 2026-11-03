@@ -281,3 +281,9 @@
 - Darren 覺得只靠 AI 寫的品質不夠，研究與大綱參考競品的方向可以留；文字要能自己動手改。手動修改的地方是 Sanity 後台（線上網址 `offpathnotes.sanity.studio`，繁體中文介面），用法見 `studio/README.md`「手動修改文章」。
 - 在後台按「發布」會自動記下 `studioEditedAt`。用 Git 稿件改寫正文的工具看到還沒同步的手動修改就停下來；不得繞過、不得清掉這個時間。自動寫作遇到時照 `content-automation/local-writer.md`「失敗」記進上傳停放。
 - 手動修改由人工 session 用 `studio` 的 `npm run pull:studio-edits` 抓回 Git（先看對照，再 `--apply`），之後補事實來源、同步 `draft-tagged.md`，值得學的改法記進寫作 Skill 的 `examples.md`。Darren 改過的文字以他的版本為準，不由 AI 改回去。
+
+## 手動優化紀錄與成效（Darren 2026-11-03）
+
+- Darren 要知道哪幾篇在幾月幾號手動優化、優化了幾次，才判斷得出優化有沒有效。每次在後台按「發布」自動記一筆（`studioEditLog`），抓回 Git 時寫進 `content-automation/manual-edits-log.json`；兩份紀錄都不得刪改。
+- 報表 `npm run report:manual-edits` 產生 `content-automation/manual-edits-report.md`。成效看第一次優化前後各 28 天的 Search Console 點擊、曝光與平均排名，並和同期沒優化的文章比；優化後未滿 28 天標「累積中」，不下結論。
+- Search Console 資料怎麼自動取得還沒定（雲端沒有 Darren 的 Google 權限）。

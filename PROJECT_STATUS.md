@@ -1810,3 +1810,12 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 預覽抓到並修好：左邊清單少了必要的 `id`，後台會顯示「讀取結構時遇到錯誤」；正文擠在欄位最下面的小框裡，改成文章分三個分頁、預設只顯示「標題與正文」；「開啟預覽」在這個 Sanity 版本沒出現，改成在「發布」旁加「在網站上看這篇」（`studio/lib/viewOnSiteAction.ts`）。
 - 另外拿掉文章的「刪除」「複製」，網址代稱在有發布日期後鎖住，避免手動修改時誤動。
 - 唯一下一步不變：在 Darren 的電腦合併分支並部署線上後台。
+
+### 2026-11-03 補充：手動優化紀錄與成效
+
+- Darren 要記錄哪幾篇在幾月幾號優化、優化幾次，才知道優化有沒有效。
+- 已完成：後台每次按「發布」自動加一筆 `studioEditLog`（文章清單顯示「手動改過 N 次」，左邊多「手動優化過的文章」）；`pull:studio-edits --apply` 同時寫 `content-automation/manual-edits-log.json`；`npm run report:manual-edits`（`scripts/manual-edits.mjs`、`scripts/manual-edits-report.mjs`）產生 `content-automation/manual-edits-report.md`，次數照台北日期算（同一天按幾次發布算一次），成效比較第一次優化前後各 28 天，和同期沒優化的文章比。報表讀後台公開資料，不用權杖，雲端也能跑。
+- `studio/package.json` 加 `"type": "module"`（Node 讀 `studio/lib/articleUrl.ts` 不再跳警告），`sanity build` 與 `sanity exec` 照常。
+- 測試 217 項通過（新增 `tests/manual-edits.test.ts`）。
+- 尚未完成：Search Console 每頁每天的資料還沒有自動取得的方法；Ahrefs 裡沒有本站專案。第一次優化後要滿 28 天才比得出來，不急。
+- 唯一下一步不變：在 Darren 的電腦合併分支並部署線上後台。

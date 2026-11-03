@@ -2,7 +2,7 @@
  * 把 Darren 在後台手動改過的文章抓回 Git。
  * 預設只列出修改、在 content-production/<文章>/studio-edits/<時間>/ 存下後台版本（studio-version.md）與修改前後對照（changes.md），不動稿件也不動 Sanity。
  * 加 --apply：把原本的稿件存成同一資料夾的 git-before.md，後台版本寫進 reader-preview.md，標題與摘要寫進 publication.json，
- * 再在 Sanity 記下 studioEditsSyncedAt（之後自動工具才會再改這篇）。
+ * 在 content-automation/manual-edits-log.json 加一筆優化紀錄，再在 Sanity 記下 studioEditsSyncedAt（之後自動工具才會再改這篇）。
  *
  * 用法（在 studio/ 目錄）：
  *   npm run pull:studio-edits                         # 列出所有還沒同步的手動修改
@@ -43,7 +43,7 @@ const articles = await client.fetch(
   `*[_type == "article" && !(_id in path("drafts.**")) && defined(studioEditedAt)
     && (!defined(studioEditsSyncedAt) || dateTime(studioEditedAt) > dateTime(studioEditsSyncedAt))
     && ($id == null || _id == $id)]{
-    _id, _rev, title, seoTitle, seoDescription, excerpt, body, studioEditedAt, studioEditsSyncedAt,
+    _id, _rev, title, seoTitle, seoDescription, excerpt, body, studioEditedAt, studioEditsSyncedAt, studioEditLog[]{at},
     "hasDraft": defined(*[_id == "drafts." + ^._id][0]._id)
   } | order(studioEditedAt desc)`,
   {id: onlySlug ? `article-${onlySlug}` : null},
@@ -86,6 +86,23 @@ for (const article of articles) {
     if (publication && fieldChanges.length > 0) {
       await writeFile(publicationFile, `${JSON.stringify(applyFieldChanges(publication, fieldChanges), null, 2)}\n`)
     }
+    // 手動優化紀錄寫進 Git，後台的紀錄之後被覆蓋也還查得到（報表：npm run report:manual-edits）。
+    const previousSync = Date.parse(article.studioEditsSyncedAt ?? '') || 0
+    const publishTimes = (article.studioEditLog ?? [])
+      .map((entry) => entry?.at)
+      .filter((at) => at && Date.parse(at) > previousSync)
+    const logFile = path.join(projectRoot, 'content-automation', 'manual-edits-log.json')
+    const log = JSON.parse((await readOptional(logFile)) ?? '{"edits": []}')
+    log.edits.push({
+      article: article._id,
+      pulledAt: new Date().toISOString(),
+      publishTimes: publishTimes.length > 0 ? publishTimes : [article.studioEditedAt],
+      changedParagraphs: paragraphChanges.length,
+      changedFields: fieldChanges.map((change) => change.field),
+      changesFile: item.changesFile,
+    })
+    await writeFile(logFile, `${JSON.stringify(log, null, 2)}\n`)
+
     await client
       .patch(article._id)
       .ifRevisionId(article._rev)

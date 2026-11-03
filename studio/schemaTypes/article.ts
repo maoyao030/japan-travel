@@ -297,6 +297,31 @@ export const article = defineType({
       readOnly: true,
     }),
     defineField({
+      name: 'studioEditLog',
+      group: 'settings',
+      title: '後台手動修改紀錄',
+      description:
+        '每次在後台按「發布」自動加一筆，不用填。優化了幾次、哪幾天看這裡；成效報表見 content-automation/manual-edits-report.md。',
+      type: 'array',
+      readOnly: true,
+      of: [
+        {
+          type: 'object',
+          name: 'studioEdit',
+          title: '手動發布',
+          fields: [defineField({name: 'at', title: '時間', type: 'datetime'})],
+          preview: {
+            select: {at: 'at'},
+            prepare: ({at}) => ({
+              title: at
+                ? new Date(at).toLocaleString('zh-TW', {timeZone: 'Asia/Taipei', hour12: false})
+                : '手動發布',
+            }),
+          },
+        },
+      ],
+    }),
+    defineField({
       name: 'studioEditsSyncedAt',
       group: 'settings',
       title: '手動修改已同步回 Git',
@@ -318,9 +343,20 @@ export const article = defineType({
     },
   ],
   preview: {
-    select: {title: 'title', author: 'author.name', media: 'cover', sponsored: 'sponsored'},
-    prepare({title, author, media, sponsored}) {
-      const labels = [author, sponsored ? '贊助內容' : undefined].filter(Boolean)
+    select: {
+      title: 'title',
+      author: 'author.name',
+      media: 'cover',
+      sponsored: 'sponsored',
+      editLog: 'studioEditLog',
+    },
+    prepare({title, author, media, sponsored, editLog}) {
+      const edits = Array.isArray(editLog) ? editLog.length : 0
+      const labels = [
+        author,
+        edits > 0 ? `手動改過 ${edits} 次` : undefined,
+        sponsored ? '贊助內容' : undefined,
+      ].filter(Boolean)
       return {title, subtitle: labels.join('｜'), media}
     },
   },

@@ -142,6 +142,7 @@
 - 改之前先給 Darren 看改法。
 - 停放的文章由人工 session 處理。
 - **Darren 自己改**（2026-11-03）：在後台（`offpathnotes.sanity.studio`）直接改字、按「發布」。後台會記下改過，自動工具就不會蓋掉；人工 session 用 `pull:studio-edits` 把修改抓回 Git，好的改法收進範文。用法見 `studio/README.md`「手動修改文章」。
+- **優化紀錄與成效**（2026-11-03）：每次在後台發布自動記下日期，`npm run report:manual-edits` 列出每篇優化了幾次、哪幾天，有 Search Console 資料時比較優化前後各 28 天，並和沒優化的文章比。
 
 ## 12. 資料放在哪
 
