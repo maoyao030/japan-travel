@@ -32,7 +32,8 @@
     "deploy": "npm run build && wrangler deploy",
     "preview": "astro preview",
     "astro": "astro",
-    "report:manual-edits": "node scripts/manual-edits-report.mjs"
+    "report:manual-edits": "node scripts/manual-edits-report.mjs",
+    "optimize:today": "node scripts/daily-optimize-pick.mjs"
   },
   "dependencies": {
     "astro": "^7.2.6"
