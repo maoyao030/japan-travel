@@ -301,3 +301,9 @@
 - Darren 的文字為準；錯字列出來、他同意才改。後台還沒發布的草稿用 `pull:studio-edits --draft` 先搬進 Git，上傳時確認草稿沒再改過才清掉。
 - 上傳用 `studio` 的 `replace-article-body.mjs --manual`（可改標題，記一筆優化紀錄，來源「在 Claude Code 對話裡改」）。後台照樣可以用。
 - 流程細節見 `content-automation/chat-optimize.md`。
+
+## 照 Darren 的語氣寫（Darren 2026-11-04 決定）
+
+- Darren 親自優化東川一篇後，決定之後的文章都照他的語氣寫：把事實之間的關係用「所以」「不過」「如果…」寫出來；會讓讀者卡住的事實後面直接提醒（「記得先看好回程的時間」）；推薦一節最多一句、要講出推薦的是什麼；口語一點；標題用讀者會搜尋的問句。
+- 兩個限制：提醒只接在具體事實後面，不寫「否則會很麻煩」這種沒有新資訊的句子；推薦句不是每段都放，免得每頁長一樣。
+- 寫在寫作 Skill `references/writing-guide.md` 第17條（和第2條導覽編輯口吻衝突時以第17條為準）與 `references/examples.md` 第6節；潤稿 Skill 不刪這些關係詞與提醒。之後 Darren 優化更多篇，好的改法繼續補進第6節。
