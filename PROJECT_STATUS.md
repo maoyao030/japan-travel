@@ -1857,3 +1857,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **上傳前要做**：`heading-review.json` 的標題紀錄還是舊標題（`heading_review.py` 會報「尚未套用」），上傳時一起更新；`draft-tagged.md` 之後再同步。
 - **自動寫作**：規則併進 `main` 後，本機自動寫作下一輪合併 `main` 時才會讀到新規則。
 - **唯一下一步**：Darren 看整篇東川，說「上傳」就換上網站。
+
+## 2026-11-04 Claude Code：名字改成漢字與台灣慣用譯名、東川上線
+
+- **東川上線**：對話優化版用 `replace-article-body.mjs --manual --discard-draft --apply` 換上網站（後台草稿清掉、優化紀錄來源記 chat），`heading-review.json` 同步新標題，網站已重建。
+- **已決定**：Darren 2026-11-04：台灣人看漢字比看羅馬拼音好，名字順序改成官方中文或漢字 → 假名是一般日文詞寫漢字 → 台灣慣用譯名 → 才用英文或羅馬拼音；人名不猜漢字。寫進寫作 Skill `writing-guide.md` 第15條、`japanese-sources.md`「譯名表」、`AGENTS.md`、`RULES_OVERVIEW.md`。
+- **已完成**：212 個羅馬拼音名字逐一判斷，62 組改寫（對照表 `content-planning/name-kanji-2026-11-04.json`），其餘（人名、愛奴語地名、沒有漢字的名字、官方英文名）保留。Git 87 個檔案（`scripts/rename-terms-git.mjs`，歷史快照不動）、網站 30 篇（`studio/scripts/rename-terms-live.mjs`，只改文字、網址與連結不動，復原檔在 `.tmp/rename-terms/`）。改完再查網站，舊寫法 0 處。新測試 `tests/rename-terms.test.ts`。
+- **測試**：`npm test` 222 項通過，`planning:check` 通過。
+- **唯一下一步**：Darren 要求住宿與交通的地點加 Google 地圖與官網連結，下一個任務做這件事。
