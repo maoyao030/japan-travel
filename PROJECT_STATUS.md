@@ -1847,3 +1847,46 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
   - 東川有幾個錯字與建議（因次、的的、要會、「東川町市中心的有」、H2 只寫 JR 站但底下有機場的 H3、SEO 標題還是舊的）等 Darren 決定；之後從「東川町景點」那一節繼續優化。
   - 後台的新欄位要重新部署後台才會顯示中文名稱（在 Darren 電腦 `studio/` 跑 `npx sanity deploy`）；不部署也不影響使用。
 - **唯一下一步**：Darren 決定東川那幾個錯字怎麼改，然後在對話裡繼續優化下一節。
+
+## 2026-11-04 Claude Code：照 Darren 的語氣寫、東川整篇改完
+
+- **已決定**：Darren 看過東川的試改後，決定之後的文章都照他的語氣寫（寫作 Skill `writing-guide.md` 第17條、`examples.md` 第6節，`AGENTS.md`、`RULES_OVERVIEW.md` 加段落；潤稿 Skill 不刪這些關係詞與提醒）。
+- **已完成**：
+  - 東川：Darren 同意的 7 處修改（錯字、H2 改成「如何從旭川到東川町？」、SEO 標題換成新標題）；從「在東川町內怎麼移動」到最後一節照新語氣改完，事實與數字沒動。「東川町有哪些景點？」的下一句改成直接列景點。`check-voice` 通過，上傳預覽 7 個連結、照片與影片都搬得過去。
+  - 這些都只在 Git 的稿件，**網站還是舊版**；後台草稿還在，上傳時用 `--manual --discard-draft` 清掉。
+- **上傳前要做**：`heading-review.json` 的標題紀錄還是舊標題（`heading_review.py` 會報「尚未套用」），上傳時一起更新；`draft-tagged.md` 之後再同步。
+- **自動寫作**：規則併進 `main` 後，本機自動寫作下一輪合併 `main` 時才會讀到新規則。
+- **唯一下一步**：Darren 看整篇東川，說「上傳」就換上網站。
+
+## 2026-11-04 Claude Code：名字改成漢字與台灣慣用譯名、東川上線
+
+- **東川上線**：對話優化版用 `replace-article-body.mjs --manual --discard-draft --apply` 換上網站（後台草稿清掉、優化紀錄來源記 chat），`heading-review.json` 同步新標題，網站已重建。
+- **已決定**：Darren 2026-11-04：台灣人看漢字比看羅馬拼音好，名字順序改成官方中文或漢字 → 假名是一般日文詞寫漢字 → 台灣慣用譯名 → 才用英文或羅馬拼音；人名不猜漢字。寫進寫作 Skill `writing-guide.md` 第15條、`japanese-sources.md`「譯名表」、`AGENTS.md`、`RULES_OVERVIEW.md`。
+- **已完成**：212 個羅馬拼音名字逐一判斷，62 組改寫（對照表 `content-planning/name-kanji-2026-11-04.json`），其餘（人名、愛奴語地名、沒有漢字的名字、官方英文名）保留。Git 87 個檔案（`scripts/rename-terms-git.mjs`，歷史快照不動）、網站 30 篇（`studio/scripts/rename-terms-live.mjs`，只改文字、網址與連結不動，復原檔在 `.tmp/rename-terms/`）。改完再查網站，舊寫法 0 處。新測試 `tests/rename-terms.test.ts`。
+- **測試**：`npm test` 222 項通過，`planning:check` 通過。
+- **唯一下一步**：Darren 要求住宿與交通的地點加 Google 地圖與官網連結，下一個任務做這件事。
+
+### 2026-11-04 補充：官網與 Google 地圖連結
+
+- Darren 要住宿與「怎麼去」的地點有 Google 地圖與官網連結。網站表格格子改成支援 `[文字](網址)`（`renderTableCell`，新測試 `tests/table-cell-links.test.ts`，訂房網站自動 sponsored）。
+- 東川做成樣本：住宿表多「連結」欄（7 家，官網 5 家、地圖 7 家），5 個景點基本資訊欄加「連結」列；10 個官網都確認打得開。規則寫進 `writing-guide.md` 第12條、`AGENTS.md`、`RULES_OVERVIEW.md`。
+- 還沒補的已上線頁：20 篇，約 60 個景點欄、7 個住宿表（`asahikawa-sights`、`rebun-island-sights`、`wakkanai-sights` 最多）。
+- 唯一下一步：Darren 看東川樣本，同意後分批補其他頁。
+
+### 2026-11-04 補充：仙都皮亞
+
+- Darren 指出大雪カムイミンタラDMO 繁中官網把せんとぴゅあ寫成「仙都皮亞」，東川已改（Git 5 個檔案、網站 1 篇，對照表加一筆）。HOKKAIDO LOVE 寫 Centpure。
+- 比對 DMO 繁中官網 310 個名稱：大多是機器翻譯錯字（道宗館、旭明、大絕山、豐田旅館、烤肉過山車、啄木鳥森林），不整批照用；規則寫進 `japanese-sources.md`「譯名表」。
+
+### 2026-11-04 補充：原文括號的頻率
+
+- Darren：名字後面附原文比較好，但頻率不要太高。規則改成：第一次出現附原文；中文和日文寫法不同的名字，在專門介紹它的那一節第一次出現時再附一次，一篇最多兩次，有基本資訊欄「日文名」列就不用（`writing-guide.md` 第15條）。
+- 東川照這條檢查過：只有「如何從旭川機場到東川町？」的出湯號缺原文，已補並上線；其他景點的專門小節有「日文名」列或已附原文。
+
+### 2026-11-04 補充：其他 20 篇補上官網與地圖連結
+
+- Darren 同意東川樣本後，其他 20 篇（19 篇有表格；`rebun-island-food` 線上已沒有資訊欄）全部補上：45 個景點資訊欄加「連結」列、60 家住宿加「連結」欄，共 105 處，官網 101 處、只有地圖 4 處（Hotel Bear Monte、HOTEL AMANEK旭川、民宿Kiriri、民宿海憧，官網從雲端打不開或已失效）。
+- 這 18 篇的 Git 稿件和線上文字不一致（11/1 重寫輪留下的差異，原因未查），所以不用整篇換正文，改用新工具 `studio/scripts/apply-table-links.mjs` 只在線上表格加連結，Git 稿件表格同步加（`scripts/table-links.mjs`，新測試 `tests/table-links.test.ts`）。連結清單存在 `content-automation/table-links-2026-11-04/`。
+- 官網由 4 個子代理從研究紀錄挑選、逐一確認打得開；沒有自己網站的景點連到町公所或觀光協會的介紹頁。
+- **要注意**：18 篇 Git 稿件和線上文字不一致，之後要用 `replace-article-body` 整篇換正文前，先比對兩邊、決定以哪邊為準。`wakkanai-stay` 的民宿宗谷岬研究記錄提到 Trip.com 顯示不接訂房，可能已停業，下次重查住宿時確認。
+- 唯一下一步：Darren 抽幾篇看連結。

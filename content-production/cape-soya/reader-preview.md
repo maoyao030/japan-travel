@@ -77,6 +77,7 @@
 | 日文名 | 日本最北端の地の碑 |
 | 改建 | 1968年 |
 | 銅像 | 間宮林藏立像，1980年7月設立 |
+| 連結 | [官網](https://www.north-hokkaido.com/spot/detail_1027.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E6%9C%AC%E6%9C%80%E5%8C%97%E7%AB%AF%E3%81%AE%E5%9C%B0%E3%81%AE%E7%A2%91%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 ### 〈宗谷岬〉音樂碑
 
@@ -106,6 +107,7 @@
 | 營業 | 4月～11月 8:00～18:00，12月～3月 9:00～16:00 |
 | 休館 | 夏季無休，冬季不定休 |
 | 費用 | 免費 |
+| 連結 | [官網](https://www.north-hokkaido.com/spot/detail_1025.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%AE%97%E8%B0%B7%E5%B2%AC%E6%B5%81%E6%B0%B7%E9%A4%A8%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 ### Base-Soya（宗谷岬展望台）
 
@@ -118,6 +120,7 @@ Base-Soya只在夏季開，2026年是6月1日到9月30日的10:00到16:00。這�
 | 日文名 | Base-Soya（ベースソーヤ） |
 | 開設期間 | 2026年6月1日～9月30日 10:00～16:00 |
 | 自行車受理 | 到15:00 |
+| 連結 | [官網](https://www.north-hokkaido.com/spot/detail_1024.html)・[地圖](https://www.google.com/maps/search/?api=1&query=Base-Soya%20%E5%AE%97%E8%B0%B7%E5%B2%AC%E5%B1%95%E6%9C%9B%E5%8F%B0%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 ## 宗谷岬旁的宗谷丘陵與白色道路
 
@@ -135,6 +138,7 @@ Base-Soya只在夏季開，2026年是6月1日到9月30日的10:00到16:00。這�
 | 開放 | 9:00～17:00，6月1日～9月30日到19:00 |
 | 休館 | 11月上旬～4月下旬 |
 | 怎麼去 | 宗谷岬巴士站走路約15分鐘 |
+| 連結 | [官網](https://www.north-hokkaido.com/spot/detail_1022.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%AE%97%E8%B0%B7%E4%B8%98%E9%99%B5%E5%B1%95%E6%9C%9B%E4%BC%91%E6%86%A9%E6%96%BD%E8%A8%AD%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 ### 白色道路的開放期間與通行方向
 

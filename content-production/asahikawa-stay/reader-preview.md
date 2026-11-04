@@ -8,7 +8,7 @@
 
 站前的飯店走到巴士站Bus Touch（バスタッチ）只要幾分鐘。往動物園在6號乘車處上車，往旭川機場、旭岳與富良野在9號。KOKO HOTEL旭川站前（KOKO HOTEL 旭川駅前）走到9號的機場巴士乘車處特別近。早上要搭巴士上旭岳，或拖著行李趕火車，住這一區最省事。
 
-市中心的三間飯店，從機場搭巴士就能坐到門口附近。機場巴士的終點站就在OMO7旭川旁的「6条9丁目」站，車程約50分鐘。Art Hotel旭川（アートホテル旭川）正對著「7条昭和通」站，Dormy Inn旭川（ドーミーイン旭川）門口也有巴士站。這兩間從機場搭過來也都是40分鐘左右。不過走到JR旭川站要13到15分鐘，每次搭火車或站前的巴士都得多走這一段。回程往機場的巴士也從「6条9丁目」發車，沿途停「7条昭和通」，再經旭川站9號乘車處開往機場。如果只從機場進出，中間不搭火車也不搭站前巴士，住市中心一樣方便，想泡Dormy Inn頂樓的天然溫泉也是選市中心的理由。
+市中心的三間飯店，從機場搭巴士就能坐到門口附近。機場巴士的終點站就在OMO7旭川旁的「6条9丁目」站，車程約50分鐘。Art Hotel旭川（アートホテル旭川）正對著「7条昭和通」站，多美迎旭川（ドーミーイン旭川）門口也有巴士站。這兩間從機場搭過來也都是40分鐘左右。不過走到JR旭川站要13到15分鐘，每次搭火車或站前的巴士都得多走這一段。回程往機場的巴士也從「6条9丁目」發車，沿途停「7条昭和通」，再經旭川站9號乘車處開往機場。如果只從機場進出，中間不搭火車也不搭站前巴士，住市中心一樣方便，想泡多美迎頂樓的天然溫泉也是選市中心的理由。
 
 要找站前的巴士站牌，或想先知道機場巴士怎麼搭，旭川交通把各乘車處的位置和機場巴士的搭法都整理好了。
 
@@ -16,7 +16,7 @@
 
 不管住站前還是市中心，只要住在旭川市內的飯店或旅館，就能買動物園只賣給住宿旅客的兩天入園券，叫款待券（おもてなし券），一張1,000日圓。第一天中午12點以後進場，隔天中午12點前可以再進一次，入園後不限停留時間。中午過後才抵達旭川也不浪費，第一天下午先逛一輪，隔天上午再進去看一次。11月11日到4月7日的冬季只開到15:30，最後入園是15:00，第一天要在12點到15點之間進場。動物園在11月4日到10日、12月30日到1月1日與4月8日到4月下旬休園（2027年到4月28日），兩天都要遇上開園日才用得完，買之前先對一下日期。買的時候要出示能證明住在旭川市內的文件。
 
-在住的飯店櫃台買最省事。後面表格的12間裡有8間的櫃台就有賣，分別是JR Inn旭川（JRイン旭川）、Y's Hotel旭川站前（ワイズホテル旭川駅前）、KOKO HOTEL旭川站前、天然溫泉Premier Hotel-CABIN-旭川（天然温泉プレミアホテル-CABIN-旭川）、東橫INN旭川站東口、東橫INN旭川站前一條通、OMO7旭川與Art Hotel旭川。Dormy Inn旭川、HOTEL AMANEK旭川（ホテルアマネク旭川）、Route Inn Grand旭川站前（ホテルルートインGrand旭川駅前）與Route Inn旭川站前一條通（ホテルルートイン旭川駅前一条通）沒有賣。住這四間的人，入住時先問櫃台能拿什麼當住宿證明，再到旭川站東大廳的旭川觀光物產情報中心（旭川観光物産情報センター）或動物園售票處買。
+在住的飯店櫃台買最省事。後面表格的12間裡有8間的櫃台就有賣，分別是JR Inn旭川（JRイン旭川）、Y's Hotel旭川站前（ワイズホテル旭川駅前）、KOKO HOTEL旭川站前、天然溫泉Premier Hotel-CABIN-旭川（天然温泉プレミアホテル-CABIN-旭川）、東橫INN旭川站東口、東橫INN旭川站前一條通、OMO7旭川與Art Hotel旭川。多美迎旭川、HOTEL AMANEK旭川（ホテルアマネク旭川）、露櫻 Grand旭川站前（ホテルルートインGrand旭川駅前）與露櫻旭川站前一條通（ホテルルートイン旭川駅前一条通）沒有賣。住這四間的人，入住時先問櫃台能拿什麼當住宿證明，再到旭川站東大廳的旭川觀光物產情報中心（旭川観光物産情報センター）或動物園售票處買。
 
 拿到款待券、準備入園時，可以看另外整理的旭山動物園，那一頁寫了入園的方式。
 
@@ -24,20 +24,20 @@
 
 下表12間照離車站的遠近排，站前9間從車站直結到走路5分鐘，市中心3間要走13到15分鐘。第二欄是Trip.com台灣站上顯示的館名，搜尋時可以直接打。飯店資料的查核日期是2026年10月26日。
 
-| 飯店 | 訂房網站上的名稱 | 區域 | 到JR旭川站 | 訂房管道 |
-|---|---|---|---|---|
-| JR Inn旭川 | 旭川JR飯店（Jr Inn Asahikawa） | 宮下通7丁目 | 車站直結 | 官網、Trip.com、Agoda |
-| Y's Hotel旭川站前 | Y飯店-旭川站前（Y’s HOTEL ASAHIKAWA EKIMAE） | 宮下通9丁目 | 走路約1分 | 官網、Trip.com、Agoda |
-| KOKO HOTEL旭川站前 | KOKO HOTEL 旭川前旭川站（KOKO HOTEL Asahikawa Station） | 宮下通7丁目 | 走路2分 | 官網、Trip.com、Agoda |
-| Route Inn Grand旭川站前 | 露櫻GRAND飯店旭川站前店（Hotel Route Inn Grand Asahikawa Ekimae） | 宮下通8丁目 | 北口走路2分 | 官網、Trip.com、Agoda |
-| 天然溫泉Premier Hotel-CABIN-旭川 | 旭川普樂美雅凱賓飯店（Premier Hotel -Cabin- Asahikawa） | 1條通7丁目 | 走路3分 | 官網、Trip.com、Agoda |
-| HOTEL AMANEK旭川 | 旭川HOTEL AMANEK（HOTEL AMANEK Asahikawa） | 1條通8丁目 | 北口走路3分 | 官網、Trip.com、Agoda |
-| 東橫INN旭川站東口 | 東橫INN-旭川站東口（Toyoko Inn Hokkaido Asahikawa Eki Higashi Guchi） | 宮下通11丁目 | 東口走路3分 | 官網、Trip.com、Agoda |
-| Route Inn旭川站前一條通 | 露櫻飯店旭川站前一條通店（Hotel Route-Inn Asahikawa Ekimae Ichijodori） | 1條通6丁目 | 走路約5分 | 官網、Trip.com、Agoda |
-| 東橫INN旭川站前一條通 | 北海道旭川站前一條通東橫飯店（Toyoko Inn Hokkaido Asahikawa Ekimae Ichijo Dori） | 1條通9丁目 | 走路約5分 | 官網、Trip.com、Agoda |
-| OMO7旭川 | OMO7 旭川 by 星野集團（OMO7 Asahikawa by Hoshino Resorts） | 6條通9丁目 | 走路約13～15分 | 官網、Trip.com、Agoda |
-| Dormy Inn旭川 | 北海道旭川多美迎天然溫泉飯店（Dormy Inn Asahikawa Natural Hot Spring） | 5條通6丁目 | 走路約15分 | 官網、Trip.com、Agoda |
-| Art Hotel旭川 | ART旭川飯店（Art Hotel Asahikawa） | 7條通6丁目 | 走路約15分 | 官網、Trip.com、Agoda |
+| 飯店 | 訂房網站上的名稱 | 區域 | 到JR旭川站 | 訂房管道 | 連結 |
+|---|---|---|---|---|---|
+| JR Inn旭川 | 旭川JR飯店（Jr Inn Asahikawa） | 宮下通7丁目 | 車站直結 | 官網、Trip.com、Agoda | [官網](https://www.jr-inn.jp/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=JR%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Y's Hotel旭川站前 | Y飯店-旭川站前（Y’s HOTEL ASAHIKAWA EKIMAE） | 宮下通9丁目 | 走路約1分 | 官網、Trip.com、Agoda | [官網](https://yshotel-asahikawa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AF%E3%82%A4%E3%82%BA%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| KOKO HOTEL旭川站前 | KOKO HOTEL 旭川前旭川站（KOKO HOTEL Asahikawa Station） | 宮下通7丁目 | 走路2分 | 官網、Trip.com、Agoda | [官網](https://www.koko-hotels.com/asahikawa_station/)・[地圖](https://www.google.com/maps/search/?api=1&query=KOKO%20HOTEL%20%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 露櫻 Grand旭川站前 | 露櫻GRAND飯店旭川站前店（Hotel 露櫻 Grand Asahikawa Ekimae） | 宮下通8丁目 | 北口走路2分 | 官網、Trip.com、Agoda | [官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3Grand%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 天然溫泉Premier Hotel-CABIN-旭川 | 旭川普樂美雅凱賓飯店（Premier Hotel -Cabin- Asahikawa） | 1條通7丁目 | 走路3分 | 官網、Trip.com、Agoda | [官網](https://cabin.kenhotels.com/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%9B%E3%83%86%E3%83%AB-CABIN-%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| HOTEL AMANEK旭川 | 旭川HOTEL AMANEK（HOTEL AMANEK Asahikawa） | 1條通8丁目 | 北口走路3分 | 官網、Trip.com、Agoda | [地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%A2%E3%83%9E%E3%83%8D%E3%82%AF%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 東橫INN旭川站東口 | 東橫INN-旭川站東口（Toyoko Inn Hokkaido Asahikawa Eki Higashi Guchi） | 宮下通11丁目 | 東口走路3分 | 官網、Trip.com、Agoda | [官網](https://www.toyoko-inn.com/search/detail/00173/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E6%A8%AAINN%E6%97%AD%E5%B7%9D%E9%A7%85%E6%9D%B1%E5%8F%A3%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 露櫻旭川站前一條通 | 露櫻飯店旭川站前一條通店（Hotel Route-Inn Asahikawa Ekimae Ichijodori） | 1條通6丁目 | 走路約5分 | 官網、Trip.com、Agoda | [官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%E4%B8%80%E6%9D%A1%E9%80%9A%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 東橫INN旭川站前一條通 | 北海道旭川站前一條通東橫飯店（Toyoko Inn Hokkaido Asahikawa Ekimae Ichijo Dori） | 1條通9丁目 | 走路約5分 | 官網、Trip.com、Agoda | [官網](https://www.toyoko-inn.com/search/detail/00069/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E6%A8%AAINN%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%E4%B8%80%E6%9D%A1%E9%80%9A%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| OMO7旭川 | OMO7 旭川 by 星野集團（OMO7 Asahikawa by Hoshino Resorts） | 6條通9丁目 | 走路約13～15分 | 官網、Trip.com、Agoda | [官網](https://hoshinoresorts.com/ja/hotels/omo7asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=OMO7%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 多美迎旭川 | 北海道旭川多美迎天然溫泉飯店（多美迎 Asahikawa Natural Hot Spring） | 5條通6丁目 | 走路約15分 | 官網、Trip.com、Agoda | [官網](https://dormy-hotels.com/dormyinn/hotels/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%BC%E3%83%9F%E3%83%BC%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Art Hotel旭川 | ART旭川飯店（Art Hotel Asahikawa） | 7條通6丁目 | 走路約15分 | 官網、Trip.com、Agoda | [官網](https://www.art-asahikawa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 
 ### 旭川站直結的JR Inn旭川
 
@@ -45,23 +45,23 @@ JR Inn旭川和JR旭川站直接相連，搭JR進出旭川的人出站就到。�
 
 ### 旭川站前的飯店
 
-站前這幾間裡，Y's Hotel旭川站前離車站最近，走路約1分鐘，從東改札出來走北口東側出口，出站往右就到。KOKO HOTEL旭川站前與Route Inn Grand旭川站前都是走路2分鐘。再遠一點的天然溫泉Premier Hotel-CABIN-旭川與HOTEL AMANEK旭川走路3分鐘，Route Inn旭川站前一條通約5分鐘。
+站前這幾間裡，Y's Hotel旭川站前離車站最近，走路約1分鐘，從東改札出來走北口東側出口，出站往右就到。KOKO HOTEL旭川站前與露櫻 Grand旭川站前都是走路2分鐘。再遠一點的天然溫泉Premier Hotel-CABIN-旭川與HOTEL AMANEK旭川走路3分鐘，露櫻旭川站前一條通約5分鐘。
 
-想在飯店泡湯，CABIN、AMANEK與Route Inn兩間都有大浴場。CABIN泡的是天然溫泉，AMANEK的大浴場在頂樓。Route Inn Grand的1樓就是便利商店Seicomart（セイコーマート）。Route Inn一條通那間則附免費自助早餐。
+想在飯店泡湯，CABIN、AMANEK與露櫻兩間都有大浴場。CABIN泡的是天然溫泉，AMANEK的大浴場在頂樓。露櫻 Grand的1樓就是便利商店Seicomart（セイコーマート）。露櫻一條通那間則附免費自助早餐。
 
 東橫INN旭川站東口要從東口出站，走路3分鐘，跟北口那幾間方向不同。同牌子的東橫INN旭川站前一條通在1條通，走路約5分鐘。兩間在Trip.com上的館名分別帶「旭川站東口」與「一條通」，訂房時看清楚是哪一間。KOKO HOTEL旭川站前以前叫Hotel Wing International旭川站前（ホテルウィングインターナショナル旭川駅前），在訂房網站或舊資料上看到這個名字，就是同一間。
 
-### 市中心的OMO7旭川、Dormy Inn旭川與Art Hotel旭川
+### 市中心的OMO7旭川、多美迎旭川與Art Hotel旭川
 
 OMO7旭川在6條通9丁目，走到JR旭川站約13到15分鐘，搭計程車約5分鐘。飯店沒有接送，搭機場巴士坐到終點站「6条9丁目」就到，回機場也在這一站上車。
 
-Dormy Inn旭川在5條通6丁目，走到車站約15分鐘，開車約2分鐘，拖著行李可以在站前搭計程車。從機場搭巴士約40分鐘，巴士站就在飯店正前方，回程要在哪一站搭往機場的車，入住時問櫃台最確實。想在市中心泡湯，頂樓10樓有天然溫泉大浴場神威之湯（神威の湯），露天風呂引的是地下1,200公尺的溫泉。
+多美迎旭川在5條通6丁目，走到車站約15分鐘，開車約2分鐘，拖著行李可以在站前搭計程車。從機場搭巴士約40分鐘，巴士站就在飯店正前方，回程要在哪一站搭往機場的車，入住時問櫃台最確實。想在市中心泡湯，頂樓10樓有天然溫泉大浴場神威之湯（神威の湯），露天風呂引的是地下1,200公尺的溫泉。
 
 7條通6丁目的Art Hotel旭川，走到車站一樣約15分鐘，開車約5分鐘。搭機場巴士在「7条昭和通」下車，飯店就在正前方，回機場的巴士也停這一站。
 
 ## 旭川住宿的訂房管道
 
-這12間都能在官網直接訂，Trip.com與Agoda台灣站也都有上架。市區飯店冬天照常營業。Route Inn Grand旭川站前只有在官網訂才附免費自助早餐，跟訂房網站比價時，這份早餐也要算進去。東橫INN與Dormy Inn的官網也標榜，在自家網站訂房最便宜。
+這12間都能在官網直接訂，Trip.com與Agoda台灣站也都有上架。市區飯店冬天照常營業。露櫻 Grand旭川站前只有在官網訂才附免費自助早餐，跟訂房網站比價時，這份早餐也要算進去。東橫INN與多美迎的官網也標榜，在自家網站訂房最便宜。
 
 在Agoda找OMO7旭川，旭川的城市列表裡沒有它。在搜尋框直接打「OMO7旭川」，就會跳出「OMO7旭川 - 由星野集團管理」。
 
@@ -87,14 +87,14 @@ Dormy Inn旭川在5條通6丁目，走到車站約15分鐘，開車約2分鐘，
 - **JR Inn旭川官網**，訂房與從車站走過去的路線。https://www.jr-inn.jp/asahikawa/
 - **Y's Hotel旭川站前官網**，訂房與位置。https://yshotel-asahikawa.com/
 - **KOKO HOTEL旭川站前官網**，訂房與位置。https://koko-hotels.com/asahikawa_station/
-- **Route Inn Grand旭川站前官網**，官網訂房附早餐的方案。https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/
+- **露櫻 Grand旭川站前官網**，官網訂房附早餐的方案。https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/
 - **天然溫泉Premier Hotel-CABIN-旭川官網**，訂房與溫泉。https://cabin.kenhotels.com/asahikawa/
 - **HOTEL AMANEK旭川官網**，訂房與館內設施。https://amanekhotels.jp/asahikawa/
 - **東橫INN旭川站東口官網**，訂房與東口的位置。https://www.toyoko-inn.com/search/detail/00173/
-- **Route Inn旭川站前一條通官網**，訂房與位置。https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/
+- **露櫻旭川站前一條通官網**，訂房與位置。https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/
 - **東橫INN旭川站前一條通官網**，訂房與道案內。https://www.toyoko-inn.com/search/detail/00069/access/
 - **OMO7旭川官網**，訂房與機場巴士。https://hoshinoresorts.com/ja/hotels/omo7asahikawa/
-- **Dormy Inn旭川官網**，訂房與溫泉。https://dormy-hotels.com/dormyinn/hotels/asahikawa/
+- **多美迎旭川官網**，訂房與溫泉。https://dormy-hotels.com/dormyinn/hotels/asahikawa/
 - **Art Hotel旭川官網**，訂房與機場巴士站。https://www.art-asahikawa.com/access/
 
 ## 資料來源

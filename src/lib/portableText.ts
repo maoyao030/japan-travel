@@ -121,6 +121,23 @@ function externalRel(href: string) {
   return isAffiliateHref(href) ? 'sponsored noopener noreferrer' : 'noopener noreferrer'
 }
 
+// 表格格子可以放「[文字](網址)」連結（Darren 2026-11-04：住宿與景點的官網、Google 地圖）。
+const CELL_LINK = /\[([^\]]+)\]\(([^)\s]+)\)/g
+
+export function renderTableCell(cell: string) {
+  let html = ''
+  let last = 0
+  for (const match of cell.matchAll(CELL_LINK)) {
+    const href = safeHref(match[2])
+    html += escapeHtml(cell.slice(last, match.index))
+    html += href
+      ? `<a href="${escapeHtml(href)}"${href.startsWith('/') ? '' : ` rel="${externalRel(href)}"`}>${escapeHtml(match[1])}</a>`
+      : escapeHtml(match[0])
+    last = (match.index ?? 0) + match[0].length
+  }
+  return html + escapeHtml(cell.slice(last))
+}
+
 function renderSpans(block: PortableTextBlock) {
   const definitions = new Map((block.markDefs ?? []).map((definition) => [definition._key, definition]))
 
@@ -296,7 +313,7 @@ export function renderPortableText(blocks: ArticleBodyBlock[]) {
       const rows = (block.rows ?? [])
         .map(
           (row) =>
-            `<tr>${(row.cells ?? []).map((cell) => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`,
+            `<tr>${(row.cells ?? []).map((cell) => `<td>${renderTableCell(cell)}</td>`).join('')}</tr>`,
         )
         .join('')
       html += `<div class="article-table-scroll" tabindex="0"><table><thead><tr>${columns}</tr></thead><tbody>${rows}</tbody></table></div>`

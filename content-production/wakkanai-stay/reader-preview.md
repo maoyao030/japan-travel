@@ -6,9 +6,9 @@
 
 稚內往禮文島香深港的第一班船，4月28日到10月31日是06:30，11月1日到隔年4月27日是06:35。坐2等艙要在開船40分鐘前報到，也就是05:50或05:55以前。往利尻島鴛泊港的第一班，6月到9月是07:15，10月與4月28日到5月31日是06:45，其他月份是06:55，報到一樣是2等艙開船40分鐘前。搭這些船建議住JR稚內站周邊，從站前旅館走過去就來得及報到，不必一早叫車。
 
-天北之湯Dormy Inn稚內（天北の湯 ドーミーイン稚内）、THE STAY WAKKANAI與Hotel Saharin（ホテルサハリン）離JR稚內站走路1到7分鐘，從車站走到渡輪站還要約15分鐘。其他站前各家走到渡輪站，SURFEEL HOTEL WAKKANAI（サフィールホテル稚内）與國民宿舍冰雪莊（国民宿舎氷雪荘）約15分鐘，Guest House Moshiripa（ゲストハウスモシリパ）15到20分鐘，Hotel Miyuki（ホテル美雪）17分鐘左右。HOTEL TRUNK WAKKANAI開車到渡輪站約3分鐘。
+天北之湯多美迎稚內（天北の湯 ドーミーイン稚内）、THE STAY WAKKANAI與Hotel Saharin（ホテルサハリン）離JR稚內站走路1到7分鐘，從車站走到渡輪站還要約15分鐘。其他站前各家走到渡輪站，SURFEEL HOTEL WAKKANAI（サフィールホテル稚内）與國民宿舍冰雪莊（国民宿舎氷雪荘）約15分鐘，Guest House Moshiripa（ゲストハウスモシリパ）15到20分鐘，Hotel Miyuki（ホテル美雪）17分鐘左右。HOTEL TRUNK WAKKANAI開車到渡輪站約3分鐘。
 
-出門前想吃早餐，Dormy Inn的早餐為了配合渡輪出發，特別提早到5:30就開。不過搭往禮文島的第一班，05:50或05:55前就要報到，吃早餐的時間很短。往利尻島的第一班報到時間落在06:05到06:35之間，比較能吃完早餐再走過去。Moshiripa什麼時間退房都可以，退房後當天也能寄放行李。很多房客就是從這裡搭清晨的渡輪或火車出發。
+出門前想吃早餐，多美迎的早餐為了配合渡輪出發，特別提早到5:30就開。不過搭往禮文島的第一班，05:50或05:55前就要報到，吃早餐的時間很短。往利尻島的第一班報到時間落在06:05到06:35之間，比較能吃完早餐再走過去。Moshiripa什麼時間退房都可以，退房後當天也能寄放行李。很多房客就是從這裡搭清晨的渡輪或火車出發。
 
 行李多不想走，冰雪莊清晨5:30到7:00之間會送房客到渡輪站或JR稚內站，要事先預約。搭往禮文島的第一班，預約時選靠近5:30的時段，才來得及在05:50或05:55前報到。住SURFEEL的話，可以請櫃台叫計程車。
 
@@ -18,33 +18,33 @@
 
 站前的旅館離車站、巴士總站與渡輪站都近。站前之外，南稚內一帶靠近鬧區，機場附近、野寒布與宗谷岬則只有零星幾家。
 
-| 住宿 | 區域 | 離車站或港口 | 營業期間 | 訂房管道 |
-|---|---|---|---|---|
-| Dormy Inn稚內 | JR稚內站周邊 | JR稚內站走路約3分鐘 | 冬天也營業 | 官網、Trip.com、Agoda |
-| SURFEEL HOTEL WAKKANAI | JR稚內站周邊 | JR稚內站走路約3分鐘，渡輪站走路約15分鐘 | 冬天也營業 | 官網、電話、Trip.com、Agoda |
-| THE STAY WAKKANAI | JR稚內站周邊 | JR稚內站走路約1分鐘 | 冬天也營業 | 官網、電話、E-mail、Trip.com、Agoda |
-| Guest House Moshiripa | JR稚內站周邊 | JR稚內站走路約4分鐘，渡輪站走路15～20分鐘 | 冬天也營業 | 官網、Trip.com、Agoda |
-| HOTEL TRUNK WAKKANAI | JR稚內站周邊 | JR稚內站走路約5分鐘，渡輪站開車約3分鐘 | 冬天也營業 | 官網、Trip.com、Agoda |
-| Hotel Saharin | JR稚內站周邊 | JR稚內站走路約7分鐘 | — | 官網、電話、Trip.com、Agoda |
-| 國民宿舍冰雪莊 | JR稚內站周邊 | JR稚內站與巴士總站走路約5分鐘，渡輪站走路15分鐘 | — | 只有電話 |
-| Hotel Miyuki | JR稚內站周邊 | JR稚內站走路約4分鐘，渡輪站走路約17分鐘 | 冬天也營業，有冬季限定方案 | 官網、電話、Trip.com、Agoda |
-| Hotel New Chikou | 南稚內 | JR南稚內站走路約5分鐘，渡輪站開車約8分鐘 | 冬天也營業 | 官網、電話、Trip.com、Agoda |
-| WAKKANAI GRAND HOTEL | 南稚內 | JR南稚內站走路約3分鐘 | 12月29日～1月4日休館，其他時間冬天也營業 | 官網、Trip.com、Agoda |
-| casa hotel | 南稚內 | JR南稚內站走路約2分鐘 | — | Trip.com、Agoda |
-| Hotel Meguma（Trip.com顯示Meguma飯店） | 聲問，市區與機場之間 | 稚內機場開車約5分鐘 | — | 官網、電話、Trip.com、Agoda |
-| 小飯店Minori | 野寒布 | JR稚內站開車約10分鐘 | 約11月底～4月底休業 | 只有電話 |
-| 民宿宗谷岬 | 宗谷岬 | 宗谷岬一帶（宗谷岬4丁目） | — | 只有電話 |
-| Pension Tom Soya | 宗谷岬 | 宗谷岬走路約3分鐘，「宗谷岬」巴士站走路約2分鐘 | 冬季休業，2027年4月下旬恢復營業 | 官網、電話 |
+| 住宿 | 區域 | 離車站或港口 | 營業期間 | 訂房管道 | 連結 |
+|---|---|---|---|---|---|
+| 多美迎稚內 | JR稚內站周邊 | JR稚內站走路約3分鐘 | 冬天也營業 | 官網、Trip.com、Agoda | [官網](https://dormy-hotels.com/dormyinn/hotels/wakkanai/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E5%8C%97%E3%81%AE%E6%B9%AF%20%E3%83%89%E3%83%BC%E3%83%9F%E3%83%BC%E3%82%A4%E3%83%B3%E7%A8%9A%E5%86%85%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| SURFEEL HOTEL WAKKANAI | JR稚內站周邊 | JR稚內站走路約3分鐘，渡輪站走路約15分鐘 | 冬天也營業 | 官網、電話、Trip.com、Agoda | [官網](https://www.surfeel-wakkanai.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%9B%E3%83%86%E3%83%AB%E7%A8%9A%E5%86%85%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| THE STAY WAKKANAI | JR稚內站周邊 | JR稚內站走路約1分鐘 | 冬天也營業 | 官網、電話、E-mail、Trip.com、Agoda | [官網](https://thestay.jp/wakkanai/)・[地圖](https://www.google.com/maps/search/?api=1&query=THE%20STAY%20WAKKANAI%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| Guest House Moshiripa | JR稚內站周邊 | JR稚內站走路約4分鐘，渡輪站走路15～20分鐘 | 冬天也營業 | 官網、Trip.com、Agoda | [官網](https://moshiripa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B2%E3%82%B9%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B9%E3%83%A2%E3%82%B7%E3%83%AA%E3%83%91%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| HOTEL TRUNK WAKKANAI | JR稚內站周邊 | JR稚內站走路約5分鐘，渡輪站開車約3分鐘 | 冬天也營業 | 官網、Trip.com、Agoda | [官網](https://hoteltrunk-wakkanai.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF%E7%A8%9A%E5%86%85%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| Hotel Saharin | JR稚內站周邊 | JR稚內站走路約7分鐘 | — | 官網、電話、Trip.com、Agoda | [官網](http://www.saharin.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%B5%E3%83%8F%E3%83%AA%E3%83%B3%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| 國民宿舍冰雪莊 | JR稚內站周邊 | JR稚內站與巴士總站走路約5分鐘，渡輪站走路15分鐘 | — | 只有電話 | [官網](https://www.north-hokkaido.com/booking/detail_1227.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%9B%BD%E6%B0%91%E5%AE%BF%E8%88%8E%E6%B0%B7%E9%9B%AA%E8%8D%98%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| Hotel Miyuki | JR稚內站周邊 | JR稚內站走路約4分鐘，渡輪站走路約17分鐘 | 冬天也營業，有冬季限定方案 | 官網、電話、Trip.com、Agoda | [官網](http://www.hotelmiyuki.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E7%BE%8E%E9%9B%AA%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| Hotel New Chikou | 南稚內 | JR南稚內站走路約5分鐘，渡輪站開車約8分鐘 | 冬天也營業 | 官網、電話、Trip.com、Agoda | [官網](https://www.chikoukankou.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%81%E3%82%B3%E3%82%A6%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| WAKKANAI GRAND HOTEL | 南稚內 | JR南稚內站走路約3分鐘 | 12月29日～1月4日休館，其他時間冬天也營業 | 官網、Trip.com、Agoda | [官網](https://www.wakkanai-g-hotel.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A8%9A%E5%86%85%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%83%9B%E3%83%86%E3%83%AB%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| casa hotel | 南稚內 | JR南稚內站走路約2分鐘 | — | Trip.com、Agoda | [官網](https://www.north-hokkaido.com/booking/detail_1400.html)・[地圖](https://www.google.com/maps/search/?api=1&query=casa%20hotel%20%E7%A8%9A%E5%86%85%E5%B8%82%E5%A4%A7%E9%BB%921%E4%B8%81%E7%9B%AE7-44) |
+| Hotel Meguma（Trip.com顯示Meguma飯店） | 聲問，市區與機場之間 | 稚內機場開車約5分鐘 | — | 官網、電話、Trip.com、Agoda | [官網](https://www.meguma.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%81%E3%81%90%E3%81%BE%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| 小飯店Minori | 野寒布 | JR稚內站開車約10分鐘 | 約11月底～4月底休業 | 只有電話 | [官網](https://www.north-hokkaido.com/booking/detail_1406.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E3%81%95%E3%81%AA%E3%83%9B%E3%83%86%E3%83%AB%E3%81%BF%E3%81%AE%E3%82%8A%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| 民宿宗谷岬 | 宗谷岬 | 宗谷岬一帶（宗谷岬4丁目） | — | 只有電話 | [官網](https://www.north-hokkaido.com/booking/detail_1237.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B0%91%E5%AE%BF%E5%AE%97%E8%B0%B7%E5%B2%AC%20%E7%A8%9A%E5%86%85%E5%B8%82%E5%AE%97%E8%B0%B7%E5%B2%AC4%E4%B8%81%E7%9B%AE10) |
+| Pension Tom Soya | 宗谷岬 | 宗谷岬走路約3分鐘，「宗谷岬」巴士站走路約2分鐘 | 冬季休業，2027年4月下旬恢復營業 | 官網、電話 | [官網](https://primenet2010.biz/tomsoya/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E6%96%97%E5%A4%A2%E3%82%BD%E3%83%BC%E3%83%A4%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 旅館官網的資料在2026年11月1日重新查過，Trip.com與Agoda的上架與評分是2026年10月18日到27日查的。
 
-### Dormy Inn 稚內
+### 多美迎 稚內
 
-想住站前又想泡溫泉，可以選Dormy Inn稚內，從JR稚內站走路3分鐘就到。10樓有男女分開的天然溫泉大浴場，也有露天浴池。泡在露天浴池裡，男湯看得到北防波堤穹頂，女湯看得到港口。1樓餐廳的自助式早餐從5:30供應到9:00，有在地的稚內炒麵（チャーメン）與海鮮丼。沒訂早餐的房客，入住時可以加訂。每天21:30到23:00還有免費的宵夜醬油拉麵。評分在Trip.com台灣站是9.4分、297則評論，Agoda台灣站是8.7分、3,176則評論。
+想住站前又想泡溫泉，可以選多美迎稚內，從JR稚內站走路3分鐘就到。10樓有男女分開的天然溫泉大浴場，也有露天浴池。泡在露天浴池裡，男湯看得到北防波堤穹頂，女湯看得到港口。1樓餐廳的自助式早餐從5:30供應到9:00，有在地的稚內炒麵（チャーメン）與海鮮丼。沒訂早餐的房客，入住時可以加訂。每天21:30到23:00還有免費的宵夜醬油拉麵。評分在Trip.com台灣站是9.4分、297則評論，Agoda台灣站是8.7分、3,176則評論。
 
 ### SURFEEL HOTEL WAKKANAI
 
-SURFEEL HOTEL WAKKANAI離JR稚內站走路3分鐘，走到渡輪站約15分鐘。開車的人可以停在40台的免費停車場，滿了就停對面的市營免費停車場。飯店門口有往稚內機場的巴士，配合航班一天一班。入住前和退房後，都能把行李寄放在1樓櫃台。評分跟Dormy Inn差不多，Trip.com台灣站9.3分、Agoda台灣站8.7分，評論各有307則與2,383則。訂房專線9點到18點接電話，只能訂到入住前一天。當天臨時要住，就打旅館的代表電話。不想講日文電話，就在官網或訂房網站訂好。
+SURFEEL HOTEL WAKKANAI離JR稚內站走路3分鐘，走到渡輪站約15分鐘。開車的人可以停在40台的免費停車場，滿了就停對面的市營免費停車場。飯店門口有往稚內機場的巴士，配合航班一天一班。入住前和退房後，都能把行李寄放在1樓櫃台。評分跟多美迎差不多，Trip.com台灣站9.3分、Agoda台灣站8.7分，評論各有307則與2,383則。訂房專線9點到18點接電話，只能訂到入住前一天。當天臨時要住，就打旅館的代表電話。不想講日文電話，就在官網或訂房網站訂好。
 
 ### 稚內站前的商務旅館與青年旅館
 
@@ -88,7 +88,7 @@ Tom Soya與Minori冬天休業。Saharin、冰雪莊、casa hotel、Meguma與民�
 
 ## 延伸資料
 
-- **天然溫泉天北之湯Dormy Inn稚內**，大浴場、早餐時間與交通說明。https://dormy-hotels.com/dormyinn/hotels/wakkanai/
+- **天然溫泉天北之湯多美迎稚內**，大浴場、早餐時間與交通說明。https://dormy-hotels.com/dormyinn/hotels/wakkanai/
 - **SURFEEL HOTEL WAKKANAI常見問題**，到渡輪站的走法、停車場與機場巴士。https://www.surfeel-wakkanai.com/faq
 - **THE STAY WAKKANAI**，預約方式與入住時間。https://thestay.jp/wakkanai/
 - **Guest House Moshiripa**，常見問題頁有退房時間、寄放行李與訂房方式。https://moshiripa.com/faq/

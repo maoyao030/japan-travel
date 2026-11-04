@@ -43,6 +43,7 @@
 | 位置 | 鴛泊渡輪站約3.6公里，走路約60分鐘 |
 | 設施 | 攜帶式廁所回收箱、洗鞋處 |
 | 營業期間 | 5月15日～10月15日 |
+| 連結 | [官網](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1133.htm)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E5%B0%BB%E5%8C%97%E9%BA%93%E9%87%8E%E5%96%B6%E5%A0%B4%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
 
 ### 沓形路線
 
