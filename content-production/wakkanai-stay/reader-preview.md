@@ -18,23 +18,23 @@
 
 站前的旅館離車站、巴士總站與渡輪站都近。站前之外，南稚內一帶靠近鬧區，機場附近、野寒布與宗谷岬則只有零星幾家。
 
-| 住宿 | 區域 | 離車站或港口 | 營業期間 | 訂房管道 |
-|---|---|---|---|---|
-| 多美迎稚內 | JR稚內站周邊 | JR稚內站走路約3分鐘 | 冬天也營業 | 官網、Trip.com、Agoda |
-| SURFEEL HOTEL WAKKANAI | JR稚內站周邊 | JR稚內站走路約3分鐘，渡輪站走路約15分鐘 | 冬天也營業 | 官網、電話、Trip.com、Agoda |
-| THE STAY WAKKANAI | JR稚內站周邊 | JR稚內站走路約1分鐘 | 冬天也營業 | 官網、電話、E-mail、Trip.com、Agoda |
-| Guest House Moshiripa | JR稚內站周邊 | JR稚內站走路約4分鐘，渡輪站走路15～20分鐘 | 冬天也營業 | 官網、Trip.com、Agoda |
-| HOTEL TRUNK WAKKANAI | JR稚內站周邊 | JR稚內站走路約5分鐘，渡輪站開車約3分鐘 | 冬天也營業 | 官網、Trip.com、Agoda |
-| Hotel Saharin | JR稚內站周邊 | JR稚內站走路約7分鐘 | — | 官網、電話、Trip.com、Agoda |
-| 國民宿舍冰雪莊 | JR稚內站周邊 | JR稚內站與巴士總站走路約5分鐘，渡輪站走路15分鐘 | — | 只有電話 |
-| Hotel Miyuki | JR稚內站周邊 | JR稚內站走路約4分鐘，渡輪站走路約17分鐘 | 冬天也營業，有冬季限定方案 | 官網、電話、Trip.com、Agoda |
-| Hotel New Chikou | 南稚內 | JR南稚內站走路約5分鐘，渡輪站開車約8分鐘 | 冬天也營業 | 官網、電話、Trip.com、Agoda |
-| WAKKANAI GRAND HOTEL | 南稚內 | JR南稚內站走路約3分鐘 | 12月29日～1月4日休館，其他時間冬天也營業 | 官網、Trip.com、Agoda |
-| casa hotel | 南稚內 | JR南稚內站走路約2分鐘 | — | Trip.com、Agoda |
-| Hotel Meguma（Trip.com顯示Meguma飯店） | 聲問，市區與機場之間 | 稚內機場開車約5分鐘 | — | 官網、電話、Trip.com、Agoda |
-| 小飯店Minori | 野寒布 | JR稚內站開車約10分鐘 | 約11月底～4月底休業 | 只有電話 |
-| 民宿宗谷岬 | 宗谷岬 | 宗谷岬一帶（宗谷岬4丁目） | — | 只有電話 |
-| Pension Tom Soya | 宗谷岬 | 宗谷岬走路約3分鐘，「宗谷岬」巴士站走路約2分鐘 | 冬季休業，2027年4月下旬恢復營業 | 官網、電話 |
+| 住宿 | 區域 | 離車站或港口 | 營業期間 | 訂房管道 | 連結 |
+|---|---|---|---|---|---|
+| 多美迎稚內 | JR稚內站周邊 | JR稚內站走路約3分鐘 | 冬天也營業 | 官網、Trip.com、Agoda | [官網](https://dormy-hotels.com/dormyinn/hotels/wakkanai/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E5%8C%97%E3%81%AE%E6%B9%AF%20%E3%83%89%E3%83%BC%E3%83%9F%E3%83%BC%E3%82%A4%E3%83%B3%E7%A8%9A%E5%86%85%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| SURFEEL HOTEL WAKKANAI | JR稚內站周邊 | JR稚內站走路約3分鐘，渡輪站走路約15分鐘 | 冬天也營業 | 官網、電話、Trip.com、Agoda | [官網](https://www.surfeel-wakkanai.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%9B%E3%83%86%E3%83%AB%E7%A8%9A%E5%86%85%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| THE STAY WAKKANAI | JR稚內站周邊 | JR稚內站走路約1分鐘 | 冬天也營業 | 官網、電話、E-mail、Trip.com、Agoda | [官網](https://thestay.jp/wakkanai/)・[地圖](https://www.google.com/maps/search/?api=1&query=THE%20STAY%20WAKKANAI%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| Guest House Moshiripa | JR稚內站周邊 | JR稚內站走路約4分鐘，渡輪站走路15～20分鐘 | 冬天也營業 | 官網、Trip.com、Agoda | [官網](https://moshiripa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B2%E3%82%B9%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B9%E3%83%A2%E3%82%B7%E3%83%AA%E3%83%91%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| HOTEL TRUNK WAKKANAI | JR稚內站周邊 | JR稚內站走路約5分鐘，渡輪站開車約3分鐘 | 冬天也營業 | 官網、Trip.com、Agoda | [官網](https://hoteltrunk-wakkanai.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF%E7%A8%9A%E5%86%85%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| Hotel Saharin | JR稚內站周邊 | JR稚內站走路約7分鐘 | — | 官網、電話、Trip.com、Agoda | [官網](http://www.saharin.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%B5%E3%83%8F%E3%83%AA%E3%83%B3%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| 國民宿舍冰雪莊 | JR稚內站周邊 | JR稚內站與巴士總站走路約5分鐘，渡輪站走路15分鐘 | — | 只有電話 | [官網](https://www.north-hokkaido.com/booking/detail_1227.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%9B%BD%E6%B0%91%E5%AE%BF%E8%88%8E%E6%B0%B7%E9%9B%AA%E8%8D%98%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| Hotel Miyuki | JR稚內站周邊 | JR稚內站走路約4分鐘，渡輪站走路約17分鐘 | 冬天也營業，有冬季限定方案 | 官網、電話、Trip.com、Agoda | [官網](http://www.hotelmiyuki.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E7%BE%8E%E9%9B%AA%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| Hotel New Chikou | 南稚內 | JR南稚內站走路約5分鐘，渡輪站開車約8分鐘 | 冬天也營業 | 官網、電話、Trip.com、Agoda | [官網](https://www.chikoukankou.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%81%E3%82%B3%E3%82%A6%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| WAKKANAI GRAND HOTEL | 南稚內 | JR南稚內站走路約3分鐘 | 12月29日～1月4日休館，其他時間冬天也營業 | 官網、Trip.com、Agoda | [官網](https://www.wakkanai-g-hotel.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A8%9A%E5%86%85%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%83%9B%E3%83%86%E3%83%AB%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| casa hotel | 南稚內 | JR南稚內站走路約2分鐘 | — | Trip.com、Agoda | [官網](https://www.north-hokkaido.com/booking/detail_1400.html)・[地圖](https://www.google.com/maps/search/?api=1&query=casa%20hotel%20%E7%A8%9A%E5%86%85%E5%B8%82%E5%A4%A7%E9%BB%921%E4%B8%81%E7%9B%AE7-44) |
+| Hotel Meguma（Trip.com顯示Meguma飯店） | 聲問，市區與機場之間 | 稚內機場開車約5分鐘 | — | 官網、電話、Trip.com、Agoda | [官網](https://www.meguma.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%81%E3%81%90%E3%81%BE%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| 小飯店Minori | 野寒布 | JR稚內站開車約10分鐘 | 約11月底～4月底休業 | 只有電話 | [官網](https://www.north-hokkaido.com/booking/detail_1406.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E3%81%95%E3%81%AA%E3%83%9B%E3%83%86%E3%83%AB%E3%81%BF%E3%81%AE%E3%82%8A%20%E7%A8%9A%E5%86%85%E5%B8%82) |
+| 民宿宗谷岬 | 宗谷岬 | 宗谷岬一帶（宗谷岬4丁目） | — | 只有電話 | [官網](https://www.north-hokkaido.com/booking/detail_1237.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B0%91%E5%AE%BF%E5%AE%97%E8%B0%B7%E5%B2%AC%20%E7%A8%9A%E5%86%85%E5%B8%82%E5%AE%97%E8%B0%B7%E5%B2%AC4%E4%B8%81%E7%9B%AE10) |
+| Pension Tom Soya | 宗谷岬 | 宗谷岬走路約3分鐘，「宗谷岬」巴士站走路約2分鐘 | 冬季休業，2027年4月下旬恢復營業 | 官網、電話 | [官網](https://primenet2010.biz/tomsoya/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E6%96%97%E5%A4%A2%E3%82%BD%E3%83%BC%E3%83%A4%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 旅館官網的資料在2026年11月1日重新查過，Trip.com與Agoda的上架與評分是2026年10月18日到27日查的。
 

@@ -1,0 +1,48 @@
+{
+  "article": "asahidake-stay",
+  "infoBoxes": [],
+  "stayTables": [
+    {
+      "tableKey": "table0031",
+      "rows": {
+        "Hotel Bear Monte": {
+          "official": null,
+          "mapQuery": "旭岳温泉ホテルベアモンテ 東川町"
+        },
+        "La Vista大雪山": {
+          "official": "https://dormy-hotels.com/resort/hotels/la_daisetsuzan/",
+          "mapQuery": "ラビスタ大雪山 東川町"
+        },
+        "湯元湧駒莊": {
+          "official": "https://www.yukoman.jp/",
+          "mapQuery": "湯元湧駒荘 東川町"
+        },
+        "大雪山白樺莊": {
+          "official": "https://www.shirakabasou.com/",
+          "mapQuery": "大雪山白樺荘 東川町"
+        },
+        "K's House北海道": {
+          "official": "https://kshouse.jp/hokkaido-j/index.html",
+          "mapQuery": "ケイズハウス北海道 東川町"
+        },
+        "大雪山山莊": {
+          "official": "https://www.welcome-higashikawa.jp/hotels/%e5%a4%a7%e9%9b%aa%e5%b1%b1%e5%b1%b1%e8%8d%98/",
+          "mapQuery": "大雪山山荘 東川町"
+        },
+        "Art Village杜季": {
+          "official": "https://www.asahidake-toki.jp/",
+          "mapQuery": "アートヴィレッジ杜季 東川町"
+        },
+        "御宿敷島莊": {
+          "official": "https://www.sikisimasou.jp/",
+          "mapQuery": "御やど しきしま荘 東川町"
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Hotel Bear Monte: its own site www.bearmonte.jp (linked from ようこそ東川's stay page and used in the article's research) failed verification from this container: HTTPS gives 'SSL certificate problem: self-signed certificate', HTTP gives 403. I did not try to get around it, so official is null. If it opens normally in a browser, https://www.bearmonte.jp/ is the URL to use. No tourism-association detail page exists for it (ようこそ東川 only links out).",
+    "大雪山山荘 has no own website (research uses phone/fax and a Facebook page that needs login), so official is the 東川町観光協会 (ようこそ東川) page about it.",
+    "御宿敷島莊 is in 天人峡温泉, which is in 東川町, so the map query uses 東川町."
+  ]
+}

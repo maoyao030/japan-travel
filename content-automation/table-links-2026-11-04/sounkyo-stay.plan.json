@@ -1,0 +1,84 @@
+{
+  "article": "sounkyo-stay",
+  "infoBoxes": [],
+  "stayTables": [
+    {
+      "tableKey": "table0111",
+      "rows": {
+        "朝陽亭": {
+          "official": "https://www.choyotei.com/",
+          "mapQuery": "層雲峡朝陽亭 上川町"
+        },
+        "朝陽度假飯店": {
+          "official": "https://www.choyo-resort.com/",
+          "mapQuery": "朝陽リゾートホテル 上川町"
+        },
+        "層雲閣": {
+          "official": "https://sounkaku.co.jp/",
+          "mapQuery": "層雲閣MOUNTAIN RESORT 1923 上川町"
+        },
+        "大雪飯店": {
+          "official": "https://www.hotel-taisetsu.com/",
+          "mapQuery": "ホテル大雪 上川町"
+        },
+        "層雲峽觀光飯店": {
+          "official": "https://sounkyo-kankou.co.jp/",
+          "mapQuery": "層雲峡観光ホテル 上川町"
+        },
+        "HOTEL KUMOI": {
+          "official": "https://www.hotelkumoi.com/",
+          "mapQuery": "ホテル雲井 上川町"
+        },
+        "湯元銀泉閣": {
+          "official": "https://breezbay-group.com/ginsenkaku/",
+          "mapQuery": "湯元銀泉閣 上川町"
+        },
+        "民宿山之上": {
+          "official": "https://pen-yamanoue.com/",
+          "mapQuery": "リゾートペンション山の上 上川町"
+        },
+        "民宿Todate": {
+          "official": "http://m-todate.com/",
+          "mapQuery": "民宿とだて 上川町"
+        },
+        "民宿銀河": {
+          "official": "https://sounkyo-ginga.com/",
+          "mapQuery": "温泉ペンション銀河 上川町"
+        },
+        "Sounkyo Hostel": {
+          "official": "https://www.sounkyo-hostel.com/",
+          "mapQuery": "層雲峡ホステル 上川町"
+        },
+        "旅莊望岳園": {
+          "official": "https://sounkyo.net/stay/detail.html?content=29",
+          "mapQuery": "旅荘望岳園 上川町"
+        },
+        "KAMIKAWA HOTEL": {
+          "official": "https://primenet2010.biz/kamikawa-hotel/",
+          "mapQuery": "KAMIKAWA HOTEL 上川町"
+        },
+        "ANSHINDO": {
+          "official": "https://efc.hokkaido.jp/anshindo",
+          "mapQuery": "ANSHINDO 上川町"
+        },
+        "上川莊": {
+          "official": "https://kamikawasou.com/",
+          "mapQuery": "民宿上川荘 上川町"
+        },
+        "愛山溪溫泉": {
+          "official": "https://aizankei.npokamui.org/",
+          "mapQuery": "愛山渓温泉 上川町"
+        }
+      }
+    }
+  ],
+  "notes": [
+    "旅莊望岳園 has no own website (research F138: 沒有官網; the 観光協会 page links only to Rakuten Travel), so official is its 層雲峡観光協会 page.",
+    "民宿Todate's site http://m-todate.com/ is plain HTTP (no HTTPS) and Shift_JIS; it opens with 200.",
+    "ANSHINDO's site efc.hokkaido.jp/anshindo returns 200 with the right title (ANSHINDO｜北海道上川町のマイクロホテル…), but the body needs JavaScript to show. If that is a concern, the 層雲峡観光協会 page https://sounkyo.net/stay/detail.html?content=106 also works (200).",
+    "HOTEL KUMOI: map query uses the Japanese signboard name ホテル雲井 (the site title is ホテル雲井); 'HOTEL KUMOI 上川町' is an equivalent alternative.",
+    "大雪飯店 and 層雲閣: map queries use the short name ホテル大雪 and the full 層雲閣MOUNTAIN RESORT 1923, as shown on the 観光協会 list.",
+    "朝陽度假飯店: the official name is 層雲峡温泉 朝陽リゾートホテル; the query drops the 層雲峡温泉 prefix but keeps 上川町.",
+    "愛山溪溫泉 is in the mountains of 上川町 (愛山渓), about 30 minutes by car from JR上川駅; seasonal (May–Oct). Official site is the current operator NPO法人かむい's site."
+  ]
+}

@@ -24,20 +24,20 @@
 
 下表12間照離車站的遠近排，站前9間從車站直結到走路5分鐘，市中心3間要走13到15分鐘。第二欄是Trip.com台灣站上顯示的館名，搜尋時可以直接打。飯店資料的查核日期是2026年10月26日。
 
-| 飯店 | 訂房網站上的名稱 | 區域 | 到JR旭川站 | 訂房管道 |
-|---|---|---|---|---|
-| JR Inn旭川 | 旭川JR飯店（Jr Inn Asahikawa） | 宮下通7丁目 | 車站直結 | 官網、Trip.com、Agoda |
-| Y's Hotel旭川站前 | Y飯店-旭川站前（Y’s HOTEL ASAHIKAWA EKIMAE） | 宮下通9丁目 | 走路約1分 | 官網、Trip.com、Agoda |
-| KOKO HOTEL旭川站前 | KOKO HOTEL 旭川前旭川站（KOKO HOTEL Asahikawa Station） | 宮下通7丁目 | 走路2分 | 官網、Trip.com、Agoda |
-| 露櫻 Grand旭川站前 | 露櫻GRAND飯店旭川站前店（Hotel 露櫻 Grand Asahikawa Ekimae） | 宮下通8丁目 | 北口走路2分 | 官網、Trip.com、Agoda |
-| 天然溫泉Premier Hotel-CABIN-旭川 | 旭川普樂美雅凱賓飯店（Premier Hotel -Cabin- Asahikawa） | 1條通7丁目 | 走路3分 | 官網、Trip.com、Agoda |
-| HOTEL AMANEK旭川 | 旭川HOTEL AMANEK（HOTEL AMANEK Asahikawa） | 1條通8丁目 | 北口走路3分 | 官網、Trip.com、Agoda |
-| 東橫INN旭川站東口 | 東橫INN-旭川站東口（Toyoko Inn Hokkaido Asahikawa Eki Higashi Guchi） | 宮下通11丁目 | 東口走路3分 | 官網、Trip.com、Agoda |
-| 露櫻旭川站前一條通 | 露櫻飯店旭川站前一條通店（Hotel Route-Inn Asahikawa Ekimae Ichijodori） | 1條通6丁目 | 走路約5分 | 官網、Trip.com、Agoda |
-| 東橫INN旭川站前一條通 | 北海道旭川站前一條通東橫飯店（Toyoko Inn Hokkaido Asahikawa Ekimae Ichijo Dori） | 1條通9丁目 | 走路約5分 | 官網、Trip.com、Agoda |
-| OMO7旭川 | OMO7 旭川 by 星野集團（OMO7 Asahikawa by Hoshino Resorts） | 6條通9丁目 | 走路約13～15分 | 官網、Trip.com、Agoda |
-| 多美迎旭川 | 北海道旭川多美迎天然溫泉飯店（多美迎 Asahikawa Natural Hot Spring） | 5條通6丁目 | 走路約15分 | 官網、Trip.com、Agoda |
-| Art Hotel旭川 | ART旭川飯店（Art Hotel Asahikawa） | 7條通6丁目 | 走路約15分 | 官網、Trip.com、Agoda |
+| 飯店 | 訂房網站上的名稱 | 區域 | 到JR旭川站 | 訂房管道 | 連結 |
+|---|---|---|---|---|---|
+| JR Inn旭川 | 旭川JR飯店（Jr Inn Asahikawa） | 宮下通7丁目 | 車站直結 | 官網、Trip.com、Agoda | [官網](https://www.jr-inn.jp/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=JR%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Y's Hotel旭川站前 | Y飯店-旭川站前（Y’s HOTEL ASAHIKAWA EKIMAE） | 宮下通9丁目 | 走路約1分 | 官網、Trip.com、Agoda | [官網](https://yshotel-asahikawa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AF%E3%82%A4%E3%82%BA%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| KOKO HOTEL旭川站前 | KOKO HOTEL 旭川前旭川站（KOKO HOTEL Asahikawa Station） | 宮下通7丁目 | 走路2分 | 官網、Trip.com、Agoda | [官網](https://www.koko-hotels.com/asahikawa_station/)・[地圖](https://www.google.com/maps/search/?api=1&query=KOKO%20HOTEL%20%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 露櫻 Grand旭川站前 | 露櫻GRAND飯店旭川站前店（Hotel 露櫻 Grand Asahikawa Ekimae） | 宮下通8丁目 | 北口走路2分 | 官網、Trip.com、Agoda | [官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3Grand%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 天然溫泉Premier Hotel-CABIN-旭川 | 旭川普樂美雅凱賓飯店（Premier Hotel -Cabin- Asahikawa） | 1條通7丁目 | 走路3分 | 官網、Trip.com、Agoda | [官網](https://cabin.kenhotels.com/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%9B%E3%83%86%E3%83%AB-CABIN-%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| HOTEL AMANEK旭川 | 旭川HOTEL AMANEK（HOTEL AMANEK Asahikawa） | 1條通8丁目 | 北口走路3分 | 官網、Trip.com、Agoda | [地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%A2%E3%83%9E%E3%83%8D%E3%82%AF%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 東橫INN旭川站東口 | 東橫INN-旭川站東口（Toyoko Inn Hokkaido Asahikawa Eki Higashi Guchi） | 宮下通11丁目 | 東口走路3分 | 官網、Trip.com、Agoda | [官網](https://www.toyoko-inn.com/search/detail/00173/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E6%A8%AAINN%E6%97%AD%E5%B7%9D%E9%A7%85%E6%9D%B1%E5%8F%A3%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 露櫻旭川站前一條通 | 露櫻飯店旭川站前一條通店（Hotel Route-Inn Asahikawa Ekimae Ichijodori） | 1條通6丁目 | 走路約5分 | 官網、Trip.com、Agoda | [官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%E4%B8%80%E6%9D%A1%E9%80%9A%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 東橫INN旭川站前一條通 | 北海道旭川站前一條通東橫飯店（Toyoko Inn Hokkaido Asahikawa Ekimae Ichijo Dori） | 1條通9丁目 | 走路約5分 | 官網、Trip.com、Agoda | [官網](https://www.toyoko-inn.com/search/detail/00069/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E6%A8%AAINN%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%E4%B8%80%E6%9D%A1%E9%80%9A%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| OMO7旭川 | OMO7 旭川 by 星野集團（OMO7 Asahikawa by Hoshino Resorts） | 6條通9丁目 | 走路約13～15分 | 官網、Trip.com、Agoda | [官網](https://hoshinoresorts.com/ja/hotels/omo7asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=OMO7%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 多美迎旭川 | 北海道旭川多美迎天然溫泉飯店（多美迎 Asahikawa Natural Hot Spring） | 5條通6丁目 | 走路約15分 | 官網、Trip.com、Agoda | [官網](https://dormy-hotels.com/dormyinn/hotels/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%BC%E3%83%9F%E3%83%BC%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Art Hotel旭川 | ART旭川飯店（Art Hotel Asahikawa） | 7條通6丁目 | 走路約15分 | 官網、Trip.com、Agoda | [官網](https://www.art-asahikawa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 
 ### 旭川站直結的JR Inn旭川
 

@@ -47,6 +47,7 @@
 | 預約 | 不用預約，現場購票 |
 | 刷卡 | VISA、Master、JCB、AMEX、Diners、DISCOVER、JCB PREMO |
 | 電話 | 0166-68-9111 |
+| 連結 | [官網](https://asahidake.hokkaido.jp/ja/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%9B%AA%E5%B1%B1%E6%97%AD%E5%B2%B3%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
 
 ### 紅葉季週末的排隊
 
@@ -101,6 +102,7 @@
 | 一圈 | 約1.7公里，1小時～1小時30分 |
 | 難度 | 大雪山等級1，最容易 |
 | 廁所 | 姿見站，依纜車營業時間開放 |
+| 連結 | [官網](https://www.daisetsuzan.or.jp/tozan_info/%e5%a7%bf%e8%a6%8b%e3%81%ae%e6%b1%a0%e5%9c%92%e5%9c%b0/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A7%BF%E8%A6%8B%E3%81%AE%E6%B1%A0%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
 
 ### 高山植物與紅葉的時期
 

@@ -79,6 +79,7 @@
 | 開放 | 全年、免費 |
 | 停車 | 150台、免費 |
 | 雙瀑台 | 單程約20～25分鐘，開頭是陡階梯 |
+| 連結 | [官網](https://sounkyo.net/view/detail.html?content=7)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%8A%80%E6%B2%B3%E3%83%BB%E6%B5%81%E6%98%9F%E3%81%AE%E6%BB%9D%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
 
 ## 層雲峽往大雪湖方向，大函與大雪水壩
 
@@ -92,6 +93,7 @@
 | 位置 | 溫泉街往北見方向約6公里，新大函隧道過後左手邊 |
 | 開放 | 全年、免費 |
 | 停車 | 50台 |
+| 連結 | [官網](https://sounkyo.net/view/detail.html?content=10)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%87%BD%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
 
 ### 沒車怎麼去大函與瀑布？
 

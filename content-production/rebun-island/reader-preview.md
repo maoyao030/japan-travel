@@ -22,6 +22,7 @@
 | 怎麼去 | 稚內港搭Heartland Ferry到香深港，直航約1小時55分 |
 | 觀光案內所 | 香深港渡輪站內，4月中旬～10月中旬 |
 | 島上交通 | 路線巴士3條，5月到9月有定期觀光巴士 |
+| 連結 | [官網](https://www.town.rebun.hokkaido.jp/hotnews/category/301.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A4%BC%E6%96%87%E5%B3%B6%20%E7%A4%BC%E6%96%87%E7%94%BA) |
 
 ## 禮文島幾月去最好？
 

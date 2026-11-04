@@ -55,6 +55,7 @@
 | 怎麼去 | 香深港渡輪站走路約3分鐘 |
 | 營業時間 | 4月～9月12:00～22:00，10月～3月13:00～21:00，無休 |
 | 入浴費 | 600日圓，出示當天用過的一日券500日圓 |
+| 連結 | [官網](https://www.visit-hokkaido.jp/spot/detail_11402.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A4%BC%E6%96%87%E5%B3%B6%E6%B8%A9%E6%B3%89%E3%81%86%E3%81%99%E3%82%86%E3%81%8D%E3%81%AE%E6%B9%AF%20%E7%A4%BC%E6%96%87%E7%94%BA) |
 
 ## 禮文島南部的奇岩與觀景點
 
@@ -72,6 +73,7 @@
 | 怎麼去 | 香深港開車約10分鐘 |
 | 路線巴士 | 元地線到元地，520日圓 |
 | 停車場 | 20台，免費 |
+| 連結 | [官網](https://www.town.rebun.hokkaido.jp/hotnews/detail/00000172.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%9C%B0%E8%94%B5%E5%B2%A9%20%E7%A4%BC%E6%96%87%E7%94%BA) |
 
 ### 桃台貓台
 
@@ -84,6 +86,7 @@
 | 日文名 | 桃台猫台 |
 | 怎麼去 | 香深港開車約10分鐘 |
 | 停車場 | 20台，免費 |
+| 連結 | [官網](https://www.town.rebun.hokkaido.jp/hotnews/detail/00000170.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%A1%83%E5%8F%B0%E7%8C%AB%E5%8F%B0%20%E7%A4%BC%E6%96%87%E7%94%BA) |
 
 ### 桃岩展望台
 
@@ -96,6 +99,7 @@
 | 日文名 | 桃岩展望台 |
 | 怎麼去 | 香深港開車約10分鐘 |
 | 停車場 | 12台，免費 |
+| 連結 | [官網](https://www.town.rebun.hokkaido.jp/hotnews/detail/00000169.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%A1%83%E5%B2%A9%E5%B1%95%E6%9C%9B%E5%8F%B0%20%E7%A4%BC%E6%96%87%E7%94%BA) |
 
 ## 禮文島的北方金絲雀公園
 
@@ -109,6 +113,7 @@
 | 開放 | 5月～10月，9:00～17:00，無休 |
 | 怎麼去 | 香深港開車約5分鐘，觀光巴士禮文A停靠 |
 | 停車場 | 10台，免費 |
+| 連結 | [官網](https://www.town.rebun.hokkaido.jp/hotnews/detail/00000171.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E3%81%AE%E3%82%AB%E3%83%8A%E3%83%AA%E3%82%A2%E3%83%91%E3%83%BC%E3%82%AF%20%E7%A4%BC%E6%96%87%E7%94%BA) |
 
 ### 吉永小百合主演電影的外景地
 
@@ -127,6 +132,7 @@
 | 門票 | 大人310日圓、小孩160日圓 |
 | 怎麼去 | 香深港開車約30分鐘 |
 | 電話 | 0163-87-2941 |
+| 連結 | [官網](https://www.town.rebun.hokkaido.jp/hotnews/detail/00000176.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A4%BC%E6%96%87%E7%94%BA%E9%AB%98%E5%B1%B1%E6%A4%8D%E7%89%A9%E5%9C%92) |
 
 ## 禮文島北部的岬
 
@@ -143,6 +149,7 @@
 | 日文名 | 澄海岬 |
 | 怎麼去 | 香深港開車約50分鐘，觀光巴士禮文A、禮文B停靠 |
 | 停車場 | 20台，免費 |
+| 連結 | [官網](https://www.town.rebun.hokkaido.jp/hotnews/detail/00000177.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%BE%84%E6%B5%B7%E5%B2%AC%20%E7%A4%BC%E6%96%87%E7%94%BA) |
 
 ### 須古頓岬
 
@@ -156,6 +163,7 @@
 | 怎麼去 | 香深港開車約60分鐘，路線巴士禮文線②終點 |
 | 車資 | 渡輪站出發1,400日圓 |
 | 停車場 | 20台，免費 |
+| 連結 | [官網](https://www.town.rebun.hokkaido.jp/hotnews/detail/00000180.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%82%B3%E3%83%88%E3%83%B3%E5%B2%AC%20%E7%A4%BC%E6%96%87%E7%94%BA) |
 
 ### 郭洛塔岬
 
@@ -168,6 +176,7 @@
 | 日文名 | ゴロタ岬 |
 | 怎麼去 | 路線巴士禮文線②到江戶屋站，再走約30分鐘 |
 | 停車場 | 3台，免費 |
+| 連結 | [官網](https://www.town.rebun.hokkaido.jp/hotnews/detail/00000179.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B4%E3%83%AD%E3%82%BF%E5%B2%AC%20%E7%A4%BC%E6%96%87%E7%94%BA) |
 
 ### 金田之岬
 

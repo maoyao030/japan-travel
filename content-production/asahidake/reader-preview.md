@@ -94,6 +94,7 @@
 | 入館 | 免費 |
 | 位置 | 纜車山麓站約100公尺 |
 | 停車場 | 91台，7月1日～9月30日每日500日圓，禁止車中泊 |
+| 連結 | [官網](https://www.asahidake-vc-2291.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%AD%E5%B2%B3%E3%83%93%E3%82%B8%E3%82%BF%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
 
 ### 旭岳溫泉日歸入浴
 

@@ -30,6 +30,7 @@
 | 時間 | 9:30～16:30，最後受理16:00 |
 | 費用 | 剝海膽體驗每人2,000日圓（含稅），最多30分鐘 |
 | 預約 | 5人以上團體必須預約，5月只接受預約，從官網預約頁申請 |
+| 連結 | [官網](https://rishiri-kamui.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E5%B1%85%E6%B5%B7%E5%B2%B8%E3%83%91%E3%83%BC%E3%82%AF%20%E5%88%A9%E5%B0%BB%E7%94%BA) |
 
 ### 利尻昆布與鮑魚
 
@@ -78,6 +79,7 @@
 | 公休 | 週四 |
 | 招牌 | 燒醬油拉麵 |
 | 獲獎 | 米其林指南北海道2012、2017特別版必比登推介 |
+| 連結 | [官網](https://hirmiraku.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E5%B0%BB%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E5%91%B3%E6%A5%BD%20%E6%9C%AC%E5%BA%97%20%E5%88%A9%E5%B0%BB%E7%94%BA) |
 
 ### 利尻 Pizza GOLLEY’S
 

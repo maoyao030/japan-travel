@@ -49,6 +49,7 @@
 | 步道 | 周圍約1公里 |
 | 沒車怎麼去 | 路線巴士姬沼口站，從鴛泊渡輪站360日圓；觀光巴士利尻A路線 |
 | 設施 | 停車場公廁、沼前商店 |
+| 連結 | [官網](https://www.rishiri-plus.jp/shima-place/himenuma/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A7%AB%E6%B2%BC%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
 
 ### Pon 山
 
@@ -71,6 +72,7 @@ Otatomari沼是島上最大的湖沼。沿著周長約1公里的步道走，一�
 | 參觀時間 | 約30分鐘 |
 | 沒車怎麼去 | 路線巴士Otatomari沼站、觀光巴士利尻A路線與B路線 |
 | 沼畔設施 | 休憩所 8:00～17:00（觀光季）、利尻龜一 9:00～17:00（4月中旬～10月下旬） |
+| 連結 | [官網](https://www.rishiri-plus.jp/shima-place/otatomari/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%AA%E3%82%BF%E3%83%88%E3%83%9E%E3%83%AA%E6%B2%BC%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
 
 ### 白色戀人之丘
 
@@ -84,6 +86,7 @@ Otatomari沼是島上最大的湖沼。沿著周長約1公里的步道走，一�
 | 封閉期間 | 11月上旬～4月下旬 |
 | 停車場 | 免費10台 |
 | 怎麼去 | 鴛泊渡輪站開車約35分鐘；沒車搭計程車，或從Otatomari沼站走到沼浦露營場入口 |
+| 連結 | [官網](https://www.rishiri-plus.jp/shima-place/shiroi-koibito/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E3%81%84%E6%81%8B%E4%BA%BA%E3%81%AE%E4%B8%98%20%E6%B2%BC%E6%B5%A6%E5%B1%95%E6%9C%9B%E5%8F%B0%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
 
 ### 白色戀人包裝上的利尻山
 
@@ -107,6 +110,7 @@ Otatomari沼是島上最大的湖沼。沿著周長約1公里的步道走，一�
 | 開放期間 | 5月～10月 |
 | 沒車怎麼去 | 路線巴士「御崎公園」站、觀光巴士利尻A路線與B路線 |
 | 看點 | 餵斑海豹，6月～9月左右 8:00～17:00，飼料100日圓 |
+| 連結 | [官網](https://www.rishiri-plus.jp/shima-place/senhoshi-misaki/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%BB%99%E6%B3%95%E5%BF%97%E5%BE%A1%E5%B4%8E%E5%85%AC%E5%9C%92%20%E5%88%A9%E5%B0%BB%E7%94%BA) |
 
 ### 人面岩、寢熊岩與北之嚴島辯天宮
 

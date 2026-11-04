@@ -20,16 +20,16 @@
 
 表裡的冬季營業查核到2026年10月26日，白樺莊依的是近兩年的休館公告。下車站則照各旅館官網寫的站名。
 
-| 旅館 | 日文名 | 區域 | 出湯號下車站 | 冬季營業 | 訂房管道 |
-|---|---|---|---|---|---|
-| Hotel Bear Monte | 旭岳温泉ホテルベアモンテ | 旭岳溫泉 | Hotel Bear Monte前 | 冬季營業 | 官網、Trip.com、Agoda |
-| La Vista大雪山 | ラビスタ大雪山 | 旭岳溫泉 | 旭岳露營場 | 冬季營業 | 官網、電話、Trip.com、Agoda |
-| 湯元湧駒莊 | 湯元湧駒荘 | 旭岳溫泉 | 旭岳溫泉入口 | 冬季營業 | 官網、電話、Trip.com、Agoda |
-| 大雪山白樺莊 | 大雪山白樺荘 | 旭岳溫泉 | — | 冬季營業 | 官網表單、電話 |
-| K's House北海道 | ケイズハウス北海道 | 旭岳溫泉 | 旭岳溫泉入口 | 冬季營業，另有休館日 | 只收網路預約（官網、Trip.com、Agoda） |
-| 大雪山山莊 | 大雪山山荘 | 旭岳溫泉 | — | — | 電話、傳真 |
-| Art Village杜季 | アートヴィレッジ杜季 | 旭岳溫泉 | — | — | 電話、官網表單、Jalan、Trip.com |
-| 御宿敷島莊 | 御やど しきしま荘 | 天人峽溫泉 | 旭岳源水公園前，旅館接送 | 冬季營業 | 官網、電話、Trip.com、Agoda |
+| 旅館 | 日文名 | 區域 | 出湯號下車站 | 冬季營業 | 訂房管道 | 連結 |
+|---|---|---|---|---|---|---|
+| Hotel Bear Monte | 旭岳温泉ホテルベアモンテ | 旭岳溫泉 | Hotel Bear Monte前 | 冬季營業 | 官網、Trip.com、Agoda | [地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%AD%E5%B2%B3%E6%B8%A9%E6%B3%89%E3%83%9B%E3%83%86%E3%83%AB%E3%83%99%E3%82%A2%E3%83%A2%E3%83%B3%E3%83%86%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| La Vista大雪山 | ラビスタ大雪山 | 旭岳溫泉 | 旭岳露營場 | 冬季營業 | 官網、電話、Trip.com、Agoda | [官網](https://dormy-hotels.com/resort/hotels/la_daisetsuzan/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%A9%E3%83%93%E3%82%B9%E3%82%BF%E5%A4%A7%E9%9B%AA%E5%B1%B1%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| 湯元湧駒莊 | 湯元湧駒荘 | 旭岳溫泉 | 旭岳溫泉入口 | 冬季營業 | 官網、電話、Trip.com、Agoda | [官網](https://www.yukoman.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B9%AF%E5%85%83%E6%B9%A7%E9%A7%92%E8%8D%98%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| 大雪山白樺莊 | 大雪山白樺荘 | 旭岳溫泉 | — | 冬季營業 | 官網表單、電話 | [官網](https://www.shirakabasou.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%9B%AA%E5%B1%B1%E7%99%BD%E6%A8%BA%E8%8D%98%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| K's House北海道 | ケイズハウス北海道 | 旭岳溫泉 | 旭岳溫泉入口 | 冬季營業，另有休館日 | 只收網路預約（官網、Trip.com、Agoda） | [官網](https://kshouse.jp/hokkaido-j/index.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B1%E3%82%A4%E3%82%BA%E3%83%8F%E3%82%A6%E3%82%B9%E5%8C%97%E6%B5%B7%E9%81%93%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| 大雪山山莊 | 大雪山山荘 | 旭岳溫泉 | — | — | 電話、傳真 | [官網](https://www.welcome-higashikawa.jp/hotels/%e5%a4%a7%e9%9b%aa%e5%b1%b1%e5%b1%b1%e8%8d%98/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%9B%AA%E5%B1%B1%E5%B1%B1%E8%8D%98%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| Art Village杜季 | アートヴィレッジ杜季 | 旭岳溫泉 | — | — | 電話、官網表單、Jalan、Trip.com | [官網](https://www.asahidake-toki.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%BC%E3%83%88%E3%83%B4%E3%82%A3%E3%83%AC%E3%83%83%E3%82%B8%E6%9D%9C%E5%AD%A3%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| 御宿敷島莊 | 御やど しきしま荘 | 天人峽溫泉 | 旭岳源水公園前，旅館接送 | 冬季營業 | 官網、電話、Trip.com、Agoda | [官網](https://www.sikisimasou.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E3%82%84%E3%81%A9%20%E3%81%97%E3%81%8D%E3%81%97%E3%81%BE%E8%8D%98%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
 
 想改住山下的東川市區、白天再搭車上山，東川町那一頁整理了市區的住宿。
 

@@ -100,24 +100,24 @@ HOTEL KUMOI的溫泉是100%源泉放流的硫磺泉，離黑岳纜車走路1分�
 
 Sounkyo Hostel與愛山溪溫泉冬天不開，冬天前往要從其他旅館挑。
 
-| 旅館 | 區域 | 訂房管道 |
-|---|---|---|
-| 朝陽亭 | 溫泉街 | 官網、Trip.com、Agoda |
-| 朝陽度假飯店 | 溫泉街 | 官網、Trip.com、Agoda |
-| 層雲閣 | 溫泉街 | 官網、Trip.com、Agoda |
-| 大雪飯店 | 溫泉街 | 官網、Trip.com、Agoda |
-| 層雲峽觀光飯店 | 溫泉街 | 官網、Trip.com、Agoda |
-| HOTEL KUMOI | 溫泉街 | 官網、Trip.com、Agoda |
-| 湯元銀泉閣 | 溫泉街 | 官網、Trip.com、Agoda |
-| 民宿山之上 | 溫泉街 | 官網、Trip.com、Agoda |
-| 民宿Todate | 溫泉街 | 電話、Jalan |
-| 民宿銀河 | 溫泉街 | 電話 |
-| Sounkyo Hostel | 溫泉街（冬季休業） | 官網、Trip.com、Agoda |
-| 旅莊望岳園 | 清川 | 電話、Agoda、樂天Travel |
-| KAMIKAWA HOTEL | 上川站 | 官網 |
-| ANSHINDO | 上川站 | email、官方Instagram、Agoda |
-| 上川莊 | 上川站 | 電話 |
-| 愛山溪溫泉 | 愛山溪（冬季休業） | 官方LINE、官網表單 |
+| 旅館 | 區域 | 訂房管道 | 連結 |
+|---|---|---|---|
+| 朝陽亭 | 溫泉街 | 官網、Trip.com、Agoda | [官網](https://www.choyotei.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E5%B3%A1%E6%9C%9D%E9%99%BD%E4%BA%AD%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 朝陽度假飯店 | 溫泉街 | 官網、Trip.com、Agoda | [官網](https://www.choyo-resort.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9C%9D%E9%99%BD%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 層雲閣 | 溫泉街 | 官網、Trip.com、Agoda | [官網](https://sounkaku.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E9%96%A3MOUNTAIN%20RESORT%201923%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 大雪飯店 | 溫泉街 | 官網、Trip.com、Agoda | [官網](https://www.hotel-taisetsu.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E5%A4%A7%E9%9B%AA%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 層雲峽觀光飯店 | 溫泉街 | 官網、Trip.com、Agoda | [官網](https://sounkyo-kankou.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E5%B3%A1%E8%A6%B3%E5%85%89%E3%83%9B%E3%83%86%E3%83%AB%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| HOTEL KUMOI | 溫泉街 | 官網、Trip.com、Agoda | [官網](https://www.hotelkumoi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E9%9B%B2%E4%BA%95%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 湯元銀泉閣 | 溫泉街 | 官網、Trip.com、Agoda | [官網](https://breezbay-group.com/ginsenkaku/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B9%AF%E5%85%83%E9%8A%80%E6%B3%89%E9%96%A3%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 民宿山之上 | 溫泉街 | 官網、Trip.com、Agoda | [官網](https://pen-yamanoue.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E5%B1%B1%E3%81%AE%E4%B8%8A%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 民宿Todate | 溫泉街 | 電話、Jalan | [官網](http://m-todate.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B0%91%E5%AE%BF%E3%81%A8%E3%81%A0%E3%81%A6%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 民宿銀河 | 溫泉街 | 電話 | [官網](https://sounkyo-ginga.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B8%A9%E6%B3%89%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E9%8A%80%E6%B2%B3%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| Sounkyo Hostel | 溫泉街（冬季休業） | 官網、Trip.com、Agoda | [官網](https://www.sounkyo-hostel.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E5%B3%A1%E3%83%9B%E3%82%B9%E3%83%86%E3%83%AB%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 旅莊望岳園 | 清川 | 電話、Agoda、樂天Travel | [官網](https://sounkyo.net/stay/detail.html?content=29)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%85%E8%8D%98%E6%9C%9B%E5%B2%B3%E5%9C%92%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| KAMIKAWA HOTEL | 上川站 | 官網 | [官網](https://primenet2010.biz/kamikawa-hotel/)・[地圖](https://www.google.com/maps/search/?api=1&query=KAMIKAWA%20HOTEL%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| ANSHINDO | 上川站 | email、官方Instagram、Agoda | [官網](https://efc.hokkaido.jp/anshindo)・[地圖](https://www.google.com/maps/search/?api=1&query=ANSHINDO%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 上川莊 | 上川站 | 電話 | [官網](https://kamikawasou.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B0%91%E5%AE%BF%E4%B8%8A%E5%B7%9D%E8%8D%98%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 愛山溪溫泉 | 愛山溪（冬季休業） | 官方LINE、官網表單 | [官網](https://aizankei.npokamui.org/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%84%9B%E5%B1%B1%E6%B8%93%E6%B8%A9%E6%B3%89%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
 
 愛山溪溫泉的預約用LINE官方帳號或官網表單，由負責人回覆能不能住。北海道住宿稅依住宿費分級，旭川住宿那一頁的表格有北海道那一份的金額。
 

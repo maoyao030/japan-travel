@@ -22,6 +22,7 @@ JR稚內站前立著日本最北端線路紀念碑（日本最北端の線路）
 | 規模 | 全長427m、高14m、圓柱70根 |
 | 怎麼去 | JR稚內站走路約5分鐘 |
 | 點燈 | 2026年9月1日～10月25日 18:00～21:00（首日19:30起） |
+| 連結 | [官網](https://www.north-hokkaido.com/spot/detail_1075.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A8%9A%E5%86%85%E6%B8%AF%E5%8C%97%E9%98%B2%E6%B3%A2%E5%A0%A4%E3%83%89%E3%83%BC%E3%83%A0%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 ### 野寒布岬
 
@@ -51,6 +52,7 @@ JR稚內站前立著日本最北端線路紀念碑（日本最北端の線路）
 | 日文名 | ノシャップ岬 |
 | 怎麼去 | JR稚內站搭巴士或開車約10分鐘 |
 | 停車 | 20個車位，免費 |
+| 連結 | [官網](https://www.north-hokkaido.com/spot/detail_1082.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%8E%E3%82%B7%E3%83%A3%E3%83%83%E3%83%97%E5%B2%AC%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 ### 野寒布寒流水族館
 
@@ -64,6 +66,7 @@ JR稚內站前立著日本最北端線路紀念碑（日本最北端の線路）
 | 開館 | 9:00～17:00，11月～3月10:00～16:00 |
 | 休館 | 4月1日～4月28日、12月、1月 |
 | 門票 | 與青少年科學館共通券，高中以上500日圓、中小學生100日圓 |
+| 連結 | [官網](https://www.city.wakkanai.hokkaido.jp/suizokukan/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%8E%E3%82%B7%E3%83%A3%E3%83%83%E3%83%97%E5%AF%92%E6%B5%81%E6%B0%B4%E6%97%8F%E9%A4%A8%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 ### 稚內副港市場
 
@@ -75,6 +78,7 @@ JR稚內站前立著日本最北端線路紀念碑（日本最北端の線路）
 | 怎麼去 | JR稚內站開車約3分鐘，到港之湯走路約13分鐘 |
 | 停車 | 99個車位，免費 |
 | 港之湯 | 10:00～22:00，大人680日圓 |
+| 連結 | [官網](https://fukkoichiba.hokkaido.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A8%9A%E5%86%85%E5%89%AF%E6%B8%AF%E5%B8%82%E5%A0%B4%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 ### 稚內市樺太紀念館
 
@@ -91,6 +95,7 @@ JR稚內站前立著日本最北端線路紀念碑（日本最北端の線路）
 | 日文名 | 稚内公園、氷雪の門 |
 | 怎麼去 | JR稚內站開車約10分鐘 |
 | 封閉 | 11月中旬～4月中旬 |
+| 連結 | [官網](https://www.north-hokkaido.com/spot/detail_1045.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B0%B7%E9%9B%AA%E3%81%AE%E9%96%80%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 ### 北方紀念館與開基百年紀念塔
 
@@ -102,6 +107,7 @@ JR稚內站前立著日本最北端線路紀念碑（日本最北端の線路）
 | 開館 | 9:00～17:00，6月～9月到21:00 |
 | 休館 | 週一（6月～9月無休），11月1日～4月28日冬季休館 |
 | 門票 | 大人400日圓、小孩200日圓 |
+| 連結 | [官網](https://www.city.wakkanai.hokkaido.jp/kyoiku/kakusyushisetsu/hoppokinenkan.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E7%A8%9A%E5%86%85%E5%B8%82%E5%8C%97%E6%96%B9%E8%A8%98%E5%BF%B5%E9%A4%A8%20%E7%A8%9A%E5%86%85%E5%B8%82) |
 
 ### 北門神社與舊瀨戶邸
 

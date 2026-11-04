@@ -1,0 +1,65 @@
+{
+ "article": "asahikawa-stay",
+ "infoBoxes": [],
+ "stayTables": [
+  {
+   "tableKey": "table0037",
+   "rows": {
+    "JR Inn旭川": {
+     "official": "https://www.jr-inn.jp/asahikawa/",
+     "mapQuery": "JRイン旭川 旭川市"
+    },
+    "Y's Hotel旭川站前": {
+     "official": "https://yshotel-asahikawa.com/",
+     "mapQuery": "ワイズホテル旭川駅前 旭川市"
+    },
+    "KOKO HOTEL旭川站前": {
+     "official": "https://www.koko-hotels.com/asahikawa_station/",
+     "mapQuery": "KOKO HOTEL 旭川駅前 旭川市"
+    },
+    "露櫻 Grand旭川站前": {
+     "official": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/",
+     "mapQuery": "ホテルルートインGrand旭川駅前 旭川市"
+    },
+    "天然溫泉Premier Hotel-CABIN-旭川": {
+     "official": "https://cabin.kenhotels.com/asahikawa/",
+     "mapQuery": "プレミアホテル-CABIN-旭川 旭川市"
+    },
+    "HOTEL AMANEK旭川": {
+     "official": null,
+     "mapQuery": "ホテルアマネク旭川 旭川市"
+    },
+    "東橫INN旭川站東口": {
+     "official": "https://www.toyoko-inn.com/search/detail/00173/",
+     "mapQuery": "東横INN旭川駅東口 旭川市"
+    },
+    "露櫻旭川站前一條通": {
+     "official": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/",
+     "mapQuery": "ホテルルートイン旭川駅前一条通 旭川市"
+    },
+    "東橫INN旭川站前一條通": {
+     "official": "https://www.toyoko-inn.com/search/detail/00069/",
+     "mapQuery": "東横INN旭川駅前一条通 旭川市"
+    },
+    "OMO7旭川": {
+     "official": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
+     "mapQuery": "OMO7旭川 旭川市"
+    },
+    "多美迎旭川": {
+     "official": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/",
+     "mapQuery": "ドーミーイン旭川 旭川市"
+    },
+    "Art Hotel旭川": {
+     "official": "https://www.art-asahikawa.com/",
+     "mapQuery": "アートホテル旭川 旭川市"
+    }
+   }
+  }
+ ],
+ "notes": [
+  "HOTEL AMANEK旭川: official left null. The repo's source https://amanekhotels.jp/asahikawa/ returns 503 here for every path, even robots.txt, with a page titled 現在アクセスが大変混み合っております. This looks like a block on overseas or datacenter IPs, not a dead site. Check it in a browser from Japan or Taiwan and fill it in if it opens.",
+  "Y's Hotel旭川站前: https://yshotel-asahikawa.com/ (title 【公式】ワイズホテル旭川駅前) fails plain curl because the certificate chains to Let's Encrypt's new 'ISRG Root YR', which is missing from this container's CA bundle. With the official Root YR from letsencrypt.org added as a CA (verification still on), it returns 200. Current browsers should open it, but recheck once in a browser.",
+  "KOKO HOTEL: use the www host. https://koko-hotels.com/... redirects to http://www... and returns 403, while https://www.koko-hotels.com/asahikawa_station/ returns 200.",
+  "JR Inn: www.jr-inn.jp works (200); the other domain jrinn.jp found in research does not resolve."
+ ]
+}
