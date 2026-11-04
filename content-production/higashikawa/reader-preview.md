@@ -106,6 +106,7 @@
 | 廁所 | 全年24小時 |
 | 停車 | 普通車51台、大型車2台 |
 | 巴士站 | 東川道草館 |
+| 連結 | [官網](http://www.welcome-higashikawa.jp/michikusa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E9%81%93%E3%81%AE%E9%A7%85%E3%81%B2%E3%81%8C%E3%81%97%E3%81%8B%E3%82%8F%20%E9%81%93%E8%8D%89%E9%A4%A8) |
 
 ### Sentopyua與織田收藏
 
@@ -120,6 +121,7 @@ Sentopyua I（せんとぴゅあI）在市中心的北町，藝廊常設展示�
 | 藝廊 | 10:00～17:00 |
 | 休館 | 週一，遇假日改隔天 |
 | 文化藝廊 | 東町1丁目19-8，10:00～17:00，12月31日～1月5日與換展日休 |
+| 連結 | [官網](https://higashikawa-town.jp/CENTPURE/facilityinfo/centpure1)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%9B%E3%82%93%E3%81%A8%E3%81%B4%E3%82%85%E3%81%82I%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
 
 ### Kitoushi森林公園與展望閣
 
@@ -137,6 +139,7 @@ Kitoushi森林公園在市區北側標高457公尺的Kitoushi山，從道草館�
 | Kitoron溫浴 | 10:00～22:00，最後受理20:30，週三休館 |
 | 入浴 | 大人1,000日圓，國中小學生500日圓，租毛巾300日圓 |
 | 展望閣 | 步道約30分鐘，冬季關閉 |
+| 連結 | [官網](https://www.higashikawa-kitoron.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%AD%E3%83%88%E3%82%A6%E3%82%B7%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92) |
 
 ### 往旭岳路上的大雪旭岳源水與忠別湖
 
@@ -153,6 +156,7 @@ Kitoushi森林公園在市區北側標高457公尺的Kitoushi山，從道草館�
 | 廁所 | 11月～4月關閉 |
 | 停車 | 小型車12台、大型車2台 |
 | 巴士站 | 旭岳源水公園前，道草館約22分鐘 |
+| 連結 | [官網](http://www.welcome-higashikawa.jp/water)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%9B%AA%E6%97%AD%E5%B2%B3%E6%BA%90%E6%B0%B4) |
 
 ### 工藝街道與北之住設計社
 
@@ -167,6 +171,7 @@ Kitoushi森林公園在市區北側標高457公尺的Kitoushi山，從道草館�
 | 展示間 | 10:00～18:00，週三休 |
 | NORD CAFE | Pantry 10:00～18:00、咖啡11:00～17:00，週三休，麵包店只開週五、六、日與假日 |
 | 怎麼去 | 道草館開車約15分鐘 |
+| 連結 | [官網](https://www.kitanosumaisekkeisha.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E3%81%AE%E4%BD%8F%E3%81%BE%E3%81%84%E8%A8%AD%E8%A8%88%E7%A4%BE) |
 
 ## 東川町美食，咖啡店、麵包與豆腐
 
@@ -208,15 +213,15 @@ Kitoushi森林公園在市區北側標高457公尺的Kitoushi山，從道草館�
 
 晚上想泡Kitoron、隔天在市區逛咖啡店，或是幾個人想包一棟，就很適合住東川市區。不過市區與Kitoushi一帶多是包棟、民宿與青年旅館，沒有大型飯店。
 
-| 名稱 | 類型 | 訂房管道 |
-|---|---|---|
-| FOX CONTAINER HOTEL | 三個貨櫃組成的包棟，四季營業 | 官網 |
-| P-DASH GARDEN | 宿舍床位與個室，免費借自行車 | Trip.com |
-| MUSH ROOMS | 冬天有柴火暖爐，可租單板滑雪板與SUP | Trip.com |
-| 東川Pelican | 夫婦經營、2間房的葡萄酒小旅館 | 官網（Instagram或電話） |
-| blooming villa higashikawa | 一天一組的3LDK別墅，最多7人、至少3晚 | 官網 |
-| Crane House | 屋齡50年老房子改的包棟，一天一組 | 官網 |
-| Kitoushi森林公園家族旅行村 | 一棟出租的小木屋，A棟可住8人 | 官網 |
+| 名稱 | 類型 | 訂房管道 | 連結 |
+|---|---|---|---|
+| FOX CONTAINER HOTEL | 三個貨櫃組成的包棟，四季營業 | 官網 | [官網](https://foxcontainerhotel.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=FOX%20CONTAINER%20HOTEL%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| P-DASH GARDEN | 宿舍床位與個室，免費借自行車 | Trip.com | [地圖](https://www.google.com/maps/search/?api=1&query=P-DASH%20GARDEN%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| MUSH ROOMS | 冬天有柴火暖爐，可租單板滑雪板與SUP | Trip.com | [地圖](https://www.google.com/maps/search/?api=1&query=MUSH%20ROOMS%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| 東川Pelican | 夫婦經營、2間房的葡萄酒小旅館 | 官網（Instagram或電話） | [官網](https://higashikawa-perican.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E5%B7%9D%E3%83%9A%E3%83%AA%E3%82%AB%E3%83%B3) |
+| blooming villa higashikawa | 一天一組的3LDK別墅，最多7人、至少3晚 | 官網 | [官網](https://bloomingvillahigashikawa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=blooming%20villa%20higashikawa) |
+| Crane House | 屋齡50年老房子改的包棟，一天一組 | 官網 | [官網](https://crane-house.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%8F%E3%82%A6%E3%82%B9%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
+| Kitoushi森林公園家族旅行村 | 一棟出租的小木屋，A棟可住8人 | 官網 | [官網](https://www.kazokuryokoumura.jp/cabin/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%AD%E3%83%88%E3%82%A6%E3%82%B7%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92%E5%AE%B6%E6%97%8F%E6%97%85%E8%A1%8C%E6%9D%91) |
 
 Kitoushi的小木屋附家具與炊具。官網有網路預約系統，可以訂到一年後的同月底，但不能指定棟。入住15:00、退房10:00，要注意現場刷卡結帳只到17:00。東川Pelican（東川ペリカン）也接受用Instagram訂房，不必打電話。另有舊農家改成的旅人宿Yu（旅人宿ゆう），以男女分開的多人房為主。
 
