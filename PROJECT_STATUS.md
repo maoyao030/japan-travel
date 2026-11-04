@@ -1872,3 +1872,8 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 東川做成樣本：住宿表多「連結」欄（7 家，官網 5 家、地圖 7 家），5 個景點基本資訊欄加「連結」列；10 個官網都確認打得開。規則寫進 `writing-guide.md` 第12條、`AGENTS.md`、`RULES_OVERVIEW.md`。
 - 還沒補的已上線頁：20 篇，約 60 個景點欄、7 個住宿表（`asahikawa-sights`、`rebun-island-sights`、`wakkanai-sights` 最多）。
 - 唯一下一步：Darren 看東川樣本，同意後分批補其他頁。
+
+### 2026-11-04 補充：仙都皮亞
+
+- Darren 指出大雪カムイミンタラDMO 繁中官網把せんとぴゅあ寫成「仙都皮亞」，東川已改（Git 5 個檔案、網站 1 篇，對照表加一筆）。HOKKAIDO LOVE 寫 Centpure。
+- 比對 DMO 繁中官網 310 個名稱：大多是機器翻譯錯字（道宗館、旭明、大絕山、豐田旅館、烤肉過山車、啄木鳥森林），不整批照用；規則寫進 `japanese-sources.md`「譯名表」。
