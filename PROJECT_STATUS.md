@@ -1865,3 +1865,10 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **已完成**：212 個羅馬拼音名字逐一判斷，62 組改寫（對照表 `content-planning/name-kanji-2026-11-04.json`），其餘（人名、愛奴語地名、沒有漢字的名字、官方英文名）保留。Git 87 個檔案（`scripts/rename-terms-git.mjs`，歷史快照不動）、網站 30 篇（`studio/scripts/rename-terms-live.mjs`，只改文字、網址與連結不動，復原檔在 `.tmp/rename-terms/`）。改完再查網站，舊寫法 0 處。新測試 `tests/rename-terms.test.ts`。
 - **測試**：`npm test` 222 項通過，`planning:check` 通過。
 - **唯一下一步**：Darren 要求住宿與交通的地點加 Google 地圖與官網連結，下一個任務做這件事。
+
+### 2026-11-04 補充：官網與 Google 地圖連結
+
+- Darren 要住宿與「怎麼去」的地點有 Google 地圖與官網連結。網站表格格子改成支援 `[文字](網址)`（`renderTableCell`，新測試 `tests/table-cell-links.test.ts`，訂房網站自動 sponsored）。
+- 東川做成樣本：住宿表多「連結」欄（7 家，官網 5 家、地圖 7 家），5 個景點基本資訊欄加「連結」列；10 個官網都確認打得開。規則寫進 `writing-guide.md` 第12條、`AGENTS.md`、`RULES_OVERVIEW.md`。
+- 還沒補的已上線頁：20 篇，約 60 個景點欄、7 個住宿表（`asahikawa-sights`、`rebun-island-sights`、`wakkanai-sights` 最多）。
+- 唯一下一步：Darren 看東川樣本，同意後分批補其他頁。
