@@ -1898,3 +1898,10 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 規則：寫作指南第17條的問句標題改成「讀者真的會搜尋的才寫問句、不硬改、和 heading-style 衝突時以 heading-style 為準」；`heading-style.md` 加 WHOOPS 依據、H3 屬不屬於 H2 的判斷方法與 Darren 增訂一條。
 - Darren 同意改 H1：「東川町景點與美食推薦，大雪山雪水咖啡店、道草館與從旭川怎麼去」（SEO 標題相同），已上線，記一筆對話優化紀錄。
 - 唯一下一步：說「優化一篇」繼續優化下一篇文章。
+
+## 2026-11-05 Claude Code：標竿優化流程
+
+- **已決定**：Darren：東川可以當標竿，做成流程；一次改不到位要分輪。
+- **已完成**：流程 `content-automation/benchmark-optimize.md`（第0步線上版當底稿、第1～5輪標題結構／名字／連結／語氣／核對各由一個助手做、第6步 Darren 看、第7步上傳、第8步回饋規則）；標竿對照 `content-automation/benchmark/higashikawa-before.md`、`higashikawa-after.md`；新工具 `scripts/sync-from-live.mjs`（線上轉回稿件，東川來回轉換一字不差）、`scripts/check-benchmark.mjs`（數字不見、標題、表格連結、舊寫法為錯誤，原文括號與推薦句數為提醒；東川通過）；測試 `tests/check-benchmark.test.ts`。`AGENTS.md`、`RULES_OVERVIEW.md` 加段落。
+- **試跑觀察**：旭川住宿線上版自動檢查通過，但「住旭川可以用的動物園款待券」掛在「選哪一區」底下，要第1輪靠判斷抓，證實要分輪。
+- **唯一下一步**：Darren 說「標竿優化一篇」，挑第一篇試跑到第6步給他看。

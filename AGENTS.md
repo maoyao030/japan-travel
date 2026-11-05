@@ -317,3 +317,9 @@
 
 - 住宿比較表多一欄「連結」，每家放官網（有的話）與 Google 地圖；景點基本資訊欄最後一列「連結」放官網與地圖。網站表格格子支援 `[文字](網址)`（`src/lib/portableText.ts` 的 `renderTableCell`），連到 Trip.com、Agoda 自動標 sponsored。
 - 地圖只用搜尋網址（日文名稱＋町名），不抓 Google 地圖的內容。規則在寫作 Skill `writing-guide.md` 第12條。東川先做成樣本（2026-11-04 上線），其他已上線頁面分批補。
+
+## 標竿優化（Darren 2026-11-05 決定）
+
+- 東川是標竿。Darren 發現一次改不到位，要做成分輪的流程：線上版當底稿 → 標題結構 → 名字 → 連結 → 語氣 → 核對，每輪一個助手只做一件事、跑 `scripts/check-benchmark.mjs` 通過才進下一輪 → Darren 一節一節看 → 上傳。
+- 已上線文章的 Git 稿件常和線上不一致，一律先用 `scripts/sync-from-live.mjs` 以線上版為準。
+- Darren 看的時候改過的，能重複用的寫進該輪的規則檔，自動檢查能抓的加進檢查程式。標竿對照在 `content-automation/benchmark/`，流程在 `content-automation/benchmark-optimize.md`。口令「標竿優化一篇」。
