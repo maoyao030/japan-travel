@@ -253,7 +253,7 @@
 - **利尻島～禮文島時刻表**，鴛泊、沓形與香深之間的島間船班 https://heartlandferry.jp/timetable/time2/
 - **票價表**，各艙等、特別室、腳踏車與車輛的票價。https://heartlandferry.jp/faretable/
 - **運航狀況**，當天是否停航、加開臨時船與各班的船名。https://heartlandferry.jp/status/
-- **網路預約頁**，網路預約、改票與取消的入口，可切換英文。https://reserve.heartlandferry.jp/
+- [網路預約](https://reserve.heartlandferry.jp/)頁，網路預約、改票與取消的入口，可切換英文。
 - **網路預約使用指南**，註冊、預約、乘船QR code與取消的官方圖解。https://reserve.heartlandferry.jp/hlf/wrv/user_guide.jp.html
 - **稚內港渡輪站樓層圖**，1樓售票櫃台與2樓乘船口的位置 https://heartlandferry.jp/wp/wp-content/uploads/2026/02/wakkanai-floor-map.pdf
 - **渡輪常見問題**，付款、停航通知、船上設施的官方說明。https://heartlandferry.jp/faq/
