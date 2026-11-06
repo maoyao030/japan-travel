@@ -180,7 +180,6 @@ function renderImage(image: ArticleImage) {
   return `<figure class="article-image"><img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.alt)}"${size} loading="lazy" decoding="async">${caption ? `<figcaption>${caption}</figcaption>` : ''}</figure>`
 }
 
-/** YouTube 網址取出 11 碼影片 ID；不是 YouTube 影片網址就回傳 null。 */
 // 格子是時間、數字或星等（「06:30」「-8.4°C」「5.7公里」「1小時30分」「★★」），不是一段說明
 const UNIT_WORDS = /公里|小時|分鐘|日圓|[分天圓年月日時約班次人倍]/g
 const CJK_CHAR = /[぀-ヿ一-鿿]/g
@@ -229,6 +228,7 @@ export function renderContentTable(table: ContentTable) {
   return `<div class="article-table-scroll article-table--${layout}" tabindex="0"><table><thead><tr>${columns}</tr></thead><tbody>${rows}</tbody></table></div>`
 }
 
+/** YouTube 網址取出 11 碼影片 ID；不是 YouTube 影片網址就回傳 null。 */
 export function youtubeVideoId(value?: string) {
   if (!value) return null
   try {
