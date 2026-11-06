@@ -323,3 +323,11 @@
 - 東川是標竿。Darren 發現一次改不到位，要做成分輪的流程：線上版當底稿 → 標題結構 → 名字 → 連結 → 語氣 → 核對，每輪一個助手只做一件事、跑 `scripts/check-benchmark.mjs` 通過才進下一輪 → Darren 一節一節看 → 上傳。
 - 已上線文章的 Git 稿件常和線上不一致，一律先用 `scripts/sync-from-live.mjs` 以線上版為準。
 - Darren 看的時候改過的，能重複用的寫進該輪的規則檔，自動檢查能抓的加進檢查程式。標竿對照在 `content-automation/benchmark/`，流程在 `content-automation/benchmark-optimize.md`。口令「標竿優化一篇」。
+
+## 口述優化（Darren 2026-11-06）
+
+- Darren 不想動滑鼠：邊看網站邊用語音輸入說要改哪裡，口令「口述優化 <文章>」。不另外做後台，在 Claude Code 對話裡做。
+- 他說的句子只輕潤：同音錯字、標點、口頭禪、日文漢字詞與譯名；不加資訊、不換口氣、不重排。數字和事實表不一致時不改他的字，告訴他並附來源。
+- 他要 Claude 查的，照來源分級查官方資料補上，用他的語氣寫、附來源、記進 `reference-review.md`，回報時標明是 Claude 查的。
+- 要補圖的，照選圖 Skill 的來源順序找 2～3 張實拍候選，縮圖給他挑；文內照片上限照「自動寫作加回文內照片」一段。
+- 改完一件回報一件，他說「上傳」才上傳。流程見 `content-automation/chat-optimize.md`「口述優化」。
