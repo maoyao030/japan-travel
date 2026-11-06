@@ -1950,3 +1950,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **已決定**：Darren 想用語音輸入改文章，不動滑鼠；不做新後台，在對話裡做。他說的句子輕潤就好，要查的 Claude 自動找資料補、要圖的找候選給他挑。
 - **已完成**：`content-automation/chat-optimize.md` 加「口述優化」一節（怎麼分辨輕潤／查資料／補圖／改結構、怎麼找位置、輕潤只改什麼、查資料的來源與紀錄、候選圖、怎麼回報）；`AGENTS.md`、`RULES_OVERVIEW.md` 加段落。還沒試跑。
 - **唯一下一步**：Darren 說「口述優化 <文章>」，挑一篇試一次。
+
+## 2026-11-06 Claude Code：口述優化的預覽視窗
+
+- Darren 想在旁邊的視窗直接看改完的樣子與照片放在哪一段，不讀 Markdown。
+- **已完成**：`scripts/preview-article.mjs`（`npm run preview:article -- --article=<文章>`）把 `reader-preview.md` 照網站樣式畫出來，線上的照片、嵌入、連結照上傳規則搬進來；候選照片寫在 `.tmp/preview/<文章>/candidates.json`，畫在指定段落後面、橘框標「候選 N」；上方切換手機／電腦寬度（手機寬度在 390px 的框裡，表格卡片會出現）；稿件一改兩秒內自動更新、停在原位置。開好後用 `report_preview_port` 回報給 Darren 的 app。測試 `tests/preview-article.test.ts`。流程寫進 `chat-optimize.md`「口述優化」的「給他看」。
+- 順手修：`src/lib/portableText.ts` 上次加表格判斷時把 YouTube 函式的說明擠開了，已放回。
+- 〈稚內住宿〉預覽裡的「候選 1（示範）」是借用封面照示範位置，不會上傳。
+- **唯一下一步**：Darren 說「口述優化 <文章>」試一次。
