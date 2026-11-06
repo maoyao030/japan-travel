@@ -33,7 +33,7 @@ La Vista大雪山的晚餐有創意法式跟創意日式兩種可以選，早餐
 | Art Village杜季 | アートヴィレッジ杜季 | 旭岳溫泉 | 訂房時向旅館確認 | 訂房時向旅館確認 | 電話、官網表單、Jalan、Trip.com | [官網](https://www.asahidake-toki.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%BC%E3%83%88%E3%83%B4%E3%82%A3%E3%83%AC%E3%83%83%E3%82%B8%E6%9D%9C%E5%AD%A3%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
 | 御宿敷島莊 | 御やど しきしま荘 | 天人峽溫泉 | 旭岳源水公園前，旅館接送 | 12月、1月、2月查到有房 | 官網、電話、Trip.com、Agoda | [官網](https://www.sikisimasou.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E3%82%84%E3%81%A9%20%E3%81%97%E3%81%8D%E3%81%97%E3%81%BE%E8%8D%98%20%E6%9D%B1%E5%B7%9D%E7%94%BA) |
 
-如果想改住山下的東川市區、白天再搭車上山的話，東川町那一頁整理了市區的住宿。
+如果想改住山下的東川市區、白天再搭車上山的話，[東川町](/places/higashikawa/)那一頁整理了市區的住宿。
 
 ### 走3分鐘到纜車的 Hotel Bear Monte
 
