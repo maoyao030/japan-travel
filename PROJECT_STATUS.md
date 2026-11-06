@@ -1905,3 +1905,12 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **已完成**：流程 `content-automation/benchmark-optimize.md`（第0步線上版當底稿、第1～5輪標題結構／名字／連結／語氣／核對各由一個助手做、第6步 Darren 看、第7步上傳、第8步回饋規則）；標竿對照 `content-automation/benchmark/higashikawa-before.md`、`higashikawa-after.md`；新工具 `scripts/sync-from-live.mjs`（線上轉回稿件，東川來回轉換一字不差）、`scripts/check-benchmark.mjs`（數字不見、標題、表格連結、舊寫法為錯誤，原文括號與推薦句數為提醒；東川通過）；測試 `tests/check-benchmark.test.ts`。`AGENTS.md`、`RULES_OVERVIEW.md` 加段落。
 - **試跑觀察**：旭川住宿線上版自動檢查通過，但「住旭川可以用的動物園款待券」掛在「選哪一區」底下，要第1輪靠判斷抓，證實要分輪。
 - **唯一下一步**：Darren 說「標竿優化一篇」，挑第一篇試跑到第6步給他看。
+
+## 2026-11-06 Claude Code：42 篇標竿優化全部完成
+
+- **已完成**：全部 42 篇已上線文章跑完 5 輪標竿優化（標題結構→名字→連結→語氣→核對），每篇由獨立助手執行，兩道自動檢查（`check-benchmark.mjs`、`check-voice.mjs`）都通過。
+- **優化內容**：每篇的 `reader-preview.md` 已改寫為 Darren 的口吻（寫作指南第17條），加入所以/不過/因為等關係詞、記得/要注意提醒、如果...的話條件句、口語化結尾；標題修正、名字統一中文、連結句改成自然語氣。數字、時間、價格、表格與資料來源完全不動。
+- **檔案位置**：每篇 `content-production/<id>/reader-preview.md`（優化後）、`benchmark/live-2026-11-05.md`（線上原版，未動）、`benchmark/notes.md`（各輪改了什麼）。
+- **尚未上傳**：42 篇都還沒上傳到網站，標記為「人工尚未看過」。Darren 逐篇看過、說「上傳」才上傳。
+- **處理方式**：分 11 個批次、每批 4 篇平行處理（最後一批 2 篇），跨兩天完成（11/5 開始，11/6 完成）。中間遇到兩次 5 小時額度上限，等重置後繼續。
+- **唯一下一步**：Darren 逐篇審閱 `reader-preview.md`，滿意的說「上傳」。
