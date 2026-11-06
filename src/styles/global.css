@@ -2283,6 +2283,87 @@ a {
   font-weight: 800;
 }
 
+/* 表格裡的連結（官網、地圖）不要被拆成一字一行 */
+.article-table-scroll td a {
+  white-space: nowrap;
+}
+
+/* 手機上的表格：3 欄以下縮到螢幕寬；比較表一列變一張卡片（src/lib/portableText.ts 的 tableLayout） */
+@media (max-width: 640px) {
+  .article-table-scroll.article-table--narrow table {
+    min-width: 0;
+  }
+
+  .article-table-scroll.article-table--narrow th,
+  .article-table-scroll.article-table--narrow td {
+    padding: 0.7rem 0.75rem;
+  }
+
+  .article-table-scroll.article-table--cards {
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .article-table-scroll.article-table--cards table,
+  .article-table-scroll.article-table--cards tbody,
+  .article-table-scroll.article-table--cards tr,
+  .article-table-scroll.article-table--cards td {
+    display: block;
+    width: auto;
+    min-width: 0;
+  }
+
+  .article-table-scroll.article-table--cards thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .article-table-scroll.article-table--cards tr {
+    margin-bottom: 0.85rem;
+    padding: 0.9rem 1rem 0.7rem;
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    background: var(--surface);
+  }
+
+  .article-table-scroll.article-table--cards tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .article-table-scroll.article-table--cards td {
+    display: grid;
+    grid-template-columns: 6.2em 1fr;
+    gap: 0.75rem;
+    padding: 0.35rem 0;
+    border: 0;
+  }
+
+  .article-table-scroll.article-table--cards td::before {
+    content: attr(data-label);
+    color: var(--forest);
+    font-weight: 700;
+  }
+
+  .article-table-scroll.article-table--cards td:first-child {
+    display: block;
+    margin-bottom: 0.4rem;
+    padding: 0 0 0.6rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.05rem;
+    font-weight: 800;
+  }
+
+  .article-table-scroll.article-table--cards td:first-child::before {
+    content: none;
+  }
+}
+
 .article-tags {
   margin-top: 3.5rem;
   padding-top: 1.5rem;

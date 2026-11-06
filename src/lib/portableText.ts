@@ -181,6 +181,54 @@ function renderImage(image: ArticleImage) {
 }
 
 /** YouTube 網址取出 11 碼影片 ID；不是 YouTube 影片網址就回傳 null。 */
+// 格子是時間、數字或星等（「06:30」「-8.4°C」「5.7公里」「1小時30分」「★★」），不是一段說明
+const UNIT_WORDS = /公里|小時|分鐘|日圓|[分天圓年月日時約班次人倍]/g
+const CJK_CHAR = /[぀-ヿ一-鿿]/g
+function isDataCell(cell: string) {
+  const text = cell.trim()
+  if (text === '' || text === '—' || text === '-') return true
+  if (!/[\d★]/.test(text)) return false
+  return (text.replace(UNIT_WORDS, '').match(CJK_CHAR) ?? []).length <= 1
+}
+
+// 表格在手機上的樣子（Darren 2026-11-06：住宿比較表在手機上擠成一格兩三個字）。
+// 4 欄以上的比較表（住宿、店家、景點、步道）在手機上一列變成一張卡片；
+// 時刻表、天氣表維持表格、左右滑：第一欄是時間或月份，或其他格子幾乎都是數字。
+// 3 欄以下的表在手機上縮到螢幕寬，不用左右滑。
+export function tableLayout(table: ContentTable): 'cards' | 'wide' | 'narrow' {
+  const columnCount = table.columns?.length ?? 0
+  if (columnCount <= 3) return 'narrow'
+  const rows = table.rows ?? []
+  const share = (cells: string[]) => (cells.length ? cells.filter(isDataCell).length / cells.length : 1)
+  const firstColumn = share(rows.map((row) => row.cells?.[0] ?? ''))
+  const otherColumns = share(rows.flatMap((row) => (row.cells ?? []).slice(1)))
+  // 格子大多是一段說明（平均 12 個字以上）的，就算第一欄是月份也變卡片，例如「各季節的天氣與活動」
+  const others = rows.flatMap((row) => (row.cells ?? []).slice(1)).map((cell) => cell.replace(/\[([^\]]*)\]\([^)]*\)/g, '$1'))
+  const averageLength = others.length ? others.reduce((sum, cell) => sum + cell.length, 0) / others.length : 0
+  if (averageLength >= 12) return 'cards'
+  return firstColumn >= 0.5 || otherColumns >= 0.75 ? 'wide' : 'cards'
+}
+
+export function renderContentTable(table: ContentTable) {
+  const columnNames = table.columns ?? []
+  const layout = tableLayout(table)
+  const columns = columnNames.map((cell) => `<th scope="col">${escapeHtml(cell)}</th>`).join('')
+  const rows = (table.rows ?? [])
+    .map((row) => {
+      const cells = (row.cells ?? [])
+        .map((cell, index) => {
+          const label = layout === 'cards' && columnNames[index] ? ` data-label="${escapeHtml(columnNames[index])}"` : ''
+          const content = renderTableCell(cell)
+          // 卡片的每一格是「欄名｜內容」兩欄，內容包成一塊，「官網・地圖」才不會被拆開
+          return layout === 'cards' ? `<td${label}><span>${content}</span></td>` : `<td>${content}</td>`
+        })
+        .join('')
+      return `<tr>${cells}</tr>`
+    })
+    .join('')
+  return `<div class="article-table-scroll article-table--${layout}" tabindex="0"><table><thead><tr>${columns}</tr></thead><tbody>${rows}</tbody></table></div>`
+}
+
 export function youtubeVideoId(value?: string) {
   if (!value) return null
   try {
@@ -309,14 +357,7 @@ export function renderPortableText(blocks: ArticleBodyBlock[]) {
   for (const block of blocks) {
     if (block._type === 'contentTable') {
       closeList()
-      const columns = (block.columns ?? []).map((cell) => `<th scope="col">${escapeHtml(cell)}</th>`).join('')
-      const rows = (block.rows ?? [])
-        .map(
-          (row) =>
-            `<tr>${(row.cells ?? []).map((cell) => `<td>${renderTableCell(cell)}</td>`).join('')}</tr>`,
-        )
-        .join('')
-      html += `<div class="article-table-scroll" tabindex="0"><table><thead><tr>${columns}</tr></thead><tbody>${rows}</tbody></table></div>`
+      html += renderContentTable(block as ContentTable)
       continue
     }
 
