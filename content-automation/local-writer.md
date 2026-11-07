@@ -6,6 +6,7 @@ Darren 2026-10-22 改成**每天 5 篇**：一輪仍只寫一篇，改成一天�
 
 - 排定工作：`japan-travel-daily-writer`，每天台北 01:42、04:42、10:42、13:42、20:42（好材誌是 00:12、08:12、16:12，每輪至少錯開 1 個半小時）。
 - 每輪的流程就是本文件；排定工作的提示只叫它讀這份文件照做。要改流程就改這份文件，不用改排定工作。
+- 2026-11-07 起清單裡不只一群：每輪先照「1. 挑文章」挑可以寫的群（已明確核准，或到了自動核准日沒被暫停），再挑那一群的下一篇；大綱用那一群的 `outline`。稚內群、旭川・大雪群都已寫完，接著是富良野・美瑛群。
 Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一篇後，上傳最多 2 篇已驗收、還沒上線的文章（照 `writingOrder` 先後），積壓的清完後就是每輪寫一篇、傳一篇。上傳照自動發布 Skill（`.agents/skills/japan-travel-auto-publisher/SKILL.md`）「produce」第 7～14 步，本機的差異寫在本文件「5. 上傳」。上傳完把分支合併推到 `main`，網站才會重建。
 
 - 這套流程和 2026-10-20 稚內交通的人工流程相同，一篇約用 5 小時額度的 16%、每週額度的 2%（不含選圖）。
@@ -30,14 +31,21 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 ### 1. 挑文章
 
-照 `content-automation/article-queue.json` 的 `travelGroups[0].writingOrder` 順序，挑第一篇符合下面條件的：
+**先挑群**（2026-11-07 起，清單裡不只一群）：照 `content-automation/article-queue.json` 的 `travelGroups` 順序，挑第一個「可以寫」而且還有沒寫完的頁的群。一個群可以寫，要同時符合：
+
+- `approval.pausedAt` 沒有填（Darren 說暫停時，人工 session 會填這個欄位）；
+- `approval.approvedExplicitlyAt` 有填，或者台北今天的日期 ≥ `approval.autoApproveOn`（默許核准：提醒後 3 天 Darren 沒有反對就算核准，規則見選題 Skill `references/next-group.md` 第 5 步）。
+
+還沒到自動核准日的群先跳過，不寫。`<大綱>` 是這個群的 `outline` 欄位（例如 `content-planning/hokkaido/hokkaido-furano-outline.json`），後面每一步說的「大綱」都是這一份。
+
+**再挑文章**：照這個群的 `writingOrder` 順序，挑第一篇符合下面條件的：
 
 - `content-production/<articleId>/review.md` 不存在，或存在但最終結果不是 `ready_for_user_preview`；
 - 執行紀錄的「停放」表裡沒有它。
 
-全部寫完就略過這一輪，執行紀錄寫「略過：稚內群已全部寫完」。
+每個群都寫完、或剩下的群還沒到自動核准日，就略過這一輪，執行紀錄寫「略過：清單裡的群都寫完」或「略過：<群> 要到 <自動核准日> 才能寫」。
 
-下面的 `<id>` 是挑到的 articleId，`<資料夾>` 是 `content-production/<id>`，`<地點>` 是大綱裡這頁的 `placeId`。大綱是 `content-planning/hokkaido/hokkaido-wakkanai-outline.json`。
+下面的 `<id>` 是挑到的 articleId，`<資料夾>` 是 `content-production/<id>`，`<地點>` 是大綱裡這頁的 `placeId`。
 
 ### 2. 寫作與潤稿
 
@@ -138,14 +146,16 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
    - 文內照片（2026-10-28 加回）：只放重點景點與交通據點，就是有自己一節、讀者到現場要認得出來的地方（渡輪站、機場、車站、主要景點），一篇最多 4 張，一節最多 1 張。每個位置要有 `placement`（那一節標題全文、`afterBlocks` 預設 1，接在第一段之後）與 `preparation`，格式見 image-finder `references/image-packet.md`「文內照片的位置與準備」。找不到合格實拍的位置就不放、不列進封包，**不因為缺文內照片停放**。
    - 有文內照片時，`npm run image:prepare:inline -- content-production/<id> --download`，**親自打開每一張 webp**，確認畫面和 `altDraft`、`captionDraft` 寫的一致（例如寫了看得到招牌字樣，就要真的讀得到）；不一致就改文字，改不了就拿掉那個位置。下載被擋（HTTP 429 之類）就照 `.tmp/image-selection/<id>/inline/<slotId>-source.jpg` 用 curl 下載後重跑（不加 `--download`）；還是不行，這篇先不放文內照片，照樣上線。
    - 嵌入（2026-10-29 加入）：同一個子代理也找 YouTube 影片與官方 Instagram 貼文，只放在步道、景點、交通、祭典這類「看了才知道是什麼樣子」的段落，一篇最多 2 個、一節最多 1 個，條件見寫作 Skill `references/embeds-and-data-blocks.md`，紀錄寫在 `images/embed-plan.json`（格式見 image-finder `references/embed-plan.md`）。找不到合格的就不放，**不因為缺嵌入停放**。
-6. Sanity 暫存：第 10 步（先 `node scripts/link-at-publish.mjs .tmp/auto-publisher/<id>/sanity/article.json --article=<id> --outline=content-planning/hokkaido/hokkaido-wakkanai-outline.json --sanity=.tmp/queue-state.json` 接上已上線頁面的內連，再 `publish-prepared-article.mjs ../.tmp/auto-publisher/<id>/sanity/article.json` 與 `publish-article-cover.mjs ../content-production/<id>`，都先 dry-run 再 `--apply`），重新 inspect 確認 `staged_noindex` 而且 `hasCover`。
+6. Sanity 暫存：第 10 步（先 `node scripts/link-at-publish.mjs .tmp/auto-publisher/<id>/sanity/article.json --article=<id> --outline=<這篇所屬群的大綱> --sanity=.tmp/queue-state.json` 接上已上線頁面的內連，再 `publish-prepared-article.mjs ../.tmp/auto-publisher/<id>/sanity/article.json` 與 `publish-article-cover.mjs ../content-production/<id>`，都先 dry-run 再 `--apply`），重新 inspect 確認 `staged_noindex` 而且 `hasCover`。
    - 有文內照片時接著在 `studio/` 跑 `npm run publish:article-inline-images -- ../content-production/<id>` 預覽：每張都要是 `upload-and-insert`（續做時可以是 `already-matching`），位置在指定那一節。再加 `--apply`，看到 `inline-images-published-and-verified` 才算完成。文內照片上傳失敗**不擋上線**：先 `--remove --apply` 拿掉已插入的照片，在「上傳」表備註原因，繼續第 7 點。
    - 有 `embed-plan.json` 時在 `studio/` 跑 `npm run publish:article-embeds -- ../content-production/<id>` 預覽（每個都要是 `insert` 或 `already-matching`），再加 `--apply`，看到 `embeds-published-and-verified` 才算完成。失敗也不擋上線：`--remove --apply` 拿掉，在「上傳」表備註。
 7. 開放索引：第 11 步。CI 用 `SANITY_PROJECT_ID=e8ctf7ee SANITY_DATASET=production npm run ci`。`routeMode` 是 `hub-landing` 時照第 11 步掛入口文章、失敗時撤回。
 8. 第 12 步：重新 inspect，父 Hub 的 `shouldReleaseIndex` 是 true 就 `--release-index`。
-9. 登記：第 13 步，`--outline=content-planning/hokkaido/hokkaido-wakkanai-outline.json --sanity=.tmp/queue-state.json --body=.tmp/auto-publisher/<id>/sanity/article.json`（先重新 inspect；resume 的 `staged` 沒有這個檔案就不帶 `--body`）。
+9. 登記：第 13 步，`--outline=<這篇所屬群的大綱> --sanity=.tmp/queue-state.json --body=.tmp/auto-publisher/<id>/sanity/article.json`（先重新 inspect；resume 的 `staged` 沒有這個檔案就不帶 `--body`）。
 
 任何一點失敗照 Skill 記 `ops-article.mjs fail --kind=publish`，**不開放索引**，在「上傳」表記「失敗」與停在哪一點，換下一篇；同一篇連續 3 次失敗會自動停放，加進「上傳停放」表。
+
+**D1 連不上時不算文章失敗**（2026-11-07 加入）：`ops-article.mjs`、`ops-links.mjs` 回傳 wrangler 的 7403「not authorized」或其他登入錯誤，是這台電腦的 Cloudflare 登入過期，不是文章的問題。這時整個上傳與補內連都略過（不 `fail`、不開放索引、不計入連續失敗），執行紀錄「最新一輪」寫「上傳略過：D1 登入失效（wrangler 7403），請 Darren 在終端機執行 `npx wrangler login`」，寫作照常進行。
 
 **4. 補內連**：上傳做完後（這輪沒上傳也要做），先重新 inspect，照 Skill「backfill-links」把 `ops-links.mjs ready --sanity=.tmp/queue-state.json` 列出的**全部補完**，不設上限（2026-10-25 取消一輪 5 個）。CI 一樣要帶上面的兩個環境變數。
 
