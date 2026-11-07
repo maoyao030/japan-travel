@@ -1,6 +1,6 @@
 // 把北海道的一個旅行群排進文章自動化清單：每個地點一個批次（Hub），加一個旅行群依大綱的寫作順序生產。
 // 用法（在專案根目錄執行）：node content-planning/hokkaido/build-queue.mjs . <群>，之後跑 npm run queue:validate。
-//   <群> 是下面 groups 的鍵：wakkanai（稚內群，2026-10-20 已排入）、asahikawa（旭川・大雪群，2026-10-26）。
+//   <群> 是下面 groups 的鍵：wakkanai（稚內群，2026-10-20 已排入）、asahikawa（旭川・大雪群，2026-10-26）、furano（富良野・美瑛群，2026-11-07）。
 // 新的群一律「附加」到清單後面：批次接在 batches 最後、旅行群接在 travelGroups 最後；
 // 已經在清單裡的群不覆寫（清單裡的條目之後可能被人工或 routine 修過），要重排請先手動移除那一群。
 // 欄位一律從規劃檔帶出（page-specs.json、candidates.json、大綱、地點研究），不手填查詢、網址或搜尋量。
@@ -142,6 +142,66 @@ const groups = {
       },
     },
   },
+  furano: {
+    id: 'hokkaido-furano',
+    label: '美瑛、富良野、中富良野、上富良野',
+    outline: 'content-planning/hokkaido/hokkaido-furano-outline.json',
+    planningCompletedAt: '2026-11-07',
+    // 默許制（AGENTS.md「找下一群與默許核准」）：2026-11-07 提醒，自動核准日 2026-11-10；Darren 說「核准」可提早，說「暫停」就在 approval 填 pausedAt
+    authorizedAt: '2026-11-10',
+    decision: 'Darren 2026-11-07 說「開始拓展接下來可以寫的文章，可以開始慢慢的自動化開始寫文章了」。富良野・美瑛群照默許制：大綱摘要 2026-11-07 寫進規劃總表並加日曆提醒，自動核准日 2026-11-10 沒有反對就算核准，本機自動寫作從那天起照 writingOrder 寫；例外（富良野滑雪場頁、三個景點升格頁）不默許，見大綱 exceptions。每天上限沿用 5 篇。',
+    startDate: '2026-11-10',
+    verifiedAt: '2026-11-07',
+    approval: {remindedAt: '2026-11-07', autoApproveOn: '2026-11-10', approvedExplicitlyAt: null},
+    // 美瑛、富良野、中富良野、上富良野在台灣沒有同名地點；「青池」要寫「美瑛青池」（青森也有青池）、「富田農場」要寫「北海道富田農場」（桃園有富田花園農場）、交通用路線詞避開事故新聞
+    serpIntentNote: '查詢含美瑛、富良野、中富良野、上富良野，台灣沒有同名地點；「青池」寫「美瑛青池」避開青森的青池，「富田農場」寫「北海道富田農場」避開桃園的富田花園農場，交通用「旭川到美瑛」「札幌到富良野」這類路線詞；各地點研究者 2026-11-07 看過主要查詢的搜尋結果頁',
+    places: {
+      biei: {
+        label: '美瑛',
+        hub: {
+          title: '美瑛',
+          eyebrow: '丘陵與青池的農業町',
+          introduction: ['美瑛在旭川南邊，JR富良野線普通車從旭川約33分鐘、車資680日圓；旭川機場搭薰衣草號約15分鐘到美瑛站。丘陵上的景點分散，站前可以租自行車或搭觀光巴士；往白金青池的道北巴士從美瑛站出發，單程800日圓。'],
+          checklist: ['旭川、旭川機場到美瑛怎麼去', '美瑛站租自行車與觀光巴士', '青池的巴士時刻與冬季點燈', '住美瑛站前還是白金溫泉', '美瑛各月天氣與穿著'],
+          seoTitle: '美瑛旅遊，交通、青池、住宿與景點',
+          seoDescription: '整理北海道美瑛的JR與巴士交通、青池、丘陵景點、住宿、美食與天氣。',
+        },
+      },
+      furano: {
+        label: '富良野',
+        hub: {
+          title: '富良野',
+          eyebrow: '薰衣草與滑雪的富良野盆地',
+          introduction: ['富良野在旭川南邊約55公里，JR富良野線直通普通車約1小時10分到1小時20分、車資1,380日圓；札幌搭高速富良野號約2小時55分，一天7班；旭川機場搭薰衣草號約1小時1分到富良野站前。夏天看薰衣草，冬天有富良野滑雪場。'],
+          checklist: ['札幌、新千歲機場、旭川到富良野怎麼去', '富良野滑雪場的交通與雪票', '住富良野站前還是北之峰', '精靈露台、起司工房與連續劇外景地', '富良野各月天氣與活動'],
+          seoTitle: '富良野旅遊，交通、滑雪場、住宿與景點',
+          seoDescription: '整理北海道富良野的JR、高速巴士與薰衣草號交通、滑雪場、住宿、景點、美食、祭典與天氣。',
+        },
+      },
+      nakafurano: {
+        label: '中富良野',
+        hub: {
+          title: '中富良野',
+          eyebrow: '富田農場所在的薰衣草之町',
+          introduction: ['中富良野在富良野北邊，JR富良野線從旭川約59分到1小時8分、車資1,380日圓。富田農場入園與停車免費，從JR中富良野站走約25分鐘；夏季臨時站薰衣草花田站只有臨時列車停靠，走到農場約7到8分鐘。'],
+          checklist: ['旭川、富良野到中富良野與富田農場', '富田農場的花期與營業時間', '薰衣草花田站與臨時列車', '北星山薰衣草園與町營纜車', '中富良野的住宿與美食'],
+          seoTitle: '中富良野旅遊，富田農場、交通與薰衣草季',
+          seoDescription: '整理北海道中富良野的富田農場、JR與薰衣草號交通、薰衣草花田站、北星山薰衣草園、住宿與美食。',
+        },
+      },
+      kamifurano: {
+        label: '上富良野',
+        hub: {
+          title: '上富良野',
+          eyebrow: '十勝岳山腳的薰衣草與溫泉',
+          introduction: ['上富良野在美瑛與中富良野之間，JR富良野線從旭川約50到59分鐘、車資1,040日圓。町營巴士從上富良野站前到十勝岳溫泉凌雲閣每天3班、約45分鐘；凌雲閣標高1,280公尺，是北海道海拔最高的溫泉旅館。十勝岳能不能登山要看氣象廳的噴火警戒等級。'],
+          checklist: ['上富良野站到十勝岳溫泉的町營巴士', '十勝岳溫泉與吹上溫泉的住宿', '十勝岳登山與噴火警戒等級', '日之出公園薰衣草與上富良野八景'],
+          seoTitle: '上富良野旅遊，十勝岳溫泉、登山與交通',
+          seoDescription: '整理北海道上富良野的JR與町營巴士交通、十勝岳溫泉住宿、十勝岳登山、日之出公園與美食。',
+        },
+      },
+    },
+  },
 }
 
 const group = groups[groupKey]
@@ -202,7 +262,7 @@ if ((queue.travelGroups ?? []).some((entry) => entry.id === group.id) || clash.l
 const keep = specs.items.filter((spec) => spec.decision === 'keep')
 const candidateById = new Map(candidates.items.map((entry) => [entry.articleId, entry]))
 const pathOf = new Map(keep.map((spec) => [spec.articleId, spec.targetPath]))
-const order = outline.writingOrder
+const order = outline.writingOrder.filter((articleId) => pathOf.has(articleId)) // 規格不是 keep 的（例如例外待 Darren 決定的 defer）不排進清單
 const nextReviewDue = addYear(group.verifiedAt)
 
 const batches = []

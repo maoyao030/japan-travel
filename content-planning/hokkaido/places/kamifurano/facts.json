@@ -1,0 +1,1763 @@
+{
+  "schemaVersion": 1,
+  "placeId": "kamifurano",
+  "facts": [
+    {
+      "factId": "F1",
+      "claim": "JR 富良野線上富良野站往旭川方向一天 12 班，上富良野發 06:20、07:23、07:42、08:27、10:18、12:00、13:36、16:04、17:21、18:18、19:36、21:01。",
+      "quote": "上富良野駅 ＪＲ富良野線 旭川方面 6:20 7:23 7:42 8:27 10:18 12:00 13:36 16:04 17:21 18:18 19:36 21:01",
+      "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E4%B8%8A%E5%AF%8C%E8%89%AF%E9%87%8E&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E6%97%AD%E5%B7%9D&next_node_id=4455&directionname2=%E5%AF%8C%E8%89%AF%E9%87%8E%7C4457",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道駅発時刻表（資料依「JR時刻表」令和8年11月號），查 2026-11-10（平日）；頁面時刻由 SearchEkihatsuTime.php 載入",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F2",
+      "claim": "JR 富良野線上富良野站往富良野方向一天 12 班，上富良野發 06:41、07:43、08:46、10:38、12:27、14:36、16:28、17:21、18:42、19:36、21:36、23:25。",
+      "quote": "上富良野駅 ＪＲ富良野線 富良野方面 6:41 7:43 8:46 10:38 12:27 14:36 16:28 17:21 18:42 19:36 21:36 23:25",
+      "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E4%B8%8A%E5%AF%8C%E8%89%AF%E9%87%8E&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E5%AF%8C%E8%89%AF%E9%87%8E&next_node_id=4457&directionname2=%E6%97%AD%E5%B7%9D%7C4455",
+      "checkedAt": "2026-11-07",
+      "condition": "同 F1，查 2026-11-10（平日）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F3",
+      "claim": "JR 上富良野到旭川車資 1,040 日圓（IC 卡同價），距離 39.7 公里，普通車直達約 46 分鐘～1 小時 2 分鐘，例如 10:18 發 11:11 到、12:00 發 13:02 到。",
+      "quote": "上富良野 - 旭川 所要時間: 53分 … 距離: 39.7km 合計: 1,040円 … 10:18 上富良野 … 11:11 旭川",
+      "sourceUrl": "https://jrhokkaidonorikae.com/cgi/result.cgi",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「乗換・運賃・時刻検索」，2026-11-10 10:00 出發條件；最短 21:01 發 21:47 到（46 分），最長 12:00 發 13:02 到（62 分）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F4",
+      "claim": "JR 上富良野到富良野車資 470 日圓，距離 15.1 公里，約 16～20 分鐘，例如 10:38 發 10:58 到、12:27 發 12:43 到。",
+      "quote": "上富良野 - 富良野 所要時間: 20分 … 距離: 15.1km 合計: 470円",
+      "sourceUrl": "https://jrhokkaidonorikae.com/cgi/result.cgi",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「乗換・運賃・時刻検索」，2026-11-10 出發條件",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F5",
+      "claim": "JR 上富良野到美瑛車資 470 日圓，距離 15.9 公里，約 17～24 分鐘，例如 10:18 發 10:35 到、12:00 發 12:24 到。",
+      "quote": "上富良野 - 美瑛 所要時間: 17分 … 距離: 15.9km 合計: 470円",
+      "sourceUrl": "https://jrhokkaidonorikae.com/cgi/result.cgi",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「乗換・運賃・時刻検索」，2026-11-10 出發條件",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F6",
+      "claim": "旭川往上富良野的 JR 首班 05:44 發 06:39 到、末班 22:34 發 23:24 到；上富良野往旭川首班 06:20 發 07:12 到、末班 21:01 發 21:47 到。",
+      "quote": "旭川 ＞ 上富良野 5:44 ＞ 6:39 … 22:34 ＞ 23:24｜上富良野 ＞ 旭川 6:20 ＞ 7:12 … 21:01 ＞ 21:47",
+      "sourceUrl": "https://jrhokkaidonorikae.com/cgi/result.cgi",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「乗換・運賃・時刻検索」，2026-11-10 各時段查詢",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F7",
+      "claim": "上富良野町營巴士十勝岳線車資大人 500 日圓、兒童 250 日圓（含稅）。",
+      "quote": "町営バス路線 運賃 大人500円(税込) 小人250円(税込)",
+      "sourceUrl": "https://www.kamifurano.jp/access/",
+      "checkedAt": "2026-11-07",
+      "condition": "かみふらの十勝岳観光協会「交通・アクセス」；車資是否依區間不同沒寫",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F8",
+      "claim": "町營巴士十勝岳線從 JR 上富良野站前往十勝岳溫泉凌雲閣每天 3 班：08:52、12:49、16:31 發，09:37、13:34、17:16 到凌雲閣。",
+      "quote": "十勝岳行 駅前 8:52 12:49 16:31｜十勝岳温泉凌雲閣 9:37 13:34 17:16",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/contents/02kikaku/0220kichi/kazan/20260915_level3_busstp.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "上富良野町役場總務課「十勝岳線時刻表」（2026-09-15 區間變更版）；觀光協會交通頁的時刻相同",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F9",
+      "claim": "每年 6～9 月的週六、週日與國定假日，十勝岳線早班改成上富良野站前 06:50 發、07:35 到凌雲閣；其他日子的早班 07:05 發，只開到山加，不上十勝岳溫泉，所以平日第一班能到溫泉的是 08:52。",
+      "quote": "毎年６月～９月までの土曜・日曜・祝祭日の運行は太枠（ ）内のダイヤに替わります。 駅前 (6:50) 7:05 … 山加 (7:03) 7:19 中茶屋 (7:06) -",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/contents/02kikaku/0220kichi/kazan/20260915_level3_busstp.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "括號內是 6～9 月週末假日班次；7:05 班在山加以後標「-」",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F10",
+      "claim": "町營巴士十勝岳線從凌雲閣回上富良野站前每天 3 班：09:47、13:37、17:27 發，10:30、14:20、18:10 到站前；6～9 月週末假日另有 07:40 發、08:23 到站前的早班。",
+      "quote": "町立病院行 十勝岳温泉凌雲閣 (7:40) 9:47 13:37 17:27｜駅前 (8:23) 7:35 10:30 14:20 18:10",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/contents/02kikaku/0220kichi/kazan/20260915_level3_busstp.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "其他日子另有 07:22 從山加發、07:35 到站前的班次，不經溫泉",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F11",
+      "claim": "十勝岳線在 Kamihoro 莊前也有站：往溫泉方向比凌雲閣早 4 分鐘到（09:33、13:30、17:12），回程 09:51、13:41、17:30 發。",
+      "quote": "カミホロ荘 (7:31) - 9:33 13:30 17:12｜カミホロ荘 (7:44) - 9:51 13:41 17:30",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/contents/02kikaku/0220kichi/kazan/20260915_level3_busstp.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2026-09-15 版時刻表",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F12",
+      "claim": "十勝岳線在市區停日之出公園前（08:54、12:51、16:33）、Frontier 富良野溫泉（フラヌイ温泉，08:55、12:52、16:34）、後藤純男美術館（08:58、12:55、16:37）與中之澤（NORTH GLAMPER 富良野，09:01、12:58、16:40）。",
+      "quote": "日の出公園前 (6:52) 7:08 8:54 12:51 16:33 フラヌイ温泉 (6:53) 7:09 8:55 12:52 16:34 … 後藤純男美術館 (6:56) 7:12 8:58 12:55 16:37",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/contents/02kikaku/0220kichi/kazan/20260915_level3_busstp.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "往十勝岳方向；中の沢的括號註記 NORTHGLAMPER 富良野見觀光協會交通頁",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F13",
+      "claim": "上富良野站前到凌雲閣搭町營巴士約 45 分鐘（例 08:52 發 09:37 到）；凌雲閣官網與觀光協會寫「約 40 分」。",
+      "quote": "JR上富良野駅より町営バスで40分",
+      "sourceUrl": "https://www.ryounkaku.jp/access",
+      "checkedAt": "2026-11-07",
+      "condition": "由 F8 算出 45 分；官網寫 40 分",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31",
+      "derivedFrom": ["F8"]
+    },
+    {
+      "factId": "F14",
+      "claim": "2026 年 9 月 12 日噴火警戒等級升到 3 後，道道 966 號封路，町營巴士照常開，但不開進白銀莊與吹上休憩廣場（吹上いこいの広場）兩站。",
+      "quote": "町営バス十勝岳線は通常運行していますが、道道通行止めの為「白銀荘」、「吹上いこいの広場」への運行はしておりません",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=6433",
+      "checkedAt": "2026-11-07",
+      "condition": "上富良野町公告；2026-10-16 降回等級 2 後，巴士是否恢復停靠白銀莊沒有公告（見 F169）",
+      "changeType": "timetable",
+      "nextCheckAt": "2026-12-07"
+    },
+    {
+      "factId": "F15",
+      "claim": "道道 966 號十勝岳溫泉美瑛線（十勝岳天際線）白銀閘門到美瑛町望岳台閘門一段，2026 年 10 月 19 日 11:00 起冬季封路，預計到 2027 年 4 月下旬；這是積雪封路，和火山等級無關。",
+      "quote": "通行止め区間：上富良野町国有林（白銀ゲート）～美瑛町国有林（望岳台ゲート） 実施日：2026年10月19日(月)11:00～2027年4月下旬頃 … 本規制は十勝岳の噴火警戒レベルに係る規制ではありません",
+      "sourceUrl": "https://www.kamifurano.jp/archives/34715/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會公告，主管為上川總合振興局旭川建設管理部富良野出張所；解除日視 4 月以後天候路況公布",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F16",
+      "claim": "冬季封路期間從上富良野市區到十勝岳溫泉，走道道 291 號（吹上線，往十勝岳溫泉方向）。",
+      "quote": "十勝岳温泉郷へお越しのお客様は、上富良野町市街より道道２９１号（吹上線十勝岳温泉方面）にてお越し頂きますよう",
+      "sourceUrl": "https://www.kamifurano.jp/archives/34715/",
+      "checkedAt": "2026-11-07",
+      "condition": "凌雲閣官網 2026-10-19 新消息也寫同一條路",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F17",
+      "claim": "上一季的道道 966 號冬季封路是 2025 年 10 月 20 日 11:00 起，2026 年 4 月 23 日 11:00 解除（吹上溫泉保養中心白銀莊到美瑛町望岳台之間）。",
+      "quote": "令和７年10月20日（金）午前11時から冬期通行止めとなっていました、道道966号（吹上温泉保養センター白銀荘から美瑛町望岳台の間）が令和８年４月23日11時から通行止め解除",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=445",
+      "checkedAt": "2026-11-07",
+      "condition": "上富良野町公告（原文星期標「金」，2025-10-20 實為週一，照日期寫）",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F18",
+      "claim": "凌雲閣前的路是 5 公里的陡坡，冬季開車要四輪驅動加雪胎；4 月下旬路面多半已露出，但到 5 月上旬黃金週前後仍可能積雪，官網建議裝雪胎或搭巴士。",
+      "quote": "当館まで5km急勾配の為冬季は4WDスタッドレスタイヤでお越しください｜例年5月上旬ゴールデンウィーク頃までは積雪になることがございます",
+      "sourceUrl": "https://www.ryounkaku.jp/access",
+      "checkedAt": "2026-11-07",
+      "condition": "後半句出自凌雲閣「よくあるご質問」https://www.ryounkaku.jp/よくあるご質問",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F19",
+      "claim": "Furano Bus 薰衣草號（旭川線，2026 年 4 月 1 日改正）從 JR 旭川站前往富良野一天 7 班，旭川站前 09:55、11:25、12:30、13:55、15:45、16:45、19:20 發，分別 11:11、12:41、13:46、15:11、17:01、18:01、20:36 到上富良野站牌。",
+      "quote": "JR旭川駅前 9:55 11:25 12:30 13:55 15:45 16:45 19:20｜上富良野 Kamifurano 11:11 12:41 13:46 15:11 17:01 18:01 20:36",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "旭川線（ラベンダー号）2026年04月01日改正時刻表；旭川端乘車處見 asahikawa:F164、F165",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F20",
+      "claim": "薰衣草號往旭川方向在上富良野站牌一天 7 班：07:14、08:44、09:49、11:14、13:04、14:04、16:39 發，分別 07:53、09:23、10:28、11:53、13:43、14:43、17:18 到旭川機場，08:30、10:00、11:05、12:30、14:20、15:20、17:55 到 JR 旭川站前。",
+      "quote": "上富良野 7:14 8:44 9:49 11:14 13:04 14:04 16:39｜旭川空港 7:53 9:23 10:28 11:53 13:43 14:43 17:18｜JR旭川駅前 8:30 10:00 11:05 12:30 14:20 15:20 17:55",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2026年04月01日改正",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F21",
+      "claim": "旭川機場搭薰衣草號到上富良野約 34 分鐘（例 10:37 發 11:11 到）；機場最後一班往富良野方向 20:02 發、20:36 到上富良野。",
+      "quote": "旭川空港 10:37 … 20:02｜上富良野 11:11 … 20:36",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "由 F19 同一張表整理；機場乘車處見 asahikawa:F47",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28",
+      "derivedFrom": ["F19"]
+    },
+    {
+      "factId": "F22",
+      "claim": "薰衣草號在上富良野町內停 4 站：深山峠、上富良野、上富良野役場前、上富良野自衛隊前；往旭川方向深山峠是 07:22、08:52、09:57、11:22、13:12、14:12、16:47。",
+      "quote": "15 深山峠 Miyama Touge 7:22 8:52 9:57 11:22 13:12 14:12 16:47 ｜13 上富良野役場前｜12 上富良野自衛隊前",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2026年04月01日改正；「上富良野」站牌離 JR 上富良野站多遠表上沒寫",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F23",
+      "claim": "薰衣草號車資（2025 年 10 月 1 日改定）：JR 旭川站前到上富良野 800 日圓、旭川機場到上富良野 690 日圓、JR 美瑛站到上富良野 490 日圓、富良野站前到上富良野 370 日圓；兒童半價（未滿 10 日圓進位）。",
+      "quote": "旭川線（ラベンダー号） 2025年10月1日 改正 運賃表｜小児運賃は大人運賃の半額（10円未満切り上げ）",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2025/09/2025-10-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E9%81%8B%E8%B3%83%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "從運賃表三角矩陣讀出（23 旭川駅前列第 14 格 800、18 旭川空港列 690、16 美瑛駅列 490、14 上富良野列富良野駅前 370）；寫作前再對一次",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F24",
+      "claim": "上富良野町離旭川市約 46 公里（國道 237 號約 1 小時）、離旭川機場約 35 公里（開車約 45 分鐘）、離札幌約 140 公里（走道央自動車道約 2 小時 15 分）、離帶廣約 136 公里（約 2 小時 45 分）。",
+      "quote": "旭川市へは約46km（国道237号利用約１時間）、旭川空港へは約35km（車で約45分）、札幌市へは約140km（…国道237号、道央自動車道利用 約２時間15分）、帯広市へは約136km（国道38、237号利用約２時間45分）",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=10",
+      "checkedAt": "2026-11-07",
+      "condition": "上富良野町「位置」頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F25",
+      "claim": "國道 237 號與 JR 富良野線平行縱貫上富良野町；從市區放射出去的道道，往美瑛方向是美澤上富良野線，往十勝岳方向是吹上上富良野線。",
+      "quote": "国道237号がＪＲ富良野線に並行して町を縦断しており、…美瑛町方面へ道道美沢上富良野線が、十勝岳方面へ道道吹上上富良野線が",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=10",
+      "checkedAt": "2026-11-07",
+      "condition": "上富良野町「位置」頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F26",
+      "claim": "凌雲閣官網寫：旭川機場開車約 60 分鐘、富良野開車約 45 分鐘到十勝岳溫泉。",
+      "quote": "旭川空港より車で60分。富良野より車で45分。",
+      "sourceUrl": "https://www.ryounkaku.jp/access",
+      "checkedAt": "2026-11-07",
+      "condition": "官網交通頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F27",
+      "claim": "從札幌開車來，觀光協會建議經三笠、桂澤湖走，比經瀧川快 30 分鐘到 1 小時；桂澤湖前道路窄、彎多。冬季建議繞經歌志內比較安全。",
+      "quote": "三笠市を経て桂沢湖経由で…従来の滝川市経由より、30分から1時間も短縮… 冬期間は、少し遠回りになりますが、歌志内市経由が安全です。",
+      "sourceUrl": "https://www.kamifurano.jp/access/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會交通頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F28",
+      "claim": "觀光協會交通頁說明：薰衣草號是富良野飯店區、富良野站經旭川機場到旭川站的路線，經過中富良野、上富良野、美瑛的景點據點。",
+      "quote": "※ラベンダー号は、ホテル・富良野駅⇔旭川空港⇔旭川駅のバス路線です。中富良野町、上富良野町、美瑛町といった観光スポットの拠点も経由します。",
+      "sourceUrl": "https://www.kamifurano.jp/access/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會交通頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F29",
+      "claim": "上富良野站前到旭川站前，JR（約 46～62 分，1,040 日圓）比薰衣草號（約 76 分，800 日圓）快，巴士便宜 240 日圓；巴士優點是直接到旭川機場。",
+      "quote": "上富良野 - 旭川 合計: 1,040円｜JR旭川駅前 9:55 … 上富良野 11:11",
+      "sourceUrl": "https://jrhokkaidonorikae.com/cgi/result.cgi",
+      "checkedAt": "2026-11-07",
+      "condition": "由 F3、F19、F23 比較；巴士 09:55→11:11 為 76 分",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15",
+      "derivedFrom": ["F3", "F19", "F23"]
+    },
+    {
+      "factId": "F30",
+      "claim": "十勝岳線往返每天只有 3 班（夏季週末假日 4 班），從上富良野站當天來回十勝岳溫泉，可以 08:52 上山、13:37 或 17:27 下山；12:49 上山的話只能搭 17:27 回。",
+      "quote": "駅前 8:52 12:49 16:31｜十勝岳温泉凌雲閣 9:47 13:37 17:27",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/contents/02kikaku/0220kichi/kazan/20260915_level3_busstp.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "由 F8、F10 整理",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31",
+      "derivedFrom": ["F8", "F10"]
+    },
+    {
+      "factId": "F31",
+      "claim": "十勝岳在 2026 年 10 月 16 日 10:00 由氣象廳把噴火警戒等級從 3（入山規制）降為 2（火口周邊規制）；62-2 火口周圍約 1.5 公里內仍可能有噴火影響。",
+      "quote": "＜噴火警戒レベルを３（入山規制）から２（火口周辺規制）に引下げ＞ … ６２ー２火口から概ね１．５ｋｍの範囲に影響を及ぼす噴火が発生する可能性があります",
+      "sourceUrl": "https://www.data.jma.go.jp/vois/data/report/volinfo/VJ20261016100000_108.html",
+      "checkedAt": "2026-11-07",
+      "condition": "札幌管區氣象台噴火警報（火口周辺）；氣象廳 bosai warning.json 2026-11-07 仍是レベル２",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-12-07"
+    },
+    {
+      "factId": "F32",
+      "claim": "氣象廳在 2026 年 9 月 12 日把十勝岳從等級 2 升到 3，原因是 8 月 17 日以後山體附近振幅大的火山性地震增加；8 月 6 日曾有極小規模噴火。",
+      "quote": "８月17日以降、山体付近を震源とする振幅の大きな火山性地震が増加したことから、９月12日に噴火警戒レベルを２…から３…に引き上げました。…８月６日にごく小規模な噴火が発生して以降",
+      "sourceUrl": "https://www.jma.go.jp/jma/press/2610/16a/tokachidake_20261016.html",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳報道發表 2026-10-16",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F33",
+      "claim": "等級降為 2 後，火山活動仍處於升高狀態：62-2 火口與振子澤噴氣孔群附近高溫化、二氧化硫放出量增加、山體較深處膨脹的地殼變動持續。",
+      "quote": "６２ー２火口及び振子沢噴気孔群付近の高温化や、火山ガス（二酸化硫黄）の放出量の増加、山体付近のやや深部の膨張を示す地殻変動など活発な火山活動は維持",
+      "sourceUrl": "https://www.data.jma.go.jp/vois/data/report/volinfo/VJ20261016100000_108.html",
+      "checkedAt": "2026-11-07",
+      "condition": "2026-10-16 噴火警報本文",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-12-07"
+    },
+    {
+      "factId": "F34",
+      "claim": "等級 2 的警戒對象市町是美瑛町、上富良野町、新得町；富良野市與南富良野町已不需要入山規制等特別警戒。",
+      "quote": "以下の市町村では、火口周辺で入山規制などの警戒をしてください。北海道：美瑛町、上富良野町、新得町 以下の市町村では、入山規制などの特段の警戒が必要なくなりました。北海道：富良野市、南富良野町",
+      "sourceUrl": "https://www.data.jma.go.jp/vois/data/report/volinfo/VJ20261016100000_108.html",
+      "checkedAt": "2026-11-07",
+      "condition": "2026-10-16 噴火警報",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-12-07"
+    },
+    {
+      "factId": "F35",
+      "claim": "大雪山國立公園連絡協議會 2026 年 10 月 19 日公告：十勝岳雖降為等級 2，十勝岳、上 Horokametok 山（カミホロカメットク山）、三段山仍不能登。",
+      "quote": "十勝岳は火山噴火警戒レベル２に引き下げられましたが、十勝岳・カミホロカメットク山・三段山には登ることができません。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/%e3%80%90%e5%8d%81%e5%8b%9d%e5%b2%b3%e3%80%91mt-tokachidake-%e5%99%b4%e7%81%ab%e8%ad%a6%e6%88%92%e3%83%ac%e3%83%99%e3%83%ab%ef%bc%92%e3%81%ab%e3%80%80volcanic-alert-level%ef%bc%92-do-not-approach-the/",
+      "checkedAt": "2026-11-07",
+      "condition": "大雪山國立公園連絡協議會「登山道に関わるもの」公告 2026-10-19；富良野岳、上富良野岳能不能登沒寫（見 F170）",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-12-07"
+    },
+    {
+      "factId": "F36",
+      "claim": "北海道廳公告：降為等級 2 後，吹上溫泉地區的避難指示與十勝岳溫泉地區的高齡者等避難已解除；警戒範圍不含居住地區。",
+      "quote": "吹上温泉地区の避難指示、十勝岳温泉地区の高齢者等避難（速やかに自力で避難することが難しい方が対象）は解除されています。",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/ktk/270434.html",
+      "checkedAt": "2026-11-07",
+      "condition": "北海道總務部危機對策課「十勝岳の対応について」",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-12-07"
+    },
+    {
+      "factId": "F37",
+      "claim": "等級 3 期間（2026-09-12～10-16），凌雲閣與 Kamihoro 莊所在的十勝岳溫泉地區發布高齡者等避難，白銀莊所在的吹上溫泉地區發布避難指示，火口約 3 公里內入山規制。",
+      "quote": "十勝岳温泉地区の凌雲閣とカミホロ荘は高齢者等避難…、吹上温泉地区の白銀荘は避難指示となります。",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=6400",
+      "checkedAt": "2026-11-07",
+      "condition": "上富良野町轉載 2026-10-12 16:00 札幌管區氣象台發表（當時等級 3 持續）",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F38",
+      "claim": "噴火警戒等級 2 的意思是「火口周邊規制」，限制進入火口附近；等級 3 是「入山規制」，禁止登山或限制進入危險地區。",
+      "quote": "【レベル３（入山規制）】：登山禁止や入山規制等危険な地域への立入規制等。【レベル２（火口周辺規制）】：火口周辺への立入規制等。",
+      "sourceUrl": "https://www.data.jma.go.jp/vois/data/report/volinfo/VJ20261016100000_108.html",
+      "checkedAt": "2026-11-07",
+      "condition": "噴火警報附的等級說明",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F39",
+      "claim": "十勝岳從十勝岳溫泉登山口出發，經三段山分岐、上 Horo 分岐、上富良野岳與上 Horokametok 山縱走到山頂，來回約 6.5 小時；山頂標高 2,077 公尺。",
+      "quote": "十勝岳 … 所要時間 往復約6.5時間 頂上標高 2,077m A 十勝岳温泉 登山口",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/mountaincourse/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「登山コース」；2026-11 這條路線因等級 2 不能登（F35）",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F40",
+      "claim": "三段山（標高 1,748 公尺）從十勝岳溫泉登山口上、往白銀莊方向下，來回約 4 小時，觀光協會標為中級以上；下山段可看紅葉。",
+      "quote": "十勝岳温泉登山口から三段山を目指し、白銀荘へと向かうコース。…中級以上に挑戦したい方向け。所要時間 往復約4時間 頂上標高 1,748m",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/mountaincourse/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「登山コース」；2026-11 三段山不能登（F35）",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F41",
+      "claim": "富良野岳（標高 1,912 公尺）從十勝岳溫泉登山口來回約 5 小時，是十勝岳連峰最南端、高山植物豐富的山。",
+      "quote": "十勝岳連峰の最南に位置するのが、富良野岳です。高山植物が豊かなことでも知られ … 所要時間 往復約5時間 頂上標高 1,912m",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/mountaincourse/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「登山コース」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F42",
+      "claim": "大雪山國立公園連絡協議會的富良野岳路線時間：十勝岳溫泉登山口上山 3 小時 30 分、下山 2 小時 20 分；登山口到山頂標高差約 670 公尺，7 月高山植物盛開時登山者最多。",
+      "quote": "十勝岳温泉登山口から 登り３時間30分 下り２時間20分 … 標高差670mほどでピークに達する … 高山植物の開花がピークとなる７月はたくさんの登山者で賑わう",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e5%af%8c%e8%89%af%e9%87%8e%e5%b2%b3/",
+      "checkedAt": "2026-11-07",
+      "condition": "大雪山グレード標「グレード4, グレード3」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F43",
+      "claim": "上富良野岳（標高 1,893 公尺）是 1997 年上富良野町開基 100 年時命名的山，從十勝岳溫泉登山口來回約 4.5 小時，山頂可看富良野岳、上 Horokametok 山與富良野盆地。",
+      "quote": "上富良野町開基100年を記念して1997年に上富良野岳と命名 … 所要時間 往復約4.5時間 頂上標高 1,893m",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/mountaincourse/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「登山コース」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F44",
+      "claim": "Nukkakushi 火口（ヌッカクシ火口）路線：從十勝岳溫泉登山口走約 900 公尺過三段山分岐，到標高約 1,400 公尺的火口，來回約 1.5 小時，觀光協會說初學者也能輕鬆走；過去 3,000 年至少有 3 次水蒸氣爆發。",
+      "quote": "過去3000年間に少なくとも３回の水蒸気爆発がおきた火口。…登山道を900mほど進んだところにある三段山分岐を通り過ぎ、標高約1,400m地点の火口を目指します。所用時間約1.5時間の初心者でも気軽に楽しめるコース",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/mountaincourse/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「登山コース」；等級 2 期間是否開放沒寫",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F45",
+      "claim": "大雪山國立公園連絡協議會的十勝岳路線以美瑛町望岳台為登山口：上山 4 小時 5 分、下山 2 小時 50 分；一路是砂礫地，到摺鉢火口緣是平坦台地，沒有遮蔭，夏天要多帶水，起霧時容易迷路。",
+      "quote": "望岳台登山口から 登り４時間05分 下り２時間50分 … 望岳台からの登山道は砂礫地帯が続く … 日光を遮るものがないため、真夏はいつもより多めの水分が必要",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/tozan_info/%e5%8d%81%e5%8b%9d%e5%b2%b3/",
+      "checkedAt": "2026-11-07",
+      "condition": "大雪山グレード「グレード3」；望岳台在美瑛町，交通歸美瑛研究者",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F46",
+      "claim": "十勝岳連峰有上 Horokametok 避難小屋、美瑛富士避難小屋、十勝岳避難小屋三間，都是無人、免費、要自炊的設施；水源是雪溪，進入 8 月雪溪就消失，水要自己帶。",
+      "quote": "カミホロカメットク避難小屋、美瑛富士避難小屋、十勝岳避難小屋がありますが、いずれも無人無料の施設で、自炊が前提 … 雪渓は、８月に入ると消えてしまいます。",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/safemountain/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「安全な登山のために」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F47",
+      "claim": "避難小屋夏季常客滿，結伴登山要帶帳篷。",
+      "quote": "避難小屋は、夏のシーズン中は混雑することが多いため、パーティーで行動する場合にはテントは必携です。",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/safemountain/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「安全な登山のために」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F48",
+      "claim": "大雪山國立公園全區都可說是棕熊的棲息地；遇到熊不要移開視線、不要突然逃跑。",
+      "quote": "ヒグマについては、大雪山国立公園全域が生息地といえます。…不用意に逃げると…本能的に攻撃行動に移ってしまいます。",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/safemountain/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「安全な登山のために」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F49",
+      "claim": "為預防包生絛蟲（エキノコックス）症，山上小溪與澤水要煮沸再喝。",
+      "quote": "エキノコックス症予防のため、小川や沢水は煮沸して使用して下さい。",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/safemountain/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「安全な登山のために」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F50",
+      "claim": "7 月中旬到 8 月中旬山上很少降到冰點以下，但白天也常只有 5℃ 左右；寒冷前線通過時會有雷雨。",
+      "quote": "７月中旬～８月中旬の山の気温は、氷点下になることは極めてまれですが、日中でも５℃前後と低温になることはよくあります。",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/safemountain/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「安全な登山のために」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F51",
+      "claim": "觀光協會說北海道的山緯度高，十勝岳連峰的氣象條件相當於本州中部標高 3,000 公尺以上的山；一般午後容易變天，行程以上午為主。",
+      "quote": "十勝岳連峰等北海道の山岳は…本州中部地方の標高３０００メートル以上に匹敵します。｜一般に午後からは天気が崩れやすいので、行動は午前中を中心に計画しましょう。",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/safemountain/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「安全な登山のために」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F52",
+      "claim": "登山計畫書約在入山 10 天前寄到北海道警察旭川方面本部地域課（也可交給轄區警察署、派出所，例如上富良野交番、美瑛交番），下山後要通報；另外全區是國有林，要在登山口的入林信箱填入林申請。",
+      "quote": "入山の１０日くらい前に、指定書式で登山計画書を作成し、下記まで提出（郵送可）… 警察への登山計画書の提出のほかに森林管理署への入林届が必要です。",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/safemountain/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「安全な登山のために」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F53",
+      "claim": "十勝岳、三段山、上 Horokametok 山、上富良野岳、富良野岳方向的入林申請放在 Baden 上富良野前、十勝岳溫泉停車場、吹上保養中心白銀莊；美瑛岳、十勝岳方向在望岳台休息站內。",
+      "quote": "十勝岳・三段山・上ホロカメットク山・上富良野岳・富良野岳方面 ①バーデンかみふらの前 ②十勝岳温泉駐車場 ③吹上保養センター白銀荘｜オプタテシケ山・美瑛岳・十勝岳方面 ①登山口そば ②望岳台レストハウス内",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/safemountain/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「安全な登山のために」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F54",
+      "claim": "觀光協會提供的登山申請書 PDF 是日文、英文、中文合在一份。",
+      "quote": "登山届け、登山届け計画書のPDFです。日本語、英語、中国語がまとめて入っています。",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/mountaincourse/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「登山コース」資料一覽",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F55",
+      "claim": "十勝岳每年 6 月中旬開山，有安全祈願祭與 4 條距離、難度不同的紀念登山；2026 年開山是 6 月 21 日（日）。",
+      "quote": "例年6月中旬に山開きとなる十勝岳。…距離や難易度が違う4つのコースが設定される … 開催日 2026年6月21日（日）",
+      "sourceUrl": "https://www.kamifurano.jp/information/event_about/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「イベントガイド」",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-03-21"
+    },
+    {
+      "factId": "F56",
+      "claim": "十勝岳連峰的山脊明顯、路線好認，但鞍部有寬闊平坦地形，起霧時容易迷路，要盯緊油漆與樁的路標。",
+      "quote": "鞍部（コル）では広い平坦地形の所もあり、霧等で視界がきかないときには迷いやすいため、ペイントや杭のコース表示を見失わないように",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/safemountain/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「安全な登山のために」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F57",
+      "claim": "十勝岳溫泉登山口與吹上溫泉登山口之間有町營巴士，可以從一邊上、另一邊下（例：三段山從十勝岳溫泉上、往白銀莊下）。",
+      "quote": "吹上温泉登山口〜十勝岳温泉間は町営バスが出ていますのでお好みの登山口からどうぞ！",
+      "sourceUrl": "https://www.kamifurano.jp/outdoor/mountaincourse/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「登山コース」；2026-09 以後巴士不停白銀莊（F14），恢復與否見 F169",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F58",
+      "claim": "大正 15 年（1926 年）十勝岳噴發引發的泥流讓上富良野村幾乎全毀、144 人死亡；三浦綾子小說《泥流地帶》以此為背景，上富良野町正推動改編電影，2026 年已成立製作委員會。",
+      "quote": "大正15年 上富良野村、壊滅 … 死者144名 … 映画『泥流地帯』製作委員会が設立されました",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=2137",
+      "checkedAt": "2026-11-07",
+      "condition": "上富良野町「映画化プロジェクト」頁；製作委員會成立日期頁面沒寫，正文不寫年份",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F59",
+      "claim": "十勝岳溫泉湯元凌雲閣標高 1,280 公尺，是北海道海拔最高的溫泉旅館；有兩個源泉，一個是含鐵多的茶褐色湯、一個是酸性湯。",
+      "quote": "凌雲閣は標高1280m 北海道で最も高地にある温泉宿です … 源泉は二本、鉄分を多く含む茶褐色の湯と酸性の湯がございます",
+      "sourceUrl": "https://www.ryounkaku.jp",
+      "checkedAt": "2026-11-07",
+      "condition": "凌雲閣官網首頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F60",
+      "claim": "凌雲閣是「日本秘湯を守る会」會員旅館。",
+      "quote": "秘湯を守る会ご案内",
+      "sourceUrl": "https://www.ryounkaku.jp",
+      "checkedAt": "2026-11-07",
+      "condition": "官網首頁連到「秘湯の会のご案内」頁",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F61",
+      "claim": "凌雲閣日歸入浴 08:00～19:00（最後受理 18:30），不定休；大人（國中以上）1,000 日圓、小學生 500 日圓、學齡前免費。",
+      "quote": "【時間】8:00 - 19:00 最終受付 18:30 / 不定休 【料金】大人（中学生以上) ￥1,000 - 小学生 ￥ 500 -",
+      "sourceUrl": "https://www.ryounkaku.jp/daytriponsen",
+      "checkedAt": "2026-11-07",
+      "condition": "官網「日帰り入浴」；擁擠時會限制日歸入場",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F62",
+      "claim": "凌雲閣冬季露天風呂水溫低，酸性湯有時不能用；2026 年 11 月 7 日的溫泉告示：男湯內湯 39.9℃、露天 34.7℃、酸性湯 26.1℃。",
+      "quote": "冬季は酸性の湯がご利用いただけないことがございます。また露天風呂の湯温が低い … 凌雲閣温泉掲示板 11/7 大岩の湯（男湯）内風呂 39.9℃ 露天風呂 34.7℃ 酸性 26.1℃",
+      "sourceUrl": "https://www.ryounkaku.jp",
+      "checkedAt": "2026-11-07",
+      "condition": "官網首頁溫泉告示每天更新；數字只代表 2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-10-01"
+    },
+    {
+      "factId": "F63",
+      "claim": "凌雲閣女性露天風呂以洞窟浴池為主；住宿客因男女湯輪替，可以兩邊都泡。",
+      "quote": "写真の露天風呂は男性用になります。女性の露天風呂は洞窟がメインのお風呂です。宿泊のお客様は男女入れ替えの為、時間でどちらも入ることができます。",
+      "sourceUrl": "https://www.ryounkaku.jp",
+      "checkedAt": "2026-11-07",
+      "condition": "官網首頁",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F64",
+      "claim": "凌雲閣 2026 年 11 月 24～27 日保養休館。",
+      "quote": "2026.10.30 11月24日～27日はメンテンナンスのため休業させていただきます。",
+      "sourceUrl": "https://www.ryounkaku.jp",
+      "checkedAt": "2026-11-07",
+      "condition": "官網新消息（臨時休館，依 AGENTS.md 不寫進文章，只給重查）",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2026-11-28"
+    },
+    {
+      "factId": "F65",
+      "claim": "凌雲閣館內有小賣店、自動販賣機與餐廳（11:30 開、14:30 最後點餐，不定休）；附近沒有其他餐廳、超市或便利商店，要到上富良野町內買。",
+      "quote": "当館には売店、自動販売機、レストラン(11:30開店・14:30L.O./不定休)がございます。その他飲食店やスーパー、コンビニエンスストアは上富良野の町内にございまして",
+      "sourceUrl": "https://www.ryounkaku.jp/よくあるご質問",
+      "checkedAt": "2026-11-07",
+      "condition": "官網 FAQ",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F66",
+      "claim": "凌雲閣晚餐 18:00 或 18:30 開始（入住時選），早餐 7:00 或 7:30（夏季 6:30 開）；比早餐更早出發可事先申請改成兩個飯糰。",
+      "quote": "ご夕食のお時間を18:00、18:30のいずれかから … レストランは7:00開店 … ※夏季は6:30オープン … ご朝食をおにぎり2個に変更が可能",
+      "sourceUrl": "https://www.ryounkaku.jp/よくあるご質問",
+      "checkedAt": "2026-11-07",
+      "condition": "官網 FAQ；登山早出發的人有用",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F67",
+      "claim": "凌雲閣另有山小屋風格的別館；房內有浴衣、浴巾、毛巾、牙刷，共用空間有微波爐，有投幣洗衣機與烘衣機。",
+      "quote": "山小屋風の別館もございます｜お部屋には浴衣・バスタオル・タオル・歯ブラシセット … 洗濯機と乾燥機がございます",
+      "sourceUrl": "https://www.ryounkaku.jp/よくあるご質問",
+      "checkedAt": "2026-11-07",
+      "condition": "別館一句出自官網首頁",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F68",
+      "claim": "凌雲閣有免費停車場；冬季有雪鞋健行導覽（官網有介紹頁）。",
+      "quote": "【駐車場】無料パーキング有り｜スノーシューご案内",
+      "sourceUrl": "https://www.ryounkaku.jp/access",
+      "checkedAt": "2026-11-07",
+      "condition": "雪鞋一項出自官網首頁連結，內容與費用未讀",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F69",
+      "claim": "Kamihoro 莊（カミホロ荘）位在十勝岳連峰半山腰標高約 1,200 公尺，23 間 10 張榻榻米和室，全室禁菸，有免費 Wi-Fi 與冷氣。",
+      "quote": "部屋数：２３室 和室１０畳（全室禁煙）… エアコン完備 Wi-Fi無料",
+      "sourceUrl": "https://kamihorosou.com/room/",
+      "checkedAt": "2026-11-07",
+      "condition": "官網「お部屋」；標高見首頁「標高1,200m」",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F70",
+      "claim": "Kamihoro 莊溫泉 100% 源泉放流，大浴場全木造、浴槽用紫杉（イチイ）木；泉質鋁、鈣－硫酸鹽泉，源泉約 29℃ 有加溫。",
+      "quote": "温泉は１００％源泉掛け流し 総木造りの大浴場、浴槽はイチイ材を使用 … 泉質：アルミニウム・カルシウムー硫酸塩泉 … 源泉温度：約２９℃（加温しております）",
+      "sourceUrl": "https://kamihorosou.com/spring/",
+      "checkedAt": "2026-11-07",
+      "condition": "官網「温泉」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F71",
+      "claim": "Kamihoro 莊日歸入浴 10:00～15:00（最後受理 14:00），大人 1,000 日圓、小學生 500 日圓、學齡前免費；2026 年 6 月更衣室翻新。住宿客入浴 15:00～24:00、5:00～10:00。",
+      "quote": "営業時間 10：00～15：00（最終受付 14：00） 入浴料金 大人 1,000円（税込） 小学生 500円（税込）｜宿泊：15：00～24：00 5：00～10：00",
+      "sourceUrl": "https://kamihorosou.com/higaeri/",
+      "checkedAt": "2026-11-07",
+      "condition": "官網「日帰り入浴」「温泉」",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F72",
+      "claim": "Kamihoro 莊在町營巴士「十勝岳溫泉 Kamihoro 莊」站前，下車步行 1 分鐘；上富良野站開車約 30 分鐘；停車場 40 台；不定休，淡季有保養休館。",
+      "quote": "JR上富良野駅より車で約30分 、十勝岳温泉行き町営バス「十勝岳温泉カミホロ荘」前下車徒歩1分 … 有 ４０台 … 不定休（オフシーズンにメンテナンス休館あり）",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3632",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網交通頁只放時刻表連結",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F73",
+      "claim": "Kamihoro 莊 2026 年 4 月 9 日起改用新的自家訂房系統，舊系統的會員資料沒有移轉。",
+      "quote": "2026年4月9日（木）より、新予約システムに移行いたしました。…旧システムでご登録いただいているお客様の登録情報は、新予約システムに移行されません。",
+      "sourceUrl": "https://kamihorosou.com/",
+      "checkedAt": "2026-11-07",
+      "condition": "官網首頁",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F74",
+      "claim": "吹上溫泉保養中心白銀莊住宿只有自炊；和室 2 間、洋室 6 間（含 4 間上下舖房與 2 間大通舖），可住 70 人；入住 15:00、退房 10:00。",
+      "quote": "宿泊は自炊専用です。…和室／2室 洋室／ 6（ベット部屋12名まで4室、大部屋2）室 定員／70人 … イン／15:00 アウト／10:00",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/465",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁（白銀莊官網 kamifurano-hokkaido.com 沒有房型細節）",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F75",
+      "claim": "白銀莊日歸入浴 10:00～22:00（最後入館 21:00），無休；有檜木浴槽、岩風呂、露天風呂與可以做熱蒸氣（Löyly）的三溫暖。",
+      "quote": "日帰り入浴時間 10:00～22:00（最終入館は21:00まで）… ヒバの浴槽や岩風呂などの内風呂、開放感あふれる露天風呂 … ロウリュの出来るサウナ",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/465",
+      "checkedAt": "2026-11-07",
+      "condition": "官網 kamifurano-hokkaido.com 也寫 AM10:00〜PM10:00（最終入館PM9:00）",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F76",
+      "claim": "白銀莊因等級 3 避難指示自 2026 年 9 月 12 日起臨時休館；降為等級 2 後，2026 年 11 月 1 日恢復日歸溫泉、11 月 6 日恢復住宿。",
+      "quote": "令和8年11月1日（日）より日帰り温泉、令和8年11月6日（金）より宿泊の通常営業を再開する予定",
+      "sourceUrl": "http://kamifurano-hokkaido.com/",
+      "checkedAt": "2026-11-07",
+      "condition": "白銀莊與日之出公園露營場管理者官網；臨時休館依 AGENTS.md 不寫進文章",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2026-12-07"
+    },
+    {
+      "factId": "F77",
+      "claim": "白銀莊從上富良野站搭町營巴士約 30 分鐘；停車場 100 台。",
+      "quote": "JR富良野線上富良野駅から町営バス十勝岳温泉行きで30分 … 駐車場 有 100台",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/465",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；時刻表上站前 08:52 發、白銀莊 09:24（F8 同表，目前停靠暫停見 F14）",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F78",
+      "claim": "白銀莊隔壁的吹上溫泉露營場自 2026 年 9 月 12 日起臨時關閉、重開日未定；平常 10 月中到 4 月中不開，一頂帳篷一晚 500 日圓，吹上溫泉登山口就在對面。",
+      "quote": "当施設は十勝岳の噴火警戒レベル引き上げに伴い臨時閉鎖中です。（2026年9月12日～開始時期未定）… 使用料金／１泊１張 ５００円 定休日 １０月中～４月中まで",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3721",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F79",
+      "claim": "吹上露天之湯是免費、24 小時、男女混浴的野天溫泉，從白銀莊走約 5 分鐘；沒有更衣處，觀光協會建議女性穿泳衣或包毛巾；源泉 47℃，不加水不加溫。",
+      "quote": "混浴無料露天風呂 … 吹上温泉「白銀荘」からは徒歩５分くらい … 脱衣場はないので女性は水着着用かタオルを巻いて入浴 … 入浴料金 無料 … 24時間 … 源泉温度／47℃",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/582",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；泉質酸性－鈉、鈣－氯化物泉",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F80",
+      "claim": "吹上露天之湯因宮澤理惠在連續劇《來自北國》（北の国から）拍攝時入浴而出名，假日常擁擠。",
+      "quote": "ＴＶドラマ「北の国から」で宮沢りえが撮影の為、入浴したことで一躍有名になった混浴無料露天風呂。その為か、休日はいつも混み合っている。",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/582",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F81",
+      "claim": "Frontier 富良野溫泉（フロンティア フラヌイ温泉）在日之出公園旁，JR 上富良野站步行 12 分鐘、旭川機場開車 40 分鐘；和室 17 間加別館 2 間，可住 80 人，無休。",
+      "quote": "JR上富良野駅より徒歩12分、旭川空港より車で40分 … 和室／17室 洋室／ 別館 2室 定員／80人 … 定休日 無休",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/573",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 http://furanui.com/",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F82",
+      "claim": "Frontier 富良野溫泉日歸入浴 07:00～22:00，泉質鈉－碳酸氫鹽、氯化物泉（碳酸、美肌溫泉），源泉 30.2℃ 加溫。",
+      "quote": "日帰り入浴時間 7:00～22:00 … 源泉温度／30.2℃ 泉質／ナトリウム－炭酸水素塩・塩化物泉",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/573",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F83",
+      "claim": "Minoya 旅館（みのや旅館）在 JR 上富良野站前，步行 3 分鐘；不定休。",
+      "quote": "JR上富良野駅から徒歩３分 … 定休日 不定休",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3583",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；沒有官網",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F84",
+      "claim": "宿泊之寶龍（宿泊の宝龍）在 JR 上富良野站月台對面、步行 2 分鐘，一樓是拉麵受歡迎的食堂、二樓是民宿。",
+      "quote": "JR上富良野駅ホーム向かい、黄色いのれん。一階は食堂になり、ラーメンが人気です。二階が民宿 … ＪＲ上富良野駅から徒歩2分",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3618",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；沒有官網",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F85",
+      "claim": "旅之宿 Stella（旅の宿 ステラ）從上富良野站步行 15 分鐘，初夏窗前就是日之出公園的薰衣草；無休。",
+      "quote": "初夏は、目の前に日の出公園のラベンダーが… 上富良野駅から徒歩１５分 … 定休日 なし",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3637",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 http://www.stella-kamifurano.com/",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F86",
+      "claim": "富良野 Hops Hotel（富良野ホップスホテル）在上富良野町西 2 線北 25 號的山丘上，旭川機場沿國道 237 號開車約 30 分鐘；無休。",
+      "quote": "旭川空港より国道237号線を富良野方向、車で30分 … 定休日 なし",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/590",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 http://hops.e-tetora.com",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F87",
+      "claim": "Landscape 富良野民宿（ペンション ランドスケープ ふらの）離上富良野站開車約 5 分鐘，晚餐是放整隻雞的荷蘭鍋料理；不定休。",
+      "quote": "鶏丸ごと１羽が入ったダッチオーブン料理 … 上富良野駅から車で約5分 … 不定休",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3655",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 http://www.landscapefurano.jp",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F88",
+      "claim": "大地之宿 Jousha（大地の宿 じょう舎）在可看十勝岳與大雪山的山丘上，離上富良野站開車 7 分鐘，用自家菜園蔬菜做料理。",
+      "quote": "十勝岳や大雪の山々を一望できる丘に建つ宿 … 自家菜園野菜など地元食材 … JR上富良野駅より車で7分",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3644",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 https://johya.amebaownd.com/",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F89",
+      "claim": "旅之宿 Mr. Gnu（旅の宿 ミスター・ヌー）在深山峠附近，離 JR 美馬牛站 2.8 公里、薰衣草號深山峠站 2 公里；不定休，冬季休業。",
+      "quote": "ＪＲ美馬牛駅より２．８ｋｍ、バス・ラベンダー号 深山峠停留所より２ｋｍ … 不定休・冬期休業",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3621",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 https://mrgnu1998.com/",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F90",
+      "claim": "Woody Life（ウッディ・ライフ）是深山峠的一棟式小木屋，全棟附浴廁，薰衣草號深山峠站就在門前；無休。",
+      "quote": "一棟建てのログハウス。全棟バス・トイレ付。… 快速ラベンダー号 深山峠バス停前（ウッディ・ライフ）… 定休日 なし",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3667",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；沒有官網",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F91",
+      "claim": "上富良野道樂館（かみふらの道楽館）是以季節蔬菜料理為主的旅人宿，旭川機場開車 30 分鐘；不定休，冬季有休業期。",
+      "quote": "季節で変わる地元野菜を使った料理 … 旭川空港より車で30分 … 不定休／冬期休業期間有り",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3679",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 https://dourakukan.com/",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F92",
+      "claim": "上富良野日之出公園汽車露營場營業 4 月 25 日～10 月 25 日，使用日前 2 個月開放預約，JR 上富良野站開車 5 分鐘；園內展望台 7 月上旬到下旬有整片薰衣草。",
+      "quote": "営業期間／４月２５日～１０月２５日 予約受付／ご利用日の２ヶ月前より受付 … ＪＲ上富良野駅より車で５分",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3697",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 http://kamifurano-hokkaido.com/",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F93",
+      "claim": "日之出公園汽車露營場的小屋、平房住宿從這一季起要收北海道宿泊稅，國中以上每人每晚 100 日圓；付款只收現金或 PayPay。",
+      "quote": "今シーズンからコテージ、バンガロー宿泊ご利用者には、宿泊税がかかります。※中学生以上 おひとり 1泊 100円 … お支払方法は、現金かPayPay",
+      "sourceUrl": "http://kamifurano-hokkaido.com/",
+      "checkedAt": "2026-11-07",
+      "condition": "管理者官網；宿泊稅規則見 asahikawa:F416",
+      "changeType": "stay",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F94",
+      "claim": "NORTH GLAMPER 富良野是上富良野十人牧場的豪華露營設施，有可帶狗的帳篷，旭川機場開車 38 分鐘；町營巴士十勝岳線「中之澤」站就是這裡。",
+      "quote": "テントで泊まる非日常体験！… ワンちゃん可テント有 … 旭川空港より車で38分｜中の沢(NORTHGLAMPER 富良野)",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3746",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁與交通頁；官網 https://northglamper.jp/",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F95",
+      "claim": "觀光協會的上富良野住宿清單共 28 筆，含溫泉旅館 3 家（凌雲閣、Kamihoro 莊、白銀莊）、市區溫泉旅館、民宿、包棟住宿、露營與車泊。",
+      "quote": "宿泊施設 … 28 件みつかりました。",
+      "sourceUrl": "https://www.kamifurano.jp/rest/stay/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「宿泊施設」清單；含酒莊、咖啡店兼營的住宿",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F96",
+      "claim": "日之出薰衣草園（日之出公園）免費入園、有免費停車場，JR 上富良野站步行約 15 分鐘；6 月下旬到 8 月上旬開花，展望台西側是薰衣草田、東側是十勝岳連峰。",
+      "quote": "6月下旬から8月上旬まで … 展望台の西側にラベンダー畑、東側には十勝連峰 … JR上富良野駅から徒歩約15分 … 入園無料 … 無料駐車場あり",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/485",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；管理單位上富良野町役場企画商工観光課",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F97",
+      "claim": "觀光協會每年 6 月起到割草前，用「見頃指數」公布日之出公園的開花狀況；最佳觀賞期一般是 7 月上旬到下旬。",
+      "quote": "日の出公園のラベンダー開花・見頃状況を、毎年６月頃から刈り取りまで「見頃指数」でお知らせしています。見頃は例年７月上旬から７月下旬です。",
+      "sourceUrl": "https://www.kamifurano.jp/nature/lav_besttime/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「ラベンダー見頃情報」",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F98",
+      "claim": "2026 年日之出公園薰衣草：7 月 14 日指數 80～60%、7 月 21 日兩個品種都 100% 盛開；7 月 28 日因雨和酷暑花色變稀，觀光協會說見頃大約到 7 月 25 日；8 月 3 日開始割草。",
+      "quote": "2026年7月21日 … 満開の状況です！｜2026年7月28日 … 今年の見ごろは7/25頃までになりそうです。｜2026年8月3日 … 刈り取りが始まりました",
+      "sourceUrl": "https://www.kamifurano.jp/nature/lav_besttime/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會見頃指數紀錄；只代表 2026 年",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F99",
+      "claim": "日之出公園種的兩個品種：濃紫 3 號（こいむらさき）極早開，6 月中旬起，花穗短、紫色深、開花前最美；4 號 Okamurasaki（おかむらさき）7 月中旬起，花穗長、七分開到盛開最美。",
+      "quote": "３号【こいむらさき/濃紫3号】…極早咲き（６月中旬〜）… ４号【おかむらさき】… 遅咲き（７月中旬〜）、花色濃い、花穂が長い",
+      "sourceUrl": "https://www.kamifurano.jp/nature/lav_about/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「ラベンダーの歴史とあゆみ」與見頃頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F100",
+      "claim": "上富良野從 1948 年（昭和 23 年）開始為曾田香料契約種薰衣草，之後推廣到全北海道，最盛期町內種了 85 公頃；1977 年香料公司停止收購後才轉為觀光。",
+      "quote": "昭和２３年より委託栽培を始めたのが最初で、その後に北海道の奨励特用作物として全道に広まって … 上富良野町での栽培面積８５ヘクタール … 昭和５２年に香料会社のラベンダー油の買取が打ち切られ",
+      "sourceUrl": "https://www.kamifurano.jp/nature/lav_about/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「ラベンダーの歴史とあゆみ」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F101",
+      "claim": "日之出公園的薰衣草是 1980 年（昭和 55 年）種下的 1.5 公頃；1981 年上富良野把薰衣草定為町花。",
+      "quote": "昭和５５年に日の出公園に１.５ヘクタール植栽、さらに昭和５６年には町花「ラベンダー」の制定",
+      "sourceUrl": "https://www.kamifurano.jp/nature/lav_about/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「ラベンダーの歴史とあゆみ」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F102",
+      "claim": "上富良野八景：1 雲霄飛車之路（ジェットコースターの路）、2 深山峠、3 千望峠、4 江花全景之路（パノラマロード江花）、5 日之出薰衣草園、6 和田草原與橡實之鄉、7 旭野回音高地（旭野やまびこ高地）、8 十勝岳溫泉鄉。",
+      "quote": "八景スポット2 … 深山峠｜3 … 千望峠｜4 … パノラマロード江花｜5 … 日の出ラベンダー園｜6 … 和田草原とどんぐりの郷｜7 … 旭野やまびこ高地｜8 … 十勝岳温泉郷",
+      "sourceUrl": "https://www.kamifurano.jp/8map",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「かみふらの八景」頁標題圖的替代文字；第 1 景頁面寫ジェットコースターの路",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F103",
+      "claim": "雲霄飛車之路是西 11 線町道，4.5 公里起伏很大的直線路，從國道 237 號看到「西11線農免農道」標誌轉進去。",
+      "quote": "国道237号線沿いの「西11線農免農道」という標識を曲がった先にある、西11線という町道が「ジェットコースターの路」です。4.5kmもアップダウンの激しい直線道路",
+      "sourceUrl": "https://www.kamifurano.jp/8map",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會八景頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F104",
+      "claim": "江花全景之路離 JR 上富良野站 4.2 公里，在道道 581 號旁，從比盆地高約 50 公尺的山丘往富良野岳方向一路直線下坡約 5 公里，適合開車、走路或騎車。",
+      "quote": "JR上富良野駅から4.2km。道道581号線沿いにある「パノラマロード江花」… 5kmにおよぶ直線の下り坂",
+      "sourceUrl": "https://www.kamifurano.jp/8map",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會八景頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F105",
+      "claim": "千望峠在連接上富良野與美瑛的道道 581 號旁，有大停車場、廁所與展望台，旺季也很少擁擠；24 小時免費，停車場與廁所冬季封閉，JR 上富良野站開車約 10 分鐘。",
+      "quote": "大きな駐車場とトイレ、展望台があるので … ハイシーズンでも混雑することはほとんどない穴場 … 営業時間 24時間 料金 無し … （駐車場とトイレは、冬期閉鎖）",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/534",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁與八景頁",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F106",
+      "claim": "八景中的千望峠、日之出薰衣草園、和田草原、旭野回音高地，觀光協會都標「冬季不能參觀」。",
+      "quote": "（冬期見学不可）",
+      "sourceUrl": "https://www.kamifurano.jp/8map",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會八景頁，四處文末各有一次",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F107",
+      "claim": "十勝岳溫泉鄉是八景之一，標高超過 1,280 公尺，被稱為日本最早看得到紅葉的溫泉鄉；也是十勝岳、富良野岳的登山基地，有 3 間溫泉設施與天然露天風呂。",
+      "quote": "十勝岳、富良野岳の登山基地でもあり3軒の温泉施設と天然露天風呂が点在する湯の郷。標高1,280mを超える高地にあるため、日本一早く紅葉が楽しめる温泉郷",
+      "sourceUrl": "https://www.kamifurano.jp/8map",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會八景頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F108",
+      "claim": "上富良野八景集章活動 2026 年 6 月 1 日到 9 月 30 日 16:30，免費、不用下載 App，用手機集章抽獎，另有騎自行車的完走路線。",
+      "quote": "参加は無料！八景スポットと対象スポットを巡りスマホでスタンプを集めると景品が当たります。アプリのダウンロードなし … 2026年6月1日（月）から9月30日（水）16：30まで",
+      "sourceUrl": "https://www.kamifurano.jp/information/event_about/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「イベントガイド」",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-03-01"
+    },
+    {
+      "factId": "F109",
+      "claim": "後藤純男美術館展出日本畫家後藤純男約 130 件作品，二樓有用在地食材的餐廳（Furano Grill）；從 JR 上富良野站開車 5 分鐘，町營巴士有「後藤純男美術館」站。",
+      "quote": "後藤純男の作品を約130点展示 … 2階には地元食材にこだわったレストランもあります … JR上富良野駅より車で5分",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/488",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 http://www.gotosumiomuseum.com",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F110",
+      "claim": "後藤純男美術館開館時間：5 月 1 日～10 月 31 日 10:00～17:00，11 月 1 日～4 月 30 日 10:00～16:00；12 月 29 日～1 月 3 日休館，其餘無休。",
+      "quote": "美術館 10:00～17:00（5月1日～10月31日） 10:00～16:00（11月1日～4月30日）… 休館12月29日～1月3日",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/488",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網寫「4/29～10/31まで夏時間、11/1～4/28まで冬時間、年中無休：12月29日から1月3日はお休み」，兩邊夏季起日差 2 天，寫作前以官網為準",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F111",
+      "claim": "後藤純男美術館門票大人 1,210 日圓、兒童 605 日圓。",
+      "quote": "大人 1,210円 小人605円",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/488",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F112",
+      "claim": "後藤純男美術館餐廳營業 5～10 月 11:00～17:00（最後點餐 16:00），11～4 月 11:00～16:00（最後點餐 15:00）。",
+      "quote": "レストラン 11:00～17:00(L.O.16:00)（5月1日～10月31日） 11:00～16:00(L.O.15:00)（11月1日～4月30日）",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/488",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F113",
+      "claim": "深山峠藝術公園（深山峠アートパーク）在國道 237 號旁的深山峠，免費入園，有錯視藝術美術館、物產館、摩天輪、甜點工房與上富良野豬肉 BBQ，展望台可看十勝岳連峰；旭川機場開車 30 分鐘。",
+      "quote": "トリックアート美術館を中心に物産館、観覧車、アート体験、スイーツ工房、かみふらのポークのBBQなど … 展望テラスからの十勝岳連峰は絶景 … 旭川空港より 車で30分 … 料金 無料",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/538",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 https://www.miyama-ap.com/",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F114",
+      "claim": "深山峠藝術公園的摩天輪小學 5 年級以上 600 日圓、4 年級以下免費（12 歲以下要付費大人陪同），天候不佳會停駛。",
+      "quote": "【観覧車料金】 一般（小学5年生以上）６００円、小学4年生以下 無料 ※12才以下のお客様は保護者（有料）が必要です",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/538",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F115",
+      "claim": "深山峠藝術公園的摩天輪與物產館 2026 年 10 月 31 日結束這一季，預定 4 月中旬重開；BBQ 區 9 月 30 日結束；下雪後摩天輪即使在期間內也會提早結束。",
+      "quote": "観覧車 営業終了日：10月31日（土）※期間内でも、雪が降った時点で今シーズンの営業は終了 … 来期の営業再開は4月中旬を予定 … バーベキューコーナー 営業終了日：9月30日（水）",
+      "sourceUrl": "https://www.miyama-ap.com/",
+      "checkedAt": "2026-11-07",
+      "condition": "深山峠藝術公園官網公告",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F116",
+      "claim": "深山峠的錯視藝術美術館冬季照常營業，10:00～17:00（最後入館 16:30）；2026 年 11 月每週三公休；大人 1,300 日圓、國高中 1,000 日圓、小學 5～6 年級 700 日圓、4 年級以下免費。",
+      "quote": "「トリックアート美術館」は冬期期間中も引き続き営業 … 定休日（毎週水曜日）… 10：00～17：00（最終入館 16：30まで）｜大人 1,300円 中高生 1,000円 小学5・6年生 700円",
+      "sourceUrl": "https://www.miyama-ap.com/",
+      "checkedAt": "2026-11-07",
+      "condition": "門票出自觀光協會設施頁 facility_item/153；12 月以後時間與公休另行公布",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F117",
+      "claim": "Flower Land 上富良野（フラワーランドかみふらの）免費入園，12 月 1 日～2 月 28 日休園；營業 3、4、11 月 9:00～16:00，5、9、10 月 9:00～17:00，6～8 月 9:00～17:30（最後入園為關門前 30 分鐘）；有拖拉機巴士繞花田。",
+      "quote": "9:00～16:00（3月・4月・11月） 9:00～17:00（5月・9月・10月） 9:00～17:30（6～8月）… 料金 無料 … 定休日 12月1日～2月28日｜人気のトラクターバス",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/145",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 https://flower-land.co.jp/（拖拉機巴士費用未查）",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-02-01"
+    },
+    {
+      "factId": "F118",
+      "claim": "富田農場的 Lavender East（ファーム富田 ラベンダーイースト）在上富良野町東中，富田農場往東約 4 公里，號稱日本最大級薰衣草田；只在花季開，2026 年是 6 月 20 日～7 月 20 日 9:30～16:30，免費。",
+      "quote": "日本最大級のラベンダー畑〈開花シーズンのみ開園〉… ファーム富田より東へ約4km … 9:30～16:30 (2026年6月20日～2026年7月20日） … 料金 無料",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/474",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；富田農場本體在中富良野，細節歸中富良野研究",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F119",
+      "claim": "Kanno Farm（かんのファーム）在上富良野與美瑛交界的國道 237 號旁，免費，JR 美馬牛站步行 10 分鐘；6 月中旬到 10 月中旬無休，9:00～17:00。",
+      "quote": "上富良野と美瑛の境界 … JR美馬牛駅より徒歩１０分 … 9:00～17:00（季節や天候により変動あり） 料金 無料 … なし(6月中旬～10月中旬)",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/479",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 http://www.kanno-farm.com/",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F120",
+      "claim": "土之館（土の館）是北海道遺產、機械遺產認定的土壤與農機展示館，免費，9:00～16:00；9 月 1 日～6 月 30 日週末假日休館，上富良野站開車 5 分鐘。",
+      "quote": "「北海道遺産」・「機械遺産」認定 … 9:00～16:00 料金 無料 … 9月1日～6月30日は土・日・祝祭日、年末年始休み",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/503",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；官網 http://www.tsuchinoyakata.jp/",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F121",
+      "claim": "上富良野神社用町產啤酒花釀的啤酒當御神酒，另有「三溫暖之町」的御守；JR 上富良野站步行 15 分鐘、薰衣草號上富良野役場前站步行 5 分鐘。",
+      "quote": "町産ホップを使用したビールがお神酒として供えられる珍しい神社。サウナの町にちなんだお守り … JR富良野線上富良野駅より徒歩で15分 ラベンダー号上富良野役場前停留所より徒歩で5分",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/523",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F122",
+      "claim": "深山峠櫻花園在國道 237 號旁，可俯瞰上富良野市區與十勝岳，停車 5 台，上富良野站開車 10 分鐘；觀光協會八景頁說春天能看到滿開櫻花後方的殘雪十勝岳。",
+      "quote": "国道237号線に面する十勝岳を一望できる桜園 … 駐車場 有 5台｜一面の桜に覆われた向こうに残雪の十勝岳連峰を眺めることができる春先の風景は必見",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/33379",
+      "checkedAt": "2026-11-07",
+      "condition": "後半句出自八景頁深山峠段落",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F123",
+      "claim": "上富良野見晴台資訊站在國道 237 號旁（Hops Hotel 與觀音像對面），提供富良野沿線各市町的觀光手冊並賣薰衣草商品；5 月上旬到 9 月下旬營業、期間無休，9:30～17:00。",
+      "quote": "国道２３７号線沿い、ホップスホテル、観音様の向かい … 午前９時３０分～午後５時 … ５月上旬から９月下旬（営業期間中 無休）",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/513",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F124",
+      "claim": "深山峠薰衣草認養園在薰衣草號深山峠站下車即到，24 小時、免費、沒有停車場。",
+      "quote": "ふらのバス「ラベンダー号」深山峠下車 … 営業時間 24時間 料金 なし … 駐車場 無",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/150",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F125",
+      "claim": "上富良野町內有日新水庫、日之出水庫與江幌蓄水池；町面積 237.10 平方公里，東邊是十勝岳（2,077 公尺）。",
+      "quote": "面積237.10平方㎞で、東に大雪山国立公園大雪山系の十勝岳（2,077ｍ）… 町の北部には日新ダム、日の出ダム、江幌貯水池があります",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=11",
+      "checkedAt": "2026-11-07",
+      "condition": "上富良野町「自然と地勢」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F126",
+      "claim": "豬沙嘎里（豚さがり）是豬橫膈膜的肉，一頭豬只有 250～300 公克；觀光協會說這個名稱從上富良野傳出，上富良野燒肉店特別多，定番就是沙嘎里。",
+      "quote": "上富良野には何故か焼肉店が多い。そして定番メニューといえば、やはり「さがり」。… 横隔膜の筋肉を「さがり」と呼んだのが語源であり、ここ上富良野町から発信されたとされています。豚一頭からわずか250グラム～300グラム",
+      "sourceUrl": "https://www.kamifurano.jp/information/pork/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「かみふらのポーク」；譯名「豬沙嘎里」待定，寫作時照 glossary",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F127",
+      "claim": "上富良野豬肉（かみふらのポーク）：町內約 3,500 頭母豬、一年出貨約 7 萬頭，繁殖到育肥一貫生產；4 戶生產者在育肥後期飼料加 10% 以上的麥。",
+      "quote": "約3,500頭の母豚を飼育し、年間約70,000頭にも及ぶ肉豚を出荷 … 町内4戸の生産者 … 肥育後期の飼料に「麦」を10％以上配合",
+      "sourceUrl": "https://www.kamifurano.jp/information/pork/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「かみふらのポーク」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F128",
+      "claim": "觀光協會推薦吃豬沙嘎里的店：燒肉秀（焼肉 秀）、燒肉 Marumasu（焼肉 まるます）、豬肉丼咖啡 Backyard（豚丼カフェ ばっくやーど）；買生肉推薦多田精肉店、谷口精肉店、山崎肉店。",
+      "quote": "食べるのにオススメ！ 焼肉 秀 … 焼肉 まるます … 豚丼カフェ ばっくやーど｜買うのにオススメ！ 多田精肉店 … 谷口精肉店 … 山崎肉店",
+      "sourceUrl": "https://www.kamifurano.jp/information/pork/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「かみふらのポーク」",
+      "changeType": "popularity",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F129",
+      "claim": "燒肉秀是精肉店直營，可吃富良野和牛、上富良野和牛與上富良野產地養豚的沙嘎里，地址錦町 1 丁目。",
+      "quote": "精肉店直営店だからこそ … ふらの和牛、かみふらの和牛、上富良野産地養豚のサガリ等を堪能できます。住所：北海道空知郡上富良野町錦町1丁目1-13",
+      "sourceUrl": "https://www.kamifurano.jp/action/eat/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「食べる」清單；營業時間未查（F178）",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F130",
+      "claim": "燒肉 Marumasu 用七輪炭爐烤肉，有豬沙嘎里、黑毛和牛，也有地養豚炸豬排等炸物定食與燒肉午餐，地址綠町 2 丁目。",
+      "quote": "七輪で焼肉が楽しめる。地元グルメ「豚さがり」をはじめ、黒毛和牛など … 地元ブランド地養豚の「とんかつ」や海鮮フライなどの揚げ物の各種定食",
+      "sourceUrl": "https://www.kamifurano.jp/action/eat/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「食べる」清單；中文自動完成「上富良野 まるます」出現在日文建議詞",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F131",
+      "claim": "豚豚亭（とんとん亭）的豬肉丼 100% 用上富良野豬肉、自家醬汁，有小、中、特大三種份量，可外帶。",
+      "quote": "かみふらの産の豚肉を100%使用。自家製のタレで焼きあげ … （小）（並）（特盛り）があります。テイクアウトもOK。",
+      "sourceUrl": "https://www.kamifurano.jp/action/eat/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「食べる」清單",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F132",
+      "claim": "元祖上富良野漢堡（元祖かみふらのバーガー）在深山峠藝術公園內，用 100% 上富良野豬肉加一整片培根，全品項可外帶。",
+      "quote": "「かみふらのポーク」100％使用、ベーコンも丸ごと１枚入った … 全品テイクアウトOK。住所：…西8線北33号深山峠アートパーク",
+      "sourceUrl": "https://www.kamifurano.jp/action/eat/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「食べる」清單；冬季是否營業未查",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F133",
+      "claim": "富良野拉麵花道的「富良野味噌拉麵」用藏釀味噌，叉燒等用上富良野豬肉，地址旭町 4 丁目。",
+      "quote": "ご当地らーめんの「富良野味噌らーめん」は、蔵仕込み味噌を使用 … チャーシューなどのメニューにかみふらのポークを使用",
+      "sourceUrl": "https://www.kamifurano.jp/action/eat/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「食べる」清單",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F134",
+      "claim": "味處新町（味処 新町）是拉麵、定食店，醬油與「上富良野拉麵」受歡迎，豬沙嘎里丼與豬頸肉丼是招牌。",
+      "quote": "しょうゆ、かみふらのラーメンが人気。豚サガリ丼、とんとろ丼は当店の名物。",
+      "sourceUrl": "https://www.kamifurano.jp/action/eat/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「食べる」清單",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F135",
+      "claim": "Country Kitchen Sit Coco（カントリーキッチン シットココ）在東中公園內，池面倒映十勝岳連峰，上富良野豬肉午餐受歡迎。",
+      "quote": "湧き水豊かな東中公園の池に映る十勝岳連峰 … 上富良野ポークランチが人気。住所：…東6線北18号「東中公園内」",
+      "sourceUrl": "https://www.kamifurano.jp/action/eat/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「食べる」清單",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F136",
+      "claim": "Café YAMAICHI 在深山峠，有上富良野豬肉滷肉飯與現採蔬菜午餐（可外帶），也有農園採菜體驗、出租自行車與導覽。",
+      "quote": "かみふらのポークの魯肉飯や採れたて新鮮野菜のランチが人気。ランチはテイクアウトもOK!レンタルサイクル・ガイドもやってます！",
+      "sourceUrl": "https://www.kamifurano.jp/action/eat/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「食べる」清單",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F137",
+      "claim": "觀光協會說上富良野豬肉近年也做成「上富良野丼」，不只燒肉店，價格親民的店也吃得到。",
+      "quote": "新鮮な豚肉を使った「かみふらの丼」を提供するお店も増えており、リーズナブルに味わうことができます。",
+      "sourceUrl": "https://www.kamifurano.jp/information/pork/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「かみふらのポーク」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F138",
+      "claim": "Lavender Festa 上富良野 2026（薰衣草點燈活動）在日之出公園舉行，2026 年 7 月 4 日（六）到 7 月 12 日（日）。",
+      "quote": "ラベンダーフェスタかみふらの2026 … 開催日 2026年7月4日(土)〜2026年7月12日(日)",
+      "sourceUrl": "https://www.kamifurano.jp/information/event_about/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「イベントガイド」；主辦 Lavender Festa 上富良野營運委員會（上富良野町役場企画商工観光課內，0167-45-6983）",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F139",
+      "claim": "2026 年 7 月 4 日點燈首日流程：19:30 點燈倒數、19:40 小型煙火、19:45 點燈、21:30 結束；雨天照辦、天候惡劣取消。",
+      "quote": "7月4日（土） 19：30 ライトアップカウントダウン 19：40 ミニ花火打ち上げ 19：45 ライトアップ 21：30 終了 … 本イベントは雨天決行・荒天中止です",
+      "sourceUrl": "https://www.kamifurano.jp/lighting-up/",
+      "checkedAt": "2026-11-07",
+      "condition": "Lavender Festa 官方特設頁",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F140",
+      "claim": "北之大文字（北の大文字）在 12 月 31 日 23:30 到 1 月 1 日 0:15 舉行：聖火跑者把火傳到日之出公園雪坡上的「大」字點燃；2025 年底是第 39 回。",
+      "quote": "元旦午前０時、…日の出山ラベンダー公園に、御神火ランナーが次々に火を移し、日の出公園に設置された「大」の字に点火 … 開催日 2025年12月31日 23:30～2026年1月1日 00:15",
+      "sourceUrl": "https://www.kamifurano.jp/information/event_about/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「イベントガイド」；主辦商工會內北の大文字運営委員会；2026 年底日期未公布（F182）",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-30"
+    },
+    {
+      "factId": "F141",
+      "claim": "上富良野雪祭每年 2 月初的週日舉行，自衛隊協助做巨大雪像溜滑梯；第 62 回是 2026 年 2 月 8 日（日）10:00～15:00。",
+      "quote": "毎年２月初旬の日曜日 … 自衛隊の協力で巨大な雪像（すべり台）が登場 … 第62回 … 2026年2月8日（日） 10:00～15:00",
+      "sourceUrl": "https://www.kamifurano.jp/information/event_about/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「イベントガイド」",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-08"
+    },
+    {
+      "factId": "F142",
+      "claim": "十勝岳紅葉祭平常在 9 月下旬到 10 月上旬舉行（十勝岳連峰號稱日本最早見頃的紅葉）；2026 年度停辦。",
+      "quote": "例年9月下旬から10月上旬に日本一早く見頃を迎える十勝岳連峰の紅葉 … 令和８年度の開催は中止になりました",
+      "sourceUrl": "https://www.kamifurano.jp/information/event_about/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「イベントガイド」；停辦原因頁面沒寫（時期與等級 3 重疊）",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-06-01"
+    },
+    {
+      "factId": "F143",
+      "claim": "Kamihoro 莊官網說十勝岳溫泉有「日本最早的紅葉」，也能看到雲海、星空與夕陽。",
+      "quote": "真っ赤な【夕日】プラネタリウムのような【満天の星空】標高1,200メートルから目の前に広がる【雲海】日本一早い【紅葉】",
+      "sourceUrl": "https://kamihorosou.com/",
+      "checkedAt": "2026-11-07",
+      "condition": "官網首頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F144",
+      "claim": "氣象廳上富良野 AMeDAS 觀測點標高 220 公尺（北緯 43°27.3′、東經 142°27.9′），有氣溫、降水、風、日照，沒有積雪觀測。",
+      "quote": "viewPoint('a','1190','上富良野','カミフラノ','43','27.3','142','27.9','220' … 降雪の深さ合計(cm) /// 最深積雪(cm) ///",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳過去の気象データ，站點選擇頁與平年值頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F145",
+      "claim": "上富良野平年值（1991～2020）1 月：平均 -8.1℃、日最高 -3.5℃、日最低 -13.6℃、降水 44.8 毫米、日照 60.6 小時。",
+      "quote": "1月 | 44.8 | -8.1 | -3.5 | -13.6 | 1.5 | 60.6",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值（降水量、平均氣溫、日最高、日最低、平均風速、日照）",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F146",
+      "claim": "上富良野平年值 2 月：平均 -7.2℃、日最高 -2.2℃、日最低 -13.4℃、降水 38.0 毫米、日照 73.1 小時。",
+      "quote": "2月 | 38.0 | -7.2 | -2.2 | -13.4 | 1.6 | 73.1",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F147",
+      "claim": "上富良野平年值 3 月：平均 -2.2℃、日最高 2.6℃、日最低 -7.8℃、降水 45.6 毫米、日照 112.0 小時。",
+      "quote": "3月 | 45.6 | -2.2 | 2.6 | -7.8 | 2.0 | 112.0",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F148",
+      "claim": "上富良野平年值 4 月：平均 5.1℃、日最高 10.7℃、日最低 -0.5℃、降水 47.8 毫米、日照 147.3 小時。",
+      "quote": "4月 | 47.8 | 5.1 | 10.7 | -0.5 | 2.4 | 147.3",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F149",
+      "claim": "上富良野平年值 5 月：平均 12.1℃、日最高 18.3℃、日最低 5.9℃、降水 63.6 毫米、日照 175.9 小時。",
+      "quote": "5月 | 63.6 | 12.1 | 18.3 | 5.9 | 2.5 | 175.9",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F150",
+      "claim": "上富良野平年值 6 月：平均 16.8℃、日最高 22.8℃、日最低 11.5℃、降水 73.7 毫米、日照 164.9 小時。",
+      "quote": "6月 | 73.7 | 16.8 | 22.8 | 11.5 | 2.2 | 164.9",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F151",
+      "claim": "上富良野平年值 7 月：平均 20.7℃、日最高 26.3℃、日最低 16.0℃、降水 123.4 毫米、日照 160.0 小時。",
+      "quote": "7月 | 123.4 | 20.7 | 26.3 | 16.0 | 2.0 | 160.0",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F152",
+      "claim": "上富良野平年值 8 月：平均 20.9℃、日最高 26.4℃、日最低 16.4℃、降水 166.8 毫米（全年最多）、日照 150.7 小時。",
+      "quote": "8月 | 166.8 | 20.9 | 26.4 | 16.4 | 1.9 | 150.7",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F153",
+      "claim": "上富良野平年值 9 月：平均 16.1℃、日最高 21.9℃、日最低 11.1℃、降水 132.8 毫米、日照 137.0 小時。",
+      "quote": "9月 | 132.8 | 16.1 | 21.9 | 11.1 | 1.8 | 137.0",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F154",
+      "claim": "上富良野平年值 10 月：平均 9.0℃、日最高 14.7℃、日最低 3.9℃、降水 90.4 毫米、日照 116.2 小時。",
+      "quote": "10月 | 90.4 | 9.0 | 14.7 | 3.9 | 1.7 | 116.2",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F155",
+      "claim": "上富良野平年值 11 月：平均 2.0℃、日最高 6.2℃、日最低 -2.2℃、降水 93.4 毫米、日照 61.4 小時。",
+      "quote": "11月 | 93.4 | 2.0 | 6.2 | -2.2 | 1.7 | 61.4",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F156",
+      "claim": "上富良野平年值 12 月：平均 -5.0℃、日最高 -1.1℃、日最低 -9.8℃、降水 72.3 毫米、日照 43.9 小時（全年最少）。",
+      "quote": "12月 | 72.3 | -5.0 | -1.1 | -9.8 | 1.5 | 43.9",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F157",
+      "claim": "上富良野全年平年值：平均 6.7℃、日最高 11.9℃、日最低 1.5℃、降水 993.7 毫米、日照 1,403.0 小時。",
+      "quote": "年 | 993.7 | 6.7 | 11.9 | 1.5 | 1.9 | 1403.0",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "1991～2020 平年值",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F158",
+      "claim": "上富良野町說本町是日溫差、月溫差都大的內陸性氣候；平地年積雪約 1 公尺，山區達 2～3 公尺。",
+      "quote": "気温の日格差、月格差が大きい内陸性気候 … 年間積雪量は平坦部で約１m、山間部では２～３mに達します。",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=11",
+      "checkedAt": "2026-11-07",
+      "condition": "上富良野町「自然と地勢」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F159",
+      "claim": "十勝岳溫泉（凌雲閣標高 1,280 公尺）比上富良野 AMeDAS（220 公尺）高約 1,060 公尺，平地的平年值不能直接套用在溫泉鄉。",
+      "quote": "凌雲閣は標高1280m｜'上富良野','カミフラノ',…'220'",
+      "sourceUrl": "https://www.ryounkaku.jp",
+      "checkedAt": "2026-11-07",
+      "condition": "由 F59、F144 算標高差；溫泉鄉沒有氣象廳觀測點",
+      "changeType": "stable",
+      "derivedFrom": ["F59", "F144"]
+    },
+    {
+      "factId": "F160",
+      "claim": "7 月日之出公園薰衣草季的上富良野平年值是平均 20.7℃、最高 26.3℃、最低 16.0℃；點燈 19:45 到 21:30 是一天中較涼的時段。",
+      "quote": "7月 | 123.4 | 20.7 | 26.3 | 16.0",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "由 F151、F139 整理",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31",
+      "derivedFrom": ["F151", "F139"]
+    },
+    {
+      "factId": "F161",
+      "claim": "上富良野町開拓記念館（西 3 線北 28 號，上富良野站 1.5 公里）免費；5、6、9、10 月只在週末假日開，7～8 月週二到週日開，9:00～16:00（12:00～13:00 午休）。",
+      "quote": "上富良野駅から1.5km … 9:00～16：00（12：00～13：00は昼休み） 料金 無料 … 5・6・9・10月は、土・日・祝のみ開館・7月～8月は火～日開館",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/508",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F162",
+      "claim": "Northland Gallery（ノースランドギャラリー）在深山峠，展出風景攝影家高橋真澄的美瑛、富良野作品，免費，10:00～17:00；5～10 月不定休，冬季休館（可事先預約）。",
+      "quote": "風景写真家 高橋真澄のフォトギャラリー … 10:00～17:00 料金 無料 … 5～10月 不定休 冬期休館（事前予約受付）",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/498",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F163",
+      "claim": "Herb Garden 富良野（ハーブガーデン 富良野）在上富良野西 3 線北 27 號，可眺望十勝岳連峰，有自製化妝品、DIY 體驗與霜淇淋；10:30～14:30，不定休，420 席，上富良野站開車 5 分鐘。",
+      "quote": "ショッピングコーナーではオリジナル化粧品、DIY体験が充実。絶品ソフトクリーム … 10:30～14:30 … 席数 ：420席",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/791",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；營業時間看起來是餐廳時段，寫作前對官網 http://www.yoshida-kanko.com/",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F164",
+      "claim": "Woody Life 藝術舞台金字塔（ウッディ･ライフ アートステージ ピラミッド）展出義手詩畫家大野勝彥的詩畫約 70 件、上富良野與美瑛的照片約 60 件與 1 萬件貝殼標本，高中以上 500 日圓，11:00～16:00 要先聯絡，冬季休業。",
+      "quote": "義手の大野勝彦の詩画70点 … 写真60点 … 貝殻標本10,000点 … 11:00～16:00 事前連絡 料金 500円(高校生以上) … 不定休（冬休業）",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/493",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F165",
+      "claim": "上富良野町鄉土館（富町 1 丁目）免費；5～10 月週一休（假日開），11～3 月只在假日開，4 月週一、週日與假日休，9:00～16:00。",
+      "quote": "入館料：無料 定休日 月曜日、日曜日、祝日（４月） 月曜日（祝日は開館）（５月～１０月） 月曜日から金曜日（祝日は開館）（11月～3月）",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/30527",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會設施頁；11～3 月寫週一到週五休、假日開，週末是否開原文沒寫清楚，寫作前再確認",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F166",
+      "claim": "上富良野町官方 YouTube 頻道有日之出公園薰衣草園與雲霄飛車之路的即時影像縮時影片，以及「上富良野的玩法」等介紹影片，都可嵌入。",
+      "quote": "かみふらの町ライブカメラ（日の出公園ラベンダー園）タイムラプスver1 | 北海道上富良野町(Town Kamifurano Hokkaido)",
+      "sourceUrl": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=DgtI16v28Ng&format=json",
+      "checkedAt": "2026-11-07",
+      "condition": "oEmbed 回應正常；影片 ID 見研究紀錄 mediaPlan",
+      "changeType": "popularity",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F167",
+      "claim": "上富良野町官網的文字與照片受著作權保護，除私人使用與引用外不得轉載；觀光協會照片庫只說可當電腦與手機桌布。兩者都沒有允許網站轉載的條款。",
+      "quote": "無断で複製、転用等をすることは法律で禁止されています。｜PCやモバイルの壁紙にもぜひご利用ください。",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=8",
+      "checkedAt": "2026-11-07",
+      "condition": "後半句出自 https://www.kamifurano.jp/information/gallery/；選圖時不用這兩處的照片",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F168",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "上富良野站到美瑛、富良野的開車時間沒有官方來源寫（町公所只寫到旭川、旭川機場、札幌、帶廣）；寫作時用 JR 與薰衣草號時間代替。",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=10",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F169",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "白銀莊 2026-11-01 恢復營業後，町營巴士十勝岳線是否恢復停靠「吹上保養センター白銀荘」「吹上いこいの広場」沒有新公告（觀光協會交通頁仍列原本時刻）。",
+      "sourceUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=6433",
+      "checkedAt": "2026-11-07",
+      "nextCheckAt": "2026-12-07"
+    },
+    {
+      "factId": "F170",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "等級 2 期間富良野岳、上富良野岳、Nukkakushi 火口路線能不能走，大雪山協議會只寫十勝岳、上 Horokametok 山、三段山不能登；町公所與觀光協會沒有逐條公告。",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/%e3%80%90%e5%8d%81%e5%8b%9d%e5%b2%b3%e3%80%91mt-tokachidake-%e5%99%b4%e7%81%ab%e8%ad%a6%e6%88%92%e3%83%ac%e3%83%99%e3%83%ab%ef%bc%92%e3%81%ab%e3%80%80volcanic-alert-level%ef%bc%92-do-not-approach-the/",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F171",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "道道 966 號 2027 年春季解除冬季封路的日期還沒公布（預計 4 月下旬）。",
+      "sourceUrl": "https://www.kamifurano.jp/archives/34715/",
+      "checkedAt": "2026-11-07",
+      "nextCheckAt": "2027-04-15"
+    },
+    {
+      "factId": "F172",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "Lavender Festa 2026 每天點燈時間（第 2 天以後）與停車場收費，官方特設頁只寫 7 月 4 日流程；Walkerplus 寫每天 19:30～21:30、停車 300 台每台 500 日圓，只能當線索。",
+      "sourceUrl": "https://www.kamifurano.jp/lighting-up/",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F173",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "Lavender Festa 2027 的日期還沒公布。",
+      "sourceUrl": "https://www.kamifurano.jp/information/event_about/",
+      "checkedAt": "2026-11-07",
+      "nextCheckAt": "2027-04-01"
+    },
+    {
+      "factId": "F174",
+      "kind": "gap",
+      "gapKind": "no-source",
+      "claim": "日文自動完成的「上富良野 一色商店」找不到官網或觀光協會頁面，營業日與營業時間沒有可用來源；不寫或只在研究紀錄留線索。",
+      "sourceUrl": "https://www.kamifurano.jp/action/eat/",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F175",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "凌雲閣、Kamihoro 莊官網都沒寫有沒有上富良野站接送；寫作時只寫町營巴士。",
+      "sourceUrl": "https://www.ryounkaku.jp/access",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F176",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "薰衣草號「上富良野」站牌的位置（是否在 JR 上富良野站前）時刻表與運賃表都沒寫；要對 Furano Bus 路線圖 https://www.furanobus.jp/route-map/。",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F177",
+      "kind": "gap",
+      "gapKind": "no-source",
+      "claim": "十勝岳溫泉沒有氣象廳觀測點，溫泉鄉的氣溫平年值沒有官方數字；只能寫標高差（F159）與凌雲閣、觀光協會的季節描述。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/select/prefecture.php?prec_no=12&block_no=&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F178",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "燒肉秀、燒肉 Marumasu、豚豚亭、花道等店家的營業時間與公休這次沒逐家查官網或官方社群（觀光協會清單只列地址電話）。",
+      "sourceUrl": "https://www.kamifurano.jp/action/eat/",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F179",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "JR 上富良野站有沒有站務員、置物櫃、綠色窗口這次沒查（第三方網站說已無人化，未經 JR 確認）。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/network/station/station.html",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F180",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "Trip.com、Agoda 上架情況只用搜尋引擎找到凌雲閣、Kamihoro 莊、Hops Hotel、Frontier 富良野溫泉、Landscape 富良野、NORTH GLAMPER 的頁面；其他旅館沒在兩站搜尋框逐一查。",
+      "sourceUrl": "https://ca.trip.com/hotels/kami-furano-hotels-list-50373/",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F181",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "吹上溫泉露營場重開日期未定（2026-09-12 起臨時關閉）。",
+      "sourceUrl": "https://www.kamifurano.jp/archives/facility_item/3721",
+      "checkedAt": "2026-11-07",
+      "nextCheckAt": "2027-04-15"
+    },
+    {
+      "factId": "F182",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "北之大文字 2026 年底（第 40 回）的舉辦資訊還沒公布。",
+      "sourceUrl": "https://www.kamifurano.jp/information/event_about/",
+      "checkedAt": "2026-11-07",
+      "nextCheckAt": "2026-12-10"
+    },
+    {
+      "factId": "F183",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "Flower Land 上富良野拖拉機巴士的運行期間與費用沒查官網。",
+      "sourceUrl": "https://flower-land.co.jp/",
+      "checkedAt": "2026-11-07"
+    }
+  ]
+}

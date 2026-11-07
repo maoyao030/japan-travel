@@ -10,7 +10,7 @@ const root = process.cwd()
 const placesDir = path.join(root, 'content-planning/hokkaido/places')
 const tables = {}
 for (const p of fs.readdirSync(placesDir)) tables[p] = JSON.parse(fs.readFileSync(path.join(placesDir, p, 'facts.json'), 'utf8'))
-const outlines = ['hokkaido-wakkanai-outline.json', 'hokkaido-asahikawa-outline.json'].map((f) =>
+const outlines = ['hokkaido-wakkanai-outline.json', 'hokkaido-asahikawa-outline.json', 'hokkaido-furano-outline.json'].map((f) =>
   JSON.parse(fs.readFileSync(path.join(root, 'content-planning/hokkaido', f), 'utf8')),
 )
 const homePlace = {}

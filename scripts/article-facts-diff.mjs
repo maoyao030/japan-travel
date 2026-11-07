@@ -5,7 +5,7 @@ import path from 'node:path'
 
 const CHANGE = ['timetable', 'annual-event', 'price', 'stay', 'shop-hours', 'seasonal-opening', 'popularity', 'climate-normal', 'stable']
 const root = process.cwd()
-const outlines = ['hokkaido-wakkanai-outline.json', 'hokkaido-asahikawa-outline.json'].map((f) =>
+const outlines = ['hokkaido-wakkanai-outline.json', 'hokkaido-asahikawa-outline.json', 'hokkaido-furano-outline.json'].map((f) =>
   JSON.parse(fs.readFileSync(path.join(root, 'content-planning/hokkaido', f), 'utf8')),
 )
 const placeOf = {}

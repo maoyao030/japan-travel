@@ -1,0 +1,2917 @@
+{
+ "schemaVersion": 1,
+ "placeId": "furano",
+ "facts": [
+  {
+   "factId": "F1",
+   "claim": "ふらのバス旭川線（薰衣草號）2026 年 4 月 1 日改點，富良野往旭川一天 7 班：新富良野王子大飯店 6:30、8:00、9:05、10:30、12:20、13:20、15:55 發，富良野站前 6:50、8:20、9:25、10:50、12:40、13:40、16:15 發，旭川機場 7:53、9:23、10:28、11:53、13:43、14:43、17:18，旭川站前 8:30、10:00、11:05、12:30、14:20、15:20、17:55 到。",
+   "quote": "富良野発（旭川空港経由）旭川行き｜富良野駅前 6:50 8:20 9:25 10:50 12:40 13:40 16:15｜旭川駅前 8:30 10:00 11:05 12:30 14:20 15:20 17:55",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07",
+   "condition": "時刻表（2026年4月1日改正）；中途停中富良野、上富良野、深山峠、美瑛駅、美瑛",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F2",
+   "claim": "薰衣草號旭川往富良野一天 7 班：旭川站 9:55、11:25、12:30、13:55、15:45、16:45、19:20 發，旭川機場 10:37、12:07、13:12、14:37、16:27、17:27、20:02 發，美瑛站 10:52、12:22、13:27、14:52、16:42、17:42、20:17，富良野站前 11:38、13:08、14:13、15:38、17:28、18:28、21:03 到，終點新富良野王子大飯店 11:55、13:25、14:30、15:55、17:45、18:45、21:20 到。",
+   "quote": "旭川発（旭川空港経由）富良野行き｜旭川駅 9:55 11:25 12:30 13:55 15:45 16:45 19:20｜旭川空港 10:37 12:07 13:12 14:37 16:27 17:27 20:02｜富良野駅前 11:38 13:08 14:13 15:38 17:28 18:28 21:03",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07",
+   "condition": "時刻表（2026年4月1日改正）；旭川站端乘車處見 asahikawa:F52、F164",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F3",
+   "claim": "薰衣草號所要時間：旭川站前到富良野站前約 1 小時 43 分，旭川機場到富良野站前約 1 小時 1 分，美瑛站到富良野站前約 46 分，富良野站前到新富良野王子大飯店約 17 分。",
+   "quote": "旭川駅 9:55｜旭川空港 10:37｜美瑛駅 10:52｜富良野駅前 11:38｜新富良野プリンスホテル 11:55",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07",
+   "condition": "由 LAV2 第 1 便推算（9:55→11:38、10:37→11:38、10:52→11:38、11:38→11:55），各班相同",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01",
+   "derivedFrom": [
+    "F2"
+   ]
+  },
+  {
+   "factId": "F4",
+   "claim": "薰衣草號不用預約、也不能訂位；上車抽整理券，下車時付車資；不配合班機與 JR 的時間。",
+   "quote": "運賃は後払い方式です。ご乗車の際に整理券をお取りいただき、降車時に運賃をお支払いください。※お座席の予約は承っておりません。※航空便・JRなどとの接続はございません。",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07",
+   "condition": "路線巴士【予約不要】",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F5",
+   "claim": "薰衣草號大人車資（2025 年 10 月 1 日改定）：旭川站前→富良野站前 900 日圓、→新富良野王子大飯店 1,050 日圓；旭川站前→美瑛 750 日圓。",
+   "quote": "旭川線（ラベンダー号）2025年10月1日 改正｜JR旭川駅前：富良野駅前 900／新富良野プリンスホテル 1050／美瑛 750",
+   "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2025/09/2025-10-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E9%81%8B%E8%B3%83%E8%A1%A8PDF%EF%BC%89.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "運賃表是圖片 PDF，從縱橫交叉格讀出",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F6",
+   "claim": "薰衣草號從旭川機場的大人車資：到美瑛 370 日圓、到富良野站前 790 日圓、到新富良野王子大飯店 940 日圓。",
+   "quote": "旭川空港：美瑛 370／富良野駅前 790／新富良野プリンスホテル 940",
+   "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2025/09/2025-10-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E9%81%8B%E8%B3%83%E8%A1%A8PDF%EF%BC%89.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "2025年10月1日改正運賃表（圖片），從縱橫交叉格讀出",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F7",
+   "claim": "薰衣草號美瑛到富良野站前大人 650 日圓、美瑛到中富良野 540 日圓；富良野站前到新富良野王子大飯店 260 日圓；小孩是大人的一半（未滿 10 日圓進位）。",
+   "quote": "美瑛：中富良野 540／富良野駅前 650｜富良野駅前：新富良野プリンスホテル 260｜小児運賃は大人運賃の半額（10円未満切り上げ）",
+   "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2025/09/2025-10-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E9%81%8B%E8%B3%83%E8%A1%A8PDF%EF%BC%89.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "2025年10月1日改正運賃表（圖片），從縱橫交叉格讀出",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F8",
+   "claim": "富良野站前的ふらのバス乘車處：1 號往旭川機場、旭川站前方向；4 號往新富良野王子大飯店方向。",
+   "quote": "富良野駅 のりば１…旭川空港・旭川駅前方面行き のりば４…新富良野プリンスホテル方面行き",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07",
+   "condition": "のり場案内",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F9",
+   "kind": "gap",
+   "gapKind": "not-announced",
+   "claim": "ふらのバス上一季在 2025-12-01～2026-03-31 加開旭川線（薰衣草號）特便；2026-27 冬季有沒有特便，2026-11-07 官網「お知らせ」還沒公告。",
+   "sourceUrl": "https://www.furanobus.jp/",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F10",
+   "claim": "JR富良野線旭川站往美瑛・富良野方向一天18班普通車，其中12班開到富良野、6班只到美瑛；開到富良野的首班5:44、末班22:34。",
+   "quote": "5:44 … 22:34（美＝美瑛行、無印＝富良野行）",
+   "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E6%97%AD%E5%B7%9D&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E7%BE%8E%E7%91%9B%E3%83%BB%E5%AF%8C%E8%89%AF%E9%87%8E&next_node_id=4447&directionname2=",
+   "checkedAt": "2026-11-07",
+   "condition": "旭川駅 ＪＲ富良野線 美瑛・富良野方面時刻表，查詢日2026-11-09；2027-01-12查詢結果相同",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F11",
+   "claim": "旭川站富良野線往富良野的直通車發車時刻：5:44、6:41、7:39、9:38、11:33、13:45、15:33、16:30、17:47、18:40、20:42、22:34（另8:44、10:39、12:30、14:35、17:18、19:38只到美瑛）。",
+   "quote": "5:44 6:41 7:39 8:44(美) 9:38 10:39(美) 11:33 12:30(美) 13:45 14:35(美) 15:33 16:30 17:18(美) 17:47 18:40 19:38(美) 20:42 22:34",
+   "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E6%97%AD%E5%B7%9D&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E7%BE%8E%E7%91%9B%E3%83%BB%E5%AF%8C%E8%89%AF%E9%87%8E&next_node_id=4447&directionname2=",
+   "checkedAt": "2026-11-07",
+   "condition": "旭川駅 富良野線時刻表，2026-11-09查詢",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F12",
+   "claim": "富良野站富良野線往旭川一天12班普通車，首班5:59、末班20:47；發車時刻5:59、7:03、7:19、8:12、10:01、11:42、13:16、15:44、16:57、17:58、19:16、20:47。",
+   "quote": "5:59 7:03 7:19 8:12 10:01 11:42 13:16 15:44 16:57 17:58 19:16 20:47",
+   "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E5%AF%8C%E8%89%AF%E9%87%8E&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E6%97%AD%E5%B7%9D&next_node_id=4460&directionname2=",
+   "checkedAt": "2026-11-07",
+   "condition": "富良野駅 ＪＲ富良野線 旭川方面，2026-11-09查詢；2027-01-12查詢結果相同",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F13",
+   "claim": "富良野線定期列車全部是普通車，沒有特急或快速。",
+   "quote": "普通（種別欄全列車「無印＝普通」）",
+   "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E6%97%AD%E5%B7%9D&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E7%BE%8E%E7%91%9B%E3%83%BB%E5%AF%8C%E8%89%AF%E9%87%8E&next_node_id=4447&directionname2=",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-11-09查詢；夏季臨時的ノロッコ號已於2026-09-23結束",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F14",
+   "claim": "旭川到美瑛搭富良野線普通車約33～34分鐘，車資680日圓。",
+   "quote": "所要時間: 34 分 … 運賃: 680円",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%97%AD%E5%B7%9D&arv_node=%E7%BE%8E%E7%91%9B&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F15",
+   "claim": "旭川到上富良野搭富良野線約50～59分鐘，車資1,040日圓。",
+   "quote": "運賃: 1,040円",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%97%AD%E5%B7%9D&arv_node=%E4%B8%8A%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F16",
+   "claim": "旭川到中富良野搭富良野線約59分～1小時8分，車資1,380日圓，與到富良野同價。",
+   "quote": "運賃: 1,380円",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%97%AD%E5%B7%9D&arv_node=%E4%B8%AD%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F17",
+   "claim": "旭川到富良野搭富良野線直通普通車約1小時10分～1小時20分（54.8公里），車資1,380日圓。",
+   "quote": "所要時間: 1 時間 10 分 … 距離: 54.8 km … 運賃: 1,380円",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%97%AD%E5%B7%9D&arv_node=%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F18",
+   "claim": "美瑛到富良野搭富良野線約34～44分鐘，車資800日圓。",
+   "quote": "運賃: 800円",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E7%BE%8E%E7%91%9B&arv_node=%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F19",
+   "claim": "JR北海道的Kitaca可用車站圖中，旭川方向只到旭川（函館本線岩見沢～旭川）；富良野線各站與根室本線瀧川～富良野各站都不在可用範圍內，進出可用範圍以外的車站不能用IC卡。",
+   "quote": "Kitacaエリアを経由し、エリア内相互発着に限りご利用になれます。",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/kitaca/02area.html",
+   "checkedAt": "2026-11-07",
+   "condition": "Kitaca利用可能エリア圖（img/p2_eria.png），圖上註記「2024年3月現在の情報です」",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F20",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "JR北海道官網沒找到富良野線一人駕駛（ワンマン）列車上下車門、整理券與付款方式的說明頁；きっぷのルールPDF也沒有。",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/network/guide/index.html",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F21",
+   "kind": "gap",
+   "gapKind": "no-source",
+   "claim": "富良野線冬季除雪運休或冬季減班的官方說明沒找到；2027-01-12查詢的時刻表與11月相同，未見冬季減班。",
+   "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E6%97%AD%E5%B7%9D&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E7%BE%8E%E7%91%9B%E3%83%BB%E5%AF%8C%E8%89%AF%E9%87%8E&next_node_id=4447&directionname2=",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F22",
+   "claim": "富良野站綠色窗口（みどりの窓口）營業9:00～17:00，話せる券売機5:20～22:30。",
+   "quote": "富良野駅      9：00～17：00  5：20～22：30",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260715_AS_HP_nakafuranohanabirinji.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道旭川支社2026-07-15新聞稿「近隣駅のみどりの窓口・話せる券売機営業時間」",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F23",
+   "claim": "札幌到富良野JR最快在瀧川轉車：特急（カムイ／ライラック）札幌→瀧川，再轉根室本線普通車瀧川→富良野，例如札幌9:00發（カムイ7號）富良野10:58著，全程約1小時58分～2小時26分。",
+   "quote": "9:00 札幌 … 特急カムイ7号 … 滝川 ＪＲ根室本線(滝川－富良野) ・富良野行 10:58 富良野",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢，經由瀧川",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F24",
+   "claim": "札幌經瀧川到富良野的車資3,080日圓；查詢結果最低合計4,760日圓（含特急費用1,680日圓）。",
+   "quote": "合計: 4,760 円 (運賃: 3,080 円 料金: 1,680 円)",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢，經由瀧川",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F25",
+   "kind": "gap",
+   "gapKind": "conflicting",
+   "claim": "札幌→瀧川特急費用：查詢結果同時列2,450日圓與1,680日圓，未標示哪個是指定席、哪個是自由席；JR きっぷのルール寫自由席＝通常期指定席減530日圓，與兩數差額770日圓對不上。正文寫特急費用前要再確認。",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F26",
+   "claim": "札幌經旭川到富良野（特急ライラック到旭川轉富良野線）約2小時43分～2小時58分，車資4,400日圓，查詢合計6,760日圓（含特急費用2,360日圓），比經瀧川貴。",
+   "quote": "合計: 6,760 円 (運賃: 4,400 円 料金: 2,360 円)",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢，經由旭川",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F27",
+   "claim": "根室本線瀧川往富良野普通車一天9班，瀧川發6:10、7:31、10:00、13:27、14:59、16:23、17:59、19:37、21:59。",
+   "quote": "6:10 7:31 10:00 13:27 14:59 16:23 17:59 19:37 21:59",
+   "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E6%BB%9D%E5%B7%9D&linename=%EF%BC%AA%EF%BC%B2%E6%A0%B9%E5%AE%A4%E6%9C%AC%E7%B7%9A&directionname=%E5%AF%8C%E8%89%AF%E9%87%8E&next_node_id=4389&directionname2=",
+   "checkedAt": "2026-11-07",
+   "condition": "滝川駅 ＪＲ根室本線 富良野方面，2026-11-09查詢",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F28",
+   "claim": "根室本線富良野往瀧川普通車一天8班，富良野發6:22、7:41、9:30、11:20、15:04、16:28、18:02、21:00。",
+   "quote": "6:22 7:41 9:30 11:20 15:04 16:28 18:02 21:00",
+   "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E5%AF%8C%E8%89%AF%E9%87%8E&linename=%EF%BC%AA%EF%BC%B2%E6%A0%B9%E5%AE%A4%E6%9C%AC%E7%B7%9A&directionname=%E6%BB%9D%E5%B7%9D&next_node_id=4394&directionname2=",
+   "checkedAt": "2026-11-07",
+   "condition": "富良野駅 ＪＲ根室本線 滝川方面，2026-11-09查詢",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F29",
+   "claim": "JR從札幌到富良野最早一班：札幌6:29發特急ライラック1號，瀧川轉車，富良野8:30著。",
+   "quote": "6:29 札幌 … 特急ライラック1号 … 8:30 富良野",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢（始発検索）",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F30",
+   "claim": "JR從札幌到富良野最晚一班：札幌21:00發特急カムイ43號，瀧川轉車，富良野22:58著。",
+   "quote": "21:00 特急カムイ43号 ＪＲ根室本線(滝川－富良野) 22:58",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%9C%AD%E5%B9%8C&arv_node=%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢（終電検索）",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F31",
+   "claim": "JR從富良野回札幌最晚一班：富良野21:00發根室本線往瀧川，瀧川轉特急，札幌22:56著。",
+   "quote": "21:00 富良野 ＪＲ根室本線(滝川－富良野) ・滝川行 … 22:56 札幌",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E5%AF%8C%E8%89%AF%E9%87%8E&arv_node=%E6%9C%AD%E5%B9%8C&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢（終電検索）",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F32",
+   "claim": "新千歲機場到富良野搭JR要在札幌轉特急、再轉普通車，約2小時52分～3小時37分；經瀧川合計6,660日圓（車資3,980日圓＋費用2,680日圓）。",
+   "quote": "合計 6,660 円 (運賃: 3,980 円 料金: 2,680 円)",
+   "sourceUrl": "https://jrhokkaidonorikae.com/pc/cgi/result.cgi?dep_node=%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF&arv_node=%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=09",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道 乗換・運賃・時刻検索（jrhokkaidonorikae.com，由JR北海道官網『駅の情報検索』連結），2026-11-09（一）查詢",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F33",
+   "claim": "高速ふらの號（北海道中央巴士、ふらのバス共同運行）札幌發往富良野一天7班，札幌站前發8:50、10:40、12:10、13:40、14:50、17:10、18:40。",
+   "quote": "札幌駅前 8:50 10:40 12:10 13:40 14:50 17:10 18:40",
+   "sourceUrl": "https://www.chuo-bus.co.jp/highway/?t=173&ope=list&o=1",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年7月1日更新（夏ダイヤ）",
+   "changeType": "timetable",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F34",
+   "claim": "高速ふらの號札幌發各班富良野站前到站11:27、13:17、14:47、16:17、17:27、19:47、21:17。",
+   "quote": "降 富良野駅前 11:27 13:17 14:47 16:17 17:27 19:47 21:17",
+   "sourceUrl": "https://www.chuo-bus.co.jp/highway/?t=173&ope=list&o=1",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年7月1日更新（夏ダイヤ）",
+   "changeType": "timetable",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F35",
+   "claim": "高速ふらの號富良野發往札幌一天7班，富良野站前發7:00、8:30、10:00、13:10、14:30、15:40、16:50，札幌站前到站9:35、11:05、12:35、15:45、17:05、18:15、19:25。",
+   "quote": "乗 富良野駅前 7:00 8:30 10:00 13:10 14:30 15:40 16:50 … 降 札幌駅前 9:35 11:05 12:35 15:45 17:05 18:15 19:25",
+   "sourceUrl": "https://www.chuo-bus.co.jp/highway/index.cgi?ope=det&n=9&t=173&o=2",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年7月1日更新（夏ダイヤ）",
+   "changeType": "timetable",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F36",
+   "claim": "高速ふらの號札幌～富良野約2小時55分，經赤平、芦別。",
+   "quote": "所要時間 富良野発着便　約2時間55分",
+   "sourceUrl": "https://www.chuo-bus.co.jp/highway/?t=173&ope=list&o=1",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年7月1日更新",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F37",
+   "claim": "高速ふらの號札幌～富良野大人單程2,700日圓、來回5,100日圓。",
+   "quote": "富良野まで 2,700円 5,100円",
+   "sourceUrl": "https://www.chuo-bus.co.jp/highway/?t=173&ope=list&o=1",
+   "checkedAt": "2026-11-07",
+   "condition": "中央巴士路線頁運賃表",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F38",
+   "claim": "高速ふらの號下車時付車資，可用IC卡（上下車都要感應）；車上有廁所、免費Wi-Fi，途中不休息。",
+   "quote": "運賃は降車時にお支払いください。また、ICカードがご利用いただけます。",
+   "sourceUrl": "https://www.chuo-bus.co.jp/highway/?t=173&ope=list&o=1",
+   "checkedAt": "2026-11-07",
+   "condition": "中央巴士路線頁",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F39",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "高速ふらの號是否需要或可以預約，路線頁沒寫（只寫下車付費、客滿時可能坐輔助座或請搭下一班）。",
+   "sourceUrl": "https://www.chuo-bus.co.jp/highway/?t=173&ope=list&o=1",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F40",
+   "claim": "高速ふらの號富良野端依序停北の峰入口、市場前、本通5丁目、本通3丁目、十字街，終點富良野站前，不開到新富良野王子飯店。",
+   "quote": "降 富良野駅前",
+   "sourceUrl": "https://www.chuo-bus.co.jp/highway/?t=173&ope=list&o=1",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年7月1日更新（夏ダイヤ）停留所表",
+   "changeType": "timetable",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F41",
+   "claim": "札幌站周邊的都市間高速巴士乘車處中，往旭川、富良野的在北3條廣場（アカプラ）周邊②號乘車處。",
+   "quote": "旭川、富良野",
+   "sourceUrl": "https://www.chuo-bus.co.jp/highway/pdf/noriba.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "札幌駅周辺バスのりばご案内 2025（令和7年）12月版",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F42",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "高速ふらの號冬季（12月起）時刻是否與夏ダイヤ不同，官網目前只列2026-07-01夏ダイヤ。",
+   "sourceUrl": "https://www.chuo-bus.co.jp/highway/?t=173&ope=list&o=1",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F43",
+   "claim": "2026年的特急フラノラベンダーエクスプレス下行札幌7:41發、富良野9:44著。",
+   "quote": "札幌（7：41 発）→富良野（9：44 着）",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260908_KO_furano.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年度夏季臨時特急（已結束）",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F44",
+   "claim": "2026年的特急フラノラベンダーエクスプレス上行富良野16:53發，瀧川17:48著（往札幌）。",
+   "quote": "富良野 (16:53 発) → 滝川 (17:48 着)",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260629_KO_Train-marche%20.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年度（已結束）",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F45",
+   "claim": "フラノラベンダーエクスプレス使用261系5000番台「ラベンダー編成」。",
+   "quote": "261 系 5000 代「ラベンダー編成」を使用して運転しております",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260908_KO_furano.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年度",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F46",
+   "kind": "gap",
+   "gapKind": "unreadable",
+   "claim": "フラノラベンダーエクスプレス2026年運行日、是否全車指定席、訂票方式（えきねっと／窗口）：JR專頁 /travel/furanobiei/ 已下架（顯示找不到頁面），新聞稿沒列運行日；2027年資料待公布。",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/index.html",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2027-04-01"
+  },
+  {
+   "factId": "F47",
+   "kind": "gap",
+   "gapKind": "unreadable",
+   "claim": "ラベンダー畑站2026年臨時設站期間：專頁已下架，新聞稿只見ノロッコ號在該站的停車時刻，沒列設站期間。",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/index.html",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2027-04-01"
+  },
+  {
+   "factId": "F48",
+   "claim": "富良野・美瑛ノロッコ號（1998年起運行）已於2026年9月23日結束運行。",
+   "quote": "「富良野・美瑛ノロッコ号」は９月 23 日（水・祝）をもって運転を終了させていただきます",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260820_AS_HP_norokkolastrun.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "JR北海道旭川支社2026-08-20新聞稿",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F49",
+   "claim": "2026年ノロッコ號旭川～富良野票價為車資1,380日圓＋指定席費用1,000日圓＝2,380日圓（全車指定席）。",
+   "quote": "旭川～富良野：運賃 1,380 円＋指定席料金 1,000 円＝2,380 円",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260807_AS_HP_mankitsunorokko.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年度ノロッコ號（已結束）",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F50",
+   "claim": "新千歲機場～富良野直達巴士「バスゴリライナーふらの」由北海道巴士運行，2026年12月11日前一天4班：新千歲機場23號乘車處10:30、11:45、14:30、17:30發，富良野站前（北海道銀行前）12:23、13:38、16:23、19:23著。",
+   "quote": "新千歳空港 23番のりば 発 10:30 11:45 14:30 17:30 / 富良野駅前(北海道銀行前) 着 12:23 13:38 16:23 19:23",
+   "sourceUrl": "http://www.hokkaidoubus-newstar.jp/wp-content/themes/core_tcd027/img/furano/furano-timetable.jpg",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年12月11日（金）まで的時刻表（官網圖片）",
+   "changeType": "timetable",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F51",
+   "claim": "バスゴリライナーふらの富良野往新千歲機場（2026年12月11日前）：富良野站前7:30、11:00、14:00、15:30發，新千歲機場9:36、13:06、16:06、17:36著。",
+   "quote": "富良野駅前(北海道銀行前) 発 7:30 11:00 14:00 15:30 / 新千歳空港 着 9:36 13:06 16:06 17:36",
+   "sourceUrl": "http://www.hokkaidoubus-newstar.jp/wp-content/themes/core_tcd027/img/furano/furano-timetable.jpg",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年12月11日（金）まで",
+   "changeType": "timetable",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F52",
+   "claim": "バスゴリライナーふらの2026年12月12日～2027年3月31日改冬季時刻：新千歲機場10:30、11:45、14:30、18:10發，富良野站前13:00、14:15、17:00、20:40著，途中休息一次約10分鐘。",
+   "quote": "新千歳空港 23番のりば 発    10:30  11:45  14:30  18:10",
+   "sourceUrl": "http://www.hokkaidoubus-newstar.jp/wp-content/uploads/2026/10/富良野線_2026.12.12冬期ダイヤのお知らせ.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "冬期ダイヤ 2026-12-12～2027-03-31",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F53",
+   "claim": "バスゴリライナーふらの冬季時刻富良野站前發往新千歲機場7:15、9:40、13:55、15:50，新千歲機場10:10、12:35、16:50、18:45著。",
+   "quote": "富良野駅前（北海道銀行前） 発    7:15  9:40   13:55  15:50",
+   "sourceUrl": "http://www.hokkaidoubus-newstar.jp/wp-content/uploads/2026/10/富良野線_2026.12.12冬期ダイヤのお知らせ.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "冬期ダイヤ 2026-12-12～2027-03-31",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F54",
+   "claim": "バスゴリライナーふらの富良野端停富良野站前（北海道銀行前）、基線（北の峰）、新富良野王子飯店。",
+   "quote": "富良野駅前（北海道銀行前） 基線（北の峰） 新富良野プリンスホテル",
+   "sourceUrl": "http://www.hokkaidoubus-newstar.jp/furano",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-11官網",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F55",
+   "claim": "バスゴリライナーふらの大人單程5,000日圓、小孩2,500日圓。",
+   "quote": "大人（中学生以上）片道　5,000円",
+   "sourceUrl": "http://www.hokkaidoubus-newstar.jp/furano",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-11官網",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F56",
+   "claim": "バスゴリライナーふらの可在「発車オーライネット」預約（乘車日前2個月到出發前1小時，線上付款），不接受電話預約；沒預約也能直接到站上車，先到先上、客滿不能搭，現場可付現金、交通系IC卡（SAPICA除外）或感應式信用卡。",
+   "quote": "※予約なしでもご乗車いただけます。",
+   "sourceUrl": "http://www.hokkaidoubus-newstar.jp/furano",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-11官網",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F57",
+   "claim": "バスゴリライナーふらの全車自由座、車上沒有廁所；冬季（2026-12-12起）為了放雪具，載客上限約30人。",
+   "quote": "車内にトイレはございません。",
+   "sourceUrl": "http://www.hokkaidoubus-newstar.jp/furano",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-11官網",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F58",
+   "claim": "北海道リゾートライナー（北海道アクセスネットワーク）新千歲機場⇔富良野滑雪巴士2026-27年季：機場→富良野2026年12月1日～2027年3月30日、富良野→機場2026年12月2日～2027年3月31日每天運行，大人6,000日圓、小孩5,000日圓，全程預約制（募集型企劃旅行）。",
+   "quote": "■運行期間：2026年12月1日～2027年3月30日",
+   "sourceUrl": "https://www.access-n.jp/winter2026/skibus/detail/chitose_furano.html",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-2027 WINTER SEASON",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-09-01"
+  },
+  {
+   "factId": "F59",
+   "claim": "北海道リゾートライナー原則上只供在停靠區飯店住宿的旅客使用，沒預約的上下車點不停。",
+   "quote": "スキーバスは基本として乗降車地区ホテルにご宿泊のお客様に限り利用可能です。",
+   "sourceUrl": "https://www.access-n.jp/winter2026/skibus/detail/chitose_furano.html",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-2027 WINTER SEASON",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-09-01"
+  },
+  {
+   "factId": "F60",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "北海道リゾートライナー新千歲機場⇔富良野各班時刻：只在預約系統內顯示，路線頁沒列。",
+   "sourceUrl": "https://www.access-n.jp/winter2026/skibus/detail/chitose_furano.html",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F61",
+   "claim": "北海道リゾートライナー札幌市內⇔富良野2027年1月4日～3月14日每天運行，大人6,000日圓、小孩5,000日圓。",
+   "quote": "■運行期間：2027年1月4日～2027年3月14日",
+   "sourceUrl": "https://www.access-n.jp/winter2026/skibus/detail/sapporo_furano.html",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-2027 WINTER SEASON",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-09-01"
+  },
+  {
+   "factId": "F62",
+   "claim": "北海道リゾートライナー旭川機場⇔富良野：機場→富良野2026年12月1日～2027年3月30日、回程12月2日～3月31日每天運行，大人4,000日圓、小孩3,000日圓。",
+   "quote": "大人 4,000 円 小人 3,000 円",
+   "sourceUrl": "https://www.access-n.jp/winter2026/skibus/detail/asahikawa_ap_furano.html",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-2027 WINTER SEASON",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-09-01"
+  },
+  {
+   "factId": "F63",
+   "claim": "旭川機場官網巴士頁：往美瑛・富良野由ふらのバス運行，約60分鐘，在②號乘車處搭。",
+   "quote": "美瑛・富良野 約60分 時刻表はこちら[ふらのバス]",
+   "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-11官網（舊網址aapb.co.jp已轉址）",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F64",
+   "claim": "拓殖巴士ノースライナー號（帶廣～旭川，預約制，經狩勝峠）在富良野站前停：旭川往帶廣方向富良野站前上車9:27、11:02、15:42、17:07、18:42，帶廣站巴士總站到站12:05、13:40、18:20、19:45、21:20。",
+   "quote": "富 良 野 駅 前 | 乗 | 9:27 | 11:02 | 15:42 | 17:07 | 18:42",
+   "sourceUrl": "https://www.takubus.com/%E9%83%BD%E5%B8%82%E9%96%93%E9%AB%98%E9%80%9F%E3%83%90%E3%82%B9/%E3%83%8E%E3%83%BC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%8A%E3%83%BC/",
+   "checkedAt": "2026-11-07",
+   "condition": "時刻表（2024.4.1～）",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F65",
+   "claim": "ノースライナー號帶廣往旭川方向在富良野站前只能下車：帶廣站巴士總站7:50、9:20、11:00、15:45、17:00發，富良野站前10:29、11:59、13:39、18:24、19:39到。",
+   "quote": "富 良 野 駅 前 | 降 | 10:29 | 11:59 | 13:39 | 18:24 | 19:39",
+   "sourceUrl": "https://www.takubus.com/%E9%83%BD%E5%B8%82%E9%96%93%E9%AB%98%E9%80%9F%E3%83%90%E3%82%B9/%E3%83%8E%E3%83%BC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%8A%E3%83%BC/",
+   "checkedAt": "2026-11-07",
+   "condition": "時刻表（2024.4.1～）",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F66",
+   "claim": "ノースライナー號富良野站前的乘車處是站前巴士圓環4號乘車處；已預約的人可在富良野站舍右側的ふらのバス案內所買往帶廣的車票（6:45～18:00，只收現金）。",
+   "quote": "富良野駅前…駅前バスロータリー  4番のりば",
+   "sourceUrl": "https://www.takubus.com/%E9%83%BD%E5%B8%82%E9%96%93%E9%AB%98%E9%80%9F%E3%83%90%E3%82%B9/%E3%83%8E%E3%83%BC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%8A%E3%83%BC/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-11官網",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F67",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "ノースライナー號富良野～帶廣、富良野～新得的單段車資：官網只列帶廣市內～旭川市內3,600日圓，全區間運賃表沒讀到。",
+   "sourceUrl": "https://www.takubus.com/%E9%83%BD%E5%B8%82%E9%96%93%E9%AB%98%E9%80%9F%E3%83%90%E3%82%B9/%E3%83%8E%E3%83%BC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%8A%E3%83%BC/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F68",
+   "kind": "gap",
+   "gapKind": "no-source",
+   "claim": "JR根室本線富良野～新得間2024年4月1日廢止的JR北海道官方說明（新聞稿）沒找到；報導稱JR於2024-02-22發表替代交通。",
+   "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/index.html",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F69",
+   "claim": "ふらのバス西達布線（富良野～幾寅）一天6往返，富良野站前發7:16、10:26、14:06、16:21、17:26、18:46，幾寅站前到8:20、11:30、15:10、17:25、18:30、19:50（約1小時4分）。",
+   "quote": "富良野駅前 7:16 10:26 14:06 16:21 17:26 18:46 … 幾寅駅前 8:20 11:30 15:10 17:25 18:30 19:50",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07",
+   "condition": "時刻表（2026年10月1日改正）",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-09-01"
+  },
+  {
+   "factId": "F70",
+   "claim": "ふらのバス西達布線幾寅站前發往富良野6:55、8:45、12:05、15:50、17:55、19:00，富良野站前到8:00、9:50、13:10、16:55、19:00、20:05。",
+   "quote": "幾寅駅前 6:55 8:45 12:05 15:50 17:55 19:00",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07",
+   "condition": "時刻表（2026年10月1日改正）",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-09-01"
+  },
+  {
+   "factId": "F71",
+   "claim": "ふらのバス西達布線富良野站前～幾寅站前大人1,200日圓（運賃表是圖片，判讀結果需人工再核）。",
+   "quote": "1200",
+   "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2025/09/2025-04-01_西達布線（運賃表PDF）.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "運賃表 2025年4月1日改正（圖片PDF）",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F72",
+   "kind": "gap",
+   "gapKind": "not-researched",
+   "claim": "占冠村營巴士、南富良野町營巴士（幾寅～占冠、幾寅～新得方向）的班次與票價沒查。",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F73",
+   "claim": "ふらのバス2026年觀光周遊巴士（事前預約制）已全部結束：ふらの號エンジョイコース2026/7/1～8/11每天（大人5,000日圓）、びえい號パノラマコース6/6～9/27指定日（大人9,000日圓）、あさひかわ號パッチワークコース6/6～9/27每天（大人9,000日圓）；目前沒有販售中的行程。",
+   "quote": "現在販売中のコースはありません。",
+   "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/09/観光周遊バス2026（運行終了）.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年版傳單（運行終了）；販售狀態見 https://www.furanobus.jp/tour-center/",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F74",
+   "claim": "富良野市的法人計程車業者有2家、共39輛（2025年7月31日），包括株式會社富良野タクシー與有限會社中央ハイヤー。",
+   "quote": "うち富良野市の法人タクシー事業者数・車両数：２社・３９両（令和７年７月３１日現在）",
+   "sourceUrl": "https://wwwtb.mlit.go.jp/hokkaido/content/000358814.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "北海道運輸局 令和7年9月29日 日本版ライドシェア許可發表",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F75",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "富良野站前計程車乘車處、各計程車公司電話與營業時間的經營者官網沒查到，只有第三方網站。",
+   "sourceUrl": "https://wwwtb.mlit.go.jp/hokkaido/content/000358814.pdf",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F76",
+   "claim": "トヨタレンタカー富良野店在富良野市日の出町2-15，從JR富良野站沿站前通走約3分鐘；營業時間4/1～10/31 8:00～19:00、11/1～12/30 9:00～18:00、12/31 9:00～16:00、1/4～3/31 9:00～18:00，1/1～1/3休。",
+   "quote": "営業時間：8:00～19:00(4/1～10/31) / 9:00～18:00(11/1～12/30) / 9:00～16:00(12/31) / 9:00～18:00(1/4～3/31) 休業日：1/1～1/3",
+   "sourceUrl": "https://rent.toyota.co.jp/shop/?muni=01229",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-11官網店舗一覧",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-03-01"
+  },
+  {
+   "factId": "F77",
+   "claim": "トヨタレンタカー富良野店可以甲地借乙地還（ワンウェイ），出發與還車在營業區內外都可以。",
+   "quote": "出発：◎ 返却：◎　エリア内外共に可能",
+   "sourceUrl": "https://rent.toyota.co.jp/shop/detail.aspx?rCode=61101&eCode=009",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-11官網店舗詳細；異地還車費用沒查",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F78",
+   "kind": "gap",
+   "gapKind": "not-researched",
+   "claim": "駅レンタカー北海道富良野營業所、バジェット富良野駅前店、ニッポン・オリックス・タイムズ在富良野的店：官網營業時間與異地還車沒讀到，只找到第三方網站資料。",
+   "sourceUrl": "https://rent.toyota.co.jp/shop/?muni=01229",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F79",
+   "kind": "gap",
+   "gapKind": "not-researched",
+   "claim": "從富良野借車、在旭川機場或旭川站還車的異地還車費用沒查。",
+   "sourceUrl": "https://rent.toyota.co.jp/shop/detail.aspx?rCode=61101&eCode=009",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F80",
+   "claim": "富良野滑雪場 2026-27 冬季營業期間預定為 2026年11月28日（六）到 2027年5月5日（三・假日）。",
+   "quote": "2026年11月28日(土)～2027年05月05日(水・祝)",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季，預定",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F81",
+   "claim": "富良野區（富良野ゾーン）初滑 11/28～12/4、正規季 12/5～3/22 營業 8:30～16:00（或日落）；春滑雪 3/23～5/5 營業 9:00～16:00。",
+   "quote": "3/23(火)～5/5(水･祝) 9:00A.M.～4:00P.M.",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/pdf/season2026.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季，富良野區",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F82",
+   "claim": "北之峰區（北の峰ゾーン）只在 12 月下旬到 2027年3月22日（一・補假）營業，8:30～16:00（或日落）；春滑雪期間北之峰區不開。",
+   "quote": "12月下旬～3/22(月･振休) 8:30A.M.～4:00P.M.(または日没)",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/pdf/season2026.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季，北之峰區",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F83",
+   "claim": "夜滑：富良野區 12 月中旬～2027年3月21日、北之峰區 12 月下旬～3月21日；平日 16:00～18:00，年末年始（12/26～1/3）與週六日假日 16:00～19:30。",
+   "quote": "平日4:00P.M.～6:00P.M. 、年末年始（12/26～1/3）・土休日4:00P.M.～7:30P.M.",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F84",
+   "claim": "夜滑只開兩條吊椅：富良野區的 Prince 浪漫吊椅與北之峰區的北之峰第1高速吊椅。",
+   "quote": "ナイターリフトは富良野ゾーン（プリンスロマンスリフト）、北の峰ゾーン（北の峰 第1高速リフト）の運行となります。",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F85",
+   "claim": "滑雪場規模：面積 194 公頃、雪道 28 條、最長滑降距離 4,000 公尺、總滑行距離 24,333 公尺、最大坡度 34 度、標高差 839 公尺。",
+   "quote": "194ha 28 4,000m 24,333m 34° 839m",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+   "checkedAt": "2026-11-07",
+   "condition": "官網概要表",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F86",
+   "claim": "索道共 11 座（富良野纜車、北之峰纜車吊廂、7 條吊椅、2 座初學者雪地手扶梯）。",
+   "quote": "リフト 0 /11",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/",
+   "checkedAt": "2026-11-07",
+   "condition": "官網運行狀況計數",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F87",
+   "claim": "富良野纜車是 101 人座大車廂，上到標高約 900 公尺處；冬季營業 9:00～16:00。",
+   "quote": "大型キャビン101人乗りのロープウェーは標高約900メートル地点まで快適に高速運行",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+   "checkedAt": "2026-11-07",
+   "condition": "冬季",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F88",
+   "claim": "北之峰纜車吊廂是 6 人座，到山頂約 10 分鐘；冬季營業 9:00～16:00。",
+   "quote": "6人乗り北の峰ゴンドラは山頂まで約10分",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+   "checkedAt": "2026-11-07",
+   "condition": "冬季",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F89",
+   "claim": "連絡吊椅（2 人座、931 公尺）從北之峰區乘車處往富良野區，連接兩區。",
+   "quote": "北の峰ゾーンの乗り場から富良野ゾーンへ向かう連絡リフト",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+   "checkedAt": "2026-11-07",
+   "condition": "冬季",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F90",
+   "claim": "北之峰第1高速吊椅（4 人座、1,058 公尺）營業 8:30～16:00，是北之峰區最早開的吊椅。",
+   "quote": "F 北の峰第1 高速リフト 営業時間 8:30A.M.〜4:00P.M.",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+   "checkedAt": "2026-11-07",
+   "condition": "冬季",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F91",
+   "claim": "一日券（正規季 12/5～3/22）大人 9,000 日圓、長者（60 歲以上，需證明）8,500 日圓；Seibu Prince Global Rewards 會員 7,500／7,200 日圓。",
+   "quote": "通常 ※1 （12/5～3/22） 一般 ¥9,000 ¥8,500",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季，含稅",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F92",
+   "claim": "一日券在初滑期（11/28～12/4）與春滑雪期（3/23～5/5）大人 7,500 日圓、長者 7,000 日圓；春滑雪期一日券使用時間 9:00～16:00。",
+   "quote": "初滑り ※1 （11/28～12/4） 一般 ¥7,500 ¥7,000",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季，含稅",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F93",
+   "claim": "小學生以下吊椅免費，當天到售票處領免費券；學齡前兒童不能單獨搭乘，須有家長同行。",
+   "quote": "※小学生までのリフト券は無料となります、当日チケット売場で無料券をお求めください。",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F94",
+   "claim": "4 小時券大人 8,200 日圓、長者 7,700 日圓，從第一次過閘門起算 4 小時。",
+   "quote": "4時間券 ※1 ¥8,200 ¥7,700",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季，含稅",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F95",
+   "claim": "夜滑券平日大人 3,100 日圓（長者 2,900），年末年始 12/26～1/3 與週六日假日大人 3,900 日圓（長者 3,700）。",
+   "quote": "ナイター券 平日 ※2 ¥3,100 ¥2,900",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季，含稅",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F96",
+   "claim": "冬季富良野纜車來回券 3,700 日圓，當天有效。",
+   "quote": "富良野ロープウェー ¥3,700 往復1回、当日限り有効",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 冬季，含稅",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F97",
+   "claim": "點數券：1 點 1,200 日圓（吊椅 1 次），纜車或纜車吊廂單程要 3 點，12 點券 10,500 日圓，當季有效。",
+   "quote": "3ポイント券 ¥3,600 ロープウェー・ゴンドラ片道1回",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季，含稅",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F98",
+   "claim": "雪票可在官網 Webket 線上購買，當天也能買（發券前 15 分鐘截止），只能刷 VISA、Master、JCB；買了不能改、不能退。",
+   "quote": "当日購入も可能です。インターネット販売は発券する15分前までに購入してください。",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F99",
+   "claim": "雪具租借三處：富良野纜車 8:30～16:00（或日落），北之峰站與新富良野王子大飯店 8:15～18:00 或 19:30；結束前 1 小時停止出借，當天來回的人官網建議用北之峰站。",
+   "quote": "※日帰りのお客さまは北の峰ターミナルのご利用をお勧めします。",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/info/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季，依吊椅營業時間變動",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F100",
+   "claim": "租借價：雙板三件組（板、雪杖、雪靴）或單板兩件組，大人 1 日 8,900 日圓、小學生以下 5,800 日圓；全套（加雪衣、安全帽、護目鏡、手套）大人 1 日 19,000 日圓。",
+   "quote": "②スキー3点セット or スノーボード２点セット",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/info/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F101",
+   "claim": "租雪具時要帶駕照等身分證明。",
+   "quote": "ご利用の際は身分証明書・運転免許証などをご持参ください。",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/info/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F102",
+   "claim": "Pandaruman 兒童滑雪學校（3～6 歲學齡前）有日文、英文、中文課；營業 2026/12/12～2027/3/31，中文英文課 10:30～12:30、14:00～16:00，櫃台在新富良野王子大飯店 GF 樓。",
+   "quote": "対応語学：日本語・英語・中国語",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/school/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F103",
+   "claim": "木村公宣滑雪學校營業 2026/11/28～2027/4/30，櫃台在新富良野王子大飯店 GF 樓；初學者課 2 小時 23,000 日圓，要電話或 email 預約。",
+   "quote": "営業期間：2026年11月28日(土)～2027年4月30日(金)",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/school/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F104",
+   "claim": "富良野滑雪學校櫃台在北之峰第一高速吊椅旁，營業 2026/12/19～2027/3/22；一般課（小學5年級以上）2 小時 8,000 日圓。",
+   "quote": "受付場所：富良野スキー学校カウンター（北の峰第一高速リフト横）",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/school/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F105",
+   "claim": "滑雪場停車場 2,430 台免費，禁止車中過夜。",
+   "quote": "＜スキー場駐車場 2,430台(無料)＞",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/access/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F106",
+   "claim": "從 JR 富良野站搭計程車到滑雪場約 6 公里、約 12 分鐘。",
+   "quote": "JR富良野駅からスキー場まではタクシーで約6Km（所要時間：約12分）",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/access/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F107",
+   "claim": "富良野巴士旭川線（薰衣草號）從富良野站前往「スキー場 第二駐車場」與新富良野王子大飯店，一天 7 班：富良野站前 11:38、13:08、14:13、15:38、17:28、18:28、21:03 發，約 9 分鐘到第二停車場、17 分鐘到飯店。",
+   "quote": "富良野駅前|11:38|13:08|14:13|15:38|17:28|18:28|21:03",
+   "sourceUrl": "http://www.furanobus.jp/lavender/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年4月1日改正時刻表，從旭川開來往飯店方向",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-02-28"
+  },
+  {
+   "factId": "F108",
+   "claim": "薰衣草號在富良野站是 4 號乘車處（往新富良野王子大飯店方向）；不能預約座位，下車時付車資。",
+   "quote": "のりば４…新富良野プリンスホテル方面行き",
+   "sourceUrl": "http://www.furanobus.jp/lavender/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F109",
+   "claim": "富良野巴士御料線也停「スキー場 第二駐車場」：富良野站前 8:10、14:55、16:10 發，約 10 分鐘到；回程第二停車場 7:36（週日假日停駛）、8:41、15:26、16:41 發。",
+   "quote": "富良野駅前|8:10|14:55|16:10",
+   "sourceUrl": "http://www.furanobus.jp/lavender/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年10月1日改正時刻表",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-08-31"
+  },
+  {
+   "factId": "F110",
+   "claim": "バスゴリライナーふらの冬季班表（2026/12/12～2027/3/31）：新千歲機場 10:30、11:45、14:30、18:10 發，到基線（北之峰）13:10、14:25、17:10、20:50，到新富良野王子大飯店 13:25、14:40、17:25、21:05；回程富良野站前 7:15、9:40、13:55、15:50 發。",
+   "quote": "新千歳空港 23番のりば 発 10:30 11:45 14:30 18:10（官方時刻表圖片轉錄）",
+   "sourceUrl": "http://www.hokkaidoubus-newstar.jp/wp-content/themes/core_tcd027/img/furano/furano-timetable20261212.jpg",
+   "checkedAt": "2026-11-07",
+   "condition": "2026/12/12～2027/3/31 冬季班表",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-02-28"
+  },
+  {
+   "factId": "F111",
+   "claim": "夏秋季富良野纜車 2026 年營業 7月4日～8月30日、10月3日～10月18日；來回一般價大人 3,300 日圓、小學生 1,600 日圓，學齡前免費。",
+   "quote": "期間：2026年7月4日（土）～8月30日（日）、10月3日（土）～10月18日（日）",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 夏秋季",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-05-31"
+  },
+  {
+   "factId": "F112",
+   "claim": "FURANO 雪樂園（雪上摩托車、雪上泛舟等）營業 2026/12/12～2027/3/31，9:00～12:00、13:00～16:00（或日落）。",
+   "quote": "営業期間 2026年12月12日(土)～2027年3月31日(水)",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-27 季",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F113",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "雪票線上購買（Webket）是否比現場便宜：官網雪票頁只列一般價與會員價，沒寫線上價差。",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F114",
+   "kind": "gap",
+   "gapKind": "not-announced",
+   "claim": "富良野區與北之峰區之間 2026-27 季的接駁巴士（往年有新富良野王子大飯店↔北之峰的直達與巡迴班）官網尚未公告時刻。",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/info/",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2026-12-15"
+  },
+  {
+   "factId": "F115",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "一日券沒有國中、高中生價（季票才分），官網沒寫國高中生一日券是否就是大人價。",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F116",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "官網沒寫成人滑雪課有沒有中文或英文教練；只有 Pandaruman 兒童學校寫了語言。",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/school/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F117",
+   "claim": "十勝岳火山警戒等級 2026年9月12日升到 3 級（入山規制）；新富良野王子大飯店與富良野滑雪場位於警戒區外，照常營業。屬臨時狀況，只供研究，不寫進正文。",
+   "quote": "当施設に関しましては、十勝岳の警戒区域外に位置しており",
+   "sourceUrl": "https://www.princehotels.co.jp/file.jsp?id=523929",
+   "checkedAt": "2026-11-07",
+   "condition": "2026-09-15 公告",
+   "changeType": "annual-event",
+   "nextCheckAt": "2026-12-07"
+  },
+  {
+   "factId": "F118",
+   "claim": "新富良野王子大飯店位於富良野市中御料，從 JR 富良野站搭計程車約 6 公里、約 12 分鐘；搭薰衣草號巴士約 17 分鐘，一天 7 班。",
+   "quote": "JR富良野駅からホテルまでは「ラベンダー号」バスで約6Km（所要時間：約17分）1日7便運行",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/access/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F119",
+   "claim": "新千歲機場可搭バスゴリライナーふらの直達新富良野王子大飯店，一天 4 班。",
+   "quote": "新千歳空港発着⇔新富良野プリンスホテル「バスゴリライナーふらの」バス1日4便運行",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/access/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F120",
+   "claim": "新富良野王子大飯店有富良野溫泉「紫彩の湯」，源泉在地下 1,010 公尺。",
+   "quote": "「紫彩の湯」の源泉は、富良野大地の地中1,010メートルにある湯脈。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F121",
+   "claim": "新富良野王子大飯店停車場 390 台免費，禁止車中過夜。",
+   "quote": "＜ホテル駐車場 390台(無料)＞",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/access/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F122",
+   "claim": "新富良野王子大飯店官網寫「スキーIN・スキーOUT」，滑雪學校櫃台與租借店都在飯店內。",
+   "quote": "スキーIN・スキーOUT",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/",
+   "checkedAt": "2026-11-07",
+   "condition": "冬季",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F123",
+   "claim": "新富良野王子大飯店總客室 407 間。",
+   "quote": "総客室数407室",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/summer/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F124",
+   "claim": "2026年4月1日起富良野住宿要付宿泊稅：每人每晚房價 2 萬日圓以下 300 日圓、2～5 萬 500 日圓、5 萬以上 1,000 日圓（市稅加道稅），另外支付。",
+   "quote": "宿泊料金が1人1泊2万円未満の場合 300円(内訳：富良野市宿泊税200円＋北海道宿泊税100円)",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/informations/20260401_information_shin_furano/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年4月1日起住宿",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F125",
+   "claim": "ホテルナトゥールヴァルト富良野在北之峰町 14-46，從富良野站搭計程車約 10 分鐘，或搭富良野巴士御料線、薰衣草號約 10 分鐘。",
+   "quote": "富良野駅からバスでお越しの場合 （所要時間：約10分／富良野バス御料線、富良野バスラベンダー号）",
+   "sourceUrl": "https://naturwald-furano.com/access",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F126",
+   "claim": "ホテルナトゥールヴァルト富良野的浴場是光明石溫泉（人工礦石溫泉），有露天浴池。",
+   "quote": "当ホテルはイオン化作用の強い光明石温泉。 露天風呂もございます。",
+   "sourceUrl": "https://naturwald-furano.com/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F127",
+   "claim": "ラビスタ富良野ヒルズ（La Vista 富良野 Hills）在富良野站步行約 3 分鐘。",
+   "quote": "「富良野駅」から徒歩約3分",
+   "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/furano/access",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F128",
+   "claim": "ラビスタ富良野ヒルズ有天然溫泉大浴場「紫雲の湯」。",
+   "quote": "天然温泉大浴場「紫雲の湯」から",
+   "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/furano/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F129",
+   "claim": "ホテルベルヒルズ在北之峰町 20-8，走到富良野滑雪場北之峰站（纜車吊廂與吊椅乘車處）約 2 分鐘。",
+   "quote": "富良野スキー場「北の峰ステーション」まで徒歩２分と快適アクセス",
+   "sourceUrl": "https://www.bellhills.jp/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F130",
+   "claim": "ホテルベルヒルズ從 JR 富良野站搭計程車約 10 分鐘；停車場約 100 台免費。",
+   "quote": "JR富良野本線「富良野駅」下車、タクシーで約10分",
+   "sourceUrl": "https://www.bellhills.jp/access/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F131",
+   "claim": "ホテルベルヒルズ的浴場是光明石溫泉（天然礦石做的人工溫泉）。",
+   "quote": "天然ミネラル鉱石を使用した光明石温泉。",
+   "sourceUrl": "https://www.bellhills.jp/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F132",
+   "claim": "富良野ナチュラクスホテル（NATULUX HOTEL）在朝日町 1-35，富良野站下車步行 1 分鐘。",
+   "quote": "JR富良野駅下車 徒歩1分",
+   "sourceUrl": "https://www.natulux.com/access/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F133",
+   "claim": "ハイランドふらの在富良野市島ノ下，從 JR 富良野站開車約 14 分鐘；有天然溫泉、露天浴池，也開放純泡湯；停車場約 250 台免費。",
+   "quote": "JR富良野駅からお車14分、",
+   "sourceUrl": "https://www.highland-furano.jp/access/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F134",
+   "claim": "ハイランドふらの每年有全館維修休業（2026 年 4 月一次、11/1～11/20 一次）。屬臨時休業，只供研究。",
+   "quote": "（重要）11/1（日）～11/20（金） 全館メンテナンス休業のお知らせ",
+   "sourceUrl": "https://www.highland-furano.jp/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F135",
+   "claim": "Nozo Hotel 在北之峰町 14-38，從富良野站搭御料線或薰衣草號巴士約 10 分鐘（約 3 公里）；停車場 20 台，滿了改停北之峰滑雪場第二停車場。",
+   "quote": "富良野駅からバスでお越しの場合（所要時間：約10分／富良野バス御料線、富良野バスラベンダー号）",
+   "sourceUrl": "https://nozohotel.com/access/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F136",
+   "claim": "ふらの觀光協會：富良野有天然溫泉的住宿共 3 家。",
+   "quote": "富良野では天然温泉を楽しめる宿泊施設が3軒ある他",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_L.php?kid1=4",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F137",
+   "claim": "ふらの觀光協會：北之峰一帶以有廚房的公寓式住宿（コンドミニアム）為主且持續增加。",
+   "quote": "北の峰エリアを中心に増えているキッチン付き宿泊施設。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_L.php?kid1=4",
+   "checkedAt": "2026-11-07",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F138",
+   "claim": "新富良野王子大飯店 2026/11/5～11/26 維修全館休館（臨時，不寫進正文）。",
+   "quote": "11月5日(木)～11月26日(木)の期間はメンテナンスクローズにより全館休館となります。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/ningle_terrace",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年",
+   "changeType": "stay",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F139",
+   "kind": "gap",
+   "gapKind": "conflicting",
+   "claim": "富良野プリンスホテル（北之峰）現況不明：官網 /furano/ 轉到新富良野王子大飯店，雪票頁仍列其電話 0167-23-4111，首頁有「富良野プリンスホテル 営業再開予定の変更について」公告但 PDF 連結（file.jsp?id=324711）打開是錯誤頁。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2026-12-07"
+  },
+  {
+   "factId": "F140",
+   "kind": "gap",
+   "gapKind": "no-source",
+   "claim": "ホテル&コンドミニアム一花（北之峰町 23-10）找不到經營者官網；營業期間、接送、溫泉都只有訂房平台資料。",
+   "sourceUrl": "https://www.jalan.net/yad348268/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F141",
+   "kind": "gap",
+   "gapKind": "conflicting",
+   "claim": "フラノ寶亭留：官網找不到，フォートラベル寫已閉館；沒有官方閉館公告可確認。",
+   "sourceUrl": "https://4travel.jp/dm_hotel-10060009",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2026-12-07"
+  },
+  {
+   "factId": "F142",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "ホテルナトゥールヴァルト富良野官網同一頁寫車程「8分」與「約10分」兩種。",
+   "sourceUrl": "https://naturwald-furano.com/access",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F143",
+   "kind": "gap",
+   "gapKind": "not-researched",
+   "claim": "ホテルムニン富良野、FURANO HOTEL（2025年5月重新開幕）、Hostel Tomar 等 Trip.com 有上架的住宿沒查到官網。",
+   "sourceUrl": "https://us.trip.com/hotels/furano-hotels-list-4157/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F144",
+   "claim": "精靈露台（ニングルテラス）是森林裡 15 棟小木屋連成的手作商店區，離新富良野王子大飯店步行約 2 分鐘，入場免費。",
+   "quote": "森の中に15棟のログハウスが連なるロマンチック・ショッピングエリア。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/ningle_terrace",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F145",
+   "claim": "精靈露台營業時間：夏季 11:00～19:45，冬季 12:00～20:45；各店有不定休，營業店家可能較少。",
+   "quote": "■冬期営業時間：12:00NOON～8:45P.M.",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/ningle_terrace",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F146",
+   "claim": "精靈露台晚上會點燈。",
+   "quote": "夜にはライトアップされロマンチックな雰囲気に。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/ningle_terrace",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F147",
+   "claim": "精靈露台可能因天候、路面或停車場狀況限制入場。",
+   "quote": "天候や路面状況、駐車場の空き状況により、入場を制限させていただく場合がございます。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/ningle_terrace",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F148",
+   "claim": "精靈露台的「森の楽団」「紙々の森」「万華鏡の家」三家店有手作體驗課，費用各店不同。",
+   "quote": "｢森の楽団｣､｢紙々の森｣､｢万華鏡の家｣の3店舗で開催中。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F149",
+   "claim": "富良野劇場館（富良野･ドラマ館）在新富良野王子大飯店旁（步行約 1 分），賣倉本聰三部富良野電視劇《北國之戀》《溫柔時光》《風之花園》的周邊商品，營業 9:15～18:45，11 月有維修休業。",
+   "quote": "営業時間： 9:15A.M. 〜 6:45P.M.",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/dramakan",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F150",
+   "claim": "劇場館外觀重現昭和 17 年左右富良野站的樣子。",
+   "quote": "昭和17年頃の｢富良野駅｣開業当時を再現した、どこか懐かしい外観。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/dramakan",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F151",
+   "claim": "風之花園（風のガーデン）2026 年開園 4/25～10/12；7/1～8/31 6:30～17:00，9/24～10/12 8:00～16:00，其他期間 8:00～17:00（最後入園為結束前 30 分）。",
+   "quote": "9/24(木)～10/12(月・祝) 8:00A.M.～4:00P.M. (最終受付3:30P.M.)",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/kaze_no_garden_infor/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F152",
+   "claim": "風之花園門票大人 1,200 日圓、小學生 700 日圓、學齡前免費、年票 1,500 日圓。",
+   "quote": "おとな ￥1,200 小学生 ￥700",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/kaze_no_garden_infor/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年，含稅",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F153",
+   "claim": "風之花園的受付在飯店步行約 2 分處，買票後搭接送車往返花園，單程約 4 分鐘、隨到隨發；停車用飯店免費停車場。",
+   "quote": "受付より片道約4分です。 (時刻表はなく、順次出発･往復いたします)",
+   "sourceUrl": "https://www.princehotels.co.jp/ski/furano/kaze_no_garden_infor/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F154",
+   "claim": "咖啡店森之時計（珈琲 森の時計，電視劇《溫柔時光》場景）在飯店步行約 5 分；2026 年營業 4/1～10/31，12:00～20:00（最後點餐 19:00）。",
+   "quote": "珈琲 森の時計 ホテルより徒歩約5分 2026/4/1～2026/10/31",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/informations/202604.restaurant_inf",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 夏季",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F155",
+   "claim": "新富良野王子大飯店住宿者的晚餐，包含含晚餐方案的人，都要先預約。",
+   "quote": "ご夕食付きプランでご宿泊のお客さまも含め全てのお客さまにご夕食のご予約をお願いしております。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/informations/202604.restaurant_inf",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年公告",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F156",
+   "claim": "飯店內晚餐餐廳有：自助餐（ラベンダー，GF 樓，17:30～21:00）、和食からまつ、炭焼処きたぐに；法國菜 Le Gaulois Furano（ル・ゴロワ フラノ）在飯店步行約 3 分。",
+   "quote": "ディナーブッフェ ラベンダー(GF階) 2026/4/1～2026/10/31 5:30P.M.～9:00P.M.（ラストオーダー8:30P.M.）",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/informations/202604.restaurant_inf",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 夏季營業表",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F157",
+   "kind": "gap",
+   "gapKind": "not-announced",
+   "claim": "新富良野王子大飯店 2026-27 冬季各餐廳營業表尚未公告（官網只有 2026 夏季表，期限到 10/31～11/1）。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/informations/202604.restaurant_inf",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2026-11-27"
+  },
+  {
+   "factId": "F158",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "新富良野王子大飯店官網沒寫飯店與富良野站之間有自家接駁車；只寫薰衣草號巴士（約 17 分、一天 7 班）與計程車（約 12 分）。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/access/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F159",
+   "kind": "gap",
+   "gapKind": "not-announced",
+   "claim": "精靈露台冬季點燈的具體期間與時間官網沒寫，只寫「夜にはライトアップ」。",
+   "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/ningle_terrace",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2026-12-15"
+  },
+  {
+   "factId": "F160",
+   "claim": "五郎的石屋・最初之家 2026 年度開放 4 月 12 日到 11 月 29 日，期間中無休；11 月 30 日起到隔年 4 月中旬冬季封閉，也不能從遠處參觀。",
+   "quote": "2026年4/12(日) ～ 11月29日",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=401",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年度；日期可能變更",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-03-15"
+  },
+  {
+   "factId": "F161",
+   "claim": "五郎的石屋・最初之家開放時間：4/12～9/30 為 9:30～17:00，10/1～11/29 為 9:30～16:00。",
+   "quote": "10/1(木)～11/29(日) 9:30～16:00",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=401",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年度",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-03-15"
+  },
+  {
+   "factId": "F162",
+   "claim": "五郎的石屋、麓郷之森、撿來的家門票各為大人 500 日圓、小學生 300 日圓；三館共通券大人 1,200 日圓、小學生 600 日圓，只收現金，只能在這三處現場購買。",
+   "quote": "3施設共通券1,200円　小学生600円（拾って来た家/麓郷の森/五郎の石の家）",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=401",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年度",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F163",
+   "claim": "五郎的石屋離 JR 富良野站約 21 公里，搭巴士「麓郷線」到終點後走路約 40 分；停車場免費、可停 100 輛小客車。",
+   "quote": "ＪＲ富良野駅より約21キロ　バス「麓郷線」終点下車　徒歩40分",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=401",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F164",
+   "claim": "麓郷之森（1981 年拍攝用的圓木小屋與五郎第三個家）2026 年度開放到 11 月 29 日，時間與石屋相同，期間中無休，11 月 30 日起冬季封閉。",
+   "quote": "※11/30より翌年の4月下旬まで冬期間閉鎖（遠くからの見学はできません）",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=404",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年度",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-03-15"
+  },
+  {
+   "factId": "F165",
+   "claim": "麓郷之森離 JR 富良野站約 18 公里，巴士「麓郷線」終點下車走路約 30 分，計程車約 5000 日圓。",
+   "quote": "バス「麓郷線」終点下車　徒歩30分　タクシー目安は約5000円",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=404",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F166",
+   "claim": "撿來的家（拾って来た家－やがて町）2026 年度 4 月 12 日到 11 月 29 日開放 9:30～18:00（最後入場 17:30），期間中無休。",
+   "quote": "〇4/12(日)～11/29(日) 9:30～18:00（最終入場17:30）期間中無休",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=402",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年度",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-03-15"
+  },
+  {
+   "factId": "F167",
+   "claim": "撿來的家冬季（11 月 30 日到 3 月 31 日）仍開放，但每週一、週四休；4 月 1 日到 4 月 17 日維護休館。",
+   "quote": "定休日：冬期間は月曜日と木曜日",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=402",
+   "checkedAt": "2026-11-07",
+   "condition": "2026–27 冬季",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-03-15"
+  },
+  {
+   "factId": "F168",
+   "claim": "撿來的家在麓郷市街，巴士「麓郷線」終點下車走路約 2 分；夏季有出租自行車（冬季不可）。",
+   "quote": "バス「麓郷線」終点下車　徒歩2分",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=402",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F169",
+   "claim": "從富良野往北の國來拍攝地，開車走國道 38 號往帶廣方向，看到「麓郷」標誌轉道道 544 號，各處都有免費停車場。",
+   "quote": "道道５４４号線に入ります。それぞれ無料駐車場があり",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F170",
+   "claim": "麓郷展望台可俯瞰麓郷一帶，景色入選「日本農村百景」；開車離 JR 富良野站約 30 分。",
+   "quote": "ここからの景色は「日本農村百景」にも選ばれており",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=500",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F171",
+   "claim": "富良野果醬園營業 9:00～17:30，全年營業；草莓果醬手作體驗須前一天前預約。",
+   "quote": "ジャム造り体験教室は前日までにご予約ください",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=77",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F172",
+   "claim": "往果醬園・麵包超人商店：JR 富良野站約 19 公里、開車約 30 分；搭巴士往麓郷終點約 40 分，再走約 3 公里（約 40 分）。",
+   "quote": "麓郷バス停から約3Km　徒歩約40分",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F173",
+   "claim": "麵包超人商店營業 9:00～17:30（全年），一樓商品、二樓藝廊。",
+   "quote": "AM9:00～PM5:30（通年）",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=78",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F174",
+   "claim": "富良野起司工房營業時間 4～10 月 9:00～17:00、11～3 月 9:00～16:00（披薩工房 10:30～16:00），除年末年始外無休，但有維護休館。",
+   "quote": "11月～3月 9:00～16:00",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=69",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F175",
+   "claim": "富良野起司工房 2026 年 11 月 10 日到 12 日維護休館。",
+   "quote": "11/10（tue）~12(thu）はメンテナンス休業となります。",
+   "sourceUrl": "https://www.furano-cheese.jp/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年 11 月",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F176",
+   "claim": "起司工房可隔著玻璃參觀起司製造室與熟成庫，二樓有試吃區與直賣區。",
+   "quote": "ガラス越しにチーズの製造室や熟成庫を見学することができます。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=69",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F177",
+   "claim": "起司工房離富良野站約 3.4 公里，開車約 9 分、自行車約 25 分；免費停車場 120 輛。",
+   "quote": "富良野駅より 約3.4Km （約9分） 無料駐車場120台",
+   "sourceUrl": "https://www.furano-cheese.jp/html/access.html",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F178",
+   "claim": "往起司工房也可搭巴士「御料線」（自由上下車區間，須事先告知司機），下車後再走約 1 公里；從車站走路約 1 小時。",
+   "quote": "「御料線」御料行き（自由乗降区間につき乗務員に事前申請）",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F179",
+   "claim": "起司工房的冰淇淋工房 2026 年營業到 10 月 22 日為止（冬季停售）。",
+   "quote": "アイスミルク工房は、10月22日（木）を以て今季営業終了！！",
+   "sourceUrl": "https://www.furano-cheese.jp/",
+   "checkedAt": "2026-11-07",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F180",
+   "claim": "冰淇淋工房價格：義式冰淇淋單球 400 日圓、雙球 500 日圓，現做起司霜淇淋 450 日圓。",
+   "quote": "ジェラート シングル400円/ダブル500円",
+   "sourceUrl": "https://www.furano-cheese.jp/html/icemilk.html",
+   "checkedAt": "2026-11-07",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F181",
+   "claim": "起司工房的奶油、冰淇淋、起司手作體驗原則上網路預約，須 4 天前預約，1～3 天前不受理。",
+   "quote": "4日前までに予約をお願いいたします。",
+   "sourceUrl": "https://www.furano-cheese.jp/html/taiken.html",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F182",
+   "claim": "富良野葡萄酒工廠營業 9:00～17:00，全年營業。",
+   "quote": "9：00～17：00（通年）",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=398",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F183",
+   "claim": "葡萄酒工廠可參觀製程、熟成庫並試飲；參觀免費，個人不用預約，10 人以上團體才要預約。",
+   "quote": "個人は不要",
+   "sourceUrl": "https://www.furanowine.jp/winery.html",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F184",
+   "claim": "葡萄酒工廠導覽團「ノーマルコース」每週二、四 14:00，約 30 分，每人 500 日圓（含一杯桶中熟成酒與富良野起司工房起司）；只有日語。",
+   "quote": "おひとり様 500 円（税込）",
+   "sourceUrl": "https://www.furanowine.jp/tour/",
+   "checkedAt": "2026-11-07",
+   "condition": "須一週前預約，最少 2 人",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F185",
+   "claim": "葡萄酒工廠「プレミアムコース」每週二、四 10:30，約 60 分，含葡萄園導覽，每人 5,000 日圓，2～8 人、須一週前預約。",
+   "quote": "おひとり様 5,000 円（税込）",
+   "sourceUrl": "https://www.furanowine.jp/tour/",
+   "checkedAt": "2026-11-07",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F186",
+   "claim": "葡萄酒工廠離 JR 富良野站約 3 公里，沒有路線巴士，可騎出租自行車（約 20 分）或走路（約 40 分），計程車約 1000 日圓。",
+   "quote": "路線バスがございませんので",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F187",
+   "claim": "富良野葡萄酒是富良野市經營的自治體酒廠，1972 年設立富良野市ぶどう果樹研究所開始試釀。",
+   "quote": "「ふらのワイン」は富良野市が経営する自治体ワイナリー。",
+   "sourceUrl": "https://www.furanowine.jp/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F188",
+   "claim": "2026 年新酒 11 月 18 日開賣（白酒與粉紅酒）。",
+   "quote": "１１月１８日（水）２０２６新酒解禁！",
+   "sourceUrl": "https://www.furanowine.jp/news.html?id=0c3d36596438656931000334",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-08-18"
+  },
+  {
+   "factId": "F189",
+   "claim": "富良野葡萄酒之家（餐廳）營業 11:00～21:00（最後點餐 20:30），除年末年始外無休；開車離富良野站約 5 分。",
+   "quote": "AM11:00～PM9:00（ラストオーダー PM8:30）",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=146",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F190",
+   "claim": "葡萄酒之家薰衣草園是離富良野站最近的薰衣草點，花期例年 6 月下旬到 7 月中旬。",
+   "quote": "花の見頃は、例年6月下旬から7月中旬となります。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=399",
+   "checkedAt": "2026-11-07",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-05-31"
+  },
+  {
+   "factId": "F191",
+   "claim": "フラノマルシェ 2026 年度 6/20～8/31 營業 10:00～19:00，其他期間 10:00～18:00；2026 年度休館日 11/9～11/13、12/31、1/1。",
+   "quote": "6/20(土) ～8/31(月) 10:00～19:00",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=535",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年度",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F192",
+   "claim": "フラノマルシェ２離 JR 富良野站走路約 5 分。",
+   "quote": "JR富良野駅から徒歩5分",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=535",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F193",
+   "claim": "鳥沼公園 2026 年度划船期間 4 月 28 日到 10 月 9 日，只限週末假日，暑假 7/25～8/25 每天，9:00～17:00。",
+   "quote": "《時間》9：00 ～ 17：00",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=405",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年度",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F194",
+   "claim": "鳥沼公園離富良野站約 5.7 公里，搭巴士「麻町線」「麓郷線」在「9線」站下車走路約 10 分，計程車約 1600 日圓。",
+   "quote": "バス「麻町線」「麓郷線」9線バス停下車　徒歩10分",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=405",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F195",
+   "claim": "北海道中心標正式名稱「北海道中央經緯度觀測標」，在富良野小學校操場，是市指定文化財；大正 3 年起京都帝國大學博士在此測量重力與經緯度後立碑。",
+   "quote": "正式には「北海道中央経緯度観測標」",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=492",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F196",
+   "claim": "富良野市博物館（山部，生涯學習中心內）開館 9:00～17:00，週一與年末年始休館；開車離富良野站約 20 分，或搭巴士「西達布線」在「22線」下車。",
+   "quote": "9:00～17:00 休館日月曜日・年末年始",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=431",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F197",
+   "claim": "朝日之丘公園 1950 年入選日本百景，春天約 3000 棵櫻花；搭巴士「御料線」或「ラベンダー号」在「基線」下車走路 5 分。",
+   "quote": "春には3000本の桜が楽しめます",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=420",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F198",
+   "claim": "東大演習林樹木園平日 9:00～16:00 開放，約 300 種北方樹木；參觀資料館或園內散步須事先申請。",
+   "quote": "＊資料館の見学、園内の散策には事前の申し込みが必要です。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=430",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F199",
+   "claim": "ハイランドふらの飯店前是富良野市最大的薰衣草田，7 月初到 7 月下旬盛開。",
+   "quote": "7月初旬から7月下旬には一面に咲き誇り",
+   "sourceUrl": "https://www.highland-furano.jp/",
+   "checkedAt": "2026-11-07",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-05-31"
+  },
+  {
+   "factId": "F200",
+   "claim": "グラス・フォレスト in 富良野營業 9:00～18:00，公休日會變動；玻璃珠等體驗 2024 年 4 月起暫停。",
+   "quote": "AM9:00～PM6:00",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=99",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F201",
+   "claim": "道之驛南富良野開館 9:00～17:00（4～5 月、10～3 月）、9:00～18:00（6 月、9 月）、9:00～19:00（7、8 月），休館日為 12 月 31 日到 1 月 2 日。",
+   "quote": "9：00～19：00（7月、8月）",
+   "sourceUrl": "https://hokkaido-michinoeki.jp/michinoeki/222/",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F202",
+   "claim": "道之驛南富良野 2025 年 4 月 26 日改裝重開，入口有展示伊富魚的大水槽，一樓特產區；園區內有 mont-bell 南富良野店、餐廳與美食區。",
+   "quote": "2025年4月26日にリニューアルオープンしました。",
+   "sourceUrl": "https://hokkaido-michinoeki.jp/michinoeki/222/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F203",
+   "claim": "道之驛後方的「なんぷアドベンチャーパーク」有大型遊具與狗狗運動場，冬季積雪期間關閉。",
+   "quote": "積雪のため冬季間は、閉鎖いたします。",
+   "sourceUrl": "https://hokkaido-michinoeki.jp/michinoeki/222/",
+   "checkedAt": "2026-11-07",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F204",
+   "claim": "南富良野町觀光協會設在道之驛南富良野內，營業 9:00～17:00，年末年始休；離 JR 幾寅站約 1 公里。",
+   "quote": "ＪＲ幾寅駅より約1km",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=418",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F205",
+   "claim": "金山湖是金山水庫形成的人造湖；冬天湖面全面結冰可以釣公魚，夏天可泛舟、划獨木舟。",
+   "quote": "冬には一面氷に覆われた「かなやま湖」でワカサギ釣りをすることができます。",
+   "sourceUrl": "https://www.minamifurano.jp/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F206",
+   "claim": "金山湖森林公園在南富良野町東鹿越，有薰衣草、附大浴場的「かなやま湖保養センター」與露營場；免費停車 48 輛。",
+   "quote": "湖畔に咲くラベンダーと山並みが水面に映り込む風景も",
+   "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_12182.html",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F207",
+   "claim": "かなやま湖畔キャンプ場大人一晚 1,000 日圓、日間 500 日圓；可搭 500 頂以上帳篷。",
+   "quote": "キャンプ/1,000円　　デイキャンプ/500円",
+   "sourceUrl": "https://hokkaido-michinoeki.jp/michinoeki/222/",
+   "checkedAt": "2026-11-07",
+   "changeType": "price",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F208",
+   "claim": "遊び屋的冬季熱氣球自由飛行 12 月 10 日到 3 月 10 日、7:00～10:30（依積雪變動），有 20 分與 30 分航程。",
+   "quote": "20分フライトと30分フライトがあります。",
+   "sourceUrl": "https://asobiya.jp/winter/",
+   "checkedAt": "2026-11-07",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-10-31"
+  },
+  {
+   "factId": "F209",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "富良野起司工房入場是否免費官方未寫（觀光協會入場料欄空白）。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=69",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F210",
+   "kind": "gap",
+   "gapKind": "no-source",
+   "claim": "「ぶどう果汁工場」：官網只寫平成元年完工，未見對外開放參觀或販售的官方頁面。",
+   "sourceUrl": "https://www.furanowine.jp/about.html",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F211",
+   "kind": "gap",
+   "gapKind": "conflicting",
+   "claim": "五郎的石屋從麓郷巴士站步行：景點頁寫 40 分，FAQ 寫 70 分。",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2027-03-15"
+  },
+  {
+   "factId": "F212",
+   "kind": "gap",
+   "gapKind": "conflicting",
+   "claim": "麓郷之森冬季封閉到「4月下旬」或「4月中旬」，同一頁兩處寫法不一。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=404",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2027-03-15"
+  },
+  {
+   "factId": "F213",
+   "kind": "gap",
+   "gapKind": "unreadable",
+   "claim": "富良野市博物館官網的開館資訊是圖片，未讀到門票。",
+   "sourceUrl": "http://furano.sub.jp/",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F214",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "道之驛南富良野冬季開館時間：第三方網站寫 10:00，官方北海道道之驛頁寫 9:00；以官方為準。",
+   "sourceUrl": "https://hokkaido-michinoeki.jp/michinoeki/222/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F215",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "遊び屋冬季熱氣球價格與集合地點官網冬季頁未列。",
+   "sourceUrl": "https://asobiya.jp/winter/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F216",
+   "kind": "gap",
+   "gapKind": "not-researched",
+   "claim": "金山湖薰衣草園的官方花期與管理單位資訊（南富良野町公所頁）未查到。",
+   "sourceUrl": "https://www.minamifurano.jp/tourism.html",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F217",
+   "claim": "富良野蛋包咖哩（富良野オムカレー）的規則共6條：第1條米用富良野產並在飯上下工夫",
+   "quote": "第１条　お米は富良野産を使い、ライスに工夫を凝らす",
+   "sourceUrl": "https://furano.my.canva.site/omu-curry",
+   "checkedAt": "2026-11-07",
+   "condition": "富良野オムカレー推進協議會官方網站（furano-omucurry.com 轉址至此），以瀏覽器讀取",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F218",
+   "claim": "第2條：蛋原則上用北海道產（原本是富良野產，因富良野大西養雞場9月30日關閉而改為北海道產），蛋包咖哩正中央要插旗子",
+   "quote": "第２条　卵は原則 北海道産を使い、オムカレーの中央に旗をたてる",
+   "sourceUrl": "https://furano.my.canva.site/omu-curry",
+   "checkedAt": "2026-11-07",
+   "condition": "更新履歷寫「2027.10.1」，應為網站筆誤（研究日 2026-11-07），寫作時不寫日期；更新履歷原文「さくら卵の富良野・大西養鶏場が 9月30日を持ちまして閉所」",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F219",
+   "claim": "第3條：使用富良野產的起司（奶油）或葡萄酒；第4條：蔬菜、肉、福神漬（醃菜）也講究富良野產或北海道產",
+   "quote": "第３条　富良野産の「チーズ（バター）」もしくは「ワイン」を使用する 第４条　野菜や肉、福神漬（ピクルス）なども富良野産・北海道産にこだわる",
+   "sourceUrl": "https://furano.my.canva.site/omu-curry",
+   "checkedAt": "2026-11-07",
+   "condition": "推進協議會官方規則",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F220",
+   "claim": "第5條：附一道講究富良野食材的小菜和「富良野牛奶（ふらの牛乳）」；第6條：價格在未稅1,500日圓以內（2024年4月修改）",
+   "quote": "第５条　富良野産の食材にこだわった一品と「ふらの牛乳」をつける 第６条　料金は税抜１,5００円以内（２０２４年４月変更）で提供する",
+   "sourceUrl": "https://furano.my.canva.site/omu-curry",
+   "checkedAt": "2026-11-07",
+   "condition": "推進協議會官方規則",
+   "changeType": "price",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F221",
+   "claim": "官方網站列出的富良野蛋包咖哩提供店有5家：燻煙工房（くんえん工房）、小木屋咖啡ふらわ（小さなログカフェ ふらわ）、鐵板・大阪燒まさ屋、山香食堂、富良野街中食堂（富良野まちなか食堂），含稅價格依序為1,320、1,600、1,650、1,000、1,650日圓",
+   "quote": "くんえん工房 小さなログカフェ　ふらわ てっぱん・お好み焼　まさ屋 山香食堂 富良野まちなか食堂 ￥1,320 ￥1,600 ￥1,650 ￥1,000 ￥1,650",
+   "sourceUrl": "https://furano.my.canva.site/omu-curry",
+   "checkedAt": "2026-11-07",
+   "condition": "「提供店値段表」，家數為表上店名計數；觀光協會 Furano Marche 2 頁另寫「富良野オムカレー加盟店（笑楽亭）」，與官方5家名單不一致，以推進協議會為準",
+   "changeType": "price",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F222",
+   "claim": "燻煙工房（くんえん工房）：富良野市朝日町4-14，JR富良野站步行4分，11:00～15:00、17:00～21:00（最後點餐20:30），週四公休，18席",
+   "quote": "営業時間　11：00～15：00　　木曜定休 　　　　　17：00～21：00（L.O.20:30）",
+   "sourceUrl": "https://furano.my.canva.site/omu-curry",
+   "checkedAt": "2026-11-07",
+   "condition": "推進協議會官網的店家資訊；地址原文「富良野市朝日町４番１４号 JR富良野駅より徒歩４分」",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F223",
+   "claim": "小木屋咖啡ふらわ：富良野市山部中町2-2，JR山部站步行1分；夏季（4～10月）10:00～17:00，冬季（11～3月）10:30～15:30，週二公休（遇假日照常營業）",
+   "quote": "営業時間　夏季（４～10月）10：00～17：00　 　　　　　冬季（11～3月）10：30～15：30　 　　　　　火曜定休※祝日の場合は営業",
+   "sourceUrl": "https://furano.my.canva.site/omu-curry",
+   "checkedAt": "2026-11-07",
+   "condition": "推進協議會官網的店家資訊；在山部地區，不在富良野站周邊",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F224",
+   "claim": "鐵板・大阪燒まさ屋：富良野市日之出町11-15，JR富良野站步行5分，11:30～14:30、17:00～20:30，週四公休，35席",
+   "quote": "営業時間　11：30～14：30 　　　　　17：00～20：30　木曜定休",
+   "sourceUrl": "https://furano.my.canva.site/omu-curry",
+   "checkedAt": "2026-11-07",
+   "condition": "推進協議會官網；地址原文「富良野市日の出町11番15号 JR富良野駅より徒歩5分」",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F225",
+   "claim": "山香食堂：富良野市綠町9-20，JR富良野站開車5分，11:00～14:00，每月第3個週六與每週日公休，蛋包咖哩含稅1,000日圓",
+   "quote": "営業時間　11：00～14：00　 　　　　　　　　　第３土曜日、日曜定休",
+   "sourceUrl": "https://furano.my.canva.site/omu-curry",
+   "checkedAt": "2026-11-07",
+   "condition": "推進協議會官網；地址原文「富良野市緑町9番20号 JR富良野駅より車で5分」",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F226",
+   "claim": "富良野街中食堂：在 Furano Marche 2（富良野市幸町8-5）內，JR富良野站步行5分；11:00～14:30、17:00～19:30，黃金週等連假與7、8月不休息連續營業；原則無休，4月與10月週三公休",
+   "quote": "営業時間　11:00～14:30 　　　　　17:00〜19:30 ※GW等の連休、7・8月は通し営業 定休日：無休　※４・１０月は水曜日",
+   "sourceUrl": "https://furano.my.canva.site/omu-curry",
+   "checkedAt": "2026-11-07",
+   "condition": "推進協議會官網",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F227",
+   "claim": "唯我獨尊（咖哩老店）：富良野市日之出町11-8；週二到週五11:00～15:30（最後點餐15:00）、17:00～21:00（最後點餐20:30）；週六日、假日、黃金週、7月、8月11:00～21:00連續營業；週一公休（遇假日改隔天）",
+   "quote": "火～金　11:00～15:30（ラストオーダー15:00） 　　　　17:00～21:00（ラストオーダー20:30） 土.日.祝.GW.7月.8月　 　　　　11:00～21:00（ラストオーダー 20:30） 定休日 月曜日（祝日の場合は翌日）",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=157",
+   "checkedAt": "2026-11-07",
+   "condition": "富良野觀光協會店家頁；店家官網 doxon.jp 編碼無法讀取，未與官網交叉核對",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F228",
+   "claim": "唯我獨尊的咖哩用慢炒的蔬菜加29種香料，另有自製法蘭克福香腸",
+   "quote": "じっくり炒めた野菜に29種類のスパイスを加えたカレーと自家製のフランクフルト",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=157",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會店家介紹",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F229",
+   "claim": "Tabelog 咖哩 EAST 百名店 2026 有兩家富良野市的店：唯我獨尊、ふらのや（カレーのふらのや，初次入選）",
+   "quote": "唯我独尊 北海道 富良野市 … 初選出 ふらのや 北海道 富良野市",
+   "sourceUrl": "https://award.tabelog.com/hyakumeiten/curry_east/2026",
+   "checkedAt": "2026-11-07",
+   "condition": "發表日 2026年6月9日；只作榜單事實；quote 為頁面清單欄位摘錄",
+   "changeType": "popularity",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F230",
+   "claim": "Tabelog 拉麵 HOKKAIDO 百名店 2025 與洋食 EAST 百名店 2025 都沒有富良野市的店",
+   "quote": "食べログ ラーメン HOKKAIDO 百名店 2025",
+   "sourceUrl": "https://award.tabelog.com/hyakumeiten/ramen_hokkaido/2025",
+   "checkedAt": "2026-11-07",
+   "condition": "頁面全文搜尋「富良野」0筆（quote 只是頁面標題）；拉麵 HOKKAIDO 發表日 2025年12月2日；洋食 EAST 2025（https://award.tabelog.com/hyakumeiten/yoshoku_east/2025，發表日 2025年6月24日）同樣0筆；拉麵 2026 版尚未發表（404）",
+   "changeType": "popularity",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F231",
+   "claim": "カレーのふらのや：富良野市彌生町1-46，在富良野市公所旁，有湯咖哩與一般咖哩",
+   "quote": "富良野市役所そばにあるカレーのお店です。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=361",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會頁沒有營業時間",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F232",
+   "claim": "富良野とみ川（拉麵）：在麓鄉（富良野市麓郷市街地の5），自家製粉、自家製麵；平日11:00～15:00，週六日與假日11:00～16:00，週三公休",
+   "quote": "平日 AM11:00～PM3:00 土・日・祝日 AM11:00～PM4:00 定休日 水曜日",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=184",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會店家頁；在麓鄉地區，不在車站周邊",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F233",
+   "claim": "富良野とみ川在《米其林指南北海道》2012年版與2017年版獲得必比登推介",
+   "quote": "「ミシュランガイド北海道2012.2017」にて、味とコストパフォーマンス両方の評価から、ビブグルマンを連続受賞しています。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=184",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會轉述，未與米其林官方交叉核對",
+   "changeType": "popularity",
+   "nextCheckAt": "2027-11-07"
+  },
+  {
+   "factId": "F234",
+   "claim": "富川製麵所（拉麵，與とみ川同系）：富良野市日之出町12-22；平日11:00～15:00、17:00～20:00（最後點餐19:45），週六日與假日11:00～20:00（最後點餐19:45），週三公休；推薦濃味噌拉麵",
+   "quote": "平日 AM11:00～PM3:00 PM5:00～PM8:00（ラストオーダー PM7:45） 土・日・祝日 AM11:00～PM8:00（ラストオーダー PM7:45） 定休日 水曜日",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=185",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會店家頁",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F235",
+   "claim": "小羊之丘成吉思汗富良野店（ひつじの丘ジンギスカン富良野店）：富良野市花園町1-3，JR富良野站開車5分；營業期間10/17～10/31與12/19～2/28，晚餐兩個時段17:00～19:00、19:00～21:00（最後點餐20:15），週一、週二公休",
+   "quote": "富良野店営業期間 10/17～10/31 & 12/19～2/28",
+   "sourceUrl": "https://www.hitsujinooka.com/%E8%A4%87%E8%A3%BD-%E6%9C%AC%E5%BA%97-home",
+   "checkedAt": "2026-11-07",
+   "condition": "店家官網，頁面沒寫年度，推定為2026-27冬季；時段原文「Dinner① 17:00 ～ 19:00 Dinner② 19:00 ～ 21:00 (LO20:15)」「定休日　月曜日 火曜日」；觀光協會頁（spot_D.php?id=623）是2024年度舊資訊（含午餐），以官網為準",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F236",
+   "claim": "小羊之丘富良野店有薩福克羊肉與出生3個月的小羔羊（ミルクラム）成吉思汗烤肉",
+   "quote": "生後３か月の子羊肉、ミルクラムジンギスカンは、これ以上やわらかいお肉はないと言っていいほど。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=623",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會店家介紹",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F237",
+   "claim": "熊啄木鳥（くまげら）：富良野市日之出町3-22，JR富良野站步行3分，11:30～21:30（最後點餐21:00），週三公休；有山賊鍋（蝦夷鹿、鴨、雞肉、味噌口味）與起司豆腐",
+   "quote": "AM11:30～PM9:30(Lo9:00） 定休日 水曜日",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=152",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會店家頁；未與店家官網交叉核對",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F238",
+   "claim": "熊啄木鳥是在連續劇《來自北國》第一次外景拍攝期間開業的店",
+   "quote": "「北の国から」の最初のロケ中に開業した店",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=152",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會介紹",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F239",
+   "claim": "Furano Marche（フラノマルシェ）：富良野市幸町13-1；2026年度6/20～8/31營業10:00～19:00，其他期間10:00～18:00；2026年度休館日為11/9～11/13與12/31、1/1",
+   "quote": "2026年度 6/20(土) ～8/31(月) 10:00～19:00 ※上記以外の期間 10:00～18:00 2026年度休館日 11/9～11/13 12/31＆ 1/1",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=291",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會頁；Marche 官網 https://marche.furano.jp/ 也寫「2026年11月9〜13日は全館休業」。維修休館屬短期，不寫進文章",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-04-30"
+  },
+  {
+   "factId": "F240",
+   "claim": "Furano Marche 由4個設施圍著廣場：甜點與麵包的サボール、約2000種伴手禮的アルジャン、外帶店集合的フラディッシュ、JA富良野直營農產品直賣所オガール",
+   "quote": "約2000種類もの富良野土産が揃う『アルジャン』。 地元食材を使ったオリジナルメニューのテイクアウトショップが集まる『フラディッシュ』。 JAふらの直営の農産物と加工食品の直売所『オガール』。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=291",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會介紹",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F241",
+   "claim": "Furano Marche 的農產品直賣所オガール在11月到3月冬季每週二公休（週二遇假日改週三）",
+   "quote": "☆11月～3月の冬期間、農産物直売所オガールは火曜定休となります。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=291",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會頁；同頁「火曜が祝日の場合は水曜休業に振替いたします」",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-10-31"
+  },
+  {
+   "factId": "F242",
+   "claim": "Furano Marche 2 新增11家店，包括外帶店、農家直送蔬菜、咖啡店、拉麵店、洋食店",
+   "quote": "新たに11店舗が加わり、フラノマルシェの魅力を一層高めた「フラノマルシェ2」。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=535",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會介紹",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F243",
+   "claim": "富良野哈密瓜（JA富良野）從5月中旬到10月中旬長期出貨，現在以紅肉哈密瓜為主",
+   "quote": "メロンは5月中旬から10月中旬まで、ロングランで出荷しています。",
+   "sourceUrl": "https://www.ja-furano.or.jp/products/melon/",
+   "checkedAt": "2026-11-07",
+   "condition": "JA富良野官網出貨期間；同頁「現在は赤肉メロンが主流になっています」",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F244",
+   "claim": "富良野哈密瓜的栽培從1970年代水田轉作時開始，起源於富良野市山部與上五區；2018年9月起統一以「富良野メロン」品牌販售",
+   "quote": "平成30年9月より一部品種を皮切りに「富良野メロン」として同一ブランドで販売することになりました。",
+   "sourceUrl": "https://www.ja-furano.or.jp/products/melon/",
+   "checkedAt": "2026-11-07",
+   "condition": "JA富良野官網",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F245",
+   "claim": "吉田農園（富良野市山部東13線12番地，富良野站開車15分）：7:00～18:00，6月到9月無休，10月到5月休業；有把哈密瓜剖半放霜淇淋的「ふらのの夢」",
+   "quote": "AM7:00～PM6:00 定休日 無休（6月～9月まで。10月～5月は休業）",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=114",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會頁",
+   "changeType": "seasonal-opening",
+   "nextCheckAt": "2027-05-31"
+  },
+  {
+   "factId": "F246",
+   "claim": "富良野觀光協會的美食分類頁（含咖哩・富良野蛋包咖哩、拉麵・蕎麥・食堂、燒肉・成吉思汗等分類）",
+   "quote": "グルメ・ショッピング｜ふらの観光協会公式サイト",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_L.php?kid1=3",
+   "checkedAt": "2026-11-07",
+   "condition": "咖哩分類 spot_S.php?kid1=3&kid2=12&kid3=47；拉麵 kid3=48；燒肉・成吉思汗 kid3=46",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F247",
+   "kind": "gap",
+   "gapKind": "no-source",
+   "claim": "拉麵店「彩玄」找不到店家官網、官方社群或觀光協會頁，無法確認是否在富良野市營業",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_search.php?sh_text=%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F248",
+   "kind": "gap",
+   "gapKind": "unreadable",
+   "claim": "とみたメロンハウス（中富良野町，nakafurano）官網回 403，營業期間各第三方網站互相矛盾（6～9月或5月～10月中旬），未取得官方數字",
+   "sourceUrl": "https://www.tomita-m.co.jp/shop/",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2027-04-30"
+  },
+  {
+   "factId": "F249",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "富良野市內的哈密瓜吃到飽觀光農園沒找到官方資料；觀光協會只列直賣農園（吉田農園、佐藤農園）",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_search.php?sh_text=%E3%83%A1%E3%83%AD%E3%83%B3",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F250",
+   "kind": "gap",
+   "gapKind": "unreadable",
+   "claim": "唯我獨尊店家官網 doxon.jp 編碼無法解讀，營業時間只有觀光協會一個來源",
+   "sourceUrl": "http://www.doxon.jp/",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F251",
+   "claim": "北海肚臍祭每年固定 7 月 28、29 日舉行；2027 年也是 7 月 28～29 日。",
+   "quote": "■日時　2027年7月28日～29日開催",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=450",
+   "checkedAt": "2026-11-07",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-04-28"
+  },
+  {
+   "factId": "F252",
+   "claim": "北海肚臍祭因富良野是北海道地理中心（北海道的肚臍）而起，在肚子上畫臉、頭戴大斗笠跳舞。",
+   "quote": "お腹を顔に見立てて絵を描き、頭を大きな笠で隠して踊る愉快なお祭りです。",
+   "sourceUrl": "https://hesomatsuri.com/guide",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F253",
+   "claim": "肚子上畫的臉叫「図腹」，標準跳法叫「正調図腹踊り」，另有浴衣舞。",
+   "quote": "伝統あるへそ踊りのもっともスタンダードなかたちがこの「正調図腹踊り」です。",
+   "sourceUrl": "https://hesomatsuri.com/howto",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F254",
+   "claim": "北海肚臍祭 1969 年開始，個人可臨時加入參加；會場在富良野市新相生通特設會場，主辦是北海へそ祭り実行委員会（富良野市商工觀光課）。",
+   "quote": "■場所　富良野市新相生通り特設会場",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=450",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F255",
+   "claim": "2026 年第 58 屆：肚臍舞大會兩天都是 19:00～20:00，地點站前通；特產市 28 日 15:00～21:00、29 日 10:00～21:00。",
+   "quote": "時間：28日19時～20時/29日19時～20時",
+   "sourceUrl": "https://hesomatsuri.com/program",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-04-28"
+  },
+  {
+   "factId": "F256",
+   "claim": "肚臍祭會場在 JR 富良野站周邊大範圍，下車走路約 2 分；停車場在富良野小學校、圖書館、運動中心、市公所第 2 停車場。",
+   "quote": "富良野北海へそ祭りはJR富良野駅周辺の広範囲で開催されます。",
+   "sourceUrl": "https://hesomatsuri.com/map",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F257",
+   "claim": "富良野葡萄酒葡萄祭 2026 年 9 月 6 日（日）10:00～15:00，雨天照常，地點清水山富良野葡萄酒廠下方停車場，入場免費。",
+   "quote": "【入場料】無料",
+   "sourceUrl": "https://www.furanowine.jp/news.html?id=28c91cfd616464edce0000d3",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-06-06"
+  },
+  {
+   "factId": "F258",
+   "claim": "葡萄祭請自備葡萄酒杯，沒帶可用 500 日圓買；富良野地區 4 家酒廠出攤，也有葡萄汁。",
+   "quote": "お持ちいただけない方には500円でワイングラスを販売",
+   "sourceUrl": "https://www.furanowine.jp/news.html?id=28c91cfd616464edce0000d3",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F259",
+   "claim": "第 1 屆「ふらのワイン・ぶどう祭り」1987 年舉辦（「富良野ワインまつり」即同一活動）。",
+   "quote": "第1回「ふらのワイン・ぶどう祭り」開催。",
+   "sourceUrl": "https://www.furanowine.jp/about.html",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F260",
+   "claim": "富良野煙火大會 2026 年 8 月 8 日（六）在空知川河川運動公園，19:30 開始；2012 年由農商工青年復辦。",
+   "quote": "※花火は19:30より",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=466",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-05-08"
+  },
+  {
+   "factId": "F261",
+   "claim": "金山湖湖水祭 2026 年 7 月 25 日（六）第 55 屆，煙火約 2,000 發，橫跨湖面 700 公尺的「尼加拉瀑布」煙火，20:00 開始。",
+   "quote": "湖畔から打ち上げられる花火は約2,000発。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=462",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-04-25"
+  },
+  {
+   "factId": "F262",
+   "claim": "富良野起司祭 2026 年 9 月 27 日在富良野起司工房舉辦，起司工房商店除葡萄酒外全品 9 折。",
+   "quote": "売店ではワインを除く全商品が10％オフで販売される",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=470",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-06-27"
+  },
+  {
+   "factId": "F263",
+   "claim": "富良野大收穫祭 2026 年 10 月 4 日在撿來的家舉辦，當天撿來的家免費開放。",
+   "quote": "（当日は無料開放いたします）",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=488",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-07-04"
+  },
+  {
+   "factId": "F264",
+   "claim": "富良野歡寒村 2026 年 12 月 23 日到 2027 年 2 月 28 日，16:00～20:00（最後入場 19:30），在新富良野王子飯店園區（精靈露台旁）；內容為去年資料，屬預定。",
+   "quote": "2026年12月23日(水)～ 2027年2月28日(日)",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=477",
+   "checkedAt": "2026-11-07",
+   "condition": "2026–27 冬季；預定",
+   "changeType": "annual-event",
+   "nextCheckAt": "2026-11-30"
+  },
+  {
+   "factId": "F265",
+   "claim": "歡寒村入場每人 500 日圓（含一次雪地滑胎），小學生以下免費（須家長陪同），第二次起每次 200 日圓，只收現金；燈飾超過 6 萬顆。",
+   "quote": "1人500円（小学生以下無料、但し保護者同伴に限ります）",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=477",
+   "checkedAt": "2026-11-07",
+   "condition": "2026–27 冬季；預定",
+   "changeType": "price",
+   "nextCheckAt": "2026-11-30"
+  },
+  {
+   "factId": "F266",
+   "claim": "歡寒村狗拉雪橇 16:00～18:00，只在週五、六、日，另收費。",
+   "quote": "・犬ぞり　16:00～18:00　※金・土・日のみ",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=477",
+   "checkedAt": "2026-11-07",
+   "condition": "預定",
+   "changeType": "annual-event",
+   "nextCheckAt": "2026-11-30"
+  },
+  {
+   "factId": "F267",
+   "claim": "富良野 bonchi powder 祭（舊富良野滑雪祭）2027 年 1 月 30～31 日（預定），在富良野滑雪場，有雪上泛舟競速、第一晚煙火與彌榮太鼓。",
+   "quote": "2027年1月30日(土)～1月31日(日)ー予定ー",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=485",
+   "checkedAt": "2026-11-07",
+   "condition": "預定",
+   "changeType": "annual-event",
+   "nextCheckAt": "2026-11-30"
+  },
+  {
+   "factId": "F268",
+   "claim": "山部雪祭（やまべゆきんこ祭り）例年 2 月上旬，10:00～14:00（預定），在富良野市生涯學習中心，有雪地摩托車、雪滑梯、尋寶。",
+   "quote": "例年2月上旬に開催される、富良野山部地区の冬を彩るお祭りです。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=490",
+   "checkedAt": "2026-11-07",
+   "changeType": "annual-event",
+   "nextCheckAt": "2026-11-30"
+  },
+  {
+   "factId": "F269",
+   "claim": "新富良野王子飯店滑雪場每年 12 月 31 日跨年倒數，0 點放煙火。",
+   "quote": "午前0時を迎えると同時に花火が打ち上がります。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=481",
+   "checkedAt": "2026-11-07",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-09-30"
+  },
+  {
+   "factId": "F270",
+   "kind": "gap",
+   "gapKind": "not-announced",
+   "claim": "北海肚臍祭 2027 年節目表（時間、地點細節）尚未公布，只知日期。",
+   "sourceUrl": "https://hesomatsuri.com/program",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2027-05-31"
+  },
+  {
+   "factId": "F271",
+   "kind": "gap",
+   "gapKind": "not-announced",
+   "claim": "富良野葡萄祭、煙火大會、起司祭 2027 年日期未公布。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=468",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2027-05-31"
+  },
+  {
+   "factId": "F272",
+   "kind": "gap",
+   "gapKind": "no-source",
+   "claim": "「北海へそ祭り冬」「ふらの雪まつり」：觀光協會活動清單與 FAQ 冬季活動只列歡寒村、bonchi powder、山部雪祭，查無這兩個名稱。",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F273",
+   "kind": "gap",
+   "gapKind": "not-announced",
+   "claim": "歡寒村 2026–27 實際內容與價格官方標明是去年資料，正式內容未發表。",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=477",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2026-12-15"
+  },
+  {
+   "factId": "F274",
+   "claim": "富良野（氣象廳 AMeDAS，上川地方，觀測點編號0021，海拔174公尺）1月平年值：平均氣溫-8.3°C，日最高-3.7°C，日最低-14.4°C，降水量44.3mm，降雪量合計145cm，最深積雪64cm",
+   "quote": "1月 44.3 -8.3 -3.7 -14.4 1.3 64.3 145 64",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "表格欄位依序為 降水量、平均気温、日最高気温、日最低気温、平均風速、日照時間、降雪の深さ合計、最深積雪；統計期間1991～2020",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F275",
+   "claim": "富良野2月平年值：平均氣溫-7.4°C，日最高-2.3°C，日最低-14.0°C，降水量36.5mm，降雪量121cm，最深積雪73cm",
+   "quote": "2月 36.5 -7.4 -2.3 -14.0 1.5 78.5 121 73",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F276",
+   "claim": "富良野3月平年值：平均氣溫-2.2°C，日最高2.7°C，日最低-7.8°C，降水量49.8mm，降雪量110cm，最深積雪71cm",
+   "quote": "3月 49.8 -2.2 2.7 -7.8 1.9 124.0 110 71",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F277",
+   "claim": "富良野4月平年值：平均氣溫5.3°C，日最高10.9°C，日最低-0.2°C，降水量55.4mm，降雪量22cm，最深積雪23cm",
+   "quote": "4月 55.4 5.3 10.9 -0.2 2.3 159.9 22 23",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F278",
+   "claim": "富良野5月平年值：平均氣溫12.1°C，日最高18.4°C，日最低6.0°C，降水量67.5mm，平年無降雪",
+   "quote": "5月 67.5 12.1 18.4 6.0 2.4 190.5 0 0",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F279",
+   "claim": "富良野6月平年值：平均氣溫16.8°C，日最高22.9°C，日最低11.5°C，降水量64.5mm",
+   "quote": "6月 64.5 16.8 22.9 11.5 2.0 176.8 0 0",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F280",
+   "claim": "富良野7月平年值：平均氣溫20.6°C，日最高26.2°C，日最低16.0°C，降水量116.0mm",
+   "quote": "7月 116.0 20.6 26.2 16.0 1.8 171.8 0 0",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F281",
+   "claim": "富良野8月平年值：平均氣溫20.8°C，日最高26.3°C，日最低16.3°C，降水量168.6mm（全年最多）",
+   "quote": "8月 168.6 20.8 26.3 16.3 1.7 154.9 0 0",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F282",
+   "claim": "富良野9月平年值：平均氣溫16.1°C，日最高21.9°C，日最低11.1°C，降水量147.3mm",
+   "quote": "9月 147.3 16.1 21.9 11.1 1.7 140.2 0 0",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F283",
+   "claim": "富良野10月平年值：平均氣溫9.2°C，日最高14.9°C，日最低4.1°C，降水量106.8mm，降雪量2cm，最深積雪2cm",
+   "quote": "10月 106.8 9.2 14.9 4.1 1.7 121.9 2 2",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F284",
+   "claim": "富良野11月平年值：平均氣溫2.1°C，日最高6.4°C，日最低-2.1°C，降水量104.2mm，降雪量72cm，最深積雪23cm",
+   "quote": "11月 104.2 2.1 6.4 -2.1 1.7 67.7 72 23",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F285",
+   "claim": "富良野12月平年值：平均氣溫-5.1°C，日最高-1.2°C，日最低-10.2°C，降水量71.2mm，降雪量159cm（全年最多），最深積雪46cm",
+   "quote": "12月 71.2 -5.1 -1.2 -10.2 1.5 45.7 159 46",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F286",
+   "claim": "富良野全年平年值：平均氣溫6.7°C，年降水量1032.1mm，年降雪量合計628cm，年最深積雪78cm",
+   "quote": "年 1032.1 6.7 12.0 1.4 1.8 1496.2 628 78",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "同上表格，1991～2020平年值",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F287",
+   "claim": "富良野觀測史上最低氣溫是1977年1月29日的-34.5°C；近年也有2020年2月9日-31.9°C、2023年1月30日-31.8°C",
+   "quote": "日最低気温の低い方から (℃) -34.5 (1977/1/29)",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "觀測史上1～10位表格，統計期間1976/4～2026/11；同列第6、7位為「-31.9 (2020/2/9) -31.8 (2023/1/30)」",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F288",
+   "claim": "富良野觀測史上最高氣溫是2021年8月7日的38.5°C",
+   "quote": "日最高気温の高い方から (℃) 38.5 (2021/8/7)",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "觀測史上1～10位表格，統計期間1976/4～2026/11",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F289",
+   "claim": "富良野觀測史上月最深積雪最大是119cm（2021年3月2日與1999年3月6日）",
+   "quote": "月最深積雪の大きい方から (cm) 119 (2021/3/2) 119 (1999/3/6)",
+   "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+   "checkedAt": "2026-11-07",
+   "condition": "觀測史上1～10位表格，統計期間1979/11～2026/10",
+   "changeType": "climate-normal",
+   "nextCheckAt": "2031-05-31"
+  },
+  {
+   "factId": "F290",
+   "claim": "富良野地區5月下旬開始有花：5月葡萄風信子與鬱金香，6月藍色鼠尾草與罌粟，6月下旬早開的薰衣草開始盛開，7月中旬進入最盛期，8月向日葵與波斯菊，9到10月鼠尾草、雞冠花、萬壽菊",
+   "quote": "6月下旬からは早咲きのラベンダーが見頃を迎え、7月中旬からは最盛期を迎えます。",
+   "sourceUrl": "https://www.furanotourism.com/jp/bigkey/flower/",
+   "checkedAt": "2026-11-07",
+   "condition": "富良野觀光協會花卉頁，富良野地區（含周邊町）",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-05-31"
+  },
+  {
+   "factId": "F291",
+   "claim": "富良野觀光協會寫薰衣草的觀賞期是7月到8月",
+   "quote": "7月～8月が見頃。",
+   "sourceUrl": "https://www.furanotourism.com/jp/bigkey/flower/lavender.php",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會薰衣草頁；與花卉頁「6月下旬早咲、7月中旬最盛期」並用",
+   "changeType": "annual-event",
+   "nextCheckAt": "2027-05-31"
+  },
+  {
+   "factId": "F292",
+   "claim": "從美瑛町經上富良野町、中富良野町、富良野市、南富良野町到占冠村的國道237號沿線花田多，暱稱「花人街道」",
+   "quote": "国道237号線沿線は「花人街道」の愛称で親しまれ",
+   "sourceUrl": "https://www.furanotourism.com/jp/bigkey/flower/",
+   "checkedAt": "2026-11-07",
+   "condition": "觀光協會花卉頁",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F293",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "富良野觀光協會沒有紅葉觀賞期與初雪時期的官方頁；AMeDAS 平年值頁沒有初雪日",
+   "sourceUrl": "https://www.furanotourism.com/jp/bigkey/seasons/",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F294",
+   "claim": "富良野市在上川管內南部、北海道幾乎正中央，是富良野盆地的中心都市；東西 32.8 公里、南北 27.3 公里。",
+   "quote": "北海道のほぼ中央にあり富良野盆地の中心都市です。",
+   "sourceUrl": "https://www.city.furano.hokkaido.jp/life/docs/2013062500027.html",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F295",
+   "claim": "富良野市總面積 600.71 平方公里（2026 年 1 月 1 日），市域約 7 成是山林。",
+   "quote": "総面積は、600.71平方キロメートル（令和8年1月1日現在）",
+   "sourceUrl": "https://www.city.furano.hokkaido.jp/life/docs/2013062500027.html",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F296",
+   "claim": "富良野市國勢調查人口 2020 年 21,131 人，高峰是 1965 年的 36,627 人。",
+   "quote": "令和2年には21,131人にまで減少しています。",
+   "sourceUrl": "https://www.city.furano.hokkaido.jp/life/docs/2013062500027.html",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F297",
+   "claim": "富良野屬大陸性氣候，降雪期 11 月中旬到 4 月上旬，積雪約 1 公尺；2025 年年均溫 8.4 度、最高 36.0 度、最低零下 22.0 度。",
+   "quote": "降雪期間は11月中旬から4月上旬まで",
+   "sourceUrl": "https://www.city.furano.hokkaido.jp/life/docs/2013062500027.html",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F298",
+   "claim": "富良野地名來自愛奴語「フラヌイ」（有氣味的地方），據說和十勝岳的硫磺味有關。",
+   "quote": "富良野はアイヌ語のフラヌイ（フーラヌイ　ニオイのするところ）に由来し",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F299",
+   "claim": "JR 富良野站旁觀光案內所（ふらの観光協会經營）營業 9:00～18:00，可預約住宿、體驗、觀光計程車，也可暫存行李。",
+   "quote": "荷物の一時預かりも可能ですので",
+   "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=406",
+   "checkedAt": "2026-11-07",
+   "changeType": "shop-hours",
+   "nextCheckAt": "2027-05-07"
+  },
+  {
+   "factId": "F300",
+   "claim": "富良野薰衣草例年 6 月下旬開始上色、7 月上旬到中旬最盛；麓郷展望台的晚開品種到 7 月下旬；8 月多數已剪穗。",
+   "quote": "７月上旬から中旬に見頃を迎えます。",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F301",
+   "claim": "富良野櫻花例年 4 月下旬到 5 月上旬，名所為東大樹木園（山部）、麓郷街道（布部）、朝日之丘公園。",
+   "quote": "例年４月下旬から５月上旬が見頃となります。",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F302",
+   "claim": "富良野市區與麓郷紅葉例年 10 月上旬，11 月上旬落葉松轉黃；市區初雪例年 10 月下旬到 11 月中旬，11 月下旬多已積雪。",
+   "quote": "富良野市街地や麓郷地区の見頃は１０月上旬あたりが例年の紅葉状況です。",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F303",
+   "claim": "富良野農產旺季：哈密瓜 7～9 月、櫻桃 7 月中旬到 8 月中旬、玉米 7 月到 9 月上旬、馬鈴薯 9～10 月。",
+   "quote": "メロン（7月～9月）",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F304",
+   "claim": "富良野市公布熊出沒資訊：2026 年 10 月 14 日 17 時左右在東富丘目擊 1 頭（第 43 號）；市府請民眾不論有無出沒資訊都要注意，目擊時打 110 或通報市府。",
+   "quote": "出没情報の有無に関わらず、十分に注意してください。",
+   "sourceUrl": "https://www.city.furano.hokkaido.jp/life/docs/2021043000015.html",
+   "checkedAt": "2026-11-07",
+   "condition": "2026 年 10 月 15 日資料",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F305",
+   "claim": "富良野起司工房 2026 年 9 月 23 日也發出熊出沒注意公告。",
+   "quote": "熊出没注意！！",
+   "sourceUrl": "https://www.furano-cheese.jp/",
+   "checkedAt": "2026-11-07",
+   "changeType": "stable"
+  },
+  {
+   "factId": "F306",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "ふらの観光協会網站的「ご利用について」只有免責、Cookie 等說明，沒有照片轉載條件，也未見素材庫；照規則不可下載轉載。",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/information.php",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F307",
+   "kind": "gap",
+   "gapKind": "not-stated",
+   "claim": "富良野市官網未找到著作權或轉載規約頁（只有隱私權政策、動作環境）。",
+   "sourceUrl": "https://www.city.furano.hokkaido.jp/life/docs/2013062500027.html",
+   "checkedAt": "2026-11-07"
+  },
+  {
+   "factId": "F308",
+   "kind": "gap",
+   "gapKind": "conflicting",
+   "claim": "面積：市官網 600.71 km²（2026/1/1），觀光協會 FAQ 寫 600.73 km²；採市官網。",
+   "sourceUrl": "https://www.furanotourism.com/jp/static/faq.php",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2027-03-31"
+  },
+  {
+   "factId": "F309",
+   "claim": "2025-26 冬季（2025-12-01～2026-03-31）薰衣草號另開「特便」，只跑富良野站～新富良野王子大飯店區間，每天運行。",
+   "quote": "Lavender-Bus-Limited service Furano Stn  Shin Furano Prince Hotel Dates  Dec 1  Mar 31 Daily Service",
+   "sourceUrl": "https://www.furanotourism.com/spro_cms/up/20251104202205515_44621.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "富良野觀光協會 Furano Winter Bus Timetable 2025.12-2026.3（上一季資料；2026-27 季見 F312）",
+   "changeType": "timetable",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F310",
+   "claim": "2025-26 冬季另有「Furano Evening Shuttle Bus」，2025-12-19～2026-03-15 從新富良野王子大飯店經北之峰的飯店往富良野市區（へそ小路），新富良野王子大飯店 17:00、18:00、19:00 發，19:00 那班只開到 2/28；12/31～1/2 等日停駛，客滿不能上車。",
+   "quote": "Furano Evening Shuttle Bus  Shin Furano Prince Hotel  Furano Stn DatesDec 19  Mar 15｜*The 19:00 bus from Shin Furano Prince Hotel, only operates until 2/28.｜Not available if all seats are full.",
+   "sourceUrl": "https://www.furanotourism.com/spro_cms/up/20251104202205515_44621.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "上一季資料；停駛日在 PDF 中文字疊在一起，只確定年末年始停駛",
+   "changeType": "timetable",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F311",
+   "claim": "2025-26 冬季時刻表把薰衣草號、特便、御料線與 Evening Shuttle Bus 畫在同一張表上，北之峰一帶停「ホテルナトゥールヴァルト富良野」「ホテルベルヒルズ」「基線」「スキー場第2駐車場」，可用來在滑雪區與市區之間移動。",
+   "quote": "Resort Area  Furano Town Area  Lavender-Bus Goryo Line … K Hotel Bell Hills … 4 Ski-jyo Dai 2 Chushajo",
+   "sourceUrl": "https://www.furanotourism.com/spro_cms/up/20251104202205515_44621.pdf",
+   "checkedAt": "2026-11-07",
+   "condition": "上一季資料",
+   "changeType": "timetable",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F312",
+   "kind": "gap",
+   "gapKind": "not-announced",
+   "claim": "2026-27 冬季的富良野冬季巴士時刻表（薰衣草號特便、Evening Shuttle Bus）2026-11-07 還沒公布；ふらのバス的「ふらのくるる号」（2022 年冬季免費巡迴巴士，官方 YouTube 有介紹）2026-27 有沒有運行也沒查到官方公告。",
+   "sourceUrl": "https://www.furanobus.jp/",
+   "checkedAt": "2026-11-07",
+   "nextCheckAt": "2026-12-01"
+  },
+  {
+   "factId": "F313",
+   "claim": "ふらのバス麓郷線 2026 年 10 月 1 日改點，富良野站前往麓郷一天 4 班：8:20、13:05、16:25、18:50 發，終點麓郷 9:04、13:49、17:09、19:34 到（約 44 分）。",
+   "quote": "R 麓郷線 時刻表（2026年10月1日改正）｜富良野駅前 8:20 13:05 16:25 18:50｜麓郷 9:04 13:49 17:09 19:34",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年10月1日改正；途中停フラノ・マルシェ、布礼別学校前",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-09-01"
+  },
+  {
+   "factId": "F314",
+   "claim": "麓郷線從麓郷回富良野一天 4 班：麓郷 7:14、9:19、14:04、17:24 發，富良野站前 7:58、10:03、14:48、18:08 到；最後一班回程 17:24。",
+   "quote": "麓郷（発）→富良野（着）｜麓郷 7:14 9:19 14:04 17:24｜富良野駅前 7:58 10:03 14:48 18:08",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年10月1日改正",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-09-01"
+  },
+  {
+   "factId": "F315",
+   "claim": "ふらのバス麻町線（往鳥沼公園）富良野站前一天 3 班：11:15、16:15、17:40 發，「３号 鳥沼公園前」11:42、16:42、18:07 到；回程鳥沼公園前 7:32（週日假日停駛）、11:56、16:56、18:21 發。",
+   "quote": "A 麻町線 時刻表（2026年10月1日改正）｜富良野駅前 11:15 16:15 17:40｜３号 鳥沼公園前 11:42 16:42 18:07｜7:32※ 11:56 16:56 18:21",
+   "sourceUrl": "https://www.furanobus.jp/rosen/",
+   "checkedAt": "2026-11-07",
+   "condition": "2026年10月1日改正；※は日、祝祭日運休",
+   "changeType": "timetable",
+   "nextCheckAt": "2027-09-01"
+  }
+ ]
+}

@@ -169,3 +169,11 @@
 - 道北巴士 `dohokubus.com`（層雲峽 81 號、機場直達巴士、旭川端乘車處）：讀取工具與瀏覽器都連不上，層雲峽時刻表用 Internet Archive 存檔。
 - 旭川觀光コンベンション協會 `atca.jp`：資安維護暫停公開，重開日未定。
 - 旭川電氣軌道往東川的時刻表 PDF（圖片太小）、旭岳遊客中心的散策路與滑雪路線地圖 PDF（圖片）、大雪森のガーデン官網（維護中）、JR イン旭川官網（DNS 查不到）、東川ミーツ（驗證碼，不繞過）、Agoda 列表（要執行 JavaScript）。
+
+## 富良野・美瑛群（2026-11-07）
+
+- 選群報告：`next-group-2026-11-07.md`（自動完成紀錄 `autocomplete-2026-11-07.json`）。
+- 大綱：`hokkaido-furano-outline.json`（24 頁，含滑雪場例外頁）、白話摘要 `furano-outline-summary-2026-11-07.md`。
+- 地點事實表：`places/{biei,furano,nakafurano,kamifurano}/facts.json`；研究紀錄 `research/<地點>.json`。
+- 清單：`node content-planning/hokkaido/build-queue.mjs . furano`（已於 2026-11-07 排入 23 篇；滑雪場頁規格是 `defer`，Darren 核准後手動加進清單）。
+- 默許制：自動核准日 2026-11-10。

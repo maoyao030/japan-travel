@@ -3733,6 +3733,3087 @@
       "targetPath": "/places/asahikawa/hiking/",
       "travelGroupId": "hokkaido-asahikawa",
       "reason": "旭川市區沒有登山主題；嵐山與北邦野草園的散步路寫進旭川景點頁。"
+    },
+    {
+      "articleId": "furano-transport",
+      "priority": 22,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "transport",
+      "planningTitle": "札幌到富良野怎麼去，高速巴士、JR 與從旭川、新千歲的走法",
+      "primaryQuery": "札幌到富良野",
+      "secondaryQueries": [
+        "旭川到富良野",
+        "新千歲到富良野",
+        "富良野租車"
+      ],
+      "targetPath": "/places/furano/transport/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "札幌、新千歲機場、旭川、旭川機場到富良野的 JR、高速巴士、機場巴士與薰衣草號全線時刻，富良野線全線概況，富良野市內巴士、計程車、租車，往帶廣與南富良野。薰衣草特急與慢車號只摘要並連薰衣草季頁；旭川端乘車處連旭川交通頁；美瑛、中富良野、上富良野各站的細節在各地交通頁。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客從札幌、新千歲或旭川選好到富良野的交通，到了富良野知道怎麼移動。",
+        "primaryReaderOutcome": "讀完能比較巴士與 JR、選好班次，知道要不要預約、能不能刷 IC 卡、回程末班幾點。",
+        "mustAnswer": [
+          "札幌到富良野搭巴士還是 JR、要多久、多少錢",
+          "高速富良野號要不要預約、在哪搭",
+          "新千歲機場到富良野怎麼去",
+          "旭川到富良野 JR 時刻與車資",
+          "旭川機場到富良野的薰衣草號時刻與車資",
+          "富良野線能不能刷 IC 卡",
+          "慢車號與薰衣草特急還有沒有開",
+          "富良野市內怎麼移動",
+          "富良野租車能不能在旭川還車",
+          "富良野到帶廣、南富良野怎麼去"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭川站前バスタッチ各乘車處與旭川機場乘車處（旭川群已上線的負責，本群只摘要）",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "薰衣草特急的運行日與時刻、薰衣草花田臨時站、慢車號 2026 年已停駛",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野滑雪場的雪季、雪票、纜車、夜滑、租借、滑雪學校與到滑雪場的巴士、夏秋纜車",
+            "ownerArticleId": "furano-ski-resort",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "札幌到富良野",
+          "autocompleteInput": "札幌 到 富良野",
+          "suggestions": [
+            "札幌 到 富良野",
+            "札幌 到 富良野 交通",
+            "札幌 到 富良野 巴士",
+            "札幌 到 富良野 jr",
+            "札幌 到 富良野 一 日 遊",
+            "札幌 到 富良野 自駕",
+            "札幌 到 富良野 要 多久",
+            "札幌 到 富良野 休息 站"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：前幾名有時刻與票價，但沒同時比較 JR 經瀧川的轉車與末班；慢車號停駛多數沒更新。「富良野 交通」自動完成混有交通事故，主要查詢改用路線詞。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/furano/facts.json；content-planning/hokkaido/research/furano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "札幌→瀧川特急費用 1,680 與 2,450 日圓哪個是指定席（furano:F25），寫作前到 JR 北海道運賃頁確認",
+        "富良野線一人駕駛車廂的上下車與付款（furano:F20），讀 JR 北海道中文 FAQ",
+        "2026-27 冬季薰衣草號特便與 Evening Shuttle Bus（furano:F312），12 月初重查",
+        "高速富良野號能不能預約（furano:F39）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "biei-transport",
+      "priority": 23,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "transport",
+      "planningTitle": "旭川到美瑛怎麼去，JR 時刻、薰衣草號與美瑛站租車、包車",
+      "primaryQuery": "旭川到美瑛",
+      "secondaryQueries": [
+        "美瑛到富良野",
+        "美瑛到旭岳",
+        "美瑛冬天交通",
+        "美瑛租自行車"
+      ],
+      "targetPath": "/places/biei/transport/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-biei",
+      "contentBoundary": "旭川、旭川機場、札幌到美瑛的 JR、薰衣草號與道北巴士，美瑛站周邊的租車、計程車、觀光巴士與行李寄放，美瑛到富良野、旭岳、帶廣。往青池的道北巴士白金線只摘要並連青池頁；旭川站前乘車處只摘要並連旭川交通頁。",
+      "place": {
+        "nameZh": "美瑛",
+        "japaneseNames": [
+          "美瑛",
+          "美瑛町",
+          "美瑛駅",
+          "白金青い池",
+          "白金温泉",
+          "四季彩の丘",
+          "美馬牛"
+        ],
+        "japaneseSearchTerms": [
+          "美瑛 観光",
+          "美瑛 冬 車なし",
+          "青い池 冬 ライトアップ",
+          "青い池 アクセス",
+          "四季彩の丘 入場料",
+          "美瑛 コーンパン",
+          "美瑛から旭岳"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "furano",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "asahidake"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          6,
+          7,
+          8,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓不開車的旅客排好從旭川或機場到美瑛的班次，知道到了美瑛怎麼移動。",
+        "primaryReaderOutcome": "讀完能選好去程與回程的 JR 或巴士，決定在美瑛租自行車、包車還是搭觀光巴士。",
+        "mustAnswer": [
+          "旭川到美瑛搭 JR 多久、多少錢、幾點有車",
+          "哪幾班 JR 只到美瑛、不到富良野",
+          "旭川機場到美瑛怎麼去，薰衣草號在哪站下車",
+          "札幌到美瑛怎麼去",
+          "美瑛到富良野怎麼去",
+          "美瑛到旭岳有沒有巴士",
+          "美瑛站租自行車、電動自行車在哪裡",
+          "美瑛有沒有計程車、包車、觀光巴士，冬天怎麼辦",
+          "美瑛站行李寄放在哪裡",
+          "美瑛往帶廣有沒有巴士"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "札幌、新千歲機場、旭川機場到旭川市區的 JR、高速巴士、機場巴士（旭川群已上線的負責，本群只摘要）",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川站前バスタッチ各乘車處與旭川機場乘車處（旭川群已上線的負責，本群只摘要）",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "JR 富良野線全線概況：全是普通車、IC 卡不能用、只到美瑛的班次、一人駕駛車廂",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "薰衣草號全線每班時刻與車資表（各站的上下車時刻由各地交通頁寫自己那一站）",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "薰衣草特急的運行日與時刻、薰衣草花田臨時站、慢車號 2026 年已停駛",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "青池、白鬚瀑布、白金溫泉一帶：道北巴士白金線每班、點燈、停車、規則、望岳台",
+            "ownerArticleId": "biei-blue-pond",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "旭川到美瑛",
+          "autocompleteInput": "旭川 到 美瑛",
+          "suggestions": [
+            "旭川到美瑛",
+            "旭川 到 美瑛 交通",
+            "旭川 到 美瑛 jr",
+            "旭川 到 美瑛 青池",
+            "旭川 到 美瑛 jr 時刻 表",
+            "旭川 到 美瑛 自駕",
+            "旭川 到 美瑛 巴士",
+            "旭川 到 美瑛 jr 票 價"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：日本美瑛的交通攻略；沒有人列每班 JR 時刻、哪幾班只到美瑛。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/biei/facts.json；content-planning/hokkaido/research/biei.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "道北巴士白金線 2026-10-01 改點後的時刻（biei:F42 讀不到），寫作前重查",
+        "2026-27 冬季觀光巴士的時刻、票價（biei:F44，觀光協會 11/9 公布）",
+        "四季情報館行李寄放費兩處說法不同（biei:F80），寫作前對觀光協會確認；確認不了就只寫 Hotel Lavenir 的寄放"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "biei-blue-pond",
+      "priority": 24,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "planningTitle": "美瑛青池怎麼去，巴士時刻、點燈與白鬚瀑布順路看",
+      "primaryQuery": "美瑛青池",
+      "secondaryQueries": [
+        "美瑛青池巴士時刻表",
+        "青池點燈2026",
+        "美瑛青池冬天"
+      ],
+      "targetPath": "/places/biei/blue-pond/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-biei",
+      "contentBoundary": "青池與白鬚瀑布、白金溫泉一帶：道北巴士白金線每班、點燈期間與時間、停車、規則、望岳台與火山砂防情報中心。旭川到美瑛站只摘要並連美瑛交通頁；十勝岳登山連上富良野登山頁；白金溫泉的旅館在美瑛住宿頁。",
+      "place": {
+        "nameZh": "美瑛",
+        "japaneseNames": [
+          "美瑛",
+          "美瑛町",
+          "美瑛駅",
+          "白金青い池",
+          "白金温泉",
+          "四季彩の丘",
+          "美馬牛"
+        ],
+        "japaneseSearchTerms": [
+          "美瑛 観光",
+          "美瑛 冬 車なし",
+          "青い池 冬 ライトアップ",
+          "青い池 アクセス",
+          "四季彩の丘 入場料",
+          "美瑛 コーンパン",
+          "美瑛から旭岳"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "furano",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "asahidake"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          6,
+          7,
+          8,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定搭巴士、開車還是搭冬季觀光巴士去青池，並排好回程。",
+        "primaryReaderOutcome": "讀完知道去程與回程末班、點燈幾點開始、搭巴士看不到點燈時的替代方式。",
+        "mustAnswer": [
+          "美瑛站到青池搭巴士要多久、多少錢",
+          "青池巴士時刻表、回程末班幾點",
+          "從旭川能不能直接搭巴士到青池",
+          "青池點燈 2026 是幾月到幾月、幾點開始",
+          "搭巴士看不看得到青池點燈",
+          "青池為什麼是藍色、什麼時候最藍",
+          "青池停車費多少、停車場幾點開",
+          "冬天的青池還看得到藍色嗎",
+          "白鬚瀑布離青池多遠、怎麼順路",
+          "青池要待多久、幾點去人比較少"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭川、旭川機場、富良野、美瑛到上富良野的 JR 與薰衣草號，町營巴士十勝岳線，道道 966 號冬季封路",
+            "ownerArticleId": "kamifurano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "十勝岳連峰登山：火山警戒與規制、登山口、路線、手續、避難小屋、熊、開山",
+            "ownerArticleId": "kamifurano-hiking",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "美瑛青池",
+          "autocompleteInput": "美瑛 青池",
+          "suggestions": [
+            "美瑛 青池",
+            "美瑛 青池 交通",
+            "美瑛 青池冬天",
+            "美瑛 青池 巴士 時刻 表",
+            "美瑛 青池點燈",
+            "美瑛 青池 一 日 遊",
+            "美瑛 青池 天氣",
+            "美瑛 青池 夜間 點 燈"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：前幾名多是舊年份部落格，沒人把 2026-10 改點與點燈末班衝突講清楚。「青池」單獨查會撞青森十二湖，標題寫「美瑛青池」。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/biei/facts.json；content-planning/hokkaido/research/biei.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "必做：道北巴士美瑛・白金線 2026-10-01 改點後的時刻（biei:F42，官網連線被拒），寫作前重查；讀不到就照 2024-10-01 版寫並在研究紀錄標明，正文改寫成「出發前在四季情報館確認回程時間」",
+        "2026-27 冬季觀光巴士（點燈路線）時刻與票價（biei:F44）",
+        "望岳台、白金一帶步道的距離與時間（biei:F155）",
+        "年末年初點燈延長是否沿用（biei:F158）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "nakafurano-farm-tomita",
+      "priority": 25,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "planningTitle": "北海道富田農場怎麼逛，不用門票、花期與從中富良野站怎麼走",
+      "primaryQuery": "北海道富田農場",
+      "secondaryQueries": [
+        "富田農場開放時間",
+        "富田農場即時影像",
+        "富田農場必買"
+      ],
+      "targetPath": "/places/nakafurano/farm-tomita/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-nakafurano",
+      "contentBoundary": "富田農場本園與薰衣草東區：免費入園、開放時間、各花田花期、從中富良野站與薰衣草花田站怎麼走、停車、園內設施、必買、規則、冬季。旭川、富良野到中富良野站的班次只摘要並連中富良野站頁；薰衣草特急與慢車號連薰衣草季頁。",
+      "place": {
+        "nameZh": "中富良野",
+        "japaneseNames": [
+          "中富良野",
+          "中富良野町",
+          "中富良野駅",
+          "ファーム富田",
+          "北星山",
+          "ラベンダー畑駅"
+        ],
+        "japaneseSearchTerms": [
+          "ファーム富田 営業時間",
+          "ファーム富田 見頃",
+          "ファーム富田 入場料",
+          "中富良野 ラベンダーまつり",
+          "ラベンダー畑駅 2026",
+          "北星山 リフト"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "furano",
+          "kamifurano",
+          "biei"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定幾月、幾點去富田農場，從車站或停車場順利進園。",
+        "primaryReaderOutcome": "讀完知道不用門票、當天營業時間去哪看、哪片花田幾月開、從車站怎麼走。",
+        "mustAnswer": [
+          "北海道富田農場要不要門票（和桃園的富田花園農場不同）",
+          "富田農場開放時間（各季節）",
+          "薰衣草與彩色花田幾月最漂亮",
+          "從中富良野站、薰衣草花田站怎麼走到富田農場",
+          "開車停車要不要錢",
+          "必買必吃",
+          "有沒有即時影像可以先看花況",
+          "薰衣草東區怎麼去",
+          "冬天去富田農場有什麼",
+          "園內規則，隔壁的富田哈密瓜之家是不是同一家"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "薰衣草特急的運行日與時刻、薰衣草花田臨時站、慢車號 2026 年已停駛",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野一帶幾月哪裡看薰衣草：富田農場、北星山、日之出公園、彩色花田、市內與麓郷的比較",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川、旭川機場、美瑛、富良野、札幌到中富良野站，站前案內所、計程車、花火大會臨時列車",
+            "ownerArticleId": "nakafurano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "北海道富田農場",
+          "autocompleteInput": "富田農場",
+          "suggestions": [
+            "富田農場",
+            "富田農場 北海道",
+            "富田農場門票",
+            "富田農場 四季彩之丘",
+            "富田農場 桃園",
+            "富田農場必買",
+            "富田農場即時影像",
+            "富田農場 薰衣草"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：只打「富田農場」是北海道意圖；但「富田農場門票」前 9 名有 5 名是桃園的富田花園農場（意圖陷阱），標題一定帶「北海道」或「中富良野」，並直接回答不用門票。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/nakafurano/facts.json；content-planning/hokkaido/research/nakafurano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "夏季園區開幾點到幾點（nakafurano:F141，官網 FAQ 答案沒有文字），寫作前用瀏覽器看官網首頁與花人の舎營業表"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "lavender-season",
+      "priority": 26,
+      "decision": "keep",
+      "pageType": "cross-place-page",
+      "aspect": "other",
+      "planningTitle": "富良野薰衣草幾月開，富田農場、北星山與日之出公園怎麼排",
+      "primaryQuery": "富良野薰衣草",
+      "secondaryQueries": [
+        "富良野薰衣草季節",
+        "富良野薰衣草特急",
+        "北海道薰衣草幾月"
+      ],
+      "targetPath": "/places/furano/lavender-season/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "富良野一帶（富良野、中富良野、上富良野、美瑛）薰衣草季的比較：幾月哪裡看、薰衣草特急與薰衣草花田站、慢車號已停駛、各地薰衣草祭與花火日期、塞車。各處的細節（富田農場園內、北星山吊椅、日之出公園走法）在各地頁，這頁只摘要並連過去。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定薰衣草季哪幾天去、一天看哪幾處、搭什麼車。",
+        "primaryReaderOutcome": "讀完能挑日期與花田，知道薰衣草特急與慢車號的現況，排出不開車的一日路線。",
+        "mustAnswer": [
+          "富良野薰衣草幾月開、7月上旬還是中旬",
+          "富良野一帶哪裡看薰衣草（富田農場、北星山、日之出公園、市內）",
+          "彩色花田幾月最漂亮",
+          "薰衣草特急怎麼搭、2027 年有沒有",
+          "慢車號與薰衣草花田站還有沒有",
+          "不開車怎麼一天看兩三處",
+          "薰衣草祭與花火是哪天",
+          "薰衣草季塞車與住宿要注意什麼"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "富田農場本園與薰衣草東區：門票、開放時間、花田花期、從車站怎麼走、停車、園內、必買、規則",
+            "ownerArticleId": "nakafurano-farm-tomita",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "富良野薰衣草",
+          "autocompleteInput": "富良野 薰衣草",
+          "suggestions": [
+            "富良野 薰衣草",
+            "富良野 薰衣草精油",
+            "富良野 薰衣草季節",
+            "富良野 薰衣草特急",
+            "富良野 薰衣草的評論",
+            "富良野 薰衣草田",
+            "富良野 薰衣草 特急 預約",
+            "富良野 薰衣草 時間"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07，中富良野研究）：日本富良野的薰衣草季整理；2026 年慢車號結束、2027 年未定沒人寫。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/furano/facts.json；content-planning/hokkaido/research/furano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "必做：2027 年薰衣草特急運行日、是否全車指定席、怎麼訂（furano:F46）與薰衣草花田站設站期間（furano:F47、nakafurano:F138），2027-04 重查；未公布前只寫 2026 年並標年份",
+        "2027 年中富良野薰衣草祭（nakafurano:F140）與上富良野 Lavender Festa（kamifurano:F173）日期"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "kamifurano-transport",
+      "priority": 27,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "transport",
+      "planningTitle": "十勝岳溫泉交通，上富良野町營巴士、JR 與冬天的路",
+      "primaryQuery": "十勝岳溫泉交通",
+      "secondaryQueries": [
+        "上富良野租車"
+      ],
+      "targetPath": "/places/kamifurano/transport/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-kamifurano",
+      "contentBoundary": "旭川、旭川機場、富良野、美瑛到上富良野的 JR 與薰衣草號，上富良野站到十勝岳溫泉與吹上溫泉的町營巴士、道道 966 號冬季封路與開車路線。旭川端乘車處連旭川交通頁；旅館與登山各在住宿頁與登山頁，只摘要巴士時刻並連回來。",
+      "place": {
+        "nameZh": "上富良野",
+        "japaneseNames": [
+          "上富良野",
+          "上富良野町",
+          "上富良野駅",
+          "十勝岳温泉",
+          "凌雲閣",
+          "カミホロ荘",
+          "白銀荘",
+          "日の出公園",
+          "十勝岳"
+        ],
+        "japaneseSearchTerms": [
+          "上富良野 日の出公園",
+          "十勝岳温泉 バス",
+          "十勝岳 登山",
+          "十勝岳 噴火警戒レベル",
+          "上富良野 豚さがり",
+          "上富良野 八景"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客排好到上富良野與十勝岳溫泉的班次，開車的人知道冬天哪段路封。",
+        "primaryReaderOutcome": "讀完能接上 JR 與町營巴士，知道一天只有三班、末班幾點、冬天走哪條路。",
+        "mustAnswer": [
+          "旭川到上富良野搭 JR 多久、多少錢",
+          "旭川機場到上富良野怎麼去",
+          "上富良野到富良野、美瑛怎麼去",
+          "十勝岳溫泉巴士時刻與車資",
+          "冬天十勝岳溫泉的路有沒有封",
+          "上富良野要不要租車、開車怎麼走",
+          "末班車幾點"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭川站前バスタッチ各乘車處與旭川機場乘車處（旭川群已上線的負責，本群只摘要）",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "JR 富良野線全線概況：全是普通車、IC 卡不能用、只到美瑛的班次、一人駕駛車廂",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "薰衣草號全線每班時刻與車資表（各站的上下車時刻由各地交通頁寫自己那一站）",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "十勝岳溫泉交通",
+          "autocompleteInput": "十勝岳溫泉",
+          "suggestions": [
+            "十勝岳溫泉",
+            "十勝岳溫泉 凌雲閣",
+            "十勝岳溫泉鄉",
+            "十勝岳溫泉交通",
+            "十勝岳溫泉 kamihoro莊",
+            "十勝岳溫泉 湯元 凌雲閣",
+            "十勝岳溫泉 住宿",
+            "十勝岳溫泉 天氣"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：沒有一頁把町營巴士每班時刻、夏季週末加班、冬季封路寫清楚。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/kamifurano/facts.json；content-planning/hokkaido/research/kamifurano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "白銀莊 2026-11-01 恢復營業後，十勝岳線是否恢復停靠白銀莊（kamifurano:F169），寫作前問町公所或看最新時刻表",
+        "薰衣草號「上富良野」站牌的位置（kamifurano:F176）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "nakafurano-transport",
+      "priority": 28,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "transport",
+      "planningTitle": "中富良野站怎麼去，旭川到中富良野的 JR、薰衣草號與站前寄行李",
+      "primaryQuery": "中富良野站",
+      "secondaryQueries": [
+        "中富良野到美瑛"
+      ],
+      "targetPath": "/places/nakafurano/transport/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-nakafurano",
+      "contentBoundary": "旭川、旭川機場、美瑛、富良野、札幌到中富良野的 JR 與薰衣草號，中富良野站的首末班、站前案內所（寄行李、租自行車）、計程車、花火大會的臨時列車。富良野線全線與薰衣草號全線時刻連富良野交通頁；薰衣草特急與慢車號連薰衣草季頁；從車站走到富田農場在富田農場頁。",
+      "place": {
+        "nameZh": "中富良野",
+        "japaneseNames": [
+          "中富良野",
+          "中富良野町",
+          "中富良野駅",
+          "ファーム富田",
+          "北星山",
+          "ラベンダー畑駅"
+        ],
+        "japaneseSearchTerms": [
+          "ファーム富田 営業時間",
+          "ファーム富田 見頃",
+          "ファーム富田 入場料",
+          "中富良野 ラベンダーまつり",
+          "ラベンダー畑駅 2026",
+          "北星山 リフト"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "furano",
+          "kamifurano",
+          "biei"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客排好到中富良野與回程的班次，到站後知道寄行李、租車與叫計程車。",
+        "primaryReaderOutcome": "讀完能選好 JR 或薰衣草號，記住末班，知道站前案內所能做什麼。",
+        "mustAnswer": [
+          "旭川到中富良野 JR 要多久、幾班",
+          "中富良野站回旭川、往富良野的末班車",
+          "薰衣草號在中富良野停哪裡、時刻與車資",
+          "旭川機場直接到中富良野怎麼搭",
+          "美瑛到中富良野怎麼去",
+          "薰衣草特急有沒有停中富良野、慢車號還有沒有",
+          "中富良野有沒有計程車",
+          "站前能不能寄行李、租腳踏車"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭川站前バスタッチ各乘車處與旭川機場乘車處（旭川群已上線的負責，本群只摘要）",
+            "ownerArticleId": "asahikawa-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "JR 富良野線全線概況：全是普通車、IC 卡不能用、只到美瑛的班次、一人駕駛車廂",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "薰衣草號全線每班時刻與車資表（各站的上下車時刻由各地交通頁寫自己那一站）",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "薰衣草特急的運行日與時刻、薰衣草花田臨時站、慢車號 2026 年已停駛",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "中富良野站",
+          "autocompleteInput": "中富良野",
+          "suggestions": [
+            "中富良野",
+            "中富良野 北新山纜車",
+            "中富良野町",
+            "中富良野景點",
+            "中富良野薰衣草祭",
+            "中富良野花火大會",
+            "中富良野站",
+            "中富良野北星山纜車"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "「中富良野站」的搜尋結果頁這次沒看；相關的「旭川到中富良野」「薰衣草花田站」已確認是日本中富良野，大站只有時刻查詢工具。寫作前在台灣節點看一次。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/nakafurano/facts.json；content-planning/hokkaido/research/nakafurano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "夏季（6～9 月）富良野線全日時刻與旭川→中富良野車資（nakafurano:F139、F144），2026-12 重查"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "furano-biei-itinerary",
+      "priority": 29,
+      "decision": "keep",
+      "pageType": "cross-place-page",
+      "aspect": "other",
+      "planningTitle": "富良野美瑛一日遊怎麼排，不自駕的路線與住兩三天的走法",
+      "primaryQuery": "富良野美瑛一日遊",
+      "secondaryQueries": [
+        "富良野美瑛不自駕",
+        "富良野美瑛冬天",
+        "旭川美瑛富良野自由行"
+      ],
+      "targetPath": "/places/furano/furano-biei-itinerary/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "富良野與美瑛（加中富良野、上富良野）一起排：不自駕的一日遊與兩三天排法、旭川出發與札幌出發的差別、冬天怎麼排、觀光巴士與包車。每段交通的時刻、景點、住宿細節在各地頁，這頁只摘要並連過去。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓不自駕的旅客決定富良野美瑛要排一天還是兩三天，排出能接得上的路線。",
+        "primaryReaderOutcome": "讀完能從旭川或札幌排出一日路線，知道冬天與點燈的限制、要不要包車。",
+        "mustAnswer": [
+          "富良野與美瑛一天排得完嗎",
+          "不開車怎麼一日遊（JR、薰衣草號、道北巴士）",
+          "從旭川出發和從札幌出發差在哪",
+          "住兩三天怎麼排、住哪裡",
+          "冬天怎麼排",
+          "觀光巴士、包車值不值得",
+          "搭巴士看青池點燈的限制"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "札幌、新千歲機場、旭川、旭川機場到富良野的 JR、高速巴士、機場直達巴士、薰衣草號",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川、旭川機場、札幌到美瑛的 JR 與薰衣草號每班時刻",
+            "ownerArticleId": "biei-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "美瑛⇄旭岳不開車經旭川機場轉巴士（兩群之間的新事，歸後規劃的本群）",
+            "ownerArticleId": "biei-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "青池、白鬚瀑布、白金溫泉一帶：道北巴士白金線每班、點燈、停車、規則、望岳台",
+            "ownerArticleId": "biei-blue-pond",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "美瑛丘陵的景點、四季彩之丘、聖誕樹之木、站前與室內點",
+            "ownerArticleId": "biei-sights",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "美瑛站前、美馬牛、丘陵、白金溫泉的住宿",
+            "ownerArticleId": "biei-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野市內住宿與富良野市宿泊稅",
+            "ownerArticleId": "furano-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野市與南富良野的景點",
+            "ownerArticleId": "furano-sights",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富田農場本園與薰衣草東區：門票、開放時間、花田花期、從車站怎麼走、停車、園內、必買、規則",
+            "ownerArticleId": "nakafurano-farm-tomita",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "富良野美瑛一日遊",
+          "autocompleteInput": "富良野 美瑛",
+          "suggestions": [
+            "富良野 美瑛",
+            "富良野 美瑛 一日遊",
+            "富良野 美瑛 景點",
+            "富良野 美瑛 慢車號",
+            "富良野 美瑛 冬天",
+            "富良野 美瑛 jr",
+            "富良野 美瑛 熊",
+            "富良野 美瑛 距離"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "「富良野 美瑛 一日遊」的搜尋結果頁這次沒看；自動完成另有「富良野 美瑛 不 自駕」「富良野 美瑛 冬天」「旭川 美瑛 富良野 自由 行」。寫作前在台灣節點看一次（預期多是 KKday、Klook 一日團）。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/furano/facts.json；content-planning/hokkaido/research/furano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "2026-27 冬季觀光巴士與富良野冬季巴士公布後重查（biei:F44、furano:F312）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "furano-ski-resort",
+      "priority": 30,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "planningTitle": "富良野滑雪場怎麼玩，雪季、雪票、纜車與從富良野站怎麼去",
+      "primaryQuery": "富良野滑雪場",
+      "secondaryQueries": [
+        "富良野滑雪場交通",
+        "富良野滑雪場雪票",
+        "富良野纜車"
+      ],
+      "targetPath": "/places/furano/ski-resort/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "富良野滑雪場（富良野區、北之峰區）的雪季、雪票、纜車與吊椅、夜滑、租借、滑雪學校、從富良野站與機場怎麼到、夏秋纜車。札幌、新千歲、旭川到富良野的交通只摘要並連富良野交通頁；新富良野王子大飯店與北之峰的住宿在富良野住宿頁。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓滑雪的旅客決定滑哪一區、買哪種雪票，排好到滑雪場的交通。",
+        "primaryReaderOutcome": "讀完能挑雪票、知道兩區開到幾月、早上幾點有巴士、雪具在哪租。",
+        "mustAnswer": [
+          "富良野滑雪場什麼時候開、開到幾月",
+          "富良野區與北之峰區差在哪",
+          "雪票多少錢、在哪買",
+          "有沒有夜滑",
+          "纜車與吊椅有幾條",
+          "從富良野站、旭川、新千歲怎麼到滑雪場",
+          "雪具租借在哪",
+          "有沒有中文滑雪教練",
+          "夏天纜車有沒有開"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "札幌、新千歲機場、旭川、旭川機場到富良野的 JR、高速巴士、機場直達巴士、薰衣草號",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野市內住宿與富良野市宿泊稅",
+            "ownerArticleId": "furano-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "富良野滑雪場",
+          "autocompleteInput": "富良野 滑雪場",
+          "suggestions": [
+            "富良野 滑雪場",
+            "富良野 滑雪場 雪票",
+            "富良野 滑雪場地圖",
+            "富良野 滑雪場 交通",
+            "富良野 滑雪場 教練",
+            "富良野 滑雪場 天氣",
+            "富良野 滑雪場 住宿",
+            "富良野 滑雪場 纜車"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：競爭高，大站都有雪票表；北之峰區只開到 3/22、早上從富良野站怎麼去、夜滑只開兩條吊椅較少人寫。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/furano/facts.json；content-planning/hokkaido/research/furano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "這頁屬「滑雪」新主題例外，Darren 決定前不寫；Darren 不回覆就改寫成富良野主頁與住宿頁一節",
+        "富良野區與北之峰區 2026-27 季的接駁巴士（furano:F114）",
+        "成人滑雪課有沒有中文或英文教練（furano:F116）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。",
+      "approvalNote": "Darren 2026-11-07 決定富良野滑雪場自己一頁（滑雪新主題例外，明確核准）"
+    },
+    {
+      "articleId": "furano-stay",
+      "priority": 31,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "planningTitle": "富良野住宿怎麼選，站前、北之峰與新富良野王子大飯店",
+      "primaryQuery": "富良野住宿",
+      "secondaryQueries": [
+        "富良野住宿推薦",
+        "富良野溫泉飯店"
+      ],
+      "targetPath": "/places/furano/stay/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "富良野市內的住宿：站前、北之峰、新富良野王子大飯店與郊外的區域、離車站多遠、溫泉、接送、營業期間與訂房管道，富良野市宿泊稅；不寫價格。北海道宿泊稅的稅額表連旭川住宿頁；滑雪場與精靈露台只摘要。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客依滑雪、看薰衣草、不開車等目的決定住富良野哪一區。",
+        "primaryReaderOutcome": "讀完能挑區、挑旅館，知道接駁、晚餐預約與住宿稅。",
+        "mustAnswer": [
+          "富良野住站前、北之峰還是新富良野王子大飯店",
+          "哪些旅館有溫泉",
+          "滑雪住哪方便",
+          "帶小孩住哪",
+          "新富良野王子大飯店有沒有接駁車、晚餐要不要預約",
+          "富良野住宿稅多少",
+          "哪些旅館能用 Trip.com、Agoda 訂"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "北海道宿泊稅的稅額（旭川群已上線的負責，本群住宿相關頁只摘要；富良野市自己的宿泊稅由 furano-stay 負責）",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "札幌、新千歲機場、旭川、旭川機場到富良野的 JR、高速巴士、機場直達巴士、薰衣草號",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野滑雪場的雪季、雪票、纜車、夜滑、租借、滑雪學校與到滑雪場的巴士、夏秋纜車",
+            "ownerArticleId": "furano-ski-resort",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "research-required",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "富良野住宿",
+          "autocompleteInput": "富良野 住宿",
+          "suggestions": [
+            "富良野 住宿",
+            "富良野 住宿 推薦",
+            "富良野 住宿 ptt",
+            "富良野 住宿 dcard",
+            "富良野 住宿 夏天",
+            "富良野 住宿 滑雪",
+            "富良野 住宿 親子",
+            "富良野 住宿 稅"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：多是部落格加分潤；離車站距離、營業期間、宿泊稅、北之峰與站前怎麼選較少寫。「富良野 民宿」混有宜蘭同名民宿，不當查詢。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/furano/facts.json；content-planning/hokkaido/research/furano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "必做：有官網的住宿只有 7 家，寫作前補 2～4 家（北之峰的公寓式住宿、市區商務旅館；一花、Muninn、FURANO HOTEL 查到官網才列），補不到停放",
+        "富良野プリンスホテル（北之峰）現況（furano:F139）",
+        "新富良野王子大飯店 2026-27 冬季餐廳營業表（furano:F157）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "biei-stay",
+      "priority": 32,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "planningTitle": "美瑛住宿怎麼選，站前、丘陵與白金溫泉",
+      "primaryQuery": "美瑛住宿",
+      "secondaryQueries": [
+        "美瑛住宿推薦",
+        "白金溫泉住宿"
+      ],
+      "targetPath": "/places/biei/stay/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-biei",
+      "contentBoundary": "美瑛町內的住宿：站前、美馬牛、丘陵、白金溫泉的區域、離車站多遠、接送、營業期間與訂房管道；不寫價格。北海道宿泊稅只摘要並連旭川住宿頁；點燈與青池在青池頁。",
+      "place": {
+        "nameZh": "美瑛",
+        "japaneseNames": [
+          "美瑛",
+          "美瑛町",
+          "美瑛駅",
+          "白金青い池",
+          "白金温泉",
+          "四季彩の丘",
+          "美馬牛"
+        ],
+        "japaneseSearchTerms": [
+          "美瑛 観光",
+          "美瑛 冬 車なし",
+          "青い池 冬 ライトアップ",
+          "青い池 アクセス",
+          "四季彩の丘 入場料",
+          "美瑛 コーンパン",
+          "美瑛から旭岳"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "furano",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "asahidake"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          6,
+          7,
+          8,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定住美瑛哪一區，找到開車或不開車都訂得到的住宿。",
+        "primaryReaderOutcome": "讀完能挑區、挑旅館，知道有沒有接送、冬天有沒有開、在哪裡訂。",
+        "mustAnswer": [
+          "美瑛住哪一區比較方便，站前、美馬牛、丘陵還是白金溫泉",
+          "不開車住哪裡，哪些旅館有接送",
+          "白金溫泉有哪些旅館，能不能只泡湯",
+          "美瑛住宿能不能用 Trip.com、Agoda 訂",
+          "冬天哪些住宿有營業",
+          "住宿要不要付北海道宿泊稅"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "北海道宿泊稅的稅額（旭川群已上線的負責，本群住宿相關頁只摘要；富良野市自己的宿泊稅由 furano-stay 負責）",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "美瑛站的四季情報館、行李寄放、租自行車、Car Share、計程車、包車、觀光巴士",
+            "ownerArticleId": "biei-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "青池、白鬚瀑布、白金溫泉一帶：道北巴士白金線每班、點燈、停車、規則、望岳台",
+            "ownerArticleId": "biei-blue-pond",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "research-required",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "美瑛住宿",
+          "autocompleteInput": "美瑛 住宿",
+          "suggestions": [
+            "美瑛 住宿",
+            "美瑛 住宿推薦",
+            "美瑛 住宿 ptt",
+            "美瑛 住宿 北海道",
+            "富良野 美瑛 住宿",
+            "富良野 美瑛 住宿 推薦",
+            "北海道 美瑛 住宿 推薦",
+            "旭川美瑛住宿"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：多是推薦清單；依區域與接送整理的少。「美瑛 緩慢」是日本美瑛的台灣品牌民宿。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/biei/facts.json；content-planning/hokkaido/research/biei.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "必做：stayList 18 家裡 Trip.com、Agoda 還沒確認的小型民宿，在兩站搜尋框逐家查（不輸入個人資料）",
+        "各家冬季營業與接送重查官網"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "kamifurano-stay",
+      "priority": 33,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "planningTitle": "十勝岳溫泉住宿怎麼選，凌雲閣、Kamihoro莊與上富良野市區",
+      "primaryQuery": "十勝岳溫泉住宿",
+      "secondaryQueries": [
+        "十勝岳溫泉凌雲閣"
+      ],
+      "targetPath": "/places/kamifurano/stay/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-kamifurano",
+      "contentBoundary": "上富良野町內的住宿：十勝岳溫泉（凌雲閣、Kamihoro 莊）、吹上溫泉白銀莊、市區與丘陵、露營與豪華露營，日歸泡湯與吹上露天之湯；不寫價格。町營巴士時刻只摘要並連十勝岳溫泉交通頁；火山警戒的登山規制在登山頁；北海道宿泊稅連旭川住宿頁。",
+      "place": {
+        "nameZh": "上富良野",
+        "japaneseNames": [
+          "上富良野",
+          "上富良野町",
+          "上富良野駅",
+          "十勝岳温泉",
+          "凌雲閣",
+          "カミホロ荘",
+          "白銀荘",
+          "日の出公園",
+          "十勝岳"
+        ],
+        "japaneseSearchTerms": [
+          "上富良野 日の出公園",
+          "十勝岳温泉 バス",
+          "十勝岳 登山",
+          "十勝岳 噴火警戒レベル",
+          "上富良野 豚さがり",
+          "上富良野 八景"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定住十勝岳溫泉還是上富良野市區，並訂得到。",
+        "primaryReaderOutcome": "讀完能比較三間溫泉旅館與市區住宿，知道怎麼上山、要先買什麼、火山警戒的影響。",
+        "mustAnswer": [
+          "十勝岳溫泉有哪幾間旅館、怎麼選",
+          "凌雲閣、Kamihoro 莊、白銀莊差在哪",
+          "十勝岳溫泉怎麼去、巴士幾點",
+          "可不可以日歸泡湯",
+          "吹上露天之湯能不能泡",
+          "上富良野市區有哪些住宿、離車站多遠",
+          "住十勝岳溫泉要先買什麼",
+          "火山警戒會不會影響住宿",
+          "能不能用 Trip.com、Agoda 訂，宿泊稅怎麼收"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "北海道宿泊稅的稅額（旭川群已上線的負責，本群住宿相關頁只摘要；富良野市自己的宿泊稅由 furano-stay 負責）",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川、旭川機場、富良野、美瑛到上富良野的 JR 與薰衣草號，町營巴士十勝岳線，道道 966 號冬季封路",
+            "ownerArticleId": "kamifurano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "十勝岳連峰登山：火山警戒與規制、登山口、路線、手續、避難小屋、熊、開山",
+            "ownerArticleId": "kamifurano-hiking",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "research-required",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "十勝岳溫泉住宿",
+          "autocompleteInput": "十勝岳溫泉",
+          "suggestions": [
+            "十勝岳溫泉",
+            "十勝岳溫泉 凌雲閣",
+            "十勝岳溫泉鄉",
+            "十勝岳溫泉交通",
+            "十勝岳溫泉 kamihoro莊",
+            "十勝岳溫泉 湯元 凌雲閣",
+            "十勝岳溫泉 住宿",
+            "十勝岳溫泉 天氣"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：意圖陷阱，訂房網站把「十勝岳溫泉」當成十勝地區（十勝川溫泉）；H1 與正文要寫明在上富良野。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/kamifurano/facts.json；content-planning/hokkaido/research/kamifurano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "必做：Trip.com、Agoda 上架情況只用搜尋引擎找到凌雲閣、Kamihoro 莊、Hops（kamifurano:F180），寫作前在兩站搜尋框逐家查",
+        "凌雲閣與 Kamihoro 莊有沒有車站接送（kamifurano:F175），官網沒寫就只寫町營巴士"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "kamifurano-hiking",
+      "priority": 34,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "hiking",
+      "planningTitle": "十勝岳登山現在能不能爬，火山警戒、登山口與富良野岳路線",
+      "primaryQuery": "十勝岳登山",
+      "secondaryQueries": [
+        "十勝岳登山規制",
+        "十勝岳登山口",
+        "十勝岳登山初心者"
+      ],
+      "targetPath": "/places/kamifurano/hiking/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-kamifurano",
+      "contentBoundary": "十勝岳連峰（十勝岳、富良野岳、上富良野岳、三段山、Nukkakushi 火口）的登山：現在的火山警戒與規制、登山口、路線時間、手續、避難小屋、熊、季節。町營巴士時刻只摘要並連十勝岳溫泉交通頁；望岳台的展望與火山砂防情報中心在美瑛青池頁；溫泉旅館在住宿頁。",
+      "place": {
+        "nameZh": "上富良野",
+        "japaneseNames": [
+          "上富良野",
+          "上富良野町",
+          "上富良野駅",
+          "十勝岳温泉",
+          "凌雲閣",
+          "カミホロ荘",
+          "白銀荘",
+          "日の出公園",
+          "十勝岳"
+        ],
+        "japaneseSearchTerms": [
+          "上富良野 日の出公園",
+          "十勝岳温泉 バス",
+          "十勝岳 登山",
+          "十勝岳 噴火警戒レベル",
+          "上富良野 豚さがり",
+          "上富良野 八景"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓登山客先確認現在能不能爬，再選路線、排好巴士與手續。",
+        "primaryReaderOutcome": "讀完知道現在的火山警戒與哪幾座不能登，能選一條適合的路線並交好登山計畫書。",
+        "mustAnswer": [
+          "十勝岳現在能不能爬、火山警戒等級是多少",
+          "十勝岳登山口在哪，十勝岳溫泉和望岳台差在哪",
+          "十勝岳要爬多久、難不難",
+          "初學者能爬哪條",
+          "沒開車怎麼到登山口",
+          "要不要交登山計畫書",
+          "避難小屋能不能住、水怎麼辦",
+          "有沒有熊",
+          "幾月能爬、開山與紅葉",
+          "登山資訊去哪看"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "旭川、旭川機場、富良野、美瑛到上富良野的 JR 與薰衣草號，町營巴士十勝岳線，道道 966 號冬季封路",
+            "ownerArticleId": "kamifurano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "十勝岳溫泉、吹上溫泉與上富良野市區的住宿、日歸泡湯、吹上露天之湯",
+            "ownerArticleId": "kamifurano-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "十勝岳登山",
+          "autocompleteInput": "十勝岳 登山",
+          "suggestions": [
+            "十勝岳 登山",
+            "十勝岳 登山口",
+            "十勝岳 登山 規制",
+            "十勝岳 登山ルート",
+            "十勝岳 登山 初心者",
+            "十勝岳 登山 難易 度",
+            "十勝岳 登山 最短ルート",
+            "十勝岳 登山情報"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：沒有中文頁寫 2026 年火山等級與現在能爬哪條；暴風雪新聞顯示讀者需要季節與天候警告。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/kamifurano/facts.json；content-planning/hokkaido/research/kamifurano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "必做：寫作當天重查氣象廳十勝岳噴火警戒等級與大雪山國立公園連絡協議會公告（kamifurano:F31、F35）",
+        "等級 2 期間富良野岳、上富良野岳、Nukkakushi 火口路線能不能走（kamifurano:F170）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "furano-sights",
+      "priority": 35,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "planningTitle": "富良野景點怎麼排，精靈露台、麓郷外景地與起司工房",
+      "primaryQuery": "富良野景點",
+      "secondaryQueries": [
+        "富良野精靈露台",
+        "富良野起司工房",
+        "富良野景點冬天"
+      ],
+      "targetPath": "/places/furano/sights/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "富良野市與南富良野的景點：精靈露台、風之花園、麓郷外景地、果醬園、起司工房與葡萄酒工廠、市內薰衣草、公園、道之驛南富良野與金山湖。滑雪場與纜車在滑雪場頁；富田農場、北星山、日之出公園在各地頁，薰衣草的比較在薰衣草季頁。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客依季節挑富良野的景點，排出搭巴士或開車能到的順序。",
+        "primaryReaderOutcome": "讀完知道各景點的開放期間、怎麼去、冬天哪些沒開。",
+        "mustAnswer": [
+          "富良野有哪些景點、冬天能去哪",
+          "精靈露台幾點開、怎麼去、晚上有沒有點燈",
+          "風之花園什麼時候開",
+          "《來自北國》外景地怎麼去、冬天有沒有開",
+          "起司工房與葡萄酒工廠怎麼去、要不要錢",
+          "富良野市內哪裡看得到薰衣草",
+          "南富良野道之驛與金山湖值不值得繞去"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "富良野市內路線巴士（麓郷線、麻町線、御料線）、計程車、租車與異地還車、往帶廣與南富良野的巴士",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野一帶幾月哪裡看薰衣草：富田農場、北星山、日之出公園、彩色花田、市內與麓郷的比較",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "富良野景點",
+          "autocompleteInput": "富良野 景點",
+          "suggestions": [
+            "富良野 景點",
+            "富良野 景點 冬天",
+            "富良野 景點 夏天",
+            "富良野 景點地圖",
+            "富良野 景點 秋天",
+            "富良野 景點 4 月",
+            "富良野 景點 推薦",
+            "富良野 景點 5 月"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：競爭高；冬天哪些景點休、麓郷外景地怎麼搭巴士較少人寫。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/furano/facts.json；content-planning/hokkaido/research/furano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "五郎的石屋從麓郷巴士站步行 40 分或 70 分（furano:F211），寫作前對官網",
+        "精靈露台冬季點燈期間（furano:F159）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "biei-sights",
+      "priority": 36,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "planningTitle": "美瑛景點怎麼排，拼布之路、超廣角之路與四季彩之丘",
+      "primaryQuery": "美瑛景點",
+      "secondaryQueries": [
+        "美瑛景點冬天",
+        "美瑛聖誕樹之木",
+        "四季彩之丘門票"
+      ],
+      "targetPath": "/places/biei/sights/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-biei",
+      "contentBoundary": "美瑛丘陵一帶的景點：拼布之路、超廣角之路、展望公園、四季彩之丘、聖誕樹之木、站前與室內點，含停車、私有地規則與冬季開放。青池與白鬚瀑布在青池頁；美瑛站的租車、計程車在美瑛交通頁；深山峠、Kanno Farm 在上富良野景點頁。",
+      "place": {
+        "nameZh": "美瑛",
+        "japaneseNames": [
+          "美瑛",
+          "美瑛町",
+          "美瑛駅",
+          "白金青い池",
+          "白金温泉",
+          "四季彩の丘",
+          "美馬牛"
+        ],
+        "japaneseSearchTerms": [
+          "美瑛 観光",
+          "美瑛 冬 車なし",
+          "青い池 冬 ライトアップ",
+          "青い池 アクセス",
+          "四季彩の丘 入場料",
+          "美瑛 コーンパン",
+          "美瑛から旭岳"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "furano",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "asahidake"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          6,
+          7,
+          8,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定美瑛丘陵要繞哪幾處、怎麼繞、冬天還能去哪。",
+        "primaryReaderOutcome": "讀完能排出繞丘陵的順序，知道哪裡能停車、四季彩之丘哪幾個月收門票。",
+        "mustAnswer": [
+          "美瑛有哪些景點，拼布之路和超廣角之路差在哪",
+          "聖誕樹之木怎麼去，冬天不開車怎麼去",
+          "肯與瑪麗之樹、七星之樹在哪，能不能停車",
+          "四季彩之丘門票多少、幾月要收費",
+          "四季彩之丘冬天有沒有開、雪上摩托車怎麼玩",
+          "四季彩之丘從美瑛站怎麼去",
+          "美瑛站走路能到哪些景點",
+          "下雨天在美瑛去哪",
+          "美瑛的丘能不能走進田裡拍照"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "美瑛站的四季情報館、行李寄放、租自行車、Car Share、計程車、包車、觀光巴士",
+            "ownerArticleId": "biei-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "青池、白鬚瀑布、白金溫泉一帶：道北巴士白金線每班、點燈、停車、規則、望岳台",
+            "ownerArticleId": "biei-blue-pond",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "美瑛景點",
+          "autocompleteInput": "美瑛 景點",
+          "suggestions": [
+            "美瑛 景點",
+            "美瑛 景點 交通",
+            "美瑛 景點 冬天",
+            "美瑛 景點地圖",
+            "美瑛 景點 夏天",
+            "美瑛 景點 秋天",
+            "美瑛 景點 推薦",
+            "美瑛 景點 樹"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：競爭最高，大站寫景點清單，少有把停車、私有地、冬季封閉與 MAPCODE 一起整理。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/biei/facts.json；content-planning/hokkaido/research/biei.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "四季彩之丘各花的開花月份（官網花期日曆是圖片），寫作前用瀏覽器讀圖；補到 15 筆以上再依景點升格規則拆頁（屬例外）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "kamifurano-sights",
+      "priority": 37,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "planningTitle": "上富良野景點怎麼排，日之出公園、八景與深山峠",
+      "primaryQuery": "上富良野景點",
+      "secondaryQueries": [
+        "上富良野日之出公園",
+        "上富良野八景"
+      ],
+      "targetPath": "/places/kamifurano/sights/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-kamifurano",
+      "contentBoundary": "上富良野町的景點：日之出公園、八景、深山峠（摩天輪、錯視藝術美術館、Kanno Farm）、Flower Land、美術館與室內點。十勝岳溫泉的旅館在住宿頁；薰衣草東區的細節在富田農場頁；各地薰衣草比較在薰衣草季頁。",
+      "place": {
+        "nameZh": "上富良野",
+        "japaneseNames": [
+          "上富良野",
+          "上富良野町",
+          "上富良野駅",
+          "十勝岳温泉",
+          "凌雲閣",
+          "カミホロ荘",
+          "白銀荘",
+          "日の出公園",
+          "十勝岳"
+        ],
+        "japaneseSearchTerms": [
+          "上富良野 日の出公園",
+          "十勝岳温泉 バス",
+          "十勝岳 登山",
+          "十勝岳 噴火警戒レベル",
+          "上富良野 豚さがり",
+          "上富良野 八景"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客排出上富良野八景與日之出公園的順序，知道冬天與雨天能去哪。",
+        "primaryReaderOutcome": "讀完知道日之出公園怎麼走、八景哪些冬天不能去、深山峠幾月開。",
+        "mustAnswer": [
+          "日之出公園要不要門票、怎麼去",
+          "日之出公園薰衣草什麼時候最好看",
+          "上富良野八景怎麼排、要不要開車",
+          "雲霄飛車之路在哪",
+          "深山峠有什麼、摩天輪幾月開",
+          "冬天能去哪些景點",
+          "下雨天可以去哪"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "富良野一帶幾月哪裡看薰衣草：富田農場、北星山、日之出公園、彩色花田、市內與麓郷的比較",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富田農場本園與薰衣草東區：門票、開放時間、花田花期、從車站怎麼走、停車、園內、必買、規則",
+            "ownerArticleId": "nakafurano-farm-tomita",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "上富良野景點",
+          "autocompleteInput": "上富良野",
+          "suggestions": [
+            "上富良野",
+            "上富良野八景",
+            "上富良野町",
+            "上富良野美食",
+            "上富良野神社",
+            "上富良野景點",
+            "上富良野日之出公園",
+            "上富良野天氣"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：前幾名多是「富良野」整區文章，上富良野只佔一兩段；沒有中文頁完整列出八景與冬季能不能去。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/kamifurano/facts.json；content-planning/hokkaido/research/kamifurano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "Flower Land 上富良野拖拉機巴士的運行期間與費用（kamifurano:F183）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "furano-food",
+      "priority": 38,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "food",
+      "planningTitle": "富良野美食吃什麼，咖哩蛋包飯、拉麵與哈密瓜",
+      "primaryQuery": "富良野美食",
+      "secondaryQueries": [
+        "富良野咖哩蛋包飯",
+        "富良野拉麵",
+        "富良野哈密瓜"
+      ],
+      "targetPath": "/places/furano/food/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "富良野市的蛋包咖哩、咖哩名店、拉麵、成吉思汗、哈密瓜與 Furano Marche。富田農場與中富良野的哈密瓜在中富良野頁；起司工房在景點頁。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客知道富良野該吃什麼、在哪裡吃，蛋包咖哩和唯我獨尊分得清楚。",
+        "primaryReaderOutcome": "讀完能挑店、知道營業時間與哈密瓜產季。",
+        "mustAnswer": [
+          "富良野咖哩蛋包飯是什麼、哪幾家有",
+          "唯我獨尊是不是蛋包咖哩、營業時間",
+          "富良野哈密瓜什麼時候吃得到",
+          "富良野有什麼拉麵",
+          "成吉思汗烤肉哪裡吃",
+          "Furano Marche 有什麼、幾點開"
+        ],
+        "excludedDepth": [],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "富良野美食",
+          "autocompleteInput": "富良野 美食",
+          "suggestions": [
+            "富良野 美食",
+            "富良野 美食推薦",
+            "富良野 美食 dcard",
+            "富良野 美食 評分 最高",
+            "富良野 美食 2025",
+            "富良野 美食 ptt",
+            "富良野 美食 2026",
+            "富良野 美食 營業 中"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：蛋包咖哩官方 6 條規則與官方店家名單少人寫；唯我獨尊常被當成蛋包咖哩代表。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/furano/facts.json；content-planning/hokkaido/research/furano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "唯我獨尊營業時間只有觀光協會一個來源（furano:F250），寫作前找第二來源",
+        "店家營業時間逐家重查官網或官方社群"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "furano-festival",
+      "priority": 39,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "festival",
+      "planningTitle": "富良野冬天活動與北海肚臍祭，歡寒村、熱氣球與葡萄酒祭幾月辦",
+      "primaryQuery": "富良野冬天活動",
+      "secondaryQueries": [
+        "富良野葡萄酒祭",
+        "富良野冬天熱氣球"
+      ],
+      "targetPath": "/places/furano/festival/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "富良野市與南富良野的祭典與活動：北海肚臍祭、煙火、葡萄酒祭、起司祭、大收穫祭、金山湖湖水祭、歡寒村、bonchi powder 祭、跨年、熱氣球。中富良野與上富良野的薰衣草祭只摘要並連薰衣草季頁。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客知道富良野在去的那個月有什麼活動，排進行程。",
+        "primaryReaderOutcome": "讀完知道日期、會場、能不能參加與怎麼去。",
+        "mustAnswer": [
+          "北海肚臍祭是哪天、在哪、能不能參加",
+          "富良野夏天到秋天還有哪些活動（煙火、葡萄酒祭、金山湖湖水祭）",
+          "富良野冬天有什麼活動（歡寒村、熱氣球、bonchi powder 祭）",
+          "祭典當天怎麼去、車停哪裡"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "中富良野薰衣草祭、上富良野 Lavender Festa、北海肚臍祭等夏季祭典的日期一覽",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "富良野冬天活動",
+          "autocompleteInput": "富良野 冬天",
+          "suggestions": [
+            "富良野 冬天",
+            "富良野 冬天 景點",
+            "富良野 冬天 活動",
+            "富良野 冬天 美食",
+            "富良野 冬天 行程",
+            "富良野 冬天 自駕",
+            "富良野 冬天 熱 氣球",
+            "富良野 冬天 親子"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：以預約平台為主。「北海肚臍祭」另查過，官方中文頁在前兩名，本站差異是固定日期、個人可參加與會場停車。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/furano/facts.json；content-planning/hokkaido/research/furano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "歡寒村 2026-27 正式內容與價格（furano:F273，官方標明是去年資料）",
+        "2027 年葡萄酒祭、煙火、起司祭日期（furano:F271）未公布前只寫 2026 年並標年份"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "furano-weather",
+      "priority": 40,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "weather",
+      "planningTitle": "富良野天氣，每月氣溫、穿著與幾月去",
+      "primaryQuery": "富良野天氣",
+      "secondaryQueries": [
+        "富良野幾月去",
+        "富良野花季"
+      ],
+      "targetPath": "/places/furano/weather/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "富良野 AMeDAS 平年值、極值、積雪、穿著與季節（花季、櫻花、紅葉、初雪、農產）。中富良野沒有觀測點，用這頁的數字；美瑛與上富良野各自的數字在美瑛天氣頁與上富良野主頁。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客依月份決定穿著與要不要在那個月去富良野。",
+        "primaryReaderOutcome": "讀完知道去的那個月多冷、會不會下雪，花與紅葉在不在季節。",
+        "mustAnswer": [
+          "富良野每月氣溫與要穿什麼",
+          "富良野冬天多冷、雪多深",
+          "薰衣草、櫻花、紅葉各是幾月",
+          "富良野幾月開始下雪",
+          "富良野幾月去"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "富良野一帶幾月哪裡看薰衣草：富田農場、北星山、日之出公園、彩色花田、市內與麓郷的比較",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "富良野天氣",
+          "autocompleteInput": "富良野",
+          "suggestions": [
+            "富良野",
+            "富良野滑雪場",
+            "富良野天氣",
+            "富良野景點",
+            "富良野花季",
+            "富良野王子飯店",
+            "富良野起司工房",
+            "富良野薰衣草"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：前幾名全是即時預報；月平均與穿著是本站可答的角度。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/furano/facts.json；content-planning/hokkaido/research/furano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "biei-weather",
+      "priority": 41,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "weather",
+      "planningTitle": "美瑛天氣，每個月幾度、冬天多冷與該穿什麼",
+      "primaryQuery": "美瑛天氣",
+      "secondaryQueries": [
+        "美瑛冬天"
+      ],
+      "targetPath": "/places/biei/weather/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-biei",
+      "contentBoundary": "美瑛 AMeDAS 平年值、積雪、穿著與季節（花田、雪景）。景點各自的開放期間在景點頁；富良野的平年值在富良野天氣頁。",
+      "place": {
+        "nameZh": "美瑛",
+        "japaneseNames": [
+          "美瑛",
+          "美瑛町",
+          "美瑛駅",
+          "白金青い池",
+          "白金温泉",
+          "四季彩の丘",
+          "美馬牛"
+        ],
+        "japaneseSearchTerms": [
+          "美瑛 観光",
+          "美瑛 冬 車なし",
+          "青い池 冬 ライトアップ",
+          "青い池 アクセス",
+          "四季彩の丘 入場料",
+          "美瑛 コーンパン",
+          "美瑛から旭岳"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "furano",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "asahidake"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          6,
+          7,
+          8,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客依月份決定穿著，知道冬天多冷、雪多深。",
+        "primaryReaderOutcome": "讀完知道去的那個月要帶什麼衣服、會不會遇到雪或雨。",
+        "mustAnswer": [
+          "美瑛每個月幾度",
+          "美瑛冬天有多冷、雪有多深",
+          "美瑛夏天要穿什麼、晚上會不會冷",
+          "美瑛幾月開始下雪、幾月融雪",
+          "美瑛哪個月最多雨",
+          "美瑛花田與雪景各是幾月"
+        ],
+        "excludedDepth": [],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "美瑛天氣",
+          "autocompleteInput": "美瑛",
+          "suggestions": [
+            "美瑛天氣"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：全是天氣預報站，沒有人寫平年值與穿著。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/biei/facts.json；content-planning/hokkaido/research/biei.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "biei",
+      "priority": 42,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "aspect": "other",
+      "planningTitle": "美瑛自由行怎麼排，幾月去、玩幾天與不開車的走法",
+      "primaryQuery": "美瑛",
+      "secondaryQueries": [
+        "美瑛一日遊",
+        "美瑛美食",
+        "美瑛玉米麵包"
+      ],
+      "targetPath": "/places/biei/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "primaryHubId": "hub-places-biei",
+      "contentBoundary": "美瑛值不值得去、排幾天、幾月去、不開車怎麼排、依旅客類型的排法；美食與祭典併進這頁寫一節（玉米麵包只在機場賣）。交通、青池、景點、住宿、天氣各兩三句並連過去。",
+      "place": {
+        "nameZh": "美瑛",
+        "japaneseNames": [
+          "美瑛",
+          "美瑛町",
+          "美瑛駅",
+          "白金青い池",
+          "白金温泉",
+          "四季彩の丘",
+          "美馬牛"
+        ],
+        "japaneseSearchTerms": [
+          "美瑛 観光",
+          "美瑛 冬 車なし",
+          "青い池 冬 ライトアップ",
+          "青い池 アクセス",
+          "四季彩の丘 入場料",
+          "美瑛 コーンパン",
+          "美瑛から旭岳"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "furano",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "asahidake"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          6,
+          7,
+          8,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定要不要去美瑛、排幾天、哪個月去，冬天不開車也排得出來。",
+        "primaryReaderOutcome": "讀完能決定天數與月份，知道要先看哪幾頁排交通、青池與住宿。",
+        "mustAnswer": [
+          "美瑛值不值得去，和富良野差在哪",
+          "美瑛要排幾天，當天來回夠不夠",
+          "美瑛幾月去最好，花田和雪景各在幾月",
+          "冬天不開車怎麼排美瑛一日",
+          "美瑛玉米麵包在哪裡買、出爐時間",
+          "美瑛有什麼必吃，美瑛選果冬天有沒有開",
+          "美瑛的丘能不能走進田裡拍照、能不能飛無人機",
+          "依旅客類型怎麼排",
+          "當天來回美瑛，從旭川和從富良野出發怎麼比"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "富良野與美瑛不自駕的一日遊與兩三天排法、旭川與札幌出發的差別、冬天怎麼排、觀光巴士與包車的選擇",
+            "ownerArticleId": "furano-biei-itinerary",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川、旭川機場、札幌到美瑛的 JR 與薰衣草號每班時刻",
+            "ownerArticleId": "biei-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "美瑛站的四季情報館、行李寄放、租自行車、Car Share、計程車、包車、觀光巴士",
+            "ownerArticleId": "biei-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "青池、白鬚瀑布、白金溫泉一帶：道北巴士白金線每班、點燈、停車、規則、望岳台",
+            "ownerArticleId": "biei-blue-pond",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "美瑛丘陵的景點、四季彩之丘、聖誕樹之木、站前與室內點",
+            "ownerArticleId": "biei-sights",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "美瑛站前、美馬牛、丘陵、白金溫泉的住宿",
+            "ownerArticleId": "biei-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "美瑛平年值、積雪、穿著",
+            "ownerArticleId": "biei-weather",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "美瑛",
+          "autocompleteInput": "美瑛",
+          "suggestions": [
+            "美瑛",
+            "美瑛青池",
+            "美瑛簡餐屋",
+            "美瑛放牧酪農場",
+            "美瑛聖誕樹",
+            "美瑛神社",
+            "美瑛景點",
+            "美瑛選果"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "「美瑛」單獨查的搜尋結果頁這次沒看；相關的「美瑛 景點」「美瑛 美食」「美瑛 玉米 麵包 出爐時間」都已確認是日本美瑛。寫作前在台灣節點看一次。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/biei/facts.json；content-planning/hokkaido/research/biei.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "美瑛咖哩烏龍麵、美瑛豬、道之驛丘之倉與白金ビルケ的店家與時間（biei:F154）；查不到美食一節只寫美瑛選果與玉米麵包"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "furano",
+      "priority": 43,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "aspect": "other",
+      "planningTitle": "富良野自由行怎麼排，幾月去、住幾晚與不開車的玩法",
+      "primaryQuery": "富良野",
+      "secondaryQueries": [
+        "富良野自由行",
+        "富良野冬天"
+      ],
+      "targetPath": "/places/furano/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "富良野值不值得去、排幾天、幾月去、冬天哪些地方沒開、不開車怎麼玩、依旅客類型的排法、熊。交通、滑雪、住宿、景點、美食、祭典、天氣、薰衣草季各兩三句並連過去。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定富良野要不要去、排幾天、哪個月去。",
+        "primaryReaderOutcome": "讀完能決定天數與月份，知道要先看哪幾頁排交通、住宿與活動。",
+        "mustAnswer": [
+          "富良野值不值得去、和美瑛差在哪",
+          "富良野要待幾天、住富良野還是旭川",
+          "富良野幾月去最好",
+          "冬天去富良野哪些景點沒開",
+          "不開車能不能玩富良野",
+          "帶小孩、滑雪、看薰衣草各怎麼排",
+          "富良野有沒有熊",
+          "為什麼叫北海道的肚臍",
+          "當天來回富良野，從札幌和從旭川出發怎麼比"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "札幌、新千歲機場、旭川、旭川機場到富良野的 JR、高速巴士、機場直達巴士、薰衣草號",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野市內路線巴士（麓郷線、麻町線、御料線）、計程車、租車與異地還車、往帶廣與南富良野的巴士",
+            "ownerArticleId": "furano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野一帶幾月哪裡看薰衣草：富田農場、北星山、日之出公園、彩色花田、市內與麓郷的比較",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野與美瑛不自駕的一日遊與兩三天排法、旭川與札幌出發的差別、冬天怎麼排、觀光巴士與包車的選擇",
+            "ownerArticleId": "furano-biei-itinerary",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野滑雪場的雪季、雪票、纜車、夜滑、租借、滑雪學校與到滑雪場的巴士、夏秋纜車",
+            "ownerArticleId": "furano-ski-resort",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野市內住宿與富良野市宿泊稅",
+            "ownerArticleId": "furano-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野市與南富良野的景點",
+            "ownerArticleId": "furano-sights",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野蛋包咖哩、咖哩名店、拉麵、成吉思汗、哈密瓜、Furano Marche",
+            "ownerArticleId": "furano-food",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "北海肚臍祭現場（會場、參加、停車）、煙火、葡萄酒祭、起司祭、金山湖湖水祭、歡寒村、熱氣球與冬季活動",
+            "ownerArticleId": "furano-festival",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野平年值、極值、積雪、季節（中富良野也用這頁的數字）",
+            "ownerArticleId": "furano-weather",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "富良野",
+          "autocompleteInput": "富良野",
+          "suggestions": [
+            "富良野",
+            "富良野滑雪場",
+            "富良野天氣",
+            "富良野景點",
+            "富良野花季",
+            "富良野王子飯店",
+            "富良野起司工房",
+            "富良野薰衣草"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "「富良野」單獨查的搜尋結果頁這次沒看；「富良野 景點」「富良野 幾月去」已確認是日本富良野。寫作前在台灣節點看一次。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/furano/facts.json；content-planning/hokkaido/research/furano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "nakafurano",
+      "priority": 44,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "aspect": "other",
+      "planningTitle": "中富良野景點與美食，北星山、薰衣草祭與不開車怎麼排",
+      "primaryQuery": "中富良野景點",
+      "secondaryQueries": [
+        "中富良野北星山纜車",
+        "中富良野薰衣草祭",
+        "中富良野美食"
+      ],
+      "targetPath": "/places/nakafurano/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "primaryHubId": "hub-places-nakafurano",
+      "contentBoundary": "中富良野值不值得去、幾月去、排幾天、依旅客類型；景點（北星山、花卉公園、神社、NANAKA、風景畫館）、美食、住宿、祭典與花火、天氣都併進這頁各寫一節。富田農場在自己一頁；交通班次在中富良野站頁；薰衣草季的比較在薰衣草季頁；天氣數字用富良野站。",
+      "place": {
+        "nameZh": "中富良野",
+        "japaneseNames": [
+          "中富良野",
+          "中富良野町",
+          "中富良野駅",
+          "ファーム富田",
+          "北星山",
+          "ラベンダー畑駅"
+        ],
+        "japaneseSearchTerms": [
+          "ファーム富田 営業時間",
+          "ファーム富田 見頃",
+          "ファーム富田 入場料",
+          "中富良野 ラベンダーまつり",
+          "ラベンダー畑駅 2026",
+          "北星山 リフト"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "furano",
+          "kamifurano",
+          "biei"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定中富良野要待多久，除了富田農場還去哪、吃什麼、住哪。",
+        "primaryReaderOutcome": "讀完能排出中富良野半天或一天，知道北星山吊椅、薰衣草祭日期與住宿選擇。",
+        "mustAnswer": [
+          "中富良野值不值得去、和富良野美瑛差在哪",
+          "幾月去看薰衣草最好",
+          "從旭川、富良野、美瑛不開車怎麼去",
+          "中富良野要排幾天，當天來回從旭川還是從富良野出發",
+          "北星山吊椅幾點、多少錢",
+          "薰衣草祭與花火大會是哪天、看完怎麼回去",
+          "中富良野吃什麼、哈密瓜在哪買",
+          "住中富良野還是住富良野",
+          "冬天去中富良野能看什麼",
+          "依旅客類型怎麼排"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "北海道宿泊稅的稅額（旭川群已上線的負責，本群住宿相關頁只摘要；富良野市自己的宿泊稅由 furano-stay 負責）",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野一帶幾月哪裡看薰衣草：富田農場、北星山、日之出公園、彩色花田、市內與麓郷的比較",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "中富良野薰衣草祭、上富良野 Lavender Festa、北海肚臍祭等夏季祭典的日期一覽",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野與美瑛不自駕的一日遊與兩三天排法、旭川與札幌出發的差別、冬天怎麼排、觀光巴士與包車的選擇",
+            "ownerArticleId": "furano-biei-itinerary",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野平年值、極值、積雪、季節（中富良野也用這頁的數字）",
+            "ownerArticleId": "furano-weather",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富田農場本園與薰衣草東區：門票、開放時間、花田花期、從車站怎麼走、停車、園內、必買、規則",
+            "ownerArticleId": "nakafurano-farm-tomita",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川、旭川機場、美瑛、富良野、札幌到中富良野站，站前案內所、計程車、花火大會臨時列車",
+            "ownerArticleId": "nakafurano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "中富良野景點",
+          "autocompleteInput": "中富良野",
+          "suggestions": [
+            "中富良野",
+            "中富良野 北新山纜車",
+            "中富良野町",
+            "中富良野景點",
+            "中富良野薰衣草祭",
+            "中富良野花火大會",
+            "中富良野站",
+            "中富良野北星山纜車"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "台灣節點看過（2026-11-07）：前幾名都是「富良野」整區文章，沒有專寫中富良野町的繁中好答案。北星山吊椅部落格多是舊票價。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/nakafurano/facts.json；content-planning/hokkaido/research/nakafurano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "住宿一節：Agoda 上架與民宿官網的營業期間（nakafurano:F149、F151）",
+        "美食一節：店家營業時間逐家用官網或官方社群核對（目前來源多是觀光協會）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "kamifurano",
+      "priority": 45,
+      "decision": "keep",
+      "pageType": "place-entry",
+      "aspect": "other",
+      "planningTitle": "上富良野自由行，幾月去、十勝岳溫泉與日之出公園怎麼排",
+      "primaryQuery": "上富良野",
+      "secondaryQueries": [
+        "上富良野天氣",
+        "上富良野美食"
+      ],
+      "targetPath": "/places/kamifurano/",
+      "routeDecision": "resolved",
+      "routeMode": "hub-landing",
+      "primaryHubId": "hub-places-kamifurano",
+      "contentBoundary": "上富良野值不值得去、排幾天、幾月去、不開車怎麼玩、依旅客類型；美食（燒肉店的豬橫膈膜）、祭典與點燈、天氣都併進這頁各寫一節。交通、住宿、登山、景點各兩三句並連過去；薰衣草季比較連薰衣草季頁。",
+      "place": {
+        "nameZh": "上富良野",
+        "japaneseNames": [
+          "上富良野",
+          "上富良野町",
+          "上富良野駅",
+          "十勝岳温泉",
+          "凌雲閣",
+          "カミホロ荘",
+          "白銀荘",
+          "日の出公園",
+          "十勝岳"
+        ],
+        "japaneseSearchTerms": [
+          "上富良野 日の出公園",
+          "十勝岳温泉 バス",
+          "十勝岳 登山",
+          "十勝岳 噴火警戒レベル",
+          "上富良野 豚さがり",
+          "上富良野 八景"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa"
+        ],
+        "bestMonths": [
+          7,
+          9,
+          10
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓旅客決定上富良野要不要排、待多久、哪個月去。",
+        "primaryReaderOutcome": "讀完能決定是當天來回還是住十勝岳溫泉，知道吃什麼、哪個月有活動。",
+        "mustAnswer": [
+          "上富良野值不值得去、和富良野美瑛差在哪",
+          "上富良野要待幾天、當天來回從旭川還是從富良野出發",
+          "上富良野幾月去、薰衣草什麼時候開",
+          "不開車怎麼玩上富良野",
+          "上富良野吃什麼、燒肉店的招牌是什麼",
+          "上富良野冬天能去哪",
+          "上富良野的祭典與點燈",
+          "依旅客類型怎麼排"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "中富良野薰衣草祭、上富良野 Lavender Festa、北海肚臍祭等夏季祭典的日期一覽",
+            "ownerArticleId": "lavender-season",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "富良野與美瑛不自駕的一日遊與兩三天排法、旭川與札幌出發的差別、冬天怎麼排、觀光巴士與包車的選擇",
+            "ownerArticleId": "furano-biei-itinerary",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "旭川、旭川機場、富良野、美瑛到上富良野的 JR 與薰衣草號，町營巴士十勝岳線，道道 966 號冬季封路",
+            "ownerArticleId": "kamifurano-transport",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "十勝岳溫泉、吹上溫泉與上富良野市區的住宿、日歸泡湯、吹上露天之湯",
+            "ownerArticleId": "kamifurano-stay",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "十勝岳連峰登山：火山警戒與規制、登山口、路線、手續、避難小屋、熊、開山",
+            "ownerArticleId": "kamifurano-hiking",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          },
+          {
+            "topic": "日之出公園、上富良野八景、深山峠、室內點",
+            "ownerArticleId": "kamifurano-sights",
+            "reason": "分工表：別頁負責，本頁只摘要並連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": "not-applicable",
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-07",
+          "query": "上富良野",
+          "autocompleteInput": "上富良野",
+          "suggestions": [
+            "上富良野",
+            "上富良野八景",
+            "上富良野町",
+            "上富良野美食",
+            "上富良野神社",
+            "上富良野景點",
+            "上富良野日之出公園",
+            "上富良野天氣"
+          ],
+          "serpIntentConfirmed": false,
+          "serpNotes": "「上富良野」單獨查的搜尋結果頁這次沒看；「上富良野 美食」「上富良野 景點」已確認是日本上富良野，但前幾名多是富良野市的內容。寫作前在台灣節點看一次。"
+        }
+      ],
+      "competition": "競爭是目前最高的一群：大型日旅品牌、KKday、Klook 與部落格都寫富良野、美瑛；本頁寫他們寫不細的班次、季節期間、冬季狀況與 2026 年的變化（慢車號停駛、白金線改點、十勝岳火山警戒）。",
+      "researchSources": "content-planning/hokkaido/places/kamifurano/facts.json；content-planning/hokkaido/research/kamifurano.json；大綱 content-planning/hokkaido/hokkaido-furano-outline.json",
+      "researchBeforeWriting": [
+        "美食一節：燒肉秀、燒肉 Marumasu、豚豚亭、花道等店家營業時間與公休逐家查官網或官方社群（kamifurano:F178）"
+      ],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "biei-food",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "food",
+      "primaryQuery": "美瑛美食",
+      "targetPath": "/places/biei/food/",
+      "primaryHubId": "hub-places-biei",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "biei",
+      "mergeReason": "2026-11-07 地點研究：只屬於美食的事實 11 筆（biei:F101～F111），少於 15 筆；咖哩烏龍麵、美瑛豬、道之驛沒查（F154）。寫成美瑛主頁「美瑛美食，選果與車站附近的店」一節，玉米麵包只在新千歲機場賣這件事放這節；補查後達 15 筆再拆。"
+    },
+    {
+      "articleId": "biei-hiking",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "hiking",
+      "primaryQuery": "望岳台",
+      "targetPath": "/places/biei/hiking/",
+      "primaryHubId": "hub-places-biei",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "biei-blue-pond",
+      "mergeReason": "2026-11-07 地點研究：只有 4 筆（F55～F58），步道資料沒查（F155）；望岳台與火山砂防情報中心寫進青池頁「往望岳台與火山砂防情報中心」一節，十勝岳登山歸上富良野登山頁。"
+    },
+    {
+      "articleId": "biei-festival",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "festival",
+      "primaryQuery": "美瑛祭典",
+      "targetPath": "/places/biei/festival/",
+      "primaryHubId": "hub-places-biei",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "biei",
+      "mergeReason": "2026-11-07 地點研究：只有 4 筆；冬季點燈歸青池頁，火祭、農業祭與滑雪馬拉松寫進主頁「美瑛的祭典與活動」一節。"
+    },
+    {
+      "articleId": "biei-shikisai-no-oka",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "primaryQuery": "四季彩之丘",
+      "targetPath": "/places/biei/shikisai-no-oka/",
+      "primaryHubId": "hub-places-biei",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "biei-sights",
+      "mergeReason": "2026-11-07 地點研究：景點升格第 1 條過（中文自動完成「四季彩之丘 門票／冬天／雪上摩托車／現況／即時影像」），但只屬於它的事實 13 筆、差 2 筆；寫成美瑛景點頁三個 H3。補官網花期日曆與冬季營業後達 15 筆，再依景點升格規則拆頁（屬例外，不默許）。"
+    },
+    {
+      "articleId": "nakafurano-sight",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "sight",
+      "primaryQuery": "中富良野景點",
+      "targetPath": "/places/nakafurano/sights/",
+      "primaryHubId": "hub-places-nakafurano",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "nakafurano",
+      "mergeReason": "2026-11-07 地點研究：自有事實 18 筆，剛過門檻，但其中北星山佔 10 筆、其他各點只有一兩筆，單獨成頁會很短；中富良野主頁的美食、住宿、祭典也都併進來，主頁正好用「中富良野景點」當主要查詢（和東川町景點同樣做法）。北星山、花卉公園、神社、NANAKA、風景畫館各寫一個 H3。"
+    },
+    {
+      "articleId": "nakafurano-food",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "food",
+      "primaryQuery": "中富良野美食",
+      "targetPath": "/places/nakafurano/food/",
+      "primaryHubId": "hub-places-nakafurano",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "nakafurano",
+      "mergeReason": "2026-11-07 地點研究：自有事實 15 筆剛好在門檻，但來源全是觀光協會景點頁、店家官網未核對；中文只有「中 富良野 美食」一個詞。併進主頁「中富良野美食，哈密瓜、咖哩與拉麵」一節；富田農場內的吃歸富田農場頁。"
+    },
+    {
+      "articleId": "nakafurano-stay",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "primaryQuery": "中富良野住宿",
+      "targetPath": "/places/nakafurano/stay/",
+      "primaryHubId": "hub-places-nakafurano",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "nakafurano",
+      "mergeReason": "2026-11-07 地點研究：自有事實 14 筆、13 家，Agoda 沒查、多數民宿官網未核對；搜尋結果頁「中富良野 住宿」前幾名全是訂房網站。併進主頁「住中富良野還是住富良野？」一節，補完官網與 Agoda 後過 15 筆可再拆。"
+    },
+    {
+      "articleId": "nakafurano-festival",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "festival",
+      "primaryQuery": "中富良野薰衣草祭",
+      "targetPath": "/places/nakafurano/festival/",
+      "primaryHubId": "hub-places-nakafurano",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "nakafurano",
+      "mergeReason": "2026-11-07 地點研究：自有事實 8 筆（F110～F115、F36、F37）；併進主頁「中富良野薰衣草祭與花火大會」一節，日期一覽由薰衣草季頁負責，回程臨時列車在中富良野站頁。"
+    },
+    {
+      "articleId": "nakafurano-weather",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "weather",
+      "primaryQuery": "中富良野天氣",
+      "targetPath": "/places/nakafurano/weather/",
+      "primaryHubId": "hub-places-nakafurano",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "nakafurano",
+      "mergeReason": "2026-11-07 地點研究：只有 6 筆，町內沒有觀測點，平年值用富良野站（F130、F133）；主頁「中富良野的天氣與穿著」一兩句並連富良野天氣頁。"
+    },
+    {
+      "articleId": "kamifurano-food",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "food",
+      "primaryQuery": "上富良野美食",
+      "targetPath": "/places/kamifurano/food/",
+      "primaryHubId": "hub-places-kamifurano",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "kamifurano",
+      "mergeReason": "2026-11-07 地點研究：美食事實 12 筆（F126～F137），不到 15 筆；店家營業時間未查（F178）。併進主頁「上富良野美食，燒肉店的豬橫膈膜與上富良野豬」一節。"
+    },
+    {
+      "articleId": "kamifurano-festival",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "festival",
+      "primaryQuery": "上富良野祭典",
+      "targetPath": "/places/kamifurano/festival/",
+      "primaryHubId": "hub-places-kamifurano",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "kamifurano",
+      "mergeReason": "2026-11-07 地點研究：祭典事實 6 筆（F138～F143）加共用 F97、F98；併進主頁「上富良野的薰衣草點燈與祭典」一節。"
+    },
+    {
+      "articleId": "kamifurano-weather",
+      "decision": "merge",
+      "pageType": "aspect-page",
+      "aspect": "weather",
+      "primaryQuery": "上富良野天氣",
+      "targetPath": "/places/kamifurano/weather/",
+      "primaryHubId": "hub-places-kamifurano",
+      "travelGroupId": "hokkaido-furano",
+      "mergeInto": "kamifurano",
+      "mergeReason": "2026-11-07 地點研究：天氣事實 17 筆，但 13 筆是逐月平年值，預估正文不到 800 字；十勝岳溫泉沒有觀測點（F177）。併進主頁「上富良野天氣，和十勝岳溫泉差多少」一節。"
+    },
+    {
+      "articleId": "furano-hiking",
+      "decision": "remove",
+      "pageType": "aspect-page",
+      "aspect": "hiking",
+      "primaryQuery": "富良野登山",
+      "targetPath": null,
+      "travelGroupId": "hokkaido-furano",
+      "reason": "不做：富良野岳從十勝岳溫泉登山，歸上富良野登山頁；蘆別岳、富良野西岳沒有台灣讀者的需求詞。"
+    },
+    {
+      "articleId": "nakafurano-hiking",
+      "decision": "remove",
+      "pageType": "aspect-page",
+      "aspect": "hiking",
+      "primaryQuery": "中富良野登山",
+      "targetPath": null,
+      "travelGroupId": "hokkaido-furano",
+      "reason": "不做：町內沒有登山；北星山步道與森林公園只有 F86、F89 兩筆，寫在中富良野主頁。"
     }
   ],
   "approval": {
@@ -3753,6 +6834,13 @@
       "approvedAt": "2026-10-26",
       "scope": "Darren 2026-10-26 同意大綱通過檢查就直接寫（AGENTS.md 最後一段）；21 頁保留、10 頁併進主頁、1 頁不做",
       "outline": "content-planning/hokkaido/hokkaido-asahikawa-outline.json"
+    },
+    {
+      "groupId": "hokkaido-furano",
+      "approvedBy": "pending-default",
+      "autoApproveOn": "2026-11-10",
+      "scope": "默許制：2026-11-07 提醒後 3 天（2026-11-10）Darren 沒反對就算核准；24 頁保留、12 頁併入、2 頁不做。富良野滑雪場屬滑雪新主題例外，不默許，Darren 不回覆就寫成富良野主頁與住宿頁一節",
+      "outline": "content-planning/hokkaido/hokkaido-furano-outline.json"
     }
   ]
 }
