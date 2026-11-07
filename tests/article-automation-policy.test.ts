@@ -31,7 +31,7 @@ const queuePath = path.join(projectRoot, 'content-automation/article-queue.json'
 
 type AnyRecord = Record<string, any>
 
-test('repo 內的清單通過驗證：稚內群 24 頁、旭川・大雪群 21 頁與富良野・美瑛群 23 頁依大綱寫作順序排入，群的先後不變，分類代稱與分類樹一致', async () => {
+test('repo 內的清單通過驗證：稚內群 24 頁、旭川・大雪群 21 頁與富良野・美瑛群 24 頁依大綱寫作順序排入，群的先後不變，分類代稱與分類樹一致', async () => {
   const queue = JSON.parse(await readFile(queuePath, 'utf8'))
   assert.deepEqual(validateArticleQueue(queue), [])
   assert.deepEqual(CATEGORY_SLUGS, siteCategories.map((category) => category.slug))
@@ -47,7 +47,7 @@ test('repo 內的清單通過驗證：稚內群 24 頁、旭川・大雪群 21 �
       ['hokkaido-asahidake', 6],
       ['hokkaido-higashikawa', 1],
       ['hokkaido-biei', 6],
-      ['hokkaido-furano', 9],
+      ['hokkaido-furano', 10],
       ['hokkaido-nakafurano', 3],
       ['hokkaido-kamifurano', 5],
     ],
@@ -65,10 +65,10 @@ test('repo 內的清單通過驗證：稚內群 24 頁、旭川・大雪群 21 �
   const queued = new Set(getProductionOrderedItems(queue).map((item) => item.articleId))
   assert.deepEqual(
     getProductionOrderedItems(queue).map((item) => item.articleId),
-    // 大綱裡規格不是 keep 的頁（富良野滑雪場，例外待 Darren 決定）不排進清單
+    // 大綱裡規格不是 keep 的頁不排進清單（富良野滑雪場 Darren 2026-11-07 已核准，現在全部都是 keep）
     outlines.flatMap((outline) => outline.writingOrder).filter((articleId) => queued.has(articleId)),
   )
-  assert.equal(queued.has('furano-ski-resort'), false)
+  assert.equal(queued.has('furano-ski-resort'), true)
   const crossPlace = findQueueItem(queue, 'asahidake-or-sounkyo')
   assert.equal(crossPlace?.pageType, 'cross-place-page')
   assert.equal(crossPlace?.pageRole, '跨地點頁')
@@ -78,7 +78,7 @@ test('repo 內的清單通過驗證：稚內群 24 頁、旭川・大雪群 21 �
     encoding: 'utf8',
   })
   assert.equal(result.status, 0, result.stderr)
-  assert.match(result.stdout, /稚內批次 8 篇、宗谷岬批次 2 篇、利尻島批次 8 篇、禮文島批次 6 篇、旭川批次 7 篇、層雲峽批次 7 篇、旭岳批次 6 篇、東川町批次 1 篇、美瑛批次 6 篇、富良野批次 9 篇、中富良野批次 3 篇、上富良野批次 5 篇/)
+  assert.match(result.stdout, /稚內批次 8 篇、宗谷岬批次 2 篇、利尻島批次 8 篇、禮文島批次 6 篇、旭川批次 7 篇、層雲峽批次 7 篇、旭岳批次 6 篇、東川町批次 1 篇、美瑛批次 6 篇、富良野批次 10 篇、中富良野批次 3 篇、上富良野批次 5 篇/)
 })
 
 test('完整的批次通過驗證，生產順序依批次與 order', () => {
