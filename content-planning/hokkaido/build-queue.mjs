@@ -262,7 +262,7 @@ if ((queue.travelGroups ?? []).some((entry) => entry.id === group.id) || clash.l
 const keep = specs.items.filter((spec) => spec.decision === 'keep')
 const candidateById = new Map(candidates.items.map((entry) => [entry.articleId, entry]))
 const pathOf = new Map(keep.map((spec) => [spec.articleId, spec.targetPath]))
-const order = outline.writingOrder
+const order = outline.writingOrder.filter((articleId) => pathOf.has(articleId)) // 規格不是 keep 的（例如例外待 Darren 決定的 defer）不排進清單
 const nextReviewDue = addYear(group.verifiedAt)
 
 const batches = []
