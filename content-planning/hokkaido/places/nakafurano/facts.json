@@ -1,0 +1,1448 @@
+{
+  "schemaVersion": 1,
+  "placeId": "nakafurano",
+  "facts": [
+    {
+      "factId": "F1",
+      "claim": "JR 富良野線中富良野站往富良野方向（下行）一天 12 班普通車：06:50、07:52、08:54、10:47、12:35、14:45、16:36、17:30、18:51、19:45、21:44、23:32 發；另有 6 班旭川～美瑛區間車不到中富良野。",
+      "quote": "中富良野 発 650 752 854 1047 1235 1445 1636 1730 1851 1945 2144 2332",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2880",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「列車名/路線名から時刻検索」富良野線下り全日表（2026-11-07 查詢，資料依《JR時刻表》令和8年11月號）；06:50 那班（721D）運轉日欄標「◆運転日注意」；12/30～1/3 休日時刻；官方頁禁止轉載整張表，正文只列需要的幾班",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F2",
+      "claim": "JR 富良野線中富良野站往旭川方向（上行）一天 12 班：06:10、07:14、07:30、08:19、10:09、11:53、13:27、15:55、17:08、18:09、19:27、20:54 發。",
+      "quote": "中富良野 発 610 714 730 819 1009 1153 1327 1555 1708 1809 1927 2054",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2881",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道富良野線上り全日表（2026-11-07 查詢）；07:14（722D）、07:30（724D）運轉日欄標「◆運転日注意」",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F3",
+      "claim": "旭川到中富良野搭普通車約 1 小時 6～9 分，例如旭川 09:38 發、中富良野 10:47 發；中富良野到富良野約 11 分（06:50 發、07:01 到）。",
+      "quote": "旭川 発 938 … 中富良野 発 1047 … 富良野 着 1058",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2880",
+      "checkedAt": "2026-11-07",
+      "condition": "由富良野線下り全日表同一班車的時刻相減",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15",
+      "derivedFrom": [
+        "F1"
+      ]
+    },
+    {
+      "factId": "F4",
+      "claim": "旭川往富良野方向的第一班 05:44 發（06:50 過中富良野），最後一班 22:34 發（23:32 過中富良野）。",
+      "quote": "旭川 発 544 … 2234｜中富良野 発 650 … 2332",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2880",
+      "checkedAt": "2026-11-07",
+      "condition": "由下り全日表整理",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15",
+      "derivedFrom": [
+        "F1"
+      ]
+    },
+    {
+      "factId": "F5",
+      "claim": "從中富良野回旭川的最後一班 20:54 發、21:47 到旭川。",
+      "quote": "中富良野 発 2054｜旭川 着 2147",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2881",
+      "checkedAt": "2026-11-07",
+      "condition": "由上り全日表整理（742D）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15",
+      "derivedFrom": [
+        "F2"
+      ]
+    },
+    {
+      "factId": "F6",
+      "claim": "中富良野往富良野方向白天大約 2 小時一班（10:47 之後 12:35、14:45），錯過一班要等很久。",
+      "quote": "中富良野 発 1047 1235 1445",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2880",
+      "checkedAt": "2026-11-07",
+      "condition": "由 F1 整理（2026 年 11 月起的表）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15",
+      "derivedFrom": [
+        "F1"
+      ]
+    },
+    {
+      "factId": "F7",
+      "claim": "富田農場官網的鐵路走法：札幌搭特急約 55 分到滝川，轉根室本線約 1 小時 10 分到富良野，再搭富良野線約 10 分到中富良野；或札幌搭特急約 1 小時 25 分到旭川，轉富良野線約 1 小時 5 分到中富良野。",
+      "quote": "札幌 JR特急カムイほか（約55分） 滝川 JR根室本線（約1時間10分） 富良野 JR富良野線（約10分） 中富良野",
+      "sourceUrl": "https://www.farm-tomita.co.jp/access/",
+      "checkedAt": "2026-11-07",
+      "condition": "富田農場「アクセスガイド」；所要時間是概數",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F8",
+      "claim": "從 JR 中富良野站走到富田農場約 25 分；從臨時站「薰衣草花田站（ラベンダー畑駅）」走約 7～8 分。",
+      "quote": "｢中富良野駅｣(ファーム富田から徒歩約25分)｜ラベンダー畑駅からファーム富田までは徒歩7～8分程です",
+      "sourceUrl": "https://www.farm-tomita.co.jp/access/",
+      "checkedAt": "2026-11-07",
+      "condition": "富田農場「アクセスガイド」與「ラベンダー畑駅」頁",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F9",
+      "claim": "薰衣草花田站（ラベンダー畑駅）是 JR 富良野線的臨時站，只有臨時列車「富良野・美瑛慢車號（ノロッコ号）」停靠，所在地是中富良野町基線北15号。",
+      "quote": "ＪＲ富良野線の臨時列車「富良野・美瑛ノロッコ号」のみが停車する臨時駅です",
+      "sourceUrl": "https://www.farm-tomita.co.jp/access/station.asp",
+      "checkedAt": "2026-11-07",
+      "condition": "富田農場官網；繁中頁寫「薰衣草花田車站」",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F10",
+      "claim": "2026 年富良野・美瑛慢車號的運轉日：6/6、6/7、6/13～8/11 每天、8/15～9/13 的週六日、9/19～9/23。",
+      "quote": "6/6(土)、6/7(日)、6/13(土)～8/11(火・祝)、8/15(土)～9/13(日)の土日、9/19(土)～9/23(火・祝)",
+      "sourceUrl": "https://www.farm-tomita.co.jp/access/station.asp",
+      "checkedAt": "2026-11-07",
+      "condition": "富田農場「ラベンダー畑駅」頁；JR 運轉日曆（JR 北海道「JRで行く富良野・美瑛 2026」觀光列車頁；季節結束後官網已下架，以 Internet Archive 2026-09-27 存檔（web.archive.org/web/20260927082903/…）讀取）同樣是這些日子（8/29、8/30 改開まんきつノロッコ号）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F11",
+      "claim": "富良野・美瑛慢車號 2026 年是最後一季，2026-09-23 是最終運轉日（當天特別班表，5 號、6 號不開）。",
+      "quote": "最終運転日特別ダイヤ｜※最終運転日は「富良野・美瑛ノロッコ５号」と「富良野・美瑛ノロッコ６号」は運転しません。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/train/index.html",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「JRで行く富良野・美瑛 2026」觀光列車頁；季節結束後官網已下架，以 Internet Archive 2026-09-27 存檔（web.archive.org/web/20260927082903/…）讀取；另有 JR 北海道 2026-08-20 新聞稿 20260820_AS_HP_norokkolastrun.pdf（文字層無法抽出）",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F12",
+      "claim": "慢車號的停靠站：1 號、6 號是旭川～美瑛～美馬牛～上富良野～薰衣草花田～中富良野～富良野；2～5 號是美瑛～美馬牛～上富良野～薰衣草花田～中富良野～富良野。",
+      "quote": "【1号・6号】 旭川～ 美瑛～ 美馬牛～ 上富良野～ ラベンダー畑～ 中富良野～ 富良野",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/train/index.html",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「JRで行く富良野・美瑛 2026」觀光列車頁；季節結束後官網已下架，以 Internet Archive 2026-09-27 存檔（web.archive.org/web/20260927082903/…）讀取",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F13",
+      "claim": "2026 年慢車號往富良野：薰衣草花田站 11:15、13:45、15:46 發，中富良野站 11:22、13:50、15:55 發；往旭川・美瑛：中富良野 12:11、14:25、16:37 發，薰衣草花田 12:17、14:31、16:44 發。",
+      "quote": "ラベンダー畑発 11：15 13：45 15：46｜中富良野発 11：22 13：50 15：55｜中富良野発 12：11 14：25 16：37｜ラベンダー畑発 12：17 14：31 16：44",
+      "sourceUrl": "https://www.farm-tomita.co.jp/access/station.asp",
+      "checkedAt": "2026-11-07",
+      "condition": "2026 年通常日；8/29、8/30、9/23 特別班表時刻不同",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F14",
+      "claim": "慢車號全車指定席，除了車資還要付指定席費用 1,000 日圓（單程，兒童半價）。",
+      "quote": "指定席料金（片道、小児半額） 1,000円 全車指定席です。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/train/index.html",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「JRで行く富良野・美瑛 2026」觀光列車頁；季節結束後官網已下架，以 Internet Archive 2026-09-27 存檔（web.archive.org/web/20260927082903/…）讀取",
+      "changeType": "price",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F15",
+      "claim": "2026 年車資：富良野～薰衣草花田 320 日圓、旭川～薰衣草花田 1,210 日圓（單程，兒童半價）。",
+      "quote": "富良野〜ラベンダー畑 320円｜旭川〜ラベンダー畑 1,210円",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/train/index.html",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「JRで行く富良野・美瑛 2026」觀光列車頁；季節結束後官網已下架，以 Internet Archive 2026-09-27 存檔（web.archive.org/web/20260927082903/…）讀取",
+      "changeType": "price",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F16",
+      "claim": "慢車號的指定席在みどりの窗口或「えきねっと」買，也能用「在來線チケットレス座席指定券」不取票直接上車（車票另外買）；富田農場不代訂。",
+      "quote": "みどりの窓口または えきねっと にてお買い求めください｜ファーム富田ではご予約を承っておりません",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/train/index.html",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「JRで行く富良野・美瑛 2026」觀光列車頁；季節結束後官網已下架，以 Internet Archive 2026-09-27 存檔（web.archive.org/web/20260927082903/…）讀取；「不代訂」出自富田農場ラベンダー畑駅頁",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F17",
+      "claim": "慢車號在薰衣草花田站到中富良野站之間會放慢速度，讓乘客看中富良野町的薰衣草田。",
+      "quote": "③ラベンダー畑駅～中富良野駅（中富良野町のラベンダー畑）",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/train/index.html",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「JRで行く富良野・美瑛 2026」觀光列車頁；季節結束後官網已下架，以 Internet Archive 2026-09-27 存檔（web.archive.org/web/20260927082903/…）讀取；「一部のノロッコ号を除く」",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F18",
+      "claim": "富良野薰衣草特急（フラノラベンダーエクスプレス）2026 年走札幌～岩見澤～瀧川～芦別～富良野，不經中富良野；到中富良野要在富良野轉車。",
+      "quote": "札幌～岩見沢～滝川～芦別～富良野",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/train/index.html",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「JRで行く富良野・美瑛 2026」觀光列車頁；季節結束後官網已下架，以 Internet Archive 2026-09-27 存檔（web.archive.org/web/20260927082903/…）讀取",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F19",
+      "claim": "2026 年富良野薰衣草特急：札幌 07:41 發、富良野 09:44 到；回程富良野 16:53 發、札幌 18:52 到；全車指定席。",
+      "quote": "7:41発 … 9:44着｜16:53発 … 18：52着｜※全車指定席です",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/train/index.html",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「JRで行く富良野・美瑛 2026」觀光列車頁；季節結束後官網已下架，以 Internet Archive 2026-09-27 存檔（web.archive.org/web/20260927082903/…）讀取",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F20",
+      "claim": "2026 年富良野薰衣草特急運轉日：6/6、6/7、6/13～8/11 每天，8/15、8/16、8/22、8/23、8/29、8/30，9/5、9/6、9/12、9/13、9/19～9/23。",
+      "quote": "2026年6月 … 運転日（カレンダー表示）",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/train/index.html",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道「JRで行く富良野・美瑛 2026」觀光列車頁；季節結束後官網已下架，以 Internet Archive 2026-09-27 存檔（web.archive.org/web/20260927082903/…）讀取；運轉日由日曆格子的 operate 標記讀出",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F21",
+      "claim": "ふらのバス「薰衣草號（ラベンダー号）」2026-04-01 改正，在中富良野町內停「中富良野」與「ラテール・ベストム前」兩站；不用預約、上車抽整理券、下車付費。",
+      "quote": "中富良野 Nakafurano｜ラテール・ベストム前 La Terre・BESTOM｜時刻表（2026年4月1日改正）",
+      "sourceUrl": "https://www.furanobus.jp/lavender/index.html",
+      "checkedAt": "2026-11-07",
+      "condition": "上車方式同 asahikawa:F165",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F22",
+      "claim": "薰衣草號往美瑛・旭川機場・旭川方向一天 7 班，中富良野 07:02、08:32、09:37、11:02、12:52、13:52、16:27 發；分別在 07:34、09:04、10:09、11:34、13:24、14:24、16:59 到美瑛站，07:53、09:23、10:28、11:53、13:43、14:43、17:18 到旭川機場，08:30、10:00、11:05、12:30、14:20、15:20、17:55 到 JR 旭川站前。",
+      "quote": "中富良野 7:02 8:32 9:37 11:02 12:52 13:52 16:27｜旭川空港 7:53 9:23 10:28 11:53 13:43 14:43 17:18｜JR旭川駅前 8:30 10:00 11:05 12:30 14:20 15:20 17:55",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_旭川線（時刻表PDF）.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "ふらのバス旭川線時刻表 PDF（2026-04-01 改正）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F23",
+      "claim": "薰衣草號往富良野方向一天 7 班，JR 旭川站 09:55、11:25、12:30、13:55、15:45、16:45、19:20 發，旭川機場 10:37、12:07、13:12、14:37、16:27、17:27、20:02 發，美瑛站 10:52、12:22、13:27、14:52、16:42、17:42、20:17 發，中富良野 11:21、12:51、13:56、15:21、17:11、18:11、20:46 發，12 分鐘後到富良野站前。",
+      "quote": "JR旭川駅前 9:55 … 19:20｜旭川空港 10:37 … 20:02｜美瑛駅 10:52 … 20:17｜中富良野 11:21 12:51 13:56 15:21 17:11 18:11 20:46｜富良野駅前 11:38 … 21:03",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_旭川線（時刻表PDF）.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "同上；富良野駅前到站比中富良野晚 17 分（中間十字街只下車），從富良野往中富良野則是 12 分",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F24",
+      "claim": "薰衣草號所要時間：JR 旭川站前→中富良野約 1 小時 26 分，旭川機場→中富良野約 44 分，美瑛站→中富良野約 29 分，富良野站前→中富良野 12 分。",
+      "quote": "JR旭川駅前 9:55 → 中富良野 11:21｜旭川空港 10:37 → 11:21｜美瑛駅 10:52 → 11:21｜富良野駅前 6:50 → 中富良野 7:02",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_旭川線（時刻表PDF）.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "由 F22、F23 時刻相減；富田農場官網寫「旭川駅前⇔中富良野 約1時間25分、旭川空港⇔約48分、富良野駅前⇔約12分」",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28",
+      "derivedFrom": [
+        "F22",
+        "F23"
+      ]
+    },
+    {
+      "factId": "F25",
+      "claim": "薰衣草號車資（2025-10-01 改正，大人）：中富良野到富良野站前 260 日圓、到美瑛站 540 日圓、到旭川機場 690 日圓、到 JR 旭川站前 800 日圓；兒童半價（10 日圓以下進位）。",
+      "quote": "運賃表（2025年10月1日改正）｜小児運賃は大人運賃の半額（10円未満切り上げ）",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2025/09/2025-10-01_旭川線（運賃表PDF）.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "由運賃表圖片的縱橫交叉格讀出（中富良野列：富良野駅前 260；美瑛駅列第 6 格 540；旭川空港列第 8 格 690；JR旭川駅前列第 13 格 800），寫作前再核一次",
+      "changeType": "price",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F26",
+      "claim": "搭薰衣草號在「中富良野」下車後，走到富田農場約 25 分，或搭中富良野ハイヤー計程車約 5 分。",
+      "quote": "中富良野から徒歩（約25分）またはタクシーでお越しください。中富良野ハイヤー TEL：0167-44-2331 所要時間5分",
+      "sourceUrl": "https://www.farm-tomita.co.jp/access/",
+      "checkedAt": "2026-11-07",
+      "condition": "富田農場「アクセスガイド」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F27",
+      "claim": "中富良野ハイヤー是町內唯一的計程車公司，電話 0167-44-2331，營業 07:00～19:00、無休，有輪椅可上的車；觀光共乘計程車 2025 年度停辦。",
+      "quote": "中富良野町唯一のハイヤー会社｜営業時間 7：00～19：00｜定休日 無休｜2025年度も観光乗合タクシーの運行は中止",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-100",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F28",
+      "claim": "從富良野站搭計程車到富田農場約 15 分（富良野タクシー 0167-22-5001）。",
+      "quote": "富良野タクシー TEL：0167-22-5001 所要時間15分",
+      "sourceUrl": "https://www.farm-tomita.co.jp/access/",
+      "checkedAt": "2026-11-07",
+      "condition": "富田農場「アクセスガイド」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F29",
+      "claim": "開車到富田農場：旭川機場經國道 237 號約 45 分；新千歲機場經道東自動車道占冠 IC 約 2 小時 30 分；札幌經道央自動車道三笠 IC 約 2 小時 30 分；不要路邊停車或停進巴士專用停車場。",
+      "quote": "旭川空港より 国道237号経由・・・約45分｜新千歳空港より … 約2時間30分｜札幌市内より … 約2時間30分",
+      "sourceUrl": "https://www.farm-tomita.co.jp/access/",
+      "checkedAt": "2026-11-07",
+      "condition": "富田農場「アクセスガイド」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F30",
+      "claim": "2025 年薰衣草季的三連休（7/19～7/21），國道 237 號在容易塞車的路段增加車道，並跑免費接駁巴士與租借（腳踏車）等措施紓解塞車。",
+      "quote": "ラベンダー観光でにぎわう国道２３７号の渋滞を緩和する取組みとして、混雑の見込まれる区間の車線増加と、無料シャトルバス及びレンタル",
+      "sourceUrl": "https://nakafukanko.com/news/news-5268",
+      "checkedAt": "2026-11-07",
+      "condition": "只查到 2025 年的公告（連到的町公所頁已不存在）；2026 年有沒有辦未查到",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-05-01"
+    },
+    {
+      "factId": "F31",
+      "claim": "觀光案內所「駅前BASE33」在中富良野站前（南町1-24），2026-07-11 開幕，電話 0167-39-3033。",
+      "quote": "中富良野駅前に 2026 年７月 11 日(土)にオープンしました",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260715_AS_HP_nakafuranohanabirinji.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道旭川支社 2026-07-15 新聞稿；地址電話見觀光協會 spot-5951",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F32",
+      "claim": "駅前BASE33 營業時間：6～8 月 09:00～18:00，1～5 月與 9～12 月 09:00～17:00。",
+      "quote": "９：００～18：00 （６月～８月） ９：００～17：00 （1月～5月）、（9月～12月）",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-5951",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會 2026-09-01 公告「9月1日から翌年5月31日まで 9:00〜17:00」一致（news-6342）",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F33",
+      "claim": "駅前BASE33 可寄放行李（09:00～16:30，一件 800 日圓，原則收大件），也有當天用的投幣置物櫃（300～700 日圓）。",
+      "quote": "手荷物預かり 9:00～16:30*最終受渡し 800円/1件｜コインロッカー ご利用は当日限り 300円～700円",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-5951",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會 BASE33 頁",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F34",
+      "claim": "駅前BASE33 出租自行車：7/1～10 月底，09:00～16:30（最後出借 15:00），最初 2 小時 2,000 日圓、之後每小時加 500 日圓、一天最多 3,500 日圓；下雨或強風停止受理。",
+      "quote": "レンタル期間 ：7月1日～10月末｜最初の２時間： ２０００円 １時間ごと ： ５００円追加 １日 ： 最大３５００円",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-6029",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會；年份未寫，2026-07-10 公告開始出租",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F35",
+      "claim": "北星山薰衣草園離駅前BASE33 約 750 公尺，走路約 10 分。",
+      "quote": "駅前BASE33から750m(徒歩約10分)の場所にある 北星山ラベンダー園",
+      "sourceUrl": "https://nakafukanko.com/news/news-5933",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會 2026-05-07 公告",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F36",
+      "claim": "薰衣草祭花火大會當天（2026-08-01）JR 加開臨時列車：中富良野 21:24 發、22:30 到旭川（富良野～旭川 2 節車廂）；前一班普通車 20:54 發、21:47 到旭川；順延時 8/2 也開。",
+      "quote": "中富良野駅 21：24 発 … 旭川駅 22：30 着｜20：54 発 … 21：47 着｜※花火大会順延の場合は、８月２日も運転します。",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260715_AS_HP_nakafuranohanabirinji.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道旭川支社 2026-07-15 新聞稿",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-05-01"
+    },
+    {
+      "factId": "F37",
+      "claim": "花火大會會場走到中富良野站約 15 分，煙火約 20:30 結束；JR 呼籲先買好車票。",
+      "quote": "花火は 20:30 頃終了予定。会場から駅まで徒歩 15 分程度｜きっぷの事前購入にご協力ください",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260715_AS_HP_nakafuranohanabirinji.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "同上",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-05-01"
+    },
+    {
+      "factId": "F38",
+      "claim": "2026 年夏季（花火大會當天的表）旭川往富良野的普通車有 15:33、16:30、17:47 發，分別在 16:36、17:30、18:51 經過中富良野；慢車號 5 號 15:55 過中富良野。",
+      "quote": "旭川発 15:33 16:30 17:47｜中富良野発 16:36 17:30 18:51｜ノロッコ5号 中富良野 15:55",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20260715_AS_HP_nakafuranohanabirinji.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 新聞稿第 2 頁海報；只有傍晚幾班，夏季全日表沒有查",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F39",
+      "claim": "富田農場（ファーム富田）在中富良野町基線北15号，電話 0167-39-3939。",
+      "quote": "北海道空知郡中富良野町基線北15号 TEL 0167 39 3939",
+      "sourceUrl": "https://www.farm-tomita.co.jp/",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F40",
+      "claim": "富田農場入園免費、停車也免費。",
+      "quote": "入園料・駐車料ともに無料です。",
+      "sourceUrl": "https://www.farm-tomita.co.jp/news/detail.asp?id=52",
+      "checkedAt": "2026-11-07",
+      "condition": "官網「よくあるご質問」",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F41",
+      "claim": "富田農場停車場可停小客車約 500 輛、巴士約 30 輛，另有幾個身障車位。",
+      "quote": "乗用車約500台分、バス約30台分の駐車スペース",
+      "sourceUrl": "https://www.farm-tomita.co.jp/news/detail.asp?id=52",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F42",
+      "claim": "富田農場全年無休。",
+      "quote": "ファーム富田は年中無休で営業しております。",
+      "sourceUrl": "https://www.farm-tomita.co.jp/east/",
+      "checkedAt": "2026-11-07",
+      "condition": "ラベンダーイースト頁的註記；觀光協會頁也寫「毎日開園」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F43",
+      "claim": "富田農場官網首頁每天公布當天的營業時間，2026-11-07 是 09:30～16:30；營業時間外不能入園。",
+      "quote": "本日 [2026/11/07] の営業時間 9:30～16:30 営業時間外のご入園はお控えください",
+      "sourceUrl": "https://www.farm-tomita.co.jp/",
+      "checkedAt": "2026-11-07",
+      "condition": "「よくあるご質問」的營業時間答案在頁面上沒有文字（F141）",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F44",
+      "claim": "園區主要建築（花人の舎、ギャラリーフルール）營業時間：4 月中旬 09:30～16:30、4 月下旬 09:00～16:30、5 月～6 月中旬 08:30～17:00（藝廊 09:00～17:00）、6 月下旬～8 月中旬 08:30～17:30、8 月下旬～9 月 09:00～17:00、10～11 月 09:30～16:30、12 月～4 月上旬 10:00～16:00。",
+      "quote": "● 6月下旬～8月中旬 8:30～17:30 … ● 10月～11月 9:30～16:30 ● 12月～4月上旬 10:00～16:00",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/facility_guide.asp?id=1",
+      "checkedAt": "2026-11-07",
+      "condition": "花人の舎頁；ギャラリーフルール（facility id=3）同表，只差 5 月～6 月中旬",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F45",
+      "claim": "富田農場的薰衣草每年 6 月下旬早開品種開始上色，7 月上旬～中旬最盛，之後依序收割，8 月上旬～中旬全部收割完。",
+      "quote": "例年6月下旬ごろより早咲の品種が色づき始め、7月上旬～中旬ごろに見頃のピーク … 8月上旬～中旬ごろにすべての刈取りが終了",
+      "sourceUrl": "https://www.farm-tomita.co.jp/news/detail.asp?id=52",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F46",
+      "claim": "富田農場四種薰衣草的花期：濃紫早咲 6 月中旬～7 月中旬、おかむらさき 7 月上旬～下旬、ようてい 7 月上旬～下旬、はなもいわ 7 月中旬～下旬；最晚的ラバンジン 7 月中旬～8 月上旬。",
+      "quote": "ラベンダー濃紫早咲 開花時期 6月中旬～7月中旬｜おかむらさき 7月上旬～7月下旬｜ようてい 7月上旬～7月下旬｜はなもいわ 7月中旬～7月下旬",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/flower_guide.asp?id=2",
+      "checkedAt": "2026-11-07",
+      "condition": "倖の畑頁；ラバンジン見遅咲きラバンジン畑頁",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F47",
+      "claim": "「倖の畑」在園區中央，種濃紫早咲、おかむらさき、ようてい、はなもいわ四種薰衣草，排成紫色漸層，見頃 7 月上旬～中旬。",
+      "quote": "花色の異なる4種類のラベンダーが紫色のグラデーション｜見ごろ 7月上旬～中旬",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/flower_guide.asp?id=2",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F48",
+      "claim": "彩色花田「彩りの畑」是富田農場的代表花田：薰衣草、白色滿天星、紅色罌粟、粉紅色小町草、橘色花菱草排成彩虹般的花帶；開花 7 月上旬～下旬，見頃 7 月中旬～下旬。",
+      "quote": "ファーム富田を代表する畑｜開花時期 7月上旬～下旬｜見ごろ 7月中旬～下旬",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/flower_guide.asp?id=3",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F49",
+      "claim": "「傳統薰衣草田（トラディショナルラベンダー畑）」是富田農場的起點，官網稱是日本歷史最久的薰衣草田；曾登上國鐵月曆，讓富良野的薰衣草全國知名。",
+      "quote": "日本で最も歴史のあるラベンダー畑です。国鉄のカレンダーで紹介されたことで富良野のラベンダーを全国に広めるきっかけ",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/flower_guide.asp?id=4",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F50",
+      "claim": "傳統薰衣草田整片斜坡都是薰衣草，爬到坡頂能看到富良野盆地的田園與十勝岳連峰；見頃 7 月上旬～中旬。",
+      "quote": "畑の上まで登れば … 富良野盆地の田園風景と十勝岳連峰が一望できます｜見ごろ 7月上旬～中旬",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/flower_guide.asp?id=4",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F51",
+      "claim": "「花人の畑」從春天的球根花、三色堇到秋天的萬壽菊輪流開，開花期 4 月中旬～10 月上旬，見頃 7 月上旬～9 月下旬，薰衣草季以外也有花。",
+      "quote": "開花時期 4月中旬～10月上旬｜見ごろ 7月上旬～9月下旬",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/flower_guide.asp?id=1",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F52",
+      "claim": "「晚開ラバンジン田」種園內最晚開的品種ラバンジン，見頃 7 月下旬～8 月上旬。",
+      "quote": "最も遅咲きの品種である「ラバンジン」｜見ごろ 7月下旬～8月上旬",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/flower_guide.asp?id=15",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F53",
+      "claim": "「森之薰衣草田」左右分別種おかむらさき與濃紫早咲，見頃 7 月上旬～中旬。",
+      "quote": "右手に「おかむらさき」、左手に「濃紫早咲」｜見ごろ 7月上旬～中旬",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/flower_guide.asp?id=11",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F54",
+      "claim": "溫室（グリーンハウス）讓夏天以外也能看到薰衣草（濃紫早咲）；冬季 12 月～4 月上旬 10:00～16:00 開。",
+      "quote": "畑にラベンダーが咲いていない夏以外の季節にも、ラベンダーを楽しんでいただける温室｜12月～4月上旬 10:00～16:00",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/flower_guide.asp?id=9",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-12-15"
+    },
+    {
+      "factId": "F55",
+      "claim": "2026 年「倖の小路」屋頂新設展望台，可以俯瞰倖の畑，晴天看得到十勝岳連峰。",
+      "quote": "倖の小路のパッサージュの上に、新たに展望デッキができました。デッキからは倖の畑を一望",
+      "sourceUrl": "https://www.farm-tomita.co.jp/news/detail.asp?id=392",
+      "checkedAt": "2026-11-07",
+      "condition": "官網 2026-04-20 公告",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F56",
+      "claim": "倖の小路有 3 家小店（原創商品、薰衣草霜淇淋、切片哈密瓜與甜點），5 月與 10 月 09:30～16:00、夏季 08:30～17:30，冬季關閉；哈密瓜 5 月下旬起賣。",
+      "quote": "● 5月 9:30～16:00 ● 夏季 8:30～17:30 ● 10月 9:30～16:00 ● 冬季 クローズ｜メロンの取り扱いは5月下旬～予定",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/facility_guide.asp?id=7",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F57",
+      "claim": "「薰衣草東區（ラベンダーイースト）」在富田農場往十勝岳方向約 4 公里的上富良野町東中，是日本最大級的薰衣草田；2026 年只開 6/20～7/20，09:30～16:30；從富田農場開車約 7 分。",
+      "quote": "東に4kmほど行った上富良野東中 … 日本最大級のラベンダー畑｜2026年6月20日(土)～7月20日(月・祝) 営業 9:30～16:30｜ファーム富田より車で約4km（約7分）",
+      "sourceUrl": "https://www.farm-tomita.co.jp/east/",
+      "checkedAt": "2026-11-07",
+      "condition": "位置在上富良野町，由富田農場經營；交通時間出自アクセスガイド",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F58",
+      "claim": "薰衣草東區的「薰衣草巴士」是拖拉機拉著座椅在花田中繞約 15～20 分，大人（中學以上）500 日圓、4 歲到小學 250 日圓、3 歲以下免費，天候不佳可能停駛。",
+      "quote": "15分～20分ほどかけてラベンダー畑の中を進みます｜おとな（中学生以上）500円 こども（4歳以上小学生以下）250円 3歳以下 無料",
+      "sourceUrl": "https://www.farm-tomita.co.jp/east/bus.asp",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F59",
+      "claim": "花人の舎是入口的迎賓館：1 樓是原創商品店「マリー」，2 樓有 4 國語影片介紹薰衣草歷史的資料室，以及可免費用 5 種薰衣草精油做「香味書籤」的體驗室，也有禮拜室。",
+      "quote": "ファーム富田に咲く5品種のラベンダーオイルから無料で香りのしおりを作ることができる「香りの体験室」",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/facility_guide.asp?id=1",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F60",
+      "claim": "花人の舎東側入口有投幣置物櫃（大 8、中 6 個，500 日圓）。",
+      "quote": "東側入口に大８個、中６個のコインロッカーがあります。(500円)",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/facility_guide.asp?id=1",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F61",
+      "claim": "香水之舍（香水の舎）在傳統薰衣草田前，可以看調香與製作香水，也能用喜歡的香水做香味書籤；5 月～10 月中旬開，10 月下旬～4 月關閉。",
+      "quote": "商品を製造する様子を見学することができる｜● 10月下旬～4月 クローズ",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/facility_guide.asp?id=4",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F62",
+      "claim": "蒸餾之舍（蒸留の舎）在 7 月前後收割期，可以看到蒸餾機把薰衣草抽成精油；夏季販賣精油與薰衣草蒸餾水，冬季關閉。",
+      "quote": "ラベンダーの刈り取りの時期(7月頃)には、実際に蒸留機が稼動｜冬季 クローズ",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/facility_guide.asp?id=11",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F63",
+      "claim": "ギャラリーフルール 2026 年 3 月改裝成可以拍照的展示空間，全年無休、免費入館。",
+      "quote": "2026年3月より、「観る」展示から「撮る」展示へとリニューアルオープン｜年中無休、入館無料です。",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/facility_guide.asp?id=3",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F64",
+      "claim": "富田農場的薰衣草霜淇淋甜筒 450 日圓、杯裝 400 日圓，全年販售；哈密瓜、香草與綜合口味 4 月下旬～10 月下旬。",
+      "quote": "ラベンダーソフトクリーム 価格：コーン 450円 / カップ 400円 … 販売期間 通年｜メロンソフトクリーム … 4月下旬～10月下旬",
+      "sourceUrl": "https://www.farm-tomita.co.jp/cafe/foodmenu.asp?cat=1",
+      "checkedAt": "2026-11-07",
+      "condition": "價格含稅與否頁面未寫",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F65",
+      "claim": "富田農場的切片富良野哈密瓜（紅肉）520 日圓起，依時期變動，6 月上旬～9 月下旬販售。",
+      "quote": "富良野カットメロン 価格：520円～ ※時期により変動有｜販売期間 6月上旬～9月下旬",
+      "sourceUrl": "https://www.farm-tomita.co.jp/cafe/foodmenu.asp?cat=2",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F66",
+      "claim": "富田農場現烤富良野哈密瓜麵包 390 日圓，4 月中旬～10 月下旬，數量限定。",
+      "quote": "やきたて ふらのメロンパン 価格：390円｜4月中旬～10月下旬",
+      "sourceUrl": "https://www.farm-tomita.co.jp/cafe/foodmenu.asp?cat=2",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F67",
+      "claim": "富田農場咖啡的「北海道季節蔬菜咖哩」850 日圓，午餐時段限定，4 月下旬～10 月下旬，米用中富良野產ななつぼし。",
+      "quote": "北海道産季節の野菜カレー … 中富良野町産「ななつぼし」を使用 価格：850円｜※ランチタイム限定",
+      "sourceUrl": "https://www.farm-tomita.co.jp/cafe/foodmenu.asp?cat=3",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F68",
+      "claim": "富田農場部分餐點由美瑛餐廳「バローレ」主廚才田誠監修（2019 年起），例如上富良野產越冬馬鈴薯焗烤配咖哩 1,540 日圓。",
+      "quote": "バローレ（美瑛町）オーナーシェフ 才田誠 氏 監修メニュー｜越冬メークインのグラタンとカレーのセット 価格：1,540円",
+      "sourceUrl": "https://www.farm-tomita.co.jp/cafe/foodmenu.asp?cat=3",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F69",
+      "claim": "富田農場咖啡夏季在花人の舎旁「カフェルネ」、冬季在花人の舎 1 樓「ルネ」營業；座位不能預約，沒有團體菜單。",
+      "quote": "夏季は｢カフェルネ｣(花人の舎横)、冬季は｢ルネ｣(花人の舎1階)｜お席のご予約は承っておりません(全席自由席)",
+      "sourceUrl": "https://www.farm-tomita.co.jp/farm/facility_guide.asp?id=1",
+      "checkedAt": "2026-11-07",
+      "condition": "FAQ（detail.asp?id=52）一致",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F70",
+      "claim": "富田農場春到秋賣盆栽薰衣草苗（數量限定、可寄送）；新鮮切花 7 月前後販售，只能自己帶走。",
+      "quote": "鉢に入ったポット苗を春から秋にかけて販売 … 生の切り花は7月頃に販売を行っておりますが、持ち帰りのみ",
+      "sourceUrl": "https://www.farm-tomita.co.jp/news/detail.asp?id=52",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F71",
+      "claim": "富田農場的園內規則：不能進花田（通路除外）、不能摘花果、禁止空拍機、禁止帶外食飲料入園、不能帶寵物、全面禁菸、禁止三腳架、請避免穿婚紗拍照、商業攝影禁止、停車場禁止車中泊。",
+      "quote": "畑の中には決して立ち入らないでください｜ドローン 等の飛行および撮影は 禁止｜園内への飲食物のお持ち込みは禁止｜ペットを連れてのご入園はお断り｜三脚類の使用は禁止｜車中泊は禁止",
+      "sourceUrl": "https://www.farm-tomita.co.jp/news/detail.asp?id=85",
+      "checkedAt": "2026-11-07",
+      "condition": "官網 2026-05-01「ご来園のお客様へ」",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F72",
+      "claim": "富田農場隔壁的「富田哈密瓜之家（とみたメロンハウス）」和富田農場無關，在那邊買的食物與垃圾不要帶進富田農場。",
+      "quote": "「 とみたメロンハウス 」は 当園とは無関係の施設です",
+      "sourceUrl": "https://www.farm-tomita.co.jp/news/detail.asp?id=85",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F73",
+      "claim": "富田農場免費出借輪椅、嬰兒車與拐杖，數量不多，先到先借、不能預約。",
+      "quote": "若干数ですが用意しております。また、杖の貸し出しも行っております。利用料は無料です。",
+      "sourceUrl": "https://www.farm-tomita.co.jp/news/detail.asp?id=52",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F74",
+      "claim": "富田農場官網首頁有「現在のファーム富田の映像」，可以看花人の畑與溫室的即時畫面。",
+      "quote": "現在のファーム富田の映像 … 花人の畑 ｸﾞﾘｰﾝﾊｳｽ",
+      "sourceUrl": "https://www.farm-tomita.co.jp/",
+      "checkedAt": "2026-11-07",
+      "condition": "中文自動完成「富田農場即時影像」",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F75",
+      "claim": "富田農場有官方繁體中文網站，名稱寫「富田農場」。",
+      "quote": "官方网站富田農場｜繁体中文",
+      "sourceUrl": "https://www.farm-tomita.co.jp/cn/",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F76",
+      "claim": "觀光協會介紹富田農場以薰衣草為主、約 80 種花，園內 12 片花田，春到秋都有花。",
+      "quote": "ラベンダーを中心に80種類もの花々 … 園内には12の花畑があり",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-87",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F77",
+      "claim": "北星山薰衣草園（町營）在中富良野町宮町1-41，冬天是北星滑雪場；洽詢なかふらの觀光協會 0167-39-3033。",
+      "quote": "北星山ラベンダー園／北星スキー場｜TEL 0167-39-3033｜所在地 中富良野町宮町1-41",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F78",
+      "claim": "2026 年北星山觀光吊椅（中文常寫「北星山纜車」）6/13～8/23 營業，09:00～17:00，售票與上行受理到 16:40；山頂的北星ハウス與商店配合吊椅收班。",
+      "quote": "【夏季】2026年6月13日～8月23日 9:00～17:00 (チケット販売及び、のぼりリフト受付は16:40まで)",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F79",
+      "claim": "北星山觀光吊椅來回票：大人（高中以上）700 日圓、小中學生 350 日圓、學齡前免費；在北星ハウス旁紫色售票亭或商店買。",
+      "quote": "大人往復（高校生以上） ：700円 子ども往復（小・中学生）：350円 未就学児 無料",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676",
+      "checkedAt": "2026-11-07",
+      "condition": "2026 年夏季",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F80",
+      "claim": "北星山觀光吊椅是單人座，約 5 分半到山頂；不能抱小孩、行李或寵物搭乘，5、6 歲小孩要能自己坐。",
+      "quote": "約5分半の観光リフトで北星山の頂上へ｜一人乗りリフトですので、子供を膝に乗せての乗車、ペット同伴の乗車は安全上お断り",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F81",
+      "claim": "北星山斜坡種 3 種薰衣草與一年生草花，從山頂看得到十勝岳連峰與田園。",
+      "quote": "一面に広がる3種類のラベンダーや鮮やかな一年草の花畑｜十勝岳連峰と田園風景",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F82",
+      "claim": "北星山薰衣草園夏季停車場 83 輛＋巴士 5 輛，冬季 15 輛。",
+      "quote": "【夏季】83台＋バス5台 【冬季】15台",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F83",
+      "claim": "北星滑雪場例年 1 月第 2 週左右到 3 月上旬營業（看積雪）；2025-2026 季因積雪不足停業，只開兒童玩雪區；2026-2027 季「準備中」。",
+      "quote": "例年1月第2週あたり から3月上旬までオープン｜2025ー2026シーズンは積雪不足のため営業中止｜2026ー2027シーズン 準備中",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2026-12-15"
+    },
+    {
+      "factId": "F84",
+      "claim": "北星山是薰衣草祭與花火大會的會場。",
+      "quote": "富良野地方の夏をつげるお祭り、ラベンダーまつり＆花火大会の会場でもあります",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F85",
+      "claim": "北星山薰衣草園的「ラベマルシェ北星山」2026 年營業 6/13～8/23。",
+      "quote": "北星山ラベンダー園ラべマルシェ営業： 6月13日(土) ～ 8月23日(日)",
+      "sourceUrl": "https://nakafukanko.com/news/news-6004",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會 2026-06-01 公告",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F86",
+      "claim": "冬天去北星山展望台：開車停在山後中富良野森林公園的停車場；走路沿車道上去，不要走進滑雪場的雪地（下面的薰衣草會受傷）；展望台出入口附近不能停車。",
+      "quote": "駐車場は北星山展望台の裏にある中富良野森林公園内にあります｜スキー場内の雪の下に覆われているラベンダーがいたむので、雪場内に入らないでください",
+      "sourceUrl": "https://nakafukanko.com/news/news-4900",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會 2025-01-16 公告",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F87",
+      "claim": "なかふらのフラワーパーク緊鄰北星山薰衣草園，有噴水與草坪，季節花卉，地址宮町2-1，停車 78 輛。",
+      "quote": "北星山ラベンダー園に隣接する噴水のある芝生の公園｜駐車場 78台",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-139",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F88",
+      "claim": "中富良野神社在北星山半山腰，春天賞櫻、秋天賞楓，09:00～17:00（冬季到 16:00），停車 40 輛。",
+      "quote": "北星山の中腹に位置｜9:00~17:00（冬期は16:00まで）｜駐車場 40台",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-902",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F89",
+      "claim": "中富良野森林公園在北星山的森林裡，有多條步道，春天櫻花與鬱金香、秋天紅葉。",
+      "quote": "北星山にある森林には数多くの遊歩道が設置されています",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-140",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F90",
+      "claim": "NANAKAの花畑是種無農藥薰衣草的小花田，可以自己摘：預定 6/20～7/31 開（看花況），08:00～17:00；摘取 1 袋＋剪刀 1 把 1,500 日圓（含稅），只參觀 500 日圓；走路或騎腳踏車來的人送一束約 30 枝的鮮花。",
+      "quote": "6月20日～7月31日 オープン予定（ラベンダーの開花状況によって変動あります） 08:00～17:00｜摘み取り体験 ・1袋+ハサミ１丁 1.500円（税込）｜見学のみ※500円（税込）",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-58",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；頁面沒寫年份",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F91",
+      "claim": "北海道風景畫館（畫家奧田修一的個人美術館）4/29～10/10 開館，10:00～15:00 入館，週一休（遇假日隔天休）；大人 500 日圓、國高中 300 日圓，和「畫家之庭」聯票大人 900 日圓。",
+      "quote": "４月２９日～１０月１０日 開 園 １０：００～１５：００（入館）｜月曜休館｜入館料 大人５００円、中高生３００円（画家の庭との共通券 大人９００円",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2548",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F92",
+      "claim": "北海道風景畫館的木造洋館（1950 年建）是尹錫湖導演的松竹電影《心に吹く風》外景地。",
+      "quote": "昭和25年築の木造の洋館は … ユン・ソクホ監督の松竹映画「心に吹く風」のロケ地",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2548",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；文化連結，寫作前用電影官方資料再核",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F93",
+      "claim": "なかふらの觀光協會請遊客不要走進農田拍照，農地是私有財產，請在鋪裝道路上拍。",
+      "quote": "農地は農業を営む方々の大切な私有財産ですので、敷地外・道路からご見学ください",
+      "sourceUrl": "https://nakafukanko.com/",
+      "checkedAt": "2026-11-07",
+      "condition": "首頁；細節見 /rule/",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F94",
+      "claim": "2026 年「なかふらりー」自行車集章 7/11～9/30，在町內檢查點（駅前BASE33、北星山、富田農場、富田哈密瓜之家等）蓋章，集滿 7 個可抽特產。",
+      "quote": "なかふらりー/ロングランサイクリング 7月11日(土)～9月30日（水）｜7か所以上のチェックポイントでスタンプを集めて応募",
+      "sourceUrl": "https://nakafukanko.com/news/news-6215",
+      "checkedAt": "2026-11-07",
+      "condition": "2026 年活動",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-05-01"
+    },
+    {
+      "factId": "F95",
+      "claim": "富田哈密瓜之家（とみたメロンハウス）在宮町3-32，6～9 月營業 09:00～17:00、期間無休，10～5 月休；免費停車約 300 輛；2025 年營業到 10/13。",
+      "quote": "6月～9月（無休…メロンの収穫状況により変更があります）｜営業時間が9：00から17：00に変更｜2025年の営業について、今年は10月13日をもちまして終了",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-76",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；官網 tomita-m.co.jp 未核對",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F96",
+      "claim": "富田哈密瓜之家有切片哈密瓜、紅肉與青肉兩種哈密瓜麵包。",
+      "quote": "赤肉メロンパン、さわやかな甘みの青肉メロンパンの２種",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-76",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F97",
+      "claim": "ポプラファーム中富良野本店賣北海道甜點「聖誕老人的鬍子（サンタのヒゲ）」，夏季（4 月中旬～10 月中旬）09:00～17:00 無休，冬季要先問；停車約 100 輛。",
+      "quote": "北海道スイーツ「サンタのヒゲ」｜夏季（営業期間4月中旬～10月中旬） 9：00～17：00",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-92",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F98",
+      "claim": "西中直賣本舗賣霜淇淋與當地蔬菜，例年 6 月中旬～8 月底 09:30～17:00，6～8 月週四休。",
+      "quote": "例年6月中旬から8月末まで営業 9：30～17：00｜６～８月木曜定休日",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-904",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F99",
+      "claim": "北之咖哩工房きらら在なかふらのフラワーパーク內，用中富良野與北海道產蔬菜；6/1～9 月底無休，10 月只接預約，冬季休，只收現金。",
+      "quote": "6月1日～９月末まで無休、１０月は予約のみ。 冬期は休み｜現金のみ",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2291",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F100",
+      "claim": "ラーメン壽淺（ラーメン寿浅 マコト大作戦）在基線北8號，10:30～15:00（拉麵最後點餐 14:00），週日、一、二休；味噌拉麵 1,000 日圓。",
+      "quote": "10:30～15:00 ※ラーメンのラストオーダーは14:00｜日曜・月曜・火曜 (不定休有)｜ラーメン：1000円",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-866",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；營業日以店家 Facebook 為準",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F101",
+      "claim": "ゑびす屋在本町8-9，自家湯頭的旭川拉麵，11:00～15:00（可能提早收），週二、三休。",
+      "quote": "自家製スープが自慢の旭川ラーメンのお店｜11：00～15：00 早じまいする場合もあり｜火曜、水曜",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-96",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F102",
+      "claim": "粋な小将（こまさ）在南町7-25，當地人常去的餐廳，11:30～13:00、17:00～21:00（最後點餐 20:00），週日休。",
+      "quote": "11：30～13：00 17：00～21：00（ラストオーダー20：00）｜日曜（予約営業可）",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-382",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F103",
+      "claim": "富良野成吉思汗ひつじの丘（中富良野ベベルイ）在戶外露台吃サフォーク羊成吉思汗烤肉，4/27～10/13 11:00～15:00（最後點餐 14:30），期間無休。",
+      "quote": "サフォークジンギスカンをオープンテラスで｜4/27～10/13 11：00～15：00（L.O.14：30）",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-84",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；年份未寫",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F104",
+      "claim": "尼泊爾餐廳ネパールダイニング在暁町3-19，11:00～20:45（最後點餐），午餐 11:00～15:00，第 2、4 個週三休；午餐套餐 750 日圓起。",
+      "quote": "11：00～20：45（Ｌ．Ｏ）｜第２・第４水曜｜ランチセット７５０円",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2690",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F105",
+      "claim": "麵包店ぱん屋やまなか在基線北20號，09:00～17:00；夏季（5～10 月）週日一休，冬季（11～4 月）週日一二休。",
+      "quote": "9：00～17：00｜夏季5月～１０月 ：日・月 定休 冬季11月～4月 ：日・月・火 定休",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-505",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F106",
+      "claim": "すぎやま珈琲（西1線北14號）每杯用法蘭絨濾布手沖自家烘焙咖啡，10:00～18:00，週日一休。",
+      "quote": "オーダーごとにネルドリップで淹れる自家焙煎コーヒー｜10：00～18:00｜毎週日曜日、月曜日",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2104",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F107",
+      "claim": "縄文湧水 Cafe beberui（ベベルイ）用自家菜園蔬菜，6 月～10 月中旬 09:30～17:00（午餐 11:00 起），週一、四休，冬季休業。",
+      "quote": "6～10月中旬の間営業 9：30～17：00（ランチは11：00より）｜月・木曜日 冬期休業",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-572",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F108",
+      "claim": "ふらのラテール的日歸溫泉「萬華之湯（万華の湯）」10:00～22:00（最後受理 21:00），大人 1,000 日圓、兒童 500 日圓，毛巾另付 300 日圓；有 15 種浴池。",
+      "quote": "日帰り入浴時間 10時～22時 最終受付21時 日帰り入浴料金 大人1000円 子ども500円 タオルは別途300円",
+      "sourceUrl": "https://www.f-laterre.com/",
+      "checkedAt": "2026-11-07",
+      "condition": "官網首頁；2026-11-07 公告部分浴池（3 處）維修暫停",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F109",
+      "claim": "中富良野町公所發行飲食店介紹冊子《地域おこし協力隊がお届け なかふらのグルメ》（2024 年版 PDF）。",
+      "quote": "中富良野町飲食店紹介冊子「地域おこし協力隊がお届け なかふらのグルメ」｜nakafurano_gourmetbook_2024_ver2.pdf",
+      "sourceUrl": "https://www.town.nakafurano.lg.jp/hotnews/detail/00002489.html",
+      "checkedAt": "2026-11-07",
+      "condition": "冊子內容這次沒有讀",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F110",
+      "claim": "第 43 屆中富良野薰衣草祭＆花火大會（なかふらのラベンダーまつり＆花火大会）2026 年 8 月 1 日（週六）舉行，會場是北星山薰衣草園與なかふらのフラワーパーク。",
+      "quote": "「第43回なかふらのラベンダーまつり＆花火大会」が2026年8月1日（土曜日）に開催されます。",
+      "sourceUrl": "https://nakafukanko.com/news/news-6230",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會 2026-07-15 公告",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-05-01"
+    },
+    {
+      "factId": "F111",
+      "claim": "2026 年薰衣草祭的時間表：17:00 開幕，晚間有太鼓與自衛隊音樂隊演奏，19:45 放煙火，20:30 音樂隊送行演奏。",
+      "quote": "17：00 開会挨拶｜19：45 花火打ち上げ｜20：30 陸上自衛隊上富良野駐屯地音楽隊 見送り演奏",
+      "sourceUrl": "https://nakafukanko.com/news/news-6230",
+      "checkedAt": "2026-11-07",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-05-01"
+    },
+    {
+      "factId": "F112",
+      "claim": "2026 年花火付費觀賞：山頂區附停車的入場券每輛 25,000 日圓、北星山薰衣草園區入場券每人 3,000 日圓；臨時停車場普通車 2,000、中型車 2,500、機車 1,500 日圓；チケットぴあ（P コード 661-081）5/29～7/31 販售，7-ELEVEN 店內機台也能買。",
+      "quote": "山頂エリア駐車場付き入場券（車両１台あたり） 25,000円｜北星山ラベンダー園エリア入場券（１人あたり） 3,000円｜普通車 2,000円",
+      "sourceUrl": "https://nakafukanko.com/news/news-6230",
+      "checkedAt": "2026-11-07",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-05-01"
+    },
+    {
+      "factId": "F113",
+      "claim": "2025 年第 42 屆在 7 月 12 日（週六）舉行，惡天候時只有煙火順延一天；舉辦日期每年不同（2026 年改在 8 月 1 日）。",
+      "quote": "令和 7 （ 2025 ）年 7 月 12 日（土曜日）（ ※ 悪天候時は花火大会のみ、翌日（ 7 月 13 日（日曜日））に順延",
+      "sourceUrl": "https://nakafukanko.com/news/news-5243",
+      "checkedAt": "2026-11-07",
+      "condition": "和 F110 比較得出「每年不同」",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-05-01",
+      "derivedFrom": [
+        "F110"
+      ]
+    },
+    {
+      "factId": "F114",
+      "claim": "2025 年薰衣草祭白天也有活動：觀光吊椅 09:00～15:00、早開薰衣草摘取、物產展、舞台表演，13:00 開幕。",
+      "quote": "9:00 ～ 15:00 北星山観光リフト営業（最終 14:40 ）｜10:00 ～ 14:00 早咲きラベンダー摘み取り体験｜13:00 開会挨拶",
+      "sourceUrl": "https://nakafukanko.com/news/news-5243",
+      "checkedAt": "2026-11-07",
+      "condition": "2025 年；2026 年只公布 17:00 起的時間表",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-05-01"
+    },
+    {
+      "factId": "F115",
+      "claim": "薰衣草祭主辦是なかふらのラベンダーまつり實行委員會（事務局在中富良野町企画課），洽詢 0167-39-3033。",
+      "quote": "なかふらのラベンダーまつり実行委員会事務局（中富良野町企画課） TEL: 0167-39-3033",
+      "sourceUrl": "https://nakafukanko.com/news/news-6230",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F116",
+      "claim": "SPA&HOTEL RESORT ふらのラテール在東1線北18號，入住 15:00、退房 10:00，全部客房與露天風呂都看得到十勝岳連峰；館內有商店「なかふらのマルシェ」（07:00～21:00）。",
+      "quote": "客室全室と大浴場露天風呂から雄大な十勝岳連峰を一望｜基本のチェックイン15：00～、チェックアウト～10：00",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-89",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；官網 f-laterre.com",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F117",
+      "claim": "ふらのラテール旁就是薰衣草號的「ラテール・ベストム前」站。",
+      "quote": "ラテール・ベストム前 La Terre・BESTOM",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_旭川線（時刻表PDF）.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "站名與旅館名對應；距離未量",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F118",
+      "claim": "富良野リゾート オリカ（西2線北17號，有高爾夫球場）2025-26 冬季營業 2025-12-01～2026-03-31，2025 年 11 月與 2026 年 4 月休館。",
+      "quote": "冬季営業期間：2025年12月1日（月） ～ 2026年3月31日（火） ※2025年11月、2026年4月は休館",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-59",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；官網 furano-orika.com 未核對",
+      "changeType": "stay",
+      "nextCheckAt": "2026-12-15"
+    },
+    {
+      "factId": "F119",
+      "claim": "ホテル ハナフジイン在丘町4-33，有洋室、和室與家庭房；11 月第 2 週到 12 月第 1 週休館。",
+      "quote": "11月第2週から12月第1週まで休業",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2103",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；官網 hanafujiinn.co.jp",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F120",
+      "claim": "ペンション やま山在基線北13號（富田農場附近），含早晚餐（晚餐 19:00），免費接送到 17:30，用 Email 預約。",
+      "quote": "夕・朝食付｜無料送迎あり。（17：30まで） ご予約・お問い合わせはＥメール",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-766",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；官網 www8.plala.or.jp/p-yamasan/",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F121",
+      "claim": "ペンション ラクレット在基線北14號，入住 15:00、退房 10:00，無休。",
+      "quote": "中富良野町基線北14号｜チェックイン 15：00～ チェックアウト ～10：00",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-507",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F122",
+      "claim": "プチホテル ブラン・ネージュ在東1線北18號，入住 15:00、退房 10:00，無休，停車 30 輛。",
+      "quote": "中富良野町東1線北18号｜チェックイン 15：00～",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-88",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F123",
+      "claim": "四季の宿 KI・ZU・NA 在西2線北19號，入住 15:00、退房 10:00，淡季不定休。",
+      "quote": "中富良野町西2線北19号｜無休（オフシーズンは不定休）",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-511",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；官網 shikinoyado-kizuna.com",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F124",
+      "claim": "ノーザンスターロッジ在西1線北14號，全年營業（偶爾休假，看官網），入住 16:00。",
+      "quote": "中富良野町西1線北14号｜通年営業",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-82",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；官網 northernstarlodge.info",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F125",
+      "claim": "FURANO HOSTEL 在丘町3-20，入住 16:00、退房 09:30；3 月底到黃金週前、10 月底到聖誕節後定期休館。",
+      "quote": "3月末～ゴールデンウィーク前まで、10月末～クリスマス後までは定期休館",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-57",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F126",
+      "claim": "ログコテージひまわり在西1線14號，12～3 月冬季休業。",
+      "quote": "12～3月は冬期休業",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-85",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F127",
+      "claim": "なかふらのinn 在本町3-1（町中心）。",
+      "quote": "中富良野町本町3-1",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-3174",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群；離車站距離未量",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F128",
+      "claim": "バンガロー・ヴィレッジ シュエット（4 棟小木屋）只在黃金週～9 月底營業，10～4 月休，只收現金。",
+      "quote": "GW～9月末｜10月～4月 冬季休業｜現金のみ",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-3071",
+      "checkedAt": "2026-11-07",
+      "condition": "なかふらの觀光協會スポット頁（觀光協會是町內官方觀光組織）；店家或旅館官網未逐一核對，寫進正文前再對官網或官方社群",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F129",
+      "claim": "觀光協會「宿泊」分類列出 30 多家，多是民宿、小木屋、包棟別墅與露營，大型飯店只有ふらのラテール、富良野リゾートオリカ等少數。",
+      "quote": "spot_cat/lodging（3 頁）",
+      "sourceUrl": "https://nakafukanko.com/spot_cat/lodging/",
+      "checkedAt": "2026-11-07",
+      "condition": "2026-11-07 逐頁列出 35 筆（含餐廳兼營者）",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F130",
+      "claim": "中富良野町內沒有氣象廳觀測點；最近的是南邊的「富良野」（北緯 43°20.0′、東經 142°24.0′、標高 174 m）與北邊的「上富良野」（43°27.3′、142°27.9′、220 m）。",
+      "quote": "viewPoint('a','0021','富良野' … '43','20.0','142','24.0','174'｜'1190','上富良野' … '43','27.3','142','27.9','220'",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/select/prefecture.php?prec_no=12&block_no=&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "中富良野町中心約北緯 43°24′（駅前BASE33 地圖座標 43.405）",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F131",
+      "claim": "富良野 1991～2020 年平年值：1 月平均 −8.3°C、日最低 −14.4°C；7 月平均 20.6°C、日最高 26.2°C；8 月平均 20.8°C、日最高 26.3°C；年降水量 1,032.1 mm。",
+      "quote": "1月 | 44.3 | -8.3 | -3.7 | -14.4｜7月 | 116.0 | 20.6 | 26.2 | 16.0｜8月 | 168.6 | 20.8 | 26.3 | 16.3｜年 | 1032.1",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F132",
+      "claim": "上富良野平年值：1 月平均 −8.1°C、日最低 −13.6°C；7 月平均 20.7°C、日最高 26.3°C；8 月平均 20.9°C。",
+      "quote": "1月 | 44.8 | -8.1 | -3.5 | -13.6｜7月 | 123.4 | 20.7 | 26.3 | 16.0｜8月 | 166.8 | 20.9 | 26.4",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1190&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F133",
+      "claim": "富良野與上富良野兩站各月平均氣溫相差都在 0.3°C 以內，夾在中間的中富良野可以用富良野站的平年值代表。",
+      "quote": "7月 20.6 / 20.7｜1月 -8.3 / -8.1",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "比較 F131、F132；富良野站有積雪資料，上富良野站沒有",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31",
+      "derivedFrom": [
+        "F131",
+        "F132"
+      ]
+    },
+    {
+      "factId": "F134",
+      "claim": "富良野站最深積雪平年值 2 月 73 cm、3 月 71 cm，年降雪合計 628 cm；11 月就開始積雪（平年 23 cm）。",
+      "quote": "2月 … 73｜3月 … 71｜11月 … 72 | 23｜年 … 628 | 78",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F135",
+      "claim": "薰衣草季的 7 月富良野站降水 116.0 mm、日照 171.8 小時；8 月降水增加到 168.6 mm。",
+      "quote": "7月 | 116.0 | … | 171.8｜8月 | 168.6",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0021&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-05-31"
+    },
+    {
+      "factId": "F136",
+      "claim": "なかふらの觀光協會網站每頁都寫「禁止擅自使用、轉載、散布刊登的圖片與文章」，觀光協會照片不能拿來用。",
+      "quote": "※掲載されている画像、文章の無断使用や転載、配布を固く禁止いたします。",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676",
+      "checkedAt": "2026-11-07",
+      "condition": "給選圖用",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F137",
+      "claim": "中富良野町公所網站的照片與資料要先取得承認才能轉載，沒有素材庫或政府標準利用規約。",
+      "quote": "本ページに掲載されている情報や画像等の転載を希望する場合は、必ず転載の承認を得てください。",
+      "sourceUrl": "https://www.town.nakafurano.lg.jp/hotnews/detail/00002489.html",
+      "checkedAt": "2026-11-07",
+      "condition": "給選圖用",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F138",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "JR 北海道 2027 年夏季富良野線的觀光列車（慢車號後繼的「赤い星」「青い星」）與薰衣草花田站是否照常設站，官方還沒公布；日文自動完成「ラベンダー畑駅 廃止」指的就是這件事。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/travel/furanobiei/train/index.html",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F139",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "2026 年夏季（6～9 月）富良野線普通車全日時刻表沒有查到（JR 查詢頁只到目前的 2026 年 10 月～2027 年 2 月），只有花火大會新聞稿裡傍晚幾班（F38）。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2880"
+    },
+    {
+      "factId": "F140",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "2027 年中富良野薰衣草祭＆花火大會的日期還沒公布（2025 年 7/12、2026 年 8/1，每年不同）。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://nakafukanko.com/news/news-6230",
+      "nextCheckAt": "2027-05-01"
+    },
+    {
+      "factId": "F141",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "富田農場「よくあるご質問」的「營業時間是幾點到幾點」答案在頁面上沒有文字（可能是圖片或已刪除）；只有首頁每天顯示當天時間與各建築的營業時間表。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://www.farm-tomita.co.jp/news/detail.asp?id=52"
+    },
+    {
+      "factId": "F142",
+      "kind": "gap",
+      "gapKind": "no-source",
+      "claim": "彩香之里（彩香の里 佐々木ファーム）沒有找到官方網站，觀光協會景點清單也沒有；只有旅遊媒體的介紹，不寫。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://nakafukanko.com/spot/"
+    },
+    {
+      "factId": "F143",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "中富良野町內有沒有「道の駅」：北海道道の駅官方清單這次沒有核對（日文自動完成有「中富良野 道の駅」）。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://www.hokkaido-michinoeki.jp/"
+    },
+    {
+      "factId": "F144",
+      "kind": "gap",
+      "gapKind": "unreadable",
+      "claim": "JR 北海道乘換檢索（result.cgi）這次回傳「検索エラー」，旭川→中富良野、富良野→中富良野的普通車車資沒有查到。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://jrhokkaidonorikae.com/pc/",
+      "nextCheckAt": "2026-12-15"
+    },
+    {
+      "factId": "F145",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "北星山觀光吊椅 2027 年營業期間與票價未公布。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676",
+      "nextCheckAt": "2027-05-15"
+    },
+    {
+      "factId": "F146",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "國道 237 號薰衣草季塞車對策（加車道、免費接駁巴士）只查到 2025 年的公告，2026 年有沒有辦沒有查到官方頁。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://nakafukanko.com/news/news-5268"
+    },
+    {
+      "factId": "F147",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "北星山的白色薰衣草「美郷雪華」與見頃 7 月中旬～8 月上旬的說法只在非官方網站看到，官方景點頁沒寫。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-2676"
+    },
+    {
+      "factId": "F148",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "花火大會的煙火發數官方公告沒寫（Walkerplus 寫約 7,000 發，非官方）。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://nakafukanko.com/news/news-6230"
+    },
+    {
+      "factId": "F149",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "Agoda 的上架情況這次沒有查（Trip.com 已查 9 家），寫住宿頁前要補。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://www.agoda.com/"
+    },
+    {
+      "factId": "F150",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "中富良野町是否另課町的住宿稅沒有查；北海道宿泊稅見 asahikawa:F416。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://www.town.nakafurano.lg.jp/"
+    },
+    {
+      "factId": "F151",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "富良野リゾートオリカ 2026-27 冬季營業期間、各民宿 2026 年的營業期間沒有逐家對官網。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://nakafukanko.com/spot/spot-59"
+    },
+    {
+      "factId": "F152",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "富田農場官網沒有寫參觀要花多少時間（日文自動完成「ファーム富田 所要時間」）；只能用花田配置與交通時刻推算，正文不寫成官方數字。",
+      "checkedAt": "2026-11-07",
+      "sourceUrl": "https://www.farm-tomita.co.jp/news/detail.asp?id=52"
+    }
+  ]
+}

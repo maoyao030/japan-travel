@@ -1,0 +1,1484 @@
+{
+  "schemaVersion": 1,
+  "placeId": "biei",
+  "facts": [
+    {
+      "factId": "F1",
+      "claim": "JR 富良野線旭川→美瑛一天 18 班，首班 5:44、末班 22:34 從旭川發（2026 年 11 月與 2027 年 1 月的資料相同）。",
+      "quote": "旭川駅 ＪＲ富良野線 美瑛・富良野方面 5時44分 … 22時34分",
+      "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E6%97%AD%E5%B7%9D&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E7%BE%8E%E7%91%9B%E3%83%BB%E5%AF%8C%E8%89%AF%E9%87%8E&next_node_id=4447",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道駅發時刻表（資料依「JR時刻表」令和8年11月號），查 2026-11-10 與 2027-01-15 兩天",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F2",
+      "claim": "旭川發往美瑛・富良野的 18 班：5:44、6:41、7:39、8:44＊、9:38、10:39＊、11:33、12:30＊、13:45、14:35＊、15:33、16:30、17:18＊、17:47、18:40、19:38＊、20:42、22:34（＊是到美瑛為止的 6 班，其餘開到富良野）。",
+      "quote": "8:44美 … 10:39美 … 12:30美 … 14:35美 … 17:18美 … 19:38美（美＝美瑛行、無印＝富良野行）",
+      "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E6%97%AD%E5%B7%9D&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E7%BE%8E%E7%91%9B%E3%83%BB%E5%AF%8C%E8%89%AF%E9%87%8E&next_node_id=4447",
+      "checkedAt": "2026-11-07",
+      "condition": "平日、假日同一張表（查 2026-11-10、2027-01-15）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F3",
+      "claim": "美瑛→旭川一天 18 班：6:39、6:53、7:40、8:00、8:45、9:52、10:37、11:48、12:25、13:11、13:59、15:31、16:28、17:39、18:05、18:40、19:54、21:19；末班 21:19。",
+      "quote": "美瑛駅 ＪＲ富良野線 旭川方面 6時39分 … 21時19分",
+      "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E7%BE%8E%E7%91%9B&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E6%97%AD%E5%B7%9D&next_node_id=4453",
+      "checkedAt": "2026-11-07",
+      "condition": "查 2026-11-10、2027-01-15 兩天，相同",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F4",
+      "claim": "美瑛→富良野一天 12 班：6:18、7:20、8:21、10:14、12:09、14:19、16:10、17:03、18:24、19:15、21:19、23:07；白天約 2 小時一班。",
+      "quote": "美瑛駅 ＪＲ富良野線 富良野方面 6時18分 … 23時07分",
+      "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E7%BE%8E%E7%91%9B&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E5%AF%8C%E8%89%AF%E9%87%8E&next_node_id=4455",
+      "checkedAt": "2026-11-07",
+      "condition": "只記概況；富良野線全線細節由富良野交通頁負責",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15"
+    },
+    {
+      "factId": "F5",
+      "claim": "JR 旭川→美瑛 23.8 公里，普通車 33～34 分鐘，車資 680 日圓（IC 卡同價）。",
+      "quote": "旭川 - 美瑛 所要時間: 34 分 距離: 23.8 km 運賃: 680円 IC運賃: 680円",
+      "sourceUrl": "https://jrhokkaidonorikae.com/cgi/result.cgi?search_target=route&dep_node=%E6%97%AD%E5%B7%9D&arv_node=%E7%BE%8E%E7%91%9B&year=2026&month=11&day=10&hour=10&minute=00",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道乘換・運賃檢索，2026-11-10 10:00 出發",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F6",
+      "claim": "JR 美瑛→富良野 31.0 公里，普通車 34～44 分鐘，車資 800 日圓。",
+      "quote": "美瑛 - 富良野 距離: 31.0 km 運賃: 800円 所要時間: 34 分 / 44 分",
+      "sourceUrl": "https://jrhokkaidonorikae.com/cgi/result.cgi?search_target=route&dep_node=%E7%BE%8E%E7%91%9B&arv_node=%E5%AF%8C%E8%89%AF%E9%87%8E&year=2026&month=11&day=10&hour=10&minute=00",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道乘換・運賃檢索",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F7",
+      "claim": "JR 北海道的時刻資料裡，富良野線旭川～美瑛在 1 月與 11 月班次相同，沒有冬季減班；但大雪時可能停駛，出發前看 JR 北海道列車運行情報。",
+      "quote": "自然災害等により、不通区間、運休等が発生する場合もございます",
+      "sourceUrl": "https://jrhokkaidonorikae.com/ekihatsu/ekihatsu.php?node=%E7%BE%8E%E7%91%9B&linename=%EF%BC%AA%EF%BC%B2%E5%AF%8C%E8%89%AF%E9%87%8E%E7%B7%9A&directionname=%E6%97%AD%E5%B7%9D&next_node_id=4453",
+      "checkedAt": "2026-11-07",
+      "condition": "比對 2026-11-10 與 2027-01-15 的駅發時刻表",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-15",
+      "derivedFrom": ["F1", "F3"]
+    },
+    {
+      "factId": "F8",
+      "claim": "JR 美瑛站有綠色窗口（みどりの窓口），營業 8:15～17:25。",
+      "quote": "美瑛 みどりの窓口 8：15～17：25",
+      "sourceUrl": "https://www.jrhokkaido.co.jp/network/station/station.html#4454",
+      "checkedAt": "2026-11-07",
+      "condition": "JR 北海道駅情報 CSV（構內圖 2026 年 1 月現在）",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F9",
+      "claim": "觀光協會的交通說明：從札幌搭特急約 90 分鐘（高速巴士約 120 分鐘）到旭川，換富良野線普通車約 32 分鐘到美瑛；從富良野搭普通車約 36 分鐘。",
+      "quote": "特急列車約90分（高速バス120分）で旭川駅経由（乗り換え）普通列車で約32分で美瑛駅に到着",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/access",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會概數；JR 實際時間見 F5、F6",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F10",
+      "claim": "開車距離：旭川經國道 237 號約 26 公里、40 分鐘；札幌經道央道約 166 公里、2 小時 30 分；富良野約 34 公里、40 分鐘。",
+      "quote": "旭川から 国道237号で約26km、約40分 … 札幌から … 約166km、約2時間30分 … 富良野から 約34km、約40分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/access",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會概數，冬季路況另計",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F11",
+      "claim": "ふらのバス「旭川線（薰衣草號）」2026 年 4 月 1 日改點，旭川站～旭川機場～美瑛～富良野～新富良野王子大飯店一天 7 往返；在美瑛有「美瑛」與「美瑛駅」兩個站牌。",
+      "quote": "旭川線（ラベンダー号）2026年04月01日 改正 … 美瑛 Biei / 美瑛駅 JR Biei Station",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "旭川站端乘車處與不用預約見 asahikawa:F164、F165",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F12",
+      "claim": "薰衣草號往富良野方向：JR 旭川站前 9:55、11:25、12:30、13:55、15:45、16:45、19:20 發；旭川機場 10:37、12:07、13:12、14:37、16:27、17:27、20:02；美瑛站 10:52、12:22、13:27、14:52、16:42、17:42、20:17；富良野站前 11:38、13:08、14:13、15:38、17:28、18:28、21:03 到。",
+      "quote": "JR旭川駅前 9:55 11:25 12:30 13:55 15:45 16:45 19:20｜旭川空港 10:37 12:07 13:12 14:37 16:27 17:27 20:02｜美瑛駅 10:52 12:22 13:27 14:52 16:42 17:42 20:17",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2026-04-01 改正；「美瑛」站比「美瑛駅」早 2 分鐘（10:50 等）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F13",
+      "claim": "薰衣草號往旭川機場・旭川站方向：美瑛站 7:34、9:04、10:09、11:34、13:24、14:24、16:59 發；旭川機場 7:53、9:23、10:28、11:53、13:43、14:43、17:18 到；JR 旭川站前 8:30、10:00、11:05、12:30、14:20、15:20、17:55 到。",
+      "quote": "美瑛駅 7:34 9:04 10:09 11:34 13:24 14:24 16:59｜旭川空港 7:53 9:23 10:28 11:53 13:43 14:43 17:18｜JR旭川駅前 8:30 10:00 11:05 12:30 14:20 15:20 17:55",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2026-04-01 改正",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F14",
+      "claim": "薰衣草號從富良野站前 6:50、8:20、9:25、10:50、12:40、13:40、16:15 發，約 44 分鐘到美瑛站（7:34 起）；美瑛往旭川機場的末班是 16:59。",
+      "quote": "富良野駅前 6:50 8:20 9:25 10:50 12:40 13:40 16:15｜美瑛駅 7:34 … 16:59",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2026-04-01 改正",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28"
+    },
+    {
+      "factId": "F15",
+      "claim": "旭川機場→美瑛站搭薰衣草號約 15 分鐘（觀光協會寫約 16 分鐘）。",
+      "quote": "旭川空港からは、ふらのバスで約16分で美瑛駅に到着します",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/access",
+      "checkedAt": "2026-11-07",
+      "condition": "時刻表 10:37→10:52（F12）",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28",
+      "derivedFrom": ["F12"]
+    },
+    {
+      "factId": "F16",
+      "claim": "薰衣草號單程車資（大人）：旭川機場～美瑛 370 日圓、～美瑛站 380 日圓；JR 旭川站前～美瑛站 750 日圓；美瑛站～富良野站前 650 日圓；美瑛～美瑛站 160 日圓；兒童半價（10 日圓以下進位）。",
+      "quote": "旭川空港 370 380｜JR旭川駅前 … 750 750｜美瑛駅 … 富良野駅前 650｜小児運賃は大人運賃の半額（10円未満切り上げ）",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2025/09/2025-10-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E9%81%8B%E8%B3%83%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2025-10-01 改正運賃表；「美瑛駅」與「美瑛」兩站車資不同",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F17",
+      "claim": "旭川電氣軌道往旭岳的いで湯號路線是旭川市內→東神樂町→旭川機場→東川町→旭岳，不經過美瑛；美瑛沒有直達旭岳的路線巴士，要在旭川機場或旭川站轉車。",
+      "quote": "旭川市内から東神楽町～旭川空港～東川町を経由し旭岳を結ぶ定期路線バス",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "checkedAt": "2026-11-07",
+      "condition": "對照 asahidake:F23；中日文自動完成有「美瑛 旭岳 バス」「美瑛駅から旭岳ロープウェイ」",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-08-31",
+      "derivedFrom": ["asahidake:F23"]
+    },
+    {
+      "factId": "F18",
+      "claim": "美瑛→旭岳不開車的接法：美瑛站搭薰衣草號 7:34（7:53 到機場）接いで湯號機場 8:00 發、9:03 到旭岳；或 9:04→9:23 接 10:00→11:03；11:34→11:53 接 13:00→14:03；14:24→14:43 接 15:00→16:03。最早那班只有 7 分鐘轉車。",
+      "quote": "美瑛駅 7:34 9:04 11:34 14:24｜旭川空港 7:53 9:23 11:53 14:43",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "由 F13 與 asahidake:F25（いで湯號旭川機場 8:00、10:00、13:00、15:00 發）整理；兩條都不保證接駁",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28",
+      "derivedFrom": ["F13", "asahidake:F25"]
+    },
+    {
+      "factId": "F19",
+      "claim": "旭岳→美瑛回程：いで湯號旭岳 9:55 發（10:50 到機場）接薰衣草號機場 12:07→美瑛站 12:22；11:55→12:50 接 13:12→13:27；14:55→15:50 接 16:27→16:42；16:55→17:50 接 20:02→20:17。",
+      "quote": "旭川空港 12:07 13:12 16:27 20:02｜美瑛駅 12:22 13:27 16:42 20:17",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/02/2026-04-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E6%99%82%E5%88%BB%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "由 F12 與 asahidake:F26 整理；在機場要等 1～2 小時",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-02-28",
+      "derivedFrom": ["F12", "asahidake:F26"]
+    },
+    {
+      "factId": "F20",
+      "claim": "美瑛站經旭川機場到旭岳的巴士車資合計 2,030 日圓（薰衣草號 380 日圓＋いで湯號 1,650 日圓）。",
+      "quote": "旭川空港 380（美瑛駅）",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2025/09/2025-10-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E9%81%8B%E8%B3%83%E8%A1%A8PDF%EF%BC%89.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "380＋1,650＝2,030；いで湯號車資見 asahidake:F30",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31",
+      "derivedFrom": ["F16", "asahidake:F30"]
+    },
+    {
+      "factId": "F21",
+      "claim": "道北巴士「美瑛・白金線」路線：旭川站前→1条7丁目→14号→美瑛站前→道の駅白金ビルケ→白金青池入口→白金溫泉（白鬚瀑布）→終點；系統 39 號從旭川站發、42 號從美瑛站發。",
+      "quote": "美瑛白金温泉（白ひげの滝）・白金青い池行き バス番号 39 42 … 道の駅白金ビルケ … 白金青い池入口",
+      "sourceUrl": "https://www.biei-hokkaido.jp/wp3/wp-content/uploads/2024/09/busstop-revised-on-October-1-2024.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會 2024-10-01 版乘車處說明；終點 PDF 寫保養センター前，道北巴士版寫国立大雪青少年交流の家",
+      "changeType": "timetable",
+      "nextCheckAt": "2026-12-01"
+    },
+    {
+      "factId": "F22",
+      "claim": "美瑛站前往白金方向一天 10 班：6:55、8:14、9:00、10:34、11:05、11:54、13:45、14:45、15:49、17:35 發；約 22 分鐘到白金青池入口（7:17、8:36、9:22、10:56、11:27、12:16、14:07、15:07、16:11、17:57），再 4 分鐘到白金溫泉（7:21…18:01）。",
+      "quote": "美瑛駅前 06:55 08:14 09:00 10:34 11:05 11:54 13:45 14:45 15:49 17:35｜白金青い池入口 07:17 08:36 09:22 10:56 11:27 12:16 14:07 15:07 16:11 17:57",
+      "sourceUrl": "https://www.dohokubus.com/files/biei_shirogane.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2024.10.01 改正版（Internet Archive 2026-05-16 存檔）；2026-10-01 已部分改點，新版讀不到（F42）",
+      "changeType": "timetable",
+      "nextCheckAt": "2026-12-01"
+    },
+    {
+      "factId": "F23",
+      "claim": "往白金的 10 班裡有 4 班從旭川站前發：7:20、9:40、11:00、14:55，經美瑛站 8:14、10:34、11:54、15:49。",
+      "quote": "旭川駅前⑨ 07:20 09:40 11:00 14:55",
+      "sourceUrl": "https://www.dohokubus.com/files/biei_shirogane.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2024.10.01 改正版；旭川站前 9 號乘車處",
+      "changeType": "timetable",
+      "nextCheckAt": "2026-12-01"
+    },
+    {
+      "factId": "F24",
+      "claim": "白金→美瑛一天 9 班：白金青池入口 7:40、9:19、10:05、11:49、12:05、13:19、14:45、15:49、16:54 發，約 25 分鐘到美瑛站（8:05、9:44、10:30、12:14、12:30、13:44、15:10、16:14、17:19）；白金溫泉發車早 3 分鐘。",
+      "quote": "白金青い池入口 07:40 09:19 10:05 11:49 12:05 13:19 14:45 15:49 16:54｜美瑛駅前 08:05 09:44 10:30 12:14 12:30 13:44 15:10 16:14 17:19",
+      "sourceUrl": "https://www.dohokubus.com/files/biei_shirogane.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2024.10.01 改正版",
+      "changeType": "timetable",
+      "nextCheckAt": "2026-12-01"
+    },
+    {
+      "factId": "F25",
+      "claim": "回程有 4 班直通旭川站前，分別 9:02、11:27、13:27、16:07 到（青池入口 7:40、10:05、12:05、14:45 發）。",
+      "quote": "旭川駅前 09:02 11:27 13:27 16:07",
+      "sourceUrl": "https://www.dohokubus.com/files/biei_shirogane.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2024.10.01 改正版",
+      "changeType": "timetable",
+      "nextCheckAt": "2026-12-01"
+    },
+    {
+      "factId": "F26",
+      "claim": "美瑛・白金線單程車資：旭川～美瑛 580 日圓、旭川～白金青池入口 1,600 日圓、旭川～白金溫泉 1,630 日圓、美瑛～白金青池入口 800 日圓、美瑛～白金溫泉 900 日圓、白金青池入口～白金溫泉 220 日圓；可用信用卡感應付款。",
+      "quote": "旭川～美瑛 ¥580 … 美瑛～白金青い池入口 ¥800 … 美瑛～白金温泉 ¥900｜タッチ決済OK",
+      "sourceUrl": "https://www.dohokubus.com/files/biei_shirogane.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2024.10.01 版；青池入口～白金溫泉 220 日圓見觀光協會乘車處 PDF",
+      "changeType": "price",
+      "nextCheckAt": "2026-12-01"
+    },
+    {
+      "factId": "F27",
+      "claim": "搭巴士去青池的回程末班是 16:54（美瑛站 17:19 到），青池點燈 17:00 前就沒車了；想看點燈要開車、搭計程車或參加觀光巴士。",
+      "quote": "白金青い池入口 … 16:54｜点灯時間 10月・11月: 17:00～21:00",
+      "sourceUrl": "https://www.dohokubus.com/files/biei_shirogane.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "2024.10.01 版時刻與 2026-27 點燈時間比對；新版時刻表確認後重算",
+      "changeType": "timetable",
+      "nextCheckAt": "2026-12-01",
+      "derivedFrom": ["F24", "F35"]
+    },
+    {
+      "factId": "F28",
+      "claim": "美瑛站前往白金的道北巴士站牌在北海道銀行與旭川信用金庫之間那一側（往帶廣、白金溫泉、青池的站牌）；回旭川的站牌在對面山崎藥局前；薰衣草號站牌在車站旁的天橋入口附近。",
+      "quote": "帯広・白金温泉・白金青い池行き停留所｜道北バス JR旭川駅行 39 42｜ふらのバス 快速ラベンダー号 富良野・旭川行",
+      "sourceUrl": "https://www.biei-hokkaido.jp/wp3/wp-content/uploads/2024/09/busstop-revised-on-October-1-2024.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會「JR美瑛駅周辺のバス乗り場」2024-10-01 版圖",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F29",
+      "claim": "道北巴士賣「美瑛・白金區域 1 日自由乘車券」：當天在美瑛站前⇔國立大雪青少年交流之家之間不限次數上下車，手機票，不用指定班次。",
+      "quote": "美瑛駅前 ⇔ 国立大雪青少年交流の家 ※上記区間内は、当日に限り自由に乗り降りできます。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1358",
+      "checkedAt": "2026-11-07",
+      "condition": "道北巴士官方販售網站；票價頁面沒顯示（F43）",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F30",
+      "claim": "道北巴士 39 號白金線、42 號美瑛白金線 2026 年 10 月 1 日部分改點。",
+      "quote": "令和8年10月1日（木）より、白金青い池・びえい白金温泉行きの［39］白金線および［42］美瑛白金線のダイヤが一部改正されます",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/26910",
+      "checkedAt": "2026-11-07",
+      "changeType": "timetable",
+      "nextCheckAt": "2026-12-01"
+    },
+    {
+      "factId": "F31",
+      "claim": "從美瑛站搭道北巴士到青池約 20 分鐘、開車約 20 分鐘；到白鬚瀑布搭巴士約 30 分鐘，在「白金溫泉」站下車走約 3 分鐘。",
+      "quote": "ＪＲ美瑛駅より車で約20分 道北バスで約20分｜道北バスで約30分、びえい白金温泉のバス停で下車徒歩約3分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/shirahige-waterfalls",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會景點頁概數；青池那句見 shirogane-blue-pond 頁",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F32",
+      "claim": "觀光協會的夏季觀光巴士「美遊巴士」2026 年：6/6、6/15～6/30、10/1～10/3、10/9～10/12 大人 4,500 日圓起；7/1～9/30 每天行駛，大人 5,000 日圓起；6～11 歲與 4～5 歲半價起，3 歲以下免費；2026 年夏季已結束。",
+      "quote": "7～9月の毎日 2026.7.1(水) ～ 2026.9.30(水) 大人(12歳以上) 5,000円 ～｜夏の運行は終了しました",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/2026bus",
+      "checkedAt": "2026-11-07",
+      "condition": "價格隨訂票日、乘車日、油價浮動，訂票時確定",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-03-01"
+    },
+    {
+      "factId": "F33",
+      "claim": "美遊巴士出發前 90 天到前 4 天 17:00 在網路預約，前 10 天起收取消費（10～8 天前 20%、7～2 天前 30%、前一天 40%、當天 50%）；出發 15 分鐘前在四季情報館 1 樓櫃台報到，對號座，車上沒有廁所；網站顯示額滿但沒坐滿時，前一天或當天可能在四季情報館現場賣。",
+      "quote": "新規予約は、ツアー出発日の 90日前から4日前17:00 まで 受付｜車内にトイレはありません",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/2026bus",
+      "checkedAt": "2026-11-07",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-03-01"
+    },
+    {
+      "factId": "F34",
+      "claim": "2026-27 年冬季觀光巴士兩條：「青池・白金白樺之森點燈路線」週五、週六傍晚出發，約 2 小時；「聖誕樹之木 Liner」每天上午 1 班、下午 2 班，往返約 1 小時；兩條年末年初都停駛；11/9 10:00 起官網公布細節並開賣，有預約票與當天票，同價，自由座，常額滿。",
+      "quote": "① 青い池・白金ビルケの森 ライトアップコース 夕方出発！金曜日・土曜日に運行 … ② クリスマスツリーライナー 午前1便・午後2便、毎日運行する約1時間のコース",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/27493",
+      "checkedAt": "2026-11-07",
+      "condition": "價格、時刻 11/9 才公布（F44）",
+      "changeType": "annual-event",
+      "nextCheckAt": "2026-11-10"
+    },
+    {
+      "factId": "F35",
+      "claim": "青池點燈 2026 年 10 月 22 日～2027 年 4 月 21 日，每天到 21:00；開始時間：10、11 月 17:00，12 月 16:30，1 月 17:00，2 月 17:30，3 月 18:00，4 月 18:30。",
+      "quote": "令和8年10月22日（2026年）～令和9年4月21日（2027年）… 10月・11月: 17:00～21:00 12月: 16:30～21:00 1月: 17:00～21:00 2月: 17:30～21:00 3月: 18:00～21:00 4月: 18:30～21:00",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/27188",
+      "checkedAt": "2026-11-07",
+      "condition": "惡劣天候可能取消（青池頁）",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-07-22"
+    },
+    {
+      "factId": "F36",
+      "claim": "青池點燈是約 15 分鐘一輪、有故事的燈光演出；池面結冰積雪後改成另一套，看光的漸層、星空、降雪與落葉松的影子。",
+      "quote": "約15分間でひとつのストーリーを表現するライトアップ … 水面の氷結・積雪後は、ライトアッププログラムを変更します",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/27188",
+      "checkedAt": "2026-11-07",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-07-22"
+    },
+    {
+      "factId": "F37",
+      "claim": "白鬚瀑布全年點燈，日落到 21:00，停車用白金觀光中心前的公共停車場；白金白樺之森（ビルケの森）點燈期間與時間同青池，停道之驛白金ビルケ前。",
+      "quote": "白ひげの滝では、一年を通してライトアップ … 日没～21:00 … 白金観光センター前公共駐車場",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/27188",
+      "checkedAt": "2026-11-07",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-07-22"
+    },
+    {
+      "factId": "F38",
+      "claim": "青池停車場可停普通車 220 台、大型車 20 台；2026 年 7 月 1 日起普通車 1,000 日圓、全長 6 公尺以上 6,000 日圓、機車 300 日圓（原本 500／2,000／100 日圓）；入口取票、出口前先用事前精算機付款。",
+      "quote": "普通自動車1,000円 大型自動車6,000円 二輪自動車300円｜1,000円（R8.6.30まで 500円）",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/shirogane-blue-pond",
+      "checkedAt": "2026-11-07",
+      "condition": "美瑛町民、町內住宿業者、町內觀光巴士與計程車免費",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F39",
+      "claim": "青池停車場開放時間：5 月～10 月 22 日 7:00～19:00；10 月 23 日～4 月 8:00～21:30。",
+      "quote": "5月〜10月22日 10月23日～4月 AM 7：00～PM 7：00 AM 8：00～PM 9：30",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/shirogane-blue-pond",
+      "checkedAt": "2026-11-07",
+      "condition": "景點頁寫「5月～10月／11月～4月」，以青池專頁為準",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F40",
+      "claim": "青池最擠是晴天 13:00～15:00，週末更擠；觀光協會建議上午去。",
+      "quote": "晴れた日の特に13時～15時の時間帯がいちばん混雑しております",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/shirogane-blue-pond",
+      "checkedAt": "2026-11-07",
+      "changeType": "popularity",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F41",
+      "claim": "開車去青池停車場不能從町道右轉進場：沿道道 966 號在皆空窯附近路口左轉，走町道美望之原白樺線後左轉進停車場；從白金溫泉方向來也在皆空窯路口轉。",
+      "quote": "青い池駐車場付近の交差点から右折進入ができなくなります … 皆空窯付近の交差点で左折",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/18604",
+      "checkedAt": "2026-11-07",
+      "condition": "2024-08-02 公告",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F42",
+      "kind": "gap",
+      "gapKind": "unreadable",
+      "claim": "道北巴士官網 www.dohokubus.com 這次 curl 與 WebFetch 都連不上（連線被拒），美瑛・白金線 2026-10-01 改點後的新時刻表讀不到；Internet Archive 最新存檔是 2026-05-16（2024.10.01 版）。F22～F27 要用新版重查。",
+      "sourceUrl": "https://www.dohokubus.com/files/biei_shirogane.pdf",
+      "checkedAt": "2026-11-07",
+      "nextCheckAt": "2026-12-01"
+    },
+    {
+      "factId": "F43",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "美瑛・白金區域 1 日自由乘車券的票價，販售頁沒有顯示（購物車顯示 ¥0）。",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1358",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F44",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "2026-27 冬季觀光巴士（點燈路線、聖誕樹之木 Liner）的時刻、票價與運行期間，觀光協會寫 11/9 才公布。",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/27493",
+      "checkedAt": "2026-11-07",
+      "nextCheckAt": "2026-11-10"
+    },
+    {
+      "factId": "F45",
+      "claim": "青池是十勝岳防災工程時，堰堤積水形成的池子，水色與立枯的落葉松構成景觀，後來被叫作「青池」。",
+      "quote": "十勝岳の防災工事の際、堰堤にたまった水が、不思議なほど青い色をたたえ、立ち枯れのカラマツとあいまって",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/shirogane-blue-pond",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F46",
+      "claim": "青池看起來藍，一般認為是美瑛川與上游含鋁等成分的硫黃澤川等河水混合，水中膠體粒子散射藍光；融雪的春天和大雨後成分變淡，可能混濁、不夠藍。",
+      "quote": "雪融けの春や大雨の後は、成分が薄まり濁ったり青く見えないこともあります",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/shirogane-blue-pond",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F47",
+      "claim": "冬天青池結冰積雪，看不到藍色水面，所以冬季辦點燈。",
+      "quote": "冬期間は積雪によって青い水面を見ることができません。そこで … ライトアップを実施しています",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/shirogane-blue-pond",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F48",
+      "claim": "觀光協會說青池顏色隨季節變：春天融雪水多偏綠藍，初夏常是淺藍，冬天結冰成一片白；推薦無風晴天的上午。",
+      "quote": "春は、少しグリーンブルー（緑色）に、初夏は ライトブルーに見える日も多い … 真冬は池が凍結し、一面白い世界に",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/shirogane-blue-pond",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F49",
+      "claim": "青池規定：不要越過柵欄進池、不要走在結冰的池面上、不要丟石頭垃圾；在青池用無人機要先申請許可（美瑛町商工觀光交流課）。",
+      "quote": "凍った青い池の上を歩かない。氷が割れて、落ちる可能性があります｜青い池の中には絶対に柵を越えて入らないでください",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/bieikankou-manner110",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F50",
+      "claim": "青池有全年可用的廁所（含無障礙廁所）與自行車停車處；地址北海道上川郡美瑛町白金，MAPCODE 349 568 888。",
+      "quote": "通年トイレ バリアフリートイレ 駐輪場 … MAP CODE：349 568 888",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/shirogane-blue-pond",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F51",
+      "claim": "白鬚瀑布落差約 30 公尺，是地下水從岩縫湧出的「潛流瀑」，從通稱「Blue River」的橋上看；冬天水氣在樹上結成霧凇。MAPCODE 796 182 604。",
+      "quote": "落差は約30ｍ … 日本でも珍しい「潜流瀑」に分類される滝 … 通称「ブルーリバー」と呼ばれる橋からの眺め",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/shirahige-waterfalls",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F52",
+      "claim": "白鬚瀑布沒有自己的停車場，停白金觀光中心的免費停車場（廁所 24 小時）；2026 年 8 月起 Hotel Park Hills 也開放舊白金 Park Hill Valley 滑雪場停車場免費給看瀑布的人停。",
+      "quote": "白ひげの滝をご見学の方は、白金パークヒルバレースキー場敷地内の駐車場を無料でご利用いただけます",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/26495",
+      "checkedAt": "2026-11-07",
+      "condition": "白金觀光中心停車場見景點頁",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F53",
+      "claim": "白金觀光中心是白金溫泉的觀光案內所，9:00～16:00（11:30～12:30 可能休息），年末年初與惡劣天候休；有免費停車場、Free Wi-Fi，廁所 24 小時（2026-03-13 修復）。",
+      "quote": "9:00~16:00 (11:30~12:30 休憩の場合あり)｜年末年始及び悪天候時｜トイレは24時間利用できます",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/shirogane-kanko-center",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F54",
+      "claim": "道道 966 號十勝岳溫泉美瑛線望岳台～吹上溫泉白銀莊 2026 年 10 月 19 日 11:00 到 2027 年 4 月 23 日 11:00 冬季封閉，從白金溫泉不能開車穿到吹上溫泉、十勝岳溫泉。",
+      "quote": "望岳台～吹上温泉白銀荘間は、本日10月19日（月）午前11時より、2027年4月23日(金)午前11時迄、冬期の閉鎖",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/27142",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-23"
+    },
+    {
+      "factId": "F55",
+      "claim": "白金溫泉～望岳台 2026 年 12 月 1 日 11:00 到 2027 年 4 月 23 日 11:00 封路，冬天開車到不了望岳台。",
+      "quote": "美瑛町白金温泉～美瑛町望岳台 … 令和8年（2026年）12月1日 午前11時から 令和9年（2027年）4月23日 午前11時まで",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/27178",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-23"
+    },
+    {
+      "factId": "F56",
+      "claim": "十勝岳噴火警戒等級 2026 年 10 月 16 日由 3 降為 2，同日 10:30 解除十勝岳柵門～望岳台柵門的封路。",
+      "quote": "十勝岳の噴火警戒レベルが「 3 」から「 2 」に引き下げられました … 解除日時：10月16日（金）午前10時30分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/27117",
+      "checkedAt": "2026-11-07",
+      "condition": "等級隨時變動，出發前看氣象廳",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F57",
+      "claim": "十勝岳望岳台標高 930 公尺，在十勝岳正下方，可看旭岳、美瑛岳、美瑛富士等，夏天是十勝岳登山基地；紅葉 9 月下旬開始、10 月上旬最盛；2016 年 10 月完成避難所；免費停車，從美瑛站開車約 35 分鐘；冬季封閉。MAPCODE 796 093 373。",
+      "quote": "標高９３０ｍ … 紅葉：色づき始め時期9月下旬 最盛期：10月上旬 … ＪＲ美瑛駅より車で約35分 … 冬季閉鎖期間有",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/mt-tokachi-obesevatory",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F58",
+      "claim": "十勝岳火山砂防情報中心（VOLGA）可免費參觀十勝岳噴火紀錄；5～10 月 8:30～17:00 無休，11～4 月 10:00～16:00、週二與 12/28～1/6 休；從白金溫泉經 Blue River 橋步行約 10 分鐘。",
+      "quote": "5月〜10月 午前8時30分から午後5時まで｜11月〜4月 午前10時から午後4時まで｜白金温泉よりブルーリバー橋、避難シェルターを通って10分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/tokachi-dake-volcanic-sand-erosion-information-center",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F59",
+      "claim": "聖誕樹之木沒有停車場、不能路邊停車；周圍全是私有農地（雪原也是），不能踏入；樹前道路是居民生活道路與校車路線，有車來要讓路。",
+      "quote": "駐車場 無 ※路上駐車はご遠慮ください｜周囲はすべて私有地の農地です。畑や牧草地、雪原へは絶対に立ち入らないでください",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/christmas-tree",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-10-31"
+    },
+    {
+      "factId": "F60",
+      "claim": "去聖誕樹之木：美瑛站搭計程車約 15 分鐘（擁擠時站前可能沒車）；光交通的周遊一日觀光巴士；或從無人站美馬牛站約 2 公里（騎車約 30 分鐘）；冬天建議計程車或周遊巴士，美馬牛站周邊與新榮之丘冬季沒有可用公廁。",
+      "quote": "JR富良野線「美瑛」駅からタクシー約15分 … JR美馬牛駅（無人駅）から約2km （自転車で30分）… 冬期は、美瑛駅からタクシーや周遊バスなどの交通手段をご利用ください",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/christmas-tree",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-10-31"
+    },
+    {
+      "factId": "F61",
+      "claim": "肯與瑪麗之樹因 1972 年日產 Skyline 廣告出名，從美瑛站開車約 5 分鐘；周邊廁所與停車位少，農忙期有大型農機通行。MAPCODE 389 071 727。",
+      "quote": "昭和47年（1972）に日産のスカイラインのＣＭに登場 … JR美瑛駅より車で5分 （MAP CODE：389 071 727）",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/ken-merry-tree",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F62",
+      "claim": "七星之樹因 1976 年香菸「Seven Stars」廣告得名，從美瑛站開車約 13 分鐘；這一帶叫「拼布之路」。MAPCODE 389 157 129。",
+      "quote": "昭和51年（1976年）に観光たばこ「セブンスター」のCMに採用 … 「パッチワークの路」と呼ばれています … JR美瑛駅より車で13分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/seven-stars-tree",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F63",
+      "claim": "北西之丘展望公園離美瑛站 2.5 公里（開車約 7 分、走路約 30 分），金字塔形展望台積雪期封閉；園內觀光案內所 5～9 月 9:00～17:00；停車普通車 30 台、巴士 5 台，另有第 2 停車場；黃金週、7～8 月週末常滿。MAPCODE 389 070 315。",
+      "quote": "JR美瑛駅より2.5 km お車で約7分/徒歩で約30分 … 展望台は、滑りやすい為、積雪時期閉鎖 … 観光案内所は、5月～9月まで営業",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/hokusei-no-oka",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F64",
+      "claim": "新榮之丘展望公園可 360 度看美瑛的丘，西側是看夕陽的拍照點；從美瑛站開車約 7 分鐘；開放日出到日落，積雪期關閉；停車普通車約 30 台、巴士 10 台。",
+      "quote": "西側は夕焼けが美しい写真スポット … 日の出から日没まで … 積雪時期",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/shin-ei-no-oka_view-park",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F65",
+      "claim": "三愛之丘展望公園是租自行車的人常去的點，從美瑛站開車約 7 分鐘，免費停車。",
+      "quote": "レンタルサイクルで訪れる方に人気のスポットです … JR美瑛駅より車で7分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/san-ai-no-oka_view-park",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F66",
+      "claim": "Zerubu之丘在國道 237 號旁，約 3,000 株薰衣草加向日葵、罌粟；4 月下旬～10 月上旬 9:00～17:00，冬季休；從美瑛站開車約 5 分鐘。MAPCODE 389 071 595。",
+      "quote": "約3000本のラベンダー … 4月下旬~10月上旬 … 9:00~17:00 … JR美瑛駅より車で5分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/zerubu-no-oka-flower-park",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F67",
+      "claim": "四季之塔是美瑛町公所附設的塔，高 32.4 公尺，頂樓可眺望美瑛；從美瑛站走路約 7 分鐘，冬季開放、雨天可去。MAPCODE 389 011 255。",
+      "quote": "美瑛町役場庁舎に併設 … 高さは32.4ｍ … JR美瑛駅より徒歩7分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/shiki-no-tou-tower",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F68",
+      "claim": "美瑛神社社殿各處有心形的「豬目」紋飾，是古來驅邪的吉祥圖案；從美瑛站走路約 30 分鐘；每年 7 月 24 日宵宮祭配合舉行「那智・美瑛火祭」。",
+      "quote": "社殿の随所にちりばめられたハートのような装飾 … 毎年7月24日には宵宮祭りに合わせ勇壮な「那智・美瑛火祭り」",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/biei-jinja",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F69",
+      "claim": "拓真館是風景攝影家前田真三的美瑛作品展示館，免費入館；4～10 月 10:00～17:00、11～3 月 10:00～16:00；從美瑛站開車約 15 分鐘，館內有白樺迴廊。",
+      "quote": "入館無料｜4月～10月 10:00～17:00（最終入館16:45） 11～3月 10:00～16:00（最終入館15:45）",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/takushinkan",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F70",
+      "claim": "拓真館 2026 年 10 月 31 日～2027 年 3 月 28 日展出前田真三、前田昇、前田景三代的美瑛田園照片，期間無休，10:00～16:00。",
+      "quote": "会期：2026年10月31日（土）－2027年3月28日（日） 開館時間：10:00-16:00（最終入館15:45） 休館日：なし",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/27074",
+      "checkedAt": "2026-11-07",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-03-01"
+    },
+    {
+      "factId": "F71",
+      "claim": "電影《愛を積むひと》外景地 5 月上旬～10 月下旬開放，冬季封閉，參觀免費；從美瑛站開車約 5 分鐘。",
+      "quote": "5月上旬～10月下旬まで ※冬期間は閉鎖 … 見学のみ無料",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/facility_aiwotsumuhito",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F72",
+      "claim": "美瑛町在聖誕樹之木、青池、道之驛白金ビルケ、十勝岳望岳台裝了 AI 擁擠測量攝影機，網站與美瑛站、四季情報館等的看板顯示「混雑中／やや混雑／混雑なし」。",
+      "quote": "カメラ設置場所 ・クリスマスツリーの木 ・白金青い池 ・道の駅びえい「白金ビルケ」 ・十勝岳望岳台",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/15386",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F73",
+      "claim": "美瑛的丘陵景觀全是農家的私有農地，不能進田拍照（鞋底的土會帶病害給作物）；雪原下面種著小麥，除雪的公路以外都不能進；美瑛町內原則禁止無人機。",
+      "quote": "農地に絶対に入らない。 靴から土を経由して作物に害をもたらす恐れがあります。 雪原の農地への立入禁止。",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/bieikankou-manner110",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F74",
+      "claim": "觀光協會的花期與季節：拼布般的田景 6 月下旬～10 月；馬鈴薯花 6 月下旬～7 月上旬；薰衣草 6 月下旬～7 月；麥子 7 月中旬轉黃，7 月下旬～8 月初收割；望岳台山上紅葉 9 月中旬起、丘陵紅葉 10 月中旬起；櫻花約 5 月中旬（憩之森公園、聖台水庫）。",
+      "quote": "パッチワークの見頃時期 6月下旬から紅葉の10月 … じゃがいもの花 6月下旬から7月上旬 … 望岳台の紅葉（山の紅葉）は9月中旬から … 丘の紅葉は10月中旬から … 桜の時期は例年5月中旬",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/faq",
+      "checkedAt": "2026-11-07",
+      "condition": "每年隨天候前後",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F75",
+      "claim": "觀光協會說美瑛最受歡迎是初夏到秋天；冬天的雪景（樹冰、霧凇、太陽柱）也是賣點。",
+      "quote": "人気のシーズンは初夏から秋にかけてです … 冬の雪景色（樹氷・霧氷・サンピラーなど）もとても魅力的です",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/faq",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F76",
+      "claim": "美瑛六大活動：2 月第 3 個週日宮樣國際滑雪馬拉松、6 月第 2 個週日 Healthy 馬拉松、6 月第 3 個週日十勝岳開山登山會、7 月 24 日那智・美瑛火祭、8 月中旬どかんと農業祭、9 月中旬美瑛 Century Ride。",
+      "quote": "2月第三日曜に宮様国際スキーマラソン、6月第二日曜にヘルシーマラソン、6月第三日曜にびえい十勝岳山開き登山会、7月24日に那智・美瑛火祭り、8月中旬にどかんと農業まつり、9月中旬に美瑛センチュリーライド",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/faq",
+      "checkedAt": "2026-11-07",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-03-01"
+    },
+    {
+      "factId": "F77",
+      "claim": "令和 8 年度（2027 年 2 月）的寬仁親王紀念丘之町美瑛宮樣國際滑雪馬拉松停辦。",
+      "quote": "令和８年度「寬仁親王記念 丘のまちびえい宮様国際スキーマラソン大会」の開催中止について",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/27462",
+      "checkedAt": "2026-11-07",
+      "condition": "只讀到公告標題",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-11-01"
+    },
+    {
+      "factId": "F78",
+      "claim": "憩之森公園 2026 年櫻花祭 5 月 10 日 10:00～14:00，夜櫻點燈 4 月 30 日～5 月 6 日 19:00～21:00；離美瑛站 1.3 公里，走路約 20 分鐘。",
+      "quote": "2026年度 桜まつり： 5月10日 10:00～14:00 夜桜ライトアップ： 4月30日～5月6日 19:00～21：00",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/ikoi-ga-mori-park",
+      "checkedAt": "2026-11-07",
+      "changeType": "annual-event",
+      "nextCheckAt": "2027-02-01"
+    },
+    {
+      "factId": "F79",
+      "claim": "四季情報館（觀光案內所）在美瑛站旁走路 2 分鐘；11～4 月 8:30～17:00，5～10 月到 18:00；12/31～1/5 休；有投幣置物櫃、櫃台寄放大件行李、免費 Wi-Fi、外語服務，4～10 月出租輪椅（1 天 1,000 日圓）。",
+      "quote": "11月～4月 8：30～17：00 5～10月は18：00まで｜年末年始 休業期間：12月31日～1月5日",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/tourist-information-center",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F80",
+      "kind": "gap",
+      "gapKind": "conflicting",
+      "claim": "四季情報館寄放大件行李的費用，觀光協會 FAQ 兩處說法不同：一處寫 1 件 1,000 日圓，另一處寫櫃台 500 日圓、置物櫃 200～500 日圓。",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/faq",
+      "checkedAt": "2026-11-07",
+      "nextCheckAt": "2027-04-30"
+    },
+    {
+      "factId": "F81",
+      "claim": "Hotel Lavenir 全年（含年末年初）幫非住客寄放大件行李（FAQ 寫 1 件 1,000 日圓）；四季情報館 12/31～1/5 不收寄放。",
+      "quote": "ホテルラヴニール ・年末年始を含め、通年でお預かり可能 ・ご宿泊以外のお客様もご利用いただけます",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/faq",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F82",
+      "claim": "Rental Cycle Station BIEI HILLS 在美瑛站走路 2 分鐘，4 種車全是電動輔助自行車，1 小時 600 日圓起，有 1 日方案，延長以 30 分鐘 300 日圓起計；夏季從 6 月開始，雨天與積雪期不出租。",
+      "quote": "全4種類（すべて電動アシスト自転車） ▶︎ 1時間 ￥600〜 … 夏期シーズンレンタルサイクル（6月〜）… ※雨天・積雪期貸出不可",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/rental-cycle-station-biei-hills",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會會員頁；店家只用 Instagram，不收 Instagram 詢問",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F83",
+      "claim": "美馬牛站（無人站）附近的「ガイドの山小屋」可預約租自行車，從美馬牛站走到四季彩之丘約 25 分鐘。",
+      "quote": "美馬牛駅下車のお客様 「ガイドの山小屋」 にて、レンタサイクルのご予約ができます",
+      "sourceUrl": "https://www.shikisainooka.jp/access/",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F84",
+      "claim": "美瑛租自行車的人常去三愛之丘、青之丘；觀光協會寫從美瑛站騎租借自行車到青之丘約 40 分鐘。",
+      "quote": "JR美瑛駅から車で約15分 レンタサイクルで約40分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/ao-no-oka",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F85",
+      "claim": "「丘之町美瑛 Car Share」24 小時可用，有 Passo、Yaris、Hustler 三台，1 小時起，車站在美瑛站走路 5 分鐘的 KOERU。",
+      "quote": "パッソ・ヤリス・ハスラーが揃う 「丘のまち美瑛カーシェア」が24時間稼働中 … JR美瑛駅より徒歩５分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/biei-carshare",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F86",
+      "claim": "美瑛 Hire（計程車）在美瑛站走路 3 分鐘，6:00～隔天 1:00，有拼布之路、超廣角之路、青池、旭山動物園等觀光包車路線。",
+      "quote": "午前6:00～翌午前1:00 … 「パッチワークの丘コース」「パノラマコース」 … 「青い池コース」 … 「旭山動物園コース」",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/biei-hire",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F87",
+      "claim": "光交通辦從美瑛站出發的美瑛一日觀光巴士，也做包車報價；宮本巴士也接美瑛觀光包車，寫冬季路線也可以。",
+      "quote": "美瑛駅発着可能！丘のまち 美瑛をまるわかりできる日帰りのツアー｜美瑛の観光ならお任せ下さい、冬のルートもバッチリです",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/bus",
+      "checkedAt": "2026-11-07",
+      "condition": "宮本巴士見觀光協會 miyamoto-bus 頁",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F88",
+      "claim": "四季彩之丘在美瑛町新星第三，從美瑛站開車約 12 分鐘，最近的車站是無人站美馬牛站（走路約 25 分鐘；觀光協會寫 30 分鐘）。",
+      "quote": "JR富良野線を「美馬牛駅」で下車／徒歩：25分 ※美馬牛駅は無人駅です",
+      "sourceUrl": "https://www.shikisainooka.jp/access/",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F89",
+      "claim": "四季彩之丘營業時間：1 月 8:40～16:30；2～4 月 9:10～17:00；5 月與 10 月 8:40～17:00；6～9 月 8:40～17:30（7～9 月最後入園 17:15）；11～12 月 9:10～16:30；12/31、1/1 以外全年營業。",
+      "quote": "1月 8：40～16：30 … 6月〜9月 8：40～17：30 … 11月〜12月 9：10～16：30 … 12月31日・1月1日を除き通年営業",
+      "sourceUrl": "https://www.shikisainooka.jp/about/guide/",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F90",
+      "claim": "四季彩之丘只在 7～9 月收入園費：高中以上 800 日圓、國中小 500 日圓，學齡前免費；其他月份入園免費；窗口只收現金。",
+      "quote": "入場料（7月〜9月） 高校生以上 800円 小・中学生 500円 小学生未満は無料｜窓口でのお支払いは現金のみ",
+      "sourceUrl": "https://www.shikisainooka.jp/about/guide/",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會頁寫「10～6月 無料」；官網 10/4 公告「10/1～入園・駐車料無料」",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F91",
+      "claim": "四季彩之丘停車場 6～9 月收費每次 500 日圓（計程車、業者也收），現金；可停大型巴士 30 台、轎車 300 台；機車與自行車免費。",
+      "quote": "有料期間：6月〜9月 ・駐車料金：1回500円（タクシー、営業者も有料です）",
+      "sourceUrl": "https://www.shikisainooka.jp/access/",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F92",
+      "claim": "四季彩之丘綠色季節是 4 月下旬～10 月下旬，冬季（雪地樂園）是 12 月上旬～3 月下旬。",
+      "quote": "グリーンシーズン （4月下旬〜10月下旬）｜ウィンターシーズン （12月上旬〜3月下旬）",
+      "sourceUrl": "https://www.shikisainooka.jp/about/guide/",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F93",
+      "claim": "四季彩之丘綠色季節的遊園車：拖拉機巴士「四季彩慢車號」繞園一圈約 15 分鐘，高中以上 500 日圓、國中小 300 日圓，雨天照開；越野車（約 700 公尺專用道）單人 800、雙人 1,200 日圓，16 歲以上；四人座電動車 15 分鐘 2,500 日圓，要普通駕照；都只收現金。",
+      "quote": "ノロッコ号 （トラクターバス） 15分 園内一周 高校生以上：500円 … バギー 1人乗り：800円 2人乗り：1,200円 … カート 15分間貸切 4人乗り / 1台：2,500円",
+      "sourceUrl": "https://www.shikisainooka.jp/green/",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F94",
+      "claim": "四季彩之丘冬季（個人）：雪上泛舟 1 人 1,200 日圓、雪橇 1 台 500 日圓；雪上摩托車林間路線約 10～20 分鐘，單人 15,000、雙人 20,000 日圓。",
+      "quote": "スノーラフティング 1名：1,200円 そり遊び 1台：500円 … 林間コース (約10分〜20分) 1人乗り：15,000円 2人乗り：20,000円",
+      "sourceUrl": "https://www.shikisainooka.jp/winter/",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-10-31"
+    },
+    {
+      "factId": "F95",
+      "claim": "四季彩之丘雪上摩托車巡航：10 公里（30 分～1 小時）單人 18,000、雙人 24,000 日圓；20 公里單人 30,800 日圓；30 公里單人 42,800 日圓；20、30 公里限有經驗者，要事先預約，9:00 出發。",
+      "quote": "10km （30分〜1時間位） 1人乗り：18,000円 2人乗り：24,000円 … 20km、30kmは経験者に限らせていただきます … ツーリングには事前のご予約が必要です",
+      "sourceUrl": "https://www.shikisainooka.jp/winter/",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-10-31"
+    },
+    {
+      "factId": "F96",
+      "claim": "四季彩之丘雪上摩托車 16 歲以下不能駕駛，身高 102 公分以下的小孩不能乘坐；只有 10 公里巡航能雙人共乘。",
+      "quote": "16歳以下は運転不可 身長102cm以下のお子様は乗車できません … 10kmのみ2人乗りが可能です",
+      "sourceUrl": "https://www.shikisainooka.jp/winter/",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-10-31"
+    },
+    {
+      "factId": "F97",
+      "claim": "四季彩之丘羊駝牧場全年開放，入場高中以上 500 日圓、國中小 300 日圓，飼料 1 份 100 日圓；比花園早 30 分鐘關；只收現金；冬天賣店出借長靴。",
+      "quote": "高校生以上 500円 小・中学生 300円 … おやつ代 1回 100円 … アルパカ牧場は通年営業 … 冬期は売店に貸出用の長靴",
+      "sourceUrl": "https://www.shikisainooka.jp/alpaca/",
+      "checkedAt": "2026-11-07",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F98",
+      "claim": "四季彩之丘餐廳最後點餐 15:00，每週三休；霜淇淋用美瑛早上收的牛奶做。",
+      "quote": "レストラン：ラストオーダー15時（定休日：毎週水曜日）",
+      "sourceUrl": "https://www.shikisainooka.jp/about/guide/",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F99",
+      "claim": "開車去四季彩之丘：從旭川方向由國道 237 號轉道道 824 號往美馬牛站；從富良野方向在國道 237 號看到 Trick Art 美術館右轉。",
+      "quote": "国道237号線から道道824号線に入り、美馬牛駅方向へ … トリックアート美術館を目印に右折",
+      "sourceUrl": "https://www.shikisainooka.jp/access/",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F100",
+      "claim": "四季彩之丘自稱「夏天和冬天請來兩次」：夏天看花田，冬天在雪丘玩雪上活動；冬季花田被雪蓋住變成「雪地樂園」。",
+      "quote": "夏と冬、二度は来てください … 当期間中は展望花畑が雪に埋もれ、かわりに「スノーランド」になります",
+      "sourceUrl": "https://www.shikisainooka.jp/winter/",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F101",
+      "claim": "美瑛選果本店在美瑛町大町 2 丁目；選果市場 4～5 月 10:00～17:00、6～8 月 9:00～18:00、9～10 月 10:00～17:00、11～3 月 10:00～17:00，12/30～1/5 休。",
+      "quote": "選果市場 … 6月〜8月 9:00〜18:00 … 11月〜3月 10:00〜17:00 12/30〜1/5 休業",
+      "sourceUrl": "https://bieisenka.jp/about",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F102",
+      "claim": "美瑛選果的選果工房（霜淇淋、甜點、可樂餅）與法式餐廳 Asperges 冬季（2026 年 11/5 起）全面休業，4/8 起營業；平時週三與第 2、4 週四休（7～8 月照常營業）。",
+      "quote": "11月〜3月 11/5から全面休業 水曜日定休 第2第4木曜定休（7月〜8月は営業） 4/8から営業開始",
+      "sourceUrl": "https://bieisenka.jp/about",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-03-15"
+    },
+    {
+      "factId": "F103",
+      "claim": "美瑛小麥工房（2013 年開幕）賣美瑛產小麥做的「美瑛脆餅」與 Yumechikara 吐司；營業時間同選果市場的季節時段，冬季也開。",
+      "quote": "「美瑛のラスク」「ゆめちから食パン」など美瑛産の小麦を使った工房直売 … 11月〜3月 10:00〜17:00",
+      "sourceUrl": "https://bieisenka.jp/about",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F104",
+      "claim": "台灣人說的「美瑛玉米麵包」是美瑛選果的「コーンぱん」，只在新千歲機場國內線航廈 2 樓的美瑛選果新千歲機場店賣（8:00～19:00），美瑛本店沒有賣。",
+      "quote": "美瑛本店での販売はしていますか？ 現段階では、当店での取り扱いのみの販売となっております。",
+      "sourceUrl": "https://bieisenka.jp/about",
+      "checkedAt": "2026-11-07",
+      "condition": "中文自動完成「美瑛 玉米麵包 出爐時間」，搜尋結果頁前幾名都是新千歲機場店",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F105",
+      "claim": "コーンぱん一天烤 5～8 次，沒有固定時間：8:00 開店時第一批，之後約每 1～2 小時一批，最後一批多在 15 點多；不用水和糖，用美瑛產玉米、小麥、鮮奶油、奶油。",
+      "quote": "1日平均5～8回程度の焼き上げ … 最初の販売は開店の8時頃、そこから約1～2時間程度の間隔 … 最後の焼き上げは15時台になることが多い",
+      "sourceUrl": "https://bieisenka.jp/about",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F106",
+      "claim": "コーンぱん與まめぱん每人每天合計限 2 盒，不能預約或保留，先到先買；多數人提早 30 分鐘～1 小時排隊；不寄送、不網購；排隊時拿到的牌子不是號碼牌，離隊就不保證買得到。",
+      "quote": "おひとりさまにつき、コーンぱん・まめぱん合わせて1日限定2箱まで … 予約、取り置き不可 … 平均30分〜1時間前から並ばれる方が多い",
+      "sourceUrl": "https://bieisenka.jp/about",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F107",
+      "claim": "美瑛選果的法式餐廳 Asperges 2012 年獲米其林北海道一星。",
+      "quote": "2012年4月 レストランアスペルジュ ミシュラン北海道2012で1つ星を獲得",
+      "sourceUrl": "https://bieisenka.jp/about",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F108",
+      "claim": "家庭餐廳 Daimaru 離美瑛站約 500 公尺（走路 7 分鐘），11:00～15:00，週三、四休；豬肉全用美瑛產，烏龍麵用美瑛產小麥「香麥」，米用美瑛產。",
+      "quote": "豚肉は全て美瑛産 … うどんの原料は美瑛産の小麦「きたほなみ」と「春よ恋」をブレンドした「香麦」使用 … 11:00〜15:00 … 水・木",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/daimaru",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F109",
+      "claim": "千代田農場餐廳賣自家一貫飼養的「美瑛和牛」，11:00～20:00（最後點餐 19:30，春冬時間另洽），12/31～1/3 休，220 席；旁邊的觸摸牧場 4～10 月 9:00～17:00、11～3 月 10:00～15:00；從美瑛站開車約 10 分鐘。",
+      "quote": "びえい和牛 … 11：00~20：00（Lo.19：30）… ふれあい牧場 9:00～17:00（4-10月） 10:00～15:00（11-3月）",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/farm-restaurant-chiyoda",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F110",
+      "claim": "Ferme La Terre 美瑛從美瑛站開車約 8 分鐘，甜點、麵包、物販 10:00～17:00（冬季到 16:00），午餐與下午茶事先預約優先，晚餐要預約；不定休。",
+      "quote": "■菓子・パン・物販■ 10:00～17:00（冬季16:00） … ランチ・ティｰタイム … （事前予約優先制） ディナー … （ご予約制）",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/ferme-la-terre-biei",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F111",
+      "claim": "觀光協會的「美瑛小麥之店」專頁介紹用美瑛產小麥的店家；觀光協會的會員餐飲店有 74 家（2026-11-07 網站資料）。",
+      "quote": "美瑛小麦のお店",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/tourist-spot/wheat-shop",
+      "checkedAt": "2026-11-07",
+      "condition": "家數由觀光協會網站設施清單（飲食分類）計算",
+      "changeType": "popularity",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F112",
+      "claim": "Hotel Park Hills 在白金溫泉，從美瑛站開車約 25 分鐘、旭川機場約 45 分鐘；JR 旭川站有免費接送（要預約）；全年營業，有溫泉、早晚餐。",
+      "quote": "JR美瑛駅より車で25分 … JR旭川駅より車で60分（無料送迎あり要予約）… 年中無休",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/shirogane-park-hills",
+      "checkedAt": "2026-11-07",
+      "condition": "觀光協會會員頁；官網 http://biei-hotelparkhills.com/ 未逐項核對",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F113",
+      "claim": "森之旅亭美瑛在白金溫泉，從美瑛站開車約 25 分鐘，全年營業，溫泉旅館；不住宿泡湯週一休（遇假日改隔天）。",
+      "quote": "JR美瑛駅より車で25分 … 日帰り入浴：毎週月曜日休み・祝日の場合翌日休業",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/morino-ryotei-biei",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F114",
+      "claim": "森之雫 RIN（舊大雪山白金觀光飯店）在白金溫泉，從美瑛站開車約 25 分鐘，全年營業，標示有接送。",
+      "quote": "森の雫 RIN（旧：大雪山白金観光ホテル）… JR美瑛駅より車で25分 … 送迎",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/taisetsuzan-shirogane-kanko-hotel",
+      "checkedAt": "2026-11-07",
+      "condition": "接送條件要看官網",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F115",
+      "claim": "碧之美 Yuyu（舊湯元白金溫泉飯店）在白金溫泉，從美瑛站開車約 25 分鐘，全年營業，標示有接送。",
+      "quote": "碧の美 ゆゆ（旧：湯元白金温泉ホテル）… JR美瑛駅より車で25分 … 送迎",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/yumoto-shirogane",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F116",
+      "claim": "Hotel Lavenir 在美瑛站走路 2 分鐘，全年營業，有早餐，入住 15:00～22:00。",
+      "quote": "JR美瑛駅から徒歩2分 … 年中無休 … 15:00 - 22:00",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/hotel-lavenir",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F117",
+      "claim": "丘之宿 KOERU 在美瑛站走路 3 分鐘，全年營業，附早餐。",
+      "quote": "JR美瑛駅より徒歩3分 … 通年 … 朝食提供",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/koeru-2",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F118",
+      "claim": "Hotel Unica 在美瑛站走路 3 分鐘（北海道銀行停車場對面），不供餐，入住 16:00。",
+      "quote": "美瑛駅より徒歩３分 （北海道銀行駐車場向かい）… 食事提供無",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/hotel-unica-unicafe",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F119",
+      "claim": "Phottage Inn 美瑛在美瑛站走路 5 分鐘，衛浴共用，不供餐。",
+      "quote": "JR美瑛駅から徒歩5分 … バス又はシャワー共用 … 食事提供無",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/phottage-inn-biei",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F120",
+      "claim": "美馬牛 Liberty 青年旅館在美馬牛站走路 1 分鐘，有通鋪、不供餐；塔之見宿 Okasenri 離美馬牛站 400 公尺，有通鋪、供早晚餐，全年營業。",
+      "quote": "JR美馬牛駅から徒歩1分｜JR美馬牛駅より400m … 朝食提供 夕食提供 ドミトリー",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/bibaushi-liberty-yh",
+      "checkedAt": "2026-11-07",
+      "condition": "Okasenri 見觀光協會 okasenri 頁",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F121",
+      "claim": "緩慢 Adagio（台灣「緩慢」的美瑛分館）在美瑛町みどり，從美瑛站開車約 6 分鐘、旭川機場約 20 分鐘；有接送（前一天前電話預約），附早餐。",
+      "quote": "美瑛駅から車で6分 旭川空港から車で20分 ※送迎有り（前日まで電話予約必要）",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/adagio",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F122",
+      "claim": "Alp Lodge 在北西之丘公園一帶，離美瑛站 1.5 公里，全年營業，供早晚餐，標示有接送。",
+      "quote": "JR美瑛駅から1.5km （北西展望台公園エリア内）… 通年営業",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/alp-lodge",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F123",
+      "claim": "Pension Ken&Mary 離美瑛站約 2.5 公里（開車約 5 分鐘），不供餐，衛浴共用。",
+      "quote": "JR美瑛駅から約2.5km、車で約5分 … 食事提供無",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/kenmary",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F124",
+      "claim": "Auberge ONE and ONLY 從美瑛站開車約 7 分鐘，供早晚餐。",
+      "quote": "ＪＲ美瑛駅より車で約7分 … 朝食提供 夕食提供",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/one-and-only",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F125",
+      "claim": "湯處杖忘之湯在白金溫泉，從美瑛站開車約 25 分鐘，入住 15:00～19:00（要用餐 17:00 前），週二、三休。",
+      "quote": "JR美瑛駅より車で25分 … 15：00～19：00（お食事の方は17：00まで）… 火・水",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/biei-tsuewasure",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F126",
+      "claim": "溫泉民宿林道在白金溫泉，離美瑛站約 20 公里，供早晚餐，衛浴共用。",
+      "quote": "JR美瑛駅から約20km … 朝食提供 夕食提供",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/hot-spring-inns-rindo",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F127",
+      "claim": "Hello Inn 是整棟出租，從美瑛站開車約 3 分鐘、旭川機場約 15 分鐘，全年營業，可帶寵物，不供餐。",
+      "quote": "JR美瑛駅から車で約3分、旭川空港から約15分 … 年中無休",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/hello_inn",
+      "checkedAt": "2026-11-07",
+      "changeType": "stay",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F128",
+      "claim": "美瑛有源泉 100% 的「美瑛白金溫泉」，可以不住宿只泡湯。",
+      "quote": "美瑛には、源泉100％の「びえい白金温泉」があります。 日帰り入浴も楽しめます",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/faq",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F129",
+      "claim": "觀光協會網站登記的美瑛住宿有 79 家（含白金溫泉、民宿、整棟出租），多數是小型民宿。",
+      "quote": "宿泊",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/hotel",
+      "checkedAt": "2026-11-07",
+      "condition": "家數由觀光協會設施清單（宿泊分類，2026-11-07）計算",
+      "changeType": "popularity",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F130",
+      "claim": "美瑛 AMeDAS（標高 250 公尺）1 月平年值：平均 -8.7℃、最高 -3.9℃、最低 -14.8℃，降水 41.1 毫米，日照 67.5 小時，降雪合計 164 公分，最深積雪 65 公分。",
+      "quote": "1月 | 41.1 | -8.7 | -3.9 | -14.8 | 1.5 | 67.5 | 164 | 65",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F131",
+      "claim": "美瑛 2 月平年值：平均 -7.9℃、最高 -2.6℃、最低 -14.7℃，降水 38.3 毫米，日照 83.2 小時，降雪 141 公分，最深積雪 78 公分。",
+      "quote": "2月 | 38.3 | -7.9 | -2.6 | -14.7 | 1.6 | 83.2 | 141 | 78",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F132",
+      "claim": "美瑛 3 月平年值：平均 -3.0℃、最高 2.0℃、最低 -9.1℃，降水 47.0 毫米，日照 122.1 小時，降雪 129 公分，最深積雪 76 公分。",
+      "quote": "3月 | 47.0 | -3.0 | 2.0 | -9.1 | 1.9 | 122.1 | 129 | 76",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F133",
+      "claim": "美瑛 4 月平年值：平均 4.4℃、最高 10.2℃、最低 -1.3℃，降水 49.5 毫米，日照 154.0 小時，降雪 28 公分，最深積雪 32 公分。",
+      "quote": "4月 | 49.5 | 4.4 | 10.2 | -1.3 | 2.0 | 154.0 | 28 | 32",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F134",
+      "claim": "美瑛 5 月平年值：平均 11.3℃、最高 18.0℃、最低 4.7℃，降水 68.5 毫米，日照 181.5 小時（全年最多）。",
+      "quote": "5月 | 68.5 | 11.3 | 18.0 | 4.7 | 1.9 | 181.5",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F135",
+      "claim": "美瑛 6 月平年值：平均 15.9℃、最高 22.3℃、最低 10.0℃，降水 69.5 毫米，日照 166.0 小時。",
+      "quote": "6月 | 69.5 | 15.9 | 22.3 | 10.0 | 1.5 | 166.0",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F136",
+      "claim": "美瑛 7 月平年值：平均 19.7℃、最高 25.7℃、最低 14.7℃，降水 121.2 毫米，日照 161.6 小時。",
+      "quote": "7月 | 121.2 | 19.7 | 25.7 | 14.7 | 1.4 | 161.6",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F137",
+      "claim": "美瑛 8 月平年值：平均 20.0℃、最高 25.8℃、最低 15.2℃，降水 168.3 毫米（全年最多），日照 156.2 小時。",
+      "quote": "8月 | 168.3 | 20.0 | 25.8 | 15.2 | 1.4 | 156.2",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F138",
+      "claim": "美瑛 9 月平年值：平均 15.2℃、最高 21.3℃、最低 9.8℃，降水 129.0 毫米，日照 149.8 小時。",
+      "quote": "9月 | 129.0 | 15.2 | 21.3 | 9.8 | 1.4 | 149.8",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F139",
+      "claim": "美瑛 10 月平年值：平均 8.3℃、最高 14.2℃、最低 3.0℃，降水 96.0 毫米，日照 123.4 小時，降雪 3 公分。",
+      "quote": "10月 | 96.0 | 8.3 | 14.2 | 3.0 | 1.5 | 123.4 | 3 | 2",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F140",
+      "claim": "美瑛 11 月平年值：平均 1.5℃、最高 5.6℃、最低 -2.9℃，降水 94.5 毫米，日照 60.1 小時，降雪 79 公分，最深積雪 23 公分。",
+      "quote": "11月 | 94.5 | 1.5 | 5.6 | -2.9 | 1.8 | 60.1 | 79 | 23",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F141",
+      "claim": "美瑛 12 月平年值：平均 -5.5℃、最高 -1.6℃、最低 -10.8℃，降水 73.5 毫米，日照 47.9 小時（全年最少），降雪 182 公分（全年最多），最深積雪 48 公分。",
+      "quote": "12月 | 73.5 | -5.5 | -1.6 | -10.8 | 1.6 | 47.9 | 182 | 48",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F142",
+      "claim": "美瑛全年平年值：平均 5.9℃，降水 988.8 毫米，日照 1,475.1 小時，降雪合計 708 公分，最深積雪 81 公分；積雪從 11 月到 4 月。",
+      "quote": "年 | 988.8 | 5.9 | 11.4 | 0.3 | 1.6 | 1475.1 | 708 | 81",
+      "sourceUrl": "https://www.data.jma.go.jp/obd/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1052&year=&month=&day=&view=",
+      "checkedAt": "2026-11-07",
+      "condition": "氣象廳平年值 1991～2020；積雪月份由各月最深積雪推得",
+      "changeType": "climate-normal",
+      "nextCheckAt": "2031-12-31"
+    },
+    {
+      "factId": "F143",
+      "claim": "觀光協會的穿著建議：12～3 月最高 5℃到 -10℃、最低低於 -15℃，要防寒衣與防寒鞋；6～10 月日夜溫差大，最高 30℃左右、最低低於 10℃，夏天白天短袖即可，晚上要外套。",
+      "quote": "12-3月にかけては最高気温5℃～マイナス10℃、最低気温マイナス15℃を下回り … 防寒着・防寒靴が必要です … 夜間は冷えますので上着を",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/faq",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F144",
+      "claim": "美瑛被叫「丘之町」，是因為約 100～200 萬年前十勝岳連峰形成前的大噴發，火山碎屑流堆積物長年風化成丘陵；「拼布之丘」則因田裡各種作物顏色不同，看起來像拼布。",
+      "quote": "およそ100万年～200万年前 … 火砕流の堆積物が、長い年月をかけ風化し形成されました",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/faq",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F145",
+      "claim": "美瑛町內原則禁止無人機飛行與空拍，只有取得國土交通省等許可且地主同意的例外。",
+      "quote": "美瑛町内でのドローン（無人飛行機）による飛行、空撮は原則禁止しています",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/faq",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F146",
+      "claim": "Ken 與 Mary 之樹、七星之樹、北西之丘一帶在旺季常有觀光巴士、租車、計程車與行人擠在路上，觀光協會請大家別在路肩久停、注意農機，土日假日、盂蘭盆節、連假特別擠。",
+      "quote": "観光バス・レンタカー・ハイヤーと歩行者が道路上にあふれる、大変危険な状況 … 土日祝日、お盆、連休期間は特に混雑",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/seven-stars-tree",
+      "checkedAt": "2026-11-07",
+      "changeType": "popularity",
+      "nextCheckAt": "2027-11-07"
+    },
+    {
+      "factId": "F147",
+      "claim": "西美之杜美術館（舊西美小學）2026 年 5/1～11/30 只在週五～週一開，11:00～16:00（5/1～5/11、8/7～8/17 每天開），門票 1,000 日圓，展出 54 件 Banksy 複製品。",
+      "quote": "2026年度は5月1日から11月30日まで 金・土・日・月のみ開催 午前11時～午後4時 … 料金は千円",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/seibinomori",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F148",
+      "claim": "丘之町鄉土學館「美宙」在美瑛站走路 7 分鐘，免費入館，10:00～18:00，週二與 12/31～1/5 休；天文台另收費。",
+      "quote": "JR美瑛駅より徒歩7分 … 10:00 - 18:00 … 毎週火曜定休 … 入館料無料",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/regional-studies-hall-misora",
+      "checkedAt": "2026-11-07",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F149",
+      "claim": "新星館（美術館與高山植物岩石庭園）5 月中旬～10 月底 10:00～18:00，大人 1,000 日圓、國中以下 500 日圓，3 樓展望室可看十勝岳連峰；從美瑛站開車約 15 分鐘。",
+      "quote": "5月中旬頃～10月末頃（要問合せ） … 10：00～18：00 … 大人/1000円 中学生以下/500円",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/shinsei-kan",
+      "checkedAt": "2026-11-07",
+      "changeType": "seasonal-opening",
+      "nextCheckAt": "2027-03-31"
+    },
+    {
+      "factId": "F150",
+      "claim": "藍染結之杜可體驗藍染（一天 3 梯），附設咖啡與商店，從美瑛站開車約 15 分鐘；後方的「青之丘」是美瑛少數能走上去的丘，免費停車 80 台。",
+      "quote": "1日3枠限定 藍染め体験コース｜美瑛町で数少ない、歩いて登れる丘です",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/yuinomori",
+      "checkedAt": "2026-11-07",
+      "condition": "青之丘見 ao-no-oka 頁",
+      "changeType": "shop-hours",
+      "nextCheckAt": "2027-05-07"
+    },
+    {
+      "factId": "F151",
+      "claim": "千代田之丘展望台是三角屋頂的瞭望台，從美瑛站開車約 10 分鐘，旁邊有可摸小動物的牧場。",
+      "quote": "三角塔の形のとんがり屋根が特徴の見晴台。近くには、可愛い小動物とふれあえる牧場",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/chiyoda-no-oka-obesevatory",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F152",
+      "claim": "白金神社在白金溫泉，從道北巴士「白金溫泉」站走 5 分鐘，1953 年建，8 月 8 日開湯紀念日是大祭。",
+      "quote": "昭和２８年８月８日『白金神社』が建立 … 大祭は8月8日の開湯記念日 … 道北バス「白金温泉」バス停より徒歩5分",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/facility/shirogane-shrine",
+      "checkedAt": "2026-11-07",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F153",
+      "claim": "觀光協會網站的文字與內容，超出私人使用範圍要先取得觀光協會書面許可，照片不能直接轉載。",
+      "quote": "事前に美瑛町観光協会の文書による許諾がないかぎり、禁止します",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/legal",
+      "checkedAt": "2026-11-07",
+      "condition": "給選圖用：觀光協會網站照片不可用",
+      "changeType": "stable"
+    },
+    {
+      "factId": "F154",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "美瑛咖哩烏龍麵（美瑛カレーうどん）與美瑛豬的店家名單、營業時間沒查；道之驛美瑛「丘之倉」「白金ビルケ」的營業時間沒查。",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F155",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "望岳台出發的十勝岳登山路線、白金溫泉周邊步道（白鬚瀑布～望岳台、白金不動之瀑布等）的距離、時間與管理單位資料沒查。",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F156",
+      "kind": "gap",
+      "gapKind": "not-researched",
+      "claim": "那智・美瑛火祭、どかんと農業祭、美瑛 Century Ride 的 2027 年日期與內容沒查（主辦單位頁沒開）。",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F157",
+      "kind": "gap",
+      "gapKind": "not-announced",
+      "claim": "2027 年夏季美遊巴士的運行日、路線與價格還沒公布。",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/bus",
+      "checkedAt": "2026-11-07",
+      "nextCheckAt": "2027-03-01"
+    },
+    {
+      "factId": "F158",
+      "kind": "gap",
+      "gapKind": "not-stated",
+      "claim": "2026-27 青池點燈公告沒寫年末年初延長；青池專頁上「12/31～1/3 延長到隔天凌晨 2 點」是 2025-26 季的說明，今年是否照辦要再確認。",
+      "sourceUrl": "https://www.biei-hokkaido.jp/ja/shirogane-blue-pond",
+      "checkedAt": "2026-11-07"
+    },
+    {
+      "factId": "F159",
+      "claim": "北海道宿泊稅（2026 年 4 月起）細節由旭川住宿頁負責；美瑛住宿頁只摘要並連過去。",
+      "quote": "令和8年4月から北海道宿泊税を導入しました。",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
+      "checkedAt": "2026-11-07",
+      "condition": "引用 asahikawa:F416，不另查",
+      "changeType": "price",
+      "nextCheckAt": "2027-03-31",
+      "derivedFrom": ["asahikawa:F416"]
+    },
+    {
+      "factId": "F160",
+      "claim": "美瑛站前的站牌也停拓殖巴士・十勝巴士的「North Liner 號」（往帶廣），往旭川方向只能下車。",
+      "quote": "ノースライナー号（帯広行）｜ノースライナー号（旭川行）※降車のみ",
+      "sourceUrl": "https://www.biei-hokkaido.jp/wp3/wp-content/uploads/2024/09/busstop-revised-on-October-1-2024.pdf",
+      "checkedAt": "2026-11-07",
+      "condition": "班次與車資要查經營者（拓殖巴士、十勝巴士），這次沒查",
+      "changeType": "timetable",
+      "nextCheckAt": "2027-03-31"
+    }
+  ]
+}
