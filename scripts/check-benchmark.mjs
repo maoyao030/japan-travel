@@ -5,6 +5,7 @@
  */
 import {readFile} from 'node:fs/promises'
 import path from 'node:path'
+import {pathToFileURL} from 'node:url'
 
 const LINK = '連結'
 const PROMO = /不能錯過|必去|必吃|必買|懶人包|攻略大全|完整指南|重點整理|先看結論/
@@ -94,7 +95,8 @@ export function recommendationWarnings(markdown) {
   return warnings
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+// Windows 的 argv[1] 是 C:\... 路徑，直接拼 file:// 對不上 import.meta.url，程式會默默不執行（2026-11-08 修）
+if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url) {
   const options = Object.fromEntries(process.argv.slice(2).filter((a) => a.startsWith('--')).map((a) => a.slice(2).split('=')))
   const root = path.resolve(import.meta.dirname, '..')
   const after = await readFile(options.after, 'utf8')

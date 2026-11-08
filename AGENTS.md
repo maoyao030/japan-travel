@@ -338,3 +338,15 @@
 - 這群照「找下一群與默許核准」一段的默許制（2026-10-26「下一群做好就寫」只限旭川群）：大綱摘要寫進規劃總表並加日曆提醒，自動核准日到了沒反對就寫。例外（富良野滑雪場要不要自己一頁、三個景點升格頁）不默許，列在報告最後。
 - 本機自動寫作改成照 `article-queue.json` 的 `travelGroups` 順序挑「已核准且還沒寫完」的群，大綱用那一群的 `outline`；細節在 `content-automation/local-writer.md` 第 1 步。D1 登入過期（wrangler 7403）時上傳整輪略過、不算文章失敗。
 - **富良野滑雪場自己一頁**（Darren 2026-11-07 決定）：滑雪場當景點頁（`/places/furano/ski-resort/`，`aspect-page`、主題 `sight`），已排進清單。要不要開全站的滑雪主題（旭岳、層雲峽黑岳）還沒決定，之後的群遇到滑雪場照這個例子先當景點升格候選。
+
+## 標竿優化學到的改法回流（Darren 2026-11-08 決定）
+
+- Darren 問自動寫作有沒有包進後來的優化流程。優化流程（後台手動、對話優化、標竿優化、口述優化）是給已上線文章的，不進自動寫作；要回流的是學到的規則。本次把 43 篇標竿優化筆記裡可重複的改法抽進寫作 Skill `references/examples.md` 6-6 到 6-10（碎句接成一口氣、兩個數字就寫出結論、判斷帶口氣但要有事實、書面字換口語字、標題改問句），換字清單寫進 `writing-guide.md` 第17條；事後比對抓到的七種「改壞」寫進潤稿 Skill `references/examples.md`「反面例子」與意義比對 agent 的不可接受清單。
+- `scripts/check-benchmark.mjs` 改成新文章也用：作者寫完跑 `--after=<reader-preview.md>`（住宿表「連結」欄、景點欄「連結」列、譯名表的舊寫法），定稿 `finalize-release.mjs` 再擋一次。同時修掉它在 Windows 直接執行時默默不跑的問題。
+- 標竿優化流程第 8 步的「Darren 改過的寫進規則檔」照舊；之後每做完一批優化，人工 session 要把新的可重複改法補進同一節，範例最多留 15 組。
+
+## 寫作模型 Opus 4.6（Darren 2026-11-02 決定，2026-11-08 寫進流程）
+
+- Darren 2026-11-02 比較利尻島天氣兩版作者稿後，決定寫作與潤稿改用 Opus 4.6，不用 Opus 5.5；Fable 仍只用在評審與策略。這個決定之前只記在 Claude 的記憶，沒進規則文件，排定工作一直用 Opus 5.5。
+- 排定工作 `japan-travel-daily-writer` 的 session 跟著 Claude 桌面 app 模型選單的模型跑（2026-11-08 查到是 Fable 5.1）；Agent 工具的 `model` 只能填 `opus` 這類代號，所以作者、潤稿者、作者修改三個子代理在 session 是 Opus 4.6 時用 fork 繼承；不是時**這輪不寫**（Darren 2026-11-08：只能用 4.6，不退回 5.5），只做上傳與補內連，並在執行紀錄提醒。細節在 `content-automation/local-writer.md` 第 0 步第 6 點與第 2 步開頭。
+- 要 Darren 做的：把 app 的模型選單改成 Opus 4.6（模型代號 `claude-opus-4-6`，app 接受），排定工作下一輪就會用它。

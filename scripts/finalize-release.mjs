@@ -17,6 +17,7 @@ import {checkVoice} from '../.agents/skills/japan-travel-answer-first/scripts/ch
 import {validateFactCheck} from '../.agents/skills/japan-travel-acceptance/scripts/validate-fact-check.mjs'
 import {validateImageReview} from '../.agents/skills/japan-travel-acceptance/scripts/validate-image-review.mjs'
 import {findQueueItem, getItemAuthorization, loadArticleQueue} from './article-automation-policy.mjs'
+import {nameProblems, tableLinkProblems} from './check-benchmark.mjs'
 
 export const RELEASE_SCHEMA_VERSION = 'answer-first-release-1'
 export const WORKFLOW = 'japan-travel-answer-first'
@@ -279,6 +280,10 @@ export async function finalizeRelease({
   issues.push(...inspectVoice(readerPreview).issues)
   issues.push(...inspectReview(files['review.md'].toString('utf8'), readerPreviewSha256).issues)
   issues.push(...inspectPublication(publication, {h1: previewResult.h1, referenceReview, articleId}).issues)
+  // 標竿優化學到的兩條（Darren 2026-11-08 決定新文章定稿也要擋）：住宿表要有「連結」欄、景點資訊欄要有「連結」列（寫作指南第12條）；譯名表標過的舊寫法不能再出現。
+  issues.push(...tableLinkProblems(readerPreview).map((problem) => `表格連結：${problem}`))
+  const glossary = await readJsonIfExists(path.join(projectRoot, 'content-planning', 'glossary.json'))
+  if (Array.isArray(glossary?.terms)) issues.push(...nameProblems(readerPreview, glossary.terms).errors.map((problem) => `名字：${problem}`))
 
   const factResult = validateFactCheck(factCheck, readerPreviewSha256)
   issues.push(...factResult.errors.map((error) => `fact-check.json：${error}`))
