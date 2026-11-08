@@ -27,7 +27,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 2. **用量**：有 `get_usage` 工具時先看用量。5 小時額度已用 70% 以上，或每週額度已用 80% 以上，就略過這一輪（寫執行紀錄「略過：額度」），不開始寫。
 3. **執行鎖**：看 `.auto-writer.lock`（在工作資料夾根目錄，不進 Git）。存在而且裡面的時間不到 6 小時，代表上一輪還在跑，直接結束、不寫紀錄。否則寫入現在時間（ISO 格式）建立鎖，本輪結束時（不管成功失敗）刪掉。
 4. **今天的額度**：讀 `content-automation/local-run-log.md`，台北今天已經「完成」的篇數達到 `article-queue.json` 的 `maxArticlesPerDay`（目前 5）就略過。
-6. **寫作模型**（2026-11-08 加入）：用 `get_session`（`session_id` 填 `self`）看自己的 `model`。不是 `claude-opus-4-6` 就不寫這一輪（寫執行紀錄「略過：寫作模型不是 Opus 4.6」並提醒 Darren 改 app 的模型選單），但第 5 步上傳與補內連照做。細節在第 2 步開頭「模型」。
+6. **寫作模型**（2026-11-08 加入）：寫作只能用 Opus 4.6。作者與潤稿用 `subagent_type: "japan-travel-writer"`（定義檔釘 4.6）；派不出去而且 session 自己也不是 `claude-opus-4-6` 時，這一輪不寫，但第 5 步上傳與補內連照做。細節在第 2 步開頭「模型」。
 5. **週末加量（Darren 2026-10-24 決定，到台北 2026-10-26 22:00 週額度重置為止）**：排定工作 `japan-travel-daily-writer` 這段期間每天跑 8 輪，多了 06:42、17:42、22:42。這段期間第 2 點的每週額度門檻改成 95%，第 4 點的每天上限改成 8 篇。過了 2026-10-26 22:00，回到 80% 與 `maxArticlesPerDay`；這時如果本輪是 06:42、17:42 或 22:42 那一輪（開始時間在這三個時間的前後 30 分鐘內），什麼都不做、不寫紀錄，直接結束。
 
 ### 1. 挑文章
@@ -52,11 +52,11 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 子代理一律用 Agent 工具、**`run_in_background: false`**，等它完整回傳才做下一步。每一步都要親自確認檔案存在，不能只憑子代理的說法。
 
-**模型**（Darren 2026-11-02 決定寫作與潤稿改用 Opus 4.6，2026-11-08 寫進流程）：排定工作的 session 用的是 Claude 桌面 app 模型選單記住的模型；Agent 工具的 `model` 只能填 `opus`（目前是 Opus 5.5）這類代號，指定不到 4.6，所以靠 fork 繼承。第 0 步先用 `get_session`（`session_id` 填 `self`）看自己的 `model`：
+**模型**（Darren 2026-11-02 決定寫作與潤稿只用 Opus 4.6，2026-11-08 寫進流程；Agent 工具的 `model` 參數只能填 `opus` 這類代號，`opus` 是 Opus 5.5，指定不到 4.6）：
 
-- 是 `claude-opus-4-6`：作者、潤稿者、作者修改這三個子代理用 `subagent_type: "fork"`、不填 `model`（繼承 session 的 Opus 4.6）。
-- 不是：這輪**不寫**（Darren 2026-11-08：只能用 4.6，不退回 5.5）。執行紀錄「最新一輪」寫「略過：寫作模型是 <實際模型>，不是 Opus 4.6，請 Darren 把 app 的模型選單改成 Opus 4.6」，「紀錄」表也記一列；第 5 步上傳與補內連照做（那些不是寫作）。
-- 研究者、意義比對、三個驗收者、選圖子代理一律 `model: "opus"`。任何子代理都不用 Fable；排定工作本身也不該跑在 Fable 上（協調工作用不到，而且很貴）。
+- 作者、潤稿者、作者修改這三個子代理一律用 `subagent_type: "japan-travel-writer"`，**不填 `model`**（填了會蓋掉定義檔）。這個類型定義在 `.claude/agents/japan-travel-writer.md`，`model: claude-opus-4-6` 釘死 Opus 4.6。
+- 派不出去（回「Agent type not found」或模型錯誤）時：先用 `get_session`（`session_id` 填 `self`）看自己的 `model`，是 `claude-opus-4-6` 就改用 `subagent_type: "fork"`、不填 `model`（繼承 session 的 4.6）；也不是就這輪**不寫**（Darren 2026-11-08：只能用 4.6，不退回 5.5），執行紀錄「最新一輪」寫「略過：寫作子代理派不出去，session 模型是 <實際模型>」並提醒 Darren 在排定工作的編輯表單把模型設成 Opus 4.6，「紀錄」表也記一列；第 5 步上傳與補內連照做（那些不是寫作）。
+- 研究者、意義比對、三個驗收者、選圖子代理一律 `model: "opus"`。任何子代理都不用 Fable；排定工作本身也不該跑在 Fable 上（協調工作用不到，而且很貴），編輯表單的模型最好也設 Opus 4.6。
 
 0. **寫作前補研究**（新子代理「研究者」，不寫文章；Darren 2026-10-25 決定加這一步，因為事實表薄的頁面寫出來會用「打電話問」填滿表格。判定規則 2026-10-25 照 6 篇試跑結果修訂）。交代：
    - 讀大綱這一頁（mustAnswer、headings、`links`、分工表）、`.agents/skills/japan-travel-answer-first/references/page-types.md` 裡這種頁型的必備欄位、`references/research-record.md`、`references/japanese-sources.md`。
