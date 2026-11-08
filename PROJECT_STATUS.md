@@ -2007,3 +2007,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
   - 大綱 `backfill` 的 4 件跨群回補（旭川四頁結尾加富良野連結、宿泊稅一句）要人工做，補內連程式只加連結不加句子。事實到期重查與每週摘要目前沒有排程在跑。富良野事實還沒 `ops-facts sync`（D1 登入已恢復）。
   - 分支還沒併進 `main`；要在 11-10 第一輪前併進去，自動寫作才讀得到。
 - **唯一下一步**：Darren 決定要不要把這個分支併進 `main`，以及要不要順手補上面三項文件缺口。
+
+### 2026-11-08 補充：三項文件缺口補上
+
+- **寫作模型**：查到排定工作的 session 跑在 Fable 5.1（跟著 app 模型選單），Agent 工具的 `model` 只能填 `opus` 代號（Opus 5.5），指定不到 Darren 11-02 決定的 Opus 4.6。改成：排定工作第 0 步用 `get_session` 看自己的模型，是 `claude-opus-4-6` 時作者、潤稿者、作者修改用 fork 繼承，不是時退回 `opus` 並在執行紀錄提醒；其他子代理用 `opus`，都不用 Fable。寫進 `local-writer.md` 第 2 步開頭、`AGENTS.md` 新段落、`RULES_OVERVIEW.md` 第 9 節，排定工作提示第 3 點同步改。app 接受 `claude-opus-4-6` 這個代號（用 `set_session_model` 在一個已結束的排定工作 session 上試過）。**要 Darren 把 app 的模型選單改成 Opus 4.6**，排定工作下一輪才會用到。
+- **研究者讀大綱的補研究項目**：`local-writer.md` 第 2 步第 0 點加一條，研究者也讀大綱 `gaps`（這頁的 `question` 與 `howToWrite`）、`exceptions`（`research-required`、`objective-condition`）、`objectiveConditions`（這地點的），逐條列進缺口表最前面。
+- **跨地點頁**：格式檢查的 `--article-type` 寫明 `cross-place-page` 填 `aspect-page`。
+- 測試 234 項通過。已併進 `main`。
+- **唯一下一步**：Darren 把 app 模型選單改成 Opus 4.6；11-10 自動核准後排定工作開始寫富良野群。

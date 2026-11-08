@@ -49,10 +49,17 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 ### 2. 寫作與潤稿
 
-子代理一律用 Agent 工具、`model: "opus"`（Opus 5.5），**`run_in_background: false`**，等它完整回傳才做下一步。每一步都要親自確認檔案存在，不能只憑子代理的說法。寫作與潤稿不用 Fable。
+子代理一律用 Agent 工具、**`run_in_background: false`**，等它完整回傳才做下一步。每一步都要親自確認檔案存在，不能只憑子代理的說法。
+
+**模型**（Darren 2026-11-02 決定寫作與潤稿改用 Opus 4.6，2026-11-08 寫進流程）：排定工作的 session 用的是 Claude 桌面 app 模型選單記住的模型；Agent 工具的 `model` 只能填 `opus`（目前是 Opus 5.5）這類代號，指定不到 4.6，所以靠 fork 繼承。第 0 步先用 `get_session`（`session_id` 填 `self`）看自己的 `model`：
+
+- 是 `claude-opus-4-6`：作者、潤稿者、作者修改這三個子代理用 `subagent_type: "fork"`、不填 `model`（繼承 session 的 Opus 4.6）。
+- 不是：這三個用 `model: "opus"`，並在執行紀錄「最新一輪」加一行「寫作模型：<實際模型>，請 Darren 把 app 的模型選單改成 Opus 4.6」。不因此略過。
+- 研究者、意義比對、三個驗收者、選圖子代理一律 `model: "opus"`。任何子代理都不用 Fable；排定工作本身也不該跑在 Fable 上（協調工作用不到，而且很貴）。
 
 0. **寫作前補研究**（新子代理「研究者」，不寫文章；Darren 2026-10-25 決定加這一步，因為事實表薄的頁面寫出來會用「打電話問」填滿表格。判定規則 2026-10-25 照 6 篇試跑結果修訂）。交代：
    - 讀大綱這一頁（mustAnswer、headings、`links`、分工表）、`.agents/skills/japan-travel-answer-first/references/page-types.md` 裡這種頁型的必備欄位、`references/research-record.md`、`references/japanese-sources.md`。
+   - 也讀大綱裡提到這頁的三處（2026-11-08 加入，之前只靠一般缺口檢查撞到）：`gaps` 裡 `articleId` 是這頁的每一筆（有 `question` 與 `howToWrite`，照 `howToWrite` 做，例如「以 2024-10-01 版寫並標明、寫作前重查」）；`exceptions` 裡 `where` 或 `id` 提到這頁的，特別是 `research-required`（寫作前一定要補的，補不到就停放）與 `objective-condition`（例如寫作當天重查火山警戒等級）；`objectiveConditions` 裡 `placeId` 是這地點的（可以直接寫結論的客觀狀況與它依據的事實編號）。這些逐條列進「寫作前缺口檢查」表的最前面。
    - 從 `content-planning/hokkaido/places/<地點>/facts.json` 建 `<資料夾>/reference-review.md`：格式照 `content-production/wakkanai-transport/reference-review.md`（原始任務、事實表、推算、查到但不寫、待補內連），事實表收大綱這頁標題用到的事實，加上跟本頁主題直接相關的事實，編號不帶地點前綴。
    - 在 `reference-review.md` 加「## 寫作前缺口檢查」表：每條 mustAnswer、每個大綱或頁型要的表格欄位一行（住宿頁是每一家的區域、離車站或港口多遠、接送、營業期間、訂房管道；Darren 2026-10-26 決定住宿頁不寫價格，含餐只在影響選擇時寫），欄位是項目、已有的事實編號、夠不夠、缺什麼、補研究結果。表格欄位一欄一行，分母是大綱或這頁表格要列的家數。另外列每個 H3 用到幾筆事實。
    - **什麼算「夠」**：
@@ -82,7 +89,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
    - 讀研究者建好的 `<資料夾>/reference-review.md`，只能用裡面的事實。缺口表標「補不到」的不寫；單一格子可以寫成讀者能做的事，但不能用「訂房時用電話問」之類的句子填滿一整欄。缺口檢查寫「整欄拿掉」的欄不放進表格；「官方不公布」的欄位不放。
    - Darren 的寫法要求：讀者會卡住的事講細，其他一兩句帶過，不要每節一樣長；班次少（一天 4 班以下）就列時刻表，用白話說選擇，不算出能待幾分鐘；段落從讀者的處境起頭；有事實撐的判斷直接給、理由寫在同一句，划不划算要用事實的數字算；不寫成去過、不用第一人稱、不加沒有事實的感想；不用「看這張表」「都查得到」「先…」「關鍵是」「最先要搞清楚的是」這類硬裝口語或宣告句；同一個條件詞不整篇重複；查不到的不寫，也不寫「官方沒寫」。
    - 輸出 `<資料夾>/draft-tagged.md`（每句有數字、時間、價格、條件的句子在句號前標 `[F編號]`；結尾 `## 延伸資料`（官方頁）、`## 資料來源`）與 `<資料夾>/publication.json`（`articleId`、`targetPath`、`seoTitle` 與 H1 相同、`seoDescription` 120 字內含具體數字、`excerpt`）。
-   - 跑到通過：`python .agents/skills/japan-travel-answer-first/scripts/fact_tags.py <資料夾>`（產生 `reader-preview.md`）、`node .agents/skills/japan-travel-answer-first/scripts/check-voice.mjs <資料夾>/reader-preview.md`、`python .agents/skills/japan-travel-answer-first/scripts/audit_answer_first.py <資料夾>/reader-preview.md --json --article-type <大綱這頁的 pageType（place-entry 或 aspect-page）> --reference-review <資料夾>/reference-review.md`（要 `mechanical_clear`）、`node scripts/check-benchmark.mjs --after=<資料夾>/reader-preview.md`（住宿表要有「連結」欄、景點資訊欄要有「連結」列、不能有譯名表標過的舊寫法；`errors` 要是空的，`warnings` 只看不擋。2026-11-08 加入，定稿時 `finalize-release.mjs` 會再擋一次）。
+   - 跑到通過：`python .agents/skills/japan-travel-answer-first/scripts/fact_tags.py <資料夾>`（產生 `reader-preview.md`）、`node .agents/skills/japan-travel-answer-first/scripts/check-voice.mjs <資料夾>/reader-preview.md`、`python .agents/skills/japan-travel-answer-first/scripts/audit_answer_first.py <資料夾>/reader-preview.md --json --article-type <大綱這頁的 pageType（place-entry 或 aspect-page；跨地點頁 `cross-place-page` 也填 aspect-page，程式沒有跨地點頁這個選項，旭岳還是層雲峽那篇就是這樣跑的）> --reference-review <資料夾>/reference-review.md`（要 `mechanical_clear`）、`node scripts/check-benchmark.mjs --after=<資料夾>/reader-preview.md`（住宿表要有「連結」欄、景點資訊欄要有「連結」列、不能有譯名表標過的舊寫法；`errors` 要是空的，`warnings` 只看不擋。2026-11-08 加入，定稿時 `finalize-release.mjs` 會再擋一次）。
    - 不讀 `content-production` 其他文章的正文、不改資料夾以外的檔案、不 commit。Windows 的 heredoc 會吃反斜線，寫檔用 Write 工具。
 2. **潤稿者**（新子代理，沒寫過這篇）。照 `.agents/skills/japan-travel-polish/SKILL.md` 做第 1～3 步（2026-10-30 起改成短原則加範例，不讀參考文章、沒有編輯挑錯一輪）：讀 `references/examples.md`；先把 `draft-tagged.md`、`reader-preview.md` 各複製成 `before-draft-tagged.md`、`before-reader-preview.md`；照「怎麼改」**先刪再調**（2026-10-31 Darren 認可）：先整筆刪掉讀者用不到的規格（客房數、年份、設施清單），列在 `polish-notes.md` 的 `## 刪掉的事實`，再把用逗號接的句子寫出關係，但不併成長句；四項檢查（`check-polish.mjs --article=<id> --outline=<這群的大綱檔>`、`fact_tags.py`、`audit_answer_first.py`、`check-voice.mjs --final`）全部通過。
 3. **意義比對**（新子代理）：先跑 `node .agents/skills/japan-travel-polish/scripts/check-modifiers.mjs <資料夾>/before-reader-preview.md <資料夾>/reader-preview.md`，把輸出和 `check-polish.mjs` 印出的「刪掉的事實」一起交給它當線索；它讀 `.agents/skills/japan-travel-polish/agents/meaning-drift.md` 照做（把 `<文章資料夾>`、`<地點>` 換成實際值）。
@@ -168,7 +175,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 ### 6. 收尾
 
 1. 更新 `content-automation/local-run-log.md`（見「執行紀錄」）。
-2. `git add` 只限：`<資料夾>/`、`content-automation/local-run-log.md`、大綱檔（有同步標題時），以及第 5 步上傳的 `content-production/<id>/`。commit 訊息 `feat(content): <id> 本機寫作完成`（停放用 `<id> 停放`、略過用 `chore(automation): 本機寫作略過 <原因>`），結尾加 `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`。`git push origin auto/wakkanai-writing`；第 5 步推過 `main` 的話，紀錄更新後再 `git push origin HEAD:main` 一次（先照第 5 步第 2、3 點合併與測試）。
+2. `git add` 只限：`<資料夾>/`、`content-automation/local-run-log.md`、大綱檔（有同步標題時），以及第 5 步上傳的 `content-production/<id>/`。commit 訊息 `feat(content): <id> 本機寫作完成`（停放用 `<id> 停放`、略過用 `chore(automation): 本機寫作略過 <原因>`），結尾加 `Co-Authored-By: Claude <這輪寫作用的模型，例如 Opus 4.6> <noreply@anthropic.com>`。`git push origin auto/wakkanai-writing`；第 5 步推過 `main` 的話，紀錄更新後再 `git push origin HEAD:main` 一次（先照第 5 步第 2、3 點合併與測試）。
 3. 刪掉 `.auto-writer.lock`。
 
 ## 失敗
