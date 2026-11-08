@@ -348,5 +348,5 @@
 ## 寫作模型 Opus 4.6（Darren 2026-11-02 決定，2026-11-08 寫進流程）
 
 - Darren 2026-11-02 比較利尻島天氣兩版作者稿後，決定寫作與潤稿改用 Opus 4.6，不用 Opus 5.5；Fable 仍只用在評審與策略。這個決定之前只記在 Claude 的記憶，沒進規則文件，排定工作一直用 Opus 5.5。
-- 排定工作 `japan-travel-daily-writer` 的 session 跟著 Claude 桌面 app 模型選單的模型跑（2026-11-08 查到是 Fable 5.1）；Agent 工具的 `model` 只能填 `opus` 這類代號，所以作者、潤稿者、作者修改三個子代理在 session 是 Opus 4.6 時用 fork 繼承，不是時退回 `opus` 並在執行紀錄提醒。細節在 `content-automation/local-writer.md` 第 2 步開頭。
+- 排定工作 `japan-travel-daily-writer` 的 session 跟著 Claude 桌面 app 模型選單的模型跑（2026-11-08 查到是 Fable 5.1）；Agent 工具的 `model` 只能填 `opus` 這類代號，所以作者、潤稿者、作者修改三個子代理在 session 是 Opus 4.6 時用 fork 繼承；不是時**這輪不寫**（Darren 2026-11-08：只能用 4.6，不退回 5.5），只做上傳與補內連，並在執行紀錄提醒。細節在 `content-automation/local-writer.md` 第 0 步第 6 點與第 2 步開頭。
 - 要 Darren 做的：把 app 的模型選單改成 Opus 4.6（模型代號 `claude-opus-4-6`，app 接受），排定工作下一輪就會用它。

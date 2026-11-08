@@ -117,7 +117,7 @@
    - 複查。
    事實查核最多 4 輪。
 
-寫作與潤稿用 Opus 4.6（Darren 2026-11-02 決定；排定工作跟著 app 模型選單的模型跑，選單要設成 Opus 4.6，沒設到時這輪退回 Opus 5.5 並在執行紀錄提醒），不用 Fable。
+寫作與潤稿用 Opus 4.6（Darren 2026-11-02 決定；排定工作跟著 app 模型選單的模型跑，選單要設成 Opus 4.6，沒設到時這輪不寫、只上傳，並在執行紀錄提醒；Darren 2026-11-08：只能用 4.6），不用 Fable。
 
 依據：`content-automation/local-writer.md` 第 2～4 步、驗收 Skill `japan-travel-acceptance`、潤稿 Skill `japan-travel-polish`、寫作 Skill `references/competitor-reading.md`。
 
