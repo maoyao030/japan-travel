@@ -4,13 +4,14 @@
 
 ## 最新一輪
 
-- 台北時間：2026-11-09 20:44 開始，20:45 結束（排定工作自動執行，20:42 輪）
-- 文章：—。**結果：略過：額度（每週 97%，臨時放寬門檻 97%）**
-- 上傳：略過（每週額度 97% > 80%）
-- 補內連：略過（同上）
-- 用量：5 小時 2%、每週 97%（每週額度台北 2026-11-09 22:00 重置）
+- 台北時間：2026-11-10 01:45 開始（排定工作自動執行，01:42 輪）
+- 文章：`biei-transport`（美瑛交通）。**結果：停放（47/56 verified、0 incorrect、9 unreachable；gates 不通過）**
+- 停放原因：道北巴士官網拒絕連線（C16, C37, C38）、美瑛觀光協會活動子頁重導向首頁（C27-C30, C34）、JR 北海道站頁不可達（C26）。文章 0 incorrect、讀者驗收 pass。
+- 上傳：無可上傳文章（furano-transport 與 biei-transport 都停放中）
+- 補內連：略過（無上傳）
+- 用量：5 小時 43%、每週 6%
 - commit：見 `git log`
-- 下一輪預期文章：2026-11-09 22:00 重置後，門檻回到 80%，下一篇是 `biei-transport`（美瑛交通）；furano-transport 停放中等人工 session 重跑事實查核
+- 下一輪預期文章：`biei-blue-pond`（美瑛青池）；furano-transport 與 biei-transport 停放中等人工 session 重跑事實查核
 
 ## 停放
 
@@ -21,6 +22,7 @@
 | rishiri-island-festival | 2026-10-25 | 大綱指定內連句「祭典當晚島上住宿容易客滿」沒有官方來源（fact-check C55 unsupported；官方只有りしぷら reserve/error 頁「夏季は毎年大変な混雑」）；其他驗收都過（93 項中 92 verified、讀者 acceptable） | 已解決：2026-10-26 人工 session 把大綱內連句改成導覽句、複查通過，已上線 |
 | rebun-island | 2026-10-24 | 大綱指定內連句「活動期間島上住宿容易客滿」沒有官方來源（fact-check C43 unsupported）；其他驗收都過（97 項中 96 verified、讀者 acceptable） | 已解決：2026-10-26 人工 session 把大綱內連句改成導覽句、複查通過，已上線 |
 | furano-transport | 2026-11-09 | 事實查核 16/50 unreachable（營運者官網 URL 搬移或 404：JR 互動查詢、Bus Gorilla Liner、Resort Liner、North Liner、Toyota 租車、薰衣草號票價 PDF）；核心時刻表 34 項 verified、讀者 1 項已修正 | 人工 session：重跑事實查核（更新 URL 或找替代來源） |
+| biei-transport | 2026-11-10 | 事實查核 3 輪後 9/56 unreachable（道北巴士官網 ECONNREFUSED：C16, C37, C38；觀光協會子頁重導向首頁：C27-C30, C34；JR 站頁不可達：C26）；47 verified、0 incorrect、讀者 pass | 人工 session：重跑事實查核（等網站恢復或找替代來源） |
 
 ## 上傳
 
@@ -77,6 +79,7 @@
 
 | 台北時間 | 文章 ID | 結果 | 事實查核輪數 | 5 小時額度變化 | 待同步的事實 |
 |---|---|---|---|---|---|
+| 2026-11-10 01:45 | biei-transport | 停放（47/56 verified，9 unreachable：道北巴士 ECONNREFUSED、觀光協會子頁重導向、JR 站頁不可達；讀者 pass；gates 不通過） | 3 | 43%（5h）、6%（週） | — |
 | 2026-11-09 20:45 | — | 略過：額度（每週 97%，臨時放寬門檻 97%；上傳與補內連同略） | — | 2%（5h）、97%（週） | — |
 | 2026-11-09 12:05 | furano-transport | 停放（34/50 verified，16 unreachable URL；讀者 1 項已修正；gates 不通過） | 1 | 9% → 35%（5h）、94% → 97%（週） | F316～F320 新增（JR 全車指定席、薰衣草號 12/1 改定、巴士站營業時間變更、一人乘務 FAQ、高速富良野號不預約制）；待同步回地點事實表 |
 | 2026-11-09 04:44 | — | 略過：額度（每週 92%；富良野群 11-10 才核准） | — | 3% → 3% | — |
