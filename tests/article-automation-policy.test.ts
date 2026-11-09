@@ -56,7 +56,7 @@ test('repo 內的清單通過驗證：稚內群 24 頁、旭川・大雪群 21 �
   assert.deepEqual(queue.travelGroups.map((group: AnyRecord) => group.id), ['hokkaido-wakkanai', 'hokkaido-asahikawa', 'hokkaido-furano'])
   // 富良野・美瑛群採默許制：提醒日、自動核准日都要有，明確核准前是 null
   const furano = queue.travelGroups.at(-1)
-  assert.deepEqual(furano.approval, {remindedAt: '2026-11-07', autoApproveOn: '2026-11-10', approvedExplicitlyAt: null})
+  assert.deepEqual(furano.approval, {remindedAt: '2026-11-07', autoApproveOn: '2026-11-10', approvedExplicitlyAt: '2026-11-09'})
   const outlines = await Promise.all(
     ['hokkaido-wakkanai-outline.json', 'hokkaido-asahikawa-outline.json', 'hokkaido-furano-outline.json'].map(async (file) =>
       JSON.parse(await readFile(path.join(projectRoot, 'content-planning/hokkaido', file), 'utf8')),
