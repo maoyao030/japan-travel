@@ -2019,3 +2019,9 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **2026-11-08 再補充：為什麼派子代理指定不到 4.6、怎麼解**。Darren 問為什麼不能指定 4.6。原因：Agent 工具的 `model` 參數只收 sonnet／opus／haiku／fable 四個代號，`opus` 就是 Opus 5.5；11-02 能用 4.6 是因為那個人工 session 本身選了 4.6。查 Claude Code 文件後找到兩條路：(1) 專案自訂子代理定義 `.claude/agents/<名稱>.md` 的 `model` 接受完整模型代號，所以新增 `.claude/agents/japan-travel-writer.md`（`model: claude-opus-4-6`），作者、潤稿者、作者修改改用這個類型、不填 `model`；(2) 排定工作的編輯表單工具列可以單獨設這個工作的模型。自訂類型要 session 重新開始才載入，這個人工 session 派不出去（「Agent type not found」），這台電腦也沒有 `claude` 命令列可以另開測試，所以**還沒實際驗證**，第一次驗證是排定工作下一次寫文章那一輪（11-10）。備援照舊：派不出去而且 session 不是 4.6 就這輪不寫、只上傳。`local-writer.md`、`AGENTS.md`、`RULES_OVERVIEW.md`、排定工作提示第 3 點、Claude 記憶都已改。
 - **唯一下一步**：Darren 在排定工作的編輯表單把模型設成 Opus 4.6（雙保險，也省 Fable 的錢）；11-10 第一輪看執行紀錄確認作者是用 `japan-travel-writer` 派出去的。
 - **2026-11-08 確認**：Darren 在排定工作的編輯表單把模型改成 Opus 4.6 後按「立即執行」，新開的 session（`local_687e5faf…`）模型是 `claude-opus-4-6`，設定生效。這輪因每週額度 90% 會略過寫作，`japan-travel-writer` 子代理類型要等 11-10 真正寫文章那輪才驗證得到。
+
+## 2026-11-09 Claude Code：富良野群明確核准、重置前把額度用完
+
+- Darren 2026-11-09 說「核准了」，並要把這週剩下的額度用完。`article-queue.json` 的 `hokkaido-furano` 填 `approvedExplicitlyAt: 2026-11-09`（`queue:validate` 通過）。`local-writer.md` 第 0 步第 2 點加臨時放寬：到台北 2026-11-09 22:00 重置前，每週門檻 97%，之後自動回 80%。當時每週額度 93%，重置前還有 10:42、13:42、20:42 三輪，一篇約用 2%。
+- 規劃總表「群清單」富良野列狀態改成「已核准（Darren 2026-11-09 明確核准）」。
+- **唯一下一步**：看 10:42、13:42、20:42 三輪的執行紀錄，確認第一篇「札幌到富良野」有沒有寫出來、作者是不是用 `japan-travel-writer` 派的。
