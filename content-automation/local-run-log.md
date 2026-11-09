@@ -4,14 +4,14 @@
 
 ## 最新一輪
 
-- 台北時間：2026-11-10 01:45 開始（排定工作自動執行，01:42 輪）
-- 文章：`biei-transport`（美瑛交通）。**結果：停放（47/56 verified、0 incorrect、9 unreachable；gates 不通過）**
-- 停放原因：道北巴士官網拒絕連線（C16, C37, C38）、美瑛觀光協會活動子頁重導向首頁（C27-C30, C34）、JR 北海道站頁不可達（C26）。文章 0 incorrect、讀者驗收 pass。
-- 上傳：無可上傳文章（furano-transport 與 biei-transport 都停放中）
-- 補內連：略過（無上傳）
-- 用量：5 小時 43%、每週 6%
-- commit：見 `git log`
-- 下一輪預期文章：`biei-blue-pond`（美瑛青池）；furano-transport 與 biei-transport 停放中等人工 session 重跑事實查核
+- 台北時間：2026-11-10 20:45 開始（排定工作自動執行，20:42 輪）
+- 文章：`biei-blue-pond`（美瑛青池）。**結果：通過完整驗收（gates_clear）**
+- 事實查核：2 輪，67 verified、0 incorrect、0 unsupported、2 not-stated（已刪除句）。C17（巴士站牌 PDF）第 2 輪用圖片辨識確認 verified。
+- 讀者驗收：acceptable。10 項必修全部解決（H2 標題矛盾、四處見○○、日文對照、推算數字、C32 秋天轉深藍、C53 取消料、C67 VOLGA 起點、C55 步行距離、C68 免費參觀、C23 停車場日期）。
+- 上傳：略過（5 小時額度 76%）
+- 用量：5 小時 76%、每週 10%
+- commit：944e200
+- 下一輪預期文章：下一篇待上傳 biei-blue-pond；寫作下一篇 biei-sights（美瑛景點）；furano-transport 與 biei-transport 停放中等人工 session 重跑事實查核
 
 ## 停放
 
@@ -74,11 +74,14 @@
 | 文章 ID | 日期 | 原因 | 狀態 |
 |---|---|---|---|
 | rebun-island-transport | 2026-10-25 | 2026-10-20 人工流程的舊稿，沒有 `publication.json`（也沒有潤稿紀錄），`local-article-gates.mjs` 無法通過 | 已解決：2026-10-26 人工 session 照新大綱整篇重寫、驗收通過，已上線 |
+| furano-transport | 2026-11-09 | 16 unreachable URL（富良野巴士官網、ふらのバス時刻 PDF 等）；gates 不通過 | 等人工 session 重跑事實查核 |
+| biei-transport | 2026-11-10 | 9 unreachable（道北巴士 ECONNREFUSED、觀光協會子頁重導向、JR 站頁不可達）；gates 不通過 | 等人工 session 重跑事實查核 |
 
 ## 紀錄
 
 | 台北時間 | 文章 ID | 結果 | 事實查核輪數 | 5 小時額度變化 | 待同步的事實 |
 |---|---|---|---|---|---|
+| 2026-11-10 20:45 | biei-blue-pond | 通過驗收（67 verified、2 not-stated；上傳略過：額度 76%） | 2 | 76%（5h）、10%（週） | — |
 | 2026-11-10 01:45 | biei-transport | 停放（47/56 verified，9 unreachable：道北巴士 ECONNREFUSED、觀光協會子頁重導向、JR 站頁不可達；讀者 pass；gates 不通過） | 3 | 43%（5h）、6%（週） | — |
 | 2026-11-09 20:45 | — | 略過：額度（每週 97%，臨時放寬門檻 97%；上傳與補內連同略） | — | 2%（5h）、97%（週） | — |
 | 2026-11-09 12:05 | furano-transport | 停放（34/50 verified，16 unreachable URL；讀者 1 項已修正；gates 不通過） | 1 | 9% → 35%（5h）、94% → 97%（週） | F316～F320 新增（JR 全車指定席、薰衣草號 12/1 改定、巴士站營業時間變更、一人乘務 FAQ、高速富良野號不預約制）；待同步回地點事實表 |
