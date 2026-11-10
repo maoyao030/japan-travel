@@ -4,14 +4,12 @@
 
 ## 最新一輪
 
-- 台北時間：2026-11-10 10:42 開始（排定工作自動執行，10:42 輪）
-- 文章：`nakafurano-farm-tomita`（北海道富田農場）。**結果：通過完整驗收（gates_clear）**
-- 事實查核：2 輪，67 項（66 verified、1 not-stated）。第 1 輪 3 incorrect（營業時間表用錯來源）、修正後第 2 輪全部通過。
-- 讀者驗收：acceptable。3 項必修全部解決（付款備註、東區計程車替代方案、H3 香水移除）。
-- 上傳：略過（Sanity 指令被 auto mode 擋，無使用者在場核准；D1 已登記 biei-blue-pond accepted 但 publish fail 1 次）
-- 用量：5 小時 27%、每週 14%
-- commit：81a8668
-- 下一輪預期文章：待上傳 biei-blue-pond 與 nakafurano-farm-tomita（需使用者在場核准 Sanity 操作）；寫作下一篇 lavender-season（富良野薰衣草季）；furano-transport 與 biei-transport 停放中等人工 session 重跑事實查核
+- 台北時間：2026-11-10 12:20 開始（排定工作自動執行，繼續上一輪未完成的上傳）
+- 寫作：`nakafurano-farm-tomita`（上一輪已完成驗收，本輪只做上傳）
+- 上傳 biei-blue-pond：封面（Pexels Jeffry Surianto）＋2 張文內（Unsplash Jonas Eriksson 青池、Pexels Chris 白鬚瀑布）→ 開放索引 → D1 published → 美瑛 Hub 開放索引
+- 上傳 nakafurano-farm-tomita：封面（Pexels Natsuko Aoyama 彩色花田）＋1 張文內（Pexels Natsuko Aoyama 薰衣草田）→ 開放索引 → D1 published → 中富良野 Hub 開放索引
+- commit：559402c（定稿檔案）＋本次 commit
+- 下一輪預期文章：寫作 lavender-season（富良野薰衣草季）；furano-transport 與 biei-transport 停放中等人工 session 重跑事實查核
 
 ## 停放
 
@@ -28,6 +26,8 @@
 
 | 台北時間 | 文章 ID | 結果 | 網址 | 停在哪一點與原因 | 封面來源與授權 |
 |---|---|---|---|---|---|
+| 2026-11-10 12:29（自動） | nakafurano-farm-tomita | 已上線 | https://offpathnotes.com/places/nakafurano/farm-tomita/ | — | Pexels blooming-flower-field-with-mountain-view-8797279，Natsuko Aoyama，Pexels License |
+| 2026-11-10 12:21（自動） | biei-blue-pond | 已上線 | https://offpathnotes.com/places/biei/blue-pond/ | —（image-plan targetUrl 路徑修正） | Pexels tranquil-blue-pond-with-reflection-of-trees-35195363，Jeffry Surianto，Pexels License |
 | 2026-10-27 12:05（人工） | sounkyo-sights | 已上線 | https://offpathnotes.com/places/sounkyo/sights/ | —（11:14 定稿失敗，標題紀錄對齊後 b1fc3c5 重新上傳） | 維基共享資源 Ryūsei Falls 2003-09-14 - panoramio.jpg，lienyuan lee，CC BY 3.0 |
 | 2026-10-27 11:46（人工） | asahidake-or-sounkyo | 已上線 | https://offpathnotes.com/places/asahidake/asahidake-or-sounkyo/ | —（第 13 步登記第一次遇到 D1 暫時錯誤 7403，重試完成） | 維基共享資源 黒岳から旭岳方面.jpg，Koda6029，CC BY-SA 4.0 |
 | 2026-10-27 11:42（人工） | asahidake-stay | 已上線 | https://offpathnotes.com/places/asahidake/stay/ | — | 維基共享資源 Asahidake, Daisetsuzan Volcanic Group - Asahidake6029.jpg，lumoplank，CC0 |
