@@ -4,12 +4,12 @@
 
 ## 最新一輪
 
-- 台北時間：2026-11-10 12:20 開始（排定工作自動執行，繼續上一輪未完成的上傳）
-- 寫作：`nakafurano-farm-tomita`（上一輪已完成驗收，本輪只做上傳）
-- 上傳 biei-blue-pond：封面（Pexels Jeffry Surianto）＋2 張文內（Unsplash Jonas Eriksson 青池、Pexels Chris 白鬚瀑布）→ 開放索引 → D1 published → 美瑛 Hub 開放索引
-- 上傳 nakafurano-farm-tomita：封面（Pexels Natsuko Aoyama 彩色花田）＋1 張文內（Pexels Natsuko Aoyama 薰衣草田）→ 開放索引 → D1 published → 中富良野 Hub 開放索引
-- commit：559402c（定稿檔案）＋本次 commit
-- 下一輪預期文章：寫作 lavender-season（富良野薰衣草季）；furano-transport 與 biei-transport 停放中等人工 session 重跑事實查核
+- 台北時間：2026-11-10 20:42 開始（排定工作自動執行）
+- 寫作：`lavender-season`（富良野薰衣草幾月開，富田農場、北星山與日之出公園怎麼排）
+- 驗收：50 項事實 50 verified（C30/C31/C32 原始來源已下架但研究時已擷取、標註 2027 重查；C49 第二輪修正後 verified）；讀者 6 必修 → 作者修正兩輪 → 讀者 PASS；標題不改；gates_clear
+- 上傳：略過（留給下一輪）
+- commit：本次 commit
+- 下一輪預期文章：上傳 lavender-season；寫作 kamifurano-transport；furano-transport 與 biei-transport 停放中等人工 session 重跑事實查核
 
 ## 停放
 
@@ -81,6 +81,7 @@
 
 | 台北時間 | 文章 ID | 結果 | 事實查核輪數 | 5 小時額度變化 | 待同步的事實 |
 |---|---|---|---|---|---|
+| 2026-11-10 20:42 | lavender-season | 通過驗收（50 verified；上傳留給下一輪） | 2 | 37%（5h）、21%（週） | F44 新增（JR 富良野線各站） |
 | 2026-11-10 10:42 | nakafurano-farm-tomita | 通過驗收（66 verified、1 not-stated；上傳略過：Sanity auto mode 擋） | 2 | 27%（5h）、14%（週） | — |
 | 2026-11-10 20:45 | biei-blue-pond | 通過驗收（67 verified、2 not-stated；上傳略過：額度 76%） | 2 | 76%（5h）、10%（週） | — |
 | 2026-11-10 01:45 | biei-transport | 停放（47/56 verified，9 unreachable：道北巴士 ECONNREFUSED、觀光協會子頁重導向、JR 站頁不可達；讀者 pass；gates 不通過） | 3 | 43%（5h）、6%（週） | — |
