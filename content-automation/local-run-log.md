@@ -4,14 +4,14 @@
 
 ## 最新一輪
 
-- 台北時間：2026-11-10 20:45 開始（排定工作自動執行，20:42 輪）
-- 文章：`biei-blue-pond`（美瑛青池）。**結果：通過完整驗收（gates_clear）**
-- 事實查核：2 輪，67 verified、0 incorrect、0 unsupported、2 not-stated（已刪除句）。C17（巴士站牌 PDF）第 2 輪用圖片辨識確認 verified。
-- 讀者驗收：acceptable。10 項必修全部解決（H2 標題矛盾、四處見○○、日文對照、推算數字、C32 秋天轉深藍、C53 取消料、C67 VOLGA 起點、C55 步行距離、C68 免費參觀、C23 停車場日期）。
-- 上傳：略過（5 小時額度 76%）
-- 用量：5 小時 76%、每週 10%
-- commit：944e200
-- 下一輪預期文章：下一篇待上傳 biei-blue-pond；寫作下一篇 biei-sights（美瑛景點）；furano-transport 與 biei-transport 停放中等人工 session 重跑事實查核
+- 台北時間：2026-11-10 10:42 開始（排定工作自動執行，10:42 輪）
+- 文章：`nakafurano-farm-tomita`（北海道富田農場）。**結果：通過完整驗收（gates_clear）**
+- 事實查核：2 輪，67 項（66 verified、1 not-stated）。第 1 輪 3 incorrect（營業時間表用錯來源）、修正後第 2 輪全部通過。
+- 讀者驗收：acceptable。3 項必修全部解決（付款備註、東區計程車替代方案、H3 香水移除）。
+- 上傳：略過（Sanity 指令被 auto mode 擋，無使用者在場核准；D1 已登記 biei-blue-pond accepted 但 publish fail 1 次）
+- 用量：5 小時 27%、每週 14%
+- commit：81a8668
+- 下一輪預期文章：待上傳 biei-blue-pond 與 nakafurano-farm-tomita（需使用者在場核准 Sanity 操作）；寫作下一篇 lavender-season（富良野薰衣草季）；furano-transport 與 biei-transport 停放中等人工 session 重跑事實查核
 
 ## 停放
 
@@ -81,6 +81,7 @@
 
 | 台北時間 | 文章 ID | 結果 | 事實查核輪數 | 5 小時額度變化 | 待同步的事實 |
 |---|---|---|---|---|---|
+| 2026-11-10 10:42 | nakafurano-farm-tomita | 通過驗收（66 verified、1 not-stated；上傳略過：Sanity auto mode 擋） | 2 | 27%（5h）、14%（週） | — |
 | 2026-11-10 20:45 | biei-blue-pond | 通過驗收（67 verified、2 not-stated；上傳略過：額度 76%） | 2 | 76%（5h）、10%（週） | — |
 | 2026-11-10 01:45 | biei-transport | 停放（47/56 verified，9 unreachable：道北巴士 ECONNREFUSED、觀光協會子頁重導向、JR 站頁不可達；讀者 pass；gates 不通過） | 3 | 43%（5h）、6%（週） | — |
 | 2026-11-09 20:45 | — | 略過：額度（每週 97%，臨時放寬門檻 97%；上傳與補內連同略） | — | 2%（5h）、97%（週） | — |
