@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "articleId": "biei-blue-pond",
+  "articleTitle": "美瑛青池怎麼去，巴士時刻、點燈與白鬚瀑布順路看",
+  "targetUrl": "/places/biei/blue-pond/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-11-10",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "封面與文內照片 2026-11-10 選定。封面用 Pexels 免費圖庫（Jeffry Surianto），文內青池用 Unsplash（Jonas Eriksson），白鬚瀑布用 Pexels（Chris）。三張都是 2025-2026 年拍攝的實拍。Unsplash 與 Pexels 授權已於同日查核。",
+  "selectedCandidateIds": {
+    "cover": "cover-01",
+    "blue-pond-scene": "pond-01",
+    "shirahige-falls": "falls-01"
+  },
+  "selectedAt": "2026-11-10",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講的是美瑛青池：藍色水面加上立在水中的枯木，是青池最具辨識度的畫面。",
+      "mustShow": [
+        "青池的藍色或碧綠色水面",
+        "立在水中的枯木（白樺或落葉松枯幹）"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "其他湖泊或池塘冒充青池",
+        "AI 生成或合成畫面",
+        "冬天積雪覆蓋看不到水面的畫面（封面要認得出青池的藍）"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://images.pexels.com/photos/35195363/pexels-photo-35195363.jpeg?auto=compress&cs=tinysrgb&w=6500",
+        "focalPoint": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "cover-01 是 Pexels 攝影者 Jeffry Surianto 的照片，6500x4333（3:2），頁面描述寫「Stunning view of a serene blue pond reflecting dead trees and lush green forest」，位置標示 Biei, Japan。畫面為鮮明的碧藍色水面映著枯木倒影，上方是茂密的綠色森林。裁 16:9 從上下各切一些，焦點放在水面與枯木交界處，主體完整保留。cover-02 是維基共享資源 CC0 照片（AndyLeungHK），2017 年 7 月拍攝，年代較舊但授權最簡單。文內青池照片另外用了 Unsplash Jonas Eriksson 2026 年的照片，封面與文內來源不同、角度不同。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-10",
+        "photoSearchNotes": "搜尋範圍：Pexels「blue pond biei」、Unsplash「blue pond biei」、維基共享資源 Category:Shirogane Blue Pond（51 張）。Pexels 找到 5 張標示 Biei 的青池照片；Unsplash 找到 4 張標示 Shirogane Blue Pond 的照片；維基共享資源有大量候選。免費圖庫有合格實拍，照來源順序選定，沒有再查觀光協會素材（美瑛町觀光協會網站照片的轉載條件尚未確認）。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "stock-photo",
+          "provider": "Pexels",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.pexels.com/photo/tranquil-blue-pond-with-reflection-of-trees-35195363/",
+          "creatorName": "Jeffry Surianto",
+          "sourceTitle": "Tranquil Blue Pond with Reflection of Trees",
+          "sourceDescription": "Stunning view of a serene blue pond reflecting dead trees and lush green forest. Location: Biei, Japan.",
+          "takenAt": "2025",
+          "width": 6500,
+          "height": 4333,
+          "licenseName": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "licenseCheckedAt": "2026-11-10",
+          "matchType": "exact",
+          "whyItFits": "照片頁描述寫明是 Biei, Japan 的藍色池塘與枯木倒影；畫面就是青池最經典的碧藍水面加白色枯木幹。",
+          "altDraft": "碧藍色的美瑛青池水面倒映著白色枯木與綠色森林",
+          "captionDraft": "美瑛白金青池的藍色水面與枯木。",
+          "creditDraft": "照片：Jeffry Surianto／Pexels",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。水面、枯木與森林的自然景觀。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Shirogane_Blue_Pond,_Biei,_Hokkaido_Japan.jpg",
+          "creatorName": "AndyLeungHK",
+          "sourceTitle": "File:Shirogane Blue Pond, Biei, Hokkaido Japan.jpg",
+          "sourceDescription": "The blue pond of Shirogane（CC0，原始來源 Pixabay ID 2504798，2019 年 Commons 審查確認 CC0）",
+          "takenAt": "2017-07-09",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseCheckedAt": "2026-11-10",
+          "matchType": "exact",
+          "matchLimits": "2017 年 7 月拍攝，距今 9 年，青池周圍植被可能略有變化。",
+          "whyItFits": "檔案頁標題、說明與分類都指向 Shirogane Blue Pond, Biei, Hokkaido；EXIF 顯示 Nikon D5200 實拍。",
+          "altDraft": "美瑛白金青池的藍色水面與枯木",
+          "captionDraft": "美瑛白金青池（2017 年 7 月）。",
+          "creditDraft": "照片：AndyLeungHK／Wikimedia Commons／CC0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "blue-pond-scene",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "到了美瑛青池",
+      "purpose": "讓讀者在青池現場認得出藍色水面與枯木的景色，和封面不同角度。",
+      "mustShow": [
+        "青池的藍色或碧綠色水面",
+        "枯木"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "與封面完全相同的照片",
+        "AI 生成或合成畫面"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "到了美瑛青池，幾點去人比較少？",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://unsplash.com/photos/FU2h5AS2Zh8/download?force=true",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "pond-01 是 Unsplash 攝影者 Jonas Eriksson 2026 年 6 月在青池拍的照片（位置標示 Shirogane Blue Pond, Shirogane, Biei, Hokkaido, Japan），相機 FUJIFILM X100VI。標題「Blue pond with dead trees and green forest」，畫面是碧綠色水面與立在水中的白色枯木幹。與封面（Pexels Jeffry Surianto）不同來源、不同角度。這張是 2026 年 6 月拍的，可以代表青池目前的樣子。pond-02 是維基共享資源 MaedaAkihiko 2021 年 5 月拍的，CC BY-SA 4.0，年代較近但不如 pond-01 新。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-10",
+        "photoSearchNotes": "從封面的搜尋結果中挑選不同角度的照片。封面已選 Pexels，文內改用 Unsplash 以避免重複。"
+      },
+      "candidates": [
+        {
+          "candidateId": "pond-01",
+          "sourceType": "stock-photo",
+          "provider": "Unsplash",
+          "assetType": "photo",
+          "sourcePageUrl": "https://unsplash.com/photos/FU2h5AS2Zh8",
+          "creatorName": "Jonas Eriksson",
+          "sourceTitle": "Blue pond with dead trees and green forest",
+          "sourceDescription": "Location: Shirogane Blue Pond, Shirogane, Biei, Hokkaido, Japan. Camera: FUJIFILM X100VI. Published 2026-06-30.",
+          "takenAt": "2026-06",
+          "width": 3000,
+          "height": 2000,
+          "licenseName": "Unsplash License",
+          "licenseUrl": "https://unsplash.com/license",
+          "licenseCheckedAt": "2026-11-10",
+          "matchType": "exact",
+          "whyItFits": "照片頁位置標示 Shirogane Blue Pond, Biei, Hokkaido, Japan；標題與標籤都確認是青池的枯木與碧綠水面。2026 年 6 月拍攝，代表青池目前的景色。",
+          "altDraft": "美瑛青池的碧綠色水面映著枯木與背後的森林",
+          "captionDraft": "美瑛青池，無風的上午水面最靜、藍色最明顯（2026 年 6 月）。",
+          "creditDraft": "照片：Jonas Eriksson／Unsplash",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "pond-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Biei_Blue-pond.jpg",
+          "creatorName": "MaedaAkihiko",
+          "sourceTitle": "File:Biei Blue-pond.jpg",
+          "sourceDescription": "Shirogane Blue Pond in Biei Town, Hokkaido, Japan.／北海道上川郡美瑛町白金にある「青い池」（Own work，CC BY-SA 4.0）",
+          "takenAt": "2021-05-05",
+          "width": 5472,
+          "height": 3648,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-11-10",
+          "matchType": "exact",
+          "matchLimits": "2021 年 5 月拍攝，距今 5 年，植被可能略有變化。",
+          "whyItFits": "檔案頁寫明是北海道美瑛町白金的青い池；分類 Shirogane Blue Pond、May 2021 in Hokkaido；Panasonic DC-FZ1000M2 實拍。",
+          "altDraft": "美瑛青池的藍色水面與枯木（2021 年 5 月）",
+          "captionDraft": "美瑛白金青池（2021 年 5 月）。",
+          "creditDraft": "照片：MaedaAkihiko／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "shirahige-falls",
+      "kind": "inline",
+      "need": "site-identification",
+      "section": "白鬚瀑布",
+      "purpose": "讓讀者在 Blue River 橋上認得出白鬚瀑布的樣子：白色水流從岩壁湧出，落入碧藍色的美瑛川。",
+      "mustShow": [
+        "白鬚瀑布的白色水流從岩壁流下",
+        "下方的碧藍色河水（美瑛川）"
+      ],
+      "mustNotShow": [
+        "其他瀑布冒充白鬚瀑布",
+        "可辨識的人物臉部",
+        "AI 生成或合成畫面"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "從美瑛青池順路去白鬚瀑布與白金溫泉",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://images.pexels.com/photos/38116215/pexels-photo-38116215.jpeg?auto=compress&cs=tinysrgb&w=7008",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "falls-01 是 Pexels 攝影者 Chris 2026 年 6 月 10 日在白鬚瀑布拍的照片（Sony ILCE-7CM2，Lightroom 後製），7008x4672（3:2）。照片頁標題「Stunning view of Shirahige Waterfall with lush greenery in Hokkaido, Japan」，位置 北海道, 日本。白鬚の滝（Shirahige Falls）是北海道唯一叫這個名字的瀑布，位於美瑛町白金。畫面是白色水流從綠色岩壁分多條流下，下方是碧藍色河水，和正文描述的「地下水從岩壁的縫隙湧出來的潛流瀑」完全吻合。falls-02 是維基共享資源 OKJaguar 2018 年拍的，同樣的瀑布但年代較舊。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-10",
+        "photoSearchNotes": "搜尋範圍：Pexels「shirahige falls biei」、Unsplash「shirahige falls biei」、維基共享資源 Category:Shirahige Falls（24 張）。Unsplash 沒有白鬚瀑布的照片。Pexels 找到 Chris 的夏景照片（38116215）與數張冬景。維基共享資源有 OKJaguar 2018 年的 Quality image（6000x4000，CC BY-SA 4.0）。照來源順序，Pexels 優先於維基共享資源。"
+      },
+      "candidates": [
+        {
+          "candidateId": "falls-01",
+          "sourceType": "stock-photo",
+          "provider": "Pexels",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.pexels.com/photo/stunning-view-of-shirahige-waterfall-with-lush-greenery-in-hokkaido-japan-38116215/",
+          "creatorName": "Chris",
+          "sourceTitle": "Beautiful Shirahige Waterfall in Hokkaido, Japan",
+          "sourceDescription": "Stunning view of Shirahige Waterfall with lush greenery in Hokkaido, Japan. Camera: Sony ILCE-7CM2, 37mm, f/8, ISO 250. Taken 2026-06-10. Location: 北海道, 日本.",
+          "takenAt": "2026-06-10",
+          "width": 7008,
+          "height": 4672,
+          "licenseName": "Pexels License",
+          "licenseUrl": "https://www.pexels.com/license/",
+          "licenseCheckedAt": "2026-11-10",
+          "matchType": "exact",
+          "whyItFits": "照片頁標題寫明 Shirahige Waterfall in Hokkaido，白鬚の滝是北海道唯一叫這個名字的瀑布（位於美瑛町白金）。畫面是白色水流從綠色岩壁分多條流下匯入碧藍色河水，和讀者在 Blue River 橋上看到的景色一致。",
+          "altDraft": "白鬚瀑布的白色水流從岩壁分多條流下，匯入碧藍色的美瑛川，周圍是綠色森林",
+          "captionDraft": "從 Blue River 橋上看白鬚瀑布（2026 年 6 月）。",
+          "creditDraft": "照片：Chris／Pexels",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。瀑布與河川的自然景觀。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "falls-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Shirahige_Falls,_Biei_River,_Hokkaido,_Japan.jpg",
+          "creatorName": "OKJaguar",
+          "sourceTitle": "File:Shirahige Falls, Biei River, Hokkaido, Japan.jpg",
+          "sourceDescription": "Shirahige Falls In Hokkaido flows directly into the Biei River from a spring in the cliff face.（Own work，CC BY-SA 4.0，Quality image）",
+          "takenAt": "2018-06-10",
+          "width": 6000,
+          "height": 4000,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-11-10",
+          "matchType": "exact",
+          "matchLimits": "2018 年 6 月拍攝，距今 8 年，瀑布本身不太會變但周圍植被可能略有差異。",
+          "whyItFits": "檔案頁寫明是 Shirahige Falls 流入 Biei River，分類 Shirahige Falls；Fujifilm X-T2 實拍，Quality image。",
+          "altDraft": "白鬚瀑布的白色水流從岩壁流入碧藍色的美瑛川",
+          "captionDraft": "白鬚瀑布（2018 年 6 月）。",
+          "creditDraft": "照片：OKJaguar／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、招牌或建築。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
