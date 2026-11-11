@@ -2033,3 +2033,18 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 已修：Git 16 份 `embed-plan.json` 的 20 則說明，另把「從 0 分 34 秒」改成「從 34 秒」。線上 Sanity 16 篇同步改好（只改和 Git 舊字一字不差的說明欄位，用 ifRevisionID，不動正文其他地方、不動 `studioEditedAt`），查過線上 62 則已沒有「從頭」。
 - 測試：`npm test` 234 個通過。網站要等下一次 `main` 重建才會換字。
 - 分支：`claude/great-hypatia-5z8ts9`，2026-11-11 已合併推到 `main`（測試 234 個通過），網站會跟著重建。
+
+## 2026-11-11 Claude Code｜自動寫作的文章為什麼沒推上去
+
+- **起因**：Darren 問自動撰寫的文章為什麼沒有推上去。
+- **查到的原因**（三件疊在一起）：
+  - 11-10 10:44 那輪把〈美瑛青池〉〈富田農場〉傳上 Sanity 並上線，但推 `main` 時改用 `git checkout main`，`main` 被 `oral-optimization-b98f2c` worktree 占著而失敗（`'main' is already used by worktree`），再想 stash 也被擋，就留了「下次人工 session 處理」。文章封包與執行紀錄只在 `auto/wakkanai-writing`。
+  - 11-10 13:44 那輪〈富良野薰衣草幾月開〉驗收通過，額度沒超（5 小時 37%、每週 21%）卻寫「上傳留給下一輪」，沒照流程上傳。
+  - 11-10 20:42、11-11 01:42、04:42 三輪在排定工作的執行清單裡沒有紀錄，根本沒啟動（應是電腦或 app 沒開）。
+- **已做**：
+  - `content-automation/local-writer.md`：第 5 步第 3 點寫明推 `main` 只用 `git push origin HEAD:main`，不 checkout、不 switch、不 stash；前置加「額度沒超就一定這輪上傳，不得留給下一輪」；規則段同步。
+  - `auto/wakkanai-writing`（到 6603018，含青池、富田農場、薰衣草三篇封包）併進本分支，`npm test` 234 項通過，已推 `main`。
+- **尚未完成**：
+  - 11-11 10:44 那輪（Opus 4.6）寫〈上富良野交通〉寫到事實查核完、讀者驗收第一輪後，11:49 turn 就結束了，沒有修正、沒 commit、沒寫執行紀錄、沒上傳薰衣草篇；額度當時只有 46%，原因不明。`japan-travel-auto` 留著未 commit 的 `content-production/kamifurano-transport/` 與改過的 `content-planning/hokkaido/places/kamifurano/facts.json`（流程規定不改事實表），`.auto-writer.lock` 也沒刪（內容 `2026-11-11T02:46:00+08:00`，時間寫成 UTC 卻標 +08:00，下一輪會當成過期而照常開始）。這些照規則當另一個執行者的成果，人工 session 沒動。
+  - 薰衣草篇仍待上傳；13:42 那輪照流程應先寫、再上傳。
+- **唯一下一步**：看 13:42 那輪的執行紀錄，確認薰衣草篇有上傳、`main` 有推成；沒有的話再查 10:44 那輪為什麼中途結束。
