@@ -79,6 +79,13 @@ export function validateEmbedPlan(plan, {articleId} = {}) {
     } else if (embed.startSeconds !== undefined) {
       throw new Error(`${embed.embedId}：Instagram 不用 startSeconds`)
     }
+    // 從頭播就不提播放位置；讀者按下去本來就從頭播（Darren 2026-11-11）。
+    if (/從頭(?:開始)?(?:播|看)/.test(embed.captionDraft)) {
+      throw new Error(`${embed.embedId} 的 captionDraft 不寫「從頭播放」之類的話，從頭播就不提播放位置`)
+    }
+    if (!startSeconds && /從\s*[0-9０-９]+\s*(?:分|秒)[^。]*開始/.test(embed.captionDraft)) {
+      throw new Error(`${embed.embedId} 的 startSeconds 是 0，captionDraft 卻寫了從幾分幾秒開始`)
+    }
 
     const fields = {
       platform: embed.platform,

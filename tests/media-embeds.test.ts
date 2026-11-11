@@ -108,6 +108,8 @@ test('嵌入封包擋下超過兩年、個人 Instagram、超過兩個與同一�
   assert.throws(() => validateEmbedPlan({...plan, embeds: [embed, {...embed, embedId: 'b'}]}), /同一節只能放一個/)
   assert.throws(() => validateEmbedPlan({...plan, embeds: [{...embed, checks: {...embed.checks, contentVerified: false}}]}), /contentVerified/)
   assert.throws(() => canonicalEmbedUrl('youtube', 'http://www.youtube.com/watch?v=F-lz9aR-Xyg'), /HTTPS/)
+  assert.throws(() => validateEmbedPlan({...plan, embeds: [{...embed, startSeconds: 0, captionDraft: '稚內冰雪廣場的雪滑梯，從頭播放。'}]}), /從頭播放/)
+  assert.throws(() => validateEmbedPlan({...plan, embeds: [{...embed, startSeconds: 0, captionDraft: '自行車道，從 4 分 25 秒開始。'}]}), /startSeconds 是 0/)
 })
 
 test('嵌入算位置時照片算一個區塊，照片位置計算略過嵌入', () => {

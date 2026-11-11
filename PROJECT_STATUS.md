@@ -2025,3 +2025,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - Darren 2026-11-09 說「核准了」，並要把這週剩下的額度用完。`article-queue.json` 的 `hokkaido-furano` 填 `approvedExplicitlyAt: 2026-11-09`（`queue:validate` 通過）。`local-writer.md` 第 0 步第 2 點加臨時放寬：到台北 2026-11-09 22:00 重置前，每週門檻 97%，之後自動回 80%。當時每週額度 93%，重置前還有 10:42、13:42、20:42 三輪，一篇約用 2%。
 - 規劃總表「群清單」富良野列狀態改成「已核准（Darren 2026-11-09 明確核准）」。
 - **唯一下一步**：看 10:42、13:42、20:42 三輪的執行紀錄，確認第一篇「札幌到富良野」有沒有寫出來、作者是不是用 `japan-travel-writer` 派的。
+
+## 2026-11-11 Claude Code｜影片說明拿掉「從頭播放」
+
+- Darren 覺得影片說明句尾的「從頭播放」很怪。原因是選圖 Skill `references/embed-plan.md` 要求 `captionDraft`「說畫面是什麼、從哪裡開始看」，影片從頭播時寫的人就硬補一句。
+- 已改：規則改成只有 `startSeconds` 大於 0 才寫從哪裡開始，從頭播不提播放位置；`scripts/embed-plan.mjs` 會擋「從頭播放／從頭開始看／從頭開始播」，也擋 `startSeconds` 是 0 卻寫「從幾分幾秒開始」；`tests/media-embeds.test.ts` 加了對應測試。
+- 已修：Git 16 份 `embed-plan.json` 的 20 則說明，另把「從 0 分 34 秒」改成「從 34 秒」。線上 Sanity 16 篇同步改好（只改和 Git 舊字一字不差的說明欄位，用 ifRevisionID，不動正文其他地方、不動 `studioEditedAt`），查過線上 62 則已沒有「從頭」。
+- 測試：`npm test` 234 個通過。網站要等下一次 `main` 重建才會換字。
+- 分支：`claude/great-hypatia-5z8ts9`，還沒合併回 `main`。
