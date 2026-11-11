@@ -61,6 +61,11 @@ test('登記檔檢查：只有 Darren 認可、有日期、有該學什麼、檔
   assert.match(problems, /缺 approvedAt/)
   assert.match(problems, /缺 learn/)
   assert.match(validateIndex({...good, kinds: good.kinds.slice(1)}, {fileExists: () => true}).join('\n'), /缺頁型：place-entry/)
+  const withReference = structuredClone(good) as any
+  withReference.kinds[2].references = [{url: 'https://example.com/a', note: 'Darren：每家先講適合誰'}]
+  assert.deepEqual(validateIndex(withReference, {fileExists: () => true}), [])
+  withReference.kinds[2].references.push({url: 'https://example.com/b', note: '整篇存下來', text: '別站的內文'})
+  assert.match(validateIndex(withReference, {fileExists: () => true}).join('\n'), /不能存內文/)
 })
 
 test('repo 裡的登記檔沒有問題，清單每一篇都對得到頁型，範本檔是整篇文章', async () => {

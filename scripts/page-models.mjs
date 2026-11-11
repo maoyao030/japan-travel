@@ -74,6 +74,11 @@ export function validateIndex(index, {fileExists = (file) => existsSync(path.joi
     for (const candidate of kind.candidates ?? []) {
       if (!candidate.articleId || !candidate.why) problems.push(`${kind.id} 的候選要有 articleId 與 why`)
     }
+    // 別站的參考文章只存網址與 Darren 說它好在哪，不存內文
+    for (const reference of kind.references ?? []) {
+      if (!/^https:\/\//.test(reference.url ?? '') || !reference.note) problems.push(`${kind.id} 的參考文章要有 https 網址與 note（Darren 說它好在哪）`)
+      if (reference.text || reference.body) problems.push(`${kind.id} 的參考文章不能存內文`)
+    }
   }
   for (const id of ['place-entry', 'cross-place', 'sights', 'sight-single', ...ASPECT_KINDS]) {
     if (!seenKinds.has(id)) problems.push(`缺頁型：${id}`)
@@ -124,7 +129,8 @@ function statusReport(index, queue, articles) {
   for (const kind of index.kinds) {
     const models = kind.models.map((model) => `${model.articleId}（${model.approvedAt}）`).join('、') || '還沒有'
     const candidates = (kind.candidates ?? []).map((candidate) => candidate.articleId).join('、')
-    lines.push(`- ${kind.label}：${models}${candidates ? `｜候選：${candidates}` : ''}`)
+    const references = (kind.references ?? []).length
+    lines.push(`- ${kind.label}：${models}${candidates ? `｜候選：${candidates}` : ''}${references ? `｜別站參考 ${references} 篇` : ''}`)
   }
   const byId = new Map(articles.map((article) => [article.articleId, article]))
   const waiting = new Map()
