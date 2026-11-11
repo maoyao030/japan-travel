@@ -13,7 +13,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 - 有核准的旅行群大綱（`content-planning/<區域>/<群>-outline.json` 或同內容的 MD）時，照大綱寫：H1／H2／H3 用大綱的版本（標題檢查仍可改措辭，不增刪標題、不改層級）；分工表裡本頁負責的事寫細節，只摘要的事一兩句帶過並連到負責頁；內連表裡從本頁出發的連結句都要寫進正文。研究發現大綱有誤或缺事實時停止，退回大綱，不自己改分工。
 - 同一位作者負責研究、文章計畫與全文，一次成稿。不拆成先鎖標題再填段落，也不安排第二位編輯潤飾。
 - 終點是 `content-production/<article-id>/reader-preview.md` 與研究記錄，交給 `$japan-travel-acceptance` 驗收。本 Skill 不做選題、不選圖、不寫入 Sanity、不發布、不 commit 或 push。
-- **寫作時只需要記住 [寫作指南](references/writing-guide.md) 與 [範例](references/examples.md)**，開工前先讀完這兩份。其他參考檔只在用到的步驟讀：研究讀 [日文資料](references/japanese-sources.md) 與 [研究記錄格式](references/research-record.md)；文章計畫讀 [保母等級檢查表](references/nanny-level.md)、[頁型與分工](references/page-types.md)、[嵌入與資料圖](references/embeds-and-data-blocks.md)；寫評論統整或客觀狀況讀 [評論與人氣](references/reviews-and-popularity.md)；寫到訂房、訂票、租車、接送的段落讀 [分潤連結與推廣工具](references/affiliate-links.md)；標題檢查 agent 讀 [標題與 SEO 規範](references/heading-style.md)。
+- **寫作時只需要記住 [寫作指南](references/writing-guide.md) 與 [範例](references/examples.md)**，開工前先讀完這兩份。另外讀同頁型的整篇範本（Darren 2026-11-11：每種頁型先有他親自改到滿意的範本再寫）：`node scripts/page-models.mjs --for=<articleId>` 列出的檔案整篇讀完，學整篇的輕重與每節寫到多細，不搬標題、事實與句子，用法見 [頁型範本](references/page-models/README.md)；這種頁型還沒有範本時不寫，先請 Darren 照 `content-automation/chat-optimize.md`「做範本」做一篇。其他參考檔只在用到的步驟讀：研究讀 [日文資料](references/japanese-sources.md) 與 [研究記錄格式](references/research-record.md)；文章計畫讀 [保母等級檢查表](references/nanny-level.md)、[頁型與分工](references/page-types.md)、[嵌入與資料圖](references/embeds-and-data-blocks.md)；寫評論統整或客觀狀況讀 [評論與人氣](references/reviews-and-popularity.md)；寫到訂房、訂票、租車、接送的段落讀 [分潤連結與推廣工具](references/affiliate-links.md)；標題檢查 agent 讀 [標題與 SEO 規範](references/heading-style.md)。
 
 ## 研究
 

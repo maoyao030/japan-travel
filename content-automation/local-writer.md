@@ -43,9 +43,10 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 **再挑文章**：照這個群的 `writingOrder` 順序，挑第一篇符合下面條件的：
 
 - `content-production/<articleId>/review.md` 不存在，或存在但最終結果不是 `ready_for_user_preview`；
-- 執行紀錄的「停放」表裡沒有它。
+- 執行紀錄的「停放」表裡沒有它；
+- 這種頁型已經有範本（Darren 2026-11-11 決定：每種頁型先有他親自改到滿意的整篇範本再寫）：`node scripts/page-models.mjs --for=<articleId>` 的 `ready` 是 `true`。`false` 就跳過這篇、往下找，不算停放、不記進停放表；範本只由人工 session 在 Darren 親口認可後登記，排定工作不得自己加、不得改 `references/page-models/` 裡的檔案。
 
-每個群都寫完、或剩下的群還沒到自動核准日，就略過這一輪，執行紀錄寫「略過：清單裡的群都寫完」或「略過：<群> 要到 <自動核准日> 才能寫」。
+每個群都寫完、或剩下的群還沒到自動核准日，就略過這一輪，執行紀錄寫「略過：清單裡的群都寫完」或「略過：<群> 要到 <自動核准日> 才能寫」。剩下的文章都在等範本時，寫「略過：<頁型>、<頁型> 還沒有範本（剩 N 篇）」，這一輪照樣做上傳與補內連。
 
 下面的 `<id>` 是挑到的 articleId，`<資料夾>` 是 `content-production/<id>`，`<地點>` 是大綱裡這頁的 `placeId`。
 
@@ -86,13 +87,15 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 1. **作者**（新子代理）。交代：
    - 用 `.agents/skills/japan-travel-answer-first/SKILL.md` 寫內容稿；寫作前讀完 `references/writing-guide.md`（特別是第14條「不要寫成量產頁」與第15條「日文只放在括號與「」裡」）、`references/examples.md`、`references/nanny-level.md`。研究由第 0 步的研究者做完，跳過研究步驟。
+   - **讀同頁型的範本**（2026-11-11 加入）：跑 `node scripts/page-models.mjs --for=<id>`，把 `models` 列的每個 `file` 整篇讀完，也讀每篇的 `learn`；怎麼用照 `.agents/skills/japan-travel-answer-first/references/page-models/README.md`。學整篇的輕重、開頭怎麼回答、每節寫到多細、提醒與推薦出現的位置與頻率；標題與順序照自己的大綱，事實只用 `reference-review.md`，句子不照抄、不換地名套用。寫完在 `order-notes.md` 加一節 `## 和範本比`：每個 H2 對照範本裡功能相同的那一節，長度與細度差在哪、為什麼（這個地方本來就沒那麼多可寫，或這一節是這頁的重點所以寫得更細）。
    - 讀 `<資料夾>/competitor-notes.md`（讀競品的筆記）：每一節照讀者期待的順序排資訊，只學順序，事實照樣只用 `reference-review.md`。寫完另寫 `<資料夾>/order-notes.md`：每個 H2 用了什麼順序、照筆記的哪一點。
    - H1、H2／H3 照大綱這一頁的 headings 一字不改、順序層級不變；mustAnswer 都要正面回答；大綱 `links` 裡 from 是這頁的 sentence 一字不改寫進正文；分工表歸別頁的事一兩句帶過並用內連句連過去。
    - 讀研究者建好的 `<資料夾>/reference-review.md`，只能用裡面的事實。缺口表標「補不到」的不寫；單一格子可以寫成讀者能做的事，但不能用「訂房時用電話問」之類的句子填滿一整欄。缺口檢查寫「整欄拿掉」的欄不放進表格；「官方不公布」的欄位不放。
    - Darren 的寫法要求：讀者會卡住的事講細，其他一兩句帶過，不要每節一樣長；班次少（一天 4 班以下）就列時刻表，用白話說選擇，不算出能待幾分鐘；段落從讀者的處境起頭；有事實撐的判斷直接給、理由寫在同一句，划不划算要用事實的數字算；不寫成去過、不用第一人稱、不加沒有事實的感想；不用「看這張表」「都查得到」「先…」「關鍵是」「最先要搞清楚的是」這類硬裝口語或宣告句；同一個條件詞不整篇重複；查不到的不寫，也不寫「官方沒寫」。
    - 輸出 `<資料夾>/draft-tagged.md`（每句有數字、時間、價格、條件的句子在句號前標 `[F編號]`；結尾 `## 延伸資料`（官方頁）、`## 資料來源`）與 `<資料夾>/publication.json`（`articleId`、`targetPath`、`seoTitle` 與 H1 相同、`seoDescription` 120 字內含具體數字、`excerpt`）。
    - 跑到通過：`python .agents/skills/japan-travel-answer-first/scripts/fact_tags.py <資料夾>`（產生 `reader-preview.md`）、`node .agents/skills/japan-travel-answer-first/scripts/check-voice.mjs <資料夾>/reader-preview.md`、`python .agents/skills/japan-travel-answer-first/scripts/audit_answer_first.py <資料夾>/reader-preview.md --json --article-type <大綱這頁的 pageType（place-entry 或 aspect-page；跨地點頁 `cross-place-page` 也填 aspect-page，程式沒有跨地點頁這個選項，旭岳還是層雲峽那篇就是這樣跑的）> --reference-review <資料夾>/reference-review.md`（要 `mechanical_clear`）、`node scripts/check-benchmark.mjs --after=<資料夾>/reader-preview.md`（住宿表要有「連結」欄、景點資訊欄要有「連結」列、不能有譯名表標過的舊寫法；`errors` 要是空的，`warnings` 只看不擋。2026-11-08 加入，定稿時 `finalize-release.mjs` 會再擋一次）。
-   - 不讀 `content-production` 其他文章的正文、不改資料夾以外的檔案、不 commit。Windows 的 heredoc 會吃反斜線，寫檔用 Write 工具。
+   - 和範本的照抄檢查：對每篇範本跑 `node .agents/skills/japan-travel-polish/scripts/check-copy.mjs <資料夾>/reader-preview.md <範本檔> --min=16`，列出的相同片段改成自己的寫法；只是地名、站名、路線名、設施名相同造成的不用改，在 `order-notes.md` 的 `## 和範本比` 註明。
+   - 不讀 `content-production` 其他文章的正文（範本在寫作 Skill 的 `references/page-models/`，不在此限）、不改資料夾以外的檔案、不 commit。Windows 的 heredoc 會吃反斜線，寫檔用 Write 工具。
 2. **潤稿者**（新子代理，沒寫過這篇）。照 `.agents/skills/japan-travel-polish/SKILL.md` 做第 1～3 步（2026-10-30 起改成短原則加範例，不讀參考文章、沒有編輯挑錯一輪）：讀 `references/examples.md`；先把 `draft-tagged.md`、`reader-preview.md` 各複製成 `before-draft-tagged.md`、`before-reader-preview.md`；照「怎麼改」**先刪再調**（2026-10-31 Darren 認可）：先整筆刪掉讀者用不到的規格（客房數、年份、設施清單），列在 `polish-notes.md` 的 `## 刪掉的事實`，再把用逗號接的句子寫出關係，但不併成長句；四項檢查（`check-polish.mjs --article=<id> --outline=<這群的大綱檔>`、`fact_tags.py`、`audit_answer_first.py`、`check-voice.mjs --final`）全部通過。
 3. **意義比對**（新子代理）：先跑 `node .agents/skills/japan-travel-polish/scripts/check-modifiers.mjs <資料夾>/before-reader-preview.md <資料夾>/reader-preview.md`，把輸出和 `check-polish.mjs` 印出的「刪掉的事實」一起交給它當線索；它讀 `.agents/skills/japan-travel-polish/agents/meaning-drift.md` 照做（把 `<文章資料夾>`、`<地點>` 換成實際值）。
 4. **潤稿者修正**（SendMessage 回潤稿者）：只改意義比對列出的「不可接受」與「遺失」，盡量保留潤稿後的寫法，重跑四項檢查，記進 `polish-notes.md`。
@@ -105,7 +108,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 1. **標題檢查**：只讀大綱這頁（primaryQuery、secondaryQueries、h1、mustAnswer、headings）、`reader-preview.md`、`.agents/skills/japan-travel-answer-first/references/heading-style.md`（含最後的 Darren 增訂規則）與 `publication.json` 的 seoTitle。寫 `<資料夾>/heading-review.json`：`{"checker":"heading-check-agent","items":[{"level","before","after","reason"}],"seoTitle":{...},"structureNotes":[]}`。只改文字，不增刪、不改層級與順序；正文 H2 帶地名；次要查詢各留在某個 H2／H3；問句標題用全形「？」且下一段第一句是答案。
 2. **事實查核**：唯讀，只寫 `<資料夾>/fact-check.json`，照 `.agents/skills/japan-travel-acceptance/references/fact-check-contract.md`。從正文逐句找出所有事實，每個一筆 claim；實際打開來源（curl 或 WebFetch；PDF 用 curl 下載到暫存資料夾讀；要 JavaScript 的頁面用瀏覽器讀，**不要在瀏覽器點下載**）；遇到驗證碼或機器人檢查不繞過，記 unreachable 另找官方來源；編輯判斷與比較用官方數字重算；注意修飾詞、季節期間、條件主詞。`articleSha256` 填上面算的值、`checkedAt` 填今天。跑 `node .agents/skills/japan-travel-acceptance/scripts/validate-fact-check.mjs <資料夾>` 直到紀錄完整。
-3. **讀者驗收第一階段**：只讀大綱這頁、`reader-preview.md`、`.agents/skills/japan-travel-acceptance/references/reader-acceptance.md` 的「讀者設定」與「第一階段」（口吻可讀 writing-guide.md）。依 mustAnswer 自己設兩個台灣讀者情境（月份、人數、交通方式、要趕的行程）實際走一遍。背景（不算缺點）：標題照旅客動線排、不設常見問題 H2；分工歸別頁的事只帶過並連過去。寫 `<資料夾>/reader-stage1.md`（判斷、各項判斷表、必修與加分，每條寫位置、原句、原因）。
+3. **讀者驗收第一階段**：只讀大綱這頁、`reader-preview.md`、`.agents/skills/japan-travel-acceptance/references/reader-acceptance.md` 的「讀者設定」與「第一階段」（口吻可讀 writing-guide.md）。依 mustAnswer 自己設兩個台灣讀者情境（月份、人數、交通方式、要趕的行程）實際走一遍。背景（不算缺點）：標題照旅客動線排、不設常見問題 H2；分工歸別頁的事只帶過並連過去。也讀同頁型的範本（`node scripts/page-models.mjs --for=<id>` 列的檔案；2026-11-11 加入），多判一項「和範本比」：哪一節比範本裡功能相同的節明顯空（讀者照著做會卡住）列必修，明顯囉嗦或每節一樣長列加分；只比輕重與細度，不要求標題、順序或句子和範本一樣，和範本句子幾乎相同的反而列必修。寫 `<資料夾>/reader-stage1.md`（判斷、各項判斷表、必修與加分，每條寫位置、原句、原因）。
 
 接著：
 

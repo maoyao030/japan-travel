@@ -2048,3 +2048,25 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
   - 11-11 10:44 那輪（Opus 4.6）寫〈上富良野交通〉寫到事實查核完、讀者驗收第一輪後，11:49 turn 就結束了，沒有修正、沒 commit、沒寫執行紀錄、沒上傳薰衣草篇；額度當時只有 46%，原因不明。`japan-travel-auto` 留著未 commit 的 `content-production/kamifurano-transport/` 與改過的 `content-planning/hokkaido/places/kamifurano/facts.json`（流程規定不改事實表），`.auto-writer.lock` 也沒刪（內容 `2026-11-11T02:46:00+08:00`，時間寫成 UTC 卻標 +08:00，下一輪會當成過期而照常開始）。這些照規則當另一個執行者的成果，人工 session 沒動。
   - 薰衣草篇仍待上傳；13:42 那輪照流程應先寫、再上傳。
 - **唯一下一步**：看 13:42 那輪的執行紀錄，確認薰衣草篇有上傳、`main` 有推成；沒有的話再查 10:44 那輪為什麼中途結束。
+
+## 2026-11-11 Claude Code｜每種頁型先有範本再寫（分支 `claude/sharp-fermat-2nj3mz`）
+
+- **起因**：Darren 說「是不是每一個類型的頁面都要幾個範本再寫比較好，不然好像很難達到我的需求」，並已自己把自動寫作全部暫停。
+- **查到的狀況**：寫作 Skill 的 `examples.md` 是 15 組左右一兩段的片段，照「句子怎麼寫」分，不照頁型分；整篇的標竿只有東川（地點主頁），而且只用在優化已上線文章，寫新文章的作者不讀。45 篇上線文章裡 Darren 親手改過的只有東川、旭川住宿（口述優化）、禮文島住宿（標竿優化時指出句子問題），其他是 AI 照東川批次優化。
+- **已決定**：
+  - 範本是「Darren 親自改到滿意的整篇已上線文章」，不是固定標題骨架；一種頁型最多 2 篇；AI 批次優化的不算。
+  - 頁型分十種：地點主頁、交通、住宿、景點總覽、單一景點、美食、天氣、祭典、步道與登山、跨地點。
+  - 沒有範本的頁型，自動寫作跳過不寫（Claude 照 Darren「要有範本再寫」的意思定的，Darren 可以改）。
+- **已完成**：
+  - 寫作 Skill `references/page-models/`：`README.md`（範本是什麼、作者學什麼不學什麼、怎麼新增）、`index.json`（登記檔）、`place-entry/higashikawa.md`（東川線上版，已確認 Git 和線上一樣）。
+  - `scripts/page-models.mjs`（`npm run models` 看現況；`--for=<文章>` 給作者查該讀哪幾篇；`--check`；`--add` 登記）與 `tests/page-models.test.ts`（6 項）。
+  - `content-automation/local-writer.md`：第 1 步挑文章跳過沒範本的頁型；第 2 步作者讀同頁型範本、寫 `## 和範本比`、用 `check-copy.mjs --min=16` 比對沒照抄；第 3 步讀者驗收多判一項「和範本比」。潤稿者沒動。
+  - `content-automation/chat-optimize.md` 加「做範本」一節與口令；`AGENTS.md`、`RULES_OVERVIEW.md`、寫作 Skill `SKILL.md`、`writing-guide.md`、`examples.md` 加指引。
+- **測試**：`npm test` 240 項通過，`queue:validate`、`planning:check` 通過。拿旭岳、禮文島、美瑛青池三篇和東川範本跑照抄比對，沒有誤判。
+- **現況**（`npm run models`）：只有地點主頁有範本。富良野群還沒寫的 19 篇裡，主頁 4 篇可以寫；等範本的有住宿 3、景點總覽 3、交通 2、天氣 2，單一景點、美食、祭典、步道與登山、跨地點各 1。
+- **尚未完成**：
+  - 9 種頁型還沒有範本，要 Darren 一篇一篇做（口令「做範本」）。
+  - 分支還沒併進 `main`；自動寫作讀的是 `main`，重新啟用前要先併。
+  - 「作者讀範本」還沒實際跑過一篇，第一次驗證是恢復自動寫作後的第一篇主頁，或人工 session 先試寫一篇。
+  - `japan-travel-auto` 資料夾裡 11-11 10:44 那輪留下的未 commit 檔案（上富良野交通）仍沒處理。
+- **唯一下一步**：Darren 回答旭川住宿（他 11-07 口述優化過）能不能當住宿頁的範本；不行就說「做範本 住宿」再改一輪。

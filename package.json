@@ -34,7 +34,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "report:manual-edits": "node scripts/manual-edits-report.mjs",
-    "optimize:today": "node scripts/daily-optimize-pick.mjs"
+    "optimize:today": "node scripts/daily-optimize-pick.mjs",
+    "models": "node scripts/page-models.mjs"
   },
   "dependencies": {
     "astro": "^7.2.6"

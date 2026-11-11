@@ -1,6 +1,6 @@
 # 寫作指南
 
-寫作時只需要記住這一頁和 [範例](examples.md)。2026-10-18 整併，取代原本分散在八個檔案裡的寫作規則。其他參考檔只在用到的步驟讀。
+寫作時只需要記住這一頁和 [範例](examples.md)。規則講不清楚的整篇輕重、長度與每節寫到多細，看同頁型的整篇範本（[頁型範本](page-models/README.md)，2026-11-11）。2026-10-18 整併，取代原本分散在八個檔案裡的寫作規則。其他參考檔只在用到的步驟讀。
 
 - 研究：`japanese-sources.md`、`research-record.md`
 - 文章計畫：`nanny-level.md`、`page-types.md`、`embeds-and-data-blocks.md`

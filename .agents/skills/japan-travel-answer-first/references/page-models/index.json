@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "maxModelsPerKind": 2,
+  "kinds": [
+    {
+      "id": "place-entry",
+      "label": "地點主頁",
+      "models": [
+        {
+          "articleId": "higashikawa",
+          "file": "place-entry/higashikawa.md",
+          "approvedBy": "Darren",
+          "approvedAt": "2026-11-04",
+          "how": "Darren 2026-11-03 親自優化，2026-11-05 定為標竿",
+          "learn": "開頭兩段就回答這是什麼地方、怎麼去、要多久；交通是讀者最會卡的地方所以講最細（時刻表、末班、回程比去程慢），景點一個寫兩三段、配一欄基本資訊，推薦一節最多一句而且講出推薦的是什麼；最後依旅客類型各給一個排法；標題用讀者會搜尋的問句。"
+        }
+      ],
+      "candidates": []
+    },
+    {
+      "id": "transport",
+      "label": "交通頁",
+      "models": [],
+      "candidates": []
+    },
+    {
+      "id": "stay",
+      "label": "住宿頁",
+      "models": [],
+      "candidates": [
+        {
+          "articleId": "asahikawa-stay",
+          "why": "Darren 2026-11-07 口述優化過，還沒說可以當範本"
+        },
+        {
+          "articleId": "rebun-island-stay",
+          "why": "Darren 2026-11-05 標竿優化時親自指出句子要改成說話的語氣，還沒說可以當範本"
+        }
+      ]
+    },
+    {
+      "id": "sights",
+      "label": "景點總覽頁（一個地點有哪些景點）",
+      "models": [],
+      "candidates": []
+    },
+    {
+      "id": "sight-single",
+      "label": "單一景點頁（景點升格的頁）",
+      "models": [],
+      "candidates": []
+    },
+    {
+      "id": "food",
+      "label": "美食頁",
+      "models": [],
+      "candidates": []
+    },
+    {
+      "id": "weather",
+      "label": "天氣頁",
+      "models": [],
+      "candidates": []
+    },
+    {
+      "id": "festival",
+      "label": "祭典頁",
+      "models": [],
+      "candidates": []
+    },
+    {
+      "id": "hiking",
+      "label": "步道與登山頁",
+      "models": [],
+      "candidates": []
+    },
+    {
+      "id": "cross-place",
+      "label": "跨地點頁",
+      "models": [],
+      "candidates": []
+    }
+  ]
+}
