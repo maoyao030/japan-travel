@@ -39,3 +39,8 @@ Darren 問「專門寫住宿跟整理心得有沒有機會」，並提出寫法�
 - 用瀏覽器重讀 Jalan，把則數數準；再讀第三個平台（Google 地圖或 Trip.com 的中文評論），隔音才知道能不能寫。
 - 停車場是不是 AEON 的、休息室有什麼，查官網當事實寫。
 - Darren 決定標籤用字，以及「兩個平台、三則以上」的門檻要不要調整，再改寫作 Skill `references/reviews-and-popularity.md`。
+
+## 兩個版本
+
+- `sample.md`：協調的對話自己寫的，當時模型是 Fable 5.2，不符合「寫作只用 Opus 4.6」，只能當對照。
+- `sample-opus46.md`：Darren 說「4.6 max 試試」後，用寫作子代理 `japan-travel-writer`（定義檔釘 `claude-opus-4-6`）、effort 設 max 重寫，沒看過 `sample.md`。協調者逐句核對過都對得上官方事實或上面的統計表。子代理實際跑的模型，協調的對話這邊看不到，只能確認定義檔寫的是 4.6。
