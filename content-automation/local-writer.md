@@ -130,6 +130,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 **前置**
 
 - 用量：5 小時額度 70% 以上或每週額度 80% 以上，就不上傳，執行紀錄寫「上傳略過：額度」。
+- 額度沒超、也沒有工具或環境錯誤，就一定在這一輪上傳，不得寫「留給下一輪」（2026-11-11 加入：11-10 薰衣草篇驗收後被留到下一輪，接著三輪沒啟動，文章就擱著）。
 - Git Bash 先 `export MSYS_NO_PATHCONV=1`（不然 `/places/...` 這類參數會被改成 Windows 路徑）。
 - Sanity 指令在 `studio/` 執行：`npx sanity exec scripts/<檔名>.mjs --with-user-token -- <參數>`，用這台電腦的 Sanity 登入狀態。D1 指令（`scripts/ops-*.mjs`）用 wrangler 的登入狀態，不設 `OPS_DB_TRANSPORT`。
 - 下面說的「第 N 步」都是自動發布 Skill「produce」那一節的步驟，失敗時怎麼記錄也照它。
@@ -172,7 +173,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 1. commit 上傳的封包：`git add content-production/<上傳的 id>/`（`manifest.json`、`audit.json`、`sanity-sync.json`、`images/`；`.tmp/` 裡的原圖與 webp 不加入 Git），訊息 `feat(content): <id> 上線`。
 2. `git fetch origin`、`git merge --no-edit origin/main`，有衝突就 `git merge --abort`、不推 `main`，在執行紀錄寫明（文章已經在 Sanity，下一次推 `main` 網站才會更新）。
-3. `npm test` 通過後 `git push origin HEAD:main`，Cloudflare 會自動建置並更新網站，約 5 分鐘。不用等它完成；下一輪開始前用 `curl -s -o /dev/null -w "%{http_code}" https://offpathnotes.com<targetPath>` 確認上一輪上線的網址是 200，不是就寫進執行紀錄。
+3. `npm test` 通過後 `git push origin HEAD:main`，Cloudflare 會自動建置並更新網站，約 5 分鐘。推 `main` 就只有這一個指令，**不 `git checkout main`、不 `git switch main`、不 `git stash`**：`main` 常被別的 worktree 占著，切過去會出現 `'main' is already used by worktree` 而失敗（2026-11-10 那輪就是這樣沒推成）。不用等它完成；下一輪開始前用 `curl -s -o /dev/null -w "%{http_code}" https://offpathnotes.com<targetPath>` 確認上一輪上線的網址是 200，不是就寫進執行紀錄。
 
 ### 6. 收尾
 
@@ -196,7 +197,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 - 不改 `content-planning/` 的事實表、譯名表與規格（研究時發現的更正與新事實只記在文章的 `reference-review.md`，執行紀錄寫「待同步」）；大綱只同步標題文字。
 - 不在瀏覽器點下載（會在 Darren 的電腦跳出存檔視窗）。
 - 不讓電腦發出聲音（Darren 2026-10-23：影片自動播放的音樂會嚇到人）。不在瀏覽器打開 YouTube、Instagram、TikTok 或其他影片頁，影片資訊（標題、說明欄、章節、字幕）用 curl 或 WebFetch 讀。其他網頁要用瀏覽器開時，打開後第一個動作就執行 JavaScript `document.querySelectorAll('video,audio').forEach(m=>{m.muted=true;m.pause()})`，讀完立刻關掉分頁。派子代理會用到瀏覽器時，把這一條原文交代給它。
-- 只用第 5、6 步的方式推 `main`（先合併 `origin/main`、測試通過）；不 force-push、不 rebase。
+- 只用第 5、6 步的方式推 `main`（先合併 `origin/main`、測試通過、`git push origin HEAD:main`）；不 force-push、不 rebase、不切換到 `main` 分支。
 
 ## 執行紀錄
 
