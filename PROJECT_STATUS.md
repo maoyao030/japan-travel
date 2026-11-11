@@ -2032,4 +2032,4 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 已改：規則改成只有 `startSeconds` 大於 0 才寫從哪裡開始，從頭播不提播放位置；`scripts/embed-plan.mjs` 會擋「從頭播放／從頭開始看／從頭開始播」，也擋 `startSeconds` 是 0 卻寫「從幾分幾秒開始」；`tests/media-embeds.test.ts` 加了對應測試。
 - 已修：Git 16 份 `embed-plan.json` 的 20 則說明，另把「從 0 分 34 秒」改成「從 34 秒」。線上 Sanity 16 篇同步改好（只改和 Git 舊字一字不差的說明欄位，用 ifRevisionID，不動正文其他地方、不動 `studioEditedAt`），查過線上 62 則已沒有「從頭」。
 - 測試：`npm test` 234 個通過。網站要等下一次 `main` 重建才會換字。
-- 分支：`claude/great-hypatia-5z8ts9`，還沒合併回 `main`。
+- 分支：`claude/great-hypatia-5z8ts9`，2026-11-11 已合併推到 `main`（測試 234 個通過），網站會跟著重建。
