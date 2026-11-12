@@ -44,3 +44,19 @@ Darren 問「專門寫住宿跟整理心得有沒有機會」，並提出寫法�
 
 - `sample.md`：協調的對話自己寫的，當時模型是 Fable 5.2，不符合「寫作只用 Opus 4.6」，只能當對照。
 - `sample-opus46.md`：Darren 說「4.6 max 試試」後，用寫作子代理 `japan-travel-writer`（定義檔釘 `claude-opus-4-6`）、effort 設 max 重寫，沒看過 `sample.md`。協調者逐句核對過都對得上官方事實或上面的統計表。子代理實際跑的模型，協調的對話這邊看不到，只能確認定義檔寫的是 4.6。
+
+## 第二輪：有範本時，不同模型寫另一間（2026-11-12）
+
+Darren 看完兩版後比較喜歡 `sample.md`（Fable 5.2）的寫法，問其他模型能不能調到類似，要多用幾個 Opus、Sonnet 跑看看。做法：把 `sample.md` 當範本，同一份資料（`dormy-inn-data.md`）、同一份指示，四個子代理各自獨立寫 Dormy Inn 旭川，互相不看。
+
+| 檔案 | 派的時候指定的模型 | 字數（check-voice） |
+|---|---|---|
+| `dormy-A.md` | Sonnet 5.5（Agent `model: sonnet`） | 508 |
+| `dormy-B.md` | Opus 4.6（`japan-travel-writer`，effort max） | 452 |
+| `dormy-C.md` | Fable 5.2（Agent `model: fable`） | 496 |
+| `dormy-D.md` | Opus 5.5（Agent `model: opus`） | 541 |
+
+- 子代理實際跑的模型，協調的對話這邊看不到，表格是派的時候指定的。
+- 給 Darren 看的時候只用 A～D 代號，他挑完再對這張表。
+- 評論只有 4travel 一個平台（Jalan 評論頁讀取工具拿到亂碼，助手回報讀不出來），四版都不能上線。**同樣的亂碼問題也發生在第一輪 JR Inn 的 Jalan 統計**，當時的助手是用認得出的片段估的，那份數字只能當參考。
+- 協調者核對：四版都沒有用到標「不寫」的項目。小出入：B 版評論段寫「走10到15分鐘」，和官方事實段的「約15分鐘」不一致，另有「好很多」比資料重一點；D 版的「市中心」來自譯名表備註，不在資料檔裡；C 版沒寫訂房管道與地下 1,200 公尺；D 版沒寫三溫暖。四版都超過 450 字（B 版只多 2 字）。
