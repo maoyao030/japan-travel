@@ -1,0 +1,33 @@
+# 旭川住宿完整版樣本（2026-11-12）
+
+Darren 2026-11-12 同意：把旭川住宿的資料補完整，讓 Sonnet 5.5 與 Opus 5.5 各寫一整篇，挑一篇改成住宿頁的範本，寫作模型也一起定。線上文章沒有動。
+
+## 資料
+
+- `research/hotel-list.json`：旭川市內住宿名單 48 間（線上版只寫 12 間）。來源是旭川觀光會議協會會員名單、旭川市的動物園款待券販售名單（25 間）與搜尋補充。
+- `research/batch-B1～B7.json`：其中 34 間的官網設施（走法、停車、早餐、大浴場或溫泉、房內浴室、洗衣、房型、訂房）與 4travel 評論統計。研究助手的說明在 `research/BRIEF.md`。
+- `packet/reference-review.md`：由 `build-reference.mjs` 合併出來的事實表，32 間、官方事實 357 筆（原本 42 筆＋新查 315 筆）、住客評論 184 列（20 間）。
+- 不列的：官網讀不到又沒有其他官方資料的 SPA & SAUNA Osper、官網只導到 Airbnb 的 sumile；沒有官網的 11 間與整棟出租、給出差工程人員住的沒有查。
+
+## 限制
+
+- **住客評論只有 4travel 一個平台**。Jalan 用讀取工具是亂碼；Booking、Agoda、Trip.com、樂天 Travel 要瀏覽器才看得到內文；TripAdvisor 拒絕讀取。用程式或雲端瀏覽器抓 Jalan 被權限檢查擋下，沒有再試。所以這兩篇不符合本站「兩個平台以上」的門檻，不能直接上線。
+- 官網這次讀不到的：Y's Hotel旭川站前、KOKO HOTEL旭川站前、吳竹Inn旭川、Hotel Mates旭川（只讀到標題與描述）。
+- Trip.com、Agoda 有沒有上架，只有原本 12 間確認過。
+- 新增飯店的中文寫法是暫定的，還沒進 `content-planning/glossary.json`。
+- 停車費這次有寫（Darren 原本的規定是住宿頁不寫價格），要不要留等 Darren 決定。
+
+## 兩個版本
+
+同一份事實表、同一份說明（`packet/WRITER-BRIEF.md`，標題結構固定），各自獨立寫。
+
+| 給 Darren 看的代號 | 資料夾 | 派的時候指定的模型 | 正文字數（check-voice） | 住客的經驗 |
+|---|---|---|---|---|
+| A | `opus/` | Opus 5.5（Agent `model: opus`） | 11,195 | 19 間 |
+| B | `sonnet/` | Sonnet 5.5（Agent `model: sonnet`） | 13,852 | 20 間 |
+
+- 兩篇都通過 `fact_tags.py`、`check-voice.mjs`、`check-benchmark.mjs --after`。
+- 子代理實際跑的模型，協調的對話這邊看不到，表格是派的時候指定的。
+- 兩位作者共用同一個暫存資料夾，Opus 一度讀到 Sonnet 產生的表格檔（兩列），發現後改用自己的資料夾重做，所以兩篇不算完全獨立。
+- 各自的取捨在 `notes.md`，逐句查核結果在 `fact-check.md`。
+- 並排預覽用 `node content-experiments/asahikawa-stay-full-2026-11-12/build-preview.mjs <輸出.html>` 產生（網站樣式，可切換 A、B 與手機、電腦寬度）。
