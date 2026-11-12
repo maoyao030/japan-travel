@@ -2086,3 +2086,10 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **樣本**：`content-experiments/stay-reviews-sample-2026-11-11/`，JR Inn 旭川一間，標籤「住客的經驗」加直接描述，來源整頁寫一次；Jalan 約 90 則、4travel 20 則。Jalan 的則數是粗估（讀取工具編碼錯亂），隔音只有一個平台提到所以沒寫。
 - **還沒改**：評論統整的規則（`reviews-and-popularity.md`）、線上文章。
 - **唯一下一步**：Darren 看樣本，說這個寫法行不行、標籤用字，以及要不要照這樣做旭川住宿的完整版。
+
+### 2026-11-12 補充：住宿樣本的模型比較
+
+- JR Inn 旭川兩版（Fable 5.2 與 Opus 4.6 max）Darren 比較喜歡 Fable 版，問其他模型能不能調到類似。第二輪把那版當範本，四個模型照同一份資料各寫 Dormy Inn 旭川，Darren 只看代號，選「A D 都不錯」：A 是 Sonnet 5.5、D 是 Opus 5.5；Opus 4.6（max）與 Fable 5.2 沒被選。細節與四版稿件在 `content-experiments/stay-reviews-sample-2026-11-11/`。
+- 這表示有範本時，不同模型都寫得出他要的方向，範本比挑模型重要；但樣本只有一段、各一次，**「寫作只用 Opus 4.6」的規則還沒改**。
+- 讀評論的問題：Jalan 評論頁用讀取工具拿到的是亂碼，JR Inn 那份 Jalan 統計只能當參考；要用瀏覽器讀才準。用 curl 加解析抓評論頁被權限檢查擋下，也違反本站「不用程式抓評論」，不要再做。
+- **唯一下一步**：Darren 決定要不要用 Sonnet 5.5 與 Opus 5.5 各寫一整篇旭川住宿再定寫作模型。
