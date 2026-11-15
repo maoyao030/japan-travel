@@ -72,6 +72,9 @@ const count = (markdown) => markdown.replace(/[\s|*#>\-`]/g, '').length
 const render = (markdown) =>
   renderPortableText(parseMarkdownBody(`# x\n\n${markdown}`).blocks).replace(/<t([dh])([^>]*)>([\s\S]*?)<\/t\1>/g, (cell, tag, attributes, inner) => `<t${tag}${attributes}>${inner.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}</t${tag}>`)
 
+// --part=1 只做寫法與模型（第 1～4 組），--part=2 只做思考程度（第 5～8 組）；組號固定不變
+const part = process.argv.find((a) => a.startsWith('--part='))?.split('=')[1]
+const wanted = part === '1' ? ['rule', 'model'] : part === '2' ? ['effortS', 'effortO'] : FACTORS.map((f) => f.id)
 const groups = []
 const key = []
 let groupNumber = 0
@@ -79,6 +82,7 @@ const missing = new Set()
 for (const factor of FACTORS) {
   for (const question of QUESTIONS) {
     groupNumber += 1
+    if (!wanted.includes(factor.id)) continue
     const available = factor.codes.filter((c) => {
       const ok = c && existsSync(path.join(here, 'out', `${c}.md`))
       if (!ok) missing.add(c)
@@ -94,7 +98,7 @@ for (const factor of FACTORS) {
     groups.push({number: groupNumber, factor, question, cards})
   }
 }
-writeFileSync(path.join(here, 'blind-key.json'), `${JSON.stringify(key, null, 1)}\n`)
+writeFileSync(path.join(here, part ? `blind-key-part${part}.json` : 'blind-key.json'), `${JSON.stringify(key, null, 1)}\n`)
 
 const css = readFileSync(path.join(root, 'src/styles/global.css'), 'utf8')
 const groupHtml = groups
@@ -140,8 +144,8 @@ body{background:#eef0f3;margin:0}
 .result button{margin-left:.6rem;border:1px solid #fff8;background:none;color:#fff;border-radius:.4rem;padding:.15rem .7rem;font:inherit;cursor:pointer}
 </style></head><body><div class="wrap">
 <div class="intro"><h1>盲測：哪一種寫法最好讀</h1>
-<p>共 ${groups.length} 組，每一組是同一段內容的幾種改寫，順序打亂、不標是誰寫的。每一組請點一個「最好讀」；覺得還行的可以勾「也可以」，完全不行的勾「不行」。</p>
-<p>前 2 組比<strong>寫法</strong>，最重要。第 3、4 組比<strong>模型</strong>。第 5 到 8 組比<strong>思考程度</strong>，有空再做。不用全部做完，做到哪裡都可以。</p>
+<p>這一頁 ${groups.length} 組，每一組是同一段內容的幾種改寫，順序打亂、不標是誰寫的。每一組請點一個「最好讀」；覺得還行的可以勾「也可以」，完全不行的勾「不行」。</p>
+<p>${part === '2' ? '這一頁是第 5 到 8 組，比<strong>思考程度</strong>。' : part === '1' ? '這一頁是第 1 到 4 組：前 2 組比<strong>寫法</strong>，最重要；第 3、4 組比<strong>模型</strong>。思考程度（第 5 到 8 組）另外一頁。' : '前 2 組比<strong>寫法</strong>，最重要。第 3、4 組比<strong>模型</strong>。第 5 到 8 組比<strong>思考程度</strong>，有空再做。'}不用全部做完，做到哪裡都可以。</p>
 <p>做完把最下面那一串字複製、貼回對話給我。內容只比好不好讀；事實另外查核過，個別小錯之後會修。</p></div>
 ${groupHtml}
 </div>
