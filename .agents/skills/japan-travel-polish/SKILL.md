@@ -1,11 +1,11 @@
 ---
 name: japan-travel-polish
-description: Polish (with Opus 5.5) a fact-checked Japan travel article draft so it reads like a Taiwanese travel editor explaining to a friend, without changing any fact. Works from a short list of principles plus Darren-approved example paragraphs (references/examples.md), not numeric targets. Keeps every number, time, price, fact tag, heading, table and internal-link sentence and every modifier (要、可能、約、只、都…), then is verified by check-polish.mjs, check-voice.mjs --final and a separate meaning-drift reviewer. Use as the polish step before acceptance.
+description: Polish (with Opus 4.6, via the japan-travel-writer subagent) a fact-checked Japan travel article draft so it reads like a Taiwanese travel editor explaining to a friend, without changing any fact. Works from a short list of principles plus Darren-approved example paragraphs (references/examples.md), not numeric targets. Keeps every number, time, price, fact tag, heading, table and internal-link sentence and every modifier (要、可能、約、只、都…), then is verified by check-polish.mjs, check-voice.mjs --final and a separate meaning-drift reviewer. Use as the polish step before acceptance.
 ---
 
 # 日本旅遊長尾站潤稿
 
-2026-10-30 Darren 比較三種潤稿做法（見 `content-experiments/polish-compare-2026-10-30/README.md`），選了「短原則加範例」這一種：不給數字目標，不叫潤稿者對答案，只講原則、給好段落看。之前那一版（長規則、句長與用字頻率門檻、讀參考文章、編輯挑錯一輪）留在 Git 歷史裡。
+2026-10-30 Darren 比較三種潤稿做法（見 `content-experiments/polish-compare-2026-10-30/README.md`），選了「短原則加範例」這一種：不給數字目標，不叫潤稿者對答案，只講原則、給好段落看。之前那一版（長規則、句長與用字頻率門檻、讀參考文章、編輯挑錯一輪）已停用；`agents/editor-review.md`、`references/style-sources.md` 與 `scripts/check-copy.mjs` 是那一版留下的，現在的流程不用。潤稿者用 Opus 4.6（Darren 2026-11-02 決定，子代理類型 `japan-travel-writer`）。
 
 內容稿已經正確、完整，但讀起來像資料表拆成句子。潤稿讓它像一位熟悉當地的台灣旅遊編輯在跟朋友解釋怎麼排。**事實一個都不改，也不多加。**
 

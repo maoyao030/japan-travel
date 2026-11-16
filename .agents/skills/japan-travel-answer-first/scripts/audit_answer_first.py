@@ -16,6 +16,10 @@ URL = re.compile(r"https?://[^\s)>\]\"']+")
 SOURCE_TITLES = {"資料來源", "參考資料"}
 # 延伸資料：緊接在資料來源之前的一節，只列官方頁，可以放外部連結（2026-10-18 Darren 決定）
 FURTHER_TITLES = {"延伸資料"}
+# 讀者要用的連結不算來源連結（Darren 2026-11-04、2026-10-24）：
+# 住宿表「連結」欄與景點基本資訊欄「連結」列的官網與地圖；Trip.com、Agoda 的訂房連結。
+LINK_CELL = "連結"
+BOOKING_URL = re.compile(r"^https?://(?:[\w-]+\.)*(?:trip\.com|agoda\.com)(?:[/?#]|$)", re.I)
 PACKAGED = re.compile(r"先看結論|重點先看|重點整理|懶人包|TL;DR", re.I)
 REVIEW_SIGNALS = (
     ("SOURCE_NARRATION", re.compile(r"(?:官網|網站|平台|來源).{0,6}(?:指出|表示|寫道)|目前查到|根據.{0,8}資料顯示"),
@@ -69,6 +73,7 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
     content_headings = [heading for heading in headings if heading[0] < source_start]
     content_h2s = [heading for heading in content_headings if heading[1] == 2]
     content_h3s = [heading for heading in content_headings if heading[1] == 3]
+    # 2026-10-18 Darren 決定不設「常見問題」H2，問題放進它所屬的那一節。
     faq_headings = [heading for heading in content_headings
                     if heading[1] == 2 and re.search(r"常見(?:問題|問答)|FAQ", heading[2], re.I)]
 
@@ -98,9 +103,9 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
     if len(content_h2s) >= 5 and not content_h3s:
         signals.append({"code": "FLAT_HEADING_TREE", "line": content_h2s[0][0],
                         "message": "長文 H 樹全部平鋪為 H2；請判斷是否有應歸入同一父題的 H3。"})
-    if not faq_headings:
-        signals.append({"code": "FAQ_MISSING", "line": 1,
-                        "message": "沒有常見問題區；請核對研究中是否仍有正文未直接回答的真實問題。"})
+    for number, _, _ in faq_headings:
+        signals.append({"code": "FAQ_SECTION", "line": number,
+                        "message": "本站不設「常見問題」H2；把問題放進它所屬的那一節。"})
 
     if not sources:
         fail("SOURCE_SECTION_MISSING", 1, "缺少文末資料來源。")
@@ -120,7 +125,8 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
         match = re.match(r"^\s*\[([^\]]+)\]:\s*<?(https?://[^\s>]+)", line)
         if match:
             definitions[match.group(1).strip().casefold()] = match.group(2)
-    inline_links, source_links, further_links = 0, 0, 0
+    inline_links, source_links, further_links, reader_links = 0, 0, 0, 0
+    table_header: list[str] | None = None
     for number, line in rows:
         urls = URL.findall(line)
         if number >= source_start:
@@ -129,6 +135,18 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
         if number >= further_start:
             further_links += len(urls)
             continue
+        if line.lstrip().startswith("|"):
+            cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+            if table_header is None:
+                table_header = cells
+            if LINK_CELL in table_header or cells[0] == LINK_CELL:
+                reader_links += len(urls)
+                urls = []
+        else:
+            table_header = None
+        booking = [url for url in urls if BOOKING_URL.match(url)]
+        reader_links += len(booking)
+        urls = [url for url in urls if not BOOKING_URL.match(url)]
         inline_links += len(urls)
         references = re.findall(r"\[([^\]]+)\](?:\[([^\]]*)\])?", line)
         linked_references = [label for label, target in references
@@ -136,7 +154,8 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
         if urls or linked_references:
             if not urls:
                 inline_links += len(linked_references)
-            fail("INLINE_SOURCE_LINK", number, "外部來源連結須集中在文末，包含參照式連結。")
+            fail("INLINE_SOURCE_LINK", number,
+                 "外部來源連結須集中在文末，包含參照式連結；只有表格「連結」欄或列的官網與地圖、Trip.com 與 Agoda 訂房連結可以留在正文。")
         for code, pattern, message in REVIEW_SIGNALS:
             if pattern.search(line):
                 signals.append({"code": code, "line": number, "message": message,
@@ -162,7 +181,7 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
         "metrics": {"h1Count": len(h1s), "headingCount": len(headings),
                     "h2Count": len(content_h2s), "h3Count": len(content_h3s),
                     "faqSectionCount": len(faq_headings),
-                    "inlineSourceLinks": inline_links, "sourceLinks": source_links,
+                    "inlineSourceLinks": inline_links, "readerLinks": reader_links, "sourceLinks": source_links,
                     "furtherReadingLinks": further_links},
         "issues": issues,
         "reviewSignals": signals,
@@ -180,7 +199,16 @@ def self_test() -> int:
     necessary = clear.replace("單程船票以官網公告為準。", "單程船票 2,780 円，請注意安全。")
     further_ok = clear.replace("## 資料來源", "## 延伸資料\n\n- [宗谷巴士時刻表](https://example.com/bus)：班次與票價。\n\n## 資料來源")
     further_misplaced = further_ok.replace("## 資料來源", "## 其他\n\n內容。\n\n## 資料來源")
+    body = "單程船票以官網公告為準。"
+    stay_table = clear.replace(body, "| 旅館 | 訂房管道 | 連結 |\n|---|---|---|\n| 範例旅館 | 官網 | [官網](https://example.com/hotel)・[地圖](https://www.google.com/maps/search/?api=1&query=x) |")
+    info_table = clear.replace(body, "| 項目 | 內容 |\n|---|---|\n| 日文名 | 例 |\n| 連結 | [官網](https://example.com/spot) |")
+    other_table = clear.replace(body, "| 項目 | 內容 |\n|---|---|\n| 票價 | [時刻表](https://example.com/fare) |")
+    booking = clear.replace(body, "可以在 [Trip.com 查空房](https://tw.trip.com/hotels/detail-1/)。")
+    faq = clear.replace("## 資料來源", "## 常見問題\n\n內容。\n\n## 資料來源")
     report = {"passingCase": audit(clear), "headingFailingCase": audit(headings),
+              "linkColumnCase": audit(stay_table), "linkRowCase": audit(info_table),
+              "otherTableLinkCase": audit(other_table), "bookingLinkCase": audit(booking),
+              "faqSectionCase": audit(faq),
               "inlineLinkFailingCase": audit(linked), "semanticWeakCase": audit(weak),
               "necessaryConditionCase": audit(necessary), "furtherReadingCase": audit(further_ok),
               "furtherReadingMisplacedCase": audit(further_misplaced)}
@@ -188,6 +216,13 @@ def self_test() -> int:
     ok = (report["passingCase"]["status"] == "mechanical_clear"
           and expected <= {i["code"] for i in report["headingFailingCase"]["issues"]}
           and any(i["code"] == "INLINE_SOURCE_LINK" for i in report["inlineLinkFailingCase"]["issues"])
+          and report["linkColumnCase"]["status"] == "mechanical_clear"
+          and report["linkColumnCase"]["metrics"]["readerLinks"] == 2
+          and report["linkRowCase"]["status"] == "mechanical_clear"
+          and any(i["code"] == "INLINE_SOURCE_LINK" for i in report["otherTableLinkCase"]["issues"])
+          and report["bookingLinkCase"]["status"] == "mechanical_clear"
+          and not any(i["code"] == "FAQ_MISSING" for i in report["passingCase"]["reviewSignals"])
+          and any(i["code"] == "FAQ_SECTION" for i in report["faqSectionCase"]["reviewSignals"])
           and report["semanticWeakCase"]["articleDecision"] == "not_evaluated"
           and report["necessaryConditionCase"]["status"] == "mechanical_clear"
           and any(i["code"] == "PRICE_TAX_UNCLEAR" for i in report["necessaryConditionCase"]["reviewSignals"])

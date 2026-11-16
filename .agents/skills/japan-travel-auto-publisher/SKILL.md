@@ -43,7 +43,7 @@ description: Run one scheduled round of the Japan travel site routine — take t
 
 1. `node scripts/ops-article.mjs start --article=<articleId> --group=<groupId> --path=<targetPath> --rules=$(git rev-parse --short HEAD)`。輸出 `refused`（結束碼 1）不算失敗：結果 `no-work`，收尾。
 2. 在 `queue-state.json` 的 `parentHubs[]` 找 `batchId` 相同的那一列：狀態是 `missing` 就 `prepare-parent-hub.mjs <batchId>` dry-run 後 `--apply`；是 `blocked_*` 就 `ops-article.mjs fail --article=<id> --kind=other --reason=父 Hub 狀態異常` 並收尾。
-3. 依 `$japan-travel-answer-first` 寫作：交給作者子代理清單列、頁面規格、群大綱（清單 `travelGroups[].outline`）裡這一頁的標題與分工、地點事實表。站內連結只能連到 `queue-state.json` 裡 `published_indexable` 的頁面；目標還沒上線的連結句照寫、不加連結。
+3. 依 `$japan-travel-answer-first` 寫作，步驟與本機自動寫作相同（`content-automation/local-writer.md` 第 2 步：寫作前補研究、讀競品、作者、`$japan-travel-polish` 潤稿與意義比對；作者與潤稿者用子代理類型 `japan-travel-writer`，固定 Opus 4.6，派不出去就這輪不寫）。交給作者子代理清單列、頁面規格、群大綱（清單 `travelGroups[].outline`）裡這一頁的標題與分工、地點事實表。站內連結只能連到 `queue-state.json` 裡 `published_indexable` 的頁面；目標還沒上線的連結句照寫、不加連結。
 4. 依 `$japan-travel-acceptance` 驗收（驗收者不能是作者）。
 5. 結果不是 `ready_for_user_preview` 時，依原因記錄後收尾，不換下一篇：
    - 事實或條件錯誤：`ops-article.mjs fail --article=<id> --kind=facts --reason=<原因>`（第 2 次判退會自動停放）。

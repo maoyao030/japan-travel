@@ -1,6 +1,6 @@
 ---
 name: japan-travel-topic-planner
-description: Plan which pages the Japan travel site should build for a region before any writing starts — find places and topics with Japanese and Chinese Google autocomplete, tourism association lists and model courses, filter Taiwan homonyms and off-topic intent, group places that are visited together into travel groups, list place-by-topic, cross-place and shared-guide pages, assign each fact to one owner page, hand a whole-group outline to Darren through the planning Google Sheet with approval by default, and pick the next adjacent group automatically when the current group has 10 pages left. Use when the user asks to plan a region, pick topics, build the pilot list, or decide whether a topic deserves its own page. Do not write articles, publish, or treat a plan as publication authorization.
+description: Plan which pages the Japan travel site should build for a region before any writing starts — find places and topics with Japanese and Chinese Google autocomplete, tourism association lists and model courses, filter Taiwan homonyms and off-topic intent, group places that are visited together into travel groups, list place-by-topic, cross-place and shared-guide pages, assign each fact to one owner page, hand a whole-group outline to Darren through the planning Google Sheet with approval by default, and pick the next adjacent group automatically when the current group has about 7 days of pages left. Use when the user asks to plan a region, pick topics, build the pilot list, or decide whether a topic deserves its own page. Do not write articles, publish, or treat a plan as publication authorization.
 ---
 
 # 日本旅遊長尾站選題規劃
@@ -20,7 +20,7 @@ description: Plan which pages the Japan travel site should build for a region be
 - **靠完整的內容群往外擴**（2026-10-17 Darren 確認）：一群做完整才換下一群，下一群只從相鄰的地點選，季節只決定先後。目前這群剩下的篇數大約夠寫 7 天（7 × 每天上限篇數）時自動找下一群，見 [找下一群](references/next-group.md)。
 - **地點 × 主題，預設每個組合都成頁**。每個地點固定對一組主題（交通、住宿、步道與登山、景點、美食、祭典、天氣與季節），只要查得到可用來源就成一頁。但資料太少的組合不單獨成頁，併進地點主頁寫成一節（2026-10-17 Darren 決定，門檻見 [選題流程](references/selection-workflow.md) 第 4 步）。另外有跨地點頁與共用教學頁。
 - **景點預設寫成一節，夠大才升格成一頁**（2026-10-21 Darren 決定）：景點寫在該地點景點頁裡的一個 H3；中文自動完成有這個景點的延伸詞、而且只屬於它的事實達到短頁門檻，才開自己的景點頁。條件見 [選題流程](references/selection-workflow.md) 第 4 步「景點升格」。
-- **分工規則**：一件事只有一頁負責。只牽涉一地寫在該地主題頁；從出入口到該地寫在交通頁；同群兩地以上寫在跨地點頁；各地相同的操作寫在共用教學頁。所以渡輪沒有獨立頁，訂票寫成渡輪訂票教學頁。
+- **分工規則**：一件事只有一頁負責。只牽涉一地寫在該地主題頁；從出入口到該地寫在交通頁；同群兩地以上寫在跨地點頁；各地相同的操作寫在共用教學頁。例外：稚內群三地共用的渡輪另成一頁 `/places/wakkanai/ferry/`（2026-10-18 隨稚內群核准），各地交通頁只摘要並連過去。
 - **不用 Ahrefs**。日文 Google 自動完成查地點與分群，中文 Google 自動完成查台灣讀者的主題與用詞，見 [關鍵字來源](references/keyword-sources.md)。
 - **0 不等於沒人搜**。自動完成有出現、搜尋量工具顯示 0 的詞照樣列進 `mustAnswer`。搜尋量只用來排先寫哪一篇，不決定要不要寫。
 - **一定要看搜尋結果頁**。台灣同名地名（岡山、松山、中山、板橋、豐原、川湯）與無關意圖（利尻昆布染髮劑、余市威士忌）只能靠實際搜尋結果判斷。

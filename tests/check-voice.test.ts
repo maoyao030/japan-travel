@@ -78,7 +78,7 @@ test('「官方沒寫」「來這裡」會被擋下；空格、分號、「不�
   assert.match(notFound.issues.join('\n'), /「官方沒寫」「未查」這類用字1次（上限0），查不到的不寫/)
 
   const comeHere = checkVoice(article(good.replace('不開車也去得了', '不開車來這裡也去得了')))
-  assert.match(comeHere.issues.join('\n'), /「來這裡」「來的話」這類用字1次（上限0），改成前往、造訪、抵達/)
+  assert.match(comeHere.issues.join('\n'), /「來這裡」「來的話」這類用字1次（上限0），改成去、到、造訪/)
 
   const bufang = checkVoice(article(good.replace('出發前最好先確認路線', '出發前不妨先確認路線').replace('不開車也去得了', '不開車不妨搭巴士')))
   assert.deepEqual(bufang.issues, [])

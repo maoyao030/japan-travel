@@ -2048,3 +2048,20 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
   - 11-11 10:44 那輪（Opus 4.6）寫〈上富良野交通〉寫到事實查核完、讀者驗收第一輪後，11:49 turn 就結束了，沒有修正、沒 commit、沒寫執行紀錄、沒上傳薰衣草篇；額度當時只有 46%，原因不明。`japan-travel-auto` 留著未 commit 的 `content-production/kamifurano-transport/` 與改過的 `content-planning/hokkaido/places/kamifurano/facts.json`（流程規定不改事實表），`.auto-writer.lock` 也沒刪（內容 `2026-11-11T02:46:00+08:00`，時間寫成 UTC 卻標 +08:00，下一輪會當成過期而照常開始）。這些照規則當另一個執行者的成果，人工 session 沒動。
   - 薰衣草篇仍待上傳；13:42 那輪照流程應先寫、再上傳。
 - **唯一下一步**：看 13:42 那輪的執行紀錄，確認薰衣草篇有上傳、`main` 有推成；沒有的話再查 10:44 那輪為什麼中途結束。
+
+## 2026-11-16 Claude Code｜Skill 衝突檢查與修正
+
+- **起因**：Darren 要求檢查專案所有 Skill 有沒有衝突，看完清單後說「全部修」。原則是較新的決定為準，沒有新增規則。
+- **已修（會影響產出的 5 項）**：
+  - 兩支檢查程式打架：`check-benchmark.mjs` 要求住宿表有「連結」欄，`audit_answer_first.py` 卻把任何正文外部網址判不合格。格式檢查改成放行表格「連結」欄與列、Trip.com 與 Agoda 訂房連結，其他照擋；自我測試加 5 個案例。已補連結的 `asahidake-stay`、`asahidake`、`asahidake-ropeway`、`higashikawa`、`rebun-island-stay` 現在都是 `mechanical_clear`。
+  - 常見問題：寫作 `SKILL.md`、`heading-style.md`、`research-record.md`、驗收 `reader-acceptance.md` 拿掉「要設常見問題」的說明；格式檢查不再提醒「沒有常見問題區」，改成出現時提醒；`heading_review.py` 的固定標題改成延伸資料、資料來源。
+  - 譯名：`japanese-sources.md` 刪掉下半段的舊順序（沒有漢字用羅馬拼音）。
+  - 照片來源順序：寫作指南第12條、選圖 `image-needs.md`、`local-writer.md` 改成官方照片 → 免費圖庫 → 維基共享資源。
+  - 潤稿範例：`examples.md` 開頭不再叫人學併句與「…的話」，註明衝突時以 `SKILL.md` 為準。
+- **已清的過期說明**：潤稿 Skill 模型改寫 Opus 4.6、停用的 `editor-review.md` 與 `style-sources.md` 標上停用；寫作 `SKILL.md` 的作者分工、住宿段落、讀競品；`affiliate-links.md` 的表格連結與價格；寫作指南第4、11條用字與條號順序；驗收的口吻、含稅、住宿、嵌入與 `revise`（驗證程式不接受的判定詞，改成 `unsupported`）；選題 `SKILL.md` 的渡輪與說明欄、`next-group.md` 的每天上限；`embeds-and-data-blocks.md` 的影片說明與路線圖；`page-types.md` 的照片範圍；自動發布 Skill 補上寫作步驟照本機流程。`RULES_OVERVIEW.md` 同步。
+- **沒有改的**：
+  - `asahikawa-stay` 第 19 行正文有一條官方連結（旭川觀光物產情報中心），格式檢查仍會擋。這是已上線文章的文字，沒有動；下次改這篇時把連結移到延伸資料。
+  - 驗收 Skill「前 30 篇試點每週抽查 2～3 篇」：現在抽查怎麼做沒有新決定，留著等 Darren 決定。
+  - `check-copy.mjs` 與它的測試保留（現行流程不用，但不妨礙）。
+- **測試**：`npm test` 234 個通過；`audit_answer_first.py --self-test` 通過。分支 `claude/project-skill-conflicts-63bb10` 已 push，還沒合併回 `main`。
+- **唯一下一步**：Darren 決定這個分支要不要合併回 `main`；合併後 `auto/wakkanai-writing` 下次合併 `origin/main` 時就會拿到新規則。

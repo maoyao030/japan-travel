@@ -11,9 +11,9 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 - 接收已核准的頁面規格（`content-planning/<區域>/page-specs.json` 或 `content-automation/article-queue.json` 的一列）：主要查詢、頁型、內容邊界、`mustAnswer`、地點欄位與共用教學頁。不得改題、擴張內容邊界、改網址或改 Hub。研究顯示規格有誤時停止，把問題退回 `$japan-travel-topic-planner`。
 - 有核准的旅行群大綱（`content-planning/<區域>/<群>-outline.json` 或同內容的 MD）時，照大綱寫：H1／H2／H3 用大綱的版本（標題檢查仍可改措辭，不增刪標題、不改層級）；分工表裡本頁負責的事寫細節，只摘要的事一兩句帶過並連到負責頁；內連表裡從本頁出發的連結句都要寫進正文。研究發現大綱有誤或缺事實時停止，退回大綱，不自己改分工。
-- 同一位作者負責研究、文章計畫與全文，一次成稿。不拆成先鎖標題再填段落，也不安排第二位編輯潤飾。
+- 作者負責文章計畫與全文，一次成稿，不拆成先鎖標題再填段落。人工 session 由作者自己做研究；本機自動寫作由另一位研究者先補研究、讀競品（`content-automation/local-writer.md` 第 2 步），作者只用研究記錄裡的事實。寫完交給 `$japan-travel-polish` 潤稿（另一位沒寫過這篇的人），再驗收。
 - 終點是 `content-production/<article-id>/reader-preview.md` 與研究記錄，交給 `$japan-travel-acceptance` 驗收。本 Skill 不做選題、不選圖、不寫入 Sanity、不發布、不 commit 或 push。
-- **寫作時只需要記住 [寫作指南](references/writing-guide.md) 與 [範例](references/examples.md)**，開工前先讀完這兩份。其他參考檔只在用到的步驟讀：研究讀 [日文資料](references/japanese-sources.md) 與 [研究記錄格式](references/research-record.md)；文章計畫讀 [保母等級檢查表](references/nanny-level.md)、[頁型與分工](references/page-types.md)、[嵌入與資料圖](references/embeds-and-data-blocks.md)；寫評論統整或客觀狀況讀 [評論與人氣](references/reviews-and-popularity.md)；寫到訂房、訂票、租車、接送的段落讀 [分潤連結與推廣工具](references/affiliate-links.md)；標題檢查 agent 讀 [標題與 SEO 規範](references/heading-style.md)。
+- **寫作時只需要記住 [寫作指南](references/writing-guide.md) 與 [範例](references/examples.md)**，開工前先讀完這兩份。其他參考檔只在用到的步驟讀：研究讀 [日文資料](references/japanese-sources.md)、[研究記錄格式](references/research-record.md) 與 [讀競品](references/competitor-reading.md)；文章計畫讀 [保母等級檢查表](references/nanny-level.md)、[頁型與分工](references/page-types.md)、[嵌入與資料圖](references/embeds-and-data-blocks.md)；寫評論統整或客觀狀況讀 [評論與人氣](references/reviews-and-popularity.md)；寫到訂房、訂票、租車、接送的段落讀 [分潤連結與推廣工具](references/affiliate-links.md)；標題檢查 agent 讀 [標題與 SEO 規範](references/heading-style.md)。
 
 ## 研究
 
@@ -50,9 +50,9 @@ description: Research and write one Traditional Chinese article for the Japan tr
 - **研究代理的推論要回原文核對**：代理報告裡的推論（例如「舊終點已封閉」）要回官方頁找到原文才能進事實表。
 - **官方怎麼形容它的樣子也記下來**：景點的顏色、形狀、規模，官方有寫才能進正文的畫面描寫。
 
-### 看同搜尋意圖的繁中頁
+### 讀競品
 
-用主要查詢搜尋並實際開啟 3～5 篇現行繁中頁，觀察它們回答了什麼、漏了什麼、H 樹怎麼排。目的是找出讀者還沒被回答的問題，不是模仿結構。
+事實補完之後，照 [讀競品](references/competitor-reading.md) 讀 3 到 5 篇台灣排在前面的同主題文章，寫 `competitor-notes.md`（2026-10-31 Darren 決定）。只記資訊順序、句子習慣與讀者還沒被回答的問題；不拿事實、不抄句子、不照搬結構，標題與分工照大綱。
 
 ### 記錄發現
 
@@ -60,7 +60,7 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 ## 文章計畫
 
-在研究記錄最後寫出：核心答案、H 樹、每節要回答的 `mustAnswer`、會連到的共用教學頁、住宿段落的訂房管道、分潤連結與推廣區塊候選（放哪一節、放什麼）、FAQ 候選、每個景點的基本資訊欄要放哪些格子、頁尾延伸資料要列的官方頁，以及查到但不寫的內容與原因。保母等級的擔心清單逐項想過，不適用的寫原因，清單見 [保母等級檢查表](references/nanny-level.md)。
+在研究記錄最後寫出：核心答案、H 樹、每節要回答的 `mustAnswer`、會連到的共用教學頁、住宿段落的訂房管道、分潤連結與推廣區塊候選（放哪一節、放什麼）、每個重點景點的基本資訊欄要放哪些格子、頁尾延伸資料要列的官方頁，以及查到但不寫的內容與原因。保母等級的擔心清單逐項想過，不適用的寫原因，清單見 [保母等級檢查表](references/nanny-level.md)。
 
 計畫也要列出圖片需求：哪一節、哪一種需求（認現場、決定去不去、吃什麼、季節對照、路線時間軸），以及讀者看圖要確認什麼。需求種類與「不放圖」的情況依 `.agents/skills/japan-travel-image-finder/references/image-needs.md`。路線與時間軸要畫成示意圖時，把節點的事實 `claimId` 一併列出，交給選圖 Skill 做資料檔。
 
@@ -72,15 +72,15 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 ### 住宿段落
 
-列出旅館時，每間寫清楚：房型或住宿型態、是否含餐、接駁、訂房管道（官網、Trip.com、Agoda、僅 Jalan）。只有官網或 Jalan 能訂的旅館放官網連結。住宿頁標示查核日期。Trip.com 與 Agoda 的連結怎麼放、連結文字怎麼寫、揭露句放哪裡，照 [分潤連結與推廣工具](references/affiliate-links.md)。其他頁型（交通、景點、天氣季節）跟主題有關時也可以放分潤連結，哪種頁放什麼見同一份檔案。
+列出旅館時，每間寫清楚：區域、離車站或港口多遠、接駁、營業期間、訂房管道（官網、Trip.com、Agoda）。不寫價格，含餐只在影響選擇時寫（Darren 2026-10-26，細節見 [頁型與分工](references/page-types.md)）。住宿比較表多一欄「連結」放官網與 Google 地圖（寫作指南第12條）；只有官網能訂的旅館放官網連結。查核日期寫在 `## 資料來源` 第一行。Trip.com 與 Agoda 的連結怎麼放、連結文字怎麼寫、揭露句放哪裡，照 [分潤連結與推廣工具](references/affiliate-links.md)。其他頁型（交通、景點、天氣季節）跟主題有關時也可以放分潤連結，哪種頁放什麼見同一份檔案。
 
 ### 來源與連結
 
-正文、表格與括號不放外部來源連結；讀者會自己查的官方頁放在 `## 延伸資料`，緊接在最後的 `## 資料來源` 之前；本文依據的來源在 `## 資料來源` 列日文原標題與連結（格式見範例第 4 節）。站內連結只加在已上線且網址確定的頁面，不猜網址。大綱內連表要求的連結句照樣寫進正文；目標頁還沒上線時，句子照寫、先不加連結，在研究記錄的「待補內連」列出這句話與目標頁 ID，等目標頁上線後只把這句加上連結，字不改。旅館官網與訂房連結屬於讀者要用的連結，可以放在住宿段落，不算來源連結；分潤連結要符合關於頁的揭露原則。
+正文、表格與括號不放外部來源連結，只有兩種讀者要用的連結例外：住宿表「連結」欄與景點基本資訊欄「連結」列的官網與 Google 地圖（寫作指南第12條），以及 Trip.com、Agoda 的訂房連結（照分潤連結檔）。格式檢查只放行這兩種。讀者會自己查的官方頁放在 `## 延伸資料`，緊接在最後的 `## 資料來源` 之前；本文依據的來源在 `## 資料來源` 列日文原標題與連結（格式見範例第 4 節）。站內連結只加在已上線且網址確定的頁面，不猜網址。大綱內連表要求的連結句照樣寫進正文；目標頁還沒上線時，句子照寫、先不加連結，在研究記錄的「待補內連」列出這句話與目標頁 ID，等目標頁上線後只把這句加上連結，字不改。分潤連結要符合關於頁的揭露原則。
 
-### 常見問題
+### 不設常見問題
 
-長篇文章從 `mustAnswer` 與搜尋結果頁的相關問題中，找出正文還沒直接回答的問題，放在資料來源前的 `## 常見問題`，每題一個 H3，下一段直接回答。不能把正文換成問句再重述一次。沒有合格問題時不設 FAQ，並在研究記錄寫明原因。
+不設 `## 常見問題`（Darren 2026-10-18 決定）。`mustAnswer` 與搜尋結果頁的相關問題，放進它所屬的那一節，用問句當 H3 或直接在段落裡回答。
 
 ### WHOOPS 標題結構規則
 
