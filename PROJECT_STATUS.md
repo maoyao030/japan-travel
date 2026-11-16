@@ -2127,3 +2127,12 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 阻礙：等 Darren 看第三版；要不要在他電腦上讀 Google 地圖與 Trip.com 評論、寫作模型規則、設施費用算不算價格，都還沒決定。自動寫作仍暫停。
 - 唯一下一步：Darren 看 `v3/preview.html`，說哪幾段還不行。
 - 測試與 Git：沒有改程式；分支 `claude/sharp-fermat-2nj3mz` 已 push，沒有併進 `main`。
+
+## 2026-11-16｜Claude Code｜住宿頁寫法寫進規則
+
+- 已完成：Darren 看過旭川住宿第三版後說「這版好多了，把這個寫法寫進規則」。新增寫作 Skill `references/stay-page.md`（整頁結構、飯店段落版面、留什麼拿掉什麼、句子與用語、拆段流程、編輯的四個問題），並在 `SKILL.md`、`page-types.md`、`reviews-and-popularity.md`、`content-automation/local-writer.md`、`AGENTS.md`、`RULES_OVERVIEW.md` 加上指引。
+- 已決定：住宿頁照這個寫法與流程；設施費用可以寫；住客的說法不寫「評論常提到」。
+- 尚未完成：評論的第二個平台；這個流程用哪個模型；`check-voice.mjs` 不檢查條列；第三版樣本還沒上線、也還不是頁型範本；事實表已知錯誤沒改。
+- 阻礙：上面兩件要 Darren 決定。自動寫作仍暫停。
+- 唯一下一步：Darren 決定這個流程用哪個模型。
+- 測試與 Git：只改規則文件；範本登記檔檢查與測試通過；分支 `claude/sharp-fermat-2nj3mz` 已 push，沒有併進 `main`。

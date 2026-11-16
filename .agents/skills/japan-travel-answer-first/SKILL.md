@@ -72,6 +72,8 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 ### 住宿段落
 
+**住宿頁照 [住宿頁的寫法與流程](references/stay-page.md) 寫**（Darren 2026-11-16）：整頁結構、每間飯店「開頭一句 → 為什麼選這間 → 訂房前的注意事項 → 訂房連結」的版面、留什麼拿掉什麼，以及一段一位作者、先查核再編輯的流程，都在那一份。其他頁型裡順帶列旅館時照下面這段。
+
 列出旅館時，每間寫清楚：房型或住宿型態、是否含餐、接駁、訂房管道（官網、Trip.com、Agoda、僅 Jalan）。只有官網或 Jalan 能訂的旅館放官網連結。住宿頁標示查核日期。Trip.com 與 Agoda 的連結怎麼放、連結文字怎麼寫、揭露句放哪裡，照 [分潤連結與推廣工具](references/affiliate-links.md)。其他頁型（交通、景點、天氣季節）跟主題有關時也可以放分潤連結，哪種頁放什麼見同一份檔案。
 
 ### 來源與連結
