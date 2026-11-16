@@ -1,0 +1,96 @@
+# 旭川自駕住宿，哪些飯店好停車？
+
+北海道地廣人稀，很多人會自駕，住旭川的話，訂房時就要一起想好車子停哪裡。站前多數飯店的停車位是先到的人先停，不能預約，所以先挑車位多的飯店比較保險。最推薦露櫻Grand旭川站前（ホテルルートインGrand旭川駅前）和Dormy Inn旭川（ドーミーイン旭川），兩間自己的停車場都有一百台以上。
+
+還沒決定住哪一區的話，可以先看〈旭川住宿推薦〉那一頁，那一頁有站前和市中心怎麼選、每間飯店適合誰。
+
+## 旭川哪幾間飯店車位多？
+
+飯店自己的停車場越大，晚一點到也越有機會停得到。
+
+- **露櫻Grand旭川站前**：自己的立體停車場有176台，住客一晚800日圓，停車位是先到的人先停，不能保留。車位分成普通車、中高車和高頂車三種高度，高頂車的車位可以停到大約2.1公尺高的車。
+- **Dormy Inn旭川**：自己的平面停車場有114台，一晚1,000日圓（含稅），一樣是先到的人先停。有住客反應，停車場就在飯店旁邊，車位也多。
+
+## 開休旅車或廂型車住旭川，哪幾間要先看車高？
+
+旭川有飯店的停車場限高155公分，也有飯店的立體停車場不收休旅車和廂型車，開這兩種車的話，訂房前先看清楚。
+
+- **Court Hotel旭川（コートホテル旭川）**：車高超過155公分的車停不進飯店的停車場，飯店會介紹附近的停車場給你。停得進去的話，自己的停車場有25台，一晚1,100日圓，不能預約。
+- **天然溫泉Premier Hotel-CABIN-旭川（天然温泉プレミアホテル-CABIN-旭川）**：廂型車、休旅車和大型車不能停飯店的立體停車場，開這幾種車來，要改停合作停車場或投幣停車場。其他車可以停飯店的152台車位，一晚800到1,100日圓，依車型不同，停車位是當天先到的人先停，不能預約。有住客反應，停車場滿了之後，也一樣要改停對面或合作的停車場。
+
+## 旭川哪幾間飯店要停合作停車場？
+
+這種飯店會請住客停附近合作的停車場，差別在於車子開出去再回來，要不要再付一次錢。
+
+- **OMO7旭川**：合作的停車場是Times，每24小時1,000日圓，不過每次進場都要重新付費，白天開車出去玩，回來就要再付一次。停車位是先到的人先停，不能預約，有住客反應傍晚以後就滿了。
+- **Y's Hotel旭川站前（ワイズホテル旭川駅前）**：要停飯店後面的Times停車場，一晚1,200日圓，住宿期間可以自由進出。如果開的是大型車，要事先預約別的停車場。
+
+## 旭川郊外有免費停車的旅館嗎？
+
+有。日式旅館扇松園的免費停車場最多可以停70台；Matsueda旅館（お宿まつえだ）在JR東旭川站附近，有10台免費車位。想住郊外的話，〈旭川溫泉飯店〉那一頁有郊外溫泉旅館的介紹，可以接著看。
+
+## 旭川飯店停車比較表
+
+表裡依站前、市中心、郊外的順序排，站前由離車站近的排到遠的。
+
+| 飯店 | 停車場 | 車位 | 一晚費用 | 能不能預約 | 車高或車型限制 |
+|---|---|---|---|---|---|
+| JR Inn旭川 | 併設永旺立體 | — | 800日圓 | — | 車高2.2m以下 |
+| Y's Hotel旭川站前 | 後面的Times | — | 1,200日圓，可進出 | — | 大型車要預約別處 |
+| KOKO HOTEL旭川站前 | 沒有，用永旺停車場 | — | 1,000日圓，出場就再付 | — | — |
+| Court Hotel旭川 | 自家 | 25台 | 1,100日圓 | 不能 | 車高155cm以下 |
+| 露櫻Grand旭川站前 | 自家立體 | 176台 | 800日圓 | 不能保留 | 三種高度，最高約2.1m |
+| Hotel WBF Grande旭川 | 自家戶外 | 最多70台 | 1,000日圓 | 不能 | 大巴士、卡車沒有車位 |
+| 東橫INN旭川站東口 | 立體加平面 | 立體48、平面26 | 800日圓 | 先到先停 | 立體高2m、寬1.9m |
+| 天然溫泉Premier Hotel-CABIN-旭川 | 自家立體 | 152台 | 800～1,100日圓 | 不能 | 廂型車、休旅車另停 |
+| HOTEL AMANEK旭川 | 隔壁合作停車場 | — | 24小時1,000日圓 | — | — |
+| 9C Hotel旭川 | 合作Times 5處 | — | 24小時最多1,100日圓 | — | — |
+| 東橫INN旭川站前一條通 | 兩處立體 | 24台、9台 | 800日圓 | 先到先停 | 24台高1.55m、9台高2m |
+| Super Hotel旭川 | 有停車場 | — | 600日圓 | 不能 | — |
+| 旭川Sun Hotel | 地下自家 | 5台 | 1,100日圓 | 不能 | — |
+| Tabist旭川Station Hotel | 合作4處 | — | 1,100日圓 | 不能 | — |
+| R Hotels Inn北海道旭川 | 自家 | 5台 | 1,000日圓 | 不能 | 有尺寸限制 |
+| Hotel Tetora旭川站前 | 合作停車場 | — | 一次進出免費 | — | 2.1m以下，經濟方案除外 |
+| 露櫻旭川站前一條通 | 塔式立體 | 36台 | 600日圓 | 先到先停 | 普通1.55m、高頂2.1m |
+| Asahikawa Ride | 沒有，用附近投幣停車場 | — | — | — | — |
+| Hotel Crescent旭川 | 自家 | 約12台 | 800日圓 | 不用預約 | — |
+| OMO7旭川 | 合作Times | — | 24小時1,000日圓，進場就再付 | 不能 | — |
+| Art Hotel旭川 | 飯店停車場 | — | 1,000日圓 | — | — |
+| Dormy Inn旭川 | 自家平面 | 114台 | 1,000日圓 | 先到先停 | 大型車須預約、收費 |
+| 旭川Toyo Hotel | 自家加合作 | 合計100台 | 800日圓 | — | — |
+| Platon Hotel | 免費停車 | 有限 | 免費 | 訂房時確認台數 | — |
+| 東花苑 | 自家 | 最多50台 | 部分收費 | — | 大型車、巴士可停 |
+| 扇松園 | 自家 | 最多70台 | 免費 | — | 大型車、巴士限2台 |
+| Matsueda旅館 | 自家 | 10台 | 免費 | — | 大型巴士也可停 |
+
+## 資料來源
+
+停車資訊查核日期：2026年11月12日與16日，以各飯店官網為準。住客的說法整理自Google地圖、4travel與Trip.com的住客評論，只寫兩個平台以上、三則以上都提到的。
+
+- [JR Inn旭川的停車說明](https://www.jr-inn.jp/asahikawa/qa/)
+- [Court Hotel旭川的停車說明](https://www.enhotels.co.jp/asahikawa/access/)
+- [天然溫泉Premier Hotel-CABIN-旭川的停車說明](https://cabin.kenhotels.com/asahikawa/facilities/)
+- [Hotel WBF Grande旭川的停車說明](https://www.ishinhotels.com/wbf/grande-asahikawa)
+- [旭川Sun Hotel的停車說明](https://asahikawa-sunhotel.com/access/)
+- [東橫INN旭川站東口的停車說明](https://www.toyoko-inn.com/search/detail/00173/)
+- [東橫INN旭川站前一條通的停車說明](https://www.toyoko-inn.com/search/detail/00069/)
+- [Super Hotel旭川的停車說明](https://www.superhotel.co.jp/s_hotels/asahikawa/gallery.html?like=room)
+- [R Hotels Inn北海道旭川的停車說明](https://rhotels-asahikawa.jp/facilities/)
+- [9C Hotel旭川的停車說明](https://9chotel.jp/access/)
+- [HOTEL AMANEK旭川的停車說明](https://amanekhotels.jp/asahikawa/information/)
+- [Tabist旭川Station Hotel的停車說明](https://tabist.co.jp/h/N01HASH)
+- [露櫻Grand旭川站前的停車說明](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/parking/)
+- [露櫻旭川站前一條通的停車說明](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/parking/)
+- [Hotel Tetora旭川站前的停車說明](https://asahikawa.e-tetora.com/access/)
+- [Platon Hotel的停車說明](https://www.platonhotel-asahikawa.com/)
+- [OMO7旭川的停車說明](https://hoshinoresorts.com/ja/hotels/omo7asahikawa/access/)
+- [Art Hotel旭川的停車說明](https://www.art-asahikawa.com/stay/qanda/)
+- [Hotel Crescent旭川的停車說明](https://www.hotel-cr.com/access/)
+- [旭川Toyo Hotel的停車說明](https://www.toyo-hotel.net/access)
+- [Dormy Inn旭川的停車說明](https://dormy-hotels.com/dormyinn/hotels/asahikawa/access/)
+- [Asahikawa Ride的停車說明](https://www.asahikawaride.com/access/)
+- [東花苑的停車說明](https://www.toukaen.com/about)
+- [扇松園的停車說明](https://sensyoen.co.jp/faq/)
+- [Matsueda旅館的停車說明](https://r.goope.jp/oyadomatsueda/)
+- [Y's Hotel旭川站前的停車說明](https://yshotel-asahikawa.com/access)
+- [KOKO HOTEL旭川站前的停車說明](https://www.koko-hotels.com/asahikawa_station/)
