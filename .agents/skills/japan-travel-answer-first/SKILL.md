@@ -107,10 +107,10 @@ description: Research and write one Traditional Chinese article for the Japan tr
    - 推算是否正確。
    - 有沒有事實表撐不起的延伸說法。
    結果寫到 `content-production/<article-id>/section-checks/<序號>.json`：`{section, checker, items: [{excerpt, factIds, verdict: ok|fix, reason}]}`。作者依結果修改後重跑第 2、3 步；同一段最多改三輪。
-5. 執行 `python3 <本 Skill 絕對路徑>/scripts/audit_answer_first.py content-production/<article-id>/reader-preview.md --json`，處理它回報的格式錯誤。它只檢查格式，不判斷文章品質；語意提醒不是自動判退理由。
+5. 執行 `python3 <本 Skill 絕對路徑>/scripts/audit_answer_first.py content-production/<article-id>/reader-preview.md --json`，處理它回報的格式錯誤。它只檢查格式，不判斷文章品質；語意提醒不是自動判退理由。再執行 `node scripts/check-benchmark.mjs --after=content-production/<article-id>/reader-preview.md`：住宿表要有「連結」欄、景點基本資訊欄要有「連結」列、不能有譯名表標過的舊寫法，`errors` 要是空的（2026-11-08，定稿時還會再擋一次）。
 6. **標題檢查**：派一個沒寫過這篇的 subagent，只給它頁面規格（主要與次要查詢）、`reader-preview.md` 與 [標題與 SEO 規範](references/heading-style.md)。它逐一判斷 H1、SEO Title、每個 H2／H3，寫 `content-production/<article-id>/heading-review.json`：`{checker, items: [{level, before, after, reason}], seoTitle: {before, after, reason}, structureNotes: []}`。沒問題的標題 `after` 等於 `before`、`reason` 留空；只改文字，不增刪標題、不改層級。作者照 `after` 改 `draft-tagged.md` 的標題，重跑第 2、5 步，再執行 `python3 <本 Skill 絕對路徑>/scripts/heading_review.py content-production/<article-id>` 確認標題已套用。`structureNotes` 有內容時作者處理後再交驗收。不需要逐篇等 Darren 確認；Darren 事後對標題的偏好寫進規範的增訂規則。
 7. 交給 `$japan-travel-acceptance`。驗收判退時保留失敗樣本與原因，不修改後宣稱首次成功；修改後的版本是新的一輪，從第 2 步重跑。是否重寫依使用者或排程規則。
 
 ## 完成條件
 
-`draft-tagged.md`、`reader-preview.md` 與 `reference-review.md` 都已存在；`fact_tags.py` 為 `tags_clear`；`check-voice.mjs` 通過；每個 H2 都有分段檢查紀錄且沒有未處理的 `fix`；每個 `mustAnswer` 都有回答，查不到的在研究記錄寫明查過哪些來源與正文的替代寫法；每個事實在研究記錄有日文原文摘錄與網址；專有名詞附日文原名並已更新譯名表；新發現已記進發現清單；圖片需求、基本資訊欄與延伸資料已列在文章計畫；格式檢查為 `mechanical_clear`；`heading_review.py` 通過；已交給驗收 Skill。
+`draft-tagged.md`、`reader-preview.md` 與 `reference-review.md` 都已存在；`fact_tags.py` 為 `tags_clear`；`check-voice.mjs` 通過；每個 H2 都有分段檢查紀錄且沒有未處理的 `fix`；每個 `mustAnswer` 都有回答，查不到的在研究記錄寫明查過哪些來源與正文的替代寫法；每個事實在研究記錄有日文原文摘錄與網址；專有名詞附日文原名並已更新譯名表；新發現已記進發現清單；圖片需求、基本資訊欄與延伸資料已列在文章計畫；格式檢查為 `mechanical_clear`；`check-benchmark.mjs` 沒有 `errors`；`heading_review.py` 通過；已交給驗收 Skill。

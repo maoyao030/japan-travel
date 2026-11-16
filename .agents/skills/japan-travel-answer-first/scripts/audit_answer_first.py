@@ -156,6 +156,8 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
                 inline_links += len(linked_references)
             fail("INLINE_SOURCE_LINK", number,
                  "外部來源連結須集中在文末，包含參照式連結；只有表格「連結」欄或列的官網與地圖、Trip.com 與 Agoda 訂房連結可以留在正文。")
+        if re.match(r"^\s*[〔［\[]\s*(?:圖片|來源頁)", line):
+            fail("IMAGE_PLACEHOLDER", number, "正文不留圖片佔位行；照片位置寫在圖片需求，由選圖流程插入。")
         for code, pattern, message in REVIEW_SIGNALS:
             if pattern.search(line):
                 signals.append({"code": code, "line": number, "message": message,
@@ -205,7 +207,9 @@ def self_test() -> int:
     other_table = clear.replace(body, "| 項目 | 內容 |\n|---|---|\n| 票價 | [時刻表](https://example.com/fare) |")
     booking = clear.replace(body, "可以在 [Trip.com 查空房](https://tw.trip.com/hotels/detail-1/)。")
     faq = clear.replace("## 資料來源", "## 常見問題\n\n內容。\n\n## 資料來源")
+    placeholder = clear.replace(body, body + "\n\n〔圖片〕渡輪站外觀。")
     report = {"passingCase": audit(clear), "headingFailingCase": audit(headings),
+              "imagePlaceholderCase": audit(placeholder),
               "linkColumnCase": audit(stay_table), "linkRowCase": audit(info_table),
               "otherTableLinkCase": audit(other_table), "bookingLinkCase": audit(booking),
               "faqSectionCase": audit(faq),
@@ -221,6 +225,7 @@ def self_test() -> int:
           and report["linkRowCase"]["status"] == "mechanical_clear"
           and any(i["code"] == "INLINE_SOURCE_LINK" for i in report["otherTableLinkCase"]["issues"])
           and report["bookingLinkCase"]["status"] == "mechanical_clear"
+          and any(i["code"] == "IMAGE_PLACEHOLDER" for i in report["imagePlaceholderCase"]["issues"])
           and not any(i["code"] == "FAQ_MISSING" for i in report["passingCase"]["reviewSignals"])
           and any(i["code"] == "FAQ_SECTION" for i in report["faqSectionCase"]["reviewSignals"])
           and report["semanticWeakCase"]["articleDecision"] == "not_evaluated"

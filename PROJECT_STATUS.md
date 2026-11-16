@@ -2065,3 +2065,16 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
   - `check-copy.mjs` 與它的測試保留（現行流程不用，但不妨礙）。
 - **測試**：`npm test` 234 個通過；`audit_answer_first.py --self-test` 通過。分支 `claude/project-skill-conflicts-63bb10` 已 push；Darren 2026-11-16 同意後已合併推到 `main`（合併前 `origin/main` 沒有新 commit）。
 - **唯一下一步**：看自動寫作下一輪的執行紀錄，確認 `auto/wakkanai-writing` 合併 `origin/main` 後照新規則跑（住宿表有「連結」欄且格式檢查通過）。
+
+## 2026-11-16 Claude Code｜Skill 衝突第二次檢查
+
+- **起因**：Darren 要求再檢查一次。重搜第一次修過的關鍵字，並細讀上次只掃過的寫作範例、頁面規格、規劃檔格式、體驗研究四份檔案。
+- **新找到並已修**：
+  - 寫作 `examples.md` 第4節（完整版型範例）的基本資訊欄最後一列還是「官方介紹＋裸網址」，和第12條「連結」列的規定不合，照著寫會被兩支檢查擋。改成 `[官網]・[地圖]`。
+  - 同一節教作者在正文留「〔圖片〕」佔位行，但沒有任何程式處理這一行，會被當成正文上線；現行流程是照片位置記在 `image-plan.json`。範例與第12條改成不留佔位行，格式檢查新增 `IMAGE_PLACEHOLDER` 會擋。
+  - `examples.md` 第0到5節是第17條之前的書面用字（約、和、前往、抵達），開頭註明用字以第6節與第17條為準。
+  - 寫作 `SKILL.md` 的交接步驟與完成條件、寫作指南「三步」補上 `check-benchmark.mjs`（原本只寫在第12條與 `local-writer.md`）。
+  - 驗收 `SKILL.md` 的四層表還寫「H 樹與 FAQ」，已改。
+- **沒有動、要 Darren 決定**：`lavender-season`（驗收通過、還沒上傳）的 `reader-preview.md` 第 21 行有一行「〔圖片〕富田農場的彩色花田…」。照現在的格式檢查，定稿時會被擋下來，不會帶著這行上線；但要有人把這行拿掉並重跑驗收的雜湊，文章才傳得上去。這是自動寫作的成果，沒有擅自改。
+- **測試**：`npm test` 234 個通過；`audit_answer_first.py --self-test` 通過。
+- **唯一下一步**：Darren 決定 `lavender-season` 那一行要不要由人工 session 拿掉後上傳。
