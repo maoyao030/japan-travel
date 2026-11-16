@@ -55,6 +55,7 @@
 | R265 | 露櫻Grand旭川站前｜早餐：Google 約 7 則稱讚早餐種類多、比一般露櫻豐富，多到一個托盤裝不下。和 4travel（R93）一致 | Google 地圖評論（Hotel Route-Inn Grand Asahikawa Ekimae）；4travel | 2026-11-16 | 兩個平台、約 18 則；可用 |
 | R277 | Super Hotel旭川｜免費早餐好：Google 約 4 則說早餐不錯、自助種類多；約 1 則說現在早餐也有白飯（以前只有麵包）。和 4travel（R59）一致 | Google 地圖評論（Super Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 12 則；可用（「加了白飯」只有 1 則，不寫） |
 | R288 | HOTEL AMANEK旭川｜早餐：Google 約 3 則說早餐豐盛好吃（約 1 則說不像照片那麼精緻但不錯）。和 4travel（R78 正面）一致 | Google 地圖評論（Amanek Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 14 則；可用。「沒有鮭魚卵、生魚片不好吃」Google 一年內只有 1 則，加上 4travel「鮭魚卵限量」，合計不確定有沒有到 3 則，不可用 |
+| R302 | Court Hotel旭川｜早餐好吃：Google 約 5 則說自助早餐種類多、好吃，其中 2 則特別提到湯咖哩或咖哩。和 4travel（R2 正面）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
 | R188 | Dormy Inn旭川｜早餐：Trip.com 正面約 9 則（有人提到生魚片丼飯）、覺得普通約 1 則；Google 正面約 2 則。4travel（R181）另有人遇到分批入場；Trip.com 的評論摘要也提到少數人說早餐要等 | 同上 | 2026-11-16 | 正面三個平台可用；「要等」只有 4travel 與 Trip.com 摘要，兩個平台 |
 | R205 | OMO7旭川｜早餐：Trip.com 正面約 6 則（好吃，常提到鬆餅配煙燻鮭魚、麵包）、負面約 3 則（款式少、普通、辣根海鮮飯和照片不一樣）；Google 正面約 1 則、負面約 1 則（選擇不多）。和 4travel（R130）一致 | 同上 | 2026-11-16 | 三個平台；可用（好評比較多，也有人覺得選擇少） |
 | R220 | JR Inn旭川｜早餐：Trip.com 約 3 則覺得普通或還可以（一則說款式和味道都一般），約 1 則說早上 6 點半就開、適合吃完去趕早班巴士；Google 約 1 則說內容充實。和 4travel（R169）一致 | 同上 | 2026-11-16 | 三個平台；可用（評價普通，不寫成好評） |

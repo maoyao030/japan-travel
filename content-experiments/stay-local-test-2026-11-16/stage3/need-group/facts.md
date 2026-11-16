@@ -72,6 +72,7 @@
 | R266 | 露櫻Grand旭川站前｜房間寬：Google 約 3 則說房間比一般露櫻大、床寬、落地窗讓房間顯得開闊。和 4travel（R94 正面）一致。4travel 說的「只有沙發沒有書桌」Google 沒有人提到 | Google 地圖評論（Hotel Route-Inn Grand Asahikawa Ekimae）；4travel | 2026-11-16 | 兩個平台、約 8 則；可用 |
 | R278 | Super Hotel旭川｜房間小：Google 約 3 則說房間小，三人住要有人睡上下舖、連攤開行李箱都難；但乾淨、一個人夠用。和 4travel（R60 負面）一致 | Google 地圖評論（Super Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 11 則；可用。R60 正面的「睡得好、可選枕頭」Google 只有 1 則說選這間是因為重視睡眠，不算，不可用 |
 | R289 | HOTEL AMANEK旭川｜房間大小：評價兩極。Google 約 3 則說房間不大（雙人房有點擠）；約 3 則說以價錢來說房間算大、或雖然不大但規劃得好。和 4travel（R79 兩極）一致 | Google 地圖評論（Amanek Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、小約 9 則、寬約 7 則；可用（寫成評價兩極） |
+| R304 | Court Hotel旭川｜房間大小評價兩極：Google 約 3 則說房間與床寬敞、約 2 則說房間小；4travel 寬 3 則、窄 4 則（R3） | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 12 則；可用（評價兩極） |
 | R192 | Dormy Inn旭川｜房間大小：Trip.com 約 3 則說房間偏小（一則是一家三口加行李放不下），約 1 則說比其他 Dormy Inn 寬一點；Google 約 1 則說房間有點小。和 4travel（R182 商務房偏小）一致 | 同上 | 2026-11-16 | 三個平台；可用（寫「有些住客覺得」，不寫成多數） |
 | R197 | OMO7旭川｜大廳與親子：Trip.com 約 8 則稱讚大廳裝潢有特色、很適合帶小孩（一則說整間很像大型幼兒園，大人自己來要想清楚）；Google 約 4 則說大廳很有設計感。和 4travel（R133 正面、R138）一致 | https://tw.trip.com/hotels/detail/?cityId=4280&hotelId=703410 ；Google 飯店評論（OMO7 旭川 by 星野集團） | 2026-11-16 | 三個平台；可用 |
 | R209 | OMO7旭川｜房間大小：評價兩極。Trip.com 約 6 則說房間寬敞、約 4 則說偏小或兩個大行李箱打不開；Google 約 1 則說大小適中。和 4travel（R131）一致 | 同上 | 2026-11-16 | 三個平台；可用（寫成評價兩極） |
