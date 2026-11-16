@@ -26,7 +26,15 @@
 
 ## 住客評論歸納
 
-
+Google 地圖（登入後）：地點「Hotel Crescent Asahikawa（ホテルクレッセント旭川）」，地址 5条通8丁目1703-49 緑橋通り，和 F703 一致；總評 3.6／5、1,263 則。照「最新」讀約 31 則（其中有文字約 19 則；2026-09～2026-11），照「評分最低」讀一年內約 4 則（2026-03～2026-08；其餘是一年以上的舊評論）。沒有點主題標籤（標籤是大浴場 53、插座 38、風呂 29、設備 23、自助早餐 20、浴室 13、禁菸 12、空氣清淨機 9、湯咖哩 7）。
 4travel（2026-11-12 讀）的說法，Google 也有提到的才放在這裡。
 
-（這一間沒有過門檻的住客評論，不寫住客的說法。）
+| 編號 | 主張 | 來源 | 查閱日期 | 怎麼用（只能用寫可用的部分） |
+|---|---|---|---|---|
+| R361 | Hotel Crescent旭川｜走路就到餐廳和購物區：Google 約 2 則說去市中心方便、餐廳和購物中心都在走路範圍內。和 4travel（R148 正面）一致 | Google 地圖評論（Hotel Crescent Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
+| R362 | Hotel Crescent旭川｜離車站遠：Google 約 1 則（評分最低，2026-08 前後）說早知道該選離車站近一點的。和 4travel（R148 負面，嫌離車站 10 分以上）一致 | Google 地圖評論（Hotel Crescent Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 10 則；可用 |
+| R363 | Hotel Crescent旭川｜自助早餐好吃：Google 約 4 則說自助早餐好吃。和 4travel（R149 正面）一致 | Google 地圖評論（Hotel Crescent Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 11 則；可用 |
+| R364 | Hotel Crescent旭川｜清潔評價兩極：Google 約 1 則說整修後乾淨舒適、約 3 則（評分最低，2026-03～2026-08）說房間或浴室沒打掃乾淨；4travel 乾淨 4 則、不乾淨 1 則（R151） | Google 地圖評論（Hotel Crescent Asahikawa）；4travel | 2026-11-16 | 兩個平台，說乾淨約 5 則、說不乾淨約 4 則；可用（評價兩極） |
+| R365 | Hotel Crescent旭川｜房間有菸味：Google 約 2 則（2026-08、2026-11）說訂的是禁菸房卻有菸味。和 4travel（R151 負面，2023 年吸菸樓層有菸味）一致 | Google 地圖評論（Hotel Crescent Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 3 則；可用（少數；4travel 那則是全面禁菸前） |
+| R366 | Hotel Crescent旭川｜建築舊：Google 約 3 則說房間或設施比預期舊。和 4travel（R152 負面）一致 | Google 地圖評論（Hotel Crescent Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 11 則；可用 |
+| R367 | Hotel Crescent旭川｜停車場窄、滿了要改停合作停車場：Google 約 2 則說停車場窄、車位少，滿了被請去停附近的合作停車場。和 4travel（R153 負面）一致 | Google 地圖評論（Hotel Crescent Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 5 則；可用 |

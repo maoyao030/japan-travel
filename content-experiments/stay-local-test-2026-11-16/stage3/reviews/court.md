@@ -4,7 +4,7 @@ Google 地圖（登入後）：總評 3.7／5、1,042 則；地點「Court Hotel
 
 | 編號 | 主張 | 來源 | 查閱日期 | 可不可用 |
 |---|---|---|---|---|
-| R300 | Court Hotel旭川｜離車站近、附近吃買方便：Google 約 13 則說就在旭川站前、走去市中心也近、附近有餐廳、超商與永旺。和 4travel（R1 正面）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 28 則；可用 |
+| R300 | Court Hotel旭川｜離車站近、附近吃買方便：Google 約 13 則說就在旭川站前、走去市中心也近、附近有餐廳和超商。和 4travel（R1 正面）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 28 則；可用 |
 | R301 | Court Hotel旭川｜正對面有拉麵店：Google 約 4 則提到對面就是拉麵店 | Google 地圖評論（Court Hotel Asahikawa） | 2026-11-16 | 只有 Google（4travel R1 只說附近有餐廳）；不可用 |
 | R302 | Court Hotel旭川｜早餐好吃：Google 約 5 則說自助早餐種類多、好吃，其中 2 則特別提到湯咖哩或咖哩。和 4travel（R2 正面）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
 | R303 | Court Hotel旭川｜早餐的菜不夠熱：Google 約 2 則說早餐的菜多半是涼的 | Google 地圖評論（Court Hotel Asahikawa） | 2026-11-16 | 只有 Google 2 則（4travel R2 負面是菜色少、要加錢，說的不是同一件事）；不可用 |
@@ -14,12 +14,12 @@ Google 地圖（登入後）：總評 3.7／5、1,042 則；地點「Court Hotel
 | R307 | Court Hotel旭川｜大多說乾淨：Google 約 4 則說房間乾淨（其中幾則說雖然舊但乾淨）。和 4travel（R6 正面）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 13 則；可用 |
 | R308 | Court Hotel旭川｜有住客碰到打掃不確實：Google 約 2 則（評分最低，2026-07 前後）說入住時浴室有前一位客人的頭髮。和 4travel（R6 負面，2023-11 房間沒打掃乾淨）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 3 則；可用（少數，好評多很多） |
 | R309 | Court Hotel旭川｜建築與設備舊：Google 約 5 則說館內或設施舊，其中幾則說裡面整修過、看起來不錯。和 4travel（R7）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 13 則；可用 |
-| R310 | Court Hotel旭川｜員工親切：Google 約 6 則說員工友善、入住退房快、有人借到傘。和 4travel（R8 正面）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
+| R310 | Court Hotel旭川｜員工親切：Google 約 6 則說員工友善、入住退房順利。和 4travel（R8 正面）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
 | R311 | Court Hotel旭川｜櫃台應對有負評：Google 約 3 則（多在評分最低）說櫃台態度差、或反映問題只得到道歉。和 4travel（R8 負面，2018）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 4 則；可用（少數，好評多很多） |
 | R312 | Court Hotel旭川｜停車場是塔式立體停車場，用起來有限制：Google 約 4 則（2026-07～2026-09）提到飯店的停車場是機械式立體停車場；4travel 1 則嫌塔式停車場出車慢（R9 負面） | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 5 則；可用 |
 | R313 | Court Hotel旭川｜車太大停不進去、要改停附近收費停車場：Google 約 4 則說車身大（連小型車也有一則）被請去停隔壁的收費停車場 | Google 地圖評論（Court Hotel Asahikawa） | 2026-11-16 | 只有 Google；不可用 |
 | R314 | Court Hotel旭川｜停車場就在飯店後面很方便：Google 一年內沒有人這樣說（4travel R9 正面 3 則） | 4travel | 2026-11-16 | 只有 4travel；不可用 |
-| R315 | Court Hotel旭川｜划算：Google 約 4 則說價格實惠、比札幌便宜、價格和位置很平衡。和 4travel（R10 正面）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 13 則；可用 |
+| R315 | Court Hotel旭川｜划算：Google 約 4 則說價格實惠、划算。和 4travel（R10 正面）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 13 則；可用 |
 | R316 | Court Hotel旭川｜大廳有免費咖啡：Google 約 1 則提到飯店有免費咖啡。和 4travel（R11 正面 3 則）一致 | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 4 則；可用 |
 | R317 | Court Hotel旭川｜房內沒放備品、要到櫃台拿：Google 沒有人提到（1 則反而說盥洗用品齊全）。4travel R11 負面 1 則 | 4travel | 2026-11-16 | 只有 4travel；不可用 |
 | R318 | Court Hotel旭川｜房間溫度不能自己調：Google 約 6 則說房間太熱或太冷、空調不能調溫度（夏天熱、六月冷都有）；業主回覆說是中央空調、房內只能調風量 | Google 地圖評論（Court Hotel Asahikawa） | 2026-11-16 | 只有 Google（4travel R5 只說冷氣聲大，不是同一件事）；不可用。設備事實要另查官網 |

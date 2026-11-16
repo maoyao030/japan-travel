@@ -98,10 +98,17 @@ const write = (id, task, facts) => {
 
 const numbered = (lines) => lines.filter(Boolean).map((l, i) => `${i + 1}. ${l}`).join('\n')
 
+// 這次讀評論時另外發現、要作者注意的
+const EXTRA_NOTES = {
+  '9c': ['住客提到的晚上免費拉麵（R347）官網沒寫，現在還有沒有不確定，不要寫。'],
+}
+
 for (const h of HOTELS) {
+  // 已經編輯完成的段落不重做事實表，保留當時作者、查核、編輯用的版本
+  if (existsSync(path.join(here, h.id, 'edited.md'))) { console.log(h.id, '已完成，不覆蓋'); continue }
   const reviewFile = path.join(reviewsDir, `${h.id}.md`)
   const rows = usableRows(reviewFile)
-  const notes = [`只寫${h.title}${h.id === 'toyoko' ? '這兩間' : '這一間'}。`, ...COMMON, ...v3Header(h.id).split('\n').filter(Boolean)]
+  const notes = [`只寫${h.title}${h.id === 'toyoko' ? '這兩間' : '這一間'}。`, ...COMMON, ...v3Header(h.id).split('\n').filter(Boolean), ...(EXTRA_NOTES[h.id] || [])]
   const extra = h.extra.length ? `## 補充的官方事實\n\n${officialHeader}\n${h.extra.map(refRow).join('\n')}` : ''
   const facts = [
     `# ${h.title}｜這一段的事實表`,
