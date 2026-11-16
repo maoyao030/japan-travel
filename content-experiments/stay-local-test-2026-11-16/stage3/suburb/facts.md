@@ -6,6 +6,8 @@ F 開頭的是飯店官網的事實。R 開頭的是 4travel 住客評論的統�
 
 扇松園免費接駁的人數條件官網兩頁不一致，寫成要事先預約就好。Matsueda旅館和室的衛浴官網沒寫，不要推測。高砂溫泉的大浴場用地下水，不是天然溫泉。龍乃湯溫泉每週二公休，只有住客那天還能泡湯。Auberge Sondre 的免費接駁，時間和姊妹館重疊時以姊妹館優先。不寫房價與一泊二食的價格。沒有住客評論可用，不寫住客的說法。
 
+Trip.com 與 Agoda：只有下面「Trip.com 與 Agoda 上架」一節列出的可以寫「在 Trip.com 也訂得到」；沒列出的不要寫「Trip.com、Agoda 訂不到」（只是這次沒查到）。龍乃湯溫泉在 Trip.com 有一間名稱相近的，還沒確認是不是同一間，不要寫。
+
 ## 扇松園｜官網
 
 | 編號 | 主張 | 日文原文摘錄 | 來源網址 | 查閱日期 | 適用條件 | 變動類型 | 下次查核 | 採用決定 |
@@ -104,3 +106,10 @@ F 開頭的是飯店官網的事實。R 開頭的是 4travel 住客評論的統�
 | F812 | Auberge Sondre｜官網主打：可帶狗：第一隻11,000日圓、第二隻5,500日圓，每組最多2隻；有專用狗狗運動場。 | 愛犬と使えるAésop | https://aubergesondre.com/fee/ | 2026-11-12 | 飯店官網 | stay | 2027-11-12 | 完整版樣本 |
 | F813 | Auberge Sondre｜官網主打：一泊二食方案是全包式：迎賓氣泡酒、冰箱飲料（含啤酒）、晚上酒廊的威士忌與琴酒都含在內，瓶裝葡萄酒另計。 | オールインクルーシブでご利用できる冷蔵庫のビール | https://aubergesondre.com/stay/ | 2026-11-12 | 飯店官網 | stay | 2027-11-12 | 完整版樣本 |
 | F814 | Auberge Sondre｜官網主打：櫃台9:00–18:00，入住15:00、退房11:00；沒通知又超過18:00未到可能視為取消。 | 午後３時から翌朝１１時まで | https://aubergesondre.com/contract/ | 2026-11-12 | 飯店官網 | stay | 2027-11-12 | 完整版樣本 |
+
+## Trip.com 與 Agoda 上架（2026-11-16 網路搜尋）
+
+| 編號 | 主張 | 來源網址 | 查閱日期 |
+|---|---|---|---|
+| L1 | 扇松園在 Trip.com 有飯店頁（Ryokan Sensyoen）。 | https://sg.trip.com/hotels/asahikawa-hotel-detail-2510595/ryokan-sensyoen/ | 2026-11-16 |
+| L2 | 高砂溫泉在 Trip.com 有飯店頁（Takasago Onsen）。 | https://www.trip.com/hotels/asahikawa-hotel-detail-8346311/takasago-onsen/ | 2026-11-16 |

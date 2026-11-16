@@ -182,6 +182,8 @@ for (const n of NEEDS) {
 
 // 開頭與郊外：沒有要補的評論，事實表照雲端（開頭那一列 4travel 評論不放）
 for (const id of ['intro', 'suburb']) {
+  // 這兩段的事實表之後手動補過（開頭的 OMO7 巴士說明、郊外的上架確認），已經有就不覆蓋
+  if (existsSync(path.join(here, id, 'facts.md'))) { console.log(id, '已存在，不覆蓋'); continue }
   let facts = read(path.join(v3, id, 'facts.md'))
   facts = facts.split('\n').filter((l) => !/^\| R\d+ \|/.test(l)).join('\n')
   const task = read(path.join(v3, id, 'TASK.md'))
