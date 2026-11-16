@@ -75,6 +75,10 @@
 | R304 | Court Hotel旭川｜房間大小評價兩極：Google 約 3 則說房間與床寬敞、約 2 則說房間小；4travel 寬 3 則、窄 4 則（R3） | Google 地圖評論（Court Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 12 則；可用（評價兩極） |
 | R332 | 東橫INN旭川站前一條通｜房間大小多說夠用：Google 約 1 則說房間夠寬；4travel 說寬 3 則、窄 2 則（R52） | Google 地圖評論（東橫INN 北海道旭川站前一條通）；4travel | 2026-11-16 | 兩個平台、約 6 則；可用（評價兩極，說寬的稍多） |
 | R354 | Art Hotel旭川｜房間寬：Google 約 3 則說房間寬敞、夠大。和 4travel（R143 正面）一致 | Google 地圖評論（ART 旭川酒店）；4travel | 2026-11-16 | 兩個平台、約 8 則；可用 |
+| R385 | Hotel Tetora旭川站前｜房間窄：Google 一年內約 1 則說單人房小得像關禁閉（另有 1 則說房間寬）；4travel 說窄約 6 則（R111） | Google 地圖評論（Tetora飯店 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 7 則；可用（Google 一年內只有 1 則，主要靠 4travel） |
+| R393 | 露櫻旭川站前一條通｜房間大小評價兩極：Google 約 4 則說房間寬、雙床房很大、雙人床夠大、出差剛好；4travel 約 5 則說雙床房放了行李就沒空間（R103） | Google 地圖評論（Hotel Route Inn Asahikawa Ekimae Ichijō Dōri）；4travel | 2026-11-16 | 兩個平台、約 10 則；可用（評價兩極） |
+| R399 | Y's Hotel旭川站前｜頂樓大浴場與三溫暖：Google 約 6 則說有寬敞的大浴場和三溫暖、泡湯時看得到車站一帶的夜景、人不擠。和 4travel（R33）一致 | Google 地圖評論（Y's Hotel 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 22 則；可用 |
+| R401 | Y's Hotel旭川站前｜房間不算小：Google 約 4 則說雙床房、小型雙人房空間寬，以車站旁的位置來說不小（另有 1 則說和一般商務飯店差不多）。和 4travel（R35 正面）一致 | Google 地圖評論（Y's Hotel 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
 | R192 | Dormy Inn旭川｜房間大小：Trip.com 約 3 則說房間偏小（一則是一家三口加行李放不下），約 1 則說比其他 Dormy Inn 寬一點；Google 約 1 則說房間有點小。和 4travel（R182 商務房偏小）一致 | 同上 | 2026-11-16 | 三個平台；可用（寫「有些住客覺得」，不寫成多數） |
 | R197 | OMO7旭川｜大廳與親子：Trip.com 約 8 則稱讚大廳裝潢有特色、很適合帶小孩（一則說整間很像大型幼兒園，大人自己來要想清楚）；Google 約 4 則說大廳很有設計感。和 4travel（R133 正面、R138）一致 | https://tw.trip.com/hotels/detail/?cityId=4280&hotelId=703410 ；Google 飯店評論（OMO7 旭川 by 星野集團） | 2026-11-16 | 三個平台；可用 |
 | R209 | OMO7旭川｜房間大小：評價兩極。Trip.com 約 6 則說房間寬敞、約 4 則說偏小或兩個大行李箱打不開；Google 約 1 則說大小適中。和 4travel（R131）一致 | 同上 | 2026-11-16 | 三個平台；可用（寫成評價兩極） |

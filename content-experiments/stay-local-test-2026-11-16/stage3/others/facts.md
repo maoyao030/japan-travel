@@ -6,7 +6,7 @@
 2. R 列寫成住客的說法（「有住客反應…」「有些住客覺得…」「評價比較兩極」輪著用），不寫則數，不寫成本站的結論。R 列沒寫到的細節不要自己補。
 3. 房價、早餐價格、一泊二食價格不能寫；停車費與設施加收的費用（官網有寫的）可以寫。
 4. F 列的「主張」欄裡「官網沒寫…」「沒寫…」是研究筆記，不是事實：正文不寫「官網沒寫」這類話，也不能把官網沒提到的推成「沒有」。
-5. Y's Hotel旭川站前、KOKO HOTEL旭川站前、吳竹Inn旭川、Hotel Mates旭川只有位置的事實，就只寫位置，不要寫「官網沒寫」「查不到」。旭川Sun Hotel 的早餐時間不要寫。R Hotels Inn北海道旭川的住客評論太舊不能用。Hotel Tetora旭川站前的免費停車券，經濟方案不適用。Platon Hotel 不在買物公園一帶，離車站要開車。住客評論只能用下面「住客評論歸納」裡的列，每間最多帶一句。
+5. Y's Hotel旭川站前、KOKO HOTEL旭川站前、吳竹Inn旭川、Hotel Mates旭川的官網事實只有位置，就只寫位置與下面 R 列的住客說法，不要寫「官網沒寫」「查不到」。旭川Sun Hotel 的早餐時間不要寫。R Hotels Inn北海道旭川的住客評論太舊不能用。Hotel Tetora旭川站前的免費停車券，經濟方案不適用。Platon Hotel 不在買物公園一帶，離車站要開車。住客評論只能用下面「住客評論歸納」裡的列，每間最多帶一句。
 
 ## Tabist旭川Station Hotel｜官網
 
@@ -165,4 +165,45 @@
 
 ## 住客評論歸納
 
-（沒有過門檻的住客評論。）
+| 編號 | 主張 | 來源 | 查閱日期 | 怎麼用（只能用寫可用的部分） |
+|---|---|---|---|---|
+| R370 | Tabist旭川Station Hotel｜離車站近、附近餐廳多：Google 約 6 則說離旭川站近、附近餐廳多、走得到三六街。和 4travel（R88 正面）一致 | Google 地圖評論（Tabist 旭川ステーション）；4travel | 2026-11-16 | 兩個平台、約 12 則；可用 |
+| R371 | Tabist旭川Station Hotel｜機場巴士站就在附近：Google 約 1 則說往旭川機場的巴士站在飯店對面。和 4travel（R88，3 則提到機場巴士站在附近）一致 | Google 地圖評論（Tabist 旭川ステーション）；4travel | 2026-11-16 | 兩個平台、約 4 則；可用 |
+| R372 | Tabist旭川Station Hotel｜建築老舊：Google 約 9 則說建築舊、地毯有污漬、牆面有刮痕或剝落。和 4travel（R89 負面）一致 | Google 地圖評論（Tabist 旭川ステーション）；4travel | 2026-11-16 | 兩個平台、約 11 則；可用 |
+| R373 | Tabist旭川Station Hotel｜有翻修過：Google 約 1 則說外觀與一樓大廳翻新過、乍看像新飯店。和 4travel（R89 正面，2 則說浴室等有翻修）一致 | Google 地圖評論（Tabist 旭川ステーション）；4travel | 2026-11-16 | 兩個平台、約 3 則；可用（剛好到門檻，兩邊說的翻修地方不同） |
+| R374 | Tabist旭川Station Hotel｜便宜划算：Google 約 4 則說價格便宜、划算（其中 1 則說設備也就是這個價錢的程度）。和 4travel（R90 正面）一致 | Google 地圖評論（Tabist 旭川ステーション）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
+| R378 | Hotel Tetora旭川站前｜離車站近、好找：Google 約 8 則說離旭川站近、在車站對面一帶、去購物區方便。和 4travel（R109）一致 | Google 地圖評論（Tetora飯店 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 24 則；可用 |
+| R379 | Hotel Tetora旭川站前｜免費早餐麵包好吃：Google 約 6 則說免費的早餐麵包好吃、是驚喜。和 4travel（R110 正面）一致 | Google 地圖評論（Tetora飯店 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 8 則；可用 |
+| R380 | Hotel Tetora旭川站前｜免費飲料隨時喝：Google 約 4 則說大廳飲料（軟性飲料、迎賓飲料）整天都能喝，其中 1 則也提到杯麵。和 4travel（R117）一致 | Google 地圖評論（Tetora飯店 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
+| R381 | Hotel Tetora旭川站前｜建築老舊：Google 約 4 則說建築舊。和 4travel（R114）一致 | Google 地圖評論（Tetora飯店 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 7 則；可用 |
+| R382 | Hotel Tetora旭川站前｜舊但維持得乾淨：Google 約 3 則說雖然舊但乾淨、維護得好。和 4travel（R113 正面，說內裝維持得好）一致 | Google 地圖評論（Tetora飯店 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 5 則；可用 |
+| R383 | Hotel Tetora旭川站前｜便宜划算：Google 約 5 則說價格合理、性價比高。和 4travel（R116 正面）一致 | Google 地圖評論（Tetora飯店 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 15 則；可用 |
+| R384 | Hotel Tetora旭川站前｜櫃台親切：Google 約 6 則說櫃台員工熱情、有禮貌（其中 1 則說肯讓人晚一點入住）。和 4travel（R115 正面 1 則）一致 | Google 地圖評論（Tetora飯店 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 7 則；可用 |
+| R385 | Hotel Tetora旭川站前｜房間窄：Google 一年內約 1 則說單人房小得像關禁閉（另有 1 則說房間寬）；4travel 說窄約 6 則（R111） | Google 地圖評論（Tetora飯店 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 7 則；可用（Google 一年內只有 1 則，主要靠 4travel） |
+| R390 | 露櫻旭川站前一條通｜離車站近、在市中心：Google 約 4 則說就在車站前、走約 5 分鐘、離市中心近、走得到永旺（AEON）。和 4travel（R100 正面）一致 | Google 地圖評論（Hotel Route Inn Asahikawa Ekimae Ichijō Dōri）；4travel | 2026-11-16 | 兩個平台、約 16 則；可用 |
+| R391 | 露櫻旭川站前一條通｜大浴場受好評：Google 約 4 則說地下有很大的公共浴場、在市中心有大浴場很難得（另有 1 則嫌更衣室的門很重）。和 4travel（R101）一致 | Google 地圖評論（Hotel Route Inn Asahikawa Ekimae Ichijō Dōri）；4travel | 2026-11-16 | 兩個平台、約 14 則；可用 |
+| R392 | 露櫻旭川站前一條通｜早餐好評：Google 一年內 1 則說早餐好吃、每天有麵包和不同的日式菜色（另有 1 則說和其他飯店差不多）。和 4travel（R102 正面約 15 則）一致 | Google 地圖評論（Hotel Route Inn Asahikawa Ekimae Ichijō Dōri）；4travel | 2026-11-16 | 兩個平台、約 16 則；可用（Google 一年內只有 1 則正面，主要靠 4travel） |
+| R393 | 露櫻旭川站前一條通｜房間大小評價兩極：Google 約 4 則說房間寬、雙床房很大、雙人床夠大、出差剛好；4travel 約 5 則說雙床房放了行李就沒空間（R103） | Google 地圖評論（Hotel Route Inn Asahikawa Ekimae Ichijō Dōri）；4travel | 2026-11-16 | 兩個平台、約 10 則；可用（評價兩極） |
+| R394 | 露櫻旭川站前一條通｜舊但乾淨：Google 約 3 則（說建築有點舊 2 則、說房間乾淨或維護得好 2 則，其中 1 則兩者都說）。和 4travel（R104、R105）一致 | Google 地圖評論（Hotel Route Inn Asahikawa Ekimae Ichijō Dōri）；4travel | 2026-11-16 | 兩個平台、約 12 則；可用 |
+| R395 | 露櫻旭川站前一條通｜員工親切：Google 約 3 則說員工熱情周到、停車場人員很友善（其中 1 則說忘在房裡的東西幫忙寄回家）。和 4travel（R106）一致 | Google 地圖評論（Hotel Route Inn Asahikawa Ekimae Ichijō Dōri）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
+| R396 | 露櫻旭川站前一條通｜停車場停不了機車和較高的車：Google 約 3 則說飯店旁的立體停車場不收機車、被帶去對面或附近的停車場，較高的輕型車也停不進去（另有 1 則說停車場就在門口、提早入住就能用）。和 4travel（R107 負面）一致 | Google 地圖評論（Hotel Route Inn Asahikawa Ekimae Ichijō Dōri）；4travel | 2026-11-16 | 兩個平台、約 10 則；可用 |
+| R397 | 露櫻旭川站前一條通｜價格合理：Google 一年內 1 則說以離車站 5 分鐘來說價格合理。和 4travel（R108）一致 | Google 地圖評論（Hotel Route Inn Asahikawa Ekimae Ichijō Dōri）；4travel | 2026-11-16 | 兩個平台、約 8 則；可用（Google 一年內只有 1 則，主要靠 4travel） |
+| R398 | Y's Hotel旭川站前｜就在車站與巴士總站旁：Google 約 11 則說出站右手邊就到、在車站對面、緊鄰巴士總站，旁邊有藥妝店，走得到永旺。和 4travel（R32）一致 | Google 地圖評論（Y's Hotel 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 25 則；可用 |
+| R399 | Y's Hotel旭川站前｜頂樓大浴場與三溫暖：Google 約 6 則說有寬敞的大浴場和三溫暖、泡湯時看得到車站一帶的夜景、人不擠。和 4travel（R33）一致 | Google 地圖評論（Y's Hotel 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 22 則；可用 |
+| R400 | Y's Hotel旭川站前｜早餐好吃、可以自己做海鮮丼：Google 約 4 則說自助早餐好吃，海鮮丼可以自己盛、吃到飽（其中 1 則說品項不算多但吃得飽）。和 4travel（R34 正面）一致 | Google 地圖評論（Y's Hotel 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 10 則；可用 |
+| R401 | Y's Hotel旭川站前｜房間不算小：Google 約 4 則說雙床房、小型雙人房空間寬，以車站旁的位置來說不小（另有 1 則說和一般商務飯店差不多）。和 4travel（R35 正面）一致 | Google 地圖評論（Y's Hotel 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
+| R402 | Y's Hotel旭川站前｜新而且乾淨：Google 約 5 則說房間乾淨整潔，其中 1 則也說看起來是新開的。和 4travel（R36 乾淨、R37 新飯店）一致 | Google 地圖評論（Y's Hotel 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 17 則；可用 |
+| R403 | Y's Hotel旭川站前｜休息室免費飲料、冰棒與漫畫：Google 約 7 則說休息室的飲料和咖啡、冰棒、漫畫都能免費用，很貼心。和 4travel（R40）一致 | Google 地圖評論（Y's Hotel 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 12 則；可用 |
+| R404 | Y's Hotel旭川站前｜停在飯店後面的合作停車場、方便：Google 一年內 1 則說停在飯店後面的合作停車場，有平面和立體車位、拿停車券到櫃台折抵，很方便。和 4travel（R38 正面約 4 則）一致 | Google 地圖評論（Y's Hotel 旭川站前）；4travel | 2026-11-16 | 兩個平台、約 5 則；可用（Google 一年內只有 1 則，主要靠 4travel） |
+| R406 | 吳竹Inn旭川｜位置不錯、走到車站約 7 分鐘：Google 約 2 則說位置不錯、走到車站約 7 分鐘。和 4travel（R119 正面）一致 | Google 地圖評論（Kuretake Inn）；4travel | 2026-11-16 | 兩個平台、約 13 則；可用 |
+| R407 | 吳竹Inn旭川｜免費早餐好吃：Google 約 7 則說免費早餐好吃、種類多、份量足（其中 1 則特別提到炒蛋和優格）。和 4travel（R120 正面）一致 | Google 地圖評論（Kuretake Inn）；4travel | 2026-11-16 | 兩個平台、約 18 則；可用 |
+| R408 | 吳竹Inn旭川｜傍晚 happy hour 有免費酒和咖哩：Google 約 7 則說傍晚的 happy hour 可以免費喝一杯啤酒等飲料、咖哩好吃。和 4travel（R126 正面）一致 | Google 地圖評論（Kuretake Inn）；4travel | 2026-11-16 | 兩個平台、約 20 則；可用 |
+| R409 | 吳竹Inn旭川｜舊但乾淨：Google 約 6 則說建築和設施舊，其中約 4 則也說房間乾淨、維護得好（另有 1 則說稱不上乾淨）。和 4travel（R122、R123）一致 | Google 地圖評論（Kuretake Inn）；4travel | 2026-11-16 | 兩個平台、約 12 則；可用 |
+| R410 | 吳竹Inn旭川｜員工親切：Google 約 6 則說員工熱情友善、入住流程順（另有 1 則說經理態度差）。和 4travel（R124）一致 | Google 地圖評論（Kuretake Inn）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
+| R411 | 吳竹Inn旭川｜價格合理：Google 約 3 則說價格合理、性價比高（另有 1 則說性價比很低）。和 4travel（R125，正面約 7、負面約 1）一致 | Google 地圖評論（Kuretake Inn）；4travel | 2026-11-16 | 兩個平台、約 12 則；可用 |
+| R413 | 旭川Toyo Hotel｜離車站遠、但離市中心近：Google 約 2 則說離車站遠、約 3 則說離市中心近、附近餐廳多。和 4travel（R155，負面約 13、正面約 8）一致 | Google 地圖評論（旭川東洋飯店）；4travel | 2026-11-16 | 兩個平台、約 26 則；可用 |
+| R414 | 旭川Toyo Hotel｜早餐好評：Google 約 3 則說早餐不錯、種類多、日式料理好吃。和 4travel（R156 正面）一致 | Google 地圖評論（旭川東洋飯店）；4travel | 2026-11-16 | 兩個平台、約 6 則；可用 |
+| R415 | 旭川Toyo Hotel｜建築老舊，清潔評價兩極：Google 約 7 則說建築和設施舊；清潔說差的約 5 則（灰塵、浴室發霉或有異味、牆紙有污漬），說乾淨的約 2 則。4travel 說舊約 14 則（R159）、清潔正面約 4 則負面約 2 則（R158） | Google 地圖評論（旭川東洋飯店）；4travel | 2026-11-16 | 兩個平台、約 34 則；可用（舊是兩邊一致；清潔評價兩極，Google 近期負面較多） |
+| R416 | 旭川Toyo Hotel｜開車方便：Google 約 3 則說有停車場、適合租車或自駕的人。和 4travel（R161 正面約 2 則）一致 | Google 地圖評論（旭川東洋飯店）；4travel | 2026-11-16 | 兩個平台、約 5 則；可用 |
+| R417 | 旭川Toyo Hotel｜價格便宜：Google 約 4 則說價格低、算附近比較便宜的、物有所值。和 4travel（R162）一致 | Google 地圖評論（旭川東洋飯店）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
+| R418 | 旭川Toyo Hotel｜一樓就有 Seicomart：Google 約 6 則說飯店一樓或旁邊就有 Seicomart 便利商店、很方便。和 4travel（R163）一致 | Google 地圖評論（旭川東洋飯店）；4travel | 2026-11-16 | 兩個平台、約 18 則；可用 |
