@@ -47,6 +47,14 @@
 
 | 編號 | 主張 | 來源 | 查閱日期 | 怎麼用（只能用寫可用的部分） |
 |---|---|---|---|---|
+| R233 | 天然溫泉Premier Hotel-CABIN-旭川｜早餐種類多：Google 約 12 則稱讚自助早餐種類多、好吃，連住也吃不膩。和 4travel（R14）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 23 則；可用 |
+| R234 | 天然溫泉Premier Hotel-CABIN-旭川｜自己做海鮮丼：Google 約 3 則提到早餐可以自己盛海鮮丼（鮭魚、鮪魚、蝦、扇貝等）。和 4travel（R14）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、3 則以上；可用 |
+| R235 | 天然溫泉Premier Hotel-CABIN-旭川｜早餐的在地菜：Google 約 2 則提到有北海道在地菜，而且會定期換（湯咖哩、釧路的菜）。和 4travel（R14 的湯咖哩等在地菜）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、3 則以上；可用 |
+| R242 | 天然溫泉Premier Hotel-CABIN-旭川｜館內服：Google 約 1 則說可以穿館內服去大浴場和早餐會場。和 4travel（R20）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 4 則；可用 |
+| R251 | Hotel WBF Grande旭川｜早餐：評價兩極。Google 約 6 則說自助早餐種類多、好吃（海鮮丼、現烤麵包、在地點心）；約 4 則說普通、沒什麼特別、種類不算多。和 4travel（R23 兩極）一致 | Google 地圖評論（Hotel WBF Grande Asahikawa）；4travel | 2026-11-16 | 兩個平台、好約 13 則、普通或負面約 9 則；可用（寫成評價兩極） |
+| R265 | 露櫻Grand旭川站前｜早餐：Google 約 7 則稱讚早餐種類多、比一般露櫻豐富，多到一個托盤裝不下。和 4travel（R93）一致 | Google 地圖評論（Hotel Route-Inn Grand Asahikawa Ekimae）；4travel | 2026-11-16 | 兩個平台、約 18 則；可用 |
+| R277 | Super Hotel旭川｜免費早餐好：Google 約 4 則說早餐不錯、自助種類多；約 1 則說現在早餐也有白飯（以前只有麵包）。和 4travel（R59）一致 | Google 地圖評論（Super Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 12 則；可用（「加了白飯」只有 1 則，不寫） |
+| R288 | HOTEL AMANEK旭川｜早餐：Google 約 3 則說早餐豐盛好吃（約 1 則說不像照片那麼精緻但不錯）。和 4travel（R78 正面）一致 | Google 地圖評論（Amanek Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 14 則；可用。「沒有鮭魚卵、生魚片不好吃」Google 一年內只有 1 則，加上 4travel「鮭魚卵限量」，合計不確定有沒有到 3 則，不可用 |
 | R188 | Dormy Inn旭川｜早餐：Trip.com 正面約 9 則（有人提到生魚片丼飯）、覺得普通約 1 則；Google 正面約 2 則。4travel（R181）另有人遇到分批入場；Trip.com 的評論摘要也提到少數人說早餐要等 | 同上 | 2026-11-16 | 正面三個平台可用；「要等」只有 4travel 與 Trip.com 摘要，兩個平台 |
 | R205 | OMO7旭川｜早餐：Trip.com 正面約 6 則（好吃，常提到鬆餅配煙燻鮭魚、麵包）、負面約 3 則（款式少、普通、辣根海鮮飯和照片不一樣）；Google 正面約 1 則、負面約 1 則（選擇不多）。和 4travel（R130）一致 | 同上 | 2026-11-16 | 三個平台；可用（好評比較多，也有人覺得選擇少） |
 | R220 | JR Inn旭川｜早餐：Trip.com 約 3 則覺得普通或還可以（一則說款式和味道都一般），約 1 則說早上 6 點半就開、適合吃完去趕早班巴士；Google 約 1 則說內容充實。和 4travel（R169）一致 | 同上 | 2026-11-16 | 三個平台；可用（評價普通，不寫成好評） |

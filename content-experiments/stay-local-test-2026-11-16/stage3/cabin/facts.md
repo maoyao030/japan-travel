@@ -36,7 +36,21 @@
 
 ## 住客評論歸納
 
-
+Google 地圖（登入後）：總評 3.8／5、2,597 則；地點「Premier Hotel Cabin Asahikawa」，地址 7 Chome 1 Jodori（旭川市1条通7丁目），和 F523 一致。照「最新」讀約 42 則（其中有文字約 34 則；2026-10～2026-11，全部在一個月內），照「評分最低」讀一年內約 12 則（2025-12～2026-10；顯示「1 年前」以上的不算）。用過的主題標籤：沒有點（標籤是溫泉 440、大浴場 179、風呂 160、地下 127、海鮮丼 23 等，「最新」的 40 則已經涵蓋這些主題）。
 4travel（2026-11-12 讀）的說法，Google 也有提到的才放在這裡。
 
-（這一間沒有過門檻的住客評論，不寫住客的說法。）
+| 編號 | 主張 | 來源 | 查閱日期 | 怎麼用（只能用寫可用的部分） |
+|---|---|---|---|---|
+| R230 | 天然溫泉Premier Hotel-CABIN-旭川｜位置與交通：Google 約 7 則稱讚離車站近（走約 5 分）、對面就是購物公園與永旺、晚上喝完酒也能走回來，附近超商與餐廳多；沒有負評。和 4travel（R12）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 22 則；可用 |
+| R231 | 天然溫泉Premier Hotel-CABIN-旭川｜溫泉與三溫暖：Google 約 13 則稱讚地下的天然溫泉（紅褐色的水）和三溫暖，泡得舒服、晚上也能去泡。和 4travel（R13 正面）、第 2 階段 Google（R228）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 31 則；可用 |
+| R232 | 天然溫泉Premier Hotel-CABIN-旭川｜浴場不大、尖峰時段擠：Google 約 2 則（都是女湯）說浴場不大、洗身台不多，某些時段要排隊，建議避開尖峰。和 4travel（R13 負面）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 9 則；可用 |
+| R233 | 天然溫泉Premier Hotel-CABIN-旭川｜早餐種類多：Google 約 12 則稱讚自助早餐種類多、好吃，連住也吃不膩。和 4travel（R14）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 23 則；可用 |
+| R234 | 天然溫泉Premier Hotel-CABIN-旭川｜自己做海鮮丼：Google 約 3 則提到早餐可以自己盛海鮮丼（鮭魚、鮪魚、蝦、扇貝等）。和 4travel（R14）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、3 則以上；可用 |
+| R235 | 天然溫泉Premier Hotel-CABIN-旭川｜早餐的在地菜：Google 約 2 則提到有北海道在地菜，而且會定期換（湯咖哩、釧路的菜）。和 4travel（R14 的湯咖哩等在地菜）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、3 則以上；可用 |
+| R236 | 天然溫泉Premier Hotel-CABIN-旭川｜房間大小：評價兩極。Google 約 4 則說房間小（單人房、半雙人房、加床的三人房），但一個人睡覺夠用；約 3 則說房間寬或床很大。和 4travel（R15 兩極）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、小約 7 則、寬約 7 則；可用（寫成評價兩極） |
+| R237 | 天然溫泉Premier Hotel-CABIN-旭川｜清潔：評價兩極。Google 約 4 則說房間乾淨；約 4 則說打掃不徹底（床頭板積灰、像沒打掃過、被蟲咬、排水口有味道）。和 4travel（R16 兩極）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、好約 7 則、壞約 7 則；可用（寫成評價兩極） |
+| R238 | 天然溫泉Premier Hotel-CABIN-旭川｜建築與房間舊：Google 約 5 則說房間、浴室或溫泉設施舊。和 4travel（R17 負面）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 13 則；可用 |
+| R239 | 天然溫泉Premier Hotel-CABIN-旭川｜喜歡舊家具的復古感：Google 約 1 則覺得有點舊的家具反而有味道。和 4travel（R17 的兩則）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 3 則；可用 |
+| R240 | 天然溫泉Premier Hotel-CABIN-旭川｜員工親切：Google 約 4 則說櫃台與員工親切（包括停車場的保全）。和 4travel（R18 正面）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 7 則；可用 |
+| R241 | 天然溫泉Premier Hotel-CABIN-旭川｜停車場會滿：Google 約 1 則（一年內）說飯店的室內停車場滿了就要停對面的投幣停車場。和 4travel（R19「下午 3 點左右就滿、被帶到合作停車場」）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 6 則；可用 |
+| R242 | 天然溫泉Premier Hotel-CABIN-旭川｜館內服：Google 約 1 則說可以穿館內服去大浴場和早餐會場。和 4travel（R20）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 4 則；可用 |

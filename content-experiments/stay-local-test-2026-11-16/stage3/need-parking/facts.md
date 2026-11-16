@@ -46,6 +46,14 @@
 
 | 編號 | 主張 | 來源 | 查閱日期 | 怎麼用（只能用寫可用的部分） |
 |---|---|---|---|---|
+| R240 | 天然溫泉Premier Hotel-CABIN-旭川｜員工親切：Google 約 4 則說櫃台與員工親切（包括停車場的保全）。和 4travel（R18 正面）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 7 則；可用 |
+| R241 | 天然溫泉Premier Hotel-CABIN-旭川｜停車場會滿：Google 約 1 則（一年內）說飯店的室內停車場滿了就要停對面的投幣停車場。和 4travel（R19「下午 3 點左右就滿、被帶到合作停車場」）一致 | Google 地圖評論（Premier Hotel Cabin Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 6 則；可用 |
+| R250 | Hotel WBF Grande旭川｜外面的人也來泡、晚上人多：Google 約 2 則說大浴場和一日溫泉的客人共用、晚上去泡的人多（連停車位都可能不夠）；約 1 則反而說人不多。和 4travel（R22 的 1 則）、Trip.com（R227 的 1 則）一致 | Google 地圖評論（Hotel WBF Grande Asahikawa）；4travel；Trip.com | 2026-11-16 | 三個平台、約 4 則；可用（寫「有住客反應」，不寫成常態） |
+| R258 | Hotel WBF Grande旭川｜停車場就在旁邊：Google 約 3 則說飯店旁邊或後面就有平面停車場、方便。和 4travel（R29 正面）一致 | Google 地圖評論（Hotel WBF Grande Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 7 則；可用 |
+| R259 | Hotel WBF Grande旭川｜停車場會滿、先到先停：Google 約 3 則說不能保留車位、先到先停，晚上或到達時停車場快滿要等。和 4travel（R29 負面「不能預約」）一致 | Google 地圖評論（Hotel WBF Grande Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 4 則；可用 |
+| R268 | 露櫻Grand旭川站前｜立體停車場方便：Google 約 3 則說飯店旁就有立體停車場，開車來也方便，照停車場員工指示停。和 4travel（R96）一致 | Google 地圖評論（Hotel Route-Inn Grand Asahikawa Ekimae）；4travel | 2026-11-16 | 兩個平台、約 6 則；可用 |
+| R281 | Super Hotel旭川｜停車方便：Google 約 1 則說停車場方便、費用比附近便宜一點。和 4travel（R63 正面）一致 | Google 地圖評論（Super Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 4 則；可用。負面「停車場不在旁邊、不好找／車位少要停別處」Google 1 則加 4travel 1 則，不可用 |
+| R293 | HOTEL AMANEK旭川｜沒有自家停車場、停隔壁付費停車場：Google 約 4 則說沒有專用停車場、要停隔壁付費停車場（可以自由進出、從停車場到大廳方便）。和 4travel（R83）一致；4travel 那則「中間有六階樓梯」Google 沒有人提到 | Google 地圖評論（Amanek Hotel Asahikawa）；4travel | 2026-11-16 | 兩個平台、約 7 則；可用 |
 | R190 | Dormy Inn旭川｜停車：Trip.com 約 7 則說停車場就在飯店旁邊、方便、車位多；Google 約 3 則（一則說是自己的平面停車場，不像很多 Dormy Inn 是機械式停車塔；一則說連假晚上不要太晚回來都還有位子）；負面 0。4travel（R184）另有人說入口窄、冬天戶外車位要自己除雪 | 同上 | 2026-11-16 | 正面三個平台可用；入口窄、要除雪只有 4travel 一個平台，不可用 |
 | R207 | OMO7旭川｜停車：Trip.com 約 4 則（車位少、下午 4 點左右就滿了、要停附近其他停車場、同一天進出不方便）；Google 約 2 則（傍晚以後就滿、每次進出都要再付一次） | 同上 | 2026-11-16 | 兩個平台、約 6 則；可用 |
 | R221 | JR Inn旭川｜停車：Trip.com 約 2 則、Google 約 1 則說停在永旺的停車場、一晚 800 日圓，住宿期間可以自由進出（Google 那則說櫃台會給一張中途出場用的券）；4travel（R173）說停車場就連著飯店，也有人說傍晚飯店入口附近常滿 | 同上 | 2026-11-16 | 可以自由進出：兩個平台、3 則，可用，只能寫成住客的說法；傍晚常滿：只有 4travel，不可用 |
