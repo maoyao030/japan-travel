@@ -2136,3 +2136,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 阻礙：上面兩件要 Darren 決定。自動寫作仍暫停。
 - 唯一下一步：Darren 決定這個流程用哪個模型。
 - 測試與 Git：只改規則文件；範本登記檔檢查與測試通過；分支 `claude/sharp-fermat-2nj3mz` 已 push，沒有併進 `main`。
+
+## 2026-11-16｜Claude Code｜住宿頁流程的模型與本機階段測試
+
+- 已決定（Darren）：住宿頁流程照樣本，Sonnet 5.5 寫、Opus 5.5 查核與編輯；先在本機做階段測試。
+- 已完成：模型寫進 `stay-page.md`、`AGENTS.md`、`RULES_OVERVIEW.md`；新增 `content-automation/stay-page-local-test.md`（四個階段：一間飯店 → 三段 → 整篇 → 收尾，每階段停下來給 Darren 看）。
+- 尚未完成：本機測試還沒開始；分支 `claude/sharp-fermat-2nj3mz` 還沒併進 `main`，本機要先取得這個分支。
+- 唯一下一步：Darren 在本機對話說「住宿頁階段測試」。
+- 測試與 Git：只改規則文件，240 項測試通過；已 push。
