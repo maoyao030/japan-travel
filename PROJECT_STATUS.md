@@ -2063,5 +2063,5 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
   - `asahikawa-stay` 第 19 行正文有一條官方連結（旭川觀光物產情報中心），格式檢查仍會擋。這是已上線文章的文字，沒有動；下次改這篇時把連結移到延伸資料。
   - 驗收 Skill「前 30 篇試點每週抽查 2～3 篇」：現在抽查怎麼做沒有新決定，留著等 Darren 決定。
   - `check-copy.mjs` 與它的測試保留（現行流程不用，但不妨礙）。
-- **測試**：`npm test` 234 個通過；`audit_answer_first.py --self-test` 通過。分支 `claude/project-skill-conflicts-63bb10` 已 push，還沒合併回 `main`。
-- **唯一下一步**：Darren 決定這個分支要不要合併回 `main`；合併後 `auto/wakkanai-writing` 下次合併 `origin/main` 時就會拿到新規則。
+- **測試**：`npm test` 234 個通過；`audit_answer_first.py --self-test` 通過。分支 `claude/project-skill-conflicts-63bb10` 已 push；Darren 2026-11-16 同意後已合併推到 `main`（合併前 `origin/main` 沒有新 commit）。
+- **唯一下一步**：看自動寫作下一輪的執行紀錄，確認 `auto/wakkanai-writing` 合併 `origin/main` 後照新規則跑（住宿表有「連結」欄且格式檢查通過）。
