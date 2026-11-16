@@ -2076,5 +2076,5 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
   - 寫作 `SKILL.md` 的交接步驟與完成條件、寫作指南「三步」補上 `check-benchmark.mjs`（原本只寫在第12條與 `local-writer.md`）。
   - 驗收 `SKILL.md` 的四層表還寫「H 樹與 FAQ」，已改。
 - **沒有動、要 Darren 決定**：`lavender-season`（驗收通過、還沒上傳）的 `reader-preview.md` 第 21 行有一行「〔圖片〕富田農場的彩色花田…」。照現在的格式檢查，定稿時會被擋下來，不會帶著這行上線；但要有人把這行拿掉並重跑驗收的雜湊，文章才傳得上去。這是自動寫作的成果，沒有擅自改。
-- **測試**：`npm test` 234 個通過；`audit_answer_first.py --self-test` 通過。
+- **測試**：`npm test` 234 個通過；`audit_answer_first.py --self-test` 通過。Darren 2026-11-16 同意後已合併推到 `main`（合併前 `origin/main` 沒有新 commit）。
 - **唯一下一步**：Darren 決定 `lavender-season` 那一行要不要由人工 session 拿掉後上傳。
