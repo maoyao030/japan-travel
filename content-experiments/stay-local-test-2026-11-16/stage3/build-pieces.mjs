@@ -40,10 +40,17 @@ const readHeader = (file) => {
   return read(file).split('\n').filter((l) => /^Google 地圖|^Trip\.com|^4travel/.test(l))
 }
 
+// 雲端說明裡已經過時的句子（當時只讀了 4travel、沒確認上架），換成這次確認過的
+const HEADER_FIX = [
+  ['官網沒有線上訂房，只有電話與聯絡表單；Trip.com、Agoda 有沒有上架沒有確認，訂房連結那一行只寫官網。住客評論提到的休息室免費飲料與早餐鮭魚卵官網沒寫，不要寫。',
+    '官網沒有線上訂房，只有電話與聯絡表單；Trip.com、Agoda 都有上架（2026-11-16 確認），訂房連結那一行照任務寫。休息室的免費飲料現在有兩個平台的住客提到（R261），可以寫成住客的說法；早餐的鮭魚卵仍然不要寫。'],
+]
 const v3Header = (id) => {
   const text = read(path.join(v3, id, 'facts.md'))
   const m = text.match(/## 用這份事實表前要知道\n([\s\S]*?)\n## /)
-  return m ? m[1].trim() : ''
+  let h = m ? m[1].trim() : ''
+  for (const [a, b] of HEADER_FIX) h = h.replace(a, b)
+  return h
 }
 
 // 雲端事實表裡「官網」的部分（不含住客評論那幾節）
