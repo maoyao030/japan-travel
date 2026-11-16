@@ -1,0 +1,3439 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>旭川住宿推薦，站前與市中心怎麼選，停車、溫泉與早餐比較</title><style>:root {
+  color-scheme: light;
+  /* Keep this value so browsers abandon the CSS URL cached during the 2026-08-30 redirect incident. */
+  --asset-revision: "2026-08-30-css-redirect-fix";
+  /* 2026-10-21 改成「車站站牌」配色：淺灰底、白卡片、站牌綠。 */
+  --ink: #1a1f2b;
+  --muted: #5b6170;
+  --paper: #f5f6f8;
+  --surface: #ffffff;
+  --forest: #0b6e4f;
+  --forest-light: #e5f2ec;
+  --clay: #a4532d; /* 2026-09-30 由 #c86f46 加深，小字對淺底對比達 4.5 以上 */
+  --line: #e1e4e9;
+  --shadow: 0 6px 24px rgb(26 31 43 / 6%);
+  --radius: 1.25rem;
+  /* 字體只在這裡設定：2026-09-30 Darren 決定改用裝置內建中文字體，不再下載網頁字型（手機效能考量）。
+     iPhone／Mac 用蘋方，Android 內建的思源黑體（Noto Sans CJK），Windows 用微軟正黑體。 */
+  --font-sans: "PingFang TC", "Noto Sans CJK TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-heading: var(--font-sans);
+  font-family: var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+}
+
+.shell {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 20;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--ink);
+  color: white;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-header {
+  border-bottom: 1px solid rgb(23 33 28 / 10%);
+  background: rgb(244 241 232 / 90%);
+  backdrop-filter: blur(12px);
+}
+
+.header-inner {
+  display: flex;
+  min-height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.brand small {
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--clay);
+  border-radius: 99px;
+  color: var(--clay);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brand-mark {
+  width: 1rem;
+  height: 1.35rem;
+  border-radius: 0.15rem;
+  background: linear-gradient(135deg, var(--forest) 0 48%, var(--clay) 48% 100%);
+  transform: skewY(-8deg);
+}
+
+.desktop-nav {
+  display: flex;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.desktop-nav a,
+.mobile-nav a {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus-visible,
+.mobile-nav a:hover,
+.mobile-nav a:focus-visible {
+  color: var(--forest);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--ink);
+  background: var(--surface);
+  backdrop-filter: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  min-height: 7.25rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.masthead-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.brand {
+  justify-self: center;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  line-height: 1;
+}
+
+.masthead-actions {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+
+.site-nav-row {
+  border-top: 3px solid var(--ink);
+}
+
+.desktop-nav {
+  min-height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 4vw, 3.25rem);
+}
+
+.desktop-nav a {
+  color: var(--ink);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4.5rem, 10vw, 8.5rem) 0 clamp(4rem, 8vw, 7rem);
+}
+
+.hero::before,
+.hero::after {
+  position: absolute;
+  z-index: -1;
+  border-radius: 999px;
+  content: "";
+}
+
+.hero::before {
+  top: -12rem;
+  right: -8rem;
+  width: 32rem;
+  height: 32rem;
+  border: 4rem solid rgb(30 77 58 / 8%);
+}
+
+.hero::after {
+  bottom: -10rem;
+  left: -5rem;
+  width: 19rem;
+  height: 19rem;
+  background: rgb(200 111 70 / 8%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
+  align-items: end;
+  gap: clamp(2.5rem, 7vw, 7rem);
+}
+
+.hero h1 {
+  max-width: 13ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 8vw, 6.6rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1.06;
+}
+
+.hero h1 span {
+  color: var(--forest);
+}
+
+.hero-copy {
+  padding-bottom: 0.7rem;
+}
+
+.hero-copy > p {
+  margin-top: 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.primary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.2rem;
+  border-radius: 0.65rem;
+  background: var(--forest);
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.primary-link::after {
+  content: "→";
+}
+
+.proof-strip {
+  border-block: 1px solid var(--line);
+  background: rgb(255 253 248 / 55%);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 1.2rem 0;
+  list-style: none;
+}
+
+.proof-grid li {
+  padding: 0.35rem 1.5rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.proof-grid li + li {
+  border-left: 1px solid var(--line);
+}
+
+.proof-grid strong {
+  display: block;
+  color: var(--ink);
+}
+
+.section {
+  padding: clamp(4.5rem, 9vw, 8rem) 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.25rem;
+}
+
+.section-heading h2 {
+  max-width: 14ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}
+
+.section-heading > p {
+  max-width: 31rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1rem;
+}
+
+.topic-card {
+  position: relative;
+  min-height: 20rem;
+  overflow: hidden;
+  padding: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.topic-card:hover,
+.topic-card:focus-visible {
+  box-shadow: 0 22px 60px rgb(22 38 29 / 14%);
+  transform: translateY(-4px);
+}
+
+.topic-card--inactive:hover {
+  box-shadow: var(--shadow);
+  transform: none;
+}
+
+.coming-soon {
+  float: right;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.topic-card::after {
+  position: absolute;
+  right: -3rem;
+  bottom: -3.5rem;
+  width: 10rem;
+  height: 10rem;
+  border: 1.5rem solid var(--forest-light);
+  border-radius: 50%;
+  content: "";
+}
+
+.topic-card:nth-child(2)::after {
+  border-radius: 0.5rem;
+  transform: rotate(20deg);
+}
+
+.topic-card:nth-child(3)::after {
+  border-color: rgb(200 111 70 / 18%);
+  transform: skew(-12deg);
+}
+
+.topic-number {
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.topic-card h3 {
+  margin: 4.5rem 0 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+}
+
+.topic-card p {
+  position: relative;
+  z-index: 1;
+  max-width: 21ch;
+  margin: 0;
+  color: var(--muted);
+}
+
+.home-intro {
+  padding: clamp(3.5rem, 7vw, 6rem) 0 clamp(2.75rem, 6vw, 4.5rem);
+  text-align: center;
+}
+
+.home-intro-inner {
+  max-width: 54rem;
+}
+
+.home-intro h1 {
+  max-width: 16ch;
+  margin: 0 auto;
+  font-family: var(--font-heading);
+  font-size: clamp(2.7rem, 6vw, 4.8rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.14;
+}
+
+.home-intro h1 span {
+  display: inline-block;
+}
+
+.home-intro p:last-child {
+  max-width: 48rem;
+  margin: 1.5rem auto 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.8vw, 1.13rem);
+}
+
+.home-feature {
+  padding-bottom: clamp(4.5rem, 8vw, 7rem);
+}
+
+.home-section-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.home-section-bar p {
+  margin: 0;
+}
+
+.home-section-bar a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.home-section-bar a:hover,
+.home-section-bar a:focus-visible {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(18rem, 0.7fr);
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.lead-story-media,
+.story-card-media {
+  display: block;
+  overflow: hidden;
+  background: var(--forest-light);
+}
+
+.lead-story-media img,
+.story-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.lead-story-media:hover img,
+.lead-story-media:focus-visible img,
+.story-card-media:hover img,
+.story-card-media:focus-visible img {
+  transform: scale(1.015);
+}
+
+.lead-story-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.story-kicker {
+  margin: 0 0 0.9rem;
+  color: var(--clay);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.lead-story-copy h2,
+.story-card h3 {
+  font-family: var(--font-heading);
+  line-height: 1.32;
+}
+
+.lead-story-copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  letter-spacing: -0.035em;
+}
+
+.lead-story-copy h2 a,
+.story-card h3 a {
+  text-decoration: none;
+}
+
+.lead-story-copy h2 a:hover,
+.lead-story-copy h2 a:focus-visible,
+.story-card h3 a:hover,
+.story-card h3 a:focus-visible {
+  color: var(--forest);
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.16em;
+}
+
+.lead-story-copy > p:not(.story-kicker) {
+  margin: 1.25rem 0 1.5rem;
+  color: var(--muted);
+}
+
+.text-link {
+  align-self: flex-start;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid currentcolor;
+  color: var(--forest);
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.text-link::after {
+  margin-left: 0.5rem;
+  content: "→";
+}
+
+.home-section {
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+
+.home-section-header,
+.home-guide-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.72fr);
+  align-items: end;
+  gap: clamp(2rem, 7vw, 7rem);
+  margin-bottom: 2.25rem;
+}
+
+.home-section-header h2,
+.home-guide-heading h2 {
+  max-width: 15ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.22;
+}
+
+.home-section-header > p,
+.home-guide-heading > p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.story-card {
+  padding-top: 1rem;
+  border-top: 2px solid var(--ink);
+}
+
+.story-card-media {
+  margin-bottom: 1.25rem;
+}
+
+.story-card h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+}
+
+.story-card > p:last-child {
+  display: -webkit-box;
+  margin: 0.9rem 0 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.9rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.home-categories {
+  border-block: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.home-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  border-bottom: 1px solid var(--line);
+}
+
+.home-category-item {
+  display: flex;
+  min-height: 15rem;
+  flex-direction: column;
+  padding: 1.35rem;
+  border-top: 2px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.home-category-item + .home-category-item {
+  border-left: 1px solid var(--line);
+}
+
+.home-category-item > span {
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.home-category-item h3 {
+  margin: 2.6rem 0 0.65rem;
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  line-height: 1.3;
+}
+
+.home-category-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.75;
+}
+
+.home-category-item b {
+  margin-top: auto;
+  color: var(--forest);
+  font-size: 1.1rem;
+}
+
+.home-category-item b::after {
+  content: "→";
+}
+
+.home-category-item:hover h3,
+.home-category-item:focus-visible h3 {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.home-guide {
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+
+.home-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin: 0;
+  padding: 0;
+  counter-reset: guide-step;
+  list-style: none;
+}
+
+.home-guide-grid li {
+  padding-top: 1rem;
+  border-top: 2px solid var(--ink);
+  counter-increment: guide-step;
+}
+
+.home-guide-grid li::before {
+  display: block;
+  margin-bottom: 2.25rem;
+  color: var(--clay);
+  content: "0" counter(guide-step);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.home-guide-grid h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+}
+
+.home-guide-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.home-guide-about {
+  max-width: 48rem;
+  margin: clamp(2rem, 4vw, 3rem) 0 0;
+  color: var(--muted);
+}
+
+.category-hero {
+  border-bottom: 1px solid var(--line);
+}
+
+.category-questions {
+  background: var(--surface);
+}
+
+.category-questions h2 {
+  max-width: 9ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}
+
+.category-questions .topic-checklist {
+  margin: 0;
+}
+
+.topic-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.topic-plan-card {
+  min-height: 12rem;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+}
+
+.topic-status {
+  float: right;
+  padding: 0.12rem 0.55rem;
+  border-radius: 99px;
+  background: var(--forest-light);
+  color: var(--forest);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.topic-status--priority {
+  background: var(--forest);
+  color: white;
+}
+
+.topic-status--candidate {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+}
+
+.topic-plan-card h2,
+.topic-plan-card h3 {
+  margin: 2.5rem 0 0.4rem;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+}
+
+.topic-plan-card--published {
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.topic-plan-card--published:hover,
+.topic-plan-card--published:focus-visible {
+  border-color: var(--forest);
+  transform: translateY(-2px);
+}
+
+.topic-plan-card--published:hover h2,
+.topic-plan-card--published:focus-visible h2,
+.topic-plan-card--published:hover h3,
+.topic-plan-card--published:focus-visible h3 {
+  color: var(--forest);
+}
+
+.topic-status--published {
+  border-color: var(--forest);
+  color: var(--forest);
+}
+
+.topic-plan-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.category-stats {
+  margin: 1.5rem 0 0;
+  color: var(--forest);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.category-hero-nav {
+  padding: 1.35rem 1.5rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.category-hero-nav .aside-title {
+  margin: 0 0 0.5rem;
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.category-hero-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.category-hero-nav ul ul {
+  padding-left: 0.9rem;
+}
+
+.category-hero-nav a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.category-hero-nav ul ul a {
+  padding: 0.45rem 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.category-hero-nav > ul > li:first-child > a {
+  border-top: 0;
+}
+
+.category-hero-nav a small {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.category-hero-nav a:hover span,
+.category-hero-nav a:focus-visible span {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.cluster-section {
+  border-top: 1px solid var(--line);
+}
+
+.cluster-section .section-heading h2 {
+  max-width: 18ch;
+}
+
+.cluster-group + .cluster-group {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: clamp(3rem, 6vw, 5rem);
+  border-top: 1px solid var(--line);
+}
+
+.cluster-group-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 0.42fr);
+  align-items: end;
+  gap: 1.5rem clamp(2rem, 6vw, 5rem);
+  margin-bottom: 2.25rem;
+}
+
+.cluster-group-header h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.cluster-group-header h3 a {
+  text-decoration: none;
+}
+
+.cluster-group-header h3 a:hover,
+.cluster-group-header h3 a:focus-visible {
+  color: var(--forest);
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.16em;
+}
+
+.cluster-group-header > div > p:not(.eyebrow) {
+  max-width: 40rem;
+  margin: 0.9rem 0 0;
+  color: var(--muted);
+}
+
+.cluster-group-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.cluster-group-meta p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.cluster-subheading {
+  margin: 0 0 0.85rem;
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.cluster-direct {
+  margin-bottom: 2.75rem;
+}
+
+.cluster-link-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 0 2.5rem;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.cluster-link-columns li {
+  border-bottom: 1px solid var(--line);
+}
+
+.cluster-link-columns a,
+.cluster-links a {
+  display: block;
+  padding: 0.7rem 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  text-decoration: none;
+}
+
+.cluster-link-columns a:hover,
+.cluster-link-columns a:focus-visible,
+.cluster-links a:hover,
+.cluster-links a:focus-visible {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.cluster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.cluster-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--paper);
+}
+
+.cluster-card h3,
+.cluster-card h4 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+.cluster-card h3 a,
+.cluster-card h4 a {
+  text-decoration: none;
+}
+
+.cluster-card h3 a:hover,
+.cluster-card h3 a:focus-visible,
+.cluster-card h4 a:hover,
+.cluster-card h4 a:focus-visible {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.cluster-count {
+  margin: 0.45rem 0 0;
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.cluster-desc {
+  display: -webkit-box;
+  margin: 0.8rem 0 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.cluster-links {
+  margin: 1.1rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.cluster-links li {
+  border-bottom: 1px solid var(--line);
+}
+
+.cluster-links a {
+  padding: 0.55rem 0;
+  font-size: 0.88rem;
+}
+
+.cluster-card-links > summary {
+  display: none;
+}
+
+.cluster-more {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid currentcolor;
+  color: var(--forest);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.cluster-more::after {
+  margin-left: 0.4rem;
+  content: "→";
+}
+
+.hub-children .cluster-card {
+  background: var(--surface);
+}
+
+.cluster-pending p {
+  max-width: 40rem;
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.category-latest {
+  border-top: 1px solid var(--line);
+}
+
+.story-kicker a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.story-kicker a:hover,
+.story-kicker a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.category-tags {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.category-tags .cluster-pending-copy {
+  max-width: 40rem;
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+}
+
+.category-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.category-tag-list a {
+  padding: 0.4rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: var(--paper);
+  color: var(--forest);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.category-tag-list a:hover,
+.category-tag-list a:focus-visible {
+  border-color: var(--forest);
+  background: var(--forest-light);
+}
+
+.category-siblings {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.category-siblings .home-category-grid {
+  border-bottom: 0;
+}
+
+.article-row-label {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid var(--forest);
+  border-radius: 99px;
+  color: var(--forest);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.article-cluster-nav {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.article-cluster-nav div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.article-cluster-nav a {
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--forest);
+  border-radius: 99px;
+  color: var(--forest);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-cluster-nav a:hover,
+.article-cluster-nav a:focus-visible {
+  background: var(--forest-light);
+}
+
+.decision-section {
+  background: var(--forest);
+  color: white;
+}
+
+.decision-section .eyebrow {
+  color: #efb08f;
+}
+
+.decision-section .section-heading > p {
+  color: rgb(255 255 255 / 70%);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0;
+  counter-reset: step;
+  list-style: none;
+}
+
+.steps li {
+  padding-top: 1.25rem;
+  border-top: 1px solid rgb(255 255 255 / 25%);
+  counter-increment: step;
+}
+
+.steps li::before {
+  display: block;
+  margin-bottom: 2rem;
+  color: #efb08f;
+  content: "0" counter(step);
+  font-weight: 800;
+}
+
+.steps h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.steps p {
+  margin: 0;
+  color: rgb(255 255 255 / 70%);
+}
+
+.site-footer {
+  padding: 3rem 0;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.footer-grid {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-title {
+  margin: 0;
+  font-weight: 900;
+}
+
+.footer-grid p:not(.footer-title) {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
+  font-size: 0.86rem;
+}
+
+.footer-links a,
+.footer-links button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible,
+.footer-links button:hover,
+.footer-links button:focus-visible {
+  color: var(--forest);
+}
+
+.analytics-consent {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  width: min(calc(100% - 2rem), 62rem);
+  margin-inline: auto;
+  padding: 1.25rem;
+  border: 1px solid var(--ink);
+  background: var(--surface);
+  box-shadow: 0 22px 70px rgb(22 38 29 / 22%);
+}
+
+.analytics-consent[hidden] {
+  display: none;
+}
+
+.analytics-consent .analytics-consent-title {
+  margin: 0 0 0.35rem;
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+}
+
+.analytics-consent p {
+  max-width: 52rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.analytics-consent a {
+  display: inline-block;
+  margin-top: 0.55rem;
+  color: var(--forest);
+  font-size: 0.84rem;
+  text-underline-offset: 0.2em;
+}
+
+.analytics-consent-actions {
+  display: flex;
+  align-items: end;
+  gap: 0.6rem;
+  padding-left: 1.25rem;
+}
+
+.analytics-consent-actions button {
+  min-height: 2.65rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--forest);
+  border-radius: 0.45rem;
+  background: transparent;
+  color: var(--forest);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.analytics-consent-actions .analytics-consent-accept {
+  background: var(--forest);
+  color: white;
+}
+
+.analytics-consent-actions button:hover,
+.analytics-consent-actions button:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 2px;
+}
+
+.policy-page {
+  padding: clamp(4rem, 9vw, 7rem) 0 clamp(5rem, 10vw, 8rem);
+}
+
+.policy-header,
+.policy-content {
+  max-width: 52rem;
+}
+
+.policy-header {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.policy-header h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+}
+
+.policy-header > p:last-child,
+.policy-content {
+  color: var(--muted);
+}
+
+.policy-content {
+  padding-top: 2.5rem;
+}
+
+.policy-content section {
+  margin-top: 3rem;
+}
+
+.policy-content h2 {
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.policy-content a {
+  color: var(--forest);
+  text-underline-offset: 0.2em;
+}
+
+.contact-page {
+  padding: clamp(4rem, 9vw, 7rem) 0 clamp(5rem, 10vw, 8rem);
+}
+
+.contact-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.62fr);
+  align-items: end;
+  gap: clamp(2rem, 7vw, 7rem);
+  padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-header .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: -1rem;
+}
+
+.contact-header h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 8vw, 5.8rem);
+  letter-spacing: -0.05em;
+  line-height: 1.06;
+}
+
+.contact-header > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+.contact-header a,
+.contact-guidance a,
+.contact-form a {
+  color: var(--forest);
+  text-underline-offset: 0.2em;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.42fr) minmax(0, 1fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  padding-top: clamp(3rem, 7vw, 5rem);
+}
+
+.contact-guidance {
+  align-self: start;
+  padding-top: 0.35rem;
+}
+
+.contact-guidance h2 {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.contact-guidance ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.contact-guidance li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-guidance > p {
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.contact-guidance .contact-attachment-note {
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--clay);
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.35rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.contact-field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-form label:not(.contact-consent) {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.contact-form label > span {
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.contact-form label small {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #aeb4b0;
+  border-radius: 0.35rem;
+  background: white;
+  color: var(--ink);
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 12rem;
+  resize: vertical;
+}
+
+.contact-form input:focus-visible,
+.contact-form select:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form button:focus-visible {
+  outline: 3px solid var(--clay);
+  outline-offset: 2px;
+}
+
+.field-help {
+  margin: -0.9rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-consent {
+  display: grid;
+  grid-template-columns: 1.15rem minmax(0, 1fr);
+  align-items: start;
+  gap: 0.7rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.contact-consent input {
+  width: 1.05rem;
+  min-height: 1.05rem;
+  margin-top: 0.25rem;
+  accent-color: var(--forest);
+}
+
+.contact-config-notice {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--clay);
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.contact-submit-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-submit-row button {
+  min-height: 3rem;
+  padding: 0.7rem 1.15rem;
+  border: 1px solid var(--forest);
+  border-radius: 0.4rem;
+  background: var(--forest);
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+}
+
+.contact-submit-row button:disabled {
+  border-color: var(--line);
+  background: var(--line);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.contact-form-status {
+  flex: 1;
+  min-width: 13rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.contact-form-status.is-success {
+  color: var(--forest);
+  font-weight: 800;
+}
+
+.contact-form-status.is-error {
+  color: #8f321f;
+  font-weight: 800;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  padding-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.breadcrumbs a,
+.breadcrumbs > span[aria-hidden] {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--forest);
+}
+
+.topic-hero {
+  padding: clamp(4rem, 9vw, 7rem) 0;
+}
+
+.topic-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(17rem, 0.42fr);
+  align-items: end;
+  gap: clamp(2.5rem, 8vw, 7rem);
+}
+
+.topic-hero-grid--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.topic-hero h1,
+.article-header h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+}
+
+.topic-intro,
+.article-lede {
+  max-width: 43rem;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+.prototype-alert {
+  padding: 1.4rem;
+  border-left: 4px solid var(--clay);
+  background: rgb(255 253 248 / 65%);
+}
+
+.prototype-alert p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.topic-content {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.topic-layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.38fr) minmax(0, 1fr);
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+.topic-checklist {
+  padding: 0;
+  counter-reset: topic-step;
+  list-style: none;
+}
+
+.topic-checklist li {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  counter-increment: topic-step;
+}
+
+.topic-checklist li::before {
+  color: var(--clay);
+  content: "0" counter(topic-step);
+  font-weight: 800;
+}
+
+.compact-heading {
+  margin-bottom: 1rem;
+}
+
+.hub-children {
+  margin-bottom: 3.5rem;
+}
+
+.hub-related-articles {
+  margin-top: 4rem;
+}
+
+.article-list {
+  border-top: 1px solid var(--line);
+}
+
+.article-row {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  gap: 1rem;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.article-row > span,
+.article-row small {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.article-row h2,
+.article-row h3,
+.article-row h4 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 3vw, 1.75rem);
+  line-height: 1.35;
+}
+
+.article-row p {
+  margin: 0.45rem 0;
+  color: var(--muted);
+}
+
+.article-row b {
+  align-self: center;
+  color: var(--clay);
+  font-size: 1.5rem;
+}
+
+.article-row:hover h3,
+.article-row:focus-visible h3,
+.article-row:hover h4,
+.article-row:focus-visible h4 {
+  color: var(--forest);
+}
+
+.tag-article-group + .tag-article-group {
+  margin-top: 3.5rem;
+}
+
+.tag-article-group > h3 {
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.tag-article-group > h3 a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+.article-page {
+  padding-bottom: clamp(5rem, 10vw, 9rem);
+}
+
+.article-header {
+  width: min(100% - 2rem, 43rem);
+  padding-top: clamp(3.5rem, 8vw, 6rem);
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.article-header h1 {
+  max-width: none;
+  font-size: clamp(2.5rem, 4.8vw, 3.6rem);
+  letter-spacing: -0.025em;
+  line-break: strict;
+  line-height: 1.16;
+  overflow-wrap: break-word;
+  text-wrap: wrap;
+  word-break: auto-phrase;
+}
+
+.article-header h1 > span {
+  display: block;
+}
+
+.article-header h1 .article-title-phrase {
+  display: inline-block;
+}
+
+.article-lede {
+  margin: 1.5rem 0 0;
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  line-height: 1.8;
+}
+
+.article-meta a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.article-meta a:hover,
+.article-meta a:focus-visible {
+  color: var(--forest);
+}
+
+.article-list-more {
+  margin: 1.5rem 0 0;
+}
+
+.category-articles + .category-articles {
+  margin-top: 3.5rem;
+}
+
+.home-topic-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
+  gap: 3rem clamp(2rem, 5vw, 5rem);
+}
+
+.home-topic-group .section-heading {
+  margin-bottom: 1rem;
+}
+
+.home-topic-group .section-heading h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+}
+
+.home-topic-group .article-row {
+  grid-template-columns: 1.6rem 1fr auto;
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+
+.home-topic-group .article-row h4 {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.home-topic-group .article-row p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0.3rem 0 0;
+  font-size: 0.88rem;
+}
+
+.home-topic-group .article-row b {
+  font-size: 1.1rem;
+}
+
+.home-topic-group .article-list-more {
+  margin-top: 1rem;
+  font-size: 0.92rem;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.article-cover {
+  margin-top: 0;
+  margin-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.article-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow);
+}
+
+.article-cover figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.35rem 1.5rem;
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.article-cover figcaption > span:first-child {
+  max-width: 70ch;
+}
+
+.article-cover figcaption a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+.reading-layout {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 43rem) 12rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.reading-aside {
+  position: sticky;
+  top: 2rem;
+  min-width: 0;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  align-self: start;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.aside-title {
+  font-weight: 800;
+}
+
+.reading-aside ul {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reading-aside a {
+  display: block;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  text-decoration: none;
+}
+
+.reading-aside a:hover {
+  border-color: var(--clay);
+  color: var(--forest);
+}
+
+.reading-toc-mobile {
+  display: none;
+}
+
+.article-body {
+  grid-column: 2;
+  min-width: 0;
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.9;
+}
+
+.quick-answer {
+  margin-bottom: 4rem;
+  padding: 1.6rem;
+  border-radius: 0.7rem;
+  background: var(--forest-light);
+}
+
+.quick-answer p:last-child {
+  margin-bottom: 0;
+  font-size: 1.18rem;
+  font-weight: 700;
+}
+
+.article-body section {
+  margin: 4rem 0;
+  scroll-margin-top: 2rem;
+}
+
+.section-index {
+  color: var(--clay);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.article-body h2 {
+  margin: 0.35rem 0 1.25rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.45rem);
+  line-height: 1.35;
+}
+
+.portable-content h2,
+.portable-content h3 {
+  scroll-margin-top: 2rem;
+}
+
+.portable-content h2 {
+  margin: 4.5rem 0 1.35rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+
+.portable-content h3 {
+  margin: 2.8rem 0 1rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  line-height: 1.4;
+}
+
+.portable-content ul,
+.portable-content ol {
+  padding-left: 1.5rem;
+}
+
+/* 延伸資料、資料來源裡的長網址（有些是純文字）在手機上要能斷行，否則會撐開整頁 */
+.portable-content li {
+  overflow-wrap: anywhere;
+}
+
+.portable-content li + li {
+  margin-top: 0.55rem;
+}
+
+.portable-content > p:first-child {
+  margin: 0 0 3.5rem;
+  padding: 1.35rem 1.5rem;
+  border-left: 4px solid var(--clay);
+  background: var(--surface);
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.85;
+}
+
+.portable-content a {
+  color: var(--forest);
+  text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
+}
+
+.portable-content blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.4rem;
+  border-left: 4px solid var(--clay);
+  background: rgb(255 253 248 / 65%);
+}
+
+.article-image {
+  margin: 1.75rem 0 2.25rem;
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.6rem;
+}
+
+.article-image figcaption {
+  display: grid;
+  gap: 0.2rem;
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.article-image-credit a {
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.article-embed {
+  margin: 1.75rem 0 2.25rem;
+}
+
+.article-embed-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  background: #111;
+}
+
+.article-embed-frame iframe,
+.article-embed-play {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.article-embed-play {
+  padding: 0;
+  background: #111;
+  cursor: pointer;
+}
+
+.article-embed-play img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.article-embed-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(20, 20, 20, 0.82);
+  transform: translate(-50%, -50%);
+}
+
+.article-embed-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  border-style: solid;
+  border-width: 11px 0 11px 18px;
+  border-color: transparent transparent transparent #fff;
+  transform: translate(-50%, -50%);
+}
+
+.article-embed-play:hover .article-embed-icon,
+.article-embed-play:focus-visible .article-embed-icon {
+  background: #c4302b;
+}
+
+.article-embed-card {
+  display: grid;
+  justify-items: start;
+  gap: 0.75rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  background: var(--surface);
+}
+
+.article-embed-card-title {
+  margin: 0;
+  font-weight: 700;
+}
+
+.article-embed-load {
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--surface);
+  font: inherit;
+  cursor: pointer;
+}
+
+.article-embed-card.is-loaded {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.article-embed-card iframe {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  height: 640px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.article-embed figcaption {
+  display: grid;
+  gap: 0.2rem;
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.article-embed-credit a {
+  color: inherit;
+}
+
+.article-table-scroll {
+  max-width: 100%;
+  margin: 1.75rem 0 2.25rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  background: var(--surface);
+  scrollbar-color: var(--clay) var(--forest-light);
+  scrollbar-width: thin;
+}
+
+.article-table-scroll:focus-visible {
+  outline: 3px solid var(--clay);
+  outline-offset: 2px;
+}
+
+.article-table-scroll table {
+  width: 100%;
+  min-width: 38rem;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.article-table-scroll th,
+.article-table-scroll td {
+  padding: 0.85rem 1rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-table-scroll th:last-child,
+.article-table-scroll td:last-child {
+  border-right: 0;
+}
+
+.article-table-scroll tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.article-table-scroll th {
+  background: var(--forest-light);
+  color: var(--forest);
+  font-weight: 800;
+}
+
+/* 表格裡的連結（官網、地圖）不要被拆成一字一行 */
+.article-table-scroll td a {
+  white-space: nowrap;
+}
+
+/* 手機上的表格：3 欄以下縮到螢幕寬；比較表一列變一張卡片（src/lib/portableText.ts 的 tableLayout） */
+@media (max-width: 640px) {
+  .article-table-scroll.article-table--narrow table {
+    min-width: 0;
+  }
+
+  .article-table-scroll.article-table--narrow th,
+  .article-table-scroll.article-table--narrow td {
+    padding: 0.7rem 0.75rem;
+  }
+
+  .article-table-scroll.article-table--cards {
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .article-table-scroll.article-table--cards table,
+  .article-table-scroll.article-table--cards tbody,
+  .article-table-scroll.article-table--cards tr,
+  .article-table-scroll.article-table--cards td {
+    display: block;
+    width: auto;
+    min-width: 0;
+  }
+
+  .article-table-scroll.article-table--cards thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .article-table-scroll.article-table--cards tr {
+    margin-bottom: 0.85rem;
+    padding: 0.9rem 1rem 0.7rem;
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    background: var(--surface);
+  }
+
+  .article-table-scroll.article-table--cards tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .article-table-scroll.article-table--cards td {
+    display: grid;
+    grid-template-columns: 6.2em 1fr;
+    gap: 0.75rem;
+    padding: 0.35rem 0;
+    border: 0;
+  }
+
+  .article-table-scroll.article-table--cards td::before {
+    content: attr(data-label);
+    color: var(--forest);
+    font-weight: 700;
+  }
+
+  .article-table-scroll.article-table--cards td:first-child {
+    display: block;
+    margin-bottom: 0.4rem;
+    padding: 0 0 0.6rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.05rem;
+    font-weight: 800;
+  }
+
+  .article-table-scroll.article-table--cards td:first-child::before {
+    content: none;
+  }
+}
+
+.article-tags {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.article-tags div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.article-tags a {
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--forest);
+  text-decoration: none;
+}
+
+.article-tags a:hover,
+.article-tags a:focus-visible {
+  border-color: var(--forest);
+  background: var(--forest-light);
+}
+
+.back-link {
+  color: var(--forest);
+  font-family: var(--font-sans);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.not-found {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4.5rem, 10vw, 8rem) 0;
+}
+
+.not-found::after {
+  position: absolute;
+  right: -7rem;
+  bottom: -12rem;
+  z-index: -1;
+  width: 27rem;
+  height: 27rem;
+  border: 3.5rem solid rgb(30 77 58 / 8%);
+  border-radius: 50%;
+  content: "";
+}
+
+.not-found-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.65fr);
+  align-items: center;
+  gap: clamp(3rem, 9vw, 8rem);
+}
+
+.not-found-copy h1 {
+  max-width: 8ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(3.2rem, 8vw, 6.5rem);
+  letter-spacing: -0.05em;
+  line-height: 1.08;
+}
+
+.not-found-copy h1 span {
+  white-space: nowrap;
+}
+
+.not-found-copy > p:not(.eyebrow) {
+  max-width: 34rem;
+  margin: 1.5rem 0 2rem;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+}
+
+.not-found-categories {
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.not-found-categories h2 {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  line-height: 1.3;
+}
+
+.not-found-categories ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.not-found-categories a {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.not-found-categories a span:last-child {
+  color: var(--clay);
+}
+
+.not-found-categories a:hover,
+.not-found-categories a:focus-visible {
+  color: var(--forest);
+}
+
+@media (max-width: 1200px) {
+  .reading-layout {
+    grid-template-columns: minmax(0, 43rem);
+  }
+
+  .article-body {
+    grid-column: auto;
+  }
+
+  .reading-aside--desktop {
+    display: none;
+  }
+
+  .reading-toc-mobile {
+    display: block;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--surface);
+  }
+
+  .reading-toc-mobile summary {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.15rem;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-weight: 800;
+    list-style: none;
+  }
+
+  .reading-toc-mobile summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .reading-toc-mobile summary::after {
+    color: var(--clay);
+    content: "+";
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .reading-toc-mobile[open] summary::after {
+    content: "−";
+  }
+
+  .reading-toc-mobile summary small {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .reading-toc-mobile ul {
+    display: grid;
+    margin: 0;
+    padding: 0 1.15rem 0.8rem;
+    border-top: 1px solid var(--line);
+    list-style: none;
+  }
+
+  .reading-toc-mobile li + li {
+    border-top: 1px solid var(--line);
+  }
+
+  .reading-toc-mobile a {
+    display: block;
+    padding: 0.75rem 0;
+    color: var(--forest);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    line-height: 1.55;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .masthead {
+    grid-template-columns: 1fr auto;
+    min-height: 4.75rem;
+    gap: 1rem;
+  }
+
+  .masthead-note,
+  .site-nav-row {
+    display: none;
+  }
+
+  .brand {
+    justify-self: start;
+    font-size: 1.55rem;
+    letter-spacing: 0.12em;
+  }
+
+  .masthead-actions {
+    justify-self: end;
+  }
+
+  .header-inner {
+    min-height: 4.5rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: relative;
+    display: block;
+  }
+
+  .mobile-menu summary {
+    padding: 0.45rem 0.7rem;
+    border: 1px solid var(--line);
+    border-radius: 0.55rem;
+    color: var(--forest);
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 800;
+    list-style: none;
+  }
+
+  .mobile-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: calc(100% + 0.65rem);
+    right: 0;
+    z-index: 10;
+    display: grid;
+    width: min(17rem, calc(100vw - 2rem));
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .mobile-nav a {
+    padding: 0.85rem 1rem;
+  }
+
+  .mobile-nav a + a {
+    border-top: 1px solid var(--line);
+  }
+
+  .home-intro {
+    padding: 3rem 0 2.75rem;
+    text-align: left;
+  }
+
+  .home-intro h1 {
+    max-width: 11ch;
+    margin-left: 0;
+    font-size: clamp(2.5rem, 13vw, 3.45rem);
+  }
+
+  .home-intro p:last-child {
+    margin-top: 1.25rem;
+  }
+
+  .home-feature {
+    padding-bottom: 4rem;
+  }
+
+  .home-section-bar {
+    letter-spacing: 0.06em;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+  }
+
+  .lead-story-copy {
+    padding: 1.6rem 0 0;
+    background: var(--paper);
+  }
+
+  .lead-story-copy h2 {
+    font-size: 2rem;
+  }
+
+  .home-section {
+    padding: 4rem 0;
+  }
+
+  .home-section-header,
+  .home-guide-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .story-grid,
+  .home-category-grid,
+  .home-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cluster-group-header,
+  .cluster-grid,
+  .cluster-link-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .cluster-group-header {
+    gap: 1.25rem;
+  }
+
+  .cluster-group-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .category-hero-nav {
+    padding: 1.1rem 1.15rem 1.25rem;
+    box-shadow: none;
+  }
+
+  .category-siblings .home-category-item {
+    min-height: auto;
+  }
+
+  .category-siblings .home-category-item h3 {
+    margin-top: 1.4rem;
+  }
+
+  .cluster-section,
+  .category-latest,
+  .category-tags,
+  .category-siblings {
+    padding: 3.25rem 0;
+  }
+
+  .cluster-group + .cluster-group {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .cluster-direct {
+    margin-bottom: 2rem;
+  }
+
+  .category-hero-nav ul ul {
+    display: none;
+  }
+
+  .cluster-card {
+    min-height: auto;
+    padding: 1.1rem 1.15rem;
+  }
+
+  .cluster-card-links {
+    margin-top: 0.9rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .cluster-card-links > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.7rem 0;
+    cursor: pointer;
+    font-size: 0.88rem;
+    font-weight: 800;
+    list-style: none;
+  }
+
+  .cluster-card-links > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .cluster-card-links > summary small {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .cluster-card-links > summary::after {
+    color: var(--clay);
+    content: "+";
+    font-size: 1.15rem;
+    line-height: 1;
+  }
+
+  .cluster-card-links[open] > summary::after {
+    content: "−";
+  }
+
+  .cluster-card-links .cluster-links,
+  .cluster-card-links .cluster-link-columns {
+    margin-top: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .cluster-direct .cluster-card-links {
+    margin-top: 0;
+  }
+
+  .cluster-card .cluster-desc,
+  .cluster-card .cluster-more {
+    display: none;
+  }
+
+  .cluster-card h3,
+  .cluster-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .cluster-card-links {
+    margin-top: 0.75rem;
+  }
+
+  .cluster-card-links > summary {
+    padding: 0.6rem 0 0.35rem;
+  }
+
+  .cluster-card-links .cluster-links {
+    padding-bottom: 0.35rem;
+  }
+
+  .category-latest .story-grid {
+    gap: 1.25rem;
+  }
+
+  .category-latest .story-card {
+    display: grid;
+    grid-template-columns: 7rem minmax(0, 1fr);
+    align-content: start;
+    gap: 0 1rem;
+    padding-top: 1rem;
+  }
+
+  .category-latest .story-card-media {
+    grid-row: 1 / 4;
+    margin-bottom: 0;
+  }
+
+  .category-latest .story-card-media img {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .category-latest .story-kicker {
+    margin-bottom: 0.35rem;
+  }
+
+  .category-latest .story-card h3 {
+    font-size: 1.1rem;
+    line-height: 1.35;
+  }
+
+  .category-latest .story-card > p:last-child {
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .category-siblings .home-category-grid {
+    border-top: 2px solid var(--ink);
+  }
+
+  .category-siblings .home-category-item {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.95rem 0;
+    border-top: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .category-siblings .home-category-item + .home-category-item {
+    border-left: 0;
+  }
+
+  .category-siblings .home-category-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .category-siblings .home-category-item p {
+    display: none;
+  }
+
+  .category-siblings .home-category-item b {
+    margin-left: auto;
+  }
+
+  .story-card + .story-card {
+    margin-top: 1rem;
+  }
+
+  .home-category-item {
+    display: grid;
+    grid-template-columns: 2rem minmax(0, 1fr) auto;
+    min-height: 0;
+    gap: 0.45rem 0.8rem;
+    padding: 1.25rem 0;
+  }
+
+  .home-category-item + .home-category-item {
+    border-left: 0;
+  }
+
+  .home-category-item > span {
+    grid-row: 1 / span 2;
+  }
+
+  .home-category-item h3 {
+    margin: 0;
+  }
+
+  .home-category-item p {
+    grid-column: 2;
+  }
+
+  .home-category-item b {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+    align-self: center;
+    margin-top: 0;
+  }
+
+  .home-guide {
+    padding: 4rem 0;
+  }
+
+  .home-guide-grid li + li {
+    margin-top: 1rem;
+  }
+
+  .hero-grid,
+  .topic-grid,
+  .steps,
+  .contact-header,
+  .contact-layout,
+  .contact-field-grid,
+  .topic-hero-grid,
+  .topic-layout,
+  .reading-layout,
+  .not-found-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-header .eyebrow {
+    grid-column: auto;
+    margin-bottom: -0.5rem;
+  }
+
+  .hero h1 {
+    max-width: 10ch;
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-grid li + li {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .section-heading,
+  .footer-grid {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .analytics-consent {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-consent-actions {
+    justify-content: stretch;
+    padding: 1rem 0 0;
+  }
+
+  .analytics-consent-actions button {
+    flex: 1;
+  }
+
+  .topic-card {
+    min-height: 15rem;
+  }
+
+  .topic-card h3 {
+    margin-top: 2.5rem;
+  }
+
+  .breadcrumbs {
+    gap: 0.4rem 0.5rem;
+    padding-top: 1rem;
+    font-size: 0.78rem;
+  }
+
+  .article-header {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .article-header h1 {
+    max-width: none;
+    font-size: clamp(2.1rem, 9vw, 2.5rem);
+    line-height: 1.18;
+  }
+
+  .article-lede {
+    margin-top: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .article-meta {
+    margin-top: 1.4rem;
+  }
+
+  .article-cover {
+    margin-bottom: 2.5rem;
+  }
+
+  .article-cover figcaption {
+    display: grid;
+  }
+
+  .reading-toc-mobile {
+    margin-bottom: 1rem;
+  }
+
+  .article-body {
+    font-size: 1.05rem;
+    line-height: 1.9;
+  }
+
+  .portable-content > p:first-child {
+    margin-bottom: 3rem;
+    padding: 1.1rem 1.15rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .portable-content h2 {
+    margin-top: 3.5rem;
+    padding-top: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .portable-content h3 {
+    margin-top: 2.35rem;
+    font-size: 1.35rem;
+  }
+
+  .article-table-scroll table {
+    min-width: 34rem;
+    font-size: 0.88rem;
+  }
+
+  .article-table-scroll th,
+  .article-table-scroll td {
+    padding: 0.75rem 0.8rem;
+  }
+}
+
+/* ===== 車站站牌風格：頁首、頁尾與首頁（2026-10-21 Darren 選定） =====
+   放在檔案最後，覆蓋前面沿用下來的頁首與頁尾樣式。 */
+
+.site-header {
+  border-bottom: 0;
+  background: var(--surface);
+}
+
+.masthead {
+  display: flex;
+  min-height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  justify-self: auto;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.brand-ring {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: none;
+  border: 4px solid var(--forest);
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.desktop-nav {
+  display: flex;
+  min-height: 0;
+  gap: 1.75rem;
+}
+
+.desktop-nav a {
+  padding: 0.35rem 0;
+  border-bottom: 2px solid transparent;
+  color: var(--ink);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus-visible {
+  border-color: var(--forest);
+  color: var(--ink);
+}
+
+.line-stripe {
+  height: 6px;
+  background: var(--forest);
+}
+
+.site-footer {
+  border-top: 6px solid var(--forest);
+  background: var(--surface);
+}
+
+.home-hero {
+  padding: clamp(2.5rem, 6vw, 4rem) 0 0;
+}
+
+.home-hero h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 4.2vw, 2.5rem);
+  line-height: 1.35;
+}
+
+.home-hero > p {
+  max-width: 42rem;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.home-block {
+  padding-top: clamp(2.5rem, 6vw, 3.5rem);
+}
+
+.home-block:last-child {
+  padding-bottom: clamp(3rem, 7vw, 4.5rem);
+}
+
+.line-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.1rem;
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+.line-heading::before {
+  width: 0.5rem;
+  height: 1.35rem;
+  flex: none;
+  border-radius: 2px;
+  background: var(--forest);
+  content: "";
+}
+
+.line-heading a {
+  text-decoration: none;
+}
+
+.line-heading a:hover,
+.line-heading a:focus-visible {
+  color: var(--forest);
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.5rem, 1fr));
+  gap: 1.25rem;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface);
+}
+
+.home-card-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.home-card-copy {
+  padding: 1rem 1.1rem 1.25rem;
+}
+
+.place-tag {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  border-radius: 0.3rem;
+  background: var(--forest-light);
+  color: var(--forest);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-card h3 {
+  margin: 0.55rem 0 0.45rem;
+  font-size: 1.06rem;
+  line-height: 1.5;
+}
+
+.home-card h3 a {
+  text-decoration: none;
+}
+
+.home-card h3 a:hover,
+.home-card h3 a:focus-visible {
+  color: var(--forest);
+}
+
+.home-card-copy > p {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.9rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.station-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.station-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  text-align: center;
+}
+
+.station-card-name {
+  display: block;
+  flex: 1;
+  padding: 1rem 1rem 0.85rem;
+  text-decoration: none;
+}
+
+.station-card-name span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+.station-card-name strong {
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  /* 字距會加在最後一個字後面，往右推回來才會置中 */
+  text-indent: 0.2em;
+}
+
+.station-card-name:hover strong,
+.station-card-name:focus-visible strong {
+  color: var(--forest);
+}
+
+.station-card-bar {
+  display: flex;
+  min-height: 2.2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.35rem 0.85rem;
+  background: var(--forest);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.station-card-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.station-card-bar a:hover,
+.station-card-bar a:focus-visible {
+  text-decoration: underline;
+}
+
+.station-card-foot {
+  padding: 0.65rem 1rem;
+  color: var(--forest);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.station-card-foot:hover,
+.station-card-foot:focus-visible {
+  text-decoration: underline;
+}
+
+/* 地點頁與地區頁的頁首：站名牌就是這頁的標題 */
+.place-hero {
+  padding-top: 1.25rem;
+}
+
+.station-sign {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.station-sign-label {
+  margin: 0;
+  padding: 1.4rem 1rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.station-sign-name {
+  margin: 0;
+  padding: 0.2rem 1rem 1.4rem;
+  font-size: clamp(2.5rem, 8vw, 3.75rem);
+  letter-spacing: 0.3em;
+  line-height: 1.25;
+  /* 字距會加在最後一個字後面，往右推回來才會置中 */
+  text-indent: 0.3em;
+}
+
+.station-sign-bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  min-height: 2.6rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--forest);
+  font-weight: 700;
+}
+
+.station-sign-bar span:first-child {
+  text-align: left;
+}
+
+.station-sign-bar span:last-child {
+  text-align: right;
+}
+
+.station-sign-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.station-sign-bar a:hover,
+.station-sign-bar a:focus-visible {
+  text-decoration: underline;
+}
+
+.place-intro {
+  max-width: 44rem;
+  margin: 1.5rem 0 0;
+  font-size: 1.05rem;
+}
+
+.place-intro + .place-intro {
+  margin-top: 0.75rem;
+}
+
+.place-note {
+  margin: -0.5rem 0 1rem;
+  color: var(--muted);
+}
+
+/* 內容很少的頁面，頁尾也要貼在畫面底部 */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.place-hero:last-child {
+  padding-bottom: clamp(3rem, 7vw, 4.5rem);
+}
+
+@media (max-width: 760px) {
+  .masthead {
+    min-height: 3.75rem;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu summary {
+    color: var(--ink);
+  }
+
+  .station-sign-bar {
+    gap: 0.5rem;
+    font-size: 0.92rem;
+  }
+}
+
+body{background:var(--paper)}.preview-frame{max-width:46rem;margin:0 auto;padding:1.25rem 1rem 4rem;box-sizing:border-box;width:100%}
+.article-body,.portable-content{min-width:0;max-width:100%}.portable-content>*{max-width:100%;box-sizing:border-box}.article-table-scroll{overflow-x:auto}.article-table-scroll td{overflow-wrap:anywhere}
+.preview-tag{display:inline-block;margin:0 0 .75rem;padding:.2rem .7rem;border-radius:999px;background:#1a1f2b;color:#fff;font:700 14px/1.6 system-ui,sans-serif}
+</style></head><body><div class="preview-frame"><span class="preview-tag">試寫，還沒上線</span><h1>旭川住宿推薦，站前與市中心怎麼選，停車、溫泉與早餐比較</h1><div class="article-body"><div class="portable-content"><p>旭川住宿大致分成三區：JR旭川站前、往北延伸的市中心，以及市區外圍的郊外。這一頁寫到的32間裡，有18間在站前。這一區的飯店，官網寫的步行時間都在5分鐘以內，往機場和動物園的巴士也都在站前搭。</p><p>挑飯店時，停車、泡湯和早餐最容易影響選擇。如果要開車，要先看停車，站前的停車場多半是先到的人先停，不能預約，有的還限制車高。想泡湯的話，站前有4間飯店有天然溫泉，市中心的Dormy Inn旭川頂樓也有。早餐則是有的飯店免費、有的要另外加購，這一頁會一間一間講。還沒決定旭川要排幾天，可以先看旭川自由行怎麼排。</p><h2 id="section-1">旭川住宿要選哪一區？</h2><p>第一次來旭川、不開車，選站前最省事。Court Hotel旭川走路2分鐘，Hotel WBF Grande旭川從東口出來也是2分鐘，天然溫泉Premier Hotel-CABIN-旭川和東橫INN旭川站東口是3分鐘，Super Hotel旭川、旭川Sun Hotel是5分鐘。JR Inn旭川和車站直接相連，櫃台在永旺夢樂城旭川站前的5樓，從北口進商場，左手邊就有飯店專用電梯。站前的巴士站有往旭川機場、旭山動物園的車，住這一區不用提著行李走太遠。</p><p>市中心是從車站往北走的那一帶。旭川的買物公園是從JR旭川站往北延伸約1公里的行人徒步區，沿路是百貨和餐廳，所以住在市中心，晚上要吃飯、逛街都很近。不過離車站就比較遠了：Hotel Crescent旭川走路約12分鐘，OMO7旭川約13到15分鐘，Art Hotel旭川和Dormy Inn旭川約15分鐘。好在機場巴士在這一區也有停：Art Hotel旭川門口的「7條昭和通」站就是往返機場的直行巴士站，Dormy Inn旭川的巴士站就在飯店正前方，OMO7旭川則是巴士的終點站。從機場搭到Dormy Inn旭川約40分鐘。</p><p>郊外適合想住日式旅館或溫泉住宿的人，扇松園、東花苑、Matsueda旅館是日式旅館，高砂溫泉、龍乃湯溫泉是附住宿的溫泉設施，另外Auberge Sondre也在這一區。Matsueda旅館要從旭川站搭石北本線到東旭川站，下車再走10分鐘。這幾間訂之前，先查好怎麼去。</p><h2 id="section-2">旭川飯店怎麼挑，依需求選</h2><p>這一節照開車、泡湯、早餐、三人以上同住四種需求，點名比較適合和要小心的飯店。每間的停車費、大浴場開放時間與早餐細節，寫在後面各飯店的段落，也可以對照比較表。</p><h3 id="section-3">開車去旭川，哪些飯店好停車？</h3><p>開車的話，露櫻Grand旭川站前和Dormy Inn旭川都有上百個自己的車位，比較省事；Art Hotel旭川和露櫻旭川站前一條通的停車常被住客抱怨，開車的人要看清楚再訂。</p><p><strong>停車比較省事的</strong></p><ul><li><strong>露櫻Grand旭川站前</strong>：飯店自己有立體停車場，一共176台，住客停一晚800日圓。車位是先到的人先停，飯店不能幫你保留。車位分普通車、中高車、高頂車三種，車比較高或比較大的話，訂房前先對照官網寫的尺寸限制。有住客說現場有人引導，冬天也不用自己清雪。</li><li><strong>Dormy Inn旭川</strong>：飯店有自己的平面停車場，一共114台，一晚1,000日圓，先到的人先停；大型車要先預約，而且另外收費。有住客覺得停車場就在旁邊，很好停，不過也有人提到入口比較窄，冬天停在戶外車位要自己除雪。</li><li><strong>Platon Hotel</strong>：停車免費，但是車位有限，訂房的時候要先跟飯店確認有沒有位子。</li></ul><p><strong>開車要小心的</strong></p><ul><li><strong>Art Hotel旭川</strong>：住客停一晚1,000日圓。有住客提到停車場不在飯店旁邊，而且車位少。</li><li><strong>露櫻旭川站前一條通</strong>：塔式立體停車場只有36台，一晚600日圓，先到的人先停。普通車的車高限制是1.55公尺，高頂車是2.1公尺，有住客反應車位常常滿了，車比較高的話很難停。也有住客提到，機車會被帶去對面的收費停車場。</li></ul><h3 id="section-4">想泡溫泉或大浴場，選哪幾間？</h3><p>想好好泡湯的話，住客評價最好的是Dormy Inn旭川和Hotel WBF Grande旭川，兩間都有天然溫泉。想泡熱水的話要先看清楚OMO7旭川，那裡以三溫暖和低溫浴池為主；一起住的是情侶或夫妻的話，Super Hotel旭川也要小心。</p><p><strong>天然溫泉評價好的</strong></p><ul><li><strong>Dormy Inn旭川</strong>：10樓的大浴場用的是地下1,200公尺抽上來的天然溫泉，男湯和女湯都有露天浴池、三溫暖和冷水池。住客評論裡，大浴場是最多人稱讚的地方，不少人說比一般商務旅館好。如果你身上有刺青，這間不能泡。</li><li><strong>Hotel WBF Grande旭川</strong>：2樓是天然溫泉，有露天浴池和三溫暖，溫泉從早上6點開到半夜12點，三溫暖早一個小時關。住客評論幾乎都在稱讚溫泉，說浴池的種類多。外面的客人也可以來泡，有一位住客說尖峰時段會比較擠。</li><li><strong>天然溫泉Premier Hotel-CABIN-旭川</strong>：大浴場的水是從飯店自己的溫泉井直接抽上來的，也有三溫暖。有住客覺得浴池不大，外面來泡湯的客人和運動團體多的時候會擠，也有住客建議挑深夜或早餐後去，那時外面的客人還不能進來。</li></ul><p><strong>要先想清楚再訂的</strong></p><ul><li><strong>OMO7旭川</strong>：這裡以三溫暖為主，有兩種三溫暖、冷水池和泡泡浴，還有可以在池子裡走路的低溫浴池。住客的評價好壞都有，喜歡的人說三溫暖種類多，不滿意的人覺得水溫不夠熱，也提到這裡沒有一般的大浴池。喜歡三溫暖的人住這裡會滿意，只想泡熱水的話，記得低溫浴池只有32～33℃。</li><li><strong>Super Hotel旭川</strong>：有天然溫泉大浴場，不過男女是輪流使用，男生和女生的開放時間不一樣。有不少住客抱怨浴池小，也說情侶或夫妻很難同一個時段一起泡。一個人住、同性朋友一起去，或是不介意分開泡的話，選這間就沒問題。</li></ul><h3 id="section-5">重視早餐的人選哪幾間？</h3><p>住客對早餐評價最好的是天然溫泉Premier Hotel-CABIN-旭川，想要免費早餐的話，評價最好的是露櫻旭川站前一條通。比較要小心的是OMO7旭川，早餐有現烤鬆餅這類招牌菜，但有住客提到要排很久。</p><p><strong>想吃在地菜色，願意另外付早餐錢</strong></p><ul><li><strong>天然溫泉Premier Hotel-CABIN-旭川</strong>：早餐在14樓的景觀餐廳，主打北海道在地食材，要另外付費。住過的人大多稱讚早餐，說菜色多，還可以自己做海鮮丼和湯咖哩。</li><li><strong>Dormy Inn旭川</strong>：早餐只有住客可以吃，在地菜是鮪魚、鮭魚、魩仔魚做的海鮮丼。住客最常提到的就是這碗海鮮丼，多數都稱讚，也有人覺得期待太高。</li></ul><p><strong>想吃免費早餐</strong></p><ul><li><strong>露櫻旭川站前一條通</strong>：如果是住客的話，可以免費吃30樣以上的日式和西式自助餐，有三種湯和每天換的歐式麵包。住客大多稱讚早餐，常提到菜色多、白飯好吃。</li><li><strong>露櫻Grand旭川站前</strong>：如果是從官網訂房，早餐就可以免費吃，從其他管道訂的住客要另外加購。住客大多給好評，提到菜色多，有在地菜和海鮮，連住會換菜。也有住客說退房太早就吃不到。</li></ul><p><strong>要先想清楚的</strong></p><ul><li><strong>OMO7旭川</strong>：早餐有現烤鬆餅，還有海鮮配辣根的辣根飯，不過只有住客可以吃，而且要另外加購。評價比較兩極，有住客排了30分鐘以上，也有人覺得北海道的食材不多。</li></ul><h3 id="section-6">三人以上同住，或想住便宜一點</h3><p>三個人以上要住同一間的話，可以先看Court Hotel旭川和Art Hotel旭川，要小心的是Super Hotel旭川。想把住宿費壓低的人，可以改看個室旅館或青年旅館的住宿型態。</p><p><strong>三人以上住同一間</strong></p><ul><li><strong>Court Hotel旭川</strong>：三人房只有3間，想住的話要早一點訂。另外也有最多可以住5人的日式和西式套房，14張榻榻米的和室最多可以住到6人。有住客說三人房只有雙床房的大小，收納也少。</li><li><strong>Art Hotel旭川</strong>：有三人房，也有兩間相連的雙床房，最多可以住6人，人數多的家庭或朋友可以考慮。住客說房間寬，和室住起來舒服；比較可惜的是，也有住客提到窗戶打不開，也沒有衣櫥。</li><li><strong>Super Hotel旭川</strong>：三個人住要訂附閣樓床的Super房，最多就是3人。不過有好幾則住客評論說房間很小，攤開行李箱有困難，也有住客說三個人住會更擠。如果是三人同住，建議看看上面兩間。</li></ul><p><strong>一個人，或想把住宿費壓低</strong></p><ul><li><strong>9C Hotel旭川</strong>：每間都是7平方公尺、可以上鎖的個室，裡面是木製上下舖，訂房時選1人或2人一間，所以一個人住不會和陌生人同房。房內沒有衛浴，淋浴間和廁所在每層樓的公共區。</li><li><strong>Asahikawa Ride</strong>：這是青年旅館，房間是通鋪，有女性專用4人通鋪、男女混住8人通鋪和男女混住4人通鋪，一般是訂一個床位、和其他旅客同房。其中一間混住通鋪可以包下來，其他房間或整棟也可以包，幾個朋友一起住的話，可以問問看包房。房內沒有衛浴，淋浴間和廁所在公共區。</li></ul><h2 id="section-7">旭川住宿比較表</h2><p>下表列出這篇查到的旭川飯店，由上到下先是站前、再是市中心、最後是郊外，同一區照離車站遠近排，飯店資訊的查核日期是2026年11月12日。</p><div class="article-table-scroll article-table--cards" tabindex="0"><table><thead><tr><th scope="col">飯店</th><th scope="col">到JR旭川站</th><th scope="col">停車</th><th scope="col">早餐</th><th scope="col">大浴場或溫泉</th><th scope="col">怎麼訂</th><th scope="col">連結</th></tr></thead><tbody><tr><td data-label="飯店"><span>JR Inn旭川</span></td><td data-label="到JR旭川站"><span>和車站相連</span></td><td data-label="停車"><span>永旺立體停車場，一晚800日圓，櫃台付</span></td><td data-label="早餐"><span>要加購，永旺4樓自助</span></td><td data-label="大浴場或溫泉"><span>大浴場與半露天浴池</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://www.jr-inn.jp/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=JR%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Y&#039;s Hotel旭川站前</span></td><td data-label="到JR旭川站"><span>走路約1分</span></td><td data-label="停車"><span>—</span></td><td data-label="早餐"><span>—</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://yshotel-asahikawa.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%AF%E3%82%A4%E3%82%BA%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>KOKO HOTEL旭川站前</span></td><td data-label="到JR旭川站"><span>走路2分</span></td><td data-label="停車"><span>—</span></td><td data-label="早餐"><span>—</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://www.koko-hotels.com/asahikawa_station/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=KOKO%20HOTEL%20%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Court Hotel旭川</span></td><td data-label="到JR旭川站"><span>走路2分</span></td><td data-label="停車"><span>自有25台，一晚1,100日圓，不能預約</span></td><td data-label="早餐"><span>要加購，日式和西式自助</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://www.enhotels.co.jp/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B3%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>露櫻Grand旭川站前</span></td><td data-label="到JR旭川站"><span>北口走路2分</span></td><td data-label="停車"><span>176台，一晚800日圓，不能保留</span></td><td data-label="早餐"><span>官網訂房免費，其他管道要加購</span></td><td data-label="大浴場或溫泉"><span>大浴場，官網寫天人峽天然溫泉，有三溫暖</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3Grand%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Hotel WBF Grande旭川</span></td><td data-label="到JR旭川站"><span>東口走路約2分</span></td><td data-label="停車"><span>戶外最多70台，一晚1,000日圓，先到先停</span></td><td data-label="早餐"><span>要加購，海鮮丼等在地菜自助</span></td><td data-label="大浴場或溫泉"><span>天然溫泉，有露天與三溫暖</span></td><td data-label="怎麼訂"><span>電話或聯絡表單</span></td><td data-label="連結"><span><a href="https://www.ishinhotels.com/wbf/grande-asahikawa" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%ABWBF%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%87%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>東橫INN旭川站東口</span></td><td data-label="到JR旭川站"><span>東口走路3分</span></td><td data-label="停車"><span>立體48台、平面26台，一晚800日圓，先到先停</span></td><td data-label="早餐"><span>免費，飯糰為主</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://www.toyoko-inn.com/search/detail/00173/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E6%A8%AAINN%E6%97%AD%E5%B7%9D%E9%A7%85%E6%9D%B1%E5%8F%A3%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>天然溫泉Premier Hotel-CABIN-旭川</span></td><td data-label="到JR旭川站"><span>走路3分</span></td><td data-label="停車"><span>152台，一晚800到1,100日圓，不能預約</span></td><td data-label="早餐"><span>要加購，14樓景觀餐廳</span></td><td data-label="大浴場或溫泉"><span>天然溫泉大浴場，有三溫暖</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://cabin.kenhotels.com/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%9B%E3%83%86%E3%83%AB-CABIN-%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>HOTEL AMANEK旭川</span></td><td data-label="到JR旭川站"><span>北口走路3分</span></td><td data-label="停車"><span>隔壁合作停車場，24小時1,000日圓</span></td><td data-label="早餐"><span>3樓自助，主打旭川拉麵、湯咖哩</span></td><td data-label="大浴場或溫泉"><span>頂樓展望大浴場</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://amanekhotels.jp/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%A2%E3%83%9E%E3%83%8D%E3%82%AF%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>9C Hotel旭川</span></td><td data-label="到JR旭川站"><span>走路3分</span></td><td data-label="停車"><span>合作Times停車場，24小時最多1,100日圓</span></td><td data-label="早餐"><span>免費，生雞蛋拌飯</span></td><td data-label="大浴場或溫泉"><span>每層有共用淋浴間</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://9chotel.jp/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=9C%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>東橫INN旭川站前一條通</span></td><td data-label="到JR旭川站"><span>北口走路約3到5分</span></td><td data-label="停車"><span>立體2處共33台，一晚800日圓，先到先停</span></td><td data-label="早餐"><span>免費自助</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://www.toyoko-inn.com/search/detail/00069/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E6%A8%AAINN%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%E4%B8%80%E6%9D%A1%E9%80%9A%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Super Hotel旭川</span></td><td data-label="到JR旭川站"><span>走路5分</span></td><td data-label="停車"><span>一晚600日圓，先到先停</span></td><td data-label="早餐"><span>免費，現烤麵包與有機蔬菜沙拉</span></td><td data-label="大浴場或溫泉"><span>天然溫泉大浴場，男女輪替</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://www.superhotel.co.jp/s_hotels/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>旭川Sun Hotel</span></td><td data-label="到JR旭川站"><span>走路約5分</span></td><td data-label="停車"><span>地下5台，一晚1,100日圓，不能預約</span></td><td data-label="早餐"><span>含在所有方案</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://asahikawa-sunhotel.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%AD%E5%B7%9D%E3%82%B5%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Tabist旭川Station Hotel</span></td><td data-label="到JR旭川站"><span>走路5分</span></td><td data-label="停車"><span>合作4處，一晚1,100日圓，不能預約</span></td><td data-label="早餐"><span>館內餐廳有早餐</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://tabist.co.jp/h/N01HASH" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=Tabist%20%E6%97%AD%E5%B7%9D%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>R Hotels Inn北海道旭川</span></td><td data-label="到JR旭川站"><span>走路約5分</span></td><td data-label="停車"><span>5台，一晚1,000日圓，不能預約</span></td><td data-label="早餐"><span>定食</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://rhotels-asahikawa.jp/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=R%E3%83%9B%E3%83%86%E3%83%AB%E3%82%BA%E3%82%A4%E3%83%B3%E5%8C%97%E6%B5%B7%E9%81%93%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Hotel Tetora旭川站前</span></td><td data-label="到JR旭川站"><span>走路5分</span></td><td data-label="停車"><span>合作停車場，24小時內進出一次免費，經濟方案除外</span></td><td data-label="早餐"><span>免費輕早餐，主打麵包</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://asahikawa.e-tetora.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%86%E3%83%88%E3%83%A9%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>露櫻旭川站前一條通</span></td><td data-label="到JR旭川站"><span>走路約5分</span></td><td data-label="停車"><span>36台，一晚600日圓，先到先停</span></td><td data-label="早餐"><span>免費自助</span></td><td data-label="大浴場或溫泉"><span>大浴場，人工溫泉</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%E4%B8%80%E6%9D%A1%E9%80%9A%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Hotel Mates旭川</span></td><td data-label="到JR旭川站"><span>走路約5分</span></td><td data-label="停車"><span>—</span></td><td data-label="早餐"><span>—</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>—</span></td><td data-label="連結"><span><a href="http://www.ahm.jp/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%A1%E3%82%A4%E3%83%84%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>吳竹Inn旭川</span></td><td data-label="到JR旭川站"><span>在4條通9丁目</span></td><td data-label="停車"><span>—</span></td><td data-label="早餐"><span>—</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>—</span></td><td data-label="連結"><span><a href="https://www.kuretake-inn.com/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%8F%E3%82%8C%E3%81%9F%E3%81%91%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Asahikawa Ride</span></td><td data-label="到JR旭川站"><span>走路約12分</span></td><td data-label="停車"><span>沒有停車場，用附近投幣停車場</span></td><td data-label="早餐"><span>沒有供餐，可自炊</span></td><td data-label="大浴場或溫泉"><span>沒有大浴場，只有淋浴間</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://www.asahikawaride.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B2%E3%82%B9%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B9%20%E3%82%A2%E3%82%B5%E3%83%92%E3%82%AB%E3%83%AF%E3%83%A9%E3%82%A4%E3%83%89%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Hotel Crescent旭川</span></td><td data-label="到JR旭川站"><span>走路約12分</span></td><td data-label="停車"><span>約12台，一晚800日圓，不用預約</span></td><td data-label="早餐"><span>自助，日式和西式菜色</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://www.hotel-cr.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%AF%E3%83%AC%E3%83%83%E3%82%BB%E3%83%B3%E3%83%88%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>OMO7旭川</span></td><td data-label="到JR旭川站"><span>走路約13到15分</span></td><td data-label="停車"><span>合作Times停車場，24小時1,000日圓，不能預約</span></td><td data-label="早餐"><span>要加購，限住客，主打鬆餅</span></td><td data-label="大浴場或溫泉"><span>三溫暖與低溫浴池，住客免費</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://hoshinoresorts.com/ja/hotels/omo7asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=OMO7%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Art Hotel旭川</span></td><td data-label="到JR旭川站"><span>走路約15分</span></td><td data-label="停車"><span>住客一晚1,000日圓</span></td><td data-label="早餐"><span>15樓自助</span></td><td data-label="大浴場或溫泉"><span>住客專用Spa，有三溫暖，住客免費</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://www.art-asahikawa.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Dormy Inn旭川</span></td><td data-label="到JR旭川站"><span>走路約15分</span></td><td data-label="停車"><span>114台，一晚1,000日圓，先到先停</span></td><td data-label="早餐"><span>要加購，海鮮丼</span></td><td data-label="大浴場或溫泉"><span>天然溫泉大浴場，有露天與三溫暖</span></td><td data-label="怎麼訂"><span>Trip.com、Agoda、官網</span></td><td data-label="連結"><span><a href="https://dormy-hotels.com/dormyinn/hotels/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%89%E3%83%BC%E3%83%9F%E3%83%BC%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>旭川Toyo Hotel</span></td><td data-label="到JR旭川站"><span>—</span></td><td data-label="停車"><span>含合作停車場可停100台，一晚800日圓</span></td><td data-label="早餐"><span>要買早餐券，日式和西式菜色</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://www.toyo-hotel.net/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%AD%E5%B7%9D%E3%83%88%E3%83%BC%E3%83%A8%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Platon Hotel</span></td><td data-label="到JR旭川站"><span>開車5分</span></td><td data-label="停車"><span>免費，台數有限，訂房時確認</span></td><td data-label="早餐"><span>—</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>只有電話</span></td><td data-label="連結"><span><a href="https://www.platonhotel-asahikawa.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%97%E3%83%A9%E3%83%88%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>東花苑</span></td><td data-label="到JR旭川站"><span>開車7分</span></td><td data-label="停車"><span>最多50台，部分收費</span></td><td data-label="早餐"><span>有附早餐的方案</span></td><td data-label="大浴場或溫泉"><span>大浴場</span></td><td data-label="怎麼訂"><span>只有電話</span></td><td data-label="連結"><span><a href="http://www.toukaen.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%85%E9%A4%A8%20%E6%9D%B1%E8%8A%B1%E8%8B%91%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>扇松園</span></td><td data-label="到JR旭川站"><span>開車約10分</span></td><td data-label="停車"><span>免費，最多70台</span></td><td data-label="早餐"><span>早餐與晚餐都有</span></td><td data-label="大浴場或溫泉"><span>大浴場，不是溫泉</span></td><td data-label="怎麼訂"><span>官網，也可打電話</span></td><td data-label="連結"><span><a href="https://sensyoen.co.jp/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%92%8C%E9%A2%A8%E6%97%85%E9%A4%A8%20%E6%89%87%E6%9D%BE%E5%9C%92%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>高砂溫泉</span></td><td data-label="到JR旭川站"><span>計程車約15分</span></td><td data-label="停車"><span>—</span></td><td data-label="早餐"><span>—</span></td><td data-label="大浴場或溫泉"><span>大浴場用地下水；天然溫泉在付費的家庭湯屋</span></td><td data-label="怎麼訂"><span>官網，也可打電話</span></td><td data-label="連結"><span><a href="http://www.takasagoonsen.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%AB%98%E7%A0%82%E6%B8%A9%E6%B3%89%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Matsueda旅館</span></td><td data-label="到JR旭川站"><span>JR東旭川站走10分</span></td><td data-label="停車"><span>免費，10台</span></td><td data-label="早餐"><span>有附早餐的方案</span></td><td data-label="大浴場或溫泉"><span>大浴場</span></td><td data-label="怎麼訂"><span>只有電話</span></td><td data-label="連結"><span><a href="https://r.goope.jp/oyadomatsueda/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%8A%E5%AE%BF%E3%81%BE%E3%81%A4%E3%81%88%E3%81%A0%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>龍乃湯溫泉</span></td><td data-label="到JR旭川站"><span>JR東旭川站走10分</span></td><td data-label="停車"><span>—</span></td><td data-label="早餐"><span>有附早餐的方案</span></td><td data-label="大浴場或溫泉"><span>天然溫泉，有露天與三溫暖</span></td><td data-label="怎麼訂"><span>只有電話</span></td><td data-label="連結"><span><a href="https://tatsunoyuonsen.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BE%8D%E4%B9%83%E6%B9%AF%E6%B8%A9%E6%B3%89%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Auberge Sondre</span></td><td data-label="到JR旭川站"><span>搭JR到櫻岡站約20分，再走15分</span></td><td data-label="停車"><span>—</span></td><td data-label="早餐"><span>含在附早晚餐的方案</span></td><td data-label="大浴場或溫泉"><span>—</span></td><td data-label="怎麼訂"><span>官網</span></td><td data-label="連結"><span><a href="https://aubergesondre.com" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A1%9C%E5%B2%A1%E3%83%AA%E3%83%88%E3%83%AA%E3%83%BC%E3%83%88%20%E3%82%AA%E3%83%BC%E3%83%99%E3%83%AB%E3%82%B8%E3%83%A5%E3%83%BB%E3%82%BD%E3%83%B3%E3%83%89%E3%83%AC%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr></tbody></table></div><h2 id="section-8">旭川站前的飯店</h2><p>站前的飯店離JR旭川站都在走路5分鐘以內，JR Inn旭川更是和車站直接相連，所以這一區比的不是位置，而是大浴場、早餐和停車。下面先一間一間寫十間，最後的「站前的其他飯店」再把另外八間的位置和特色一起列出。</p><h3 id="section-9">JR Inn旭川</h3><p>JR Inn旭川是直接連著站前永旺夢樂城的商務飯店，位置方便，不過有住客提到外國旅客多的時候，大浴場和入住櫃台會比較擠。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>離車站</strong>：從JR旭川站北口出來，走進永旺夢樂城旭川站前的站前廣場入口，左手邊就是飯店專用電梯，搭到5樓就是飯店。住客提到樓下就是永旺夢樂城，吃飯和購物都很方便。</li><li><strong>大浴場</strong>：5樓有男女分開的大浴場，還有半露天浴池，下午3點開到半夜1點，早上5點到10點也可以泡。只有住客可以使用。</li><li><strong>休息室</strong>：休息室有免費的咖啡和書，也有住客提到有茶和漫畫。枕頭可以從約20種裡挑自己睡得習慣的。</li><li><strong>景觀與洗衣</strong>：住客提到高樓層看得到鐵路和大雪山。5樓有4台投幣洗衣機，要付費使用，也有住客提到連住幾晚時很方便。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>客房</strong>：單人房、半雙人房和經濟雙床房只有淋浴間，想泡澡的話要訂雙床房、大雙床房或通用房。有些住客覺得房間偏小。</li><li><strong>人潮</strong>：有住客反應外國旅客多的時候，大浴場很擠，入住要排很久的隊，休息室也比較吵。</li><li><strong>早餐</strong>：早餐在相連的永旺夢樂城4樓，是日式和西式的自助餐，飯店本身沒有晚餐。住客對早餐的說法不一，有人說食材多、有在地料理，也有人說用餐區很擠要等，品項又少。</li><li><strong>機場交通</strong>：從旭川機場可以搭配合航班、往旭川市內的巴士，在旭川站下車，車程約35到40分鐘。</li><li><strong>停車</strong>：車子停在和飯店相連的永旺夢樂城立體停車場，一晚800日圓，這一晚是從進場起算24小時，車高要在2.2公尺以下。比較可惜的是，住客提到傍晚飯店入口附近的車位常常停滿，停到比較遠的地方就要走很久才到櫃台。</li><li><strong>吸菸</strong>：吸菸客房已經停止提供，要抽菸的話，只能去5樓的公共吸菸區。</li></ul><p>看房價與訂房：Trip.com｜Agoda｜<a href="https://www.jr-inn.jp/asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-10">天然溫泉Premier Hotel-CABIN-旭川</h3><p>天然溫泉Premier Hotel-CABIN-旭川離旭川站走路3分鐘，飯店裡就有天然溫泉大浴場，不過有住客覺得建築和家具比較舊，大浴場也不大。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>離車站</strong>：從JR旭川站走路3分鐘，從旭川站前公車站走路5分鐘。有住客說，離買物公園和三六餐飲區也很近。</li><li><strong>溫泉</strong>：大浴場的溫泉是從飯店自己的溫泉井直接抽上來的，浴場裡還有芬蘭式自助蒸氣三溫暖。如果是住客的話，住宿期間可以不限次數免費泡，從下午2點開到隔天早上10點。住客提到最多的，就是這裡的褐色天然溫泉和三溫暖。</li><li><strong>早餐</strong>：在14樓的景觀餐廳吃，主打在地食材。有住客說菜色多、視野好，還可以自己配海鮮丼和湯咖哩。</li><li><strong>滑雪</strong>：2026年新設了滑雪用品的密碼置物櫃和打蠟室。</li><li><strong>官網訂房</strong>：官網寫在官網訂最划算，從官網或打電話訂房，還可以累積ANA或d點數。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>機場交通</strong>：從旭川機場搭巴士過來，大約30分鐘。</li><li><strong>停車</strong>：立體停車場有152台，停車位是先到的人先停，不能預約。一晚800到1,100日圓，依車型而定。廂型車、休旅車、大型車和750cc以上的機車，要改停合作停車場或投幣停車場。有住客說下午3點左右就滿了，開車的話早點到比較保險。</li><li><strong>人潮</strong>：大浴場也開放外面來泡湯的客人，時間是下午2點到晚上11點。有住客反應，外面來的客人和運動團體多的時候會很擠，他們建議深夜或吃完早餐後再去。</li><li><strong>新舊</strong>：有住客提到建築和家具比較舊，不過也有兩位住客反而喜歡木頭色調的復古房間。</li><li><strong>客房</strong>：評價比較兩極。有住客覺得房間寬敞，還有大電視和吧台桌；也有住客說單人房很窄，大行李箱打不開，收納空間也少。</li></ul><p>看房價與訂房：Trip.com｜Agoda｜<a href="https://cabin.kenhotels.com/asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-11">Hotel WBF Grande旭川</h3><p>Hotel WBF Grande旭川館內就有天然溫泉，從旭川站東口走路約2分鐘就到，不過官網沒有線上訂房，要打電話或填聯絡表單。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>溫泉</strong>：2樓是天然溫泉，如果是住客的話，早上6點到半夜12點都可以泡，三溫暖開到晚上11點。住客評論幾乎都在稱讚這裡的溫泉，提到有碳酸泉、露天浴池和壺湯。岩盤浴要另外付費，一次700日圓。</li><li><strong>離車站</strong>：從JR旭川站東口走路約2分鐘，有住客說附近有超商和永旺，買東西很方便。</li><li><strong>客房</strong>：有住客說房間寬敞，行李攤得開，床偏硬但好睡。住過雙床房和日式西式混合房的人提到，廁所和浴室是分開的，看起來新又亮。也有住客說鐵道那一側的房間看得到列車，冬天還看得到除雪車，小孩很喜歡。全館禁菸。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>入口</strong>：有住客說從車站走過來不是直線，比官網寫的久，入口也不太好找。</li><li><strong>深夜進出</strong>：凌晨1點到5點正門會上鎖，要按門右邊的對講機才進得來。</li><li><strong>早餐</strong>：1樓是自助早餐，有海鮮丼、旭川拉麵這些在地菜。評價比較兩極，有住客說海鮮丼很好吃，不過2023年之後也有人提到菜色變少、味道偏淡。</li><li><strong>停車</strong>：戶外停車場最多停70台，一般車一晚1,000日圓。停車位是先到的人先停，不能預約。</li><li><strong>人潮</strong>：溫泉也開放給外面來泡湯的客人，時間是早上10點到晚上11點，有住客提到尖峰時段很擠。</li><li><strong>帶小孩</strong>：學齡前的小孩可以免費和大人同床，不過每人要付550日圓入館費，飯店也沒有嬰兒床可以借。</li></ul><p>看房價與訂房：<a href="https://www.ishinhotels.com/wbf/grande-asahikawa" rel="noopener noreferrer">官網</a></p><h3 id="section-12">露櫻Grand旭川站前</h3><p>露櫻Grand旭川站前是出旭川站北口走2分鐘就到、頂樓有天然溫泉大浴場的商務飯店，不過停車位不能預約，早餐也只有從官網訂房才免費。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>離車站</strong>：從旭川站北口走路2分鐘。住客幾乎都提到就在站前，冬天不用在雪地裡走很遠。</li><li><strong>大浴場</strong>：頂樓的大浴場是天人峽的天然溫泉（有加水、加溫，也會循環過濾），男湯和女湯都有三溫暖。住客最常稱讚的就是頂樓的溫泉和三溫暖，泡湯時還看得到車站和山。</li><li><strong>便利商店</strong>：不少住客提到1樓就有便利商店，買東西很方便。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>早餐</strong>：自助餐有現烤麵包和在地菜色，住客說菜色多，連住的話菜色還會換。不過早餐只有從官網訂房才免費，從其他訂房網站訂的話，要另外付早餐費。</li><li><strong>停車</strong>：飯店有自己的立體停車場，共176個車位，如果是住客的話每晚800日圓。停車位是先到的人先停，不能預約。</li><li><strong>電梯</strong>：要在櫃台那一層換搭電梯，有住客說退房時間人多，電梯會擠，建議退房前多留一點時間。</li><li><strong>客房</strong>：房間的浴室是整體衛浴。幾位住客說雙床房和四人房很寬敞，也有一位覺得雙床房小；另外有兩位住客提到房裡只有沙發、沒有書桌，要在房間工作會不方便。</li><li><strong>連住</strong>：從2026年8月起，連住的話床鋪改成每3天整理一次。</li></ul><p>看房價與訂房：Trip.com｜Agoda｜<a href="https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/" rel="noopener noreferrer">官網</a></p><h3 id="section-13">Super Hotel旭川</h3><p>Super Hotel旭川是離旭川站走路約5分鐘、有天然溫泉大浴場和免費早餐的商務飯店，不過有住客反應房間很小，大浴場也是男女輪流使用。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>離車站</strong>：官網寫從JR旭川站走路約5分鐘，有住客覺得實際要走10分鐘左右。</li><li><strong>溫泉</strong>：大浴場是鹼性、含食鹽的無色透明天然溫泉，有住客覺得泡完很放鬆，也有住客覺得浴池很小。男女是輪流使用的，所以男女一起去的人不能同時泡。男生的時段是傍晚6點到晚上8點50分，以及晚上11點到隔天早上7點50分；女生是下午3點到5點50分、晚上9點到10點50分，以及隔天早上8點到9點50分。</li><li><strong>早餐</strong>：如果是住客的話，可以免費吃每天換菜色的自助早餐，時間是早上6點半到9點，有當季的有機蔬菜沙拉和現烤麵包。有住客特別稱讚現烤麵包和湯咖哩。</li><li><strong>迎賓酒吧</strong>：大廳從下午3點到晚上9點免費提供調酒、葡萄酒和無酒精飲料，好幾位住客都稱讚這一點，也有住客覺得大廳很適合帶電腦工作。</li><li><strong>費用</strong>：有住客覺得含免費早餐和溫泉，這個價錢很合理。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>客房</strong>：不少住客反應房間很小，行李箱很難攤開，三個人住會更擠。官網寫只有附閣樓床的Super房可以住到3人，其他房型最多2人。</li><li><strong>停車</strong>：一晚600日圓，可以停的時間是下午3點到隔天早上11點。停車位是先到的人先停，不能預約。有住客說停車場就在飯店旁邊、很方便，不過沒有屋頂；也有一位住客遇到車位滿了，得停到別處另外付費。</li><li><strong>周邊</strong>：有住客提到飯店周邊比較冷清，離餐廳區也有一段距離。</li></ul><p>看房價與訂房：Trip.com｜Agoda｜<a href="https://www.superhotel.co.jp/s_hotels/asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-14">HOTEL AMANEK旭川</h3><p>HOTEL AMANEK旭川是旭川站前的飯店，客房用木頭裝潢、走和風，不過有住客提到房間偏小，帶大件行李的人要先想一下。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>離車站</strong>：從旭川站北口走路3分鐘就到。有住客說下雨下雪的時候，可以穿過旁邊的購物中心走過來，附近的餐廳也多。</li><li><strong>大浴場</strong>：頂樓有看得到山景的展望大浴場，天氣好的時候可以看到大雪山、旭岳。開放時間是下午3點到半夜1點，還有隔天早上5點到9點。住客對大浴場的評價有好有壞，有住客覺得浴池小，晚上又擠。</li><li><strong>早餐</strong>：3樓的自助早餐有日式也有西式，大約50種菜色，有旭川拉麵、湯咖哩、炸雞，豬肉丼是現場做的，時間是早上6點半到10點。住客對早餐的評價偏好，常有人提到湯咖哩，不過也有人覺得用餐區小，或是覺得味道普通。</li><li><strong>官網訂房</strong>：從官網訂的話，可以提早1小時入住，退房也能延到中午12點，兩項都不用另外加錢。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>客房</strong>：一般客房只有淋浴間，沒有浴缸，無障礙雙床房則是無障礙浴室。有些住客覺得房間小，雙床房放了沙發之後更擠，行李也塞不進床底下。客房全部禁菸，想抽菸要到館內的吸菸區。</li><li><strong>停車</strong>：開車的話，要停在隔壁的合作停車場，每24小時1,000日圓。有住客說停車場到大廳之間要經過六階樓梯，拖行李會比較麻煩。</li><li><strong>人潮</strong>：有住客提到，晚上的大浴場、早餐的用餐區和電梯都會擠。</li><li><strong>機場交通</strong>：從旭川機場搭機場巴士，大約35分鐘到旭川站，下車後再走3分鐘就到飯店。</li></ul><p>看房價與訂房：Trip.com｜Agoda｜<a href="https://amanekhotels.jp/asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-15">Court Hotel旭川</h3><p>Court Hotel旭川是從旭川站走路2分鐘就到的飯店，也有適合家族的和室房，不過住客提到館內和設備偏舊，隔音也不太好。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>離車站</strong>：從旭川站走路約2分鐘，到買物公園通約1分鐘。有住客說站前有超商和餐廳，很方便；也有一位住客覺得實際走起來比官網寫的2分鐘久一點。</li><li><strong>客房</strong>：全館客房禁菸。除了雙人房和雙床房，還有和室和日式西式混合的套房，一間最多可以住6人。套房裡的榻榻米區和西式房間是分開的，帶小孩或三五個人一起旅行會比較好排。三人房只有3間，有住客說大小跟雙床房差不多。房間大小的評價兩邊都有，有住客覺得書桌大、房間寬，也有住客覺得房間窄、收納少，還有住客提到某些房間的窗外就是隔壁大樓的牆。</li><li><strong>大廳咖啡</strong>：大廳有咖啡機，如果是住客的話可以免費喝。有住客稱讚咖啡不限時段，隨時都能拿。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>新舊</strong>：有住客提到外觀和大廳整修過，不過不少住客覺得館內和設備偏舊。</li><li><strong>浴室</strong>：房內浴室有住客反應很舊、很窄，排水不好，浴簾也有味道。這幾則評論大多是2017到2020年的。</li><li><strong>隔音</strong>：有住客說牆壁很薄，聽得到隔壁和走廊的聲音，門縫會透風，冷氣聲音也大。</li><li><strong>早餐</strong>：早餐是1樓餐廳的日式和西式自助餐，訂的方案沒含早餐的話要另外加購。有住客覺得划算，也喜歡湯咖哩和在地的米；也有住客覺得菜色少。有住客覺得附近不好找其他吃早餐的地方，不想吃自助餐的話可以先想好早餐去哪裡吃。</li><li><strong>停車</strong>：自己開車的話，飯店有25個車位，一晚1,100日圓。停車位是先到的人先停，不能預約，車高超過1.55公尺的車停不進去。有住客說停車場就在飯店後方，很方便；也有一位住客覺得塔式停車場出車比較慢。</li><li><strong>洗衣</strong>：4樓有投幣洗衣機，一次400日圓，烘衣機100日圓可以烘20分鐘，洗劑會自動加入。</li></ul><p>看房價與訂房：<a href="https://www.enhotels.co.jp/asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-16">東橫INN旭川站東口與旭川站前一條通</h3><p>東橫INN旭川站東口和東橫INN旭川站前一條通是兩間離旭川站走路3到5分鐘的連鎖商務飯店，早餐都是免費的，不過有住客覺得房間偏窄，兩間的名字又很像，訂房時要看清楚。</p><p><strong>兩間怎麼分</strong></p><ul><li><strong>位置</strong>：東口那間從JR旭川站東口出來走約3分鐘，住客說旁邊就是永旺。一條通那間從北口出來，大約走3到5分鐘，不少住客說它比東口那間更靠近鬧區和買物公園，旁邊就有大型便利商店。</li><li><strong>訂錯的情況</strong>：有住客特別提醒，旭川有兩間東橫INN，訂房前要先看清楚是哪一間。想離鬧區近一點就選一條通，想要停車位多一點就選東口。</li></ul><p><strong>為什麼選這間</strong></p><ul><li><strong>早餐</strong>：兩間都是早上6點半到9點供應。東口那間以飯糰為主，住客說飯糰有好幾種口味，也有味噌湯和麵包，不過用餐區小，2022年有住客說早餐是盒裝，多半拿回房間吃。一條通那間是自助式，有住客說好吃，也有住客嫌品項少，而且1樓的用餐區是吧台式座位，空間小，人多時會擠。</li><li><strong>東口的晚餐</strong>：官網說晚上有咖哩可以吃，10月起恢復供應，有住客說只有平日晚上才有。</li><li><strong>東口的景色</strong>：官網說冬天看得到雪景，夏天看得到旭岳，不過住客說要住高樓層才看得到，5樓的窗外是停車場。</li><li><strong>一條通的清潔</strong>：有住客說打掃得很確實。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>客房</strong>：兩間的房內都是整體衛浴。東口那間有住客說房間和浴室都偏窄，也有人說浴缸很大，只是放熱水很慢。一條通那間有住客說比其他東橫INN寬，雙床房是長方形的，也有住客覺得窄。</li><li><strong>人潮</strong>：有住客說東口的大廳本來就小，碰到外國旅行團或學生團時大廳擠滿人，辦入住要等比較久。</li><li><strong>停車</strong>：兩間都是一晚800日圓，車位是先到的人先停。東口那間有74個車位。一條通那間是兩處立體停車場，一處24台、限高1.55公尺，另一處9台、限高2公尺，開高一點的車要先確認車高。</li><li><strong>備品</strong>：有住客說一條通那間的備品比較少，毛巾薄、加毛巾要付費，也沒有茶包。</li></ul><p>看房價與訂房（站東口）：Trip.com｜Agoda｜<a href="https://www.toyoko-inn.com/search/detail/00173/" rel="noopener noreferrer">官網</a></p><p>看房價與訂房（站前一條通）：Trip.com｜Agoda｜<a href="https://www.toyoko-inn.com/search/detail/00069/" rel="noopener noreferrer">官網</a></p><h3 id="section-17">9C Hotel旭川</h3><p>9C Hotel旭川是離旭川站走路約3分鐘的個室旅館，不過房間只有7平方公尺，房內也沒有衛浴。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>離車站</strong>：從JR旭川站走路約3分鐘。住過的人也說離車站和市區都很近，只有一位提到不太好找。</li><li><strong>早餐</strong>：免費供應簡單的早餐，主角是用北海道米做的生雞蛋拌飯，早上6點到9點吃得到。好幾位住客都提到這碗飯好吃。</li><li><strong>清潔</strong>：好幾位住客稱讚連共用區域也很乾淨，評論裡沒有人嫌髒。</li><li><strong>洗衣</strong>：一樓有3台洗衣機，24小時都可以用，洗一次400到600日圓，洗衣劑也包含在裡面。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>客房</strong>：只有一種房型，是7平方公尺、放一張木製上下舖的個室，門可以上鎖。這裡不是膠囊旅館，訂房時選1人或2人一間，一個人住也不會和陌生人同房。住客的評價兩邊都有，喜歡的人提到可以上鎖、有閱讀燈和插座，也有住客覺得房間太小、睡上下舖不方便。</li><li><strong>衛浴</strong>：房間裡沒有衛浴，每層樓都有男女分開的廁所和淋浴間。淋浴隔間可以上鎖，裡面有更衣的空間，女用淋浴間要輸入密碼才能進去。有女性住客肯定這樣的設計，也有住客嫌衛浴要共用、不在房間裡。</li><li><strong>機場交通</strong>：飯店沒有機場接送。</li><li><strong>停車</strong>：從2026年11月8日起，飯店改用合作的Times停車場，每24小時最多1,100日圓（含稅）。這是一般的計時停車場，有可能會客滿。</li></ul><p>看房價與訂房：<a href="https://9chotel.jp/" rel="noopener noreferrer">官網</a></p><h3 id="section-18">站前的其他飯店</h3><p>下面八間都在旭川站走路5分鐘以內，這裡先列位置和幾間的特色，其他規格可以到比較表對照。</p><ul><li><strong>Tabist旭川Station Hotel</strong>：從旭川站西側剪票口、走北口出來，走路約5分鐘。有可以住到6人的房間，頂樓還有4人的和室，帶家人或朋友一起住比較方便；有住客提到建築偏舊。</li><li><strong>旭川Sun Hotel</strong>：從旭川站走路約5分鐘。所有方案都含早餐，客房也全部重新裝修過。不過全館52間房裡有26間是吸菸房，不抽菸的人訂房時記得選禁菸房。</li><li><strong>R Hotels Inn北海道旭川</strong>：從旭川站走路約5分鐘，離熱鬧的三六街只要1分鐘。早餐從2026年10月21日起，由自助餐改成定食。</li><li><strong>Hotel Tetora旭川站前</strong>：從旭川站走路約5分鐘，住在這裡的期間可以免費喝現磨咖啡、湯品和飲料。不過有住客說房內的浴室和浴缸很窄，體型大的人可能不方便。</li><li><strong>露櫻旭川站前一條通</strong>：從旭川站走路約5分鐘。館內的大浴場是鐳人工溫泉，不是天然溫泉；如果是住客的話，早餐是免費的。</li><li><strong>Y&#039;s Hotel旭川站前</strong>：從旭川站東側剪票口出來，走北口東側出口，出站往右約1分鐘就到。有住客提到12樓頂樓有大浴場和三溫暖。</li><li><strong>KOKO HOTEL旭川站前</strong>：從旭川站走路約2分鐘，機場巴士的上下車處也很近。</li><li><strong>Hotel Mates旭川</strong>：從旭川站走路約5分鐘。</li></ul><h2 id="section-19">旭川市中心的飯店</h2><p>市中心的飯店離JR旭川站要走12到15分鐘，換來的是晚上吃飯、逛買物公園都近。Dormy Inn旭川和Art Hotel旭川門前就有機場巴士站，OMO7旭川則是機場巴士的終點站，搭機來回不一定要先回車站。下面先寫四間，其他四間列在最後。</p><h3 id="section-20">Dormy Inn旭川</h3><p>Dormy Inn旭川是頂樓有天然溫泉大浴場、晚上還有免費拉麵的飯店，不過離旭川站要走大約15分鐘。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>大浴場</strong>：10樓是男女分開的天然溫泉，男湯女湯都有露天浴池、三溫暖和冷水池。下午3點開到隔天早上10點，只有三溫暖在凌晨1點到5點不開。住客稱讚最多的就是大浴場，說比一般商務旅館好；不少住客特別提到，冬天下雪時泡露天浴池很舒服。</li><li><strong>宵夜</strong>：晚上9點半到11點，1樓餐廳有免費的拉麵可以吃。住客幾乎都說好，不少人就是為了這碗拉麵選這間。</li><li><strong>泡湯後</strong>：下午3點到凌晨1點有免費的冰品，早上5點到10點有免費的乳酸菌飲料，住過的人對這兩樣都很滿意。</li><li><strong>早餐</strong>：1樓餐廳的日式和西式自助，只有住客可以吃。在地菜是鮪魚、鮭魚和魩仔魚的海鮮丼，住客最常提到它，多數人稱讚；不過也有人說期待太高，或是餐廳不大，遇到要分批入場。</li><li><strong>機場交通</strong>：搭機場巴士到飯店大約40分鐘，下車的巴士站就在飯店門前。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>離車站</strong>：到JR旭川站要走大約15分鐘。住客說大約1公里，多數人覺得偏遠，冬天拉著行李走雪路很辛苦，也有人改搭計程車或巴士。</li><li><strong>客房</strong>：官網的客房設備只寫淋浴間，沒有寫浴缸。住客覺得雙床房和日式和西式的房型寬敞，不過也有人覺得商務房偏小，還有住客說建築有點舊。</li><li><strong>停車</strong>：飯店自己的平面停車場有114個車位，一晚1,000日圓，停車位是先到的人先停；開大型車的話要先預約。住客提到入口很窄，冬天停在戶外的車要自己除雪。</li><li><strong>刺青</strong>：有刺青的話不能泡大浴場。</li><li><strong>官網訂房</strong>：官網說在網路上訂房，直接訂官網最划算。</li></ul><p>看房價與訂房：Trip.com｜Agoda｜<a href="https://dormy-hotels.com/dormyinn/hotels/asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-21">OMO7旭川</h3><p>OMO7旭川有三溫暖，冬天還有免費的滑雪接駁車，不過離車站要走十幾分鐘，而且有住客反應冬天人多的時候，大廳、三溫暖和早餐都會擠。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>三溫暖</strong>：飯店泡湯的地方以三溫暖為主，有乾式三溫暖、冷水池，還有可以在池子裡走路的低溫浴池。下午3點半開到半夜12點，早上5點到9點也開，如果是住客的話可以免費使用。有住客稱讚三溫暖的種類多，也喜歡那個可以走路的浴池。</li><li><strong>滑雪接駁</strong>：冬天有免費接駁車開往旭川周邊的滑雪場，只有住客可以搭，而且要事先預約。住過的人也提到飯店有滑雪房，裝備可以拿去烘乾。</li><li><strong>早餐</strong>：一樓的自助餐有日式和西式的菜，主打現烤鬆餅，還有海鮮上面放辣根的辣根飯。早上大約6點開始、10點結束，只有住客可以吃，訂的方案沒有含早餐的話，可以另外加購。住過的人說鬆餅和在地食材都不錯。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>離車站</strong>：從旭川車站走過來大約13到15分鐘，搭計程車大約5分鐘。</li><li><strong>機場交通</strong>：飯店沒有機場接送，可以搭機場聯絡巴士，在6條9丁目站下車。</li><li><strong>停車</strong>：飯店合作的停車場每24小時1,000日圓，每次進場都要重新付費。停車位是先到的人先停，不能預約。</li><li><strong>大浴池</strong>：有住客覺得少了一般的大浴池，也有住客嫌浴池的水溫不夠熱。</li><li><strong>客房</strong>：Superior、Studio和白熊房都有浴缸和淋浴，全館禁菸。住客對房間配置的評價好壞都有，嫌的比較多：有住客嫌Studio房的L型床佔空間，房裡也沒有桌椅和收納，不過也有住客覺得床下可以放行李，很好用。</li><li><strong>人潮</strong>：冬天滑雪客和外國家庭多，也有旅客排了30分鐘以上才吃到早餐。想少排一點隊，就避開早餐最忙的時段。</li></ul><p>看房價與訂房：Trip.com｜Agoda｜<a href="https://hoshinoresorts.com/ja/hotels/omo7asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-22">Art Hotel旭川</h3><p>Art Hotel旭川在15樓有看得到大雪山連峰的自助餐廳，住客還可以免費泡Spa，不過從旭川站北口要走大約15分鐘，開車來的住客也有不少人抱怨停車場離飯店有段距離。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>早餐</strong>：在15樓吃自助餐，窗外就是大雪山連峰。住客提到菜色種類多，景色也很好。</li><li><strong>三溫暖</strong>：Spa有兩種三溫暖，還有可以躺著泡的躺池，如果是住客就可以免費使用。下午3點開到半夜12點，隔天早上6點到10點也可以再去。住過的人對兩種三溫暖和躺池的評價不錯。</li><li><strong>機場交通</strong>：機場巴士就停在飯店前面，從旭川機場過來大約40分鐘，大人車資是750日圓。</li><li><strong>景觀</strong>：也有住客提到，高樓層的客房看出去景色很好。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>離車站</strong>：從旭川站北口走過來大約15分鐘，開車約5分鐘，飯店沒有接送。有些住客覺得實際走起來要15到20分鐘。</li><li><strong>停車</strong>：住客停一晚是1,000日圓。不過住客提到停車場不在飯店旁邊，要走幾分鐘，而且車位少，看車型還可能被引導到外面的停車場。</li><li><strong>人潮</strong>：Spa和早餐都有住客嫌人多。Spa也有人覺得浴池水溫偏低，早餐則有人說動線亂，連住兩天都很擠。</li><li><strong>客房</strong>：住客稱讚房間寬敞、和室舒服，不過也有人提到窗戶打不開、沒有衣櫥，空調也不好調。想住禁菸房的話，訂房時選標有禁菸的房型。</li></ul><p>看房價與訂房：Trip.com｜Agoda｜<a href="https://www.art-asahikawa.com/" rel="noopener noreferrer">官網</a></p><h3 id="section-23">Hotel Crescent旭川</h3><p>Hotel Crescent旭川是單人房比較寬、住宿費用實惠的飯店，不過離旭川站要走約12分鐘，也沒有接送，而且有住客覺得建築很舊。</p><p><strong>為什麼選這間</strong></p><ul><li><strong>客房</strong>：官網主打單人房比較寬，住客也說比新式的商務旅館寬，冬天暖氣很足。全部客房都是禁菸房。</li><li><strong>費用</strong>：有住客覺得住宿費用很划算，評論裡沒看到嫌貴的。</li><li><strong>早餐</strong>：自助餐有日式和西式菜色，還有自製三明治和自家醃菜。住客說種類多、用了北海道食材，湯咖哩也好吃；不過早餐只供應7點到9點，也有住客提到咖啡機只有一台。</li></ul><p><strong>訂房前的注意事項</strong></p><ul><li><strong>離車站</strong>：從旭川站走路約12分鐘，也可以搭道北巴士。有住客覺得走起來超過10分鐘，冬天走雪路很辛苦，也有住客建議乾脆租車。</li><li><strong>機場交通</strong>：搭機場巴士的話，要在「5條昭和通」或「6條9丁目」下車，再走到飯店。</li><li><strong>新舊</strong>：有好幾則住客評論提到建築很舊，不過也有住客說保養得不錯，還加裝了插座。</li><li><strong>停車</strong>：飯店停車場約有12個車位，不用預約，一晚一台800日圓（含稅），可以從下午2點停到隔天上午11點。租車的住客覺得是平面停車場，又有人引導，停起來方便；也有住客覺得空間比較窄，附近的合作停車場不好找。</li><li><strong>洗衣</strong>：2026年1月7日起已經停止客用洗衣服務，想洗衣服的話要另外找地方。</li></ul><p>看房價與訂房：<a href="https://www.hotel-cr.com/" rel="noopener noreferrer">官網</a></p><h3 id="section-24">市中心與市區外圍的其他飯店</h3><p>這四間都比站前的飯店離車站遠，其中三間在市中心，Platon Hotel則在市區外圍，要開車過去。</p><ul><li><strong>吳竹Inn旭川</strong>：在市中心，住客說離旭川站走7到10分鐘，比站前的飯店遠一點，也常提到傍晚有免費的酒類和咖哩。</li><li><strong>旭川Toyo Hotel</strong>：在市中心的7條通，大廳直通便利商店Seicomart。住客說離旭川站要走15到20分鐘，多數住客也提到建築老舊。</li><li><strong>Asahikawa Ride</strong>：是通鋪形式的青年旅館，從旭川站沿著買物公園走約12分鐘。房內沒有衛浴，要用公共區的淋浴間和廁所。</li><li><strong>Platon Hotel</strong>：離旭川站要開車約5分鐘。停車免費，不過台數有限，訂房時要先確認。</li></ul><h2 id="section-25">旭川郊外的日式旅館與溫泉住宿</h2><p>這六間在旭川市區外圍與郊外，離旭川站都要搭車，房間大多是和室，也多半有附餐的方案。如果你想住和室、泡大浴場，或是想順路去旭山動物園，這幾間可以考慮；只想住在車站旁圖方便的話，就不太適合。不過有三間的官網不能線上訂房，訂之前要先看清楚。</p><ul><li><strong>扇松園</strong>：這是高砂台的日式旅館，從旭川站開車約10分鐘，也有從旭川站出發的免費接駁車，要事先預約。大浴場不是溫泉，是把高砂台的冷礦泉加熱來用，男女各有一個小露天浴池和三溫暖。17間客房全是和室，只有7間有浴室，其他房間只有洗手台和廁所，洗澡要去大浴場。有附早晚餐的方案，官網也可以直接線上訂房。</li><li><strong>東花苑</strong>：這間在市區5條通，從旭川站開車7分鐘，也可以搭公車約15分鐘，在「4條25丁目」下車再走1分鐘。25間客房都是和室，房間裡沒有浴室也沒有廁所，洗澡要去大浴場，廁所也是共用的。只能打電話訂房，而且要在晚上9點前打；入住也一樣要在晚上9點前到，比較晚才會到旭川的話要留意。有附早餐和附早晚餐的方案。</li><li><strong>Matsueda旅館</strong>：這間在東旭川，從JR東旭川站走10分鐘，開車到旭山動物園約5分鐘。7間客房裡只有1間是附衛浴的西式雙床房，其他都是和室；館內有大浴場，可以泡到晚上11點。這裡不提供浴衣和睡衣，要自己帶。只能打電話訂房，有附早晚餐的方案。</li><li><strong>高砂溫泉</strong>：這是泡湯設施附設的住宿，從旭川站搭計程車約15分鐘；搭公車的話，要先從旭川站走約6分鐘到1條7丁目站牌，搭道北巴士53或630號約30分鐘，在高砂台8丁目下車再走1分鐘。大浴場用的是地下水，不是天然溫泉；想泡天然溫泉，要住有溫泉浴池的特別室，或是另外付費預約家庭湯屋，湯屋限2人使用。大廳有約4,000本漫畫和兒童區，比較適合帶小孩的家庭。官網可以線上訂房，不過哪些方案含餐，訂房時要看清楚。</li><li><strong>龍乃湯溫泉</strong>：這是1951年創業的溫泉旅館，泉質是天然的單純鐵冷礦泉，有露天浴池和三溫暖。從JR東旭川站走10分鐘，離旭山動物園很近。每週二公休，那天住客還是可以泡湯，只是三溫暖和露天浴池不開。官網只有日文，也沒有自己的線上訂房，只列了電話和日本訂房網站Jalan的連結，台灣讀者不太好訂。有一泊二食和附早餐的方案。</li><li><strong>Auberge Sondre</strong>：這是在東旭川櫻岡的整棟出租小屋，只有2棟，一個晚上只收2組客人，每棟最多3人，建議2人住。從旭川站搭JR石北本線到櫻岡站約20分鐘，再走15分鐘；也可以預約免費接駁車，從旭川機場、櫻岡站或旭川站接送，不過時間和姊妹館重疊時，會以姊妹館優先。一泊二食的晚餐是8道法式套餐，晚上6點開始，部分飲料也含在方案裡。官網可以直接線上訂房。櫃台只開到晚上6點，過了6點還沒到又沒先聯絡，可能會被當成取消。</li></ul><h2 id="section-26">住旭川可以買動物園款待券？</h2><p>住在旭川市內的飯店或旅館，可以買動物園只賣給住宿旅客的兩天入園券，叫款待券（おもてなし券）。第一天中午12點以後進場，隔天中午12點前可以再進一次。所以就算中午過後才抵達旭川也不浪費，第一天下午先逛一輪，隔天上午再進去看一次。買的時候要出示能證明住在旭川市內的文件。</p><p>在住的飯店櫃台買最省事。依旭川市公布的販售處名單（2026年5月1日的版本），這篇有自己段落的飯店裡，Dormy Inn旭川、HOTEL AMANEK旭川、露櫻Grand旭川站前這三間的櫃台沒有賣，表裡的露櫻旭川站前一條通、Tabist旭川Station Hotel、Hotel Tetora旭川站前、Asahikawa Ride、Matsueda旅館、龍乃湯溫泉和Auberge Sondre也不在名單上；表裡其他22間的櫃台都有賣。住在沒有賣的飯店，入住先問櫃台能拿什麼當住宿證明，再到旭川站東大廳的<a href="http://www.atca.jp/omotenashi/" rel="noopener noreferrer">旭川觀光物產情報中心</a>或動物園售票處買就好。</p><p>拿到款待券、準備入園時，可以看另外整理的旭山動物園，那一頁寫了入園的方式。</p><h2 id="section-27">旭川住宿稅怎麼算？</h2><p>住旭川每人每晚要付300到700日圓的住宿稅，金額看未稅的每人每晚住宿費，分成三級。這筆稅從2026年4月1日開始收，北海道和旭川市各收一份，兩份一起付給飯店。</p><div class="article-table-scroll article-table--wide" tabindex="0"><table><thead><tr><th scope="col">每人每晚住宿費（未稅）</th><th scope="col">北海道</th><th scope="col">旭川市</th><th scope="col">合計</th></tr></thead><tbody><tr><td>未滿2萬日圓</td><td>100日圓</td><td>200日圓</td><td>300日圓</td></tr><tr><td>2萬以上、未滿5萬日圓</td><td>200日圓</td><td>200日圓</td><td>400日圓</td></tr><tr><td>5萬日圓以上</td><td>500日圓</td><td>200日圓</td><td>700日圓</td></tr></tbody></table></div><p>例如兩人住兩晚、每人每晚住宿費未滿2萬日圓，住宿稅一共是1,200日圓。住宿稅可能在事前付款時跟房費一起收，也可能入住時在櫃台另收，每間做法不同。校外教學之類符合條件的住宿免稅，像嬰幼兒跟大人同床、不另收房費的住宿，也不課稅。</p><h2 id="section-28">延伸資料</h2><ul><li><a href="https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html" rel="noopener noreferrer">旭川市住宿稅說明</a>，稅率、課稅對象與免稅條件。</li><li><a href="https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083541_d/fil/shukuhakuzei_leaflet.pdf" rel="noopener noreferrer">旭川市住宿稅宣傳單</a>，日文、英文、韓文、中文、泰文並列的PDF。</li><li><a href="https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html" rel="noopener noreferrer">北海道住宿稅說明</a>，北海道那一份的稅率。</li><li><a href="https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html" rel="noopener noreferrer">動物園門票與款待券（旭川市）</a>，開園期間與券的使用條件。</li><li><a href="http://www.atca.jp/omotenashi/" rel="noopener noreferrer">旭山動物園款待券（旭川觀光會議協會）</a>，款待券的販售處與買法。</li><li><a href="https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf" rel="noopener noreferrer">旭川站前乘車處介紹（旭川電氣軌道）</a>，站前各乘車處往哪裡。</li></ul><h2 id="section-29">資料來源</h2><p>飯店資訊查核日期：2026年11月12日。</p><p>住客的說法整理自4travel的住客評論，2026年11月12日查。</p><ul><li><a href="https://www.city.asahikawa.hokkaido.jp/kurashi/112/113/1145/d083569.html" rel="noopener noreferrer">旭川市住宿稅說明（旭川市）</a></li><li><a href="https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html" rel="noopener noreferrer">北海道住宿稅說明（北海道）</a></li><li><a href="https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849.html" rel="noopener noreferrer">旭山動物園門票與款待券（旭川市）</a></li><li><a href="https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d052849_d/fil/hotelnadohanndai.pdf" rel="noopener noreferrer">款待券販售處名單（旭川市）</a></li><li><a href="http://www.atca.jp/omotenashi/" rel="noopener noreferrer">旭山動物園款待券（旭川觀光會議協會）</a></li><li><a href="https://www.asahikawa-denkikidou.jp/manage/wp-content/uploads/2026/05/ekimaenoriba_2026.05.10-.pdf" rel="noopener noreferrer">旭川站前乘車處介紹（旭川電氣軌道）</a></li><li><a href="https://www.city.asahikawa.hokkaido.jp/kankou/2100/d053286.html" rel="noopener noreferrer">平和通買物公園（旭川市）</a></li><li><a href="https://www.jr-inn.jp/asahikawa/" rel="noopener noreferrer">JR Inn旭川官網</a></li><li><a href="https://yshotel-asahikawa.com/" rel="noopener noreferrer">Y&#039;s Hotel旭川站前官網</a></li><li><a href="https://www.koko-hotels.com/asahikawa_station/" rel="noopener noreferrer">KOKO HOTEL旭川站前官網</a></li><li><a href="https://www.enhotels.co.jp/asahikawa/" rel="noopener noreferrer">Court Hotel旭川官網</a></li><li><a href="https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/" rel="noopener noreferrer">露櫻Grand旭川站前官網</a></li><li><a href="https://www.ishinhotels.com/wbf/grande-asahikawa" rel="noopener noreferrer">Hotel WBF Grande旭川官網</a></li><li><a href="https://www.toyoko-inn.com/search/detail/00173/" rel="noopener noreferrer">東橫INN旭川站東口官網</a></li><li><a href="https://cabin.kenhotels.com/asahikawa/" rel="noopener noreferrer">天然溫泉Premier Hotel-CABIN-旭川官網</a></li><li><a href="https://amanekhotels.jp/asahikawa/" rel="noopener noreferrer">HOTEL AMANEK旭川官網</a></li><li><a href="https://9chotel.jp/" rel="noopener noreferrer">9C Hotel旭川官網</a></li><li><a href="https://www.toyoko-inn.com/search/detail/00069/" rel="noopener noreferrer">東橫INN旭川站前一條通官網</a></li><li><a href="https://www.superhotel.co.jp/s_hotels/asahikawa/" rel="noopener noreferrer">Super Hotel旭川官網</a></li><li><a href="https://asahikawa-sunhotel.com/" rel="noopener noreferrer">旭川Sun Hotel官網</a></li><li><a href="https://tabist.co.jp/h/N01HASH" rel="noopener noreferrer">Tabist旭川Station Hotel官網</a></li><li><a href="https://rhotels-asahikawa.jp/" rel="noopener noreferrer">R Hotels Inn北海道旭川官網</a></li><li><a href="https://asahikawa.e-tetora.com/" rel="noopener noreferrer">Hotel Tetora旭川站前官網</a></li><li><a href="https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/" rel="noopener noreferrer">露櫻旭川站前一條通官網</a></li><li><a href="http://www.ahm.jp/" rel="noopener noreferrer">Hotel Mates旭川官網</a></li><li><a href="https://www.kuretake-inn.com/asahikawa/" rel="noopener noreferrer">吳竹Inn旭川官網</a></li><li><a href="https://www.asahikawaride.com/" rel="noopener noreferrer">Asahikawa Ride官網</a></li><li><a href="https://www.hotel-cr.com/" rel="noopener noreferrer">Hotel Crescent旭川官網</a></li><li><a href="https://hoshinoresorts.com/ja/hotels/omo7asahikawa/" rel="noopener noreferrer">OMO7旭川官網</a></li><li><a href="https://www.art-asahikawa.com/" rel="noopener noreferrer">Art Hotel旭川官網</a></li><li><a href="https://dormy-hotels.com/dormyinn/hotels/asahikawa/" rel="noopener noreferrer">Dormy Inn旭川官網</a></li><li><a href="https://www.toyo-hotel.net/" rel="noopener noreferrer">旭川Toyo Hotel官網</a></li><li><a href="https://www.platonhotel-asahikawa.com/" rel="noopener noreferrer">Platon Hotel官網</a></li><li><a href="http://www.toukaen.com/" rel="noopener noreferrer">東花苑官網</a></li><li><a href="https://sensyoen.co.jp/" rel="noopener noreferrer">扇松園官網</a></li><li><a href="http://www.takasagoonsen.com/" rel="noopener noreferrer">高砂溫泉官網</a></li><li><a href="https://r.goope.jp/oyadomatsueda/" rel="noopener noreferrer">Matsueda旅館官網</a></li><li><a href="https://tatsunoyuonsen.com/" rel="noopener noreferrer">龍乃湯溫泉官網</a></li><li><a href="https://aubergesondre.com" rel="noopener noreferrer">Auberge Sondre官網</a></li></ul></div></div></div></body></html>
