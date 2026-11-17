@@ -13,7 +13,7 @@ for (const e of plan.embeds) {
   let at = h;
   for (let i = 0; i < e.placement.afterBlocks; i++) at = html.indexOf('</p>', at) + 4;
   const who = e.channelType === 'official' ? '飯店官方' : '住客';
-  const block = `<figure style="margin:1.25rem auto;max-width:420px"><iframe src="${e.url}embed/" loading="lazy" style="width:100%;height:560px;border:1px solid #ddd;border-radius:8px" allowtransparency="true"></iframe><figcaption style="font-size:.9rem;color:#555;margin-top:.4rem">${esc(e.captionDraft)}Instagram：${esc(e.channelName)}（${who}，${e.publishedAt.slice(0, 4)}年）・實際資訊以本文為準</figcaption></figure>`;
+  const block = `<figure style="margin:1.25rem auto;max-width:420px"><iframe src="${e.url}embed/" loading="lazy" style="width:100%;height:560px;border:1px solid #ddd;border-radius:8px" allowtransparency="true"></iframe><figcaption style="font-size:.9rem;color:#555;margin-top:.4rem">${esc(e.captionDraft)}Instagram：${esc(e.channelName)}（${who}，${e.publishedAt.slice(0, 4)}年）・實際資訊以本文為準<br><a href="${e.url}" target="_blank" rel="noopener" style="display:inline-block;margin-top:.4rem;padding:.35rem .8rem;border:1px solid #c13584;border-radius:999px;color:#c13584;text-decoration:none">貼文沒顯示？點這裡到 Instagram 看</a></figcaption></figure>`;
   html = html.slice(0, at) + block + html.slice(at);
 }
 const c = plan.cover;
