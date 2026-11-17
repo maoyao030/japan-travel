@@ -22,7 +22,7 @@
 | 露櫻Grand旭川站前 | 北口走路約2分 | 6:30～9:30 | 奶油可頌、現烤麵包 | 官網訂房免費，其他管道要付費 | [官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3Grand%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 | Super Hotel旭川 | 走路約5分 | 6:30～9:00 | 有機蔬菜沙拉、現烤麵包 | 免費 | [官網](https://www.superhotel.co.jp/s_hotels/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 
-## 旭川飯店含早餐與不含早餐的方案
+## 旭川住宿早餐要另外加購嗎？
 
 同一間飯店在訂房網站上常常列出好幾種方案，差別往往就在含不含早餐。要不要另外加購，看你訂的方案。多數飯店都有含早餐和不含早餐的方案，訂的時候選含早，早上就不用另外付錢。日文的方案名稱寫「朝食付」就是含早餐，寫「素泊まり」「素泊り」「朝食なし」就是不含。在 Trip.com 或 Agoda 上，就看房型底下有沒有寫「含早餐」。早餐多少錢，到訂房網站選方案時就看得到。
 
@@ -152,7 +152,7 @@ Art Hotel旭川（アートホテル旭川）把早餐擺在15樓的景觀餐廳
 
 看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-1487846/)｜[官網](https://www.enhotels.co.jp/asahikawa/)
 
-## 旭川飯店早餐時間
+## 旭川飯店早餐幾點開始？
 
 早上要趕車的人，最想先知道早餐幾點開。表上最早的是OMO7旭川的6:00，多數6:30開始，Hotel Crescent旭川和旭川庭院飯店是7:00。
 
