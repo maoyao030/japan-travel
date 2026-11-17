@@ -13,7 +13,7 @@ for (const e of plan.embeds) {
   let at = h;
   for (let i = 0; i < e.placement.afterBlocks; i++) at = html.indexOf('</p>', at) + 4;
   const who = e.channelType === 'official' ? '飯店官方' : '住客';
-  const block = `<figure style="margin:1.25rem auto;max-width:420px"><iframe src="${e.url}embed/" loading="lazy" style="width:100%;height:560px;border:1px solid #ddd;border-radius:8px" allowtransparency="true"></iframe><figcaption style="font-size:.9rem;color:#555;margin-top:.4rem">${esc(e.captionDraft)}Instagram：${esc(e.channelName)}（${who}，${e.publishedAt.slice(0, 4)}年）・實際資訊以本文為準<br><a href="${e.url}" target="_blank" rel="noopener" style="display:inline-block;margin-top:.4rem;padding:.35rem .8rem;border:1px solid #c13584;border-radius:999px;color:#c13584;text-decoration:none">貼文沒顯示？點這裡到 Instagram 看</a></figcaption></figure>`;
+  const block = `<figure style="margin:1.25rem auto;max-width:300px"><iframe src="${e.url}embed/" loading="lazy" style="width:100%;height:400px;border:1px solid #ddd;border-radius:8px" allowtransparency="true"></iframe><figcaption style="font-size:.78rem;color:#666;margin-top:.4rem">${esc(e.captionDraft)}Instagram：${esc(e.channelName)}（${who}，${e.publishedAt.slice(0, 4)}年）・實際資訊以本文為準</figcaption></figure>`;
   html = html.slice(0, at) + block + html.slice(at);
 }
 const c = plan.cover;
@@ -23,9 +23,9 @@ html = html.replace('<div class="article-body">', cover + '<div class="article-b
 html = html.replace(/<h2 id="[^"]*">資料來源<\/h2><ul>([\s\S]*?)<\/ul><p>(資料更新：[^<]*)<\/p>/, (m, items, updated) => {
   const n = (items.match(/<li>/g) || []).length;
   const links = items.replace(/<li>/g, '').replace(/<\/li>/g, '').replace(/官網<\/a>/g, '</a>').replace(/<\/a><a/g, '</a><span>・</span><a');
-  return `<aside class="src-box"><p class="src-updated">${updated}</p><details><summary>資料來源：${n} 間飯店的官方網站</summary><p class="src-links">${links}</p></details></aside>`;
+  return `<aside class="src-box"><p class="src-updated">${updated}</p><p class="src-links">資料來源（${n} 間飯店的官方網站）：${links}</p></aside>`;
 });
-html = html.replace('</style>', `.src-box{margin:2.5rem 0 0;padding:1rem 1.1rem;border-top:1px solid #ddd;font-size:.88rem;color:#666;line-height:1.9}
-.src-box p{margin:0;font-size:inherit}.src-box summary{cursor:pointer;color:#444}.src-box a{color:#666}.src-links{margin-top:.5rem!important}.src-links span{color:#bbb}</style>`);
+html = html.replace('</style>', `.src-box{margin:2.5rem 0 0;padding:1rem 1.1rem;border-top:1px solid #ddd;font-size:.75rem;color:#777;line-height:1.8}
+.src-box p{margin:0;font-size:inherit}.src-box summary{cursor:pointer;color:#444}.src-box a{color:#666}.src-links{margin-top:.2rem!important}.src-links span{color:#bbb}</style>`);
 writeFileSync(join(here, 'preview-media.html'), html);
 console.log(`嵌入 ${plan.embeds.length} 則`);
