@@ -2162,3 +2162,12 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 阻礙：無。
 - 唯一下一步：Darren 看溫泉頁預覽；沒問題的話自駕頁照同一流程重跑。
 - 測試與 Git：分支 `test/stay-local`，全部本機 commit，沒有 push，沒有動 `main`、Sanity、D1。
+
+## 2026-11-17｜Claude Code｜自駕頁照新流程重跑
+
+- 已完成：〈旭川自駕住宿〉照 `stay-topic-page.md` 十步流程從頭重跑，放在 `content-experiments/stay-local-test-2026-11-16/parking2/`。這次從查問法與讀競品做起（舊版兩步都沒做）。動筆前檢查擋下 9 條；讀者驗收六題第一次 4 過 2 不過（JR Inn 與 KOKO 同一座停車場兩節對不上、第二組開頭在描述飯店），退回一次後六題全過。`final.md`（正文 3,593 字，`check-voice` 通過、`check-benchmark` 無錯誤無警告）、`embed-plan.json`（四則 Instagram：CABIN、AMANEK、Y's 官方的停車說明與 JR Inn 住客貼文）、`preview-media.html`。
+- 三頁（早餐、溫泉、自駕）都照同一套流程過關，都是驗收退回一次後六題全過。學到的六條寫進 `stay-topic-page.md`「第三頁重跑學到的」。
+- 尚未完成：三頁與主頁都沒上線、沒登記成頁型範本；網站程式的嵌入直接顯示與資料來源小字還沒做；流程沒接進自動寫作（`local-writer.md`），排定工作仍暫停；動筆前檢查與驗收目前靠助手，沒有程式；封面三頁同一張，要換；Trip.com、Agoda 連結沒有逐一打開確認；譯名表待登記（Matsueda旅館、兩間租車營業所、KOKO 舊名、OMO7、WBF、Crescent、Super Hotel、庭院飯店、D-Parking）；露櫻Grand 車位數官網兩個數字對不上（176 與分類加總 232）；JR Inn 住宿期間中途進出怎麼算查不到。舊資料夾 `parking/`、`onsen/` 保留當對照。
+- 阻礙：無。
+- 唯一下一步：Darren 看自駕頁預覽；三頁都認可後，決定先上線還是先把流程接進自動寫作。
+- 測試與 Git：分支 `test/stay-local`，全部本機 commit，沒有 push，沒有動 `main`、Sanity、D1。
