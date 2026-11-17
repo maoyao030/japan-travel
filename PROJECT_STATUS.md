@@ -2153,3 +2153,12 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 阻礙：無。
 - 唯一下一步：溫泉頁照新流程從頭重跑一次，驗證這套流程換一頁也能一次過關。
 - 測試與 Git：只改規則文件與測試資料夾；分支 `test/stay-local`，全部是本機 commit，沒有 push，沒有動 `main`、Sanity、D1。
+
+## 2026-11-17｜Claude Code｜溫泉頁照新流程重跑
+
+- 已完成：〈旭川溫泉飯店〉照 `stay-topic-page.md` 十步流程從頭重跑，放在 `content-experiments/stay-local-test-2026-11-16/onsen2/`。動筆前檢查擋下 8 條；讀者驗收六題第一次 4 過 2 不過（OMO7 沒直接回答、扇松園沒有去法），退回一次後六題全過。`final.md`（正文 3,316 字，`check-voice` 通過、`check-benchmark` 無錯誤）、`embed-plan.json`（六間各一則 Instagram，露櫻Grand 與 Super Hotel 找不到合格貼文）、`preview-media.html`。
+- 新查到的事實：OMO7旭川官網首頁的設施清單把「温泉」標成沒有、「温浴施設」標成有（`onsen2/facts.md` SB9），舊事實 F684 讀反了；出湯號現行時刻（SB1）。學到的四條寫進 `stay-topic-page.md`「第二頁重跑學到的」。
+- 尚未完成：溫泉頁與早餐頁都沒上線；自駕頁還沒照新流程重跑；網站程式的嵌入直接顯示與資料來源小字還沒做；流程沒接進自動寫作；`check-benchmark` 兩個警告（計程車、神威之湯沒附原文）與譯名表登記待處理；舊資料夾 `onsen/` 保留當對照。
+- 阻礙：無。
+- 唯一下一步：Darren 看溫泉頁預覽；沒問題的話自駕頁照同一流程重跑。
+- 測試與 Git：分支 `test/stay-local`，全部本機 commit，沒有 push，沒有動 `main`、Sanity、D1。
