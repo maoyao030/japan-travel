@@ -7,7 +7,8 @@ const plan = JSON.parse(readFileSync(join(here, 'embed-plan.json'), 'utf8'));
 let html = readFileSync(join(here, 'preview.html'), 'utf8');
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 for (const e of plan.embeds) {
-  const h = html.indexOf(`>${e.placement.heading}</h3>`);
+  const hs = [e.placement.heading, e.placement.heading.replace(/'/g, '&#039;'), e.placement.heading.replace(/'/g, '&#x27;'), e.placement.heading.replace(/'/g, '&apos;')];
+  const h = Math.max(...hs.map((x) => html.indexOf(`>${x}</h3>`)));
   if (h < 0) throw new Error(`找不到標題：${e.placement.heading}`);
   let at = h;
   for (let i = 0; i < e.placement.afterBlocks; i++) at = html.indexOf('</p>', at) + 4;
