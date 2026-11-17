@@ -19,5 +19,13 @@ for (const e of plan.embeds) {
 const c = plan.cover;
 const cover = `<figure style="margin:0 0 1.25rem"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(c.file)}?width=1200" alt="${esc(c.alt)}" style="width:100%;border-radius:8px"><figcaption style="font-size:.85rem;color:#666">${esc(c.alt)}（${c.source}，${c.license}）</figcaption></figure>`;
 html = html.replace('<div class="article-body">', cover + '<div class="article-body">');
+// 資料來源：收成一塊小字、可展開的區塊；更新日期放在最下面一行小字（Darren 2026-11-17：資料來源的 UI 要調整）
+html = html.replace(/<h2 id="[^"]*">資料來源<\/h2><ul>([\s\S]*?)<\/ul><p>(資料更新：[^<]*)<\/p>/, (m, items, updated) => {
+  const n = (items.match(/<li>/g) || []).length;
+  const links = items.replace(/<li>/g, '').replace(/<\/li>/g, '').replace(/官網<\/a>/g, '</a>').replace(/<\/a><a/g, '</a><span>・</span><a');
+  return `<aside class="src-box"><p class="src-updated">${updated}</p><details><summary>資料來源：${n} 間飯店的官方網站</summary><p class="src-links">${links}</p></details></aside>`;
+});
+html = html.replace('</style>', `.src-box{margin:2.5rem 0 0;padding:1rem 1.1rem;border-top:1px solid #ddd;font-size:.88rem;color:#666;line-height:1.9}
+.src-box p{margin:0;font-size:inherit}.src-box summary{cursor:pointer;color:#444}.src-box a{color:#666}.src-links{margin-top:.5rem!important}.src-links span{color:#bbb}</style>`);
 writeFileSync(join(here, 'preview-media.html'), html);
 console.log(`嵌入 ${plan.embeds.length} 則`);
