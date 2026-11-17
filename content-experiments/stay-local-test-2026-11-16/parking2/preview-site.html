@@ -1,0 +1,3520 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>旭川自駕住宿推薦，14間飯店的停車場與停車費比較</title><style>:root {
+  color-scheme: light;
+  /* Keep this value so browsers abandon the CSS URL cached during the 2026-08-30 redirect incident. */
+  --asset-revision: "2026-08-30-css-redirect-fix";
+  /* 2026-10-21 改成「車站站牌」配色：淺灰底、白卡片、站牌綠。 */
+  --ink: #1a1f2b;
+  --muted: #5b6170;
+  --paper: #f5f6f8;
+  --surface: #ffffff;
+  --forest: #0b6e4f;
+  --forest-light: #e5f2ec;
+  --clay: #a4532d; /* 2026-09-30 由 #c86f46 加深，小字對淺底對比達 4.5 以上 */
+  --line: #e1e4e9;
+  --shadow: 0 6px 24px rgb(26 31 43 / 6%);
+  --radius: 1.25rem;
+  /* 字體只在這裡設定：2026-09-30 Darren 決定改用裝置內建中文字體，不再下載網頁字型（手機效能考量）。
+     iPhone／Mac 用蘋方，Android 內建的思源黑體（Noto Sans CJK），Windows 用微軟正黑體。 */
+  --font-sans: "PingFang TC", "Noto Sans CJK TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-heading: var(--font-sans);
+  font-family: var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+}
+
+.shell {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 20;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--ink);
+  color: white;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-header {
+  border-bottom: 1px solid rgb(23 33 28 / 10%);
+  background: rgb(244 241 232 / 90%);
+  backdrop-filter: blur(12px);
+}
+
+.header-inner {
+  display: flex;
+  min-height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.brand small {
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--clay);
+  border-radius: 99px;
+  color: var(--clay);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brand-mark {
+  width: 1rem;
+  height: 1.35rem;
+  border-radius: 0.15rem;
+  background: linear-gradient(135deg, var(--forest) 0 48%, var(--clay) 48% 100%);
+  transform: skewY(-8deg);
+}
+
+.desktop-nav {
+  display: flex;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.desktop-nav a,
+.mobile-nav a {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus-visible,
+.mobile-nav a:hover,
+.mobile-nav a:focus-visible {
+  color: var(--forest);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--ink);
+  background: var(--surface);
+  backdrop-filter: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  min-height: 7.25rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.masthead-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.brand {
+  justify-self: center;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  line-height: 1;
+}
+
+.masthead-actions {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+
+.site-nav-row {
+  border-top: 3px solid var(--ink);
+}
+
+.desktop-nav {
+  min-height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 4vw, 3.25rem);
+}
+
+.desktop-nav a {
+  color: var(--ink);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4.5rem, 10vw, 8.5rem) 0 clamp(4rem, 8vw, 7rem);
+}
+
+.hero::before,
+.hero::after {
+  position: absolute;
+  z-index: -1;
+  border-radius: 999px;
+  content: "";
+}
+
+.hero::before {
+  top: -12rem;
+  right: -8rem;
+  width: 32rem;
+  height: 32rem;
+  border: 4rem solid rgb(30 77 58 / 8%);
+}
+
+.hero::after {
+  bottom: -10rem;
+  left: -5rem;
+  width: 19rem;
+  height: 19rem;
+  background: rgb(200 111 70 / 8%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
+  align-items: end;
+  gap: clamp(2.5rem, 7vw, 7rem);
+}
+
+.hero h1 {
+  max-width: 13ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 8vw, 6.6rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1.06;
+}
+
+.hero h1 span {
+  color: var(--forest);
+}
+
+.hero-copy {
+  padding-bottom: 0.7rem;
+}
+
+.hero-copy > p {
+  margin-top: 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.primary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.2rem;
+  border-radius: 0.65rem;
+  background: var(--forest);
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.primary-link::after {
+  content: "→";
+}
+
+.proof-strip {
+  border-block: 1px solid var(--line);
+  background: rgb(255 253 248 / 55%);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 1.2rem 0;
+  list-style: none;
+}
+
+.proof-grid li {
+  padding: 0.35rem 1.5rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.proof-grid li + li {
+  border-left: 1px solid var(--line);
+}
+
+.proof-grid strong {
+  display: block;
+  color: var(--ink);
+}
+
+.section {
+  padding: clamp(4.5rem, 9vw, 8rem) 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.25rem;
+}
+
+.section-heading h2 {
+  max-width: 14ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}
+
+.section-heading > p {
+  max-width: 31rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1rem;
+}
+
+.topic-card {
+  position: relative;
+  min-height: 20rem;
+  overflow: hidden;
+  padding: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.topic-card:hover,
+.topic-card:focus-visible {
+  box-shadow: 0 22px 60px rgb(22 38 29 / 14%);
+  transform: translateY(-4px);
+}
+
+.topic-card--inactive:hover {
+  box-shadow: var(--shadow);
+  transform: none;
+}
+
+.coming-soon {
+  float: right;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.topic-card::after {
+  position: absolute;
+  right: -3rem;
+  bottom: -3.5rem;
+  width: 10rem;
+  height: 10rem;
+  border: 1.5rem solid var(--forest-light);
+  border-radius: 50%;
+  content: "";
+}
+
+.topic-card:nth-child(2)::after {
+  border-radius: 0.5rem;
+  transform: rotate(20deg);
+}
+
+.topic-card:nth-child(3)::after {
+  border-color: rgb(200 111 70 / 18%);
+  transform: skew(-12deg);
+}
+
+.topic-number {
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.topic-card h3 {
+  margin: 4.5rem 0 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+}
+
+.topic-card p {
+  position: relative;
+  z-index: 1;
+  max-width: 21ch;
+  margin: 0;
+  color: var(--muted);
+}
+
+.home-intro {
+  padding: clamp(3.5rem, 7vw, 6rem) 0 clamp(2.75rem, 6vw, 4.5rem);
+  text-align: center;
+}
+
+.home-intro-inner {
+  max-width: 54rem;
+}
+
+.home-intro h1 {
+  max-width: 16ch;
+  margin: 0 auto;
+  font-family: var(--font-heading);
+  font-size: clamp(2.7rem, 6vw, 4.8rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.14;
+}
+
+.home-intro h1 span {
+  display: inline-block;
+}
+
+.home-intro p:last-child {
+  max-width: 48rem;
+  margin: 1.5rem auto 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.8vw, 1.13rem);
+}
+
+.home-feature {
+  padding-bottom: clamp(4.5rem, 8vw, 7rem);
+}
+
+.home-section-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.home-section-bar p {
+  margin: 0;
+}
+
+.home-section-bar a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.home-section-bar a:hover,
+.home-section-bar a:focus-visible {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(18rem, 0.7fr);
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.lead-story-media,
+.story-card-media {
+  display: block;
+  overflow: hidden;
+  background: var(--forest-light);
+}
+
+.lead-story-media img,
+.story-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.lead-story-media:hover img,
+.lead-story-media:focus-visible img,
+.story-card-media:hover img,
+.story-card-media:focus-visible img {
+  transform: scale(1.015);
+}
+
+.lead-story-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.story-kicker {
+  margin: 0 0 0.9rem;
+  color: var(--clay);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.lead-story-copy h2,
+.story-card h3 {
+  font-family: var(--font-heading);
+  line-height: 1.32;
+}
+
+.lead-story-copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  letter-spacing: -0.035em;
+}
+
+.lead-story-copy h2 a,
+.story-card h3 a {
+  text-decoration: none;
+}
+
+.lead-story-copy h2 a:hover,
+.lead-story-copy h2 a:focus-visible,
+.story-card h3 a:hover,
+.story-card h3 a:focus-visible {
+  color: var(--forest);
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.16em;
+}
+
+.lead-story-copy > p:not(.story-kicker) {
+  margin: 1.25rem 0 1.5rem;
+  color: var(--muted);
+}
+
+.text-link {
+  align-self: flex-start;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid currentcolor;
+  color: var(--forest);
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.text-link::after {
+  margin-left: 0.5rem;
+  content: "→";
+}
+
+.home-section {
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+
+.home-section-header,
+.home-guide-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.72fr);
+  align-items: end;
+  gap: clamp(2rem, 7vw, 7rem);
+  margin-bottom: 2.25rem;
+}
+
+.home-section-header h2,
+.home-guide-heading h2 {
+  max-width: 15ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.22;
+}
+
+.home-section-header > p,
+.home-guide-heading > p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.story-card {
+  padding-top: 1rem;
+  border-top: 2px solid var(--ink);
+}
+
+.story-card-media {
+  margin-bottom: 1.25rem;
+}
+
+.story-card h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+}
+
+.story-card > p:last-child {
+  display: -webkit-box;
+  margin: 0.9rem 0 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.9rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.home-categories {
+  border-block: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.home-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  border-bottom: 1px solid var(--line);
+}
+
+.home-category-item {
+  display: flex;
+  min-height: 15rem;
+  flex-direction: column;
+  padding: 1.35rem;
+  border-top: 2px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.home-category-item + .home-category-item {
+  border-left: 1px solid var(--line);
+}
+
+.home-category-item > span {
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.home-category-item h3 {
+  margin: 2.6rem 0 0.65rem;
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  line-height: 1.3;
+}
+
+.home-category-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.75;
+}
+
+.home-category-item b {
+  margin-top: auto;
+  color: var(--forest);
+  font-size: 1.1rem;
+}
+
+.home-category-item b::after {
+  content: "→";
+}
+
+.home-category-item:hover h3,
+.home-category-item:focus-visible h3 {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.home-guide {
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+
+.home-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin: 0;
+  padding: 0;
+  counter-reset: guide-step;
+  list-style: none;
+}
+
+.home-guide-grid li {
+  padding-top: 1rem;
+  border-top: 2px solid var(--ink);
+  counter-increment: guide-step;
+}
+
+.home-guide-grid li::before {
+  display: block;
+  margin-bottom: 2.25rem;
+  color: var(--clay);
+  content: "0" counter(guide-step);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.home-guide-grid h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+}
+
+.home-guide-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.home-guide-about {
+  max-width: 48rem;
+  margin: clamp(2rem, 4vw, 3rem) 0 0;
+  color: var(--muted);
+}
+
+.category-hero {
+  border-bottom: 1px solid var(--line);
+}
+
+.category-questions {
+  background: var(--surface);
+}
+
+.category-questions h2 {
+  max-width: 9ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}
+
+.category-questions .topic-checklist {
+  margin: 0;
+}
+
+.topic-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.topic-plan-card {
+  min-height: 12rem;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+}
+
+.topic-status {
+  float: right;
+  padding: 0.12rem 0.55rem;
+  border-radius: 99px;
+  background: var(--forest-light);
+  color: var(--forest);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.topic-status--priority {
+  background: var(--forest);
+  color: white;
+}
+
+.topic-status--candidate {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+}
+
+.topic-plan-card h2,
+.topic-plan-card h3 {
+  margin: 2.5rem 0 0.4rem;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+}
+
+.topic-plan-card--published {
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.topic-plan-card--published:hover,
+.topic-plan-card--published:focus-visible {
+  border-color: var(--forest);
+  transform: translateY(-2px);
+}
+
+.topic-plan-card--published:hover h2,
+.topic-plan-card--published:focus-visible h2,
+.topic-plan-card--published:hover h3,
+.topic-plan-card--published:focus-visible h3 {
+  color: var(--forest);
+}
+
+.topic-status--published {
+  border-color: var(--forest);
+  color: var(--forest);
+}
+
+.topic-plan-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.category-stats {
+  margin: 1.5rem 0 0;
+  color: var(--forest);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.category-hero-nav {
+  padding: 1.35rem 1.5rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.category-hero-nav .aside-title {
+  margin: 0 0 0.5rem;
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.category-hero-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.category-hero-nav ul ul {
+  padding-left: 0.9rem;
+}
+
+.category-hero-nav a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.category-hero-nav ul ul a {
+  padding: 0.45rem 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.category-hero-nav > ul > li:first-child > a {
+  border-top: 0;
+}
+
+.category-hero-nav a small {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.category-hero-nav a:hover span,
+.category-hero-nav a:focus-visible span {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.cluster-section {
+  border-top: 1px solid var(--line);
+}
+
+.cluster-section .section-heading h2 {
+  max-width: 18ch;
+}
+
+.cluster-group + .cluster-group {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: clamp(3rem, 6vw, 5rem);
+  border-top: 1px solid var(--line);
+}
+
+.cluster-group-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 0.42fr);
+  align-items: end;
+  gap: 1.5rem clamp(2rem, 6vw, 5rem);
+  margin-bottom: 2.25rem;
+}
+
+.cluster-group-header h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.cluster-group-header h3 a {
+  text-decoration: none;
+}
+
+.cluster-group-header h3 a:hover,
+.cluster-group-header h3 a:focus-visible {
+  color: var(--forest);
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.16em;
+}
+
+.cluster-group-header > div > p:not(.eyebrow) {
+  max-width: 40rem;
+  margin: 0.9rem 0 0;
+  color: var(--muted);
+}
+
+.cluster-group-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.cluster-group-meta p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.cluster-subheading {
+  margin: 0 0 0.85rem;
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.cluster-direct {
+  margin-bottom: 2.75rem;
+}
+
+.cluster-link-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 0 2.5rem;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.cluster-link-columns li {
+  border-bottom: 1px solid var(--line);
+}
+
+.cluster-link-columns a,
+.cluster-links a {
+  display: block;
+  padding: 0.7rem 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  text-decoration: none;
+}
+
+.cluster-link-columns a:hover,
+.cluster-link-columns a:focus-visible,
+.cluster-links a:hover,
+.cluster-links a:focus-visible {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.cluster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.cluster-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--paper);
+}
+
+.cluster-card h3,
+.cluster-card h4 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+.cluster-card h3 a,
+.cluster-card h4 a {
+  text-decoration: none;
+}
+
+.cluster-card h3 a:hover,
+.cluster-card h3 a:focus-visible,
+.cluster-card h4 a:hover,
+.cluster-card h4 a:focus-visible {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.cluster-count {
+  margin: 0.45rem 0 0;
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.cluster-desc {
+  display: -webkit-box;
+  margin: 0.8rem 0 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.cluster-links {
+  margin: 1.1rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.cluster-links li {
+  border-bottom: 1px solid var(--line);
+}
+
+.cluster-links a {
+  padding: 0.55rem 0;
+  font-size: 0.88rem;
+}
+
+.cluster-card-links > summary {
+  display: none;
+}
+
+.cluster-more {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid currentcolor;
+  color: var(--forest);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.cluster-more::after {
+  margin-left: 0.4rem;
+  content: "→";
+}
+
+.hub-children .cluster-card {
+  background: var(--surface);
+}
+
+.cluster-pending p {
+  max-width: 40rem;
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.category-latest {
+  border-top: 1px solid var(--line);
+}
+
+.story-kicker a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.story-kicker a:hover,
+.story-kicker a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.category-tags {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.category-tags .cluster-pending-copy {
+  max-width: 40rem;
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+}
+
+.category-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.category-tag-list a {
+  padding: 0.4rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: var(--paper);
+  color: var(--forest);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.category-tag-list a:hover,
+.category-tag-list a:focus-visible {
+  border-color: var(--forest);
+  background: var(--forest-light);
+}
+
+.category-siblings {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.category-siblings .home-category-grid {
+  border-bottom: 0;
+}
+
+.article-row-label {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid var(--forest);
+  border-radius: 99px;
+  color: var(--forest);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.article-cluster-nav {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.article-cluster-nav div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.article-cluster-nav a {
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--forest);
+  border-radius: 99px;
+  color: var(--forest);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-cluster-nav a:hover,
+.article-cluster-nav a:focus-visible {
+  background: var(--forest-light);
+}
+
+.decision-section {
+  background: var(--forest);
+  color: white;
+}
+
+.decision-section .eyebrow {
+  color: #efb08f;
+}
+
+.decision-section .section-heading > p {
+  color: rgb(255 255 255 / 70%);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0;
+  counter-reset: step;
+  list-style: none;
+}
+
+.steps li {
+  padding-top: 1.25rem;
+  border-top: 1px solid rgb(255 255 255 / 25%);
+  counter-increment: step;
+}
+
+.steps li::before {
+  display: block;
+  margin-bottom: 2rem;
+  color: #efb08f;
+  content: "0" counter(step);
+  font-weight: 800;
+}
+
+.steps h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.steps p {
+  margin: 0;
+  color: rgb(255 255 255 / 70%);
+}
+
+.site-footer {
+  padding: 3rem 0;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.footer-grid {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-title {
+  margin: 0;
+  font-weight: 900;
+}
+
+.footer-grid p:not(.footer-title) {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
+  font-size: 0.86rem;
+}
+
+.footer-links a,
+.footer-links button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible,
+.footer-links button:hover,
+.footer-links button:focus-visible {
+  color: var(--forest);
+}
+
+.analytics-consent {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  width: min(calc(100% - 2rem), 62rem);
+  margin-inline: auto;
+  padding: 1.25rem;
+  border: 1px solid var(--ink);
+  background: var(--surface);
+  box-shadow: 0 22px 70px rgb(22 38 29 / 22%);
+}
+
+.analytics-consent[hidden] {
+  display: none;
+}
+
+.analytics-consent .analytics-consent-title {
+  margin: 0 0 0.35rem;
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+}
+
+.analytics-consent p {
+  max-width: 52rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.analytics-consent a {
+  display: inline-block;
+  margin-top: 0.55rem;
+  color: var(--forest);
+  font-size: 0.84rem;
+  text-underline-offset: 0.2em;
+}
+
+.analytics-consent-actions {
+  display: flex;
+  align-items: end;
+  gap: 0.6rem;
+  padding-left: 1.25rem;
+}
+
+.analytics-consent-actions button {
+  min-height: 2.65rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--forest);
+  border-radius: 0.45rem;
+  background: transparent;
+  color: var(--forest);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.analytics-consent-actions .analytics-consent-accept {
+  background: var(--forest);
+  color: white;
+}
+
+.analytics-consent-actions button:hover,
+.analytics-consent-actions button:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 2px;
+}
+
+.policy-page {
+  padding: clamp(4rem, 9vw, 7rem) 0 clamp(5rem, 10vw, 8rem);
+}
+
+.policy-header,
+.policy-content {
+  max-width: 52rem;
+}
+
+.policy-header {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.policy-header h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+}
+
+.policy-header > p:last-child,
+.policy-content {
+  color: var(--muted);
+}
+
+.policy-content {
+  padding-top: 2.5rem;
+}
+
+.policy-content section {
+  margin-top: 3rem;
+}
+
+.policy-content h2 {
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.policy-content a {
+  color: var(--forest);
+  text-underline-offset: 0.2em;
+}
+
+.contact-page {
+  padding: clamp(4rem, 9vw, 7rem) 0 clamp(5rem, 10vw, 8rem);
+}
+
+.contact-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.62fr);
+  align-items: end;
+  gap: clamp(2rem, 7vw, 7rem);
+  padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-header .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: -1rem;
+}
+
+.contact-header h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 8vw, 5.8rem);
+  letter-spacing: -0.05em;
+  line-height: 1.06;
+}
+
+.contact-header > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+.contact-header a,
+.contact-guidance a,
+.contact-form a {
+  color: var(--forest);
+  text-underline-offset: 0.2em;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.42fr) minmax(0, 1fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  padding-top: clamp(3rem, 7vw, 5rem);
+}
+
+.contact-guidance {
+  align-self: start;
+  padding-top: 0.35rem;
+}
+
+.contact-guidance h2 {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.contact-guidance ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.contact-guidance li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-guidance > p {
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.contact-guidance .contact-attachment-note {
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--clay);
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.35rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.contact-field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-form label:not(.contact-consent) {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.contact-form label > span {
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.contact-form label small {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #aeb4b0;
+  border-radius: 0.35rem;
+  background: white;
+  color: var(--ink);
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 12rem;
+  resize: vertical;
+}
+
+.contact-form input:focus-visible,
+.contact-form select:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form button:focus-visible {
+  outline: 3px solid var(--clay);
+  outline-offset: 2px;
+}
+
+.field-help {
+  margin: -0.9rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-consent {
+  display: grid;
+  grid-template-columns: 1.15rem minmax(0, 1fr);
+  align-items: start;
+  gap: 0.7rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.contact-consent input {
+  width: 1.05rem;
+  min-height: 1.05rem;
+  margin-top: 0.25rem;
+  accent-color: var(--forest);
+}
+
+.contact-config-notice {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--clay);
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.contact-submit-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-submit-row button {
+  min-height: 3rem;
+  padding: 0.7rem 1.15rem;
+  border: 1px solid var(--forest);
+  border-radius: 0.4rem;
+  background: var(--forest);
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+}
+
+.contact-submit-row button:disabled {
+  border-color: var(--line);
+  background: var(--line);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.contact-form-status {
+  flex: 1;
+  min-width: 13rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.contact-form-status.is-success {
+  color: var(--forest);
+  font-weight: 800;
+}
+
+.contact-form-status.is-error {
+  color: #8f321f;
+  font-weight: 800;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  padding-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.breadcrumbs a,
+.breadcrumbs > span[aria-hidden] {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--forest);
+}
+
+.topic-hero {
+  padding: clamp(4rem, 9vw, 7rem) 0;
+}
+
+.topic-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(17rem, 0.42fr);
+  align-items: end;
+  gap: clamp(2.5rem, 8vw, 7rem);
+}
+
+.topic-hero-grid--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.topic-hero h1,
+.article-header h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+}
+
+.topic-intro,
+.article-lede {
+  max-width: 43rem;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+.prototype-alert {
+  padding: 1.4rem;
+  border-left: 4px solid var(--clay);
+  background: rgb(255 253 248 / 65%);
+}
+
+.prototype-alert p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.topic-content {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.topic-layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.38fr) minmax(0, 1fr);
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+.topic-checklist {
+  padding: 0;
+  counter-reset: topic-step;
+  list-style: none;
+}
+
+.topic-checklist li {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  counter-increment: topic-step;
+}
+
+.topic-checklist li::before {
+  color: var(--clay);
+  content: "0" counter(topic-step);
+  font-weight: 800;
+}
+
+.compact-heading {
+  margin-bottom: 1rem;
+}
+
+.hub-children {
+  margin-bottom: 3.5rem;
+}
+
+.hub-related-articles {
+  margin-top: 4rem;
+}
+
+.article-list {
+  border-top: 1px solid var(--line);
+}
+
+.article-row {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  gap: 1rem;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.article-row > span,
+.article-row small {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.article-row h2,
+.article-row h3,
+.article-row h4 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 3vw, 1.75rem);
+  line-height: 1.35;
+}
+
+.article-row p {
+  margin: 0.45rem 0;
+  color: var(--muted);
+}
+
+.article-row b {
+  align-self: center;
+  color: var(--clay);
+  font-size: 1.5rem;
+}
+
+.article-row:hover h3,
+.article-row:focus-visible h3,
+.article-row:hover h4,
+.article-row:focus-visible h4 {
+  color: var(--forest);
+}
+
+.tag-article-group + .tag-article-group {
+  margin-top: 3.5rem;
+}
+
+.tag-article-group > h3 {
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.tag-article-group > h3 a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+.article-page {
+  padding-bottom: clamp(5rem, 10vw, 9rem);
+}
+
+.article-header {
+  width: min(100% - 2rem, 43rem);
+  padding-top: clamp(3.5rem, 8vw, 6rem);
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.article-header h1 {
+  max-width: none;
+  font-size: clamp(2.5rem, 4.8vw, 3.6rem);
+  letter-spacing: -0.025em;
+  line-break: strict;
+  line-height: 1.16;
+  overflow-wrap: break-word;
+  text-wrap: wrap;
+  word-break: auto-phrase;
+}
+
+.article-header h1 > span {
+  display: block;
+}
+
+.article-header h1 .article-title-phrase {
+  display: inline-block;
+}
+
+.article-lede {
+  margin: 1.5rem 0 0;
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  line-height: 1.8;
+}
+
+.article-meta a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.article-meta a:hover,
+.article-meta a:focus-visible {
+  color: var(--forest);
+}
+
+.article-list-more {
+  margin: 1.5rem 0 0;
+}
+
+.category-articles + .category-articles {
+  margin-top: 3.5rem;
+}
+
+.home-topic-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
+  gap: 3rem clamp(2rem, 5vw, 5rem);
+}
+
+.home-topic-group .section-heading {
+  margin-bottom: 1rem;
+}
+
+.home-topic-group .section-heading h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+}
+
+.home-topic-group .article-row {
+  grid-template-columns: 1.6rem 1fr auto;
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+
+.home-topic-group .article-row h4 {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.home-topic-group .article-row p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0.3rem 0 0;
+  font-size: 0.88rem;
+}
+
+.home-topic-group .article-row b {
+  font-size: 1.1rem;
+}
+
+.home-topic-group .article-list-more {
+  margin-top: 1rem;
+  font-size: 0.92rem;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.article-cover {
+  margin-top: 0;
+  margin-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.article-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow);
+}
+
+.article-cover figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.35rem 1.5rem;
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.article-cover figcaption > span:first-child {
+  max-width: 70ch;
+}
+
+.article-cover figcaption a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+.reading-layout {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 43rem) 12rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.reading-aside {
+  position: sticky;
+  top: 2rem;
+  min-width: 0;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  align-self: start;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.aside-title {
+  font-weight: 800;
+}
+
+.reading-aside ul {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reading-aside a {
+  display: block;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  text-decoration: none;
+}
+
+.reading-aside a:hover {
+  border-color: var(--clay);
+  color: var(--forest);
+}
+
+.reading-toc-mobile {
+  display: none;
+}
+
+.article-body {
+  grid-column: 2;
+  min-width: 0;
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.9;
+}
+
+.quick-answer {
+  margin-bottom: 4rem;
+  padding: 1.6rem;
+  border-radius: 0.7rem;
+  background: var(--forest-light);
+}
+
+.quick-answer p:last-child {
+  margin-bottom: 0;
+  font-size: 1.18rem;
+  font-weight: 700;
+}
+
+.article-body section {
+  margin: 4rem 0;
+  scroll-margin-top: 2rem;
+}
+
+.section-index {
+  color: var(--clay);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.article-body h2 {
+  margin: 0.35rem 0 1.25rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.45rem);
+  line-height: 1.35;
+}
+
+.portable-content h2,
+.portable-content h3 {
+  scroll-margin-top: 2rem;
+}
+
+.portable-content h2 {
+  margin: 4.5rem 0 1.35rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+
+.portable-content h3 {
+  margin: 2.8rem 0 1rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  line-height: 1.4;
+}
+
+.portable-content ul,
+.portable-content ol {
+  padding-left: 1.5rem;
+}
+
+/* 延伸資料、資料來源裡的長網址（有些是純文字）在手機上要能斷行，否則會撐開整頁 */
+.portable-content li {
+  overflow-wrap: anywhere;
+}
+
+.portable-content li + li {
+  margin-top: 0.55rem;
+}
+
+.portable-content > p:first-child {
+  margin: 0 0 3.5rem;
+  padding: 1.35rem 1.5rem;
+  border-left: 4px solid var(--clay);
+  background: var(--surface);
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.85;
+}
+
+.portable-content a {
+  color: var(--forest);
+  text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
+}
+
+.portable-content blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.4rem;
+  border-left: 4px solid var(--clay);
+  background: rgb(255 253 248 / 65%);
+}
+
+.article-image {
+  margin: 1.75rem 0 2.25rem;
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.6rem;
+}
+
+.article-image figcaption {
+  display: grid;
+  gap: 0.2rem;
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.article-image-credit a {
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.article-embed {
+  margin: 1.75rem 0 2.25rem;
+}
+
+.article-embed-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  background: #111;
+}
+
+.article-embed-frame iframe,
+.article-embed-play {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.article-embed-play {
+  padding: 0;
+  background: #111;
+  cursor: pointer;
+}
+
+.article-embed-play img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.article-embed-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(20, 20, 20, 0.82);
+  transform: translate(-50%, -50%);
+}
+
+.article-embed-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  border-style: solid;
+  border-width: 11px 0 11px 18px;
+  border-color: transparent transparent transparent #fff;
+  transform: translate(-50%, -50%);
+}
+
+.article-embed-play:hover .article-embed-icon,
+.article-embed-play:focus-visible .article-embed-icon {
+  background: #c4302b;
+}
+
+.article-embed-card {
+  display: grid;
+  justify-items: start;
+  gap: 0.75rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  background: var(--surface);
+}
+
+.article-embed-card-title {
+  margin: 0;
+  font-weight: 700;
+}
+
+.article-embed-load {
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--surface);
+  font: inherit;
+  cursor: pointer;
+}
+
+.article-embed-card.is-loaded {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.article-embed-card iframe {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  height: 640px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.article-embed figcaption {
+  display: grid;
+  gap: 0.2rem;
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* Instagram 貼文直接顯示：寬約 500px、置中，說明用小字（Darren 2026-11-17）。 */
+.article-embed-post {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.article-embed-post iframe {
+  display: block;
+  width: 100%;
+  height: 680px;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--surface);
+}
+
+.article-embed-instagram figcaption {
+  max-width: 500px;
+  margin-inline: auto;
+  font-size: 0.78rem;
+}
+
+/* 資料來源：文末一塊小字，更新日期排最前，來源連結排成一段（Darren 2026-11-17）。 */
+.article-sources {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0 0;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.8;
+}
+
+.portable-content .article-sources > h2,
+.portable-content .article-sources > h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+}
+
+.portable-content .article-sources > h3 {
+  margin-top: 0.4rem;
+}
+
+.portable-content .article-sources > p {
+  order: -1;
+  margin: 0;
+  font-size: inherit;
+}
+
+.portable-content .article-sources > ul,
+.portable-content .article-sources > ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: inherit;
+}
+
+.portable-content .article-sources li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.portable-content .article-sources li::before {
+  content: none;
+}
+
+.portable-content .article-sources li + li::before {
+  content: "・";
+  opacity: 0.55;
+}
+
+.article-sources a {
+  color: inherit;
+}
+
+.article-embed-credit a {
+  color: inherit;
+}
+
+.article-table-scroll {
+  max-width: 100%;
+  margin: 1.75rem 0 2.25rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  background: var(--surface);
+  scrollbar-color: var(--clay) var(--forest-light);
+  scrollbar-width: thin;
+}
+
+.article-table-scroll:focus-visible {
+  outline: 3px solid var(--clay);
+  outline-offset: 2px;
+}
+
+.article-table-scroll table {
+  width: 100%;
+  min-width: 38rem;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.article-table-scroll th,
+.article-table-scroll td {
+  padding: 0.85rem 1rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-table-scroll th:last-child,
+.article-table-scroll td:last-child {
+  border-right: 0;
+}
+
+.article-table-scroll tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.article-table-scroll th {
+  background: var(--forest-light);
+  color: var(--forest);
+  font-weight: 800;
+}
+
+/* 表格裡的連結（官網、地圖）不要被拆成一字一行 */
+.article-table-scroll td a {
+  white-space: nowrap;
+}
+
+/* 手機上的表格：3 欄以下縮到螢幕寬；比較表一列變一張卡片（src/lib/portableText.ts 的 tableLayout） */
+@media (max-width: 640px) {
+  .article-table-scroll.article-table--narrow table {
+    min-width: 0;
+  }
+
+  .article-table-scroll.article-table--narrow th,
+  .article-table-scroll.article-table--narrow td {
+    padding: 0.7rem 0.75rem;
+  }
+
+  .article-table-scroll.article-table--cards {
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .article-table-scroll.article-table--cards table,
+  .article-table-scroll.article-table--cards tbody,
+  .article-table-scroll.article-table--cards tr,
+  .article-table-scroll.article-table--cards td {
+    display: block;
+    width: auto;
+    min-width: 0;
+  }
+
+  .article-table-scroll.article-table--cards thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .article-table-scroll.article-table--cards tr {
+    margin-bottom: 0.85rem;
+    padding: 0.9rem 1rem 0.7rem;
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    background: var(--surface);
+  }
+
+  .article-table-scroll.article-table--cards tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .article-table-scroll.article-table--cards td {
+    display: grid;
+    grid-template-columns: 6.2em 1fr;
+    gap: 0.75rem;
+    padding: 0.35rem 0;
+    border: 0;
+  }
+
+  .article-table-scroll.article-table--cards td::before {
+    content: attr(data-label);
+    color: var(--forest);
+    font-weight: 700;
+  }
+
+  .article-table-scroll.article-table--cards td:first-child {
+    display: block;
+    margin-bottom: 0.4rem;
+    padding: 0 0 0.6rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.05rem;
+    font-weight: 800;
+  }
+
+  .article-table-scroll.article-table--cards td:first-child::before {
+    content: none;
+  }
+}
+
+.article-tags {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.article-tags div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.article-tags a {
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--forest);
+  text-decoration: none;
+}
+
+.article-tags a:hover,
+.article-tags a:focus-visible {
+  border-color: var(--forest);
+  background: var(--forest-light);
+}
+
+.back-link {
+  color: var(--forest);
+  font-family: var(--font-sans);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.not-found {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4.5rem, 10vw, 8rem) 0;
+}
+
+.not-found::after {
+  position: absolute;
+  right: -7rem;
+  bottom: -12rem;
+  z-index: -1;
+  width: 27rem;
+  height: 27rem;
+  border: 3.5rem solid rgb(30 77 58 / 8%);
+  border-radius: 50%;
+  content: "";
+}
+
+.not-found-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.65fr);
+  align-items: center;
+  gap: clamp(3rem, 9vw, 8rem);
+}
+
+.not-found-copy h1 {
+  max-width: 8ch;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(3.2rem, 8vw, 6.5rem);
+  letter-spacing: -0.05em;
+  line-height: 1.08;
+}
+
+.not-found-copy h1 span {
+  white-space: nowrap;
+}
+
+.not-found-copy > p:not(.eyebrow) {
+  max-width: 34rem;
+  margin: 1.5rem 0 2rem;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+}
+
+.not-found-categories {
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.not-found-categories h2 {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  line-height: 1.3;
+}
+
+.not-found-categories ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.not-found-categories a {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.not-found-categories a span:last-child {
+  color: var(--clay);
+}
+
+.not-found-categories a:hover,
+.not-found-categories a:focus-visible {
+  color: var(--forest);
+}
+
+@media (max-width: 1200px) {
+  .reading-layout {
+    grid-template-columns: minmax(0, 43rem);
+  }
+
+  .article-body {
+    grid-column: auto;
+  }
+
+  .reading-aside--desktop {
+    display: none;
+  }
+
+  .reading-toc-mobile {
+    display: block;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--surface);
+  }
+
+  .reading-toc-mobile summary {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.15rem;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-weight: 800;
+    list-style: none;
+  }
+
+  .reading-toc-mobile summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .reading-toc-mobile summary::after {
+    color: var(--clay);
+    content: "+";
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .reading-toc-mobile[open] summary::after {
+    content: "−";
+  }
+
+  .reading-toc-mobile summary small {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .reading-toc-mobile ul {
+    display: grid;
+    margin: 0;
+    padding: 0 1.15rem 0.8rem;
+    border-top: 1px solid var(--line);
+    list-style: none;
+  }
+
+  .reading-toc-mobile li + li {
+    border-top: 1px solid var(--line);
+  }
+
+  .reading-toc-mobile a {
+    display: block;
+    padding: 0.75rem 0;
+    color: var(--forest);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    line-height: 1.55;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .masthead {
+    grid-template-columns: 1fr auto;
+    min-height: 4.75rem;
+    gap: 1rem;
+  }
+
+  .masthead-note,
+  .site-nav-row {
+    display: none;
+  }
+
+  .brand {
+    justify-self: start;
+    font-size: 1.55rem;
+    letter-spacing: 0.12em;
+  }
+
+  .masthead-actions {
+    justify-self: end;
+  }
+
+  .header-inner {
+    min-height: 4.5rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: relative;
+    display: block;
+  }
+
+  .mobile-menu summary {
+    padding: 0.45rem 0.7rem;
+    border: 1px solid var(--line);
+    border-radius: 0.55rem;
+    color: var(--forest);
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 800;
+    list-style: none;
+  }
+
+  .mobile-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: calc(100% + 0.65rem);
+    right: 0;
+    z-index: 10;
+    display: grid;
+    width: min(17rem, calc(100vw - 2rem));
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .mobile-nav a {
+    padding: 0.85rem 1rem;
+  }
+
+  .mobile-nav a + a {
+    border-top: 1px solid var(--line);
+  }
+
+  .home-intro {
+    padding: 3rem 0 2.75rem;
+    text-align: left;
+  }
+
+  .home-intro h1 {
+    max-width: 11ch;
+    margin-left: 0;
+    font-size: clamp(2.5rem, 13vw, 3.45rem);
+  }
+
+  .home-intro p:last-child {
+    margin-top: 1.25rem;
+  }
+
+  .home-feature {
+    padding-bottom: 4rem;
+  }
+
+  .home-section-bar {
+    letter-spacing: 0.06em;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+  }
+
+  .lead-story-copy {
+    padding: 1.6rem 0 0;
+    background: var(--paper);
+  }
+
+  .lead-story-copy h2 {
+    font-size: 2rem;
+  }
+
+  .home-section {
+    padding: 4rem 0;
+  }
+
+  .home-section-header,
+  .home-guide-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .story-grid,
+  .home-category-grid,
+  .home-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cluster-group-header,
+  .cluster-grid,
+  .cluster-link-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .cluster-group-header {
+    gap: 1.25rem;
+  }
+
+  .cluster-group-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .category-hero-nav {
+    padding: 1.1rem 1.15rem 1.25rem;
+    box-shadow: none;
+  }
+
+  .category-siblings .home-category-item {
+    min-height: auto;
+  }
+
+  .category-siblings .home-category-item h3 {
+    margin-top: 1.4rem;
+  }
+
+  .cluster-section,
+  .category-latest,
+  .category-tags,
+  .category-siblings {
+    padding: 3.25rem 0;
+  }
+
+  .cluster-group + .cluster-group {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .cluster-direct {
+    margin-bottom: 2rem;
+  }
+
+  .category-hero-nav ul ul {
+    display: none;
+  }
+
+  .cluster-card {
+    min-height: auto;
+    padding: 1.1rem 1.15rem;
+  }
+
+  .cluster-card-links {
+    margin-top: 0.9rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .cluster-card-links > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.7rem 0;
+    cursor: pointer;
+    font-size: 0.88rem;
+    font-weight: 800;
+    list-style: none;
+  }
+
+  .cluster-card-links > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .cluster-card-links > summary small {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .cluster-card-links > summary::after {
+    color: var(--clay);
+    content: "+";
+    font-size: 1.15rem;
+    line-height: 1;
+  }
+
+  .cluster-card-links[open] > summary::after {
+    content: "−";
+  }
+
+  .cluster-card-links .cluster-links,
+  .cluster-card-links .cluster-link-columns {
+    margin-top: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .cluster-direct .cluster-card-links {
+    margin-top: 0;
+  }
+
+  .cluster-card .cluster-desc,
+  .cluster-card .cluster-more {
+    display: none;
+  }
+
+  .cluster-card h3,
+  .cluster-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .cluster-card-links {
+    margin-top: 0.75rem;
+  }
+
+  .cluster-card-links > summary {
+    padding: 0.6rem 0 0.35rem;
+  }
+
+  .cluster-card-links .cluster-links {
+    padding-bottom: 0.35rem;
+  }
+
+  .category-latest .story-grid {
+    gap: 1.25rem;
+  }
+
+  .category-latest .story-card {
+    display: grid;
+    grid-template-columns: 7rem minmax(0, 1fr);
+    align-content: start;
+    gap: 0 1rem;
+    padding-top: 1rem;
+  }
+
+  .category-latest .story-card-media {
+    grid-row: 1 / 4;
+    margin-bottom: 0;
+  }
+
+  .category-latest .story-card-media img {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .category-latest .story-kicker {
+    margin-bottom: 0.35rem;
+  }
+
+  .category-latest .story-card h3 {
+    font-size: 1.1rem;
+    line-height: 1.35;
+  }
+
+  .category-latest .story-card > p:last-child {
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .category-siblings .home-category-grid {
+    border-top: 2px solid var(--ink);
+  }
+
+  .category-siblings .home-category-item {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.95rem 0;
+    border-top: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .category-siblings .home-category-item + .home-category-item {
+    border-left: 0;
+  }
+
+  .category-siblings .home-category-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .category-siblings .home-category-item p {
+    display: none;
+  }
+
+  .category-siblings .home-category-item b {
+    margin-left: auto;
+  }
+
+  .story-card + .story-card {
+    margin-top: 1rem;
+  }
+
+  .home-category-item {
+    display: grid;
+    grid-template-columns: 2rem minmax(0, 1fr) auto;
+    min-height: 0;
+    gap: 0.45rem 0.8rem;
+    padding: 1.25rem 0;
+  }
+
+  .home-category-item + .home-category-item {
+    border-left: 0;
+  }
+
+  .home-category-item > span {
+    grid-row: 1 / span 2;
+  }
+
+  .home-category-item h3 {
+    margin: 0;
+  }
+
+  .home-category-item p {
+    grid-column: 2;
+  }
+
+  .home-category-item b {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+    align-self: center;
+    margin-top: 0;
+  }
+
+  .home-guide {
+    padding: 4rem 0;
+  }
+
+  .home-guide-grid li + li {
+    margin-top: 1rem;
+  }
+
+  .hero-grid,
+  .topic-grid,
+  .steps,
+  .contact-header,
+  .contact-layout,
+  .contact-field-grid,
+  .topic-hero-grid,
+  .topic-layout,
+  .reading-layout,
+  .not-found-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-header .eyebrow {
+    grid-column: auto;
+    margin-bottom: -0.5rem;
+  }
+
+  .hero h1 {
+    max-width: 10ch;
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-grid li + li {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .section-heading,
+  .footer-grid {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .analytics-consent {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-consent-actions {
+    justify-content: stretch;
+    padding: 1rem 0 0;
+  }
+
+  .analytics-consent-actions button {
+    flex: 1;
+  }
+
+  .topic-card {
+    min-height: 15rem;
+  }
+
+  .topic-card h3 {
+    margin-top: 2.5rem;
+  }
+
+  .breadcrumbs {
+    gap: 0.4rem 0.5rem;
+    padding-top: 1rem;
+    font-size: 0.78rem;
+  }
+
+  .article-header {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .article-header h1 {
+    max-width: none;
+    font-size: clamp(2.1rem, 9vw, 2.5rem);
+    line-height: 1.18;
+  }
+
+  .article-lede {
+    margin-top: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .article-meta {
+    margin-top: 1.4rem;
+  }
+
+  .article-cover {
+    margin-bottom: 2.5rem;
+  }
+
+  .article-cover figcaption {
+    display: grid;
+  }
+
+  .reading-toc-mobile {
+    margin-bottom: 1rem;
+  }
+
+  .article-body {
+    font-size: 1.05rem;
+    line-height: 1.9;
+  }
+
+  .portable-content > p:first-child {
+    margin-bottom: 3rem;
+    padding: 1.1rem 1.15rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .portable-content h2 {
+    margin-top: 3.5rem;
+    padding-top: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .portable-content h3 {
+    margin-top: 2.35rem;
+    font-size: 1.35rem;
+  }
+
+  .article-table-scroll table {
+    min-width: 34rem;
+    font-size: 0.88rem;
+  }
+
+  .article-table-scroll th,
+  .article-table-scroll td {
+    padding: 0.75rem 0.8rem;
+  }
+}
+
+/* ===== 車站站牌風格：頁首、頁尾與首頁（2026-10-21 Darren 選定） =====
+   放在檔案最後，覆蓋前面沿用下來的頁首與頁尾樣式。 */
+
+.site-header {
+  border-bottom: 0;
+  background: var(--surface);
+}
+
+.masthead {
+  display: flex;
+  min-height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  justify-self: auto;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.brand-ring {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: none;
+  border: 4px solid var(--forest);
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.desktop-nav {
+  display: flex;
+  min-height: 0;
+  gap: 1.75rem;
+}
+
+.desktop-nav a {
+  padding: 0.35rem 0;
+  border-bottom: 2px solid transparent;
+  color: var(--ink);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus-visible {
+  border-color: var(--forest);
+  color: var(--ink);
+}
+
+.line-stripe {
+  height: 6px;
+  background: var(--forest);
+}
+
+.site-footer {
+  border-top: 6px solid var(--forest);
+  background: var(--surface);
+}
+
+.home-hero {
+  padding: clamp(2.5rem, 6vw, 4rem) 0 0;
+}
+
+.home-hero h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 4.2vw, 2.5rem);
+  line-height: 1.35;
+}
+
+.home-hero > p {
+  max-width: 42rem;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.home-block {
+  padding-top: clamp(2.5rem, 6vw, 3.5rem);
+}
+
+.home-block:last-child {
+  padding-bottom: clamp(3rem, 7vw, 4.5rem);
+}
+
+.line-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1.1rem;
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+.line-heading::before {
+  width: 0.5rem;
+  height: 1.35rem;
+  flex: none;
+  border-radius: 2px;
+  background: var(--forest);
+  content: "";
+}
+
+.line-heading a {
+  text-decoration: none;
+}
+
+.line-heading a:hover,
+.line-heading a:focus-visible {
+  color: var(--forest);
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.5rem, 1fr));
+  gap: 1.25rem;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface);
+}
+
+.home-card-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.home-card-copy {
+  padding: 1rem 1.1rem 1.25rem;
+}
+
+.place-tag {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  border-radius: 0.3rem;
+  background: var(--forest-light);
+  color: var(--forest);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-card h3 {
+  margin: 0.55rem 0 0.45rem;
+  font-size: 1.06rem;
+  line-height: 1.5;
+}
+
+.home-card h3 a {
+  text-decoration: none;
+}
+
+.home-card h3 a:hover,
+.home-card h3 a:focus-visible {
+  color: var(--forest);
+}
+
+.home-card-copy > p {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.9rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.station-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.station-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  text-align: center;
+}
+
+.station-card-name {
+  display: block;
+  flex: 1;
+  padding: 1rem 1rem 0.85rem;
+  text-decoration: none;
+}
+
+.station-card-name span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+.station-card-name strong {
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  /* 字距會加在最後一個字後面，往右推回來才會置中 */
+  text-indent: 0.2em;
+}
+
+.station-card-name:hover strong,
+.station-card-name:focus-visible strong {
+  color: var(--forest);
+}
+
+.station-card-bar {
+  display: flex;
+  min-height: 2.2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.35rem 0.85rem;
+  background: var(--forest);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.station-card-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.station-card-bar a:hover,
+.station-card-bar a:focus-visible {
+  text-decoration: underline;
+}
+
+.station-card-foot {
+  padding: 0.65rem 1rem;
+  color: var(--forest);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.station-card-foot:hover,
+.station-card-foot:focus-visible {
+  text-decoration: underline;
+}
+
+/* 地點頁與地區頁的頁首：站名牌就是這頁的標題 */
+.place-hero {
+  padding-top: 1.25rem;
+}
+
+.station-sign {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.station-sign-label {
+  margin: 0;
+  padding: 1.4rem 1rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.station-sign-name {
+  margin: 0;
+  padding: 0.2rem 1rem 1.4rem;
+  font-size: clamp(2.5rem, 8vw, 3.75rem);
+  letter-spacing: 0.3em;
+  line-height: 1.25;
+  /* 字距會加在最後一個字後面，往右推回來才會置中 */
+  text-indent: 0.3em;
+}
+
+.station-sign-bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  min-height: 2.6rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--forest);
+  font-weight: 700;
+}
+
+.station-sign-bar span:first-child {
+  text-align: left;
+}
+
+.station-sign-bar span:last-child {
+  text-align: right;
+}
+
+.station-sign-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.station-sign-bar a:hover,
+.station-sign-bar a:focus-visible {
+  text-decoration: underline;
+}
+
+.place-intro {
+  max-width: 44rem;
+  margin: 1.5rem 0 0;
+  font-size: 1.05rem;
+}
+
+.place-intro + .place-intro {
+  margin-top: 0.75rem;
+}
+
+.place-note {
+  margin: -0.5rem 0 1rem;
+  color: var(--muted);
+}
+
+/* 內容很少的頁面，頁尾也要貼在畫面底部 */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.place-hero:last-child {
+  padding-bottom: clamp(3rem, 7vw, 4.5rem);
+}
+
+@media (max-width: 760px) {
+  .masthead {
+    min-height: 3.75rem;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu summary {
+    color: var(--ink);
+  }
+
+  .station-sign-bar {
+    gap: 0.5rem;
+    font-size: 0.92rem;
+  }
+}
+
+body{background:var(--paper)}.preview-frame{max-width:46rem;margin:0 auto;padding:1.25rem 1rem 4rem;box-sizing:border-box;width:100%}
+.article-body,.portable-content{min-width:0;max-width:100%}.portable-content>*{max-width:100%;box-sizing:border-box}.article-table-scroll{overflow-x:auto}.article-table-scroll td{overflow-wrap:anywhere}
+.preview-tag{display:inline-block;margin:0 0 .75rem;padding:.2rem .7rem;border-radius:999px;background:#1a1f2b;color:#fff;font:700 14px/1.6 system-ui,sans-serif}
+</style></head><body><div class="preview-frame"><span class="preview-tag">試寫，還沒上線（用網站的程式畫的）</span><h1>旭川自駕住宿推薦，14間飯店的停車場與停車費比較</h1><figure style="margin:0 0 1.25rem"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Asahikawa_Station_in_August_2025.jpg?width=1200" alt="JR旭川站與站前廣場" style="width:100%;border-radius:8px"><figcaption style="font-size:.8rem;color:#666">JR旭川站與站前廣場（Wikimedia Commons，CC BY 4.0）</figcaption></figure><div class="article-body"><div class="portable-content"><p>北海道的景點之間距離遠，很多人乾脆租車自駕，開到旭川住一晚時，最先要確定的就是車要停哪裡。這一頁比較了旭川市區14間飯店的停車場，看車停在哪、一晚多少錢、車高限制、能不能預約，和中途進出怎麼算。另外也整理了停車免費的郊外旅館，和旭川站前的租車營業所。還沒決定住哪一區、想連早餐和泡湯一起比的人，先看<a href="/places/asahikawa/stay/">〈旭川住宿推薦〉</a>。</p><h2 id="section-1">飯店自己有停車場、車位一百個以上的三間旭川飯店</h2><p>開車玩了一整天，晚上開到飯店，誰都希望還有車位可以停。這三間的停車場是飯店自己的，各有一百個以上的車位，差在停車場的樣子、車高限制和一晚多少錢。</p><h3 id="section-2">Dormy Inn旭川停車場</h3><p>Dormy Inn旭川（ドーミーイン旭川）有自己的平面停車場，114個車位，停一晚1,000日圓（含稅）。不想把車開進立體停車場的人，可以直接停在平地上。飯店離JR旭川站走路約15分。</p><p><strong>停車</strong>：車位是先到的人先停。如果停滿了，飯店會安排改停離飯店3到4分鐘的合作停車場。住過的人說，停車場就在飯店旁邊，車位也多。</p><p><strong>要注意</strong>：大型車要先預約車位。開比較大的休旅車或廂型車，出發前寫信把車款告訴飯店，問算不算大型車。</p><p>看房價與訂房：<a href="https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/" rel="sponsored noopener noreferrer">Trip.com</a>｜<a href="https://dormy-hotels.com/dormyinn/hotels/asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-3">露櫻Grand旭川站前停車場</h3><p>露櫻Grand旭川站前（ホテルルートインGrand旭川駅前）有自己的塔式立體停車場，依車高分成三種車位，比較高的車也停得進去。飯店在JR旭川站北口，走路約2分，住客停一晚800日圓。</p><p><strong>停車</strong>：車位超過一百個，不過是先到的人先停。三種車位停得下的車高，分別是1.55、1.83和2.105公尺以下；車長也要在5.3公尺以下、車寬在1.95公尺以下，才停得進去。如果停滿了，或是車子停不進去，飯店會介紹附近的投幣停車場，費用在那邊自己付。</p><p><strong>要注意</strong>：車頂加裝行李架、後擾流板這類的車進不了塔式停車場，貨車和機車也不能停。</p><p>只有從官網訂房，早餐才免費；從其他管道訂，早餐要另外付錢。</p><p>看房價與訂房：<a href="https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/" rel="noopener noreferrer">官網</a>｜<a href="https://tw.trip.com/hotels/asahikawa-hotel-detail-6085668/" rel="sponsored noopener noreferrer">Trip.com</a></p><h3 id="section-4">天然溫泉Premier Hotel-CABIN-旭川停車場</h3><p>正面玄關隔壁就是天然溫泉Premier Hotel-CABIN-旭川（天然温泉プレミアホテル-CABIN-旭川）的立體停車場，有152個車位。停車場24小時都能進出。飯店離JR旭川站走路約3分。</p><figure class="article-embed article-embed-instagram"><div class="article-embed-post"><iframe src="https://www.instagram.com/p/Dd5QbYYmsQ3/embed/" title="天然溫泉Premier Hotel-CABIN-旭川自己說明停車場的貼文，照片是立體停車場的入口。" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><figcaption><span>天然溫泉Premier Hotel-CABIN-旭川自己說明停車場的貼文，照片是立體停車場的入口。</span><small class="article-embed-credit">貼文：<a href="https://www.instagram.com/p/Dd5QbYYmsQ3/" rel="noopener noreferrer">cabin_asahikawa</a>（2026）・實際資訊以本文為準</small></figcaption></figure><p><strong>停車</strong>：停車費一晚800到1,100日圓，看車型。有住客提到停車場會停滿，滿了就要改停其他停車場。車位是當天先到的人先停，不能預約。</p><p><strong>要注意</strong>：廂型車、休旅車、旅行車和大型車不能停飯店的立體停車場，要改停合作停車場或投幣停車場，而且停在那邊就不能中途開出去。</p><p>看房價與訂房：<a href="https://tw.trip.com/hotels/asahikawa-hotel-detail-2509933/" rel="sponsored noopener noreferrer">Trip.com</a>｜<a href="https://cabin.kenhotels.com/asahikawa/" rel="noopener noreferrer">官網</a></p><h2 id="section-5">車停AEON MALL或合作停車場的五間旭川飯店</h2><p>訂了旭川市區的飯店，才發現飯店自己沒有停車場，開車的人第一個問題就是車要停哪。這五間的住客車停在AEON MALL或附近的合作停車場，下面整理各家停在哪、一晚怎麼算。</p><h3 id="section-6">JR Inn旭川（旭川JR飯店）停車場</h3><p>住JR Inn旭川（JRイン旭川），車就停在飯店所在的AEON MALL旭川站前（イオンモール旭川駅前），住客一晚800日圓。可以停購物中心的立體停車場，也可以停高架下的平面停車場；拖著行李的話，平面那一區離飯店入口比較近。</p><figure class="article-embed article-embed-instagram"><div class="article-embed-post"><iframe src="https://www.instagram.com/p/C6JfUa8SoeE/embed/" title="台灣住客寫的 JR Inn旭川住宿心得，提到車停 AEON MALL。照片是飯店的招牌。" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><figcaption><span>台灣住客寫的 JR Inn旭川住宿心得，提到車停 AEON MALL。照片是飯店的招牌。</span><small class="article-embed-credit">貼文：<a href="https://www.instagram.com/p/C6JfUa8SoeE/" rel="noopener noreferrer">____yoloooooo____</a>（2024）・實際資訊以本文為準</small></figcaption></figure><p><strong>停車</strong>：這座購物中心的停車場約有900個車位，住客和來逛街的人停在一起。停車費從進場起算24小時為一晚，在飯店櫃台付，櫃台會給出場用的QR碼，不用停車券。車位不能預約，車高也要在2.2公尺以下才停得進去。白天要把車開出去、晚上再回來停的人，辦入住時先問櫃台中途進出怎麼算。</p><p><strong>要注意</strong>：宮下通那一側的入口，半夜12點以後關閉，到早上7點才開，這段時間要從昭和通那一側的入口進出。</p><p>看房價與訂房：<a href="https://tw.trip.com/hotels/asahikawa-hotel-detail-2509710/" rel="sponsored noopener noreferrer">Trip.com</a>｜<a href="https://www.agoda.com/zh-tw/jr-inn-asahikawa/hotel/asahikawa-jp.html" rel="sponsored noopener noreferrer">Agoda</a>｜<a href="https://www.jr-inn.jp/asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-7">KOKO HOTEL旭川站前（舊名站前永安國際飯店）停車場</h3><p>KOKO HOTEL旭川站前（日文舊名ホテルウィングインターナショナル旭川駅前）館內沒有停車場，住客的車停在AEON MALL旭川站前，一晚1,000日圓（含稅）。這間就是以前的站前永安國際飯店，離JR旭川站走路約2分。</p><p><strong>停車</strong>：這座停車場就是JR Inn旭川住客停的那一座，車高限2.2公尺以下；宮下通那一側的入口半夜12點以後關閉，晚到的話要從昭和通那一側進。停同一座停車場，兩間的住客價不一樣：JR Inn旭川是一晚800日圓，KOKO HOTEL是1,000日圓。</p><p><strong>要注意</strong>：車每開出停車場一次，就要再付一次停車費，白天開出去玩就會多付。</p><p>看房價與訂房：<a href="https://tw.trip.com/hotels/asahikawa-hotel-detail-31195786/" rel="sponsored noopener noreferrer">Trip.com</a>｜<a href="https://www.koko-hotels.com/asahikawa_station/" rel="noopener noreferrer">官網</a></p><h3 id="section-8">HOTEL AMANEK旭川停車場</h3><p>HOTEL AMANEK旭川（ホテルアマネク旭川）的住客把車停在隔壁的合作停車場「D-Parking旭川站前」，停車場和飯店之間有住客專用的通道相連。有住客覺得，從停車場走到飯店大廳很方便。飯店在JR旭川站北口，走路約3分。</p><figure class="article-embed article-embed-instagram"><div class="article-embed-post"><iframe src="https://www.instagram.com/p/DdI8_4PkV6H/embed/" title="HOTEL AMANEK旭川自己說明停車的貼文，照片是飯店外觀。" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><figcaption><span>HOTEL AMANEK旭川自己說明停車的貼文，照片是飯店外觀。</span><small class="article-embed-credit">貼文：<a href="https://www.instagram.com/p/DdI8_4PkV6H/" rel="noopener noreferrer">hotel_amanek_asahikawa</a>（2026）・實際資訊以本文為準</small></figcaption></figure><p><strong>停車</strong>：D-Parking是7層樓、要自己把車開上樓停的立體停車場，停車費每24小時1,000日圓，離開時付給停車場的繳費機。車子比較高的話，先寫信問飯店停不停得進D-Parking。</p><p>看房價與訂房：<a href="https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/" rel="sponsored noopener noreferrer">Trip.com</a>｜<a href="https://www.agoda.com/zh-tw/hotel-amanek-asahikawa-ekimae/hotel/asahikawa-jp.html" rel="sponsored noopener noreferrer">Agoda</a>｜<a href="https://amanekhotels.jp/asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-9">OMO7旭川停車場</h3><p>開車住星野集團的OMO7旭川，車每開進停車場一次，就要付一次停車費。住客停的是合作的Times停車場，每24小時1,000日圓。飯店離JR旭川站走路約13到15分。</p><p><strong>停車</strong>：有住客反應，傍晚以後車位就滿了。車位是先到的人先停，不能預約；滿了的話，飯店會介紹附近不是合作的停車場。合作停車場在哪、車高限多少，可以寫信請飯店說明。</p><p>看房價與訂房：<a href="https://tw.trip.com/hotels/asahikawa-hotel-detail-703410/" rel="sponsored noopener noreferrer">Trip.com</a>｜<a href="https://hoshinoresorts.com/ja/hotels/omo7asahikawa/" rel="noopener noreferrer">官網</a></p><h3 id="section-10">Y&#039;s Hotel旭川站前停車場</h3><p>飯店後面就是Times停車場「Times鶴羽大樓旭川站前」（タイムズツルハビル旭川駅前），Y&#039;s Hotel旭川站前（ワイズホテル旭川駅前）的住客停這裡一晚1,200日圓，住宿期間可以進出。飯店離JR旭川站走路約1分。</p><figure class="article-embed article-embed-instagram"><div class="article-embed-post"><iframe src="https://www.instagram.com/reel/C7oNuOXBN3u/embed/" title="Y&#039;s Hotel旭川站前拍的合作停車場入口短片。" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><figcaption><span>Y&#039;s Hotel旭川站前拍的合作停車場入口短片。</span><small class="article-embed-credit">貼文：<a href="https://www.instagram.com/reel/C7oNuOXBN3u/" rel="noopener noreferrer">yshotel_asahikawa</a>（2024）・實際資訊以本文為準</small></figcaption></figure><p><strong>停車</strong>：如果到退房前都沒有再開出去，而且停不到12小時就離開，停車費只要880日圓。附近另一個Times旭川宮下通10不是飯店合作的停車場，停那裡不能用住客的價錢，也不能進出。開大型車的話，要事先預約別的停車場。</p><p>看房價與訂房：<a href="https://tw.trip.com/hotels/asahikawa-hotel-detail-19572867/" rel="sponsored noopener noreferrer">Trip.com</a>｜<a href="https://yshotel-asahikawa.com/" rel="noopener noreferrer">官網</a></p><h2 id="section-11">旭川飯店停車比較表</h2><p>這張表列出飯店自己有停車場的三間，和另外6間有停車場的旭川市區飯店。</p><div class="article-table-scroll article-table--cards" tabindex="0"><table><thead><tr><th scope="col">飯店</th><th scope="col">到JR旭川站</th><th scope="col">停車場</th><th scope="col">一晚停車費</th><th scope="col">車高與車型</th><th scope="col">車位滿了</th><th scope="col">連結</th></tr></thead><tbody><tr><td data-label="飯店"><span>Dormy Inn旭川</span></td><td data-label="到JR旭川站"><span>走路約15分</span></td><td data-label="停車場"><span>飯店的平面停車場，114個車位</span></td><td data-label="一晚停車費"><span>1,000日圓</span></td><td data-label="車高與車型"><span>大型車要預約</span></td><td data-label="車位滿了"><span>帶到離飯店3～4分鐘的合作停車場</span></td><td data-label="連結"><span><a href="https://dormy-hotels.com/dormyinn/hotels/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%89%E3%83%BC%E3%83%9F%E3%83%BC%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>露櫻Grand旭川站前</span></td><td data-label="到JR旭川站"><span>北口走路約2分</span></td><td data-label="停車場"><span>飯店的塔式立體停車場</span></td><td data-label="一晚停車費"><span>800日圓</span></td><td data-label="車高與車型"><span>三種車位，車高最高2.105公尺</span></td><td data-label="車位滿了"><span>介紹附近的投幣停車場，費用自己付</span></td><td data-label="連結"><span><a href="https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3Grand%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>天然溫泉Premier Hotel-CABIN-旭川</span></td><td data-label="到JR旭川站"><span>走路約3分</span></td><td data-label="停車場"><span>飯店的立體停車場，152個車位，24小時開放</span></td><td data-label="一晚停車費"><span>800～1,100日圓，看車型</span></td><td data-label="車高與車型"><span>廂型車、休旅車、旅行車改停其他停車場</span></td><td data-label="車位滿了"><span>介紹合作的投幣停車場</span></td><td data-label="連結"><span><a href="https://cabin.kenhotels.com/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%9B%E3%83%86%E3%83%AB-CABIN-%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Hotel WBF Grande旭川</span></td><td data-label="到JR旭川站"><span>東口走路約2分</span></td><td data-label="停車場"><span>飯店的戶外停車場，最多70個車位</span></td><td data-label="一晚停車費"><span>1,000日圓</span></td><td data-label="車高與車型"><span>大巴士、卡車沒有車位</span></td><td data-label="車位滿了"><span>介紹附近的合作或投幣停車場</span></td><td data-label="連結"><span><a href="https://www.ishinhotels.com/wbf/grande-asahikawa" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%ABWBF%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%87%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>旭川庭院飯店</span></td><td data-label="到JR旭川站"><span>走路約2分</span></td><td data-label="停車場"><span>飯店的停車場，25個車位</span></td><td data-label="一晚停車費"><span>1,100日圓</span></td><td data-label="車高與車型"><span>車高1.55公尺以下</span></td><td data-label="車位滿了"><span></span></td><td data-label="連結"><span><a href="https://www.enhotels.co.jp/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B3%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Super Hotel旭川</span></td><td data-label="到JR旭川站"><span>走路約5分</span></td><td data-label="停車場"><span>有停車場</span></td><td data-label="一晚停車費"><span>600日圓，可停15:00～隔天11:00</span></td><td data-label="車高與車型"><span></span></td><td data-label="車位滿了"><span></span></td><td data-label="連結"><span><a href="https://www.superhotel.co.jp/s_hotels/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>露櫻旭川站前一條通</span></td><td data-label="到JR旭川站"><span>走路約5分</span></td><td data-label="停車場"><span>塔式立體停車場，36個車位</span></td><td data-label="一晚停車費"><span>600日圓</span></td><td data-label="車高與車型"><span>一般車位1.55公尺，6個高頂車位2.1公尺</span></td><td data-label="車位滿了"><span>介紹第2停車場或附近的停車場</span></td><td data-label="連結"><span><a href="https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%E4%B8%80%E6%9D%A1%E9%80%9A%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Hotel Crescent旭川</span></td><td data-label="到JR旭川站"><span>走路約12分</span></td><td data-label="停車場"><span>飯店的停車場，約12個車位；旁邊和附近另有合作停車場</span></td><td data-label="一晚停車費"><span>800日圓，可停14:00～隔天11:00</span></td><td data-label="車高與車型"><span></span></td><td data-label="車位滿了"><span></span></td><td data-label="連結"><span><a href="https://www.hotel-cr.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%AF%E3%83%AC%E3%83%83%E3%82%BB%E3%83%B3%E3%83%88%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Art Hotel旭川</span></td><td data-label="到JR旭川站"><span>北口走路約15分</span></td><td data-label="停車場"><span>飯店停車場，機械式，在8條通6丁目</span></td><td data-label="一晚停車費"><span>1,000日圓</span></td><td data-label="車高與車型"><span></span></td><td data-label="車位滿了"><span>介紹附近的合作停車場</span></td><td data-label="連結"><span><a href="https://www.art-asahikawa.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr></tbody></table></div><p>「車高與車型」那一格空白的，開休旅車或廂型車前，先寫信把車款和車高告訴飯店，問停不停得進去。</p><p>這張表列出車停AEON MALL或合作停車場的5間飯店。</p><div class="article-table-scroll article-table--cards" tabindex="0"><table><thead><tr><th scope="col">飯店</th><th scope="col">到JR旭川站</th><th scope="col">停車場</th><th scope="col">一晚停車費</th><th scope="col">車高與車型</th><th scope="col">車位滿了</th><th scope="col">連結</th></tr></thead><tbody><tr><td data-label="飯店"><span>JR Inn旭川</span></td><td data-label="到JR旭川站"><span>北口出站經AEON MALL</span></td><td data-label="停車場"><span>AEON MALL旭川站前的立體停車場或高架下平面停車場</span></td><td data-label="一晚停車費"><span>800日圓，進場起24小時算一晚</span></td><td data-label="車高與車型"><span>車高2.2公尺以下</span></td><td data-label="車位滿了"><span></span></td><td data-label="連結"><span><a href="https://www.jr-inn.jp/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=JR%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>KOKO HOTEL旭川站前</span></td><td data-label="到JR旭川站"><span>走路約2分</span></td><td data-label="停車場"><span>AEON MALL旭川站前的停車場</span></td><td data-label="一晚停車費"><span>1,000日圓，每次出場都再收</span></td><td data-label="車高與車型"><span>車高2.2公尺以下</span></td><td data-label="車位滿了"><span></span></td><td data-label="連結"><span><a href="https://www.koko-hotels.com/asahikawa_station/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=KOKO%20HOTEL%20%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>HOTEL AMANEK旭川</span></td><td data-label="到JR旭川站"><span>北口走路約3分</span></td><td data-label="停車場"><span>隔壁的合作停車場D-Parking，7層自走式</span></td><td data-label="一晚停車費"><span>每24小時1,000日圓，離開時在停車場付</span></td><td data-label="車高與車型"><span></span></td><td data-label="車位滿了"><span></span></td><td data-label="連結"><span><a href="https://amanekhotels.jp/asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%A2%E3%83%9E%E3%83%8D%E3%82%AF%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>OMO7旭川</span></td><td data-label="到JR旭川站"><span>走路約13到15分</span></td><td data-label="停車場"><span>合作的Times停車場</span></td><td data-label="一晚停車費"><span>每24小時1,000日圓，每次進場都再收</span></td><td data-label="車高與車型"><span></span></td><td data-label="車位滿了"><span>介紹附近不是合作的停車場</span></td><td data-label="連結"><span><a href="https://hoshinoresorts.com/ja/hotels/omo7asahikawa/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=OMO7%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr><tr><td data-label="飯店"><span>Y&#039;s Hotel旭川站前</span></td><td data-label="到JR旭川站"><span>走路約1分</span></td><td data-label="停車場"><span>飯店後面的Times停車場</span></td><td data-label="一晚停車費"><span>1,200日圓，住宿期間可以進出</span></td><td data-label="車高與車型"><span>大型車要預約別的停車場</span></td><td data-label="車位滿了"><span></span></td><td data-label="連結"><span><a href="https://yshotel-asahikawa.com/" rel="noopener noreferrer">官網</a>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%AF%E3%82%A4%E3%82%BA%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82" rel="noopener noreferrer">地圖</a></span></td></tr></tbody></table></div><h2 id="section-12">旭川飯店的停車位可以預約嗎？</h2><p>旅行前什麼都想先訂好的人，大概也會想連停車位一起預約。不過這一頁的飯店，一般車大多是先到的人先停，不能事先預約；訂房時在備註欄寫上要停車就好。</p><p>要事先講的是大型車。Dormy Inn旭川的大型車要預約車位；露櫻旭川站前一條通（ホテルルートイン旭川駅前一条通）的大型車也要預約，而且下午5點以後才能進場；Y&#039;s Hotel旭川站前的大型車，要預約別的停車場。</p><p>很晚才到的話，停車場可能已經滿了。冬天碰到車位滿了，也不要停在路邊；旭川市請大家冬天不要路邊停車，以免妨礙除雪。</p><h2 id="section-13">旭川飯店停車，中途進出要再付費嗎？</h2><p>白天把車開出去玩、晚上再開回飯店，停車費要不要再付，要看是哪一間飯店。OMO7旭川每開進停車場一次、KOKO HOTEL旭川站前每開出停車場一次，都要再付一次；Y&#039;s Hotel旭川站前則是住宿期間可以進出。</p><p>JR Inn旭川和HOTEL AMANEK旭川是從進場起每24小時算一次。AMANEK是開出停車場時在繳費機付；住JR Inn的話，開出去再回來怎麼算，辦入住時跟櫃台確認。</p><p>Hotel Crescent旭川（ホテルクレッセント旭川）和Super Hotel旭川（スーパーホテル旭川）的車只能停固定的時段，分別從下午2點和3點停到隔天早上11點；Crescent中途要開出去，先問飯店。天然溫泉Premier Hotel-CABIN-旭川的住客，如果車停在合作停車場或投幣停車場，就不能中途開出去。其他飯店，出發前寫信問中途進出要不要再付。</p><h2 id="section-14">停車免費的旭川郊外日式旅館</h2><p>想省下停車費、不介意離車站遠一點的話，可以看看郊外的日式旅館。這一頁的14間飯店停車都要付費，郊外的扇松園和Matsueda旅館（お宿まつえだ）則不用錢。</p><p>扇松園在高砂台，從JR旭川站開車約10分。免費停車場最多可以停70台車，大型車和巴士也能停，不過只有2台的位置。官網可以線上訂房。<a href="https://sensyoen.co.jp/" rel="noopener noreferrer">扇松園官網</a></p><p>Matsueda旅館在東旭川、往旭山動物園的路上，開車到動物園約5分。免費停車場可以停10台車，大型巴士也能停。訂房要打電話。<a href="https://r.goope.jp/oyadomatsueda/" rel="noopener noreferrer">Matsueda旅館官網</a></p><h2 id="section-15">在旭川站前租車，開去旭山動物園、層雲峽與旭岳</h2><p>搭JR到旭川、隔天才開始自駕的人，車可以在旭川站前借。</p><p>Toyota Rent a Car旭川站前店（トヨタレンタカー旭川駅前店）和Nippon Rent-A-Car旭川站前（ニッポンレンタカー旭川駅前）的營業所，從JR旭川站走路都約2分，平常都是早上8點開門，Toyota在4月到10月開到晚上8點，其他時候兩間都開到晚上7點。兩間都可以異地還車。</p><p>想開車去旭山動物園的話，<a href="/places/asahikawa/asahiyama-zoo/">〈旭山動物園〉</a>有開過去的路和動物園的免費停車場。冬天要開車去層雲峽，先看<a href="/places/sounkyo/transport/">〈層雲峽交通〉</a>整理的路況和封路。開車去旭岳要多久、遊客中心的停車場和冬季輪胎，都在<a href="/places/asahidake/transport/">〈旭岳交通〉</a>。</p><aside class="article-sources"><h2 id="section-16">資料來源</h2><ul><li><a href="https://dormy-hotels.com/dormyinn/hotels/asahikawa/" rel="noopener noreferrer">Dormy Inn旭川官網</a></li><li><a href="https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/" rel="noopener noreferrer">露櫻Grand旭川站前官網</a></li><li><a href="https://cabin.kenhotels.com/asahikawa/" rel="noopener noreferrer">天然溫泉Premier Hotel-CABIN-旭川官網</a></li><li><a href="https://www.ishinhotels.com/wbf/grande-asahikawa" rel="noopener noreferrer">Hotel WBF Grande旭川官網</a></li><li><a href="https://www.enhotels.co.jp/asahikawa/" rel="noopener noreferrer">旭川庭院飯店官網</a></li><li><a href="https://www.superhotel.co.jp/s_hotels/asahikawa/" rel="noopener noreferrer">Super Hotel旭川官網</a></li><li><a href="https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/" rel="noopener noreferrer">露櫻旭川站前一條通官網</a></li><li><a href="https://www.hotel-cr.com/" rel="noopener noreferrer">Hotel Crescent旭川官網</a></li><li><a href="https://www.art-asahikawa.com/" rel="noopener noreferrer">Art Hotel旭川官網</a></li><li><a href="https://www.jr-inn.jp/asahikawa/" rel="noopener noreferrer">JR Inn旭川官網</a></li><li><a href="https://www.koko-hotels.com/asahikawa_station/" rel="noopener noreferrer">KOKO HOTEL旭川站前官網</a></li><li><a href="https://amanekhotels.jp/asahikawa/" rel="noopener noreferrer">HOTEL AMANEK旭川官網</a></li><li><a href="https://hoshinoresorts.com/ja/hotels/omo7asahikawa/" rel="noopener noreferrer">OMO7旭川官網</a></li><li><a href="https://yshotel-asahikawa.com/" rel="noopener noreferrer">Y&#039;s Hotel旭川站前官網</a></li></ul><p>資料更新：2026年11月</p></aside></div></div></div></body></html>

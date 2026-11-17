@@ -213,11 +213,11 @@ const structuredData = createArticleStructuredData({
         <div class="portable-content" set:html={renderPortableText(article.body)} />
         {article.body.some((block) => block._type === 'mediaEmbed') && (
           <script is:inline>
-            // 嵌入的影片與 Instagram 貼文：讀者點了才載入對方的 iframe，頁面不先連到 YouTube 或 Instagram。
+            // YouTube 影片：讀者點了才載入播放器。Instagram 貼文直接顯示（iframe 已在 HTML 裡，滑到附近才載入），這裡只負責照貼文高度調整。
             document.querySelectorAll('.article-embed [data-embed-src]').forEach((button) => {
               button.addEventListener('click', () => {
                 const figure = button.closest('.article-embed')
-                const holder = figure.querySelector('.article-embed-frame, .article-embed-card')
+                const holder = figure.querySelector('.article-embed-frame')
                 const frame = document.createElement('iframe')
                 frame.src = button.dataset.embedSrc
                 frame.title = button.dataset.embedTitle || '嵌入內容'

@@ -1,6 +1,6 @@
 # 嵌入影片與 Instagram 貼文的封包
 
-2026-10-29 網站做好嵌入區塊（Sanity `mediaEmbed`）後，文章可以嵌入 YouTube 影片與官方 Instagram 貼文。挑選條件見寫作 Skill `references/embeds-and-data-blocks.md`；這份檔案只寫紀錄格式與上傳方式。
+2026-10-29 網站做好嵌入區塊（Sanity `mediaEmbed`）後，文章可以嵌入 YouTube 影片與官方 Instagram 貼文。挑選條件見寫作 Skill `references/embeds-and-data-blocks.md`；這份檔案只寫紀錄格式與上傳方式。網站上 YouTube 是點了才載入播放器，Instagram 貼文直接顯示（2026-11-17 改）。
 
 嵌入不是本站的圖片：不下載、不寫進 `image-plan.json`，紀錄放在 `content-production/<article-id>/images/embed-plan.json`。
 
@@ -41,7 +41,7 @@
 - `evidence`：怎麼確認內容對得上（說明欄、章節、字幕、Instagram 貼文說明文字）。沒看到畫面，對不上就不用。
 - `checks` 四項都要是 `true`。
 - 每篇最多 2 個，一節最多 1 個。
-- 例外（Darren 2026-11-17）：住宿專門頁每間有細寫的飯店可以各放 1 則 Instagram 貼文，住客的公開貼文（`channelType: individual`）也可以用，不限兩年內。找法、條件與版面見寫作 Skill `references/stay-topic-page.md`「照片與嵌入」。
+- 例外（Darren 2026-11-17）：住宿專門頁每間有細寫的飯店可以各放 1 則 Instagram 貼文，住客的公開貼文（`channelType: individual`）也可以用，不限兩年內。找法、條件與版面見寫作 Skill `references/stay-topic-page.md`「照片與嵌入」。封包最上層要寫 `"pageType": "stay-topic"`，檢查程式才會放行（最多 12 則、一節仍只能 1 則）。
 
 ## 上傳
 

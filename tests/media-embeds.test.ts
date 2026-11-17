@@ -25,7 +25,7 @@ test('YouTube 嵌入先只放縮圖與按鈕，點了才載入 nocookie 播放�
   assert.match(html, /影片：<a href="https:\/\/www\.youtube\.com\/watch\?v=F-lz9aR-Xyg&amp;t=265s" rel="noopener noreferrer">北海道公式<\/a>（2025）・實際資訊以本文為準/)
 })
 
-test('Instagram 嵌入是卡片與載入按鈕，連結到貼文', () => {
+test('Instagram 嵌入直接顯示貼文（滑到附近才載入），連結到貼文', () => {
   const html = renderPortableText([
     {
       _key: 'media-embed-ig',
@@ -38,9 +38,9 @@ test('Instagram 嵌入是卡片與載入按鈕，連結到貼文', () => {
       caption: '冰瀑祭會場的夜間點燈。',
     },
   ])
-  assert.match(html, /data-embed-src="https:\/\/www\.instagram\.com\/p\/ABC_123-x\/embed\/captioned\/"/)
+  assert.match(html, /<iframe src="https:\/\/www\.instagram\.com\/p\/ABC_123-x\/embed\/" title="冰瀑祭" loading="lazy"/)
   assert.match(html, /貼文：<a href="https:\/\/www\.instagram\.com\/p\/ABC_123-x\/"/)
-  assert.doesNotMatch(html, /<iframe|<script/)
+  assert.doesNotMatch(html, /<script|data-embed-src/)
 })
 
 test('網址不是影片或貼文、缺欄位時不輸出任何東西', () => {
@@ -124,4 +124,28 @@ test('嵌入算位置時照片算一個區塊，照片位置計算略過嵌入',
   const placement = {heading: '騎自行車繞利尻島一圈', afterBlocks: 2}
   assert.equal(findInsertionKey(body, placement, {skipPrefixes: ['media-embed-']}), 'inline-image-cycling')
   assert.equal(findInsertionKey(body, placement), 'p2')
+})
+
+test('「資料來源」一節包成文末的小字區塊，標題仍是 h2，下一個 h2 之前結束', () => {
+  const block = (style: string, text: string, extra = {}) => ({_key: text, _type: 'block', style, children: [{_key: 's', _type: 'span', text, marks: []}], markDefs: [], ...extra})
+  const html = renderPortableText([
+    block('h2', '正文'),
+    block('normal', '內文。'),
+    block('h2', '資料來源'),
+    block('normal', '來源甲', {listItem: 'bullet'}),
+    block('normal', '來源乙', {listItem: 'bullet'}),
+    block('normal', '資料更新：2026年11月'),
+  ] as never)
+  assert.match(html, /<p>內文。<\/p><aside class="article-sources"><h2 id="section-2">資料來源<\/h2><ul><li>來源甲<\/li><li>來源乙<\/li><\/ul><p>資料更新：2026年11月<\/p><\/aside>$/)
+  const two = renderPortableText([block('h2', '資料來源'), block('normal', '甲'), block('h2', '後記'), block('normal', '乙')] as never)
+  assert.match(two, /<\/aside><h2 id="section-2">後記<\/h2><p>乙<\/p>$/)
+})
+
+test('住宿專門頁的嵌入封包：可以超過兩個、可以用住客的 Instagram、不限兩年，一節仍只能一則', () => {
+  const base = plan.embeds[0]
+  const ig = (id: string, heading: string, extra = {}) => ({...base, embedId: id, platform: 'instagram', url: `https://www.instagram.com/p/${id}/`, startSeconds: undefined, channelType: 'individual', captionDraft: '住客拍的早餐。', placement: {...base.placement, heading}, ...extra})
+  const stay = {...plan, pageType: 'stay-topic', embeds: [ig('a1', '甲飯店早餐'), ig('b2', '乙飯店早餐'), ig('c3', '丙飯店早餐', {publishedAt: '2022-05', checks: {...base.checks, withinTwoYears: false}})]}
+  assert.equal(validateEmbedPlan(stay).length, 3)
+  assert.throws(() => validateEmbedPlan({...stay, pageType: undefined}), /最多 2 個/)
+  assert.throws(() => validateEmbedPlan({...stay, embeds: [ig('a1', '甲飯店早餐'), ig('b2', '甲飯店早餐')]}), /同一節只能放一個/)
 })

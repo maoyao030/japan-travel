@@ -5,6 +5,7 @@ import {MEDIA_EMBED_KEY_PREFIX} from './inline-image-placement.mjs'
 
 const YOUTUBE_ID = /^[A-Za-z0-9_-]{11}$/
 const MAX_EMBEDS = 2
+const MAX_EMBEDS_STAY_TOPIC = 12
 
 export function mediaEmbedKey(embedId) {
   if (!/^[a-z0-9-]+$/.test(embedId ?? '')) throw new Error(`embedId 只能用小寫英數與連字號：${embedId}`)
@@ -47,7 +48,11 @@ export function validateEmbedPlan(plan, {articleId} = {}) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(plan.checkedAt ?? '')) throw new Error('checkedAt 要寫 YYYY-MM-DD')
   const embeds = plan.embeds ?? []
   if (!Array.isArray(embeds) || embeds.length === 0) throw new Error('embed-plan.json 沒有嵌入')
-  if (embeds.length > MAX_EMBEDS) throw new Error(`一篇最多 ${MAX_EMBEDS} 個嵌入`)
+  // 住宿專門頁（Darren 2026-11-17）：每間飯店可以各放 1 則 Instagram，住客的公開貼文也可以，不限兩年內。
+  // 封包寫 pageType: 'stay-topic' 才適用；一節一則的限制照舊。
+  const stayTopic = plan.pageType === 'stay-topic'
+  const maxEmbeds = stayTopic ? MAX_EMBEDS_STAY_TOPIC : MAX_EMBEDS
+  if (embeds.length > maxEmbeds) throw new Error(`一篇最多 ${maxEmbeds} 個嵌入`)
 
   const headings = new Set()
   const ids = new Set()
@@ -60,12 +65,13 @@ export function validateEmbedPlan(plan, {articleId} = {}) {
       if (typeof embed[field] !== 'string' || embed[field].trim() === '') throw new Error(`${embed.embedId} 缺少 ${field}`)
     }
     if (!['official', 'individual'].includes(embed.channelType)) throw new Error(`${embed.embedId} 的 channelType 只能是 official 或 individual`)
-    if (embed.platform === 'instagram' && embed.channelType !== 'official') throw new Error(`${embed.embedId}：Instagram 只用官方帳號`)
+    if (embed.platform === 'instagram' && embed.channelType !== 'official' && !stayTopic) throw new Error(`${embed.embedId}：Instagram 只用官方帳號`)
     if (!/^\d{4}-\d{2}$/.test(embed.publishedAt ?? '')) throw new Error(`${embed.embedId} 的 publishedAt 要寫 YYYY-MM`)
     const age = monthsBetween(embed.publishedAt, plan.checkedAt)
-    if (age < 0 || age > 24) throw new Error(`${embed.embedId} 發布超過兩年或日期在查核日之後（${embed.publishedAt}）`)
+    if (age < 0 || (age > 24 && !stayTopic)) throw new Error(`${embed.embedId} 發布超過兩年或日期在查核日之後（${embed.publishedAt}）`)
     const checks = embed.checks ?? {}
     for (const check of ['publicAndEmbeddable', 'withinTwoYears', 'contentVerified', 'notMisleadingAd']) {
+      if (check === 'withinTwoYears' && stayTopic) continue
       if (checks[check] !== true) throw new Error(`${embed.embedId} 的 checks.${check} 不是 true`)
     }
     const heading = embed.placement?.heading

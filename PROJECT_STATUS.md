@@ -2171,3 +2171,12 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 阻礙：無。
 - 唯一下一步：Darren 看自駕頁預覽；三頁都認可後，決定先上線還是先把流程接進自動寫作。
 - 測試與 Git：分支 `test/stay-local`，全部本機 commit，沒有 push，沒有動 `main`、Sanity、D1。
+
+## 2026-11-17｜Claude Code｜網站版面：Instagram 直接顯示、資料來源小字
+
+- 已完成：`src/lib/portableText.ts`（Instagram 嵌入直接輸出 iframe、`loading="lazy"`；「資料來源」一節包進 `aside.article-sources`）、`src/styles/global.css`（貼文寬 500px 置中、說明小字；資料來源小字、連結排成一段）、`src/components/ArticlePage.astro`（點了才載入的小程式只管 YouTube）、`scripts/embed-plan.mjs`（`pageType: "stay-topic"` 的例外）。測試從 240 項變 242 項，全部通過。用網站的程式重畫三頁預覽（`build-preview-site.mjs` → 各資料夾 `preview-site.html`），並用一篇已上線文章（旭岳登山）確認舊文章的資料來源與延伸資料正常。
+- `npm run build` 整站建置通過（59 個頁面，站內連結與點擊深度檢查通過）。
+- 尚未完成：沒有在瀏覽器打開建好的真正網站頁面（含目錄、頁首頁尾）看過；三頁測試用的 `embed-plan.json` 還缺 `title` 與 `checks` 欄位，上傳前要補；還沒併進 `main`，線上是舊版面；三頁與主頁沒上線；流程沒接進自動寫作。
+- 阻礙：無。
+- 唯一下一步：Darren 看用網站程式畫的預覽；認可後決定要不要把分支併進 `main`（線上 45 篇的資料來源會一起變）。
+- 測試與 Git：分支 `test/stay-local`，本機 commit，沒有 push。

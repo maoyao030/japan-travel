@@ -259,7 +259,8 @@ export function instagramPost(value?: string) {
   }
 }
 
-// 嵌入只先放縮圖或按鈕，讀者點了才載入 YouTube 或 Instagram（ArticlePage 的小程式負責換成 iframe）。
+// YouTube 先放縮圖，讀者點了才載入播放器（ArticlePage 的小程式負責換成 iframe）。
+// Instagram 貼文直接顯示（Darren 2026-11-17：不要點了才看得到），用 loading="lazy" 讓它滑到附近才載入。
 function renderEmbed(embed: MediaEmbed) {
   if (!embed.caption || !embed.channelName || !embed.title) return ''
   const year = /^\d{4}/.exec(embed.publishedAt ?? '')?.[0]
@@ -278,8 +279,8 @@ function renderEmbed(embed: MediaEmbed) {
     const post = instagramPost(embed.url)
     if (!post) return ''
     const permalink = `https://www.instagram.com/${post.kind}/${post.code}/`
-    const src = `${permalink}embed/captioned/`
-    return `<figure class="article-embed article-embed-instagram"><div class="article-embed-card"><p class="article-embed-card-title">Instagram 貼文・${escapeHtml(embed.channelName)}</p><button type="button" class="article-embed-load" data-embed-src="${escapeHtml(src)}" data-embed-title="${escapeHtml(embed.title)}">載入貼文</button><a href="${escapeHtml(permalink)}" rel="noopener noreferrer">在 Instagram 開啟</a></div><figcaption><span>${escapeHtml(embed.caption)}</span><small class="article-embed-credit">貼文：<a href="${escapeHtml(permalink)}" rel="noopener noreferrer">${escapeHtml(embed.channelName)}</a>${yearText}・實際資訊以本文為準</small></figcaption></figure>`
+    const src = `${permalink}embed/`
+    return `<figure class="article-embed article-embed-instagram"><div class="article-embed-post"><iframe src="${escapeHtml(src)}" title="${escapeHtml(embed.title)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><figcaption><span>${escapeHtml(embed.caption)}</span><small class="article-embed-credit">貼文：<a href="${escapeHtml(permalink)}" rel="noopener noreferrer">${escapeHtml(embed.channelName)}</a>${yearText}・實際資訊以本文為準</small></figcaption></figure>`
   }
 
   return ''
@@ -354,6 +355,14 @@ export function renderPortableText(blocks: ArticleBodyBlock[]) {
     activeList = null
   }
 
+  // 「資料來源」一節包成文末的小字區塊（Darren 2026-11-17）：標題仍是 h2，樣式在 global.css 的 .article-sources。
+  let inSources = false
+  const closeSources = () => {
+    if (!inSources) return
+    html += '</aside>'
+    inSources = false
+  }
+
   for (const block of blocks) {
     if (block._type === 'contentTable') {
       closeList()
@@ -391,6 +400,13 @@ export function renderPortableText(blocks: ArticleBodyBlock[]) {
     if (block.style === 'h2' || block.style === 'h3') {
       headingNumber += 1
       const tag = block.style
+      if (tag === 'h2') {
+        closeSources()
+        if (normalizePlainText(textFromBlock(block)) === '資料來源') {
+          html += '<aside class="article-sources">'
+          inSources = true
+        }
+      }
       html += `<${tag} id="section-${headingNumber}">${content}</${tag}>`
     } else if (block.style === 'blockquote') {
       html += `<blockquote>${content}</blockquote>`
@@ -400,5 +416,6 @@ export function renderPortableText(blocks: ArticleBodyBlock[]) {
   }
 
   closeList()
+  closeSources()
   return html
 }

@@ -2229,6 +2229,87 @@ a {
   font-size: 0.92rem;
 }
 
+/* Instagram 貼文直接顯示：寬約 500px、置中，說明用小字（Darren 2026-11-17）。 */
+.article-embed-post {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.article-embed-post iframe {
+  display: block;
+  width: 100%;
+  height: 680px;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--surface);
+}
+
+.article-embed-instagram figcaption {
+  max-width: 500px;
+  margin-inline: auto;
+  font-size: 0.78rem;
+}
+
+/* 資料來源：文末一塊小字，更新日期排最前，來源連結排成一段（Darren 2026-11-17）。 */
+.article-sources {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0 0;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.8;
+}
+
+.portable-content .article-sources > h2,
+.portable-content .article-sources > h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+}
+
+.portable-content .article-sources > h3 {
+  margin-top: 0.4rem;
+}
+
+.portable-content .article-sources > p {
+  order: -1;
+  margin: 0;
+  font-size: inherit;
+}
+
+.portable-content .article-sources > ul,
+.portable-content .article-sources > ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: inherit;
+}
+
+.portable-content .article-sources li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.portable-content .article-sources li::before {
+  content: none;
+}
+
+.portable-content .article-sources li + li::before {
+  content: "・";
+  opacity: 0.55;
+}
+
+.article-sources a {
+  color: inherit;
+}
+
 .article-embed-credit a {
   color: inherit;
 }
