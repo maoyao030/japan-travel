@@ -13,7 +13,7 @@ for (const e of plan.embeds) {
   let at = h;
   for (let i = 0; i < e.placement.afterBlocks; i++) at = html.indexOf('</p>', at) + 4;
   const who = e.channelType === 'official' ? '飯店官方' : '住客';
-  const block = `<figure style="margin:1.25rem auto;max-width:300px"><iframe src="${e.url}embed/" loading="lazy" style="width:100%;height:400px;border:1px solid #ddd;border-radius:8px" allowtransparency="true"></iframe><figcaption style="font-size:.78rem;color:#666;margin-top:.4rem">${esc(e.captionDraft)}Instagram：${esc(e.channelName)}（${who}，${e.publishedAt.slice(0, 4)}年）・實際資訊以本文為準</figcaption></figure>`;
+  const block = `<figure style="margin:1.25rem auto;max-width:500px"><iframe src="${e.url}embed/" loading="lazy" style="width:100%;height:680px;border:1px solid #ddd;border-radius:8px" allowtransparency="true"></iframe><figcaption style="font-size:.78rem;color:#666;margin-top:.4rem">${esc(e.captionDraft)}Instagram：${esc(e.channelName)}（${who}，${e.publishedAt.slice(0, 4)}年）・實際資訊以本文為準</figcaption></figure>`;
   html = html.slice(0, at) + block + html.slice(at);
 }
 const c = plan.cover;
