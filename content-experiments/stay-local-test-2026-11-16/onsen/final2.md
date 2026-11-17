@@ -101,8 +101,6 @@ OMO7旭川館內泡的是三溫暖和32到33度的低溫浴池，住客可以免
 
 ## 資料來源
 
-泡湯設施的查核日期是2026年11月12日，以各飯店與旅館的官網為準。住客的說法整理自Google地圖、4travel與Trip.com的住客評論，只寫兩個平台以上、三則以上都提到的，查核日期是2026年11月16日。
-
 - [Dormy Inn旭川官網](https://dormy-hotels.com/dormyinn/hotels/asahikawa/)
 - [Hotel WBF Grande旭川官網](https://www.ishinhotels.com/wbf/grande-asahikawa)
 - [天然溫泉Premier Hotel-CABIN-旭川官網](https://cabin.kenhotels.com/asahikawa/)
@@ -112,3 +110,5 @@ OMO7旭川館內泡的是三溫暖和32到33度的低溫浴池，住客可以免
 - [Art Hotel旭川官網](https://www.art-asahikawa.com/)
 - [Y's Hotel旭川站前官網](https://yshotel-asahikawa.com/)
 - [露櫻旭川站前一條通官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_507/)
+
+資料更新：2026年11月

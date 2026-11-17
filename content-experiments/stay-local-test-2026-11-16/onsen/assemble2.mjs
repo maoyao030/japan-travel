@@ -25,8 +25,7 @@ const lines = readFileSync(join(here, 'edited2.md'), 'utf8').split(/\r?\n/).map(
 });
 const src = [
   '', '## 資料來源', '',
-  '泡湯設施的查核日期是2026年11月12日，以各飯店與旅館的官網為準。住客的說法整理自Google地圖、4travel與Trip.com的住客評論，只寫兩個平台以上、三則以上都提到的，查核日期是2026年11月16日。', '',
-  ...official.map(([n, u]) => `- [${n}官網](${u})`), '',
+  ...official.map(([n, u]) => `- [${n}官網](${u})`), '', '資料更新：2026年11月', '',
 ];
 writeFileSync(join(here, 'final2.md'), `${lines.join('\n').trimEnd()}\n${src.join('\n')}`);
 console.log(`表格 ${official.length} 列`);
