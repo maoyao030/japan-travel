@@ -34,7 +34,7 @@ export const LIMITS = {
   longSentencePercent: 25, // 超過 50 字的句子比例，GLTJP 12%～17%
   commasPerSentence: 1.8, // GLTJP 0.9～1.4、Funliday 1.5；用「所以」「不然」串事實需要逗號，2026-10-18 從 1.4 放寬
   ifClauses: 3.5, // 「的話」每千字；GLTJP 一整頁只用 1～2 次，Funliday 2.7～3.2；潤稿用條件句取代「所以」「…的人」，2026-10-18 從 2.5 放寬
-  comeHere: 0, // 「來這裡」「來的話」「冬天來」這類現場感用字，改成前往、造訪、抵達
+  comeHere: 0, // 「來這裡」「來的話」「冬天來」這類現場感用字，改成去、到、造訪
   notFound: 0, // 「官方沒寫」「官方沒有公布」「未查」：查不到的不寫（2026-10-18 Darren 決定）
 }
 // 會擋的只有用字禁令；其他數字只記錄（2026-10-30）
@@ -112,7 +112,7 @@ const HINTS = {
   longSentencePercent: '把超過50字的句子拆開',
   commasPerSentence: '一句講一件事',
   ifClauses: '「的話」每段最多一次',
-  comeHere: '改成前往、造訪、抵達',
+  comeHere: '改成去、到、造訪（寫作指南第17條）',
   notFound: '查不到的不寫，會卡住讀者的事改寫成能做的事',
 }
 

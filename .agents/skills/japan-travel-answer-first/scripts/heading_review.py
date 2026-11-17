@@ -6,7 +6,7 @@
 - reader-preview.md 的標題順序與層級，等於紀錄的 after；
 - 標題數量與層級沒有被增刪或改動；
 - H1 與 SEO Title 不含冒號，問句以全形「？」結尾；
-- 固定分章名稱（常見問題、資料來源）沒有被改。
+- 固定分章名稱（延伸資料、資料來源）沒有被改。
 
 用法：python3 heading_review.py <文章資料夾> [--json]
 """
@@ -17,7 +17,7 @@ import re
 import sys
 from pathlib import Path
 
-FIXED = {"常見問題", "資料來源"}
+FIXED = {"延伸資料", "資料來源"}
 HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 
 

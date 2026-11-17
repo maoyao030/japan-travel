@@ -5,7 +5,7 @@
 - 潤稿前（已通過格式檢查的內容稿）：`<文章資料夾>/before-reader-preview.md`
 - 潤稿後：`<文章資料夾>/reader-preview.md`
 - 原文摘錄與事實：`<文章資料夾>/reference-review.md`（每筆事實的原文摘錄）；必要時查 `content-planning/hokkaido/places/<地點>/facts.json`
-- 不要開 `polish-notes.md`、`editor-review.md` 與其他資料夾。
+- 不要開 `polish-notes.md` 與其他資料夾。
 
 逐段對照兩版，列出所有意義上的差異，每一處分成三類：
 

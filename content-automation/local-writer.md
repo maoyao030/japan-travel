@@ -156,7 +156,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 2. 父 Hub：第 2 步（`queue-state.json` 的 `parentHubs[]`，`missing` 就 `prepare-parent-hub.mjs <batchId>` dry-run 後 `--apply`）。
 3. Sanity 狀態是 `staged_noindex`（上一輪做到一半）：跳過 4、5、6，照 Skill「resume」的 `staged`：沒封面才做第 5 點的封面；封包裡有文內照片的，照第 6 點最後一段補傳（已插入的會顯示 `already-matching`），再接第 7 點。
 4. 定稿：`npm run release:finalize -- content-production/<id>`。
-5. 選圖：派一個子代理照 `.agents/skills/japan-travel-image-finder/SKILL.md` 選**封面與文內照片**，只用實拍照片（維基共享資源、免費圖庫、條款允許的觀光協會照片），**不用 AI 圖**，圖片用 curl 下載、不在瀏覽器點下載，User-Agent 不放 email，封包寫在 `content-production/<id>/images/`。
+5. 選圖：派一個子代理照 `.agents/skills/japan-travel-image-finder/SKILL.md` 選**封面與文內照片**，只用實拍照片（依序找條款允許的觀光協會等官方照片、免費圖庫、維基共享資源），**不用 AI 圖**，圖片用 curl 下載、不在瀏覽器點下載，User-Agent 不放 email，封包寫在 `content-production/<id>/images/`。
    - 封面：選定後 `npm run image:prepare:cover -- content-production/<id> --download`，親自看一次裁切後的圖。找不到合格實拍：這篇加進「上傳停放」表（原因「缺封面」），`ops-article.mjs fail --article=<id> --kind=publish --reason=缺封面`，換下一篇。
    - 文內照片（2026-10-28 加回）：只放重點景點與交通據點，就是有自己一節、讀者到現場要認得出來的地方（渡輪站、機場、車站、主要景點），一篇最多 4 張，一節最多 1 張。每個位置要有 `placement`（那一節標題全文、`afterBlocks` 預設 1，接在第一段之後）與 `preparation`，格式見 image-finder `references/image-packet.md`「文內照片的位置與準備」。找不到合格實拍的位置就不放、不列進封包，**不因為缺文內照片停放**。
    - 有文內照片時，`npm run image:prepare:inline -- content-production/<id> --download`，**親自打開每一張 webp**，確認畫面和 `altDraft`、`captionDraft` 寫的一致（例如寫了看得到招牌字樣，就要真的讀得到）；不一致就改文字，改不了就拿掉那個位置。下載被擋（HTTP 429 之類）就照 `.tmp/image-selection/<id>/inline/<slotId>-source.jpg` 用 curl 下載後重跑（不加 `--download`）；還是不行，這篇先不放文內照片，照樣上線。
