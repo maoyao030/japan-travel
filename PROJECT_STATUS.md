@@ -2144,3 +2144,12 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 尚未完成：本機測試還沒開始；分支 `claude/sharp-fermat-2nj3mz` 還沒併進 `main`，本機要先取得這個分支。
 - 唯一下一步：Darren 在本機對話說「住宿頁階段測試」。
 - 測試與 Git：只改規則文件，240 項測試通過；已 push。
+
+## 2026-11-17｜Claude Code｜住宿專門頁的範本與一次到位的流程
+
+- 已決定（Darren）：住宿專門頁的寫法、標題、順序、照片嵌入與資料來源版面，以〈旭川飯店早餐〉樣本為準（「現在這個格式沒問題了」）；流程要一次到位，沒過關的稿不給他看。
+- 已完成：新增寫作 Skill `references/stay-topic-page.md`（固定範本、十步流程、驗收六題、照片與嵌入）；`stay-page.md`、`SKILL.md`、選圖 Skill `embed-plan.md`、`embeds-and-data-blocks.md`、`AGENTS.md`、`RULES_OVERVIEW.md` 同步。樣本 `content-experiments/stay-local-test-2026-11-16/breakfast/`：`final.md`（六題驗收過關）、`embed-plan.json`（十間各一則 Instagram）、`preview-media.html`。
+- 尚未完成：早餐頁沒上線、沒登記成頁型範本；溫泉頁（`onsen/`）與自駕頁照舊流程寫的版本沒過關，要照新流程重跑；網站程式的嵌入直接顯示與資料來源小字還沒做；動筆前檢查規格目前靠助手，沒有程式檢查；Trip.com 連結沒有逐一打開確認；譯名表待登記（KOKO 舊名、OMO7、WBF、Crescent、Super Hotel、庭院飯店）。
+- 阻礙：無。
+- 唯一下一步：溫泉頁照新流程從頭重跑一次，驗證這套流程換一頁也能一次過關。
+- 測試與 Git：只改規則文件與測試資料夾；分支 `test/stay-local`，全部是本機 commit，沒有 push，沒有動 `main`、Sanity、D1。

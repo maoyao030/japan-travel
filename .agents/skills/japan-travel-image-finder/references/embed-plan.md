@@ -34,13 +34,14 @@
 - `platform`：`youtube` 或 `instagram`。
 - `url`：YouTube 用 `https://www.youtube.com/watch?v=<11 碼影片 ID>`；Instagram 用 `https://www.instagram.com/p/<代碼>/` 或 `/reel/<代碼>/`。
 - `startSeconds`：只有 YouTube 用，從對題的章節開始播；從頭播填 0。
-- `channelType`：`official`（觀光協會、自治體、交通公司、環境省等）或 `individual`。Instagram 只用 `official`。
+- `channelType`：`official`（觀光協會、自治體、交通公司、環境省等）或 `individual`。Instagram 只用 `official`（住宿專門頁例外，見下）。
 - `publishedAt`：`YYYY-MM`，要在查核日前兩年內。
 - `placement`：同文內照片，`heading` 是那一節 H2 或 H3 全文，`afterBlocks` 從標題往下數。同一節已經有照片時，放在照片之後（`afterBlocks` 加 1）。
 - `captionDraft`：一句中文，說畫面是什麼。`startSeconds` 大於 0 才在句尾寫從哪裡開始（「從 4 分 25 秒開始」，不滿 1 分寫「從 34 秒開始」）；從頭播就不提播放位置，不寫「從頭播放」「從頭開始看」這類話，讀者按下去本來就是從頭播（Darren 2026-11-11）。網站會自動在後面加「影片：頻道名（年份）・實際資訊以本文為準」，不用自己寫。
 - `evidence`：怎麼確認內容對得上（說明欄、章節、字幕、Instagram 貼文說明文字）。沒看到畫面，對不上就不用。
 - `checks` 四項都要是 `true`。
 - 每篇最多 2 個，一節最多 1 個。
+- 例外（Darren 2026-11-17）：住宿專門頁每間有細寫的飯店可以各放 1 則 Instagram 貼文，住客的公開貼文（`channelType: individual`）也可以用，不限兩年內。找法、條件與版面見寫作 Skill `references/stay-topic-page.md`「照片與嵌入」。
 
 ## 上傳
 
