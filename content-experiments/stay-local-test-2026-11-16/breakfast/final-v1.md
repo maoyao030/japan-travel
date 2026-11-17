@@ -1,0 +1,183 @@
+# 旭川飯店早餐推薦，13間飯店的早餐時間與菜色比較
+
+想在飯店早餐吃到海鮮和旭川在地菜的話，車站走路3分鐘內的 HOTEL AMANEK旭川（ホテルアマネク旭川）和 KOKO HOTEL旭川站前（舊名站前永安國際飯店，日文舊名ホテルウィングインターナショナル旭川駅前）都有自己盛的海鮮丼。要趕早車的話，OMO7旭川的早餐6:00就開，不過離JR旭川站走路約13到15分。還沒決定住哪一區、想連停車和大浴場一起比的人，先看〈旭川住宿推薦〉。想在飯店泡天然溫泉的，看〈旭川溫泉飯店〉。
+
+## 旭川飯店早餐比較表
+
+這張表列出旭川市區13間飯店的早餐時間、菜色與含早方式。
+
+| 飯店 | 到JR旭川站 | 早餐時間 | 吃得到什麼 | 含早與加購 | 連結 |
+|---|---|---|---|---|---|
+| HOTEL AMANEK旭川 | 北口走路約3分 | 6:30～10:00（9:30最後點餐） | 海鮮丼、旭川拉麵、新子燒 | 可選含早或不含早 | [官網](https://amanekhotels.jp/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%A2%E3%83%9E%E3%83%8D%E3%82%AF%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Dormy Inn旭川 | 走路約15分 | 6:30～9:30（9:00前進場） | 海鮮丼 | 可選含早或不含早；入住時可加 | [官網](https://dormy-hotels.com/dormyinn/hotels/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%BC%E3%83%9F%E3%83%BC%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| KOKO HOTEL旭川站前 | 走路約2分 | 6:30～9:30（9:00最後點餐） | 海鮮丼、鮭魚卵、成吉思汗烤肉 | 有含早方案 | [官網](https://www.koko-hotels.com/asahikawa_station/)・[地圖](https://www.google.com/maps/search/?api=1&query=KOKO%20HOTEL%20%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Hotel WBF Grande旭川 | 東口走路約2分 | 6:30～9:30（9:00前進場） | 醃漬海鮮丼、旭川拉麵、新子燒 | | [官網](https://www.ishinhotels.com/wbf/grande-asahikawa)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%ABWBF%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%87%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Y's Hotel旭川站前 | 走路約1分 | 6:30～9:30 | 鮭魚卵海鮮、醬油拉麵、成吉思汗烤肉 | 可選含早或不含早；入住時或當天在櫃台買券 | [官網](https://yshotel-asahikawa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AF%E3%82%A4%E3%82%BA%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| OMO7旭川 | 走路約13到15分 | 6:00～10:00 | 現烤鬆餅、辣根海鮮飯 | 可向櫃台追加 | [官網](https://hoshinoresorts.com/ja/hotels/omo7asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=OMO7%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| JR Inn旭川 | 北口出站經AEON MALL | 6:30～10:00（9:30前進場） | | 可選含早或不含早 | [官網](https://www.jr-inn.jp/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=JR%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Art Hotel旭川 | 走路約15分 | 6:30～10:00（9:30最後點餐） | | 可選含早或不含早 | [官網](https://www.art-asahikawa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Hotel Crescent旭川 | 走路約12分 | 7:00～9:00 | 自製三明治、自家醃菜、沙拉吧 | | [官網](https://www.hotel-cr.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%AF%E3%83%AC%E3%83%83%E3%82%BB%E3%83%B3%E3%83%88%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 旭川庭院飯店 | 走路約2分 | 7:00開始（9:00最後點餐） | 白飯、味噌湯、烤魚 | 可選含早或不含早 | [官網](https://www.enhotels.co.jp/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 天然溫泉Premier Hotel-CABIN-旭川 | 走路約3分 | 6:30～10:00（9:30前進場） | 旭川醬油拉麵 | 入住時或當天早上可加 | [官網](https://cabin.kenhotels.com/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%9B%E3%83%86%E3%83%AB-CABIN-%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| 露櫻Grand旭川站前 | 北口走路約2分 | 6:30～9:30 | 奶油可頌、現烤麵包 | 官網訂房免費，其他管道要付費 | [官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3Grand%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Super Hotel旭川 | 走路約5分 | 6:30～9:00 | 有機蔬菜沙拉、現烤麵包 | 免費 | [官網](https://www.superhotel.co.jp/s_hotels/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+
+## 旭川住宿早餐要另外加購嗎？
+
+要不要另外加購，看你訂的方案。多數飯店都有含早餐和不含早餐的方案，訂的時候選含早，早上就不用另外付錢。日文的方案名稱寫「朝食付」就是含早餐，寫「素泊まり」「素泊り」「朝食なし」就是不含。在 Trip.com 或 Agoda 上，就看房型底下有沒有寫「含早餐」。早餐多少錢，到訂房網站選方案時就看得到。
+
+已經訂了不含早的方案，可以在辦入住時問櫃台「明天的早餐可以加嗎」，順便問怎麼付。能加的話，入住時就一起付，早上不用再排櫃台。
+
+露櫻Grand旭川站前（ホテルルートインGrand旭川駅前）的早餐，只有從官網訂房才免費，從其他管道訂要另外付錢。想吃免費早餐，就從官網訂。
+[官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/)｜[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-6085668/)
+
+Super Hotel旭川（スーパーホテル旭川）的早餐免費，是每天換菜色的自助。
+[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-17452018/)｜[官網](https://www.superhotel.co.jp/s_hotels/asahikawa/)
+
+## 旭川飯店早餐吃得到海鮮的五間
+
+這五間的自助早餐都吃得到海鮮丼或鮭魚卵，其中幾間還有旭川拉麵、新子燒這類在地菜。
+
+### HOTEL AMANEK旭川早餐
+
+HOTEL AMANEK旭川的早餐是日式和西式合計約50種菜色的自助。早餐餐廳在3樓，6:30開到10:00，9:30最後點餐。
+
+飯店在JR旭川站北口，走路約3分。早餐裡的在地菜很多，旭川拉麵、新子燒，還有現場做的豬肉丼都有。
+
+**早餐**：海鮮丼是從自助台上的鮭魚卵、鮪魚、鮭魚自己挑來盛。訂房時有含早餐和不含早餐的方案可以選。6歲以下和大人同床的小孩，連早餐都不收費。7歲起就和大人一樣算一人。有住客反應早餐豐盛又好吃。
+
+**要注意**：飯店不提供對應食物過敏的餐點。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/)｜[Agoda](https://www.agoda.com/zh-tw/hotel-amanek-asahikawa-ekimae/hotel/asahikawa-jp.html)｜[官網](https://amanekhotels.jp/asahikawa/)
+
+### Dormy Inn旭川早餐
+
+6:30到9:30在1樓餐廳吃自助，9:00前要進場。菜色是 Dormy Inn 各分店都有的日式和西式自助，再加上旭川這間的在地菜海鮮丼。
+
+晚上想吃宵夜拉麵的人，可以選 Dormy Inn旭川（ドーミーイン旭川）。晚上9點半到11點，同一間1樓餐廳免費供應宵夜拉麵。
+
+**早餐**：海鮮丼用的是鮪魚、鮭魚和魩仔魚。訂了不含早餐的方案，辦入住時可以申請加購早餐。3歲到小學生有兒童價，2歲以下免費。
+
+**要注意**：離JR旭川站走路約15分，要趕早上的火車，得把這段路的時間算進去。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/)｜[官網](https://dormy-hotels.com/dormyinn/hotels/asahikawa/)
+
+### KOKO HOTEL旭川站前（舊名站前永安國際飯店）早餐
+
+KOKO HOTEL旭川站前的早餐，在看得到旭川市區的12樓餐廳吃。時間是6:30到9:30，9:00最後點餐。
+
+這間就是以前的站前永安國際飯店，離JR旭川站走路約2分。早餐的鮭魚卵可以隨你淋，愛吃鮭魚卵的人可以選這間。
+
+**早餐**：日式和西式的自助，海鮮丼自己做。另外有成吉思汗烤肉、旭川醬油炒麵、新子燒風味的雞腿，和飯店原創的鹽味炸雞。訂房時有含早餐的標準方案。小學生另有兒童價。帶學齡前小孩的，訂房時把小孩人數和年齡填進去，入住時再問櫃台小孩的早餐怎麼算。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-31195786/)｜[官網](https://www.koko-hotels.com/asahikawa_station/)
+
+### Hotel WBF Grande旭川早餐
+
+1樓餐廳的自助早餐從6:30開到9:30，9:00前要進場。
+
+Hotel WBF Grande旭川（ホテルWBFグランデ旭川）在JR旭川站東口那一側，走路約2分。
+
+**早餐**：住客的評價比較兩極，有些人覺得種類多又好吃，也有人覺得普通。菜色有醃漬海鮮丼、旭川拉麵和特製新子燒。小學生有兒童價，學齡前免費。含不含早餐，在 Trip.com 或 Agoda 選房型時，看房型底下有沒有寫。
+
+**要注意**：官網的連結是看飯店資訊用的，不能在網站上訂房。要訂房，從 Trip.com 或 Agoda 訂，或打電話給飯店。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/)｜[Agoda](https://www.agoda.com/zh-tw/hotel-wbf-grande-asahikawa/hotel/asahikawa-jp.html)｜[官網](https://www.ishinhotels.com/wbf/grande-asahikawa)
+
+### Y's Hotel旭川站前早餐
+
+Y's Hotel旭川站前（ワイズホテル旭川駅前）的早餐從6:30吃到9:30，是3樓餐廳的自助。沒訂含早也吃得到，入住時或當天到櫃台買早餐券就行。
+
+飯店離JR旭川站走路約1分。2026年4月早餐改版後，多了在面前當場做的生羊肉成吉思汗烤肉。
+
+**早餐**：有加了北海道產鮭魚卵的海鮮、醬油拉麵、湯咖哩、炸雞、北海道產的米和現烤麵包。2026年4月起，還多了海鮮高湯茶泡飯。7到12歲、4到6歲有兒童價，3歲以下免費。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-19572867/)｜[官網](https://yshotel-asahikawa.com/)
+
+## 旭川OMO7、JR Inn等另外五間飯店的早餐
+
+這五間的早餐都是自助，差在幾點開始、在哪吃，和離車站多遠。
+
+### OMO7旭川早餐幾點？
+
+早上6:00就開，到10:00結束，在1樓餐廳吃。開始時間會變動，到了飯店再確認。
+
+OMO7旭川的早餐是這一頁裡最早開的，適合早上要搭車、又想先吃早餐的人。不過飯店離JR旭川站走路約13到15分，出門前要把這段路算進去。
+
+**早餐**：日式和西式的自助，主打現烤鬆餅，還有海鮮配辣根的辣根海鮮飯。有住客遇到早餐區很擠。想避開人多，入住時可以問櫃台早上哪個時段人最多。早餐不用預約。沒含早餐的人，可以向櫃台申請追加。追加早餐要多少錢，寫在[官網的餐飲頁](https://hoshinoresorts.com/ja/hotels/omo7asahikawa/dining/)。7歲以上和大人同價，4到6歲有兒童價，0到3歲免費。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-703410/)｜[官網](https://hoshinoresorts.com/ja/hotels/omo7asahikawa/)
+
+### JR Inn旭川（旭川JR飯店）早餐在哪吃？
+
+在和飯店相連的 AEON MALL旭川站前（イオンモール旭川駅前）4樓自助餐廳。時間是6:30到10:00，9:30前要進場。
+
+JR Inn旭川（JRイン旭川）要從JR旭川站北口出站，走到外面，再從AEON MALL旭川站前進飯店。吃完早餐要去旭山動物園的人很方便，從飯店出去就是巴士站（旭川站6號乘車處），大約30分鐘一班。有住客覺得這裡的早餐普通。
+
+**早餐**：日式和西式的自助。同一種方案都分附早餐和不附早餐兩種，訂的時候選附早餐的就好。未上小學的小孩免費。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-2509710/)｜[Agoda](https://www.agoda.com/zh-tw/jr-inn-asahikawa/hotel/asahikawa-jp.html)｜[官網](https://www.jr-inn.jp/asahikawa/)
+
+### Art Hotel旭川早餐
+
+15樓的景觀餐廳看得到大雪山連峰，Art Hotel旭川（アートホテル旭川）的早餐就在這裡吃。時間是6:30到10:00，9:30最後點餐。
+
+餐廳有270度的視野，邊吃早餐邊看得到山，是這間的特色。
+
+**早餐**：自助早餐大量用北海道的食材。方案有附早餐、不附早餐，和附晚餐加早餐的兩餐方案三種。也有附旭山動物園門票的方案。同床的學齡前小孩，住宿和早餐都免費。
+
+**要注意**：離JR旭川站走路約15分，開車約5分。開車的人要找有停車場的飯店，〈旭川自駕住宿〉寫了每間怎麼停。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-703413/)｜[官網](https://www.art-asahikawa.com/)
+
+### Hotel Crescent旭川早餐
+
+早上7點到9點吃得到自助早餐，有自製三明治、自家醃菜和沙拉吧。
+
+Hotel Crescent旭川（ホテルクレッセント旭川）離JR旭川站走路約12分，也可以搭道北巴士。
+
+**早餐**：可以用現烤麵包和食材，加上橄欖油和醋，自己組一盤。含不含早餐，在訂房網站選房型時，看有沒有寫含早餐。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-705858/)｜[官網](https://www.hotel-cr.com/)
+
+### 旭川庭院飯店（Court Hotel旭川）早餐
+
+旭川庭院飯店（コートホテル旭川）早上7點開始供應早餐，在1樓餐廳吃日式和西式自助。9點前要點餐。
+
+飯店離JR旭川站走路約2分。早餐有白飯、味噌湯和烤魚，習慣吃日式早餐的人吃得慣。
+
+**早餐**：除了白飯、味噌湯、烤魚，也有麵包、香腸和蛋料理。有含早餐和不含早餐的方案，要看自己訂的是哪一種。帶小孩的人，訂房時記得把小孩人數和年齡填進去。小孩的早餐怎麼算，入住時問櫃台。
+
+**要注意**：早餐7點才開始，比這一頁多數飯店晚半小時。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-1487846/)｜[官網](https://www.enhotels.co.jp/asahikawa/)
+
+## 旭川飯店早餐幾點開始？
+
+表上最早的是OMO7旭川的6:00，多數6:30開始，Hotel Crescent旭川和旭川庭院飯店是7:00。
+
+要趕早上的車，就選6:30或6:00就開的飯店。比那更早出門的人，前一晚先買好早餐，因為 AEON MALL旭川站前裡的超市早上8點才開。晚起的人，入住時問櫃台早餐最晚幾點要進場。早餐時間可能會調整，入住時看一下櫃台或房間裡的說明。
+
+## 旭川早餐不住飯店能去哪吃？
+
+Y's Hotel旭川站前和天然溫泉Premier Hotel-CABIN-旭川（天然温泉プレミアホテル-CABIN-旭川），不住宿也能吃早餐。天然溫泉Premier Hotel-CABIN-旭川的早餐在14樓的餐廳，旭川醬油拉麵很受歡迎。Y's Hotel旭川站前不住宿的客人，在3樓櫃台買早餐券就能吃。
+
+OMO7旭川、Dormy Inn旭川和露櫻Grand旭川站前的早餐，只有住客可以吃。早餐想自己買的話，AEON MALL旭川站前裡的超市早上8點開門。其他飯店，不住宿想去吃的，先打電話問飯店。
+
+## 資料來源
+
+- [HOTEL AMANEK旭川官網](https://amanekhotels.jp/asahikawa/)
+- [Dormy Inn旭川官網](https://dormy-hotels.com/dormyinn/hotels/asahikawa/)
+- [KOKO HOTEL旭川站前官網](https://www.koko-hotels.com/asahikawa_station/)
+- [Hotel WBF Grande旭川官網](https://www.ishinhotels.com/wbf/grande-asahikawa)
+- [Y's Hotel旭川站前官網](https://yshotel-asahikawa.com/)
+- [OMO7旭川官網](https://hoshinoresorts.com/ja/hotels/omo7asahikawa/)
+- [JR Inn旭川官網](https://www.jr-inn.jp/asahikawa/)
+- [Art Hotel旭川官網](https://www.art-asahikawa.com/)
+- [Hotel Crescent旭川官網](https://www.hotel-cr.com/)
+- [旭川庭院飯店官網](https://www.enhotels.co.jp/asahikawa/)
+- [天然溫泉Premier Hotel-CABIN-旭川官網](https://cabin.kenhotels.com/asahikawa/)
+- [露櫻Grand旭川站前官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/)
+- [Super Hotel旭川官網](https://www.superhotel.co.jp/s_hotels/asahikawa/)
+
+資料更新：2026年11月

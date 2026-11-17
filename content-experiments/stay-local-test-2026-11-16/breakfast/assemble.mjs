@@ -11,7 +11,7 @@ for (const l of readFileSync(join(root, 'stage3', 'final.md'), 'utf8').split(/\r
   if (c.length === 7 && c[6].startsWith('[官網]')) base.set(c[0], c[6]);
 }
 const official = [];
-const lines = readFileSync(join(here, 'edited.md'), 'utf8').split(/\r?\n/).map((l) => {
+const lines = readFileSync(join(here, 'edited2.md'), 'utf8').split(/\r?\n/).map((l) => {
   if (l.startsWith('| 飯店 |')) return `${l} 連結 |`;
   if (l.startsWith('|---')) return `${l}---|`;
   if (l.startsWith('| ')) {
