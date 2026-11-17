@@ -2210,3 +2210,13 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **沒有動、要 Darren 決定**：`lavender-season`（驗收通過、還沒上傳）的 `reader-preview.md` 第 21 行有一行「〔圖片〕富田農場的彩色花田…」。照現在的格式檢查，定稿時會被擋下來，不會帶著這行上線；但要有人把這行拿掉並重跑驗收的雜湊，文章才傳得上去。這是自動寫作的成果，沒有擅自改。
 - **測試**：`npm test` 234 個通過；`audit_answer_first.py --self-test` 通過。Darren 2026-11-16 同意後已合併推到 `main`（合併前 `origin/main` 沒有新 commit）。
 - **唯一下一步**：Darren 決定 `lavender-season` 那一行要不要由人工 session 拿掉後上傳。
+
+## 2026-11-17 Claude Code｜新版面併進 main
+
+- **已完成**：Darren 說「併進 main」。`test/stay-local` 先併入 `origin/main`（Skill 衝突整理的兩次修正），三個檔案衝突（`AGENTS.md`、`PROJECT_STATUS.md`、寫作 `SKILL.md`）兩邊都保留；寫作 `SKILL.md` 的旅館寫法採 `main` 較新的版本（不寫價格、連結欄），加上住宿頁與住宿專門頁的兩段指引。之後推到 `main`。
+- **測試**：`npm test` 242 個通過；`npm run build` 通過（59 頁，站內連結與點擊深度檢查通過）。
+- **線上確認**：推送後約兩分鐘網站重建完成。用瀏覽器打開 `offpathnotes.com/places/asahidake/asahidake-or-sounkyo/`，資料來源已是文末小字（12px、38 條連結排成一段），「延伸資料」照舊；首頁與旭川主頁回應正常。
+- **還沒確認**：線上目前沒有任何文章含 Instagram 嵌入，所以「貼文直接顯示」只在預覽看過，線上還沒有實例。
+- **尚未完成**：三頁住宿專門頁樣本沒上傳（嵌入清單缺 `title`、`checks`，封面要換，訂房連結沒逐條點開，譯名表待登記）；流程沒接進 `local-writer.md`；頁型範本沒登記；排定工作仍暫停。
+- **Git**：`main` 與 `test/stay-local` 都已推送，工作區乾淨。
+- **唯一下一步**：Darren 決定先上線三頁住宿專門頁，還是先把流程接進自動寫作。
