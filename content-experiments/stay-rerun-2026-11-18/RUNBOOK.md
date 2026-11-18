@@ -6,8 +6,8 @@ Darren：「我覺得可以排定工作了，不過在這之前，可以把舊�
 
 | 順序 | 文章 | 網址 | 現況 | 進度 |
 |---|---|---|---|---|
-| 1 | asahikawa-stay | /places/asahikawa/stay/ | 11-16 有一份照新格式改寫的主頁稿（`content-experiments/stay-local-test-2026-11-16/hub/final.md`），沒上線；底下三頁專門頁已上線 | 進行中 |
-| 2 | sounkyo-stay | /places/sounkyo/stay/ | 舊格式，沒有住客說法 | |
+| 1 | asahikawa-stay | /places/asahikawa/stay/ | 11-16 有一份照新格式改寫的主頁稿（`content-experiments/stay-local-test-2026-11-16/hub/final.md`），沒上線；底下三頁專門頁已上線 | 2026-11-18 換上線 |
+| 2 | sounkyo-stay | /places/sounkyo/stay/ | 舊格式，沒有住客說法 | 研究與評論完成，寫規格中 |
 | 3 | asahidake-stay | /places/asahidake/stay/ | 舊格式 | |
 | 4 | wakkanai-stay | /places/wakkanai/stay/ | 舊格式，沒有住客說法 | |
 | 5 | rishiri-island-stay | /places/rishiri-island/stay/ | 舊格式，表格 30 列 | |
@@ -29,3 +29,10 @@ Darren：「我覺得可以排定工作了，不過在這之前，可以把舊�
 12. 在 `content-automation/unattended-summary.md` 加一段。
 
 工作檔放 `content-experiments/stay-rerun-2026-11-18/<地點>/`。
+
+## 做完第一篇後補的做法（2026-11-18）
+
+- 一定拆段：規格定好後，每兩三間一段，一段一位作者、一位編輯，每間只留第一段、「為什麼選這間」、「訂房前的注意事項」、訂房行，正文最多 220 字；刪廢話的門檻與上限照 `asahikawa/tighten/TASK.md`。組稿後一位只看接縫。
+- 驗收用七題（第 7 題抓廢話與刪過頭）。事實查核與驗收同時跑，修改一次交給接縫編輯。
+- 換上線：標題有改用 `replace-article-body.mjs --retitle --before-publication=<舊 publication.json>`；新稿已經連到同一頁的舊連結算搬過去，真的不再連的用 `--allow-dropped-links=` 明列並寫進 `review.md`。舊封包備份在 `content-production/<id>/pre-rerun-2026-11-18/`。大綱的標題與次要查詢要同步。
+- 一次不要開太多助手：瀏覽器的工作一個、其他最多兩三個平行，免得一下把用量額度用完。
