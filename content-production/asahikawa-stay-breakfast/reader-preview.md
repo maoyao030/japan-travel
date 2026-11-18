@@ -82,7 +82,7 @@ OMO7旭川的早餐適合早上要搭車、又想先吃早餐的人。不過飯�
 
 JR Inn旭川（JRイン旭川）要從JR旭川站北口出站，走到外面，再從AEON MALL旭川站前進飯店。有住客覺得這裡的早餐普通。
 
-**早餐**：日式和西式的自助。同一種方案都分附早餐和不附早餐兩種，訂的時候選附早餐的就好。未上小學的小孩免費。
+**早餐**：日式和西式的自助。官網的標準方案分附早餐和不附早餐兩種，訂的時候選附早餐的就好。未上小學的小孩免費。
 
 看房價與訂房：[Trip.com](https://tw.trip.com/hotels/asahikawa-hotel-detail-2509710/)｜[Agoda](https://www.agoda.com/zh-tw/jr-inn-asahikawa/hotel/asahikawa-jp.html)｜[官網](https://www.jr-inn.jp/asahikawa/)
 
@@ -92,7 +92,7 @@ Art Hotel旭川（アートホテル旭川）把早餐擺在15樓的景觀餐廳
 
 餐廳有270度的視野，是這間的特色。
 
-**早餐**：自助早餐大量用北海道的食材。方案有附早餐、不附早餐，和附晚餐加早餐的兩餐方案三種。也有附旭山動物園門票的方案。同床的學齡前小孩，住宿和早餐都免費。
+**早餐**：自助早餐大量用北海道的食材。官網的方案有附早餐的，也有附晚餐加早餐的兩餐方案。同床的學齡前小孩，住宿和早餐都免費。
 
 **要注意**：離JR旭川站走路約15分，開車約5分。開車的人要找有停車場的飯店，[〈旭川自駕住宿〉](/places/asahikawa/stay-parking/)寫了每間怎麼停。
 
@@ -100,7 +100,7 @@ Art Hotel旭川（アートホテル旭川）把早餐擺在15樓的景觀餐廳
 
 ### Hotel Crescent旭川早餐
 
-在 Hotel Crescent旭川（ホテルクレッセント旭川），自助早餐有自製三明治、自家醃菜，還有沙拉吧。早上7點到9點供應。
+在 Hotel Crescent旭川（ホテルクレッセント旭川），自助早餐有自己動手夾的三明治、自家醃菜，還有沙拉吧。早上7點到9點供應。
 
 飯店離JR旭川站走路約12分，也可以搭道北巴士。
 
@@ -133,8 +133,8 @@ Art Hotel旭川（アートホテル旭川）把早餐擺在15樓的景觀餐廳
 | Y's Hotel旭川站前 | 走路約1分 | 6:30～9:30 | 鮭魚卵海鮮、醬油拉麵、成吉思汗烤肉 | 可選含早或不含早；入住時或當天在櫃台買券 | [官網](https://yshotel-asahikawa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AF%E3%82%A4%E3%82%BA%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 | OMO7旭川 | 走路約13到15分 | 6:00～10:00 | 現烤鬆餅、辣根海鮮飯 | 可向櫃台追加 | [官網](https://hoshinoresorts.com/ja/hotels/omo7asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=OMO7%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 | JR Inn旭川 | 北口出站經AEON MALL | 6:30～10:00（9:30前進場） | | 可選含早或不含早 | [官網](https://www.jr-inn.jp/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=JR%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
-| Art Hotel旭川 | 走路約15分 | 6:30～10:00（9:30最後點餐） | | 可選含早或不含早 | [官網](https://www.art-asahikawa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
-| Hotel Crescent旭川 | 走路約12分 | 7:00～9:00 | 自製三明治、自家醃菜、沙拉吧 | | [官網](https://www.hotel-cr.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%AF%E3%83%AC%E3%83%83%E3%82%BB%E3%83%B3%E3%83%88%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Art Hotel旭川 | 走路約15分 | 6:30～10:00（9:30最後點餐） | | 有含早方案，也有含晚餐的兩餐方案 | [官網](https://www.art-asahikawa.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Hotel Crescent旭川 | 走路約12分 | 7:00～9:00 | 自己夾的三明治、自家醃菜、沙拉吧 | | [官網](https://www.hotel-cr.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%AF%E3%83%AC%E3%83%83%E3%82%BB%E3%83%B3%E3%83%88%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 | 旭川庭院飯店 | 走路約2分 | 7:00開始（9:00最後點餐） | 白飯、味噌湯、烤魚 | 可選含早或不含早 | [官網](https://www.enhotels.co.jp/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B3%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 | 天然溫泉Premier Hotel-CABIN-旭川 | 走路約3分 | 6:30～10:00（9:30前進場） | 旭川醬油拉麵 | 入住時或當天早上可加 | [官網](https://cabin.kenhotels.com/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%9B%E3%83%86%E3%83%AB-CABIN-%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 | 露櫻Grand旭川站前 | 北口走路約2分 | 6:30～9:30 | 奶油可頌、現烤麵包 | 官網訂房免費，其他管道要付費 | [官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3Grand%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |

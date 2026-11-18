@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahikawa-stay-parking",
+  "articleTitle": "旭川自駕住宿推薦，14間飯店的停車場與停車費比較",
+  "targetUrl": "/places/asahikawa/stay-parking/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-11-18",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內照片與嵌入不在這次範圍。原圖用 curl 下載到 .tmp/image-selection/asahikawa-stay-parking/，不加入 Git、不上傳。三篇旭川住宿專門頁（早餐、溫泉、自駕）的封面刻意選三張不同的照片，也不用〈旭川住宿〉已用的 Kaimono_Koen_20250801.jpg 與測試時用過的 Asahikawa_Station_in_August_2025.jpg。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-11-18",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "呈現開車進旭川市中心的樣子：市區的馬路、車流與街景，讓讀者一眼看出這篇講的是開車到旭川住一晚，而不是介紹某一間飯店。",
+      "mustShow": ["旭川市中心的道路與車輛"],
+      "mustNotShow": ["單一飯店的招牌、外觀或停車場當主體", "可辨識的人物臉部", "清楚可讀的車牌", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4150/4155/d053838_d/fil/53838.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.55},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是旭川市照片庫「中心市街地」類的常盤ロータリー：市中心北邊的圓環，中間是種了花草的分隔島和旭川的鐵塔，四周有轎車、白色廂型車與綠色的道北巴士在繞行，後面是公寓大樓與市區街景。旭川市中心的棋盤式道路是開車進市區一定會遇到的，圓環又是當地有名的路口，正好對應「開車到旭川住一晚」。照片庫原尺寸 3072×2048，沒有浮水印（網頁上的 1024 px 預覽才有）。裁 16:9 時焦點放在 y 0.55，切掉上方部分天空，保留鐵塔頂端與下方路面。限制：晴天的夏秋季照片，不是冬天；頁面 2016 年更新，拍攝年份沒寫，周邊招牌可能和現在不同。cover-02 是同一照片庫的旭橋雪景（初冬、橋上積雪），旭橋是國道40號的橋，但畫面看不到車，當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-18",
+        "photoSearchNotes": "先查官方：旭川市ホームページフォトライブラリー 519 張全部看過標題，看過大圖的有常盤ロータリー（選定）、旭橋 4 張（d053389、d053492 直式、d053636 夕陽逆光、d068470 雪景備選；d053623 已用在〈旭川〉主頁）、買物公園 d053837／d053835（〈旭川住宿〉封面已是買物公園，不重複）、さんろく街夜景 d054187／d054188（居酒屋與酒類招牌是主體，不用）、冬景色 d058613／d058615（雪中紅葉，沒有道路主體；d058612 已用在〈旭川天氣〉）。照片庫沒有冬天的市區道路與車流。官方照片已有合格的，沒有再查免費圖庫與維基共享資源。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "official-material",
+          "assetType": "photo",
+          "provider": "旭川市ホームページフォトライブラリー",
+          "creatorName": "旭川市",
+          "termsName": "旭川市ホームページフォトライブラリー利用規約（2025年9月3日更新）",
+          "termsUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4451/d055106.html",
+          "termsCheckedAt": "2026-11-18",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "規約第3條第2項：申請與著作權者標示都不需要。本站仍自願標示出處「旭川市フォトライブラリー」。",
+          "applicationRequired": false,
+          "termsNotes": "規約第1條：個人與商用都可免費使用，但用途限於傳播旭川魅力、提升知名度與形象、振興觀光；本站介紹旭川旅遊符合。第4條第3項：裁切、畫質修正等不損及照片獨特性的加工不在禁止範圍；第4條第4、5項禁止做成寫真集、明信片等商品或轉售散布，本站只作文章封面。第2條第2項：被攝者的肖像權與商標由使用者自行處理，本張沒有可辨識人物，商家招牌很小。著作權屬旭川市。照片頁沒有「写真提供」「撮影」等第三者標示（資訊來源：広報広聴課）。",
+          "sourcePageUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4150/4155/d053838.html",
+          "sourceTitle": "常盤ロータリー（ページID 053838）",
+          "sourceDescription": "旭川市フォトライブラリー「中心市街地」類「常盤ロータリー」，原尺寸 JPG（約 2.7 MB），頁面 2016 年 2 月 24 日更新。",
+          "width": 3072,
+          "height": 2048,
+          "matchType": "exact",
+          "whyItFits": "照片庫分類為旭川中心市街地的常盤ロータリー；畫面是車輛繞行的圓環路口與周邊市區街景，直接呈現開車進旭川市中心的樣子，沒有任何一間飯店當主體。",
+          "altDraft": "旭川市中心的常盤圓環，車輛與巴士繞著中間種了花草的分隔島和鐵塔行駛",
+          "captionDraft": "旭川市中心的常盤圓環。",
+          "creditDraft": "照片：旭川市フォトライブラリー",
+          "commercialReview": {
+            "people": "none（路邊遠處行人極小，無法辨識）",
+            "logos": "左側大樓的「旭川大雪観光文化検定」看板、巴士車身小廣告，都不是主體",
+            "artwork": "none",
+            "property": "圓環道路、鐵塔、公寓大樓與商業大樓",
+            "risk": "low",
+            "notes": "沒有飯店招牌或停車場，不會讓讀者以為是某間飯店；車牌在原圖也看不清楚。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "official-material",
+          "assetType": "photo",
+          "provider": "旭川市ホームページフォトライブラリー",
+          "creatorName": "旭川市",
+          "termsName": "旭川市ホームページフォトライブラリー利用規約（2025年9月3日更新）",
+          "termsUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4451/d055106.html",
+          "termsCheckedAt": "2026-11-18",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "規約第3條第2項：申請與著作權者標示都不需要。本站仍自願標示出處「旭川市フォトライブラリー」。",
+          "applicationRequired": false,
+          "termsNotes": "同 cover-01。照片頁沒有第三者攝影標示。",
+          "sourcePageUrl": "https://www.city.asahikawa.hokkaido.jp/1400/photo/4150/4152/d068470.html",
+          "sourceTitle": "旭橋（ページID 068470）",
+          "sourceDescription": "旭川市フォトライブラリー「旭橋」，原尺寸 JPG（4000×2666）。",
+          "width": 4000,
+          "height": 2666,
+          "matchType": "contextual",
+          "matchLimits": "看不到車輛或道路車流，只能傳達冬天的旭川。",
+          "whyItFits": "初冬積雪的旭橋綠色鋼拱，一看就是旭川的冬天。",
+          "altDraft": "初冬積雪的旭橋綠色鋼拱與街燈",
+          "captionDraft": "冬天的旭橋。",
+          "creditDraft": "照片：旭川市フォトライブラリー",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "橋梁",
+            "risk": "low",
+            "notes": "沒有招牌或人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "articleId": "asahikawa-stay-onsen",
+  "articleTitle": "旭川溫泉飯店推薦，5間天然溫泉與7間大浴場飯店比較",
+  "targetUrl": "/places/asahikawa/stay-onsen/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-11-18",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面；文內照片與嵌入不在這次範圍。原圖用 curl 下載到 .tmp/image-selection/asahikawa-stay-onsen/，不加入 Git、不上傳。三篇旭川住宿專門頁（早餐、溫泉、自駕）的封面刻意選三張不同的照片。",
+  "selectedCandidateIds": {
+    "cover": "cover-01"
+  },
+  "selectedAt": "2026-11-18",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "呈現開頭說的「北海道的冬天在外面冷了一整天，最想泡個熱呼呼的湯」，讓讀者一眼看出這篇講的是北海道的溫泉，而不是介紹某一間飯店的浴場。",
+      "mustShow": ["北海道冬天的溫泉浴池（露天或室內皆可）"],
+      "mustNotShow": ["特定飯店、旅館的浴場或宣傳照", "可辨識的人物臉部或裸露的人", "北海道以外的溫泉冒充", "AI 生成或合成畫面"],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kotan_Onsen_02.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.6},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是 2010 年 2 月下旬的弟子屈町コタン温泉：前景是石頭圍起來的露天浴池，後面是結冰的屈斜路湖、一群天鵝與積雪的山。沒有人、沒有旅館建築，是當地的公共露天浴池，不會被當成文章裡哪一間飯店。地點在道東，不是旭川，所以是 contextual，圖說寫明屈斜路湖畔。原圖 2900×1928，裁 16:9 時焦點放在 y 0.6，切掉上方一部分灰色天空，保留浴池、湖面與山。限制：當天陰天，整體偏灰暗。cover-02 是同一個浴池 2005 年 10 月的照片，有晴天與湯氣，但左邊有一個很小的人影，解析度也只有 2288 px，當備選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-18",
+        "photoSearchNotes": "照來源順序先查官方：旭川市ホームページフォトライブラリー 519 張全部看過標題，溫泉相關只有「21世紀の森 森の湯 温泉」一張，是木造浴場建築的夏天外觀，看不到浴池，也容易被誤認成文章裡的設施，不用；上川総合振興局 VIEW OF KAMIKAWA 照片庫沒有溫泉類。免費圖庫：Unsplash「onsen hokkaido」「onsen snow」只有一張北海道冬季溫泉照（定山溪源泉公園的足湯亭，雪夜、有湯氣），但亭內坐著一位女性，原尺寸放大看得到側臉，不用；Pexels「onsen」22 張多是和歌山、別府或直式照片，沒有北海道的浴池。維基共享資源查「Asahikawa onsen」「旭川 温泉」「大浴場」「露天風呂 北海道」與 Category:Hot springs of Hokkaido prefecture、Sounkyo Onsen、Asahidake Onsen：層雲峽、旭岳溫泉的照片都是溫泉街或旅館外觀，看不到浴池；有浴池的多是特定旅館的浴場（層雲閣グランドホテル露天、ホテル龍登園大浴場、せいわ温泉ルオント自己上傳的露天風呂），不用；秘湯共同浴場有入浴中的人，不用。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kotan_Onsen_02.jpg",
+          "creatorName": "Simon from Quebec, Canada",
+          "sourceTitle": "File:Kotan Onsen 02.jpg",
+          "sourceDescription": "2月下旬のコタン温泉。（Flickr 轉存；分類 Kotan Onsen (Hokkaido)）",
+          "takenAt": "2010-02-27",
+          "width": 2900,
+          "height": 1928,
+          "licenseName": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "licenseCheckedAt": "2026-11-18",
+          "matchType": "contextual",
+          "matchLimits": "弟子屈町屈斜路湖畔的公共露天浴池，不是旭川市區的飯店浴場；只能傳達北海道冬天泡溫泉的情境。",
+          "whyItFits": "檔案頁說明為 2 月下旬的コタン温泉；畫面是冬天的露天浴池，背景是結冰的湖、天鵝與雪山，一看就是北海道的冬天泡湯，沒有任何飯店或旅館當主體。",
+          "altDraft": "冬天屈斜路湖畔的露天溫泉，石頭圍起的浴池後面是結冰的湖面、天鵝與積雪的山",
+          "captionDraft": "北海道冬天的露天溫泉（弟子屈町屈斜路湖畔）。",
+          "creditDraft": "照片：Simon from Quebec, Canada／Wikimedia Commons／CC BY-SA 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "公共露天浴池與湖岸",
+            "risk": "low",
+            "notes": "沒有人、招牌或旅館建築，不會被當成文章裡某一間飯店的浴場；圖說寫明地點，不冒充旭川。裁切後的圖要以 CC BY-SA 2.0 標示。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%B3%E3%82%BF%E3%83%B3%E6%B8%A9%E6%B3%89%EF%BC%88Kotan,_outdoor_bath%EF%BC%89_-_panoramio.jpg",
+          "creatorName": "pakku",
+          "sourceTitle": "File:コタン温泉（Kotan, outdoor bath） - panoramio.jpg",
+          "sourceDescription": "コタン温泉（Kotan, outdoor bath）（Panoramio 轉存；分類 Kotan Onsen (Hokkaido)、Lake Kussharo、Winter in Hokkaido）",
+          "takenAt": "2005-10-31",
+          "width": 2288,
+          "height": 1712,
+          "licenseName": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "licenseCheckedAt": "2026-11-18",
+          "matchType": "contextual",
+          "matchLimits": "弟子屈町的公共露天浴池，不是旭川；左側有一個很小的人影。",
+          "whyItFits": "晴天的露天浴池冒著湯氣，背景是湖上的天鵝與雪山。",
+          "altDraft": "屈斜路湖畔冒著湯氣的露天溫泉，湖上有天鵝",
+          "captionDraft": "北海道的露天溫泉（弟子屈町屈斜路湖畔）。",
+          "creditDraft": "照片：pakku／Wikimedia Commons／CC BY 3.0",
+          "commercialReview": {
+            "people": "左側遠處一個很小的人影，無法辨識",
+            "logos": "none",
+            "artwork": "none",
+            "property": "公共露天浴池與湖岸",
+            "risk": "low",
+            "notes": "沒有旅館建築或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
