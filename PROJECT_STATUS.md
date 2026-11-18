@@ -2258,3 +2258,13 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **測試**：`npm test` 245 個通過；CI 通過（62 頁）。
 - **尚未完成**：還沒有用新流程不問 Darren 跑過一篇新的住宿專門頁；每週摘要的格式與放哪裡還沒做；三頁的事實還沒進地點事實表的到期重查；排定工作仍暫停。
 - **唯一下一步**：挑下一個地點的住宿專門頁，照「自動化」一節從頭到尾不問 Darren 跑一次。
+
+## 2026-11-18 Claude Code｜富良野滑雪住宿，不經審核試跑上線
+
+- **已完成**：`furano-stay-ski`（https://offpathnotes.com/places/furano/stay-ski/ ）照 `stay-topic-page.md`「自動化」一節從頭到尾沒有問 Darren，已上線並開放收錄；富良野主題頁（`hub-places-furano`）一併建立並開放收錄。摘要在 `content-automation/unattended-summary.md`。
+- **各關卡**：動筆前檢查必修 11 條、預驗必修 4 條、事實查核 4 輪（第一輪 10 筆照官方改，最後 85 筆 verified）、讀者驗收 2 次過關。找貼文時發現 Fenix 館內餐廳已停業而官網沒更新，查證後拿掉那一行。
+- **測試**：`npm test` 245 個通過；CI 通過（64 頁）。線上用瀏覽器看過：標題、封面、5 則貼文、兩張表、資料來源小字正常，沒有 noindex。
+- **D1**：文章已登記 `published`，待補內連已登記；`ops-facts sync` 在背景跑。
+- **尚未完成**：排定工作仍暫停，流程還沒有由排定工作自己跑過（這次是人工 session 當協調者）；分潤揭露句全站不一致，等 Darren 決定；封面等維基解除封鎖可換；`furano-stay` 等上層頁還沒寫（這些頁型還沒有範本）；富良野的事實還沒同步進地點事實表。
+- **Git**：`main` 與 `test/stay-local` 已推送。
+- **唯一下一步**：Darren 看 `unattended-summary.md` 與線上頁，決定要不要讓排定工作照這個流程自己跑住宿專門頁。
