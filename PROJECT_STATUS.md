@@ -2234,3 +2234,15 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **測試**：`npm test` 242 個通過；`planning:check`、`queue:validate` 通過。
 - **Git**：分支 `test/stay-local`，本段的修改已 commit，還沒推 `main`。
 - **唯一下一步**：Darren 決定 12 句住客說法怎麼處理。
+
+## 2026-11-18 Claude Code｜三頁旭川住宿專門頁上線
+
+- **已完成**：`asahikawa-stay-breakfast`、`asahikawa-stay-onsen`、`asahikawa-stay-parking` 已上線並開放收錄（`/places/asahikawa/stay-breakfast/`、`stay-onsen/`、`stay-parking/`）。封面是旭川市フォトライブラリー的實拍（車站南側庭園、冬天的旭橋、常盤圓環）；Instagram 貼文 10、6、4 則。
+- **住客說法**：Darren 決定讓查核者輪流用瀏覽器重看評論（沒登入；Google 地圖沒登入只看得到最新 5 則，主要靠 Trip.com 翻頁與 4travel）。12 句裡 6 句原樣過關、2 句改寫、4 句拿掉（其中 CABIN 停車改寫成官網的說法）。三頁的 `fact-check.json` 全部 verified（68、60、67 筆）。
+- **流程上學到的**：住客說法要在寫作當下就由查核者用瀏覽器看，且以「沒登入看得到的範圍」為準，不然上線前重看會對不上；查核者輪流用瀏覽器可行（各自開分頁、用完關掉）。這兩點還沒寫進 `stay-topic-page.md`。
+- **測試**：`npm test` 242 個通過；CI（`SANITY_PROJECT_ID=e8ctf7ee SANITY_DATASET=production npm run ci`）通過，62 頁、站內連結與點擊深度檢查通過。
+- **線上確認**：三個網址回 200；瀏覽器打開早餐頁，標題、封面、10 則貼文（直接顯示）、資料來源小字、比較表都正常，沒有 noindex。溫泉頁與自駕頁只確認回 200，沒有逐頁看畫面。
+- **D1**：三篇已登記 `published`；`ops-facts sync` 完成；新頁連回〈旭川住宿〉的連結已標成已連。
+- **尚未完成**：線上〈旭川住宿〉連到三頁的連結句還沒加（大綱裡有三句草稿，那一頁 Darren 親手優化過，要他同意才加）；三頁的事實還沒進地點事實表的到期重查；查核提醒的小事（WBF 不住宿泡湯時間、JR Inn 含停車費方案等）記在各封包 `reference-review.md`；流程還沒接進自動寫作，排定工作仍暫停；三頁還沒登記成頁型範本。
+- **Git**：`main` 與 `test/stay-local` 已推送。
+- **唯一下一步**：Darren 決定要不要在〈旭川住宿〉加三句連到新頁。
