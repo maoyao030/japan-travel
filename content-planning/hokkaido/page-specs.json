@@ -7108,6 +7108,114 @@
       "researchBeforeWriting": [],
       "discoveries": [],
       "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "furano-stay-ski",
+      "priority": 49,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "planningTitle": "富良野滑雪住宿推薦，11間飯店到雪道多遠、雪具與泡湯比較",
+      "primaryQuery": "富良野滑雪住宿",
+      "secondaryQueries": [],
+      "targetPath": "/places/furano/stay-ski/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-furano",
+      "contentBoundary": "富良野滑雪場周邊與富良野站旁適合滑雪住的飯店：到纜車或雪道多遠、接駁與公車、雪具租借與寄放、溫泉或大浴場、晚餐、訂房管道；不寫房價與雪票價格。雪道、纜車、雪票與教練課程在富良野滑雪場頁，從各地到富良野在富良野交通頁，富良野住哪一區與整體推薦在富良野住宿頁。",
+      "place": {
+        "nameZh": "富良野",
+        "japaneseNames": [
+          "富良野",
+          "富良野市",
+          "富良野駅",
+          "富良野スキー場",
+          "新富良野プリンスホテル",
+          "ニングルテラス",
+          "麓郷",
+          "南富良野"
+        ],
+        "japaneseSearchTerms": [
+          "富良野 観光",
+          "富良野 ラベンダー 時期",
+          "富良野 スキー場 リフト券",
+          "富良野から札幌 バス",
+          "富良野 オムカレー",
+          "北海へそ祭り",
+          "富良野 車なし"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "biei",
+          "nakafurano",
+          "kamifurano",
+          "asahikawa",
+          "tomamu",
+          "obihiro"
+        ],
+        "gatewayPlaceIds": [
+          "asahikawa",
+          "sapporo"
+        ],
+        "bestMonths": [
+          7,
+          1,
+          2
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓要去富良野滑雪的旅客比較各飯店離纜車與雪道多遠、怎麼去雪場、雪具與泡湯，決定訂哪一間。",
+        "primaryReaderOutcome": "只看這一頁就能決定訂哪一間，並直接去訂。",
+        "mustAnswer": [
+          "哪幾間走幾步就到纜車或雪道、哪幾間能穿著雪板直接進出",
+          "住車站旁每天怎麼去雪場、回程有幾班車",
+          "雪具能在哪裡租、放哪裡",
+          "滑完能不能泡湯、晚餐怎麼解決",
+          "富良野王子飯店現在訂不訂得到、和新富良野王子怎麼分",
+          "富良野區和北之峰區差在哪、什麼時候開"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "富良野住哪一區、整體推薦",
+            "ownerArticleId": "furano-stay",
+            "reason": "分工表：富良野住宿頁負責，本頁只帶過"
+          },
+          {
+            "topic": "雪道、纜車、雪票、教練課程",
+            "ownerArticleId": "furano-ski-resort",
+            "reason": "分工表：富良野滑雪場頁負責，本頁只帶過"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": [
+        "official",
+        "trip.com",
+        "agoda"
+      ],
+      "travelGroupId": "hokkaido-furano",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-18",
+          "query": "富良野滑雪住宿",
+          "autocompleteInput": "富良野 滑雪 住宿",
+          "suggestions": [
+            "富良野 滑雪 住宿 推薦",
+            "富良野 滑雪場 住宿",
+            "富良野 滑雪場 附近 住宿"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "見 content-experiments/stay-furano-2026-11-18/ski/queries.md。"
+        }
+      ],
+      "competition": "見 content-experiments/stay-furano-2026-11-18/ski/competitor-notes.md。",
+      "researchSources": "content-production/furano-stay-ski/reference-review.md；流程見寫作 Skill references/stay-topic-page.md「自動化」",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
     }
   ],
   "approval": {

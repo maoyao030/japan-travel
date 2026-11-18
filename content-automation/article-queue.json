@@ -3181,8 +3181,8 @@
         "pageSpecs": "content-planning/hokkaido/page-specs.json",
         "candidateRegistry": "content-planning/hokkaido/candidates.json",
         "planningCompletedAt": "2026-11-07",
-        "authorizedCount": 10,
-        "plannedPageCount": 10,
+        "authorizedCount": 11,
+        "plannedPageCount": 11,
         "countPolicy": "validated-independent-pages-only",
         "deferredItems": []
       },
@@ -3681,6 +3681,62 @@
               "https://www.furanobus.jp/rosen/",
               "https://www.furanobus.jp/manage/wp-content/uploads/2025/09/2025-10-01_%E6%97%AD%E5%B7%9D%E7%B7%9A%EF%BC%88%E9%81%8B%E8%B3%83%E8%A1%A8PDF%EF%BC%89.pdf",
               "https://www.furanobus.jp/"
+            ]
+          }
+        },
+        {
+          "order": 11,
+          "articleId": "furano-stay-ski",
+          "contentTheme": "furano",
+          "topicDirection": "富良野滑雪住宿，11間飯店到雪道多遠、雪具與泡湯比較",
+          "pageRole": "住宿專門頁",
+          "documentId": "article-furano-stay-ski",
+          "workingTitle": "富良野滑雪住宿推薦，11間飯店到雪道多遠、雪具與泡湯比較",
+          "primaryKeyword": "富良野滑雪住宿",
+          "primaryQuery": "富良野滑雪住宿",
+          "articleSlug": "stay-ski",
+          "targetPath": "/places/furano/stay-ski/",
+          "authorId": "author-editorial-team",
+          "primaryHubId": "hub-places-furano",
+          "categorySlug": "places",
+          "hubSlug": "furano",
+          "routeMode": "parent-direct-article",
+          "aspect": "stay",
+          "pageType": "aspect-page",
+          "contentBoundary": "富良野滑雪場周邊與富良野站旁適合滑雪住的飯店：到纜車或雪道多遠、接駁與公車、雪具租借與寄放、溫泉或大浴場、晚餐、訂房管道；不寫房價與雪票價格。雪道、纜車、雪票與教練課程在富良野滑雪場頁，從各地到富良野在富良野交通頁，富良野住哪一區與整體推薦在富良野住宿頁。",
+          "readerTask": "讓要去富良野滑雪的旅客比較各飯店離纜車與雪道多遠、怎麼去雪場、雪具與泡湯，決定訂哪一間。",
+          "plannedInternalLinks": "/places/furano/stay/、/places/furano/ski-resort/、/places/furano/transport/",
+          "relatedArticleIds": [],
+          "releaseMode": "individual",
+          "authorizationMode": "batch-standing-authorization",
+          "planningSpec": {
+            "pageSpecs": "content-planning/hokkaido/page-specs.json",
+            "articleId": "furano-stay-ski"
+          },
+          "keywordValidation": {
+            "provider": "Google autocomplete",
+            "ahrefsVerified": false,
+            "serpIntentConfirmed": true,
+            "serpIntentNote": "問法（中文 Google 自動完成）與競品紀錄在 content-experiments/stay-furano-2026-11-18/ski/queries.md 與 competitor-notes.md；地名富良野在台灣沒有同名地點。",
+            "country": "TW",
+            "auditedAt": "2026-11-18",
+            "decision": "keep",
+            "query": "富良野滑雪住宿",
+            "svDisplay": "自動完成有出現",
+            "record": "content-planning/hokkaido/candidates.json"
+          },
+          "bookingChannels": [
+            "official",
+            "trip.com",
+            "agoda"
+          ],
+          "factCheck": {
+            "lastVerifiedAt": "2026-11-18",
+            "nextReviewDue": "2027-11-18",
+            "sources": [
+              "https://www.princehotels.co.jp/ski/furano/winter/access/",
+              "https://www.furanobus.jp/rosen/",
+              "https://nozohotel.com/"
             ]
           }
         }
@@ -4322,7 +4378,8 @@
         "biei",
         "furano",
         "nakafurano",
-        "kamifurano"
+        "kamifurano",
+        "furano-stay-ski"
       ],
       "approval": {
         "remindedAt": "2026-11-07",

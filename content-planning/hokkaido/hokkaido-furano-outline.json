@@ -4038,6 +4038,141 @@
         }
       ],
       "headingOrder": "traveler-journey"
+    },
+    {
+      "articleId": "furano-stay-ski",
+      "pageType": "aspect-page",
+      "placeId": "furano",
+      "parentArticleId": "furano-stay",
+      "targetPath": "/places/furano/stay-ski/",
+      "primaryQuery": "富良野滑雪住宿",
+      "secondaryQueries": [],
+      "h1": "富良野滑雪住宿推薦，11間飯店到雪道多遠、雪具與泡湯比較",
+      "mustAnswer": [
+        "哪幾間走幾步就到纜車或雪道、哪幾間能穿著雪板直接進出",
+        "住車站旁每天怎麼去雪場、回程有幾班車",
+        "雪具能在哪裡租、放哪裡",
+        "滑完能不能泡湯、晚餐怎麼解決",
+        "富良野王子飯店現在訂不訂得到、和新富良野王子怎麼分",
+        "富良野區和北之峰區差在哪、什麼時候開"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "走路3分鐘內到纜車或雪道的五間富良野飯店",
+          "facts": [],
+          "answers": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "level": 3,
+          "text": "新富良野王子大飯店滑雪",
+          "facts": [],
+          "answers": []
+        },
+        {
+          "level": 3,
+          "text": "富良野那圖瓦德飯店（富良野自然森林飯店）滑雪",
+          "facts": [],
+          "answers": []
+        },
+        {
+          "level": 3,
+          "text": "NOZO飯店滑雪",
+          "facts": [],
+          "answers": []
+        },
+        {
+          "level": 3,
+          "text": "Bell Hills飯店滑雪",
+          "facts": [],
+          "answers": []
+        },
+        {
+          "level": 3,
+          "text": "Fenix富良野滑雪",
+          "facts": [],
+          "answers": []
+        },
+        {
+          "level": 2,
+          "text": "富良野王子飯店現況",
+          "facts": [],
+          "answers": [
+            4
+          ]
+        },
+        {
+          "level": 2,
+          "text": "住富良野站旁去滑雪的兩間飯店",
+          "facts": [],
+          "answers": [
+            1,
+            3
+          ]
+        },
+        {
+          "level": 3,
+          "text": "La Vista富良野Hills滑雪",
+          "facts": [],
+          "answers": []
+        },
+        {
+          "level": 3,
+          "text": "富良野Natulux飯店滑雪",
+          "facts": [],
+          "answers": []
+        },
+        {
+          "level": 2,
+          "text": "富良野滑雪住宿比較表",
+          "facts": [],
+          "answers": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "level": 2,
+          "text": "富良野哪幾間飯店能穿著雪板直接進出雪道？",
+          "facts": [],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 2,
+          "text": "富良野滑雪住車站旁，每天怎麼去雪場？",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "text": "富良野滑雪場的富良野區和北之峰區有什麼不同？",
+          "facts": [],
+          "answers": [
+            5,
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "text": "北之峰一帶、到雪道要走5分鐘以上或開車的四間富良野住宿",
+          "facts": [],
+          "answers": [
+            0,
+            3
+          ]
+        }
+      ],
+      "headingOrder": "stay-topic-page",
+      "note": "住宿專門頁，照 stay-topic-page.md「自動化」不經審核試跑（Darren 2026-11-18 指定富良野）；事實表在封包的 reference-review.md。"
     }
   ],
   "division": [
@@ -5377,6 +5512,22 @@
       "purpose": "情境連結",
       "sentence": "八景往北接美瑛的丘陵，美瑛景點那頁整理了拼布之路的路線。",
       "anchor": "美瑛景點"
+    },
+    {
+      "from": "furano-stay-ski",
+      "to": "furano-stay",
+      "section": "開頭",
+      "purpose": "開頭帶回富良野住宿頁（富良野住宿頁上線後補連結）",
+      "sentence": "想連夏天或不滑雪的住宿一起比的人，可以看〈富良野住宿〉。",
+      "anchor": "〈富良野住宿〉"
+    },
+    {
+      "from": "furano-stay",
+      "to": "furano-stay-ski",
+      "section": "滑雪住富良野北之峰",
+      "purpose": "富良野住宿頁連到滑雪住宿專門頁",
+      "sentence": "想比較各飯店離纜車多遠、雪具放哪裡，富良野滑雪住宿整理了11間。",
+      "anchor": "富良野滑雪住宿"
     }
   ],
   "writingOrder": [
@@ -5403,7 +5554,8 @@
     "biei",
     "furano",
     "nakafurano",
-    "kamifurano"
+    "kamifurano",
+    "furano-stay-ski"
   ],
   "gaps": [
     {

@@ -1,0 +1,764 @@
+{
+  "schemaVersion": 1,
+  "articleId": "furano-stay-ski",
+  "articleSha256": "3eec11fbe12f45242de25a1d05b6341f7ebea95968d57a8cb62f683bd809e7d0",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，唯讀；沒有參與研究、寫作與編輯；2026-11-18 用 python urllib、curl 重開官方頁，PDF 下載到暫存資料夾讀，Trip.com 與 Agoda 用內建瀏覽器開）",
+  "checkedAt": "2026-11-18",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "富良野滑雪場分成兩個區",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/2026.2027_sk_iresorts_infor/",
+      "sourceTitle": "2026-2027_冬期 富良野スキー場 | 富良野スキー場",
+      "sourceQuote": "富良野ゾーン／北の峰ゾーン",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "新富良野王子大飯店（新富良野プリンスホテル）就在富良野滑雪場富良野區的雪道旁，能穿著雪板直接進出雪道。",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/",
+      "sourceTitle": "公式サイト | 富良野スキー場",
+      "sourceQuote": "スキーIN・スキーOUT 新富良野プリンスホテル／新富良野プリンスホテルは富良野ゾーンに直結しゲレンデまでのアクセスが0分（2026.2027_sk_iresorts_infor）",
+      "verdict": "verified",
+      "notes": "滑雪場官網自己寫 ski in ski out，不是只有訂房平台。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "飯店離JR富良野站約6公里，搭巴士約17分，有390個免費車位。",
+      "sourceUrl": "https://www.princehotels.co.jp/shinfurano/access/",
+      "sourceTitle": "アクセス・周辺案内 | 新富良野プリンスホテル",
+      "sourceQuote": "＜ホテル駐車場 390台(無料)＞／JR富良野駅からホテルまでは「ラベンダー号」バスで約6Km（所要時間：約17分）1日7便運行（ski/furano/winter/access/）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "名字很像的富良野王子飯店，和它是不同的兩間。",
+      "sourceUrl": "https://www.princehotels.co.jp/shinfurano/informations/",
+      "sourceTitle": "お知らせ一覧 | 新富良野プリンスホテル",
+      "sourceQuote": "富良野プリンスホテル 営業再開予定の変更について 2020/09/24",
+      "verdict": "verified",
+      "notes": "兩間是不同飯店（新富良野王子的公告欄另有富良野王子飯店的營業公告）。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "有住客反應飯店離市區遠，不開車不太方便。",
+      "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-704148/new-furano-prince-hotel/",
+      "sourceTitle": "住客評論統整",
+      "sourceQuote": "R9（標「可用」）：離市區遠、不開車不太方便。Trip.com 讀 30 則有 4 則、4travel 讀 10 則有 1 則提到，兩個平台合計 5 則。",
+      "verdict": "verified",
+      "notes": "正文沒有超出 R9。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "同行不滑雪的家人，可以逛飯店旁邊精靈露台的手作小木屋商店，晚上還有富良野歡寒村。",
+      "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/",
+      "sourceTitle": "館内のご案内 | 新富良野プリンスホテル",
+      "sourceQuote": "ニングルテラス 森の中に15棟のログハウスが連なる…クラフト作品／■冬期営業時間：12:00NOON～8:45P.M.／新富良野プリンスホテル隣接の「ふらの歓寒村」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C7",
+      "articleExcerpt": "飯店裡就能租雪具，早上8點15分開始，也有住客專用的置物櫃。",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/info/",
+      "sourceTitle": "レンタル・便利なサービス | 富良野スキー場 | プリンススノーリゾート",
+      "sourceQuote": "新富良野プリンスホテル：8:15A.M.～6:00P.M.または7:30P.M.／宿泊者専用ロッカー 場所：新富良野プリンスホテルGF階",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "木村公宣滑雪學校和Pandaruman兒童滑雪學校的櫃台也在飯店裡，Pandaruman收3到6歲的小孩，有中文課，要先預約。",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/school/",
+      "sourceTitle": "スクール | 富良野スキー場 | プリンススノーリゾート",
+      "sourceQuote": "受付場所：新富良野プリンスホテル内GF階 富良野木村公宣スキースクール カウンター／受付場所：富良野パンダルマンキッズスクール受付（新富良野プリンスホテルGF階）／対象年齢：キッズレッスン 3～6才 未就学児／対応語学：日本語・英語・中国語／電話またはメールにて事前予約をお願いいたします",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "飯店的紫彩之湯是天然溫泉，有露天浴池和三溫暖。",
+      "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/onsen/",
+      "sourceTitle": "富良野温泉「紫彩の湯」 | 新富良野プリンスホテル",
+      "sourceQuote": "天然温泉で湯の優しさに包まれる 富良野温泉「紫彩の湯」／露天風呂／＜フィンランド式 オールドパインサウナ＞",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "住客泡湯每次要另付大人800日圓、小孩500日圓，訂的方案含溫泉券就不用付。",
+      "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/onsen/",
+      "sourceTitle": "富良野温泉「紫彩の湯」 | 新富良野プリンスホテル",
+      "sourceQuote": "基本情報［ご宿泊のお客さま］料金(1名さま)／1泊2日ご利用時 おとな￥800、こども（4才～小学生まで）￥500／※宿泊プランに温泉券が含まれている方はお支払いいただく必要はございません",
+      "verdict": "incorrect",
+      "notes": "官方是「每人、住一晚（1泊2日）」的費用，不是「每次」。建議改成「住客泡湯每人每住一晚要另付大人800日圓、小孩（4歲到小學生）500日圓」。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "所有住客都要先預約晚餐，含晚餐的方案也一樣。太接近入住日才訂，可能訂不到想要的時段和餐廳",
+      "sourceUrl": "https://www.princehotels.co.jp/shinfurano/informations/portalsite/restaurant.reservation/",
+      "sourceTitle": "(新)レストラン予約 総合サイト | 新富良野プリンスホテル",
+      "sourceQuote": "ご夕食付きプランでご宿泊のお客さまも含め全てのお客さまにご夕食のご予約をお願いしております／旅程日に近い段階でのご予約は、ご希望のお時間、ご希望のレストランでご予約を承れない場合がございます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "2026-27雪季不賣含雪票的套裝，只有從官網訂房才能另外加購一日券。",
+      "sourceUrl": "https://www.princehotels.co.jp/shinfurano/informations/202609.ski_option/",
+      "sourceTitle": "2026_09_リフト券オプション | 新富良野プリンスホテル",
+      "sourceQuote": "※2026-2027シーズンは、リフト1日券付きスキーパック(宿泊プラン)の販売はございません。／公式HP「ご宿泊事前予約限定」でスキーリフト券を｢特別料金｣で購入可能／他社WEBサイト経由のご予約は適用外となり、通常ご宿泊者割引の料金でのご案内",
+      "verdict": "verified",
+      "notes": "官網限定的是「特別價格的加購」；從其他網站訂的住客仍可用一般住客折扣價買雪票。可讀性提醒見報告。"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "看房價與訂房：[官網](http://www.princehotels.com/newfurano/zh-hant/)｜[Agoda](https://www.agoda.com/zh-tw/new-furano-prince-hotel-h9066085/hotel/furano-jp.html)；比較表連結欄官網與地圖",
+      "sourceUrl": "https://www.princehotels.com/shinfurano/zh-hant/",
+      "sourceTitle": "新富良野王子大飯店 -官方網站",
+      "sourceQuote": "官網網址 200，轉到 https://www.princehotels.com/shinfurano/zh-hant/，標題「新富良野王子大飯店 -官方網站」；Agoda 頁（瀏覽器）H1「新富良野王子大飯店 (Shin Furano Prince Hotel)」，地址 Nakagoryo, Furano-shi, 076-8511；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": "和研究紀錄「訂房連結確認」那一列相同；Trip.com 不接受預訂，正文沒放，符合。官網連結是 http，會自動轉到 https。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "富良野那圖瓦德飯店（ホテルナトゥールヴァルト富良野）正前方就是北之峰區的雪道，館內就能租雪具和雪衣，沒帶裝備也能滑。",
+      "sourceUrl": "https://naturwald-furano.com/facility",
+      "sourceTitle": "館内施設｜ホテル ナトゥールヴァルト 富良野｜【公式】北海道ホテル&リゾートグループ",
+      "sourceQuote": "ホテルの目の前が富良野スキー場のゲレンデという好立地です。スキー・スノーボードをお持ちでないお客様もレンタル用具・ウェアをご用意しておりますので手ぶらで…／富良野スキー場北の峰ゾーンが目の前（トップページ）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "飯店在Trip.com和Agoda上叫富良野自然森林飯店，從富良野站搭巴士約10分，巴士站就叫「那圖瓦德飯店」。",
+      "sourceUrl": "https://naturwald-furano.com/access",
+      "sourceTitle": "交通アクセス｜ホテル ナトゥールヴァルト 富良野｜【公式】北海道ホテル&リゾートグループ",
+      "sourceQuote": "富良野駅からバスでお越しの場合 （所要時間：約10分／富良野バス御料線、富良野バスラベンダー号）；ふらのバス時刻表の停留所「ホテルナトゥールヴァルト」；Trip.com 頁標題「富良野自然森林飯店」、Agoda H1「富良野自然森林飯店 (Hotel Naturwald Furano)」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "大浴場是用礦石做的人工溫泉「光明石溫泉」，有露天浴池，冬天可以邊看雪邊泡。",
+      "sourceUrl": "https://naturwald-furano.com/spa",
+      "sourceTitle": "温泉｜ホテル ナトゥールヴァルト 富良野｜【公式】北海道ホテル&リゾートグループ",
+      "sourceQuote": "当ホテルの温泉は光明石の準天然温泉です。光明石は天然鉱石の中で最もイオン化作用が強いとされる薬石／露天風呂 Open-air bath／冬には雪見風呂もお楽しみいただけます",
+      "verdict": "incorrect",
+      "notes": "露天與雪見風呂正確；但官方用字是「準天然溫泉」（用天然礦石光明石），不是「人工溫泉」。觀光協會也寫「天然鉱石を用いた準天然温泉」。建議改成「大浴場是用天然礦石光明石做的準天然溫泉，不是天然溫泉」。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "冬天的晚餐是北海道自助餐，隔天早餐7點開始。",
+      "sourceUrl": "https://naturwald-furano.com/meal",
+      "sourceTitle": "お食事｜ホテル ナトゥールヴァルト 富良野｜【公式】北海道ホテル&リゾートグループ",
+      "sourceQuote": "冬のメニュー Winter 北海道ビュッフェ…12月～3月の提供です。／朝食 7：00～ 9：00（トップページ）",
+      "verdict": "verified",
+      "notes": "同頁另寫閑散日可能改成套餐（ふらの創作コース），例子是4月、11月。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "飯店是「Welcome Baby之宿」，有兒童備品可以借。",
+      "sourceUrl": "https://naturwald-furano.com/facility",
+      "sourceTitle": "館内施設｜ホテル ナトゥールヴァルト 富良野｜【公式】北海道ホテル&リゾートグループ",
+      "sourceQuote": "キッズアメニティレンタル ウェルカムベビーの宿の当館ではお子様連れ旅行を応援しております。各種レンタルグッズや…",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "住過的人說很適合帶小孩，館內有兒童遊戲區和球池。",
+      "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-61934479/hotel-naturwald-furano/",
+      "sourceTitle": "住客評論統整",
+      "sourceQuote": "R45（標「可用」）：很適合帶小孩（兒童遊戲區、球池、小禮物、尿布等用品）。Trip.com 30 則中 9 則、4travel 10 則中 4 則、Google 地圖 5 則中 2 則提到，三個平台合計 15 則。",
+      "verdict": "verified",
+      "notes": "正文沒有超出 R45；官網也寫有キッズスペース。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-61934479/hotel-naturwald-furano/)｜[Agoda](https://www.agoda.com/zh-tw/hotel-naturwald-furano/hotel/furano-jp.html)｜[官網](https://naturwald-furano.com/tw)；比較表連結欄",
+      "sourceUrl": "https://naturwald-furano.com/tw/",
+      "sourceTitle": "富良野那圖瓦德飯店",
+      "sourceQuote": "官網 200，標題「富良野那圖瓦德飯店」；Trip.com 200，標題「富良野自然森林飯店」；Agoda（瀏覽器）H1「富良野自然森林飯店 (Hotel Naturwald Furano)」，地址 14-46 Kitanominecho；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": "和研究紀錄「訂房連結確認」一致。"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "NOZO飯店（NOZO HOTEL）每間房都有自己的滑雪置物櫃，還有附加熱器的鞋架可以烘雪靴。",
+      "sourceUrl": "https://nozohotel.com/facilities-detail/ski-locker/",
+      "sourceTitle": "スキーロッカー - Nozo Hotel",
+      "sourceQuote": "各客室専用のスキーロッカーをご用意しており、80台以上のロッカー／スキー・スノーブーツを乾かせるヒーター付きシューズラックをご用意しています",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "飯店在Trip.com和Agoda上叫諾佐飯店，走路約3分到北之峰纜車吊廂，從富良野站搭巴士約10分，在那圖瓦德飯店站下車再走約2分。",
+      "sourceUrl": "https://nozohotel.com/access/",
+      "sourceTitle": "アクセス - Nozo Hotel",
+      "sourceQuote": "所要時間：路線バスで約10分（運行本数が限られます）。「ホテルナトゥールヴァルト」バス停下車、ホテルまで徒歩約2分／富良野・北の峰ゴンドラまで徒歩約3分のホテル（トップページ標題）；Trip.com 標題「諾佐飯店」、Agoda H1「諾佐飯店 (Nozo Hotel)」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "比較可惜的是，住客提到房間偏小，大行李箱只能攤開一個。",
+      "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-110029424/nozo-hotel/",
+      "sourceTitle": "住客評論統整",
+      "sourceQuote": "R21（標「可用」）：房間偏小（大行李箱只能攤開一個）。Trip.com 30 則中 10 則（另 2 則說大）、Google 地圖 5 則中 2 則提到。",
+      "verdict": "verified",
+      "notes": "抽查：2026-11-18 用瀏覽器重開 Trip.com 這間的評論第 1 頁，看得到多則說房間偏小，其中一則說房間只能打開一個行李、一則說勉強打開兩個大行李箱；平台自己的摘要也寫「房間雖然偏小」（根據 200 則評論）。R21 的說法在評論裡確實看得到。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "在合作的租借店Rhythm租雪具，可以直接在飯店的置物櫃室歸還。",
+      "sourceUrl": "https://nozohotel.com/facilities-detail/ski-locker/",
+      "sourceTitle": "スキーロッカー - Nozo Hotel",
+      "sourceQuote": "提携レンタルスノーギアショップ「Rhythm」との連携により…ご宿泊のお客様はスキーロッカーでレンタル用品を返却することができます",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "大浴場男女分開，有三溫暖和冷水池。",
+      "sourceUrl": "https://nozohotel.com/facilities-detail/sugispa/",
+      "sourceTitle": "スギスパ - Nozo Hotel",
+      "sourceQuote": "男女別の温浴施設とサウナルームを完備／水風呂、サウナを備えた大浴場です",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "住客每天都能在館內吃晚餐，不過時間和菜色會依進貨調整。",
+      "sourceUrl": "https://nozohotel.com/restaurant/",
+      "sourceTitle": "レストラン &amp; バー - Nozo Hotel",
+      "sourceQuote": "ご宿泊のお客様には、ディナーも毎日ご利用いただけますが、営業時間やメニューは仕入れ状況により変更／秋季（9月〜11月）の営業スケジュール 朝食 7:00〜10:00 ランチ 休業 ディナー 休業",
+      "verdict": "unsupported",
+      "notes": "同一頁的介紹文寫住客每天能用晚餐，但同頁現行的季節營業表（秋季）寫晚餐「休業」，冬季營業表還沒公布，查不到雪季晚餐有開的依據。建議改成「館內餐廳的晚餐依季節營業，冬天有沒有開、幾點，訂房後向飯店確認；櫃台也能介紹附近的餐廳」，比較表那一格同步改。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "飯店門口只有20個車位，是先到的人先停，不用預約，停滿了就改停那圖瓦德飯店站下一站的滑雪場第二停車場。",
+      "sourceUrl": "https://nozohotel.com/access/",
+      "sourceTitle": "アクセス - Nozo Hotel",
+      "sourceQuote": "ホテル正面に20台分の駐車場をご用意しております。満車の場合は、北の峰スキー場の第二駐車場をご案内いたします。／※駐車場はご予約不要・先着順でのご案内となります。",
+      "verdict": "verified",
+      "notes": "「那圖瓦德飯店站下一站」只在往新富良野王子方向成立（ふらのバス時刻表：ホテルナトゥールヴァルト→スキー場 第二駐車場）。官方另寫細節入住時問櫃台。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-110029424/nozo-hotel/)｜[Agoda](https://www.agoda.com/zh-tw/nozo-hotel/hotel/furano-jp.html)｜[官網](https://nozohotel.com/)；比較表連結欄",
+      "sourceUrl": "https://nozohotel.com/",
+      "sourceTitle": "ノゾホテル｜富良野・北の峰ゴンドラまで徒歩約3分のホテル",
+      "sourceQuote": "官網 200；Trip.com 標題「諾佐飯店」；Agoda（瀏覽器）H1「諾佐飯店 (Nozo Hotel)」，地址 14-38 Kitanominecho；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "Bell Hills飯店（ホテルベルヒルズ）走路2分鐘就到北之峰區的纜車吊廂和吊椅乘車處。飯店在Trip.com上叫富良野鐘山飯店，從富良野站開車約10分，有約100個免費車位。",
+      "sourceUrl": "https://www.bellhills.jp/access/",
+      "sourceTitle": "アクセス | ホテルベルヒルズ | ラベンダー畑が一望できる露天風呂付きホテル",
+      "sourceQuote": "JR富良野駅からお車で約10分／駐車場は約100台収容可能。無料でご利用いただけます／「北の峰ゾーン」のゴンドラ・リフト乗り場へ徒歩二分の好立地（トップページ）；Trip.com 標題「富良野鐘山飯店」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "有住客提到，館內放雪具的房間很寬敞。",
+      "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-7149869/bellhills/",
+      "sourceTitle": "住客評論統整",
+      "sourceQuote": "R61（標「可用」）：有寬敞的雪具室。Trip.com 30 則中 1 則（雪具放置室）、4travel 10 則中 1 則（乾燥室寬）、Google 地圖 5 則中 1 則（ski locker room 寬敞），三個平台合計 3 則，剛好達門檻。",
+      "verdict": "verified",
+      "notes": "正文只寫放雪具的房間寬敞，沒有超出 R61。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "大浴場是人工礦石溫泉「光明石溫泉」",
+      "sourceUrl": "https://www.bellhills.jp/",
+      "sourceTitle": "ホテルベルヒルズ | ラベンダー畑が一望できる露天風呂付きホテル",
+      "sourceQuote": "天然ミネラル鉱石を使用した光明石温泉",
+      "verdict": "incorrect",
+      "notes": "官方寫的是「用天然礦物礦石的光明石溫泉」，「人工礦石溫泉」會讓人以為礦石是人造的，和官方用字相反。建議改成「大浴場是用天然礦石做的光明石溫泉（不是天然溫泉）」。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "有露天浴池，女湯還有三溫暖，不住的人也能來泡。",
+      "sourceUrl": "https://www.bellhills.jp/hotspring/",
+      "sourceTitle": "大浴場 | ホテルベルヒルズ | ラベンダー畑が一望できる露天風呂付きホテル",
+      "sourceQuote": "男性用サウナ…／女性用サウナ…／日帰り入浴 利用料金 大人 1,000円／子供 550円 営業時間 15:00～22:00（受付は21:00まで）",
+      "verdict": "incorrect",
+      "notes": "官網大浴場頁男湯、女湯都有三溫暖，「女湯還有三溫暖」會讓人以為男湯沒有。露天：網站標題寫「露天風呂付きホテル」，大浴場頁寫的是展望風呂。建議改成「有露天浴池，男女湯都有三溫暖，不住的人也能來泡」。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "和室鋪的是棉被，可住3人，和洋室可住5人。晚餐在館內的大餐廳，分晚上6點、6點半和7點三個時段入場，自助餐或套餐看當天安排，也有兒童餐。",
+      "sourceUrl": "https://www.bellhills.jp/restaurant/",
+      "sourceTitle": "レストラン | ホテルベルヒルズ | ラベンダー畑が一望できる露天風呂付きホテル",
+      "sourceQuote": "夕食 18:00／18:30／19:00（close 20:00） バイキングもしくはセットメニュー／※場合によりセットメニューでのご提供となります。ご選択はできません／夕食お子様ランチ一例；客室頁：和室 お布団…定員 3名まで／和洋室 定員 5名まで",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-7149869/bellhills/)｜[Agoda](https://www.agoda.com/zh-tw/hotel-bell-hills/hotel/furano-biei-jp.html)｜[官網](https://www.bellhills.jp/)；比較表連結欄",
+      "sourceUrl": "https://www.bellhills.jp/",
+      "sourceTitle": "ホテルベルヒルズ | ラベンダー畑が一望できる露天風呂付きホテル",
+      "sourceQuote": "官網 200；Trip.com 標題「富良野鐘山飯店」；Agoda（瀏覽器）H1「Bellhills」，地址 20-8 Kitanomine-cho；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "Fenix富良野（フェニックス富良野）就在北之峰纜車吊廂前，能穿著雪板直接進出雪道。它在Trip.com上叫鳳凰富良野，是公寓式住宿，三房的單位最多住7人，套房有廚房。",
+      "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=605",
+      "sourceTitle": "フェニックス富良野｜コンドミニアム｜宿泊施設｜ふらの観光協会公式サイト FURANO index",
+      "sourceQuote": "富良野スキー場の北の峰ゴンドラに直結しており、スキーインスキーアウトの環境が完備；官網（fenixfurano.com/en/fenixfuranorental/）3 Bedroom Penthouse Suite Standard guests: 6; Max guests: 7／Designer kitchen with fully equipped；Trip.com 標題「鳳凰富良野」",
+      "verdict": "verified",
+      "notes": "Studio 與 Superior Hotel Room 沒有廚房（Basic Amenities），正文只說套房有廚房，正確。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "館內有雪具租借店和滑雪置物櫃。…館內有餐廳，冬天附早餐。",
+      "sourceUrl": "https://fenixfurano.com/en/fenixfuranorental/",
+      "sourceTitle": "Best Holiday Rental for Ski Lovers in Hokkaido",
+      "sourceQuote": "Ski Rentel Shop／Restaurant／Ski Locker／Complimentary daily breakfast for 2 people (winter only)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "Fenix富良野有接送服務，訂好房間後寫信問飯店從哪裡接、要不要先預約。",
+      "sourceUrl": "https://fenixfurano.com/en/fenixfuranorental/",
+      "sourceTitle": "Best Holiday Rental for Ski Lovers in Hokkaido",
+      "sourceQuote": "Pick-up Service",
+      "verdict": "verified",
+      "notes": "官方只列有 Pick-up Service，沒有細節；正文寫成讀者可以做的事，沒有說過頭。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "12月2日到3月31日的冬季，櫃台每天早上7點開到晚上10點。",
+      "sourceUrl": "https://fenixfurano.com/en/fenixfuranorental/",
+      "sourceTitle": "Best Holiday Rental for Ski Lovers in Hokkaido",
+      "sourceQuote": "WINTER: 7am – 10pm (2 Dec – 31 Mar)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-47412627/fenix-furano/)｜[Agoda](https://www.agoda.com/zh-tw/fenix-furano/hotel/furano-jp.html)｜[官網](https://fenixfurano.com/en/fenixfuranorental/)；比較表連結欄",
+      "sourceUrl": "https://fenixfurano.com/en/fenixfuranorental/",
+      "sourceTitle": "Best Holiday Rental for Ski Lovers in Hokkaido",
+      "sourceQuote": "官網 200，地址 19-10 Kitanominecho；Trip.com 標題「鳳凰富良野」；Agoda（瀏覽器）H1「Fenix Furano」，地址 19-10 Kitanominecho；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "富良野王子飯店（富良野プリンスホテル）目前在Trip.com和Agoda都訂不到",
+      "sourceUrl": "https://tw.trip.com/hotels/",
+      "sourceTitle": "Trip.com 站內搜尋（瀏覽器）",
+      "sourceQuote": "Trip.com 搜尋「富良野王子」：建議清單只有「新富良野王子大飯店」是飯店，「富良野王子酒店」「富良野王子大飯店」是地標（searchType=LM），點進去是「至富良野王子酒店直線距離…」的周邊飯店清單；Agoda /zh-tw/furano-prince-hotel/hotel/furano-jp.html 在瀏覽器顯示 404",
+      "verdict": "verified",
+      "notes": "Trip.com 仍保留一個地標條目，但沒有可訂的飯店頁。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "王子飯店官網上也沒有這間的頁面，原本的網址會轉到新富良野王子大飯店。",
+      "sourceUrl": "https://www.princehotels.co.jp/furano/",
+      "sourceTitle": "（301 轉址）",
+      "sourceQuote": "HTTP/1.1 301／Location: /shinfurano/；princehotels.com/furano/ 也是 301",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "新富良野王子大飯店的公告欄，2020年9月貼過富良野王子飯店「重新營業預定變更」的通知。",
+      "sourceUrl": "https://www.princehotels.co.jp/shinfurano/informations/",
+      "sourceTitle": "お知らせ一覧 | 新富良野プリンスホテル",
+      "sourceQuote": "富良野プリンスホテル 営業再開予定の変更について 2020/09/24 重要なお知らせ",
+      "verdict": "verified",
+      "notes": "公告檔案（file.jsp?id=324711）現在是 404。正文沒有寫成停業或拆除，也沒有說過頭。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "訂房網站上地址寫富良野市中御料的，就是新富良野王子大飯店。",
+      "sourceUrl": "https://www.princehotels.co.jp/shinfurano/access/",
+      "sourceTitle": "アクセス・周辺案内 | 新富良野プリンスホテル",
+      "sourceQuote": "新富良野プリンスホテル 〒076-8511 北海道富良野市中御料",
+      "verdict": "verified",
+      "notes": "Agoda 頁地址也是 Nakagoryo。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "北之峰站也能租雪具，富良野滑雪學校的櫃台就在北之峰第1高速吊椅旁。",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/school/",
+      "sourceTitle": "スクール | 富良野スキー場 | プリンススノーリゾート",
+      "sourceQuote": "受付場所：富良野スキー学校カウンター（北の峰第一高速リフト横）；info 頁：北の峰ターミナル：8:15A.M.～6:00P.M.または7:30P.M.（レンタル）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "La Vista富良野Hills（天然温泉 紫雲の湯 ラビスタ富良野ヒルズ）離富良野站走路約3分，有自家源泉的天然溫泉紫雲之湯。飯店在Trip.com上叫北海道富良野拉維斯塔天然溫泉飯店，停車免費，車位不能預約。",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/furano/access/",
+      "sourceTitle": "アクセス｜【公式】天然温泉 紫雲の湯 ラビスタ富良野ヒルズ",
+      "sourceQuote": "「富良野駅」から徒歩約3分／※先着順・予約不可／※無料；大浴場頁：自家源泉の男女別大浴場「紫雲の湯」；Trip.com 標題「北海道富良野拉維斯塔天然溫泉飯店（多美迎・御宿野乃 飯店集團）」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "紫雲之湯只給住客泡，男女分開，有室內浴池和露天浴池，從下午3點開到隔天早上10點。",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/furano/spa/",
+      "sourceTitle": "大浴場｜【公式】天然温泉 紫雲の湯 ラビスタ富良野ヒルズ",
+      "sourceQuote": "自家源泉の男女別大浴場「紫雲の湯」では、内湯、露天風呂など／営業時間15：00～翌10：00；FAQ：日帰り温泉のご案内施設は、下記８棟のみ…その他施設は、宿泊者限定のご案内（2025年8月5日現在，名單沒有本館）",
+      "verdict": "verified",
+      "notes": "「只給住客」的依據是集團 FAQ（截至 2025-08-05）。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "1樓餐廳的晚餐要預約，早餐6點半開始。",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/furano/breakfast/",
+      "sourceTitle": "食事｜【公式】天然温泉 紫雲の湯 ラビスタ富良野ヒルズ",
+      "sourceQuote": "1F レストラン Ginza Bistro Ginsai Furano…ご夕食はご予約制です。／朝食：6：30～9：30（最終入店 9：00）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-43094932/la-vista-furano-hills-natural-hot-spring/)｜[Agoda](https://www.agoda.com/zh-tw/la-vista-furano-hills/hotel/furano-jp.html)｜[官網](https://dormy-hotels.com/dormyinn/hotels/furano/)；比較表連結欄",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/furano/",
+      "sourceTitle": "【公式】ラビスタ富良野ヒルズ - 最低価格保証 | ドーミーイン・共立リゾート",
+      "sourceQuote": "官網 200；Trip.com 標題「北海道富良野拉維斯塔天然溫泉飯店…」；Agoda（瀏覽器）H1「富良野拉維斯塔溫泉酒店 (La Vista Furano Hills Natural Hot Spring)」，地址 5-14 Asahimachi；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "富良野Natulux飯店（富良野ナチュラクスホテル）就在富良野站前，走路1分，從新千歲機場來的北海道Resort Liner也停在這裡。飯店有30個免費車位",
+      "sourceUrl": "https://www.natulux.com/access/",
+      "sourceTitle": "アクセス | ラベンダーで有名な富良野のホテル｜NATULUX HOTEL 宿泊予約サイト",
+      "sourceQuote": "JR富良野駅下車 徒歩1分／30台収容の無料駐車場を完備；access-n.jp：ナチュラクスホテル（富良野駅前）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "兩間別邸有簡單的廚房，最多住4人，另外還能讓2位小孩同床。",
+      "sourceUrl": "https://www.natulux.com/guestroom/",
+      "sourceTitle": "【公式】NATULUX HOTEL 宿泊予約サイト｜富良野で記念日にピッタリ　ラベンダーで有名なホテル",
+      "sourceQuote": "別邸101 簡単な調理ができるキッチン…定員 3名 添い寝2名／別邸102 定員 4名 添い寝2名",
+      "verdict": "verified",
+      "notes": "最多 4 人的是 102，101 是 3 人；見報告的可讀性提醒。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "1樓餐廳目前要7天前預約。大浴場的男湯有三溫暖，女湯附的岩盤浴要另外收費。",
+      "sourceUrl": "https://www.natulux.com/news/detail.php?id=154",
+      "sourceTitle": "2026年レストラン営業について | ラベンダーで有名な富良野のホテル｜NATULUX HOTEL 宿泊予約サイト",
+      "sourceQuote": "当ホテル1階レストラン「ナチュラルダイニング」の営業は当面の間 7日前予約制；設施頁：女性浴室：岩盤浴付（別途料金）／男性浴場：サウナ付",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-705964/furano-natulux-hotel/)｜[Agoda](https://www.agoda.com/zh-tw/furano-natulux-hotel/hotel/furano-jp.html)｜[官網](https://www.natulux.com/lp/chinese_t)；比較表連結欄",
+      "sourceUrl": "https://www.natulux.com/lp/chinese_t/",
+      "sourceTitle": "FURANO NATULUX HOTEL",
+      "sourceQuote": "官網繁中頁 200，地址 朝日町1番35号；Trip.com 標題「富良野Natulux飯店」；Agoda（瀏覽器）H1「富良野Natulux飯店 (Furano Natulux Hotel)」，地址 1-35 Asahi-machi；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "富良野區的新富良野王子大飯店和北之峰的Fenix富良野，都能穿著雪板直接進出雪道。富良野那圖瓦德飯店的正前方就是北之峰雪道，NOZO飯店和Bell Hills飯店則是走路2到3分鐘到纜車吊廂。",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/",
+      "sourceTitle": "公式サイト | 富良野スキー場",
+      "sourceQuote": "スキーIN・スキーOUT 新富良野プリンスホテル；觀光協會 Fenix：北の峰ゴンドラに直結…スキーインスキーアウト；那圖瓦德：ホテルの目の前が富良野スキー場のゲレンデ；NOZO：北の峰ゴンドラまで徒歩約3分；Bell Hills：ゴンドラ・リフト乗り場へ徒歩二分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "從富良野站前搭富良野巴士的滑雪場線或薰衣草號，約17分到新富良野王子大飯店，也可以搭計程車，約12分。",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/access/",
+      "sourceTitle": "アクセス・周辺案内 | 富良野スキー場 | プリンススノーリゾート",
+      "sourceQuote": "JR富良野駅からスキー場まではタクシーで約6Km（所要時間：約12分）／「ラベンダー号」バスで約6Km（所要時間：約17分）；滑雪場線 PDF 富良野駅前 08:08 → 新富良野プリンスホテル 08:25",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "| 滑雪場線（12月1日到3月31日） | 早上8點08分、9點、10點、11點20分，下午5點 | 只有中午12點1班，從新富良野王子大飯店發車 | 一律500日圓 |",
+      "sourceUrl": "https://www.furanobus.jp/manage/wp-content/uploads/2026/11/2026-12-%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4%E7%B7%9A%E6%99%82%E5%88%BB%E8%A1%A8.pdf",
+      "sourceTitle": "富良野スキー場線 2026年12月1日 改正",
+      "sourceQuote": "富良野駅前 08:08 09:00 10:00 11:20 17:00／富良野駅方面 １便 新富良野プリンスホテル 12:00／運行期間：2026年12月1日～2027年3月31日／運賃は大人・小人 一律５００円",
+      "verdict": "verified",
+      "notes": "PDF 用 curl 下載到暫存資料夾讀。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "| 薰衣草號 | 第一班11點38分 | 從新富良野王子大飯店中午12點20分、下午1點20分、3點55分發車，3點55分是最後一班，4點02分經過那圖瓦德飯店站 | |",
+      "sourceUrl": "https://www.furanobus.jp/rosen/",
+      "sourceTitle": "路線バス – ふらのバス株式会社",
+      "sourceQuote": "時刻表（2026年4月1日改正）富良野駅前 11:38 13:08 14:13 15:38 17:28 18:28 21:03／新富良野プリンスホテル 6:30 8:00 9:05 10:30 12:20 13:20 15:55／ホテルナトゥールヴァルト … 16:02",
+      "verdict": "verified",
+      "notes": "回程上午另有 6:30、8:00、9:05、10:30 四班，正文只列滑完能搭的下午班，沒寫錯，但讀者可能以為一天只有三班（見報告）。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "| 御料線（終點是滑雪場第二停車場，在那圖瓦德飯店站的下一站） | 早上8點10分、下午2點55分、4點10分 | 從滑雪場第二停車場下午3點26分、4點41分發車 | |",
+      "sourceUrl": "https://www.furanobus.jp/rosen/",
+      "sourceTitle": "路線バス – ふらのバス株式会社",
+      "sourceQuote": "G 御料線 時刻表（2026年10月1日改正）富良野（発）→９線（着）富良野駅前 8:10 14:55 16:10…ホテルナトゥールヴァルト 8:19 15:04 16:19／スキー場 第二駐車場 8:20 15:05 16:20／４線／５線／御料９線 8:26 15:11 16:26；回程 スキー場 第二駐車場 7:36※ 8:41 15:26 16:41",
+      "verdict": "incorrect",
+      "notes": "時刻都對，但終點不是滑雪場第二停車場：御料線開到「御料9線」，第二停車場是途中站。建議把括號改成「（在那圖瓦德飯店站的下一站滑雪場第二停車場下車）」，拿掉「終點」。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "三條路線都停基線和那圖瓦德飯店兩站，住富良野那圖瓦德飯店、NOZO飯店和穆寧富良野飯店的人，可以在這兩站上下車走過去。",
+      "sourceUrl": "https://www.furanobus.jp/rosen/",
+      "sourceTitle": "路線バス – ふらのバス株式会社",
+      "sourceQuote": "ラベンダー号・御料線ともに 基線／ホテルナトゥールヴァルト に停車；滑雪場線 PDF 4 基線 5 ホテルナトゥールヴァルト；Munin 官網：ラベンダー号「基線」下車後徒歩約3分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "從新千歲機場搭Resort Liner，可以直接到新富良野王子大飯店、富良野那圖瓦德飯店、Bell Hills飯店、Edel Warme富良野度假飯店、富良野Natulux飯店和北之峰纜車吊廂。",
+      "sourceUrl": "https://www.access-n.jp/winter2026/information/",
+      "sourceTitle": "集合場所のご案内｜北海道のバスツアーのことなら｜北海道アクセスネットワーク",
+      "sourceQuote": "富良野地区 新富良野プリンスホテル／ホテルナトゥールヴァルト富良野／ホテルベルヒルズ／富良野リゾートホテル エーデルヴェルメ／ナチュラクスホテル（富良野駅前）／北の峰ゴンドラ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "全程要預約，原則上只給住在停靠站飯店的旅客搭，雪具可以帶1件。",
+      "sourceUrl": "https://www.access-n.jp/winter2026/skibus/detail/chitose_furano.html",
+      "sourceTitle": "新千歳空港⇔富良野｜スキーバス｜北海道のバスツアーのことなら｜北海道アクセスネットワーク",
+      "sourceQuote": "全コース予約制となっており、ご予約のない乗車地（集合場所）・降車地は停車致しません／スキーバスは基本として乗降車地区ホテルにご宿泊のお客様に限り利用可能です／車両のトランクにお預かりできるお荷物は、スキー用具とそれ以外の荷物1 点です",
+      "verdict": "incorrect",
+      "notes": "官方條件是「住在上下車地區（富良野地區）飯店的旅客」，不是只限停靠站那幾間飯店；行李是「雪具加另外 1 件行李」，正文只寫雪具 1 件，少了另一件。建議改成「全程要預約，原則上只給住在富良野地區飯店的旅客搭；後車廂放得下雪具和另外1件行李，雪板要裝袋，不能穿雪靴上車」。"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "富良野區2026年11月28日開，雪季到2027年3月22日，接著3月23日到5月5日是春滑雪期間。北之峰區則是12月下旬開到3月22日，春滑雪期間不開。…開幕日可能依積雪改變。",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/2026.2027_sk_iresorts_infor/",
+      "sourceTitle": "2026-2027_冬期 富良野スキー場 | 富良野スキー場",
+      "sourceQuote": "富良野ゾーン 11/28(土)～3/22(月･振休) 春スキー期間 3/23(火)～5/5(水･祝)／北の峰ゾーン 12月下旬～3/22(月･振休) 春スキー期間 CLOSE／2026年11月28日(土) OPEN＜予定＞／※天候、積雪量により営業期間･時間が変更になる場合がございます",
+      "verdict": "verified",
+      "notes": "北之峰區官方只寫「12月下旬」，正文照寫，沒有寫成確定日期。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "兩區在雪道上是連著的，從北之峰區坐連絡吊椅可以到富良野區，從富良野區回北之峰區則要滑中級的H1雪道。",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+      "sourceTitle": "ゲレンデ・コース | 富良野スキー場",
+      "sourceQuote": "2つのゾーンをつなぐ連絡リフト 北の峰ゾーンの乗り場から富良野ゾーンへ向かう連絡リフト／H1コース 中級 富良野ゾーン→北の峰ゾーン 富良野ゾーンから北の峰ゾーンへつながる中級者コース",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "早上北之峰第1高速吊椅8點半開，北之峰纜車吊廂和富良野纜車都是9點開。",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+      "sourceTitle": "ゲレンデ・コース | 富良野スキー場",
+      "sourceQuote": "F 北の峰第1 高速リフト 営業時間 8:30A.M.〜4:00P.M.／K 北の峰ゴンドラ 営業時間 9:00A.M.〜4:00P.M.／A 富良野 ロープウェー 営業時間 9:00A.M.〜4:00P.M.",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "富良野區有C1等初級雪道，C1適合初學者上課。滑雪場的雪具租借在富良野纜車、北之峰站和新富良野王子大飯店三處。",
+      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+      "sourceTitle": "ゲレンデ・コース | 富良野スキー場",
+      "sourceQuote": "C1コース 初級 富良野ゾーン コース幅も充分。初心者のレッスンに最適。；info 頁：富良野ロープウェー／北の峰ターミナル／新富良野プリンスホテル（レンタル営業時間）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "一花酒莊飯店（ワイナリーホテル＆コンドミニアム 一花）開車約1分到北之峰雪道，雪季有免費接送去滑雪場。這個接送要預約，時間依季節不同，接近入住日打電話問飯店。",
+      "sourceUrl": "https://hotel-hitohana.com/",
+      "sourceTitle": "ホテル＆コンドミニアム 一花 [HITOHANA] 【公式】｜ 北海道 富良野 北の峰",
+      "sourceQuote": "【スキー場】スノーシーズンには送迎サービス (無料)がございます。シーズンにより、日程・時間が変更になりますのでご宿泊日が近くなりましたら、ホテルまでお問い合わせください。※要予約；設施頁：富良野スキー場北の峰ゲレンデまで車で1分の立地",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "Superior房附電磁爐廚房，可住3人。往富良野站的接送只在到達日與出發日，要在前一天晚上6點前預約。",
+      "sourceUrl": "https://hotel-hitohana.com/room/",
+      "sourceTitle": "客室 |ホテル＆コンドミニアム 一花  [HITOHANA] 【公式】｜ 北海道 富良野 北の峰",
+      "sourceQuote": "スーペリア ゆとりの広さ＆キッチン付／定員：大人2〜3名／☆キッチン（IHコンロ）；首頁與交通頁：※到着日及び出発日のみご利用可能です；FAQ：※要予約 ※ご利用日前日の18時までにお申し込みください",
+      "verdict": "verified",
+      "notes": "兩條件分別來自同站不同頁，都是官方；接送時段兩頁不一致，但正文沒有寫時段。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "看房價與訂房：[官網](https://hotel-hitohana.com/)｜[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-23879451/winery-hotel-and-condominiumhitohana/)｜[Agoda](https://www.agoda.com/zh-tw/winery-hotel-condominium-hitohana/hotel/furano-jp.html)；比較表一花那一列與連結欄",
+      "sourceUrl": "https://hotel-hitohana.com/facility/",
+      "sourceTitle": "館内施設 |ホテル＆コンドミニアム 一花 [HITOHANA] 【公式】｜ 北海道 富良野 北の峰",
+      "sourceQuote": "スキーロッカー／大浴場／夕食 dinner ： 17：30～21：00（LO20：00）；首頁：定休日：火曜日 予約 : 要予約；官網 200；Trip.com 標題「一花酒莊公寓飯店」；Agoda H1「一花酒莊公寓飯店 (Winery Hotel & Condominium HITOHANA)」，地址 23-10 Kitanominecho；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": "比較表「北之峰區，開車約1分到雪道，雪季有免費接送；到達日與出發日有接送，要預約；滑雪置物櫃；大浴場；要預約，週二公休」逐格對過。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "穆寧富良野飯店（ホテルムニン富良野，也有人寫成穆林富良野飯店）走路約5分到富良野滑雪場，有放得下雪板的置物櫃，不過晚餐目前停止供應，櫃台可以介紹附近的餐廳。",
+      "sourceUrl": "https://www.hotelmunin.com/news/2026/05/07/%e3%83%ac%e3%82%b9%e3%83%88%e3%83%a9%e3%83%b3%e5%a4%95%e9%a3%9f%e5%96%b6%e6%a5%ad%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "レストラン　夕食営業休業のお知らせ - 新着情報 | ホテルムニン富良野",
+      "sourceQuote": "現在、夕食営業をお休みさせていただいております。なお、ご希望のお客様には、近隣の飲食店のご案内；首頁：「富良野スキー場」まで 当館より徒歩約5分；設施頁：スキー・スノーボードの板なども格納できる広々としたロッカー；Trip.com 標題「穆林富良野飯店」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "看房價與訂房：[官網](https://www.hotelmunin.com)｜[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-28757859/hotel-munin-furano/)｜[Agoda](https://www.agoda.com/zh-tw/hotel-munin-furano/hotel/furano-jp.html)；比較表穆寧那一列與連結欄",
+      "sourceUrl": "https://www.hotelmunin.com/",
+      "sourceTitle": "ホテルムニン富良野 | 公式 | Hotel munin Furano",
+      "sourceQuote": "大理石づくりの清潔な 大浴場と半露天風呂／JR富良野駅からお車で約8分；官網 200；Trip.com 標題「穆林富良野飯店」；Agoda（瀏覽器）H1「Hotel Munin Furano」；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "Chalet Burlap Furanui（シャーレ バーラップ フラヌイ，訂房網站叫麻布呋喃木屋）走路約10分到富良野滑雪場，小屋和villa可以整棟包下來。",
+      "sourceUrl": "https://www.furanotourism.com/jp/spot/spot_D.php?id=589",
+      "sourceTitle": "CHALET BURLAP FURANUI｜ペンション｜宿泊施設｜ふらの観光協会公式サイト FURANO index",
+      "sourceQuote": "コテージやヴィラは一棟貸切OK；官網：富良野スキー場まで徒歩10分；Trip.com 標題與 Agoda H1 都是「麻布呋喃木屋」",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "看房價與訂房：[官網](http://www.burlapfuranui.com)｜[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-705992/pension-furanui/)｜[Agoda](https://www.agoda.com/zh-tw/chalet-burlap-furanui_2/hotel/furano-jp.html)；比較表 Burlap 那一列與連結欄",
+      "sourceUrl": "https://burlapfuranui.com/facilities/",
+      "sourceTitle": "【公式】CHALET BURLAP FURANUI | シャーレ バーラップ フラヌイ",
+      "sourceQuote": "トロン温泉とは、厚生労働省が認める人工温泉です；觀光協會：日帰り温泉も営業しております；官網首頁：JR富良野駅から車で10分；Trip.com 200 標題「麻布呋喃木屋」；Agoda H1「麻布呋喃木屋 (Chalet Burlap Furanui)」，地址 13-15 Kitanominecho；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": "Thoron 溫泉官方自己寫「人工溫泉」，表格寫法一致。官網連結是 http（打得開）。"
+    },
+    {
+      "claimId": "C72",
+      "articleExcerpt": "Edel Warme富良野度假飯店（富良野リゾートホテル エーデルヴェルメ）開車約5分到富良野滑雪場，和室最多住6人，Resort Liner也停這裡。",
+      "sourceUrl": "https://www.edelwarme.jp/activity_win/",
+      "sourceTitle": "アクティビティ 冬 | 富良野リゾートホテル エーデルヴェルメ",
+      "sourceQuote": "富良野スキー場 当館からお車で約5分；首頁：14畳、約35平米ある和室は、最大6名様まで；access-n.jp：富良野リゾートホテル エーデルヴェルメ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "看房價與訂房：[官網](https://www.edelwarme.jp/zh/win_top_tw/)｜[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-705968/edel-warme/)｜[Agoda](https://www.agoda.com/zh-tw/hotel-edel-warme/hotel/furano-jp.html)；比較表 Edel Warme 那一列與連結欄",
+      "sourceUrl": "https://www.edelwarme.jp/facility_win/",
+      "sourceTitle": "館内施設 冬 | 富良野リゾートホテル エーデルヴェルメ",
+      "sourceQuote": "大浴場…男女各30名定員／日帰り入浴/大人￥500；首頁：夕食 (18:00～21:00) ※事前にご予約ください；繁中頁 200 標題「Edelwerme富良野度假酒店」；Trip.com 標題「埃德爾溫馨飯店」；Agoda H1「富良野度假飯店Edel Warme (Hotel Edel Warme)」；地圖是 Google 地圖搜尋網址",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "T1",
+      "articleExcerpt": "| 新富良野王子大飯店 | 富良野區，能穿雪板直接進出雪道 | 搭巴士約17分 | 館內有租借、住客專用置物櫃 | 天然溫泉，住客另外付費，不住也能泡 | 全部住客都要先預約 |",
+      "sourceUrl": "https://www.princehotels.co.jp/shinfurano/facility/onsen/",
+      "sourceTitle": "富良野温泉「紫彩の湯」 | 新富良野プリンスホテル",
+      "sourceQuote": "天然温泉…基本情報［ご宿泊のお客さま］おとな￥800…／基本情報［日帰りのお客さま］おとな￥1,700；其他格見 C2、C3、C7、C11",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "T2",
+      "articleExcerpt": "| 富良野那圖瓦德飯店 | 北之峰區，飯店正前方就是雪道 | 搭巴士約10分 | 館內有租借、滑雪置物櫃 | 光明石溫泉（人工），有露天 | 冬天是自助餐 |",
+      "sourceUrl": "https://naturwald-furano.com/spa",
+      "sourceTitle": "温泉｜ホテル ナトゥールヴァルト 富良野｜【公式】北海道ホテル&リゾートグループ",
+      "sourceQuote": "当ホテルの温泉は光明石の準天然温泉です。",
+      "verdict": "incorrect",
+      "notes": "其他格都對（スキーロッカー・レンタル、冬季北海道ビュッフェ）；「（人工）」和官方「準天然溫泉」不一致，同 C16。建議改「光明石溫泉（準天然），有露天」。"
+    },
+    {
+      "claimId": "T3",
+      "articleExcerpt": "| NOZO飯店 | 北之峰區，走路約3分到北之峰纜車吊廂 | 搭巴士約10分，下車走約2分 | 每間房專用置物櫃、加熱鞋架，合作店租的雪具可在館內還 | 大浴場，有三溫暖 | 住客每天都能吃，時間依進貨調整 |",
+      "sourceUrl": "https://nozohotel.com/restaurant/",
+      "sourceTitle": "レストラン &amp; バー - Nozo Hotel",
+      "sourceQuote": "秋季（9月〜11月）の営業スケジュール…ディナー 休業",
+      "verdict": "unsupported",
+      "notes": "晚餐那一格同 C26（冬季營業未公布、現行季節表晚餐休業）；其他格都對。建議改「館內餐廳，冬季營業向飯店確認」。"
+    },
+    {
+      "claimId": "T4",
+      "articleExcerpt": "| Bell Hills飯店 | 北之峰區，走路約2分到北之峰纜車吊廂 | 開車約10分 | | 光明石溫泉（人工），有露天，不住也能泡 | 自助餐或套餐，分三個時段入場 |",
+      "sourceUrl": "https://www.bellhills.jp/",
+      "sourceTitle": "ホテルベルヒルズ | ラベンダー畑が一望できる露天風呂付きホテル",
+      "sourceQuote": "天然ミネラル鉱石を使用した光明石温泉",
+      "verdict": "incorrect",
+      "notes": "其他格都對；「（人工）」和官方用字不一致，同 C31。建議改「光明石溫泉（天然礦石），有露天，不住也能泡」。"
+    },
+    {
+      "claimId": "T5",
+      "articleExcerpt": "| Fenix富良野 | 北之峰區，能穿雪板直接進出雪道 | | 館內有租借店、滑雪置物櫃 | | 館內有餐廳 |",
+      "sourceUrl": "https://fenixfurano.com/en/fenixfuranorental/",
+      "sourceTitle": "Best Holiday Rental for Ski Lovers in Hokkaido",
+      "sourceQuote": "Ski-in Ski-out／Ski Rentel Shop／Restaurant／Ski Locker",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "T6",
+      "articleExcerpt": "| 穆寧富良野飯店 | 北之峰一帶，走路約5分到富良野滑雪場 | 開車約8分 | 放得下雪板的置物櫃 | 大浴場、半露天浴池 | 目前停止供應晚餐 |",
+      "sourceUrl": "https://www.hotelmunin.com/",
+      "sourceTitle": "ホテルムニン富良野 | 公式 | Hotel munin Furano",
+      "sourceQuote": "「富良野スキー場」まで 当館より徒歩約5分／JR富良野駅からお車で約8分／大浴場と半露天風呂",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "T7",
+      "articleExcerpt": "| Chalet Burlap Furanui | 北之峰一帶，走路約10分到富良野滑雪場 | 開車約10分 | | Thoron溫泉（人工），不住也能泡 | |",
+      "sourceUrl": "https://burlapfuranui.com/facilities/",
+      "sourceTitle": "【公式】CHALET BURLAP FURANUI | シャーレ バーラップ フラヌイ",
+      "sourceQuote": "トロン温泉とは、厚生労働省が認める人工温泉です",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "T8",
+      "articleExcerpt": "| Edel Warme富良野度假飯店 | 北之峰一帶，開車約5分到富良野滑雪場 | | | 大浴場，不住也能泡 | 要預約 |",
+      "sourceUrl": "https://www.edelwarme.jp/facility_win/",
+      "sourceTitle": "館内施設 冬 | 富良野リゾートホテル エーデルヴェルメ",
+      "sourceQuote": "日帰り入浴/大人￥500・小人￥300（小学生以下）・幼児無料",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "T9",
+      "articleExcerpt": "| La Vista富良野Hills | 富良野站旁，搭巴士約17分到新富良野王子 | 走路約3分 | | 天然溫泉，有露天，只給住客 | 要預約 |",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/furano/spa/",
+      "sourceTitle": "大浴場｜【公式】天然温泉 紫雲の湯 ラビスタ富良野ヒルズ",
+      "sourceQuote": "自家源泉の男女別大浴場「紫雲の湯」では、内湯、露天風呂など",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "T10",
+      "articleExcerpt": "| 富良野Natulux飯店 | 富良野站旁，搭巴士約17分到新富良野王子 | 走路約1分 | | 大浴場，男湯三溫暖、女湯岩盤浴另收費 | 要7天前預約 |",
+      "sourceUrl": "https://www.natulux.com/facility/",
+      "sourceTitle": "【公式】NATULUX HOTEL 宿泊予約サイト｜富良野で記念日にピッタリ　ラベンダーで有名なホテル",
+      "sourceQuote": "女性浴室：岩盤浴付（別途料金）／男性浴場：サウナ付",
+      "verdict": "verified",
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "verified": 73,
+    "incorrect": 8,
+    "unsupported": 2,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
