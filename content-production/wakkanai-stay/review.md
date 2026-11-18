@@ -1,47 +1,40 @@
-# 驗收紀錄：wakkanai-stay（2026-11-01，已上線文章重寫一輪）
+# 驗收紀錄：wakkanai-stay（2026-11-19，舊住宿頁重跑一輪）
 
-- 文章：`content-production/wakkanai-stay/reader-preview.md`
-- SHA-256（換行統一成 LF 後計算）：`df08294dadc7e7f8f8a45b9b620f92d4fbd6b4e500985fe5a66f0efa325fa86a`
-- 規則：`content-automation/rewrite-live.md`（重查、讀競品後重寫、先刪再調、意義比對、完整驗收）；重寫前的版本在 `pre-rewrite/`
-- 研究者：研究子代理（Opus 5.5，重查 38 筆會變資料，更正 F180（稚內市住宿稅已定案）、F184（Minori 冬季休業有官方頁），新增 F425～F427；讀競品 4 篇）
-- 作者：作者子代理（Opus 5.5，讀競品後重寫；連結句不是「見○○」句型，照原句）；驗收後修改也由作者處理（`revisions-round1.md`）
-- 潤稿者：潤稿子代理（Opus 5.5，先刪再調，沒寫過這篇）；意義比對 1 個子代理
-- 標題檢查：標題、SEO Title 沿用網站版本，沒改，沿用 `heading-review.json`
-- 事實查核：1 個子代理（Opus 5.5，沒參與寫作、潤稿與修改），共 2 輪
-- 讀者驗收：1 個子代理（沒寫過、潤過或查核過），第一階段只看大綱、文章與規則，第二階段才看研究記錄與事實查核
-- 協調：人工 session（Claude Code，Darren 2026-11-01 要求把剩下的文章全部重寫一輪）
+- 文章：`content-production/wakkanai-stay/reader-preview.md`（稚內住宿推薦，住稚內站前還是南稚內？）
+- SHA-256（換行統一成 LF 後計算）：`104804622cfb1a1c76eed8f2bdbfe6baeeaf5ed1f52c1bd3691b6775295b78d2`
+- 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
+- 研究：`content-experiments/stay-rerun-2026-11-18/wakkanai/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-19 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
+- 寫作：規格助手（Opus 5.5）→ 五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，細寫六間都判剛好）。
+- 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作與編輯），3 輪：第 1 輪 124 筆裡 1 筆 incorrect、6 筆 unsupported、1 筆 unreachable；第 2 輪剩 5 筆；第 3 輪 121 筆全部 verified。
+- 讀者驗收：讀者驗收子代理（Opus 5.5，沒寫過、沒查核過），七題驗收 2 次（`acceptance1.md` 第 4、5 題不過；`acceptance2.md` 七題都過）。第 2 次之後只照查核改了 TRUNK 兩句、比較表一格與 SURFEEL 連結，由事實查核第 3 輪確認。
+- 協調：人工 session（Claude Code），照岔路的預設，沒有問 Darren。
 
 ## 結果
 
 | 項目 | 結果 |
 |---|---|
-| 格式 | `mechanical_clear`（`audit_answer_first.py --article-type aspect-page`） |
-| 標題 | `acceptable`（標題沒改；讀者最終判定可接受） |
-| 讀者價值 | `acceptable`（讀者最終判定，第二階段必修 3 條都已解決） |
-| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，99 項 claim 全部 verified） |
-| 口吻與標點 | `check-voice.mjs --final` 通過（正文 3,665 字） |
-| 事實編號 | `tags_clear`（研究記錄 51 筆，正文用到 50 筆） |
-| 分潤連結 | 沒有單一旅館的分潤連結，不需揭露句 |
-| 圖片 | 線上沒有文內照片，沒有 AI 圖或自製示意圖 |
+| 格式 | `mechanical_clear`（`audit_answer_first.py`） |
+| 標題 | `acceptable`（七題第 6 題過） |
+| 讀者價值 | `acceptable`（七題都過，含第 7 題份量；退回一次後過關） |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，121 項 claim 全部 verified） |
+| 口吻與標點 | `check-voice.mjs --final` 通過（正文約 3,975 字） |
+| 名字與表格連結 | `check-benchmark.mjs` 沒有錯誤 |
+| 圖片 | 沿用線上的封面與文內照片；細寫的六間各找 1 則 Instagram 貼文 |
 
-**最終結果：`ready_for_user_preview`。** Darren 2026-11-01 要求重寫後換上網站。
+**最終結果：`ready_for_user_preview`。** 換掉線上的舊版。
 
-## 經過
+## 協調者的決定
 
-| 輪 | 做了什麼 | 結果 |
-|---|---|---|
-| 研究 | 重查 38 筆、讀競品 4 篇 | 更正 F180、F184；新增 F425～F427（Dormy Inn 早餐 5:30、SURFEEL 到渡輪站） |
-| 寫作 | 讀競品後重排；先刪再調潤稿（刪 8 家門牌）；意義比對 | 四項檢查通過；0 不可接受、0 遺失 |
-| 1 | 事實查核第 1 輪（99 項） | 全部 verified |
-| 2 | 讀者驗收第一、二階段 | 必修 3 條：3 家到渡輪站多遠、禮文島全年各期第一班、表格加營業期間欄 |
-| 3 | 作者照必修修改，新增 F428 | 三項檢查通過 |
-| 4 | 事實查核第 2 輪（99 項）；讀者最終判定 | 全部 verified；讀者價值與標題可接受、無剩餘必修 |
-
-## 查不到所以正文沒寫的
-
-- Saharin、冰雪莊、casa hotel、Meguma、民宿宗谷岬的冬季營業（表格留「—」）
+- H1 從「稚內住宿，各區飯店、訂房管道與搭早船住哪區」改成「稚內住宿推薦，住稚內站前還是南稚內？」，仍包含主要查詢「稚內住宿」。
+- Hotel Miyuki 改寫成「美雪飯店」（照 2026-11-04 的命名順序，也是台灣讀者搜尋與訂房網站的叫法），譯名表一起改。
+- SURFEEL 的溫泉鑽探工期到 2027 年 3 月底、目前沒有大浴場，會影響這一季選不選，照官方公告寫成限制並標年份。
+- HOTEL TRUNK 的「端到座位的和食膳早餐」「有沙發床的雙床房」只出現在擋讀取工具的訂房頁，查核者沒辦法重開，拿掉；年底年初訂不到但沒有公告，不寫。
+- Hotel Meguma 在 Trip.com 不接受預訂，訂房行不放 Trip.com。
+- 國民宿舍冰雪莊官方寫不接受外語，整頁不列；一季的冬季電子券活動不寫。
+- 機場巴士照宗谷巴士時刻表寫一天 3 班（飯店官網還寫 1 班）。
 
 ## 留給之後的事
 
-- F180、F184 更正與新增 F425～F428 要同步回地點事實表與 D1。
-- 平台評分與評論數下次查核時更新。
+- 宗谷巴士機場線時刻表只到 2027-01-31，2 月後重查；渡輪 2027 年時刻表公布後重查第一班時間。
+- 稚內市住宿稅 2027-03-01 起加收，生效後把寫法改成現況。
+- SURFEEL 新溫泉完工後重寫那一間；HOTEL TRUNK 年底年初的營業 12 月中旬前重查。

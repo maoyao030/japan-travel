@@ -1,905 +1,1102 @@
 {
   "schemaVersion": 1,
   "articleId": "wakkanai-stay",
-  "articleSha256": "df08294dadc7e7f8f8a45b9b620f92d4fbd6b4e500985fe5a66f0efa325fa86a",
-  "checker": "fact-check-agent（事實查核子代理，唯讀，沒參與寫作、潤稿或修改；2026-11-01 以 curl 重開 Heartland Ferry、各旅館官網、稚內觀光協會現行頁、北海道廳、稚內市官網與總務省 PDF（轉圖讀），Trip.com／Agoda 用瀏覽器分頁讀）",
-  "checkedAt": "2026-11-01",
-  "notes": "第 1 輪複查（2026-11-01）：對 revisions-round1.md 逐條與全文重新比對；禮文島第一班改成全年（F428）、到渡輪站新句、表格營業期間欄、Moshiripa 但書、TRUNK 訂房管道都重開來源確認；刪掉的 10/27 查詢句移除。初查：全部來源可開，沒有用網頁存檔。平台評分與評論數和正文（10/18～27 查核）略有差距，正文已寫平台與查核期間。casa hotel 觀光協會頁另有電話，作者決定不列（表格寫 Trip.com、Agoda 不算錯）。",
+  "articleSha256": "104804622cfb1a1c76eed8f2bdbfe6baeeaf5ed1f52c1bd3691b6775295b78d2",
+  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-19 用 python urllib 重開約 85 個官方頁、宗谷巴士時刻表與稚內市住宿稅宣傳單兩份 PDF（轉成圖檔逐格看），Trip.com 10 頁讀標題；沒有使用瀏覽器。Agoda 頁、HOTEL TRUNK 官方預約（reservation.jp，503）、美雪 tripla 預約視窗沒能重開，用 booking-links.md、facts-extra.md 的瀏覽器紀錄並在 notes 註明；住客說法以 facts-reviews.md 為準，這輪沒有重看評論。；第 2 輪複查（2026-11-19）：照 seam-notes.md「第二輪」22 條改動與 14 組新句逐句核對，今天 urllib 重開 HOTEL TRUNK 官網三頁、SURFEEL 繁中頁與兩個 reservation.jp 訂房頁（都 503）；沒有使用瀏覽器。刪掉的句子（叫計程車、交誼廳、TRUNK 加水加溫、御園冬天輪流）對應的 claim 已移除或改寫。；第 3 輪複查（2026-11-19）：只核對 TRUNK 早餐句刪除、TRUNK 三人房改寫、TRUNK 比較表早餐欄、SURFEEL 兩處官網連結；沒有使用瀏覽器。",
+  "checkedAt": "2026-11-19",
   "claims": [
     {
       "claimId": "C1",
-      "articleExcerpt": "稚內住宿多半集中在JR稚內站周邊，下面這8家站前旅館走到車站都在7分鐘以內",
-      "sourceUrl": "http://www.saharin.co.jp/access.html",
-      "sourceTitle": "アクセス - ホテルサハリン",
-      "sourceQuote": "ＪＲ宗谷本線稚内駅下車徒歩７分",
+      "articleExcerpt": "稚內住宿多半在JR稚內站前到渡輪站一帶和南稚內，機場附近和宗谷岬也有幾間。",
+      "sourceUrl": "https://www.north-hokkaido.com/booking/",
+      "sourceTitle": "旅の予約（宿泊施設）｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "稚内市内の旅館・ホテル：宗谷パレス、サハリン、TRUNK、ドーミーイン、美雪、サフィール…ニューチコウ、大将、御園、グランド、奥田屋、めぐま…民宿宗谷岬…斗夢ソーヤ…みのり（facts.md K1 的清單）",
       "verdict": "verified",
-      "notes": "8家站前（Dormy 3、SURFEEL 3、THE STAY 1、Moshiripa 4、TRUNK 5、Saharin 7、冰雪莊 5、Miyuki 4 分）各自官網重開，最長是 Saharin 7 分"
+      "notes": "DMO 清單今天沒有整頁重開，照 facts.md K1；各館地址（中央、開運＝站前；大黒＝南稚內；声問＝機場附近；宗谷岬）今天在各館官網或 DMO 頁重開確認。屬於概括描述，成立。"
     },
     {
       "claimId": "C2",
-      "articleExcerpt": "從JR稚內站走到稚內港渡輪總站（稚内港フェリーターミナル）約15分鐘",
-      "sourceUrl": "https://heartlandferry.jp/rishiri/",
-      "sourceTitle": "稚内～利尻・礼文 フェリーターミナル｜ハートランドフェリー",
-      "sourceQuote": "稚内港フェリーターミナル／JR稚内駅より徒歩約15分",
+      "articleExcerpt": "這一帶的旅館走到JR稚內站只要1到7分鐘",
+      "sourceUrl": "https://thestay.jp/wakkanai/",
+      "sourceTitle": "[公式] THE STAY WAKKANAI | JR稚内駅から徒歩2分！！",
+      "sourceQuote": "「稚内駅」から徒歩1分（THE STAY）／ＪＲ宗谷本線稚内駅下車徒歩７分（サハリン access.html）",
       "verdict": "verified",
-      "notes": "日文名照經營者頁面"
+      "notes": "站前 7 間：THE STAY 1、Dormy 3、SURFEEL 3、美雪 4、Moshiripa 4、TRUNK 5、Saharin 7，今天各館官網重開都對得上。"
     },
     {
       "claimId": "C3",
-      "articleExcerpt": "稚內往禮文島香深港的第一班船，4月28日到10月31日是06:30，11月1日到隔年4月27日是06:35",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
-      "sourceTitle": "時刻表 稚内～礼文航路｜ハートランドフェリー",
-      "sourceQuote": "1/1～4/27 06:35～08:30／4/28～5/31 06:30～08:25／6/1～9/30 06:30～08:25／10/1～10/31 06:30～08:25／11/1～12/31 06:35～08:30",
+      "articleExcerpt": "開車旅行，或晚上想在鬧區Orange通（オレンジ通り）一帶吃飯喝酒，就住南稚內",
+      "sourceUrl": "https://www.chikoukankou.jp/",
+      "sourceTitle": "稚内│JR南稚内駅徒歩5分　ホテルニューチコウ│公式",
+      "sourceQuote": "オレンジ商店街に至近の立地でお食事場所にも困りません｜駐車場 約40台まで駐車可能。無料。予約は不要",
       "verdict": "verified",
-      "notes": "2026 年時刻表，稚內發各期第一班（F428）"
+      "notes": "推論檢查：南稚內四間的免費停車場較大（Grand 70、奥田屋 60、New Chikou 約40、大将 DMO 寫 70 台以上），Orange 通在南稚內站旁（New Chikou 官網、casa hotel DMO 頁 K71「日本最北端の歓楽街『オレンジ通り』」）。站前也有免費停車（SURFEEL 40 台、TRUNK 先到先停），所以「開車就住南稚內」是傾向不是必然；以「停車場大、免費」為依據推得成立。"
     },
     {
       "claimId": "C4",
-      "articleExcerpt": "坐2等艙要在開船40分鐘前報到，也就是05:50或05:55以前",
-      "sourceUrl": "https://heartlandferry.jp/faq/",
-      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
-      "sourceQuote": "2等客室をご利用されるお客様は出港時間の40分前までにお済ませ下さい。",
+      "articleExcerpt": "那裡有4間有溫泉或大浴場的飯店",
+      "sourceUrl": "https://www.wakkanai-g-hotel.jp/onsen/",
+      "sourceTitle": "稚内グランドホテル【公式サイト】天然温泉ふれあいの湯",
+      "sourceQuote": "地下1,200Mより湧き出た化石海水型温泉（Grand）／入浴時間 17:00～23:00（大将大浴場）／稚内温泉 童夢の源泉（御園）／稚内温泉 大浴場（奥田屋）",
       "verdict": "verified",
-      "notes": "06:30／06:35 各減 40 分＝05:50／05:55，重算一致"
+      "notes": "Grand、大将、御園、奥田屋四間今天官網都確認有溫泉或大浴場；New Chikou 官網沒有大浴場。"
     },
     {
       "claimId": "C5",
-      "articleExcerpt": "往利尻島鴛泊港的第一班，6月到9月是07:15，10月與4月28日到5月31日是06:45，其他月份是06:55",
-      "sourceUrl": "https://heartlandferry.jp/timetable/",
-      "sourceTitle": "時刻表 稚内～鴛泊航路｜ハートランドフェリー",
-      "sourceQuote": "1/1～4/27 06:55～08:35／4/28～5/31 06:45～08:25／6/1～9/30 07:15～08:55／10/1～10/31 06:45～08:25／11/1～12/31 06:55～08:35",
+      "articleExcerpt": "不過到渡輪站要開車大約8到10分鐘",
+      "sourceUrl": "https://www.chikoukankou.jp/",
+      "sourceTitle": "稚内│JR南稚内駅徒歩5分　ホテルニューチコウ│公式",
+      "sourceQuote": "フェリーターミナルも車で約8分（New Chikou）／「フェリーターミナル」からお車にて約１０分（大将）／フェリーターミナル】より【奥田屋】まで タクシーで約10分",
       "verdict": "verified",
-      "notes": "2026 年時刻表"
+      "notes": "三間官網今天重開都對得上。"
     },
     {
       "claimId": "C6",
-      "articleExcerpt": "報到一樣是2等艙開船40分鐘前",
-      "sourceUrl": "https://heartlandferry.jp/faq/",
-      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
-      "sourceQuote": "2等客室をご利用されるお客様は出港時間の40分前までにお済ませ下さい。",
+      "articleExcerpt": "可以考慮聲問的Hotel Meguma（ホテルめぐま），離稚內機場開車約5分鐘",
+      "sourceUrl": "https://www.meguma.jp/access/",
+      "sourceTitle": "アクセス｜ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "最北の玄関口・稚内空港 より車で約5分。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C7",
-      "articleExcerpt": "搭這些船建議住JR稚內站周邊，從站前旅館走過去就來得及報到，不必一早叫車",
-      "sourceUrl": "https://heartlandferry.jp/rishiri/",
-      "sourceTitle": "稚内～利尻・礼文 フェリーターミナル｜ハートランドフェリー",
-      "sourceQuote": "JR稚内駅より徒歩約15分",
-      "verdict": "verified",
-      "notes": "編輯判斷；站前各家到渡輪站 15～20 分（各官網），可走路報到"
-    },
-    {
-      "claimId": "C8",
-      "articleExcerpt": "天北之湯Dormy Inn稚內（天北の湯 ドーミーイン稚内）、THE STAY WAKKANAI與Hotel Saharin（ホテルサハリン）離JR稚內站走路1到7分鐘，從車站走到渡輪站還要約15分鐘",
-      "sourceUrl": "http://www.saharin.co.jp/access.html",
-      "sourceTitle": "アクセス - ホテルサハリン",
-      "sourceQuote": "ＪＲ宗谷本線稚内駅下車徒歩７分",
-      "verdict": "verified",
-      "notes": "Dormy 交通頁「稚内駅」から徒歩約3分、THE STAY「稚内駅」から徒歩1分；車站到渡輪站見 Heartland Ferry：JR稚内駅より徒歩約15分。沒有寫成推算合計"
-    },
-    {
-      "claimId": "C9",
-      "articleExcerpt": "其他站前各家走到渡輪站，SURFEEL HOTEL WAKKANAI（サフィールホテル稚内）與國民宿舍冰雪莊（国民宿舎氷雪荘）約15分鐘",
-      "sourceUrl": "https://www.surfeel-wakkanai.com/faq",
-      "sourceTitle": "よくあるご質問｜サフィールホテル稚内",
-      "sourceQuote": "ホテルからフェリーターミナルまでどのぐらいかかりますか？ 徒歩約15分です。",
-      "verdict": "verified",
-      "notes": "冰雪莊：基本情報頁「利尻礼文航路フェリーターミナルより徒歩15分」"
-    },
-    {
-      "claimId": "C10",
-      "articleExcerpt": "Guest House Moshiripa（ゲストハウスモシリパ）15到20分鐘",
-      "sourceUrl": "https://moshiripa.com/faq/",
-      "sourceTitle": "よくあるご質問｜ゲストハウスモシリパ",
-      "sourceQuote": "フェリーターミナルまで徒歩15分。",
-      "verdict": "verified",
-      "notes": "access 頁：フェリーターミナルより徒歩20分"
-    },
-    {
-      "claimId": "C11",
-      "articleExcerpt": "Hotel Miyuki（ホテル美雪）17分鐘左右",
-      "sourceUrl": "http://www.hotelmiyuki.jp/other/map.html",
-      "sourceTitle": "アクセスマップ｜ホテル美雪",
-      "sourceQuote": "フェリー乗り場：約17分",
+      "articleExcerpt": "想在宗谷岬過夜，可以住走3分鐘就到岬角的Pension Tom Soya（ペンション斗夢ソーヤ）",
+      "sourceUrl": "https://primenet2010.biz/tomsoya/",
+      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
+      "sourceQuote": "宗谷岬まで徒歩3分",
       "verdict": "verified",
       "notes": ""
     },
     {
+      "claimId": "C8",
+      "articleExcerpt": "或要打電話訂的民宿宗谷岬",
+      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1237.html",
+      "sourceTitle": "民宿宗谷岬｜旅の予約（宿泊施設）｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "電話番號 0162-76-2422｜その他連絡先 FAX：0162-76-2472（頁面只列電話與傳真，沒有寫「電話のみ」）",
+      "verdict": "verified",
+      "notes": "觀光協會頁只列電話與傳真，沒有官網連結，但沒寫「只接受電話預約」；Trip.com、Agoda、Jalan 是否上架研究時沒查（booking-links.md「這輪沒查」）。「只接受」推過頭。保守改法：「或要打電話訂的民宿宗谷岬」，或寫「民宿宗谷岬（觀光協會頁有電話）」。｜第2輪（2026-11-19）：改成「要打電話訂」，觀光協會頁列了電話，成立。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "不過Tom Soya冬季休業到2027年4月下旬",
+      "sourceUrl": "https://primenet2010.biz/tomsoya/",
+      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
+      "sourceQuote": "現在、当館は2027年4月下旬まで冬季休業をいただいております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "野寒布岬（ノシャップ岬）旁的小飯店Minori（小さなホテルみのり）冬天也休業，大約從11月底到4月底",
+      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1406.html",
+      "sourceTitle": "小さなホテルみのり｜旅の予約（宿泊施設）｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "「ノシャップ岬」のすぐそば｜休業日 11月末頃～4月末頃",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "SURFEEL HOTEL WAKKANAI（サフィールホテル稚内）、Guest House Moshiripa（ゲストハウスモシリパ）和美雪飯店（ホテル美雪）走到渡輪站都是15到20分鐘，不用一大早叫車",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/faq",
+      "sourceTitle": "よくある質問 | 北海道稚内市 | サフィールホテル稚内 | 公式HP",
+      "sourceQuote": "フェリーターミナルまで…徒歩約15分（SURFEEL）｜フェリーターミナルより徒歩20分／フェリーターミナルまで徒歩15分（Moshiripa）｜フェリー乗り場：約17分（美雪 map.html）",
+      "verdict": "verified",
+      "notes": "三間官網今天重開都對得上；「不用一大早叫車」是從走路 15～20 分推的，成立。"
+    },
+    {
       "claimId": "C12",
-      "articleExcerpt": "HOTEL TRUNK WAKKANAI開車到渡輪站約3分鐘",
-      "sourceUrl": "https://hoteltrunk-wakkanai.jp/",
-      "sourceTitle": "HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
-      "sourceQuote": "稚内駅から徒歩5分、フェリーターミナルから車で3分の好立地。",
+      "articleExcerpt": "搭2等艙要在開船前40分鐘辦好乘船手續",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問 | ハートランドフェリー",
+      "sourceQuote": "車を積込みされるお客様と2等客室をご利用されるお客様は出港時間の40分前までにお済ませ下さい。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C13",
-      "articleExcerpt": "天北之湯Dormy Inn稚內（天北の湯 ドーミーイン稚内）的早餐為了配合渡輪出發，特別提早到5:30就開",
+      "articleExcerpt": "2026年往禮文島香深港的第一班是早上6點半或6點35分開，所以5點50分或5點55分前就要辦好",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "2026年1月1日～12月31日｜1/1～4/27 06:35～08:30｜4/28～5/31 06:30｜6/1～9/30 06:30｜10/1～10/31 06:30｜11/1～12/31 06:35",
+      "verdict": "verified",
+      "notes": "經營者時刻表今天重開；40 分前＝5:50／5:55，算法正確。2027 年時刻表官網還沒公布。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "往利尻島鴛泊港的第一班看季節在6點45分到7點15分之間",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "ー時刻表 日本語(稚内-鴛泊) | ハートランドフェリー",
+      "sourceQuote": "1/1～4/27 06:55｜4/28～5/31 06:45｜6/1～9/30 07:15｜10/1～10/31 06:45｜11/1～12/31 06:55",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "天北之湯Dormy Inn稚內（天然温泉 天北の湯 ドーミーイン稚内）為了配合渡輪，早餐5點半就開，是全國Dormy Inn裡唯一這麼早的",
       "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/breakfast",
-      "sourceTitle": "天然温泉 天北の湯 ドーミーイン稚内 朝食",
+      "sourceTitle": "朝食｜【公式】天然温泉 天北の湯 ドーミーイン稚内",
       "sourceQuote": "営業時間はフェリー出発の関係で、全国のドーミーインで当館だけ、朝5:30から営業しています！",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C14",
-      "articleExcerpt": "不過搭往禮文島的第一班，05:50或05:55前就要報到，吃早餐的時間很短",
-      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/breakfast",
-      "sourceTitle": "天然温泉 天北の湯 ドーミーイン稚内 朝食",
-      "sourceQuote": "5：30～9：00（最終入店8：45）",
-      "verdict": "verified",
-      "notes": "早餐 5:30 開、報到 05:50／05:55（Heartland Ferry 40 分前），加上走到渡輪站約 15 分，重算後確實很短"
-    },
-    {
-      "claimId": "C15",
-      "articleExcerpt": "往利尻島的第一班報到時間落在06:05到06:35之間，比較能吃完早餐再走過去",
-      "sourceUrl": "https://heartlandferry.jp/timetable/",
-      "sourceTitle": "時刻表 稚内～鴛泊航路｜ハートランドフェリー",
-      "sourceQuote": "06:45～08:25／06:55～08:35／07:15～08:55",
-      "verdict": "verified",
-      "notes": "06:45/06:55/07:15 各減 40 分＝06:05/06:15/06:35，重算一致"
-    },
-    {
       "claimId": "C16",
-      "articleExcerpt": "Moshiripa什麼時間退房都可以，退房後當天也能寄放行李。很多房客就是從這裡搭清晨的渡輪或火車出發",
-      "sourceUrl": "https://moshiripa.com/faq/",
-      "sourceTitle": "よくあるご質問｜ゲストハウスモシリパ",
-      "sourceQuote": "チェックアウトは何時でも可能です。フェリーや列車など、早朝の便でご出発のお客さまも多いです。 またチェックアウト後でも、その日1日はお荷物を置いて外出して結構です。",
+      "articleExcerpt": "SURFEEL和HOTEL TRUNK WAKKANAI（ホテルトランク稚内）從6點開始",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/restaurants/marine",
+      "sourceTitle": "カフェレストラン　マリーヌ | 北海道稚内市 | サフィールホテル稚内 | 公式HP",
+      "sourceQuote": "朝食 6:00～10:00（SURFEEL マリーヌ）／朝食のみご提供しております。ご利用時間 朝6時～9時（TRUNK facility）",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "冰雪莊清晨5:30到7:00之間會送房客到渡輪站或JR稚內站，要事先預約",
-      "sourceUrl": "http://www.minkoku.com/yado/basic.php?yado_id=1",
-      "sourceTitle": "国民宿舎氷雪荘 基本情報｜民営国民宿舎協議会",
-      "sourceQuote": "JR稚内駅・フェリーターミナルまで早朝（5:30～7:00）のみ送り可（要予約）",
+      "articleExcerpt": "不過要搭往禮文島的第一班，連5點半的早餐都吃得很趕，因為從Dormy Inn稚內要先走約3分鐘到JR稚內站，車站再走約15分鐘才到渡輪站",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島） | ハートランドフェリー",
+      "sourceQuote": "JR稚内駅より徒歩約15分｜（Dormy access）JR 宗谷本線 「稚内駅」から徒歩約3分｜（FAQ）2等客室…出港時間の40分前までに",
       "verdict": "verified",
-      "notes": ""
+      "notes": "推論檢查：首班 6:30／6:35，2 等手續截止 5:50／5:55；Dormy 到 JR 稚內站走 3 分、站到渡輪站走約 15 分，所以 5:30 開門後大約只有 5～10 分鐘能吃。推得成立。只對 2 等艙成立（指定席與 1 等是 20 分前），正文前一段已講 2 等艙，可以接受。｜第2輪（2026-11-19）：兩段走路時間今天分別在 Heartland Ferry 與 Dormy 官網重開確認；「吃得很趕」的推論見上，成立。"
     },
     {
       "claimId": "C18",
-      "articleExcerpt": "搭往禮文島的第一班，預約時選靠近5:30的時段，才來得及在05:50或05:55前報到",
-      "sourceUrl": "http://www.minkoku.com/yado/basic.php?yado_id=1",
-      "sourceTitle": "国民宿舎氷雪荘 基本情報｜民営国民宿舎協議会",
-      "sourceQuote": "早朝（5:30～7:00）のみ送り可（要予約）／利尻礼文航路フェリーターミナルより徒歩15分、車で3分",
+      "articleExcerpt": "Moshiripa不管多早都可以退房，適合搭清晨的渡輪或火車，退房後行李當天也能放在館內",
+      "sourceUrl": "https://moshiripa.com/faq/",
+      "sourceTitle": "よくある質問 – 《稚内》ゲストハウスモシリパ",
+      "sourceQuote": "チェックアウトは何時でも可能です。フェリーや列車など、早朝の便でご出発のお客さまも多いです。｜チェックアウト後でも、その日1日はお荷物を置いて外出して結構です。",
       "verdict": "verified",
-      "notes": "送車 5:30 起、車程 3 分、報到 05:50／05:55，重算一致"
+      "notes": "第2輪（2026-11-19）：成立。"
     },
     {
       "claimId": "C19",
-      "articleExcerpt": "住SURFEEL的話，可以請櫃台叫計程車",
-      "sourceUrl": "https://www.surfeel-wakkanai.com/faq",
-      "sourceTitle": "よくあるご質問｜サフィールホテル稚内",
-      "sourceQuote": "徒歩約15分です。タクシーの手配をご希望の方はお申し付けください。",
+      "articleExcerpt": "HOTEL TRUNK到渡輪站開車只要3分鐘左右",
+      "sourceUrl": "https://hoteltrunk-wakkanai.jp/",
+      "sourceTitle": "HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
+      "sourceQuote": "稚内駅から徒歩5分、フェリーターミナルから車で3分の好立地。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C20",
-      "articleExcerpt": "南稚內的Hotel New Chikou（ホテルニューチコウ）離渡輪站開車約8分鐘，比站前遠。住這裡搭早船，要另外叫計程車或自己開車",
-      "sourceUrl": "https://www.chikoukankou.jp/",
-      "sourceTitle": "稚内│JR南稚内駅徒歩5分 ホテルニューチコウ│公式",
-      "sourceQuote": "JR南稚内駅が徒歩圏内、フェリーターミナルも車で約8分",
+      "articleExcerpt": "想住得離車站和渡輪站近，又不想住多人房的話，可以從這一組挑",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/rooms",
+      "sourceTitle": "客室｜【公式】天然温泉 天北の湯 ドーミーイン稚内",
+      "sourceQuote": "ダブルルーム…ご利用人数：2人｜ツインルーム…ご利用人数：2人（Dormy）",
       "verdict": "verified",
-      "notes": "官網沒有接送說明；「要叫車或開車」是依車程 8 分的建議"
+      "notes": "分組句檢查：Dormy（雙人床、雙床）、SURFEEL（套房、雙床、雙人床、單人、和室）、TRUNK（單人、雙床、雙人床、和室）、美雪（洋室、和室）、Saharin（洋室、和室6畳／15畳）今天官網客房頁都沒有多人房（ドミトリー）。成立。"
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "站前的旅館離車站、巴士總站與渡輪站都近。站前之外，南稚內一帶靠近鬧區，機場附近、野寒布與宗谷岬則只有零星幾家",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1400.html",
-      "sourceTitle": "casa hotel｜稚内観光協会",
-      "sourceQuote": "「南稚内駅」、日本最北端の歓楽街「オレンジ通り」から徒歩２分",
+      "articleExcerpt": "Dormy Inn稚內走到JR稚內站約3分鐘，10樓就有天然溫泉和露天浴池",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/spa",
+      "sourceTitle": "大浴場｜【公式】天然温泉 天北の湯 ドーミーイン稚内",
+      "sourceQuote": "最上階10Fに、男女別天然温泉大浴場「天北の湯」。当館は水風呂も露天風呂も、ナトリウム塩化物泉の天然温泉です。（access：「稚内駅」から徒歩約3分）",
       "verdict": "verified",
-      "notes": "分區概述；機場附近、野寒布、宗谷岬各 1～2 家為本篇列出的範圍"
+      "notes": ""
     },
     {
       "claimId": "C22",
-      "articleExcerpt": "表格：Dormy Inn稚內｜JR稚內站周邊｜JR稚內站走路約3分鐘｜冬天也營業｜官網、Trip.com、Agoda",
-      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/access",
-      "sourceTitle": "天然温泉 天北の湯 ドーミーイン稚内 アクセス",
-      "sourceQuote": "「稚内駅」から徒歩約3分",
+      "articleExcerpt": "不過房型只有雙人床房和雙床房，一間只能住2人",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/rooms",
+      "sourceTitle": "客室｜【公式】天然温泉 天北の湯 ドーミーイン稚内",
+      "sourceQuote": "ダブルルーム 客室面積：16.5㎡ ご利用人数：2人｜ツインルーム 客室面積：20.5㎡ ご利用人数：2人",
       "verdict": "verified",
-      "notes": "官網有「ご宿泊予約」；Trip.com 2027-01-20 列表與 Agoda 城市頁都有 Dormy Inn Wakkanai Natural Hot Spring"
+      "notes": "連鎖規定小孩可以添睡（1 床 1 名），不影響「一間 2 人」的說法。"
     },
     {
       "claimId": "C23",
-      "articleExcerpt": "表格：SURFEEL HOTEL WAKKANAI｜JR稚內站走路約3分鐘，渡輪站走路約15分鐘｜冬天也營業｜官網、電話、Trip.com、Agoda",
-      "sourceUrl": "https://www.surfeel-wakkanai.com/",
-      "sourceTitle": "サフィールホテル稚内 公式サイト",
-      "sourceQuote": "稚内駅より徒歩３分／宿泊予約（受付時間9〜18時）／Copyright © 2019 SURFEEL HOTEL WAKKANAI",
-      "verdict": "verified",
-      "notes": "渡輪站 15 分見常見問題頁；Trip.com 與 Agoda 都有 Surfeel Hotel Wakkanai"
-    },
-    {
-      "claimId": "C24",
-      "articleExcerpt": "表格：THE STAY WAKKANAI｜JR稚內站走路約1分鐘｜冬天也營業｜官網、電話、E-mail、Trip.com、Agoda",
-      "sourceUrl": "https://thestay.jp/wakkanai/",
-      "sourceTitle": "THE STAY WAKKANAI 公式サイト",
-      "sourceQuote": "JR宗谷本線「稚内駅」から徒歩1分／E-Mailでのご予約／WEBでのご予約",
-      "verdict": "verified",
-      "notes": "Trip.com 與 Agoda 都有 The Stay Wakkanai"
-    },
-    {
-      "claimId": "C25",
-      "articleExcerpt": "表格：Guest House Moshiripa｜JR稚內站走路約4分鐘，渡輪站走路15～20分鐘｜冬天也營業｜官網、Trip.com、Agoda",
-      "sourceUrl": "https://moshiripa.com/access/",
-      "sourceTitle": "アクセス｜ゲストハウスモシリパ",
-      "sourceQuote": "稚内駅より北へ徒歩4分／フェリーターミナルより徒歩20分",
-      "verdict": "verified",
-      "notes": "faq 頁寫 15 分；Trip.com 與 Agoda 都有 Guest House Moshiripa"
-    },
-    {
-      "claimId": "C26",
-      "articleExcerpt": "表格：HOTEL TRUNK WAKKANAI｜JR稚內站走路約5分鐘，渡輪站開車約3分鐘｜冬天也營業｜官網、Trip.com、Agoda",
-      "sourceUrl": "https://hoteltrunk-wakkanai.jp/",
-      "sourceTitle": "HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
-      "sourceQuote": "稚内駅から徒歩5分、フェリーターミナルから車で3分の好立地。",
-      "verdict": "verified",
-      "notes": "Trip.com 列表有 Hotel Trunk Wakkanai，Agoda 有 /hotel-trunk-wakkanai/"
-    },
-    {
-      "claimId": "C27",
-      "articleExcerpt": "表格：Hotel Saharin｜JR稚內站走路約7分鐘｜—｜官網、電話、Trip.com、Agoda",
-      "sourceUrl": "http://www.saharin.co.jp/access.html",
-      "sourceTitle": "アクセス - ホテルサハリン",
-      "sourceQuote": "ＪＲ宗谷本線稚内駅下車徒歩７分／電話でのご予約・お問い合わせは TEL.0162-22-1239 ご予約はこちら",
-      "verdict": "verified",
-      "notes": "Trip.com 列表有「Saharin飯店」，Agoda 有 /hotel-saharin/"
-    },
-    {
-      "claimId": "C28",
-      "articleExcerpt": "表格：國民宿舍冰雪莊｜JR稚內站與巴士總站走路約5分鐘，渡輪站走路15分鐘｜—｜只有電話",
-      "sourceUrl": "http://www.minkoku.com/yado/basic.php?yado_id=1",
-      "sourceTitle": "国民宿舎氷雪荘 基本情報｜民営国民宿舎協議会",
-      "sourceQuote": "JR宗谷本線稚内駅・バスターミナルより徒歩５分、車で１分 利尻礼文航路フェリーターミナルより徒歩15分、車で3分",
-      "verdict": "verified",
-      "notes": "只收電話見公告頁：ネットやFAXでの予約を承っておりません"
-    },
-    {
-      "claimId": "C29",
-      "articleExcerpt": "表格：Hotel Miyuki｜JR稚內站走路約4分鐘，渡輪站走路約17分鐘｜冬天也營業，有冬季限定方案｜官網、電話、Trip.com、Agoda",
-      "sourceUrl": "http://www.hotelmiyuki.jp/other/map.html",
-      "sourceTitle": "アクセスマップ｜ホテル美雪",
-      "sourceQuote": "JR稚内駅：約4分／フェリー乗り場：約17分",
-      "verdict": "verified",
-      "notes": "官網 TEL：0162-22-5866、宿泊プランの検索；Trip.com 與 Agoda 2027-01-20 都列出 Hotel Miyuki"
-    },
-    {
-      "claimId": "C30",
-      "articleExcerpt": "表格：Hotel New Chikou｜南稚內｜JR南稚內站走路約5分鐘，渡輪站開車約8分鐘｜冬天也營業｜官網、電話、Trip.com、Agoda",
-      "sourceUrl": "https://www.chikoukankou.jp/",
-      "sourceTitle": "稚内│JR南稚内駅徒歩5分 ホテルニューチコウ│公式",
-      "sourceQuote": "JR南稚内駅より徒歩5分、国道40号線沿い／フェリーターミナルも車で約8分／お電話でのご予約・お問い合わせは0162-22-0007",
-      "verdict": "verified",
-      "notes": "Trip.com「Hotel New Chiko」、Agoda「Hotel New Chikou」"
-    },
-    {
-      "claimId": "C31",
-      "articleExcerpt": "表格：WAKKANAI GRAND HOTEL｜南稚內｜JR南稚內站走路約3分鐘｜12月29日～1月4日休館，其他時間冬天也營業｜官網、Trip.com、Agoda",
-      "sourceUrl": "https://www.wakkanai-g-hotel.jp/",
-      "sourceTitle": "稚内グランドホテル 公式サイト",
-      "sourceQuote": "南稚内駅から徒歩3分／空室状況から予約／© 2026 WAKKANAI GRAND HOTEL",
-      "verdict": "verified",
-      "notes": "Trip.com 與 Agoda 都有 Wakkanai Grand Hotel"
-    },
-    {
-      "claimId": "C32",
-      "articleExcerpt": "表格：casa hotel｜南稚內｜JR南稚內站走路約2分鐘｜—｜Trip.com、Agoda",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1400.html",
-      "sourceTitle": "casa hotel｜稚内観光協会",
-      "sourceQuote": "「南稚内駅」、日本最北端の歓楽街「オレンジ通り」から徒歩２分",
-      "verdict": "verified",
-      "notes": "Trip.com 列表有 Casa Hotel；Agoda 有 Casa Hotel（1-7-44 Daikoku）。觀光協會頁另列電話 0162-73-3094，表格沒寫電話不算錯，供作者參考"
-    },
-    {
-      "claimId": "C33",
-      "articleExcerpt": "表格：Hotel Meguma（Trip.com顯示Meguma飯店）｜聲問，市區與機場之間｜稚內機場開車約5分鐘｜—｜官網、電話、Trip.com、Agoda",
-      "sourceUrl": "https://www.meguma.jp/",
-      "sourceTitle": "ホテルめぐま 公式サイト",
-      "sourceQuote": "稚内空港から車で５分。／稚内の市街地と稚内空港の間に位置します。／Tel.0162-26-2290",
-      "verdict": "verified",
-      "notes": "Trip.com 列表「Meguma飯店 Hotel Meguma」；Agoda 有 /hotel-meguma_2/"
-    },
-    {
-      "claimId": "C34",
-      "articleExcerpt": "表格：小飯店Minori｜野寒布｜JR稚內站開車約10分鐘｜約11月底～4月底休業｜只有電話",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1406.html",
-      "sourceTitle": "小さなホテルみのり｜稚内観光協会",
-      "sourceQuote": "北海道稚内市ノシャップ2丁目2-8／●JR稚内駅から車で約10分／電話番号 0162-24-8828",
-      "verdict": "verified",
-      "notes": "觀光協會現行頁可開；關聯連結欄沒有官網"
-    },
-    {
-      "claimId": "C35",
-      "articleExcerpt": "表格：民宿宗谷岬｜宗谷岬｜宗谷岬一帶（宗谷岬4丁目）｜—｜只有電話",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1237.html",
-      "sourceTitle": "民宿宗谷岬｜稚内観光協会",
-      "sourceQuote": "北海道稚内市宗谷岬4丁目10／電話番号 0162-76-2422",
-      "verdict": "verified",
-      "notes": "另列 FAX（その他連絡先），沒寫可用 FAX 訂房；Trip.com 頁「本飯店目前不接受預訂」"
-    },
-    {
-      "claimId": "C36",
-      "articleExcerpt": "表格：Pension Tom Soya｜宗谷岬走路約3分鐘，「宗谷岬」巴士站走路約2分鐘｜冬季休業，2027年4月下旬恢復營業｜官網、電話",
-      "sourceUrl": "https://primenet2010.biz/tomsoya/",
-      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
-      "sourceQuote": "宗谷岬まで徒歩3分／「宗谷岬」で下車、徒歩2分／お電話でのご予約・お問い合わせは0162-76-2551",
-      "verdict": "verified",
-      "notes": "官網「ご予約」連到 jhpds.net 預約系統"
-    },
-    {
-      "claimId": "C37",
-      "articleExcerpt": "旅館官網的資料在2026年11月1日重新查過，Trip.com與Agoda的上架與評分是2026年10月18日到27日查的",
-      "sourceUrl": "https://www.surfeel-wakkanai.com/",
-      "sourceTitle": "サフィールホテル稚内 公式サイト",
-      "sourceQuote": "稚内駅より徒歩３分",
-      "verdict": "verified",
-      "notes": "研究記錄「重寫前重查（2026-11-01）」與 F182、F183、F423 的查核日期一致；查核者 2026-11-01 重開各官網，內容仍一致"
-    },
-    {
-      "claimId": "C38",
-      "articleExcerpt": "想住站前又想泡溫泉，可以選Dormy Inn稚內，從JR稚內站走路3分鐘就到",
-      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/access",
-      "sourceTitle": "天然温泉 天北の湯 ドーミーイン稚内 アクセス",
-      "sourceQuote": "「稚内駅」から徒歩約3分",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C39",
-      "articleExcerpt": "10樓有男女分開的天然溫泉大浴場，也有露天浴池",
-      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/",
-      "sourceTitle": "【公式】ドーミーイン稚内",
-      "sourceQuote": "最上階10Fに、男女別天然温泉大浴場「天北の湯」。／水風呂も露天風呂もナトリウム塩化物泉の天然温泉です。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C40",
-      "articleExcerpt": "泡在露天浴池裡，男湯看得到北防波堤穹頂，女湯看得到港口",
-      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/",
-      "sourceTitle": "【公式】ドーミーイン稚内",
+      "articleExcerpt": "露天浴池的男湯看得到北防波堤穹頂，女湯看得到港口",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/spa",
+      "sourceTitle": "大浴場｜【公式】天然温泉 天北の湯 ドーミーイン稚内",
       "sourceQuote": "露天風呂では、男湯は防波堤ドーム、女湯からは港をご覧いただけます",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C41",
-      "articleExcerpt": "1樓餐廳的自助式早餐從5:30供應到9:00，有在地的稚內炒麵（チャーメン）與海鮮丼",
+      "claimId": "C24",
+      "articleExcerpt": "早餐是自助，招牌是自己盛的豪快海鮮丼，有鮪魚、鮭魚、鮭魚卵和魩仔魚，還有稚內炒麵（チャーメン）",
       "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/breakfast",
-      "sourceTitle": "天然温泉 天北の湯 ドーミーイン稚内 朝食",
-      "sourceQuote": "1F レストラン HATAGO／5：30～9：00（最終入店8：45）／和洋バイキング",
+      "sourceTitle": "朝食｜【公式】天然温泉 天北の湯 ドーミーイン稚内",
+      "sourceQuote": "朝食は、全国のドーミーインチェーン共通の和洋バイキング…「豪快海鮮丼」と「チャーメン」…マグロ・サーモン・いくら・しらすを盛った海鮮盛！",
       "verdict": "verified",
-      "notes": "チャーメン、海鮮丼見首頁：地元メニュー「チャーメン」…ご当地逸品メニュー「海鮮丼」"
+      "notes": "「自己盛」官網沒有明寫，是從「バイキング」推的；facts-reviews R3（Trip、4travel、Google）有住客說自己盛、鮭魚卵隨意加，可接受。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "每天晚上有免費的宵夜麵，泡完湯還有免費的冰棒",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/service",
+      "sourceTitle": "無料サービス｜【公式】天然温泉 天北の湯 ドーミーイン稚内",
+      "sourceQuote": "毎日21：30〜23：00「夜鳴きそば」を無料サービス!!｜湯上がりアイスサービス 提供時間 15:00～24:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "有些住客覺得房間比想像中大，攤得開行李箱",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/",
+      "sourceTitle": "【公式】ドーミーイン稚内 - 最安値で宿泊予約 | ビジネスホテル",
+      "sourceQuote": "facts-reviews R6：Trip.com 30 則中 9 則正面（1 則負面）、Google 5 則中 1 則，兩個平台合計 10 則",
+      "verdict": "verified",
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用瀏覽器讀），這輪沒有重看評論。達到兩個平台、三則以上。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "開車的話，飯店自己的立體停車場每晚1,000日圓，停車位是先到的人先停，車高超過2.05公尺也停不進去。停不到或不想付停車費，走約2分鐘的地方另有免費停車場",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/access",
+      "sourceTitle": "アクセス｜【公式】天然温泉 天北の湯 ドーミーイン稚内",
+      "sourceQuote": "立体駐車場40台有料先着順 徒歩約2分に近隣無料駐車場も有り…2026年5月1日(金)～車1000円…車長5.30m×車高2.05m×車幅1.85m",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：「停不到」從「先着順」推得出；官網「徒歩約2分に近隣無料駐車場も有り」。成立。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "身上有刺青的人不能泡大浴場",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/spa",
+      "sourceTitle": "大浴場｜【公式】天然温泉 天北の湯 ドーミーイン稚内",
+      "sourceQuote": "※当ホテルでは刺青･タトゥー等をされている方のご入浴はお断りしております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "Dormy 訂房行：Trip.com｜Agoda｜官網",
+      "sourceUrl": "https://tw.trip.com/hotels/wakkanai-hotel-detail-706035/dormy-inn-wakkanai-natural-hot-spring/",
+      "sourceTitle": "北海道稚內多美迎天然溫泉飯店（多美迎・御宿野乃 飯店集團）：2026 稚內住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "頁面標題：北海道稚內多美迎天然溫泉飯店（多美迎・御宿野乃 飯店集團）",
+      "verdict": "verified",
+      "notes": "Trip.com 今天 urllib 重開，標題是這間旅館；Agoda 頁要執行 JavaScript，urllib 只拿到空白，照 booking-links.md 的瀏覽器紀錄（H1 Dormy Inn Wakkanai Natural Hot Spring）。官網今天重開。連結文字沒有「最低價」之類。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "隔天要搭飛機的話，SURFEEL HOTEL WAKKANAI門口就有往稚內機場的巴士，配合班機一天3班",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/airport/Airport_2026_1025-2027_0131_02.pdf",
+      "sourceTitle": "稚内空港連絡バス 時刻表 2026年10月25日～2027年1月31日まで",
+      "sourceQuote": "【稚内空港ターミナル行き】サフィールホテル前 10:22／11:37／15:42（接続航空便 NH4842・NH0572・NH4844）",
+      "verdict": "verified",
+      "notes": "官網 FAQ 仍寫「出発便に合わせて1本のみ」「大人片道600円」，是舊說法；以宗谷巴士時刻表為準。時刻表只到 2027-01-31，2 月以後班數要重查。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "走到JR稚內站也只要約3分鐘，不過目前沒有大浴場",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/facilities",
+      "sourceTitle": "施設案内 | 北海道稚内市 | サフィールホテル稚内 | 公式HP",
+      "sourceQuote": "1Floor 飲食施設…ショップ 自販機コーナー コインランドリー 電子レンジ…（各樓層設施沒有浴場）｜7537：新たな温泉設備導入に向けた掘削工事を実施",
+      "verdict": "verified",
+      "notes": "access 頁「徒歩で約３分」今天重開確認。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "住過的人說，海側的房間看得到港口、渡輪進出和北防波堤穹頂",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/room",
+      "sourceTitle": "客室 | 北海道稚内市 | サフィールホテル稚内 | 公式HP",
+      "sourceQuote": "facts-reviews R12：Trip.com 30 則中 9 則、4travel 10 則中 6 則",
+      "verdict": "verified",
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用瀏覽器讀），這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "想看海的話，可以訂9樓和10樓的海景雙床房，最高的11樓還有看得到海和庫頁島的套房",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/room",
+      "sourceTitle": "客室 | 北海道稚内市 | サフィールホテル稚内 | 公式HP",
+      "sourceQuote": "デラックスツイン ９階以上高層階オーシャンビューツイン…フロア／9～10F｜クラウンスイート 客室最上階、海とサハリンを眺めるクラウンスイート…フロア／11F",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "晚餐可以在館內的日本料理餐廳吃宗谷章魚和松葉蟹的涮涮鍋，也有毛蟹和宗谷黑牛",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/restaurants/an-non",
+      "sourceTitle": "四季彩ダイニング　あんのん | 北海道稚内市 | サフィールホテル稚内 | 公式HP",
+      "sourceQuote": "宗谷御膳 稚内名物の宗谷産水蛸とズワイ蟹のしゃぶしゃぶ｜毛蟹と宗谷黒牛、宗谷産水蛸のしゃぶしゃぶなど 和会席",
+      "verdict": "verified",
+      "notes": "あんのん頁掛著「1/1よりメニューを限定」（年份沒寫）、官方部落格寫 12/31 休（K82）；不影響這句。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "一家人去的話，標準雙床房住得下3人，4個人可以訂和室",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/room",
+      "sourceTitle": "客室 | 北海道稚内市 | サフィールホテル稚内 | 公式HP",
+      "sourceQuote": "スタンダードツイン…宿泊人数／2～3人 ルーム数／109室｜和室…部屋面積／43㎡・46㎡ フロア／2F 宿泊人数／2～4人",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "飯店為了新的溫泉設備正在鑽探，2026年6月開工、預定到2027年3月底，這段期間鑽探塔會擋到部分客房和館內的景觀，施工的時段也可能聽到機械聲",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/7537",
+      "sourceTitle": "温泉設備導入に向けた掘削工事の実施について | サフィールホテル稚内 | 公式HP",
+      "sourceQuote": "掘削用の櫓（やぐら）を設置しており、一部の客室および館内からの景観に影響…時間帯により機械音や作業音が発生する場合…期間：２０２６年６月６日 ～ ２０２７年３月３１日（予定）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "SURFEEL 訂房行：Trip.com｜Agoda｜官網（https://www.surfeel-wakkanai.com/zh-tw）",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/zh-tw",
+      "sourceTitle": "北海道稚内市 | Saphir Hotel 稚內 | 官方网站",
+      "sourceQuote": "繁中官網今天 urllib 回 200（頁面有訂房入口）",
+      "verdict": "verified",
+      "notes": "Trip.com 頁今天重開，標題「稚內斯菲爾飯店」；Agoda 要 JavaScript，照 booking-links.md（稚內斯菲爾飯店 (Surfeel Hotel Wakkanai)，1-2-2 Kaiun）。｜第2輪（2026-11-19）：官網連結改成日文訂房頁：這個網址今天打不開（reservation.jp 擋讀取工具，要瀏覽器才確認得了），也不在資料來源；而且是日文頁，和比較表「官網（繁中）」對不上。改法：訂房行與比較表「連結」欄的官網都改回 https://www.surfeel-wakkanai.com/zh-tw （今天 200，官網繁中版，上面有訂房入口），「怎麼訂」維持「官網（繁中）」；若一定要連訂房頁，就把「怎麼訂」改成「官網、電話、Trip.com、Agoda」，並由有瀏覽器的人確認網址打得開。｜第3輪（2026-11-19）：官網連結改回繁中版 https://www.surfeel-wakkanai.com/zh-tw ，打得開，和「怎麼訂」欄「官網（繁中）」對得上。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "HOTEL TRUNK WAKKANAI的大浴場開到半夜12點，早上5點到9點也開，走到JR稚內站5分鐘",
+      "sourceUrl": "https://hoteltrunk-wakkanai.jp/facility/",
+      "sourceTitle": "施設・サービス案内｜HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
+      "sourceQuote": "入浴時間 15：00～24：00 / 5：00 〜 9：00｜（top）稚内駅から徒歩5分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "不過館內的餐廳只供早餐，晚餐要到外面吃",
+      "sourceUrl": "https://hoteltrunk-wakkanai.jp/facility/",
+      "sourceTitle": "施設・サービス案内｜HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
+      "sourceQuote": "RESTAURANT レストラン 朝食のみご提供しております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "大浴場引的是稚內溫泉童夢的源泉",
+      "sourceUrl": "https://hoteltrunk-wakkanai.jp/facility/",
+      "sourceTitle": "施設・サービス案内｜HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
+      "sourceQuote": "稚内温泉 童夢の源泉を汲み、加水・加温でご用意しております。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "有住客提到，窗外看得到北防波堤穹頂和海",
+      "sourceUrl": "https://hoteltrunk-wakkanai.jp/",
+      "sourceTitle": "HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
+      "sourceQuote": "facts-reviews R62：Trip.com 14 則中正 6 負 1、4travel 10 則中 5、Google 5 則中 4",
+      "verdict": "verified",
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用瀏覽器讀），這輪沒有重看評論。｜第2輪（2026-11-19）：「早上和晚上的景色不一樣」已刪，其餘照 R62。"
     },
     {
       "claimId": "C42",
-      "articleExcerpt": "沒訂早餐的房客，入住時可以加訂",
-      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/faq",
-      "sourceTitle": "天然温泉 天北の湯 ドーミーイン稚内 よくあるご質問",
-      "sourceQuote": "「朝食なし」プランでご予約いただいているお客様は、チェックイン時に朝食のお申し込みをいただくことも可能です。",
+      "articleExcerpt": "想看這片景色就訂海景雙床房，房間面向鄂霍次克海",
+      "sourceUrl": "https://hoteltrunk-wakkanai.jp/room/",
+      "sourceTitle": "客室案内｜HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
+      "sourceQuote": "ツインルームA （オーシャンビュー）｜ツインルームB （オーシャンビュー）｜（top）眼下にはオホーツク海を一望出来る見晴らしの良い客室",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第2輪（2026-11-19）：句子併進住客說法那句，事實不變。"
     },
     {
       "claimId": "C43",
-      "articleExcerpt": "每天21:30到23:00還有免費的宵夜醬油拉麵",
-      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/service",
-      "sourceTitle": "天然温泉 天北の湯 ドーミーイン稚内 サービス",
-      "sourceQuote": "毎日21：30〜23：00「夜鳴きそば」を無料サービス!!／ドーミーイン特製のあっさりした醤油ラーメン",
+      "articleExcerpt": "3個人住的話可以訂和室，雙人床和室的第3個人睡棉被，8疊和室則是全部鋪棉被",
+      "sourceUrl": "https://hoteltrunk-wakkanai.jp/room/",
+      "sourceTitle": "客室案内｜HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
+      "sourceQuote": "和室ダブルベッド （禁煙） 広さ 和室8畳 ／ ベッドサイズ 140×195 cm ※３名利用時は１名布団対応｜和室8畳 （禁煙） 広さ 和室8畳 ／ 布団 100cm幅",
       "verdict": "verified",
-      "notes": ""
+      "notes": "今天沒有重開（要瀏覽器或對方擋讀取工具），用研究紀錄的瀏覽器摘錄判定。官網客房頁今天重開：和室ダブルベッド「３名利用時は１名布団対応」、和室8畳「布団」；沙發床只有預約頁寫。｜第2輪（2026-11-19）：「有沙發床的雙床房」只有 K87 訂房頁寫，官網客房頁的雙床房沒寫沙發床也沒寫可住 3 人；和室部分官網撐得住。改法：「3個人住的話，可以訂和室，雙人床和室第3個人睡棉被，8疊和室則是鋪棉被」，或簡短寫「3個人住的話，可以訂和室」。｜第3輪（2026-11-19）：改寫後只用官網客房頁的事實，拿掉沙發床雙床房，成立。"
     },
     {
       "claimId": "C44",
-      "articleExcerpt": "評分在Trip.com台灣站是9.4分、297則評論，Agoda台灣站是8.7分、3,176則評論",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=6297&checkin=2027-01-20&checkout=2027-01-21&adult=1&crn=1",
-      "sourceTitle": "稚內飯店推薦 - 最新稚內人氣住宿預訂 - Trip.com",
-      "sourceQuote": "Dormy Inn Wakkanai Natural Hot Spring 9.4/10 極佳296 則評論",
+      "articleExcerpt": "開車的話停車免費，不過停車位是先到的人先停，滿了要改停走1分鐘的市營停車場",
+      "sourceUrl": "https://hoteltrunk-wakkanai.jp/facility/",
+      "sourceTitle": "施設・サービス案内｜HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
+      "sourceQuote": "無料駐車場 ※満車時は徒歩1分の市営駐車場へご案内となります。｜（top）駐車場は先着順となります。",
       "verdict": "verified",
-      "notes": "平台確認摘要：2026-11-01 Trip.com 9.4／296 則；Agoda 城市頁 8.7／3,202 則。正文寫明平台與查核期間（10/18～27），差距在查核日期範圍內"
+      "notes": "首頁寫滿了「近隣の無料駐車場をご案内する場合がございます」，施設頁寫「徒歩1分の市営駐車場」；正文沒寫收不收費，成立。"
     },
     {
       "claimId": "C45",
-      "articleExcerpt": "SURFEEL HOTEL WAKKANAI離JR稚內站走路3分鐘，走到渡輪站約15分鐘",
-      "sourceUrl": "https://www.surfeel-wakkanai.com/faq",
-      "sourceTitle": "よくあるご質問｜サフィールホテル稚内",
-      "sourceQuote": "ホテルからJR稚内駅までどのぐらいかかりますか？ 徒歩約3分です。／ホテルからフェリーターミナルまでどのぐらいかかりますか？ 徒歩約15分です。",
+      "articleExcerpt": "HOTEL TRUNK 訂房行：Trip.com｜Agoda｜官網",
+      "sourceUrl": "https://tw.trip.com/hotels/wakkanai-hotel-detail-112421061/hotel-trunk-wakkanai/",
+      "sourceTitle": "Hotel Trunk Wakkanai：2026 稚內住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "頁面標題：Hotel Trunk Wakkanai",
       "verdict": "verified",
-      "notes": ""
+      "notes": "Agoda 照 booking-links.md（Hotel Trunk Wakkanai，1-5-16 Central）。"
     },
     {
       "claimId": "C46",
-      "articleExcerpt": "開車的人可以停在40台的免費停車場，滿了就停對面的市營免費停車場",
-      "sourceUrl": "https://www.surfeel-wakkanai.com/faq",
-      "sourceTitle": "よくあるご質問｜サフィールホテル稚内",
-      "sourceQuote": "屋外に40台収納可能な無料駐車場がございます。満車の場合は、ホテル向かいの市の無料駐車場をご案内いたします。",
+      "articleExcerpt": "一家人出遊或要用輪椅的旅客，可以看美雪飯店：和室最多住得下4到6人，也有浴室配合輪椅設計的無障礙房，有些房間窗外看得到海",
+      "sourceUrl": "http://www.hotelmiyuki.jp/room/japanese.html",
+      "sourceTitle": "和室　ホテル美雪",
+      "sourceQuote": "最大4名～6名様までご利用いただけます。（service.html）稚内の海を一望できます。窓からは海が見えます。バリアフリーで車いすに対応したバスルームです。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "「窗外看得到海」官網是一張客房照片的說明，沒寫每間都看得到；接在無障礙房後面讀起來像那間也看得到海。不算錯，建議改「有些房間窗外看得到海」或「飯店看得到稚內的海」。｜第2輪（2026-11-19）：已改「有些房間」，成立。"
     },
     {
       "claimId": "C47",
-      "articleExcerpt": "飯店門口有往稚內機場的巴士，配合航班一天一班",
-      "sourceUrl": "https://www.surfeel-wakkanai.com/faq",
-      "sourceTitle": "よくあるご質問｜サフィールホテル稚内",
-      "sourceQuote": "ホテル玄関前より稚内空港行きのバスが出ております（大人片道600円）。なお、出発便に合わせて1本のみの運行となっております",
+      "articleExcerpt": "從飯店走到JR稚內站約4分鐘，晚餐要到附近的店吃",
+      "sourceUrl": "http://www.hotelmiyuki.jp/",
+      "sourceTitle": "ホテル美雪",
+      "sourceQuote": "ご夕食は稚内のホテル近隣の名店へ（map.html：JR稚内駅：約4分）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "K77 官方預約只有純住宿方案（研究時瀏覽器讀），和首頁說法一致。"
     },
     {
       "claimId": "C48",
-      "articleExcerpt": "入住前和退房後，都能把行李寄放在1樓櫃台",
-      "sourceUrl": "https://www.surfeel-wakkanai.com/faq",
-      "sourceTitle": "よくあるご質問｜サフィールホテル稚内",
-      "sourceQuote": "チェックイン前・チェックアウト後の荷物の預かりは？ 1階フロントクロークにてお預かりいたします。",
+      "articleExcerpt": "訂房的話，從官網訂隨時都有折扣",
+      "sourceUrl": "http://www.hotelmiyuki.jp/?tripla_booking_widget_open=search&type=plan&order=recommended&locale=ja",
+      "sourceTitle": "ホテル美雪 公式予約（tripla）",
+      "sourceQuote": "公式ホームページでのご予約がお得♪いつでも６％割引！（facts-extra K77）",
+      "verdict": "verified",
+      "notes": "今天沒有重開（要瀏覽器或對方擋讀取工具），用研究紀錄的瀏覽器摘錄判定。tripla 預約視窗要 JavaScript。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "想住看得到海的房間、晚餐又想吃蟹，可以看Hotel Saharin（ホテルサハリン），西式房每一間都看得到海，晚餐的招牌是三大蟹御膳，也有章魚涮涮鍋",
+      "sourceUrl": "http://www.saharin.co.jp/plan.html",
+      "sourceTitle": "宿泊プラン - ホテルサハリン",
+      "sourceQuote": "洋室 全室オーシャンビューのお部屋となっております。｜（top）ホテルサハリン名物３大カニ御膳｜（dish）稚内名物たこしゃぶ",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C49",
-      "articleExcerpt": "評分跟Dormy Inn差不多，Trip.com台灣站9.3分、Agoda台灣站8.7分，評論各有307則與2,383則",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=6297&checkin=2027-01-20&checkout=2027-01-21&adult=1&crn=1",
-      "sourceTitle": "稚內飯店推薦 - 最新稚內人氣住宿預訂 - Trip.com",
-      "sourceQuote": "Surfeel Hotel Wakkanai 9.2/10 滿意347 則評論",
-      "verdict": "verified",
-      "notes": "平台確認摘要：2026-11-01 Trip.com 9.2／347 則；Agoda 8.7／2,406 則。正文標明平台與 10/18～27 查核期間，屬查核日期不同造成的小差距"
-    },
-    {
       "claimId": "C50",
-      "articleExcerpt": "訂房專線9點到18點接電話，只能訂到入住前一天。當天臨時要住，就打旅館的代表電話。不想講日文電話，就在官網或訂房網站訂好",
-      "sourceUrl": "https://www.surfeel-wakkanai.com/",
-      "sourceTitle": "サフィールホテル稚内 公式サイト",
-      "sourceQuote": "宿泊予約 ※ご宿泊前日まで（受付時間9〜18時）／ホテル代表 0162-23-8111 ※当日のご予約についてはホテル代表までお電話ください。",
+      "articleExcerpt": "從飯店走到JR稚內站要7分鐘，不過浴池男女各只有一個，一次只容得下2到3人",
+      "sourceUrl": "http://www.saharin.co.jp/facilities.html",
+      "sourceTitle": "施設案内 - ホテルサハリン",
+      "sourceQuote": "浴場 男女別２〜３名様入れるお風呂となっております。（access：稚内駅下車徒歩７分）",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C51",
-      "articleExcerpt": "THE STAY WAKKANAI離JR稚內站走路1分鐘，是這一區離車站最近的一家",
-      "sourceUrl": "https://thestay.jp/wakkanai/",
-      "sourceTitle": "THE STAY WAKKANAI 公式サイト",
-      "sourceQuote": "JR宗谷本線「稚内駅」から徒歩1分",
-      "verdict": "verified",
-      "notes": "其他站前各家 3～7 分"
-    },
-    {
-      "claimId": "C52",
-      "articleExcerpt": "官網、電話與E-mail都能訂，不過當天訂房只到17:00。入住要在20:00以前，晚到的人不適合，退房則是10:00",
-      "sourceUrl": "https://thestay.jp/wakkanai/",
-      "sourceTitle": "THE STAY WAKKANAI 公式サイト",
-      "sourceQuote": "お電話でのご予約 E-Mailでのご予約 WEBでのご予約／当日の予約は17時までとさせて頂きます。／チェックイン時間は15時~20時／チェックアウト時間は10時です。",
+      "articleExcerpt": "訂房要在官網填表單，等旅館回電話或email才算訂好，如果是最近幾天要住，就直接打電話訂",
+      "sourceUrl": "http://www.saharin.co.jp/reserve.html",
+      "sourceTitle": "ご予約 - ホテルサハリン",
+      "sourceQuote": "ご予約はこちらのフォームから。…直近のご予約はお電話でお願いしております。こちらからの予約受付の電話又はメールの返信を持って完了とさせて頂きます。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C53",
-      "articleExcerpt": "Trip.com台灣站的評論只有72則、評分8.8，Agoda台灣站有1,669則、評分8.6",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=6297&checkin=2027-01-20&checkout=2027-01-21&adult=1&crn=1",
-      "sourceTitle": "稚內飯店推薦 - 最新稚內人氣住宿預訂 - Trip.com",
-      "sourceQuote": "The Stay Wakkanai 8.7/10 很好73 則評論",
+      "claimId": "C52",
+      "articleExcerpt": "美雪飯店與Hotel Saharin 訂房行：美雪（Trip.com）｜美雪（Agoda）｜美雪官網｜Hotel Saharin官網",
+      "sourceUrl": "https://tw.trip.com/hotels/wakkanai-hotel-detail-3065774/hotel-miyuki/",
+      "sourceTitle": "美雪飯店：2026 稚內住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "頁面標題：美雪飯店",
       "verdict": "verified",
-      "notes": "平台確認摘要：2026-11-01 Trip.com 8.7／73 則；Agoda 8.6／1,677 則。差距在查核日期範圍內"
+      "notes": "Agoda 照 booking-links.md（美雪飯店 (Hotel Miyuki)）；美雪官網、Saharin reserve.html 今天重開。Saharin 的 Trip.com 目前不接受預訂，正文沒放，正確。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "這兩間都有男女混住和女性專用的多人房，也都有共用廚房可以自己煮",
+      "sourceUrl": "https://moshiripa.com/rooms/",
+      "sourceTitle": "お部屋と設備 – 《稚内》ゲストハウスモシリパ",
+      "sourceQuote": "男女混合ドミトリー｜女性専用ドミトリー（Moshiripa）｜女性専用 ドミトリールーム…共用キッチン（THE STAY）",
+      "verdict": "verified",
+      "notes": ""
     },
     {
       "claimId": "C54",
-      "articleExcerpt": "Moshiripa在JR稚內站往北走4分鐘的地方，退房時間不限，適合搭清晨船班或火車的背包客",
-      "sourceUrl": "https://moshiripa.com/access/",
-      "sourceTitle": "アクセス｜ゲストハウスモシリパ",
-      "sourceQuote": "稚内駅より北へ徒歩4分",
+      "articleExcerpt": "想吃稚內產的蝦夷鹿肉咖哩當早餐，Guest House Moshiripa從JR稚內站往北走4分鐘就到，不過館內沒有浴池，只有24小時都能用的淋浴",
+      "sourceUrl": "https://moshiripa.com/faq/",
+      "sourceTitle": "よくある質問 – 《稚内》ゲストハウスモシリパ",
+      "sourceQuote": "お風呂はありませんが、シャワーはご用意しております。ユニットシャワーとなっており、24時間利用可能です。（access：稚内駅より北へ徒歩4分）",
       "verdict": "verified",
-      "notes": "退房見 faq：チェックアウトは何時でも可能です"
+      "notes": "第2輪（2026-11-19）：開頭情境照料理頁「稚内産 えぞ鹿カレー」，成立。"
     },
     {
       "claimId": "C55",
-      "articleExcerpt": "Trip.com台灣站有866則評論、評分8.9，Agoda台灣站591則、評分8.4",
-      "sourceUrl": "https://tw.trip.com/hotels/detail/?hotelId=44402928&checkIn=2027-01-20&checkOut=2027-01-21&adult=1&crn=1",
-      "sourceTitle": "莫西里帕賓館(Guest House Moshiripa)｜Trip.com",
-      "sourceQuote": "8.9 很好 全部 902 則評論",
+      "articleExcerpt": "住過的人說館內很乾淨",
+      "sourceUrl": "https://moshiripa.com/",
+      "sourceTitle": "《稚内》ゲストハウスモシリパ",
+      "sourceQuote": "facts-reviews R49：Trip.com 30 則中 11、4travel 10 則中 5、Google 5 則中 2",
       "verdict": "verified",
-      "notes": "平台確認摘要：2026-11-01 Trip.com 8.9／902 則；Agoda 8.4／594 則。評論數比正文多 36 則，屬查核日期不同（正文標 10/18～27）"
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用瀏覽器讀），這輪沒有重看評論。"
     },
     {
       "claimId": "C56",
-      "articleExcerpt": "旅館自己說在官網訂最划算，訂房網站自己有優惠活動時除外，Trip.com與Agoda也訂得到",
-      "sourceUrl": "https://moshiripa.com/faq/",
-      "sourceTitle": "よくあるご質問｜ゲストハウスモシリパ",
-      "sourceQuote": "ここからの予約が最安です！ （予約サイト独自のキャンペーンなど除く）",
+      "articleExcerpt": "咖哩用的是鹿的腱肉，來自稚內獵人經營的肉品加工廠，想吃的話要訂含早餐的方案，或前一天晚上先預約",
+      "sourceUrl": "https://moshiripa.com/food/",
+      "sourceTitle": "お食事 – 《稚内》ゲストハウスモシリパ",
+      "sourceQuote": "モシリパ名物の“えぞ鹿カレー”…長時間煮込んだ蝦夷鹿のすね肉が主役…鹿肉は腕の良いハンターさんが経営する稚内の食肉加工施設…朝食付きプラン でご予約いただくか、お食事をされる前日夜20時までにフロントまでご注文ください。",
       "verdict": "verified",
-      "notes": "但書已補上"
+      "notes": "FAQ 寫前日 19 時、料理頁寫 20 時，正文只寫「前一天晚上」，兩頁都成立。｜第2輪（2026-11-19）：成立。"
     },
     {
       "claimId": "C57",
-      "articleExcerpt": "HOTEL TRUNK WAKKANAI離JR稚內站走路5分鐘，到渡輪站開車3分鐘，官網、Trip.com與Agoda都訂得到",
-      "sourceUrl": "https://hoteltrunk-wakkanai.jp/",
-      "sourceTitle": "HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
-      "sourceQuote": "稚内駅から徒歩5分、フェリーターミナルから車で3分の好立地。／ご予約",
+      "articleExcerpt": "女生還有專用的廁所和淋浴",
+      "sourceUrl": "https://moshiripa.com/faq/",
+      "sourceTitle": "よくある質問 – 《稚内》ゲストハウスモシリパ",
+      "sourceQuote": "女性専用のドミトリー、お手洗い、シャワーもご用意しております。",
       "verdict": "verified",
-      "notes": "Trip.com 列表有 Hotel Trunk Wakkanai，Agoda 有 /hotel-trunk-wakkanai/"
+      "notes": ""
     },
     {
       "claimId": "C58",
-      "articleExcerpt": "Saharin離JR稚內站走路7分鐘，官網或電話都能訂，Trip.com與Agoda也有上架",
-      "sourceUrl": "http://www.saharin.co.jp/access.html",
-      "sourceTitle": "アクセス - ホテルサハリン",
-      "sourceQuote": "ＪＲ宗谷本線稚内駅下車徒歩７分／電話でのご予約・お問い合わせは TEL.0162-22-1239 ご予約はこちら",
+      "articleExcerpt": "多人房要國中生以上才能住，帶小小孩的話可以訂和室，這是館內唯一能帶小小孩住的房間，最多鋪4床",
+      "sourceUrl": "https://moshiripa.com/rooms/",
+      "sourceTitle": "お部屋と設備 – 《稚内》ゲストハウスモシリパ",
+      "sourceQuote": "最高で4つまで布団を敷くことが可能な個室…唯一小さなお子様とご宿泊できるお部屋です。（FAQ：ドミトリーにつきましては、お子様のご宿泊は不可…（中学生以上は可））",
       "verdict": "verified",
-      "notes": "Trip.com「Saharin飯店」、Agoda /hotel-saharin/"
+      "notes": ""
     },
     {
       "claimId": "C59",
-      "articleExcerpt": "冰雪莊離JR稚內站與站前巴士總站都是走路5分鐘。最早5:30就能退房、最晚10:00，清晨還能預約送到渡輪站",
-      "sourceUrl": "http://www.minkoku.com/yado/basic.php?yado_id=1",
-      "sourceTitle": "国民宿舎氷雪荘 基本情報｜民営国民宿舎協議会",
-      "sourceQuote": "JR宗谷本線稚内駅・バスターミナルより徒歩５分／チェックアウト ５：３０～１０：００／早朝（5:30～7:00）のみ送り可（要予約）",
+      "articleExcerpt": "房間都在2樓和3樓，沒有電梯，旅館也不供晚餐",
+      "sourceUrl": "https://moshiripa.com/faq/",
+      "sourceTitle": "よくある質問 – 《稚内》ゲストハウスモシリパ",
+      "sourceQuote": "当施設の寝室はすべて2階か3階にあり、エレベーターがございません。｜夕食は2026年からお休みしております。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C60",
-      "articleExcerpt": "因為旅館人手不夠，不接網路與傳真訂房，只能打電話。電話也可能不好打通",
-      "sourceUrl": "http://www.minkoku.com/yado/top.php?yado_id=1",
-      "sourceTitle": "国民宿舎氷雪荘｜民営国民宿舎協議会",
-      "sourceQuote": "現在、マンパワー不足により、予約情報を確認する時間がないためネットやFAXでの予約を承っておりません。…お電話も繋がりづらい事がありますが",
+      "articleExcerpt": "晚上8點以後才到的話，櫃台已經沒有人，要自助入住，一定得在網路上訂房並先付款",
+      "sourceUrl": "https://moshiripa.com/faq/",
+      "sourceTitle": "よくある質問 – 《稚内》ゲストハウスモシリパ",
+      "sourceQuote": "【深夜チェックイン】20時以降のチェックインは可能ですか？…20時以降はスタッフが不在のため、セルフチェックイン対応となります。【予約】1．オンライン予約＆オンライン決済が必須です。セルフチェックインでは、現地決済ができません。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "seam-notes 第 15 條：「必須」寫在「深夜チェックイン」那一題底下，只對 20 點以後入住的人，正文寫法正確。"
     },
     {
       "claimId": "C61",
-      "articleExcerpt": "住宿費只收現金",
-      "sourceUrl": "http://www.minkoku.com/yado/basic.php?yado_id=1",
-      "sourceTitle": "国民宿舎氷雪荘 基本情報｜民営国民宿舎協議会",
-      "sourceQuote": "お支払いは、現金のみとなります。",
+      "articleExcerpt": "Moshiripa 訂房行：Trip.com｜Agoda｜官網",
+      "sourceUrl": "https://tw.trip.com/hotels/wakkanai-hotel-detail-44402928/guest-house-moshiripa/",
+      "sourceTitle": "莫西里帕賓館：2026 稚內住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "頁面標題：莫西里帕賓館",
       "verdict": "verified",
-      "notes": "冰雪莊"
+      "notes": "Agoda 照 booking-links.md（莫西里帕賓館，2-9-5 Chuo）。"
     },
     {
       "claimId": "C62",
-      "articleExcerpt": "Miyuki離JR稚內站走路4分鐘，到巴士總站3分鐘",
-      "sourceUrl": "http://www.hotelmiyuki.jp/other/map.html",
-      "sourceTitle": "アクセスマップ｜ホテル美雪",
-      "sourceQuote": "JR稚内駅：約4分 バスターミナル：約3分",
+      "articleExcerpt": "THE STAY WAKKANAI走到JR稚內站只要1分鐘，除了多人房，也有雙床房、三人房和四人房這些私人房間",
+      "sourceUrl": "https://thestay.jp/wakkanai/",
+      "sourceTitle": "[公式] THE STAY WAKKANAI | JR稚内駅から徒歩2分！！",
+      "sourceQuote": "JR宗谷本線「稚内駅」から徒歩1分｜ツインルーム シングル2台 個 室｜トリプルルーム ダブルベッド＋ソファベッド 個 室｜4人部屋個室 2段ベッド1台＋シングル2台",
       "verdict": "verified",
-      "notes": ""
+      "notes": "網頁標題寫「徒歩2分」，交通欄寫 1 分，照交通欄。"
     },
     {
       "claimId": "C63",
-      "articleExcerpt": "冬天也有「冬期間限定」的住宿方案",
-      "sourceUrl": "http://www.hotelmiyuki.jp/",
-      "sourceTitle": "ホテル美雪 公式サイト",
-      "sourceQuote": "冬期間限定スペシャル除雪プラン",
+      "articleExcerpt": "一家人或一群朋友可以訂家庭房，是鋪棉被的和室，最多住得下9人，房裡有自己的淋浴、廁所和廚房",
+      "sourceUrl": "https://thestay.jp/wakkanai/",
+      "sourceTitle": "[公式] THE STAY WAKKANAI | JR稚内駅から徒歩2分！！",
+      "sourceQuote": "ファミリールーム 和室ふとん 個 室 （専用シャワー＆トイレ＋キッチン） ～9 PERSON｜お布団6組、シングルベッド2台、ソファベッド1台で9名まで宿泊可能",
       "verdict": "verified",
-      "notes": ""
+      "notes": "9 人是棉被 6 組＋單人床 2＋沙發床 1，不全是棉被；「鋪棉被的和室」照官網房型名稱，可以接受。"
     },
     {
       "claimId": "C64",
-      "articleExcerpt": "訂房用官網的方案搜尋或打電話，Trip.com與Agoda也訂得到",
-      "sourceUrl": "http://www.hotelmiyuki.jp/",
-      "sourceTitle": "ホテル美雪 公式サイト",
-      "sourceQuote": "宿泊プランの検索／TEL：0162-22-5866",
+      "articleExcerpt": "不過入住要在晚上8點以前辦好，當天才訂的話只受理到下午5點",
+      "sourceUrl": "https://thestay.jp/wakkanai/",
+      "sourceTitle": "[公式] THE STAY WAKKANAI | JR稚内駅から徒歩2分！！",
+      "sourceQuote": "当施設のチェックイン時間は15時~20時までとなっております。…20時までのチェックイン時間をお守り下さい。当日の予約は17時まで",
       "verdict": "verified",
-      "notes": "Trip.com 與 Agoda 2027-01-20 列表都有 Hotel Miyuki 可訂房型"
+      "notes": ""
     },
     {
       "claimId": "C65",
-      "articleExcerpt": "JR南稚內站一帶的旅館靠近稚內的鬧區Orange通（オレンジ通り），晚上想在外面吃飯喝酒的人住這區方便",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1400.html",
-      "sourceTitle": "casa hotel｜稚内観光協会",
-      "sourceQuote": "「南稚内駅」、日本最北端の歓楽街「オレンジ通り」から徒歩２分",
+      "articleExcerpt": "開車去的話，停車要700日圓",
+      "sourceUrl": "https://thestay.jp/wakkanai/",
+      "sourceTitle": "[公式] THE STAY WAKKANAI | JR稚内駅から徒歩2分！！",
+      "sourceQuote": "［駐車場料金］700円",
       "verdict": "verified",
-      "notes": "ニューチコウ官網：稚内の繁華街、オレンジ商店街に至近の立地でお食事場所にも困りません"
+      "notes": "官網只寫「駐車場料金 700円」，沒寫是每晚、每天或每次；Trip.com 頁面甚至寫公共停車免費（不採用）。「每晚」推過頭。保守改法：「開車去的話，停車要700日圓」；比較表同步改「700日圓」。｜第2輪（2026-11-19）：拿掉「每晚」，照官網「駐車場料金 700円」。"
     },
     {
       "claimId": "C66",
-      "articleExcerpt": "New Chikou在國道40號旁，離JR南稚內站走路5分鐘，便利商店也在5分鐘路程內",
-      "sourceUrl": "https://www.chikoukankou.jp/",
-      "sourceTitle": "稚内│JR南稚内駅徒歩5分 ホテルニューチコウ│公式",
-      "sourceQuote": "JR南稚内駅より徒歩5分、国道40号線沿い／徒歩5分の場所にはコンビニもございます。",
+      "articleExcerpt": "THE STAY 訂房行：Trip.com｜Agoda｜官網",
+      "sourceUrl": "https://tw.trip.com/hotels/wakkanai-hotel-detail-56613441/the-stay-wakkanai/",
+      "sourceTitle": "稚內斯泰飯店：2026 稚內住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "頁面標題：稚內斯泰飯店",
       "verdict": "verified",
-      "notes": ""
+      "notes": "Agoda 照 booking-links.md（稚內住宿飯店 (THE STAY WAKKANAI)）。"
     },
     {
       "claimId": "C67",
-      "articleExcerpt": "官網和電話都能訂，Trip.com與Agoda也有上架",
-      "sourceUrl": "https://www.chikoukankou.jp/",
-      "sourceTitle": "稚内│JR南稚内駅徒歩5分 ホテルニューチコウ│公式",
-      "sourceQuote": "インターネット予約プランをご利用いただくか、直接お問い合わせください／お電話でのご予約・お問い合わせは0162-22-0007",
-      "verdict": "verified",
-      "notes": "New Chikou；Trip.com「Hotel New Chiko」、Agoda「Hotel New Chikou」"
-    },
-    {
-      "claimId": "C68",
-      "articleExcerpt": "WAKKANAI GRAND HOTEL（稚内グランドホテル）離JR南稚內站走路3分鐘",
+      "articleExcerpt": "這一區的飯店都在JR南稚內站走3到6分鐘的範圍",
       "sourceUrl": "https://www.wakkanai-g-hotel.jp/",
-      "sourceTitle": "稚内グランドホテル 公式サイト",
-      "sourceQuote": "南稚内駅から徒歩3分",
+      "sourceTitle": "稚内グランドホテル 天然温泉ふれあいの湯/稚内　ホテル【公式サイト】",
+      "sourceQuote": "南稚内駅から徒歩3分（Grand）｜「JR南稚内駅」から徒歩約３分（大将）｜南稚内駅から徒歩３分（御園）｜JR南稚内駅下車、徒歩5分（New Chikou）｜徒歩で約6分（奥田屋）",
       "verdict": "verified",
       "notes": ""
     },
     {
+      "claimId": "C68",
+      "articleExcerpt": "開車旅行、想泡溫泉的人適合住南稚內，這一區的飯店都在JR南稚內站走3到6分鐘的範圍，不過要搭早班船的話，去渡輪站就得開車或叫計程車",
+      "sourceUrl": "https://www.chikoukankou.jp/",
+      "sourceTitle": "稚内│JR南稚内駅徒歩5分　ホテルニューチコウ│公式",
+      "sourceQuote": "フェリーターミナルも車で約8分",
+      "verdict": "verified",
+      "notes": "推論：南稚內各館到渡輪站都是開車或計程車 8～10 分，官網沒有走路時間；JR 稚內站到渡輪站要走 15 分，南稚內更遠，推得成立。｜第2輪（2026-11-19）：推論檢查：南稚內五間有四間有溫泉或大浴場（Grand、大将、御園、奥田屋），免費停車場較大（Grand 70、奥田屋 60、New Chikou 約40、大将 DMO 70台以上），「適合」推得成立。"
+    },
+    {
       "claimId": "C69",
-      "articleExcerpt": "12月29日到1月4日的年底到元旦期間整間旅館休息，跨年的行程排不進這一家",
-      "sourceUrl": "https://www.wakkanai-g-hotel.jp/",
-      "sourceTitle": "稚内グランドホテル 公式サイト",
-      "sourceQuote": "重要=年末年始休業のお知らせ １２月２９日～１月４日の間、全館休業となります。",
+      "articleExcerpt": "WAKKANAI GRAND HOTEL（稚内グランドホテル）的溫泉從地下1,200公尺湧出，和室最多住得下8人",
+      "sourceUrl": "https://www.wakkanai-g-hotel.jp/onsen/",
+      "sourceTitle": "稚内グランドホテル【公式サイト】天然温泉ふれあいの湯",
+      "sourceQuote": "当ホテルの温泉は、地下1,200Mより湧き出た化石海水型温泉｜（room）本館和室…ご利用人数 1～8名",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C70",
-      "articleExcerpt": "casa hotel離JR南稚內站與Orange通都是走路2分鐘。房客能帶食物進來，也有廚房可以自己煮。入住從16:00開始",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1400.html",
-      "sourceTitle": "casa hotel｜稚内観光協会",
-      "sourceQuote": "「南稚内駅」、日本最北端の歓楽街「オレンジ通り」から徒歩２分／飲食物持ち込み自由で、キッチンにて調理も可能です。／チェックイン 16:00",
+      "articleExcerpt": "不過12月29日到1月4日全館休業",
+      "sourceUrl": "https://www.wakkanai-g-hotel.jp/",
+      "sourceTitle": "稚内グランドホテル 天然温泉ふれあいの湯/稚内　ホテル【公式サイト】",
+      "sourceQuote": "１２月２９日～１月４日の間、全館休業となります。ホテル・レストラン泉・宴会・ベットはいらない 全て休業",
       "verdict": "verified",
-      "notes": "觀光協會現行頁"
+      "notes": ""
     },
     {
       "claimId": "C71",
-      "articleExcerpt": "官方只有Instagram帳號，訂房就用Trip.com或Agoda",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1400.html",
-      "sourceTitle": "casa hotel｜稚内観光協会",
-      "sourceQuote": "関連リンク 【Instagram】 casa hotel official",
+      "articleExcerpt": "帶小孩的話，官網說寬敞和室的間數是稚內市內最多，帶嬰兒去大浴場的話，那裡備有嬰兒床和兒童椅，餐廳也有兒童椅和兒童餐具",
+      "sourceUrl": "https://www.wakkanai-g-hotel.jp/familystay/",
+      "sourceTitle": "稚内グランドホテル【公式サイト】お子様連れ大歓迎！！",
+      "sourceQuote": "広々とした和室をご用意 稚内市内では一番部屋数があります。…大浴場にはお子様イスやベビーベッドを用意、また食事会場にも子供イスや子供食器も用意。",
       "verdict": "verified",
-      "notes": "Agoda「Casa Hotel」頁、Trip.com 列表「Casa Hotel」都在；觀光協會頁另有電話號碼"
+      "notes": "第2輪（2026-11-19）：官網原文就是「大浴場にはお子様イスやベビーベッドを用意」，成立。"
     },
     {
       "claimId": "C72",
-      "articleExcerpt": "Hotel Meguma（ホテルめぐま）在市區與稚內機場之間的聲問，離機場開車約5分鐘",
-      "sourceUrl": "https://www.meguma.jp/",
-      "sourceTitle": "ホテルめぐま 公式サイト",
-      "sourceQuote": "漁師町「声問（こえとい）」に佇む温泉宿です。…稚内の市街地と稚内空港の間に位置します。／稚内空港から車で５分。",
+      "articleExcerpt": "早餐是以和食為主的手作自助，還喝得到在地的稚內牛乳",
+      "sourceUrl": "https://www.wakkanai-g-hotel.jp/breakfast/",
+      "sourceTitle": "稚内グランドホテル【公式サイト】手造りの健康的な朝食が自慢",
+      "sourceQuote": "和食を中心に手作りにこだわった健康に良い朝食バイキングです。…稚内牛乳が朝食で飲めるのは当ホテルだけです！！",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C73",
-      "articleExcerpt": "旅館沒有接送，要搭巴士或計程車過來。搭機場巴士的話，坐往渡輪站方向的車，在「声問1丁目」下車",
-      "sourceUrl": "https://www.meguma.jp/",
-      "sourceTitle": "ホテルめぐま 公式サイト",
-      "sourceQuote": "送迎サービスは行っておりません。公共交通機関（バス）またはタクシーをご利用く…／空港連絡バス：稚内フェリーターミナル行き「声問1丁目」下車",
+      "articleExcerpt": "晚餐在館內的家庭餐廳點菜，整年都有稚內炒麵，5到8月的菜單還有章魚涮涮鍋定食",
+      "sourceUrl": "https://www.wakkanai-g-hotel.jp/meals/",
+      "sourceTitle": "稚内グランドホテル【公式サイト】南稚内駅から徒歩3分（レストラン）",
+      "sourceQuote": "メニュー（５月～8月末）（デイナータイム）…稚内名物グルメ！たこしゃぶ定食…稚内人ソールフード！チャーメン｜メニュー（9月～4月末）（デイナータイム）…中華 チャーメン 1220円（這份菜單沒有たこしゃぶ）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "今天重開餐廳頁：章魚涮涮鍋定食只在「5月～8月末」的晚餐菜單，「9月～4月末」的菜單沒有；稚內炒麵兩季都有。正文沒寫季節。改法：「晚餐在館內的家庭餐廳點菜，整年都有稚內炒麵，5到8月的菜單還有章魚涮涮鍋定食」，或拿掉章魚涮涮鍋。｜第2輪（2026-11-19）：照兩季菜單改寫：5月～8月末有たこしゃぶ定食，9月～4月末沒有；チャーメン兩季都有。成立。"
     },
     {
       "claimId": "C74",
-      "articleExcerpt": "晚餐要先跟旅館預約，因為走路可到的地方沒有餐廳，館內咖啡廳晚上也沒開。最近的便利商店走路約11分鐘",
-      "sourceUrl": "https://www.meguma.jp/",
-      "sourceTitle": "ホテルめぐま 公式サイト",
-      "sourceQuote": "夕食は完全予約制です／館内カフェは11:30〜15:00の不定期営業で、夜間の営業はございません。／徒歩圏内に飲食店はございません／コンビニは徒歩約11分の場所に「ローソン」がございます。",
+      "articleExcerpt": "館內的麵包店用稚內牛乳和宗谷的鹽做吐司，也有利尻富士紅豆麵包",
+      "sourceUrl": "https://www.wakkanai-g-hotel.jp/bed/",
+      "sourceTitle": "稚内グランドホテル【公式ブログ】ベーカリーショップ「ベッドはいらない」",
+      "sourceQuote": "「稚内牛乳」と「宗谷の塩」を使った高級食パンが人気です…利尻富士あんぱん",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C75",
-      "articleExcerpt": "小飯店Minori（小さなホテルみのり）約11月底到4月底休業，冬天排不進這一家",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1406.html",
-      "sourceTitle": "小さなホテルみのり｜稚内観光協会",
-      "sourceQuote": "休業日 11月末頃～4月末頃",
+      "articleExcerpt": "有住客反應外觀和入口比較舊，不過裡面很乾淨",
+      "sourceUrl": "https://www.wakkanai-g-hotel.jp/",
+      "sourceTitle": "稚内グランドホテル 天然温泉ふれあいの湯/稚内　ホテル【公式サイト】",
+      "sourceQuote": "facts-reviews R34：Trip.com 44 則中 4、4travel 10 則中 2",
       "verdict": "verified",
-      "notes": "「頃」寫成「約」，一致"
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用瀏覽器讀），這輪沒有重看評論。"
     },
     {
       "claimId": "C76",
-      "articleExcerpt": "它在野寒布岬旁的野寒布（ノシャップ）2丁目，離JR稚內站開車約10分鐘",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1406.html",
-      "sourceTitle": "小さなホテルみのり｜稚内観光協会",
-      "sourceQuote": "「ノシャップ岬」のすぐそばに位置する／北海道稚内市ノシャップ2丁目2-8／●JR稚内駅から車で約10分",
+      "articleExcerpt": "Grand 訂房行：Trip.com｜Agoda｜官網",
+      "sourceUrl": "https://tw.trip.com/hotels/wakkanai-hotel-detail-1649450/wakkanai-grand-hotel/",
+      "sourceTitle": "稚內大飯店：2026 稚內住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "頁面標題：稚內大飯店",
       "verdict": "verified",
-      "notes": ""
+      "notes": "Agoda 照 booking-links.md（稚內大飯店 (Wakkanai Grand Hotel)，2-13-11 Daikoku）。Trip.com 地址門牌寫 2-13-1，少一位，是平台的錯，不影響連結。"
     },
     {
       "claimId": "C77",
-      "articleExcerpt": "附近有寒流水族館、青少年科學館與食堂，環境比市區安靜",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1406.html",
-      "sourceTitle": "小さなホテルみのり｜稚内観光協会",
-      "sourceQuote": "ノシャップ寒流水族館・稚内市青少年科学館や食堂、お土産店等の周辺施設へのアクセスも抜群。市街地から少し離れた静かな立地",
+      "articleExcerpt": "大將飯店（ホテル大将）：JR南稚內站走約3分鐘，有男女分開、只給住客用的大浴場；晚餐要事先預約",
+      "sourceUrl": "https://www.wakkanai-taisyou.jp/daiyokujou/",
+      "sourceTitle": "ホテル大将 〔稚内・南駅前ホテル〕　ホームページ（大浴場）",
+      "sourceQuote": "入浴時間 17:00～23:00…※当ホテルご利用のお客様のみご利用可能です。｜（access）「JR南稚内駅」から徒歩約３分｜（dinning）夕食 18:00～20:00 ※完全予約制｜（DMO detail_1221）大浴場（男女別）も完備",
       "verdict": "verified",
-      "notes": ""
+      "notes": "「男女分開」官網沒寫，觀光協會頁寫「大浴場（男女別）」。｜第2輪（2026-11-19）：時間移到比較表，句子仍成立。"
     },
     {
       "claimId": "C78",
-      "articleExcerpt": "旅館不附餐，住宿費只收現金。沒有官網，訂房只接受電話",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1406.html",
-      "sourceTitle": "小さなホテルみのり｜稚内観光協会",
-      "sourceQuote": "素泊まりスタイルのお宿です。／現金のみ／電話番号 0162-24-8828",
+      "articleExcerpt": "御園飯店（ホテル御園）：JR南稚內站走3分鐘，溫泉引的是稚內溫泉童夢的源泉",
+      "sourceUrl": "https://www.h-misono.com/spa/",
+      "sourceTitle": "【公式サイト】最北の街　稚内市・ホテル御園（温泉）",
+      "sourceQuote": "『稚内温泉やすらぎの湯』は稚内温泉 童夢の源泉を汲み、加水・加温…＜冬期は男女入替制となります。＞｜（title）南稚内駅から徒歩３分",
       "verdict": "verified",
-      "notes": "關聯連結欄沒有官網"
+      "notes": "第2輪（2026-11-19）：「冬天男女輪流」正文已刪，比較表保留，仍成立。"
     },
     {
       "claimId": "C79",
-      "articleExcerpt": "想在宗谷岬過夜，可以住民宿宗谷岬或Pension Tom Soya（ペンション斗夢ソーヤ）。民宿宗谷岬在宗谷岬4丁目，晚餐在房間吃",
-      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1237.html",
-      "sourceTitle": "民宿宗谷岬｜稚内観光協会",
-      "sourceQuote": "北海道稚内市宗谷岬4丁目10／夕食は部屋食でごゆっくり召し上がれます。",
+      "articleExcerpt": "館內和房間都可以光腳走",
+      "sourceUrl": "https://www.h-misono.com/room/",
+      "sourceTitle": "【公式サイト】最北の街　稚内市・ホテル御園（客室紹介）",
+      "sourceQuote": "館内・客室は素足でお過ごし頂けますので…足袋ソックス・浴衣をおくつろぎ着としてご利用ください。",
+      "verdict": "verified",
+      "notes": "官網是「可以光腳」，正文「都是打赤腳」語氣像強制。不算錯，建議改「館內和房間都可以光腳走」。｜第2輪（2026-11-19）：已改，和官網「素足でお過ごし頂けます」一致。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "奧田屋飯店（ホテル奥田屋）：JR南稚內站走約6分鐘，稚內溫泉的大浴場早上也開，還有三溫暖，免費停車場有60台",
+      "sourceUrl": "http://www.hotel-okudaya.jp/onsen.html",
+      "sourceTitle": "稚内温泉 | ホテル奥田屋 公式ホームページ 北海道 稚内 稚内温泉",
+      "sourceQuote": "通常営業時間 ＡＭ ６：００～ＡＭ ９：００ ＰＭ１６：００～ＰＭ２４：００…サウナ ＰＭ１６：００～ＰＭ２４：００｜（access）徒歩で約6分｜60台収容の無料駐車場",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C80",
-      "articleExcerpt": "這家沒有官網，Trip.com上也訂不到，訂房要打電話",
-      "sourceUrl": "https://tw.trip.com/hotels/wakkanai-hotel-detail-28772399/minshuku-soyamisaki/",
-      "sourceTitle": "Minshuku Soyamisaki｜Trip.com",
-      "sourceQuote": "本飯店目前不接受預訂",
-      "verdict": "verified",
-      "notes": "觀光協會頁關聯連結欄沒有官網，只列電話 0162-76-2422"
-    },
-    {
       "claimId": "C81",
-      "articleExcerpt": "Tom Soya冬天休業，2027年4月下旬才恢復營業，休業期間也不回覆聯絡。它在宗谷岬3丁目，離岬角走路3分鐘",
-      "sourceUrl": "https://primenet2010.biz/tomsoya/",
-      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
-      "sourceQuote": "現在、当館は2027年4月下旬まで冬季休業をいただいております。／休業中にいただいたご連絡・お問い合わせへのご対応はできかねます。／北海道稚内市宗谷岬3番11号／宗谷岬まで徒歩3分",
+      "articleExcerpt": "Hotel New Chikou（ホテルニューチコウ）：JR南稚內站走5分鐘，Orange通就在旁邊，免費停車約40台",
+      "sourceUrl": "https://www.chikoukankou.jp/",
+      "sourceTitle": "稚内│JR南稚内駅徒歩5分　ホテルニューチコウ│公式",
+      "sourceQuote": "JR南稚内駅下車、徒歩5分｜オレンジ商店街に至近｜駐車場 約40台まで駐車可能。無料。予約は不要",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C82",
-      "articleExcerpt": "從稚內站前巴士總站搭路線巴士約50分鐘到「宗谷岬」站，下車再走2分鐘",
-      "sourceUrl": "https://primenet2010.biz/tomsoya/",
-      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
-      "sourceQuote": "稚内駅前ターミナルから路線バスで約50分、 「宗谷岬」で下車、徒歩2分",
+      "articleExcerpt": "不過全部是吸菸房，沒有禁菸房，在Trip.com上叫新赤口飯店",
+      "sourceUrl": "https://www.chikoukankou.jp/",
+      "sourceTitle": "稚内│JR南稚内駅徒歩5分　ホテルニューチコウ│公式",
+      "sourceQuote": "シングル 1名 喫煙室のみ…フォースデラックス 2-4名 喫煙室のみ 5室 合計 65室 ※禁煙室はございません。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "Trip.com 頁今天重開，標題「新赤口飯店」。"
     },
     {
       "claimId": "C83",
-      "articleExcerpt": "自己開車，從稚內市區約35分鐘、從機場約20分鐘",
-      "sourceUrl": "https://primenet2010.biz/tomsoya/",
-      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
-      "sourceQuote": "稚内空港から国道238号線経由で約20分、稚内市内から約35分",
+      "articleExcerpt": "南稚內四間訂房行：大將（Agoda）｜御園（Trip.com）｜御園（Agoda）｜奧田屋（Trip.com）｜New Chikou（Trip.com）｜New Chikou（Agoda）",
+      "sourceUrl": "https://tw.trip.com/hotels/wakkanai-hotel-detail-4396627/hotel-misono/",
+      "sourceTitle": "御園飯店：2026 稚內住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "頁面標題：御園飯店／奧田屋飯店／新赤口飯店（三個 Trip.com 頁今天重開）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "Agoda 三頁（大將、御園、New Chikou）照 booking-links.md 的瀏覽器紀錄；大將的 Trip.com 目前不接受預訂、奧田屋的 Agoda 網址沒取得，正文都沒放，正確。"
     },
     {
       "claimId": "C84",
-      "articleExcerpt": "晚餐可以選圍著地爐烤的地爐燒（囲炉裏焼）方案，18:30開始，訂這個方案要在18:00以前辦好入住",
-      "sourceUrl": "https://primenet2010.biz/tomsoya/",
-      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
-      "sourceQuote": "＜囲炉裏コース＞ ・夕食開始時間：18:30／囲炉裏コースの夕食は18:30一斉スタートとなります。準備の都合上、18:00までにチェックインをお済ませいただきますようお願いいたします。",
+      "articleExcerpt": "隔天要搭飛機的話，住聲問比住市區更靠近機場，這是稚內市區往機場路上的一個漁村",
+      "sourceUrl": "https://www.meguma.jp/",
+      "sourceTitle": "ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "漁師町「声問（こえとい）」に佇む温泉宿です。宗谷岬とノシャップ岬の中ほど、稚内の市街地と稚内空港の間に位置します。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "「比住市區更靠近機場」從「市街地と空港の間」與機場開車 5 分（市區機場巴士約 30～35 分）推得成立。｜第2輪（2026-11-19）：「市區往機場路上」對應官網「稚内の市街地と稚内空港の間」，成立。"
     },
     {
       "claimId": "C85",
-      "articleExcerpt": "早餐另外加點。付款只收現金，門禁是23:00",
-      "sourceUrl": "https://primenet2010.biz/tomsoya/",
-      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
-      "sourceQuote": "ご朝食は別途1名/1,500円（税込）となります。／現金でのご精算をお願いしております。／当館の門限は23:00となっております。",
+      "articleExcerpt": "Hotel Meguma有兩種泉質的溫泉和雪屋造型的圓形浴池",
+      "sourceUrl": "https://www.meguma.jp/hotspring/",
+      "sourceTitle": "温泉｜ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "温泉はナトリウム・塩化物強塩泉とナトリウム塩化物炭酸水素泉の2種類の泉質｜かまくら風呂 石造りの浴槽の一部にかぶせた直径3mほどのかまくら",
       "verdict": "verified",
-      "notes": ""
+      "notes": "「圓形」是從「直径3m」推的，可接受。"
     },
     {
       "claimId": "C86",
-      "articleExcerpt": "官網的預約系統或電話都能訂，Trip.com與Agoda沒有上架",
-      "sourceUrl": "https://primenet2010.biz/tomsoya/",
-      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
-      "sourceQuote": "お電話でのご予約・お問い合わせは0162-76-2551／ご予約（jhpds.net yadNo=316162）",
+      "articleExcerpt": "不過飯店沒有接送，走路範圍內也沒有餐廳",
+      "sourceUrl": "https://www.meguma.jp/",
+      "sourceTitle": "ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "送迎サービスはありますか？ 誠に恐れ入りますが、送迎サー[ビスは行っておりません]｜周辺に飲食店やコンビニはありますか？ 徒歩圏内に飲食店はございま[せん]",
       "verdict": "verified",
-      "notes": "2026-11-01 Agoda 名稱搜尋「Tom Soya」「斗夢」無此住宿；Trip.com 列表（22 處，可見部分）未見"
+      "notes": ""
     },
     {
       "claimId": "C87",
-      "articleExcerpt": "冰雪莊、Minori與民宿宗谷岬只接受電話訂房",
-      "sourceUrl": "http://www.minkoku.com/yado/top.php?yado_id=1",
-      "sourceTitle": "国民宿舎氷雪荘｜民営国民宿舎協議会",
-      "sourceQuote": "ネットやFAXでの予約を承っておりません。…ご予約は、お手数でも、お電話にてお願い致します。",
+      "articleExcerpt": "三溫暖的爐子是芬蘭製的，能享受澆水冒出的蒸氣",
+      "sourceUrl": "https://www.meguma.jp/sauna/",
+      "sourceTitle": "サウナ｜ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "フィンランド製サウナストーブを採用したロウリュを楽しめる本格サウナ｜ロウリュの蒸気がやわらかく広がり",
       "verdict": "verified",
-      "notes": "Minori、民宿宗谷岬見觀光協會頁（只列電話，沒有官網）"
+      "notes": "官網只寫「可以享受ロウリュ」，沒寫是房客自己澆（セルフロウリュ）還是定時或工作人員澆；facts.md K39 的「可以澆水」也沒寫「自己」。保守改法：「三溫暖用芬蘭製的爐子，可以享受往石頭澆水的蒸氣（ロウリュ）」，或拿掉「自己」寫「可以澆水起蒸氣」。｜第2輪（2026-11-19）：拿掉「自己」，和官網「ロウリュを楽しめる」一致。"
     },
     {
       "claimId": "C88",
-      "articleExcerpt": "冰雪莊與民宿宗谷岬雖然在Trip.com有頁面，但都顯示目前不接受預訂",
-      "sourceUrl": "https://tw.trip.com/hotels/wakkanai-hotel-detail-9837171/hyosetsuso/",
-      "sourceTitle": "水雪飯店(Hyosetsuso)｜Trip.com",
-      "sourceQuote": "本飯店目前不接受預訂",
+      "articleExcerpt": "晚餐要事先預約，有圍著地爐炭烤海鮮和章魚涮涮鍋兩種套餐",
+      "sourceUrl": "https://www.meguma.jp/",
+      "sourceTitle": "ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "夕食は完全予約制です（和食会席コースまたは囲炉裏コース）｜（cuisine）囲炉裏炭焼き特別会席…タコしゃぶ会席",
       "verdict": "verified",
-      "notes": "民宿宗谷岬頁（28772399）同樣顯示「本飯店目前不接受預訂」"
+      "notes": ""
     },
     {
       "claimId": "C89",
-      "articleExcerpt": "Tom Soya在營業期間用官網的預約系統或電話訂。其他幾家在官網、Trip.com或Agoda都訂得到",
-      "sourceUrl": "https://primenet2010.biz/tomsoya/",
-      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
-      "sourceQuote": "ご予約（jhpds.net）／お電話でのご予約・お問い合わせは0162-76-2551",
+      "articleExcerpt": "食材有宗谷章魚、扇貝，依季節還有帝王蟹、毛蟹和松葉蟹",
+      "sourceUrl": "https://www.meguma.jp/cuisine/",
+      "sourceTitle": "お料理｜ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "宗谷タコ…帆立…蟹 季節によりタラバガニ、毛蟹、ズワイガニなど…宗谷黒牛",
       "verdict": "verified",
-      "notes": "其他各家見表格各筆"
+      "notes": "第2輪（2026-11-19）：宗谷黑牛已拿掉，「季節により」只修飾蟹，和官網一致。"
     },
     {
       "claimId": "C90",
-      "articleExcerpt": "表格「營業期間」欄：Dormy Inn、SURFEEL、THE STAY、Moshiripa、TRUNK、Miyuki、New Chikou冬天也營業；GRAND 12月29日～1月4日休館，其他時間冬天也營業",
-      "sourceUrl": "https://www.agoda.com/search?city=105658&checkIn=2027-01-20&los=1&rooms=1&adults=1&children=0",
-      "sourceTitle": "Agoda 稚內搜尋結果 2027-01-20 入住一晚",
-      "sourceQuote": "2027-01-20 搜尋結果：Dormy Inn Wakkanai Natural Hot Spring、Hotel Miyuki、Surfeel Hotel Wakkanai、Hotel Trunk Wakkanai、Wakkanai Grand Hotel、Hotel New Chikou、Guest House Moshiripa、THE STAY WAKKANAI",
+      "articleExcerpt": "早餐的和食膳有用鄂霍次克海的鹽滷現做的豆腐",
+      "sourceUrl": "https://www.meguma.jp/cuisine/",
+      "sourceTitle": "お料理｜ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "出来立ての自家製豆腐…和食膳をご用意しております。オホーツク海のにがりを使用した出来立て豆腐",
       "verdict": "verified",
-      "notes": "2026-11-01 Agoda 1/20 搜尋 8 家都在結果中，Trip.com 1/20 列表也有 Miyuki 等；Miyuki 官網另有「冬期間限定スペシャル除雪プラン」；GRAND 休業見官網：１２月２９日～１月４日の間、全館休業"
+      "notes": ""
     },
     {
       "claimId": "C91",
-      "articleExcerpt": "Tom Soya與Minori冬天休業",
-      "sourceUrl": "https://primenet2010.biz/tomsoya/",
-      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
-      "sourceQuote": "2027年4月下旬まで冬季休業",
+      "articleExcerpt": "和洋室住得下5人，天氣好看得到利尻富士，也有房內附三溫暖的房型",
+      "sourceUrl": "https://www.meguma.jp/rooms/",
+      "sourceTitle": "客室｜ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "和洋室 53㎡・定員5名…天気の良い日には利尻富士を望むことも｜サウナルーム 36㎡・定員4名 客室内に個室サウナを備えたリニューアルルーム",
       "verdict": "verified",
-      "notes": "Minori：休業日 11月末頃～4月末頃（觀光協會）"
+      "notes": ""
     },
     {
       "claimId": "C92",
-      "articleExcerpt": "Saharin、冰雪莊、casa hotel、Meguma與民宿宗谷岬冬天要住，可以在官網、訂房網站或打電話時選好日期，看那幾天能不能訂。兩個平台的評分算法不同，分數不能拿來互比",
-      "sourceUrl": "https://www.agoda.com/zh-tw/city/wakkanai-jp.html",
-      "sourceTitle": "Wakkanai hotels & places to stay｜Agoda",
-      "sourceQuote": "Dormy Inn Wakkanai Natural Hot Spring 8.7 Excellent Based on 3202 reviews",
+      "articleExcerpt": "有住客提到露天浴池或三溫暖晚上關得比較早，早上也不一定開",
+      "sourceUrl": "https://www.meguma.jp/hotspring/",
+      "sourceTitle": "温泉｜ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "facts-reviews R43：Trip.com 22 則中 2（2025-09 露天早關、2026-08 早上沒三溫暖）、4travel 10 則中 1（2022）",
       "verdict": "verified",
-      "notes": "編輯建議；同一家 Trip.com 9.4、Agoda 8.7，兩平台分數尺度不同"
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用瀏覽器讀），這輪沒有重看評論。照 facts-reviews 達到門檻；但 4travel 那則是 2026-03 官網改版前，且「晚上早關」「早上不開」各自只有 1～2 則。官網寫時間依季節不同，句子沒寫幾點，可以接受；下次重查住客說法時優先補新評論。"
     },
     {
       "claimId": "C93",
-      "articleExcerpt": "住在稚內，房價之外還要付住宿稅（宿泊税）。2027年3月起，北海道與稚內市的兩筆會一起收",
-      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/kurashi/zeikin/shukuhakuzei/gaiyo.html",
-      "sourceTitle": "稚内市宿泊税について｜稚内市",
-      "sourceQuote": "稚内市宿泊税とは別に北海道宿泊税が課税されます。／稚内市宿泊税の課税開始日を令和9年3月1日と定めました。",
+      "articleExcerpt": "沒開車的話，從稚內站前巴士總站（稚内駅前バスターミナル）搭天北宗谷岬線約20分鐘到聲問1丁目站，再走約5分鐘，從機場搭往市區的機場巴士也可以在這一站下車",
+      "sourceUrl": "https://www.meguma.jp/access/",
+      "sourceTitle": "アクセス｜ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "稚内駅前 ターミナル① 天北宗谷岬線 （鬼志別行） 約20分 声問1丁目 徒歩 約5分｜（top）空港連絡バス：稚内フェリーターミナル行き「声問1丁目」下車（800円）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "宗谷巴士機場巴士時刻表 PDF 的路線圖有「声問1丁目」站，往市區的車在機場以外只能下車、不能上車；往機場的車途中不能下車。正文沒說能在這站搭往機場，不算錯；若要更清楚可寫「從機場搭往市區的機場巴士可以在這一站下車」。｜第2輪（2026-11-19）：宗谷巴士時刻表：往市區（フェリーターミナル行き）的車「空港以外の停留所では乗車できません」，沿途可以下車；路線圖有声問1丁目；Meguma 官網「稚内フェリーターミナル行き『声問1丁目』下車」。成立。"
     },
     {
       "claimId": "C94",
-      "articleExcerpt": "北海道的住宿稅從2026年4月1日開始收，依房價分成三級",
-      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
-      "sourceTitle": "北海道宿泊税｜北海道",
-      "sourceQuote": "令和8年4月から北海道宿泊税を導入しました。",
+      "articleExcerpt": "Meguma 訂房行：Agoda｜官網",
+      "sourceUrl": "https://www.meguma.jp/",
+      "sourceTitle": "ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "ご宿泊予約（官網今天重開）",
       "verdict": "verified",
-      "notes": "「4月1日」：道頁寫「令和8年4月から」，冰雪莊官網寫「2026年4月1日より、北海道宿泊税が…加算」，一致"
+      "notes": "Agoda 照 booking-links.md（Meguma酒店 (Hotel Meguma)，2-13-14 Koetoi，1 月有房價）；Trip.com 目前不接受預訂，正文沒放，正確。"
     },
     {
       "claimId": "C95",
-      "articleExcerpt": "房價未滿2萬日圓收100日圓，2萬以上、未滿5萬日圓收200日圓，5萬日圓以上收500日圓",
-      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
-      "sourceTitle": "北海道宿泊税｜北海道",
-      "sourceQuote": "宿泊者1人1泊につき…2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円",
+      "articleExcerpt": "比較表標題句：市區13間和宗谷岬、野寒布3間住宿整理成兩張表",
+      "sourceUrl": "https://www.north-hokkaido.com/booking/",
+      "sourceTitle": "旅の予約（宿泊施設）｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "（本頁兩張表的列數）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "兩張表各 13 列與 3 列，和句子一致；Meguma 在聲問，放在市區表，不影響。"
     },
     {
       "claimId": "C96",
-      "articleExcerpt": "稚內市的住宿稅從2027年3月1日起加收，每人每晚200日圓，校外教學等免稅",
-      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/kurashi/zeikin/shukuhakuzei/gaiyo.html",
-      "sourceTitle": "稚内市宿泊税について｜稚内市",
-      "sourceQuote": "稚内市宿泊税は、宿泊者１人１泊につき200円を納めていただきます。／課税開始日を令和9年3月1日と定めました。",
+      "articleExcerpt": "表 Dormy Inn稚內：站前，JR稚內站走約3分｜10樓天然溫泉，有露天、三溫暖｜5:30開，自助，有海鮮丼｜立體停車場每晚1,000日圓，先到先停，車高限2.05公尺｜官網（繁中）、Trip.com、Agoda",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/wakkanai/spa",
+      "sourceTitle": "大浴場｜【公式】天然温泉 天北の湯 ドーミーイン稚内",
+      "sourceQuote": "浴槽種類 内湯、露天風呂、オートロウリュ、水風呂｜（breakfast）5：30～9：00｜（access）立体駐車場40台有料先着順…車1000円…車高2.05m",
       "verdict": "verified",
-      "notes": "免稅見總務省 PDF（https://www.soumu.go.jp/main_content/001080173.pdf，令和8年6月30日）：課税免除等 ・修学旅行等の参加者（引率者も含む）"
+      "notes": "官網首頁有繁體中文切換（今天 HTML 有「繁體」）。"
     },
     {
       "claimId": "C97",
-      "articleExcerpt": "兩筆加起來，2027年3月以後房價未滿2萬日圓合計300日圓，2萬到5萬日圓400日圓，5萬日圓以上700日圓",
-      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/kurashi/zeikin/shukuhakuzei/gaiyo.html",
-      "sourceTitle": "稚内市宿泊税について｜稚内市",
-      "sourceQuote": "合計 ２万円未満 １００円 ２００円 ３００円／２万円以上５万円未満 ２００円 ４００円／５万円以上 ５００円 ７００円",
+      "articleExcerpt": "表 SURFEEL：渡輪站走約15分，門口有機場巴士｜目前沒有（新溫泉鑽探預定到2027年3月）｜6:00開，自助（依季節改套餐）｜免費40台，滿了停對面的市營免費停車場｜官網（繁中）、電話、Trip.com、Agoda",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/zh-tw",
+      "sourceTitle": "北海道稚内市 | Saphir Hotel 稚內 | 官方网站",
+      "sourceQuote": "繁中官網今天 urllib 回 200（頁面有訂房入口）",
+      "verdict": "verified",
+      "notes": "「對面的市營免費停車場」照 facts.md K25「ホテル向かいの市の無料駐車場」，今天 FAQ 文字被截斷，前半一致。｜第2輪（2026-11-19）：「連結」欄官網改成日文訂房頁 go-surfeelhotels.reservation.jp（今天 503），和同列「官網（繁中）」對不上，改法同訂房行那筆：連結改回 https://www.surfeel-wakkanai.com/zh-tw 。其他格成立。｜第3輪（2026-11-19）：官網連結改回繁中版 https://www.surfeel-wakkanai.com/zh-tw ，打得開，和「怎麼訂」欄「官網（繁中）」對得上。"
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "表 HOTEL TRUNK：站前，JR稚內站走5分，渡輪站開車3分｜稚內溫泉童夢的源泉（加水加溫），早上也開｜6:00到9:00｜免費，先到先停｜官網、Trip.com、Agoda",
+      "sourceUrl": "https://hoteltrunk-wakkanai.jp/facility/",
+      "sourceTitle": "施設・サービス案内｜HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
+      "sourceQuote": "童夢の源泉を汲み、加水・加温…5：00 〜 9：00｜朝食のみご提供しております。ご利用時間 朝6時～9時｜無料駐車場…駐車場は先着順",
+      "verdict": "verified",
+      "notes": "和食膳照 K87（預約頁今天 503）。｜第2輪（2026-11-19）：早餐欄「6:00開，和食膳」的「和食膳」出處只剩已刪的 K87，官網撐不住。改法：早餐欄改「6:00到9:00」。其他格成立。｜第3輪（2026-11-19）：早餐欄改「6:00到9:00」，和官網施設頁一致，成立。"
+    },
+    {
+      "claimId": "C99",
+      "articleExcerpt": "表 美雪飯店：站前，JR稚內站走約4分，渡輪站走約17分｜—｜—｜住客用15台｜官網、Trip.com、Agoda",
+      "sourceUrl": "http://www.hotelmiyuki.jp/room/japanese.html",
+      "sourceTitle": "和室　ホテル美雪",
+      "sourceQuote": "駐車場(15台)｜（service）当ホテル、ご利用者以外の駐車は固くお断りします。｜（map）JR稚内駅：約4分…フェリー乗り場：約17分",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C98",
-      "articleExcerpt": "這兩筆稅由旅館另外向房客收",
-      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/kurashi/zeikin/shukuhakuzei/gaiyo.html",
-      "sourceTitle": "稚内市宿泊税について｜稚内市",
-      "sourceQuote": "宿泊者が宿泊施設に、宿泊料金と併せてお支払いいただき、宿泊施設の経営者が稚内市に申告し、納めていただく",
+      "claimId": "C100",
+      "articleExcerpt": "表 Hotel Saharin：站前，JR稚內站走7分｜男女各一個2到3人的小浴池｜7:00到8:00，館內供應｜有｜官網表單（旅館回覆才算訂好）、電話",
+      "sourceUrl": "http://www.saharin.co.jp/dish.html",
+      "sourceTitle": "お食事 - ホテルサハリン",
+      "sourceQuote": "朝食：7：00〜8：00 夕食：18：00〜20：00｜（facilities）男女別２〜３名様入れるお風呂｜（access）※駐車場18台｜（reserve）電話又はメールの返信を持って完了",
       "verdict": "verified",
-      "notes": "北海道頁：宿泊施設において、宿泊料金と併せて、宿泊税を徴収"
+      "notes": ""
     },
     {
-      "claimId": "C99",
-      "articleExcerpt": "延伸資料各行說明（Dormy Inn 大浴場、早餐與交通；SURFEEL 常見問題的渡輪走法、停車場與機場巴士；THE STAY 預約方式與入住時間；Moshiripa 退房、寄放行李與訂房；冰雪莊電話訂房公告與清晨送站；Meguma 接送、晚餐與巴士下車站；Minori 休業期間與電話；Tom Soya 休業公告、晚餐方案、巴士走法與預約；北海道與稚內市住宿稅）",
-      "sourceUrl": "https://www.surfeel-wakkanai.com/faq",
-      "sourceTitle": "よくあるご質問｜サフィールホテル稚内",
-      "sourceQuote": "ホテルからフェリーターミナルまでどのぐらいかかりますか？／ホテルに駐車場はありますか？／ホテルから稚内空港までの交通手段を教えてください。",
+      "claimId": "C101",
+      "articleExcerpt": "表 Guest House Moshiripa：…｜蝦夷鹿肉咖哩，要訂含早餐的方案或前一天預約｜…",
+      "sourceUrl": "https://moshiripa.com/access/",
+      "sourceTitle": "アクセス – 《稚内》ゲストハウスモシリパ",
+      "sourceQuote": "当館目の前に駐車場あり （8台 先着順無料）｜（top）ここからの予約が最安です！（予約サイト独自のキャンペーンなど除く）",
       "verdict": "verified",
-      "notes": "逐一打開延伸資料 15 個網址，各頁都有說明裡寫的內容（冰雪莊清晨送站在同站的基本情報頁）"
+      "notes": "早餐也可以訂含早方案，表格只寫預約，簡略但不錯。｜第2輪（2026-11-19）：早餐欄補了含早方案，成立。"
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "表 THE STAY WAKKANAI：站前，JR稚內站走1分｜共用淋浴，家庭房有自己的淋浴｜—｜700日圓｜官網、電話、E-mail、Trip.com、Agoda",
+      "sourceUrl": "https://thestay.jp/wakkanai/",
+      "sourceTitle": "[公式] THE STAY WAKKANAI | JR稚内駅から徒歩2分！！",
+      "sourceQuote": "［駐車場料金］700円｜お電話でのご予約 0162-73-4610 E-Mai[l]",
+      "verdict": "verified",
+      "notes": "「每晚」同正文那句，官網沒寫單位。改成「700日圓」。其他格成立。｜第2輪（2026-11-19）：「每晚」已拿掉。"
+    },
+    {
+      "claimId": "C103",
+      "articleExcerpt": "表 WAKKANAI GRAND HOTEL：南稚內，JR南稚內站走3分｜地下1,200公尺的天然溫泉，有三溫暖｜6:00開（夏天5:00），和食為主的手作自助｜免費70台｜官網、Trip.com、Agoda；12/29到1/4全館休業",
+      "sourceUrl": "https://www.wakkanai-g-hotel.jp/breakfast/",
+      "sourceTitle": "稚内グランドホテル【公式サイト】手造りの健康的な朝食が自慢",
+      "sourceQuote": "営業時間 6:00～9:00（夏期は5:00～）｜（top）無料駐車場70台完備｜（en）If you use sauna after warming up your body at the hot spring",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "表 Hotel New Chikou：南稚內，JR南稚內站走5分，渡輪站開車約8分｜—｜—｜免費約40台｜Trip.com、Agoda",
+      "sourceUrl": "https://www.chikoukankou.jp/",
+      "sourceTitle": "稚内│JR南稚内駅徒歩5分　ホテルニューチコウ│公式",
+      "sourceQuote": "JR南稚内駅下車、徒歩5分…フェリーターミナルも車で約8分…約40台まで駐車可能。無料。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C105",
+      "articleExcerpt": "表 大將飯店：南稚內，JR南稚內站走約3分，渡輪站開車約10分｜男女分開的大浴場，17:00到23:00，只給住客｜和定食7:00到9:00｜約70台｜Agoda",
+      "sourceUrl": "https://www.wakkanai-taisyou.jp/dinning/",
+      "sourceTitle": "ホテル大将 〔稚内・南駅前ホテル〕　ホームページ（レストラン）",
+      "sourceQuote": "朝食 7:00～9:00（和定食）｜（DMO detail_1221）駐車場は70台以上",
+      "verdict": "verified",
+      "notes": "停車台數官網沒寫，觀光協會頁「70台以上」，表格「約70台」可接受。"
+    },
+    {
+      "claimId": "C106",
+      "articleExcerpt": "表 御園飯店：南稚內，JR南稚內站走3分｜稚內溫泉童夢的源泉（加水加溫），冬天男女輪流｜和式早餐7:00到9:00｜—｜官網、Trip.com、Agoda",
+      "sourceUrl": "https://www.h-misono.com/meal/",
+      "sourceTitle": "【公式サイト】最北の街　稚内市・ホテル御園（食事）",
+      "sourceQuote": "ホテル御園のあさごはんは、昔ながらの和朝食膳…時間 7:00～9:00(ラストオーダー8:30)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C107",
+      "articleExcerpt": "表 奧田屋飯店：南稚內，JR南稚內站走約6分，渡輪站搭計程車約10分｜稚內溫泉大浴場與三溫暖，早上也開｜—｜免費60台｜Trip.com",
+      "sourceUrl": "http://www.hotel-okudaya.jp/access.html",
+      "sourceTitle": "アクセス | ホテル奥田屋 公式ホームページ 北海道 稚内 稚内温泉",
+      "sourceQuote": "徒歩で約6分｜【フェリーターミナル】より【奥田屋】まで タクシーで約10分｜60台収容の無料駐車場",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "表 Hotel Meguma：聲問，稚內機場開車約5分｜兩種泉質，露天、雪屋造型浴池、三溫暖｜7:00開，和食膳｜免費40台，不用預約｜官網、Agoda",
+      "sourceUrl": "https://www.meguma.jp/access/",
+      "sourceTitle": "アクセス｜ホテルめぐま｜日本最北端の隠れ宿【公式】",
+      "sourceQuote": "収容台数 : 40台 （無料・予約不要）｜（facilities）ご朝食 7:00～9:00｜（hotspring）露天風呂（男女各１）、大浴場（男女各２）、サウナ（男女各１）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C109",
+      "articleExcerpt": "表 Pension Tom Soya：宗谷岬，走到岬角3分，「宗谷岬」巴士站走2分｜男女分開的大浴場｜和定食，入住時加點｜免費10台｜官網、電話，只收現金；冬季休業到2027年4月下旬",
+      "sourceUrl": "https://primenet2010.biz/tomsoya/",
+      "sourceTitle": "【公式】ペンション 斗夢ソーヤ|稚内 宗谷岬まで徒歩3分",
+      "sourceQuote": "「宗谷岬」で下車、徒歩2分｜お風呂は男女別の大浴場を完備｜ご朝食をご希望の方はチェックイン時にお申し込み…品数豊富な和定食｜駐車場 無料 10台分有｜現金でのご精算をお願いしております",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "表 民宿宗谷岬：宗谷岬，JR稚內站開車約50分｜—｜—｜10台｜電話",
+      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1237.html",
+      "sourceTitle": "民宿宗谷岬｜旅の予約（宿泊施設）｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "●JR稚内駅から車で約50分｜駐車場 10台｜電話番号 0162-76-2422",
+      "verdict": "verified",
+      "notes": "「只收電話」同第一個 H2 那句，觀光協會頁沒寫只收電話（另列了傳真）。改成「電話」。其他格成立。｜第2輪（2026-11-19）：「只收電話」已改「電話」。"
+    },
+    {
+      "claimId": "C111",
+      "articleExcerpt": "表 小飯店Minori：野寒布岬旁，JR稚內站開車約10分｜—｜不附餐｜10台｜電話、只收現金；約11月底到4月底休業",
+      "sourceUrl": "https://www.north-hokkaido.com/booking/detail_1406.html",
+      "sourceTitle": "小さなホテルみのり｜旅の予約（宿泊施設）｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "「ノシャップ岬」のすぐそば…素泊まりスタイルのお宿｜●JR稚内駅から車で約10分｜駐車場 10台｜備考 現金のみ｜休業日 11月末頃～4月末頃",
+      "verdict": "verified",
+      "notes": "「只收電話」觀光協會頁沒寫，只列電話號碼；facts.md K72 也沒有「電話のみ」。改成「電話、只收現金」。其他格成立。｜第2輪（2026-11-19）：「只收電話」已改「電話」。"
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "住稚內每人每晚要另外付北海道住宿稅100到500日圓",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
+      "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
+      "sourceQuote": "令和8年4月から北海道宿泊税を導入しました。…2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円",
+      "verdict": "verified",
+      "notes": "學校主辦的校外教學等可免稅，一般旅客不適用，正文不寫可以。"
+    },
+    {
+      "claimId": "C113",
+      "articleExcerpt": "2027年3月1日起再加上稚內市住宿稅每人每晚200日圓，兩筆合計300到700日圓",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/kurashi/zeikin/shukuhakuzei/gaiyo.html",
+      "sourceTitle": "稚内市宿泊税について | 北海道稚内市",
+      "sourceQuote": "令和９年３月１日から宿泊税を導入します。…宿泊者１人１泊につき200円…合計 ２万円未満 ３００円…５万円以上 ７００円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C114",
+      "articleExcerpt": "北海道的部分依每人每晚的房價分三級",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
+      "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
+      "sourceQuote": "宿泊料金（1人1泊） 税率 2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C115",
+      "articleExcerpt": "住宿稅表：未滿2萬 100→300、2萬以上未滿5萬 200→400、5萬以上 500→700（到2027年2月底／2027年3月1日起）",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00020000/00020073/20260911103602.pdf",
+      "sourceTitle": "宿泊税のお知らせ（北海道・稚内市宣傳單，PDF 第2頁「稚内市の宿泊税＋北海道の宿泊税が課税されます」）",
+      "sourceQuote": "2027.3.1から 稚内市の宿泊税＋北海道の宿泊税が課税されます。～19,999円 200円 100円 300円｜20,000円～49,999円 200円 200円 400円｜50,000円～ 200円 500円 700円",
+      "verdict": "verified",
+      "notes": "PDF 是圖片，今天下載後轉成圖檔逐格看過。"
+    },
+    {
+      "claimId": "C116",
+      "articleExcerpt": "住宿稅是照各旅館指定的方式付給旅館",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00020000/00020073/20260911103602.pdf",
+      "sourceTitle": "宿泊税のお知らせ（北海道・稚内市宣傳單，PDF 第2頁「稚内市の宿泊税＋北海道の宿泊税が課税されます」）",
+      "sourceQuote": "宿泊施設の指定する方法で、宿泊施設などにお支払いください。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C117",
+      "articleExcerpt": "像SURFEEL和美雪飯店，網路訂房畫面上的金額都不含住宿稅，要在入住時另外付，SURFEEL連事先付款的訂單也一樣",
+      "sourceUrl": "https://www.surfeel-wakkanai.com/7398",
+      "sourceTitle": "北海道宿泊税導入に関して / Hokkaido Accommodation Tax | サフィールホテル稚内 | 公式HP",
+      "sourceQuote": "インターネットでご予約いただく場合、表示される合計金額に宿泊税は含まれておりませんので、別途お支払いいただく必要がございます。※事前決済でお申込みいただいたご予約も、宿泊税はチェックインの際にご負担をお願い致します。",
+      "verdict": "verified",
+      "notes": "美雪的部分照 facts-extra K78（tripla 預約頁「宿泊料金とは別にチェックイン時に…インターネット予約の場合…宿泊税は含まれておりません」），今天沒有重開（要瀏覽器或對方擋讀取工具），用研究紀錄的瀏覽器摘錄判定。"
+    },
+    {
+      "claimId": "C118",
+      "articleExcerpt": "住有溫泉的旅館還有稚內市的入湯稅，這是按天算的，住宿每人每天100日圓，國中生以下不用付",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/kurashi/zeikin/nyutozei/",
+      "sourceTitle": "入湯税 | 北海道稚内市",
+      "sourceQuote": "宿泊：1人1日 100円 日帰り：1人 50円 ただし中学生以下（16歳未満）の方…は入湯税が免除されます。",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：官網「宿泊：1人1日 100円」，「按天算」成立。"
+    },
+    {
+      "claimId": "C119",
+      "articleExcerpt": "HOTEL TRUNK是另外收，Dormy Inn稚內則已經含在房價裡",
+      "sourceUrl": "https://hoteltrunk-wakkanai.jp/facility/",
+      "sourceTitle": "施設・サービス案内｜HOTEL TRUNK WAKKANAI(ホテルトランク稚内)",
+      "sourceQuote": "※別途入湯税100円がかかります｜（Dormy FAQ）入湯税が発生する施設がございます。その場合には入湯税を含んだご宿泊料金をご案内しております。",
+      "verdict": "verified",
+      "notes": "Dormy 這段是連鎖共用 FAQ（網址在稚內館底下），不是稚內館專屬說明，可接受。"
+    },
+    {
+      "claimId": "C120",
+      "articleExcerpt": "資料來源 28 條網址",
+      "sourceUrl": "https://heartlandferry.jp/rishiri/",
+      "sourceTitle": "アクセス・乗り場案内（利尻島） | ハートランドフェリー",
+      "sourceQuote": "28 條今天 urllib 都回 200（兩份 PDF 下載後轉圖看過），頁面標題都是標示的那一頁",
+      "verdict": "verified",
+      "notes": "逐條打開，頁面標題都是標示的那一頁：Dormy、SURFEEL（首頁、7537 鑽探公告、7398 住宿稅公告）、TRUNK 官網、美雪、Saharin、Moshiripa、THE STAY、Grand、大将、御園、奥田屋、New Chikou、Meguma、Tom Soya、觀光協會 detail_1237／1406、Heartland Ferry FAQ／time1／timetable／rishiri（標題「アクセス・乗り場案内（利尻島）」，內含稚內港渡輪站交通，對得上）、宗谷巴士機場巴士頁與 PDF、北海道住宿稅、稚內市住宿稅、宣傳單 PDF、稚內市入湯稅。唯一打不開的是「HOTEL TRUNK WAKKANAI 官方訂房頁」https://go-hoteltrunk-wakkanai.reservation.jp/ja/plans ：今天兩次都 503（reservation.jp 擋讀取工具，研究時用瀏覽器讀得到，K87）。要用瀏覽器確認打得開；打不開就照 seam-notes 第 6 條從資料來源拿掉，TRUNK 的和食膳與沙發床改以官網客房頁為準。｜第2輪（2026-11-19）：HOTEL TRUNK 官方訂房頁已刪，剩下 28 條第1輪都重開確認過。"
+    },
+    {
+      "claimId": "C121",
+      "articleExcerpt": "這頁比較住站前和住南稚內，也整理每間旅館適合誰、搭早班渡輪住哪、停車和住宿稅",
+      "sourceUrl": "https://www.north-hokkaido.com/booking/",
+      "sourceTitle": "旅の予約（宿泊施設）｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
+      "sourceQuote": "（導讀句，沒有事實主張）",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：第2輪改寫，不寫間數；只描述本頁內容，和各節一致。"
     }
   ],
   "summary": {
-    "verified": 99,
+    "verified": 121,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
