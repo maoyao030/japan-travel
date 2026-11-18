@@ -196,3 +196,4 @@ Darren：「自動化流程怎麼樣讓這件事情可以不用經過我審核�
 - **暫存後還要改正文**：`publish-prepared-article.mjs` 不會覆寫已有的文件；段落數不變用 `revise-article-text.mjs`，段落數變了用 `replace-article-body.mjs`，再重放嵌入。
 - **維基共享資源會擋下載**（HTTP 429）：不繞，換別的來源；對題的那張記成備選。
 - 上線後在 `content-automation/unattended-summary.md` 加一段摘要。
+- **還沒上線的頁用書名號提到時，每一句都要登記成待補內連**（2026-11-18 補）：排進清單時，把正文裡每個〈○○〉的句子都寫進大綱的 `links`（`from` 這一頁、`to` 那一頁、`sentence` 整句、`anchor` 書名號那幾個字），再跑 `ops-links.mjs register`。那一頁上線後，補內連的步驟會自動把連結加上。第一次試跑只登記了上層住宿頁那一句，漏了另外三句，事後補登。
