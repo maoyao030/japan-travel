@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "articleId": "asahikawa-stay-breakfast",
   "articleSha256": "63406c31bcc3a57986bb5c9c6348815373c1f405293545d677cf7769130f4374",
-  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各飯店官網原頁取文字核對，未使用瀏覽器、未開 PDF；第 2 輪複查只核對改過的句子，C16、C21、C43、C48 採協調者瀏覽器查證結果；第 3 輪複查（節奏潤稿 22 段）逐段比對 breakfast-before.md，事實、主語與條件沒有變，只更新 articleExcerpt；第 4 輪確認只改 Art Hotel 一處標點（逗號改回句號），更新 C49",
+  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各飯店官網原頁取文字核對，未使用瀏覽器、未開 PDF；第 2 輪複查只核對改過的句子，C16、C21、C43、C48 採協調者瀏覽器查證結果；第 3 輪複查（節奏潤稿 22 段）逐段比對 breakfast-before.md，事實、主語與條件沒有變，只更新 articleExcerpt；第 4 輪確認只改 Art Hotel 一處標點（逗號改回句號），更新 C49；住客評論 4 筆由本 agent 2026-11-18 用內建瀏覽器（未登入）重看",
   "checkedAt": "2026-11-18",
   "claims": [
     {
@@ -71,11 +71,11 @@
     {
       "claimId": "C8",
       "articleExcerpt": "有住客反應早餐豐盛又好吃。",
-      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%82%A2%E3%83%9E%E3%83%8D%E3%82%AF%E6%97%AD%E5%B7%9D",
-      "sourceTitle": "Google 地圖評論（Amanek Hotel Asahikawa）；4travel",
-      "sourceQuote": "",
-      "verdict": "unreachable",
-      "notes": "評論統整，需協調者用瀏覽器重看。研究紀錄 R288（另對 4travel R78）。"
+      "sourceUrl": "https://www.google.com/maps/place/Amanek+Hotel+Asahikawa/@43.7651576,142.3594069,17z/data=!4m9!3m8!1s0x5f0ce70e406833f3:0xd6e2bb3775860f86!8m2!3d43.7651576!4d142.3594069!16s%2Fg%2F11q247tbpy?hl=zh-TW",
+      "sourceTitle": "住客評論統整",
+      "sourceQuote": "2026-11-18 Trip.com 評論列表第 1 頁約 10 則中 5 則說早餐豐富、好吃或款式多；Google 地圖可見的最新 5 則中 1 則說早餐不像照片精緻但不錯",
+      "verdict": "verified",
+      "notes": "讀了 Trip.com（https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/）與 Google 地圖兩個平台，合計 6 則同方向，達門檻；沒有看到說早餐難吃的。Google 地圖未登入只顯示最新 5 則評論，評論搜尋與主題篩選都要求登入（沒有登入），所以 Google 只讀得到 5 則。 研究紀錄 R288。"
     },
     {
       "claimId": "C9",
@@ -224,11 +224,11 @@
     {
       "claimId": "C25",
       "articleExcerpt": "住客的評價比較兩極，有些人覺得種類多又好吃，也有人覺得普通。",
-      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%ABWBF%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%87%E6%97%AD%E5%B7%9D",
-      "sourceTitle": "Google 地圖評論（Hotel WBF Grande Asahikawa）；4travel",
-      "sourceQuote": "",
-      "verdict": "unreachable",
-      "notes": "評論統整，需協調者用瀏覽器重看。研究紀錄 R251（另對 4travel R23）。"
+      "sourceUrl": "https://www.google.com/maps/place/Hotel+WBF+Grande+Asahikawa/@43.762456,142.3622571,17z/data=!4m9!3m8!1s0x5f0ce63ef8feaaab:0x905497112bc489ad!8m2!3d43.762456!4d142.3622571!16s%2Fg%2F11bw3x2fbb?hl=zh-TW",
+      "sourceTitle": "住客評論統整",
+      "sourceQuote": "2026-11-18 Trip.com 前 3 頁約 30 則中提到早餐 6 則：3 則說好吃或味道可以（其中 1 則說選擇多），3 則說簡單、不夠豐富或一般；Google 地圖可見 5 則中 1 則說可以接受；4travel 列表可見的 1 則說海鮮漬丼好吃、其他普通",
+      "verdict": "unsupported",
+      "notes": "「評價兩極、有人覺得好吃、也有人覺得普通」有支持：好吃一側 Trip.com 3 則＋4travel 1 則，普通一側 Trip.com 3 則＋Google 1 則＋4travel 1 則，都跨兩個平台。但「種類多」只有 Trip.com 1 則，達不到門檻。建議改成「有些人覺得好吃，也有人覺得普通」。Google 地圖未登入只顯示最新 5 則評論，評論搜尋與主題篩選都要求登入（沒有登入），所以 Google 只讀得到 5 則。 研究紀錄 R251。"
     },
     {
       "claimId": "C26",
@@ -332,11 +332,11 @@
     {
       "claimId": "C37",
       "articleExcerpt": "有住客遇到早餐區很擠，想避開人多的話，入住時可以問櫃台早上哪個時段人最多。",
-      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=OMO7%E6%97%AD%E5%B7%9D",
-      "sourceTitle": "Trip.com 住客評論；4travel",
-      "sourceQuote": "",
-      "verdict": "unreachable",
-      "notes": "評論統整，需協調者用瀏覽器重看。研究紀錄 R206（Trip.com 約 1 則＋4travel R130、R135）。"
+      "sourceUrl": "https://www.google.com/maps/place/OMO7+%E6%97%AD%E5%B7%9D+by+%E6%98%9F%E9%87%8E%E9%9B%86%E5%9C%98/@43.7701376,142.3641376,17z/data=!4m9!3m8!1s0x5f0ce60d520d6c0f:0x8e71e363758301f3!8m2!3d43.7701376!4d142.3641376!16s%2Fg%2F122xwd9y?hl=zh-TW",
+      "sourceTitle": "住客評論統整",
+      "sourceQuote": "2026-11-18 Trip.com 評論第 1 頁約 10 則、Google 地圖可見 5 則、4travel 的 OMOカフェ＆バル 頁，都沒有找到早餐區擁擠的說法（Trip.com 有 1 則說大浴場要排隊，不是早餐）",
+      "verdict": "unsupported",
+      "notes": "這次讀得到的範圍達不到兩個平台、三則的門檻。Google 搜尋結果摘要裡有 Jalan 1 則說早餐會場幾乎坐滿但不用等、1 篇部落格說等了約 10 分鐘，Jalan 只能核對、部落格不算平台評論。研究紀錄 R206 的 Trip.com 1 則與 4travel R130、R135 這次沒能翻到。建議刪掉「有住客遇到早餐區很擠」，只留「想避開人多的話，入住時可以問櫃台早上哪個時段人最多」。Google 地圖未登入只顯示最新 5 則評論，評論搜尋與主題篩選都要求登入（沒有登入），所以 Google 只讀得到 5 則。"
     },
     {
       "claimId": "C38",
@@ -377,11 +377,11 @@
     {
       "claimId": "C42",
       "articleExcerpt": "有住客覺得這裡的早餐普通。",
-      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=JR%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D",
-      "sourceTitle": "Trip.com、Google 地圖評論；4travel",
-      "sourceQuote": "",
-      "verdict": "unreachable",
-      "notes": "評論統整，需協調者用瀏覽器重看。研究紀錄 R220（另對 4travel R169）。"
+      "sourceUrl": "https://www.google.com/maps/place/JR+INN+Asahikawa/@43.763641,142.3573389,17z/data=!4m9!3m8!1s0x5f0ce610925cd939:0x1ee0d2d8382d2a04!8m2!3d43.763641!4d142.3573389!16s%2Fg%2F11btxj_71r?hl=zh-TW",
+      "sourceTitle": "住客評論統整",
+      "sourceQuote": "2026-11-18 Trip.com 前 2 頁約 20 則中提到早餐 3 則：1 則說款式味道一般、1 則說水準不高、1 則說種類少但味道不錯；4travel 列表可見的 1 則說和洋都有、不錯",
+      "verdict": "unsupported",
+      "notes": "「覺得普通」只有 Trip.com 一個平台（2 到 3 則），第二個平台沒有讀到同樣說法；4travel 讀到的反而是好評。Google 地圖這間的評論面板重載兩次都沒有載出來。研究紀錄 R220 的 Google 與 4travel R169 這次沒能對到。建議刪掉這句，或改成兩邊都寫、但要先補到第二個平台的普通評價。"
     },
     {
       "claimId": "C43",
@@ -637,11 +637,11 @@
     }
   ],
   "summary": {
-    "verified": 66,
+    "verified": 67,
     "incorrect": 0,
-    "unsupported": 0,
+    "unsupported": 3,
     "outdated": 0,
-    "unreachable": 4,
+    "unreachable": 0,
     "not-stated": 0
   }
 }
