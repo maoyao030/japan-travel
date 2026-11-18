@@ -50,7 +50,8 @@ export function validateEmbedPlan(plan, {articleId} = {}) {
   if (!Array.isArray(embeds) || embeds.length === 0) throw new Error('embed-plan.json 沒有嵌入')
   // 住宿專門頁（Darren 2026-11-17）：每間飯店可以各放 1 則 Instagram，住客的公開貼文也可以，不限兩年內。
   // 封包寫 pageType: 'stay-topic' 才適用；一節一則的限制照舊。
-  const stayTopic = plan.pageType === 'stay-topic'
+  // 住宿主頁（pageType: 'stay'）也適用（Darren 2026-11-18：主頁也要有每間飯店的貼文）。
+  const stayTopic = plan.pageType === 'stay-topic' || plan.pageType === 'stay'
   const maxEmbeds = stayTopic ? MAX_EMBEDS_STAY_TOPIC : MAX_EMBEDS
   if (embeds.length > maxEmbeds) throw new Error(`一篇最多 ${maxEmbeds} 個嵌入`)
 

@@ -22,6 +22,9 @@ const MAX_REPEAT = 2
 // Darren 2026-11-18：「廢話很多」。每間飯店只留第一段、一個主題段與「要注意」，不念規格。
 const MAX_BOLD_LABELS_PER_HOTEL = 2
 const MAX_HOTEL_BODY_CHARS = 320
+// Darren 2026-11-18：刪過頭也不行（「東西也變太少了吧」）。一間飯店正文不到 150 字，多半是把賣點也刪了。
+const MIN_HOTEL_BODY_CHARS = 120
+const THIN_HOTEL_BODY_CHARS = 150
 
 const stripLinks = (text) => text.replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
 
@@ -98,6 +101,8 @@ export function checkStayTopic(markdown) {
       errors.push(`「${section.title}」有 ${boldLabels.length} 個粗體小段，一間最多 ${MAX_BOLD_LABELS_PER_HOTEL} 個（一個主題段加「要注意」）；把查到的設施一樣一樣列出來就是念規格`)
     }
     const hotelChars = stripLinks(hotelBody.join('')).replace(/\*\*/g, '').replace(/\s/g, '').length
+    if (hotelChars < MIN_HOTEL_BODY_CHARS) errors.push(`「${section.title}」正文只有 ${hotelChars} 字，一間至少 ${MIN_HOTEL_BODY_CHARS} 字；讓人想選這間的具體賣點（具體的菜、浴池、房型、位置好處）要寫出來`)
+    else if (hotelChars < THIN_HOTEL_BODY_CHARS) warnings.push(`「${section.title}」正文只有 ${hotelChars} 字，偏少；份量檢查時確認賣點有沒有寫出來`)
     if (hotelChars > MAX_HOTEL_BODY_CHARS) errors.push(`「${section.title}」正文 ${hotelChars} 字，一間最多 ${MAX_HOTEL_BODY_CHARS} 字；逐行問拿掉會不會影響選擇`)
     const first = stripLinks(section.lines.find((line) => line.trim() !== '') ?? '')
     if (/^[^。]{0,12}(是|為)[^。]{0,20}的自助[，。]/.test(first)) warnings.push(`「${section.title}」第一句像資料句，先講最讓人想選它的那件事`)
