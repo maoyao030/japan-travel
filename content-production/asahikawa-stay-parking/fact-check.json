@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay-parking",
-  "articleSha256": "2a134bad2f70faaf3a59d2f2dbc46f67e2e3d98402bb08b440857cf14fb8c782",
+  "articleSha256": "5bc72ba4772d300083be5493be7d0e74b3a72dd0859f2a3167a99a387dc36a9d",
   "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各官方頁核對，未用瀏覽器、未開 PDF；同日第 2 輪複查改過的句子；第 3 輪逐句比對潤稿前後（parking-before.md 對 reader-preview.md），14 處改動事實、主語與條件都沒變",
   "checkedAt": "2026-11-18",
   "claims": [
@@ -133,12 +133,12 @@
     },
     {
       "claimId": "C15",
-      "articleExcerpt": "有住客提到停車場會停滿，滿了就要改停其他停車場。",
-      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2509933/",
-      "sourceTitle": "住客評論統整",
-      "sourceQuote": "停車場會停滿：Trip.com 前 30 則中 0 則、Google 地圖最新 5 則中 0 則、4travel 第 1 頁 10 則中 1 則（夏季下午 3～4 點已經快滿）。只有一個平台、1 則，未達門檻。",
-      "verdict": "unsupported",
-      "notes": "第 4 輪（2026-11-18，內建瀏覽器，未登入）：Trip.com 依「最相關」讀第 1～3 頁共 30 則；Google 地圖未登入只顯示最新 5 則；4travel https://4travel.jp/dm_hotel-10059207/tips 第 1 頁 10 則。研究紀錄 R241 說的那則 Google 評論現在不在最新 5 則裡。建議刪掉「有住客提到停車場會停滿」，改成只寫官方說法：「如果停滿了，飯店會介紹合作停車場或投幣停車場。」（官網 access 頁「満車時の他…提携先もしくはコインパーキングへご案内」）。"
+      "articleExcerpt": "如果停滿了，飯店會介紹合作停車場或投幣停車場。（CABIN）",
+      "sourceUrl": "https://cabin.kenhotels.com/asahikawa/access/",
+      "sourceTitle": "交通アクセス｜【公式】プレミアホテル-CABIN-旭川｜旭川駅から徒歩3分の天然温泉付きホテル",
+      "sourceQuote": "※満車時の他、1BOX・RV・ワゴンタイプの車は、提携先もしくはコインパーキングへご案内となりますので予めご了承くださいませ",
+      "verdict": "verified",
+      "notes": "第 5 輪：正文已把住客說法換成官網說法，2026-11-18 用 curl 重開 access 頁核對原文一致。以下為第 4 輪紀錄：住客說「停車場會停滿」只有 4travel 1 則（Trip.com 30 則 0、Google 最新 5 則 0），未達門檻，所以刪掉。第 4 輪（2026-11-18，內建瀏覽器，未登入）：Trip.com 依「最相關」讀第 1～3 頁共 30 則；Google 地圖未登入只顯示最新 5 則；4travel https://4travel.jp/dm_hotel-10059207/tips 第 1 頁 10 則。研究紀錄 R241 說的那則 Google 評論現在不在最新 5 則裡。建議刪掉「有住客提到停車場會停滿」，改成只寫官方說法：「如果停滿了，飯店會介紹合作停車場或投幣停車場。」（官網 access 頁「満車時の他…提携先もしくはコインパーキングへご案内」）。"
     },
     {
       "claimId": "C16",
@@ -610,9 +610,9 @@
     }
   ],
   "summary": {
-    "verified": 66,
+    "verified": 67,
     "incorrect": 0,
-    "unsupported": 1,
+    "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,
     "not-stated": 0
