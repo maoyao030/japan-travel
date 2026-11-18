@@ -1,760 +1,1336 @@
 {
   "schemaVersion": 1,
   "articleId": "rishiri-island-stay",
-  "articleSha256": "e520329dfff91cee709d153fcbdf553906f1dc13dd42a30b5503b6a7e1755fcf",
-  "checker": "事實查核 agent（Claude Opus 5.5，唯讀，非作者、潤稿者或修改者）；重寫稿第 2 輪複查（驗收後第 1 輪修改版；改過與新增的句子重開來源），2026-11-01 以 curl 讀原始網頁、PyMuPDF 讀宗谷巴士與町公所 PDF，Agoda 城市頁與飯店頁以瀏覽器自己的分頁讀取後關閉",
-  "checkedAt": "2026-11-01",
+  "articleSha256": "12b81f80547bbb59d60fcd8ea4483438108192f72a82bfa319444a6dfcf33f03",
+  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-19 用 python urllib 重開約 100 個官方頁（各旅館官網、RISHIRI PLUS、利尻富士町、Heartland Ferry、宗谷巴士、北海道住宿稅），Trip.com 9 頁讀標題；沒有使用瀏覽器。Agoda 6 頁（urllib 只回空殼）、旅館雪國 rwiths 訂房頁（連線被重設）、中原旅館的空房日曆（要 JavaScript）沒能重開，用 booking-links.md、facts-extra.md 的瀏覽器紀錄並在 notes 註明；住客說法以 facts-reviews.md 為準，這輪沒有重看評論。；第 2 輪複查（2026-11-19）：照 seam-notes.md「第二輪」18 條改動與 14 句逐句核對，今天 urllib 重開利尻飯店房間頁、海洋飯店觀光・交通頁、雪國出租頁、Hera家官網、Island Inn 首頁、Green Hill Inn 訂房頁；富士觀光的住客說法照 facts-reviews.md R54、R55、R56、R58；沒有使用瀏覽器。刪掉的句子（Rera「開賣」、海洋飯店 Peshi岬住客說法、Island Inn 換經營者、比較表前一句、雪國 rwiths 資料來源）對應的 claim 已移除。；第 3 輪複查（2026-11-19）：只核對利尻飯店冷氣句（C85），對照第1輪今天重開的官網房間頁資料；沒有使用瀏覽器。",
+  "checkedAt": "2026-11-19",
   "claims": [
     {
       "claimId": "C1",
-      "articleExcerpt": "利尻島住宿分在鴛泊、沓形、鬼脇與仙法志四個區域",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/",
-      "sourceTitle": "名所｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "島のエリアから探す 鴛泊エリア 鬼脇エリア 沓形エリア 仙法志エリア",
+      "articleExcerpt": "去利尻島，多半是為了爬利尻山、吃當季海膽，或順著稚內的渡輪把利尻、禮文排在一起。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/tozan/",
+      "sourceTitle": "利尻山登山 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "（導讀句，沒有可查的事實主張）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "屬於開場的情境描述，不是事實主張；後文各節都有對應內容。"
     },
     {
       "claimId": "C2",
-      "articleExcerpt": "從稚內搭的渡輪就停在鴛泊港",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
-      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
-      "sourceQuote": "稚内からお越しになる場合は鴛泊フェリーターミナルから沓形フェリーターミナルへ各自で移動する必要がございます。",
+      "articleExcerpt": "島上的大飯店冬天都休館，所以去的季節會決定能住哪幾間。",
+      "sourceUrl": "https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "【重要】ご宿泊の冬季休業のお知らせ | ホテル利尻",
+      "sourceQuote": "2026年11月30日より2027年3月下旬まで、ご宿泊の営業を冬季休業｜（RISHIRI PLUS）利尻マリンホテル・利尻富士観光ホテル １１月〜２月は休館｜ホテルあや瀬 １１月〜３月は休館｜アイランドインリシリ 5月〜10月 シーズンホテル",
       "verdict": "verified",
-      "notes": ""
+      "notes": "能住上百人的五間（海洋、富士觀光、Aya瀨、利尻飯店、Island Inn）今天重開官網或 RISHIRI PLUS，冬天都不能住；北國大飯店 RISHIRI PLUS 也寫 11 月起休館。"
     },
     {
       "claimId": "C3",
-      "articleExcerpt": "2025年夏天的登山客也有九成以上走鴛泊路線；2025年夏天的10,625名登山客裡，也有10,375人走鴛泊路線",
-      "sourceUrl": "https://www.env.go.jp/park/page_00313.html",
-      "sourceTitle": "令和７（2025）年夏期の利尻山登山者数について｜環境省",
-      "sourceQuote": "夏期の利尻山登山者数は合計10,625人 ／ 登山道別では鴛泊が10,375人、沓形が250人でした。",
+      "articleExcerpt": "這一頁比較利尻島住宿住鴛泊還是沓形，介紹鴛泊5間、沓形3間旅館，也整理冬天能住的旅館、登山口接送和住宿稅。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/tozan/",
+      "sourceTitle": "利尻山登山 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "（導讀句）H3：鴛泊＝海洋、Rera Moshiri、田中家、雪國、Green Hill Inn；沓形＝利尻飯店、Island Inn、1721",
       "verdict": "verified",
-      "notes": "10,375÷10,625≈97.6%，「九成以上」成立"
+      "notes": "對過 H3：鴛泊 5 間、沓形 3 間，數字正確；各節都在。"
     },
     {
       "claimId": "C4",
-      "articleExcerpt": "鴛泊能住上百人的利尻海洋飯店（利尻マリンホテル）…都只開到10月；表列利尻海洋飯店（鴛泊）3月～10月，11月～2月休館",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/marin-hotel/",
-      "sourceTitle": "利尻マリンホテル｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鴛泊エリア ／ 営業期間 ３月〜１０月 定休日 １１月～２月は休館します。 ／ 【収容人数】１６１名",
+      "articleExcerpt": "住鴛泊最順：從稚內來的渡輪就停在鴛泊渡輪站",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "ー時刻表 日本語(稚内-鴛泊) | ハートランドフェリー",
+      "sourceQuote": "稚内発～鴛泊着｜鴛泊発～稚内着（2026年1月1日～12月31日）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "Heartland Ferry 稚內–利尻航線只停鴛泊。「最順」是推論：渡輪、機場、鴛泊登山口都近（下面三筆），推得成立。"
     },
     {
       "claimId": "C5",
-      "articleExcerpt": "Aya瀨飯店（ホテルあや瀬）…上百人…只開到10月；表列Aya瀨飯店（鴛泊）4月～10月，11月～3月休館",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/hotel-ayase/",
-      "sourceTitle": "ホテルあや瀬｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鴛泊エリア ／ 営業期間 ４月〜１０月 定休日 １１月〜３月は休館します。 ／ 【収容人数】１８４名",
+      "articleExcerpt": "鴛泊的旅館開車到利尻機場大約7到10分鐘",
+      "sourceUrl": "http://rishirinarita.jp/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/",
+      "sourceTitle": "アクセス - 旅館なり田 公式WEBサイト",
+      "sourceQuote": "（旅館なり田）利尻空港より車で約１０分｜（しまのやど かむいりしり）利尻空港からタクシーで約10分｜（マリン）利尻空港から車で8分｜（あや瀬）約７分｜（ひなげし館）車で8分｜（雪国）自動車で8分｜（レラモシリ冬季プラン）車で7分",
       "verdict": "verified",
-      "notes": ""
+      "notes": "本頁介紹的鴛泊 5 間中海洋、田中家、雪國 8 分、Rera Moshiri 7 分，但同在鴛泊、出現在本頁冬季與比較表的旅館 Nari田官網寫約 10 分、Kamui利尻寫計程車約 10 分，Green Hill Inn 官網沒寫機場時間。「鴛泊的旅館…只要7到8分鐘」說過頭。保守改法：「鴛泊的旅館開車到利尻機場大約7到10分鐘」。｜第2輪（2026-11-19）：照保守改法改成「大約7到10分鐘」：Rera Moshiri 7、海洋・田中家・雪國 8、Nari田約 10、Kamui利尻計程車約 10，成立。"
     },
     {
       "claimId": "C6",
-      "articleExcerpt": "利尻富士觀光飯店（利尻富士観光ホテル）…上百人…只開到10月；表列利尻富士觀光飯店（鴛泊）3月～10月，11月～2月休館",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/fujikanko-hotel/",
-      "sourceTitle": "利尻富士観光ホテル｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鴛泊エリア ／ 営業期間 ３月〜１０月 定休日 １１月～２月は休館します。 ／ 【収容人数】１３０名",
+      "articleExcerpt": "從鴛泊市區開車到鴛泊登山口也大約10分鐘",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
+      "sourceTitle": "登山口へのアクセス利尻富士町",
+      "sourceQuote": "「鴛泊市街地」～ 3.5ｋｍ 約10分",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C7",
-      "articleExcerpt": "這時還開門的是旅館雪國（旅館雪国）…全年營業；旅館雪國，12月31日到1月5日休",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/ryokan-yukiguni/",
-      "sourceTitle": "旅館 雪国｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鴛泊エリア ／ 営業期間 通年 定休日 １２月３１日〜１月５日",
+      "articleExcerpt": "這一區介紹的是利尻海洋飯店（利尻マリンホテル）、Maruzen民宿Rera Moshiri（マルゼンペンション レラモシリ）、旅館田中家虞美人館（旅館 田中家ひなげし館）、旅館雪國（旅館 雪国），和可以自己煮的青年旅館利尻Green Hill Inn（利尻ぐりーんひる inn）。",
+      "sourceUrl": "https://rishiri-greenhill.net/",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "元ユースホステル・男女別ドミトリー＆プライベートルーム セルフキッチンの宿｜利尻島のゲストハウス / バックパッカーズホステル",
       "verdict": "verified",
-      "notes": ""
+      "notes": "五間都在鴛泊（地址鴛泊字港町、栄町、本町、富士野）；日文原名與各官網一致。Green Hill Inn 是前青年旅館、現在自稱背包客旅舍，標籤成立。"
     },
     {
       "claimId": "C8",
-      "articleExcerpt": "中原旅館這類全年營業的旅館；沓形的中原旅館，年末年始休",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/nakahara/",
-      "sourceTitle": "中原旅館｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "利尻町 > 沓形エリア > 中原旅館 ／ 営業期間 通年（年末年始を除く）",
+      "articleExcerpt": "想看日本海的夕陽，或夏天要從沓形港搭船去禮文島的，就住島西邊的沓形",
+      "sourceUrl": "https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "【重要】ご宿泊の冬季休業のお知らせ | ホテル利尻",
+      "sourceQuote": "利尻島の西海岸・沓形（くつがた）地区に位置し、利尻山ならびに夕陽の美しい日本海の雄大な眺め",
       "verdict": "verified",
-      "notes": ""
+      "notes": "推論檢查：沓形在西海岸，利尻飯店與 Island Inn 官網都以日本海夕陽為賣點；是建議不是排他（鴛泊的 Kamui利尻、Hera家也看得到夕陽），寫法「想看…就住」可接受。"
     },
     {
       "claimId": "C9",
-      "articleExcerpt": "島上的旅館、民宿與飯店有三十多家，另有5處只在夏天開的露營場",
-      "sourceUrl": "https://www.rishiri-plus.jp/wp-sitemap-posts-shima-htsp-1.xml",
-      "sourceTitle": "りしぷら 宿泊施設サイトマップ",
-      "sourceQuote": "sitemap 共 39 筆 shima-htsp：numaura-camp、kutsugata-camp、shinrin-park、yuuni-campsite、hokuroku-campsite 5 處露營場，其餘 34 筆",
+      "articleExcerpt": "沓形港往禮文島香深的船2026年是6月1日到9月30日才有",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島 | ハートランドフェリー",
+      "sourceQuote": "6/1～9/30 …沓形発～香深着 14:25～15:05",
       "verdict": "verified",
-      "notes": "露營場期間見露營場各筆（最晚 10/31 關）"
+      "notes": "有年份。2027 年時刻表還沒公布。"
     },
     {
       "claimId": "C10",
-      "articleExcerpt": "鴛泊｜利尻富士町，島的北邊；鬼脇｜利尻富士町，島的東邊",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/hotel-kawaichi/",
-      "sourceTitle": "プチホテル川一｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "TOP > 利尻富士町 > 鬼脇エリア > プチホテル川一 ／（旅館雪国頁）TOP > 利尻富士町 > 鴛泊エリア",
-      "verdict": "verified",
-      "notes": "方位為地理常識：鴛泊在北、鬼脇在東"
-    },
-    {
-      "claimId": "C11",
-      "articleExcerpt": "沓形｜利尻町，島的西邊；仙法志｜利尻町，島的南邊",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/yado-hamada/",
-      "sourceTitle": "民宿 はまだ 利尻ん輪 ライハ｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "TOP > 利尻町 > 仙法志エリア > 民宿 はまだ ／（中原旅館頁）TOP > 利尻町 > 沓形エリア",
+      "articleExcerpt": "這一區介紹有溫泉的利尻飯店（ホテル利尻）、Island Inn利尻（アイランドインリシリ），和有多人房的Guest House 1721（ゲストハウス1721）。",
+      "sourceUrl": "http://www.kukiru.com/guesthouse.html",
+      "sourceTitle": "利尻島ゲストハウスいちななにーいち（公式予約サイト）　Guest house reservation | 株式会社群来留（クキル）",
+      "sourceQuote": "４人部屋ドミトリー（男女別相部屋・男女混合相部屋）｜（ホテル利尻）天然温泉｜（アイランドインリシリ）島の天然温泉",
       "verdict": "verified",
       "notes": ""
     },
     {
+      "claimId": "C11",
+      "articleExcerpt": "沓形到鴛泊渡輪站開車大約15到20分鐘",
+      "sourceUrl": "https://www.yadoken.jp/plans?hotel_id=yk102681",
+      "sourceTitle": "中原旅館 - プラン一覧",
+      "sourceQuote": "沓形港まで徒歩約7分／鴛泊港より車で約20分｜（アイランドインリシリ）鴛泊港からお車で約20分｜（1721）鴛泊港から車で１５分",
+      "verdict": "verified",
+      "notes": "三個官方數字 15、20、20 分，起點都是沓形的旅館，合成「大約15到20分鐘」成立。"
+    },
+    {
       "claimId": "C12",
-      "articleExcerpt": "利尻機場也在鴛泊",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1184.htm",
-      "sourceTitle": "利尻空港｜利尻富士町",
-      "sourceQuote": "利尻空港管理事務所 〒097-0101 北海道利尻郡利尻富士町鴛泊字本泊1143番地",
+      "articleExcerpt": "到鴛泊登山口要25分鐘左右",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
+      "sourceTitle": "登山口へのアクセス利尻富士町",
+      "sourceQuote": "「沓形市街地」～ 15ｋｍ 約25分",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C13",
-      "articleExcerpt": "6月到9月有船往返禮文島香深，約40分鐘；沓形港往禮文島香深的船只在6月到9月行駛，船程約40分鐘",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
-      "sourceTitle": "時刻表 利尻島～礼文島｜ハートランドフェリー",
-      "sourceQuote": "6/1～9/30 沓形発～香深着 14:25～15:05 ／ 香深発～沓形着 12:50～13:30（沓形航線只列在 6/1～9/30）",
+      "articleExcerpt": "所以住沓形又要爬鴛泊路線的，可以選有免費送鴛泊登山口的利尻飯店。",
+      "sourceUrl": "https://hotel-rishiri.jp/access",
+      "sourceTitle": "利尻島の行き方 | フェリー・飛行機・交通まとめ【稚内・札幌・東京から】",
+      "sourceQuote": "利尻空港・鴛泊フェリーターミナル・登山道入口までの無料送迎｜鴛泊登山口行き、朝5時30分にホテル出発",
       "verdict": "verified",
-      "notes": ""
+      "notes": "「可以選」沒有排他，1721 的付費接送另有交代，成立。"
     },
     {
       "claimId": "C14",
-      "articleExcerpt": "離渡輪站走路5到8分鐘的小旅館；利尻Umineko旅舍｜渡輪站走路約5分鐘，不提供接送",
-      "sourceUrl": "https://www.rishiriumineko.com",
-      "sourceTitle": "利尻うみねこゲストハウス",
-      "sourceQuote": "おしどまり（鴛泊）港フェリーターミナルから徒歩5分のところにあります。＊送迎は行っておりません。",
+      "articleExcerpt": "兩島都想住的話，鴛泊全年有船到禮文島香深，船程約45分鐘",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "利尻島～礼文島 | ハートランドフェリー",
+      "sourceQuote": "鴛泊発～香深着 1/1～4/27 16:00～16:45｜4/28～5/31 12:15～13:00｜6/1～9/30 09:30～10:15｜10/1～10/31 12:15～13:00｜11/1～12/31 16:00～16:45",
       "verdict": "verified",
-      "notes": ""
+      "notes": "2026 年全年每段期間都有鴛泊–香深，各班 45 分鐘。2027 年時刻表還沒公布。"
     },
     {
       "claimId": "C15",
-      "articleExcerpt": "Shima no Yado Kamuirishiri｜渡輪站走路約8分鐘，不到機場接送；搭飛機抵達、住在不接機的Kamuirishiri…要自己搭巴士或計程車過去",
-      "sourceUrl": "http://www.kamuirishiri.com/",
-      "sourceTitle": "【公式】しまのやど かむいりしり",
-      "sourceQuote": "鴛泊港フェリーターミナルから宿まで徒歩8分 ／ ※空港からの送迎は実施していないためバスかタクシーにてお越し下さい。",
+      "articleExcerpt": "12月到2月去利尻島，能住上百人的飯店都休館",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/marin-hotel/",
+      "sourceTitle": "利尻マリンホテル | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "利尻マリンホテル 営業期間 ３月〜１０月｜１１月〜２月は休館｜【収容人数】１６１名（利尻富士観光ホテル １３０名、ホテルあや瀬 １８４名 １１月〜３月は休館、北国グランドホテル ２０１名 １１月〜５月は休館）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "Island Inn（5～10 月）與利尻飯店（2026-11-30 起住宿休業）也在內，成立。"
     },
     {
       "claimId": "C16",
-      "articleExcerpt": "町營的利尻飯店（沓形）",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/hotel-rishiri/",
-      "sourceTitle": "ホテル利尻｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "利尻町 > 沓形エリア > ホテル利尻 ／ 利尻島西海岸、沓形地区にある町営ホテルです。",
+      "articleExcerpt": "沓形的利尻飯店也從2026年11月30日到2027年3月下旬暫停住宿",
+      "sourceUrl": "https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "【重要】ご宿泊の冬季休業のお知らせ | ホテル利尻",
+      "sourceQuote": "2026年11月30日より2027年3月下旬まで、ご宿泊の営業を冬季休業",
       "verdict": "verified",
-      "notes": ""
+      "notes": "有年份；重新營業日官網還沒公布。"
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "Island Inn Rishiri（沓形）",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/island-in-rishiri/",
-      "sourceTitle": "アイランドインリシリ｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "TOP > 利尻町 > 沓形エリア > アイランドインリシリ",
+      "articleExcerpt": "冬天確定訂得到的是幾間小旅館：鴛泊的Rera Moshiri（2027年1月6日起）、雪國、旅館Nari田（旅館なり田），和沓形的中原旅館。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/ryokan-yukiguni/",
+      "sourceTitle": "旅館 雪国 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "（RISHIRI PLUS）旅館 雪国 営業期間 通年｜旅館 なり田 通年｜中原旅館 通年（年末年始を除く）｜ﾏﾙｾﾞﾝﾍﾟﾝｼｮﾝ レラモシリ 通年｜（他館）ペンション群林風・旅館富士・夕陽館・プチホテル川一・正部川旅館・民宿くつがた荘 等 営業期間 通年｜（Rera 官方日曆）2027年1月 6 ◎｜（Nari田）朝食付プラン2027（１月～５月）｜（雪国）冬季 １泊２食付き｜（中原）2食付き プラン販売期間：2026/10/19～2027/3/31",
       "verdict": "verified",
-      "notes": ""
+      "notes": "「只剩」推過頭：RISHIRI PLUS 另把群林風、旅館富士（鬼脇）、夕陽館、小飯店川一、正部川旅館、沓形莊等列為全年營業（facts.md K63、K64、K66），只是官網打不開或沒有冬季方案，證據弱，不能證明它們冬天沒開。另外 Rera Moshiri 2026 年 12 月整月沒有開賣（10/15～12/20 休業、官方日曆 12 月全是「-」），「12月到2月…還開」對它不完全成立（下一段有交代）。保守改法：「冬天確定訂得到的是幾間小旅館：鴛泊的Rera Moshiri（1月6日起）、雪國、旅館Nari田，和沓形的中原旅館。」｜第2輪（2026-11-19）：改成「確定訂得到的是幾間」，不再排他，Rera Moshiri 加「（2027年1月6日起）」，成立。四間都有官方冬季方案：Rera、中原有官方日曆，雪國有冬季方案（Trip.com 12 月也訂得到，K80），Nari田只有 2027 年 1～5 月方案頁、只收電話、看不到空房，「確定訂得到」對它略強，但有官方方案，可接受。"
     },
     {
       "claimId": "C18",
-      "articleExcerpt": "沓形神居的VILLA KAMUI一天只接一組客人，整棟包下來住，還附三溫暖",
-      "sourceUrl": "https://villa-kamui.com/",
-      "sourceTitle": "Villa Kamui（ヴィラカムイ）",
-      "sourceQuote": "一日一組限定「一棟貸切サウナ付プライベートヴィラ」 ／ 〒097-0401 北海道利尻郡利尻町沓形字神居",
+      "articleExcerpt": "Rera Moshiri從2026年10月15日休業到12月20日",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/",
+      "sourceTitle": "トップページ of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "2026年10月15日から12月20日まで休業期間となります。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C19",
-      "articleExcerpt": "這裡的接送會配合機場與港口的抵達時間",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/villa-kamui/",
-      "sourceTitle": "VILLA KAMUI(ヴィラカムイ)｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "空港・各港への到着時間に合わせた当館までの送迎がございます。",
+      "articleExcerpt": "冬天露天只開檜木那一座，男女輪流泡",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/onsen.html",
+      "sourceTitle": "温泉 of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "10～5月までの冬期間は男女時間交代制で「檜の湯」のみの営業",
       "verdict": "verified",
-      "notes": ""
+      "notes": "官網原文「男女時間交代制で「檜の湯」のみの営業」。冬季方案頁同樣寫「10月～5月までは「檜のお風呂」のみ…時間制で男女入れ替え」。"
     },
     {
       "claimId": "C20",
-      "articleExcerpt": "鬼脇的小飯店川一（プチホテル川一）與旅館富士都全年營業；川一免費接送鴛泊渡輪站，要事先聯絡",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/hotel-kawaichi/",
-      "sourceTitle": "プチホテル川一｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鬼脇エリア ／ 営業期間 通年 ／ ※鴛泊フェリーターミナルまで、無料送迎あり。事前連絡が必要です。",
+      "articleExcerpt": "雪國冬天也有方案",
+      "sourceUrl": "http://ryokanyukiguni.com/?page_id=38",
+      "sourceTitle": "ご予約 | 旅館雪国",
+      "sourceQuote": "・夏季 １泊２食付き …（税込）・冬季 １泊２食付き …（税込 )",
       "verdict": "verified",
-      "notes": ""
+      "notes": "官網預約頁分夏季、冬季兩種價格。rwiths 方案頁（冬季用和室 2026-11-01～2027-04-26）今天連線被重設，沒能重開。"
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "旅館富士除了接送鴛泊渡輪站，鴛泊與沓形兩個登山口也都送，是少數跨區接送登山口的住宿",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/ryokan-fuji/",
-      "sourceTitle": "旅館 富士｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "利尻富士町 > 鬼脇エリア ／ 営業期間 通年 ／ ※鴛泊フェリーターミナル、鴛泊登山口、沓形登山口までの送迎あり。",
+      "articleExcerpt": "不過溫泉浴池只開到10月底，冬天沒有",
+      "sourceUrl": "http://ryokanyukiguni.com/?page_id=30",
+      "sourceTitle": "館内のご案内 | 旅館雪国",
+      "sourceQuote": "お風呂は天然の利尻富士温泉です。（４月２７日～１０月末）",
       "verdict": "verified",
-      "notes": "「少數跨區」對照 りしぷら 登山頁通則「鴛泊→沓形登山口や沓形→鴛泊登山口までの送迎は行っておりません」"
+      "notes": "官網只寫溫泉期間 4/27～10 月底；facts-reviews R46 有 2026-03、04 入住的住客說泡到溫泉，和官網對不上。正文照官網寫，成立；建議出發前向旅館確認。"
     },
     {
       "claimId": "C22",
-      "articleExcerpt": "仙法志｜民宿Hamada；仙法志的民宿Hamada（民宿はまだ）只在5月到10月營業；表列民宿Hamada（仙法志）5月～10月",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/yado-hamada/",
-      "sourceTitle": "民宿 はまだ 利尻ん輪 ライハ｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "仙法志エリア ／ 営業期間 ５月〜１０月（冬季休館：１１月〜４月）",
+      "articleExcerpt": "Nari田2027年1月到5月有方案，只收電話，浴室和廁所共用，也沒有禁菸房",
+      "sourceUrl": "http://rishirinarita.jp/%e6%97%85%e9%a4%a8%e6%a6%82%e8%a6%81/",
+      "sourceTitle": "施設のご案内 - 旅館なり田 公式WEBサイト",
+      "sourceQuote": "※全室喫煙可能（禁煙タイプのお部屋はございません）｜洗面所、トイレ、お風呂は共用｜（空室状況）当サイトでのオンラインによるご予約は受け付けておりません。ご予約は、お電話でのみの受付｜朝食付プラン2027（１月～５月）【期間】 令和９年１月～令和９年５月３１日まで",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C23",
-      "articleExcerpt": "依2026年6月的公告，沓形路線9合目以上的登山道封閉",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/secure/1717/02-1%20%E6%B3%A8%E6%84%8F%E5%96%9A%E8%B5%B7%E3%83%81%E3%83%A9%E3%82%B7%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89.pdf",
-      "sourceTitle": "注意喚起チラシ（日本語）｜利尻富士町",
-      "sourceQuote": "令和８年（2026年）６月 ／ ※現在沓形コースについては９合目から先の登山道が通行止めとなっています。",
+      "articleExcerpt": "中原旅館離沓形港走路約7分鐘，沒有接送，也沒有禁菸房",
+      "sourceUrl": "https://www.yadoken.jp/plan?hotel_id=yk102681&plan_id=8",
+      "sourceTitle": "中原旅館 - プラン詳細",
+      "sourceQuote": "沓形港まで徒歩約7分｜※送迎はございません。｜※禁煙部屋はございません。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C24",
-      "articleExcerpt": "傍晚還能到沓形的Kamui Terrace（カムイテラス）看夕陽，只是這座觀景台11月中旬到3月封閉",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kamui-terrace/",
-      "sourceTitle": "カムイテラス｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "北海道利尻郡利尻町沓形字神居149-2 ／ 夕陽スポットでもあり ／ 11月中旬から3月頃まで冬季閉鎖",
+      "articleExcerpt": "訂房看[中原旅館官網](https://www.yadoken.jp/plans?hotel_id=yk102681)或[Trip.com](https://tw.trip.com/hotels/rishiri-hotel-detail-17453026/nakahara-ryokan/)",
+      "sourceUrl": "https://www.yadoken.jp/plans?hotel_id=yk102681",
+      "sourceTitle": "中原旅館 - プラン一覧",
+      "sourceQuote": "中原旅館 - プラン一覧（Trip.com 頁標題：中原旅館：2026 利尻住宿推薦與最新訂房優惠｜Trip.com）",
       "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C25",
-      "articleExcerpt": "A路線經鬼脇、B路線經沓形，夏天各5班、冬天各4班；繞島路線巴士A路線經過（鬼脇）",
-      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
-      "sourceTitle": "利尻線 夏期時刻表（宗谷バス）",
-      "sourceQuote": "Ａコース 鴛泊→鬼脇経由→鴛泊 Ｂコース 鴛泊→沓形経由→鴛泊 ／ 夏期ダイヤ（6月1日～9月30日）便 1～5 ／ 冬期ダイヤ（10月1日～5月31日）便 1～4",
-      "verdict": "verified",
-      "notes": "2026年4月28日改正版，以 PyMuPDF 抽出文字；仙法志停留所在時刻表上"
+      "notes": "兩個連結今天都打開，是中原旅館本身的頁面；yadoken 是 RISHIRI PLUS 登記的 WEB 欄網址。"
     },
     {
       "claimId": "C26",
-      "articleExcerpt": "計程車行鴛泊、沓形各一家，清晨都不營業",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
-      "sourceTitle": "登山口へのアクセス｜利尻富士町",
-      "sourceQuote": "・タクシー会社 富士ハイヤー ℡0163-82-1181 りしりハイヤー ℡0163-84-2252 ／ ※タクシー会社もございますが、早朝の営業は行っておりません。",
+      "articleExcerpt": "2026年底到2027年初最容易撲空：中原旅館12月27日到1月6日沒開賣",
+      "sourceUrl": "https://www.yadoken.jp/calendar",
+      "sourceTitle": "宿研ASP予約システム（中原旅館 空室カレンダー）",
+      "sourceQuote": "（facts-extra K74）12/27～31 未開賣；2027年1月 1～6 日「―」，1/7 以後多數日子有空房",
       "verdict": "verified",
-      "notes": "所在地：りしぷら アクセス頁 りしりハイヤー（利尻町・沓形）、富士ハイヤー（利尻富士町・鴛泊）"
+      "notes": "來源要執行 JavaScript，urllib 讀不到日曆；照 facts-extra.md 的瀏覽器紀錄（2026-11-19），這輪沒重開。｜第2輪（2026-11-19）：句首改成這句開頭（Rera 那段已刪），內容不變。"
     },
     {
       "claimId": "C27",
-      "articleExcerpt": "租車公司鴛泊有5家，沓形只有1家",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-he-iku/",
-      "sourceTitle": "アクセス｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "かめやレンタカー（利尻町・沓形）／利尻レンタカー（利尻富士町・鴛泊）／ニッポンレンタカー 利尻営業所（利尻富士町・鴛泊）／トヨタレンタリース旭川利尻営業所（利尻富士町・鴛泊）／マルゼンレンタカー（利尻富士町・鴛泊）／まごころレンタカー 鴛泊営業所",
+      "articleExcerpt": "雪國12月31日到1月5日休息",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/ryokan-yukiguni/",
+      "sourceTitle": "旅館 雪国 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業期間 通年 定休日 １２月３１日〜１月５日",
       "verdict": "verified",
-      "notes": ""
+      "notes": "只有 RISHIRI PLUS 一個來源（旅館官網沒寫休館日）。"
     },
     {
       "claimId": "C28",
-      "articleExcerpt": "鴛泊港的渡輪站海之驛鴛泊（海の駅おしどまり）有投幣置物櫃與觀光案內所；行李可以先寄在這裡",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1488.htm",
-      "sourceTitle": "海の駅おしどまり｜利尻富士町",
-      "sourceQuote": "・多機能トイレ・コインロッカー・授乳室・キッズコーナー・飲食店・売店 ・Wi－Fi・観光案内所",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C29",
-      "articleExcerpt": "利尻富士觀光飯店｜離鴛泊渡輪站最近，渡輪站、機場與登山口的接送在訂房時詢問",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/fujikanko-hotel/",
-      "sourceTitle": "利尻富士観光ホテル｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鴛泊フェリーターミナルから最も近いホテル ／ ※フェリーターミナル、空港、登山口までの送迎は、予約時の対応となります。お問合せください。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C30",
-      "articleExcerpt": "利尻海洋飯店｜接送渡輪站、機場與利尻山登山口",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/marin-hotel/",
-      "sourceTitle": "利尻マリンホテル｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "※鴛泊フェリーターミナル、利尻空港、利尻山登山口、近隣施設までの送迎あり。事前にお問合せください。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C31",
-      "articleExcerpt": "Aya瀨飯店｜免費接送渡輪站與機場，要事先告知抵達地點與時間",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/hotel-ayase/",
-      "sourceTitle": "ホテルあや瀬｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "※鴛泊フェリーターミナル、利尻空港への無料送迎あり。希望する場合は、到着地と到着時刻を事前に連絡してください。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C32",
-      "articleExcerpt": "旅館田中家Hinageshi館｜免費接送機場、渡輪站與鴛泊登山口；表列旅館田中家Hinageshi館（鴛泊）5月～10月，11月～4月休館",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/tanakahinagesi/",
-      "sourceTitle": "旅館 田中家ひなげし館｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鴛泊エリア ／ 営業期間 ５月〜１０月 定休日 １１月〜４月は休館します。 ／ ※利尻空港、鴛泊フェリーターミナル、鴛泊登山口への無料送迎あり。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C33",
-      "articleExcerpt": "利尻Umineko旅舍（利尻うみねこゲストハウス）2026年的營業已經結束，2027年的營業期間與訂房都還沒定；表列「2026年營業已結束，2027年營業期間未定」；接送表「2026年已結束營業」",
-      "sourceUrl": "https://www.rishiriumineko.com",
-      "sourceTitle": "利尻うみねこゲストハウス",
-      "sourceQuote": "2026年の営業は終了しました。 ／ 2027年の営業期間、ご予約受付は未定です。",
-      "verdict": "verified",
-      "notes": "りしぷら仍寫 5月〜10月中旬，以官網為準"
-    },
-    {
-      "claimId": "C34",
-      "articleExcerpt": "鴛泊登山口在北麓野營場，巴士不到這裡，從渡輪站走過去3.6公里要約60分鐘",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
-      "sourceTitle": "登山口へのアクセス｜利尻富士町",
-      "sourceQuote": "「フェリーターミナル」～ 3.6ｋｍ 約60分 ／ ※登山口までのバスの運行はございません。（温泉バス停まで）",
-      "verdict": "verified",
-      "notes": "登山口位置：1397.htm「鴛泊市街地から約５ｋｍの北麓野営場が登山口です。」"
-    },
-    {
-      "claimId": "C35",
-      "articleExcerpt": "鴛泊路線天氣好也要11小時",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1397.htm",
-      "sourceTitle": "コース概要｜利尻富士町",
-      "sourceQuote": "標高差 1,490ｍ 登り６時間・下り４時間 ／ 山頂で１時間の休憩を考えると、天候のいい日でも１１時間必要です。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C36",
-      "articleExcerpt": "島上幾乎每家住宿都接送登山口，不過多半只送自己那一區的，住鴛泊就是送鴛泊登山口",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/tozan/",
-      "sourceTitle": "利尻山登山｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "ほぼ全ての宿泊施設が送迎を行っております 。 (鴛泊→沓形登山口や沓形→鴛泊登山口までの送迎は行っておりません)",
-      "verdict": "verified",
-      "notes": "原文寫不跨區；正文寫「多半」以容納旅館富士的例外，方向一致"
-    },
-    {
-      "claimId": "C37",
-      "articleExcerpt": "Maruzen民宿Rera Moshiri（マルゼンペンション レラモシリ）會配合登山客日出出發，把早餐改成便當",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/reramoshiri/",
-      "sourceTitle": "ﾏﾙｾﾞﾝﾍﾟﾝｼｮﾝ レラモシリ｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "※利尻山登山をされる方は日の出時間に合わせた早朝出発となるため、朝食がお弁当になります。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C38",
-      "articleExcerpt": "登山計畫書的表格在住宿就拿得到",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1396.htm",
-      "sourceTitle": "登山情報｜利尻富士町",
-      "sourceQuote": "登山の際は必ず、登山計画書（駐在所・宿泊施設にあり）の提出を必ず行ってください",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C39",
-      "articleExcerpt": "一套450圓的攜帶式廁所也買得到（在住宿）",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1398.htm",
-      "sourceTitle": "登山時のマナー｜利尻富士町",
-      "sourceQuote": "１セット ４5０円 ／ 各宿泊施設、各商店、コンビニエンスストア、町役場、観光案内所、",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C40",
-      "articleExcerpt": "定期觀光巴士的利尻B行程利尻景點巡遊（利尻スポットめぐり）也只在6月到9月運行，13:45從沓形渡輪站出發；從稚內坐船會先到鴛泊，要再搭經沓形的路線巴士B路線過去",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
-      "sourceTitle": "全コース一覧｜宗谷バス株式会社",
-      "sourceQuote": "コース名 / 利尻B - 所要時間 / 2:30 利尻スポットめぐり ／ 6月1日～9月30日 13:45発 (沓形FT) → 16:15着 (鴛泊FT) ／ 稚内からお越しになる場合は鴛泊フェリーターミナルから沓形フェリーターミナルへ各自で移動する必要がございます。",
-      "verdict": "verified",
-      "notes": "B路線經沓形見宗谷巴士時刻表 PDF「Ｂコース 鴛泊→沓形経由→鴛泊」"
-    },
-    {
-      "claimId": "C41",
-      "articleExcerpt": "町營的利尻飯店（ホテル利尻）免費接送利尻機場、鴛泊渡輪站與登山口，但採事前預約制，沒預約就不開車；往鴛泊登山口的車早上5:30從飯店出發",
-      "sourceUrl": "https://hotel-rishiri.jp/access",
-      "sourceTitle": "アクセス｜ホテル利尻",
-      "sourceQuote": "利尻空港・鴛泊フェリーターミナル・登山道入口までの無料送迎を行っております。 ／ ※事前予約制のため、予約がない場合は運行いたしません。 ／ 鴛泊登山口行き、朝5時30分にホテル出発。",
-      "verdict": "verified",
-      "notes": "りしぷら頁仍列沓形FT，正文依飯店官網"
-    },
-    {
-      "claimId": "C42",
-      "articleExcerpt": "Island Inn Rishiri（アイランドインリシリ）入選過《米其林指南2017》",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/island-in-rishiri/",
-      "sourceTitle": "アイランドインリシリ｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "ミシュランガイド2017に選出され",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C43",
-      "articleExcerpt": "2026年的營業已在9月30日結束。2027年預定5月22日開幕，12月1日9:00起開放訂房，官網與各訂房網站都會受理",
-      "sourceUrl": "https://rishiri.by-onko-chishin.com/191/",
-      "sourceTitle": "アイランドインリシリ 営業についてのお知らせ｜温故知新",
-      "sourceQuote": "2026年9月30日（水）をもちまして、2026年度の営業を終了いたします。 ／ 営業開始予定日：2027年5月22日（土） ／ 宿泊予約受付開始日：2026年12月1日（火）9:00より ／ 宿泊のご予約は、公式ホームページをはじめ、各種OTAからお申し込みいただけるよう準備を進めてまいります。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C44",
-      "articleExcerpt": "路線巴士出了鴛泊、沓形、仙法志、鬼脇四個市區後，多數路段可以在路邊舉手攔車，要下車就直接跟司機說",
-      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/uploads/2025/03/29a5c2badb576f42ad4d4d9e07aefa7f.pdf",
-      "sourceTitle": "【利尻】自由乗降区間について｜宗谷バス",
-      "sourceQuote": "沓形、鴛泊、仙法志、⿁脇の市街地区間を除いた全区間 ／ バスが来たら手を挙げるなど乗車する合図を出してください。 ／ 降車したい場所に近づいてきましたら乗務員に降車したいことを口頭でお知らせください。",
-      "verdict": "verified",
-      "notes": "「多數路段」對應例外條件（斑馬線、彎道、隧道等可能拒絕）"
-    },
-    {
-      "claimId": "C45",
-      "articleExcerpt": "這一區唯一的餐廳是丸井食堂（マルヰ食堂），11:30開門、週二公休",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/marui-shokudo/",
-      "sourceTitle": "マルヰ食堂｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "仙法志エリアで唯一の飲食店 マルヰ食堂 ／ 営業時間 11：30〜 ／ 定休日 火曜",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C46",
-      "articleExcerpt": "5處露營場都只在夏天開，最早5月1日開、最晚10月31日關，11月到隔年4月一處也沒開",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1133.htm",
-      "sourceTitle": "キャンプ情報｜利尻富士町",
-      "sourceQuote": "ゆ～に 5月1日～10月31日 ／ 北麓野営場 5月15日～10月15日 ／ 沼浦 6月1日～9月30日",
-      "verdict": "verified",
-      "notes": "沓形岬公園、森林公園見りしぷら各頁 5月1日～10月31日（森林公園：冬期間閉鎖（11月～4月））"
-    },
-    {
-      "claimId": "C47",
-      "articleExcerpt": "利尻島家庭露營場｜鴛泊，渡輪站開車5分鐘｜5月1日～10月31日；離鴛泊渡輪站開車5分鐘",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1133.htm",
-      "sourceTitle": "キャンプ情報｜利尻富士町",
-      "sourceQuote": "利尻富士町鴛泊字栄町 ／ 鴛泊港フェリーターミナルから車で5分 ／ 5月1日～10月31日",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C48",
-      "articleExcerpt": "利尻北麓野營場｜鴛泊登山口｜5月15日～10月15日；利尻北麓野營場就在鴛泊登山口",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1133.htm",
-      "sourceTitle": "キャンプ情報｜利尻富士町",
-      "sourceQuote": "利尻北麓野営場 ／ 5月15日～10月15日",
-      "verdict": "verified",
-      "notes": "登山口：1397.htm「北麓野営場が登山口です」"
-    },
-    {
-      "claimId": "C49",
-      "articleExcerpt": "沼浦露營場｜Otatomari沼附近｜6月1日～9月30日；離鬼脇市區遠，沒開車很難採買…附近的Otatomari沼有商店與食堂…要留意營業時間",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1133.htm",
-      "sourceTitle": "キャンプ情報｜利尻富士町",
-      "sourceQuote": "6月1日～9月30日 ／ 鬼脇市街地から離れていますので、車がなければ食材買出しはきつい！買い物をしてからキャンプしましょう。近くのオタドマリ沼には売店や食堂があります。食事をそこで済ませるのも手です（営業時間に注意！）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C50",
-      "articleExcerpt": "沓形岬公園露營場｜沓形岬公園｜5月1日～10月31日",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/kutsugata-camp/",
-      "sourceTitle": "沓形岬公園キャンプ場｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "利尻町 > 沓形エリア > 沓形岬公園キャンプ場 ／ 営業期間 ５月１日～１０月３１日",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C51",
-      "articleExcerpt": "利尻町森林公園露營場｜沓形｜5月1日～10月31日；沓形岬公園露營場…與利尻町森林公園露營場…都在沓形",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/shinrin-park/",
-      "sourceTitle": "利尻町森林公園キャンプ場｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "北海道利尻郡利尻町沓形字富野 ／ 5月1日～10月31日 ／ 冬期間閉鎖（11月～4月）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C52",
-      "articleExcerpt": "12月到隔年2月，下表的住宿全部不營業",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/",
-      "sourceTitle": "宿泊施設｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "依表內各家來源重算：マリン・富士観光 11～2月休館、ぐりーんひる 11～2月休館、あや瀬 11～3月、ひなげし館 11～4月、はまだ 11～4月、雲丹御殿 10～5月、うみねこ 2026年終了、アイランドイン 2027/5/22 開業、ホテル利尻 2026/11/30～2027/3下旬休",
-      "verdict": "verified",
-      "notes": "推算與各家原文一致；Rera Moshiri 已移出本表"
-    },
-    {
-      "claimId": "C53",
-      "articleExcerpt": "11月天氣變差，渡輪停航的日子跟著變多，下旬平地也開始積雪",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
-      "sourceTitle": "島の四季｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "１１月・NOVEMBER … 厳しい天候が多くなり、フェリーの欠航が多くなります。利尻山は裾野まで真っ白な雪化粧をし、下旬には平地でも根雪となります。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C54",
-      "articleExcerpt": "3月起利尻海洋飯店、利尻富士觀光飯店與利尻Green Hill Inn陸續開門；表列利尻Green Hill Inn（鴛泊）3月～10月上旬，11月～2月休館，不含餐、可以自炊",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/greenhill/",
-      "sourceTitle": "利尻ぐりーんひる inn｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "利尻富士町 > 鴛泊エリア ／ 現在は自炊可能な素泊まり宿 ／ 営業期間 ３月〜１０月上旬 定休日 １１月〜２月は休館します。",
-      "verdict": "verified",
-      "notes": "マリン、富士観光 3月起見各自りしぷら頁"
-    },
-    {
-      "claimId": "C55",
-      "articleExcerpt": "（全年營業鴛泊清單）Maruzen民宿Rera Moshiri，10月15日到12月20日休業，休業期間不接電話，要用e-mail聯絡",
-      "sourceUrl": "http://www.maruzen.com/tic/oyado/",
-      "sourceTitle": "マルゼンペンション レラモシリ",
-      "sourceQuote": "2026年10月15日から12月20日まで休業期間となります。 ／ お電話での対応は出来ませんのでe-mailでお願い致します。",
-      "verdict": "verified",
-      "notes": "りしぷら レラモシリ頁：鴛泊エリア、営業期間 通年；正文只寫休業期間，列在全年營業清單與りしぷら一致"
-    },
-    {
-      "claimId": "C56",
-      "articleExcerpt": "雲丹御殿飯店（野塚展望台旁）6月～9月，10月～5月休館；是表上營業期最短的一間；這間免費接送渡輪站、機場與鴛泊登山口",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/unigoten/",
-      "sourceTitle": "ホテル雲丹御殿｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "野塚展望台の隣に位置する ／ 営業期間 ６月〜９月 定休日 １０月〜５月は休館します。 ／ ※鴛泊フェリーターミナル、利尻空港、鴛泊登山口への無料送迎あり。事前予約が必要です。",
-      "verdict": "verified",
-      "notes": "4 個月，表上其他各列至少 5 個月"
-    },
-    {
-      "claimId": "C57",
-      "articleExcerpt": "利尻飯店（沓形）住宿2026年11月30日～2027年3月下旬冬季休業，日歸溫泉照常營業；利尻飯店冬天不能住，但日歸溫泉照常開",
-      "sourceUrl": "https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
-      "sourceTitle": "【重要】ご宿泊の冬季休業のお知らせ｜ホテル利尻",
-      "sourceQuote": "2026年11月30日より2027年3月下旬まで、ご宿泊の営業を冬季休業とさせていただきます。 ／ ※日帰り温泉は冬季も通常営業しております。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C58",
-      "articleExcerpt": "在其他網站看到利尻飯店全年營業，今年冬天其實不能住，住宿從11月30日起休業",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/hotel-rishiri/",
-      "sourceTitle": "ホテル利尻｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "営業期間 通年（年末年始は除く）",
-      "verdict": "verified",
-      "notes": "11月30日起休業見ホテル利尻冬季休業公告那筆"
-    },
-    {
-      "claimId": "C59",
-      "articleExcerpt": "旅館雪國…免費接送機場、渡輪站與鴛泊登山口",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/ryokan-yukiguni/",
-      "sourceTitle": "旅館 雪国｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "※利尻空港、鴛泊フェリーターミナル、鴛泊登山口への無料送迎あり。事前連絡が必要です。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C60",
-      "articleExcerpt": "夕陽館，免費接送機場與渡輪站（鴛泊、全年營業）",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/yuuhikan/",
-      "sourceTitle": "夕陽館｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鴛泊エリア ／ 営業期間 通年 ／ ※利尻空港、鴛泊フェリーターミナルへの無料送迎あり。事前連絡が必要です。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C61",
-      "articleExcerpt": "民宿群林風（ペンション群林風），接送渡輪站、機場、鴛泊登山口與利尻富士溫泉（鴛泊、全年營業）",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/greenwind/",
-      "sourceTitle": "ペンション群林風｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鴛泊エリア ／ 営業期間 通年 ／ ※鴛泊フェリーターミナル、利尻空港、鴛泊登山口（自然休養林）、利尻富士温泉保養施設への送迎あり。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C62",
-      "articleExcerpt": "利尻山莊花Rishiri（利尻山荘花りしり），接送渡輪站與鴛泊登山口（鴛泊、全年營業）",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/rishiri-sanso/",
-      "sourceTitle": "利尻山荘花りしり｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鴛泊エリア ／ 営業期間 通年 ／ ※鴛泊フェリーターミナル、鴛泊登山口への送迎あり。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C63",
-      "articleExcerpt": "旅館Nari田（旅館なり田），接送登山口與溫泉（鴛泊、全年營業）",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/ryokan-narita/",
-      "sourceTitle": "旅館 なり田｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "鴛泊エリア ／ 営業期間 通年 ／ ※登山送迎、温泉送迎あり。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C64",
-      "articleExcerpt": "鬼脇是小飯店川一與旅館富士，兩家都接送鴛泊渡輪站",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/ryokan-fuji/",
-      "sourceTitle": "旅館 富士｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "（旅館富士）※鴛泊フェリーターミナル、鴛泊登山口、沓形登山口までの送迎あり。 ／（プチホテル川一頁）※鴛泊フェリーターミナルまで、無料送迎あり。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C65",
-      "articleExcerpt": "正部川旅館，兩人以上免費接送，依時段而定（沓形、全年營業）",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/shobukawa/",
-      "sourceTitle": "正部川旅館｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "沓形エリア ／ 営業期間 通年（年末年始を除く） ／ ※無料送迎は２名以上から、時間帯によります。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C66",
-      "articleExcerpt": "民宿Kutsugata莊（民宿くつがた荘）（沓形、全年營業）",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/kutsugata-sou/",
-      "sourceTitle": "民宿 くつがた荘｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "利尻町 > 沓形エリア > 民宿 くつがた荘 ／ 営業期間 通年",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C67",
-      "articleExcerpt": "1月1日到3日島上的路線巴士全部停駛",
+      "articleExcerpt": "1月1日到3日路線巴士也全部停駛",
       "sourceUrl": "http://www.soyabus.co.jp/routebus/rishiri",
-      "sourceTitle": "利尻エリア｜宗谷バス株式会社",
+      "sourceTitle": "利尻エリア | 宗谷バス株式会社",
       "sourceQuote": "1月1日～3日は年始により路線バスが全便運休 となります。",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C68",
-      "articleExcerpt": "札幌丘珠機場的航班全年飛利尻",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1416.htm",
-      "sourceTitle": "交通アクセス｜利尻富士町",
-      "sourceQuote": "飛行機は通年運航で丘珠から、利尻島までひとっ飛びできます。",
+      "claimId": "C29",
+      "articleExcerpt": "住的旅館沒有溫泉的話，利尻飯店冬天雖然不能住，日歸溫泉照常開。",
+      "sourceUrl": "https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "【重要】ご宿泊の冬季休業のお知らせ | ホテル利尻",
+      "sourceQuote": "※日帰り温泉は冬季も通常営業しております。",
+      "verdict": "verified",
+      "notes": "日歸 13:00～21:00（最終受付 20:30），onsen 頁。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "11月起天候變差，渡輪常停航",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "秋と初冬の狭間となるこの時期は、厳しい天候が多くなり、フェリーの欠航が多くなります。",
+      "verdict": "verified",
+      "notes": "RISHIRI PLUS 11 月條目。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "想住大一點的飯店，這一頁整理了鴛泊三間能住上百人的：利尻海洋飯店、利尻富士觀光飯店（利尻富士観光ホテル）和Aya瀨飯店（ホテルあや瀬）",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/hotel-ayase/",
+      "sourceTitle": "ホテルあや瀬 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "（あや瀬）【収容人数】１８４名｜（マリン）１６１名｜（富士観光）１３０名；三間都在鴛泊エリア",
+      "verdict": "verified",
+      "notes": "RISHIRI PLUS 鴛泊區能住上百人的有四間：北國大飯店 201、Aya瀨 184、海洋 161、富士觀光 130。北國大飯店不點名可以，但「鴛泊有三間」與官方資料不符。保守改法：「想住大一點的飯店，下面這三間都能住上百人」或「鴛泊能住上百人的飯店，這裡介紹三間」。｜第2輪（2026-11-19）：改成「這一頁整理了…三間」並點名，不再說鴛泊只有三間；三間容量都過百，成立。北國大飯店仍不點名。日文原名ホテルあや瀬與 RISHIRI PLUS、官網一致。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "營業期間都只到10月，11月起就休館",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/hotel-ayase/",
+      "sourceTitle": "ホテルあや瀬 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "（あや瀬）４月〜１０月｜１１月〜３月は休館（マリン、富士観光 ３月〜１０月｜１１月〜２月は休館）",
+      "verdict": "verified",
+      "notes": "｜第2輪（2026-11-19）：主語改成點名的三間，仍成立（海洋、富士觀光 3～10 月，Aya瀨 4～10 月）。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "利尻富士觀光飯店3月到10月營業",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/fujikanko-hotel/",
+      "sourceTitle": "利尻富士観光ホテル | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業期間 ３月〜１０月 定休日 １１月～２月は休館します。",
+      "verdict": "verified",
+      "notes": "只有 RISHIRI PLUS 一個來源（官網打不開）。｜第2輪（2026-11-19）：「離鴛泊渡輪站最近」已拿掉，改由住客說法寫位置。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "住過的人說它就在鴛泊渡輪站對面、下船走幾分鐘就到，晚餐的在地海鮮也好吃，不過建築老舊，浴場只有一個室內大浴池。",
+      "sourceUrl": "https://tw.trip.com/hotels/rishirifuji-hotel-detail-1487903/rishiri-fuji-kanko-hotel/",
+      "sourceTitle": "利尻富士觀光飯店：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "facts-reviews：R54 位置（Trip.com 15 則中 12、4travel 10 則中 8、Google 5 則中 4）｜R58 晚餐在地海鮮好吃（Trip.com 正 2 負 1、4travel 3，以正面為主）｜R55 建築老舊（Trip.com 3、4travel 1、Google 1）｜R56 只有一個室內池（Trip.com 3、4travel 1、Google 1）",
+      "verdict": "verified",
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用內建瀏覽器讀，2026-11-19），這輪照指示沒有用瀏覽器重看評論。 四個點逐一對過，每點都是兩個平台以上、合計三則以上，facts-reviews 都標「可用」：R54 合計 24 則、R58 正面 5 則、R55 老舊 5 則、R56 只有室內池 5 則。整句用「住過的人說」帶起，好壞都有，沒有寫成本站結論。R58 有 1 則說普通、R55 同時有 6 則說房間打掃乾淨，這句沒寫乾淨，屬於取捨，不算錯；要更平衡可以補「房間打掃得乾淨」。「渡輪站對面」與 RISHIRI PLUS「フェリーターミナルから最も近い」一致，地址鴛泊字港町194-2。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "訂房可以看[Trip.com](https://tw.trip.com/hotels/rishirifuji-hotel-detail-1487903/rishiri-fuji-kanko-hotel/)或[Agoda](https://www.agoda.com/zh-tw/rishiri-fuji-kanko-hotel/hotel/rishiri-jp.html)",
+      "sourceUrl": "https://tw.trip.com/hotels/rishirifuji-hotel-detail-1487903/rishiri-fuji-kanko-hotel/",
+      "sourceTitle": "利尻富士觀光飯店：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "Trip.com 頁標題：利尻富士觀光飯店：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com",
+      "verdict": "verified",
+      "notes": "Trip.com 今天打開是這間。Agoda 頁 urllib 只回空殼（擋讀取工具），照 booking-links.md 的瀏覽器紀錄（H1「利尻富士觀光飯店 (Rishiri Fuji Kanko Hotel)」、地址 194-2 Minatomachi, Oshidomari）。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "利尻海洋飯店正後方就是Peshi岬（ペシ岬），走到頂大約15到20分鐘",
+      "sourceUrl": "http://marine-h.com/access/",
+      "sourceTitle": "観光・交通 | 【公式】利尻マリンホテル",
+      "sourceQuote": "当ホテルのすぐ後ろにある岩山です。ホテルから頂上まで片道約20分｜（FAQ）片道15分ほどで頂上まで",
       "verdict": "verified",
       "notes": ""
     },
     {
+      "claimId": "C37",
+      "articleExcerpt": "走到鴛泊渡輪站也只要8分鐘",
+      "sourceUrl": "http://marine-h.com/access/",
+      "sourceTitle": "観光・交通 | 【公式】利尻マリンホテル",
+      "sourceQuote": "鴛泊フェリーターミナルから徒歩8分です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "只是大浴場沒有露天浴池",
+      "sourceUrl": "http://marine-h.com/spa/",
+      "sourceTitle": "温泉 | 【公式】利尻マリンホテル",
+      "sourceQuote": "露天風呂 なし",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "晚餐是用利尻產的螃蟹、海膽、花魚做的日式定食",
+      "sourceUrl": "http://marine-h.com/meals/",
+      "sourceTitle": "お食事 | 【公式】利尻マリンホテル",
+      "sourceQuote": "夕食 18:00～20:30 朝食 7:00～9:00 利尻島産のカニ、ウニ、ホッケなどの魚介類を使った和定食をご用意しております。",
+      "verdict": "verified",
+      "notes": "RISHIRI PLUS 也寫「食事は事前予約のうえ…和定食」。｜第2輪（2026-11-19）：改成只寫晚餐，成立。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "生海膽只有6到9月吃得到",
+      "sourceUrl": "http://marine-h.com/meals/",
+      "sourceTitle": "お食事 | 【公式】利尻マリンホテル",
+      "sourceQuote": "（生うにの提供は6月～9月、それ以外は禁漁となっております）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "大雙床房和和洋室的窗外看得到利尻山和鴛泊港，和洋室住得下5人",
+      "sourceUrl": "http://marine-h.com/rooms/",
+      "sourceTitle": "客室 | 【公式】利尻マリンホテル",
+      "sourceQuote": "ラージツイン…窓からは利尻山と鴛泊港が一望｜和洋室…窓からは利尻山と鴛泊港が一望できます。…収容人数：5名様",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "大浴場用的是天然的利尻富士溫泉，泡完不容易冷",
+      "sourceUrl": "http://marine-h.com/spa/",
+      "sourceTitle": "温泉 | 【公式】利尻マリンホテル",
+      "sourceQuote": "最北の天然温泉｜湯から上がっても湯冷めすること無くポカポカです｜温泉 利尻富士温泉",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C152",
+      "articleExcerpt": "要爬山的話，下山後在下午2點以後打電話，飯店就會到登山口接。",
+      "sourceUrl": "http://marine-h.com/access/",
+      "sourceTitle": "観光・交通 | 【公式】利尻マリンホテル",
+      "sourceQuote": "下山後、14時以降ご連絡頂ければ登山口までお迎えに参ります。",
+      "verdict": "verified",
+      "notes": "第2輪新增句，今天重開官網觀光・交通頁。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "餐點只準備事先預約的份，如果訂了純住宿又想在館內吃，要早點聯絡，飯店也會介紹附近的居酒屋並接送。",
+      "sourceUrl": "http://marine-h.com/faq/",
+      "sourceTitle": "FAQ | 【公式】利尻マリンホテル",
+      "sourceQuote": "お食事はご予約のお客様のみ…追加ご希望のお客様は早めのご連絡をお待ちしております。また近くの居酒屋へのご案内、送迎も承ります。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "看房價與訂房：[Trip.com]（利尻海洋飯店）｜[Agoda]｜[官網](http://marine-h.com)",
+      "sourceUrl": "https://tw.trip.com/hotels/rishirifuji-hotel-detail-1487907/rishiri-marine-hotel/",
+      "sourceTitle": "利尻海洋飯店：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "Trip.com 頁標題：利尻海洋飯店：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com｜官網標題：【公式】利尻マリンホテル",
+      "verdict": "verified",
+      "notes": "Trip.com、官網今天打開都是這間。Agoda 頁 urllib 只回空殼，照 booking-links.md 瀏覽器紀錄（151 篇評鑑那一筆，地址 81-5 Minatomachi Oshidomari），訂房行用的就是這筆。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "想住小一點的旅館、吃島上的海鮮，又想在館內泡溫泉，可以看這三間，浴池都用利尻富士溫泉，其中雪國的溫泉只開4月底到10月底。",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/onsen",
+      "sourceTitle": "利尻富士温泉 / Onsen | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "源泉名：利尻富士温泉｜（レラモシリ）露天風呂にこの利尻富士温泉を使用｜（雪国）お風呂は天然の利尻富士温泉です。（４月２７日～１０月末）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "Rera Moshiri有兩座露天溫泉，一座是檜木池，一座用利尻產的鐵平石砌成",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/onsen.html",
+      "sourceTitle": "温泉 of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "利尻山を望む 二つの絶景露天風呂｜檜の湯…岐阜県の檜風呂専門の業者に特注｜鉄平の湯…利尻産鉄平石",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "男女每天交換",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/onsen.html",
+      "sourceTitle": "温泉 of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "男女日替わりでお楽しみ頂ける個性ある二つの露天風呂",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "不過露天一次最多只能3人泡，也沒有早上泡湯的時段。",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/onsen.html",
+      "sourceTitle": "温泉 of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "ご利用人数は最大３名様までとなっております。現在朝風呂は行っておりません。",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：拿掉「現在」。原文「現在朝風呂は行っておりません」沒有寫期限，改寫不改意思，成立。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "晚餐的招牌是海膽釜飯，原型是食堂丸善在全國當地丼飯比賽2011、2012年連拿兩屆冠軍的海膽飯丼，民宿改成釜飯，再撒上鮭魚卵。",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/ryouri.html",
+      "sourceTitle": "料理 of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "全国ご当地どんぶり選手権で2011、2012年と２年連続のグランプリを受賞した食堂丸善の「うにめし丼」を釜飯スタイルでご提供｜うに飯にいくらを散らして",
+      "verdict": "verified",
+      "notes": "比賽全名「全国ご当地どんぶり選手権」，「全國」成立。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "有住客稱讚海膽釜飯和海鮮晚餐好吃。",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/ryouri.html",
+      "sourceTitle": "料理 of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "facts-reviews R27：4travel 10 則中 9 則（1 則說普通）、Google 5 則中 2 則",
+      "verdict": "verified",
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用內建瀏覽器讀，2026-11-19），這輪照指示沒有用瀏覽器重看評論。 4travel 的評論都是 2021 年以前，Google 2 則較近。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "天氣好的早上，可以在看得到利尻山的露台吃早餐。",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/kannai.html",
+      "sourceTitle": "館内 of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "食堂から外に出ると、利尻山を一望できるオープンデッキ テラス｜（トップ）お天気が良ければ朝食はテラスでどうぞ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "要爬山的話，早上4點就送到登山口，民宿說是島上旅館裡最早的。",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/tozan.html",
+      "sourceTitle": "登山のお客様 of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "北麓野営場までの送りは早朝４時出発しております（利尻の宿の中で一番早いです！）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "走到鴛泊渡輪站大約20分鐘",
+      "sourceUrl": "https://rera.yado6.net/book/detail.php?hid=rera&pid=3&rid=3&sid=&m=1",
+      "sourceTitle": "マルゼンペンション　レラモシリ　プラン詳細 （【12月～5月】冬～春の利尻を満喫プラン！！～夕・朝２食付～ 洋室ツインルーム）",
+      "sourceQuote": "・鴛泊フェリーターミナルから徒歩20分",
+      "verdict": "verified",
+      "notes": "來源是官方訂房的冬季方案頁（官網一般頁只寫開車 2～3 分再 600 公尺）。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "可以免費接送，但要事先說好抵達的方式和時間，上午到的和當天才說的都不接。",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/access.html",
+      "sourceTitle": "アクセス of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "利尻空港、鴛泊フェリーターミナルへは到着時間に合わせて無料送迎｜午前中のお迎えには対応はできません｜（方案頁）事前にご到着手段および時間をお知らせ下さい。当日の送迎依頼には対応できません",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "官網建議網路訂，電話訂每晚會多收手續費。",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/",
+      "sourceTitle": "トップページ of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "お電話からのご予約は１泊に付1000円割高となります。空室確認・ご予約はインターネット予約を御利用下さい。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "看房價與訂房：[Trip.com]（rera-mosir）｜[官網](http://www.maruzen.com/tic/oyado/)",
+      "sourceUrl": "https://tw.trip.com/hotels/rishirifuji-hotel-detail-28130488/rera-mosir/",
+      "sourceTitle": "利尻富士溫泉 膳食公寓RERA MOSIR＜利尻島＞(Rera Mosir)：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "Trip.com 頁標題：利尻富士溫泉 膳食公寓RERA MOSIR＜利尻島＞(Rera Mosir)｜Trip.com",
+      "verdict": "verified",
+      "notes": "兩個連結今天都打開是這間。Agoda 沒有上架（booking-links.md）。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "田中家把海膽泡在海洋深層水裡端上桌",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/meals",
+      "sourceTitle": "食事 / Meals | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "最高の鮮度で召し上がっていただくために海洋深層水に浸した状態で提供いたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "只是房間都是不大的8疊和室，兩層樓也沒有電梯。",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/guestrooms",
+      "sourceTitle": "客室 / Guestrooms | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "全ての客室を和室で統一…8畳+踏込み1畳と広くはありません｜当館は2階建て宿泊施設ですがエレベーターがございません",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "紫海膽在6月上旬到9月下旬、馬糞海膽在6月中旬到8月下旬端上桌",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/meals",
+      "sourceTitle": "食事 / Meals | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "キタムラサキウニ提供/6月上旬～9月下旬 エゾバフンウニ提供/6月中旬～8月下旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "想兩種都吃到，要排6月中旬到8月下旬去。",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/meals",
+      "sourceTitle": "食事 / Meals | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "キタムラサキウニ提供/6月上旬～9月下旬 エゾバフンウニ提供/6月中旬～8月下旬",
+      "verdict": "verified",
+      "notes": "兩段期間的重疊就是 6 月中旬～8 月下旬，推得成立。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "訂房時先說一聲，還可以加點一年只捕得到幾次的蝦夷鮑陶板燒",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/meals",
+      "sourceTitle": "食事 / Meals | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "年に数回しか漁が行われない希少な蝦夷鮑を陶板焼きでご提供します。ご希望のお客様はご予約時にお申し付けください",
+      "verdict": "verified",
+      "notes": "原文是「一年只開漁幾次」，正文「一年只捕得到幾次」意思相同。"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "連住的話每天換菜單",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/meals",
+      "sourceTitle": "食事 / Meals | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "連泊の際はメニューを変えてご用意いたします。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "要爬山的話，早上有車免費送到鴛泊登山口，早餐換成便當。",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/mountaineering",
+      "sourceTitle": "登山 / Mountaineering | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "鴛泊登山口まで無料送迎します。｜早朝出発のお客様には朝食をお弁当にしてお渡しします。ご希望のお客様は2食付または朝食付きの宿泊プランを",
+      "verdict": "verified",
+      "notes": "便當限含早或兩食方案，正文「早餐換成便當」隱含有早餐，成立。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "旅館走到鴛泊渡輪站15分鐘，可以接送鴛泊渡輪站、機場和鴛泊登山口，要在住宿前一天以前申請，沓形港不接",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/access",
+      "sourceTitle": "アクセス / Map | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "鴛泊港からひなげし館まで徒歩15分｜鴛泊港、利尻空港、鴛泊登山口に対応いたします。沓形港には対応しておりません。…ご宿泊前日までにお申し込みください",
+      "verdict": "verified",
+      "notes": "原文「鴛泊港」＝鴛泊渡輪站。另有「接人從 15:00 開始（ANA4929 班例外）」正文沒寫，可考慮補。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "只在5月到10月營業",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/tanakahinagesi/",
+      "sourceTitle": "旅館 田中家ひなげし館 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業期間 ５月〜１０月 定休日 １１月〜４月は休館します。",
+      "verdict": "verified",
+      "notes": "只有 RISHIRI PLUS；官網寫 2027 年夏天訂房開始日未定。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "有些住客覺得建築不新，不過打掃得很乾淨。",
+      "sourceUrl": "https://tw.trip.com/hotels/rishirifuji-hotel-detail-3109032/tanakaya-hinageshikan/",
+      "sourceTitle": "田中家Hinageshi館：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "facts-reviews R35：4travel 10 則中 3 則、Google 5 則中 2 則",
+      "verdict": "verified",
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用內建瀏覽器讀，2026-11-19），這輪照指示沒有用瀏覽器重看評論。 4travel 第 1 頁都是 2022 年以前。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "看房價與訂房：[Trip.com]（tanakaya-hinageshikan）｜[Agoda]｜[官網](https://www.rishiri-hinageshi.com/)",
+      "sourceUrl": "https://tw.trip.com/hotels/rishirifuji-hotel-detail-3109032/tanakaya-hinageshikan/",
+      "sourceTitle": "田中家Hinageshi館：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "Trip.com 頁標題：田中家Hinageshi館：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com",
+      "verdict": "verified",
+      "notes": "Trip.com、官網今天打開是這間；Agoda 照 booking-links.md 瀏覽器紀錄（田中家Hinageshi館，Honcho Oshidomari）。"
+    },
+    {
       "claimId": "C69",
-      "articleExcerpt": "沓形的利尻Fureai溫泉（利尻ふれあい温泉）全年營業，不過露天風呂只開5月到10月",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/hureai-onsen/",
-      "sourceTitle": "天然温泉 利尻ふれあい温泉｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "利尻町 > 沓形エリア ／ 営業期間 通年（露天風呂は５月～１０月のみ）",
+      "articleExcerpt": "雪國的老闆就是開磯船的漁師，旅館前的定置網捕到的魚可能直接上當天的晚餐。",
+      "sourceUrl": "http://ryokanyukiguni.com/?page_id=16",
+      "sourceTitle": "今日の漁 | 旅館雪国",
+      "sourceQuote": "【磯船漁師の紹介】【武藤朝三】…旅館雪国 社長 腕利き漁師｜当館前で小定置網｜本日の夕食に出ることがあります",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C70",
-      "articleExcerpt": "利尻富士溫泉則在11月到4月每週三休館",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1204.htm",
-      "sourceTitle": "利尻富士温泉｜利尻富士町",
-      "sourceQuote": "毎日営業（11月～4月 毎週水曜休館日）",
+      "articleExcerpt": "定置網從4月下旬設到6月初，捕到的槍烏賊、水章魚、比目魚、紫海膽和花魚都可能出現在晚餐。",
+      "sourceUrl": "http://ryokanyukiguni.com/?page_id=16",
+      "sourceTitle": "今日の漁 | 旅館雪国",
+      "sourceQuote": "4月下旬～５月上旬 当館前で小定置網｜ヤリイカ 水ダコ 平目 ムラサキウニ ニシン ホッケ 本日の夕食に出ることがあります｜※小定置網は6月初旬までしています",
       "verdict": "verified",
-      "notes": ""
+      "notes": "省略鯡魚，不影響正確。"
     },
     {
       "claimId": "C71",
-      "articleExcerpt": "夏天營業的飯店大多在Agoda訂得到，包括利尻飯店、利尻海洋飯店、利尻富士觀光飯店、Aya瀨飯店、Island Inn Rishiri、田中家Hinageshi館、雲丹御殿飯店、Kamuirishiri與利尻Green Hill Inn",
-      "sourceUrl": "https://www.agoda.com/zh-tw/city/rishiri-jp.html",
-      "sourceTitle": "利尻島のホテル｜Agoda",
-      "sourceQuote": "城市頁（瀏覽器讀取 2026-11-01）列 Hotel Rishiri、Shimano Yado Kamuirishiri、Hotel Ayase、Rishiri Fuji Kanko Hotel、Island Inn Rishiri、Rishiri Marine Hotel、Tanakaya Hinageshikan；頁內文字提到 Rishiri Greenhill Inn；Hotel Unigoten 有獨立飯店頁 agoda.com/hotel-unigoten/hotel/rishiri-jp.html",
-      "verdict": "verified",
-      "notes": "只確認上架，未選日期看空房；正文已寫「上架不代表冬天訂得到」"
-    },
-    {
-      "claimId": "C72",
-      "articleExcerpt": "Trip.com上也找得到利尻飯店，還有全年營業的中原旅館、旅館雪國與旅館富士",
-      "sourceUrl": "https://tw.trip.com/hotels/rishirifuji-rishiri-island/hotels-c50383m6792064/",
-      "sourceTitle": "利尻富士町のホテル｜Trip.com",
-      "sourceQuote": "頁面原始碼含 利尻飯店（Hotel Rishiri）、中原旅館、\"hotelName\":\"旅館 雪國\"、\"hotelName\":\"富士日式旅館\"（rishirifuji-hotel-detail-6338281/ryokan-fuji）",
-      "verdict": "verified",
-      "notes": "curl 讀取 2026-11-01"
-    },
-    {
-      "claimId": "C73",
-      "articleExcerpt": "利尻飯店…的官網都能線上訂房",
-      "sourceUrl": "https://hotel-rishiri.jp/",
-      "sourceTitle": "ホテル利尻",
-      "sourceQuote": "官網「宿泊予約」連到 https://d-reserve.jp/GSEA001F01300/GSEA001A01?hotelCode=0000001354",
+      "articleExcerpt": "旅館正前方就是海，位在島的東側，早上看得到日出。",
+      "sourceUrl": "http://ryokanyukiguni.com/?page_id=39",
+      "sourceTitle": "アクセス | 旅館雪国",
+      "sourceQuote": "旅館雪国はすぐ前が海です。…また利尻島の東面のため、朝日がきれいに見えます。",
       "verdict": "verified",
       "notes": ""
     },
     {
+      "claimId": "C72",
+      "articleExcerpt": "鴛泊渡輪站出口旁就是旅館自己經營的機車和自行車出租店，4月27日到11月左右營業，住客有專用的方案。",
+      "sourceUrl": "http://ryokanyukiguni.com/?page_id=8",
+      "sourceTitle": "レンタルバイク　自転車 | 旅館雪国",
+      "sourceQuote": "【営業所】鴛泊フェリーターミナル前（ターミナルを出て、売店が並んでいる所の一番右側）｜宿泊のお客様用レンタルプランもあり｜【営業時期】4月２７日～１１月頃 ※天候や季節により営業していない日もあります。",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：補了營業期間，和官網一致；「11月左右」對應「１１月頃」。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "有住客提到騎機車環島很方便。",
+      "sourceUrl": "http://ryokanyukiguni.com/?page_id=8",
+      "sourceTitle": "レンタルバイク　自転車 | 旅館雪国",
+      "sourceQuote": "facts-reviews R43：Trip.com 4 則中 1 則、4travel 10 則中 5 則、Google 5 則中 2 則",
+      "verdict": "verified",
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用內建瀏覽器讀，2026-11-19），這輪照指示沒有用瀏覽器重看評論。"
+    },
+    {
       "claimId": "C74",
-      "articleExcerpt": "田中家Hinageshi館…的官網都能線上訂房",
-      "sourceUrl": "https://www.rishiri-hinageshi.com/",
-      "sourceTitle": "旅館 田中家ひなげし館",
-      "sourceQuote": "官網有 reservation 頁連結（/reservation）",
+      "articleExcerpt": "旅館全年營業，冬天也有方案。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/ryokan-yukiguni/",
+      "sourceTitle": "旅館 雪国 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業期間 通年｜（官網ご予約）冬季 １泊２食付き",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C75",
-      "articleExcerpt": "利尻Green Hill Inn…的官網都能線上訂房",
-      "sourceUrl": "https://rishiri-greenhill.net",
-      "sourceTitle": "利尻ぐりーんひる inn",
-      "sourceQuote": "「予約専用ページ」を設置いたしました ／ 連到 https://beds24.com/booking2.php?propid=267078",
+      "articleExcerpt": "旅館走到鴛泊渡輪站15分鐘，渡輪站和機場都可以免費接送，要先聯絡，但搭上午班機的，旅館不送去機場。",
+      "sourceUrl": "http://ryokanyukiguni.com/?page_id=39",
+      "sourceTitle": "アクセス | 旅館雪国",
+      "sourceQuote": "鴛泊フェリーターミナルより 徒歩15分｜必要な方は 無料送迎がございますので、ご連絡ください｜※注※ 午前の便の空港への送迎はございません。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C76",
-      "articleExcerpt": "民宿群林風的官網都能線上訂房",
-      "sourceUrl": "http://greenwind.sakura.ne.jp",
-      "sourceTitle": "ペンション群林風",
-      "sourceQuote": "官網連到 rwiths.net 訂房系統（r-withs/tfs0010a.do）",
+      "articleExcerpt": "看房價與訂房：[Trip.com]（ryokan-ryokan-yukiguni）｜[官網](http://ryokanyukiguni.com/)",
+      "sourceUrl": "https://tw.trip.com/hotels/rishirifuji-hotel-detail-3176621/ryokan-ryokan-yukiguni/",
+      "sourceTitle": "旅館 雪國：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "Trip.com 頁標題：旅館 雪國：2026 利尻富士町住宿推薦與最新訂房優惠｜Trip.com",
       "verdict": "verified",
-      "notes": ""
+      "notes": "兩個連結今天都打開是這間；Agoda 沒有上架。"
     },
     {
       "claimId": "C77",
-      "articleExcerpt": "Rera Moshiri的2027年6月到10月住宿則在12月15日開放網路訂房",
-      "sourceUrl": "http://www.maruzen.com/tic/oyado/",
-      "sourceTitle": "マルゼンペンション レラモシリ",
-      "sourceQuote": "2027年6～10月のご宿泊のご予約は2026年12月15日WEB予約開始となります。",
+      "articleExcerpt": "想住在島的西邊看日本海的夕陽，又想在館內泡天然溫泉的人，可以看沓形這兩間飯店，兩間都有露天浴池，不過冬天都不能住。",
+      "sourceUrl": "https://rishiri.by-onko-chishin.com/",
+      "sourceTitle": "アイランド イン リシリ｜利尻島の絶景ホテル - アイランドインリシリ",
+      "sourceQuote": "露天風呂をはじめ、趣の異なる3種の湯｜島の天然温泉｜5月〜10月 シーズンホテル｜（ホテル利尻）海を望む露天風呂｜2026年11月30日より2027年3月下旬まで、ご宿泊の営業を冬季休業",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C78",
-      "articleExcerpt": "沒有網路訂房的住宿，電話與官網可以在RISHIRI PLUS（りしぷら）各家的頁面找到",
-      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/greenhill/",
-      "sourceTitle": "利尻ぐりーんひる inn｜利尻島｜りしぷら RISHIRI PLUS",
-      "sourceQuote": "住所 ／ 電話番号 ／ 営業期間 ／ 定休日 ／ 駐車場 ／ WEB（旅館雪国頁同樣有 電話番号、WEB 欄）",
+      "articleExcerpt": "利尻飯店有茶褐色、叫做金之湯的天然溫泉和面海的露天浴池，只是露天只在5月到10月開。",
+      "sourceUrl": "https://hotel-rishiri.jp/onsen",
+      "sourceTitle": "美肌の湯 利尻ふれあい温泉｜日本海を望む露天風呂・日帰り入浴 【 ホテル利尻 公式】",
+      "sourceQuote": "茶褐色に輝く湯は「金の湯」とも呼ばれ｜日本海を望む露天風呂｜※露天風呂は5月～10月までの運転です。",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C79",
-      "articleExcerpt": "北海道從2026年4月1日起收住宿稅。每人每晚房價未滿2萬圓收100圓、2萬到未滿5萬圓收200圓、5萬圓以上收500圓",
-      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
-      "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
-      "sourceQuote": "令和8年4月から北海道宿泊税を導入しました。 ／ 宿泊者1人1泊につき ／ 2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円",
+      "articleExcerpt": "晚餐是海鮮日式定食，6到9月有生海膽，升級的晚餐方案再加海膽土瓶蒸",
+      "sourceUrl": "https://hotel-rishiri.jp/dining",
+      "sourceTitle": "お食事(DINING) | ホテル利尻",
+      "sourceQuote": "新鮮な海の幸をふんだんに使用した贅沢な和定食｜6～9月に提供される生うには格別の味わい｜夕食アップコースには、和定食にウニの土瓶蒸しなどが追加",
       "verdict": "verified",
-      "notes": "「4月1日」另見 しまのやど かむいりしり官網「2026年4月1日より、北海道条例に基づき宿泊税を別途申し受けます」"
+      "notes": "原文另寫天候或海況不好時可能沒有生海膽。"
     },
     {
       "claimId": "C80",
-      "articleExcerpt": "從利尻島接著去禮文島，鴛泊全年有船往香深，約45分鐘。6月到9月沓形也有船，約40分鐘",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
-      "sourceTitle": "時刻表 利尻島～礼文島｜ハートランドフェリー",
-      "sourceQuote": "鴛泊発～香深着 1/1～4/27 16:00～16:45 ／ 4/28～5/31 12:15～13:00 ／ 6/1～9/30 09:30～10:15 ／ 10/1～10/31 12:15～13:00 ／ 11/1～12/31 16:00～16:45 ／ 沓形発～香深着 14:25～15:05",
+      "articleExcerpt": "夏天晚餐時還有90分鐘的自助飲料區，喝得到利尻昆布燒酎。",
+      "sourceUrl": "https://hotel-rishiri.jp/dining",
+      "sourceTitle": "お食事(DINING) | ホテル利尻",
+      "sourceQuote": "毎年夏場の6月～9月は、ご夕食時にセルフスタイルの飲み放題コーナー（90分）…当館オリジナルの利尻昆布焼酎まで",
       "verdict": "verified",
-      "notes": ""
+      "notes": "原文是「飲み放題」，有沒有另收費官網沒寫；正文沒說免費，成立。"
     },
     {
       "claimId": "C81",
-      "articleExcerpt": "延伸資料：利尻富士町的露營資訊，利尻島家庭露營場、利尻北麓野營場與沼浦露營場的開放期間",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1133.htm",
-      "sourceTitle": "キャンプ情報｜利尻富士町",
-      "sourceQuote": "ゆ～に 5月1日～10月31日 ／ 利尻北麓野営場 5月15日～10月15日 ／ 沼浦 6月1日～9月30日",
+      "articleExcerpt": "泡湯的部分，有住客反應除了熱的池子，還有冷泉池可以交替泡。",
+      "sourceUrl": "https://hotel-rishiri.jp/onsen",
+      "sourceTitle": "美肌の湯 利尻ふれあい温泉｜日本海を望む露天風呂・日帰り入浴 【 ホテル利尻 公式】",
+      "sourceQuote": "facts-reviews R13：Trip.com 13 則中 1 則、4travel 10 則中 6 則（兩個平台合計 7 則）｜官網：源泉掛け流し風呂は、ぬるめの温度…熱めの湯とぬるめの湯を交互に入浴",
       "verdict": "verified",
-      "notes": ""
+      "notes": "住客說法照 facts-reviews.md（研究時查核者用內建瀏覽器讀，2026-11-19），這輪照指示沒有用瀏覽器重看評論。 官網也寫源泉放流池是溫的、建議冷熱交替。"
     },
     {
       "claimId": "C82",
-      "articleExcerpt": "冬天渡輪只停鴛泊港，要到沓形這幾家，可以從鴛泊港搭經沓形的B路線巴士過去",
-      "sourceUrl": "https://heartlandferry.jp/timetable/",
-      "sourceTitle": "時刻表 日本語(稚内-鴛泊)｜ハートランドフェリー",
-      "sourceQuote": "稚内発～鴛泊着（各期間 1/1～4/27、4/28～5/31、6/1～9/30、10/1～10/31、11/1～12/31 皆為鴛泊）／ 利尻島～礼文島頁：沓形発～香深着 只列在 6/1～9/30",
+      "articleExcerpt": "機場和鴛泊渡輪站都有免費接送，要爬山也有車送到鴛泊登山口。",
+      "sourceUrl": "https://hotel-rishiri.jp/access",
+      "sourceTitle": "利尻島の行き方 | フェリー・飛行機・交通まとめ【稚内・札幌・東京から】",
+      "sourceQuote": "利尻空港・鴛泊フェリーターミナル・登山道入口までの無料送迎｜鴛泊登山口行き、朝5時30分にホテル出発",
       "verdict": "verified",
-      "notes": "B路線經沓形：宗谷巴士 PDF「Ｂコース 鴛泊→沓形経由→鴛泊」"
+      "notes": ""
     },
     {
       "claimId": "C83",
-      "articleExcerpt": "（B路線）10月到隔年5月一天4班",
-      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
-      "sourceTitle": "利尻線 夏期時刻表（宗谷バス）",
-      "sourceQuote": "冬期ダイヤ（10月1日～5月31日） 便 1 2 3 4 ／ Ｂコース 鴛泊→沓形経由→鴛泊",
+      "articleExcerpt": "一家人去的話，和洋室最多住得下5人。",
+      "sourceUrl": "https://hotel-rishiri.jp/room",
+      "sourceTitle": "宿泊案内 | 利尻島の天然温泉と旬の味覚を楽しむ宿",
+      "sourceQuote": "（房間頁程式資料）title: '和洋室', room_size: 'ツイン＋和室6畳間', capacity: '2〜5名', number_of_room: '全6室'",
       "verdict": "verified",
       "notes": ""
+    },
+    {
+      "claimId": "C84",
+      "articleExcerpt": "接送是事前預約制，沒有預約就不開車",
+      "sourceUrl": "https://hotel-rishiri.jp/access",
+      "sourceTitle": "利尻島の行き方 | フェリー・飛行機・交通まとめ【稚内・札幌・東京から】",
+      "sourceQuote": "※事前予約制のため、予約がない場合は運行いたしません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C85",
+      "articleExcerpt": "一般單人房、洋式雙床房和8疊和室都沒有冷氣，夏天怕熱要訂有冷氣的10疊和室、和室雙床或和洋室。",
+      "sourceUrl": "https://hotel-rishiri.jp/room",
+      "sourceTitle": "宿泊案内 | 利尻島の天然温泉と旬の味覚を楽しむ宿",
+      "sourceQuote": "（房間頁程式資料，今天重開）洋室 Single 14m^2 全6室 ※冷房なし｜洋室 Deluxe Single 全2室（冷房なし）／Deluxe Single 全2室（冷房あり）｜洋室 Twin 全19室 ※冷房なし｜Twin & Sofa Bed 全1室 ※冷房なし｜和室 10畳間 全11室 ※冷房、加湿空気清浄機あり｜和室 8畳間 全13室 ※冷房なし｜和洋室 全6室 ※冷房…あり｜和室ツインルーム 全6室 ※冷房…あり｜特別室 ※冷房あり｜バリアフリー ※冷房…あり",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：兩處說過頭：(1)「雙床房」沒限定洋室，和室雙床（全 6 室）其實有冷氣，讀者會以為所有雙床都沒有；(2)「洋室單人房…都沒有」也包到豪華單人房，官網豪華單人有一種有冷氣。(3)「要訂10疊和室或和洋室」漏了同樣有冷氣、住 2 人的和室雙床。最準的寫法：「一般單人房、洋式雙床房和8疊和室都沒有冷氣，夏天怕熱要訂有冷氣的10疊和室、和室雙床或和洋室。」（一般單人房＝14㎡ 那種；豪華單人房兩種都有，不寫；特別室、無障礙房也有冷氣，人數少可省略。）｜第3輪（2026-11-19）：照建議改寫。一般單人房（14㎡，全6室）、洋室雙床（全19室）、雙床＋沙發床、8疊和室（全13室）都是冷房なし；10疊和室、和室雙床、和洋室都有冷氣。豪華單人房兩種都有、特別室與無障礙房有冷氣，沒寫不影響正確。成立。"
+    },
+    {
+      "claimId": "C86",
+      "articleExcerpt": "看房價與訂房：[Trip.com]（hotel-rishiri）｜[Agoda]｜[官網](https://hotel-rishiri.jp/)",
+      "sourceUrl": "https://tw.trip.com/hotels/rishiri-hotel-detail-1647153/hotel-rishiri/",
+      "sourceTitle": "利尻飯店（Hotel Rishiri）：2026 利尻住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "Trip.com 頁標題：利尻飯店（Hotel Rishiri）：2026 利尻住宿推薦與最新訂房優惠｜Trip.com",
+      "verdict": "verified",
+      "notes": "Trip.com、官網今天打開是這間；Agoda 照 booking-links.md 瀏覽器紀錄（Hotel Rishiri，Fujimicho-90-90 Kutsugata）。"
+    },
+    {
+      "claimId": "C87",
+      "articleExcerpt": "這是5月到10月營業的季節飯店",
+      "sourceUrl": "https://rishiri.by-onko-chishin.com/",
+      "sourceTitle": "アイランド イン リシリ｜利尻島の絶景ホテル - アイランドインリシリ",
+      "sourceQuote": "5月〜10月 シーズンホテル 全66室",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：移到段落第二句，內容不變。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "2027年預定5月22日開始營業，2026年12月1日起在官網和各訂房網站開放訂房。",
+      "sourceUrl": "https://rishiri.by-onko-chishin.com/191/",
+      "sourceTitle": "2026年度営業終了および、2027年度の営業・運営体制変更のお知らせ - アイランドインリシリ",
+      "sourceQuote": "営業開始予定日：2027年5月22日（土）｜宿泊予約受付開始日：2026年12月1日（火）9:00より｜公式ホームページをはじめ、各種OTAからお申し込みいただけるよう準備を進めてまいります｜変更となる場合がございます",
+      "verdict": "verified",
+      "notes": "官方寫 OTA 受理是「準備中」、日期可能變更；正文「預定」只修飾開幕。12 月 1 日之後要重查，改成已開放訂房。｜第2輪（2026-11-19）：拿掉「上午9點」，其餘不變。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "Island Inn利尻的房間分成正對利尻山的山側和看日本海夕陽的海側",
+      "sourceUrl": "https://rishiri.by-onko-chishin.com/",
+      "sourceTitle": "アイランド イン リシリ｜利尻島の絶景ホテル - アイランドインリシリ",
+      "sourceQuote": "「利尻山」を正面に望む山側、日本海を茜色に染める夕陽を眺める海側など",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：移到段落第一句，今天重開官網首頁核對，原文一致。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "晚餐是用利尻昆布等島上食材做的日式、西式和中式自助餐",
+      "sourceUrl": "https://rishiri.by-onko-chishin.com/",
+      "sourceTitle": "アイランド イン リシリ｜利尻島の絶景ホテル - アイランドインリシリ",
+      "sourceQuote": "北海道各地の恵みを味わう、和洋中ビュッフェ。利尻昆布をはじめとする島の食材や海の幸…夕暮れ時には…食事を楽しむ",
+      "verdict": "verified",
+      "notes": "｜第2輪（2026-11-19）：第一句的這一段今天重開官網首頁核對，和洋中ビュッフェ、利尻昆布、露天風呂をはじめ3種の湯、島の天然温泉都對得上。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "大浴場是島上的天然溫泉，有露天在內的三種浴池。",
+      "sourceUrl": "https://rishiri.by-onko-chishin.com/",
+      "sourceTitle": "アイランド イン リシリ｜利尻島の絶景ホテル - アイランドインリシリ",
+      "sourceQuote": "露天風呂をはじめ、趣の異なる3種の湯｜島の天然温泉",
+      "verdict": "verified",
+      "notes": "｜第2輪（2026-11-19）：第一句的這一段今天重開官網首頁核對，和洋中ビュッフェ、利尻昆布、露天風呂をはじめ3種の湯、島の天然温泉都對得上。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "排完禮文島再到利尻島的，夏天從香深搭船約40分鐘到沓形港，下船走約5分鐘就到。",
+      "sourceUrl": "https://rishiri.by-onko-chishin.com/",
+      "sourceTitle": "アイランド イン リシリ｜利尻島の絶景ホテル - アイランドインリシリ",
+      "sourceQuote": "香深港フェリーターミナル→フェリー（約40分）→ 利尻島（沓形港）→ 沓形港から徒歩約5分 ※夏季限定の季節運行",
+      "verdict": "verified",
+      "notes": "Heartland Ferry 2026 年時刻表：香深發 12:50～沓形著 13:30，只在 6/1～9/30。"
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "H3「Island Inn利尻（利尻海島賓館）」與訂房行：[Trip.com]（island-inn-rishiri）｜[Agoda]｜[官網](https://rishiri.by-onko-chishin.com/)",
+      "sourceUrl": "https://tw.trip.com/hotels/rishiri-hotel-detail-3725791/island-inn-rishiri/",
+      "sourceTitle": "利尻海島賓館：2026 利尻住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "Trip.com 頁標題：利尻海島賓館：2026 利尻住宿推薦與最新訂房優惠｜Trip.com",
+      "verdict": "verified",
+      "notes": "Trip.com 平台名稱就是「利尻海島賓館」；官網今天打開是新經營者的 Island Inn 官網。Agoda 照 booking-links.md 瀏覽器紀錄（利尻海島旅館，30 Fujimicho, Kushigata）。"
+    },
+    {
+      "claimId": "C95",
+      "articleExcerpt": "一個人旅行想省住宿費、想自己煮，或只要一張床好隔天一早爬山的人，可以看這兩間。兩間都有多人房和共用的淋浴，一間在鴛泊、一間在沓形。",
+      "sourceUrl": "http://www.kukiru.com/guesthouse.html",
+      "sourceTitle": "利尻島ゲストハウスいちななにーいち（公式予約サイト）　Guest house reservation | 株式会社群来留（クキル）",
+      "sourceQuote": "４人部屋ドミトリー｜男女別のシャワールーム｜（ぐりーんひる）男女別シャワー/各2｜男性用ドミトリー",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C96",
+      "articleExcerpt": "Green Hill Inn有一間窗外正對著海的大廚房",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/accommodation.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "自由に使える広いキッチンがあり、ガス台は4つ、窓からは\"正面に海\"を見ることが出来ます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C97",
+      "articleExcerpt": "不過館內沒有浴池，淋浴間男女各只有2間，也沒有浴衣和備品。",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/accommodation.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "男女別シャワー/各2｜シャワールーム 男女別で各２つ（合計４）｜× 浴衣等はございません × アメニティ類はごいざいません",
+      "verdict": "verified",
+      "notes": "設施表只列淋浴間、沒有浴池，「沒有浴池」由設施清單推得成立。"
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "多人房男女分開，上下鋪的床特別做到220到250公分長，也有最多住4人的包房。",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/accommodation.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "男性用ドミトリー…2段ベッド｜ベッドは特注で220～240cm｜230～250cm｜貸切（ファミリールーム）…最大4名様まで",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C99",
+      "articleExcerpt": "超市走3分鐘就到，買了食材回來就能在大廚房煮，早餐的麵包也免費。",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/accommodation.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "「スーパーマーケット」は徒歩3分｜朝食のパンは無料です",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C100",
+      "articleExcerpt": "早上有車送去渡輪站，配合往稚內和往禮文的船各一趟",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/booking.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "\"送り\"は朝の稚内行き、朝の礼文行きの2回出発しています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C101",
+      "articleExcerpt": "要爬山的話，清晨也有車送登山口。",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/accommodation.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "利尻山登山口までの送り 毎朝 04：45発 で出発しています！(無料)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "10月中旬到2月下旬不能住，還沒上小學的孩子只能住包房。",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/accommodation.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "10月中旬～2月下旬まで宿泊はできません｜未就学児(幼児)は貸切プランとなります",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C103",
+      "articleExcerpt": "機場不來接，要搭路線巴士",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/booking.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "ANA13:25到着は接続する路線バスをご利用ください。JAL15:55着も路線バスがありますので、基本的にそれぞれバスをご利用下さい。",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：照保守改法改成「不來接、搭路線巴士」，和官網一致。官網首頁另寫送機（13:00 左右）能排就排，正文沒說不送，不衝突。"
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "下船要人接的話，前一天以前就要聯絡。",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/booking.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "\"お迎え\"は前日までに連絡頂ければ行っています（当日連絡は不可）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C105",
+      "articleExcerpt": "看房價與訂房：[官網](https://rishiri-greenhill.net/jp/booking.html)",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/booking.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "1~4名様のご予約 こちらの公式HPからの予約が一番お得です",
+      "verdict": "verified",
+      "notes": "Trip.com、Agoda 都沒有上架（booking-links.md）。"
+    },
+    {
+      "claimId": "C106",
+      "articleExcerpt": "Guest House 1721在沓形，離海岸走15秒、正對著利尻山，溫泉和便利商店都走2分鐘就到。",
+      "sourceUrl": "http://www.kukiru.com/guesthouse.html",
+      "sourceTitle": "利尻島ゲストハウスいちななにーいち（公式予約サイト）　Guest house reservation | 株式会社群来留（クキル）",
+      "sourceQuote": "「沓形」（くつがた）…目の前に勇壮な利尻山｜温泉徒歩２分・コンビニ徒歩２分・海岸まで１５秒",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C107",
+      "articleExcerpt": "一個人可以住單人房，也可以住4人的多人房，多人房分女性專用和男女混住。",
+      "sourceUrl": "http://www.kukiru.com/guesthouse.html",
+      "sourceTitle": "利尻島ゲストハウスいちななにーいち（公式予約サイト）　Guest house reservation | 株式会社群来留（クキル）",
+      "sourceQuote": "☆シングルタイプ｜☆４人部屋ドミトリー…女性用ドミトリールームと男女混合ドミトリールームの２種類",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "晚餐可以到同一家公司經營的濱燒店或BAR1721吃花魚鏘鏘燒。",
+      "sourceUrl": "http://www.kukiru.com/guesthouse.html",
+      "sourceTitle": "利尻島ゲストハウスいちななにーいち（公式予約サイト）　Guest house reservation | 株式会社群来留（クキル）",
+      "sourceQuote": "夕食はホッケちゃんちゃん焼きが味わえる浜焼き処くきる又はBAR1721でどうぞ｜（選單）炙BAR1721(利尻浜焼き処くきる)",
+      "verdict": "verified",
+      "notes": "都在株式会社群来留的網站下。"
+    },
+    {
+      "claimId": "C109",
+      "articleExcerpt": "這裡的渡輪和班機接送要先用表單申請，沒申請就不開車。",
+      "sourceUrl": "http://www.kukiru.com/guesthouse.html",
+      "sourceTitle": "利尻島ゲストハウスいちななにーいち（公式予約サイト）　Guest house reservation | 株式会社群来留（クキル）",
+      "sourceQuote": "★送迎スケジュール（要予約・送迎者がいない場合は運行いたしません。）…申込は「宿泊者送迎予約フォーム」よりお申込み下さい。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "要爬山的話，登山口接送只限住2晚以上、6月1日到9月10日，而且要另外付費。",
+      "sourceUrl": "http://www.kukiru.com/guesthouse.html",
+      "sourceTitle": "利尻島ゲストハウスいちななにーいち（公式予約サイト）　Guest house reservation | 株式会社群来留（クキル）",
+      "sourceQuote": "当ゲストハウスに２泊以上の方限定となります。期間は ６月１日～９月１０日です。…業務提携先の営業車にて送迎いたします。（料金の目安は一人様３５００円）",
+      "verdict": "verified",
+      "notes": "原文寫明是 2026 年季。另有「只接受有一定登山經驗的人」正文沒寫，可考慮補一句。"
+    },
+    {
+      "claimId": "C111",
+      "articleExcerpt": "看房價與訂房：[官網](http://www.kukiru.com/guesthouse.html)",
+      "sourceUrl": "http://www.kukiru.com/guesthouse.html",
+      "sourceTitle": "利尻島ゲストハウスいちななにーいち（公式予約サイト）　Guest house reservation | 株式会社群来留（クキル）",
+      "sourceQuote": "ゲストハウスのご予約はウエブ予約のみで実施させていただいております",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C113",
+      "articleExcerpt": "表 利尻海洋飯店：鴛泊渡輪站走8分｜3月到10月，11月到2月休館｜利尻富士溫泉的大浴場，沒有露天｜渡輪站、機場；登山口5:00送，下山打電話就接｜官網、Trip.com、Agoda",
+      "sourceUrl": "http://marine-h.com/access/",
+      "sourceTitle": "観光・交通 | 【公式】利尻マリンホテル",
+      "sourceQuote": "鴛泊フェリーターミナルから徒歩8分｜（RISHIRI PLUS）３月〜１０月 １１月〜２月は休館｜露天風呂 なし｜早朝5時に鴛泊登山口までお送り致します。下山後、14時以降ご連絡頂ければ…お迎え",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C114",
+      "articleExcerpt": "表 利尻富士觀光飯店：鴛泊渡輪站附近｜3月到10月，11月到2月休館｜—｜渡輪站、機場、登山口，訂房時一起安排｜Trip.com、Agoda",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/fujikanko-hotel/",
+      "sourceTitle": "利尻富士観光ホテル | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊フェリーターミナルから最も近いホテル｜３月〜１０月｜１１月～２月は休館｜※フェリーターミナル、空港、登山口までの送迎は、予約時の対応となります",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：位置改成「鴛泊渡輪站附近」，比原文「最も近い」保守，成立；地址鴛泊字港町194-2。"
+    },
+    {
+      "claimId": "C115",
+      "articleExcerpt": "表 Aya瀨飯店：鴛泊渡輪站走20分｜4月到10月，11月到3月休館｜溫泉浴場｜渡輪站、機場免費接送，要先告知抵達時間｜電話、Trip.com、Agoda",
+      "sourceUrl": "http://www.telnet-rishiri.info/pr/ayase/cn2/page1.html",
+      "sourceTitle": "ホテルあや瀬",
+      "sourceQuote": "鴛泊港から車で３分、徒歩２０分｜温泉浴場｜（RISHIRI PLUS）４月〜１０月 １１月〜３月は休館｜無料送迎あり。到着地と到着時刻を事前に連絡｜（page5）宿泊予約はお電話にて",
+      "verdict": "verified",
+      "notes": "Trip.com 今天打開是綾瀨飯店；Agoda 照 booking-links.md。"
+    },
+    {
+      "claimId": "C116",
+      "articleExcerpt": "表 Maruzen民宿Rera Moshiri：鴛泊渡輪站走約20分｜2026年10月15日到12月20日休業，2027年1月6日以後的住宿才訂得到｜兩座看利尻山的露天溫泉，冬天只開一座｜渡輪站、機場，上午到的不接；登山口4:00送｜官網（電話訂每晚多收手續費）、Trip.com",
+      "sourceUrl": "https://rera.yado6.net/book/detail.php?hid=rera&pid=3&rid=3&sid=&m=1&currentYear=2027&currentMonth=1",
+      "sourceTitle": "マルゼンペンション　レラモシリ　プラン詳細 （【12月～5月】冬～春の利尻を満喫プラン！！～夕・朝２食付～ 洋室ツインルーム）",
+      "sourceQuote": "2026年10月15日から12月20日まで休業期間｜（日曆）2027年1月 6 ◎｜「檜の湯」のみ｜午前中のお迎えには対応はできません｜ペンション4：00出発｜お電話からのご予約は１泊に付1000円割高",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：改成「2027年1月6日以後的住宿才訂得到」，對應官方日曆：2026 年 12 月與 2027 年 1/1～1/5 全是「-」，1/6 起有房。日曆是冬春方案的洋室雙床（其他房型同一方案，研究時也只看雙床）。"
+    },
+    {
+      "claimId": "C117",
+      "articleExcerpt": "表 旅館田中家虞美人館：鴛泊渡輪站走15分｜5月到10月，11月到4月休館｜利尻富士溫泉的內湯｜鴛泊渡輪站、機場，不接沓形港；登山口4:30送｜官網、Trip.com、Agoda",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/access",
+      "sourceTitle": "アクセス / Map | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "鴛泊港からひなげし館まで徒歩15分｜沓形港には対応しておりません｜（RISHIRI PLUS）５月〜１０月 １１月〜４月は休館｜男湯、女湯ともに内湯が1つずつ｜行きは4時30分(9月以降は5時)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C118",
+      "articleExcerpt": "表 旅館雪國：鴛泊渡輪站走15分｜全年，12月31日到1月5日休｜利尻富士溫泉，只開4月27日到10月底｜渡輪站、機場，上午的班機不送；登山口4:30到5:00送｜官網、Trip.com",
+      "sourceUrl": "http://ryokanyukiguni.com/?page_id=47",
+      "sourceTitle": "利尻山登山 | 旅館雪国",
+      "sourceQuote": "３合目（鴛泊コース）までの無料送迎があります（am４：３０～５：００）｜（館内）（４月２７日～１０月末）｜（RISHIRI PLUS）通年 １２月３１日〜１月５日",
+      "verdict": "verified",
+      "notes": "雪國官網首頁另寫「鴛泊登山口三合目まで無料送迎あり（朝5時～）」，和登山頁 4:30～5:00 略有出入；表格照登山頁。"
+    },
+    {
+      "claimId": "C119",
+      "articleExcerpt": "表 利尻Green Hill Inn：鴛泊，超市走3分｜3月到10月上旬，10月中旬到2月下旬不能住｜只有淋浴｜渡輪站要前一天聯絡，機場不接；登山口4:45送｜官網",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/accommodation.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "通常3月から10月上旬まで基本毎日営業…10月中旬～2月下旬まで宿泊はできません｜スーパーマーケット 徒歩で約 3分｜毎朝 04：45発｜（首頁）ANA13:25着のお迎えは廃止",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C120",
+      "articleExcerpt": "表 島之宿Kamui利尻：鴛泊渡輪站走8分｜—｜房間沒有浴室和廁所，1樓有包租浴池和淋浴｜機場不接｜官網、Trip.com",
+      "sourceUrl": "http://www.kamuirishiri.com/",
+      "sourceTitle": "【公式】しまのやど　かむいりしり|利尻島の宿泊観光に",
+      "sourceQuote": "鴛泊港フェリーターミナルから宿まで徒歩8分｜（空港までの送迎サービスは実施していません）｜浴室・トイレ・洗面台が客室内にはありません｜1階 男女共用プライベート大浴場…中から鍵がかかる｜男女共用プライベートシャワールーム",
+      "verdict": "verified",
+      "notes": "Trip.com 照 booking-links.md（島野宿-卡姆伊裡希裡）。"
+    },
+    {
+      "claimId": "C121",
+      "articleExcerpt": "表 旅館Nari田：鴛泊渡輪站走約5分｜冬天也營業，2027年1月到5月有方案｜共用浴室｜渡輪站到了打電話接；登山口5:00以後送｜只收電話",
+      "sourceUrl": "http://rishirinarita.jp/%e3%82%88%e3%81%8f%e3%81%82%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f/",
+      "sourceTitle": "よくあるご質問 - 旅館なり田 公式WEBサイト",
+      "sourceQuote": "午前5：00以降、鴛泊登山口（3合目）までに限り送迎｜フェリー及び航空機による到着時のお出迎えにつきましては、到着後にご連絡頂いてからお迎え｜（アクセス）鴛泊フェリーターミナルより徒歩約５分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C122",
+      "articleExcerpt": "表 民宿Hera家：鴛泊，離港口近｜5月到10月｜鐵平石和熔岩砌的浴池，看得到海和夕陽｜—｜官網",
+      "sourceUrl": "http://www.rishiri-yume.com",
+      "sourceTitle": "ペンション　ヘラさんの家 | ホーム",
+      "sourceQuote": "港からも見えており、港に近くて便利です｜鉄平石と溶岩で作られたお風呂からは海と夕陽が見え｜（RISHIRI PLUS）５月〜１０月",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C123",
+      "articleExcerpt": "表 利尻飯店：沓形，島的西海岸｜2026年11月30日到2027年3月下旬住宿休業，日歸溫泉照開｜茶褐色的金之湯，面海的露天只開5月到10月｜機場、鴛泊渡輪站，要預約；登山口5:30送鴛泊｜官網、Trip.com、Agoda",
+      "sourceUrl": "https://hotel-rishiri.jp/access",
+      "sourceTitle": "利尻島の行き方 | フェリー・飛行機・交通まとめ【稚内・札幌・東京から】",
+      "sourceQuote": "利尻島の西海岸・沓形｜2026年11月30日より2027年3月下旬まで…冬季休業｜※日帰り温泉は冬季も通常営業｜※露天風呂は5月～10月までの運転｜事前予約制｜鴛泊登山口行き、朝5時30分",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C124",
+      "articleExcerpt": "表 Island Inn利尻：沓形港走約5分｜5月到10月，2027年預定5月22日開幕｜島上的天然溫泉，有露天在內的三種浴池｜—｜官網、Trip.com、Agoda，2026年12月1日起開賣",
+      "sourceUrl": "https://rishiri.by-onko-chishin.com/",
+      "sourceTitle": "アイランド イン リシリ｜利尻島の絶景ホテル - アイランドインリシリ",
+      "sourceQuote": "沓形港から徒歩約5分｜5月〜10月 シーズンホテル｜営業開始予定日：2027年5月22日｜宿泊予約受付開始日：2026年12月1日（火）9:00より",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C125",
+      "articleExcerpt": "表 中原旅館：沓形港走約7分｜全年，年底年初除外｜館內浴場｜沒有接送｜官網、Trip.com",
+      "sourceUrl": "https://www.yadoken.jp/plan?hotel_id=yk102681&plan_id=8",
+      "sourceTitle": "中原旅館 - プラン詳細",
+      "sourceQuote": "沓形港まで徒歩約7分｜※送迎はございません｜◆お風呂のご案内◆広い湯船｜（RISHIRI PLUS）通年（年末年始を除く）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C126",
+      "articleExcerpt": "表 Guest House 1721：沓形，鴛泊渡輪站開車15分｜—｜共用淋浴，溫泉走2分｜渡輪、班機要用表單申請；登山口只限住2晚以上，另外收費｜官網",
+      "sourceUrl": "http://www.kukiru.com/guesthouse.html",
+      "sourceTitle": "利尻島ゲストハウスいちななにーいち（公式予約サイト）　Guest house reservation | 株式会社群来留（クキル）",
+      "sourceQuote": "鴛泊港から車で１５分｜男女別のシャワールーム｜温泉徒歩２分｜「宿泊者送迎予約フォーム」｜２泊以上の方限定",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C127",
+      "articleExcerpt": "表 VILLA KAMUI：沓形｜—｜只給住客用的海景三溫暖｜機場、港口配合抵達接送｜官網；一天一組，12歲以下不收",
+      "sourceUrl": "https://villa-kamui.com/faq/",
+      "sourceTitle": "よくある質問 アーカイブ | Villa Kamui（ヴィラカムイ）｜北海道利尻島にある一日一組限定「一棟貸切サウナ付プライベートヴィラ」",
+      "sourceQuote": "12歳以下のお子様のご宿泊はご遠慮｜（トップ）海の絶景を独り占めできる宿泊者限定プライベートサウナ｜一日一組限定｜（アクセス）利尻島到着後（空港・各港）当館まで送迎｜住所 利尻町沓形字神居",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C128",
+      "articleExcerpt": "鴛泊的旅館多半會在清晨送住客到鴛泊登山口",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/tozan/",
+      "sourceTitle": "利尻山登山 | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "登山道入口までの交通手段につきましては、ほぼ全ての宿泊施設が送迎を行っております",
+      "verdict": "verified",
+      "notes": "「清晨」由下表各館 4:00～5:30 推得，成立。"
+    },
+    {
+      "claimId": "C129",
+      "articleExcerpt": "沓形的利尻飯店也送鴛泊登山口，不過下山接不接，每間的規定不一樣。",
+      "sourceUrl": "https://hotel-rishiri.jp/access",
+      "sourceTitle": "利尻島の行き方 | フェリー・飛行機・交通まとめ【稚内・札幌・東京から】",
+      "sourceQuote": "鴛泊登山口行き、朝5時30分にホテル出発。※お迎えは、登山当日もご宿泊の方のみ",
+      "verdict": "verified",
+      "notes": "RISHIRI PLUS 寫沓形的不送鴛泊登山口，但利尻飯店官網寫明會送；照官網。"
+    },
+    {
+      "claimId": "C130",
+      "articleExcerpt": "登山口沒有巴士，島上的計程車行清晨也不營業，從鴛泊渡輪站走過去3.6公里要大約一個小時，所以清晨上山多半是靠旅館送。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
+      "sourceTitle": "登山口へのアクセス利尻富士町",
+      "sourceQuote": "※登山口までのバスの運行はございません。｜※タクシー会社もございますが、早朝の営業は行っておりません。｜「フェリーターミナル」～ 3.6ｋｍ 約60分｜※宿泊施設によっては、登山口への送迎を行っています。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C131",
+      "articleExcerpt": "登山表 Rera Moshiri：4:00｜只接連住的人，下午1點以後每30分鐘一班",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/tozan.html",
+      "sourceTitle": "登山のお客様 of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "ペンション4：00出発｜※下山後のお迎えは連泊のお客様のみ｜下山お迎えのペンション出発は13時以降、30分単位",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C132",
+      "articleExcerpt": "登山表 田中家虞美人館：4:30（9月起5:00）｜只接當天也住的人",
+      "sourceUrl": "https://www.rishiri-hinageshi.com/mountaineering",
+      "sourceTitle": "登山 / Mountaineering | 【公式】田中家 ひなげし館 | 利尻富士町 利尻島 北海道  宿泊",
+      "sourceQuote": "行きは4時30分(9月以降は5時)に出発｜下山後のお迎え(当日宿泊する方のみ)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C133",
+      "articleExcerpt": "登山表 旅館雪國：4:30到5:00｜退房當天登山的不接",
+      "sourceUrl": "http://ryokanyukiguni.com/?page_id=47",
+      "sourceTitle": "利尻山登山 | 旅館雪国",
+      "sourceQuote": "（am４：３０～５：００）｜※注※ チェックアウト日の登山の場合、迎えがありません",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C134",
+      "articleExcerpt": "登山表 利尻Green Hill Inn：4:45，有人要去才出車｜原則上不接",
+      "sourceUrl": "https://rishiri-greenhill.net/jp/booking.html",
+      "sourceTitle": "利尻島ゲストハウス／利尻ぐりーんひるinn",
+      "sourceQuote": "Am 4:45発で希望者がいれば毎朝出発しています。下山後のお迎えは基本的に行なっておりません。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C135",
+      "articleExcerpt": "登山表 利尻海洋飯店：5:00｜下午2點以後打電話就接",
+      "sourceUrl": "http://marine-h.com/access/",
+      "sourceTitle": "観光・交通 | 【公式】利尻マリンホテル",
+      "sourceQuote": "早朝5時に鴛泊登山口までお送り致します。下山後、14時以降ご連絡頂ければ登山口までお迎え",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C136",
+      "articleExcerpt": "登山表 旅館Nari田：5:00以後｜接到下午3點半",
+      "sourceUrl": "http://rishirinarita.jp/%e3%82%88%e3%81%8f%e3%81%82%e3%82%8b%e3%81%94%e8%b3%aa%e5%95%8f/",
+      "sourceTitle": "よくあるご質問 - 旅館なり田 公式WEBサイト",
+      "sourceQuote": "午前5：00以降、鴛泊登山口（3合目）までに限り｜但し、鴛泊登山ルート沿線、15：30まで",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C137",
+      "articleExcerpt": "登山表 利尻飯店（沓形）：5:30｜只接當天也住的人",
+      "sourceUrl": "https://hotel-rishiri.jp/access",
+      "sourceTitle": "利尻島の行き方 | フェリー・飛行機・交通まとめ【稚内・札幌・東京から】",
+      "sourceQuote": "朝5時30分にホテル出発。※お迎えは、登山当日もご宿泊の方のみ",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C138",
+      "articleExcerpt": "登山表 Guest House 1721（沓形）：—｜只限住2晚以上、6月1日到9月10日，另外收費；下午1點和4點左右接",
+      "sourceUrl": "http://www.kukiru.com/guesthouse.html",
+      "sourceTitle": "利尻島ゲストハウスいちななにーいち（公式予約サイト）　Guest house reservation | 株式会社群来留（クキル）",
+      "sourceQuote": "２泊以上の方限定…６月１日～９月１０日｜料金の目安は一人様３５００円｜お迎え時刻 鴛泊登山口 ①13：00頃 ②16：00頃",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C139",
+      "articleExcerpt": "清晨就要出發的話，田中家、利尻海洋飯店、Rera Moshiri和利尻飯店都能準備便當或飯糰，多半要前一天先說。",
+      "sourceUrl": "https://hotel-rishiri.jp/room",
+      "sourceTitle": "宿泊案内 | 利尻島の天然温泉と旬の味覚を楽しむ宿",
+      "sourceQuote": "（ホテル利尻）登山お弁当サービス（予約制）…予約販売…早朝5時30分にフロントでお渡し…【前日の１９時】までにご予約｜（マリン）ご朝食の代わりにおにぎり…事前のご連絡｜（レラモシリ）「おにぎり弁当」を出発前日夜にお渡し｜（ひなげし館）朝食をお弁当にしてお渡し…2食付または朝食付き",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：「清晨」取代「天還沒亮」，加「多半要前一天先說」，成立：利尻飯店前一天 19:00 前預約、海洋飯店要事先聯絡、田中家要訂含早或兩食的方案；Rera Moshiri 是前一晚直接給，不用另外說，所以「多半」用得對。"
+    },
+    {
+      "claimId": "C140",
+      "articleExcerpt": "想在旅館的晚餐吃到生海膽，要排6月到9月去，其他月份禁漁，天候或海況不好的日子也可能沒有。",
+      "sourceUrl": "http://marine-h.com/meals/",
+      "sourceTitle": "お食事 | 【公式】利尻マリンホテル",
+      "sourceQuote": "（生うにの提供は6月～9月、それ以外は禁漁となっております）｜※ウニは天候や収穫量によってもご用意できない場合がございます。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C141",
+      "articleExcerpt": "利尻海洋飯店、利尻飯店和田中家都把生海膽放在夏天的晚餐裡",
+      "sourceUrl": "https://hotel-rishiri.jp/dining",
+      "sourceTitle": "お食事(DINING) | ホテル利尻",
+      "sourceQuote": "6～9月に提供される生うには格別｜（マリン）生うにの提供は6月～9月｜（ひなげし館）キタムラサキウニ提供/6月上旬～9月下旬",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C142",
+      "articleExcerpt": "Rera Moshiri的招牌則是海膽釜飯",
+      "sourceUrl": "http://www.maruzen.com/tic/oyado/ryouri.html",
+      "sourceTitle": "料理 of ［rera mosir］利尻島・マルゼンペンション・レラモシリ",
+      "sourceQuote": "どんぶり選手権２年連続グランプリ「うにめし丼」…釜飯スタイルでご提供",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C143",
+      "articleExcerpt": "鴛泊的民宿Hera家（ペンションヘラさんの家）離港口很近",
+      "sourceUrl": "http://www.rishiri-yume.com",
+      "sourceTitle": "ペンション　ヘラさんの家 | ホーム",
+      "sourceQuote": "港からも見えており、港に近くて便利です。",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C144",
+      "articleExcerpt": "晚餐也吃得到生海膽，是用島上當季魚貝做的日式海鮮料理，客人坐下才一道一道上。",
+      "sourceUrl": "http://www.rishiri-yume.com",
+      "sourceTitle": "ペンション　ヘラさんの家 | ホーム",
+      "sourceQuote": "島育ちの旬の魚貝と生ウニを使って、素朴な海鮮料理（和食）として、お客様が席に着かれてから１品ずつお出しします。",
+      "verdict": "verified",
+      "notes": "官網沒寫生海膽的季節；民宿 5 月就開，5 月照海洋飯店的說法是禁漁期，放在「要排6月到9月去」那段之後，讀者不至於誤會。"
+    },
+    {
+      "claimId": "C145",
+      "articleExcerpt": "民宿5月到10月營業，只收10歲以上的住客，浴池用鐵平石和熔岩砌成，看得到海和夕陽，訂房看[民宿Hera家官網](http://www.rishiri-yume.com)。",
+      "sourceUrl": "http://www.rishiri-yume.com",
+      "sourceTitle": "ペンション　ヘラさんの家 | ホーム",
+      "sourceQuote": "鉄平石と溶岩で作られたお風呂からは海と夕陽が見え｜（料金）６/１ ～ ８/16｜５月, 8/17 ～ 10/10｜（RISHIRI PLUS）営業期間 ５月〜１０月｜※ 宿泊のお客様は、１０才以上に限ります。｜（RISHIRI PLUS）年齢制限があり、１０歳以上から利用可能",
+      "verdict": "verified",
+      "notes": "第2輪（2026-11-19）：補了 10 歲以上，官網與 RISHIRI PLUS 一致。"
+    },
+    {
+      "claimId": "C146",
+      "articleExcerpt": "住利尻島每人每晚要另外付北海道住宿稅，從2026年4月起收，房價未滿2萬日圓是100日圓，2萬到未滿5萬日圓是200日圓，5萬日圓以上是500日圓。",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
+      "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
+      "sourceQuote": "令和8年4月から北海道宿泊税を導入｜宿泊料金（1人1泊）2万円未満 100円｜2万円以上5万円未満 200円｜5万円以上 500円",
+      "verdict": "verified",
+      "notes": "利尻富士町、利尻町不在北海道公告的另收市町村住宿稅名單（facts.md K9）。"
+    },
+    {
+      "claimId": "C147",
+      "articleExcerpt": "住宿稅由旅館和住宿費一起收",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
+      "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
+      "sourceQuote": "宿泊施設において、宿泊料金と併せて、宿泊税を徴収",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C148",
+      "articleExcerpt": "有的旅館寫明就算訂房時已經先付了款，住宿稅也是到現場付。",
+      "sourceUrl": "http://www.kamuirishiri.com/",
+      "sourceTitle": "【公式】しまのやど　かむいりしり|利尻島の宿泊観光に",
+      "sourceQuote": "※事前決済の場合も宿泊税は現地にて徴収いたします。",
+      "verdict": "verified",
+      "notes": "依據是島之宿Kamui利尻；「有的旅館」沒有擴大，成立。"
+    },
+    {
+      "claimId": "C149",
+      "articleExcerpt": "有溫泉的旅館可能另收入湯稅，例如利尻海洋飯店，國中生以上每人150日圓。",
+      "sourceUrl": "http://marine-h.com/rooms/",
+      "sourceTitle": "客室 | 【公式】利尻マリンホテル",
+      "sourceQuote": "※中学生以上のお客様は入湯税(¥150)、北海道宿泊税2万円未満￥100、2万円以上￥200がそれぞれ発生します。",
+      "verdict": "verified",
+      "notes": "Aya瀨官網也寫入湯稅每人 150 日圓。"
+    },
+    {
+      "claimId": "C150",
+      "articleExcerpt": "資料來源 28 條網址",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/fujikanko-hotel/",
+      "sourceTitle": "利尻富士観光ホテル | 利尻島｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "28 條今天 urllib 都回 200，頁面標題都是標示的那一頁、內容是該旅館或官方單位",
+      "verdict": "verified",
+      "notes": "逐條打開，標題都對得上且都是本人網域：海洋飯店官網／FAQ／客房（【公式】利尻マリンホテル）、RISHIRI PLUS 富士觀光頁、Rera Moshiri 官網與官方訂房（yado6，導向 https 首頁「プラン一覧」）、田中家官網、雪國官網、利尻飯店官網／交通（導向 /access/）／冬季休業公告、Island Inn 官網與 /191/ 公告（温故知新）、Green Hill Inn、1721（群来留）、Nari田、中原旅館 yadoken、Hera家、Aya瀨（telnet-rishiri，版權 2021 但內容是飯店本身）、Kamui利尻、VILLA KAMUI、利尻富士町登山口交通、RISHIRI PLUS 登山與季節、Heartland Ferry 兩份時刻表、宗谷巴士利尻、北海道住宿稅。沒有被別人佔用的網域。全頁（正文、表格、資料來源）沒有北國大飯店與 kitaguni-gp.com。｜第2輪（2026-11-19）：雪國 rwiths 已刪，剩 28 條，就是第1輪重開確認過的那 28 條；今天再數一次是 28 條，全頁仍沒有北國大飯店與 kitaguni-gp.com。"
     }
   ],
   "summary": {
-    "verified": 83,
+    "verified": 147,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

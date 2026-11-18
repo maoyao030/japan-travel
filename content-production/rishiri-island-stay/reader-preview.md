@@ -1,201 +1,196 @@
-# 利尻島住宿，怎麼選區與冬季休館
+# 利尻島住宿推薦，住鴛泊還是沓形？
 
-利尻島住宿分在鴛泊、沓形、鬼脇跟仙法志四個區域，住哪一區，看這趟要不要登山、從哪個港上島。如果是第一次上島、不開車或是打算登利尻山的話，住鴛泊最順，因為從稚內搭的渡輪就停在鴛泊港，2025年夏天的登山客也有九成以上走鴛泊路線。
+去利尻島，多半是為了爬利尻山、吃當季海膽，或順著稚內的渡輪把利尻、禮文排在一起。島上的大飯店冬天都休館，所以去的季節會決定能住哪幾間。這一頁比較利尻島住宿住鴛泊還是沓形，介紹鴛泊5間、沓形3間旅館，也整理冬天能住的旅館、登山口接送和住宿稅。
 
-不過冬天能住的地方少了一截。鴛泊幾家能住上百人的大飯店，利尻海洋飯店（利尻マリンホテル）、Aya瀨飯店（ホテルあや瀬）跟利尻富士觀光飯店（利尻富士観光ホテル），都只開到10月就關了。這時候還開門的，是旅館雪國（旅館雪国）、中原旅館這類全年營業的旅館跟民宿。還沒決定要不要排利尻島的話，可以先看利尻島值得去嗎。
+## 利尻島住宿要住鴛泊還是沓形？
 
-## 利尻島住宿怎麼選區，鴛泊、沓形、鬼脇與仙法志
+第一次上島、要爬利尻山，或從稚內搭渡輪來回的，住鴛泊最順：從稚內來的渡輪就停在鴛泊渡輪站，鴛泊的旅館開車到利尻機場大約7到10分鐘，從鴛泊市區開車到鴛泊登山口也大約10分鐘。這一區介紹的是利尻海洋飯店（利尻マリンホテル）、Maruzen民宿Rera Moshiri（マルゼンペンション レラモシリ）、旅館田中家虞美人館（旅館 田中家ひなげし館）、旅館雪國（旅館 雪国），和可以自己煮的青年旅館利尻Green Hill Inn（利尻ぐりーんひる inn）。
 
-島上的旅館、民宿跟飯店有三十多家，另外還有5處只在夏天開的露營場。住哪一區，大致跟著上島的港口跟隔天的行程走就好。四區分屬兩個町，北邊的鴛泊、東邊的鬼脇屬利尻富士町，西邊的沓形、南邊的仙法志屬利尻町。
+想看日本海的夕陽，或夏天要從沓形港搭船去禮文島的，就住島西邊的沓形，沓形港往禮文島香深的船2026年是6月1日到9月30日才有。這一區介紹有溫泉的利尻飯店（ホテル利尻）、Island Inn利尻（アイランドインリシリ），和有多人房的Guest House 1721（ゲストハウス1721）。沓形到鴛泊渡輪站開車大約15到20分鐘，到鴛泊登山口要25分鐘左右，所以住沓形又要爬鴛泊路線的，可以選有免費送鴛泊登山口的利尻飯店。
 
-| 區域 | 位置 | 怎麼抵達 | 這區的住宿 |
-|---|---|---|---|
-| 鴛泊 | 利尻富士町，島的北邊 | 稚內來的渡輪停鴛泊港，利尻機場也在鴛泊 | 離渡輪站走路5到8分鐘的小旅館，收容上百人的飯店 |
-| 沓形 | 利尻町，島的西邊 | 6月到9月有船往返禮文島香深，約40分鐘 | 町營的利尻飯店、Island Inn利尻、包棟別墅VILLA KAMUI |
-| 鬼脇 | 利尻富士町，島的東邊 | 繞島路線巴士A路線經過 | 全年營業的小飯店川一、旅館富士 |
-| 仙法志 | 利尻町，島的南邊 | 繞島路線巴士經過 | 民宿Hamada |
+還沒決定要不要排利尻島、要住幾晚，可以先看[〈利尻島值得去嗎〉](/places/rishiri-island/)。島上的路線巴士怎麼搭、從稚內怎麼上島，[〈利尻島交通〉](/places/rishiri-island/transport/)都有整理。兩島都想住的話，鴛泊全年有船到禮文島香深，船程約45分鐘，禮文島那邊的旅館比較寫在[〈禮文島住宿〉](/places/rebun-island/stay/)。稚內和兩島之間的船班、票價，可以查[〈稚內到利尻島、禮文島渡輪〉](/places/wakkanai/ferry/)。
 
-要登山的話就住鴛泊。因為沓形路線9合目以上的登山道已經封閉（2026年6月公告），2025年夏天的10,625名登山客裡，有10,375人走鴛泊路線。如果是從禮文島搭船過來、想玩島的西岸的話，住沓形比較順，6月到9月沓形港就有船往返香深。傍晚還能到沓形的神居露台（カムイテラス）看夕陽，不過這座觀景台11月中旬到3月封閉。
+## 利尻島冬天住哪裡？
 
-不開車又住鬼脇或仙法志的話，移動主要靠繞島一圈的路線巴士。A路線經鬼脇、B路線經沓形，夏天各5班，冬天各4班，所以要按巴士時刻排行程，路線巴士跟觀光巴士的時刻都整理在利尻島交通。計程車行鴛泊、沓形各一家，而且清晨都不營業。租車公司有5家在鴛泊，沓形只有1家，所以想租車環島的話，住鴛泊取車最方便。
+12月到2月去利尻島，能住上百人的飯店都休館，沓形的利尻飯店也從2026年11月30日到2027年3月下旬暫停住宿，冬天確定訂得到的是幾間小旅館：鴛泊的Rera Moshiri（2027年1月6日起）、雪國、旅館Nari田（旅館なり田），和沓形的中原旅館。
 
-### 鴛泊的住宿
+Rera Moshiri從2026年10月15日休業到12月20日，冬天露天只開檜木那一座，男女輪流泡。雪國冬天也有方案，不過溫泉浴池只開到10月底，冬天沒有。Nari田2027年1月到5月有方案，只收電話，浴室和廁所共用，也沒有禁菸房，電話看[旅館Nari田官網](http://rishirinarita.jp)。中原旅館離沓形港走路約7分鐘，沒有接送，也沒有禁菸房，訂房看[中原旅館官網](https://www.yadoken.jp/plans?hotel_id=yk102681)或[Trip.com](https://tw.trip.com/hotels/rishiri-hotel-detail-17453026/nakahara-ryokan/)。
 
-鴛泊港渡輪站海之驛鴛泊（海の駅おしどまり）裡有投幣置物櫃跟觀光案內所，如果船比入住時間早到的話，行李可以寄在這裡再出去走走。這區的住宿有的走路就到，有的靠旅館接送，下表依離渡輪站的遠近跟接送範圍整理。
+2026年底到2027年初最容易撲空：中原旅館12月27日到1月6日沒開賣，雪國12月31日到1月5日休息，1月1日到3日路線巴士也全部停駛。住的旅館沒有溫泉的話，利尻飯店冬天雖然不能住，日歸溫泉照常開。11月起天候變差，渡輪常停航，想知道各月的氣溫和停航，可以看[〈利尻島天氣〉](/places/rishiri-island/weather/)。
 
-| 住宿 | 離渡輪站多遠、接送到哪裡 | 連結 |
+## 鴛泊的大型飯店
+
+想住大一點的飯店，這一頁整理了鴛泊三間能住上百人的：利尻海洋飯店、利尻富士觀光飯店（利尻富士観光ホテル）和Aya瀨飯店（ホテルあや瀬），營業期間都只到10月，11月起就休館。利尻富士觀光飯店3月到10月營業，住過的人說它就在鴛泊渡輪站對面、下船走幾分鐘就到，晚餐的在地海鮮也好吃，不過建築老舊，浴場只有一個室內大浴池。訂房可以看[Trip.com](https://tw.trip.com/hotels/rishirifuji-hotel-detail-1487903/rishiri-fuji-kanko-hotel/)或[Agoda](https://www.agoda.com/zh-tw/rishiri-fuji-kanko-hotel/hotel/rishiri-jp.html)。
+
+### 利尻海洋飯店
+
+想早上爬上岬角看日出，利尻海洋飯店正後方就是Peshi岬（ペシ岬），走到頂大約15到20分鐘，走到鴛泊渡輪站也只要8分鐘，只是大浴場沒有露天浴池。
+
+**為什麼選這間**：晚餐是用利尻產的螃蟹、海膽、花魚做的日式定食，生海膽只有6到9月吃得到。大雙床房和和洋室的窗外看得到利尻山和鴛泊港，和洋室住得下5人。大浴場用的是天然的利尻富士溫泉，泡完不容易冷。要爬山的話，下山後在下午2點以後打電話，飯店就會到登山口接。
+
+**訂房前的注意事項**：餐點只準備事先預約的份，如果訂了純住宿又想在館內吃，要早點聯絡，飯店也會介紹附近的居酒屋並接送。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/rishirifuji-hotel-detail-1487907/rishiri-marine-hotel/)｜[Agoda](https://www.agoda.com/zh-tw/rishiri-marine-hotel/hotel/rishiri-jp.html)｜[官網](http://marine-h.com)
+
+## 鴛泊有溫泉浴池的旅館與民宿
+
+想住小一點的旅館、吃島上的海鮮，又想在館內泡溫泉，可以看這三間，浴池都用利尻富士溫泉，其中雪國的溫泉只開4月底到10月底。
+
+### Maruzen民宿Rera Moshiri
+
+想泡著露天看利尻山，Rera Moshiri有兩座露天溫泉，一座是檜木池，一座用利尻產的鐵平石砌成，男女每天交換。不過露天一次最多只能3人泡，也沒有早上泡湯的時段。
+
+**為什麼選這間**：晚餐的招牌是海膽釜飯，原型是食堂丸善在全國當地丼飯比賽2011、2012年連拿兩屆冠軍的海膽飯丼，民宿改成釜飯，再撒上鮭魚卵。有住客稱讚海膽釜飯和海鮮晚餐好吃。天氣好的早上，可以在看得到利尻山的露台吃早餐。要爬山的話，早上4點就送到登山口，民宿說是島上旅館裡最早的。
+
+**訂房前的注意事項**：走到鴛泊渡輪站大約20分鐘，可以免費接送，但要事先說好抵達的方式和時間，上午到的和當天才說的都不接。官網建議網路訂，電話訂每晚會多收手續費。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/rishirifuji-hotel-detail-28130488/rera-mosir/)｜[官網](http://www.maruzen.com/tic/oyado/)
+
+### 旅館田中家虞美人館
+
+想在旅館吃到當季的生海膽，田中家把海膽泡在海洋深層水裡端上桌，只是房間都是不大的8疊和室，兩層樓也沒有電梯。
+
+**為什麼選這間**：紫海膽在6月上旬到9月下旬、馬糞海膽在6月中旬到8月下旬端上桌，想兩種都吃到，要排6月中旬到8月下旬去。訂房時先說一聲，還可以加點一年只捕得到幾次的蝦夷鮑陶板燒，連住的話每天換菜單。要爬山的話，早上有車免費送到鴛泊登山口，早餐換成便當。
+
+**訂房前的注意事項**：旅館走到鴛泊渡輪站15分鐘，可以接送鴛泊渡輪站、機場和鴛泊登山口，要在住宿前一天以前申請，沓形港不接；只在5月到10月營業。有些住客覺得建築不新，不過打掃得很乾淨。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/rishirifuji-hotel-detail-3109032/tanakaya-hinageshikan/)｜[Agoda](https://www.agoda.com/zh-tw/tanakaya-hinageshikan/hotel/rishiri-jp.html)｜[官網](https://www.rishiri-hinageshi.com/)
+
+### 旅館雪國
+
+想吃漁師自己捕的魚，雪國的老闆就是開磯船的漁師，旅館前的定置網捕到的魚可能直接上當天的晚餐。
+
+**為什麼選這間**：定置網從4月下旬設到6月初，捕到的槍烏賊、水章魚、比目魚、紫海膽和花魚都可能出現在晚餐。旅館正前方就是海，位在島的東側，早上看得到日出。鴛泊渡輪站出口旁就是旅館自己經營的機車和自行車出租店，4月27日到11月左右營業，住客有專用的方案。有住客提到騎機車環島很方便。旅館全年營業，冬天也有方案。
+
+**訂房前的注意事項**：旅館走到鴛泊渡輪站15分鐘，渡輪站和機場都可以免費接送，要先聯絡，但搭上午班機的，旅館不送去機場。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/rishirifuji-hotel-detail-3176621/ryokan-ryokan-yukiguni/)｜[官網](http://ryokanyukiguni.com/)
+
+## 沓形的溫泉飯店
+
+想住在島的西邊看日本海的夕陽，又想在館內泡天然溫泉的人，可以看沓形這兩間飯店，兩間都有露天浴池，不過冬天都不能住。
+
+### 利尻飯店
+
+想泡溫泉、看日本海的夕陽，利尻飯店有茶褐色、叫做金之湯的天然溫泉和面海的露天浴池，只是露天只在5月到10月開。
+
+**為什麼選這間**：晚餐是海鮮日式定食，6到9月有生海膽，升級的晚餐方案再加海膽土瓶蒸，夏天晚餐時還有90分鐘的自助飲料區，喝得到利尻昆布燒酎。泡湯的部分，有住客反應除了熱的池子，還有冷泉池可以交替泡。機場和鴛泊渡輪站都有免費接送，要爬山也有車送到鴛泊登山口。一家人去的話，和洋室最多住得下5人。
+
+**訂房前的注意事項**：接送是事前預約制，沒有預約就不開車。一般單人房、洋式雙床房和8疊和室都沒有冷氣，夏天怕熱要訂有冷氣的10疊和室、和室雙床或和洋室。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/rishiri-hotel-detail-1647153/hotel-rishiri/)｜[Agoda](https://www.agoda.com/zh-tw/hotel-rishiri-h80103946/hotel/rishiri-jp.html)｜[官網](https://hotel-rishiri.jp/)
+
+### Island Inn利尻（利尻海島賓館）
+
+Island Inn利尻的房間分成正對利尻山的山側和看日本海夕陽的海側，晚餐是用利尻昆布等島上食材做的日式、西式和中式自助餐，大浴場是島上的天然溫泉，有露天在內的三種浴池。這是5月到10月營業的季節飯店，2027年預定5月22日開始營業，2026年12月1日起在官網和各訂房網站開放訂房。
+
+排完禮文島再到利尻島的，夏天從香深搭船約40分鐘到沓形港，下船走約5分鐘就到。
+
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/rishiri-hotel-detail-3725791/island-inn-rishiri/)｜[Agoda](https://www.agoda.com/zh-tw/island-inn-rishiri/hotel/rishiri-jp.html)｜[官網](https://rishiri.by-onko-chishin.com/)
+
+## 利尻島的青年旅館
+
+一個人旅行想省住宿費、想自己煮，或只要一張床好隔天一早爬山的人，可以看這兩間。兩間都有多人房和共用的淋浴，一間在鴛泊、一間在沓形。
+
+### 利尻Green Hill Inn
+
+想自己煮、一個人住多人房，Green Hill Inn有一間窗外正對著海的大廚房；不過館內沒有浴池，淋浴間男女各只有2間，也沒有浴衣和備品。
+
+**為什麼選這間**：多人房男女分開，上下鋪的床特別做到220到250公分長，也有最多住4人的包房。超市走3分鐘就到，買了食材回來就能在大廚房煮，早餐的麵包也免費。早上有車送去渡輪站，配合往稚內和往禮文的船各一趟，要爬山的話，清晨也有車送登山口。
+
+**訂房前的注意事項**：10月中旬到2月下旬不能住，還沒上小學的孩子只能住包房。機場不來接，要搭路線巴士；下船要人接的話，前一天以前就要聯絡。
+
+看房價與訂房：[官網](https://rishiri-greenhill.net/jp/booking.html)
+
+### Guest House 1721
+
+Guest House 1721在沓形，離海岸走15秒、正對著利尻山，溫泉和便利商店都走2分鐘就到。一個人可以住單人房，也可以住4人的多人房，多人房分女性專用和男女混住。晚餐可以到同一家公司經營的濱燒店或BAR1721吃花魚鏘鏘燒。
+
+這裡的渡輪和班機接送要先用表單申請，沒申請就不開車。要爬山的話，登山口接送只限住2晚以上、6月1日到9月10日，而且要另外付費。
+
+看房價與訂房：[官網](http://www.kukiru.com/guesthouse.html)
+
+## 利尻島住宿比較表
+
+鴛泊
+
+| 住宿 | 位置 | 營業期間 | 溫泉或浴池 | 接送 | 怎麼訂 | 連結 |
+|---|---|---|---|---|---|---|
+| 利尻海洋飯店 | 鴛泊渡輪站走8分 | 3月到10月，11月到2月休館 | 利尻富士溫泉的大浴場，沒有露天 | 渡輪站、機場；登山口5:00送，下山打電話就接 | 官網、Trip.com、Agoda | [官網](http://marine-h.com)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E5%B0%BB%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+| 利尻富士觀光飯店 | 鴛泊渡輪站附近 | 3月到10月，11月到2月休館 | — | 渡輪站、機場、登山口，訂房時一起安排 | Trip.com、Agoda | [Trip.com](https://tw.trip.com/hotels/rishirifuji-hotel-detail-1487903/rishiri-fuji-kanko-hotel/)・[Agoda](https://www.agoda.com/zh-tw/rishiri-fuji-kanko-hotel/hotel/rishiri-jp.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E8%A6%B3%E5%85%89%E3%83%9B%E3%83%86%E3%83%AB%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+| Aya瀨飯店 | 鴛泊渡輪站走20分 | 4月到10月，11月到3月休館 | 溫泉浴場 | 渡輪站、機場免費接送，要先告知抵達時間 | 電話、Trip.com、Agoda | [Trip.com](https://tw.trip.com/hotels/rishirifuji-hotel-detail-1647161/hotel-ayase/)・[Agoda](https://www.agoda.com/zh-tw/hotel-ayase-h10564909/hotel/rishiri-jp.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%81%82%E3%82%84%E7%80%AC%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+| Maruzen民宿Rera Moshiri | 鴛泊渡輪站走約20分 | 2026年10月15日到12月20日休業，2027年1月6日以後的住宿才訂得到 | 兩座看利尻山的露天溫泉，冬天只開一座 | 渡輪站、機場，上午到的不接；登山口4:00送 | 官網（電話訂每晚多收手續費）、Trip.com | [官網](http://www.maruzen.com/tic/oyado/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%AB%E3%82%BC%E3%83%B3%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%20%E3%83%AC%E3%83%A9%E3%83%A2%E3%82%B7%E3%83%AA%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+| 旅館田中家虞美人館 | 鴛泊渡輪站走15分 | 5月到10月，11月到4月休館 | 利尻富士溫泉的內湯 | 鴛泊渡輪站、機場，不接沓形港；登山口4:30送 | 官網、Trip.com、Agoda | [官網](https://www.rishiri-hinageshi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%85%E9%A4%A8%20%E7%94%B0%E4%B8%AD%E5%AE%B6%E3%81%B2%E3%81%AA%E3%81%92%E3%81%97%E9%A4%A8%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+| 旅館雪國 | 鴛泊渡輪站走15分 | 全年，12月31日到1月5日休 | 利尻富士溫泉，只開4月27日到10月底 | 渡輪站、機場，上午的班機不送；登山口4:30到5:00送 | 官網、Trip.com | [官網](http://ryokanyukiguni.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%85%E9%A4%A8%20%E9%9B%AA%E5%9B%BD%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+| 利尻Green Hill Inn | 鴛泊，超市走3分 | 3月到10月上旬，10月中旬到2月下旬不能住 | 只有淋浴 | 渡輪站要前一天聯絡，機場不接；登山口4:45送 | 官網 | [官網](https://rishiri-greenhill.net/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E5%B0%BB%E3%81%90%E3%82%8A%E3%83%BC%E3%82%93%E3%81%B2%E3%82%8B%20inn%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+| 島之宿Kamui利尻 | 鴛泊渡輪站走8分 | — | 房間沒有浴室和廁所，1樓有包租浴池和淋浴 | 機場不接 | 官網、Trip.com | [官網](http://www.kamuirishiri.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%97%E3%81%BE%E3%81%AE%E3%82%84%E3%81%A9%20%E3%81%8B%E3%82%80%E3%81%84%E3%82%8A%E3%81%97%E3%82%8A%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+| 旅館Nari田 | 鴛泊渡輪站走約5分 | 冬天也營業，2027年1月到5月有方案 | 共用浴室 | 渡輪站到了打電話接；登山口5:00以後送 | 只收電話 | [官網](http://rishirinarita.jp)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%85%E9%A4%A8%E3%81%AA%E3%82%8A%E7%94%B0%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+| 民宿Hera家 | 鴛泊，離港口近 | 5月到10月 | 鐵平石和熔岩砌的浴池，看得到海和夕陽 | — | 官網 | [官網](http://www.rishiri-yume.com)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%98%E3%83%A9%E3%81%95%E3%82%93%E3%81%AE%E5%AE%B6%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+
+沓形
+
+| 住宿 | 位置 | 營業期間 | 溫泉或浴池 | 接送 | 怎麼訂 | 連結 |
+|---|---|---|---|---|---|---|
+| 利尻飯店 | 沓形，島的西海岸 | 2026年11月30日到2027年3月下旬住宿休業，日歸溫泉照開 | 茶褐色的金之湯，面海的露天只開5月到10月 | 機場、鴛泊渡輪站，要預約；登山口5:30送鴛泊 | 官網、Trip.com、Agoda | [官網](https://hotel-rishiri.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E5%88%A9%E5%B0%BB%20%E5%88%A9%E5%B0%BB%E7%94%BA) |
+| Island Inn利尻 | 沓形港走約5分 | 5月到10月，2027年預定5月22日開幕 | 島上的天然溫泉，有露天在內的三種浴池 | — | 官網、Trip.com、Agoda，2026年12月1日起開賣 | [官網](https://rishiri.by-onko-chishin.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%89%E3%82%A4%E3%83%B3%E3%83%AA%E3%82%B7%E3%83%AA%20%E5%88%A9%E5%B0%BB%E7%94%BA) |
+| 中原旅館 | 沓形港走約7分 | 全年，年底年初除外 | 館內浴場 | 沒有接送 | 官網、Trip.com | [官網](https://www.yadoken.jp/plans?hotel_id=yk102681)・[地圖](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E5%8E%9F%E6%97%85%E9%A4%A8%20%E5%88%A9%E5%B0%BB%E7%94%BA) |
+| Guest House 1721 | 沓形，鴛泊渡輪站開車15分 | — | 共用淋浴，溫泉走2分 | 渡輪、班機要用表單申請；登山口只限住2晚以上，另外收費 | 官網 | [官網](http://www.kukiru.com/guesthouse.html)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B2%E3%82%B9%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B91721%20%E5%88%A9%E5%B0%BB%E7%94%BA) |
+| VILLA KAMUI | 沓形 | — | 只給住客用的海景三溫暖 | 機場、港口配合抵達接送 | 官網；一天一組，12歲以下不收 | [官網](https://villa-kamui.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=VILLA%20KAMUI%20%E5%88%A9%E5%B0%BB%E7%94%BA) |
+
+## 利尻島哪些旅館接送登山口？
+
+鴛泊的旅館多半會在清晨送住客到鴛泊登山口，沓形的利尻飯店也送鴛泊登山口，不過下山接不接，每間的規定不一樣。登山口沒有巴士，島上的計程車行清晨也不營業，從鴛泊渡輪站走過去3.6公里要大約一個小時，所以清晨上山多半是靠旅館送。
+
+| 旅館 | 早上幾點出發 | 下山後接不接 |
 |---|---|---|
-| 利尻富士觀光飯店 | 離鴛泊渡輪站最近，渡輪站、機場與登山口的接送在訂房時詢問 | [地圖](https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E8%A6%B3%E5%85%89%E3%83%9B%E3%83%86%E3%83%AB%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
-| 利尻海貓旅舍 | 渡輪站走路約5分鐘，不提供接送 | [官網](https://www.rishiriumineko.com)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E5%B0%BB%E3%81%86%E3%81%BF%E3%81%AD%E3%81%93%E3%82%B2%E3%82%B9%E3%83%88%E3%83%8F%E3%82%A6%E3%82%B9%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
-| 島之宿Kamui利尻 | 渡輪站走路約8分鐘，不到機場接送 | [官網](http://www.kamuirishiri.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%81%97%E3%81%BE%E3%81%AE%E3%82%84%E3%81%A9%20%E3%81%8B%E3%82%80%E3%81%84%E3%82%8A%E3%81%97%E3%82%8A%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
-| 利尻海洋飯店 | 接送渡輪站、機場與利尻山登山口 | [地圖](https://www.google.com/maps/search/?api=1&query=%E5%88%A9%E5%B0%BB%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
-| Aya瀨飯店 | 免費接送渡輪站與機場，要事先告知抵達地點與時間 | [地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%81%82%E3%82%84%E7%80%AC%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
-| 旅館田中家虞美人館 | 免費接送機場、渡輪站與鴛泊登山口 | [官網](https://www.rishiri-hinageshi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%85%E9%A4%A8%E7%94%B0%E4%B8%AD%E5%AE%B6%E3%81%B2%E3%81%AA%E3%81%92%E3%81%97%E9%A4%A8%20%E5%88%A9%E5%B0%BB%E5%AF%8C%E5%A3%AB%E7%94%BA) |
+| Maruzen民宿Rera Moshiri | 4:00 | 只接連住的人，下午1點以後每30分鐘一班 |
+| 旅館田中家虞美人館 | 4:30（9月起5:00） | 只接當天也住的人 |
+| 旅館雪國 | 4:30到5:00 | 退房當天登山的不接 |
+| 利尻Green Hill Inn | 4:45，有人要去才出車 | 原則上不接 |
+| 利尻海洋飯店 | 5:00 | 下午2點以後打電話就接 |
+| 旅館Nari田 | 5:00以後 | 接到下午3點半 |
+| 利尻飯店（沓形） | 5:30 | 只接當天也住的人 |
+| Guest House 1721（沓形） | — | 只限住2晚以上、6月1日到9月10日，另外收費；下午1點和4點左右接 |
 
-利尻海貓旅舍（利尻うみねこゲストハウス）2026年的營業已經結束了，2027年的營業期間跟訂房都還沒定。如果搭飛機抵達又住在不接機的Kamui利尻（しまのやど かむいりしり）的話，要自己搭巴士或計程車過去。
+清晨就要出發的話，田中家、利尻海洋飯店、Rera Moshiri和利尻飯店都能準備便當或飯糰，多半要前一天先說。鴛泊和沓形兩條路線各要走多久、要帶什麼，都整理在[〈利尻山登山〉](/places/rishiri-island/hiking/)。
 
-登山那天的早上最麻煩。鴛泊登山口在北麓野營場，巴士不到登山口，從渡輪站走過去3.6公里要大約60分鐘。鴛泊路線天氣好也要11小時，又碰上計程車清晨不營業，所以住宿的登山口接送就是最實際的走法。想了解兩條路線各要走多久、攜帶式廁所怎麼用，利尻山登山那一頁有詳細的說明。
+## 利尻島旅館的生海膽晚餐
 
-島上幾乎每家住宿都接送登山口，不過多半只送自己那一區的，住鴛泊就是送鴛泊登山口。Maruzen民宿Rera Moshiri（マルゼンペンション レラモシリ）會配合登山客日出出發，把早餐改成便當。登山計畫書的表格住宿裡就有，一套450圓的攜帶式廁所也在住宿買得到。
+想在旅館的晚餐吃到生海膽，要排6月到9月去，其他月份禁漁，天候或海況不好的日子也可能沒有。利尻海洋飯店、利尻飯店和田中家都把生海膽放在夏天的晚餐裡，Rera Moshiri的招牌則是海膽釜飯。鴛泊的民宿Hera家（ペンションヘラさんの家）離港口很近，晚餐也吃得到生海膽，是用島上當季魚貝做的日式海鮮料理，客人坐下才一道一道上。民宿5月到10月營業，只收10歲以上的住客，浴池用鐵平石和熔岩砌成，看得到海和夕陽，訂房看[民宿Hera家官網](http://www.rishiri-yume.com)。訂了純住宿、想到食堂吃海膽丼的人，[〈利尻島美食〉](/places/rishiri-island/food/)列了島上哪裡吃得到。
 
-不登山的早上，可以走上鴛泊港旁邊大約90公尺高的Peshi岬（ペシ岬）看日出。步道5月到10月開放，不過又窄又陡，天氣不好的時候走起來蠻危險的。
+## 利尻島的住宿稅與入湯稅
 
-### 沓形的住宿
-
-想住沓形，多半是為了這裡出發的船跟觀光巴士。沓形港往禮文島香深的船只在6月到9月行駛，船程大約40分鐘。定期觀光巴士的利尻B行程利尻景點巡遊（利尻スポットめぐり）也只在6月到9月運行，13:45從沓形渡輪站出發。因為從稚內坐船抵達的是鴛泊，要自己搭經沓形的路線巴士B路線過去，所以前一晚住沓形就不用趕這一段。
-
-町營的利尻飯店（ホテル利尻）免費接送利尻機場、鴛泊渡輪站跟登山口，不過採事前預約制，沒預約就不開車，記得訂房的時候一起預約接送。往鴛泊登山口的車早上5:30從飯店出發，如果想住沓形又走鴛泊路線的話，可以選這一間。
-
-Island Inn利尻（アイランドインリシリ）入選過《米其林指南2017》，2026年的營業已在9月30日結束了。2027年預定5月22日開幕，12月1日9:00起開放訂房，官網跟各訂房網站都會受理。
-
-VILLA KAMUI在沓形神居，一天只接一組客人，整棟包下來住，還附三溫暖。這裡的接送會配合機場跟港口的抵達時間。
-
-### 鬼脇與仙法志的住宿
-
-不開車也住得了這兩區，只是進出都得跟著巴士班次走。路線巴士出了四個鎮上的街區，多數路段可以在路邊舉手攔車，要下車直接跟司機說就好。
-
-鬼脇的小飯店川一（プチホテル川一）跟旅館富士都全年營業。川一免費接送鴛泊渡輪站，不過要事先聯絡。旅館富士接送鴛泊渡輪站，鴛泊跟沓形兩個登山口也都送，是少數跨區接送登山口的住宿。
-
-仙法志的民宿Hamada（民宿はまだ）只在5月到10月營業。這一區唯一的餐廳是丸井食堂（マルヰ食堂），11:30開門，週二公休，所以訂房的時候最好一起確認晚餐怎麼安排。
-
-### 利尻島的露營場
-
-5處露營場都只在夏天開，最早5月1日開、最晚10月31日關，11月到隔年4月一處也沒有開。
-
-| 露營場 | 在哪裡 | 開放期間 |
-|---|---|---|
-| 利尻島家庭露營場 | 鴛泊，渡輪站開車5分鐘 | 5月1日～10月31日 |
-| 利尻北麓野營場 | 鴛泊登山口 | 5月15日～10月15日 |
-| 沼浦露營場 | Otatomari沼附近 | 6月1日～9月30日 |
-| 沓形岬公園露營場 | 沓形岬公園 | 5月1日～10月31日 |
-| 利尻町森林公園露營場 | 沓形 | 5月1日～10月31日 |
-
-要登山的話，利尻北麓野營場（利尻北麓野営場）就在鴛泊登山口，隔天一早不用另外找接送。野營場前還有攜帶式廁所的回收箱跟洗鞋處，下山後可以直接處理。利尻島家庭露營場（利尻島ファミリーキャンプ場ゆ〜に）離鴛泊渡輪站開車5分鐘，下船後就近搭營就好。
-
-沼浦露營場（沼浦キャンプ場）離鬼脇市區比較遠，沒開車的話很難採買食材，記得買好再去。附近的Otatomari沼（オタトマリ沼）有商店跟食堂，可以在那裡解決一餐，不過要留意營業時間。沓形這邊的沓形岬公園露營場（沓形岬公園キャンプ場）跟利尻町森林公園露營場（利尻町森林公園キャンプ場），都是5月1日到10月31日開放。
-
-## 利尻島住宿的冬季休館與全年營業
-
-12月到隔年2月，下表除了Maruzen民宿Rera Moshiri，其他住宿全部不營業。因為11月天氣變差，渡輪停航的日子也跟著變多，下旬平地開始積雪，所以島上的飯店多半在這段時間就關門了。3月起利尻海洋飯店、利尻富士觀光飯店跟利尻Green Hill Inn（利尻ぐりーんひる inn）才陸續開門。
-
-### 冬季休館的旅館與飯店
-
-| 住宿 | 營業期間與休館 |
-|---|---|
-| 利尻海洋飯店（鴛泊） | 3月～10月，11月～2月休館 |
-| 利尻富士觀光飯店（鴛泊） | 3月～10月，11月～2月休館 |
-| 利尻Green Hill Inn（鴛泊） | 3月～10月上旬，11月～2月休館，不含餐、可以自炊 |
-| Aya瀨飯店（鴛泊） | 4月～10月，11月～3月休館 |
-| 利尻海貓旅舍（鴛泊） | 2026年營業已結束，2027年營業期間未定 |
-| 旅館田中家虞美人館（鴛泊） | 5月～10月，11月～4月休館 |
-| Island Inn利尻（沓形） | 2026年營業已在9月30日結束，2027年預定5月22日開幕 |
-| Maruzen民宿Rera Moshiri（鴛泊） | 2026年10月15日～12月20日休業 |
-| 民宿Hamada（仙法志） | 5月～10月 |
-| 雲丹御殿飯店（野塚展望台旁） | 6月～9月，10月～5月休館 |
-| 利尻飯店（沓形） | 住宿2026年11月30日～2027年3月下旬冬季休業，日歸溫泉照常營業 |
-
-觀光協會網站上利尻飯店還寫著全年營業，不過飯店官網已經公告今年冬天停止住宿了，以飯店官網為準。野塚展望台旁邊的雲丹御殿飯店（ホテル雲丹御殿）只開6月到9月，是表上營業期最短的一間，免費接送渡輪站、機場跟鴛泊登山口。Rera Moshiri休業期間不接電話，要用e-mail聯絡。
-
-### 全年營業的住宿
-
-冬天要住利尻島的話，就從這些全年營業的旅館跟民宿裡選，有接送的多半要事先聯絡才行。
-
-鴛泊有這幾家：
-
-- 旅館雪國，12月31日到1月5日休，免費接送機場、渡輪站與鴛泊登山口
-- 夕陽館，免費接送機場與渡輪站
-- 民宿群林風（ペンション群林風），接送渡輪站、機場、鴛泊登山口與利尻富士溫泉
-- 利尻山莊花利尻（利尻山荘花りしり），接送渡輪站與鴛泊登山口
-- 旅館Nari田（旅館なり田），接送登山口與溫泉
-
-鬼脇是小飯店川一跟旅館富士，兩家都接送鴛泊渡輪站。
-
-沓形有這幾家：
-
-- 中原旅館，年末年始休
-- 正部川旅館，兩人以上免費接送，依時段而定
-- 民宿沓形莊（民宿くつがた荘）
-
-年底到年初去的話，能住的更少，旅館雪國跟中原旅館過年期間都公休。而且1月1日到3日島上的路線巴士全部停駛，不開車的話，這幾天移動只能靠旅館接送跟計程車。冬天遇到渡輪停航回不了稚內、要多住一晚，也是找上面這些全年營業的住宿。札幌丘珠機場的航班全年飛利尻，所以也可以改搭飛機離島。
-
-冬天也有地方泡湯，沓形的利尻交流溫泉（利尻ふれあい温泉）全年營業，不過露天風呂只開5月到10月。利尻飯店冬天雖然不能住，日歸溫泉還是照常開。利尻富士溫泉則在11月到4月每週三休館，要注意別排到週三。
-
-## 利尻島住宿的訂房管道與住宿稅
-
-夏天營業的飯店，大多在Agoda訂得到，包括利尻飯店、利尻海洋飯店、利尻富士觀光飯店、Aya瀨飯店、Island Inn利尻、田中家虞美人館、雲丹御殿飯店、Kamui利尻跟利尻Green Hill Inn。Trip.com上也找得到利尻飯店，還有全年營業的中原旅館、旅館雪國跟旅館富士。不過上架不代表冬天訂得到，選日期的時候記得對照上面的營業期間。
-
-想直接跟住宿訂的話，利尻飯店、田中家虞美人館、利尻Green Hill Inn跟民宿群林風的官網都有線上訂房。Island Inn利尻的2027年住宿12月1日9:00開放訂房，Rera Moshiri的2027年6月到10月住宿則在12月15日開放網路訂房。沒有網路訂房的，RISHIRI PLUS（りしぷら）各家的頁面列了電話跟官網。如果要接送的話，記得訂房的時候寫上搭的船班或航班。
-
-北海道從2026年4月1日起開始收住宿稅，每人每晚房價未滿2萬圓收100圓、2萬到未滿5萬圓收200圓、5萬圓以上收500圓。
-
-從利尻島接著去禮文島的話，鴛泊全年有船往香深，大約45分鐘，6月到9月沓形也有船，大約40分鐘。兩島之間的船班跟票價，稚內到利尻島、禮文島渡輪那一頁有整理好的時刻表。如果接著要到對面的島過夜，可以看禮文島住宿，那一頁整理了禮文島上的旅館跟民宿。
-
-## 延伸資料
-
-- **RISHIRI PLUS的住宿清單**，每家住宿的營業期間、接送範圍與電話。https://www.rishiri-plus.jp/shima-htsp/
-- **利尻飯店的冬季休業公告**，2026年冬天住宿休業的期間。https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/
-- **利尻富士町的露營資訊**，利尻島家庭露營場、利尻北麓野營場與沼浦露營場的開放期間。https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1133.htm
-- **RISHIRI PLUS的利尻山登山頁**，住宿接送登山口的說明。https://www.rishiri-plus.jp/shima-no-susume/tozan/
+住利尻島每人每晚要另外付北海道住宿稅，從2026年4月起收，房價未滿2萬日圓是100日圓，2萬到未滿5萬日圓是200日圓，5萬日圓以上是500日圓。住宿稅由旅館和住宿費一起收，有的旅館寫明就算訂房時已經先付了款，住宿稅也是到現場付。有溫泉的旅館可能另收入湯稅，例如利尻海洋飯店，國中生以上每人150日圓。
 
 ## 資料來源
 
-旅館資訊查核日期：2026年10月18日～11月1日
+- [利尻海洋飯店官網](http://marine-h.com)
+- [利尻海洋飯店 常見問題](http://marine-h.com/faq/)
+- [利尻海洋飯店 客房與稅金](http://marine-h.com/rooms/)
+- [利尻富士觀光飯店（RISHIRI PLUS）](https://www.rishiri-plus.jp/shima-htsp/fujikanko-hotel/)
+- [Maruzen民宿Rera Moshiri官網](http://www.maruzen.com/tic/oyado/)
+- [Maruzen民宿Rera Moshiri 官方訂房](http://rera.yado6.net/book/)
+- [旅館田中家虞美人館官網](https://www.rishiri-hinageshi.com/)
+- [旅館雪國官網](http://ryokanyukiguni.com/)
+- [利尻飯店官網](https://hotel-rishiri.jp/)
+- [利尻飯店 交通與接送](https://hotel-rishiri.jp/access)
+- [利尻飯店 冬季休業公告](https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/)
+- [Island Inn利尻官網](https://rishiri.by-onko-chishin.com/)
+- [Island Inn利尻 2027年營業公告](https://rishiri.by-onko-chishin.com/191/)
+- [利尻Green Hill Inn官網](https://rishiri-greenhill.net/)
+- [Guest House 1721官網](http://www.kukiru.com/guesthouse.html)
+- [旅館Nari田官網](http://rishirinarita.jp)
+- [中原旅館官方訂房](https://www.yadoken.jp/plans?hotel_id=yk102681)
+- [民宿Hera家官網](http://www.rishiri-yume.com)
+- [Aya瀨飯店官網](http://www.telnet-rishiri.info/pr/ayase/cn2/page1.html)
+- [島之宿Kamui利尻官網](http://www.kamuirishiri.com/)
+- [VILLA KAMUI官網](https://villa-kamui.com/)
+- [到利尻山登山口的交通（利尻富士町）](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm)
+- [利尻山登山（RISHIRI PLUS）](https://www.rishiri-plus.jp/shima-no-susume/tozan/)
+- [利尻島的季節（RISHIRI PLUS）](https://www.rishiri-plus.jp/shima-no-susume/season/)
+- [稚內往利尻島渡輪時刻表（Heartland Ferry）](https://heartlandferry.jp/timetable/)
+- [利尻島往禮文島渡輪時刻表（Heartland Ferry）](https://heartlandferry.jp/timetable/time2/)
+- [利尻島路線巴士（宗谷巴士）](http://www.soyabus.co.jp/routebus/rishiri)
+- [北海道住宿稅（北海道廳）](https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html)
 
-- [宿泊施設｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/)
-- [りしぷら 宿泊施設サイトマップ](https://www.rishiri-plus.jp/wp-sitemap-posts-shima-htsp-1.xml)
-- [名所｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-place/)
-- [【重要】ご宿泊の冬季休業のお知らせ｜ホテル利尻](https://hotel-rishiri.jp/news/%e3%81%94%e5%ae%bf%e6%b3%8a%e3%81%ae%e5%86%ac%e5%ad%a3%e4%bc%91%e6%a5%ad%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/)
-- [ホテル利尻](https://hotel-rishiri.jp/)
-- [アクセス｜ホテル利尻](https://hotel-rishiri.jp/access)
-- [アイランドインリシリ｜利尻島の絶景ホテル](http://www.rishirihotel.com)
-- [アイランドインリシリ 営業についてのお知らせ｜温故知新](https://rishiri.by-onko-chishin.com/191/)
-- [アイランドインリシリ｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/island-in-rishiri/)
-- [利尻マリンホテル｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/marin-hotel/)
-- [ホテルあや瀬｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/hotel-ayase/)
-- [利尻富士観光ホテル｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/fujikanko-hotel/)
-- [ホテル雲丹御殿｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/unigoten/)
-- [旅館 田中家ひなげし館｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/tanakahinagesi/)
-- [旅館 田中家ひなげし館](https://www.rishiri-hinageshi.com/)
-- [利尻ぐりーんひる inn｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/greenhill/)
-- [利尻ぐりーんひる inn](https://rishiri-greenhill.net)
-- [ﾏﾙｾﾞﾝﾍﾟﾝｼｮﾝ レラモシリ｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/reramoshiri/)
-- [マルゼンペンション レラモシリ](http://www.maruzen.com/tic/oyado/)
-- [民宿 はまだ 利尻ん輪 ライハ｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/yado-hamada/)
-- [利尻うみねこゲストハウス](https://www.rishiriumineko.com)
-- [【公式】しまのやど かむいりしり](http://www.kamuirishiri.com/)
-- [Villa Kamui（ヴィラカムイ）](https://villa-kamui.com/)
-- [旅館 雪国｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/ryokan-yukiguni/)
-- [夕陽館｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/yuuhikan/)
-- [ペンション群林風｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/greenwind/)
-- [ペンション群林風](http://greenwind.sakura.ne.jp)
-- [利尻山荘花りしり｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/rishiri-sanso/)
-- [旅館なり田｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/ryokan-narita/)
-- [プチホテル川一｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/hotel-kawaichi/)
-- [旅館 富士｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/ryokan-fuji/)
-- [正部川旅館｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/shobukawa/)
-- [利尻島のホテル｜Agoda](https://www.agoda.com/zh-tw/city/rishiri-jp.html)
-- [利尻富士町のホテル｜Trip.com](https://tw.trip.com/hotels/rishirifuji-rishiri-island/hotels-c50383m6792064/)
-- [キャンプ情報｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1133.htm)
-- [沓形岬公園キャンプ場｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/kutsugata-camp/)
-- [利尻町森林公園キャンプ場｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-htsp/shinrin-park/)
-- [交通アクセス｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1416.htm)
-- [利尻空港｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1184.htm)
-- [海の駅おしどまり｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1488.htm)
-- [アクセス｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-he-iku/)
-- [時刻表 利尻島～礼文島｜ハートランドフェリー](https://heartlandferry.jp/timetable/time2/)
-- [利尻エリア｜宗谷バス株式会社](http://www.soyabus.co.jp/routebus/rishiri)
-- [利尻線 夏期時刻表（宗谷バス）](http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf)
-- [全コース一覧｜宗谷バス株式会社](http://www.soyabus.co.jp/teikan/course)
-- [登山情報｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1396.htm)
-- [コース概要｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1397.htm)
-- [登山口へのアクセス｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm)
-- [登山時のマナー｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1398.htm)
-- [注意喚起チラシ（日本語）｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/secure/1717/02-1%20%E6%B3%A8%E6%84%8F%E5%96%9A%E8%B5%B7%E3%83%81%E3%83%A9%E3%82%B7%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89.pdf)
-- [利尻山登山｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-no-susume/tozan/)
-- [令和７（2025）年夏期の利尻山登山者数について｜環境省](https://www.env.go.jp/park/page_00313.html)
-- [ペシ岬｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-place/peshi-misaki/)
-- [カムイテラス｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-place/kamui-terrace/)
-- [利尻富士温泉｜利尻富士町](https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1204.htm)
-- [天然温泉 利尻ふれあい温泉｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-place/hureai-onsen/)
-- [マルヰ食堂｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-shop/marui-shokudo/)
-- [島の四季｜利尻島｜りしぷら RISHIRI PLUS](https://www.rishiri-plus.jp/shima-no-susume/season/)
+資料更新：2026年11月
