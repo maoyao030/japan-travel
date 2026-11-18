@@ -53,6 +53,5 @@ test('只有住客能泡不算住客說法；一間兩句住客說法才擋', ()
 
 test('一間飯店正文太少會擋下（刪過頭）', () => {
   const thin = page().replace(/早上想吃到北海道的海鮮[^']*有住客覺得好吃。/, '海鮮丼自己盛。')
-  assert.match(checkStayTopic(thin).errors.join('
-'), /一間至少/)
+  assert.match(checkStayTopic(thin).errors.join(' '), /一間至少/)
 })
