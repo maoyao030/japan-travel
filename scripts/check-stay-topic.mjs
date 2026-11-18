@@ -19,6 +19,9 @@ const TIME_IN_OPENING = /\d{1,2}[:：]\d{2}|\d{1,2}點|走路約?\d+分/
 const MAX_QUESTION_H2 = 3
 const MAX_GUEST_TOTAL = 4
 const MAX_REPEAT = 2
+// Darren 2026-11-18：「廢話很多」。每間飯店只留第一段、一個主題段與「要注意」，不念規格。
+const MAX_BOLD_LABELS_PER_HOTEL = 2
+const MAX_HOTEL_BODY_CHARS = 320
 
 const stripLinks = (text) => text.replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
 
@@ -89,6 +92,13 @@ export function checkStayTopic(markdown) {
       return section.title.includes(short) || short.includes(section.title.replace(/（.*$/, '').replace(/(早餐|大浴場|天然溫泉|溫泉|停車場|泡湯設施|早餐時間)$/, ''))
     })
     if (tableNames.length > 0 && !inTable) errors.push(`「${section.title}」的飯店不在比較表裡`)
+    const hotelBody = section.lines.filter((line) => line.trim() !== '' && !line.startsWith(BOOKING_PREFIX) && !line.startsWith('|'))
+    const boldLabels = hotelBody.filter((line) => /^\*\*[^*]+\*\*[：:]/.test(line))
+    if (boldLabels.length > MAX_BOLD_LABELS_PER_HOTEL) {
+      errors.push(`「${section.title}」有 ${boldLabels.length} 個粗體小段，一間最多 ${MAX_BOLD_LABELS_PER_HOTEL} 個（一個主題段加「要注意」）；把查到的設施一樣一樣列出來就是念規格`)
+    }
+    const hotelChars = stripLinks(hotelBody.join('')).replace(/\*\*/g, '').replace(/\s/g, '').length
+    if (hotelChars > MAX_HOTEL_BODY_CHARS) errors.push(`「${section.title}」正文 ${hotelChars} 字，一間最多 ${MAX_HOTEL_BODY_CHARS} 字；逐行問拿掉會不會影響選擇`)
     const first = stripLinks(section.lines.find((line) => line.trim() !== '') ?? '')
     if (/^[^。]{0,12}(是|為)[^。]{0,20}的自助[，。]/.test(first)) warnings.push(`「${section.title}」第一句像資料句，先講最讓人想選它的那件事`)
   }
@@ -123,6 +133,9 @@ export function checkStayTopic(markdown) {
     const count = body.split(phrase).length - 1
     if (count > 4) warnings.push(`「${phrase}」出現 ${count} 次，看看是不是用同一句提醒在補位`)
   }
+
+  const aliasCount = (body.match(/在(?:Trip\.com|Agoda)[^。，]{0,12}上叫/g) ?? []).length
+  if (aliasCount > 1) errors.push(`「在訂房網站上叫○○」出現 ${aliasCount} 次；每間重複同一句是廢話，別名放標題或只提一次`)
 
   // 7. 不指路、不寫「官網寫」。
   for (const line of body.split('\n')) {
