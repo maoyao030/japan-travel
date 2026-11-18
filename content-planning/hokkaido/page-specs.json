@@ -6814,6 +6814,300 @@
       "targetPath": null,
       "travelGroupId": "hokkaido-furano",
       "reason": "不做：町內沒有登山；北星山步道與森林公園只有 F86、F89 兩筆，寫在中富良野主頁。"
+    },
+    {
+      "articleId": "asahikawa-stay-breakfast",
+      "priority": 46,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "planningTitle": "旭川飯店早餐推薦，13間飯店的早餐時間與菜色比較",
+      "primaryQuery": "旭川飯店早餐",
+      "secondaryQueries": [
+        "旭川住宿早餐"
+      ],
+      "targetPath": "/places/asahikawa/stay-breakfast/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahikawa",
+      "contentBoundary": "旭川市區飯店的早餐：時間、菜色、在哪吃、能不能現場加購、不住宿能不能吃；不寫早餐價格與房價。選哪一區、整體推薦在旭川住宿頁。",
+      "place": {
+        "nameZh": "旭川",
+        "japaneseNames": [
+          "旭川",
+          "旭川市",
+          "旭川駅",
+          "旭川空港",
+          "旭山動物園"
+        ],
+        "japaneseSearchTerms": [
+          "旭川 観光",
+          "旭川 観光 車なし",
+          "旭川 観光 冬",
+          "旭川空港から 旭川駅 バス",
+          "旭山動物園 営業時間",
+          "旭山動物園 入園料",
+          "旭川 ラーメン",
+          "旭川冬まつり",
+          "旭川 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "asahidake",
+          "sounkyo",
+          "wakkanai",
+          "biei",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "sapporo"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓想吃飯店早餐的旅客比較旭川各飯店的早餐，決定訂哪一間、要不要訂含早餐的方案。",
+        "primaryReaderOutcome": "只看這一頁就能決定訂哪一間，並直接去訂。",
+        "mustAnswer": [
+          "哪幾間的早餐值得為它訂房",
+          "每間早餐幾點開始、吃什麼",
+          "沒訂含早餐的方案能不能現場加購",
+          "不住宿能不能吃"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "住旭川哪一區、整體推薦與住宿稅",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：旭川住宿頁負責，本頁只連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": [
+        "official",
+        "trip.com",
+        "agoda"
+      ],
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-17",
+          "query": "旭川飯店早餐",
+          "autocompleteInput": "旭川飯店早餐",
+          "suggestions": [],
+          "serpIntentConfirmed": true,
+          "serpNotes": "問法與競品紀錄在 content-experiments/stay-local-test-2026-11-16/ 各頁的 queries.md 與 competitor-notes.md。"
+        }
+      ],
+      "competition": "見 content-experiments/stay-local-test-2026-11-16/ 各頁的 competitor-notes.md。",
+      "researchSources": "content-production/asahikawa-stay-breakfast/reference-review.md（事實表）；流程見寫作 Skill references/stay-topic-page.md",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahikawa-stay-onsen",
+      "priority": 47,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "planningTitle": "旭川溫泉飯店推薦，5間天然溫泉與7間大浴場飯店比較",
+      "primaryQuery": "旭川溫泉飯店",
+      "secondaryQueries": [
+        "旭川有溫泉嗎"
+      ],
+      "targetPath": "/places/asahikawa/stay-onsen/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahikawa",
+      "contentBoundary": "旭川市區飯店的溫泉、大浴場與三溫暖，不住宿能泡的地方，往層雲峽與旭岳溫泉街的概要；溫泉街的旅館在層雲峽住宿與旭岳溫泉住宿頁。",
+      "place": {
+        "nameZh": "旭川",
+        "japaneseNames": [
+          "旭川",
+          "旭川市",
+          "旭川駅",
+          "旭川空港",
+          "旭山動物園"
+        ],
+        "japaneseSearchTerms": [
+          "旭川 観光",
+          "旭川 観光 車なし",
+          "旭川 観光 冬",
+          "旭川空港から 旭川駅 バス",
+          "旭山動物園 営業時間",
+          "旭山動物園 入園料",
+          "旭川 ラーメン",
+          "旭川冬まつり",
+          "旭川 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "asahidake",
+          "sounkyo",
+          "wakkanai",
+          "biei",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "sapporo"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓想泡湯的旅客分清楚旭川哪幾間飯店是天然溫泉、哪幾間只是大浴場，決定訂哪一間。",
+        "primaryReaderOutcome": "只看這一頁就能決定訂哪一間，並直接去訂。",
+        "mustAnswer": [
+          "旭川有沒有溫泉、哪幾間飯店是天然溫泉",
+          "每間有沒有露天浴池、三溫暖，幾點能泡",
+          "OMO7、JR Inn這些飯店有沒有溫泉",
+          "不住宿能去哪裡泡",
+          "想住溫泉街要去哪"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "住旭川哪一區、整體推薦與住宿稅",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：旭川住宿頁負責，本頁只連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": [
+        "official",
+        "trip.com",
+        "agoda"
+      ],
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-17",
+          "query": "旭川溫泉飯店",
+          "autocompleteInput": "旭川溫泉飯店",
+          "suggestions": [],
+          "serpIntentConfirmed": true,
+          "serpNotes": "問法與競品紀錄在 content-experiments/stay-local-test-2026-11-16/ 各頁的 queries.md 與 competitor-notes.md。"
+        }
+      ],
+      "competition": "見 content-experiments/stay-local-test-2026-11-16/ 各頁的 competitor-notes.md。",
+      "researchSources": "content-production/asahikawa-stay-onsen/reference-review.md（事實表）；流程見寫作 Skill references/stay-topic-page.md",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
+    },
+    {
+      "articleId": "asahikawa-stay-parking",
+      "priority": 48,
+      "decision": "keep",
+      "pageType": "aspect-page",
+      "aspect": "stay",
+      "planningTitle": "旭川自駕住宿推薦，14間飯店的停車場與停車費比較",
+      "primaryQuery": "旭川自駕住宿",
+      "secondaryQueries": [],
+      "targetPath": "/places/asahikawa/stay-parking/",
+      "routeDecision": "resolved",
+      "routeMode": "parent-direct-article",
+      "primaryHubId": "hub-places-asahikawa",
+      "contentBoundary": "旭川市區飯店的停車場：位置、台數、費用、限高、能不能預約與中途進出；郊外免費停車的旅館；站前租車營業所概要。開去各景點的路線在各地交通頁。",
+      "place": {
+        "nameZh": "旭川",
+        "japaneseNames": [
+          "旭川",
+          "旭川市",
+          "旭川駅",
+          "旭川空港",
+          "旭山動物園"
+        ],
+        "japaneseSearchTerms": [
+          "旭川 観光",
+          "旭川 観光 車なし",
+          "旭川 観光 冬",
+          "旭川空港から 旭川駅 バス",
+          "旭山動物園 営業時間",
+          "旭山動物園 入園料",
+          "旭川 ラーメン",
+          "旭川冬まつり",
+          "旭川 平年値"
+        ],
+        "region": "hokkaido",
+        "nearbyPlaceIds": [
+          "higashikawa",
+          "asahidake",
+          "sounkyo",
+          "wakkanai",
+          "biei",
+          "furano"
+        ],
+        "gatewayPlaceIds": [
+          "sapporo"
+        ],
+        "bestMonths": [
+          1,
+          2,
+          7,
+          8
+        ]
+      },
+      "readerTaskContract": {
+        "primaryTask": "讓租車自駕的旅客知道旭川各飯店的車停哪裡、一晚多少、能不能預約，決定訂哪一間。",
+        "primaryReaderOutcome": "只看這一頁就能決定訂哪一間，並直接去訂。",
+        "mustAnswer": [
+          "哪幾間飯店自己有停車場、車位多",
+          "車停在哪、一晚多少錢",
+          "停車位能不能預約",
+          "中途開車進出要不要再付費",
+          "郊外哪裡停車免費"
+        ],
+        "excludedDepth": [
+          {
+            "topic": "住旭川哪一區、整體推薦與住宿稅",
+            "ownerArticleId": "asahikawa-stay",
+            "reason": "分工表：旭川住宿頁負責，本頁只連過去"
+          }
+        ],
+        "sharedGuides": []
+      },
+      "bookingChannels": [
+        "official",
+        "trip.com",
+        "agoda"
+      ],
+      "travelGroupId": "hokkaido-asahikawa",
+      "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-17",
+          "query": "旭川自駕住宿",
+          "autocompleteInput": "旭川自駕住宿",
+          "suggestions": [],
+          "serpIntentConfirmed": true,
+          "serpNotes": "問法與競品紀錄在 content-experiments/stay-local-test-2026-11-16/ 各頁的 queries.md 與 competitor-notes.md。"
+        }
+      ],
+      "competition": "見 content-experiments/stay-local-test-2026-11-16/ 各頁的 competitor-notes.md。",
+      "researchSources": "content-production/asahikawa-stay-parking/reference-review.md（事實表）；流程見寫作 Skill references/stay-topic-page.md",
+      "researchBeforeWriting": [],
+      "discoveries": [],
+      "internalLinkFields": "由 place 欄位自動產生；正文情境連結照大綱的內連表與連結句。"
     }
   ],
   "approval": {

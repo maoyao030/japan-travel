@@ -267,6 +267,15 @@ export function validateOutline(outline, {places = {places: []}, ownership = {ow
   }
   for (const page of pages) {
     if (page.pageType !== 'aspect-page') continue
+    // 住宿專門頁這類掛在另一個主題頁底下的頁（parentArticleId，2026-11-18）：連回上層主題頁、上層主題頁連過來，不用直接連地點主頁。
+    if (hasText(page.parentArticleId)) {
+      if (!pageById.has(page.parentArticleId)) issues.push(`${page.articleId}.parentArticleId 不是本群的頁面`)
+      else {
+        if (!hasLink(page.articleId, page.parentArticleId)) issues.push(`${page.articleId} 要連回上層主題頁 ${page.parentArticleId}`)
+        if (!hasLink(page.parentArticleId, page.articleId)) issues.push(`上層主題頁 ${page.parentArticleId} 要連到 ${page.articleId}`)
+      }
+      continue
+    }
     const entry = pages.find((candidate) => candidate.pageType === 'place-entry' && candidate.placeId === page.placeId)
     if (!entry) continue
     if (!hasLink(page.articleId, entry.articleId)) issues.push(`${page.articleId} 要連回地點主頁 ${entry.articleId}`)
@@ -280,7 +289,7 @@ export function validateOutline(outline, {places = {places: []}, ownership = {ow
   for (const page of pages.filter((candidate) => candidate.pageType === 'place-entry')) {
     const entryPosition = order.indexOf(page.articleId)
     const laterAspects = pages
-      .filter((candidate) => candidate.pageType === 'aspect-page' && candidate.placeId === page.placeId)
+      .filter((candidate) => candidate.pageType === 'aspect-page' && candidate.placeId === page.placeId && !hasText(candidate.parentArticleId))
       .filter((candidate) => order.indexOf(candidate.articleId) > entryPosition)
     if (laterAspects.length > 0) issues.push(`地點主頁 ${page.articleId} 要排在 ${laterAspects.map((candidate) => candidate.articleId).join('、')} 之後`)
   }

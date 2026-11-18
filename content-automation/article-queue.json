@@ -1411,8 +1411,8 @@
         "pageSpecs": "content-planning/hokkaido/page-specs.json",
         "candidateRegistry": "content-planning/hokkaido/candidates.json",
         "planningCompletedAt": "2026-10-26",
-        "authorizedCount": 7,
-        "plannedPageCount": 7,
+        "authorizedCount": 10,
+        "plannedPageCount": 10,
         "countPolicy": "validated-independent-pages-only",
         "deferredItems": []
       },
@@ -1783,6 +1783,174 @@
               "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/generalinformation/d053767.html",
               "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/event/event.html",
               "https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/news-blog/osirase/d083941.html"
+            ]
+          }
+        },
+        {
+          "order": 8,
+          "articleId": "asahikawa-stay-breakfast",
+          "contentTheme": "asahikawa",
+          "topicDirection": "旭川飯店早餐，13間飯店的早餐時間、菜色與加購方式比較",
+          "pageRole": "住宿專門頁",
+          "documentId": "article-asahikawa-stay-breakfast",
+          "workingTitle": "旭川飯店早餐推薦，13間飯店的早餐時間與菜色比較",
+          "primaryKeyword": "旭川飯店早餐",
+          "primaryQuery": "旭川飯店早餐",
+          "articleSlug": "stay-breakfast",
+          "targetPath": "/places/asahikawa/stay-breakfast/",
+          "authorId": "author-editorial-team",
+          "primaryHubId": "hub-places-asahikawa",
+          "categorySlug": "places",
+          "hubSlug": "asahikawa",
+          "routeMode": "parent-direct-article",
+          "aspect": "stay",
+          "pageType": "aspect-page",
+          "contentBoundary": "旭川市區飯店的早餐：時間、菜色、在哪吃、能不能現場加購、不住宿能不能吃；不寫早餐價格與房價。選哪一區、整體推薦在旭川住宿頁。",
+          "readerTask": "讓想吃飯店早餐的旅客比較旭川各飯店的早餐，決定訂哪一間、要不要訂含早餐的方案。",
+          "plannedInternalLinks": "/places/asahikawa/stay/、/places/asahikawa/",
+          "relatedArticleIds": [],
+          "releaseMode": "individual",
+          "authorizationMode": "batch-standing-authorization",
+          "planningSpec": {
+            "pageSpecs": "content-planning/hokkaido/page-specs.json",
+            "articleId": "asahikawa-stay-breakfast"
+          },
+          "keywordValidation": {
+            "provider": "Google autocomplete",
+            "ahrefsVerified": false,
+            "serpIntentConfirmed": true,
+            "serpIntentNote": "問法（中文 Google 自動完成）與競品紀錄在 content-experiments/stay-local-test-2026-11-16/breakfast/queries.md 與同資料夾的 competitor-notes.md；地名旭川在台灣沒有同名地點。",
+            "country": "TW",
+            "auditedAt": "2026-11-17",
+            "decision": "keep",
+            "query": "旭川飯店早餐",
+            "svDisplay": "自動完成有出現",
+            "record": "content-planning/hokkaido/candidates.json"
+          },
+          "bookingChannels": [
+            "official",
+            "trip.com",
+            "agoda"
+          ],
+          "factCheck": {
+            "lastVerifiedAt": "2026-11-18",
+            "nextReviewDue": "2027-11-18",
+            "sources": [
+              "https://www.jrinn.jp/asahikawa/",
+              "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
+              "https://dormy-hotels.com/dormyinn/hotels/asahikawa/"
+            ]
+          }
+        },
+        {
+          "order": 9,
+          "articleId": "asahikawa-stay-onsen",
+          "contentTheme": "asahikawa",
+          "topicDirection": "旭川溫泉飯店，天然溫泉與大浴場飯店比較",
+          "pageRole": "住宿專門頁",
+          "documentId": "article-asahikawa-stay-onsen",
+          "workingTitle": "旭川溫泉飯店推薦，5間天然溫泉與7間大浴場飯店比較",
+          "primaryKeyword": "旭川溫泉飯店",
+          "primaryQuery": "旭川溫泉飯店",
+          "articleSlug": "stay-onsen",
+          "targetPath": "/places/asahikawa/stay-onsen/",
+          "authorId": "author-editorial-team",
+          "primaryHubId": "hub-places-asahikawa",
+          "categorySlug": "places",
+          "hubSlug": "asahikawa",
+          "routeMode": "parent-direct-article",
+          "aspect": "stay",
+          "pageType": "aspect-page",
+          "contentBoundary": "旭川市區飯店的溫泉、大浴場與三溫暖，不住宿能泡的地方，往層雲峽與旭岳溫泉街的概要；溫泉街的旅館在層雲峽住宿與旭岳溫泉住宿頁。",
+          "readerTask": "讓想泡湯的旅客分清楚旭川哪幾間飯店是天然溫泉、哪幾間只是大浴場，決定訂哪一間。",
+          "plannedInternalLinks": "/places/asahikawa/stay/、/places/asahikawa/",
+          "relatedArticleIds": [],
+          "releaseMode": "individual",
+          "authorizationMode": "batch-standing-authorization",
+          "planningSpec": {
+            "pageSpecs": "content-planning/hokkaido/page-specs.json",
+            "articleId": "asahikawa-stay-onsen"
+          },
+          "keywordValidation": {
+            "provider": "Google autocomplete",
+            "ahrefsVerified": false,
+            "serpIntentConfirmed": true,
+            "serpIntentNote": "問法（中文 Google 自動完成）與競品紀錄在 content-experiments/stay-local-test-2026-11-16/onsen2/queries.md 與同資料夾的 competitor-notes.md；地名旭川在台灣沒有同名地點。",
+            "country": "TW",
+            "auditedAt": "2026-11-17",
+            "decision": "keep",
+            "query": "旭川溫泉飯店",
+            "svDisplay": "自動完成有出現",
+            "record": "content-planning/hokkaido/candidates.json"
+          },
+          "bookingChannels": [
+            "official",
+            "trip.com",
+            "agoda"
+          ],
+          "factCheck": {
+            "lastVerifiedAt": "2026-11-18",
+            "nextReviewDue": "2027-11-18",
+            "sources": [
+              "https://www.jrinn.jp/asahikawa/",
+              "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
+              "https://dormy-hotels.com/dormyinn/hotels/asahikawa/"
+            ]
+          }
+        },
+        {
+          "order": 10,
+          "articleId": "asahikawa-stay-parking",
+          "contentTheme": "asahikawa",
+          "topicDirection": "旭川自駕住宿，14間飯店的停車場與停車費比較",
+          "pageRole": "住宿專門頁",
+          "documentId": "article-asahikawa-stay-parking",
+          "workingTitle": "旭川自駕住宿推薦，14間飯店的停車場與停車費比較",
+          "primaryKeyword": "旭川自駕住宿",
+          "primaryQuery": "旭川自駕住宿",
+          "articleSlug": "stay-parking",
+          "targetPath": "/places/asahikawa/stay-parking/",
+          "authorId": "author-editorial-team",
+          "primaryHubId": "hub-places-asahikawa",
+          "categorySlug": "places",
+          "hubSlug": "asahikawa",
+          "routeMode": "parent-direct-article",
+          "aspect": "stay",
+          "pageType": "aspect-page",
+          "contentBoundary": "旭川市區飯店的停車場：位置、台數、費用、限高、能不能預約與中途進出；郊外免費停車的旅館；站前租車營業所概要。開去各景點的路線在各地交通頁。",
+          "readerTask": "讓租車自駕的旅客知道旭川各飯店的車停哪裡、一晚多少、能不能預約，決定訂哪一間。",
+          "plannedInternalLinks": "/places/asahikawa/stay/、/places/asahikawa/",
+          "relatedArticleIds": [],
+          "releaseMode": "individual",
+          "authorizationMode": "batch-standing-authorization",
+          "planningSpec": {
+            "pageSpecs": "content-planning/hokkaido/page-specs.json",
+            "articleId": "asahikawa-stay-parking"
+          },
+          "keywordValidation": {
+            "provider": "Google autocomplete",
+            "ahrefsVerified": false,
+            "serpIntentConfirmed": true,
+            "serpIntentNote": "問法（中文 Google 自動完成）與競品紀錄在 content-experiments/stay-local-test-2026-11-16/parking2/queries.md 與同資料夾的 competitor-notes.md；地名旭川在台灣沒有同名地點。",
+            "country": "TW",
+            "auditedAt": "2026-11-17",
+            "decision": "keep",
+            "query": "旭川自駕住宿",
+            "svDisplay": "自動完成有出現",
+            "record": "content-planning/hokkaido/candidates.json"
+          },
+          "bookingChannels": [
+            "official",
+            "trip.com",
+            "agoda"
+          ],
+          "factCheck": {
+            "lastVerifiedAt": "2026-11-18",
+            "nextReviewDue": "2027-11-18",
+            "sources": [
+              "https://www.jrinn.jp/asahikawa/",
+              "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/",
+              "https://dormy-hotels.com/dormyinn/hotels/asahikawa/"
             ]
           }
         }
@@ -4109,7 +4277,10 @@
         "asahikawa",
         "sounkyo",
         "asahidake",
-        "higashikawa"
+        "higashikawa",
+        "asahikawa-stay-breakfast",
+        "asahikawa-stay-onsen",
+        "asahikawa-stay-parking"
       ],
       "approval": {
         "remindedAt": "2026-10-26",

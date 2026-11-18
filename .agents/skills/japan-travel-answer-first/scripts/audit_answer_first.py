@@ -20,6 +20,7 @@ FURTHER_TITLES = {"延伸資料"}
 # 住宿表「連結」欄與景點基本資訊欄「連結」列的官網與地圖；Trip.com、Agoda 的訂房連結。
 LINK_CELL = "連結"
 BOOKING_URL = re.compile(r"^https?://(?:[\w-]+\.)*(?:trip\.com|agoda\.com)(?:[/?#]|$)", re.I)
+OFFICIAL_LINK = re.compile(r"\[[^\]\[]{0,30}官網[^][]{0,10}]\((https?://[^)\s]+)\)")
 PACKAGED = re.compile(r"先看結論|重點先看|重點整理|懶人包|TL;DR", re.I)
 REVIEW_SIGNALS = (
     ("SOURCE_NARRATION", re.compile(r"(?:官網|網站|平台|來源).{0,6}(?:指出|表示|寫道)|目前查到|根據.{0,8}資料顯示"),
@@ -144,9 +145,12 @@ def audit(markdown: str, article_type: str = "place-entry", reference_review: st
                 urls = []
         else:
             table_header = None
-        booking = [url for url in urls if BOOKING_URL.match(url)]
+        # 住宿頁與住宿專門頁的訂房行（Darren 2026-11-16、11-17）：連結文字是「官網」或「○○官網」的，
+        # 是讓讀者去訂房的連結，和 Trip.com、Agoda 一樣可以留在正文。
+        official = set(OFFICIAL_LINK.findall(line))
+        booking = [url for url in urls if BOOKING_URL.match(url) or url in official]
         reader_links += len(booking)
-        urls = [url for url in urls if not BOOKING_URL.match(url)]
+        urls = [url for url in urls if url not in booking]
         inline_links += len(urls)
         references = re.findall(r"\[([^\]]+)\](?:\[([^\]]*)\])?", line)
         linked_references = [label for label, target in references
@@ -206,12 +210,13 @@ def self_test() -> int:
     info_table = clear.replace(body, "| 項目 | 內容 |\n|---|---|\n| 日文名 | 例 |\n| 連結 | [官網](https://example.com/spot) |")
     other_table = clear.replace(body, "| 項目 | 內容 |\n|---|---|\n| 票價 | [時刻表](https://example.com/fare) |")
     booking = clear.replace(body, "可以在 [Trip.com 查空房](https://tw.trip.com/hotels/detail-1/)。")
+    official_booking = clear.replace(body, "看房價與訂房：[Trip.com](https://tw.trip.com/hotels/detail-1/)｜[官網](https://example.com/hotel)")
     faq = clear.replace("## 資料來源", "## 常見問題\n\n內容。\n\n## 資料來源")
     placeholder = clear.replace(body, body + "\n\n〔圖片〕渡輪站外觀。")
     report = {"passingCase": audit(clear), "headingFailingCase": audit(headings),
               "imagePlaceholderCase": audit(placeholder),
               "linkColumnCase": audit(stay_table), "linkRowCase": audit(info_table),
-              "otherTableLinkCase": audit(other_table), "bookingLinkCase": audit(booking),
+              "otherTableLinkCase": audit(other_table), "bookingLinkCase": audit(booking), "officialBookingCase": audit(official_booking),
               "faqSectionCase": audit(faq),
               "inlineLinkFailingCase": audit(linked), "semanticWeakCase": audit(weak),
               "necessaryConditionCase": audit(necessary), "furtherReadingCase": audit(further_ok),
@@ -221,6 +226,7 @@ def self_test() -> int:
           and expected <= {i["code"] for i in report["headingFailingCase"]["issues"]}
           and any(i["code"] == "INLINE_SOURCE_LINK" for i in report["inlineLinkFailingCase"]["issues"])
           and report["linkColumnCase"]["status"] == "mechanical_clear"
+          and report["officialBookingCase"]["status"] == "mechanical_clear"
           and report["linkColumnCase"]["metrics"]["readerLinks"] == 2
           and report["linkRowCase"]["status"] == "mechanical_clear"
           and any(i["code"] == "INLINE_SOURCE_LINK" for i in report["otherTableLinkCase"]["issues"])
