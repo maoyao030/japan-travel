@@ -64,8 +64,6 @@ Fenix富良野（フェニックス富良野）就在北之峰纜車吊廂前，
 
 **雪具**：館內有雪具租借店和滑雪置物櫃。
 
-**餐點**：館內有餐廳，冬天附早餐。
-
 **要注意**：12月2日到3月31日的冬季，櫃台每天早上7點開到晚上10點。
 
 看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-47412627/fenix-furano/)｜[Agoda](https://www.agoda.com/zh-tw/fenix-furano/hotel/furano-jp.html)｜[官網](https://fenixfurano.com/en/fenixfuranorental/)
@@ -130,7 +128,7 @@ Edel Warme富良野度假飯店（富良野リゾートホテル エーデルヴ
 | 富良野那圖瓦德飯店 | 飯店正前方就是雪道，北之峰區 | 搭巴士約10分 | 館內有租借、滑雪置物櫃 | 光明石溫泉（不是天然溫泉），有露天 | 冬天是自助餐 | [官網](https://naturwald-furano.com/tw)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%8A%E3%83%88%E3%82%A5%E3%83%BC%E3%83%AB%E3%83%B4%E3%82%A1%E3%83%AB%E3%83%88%E5%AF%8C%E8%89%AF%E9%87%8E%20%E5%AF%8C%E8%89%AF%E9%87%8E%E5%B8%82) |
 | NOZO飯店 | 走路約3分到北之峰纜車吊廂，北之峰區 | 搭巴士約10分，下車走約2分 | 每間房專用置物櫃、加熱鞋架，合作店租的雪具可在館內還 | 大浴場，有三溫暖 | 館內餐廳，冬季營業向飯店確認 | [官網](https://nozohotel.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=NOZO%20HOTEL%20%E5%AF%8C%E8%89%AF%E9%87%8E%E5%B8%82) |
 | Bell Hills飯店 | 走路約2分到北之峰纜車吊廂，北之峰區 | 開車約10分 | | 光明石溫泉（不是天然溫泉），有露天，不住也能泡 | 自助餐或套餐，分三個時段入場 | [官網](https://www.bellhills.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%99%E3%83%AB%E3%83%92%E3%83%AB%E3%82%BA%20%E5%AF%8C%E8%89%AF%E9%87%8E%E5%B8%82) |
-| Fenix富良野 | 能穿雪板直接進出雪道，北之峰區 | | 館內有租借店、滑雪置物櫃 | | 館內有餐廳 | [官網](https://fenixfurano.com/en/fenixfuranorental/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%82%A7%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B9%E5%AF%8C%E8%89%AF%E9%87%8E%20%E5%AF%8C%E8%89%AF%E9%87%8E%E5%B8%82) |
+| Fenix富良野 | 能穿雪板直接進出雪道，北之峰區 | | 館內有租借店、滑雪置物櫃 | | | [官網](https://fenixfurano.com/en/fenixfuranorental/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%82%A7%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B9%E5%AF%8C%E8%89%AF%E9%87%8E%20%E5%AF%8C%E8%89%AF%E9%87%8E%E5%B8%82) |
 | La Vista富良野Hills | 搭巴士約17分到新富良野王子，富良野站旁 | 走路約3分 | | 天然溫泉，有露天，只給住客 | 要預約 | [官網](https://dormy-hotels.com/dormyinn/hotels/furano/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%20%E7%B4%AB%E9%9B%B2%E3%81%AE%E6%B9%AF%20%E3%83%A9%E3%83%93%E3%82%B9%E3%82%BF%E5%AF%8C%E8%89%AF%E9%87%8E%E3%83%92%E3%83%AB%E3%82%BA%20%E5%AF%8C%E8%89%AF%E9%87%8E%E5%B8%82) |
 | 富良野Natulux飯店 | 搭巴士約17分到新富良野王子，富良野站旁 | 走路約1分 | | 大浴場，男湯三溫暖、女湯岩盤浴另收費 | 要7天前預約 | [官網](https://www.natulux.com/lp/chinese_t)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E8%89%AF%E9%87%8E%E3%83%8A%E3%83%81%E3%83%A5%E3%83%A9%E3%82%AF%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB%20%E5%AF%8C%E8%89%AF%E9%87%8E%E5%B8%82) |
 | 一花酒莊飯店 | 開車約1分到雪道，北之峰區，雪季有免費接送 | 飯店接送，只在到達日與出發日，要預約 | 滑雪置物櫃 | 大浴場 | 要預約，週二公休 | [官網](https://hotel-hitohana.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AF%E3%82%A4%E3%83%8A%E3%83%AA%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%EF%BC%86%E3%82%B3%E3%83%B3%E3%83%89%E3%83%9F%E3%83%8B%E3%82%A2%E3%83%A0%20%E4%B8%80%E8%8A%B1%20%E5%AF%8C%E8%89%AF%E9%87%8E%E5%B8%82) |

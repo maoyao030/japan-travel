@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "furano-stay-ski",
-  "articleSha256": "2a4afec8ac8b6e981ea22655f98dded038b27b4e76a8adbcc242f81efbd53232",
-  "checker": "事實查核 agent（Claude Opus 5.5 子代理，唯讀；沒有參與研究、寫作與編輯；2026-11-18 用 python urllib、curl 重開官方頁，PDF 下載到暫存資料夾讀，Trip.com 與 Agoda 用內建瀏覽器開）；第 2 輪複查（2026-11-18）：逐句比對新舊正文，改過與新增的句子重開官方來源（前一輪下載的頁面文字與 PDF），沒有再用瀏覽器；第 3 輪複查（2026-11-18）：git diff 確認只改四處，逐處對官方原文",
+  "articleSha256": "ebedeb8931cdc06957f325a0b2e20d3eaa4b2543cbe96a32fe488c8be0b29ddd",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，唯讀；沒有參與研究、寫作與編輯；2026-11-18 用 python urllib、curl 重開官方頁，PDF 下載到暫存資料夾讀，Trip.com 與 Agoda 用內建瀏覽器開）；第 2 輪複查（2026-11-18）：逐句比對新舊正文，改過與新增的句子重開官方來源（前一輪下載的頁面文字與 PDF），沒有再用瀏覽器；第 3 輪複查（2026-11-18）：git diff 確認只改四處，逐處對官方原文；第 4 輪（2026-11-18）：Fenix 館內餐廳 2026-09-30 結束營業（餐廳官方 Instagram @fenix_restaurant_and_bar 2026-10-01 公告），正文已刪餐廳與冬季早餐",
   "checkedAt": "2026-11-18",
   "claims": [
     {
@@ -322,12 +322,12 @@
     },
     {
       "claimId": "C36",
-      "articleExcerpt": "館內有雪具租借店和滑雪置物櫃。…館內有餐廳，冬天附早餐。",
+      "articleExcerpt": "館內有雪具租借店和滑雪置物櫃。",
       "sourceUrl": "https://fenixfurano.com/en/fenixfuranorental/",
       "sourceTitle": "Best Holiday Rental for Ski Lovers in Hokkaido",
-      "sourceQuote": "Ski Rentel Shop／Restaurant／Ski Locker／Complimentary daily breakfast for 2 people (winter only)",
+      "sourceQuote": "Ski Rentel Shop／Ski Locker",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 4 輪：「館內有餐廳，冬天附早餐」已刪（餐廳 2026-09-30 結束營業，官網房型頁最後修改 2026-06-05，早餐原本由該餐廳供應）；本筆只剩雪具租借店與置物櫃。"
     },
     {
       "claimId": "C37",
@@ -691,12 +691,12 @@
     },
     {
       "claimId": "T5",
-      "articleExcerpt": "| Fenix富良野 | 能穿雪板直接進出雪道，北之峰區 | | 館內有租借店、滑雪置物櫃 | | 館內有餐廳 |",
+      "articleExcerpt": "| Fenix富良野 | 能穿雪板直接進出雪道，北之峰區 | | 館內有租借店、滑雪置物櫃 | | |",
       "sourceUrl": "https://fenixfurano.com/en/fenixfuranorental/",
       "sourceTitle": "Best Holiday Rental for Ski Lovers in Hokkaido",
-      "sourceQuote": "Ski-in Ski-out／Ski Rentel Shop／Restaurant／Ski Locker",
+      "sourceQuote": "Ski-in Ski-out／Ski Rentel Shop／Ski Locker；觀光協會：北の峰ゴンドラに直結しており、スキーインスキーアウト",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 4 輪：晚餐格改成空白；其餘格逐格再對過。"
     },
     {
       "claimId": "T6",
