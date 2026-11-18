@@ -14,7 +14,7 @@ const page = (overrides: {opening?: string; h3?: string; booking?: string; extra
     '',
     `### ${overrides.h3 ?? '甲飯店旭川早餐'}`,
     '',
-    '海鮮丼自己盛。有住客覺得好吃。',
+    '早上想吃到北海道的海鮮，這間的自助台上有鮭魚卵、鮪魚和鮭魚，可以自己挑來盛成一碗海鮮丼，還有現場做的豬肉丼和旭川拉麵。餐廳就在館內，從房間搭電梯下來就到，不用穿外套出門。另外也有每天現烤的麵包和在地牧場的牛奶，帶小孩的人可以讓他們自己選想吃的菜。有住客覺得好吃。',
     '',
     overrides.booking ?? '看房價與訂房：[Trip.com](https://tw.trip.com/hotels/detail-1/)｜[官網](https://example.com/a)',
     '',
@@ -49,4 +49,10 @@ test('只有住客能泡不算住客說法；一間兩句住客說法才擋', ()
   assert.deepEqual(checkStayTopic(page({extra: '大浴場只有住客能泡。'})).errors, [])
   const two = page().replace('有住客覺得好吃。', '有住客覺得好吃。有住客提到早上人多。')
   assert.match(checkStayTopic(two).errors.join('\n'), /一間最多一句/)
+})
+
+test('一間飯店正文太少會擋下（刪過頭）', () => {
+  const thin = page().replace(/早上想吃到北海道的海鮮[^']*有住客覺得好吃。/, '海鮮丼自己盛。')
+  assert.match(checkStayTopic(thin).errors.join('
+'), /一間至少/)
 })
