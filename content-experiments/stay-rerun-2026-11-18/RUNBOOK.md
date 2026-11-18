@@ -10,8 +10,8 @@ Darren：「我覺得可以排定工作了，不過在這之前，可以把舊�
 | 2 | sounkyo-stay | /places/sounkyo/stay/ | 舊格式，沒有住客說法 | 2026-11-18 換上線，六間各放 1 則貼文 |
 | 3 | asahidake-stay | /places/asahidake/stay/ | 舊格式 | 2026-11-19 換上線，五間各放 1 則貼文 |
 | 4 | wakkanai-stay | /places/wakkanai/stay/ | 舊格式，沒有住客說法 | 2026-11-19 換上線，四間各放 1 則貼文 |
-| 5 | rishiri-island-stay | /places/rishiri-island/stay/ | 舊格式，表格 30 列 | 2026-11-19 換上線，貼文補找中 |
-| 6 | rebun-island-stay | /places/rebun-island/stay/ | 舊格式，「打電話問／問櫃台」7 處 | 2026-11-19 換上線，貼文補找中 |
+| 5 | rishiri-island-stay | /places/rishiri-island/stay/ | 舊格式，表格 30 列 | 2026-11-19 換上線，三間各放 1 則貼文 |
+| 6 | rebun-island-stay | /places/rebun-island/stay/ | 舊格式，「打電話問／問櫃台」7 處 | 2026-11-19 換上線，五間各放 1 則貼文 |
 
 ## 每一篇做什麼
 
