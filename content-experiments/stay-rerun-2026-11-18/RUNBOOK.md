@@ -7,11 +7,11 @@ Darren：「我覺得可以排定工作了，不過在這之前，可以把舊�
 | 順序 | 文章 | 網址 | 現況 | 進度 |
 |---|---|---|---|---|
 | 1 | asahikawa-stay | /places/asahikawa/stay/ | 11-16 有一份照新格式改寫的主頁稿（`content-experiments/stay-local-test-2026-11-16/hub/final.md`），沒上線；底下三頁專門頁已上線 | 2026-11-18 換上線 |
-| 2 | sounkyo-stay | /places/sounkyo/stay/ | 舊格式，沒有住客說法 | 研究與評論完成，寫規格中 |
-| 3 | asahidake-stay | /places/asahidake/stay/ | 舊格式 | |
-| 4 | wakkanai-stay | /places/wakkanai/stay/ | 舊格式，沒有住客說法 | |
-| 5 | rishiri-island-stay | /places/rishiri-island/stay/ | 舊格式，表格 30 列 | |
-| 6 | rebun-island-stay | /places/rebun-island/stay/ | 舊格式，「打電話問／問櫃台」7 處 | |
+| 2 | sounkyo-stay | /places/sounkyo/stay/ | 舊格式，沒有住客說法 | 2026-11-18 換上線，六間各放 1 則貼文 |
+| 3 | asahidake-stay | /places/asahidake/stay/ | 舊格式 | 2026-11-19 換上線，五間各放 1 則貼文 |
+| 4 | wakkanai-stay | /places/wakkanai/stay/ | 舊格式，沒有住客說法 | 2026-11-19 換上線，四間各放 1 則貼文 |
+| 5 | rishiri-island-stay | /places/rishiri-island/stay/ | 舊格式，表格 30 列 | 2026-11-19 換上線，貼文補找中 |
+| 6 | rebun-island-stay | /places/rebun-island/stay/ | 舊格式，「打電話問／問櫃台」7 處 | 2026-11-19 換上線，貼文補找中 |
 
 ## 每一篇做什麼
 
@@ -42,3 +42,17 @@ Darren：「我覺得可以排定工作了，不過在這之前，可以把舊�
 - 「他也沒有任何 IG 貼文、東西也變太少」：每篇都要替細寫的每間旅館找 1 則 Instagram 貼文（`pageType: "stay"`）；每間正文 180 到 300 字，主題段三到四句、每句一個具體賣點。
 - 「要多一個 agent 判斷有沒有太少，太少就回去重跑寫作」：編輯之後加「份量檢查」（寫作 Skill `stay-topic-page.md`「份量檢查」一節），太少退回作者、太多退回編輯。
 - 作者的任務要寫明：賣點寫具體（菜、浴池、房型、位置好處），規格不寫。
+
+
+## 2026-11-19 六篇都換上線後的整理
+
+- 六篇都照同一條路做完：問法與官方研究 → 瀏覽器讀評論與訂房連結 → 規格（含動筆前檢查）→ 五段作者 → 分段編輯 → 接縫、句子節奏與份量 → 事實查核 ∥ 讀者驗收七題 → 換上線 → Instagram 貼文。每篇的決定記在封包的 `review.md` 與 `content-automation/unattended-summary.md`。
+- 另外做的：旭川主頁與富良野滑雪住宿補回具體賣點；住宿專門頁住客說法上限從全頁四句放寬到八句（一間仍一句）；`check-stay-topic.mjs` 不把粗體小段名算成重複句。
+- 這一輪學到、之後自動跑要注意的：
+  - 事實查核每頁第一輪都擋 4 到 8 筆，多半是「推過頭」（只收電話、每晚、都、最近、只剩）與飯店交通頁和經營者時刻表對不上；巴士、渡輪時間一律以經營者為準。
+  - 擋讀取工具的官方訂房頁（reservation.jp、rwiths 等）查核者重開不了：只出現在那種頁面的賣點拿掉，資料來源不放。
+  - 研究紀錄自己也會錯（民宿須古頓岬「可網路訂」、利尻飯店冷氣只讀到單人房），查核要重開官網，不能只對研究紀錄。
+  - 開頭寫「推薦 N 間」常對不上頁上的間數：不寫數不出來的間數，或在第一個 H2 點名。
+  - 中文搜尋有點名、但官網打不開的旅館（利尻富士觀光飯店）：不開小節，用一句好壞都有的住客說法加訂房連結。
+  - 網域被別人拿走的舊官網（北國大飯店）：整間不寫、網址不出現在任何地方。
+  - Google 搜尋 Instagram 要寫 `site:www.instagram.com`；找到的貼文內文和現況打架、印著價格或太舊的不放。
