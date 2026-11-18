@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay-breakfast",
-  "articleSha256": "d692591d941c4846e1cb6265002ceb1717e0264cad39df2430f1db9cce41eca6",
-  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各飯店官網原頁取文字核對，未使用瀏覽器、未開 PDF；第 2 輪複查只核對改過的句子，C16、C21、C43、C48 採協調者瀏覽器查證結果",
+  "articleSha256": "63406c31bcc3a57986bb5c9c6348815373c1f405293545d677cf7769130f4374",
+  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各飯店官網原頁取文字核對，未使用瀏覽器、未開 PDF；第 2 輪複查只核對改過的句子，C16、C21、C43、C48 採協調者瀏覽器查證結果；第 3 輪複查（節奏潤稿 22 段）逐段比對 breakfast-before.md，事實、主語與條件沒有變，只更新 articleExcerpt；第 4 輪確認只改 Art Hotel 一處標點（逗號改回句號），更新 C49",
   "checkedAt": "2026-11-18",
   "claims": [
     {
@@ -52,7 +52,7 @@
     },
     {
       "claimId": "C6",
-      "articleExcerpt": "6歲以下和大人同床的小孩，連早餐都不收費。7歲起就和大人一樣算一人。",
+      "articleExcerpt": "6歲以下和大人同床的小孩連早餐都不收費，7歲起就和大人一樣算一人。",
       "sourceUrl": "https://amanekhotels.jp/faq/",
       "sourceTitle": "ホテルアマネク よくあるご質問",
       "sourceQuote": "6歳以下のお子様までは添い寝のご利用として朝食代含め、料金は頂戴しておりません。7歳のお子様からは大人同様1名様としてご料金を頂戴しております。",
@@ -97,7 +97,7 @@
     },
     {
       "claimId": "C11",
-      "articleExcerpt": "海鮮丼用的是鮪魚、鮭魚和魩仔魚，是旭川這間的在地菜。其他菜色是 Dormy Inn 各分店都有的日式和西式自助。",
+      "articleExcerpt": "海鮮丼用的是鮪魚、鮭魚和魩仔魚，是旭川這間的在地菜，其他菜色則是 Dormy Inn 各分店都有的日式和西式自助。",
       "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/breakfast/",
       "sourceTitle": "ドーミーイン旭川 朝食",
       "sourceQuote": "全国のドーミーインチェーン共通の和洋バイキング…地域ごとの特色を出した「ご当地逸品料理」／「海鮮丼」マグロ・サーモン・しらすを盛った海鮮盛！",
@@ -124,7 +124,7 @@
     },
     {
       "claimId": "C14",
-      "articleExcerpt": "離JR旭川站走路約15分，要趕早上的火車，得把這段路的時間算進去。",
+      "articleExcerpt": "離JR旭川站走路約15分，如果要趕早上的火車，得把這段路的時間算進去。",
       "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/access/",
       "sourceTitle": "ドーミーイン旭川 アクセス",
       "sourceQuote": "「旭川駅」から徒歩約15分",
@@ -151,7 +151,7 @@
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "鮭魚卵隨你淋，是 KOKO HOTEL旭川站前…早餐很受歡迎的吃法。",
+      "articleExcerpt": "鮭魚卵隨你淋，是 KOKO HOTEL旭川站前（日文舊名ホテルウィングインターナショナル旭川駅前）早餐很受歡迎的吃法，海鮮丼也是自己做。",
       "sourceUrl": "https://www.koko-hotels.com/feature/morning/",
       "sourceTitle": "KOKO HOTELS 朝食特集",
       "sourceQuote": "“イクラかけ放題”の海鮮バイキングが大好評！イクラやお好きな海鮮をお好きなだけご飯にのせてお召し上がりください。",
@@ -160,7 +160,7 @@
     },
     {
       "claimId": "C18",
-      "articleExcerpt": "早餐在看得到旭川市區的12樓餐廳吃，時間是6:30到9:30，9:00最後點餐。海鮮丼也是自己做。",
+      "articleExcerpt": "早餐在看得到旭川市區的12樓餐廳吃，時間是6:30到9:30，9:00最後點餐。（前句：海鮮丼也是自己做。）",
       "sourceUrl": "https://www.koko-hotels.com/asahikawa_station/",
       "sourceTitle": "【公式】KOKO HOTEL 旭川駅前",
       "sourceQuote": "旭川の街並みが一望できる12階レストランにてご用意。ジンギスカンなどのご当地グルメのほか、ご自身で海鮮丼…／6：30～9：30（L.O.9：00）",
@@ -187,7 +187,7 @@
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "訂房時有含早餐的標準方案。（比較表：有含早方案）",
+      "articleExcerpt": "訂房時有含早餐的標準方案，小學生另有兒童價。（比較表：有含早方案）",
       "sourceUrl": "https://book.koko-hotels.com/booking/result?code=647b59cb044e904fc056520cde98dfb9",
       "sourceTitle": "KOKO HOTELS 公式予約",
       "sourceQuote": "方案列表有「…／含早餐」方案（官方訂房頁繁中介面，入住日 2026-12-09）",
@@ -196,7 +196,7 @@
     },
     {
       "claimId": "C22",
-      "articleExcerpt": "小學生另有兒童價。",
+      "articleExcerpt": "訂房時有含早餐的標準方案，小學生另有兒童價。",
       "sourceUrl": "https://www.koko-hotels.com/asahikawa_station/",
       "sourceTitle": "【公式】KOKO HOTEL 旭川駅前",
       "sourceQuote": "2,200円（税込）／小学生 1,100円",
@@ -241,7 +241,7 @@
     },
     {
       "claimId": "C27",
-      "articleExcerpt": "官網的連結是看飯店資訊用的，不能在網站上訂房。要訂房，從 Trip.com 或 Agoda 訂，或打電話給飯店。",
+      "articleExcerpt": "官網的連結是看飯店資訊用的，網站上不能訂房，所以要從 Trip.com 或 Agoda 訂，或打電話給飯店。",
       "sourceUrl": "https://www.ishinhotels.com/wbf/grande-asahikawa",
       "sourceTitle": "ホテルWBFグランデ旭川【公式サイト】",
       "sourceQuote": "頁面連結只有站內頁、優惠券與 tayori 聯絡表單，沒有訂房系統連結；頁內有 TEL",
@@ -286,7 +286,7 @@
     },
     {
       "claimId": "C32",
-      "articleExcerpt": "有加了北海道產鮭魚卵的海鮮、醬油拉麵、湯咖哩、炸雞、北海道產的米和現烤麵包。改版後，還多了海鮮高湯茶泡飯。",
+      "articleExcerpt": "有加了北海道產鮭魚卵的海鮮、醬油拉麵、湯咖哩、炸雞、北海道產的米和現烤麵包，改版後還多了海鮮高湯茶泡飯。",
       "sourceUrl": "https://yshotel-asahikawa.com/food",
       "sourceTitle": "ワイズホテル旭川駅前 食事",
       "sourceQuote": "北海道ならではの料理（道産鮭イクラが入った海鮮、醤油ラーメン、スープカレー、ザンギ）や道産米をはじめ、焼きたてパンやデザートまで（首頁：海鮮出汁茶漬け）",
@@ -304,7 +304,7 @@
     },
     {
       "claimId": "C34",
-      "articleExcerpt": "早上6:00就開，是這一頁裡最早的。到10:00結束，在1樓餐廳吃。開始時間會變動，到了飯店再確認。",
+      "articleExcerpt": "早餐早上6:00就開，是這一頁裡最早的，到10:00結束，在1樓餐廳吃。不過開始時間會變動，到了飯店再確認。",
       "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/dining/",
       "sourceTitle": "食事 | OMO7旭川 by 星野リゾート【公式】",
       "sourceQuote": "6:00 AM～10:00 AM／※営業開始時間は変動いたします。ご到着時にご確認ください。",
@@ -313,7 +313,7 @@
     },
     {
       "claimId": "C35",
-      "articleExcerpt": "不過飯店離JR旭川站走路約13到15分，出門前要把這段路算進去。",
+      "articleExcerpt": "OMO7旭川的早餐適合早上要搭車、又想先吃早餐的人，不過飯店離JR旭川站走路約13到15分，出門前要把這段路算進去。",
       "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/access/",
       "sourceTitle": "アクセス | OMO7旭川 by 星野リゾート【公式】",
       "sourceQuote": "JR「旭川」駅より徒歩約15分、またはタクシーで約5分（首頁：JR「旭川」駅より徒歩約13分）",
@@ -331,7 +331,7 @@
     },
     {
       "claimId": "C37",
-      "articleExcerpt": "有住客遇到早餐區很擠。",
+      "articleExcerpt": "有住客遇到早餐區很擠，想避開人多的話，入住時可以問櫃台早上哪個時段人最多。",
       "sourceUrl": "https://www.google.com/maps/search/?api=1&query=OMO7%E6%97%AD%E5%B7%9D",
       "sourceTitle": "Trip.com 住客評論；4travel",
       "sourceQuote": "",
@@ -340,7 +340,7 @@
     },
     {
       "claimId": "C38",
-      "articleExcerpt": "早餐不用預約。沒含早餐的人，可以向櫃台申請追加。…7歲以上和大人同價，4到6歲有兒童價，0到3歲免費。",
+      "articleExcerpt": "早餐不用預約，沒含早餐的人可以向櫃台申請追加，追加早餐要多少錢，寫在官網的餐飲頁。7歲以上和大人同價，4到6歲有兒童價，0到3歲免費。",
       "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/dining/",
       "sourceTitle": "食事 | OMO7旭川 by 星野リゾート【公式】",
       "sourceQuote": "予約不要／※朝食の追加を希望される場合はフロントまでお問い合わせください／大人・7歳以上のお子様：2,500円／4～6歳：600円／0～3歳：無料",
@@ -349,7 +349,7 @@
     },
     {
       "claimId": "C39",
-      "articleExcerpt": "早餐不在飯店裡，要到和飯店相連的 AEON MALL旭川站前（イオンモール旭川駅前）4樓自助餐廳吃。…早餐時間是6:30到10:00，9:30前要進場。",
+      "articleExcerpt": "早餐不在飯店裡，要到和飯店相連的 AEON MALL旭川站前（イオンモール旭川駅前）4樓自助餐廳吃，時間是6:30到10:00，9:30前要進場。",
       "sourceUrl": "https://www.jr-inn.jp/asahikawa/facilitys/",
       "sourceTitle": "JRイン旭川 館内施設",
       "sourceQuote": "6:30〜10:00 (最終入店 9:30)／グランファーム (ホテル直結イオンモール4階)／朝食は和洋ビュッフェ形式でのご用意。",
@@ -358,7 +358,7 @@
     },
     {
       "claimId": "C40",
-      "articleExcerpt": "從飯店出去就是往旭山動物園的巴士站（旭川站6號乘車處），大約30分鐘一班。",
+      "articleExcerpt": "吃完早餐要去旭山動物園的人很方便，因為從飯店出去就是往動物園的巴士站（旭川站6號乘車處），大約30分鐘一班。",
       "sourceUrl": "https://www.jr-inn.jp/asahikawa/qa/",
       "sourceTitle": "JRイン旭川 Q&A",
       "sourceQuote": "ホテル出てすぐの「旭川駅のりば6番」（北口東側）より旭山動物園行きのバスが概ね30分間隔で運行しています。",
@@ -394,7 +394,7 @@
     },
     {
       "claimId": "C44",
-      "articleExcerpt": "未上小學的小孩免費。",
+      "articleExcerpt": "日式和西式的自助，未上小學的小孩免費。",
       "sourceUrl": "https://www.jr-inn.jp/asahikawa/facilitys/",
       "sourceTitle": "JRイン旭川 館内施設",
       "sourceQuote": "※小学生未満は無料",
@@ -439,7 +439,7 @@
     },
     {
       "claimId": "C49",
-      "articleExcerpt": "同床的學齡前小孩，住宿和早餐都免費。",
+      "articleExcerpt": "官網的方案有附早餐的，也有附晚餐加早餐的兩餐方案。同床的學齡前小孩，住宿和早餐都免費。",
       "sourceUrl": "https://www.art-asahikawa.com/stay/qanda/",
       "sourceTitle": "アートホテル旭川 宿泊Q&A",
       "sourceQuote": "添い寝されるお子様(未就学児)のご宿泊料金、ご朝食料金は無料です。",
@@ -457,7 +457,7 @@
     },
     {
       "claimId": "C51",
-      "articleExcerpt": "在 Hotel Crescent旭川（ホテルクレッセント旭川），自助早餐有自己動手夾的三明治、自家醃菜，還有沙拉吧。早上7點到9點供應。（比較表：自己夾的三明治、自家醃菜、沙拉吧）",
+      "articleExcerpt": "在 Hotel Crescent旭川（ホテルクレッセント旭川），自助早餐有自己動手夾的三明治、自家醃菜，還有沙拉吧，早上7點到9點供應。（比較表：自己夾的三明治、自家醃菜、沙拉吧）",
       "sourceUrl": "https://www.hotel-cr.com/breakfast/",
       "sourceTitle": "ホテルクレッセント旭川 朝食",
       "sourceQuote": "オリジナルで作るサンドイッチや自家製のピクルス、サラダバー／7:00~9:00",
@@ -484,7 +484,7 @@
     },
     {
       "claimId": "C54",
-      "articleExcerpt": "早餐是1樓餐廳的日式和西式自助，早上7點開始。9點前要點餐。",
+      "articleExcerpt": "早餐是1樓餐廳的日式和西式自助，早上7點開始，9點前要點餐。",
       "sourceUrl": "https://www.enhotels.co.jp/asahikawa/feature/",
       "sourceTitle": "コートホテル旭川 特徴",
       "sourceQuote": "和洋ビュッフェを朝7時から9時までホテル1階のレストランでご提供しています。（FAQ：朝食時間は 7:00～9:30（ラストオーダー 9:00）です。）",
@@ -565,7 +565,7 @@
     },
     {
       "claimId": "C63",
-      "articleExcerpt": "日文的方案名稱寫「朝食付」就是含早餐，寫「素泊まり」「素泊り」「朝食なし」就是不含。",
+      "articleExcerpt": "日文的方案名稱寫「朝食付」就是含早餐，寫「素泊まり」「素泊り」「朝食なし」就是不含，如果在 Trip.com 或 Agoda 上訂，就看房型底下有沒有寫「含早餐」。",
       "sourceUrl": "https://amanekhotels.jp/asahikawa/",
       "sourceTitle": "旭川駅徒歩3分のホテル【公式】ホテルアマネク旭川",
       "sourceQuote": "- 素泊 - ／ - 朝食付 - （Dormy Inn FAQ：「朝食なし」プラン）",
@@ -574,7 +574,7 @@
     },
     {
       "claimId": "C64",
-      "articleExcerpt": "露櫻Grand旭川站前（ホテルルートインGrand旭川駅前）的早餐，只有從官網訂房才免費，從其他管道訂要另外付錢。",
+      "articleExcerpt": "露櫻Grand旭川站前（ホテルルートインGrand旭川駅前）的早餐，只有從官網訂房才免費，從其他管道訂要另外付錢，所以想吃免費早餐，就從官網訂。",
       "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/",
       "sourceTitle": "ホテルルートインGrand旭川駅前",
       "sourceQuote": "公式サイトからのご宿泊予約なら、バイキング朝食を無料でお召し上がり頂けます。（餐廳頁：お一人様 1,800円 小学生 1,000円 幼児 無料）",
@@ -619,7 +619,7 @@
     },
     {
       "claimId": "C69",
-      "articleExcerpt": "OMO7旭川、Dormy Inn旭川和露櫻Grand旭川站前的早餐，只有住客可以吃。",
+      "articleExcerpt": "OMO7旭川、Dormy Inn旭川和露櫻Grand旭川站前的早餐，只有住客可以吃，其他飯店不住宿想去吃的，先打電話問飯店。",
       "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/restaurant/",
       "sourceTitle": "朝食バイキング（ビュッフェ）・レストラン｜ホテルルートインGrand旭川駅前",
       "sourceQuote": "※ご宿泊を伴わないお客様はご利用いただけません。（OMO7 餐飲頁：宿泊者限定；Dormy Inn FAQ：朝食はご宿泊者のみとなっております。）",

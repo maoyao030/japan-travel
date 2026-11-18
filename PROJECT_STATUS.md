@@ -2220,3 +2220,17 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **尚未完成**：三頁住宿專門頁樣本沒上傳（嵌入清單缺 `title`、`checks`，封面要換，訂房連結沒逐條點開，譯名表待登記）；流程沒接進 `local-writer.md`；頁型範本沒登記；排定工作仍暫停。
 - **Git**：`main` 與 `test/stay-local` 都已推送，工作區乾淨。
 - **唯一下一步**：Darren 決定先上線三頁住宿專門頁，還是先把流程接進自動寫作。
+
+## 2026-11-18 Claude Code｜三頁住宿專門頁上線準備、句子節奏規則（進行中）
+
+- **起因**：Darren 說「先上線三頁」；中途要求看開源規範 zh-tw-writing 並測試，看了早餐頁潤前潤後說「蠻不錯的，都加這個」。
+- **已完成**：
+  - 三頁排進清單、頁面規格、候選登記與旭川群大綱（`asahikawa-stay-breakfast`、`-onsen`、`-parking`，網址 `/places/asahikawa/stay-*/`）；大綱檢查新增 `parentArticleId`（住宿專門頁掛在住宿頁底下，不用直接連地點主頁）；格式檢查放行連結文字含「官網」的訂房連結；譯名表補 12 筆。
+  - 封包建在 `content-production/`：正文、研究紀錄、publication、標題紀錄、嵌入清單（20 則，2026-11-18 在瀏覽器逐則確認仍公開）。
+  - 事實查核：三位查核子代理（Opus 5.5）逐條開官方來源，共 4 輪。照官方改掉的錯見各封包 `reference-review.md` 最後一節。16 條 Trip.com、Agoda 連結由協調者在瀏覽器逐條打開確認。
+  - 句子節奏：規則寫在寫作 Skill `references/sentence-rhythm.md`，三頁都潤過（每個句號前的逗號 1.04／1.33／1.39 → 約 1.5），潤後由查核者逐句複查，沒有改到意思；對照稿在 `content-experiments/zh-tw-writing-test-2026-11-18/`。zh-tw-writing 附的檢查程式沒有執行。
+- **阻礙**：三頁各 4 句住客說法（共 12 句）在 `fact-check.json` 仍是 `unreachable`，定稿關卡過不了。查核子代理開不了評論頁；協調者只在 Google 地圖抽查了 Dormy Inn旭川（和 11-16 紀錄吻合）。協調者不得自己把這 12 筆改記 verified（安全檢查擋下，理由正當）。等 Darren 決定：先拿掉這 12 句上線，或逐句重看評論後再上線。
+- **尚未完成**：封面（自駕頁已選旭川市照片庫「常盤圓環」並裁好；早餐、溫泉改選旭川市照片庫中，維基共享資源下載被 429 擋）；`review.md`；上傳、開放索引、D1 登記；線上〈旭川住宿〉還沒有連到三頁（那一頁 Darren 親手改過，要加連結句先問他）。
+- **測試**：`npm test` 242 個通過；`planning:check`、`queue:validate` 通過。
+- **Git**：分支 `test/stay-local`，本段的修改已 commit，還沒推 `main`。
+- **唯一下一步**：Darren 決定 12 句住客說法怎麼處理。

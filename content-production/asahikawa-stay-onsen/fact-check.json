@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay-onsen",
-  "articleSha256": "d5014f5fdd926097232a36836f0ecb03280d6e0f1269976bf4f1d8e8e05f0590",
-  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 與 WebFetch 重開官方頁面逐筆核對，未用瀏覽器、未開 PDF；2026-11-18 第 2 輪只複查協調者改過的句子",
+  "articleSha256": "d35ce50bd58e8ac9f6f0e9f4974d9d65f76a056bb5d65c4e465d96d1ccd5ff88",
+  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 與 WebFetch 重開官方頁面逐筆核對，未用瀏覽器、未開 PDF；2026-11-18 第 2 輪只複查協調者改過的句子；第 3 輪複查潤稿後的 13 段（意思沒跑掉）；第 4 輪複查龍乃湯、高砂溫泉兩句",
   "checkedAt": "2026-11-18",
   "claims": [
     {
@@ -70,7 +70,7 @@
     },
     {
       "claimId": "C8",
-      "articleExcerpt": "出了JR旭川站東口走路約2分，就是Hotel WBF Grande旭川（ホテルWBFグランデ旭川），館內有附露天浴池的天然溫泉「Minapirika之湯（みなぴりかの湯）」。",
+      "articleExcerpt": "出了JR旭川站東口走路約2分，就是Hotel WBF Grande旭川（ホテルWBFグランデ旭川），館內有附露天浴池的天然溫泉「Minapirika之湯（みなぴりかの湯）」，不住宿的人也能來泡。",
       "sourceUrl": "https://www.ishinhotels.com/wbf/grande-asahikawa",
       "sourceTitle": "ホテルWBFグランデ旭川【公式サイト】 - イシン・ホテルズ",
       "sourceQuote": "旭川駅東口から徒歩約2分／天然温泉 みなぴりかの湯／露天風呂",
@@ -88,12 +88,12 @@
     },
     {
       "claimId": "C10",
-      "articleExcerpt": "不住宿的人也能來泡。…Hotel WBF Grande旭川也能不住宿來泡，想只去泡湯的人，出發前先打電話問飯店能泡的時間。（表格：可以，時間先打電話問）",
+      "articleExcerpt": "館內有附露天浴池的天然溫泉「Minapirika之湯（みなぴりかの湯）」，不住宿的人也能來泡。…Hotel WBF Grande旭川和天然溫泉Premier Hotel-CABIN-旭川，不住宿也能進去泡，飯店以外還有龍乃湯溫泉和高砂溫泉可以泡。…Hotel WBF Grande旭川也能不住宿來泡，想只去泡湯的人，出發前先打電話問飯店能泡的時間。（表格：可以，時間先打電話問）",
       "sourceUrl": "https://www.ishinhotels.com/wbf/grande-asahikawa",
       "sourceTitle": "ホテルWBFグランデ旭川【公式サイト】 - イシン・ホテルズ",
       "sourceQuote": "日帰り入浴／平日10：00～ 23：00、土日祝10：00～ 23：00 (最終受付22：00）",
       "verdict": "verified",
-      "notes": "公告 /hotel-news/wbf-20261006 現在打得開（curl 200）：「5月18日（月）より営業開始時間を午後1時からとさせていただいておりましたが、午前10時からの営業に復旧いたしました」。現行日歸是 10:00～23:00（最終受付 22:00），含毛巾大人 1,500 日圓。正文不寫時間也沒錯，但現在其實可以直接寫。"
+      "notes": "公告 /hotel-news/wbf-20261006 現在打得開（curl 200）：「5月18日（月）より営業開始時間を午後1時からとさせていただいておりましたが、午前10時からの営業に復旧いたしました」。現行日歸是 10:00～23:00（最終受付 22:00），含毛巾大人 1,500 日圓。正文不寫時間也沒錯，但現在其實可以直接寫。 第 3 輪：「不住宿也能來泡」併到溫泉那句之後，主語仍是 WBF 的溫泉，意思不變。"
     },
     {
       "claimId": "C11",
@@ -115,7 +115,7 @@
     },
     {
       "claimId": "C13",
-      "articleExcerpt": "7歲以上或身高120公分以上的小孩，不能和異性家長一起進；小學生也不能自己進去泡。",
+      "articleExcerpt": "7歲以上或身高120公分以上的小孩，不能和異性家長一起進，小學生也不能自己進去泡。",
       "sourceUrl": "https://www.ishinhotels.com/wbf/grande-asahikawa",
       "sourceTitle": "ホテルWBFグランデ旭川【公式サイト】 - イシン・ホテルズ",
       "sourceQuote": "7歳以上または身長120cm以上の方は条例により混浴いただけません／小学生だけでのご入浴はいただけません",
@@ -151,12 +151,12 @@
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "浴場裡有三溫暖，每週日男湯女湯會對調。住客泡湯不用另外付費。",
+      "articleExcerpt": "浴場一直開到隔天早上10點，住客泡湯不用另外付費。…浴場裡有三溫暖，每週日男湯女湯會對調。",
       "sourceUrl": "https://cabin.kenhotels.com/asahikawa/faq/",
       "sourceTitle": "天然温泉プレミアホテル-CABIN-旭川 よくあるご質問",
       "sourceQuote": "宿泊の場合、入浴料金は別途かかりますか？いいえ。別途料金はいただいておりません。（温泉頁：温泉大浴場内にサウナを設置。／※日曜日は男女の大浴場が入れ替わります。）",
       "verdict": "verified",
-      "notes": "官網週日對調那句後面還有「ご入浴時間が変更となりますので予めご了承ください」，正文沒提週日入浴時間會變，讀者驗收可考慮補一句。"
+      "notes": "官網週日對調那句後面還有「ご入浴時間が変更となりますので予めご了承ください」，正文沒提週日入浴時間會變，讀者驗收可考慮補一句。 第 3 輪：「住客泡湯不用另外付費」移到開放時間後面，仍是 CABIN 浴場，意思不變。"
     },
     {
       "claimId": "C18",
@@ -187,7 +187,7 @@
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "17樓的大浴場用的是天人峽的天然溫泉，露櫻Grand旭川站前（ホテルルートインGrand旭川駅前）的男湯女湯都有三溫暖。",
+      "articleExcerpt": "露櫻Grand旭川站前（ホテルルートインGrand旭川駅前）17樓的大浴場用的是天人峽的天然溫泉，男湯女湯都有三溫暖。",
       "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/facilities/",
       "sourceTitle": "大浴場（人工温泉・天然温泉）｜ホテルルートインGrand旭川駅前",
       "sourceQuote": "天人峡天然温泉 旅人の湯（加水・加温・循環ろ過式）／当ホテルでは男女両方の大浴場にサウナを備えております。／場所 ホテル17階",
@@ -250,7 +250,7 @@
     },
     {
       "claimId": "C28",
-      "articleExcerpt": "天然溫泉是男女照時段輪流泡…下午女生3點就能泡，男生要等到晚上6點；早上男生泡到7點50分，8點起換女生。（表格：女15:00～17:50、21:00～22:50、8:00～9:50；男18:00～20:50、23:00～隔天7:50）",
+      "articleExcerpt": "天然溫泉是男女照時段輪流泡…下午女生3點就能泡，男生要等到晚上6點，早上則是男生泡到7點50分，8點起換女生。（表格：女15:00～17:50、21:00～22:50、8:00～9:50；男18:00～20:50、23:00～隔天7:50）",
       "sourceUrl": "https://www.superhotel.co.jp/s_hotels/asahikawa/",
       "sourceTitle": "【公式最安】 スーパーホテル旭川 大雪山の湯",
       "sourceQuote": "【男性】18:00～20:50、23:00～翌朝7:50 【女性】15:00～17:50、21:00～22:50、翌朝8:00～9:50",
@@ -277,7 +277,7 @@
     },
     {
       "claimId": "C31",
-      "articleExcerpt": "蒸完三溫暖可以接著泡冷水池，再到39到42度的浴池躺著休息；另外還有32到33度的低溫池和泡泡浴。…三溫暖有乾式和低溫的蒸氣三溫暖兩種。",
+      "articleExcerpt": "蒸完三溫暖可以接著泡冷水池，再到39到42度的浴池躺著休息，另外還有32到33度的低溫池和泡泡浴。…三溫暖有乾式和低溫的蒸氣三溫暖兩種。",
       "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/sp/plateau/",
       "sourceTitle": "サウナ プラトー｜OMO7旭川",
       "sourceQuote": "寝風呂 39～42度の心地よい温度の湯船で浮力を感じ横になって寛げます。／腹部まで高さがある32～33℃の低温バス。／バブルバス／ドライサウナ／霧状に発散させた蒸気が満ちた低温サウナ。",
@@ -286,7 +286,7 @@
     },
     {
       "claimId": "C32",
-      "articleExcerpt": "泡湯設施只有住客能用，而且不用另外付錢。下午3點半開到半夜12點，早上5點到9點也能泡。",
+      "articleExcerpt": "泡湯設施只有住客能用，而且不用另外付錢，下午3點半開到半夜12點，早上5點到9點也能泡。",
       "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/sp/plateau/",
       "sourceTitle": "サウナ プラトー｜OMO7旭川",
       "sourceQuote": "3:30 PM～12:00 AM（最終受付11:30 PM） 5:00 AM～9:00 AM（最終受付8:30 AM）／料金 無料／ご宿泊のお客様のみご利用いただけます。",
@@ -304,7 +304,7 @@
     },
     {
       "claimId": "C34",
-      "articleExcerpt": "有住客覺得水溫不夠熱",
+      "articleExcerpt": "有住客覺得水溫不夠熱，想泡熱一點的，就泡39到42度那一池。",
       "sourceUrl": "https://www.google.com/maps/search/?api=1&query=OMO7%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82",
       "sourceTitle": "",
       "sourceQuote": "",
@@ -340,7 +340,7 @@
     },
     {
       "claimId": "C38",
-      "articleExcerpt": "大浴場在5樓，只有住客能泡。下午3點開到凌晨1點，早上5點到10點也能泡。",
+      "articleExcerpt": "大浴場在5樓，只有住客能泡，下午3點開到凌晨1點，早上5點到10點也能泡。",
       "sourceUrl": "https://www.jr-inn.jp/asahikawa/qa/",
       "sourceTitle": "JRイン旭川 よくあるご質問",
       "sourceQuote": "5階に男女別の大浴場がございます。営業時間は15時〜25時、5時〜10時までです。…※ご宿泊者以外の方はご利用いただけません。",
@@ -367,12 +367,12 @@
     },
     {
       "claimId": "C41",
-      "articleExcerpt": "HOTEL AMANEK旭川（ホテルアマネク旭川）的大浴場在頂樓，天氣好的時候，看得到大雪山、旭岳這一帶的山。從旭川站北口走過去約3分。",
+      "articleExcerpt": "HOTEL AMANEK旭川（ホテルアマネク旭川）的大浴場在頂樓，天氣好的時候，看得到大雪山、旭岳這一帶的山。飯店從旭川站北口走過去約3分。",
       "sourceUrl": "https://amanekhotels.jp/asahikawa/information/",
       "sourceTitle": "ホテルアマネク旭川 館内案内",
       "sourceQuote": "最上階に展望浴場「四季の湯」を完備。天気の良い日は十勝連峰（大雪山、旭岳など）を一望できます。（首頁：旭川駅北口より徒歩3分）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 3 輪：補主語「飯店」，指 AMANEK 本身，正確。"
     },
     {
       "claimId": "C42",
@@ -439,12 +439,12 @@
     },
     {
       "claimId": "C49",
-      "articleExcerpt": "龍乃湯溫泉是天然溫泉（單純鐵冷鑛泉），有露天浴池和三溫暖，三溫暖要另外付100日圓。早上10點到晚上10點能泡，每週二公休",
+      "articleExcerpt": "龍乃湯溫泉是天然溫泉（單純鐵冷鑛泉），有露天浴池和三溫暖，三溫暖要另外付100日圓。龍乃湯早上10點到晚上10點能泡，每週二公休",
       "sourceUrl": "https://tatsunoyuonsen.com/tatsunoyu-onsen.html",
       "sourceTitle": "龍乃湯温泉 温泉",
       "sourceQuote": "泉質 単純鉄冷鉱泉／入浴営業時間 10:00～22:00 ※正月・盆は休みあり／入浴定休日 毎週火曜日／サウナ使用料（貸バスタオル付）￥100／（サウナ、露天風呂以外）",
       "verdict": "verified",
-      "notes": "官網另註：週二遇國定假日照常營業、正月與盂蘭盆節有休。"
+      "notes": "官網另註：週二遇國定假日照常營業、正月與盂蘭盆節有休。第 4 輪：「這裡」已改成「龍乃湯」，時間明確指整間的入浴時間，和官網「入浴営業時間 10:00～22:00」一致。"
     },
     {
       "claimId": "C50",
@@ -457,12 +457,12 @@
     },
     {
       "claimId": "C51",
-      "articleExcerpt": "天然溫泉只在特別室，和要另外付費的家庭湯屋，附三溫暖的那一間要先預約。",
+      "articleExcerpt": "天然溫泉只有特別室和要另外付費的家庭湯屋才泡得到，家庭湯屋裡附三溫暖的那一間要先預約。",
       "sourceUrl": "https://www.takasagoonsen.com/spa/",
       "sourceTitle": "旭川 高砂温泉 入浴",
       "sourceQuote": "※大浴場は地下水を利用し、天然温泉ではありません。（首頁）／別途料金で、天然温泉の家族風呂もご用意しています。／サウナ無し 1室2名様まで 1,800円 サウナ付き 1室2名様まで 2,400円（予約制）",
       "verdict": "verified",
-      "notes": "第 2 輪：「（予約制）」只套在附三溫暖的那一行，正文已照改。"
+      "notes": "第 4 輪：斷句已改清楚。特別室與家族風呂是天然溫泉、家族風呂另外收費、只有附三溫暖的那間標「（予約制）」，都和官網一致。"
     },
     {
       "claimId": "C52",
@@ -475,7 +475,7 @@
     },
     {
       "claimId": "C53",
-      "articleExcerpt": "從旭川站搭計程車約15分；搭公車的話，從離旭川站走路約6分的1條通7丁目搭道北巴士53、630號，約30分。",
+      "articleExcerpt": "從旭川站搭計程車約15分，搭公車的話，從離旭川站走路約6分的1條通7丁目搭道北巴士53、630號，約30分。",
       "sourceUrl": "https://www.takasagoonsen.com/access/",
       "sourceTitle": "旭川 高砂温泉 アクセス",
       "sourceQuote": "旭川駅から車で約15分／旭川駅より徒歩6分、旭川市1条通7丁目より道北バス［53/630］で約30分。高砂台８丁目で下車、徒歩1分。",
@@ -534,7 +534,7 @@
       "sourceTitle": "66番 旭川空港経由 旭岳線｜旭川電気軌道",
       "sourceQuote": "旭岳 16:55 → 旭川駅（のりば9）18:33（道北巴士販售頁：6:55 旭川駅前発／17:00 層雲峡発 ⇒ 18:55 旭川駅前着）",
       "verdict": "verified",
-      "notes": "層雲峽部分見 C54、C55。"
+      "notes": "層雲峽部分見 C54、C55。 第 3 輪確認：「層雲峽的第一班是6點55分」是旭川站前發車時間，販售頁原文「6:55 旭川駅前発 ⇒ 8:54 層雲峡着」。"
     },
     {
       "claimId": "C60",
