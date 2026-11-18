@@ -93,7 +93,7 @@ HOTEL AMANEK旭川（ホテルアマネク旭川）的大浴場在頂樓，天�
 | 飯店 | 到JR旭川站 | 浴場有什麼 | 住客可以泡的時間 | 刺青 | 不住宿能不能泡 | 連結 |
 |---|---|---|---|---|---|---|
 | Dormy Inn旭川 | 走路約15分 | 露天浴池、三溫暖、冷水池 | 15:00～隔天10:00 | 原則不行，貼紙遮得住可以 | 只限住客 | [官網](https://dormy-hotels.com/dormyinn/hotels/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%89%E3%83%BC%E3%83%9F%E3%83%BC%E3%82%A4%E3%83%B3%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
-| Hotel WBF Grande旭川 | 東口走路約2分 | 露天浴池、三溫暖 | 6:00～24:00 | 不能露出刺青 | 可以，時間先打電話問 | [官網](https://www.ishinhotels.com/wbf/grande-asahikawa)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%ABWBF%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%87%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
+| Hotel WBF Grande旭川 | 東口走路約2分 | 露天浴池、三溫暖 | 6:00～24:00 | 不能露出刺青 | 可以，10:00～23:00 | [官網](https://www.ishinhotels.com/wbf/grande-asahikawa)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%ABWBF%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%87%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 | 天然溫泉Premier Hotel-CABIN-旭川 | 走路約3分 | 三溫暖 | 14:00～隔天10:00 | 不行 | 可以，14:00～23:00 | [官網](https://cabin.kenhotels.com/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%9B%E3%83%86%E3%83%AB-CABIN-%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 | 露櫻Grand旭川站前 | 北口走路約2分 | 三溫暖 | 15:00～凌晨2:00、5:00～10:00 | 貼紙完全遮住可以 | | [官網](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%AB%E3%83%BC%E3%83%88%E3%82%A4%E3%83%B3Grand%E6%97%AD%E5%B7%9D%E9%A7%85%E5%89%8D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
 | Super Hotel旭川 | 走路約5分 | | 女15:00～17:50、21:00～22:50、8:00～9:50；男18:00～20:50、23:00～隔天7:50 | 不行 | | [官網](https://www.superhotel.co.jp/s_hotels/asahikawa/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9B%E3%83%86%E3%83%AB%E6%97%AD%E5%B7%9D%20%E6%97%AD%E5%B7%9D%E5%B8%82) |
@@ -118,7 +118,7 @@ HOTEL AMANEK旭川（ホテルアマネク旭川）的大浴場在頂樓，天�
 
 住的飯店不能泡，或是想換個地方泡，也還有別的選擇。Hotel WBF Grande旭川和天然溫泉Premier Hotel-CABIN-旭川，不住宿也能進去泡，飯店以外還有龍乃湯溫泉和高砂溫泉可以泡。
 
-天然溫泉Premier Hotel-CABIN-旭川開放不住宿的人下午2點到晚上11點來泡，晚上10點最後入場。費用含毛巾，大人1,200日圓、小學生600日圓，學齡前免費。Hotel WBF Grande旭川也能不住宿來泡，想只去泡湯的人，出發前先打電話問飯店能泡的時間。Dormy Inn旭川、OMO7旭川、JR Inn旭川和Art Hotel旭川（アートホテル旭川）的浴場，只有住客能泡。
+天然溫泉Premier Hotel-CABIN-旭川開放不住宿的人下午2點到晚上11點來泡，晚上10點最後入場。費用含毛巾，大人1,200日圓、小學生600日圓，學齡前免費。Hotel WBF Grande旭川也能不住宿來泡，早上10點到晚上11點開放，晚上10點最後入場，含毛巾大人1,500日圓。Dormy Inn旭川、OMO7旭川、JR Inn旭川和Art Hotel旭川（アートホテル旭川）的浴場，只有住客能泡。
 
 龍乃湯溫泉是天然溫泉（單純鐵冷鑛泉），有露天浴池和三溫暖，三溫暖要另外付100日圓。龍乃湯早上10點到晚上10點能泡，每週二公休，離JR東旭川站走路10分。龍乃湯也能住，想住的話，打電話向旅館訂房。[龍乃湯溫泉官網](https://tatsunoyuonsen.com/tatsunoyu-onsen.html)
 

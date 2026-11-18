@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay-parking",
-  "articleSha256": "5bc72ba4772d300083be5493be7d0e74b3a72dd0859f2a3167a99a387dc36a9d",
+  "articleSha256": "49ad062bdae6038fded90319af38f1f64bf10898f4b03f4f8882d5dffb1e00ea",
   "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各官方頁核對，未用瀏覽器、未開 PDF；同日第 2 輪複查改過的句子；第 3 輪逐句比對潤稿前後（parking-before.md 對 reader-preview.md），14 處改動事實、主語與條件都沒變",
   "checkedAt": "2026-11-18",
   "claims": [
@@ -529,7 +529,7 @@
     },
     {
       "claimId": "C59",
-      "articleExcerpt": "OMO7旭川每開進停車場一次、KOKO HOTEL旭川站前每開出停車場一次，都要再付一次，Y's Hotel旭川站前則是住宿期間可以進出。JR Inn旭川和HOTEL AMANEK旭川是從進場起每24小時算一次。AMANEK是開出停車場時在繳費機付，住JR Inn的話，開出去再回來怎麼算，辦入住時跟櫃台確認。Hotel Crescent旭川和Super Hotel旭川的車只能停固定的時段，分別從下午2點和3點停到隔天早上11點，如果Crescent中途要開出去，先問飯店。天然溫泉Premier Hotel-CABIN-旭川的住客，如果車停在合作停車場或投幣停車場，就不能中途開出去。",
+      "articleExcerpt": "OMO7旭川每開進停車場一次、KOKO HOTEL旭川站前每開出停車場一次，都要再付一次，Y's Hotel旭川站前則是住宿期間可以進出。JR Inn旭川和HOTEL AMANEK旭川是從進場起每24小時算一次。AMANEK是開出停車場時在繳費機付，住JR Inn的話，訂含停車費的方案，住宿期間就可以進出。Hotel Crescent旭川和Super Hotel旭川的車只能停固定的時段，分別從下午2點和3點停到隔天早上11點，如果Crescent中途要開出去，先問飯店。天然溫泉Premier Hotel-CABIN-旭川的住客，如果車停在合作停車場或投幣停車場，就不能中途開出去。",
       "sourceUrl": "https://www.hotel-cr.com/access/",
       "sourceTitle": "ACCESS ｜ ホテルクレッセント（另見各館頁）",
       "sourceQuote": "（Crescent）■営業時間･･････14時〜翌11時 ※途中出庫等に関しましてはホテルにご確認ください。／（Super Hotel）駐車可能時間 15:00～11:00／（OMO7）入庫毎に料金がかかります／（KOKO）出庫の都度料金がかかります／（Y's）出入可／（JR Inn）入庫から24時間まで1泊料金／（AMANEK）1,000円／24時間…出庫時パーキングでお支払い／（CABIN）提携駐車場、コインパーキングは途中出庫不可",
@@ -607,10 +607,19 @@
       "sourceQuote": "※2泊以上のご利用の際は、入庫から24時間以内に入出庫いただく必要がございます。",
       "verdict": "verified",
       "notes": "第 2 輪新增。意思一致。官網同一處寫「入庫毎に料金がかかります」，所以再開進來會再收一次；正文同一節開頭已寫每開進一次付一次。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "白天要把車開出去、晚上再回來停的人，可以訂官網上含停車費的住宿方案，這種方案住宿期間可以進出。（JR Inn旭川）／住JR Inn的話，訂含停車費的方案，住宿期間就可以進出。",
+      "sourceUrl": "https://www.jr-inn.jp/asahikawa/?tripla_booking_widget_open=search&type=plan",
+      "sourceTitle": "宿泊プラン一覧（JRイン旭川 官網訂房元件 tripla）",
+      "sourceQuote": "滞在中の出し入れ可能！駐車代込々（素泊り）　車高２.２ｍまでＯＫ！【イオンモール直結駐車場】／☆彡 駐車代込々プラン ☆彡／１予約につき１台が無料です（２台目からは１泊８００円かかります）",
+      "verdict": "verified",
+      "notes": "第 6 輪（2026-11-18，內建瀏覽器，未登入、未填資料、未送出）：官網頁的方案列表在 iframe（bw3.pages.dev/booking/result?…type=plan）裡，直接開 iframe 網址讀。11/18 當晚沒有空房，把網址的入住日改成 2026/11/24～11/25 才列出方案，讀到上述「駐車代込々」方案。協調者看到的「（朝食付）」版本這次沒有列出，可能依日期或空房而定。另有「AIRDOご利用者限定」方案也含停車費（通常800円の駐車代金が無料）。正文沒有說過頭；要補條件的話：一筆訂房只含一台車，第二台起每晚 800 日圓，而且方案要看日期有沒有開放。另外，原句「辦入住時先問櫃台中途進出怎麼算」已刪；一般方案住宿期間能不能進出，官網仍沒有寫。"
     }
   ],
   "summary": {
-    "verified": 67,
+    "verified": 68,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

@@ -52,6 +52,8 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
 
 下面的 `<id>` 是挑到的 articleId，`<資料夾>` 是 `content-production/<id>`，`<地點>` 是大綱裡這頁的 `placeId`。
 
+**住宿專門頁（早餐、溫泉、自駕這類，大綱裡有 `parentArticleId` 的住宿頁）**（Darren 2026-11-18）：不照下面第 2～4 步，改照寫作 Skill `references/stay-topic-page.md` 最後一節「自動化」的順序與預設做法，做完直接接第 5 步上傳；這種頁的格式 Darren 已經認可，不受「先有頁型範本」限制。模型照住宿頁的規定（作者 Sonnet 5.5，其餘 Opus 5.5）。
+
 ### 2. 寫作與潤稿
 
 子代理一律用 Agent 工具、**`run_in_background: false`**，等它完整回傳才做下一步。每一步都要親自確認檔案存在，不能只憑子代理的說法。

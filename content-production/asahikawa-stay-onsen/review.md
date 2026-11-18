@@ -1,7 +1,7 @@
 # 驗收紀錄：asahikawa-stay-onsen（2026-11-18，住宿專門頁）
 
 - 文章：`content-production/asahikawa-stay-onsen/reader-preview.md`（旭川溫泉飯店推薦，5間天然溫泉與7間大浴場飯店比較）
-- SHA-256（換行統一成 LF 後計算）：`fe6d7884db21df0b49e26607b5747fd1fbdc9ad717be0641bea87f1618a78091`
+- SHA-256（換行統一成 LF 後計算）：`b69dda4088c8ecb82b083514c807291245739cc529ed63e6323ac2e229e2a8fb`
 - 規則：寫作 Skill `references/stay-topic-page.md`（住宿專門頁十步流程，Darren 2026-11-17 核准格式）、`references/sentence-rhythm.md`（Darren 2026-11-18）；Darren 2026-11-18 說「先上線三頁」。流程紀錄在 `content-experiments/stay-local-test-2026-11-16/onsen2/`。
 - 研究：研究子代理（Opus 5.5）查官方來源；讀取工具讀不到的頁面由協調者用瀏覽器讀。
 - 作者：作者子代理（Sonnet 5.5）；編輯：編輯子代理（Opus 5.5，沒寫過這篇）。
