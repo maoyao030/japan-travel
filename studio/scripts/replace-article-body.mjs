@@ -143,6 +143,8 @@ await mkdir(path.dirname(recoveryFile), {recursive: true})
 await writeFile(recoveryFile, `${JSON.stringify(recovery, null, 2)}\n`)
 const editedAt = new Date().toISOString()
 const patch = client.patch(articleId).ifRevisionId(article._rev).set({body, ...fields})
+// 整篇重寫（--retitle 或 --rewrite）時，把文章的更新日期改成今天，頁面上的「更新」才不會停在舊日期。
+if (retitle || options.rewrite === true) patch.set({updatedAt: editedAt})
 if (manual) {
   // 對話裡的優化也算一次手動優化：記進後台紀錄，同時標成已同步（稿件本來就在 Git）。
   patch
