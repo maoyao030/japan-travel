@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay",
-  "articleSha256": "c7540baea2a9e2d2d8926702c25fe38fa60bbd56ad24bd7c76651b0e98a8a834",
-  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-18 用 python urllib 與 curl 重開官方頁，沒有使用瀏覽器；沿用的項目註明出自哪一頁專門頁的 fact-check.json；第 2 輪複查（2026-11-18）：逐句核對 git diff HEAD~1 改過與新增的句子",
+  "articleSha256": "b2a7e02e13d6d2b75adc53c0c9d5f75742f7fd955a309118a274b103211869ae",
+  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-18 用 python urllib 與 curl 重開官方頁，沒有使用瀏覽器；沿用的項目註明出自哪一頁專門頁的 fact-check.json；第 2 輪複查（2026-11-18）：逐句核對 git diff HEAD~1 改過與新增的句子；第 3 輪複查（2026-11-18）：逐句核對 restore/before.md 到現稿補回的賣點；第 4 輪複查（2026-11-18）：逐句核對 restore/before-round2.md 到現稿的改動；第 5 輪複查（2026-11-18）：讀者驗收後五處改動",
   "checkedAt": "2026-11-18",
   "claims": [
     {
@@ -94,24 +94,6 @@
       "sourceQuote": "【男性】18:00～20:50、23:00～翌朝7:50 【女性】15:00～17:50、21:00～22:50、翌朝8:00～9:50／大浴場(男女入れ替え制)",
       "verdict": "verified",
       "notes": "沿用 asahikawa-stay-onsen 的 C28（2026-11-18 查核）；今天重開客房頁也寫「大浴場(男女入替)」。"
-    },
-    {
-      "claimId": "C11",
-      "articleExcerpt": "HOTEL AMANEK旭川（ホテルアマネク旭川）的自助早餐有旭川拉麵，CABIN的旭川醬油拉麵很受歡迎（H3：早餐有在地菜或免費的旭川飯店）",
-      "sourceUrl": "https://amanekhotels.jp/asahikawa/meal/",
-      "sourceTitle": "ホテルアマネク旭川 朝食",
-      "sourceQuote": "旭川ラーメン（AMANEK 早餐頁）／旭川ならではの味わい深い醤油ラーメンも人気です。（CABIN https://cabin.kenhotels.com/asahikawa/dining/）",
-      "verdict": "verified",
-      "notes": "第 2 輪：拿掉約50種、補 CABIN。沿用 asahikawa-stay-breakfast 的 C1（AMANEK）與 C59、C67（CABIN，2026-11-18 查核）。H3「在地菜或免費」：在地菜見本筆與 C12，免費見 C13。"
-    },
-    {
-      "claimId": "C12",
-      "articleExcerpt": "Y's Hotel旭川站前有當場完成的生羊肉成吉思汗烤肉",
-      "sourceUrl": "https://yshotel-asahikawa.com/",
-      "sourceTitle": "ワイズホテル旭川駅前",
-      "sourceQuote": "目の前で仕上げる生ラムジンギスカン（日之出食品）",
-      "verdict": "verified",
-      "notes": "沿用 asahikawa-stay-breakfast 的 C28；今天重開首頁原文仍在。"
     },
     {
       "claimId": "C13",
@@ -229,15 +211,6 @@
       "sourceQuote": "天人峡天然温泉 旅人の湯／旭川駅北口より徒歩2分／料金 お一人様 1,800円 小学生 1,000円 幼児 無料 【当サイトからのご予約のお客様は無料】",
       "verdict": "verified",
       "notes": "第 2 輪：改成優點寫法，加上其他管道要付費。沿用 asahikawa-stay-onsen 的 C21、C22、C25 與 asahikawa-stay-breakfast 的 C64（2026-11-18 查核）。"
-    },
-    {
-      "claimId": "C27",
-      "articleExcerpt": "開車的人可以停飯店自己的塔式立體停車場，車位依車高分成三種，比較高的車也停得進去。（露櫻Grand旭川站前）",
-      "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/parking/",
-      "sourceTitle": "ホテルルートインGrand旭川駅前 駐車場",
-      "sourceQuote": "駐車場タイプ タワー型立体／（普通車）：1,550（ミドルルーフ車）：1,830（ハイルーフ車）：2,105",
-      "verdict": "verified",
-      "notes": "沿用 asahikawa-stay-parking 的 C6（2026-11-18 查核）。"
     },
     {
       "claimId": "C29",
@@ -385,12 +358,12 @@
     },
     {
       "claimId": "C45",
-      "articleExcerpt": "三個人住要訂附閣樓床的Super房，有一個人得睡閣樓床。／Super Hotel旭川三個人住的話，有一個人得睡閣樓床",
+      "articleExcerpt": "Super Hotel旭川三個人住的話，有一個人得睡閣樓床（三人以上一節）",
       "sourceUrl": "https://www.superhotel.co.jp/s_hotels/asahikawa/gallery.html?like=room",
       "sourceTitle": "スーパーホテル旭川 客室",
       "sourceQuote": "スタンダードルーム 収容人数 : 1～2名／エクストラルーム 1～2名／スーパールーム ベッドサイズ : 140cm ×200cm+ロフトベッド 収容人数 : 1～3名／レディースルーム 1名",
       "verdict": "verified",
-      "notes": "2026-11-18 重開。能住 3 人的只有スーパールーム（140 公分床加閣樓床），第三人睡閣樓床是依床數的合理推論。"
+      "notes": "2026-11-18 重開。能住 3 人的只有スーパールーム（140 公分床加閣樓床），第三人睡閣樓床是依床數的合理推論。 第 5 輪：注意事項的同義半句已刪，只剩三人以上一節這句。"
     },
     {
       "claimId": "C46",
@@ -403,12 +376,12 @@
     },
     {
       "claimId": "C47",
-      "articleExcerpt": "晚上9點半到11點有免費的宵夜拉麵，開車的人也方便，飯店有自己的停車場。",
+      "articleExcerpt": "開車的人也方便，飯店有自己的停車場。（Dormy Inn旭川）",
       "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/service/",
       "sourceTitle": "ドーミーイン旭川 サービス",
       "sourceQuote": "「夜鳴きそば」無料サービス／提供時間 21：30〜23：00（access：平地駐車場 114台（先着順））",
       "verdict": "verified",
-      "notes": "沿用 asahikawa-stay-breakfast 的 C9、asahikawa-stay-parking 的 C1。"
+      "notes": "第 4 輪：宵夜拉麵句移到 C111。沿用 asahikawa-stay-parking 的 C1。"
     },
     {
       "claimId": "C48",
@@ -430,21 +403,21 @@
     },
     {
       "claimId": "C50",
-      "articleExcerpt": "館內的三溫暖和低溫浴池只有住客能用，也不用另外付錢。（OMO7旭川）",
+      "articleExcerpt": "館內有只給住客用、不用另外付錢的三溫暖，蒸完還有能躺著泡的浴池可以休息。（OMO7旭川）",
       "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/sp/plateau/",
       "sourceTitle": "OMO7旭川 サウナ プラトー",
-      "sourceQuote": "寝風呂／全身シャワー／ウォーキングバス（32～33℃の低温バス）／バブルバス／サウナ（ドライサウナ）／ミストサウナ／料金 無料／ご宿泊のお客様のみご利用いただけます。",
+      "sourceQuote": "寝風呂 39～42度の…湯船で浮力を感じ横になって寛げます。／ウォーキングバス 32～33℃の低温バス／バブルバス／サウナ ドライサウナ／ミストサウナ 霧状に発散させた蒸気が満ちた低温サウナ／料金 無料／ご宿泊のお客様のみご利用いただけます。",
       "verdict": "verified",
-      "notes": "第 2 輪：「冷水池」已刪。三溫暖（ドライサウナ、ミストサウナ）、低溫浴池（32～33℃のウォーキングバス）、宿泊者限定、料金無料都有原文（2026-11-18 重開）。"
+      "notes": "第 4 輪：改寫成兩樣設施（三溫暖、寝風呂），只限住客、免費都有原文（2026-11-18 重開プラトー頁）。"
     },
     {
       "claimId": "C51",
-      "articleExcerpt": "2026到2027年這一季的冬天，飯店有免費接駁車開往旭川周邊的滑雪場，各滑雪場的運行期間不同，只限住客、要先預約。",
+      "articleExcerpt": "2026到2027年這一季的冬天，飯店有免費接駁車開往旭川周邊的滑雪場，要先預約。（OMO7旭川）",
       "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/sp/ski/",
       "sourceTitle": "OMO7旭川 旭川、スキー都市宣言",
       "sourceQuote": "今年もOMO7旭川⇔旭川市周辺スキー場間の無料送迎バスを運行いたします。／※宿泊者限定／運行期間 2026年12月19日～2027年4月5日／2026年12月19日～2027年3月31日／2027年1月4日～1月17日（毎日運行）／2027年1月23日～2月28日（土日のみ運行）／スキー場送迎バスを予約する（宿泊者限定）",
       "verdict": "verified",
-      "notes": "第 2 輪：補「各滑雪場的運行期間不同」，和官網各路線期間一致。季節性，下季要重查。"
+      "notes": "第 5 輪：補「要先預約」，和官網「スキー場送迎バスを予約する（宿泊者限定）」「予約開始」一致。季節性，下季要重查。"
     },
     {
       "claimId": "C52",
@@ -493,12 +466,12 @@
     },
     {
       "claimId": "C57",
-      "articleExcerpt": "住客專用的Spa有三溫暖和按摩池，早餐在景觀餐廳，邊吃邊看得到大雪山連峰。",
+      "articleExcerpt": "住客專用的Spa有兩種三溫暖、按摩池和可以躺著泡的浴池。（Art Hotel旭川）",
       "sourceUrl": "https://www.art-asahikawa.com/spa/",
       "sourceTitle": "アートホテル旭川 スパ",
       "sourceQuote": "ご宿泊者様専用のスパ…Spa Alpa は、2 タイプのサウナとジェットバス、寝風呂、水風呂など／（レストラン頁）大雪山連峰をパノラマで見渡すビュッフェレストラン「ミノリ」",
       "verdict": "verified",
-      "notes": "沿用 asahikawa-stay-onsen 的 C43、asahikawa-stay-breakfast 的 C45。"
+      "notes": "第 3 輪：補「兩種三溫暖」「可以躺著泡的浴池」，對應官網「2 タイプのサウナとジェットバス、寝風呂」。沿用 asahikawa-stay-onsen 的 C43。"
     },
     {
       "claimId": "C58",
@@ -619,7 +592,7 @@
     },
     {
       "claimId": "C71",
-      "articleExcerpt": "比較表｜東橫INN旭川站東口｜東口走路約3分｜（空）｜免費，飯糰為主｜立體與平面停車場共74個車位，立體限高2公尺｜免費早餐、車位多",
+      "articleExcerpt": "比較表｜東橫INN旭川站東口｜東口走路約3分｜—｜免費，飯糰為主｜立體與平面停車場共74個車位，立體限高2公尺｜免費早餐、車位多",
       "sourceUrl": "https://www.toyoko-inn.com/search/detail/00173/",
       "sourceTitle": "【公式】東横INN旭川駅東口",
       "sourceQuote": "JR旭川駅東口から徒歩3分／具おにぎりstyle朝食（無料）／立体駐車場（車）48台収容 許容サイズ：幅1.9m、奥行き5m、高さ2m／平置き駐車場（車）26台収容",
@@ -628,7 +601,7 @@
     },
     {
       "claimId": "C72",
-      "articleExcerpt": "比較表｜東橫INN旭川站前一條通｜北口走路約3到5分｜（空）｜免費自助｜部分車位限1.55公尺以下",
+      "articleExcerpt": "比較表｜東橫INN旭川站前一條通｜北口走路約3到5分｜—｜免費自助｜部分車位限1.55公尺以下｜免費早餐、站前",
       "sourceUrl": "https://www.toyoko-inn.com/search/detail/00069/",
       "sourceTitle": "【公式】東横INN旭川駅前一条通",
       "sourceQuote": "JR旭川駅北口から徒歩3分／ビュッフェstyle朝食（無料）／立体駐車場 24台収容 高さ1.55m",
@@ -778,10 +751,325 @@
       "sourceQuote": "正文 7 個站內連結都在協調者給的清單內（stay-parking、stay-onsen、stay-breakfast、asahiyama-zoo、transport、sounkyo/stay、asahidake/stay）",
       "verdict": "verified",
       "notes": "只核對網址在清單內，沒有站內頁的事實需要查；sourceUrl 只是格式需要，填款待券官方頁。"
+    },
+    {
+      "claimId": "C89",
+      "articleExcerpt": "開車節：露櫻Grand的塔式停車場依車高分成三種車位，比較高的車也停得進去，Dormy Inn則是可以直接停在平地上的平面停車場。",
+      "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/parking/",
+      "sourceTitle": "ホテルルートインGrand旭川駅前 駐車場／ドーミーイン旭川 アクセス",
+      "sourceQuote": "タワー型立体／（普通車）：1,550（ミドルルーフ車）：1,830（ハイルーフ車）：2,105（露櫻Grand）；平地駐車場 114台（Dormy Inn）",
+      "verdict": "verified",
+      "notes": "沿用 asahikawa-stay-parking 的 C6、C1（2026-11-18 查核）。"
+    },
+    {
+      "claimId": "C90",
+      "articleExcerpt": "想泡露天的天然溫泉，可以選Dormy Inn。（泡湯節）",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/spa/",
+      "sourceTitle": "ドーミーイン旭川 大浴場",
+      "sourceQuote": "野趣あふれる露天風呂は地下1200メートルから汲み上げた天然温泉",
+      "verdict": "verified",
+      "notes": "第 4 輪：CABIN 與露櫻Grand 的半句已刪。沿用 asahikawa-stay-onsen 的 C1。"
+    },
+    {
+      "claimId": "C91",
+      "articleExcerpt": "早餐吃得到旭川拉麵、海鮮丼或成吉思汗烤肉這類在地菜的，有HOTEL AMANEK旭川（ホテルアマネク旭川）、Dormy Inn旭川、CABIN和Y's Hotel旭川站前（ワイズホテル旭川駅前）四間。",
+      "sourceUrl": "https://amanekhotels.jp/asahikawa/meal/",
+      "sourceTitle": "ホテルアマネク旭川 朝食",
+      "sourceQuote": "旭川ラーメン／イクラ・マグロ・サーモンを…盛り付けて（AMANEK）／「海鮮丼」マグロ・サーモン・しらす（Dormy）／旭川ならではの味わい深い醤油ラーメンも人気です（CABIN）／目の前で仕上げる生ラムジンギスカン、醤油ラーメン（Y's）",
+      "verdict": "verified",
+      "notes": "第 4 輪：改成四間總述。四間各自的菜沿用 asahikawa-stay-breakfast 的 C1、C4、C11、C59、C28、C32（2026-11-18 查核）。句子沒說「只有」這四間，其他間不影響。 第 5 輪：刪掉指路半句，事實沒變。"
+    },
+    {
+      "claimId": "C92",
+      "articleExcerpt": "JR Inn旭川：晚上想逛街、買點吃的，走進購物中心就好",
+      "sourceUrl": "https://www.jr-inn.jp/asahikawa/qa/",
+      "sourceTitle": "Q&A | JRイン旭川",
+      "sourceQuote": "イオンモール旭川駅前と直結しており、1階食料品売り場は午前8時から午後10時までご利用いただけます。",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開 Q&A。"
+    },
+    {
+      "claimId": "C93",
+      "articleExcerpt": "JR Inn旭川：早餐是到相連的AEON MALL吃自助，不用走到外面。",
+      "sourceUrl": "https://www.jr-inn.jp/asahikawa/facilitys/",
+      "sourceTitle": "JRイン旭川 館内施設",
+      "sourceQuote": "グランファーム (ホテル直結イオンモール4階)／朝食は和洋ビュッフェ形式でのご用意。",
+      "verdict": "verified",
+      "notes": "推論成立：官網寫餐廳在「ホテル直結」的 AEON 4 樓，飯店本身也是從 AEON 館內的專用電梯上樓（access 頁），不用出到戶外。沿用 asahikawa-stay-breakfast 的 C39。"
+    },
+    {
+      "claimId": "C94",
+      "articleExcerpt": "JR Inn旭川：要去旭山動物園的話，從飯店出去就是往動物園的巴士站，吃完早餐直接去搭車就好。",
+      "sourceUrl": "https://www.jr-inn.jp/asahikawa/qa/",
+      "sourceTitle": "Q&A | JRイン旭川",
+      "sourceQuote": "ホテル出てすぐの「旭川駅のりば6番」（北口東側）より旭山動物園行きのバスが概ね30分間隔で運行しています。",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開；巴士經營者的乘車處圖也標 6 號「旭山動物園行」（C2 的 PDF）。沿用 asahikawa-stay-breakfast 的 C40。"
+    },
+    {
+      "claimId": "C96",
+      "articleExcerpt": "Y's Hotel旭川站前：往旭川機場和旭山動物園的巴士都在這裡搭，拖著行李也只要走幾步。",
+      "sourceUrl": "https://yshotel-asahikawa.com/faq",
+      "sourceTitle": "ワイズホテル旭川駅前 よくあるご質問",
+      "sourceQuote": "ホテル正面にバスタッチがあり、旭川空港（9番乗り場）・動物園（6番乗り場）など主要観光スポットへ行くバスが発着しております。",
+      "verdict": "verified",
+      "notes": "「走幾步」是從「ホテル正面」推的，成立。"
+    },
+    {
+      "claimId": "C98",
+      "articleExcerpt": "Y's Hotel旭川站前：三個人同行的話，雙床房也住得下。",
+      "sourceUrl": "https://yshotel-asahikawa.com/room",
+      "sourceTitle": "ワイズホテル旭川駅前 客室",
+      "sourceQuote": "ツインルーム 定員 最大3名",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開。"
+    },
+    {
+      "claimId": "C99",
+      "articleExcerpt": "Y's Hotel旭川站前：自助早餐有加了北海道產鮭魚卵的海鮮、醬油拉麵和湯咖哩，還有在客人面前當場完成的生羊肉成吉思汗烤肉。",
+      "sourceUrl": "https://yshotel-asahikawa.com/food",
+      "sourceTitle": "ワイズホテル旭川駅前 レストラン",
+      "sourceQuote": "道産鮭イクラが入った海鮮、醤油ラーメン、スープカレー、ザンギ（首頁：2026年4月1日より朝食がパワーアップ！／目の前で仕上げる生ラムジンギスカン／海鮮出汁茶漬け）",
+      "verdict": "verified",
+      "notes": "第 4 輪：茶泡飯半句已刪。沿用 asahikawa-stay-breakfast 的 C28、C32。"
+    },
+    {
+      "claimId": "C100",
+      "articleExcerpt": "露櫻Grand旭川站前：大浴場開到半夜，玩到很晚才回飯店也泡得到，泡完溫泉，男湯和女湯也都有三溫暖可以蒸。",
+      "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/facilities/",
+      "sourceTitle": "ホテルルートインGrand旭川駅前 館内設備",
+      "sourceQuote": "営業時間 15：00～2：00 / 5：00～10：00／当ホテルでは男女両方の大浴場にサウナを備えております。",
+      "verdict": "verified",
+      "notes": "沿用 asahikawa-stay-onsen 的 C21、C23。凌晨 2 點關，「開到半夜」成立。"
+    },
+    {
+      "claimId": "C101",
+      "articleExcerpt": "露櫻Grand旭川站前：自助早餐吃得到現烤麵包和奶油可頌。",
+      "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/restaurant/",
+      "sourceTitle": "ホテルルートインGrand旭川駅前 レストラン",
+      "sourceQuote": "当ホテルでは朝食メニューに焼き立てのクロワッサンと、デニッシュをご用意…バタークロワッサン／（首頁）公式サイトからのご宿泊予約なら、バイキング朝食を無料で",
+      "verdict": "verified",
+      "notes": "第 4 輪：拿掉「從官網訂房的免費」，只剩菜色。沿用 asahikawa-stay-breakfast 的 C60。"
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "CABIN：住客下午入住後就能去泡，浴場一直開到隔天早上，出門前還能再泡一次，浴場裡也有三溫暖。",
+      "sourceUrl": "https://cabin.kenhotels.com/asahikawa/spa/",
+      "sourceTitle": "プレミアホテル-CABIN-旭川 温泉",
+      "sourceQuote": "ご宿泊者は14時から翌朝10時まで夜通し入浴できます。／温泉大浴場内にサウナを設置。",
+      "verdict": "verified",
+      "notes": "第 5 輪：週日男女對調半句已刪。沿用 asahikawa-stay-onsen 的 C15、C17。"
+    },
+    {
+      "claimId": "C103",
+      "articleExcerpt": "CABIN：早餐的旭川醬油拉麵很受歡迎，早上不用出門找拉麵店就吃得到。",
+      "sourceUrl": "https://cabin.kenhotels.com/asahikawa/dining/",
+      "sourceTitle": "プレミアホテル-CABIN-旭川 レストラン",
+      "sourceQuote": "旭川ならではの味わい深い醤油ラーメンも人気です。",
+      "verdict": "verified",
+      "notes": "後半是從早餐有拉麵推出的說法，成立。沿用 asahikawa-stay-breakfast 的 C59。"
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "HOTEL AMANEK旭川：早餐也有大約50種菜色；自助早餐吃得到旭川拉麵、新子燒和現場做的豬肉丼，海鮮丼是從自助台上的鮭魚卵、鮪魚和鮭魚自己挑來盛。",
+      "sourceUrl": "https://amanekhotels.jp/asahikawa/meal/",
+      "sourceTitle": "ホテルアマネク旭川 朝食",
+      "sourceQuote": "旭川ラーメン／新子焼き／ご注文に合わせて目の前で焼き上げる豚丼／ビュッフェに並ぶイクラ・マグロ・サーモンを、お好みの組み合わせで盛り付けて仕上げる一杯（首頁：和洋約50種の品）",
+      "verdict": "verified",
+      "notes": "沿用 asahikawa-stay-breakfast 的 C1、C4。"
+    },
+    {
+      "claimId": "C105",
+      "articleExcerpt": "HOTEL AMANEK旭川：帶小孩的話，6歲以下和大人同床的小孩連早餐都不收費。",
+      "sourceUrl": "https://amanekhotels.jp/faq/",
+      "sourceTitle": "ホテルアマネク FAQ",
+      "sourceQuote": "6歳以下のお子様までは添い寝のご利用として朝食代含め、料金は頂戴しておりません。",
+      "verdict": "verified",
+      "notes": "沿用 asahikawa-stay-breakfast 的 C6（集團共通 FAQ）。"
+    },
+    {
+      "claimId": "C106",
+      "articleExcerpt": "HOTEL AMANEK旭川：開車的人車停隔壁的合作停車場，有住客專用的通道直接走到飯店。",
+      "sourceUrl": "https://amanekhotels.jp/asahikawa/information/",
+      "sourceTitle": "ホテルアマネク旭川 インフォメーション",
+      "sourceQuote": "駐車場は隣接する提携駐車場となります。（D-Parking旭川駅前）…駐車場3Fにホテル専用連絡通路があります。※ホテル3F",
+      "verdict": "verified",
+      "notes": "沿用 asahikawa-stay-parking 的 C29。"
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "Super Hotel旭川離JR旭川站走路大約5分鐘，館內有天然溫泉大雪山之湯",
+      "sourceUrl": "https://www.superhotel.co.jp/s_hotels/asahikawa/",
+      "sourceTitle": "スーパーホテル旭川 大雪山の湯",
+      "sourceQuote": "JR旭川駅から徒歩5分。／疲れをいやす天然温泉「大雪山の湯」",
+      "verdict": "verified",
+      "notes": "沿用 asahikawa-stay-onsen 的 C27。"
+    },
+    {
+      "claimId": "C109",
+      "articleExcerpt": "Super Hotel旭川：有當季有機蔬菜做的沙拉和現烤麵包，連住幾晚也不會天天吃一樣的。",
+      "sourceUrl": "https://www.superhotel.co.jp/s_hotels/asahikawa/",
+      "sourceTitle": "スーパーホテル旭川 大雪山の湯",
+      "sourceQuote": "旬の有機野菜を使ったサラダや種類豊富な焼きたてパン／栄養バランスの整った日替わり朝食ビュッフェ",
+      "verdict": "verified",
+      "notes": "推論：官網寫「日替わり」（每天換），「連住幾晚也不會天天吃一樣的」成立；官網沒說每道菜都換，沙拉和麵包可能每天都有，語意上沒有超出「每天換菜色」。沿用 asahikawa-stay-breakfast 的 C61、C65。"
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "Dormy Inn旭川：露天浴池的溫泉是從地下1,200公尺抽上來的，女湯還多一間有艾草香的蒸氣三溫暖。",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/spa/",
+      "sourceTitle": "ドーミーイン旭川 大浴場",
+      "sourceQuote": "野趣あふれる露天風呂は地下1200メートルから汲み上げた天然温泉／「よもぎの香りが漂うミストサウナ」女性大浴場にのみ設置",
+      "verdict": "verified",
+      "notes": "沿用 asahikawa-stay-onsen 的 C1、C3。"
+    },
+    {
+      "claimId": "C111",
+      "articleExcerpt": "Dormy Inn旭川：晚上有免費的宵夜拉麵，泡完湯正好下樓吃一碗。",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/service/",
+      "sourceTitle": "ドーミーイン旭川 サービス",
+      "sourceQuote": "「夜鳴きそば」無料サービス／提供時間 21：30〜23：00／提供場所 1F レストラン（大浴場：最上階10F）",
+      "verdict": "verified",
+      "notes": "第 4 輪：時間已刪。推論仍成立：浴場 10 樓、宵夜 1 樓餐廳 21:30～23:00，浴場開到隔天早上。沿用 asahikawa-stay-breakfast 的 C9、asahikawa-stay-onsen 的 C1、C2。"
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "Dormy Inn旭川：早餐的海鮮丼用鮪魚、鮭魚和魩仔魚，是旭川這間的在地菜。",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/breakfast/",
+      "sourceTitle": "ドーミーイン旭川 朝食",
+      "sourceQuote": "地域ごとの特色を出した「ご当地逸品料理」／「海鮮丼」マグロ・サーモン・しらすを盛った海鮮盛！",
+      "verdict": "verified",
+      "notes": "沿用 asahikawa-stay-breakfast 的 C11。"
+    },
+    {
+      "claimId": "C113",
+      "articleExcerpt": "Dormy Inn旭川：從旭川機場搭機場巴士過來大約40分鐘，站牌就在飯店正前方",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/",
+      "sourceTitle": "【公式】ドーミーイン旭川",
+      "sourceQuote": "旭川空港からバスで約40分、 バス停の眼の前という立地。",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開首頁。"
+    },
+    {
+      "claimId": "C114",
+      "articleExcerpt": "Dormy Inn旭川：全家同行的話，還有可住4人、日式和西式空間在同一間的和洋室。",
+      "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/asahikawa/rooms",
+      "sourceTitle": "客室 | 天然温泉 神威の湯 ドーミーイン旭川",
+      "sourceQuote": "和洋室 客室面積：31.0㎡ ご利用人数：4人（首頁：家族旅行に使えるツインと和洋室も各フロアに設置）",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開。"
+    },
+    {
+      "claimId": "C115",
+      "articleExcerpt": "OMO7旭川：就是從旭川機場出發的機場巴士終點站，從機場坐到底就好",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahikawa-airport/",
+      "sourceTitle": "旭川空港バス – 旭川電気軌道株式会社",
+      "sourceQuote": "旭川市内行き … 7条昭和通 6の9着（OMO7 交通頁：空港連絡バスで「6条9丁目」バス停まで約50分）",
+      "verdict": "verified",
+      "notes": "同 C49。"
+    },
+    {
+      "claimId": "C116",
+      "articleExcerpt": "OMO7旭川：自助早餐主打現烤鬆餅。",
+      "sourceUrl": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/dining/",
+      "sourceTitle": "OMO7旭川 食事",
+      "sourceQuote": "焼きたてワッフルや、海鮮に香り豊かな山わさびをトッピングした「山わさびごはん」など、種類豊富な和洋メニュー／提供スタイル ビュッフェ",
+      "verdict": "verified",
+      "notes": "第 4 輪：辣根海鮮飯已刪。沿用 asahikawa-stay-breakfast 的 C36（原文ワッフル）。"
+    },
+    {
+      "claimId": "C117",
+      "articleExcerpt": "Art Hotel旭川：三個大人同行也有專門的三人房。",
+      "sourceUrl": "https://www.art-asahikawa.com/stay/",
+      "sourceTitle": "アートホテル旭川 客室",
+      "sourceQuote": "コンフォートトリプルルーム 大人３名がゆったりと過ごすことができるトリプルルームです。",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開。"
+    },
+    {
+      "claimId": "C118",
+      "articleExcerpt": "Art Hotel旭川：早餐在有270度視野的景觀餐廳，邊吃邊看得到大雪山連峰。",
+      "sourceUrl": "https://www.art-asahikawa.com/restaurantandbar/",
+      "sourceTitle": "アートホテル旭川 レストラン",
+      "sourceQuote": "大雪山連峰をパノラマで見渡すビュッフェレストラン「ミノリ」／北海道の大地が育んだ恵みをふんだんに取り入れた料理の品々（首頁：270度のパノラマビュー旭川を一望できるレストラン）",
+      "verdict": "verified",
+      "notes": "第 4 輪：北海道食材半句已刪。沿用 asahikawa-stay-breakfast 的 C45、C46。"
+    },
+    {
+      "claimId": "C119",
+      "articleExcerpt": "Art Hotel旭川：從旭川機場搭機場巴士大約40分鐘，在飯店正前方的站牌下車就到。",
+      "sourceUrl": "https://www.art-asahikawa.com/access/",
+      "sourceTitle": "アートホテル旭川 アクセス",
+      "sourceQuote": "旭川空港からバスで40分/7条昭和通停留所下車（ホテル目の前）",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開。"
+    },
+    {
+      "claimId": "C120",
+      "articleExcerpt": "開車的人先看停車場，玩了一整天的人想泡湯，也有人很看重早餐，各自適合的飯店不一定是同幾間。",
+      "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/parking/",
+      "sourceTitle": "三個需求小節的名單",
+      "sourceQuote": "自有大停車場：露櫻Grand（176台）、Dormy Inn（114台）／天然溫泉：CABIN、露櫻Grand、Super、Dormy Inn／早餐在地菜：AMANEK、Dormy Inn、CABIN、Y's",
+      "verdict": "verified",
+      "notes": "第 5 輪：改句。推論重算不變：大停車場（露櫻Grand、Dormy）、天然溫泉（CABIN、露櫻Grand、Super、Dormy）、在地菜早餐（AMANEK、Dormy、CABIN、Y's）三份名單各不相同，成立。依據見 C6、C9、C91。"
+    },
+    {
+      "claimId": "C121",
+      "articleExcerpt": "露櫻Grand旭川站前：開車的人可以停飯店自己的立體停車場。",
+      "sourceUrl": "https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/parking/",
+      "sourceTitle": "ホテルルートインGrand旭川駅前 駐車場",
+      "sourceQuote": "駐車場タイプ タワー型立体／●有料800円（宿泊者）",
+      "verdict": "verified",
+      "notes": "沿用 asahikawa-stay-parking 的 C6。三種車位留在開車小節（C89）。"
+    },
+    {
+      "claimId": "C122",
+      "articleExcerpt": "東橫INN旭川站東口：晚上還有咖哩晚餐的服務",
+      "sourceUrl": "https://www.toyoko-inn.com/search/detail/00173/",
+      "sourceTitle": "【公式】東横INN旭川駅東口",
+      "sourceQuote": "夕食のカレーサービス(10月～再開)",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開官網，原文只在館內照片的說明（img alt 與 caption）。沒有年份、沒寫免不免費、哪幾天、幾點；正文也沒寫這些，沒有超出。說明沒有年份，無法確定是今年的公告，見回報。"
+    },
+    {
+      "claimId": "C123",
+      "articleExcerpt": "東橫INN旭川站東口：停車位也比一條通多一倍以上，開車的人比較好停。",
+      "sourceUrl": "https://www.toyoko-inn.com/search/detail/00173/",
+      "sourceTitle": "【公式】東横INN旭川駅東口",
+      "sourceQuote": "立体駐車場（車）48台収容 許容サイズ：…高さ2m／平置き駐車場（車）26台収容（一条通 00069：立体駐車場 24台収容 高さ1.55m／立体駐車場 9台収容 高さ2m）",
+      "verdict": "verified",
+      "notes": "推論成立：東口 74 台對一條通 33 台，東口另有不限高的平面車位，一條通 24 台限高 1.55 公尺。"
+    },
+    {
+      "claimId": "C124",
+      "articleExcerpt": "Super Hotel旭川：天然溫泉是含鹽、無色透明的鹼性溫泉，泡完身體不容易冷。",
+      "sourceUrl": "https://www.superhotel.co.jp/s_hotels/asahikawa/",
+      "sourceTitle": "スーパーホテル旭川 大雪山の湯",
+      "sourceQuote": "海水の成分に似た食塩を含み、塩辛いが無色透明の湯。塩分が皮膚について汗の蒸発を防ぐのでいつまでも暖かく、入浴後も湯冷めしないのが特徴です。泉質はアルカリ性ですので",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開。療效說法沒有寫進正文。"
+    },
+    {
+      "claimId": "C125",
+      "articleExcerpt": "Super Hotel旭川：大廳的迎賓吧台從下午到晚上，免費提供調酒、紅酒和無酒精飲料。",
+      "sourceUrl": "https://www.superhotel.co.jp/s_hotels/asahikawa/",
+      "sourceTitle": "スーパーホテル旭川 大雪山の湯",
+      "sourceQuote": "ラウンジウェルカムバーでは、カクテル・ワインなどのアルコール類からソフトドリンクまで、豊富な種類のお飲み物を無料でご提供しています。／ウェルカムバー 15:00～21:00（※提供時間は変更になる場合がございます。）",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開。15 點到 21 點寫成「下午到晚上」成立。"
+    },
+    {
+      "claimId": "C126",
+      "articleExcerpt": "比較表東橫INN兩間「溫泉或大浴場」格寫「—」",
+      "sourceUrl": "https://www.toyoko-inn.com/search/detail/00069/",
+      "sourceTitle": "【公式】東横INN旭川駅前一条通",
+      "sourceQuote": "（兩間官網設備欄）ユニットバス",
+      "verdict": "verified",
+      "notes": "2026-11-18 重開兩間官網，設備只列房內的ユニットバス，沒有大浴場或溫泉，也沒有寫「なし」。「—」照 stay-page.md 表示沒有這項，和官網一致；讀者會讀成「沒有大浴場」，以官網設備欄看是對的。"
     }
   ],
   "summary": {
-    "verified": 86,
+    "verified": 118,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

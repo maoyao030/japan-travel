@@ -1,187 +1,184 @@
-# 層雲峽住宿，溫泉街各旅館的位置、接駁巴士與訂房管道
+# 層雲峽住宿推薦，住溫泉街還是上川站？
 
-層雲峽的住宿集中在黑岳纜車（層雲峡・黒岳ロープウェイ）山下的層雲峽溫泉街，從兩百多間客房的大型溫泉飯店到只有9間房的純住宿民宿都有。溫泉街外的上川站周邊另有3間，山裡還有只在夏秋營業的愛山溪溫泉（愛山渓温泉）。
+層雲峽在大雪山的峽谷裡，住宿幾乎都集中在黑岳纜車（層雲峡・黒岳ロープウェイ）山下的溫泉街。冬天從旭川、札幌過去，訂房前最先卡住的常是旅館有沒有接駁車、晚上有沒有地方吃飯。這一頁比較溫泉街和上川站周邊兩區，推薦溫泉街的6間旅館，再整理接駁巴士與晚餐怎麼安排。
 
-冬天從旭川或札幌過去，朝陽亭、朝陽度假飯店跟層雲峽觀光飯店都有每天1班的旅館接駁巴士，不過要事先預約才搭得到。溫泉街冬天晚上能吃飯的店不多，所以訂房的時候最好連晚餐一起想好。
+## 層雲峽住宿要住溫泉街還是上川站？
 
-## 層雲峽住宿選溫泉街還是上川站？
+想泡溫泉、隔天一早搭黑岳纜車上山，就住溫泉街；只有搭火車很晚才到上川，或隔天一早要從上川站離開的行程，才考慮上川站周邊。從上川站到溫泉街搭路線巴士約35分鐘，開車約30分鐘。溫泉街裡離纜車最近的是HOTEL KUMOI（ホテル雲井）和民宿山之上（リゾートペンション山の上），走1分鐘就到。冬天不開的有溫泉街的Sounkyo Hostel（層雲峡ホステル），和只開5到10月的愛山溪溫泉。開車的話，朝陽亭、朝陽度假飯店（朝陽リゾートホテル）、大雪飯店（ホテル大雪）和層雲峽觀光飯店（層雲峡観光ホテル）都有免費停車場。
 
-想泡溫泉、搭黑岳纜車上山的話，就住溫泉街。如果還沒決定要不要排層雲峽的話，層雲峽值得去嗎那一頁有整理主要看點跟怎麼安排。
+還沒決定要不要過夜的，[〈層雲峽〉](/places/sounkyo/)比較了住一晚和當天來回；在旭岳溫泉和層雲峽之間猶豫的，[〈旭岳還是層雲峽〉](/places/asahidake/asahidake-or-sounkyo/)把兩邊放在一起比。冰瀑祭期間住溫泉街走路就到會場，日期和會場整理在[〈層雲峽冰瀑祭〉](/places/sounkyo/festival/)。
 
-上川站周邊有KAMIKAWA HOTEL、ANSHINDO跟民宿上川莊（上川荘），適合搭火車很晚才到上川，或隔天一早要從上川站離開的行程。上川站前的巴士站往溫泉街一天有10班車，末班是19:54，如果火車到上川的時候已經過了這班車，當晚就住上川站周邊比較方便。KAMIKAWA HOTEL離JR上川站走路3分鐘，上川莊大約8分鐘。
+## 層雲峽溫泉街能預約接駁車的大型溫泉飯店
 
-溫泉街裡也分高處跟低處。大雪飯店（ホテル大雪 ONSEN&CANYON RESORT）在溫泉街最高處，朝陽亭（層雲峡朝陽亭）也蓋在高台上。搭路線巴士到層雲峽站後，可以打電話請朝陽亭跟朝陽度假飯店（朝陽リゾートホテル）派免費接送車，不過人多的時候可能要等一下。HOTEL KUMOI（ホテル雲井）、湯元銀泉閣跟民宿山之上（リゾートペンション山の上）都在黑岳纜車旁邊，走路1到2分鐘就到纜車站，如果隔天一早想上山的話，住這一帶比較順。
+冬天不開車去層雲峽，搭旅館的接駁車最省事，這五間大型溫泉飯店都有一般住客能預約的接駁車，晚餐也都有自助餐。
 
-冰瀑祭期間住溫泉街最方便，想知道冰瀑祭的日期跟怎麼去，層雲峽冰瀑祭那一頁有整理。
+### 朝陽亭
 
-## 層雲峽住宿推薦，溫泉街的大型溫泉飯店
+朝陽亭蓋在溫泉街的高台上，頂樓的大浴場望出去就是大雪山，同一層還有露天，只是位置高，進出溫泉街都要走坡道。
 
-溫泉街的5家大型溫泉飯店客房都在160間以上，每一家都有接駁巴士或接駁車，行駛期間跟預約方式整理在下面的接駁巴士一節。
+**為什麼選這間**：冬天從札幌站和旭川市區都有飯店自己的付費接駁巴士開到門口，不開車的人不用自己轉路線巴士。住朝陽亭還能搭泡湯接駁車，到同集團的朝陽度假飯店泡另外兩種源泉，加上館內的單純溫泉，一晚泡得到三種泉質。和洋室住得下5人，大房可以住6人，一家人或朋友多人同行不用硬分兩間。
 
-蓋在溫泉街高台的朝陽亭有252間客房，從頂樓的大浴場望得到大雪山的山景。住朝陽亭的話，館內的泡湯接駁車還可以載到同集團的朝陽度假飯店泡湯。朝陽度假飯店有188間客房，每一間都看得到層雲峽的山景，館內有兩種源泉跟兩個大浴場。兩家共用從札幌、旭川出發的付費接駁巴士，10月到隔年3月每天各1班。
+**訂房前的注意事項**：有住客反應從巴士站拖著行李走上來很累，所以搭路線巴士去的話，到了層雲峽巴士站打電話請飯店派免費接送車來接比較輕鬆。
 
-層雲閣（層雲閣MOUNTAIN RESORT 1923）有161間客房跟露天浴池，2021年4月開了自助餐廳。住宿客都能搭自家的接駁車層雲閣號（層雲閣号），不過要在3天前打電話預約才行。
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/kamikawa-hotel-detail-1647074/choyo-tei/)｜[Agoda](https://www.agoda.com/zh-tw/choyo-tei-hotel/hotel/asahikawa-jp.html)｜[官網](https://www.choyotei.com/)
 
-在溫泉街最高處的大雪飯店有188間客房，3個大浴場和2個露天浴池。東館1樓的Taisetsu Bakery Café & Bar早上8點開到傍晚6點，不住宿也能進去。冬天的10月中旬到4月下旬有從旭川站出發的接駁巴士，不過是期間限定，記得要事先預約。
+### 朝陽度假飯店
 
-層雲峽觀光飯店（層雲峡観光ホテル）有242間客房，是溫泉街規模最大的旅館之一。大約200坪的峽谷大露天浴池「宇旅璃」是穿著湯衣下水的，所以全家人可以一起泡。11月到4月每天有1班從旭川出發的接駁車。
+朝陽度假飯店的館內就有白濁和赤茶兩種源泉，都是源泉放流，而且對面就是7-Eleven。它和朝陽亭同一集團、共用接駁巴士，想在館內泡兩種溫泉就選這間，想在頂樓大浴場看大雪山就選朝陽亭。
 
-## 層雲峽溫泉街的小旅館、民宿與背包客棧
+**為什麼選這間**：大浴場和露天浴池各有2處，白濁湯和赤茶湯可以輪流泡。館內也有包租湯屋，一間可以2到4個人一起泡，包一間50分鐘3,300日圓，另外還有岩盤浴。每一間房都看得到層雲峽的山景，和室、和洋室住得下5人，一家人或朋友同行也好排房間。
 
-小旅館都在黑岳纜車跟巴士總站附近，走路幾分鐘就到了，一早就能走去搭纜車上山。
+**訂房前的注意事項**：有些住客覺得旅行團多，尖峰時段的餐廳、大浴場和電梯都比較擠。房名有Modern的房間只有淋浴間，想要浴廁一體的整體衛浴就選和室。
 
-HOTEL KUMOI離巴士總站走路3分鐘、離黑岳纜車1分鐘。2018年4月翻新成現代風的旅館，房間全是榻榻米房。溫泉是100%源泉放流的硫磺泉，館內酒吧還有撞球跟水煙。
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/kamikawa-hotel-detail-705919/choyo-resort-hotel/)｜[Agoda](https://www.agoda.com/zh-tw/choyo-resort-hotel/hotel/asahikawa-jp.html)｜[官網](https://www.choyo-resort.com/)
 
-從層雲峽巴士站下車走大約5分鐘就到湯元銀泉閣，離黑岳纜車大約2分鐘。36間客房，館內是無障礙設計，泡的是100%天然溫泉。不過旅館的接送只接從旭川市近郊出發、15人以上的團體，自由行的旅客要自己過去。
+### 層雲閣
 
-民宿山之上在溫泉街中心，經過Canyon Mall（キャニオンモール）直通黑岳之湯（黒岳の湯），沿著土產街直走1分鐘就是黑岳纜車。房間共有14間和室。
+層雲閣（層雲閣MOUNTAIN RESORT 1923）的房價採All Inclusive，抵達時和晚餐時的酒類、飲料都喝到飽，大廳的Lounge從下午開到晚上，酒、飲料、輕食和冰淇淋也都含在房價裡。
 
-民宿Todate（民宿とだて）離纜車走路5分鐘，9間都是個人房，一個人也歡迎入住。只做純住宿，有Wi-Fi跟投幣洗衣機。住宿附隔壁黑岳之湯的入浴券，穿著拖鞋就能走過去泡。民宿後面就是Seicomart（セイコーマート），早上7點開門。
+**為什麼選這間**：5樓的峽谷露天泉水無色透明、刺激少，官網說皮膚敏感的人、長輩和小孩也適合泡。房型很多，不少房型有床，Family館的和洋室最多住得下7到8人，也有能帶寵物的雙床房。官網和訂房系統都有繁體中文，不懂日文也能自己看方案、自己訂房。
 
-民宿銀河（温泉ペンション銀河）門前就是Canyon Mall，主打100%源泉的溫泉跟用地方食材做的和食。和室15間、洋室3間，最多住45人。預約只收電話或傳真，而且不能刷信用卡，記得多帶一點現金。
+**訂房前的注意事項**：有住客提醒要訂翻新過的房型，沒翻新的房間和浴廁比較舊。想搭層雲閣號接駁的話，要在3天前打電話預約。
 
-Sounkyo Hostel（層雲峡ホステル）由舊青年旅館改裝成背包客棧，有10間房，從層雲峽巴士總站（層雲峡バスセンター）走路7分鐘。員工熟悉登山跟步道的最新狀況。不過要注意2026年的營業期間是6月18日到10月13日入住，冬天不開。
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/kamikawa-hotel-detail-705344/sounkaku-grand-hotel/)｜[Agoda](https://www.agoda.com/zh-tw/sounkaku-grand-hotel/hotel/asahikawa-jp.html)｜[官網](https://sounkaku.co.jp/tw)
 
-## 層雲峽溫泉街外與上川站的住宿
+### 大雪飯店
 
-上川站周邊的3間規模都不大。KAMIKAWA HOTEL是8間房的商務旅館，官網說它是上川站周邊唯一的商務旅館。不供早餐，不過隔壁就是Seicomart，買早餐很方便。ANSHINDO由舊安心堂藥局改裝，1樓是咖啡酒吧，2樓是4間房的微型旅館，有雙人房1間、雙床房2間跟家庭房1間。上川莊有15間和室，離JR上川站跟上川站前巴士站都是走路8分鐘。浴室跟廁所共用，附早晚兩餐。
+大雪飯店在溫泉街最高處，館內有3個大浴場和2個露天浴池可以輪流泡，冬天還有從旭川站出發的免費接駁巴士，不過身上有刺青或紋身的人不能泡湯。
 
-溫泉街外的清川有國道39號旁邊的旅莊望岳園（旅荘望岳園），25間客房，如果要爬Niseikaushuppe山（ニセイカウシュッペ山）的話很方便。同一區的層雲峽汽車露營場（層雲峡オートキャンプ場）2026年營業到10月31日，有小木屋、帳篷區跟汽車營位。
+**為什麼選這間**：浴池全部是源泉放流、不循環，因為源泉溫度高，只加水調整。7樓的展望大浴場附三溫暖，可以自己往石頭上澆水。館內三間餐廳不管吃自助還是創作料理，飲料都是自己拿、喝到飽，含酒精的有30種左右，愛喝酒的人很適合。房型有住得下6人的Canyon View和洋室、能帶寵物的房間，也有房間自帶露天浴池的和房「雪花」。
 
-愛山溪溫泉沒有公車到得了，要從JR上川站搭計程車或自己開車，大約25公里、車程大約30分鐘。營業期間是每年5月到10月。旅館在大雪山登山口、標高大約1,000公尺的地方。開車從國道39號的愛山溪休息站（愛山渓ドライブイン）旁邊轉進道道223號，再開大約20公里，沿路沒有便利商店跟加油站，記得先加滿油再上去。9月下旬以後可能下雪，開車過去要準備冬季輪胎。
+**訂房前的注意事項**：有住客反應房間舊、最便宜的和室三個人住就擠，也有人說房間保養得不錯。人多的話，訂房時就選大一點的房型。
 
-愛山溪溫泉的本館有8間客房，溫泉是100%源泉放流，住宿附早晚兩餐。別館是登山用的山屋，只能純住宿，寢具跟食材都要自己準備。而且館內用自家的水力發電，手機收不到訊號，要做好斷訊的準備。2026年起由上川町委託NPO法人Kamui（特定非営利活動法人かむい）經營，訂房或查資料的時候可能還會看到舊名愛山溪俱樂部（愛山渓倶楽部）。
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/kamikawa-hotel-detail-703508/hotel-taisetsu/)｜[Agoda](https://www.agoda.com/zh-tw/hotel-taisetsu/hotel/asahikawa-jp.html)｜[官網](https://www.hotel-taisetsu.com/)
 
-## 從旭川、札幌到層雲峽旅館的接駁巴士
+### 層雲峽觀光飯店
 
-冬天按固定時刻開的旅館接駁巴士，有朝陽亭跟朝陽度假飯店的札幌、旭川線，以及層雲峽觀光飯店的旭川線，都是每天1班。大雪飯店冬天也有從旭川站出發的接駁巴士，層雲閣有自家的層雲閣號。這兩家都要預約，發車時間在預約的時候向旅館確認就好。
+層雲峽觀光飯店的峽谷大露天「宇旅璃」就在石狩川旁邊，大約200坪，穿飯店的專用湯衣男女混浴，全家可以一起泡，小孩也有兒童湯衣。它是溫泉街規模最大的旅館之一，從巴士總站走約5分鐘，不過分成本館和別館兩棟，住哪一邊會影響走動。
 
-朝陽亭跟朝陽度假飯店的接駁巴士在2026年10月1日到2027年3月31日行駛，住宿客要預約才能搭。
+**為什麼選這間**：大浴場和露天「昴」都是源泉100%，不加水、不加溫、不循環，也不加氯。官方訂房有純住宿方案，也有附早餐和一泊二食，不想吃飯店晚餐的人可以自己選。帶小孩去的話，官方訂房還有能免費升級到別館的家庭方案。
 
-去程
+**訂房前的注意事項**：住過的人說本館和別館之間要走連通道、上下樓梯，餐廳和大浴場又都在別館，所以拖著行李的話住別館比較方便。另外別館全館禁菸，吸菸房只在本館，介意菸味的人一樣選別館。
 
-| 出發地 | 出發 | 到朝陽度假飯店 | 到朝陽亭 |
-|---|---|---|---|
-| 札幌站北口 | 13:00 | 16:30 | 16:40 |
-| 旭川1條通6丁目 | 14:30 | 16:00 | 16:10 |
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/kamikawa-hotel-detail-1678477/sounkyo-kankou-hotel/)｜[Agoda](https://www.agoda.com/zh-tw/sounkyo-kanko-hotel/hotel/asahikawa-jp.html)｜[官網](https://sounkyo-kankou.co.jp/)
 
-回程
+## 層雲峽溫泉街的小旅館與民宿
 
-| 朝陽亭出發 | 目的地 | 抵達 |
-|---|---|---|
-| 9:00 | 札幌站北口 | 12:30 |
-| 9:30 | 旭川1條通6丁目 | 11:30 |
+想住黑岳纜車旁、一早就上山的人，溫泉街的小旅館和民宿大多走幾分鐘就到纜車，其中推薦冬天也訂得到的HOTEL KUMOI。
 
-兩條線都是下午出發、隔天上午回，所以上午在旭川或札幌逛完再搭車進層雲峽，隔天中午前後就回到市區了。單程車資札幌2,500日圓、旭川1,000日圓，含稅，大人小孩同價，在旅館付。如果是在官網訂房的話，接駁車資可以折500日圓。
+### HOTEL KUMOI（雲井飯店）
 
-札幌是在JR札幌站北口的團體巴士乘車處集合，司機拿著「層雲峡札幌Express」的牌子，從發車前15分鐘開始等。旭川是在1條通6丁目昭和通旁邊的Smile Hotel旭川（スマイルホテル旭川）門口上車，由司機受理，車身寫著「朝陽亭・朝陽リゾートホテル行き」。
+HOTEL KUMOI走1分鐘就到黑岳纜車，到巴士總站也只要3分鐘，不過房間全是榻榻米的小房間，也沒有露天浴池。在Trip.com上，它叫雲居飯店。
 
-接駁巴士跟房間是分開訂的。訂好房間後到官網的接駁巴士申請表單，填上住宿的預約姓名、預約編號跟入住日，收到旅館回信才算訂好。網路申請到搭車3天前截止，如果住宿日2天前以內才要訂的話，要直接聯絡旅館的訂房中心。改訂或重訂房間的時候，記得接駁也要重新申請。住宿日一週前都沒人預約的日子會停駛，5天前預約人數在10人以下也會停駛，這種情況去層雲峽的交通費要旅客自己負擔。8人以上的團體不能搭。
+**為什麼選這間**：溫泉是100%源泉放流的單純硫磺泉，湯色每天不一樣，水質接近鹼性，摸起來很柔和。早餐有住客稱讚好吃、看得出用心。官網訂房有一泊二食、附早餐和純住宿三種方案，冬天的12月到3月也有日子訂得到，帶0到5歲的小孩不另外收費。
 
-層雲峽觀光飯店的接駁車在11月1日到4月30日每天1班，去程14:00從Smile Hotel旭川門口出發，回程10:00從飯店出發。要在搭車日3天前預約，客滿的時候可能訂不到，所以最好早點訂。
+**訂房前的注意事項**：官網的訂房日曆有些日子不開放預約，所以先看日曆再排行程；另外前一天才取消要付全額。
 
-層雲閣號是完全預約制，要在3天前打電話預約。預約少的日子可能停駛，而且路線不經過旭山動物園。大雪飯店的旭川站接駁巴士在10月中旬到4月下旬行駛，期間限定、要預約。湯元銀泉閣的接送只接15人以上的團體。
+看房價與訂房：[Trip.com](https://tw.trip.com/hotels/kamikawa-hotel-detail-7980205/hotel-kumoi/)｜[Agoda](https://www.agoda.com/zh-tw/sounkyo-onsen-kumoi_3/hotel/asahikawa-jp.html)｜[官網](https://www.hotelkumoi.com/)
 
-想查路線巴士每天的班次，層雲峽交通那一頁有整理。住朝陽亭或朝陽度假飯店的話，到層雲峽站後打個電話，旅館會派免費接送車過來。
+### 其他小旅館與民宿
 
-## 冬天住層雲峽要不要訂含晚餐？
+**湯元銀泉閣**：走約2分鐘到黑岳纜車，自家源泉100%放流，有露天浴池和家庭湯屋，晚餐是三種鍋任選的自助，早餐有鮭魚卵吃到飽。這一季從4月25日開始營業，現在官方訂房沒有開放預約，想住的話先看[官網](https://breezbay-group.com/ginsenkaku/)。
 
-冬天住層雲峽的話，最好訂含晚餐的方案。因為觀光協會列的溫泉街餐廳裡，11月到4月晚上還開的只有Beer Grill Canyon（ビアグリル・キャニオン）跟大雪山食堂，Tree Bird（ツリーバード）跟登山軒冬天休業。Canyon晚上17:30開到20:30，20:00最後點餐，而且每週二、三公休。大雪山食堂晚上開到20:30，不定休。碰上週二、週三的話，能選的就只剩大雪山食堂了。
+**民宿山之上**：經過Canyon Mall和黑岳之湯（黒岳の湯）相連，走1分鐘就到纜車，房間是和室，也有能帶寵物同住的房間。連結：[Trip.com](https://tw.trip.com/hotels/kamikawa-hotel-detail-3176579/resort-pension-yamanoue/)｜[Agoda](https://www.agoda.com/zh-tw/sounkyo-pension-yamanoue/hotel/asahikawa-jp.html)｜[官網](https://pen-yamanoue.com/)
 
-如果不含晚餐的話，從層雲峽觀光飯店走路大約5分鐘有24小時營業的7-Eleven。Seicomart營業到23:00，不過時間隨季節變動。住大雪飯店的話，東館地下1樓的居酒屋大雪茶屋晚上19:00開到24:00。
+**民宿Todate（民宿とだて）**：只做純住宿，和黑岳之湯相連、附入浴券，1到2人房是洋室、3到4人房是和室。預約用電話或日本的訂房網站Jalan，冰瀑祭期間（2027年2月）的房間12月底前會放上Jalan。連結：[官網](http://m-todate.com/)
 
-層雲峽觀光飯店有純住宿方案，也有晚餐自助餐廳Yukara（ユーカラ），18:00到20:30營業、20:00最後點餐。另一家餐廳Ajina（あじ菜）開到20:00。民宿Todate只做純住宿，KAMIKAWA HOTEL不供早餐，不過兩家旁邊都有Seicomart，買東西吃不是問題。上川莊附早晚兩餐，早餐6:00到8:00、晚餐18:00到20:00，如果趕不上晚餐時間的話可以聯絡民宿。
+**民宿銀河（温泉ペンション銀河）**：泡的是100%源泉放流的單純硫磺泉，吃的是一泊二食的和食，不過只收電話和傳真預約，也不能刷卡。連結：[官網](https://sounkyo-ginga.com/)
 
-## 層雲峽住宿的訂房管道
+**Sounkyo Hostel**：舊青年旅館改的平價住宿，有男女分開的多人房和和室的私人房間，淋浴和廁所共用。冬天休館，2027年的預約預定4月1日開放。連結：[官網](https://www.sounkyo-hostel.com/)
 
-5家大型溫泉飯店跟HOTEL KUMOI，官網、Trip.com跟Agoda都訂得到。湯元銀泉閣、民宿山之上跟Sounkyo Hostel用各自的官網訂房，Trip.com跟Agoda上也有上架。
+## 層雲峽溫泉街以外的上川站與郊外住宿
 
-民宿Todate用電話或Jalan預約，Trip.com跟Agoda都沒有上架。民宿銀河只收電話跟傳真，電話在15:00到22:00受理，平台上也沒有上架。如果不想打日文電話的話，民宿Todate可以改用Jalan訂，望岳園可以用Agoda或觀光協會頁面上連到的樂天Travel。上川莊只收電話預約，想在上川站前用網路訂房的話，可以改訂官網就能預約的KAMIKAWA HOTEL。
+溫泉街以外，上川站周邊有KAMIKAWA HOTEL和上川莊兩間，山裡和國道邊另有兩處。
 
-| 旅館 | 區域 | 位置 | 訂房管道 | 連結 |
-|---|---|---|---|---|
-| 朝陽亭 | 溫泉街 | 高台 | 官網、Trip.com、Agoda | [官網](https://www.choyotei.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E5%B3%A1%E6%9C%9D%E9%99%BD%E4%BA%AD%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 朝陽度假飯店 | 溫泉街 |  | 官網、Trip.com、Agoda | [官網](https://www.choyo-resort.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9C%9D%E9%99%BD%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 層雲閣 | 溫泉街 |  | 官網、Trip.com、Agoda | [官網](https://sounkaku.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E9%96%A3MOUNTAIN%20RESORT%201923%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 大雪飯店 | 溫泉街 | 溫泉街最高處 | 官網、Trip.com、Agoda | [官網](https://www.hotel-taisetsu.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E5%A4%A7%E9%9B%AA%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 層雲峽觀光飯店 | 溫泉街 |  | 官網、Trip.com、Agoda | [官網](https://sounkyo-kankou.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E5%B3%A1%E8%A6%B3%E5%85%89%E3%83%9B%E3%83%86%E3%83%AB%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| HOTEL KUMOI | 溫泉街 | 巴士總站走路3分鐘 | 官網、Trip.com、Agoda | [官網](https://www.hotelkumoi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E9%9B%B2%E4%BA%95%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 湯元銀泉閣 | 溫泉街 | 巴士站走路約5分鐘 | 官網、Trip.com、Agoda | [官網](https://breezbay-group.com/ginsenkaku/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B9%AF%E5%85%83%E9%8A%80%E6%B3%89%E9%96%A3%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 民宿山之上 | 溫泉街 | 黑岳纜車走路1分鐘 | 官網、Trip.com、Agoda | [官網](https://pen-yamanoue.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E5%B1%B1%E3%81%AE%E4%B8%8A%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 民宿Todate | 溫泉街 | 黑岳纜車走路5分鐘 | 電話、Jalan | [官網](http://m-todate.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B0%91%E5%AE%BF%E3%81%A8%E3%81%A0%E3%81%A6%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 民宿銀河 | 溫泉街 | Canyon Mall前 | 電話、傳真 | [官網](https://sounkyo-ginga.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B8%A9%E6%B3%89%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E9%8A%80%E6%B2%B3%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| Sounkyo Hostel | 溫泉街 | 巴士總站走路7分鐘 | 官網、Trip.com、Agoda | [官網](https://www.sounkyo-hostel.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E5%B3%A1%E3%83%9B%E3%82%B9%E3%83%86%E3%83%AB%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 旅莊望岳園 | 清川 | 國道39號旁 | 電話、Agoda、樂天Travel | [官網](https://sounkyo.net/stay/detail.html?content=29)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%85%E8%8D%98%E6%9C%9B%E5%B2%B3%E5%9C%92%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| KAMIKAWA HOTEL | 上川站 | JR上川站走路3分鐘 | 官網 | [官網](https://primenet2010.biz/kamikawa-hotel/)・[地圖](https://www.google.com/maps/search/?api=1&query=KAMIKAWA%20HOTEL%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| ANSHINDO | 上川站 |  | email、官方Instagram、Agoda | [官網](https://efc.hokkaido.jp/anshindo)・[地圖](https://www.google.com/maps/search/?api=1&query=ANSHINDO%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 上川莊 | 上川站 | JR上川站走路8分鐘 | 電話 | [官網](https://kamikawasou.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B0%91%E5%AE%BF%E4%B8%8A%E5%B7%9D%E8%8D%98%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
-| 愛山溪溫泉 | 愛山溪 | JR上川站開車約30分鐘 | 官方LINE、官網表單 | [官網](https://aizankei.npokamui.org/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%84%9B%E5%B1%B1%E6%B8%93%E6%B8%A9%E6%B3%89%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+**KAMIKAWA HOTEL**是JR上川站走3分鐘的小型商務旅館，不供早餐，不過每人每晚送一張隔壁Seicomart（セイコーマート）的500日圓券，訂房只能從官網訂。[官網](https://primenet2010.biz/kamikawa-hotel/)
 
-愛山溪溫泉的預約用LINE官方帳號或官網表單，由負責人回覆能不能住，表單上可以選要不要免費接送。想知道北海道住宿稅要付多少，旭川住宿那一頁有寫算法。
+**上川莊**是JR上川站走8分鐘的和室旅館，附早晚餐，浴室廁所共用，預約用電話。[官網](https://kamikawasou.com/)
 
-## 延伸資料
+**愛山溪溫泉（愛山溪俱樂部）**在大雪山的登山口，只開5到10月，沒有大眾運輸，要從上川站開車約30分鐘。本館是一泊二食，用LINE或官網表單預約。[官網](https://aizankei.npokamui.org/)
 
-- **層雲峽觀光協會的住宿一覽**，溫泉街與清川各旅館的介紹頁與官網連結。https://sounkyo.net/stay/
-- **層雲峽觀光協會的美食一覽**，溫泉街餐廳的營業時間與公休日。https://sounkyo.net/eat/
-- **朝陽亭的交通頁**，札幌、旭川接駁巴士的當季時刻與申請表單。https://www.choyotei.com/access/
-- **朝陽亭的常見問題**，接駁巴士在札幌、旭川的乘車處說明。https://www.choyotei.com/faq/
-- **層雲峽觀光飯店的常見問題**，冬季接駁車與餐廳時間。https://sounkyo-kankou.co.jp/faq
-- **層雲閣的交通頁**，層雲閣號的預約電話與注意事項。https://sounkaku.co.jp/access/
-- **大雪飯店的交通頁**，冬季旭川站接駁巴士的說明。http://www.hotel-taisetsu.com/access.php
-- **愛山溪溫泉的交通頁**，從國道39號進入的路線與冬季輪胎提醒。https://aizankei.npokamui.org/access/
+**旅莊望岳園**在清川的國道39號旁，方便登Niseikaushuppe山（ニセイカウシュッペ山）。[Agoda](https://www.agoda.com/zh-tw/ryosou-bogakuen-guest-house/hotel/asahikawa-jp.html)
+
+不想住山裡、打算住旭川當天來回的，從旭川搭路線巴士到層雲峽約1小時50分鐘，旭川市區的飯店整理在[〈旭川住宿〉](/places/asahikawa/stay/)。
+
+## 層雲峽住宿比較表
+
+溫泉街11間住宿的總整理。
+
+| 住宿 | 位置 | 溫泉 | 餐 | 接駁 | 停車 | 怎麼訂 | 連結 |
+|---|---|---|---|---|---|---|---|
+| 朝陽亭 | 溫泉街高台 | 大浴場2處、露天1處 | 晚餐自助，也有早餐 | 札幌、旭川出發，付費、要預約 | 免費，約120台 | 官網、Trip.com、Agoda | [官網](https://www.choyotei.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E5%B3%A1%E6%9C%9D%E9%99%BD%E4%BA%AD%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 朝陽度假飯店 | 溫泉街，對面是7-Eleven | 兩種源泉，大浴場2處、露天2處，包租湯屋 | 晚餐、早餐都是自助 | 和朝陽亭共用 | 免費，約100台 | 官網、Trip.com、Agoda | [官網](https://www.choyo-resort.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%9C%9D%E9%99%BD%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E3%83%9B%E3%83%86%E3%83%AB%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 層雲閣 |  | 5樓峽谷露天、1樓大浴場 | 晚餐、早餐都是自助，飲料含在房價 | 層雲閣號，3天前電話預約 |  | 官網、Trip.com、Agoda | [官網](https://sounkaku.co.jp/tw)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E9%96%A3MOUNTAIN%20RESORT%201923%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 大雪飯店 | 溫泉街最高處 | 大浴場3處、露天2處，有刺青不能泡 | 餐廳有自助和創作料理，飲料喝到飽 | 冬天從旭川站出發，免費、要預約 | 免費，100台 | 官網、Trip.com、Agoda | [官網](https://www.hotel-taisetsu.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E5%A4%A7%E9%9B%AA%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 層雲峽觀光飯店 | 巴士總站走約5分 | 穿湯衣的混浴大露天，大浴場源泉100% | 晚餐、早餐都是自助，也有純住宿方案 | 冬天從旭川出發，要預約 | 免費，80台 | 官網、Trip.com、Agoda | [官網](https://sounkyo-kankou.co.jp/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E5%B3%A1%E8%A6%B3%E5%85%89%E3%83%9B%E3%83%86%E3%83%AB%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| HOTEL KUMOI | 纜車走約1分、巴士總站走約3分 | 硫磺泉源泉放流，沒有露天 | 一泊二食、附早餐、純住宿可選 |  |  | 官網、Trip.com、Agoda | [官網](https://www.hotelkumoi.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%9B%E3%83%86%E3%83%AB%E9%9B%B2%E4%BA%95%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 湯元銀泉閣 | 纜車走約2分、巴士站走約5分 | 自家源泉放流，露天、家庭湯屋 | 晚餐火鍋自助、早餐自助 | 只接15人以上團體 | 滿了停隔壁的免費公共停車場 | 官網、電話，官網目前沒有開放預約 | [官網](https://breezbay-group.com/ginsenkaku/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B9%AF%E5%85%83%E9%8A%80%E6%B3%89%E9%96%A3%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 民宿山之上 | 溫泉街中心，纜車走約1分 | 直通黑岳之湯 |  |  |  | 官網、Trip.com、Agoda | [官網](https://pen-yamanoue.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E5%B1%B1%E3%81%AE%E4%B8%8A%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 民宿Todate | 纜車走約5分 | 附黑岳之湯入浴券 | 只有純住宿 |  |  | 電話、Jalan | [官網](http://m-todate.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B0%91%E5%AE%BF%E3%81%A8%E3%81%A0%E3%81%A6%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 民宿銀河 | Canyon Mall前 | 單純硫磺泉源泉放流 | 一泊二食，和食 |  | 免費 | 電話、傳真 | [官網](https://sounkyo-ginga.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B8%A9%E6%B3%89%E3%83%9A%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E9%8A%80%E6%B2%B3%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| Sounkyo Hostel | 巴士總站走約7分 | 共用淋浴 |  |  | 約10台，先到先停 | 官網表單，冬天休館 | [官網](https://www.sounkyo-hostel.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E5%B1%A4%E9%9B%B2%E5%B3%A1%E3%83%9B%E3%82%B9%E3%83%86%E3%83%AB%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+
+溫泉街以外的4處。
+
+| 住宿 | 位置 | 溫泉 | 餐 | 接駁 | 停車 | 怎麼訂 | 連結 |
+|---|---|---|---|---|---|---|---|
+| KAMIKAWA HOTEL | JR上川站走約3分 |  | 不供早餐，送隔壁Seicomart的500日圓券 |  | 免費，8台 | 只能官網訂 | [官網](https://primenet2010.biz/kamikawa-hotel/)・[地圖](https://www.google.com/maps/search/?api=1&query=KAMIKAWA%20HOTEL%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 上川莊 | JR上川站走約8分 |  | 附早晚餐 |  | 有 | 電話 | [官網](https://kamikawasou.com/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%B0%91%E5%AE%BF%E4%B8%8A%E5%B7%9D%E8%8D%98%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 愛山溪溫泉 | JR上川站開車約30分，只開5月到10月 | 源泉100%放流 | 本館一泊二食 | 預約時可選免費接送 |  | LINE、官網表單 | [官網](https://aizankei.npokamui.org/)・[地圖](https://www.google.com/maps/search/?api=1&query=%E6%84%9B%E5%B1%B1%E6%B8%93%E6%B8%A9%E6%B3%89%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+| 旅莊望岳園 | 清川，國道39號旁 |  |  |  |  | Agoda | [地圖](https://www.google.com/maps/search/?api=1&query=%E6%97%85%E8%8D%98%E6%9C%9B%E5%B2%B3%E5%9C%92%20%E4%B8%8A%E5%B7%9D%E7%94%BA) |
+
+## 層雲峽哪幾間飯店有接駁巴士？
+
+冬天從旭川出發的話，朝陽亭和朝陽度假飯店（兩間共用一條）、大雪飯店和層雲峽觀光飯店都有飯店自己的接駁巴士，去回各1班，朝陽兩間另有一條從札幌出發；層雲閣也有自家的層雲閣號，五間都要先預約。
+
+| 飯店 | 出發地 | 行駛期間 | 去程 | 回程 | 單程車資 |
+|---|---|---|---|---|---|
+| 朝陽亭、朝陽度假飯店 | 札幌站北口 | 2026年10月1日～2027年3月31日 | 13:00出發，16:30到朝陽度假飯店、16:40到朝陽亭 | 9:00從朝陽亭出發（朝陽度假飯店9:10），12:30到札幌 | 2,500日圓 |
+| 朝陽亭、朝陽度假飯店 | 旭川市區1條通6丁目 | 同上 | 14:30出發，16:00到朝陽度假飯店、16:10到朝陽亭 | 9:30從朝陽亭出發（朝陽度假飯店9:40），11:30到旭川 | 1,000日圓 |
+| 大雪飯店 | JR旭川站前的巴士總站 | 2026年10月17日入住～2027年5月1日退房 | 14:10出發，約16:00到 | 10:00出發，約12:00到旭川站 | 免費 |
+| 層雲峽觀光飯店 | 旭川市區1條6丁目 | 11月～4月每天 | 14:00出發，15:30到 | 10:00出發，11:30到旭川 |  |
+
+朝陽兩間的接駁，從官網訂房的人車資折500日圓，不過8人以上的團體不能搭。住宿日一週前還沒人預約，或5天前預約人數在10人以下就會停駛，停駛時要自己搭路線巴士、車資自付。大雪飯店的接駁最晚3天前預約，層雲峽觀光飯店也要在住宿日3天前打電話預約，不過車子是8人座，客滿就可能訂不到。層雲閣號同樣是3天前打電話預約，預約的人少可能停駛，上車地點和時間要在預約時問清楚。
+
+搭路線巴士到層雲峽巴士站的話，到站後打電話，朝陽亭和朝陽度假飯店會派免費接送車來接，人多時要等一下；大雪飯店接到電話也會到巴士站接。路線巴士的班次和冬天開車的路況，整理在[〈層雲峽交通〉](/places/sounkyo/transport/)。
+
+## 住層雲峽要訂含晚餐的方案嗎？
+
+冬天住溫泉街最好訂含晚餐的方案，因為觀光協會列的餐廳裡，冬天晚上還開的只有Beer Grill Canyon（ビアグリル・キャニオン）和大雪山食堂，兩間都只開到晚上8點半。Beer Grill Canyon週二、三公休，大雪山食堂不定休，碰到週二、週三就可能只剩大雪山食堂。含晚餐的話，朝陽亭、朝陽度假飯店、層雲閣和層雲峽觀光飯店的自助晚餐都是晚上6點開始。
+
+想訂純住宿的話，層雲峽觀光飯店和HOTEL KUMOI都有純住宿方案，層雲閣的純住宿方案也照樣含大廳Lounge的飲料和輕食，民宿Todate則只做純住宿。晚餐自己解決的話，從層雲峽觀光飯店走約5分鐘，有24小時營業的7-Eleven和開到晚上11點的Seicomart（時間隨季節變動）；住大雪飯店的人，館內還有居酒屋大雪茶屋，晚上7點開到半夜12點。
+
+## 層雲峽的住宿稅與入湯稅
+
+住層雲峽每人每晚要付北海道住宿稅100到500日圓，上川町沒有另外收町的住宿稅。北海道住宿稅從2026年4月1日住宿起開始收，金額看每人每晚的房價，在入住或退房時另外付。
+
+| 每人每晚房價 | 北海道住宿稅 |
+|---|---|
+| 未滿2萬日圓 | 100日圓 |
+| 2萬以上、未滿5萬日圓 | 200日圓 |
+| 5萬日圓以上 | 500日圓 |
+
+住大雪飯店另外要付入湯稅，大人每晚250日圓。
 
 ## 資料來源
 
-旅館資訊查核日期：2026年10月26日～27日。
+- [朝陽亭官網](https://www.choyotei.com/)
+- [朝陽度假飯店官網](https://www.choyo-resort.com/)
+- [層雲閣官網](https://sounkaku.co.jp/tw)
+- [大雪飯店官網](https://www.hotel-taisetsu.com/)
+- [層雲峽觀光飯店官網](https://sounkyo-kankou.co.jp/)
+- [HOTEL KUMOI官網](https://www.hotelkumoi.com/)
+- [湯元銀泉閣官網](https://breezbay-group.com/ginsenkaku/)
+- [民宿山之上官網](https://pen-yamanoue.com/)
+- [民宿Todate官網](http://m-todate.com/)
+- [民宿銀河官網](https://sounkyo-ginga.com/)
+- [Sounkyo Hostel官網](https://www.sounkyo-hostel.com/)
+- [KAMIKAWA HOTEL官網](https://primenet2010.biz/kamikawa-hotel/)
+- [上川莊官網](https://kamikawasou.com/)
+- [愛山溪溫泉官網](https://aizankei.npokamui.org/)
+- [層雲峽觀光協會 住宿清單](https://sounkyo.net/stay/)
+- [北海道住宿稅（北海道廳）](https://www.pref.hokkaido.lg.jp/kz/kkd/shukuhakuzei.html)
 
-- [宿泊｜層雲峡観光協会](https://sounkyo.net/stay/)
-- [層雲閣MOUNTAIN RESORT 1923｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=3)
-- [ホテル大雪 ONSEN&CANYON RESORT｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=4)
-- [層雲峡観光ホテル｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=5)
-- [層雲峡朝陽亭｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=17)
-- [層雲峡温泉 朝陽リゾートホテル｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=18)
-- [湯元銀泉閣｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=20)
-- [民宿とだて｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=21)
-- [HOTEL KUMOI｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=22)
-- [層雲峡ホステル｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=23)
-- [愛山渓倶楽部｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=27)
-- [旅荘望岳園｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=29)
-- [層雲峡オートキャンプ場｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=51)
-- [温泉ペンション銀河｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=68)
-- [リゾートペンション山の上｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=69)
-- [KAMIKAWA HOTEL｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=102)
-- [ANSHINDO｜層雲峡観光協会](https://sounkyo.net/stay/detail.html?content=106)
-- [飲食｜層雲峡観光協会](https://sounkyo.net/eat/)
-- [ツリーバード｜層雲峡観光協会](https://sounkyo.net/eat/detail.html?content=33)
-- [大雪山食堂｜層雲峡観光協会](https://sounkyo.net/eat/detail.html?content=34)
-- [登山軒｜層雲峡観光協会](https://sounkyo.net/eat/detail.html?content=75)
-- [層雲峡・上川線 時刻表｜道北バス](https://www.dohokubus.com/files/kamikawa_souun.pdf)
-- [交通アクセス｜層雲峡朝陽亭](https://www.choyotei.com/access/)
-- [よくあるご質問｜層雲峡朝陽亭](https://www.choyotei.com/faq/)
-- [送迎バス予約お申し込みフォーム｜野口観光グループ](https://www.noguchi-g.com/contact-bus/?bus_fac_id=5)
-- [アクセス｜層雲閣](https://sounkaku.co.jp/access/)
-- [層雲閣MOUNTAIN RESORT 1923](https://sounkaku.co.jp/)
-- [アクセス｜ホテル大雪](http://www.hotel-taisetsu.com/access.php)
-- [館内施設｜ホテル大雪](https://www.hotel-taisetsu.com/facility.php)
-- [Taisetsu Bakery Cafe&Bar](https://taisetsubakery.com/)
-- [よくあるご質問｜層雲峡観光ホテル](https://sounkyo-kankou.co.jp/faq)
-- [層雲峡観光ホテル 宿泊プラン](https://www6.489pro.com/asp/489/menu.asp?id=01000035&ty=lim,ser&list=YES&lan=JPN)
-- [ホテル雲井](https://www.hotelkumoi.com/)
-- [アクセス｜湯元銀泉閣](https://breezbay-group.com/ginsenkaku/access/index.html)
-- [民宿とだて](http://m-todate.com/)
-- [民宿とだて Q&A](http://m-todate.com/q-a.html)
-- [民宿とだて ご予約](http://m-todate.com/yoyaku.html)
-- [予約｜層雲峡ホステル](https://www.sounkyo-hostel.com/booking2023)
-- [アクセス｜層雲峡ホステル](https://www.sounkyo-hostel.com/access)
-- [リゾートペンション山の上](https://pen-yamanoue.com/)
-- [店舗情報｜温泉ペンション銀河](https://sounkyo-ginga.com/shop.php)
-- [KAMIKAWA HOTEL](https://primenet2010.biz/kamikawa-hotel/)
-- [アクセス｜民宿上川荘](https://kamikawasou.com/access.html)
-- [よくある質問｜民宿上川荘](https://kamikawasou.com/faq.html)
-- [ビアグリル・キャニオン](http://bg-canyon.com/)
-- [アクセス｜愛山渓温泉](https://aizankei.npokamui.org/access/)
-- [愛山渓温泉について](https://aizankei.npokamui.org/about/)
-- [エコロッジ｜愛山渓温泉](https://aizankei.npokamui.org/lodge/)
-- [ご予約｜愛山渓温泉](https://aizankei.npokamui.org/reserve/)
-- [Trip.com 上川町のホテル](https://tw.trip.com/hotels/list?city=50374)
-- [Agoda](https://www.agoda.com/)
+資料更新：2026年11月

@@ -1,13 +1,13 @@
 # 驗收紀錄：asahikawa-stay（2026-11-18，舊住宿頁重跑一輪）
 
 - 文章：`content-production/asahikawa-stay/reader-preview.md`（旭川住宿推薦，住站前還是市中心？）
-- SHA-256（換行統一成 LF 後計算）：`c7540baea2a9e2d2d8926702c25fe38fa60bbd56ad24bd7c76651b0e98a8a834`
+- SHA-256（換行統一成 LF 後計算）：`b2a7e02e13d6d2b75adc53c0c9d5f75742f7fd955a309118a274b103211869ae`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`（Darren 2026-11-18：排定工作打開前，舊的住宿文章先重跑一輪）、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」與「廢話要在流程裡擋掉」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 底稿：2026-11-16 照新寫法改的主頁稿（作者 Sonnet 5.5、查核與編輯 Opus 5.5）。
 - 住客評論：事實查核者角色的子代理（Opus 5.5）2026-11-18 用瀏覽器重看（Trip.com、4travel、Google 地圖，沒登入）。
 - 編輯：編輯子代理（Opus 5.5）對齊今天查核過的三頁專門頁，對事實改 24 處；再由五位編輯子代理（Opus 5.5）各自只管幾段刪廢話（正文約 5,970 → 3,400 字）；最後一位只看接縫。
 - 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作與編輯），共 2 輪。
-- 讀者驗收者：讀者驗收子代理（Opus 5.5，沒寫過、沒查核過），七題驗收 2 次（`acceptance.md` 第 4、5 題不過；`acceptance2.md` 七題都過）。
+- 讀者驗收者：讀者驗收子代理（Opus 5.5，沒寫過、沒查核過），七題驗收 4 次（`acceptance.md` 第 4、5 題不過；`acceptance2.md` 七題都過；補回賣點後 `acceptance3.md` 第 5 題不過；`acceptance4.md` 七題都過）。補回賣點後另有份量檢查（`portion-check.md`，退回一輪小修）與事實查核第 3～5 輪（118 筆 verified）。
 - 協調：人工 session（Claude Code），照岔路的預設，沒有問 Darren。
 
 ## 結果
