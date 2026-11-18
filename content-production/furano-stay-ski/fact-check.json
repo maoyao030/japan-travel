@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "furano-stay-ski",
-  "articleSha256": "8300f57bc3276e81805a1a7262818f033d6cf312b101cc0e010b7d68ff7747f0",
-  "checker": "事實查核 agent（Claude Opus 5.5 子代理，唯讀；沒有參與研究、寫作與編輯；2026-11-18 用 python urllib、curl 重開官方頁，PDF 下載到暫存資料夾讀，Trip.com 與 Agoda 用內建瀏覽器開）；第 2 輪複查（2026-11-18）：逐句比對新舊正文，改過與新增的句子重開官方來源（前一輪下載的頁面文字與 PDF），沒有再用瀏覽器；第 3 輪複查（2026-11-18）：git diff 確認只改四處，逐處對官方原文；第 4 輪（2026-11-18）：Fenix 館內餐廳 2026-09-30 結束營業（餐廳官方 Instagram @fenix_restaurant_and_bar 2026-10-01 公告），正文已刪餐廳與冬季早餐；第 5 輪（2026-11-18）：刪減縮寫後逐句對改前稿與已核過的官方原文，沒有用瀏覽器",
+  "articleSha256": "af2eead15fee572c6e1ab1083856c4a6b1341b136d2d09497d87ae3268405158",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，唯讀；沒有參與研究、寫作與編輯；2026-11-18 用 python urllib、curl 重開官方頁，PDF 下載到暫存資料夾讀，Trip.com 與 Agoda 用內建瀏覽器開）；第 2 輪複查（2026-11-18）：逐句比對新舊正文，改過與新增的句子重開官方來源（前一輪下載的頁面文字與 PDF），沒有再用瀏覽器；第 3 輪複查（2026-11-18）：git diff 確認只改四處，逐處對官方原文；第 4 輪（2026-11-18）：Fenix 館內餐廳 2026-09-30 結束營業（餐廳官方 Instagram @fenix_restaurant_and_bar 2026-10-01 公告），正文已刪餐廳與冬季早餐；第 5 輪（2026-11-18）：刪減縮寫後逐句對改前稿與已核過的官方原文，沒有用瀏覽器；第 6 輪（2026-11-18）：逐句核對改過與新增的句子，沒有用瀏覽器",
   "checkedAt": "2026-11-18",
   "claims": [
     {
@@ -97,12 +97,12 @@
     },
     {
       "claimId": "C12",
-      "articleExcerpt": "從官網訂房才能用住客價加購一日券。",
+      "articleExcerpt": "從官網訂房，才能用官網限定的住客特別價格加購一日券。",
       "sourceUrl": "https://www.princehotels.co.jp/shinfurano/informations/202609.ski_option/",
       "sourceTitle": "2026_09_リフト券オプション | 新富良野プリンスホテル",
       "sourceQuote": "※2026-2027シーズンは、リフト1日券付きスキーパック(宿泊プラン)の販売はございません。／【宿泊者限定】事前予約 スキーリフト1日券「オプション特別料金」／公式HP「ご宿泊事前予約限定」でスキーリフト券を｢特別料金｣で購入可能／※現地では事前予約「オプション特別料金」価格ではご購入いただけません",
-      "verdict": "incorrect",
-      "notes": "第 5 輪跑掉：前一版是「用住客的特別價格加購一日券，這個價格只限官網事先預約」，縮成「從官網訂房才能用住客價加購」後，意思變成其他網站訂的住客沒有住客價。官方寫其他網站訂的住客「通常ご宿泊者割引の料金でのご案内」，也就是仍有一般住客折扣價；官網限定的是「オプション特別料金」。另外「2026-27不賣含雪票的套裝」已刪，可以不補。建議改成「從官網訂房，才能用官網限定的住客特別價格加購一日券。」"
+      "verdict": "verified",
+      "notes": "第 6 輪：改正。對官方「【宿泊者限定】事前予約…オプション特別料金」「公式HP『ご宿泊事前予約限定』」「他社WEBサイト経由のご予約は適用外となり、通常ご宿泊者割引の料金」；其他網站訂的住客仍有一般住客折扣，正文沒有否定這點。"
     },
     {
       "claimId": "C13",
@@ -312,15 +312,6 @@
       "notes": "第 4 輪：「館內有餐廳，冬天附早餐」已刪（餐廳 2026-09-30 結束營業，官網房型頁最後修改 2026-06-05，早餐原本由該餐廳供應）；本筆只剩雪具租借店與置物櫃。"
     },
     {
-      "claimId": "C37",
-      "articleExcerpt": "有接送服務，從哪裡接、要不要預約，訂好房間後寫信問飯店。",
-      "sourceUrl": "https://fenixfurano.com/en/fenixfuranorental/",
-      "sourceTitle": "Best Holiday Rental for Ski Lovers in Hokkaido",
-      "sourceQuote": "Pick-up Service",
-      "verdict": "verified",
-      "notes": "第 5 輪：句子縮寫，事實與條件不變。"
-    },
-    {
       "claimId": "C38",
       "articleExcerpt": "12月2日到3月31日的冬季，櫃台每天早上7點開到晚上10點。",
       "sourceUrl": "https://fenixfurano.com/en/fenixfuranorental/",
@@ -340,12 +331,12 @@
     },
     {
       "claimId": "C40",
-      "articleExcerpt": "富良野王子飯店（富良野プリンスホテル）現在訂不到，Trip.com和Agoda都沒有。",
-      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
-      "sourceTitle": "リフト料金・ご購入 | 富良野スキー場 | プリンススノーリゾート",
-      "sourceQuote": "（滑雪場官網的宿泊予約選單）ホテル･旅館名 選択してください 富良野プリンスホテル／電話 富良野プリンスホテル 0167-23-4111",
-      "verdict": "unsupported",
-      "notes": "第 5 輪跑掉：前一版只說「在Trip.com和Agoda都訂不到」（已核過：Trip.com 只有地標條目、Agoda 網址 404）。新句「現在訂不到」是全面的說法，但滑雪場官網的訂房選單與電話清單仍列富良野王子飯店與電話 0167-23-4111，查不到「哪裡都訂不到」的依據。建議改回只講平台：「富良野王子飯店（富良野プリンスホテル）在Trip.com和Agoda都訂不到，王子飯店官網也沒有它的頁面…」。"
+      "articleExcerpt": "富良野王子飯店（富良野プリンスホテル）在Trip.com和Agoda都訂不到",
+      "sourceUrl": "https://tw.trip.com/hotels/",
+      "sourceTitle": "Trip.com 站內搜尋（瀏覽器）",
+      "sourceQuote": "Trip.com 搜尋「富良野王子」：建議清單只有「新富良野王子大飯店」是飯店，「富良野王子酒店」「富良野王子大飯店」是地標（searchType=LM）；Agoda /zh-tw/furano-prince-hotel/hotel/furano-jp.html 顯示 404",
+      "verdict": "verified",
+      "notes": "第 6 輪：改回只講兩個平台。Trip.com 只有地標條目（searchType=LM），Agoda 網址 404（2026-11-18 瀏覽器）。"
     },
     {
       "claimId": "C41",
@@ -358,21 +349,21 @@
     },
     {
       "claimId": "C45",
-      "articleExcerpt": "La Vista富良野Hills（天然温泉 紫雲の湯 ラビスタ富良野ヒルズ）離富良野站走路約3分，去雪場從站前搭巴士或計程車。",
+      "articleExcerpt": "La Vista富良野Hills（天然温泉 紫雲の湯 ラビスタ富良野ヒルズ）有只給住客泡的自家源泉天然溫泉紫雲之湯，離富良野站走路約3分。",
       "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/furano/access/",
       "sourceTitle": "アクセス｜【公式】天然温泉 紫雲の湯 ラビスタ富良野ヒルズ",
-      "sourceQuote": "「富良野駅」から徒歩約3分",
+      "sourceQuote": "自家源泉の男女別大浴場「紫雲の湯」／「富良野駅」から徒歩約3分／（FAQ）その他施設は、宿泊者限定のご案内",
       "verdict": "verified",
-      "notes": "第 5 輪：Trip.com 名稱與停車免費已刪。"
+      "notes": "第 6 輪：重寫。對官方「自家源泉の男女別大浴場『紫雲の湯』」「『富良野駅』から徒歩約3分」與集團 FAQ「その他施設は、宿泊者限定のご案内」。"
     },
     {
       "claimId": "C46",
-      "articleExcerpt": "滑完回來可以泡飯店自家源泉的天然溫泉紫雲之湯，只給住客泡，也有露天浴池。",
+      "articleExcerpt": "紫雲之湯男女分開，有露天浴池，滑完回來就能泡。",
       "sourceUrl": "https://dormy-hotels.com/dormyinn/hotels/furano/spa/",
       "sourceTitle": "大浴場｜【公式】天然温泉 紫雲の湯 ラビスタ富良野ヒルズ",
-      "sourceQuote": "自家源泉の男女別大浴場「紫雲の湯」では、内湯、露天風呂など／営業時間15：00～翌10：00；FAQ：日帰り温泉のご案内施設は、下記８棟のみ…その他施設は、宿泊者限定のご案内（2025年8月5日現在，名單沒有本館）",
+      "sourceQuote": "自家源泉の男女別大浴場「紫雲の湯」では、内湯、露天風呂など／営業時間15：00～翌10：00",
       "verdict": "verified",
-      "notes": "第 5 輪：營業時間與男女分開已刪；「滑完回來可以泡」對官方 15:00～翌10:00 沒有矛盾。"
+      "notes": "第 6 輪：重寫。男女分開、露天對「男女別大浴場…内湯、露天風呂」；「滑完回來就能泡」對營業時間「15：00～翌10：00」（滑雪場日間營業到 16:00）。"
     },
     {
       "claimId": "C47",
@@ -381,7 +372,7 @@
       "sourceTitle": "食事｜【公式】天然温泉 紫雲の湯 ラビスタ富良野ヒルズ",
       "sourceQuote": "1F レストラン Ginza Bistro Ginsai Furano…ご夕食はご予約制です。／朝食：6：30～9：30（最終入店 9：00）",
       "verdict": "verified",
-      "notes": "第 5 輪：早餐 6 點半已刪。"
+      "notes": "第 6 輪：句子不變，對「1F レストラン…ご夕食はご予約制です」。"
     },
     {
       "claimId": "C48",
@@ -394,21 +385,21 @@
     },
     {
       "claimId": "C49",
-      "articleExcerpt": "富良野Natulux飯店（富良野ナチュラクスホテル）就在富良野站前，走路1分",
+      "articleExcerpt": "飯店就在富良野站前，走路約1分。",
       "sourceUrl": "https://www.natulux.com/access/",
       "sourceTitle": "アクセス | ラベンダーで有名な富良野のホテル｜NATULUX HOTEL 宿泊予約サイト",
       "sourceQuote": "JR富良野駅下車 徒歩1分",
       "verdict": "verified",
-      "notes": "第 5 輪：30 個免費車位已刪。"
+      "notes": "第 6 輪：對官方「JR富良野駅下車 徒歩1分」。"
     },
     {
       "claimId": "C50",
-      "articleExcerpt": "兩間別邸有簡單的廚房，一間可住3人、一間可住4人，另外都能讓2位小孩同床。",
+      "articleExcerpt": "富良野Natulux飯店（富良野ナチュラクスホテル）有附簡單廚房的別邸，一間可住3人、一間可住4人…兩間別邸都能另外讓2位小孩同床。",
       "sourceUrl": "https://www.natulux.com/guestroom/",
       "sourceTitle": "【公式】NATULUX HOTEL 宿泊予約サイト｜富良野で記念日にピッタリ　ラベンダーで有名なホテル",
       "sourceQuote": "別邸101 簡単な調理ができるキッチン…定員 3名 添い寝2名／別邸102 定員 4名 添い寝2名",
       "verdict": "verified",
-      "notes": "第 5 輪：句子縮寫，事實與條件不變。"
+      "notes": "第 6 輪：拆成兩句，人數不變，對官方 101「定員 3名 添い寝2名」、102「定員 4名 添い寝2名」與「簡単な調理ができるキッチン」。"
     },
     {
       "claimId": "C51",
@@ -417,7 +408,7 @@
       "sourceTitle": "2026年レストラン営業について | ラベンダーで有名な富良野のホテル｜NATULUX HOTEL 宿泊予約サイト",
       "sourceQuote": "当ホテル1階レストラン「ナチュラルダイニング」の営業は当面の間 7日前予約制；設施頁：女性浴室：岩盤浴付（別途料金）／男性浴場：サウナ付",
       "verdict": "verified",
-      "notes": "第 5 輪：男湯三溫暖、女湯岩盤浴已從內文刪除；比較表 T10 仍對官方「女性浴室：岩盤浴付（別途料金）／男性浴場：サウナ付」。"
+      "notes": "第 6 輪：句子不變，對「当面の間 7日前予約制」。"
     },
     {
       "claimId": "C52",
@@ -430,12 +421,12 @@
     },
     {
       "claimId": "C53",
-      "articleExcerpt": "新富良野王子大飯店和Fenix富良野能穿著雪板直接進出雪道，富良野那圖瓦德飯店正前方是北之峰雪道，NOZO飯店和Bell Hills飯店走路2到3分鐘到纜車吊廂。",
+      "articleExcerpt": "新富良野王子大飯店和Fenix富良野能穿著雪板直接進出雪道。",
       "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/",
       "sourceTitle": "公式サイト | 富良野スキー場",
       "sourceQuote": "スキーIN・スキーOUT 新富良野プリンスホテル；觀光協會 Fenix：北の峰ゴンドラに直結…スキーインスキーアウト；那圖瓦德：ホテルの目の前が富良野スキー場のゲレンデ；NOZO：北の峰ゴンドラまで徒歩約3分；Bell Hills：ゴンドラ・リフト乗り場へ徒歩二分",
       "verdict": "verified",
-      "notes": "第 5 輪：句子縮寫，事實與條件不變。"
+      "notes": "第 6 輪：後半句（那圖瓦德、NOZO、Bell Hills）已刪；這兩間官方依據不變。"
     },
     {
       "claimId": "C54",
@@ -506,15 +497,6 @@
       "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
       "sourceTitle": "ゲレンデ・コース | 富良野スキー場",
       "sourceQuote": "2つのゾーンをつなぐ連絡リフト 北の峰ゾーンの乗り場から富良野ゾーンへ向かう連絡リフト／H1コース 中級 富良野ゾーン→北の峰ゾーン 富良野ゾーンから北の峰ゾーンへつながる中級者コース",
-      "verdict": "verified",
-      "notes": "第 5 輪：句子縮寫，事實與條件不變。"
-    },
-    {
-      "claimId": "C64",
-      "articleExcerpt": "滑雪場的雪具租借在富良野纜車、北之峰站和新富良野王子大飯店。",
-      "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/info/",
-      "sourceTitle": "レンタル・便利なサービス | 富良野スキー場 | プリンススノーリゾート",
-      "sourceQuote": "営業時間 富良野ロープウェー：8:30A.M.～4:00P.M.または日没／北の峰ターミナル：8:15A.M.～6:00P.M.または7:30P.M.／新富良野プリンスホテル：8:15A.M.～6:00P.M.または7:30P.M.",
       "verdict": "verified",
       "notes": "第 5 輪：句子縮寫，事實與條件不變。"
     },
@@ -691,21 +673,21 @@
     },
     {
       "claimId": "C74",
-      "articleExcerpt": "新富良野王子在有適合初學者C1雪道的富良野區，另外四間在北之峰區，12月下旬才開。",
+      "articleExcerpt": "新富良野王子在有適合初學者C1雪道的富良野區，另外四間在北之峰區，那一區的雪道12月下旬才開放。",
       "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
       "sourceTitle": "ゲレンデ・コース | 富良野スキー場",
       "sourceQuote": "C1コース 初級 富良野ゾーン コース幅も充分。初心者のレッスンに最適。；2026.2027_sk_iresorts_infor：北の峰ゾーン 期間 12月下旬～3/22(月･振休)",
       "verdict": "verified",
-      "notes": "第 5 輪：「12月下旬才開」接在「北之峰區」後面，指北之峰區開放時間，對官方「北の峰ゾーン 12月下旬～」。四間（那圖瓦德、NOZO、Bell Hills、Fenix）都在北之峰區，正確。"
+      "notes": "第 6 輪：主語改成「那一區的雪道」，對官方「北の峰ゾーン 12月下旬～」；C1 對「C1コース 初級 富良野ゾーン…初心者のレッスンに最適」。"
     },
     {
       "claimId": "C75",
-      "articleExcerpt": "可以看北之峰一帶這四間，只是到雪道要走5分鐘以上或開車。",
+      "articleExcerpt": "可以看北之峰一帶這四間，其中有附廚房的房型、能整棟包下的小屋和可住6人的和室，只是到雪道要走5分鐘以上或開車。",
       "sourceUrl": "https://hotel-hitohana.com/room/",
       "sourceTitle": "客室 |ホテル＆コンドミニアム 一花  [HITOHANA] 【公式】｜ 北海道 富良野 北の峰",
       "sourceQuote": "スーペリア ゆとりの広さ＆キッチン付；觀光協會 Burlap：コテージやヴィラは一棟貸切OK；Edel Warme 首頁：和室は、最大6名様まで；距離：一花 車で1分、穆寧 徒歩約5分、Burlap 徒歩10分、Edel Warme お車で約5分",
       "verdict": "verified",
-      "notes": "第 5 輪：「其中有附廚房…可住6人的和室」那句已刪，三項分別寫在一花（廚房）、Burlap（整棟）、Edel Warme（和室6人）各段。距離部分對官方：一花 車で1分、穆寧 徒歩約5分、Burlap 徒歩10分、Edel Warme お車で約5分。前半句「想要大房間、能自己煮或包下整棟的」是情境句；穆寧不屬於這三種，見報告的可讀性提醒。"
+      "notes": "第 6 輪：加回「其中」，三項分別是一花 Superior 廚房（キッチン付）、Burlap（コテージやヴィラは一棟貸切OK）、Edel Warme 和室（最大6名様まで）；距離：一花 車で1分、穆寧 徒歩約5分、Burlap 徒歩10分、Edel Warme お車で約5分。"
     },
     {
       "claimId": "C76",
@@ -715,12 +697,21 @@
       "sourceQuote": "自家源泉の男女別大浴場「紫雲の湯」；集團 FAQ：その他施設は、宿泊者限定のご案内；Natulux 客房頁：別邸…簡単な調理ができるキッチン；La Vista 徒歩約3分、Natulux 徒歩1分",
       "verdict": "verified",
       "notes": "第 5 輪：「回程班次少」對滑雪場線回程一天 1 班、薰衣草號中午以後 3 班、御料線下午 2 班。"
+    },
+    {
+      "claimId": "C77",
+      "articleExcerpt": "三條路線都停基線和那圖瓦德飯店兩站，住富良野那圖瓦德飯店、NOZO飯店和穆寧富良野飯店的人，可以在這兩站上下車。",
+      "sourceUrl": "https://www.furanobus.jp/rosen/",
+      "sourceTitle": "路線バス – ふらのバス株式会社",
+      "sourceQuote": "ラベンダー号・御料線ともに「基線」「ホテルナトゥールヴァルト」に停車；滑雪場線 PDF：4 基線／5 ホテルナトゥールヴァルト；NOZO：「ホテルナトゥールヴァルト」バス停下車、ホテルまで徒歩約2分；穆寧：ラベンダー号「基線」下車後徒歩約3分",
+      "verdict": "verified",
+      "notes": "第 6 輪加回（第 1 輪 C58 核過的同一件事，句尾「走過去」改成「上下車」）。"
     }
   ],
   "summary": {
-    "verified": 77,
-    "incorrect": 1,
-    "unsupported": 1,
+    "verified": 78,
+    "incorrect": 0,
+    "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,
     "not-stated": 0
