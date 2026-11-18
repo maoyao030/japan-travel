@@ -123,6 +123,8 @@ export function checkStayTopic(markdown) {
     sections
       .flatMap((section) => section.lines)
       .filter((line) => !line.startsWith('|') && !line.startsWith(BOOKING_PREFIX))
+      // 粗體小段名（「**訂房前的注意事項**：」）不是句子，不算進重複。
+      .map((line) => line.replace(/^\*\*[^*]+\*\*[：:]/, ''))
       .join('\n'),
   )
   const clauseCount = new Map()

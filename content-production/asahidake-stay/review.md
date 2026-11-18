@@ -1,47 +1,38 @@
-# 驗收紀錄：asahidake-stay（2026-11-01，已上線文章重寫一輪）
+# 驗收紀錄：asahidake-stay（2026-11-19，舊住宿頁重跑一輪）
 
-- 文章：`content-production/asahidake-stay/reader-preview.md`
-- SHA-256（換行統一成 LF 後計算）：`9e86181216ea85cbb58eba2cd3e9c94412d49199e0f0f89e7d9d9a481c6b4b8f`
-- 規則：`content-automation/rewrite-live.md`（重查、讀競品後重寫、先刪再調、意義比對、完整驗收）；重寫前的版本在 `pre-rewrite/`
-- 研究者：研究子代理（Opus 5.5，重查 24 筆會變資料，更正 F272，新增 F277 拉比斯塔冬季接送；讀競品 5 篇）
-- 作者：作者子代理（Opus 5.5，讀競品後重寫；連結句照寫作指南第10條改寫 4 句，見 `link-sentences.json`）；驗收後修改也由作者處理（`revisions-round1.md`）
-- 潤稿者：潤稿子代理（Opus 5.5，先刪再調，沒寫過這篇）；意義比對 1 個子代理
-- 標題檢查：標題、SEO Title 沿用網站版本，沒改，沿用 `heading-review.json`
-- 事實查核：1 個子代理（Opus 5.5，沒參與寫作、潤稿與修改），共 2 輪
-- 讀者驗收：1 個子代理（沒寫過、潤過或查核過），第一階段只看大綱、文章與規則，第二階段才看研究記錄與事實查核
-- 協調：人工 session（Claude Code，Darren 2026-11-01 要求把剩下的文章全部重寫一輪）
+- 文章：`content-production/asahidake-stay/reader-preview.md`（旭岳溫泉住宿推薦，住纜車旁還是天人峽？）
+- SHA-256（換行統一成 LF 後計算）：`73bce6ed1b248e5d40277de3f8331277a81b166d7987e222a88105ce0430f346`
+- 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
+- 研究：`content-experiments/stay-rerun-2026-11-18/asahidake/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-18 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
+- 寫作：規格助手（Opus 5.5）→ 五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，六個旅館小節都判剛好）。
+- 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作與編輯），3 輪：第 1 輪 127 筆裡 4 筆 unsupported、2 筆 not-stated；改完第 2、3 輪 130 筆裡 129 筆 verified、1 筆 not-stated（大雪山山莊「沒有自己的官網」是否定句，協會清單只有它沒有官網按鈕，驗證程式不擋）。
+- 讀者驗收：讀者驗收子代理（Opus 5.5，沒寫過、沒查核過），七題驗收 2 次（`acceptance1.md` 第 4 題不過：五間沒點名、敷島莊人數、湧駒莊晚餐名稱對不上；`acceptance2.md` 七題都過）。第 2 次之後只照驗收與查核的字句意見改了八處，由事實查核第 3 輪確認。
+- 協調：人工 session（Claude Code），照岔路的預設，沒有問 Darren。
 
 ## 結果
 
 | 項目 | 結果 |
 |---|---|
-| 格式 | `mechanical_clear`（`audit_answer_first.py --article-type aspect-page`） |
-| 標題 | `acceptable`（標題沒改；讀者最終判定可接受） |
-| 讀者價值 | `acceptable`（讀者最終判定，第二階段必修 7 條都已解決） |
-| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，85 項 claim 全部 verified） |
-| 口吻與標點 | `check-voice.mjs --final` 通過（正文 3,291 字） |
-| 事實編號 | `tags_clear`（研究記錄 60 筆，正文用到 48 筆） |
-| 分潤連結 | 只有 Trip.com 地區清單與 Agoda 首頁，沒有單一旅館的分潤連結，不需揭露句 |
-| 圖片 | 線上沒有文內照片；沒有 AI 圖或自製示意圖 |
+| 格式 | `mechanical_clear`（`audit_answer_first.py`） |
+| 標題 | `acceptable`（七題第 6 題過） |
+| 讀者價值 | `acceptable`（七題都過，含第 7 題份量；退回一次後過關） |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，130 項） |
+| 口吻與標點 | `check-voice.mjs --final` 通過（正文約 3,620 字） |
+| 名字與表格連結 | `check-benchmark.mjs` 沒有錯誤 |
+| 圖片 | 沿用線上的封面與文內照片；細寫的旅館各找 1 則 Instagram 貼文（瀏覽器空出來後補） |
 
-**最終結果：`ready_for_user_preview`。** Darren 2026-11-01 要求重寫後換上網站。
+**最終結果：`ready_for_user_preview`。** 換掉線上的舊版。
 
-## 經過
+## 協調者的決定
 
-| 輪 | 做了什麼 | 結果 |
-|---|---|---|
-| 研究 | 重查會變資料 24 筆、讀競品 5 篇 | 更正 F272；新增 F277（2026 年度冬季免費接送） |
-| 寫作 | 讀競品後重排各旅館 H3（先講定位）、改寫 4 句連結句；先刪再調潤稿（刪 F131 餐點內容、F139 房數）；意義比對 | 四項檢查通過；意義比對 0 不可接受、0 遺失 |
-| 1 | 事實查核第 1 輪（80 項） | 全部 verified；備註拉比斯塔接送只限已訂房住客、Agoda 上 Shikishima 莊叫「御宿四季島莊」 |
-| 2 | 讀者驗收第一、二階段 | 必修 7 條：三間旅館沒有下車站、冬季營業欄寫成查空房過程、Shikishima 莊晚餐時間不一與接送聯絡方式、Agoda 名稱、La Vista 接送要先訂房、開頭補情境 |
-| 3 | 作者照必修修改，新增 F278、F279 | 三項檢查通過 |
-| 4 | 事實查核第 2 輪（85 項，含白樺莊訂房表單備註欄實際確認）；讀者最終判定 | 全部 verified；讀者價值與標題可接受、無剩餘必修 |
-
-## 查不到所以正文沒寫的
-
-- 大雪山山莊、Art Village 杜季的下車站（正文改成讀者做得到的事或直接說不適合不會日文的人）、纜車食堂晚上的營業時間、從旭川機場搭計程車要多久。
+- H1 從「旭岳溫泉住宿，各旅館位置、接送與訂房管道」改成「旭岳溫泉住宿推薦，住纜車旁還是天人峽？」，仍包含主要查詢「旭岳溫泉住宿」。
+- Hotel Deer Valley 停業中，訂房網站仍列著，第一個 H2 用半句提醒不要訂。
+- 大雪山白樺莊今年秋冬有沒有營業沒有官方來源：只在分組開頭一句與比較表出現，寫「冬天要先跟旅館確認有沒有營業」，比較表冬天欄「—」。
+- 不比哪間離纜車最近；走路時間只寫官方有的 3 分、7 分、15 分。
+- 天人峽沒開車照觀光協會寫「請旅館接送或叫計程車」。
+- 大雪山山莊與杜季合成一個小節，訂房行只留杜季官網（山莊沒有官網）。
 
 ## 留給之後的事
 
-- F272 更正、新增 F277～F279 要同步回地點事實表與 D1。
-- Trip.com、Agoda 的上架與冬季空房（F266、F267）下次查核時一起重查。
+- La Vista 冬季接送是 2026 到 2027 年這一季的資料，雪季結束後更新。
+- 湧駒莊有沒有和室、湧駒莊與 K's House 走到纜車幾分鐘，官方沒有寫。
