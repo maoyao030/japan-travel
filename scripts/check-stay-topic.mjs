@@ -17,7 +17,8 @@ const CHAT_QUESTION = /(幾點|在哪吃|能去哪吃|在哪|多少錢|有嗎)�
 const POINTING = /(看|請看|可以看)(這|哪|下面|上面|前面|後面)[^。，]{0,8}(一節|那一節|那節)/
 const TIME_IN_OPENING = /\d{1,2}[:：]\d{2}|\d{1,2}點|走路約?\d+分/
 const MAX_QUESTION_H2 = 3
-const MAX_GUEST_TOTAL = 4
+// 2026-11-18：從 4 放寬到 8（一間仍最多一句），賣點只在住客評論裡的飯店才寫得進去。
+const MAX_GUEST_TOTAL = 8
 const MAX_REPEAT = 2
 // Darren 2026-11-18：「廢話很多」。每間飯店只留第一段、一個主題段與「要注意」，不念規格。
 const MAX_BOLD_LABELS_PER_HOTEL = 2
@@ -108,7 +109,7 @@ export function checkStayTopic(markdown) {
     if (/^[^。]{0,12}(是|為)[^。]{0,20}的自助[，。]/.test(first)) warnings.push(`「${section.title}」第一句像資料句，先講最讓人想選它的那件事`)
   }
 
-  // 5. 住客說法：全頁最多四句、一間最多一句。
+  // 5. 住客說法：全頁最多八句、一間最多一句。
   let guestTotal = 0
   for (const section of sections) {
     const count = (stripLinks(section.lines.join('\n')).match(GUEST) ?? []).length

@@ -1,940 +1,1102 @@
 {
   "schemaVersion": 1,
   "articleId": "sounkyo-stay",
-  "articleSha256": "8d123c17494c593dd22ad4e54637065134c52e9a4bf6520391a4000dcbd7b8a1",
-  "checker": "事實查核 agent（Claude Opus 5.5 子代理，唯讀，未參與寫作與潤稿；2026-11-01 查新流程重寫稿與驗收後第 1 輪修改稿（第 2 輪逐句重比，改過與新增的句子重開來源），意思與條件未變的事實沿用 2026-10-27 查核紀錄，其餘重開來源）",
-  "checkedAt": "2026-11-01",
+  "articleSha256": "fc8054ed51fbf562f9ca99b4ef50c09a3066017a6eea3602a8c5831f574eaf3c",
+  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-18 用 python urllib 重開約 80 個官方頁（各館官網、觀光協會、北海道廳、BBH 稅務頁、Beer Grill Canyon），沒有使用瀏覽器。需要 JavaScript 的頁（ホテル大雪 talkappi FAQ、chillnn 訂房日曆、d-reserve、reserve.489ban.net 方案列表、Agoda 頁名）沒能重開，用 facts-extra.md 的瀏覽器摘錄並在 notes 註明；道北巴士時刻沿用〈層雲峽交通〉查核紀錄；住客說法以 facts-reviews.md 為準。；第 2 輪複查（2026-11-18）：以 git diff 逐句核對改過的 13 處，沒改的句子沿用第 1 輪判定，沒有使用瀏覽器。；第 3 輪複查（2026-11-18）：只核對 C118 一句。",
+  "checkedAt": "2026-11-18",
   "claims": [
     {
       "claimId": "C1",
-      "articleExcerpt": "層雲峽住宿集中在黑岳纜車（層雲峡・黒岳ロープウェイ）山下的層雲峽溫泉街。",
+      "articleExcerpt": "層雲峽在大雪山的峽谷裡，住宿幾乎都集中在黑岳纜車（層雲峡・黒岳ロープウェイ）山下的溫泉街。",
       "sourceUrl": "https://sounkyo.net/stay/",
-      "sourceTitle": "宿泊｜層雲峡観光協会",
-      "sourceQuote": "【層雲峡】層雲閣MOUNTAIN RESORT 1923｜【層雲峡】ホテル大雪 ONSEN&CANYON RESORT｜…｜【上川駅周辺】上川荘",
+      "sourceTitle": "泊る｜層雲峡観光協会",
+      "sourceQuote": "【層雲峡】層雲閣MOUNTAIN RESORT 1923…（層雲峡 11 件；清川 2、愛山渓 2、上川駅周辺 4、東雲 1）",
       "verdict": "verified",
-      "notes": "觀光協會清單溫泉街 11 間，清川 2（望岳園、露營場）、上川站周邊 3 間、愛山溪 1 間，「集中」成立。（2026-11-01 重開確認）"
+      "notes": "觀光協會清單溫泉街 11 間，其他分散在清川、愛山溪、上川站周邊、東雲；以層雲峽本地而言「幾乎都集中」成立。"
     },
     {
       "claimId": "C2",
-      "articleExcerpt": "溫泉街上的住宿，從兩百多間客房的大型溫泉飯店到只有9間房的純住宿民宿都有。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=21",
-      "sourceTitle": "民宿とだて｜層雲峡観光協会",
-      "sourceQuote": "全室個室の素泊り民宿です。｜9室",
+      "articleExcerpt": "這一頁比較溫泉街和上川站周邊兩區，推薦溫泉街的6間旅館",
+      "sourceUrl": "https://sounkyo.net/stay/",
+      "sourceTitle": "泊る｜層雲峡観光協会",
+      "sourceQuote": "（本頁 H3：朝陽亭、朝陽度假飯店、層雲閣、大雪飯店、層雲峽觀光飯店、HOTEL KUMOI，觀光協會都列在【層雲峡】）",
       "verdict": "verified",
-      "notes": "大的：層雲峡観光ホテル 242室（content=5）、朝陽亭 252室（content=17）。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "頁內結構核對：細寫 6 間都在溫泉街。"
     },
     {
       "claimId": "C3",
-      "articleExcerpt": "溫泉街外的上川站周邊另有3間",
-      "sourceUrl": "https://sounkyo.net/stay/",
-      "sourceTitle": "宿泊｜層雲峡観光協会",
-      "sourceQuote": "【上川駅周辺】ANSHINDO｜【上川駅周辺】上川荘｜【上川駅周辺】KAMIKAWA HOTEL",
+      "articleExcerpt": "從上川站到溫泉街搭路線巴士約30分鐘",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "JR石北線上川駅より道北バス「層雲峡・上川線」乗車約30分終点「層雲峡」下車（本站〈層雲峽交通〉fact-check.json 引用）",
       "verdict": "verified",
-      "notes": "另一筆【上川駅周辺】是露營場，不算旅館。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "第 2 輪複查（2026-11-18）：已改成約30分鐘，和道北巴士時刻（〈層雲峽交通〉查核紀錄）一致；湯元銀泉閣交通頁也寫約30分。"
     },
     {
       "claimId": "C4",
-      "articleExcerpt": "山裡還有只在5月到10月營業的愛山溪溫泉（愛山渓温泉）。",
-      "sourceUrl": "https://aizankei.npokamui.org/access/",
-      "sourceTitle": "アクセス｜愛山渓温泉",
-      "sourceQuote": "営業期間 毎年5月〜10月",
+      "articleExcerpt": "開車約30分鐘",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=102",
+      "sourceTitle": "【上川駅周辺】KAMIKAWA HOTEL｜層雲峡観光協会",
+      "sourceQuote": "層雲峡温泉は車で30分",
       "verdict": "verified",
-      "notes": "第 1 輪 incorrect（寫成「夏秋」），作者已改回官網的 5月到10月。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C5",
-      "articleExcerpt": "冬天前往層雲峽，朝陽亭與朝陽度假飯店從札幌、旭川，層雲峽觀光飯店從旭川，各有每天1班的旅館接駁巴士，要事先預約。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "【運行期間：2026年10月1日～2027年3月31日】…お迎えのバス（札幌発）…お迎えのバス（旭川発）…送迎バスをご希望するお客様は、【 送迎バス予約お申し込みフォーム 】から｜（觀光飯店 map）・11月〜4月 毎日運行…お電話にて…ご予約下さい",
+      "articleExcerpt": "溫泉街裡離纜車最近的是HOTEL KUMOI（ホテル雲井）和民宿山之上（リゾートペンション山の上），走1分鐘就到。",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=22",
+      "sourceTitle": "【層雲峡】HOTEL KUMOI｜層雲峡観光協会",
+      "sourceQuote": "黒岳ロープウェイまで徒歩わずか1分（KUMOI）／層雲峡ロープウエイもおみやげ通りを直進1分（山の上官網）",
       "verdict": "verified",
-      "notes": "改寫後出發地分開寫，條件正確。（2026-11-01 第 2 輪重開確認）"
+      "notes": "另核 pen-yamanoue.com；銀泉閣約2分、Todate 5分，其他更遠。"
     },
     {
       "claimId": "C6",
-      "articleExcerpt": "溫泉街冬天晚上能吃飯的店不多，訂房時最好連晚餐一起想好。",
-      "sourceUrl": "https://sounkyo.net/eat/",
-      "sourceTitle": "飲食｜層雲峡観光協会",
-      "sourceQuote": "ツリーバード 5月〜10月頃｜登山軒（11～5月は休業）｜大雪山食堂 17:30〜20:30 不定休",
+      "articleExcerpt": "冬天不開的有溫泉街的Sounkyo Hostel（層雲峡ホステル），和只開5到10月的愛山溪溫泉。",
+      "sourceUrl": "https://www.sounkyo-hostel.com/",
+      "sourceTitle": "【公式】層雲峡ホステル",
+      "sourceQuote": "【現在冬季休館中】2026年の営業は終了いたしました。／営業期間 毎年5月〜10月（aizankei.npokamui.org/access/）",
       "verdict": "verified",
-      "notes": "溫泉街觀光協會列 7 家，冬天晚上只剩 Canyon 與大雪山食堂（見晚餐節）。後半句是建議。（2026-11-01 重開確認）"
+      "notes": "湯元銀泉閣冬天是否休館官方沒寫（只看得出官網訂不到），沒列進來符合事實表的處理。"
     },
     {
       "claimId": "C7",
-      "articleExcerpt": "想泡溫泉、搭黑岳纜車上山，就住溫泉街。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=22",
-      "sourceTitle": "HOTEL KUMOI｜層雲峡観光協会",
-      "sourceQuote": "黒岳ロープウェイまで徒歩わずか1分",
+      "articleExcerpt": "開車的話，朝陽亭、朝陽度假飯店（朝陽リゾートホテル）、大雪飯店（ホテル大雪）和層雲峽觀光飯店（層雲峡観光ホテル）都有免費停車場。",
+      "sourceUrl": "https://www.choyotei.com/faq/",
+      "sourceTitle": "よくある質問｜層雲峡 朝陽亭",
+      "sourceQuote": "当館の駐車場は無料です。約120台（朝陽亭）／約100台（朝陽リゾート FAQ）／駐車場 100台(無料)（ホテル大雪 access.php）／普通自動車80台収容（無料）（層雲峡観光ホテル map）",
       "verdict": "verified",
-      "notes": "編輯判斷；溫泉旅館與纜車站都在溫泉街，成立。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C8",
-      "articleExcerpt": "搭火車很晚才到上川、或隔天一早要從上川站離開的行程，適合住上川站周邊的KAMIKAWA HOTEL、ANSHINDO或民宿上川莊（上川荘）。",
-      "sourceUrl": "https://primenet2010.biz/kamikawa-hotel/",
-      "sourceTitle": "KAMIKAWA HOTEL",
-      "sourceQuote": "JR上川駅から徒歩3分の ビジネスホテル",
+      "articleExcerpt": "冰瀑祭期間住溫泉街走路就到會場",
+      "sourceUrl": "https://sounkyo.net/",
+      "sourceTitle": "本站〈層雲峽冰瀑祭〉查核紀錄",
+      "sourceQuote": "会場：上川町層雲峡温泉特設会場（石狩川河岸）；終点「層雲峡」下車、徒歩5分（sounkyo-festival／sounkyo-transport fact-check.json 已查核）",
       "verdict": "verified",
-      "notes": "編輯判斷，依據是末班巴士 19:54 與三間的位置（觀光協會【上川駅周辺】）。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "會場在溫泉街旁石狩川河岸，巴士站走 5 分；住客評論也有 2 平台 4 則說走幾分鐘就到（R23）。沒有重開冰瀑祭官網，沿用站內已查核紀錄。"
     },
     {
       "claimId": "C9",
-      "articleExcerpt": "上川站前的巴士站往溫泉街一天有10班車，末班是19:54。",
-      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
-      "sourceTitle": "層雲峡・上川線 時刻表｜道北バス",
-      "sourceQuote": "上川森のテラス バスタッチ（Kamikawa STN \"Mori no Terasu\" Bus Touch）発 8:24 9:30 10:50 11:24 12:24 14:00 14:54 15:54 18:04 19:54",
+      "articleExcerpt": "〈層雲峽〉比較了住一晚和當天來回",
+      "sourceUrl": "https://sounkyo.net/",
+      "sourceTitle": "本站 content-production/sounkyo/reader-preview.md",
+      "sourceQuote": "## 從旭川當天來回層雲峽，還是住一晚？",
       "verdict": "verified",
-      "notes": "2026.7.1 改正版。道北巴士官網 2026-11-01 仍連不上（回 429），讀 Wayback 2026-10-08 存檔（最新一份），轉成圖片逐格核對：上川站站牌往層雲峽 10 班、末班 19:54。站牌英文名是 Kamikawa STN，「上川站前的巴士站」成立。冬季若改點要重查。（2026-11-01 重開確認）"
+      "notes": "站內連結描述核對：該頁確有此節。"
     },
     {
       "claimId": "C10",
-      "articleExcerpt": "火車到上川時已經過了這班車，當晚就住上川站周邊。",
-      "sourceUrl": "https://web.archive.org/web/20261008200555id_/https://www.dohokubus.com/files/kamikawa_souun.pdf",
-      "sourceTitle": "層雲峡・上川線 時刻表｜道北バス",
-      "sourceQuote": "上川森のテラス バスタッチ 発 … 19:54",
+      "articleExcerpt": "〈旭岳還是層雲峽〉把兩邊放在一起比",
+      "sourceUrl": "https://sounkyo.net/",
+      "sourceTitle": "本站 content-production/asahidake-or-sounkyo/reader-preview.md",
+      "sourceQuote": "## 旭岳與層雲峽差在哪？／### 旭岳和層雲峽只去一個選哪個？",
       "verdict": "verified",
-      "notes": "條件句建議，依末班 19:54 成立。"
+      "notes": "站內連結描述核對。"
     },
     {
       "claimId": "C11",
-      "articleExcerpt": "從JR上川站走過去，KAMIKAWA HOTEL要3分鐘，上川莊約8分鐘。",
-      "sourceUrl": "https://primenet2010.biz/kamikawa-hotel/",
-      "sourceTitle": "KAMIKAWA HOTEL",
-      "sourceQuote": "JR上川駅から徒歩3分の ビジネスホテル｜（上川荘交通頁）鉄道：JR上川駅 徒歩8分",
+      "articleExcerpt": "這五間大型溫泉飯店都有一般住客能預約的接駁車，晚餐也都有自助餐。",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "送迎バス予約お申し込みフォーム（朝陽）／当館にご宿泊の方はどなたでもご利用いただけます…3日前までの予約制（層雲閣）／送迎バス(期間限定・要予約)（ホテル大雪）／3⽇前までに、お電話にて…ご予約下さい（層雲峡観光ホテル）；夕食ビュッフェ（層雲閣）、ビュッフェダイニング「HINNAの森」（大雪）、バイキングレストラン（朝陽兩館、ユーカラ）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C12",
-      "articleExcerpt": "大雪飯店（ホテル大雪 ONSEN&CANYON RESORT）位在溫泉街最高處，朝陽亭（層雲峡朝陽亭）也蓋在高台上。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=4",
-      "sourceTitle": "ホテル大雪 ONSEN&CANYON RESORT｜層雲峡観光協会",
-      "sourceQuote": "その中でも一番の高台にある当ホテル｜（content=17）層雲峡温泉街の高台に位置しており",
+      "articleExcerpt": "朝陽亭蓋在溫泉街的高台上，頂樓的大浴場望出去就是大雪山，同一層還有露天",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=17",
+      "sourceTitle": "【層雲峡】層雲峡朝陽亭｜層雲峡観光協会",
+      "sourceQuote": "層雲峡温泉街の高台に位置しており、特に最上階大浴場より大雪山系の四季折々の景観／当館は2Ｆ癒しの湯/7Ｆ展望大浴場/7Ｆ天空露天と3ヶ所（onsen）／当館は7階建て（FAQ）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C13",
-      "articleExcerpt": "住朝陽亭或朝陽度假飯店（朝陽リゾートホテル）不用自己走上去，搭路線巴士到層雲峽巴士總站（層雲峡バスセンター）後打電話，旅館就會派免費接送車，不過人多時要等一下。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "※層雲峡停留所から無料送迎車をご希望の方は、停留所に到着後TEL：0570-026572までご連絡ください。混雑時にはお待たせする場合がございます",
+      "articleExcerpt": "只是位置高，進出溫泉街都要走坡道",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=17",
+      "sourceTitle": "【層雲峡】層雲峡朝陽亭｜層雲峡観光協会",
+      "sourceQuote": "層雲峡温泉街の高台に位置；住客 Trip.com 5 則說從巴士站上坡、4travel 2 則說到纜車下坡、回程上坡（R2）",
       "verdict": "verified",
-      "notes": "官網寫「層雲峡停留所」，道北巴士的「層雲峡」站就是巴士總站（Hostel 官網稱「層雲峡バスセンター」、KUMOI 稱「バスターミナル」），統一稱巴士總站可接受。「不用自己走上去」是由兩館在高台（content=17）與免費接送推出的編輯判斷，成立。（2026-11-01 第 2 輪重開確認）"
+      "notes": "官方「高台」加兩個平台 7 則住客一致，推論成立。"
     },
     {
       "claimId": "C14",
-      "articleExcerpt": "隔天一早想上山，住黑岳纜車旁邊的HOTEL KUMOI（ホテル雲井）、湯元銀泉閣或民宿山之上（リゾートペンション山の上）比較順，走路1到2分鐘就到纜車站。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=22",
-      "sourceTitle": "HOTEL KUMOI｜層雲峡観光協会",
-      "sourceQuote": "黒岳ロープウェイまで徒歩わずか1分｜（銀泉閣）黒岳ロープウェイまで徒歩で約2分｜（山の上）層雲峡ロープウエイもおみやげ通りを直進1分",
+      "articleExcerpt": "冬天從札幌站和旭川市區都有飯店自己的付費接駁巴士開到門口，不開車的人不用自己轉路線巴士。",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "【運行期間：2026年10月1日～2027年3月31日】【ご料金：片道 お一人 2,500円税込み】札幌駅北口…朝陽亭 16:40(到着)／旭川駅1条通6丁目…1,000円税込み",
       "verdict": "verified",
-      "notes": "KUMOI 1 分、銀泉閣約 2 分、山之上 1 分，「1到2分鐘」成立；「比較順」是編輯判斷。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C15",
-      "articleExcerpt": "溫泉街的5家大型溫泉飯店客房都在160間以上，而且五家都有接駁巴士或接駁車",
-      "sourceUrl": "https://sounkyo.net/stay/",
-      "sourceTitle": "宿泊｜層雲峡観光協会",
-      "sourceQuote": "層雲閣 161室｜ホテル大雪 188室｜層雲峡観光ホテル 242室｜朝陽亭 252室｜朝陽リゾートホテル 188室",
+      "articleExcerpt": "住朝陽亭還能搭泡湯接駁車，到同集團的朝陽度假飯店泡另外兩種源泉，加上館內的單純溫泉，一晚泡得到三種泉質。",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=17",
+      "sourceTitle": "【層雲峡】層雲峡朝陽亭｜層雲峡観光協会",
+      "sourceQuote": "湯めぐりシャトルバスで姉妹館朝陽リゾートホテルの温泉も愉しめます／朝陽亭の泉質は、単純温泉＜硫化水素型＞（FAQ）／含硫黄-ナトリウム-炭酸水素塩温泉（硫化水素型）・ナトリウム-炭酸水素塩温泉（朝陽リゾート onsen）",
       "verdict": "verified",
-      "notes": "自己重算：最小 161。接駁：朝陽兩館（交通頁）、觀光飯店（FAQ）、層雲閣號（access）、大雪（access），五家都有。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "三個泉質名不同，推論成立。朝陽度假 FAQ 另寫「単純温泉」，和溫泉頁分析表不一致；正文照溫泉頁成立。11/16～18 湯めぐり暫停是臨時狀況。"
     },
     {
       "claimId": "C16",
-      "articleExcerpt": "想邊泡湯邊看大雪山，蓋在溫泉街高台的朝陽亭從頂樓的大浴場就望得到大雪山的山景。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=17",
-      "sourceTitle": "層雲峡朝陽亭｜層雲峡観光協会",
-      "sourceQuote": "層雲峡温泉街の高台に位置しており、特に最上階大浴場より大雪山系の四季折々の景観",
+      "articleExcerpt": "和洋室住得下5人，大房可以住6人",
+      "sourceUrl": "https://www.choyotei.com/faq/",
+      "sourceTitle": "よくある質問｜層雲峡 朝陽亭",
+      "sourceQuote": "和洋室は5名様、モダン洋室は2名様、和室は2～4名様、大部屋は6名様定員",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "館內的泡湯接駁車還能載到同集團的朝陽度假飯店泡湯。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=17",
-      "sourceTitle": "層雲峡朝陽亭｜層雲峡観光協会",
-      "sourceQuote": "湯めぐりシャトルバスで姉妹館朝陽リゾートホテルの温泉も愉しめます。",
+      "articleExcerpt": "有住客反應從巴士站拖著行李走上來很累",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "住客評論統整 R2",
+      "sourceQuote": "Trip.com 30 則中 5 則提到從巴士站上坡、拖行李累；4travel 10 則中 2 則提到坡（往纜車下坡、回程上坡）（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀 Trip.com、4travel、Google 地圖）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "「坡」兩平台 7 則達門檻；「拖行李累」的細節只在 Trip.com，整句講的是同一件事，可接受。"
     },
     {
       "claimId": "C18",
-      "articleExcerpt": "朝陽度假飯店每一間都看得到層雲峽的山景，館內有兩種源泉與兩個大浴場。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=18",
-      "sourceTitle": "層雲峡温泉 朝陽リゾートホテル｜層雲峡観光協会",
-      "sourceQuote": "全てのお部屋から層雲峡の大自然を展望でき｜敷地内にある2種の源泉｜大浴場は…2つ",
+      "articleExcerpt": "所以搭路線巴士去的話，到了層雲峽巴士站打電話請飯店派免費接送車來接比較輕鬆。",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "※層雲峡停留所から無料送迎車をご希望の方は、停留所に到着後TEL：0570-026572までご連絡ください。",
       "verdict": "verified",
-      "notes": "原文「大自然」，寫「山景」屬合理意譯。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C19",
-      "articleExcerpt": "兩家同集團，共用從札幌、旭川出發的付費接駁巴士，10月到隔年3月每天各1班。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "【運行期間：2026年10月1日～2027年3月31日】【ご料金：片道 お一人 2,500円税込み】…【ご料金：片道 お一人 1,000円税込み】",
+      "articleExcerpt": "朝陽度假飯店的館內就有白濁和赤茶兩種源泉，都是源泉放流，而且對面就是7-Eleven。",
+      "sourceUrl": "https://www.choyo-resort.com/onsen/",
+      "sourceTitle": "温泉｜朝陽リゾートホテル",
+      "sourceQuote": "＜白濁の湯：鳥の声、川の囁き＞＜赤茶の湯：川の囁き＞※源泉かけ流しのため／当館向かいにセブンイレブンがございます（FAQ）",
       "verdict": "verified",
-      "notes": "時刻表每個方向一個時刻。（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C20",
-      "articleExcerpt": "層雲閣（層雲閣MOUNTAIN RESORT 1923）有露天浴池，住宿客都能搭自家的接駁車層雲閣號（層雲閣号），不過要在3天前打電話預約。",
-      "sourceUrl": "https://sounkaku.co.jp/access/",
-      "sourceTitle": "アクセス｜層雲閣",
-      "sourceQuote": "層雲閣号 完全予約制で安心 ご予約は電話で承っております。当館にご宿泊の方はどなたでもご利用いただけます。※3日前までの予約制となります。",
+      "articleExcerpt": "它和朝陽亭同一集團、共用接駁巴士",
+      "sourceUrl": "https://www.choyo-resort.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽リゾートホテル",
+      "sourceQuote": "札幌駅北口…朝陽リゾートホテル 16:30(到着)…朝陽亭 16:40(到着)（同一時刻表）",
       "verdict": "verified",
-      "notes": "露天：content=3「露天風呂が自慢です」。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "位在溫泉街最高處的大雪飯店有3個大浴場和2個露天浴池。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=4",
-      "sourceTitle": "ホテル大雪 ONSEN&CANYON RESORT｜層雲峡観光協会",
-      "sourceQuote": "その中でも一番の高台にある当ホテル｜3ヶ所の大浴場と2ヶ所の露天風呂有り",
+      "articleExcerpt": "想在館內泡兩種溫泉就選這間，想在頂樓大浴場看大雪山就選朝陽亭。",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=18",
+      "sourceTitle": "【層雲峡】朝陽リゾートホテル｜層雲峡観光協会",
+      "sourceQuote": "層雲峡で唯一、敷地内に異なる２つの源泉「白濁の湯」と「赤茶の湯」／最上階大浴場より大雪山系（content=17）",
       "verdict": "verified",
-      "notes": "峽谷露天的短期改修停用（研究記錄 F299）依規則不寫。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C22",
-      "articleExcerpt": "東館1樓的Taisetsu Bakery Café & Bar早上8點開到傍晚6點，不住宿也能進去。",
-      "sourceUrl": "https://www.hotel-taisetsu.com/facility.php",
-      "sourceTitle": "館内施設｜ホテル大雪",
-      "sourceQuote": "Taisetsu Bakery Cafe&Bar 東館1階 8:00-18:00（時期により変更になる可能性があります） どなたでもご利用いただける、素敵なベーカリーカフェ。",
+      "articleExcerpt": "大浴場和露天浴池各有2處，白濁湯和赤茶湯可以輪流泡。",
+      "sourceUrl": "https://www.choyo-resort.com/faq/",
+      "sourceTitle": "よくある質問｜朝陽リゾートホテル",
+      "sourceQuote": "大浴場が2カ所、露天風呂が2カ所ございます。",
       "verdict": "verified",
-      "notes": "觀光協會 eat content=91 仍寫 8:00〜18:00／20:00〜22:30，照飯店與店家官網。（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C23",
-      "articleExcerpt": "冬天的10月中旬到4月下旬有從旭川站出發的接駁巴士，期間限定、要預約。",
-      "sourceUrl": "http://www.hotel-taisetsu.com/access.php",
-      "sourceTitle": "アクセス｜ホテル大雪",
-      "sourceQuote": "冬季期間中（10月中旬〜4月下旬）は、旭川駅からの便利な送迎バスも運行しております。｜送迎バス(期間限定・要予約)",
+      "articleExcerpt": "館內也有包租湯屋，一間可以2到4個人一起泡，包一間50分鐘3,300日圓，另外還有岩盤浴。",
+      "sourceUrl": "https://www.choyo-resort.com/faq/",
+      "sourceTitle": "よくある質問｜朝陽リゾートホテル",
+      "sourceQuote": "地下1階にある「癒しどころ ゆるる」にて4室…1室の定員は2名～4名様…ご宿泊のお客様は50分利用、1室3,300円（税抜3,000円）／岩盤浴 15：00～23：00（onsen）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "3,300 日圓是含稅價。"
     },
     {
       "claimId": "C24",
-      "articleExcerpt": "想全家一起泡湯，層雲峽觀光飯店（層雲峡観光ホテル）約200坪的峽谷大露天浴池「宇旅璃」是穿著湯衣下水的。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=5",
-      "sourceTitle": "層雲峡観光ホテル｜層雲峡観光協会",
-      "sourceQuote": "敷地面積200坪の峡谷大露天風呂「宇旅璃（うたり）」は湯衣着用だからファミリーでもお愉しみ頂けます",
+      "articleExcerpt": "每一間房都看得到層雲峽的山景，和室、和洋室住得下5人",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=18",
+      "sourceTitle": "【層雲峡】朝陽リゾートホテル｜層雲峡観光協会",
+      "sourceQuote": "全てのお部屋から層雲峡の大自然を展望でき／和室は5名様…寛ぎの間・和洋室・モダン和洋室は5名様定員（FAQ）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C25",
-      "articleExcerpt": "11月到4月每天有1班從旭川出發的接駁車。",
-      "sourceUrl": "https://sounkyo-kankou.co.jp/faq",
-      "sourceTitle": "よくあるご質問｜層雲峡観光ホテル",
-      "sourceQuote": "運行期間11月1日～4月30日まで1日1本下記の通り運行しております。往路：旭川スマイルホテル前 14：00発",
+      "articleExcerpt": "有些住客覺得旅行團多，尖峰時段的餐廳、大浴場和電梯都比較擠。",
+      "sourceUrl": "https://www.choyo-resort.com/faq/",
+      "sourceTitle": "住客評論統整 R17",
+      "sourceQuote": "Trip.com 30 則中 5 則負面（團多，餐廳、大浴場、電梯擠）；4travel 10 則中 1 則負面（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀 Trip.com、4travel、Google 地圖）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "兩平台 6 則達門檻；另有 4travel 2 則說錯開時間不擠，「有些住客」的說法合適。"
     },
     {
       "claimId": "C26",
-      "articleExcerpt": "小旅館多半在黑岳纜車與巴士總站附近，走路幾分鐘就到，一早就能走去搭纜車上山。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=22",
-      "sourceTitle": "HOTEL KUMOI｜層雲峡観光協会",
-      "sourceQuote": "バスターミナルから徒歩わずか3分、黒岳ロープウェイまで徒歩わずか1分｜（銀泉閣）約5分／約2分｜（山の上）直進1分｜（とだて）黒岳ロープウェイまで徒歩5分｜（ホステル）徒歩7分",
+      "articleExcerpt": "房名有Modern的房間只有淋浴間，想要浴廁一體的整體衛浴就選和室。",
+      "sourceUrl": "https://www.choyo-resort.com/faq/",
+      "sourceTitle": "よくある質問｜朝陽リゾートホテル",
+      "sourceQuote": "和室・和室二間はお風呂とトイレが一緒のユニットバス設備…和モダン・洋モダン・モダン和洋室・ヒーリングモダンはシャワーブースのみ",
       "verdict": "verified",
-      "notes": "第 1 輪 unsupported（寫成「都」），已改回「多半」：6 間小旅館裡 5 間有官方分鐘數，銀河沒有，「多半」成立。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C27",
-      "articleExcerpt": "HOTEL KUMOI的溫泉是100%源泉放流的硫磺泉，離黑岳纜車走路1分鐘、離巴士總站3分鐘。",
-      "sourceUrl": "https://www.hotelkumoi.com/",
-      "sourceTitle": "ホテル雲井",
-      "sourceQuote": "源泉掛け流し百パーセントの単純硫黄温泉です。｜（content=22）バスターミナルから徒歩わずか3分、黒岳ロープウェイまで徒歩わずか1分",
+      "articleExcerpt": "層雲閣（層雲閣MOUNTAIN RESORT 1923）的房價採All Inclusive，辦入住時和晚餐時，酒類和飲料都喝到飽",
+      "sourceUrl": "https://sounkaku.co.jp/allinclusive/",
+      "sourceTitle": "オールインクルーシブ - 層雲閣MOUNTAIN RESORT 1923",
+      "sourceQuote": "ご到着時のアルコール、ノンアルコール飲み放題・…ご夕食時のアルコール、ノンアルコール飲み放題",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "第 2 輪複查（2026-11-18）：K33 原文是「ご到着時のアルコール、ノンアルコール飲み放題」，Lounge 迎賓飲料時段 15:00～22:00（ウエルカムドリンク・イブニングタイム）和入住時間同時開始，「辦入住時」沒有說過頭。要更貼原文可寫「一到飯店」，非必要。"
     },
     {
       "claimId": "C28",
-      "articleExcerpt": "房間全是榻榻米房。",
-      "sourceUrl": "https://www.hotelkumoi.com/",
-      "sourceTitle": "ホテル雲井",
-      "sourceQuote": "全室畳敷きのこぢんまりとしたお部屋",
+      "articleExcerpt": "大廳的Lounge從下午開到晚上，酒、飲料、輕食和冰淇淋也都含在房價裡。",
+      "sourceUrl": "https://sounkaku.co.jp/allinclusive/",
+      "sourceTitle": "オールインクルーシブ - 層雲閣MOUNTAIN RESORT 1923",
+      "sourceQuote": "ウエルカムドリンク・イブニングタイム 15：00〜22：00／アルコールやノンアルコール飲料アペタイザー（軽食）、自家製ソフトクリームや自家製ジェラート",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "官網另註早餐加點酒類等「一部有料メニュー」，不影響 Lounge 這句。"
     },
     {
       "claimId": "C29",
-      "articleExcerpt": "自由行住湯元銀泉閣要自己過去，旅館的接送一般只接從旭川市近郊出發、15人以上的團體。",
-      "sourceUrl": "https://breezbay-group.com/ginsenkaku/access/index.html",
-      "sourceTitle": "アクセス｜湯元銀泉閣",
-      "sourceQuote": "通常、団体15名様からのご送迎となります。まずはホテルへご相談ください。距離的には旭川市近郊からのご送迎となります。",
+      "articleExcerpt": "5樓的峽谷露天泉水無色透明、刺激少，官網說皮膚敏感的人、長輩和小孩也適合泡。",
+      "sourceUrl": "https://sounkaku.co.jp/hot-springs",
+      "sourceTitle": "温泉 - 層雲閣MOUNTAIN RESORT 1923",
+      "sourceQuote": "無色透明・無味・無臭で、肌に対する刺激が少なく…肌の弱い人や高齢者、幼児などにも向きます。／当館5階に設けられた自慢の露天風呂",
       "verdict": "verified",
-      "notes": "「一般」對應「通常」，沒變強。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C30",
-      "articleExcerpt": "好在從層雲峽巴士總站走約5分鐘就到，離黑岳纜車約2分鐘。",
-      "sourceUrl": "https://breezbay-group.com/ginsenkaku/access/index.html",
-      "sourceTitle": "アクセス｜湯元銀泉閣",
-      "sourceQuote": "層雲峡 徒歩 約5分 湯元 銀泉閣｜黒岳ロープウェイまで徒歩で約2分",
+      "articleExcerpt": "房型很多，不少房型有床，Family館的和洋室最多住得下7到8人，也有能帶寵物的雙床房。",
+      "sourceUrl": "https://sounkaku.co.jp/guest-rooms",
+      "sourceTitle": "客室 - 層雲閣MOUNTAIN RESORT 1923",
+      "sourceQuote": "畳とベッドを兼ね備えた広い当室は、最高7名様まで…最高8名様まで／ファミリー館／ペットと泊まれるツインルーム",
       "verdict": "verified",
-      "notes": "官網的「層雲峡」是巴士站名，即巴士總站。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C31",
-      "articleExcerpt": "館內是無障礙設計，泡的是100%天然溫泉。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=20",
-      "sourceTitle": "湯元銀泉閣｜層雲峡観光協会",
-      "sourceQuote": "館内はバリアフリー対応で、手作りのお料理と純度100％の天然温泉が自慢の温泉旅館です。",
+      "articleExcerpt": "官網和訂房系統都有繁體中文，不懂日文也能自己看方案、自己訂房。",
+      "sourceUrl": "https://sounkaku.co.jp/tw",
+      "sourceTitle": "層雲閣MOUNTAIN RESORT 1923（繁中頁）",
+      "sourceQuote": "LANGUAGE … TW（官網）／Language 日本語 English 한국어 中文(简体) 中文(繁體)（reserve.489ban.net 預約頁）",
       "verdict": "verified",
-      "notes": "舊稿「帶長輩比較放心」的推論已刪，現在只寫原文事實。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C32",
-      "articleExcerpt": "民宿山之上在溫泉街中心，經過Canyon Mall（キャニオンモール）直通黑岳之湯（黒岳の湯），出門沿著土產街直走1分鐘就是黑岳纜車。",
-      "sourceUrl": "https://pen-yamanoue.com/",
-      "sourceTitle": "リゾートペンション山の上",
-      "sourceQuote": "層雲峡温泉街の中心部に位置している…キャニオンモールで宿と層雲峡温泉「黒岳の湯」が直結。層雲峡ロープウエイもおみやげ通りを直進1分の便利さです。",
+      "articleExcerpt": "有住客提醒要訂翻新過的房型，沒翻新的房間和浴廁比較舊。",
+      "sourceUrl": "https://sounkaku.co.jp/guest-rooms",
+      "sourceTitle": "住客評論統整 R29",
+      "sourceQuote": "Trip.com 30 則中 9 則說舊、3 則明說高樓層較新；4travel 10 則中 3 則說沒翻新的房間與浴廁舊；Google 5 則中 2 則說一定要訂整修過的房間（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀 Trip.com、4travel、Google 地圖）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C33",
-      "articleExcerpt": "房間都是和室。（民宿山之上）",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=69",
-      "sourceTitle": "リゾートペンション山の上｜層雲峡観光協会",
-      "sourceQuote": "和室6畳、8畳、12畳（全14室）",
+      "articleExcerpt": "想搭層雲閣號接駁的話，要在3天前打電話預約。",
+      "sourceUrl": "https://sounkaku.co.jp/access/",
+      "sourceTitle": "アクセス - 層雲閣MOUNTAIN RESORT 1923",
+      "sourceQuote": "層雲閣号 完全予約制で安心 ご予約は電話で承っております。※3日前までの予約制となります。",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C34",
-      "articleExcerpt": "離纜車走路5分鐘的民宿Todate（民宿とだて）歡迎一個人入住，房間都是個人房，只做純住宿。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=21",
-      "sourceTitle": "民宿とだて｜層雲峡観光協会",
-      "sourceQuote": "黒岳ロープウェイまで徒歩5分。…全室個室の素泊り民宿です。1名様歓迎！",
+      "articleExcerpt": "大雪飯店在溫泉街最高處，館內有3個大浴場和2個露天浴池可以輪流泡",
+      "sourceUrl": "https://www.hotel-taisetsu.com/spa.php",
+      "sourceTitle": "ホテル大雪｜温泉",
+      "sourceQuote": "層雲峡温泉の中で、もっとも高台に位置する当ホテル／３つの大浴場と２つの露天風呂。",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C35",
-      "articleExcerpt": "住宿附隔壁黑岳之湯的入浴券，穿著拖鞋就能走過去。",
-      "sourceUrl": "http://m-todate.com/",
-      "sourceTitle": "民宿とだて",
-      "sourceQuote": "※隣接する黒岳の湯の入浴券付きです(当宿からスリッパのまま行く事ができます)",
+      "articleExcerpt": "冬天還有從旭川站出發的免費接駁巴士",
+      "sourceUrl": "https://bot.talkappi.com/faq/content?facility_cd=hotel-taisetsu-qa&intent_cd=inquiry.access_bus_info&sub_intent_cd=transfer_bus&lang=ja",
+      "sourceTitle": "ホテル大雪 よくあるご質問（talkappi）",
+      "sourceQuote": "令和8年度の無料シャトルバスの運行／冬季期間中（10月中旬〜4月下旬）は、旭川駅からの便利な送迎バスも運行（access.php）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "access.php 今天重開確認冬季旭川站接駁；「無料」出自 talkappi FAQ（今天沒有重開：此頁要執行 JavaScript，urllib 只讀到空殼；用 facts-extra.md 的瀏覽器摘錄判定）"
     },
     {
       "claimId": "C36",
-      "articleExcerpt": "早餐可以到民宿後面的Seicomart（セイコーマート），早上7點開門。",
-      "sourceUrl": "http://m-todate.com/q-a.html",
-      "sourceTitle": "民宿とだて Q&A",
-      "sourceQuote": "当館のすぐ裏にセイコーマートがございます。朝は7時から営業しております。",
+      "articleExcerpt": "不過身上有刺青或紋身的人不能泡湯。",
+      "sourceUrl": "https://www.hotel-taisetsu.com/spa.php",
+      "sourceTitle": "ホテル大雪｜温泉",
+      "sourceQuote": "刺青・タトゥーが入った方のご入浴はご遠慮いただいております。",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C37",
-      "articleExcerpt": "民宿銀河（温泉ペンション銀河）門前就是Canyon Mall，主打100%源泉的溫泉與用地方食材做的和食。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=68",
-      "sourceTitle": "温泉ペンション銀河｜層雲峡観光協会",
-      "sourceQuote": "源泉100％の温泉と地元食材を生かした和食が売りの宿｜（官網首頁）目の前に広がるキャニオンモール",
+      "articleExcerpt": "浴池全部是源泉放流、不循環，因為源泉溫度高，只加水調整。",
+      "sourceUrl": "https://www.hotel-taisetsu.com/spa.php",
+      "sourceTitle": "ホテル大雪｜温泉",
+      "sourceQuote": "すべてのお風呂はかけ流しで循環しておりません。源泉が高温のため温度調整のみ加水しております",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C38",
-      "articleExcerpt": "房間大多是和室，另有3間洋室。",
-      "sourceUrl": "https://sounkyo-ginga.com/shop.php",
-      "sourceTitle": "店舗情報｜温泉ペンション銀河",
-      "sourceQuote": "収容数 和15室・洋3室 合計45名",
+      "articleExcerpt": "7樓的展望大浴場附三溫暖，可以自己往石頭上澆水。",
+      "sourceUrl": "https://www.hotel-taisetsu.com/spa.php",
+      "sourceTitle": "ホテル大雪｜温泉",
+      "sourceQuote": "サウナ 西館7階 「大雪乃湯」内に併設 セルフロウリュもお楽しみいただける本格的なサウナ",
       "verdict": "verified",
-      "notes": "15 比 3，「大多」成立。（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C39",
-      "articleExcerpt": "不過要打電話預約，也不能刷信用卡。",
-      "sourceUrl": "https://sounkyo-ginga.com/shop.php",
-      "sourceTitle": "店舗情報｜温泉ペンション銀河",
-      "sourceQuote": "電話番号 01658-5-3775 ご予約受付時間 午後3時～午後10時｜クレジットカード ご利用いただけません。",
+      "articleExcerpt": "館內三間餐廳不管吃自助還是創作料理，飲料都是自己拿、喝到飽",
+      "sourceUrl": "https://www.hotel-taisetsu.com/",
+      "sourceTitle": "【公式】ホテル大雪 ONSEN & CANYON RESORT",
+      "sourceQuote": "3つのレストラン、「季饗庵」「inankul（イナンクル）「HINNAの森」が、2025年11月よりすべて「FREE FLOW STYLE」…お好きなお飲み物を、お好きなだけチョイス",
       "verdict": "verified",
-      "notes": "第 1 輪備註的「傳真」已拿掉，現在只寫電話，與官網一致。（2026-11-01 第 2 輪重開確認）"
+      "notes": "季饗庵只給和房雪花的住客。"
     },
     {
       "claimId": "C40",
-      "articleExcerpt": "要爬山的人可以住Sounkyo Hostel（層雲峡ホステル），員工熟悉登山與步道的最新狀況。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=23",
-      "sourceTitle": "層雲峡ホステル｜層雲峡観光協会",
-      "sourceQuote": "登山や自然に関することならなんでも聞いてください。現在の登山道の情報はもちろん…",
+      "articleExcerpt": "館內三間餐廳不管吃自助還是創作料理，飲料都是自己拿、喝到飽，大約30種，有自家精釀啤酒、葡萄酒、燒酎、威士忌和日本酒，愛喝酒的人很適合。",
+      "sourceUrl": "https://www.hotel-taisetsu.com/",
+      "sourceTitle": "【公式】ホテル大雪 ONSEN & CANYON RESORT",
+      "sourceQuote": "ソフトドリンクはもちろん、ホテル大雪オリジナルのクラフトビールをはじめ、ワインや焼酎、ウイスキー、日本酒、ノンアルコールビールなど約30種類取り揃えております。",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "第 2 輪複查（2026-11-18）：約 30 種改成指全部飲料，列的酒類都在官網原文裡（ホテル大雪オリジナルのクラフトビール、ワイン、焼酎、ウイスキー、日本酒）。"
     },
     {
       "claimId": "C41",
-      "articleExcerpt": "這間由舊青年旅館改裝的背包客棧離層雲峽巴士總站走路7分鐘。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=23",
-      "sourceTitle": "層雲峡ホステル｜層雲峡観光協会",
-      "sourceQuote": "数年前に閉館してしまったユースホステルを改修したゲストハウスです。｜（access）層雲峡バスセンター下車。そこから徒歩7分。",
+      "articleExcerpt": "房型有住得下6人的Canyon View和洋室、能帶寵物的房間，也有房間自帶露天浴池的和房「雪花」。",
+      "sourceUrl": "https://www.hotel-taisetsu.com/stay.php",
+      "sourceTitle": "ホテル大雪｜客室",
+      "sourceQuote": "キャニオンビュー和洋室 広さ56.3㎡ ／ 定員6名／ペットルーム（ツインタイプ）…定員4名／和房 雪花 源泉から引いたお部屋備え付けの露天風展望風呂",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "官方叫「露天風展望風呂」，寫成露天浴池可接受。"
     },
     {
       "claimId": "C42",
-      "articleExcerpt": "冬天不開，營業季在夏天到秋天，下一季的日期出發前到官網確認。",
-      "sourceUrl": "https://www.sounkyo-hostel.com/booking2023",
-      "sourceTitle": "予約｜層雲峡ホステル",
-      "sourceQuote": "●2026シーズンの営業期間は6月18日(木)から10月13日(火)のチェックインまでです。",
+      "articleExcerpt": "有住客反應房間舊、最便宜的和室三個人住就擠",
+      "sourceUrl": "https://www.hotel-taisetsu.com/stay.php",
+      "sourceTitle": "住客評論統整 R46",
+      "sourceQuote": "說舊：Trip.com 11 則、4travel 1 則；說小或擠：Trip.com 5 則、Google 1 則（三人就擠）（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀 Trip.com、4travel、Google 地圖）",
       "verdict": "verified",
-      "notes": "6/18～10/13 是夏天到秋天，成立；2027 年期間官網未公布，「出發前到官網確認」是做法。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C43",
-      "articleExcerpt": "上川站周邊的3間規模都不大。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=102",
-      "sourceTitle": "KAMIKAWA HOTEL｜層雲峡観光協会",
-      "sourceQuote": "8室（シングル6室、ダブル2室）｜（content=106）2階は４部屋のマイクロホテル｜（content=97）部屋数 和室15室",
+      "articleExcerpt": "（已刪）也有人說房間保養得不錯。",
+      "sourceUrl": "https://www.hotel-taisetsu.com/stay.php",
+      "sourceTitle": "住客評論統整 R46",
+      "sourceQuote": "（第 2 輪：句子已從正文刪除，不再是正文主張）",
       "verdict": "verified",
-      "notes": "自己重算：8、4、15 間，最大 15 間，「都不大」成立。（2026-11-01 重開確認）"
+      "notes": "第 2 輪複查（2026-11-18）：這句已刪，正文改成「有住客反應房間舊、最便宜的和室三個人住就擠。」，前半句見 C42。"
     },
     {
       "claimId": "C44",
-      "articleExcerpt": "KAMIKAWA HOTEL是商務旅館，不供早餐，不過隔壁就是Seicomart。",
-      "sourceUrl": "https://primenet2010.biz/kamikawa-hotel/",
-      "sourceTitle": "KAMIKAWA HOTEL",
-      "sourceQuote": "JR上川駅から徒歩3分の ビジネスホテル｜すぐ隣にはコンビニエンスストア（セイコーマート）｜朝食のご提供はおこなっておりません。",
+      "articleExcerpt": "人多的話，訂房時就選大一點的房型。",
+      "sourceUrl": "https://www.hotel-taisetsu.com/stay.php",
+      "sourceTitle": "ホテル大雪｜客室",
+      "sourceQuote": "和室 定員4～5名／キャニオンビュー和洋室 定員6名／和洋室 定員6名",
       "verdict": "verified",
-      "notes": "「唯一」已拿掉，只寫官網自稱的ビジネスホテル，成立。（2026-11-01 第 2 輪重開確認）"
+      "notes": "建議句，房型定員有官方依據。"
     },
     {
       "claimId": "C45",
-      "articleExcerpt": "ANSHINDO由舊安心堂藥局改裝，1樓是咖啡酒吧，2樓是4間房的微型旅館。房間有家庭房1間、雙人房1間與雙床房2間。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=106",
-      "sourceTitle": "ANSHINDO｜層雲峡観光協会",
-      "sourceQuote": "旧安心堂薬局をリノベーション｜1階は朝から夜までやっているカフェバーとギフトショップ、2階は４部屋のマイクロホテル｜ダブルルーム１部屋、ツインルーム２部屋、ファミリールーム１部屋",
+      "articleExcerpt": "層雲峽觀光飯店的峽谷大露天「宇旅璃」就在石狩川旁邊，大約200坪，穿飯店的專用湯衣男女混浴，全家可以一起泡，小孩也有兒童湯衣。",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/onsen",
+      "sourceTitle": "温泉｜層雲峡観光ホテル",
+      "sourceQuote": "約200坪の敷地に…露天風呂の側には石狩川…宇旅璃専用の湯衣着用で男女混浴となっておりますので、ご家族皆様で…お子様用の湯衣もございます。",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "200 坪是敷地面積（池本身約 100 坪），正文說整個露天區，可接受。"
     },
     {
       "claimId": "C46",
-      "articleExcerpt": "上川莊的房間都是和室。附早晚兩餐，不過浴室與廁所共用。",
-      "sourceUrl": "https://kamikawasou.com/faq.html",
-      "sourceTitle": "よくある質問｜民宿上川荘",
-      "sourceQuote": "はい、朝食と夕食をお出ししています。｜お風呂・トイレは共同です。｜（content=97）部屋数 和室15室",
+      "articleExcerpt": "它是溫泉街規模最大的旅館之一，從巴士總站走約5分鐘",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=5",
+      "sourceTitle": "【層雲峡】層雲峡観光ホテル｜層雲峡観光協会",
+      "sourceQuote": "層雲峡温泉最大級の旅館／層雲峡バスターミナル 徒歩 約5分（官網 map）",
       "verdict": "verified",
-      "notes": "觀光協會只列和室 15 室，沒有洋室。（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C47",
-      "articleExcerpt": "離JR上川站與上川站前巴士站都是走路8分鐘。",
-      "sourceUrl": "https://kamikawasou.com/access.html",
-      "sourceTitle": "アクセス｜民宿上川荘",
-      "sourceQuote": "鉄道：JR上川駅 徒歩8分｜バス：バス停 上川駅前 徒歩8分",
+      "articleExcerpt": "不過分成本館和別館兩棟，住哪一邊會影響走動。",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/kannai",
+      "sourceTitle": "館内施設｜層雲峡観光ホテル",
+      "sourceQuote": "当ホテルの正面玄関向かって左が「純和風高級別館 四季」、右が「本館 彩花」／住客 R59 兩平台以上說兩棟之間要走連通道與樓梯",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": "官方兩棟＋住客說法，推論成立。"
     },
     {
       "claimId": "C48",
-      "articleExcerpt": "溫泉街外的清川有國道39號旁的旅莊望岳園（旅荘望岳園），要爬Niseikaushuppe山（ニセイカウシュッペ山）的話很方便。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=29",
-      "sourceTitle": "旅荘望岳園｜層雲峡観光協会",
-      "sourceQuote": "国道３９号線沿いにあり、お仕事やニセイカウシュッペ山への登山に便利です。｜北海道上川郡上川町清川",
+      "articleExcerpt": "大浴場和露天「昴」都是源泉100%，不加水、不加溫、不循環，也不加氯。",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/onsen",
+      "sourceTitle": "温泉｜層雲峡観光ホテル",
+      "sourceQuote": "良質な源泉100％の温泉／加水 加温 循環 放流 塩素：大浴場 × × × ○ ×／露天風呂 × × × ○ ×",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C49",
-      "articleExcerpt": "同一區的層雲峽汽車露營場（層雲峡オートキャンプ場）有小木屋、帳篷區與汽車營位，營業季在5月到10月左右，冬天不開。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=51",
-      "sourceTitle": "層雲峡オートキャンプ場｜層雲峡観光協会",
-      "sourceQuote": "バンガロー・テントサイト・オートキャンプサイトなど｜上川郡上川町清川｜期間 2026年5月1日～2026年10月31日",
+      "articleExcerpt": "官方訂房有純住宿方案，也有附早餐和一泊二食，不想吃飯店晚餐的人可以自己選。",
+      "sourceUrl": "https://www6.489pro.com/asp/489/menu.asp?id=01000035&ty=lim,ser&list=YES&lan=JPN",
+      "sourceTitle": "層雲峡観光ホテル 宿泊プラン（489pro）",
+      "sourceQuote": "【スタンダードプラン｜素泊まり】／…／朝食付／【スタンダードプラン｜2食付】",
       "verdict": "verified",
-      "notes": "只有 2026 一季資料，寫「5月到10月左右」沒有變強，成立。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C50",
-      "articleExcerpt": "愛山溪溫泉的旅館在大雪山登山口、標高約1,000公尺的地方，營業期間是每年5月到10月。",
-      "sourceUrl": "https://aizankei.npokamui.org/access/",
-      "sourceTitle": "アクセス｜愛山渓温泉",
-      "sourceQuote": "大雪山の登山口標高約1,000mにひっそりと佇む愛山渓温泉。｜営業期間 毎年5月〜10月",
+      "articleExcerpt": "帶小孩去的話，官方訂房還有能免費升級到別館的家庭方案。",
+      "sourceUrl": "https://www6.489pro.com/asp/489/menu.asp?id=01000035&ty=lim,ser&list=YES&lan=JPN",
+      "sourceTitle": "層雲峡観光ホテル 宿泊プラン（489pro）",
+      "sourceQuote": "【ファミリーに◎室数限定】＜別館へ無料アップグレード★＞家族みんなで温泉、そんな願いが叶う宿",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "室數限定。"
     },
     {
       "claimId": "C51",
-      "articleExcerpt": "這裡沒有公車到得了，可以在預約表單申請免費接送，或從JR上川站搭計程車、自己開車，約25公里、車程約30分鐘。接送的地點在旅館回覆預約時一併確認。",
-      "sourceUrl": "https://aizankei.npokamui.org/reserve/",
-      "sourceTitle": "ご予約｜愛山渓温泉",
-      "sourceQuote": "無料送迎について 必須 送迎を希望する 送迎を希望しない｜メッセージを確認して、担当者から宿泊可能か順次返信いたします。｜（access）上川駅から愛山渓温泉までは公共交通機関の運行がありませんのでタクシーをご利用ください。（JR上川駅より約25km）｜最寄駅 JR石北本線「上川」駅 車で約30分",
+      "articleExcerpt": "住過的人說本館和別館之間要走連通道、上下樓梯，餐廳和大浴場又都在別館，所以拖著行李的話住別館比較方便。",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/kannai",
+      "sourceTitle": "住客評論統整 R59",
+      "sourceQuote": "Trip.com 3 則、4travel 3 則、Google 1 則（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀 Trip.com、4travel、Google 地圖）；バイキング会場 ユーカラ フロア 2F（別館「四季」）（官網 kannai）",
       "verdict": "verified",
-      "notes": "預約頁與交通頁都沒寫接送的出發地點，「回覆預約時一併確認」是做法建議，沒寫成事實。（2026-11-01 第 2 輪重開確認）"
+      "notes": "餐廳在別館有官方依據；大浴場位置今天讀到的官網頁沒寫，住客說法達門檻。"
     },
     {
       "claimId": "C52",
-      "articleExcerpt": "開車是從國道39號的愛山溪休息站（愛山渓ドライブイン）旁轉進道道223號，再開約20公里，沿路沒有便利商店與加油站。",
-      "sourceUrl": "https://aizankei.npokamui.org/access/",
-      "sourceTitle": "アクセス｜愛山渓温泉",
-      "sourceQuote": "国道39号線「愛山渓ドライブイン」横より、道道223号線「愛山渓上川線」を約20km走ります｜道中にコンビニやガソリンスタンドはございません",
+      "articleExcerpt": "另外別館全館禁菸，吸菸房只在本館，介意菸味的人一樣選別館。",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/faq",
+      "sourceTitle": "よくある質問｜層雲峡観光ホテル",
+      "sourceQuote": "別館四季は全室禁煙、本館彩花は禁煙ルームと喫煙ルームがございます。",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C53",
-      "articleExcerpt": "9月下旬以後可能下雪，開車前往要準備冬季輪胎。",
-      "sourceUrl": "https://aizankei.npokamui.org/access/",
-      "sourceTitle": "アクセス｜愛山渓温泉",
-      "sourceQuote": "9月下旬以降は雪が降る可能性がありますので、冬用タイヤなどの準備の上でお越しください。",
+      "articleExcerpt": "HOTEL KUMOI走1分鐘就到黑岳纜車，到巴士總站也只要3分鐘",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=22",
+      "sourceTitle": "【層雲峡】HOTEL KUMOI｜層雲峡観光協会",
+      "sourceQuote": "バスターミナルから徒歩わずか3分、黒岳ロープウェイまで徒歩わずか1分",
       "verdict": "verified",
-      "notes": "「可能」對應「可能性」，「要準備」對應「準備の上で」，沒變強。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C54",
-      "articleExcerpt": "愛山溪溫泉的本館是100%源泉放流的溫泉，住宿附早晚兩餐。",
-      "sourceUrl": "https://aizankei.npokamui.org/about/",
-      "sourceTitle": "愛山渓温泉について",
-      "sourceQuote": "100%源泉かけ流しの入浴施設｜（lodge）大人（1泊2食付）",
+      "articleExcerpt": "不過房間全是榻榻米的小房間，也沒有露天浴池。",
+      "sourceUrl": "https://www.hotelkumoi.com/",
+      "sourceTitle": "ホテル雲井",
+      "sourceQuote": "全室畳敷きのこぢんまりとしたお部屋／露天風呂、豪華な食事はご用意できないかもしれません（chillnn 官方預約頁）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "官方是「可能沒有」的客氣講法，設施清單只有「温泉」；住客 R72 也說只有室內池。可接受。"
     },
     {
       "claimId": "C55",
-      "articleExcerpt": "別館是登山用的山屋，只能純住宿，寢具與食材都要自己準備。",
-      "sourceUrl": "https://aizankei.npokamui.org/about/",
-      "sourceTitle": "愛山渓温泉について",
-      "sourceQuote": "古くから登山のベースキャンプとして親しまれてきた、山小屋風の宿泊施設です。素泊まり専用の施設で…寝具や食材、食器などはご自分でご用意ください。",
+      "articleExcerpt": "在Trip.com上，它叫雲居飯店。",
+      "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-7980205/hotel-kumoi/",
+      "sourceTitle": "雲居飯店：2026 上川町住宿推薦與最新訂房優惠｜Trip.com",
+      "sourceQuote": "<title>雲居飯店：2026 上川町住宿推薦與最新訂房優惠｜Trip.com</title>",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C56",
-      "articleExcerpt": "館內手機收不到訊號。",
-      "sourceUrl": "https://aizankei.npokamui.org/",
-      "sourceTitle": "愛山渓温泉",
-      "sourceQuote": "携帯電話の電波さえ届かない静寂のなか、自家水力発電の灯り",
+      "articleExcerpt": "溫泉是100%源泉放流的單純硫磺泉，湯色每天不一樣，水質接近鹼性，摸起來很柔和。",
+      "sourceUrl": "https://www.hotelkumoi.com/",
+      "sourceTitle": "ホテル雲井",
+      "sourceQuote": "源泉掛け流し百パーセントの単純硫黄温泉／アルカリ性に近い泉質で、肌触りが柔らかい／日によってお湯の色合いが変化します（觀光協會 content=22）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C57",
-      "articleExcerpt": "2026年起由上川町委託NPO法人Kamui（特定非営利活動法人かむい）經營，之前叫愛山溪俱樂部（愛山渓倶楽部），訂房或查資料時可能還會看到這個舊名。",
-      "sourceUrl": "https://aizankei.npokamui.org/about/",
-      "sourceTitle": "愛山渓温泉について",
-      "sourceQuote": "2001（平成13）年 「愛山渓倶楽部」に名称変更｜2026（令和8）年 上川町から「 特定非営利活動法人かむい 」に運営委託が開始される",
+      "articleExcerpt": "早餐有住客稱讚好吃、看得出用心。",
+      "sourceUrl": "https://www.chillnn.com/ja/170bdaa1df41f7",
+      "sourceTitle": "住客評論統整 R69",
+      "sourceQuote": "Trip.com 21 則中 10 則正面、Google 5 則中 2 則正面（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀 Trip.com、4travel、Google 地圖）",
       "verdict": "verified",
-      "notes": "觀光協會 content=27 仍標「愛山渓倶楽部」，「可能還會看到」成立。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C58",
-      "articleExcerpt": "冬天按固定時刻開、每天1班的旅館接駁巴士，有朝陽亭與朝陽度假飯店的札幌、旭川線，以及層雲峽觀光飯店的旭川線。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "お迎えのバス（札幌発）札幌駅北口 13:00…お迎えのバス（旭川発）旭川駅1条通6丁目 14:30｜（觀光飯店 FAQ）1日1本…往路：旭川スマイルホテル前 14：00発",
+      "articleExcerpt": "官網訂房有一泊二食、附早餐和純住宿三種方案",
+      "sourceUrl": "https://www.chillnn.com/ja/170bdaa1df41f7/plan/",
+      "sourceTitle": "層雲峡温泉 ホテル雲井 | 公式予約",
+      "sourceQuote": "夕食・朝食付き／朝食付き／素泊まり",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C59",
-      "articleExcerpt": "大雪飯店冬天也有從旭川站出發的接駁巴士，層雲閣有自家的層雲閣號。這兩家都要預約，發車時間在預約時向旅館確認。",
-      "sourceUrl": "http://www.hotel-taisetsu.com/access.php",
-      "sourceTitle": "アクセス｜ホテル大雪",
-      "sourceQuote": "送迎バス(期間限定・要予約)｜（層雲閣 access）層雲閣号 完全予約制",
+      "articleExcerpt": "冬天的12月到3月也有日子訂得到",
+      "sourceUrl": "https://www.chillnn.com/ja/170bdaa1df41f7",
+      "sourceTitle": "層雲峡温泉 ホテル雲井 | 公式予約",
+      "sourceQuote": "（日曆 2026年12月～2027年03月，多數日期顯示價格可選，facts-extra KB1）",
       "verdict": "verified",
-      "notes": "兩家官網都沒公布時刻，「預約時確認」是做法建議。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "訂房日曆（今天沒有重開：此頁要執行 JavaScript，urllib 只讀到空殼；用 facts-extra.md 的瀏覽器摘錄判定）"
     },
     {
       "claimId": "C60",
-      "articleExcerpt": "朝陽亭與朝陽度假飯店的接駁巴士在2026年10月1日到2027年3月31日行駛，住宿客要預約才能搭。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "※札幌発着送迎バスは2026年10月1日から2027年3月31日までの運行となります。 旭川発着送迎バスは2026年10月1日から2027年3月31日までの運行となります。…送迎バスをご希望するお客様は、【 送迎バス予約お申し込みフォーム 】から",
+      "articleExcerpt": "帶0到5歲的小孩不另外收費。",
+      "sourceUrl": "https://www.chillnn.com/ja/170bdaa1df41f7",
+      "sourceTitle": "層雲峡温泉 ホテル雲井 | 公式予約",
+      "sourceQuote": "キッズポリシー 0〜5歳 ：大人料金の0%",
       "verdict": "verified",
-      "notes": "表單必填住宿預約編號，限住宿客。（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C61",
-      "articleExcerpt": "去程表：札幌站北口 13:00 → 朝陽度假飯店 16:30、朝陽亭 16:40；旭川1條通6丁目 14:30 → 朝陽度假飯店 16:00、朝陽亭 16:10",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "お迎えのバス（札幌発） 出発時刻 札幌駅北口 13:00 砂川SA 休憩 朝陽リゾートホテル 16:30(到着) 朝陽亭 16:40(到着)｜お迎えのバス（旭川発） 出発時刻 旭川駅1条通6丁目 14:30 とうま道の駅 休憩 朝陽リゾートホテル 16:00(到着) 朝陽亭 16:10(到着)",
+      "articleExcerpt": "官網的訂房日曆有些日子不開放預約，所以先看日曆再排行程",
+      "sourceUrl": "https://www.chillnn.com/ja/170bdaa1df41f7",
+      "sourceTitle": "層雲峡温泉 ホテル雲井 | 公式予約",
+      "sourceQuote": "（日曆上該日只顯示「／」，沒有價格，facts-extra KB2）",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": "訂房日曆（今天沒有重開：此頁要執行 JavaScript，urllib 只讀到空殼；用 facts-extra.md 的瀏覽器摘錄判定）；正文沒寫成公休日，符合研究紀錄的保守寫法。"
     },
     {
       "claimId": "C62",
-      "articleExcerpt": "回程表：朝陽亭出發 9:00、朝陽度假飯店出發 9:10 → 札幌站北口 12:30；朝陽亭 9:30、朝陽度假飯店 9:40 → 旭川1條通6丁目 11:30",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "お送りのバス（朝陽亭発） 出発時刻 朝陽亭 9:00 朝陽リゾートホテル 9:10 砂川SA 休憩 札幌駅北口 12:30(到着)｜朝陽亭 9:30 朝陽リゾートホテル 9:40 とうま道の駅 休憩 旭川駅1条通6丁目 11:30(到着)",
+      "articleExcerpt": "另外前一天才取消要付全額。",
+      "sourceUrl": "https://www.chillnn.com/ja/170bdaa1df41f7",
+      "sourceTitle": "層雲峡温泉 ホテル雲井 | 公式予約",
+      "sourceQuote": "キャンセルポリシー 1日前 ：税込料金の100%",
       "verdict": "verified",
-      "notes": "已補朝陽度假飯店 9:10／9:40。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C63",
-      "articleExcerpt": "兩條線都是下午出發、隔天上午回。上午在旭川或札幌逛完再搭車進層雲峽，隔天中午前後就回到市區。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "札幌駅北口 13:00｜旭川駅1条通6丁目 14:30｜札幌駅北口 12:30(到着)｜旭川駅1条通6丁目 11:30(到着)",
+      "articleExcerpt": "湯元銀泉閣：走約2分鐘到黑岳纜車，自家源泉100%放流，有露天浴池和家庭湯屋",
+      "sourceUrl": "https://breezbay-group.com/ginsenkaku/bath/index.html",
+      "sourceTitle": "温泉｜湯元銀泉閣",
+      "sourceQuote": "黒岳ロープウェイまで徒歩で約2分（access）／自家源泉100％かけ流し／足湯、大浴場、露天風呂、家族風呂",
       "verdict": "verified",
-      "notes": "自己重算：去程 13:00、14:30 都是下午；回程 9:00、9:30 發車，11:30、12:30 到，「中午前後」成立。"
+      "notes": ""
     },
     {
       "claimId": "C64",
-      "articleExcerpt": "單程車資札幌2,500日圓、旭川1,000日圓，含稅、大人小孩同價，在旅館付。在官網訂房的住客，接駁車資可以折500日圓。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "【ご料金：片道 お一人 2,500円税込み（大人・小人同料金）】｜【ご料金：片道 お一人 1,000円税込み（大人・小人同料金）】｜送迎バス利用料金のお支払いは、ホテルにてお願いいたします。｜※公式ホームページから宿泊を予約されたお客様は、500円割引で送迎バスをご利用いただけます。",
+      "articleExcerpt": "晚餐是三種鍋任選的自助，早餐有鮭魚卵吃到飽。",
+      "sourceUrl": "https://breezbay-group.com/ginsenkaku/",
+      "sourceTitle": "【公式】湯元銀泉閣",
+      "sourceQuote": "朝夕バイキング 夜は火鍋／朝はいくらの食べ放題が人気／選べる3種の鍋 + ハーフバイキング & 飲み放題（restaurant）",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": "三種鍋是人氣第一的方案（另有御膳＋半自助、夏季 BBQ）；嚴格說是「半自助」，概括可接受。"
     },
     {
       "claimId": "C65",
-      "articleExcerpt": "札幌是在JR札幌站北口的團體巴士乘車處集合，司機拿著「層雲峡札幌Express」的牌子，從發車前15分鐘開始等。旭川是在1條通6丁目昭和通旁的Smile Hotel旭川（スマイルホテル旭川）門口上車，由司機受理，車身寫著「朝陽亭・朝陽リゾートホテル行き」。",
-      "sourceUrl": "https://www.choyotei.com/faq/",
-      "sourceTitle": "よくあるご質問｜層雲峡朝陽亭",
-      "sourceQuote": "JR札幌駅北口団体バス乗り場に集合となります。ドライバーが層雲峡札幌Expressのカードを持って、バスセンターに15分前からお待ちしております。｜旭川市1条通6丁目昭和通り沿いにございます、スマイルホテル旭川の前にバスが停車いたします。乗車受付はバスのドライバーが行います｜無料送迎バスには、「朝陽亭・朝陽リゾートホテル行き」と書かれております。",
+      "articleExcerpt": "現在官方訂房沒有開放預約，想住的話先看官網。",
+      "sourceUrl": "https://breezbay-group.com/ginsenkaku/",
+      "sourceTitle": "【公式】湯元銀泉閣",
+      "sourceQuote": "現在、ご予約いただけるプランはありません。（d-reserve，facts-extra KB5）",
       "verdict": "verified",
-      "notes": "FAQ 同題仍寫上一季期間，乘車處沿用；交通頁也寫「出発の15分前にご集合下さい」，一致。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "第 2 輪複查（2026-11-18）：「這一季從4月25日開始營業」已刪。d-reserve 預約頁今天沒有重開（要執行 JavaScript，用 facts-extra.md KB5 的瀏覽器摘錄判定）。"
     },
     {
       "claimId": "C66",
-      "articleExcerpt": "接駁巴士和房間分開訂。訂好房間後到官網的接駁巴士申請表單，填上住宿的預約姓名、預約編號與入住日，收到旅館回信才算訂好。",
-      "sourceUrl": "https://www.noguchi-g.com/contact-bus/?bus_fac_id=5",
-      "sourceTitle": "送迎バス予約お申し込みフォーム｜野口観光グループ",
-      "sourceQuote": "予約登録名 ※ フリガナ ※ 予約番号1 … ※ チェックイン日｜バス予約は私どもからの返信で初めて成立いたします。",
+      "articleExcerpt": "民宿山之上：經過Canyon Mall和黑岳之湯（黒岳の湯）相連，走1分鐘就到纜車，房間是和室，也有能帶寵物同住的房間。",
+      "sourceUrl": "https://pen-yamanoue.com/",
+      "sourceTitle": "リゾートペンション山の上",
+      "sourceQuote": "キャニオンモールで宿と層雲峡温泉「黒岳の湯」が直結。層雲峡ロープウエイもおみやげ通りを直進1分／ペットと一緒に泊まれるお部屋をご用意しました／和室6畳、8畳、12畳（全14室）（觀光協會 content=69）",
       "verdict": "verified",
-      "notes": "表單只讀不填。（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C67",
-      "articleExcerpt": "網路申請到住宿日3天前截止，住宿日2天前以內要直接聯絡旅館的訂房中心。",
-      "sourceUrl": "https://www.noguchi-g.com/contact-bus/?bus_fac_id=5",
-      "sourceTitle": "送迎バス予約お申し込みフォーム｜野口観光グループ",
-      "sourceQuote": "インターネットでのシャトルバス申し込みは3日前まで可能で御座いますが…｜ご宿泊日2日前までのバスのご予約につきましては、直接各ホテルの予約センターまでお問い合わせ下さいませ。",
+      "articleExcerpt": "民宿Todate（民宿とだて）：只做純住宿，和黑岳之湯相連、附入浴券，1到2人房是洋室、3到4人房是和室。",
+      "sourceUrl": "http://m-todate.com/",
+      "sourceTitle": "素泊り宿とだて",
+      "sourceQuote": "当宿は素泊まり専用民宿です／隣接する黒岳の湯の入浴券付きです／１名部屋・２名部屋は洋室、３〜４名部屋は和室／黒岳の湯直結（觀光協會 content=21）",
       "verdict": "verified",
-      "notes": "第 1 輪 unsupported（寫成「搭車」3 天前），已改成住宿日，與下一句同一基準。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C68",
-      "articleExcerpt": "表單之外也接受電話申請，受理時間是10:00到17:00。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "送迎バスをご希望するお客様は、【 送迎バス予約お申し込みフォーム 】からお願い致します。お電話【0570-026572（10：00～17：00）】でもお承り可能です。",
+      "articleExcerpt": "預約用電話或日本的訂房網站Jalan，冰瀑祭期間（2027年2月）的房間12月底前會放上Jalan。",
+      "sourceUrl": "http://m-todate.com/yoyaku.html",
+      "sourceTitle": "民宿とだて 予約方法",
+      "sourceQuote": "ご予約はお電話又は宿泊予約サイト じゃらんさんから／2027年2月の予約（氷瀑まつり期間）は１２月末までに予約サイト「じゃらん」に掲載いたします。（首頁）",
       "verdict": "verified",
-      "notes": "新加句。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C69",
-      "articleExcerpt": "改訂或重訂房間時，接駁也要重新申請。",
-      "sourceUrl": "https://www.noguchi-g.com/contact-bus/?bus_fac_id=5",
-      "sourceTitle": "送迎バス予約お申し込みフォーム｜野口観光グループ",
-      "sourceQuote": "宿泊予約の変更や取り直しをされた場合、バスのご予約も再度必要となります。",
+      "articleExcerpt": "民宿銀河（温泉ペンション銀河）：泡的是100%源泉放流的單純硫磺泉，吃的是一泊二食的和食",
+      "sourceUrl": "https://sounkyo-ginga.com/shop.php",
+      "sourceTitle": "【お店紹介】 層雲峡温泉ペンション銀河",
+      "sourceQuote": "天然温泉100％のペンション／単純硫黄泉、源泉かけ流し／Aタイプ 1泊2食付／ニジマスの刺身、山女・舞茸の天ぷら",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C70",
-      "articleExcerpt": "住宿日一週前都沒人預約的日子會停駛，5天前預約人數在10人以下也會停駛，這時去層雲峽的交通費要旅客自己負擔。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "※宿泊日の1週間前までにご予約のない日については、運休となりますのでご注意下さい。｜・宿泊日の5日前までにご予約の人数が10名以下の場合、運休とさせていただきます。…尚、運休時の交通費につきましては、お客様のご負担となります。",
+      "articleExcerpt": "不過預約要用電話或傳真，也不能刷卡。",
+      "sourceUrl": "https://sounkyo-ginga.com/shop.php",
+      "sourceTitle": "【お店紹介】 層雲峡温泉ペンション銀河",
+      "sourceQuote": "ご予約受付時間 午後3時～午後10時／FAX 01658-5-3771／クレジットカード ご利用いただけません。",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": "第 2 輪複查（2026-11-18）：改成「要用電話或傳真」，不再說「只收」；官網列電話受理時間與傳真號碼、沒有線上訂房；不能刷卡官方有寫。"
     },
     {
       "claimId": "C71",
-      "articleExcerpt": "8人以上的團體不能搭。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "※バスのお席には限りがありますので、8名以上の団体様のご利用はご遠慮いただいております。",
+      "articleExcerpt": "Sounkyo Hostel：舊青年旅館改的平價住宿，有男女分開的多人房和和室的私人房間，淋浴和廁所共用。",
+      "sourceUrl": "https://www.sounkyo-hostel.com/",
+      "sourceTitle": "【公式】層雲峡ホステル",
+      "sourceQuote": "プライベートが確保できる男女別の 相部屋と、 ゆったり和室の個室があります。 どちらもトイレ・シャワーは共有です。／閉館してしまったユースホステルを改修したゲストハウス（觀光協會 content=23）",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C72",
-      "articleExcerpt": "層雲峽觀光飯店的接駁車在11月1日到4月30日每天1班，是8人座的廂型車。",
-      "sourceUrl": "https://sounkyo-kankou.co.jp/map",
-      "sourceTitle": "アクセス｜層雲峡観光ホテル",
-      "sourceQuote": "・11月〜4月 毎日運行 ご送迎⾞は、ワゴン⾞（8名乗り）となります。｜（FAQ）運行期間11月1日～4月30日まで1日1本",
+      "articleExcerpt": "冬天休館，2027年的預約預定4月1日開放。",
+      "sourceUrl": "https://www.sounkyo-hostel.com/",
+      "sourceTitle": "【公式】層雲峡ホステル",
+      "sourceQuote": "【現在冬季休館中】…2027年の予約開始日は2027年4月1日を予定しております。",
       "verdict": "verified",
-      "notes": "新加 8 人座。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C73",
-      "articleExcerpt": "去程14:00從旭川1條通6丁目昭和通旁的Tabist旭川車站飯店（Tabist 旭川ステーションホテル）門口出發，15:30到飯店，發車15分鐘前要到乘車處。回程10:00從飯店出發，11:30回到旭川。",
-      "sourceUrl": "https://sounkyo-kankou.co.jp/map",
-      "sourceTitle": "アクセス｜層雲峡観光ホテル",
-      "sourceQuote": "乗り場:1条6丁⽬（昭和通）Tabist 旭川ステーションホテル前 ※乗り場に出発の15分前にご集合下さい。 往路 14:00 Tabist 旭川ステーションホテル前発 15:30 層雲峡観光ホテル着 復路 10:00 層雲峡観光ホテル発 11:30 Tabist 旭川ステーションホテル前着",
+      "articleExcerpt": "溫泉街以外，這裡整理上川站周邊的KAMIKAWA HOTEL和上川莊，以及山裡和國道邊的兩處。",
+      "sourceUrl": "https://sounkyo.net/stay/",
+      "sourceTitle": "泊る｜層雲峡観光協会",
+      "sourceQuote": "【上川駅周辺】ANSHINDO／【上川駅周辺】上川荘／【上川駅周辺】KAMIKAWA HOTEL；【愛山渓】愛山渓倶楽部／愛山渓ヒュッテ；【東雲】Cafe＆Stay with dog りんご村",
       "verdict": "verified",
-      "notes": "兩個官方頁不一致：同站 FAQ 寫「旭川スマイルホテル前」，交通頁（map）寫 Tabist 旭川ステーションホテル前。判斷正文照交通頁站得住：交通頁是接駁的專門說明，乘車處、到達時刻、車型、預約電話都比 FAQ 詳細，FAQ 只有兩行；兩者地址都是 1条通6丁目昭和通，平台資料（skyticket、l-tike）兩館地址同為旭川市1条通6丁目左10号，看起來是同一棟改名。照契約第 7 條取較新較詳細的官方頁。提醒讀者驗收：同一篇的朝陽亭線照朝陽亭 FAQ 寫「Smile Hotel旭川」，讀者會看到兩個名字指同一處，可考慮在其中一處加一句說明（需先有官方或可靠來源確認改名，目前只有地址一致）。（2026-11-01 第 2 輪重開確認）"
+      "notes": "第 2 輪複查（2026-11-18）：改成「這裡整理」，不再暗示上川站周邊只有兩間；兩間與兩處都在觀光協會清單上。"
     },
     {
       "claimId": "C74",
-      "articleExcerpt": "去回程都要在住宿日3天前打電話到飯店的訂房專線預約，客滿時可能訂不到，天候不佳也可能延誤或停駛。",
-      "sourceUrl": "https://sounkyo-kankou.co.jp/map",
-      "sourceTitle": "アクセス｜層雲峡観光ホテル",
-      "sourceQuote": "送迎ご希望のお客様は、往路・復路共に宿泊される⽇の3⽇前までに、お電話にて（01658-5-3145）ご予約下さい。 満席の場合はお断りする場合がございます。 天候その他の事情により、到着の遅れや運⾏中⽌になる場合がございます。",
+      "articleExcerpt": "KAMIKAWA HOTEL是JR上川站走3分鐘的小型商務旅館，不供早餐，不過每人每晚送一張隔壁Seicomart（セイコーマート）的500日圓券，訂房只能從官網訂。",
+      "sourceUrl": "https://primenet2010.biz/kamikawa-hotel/",
+      "sourceTitle": "【公式】KAMIKAWA HOTEL（カミカワホテル）",
+      "sourceQuote": "JR上川駅から徒歩3分／朝食のご提供はおこなっておりません。隣にあるコンビニ「セイコーマート 上川中央店」で使用できる500円チケットを1名様1泊あたり1枚を進呈／お電話での予約は承っておりません。公式サイト（当ホームページ）からご予約ください。",
       "verdict": "verified",
-      "notes": "FAQ 寫「ご利用日の3日前」，交通頁寫「往路・復路共に宿泊される日の3日前」；正文照交通頁寫住宿日，去程兩者一致，回程以交通頁較明確，站得住。01658-5-3145 頁面標為「宿泊予約」，「訂房專線」正確。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C75",
-      "articleExcerpt": "不方便講日文電話，可以改用飯店交通頁上的email詢問。",
-      "sourceUrl": "https://sounkyo-kankou.co.jp/map",
-      "sourceTitle": "アクセス｜層雲峡観光ホテル",
-      "sourceQuote": "TEL 01658-5-3145（宿泊予約） 01658-5-3101（代表） FAX 01658-5-3046 メール info@sounkyo-kankou.co.jp",
+      "articleExcerpt": "上川莊是JR上川站走8分鐘的和室旅館，附早晚餐，浴室廁所共用，預約用電話。",
+      "sourceUrl": "https://kamikawasou.com/faq.html",
+      "sourceTitle": "よくある質問｜民宿上川荘",
+      "sourceQuote": "JR上川駅 徒歩8分／朝食と夕食をお出ししています／お風呂・トイレは共同です／ご予約・お問い合わせ 01658-2-1405／和室15室（觀光協會 content=97）",
       "verdict": "verified",
-      "notes": "頁面列 email 為聯絡方式，沒寫可用 email 預約接駁；正文寫「詢問」，沒寫成可用 email 預約，成立。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C76",
-      "articleExcerpt": "層雲閣號是完全預約制，要在3天前打電話預約，出發地點與發車時間在電話預約時確認。車子準時發車，客滿時也可能搭不到。預約少的日子可能停駛。這班車不繞去旭山動物園，想順路去動物園要另外安排。",
-      "sourceUrl": "https://sounkaku.co.jp/access/",
-      "sourceTitle": "アクセス｜層雲閣",
-      "sourceQuote": "層雲閣号 完全予約制で安心 ご予約は電話で承っております。…※3日前までの予約制となります。 （但し、満車等でご利用いただけない場合もございます。） ※動物園は経由いたしませんのでご注意ください。 ※ご人数により小型車になる場合があります。 ※定刻発車とな…｜※ご予約状況により、運休とさせていただく場合がございます",
+      "articleExcerpt": "愛山溪溫泉（愛山溪俱樂部）在大雪山的登山口，只開5到10月，沒有大眾運輸，要從上川站開車約30分鐘。",
+      "sourceUrl": "https://aizankei.npokamui.org/access/",
+      "sourceTitle": "アクセス｜愛山渓温泉",
+      "sourceQuote": "大雪山の登山口標高約1,000m／営業期間 毎年5月〜10月／JR石北本線「上川」駅 車で約30分／公共交通機関の運行がありませんのでタクシーをご利用ください",
       "verdict": "verified",
-      "notes": "新加「準時發車」「客滿可能搭不到」照 F312 原文；交通頁沒有出發地點與時刻，「電話預約時確認」是做法。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C77",
-      "articleExcerpt": "不方便打日文電話，可以改住朝陽亭或朝陽度假飯店，那邊的接駁巴士用網路表單就能申請。",
-      "sourceUrl": "https://www.noguchi-g.com/contact-bus/?bus_fac_id=5",
-      "sourceTitle": "送迎バス予約お申し込みフォーム｜野口観光グループ",
-      "sourceQuote": "インターネットでのシャトルバス申し込みは3日前まで可能",
+      "articleExcerpt": "本館是一泊二食，用LINE或官網表單預約。",
+      "sourceUrl": "https://aizankei.npokamui.org/reserve/",
+      "sourceTitle": "ご予約｜愛山渓温泉",
+      "sourceQuote": "当施設へのご予約はLINE公式アカウント、もしくはメールフォームにてお問い合わせを承っております。／ロッジ本館宿泊（1泊2食付）",
       "verdict": "verified",
-      "notes": "建議句；朝陽兩館有網路表單成立。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C78",
-      "articleExcerpt": "大雪飯店的旭川站接駁巴士在10月中旬到4月下旬行駛，期間限定、要預約。湯元銀泉閣的接送一般只接15人以上的團體。",
-      "sourceUrl": "http://www.hotel-taisetsu.com/access.php",
-      "sourceTitle": "アクセス｜ホテル大雪",
-      "sourceQuote": "冬季期間中（10月中旬〜4月下旬）は、旭川駅からの便利な送迎バスも運行しております。｜送迎バス(期間限定・要予約)｜（銀泉閣）通常、団体15名様からのご送迎となります。",
+      "articleExcerpt": "旅莊望岳園在清川的國道39號旁，方便登Niseikaushuppe山（ニセイカウシュッペ山）。",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=29",
+      "sourceTitle": "【層雲峡】旅荘望岳園｜層雲峡観光協会",
+      "sourceQuote": "国道３９号線沿いにあり、お仕事やニセイカウシュッペ山への登山に便利です。／北海道上川郡上川町清川",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C79",
-      "articleExcerpt": "日期對不上接駁巴士，或當天沒有車可搭，就改搭從旭川出發的路線巴士…住朝陽亭或朝陽度假飯店的話，到層雲峽巴士總站後打電話，旅館會派免費接送車。",
-      "sourceUrl": "https://www.choyotei.com/access/",
-      "sourceTitle": "交通アクセス｜層雲峡朝陽亭",
-      "sourceQuote": "※層雲峡停留所から無料送迎車をご希望の方は、停留所に到着後TEL：0570-026572までご連絡ください。",
+      "articleExcerpt": "從旭川搭路線巴士到層雲峽約2小時",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "所要時間：1時間59分｜6:55 旭川駅前発 ⇒ 8:54 層雲峡着（〈層雲峽交通〉fact-check.json 引用）",
       "verdict": "verified",
-      "notes": "「層雲峡停留所」即巴士總站，見上方同類筆。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "第 2 輪複查（2026-11-18）：直達車 1 小時 59 分，「約2小時」成立（〈層雲峽交通〉查核紀錄）。"
     },
     {
       "claimId": "C80",
-      "articleExcerpt": "冬天住層雲峽，建議訂含晚餐的方案。",
-      "sourceUrl": "https://sounkyo.net/eat/",
-      "sourceTitle": "飲食｜層雲峡観光協会",
-      "sourceQuote": "ツリーバード 5月〜10月頃｜登山軒（11～5月は休業）",
+      "articleExcerpt": "| 朝陽亭 | 溫泉街高台 | 大浴場2處、露天1處 | 晚餐自助，也有早餐 | 札幌、旭川出發，付費、要預約 | 免費，約120台 | 官網、Trip.com、Agoda |",
+      "sourceUrl": "https://www.choyotei.com/faq/",
+      "sourceTitle": "よくある質問｜層雲峡 朝陽亭",
+      "sourceQuote": "大浴場が2カ所、露天風呂が1カ所／バイキングレストラン会場…夕食 18時00分～ 朝食 7時～9時／約120台ほど駐車可能",
       "verdict": "verified",
-      "notes": "建議句，依據是下一句冬天晚上的營業店數。"
+      "notes": "訂房管道對 booking-links.md。"
     },
     {
       "claimId": "C81",
-      "articleExcerpt": "觀光協會列的溫泉街餐廳裡，11月到4月晚上還開的只有Beer Grill Canyon（ビアグリル・キャニオン）與大雪山食堂，Tree Bird（ツリーバード）與登山軒冬天休業。",
-      "sourceUrl": "https://sounkyo.net/eat/",
-      "sourceTitle": "飲食｜層雲峡観光協会",
-      "sourceQuote": "【層雲峡】Taisetsu Bakery Café & Bar｜【層雲峡】ツリーバード｜【層雲峡】BLACK MOUNTAIN COFFEE by Columbia｜【層雲峡】ビアグリル・キャニオン｜【層雲峡】大雪山食堂｜【層雲峡】ともちゃん食堂黒岳店｜【層雲峡】登山軒｜（content=33）営業時間 5月〜10月頃｜（content=75）10～21時（11～5月は休業）",
+      "articleExcerpt": "| 朝陽度假飯店 | 溫泉街，對面是7-Eleven | 兩種源泉，大浴場2處、露天2處，包租湯屋 | 晚餐、早餐都是自助 | 和朝陽亭共用 | 免費，約100台 |",
+      "sourceUrl": "https://www.choyo-resort.com/faq/",
+      "sourceTitle": "よくある質問｜朝陽リゾートホテル",
+      "sourceQuote": "大浴場が2カ所、露天風呂が2カ所／夕食、朝食のバイキング／約100台ほど駐車可能／当館向かいにセブンイレブン",
       "verdict": "verified",
-      "notes": "2026-11-01 重開清單仍是這 7 家。Tomochan、BMC 只開白天；Bakery 觀光協會頁寫 20:00～22:30，但飯店與店家官網都只到 18:00，照官網。「觀光協會列的」限定跟著主詞，正確。（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C82",
-      "articleExcerpt": "Canyon晚上17:30開到20:30、20:00最後點餐，但每週二、三公休。",
-      "sourceUrl": "http://bg-canyon.com/",
-      "sourceTitle": "ビアグリル・キャニオン",
-      "sourceQuote": "●定 休 日 毎週火曜日、水曜日 ※メンテナンス、その他で臨時休業となる場合がございます。…夜17：30～20：30 （オーダーストップは20：00）",
+      "articleExcerpt": "| 層雲閣 | | 5樓峽谷露天、1樓大浴場 | 晚餐、早餐都是自助，飲料含在房價 | 層雲閣號，3天前電話預約 |",
+      "sourceUrl": "https://sounkaku.co.jp/hot-springs",
+      "sourceTitle": "温泉 - 層雲閣MOUNTAIN RESORT 1923",
+      "sourceQuote": "当館5階…露天風呂／1F マルモ大浴場／夕食ビュッフェ・朝食ビュッフェ（restaurants）／※3日前までの予約制（access）",
       "verdict": "verified",
-      "notes": "觀光協會 content=32 仍寫 17:30〜20:00、水曜定休，和店家官網不一致，照官網（研究記錄 F308）。（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C83",
-      "articleExcerpt": "大雪山食堂晚上開到20:30、不定休，碰上週二、週三能選的就只剩這家。",
-      "sourceUrl": "https://sounkyo.net/eat/detail.html?content=34",
-      "sourceTitle": "大雪山食堂｜層雲峡観光協会",
-      "sourceQuote": "営業時間 11:00〜15:00 17:30〜20:30 不定休",
+      "articleExcerpt": "| 大雪飯店 | 溫泉街最高處 | 大浴場3處、露天2處，有刺青不能泡 | 餐廳有自助和創作料理，飲料喝到飽 | 冬天從旭川站出發，免費、要預約 | 免費，100台 |",
+      "sourceUrl": "https://www.hotel-taisetsu.com/facility.php",
+      "sourceTitle": "ホテル大雪｜館内施設",
+      "sourceQuote": "３つの大浴場と２つの露天風呂／刺青・タトゥー…ご遠慮／ビュッフェダイニング「HINNAの森」・inankur 創作料理・FREE FLOW STYLE／駐車場 100台(無料)",
       "verdict": "verified",
-      "notes": "推論：Canyon 週二三休，觀光協會列的店晚上只剩大雪山食堂。（2026-11-01 重開確認）"
+      "notes": "免費接駁出自 talkappi FAQ（今天沒有重開：此頁要執行 JavaScript，urllib 只讀到空殼；用 facts-extra.md 的瀏覽器摘錄判定）"
     },
     {
       "claimId": "C84",
-      "articleExcerpt": "不含晚餐的話，從層雲峽觀光飯店走路約5分鐘就有24小時營業的7-Eleven與營業到23:00的Seicomart，Seicomart的時間隨季節變動。",
-      "sourceUrl": "https://sounkyo-kankou.co.jp/faq",
-      "sourceTitle": "よくあるご質問｜層雲峡観光ホテル",
-      "sourceQuote": "当館より徒歩5分ほどの距離に2件ございます。セブンイレブン 24時間営業 セイコーマート 7：00～23：00(季節により変動あり)",
+      "articleExcerpt": "| 層雲峽觀光飯店 | 巴士總站走約5分 | 穿湯衣的混浴大露天，大浴場源泉100% | 晚餐、早餐都是自助，也有純住宿方案 | 冬天從旭川出發，要預約 | 免費，80台 |",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/map",
+      "sourceTitle": "アクセス｜層雲峡観光ホテル",
+      "sourceQuote": "層雲峡バスターミナル 徒歩 約5分／普通自動車80台収容（無料）／11月〜4月 毎日運行…3⽇前までに、お電話にて／バイキング会場 ユーカラ 夕食・朝食（kannai）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C85",
-      "articleExcerpt": "如果住大雪飯店，東館地下1樓的居酒屋大雪茶屋晚上19:00開到24:00。",
-      "sourceUrl": "https://www.hotel-taisetsu.com/facility.php",
-      "sourceTitle": "館内施設｜ホテル大雪",
-      "sourceQuote": "居酒屋 大雪茶屋 東館地下1階 営業時間11:30-13:00 / 19:00-24:00…夜遅くまで営業しております。",
+      "articleExcerpt": "| HOTEL KUMOI | 纜車走約1分、巴士總站走約3分 | 硫磺泉源泉放流，沒有露天 | 一泊二食、附早餐、純住宿可選 |",
+      "sourceUrl": "https://www.chillnn.com/ja/170bdaa1df41f7/plan/",
+      "sourceTitle": "層雲峡温泉 ホテル雲井 | 公式予約",
+      "sourceQuote": "夕食・朝食付き／朝食付き／素泊まり；黒岳ロープウェイまで徒歩わずか1分（觀光協會）",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C86",
-      "articleExcerpt": "層雲峽觀光飯店有純住宿方案，也有晚餐自助餐廳Yukara（ユーカラ），18:00到20:30營業、20:00最後點餐。另一家餐廳Ajina（あじ菜）開到20:00。",
-      "sourceUrl": "https://sounkyo-kankou.co.jp/faq",
-      "sourceTitle": "よくあるご質問｜層雲峡観光ホテル",
-      "sourceQuote": "バイキングレストラン『ユーカラ』18:00～20:30(20:00ラストオーダー)｜お食事処『あじ菜』18：00～20：00｜（489pro）素泊まり",
+      "articleExcerpt": "| 湯元銀泉閣 | 纜車走約2分、巴士站走約5分 | 自家源泉放流，露天、家庭湯屋 | 晚餐火鍋自助、早餐自助 | 只接15人以上團體 | 滿了停隔壁的免費公共停車場 | 官網、電話，官網目前沒有開放預約 |",
+      "sourceUrl": "https://breezbay-group.com/ginsenkaku/access/index.html",
+      "sourceTitle": "アクセス｜湯元銀泉閣",
+      "sourceQuote": "層雲峡 徒歩 約5分／通常、団体15名様からのご送迎となります／満車の場合は隣接の公共駐車場をご利用ください。近隣施設・宿と提携していますので無料でご利用いただけます。／ご予約・お問い合わせ 01658-5-3003",
       "verdict": "verified",
-      "notes": "Yukara、Ajina 不在 glossary.json，羅馬拼音合理，建議補進譯名表。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "d-reserve 沒有可預約方案（今天沒有重開：此頁要執行 JavaScript，urllib 只讀到空殼；用 facts-extra.md 的瀏覽器摘錄判定）"
     },
     {
       "claimId": "C87",
-      "articleExcerpt": "民宿Todate只做純住宿，KAMIKAWA HOTEL不供早餐，不過兩家旁邊都有Seicomart。",
-      "sourceUrl": "http://m-todate.com/q-a.html",
-      "sourceTitle": "民宿とだて Q&A",
-      "sourceQuote": "当館のすぐ裏にセイコーマートがございます。｜（KAMIKAWA HOTEL）朝食のご提供はおこなっておりません。…すぐ隣にはコンビニエンスストア（セイコーマート）",
+      "articleExcerpt": "| 民宿山之上 | 溫泉街中心，纜車走約1分 | 直通黑岳之湯 |",
+      "sourceUrl": "https://pen-yamanoue.com/",
+      "sourceTitle": "リゾートペンション山の上",
+      "sourceQuote": "層雲峡温泉街の中心部に位置／「黒岳の湯」が直結／直進1分",
       "verdict": "verified",
-      "notes": "兩家旁邊是不同的 Seicomart，句子沒說是同一家。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C88",
-      "articleExcerpt": "上川莊附早晚兩餐，早餐6:00到8:00、晚餐18:00到20:00，趕不上晚餐時間可以聯絡民宿。",
-      "sourceUrl": "https://kamikawasou.com/faq.html",
-      "sourceTitle": "よくある質問｜民宿上川荘",
-      "sourceQuote": "朝食が6:00～8:00（お仕事に都合に合わせてご相談に応じます）、夕食が18:00～20:00です。この時間に間に合わない時は、連絡していただければ対応します。",
+      "articleExcerpt": "| 民宿Todate | 纜車走約5分 | 附黑岳之湯入浴券 | 只有純住宿 | | | 電話、Jalan |",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=21",
+      "sourceTitle": "【層雲峡】民宿とだて｜層雲峡観光協会",
+      "sourceQuote": "黒岳ロープウェイまで徒歩5分。黒岳の湯直結…素泊り民宿",
       "verdict": "verified",
-      "notes": "（2026-11-01 重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C89",
-      "articleExcerpt": "5家大型溫泉飯店與HOTEL KUMOI，官網、Trip.com與Agoda都訂得到。",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=50374&checkin=2027/06/16&checkout=2027/06/17&adult=1&crn=1",
-      "sourceTitle": "上川町飯店推薦 - Trip.com",
-      "sourceQuote": "（平台頁面）朝陽度假飯店｜雲居飯店 Hotel Kumoi｜大雪飯店｜朝陽亭飯店｜層雲閣旅館｜層雲峽觀光飯店",
+      "articleExcerpt": "| 民宿銀河 | Canyon Mall前 | 單純硫磺泉源泉放流 | 一泊二食，和食 | | 免費 | 電話、傳真 |",
+      "sourceUrl": "https://sounkyo-ginga.com/shop.php",
+      "sourceTitle": "【お店紹介】 層雲峡温泉ペンション銀河",
+      "sourceQuote": "目の前に広がるキャニオンモール（首頁）／単純硫黄泉、源泉かけ流し／1泊2食付／駐車場 あり(無料)",
       "verdict": "verified",
-      "notes": "2026-11-01 用瀏覽器重開 Trip.com 上川町清單（找到 9 處），六家都在（觀光飯店 2027-06-16 售罄，冬季日期 10-26 有房）。官網訂房：層雲閣 489ban／hotel-story、大雪 hotel-story／tripla、觀光飯店 489pro、朝陽兩館 book.noguchi-g.com、KUMOI chillnn。Agoda 沿用 2026-10-26 搜尋建議（六家都有）。"
+      "notes": ""
     },
     {
       "claimId": "C90",
-      "articleExcerpt": "湯元銀泉閣、民宿山之上與Sounkyo Hostel用各自的官網訂最確定，Trip.com與Agoda上也找得到，不過Trip.com常常沒有空房。",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=50374&checkin=2027/06/16&checkout=2027/06/17&adult=1&crn=1",
-      "sourceTitle": "上川町飯店推薦 - Trip.com",
-      "sourceQuote": "層雲峽溫泉湯元銀泉閣 Sounkyo Onsen Yumoto Ginsenkaku 售罄｜層雲峽度假民宿 山之上 Resort Pension Yamanoue 售罄｜（搜尋框建議）Sounkyo Hostel Kamikawa, Kamikawa District, Hokkaido, Japan",
+      "articleExcerpt": "| Sounkyo Hostel | 巴士總站走約7分 | 共用淋浴 | | | 約10台，先到先停 | 官網表單，冬天休館 |",
+      "sourceUrl": "https://www.sounkyo-hostel.com/booking2023",
+      "sourceTitle": "ご予約｜層雲峡ホステル",
+      "sourceQuote": "駐車場は当宿前の駐車スペースが10台ほど…予約はできず、先着順／フォームからの予約／層雲峡バスセンター下車。そこから徒歩7分（access）",
       "verdict": "verified",
-      "notes": "「常常沒有空房」：研究記錄 F296 查 2026-12-09、2027-01-20、2027-02-17、2027-06-16 四個日期，三間都售罄；2026-11-01 重查 2027-06-16 銀泉閣、山之上仍售罄，Hostel 不在當天清單、只在搜尋框找得到。「常常」有依據、沒變強。「官網訂最確定」是編輯判斷，依據同上。Agoda：Sounkyo Hostel 2026-11-01 搜尋框找得到，銀泉閣、山之上沿用 10-26。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C91",
-      "articleExcerpt": "民宿Todate用電話或Jalan預約，Trip.com與Agoda都沒有上架。",
-      "sourceUrl": "http://m-todate.com/yoyaku.html",
-      "sourceTitle": "民宿とだて ご予約",
-      "sourceQuote": "◇ご予約はお電話又は宿泊予約サイト じゃらんさんからお願いします",
+      "articleExcerpt": "溫泉街11間住宿的總整理。",
+      "sourceUrl": "https://sounkyo.net/stay/",
+      "sourceTitle": "泊る｜層雲峡観光協会",
+      "sourceQuote": "【層雲峡】層雲閣…ホテル大雪…層雲峡観光ホテル…朝陽亭…朝陽リゾートホテル…HOTEL KUMOI…湯元銀泉閣…民宿とだて…層雲峡ホステル…ペンション銀河…山の上（11件）",
       "verdict": "verified",
-      "notes": "平台：2026-11-01 Trip.com 搜尋「民宿とだて」只出現「民宿とだて・ツリーバード」地標（地點圖示，不是住宿），上川町住宿清單也沒有；Agoda 搜尋「Todate」「Minshuku Todate Sounkyo」沒有這間。"
+      "notes": ""
     },
     {
       "claimId": "C92",
-      "articleExcerpt": "民宿銀河要打電話預約，電話在15:00到22:00受理，Trip.com與Agoda上都找不到。",
-      "sourceUrl": "https://sounkyo-ginga.com/shop.php",
-      "sourceTitle": "店舗情報｜温泉ペンション銀河",
-      "sourceQuote": "電話番号 01658-5-3775 ご予約受付時間 午後3時～午後10時",
+      "articleExcerpt": "| KAMIKAWA HOTEL | JR上川站走約3分 | | 不供早餐，送隔壁Seicomart的500日圓券 | | 免費，8台 | 只能官網訂 |",
+      "sourceUrl": "https://primenet2010.biz/kamikawa-hotel/",
+      "sourceTitle": "【公式】KAMIKAWA HOTEL（カミカワホテル）",
+      "sourceQuote": "8台まで駐車可能（無料）／朝食のご提供はおこなっておりません／公式サイト（当ホームページ）からご予約ください",
       "verdict": "verified",
-      "notes": "Trip.com 2026-11-01 搜尋「ペンション銀河」只出現銀河瀑布等地標；Agoda 沿用 10-26（搜尋 Pension Ginga 無結果）。"
+      "notes": ""
     },
     {
       "claimId": "C93",
-      "articleExcerpt": "不想打日文電話，民宿Todate可以改用Jalan訂，望岳園可以用Agoda或樂天Travel訂。",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=29",
-      "sourceTitle": "旅荘望岳園｜層雲峡観光協会",
-      "sourceQuote": "宿泊の申し込 https://travel.rakuten.co.jp/HOTEL/130673/130673.html/",
+      "articleExcerpt": "| 上川莊 | JR上川站走約8分 | | 附早晚餐 | | 有 | 電話 |",
+      "sourceUrl": "https://kamikawasou.com/access.html",
+      "sourceTitle": "アクセス｜民宿上川荘",
+      "sourceQuote": "鉄道：JR上川駅 徒歩8分／駐車場あり",
       "verdict": "verified",
-      "notes": "改寫拿掉「觀光協會頁面上連到的」，事實不變：觀光協會的申込連結指向樂天 Travel 的望岳園頁；Agoda 沿用 10-26 搜尋建議「Ryosou Bogakuen Guest House」。Todate 的 Jalan 見官網預約頁。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C94",
-      "articleExcerpt": "上川莊只收電話預約，想在上川站前用網路訂房，可以改訂官網就能預約的KAMIKAWA HOTEL。",
-      "sourceUrl": "https://kamikawasou.com/access.html",
-      "sourceTitle": "アクセス｜民宿上川荘",
-      "sourceQuote": "ご予約・お問い合わせ 01658-2-1405｜（KAMIKAWA HOTEL）▼最新の空室状況は「 ご予約 」よりご確認ください。",
+      "articleExcerpt": "| 愛山溪溫泉 | JR上川站開車約30分，只開5月到10月 | 源泉100%放流 | 本館一泊二食 | 預約時可選免費接送 | | LINE、官網表單 |",
+      "sourceUrl": "https://aizankei.npokamui.org/reserve/",
+      "sourceTitle": "ご予約｜愛山渓温泉",
+      "sourceQuote": "無料送迎について 送迎を希望する／送迎を希望しない／100%源泉かけ流し（首頁）",
       "verdict": "verified",
-      "notes": "上川荘官網沒有線上訂房或表單。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "接送的出發地點官方沒寫，表格只寫「可選」沒有過頭。"
     },
     {
       "claimId": "C95",
-      "articleExcerpt": "訂房管道表：朝陽亭、朝陽度假飯店、層雲閣、大雪飯店、層雲峽觀光飯店、HOTEL KUMOI、湯元銀泉閣、民宿山之上｜溫泉街｜官網、Trip.com、Agoda",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=50374&checkin=2027/06/16&checkout=2027/06/17&adult=1&crn=1",
-      "sourceTitle": "上川町飯店推薦 - Trip.com",
-      "sourceQuote": "朝陽度假飯店｜雲居飯店｜大雪飯店｜朝陽亭飯店｜層雲閣旅館｜層雲峽觀光飯店｜層雲峽溫泉湯元銀泉閣｜層雲峽度假民宿 山之上",
+      "articleExcerpt": "| 旅莊望岳園 | 清川，國道39號旁 | | | | | Agoda |",
+      "sourceUrl": "https://www.agoda.com/zh-tw/ryosou-bogakuen-guest-house/hotel/asahikawa-jp.html",
+      "sourceTitle": "旅莊望岳園民宿 (Ryosou Bogakuen Guest House)",
+      "sourceQuote": "315 Kiyokawa, Kamikawa-gun kamikawacho（booking-links.md 瀏覽器紀錄）",
       "verdict": "verified",
-      "notes": "位置欄已拿掉。各家官網訂房與 Agoda 見上方各筆。（2026-11-01 第 2 輪重開確認）"
+      "notes": "Agoda 頁要 JavaScript，今天 urllib 只確認 HTTP 200，名稱與地址照 booking-links.md。"
     },
     {
       "claimId": "C96",
-      "articleExcerpt": "訂房管道表：Sounkyo Hostel｜溫泉街（冬季休業）｜官網、Trip.com、Agoda；愛山溪溫泉｜愛山溪（冬季休業）｜官方LINE、官網表單。Sounkyo Hostel與愛山溪溫泉冬天不開，冬天前往要從其他旅館挑。",
-      "sourceUrl": "https://www.sounkyo-hostel.com/booking2023",
-      "sourceTitle": "予約｜層雲峡ホステル",
-      "sourceQuote": "●2026シーズンの営業期間は6月18日(木)から10月13日(火)のチェックインまでです。｜（愛山溪 access）営業期間 毎年5月〜10月｜（reserve）LINE公式アカウント、もしくはメールフォーム",
+      "articleExcerpt": "冬天從旭川出發的話，朝陽亭和朝陽度假飯店（兩間共用一條）、大雪飯店和層雲峽觀光飯店都有飯店自己的接駁巴士，去回各1班，朝陽兩間另有一條從札幌出發；層雲閣也有自家的層雲閣號，五間都要先預約。",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "お迎えのバス（旭川発）14:30／お送りのバス 9:30（朝陽）；14:10 旭川駅前バスタッチ1番発／10:00 ホテル大雪発（talkappi）；11月〜4月 毎日運行 14:00発／10:00発（層雲峡観光ホテル map）；層雲閣号 完全予約制",
       "verdict": "verified",
-      "notes": "新加冬季休業標示，與兩館營業期間一致。（2026-11-01 第 2 輪重開確認）"
+      "notes": ""
     },
     {
       "claimId": "C97",
-      "articleExcerpt": "（表格）民宿銀河｜溫泉街｜電話",
-      "sourceUrl": "https://sounkyo-ginga.com/shop.php",
-      "sourceTitle": "店舗情報｜温泉ペンション銀河",
-      "sourceQuote": "電話番号 01658-5-3775 ご予約受付時間 午後3時～午後10時",
+      "articleExcerpt": "| 朝陽亭、朝陽度假飯店 | 札幌站北口 | 2026年10月1日～2027年3月31日 | 13:00出發，16:30到朝陽度假飯店、16:40到朝陽亭 | 9:00從朝陽亭出發（朝陽度假飯店9:10），12:30到札幌 | 2,500日圓 |",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "【運行期間：2026年10月1日～2027年3月31日】【ご料金：片道 お一人 2,500円税込み】札幌駅北口 13:00…朝陽リゾートホテル 16:30…朝陽亭 16:40／朝陽亭 9:00 朝陽リゾートホテル 9:10…札幌駅北口 12:30(到着)",
       "verdict": "verified",
-      "notes": "傳真已拿掉。（2026-11-01 第 2 輪重開確認）"
+      "notes": "官網標含稅，可考慮補「含稅」。"
     },
     {
       "claimId": "C98",
-      "articleExcerpt": "訂房管道表：民宿Todate｜溫泉街｜電話、Jalan",
-      "sourceUrl": "http://m-todate.com/yoyaku.html",
-      "sourceTitle": "民宿とだて ご予約",
-      "sourceQuote": "ご予約はお電話又は宿泊予約サイト じゃらんさんからお願いします",
+      "articleExcerpt": "| 朝陽亭、朝陽度假飯店 | 旭川市區1條通6丁目 | 同上 | 14:30出發，16:00到朝陽度假飯店、16:10到朝陽亭 | 9:30從朝陽亭出發（朝陽度假飯店9:40），11:30到旭川 | 1,000日圓 |",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "旭川駅1条通6丁目 14:30…朝陽リゾートホテル 16:00…朝陽亭 16:10／朝陽亭 9:30 朝陽リゾートホテル 9:40…旭川駅1条通6丁目 11:30(到着)／片道 お一人 1,000円税込み",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C99",
-      "articleExcerpt": "訂房管道表：旅莊望岳園｜清川｜電話、Agoda、樂天Travel",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=29",
-      "sourceTitle": "旅荘望岳園｜層雲峡観光協会",
-      "sourceQuote": "国道３９号線沿いにあり｜お問合せ 01658-5-3883｜宿泊の申し込 https://travel.rakuten.co.jp/HOTEL/130673/",
+      "articleExcerpt": "| 大雪飯店 | JR旭川站前的巴士總站 | 2026年10月17日入住～2027年5月1日退房 | 14:10出發，約16:00到 | 10:00出發，約12:00到旭川站 | 免費 |",
+      "sourceUrl": "https://bot.talkappi.com/faq/content?facility_cd=hotel-taisetsu-qa&intent_cd=inquiry.access_bus_info&sub_intent_cd=transfer_bus&lang=ja",
+      "sourceTitle": "ホテル大雪 よくあるご質問（talkappi）",
+      "sourceQuote": "令和8年10月17日チェックインから令和9年5月1日チェックアウトまで／14：10 旭川駅前バスタッチ1番発…16:00頃／10；00 ホテル大雪発…12:00頃（facts-extra KB10）",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": "（今天沒有重開：此頁要執行 JavaScript，urllib 只讀到空殼；用 facts-extra.md 的瀏覽器摘錄判定）"
     },
     {
       "claimId": "C100",
-      "articleExcerpt": "訂房管道表：KAMIKAWA HOTEL｜上川站｜官網；ANSHINDO｜上川站｜email、官方Instagram、Agoda；上川莊｜上川站｜電話",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=106",
-      "sourceTitle": "ANSHINDO｜層雲峡観光協会",
-      "sourceQuote": "お問合せ Mail: anshindo.kamikawa@gmail.com｜公式インスタグラム",
+      "articleExcerpt": "| 層雲峽觀光飯店 | 旭川市區1條6丁目 | 11月～4月每天 | 14:00出發，15:30到 | 10:00出發，11:30到旭川 | |",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/map",
+      "sourceTitle": "アクセス｜層雲峡観光ホテル",
+      "sourceQuote": "乗り場:1条6丁⽬（昭和通）Tabist 旭川ステーションホテル前／14:00…発 15:30 層雲峡観光ホテル着／10:00 層雲峡観光ホテル発 11:30…着／11月〜4月 毎日運行",
       "verdict": "verified",
-      "notes": "ANSHINDO 的 Agoda 沿用 10-26 搜尋建議；KAMIKAWA HOTEL、上川荘見上方。（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C101",
-      "articleExcerpt": "愛山溪溫泉的預約用LINE官方帳號或官網表單，由負責人回覆能不能住。",
-      "sourceUrl": "https://aizankei.npokamui.org/reserve/",
-      "sourceTitle": "ご予約｜愛山渓温泉",
-      "sourceQuote": "当施設へのご予約はLINE公式アカウント、もしくはメールフォームにてお問い合わせを承っております。メッセージを確認して、担当者から宿泊可能か順次返信いたします。",
+      "articleExcerpt": "朝陽兩間的接駁，從官網訂房的人車資折500日圓，不過8人以上的團體不能搭。",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "※公式ホームページから宿泊を予約されたお客様は、500円割引で送迎バスをご利用いただけます。※…8名以上の団体様のご利用はご遠慮いただいております。",
       "verdict": "verified",
-      "notes": "（沿用 2026-10-27 查核，新稿意思、數字、條件相同）"
+      "notes": ""
     },
     {
       "claimId": "C102",
-      "articleExcerpt": "北海道住宿稅依住宿費分級",
-      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
-      "sourceTitle": "北海道宿泊税（賦課徴収）｜北海道",
-      "sourceQuote": "宿泊税の税率 宿泊料金（1人1泊） 税率 2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円",
+      "articleExcerpt": "住宿日一週前還沒人預約，或5天前預約人數在10人以下就會停駛",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "※宿泊日の1週間前までにご予約のない日については、運休／・宿泊日の5日前までにご予約の人数が10名以下の場合、運休",
       "verdict": "verified",
-      "notes": "新稿新加的句子，研究記錄沒有事實編號，2026-11-01 直接查北海道廳。"
+      "notes": ""
     },
     {
       "claimId": "C103",
-      "articleExcerpt": "（分潤與平台連結）正文沒有 Trip.com、Agoda 的旅館連結；資料來源列有 Trip.com 上川町城市清單頁與 Agoda 首頁。",
-      "sourceUrl": "https://tw.trip.com/hotels/list?city=50374",
-      "sourceTitle": "上川町飯店推薦 - Trip.com",
-      "sourceQuote": "（平台頁面）上川町飯店推薦 - 最新上川町人氣住宿預訂",
+      "articleExcerpt": "停駛時要自己想辦法過去，例如改搭路線巴士，交通費自付。",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "尚、運休時の交通費につきましては、お客様のご負担となります。",
       "verdict": "verified",
-      "notes": "reader-preview.md 沒有指向單一旅館頁的 Trip.com／Agoda 連結，也沒有追蹤參數，不是分潤連結，不需要揭露句；正文沒有「最低價」「最優惠」。提醒：網站對 trip.com、agoda.com 連結自動加 rel=\"sponsored\"，資料來源的兩個平台網址也會被加上；之後換成追蹤連結時要照 affiliate-links.md 放在旅館段落、指向單一旅館頁。"
+      "notes": "第 2 輪複查（2026-11-18）：改成自己想辦法、路線巴士只當例子，和官方「運休時の交通費につきましては、お客様のご負担」一致。"
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "大雪飯店的接駁最晚3天前預約",
+      "sourceUrl": "https://bot.talkappi.com/faq/content?facility_cd=hotel-taisetsu-qa&intent_cd=inquiry.access_bus_info&sub_intent_cd=transfer_bus&lang=ja",
+      "sourceTitle": "ホテル大雪 よくあるご質問（talkappi）",
+      "sourceQuote": "※要予約 3日前までにご予約（facts-extra KB10）",
+      "verdict": "verified",
+      "notes": "（今天沒有重開：此頁要執行 JavaScript，urllib 只讀到空殼；用 facts-extra.md 的瀏覽器摘錄判定）"
+    },
+    {
+      "claimId": "C105",
+      "articleExcerpt": "層雲峽觀光飯店也要在住宿日3天前打電話預約，不過車子是8人座，客滿就可能訂不到。",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/map",
+      "sourceTitle": "アクセス｜層雲峡観光ホテル",
+      "sourceQuote": "ご送迎⾞は、ワゴン⾞（8名乗り）となります。送迎ご希望のお客様は、往路・復路共に宿泊される⽇の3⽇前までに、お電話にて…ご予約下さい。／満車の場合はお断りする場合もございます（FAQ）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C106",
+      "articleExcerpt": "層雲閣號同樣是3天前打電話預約，預約的人少可能停駛，上車地點和時間要在預約時問清楚。",
+      "sourceUrl": "https://sounkaku.co.jp/access/",
+      "sourceTitle": "アクセス - 層雲閣MOUNTAIN RESORT 1923",
+      "sourceQuote": "ご予約は電話で承っております。…予め御確認いただきますようお願い申し上げます。※3日前までの予約制／※ご予約状況により、運休とさせていただく場合がございます",
+      "verdict": "verified",
+      "notes": "官網沒列上車處與時刻，「預約時問清楚」是合理的操作建議。"
+    },
+    {
+      "claimId": "C107",
+      "articleExcerpt": "搭路線巴士到層雲峽巴士站的話，到站後打電話，朝陽亭和朝陽度假飯店會派免費接送車來接，人多時要等一下；大雪飯店接到電話也會到巴士站接。",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "層雲峡停留所から無料送迎車をご希望の方は、停留所に到着後TEL…混雑時にはお待たせする場合がございますので予めご了承ください。／層雲峡のバス停までお迎えに参りますので…お電話頂ければ（ホテル大雪 talkappi，KB11）",
+      "verdict": "verified",
+      "notes": "朝陽兩館交通頁今天重開確認；大雪部分（今天沒有重開：此頁要執行 JavaScript，urllib 只讀到空殼；用 facts-extra.md 的瀏覽器摘錄判定）"
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "冬天住溫泉街最好訂含晚餐的方案，因為溫泉街飯店以外的餐廳，冬天晚上還開的只有Beer Grill Canyon（ビアグリル・キャニオン）和大雪山食堂，兩間都只開到晚上8點半。",
+      "sourceUrl": "https://sounkyo.net/eat/",
+      "sourceTitle": "食す｜層雲峡観光協会",
+      "sourceQuote": "ツリーバード 5月〜10月頃 17:00〜（content=33）／登山軒 11～5月は休業（75）／ともちゃん食堂 11：00～15：30（35）／BLACK MOUNTAIN COFFEE 冬季 9:00~16:00（79）／大雪山食堂 17:30〜20:30 不定休（34）／ビアグリルキャニオン 夜17：30～20：30（店家官網）",
+      "verdict": "verified",
+      "notes": "第 2 輪複查（2026-11-18）：改成「溫泉街飯店以外的餐廳」：Taisetsu Bakery Café & Bar 在大雪飯店館內，不在範圍，原本和觀光協會頁對不上的問題消失。溫泉街獨立店家（Tree Bird、登山軒、Tomochan 食堂、BLACK MOUNTAIN COFFEE）冬天晚上都不開，推論成立。"
+    },
+    {
+      "claimId": "C109",
+      "articleExcerpt": "Beer Grill Canyon週二、三公休，大雪山食堂不定休，碰到週二、週三就可能只剩大雪山食堂。",
+      "sourceUrl": "http://bg-canyon.com/",
+      "sourceTitle": "層雲峡・山のイタ飯と洋食屋・ビアグリルキャニオン",
+      "sourceQuote": "●定 休 日 毎週火曜日、水曜日 ※メンテナンス、その他で臨時休業となる場合がございます。／大雪山食堂 不定休（觀光協會 content=34）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "含晚餐的話，朝陽亭、朝陽度假飯店、層雲閣和層雲峽觀光飯店的自助晚餐都是晚上6點開始。",
+      "sourceUrl": "https://www.choyotei.com/faq/",
+      "sourceTitle": "よくある質問｜層雲峡 朝陽亭",
+      "sourceQuote": "夕食 18時00分～（朝陽亭）／夕食 18時～（朝陽リゾート）／夕食ビュッフェ 18:00〜21:00（層雲閣）／『ユーカラ』18:00～（層雲峡観光ホテル）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C111",
+      "articleExcerpt": "想訂純住宿的話，層雲峽觀光飯店和HOTEL KUMOI都有純住宿方案，層雲閣的純住宿方案也照樣含大廳Lounge的飲料和輕食，民宿Todate則只做純住宿。",
+      "sourceUrl": "https://reserve.489ban.net/client/k9d7cube/0/plan",
+      "sourceTitle": "層雲閣 | プランから選ぶ",
+      "sourceQuote": "【期間限定★超お得】素泊～温泉満喫♪…≪オールインクルーシブ≫（facts-extra KB8）／【スタンダードプラン｜素泊まり】（489pro）／素泊まり（chillnn）／当宿は素泊まり専用民宿です（とだて）",
+      "verdict": "verified",
+      "notes": "層雲閣方案列表（今天沒有重開：此頁要執行 JavaScript，urllib 只讀到空殼；用 facts-extra.md 的瀏覽器摘錄判定）；其他三間今天重開確認。"
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "晚餐自己解決的話，從層雲峽觀光飯店走約5分鐘，有24小時營業的7-Eleven和開到晚上11點的Seicomart（時間隨季節變動）",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/faq",
+      "sourceTitle": "よくある質問｜層雲峡観光ホテル",
+      "sourceQuote": "当館より徒歩5分ほどの距離に2件ございます。セブンイレブン 24時間営業 セイコーマート 7：00～23：00(季節により変動あり)",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C113",
+      "articleExcerpt": "住大雪飯店的人，館內還有居酒屋大雪茶屋，晚上7點開到半夜12點。",
+      "sourceUrl": "https://www.hotel-taisetsu.com/facility.php",
+      "sourceTitle": "ホテル大雪｜館内施設",
+      "sourceQuote": "居酒屋 大雪茶屋 東館地下1階 営業時間11:30-13:00 / 19:00-24:00",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C114",
+      "articleExcerpt": "住層雲峽每人每晚要付北海道住宿稅100到500日圓，上川町沒有另外收町的住宿稅。",
+      "sourceUrl": "https://breezbay-group.com/company/information/tax_hokkaido.html",
+      "sourceTitle": "【2026年4月1日より】宿泊税導入のお知らせ｜BBHホテルグループ",
+      "sourceQuote": "上川町 対象ホテル 層雲峡温泉 湯元銀泉閣｜2万円未満 100円 100円 なし／北海道宿泊税の税率 2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円（北海道廳）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C115",
+      "articleExcerpt": "北海道住宿稅從2026年4月1日住宿起開始收，金額看每人每晚的房價",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
+      "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
+      "sourceQuote": "令和8年4月から北海道宿泊税を導入しました。…宿泊者1人1泊につき…宿泊料金（1人1泊）",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C116",
+      "articleExcerpt": "有的旅館含在房價裡，有的在入住時另外收。",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
+      "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
+      "sourceQuote": "大人1泊6,300円〜6,900円(消費税・宿泊税込み)（民宿とだて）／予約システムにて表示される金額には、宿泊税相当分が含まれています（KAMIKAWA HOTEL）／1名1泊あたり100円をチェックイン時に徴収（層雲峡ホステル booking2023）",
+      "verdict": "verified",
+      "notes": "第 2 輪複查（2026-11-18）：兩種收法本頁都有實例。"
+    },
+    {
+      "claimId": "C117",
+      "articleExcerpt": "| 未滿2萬日圓 | 100日圓 |／| 2萬以上、未滿5萬日圓 | 200日圓 |／| 5萬日圓以上 | 500日圓 |",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
+      "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
+      "sourceQuote": "2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円",
+      "verdict": "verified",
+      "notes": ""
+    },
+    {
+      "claimId": "C118",
+      "articleExcerpt": "入湯稅各間不一樣，大雪飯店大人每晚另收250日圓，HOTEL KUMOI每人每晚另收150日圓，未滿12歲不收。",
+      "sourceUrl": "https://www.chillnn.com/ja/170bdaa1df41f7",
+      "sourceTitle": "層雲峡温泉 ホテル雲井 | 公式予約",
+      "sourceQuote": "お一人様ご一泊につき、150円の入湯税がご宿泊代金と別途かかります。※12歳未満のお子様は課税対象外です。／入湯税が別途(大人250円 / 1泊)必要です。（ホテル大雪 facility.php）",
+      "verdict": "verified",
+      "notes": "第 3 輪複查（2026-11-18）：改成「未滿12歲不收」，和官方「12歳未満のお子様は課税対象外」一致；大雪 250 日圓、KUMOI 150 日圓不變。"
+    },
+    {
+      "claimId": "C119",
+      "articleExcerpt": "資料來源：[北海道住宿稅（北海道廳）](https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html)",
+      "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
+      "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
+      "sourceQuote": "北海道宿泊税の税率 宿泊料金（1人1泊） 税率 2万円未満 100円 2万円以上5万円未満 200円 5万円以上 500円",
+      "verdict": "verified",
+      "notes": "第 2 輪複查（2026-11-18）：已換成現行網址，今天 urllib 200，標題「北海道宿泊税 - 総務部財政局税務課」。"
+    },
+    {
+      "claimId": "C120",
+      "articleExcerpt": "各間「看房價與訂房」與「連結」的 Trip.com、Agoda 網址（朝陽亭、朝陽度假飯店、層雲閣、大雪飯店、層雲峽觀光飯店、HOTEL KUMOI、民宿山之上、旅莊望岳園）",
+      "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-1647074/choyo-tei/",
+      "sourceTitle": "booking-links.md（2026-11-18 瀏覽器紀錄）與今天 urllib 重開",
+      "sourceQuote": "Trip.com 7 個網址今天都 200，頁面標題分別是 朝陽亭飯店／朝陽度假飯店／層雲閣旅館／大雪飯店／層雲峽觀光飯店／雲居飯店／層雲峽度假民宿 山之上；Agoda 8 個網址都 200（頁面要 JavaScript，名稱照 booking-links.md）",
+      "verdict": "verified",
+      "notes": "每個網址都和 booking-links.md 逐字一致，連到單一旅館頁、不是城市清單；連結文字是「Trip.com」「Agoda」，沒有「最低價」之類；全站揭露在關於頁。Agoda 頁面名稱今天沒能用 urllib 讀到（要瀏覽器）。"
+    },
+    {
+      "claimId": "C121",
+      "articleExcerpt": "各間「官網」連結（choyotei.com、choyo-resort.com、sounkaku.co.jp/tw、hotel-taisetsu.com、sounkyo-kankou.co.jp、hotelkumoi.com、breezbay-group.com/ginsenkaku、pen-yamanoue.com、m-todate.com、sounkyo-ginga.com、sounkyo-hostel.com、primenet2010.biz/kamikawa-hotel、kamikawasou.com、aizankei.npokamui.org）與地圖欄",
+      "sourceUrl": "https://www.choyotei.com/",
+      "sourceTitle": "各館官網",
+      "sourceQuote": "今天 urllib 全部 200，標題對得上各館（例：層雲峡温泉 層雲峡 朝陽亭｜【公式】…／ホテル雲井／【公式】KAMIKAWA HOTEL（カミカワホテル）…）",
+      "verdict": "verified",
+      "notes": "地圖欄都是 google.com/maps/search/?api=1&query=日文名＋上川町 的搜尋網址，符合規則。"
     }
   ],
   "summary": {
-    "verified": 103,
+    "verified": 121,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

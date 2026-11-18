@@ -1,7 +1,7 @@
 # 驗收紀錄：furano-stay-ski（2026-11-18，住宿專門頁，不經 Darren 審核的試跑）
 
 - 文章：`content-production/furano-stay-ski/reader-preview.md`（富良野滑雪住宿推薦，11間飯店到雪道多遠、雪具與泡湯比較）
-- SHA-256（換行統一成 LF 後計算）：`af2eead15fee572c6e1ab1083856c4a6b1341b136d2d09497d87ae3268405158`
+- SHA-256（換行統一成 LF 後計算）：`bfd3d44dc127daf8e937eab7bf9729f8e92c06feeb49ee74b241b8db6e34e855`
 - 規則：寫作 Skill `references/stay-topic-page.md`「自動化」一節（Darren 2026-11-18 決定住宿專門頁過了全部關卡就直接上線，他事後看摘要；指定富良野試跑）。流程紀錄在 `content-experiments/stay-furano-2026-11-18/ski/`。
 - 問法與競品、官方研究：研究子代理（Opus 5.5）。住客評論、讀不到的官方頁、訂房連結：事實查核者角色的子代理（Opus 5.5）在研究階段用瀏覽器讀（Trip.com、4travel、Google 地圖；沒登入）。
 - 規格：編輯子代理（Opus 5.5）；動筆前檢查：讀者助手（Opus 5.5），必修 11 條改完才動筆。
@@ -48,3 +48,10 @@
 - 維基解除封鎖後可以把封面換成富良野滑雪場遠景。
 
 最終結果：`ready_for_user_preview`
+
+## 2026-11-18 補回賣點
+
+- Darren 對旭川主頁說「東西也變太少了吧」後，新的份量下限指出這頁有兩間不到 120 字。編輯子代理（Opus 5.5）逐間補回官方依據的具體賣點；住客說法上限從全頁四句放寬到八句（一間仍一句），補了 La Vista、Fenix 兩句並改那圖瓦德一句。
+- 事實查核子代理（Opus 5.5）第 7～9 輪：抓到 Bell Hills 展望浴池、Fenix 洗衣設備、Natulux 岩盤浴（10 月起維修停用，比較表同一格也改）共 4 筆，改完 88 筆 verified。
+- 份量與讀者驗收（`acceptance5.md`）：七題都過、七間都判剛好。
+- 舊 SHA：`af2eead15fee572c6e1ab1083856c4a6b1341b136d2d09497d87ae3268405158`。

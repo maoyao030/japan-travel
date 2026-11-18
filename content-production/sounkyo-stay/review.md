@@ -1,43 +1,37 @@
-# 驗收紀錄：sounkyo-stay（2026-11-01，重寫稿換上網站）
+# 驗收紀錄：sounkyo-stay（2026-11-18，舊住宿頁重跑一輪）
 
-- 文章：`content-production/sounkyo-stay/reader-preview.md`
-- SHA-256（換行統一成 LF 後計算）：`8d123c17494c593dd22ad4e54637065134c52e9a4bf6520391a4000dcbd7b8a1`
-- 規則：讀競品後重排（`competitor-notes.md`、`order-notes.md`）、潤稿先刪再調（`polish-notes.md`）、意義比對（`meaning-drift.md`）；試跑過程見 `content-experiments/competitor-read-2026-10-30/sounkyo-stay/`
-- 作者：作者子代理（Opus 5.5，讀競品後重寫）；驗收後修改由另一個修稿子代理處理（`revisions-round1.md`）
-- 潤稿者：潤稿子代理（Opus 5.5，先刪再調）；意義比對 1 個子代理
-- 標題檢查：標題、SEO Title 與 2026-10-27 版相同，沿用 `heading-review.json`
-- 事實查核：1 個子代理（Opus 5.5，沒參與寫作、潤稿與修改），共 2 輪
-- 讀者驗收：1 個子代理（沒寫過、潤過或查核過），第一階段只看大綱、文章與規則，第二階段才看研究記錄與事實查核
-- 協調：人工 session（Claude Code，Darren 2026-11-01 要求把三篇試跑稿換上網站）
+- 文章：`content-production/sounkyo-stay/reader-preview.md`（層雲峽住宿推薦，住溫泉街還是上川站？）
+- SHA-256（換行統一成 LF 後計算）：`fc8054ed51fbf562f9ca99b4ef50c09a3066017a6eea3602a8c5831f574eaf3c`
+- 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
+- 研究：`content-experiments/stay-rerun-2026-11-18/sounkyo/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-18 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
+- 寫作：五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，六間細寫的旅館都判剛好）。
+- 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作與編輯），3 輪：第 1 輪 121 筆裡 6 筆 incorrect、2 筆 unsupported、1 筆 not-stated；改完第 2 輪剩 1 筆；第 3 輪全部 verified。
+- 讀者驗收：讀者驗收子代理（Opus 5.5，沒寫過、沒查核過），七題驗收 2 次（`acceptance1.md` 七題都過；照查核改 14 處後 `acceptance2.md` 仍七題都過）。
+- 協調：人工 session（Claude Code），照岔路的預設，沒有問 Darren。
 
 ## 結果
 
 | 項目 | 結果 |
 |---|---|
-| 格式 | `mechanical_clear`（`audit_answer_first.py --article-type aspect-page`） |
-| 標題 | `acceptable`（標題沒改；讀者最終判定可接受） |
-| 讀者價值 | `acceptable`（讀者最終判定，第二階段必修 12 條都已解決） |
-| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，103 項 claim 全部 verified） |
-| 口吻與標點 | `check-voice.mjs --final` 通過 |
-| 事實編號 | `tags_clear`（研究記錄 63 筆，正文用到 51 筆） |
-| 分潤連結 | 正文沒有單一旅館的 Trip.com 或 Agoda 連結，不需揭露句 |
-| 圖片 | 線上沒有文內照片；沒有 AI 圖或自製示意圖 |
+| 格式 | `mechanical_clear`（`audit_answer_first.py`） |
+| 標題 | `acceptable`（七題第 6 題過） |
+| 讀者價值 | `acceptable`（七題都過，含第 7 題份量） |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，121 項 claim 全部 verified） |
+| 口吻與標點 | `check-voice.mjs --final` 通過（正文約 4,550 字） |
+| 名字與表格連結 | `check-benchmark.mjs` 沒有錯誤 |
+| 圖片 | 沿用線上的封面與文內照片；每間細寫的旅館各找 1 則 Instagram 貼文 |
 
-**最終結果：`ready_for_user_preview`。** Darren 2026-11-01 要求換上網站。
+**最終結果：`ready_for_user_preview`。** 換掉線上的舊版。
 
-## 經過
+## 協調者的決定
 
-| 輪 | 做了什麼 | 結果 |
-|---|---|---|
-| 寫作 | 讀競品後重寫、先刪再調潤稿、意義比對（5 處已修） | 四項檢查通過 |
-| 1 | 事實查核第 1 輪（98 項） | 1 incorrect（愛山溪「夏秋營業」排除了 5 月）、2 unsupported（小旅館「都」在纜車附近、接駁「搭車3天前」） |
-| 2 | 讀者驗收第一、二階段 | 必修 12 條：上面 3 項，加朝陽度假飯店回程上車時間、層雲閣號與觀光飯店接駁怎麼訂、愛山溪接送、冬季休業、位置欄空格、巴士總站名稱、Trip.com 常售罄、報告查資料過程的句子 |
-| 3 | 修稿子代理照必修修改，新增 F312（層雲閣）、F313（觀光飯店接駁），更正 F280；拿掉位置欄 | 三項檢查通過 |
-| 4 | 事實查核第 2 輪（103 項）；讀者最終判定 | 全部 verified；讀者價值與標題可接受、無剩餘必修 |
+- H1 從「層雲峽住宿，溫泉街各旅館的位置、接駁巴士與訂房管道」改成「層雲峽住宿推薦，住溫泉街還是上川站？」，仍包含主要查詢「層雲峽住宿」。
+- 巴士時間照經營者道北巴士（上川站約 30 分、旭川約 2 小時），不照飯店交通頁的說法。
+- 大雪飯店「房間保養得不錯」只有一個平台，拿掉。
+- 湯元銀泉閣冬天營不營業沒有官方來源，不寫；只寫現在官方訂房沒有開放預約。
+- 有 5 個來源頁要執行 JavaScript（大雪飯店常見問題、KUMOI 訂房日曆、銀泉閣訂房頁、層雲閣方案列表、Agoda 館名），查核照研究時用瀏覽器讀到的紀錄判定。
 
 ## 留給之後的事
 
-- 層雲閣號的出發地點與時刻：官網查不到，正文寫成電話預約時確認。
-- 觀光飯店接駁的上車處：交通頁寫 Tabist 旭川ステーションホテル、常見問題頁寫旭川スマイルホテル前，地址相同，可能是改名；找到官方說明後再統一寫法。
-- 研究記錄的新增 F312、F313 與更正 F280 要同步回地點事實表與 D1；譯名 Yukara（ユーカラ）、Ajina（あじ菜）待補進 glossary。
-- 讀者最終判定加分 4 條（ANSHINDO 距離、住宿稅句的「北海道那一份」屬大綱連結句、上川站三間那段、開頭接駁句可拆）不影響結果。
+- 層雲閣號的出發地、時間與費用官方沒有寫清楚；層雲峽觀光飯店接駁的車資、比較表層雲閣的位置與停車是空格。
+- 朝陽亭冬季接駁、冰瀑祭是這一季的資料，下一季重查。
