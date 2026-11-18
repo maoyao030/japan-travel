@@ -503,10 +503,9 @@
       "targetPath": "/places/asahikawa/stay/",
       "primaryQuery": "旭川住宿",
       "secondaryQueries": [
-        "旭川住宿推薦",
         "旭川住宿稅"
       ],
-      "h1": "旭川住宿，車站周邊與市中心的飯店、訂房管道與住宿稅",
+      "h1": "旭川住宿推薦，住站前還是市中心？",
       "mustAnswer": [
         "住車站周邊還是市中心",
         "有哪些飯店、各在哪裡、離車站多遠、怎麼訂",
@@ -516,71 +515,151 @@
       "headings": [
         {
           "level": 2,
-          "text": "旭川住宿選哪一區，車站周邊或市中心",
-          "facts": [
-            "asahikawa:F134",
-            "asahikawa:F135",
-            "asahikawa:F137",
-            "asahikawa:F52"
-          ],
+          "text": "旭川住宿要住站前還是市中心？",
+          "facts": [],
           "answers": [
             0
           ]
         },
         {
-          "level": 3,
-          "text": "住旭川可以用的動物園款待券",
-          "facts": [
-            "asahikawa:F11"
-          ],
-          "answers": [
-            3
-          ]
-        },
-        {
           "level": 2,
-          "text": "旭川住宿推薦，各飯店的位置",
-          "facts": [
-            "asahikawa:F137"
-          ],
+          "text": "依開車、泡湯、早餐挑旭川飯店",
+          "facts": [],
           "answers": [
             1
           ]
         },
         {
           "level": 3,
-          "text": "旭川站直結的JR Inn旭川",
-          "facts": [
-            "asahikawa:F134"
-          ],
+          "text": "開車自駕好停車的旭川飯店",
+          "facts": [],
           "answers": [
             1
           ]
         },
         {
           "level": 3,
-          "text": "旭川站前的飯店",
-          "facts": [
-            "asahikawa:F137"
-          ],
+          "text": "泡得到天然溫泉的旭川飯店",
+          "facts": [],
           "answers": [
             1
           ]
         },
         {
           "level": 3,
-          "text": "市中心的OMO7旭川、多美迎旭川與Art Hotel旭川",
-          "facts": [
-            "asahikawa:F135",
-            "asahikawa:F136"
-          ],
+          "text": "早餐有在地菜或免費的旭川飯店",
+          "facts": [],
           "answers": [
             1
           ]
         },
         {
           "level": 2,
-          "text": "旭川住宿的訂房管道",
+          "text": "旭川站前推薦的飯店",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "JR Inn旭川",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "Y's Hotel旭川站前",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "露櫻Grand旭川站前",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "天然溫泉Premier Hotel-CABIN-旭川",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "HOTEL AMANEK旭川",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "東橫INN旭川站東口與旭川站前一條通",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "Super Hotel旭川",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "text": "旭川市中心推薦的飯店",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "Dormy Inn旭川",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "OMO7旭川",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "Art Hotel旭川",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "text": "三人以上或帶小孩住旭川，哪幾間住得下？",
+          "facts": [],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "text": "旭川住宿比較表",
           "facts": [],
           "answers": [
             1
@@ -589,18 +668,22 @@
         {
           "level": 2,
           "text": "旭川住宿稅怎麼算？",
-          "facts": [
-            "asahikawa:F130",
-            "asahikawa:F131",
-            "asahikawa:F132",
-            "asahikawa:F133"
-          ],
+          "facts": [],
           "answers": [
             2
           ]
+        },
+        {
+          "level": 2,
+          "text": "住旭川可以買的旭山動物園款待券",
+          "facts": [],
+          "answers": [
+            3
+          ]
         }
       ],
-      "headingOrder": "traveler-journey"
+      "headingOrder": "stay-page",
+      "note": "2026-11-18 舊住宿頁重跑：照 stay-page.md 重寫；事實在封包的 reference-review.md 與三頁專門頁的 fact-check.json。H1 已含「旭川住宿推薦」。"
     },
     {
       "articleId": "asahikawa-sights",
@@ -4165,7 +4248,8 @@
       "section": "旭川住宿選哪一區，車站周邊或市中心",
       "purpose": "開頭連回地點主頁",
       "sentence": "還沒決定旭川要排幾天，可以先看旭川自由行怎麼排。",
-      "anchor": "旭川自由行怎麼排"
+      "anchor": "旭川自由行怎麼排",
+      "note": "2026-11-18 重寫後正文沒有這一句；主頁連結由文末同主題文章提供"
     },
     {
       "from": "asahikawa-sights",
@@ -5059,10 +5143,10 @@
     {
       "from": "asahikawa-stay",
       "to": "asahikawa-stay-breakfast",
-      "section": "旭川住宿選哪一區，車站周邊或市中心",
+      "section": "開車自駕好停車的旭川飯店",
       "purpose": "旭川住宿頁連到住宿專門頁",
-      "sentence": "想知道每間飯店早餐幾點開始、吃什麼，可以看旭川飯店早餐比較。",
-      "anchor": "旭川飯店早餐比較"
+      "sentence": "早餐時間和加購，〈旭川飯店早餐〉比較了13間飯店。",
+      "anchor": "〈旭川飯店早餐〉"
     },
     {
       "from": "asahikawa-stay-onsen",
@@ -5075,10 +5159,10 @@
     {
       "from": "asahikawa-stay",
       "to": "asahikawa-stay-onsen",
-      "section": "旭川住宿選哪一區，車站周邊或市中心",
+      "section": "開車自駕好停車的旭川飯店",
       "purpose": "旭川住宿頁連到住宿專門頁",
-      "sentence": "想住能泡湯的飯店，旭川溫泉飯店比較整理了哪幾間是天然溫泉。",
-      "anchor": "旭川溫泉飯店比較"
+      "sentence": "浴場時間和郊外的溫泉旅館，可以看〈旭川溫泉飯店〉。",
+      "anchor": "〈旭川溫泉飯店〉"
     },
     {
       "from": "asahikawa-stay-parking",
@@ -5091,10 +5175,10 @@
     {
       "from": "asahikawa-stay",
       "to": "asahikawa-stay-parking",
-      "section": "旭川住宿選哪一區，車站周邊或市中心",
+      "section": "開車自駕好停車的旭川飯店",
       "purpose": "旭川住宿頁連到住宿專門頁",
-      "sentence": "開車來的話，旭川自駕住宿整理了每間飯店的車停哪裡、一晚多少。",
-      "anchor": "旭川自駕住宿"
+      "sentence": "停車費和限高，〈旭川自駕住宿〉比較了14間飯店的停車場，也整理了停車免費的郊外旅館。",
+      "anchor": "〈旭川自駕住宿〉"
     }
   ],
   "writingOrder": [

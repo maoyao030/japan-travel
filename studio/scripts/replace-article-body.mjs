@@ -72,11 +72,19 @@ assertNoUnsyncedStudioEdits(article)
 
 const h1 = markdown.match(/^# (.+)$/m)?.[1].trim()
 if (!h1) throw new Error('稿件沒有 H1')
-if (h1 !== article.title && !manual) throw new Error(`H1 和線上標題不同，這支程式不改標題：\n新稿：${h1}\n線上：${article.title}`)
+// --retitle（2026-11-18，舊文章整篇重寫時用）：H1 可以改，但線上的標題要等於修改前 publication.json 的 seoTitle，
+// 也就是線上標題沒有被別人改過；不記優化紀錄（那是 --manual 才記的）。
+const retitle = options.retitle === true
+if (h1 !== article.title && !manual) {
+  if (!retitle) throw new Error(`H1 和線上標題不同，這支程式不改標題（整篇重寫要改標題時加 --retitle 與 --before-publication）：\n新稿：${h1}\n線上：${article.title}`)
+  if (!beforePublication) throw new Error('--retitle 必須同時給 --before-publication')
+  if (article.title !== beforePublication.seoTitle) throw new Error(`線上的標題和修改前的 publication.json 不同，拒絕改標題：\n線上：${article.title}\n修改前：${beforePublication.seoTitle}`)
+}
 
 const renamedFile = path.join(packetDir, 'link-sentences.json')
 const renamedSentences = await readFile(renamedFile, 'utf8').then(JSON.parse, () => [])
-const {body, carried, notCarried} = rebuildBody(article.body, markdown, {articleId: slug, renamedSentences})
+const allowDropped = typeof options['allow-dropped-links'] === 'string' ? options['allow-dropped-links'].split(',').map((item) => item.trim()).filter(Boolean) : []
+const {body, carried, notCarried} = rebuildBody(article.body, markdown, {articleId: slug, renamedSentences, rewrite: retitle || options.rewrite === true, allowDropped})
 const liveExternal = externalHrefs(article.body)
 const newExternal = externalHrefs(body)
 const externalDropped = [...liveExternal].filter((href) => !newExternal.has(href))
@@ -91,6 +99,7 @@ if (manual) {
     if (newValue && newValue !== article[field]) fields[field] = newValue
   }
 } else if (beforePublication) {
+  if (retitle && h1 !== article.title) fields.title = h1
   for (const field of FIELDS.filter((name) => name !== 'title')) {
     const newValue = afterPublication[field]
     if (!newValue || newValue === article[field]) continue
