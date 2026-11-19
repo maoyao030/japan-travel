@@ -48,7 +48,8 @@ test('開頭點飯店名或時間、H3 用問句、少了訂房行都擋下', ()
 test('只有住客能泡不算住客說法；一間兩句住客說法才擋', () => {
   assert.deepEqual(checkStayTopic(page({extra: '大浴場只有住客能泡。'})).errors, [])
   const two = page().replace('有住客覺得好吃。', '有住客覺得好吃。有住客提到早上人多。')
-  assert.match(checkStayTopic(two).errors.join('\n'), /一間最多一句/)
+  // 2026-11-19：住客說法取消句數上限，一間兩句不擋。
+  assert.deepEqual(checkStayTopic(two).errors, [])
 })
 
 test('一間飯店正文太少會擋下（刪過頭）', () => {

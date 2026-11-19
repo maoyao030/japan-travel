@@ -1,7 +1,7 @@
 # 驗收紀錄：wakkanai-stay（2026-11-19，舊住宿頁重跑一輪）
 
 - 文章：`content-production/wakkanai-stay/reader-preview.md`（稚內住宿推薦，住稚內站前還是南稚內？）
-- SHA-256（換行統一成 LF 後計算）：`104804622cfb1a1c76eed8f2bdbfe6baeeaf5ed1f52c1bd3691b6775295b78d2`
+- SHA-256（換行統一成 LF 後計算）：`90cb19c1dc71995b8a84fecd3a8b3836c0fd09c800942875e2b4df0fa24fdf84`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 研究：`content-experiments/stay-rerun-2026-11-18/wakkanai/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-19 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
 - 寫作：規格助手（Opus 5.5）→ 五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，細寫六間都判剛好）。
@@ -38,3 +38,10 @@
 - 宗谷巴士機場線時刻表只到 2027-01-31，2 月後重查；渡輪 2027 年時刻表公布後重查第一班時間。
 - 稚內市住宿稅 2027-03-01 起加收，生效後把寫法改成現況。
 - SURFEEL 新溫泉完工後重寫那一間；HOTEL TRUNK 年底年初的營業 12 月中旬前重查。
+
+## 2026-11-19 補「住客怎麼說」小段
+
+- Darren 看了達門檻卻沒寫進去的住客說法後說「這些都是很棒的資訊啊，可以都放啊」，取消一間一句的上限；每間細寫的旅館多一個「住客怎麼說」小段，官方事實與住客說法分開。紀錄在研究資料夾的 `guest/notes.md`。
+- 事實查核（同一位查核子代理，Opus 5.5）逐點對評論紀錄：第 4 輪擋 6 句、第 5 輪擋 1 句（只有一個平台或一兩則的點都拿掉）；最後 158 項全部 verified。
+- 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
+- 上一版 SHA：`104804622cfb1a1c76eed8f2bdbfe6baeeaf5ed1f52c1bd3691b6775295b78d2`。

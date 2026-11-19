@@ -17,12 +17,12 @@ const CHAT_QUESTION = /(幾點|在哪吃|能去哪吃|在哪|多少錢|有嗎)�
 const POINTING = /(看|請看|可以看)(這|哪|下面|上面|前面|後面)[^。，]{0,8}(一節|那一節|那節)/
 const TIME_IN_OPENING = /\d{1,2}[:：]\d{2}|\d{1,2}點|走路約?\d+分/
 const MAX_QUESTION_H2 = 3
-// 2026-11-18：從 4 放寬到 8（一間仍最多一句），賣點只在住客評論裡的飯店才寫得進去。
-const MAX_GUEST_TOTAL = 8
+// 2026-11-19：Darren「這些都是很棒的資訊啊，可以都放」。住客說法不設上限，改放在「住客怎麼說」小段。
+const MAX_GUEST_TOTAL = Infinity
 const MAX_REPEAT = 2
 // Darren 2026-11-18：「廢話很多」。每間飯店只留第一段、一個主題段與「要注意」，不念規格。
-const MAX_BOLD_LABELS_PER_HOTEL = 2
-const MAX_HOTEL_BODY_CHARS = 320
+const MAX_BOLD_LABELS_PER_HOTEL = 3
+const MAX_HOTEL_BODY_CHARS = 480
 // Darren 2026-11-18：刪過頭也不行（「東西也變太少了吧」）。一間飯店正文不到 150 字，多半是把賣點也刪了。
 const MIN_HOTEL_BODY_CHARS = 120
 const THIN_HOTEL_BODY_CHARS = 150
@@ -99,7 +99,7 @@ export function checkStayTopic(markdown) {
     const hotelBody = section.lines.filter((line) => line.trim() !== '' && !line.startsWith(BOOKING_PREFIX) && !line.startsWith('|'))
     const boldLabels = hotelBody.filter((line) => /^\*\*[^*]+\*\*[：:]/.test(line))
     if (boldLabels.length > MAX_BOLD_LABELS_PER_HOTEL) {
-      errors.push(`「${section.title}」有 ${boldLabels.length} 個粗體小段，一間最多 ${MAX_BOLD_LABELS_PER_HOTEL} 個（一個主題段加「要注意」）；把查到的設施一樣一樣列出來就是念規格`)
+      errors.push(`「${section.title}」有 ${boldLabels.length} 個粗體小段，一間最多 ${MAX_BOLD_LABELS_PER_HOTEL} 個（主題段、「住客怎麼說」、「要注意」）；把查到的設施一樣一樣列出來就是念規格`)
     }
     const hotelChars = stripLinks(hotelBody.join('')).replace(/\*\*/g, '').replace(/\s/g, '').length
     if (hotelChars < MIN_HOTEL_BODY_CHARS) errors.push(`「${section.title}」正文只有 ${hotelChars} 字，一間至少 ${MIN_HOTEL_BODY_CHARS} 字；讓人想選這間的具體賣點（具體的菜、浴池、房型、位置好處）要寫出來`)
@@ -109,12 +109,11 @@ export function checkStayTopic(markdown) {
     if (/^[^。]{0,12}(是|為)[^。]{0,20}的自助[，。]/.test(first)) warnings.push(`「${section.title}」第一句像資料句，先講最讓人想選它的那件事`)
   }
 
-  // 5. 住客說法：全頁最多八句、一間最多一句。
+  // 5. 住客說法：不設上限（2026-11-19）。
   let guestTotal = 0
   for (const section of sections) {
     const count = (stripLinks(section.lines.join('\n')).match(GUEST) ?? []).length
     guestTotal += count
-    if (section.level === 3 && count > 1) errors.push(`「${section.title}」的住客說法有 ${count} 句，一間最多一句`)
   }
   if (guestTotal > MAX_GUEST_TOTAL) errors.push(`住客說法全頁有 ${guestTotal} 句，最多 ${MAX_GUEST_TOTAL} 句`)
 
