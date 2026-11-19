@@ -113,5 +113,5 @@ Darren 問 Otatomari沼、Peshi岬這些是不是其實有中文名。直接打�
 
 - ペシ岬有官方中文「佩西岬」，本站當初沒查官方繁中頁就用了羅馬拼音，是錯的。樣本已改成佩西岬。
 - オタトマリ沼兩個官方繁中網站都寫 Otatomari，沒有官方漢字；台灣也沒有查到固定的譯名。樣本暫時維持 Otatomari沼。
-- 線上文章與 `content-planning/glossary.json` 還是 Peshi岬（6 篇稿件用到），這次沒有動。
+- 線上文章與 `content-planning/glossary.json` 還是 Peshi岬（3 篇稿件用到），這次沒有動。
 - 教訓：查名字要先開官方繁體中文頁（visit-hokkaido.jp/tw 的景點頁、japan.travel 的國家公園頁），不能只看日文頁就決定用羅馬拼音。
