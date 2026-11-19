@@ -1,7 +1,7 @@
 # 驗收紀錄：furano-stay-ski（2026-11-18，住宿專門頁，不經 Darren 審核的試跑）
 
 - 文章：`content-production/furano-stay-ski/reader-preview.md`（富良野滑雪住宿推薦，11間飯店到雪道多遠、雪具與泡湯比較）
-- SHA-256（換行統一成 LF 後計算）：`bfd3d44dc127daf8e937eab7bf9729f8e92c06feeb49ee74b241b8db6e34e855`
+- SHA-256（換行統一成 LF 後計算）：`4f3a166defaad0efbf1a9489107ae4b60975207974b94a8683a3825d2fe8ae8a`
 - 規則：寫作 Skill `references/stay-topic-page.md`「自動化」一節（Darren 2026-11-18 決定住宿專門頁過了全部關卡就直接上線，他事後看摘要；指定富良野試跑）。流程紀錄在 `content-experiments/stay-furano-2026-11-18/ski/`。
 - 問法與競品、官方研究：研究子代理（Opus 5.5）。住客評論、讀不到的官方頁、訂房連結：事實查核者角色的子代理（Opus 5.5）在研究階段用瀏覽器讀（Trip.com、4travel、Google 地圖；沒登入）。
 - 規格：編輯子代理（Opus 5.5）；動筆前檢查：讀者助手（Opus 5.5），必修 11 條改完才動筆。
@@ -55,3 +55,10 @@
 - 事實查核子代理（Opus 5.5）第 7～9 輪：抓到 Bell Hills 展望浴池、Fenix 洗衣設備、Natulux 岩盤浴（10 月起維修停用，比較表同一格也改）共 4 筆，改完 88 筆 verified。
 - 份量與讀者驗收（`acceptance5.md`）：七題都過、七間都判剛好。
 - 舊 SHA：`af2eead15fee572c6e1ab1083856c4a6b1341b136d2d09497d87ae3268405158`。
+
+## 2026-11-19 補「住客怎麼說」小段
+
+- Darren 看了達門檻卻沒寫進去的住客說法後說「這些都是很棒的資訊啊，可以都放啊」，取消一間一句的上限；每間細寫的旅館多一個「住客怎麼說」小段，官方事實與住客說法分開。紀錄在研究資料夾的 `guest/notes.md`。
+- 事實查核（同一位查核子代理，Opus 5.5）逐點對評論紀錄：第 10 輪擋 3 句（紀錄沒分開算則數的細項），改完後條列且不寫「有人說」，第 11 輪全過；最後 98 項全部 verified。
+- 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
+- 上一版 SHA：`bfd3d44dc127daf8e937eab7bf9729f8e92c06feeb49ee74b241b8db6e34e855`。

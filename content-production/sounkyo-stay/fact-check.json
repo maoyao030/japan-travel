@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "sounkyo-stay",
-  "articleSha256": "25660de0cce21a5700d3b0e70856eeb345504d0b441fcc5c3f0d33268ce754ed",
-  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-18 用 python urllib 重開約 80 個官方頁（各館官網、觀光協會、北海道廳、BBH 稅務頁、Beer Grill Canyon），沒有使用瀏覽器。需要 JavaScript 的頁（ホテル大雪 talkappi FAQ、chillnn 訂房日曆、d-reserve、reserve.489ban.net 方案列表、Agoda 頁名）沒能重開，用 facts-extra.md 的瀏覽器摘錄並在 notes 註明；道北巴士時刻沿用〈層雲峽交通〉查核紀錄；住客說法以 facts-reviews.md 為準。；第 2 輪複查（2026-11-18）：以 git diff 逐句核對改過的 13 處，沒改的句子沿用第 1 輪判定，沒有使用瀏覽器。；第 3 輪複查（2026-11-18）：只核對 C118 一句。；第 4 輪複查（2026-11-19）：逐句核對六間旅館新增的「住客怎麼說」與換過的注意事項，對 facts-reviews.md 的則數；刪掉已不在正文的舊住客句 C17、C18、C25、C32、C42、C44、C51、C52、C57；沒有使用瀏覽器。；第 5 輪複查（2026-11-19）：核對改過的 4 句，刪掉已刪句的 claim G247。；第 6 輪（2026-11-19）：住客段改條列，和 git HEAD 比對去掉條列符號與空白後文字完全相同，只更新雜湊。",
+  "articleSha256": "13e0dddf1c553b7d99ff82a2de1ba45dfdc7a94f966fe08218d65491019fddbf",
+  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-18 用 python urllib 重開約 80 個官方頁（各館官網、觀光協會、北海道廳、BBH 稅務頁、Beer Grill Canyon），沒有使用瀏覽器。需要 JavaScript 的頁（ホテル大雪 talkappi FAQ、chillnn 訂房日曆、d-reserve、reserve.489ban.net 方案列表、Agoda 頁名）沒能重開，用 facts-extra.md 的瀏覽器摘錄並在 notes 註明；道北巴士時刻沿用〈層雲峽交通〉查核紀錄；住客說法以 facts-reviews.md 為準。；第 2 輪複查（2026-11-18）：以 git diff 逐句核對改過的 13 處，沒改的句子沿用第 1 輪判定，沒有使用瀏覽器。；第 3 輪複查（2026-11-18）：只核對 C118 一句。；第 4 輪複查（2026-11-19）：逐句核對六間旅館新增的「住客怎麼說」與換過的注意事項，對 facts-reviews.md 的則數；刪掉已不在正文的舊住客句 C17、C18、C25、C32、C42、C44、C51、C52、C57；沒有使用瀏覽器。；第 5 輪複查（2026-11-19）：核對改過的 4 句，刪掉已刪句的 claim G247。；第 6 輪（2026-11-19）：住客段改條列，和 git HEAD 比對去掉條列符號與空白後文字完全相同，只更新雜湊。；第 7 輪複查（2026-11-19）：逐條核對住客段去掉「有人說」後的 17 筆，對 facts-reviews.md 則數判強度。；第 8 輪複查（2026-11-19）：核對改過的 4 句。",
   "checkedAt": "2026-11-19",
   "claims": [
     {
@@ -1015,12 +1015,12 @@
     },
     {
       "claimId": "G201",
-      "articleExcerpt": "很多人提到頂樓大浴場跟露天看出去的山谷景色",
+      "articleExcerpt": "頂樓大浴場跟露天看出去的山谷景色受好評",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-1647074/choyo-tei/",
       "sourceTitle": "住客評論（朝陽亭飯店）",
       "sourceQuote": "R3：Trip.com 6、4travel 4、Google 0，共 10 則正面（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 5 輪（2026-11-19）：改成「很多人」，R3 兩平台 10 則，強度不超過紀錄。"
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R3 兩平台 10 則正面、沒有反面，「受好評」成立。"
     },
     {
       "claimId": "G202",
@@ -1051,12 +1051,12 @@
     },
     {
       "claimId": "G205",
-      "articleExcerpt": "自助晚餐跟早餐評價兩極，有人說菜色多又好吃，也有人覺得普通、選擇少。",
+      "articleExcerpt": "自助晚餐跟早餐評價兩極，菜色多又好吃受好評，也有覺得普通、選擇少的。",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-1647074/choyo-tei/",
       "sourceTitle": "住客評論（朝陽亭飯店）",
       "sourceQuote": "R6：Trip.com 正 10 負 8、4travel 正 5 負 4、Google 正 2 負 1（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）：正負兩面各自都超過兩平台三則。"
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R6 正 17、負 13，兩面都還在，「兩極」成立。"
     },
     {
       "claimId": "G206",
@@ -1096,21 +1096,21 @@
     },
     {
       "claimId": "G210",
-      "articleExcerpt": "很多人稱讚溫泉，有硫磺味，泡起來舒服",
+      "articleExcerpt": "溫泉受好評，有硫磺味，泡起來舒服",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-705919/choyo-resort-hotel/",
       "sourceTitle": "住客評論（朝陽度假飯店）",
       "sourceQuote": "R14：Trip.com 正 14、4travel 正 5、Google 正 2，共 21 則（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 5 輪（2026-11-19）：改成「很多人」，R14 三平台 21 則。"
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R14 正 21、負 1，「受好評」成立。"
     },
     {
       "claimId": "G211",
-      "articleExcerpt": "包租湯屋也有人說看得到溪流。",
+      "articleExcerpt": "有的包租湯屋看得到溪流。",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-705919/choyo-resort-hotel/",
       "sourceTitle": "住客評論（朝陽度假飯店）",
       "sourceQuote": "R24：Trip.com 1、4travel 2，共 3 則（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）："
+      "notes": "第 8 輪（2026-11-19）：R24 共 3 則，「有的」符合少數說法。"
     },
     {
       "claimId": "G212",
@@ -1123,21 +1123,21 @@
     },
     {
       "claimId": "G213",
-      "articleExcerpt": "自助晚餐大多是好評，菜色多，也有人覺得普通、選擇少。",
+      "articleExcerpt": "自助晚餐大多是好評，菜色多，少數覺得普通、選擇少。",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-705919/choyo-resort-hotel/",
       "sourceTitle": "住客評論（朝陽度假飯店）",
       "sourceQuote": "R16：Trip.com 正 15 負 8、4travel 正 4 負 2、Google 正 3（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）："
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R16 正 22、負 10，負面約三成，「少數」可以接受，壞處還在。"
     },
     {
       "claimId": "G214",
-      "articleExcerpt": "房間大小評價兩極，覺得寬敞的人比較多",
+      "articleExcerpt": "房間大小評價兩極，寬敞的好評比較多",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-705919/choyo-resort-hotel/",
       "sourceTitle": "住客評論（朝陽度假飯店）",
       "sourceQuote": "R21：寬敞 Trip.com 5、4travel 1；小 Trip.com 2、Google 1（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）："
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R21 寬敞 6、小 3，成立。"
     },
     {
       "claimId": "G215",
@@ -1168,39 +1168,39 @@
     },
     {
       "claimId": "G218",
-      "articleExcerpt": "最多人稱讚的就是大廳的Lounge，下午辦完入住就能去喝、去吃。",
+      "articleExcerpt": "大廳的Lounge最受好評，下午辦完入住就能去喝、去吃。",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-705344/sounkaku-grand-hotel/",
       "sourceTitle": "住客評論（層雲閣旅館）",
       "sourceQuote": "R27：Trip.com 18、4travel 6、Google 3，共 27 則；官方 K33 Lounge 15:00～22:00（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）：27 則是這間最多的一項（R32 好評 24、R30 19），「最多人」成立；時間照官方。"
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R27 共 27 則，是這間最多的好評（R32 24、R30 19），「最受好評」成立。"
     },
     {
       "claimId": "G219",
-      "articleExcerpt": "5樓的峽谷露天也常被提到，景色好、泡起來舒服",
+      "articleExcerpt": "5樓的峽谷露天景色好、泡起來舒服",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-705344/sounkaku-grand-hotel/",
       "sourceTitle": "住客評論（層雲閣旅館）",
       "sourceQuote": "R30：Trip.com 13、4travel 4、Google 2（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）："
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R30 三平台 19 則正面、沒有反面，直接寫成立。"
     },
     {
       "claimId": "G220",
-      "articleExcerpt": "不過室內的浴場比較舊、不大，有人覺得不夠乾淨。",
+      "articleExcerpt": "不過室內的浴場比較舊、不大，也有覺得不夠乾淨的。",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-705344/sounkaku-grand-hotel/",
       "sourceTitle": "住客評論（層雲閣旅館）",
       "sourceQuote": "R31：Trip.com 負 4、Google 負 3（舊、小、不乾淨）（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）：兩平台 7 則。"
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R31 Trip.com 4、Google 3，「也有…的」保留少數語氣。"
     },
     {
       "claimId": "G221",
-      "articleExcerpt": "自助晚餐跟早餐大多是好評，也有人覺得普通。",
+      "articleExcerpt": "自助晚餐跟早餐大多是好評，少數覺得普通。",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-705344/sounkaku-grand-hotel/",
       "sourceTitle": "住客評論（層雲閣旅館）",
       "sourceQuote": "R32：Trip.com 正 14 負 4、4travel 正 7 負 2、Google 正 3 負 1（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）："
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R32 正 24、負 7，「少數」成立。"
     },
     {
       "claimId": "G222",
@@ -1222,12 +1222,12 @@
     },
     {
       "claimId": "G224",
-      "articleExcerpt": "比較可惜的是沒翻新的房間跟浴廁很舊，清潔的評價也兩極，所以住過的人建議訂翻新過的房型。",
+      "articleExcerpt": "比較可惜的是沒翻新的房間跟浴廁很舊，清潔的評價也兩極，翻新過的房型評價明顯比較好。",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-705344/sounkaku-grand-hotel/",
       "sourceTitle": "住客評論（層雲閣旅館）",
       "sourceQuote": "R29：Trip.com 舊 9（明說高樓層較新 3）、4travel 3、Google 2（一定要訂整修過的）；R36：Trip.com 正 4 負 3、Google 負 1（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）："
+      "notes": "第 8 輪（2026-11-19）：R29：Trip.com 3 則說高樓層較新、Google 2 則說要訂整修過的、4travel 3 則說沒翻新的舊，「翻新過的評價明顯比較好」成立，不再是本站建議。"
     },
     {
       "claimId": "G225",
@@ -1240,12 +1240,12 @@
     },
     {
       "claimId": "G226",
-      "articleExcerpt": "最多人提到的是三處大浴場可以輪流泡，露天看得到山谷跟黑岳。",
+      "articleExcerpt": "最受好評的是三處大浴場可以輪流泡，露天看得到山谷跟黑岳。",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-703508/hotel-taisetsu/",
       "sourceTitle": "住客評論（大雪飯店）",
       "sourceQuote": "R41：Trip.com 14、4travel 9、Google 5，共 28 則（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）：28 則是這間最多的一項（R44 晚餐好評 27），「最多人」成立。天華之湯 12/15 前停用是臨時狀況，照規則不寫。"
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R41 正面 28 則，比晚餐好評 27 則多 1，「最受好評」成立（差距很小）。"
     },
     {
       "claimId": "G227",
@@ -1267,12 +1267,12 @@
     },
     {
       "claimId": "G229",
-      "articleExcerpt": "早餐的評價倒是比較弱，有人說選擇少",
+      "articleExcerpt": "早餐的評價倒是比較弱，也有覺得選擇少的",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-703508/hotel-taisetsu/",
       "sourceTitle": "住客評論（大雪飯店）",
       "sourceQuote": "R44：早餐選擇少 Trip.com 3；Google 負 1（生魚片少、沒有鮭魚卵）（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）：Google 那則從內容看是早餐（鮭魚卵），合計兩平台 4 則，勉強達門檻。"
+      "notes": "第 8 輪（2026-11-19）：「也有…的」保留少數語氣（R44 4 則）。"
     },
     {
       "claimId": "G230",
@@ -1312,12 +1312,12 @@
     },
     {
       "claimId": "G234",
-      "articleExcerpt": "最多人稱讚的是穿湯衣進去的混浴大露天",
+      "articleExcerpt": "穿湯衣進去的混浴大露天最受好評",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-1678477/sounkyo-kankou-hotel/",
       "sourceTitle": "住客評論（層雲峽觀光飯店）",
       "sourceQuote": "R54：Trip.com 正 5、4travel 正 6、Google 正 2，共 13 則（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）：和 R56「划算」同為 13 則，並列最多，「最多人稱讚」勉強成立（划算不算稱讚設施）。要保守可寫「很多人稱讚」。"
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R54 正面 13 則，和 R56「划算」13 則並列最多；划算是評價價格不是設施，「最受好評」可以接受。"
     },
     {
       "claimId": "G235",
@@ -1339,12 +1339,12 @@
     },
     {
       "claimId": "G237",
-      "articleExcerpt": "不過不少人覺得以價格來說划算",
+      "articleExcerpt": "不過以價格來說划算的評價不少",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-1678477/sounkyo-kankou-hotel/",
       "sourceTitle": "住客評論（層雲峽觀光飯店）",
       "sourceQuote": "R56：划算 Trip.com 8、4travel（便宜）3、Google 2（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）：達門檻（13 則）。沒有寫數字，也沒和別間比，不算寫房價，住宿頁可以留。紀錄原句是「比附近大飯店便宜」，正文沒寫比較對象，強度沒超過。"
+      "notes": "第 8 輪（2026-11-19）：R56 划算 13 則，寫成評價、不是本站判定，沒有數字。"
     },
     {
       "claimId": "G238",
@@ -1357,12 +1357,12 @@
     },
     {
       "claimId": "G239",
-      "articleExcerpt": "晚餐也一樣評價兩極，說普通的人比說好吃的多。",
+      "articleExcerpt": "晚餐也一樣評價兩極，普通的評價比好吃的多。",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-1678477/sounkyo-kankou-hotel/",
       "sourceTitle": "住客評論（層雲峽觀光飯店）",
       "sourceQuote": "R58：正 Trip.com 6、4travel 2、Google 1（9）；負 Trip.com 6、4travel 3、Google 4（13）（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）："
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R58 正 9、負 13，成立；改法和原句強度一樣。"
     },
     {
       "claimId": "G240",
@@ -1411,12 +1411,12 @@
     },
     {
       "claimId": "G245",
-      "articleExcerpt": "最多人稱讚的是早餐，好吃、看得出用心。",
+      "articleExcerpt": "早餐最受好評，好吃、看得出用心。",
       "sourceUrl": "https://tw.trip.com/hotels/kamikawa-hotel-detail-7980205/hotel-kumoi/",
       "sourceTitle": "住客評論（雲居飯店）",
       "sourceQuote": "R69：Trip.com 正 10、Google 正 2，共 12 則（Trip.com 另有 2 則說普通）（facts-reviews.md，2026-11-18 查核角色以瀏覽器讀）",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-19，住客怎麼說）：12 則是這間最多的一項（R70 10、R68 9），「最多人」成立。"
+      "notes": "第 7 輪（2026-11-19，住客段去掉「有人說」）：R69 正 12，是這間最多的一項（R70 10、R68 9），成立。"
     },
     {
       "claimId": "G246",

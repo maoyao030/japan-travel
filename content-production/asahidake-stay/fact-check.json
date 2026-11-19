@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "asahidake-stay",
-  "articleSha256": "bfd44f68ad7673a17a7c8b83521760ad5ad6a2c1c63bc5d74eca16aaaaa7c793",
-  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-19 用 python urllib 重開約 55 個官方頁與 La Vista 冬季接送 PDF，Trip.com 5 頁讀標題；沒有使用瀏覽器。要執行 JavaScript 的頁（tripla、489pro-x、489ban 方案細節、talkappi、Agoda 頁名）沒能重開，用 facts-extra.md、booking-links.md 的瀏覽器摘錄並在 notes 註明；住客說法以 facts-reviews.md 為準。；第 2 輪複查（2026-11-19）：照 seam-notes.md「第二輪」與全文重讀，逐句核對改過、新增、刪除的句子，新增來源（白樺莊料金頁、K's House 房型頁、杜季客室頁）沿用今天 urllib 重開的內容；沒有使用瀏覽器。；第 3 輪複查（2026-11-19）：只核對八處小改，沒有使用瀏覽器。；第 4 輪複查（2026-11-19）：只核對新增的「住客怎麼說」小段與「為什麼選這間」剩下的句子，住客說法以 facts-reviews.md 的則數為準、細點沒拆則數的照保守判；沒有使用瀏覽器。；第 5 輪複查（2026-11-19）：只核對照保守改法改寫的住客句；沒有使用瀏覽器。；第 6 輪（2026-11-19）：住客怎麼說五段改成條列，和 HEAD 版逐字比對只有換行與條列符號不同，判定沿用第 5 輪。",
+  "articleSha256": "04b42a08ac4dcbdf6ef7875bce96146029f17f3a36a43dcecbe72c95f1d6a395",
+  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-19 用 python urllib 重開約 55 個官方頁與 La Vista 冬季接送 PDF，Trip.com 5 頁讀標題；沒有使用瀏覽器。要執行 JavaScript 的頁（tripla、489pro-x、489ban 方案細節、talkappi、Agoda 頁名）沒能重開，用 facts-extra.md、booking-links.md 的瀏覽器摘錄並在 notes 註明；住客說法以 facts-reviews.md 為準。；第 2 輪複查（2026-11-19）：照 seam-notes.md「第二輪」與全文重讀，逐句核對改過、新增、刪除的句子，新增來源（白樺莊料金頁、K's House 房型頁、杜季客室頁）沿用今天 urllib 重開的內容；沒有使用瀏覽器。；第 3 輪複查（2026-11-19）：只核對八處小改，沒有使用瀏覽器。；第 4 輪複查（2026-11-19）：只核對新增的「住客怎麼說」小段與「為什麼選這間」剩下的句子，住客說法以 facts-reviews.md 的則數為準、細點沒拆則數的照保守判；沒有使用瀏覽器。；第 5 輪複查（2026-11-19）：只核對照保守改法改寫的住客句；沒有使用瀏覽器。；第 6 輪（2026-11-19）：住客怎麼說五段改成條列，和 HEAD 版逐字比對只有換行與條列符號不同，判定沿用第 5 輪。；第 7 輪（2026-11-19）：只核對「住客怎麼說」拿掉主詞後的 10 條，和 HEAD 版 diff 確認其他沒動；沒有使用瀏覽器。；第 8 輪（2026-11-19）：只核對照改法改寫的 4 條，和 HEAD 版 diff 確認其他沒動；沒有使用瀏覽器。",
   "checkedAt": "2026-11-19",
   "claims": [
     {
@@ -142,21 +142,21 @@
     },
     {
       "claimId": "C16",
-      "articleExcerpt": "最多人提到的是房間很大。",
+      "articleExcerpt": "最受好評的是房間很大。",
       "sourceUrl": "https://4travel.jp/",
       "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
-      "sourceQuote": "R2：Trip.com 30 則中 13 則、4travel 10 則中 4 則、Google 5 則中 4 則（全部正面），是 Bear Monte 各點裡則數最多的",
+      "sourceQuote": "R2：Trip.com 13、4travel 4、Google 4，全部正面，合計 21；R1（離纜車近）正面 20、R3（餐）正面 18",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 5 輪照保守改法改寫後成立。"
+      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 7 輪（條列拿掉「有人說」）：「最受好評」成立，但只比 R1 多 1 則，差距很小。"
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "一家人來住的話，也有人說複層房很合適。",
+      "articleExcerpt": "一家人來住的話，部分評價覺得複層房很合適。",
       "sourceUrl": "https://4travel.jp/",
       "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
-      "sourceQuote": "R7「適合一家人」：Trip.com 30 則中 1 則、Google 5 則中 2 則（樓中樓），紀錄判 2 個平台 3 則可用",
+      "sourceQuote": "R7「適合一家人」：Trip.com 1 則、Google 2 則，合計 3 則",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。「也有人說」強度和 3 則相符。"
+      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 8 輪照保守改法改寫後成立。「部分評價」和少數說法的強度相符。"
     },
     {
       "claimId": "C18",
@@ -165,16 +165,16 @@
       "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
       "sourceQuote": "R3：Trip.com 正 13、負 2；4travel 正 3；Google 正 2、中性 1",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。紀錄把晚餐與早餐記成同一點（以正面為主），「大多」成立；負面只有 Trip 2 則，沒寫，正確。"
+      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。沒改。"
     },
     {
       "claimId": "C19",
-      "articleExcerpt": "不過附近能吃的地方不多，所以也有人提醒最好連晚餐一起訂，或是先在山下買好吃的。",
-      "sourceUrl": "https://4travel.jp/",
-      "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
-      "sourceQuote": "R6：Trip.com 30 則中 2 則、4travel 10 則中 1 則；遊客中心：食堂、売店、コンビニ（ラビスタ1階）がございます",
+      "articleExcerpt": "不過附近能吃的地方不多。",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/q%ef%bc%86a/",
+      "sourceTitle": "Q＆A | 旭岳ビジターセンター",
+      "sourceQuote": "近隣で食事ができる場所はありますか？ 食堂…旭岳ロープウェイ山麓駅2階／売店…1階／コンビニ…ラビスタ大雪山1階 がございます。",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 5 輪照保守改法改寫後成立。和官方（遊客中心列的三處）一致。"
+      "notes": "第 8 輪照保守改法改寫後成立。建議句已刪；「能吃的地方不多」有官方依據（遊客中心只列三處），也有 R6（Trip.com 2、4travel 1）。"
     },
     {
       "claimId": "C20",
@@ -259,12 +259,12 @@
     },
     {
       "claimId": "C29",
-      "articleExcerpt": "很多住客提到3個包租浴池，想泡的時候就能泡。",
+      "articleExcerpt": "3個包租浴池很受好評。",
       "sourceUrl": "https://4travel.jp/",
       "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
-      "sourceQuote": "R12：Trip.com 9 則、4travel 3 則、Google 2 則（全部正面）；官方：貸切風呂はご予約制ではございません。空きがあれば、ご自由にご利用いただけます。",
+      "sourceQuote": "R12：Trip.com 9、4travel 3、Google 2，全部正面，合計 14；官方：3つの貸切風呂",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 5 輪照保守改法改寫後成立。"
+      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 8 輪照保守改法改寫後成立。"
     },
     {
       "claimId": "C30",
@@ -286,12 +286,12 @@
     },
     {
       "claimId": "C32",
-      "articleExcerpt": "晚餐的評價倒是兩極，多數人覺得法式跟日式套餐都好吃，也有人覺得普通。",
+      "articleExcerpt": "晚餐的評價倒是兩極，法式跟日式套餐多數是好評，也有覺得普通的。",
       "sourceUrl": "https://4travel.jp/",
       "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
       "sourceQuote": "R15：Trip.com 正 10、負 5；4travel 正 6、負 1；Google 正 3",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 5 輪照保守改法改寫後成立。"
+      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 7 輪（條列拿掉「有人說」）：兩極、多數好評、壞處仍在，強度一致。"
     },
     {
       "claimId": "C33",
@@ -385,12 +385,12 @@
     },
     {
       "claimId": "C43",
-      "articleExcerpt": "住過的人講最多的就是溫泉，有些池子水溫偏溫，適合慢慢泡很久。",
+      "articleExcerpt": "最受好評的是溫泉，有些池子水溫偏溫，適合慢慢泡很久。",
       "sourceUrl": "https://4travel.jp/",
       "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
-      "sourceQuote": "R26：Trip.com 20、4travel 9、Google 4（湧駒莊則數最多）；R27：Trip.com 2 則、4travel 3 則（ぬるめ、長湯）",
+      "sourceQuote": "R26：Trip.com 20、4travel 9、Google 4，全部正面（湧駒莊最多；R28 餐正面 26）；R27：Trip.com 2、4travel 3",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。"
+      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 7 輪（條列拿掉「有人說」）：「最受好評」成立；「有些池子」保留了範圍。"
     },
     {
       "claimId": "C44",
@@ -529,12 +529,12 @@
     },
     {
       "claimId": "C59",
-      "articleExcerpt": "最多人稱讚的是溫泉，爬完山回來泡很舒服。",
+      "articleExcerpt": "溫泉最受好評，爬完山回來泡很舒服。",
       "sourceUrl": "https://4travel.jp/",
       "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
-      "sourceQuote": "R37：Trip.com 19 則、4travel 7 則（全部正面），是 K's House 則數最多的（R39 合計 24）",
+      "sourceQuote": "R37：Trip.com 19、4travel 7，全部正面，合計 26；R39（廚房）24",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。"
+      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 7 輪（條列拿掉「有人說」）：成立，差距小。"
     },
     {
       "claimId": "C60",
@@ -790,21 +790,21 @@
     },
     {
       "claimId": "C88",
-      "articleExcerpt": "最多人提到的是峽谷的景色，住起來也很安靜。",
+      "articleExcerpt": "峽谷的景色最受好評，住起來也很安靜。",
       "sourceUrl": "https://4travel.jp/",
       "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
-      "sourceQuote": "R57：Trip.com 16 則中 8 則、4travel 10 則中 4 則、Google 5 則中 2 則，合計 14，是敷島莊則數最多的",
+      "sourceQuote": "R57：Trip.com 8、4travel 4、Google 2，合計 14（敷島莊最多；R51、R52 各 11）",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。"
+      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 7 輪（條列拿掉「有人說」）："
     },
     {
       "claimId": "C89",
-      "articleExcerpt": "溫泉同樣常被稱讚，泡起來很舒服。",
+      "articleExcerpt": "溫泉也受好評，泡起來很舒服。",
       "sourceUrl": "https://4travel.jp/",
       "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
-      "sourceQuote": "R52：Trip.com 3 則、4travel 4 則（2020 年以後）、Google 4 則",
+      "sourceQuote": "R52：Trip.com 3、4travel 4（2020 年以後）、Google 4",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。只寫整體，沒寫細項，正確。"
+      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 7 輪（條列拿掉「有人說」）："
     },
     {
       "claimId": "C90",
@@ -817,12 +817,12 @@
     },
     {
       "claimId": "C91",
-      "articleExcerpt": "晚餐評價兩極，有人覺得豐盛好吃，還吃得到馬肉刺身，也有人覺得普通。",
+      "articleExcerpt": "晚餐評價兩極，覺得豐盛好吃的和覺得普通的都有，菜色裡有馬肉刺身。",
       "sourceUrl": "https://4travel.jp/",
       "sourceTitle": "facts-reviews.md（Trip.com／4travel／Google 地圖手動閱讀統整）",
-      "sourceQuote": "R54：Trip.com 正 4、負 3；4travel（2020 年以後）正 1、負 1；Google 正 1、負 1；R55 馬肉刺身：Trip.com 2 則、Google 1 則",
+      "sourceQuote": "R54：正面 Trip.com 4、4travel 1、Google 1；負面 Trip.com 3、4travel 1、Google 1；R55：晚餐有馬肉刺身（Trip.com 2、Google 1）",
       "verdict": "verified",
-      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 5 輪照保守改法改寫後成立。"
+      "notes": "住客說法；R 編號與則數以 facts-reviews.md 為準，這輪沒重讀評論（不用瀏覽器）。第 8 輪照保守改法改寫後成立。好壞並陳，馬肉刺身只寫「有」，和紀錄一致。"
     },
     {
       "claimId": "C92",

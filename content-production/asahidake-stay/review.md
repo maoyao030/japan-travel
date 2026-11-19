@@ -1,7 +1,7 @@
 # 驗收紀錄：asahidake-stay（2026-11-19，舊住宿頁重跑一輪）
 
 - 文章：`content-production/asahidake-stay/reader-preview.md`（旭岳溫泉住宿推薦，住纜車旁還是天人峽？）
-- SHA-256（換行統一成 LF 後計算）：`bfd44f68ad7673a17a7c8b83521760ad5ad6a2c1c63bc5d74eca16aaaaa7c793`
+- SHA-256（換行統一成 LF 後計算）：`04b42a08ac4dcbdf6ef7875bce96146029f17f3a36a43dcecbe72c95f1d6a395`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 研究：`content-experiments/stay-rerun-2026-11-18/asahidake/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-18 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
 - 寫作：規格助手（Opus 5.5）→ 五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，六個旅館小節都判剛好）。
@@ -44,3 +44,4 @@
 - 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
 - 上一版 SHA：`73bce6ed1b248e5d40277de3f8331277a81b166d7987e222a88105ce0430f346`。
 - 2026-11-19 補記：Darren 看了段落版後說「列點的清楚一點」，「住客怎麼說」改成一句一條的條列，句子沒改；查核者確認後更新雜湊（上一版 `c4c651d757fe46ce9aee81be437a6969219cfe15034f21eac51187dcd1499741`）。
+- 2026-11-19 補記：Darren 說「住客怎麼說」底下不用再寫「有人說」，條列改成直接講內容；查核者逐條確認強度沒有超過評論紀錄（少數的說法改寫成「少數覺得」「部分」「評價不少」）（上一版 `bfd44f68ad7673a17a7c8b83521760ad5ad6a2c1c63bc5d74eca16aaaaa7c793`）。

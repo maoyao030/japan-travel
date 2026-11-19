@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay",
-  "articleSha256": "1aa90a8990392dfd220d114a10890d58ff7b98b01d4040a8ec7515118ea0d441",
-  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-18 用 python urllib 與 curl 重開官方頁，沒有使用瀏覽器；沿用的項目註明出自哪一頁專門頁的 fact-check.json；第 2 輪複查（2026-11-18）：逐句核對 git diff HEAD~1 改過與新增的句子；第 3 輪複查（2026-11-18）：逐句核對 restore/before.md 到現稿補回的賣點；第 4 輪複查（2026-11-18）：逐句核對 restore/before-round2.md 到現稿的改動；第 5 輪複查（2026-11-18）：讀者驗收後五處改動；第 6 輪複查（2026-11-19）：「住客怎麼說」小段逐句對 facts-reviews.md（2026-11-18 查核者瀏覽器重看）；第 7 輪（2026-11-19）：照第 6 輪改法修正的 5 句；第 8 輪（2026-11-19）：「住客怎麼說」六段改成條列，和 git HEAD 版 diff 確認句子一字未改",
+  "articleSha256": "f9bb1cdb0ebeda7117fd5f45c06c9411ae8dfc387255064d54ad1cd9a37f0f12",
+  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-18 用 python urllib 與 curl 重開官方頁，沒有使用瀏覽器；沿用的項目註明出自哪一頁專門頁的 fact-check.json；第 2 輪複查（2026-11-18）：逐句核對 git diff HEAD~1 改過與新增的句子；第 3 輪複查（2026-11-18）：逐句核對 restore/before.md 到現稿補回的賣點；第 4 輪複查（2026-11-18）：逐句核對 restore/before-round2.md 到現稿的改動；第 5 輪複查（2026-11-18）：讀者驗收後五處改動；第 6 輪複查（2026-11-19）：「住客怎麼說」小段逐句對 facts-reviews.md（2026-11-18 查核者瀏覽器重看）；第 7 輪（2026-11-19）：照第 6 輪改法修正的 5 句；第 8 輪（2026-11-19）：「住客怎麼說」六段改成條列，和 git HEAD 版 diff 確認句子一字未改；第 9 輪（2026-11-19）：「住客怎麼說」條列拿掉「有人說」類字眼後，逐條核對強度；第 10 輪（2026-11-19）：CABIN、Super Hotel 兩條改成「房間偏小的評價也不少。」",
   "checkedAt": "2026-11-19",
   "claims": [
     {
@@ -1015,30 +1015,30 @@
     },
     {
       "claimId": "C127",
-      "articleExcerpt": "CABIN 住客怎麼說：不少住過的人提到房間跟館內的設備偏舊，看得出有些年紀。",
+      "articleExcerpt": "CABIN 住客怎麼說：房間跟館內的設備偏舊，看得出有些年紀。",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2509933/",
       "sourceTitle": "住客評論統整",
       "sourceQuote": "設備偏舊：Trip.com 30 則中 7 則、4travel 10 則中 2 則、Google 地圖 5 則中 2 則（合計 11 則）；房間偏小：Trip.com 約 10 則、Google 1 則、4travel 1 則（合計約 12 則）",
       "verdict": "verified",
-      "notes": "第 7 輪：「最常提到」改成「不少住過的人提到」，三個平台 11 則，沒有超出紀錄。"
+      "notes": "第 9 輪：拿掉「不少住過的人提到」。三個平台 11 則，紀錄沒有反面說法，放在「住客怎麼說」底下直接講沒有超出。"
     },
     {
       "claimId": "C128",
-      "articleExcerpt": "CABIN 住客怎麼說：房間大小也有不少人覺得偏小。",
+      "articleExcerpt": "CABIN 住客怎麼說：房間偏小的評價也不少。",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2509933/",
       "sourceTitle": "住客評論統整",
       "sourceQuote": "房間偏小：Trip.com 約 10 則、Google 地圖 1 則、4travel 1 則；反面「偏寬」只有 4travel 3 則（單一平台）",
       "verdict": "verified",
-      "notes": "三個平台約 12 則，達門檻。紀錄另註「評價兩極」，但反面只有單一平台、不到門檻，照規則不寫，沒有違反好壞都寫。"
+      "notes": "第 10 輪：照第 9 輪改法。偏小約 12 則（三個平台），反面 4travel 3 則；「也不少」沒有寫成絕對，強度符合紀錄。"
     },
     {
       "claimId": "C129",
-      "articleExcerpt": "AMANEK 住客怎麼說：說法最一致的是房間偏小，住過的人不少都這樣覺得。",
+      "articleExcerpt": "AMANEK 住客怎麼說：房間偏小，這點的評價最一致。",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/",
       "sourceTitle": "住客評論統整",
       "sourceQuote": "房間小：Trip.com 30 則中 5 則、4travel 10 則中 5 則、Google 地圖 5 則中 4 則（合計 14 則）；反面 Trip.com 1 則",
       "verdict": "verified",
-      "notes": "「最一致」有紀錄撐：14 比 1，紀錄也寫它比大浴場擁擠（正 5、反 2）穩。"
+      "notes": "第 9 輪：14 則對反面 1 則，「評價最一致」保留了程度，沒有超出紀錄。"
     },
     {
       "claimId": "C130",
@@ -1051,30 +1051,30 @@
     },
     {
       "claimId": "C132",
-      "articleExcerpt": "Super Hotel 住客怎麼說：不少人提到溫泉的浴池不大，人多的時候要等。",
+      "articleExcerpt": "Super Hotel 住客怎麼說：溫泉的浴池不大，人多的時候要等。",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-17452018/",
       "sourceTitle": "住客評論統整",
       "sourceQuote": "浴池小、人多要等：Trip.com 5 則、4travel 3 則、Google 地圖 4 則",
       "verdict": "verified",
-      "notes": "紀錄把「浴池很小，人多時要等」當一件事統計，三個平台 12 則；「不少人」沒有超出。"
+      "notes": "第 9 輪：拿掉「不少人提到」。三個平台 12 則，紀錄沒有反面說法，沒有超出。"
     },
     {
       "claimId": "C133",
-      "articleExcerpt": "Super Hotel 住客怎麼說：房間也常被說偏小。",
+      "articleExcerpt": "Super Hotel 住客怎麼說：房間偏小的評價也不少。",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-17452018/",
       "sourceTitle": "住客評論統整",
       "sourceQuote": "房間小：Trip.com 約 28 則中 8 則、4travel 10 則中 3 則、Google 地圖 5 則中 2 則；反面 Google 1 則、Trip.com 1 則（合計 2 則，不到門檻）",
       "verdict": "verified",
-      "notes": "三個平台 13 則（約三成）。紀錄建議的寫法是「有些住客覺得房間小」，「常被說」稍強但在這個比例內可接受。"
+      "notes": "第 10 輪：照第 9 輪改法。偏小 13 則（三個平台），反面 2 則；「也不少」強度符合紀錄。"
     },
     {
       "claimId": "C134",
-      "articleExcerpt": "Dormy Inn 住客怎麼說：很多人提到泡完湯可以拿免費的冰棒跟乳酸飲料。",
+      "articleExcerpt": "Dormy Inn 住客怎麼說：泡完湯可以拿免費的冰棒跟乳酸飲料。",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/",
       "sourceTitle": "住客評論統整",
       "sourceQuote": "Trip.com 約 9 則、4travel 4 則、Google 地圖 2 則（onsen C5：Trip.com 2 則、Google 2 則提到乳酸飲料）；官網服務頁列「湯上がりアイスサービス」「湯上がり乳酸菌飲料サービス」（https://dormy-hotels.com/dormyinn/hotels/asahikawa/service/ ，2026-11-19 重開）",
       "verdict": "verified",
-      "notes": "冰棒與乳酸飲料兩點都各自跨兩個以上平台、3 則以上，官網也列為服務，沒有衝突。沿用 asahikawa-stay-onsen 的 C5。"
+      "notes": "第 9 輪：拿掉「很多人提到」。這件事官網也列為服務（湯上がりアイスサービス、湯上がり乳酸菌飲料サービス），寫成肯定句沒有問題。沿用 asahikawa-stay-onsen 的 C5。"
     },
     {
       "claimId": "C135",
@@ -1087,21 +1087,12 @@
     },
     {
       "claimId": "C136",
-      "articleExcerpt": "OMO7 住客怎麼說：不少人稱讚大廳，熊跟動物的裝飾很有特色，帶小孩來住的人也覺得很適合。",
+      "articleExcerpt": "OMO7 住客怎麼說：大廳熊跟動物的裝飾很有特色，帶小孩來住也很適合。",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-703410/",
       "sourceTitle": "住客評論統整",
       "sourceQuote": "大廳裝飾有特色：Trip.com 約 10 則（熊、動物裝飾）、Google 地圖 2 則（北極熊佈置）；適合帶小孩：Trip.com 約 8 則、4travel 1 則",
       "verdict": "verified",
-      "notes": "兩點各自跨兩個平台、3 則以上。"
-    },
-    {
-      "claimId": "C137",
-      "articleExcerpt": "OMO7 住客怎麼說：不少人稱讚大廳",
-      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-703410/",
-      "sourceTitle": "住客評論統整",
-      "sourceQuote": "大廳裝飾：Trip.com 約 10 則、Google 2 則",
-      "verdict": "verified",
-      "notes": "第 7 輪：「最多人稱讚」改成「不少人稱讚」，大廳裝飾 Trip.com 約 10 則、Google 2 則，沒有超出紀錄。"
+      "notes": "第 9 輪：拿掉「不少人稱讚」（原 C137 併進本筆後移除）。裝飾：Trip.com 約 10 則、Google 2 則；帶小孩：Trip.com 約 8 則、4travel 1 則。反面「小孩多、沒帶小孩會覺得吵」只有 Trip.com 2 則，單一平台不寫；「帶小孩來住也很適合」放在「住客怎麼說」底下，不是本站建議，強度沒有超出。"
     },
     {
       "claimId": "C139",
@@ -1114,12 +1105,12 @@
     },
     {
       "claimId": "C140",
-      "articleExcerpt": "Art 住客怎麼說：不少人稱讚房間寬敞。",
+      "articleExcerpt": "Art 住客怎麼說：房間寬敞。",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-703413/",
       "sourceTitle": "住客評論統整",
       "sourceQuote": "房間寬敞：Trip.com 30 則中約 6 則、4travel 10 則中 2 則（Google 地圖沒讀）",
       "verdict": "verified",
-      "notes": "第 7 輪：「最多人稱讚」改成「不少人稱讚」，兩個平台 8 則，沒有超出紀錄。"
+      "notes": "第 9 輪：拿掉「不少人稱讚」。Trip.com 約 6 則、4travel 2 則，紀錄沒有反面說法（Google 沒讀），沒有超出。"
     },
     {
       "claimId": "C141",
@@ -1132,7 +1123,7 @@
     }
   ],
   "summary": {
-    "verified": 125,
+    "verified": 124,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
