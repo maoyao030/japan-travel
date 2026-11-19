@@ -1,7 +1,7 @@
 # 驗收紀錄：rishiri-island-stay（2026-11-19，舊住宿頁重跑一輪）
 
 - 文章：`content-production/rishiri-island-stay/reader-preview.md`（利尻島住宿推薦，住鴛泊還是沓形？）
-- SHA-256（換行統一成 LF 後計算）：`12b81f80547bbb59d60fcd8ea4483438108192f72a82bfa319444a6dfcf33f03`
+- SHA-256（換行統一成 LF 後計算）：`54a9fa7c4abf889b613b7d13d7fc1ddab096dc1af4ae8235883909ad05753406`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 研究：`content-experiments/stay-rerun-2026-11-18/rishiri-island/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-19 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
 - 寫作：規格助手（Opus 5.5）→ 五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，細寫六間都判剛好）。
@@ -38,3 +38,10 @@
 - Island Inn利尻 2026-12-01 開放訂房後重查並補接送；利尻飯店 2027 年 3 月重新營業日公布後更新。
 - 2027 年夏天各平台的可訂狀況，3 到 4 月開賣後重查。
 - 利尻富士觀光飯店官網恢復後補成小節。
+
+## 2026-11-19 補「住客怎麼說」小段
+
+- Darren 看了達門檻卻沒寫進去的住客說法後說「這些都是很棒的資訊啊，可以都放啊」，取消一間一句的上限；每間細寫的旅館多一個「住客怎麼說」小段，官方事實與住客說法分開。紀錄在研究資料夾的 `guest/notes.md`。
+- 事實查核（同一位查核子代理，Opus 5.5）逐點對評論紀錄：擋 4 句（靠 2021 年以前舊評論才達門檻的兩句拿掉、「最常被提起」「大家最愛」改掉）；小段用條列；最後 154 項全部 verified。
+- 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
+- 上一版 SHA：`12b81f80547bbb59d60fcd8ea4483438108192f72a82bfa319444a6dfcf33f03`。

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island-stay",
-  "articleSha256": "2c3d9632dd7d074db0a3cc5b63f36c95c70ce096012f74e441da6e8f93a64e79",
-  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-19 用 python urllib 重開正文與資料來源全部 39 條官方網址與 4 個訂房平台連結（Trip.com 2 頁讀得到，Agoda 2 頁是 JS 讀不到）、花禮文 jhpds 訂房頁、民宿海膽 FAQ 與 beds24 公開空房 API、禮文飯店 checkinn 日曆 4 個月份、星觀莊「ご利用案内」頁；沒有使用瀏覽器，沒有送出任何表單。住客說法以 facts-reviews.md 為準，這輪沒有重看評論；Agoda 能不能訂、禮文飯店在平台訂不到，照 booking-links.md、facts-extra.md 的瀏覽器紀錄。；第 2 輪複查（2026-11-19）：照 seam-notes.md「第二輪」17 條改動與 8 句新句逐句核對，今天 urllib 重讀民宿須古頓岬官網原始碼（訂房按鈕只連到電話區塊）與公司お問い合わせ頁、星觀莊住宿須知頁、Hana心 p/2；沒有使用瀏覽器。刪掉或改寫的句子對應的 claim 已移除或改寫。；第 3 輪複查（2026-11-19）：只核對民宿須古頓岬訂房行、比較表「怎麼訂」與比較表前一句三處改動；沒有使用瀏覽器。",
+  "articleSha256": "90b006feddbd4ec6c1c25a7e11df57ba034e2a90f437732dd7b81a16605be91a",
+  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-19 用 python urllib 重開正文與資料來源全部 39 條官方網址與 4 個訂房平台連結（Trip.com 2 頁讀得到，Agoda 2 頁是 JS 讀不到）、花禮文 jhpds 訂房頁、民宿海膽 FAQ 與 beds24 公開空房 API、禮文飯店 checkinn 日曆 4 個月份、星觀莊「ご利用案内」頁；沒有使用瀏覽器，沒有送出任何表單。住客說法以 facts-reviews.md 為準，這輪沒有重看評論；Agoda 能不能訂、禮文飯店在平台訂不到，照 booking-links.md、facts-extra.md 的瀏覽器紀錄。；第 2 輪複查（2026-11-19）：照 seam-notes.md「第二輪」17 條改動與 8 句新句逐句核對，今天 urllib 重讀民宿須古頓岬官網原始碼（訂房按鈕只連到電話區塊）與公司お問い合わせ頁、星觀莊住宿須知頁、Hana心 p/2；沒有使用瀏覽器。刪掉或改寫的句子對應的 claim 已移除或改寫。；第 3 輪複查（2026-11-19）：只核對民宿須古頓岬訂房行、比較表「怎麼訂」與比較表前一句三處改動；沒有使用瀏覽器。；第 4 輪複查（2026-11-19）：只核對五間新加的「住客怎麼說」小段與搬走住客句後剩下的官方句，依 guest/notes.md 與 facts-reviews.md 逐點核則數（每個點各自兩個平台、三則；咲涼只算 2025 年以後、桃岩莊不算 2019 年以前；紀錄沒拆則數的細點照保守判）；沒有重看評論、沒有使用瀏覽器。",
   "checkedAt": "2026-11-19",
   "claims": [
     {
@@ -277,15 +277,42 @@
     },
     {
       "claimId": "C31",
-      "articleExcerpt": "有住客提到旅行團多，用餐時間餐廳很擠，自助餐要排隊。",
+      "articleExcerpt": "住客怎麼說（咲涼）：自助晚餐的菜色和海鮮都多，多數人說好吃。",
       "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-1647159/rebun-hotel-saryo/review.html",
       "sourceTitle": "禮文觀光飯店 咲涼 房客評論（Trip.com）＋4travel dm_hotel-10041156",
-      "sourceQuote": "（查核者摘要）facts-reviews R5：Trip.com 15 則中 1 則（早餐排隊約 50 分）、4travel 10 則中 2 則提到團體多、用餐擁擠",
-      "verdict": "verified",
-      "notes": "住客說法以 facts-reviews.md R5 為準（2 個平台、3 則，達門檻）（今天沒有重開，照研究紀錄）。寫成「有住客提到」，沒寫成本站結論。"
+      "sourceQuote": "（查核者摘要）facts-reviews R2（只算 2025 年以後）：Trip.com 15 則中正面 3、負面 2；4travel 5 則中正面 4；Google 5 則中正面 1。統整說法是「菜色多、海鮮多，多數人說好吃；也有人覺得難吃、選擇少」",
+      "verdict": "unsupported",
+      "notes": "「好吃」這一點：正面 Trip 3＋4travel 4＋Google 1，三個平台、8 則，達門檻，「多數人」也撐得住（正 8、負 2）。但「菜色和海鮮都多」紀錄沒有和「好吃」分開算則數，拿不準，照保守判。另外紀錄在 R2 註明「負面要寫：也有住客覺得不合口味」，正文沒寫。保守改法：「自助晚餐多數人說好吃，也有人覺得不合口味。」住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
     },
     {
       "claimId": "C32",
+      "articleExcerpt": "住客怎麼說（咲涼）：大浴場的溫泉也被說泡起來舒服。",
+      "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-1647159/rebun-hotel-saryo/review.html",
+      "sourceTitle": "禮文觀光飯店 咲涼 房客評論（Trip.com）＋4travel dm_hotel-10041156",
+      "sourceQuote": "（查核者摘要）facts-reviews R3：Trip.com 15 則（2025-06～2026-09 入住）中正面 2、普通 1；4travel 10 則中 6 則（10 則裡 5 則是三井時期，所以至少 1 則是改名後）",
+      "verdict": "verified",
+      "notes": "改名後至少 Trip 2＋4travel 1＝兩個平台、3 則，達門檻。只說「舒服」沒加強。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "住客怎麼說（咲涼）：比較可惜的是建築和房間有些年紀",
+      "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-1647159/rebun-hotel-saryo/review.html",
+      "sourceTitle": "禮文觀光飯店 咲涼 房客評論（Trip.com）＋4travel dm_hotel-10041156",
+      "sourceQuote": "（查核者摘要）facts-reviews R4：說舊 Trip.com 3 則（都是 2025 年以後入住）、4travel 2、Google 2（Google 5 則只有 1 則是 2 年前的三井時期，所以至少 1 則是改名後）",
+      "verdict": "verified",
+      "notes": "改名後至少 Trip 3＋Google 1，兩個平台、4 則，達門檻。紀錄另有「乾淨」「整修過」的說法，沒寫不算說過頭（乾淨那幾則年份分不出，不寫是保守的）。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "住客怎麼說（咲涼）：旅行團也多，用餐時間餐廳很擠，自助餐要排隊。",
+      "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-1647159/rebun-hotel-saryo/review.html",
+      "sourceTitle": "禮文觀光飯店 咲涼 房客評論（Trip.com）＋4travel dm_hotel-10041156",
+      "sourceQuote": "（查核者摘要）facts-reviews R5：Trip.com 15 則中 1 則（2025 年以後入住，早餐排隊約 50 分）、4travel 10 則中 2 則；紀錄沒寫 4travel 那 2 則的入住年份",
+      "verdict": "unsupported",
+      "notes": "只算 2025 年改名後的評論，確定的只有 Trip.com 1 則；4travel 的 2 則年份不明，4travel 10 則裡一半是三井時期，那時晚餐是套餐、不是自助，也撐不住「自助餐要排隊」。達不到兩個平台、三則。保守改法：刪掉這半句，整句改成「比較可惜的是建築和房間有些年紀。」（第一輪我依同一筆 R5 判 verified，這輪照「只算改名後」的規則改判。）住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C35",
       "articleExcerpt": "要搭接送車往返渡輪站的話得先預約",
       "sourceUrl": "https://rebun.by-onko-chishin.com/access/",
       "sourceTitle": "アクセス - 礼文観光ホテル 咲涼",
@@ -294,7 +321,7 @@
       "notes": ""
     },
     {
-      "claimId": "C33",
+      "claimId": "C36",
       "articleExcerpt": "另外全館沒有能住5人以上的房間",
       "sourceUrl": "https://rebun.by-onko-chishin.com/faq/",
       "sourceTitle": "よくある質問 - 礼文観光ホテル 咲涼",
@@ -303,7 +330,7 @@
       "notes": "原文另有「最大定員大人4名」；正文只寫沒有 5 人以上的房間，與原文一致（seam-notes 第 13 項）。"
     },
     {
-      "claimId": "C34",
+      "claimId": "C37",
       "articleExcerpt": "看房價與訂房（咲涼）：Trip.com｜官網——Trip.com 連結",
       "sourceUrl": "https://tw.trip.com/hotels/detail/?hotelId=1647159&cityId=92451",
       "sourceTitle": "禮文觀光飯店 咲涼：2026 禮文町住宿推薦與最新訂房優惠｜Trip.com",
@@ -312,7 +339,7 @@
       "notes": "今天 urllib 重開，標題與地址是咲涼本館。booking-links.md：2027-07-15 同頁列出 7/14、7/16、7/17 有價（夏天可訂）。第 2 輪：Agoda 已拿掉，表格「怎麼訂」同步改成「官網、Trip.com」。"
     },
     {
-      "claimId": "C35",
+      "claimId": "C38",
       "articleExcerpt": "看房價與訂房（咲涼）：官網連結",
       "sourceUrl": "https://rebun.by-onko-chishin.com/",
       "sourceTitle": "礼文観光ホテル 咲涼 【公式】",
@@ -321,7 +348,7 @@
       "notes": "官網首頁今天重開，是咲涼本館。"
     },
     {
-      "claimId": "C36",
+      "claimId": "C39",
       "articleExcerpt": "想在晚餐吃到禮文產的生海膽，花禮文的懷石就有",
       "sourceUrl": "https://www.hanarebun.com/dining/",
       "sourceTitle": "お料理｜【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -330,7 +357,7 @@
       "notes": ""
     },
     {
-      "claimId": "C37",
+      "claimId": "C40",
       "articleExcerpt": "走到香深港約8分鐘，也有接送巴士。",
       "sourceUrl": "https://www.hanarebun.com/",
       "sourceTitle": "【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -339,7 +366,7 @@
       "notes": "第 2 輪改寫，事實不變。"
     },
     {
-      "claimId": "C38",
+      "claimId": "C41",
       "articleExcerpt": "花禮文是水產加工公司經營的，所以晚餐的海鮮給得大方",
       "sourceUrl": "https://www.hanarebun.com/",
       "sourceTitle": "【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -348,7 +375,7 @@
       "notes": "推論句：因果是官網自己寫的（工場直営だからこそ…贅沢な海の幸），推得成立。"
     },
     {
-      "claimId": "C39",
+      "claimId": "C42",
       "articleExcerpt": "除了生海膽，還有旅館前面海域捕的肥厚花魚、牡丹蝦和利尻昆布",
       "sourceUrl": "https://www.hanarebun.com/",
       "sourceTitle": "【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -357,7 +384,7 @@
       "notes": "「前浜」譯成旅館前面海域，可接受（seam-notes 第 15 項）。"
     },
     {
-      "claimId": "C40",
+      "claimId": "C43",
       "articleExcerpt": "4樓整層是展望大浴場「花海之湯」，男湯女湯都有露天浴池，源泉是天然溫泉薄雪之湯（うすゆきの湯），泡湯看得到海上的利尻富士",
       "sourceUrl": "https://www.hanarebun.com/hotspring/",
       "sourceTitle": "お湯処｜【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -366,7 +393,7 @@
       "notes": ""
     },
     {
-      "claimId": "C41",
+      "claimId": "C44",
       "articleExcerpt": "海側有附露天浴池的雙床房和和室，不過客房的露天浴池不是溫泉",
       "sourceUrl": "https://www.hanarebun.com/rooms/",
       "sourceTitle": "お部屋｜【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -375,7 +402,7 @@
       "notes": ""
     },
     {
-      "claimId": "C42",
+      "claimId": "C45",
       "articleExcerpt": "四個人一起去的話，可以訂海側14疊的和室",
       "sourceUrl": "https://www.hanarebun.com/rooms/",
       "sourceTitle": "お部屋｜【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -384,7 +411,7 @@
       "notes": ""
     },
     {
-      "claimId": "C43",
+      "claimId": "C46",
       "articleExcerpt": "山側的雙床房和單人房看不到正面的海，單人房連利尻富士也看不到",
       "sourceUrl": "https://www.hanarebun.com/rooms/",
       "sourceTitle": "お部屋｜【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -393,16 +420,70 @@
       "notes": ""
     },
     {
-      "claimId": "C44",
-      "articleExcerpt": "海膽也要有心理準備，有住客反應端出來的多半是紫海膽，不一定是馬糞海膽",
+      "claimId": "C47",
+      "articleExcerpt": "住客怎麼說（花禮文）：最多人稱讚的是懷石晚餐和早餐，用的都是禮文的海鮮",
       "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-7014233/hana-rebun/review.html",
       "sourceTitle": "禮文溫泉花禮文旅館 房客評論（Trip.com）＋4travel dm_hotel-10058925",
-      "sourceQuote": "（查核者摘要）facts-reviews R18：Trip.com 9 則中 2 則、4travel 10 則中 1 則提到端出來的多是紫海膽（另 1 則說吃到馬糞海膽）",
-      "verdict": "verified",
-      "notes": "以 facts-reviews.md R18 為準（2 個平台、3 則，達門檻）（今天沒有重開，照研究紀錄）；寫成「有住客反應」並附「不一定」。"
+      "sourceQuote": "（查核者摘要）facts-reviews R12：Trip.com 9 則中正面 5、負面 1；4travel 10 則中 10 則；Google 5 則中 4 則。統整說法是「晚餐（懷石）與早餐是最多人稱讚的，用禮文的海鮮、擺盤講究」",
+      "verdict": "unsupported",
+      "notes": "「最多人稱讚的是料理」成立：R12 合計 19 則，是花禮文各項裡最多的（R13 14、R14 11）。但紀錄沒把晚餐和早餐分開算，「晚餐和早餐」各自達不達門檻拿不準；「用的都是禮文的海鮮」比紀錄的「用禮文的海鮮」強，官網的料理也有利尻昆布等不是禮文的食材。保守改法：「最多人稱讚的是館內的料理，」後面直接接接待那半句，例如「最多人稱讚的是館內的料理和老闆娘、員工周到的接待。」住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
     },
     {
-      "claimId": "C45",
+      "claimId": "C48",
+      "articleExcerpt": "住客怎麼說（花禮文）：老闆娘和員工的接待也很周到",
+      "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-7014233/hana-rebun/review.html",
+      "sourceTitle": "禮文溫泉花禮文旅館 房客評論（Trip.com）＋4travel dm_hotel-10058925",
+      "sourceQuote": "（查核者摘要）facts-reviews R13：Trip.com 9 則中正面 5（負面 1：不喜歡被問候）、4travel 10 則中 6 則、Google 5 則中 3 則",
+      "verdict": "verified",
+      "notes": "三個平台、14 則。負面只有 Trip 1 則，達不到門檻，不寫可以。女將寫成老闆娘可接受。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "住客怎麼說（花禮文）：溫泉泡起來舒服",
+      "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-7014233/hana-rebun/review.html",
+      "sourceTitle": "禮文溫泉花禮文旅館 房客評論（Trip.com）＋4travel dm_hotel-10058925",
+      "sourceQuote": "（查核者摘要）facts-reviews R15：Trip.com 2、4travel 正面 5（普通 1）、Google 2",
+      "verdict": "verified",
+      "notes": "住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C50",
+      "articleExcerpt": "住客怎麼說（花禮文）：房間寬敞",
+      "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-7014233/hana-rebun/review.html",
+      "sourceTitle": "禮文溫泉花禮文旅館 房客評論（Trip.com）＋4travel dm_hotel-10058925",
+      "sourceQuote": "（查核者摘要）facts-reviews R17：Trip.com 1、4travel 2",
+      "verdict": "verified",
+      "notes": "兩個平台、3 則，剛好達門檻。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "住客怎麼說（花禮文）：館內到處插著花，也打掃得很乾淨。",
+      "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-7014233/hana-rebun/review.html",
+      "sourceTitle": "禮文溫泉花禮文旅館 房客評論（Trip.com）＋4travel dm_hotel-10058925",
+      "sourceQuote": "（查核者摘要）facts-reviews R16：插花 4travel 3、Google 1；乾淨 Trip.com 2、4travel 1（紀錄分開算）",
+      "verdict": "verified",
+      "notes": "兩點各自兩個平台、4 則與 3 則，達門檻。「到處」對應紀錄「每個角落、每間房門口」。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "住客怎麼說（花禮文）：比較可惜的是端出來的海膽多半是紫海膽，不一定是馬糞海膽。",
+      "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-7014233/hana-rebun/review.html",
+      "sourceTitle": "禮文溫泉花禮文旅館 房客評論（Trip.com）＋4travel dm_hotel-10058925",
+      "sourceQuote": "（查核者摘要）facts-reviews R18：Trip.com 9 則中 2 則、4travel 10 則中 1 則（另 1 則說吃到馬糞海膽）",
+      "verdict": "verified",
+      "notes": "兩個平台、3 則；「不一定」照顧到反面那則。和官方（以禮文產生海膽為賣點、沒說是哪一種）不衝突。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "住客怎麼說（花禮文）：也有人提到送去港口的車有固定班次，退房前最好先問好時間。",
+      "sourceUrl": "https://tw.trip.com/hotels/rebun-hotel-detail-7014233/hana-rebun/review.html",
+      "sourceTitle": "禮文溫泉花禮文旅館 房客評論（Trip.com）＋4travel dm_hotel-10058925",
+      "sourceQuote": "（查核者摘要）facts-reviews R19：Trip.com 1、Google 1、4travel 1（早上 15 分鐘一班，要提早到）；紀錄註明正文只寫「有固定班次，退房前先問好」這個程度",
+      "verdict": "verified",
+      "notes": "三個平台、3 則；照紀錄限定的程度寫，沒寫班距。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C54",
       "articleExcerpt": "看房價與訂房（花禮文）：Trip.com 連結",
       "sourceUrl": "https://tw.trip.com/hotels/detail/?hotelId=7014233&cityId=92451",
       "sourceTitle": "禮文溫泉花禮文旅館：2026 禮文町住宿推薦與最新訂房優惠｜Trip.com",
@@ -411,7 +492,7 @@
       "notes": "今天 urllib 重開，是花禮文本館；booking-links.md：2027-07-15 可訂。"
     },
     {
-      "claimId": "C46",
+      "claimId": "C55",
       "articleExcerpt": "看房價與訂房（花禮文）：Agoda 連結",
       "sourceUrl": "https://www.agoda.com/zh-tw/rebun-onsen-ryokan-hanarebun/hotel/rebun-jp.html",
       "sourceTitle": "禮文溫泉花禮文旅館（Agoda）",
@@ -420,7 +501,7 @@
       "notes": "Agoda 頁今天 urllib 讀不到內容（JS），照 booking-links.md 瀏覽器紀錄（今天沒有重開，照研究紀錄）。"
     },
     {
-      "claimId": "C47",
+      "claimId": "C56",
       "articleExcerpt": "看房價與訂房（花禮文）：官網連結",
       "sourceUrl": "https://www.hanarebun.com/",
       "sourceTitle": "【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -429,7 +510,7 @@
       "notes": ""
     },
     {
-      "claimId": "C48",
+      "claimId": "C57",
       "articleExcerpt": "入住前和退房後都能免費寄放行李，搭船前後都可以空手逛",
       "sourceUrl": "https://hotel-rebun.jp/",
       "sourceTitle": "ホテル礼文｜香深港フェリーターミナル目の前・展望温泉のある礼文島の宿",
@@ -438,7 +519,7 @@
       "notes": ""
     },
     {
-      "claimId": "C49",
+      "claimId": "C58",
       "articleExcerpt": "不過訂房要走官網或電話",
       "sourceUrl": "https://hotel-rebun.jp/",
       "sourceTitle": "ホテル礼文｜香深港フェリーターミナル目の前・展望温泉のある礼文島の宿",
@@ -447,7 +528,7 @@
       "notes": "第 2 輪：「只能」改成「要走」，和官網寫的兩個管道一致。正文沒有「休館」「只收現金」。"
     },
     {
-      "claimId": "C50",
+      "claimId": "C59",
       "articleExcerpt": "頂樓7樓有展望溫泉「富士見湯」，泡湯看得到利尻富士",
       "sourceUrl": "https://hotel-rebun.jp/",
       "sourceTitle": "ホテル礼文｜香深港フェリーターミナル目の前・展望温泉のある礼文島の宿",
@@ -456,7 +537,7 @@
       "notes": "現行官網寫 7 樓展望溫泉與看得到利尻富士的位置；從浴池看得到利尻富士另有存檔（不太變的景觀事實）。"
     },
     {
-      "claimId": "C51",
+      "claimId": "C60",
       "articleExcerpt": "晚餐有海膽、螃蟹和當地的生魚片",
       "sourceUrl": "https://hotel-rebun.jp/",
       "sourceTitle": "ホテル礼文｜香深港フェリーターミナル目の前・展望温泉のある礼文島の宿",
@@ -465,16 +546,34 @@
       "notes": ""
     },
     {
-      "claimId": "C52",
-      "articleExcerpt": "住過的人說生海膽、毛蟹和章魚涮涮鍋都好吃",
+      "claimId": "C61",
+      "articleExcerpt": "住客怎麼說（禮文飯店）：最常被提起的是晚餐，生海膽、毛蟹和章魚涮涮鍋都好吃。",
       "sourceUrl": "https://4travel.jp/dm_hotel-10034903/tips",
       "sourceTitle": "ホテル礼文 クチコミ（4travel）＋Google 地圖",
-      "sourceQuote": "（查核者摘要）facts-reviews R23：4travel 10 則中 7 則正面（1 則普通）、Google 5 則中 3 則提到晚餐海鮮好吃（生海膽、毛蟹、章魚涮涮鍋）",
-      "verdict": "verified",
-      "notes": "以 facts-reviews.md R23 為準（2 個平台、10 則）（今天沒有重開，照研究紀錄）。"
+      "sourceQuote": "（查核者摘要）facts-reviews R23：4travel 10 則中正面 7、普通 1；Google 5 則中 3 則（晚餐海鮮豐盛好吃：生海膽、毛蟹、章魚涮涮鍋）｜R21（就在渡輪站正對面）：Trip.com 1、4travel 8、Google 2",
+      "verdict": "unsupported",
+      "notes": "兩個問題：一、「最常被提起」不成立：R23 合計 10 則，R21「下船就到」合計 11 則比較多。二、生海膽、毛蟹、章魚涮涮鍋三樣是統整裡的舉例，紀錄沒有逐樣算則數，各自達不達門檻拿不準。「晚餐海鮮豐盛好吃」這一點本身成立（兩個平台、10 則）。保守改法：「很多人稱讚晚餐的海鮮豐盛好吃。」住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
     },
     {
-      "claimId": "C53",
+      "claimId": "C62",
+      "articleExcerpt": "住客怎麼說（禮文飯店）：房間窗外看得到利尻富士，天氣好的早上還能看日出",
+      "sourceUrl": "https://4travel.jp/dm_hotel-10034903/tips",
+      "sourceTitle": "ホテル礼文 クチコミ（4travel）＋Google 地圖",
+      "sourceQuote": "（查核者摘要）facts-reviews R22：Trip.com 1、4travel 6、Google 2（房間窗外看得到利尻富士，天氣好能看日出）",
+      "verdict": "unsupported",
+      "notes": "「房間窗外看得到利尻富士」成立（三個平台、9 則，官網也寫房間望海與利尻山）。「天氣好的早上還能看日出」是統整的後半，紀錄沒分開算則數，拿不準。保守改法：「房間窗外看得到利尻富士，員工也很親切。」住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "住客怎麼說（禮文飯店）：員工也很親切。",
+      "sourceUrl": "https://4travel.jp/dm_hotel-10034903/tips",
+      "sourceTitle": "ホテル礼文 クチコミ（4travel）＋Google 地圖",
+      "sourceQuote": "（查核者摘要）facts-reviews R24：4travel 4、Google 2（負面 Trip.com 1）",
+      "verdict": "verified",
+      "notes": "兩個平台、6 則；負面只有 1 則，不寫可以。只取「親切」，沒寫「幫忙排行程」。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C64",
       "articleExcerpt": "連住兩晚的話，第二晚還會換菜單",
       "sourceUrl": "https://hotel-rebun.jp/",
       "sourceTitle": "ホテル礼文｜香深港フェリーターミナル目の前・展望温泉のある礼文島の宿",
@@ -483,7 +582,7 @@
       "notes": ""
     },
     {
-      "claimId": "C54",
+      "claimId": "C65",
       "articleExcerpt": "一家人或團體出遊，可以選12疊的大和室，或館內最大的和洋室",
       "sourceUrl": "https://hotel-rebun.jp/",
       "sourceTitle": "ホテル礼文｜香深港フェリーターミナル目の前・展望温泉のある礼文島の宿",
@@ -492,7 +591,7 @@
       "notes": ""
     },
     {
-      "claimId": "C55",
+      "claimId": "C66",
       "articleExcerpt": "官網的訂房日曆要到2027年5月20日才有房，在那之前想住的話，要改找別間。",
       "sourceUrl": "https://book.checkinn.jp/c1c0f3d3f147d3cc082f8ddb2c82e0f917e7af75b06217e8ae1f61cac4456992",
       "sourceTitle": "reservation（checkinn｜ホテル礼文）",
@@ -501,7 +600,7 @@
       "notes": "第 2 輪改寫。日曆部分今天 urllib 重開（預設月、2027-01、2027-04、2027-05）確認。「要改找別間」是給讀者的做法：官網日曆沒房，facts-extra K66 Trip.com 不接受預訂、Agoda 完售，K68 的 Trip.com 列表 12/10 也是售罄，推得成立；沒寫成休館。若要更保守可寫「要改找別間，或打電話問旅館」。"
     },
     {
-      "claimId": "C56",
+      "claimId": "C67",
       "articleExcerpt": "看房價與訂房：官網（禮文飯店）",
       "sourceUrl": "https://hotel-rebun.jp/",
       "sourceTitle": "ホテル礼文｜香深港フェリーターミナル目の前・展望温泉のある礼文島の宿",
@@ -510,7 +609,7 @@
       "notes": ""
     },
     {
-      "claimId": "C57",
+      "claimId": "C68",
       "articleExcerpt": "島南部有三間小型的民宿和青年旅館，三間都會到香深港接送",
       "sourceUrl": "https://hanashin.crayonsite.net/p/3/",
       "sourceTitle": "礼文島　はな心　アクセス　その他 | 自然に親しむ宿 Nature Inn はな心",
@@ -519,7 +618,7 @@
       "notes": "桃岩莊是 40 人團體房，「小型」略寬，但比起 50～100 間的飯店仍算小，不判錯。"
     },
     {
-      "claimId": "C58",
+      "claimId": "C69",
       "articleExcerpt": "民宿海膽是一家人經營的民宿",
       "sourceUrl": "https://pensionuni.main.jp/summary/",
       "sourceTitle": "初めて当館を知った方へ - ペンションうーにーHP",
@@ -528,7 +627,7 @@
       "notes": ""
     },
     {
-      "claimId": "C59",
+      "claimId": "C70",
       "articleExcerpt": "每間房都有自己的衛浴和冷氣",
       "sourceUrl": "https://pensionuni.main.jp/",
       "sourceTitle": "ペンションうーにー ホームページ【公式】 ご予約はこちら",
@@ -537,7 +636,7 @@
       "notes": ""
     },
     {
-      "claimId": "C60",
+      "claimId": "C71",
       "articleExcerpt": "不過館內沒有溫泉",
       "sourceUrl": "http://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
       "sourceTitle": "宿泊｜礼文島観光情報（Wayback Machine 2025-05-22）",
@@ -546,7 +645,7 @@
       "notes": "明寫的只有觀光協會 2025-05 存檔；「館內有沒有溫泉」是不太變的設施事實，照規則可用存檔。現行官方也撐得住：官網 FAQ（今天重開）寫每房是ユニットバス，另有送到礼文島温泉うすゆきの湯的「温泉送迎」班次。"
     },
     {
-      "claimId": "C61",
+      "claimId": "C72",
       "articleExcerpt": "海膽方案的晚餐會附一份約30公克的生海膽，以紫海膽為主",
       "sourceUrl": "https://pensionuni.main.jp/2027price/",
       "sourceTitle": "2027｜う〜に〜の宿泊プラン・料金・予約開始日 - ペンションうーにーHP",
@@ -555,7 +654,7 @@
       "notes": ""
     },
     {
-      "claimId": "C62",
+      "claimId": "C73",
       "articleExcerpt": "訂一般方案的人也能挑日子加點，訂海膽方案的人再加點，可以變成大碗海膽丼。",
       "sourceUrl": "https://pensionuni.main.jp/2027price/",
       "sourceTitle": "2027｜う〜に〜の宿泊プラン・料金・予約開始日 - ペンションうーにーHP",
@@ -564,7 +663,7 @@
       "notes": "第 2 輪照查核改法改寫，兩件事分開寫，和原文一致。"
     },
     {
-      "claimId": "C63",
+      "claimId": "C74",
       "articleExcerpt": "民宿在香深的高台上，走1分鐘就看得到整座利尻富士",
       "sourceUrl": "https://pensionuni.main.jp/",
       "sourceTitle": "ペンションうーにー ホームページ【公式】 ご予約はこちら",
@@ -573,7 +672,7 @@
       "notes": ""
     },
     {
-      "claimId": "C64",
+      "claimId": "C75",
       "articleExcerpt": "民宿也說從這裡去桃岩展望台和瑪瑙海岸，比其他旅館方便",
       "sourceUrl": "https://pensionuni.main.jp/summary/",
       "sourceTitle": "初めて当館を知った方へ - ペンションうーにーHP",
@@ -582,25 +681,70 @@
       "notes": ""
     },
     {
-      "claimId": "C65",
-      "articleExcerpt": "接送車配合渡輪和巴士的時間開",
+      "claimId": "C76",
+      "articleExcerpt": "接送車配合渡輪和巴士的時間開。",
       "sourceUrl": "https://pensionuni.main.jp/",
       "sourceTitle": "ペンションうーにー ホームページ【公式】 ご予約はこちら",
       "sourceQuote": "送迎 フェリーの時刻やバスの時刻に合わせ送迎便があります",
       "verdict": "verified",
-      "notes": ""
+      "notes": "住客的接送說法搬到「住客怎麼說」後，這句只剩官網事實。"
     },
     {
-      "claimId": "C66",
-      "articleExcerpt": "有住客稱讚接送很方便，不租車也玩得了",
+      "claimId": "C77",
+      "articleExcerpt": "住客怎麼說（民宿海膽）：最多人提到的是一家人溫暖周到的接待",
       "sourceUrl": "https://4travel.jp/dm_hotel-10218623/tips",
       "sourceTitle": "ペンション う～に～ クチコミ（4travel）＋Google 地圖",
-      "sourceQuote": "（查核者摘要）facts-reviews R31：4travel 10 則中 9 則、Google 5 則中 3 則提到接送方便（渡輪站、步道口、溫泉）",
+      "sourceQuote": "（查核者摘要）facts-reviews R29：4travel 10 則中 9 則、Google 5 則中 4 則",
       "verdict": "verified",
-      "notes": "以 facts-reviews.md R31 為準（今天沒有重開，照研究紀錄）。官網 FAQ 今天重開也寫渡輪接送、步道口接送、溫泉接送。"
+      "notes": "合計 13 則，和 R30（料理，也是 13 則）並列最多，高於 R31（12 則），「最多人」可接受；並列這點可改成「很多人」更穩。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
     },
     {
-      "claimId": "C67",
+      "claimId": "C78",
+      "articleExcerpt": "住客怎麼說（民宿海膽）：家常的海鮮料理好吃、份量多",
+      "sourceUrl": "https://4travel.jp/dm_hotel-10218623/tips",
+      "sourceTitle": "ペンション う～に～ クチコミ（4travel）＋Google 地圖",
+      "sourceQuote": "（查核者摘要）facts-reviews R30：4travel 10 則中 8 則、Google 5 則中 5 則（家常的海鮮料理好吃、份量多）",
+      "verdict": "unsupported",
+      "notes": "「好吃」成立（兩個平台、13 則）；「份量多」紀錄沒和好吃分開算則數，拿不準。保守改法：「家常的海鮮料理好吃」，刪「份量多」。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C79",
+      "articleExcerpt": "住客怎麼說（民宿海膽）：海膽也給得大方。",
+      "sourceUrl": "https://pensionuni.main.jp/2027price/",
+      "sourceTitle": "2027｜う〜に〜の宿泊プラン・料金・予約開始日 - ペンションうーにーHP",
+      "sourceQuote": "（查核者摘要）facts-reviews R32：好評 4travel 2、Google 2（4travel 讀到的是 2022-07～2024-09 入住）｜（官網 2027price）近年のうにの水揚げの変化を受け…2027年から、うにのご提供の仕方を次のように改めます。 量 塩水を切った生うに約30gを一品",
+      "verdict": "outdated",
+      "notes": "評論本身達門檻（兩個平台、4 則），但都是 2026 年以前的；民宿自己公告 2027 年起海膽改成一人一份約 30 公克、以紫海膽為主，正文「為什麼選這間」也照這個寫。「給得大方」是改制前的說法，和現行官方衝突，照規則以官方為準、住客這條不寫。保守改法：刪掉「海膽也給得大方」。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C80",
+      "articleExcerpt": "住客怎麼說（民宿海膽）：接送也常被稱讚很方便，不租車也玩得了。",
+      "sourceUrl": "https://4travel.jp/dm_hotel-10218623/tips",
+      "sourceTitle": "ペンション う～に～ クチコミ（4travel）＋Google 地圖",
+      "sourceQuote": "（查核者摘要）facts-reviews R31：4travel 10 則中 9 則、Google 5 則中 3 則",
+      "verdict": "verified",
+      "notes": "兩個平台、12 則，「常」撐得住；接送內容官網 FAQ 也寫。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C81",
+      "articleExcerpt": "住客怎麼說（民宿海膽）：房間打掃得乾淨",
+      "sourceUrl": "https://4travel.jp/dm_hotel-10218623/tips",
+      "sourceTitle": "ペンション う～に～ クチコミ（4travel）＋Google 地圖",
+      "sourceQuote": "（查核者摘要）facts-reviews R34：4travel 1、Google 2",
+      "verdict": "verified",
+      "notes": "兩個平台、3 則，剛好達門檻。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C82",
+      "articleExcerpt": "住客怎麼說（民宿海膽）：只是民宿在高台上，從港口上來是一段陡坡。",
+      "sourceUrl": "https://4travel.jp/dm_hotel-10218623/tips",
+      "sourceTitle": "ペンション う～に～ クチコミ（4travel）＋Google 地圖",
+      "sourceQuote": "（查核者摘要）facts-reviews R33：4travel 2、Google 1｜（官網）高台の為、坂道運転に自信のない方はご遠慮ください",
+      "verdict": "verified",
+      "notes": "兩個平台、3 則，官網也寫在高台、坡多，不衝突；沒寫「沒有電梯」。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C83",
       "articleExcerpt": "一家人去的話，和室最多住得下5人，其中大人最多4人",
       "sourceUrl": "https://pensionuni.main.jp/reservation/",
       "sourceTitle": "ご予約はこちらから - ペンションうーにーHP",
@@ -609,7 +753,7 @@
       "notes": "括號緊接在「和室を…お選びください」後面，5 人上限是指和室（seam-notes 第 4 項）。"
     },
     {
-      "claimId": "C68",
+      "claimId": "C84",
       "articleExcerpt": "2027年5月20日到8月31日原則上要兩人以上才收，一個人住也要付兩人的費用",
       "sourceUrl": "https://pensionuni.main.jp/reservation/",
       "sourceTitle": "ご予約はこちらから - ペンションうーにーHP",
@@ -618,7 +762,7 @@
       "notes": "同頁有 8/30、8/31 兩種寫法，2027price 與住宿稅說明都寫 8 月 31 日，採 8/31 可接受（seam-notes 第 16 項）。「原則上」對應「基本的に」。"
     },
     {
-      "claimId": "C69",
+      "claimId": "C85",
       "articleExcerpt": "看房價與訂房：官網（民宿海膽）",
       "sourceUrl": "https://pensionuni.main.jp/reservation/",
       "sourceTitle": "ご予約はこちらから - ペンションうーにーHP",
@@ -627,7 +771,7 @@
       "notes": "今天重開，是民宿海膽官網的訂房頁（beds24 日曆）。民宿海膽不在 Trip.com、Agoda（booking-links.md），只放官網正確。"
     },
     {
-      "claimId": "C70",
+      "claimId": "C86",
       "articleExcerpt": "想知道現在開什麼花、該往哪裡走，民宿Hana心（Nature Inn はな心）的老闆會照你的行程回答，也能幫忙安排自然導覽",
       "sourceUrl": "https://hanashin.crayonsite.net/",
       "sourceTitle": "自然に親しむ宿 Nature Inn はな心",
@@ -636,7 +780,7 @@
       "notes": "原文主語是旅館（お答えいたします），寫成「老闆」可接受。"
     },
     {
-      "claimId": "C71",
+      "claimId": "C87",
       "articleExcerpt": "接送配合渡輪到港和出發的時間，如果船比入住時間早到，民宿會先到港口幫你收行李。",
       "sourceUrl": "https://hanashin.crayonsite.net/p/3/",
       "sourceTitle": "礼文島　はな心　アクセス　その他 | 自然に親しむ宿 Nature Inn はな心",
@@ -645,7 +789,7 @@
       "notes": "第 2 輪刪掉「最晚前一天要告訴…」，剩下的事實不變。"
     },
     {
-      "claimId": "C72",
+      "claimId": "C88",
       "articleExcerpt": "晚餐用當地的新鮮食材做。房間都是和室，沒有自己的浴室，浴室在2樓共用，只有一部分房間附廁所和洗臉台",
       "sourceUrl": "https://hanashin.crayonsite.net/p/2/",
       "sourceTitle": "礼文島　はな心　宿泊料金 | 自然に親しむ宿 Nature Inn はな心",
@@ -654,7 +798,7 @@
       "notes": "第 2 輪新增「晚餐用當地的新鮮食材做」，今天重開 p/2 確認。"
     },
     {
-      "claimId": "C73",
+      "claimId": "C89",
       "articleExcerpt": "而且訂房只收電話或傳真",
       "sourceUrl": "https://hanashin.crayonsite.net/p/2/",
       "sourceTitle": "礼文島　はな心　宿泊料金 | 自然に親しむ宿 Nature Inn はな心",
@@ -663,7 +807,7 @@
       "notes": ""
     },
     {
-      "claimId": "C74",
+      "claimId": "C90",
       "articleExcerpt": "看房價與訂房：只收電話或傳真，民宿Hana心官網",
       "sourceUrl": "https://hanashin.crayonsite.net/p/2/",
       "sourceTitle": "礼文島　はな心　宿泊料金 | 自然に親しむ宿 Nature Inn はな心",
@@ -672,7 +816,7 @@
       "notes": "連結今天重開，是 Hana心 自己的訂房說明頁；Hana心 不在 Trip.com、Agoda。"
     },
     {
-      "claimId": "C75",
+      "claimId": "C91",
       "articleExcerpt": "桃岩莊青年旅館（桃岩荘ユースホステル）幾乎每天都帶住客走有名的「愛與浪漫的8小時步道」（愛とロマンの8時間コース）",
       "sourceUrl": "https://jyh.jp/info.php?jyhno=105",
       "sourceTitle": "桃岩荘ユースホステル [日本ユースホステル協会公式]",
@@ -681,7 +825,7 @@
       "notes": "日本青年旅館協會（JYH）旅館頁是現行官方來源（桃岩莊舊網域打不開）。"
     },
     {
-      "claimId": "C76",
+      "claimId": "C92",
       "articleExcerpt": "不過只在6月1日到9月30日營業",
       "sourceUrl": "https://jyh.jp/info.php?jyhno=105",
       "sourceTitle": "桃岩荘ユースホステル [日本ユースホステル協会公式]",
@@ -690,16 +834,25 @@
       "notes": "原文寫「毎年」，不是只查到一季，可不加年份。"
     },
     {
-      "claimId": "C77",
-      "articleExcerpt": "評價比較兩極，喜歡的人說晚上大家一起唱歌跳舞的聚會很好玩、能跟陌生人變成朋友，不習慣團體行動的人則可能覺得受拘束。",
+      "claimId": "C93",
+      "articleExcerpt": "住客怎麼說（桃岩莊）：這裡的評價比較兩極。",
       "sourceUrl": "https://4travel.jp/dm_hotel-11289489/tips",
       "sourceTitle": "桃岩荘ユースホステル クチコミ（4travel）＋Google 地圖",
-      "sourceQuote": "（查核者摘要）facts-reviews R38/R39/R41：4travel 10 則中 6 則、Google 5 則中 2 則提到每晚聚會與評價兩極（Google 近年 1 則明說「要嘛很愛要嘛避開」）；變成朋友 4travel 5、Google 1｜（JYH）夜はミーティング。みんなで歌って、踊って盛り上がって下さい。",
-      "verdict": "verified",
-      "notes": "第 2 輪照查核改法拿掉「整棟聽得到、躲不掉、熄燈、禁酒」。剩下的負面半句寫成「可能」，屬兩極評價的概括，有 Google 近年 1 則與 4travel 多則撐，聚會本身是 JYH 官方現行寫的（今天沒有重開，照研究紀錄）。"
+      "sourceQuote": "（查核者摘要）facts-reviews R39：4travel 10 則中 6 則、Google 5 則中 2 則；4travel 10 則裡 8 則是 2014～2019 年，只有 2026、2020 各 1 則；Google 2 則裡明說兩極的是 1 則（要嘛很愛要嘛避開）",
+      "verdict": "unsupported",
+      "notes": "2019 年以前的不算之後，確定的只有 Google 1 則（另 1 則是希望接駁更體貼長者，不是兩極）；4travel 2020、2026 那 2 則有沒有提到，紀錄沒拆。達不到兩個平台、三則。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
     },
     {
-      "claimId": "C78",
+      "claimId": "C94",
+      "articleExcerpt": "住客怎麼說（桃岩莊）：喜歡的人說晚上大家一起唱歌跳舞的聚會很好玩、能跟陌生人變成朋友，不習慣團體行動的人則可能覺得受拘束。",
+      "sourceUrl": "https://4travel.jp/dm_hotel-11289489/tips",
+      "sourceTitle": "桃岩荘ユースホステル クチコミ（4travel）＋Google 地圖",
+      "sourceQuote": "（查核者摘要）facts-reviews R38：4travel 6、Google 2；R41（變成朋友）：4travel 5、Google 1；4travel 讀到的 10 則裡 8 則是 2014～2019 年｜（JYH）夜はミーティング。みんなで歌って、踊って盛り上がって下さい。",
+      "verdict": "unsupported",
+      "notes": "扣掉 2019 年以前的 4travel，「聚會好玩」確定的只有 Google 2 則，「變成朋友」只有 Google 1 則，4travel 2020、2026 那 2 則有沒有提到紀錄沒拆；「受拘束」近年也只有 Google 1 則間接撐。每一點都確認不了兩個平台、三則。保守改法：照「達門檻的住客說法不到兩條的不另開小段」，刪掉桃岩莊整個「住客怎麼說」小段；聚會是官方寫的，可以在「為什麼選這間」補一句官方事實，例如「晚上有大家一起唱歌跳舞的聚會。」（JYH：夜はミーティング。みんなで歌って、踊って）。住客說法以 facts-reviews.md 為準，這輪沒有重看評論。"
+    },
+    {
+      "claimId": "C95",
       "articleExcerpt": "旅館在西海岸，天氣好的時候看得到夕陽沉進海裡，夏天還有海馬島（トド島）探險的活動",
       "sourceUrl": "https://jyh.jp/info.php?jyhno=105",
       "sourceTitle": "桃岩荘ユースホステル [日本ユースホステル協会公式]",
@@ -708,7 +861,7 @@
       "notes": ""
     },
     {
-      "claimId": "C79",
+      "claimId": "C96",
       "articleExcerpt": "目前只收純住宿、不供餐，館內有可以自己煮的廚房。",
       "sourceUrl": "https://jyh.jp/info.php?jyhno=105",
       "sourceTitle": "桃岩荘ユースホステル [日本ユースホステル協会公式]",
@@ -717,7 +870,7 @@
       "notes": "第 2 輪照建議改寫。"
     },
     {
-      "claimId": "C80",
+      "claimId": "C97",
       "articleExcerpt": "全館都是團體房，而且離香深港有4公里，走路約60分鐘，搭接送車15分鐘。",
       "sourceUrl": "https://jyh.jp/info.php?jyhno=105",
       "sourceTitle": "桃岩荘ユースホステル [日本ユースホステル協会公式]",
@@ -726,7 +879,7 @@
       "notes": "第 2 輪兩句併成一句、刪掉 40 人。官方頁只列ドミトリー（團體房）。"
     },
     {
-      "claimId": "C81",
+      "claimId": "C98",
       "articleExcerpt": "看房價與訂房：只收電話，日本青年旅館協會官網的桃岩莊頁",
       "sourceUrl": "https://jyh.jp/m/e/info.php?jyhno=105",
       "sourceTitle": "Momoiwasou Youth Hostel / Hostelling International JAPAN",
@@ -735,7 +888,7 @@
       "notes": "JYH 日文頁另列 FAX 番号，但英文頁訂房欄只寫電話，也沒有線上訂房；「只收電話」可接受。連結文字寫明是協會的頁（seam-notes 第 8 項）。"
     },
     {
-      "claimId": "C82",
+      "claimId": "C99",
       "articleExcerpt": "想在船泊吃剛上岸的海鮮，禮文莊的老闆每天自己到港口挑漁船帶回來的漁獲",
       "sourceUrl": "https://www.rebunsou.com/",
       "sourceTitle": "ホーム - あつもりの里　礼文荘",
@@ -744,7 +897,7 @@
       "notes": ""
     },
     {
-      "claimId": "C83",
+      "claimId": "C100",
       "articleExcerpt": "船泊漁協捕的海膽、平鮋和特大牡丹蝦都沒冷凍過",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/%E3%81%8A%E9%A3%9F%E4%BA%8B/",
       "sourceTitle": "お食事 - あつもりの里　礼文荘",
@@ -753,7 +906,7 @@
       "notes": "第 2 輪照查核改法改寫，和原文一致（原文是「など」舉例，正文只講這三樣，沒有推過頭）。"
     },
     {
-      "claimId": "C84",
+      "claimId": "C101",
       "articleExcerpt": "不過訂房只收電話",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
       "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
@@ -762,7 +915,7 @@
       "notes": ""
     },
     {
-      "claimId": "C85",
+      "claimId": "C102",
       "articleExcerpt": "晚餐的人氣菜是禮文產的珍魚八角魚味噌燒。",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/%E3%81%8A%E9%A3%9F%E4%BA%8B/",
       "sourceTitle": "お食事 - あつもりの里　礼文荘",
@@ -771,7 +924,7 @@
       "notes": "第 2 輪改寫，菜名移到第一段。"
     },
     {
-      "claimId": "C86",
+      "claimId": "C103",
       "articleExcerpt": "旅館面對久種湖和船泊灣，有些房間看得到夕陽沉向須古頓岬，或是久種湖上方露出頭的利尻富士",
       "sourceUrl": "https://www.rebunsou.com/",
       "sourceTitle": "ホーム - あつもりの里　礼文荘",
@@ -780,7 +933,7 @@
       "notes": ""
     },
     {
-      "claimId": "C87",
+      "claimId": "C104",
       "articleExcerpt": "館內也有男女分開的大浴場",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
       "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
@@ -789,7 +942,7 @@
       "notes": ""
     },
     {
-      "claimId": "C88",
+      "claimId": "C105",
       "articleExcerpt": "接送只配合固定的船班，而且要事先聯絡，一個人住的時候有時候沒辦法接，只訂含早餐的方案也沒有接送",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
       "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
@@ -798,7 +951,7 @@
       "notes": ""
     },
     {
-      "claimId": "C89",
+      "claimId": "C106",
       "articleExcerpt": "另外，廁所是共用的",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
       "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
@@ -807,7 +960,7 @@
       "notes": ""
     },
     {
-      "claimId": "C90",
+      "claimId": "C107",
       "articleExcerpt": "看房價與訂房：只收電話，禮文莊官網",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
       "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
@@ -816,7 +969,7 @@
       "notes": "連結今天重開，是禮文莊自己的館內介紹與費用頁；禮文莊不在 Trip.com、Agoda。"
     },
     {
-      "claimId": "C91",
+      "claimId": "C108",
       "articleExcerpt": "星觀莊（星観荘）：在須古頓的青年旅館式民宿",
       "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
       "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
@@ -825,7 +978,7 @@
       "notes": "seam-notes 第 7 項。"
     },
     {
-      "claimId": "C92",
+      "claimId": "C109",
       "articleExcerpt": "晚餐大家在大客廳一起吃，從大窗戶看得到海上的夕陽",
       "sourceUrl": "https://sites.google.com/view/seikanso/%E6%96%BD%E8%A8%AD%E3%81%A8%E3%81%8A%E9%A3%9F%E4%BA%8B%E6%A1%88%E5%86%85",
       "sourceTitle": "ゆうひの丘Homepage - 施設とお食事案内",
@@ -834,7 +987,7 @@
       "notes": ""
     },
     {
-      "claimId": "C93",
+      "claimId": "C110",
       "articleExcerpt": "菜色每晚換，像是海膽一夜漬",
       "sourceUrl": "https://sites.google.com/view/seikanso/%E6%96%BD%E8%A8%AD%E3%81%A8%E3%81%8A%E9%A3%9F%E4%BA%8B%E6%A1%88%E5%86%85",
       "sourceTitle": "ゆうひの丘Homepage - 施設とお食事案内",
@@ -843,7 +996,7 @@
       "notes": ""
     },
     {
-      "claimId": "C94",
+      "claimId": "C111",
       "articleExcerpt": "房間是男女分開的團體房，最多只住6人，只在4月下旬到10月上旬營業",
       "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
       "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
@@ -852,7 +1005,7 @@
       "notes": "營業期間是常設寫法、沒有年份（頁首仍是「2025年シーズンの営業は終了」），不是單季公告，可不加年份。"
     },
     {
-      "claimId": "C95",
+      "claimId": "C112",
       "articleExcerpt": "接送配合往返稚內港的第一班和最後一班船",
       "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
       "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
@@ -861,7 +1014,7 @@
       "notes": "「発着」譯成往返，成立（seam-notes 第 20 項）。"
     },
     {
-      "claimId": "C96",
+      "claimId": "C113",
       "articleExcerpt": "不過老闆還兼別的工作，有時會臨時沒有接送或沒有餐，要接受這個條件才收訂房",
       "sourceUrl": "https://sites.google.com/view/seikanso",
       "sourceTitle": "ゆうひの丘Homepage",
@@ -870,7 +1023,7 @@
       "notes": ""
     },
     {
-      "claimId": "C97",
+      "claimId": "C114",
       "articleExcerpt": "民宿須古頓岬（民宿スコトン岬）：民宿說它是須古頓岬上唯一的住宿",
       "sourceUrl": "https://www.rebun.jp/guesthouse/",
       "sourceTitle": "民宿スコトン岬｜株式会社レブニーズ",
@@ -879,7 +1032,7 @@
       "notes": ""
     },
     {
-      "claimId": "C98",
+      "claimId": "C115",
       "articleExcerpt": "海側的房間看得到海馬島，清晨有機會看到捕海膽的船和海豹",
       "sourceUrl": "https://www.rebun.jp/guesthouse/",
       "sourceTitle": "民宿スコトン岬｜株式会社レブニーズ",
@@ -888,7 +1041,7 @@
       "notes": ""
     },
     {
-      "claimId": "C99",
+      "claimId": "C116",
       "articleExcerpt": "浴室在主屋外面，泡澡時也看得到海",
       "sourceUrl": "https://www.rebun.jp/guesthouse/",
       "sourceTitle": "民宿スコトン岬｜株式会社レブニーズ",
@@ -897,7 +1050,7 @@
       "notes": ""
     },
     {
-      "claimId": "C100",
+      "claimId": "C117",
       "articleExcerpt": "這裡不供餐，不過廚房免費借，食材可以在同一家公司的商店買",
       "sourceUrl": "https://www.rebun.jp/guesthouse/",
       "sourceTitle": "民宿スコトン岬｜株式会社レブニーズ",
@@ -906,7 +1059,7 @@
       "notes": "商店「島の人 礼文島本店」是同公司（株式会社レブニーズ）的直營店，店舗一覧頁今天重開確認。"
     },
     {
-      "claimId": "C101",
+      "claimId": "C118",
       "articleExcerpt": "看房價與訂房：星觀莊官網（只收電話）",
       "sourceUrl": "https://sites.google.com/view/seikanso/%E5%AE%BF%E6%B3%8A%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85",
       "sourceTitle": "ゆうひの丘Homepage - 宿泊のご案内",
@@ -915,7 +1068,7 @@
       "notes": "頁面列 TEL・FAX 號碼，但明寫訂房請打電話。"
     },
     {
-      "claimId": "C102",
+      "claimId": "C119",
       "articleExcerpt": "看房價與訂房：民宿須古頓岬官網（只收電話）",
       "sourceUrl": "https://www.rebun.jp/guesthouse/",
       "sourceTitle": "民宿スコトン岬｜株式会社レブニーズ",
@@ -924,7 +1077,7 @@
       "notes": "第 3 輪照改法改成「只收電話」。官網沒有線上訂房系統，Trip.com、Agoda 也沒上架；facts.md 已補 K56 更正註記。"
     },
     {
-      "claimId": "C103",
+      "claimId": "C120",
       "articleExcerpt": "比較表：禮文觀光飯店咲涼｜香深，渡輪站走約10分，接送要預約｜禮文溫泉大浴場，有半露天｜自助，90分鐘附暢飲｜2027年5/20到10/31，冬天休館｜官網、Trip.com",
       "sourceUrl": "https://rebun.by-onko-chishin.com/10956/",
       "sourceTitle": "2027年度 宿泊プラン販売開始のお知らせ｜礼文観光ホテル 咲涼",
@@ -933,7 +1086,7 @@
       "notes": "第 2 輪：「怎麼訂」已拿掉 Agoda。"
     },
     {
-      "claimId": "C104",
+      "claimId": "C121",
       "articleExcerpt": "比較表：花禮文｜香深，渡輪站走約8分，有接送巴士｜4樓展望大浴場與露天，薄雪之湯源泉｜懷石，有禮文產生海膽｜—｜官網、Trip.com、Agoda",
       "sourceUrl": "https://www.hanarebun.com/hotspring/",
       "sourceTitle": "お湯処｜【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -942,7 +1095,7 @@
       "notes": "營業期間「—」：官網沒寫營業期間（K26、K61 弱證據），留空正確。"
     },
     {
-      "claimId": "C105",
+      "claimId": "C122",
       "articleExcerpt": "比較表：禮文飯店｜香深，渡輪站正對面走1分｜7樓展望溫泉｜海膽、螃蟹、生魚片，連住第二晚換菜｜官網訂房日曆2027年5/20起有房｜官網、電話",
       "sourceUrl": "https://hotel-rebun.jp/",
       "sourceTitle": "ホテル礼文｜香深港フェリーターミナル目の前・展望温泉のある礼文島の宿",
@@ -951,7 +1104,7 @@
       "notes": "營業期間欄沒寫休館、沒寫冬天能住。日曆 6 月整月目前也是「販売なし」（多半是還沒放房），「5/20起有房」指從這天開始有房，不判錯。"
     },
     {
-      "claimId": "C106",
+      "claimId": "C123",
       "articleExcerpt": "比較表：民宿海膽｜香深的高台，配合渡輪與巴士接送｜館內沒有溫泉｜旺季日式西式混合、淡季日式，海膽方案附生海膽｜冬天也營業，2027年4/1到5/19官網不開放訂房｜官網",
       "sourceUrl": "https://pensionuni.main.jp/",
       "sourceTitle": "ペンションうーにー ホームページ【公式】 ご予約はこちら",
@@ -960,7 +1113,7 @@
       "notes": "冬天營業：2026-08-03 公告 2026年10月1日起的淡季開放訂房；今天用 beds24 公開空房 API（propId 211149）查 2026-12-15、2027-01-20、2027-03-10 有房，2027-04-15、2027-05-10 全部 0 間，2027-05-25 有房，與正文一致。"
     },
     {
-      "claimId": "C107",
+      "claimId": "C124",
       "articleExcerpt": "比較表：民宿Hana心｜香深，配合渡輪接送｜2樓共用浴室｜當地食材的晚餐｜夏季、冬季（10/1到4/19）都有方案｜只收電話或傳真",
       "sourceUrl": "https://hanashin.crayonsite.net/p/2/",
       "sourceTitle": "礼文島　はな心　宿泊料金 | 自然に親しむ宿 Nature Inn はな心",
@@ -969,7 +1122,7 @@
       "notes": "冬季方案原文叫「ビジネスプラン」（一人），正文寫「都有方案」沒說錯；價目表是常設寫法、沒有年份。"
     },
     {
-      "claimId": "C108",
+      "claimId": "C125",
       "articleExcerpt": "比較表：桃岩莊青年旅館｜西海岸，香深港走4公里約60分，接送車15分｜—｜目前只收純住宿，有廚房可以自己煮｜6/1到9/30｜只收電話",
       "sourceUrl": "https://jyh.jp/info.php?jyhno=105",
       "sourceTitle": "桃岩荘ユースホステル [日本ユースホステル協会公式]",
@@ -978,7 +1131,7 @@
       "notes": ""
     },
     {
-      "claimId": "C109",
+      "claimId": "C126",
       "articleExcerpt": "比較表：禮文莊｜船泊，香深港開車約30分，接送配合固定船班｜男女分開的大浴場｜船泊漁協的海膽、平鮋、牡丹蝦｜—｜只收電話",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/",
       "sourceTitle": "宿泊料金 - あつもりの里　礼文荘",
@@ -987,7 +1140,7 @@
       "notes": "營業期間「—」：官網沒寫（K46、K63），留空正確。開車 30 分只有存檔（不太變）。"
     },
     {
-      "claimId": "C110",
+      "claimId": "C127",
       "articleExcerpt": "比較表：星觀莊｜須古頓，接送配合稚內港第一班與最後一班船｜男女各一間浴室，一次1人｜大家一起吃，每晚換菜｜4月下旬到10月上旬｜只收電話",
       "sourceUrl": "https://sites.google.com/view/seikanso/%E3%81%94%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85",
       "sourceTitle": "ゆうひの丘Homepage - ご利用案内",
@@ -996,7 +1149,7 @@
       "notes": "「一次1人」出自星觀莊「ご利用案内」頁（今天重開），這頁沒列在資料來源，建議補上。"
     },
     {
-      "claimId": "C111",
+      "claimId": "C128",
       "articleExcerpt": "比較表：民宿須古頓岬｜須古頓岬上｜主屋外看得到海的浴室｜不供餐，免費借廚房｜2026年6/15開幕，2027年的日期出發前看官網",
       "sourceUrl": "https://www.rebun.jp/guesthouse/",
       "sourceTitle": "民宿スコトン岬｜株式会社レブニーズ",
@@ -1005,7 +1158,7 @@
       "notes": "第 2 輪改寫營業期間，和官網一致（2027 年官網還沒寫）。"
     },
     {
-      "claimId": "C112",
+      "claimId": "C129",
       "articleExcerpt": "比較表：民宿須古頓岬「怎麼訂：只收電話」",
       "sourceUrl": "https://www.rebun.jp/guesthouse/",
       "sourceTitle": "民宿スコトン岬｜株式会社レブニーズ",
@@ -1014,7 +1167,7 @@
       "notes": "第 3 輪照改法改成「只收電話」，和訂房行一致。"
     },
     {
-      "claimId": "C113",
+      "claimId": "C130",
       "articleExcerpt": "不方便用日文打電話訂房的話，能在網路上訂的是咲涼、花禮文、禮文飯店和民宿海膽，其他五間只收電話或傳真。",
       "sourceUrl": "https://rebun.by-onko-chishin.com/10956/",
       "sourceTitle": "2027年度 宿泊プラン販売開始のお知らせ｜礼文観光ホテル 咲涼",
@@ -1023,7 +1176,7 @@
       "notes": "第 3 輪照改法改寫。能網路訂的四間：咲涼（官網方案＋Trip.com）、花禮文（官網連到 jhpds 線上訂房系統；Trip.com、Agoda 2027-07-15 可訂）、禮文飯店（checkinn 線上日曆）、民宿海膽（beds24 線上日曆）。只收電話或傳真的五間：Hana心（電話或 FAX）、桃岩莊（電話）、禮文莊（電話）、星觀莊（電話）、民宿須古頓岬（電話）。逐間成立。"
     },
     {
-      "claimId": "C114",
+      "claimId": "C131",
       "articleExcerpt": "比較表「連結」欄的 9 個官網連結與 9 個地圖連結",
       "sourceUrl": "https://hanashin.crayonsite.net/",
       "sourceTitle": "自然に親しむ宿 Nature Inn はな心",
@@ -1032,7 +1185,7 @@
       "notes": "地圖連結都是 Google 地圖搜尋網址（api=1&query=日文名＋礼文町），格式符合規則；地圖釘落點要瀏覽器才看得到，這輪沒看（seam-notes 第 22 項）。"
     },
     {
-      "claimId": "C115",
+      "claimId": "C132",
       "articleExcerpt": "冬天去禮文島，確定能住的是香深的民宿海膽和民宿Hana心，兩間都會配合渡輪的時間接送。",
       "sourceUrl": "https://pensionuni.main.jp/2026/08/03/10%e6%9c%88%e3%81%8b%e3%82%89%e3%81%ae%e4%ba%88%e7%b4%84%e5%8f%97%e4%bb%98%e9%96%8b%e5%a7%8b%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
       "sourceTitle": "10月からの予約受付開始について - ペンションうーにーHP",
@@ -1041,7 +1194,7 @@
       "notes": "推論句「確定能住的」：有官方證據的只有這兩間（facts-extra 冬季整理）；句子沒說其他間一定不能住，沒推過頭。民宿海膽 FAQ 寫 11/1～5/19 早上只送渡輪站，冬天仍有渡輪接送。"
     },
     {
-      "claimId": "C116",
+      "claimId": "C133",
       "articleExcerpt": "民宿海膽官網的空房日曆，2026年11月到2027年3月底每天都訂得到，不過2027年4月1日到5月19日官網沒有開放訂房。",
       "sourceUrl": "https://pensionuni.main.jp/reservation/",
       "sourceTitle": "ご予約はこちらから - ペンションうーにーHP",
@@ -1050,7 +1203,7 @@
       "notes": "逐日的「每天」照 facts-extra K59（瀏覽器逐月看過）（今天沒有重開，照研究紀錄）；今天抽 5 個日期結果一致。空房會隨訂房變動，是查核日當下的狀態。"
     },
     {
-      "claimId": "C117",
+      "claimId": "C134",
       "articleExcerpt": "民宿Hana心在10月1日到4月19日的冬季，也有含早晚餐的方案。",
       "sourceUrl": "https://hanashin.crayonsite.net/p/2/",
       "sourceTitle": "礼文島　はな心　宿泊料金 | 自然に親しむ宿 Nature Inn はな心",
@@ -1059,7 +1212,7 @@
       "notes": ""
     },
     {
-      "claimId": "C118",
+      "claimId": "C135",
       "articleExcerpt": "咲涼、桃岩莊和星觀莊只在夏天前後營業，冬天都不開。",
       "sourceUrl": "https://rebun.by-onko-chishin.com/10956/",
       "sourceTitle": "2027年度 宿泊プラン販売開始のお知らせ｜礼文観光ホテル 咲涼",
@@ -1068,7 +1221,7 @@
       "notes": "推論句：星觀莊沒寫「冬季休館」，但營業期間是 4月下旬～10月上旬，期間外不營業，推得成立。"
     },
     {
-      "claimId": "C119",
+      "claimId": "C136",
       "articleExcerpt": "禮文飯店官網的訂房日曆要到2027年5月20日才有房，所以冬天要住，先從民宿海膽和民宿Hana心挑",
       "sourceUrl": "https://book.checkinn.jp/c1c0f3d3f147d3cc082f8ddb2c82e0f917e7af75b06217e8ae1f61cac4456992",
       "sourceTitle": "reservation（checkinn｜ホテル礼文）",
@@ -1077,7 +1230,7 @@
       "notes": "第 2 輪新增。禮文飯店日曆今天重開確認；「所以先從民宿海膽和 Hana心挑」是給讀者的做法，這兩間是有官方證據冬天能住的，推得成立。沒寫休館。"
     },
     {
-      "claimId": "C120",
+      "claimId": "C137",
       "articleExcerpt": "花禮文和禮文莊想在冬天住的話，出發前先向旅館確認。",
       "sourceUrl": "https://www.hanarebun.com/",
       "sourceTitle": "【公式】花れぶん｜北海道礼文島 露天風呂付き客室のある宿",
@@ -1086,7 +1239,7 @@
       "notes": "第 2 輪新增。這是給讀者的做法，不是事實主張：兩館官網確實都沒寫營業期間（今天重開花れぶん首頁、礼文荘首頁與館內介紹頁都沒有），正文沒寫「官方沒公布」，也沒寫成冬天休館或能住。符合「查不到的不寫、改寫成能做的事」。"
     },
     {
-      "claimId": "C121",
+      "claimId": "C138",
       "articleExcerpt": "2026年11月起，稚內和香深之間一天只有2個來回，稚內早上6點35分和下午2點10分開，香深早上9點和下午5點5分開",
       "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
       "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
@@ -1095,7 +1248,7 @@
       "notes": "Heart Land Ferry 2026 年時刻表今天重開。另可能加開臨時船，正文寫定期的 2 個來回可接受。2027 年起的時刻表還沒公布（2026 年版 1/1～4/27 同樣是這 2 個來回）。"
     },
     {
-      "claimId": "C122",
+      "claimId": "C139",
       "articleExcerpt": "想在旅館晚餐吃到海膽，可以選香深的花禮文、民宿海膽、禮文飯店，或船泊的禮文莊",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/%E3%81%8A%E9%A3%9F%E4%BA%8B/",
       "sourceTitle": "お食事 - あつもりの里　礼文荘",
@@ -1104,7 +1257,7 @@
       "notes": ""
     },
     {
-      "claimId": "C123",
+      "claimId": "C140",
       "articleExcerpt": "禮文莊寫明海象差的時候可能沒有",
       "sourceUrl": "https://www.rebunsou.com/%E9%A4%A8%E5%86%85%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-%E6%96%99%E9%87%91/%E3%81%8A%E9%A3%9F%E4%BA%8B/",
       "sourceTitle": "お食事 - あつもりの里　礼文荘",
@@ -1113,7 +1266,7 @@
       "notes": ""
     },
     {
-      "claimId": "C124",
+      "claimId": "C141",
       "articleExcerpt": "民宿海膽沒有的時候會改成烤海膽等料理，一道海膽料理都沒有就退部分費用",
       "sourceUrl": "https://pensionuni.main.jp/2027price/",
       "sourceTitle": "2027｜う〜に〜の宿泊プラン・料金・予約開始日 - ペンションうーにーHP",
@@ -1122,7 +1275,7 @@
       "notes": "退款是固定金額（不寫金額），「退部分費用」成立。"
     },
     {
-      "claimId": "C125",
+      "claimId": "C142",
       "articleExcerpt": "民宿海膽寫說，禮文島的馬糞海膽這幾年開始的時間不穩，往年6月1日就有，2026年卻到6月下旬才有。",
       "sourceUrl": "https://pensionuni.main.jp/2027price/",
       "sourceTitle": "2027｜う〜に〜の宿泊プラン・料金・予約開始日 - ペンションうーにーHP",
@@ -1131,7 +1284,7 @@
       "notes": ""
     },
     {
-      "claimId": "C126",
+      "claimId": "C143",
       "articleExcerpt": "所以它2027年起的海膽方案，馬糞海膽是有進貨才給。",
       "sourceUrl": "https://pensionuni.main.jp/2027price/",
       "sourceTitle": "2027｜う〜に〜の宿泊プラン・料金・予約開始日 - ペンションうーにーHP",
@@ -1140,7 +1293,7 @@
       "notes": "「所以」的因果是原文同一段「こうした変化を受け、2027年から…改めます」接過來的，成立（seam-notes 第 6 項）。"
     },
     {
-      "claimId": "C127",
+      "claimId": "C144",
       "articleExcerpt": "住禮文島每人每晚要另外付北海道住宿稅，2026年4月起開始收",
       "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
       "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
@@ -1149,7 +1302,7 @@
       "notes": "北海道公告另收市町村住宿稅的名單沒有禮文町（K6），正文只寫北海道住宿稅，正確。"
     },
     {
-      "claimId": "C128",
+      "claimId": "C145",
       "articleExcerpt": "房價未滿2萬日圓是100日圓、2萬到未滿5萬日圓是200日圓、5萬日圓以上是500日圓，由旅館和房費一起收",
       "sourceUrl": "https://www.pref.hokkaido.lg.jp/sm/zim/tax/218623.html",
       "sourceTitle": "北海道宿泊税 - 総務部財政局税務課",
@@ -1158,7 +1311,7 @@
       "notes": ""
     },
     {
-      "claimId": "C129",
+      "claimId": "C146",
       "articleExcerpt": "有溫泉的旅館另外收入湯稅，像咲涼和花禮文都是每人150日圓，咲涼寫的是大人。",
       "sourceUrl": "https://rebun.by-onko-chishin.com/faq/",
       "sourceTitle": "よくある質問 - 礼文観光ホテル 咲涼",
@@ -1167,7 +1320,7 @@
       "notes": "第 2 輪改寫。兩館數字今天重開確認，「咲涼寫的是大人」與原文一致。「有溫泉的旅館另外收」是概括：島上三間溫泉旅館，咲涼、花禮文現行官網寫另收，禮文飯店只在 2025 存檔寫含入湯稅 150 日圓；禮文町入湯稅條例沒找到官方頁。用「像…」舉例，沒點名其他館的金額，不判錯。"
     },
     {
-      "claimId": "C130",
+      "claimId": "C147",
       "articleExcerpt": "資料來源 40 條網址（含禮文島觀光協會住宿清單網頁存檔與第 2 輪新增的星觀莊住宿須知）",
       "sourceUrl": "http://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
       "sourceTitle": "宿泊｜礼文島観光情報（Wayback Machine 2025-05-22）",
@@ -1177,10 +1330,10 @@
     }
   ],
   "summary": {
-    "verified": 130,
+    "verified": 138,
     "incorrect": 0,
-    "unsupported": 0,
-    "outdated": 0,
+    "unsupported": 8,
+    "outdated": 1,
     "unreachable": 0,
     "not-stated": 0
   }
