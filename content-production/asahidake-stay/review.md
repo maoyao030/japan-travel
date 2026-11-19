@@ -1,7 +1,7 @@
 # 驗收紀錄：asahidake-stay（2026-11-19，舊住宿頁重跑一輪）
 
 - 文章：`content-production/asahidake-stay/reader-preview.md`（旭岳溫泉住宿推薦，住纜車旁還是天人峽？）
-- SHA-256（換行統一成 LF 後計算）：`73bce6ed1b248e5d40277de3f8331277a81b166d7987e222a88105ce0430f346`
+- SHA-256（換行統一成 LF 後計算）：`c4c651d757fe46ce9aee81be437a6969219cfe15034f21eac51187dcd1499741`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 研究：`content-experiments/stay-rerun-2026-11-18/asahidake/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-18 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
 - 寫作：規格助手（Opus 5.5）→ 五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，六個旅館小節都判剛好）。
@@ -36,3 +36,10 @@
 
 - La Vista 冬季接送是 2026 到 2027 年這一季的資料，雪季結束後更新。
 - 湧駒莊有沒有和室、湧駒莊與 K's House 走到纜車幾分鐘，官方沒有寫。
+
+## 2026-11-19 補「住客怎麼說」小段
+
+- Darren 看了達門檻卻沒寫進去的住客說法後說「這些都是很棒的資訊啊，可以都放啊」，取消一間一句的上限；每間細寫的旅館多一個「住客怎麼說」小段，官方事實與住客說法分開。紀錄在研究資料夾的 `guest/notes.md`。
+- 事實查核（同一位查核子代理，Opus 5.5）逐點對評論紀錄：擋 9 句（紀錄沒有分開算則數的細節都拿掉，只留整條達門檻的說法）；最後 148 項全部 verified。
+- 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
+- 上一版 SHA：`73bce6ed1b248e5d40277de3f8331277a81b166d7987e222a88105ce0430f346`。

@@ -1,7 +1,7 @@
 # 驗收紀錄：asahikawa-stay（2026-11-18，舊住宿頁重跑一輪）
 
 - 文章：`content-production/asahikawa-stay/reader-preview.md`（旭川住宿推薦，住站前還是市中心？）
-- SHA-256（換行統一成 LF 後計算）：`b2a7e02e13d6d2b75adc53c0c9d5f75742f7fd955a309118a274b103211869ae`
+- SHA-256（換行統一成 LF 後計算）：`d25e70d60fa732497e0961afc1ac9e05c5506ed8cb16a4903e573d7fe203a192`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`（Darren 2026-11-18：排定工作打開前，舊的住宿文章先重跑一輪）、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」與「廢話要在流程裡擋掉」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 底稿：2026-11-16 照新寫法改的主頁稿（作者 Sonnet 5.5、查核與編輯 Opus 5.5）。
 - 住客評論：事實查核者角色的子代理（Opus 5.5）2026-11-18 用瀏覽器重看（Trip.com、4travel、Google 地圖，沒登入）。
@@ -39,3 +39,10 @@
 - 東橫INN 兩間沒有放 Trip.com、Agoda 連結（還沒確認上架頁）。
 
 最終結果：`ready_for_user_preview`
+
+## 2026-11-19 補「住客怎麼說」小段
+
+- Darren 看了達門檻卻沒寫進去的住客說法後說「這些都是很棒的資訊啊，可以都放啊」，取消一間一句的上限；每間細寫的旅館多一個「住客怎麼說」小段，官方事實與住客說法分開。紀錄在研究資料夾的 `guest/notes.md`。
+- 事實查核（同一位查核子代理，Opus 5.5）逐點對評論紀錄：擋 5 句（「最多人」這類紀錄撐不住的字眼與只有一個平台的點都改掉）；最後 125 項全部 verified。
+- 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
+- 上一版 SHA：`b2a7e02e13d6d2b75adc53c0c9d5f75742f7fd955a309118a274b103211869ae`。

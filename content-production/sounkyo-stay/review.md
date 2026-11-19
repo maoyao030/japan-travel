@@ -1,7 +1,7 @@
 # 驗收紀錄：sounkyo-stay（2026-11-18，舊住宿頁重跑一輪）
 
 - 文章：`content-production/sounkyo-stay/reader-preview.md`（層雲峽住宿推薦，住溫泉街還是上川站？）
-- SHA-256（換行統一成 LF 後計算）：`fc8054ed51fbf562f9ca99b4ef50c09a3066017a6eea3602a8c5831f574eaf3c`
+- SHA-256（換行統一成 LF 後計算）：`e95c88772cff18d1925cddce1301b14840703b6e95c5704e32bbec8c5367311c`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 研究：`content-experiments/stay-rerun-2026-11-18/sounkyo/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-18 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
 - 寫作：五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，六間細寫的旅館都判剛好）。
@@ -35,3 +35,10 @@
 
 - 層雲閣號的出發地、時間與費用官方沒有寫清楚；層雲峽觀光飯店接駁的車資、比較表層雲閣的位置與停車是空格。
 - 朝陽亭冬季接駁、冰瀑祭是這一季的資料，下一季重查。
+
+## 2026-11-19 補「住客怎麼說」小段
+
+- Darren 看了達門檻卻沒寫進去的住客說法後說「這些都是很棒的資訊啊，可以都放啊」，取消一間一句的上限；每間細寫的旅館多一個「住客怎麼說」小段，官方事實與住客說法分開。紀錄在研究資料夾的 `guest/notes.md`。
+- 事實查核（同一位查核子代理，Opus 5.5）逐點對評論紀錄：擋 3 句（「最多人」說過頭、車位多只有一個平台），另拿掉只靠評論標籤的一句；最後 159 項全部 verified。
+- 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
+- 上一版 SHA：`fc8054ed51fbf562f9ca99b4ef50c09a3066017a6eea3602a8c5831f574eaf3c`。
