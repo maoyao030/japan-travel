@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay-onsen",
-  "articleSha256": "b69dda4088c8ecb82b083514c807291245739cc529ed63e6323ac2e229e2a8fb",
-  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 與 WebFetch 重開官方頁面逐筆核對，未用瀏覽器、未開 PDF；2026-11-18 第 2 輪只複查協調者改過的句子；第 3 輪複查潤稿後的 13 段（意思沒跑掉）；第 4 輪複查龍乃湯、高砂溫泉兩句；第 5 輪用內建瀏覽器重看 4 筆住客說法；最後一輪複查 C34、C39 改寫；上線後複查 WBF 日歸入浴",
-  "checkedAt": "2026-11-18",
+  "articleSha256": "bdc25dc5b65da7d8affbe07a1830ab130ee93f755aefb0883535136bc0eea1eb",
+  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 與 WebFetch 重開官方頁面逐筆核對，未用瀏覽器、未開 PDF；2026-11-18 第 2 輪只複查協調者改過的句子；第 3 輪複查潤稿後的 13 段（意思沒跑掉）；第 4 輪複查龍乃湯、高砂溫泉兩句；第 5 輪用內建瀏覽器重看 4 筆住客說法；最後一輪複查 C34、C39 改寫；上線後複查 WBF 日歸入浴；2026-11-19 第 5 輪：住客說法改成「住客怎麼說」條列，由事實查核 agent（Opus 5.5，沒有參與寫作或編輯）逐條對 facts-reviews-topics.md 的 T 編號查核，不開瀏覽器；只 diff 改前稿 before2，其他句子沿用原 claim",
+  "checkedAt": "2026-11-19",
   "claims": [
     {
       "claimId": "C1",
@@ -42,13 +42,31 @@
       "notes": ""
     },
     {
-      "claimId": "C5",
-      "articleExcerpt": "有住客提到，泡完湯有免費的冰棒和乳酸飲料。",
+      "claimId": "G1",
+      "articleExcerpt": "溫泉大浴場大多是好評，泡起來很舒服。（Dormy Inn旭川・住客怎麼說）",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/",
-      "sourceTitle": "住客評論統整",
-      "sourceQuote": "2026-11-18 Trip.com 第一頁 9 則中 5 則提到泡完湯（晚上）有冰棒或雪糕，其中 2 則也提到養樂多或乳酸飲料、3 則寫明免費；Google 地圖未登入顯示的 5 則中 2 則提到冰棒與乳酸飲料（養樂多），Google 的主題標籤另有「養樂多」12 則、「乳酸菌飲」8 則。",
+      "sourceTitle": "住客評論統整（T6）",
+      "sourceQuote": "T6 溫泉大浴場泡起來舒服、喜歡：Trip.com 約 11、4travel 6、Google 1，三個平台約 18 則；反面 T10、T11 各 1 則",
       "verdict": "verified",
-      "notes": "查核者 2026-11-18 用內建瀏覽器手動閱讀，未登入、未存評論原文。Trip.com 讀 9 則（首頁顧客留言），Google 地圖讀 5 則。兩個平台、合計 7 則，達門檻；Google 有一則寫冰棒在晚上、乳酸飲料在早上，正文沒寫時段，不衝突。研究紀錄 R185、R187。"
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 「大多」成立。"
+    },
+    {
+      "claimId": "G2",
+      "articleExcerpt": "泡完湯的免費冰棒和早上的乳酸飲料也很受歡迎。（Dormy Inn旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/",
+      "sourceTitle": "住客評論統整（T7）",
+      "sourceQuote": "T7 泡完湯有免費冰棒、早上有乳酸飲料：Trip.com 約 10、4travel 6、Google 2，三個平台約 18 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 則數撐得起「很受歡迎」。取代舊 C5。"
+    },
+    {
+      "claimId": "G3",
+      "articleExcerpt": "三溫暖也有不少好評。（Dormy Inn旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/",
+      "sourceTitle": "住客評論統整（T8）",
+      "sourceQuote": "T8 有三溫暖（含草藥蒸氣）：Trip.com 4、4travel 2、Google 1，三個平台 7 則，正面",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 只寫好評，沒有寫設施細節（設施在官網段 C3）。"
     },
     {
       "claimId": "C6",
@@ -96,13 +114,40 @@
       "notes": "上線後複查（curl 200）：官網溫泉段時間、最後受付與含毛巾費用都和正文一致；2026-10-06 公告（https://www.ishinhotels.com/hotel-news/wbf-20261006）寫「5月18日（月）より営業開始時間を午後1時からとさせていただいておりましたが、午前10時からの営業に復旧いたしました」，確認 10 點開始是現行時間。官網「大人」是國中以上（中学生～），正文沒寫年齡範圍；官網沒標含稅或未稅。"
     },
     {
-      "claimId": "C11",
-      "articleExcerpt": "有住客稱讚這裡浴池的種類多。",
+      "claimId": "G4",
+      "articleExcerpt": "大浴場最受好評，泡起來很舒服。（Hotel WBF Grande旭川・住客怎麼說）",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/",
-      "sourceTitle": "住客評論統整",
-      "sourceQuote": "2026-11-18 Trip.com 第一頁 9 則中 2 則提到有多個浴場或不同功效的泡池；Google 地圖未登入顯示的 5 則中 2 則提到多樣化的泡池或有幾個溫泉浴場。",
+      "sourceTitle": "住客評論統整（T89）",
+      "sourceQuote": "T89 大浴場泡起來舒服：Trip.com 約 12、4travel 8，兩個平台約 20 則；是本紀錄 WBF 各點則數最多的（T90 7、T91 4、T92 4、早餐 T85 4、T86 7）",
       "verdict": "verified",
-      "notes": "查核者 2026-11-18 用內建瀏覽器手動閱讀，未登入、未存評論原文。Trip.com 讀 9 則、Google 地圖讀 5 則。兩個平台、合計 4 則提到浴池種類多，都是正面說法，達門檻。另有 1 則 Trip.com 提到因為也開放日歸所以客人多（反面，正文沒寫）。研究紀錄 R227。"
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 「最受好評」有則數撐。"
+    },
+    {
+      "claimId": "G5",
+      "articleExcerpt": "浴池種類多的好評也不少，有不同功效的浴池，也有電療池。（Hotel WBF Grande旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/",
+      "sourceTitle": "住客評論統整（T90）",
+      "sourceQuote": "T90 浴池種類多（不同功效的池、電療池）：Trip.com 4、4travel 1、Google 2，三個平台 7 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 2026-11-19 用 curl 打開官網 https://www.ishinhotels.com/wbf/grande-asahikawa ，溫泉段列「露天風呂 炭酸泉 ジェットバス 石壺湯 電気風呂」，電療池與官網一致。取代舊 C11。"
+    },
+    {
+      "claimId": "G6",
+      "articleExcerpt": "入住時拿到的代幣，泡完湯可以換飲料，這點也有一些好評。（Hotel WBF Grande旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/",
+      "sourceTitle": "住客評論統整（T91）",
+      "sourceQuote": "T91 入住給的代幣，泡完可以換飲料：Trip.com 3、4travel 1，兩個平台 4 則（2025/10～2026-10）",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 達門檻。官網（curl 2026-11-19）沒寫這項服務，不衝突；這是住客描述的服務，會變的話下次重查要再看。"
+    },
+    {
+      "claimId": "G7",
+      "articleExcerpt": "部分評價覺得不住宿來泡的客人、本地客人多。（Hotel WBF Grande旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/",
+      "sourceTitle": "住客評論統整（T92）",
+      "sourceQuote": "T92 不住宿來泡的客人、本地人多：Trip.com 3、4travel 1，兩個平台 4 則；反面 4travel 1 則（2024/10）說不擠",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 有反面，寫「部分」強度合適。和官網「不住宿也能泡」（C10）一致。"
     },
     {
       "claimId": "C12",
@@ -384,6 +429,24 @@
       "notes": "表格 AMANEK 列：北口走路約3分、頂樓展望大浴場、時間都核對過。官網連結 200、是ホテルアマネク旭川；地圖為 Google 地圖搜尋網址。「有刺青的人，訂房時先寫信或打電話問」是建議，不是事實，官網這輪沒找到刺青規定。"
     },
     {
+      "claimId": "G8",
+      "articleExcerpt": "頂樓大浴場大多是好評，乾淨又舒服。（HOTEL AMANEK旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/",
+      "sourceTitle": "住客評論統整（T24）",
+      "sourceQuote": "T24 頂樓大浴場舒服、乾淨：Trip.com 5、4travel 2、Google 1，三個平台 8 則；反面 T26 浴場窄、尖峰擠只有 2 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 正 8 對反 2，「大多」成立。"
+    },
+    {
+      "claimId": "G9",
+      "articleExcerpt": "頂樓還有木桶和陶壺造型的露天小浴池，開放感也有一些好評。（HOTEL AMANEK旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/",
+      "sourceTitle": "住客評論統整（T25）",
+      "sourceQuote": "T25 頂樓有露天的小浴池（樽湯、壺湯），開放感好：Trip.com 2、4travel 2、Google 1，三個平台 5 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 達門檻，強度合適；同列「偏小、只有兩個、溫度偏高」只有 2 則，正文沒寫，正確。注意：官網館內案內頁（curl 2026-11-19 https://amanekhotels.jp/asahikawa/information/ ）只寫最上階展望浴場「四季の湯」，沒寫露天、樽湯、壺湯；設施存在只靠三個平台 5 則住客描述，不和官網衝突，但比較表該列只寫「頂樓展望大浴場」。"
+    },
+    {
       "claimId": "C43",
       "articleExcerpt": "比較表 Art Hotel旭川列：北口走路約15分｜兩種三溫暖、按摩池、冷水池｜15:00～24:00、6:00～10:00｜不能露出，櫃台有賣遮的貼紙｜只限住客｜官網・地圖",
       "sourceUrl": "https://www.art-asahikawa.com/spa/",
@@ -547,7 +610,7 @@
     }
   ],
   "summary": {
-    "verified": 60,
+    "verified": 67,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

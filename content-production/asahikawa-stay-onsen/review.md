@@ -1,7 +1,7 @@
 # 驗收紀錄：asahikawa-stay-onsen（2026-11-18，住宿專門頁）
 
 - 文章：`content-production/asahikawa-stay-onsen/reader-preview.md`（旭川溫泉飯店推薦，5間天然溫泉與7間大浴場飯店比較）
-- SHA-256（換行統一成 LF 後計算）：`b69dda4088c8ecb82b083514c807291245739cc529ed63e6323ac2e229e2a8fb`
+- SHA-256（換行統一成 LF 後計算）：`bdc25dc5b65da7d8affbe07a1830ab130ee93f755aefb0883535136bc0eea1eb`
 - 規則：寫作 Skill `references/stay-topic-page.md`（住宿專門頁十步流程，Darren 2026-11-17 核准格式）、`references/sentence-rhythm.md`（Darren 2026-11-18）；Darren 2026-11-18 說「先上線三頁」。流程紀錄在 `content-experiments/stay-local-test-2026-11-16/onsen2/`。
 - 研究：研究子代理（Opus 5.5）查官方來源；讀取工具讀不到的頁面由協調者用瀏覽器讀。
 - 作者：作者子代理（Sonnet 5.5）；編輯：編輯子代理（Opus 5.5，沒寫過這篇）。
@@ -43,3 +43,10 @@
 - 線上〈旭川住宿〉還沒有連到這一頁。
 
 最終結果：`ready_for_user_preview`
+
+## 2026-11-19 補「住客怎麼說」小段
+
+- Darren 看了達門檻卻沒寫進去的住客說法後說「這些都是很棒的資訊啊，可以都放啊」，取消一間一句的上限；每間細寫的旅館多一個「住客怎麼說」小段，官方事實與住客說法分開。紀錄在研究資料夾的 `guest/notes.md`。
+- 事實查核（同一位查核子代理，Opus 5.5）逐點對評論紀錄：針對泡湯重讀評論（一個點記一筆）後，三間 9 條一次通過；條列且不寫「有人說」；最後 67 項全部 verified。
+- 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
+- 上一版 SHA：`b69dda4088c8ecb82b083514c807291245739cc529ed63e6323ac2e229e2a8fb`。

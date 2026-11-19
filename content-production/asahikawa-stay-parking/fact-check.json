@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay-parking",
-  "articleSha256": "49ad062bdae6038fded90319af38f1f64bf10898f4b03f4f8882d5dffb1e00ea",
-  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各官方頁核對，未用瀏覽器、未開 PDF；同日第 2 輪複查改過的句子；第 3 輪逐句比對潤稿前後（parking-before.md 對 reader-preview.md），14 處改動事實、主語與條件都沒變",
-  "checkedAt": "2026-11-18",
+  "articleSha256": "5e553a05ef0bba8936f23203ebb031ef3c3c74f19495d14a3997c75412640f8a",
+  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各官方頁核對，未用瀏覽器、未開 PDF；同日第 2 輪複查改過的句子；第 3 輪逐句比對潤稿前後（parking-before.md 對 reader-preview.md），14 處改動事實、主語與條件都沒變；2026-11-19 第 5 輪：住客說法改成「住客怎麼說」條列，由事實查核 agent（Opus 5.5，沒有參與寫作或編輯）逐條對 facts-reviews-topics.md 的 T 編號查核，不開瀏覽器；只 diff 改前稿 before2，其他句子沿用原 claim；2026-11-19 第 6 輪：協調者照第 5 輪保守改法改了 3 筆，本 agent 只 diff 改前稿核對改過的句子",
+  "checkedAt": "2026-11-19",
   "claims": [
     {
       "claimId": "C1",
@@ -33,13 +33,13 @@
       "notes": ""
     },
     {
-      "claimId": "C4",
-      "articleExcerpt": "有住客提到，停車場就在飯店旁邊，車位也多。",
+      "claimId": "G1",
+      "articleExcerpt": "停車場就在飯店旁邊、車位也多，自駕很方便，這點的好評不少。（Dormy Inn旭川・住客怎麼說）",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/",
-      "sourceTitle": "住客評論統整",
-      "sourceQuote": "停車場在飯店旁邊：Trip.com 前 30 則中 3 則、4travel 第 1 頁 10 則中 1 則（兩個平台、4 則）。停車場大或車位多：Trip.com 1 則、Google 地圖最新 5 則中 1 則、4travel 1 則（三個平台、3 則）。沒有讀到反面說法（4travel 另有 1 則提到戶外平面停車場冬天要自己除雪）。",
+      "sourceTitle": "住客評論統整（T14）",
+      "sourceQuote": "T14 停車場就在飯店旁邊、車位多，自駕方便：Trip.com 7、4travel 2、Google 3，三個平台 12 則",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-18，內建瀏覽器，未登入）：Trip.com 依「最相關」讀第 1～3 頁共 30 則；Google 地圖未登入只顯示最新 5 則；4travel https://4travel.jp/dm_hotel-10667735/tips 第 1 頁 10 則。兩個說法都達到兩個平台以上、合計三則以上。研究紀錄 R190。"
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 取代舊 C4。和官網（平面停車場 114 台，C1）一致。 第 6 輪：停車券那一條已刪（原 G2 移除），小段只剩本條；協調者決定小段可以只有一條。"
     },
     {
       "claimId": "C5",
@@ -318,7 +318,7 @@
       "sourceTitle": "住客評論統整",
       "sourceQuote": "停車場下午到傍晚就滿：Trip.com 前 30 則中 1 則（下午 4 點左右全滿）、Google 地圖最新 5 則中 1 則（下午常常全滿）、4travel 第 1 頁 10 則中 1 則（晚上 7 點左右到已經滿了、被介紹到合作停車場）。三個平台、3 則，剛好達門檻；沒有讀到反面說法。",
       "verdict": "verified",
-      "notes": "第 4 輪（2026-11-18，內建瀏覽器，未登入）：Trip.com 依「最相關」讀第 1～3 頁共 30 則；Google 地圖未登入只顯示最新 5 則（已展開全文）；4travel https://4travel.jp/dm_hotel-11735497/tips 第 1 頁 10 則。研究紀錄 R207。住客說的時間從下午 4 點到晚上 7 點都有，「傍晚以後」可以成立；若要更貼近，可改成「下午到傍晚車位就滿了」。"
+      "notes": "第 4 輪（2026-11-18，內建瀏覽器，未登入）：Trip.com 依「最相關」讀第 1～3 頁共 30 則；Google 地圖未登入只顯示最新 5 則（已展開全文）；4travel https://4travel.jp/dm_hotel-11735497/tips 第 1 頁 10 則。研究紀錄 R207。住客說的時間從下午 4 點到晚上 7 點都有，「傍晚以後」可以成立；若要更貼近，可改成「下午到傍晚車位就滿了」。 2026-11-19 第 5 輪：這句沒改，原證據（11-18 三個平台各 1 則）沿用；但 facts-reviews-topics.md T43 這次重讀只找到 4travel 1 則（Trip.com 前 30 則與 Google 5 則換了一批），下次重查要補回 Trip.com、Google 依據，找不到就拿掉。"
     },
     {
       "claimId": "C36",

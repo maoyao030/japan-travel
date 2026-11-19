@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay-breakfast",
-  "articleSha256": "9c4aa77623b50af2006312c0cfda564bd52d55bf69f66122e57f9898cdedbb3d",
-  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各飯店官網原頁取文字核對，未使用瀏覽器、未開 PDF；第 2 輪複查只核對改過的句子，C16、C21、C43、C48 採協調者瀏覽器查證結果；第 3 輪複查（節奏潤稿 22 段）逐段比對 breakfast-before.md，事實、主語與條件沒有變，只更新 articleExcerpt；第 4 輪確認只改 Art Hotel 一處標點（逗號改回句號），更新 C49；住客評論 4 筆由本 agent 2026-11-18 用內建瀏覽器（未登入）重看；最後一輪：正文刪掉 C37、C42 兩句住客說法（claims 一併移除，留下的 OMO7 那句是建議、沒有事實），C25 照新句重判",
-  "checkedAt": "2026-11-18",
+  "articleSha256": "235125642e2b3d508c7cb1906b61cc0e71f4dbd683f8c354e49d98ac6093e673",
+  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各飯店官網原頁取文字核對，未使用瀏覽器、未開 PDF；第 2 輪複查只核對改過的句子，C16、C21、C43、C48 採協調者瀏覽器查證結果；第 3 輪複查（節奏潤稿 22 段）逐段比對 breakfast-before.md，事實、主語與條件沒有變，只更新 articleExcerpt；第 4 輪確認只改 Art Hotel 一處標點（逗號改回句號），更新 C49；住客評論 4 筆由本 agent 2026-11-18 用內建瀏覽器（未登入）重看；最後一輪：正文刪掉 C37、C42 兩句住客說法（claims 一併移除，留下的 OMO7 那句是建議、沒有事實），C25 照新句重判；2026-11-19 第 5 輪：住客說法改成「住客怎麼說」條列，由事實查核 agent（Opus 5.5，沒有參與寫作或編輯）逐條對 facts-reviews-topics.md 的 T 編號查核，不開瀏覽器；只 diff 改前稿 before2，其他句子沿用原 claim；2026-11-19 第 6 輪：協調者照第 5 輪保守改法改了 3 筆，本 agent 只 diff 改前稿核對改過的句子",
+  "checkedAt": "2026-11-19",
   "claims": [
     {
       "claimId": "C1",
@@ -69,13 +69,31 @@
       "notes": "集團共通 FAQ。"
     },
     {
-      "claimId": "C8",
-      "articleExcerpt": "有住客反應早餐豐盛又好吃。",
-      "sourceUrl": "https://www.google.com/maps/place/Amanek+Hotel+Asahikawa/@43.7651576,142.3594069,17z/data=!4m9!3m8!1s0x5f0ce70e406833f3:0xd6e2bb3775860f86!8m2!3d43.7651576!4d142.3594069!16s%2Fg%2F11q247tbpy?hl=zh-TW",
-      "sourceTitle": "住客評論統整",
-      "sourceQuote": "2026-11-18 Trip.com 評論列表第 1 頁約 10 則中 5 則說早餐豐富、好吃或款式多；Google 地圖可見的最新 5 則中 1 則說早餐不像照片精緻但不錯",
+      "claimId": "G1",
+      "articleExcerpt": "早餐大多是好評，豐盛又好吃。（HOTEL AMANEK旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/",
+      "sourceTitle": "住客評論統整（T18）",
+      "sourceQuote": "T18 早餐豐富、好吃：Trip.com 11、4travel 3、Google 1，三個平台 15 則；反面 T22 只有 2 則（不可用）",
       "verdict": "verified",
-      "notes": "讀了 Trip.com（https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/）與 Google 地圖兩個平台，合計 6 則同方向，達門檻；沒有看到說早餐難吃的。Google 地圖未登入只顯示最新 5 則評論，評論搜尋與主題篩選都要求登入（沒有登入），所以 Google 只讀得到 5 則。 研究紀錄 R288。"
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 正 15 對反 2，「大多」成立。取代舊 C8。"
+    },
+    {
+      "claimId": "G2",
+      "articleExcerpt": "自己盛的海鮮丼也有一些好評。（HOTEL AMANEK旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/",
+      "sourceTitle": "住客評論統整（T19）",
+      "sourceQuote": "T19 有生魚片、可以自己做海鮮丼（正面）：Trip.com 2、4travel 1，兩個平台 3 則，剛好達門檻",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 第 6 輪：原句「部分評價提到生魚片好吃，可以自己盛一碗海鮮丼。」改成本句，拿掉只有 4travel 1 則的「生魚片好吃」，只寫自己盛海鮮丼受好評，和 T19 一致；「也有一些」對 3 則強度合適。原 G3 併入本筆。"
+    },
+    {
+      "claimId": "G4",
+      "articleExcerpt": "湯咖哩這些北海道的在地菜也有一些好評。（HOTEL AMANEK旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/",
+      "sourceTitle": "住客評論統整（T20）",
+      "sourceQuote": "T20 有旭川、北海道的名物（湯咖哩等）：Trip.com 1、4travel 2，兩個平台 3 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 剛好達門檻，「也有一些」強度合適。官網列的在地菜是旭川拉麵、新子燒、豬肉丼，沒寫湯咖哩，但不衝突。"
     },
     {
       "claimId": "C9",
@@ -204,6 +222,42 @@
       "notes": "學齡前官網沒寫，正文改成入住時問櫃台，沒有斷言。"
     },
     {
+      "claimId": "G5",
+      "articleExcerpt": "早餐好吃又豐盛，好評很多。（KOKO HOTEL旭川站前・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-31195786/",
+      "sourceTitle": "住客評論統整（T74）",
+      "sourceQuote": "T74 早餐好吃、豐盛：Trip.com 11、4travel 2、Google 1，三個平台 14 則；反面 T80 只有 2 則（不可用）",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 評論都是 2026 年 4 月改名後的。"
+    },
+    {
+      "claimId": "G6",
+      "articleExcerpt": "生魚片飯、鮭魚卵、甜蝦這些海鮮可以吃到飽，這點的好評不少。（KOKO HOTEL旭川站前・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-31195786/",
+      "sourceTitle": "住客評論統整（T75）",
+      "sourceQuote": "T75 生魚片飯、鮭魚卵、甜蝦等海鮮吃到飽：Trip.com 5、4travel 2，兩個平台 7 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 和官網「鮭魚卵隨你淋」（C17）一致，不衝突。"
+    },
+    {
+      "claimId": "G7",
+      "articleExcerpt": "海鮮丼、成吉思汗烤肉、豚丼這些北海道菜色多，也有一些好評。（KOKO HOTEL旭川站前・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-31195786/",
+      "sourceTitle": "住客評論統整（T76）",
+      "sourceQuote": "T76 北海道料理多（海鮮丼、成吉思汗、豚丼）：4travel 2、Google 1，兩個平台 3 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 剛好達門檻，強度合適；官網 C20 也列成吉思汗烤肉，不衝突。"
+    },
+    {
+      "claimId": "G8",
+      "articleExcerpt": "少數特別提到在12樓餐廳看得到旭川站，視野很好。（KOKO HOTEL旭川站前・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-31195786/",
+      "sourceTitle": "住客評論統整（T77）",
+      "sourceQuote": "T77 頂樓（12 樓）餐廳看得到旭川站，視野好：Trip.com 1、4travel 1、Google 1，三個平台 3 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 有「少數」。12 樓與官網 C18 一致。"
+    },
+    {
       "claimId": "C23",
       "articleExcerpt": "一頓自助早餐就吃得到醃漬海鮮丼、旭川拉麵和特製新子燒。1樓餐廳從6:30開到9:30，9:00前要進場。",
       "sourceUrl": "https://www.ishinhotels.com/wbf/grande-asahikawa",
@@ -222,15 +276,6 @@
       "notes": ""
     },
     {
-      "claimId": "C25",
-      "articleExcerpt": "住客的評價比較兩極，有些人覺得好吃，也有人覺得普通。",
-      "sourceUrl": "https://www.google.com/maps/place/Hotel+WBF+Grande+Asahikawa/@43.762456,142.3622571,17z/data=!4m9!3m8!1s0x5f0ce63ef8feaaab:0x905497112bc489ad!8m2!3d43.762456!4d142.3622571!16s%2Fg%2F11bw3x2fbb?hl=zh-TW",
-      "sourceTitle": "住客評論統整",
-      "sourceQuote": "2026-11-18 好吃一側：Trip.com 前 3 頁約 30 則中 3 則說好吃或味道可以、4travel 列表 1 則說海鮮漬丼好吃；普通一側：Trip.com 3 則說簡單、不夠豐富或一般，Google 地圖可見 5 則中 1 則說可以接受，4travel 同 1 則說其他菜普通",
-      "verdict": "verified",
-      "notes": "兩邊都跨兩個平台、各 3 則以上，達門檻。舊句的「種類多」只有 Trip.com 1 則，已由正文拿掉。Google 地圖未登入只顯示最新 5 則。研究紀錄 R251。"
-    },
-    {
       "claimId": "C26",
       "articleExcerpt": "小學生有兒童價，學齡前免費。",
       "sourceUrl": "https://www.ishinhotels.com/wbf/grande-asahikawa",
@@ -247,6 +292,24 @@
       "sourceQuote": "頁面連結只有站內頁、優惠券與 tayori 聯絡表單，沒有訂房系統連結；頁內有 TEL",
       "verdict": "verified",
       "notes": "以頁面 HTML 的全部連結核對，沒有空室搜尋或訂房連結。頁內 FAQ 有「現地決済でのご予約はチェックインの際に」一句，指的是現場付款的預約，不是官網訂房。"
+    },
+    {
+      "claimId": "G9",
+      "articleExcerpt": "早餐評價兩極，好吃、選擇多受好評（Hotel WBF Grande旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/",
+      "sourceTitle": "住客評論統整（T85）",
+      "sourceQuote": "T85 早餐好吃、選擇多：Trip.com 2、4travel 1、Google 1，三個平台 4 則（2023/11～2026-10）",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 和 T86 一起是紀錄寫的「評價兩極」。取代舊 C25。"
+    },
+    {
+      "claimId": "G10",
+      "articleExcerpt": "也有覺得普通、種類少的。（Hotel WBF Grande旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/",
+      "sourceTitle": "住客評論統整（T86）",
+      "sourceQuote": "T86 早餐普通、種類少、沒北海道特色：Trip.com 3、4travel 3、Google 1，三個平台 7 則；4travel 3 則都是 2023～2024 年",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 保守判：把 2023～2024 年的 4travel 3 則拿掉，仍有 Trip.com 3（近一年）＋Google 1，兩個平台 4 則，「普通、種類少」一側仍達門檻。 第 6 輪：「沒什麼北海道特色」已刪（原 G11 移除），本句只剩「普通、種類少」。"
     },
     {
       "claimId": "C28",
@@ -616,10 +679,64 @@
       "sourceQuote": "2026-11-18 curl 13 個官網網址全部 HTTP 200，頁面標題分別是 ホテルアマネク旭川、ドーミーイン旭川、KOKO HOTEL 旭川駅前、ホテルWBFグランデ旭川、ワイズホテル旭川駅前、OMO7旭川、JRイン旭川、アートホテル旭川、ホテルクレッセント旭川、コートホテル旭川、プレミアホテル-CABIN-旭川、ホテルルートインGrand旭川駅前、スーパーホテル旭川",
       "verdict": "verified",
       "notes": "地圖連結 13 個都是 https://www.google.com/maps/search/?api=1&query=<日文名> 旭川市 的搜尋網址。Trip.com、Agoda 連結不在本次範圍。"
+    },
+    {
+      "claimId": "G12",
+      "articleExcerpt": "多數覺得早餐豐盛又好吃。（Y's Hotel旭川站前・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-19572867/",
+      "sourceTitle": "住客評論統整（T48）",
+      "sourceQuote": "T48 早餐豐盛、好吃：Trip.com 14、4travel 3、Google 1，三個平台 18 則；反面 T51 只有 1 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 正 18 對反 1，「多數」成立。Trip.com 的評論期間 2026-07～11，在 2026 年 4 月改版之後。"
+    },
+    {
+      "claimId": "G13",
+      "articleExcerpt": "海鮮丼可以吃到飽，這點也有一些好評。（Y's Hotel旭川站前・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-19572867/",
+      "sourceTitle": "住客評論統整（T49）",
+      "sourceQuote": "T49 海鮮丼（生魚片飯）吃到飽：Trip.com 3、4travel 1、Google 1，三個平台 5 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 4travel 那則是 2024/09、改版前；拿掉仍有 Trip.com 3＋Google 1（改版後），達門檻。官網沒寫吃到飽，但不衝突。"
+    },
+    {
+      "claimId": "G14",
+      "articleExcerpt": "早餐的評價大多不錯，好吃、豐富，也有水準。（Art Hotel旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-703413/",
+      "sourceTitle": "住客評論統整（T96）",
+      "sourceQuote": "T96 早餐好吃、豐富、有水準：Trip.com 10、4travel 2、Google 2，三個平台 14 則；反面只有 T100 1 則（連住菜色沒變）",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 「大多」成立。4travel 1 則是早晚兩餐一起說，拿掉仍達門檻。"
+    },
+    {
+      "claimId": "G15",
+      "articleExcerpt": "15樓餐廳的景觀，好評也不少。（Art Hotel旭川・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-703413/",
+      "sourceTitle": "住客評論統整（T97）",
+      "sourceQuote": "T97 頂樓（15 樓）餐廳景觀好：Trip.com 4、4travel 2、Google 2，三個平台 8 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 15 樓與官網一致。"
+    },
+    {
+      "claimId": "G16",
+      "articleExcerpt": "早餐評價兩極，選擇多、味道好受好評（旭川庭院飯店・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-1487846/",
+      "sourceTitle": "住客評論統整（T108）",
+      "sourceQuote": "T108 早餐不錯、選擇多、味道好：Trip.com 2、4travel 1，兩個平台 3 則（2024/10～2026-07）",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 剛好達門檻。4travel 那則說的是划算、特製湯咖哩好吃，屬於「味道好」。"
+    },
+    {
+      "claimId": "G17",
+      "articleExcerpt": "也有覺得普通、偏清淡的。（旭川庭院飯店・住客怎麼說）",
+      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-1487846/",
+      "sourceTitle": "住客評論統整（T109）",
+      "sourceQuote": "T109 早餐普通、清淡：Trip.com 2、4travel 1、Google 1，三個平台 4 則",
+      "verdict": "verified",
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 和 T108 一起是紀錄寫的「評價兩極」。"
     }
   ],
   "summary": {
-    "verified": 68,
+    "verified": 81,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
