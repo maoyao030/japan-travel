@@ -14,7 +14,6 @@
 
 **住客怎麼說**：
 
-- 紫彩之湯泡起來舒服又乾淨，館內自助餐的菜色也多。
 - 比較可惜的是離市區遠，沒車不太方便。
 
 **要注意**：所有住客都要先預約晚餐，含晚餐的方案也一樣，太接近入住日可能訂不到想要的時段和餐廳，所以房間訂好就一起預約。
@@ -29,7 +28,7 @@
 
 **住客怎麼說**：
 
-- 這裡很適合帶小孩，館內有兒童遊戲區，自助餐的菜色也豐富。
+- 館內有兒童遊戲區，很適合帶小孩。
 - 不過建築比較舊，大浴場也不大。
 
 看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-61934479/hotel-naturwald-furano/)｜[Agoda](https://www.agoda.com/zh-tw/hotel-naturwald-furano/hotel/furano-jp.html)｜[官網](https://naturwald-furano.com/tw)
@@ -42,7 +41,6 @@
 
 **住客怎麼說**：
 
-- 大浴場大多是好評，乾淨又舒服，少數覺得普通。
 - 比較可惜的是房間偏小，附近吃飯的地方也少，沒車不太方便。
 
 **要注意**：門口只有20個車位，先到的人先停，停滿了改停滑雪場第二停車場。
@@ -58,7 +56,6 @@ Bell Hills飯店（ホテルベルヒルズ）走路2分鐘就到北之峰區的
 **住客怎麼說**：
 
 - 館內放雪具的房間很寬敞，大浴場也又大又乾淨。
-- 自助晚餐的評價不錯。
 
 看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-7149869/bellhills/)｜[Agoda](https://www.agoda.com/zh-tw/hotel-bell-hills/hotel/furano-biei-jp.html)｜[官網](https://www.bellhills.jp/)
 
@@ -70,8 +67,7 @@ Fenix富良野（フェニックス富良野）就在北之峰纜車吊廂前，
 
 **住客怎麼說**：
 
-- 房間寬敞的好評居多。
-- 不過附近沒什麼店，沒開車不方便。
+- 附近沒什麼店，沒開車不方便。
 
 看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-47412627/fenix-furano/)｜[Agoda](https://www.agoda.com/zh-tw/fenix-furano/hotel/furano-jp.html)｜[官網](https://fenixfurano.com/en/fenixfuranorental/)
 
@@ -87,7 +83,7 @@ La Vista富良野Hills（天然温泉 紫雲の湯 ラビスタ富良野ヒル�
 
 **住客怎麼說**：
 
-- 天然溫泉泡起來舒服，晚上還有免費的宵夜拉麵，早餐的海鮮丼可以自己盛。
+- 晚上有免費的宵夜拉麵，早餐的海鮮丼可以自己盛。
 - 三間免費的包租湯倒是不能預約，常常要排，旺季的時候館內的公共設施人也比較多。
 
 看房價與訂房：[Trip.com](https://tw.trip.com/hotels/furano-hotel-detail-43094932/la-vista-furano-hills-natural-hot-spring/)｜[Agoda](https://www.agoda.com/zh-tw/la-vista-furano-hills/hotel/furano-jp.html)｜[官網](https://dormy-hotels.com/dormyinn/hotels/furano/)

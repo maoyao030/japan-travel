@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay-parking",
-  "articleSha256": "5e553a05ef0bba8936f23203ebb031ef3c3c74f19495d14a3997c75412640f8a",
-  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各官方頁核對，未用瀏覽器、未開 PDF；同日第 2 輪複查改過的句子；第 3 輪逐句比對潤稿前後（parking-before.md 對 reader-preview.md），14 處改動事實、主語與條件都沒變；2026-11-19 第 5 輪：住客說法改成「住客怎麼說」條列，由事實查核 agent（Opus 5.5，沒有參與寫作或編輯）逐條對 facts-reviews-topics.md 的 T 編號查核，不開瀏覽器；只 diff 改前稿 before2，其他句子沿用原 claim；2026-11-19 第 6 輪：協調者照第 5 輪保守改法改了 3 筆，本 agent 只 diff 改前稿核對改過的句子",
+  "articleSha256": "09c60c3402e79c4dc80ad9dc78a66f829a65352b7c4f0dc53ba031db3c0fb88c",
+  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 重新打開各官方頁核對，未用瀏覽器、未開 PDF；同日第 2 輪複查改過的句子；第 3 輪逐句比對潤稿前後（parking-before.md 對 reader-preview.md），14 處改動事實、主語與條件都沒變；2026-11-19 第 5 輪：住客說法改成「住客怎麼說」條列，由事實查核 agent（Opus 5.5，沒有參與寫作或編輯）逐條對 facts-reviews-topics.md 的 T 編號查核，不開瀏覽器；只 diff 改前稿 before2，其他句子沿用原 claim；2026-11-19 第 6 輪：協調者照第 5 輪保守改法改了 3 筆，本 agent 只 diff 改前稿核對改過的句子；2026-11-19 第 7 輪：協調者照站長同意的「留哪些條」篩過住客條列（只刪、併、順句），本 agent 和 git HEAD 比對，只有住客小段有變，逐條對 facts-reviews-topics.md 重判",
   "checkedAt": "2026-11-19",
   "claims": [
     {
@@ -31,15 +31,6 @@
       "sourceQuote": "（先着順）／ホテル駐車場が満車の場合、ホテルから3〜4分離れた提携駐車場へご案内致します。",
       "verdict": "verified",
       "notes": ""
-    },
-    {
-      "claimId": "G1",
-      "articleExcerpt": "停車場就在飯店旁邊、車位也多，自駕很方便，這點的好評不少。（Dormy Inn旭川・住客怎麼說）",
-      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/",
-      "sourceTitle": "住客評論統整（T14）",
-      "sourceQuote": "T14 停車場就在飯店旁邊、車位多，自駕方便：Trip.com 7、4travel 2、Google 3，三個平台 12 則",
-      "verdict": "verified",
-      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 取代舊 C4。和官網（平面停車場 114 台，C1）一致。 第 6 輪：停車券那一條已刪（原 G2 移除），小段只剩本條；協調者決定小段可以只有一條。"
     },
     {
       "claimId": "C5",
@@ -619,7 +610,7 @@
     }
   ],
   "summary": {
-    "verified": 68,
+    "verified": 67,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

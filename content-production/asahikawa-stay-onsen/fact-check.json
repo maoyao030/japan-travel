@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay-onsen",
-  "articleSha256": "bdc25dc5b65da7d8affbe07a1830ab130ee93f755aefb0883535136bc0eea1eb",
-  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 與 WebFetch 重開官方頁面逐筆核對，未用瀏覽器、未開 PDF；2026-11-18 第 2 輪只複查協調者改過的句子；第 3 輪複查潤稿後的 13 段（意思沒跑掉）；第 4 輪複查龍乃湯、高砂溫泉兩句；第 5 輪用內建瀏覽器重看 4 筆住客說法；最後一輪複查 C34、C39 改寫；上線後複查 WBF 日歸入浴；2026-11-19 第 5 輪：住客說法改成「住客怎麼說」條列，由事實查核 agent（Opus 5.5，沒有參與寫作或編輯）逐條對 facts-reviews-topics.md 的 T 編號查核，不開瀏覽器；只 diff 改前稿 before2，其他句子沿用原 claim",
+  "articleSha256": "b0de5423e6f9df371be80481160734af8b61ba9b42809f465be60527e79e5a3b",
+  "checker": "事實查核 agent（Opus 5.5），沒有參與寫作；2026-11-18 用 curl 與 WebFetch 重開官方頁面逐筆核對，未用瀏覽器、未開 PDF；2026-11-18 第 2 輪只複查協調者改過的句子；第 3 輪複查潤稿後的 13 段（意思沒跑掉）；第 4 輪複查龍乃湯、高砂溫泉兩句；第 5 輪用內建瀏覽器重看 4 筆住客說法；最後一輪複查 C34、C39 改寫；上線後複查 WBF 日歸入浴；2026-11-19 第 5 輪：住客說法改成「住客怎麼說」條列，由事實查核 agent（Opus 5.5，沒有參與寫作或編輯）逐條對 facts-reviews-topics.md 的 T 編號查核，不開瀏覽器；只 diff 改前稿 before2，其他句子沿用原 claim；2026-11-19 第 7 輪：協調者照站長同意的「留哪些條」篩過住客條列（只刪、併、順句），本 agent 和 git HEAD 比對，只有住客小段有變，逐條對 facts-reviews-topics.md 重判；2026-11-19 第 8 輪：協調者照第 7 輪最小改法改 1 句，本 agent 只核對改過的句子",
   "checkedAt": "2026-11-19",
   "claims": [
     {
@@ -42,31 +42,13 @@
       "notes": ""
     },
     {
-      "claimId": "G1",
-      "articleExcerpt": "溫泉大浴場大多是好評，泡起來很舒服。（Dormy Inn旭川・住客怎麼說）",
-      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/",
-      "sourceTitle": "住客評論統整（T6）",
-      "sourceQuote": "T6 溫泉大浴場泡起來舒服、喜歡：Trip.com 約 11、4travel 6、Google 1，三個平台約 18 則；反面 T10、T11 各 1 則",
-      "verdict": "verified",
-      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 「大多」成立。"
-    },
-    {
       "claimId": "G2",
-      "articleExcerpt": "泡完湯的免費冰棒和早上的乳酸飲料也很受歡迎。（Dormy Inn旭川・住客怎麼說）",
+      "articleExcerpt": "泡完湯的免費冰棒和早上的乳酸飲料很受歡迎。（Dormy Inn旭川・住客怎麼說）",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/",
       "sourceTitle": "住客評論統整（T7）",
       "sourceQuote": "T7 泡完湯有免費冰棒、早上有乳酸飲料：Trip.com 約 10、4travel 6、Google 2，三個平台約 18 則",
       "verdict": "verified",
-      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 則數撐得起「很受歡迎」。取代舊 C5。"
-    },
-    {
-      "claimId": "G3",
-      "articleExcerpt": "三溫暖也有不少好評。（Dormy Inn旭川・住客怎麼說）",
-      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-705870/",
-      "sourceTitle": "住客評論統整（T8）",
-      "sourceQuote": "T8 有三溫暖（含草藥蒸氣）：Trip.com 4、4travel 2、Google 1，三個平台 7 則，正面",
-      "verdict": "verified",
-      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 只寫好評，沒有寫設施細節（設施在官網段 C3）。"
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 則數撐得起「很受歡迎」。取代舊 C5。 第 7 輪（2026-11-19，依「留哪些條」篩條後）：拿掉「也」，約 18 則撐得起「很受歡迎」；這是 Dormy 溫泉相關則數最多的一點（T6 約 18、T7 約 18 相當）。"
     },
     {
       "claimId": "C6",
@@ -115,39 +97,39 @@
     },
     {
       "claimId": "G4",
-      "articleExcerpt": "大浴場最受好評，泡起來很舒服。（Hotel WBF Grande旭川・住客怎麼說）",
+      "articleExcerpt": "大浴場最受好評（Hotel WBF Grande旭川・住客怎麼說）",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/",
       "sourceTitle": "住客評論統整（T89）",
       "sourceQuote": "T89 大浴場泡起來舒服：Trip.com 約 12、4travel 8，兩個平台約 20 則；是本紀錄 WBF 各點則數最多的（T90 7、T91 4、T92 4、早餐 T85 4、T86 7）",
       "verdict": "verified",
-      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 「最受好評」有則數撐。"
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 「最受好評」有則數撐。 第 7 輪（2026-11-19，依「留哪些條」篩條後）：併條後前半不變，仍成立。"
     },
     {
       "claimId": "G5",
-      "articleExcerpt": "浴池種類多的好評也不少，有不同功效的浴池，也有電療池。（Hotel WBF Grande旭川・住客怎麼說）",
+      "articleExcerpt": "浴池種類多，有不同功效的浴池，也有電療池。（Hotel WBF Grande旭川・住客怎麼說，前句：大浴場最受好評）",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/",
       "sourceTitle": "住客評論統整（T90）",
       "sourceQuote": "T90 浴池種類多（不同功效的池、電療池）：Trip.com 4、4travel 1、Google 2，三個平台 7 則",
       "verdict": "verified",
-      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 2026-11-19 用 curl 打開官網 https://www.ishinhotels.com/wbf/grande-asahikawa ，溫泉段列「露天風呂 炭酸泉 ジェットバス 石壺湯 電気風呂」，電療池與官網一致。取代舊 C11。"
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 2026-11-19 用 curl 打開官網 https://www.ishinhotels.com/wbf/grande-asahikawa ，溫泉段列「露天風呂 炭酸泉 ジェットバス 石壺湯 電気風呂」，電療池與官網一致。取代舊 C11。 第 7 輪（2026-11-19，依「留哪些條」篩條後）：改成直述，種類多與電療池有官網列的浴池清單撐，T90 三個平台 7 則也一致，成立。"
     },
     {
       "claimId": "G6",
-      "articleExcerpt": "入住時拿到的代幣，泡完湯可以換飲料，這點也有一些好評。（Hotel WBF Grande旭川・住客怎麼說）",
+      "articleExcerpt": "入住時會拿到代幣，泡完湯可以換飲料。（Hotel WBF Grande旭川・住客怎麼說）",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/",
       "sourceTitle": "住客評論統整（T91）",
       "sourceQuote": "T91 入住給的代幣，泡完可以換飲料：Trip.com 3、4travel 1，兩個平台 4 則（2025/10～2026-10）",
       "verdict": "verified",
-      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 達門檻。官網（curl 2026-11-19）沒寫這項服務，不衝突；這是住客描述的服務，會變的話下次重查要再看。"
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 達門檻。官網（curl 2026-11-19）沒寫這項服務，不衝突；這是住客描述的服務，會變的話下次重查要再看。 第 7 輪（2026-11-19，依「留哪些條」篩條後）：改成直述、拿掉「有一些好評」：這是服務事實，T91 兩個平台 4 則一致、沒有反面，達門檻。官網沒寫，服務會變，下次重查要再看；4travel 1 則說只能在 2 樓販賣機用，沒寫，正確。"
     },
     {
       "claimId": "G7",
-      "articleExcerpt": "部分評價覺得不住宿來泡的客人、本地客人多。（Hotel WBF Grande旭川・住客怎麼說）",
+      "articleExcerpt": "多半覺得不住宿來泡的客人和本地客人不少。（Hotel WBF Grande旭川・住客怎麼說）",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-2864701/",
       "sourceTitle": "住客評論統整（T92）",
-      "sourceQuote": "T92 不住宿來泡的客人、本地人多：Trip.com 3、4travel 1，兩個平台 4 則；反面 4travel 1 則（2024/10）說不擠",
+      "sourceQuote": "T92 不住宿來泡的客人、本地人多：Trip.com 3、4travel 1，兩個平台 4 則；反面 4travel 1 則（2024/10）說外來客不多、不擠",
       "verdict": "verified",
-      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 有反面，寫「部分」強度合適。和官網「不住宿也能泡」（C10）一致。"
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 有反面，寫「部分」強度合適。和官網「不住宿也能泡」（C10）一致。 第 7 輪（2026-11-19，依「留哪些條」篩條後）：原句「部分評價覺得…多」改成直述「…不少」。這一點有反面說法（1 則說不擠），擠不擠也看時段，照規則同一點有反面就要有表示比例的字，直述成全面的狀況超過紀錄。最小改法：「多半覺得不住宿來泡的客人和本地客人不少。」（加「多半覺得」四個字，4 對 1 撐得起「多半」，沒有寫是誰說）。 第 8 輪：加「多半覺得」，正 4 對反 1，強度和紀錄相符，成立。"
     },
     {
       "claimId": "C12",
@@ -429,22 +411,13 @@
       "notes": "表格 AMANEK 列：北口走路約3分、頂樓展望大浴場、時間都核對過。官網連結 200、是ホテルアマネク旭川；地圖為 Google 地圖搜尋網址。「有刺青的人，訂房時先寫信或打電話問」是建議，不是事實，官網這輪沒找到刺青規定。"
     },
     {
-      "claimId": "G8",
-      "articleExcerpt": "頂樓大浴場大多是好評，乾淨又舒服。（HOTEL AMANEK旭川・住客怎麼說）",
-      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/",
-      "sourceTitle": "住客評論統整（T24）",
-      "sourceQuote": "T24 頂樓大浴場舒服、乾淨：Trip.com 5、4travel 2、Google 1，三個平台 8 則；反面 T26 浴場窄、尖峰擠只有 2 則",
-      "verdict": "verified",
-      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 正 8 對反 2，「大多」成立。"
-    },
-    {
       "claimId": "G9",
-      "articleExcerpt": "頂樓還有木桶和陶壺造型的露天小浴池，開放感也有一些好評。（HOTEL AMANEK旭川・住客怎麼說）",
+      "articleExcerpt": "頂樓還有木桶和陶壺造型的露天小浴池，開放感有一些好評。（HOTEL AMANEK旭川・住客怎麼說）",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-73296664/",
       "sourceTitle": "住客評論統整（T25）",
       "sourceQuote": "T25 頂樓有露天的小浴池（樽湯、壺湯），開放感好：Trip.com 2、4travel 2、Google 1，三個平台 5 則",
       "verdict": "verified",
-      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 達門檻，強度合適；同列「偏小、只有兩個、溫度偏高」只有 2 則，正文沒寫，正確。注意：官網館內案內頁（curl 2026-11-19 https://amanekhotels.jp/asahikawa/information/ ）只寫最上階展望浴場「四季の湯」，沒寫露天、樽湯、壺湯；設施存在只靠三個平台 5 則住客描述，不和官網衝突，但比較表該列只寫「頂樓展望大浴場」。"
+      "notes": "依 content-experiments/stay-rerun-2026-11-18/asahikawa/facts-reviews-topics.md（2026-11-19 查核角色用內建瀏覽器、未登入手動閱讀：Trip.com 最相關前 30 則、4travel 第 1 頁 10 則、Google 地圖預設 5 則）。本次查核不開瀏覽器，只核對紀錄與正文、編輯筆記 topic-pages-notes2.md。 達門檻，強度合適；同列「偏小、只有兩個、溫度偏高」只有 2 則，正文沒寫，正確。注意：官網館內案內頁（curl 2026-11-19 https://amanekhotels.jp/asahikawa/information/ ）只寫最上階展望浴場「四季の湯」，沒寫露天、樽湯、壺湯；設施存在只靠三個平台 5 則住客描述，不和官網衝突，但比較表該列只寫「頂樓展望大浴場」。 第 7 輪（2026-11-19，依「留哪些條」篩條後）：拿掉「也」，強度不變。"
     },
     {
       "claimId": "C43",
@@ -610,7 +583,7 @@
     }
   ],
   "summary": {
-    "verified": 67,
+    "verified": 64,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

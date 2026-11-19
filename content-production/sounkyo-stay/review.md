@@ -1,7 +1,7 @@
 # 驗收紀錄：sounkyo-stay（2026-11-18，舊住宿頁重跑一輪）
 
 - 文章：`content-production/sounkyo-stay/reader-preview.md`（層雲峽住宿推薦，住溫泉街還是上川站？）
-- SHA-256（換行統一成 LF 後計算）：`13e0dddf1c553b7d99ff82a2de1ba45dfdc7a94f966fe08218d65491019fddbf`
+- SHA-256（換行統一成 LF 後計算）：`d243d9a30b22240f5fc404758da0bafb1b69009325f9db3498717c2fcf14e360`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 研究：`content-experiments/stay-rerun-2026-11-18/sounkyo/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-18 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
 - 寫作：五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，六間細寫的旅館都判剛好）。
@@ -44,3 +44,4 @@
 - 上一版 SHA：`fc8054ed51fbf562f9ca99b4ef50c09a3066017a6eea3602a8c5831f574eaf3c`。
 - 2026-11-19 補記：Darren 看了段落版後說「列點的清楚一點」，「住客怎麼說」改成一句一條的條列，句子沒改；查核者確認後更新雜湊（上一版 `e95c88772cff18d1925cddce1301b14840703b6e95c5704e32bbec8c5367311c`）。
 - 2026-11-19 補記：Darren 說「住客怎麼說」底下不用再寫「有人說」，條列改成直接講內容；查核者逐條確認強度沒有超過評論紀錄（少數的說法改寫成「少數覺得」「部分」「評價不少」）（上一版 `25660de0cce21a5700d3b0e70856eeb345504d0b441fcc5c3f0d33268ce754ed`）。
+- 2026-11-19 補記：Darren 覺得重複上面介紹、只加「有好評」的條目沒有幫助，看過七段對照後同意照「留官網沒寫的事、最受好評的一項、評價兩極或缺點」篩選；查核者確認留下的句子意思與強度沒變（上一版 `13e0dddf1c553b7d99ff82a2de1ba45dfdc7a94f966fe08218d65491019fddbf`）。

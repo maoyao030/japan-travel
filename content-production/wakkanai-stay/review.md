@@ -1,7 +1,7 @@
 # 驗收紀錄：wakkanai-stay（2026-11-19，舊住宿頁重跑一輪）
 
 - 文章：`content-production/wakkanai-stay/reader-preview.md`（稚內住宿推薦，住稚內站前還是南稚內？）
-- SHA-256（換行統一成 LF 後計算）：`6a00340fe9c98865cf4d58c447e184687055c4e5f5ee2fcfa90076d5b7a113a3`
+- SHA-256（換行統一成 LF 後計算）：`be4d4dc0c4fb1da6478c2d42f5b210cb5036f365feba5fc095796e2313e90b2a`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 研究：`content-experiments/stay-rerun-2026-11-18/wakkanai/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-19 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
 - 寫作：規格助手（Opus 5.5）→ 五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，細寫六間都判剛好）。
@@ -47,3 +47,4 @@
 - 上一版 SHA：`104804622cfb1a1c76eed8f2bdbfe6baeeaf5ed1f52c1bd3691b6775295b78d2`。
 - 2026-11-19 補記：Darren 看了段落版後說「列點的清楚一點」，「住客怎麼說」改成一句一條的條列，句子沒改；查核者確認後更新雜湊（上一版 `90cb19c1dc71995b8a84fecd3a8b3836c0fd09c800942875e2b4df0fa24fdf84`）。
 - 2026-11-19 補記：Darren 說「住客怎麼說」底下不用再寫「有人說」，條列改成直接講內容；查核者逐條確認強度沒有超過評論紀錄（少數的說法改寫成「少數覺得」「部分」「評價不少」）（上一版 `306c67332d9f3474687d76263512f3e9e38e393aac1fa6b576c802a844217f3b`）。
+- 2026-11-19 補記：Darren 覺得重複上面介紹、只加「有好評」的條目沒有幫助，看過七段對照後同意照「留官網沒寫的事、最受好評的一項、評價兩極或缺點」篩選；查核者確認留下的句子意思與強度沒變（上一版 `6a00340fe9c98865cf4d58c447e184687055c4e5f5ee2fcfa90076d5b7a113a3`）。

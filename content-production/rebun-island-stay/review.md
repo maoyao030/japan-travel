@@ -1,7 +1,7 @@
 # 驗收紀錄：rebun-island-stay（2026-11-19，舊住宿頁重跑一輪）
 
 - 文章：`content-production/rebun-island-stay/reader-preview.md`（禮文島住宿推薦，住香深還是船泊？）
-- SHA-256（換行統一成 LF 後計算）：`a1bee841cdd2392d670ba716470edff304fadacb4bde791f4da10effcca98529`
+- SHA-256（換行統一成 LF 後計算）：`284d2266e2d3c7bc82d2d83fef704bbaa25e8f776551112c7747cb94ffaa5d28`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 研究：`content-experiments/stay-rerun-2026-11-18/rebun-island/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-19 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
 - 寫作：規格助手（Opus 5.5）→ 五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，細寫六間都判剛好）。
@@ -45,3 +45,4 @@
 - 事實查核（同一位查核子代理，Opus 5.5）逐點對評論紀錄：第 4 輪擋 9 句（咲涼只算改名後的評論、桃岩莊近年達不到門檻整段拿掉、紀錄沒分開算的細項拿掉）；條列且不寫「有人說」；最後 138 項全部 verified。
 - 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
 - 上一版 SHA：`2c3d9632dd7d074db0a3cc5b63f36c95c70ce096012f74e441da6e8f93a64e79`。
+- 2026-11-19 補記：Darren 覺得重複上面介紹、只加「有好評」的條目沒有幫助，看過七段對照後同意照「留官網沒寫的事、最受好評的一項、評價兩極或缺點」篩選；查核者確認留下的句子意思與強度沒變（上一版 `a1bee841cdd2392d670ba716470edff304fadacb4bde791f4da10effcca98529`）。

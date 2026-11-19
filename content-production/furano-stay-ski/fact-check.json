@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "furano-stay-ski",
-  "articleSha256": "4f3a166defaad0efbf1a9489107ae4b60975207974b94a8683a3825d2fe8ae8a",
-  "checker": "事實查核 agent（Claude Opus 5.5 子代理，唯讀；沒有參與研究、寫作與編輯；2026-11-18 用 python urllib、curl 重開官方頁，PDF 下載到暫存資料夾讀，Trip.com 與 Agoda 用內建瀏覽器開）；第 2 輪複查（2026-11-18）：逐句比對新舊正文，改過與新增的句子重開官方來源（前一輪下載的頁面文字與 PDF），沒有再用瀏覽器；第 3 輪複查（2026-11-18）：git diff 確認只改四處，逐處對官方原文；第 4 輪（2026-11-18）：Fenix 館內餐廳 2026-09-30 結束營業（餐廳官方 Instagram @fenix_restaurant_and_bar 2026-10-01 公告），正文已刪餐廳與冬季早餐；第 5 輪（2026-11-18）：刪減縮寫後逐句對改前稿與已核過的官方原文，沒有用瀏覽器；第 6 輪（2026-11-18）：逐句核對改過與新增的句子，沒有用瀏覽器；第 7 輪（2026-11-18）：補賣點後 diff 改前改後，新增與改過的句子逐句用 WebFetch／curl 重開官網，沒有用瀏覽器；第 8 輪（2026-11-18）：git diff 對照線上版逐句複查照查核改的句子與新增住客說法（住客說法對研究紀錄 facts-reviews.md 的 R 編號，沒有用瀏覽器）；第 9 輪（2026-11-18）：只改那圖瓦德住客一句，對研究紀錄 R44、R45、R46；第 10 輪（2026-11-19）：七間的「住客怎麼說」逐句逐點對 facts-reviews.md 的 R 編號，那圖瓦德用 WebFetch 重開官網核對兒童遊戲區與免費飲料；舊住客句 C5、C19、C23、C30、C88、C89 搬進小段，改成 G1～G17；沒有用瀏覽器；第 11 輪（2026-11-19）：住客小段改條列後逐條對 facts-reviews.md 的 R 編號，確認強度與好壞，沒有用瀏覽器",
+  "articleSha256": "9e743e954577b2db11b584357e112f431f5e481d8a4a4e9a7f45a00c46fb8636",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，唯讀；沒有參與研究、寫作與編輯；2026-11-18 用 python urllib、curl 重開官方頁，PDF 下載到暫存資料夾讀，Trip.com 與 Agoda 用內建瀏覽器開）；第 2 輪複查（2026-11-18）：逐句比對新舊正文，改過與新增的句子重開官方來源（前一輪下載的頁面文字與 PDF），沒有再用瀏覽器；第 3 輪複查（2026-11-18）：git diff 確認只改四處，逐處對官方原文；第 4 輪（2026-11-18）：Fenix 館內餐廳 2026-09-30 結束營業（餐廳官方 Instagram @fenix_restaurant_and_bar 2026-10-01 公告），正文已刪餐廳與冬季早餐；第 5 輪（2026-11-18）：刪減縮寫後逐句對改前稿與已核過的官方原文，沒有用瀏覽器；第 6 輪（2026-11-18）：逐句核對改過與新增的句子，沒有用瀏覽器；第 7 輪（2026-11-18）：補賣點後 diff 改前改後，新增與改過的句子逐句用 WebFetch／curl 重開官網，沒有用瀏覽器；第 8 輪（2026-11-18）：git diff 對照線上版逐句複查照查核改的句子與新增住客說法（住客說法對研究紀錄 facts-reviews.md 的 R 編號，沒有用瀏覽器）；第 9 輪（2026-11-18）：只改那圖瓦德住客一句，對研究紀錄 R44、R45、R46；第 10 輪（2026-11-19）：七間的「住客怎麼說」逐句逐點對 facts-reviews.md 的 R 編號，那圖瓦德用 WebFetch 重開官網核對兒童遊戲區與免費飲料；舊住客句 C5、C19、C23、C30、C88、C89 搬進小段，改成 G1～G17；沒有用瀏覽器；第 11 輪（2026-11-19）：住客小段改條列後逐條對 facts-reviews.md 的 R 編號，確認強度與好壞，沒有用瀏覽器；第 12 輪（2026-11-19）：git diff HEAD 確認只有「住客怎麼說」條列變動，逐條對 facts-reviews.md，刪掉的條目移除 G1、G5、G7、G11、G12，沒有用瀏覽器",
   "checkedAt": "2026-11-19",
   "claims": [
     {
@@ -42,40 +42,22 @@
       "notes": "第 5 輪：句子縮寫，事實與條件不變。"
     },
     {
-      "claimId": "G1",
-      "articleExcerpt": "紫彩之湯泡起來舒服又乾淨，館內自助餐的菜色也多。",
-      "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-704148/new-furano-prince-hotel/",
-      "sourceTitle": "住客評論統整（facts-reviews.md）",
-      "sourceQuote": "R3（可用）：溫泉（紫彩之湯）泡起來舒服、乾淨。Trip 30／5、4travel 10／3、Google 5／1／R6（可用）：自助餐（早晚）菜色多。Trip 30／3、4travel 10／4",
-      "verdict": "verified",
-      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：拿掉「常被稱讚」。R3 三個平台 9 則全是正面，紀錄沒有可用的負面（R4、R5 都只有一個平台，不可用），直接寫不算把少數講成絕對；R6 兩個平台 7 則。"
-    },
-    {
       "claimId": "G2",
       "articleExcerpt": "比較可惜的是離市區遠，沒車不太方便。",
       "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-704148/new-furano-prince-hotel/",
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R9（可用）：離市區遠、不開車不太方便。Trip 30／4、4travel 10／1",
       "verdict": "verified",
-      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：原第一段的住客句搬過來，兩個平台 5 則。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。"
+      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：原第一段的住客句搬過來，兩個平台 5 則。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。；第 12 輪（2026-11-19，篩條）：這條沒變。"
     },
     {
       "claimId": "G3",
-      "articleExcerpt": "這裡很適合帶小孩，館內有兒童遊戲區",
+      "articleExcerpt": "館內有兒童遊戲區，很適合帶小孩。",
       "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-61934479/hotel-naturwald-furano/",
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R45（可用）：很適合帶小孩（兒童遊戲區、球池、小禮物、尿布等用品）。Trip 30／9、4travel 10／4、Google 5／2",
       "verdict": "verified",
-      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：已刪「和球池」。「很適合帶小孩」R45 三個平台 15 則；兒童遊戲區官網有（ASOBIBA キッズコーナー），不靠括號細項。"
-    },
-    {
-      "claimId": "G5",
-      "articleExcerpt": "自助餐的菜色也豐富",
-      "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-61934479/hotel-naturwald-furano/",
-      "sourceTitle": "住客評論統整（facts-reviews.md）",
-      "sourceQuote": "R48（可用）：早晚自助餐豐富（早餐鮭魚卵吃到飽是招牌）。Trip 30／10、4travel 10／5、Google 5／3",
-      "verdict": "verified",
-      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：併進同一條，意思不變。R48 三個平台 18 則。"
+      "notes": "第 12 輪（2026-11-19，篩條）：只調換順序、刪掉併在同條的自助餐評價。「很適合帶小孩」R45 三個平台 15 則；兒童遊戲區官網有（ASOBIBA キッズコーナー）。"
     },
     {
       "claimId": "G6",
@@ -84,16 +66,7 @@
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R46（可用）：建築和設施舊（部分房間有味道）。Trip 30／9、4travel 10／1、Google 5／2／R50（可用，剛好達門檻）：大浴場不大（水溫有住客覺得不剛好）。Trip 30／1、4travel 10／2",
       "verdict": "verified",
-      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變；壞處仍在。R46 三個平台 12 則、R50 兩個平台 3 則。"
-    },
-    {
-      "claimId": "G7",
-      "articleExcerpt": "大浴場大多是好評，乾淨又舒服，少數覺得普通。",
-      "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-110029424/nozo-hotel/",
-      "sourceTitle": "住客評論統整（facts-reviews.md）",
-      "sourceQuote": "R23（可用）：大浴場（含露天、三溫暖）乾淨舒服。Trip 30／11、Google 5／1／R24（可用，正面遠多於負面，寫成「也有住客覺得普通」最多一句）：大浴場普通、溫度控制不穩。Trip 30／1、Google 5／2",
-      "verdict": "verified",
-      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：「大多」對 R23 兩個平台 12 則正面、R24 兩個平台 3 則負面；少數意見仍寫成「少數覺得普通」，強度對。"
+      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變；壞處仍在。R46 三個平台 12 則、R50 兩個平台 3 則。；第 12 輪（2026-11-19，篩條）：這條沒變。"
     },
     {
       "claimId": "G8",
@@ -102,7 +75,7 @@
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R21（可用）：房間偏小（大行李箱只能攤開一個）。Trip 30／10（另 2 則說大）、Google 5／2",
       "verdict": "verified",
-      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：已刪「大行李箱只能攤開一個」。R21 兩個平台 12 則說小（另 2 則說大），寫「偏小」不過頭。"
+      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：已刪「大行李箱只能攤開一個」。R21 兩個平台 12 則說小（另 2 則說大），寫「偏小」不過頭。；第 12 輪（2026-11-19，篩條）：這條沒變。"
     },
     {
       "claimId": "G9",
@@ -111,7 +84,7 @@
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R27（可用）：附近吃飯的地方少，走得到的只有幾間餐廳和便利商店；沒車不方便。Trip 30／5、Google 5／1",
       "verdict": "verified",
-      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：兩個平台 6 則；「只有幾間餐廳和便利商店」細項沒寫。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。"
+      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：兩個平台 6 則；「只有幾間餐廳和便利商店」細項沒寫。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。；第 12 輪（2026-11-19，篩條）：這條沒變。"
     },
     {
       "claimId": "G10",
@@ -120,43 +93,25 @@
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R61（可用，剛好達門檻）：有寬敞的雪具室。Trip 30／1、4travel 10／1、Google 5／1／R62（可用）：大浴場大、乾淨。Trip 30／4（另 1 則說小）、Google 5／4",
       "verdict": "verified",
-      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：拿掉「被說」。R61 三個平台各 1 則；R62 兩個平台 8 則正面，只有 1 則說小，直接寫不算過頭。Bell Hills 的 4travel 偏舊的提醒同上一輪。"
-    },
-    {
-      "claimId": "G11",
-      "articleExcerpt": "自助晚餐的評價不錯。",
-      "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-7149869/bellhills/",
-      "sourceTitle": "住客評論統整（facts-reviews.md）",
-      "sourceQuote": "R64（可用）：自助晚餐不錯、值得加。Trip 30／3、4travel 10／4、Google 5／1（另 1 則說一泊二食的菜少）",
-      "verdict": "verified",
-      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變。R64 三個平台 8 則（另 1 則說一泊二食的菜少）。"
-    },
-    {
-      "claimId": "G12",
-      "articleExcerpt": "房間寬敞的好評居多。",
-      "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-47412627/fenix-furano/",
-      "sourceTitle": "住客評論統整（facts-reviews.md）",
-      "sourceQuote": "R123（可用，多數說大）：房間大。Trip 30／8（另 3 則說小）、Google 5／2（另 1 則說小）",
-      "verdict": "verified",
-      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：「居多」對 R123 兩個平台 10 則說大、4 則說小，保留了有少數相反意見的語氣。"
+      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：拿掉「被說」。R61 三個平台各 1 則；R62 兩個平台 8 則正面，只有 1 則說小，直接寫不算過頭。Bell Hills 的 4travel 偏舊的提醒同上一輪。；第 12 輪（2026-11-19，篩條）：這條沒變。"
     },
     {
       "claimId": "G13",
-      "articleExcerpt": "不過附近沒什麼店，沒開車不方便。",
+      "articleExcerpt": "附近沒什麼店，沒開車不方便。",
       "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-47412627/fenix-furano/",
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R124（可用）：離市區遠、附近沒什麼店，沒車不方便。Trip 30／4、Google 5／1",
       "verdict": "verified",
-      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：兩個平台 5 則。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。"
+      "notes": "第 12 輪（2026-11-19，篩條）：「房間寬敞的好評居多」整條刪掉，這條拿掉開頭「不過」，意思與強度不變。R124 兩個平台 5 則。"
     },
     {
       "claimId": "G14",
-      "articleExcerpt": "天然溫泉泡起來舒服，晚上還有免費的宵夜拉麵，早餐的海鮮丼可以自己盛。",
+      "articleExcerpt": "晚上有免費的宵夜拉麵，早餐的海鮮丼可以自己盛。",
       "sourceUrl": "https://tw.trip.com/hotels/furano-hotel-detail-43094932/la-vista-furano-hills-natural-hot-spring/",
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R81（可用）：頂樓天然溫泉（含露天）舒服、看得到山。Trip 30／10、4travel 10／5、Google 5／3／R83（可用）：晚上有免費宵夜拉麵，泡完湯有免費冰棒和乳酸飲料。Trip 30／12、4travel 10／4、Google 5／4／R84（可用）：自助早餐豐富（海鮮丼自己做）。Trip 30／12、4travel 10／5、Google 5／4",
       "verdict": "verified",
-      "notes": "第 11 輪（2026-11-19，條列、去掉「有人說」）：拿掉「常被稱讚」。R81 三個平台 18 則全是正面，紀錄沒有說溫泉不好的可用說法；R83、R84 同上一輪。"
+      "notes": "第 12 輪（2026-11-19，篩條）：刪掉「天然溫泉泡起來舒服」（R81），留下的兩點不變：R83、R84 都是三個平台 20 則以上；「還有」改「有」，沒有升級。"
     },
     {
       "claimId": "G15",
@@ -165,7 +120,7 @@
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R82（可用）：有三間免費包租湯，但不能預約，常常要排；「常要等」Trip 2、4travel 2、Google 2／R87（可用，寫成「旺季」）：旺季公共設施人多。Trip 30／1、Google 5／2；4travel 有 1 則說不擠",
       "verdict": "verified",
-      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：R82「常要等」三個平台 6 則；R87 兩個平台 3 則剛好達門檻，4travel 另 1 則說不擠，句子照紀錄限定「旺季」，沒寫淋浴位、按摩椅等細項。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。"
+      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：R82「常要等」三個平台 6 則；R87 兩個平台 3 則剛好達門檻，4travel 另 1 則說不擠，句子照紀錄限定「旺季」，沒寫淋浴位、按摩椅等細項。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。；第 12 輪（2026-11-19，篩條）：這條沒變。"
     },
     {
       "claimId": "G16",
@@ -174,7 +129,7 @@
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R141（可用）：附近餐廳、超市、藥妝店走得到。Trip 30／9、4travel 10／2",
       "verdict": "verified",
-      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：兩個平台 11 則；餐廳、超市、藥妝店收成「吃飯、買東西」，沒有加強。和官方「站前走路約1分」一致。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。"
+      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：兩個平台 11 則；餐廳、超市、藥妝店收成「吃飯、買東西」，沒有加強。和官方「站前走路約1分」一致。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。；第 12 輪（2026-11-19，篩條）：這條沒變。"
     },
     {
       "claimId": "G17",
@@ -183,7 +138,7 @@
       "sourceTitle": "住客評論統整（facts-reviews.md）",
       "sourceQuote": "R142（可用）：大浴場很小（女湯只有三個淋浴位、約三人就滿）。Trip 30／5、4travel 10／4",
       "verdict": "verified",
-      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：兩個平台 9 則（括號的女湯淋浴位沒寫）。和官方不衝突，但提醒：官方 2026-10-04 公告女性 SPA 與岩盤浴 10 月 5 日起維修停用、結束日未定（news/detail.php?id=158），目前女性住客連小的大浴場也用不到；4travel 那 4 則是 2017～2022 年。句子本身照紀錄成立，要不要在「要注意」提女湯停用，交寫作端決定（臨時停機原則上不寫）。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。"
+      "notes": "第 10 輪（2026-11-19，住客怎麼說小段）：兩個平台 9 則（括號的女湯淋浴位沒寫）。和官方不衝突，但提醒：官方 2026-10-04 公告女性 SPA 與岩盤浴 10 月 5 日起維修停用、結束日未定（news/detail.php?id=158），目前女性住客連小的大浴場也用不到；4travel 那 4 則是 2017～2022 年。句子本身照紀錄成立，要不要在「要注意」提女湯停用，交寫作端決定（臨時停機原則上不寫）。；第 11 輪（2026-11-19，條列、去掉「有人說」）：句子不變，只改成條列。；第 12 輪（2026-11-19，篩條）：這條沒變。"
     },
     {
       "claimId": "C7",
@@ -889,7 +844,7 @@
     }
   ],
   "summary": {
-    "verified": 98,
+    "verified": 93,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

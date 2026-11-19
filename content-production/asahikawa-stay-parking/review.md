@@ -1,7 +1,7 @@
 # 驗收紀錄：asahikawa-stay-parking（2026-11-18，住宿專門頁）
 
 - 文章：`content-production/asahikawa-stay-parking/reader-preview.md`（旭川自駕住宿推薦，14間飯店的停車場與停車費比較）
-- SHA-256（換行統一成 LF 後計算）：`5e553a05ef0bba8936f23203ebb031ef3c3c74f19495d14a3997c75412640f8a`
+- SHA-256（換行統一成 LF 後計算）：`09c60c3402e79c4dc80ad9dc78a66f829a65352b7c4f0dc53ba031db3c0fb88c`
 - 規則：寫作 Skill `references/stay-topic-page.md`（住宿專門頁十步流程，Darren 2026-11-17 核准格式）、`references/sentence-rhythm.md`（Darren 2026-11-18）；Darren 2026-11-18 說「先上線三頁」。流程紀錄在 `content-experiments/stay-local-test-2026-11-16/parking2/`。
 - 研究：研究子代理（Opus 5.5）查官方來源；讀取工具讀不到的頁面由協調者用瀏覽器讀。
 - 作者：作者子代理（Sonnet 5.5）；編輯：編輯子代理（Opus 5.5，沒寫過這篇）。
@@ -50,3 +50,4 @@
 - 事實查核（同一位查核子代理，Opus 5.5）逐點對評論紀錄：針對停車重讀評論後擋 1 條（進出手續是飯店規則、官網沒寫），刪掉後全過；小段只有一條；最後 68 項全部 verified。
 - 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
 - 上一版 SHA：`49ad062bdae6038fded90319af38f1f64bf10898f4b03f4f8882d5dffb1e00ea`。
+- 2026-11-19 補記：Darren 覺得重複上面介紹、只加「有好評」的條目沒有幫助，看過七段對照後同意照「留官網沒寫的事、最受好評的一項、評價兩極或缺點」篩選；查核者確認留下的句子意思與強度沒變（上一版 `5e553a05ef0bba8936f23203ebb031ef3c3c74f19495d14a3997c75412640f8a`）。

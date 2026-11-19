@@ -1,7 +1,7 @@
 # 驗收紀錄：rishiri-island-stay（2026-11-19，舊住宿頁重跑一輪）
 
 - 文章：`content-production/rishiri-island-stay/reader-preview.md`（利尻島住宿推薦，住鴛泊還是沓形？）
-- SHA-256（換行統一成 LF 後計算）：`f935d6f78e6db6ef354ae1cd4df990f5737cad8b92dbe1cc5f1ce87062117126`
+- SHA-256（換行統一成 LF 後計算）：`ed1e2eb59e3215e4b10d049a1aca059a58a3f585d68a600d96458da9090a2758`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」「廢話要在流程裡擋掉」「份量檢查」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 研究：`content-experiments/stay-rerun-2026-11-18/rishiri-island/` 的 `queries.md`、`facts.md`、`facts-extra.md`、`facts-reviews.md`、`booking-links.md`。住客評論由查核角色的子代理（Opus 5.5）2026-11-19 用瀏覽器讀（Trip.com、4travel、Google 地圖，沒登入）。
 - 寫作：規格助手（Opus 5.5）→ 五段各一位作者（Sonnet 5.5）→ 四位分段編輯（Opus 5.5）→ 一位接縫編輯兼句子節奏與份量檢查（Opus 5.5，`seam-notes.md`，細寫六間都判剛好）。
@@ -46,3 +46,4 @@
 - 讀者驗收沒有重做：只加了住客說法小段，標題、結構、官方事實沒有變。
 - 上一版 SHA：`12b81f80547bbb59d60fcd8ea4483438108192f72a82bfa319444a6dfcf33f03`。
 - 2026-11-19 補記：Darren 說「住客怎麼說」底下不用再寫「有人說」，條列改成直接講內容；查核者逐條確認強度沒有超過評論紀錄（少數的說法改寫成「少數覺得」「部分」「評價不少」）（上一版 `54a9fa7c4abf889b613b7d13d7fc1ddab096dc1af4ae8235883909ad05753406`）。
+- 2026-11-19 補記：Darren 覺得重複上面介紹、只加「有好評」的條目沒有幫助，看過七段對照後同意照「留官網沒寫的事、最受好評的一項、評價兩極或缺點」篩選；查核者確認留下的句子意思與強度沒變（上一版 `f935d6f78e6db6ef354ae1cd4df990f5737cad8b92dbe1cc5f1ce87062117126`）。

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "asahikawa-stay",
-  "articleSha256": "f9bb1cdb0ebeda7117fd5f45c06c9411ae8dfc387255064d54ad1cd9a37f0f12",
-  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-18 用 python urllib 與 curl 重開官方頁，沒有使用瀏覽器；沿用的項目註明出自哪一頁專門頁的 fact-check.json；第 2 輪複查（2026-11-18）：逐句核對 git diff HEAD~1 改過與新增的句子；第 3 輪複查（2026-11-18）：逐句核對 restore/before.md 到現稿補回的賣點；第 4 輪複查（2026-11-18）：逐句核對 restore/before-round2.md 到現稿的改動；第 5 輪複查（2026-11-18）：讀者驗收後五處改動；第 6 輪複查（2026-11-19）：「住客怎麼說」小段逐句對 facts-reviews.md（2026-11-18 查核者瀏覽器重看）；第 7 輪（2026-11-19）：照第 6 輪改法修正的 5 句；第 8 輪（2026-11-19）：「住客怎麼說」六段改成條列，和 git HEAD 版 diff 確認句子一字未改；第 9 輪（2026-11-19）：「住客怎麼說」條列拿掉「有人說」類字眼後，逐條核對強度；第 10 輪（2026-11-19）：CABIN、Super Hotel 兩條改成「房間偏小的評價也不少。」",
+  "articleSha256": "e8097d4e6c8e66a74bd160c638cf1a2634bbd07e97de9bd49dc46a2216711a1e",
+  "checker": "事實查核 agent（唯讀，沒有參與研究、寫作與編輯）；2026-11-18 用 python urllib 與 curl 重開官方頁，沒有使用瀏覽器；沿用的項目註明出自哪一頁專門頁的 fact-check.json；第 2 輪複查（2026-11-18）：逐句核對 git diff HEAD~1 改過與新增的句子；第 3 輪複查（2026-11-18）：逐句核對 restore/before.md 到現稿補回的賣點；第 4 輪複查（2026-11-18）：逐句核對 restore/before-round2.md 到現稿的改動；第 5 輪複查（2026-11-18）：讀者驗收後五處改動；第 6 輪複查（2026-11-19）：「住客怎麼說」小段逐句對 facts-reviews.md（2026-11-18 查核者瀏覽器重看）；第 7 輪（2026-11-19）：照第 6 輪改法修正的 5 句；第 8 輪（2026-11-19）：「住客怎麼說」六段改成條列，和 git HEAD 版 diff 確認句子一字未改；第 9 輪（2026-11-19）：「住客怎麼說」條列拿掉「有人說」類字眼後，逐條核對強度；第 10 輪（2026-11-19）：CABIN、Super Hotel 兩條改成「房間偏小的評價也不少。」；第 11 輪（2026-11-19）：住客條列照「留哪些條」篩過，和 git HEAD（349a626）diff 只有 Art 一段",
   "checkedAt": "2026-11-19",
   "claims": [
     {
@@ -1104,26 +1104,17 @@
       "notes": "三個平台合計 3 則，剛好達門檻；「可能停滿」沒有超出。和官網「満車の際はお近くの提携外駐車場をご案内」不衝突。沿用 asahikawa-stay-parking 的 C35。"
     },
     {
-      "claimId": "C140",
-      "articleExcerpt": "Art 住客怎麼說：房間寬敞。",
-      "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-703413/",
-      "sourceTitle": "住客評論統整",
-      "sourceQuote": "房間寬敞：Trip.com 30 則中約 6 則、4travel 10 則中 2 則（Google 地圖沒讀）",
-      "verdict": "verified",
-      "notes": "第 9 輪：拿掉「不少人稱讚」。Trip.com 約 6 則、4travel 2 則，紀錄沒有反面說法（Google 沒讀），沒有超出。"
-    },
-    {
       "claimId": "C141",
-      "articleExcerpt": "Art 住客怎麼說：不過建築看得出有些年代，電梯也不多，人多的時候要等一下。",
+      "articleExcerpt": "Art 住客怎麼說：建築看得出有些年代，電梯也不多，人多的時候要等一下。",
       "sourceUrl": "https://tw.trip.com/hotels/asahikawa-hotel-detail-703413/",
       "sourceTitle": "住客評論統整",
       "sourceQuote": "建築有年代感：Trip.com 7 則、4travel 1 則；電梯少、人多要等：Trip.com 2 則、4travel 1 則",
       "verdict": "verified",
-      "notes": "兩點各自跨兩個平台、3 則以上。"
+      "notes": "第 11 輪：拿掉句首「不過」（前一條「房間寬敞」已刪，原 C140 移除）。建築有年代感 Trip.com 7 則、4travel 1 則；電梯少要等 Trip.com 2 則、4travel 1 則，兩點各自達門檻，強度沒變。"
     }
   ],
   "summary": {
-    "verified": 124,
+    "verified": 123,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

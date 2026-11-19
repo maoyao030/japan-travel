@@ -1,7 +1,7 @@
 # 驗收紀錄：asahikawa-stay（2026-11-18，舊住宿頁重跑一輪）
 
 - 文章：`content-production/asahikawa-stay/reader-preview.md`（旭川住宿推薦，住站前還是市中心？）
-- SHA-256（換行統一成 LF 後計算）：`f9bb1cdb0ebeda7117fd5f45c06c9411ae8dfc387255064d54ad1cd9a37f0f12`
+- SHA-256（換行統一成 LF 後計算）：`e8097d4e6c8e66a74bd160c638cf1a2634bbd07e97de9bd49dc46a2216711a1e`
 - 規則：`content-experiments/stay-rerun-2026-11-18/RUNBOOK.md`（Darren 2026-11-18：排定工作打開前，舊的住宿文章先重跑一輪）、寫作 Skill `references/stay-page.md`、`sentence-rhythm.md`、`stay-topic-page.md`「自動化」與「廢話要在流程裡擋掉」。舊版封包在 `pre-rerun-2026-11-18/`。
 - 底稿：2026-11-16 照新寫法改的主頁稿（作者 Sonnet 5.5、查核與編輯 Opus 5.5）。
 - 住客評論：事實查核者角色的子代理（Opus 5.5）2026-11-18 用瀏覽器重看（Trip.com、4travel、Google 地圖，沒登入）。
@@ -48,3 +48,4 @@
 - 上一版 SHA：`b2a7e02e13d6d2b75adc53c0c9d5f75742f7fd955a309118a274b103211869ae`。
 - 2026-11-19 補記：Darren 看了段落版後說「列點的清楚一點」，「住客怎麼說」改成一句一條的條列，句子沒改；查核者確認後更新雜湊（上一版 `d25e70d60fa732497e0961afc1ac9e05c5506ed8cb16a4903e573d7fe203a192`）。
 - 2026-11-19 補記：Darren 說「住客怎麼說」底下不用再寫「有人說」，條列改成直接講內容；查核者逐條確認強度沒有超過評論紀錄（少數的說法改寫成「少數覺得」「部分」「評價不少」）（上一版 `1aa90a8990392dfd220d114a10890d58ff7b98b01d4040a8ec7515118ea0d441`）。
+- 2026-11-19 補記：Darren 覺得重複上面介紹、只加「有好評」的條目沒有幫助，看過七段對照後同意照「留官網沒寫的事、最受好評的一項、評價兩極或缺點」篩選；查核者確認留下的句子意思與強度沒變（上一版 `f9bb1cdb0ebeda7117fd5f45c06c9411ae8dfc387255064d54ad1cd9a37f0f12`）。
