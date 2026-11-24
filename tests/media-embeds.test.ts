@@ -147,5 +147,7 @@ test('住宿專門頁的嵌入封包：可以超過兩個、可以用住客的 I
   const stay = {...plan, pageType: 'stay-topic', embeds: [ig('a1', '甲飯店早餐'), ig('b2', '乙飯店早餐'), ig('c3', '丙飯店早餐', {publishedAt: '2022-05', checks: {...base.checks, withinTwoYears: false}})]}
   assert.equal(validateEmbedPlan(stay).length, 3)
   assert.throws(() => validateEmbedPlan({...stay, pageType: undefined}), /最多 2 個/)
+  // 地點主頁（Darren 2026-11-24）：看點沒有合格實拍時改放 Instagram 貼文，同樣放寬。
+  assert.equal(validateEmbedPlan({...stay, pageType: 'place-entry'}).length, 3)
   assert.throws(() => validateEmbedPlan({...stay, embeds: [ig('a1', '甲飯店早餐'), ig('b2', '甲飯店早餐')]}), /同一節只能放一個/)
 })

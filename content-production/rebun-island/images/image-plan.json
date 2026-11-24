@@ -7,13 +7,12 @@
   "articleSourceCheckedAt": "2026-11-24",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "2026-11-24 新版主頁（標題全換）重新規劃文內照片：照地點主頁的寫法，「禮文島有什麼好玩、好吃的？」八個看點各一張，一頁 8 張。封面沒動。舊版三張禮文町素材：「利尻11」雲海（原本在「禮文島的霧與雲海」）考慮改掛桃岩展望台，但素材頁沒寫拍攝點，不能證明是桃岩展望台，桃岩展望台改用照片頁寫明地點的 Pixabay 2356581；「元地灯台1」野花（原本在「值得去嗎」）不是禮文敦盛草，新版沒有對應的看點；「利尻10」望利尻山（原本在「和利尻島怎麼一起排」）也不是看點。照利尻島主頁同日改版的做法（不是看點的舊照片從計畫移除）與一頁 6 到 8 張的上限，三張都從計畫移除。三張授權仍然合格，要放回時：雲海接「禮文島的霧與雲海」第 2 段後、野花接「北海道禮文島是什麼樣的地方？」第 1 段後、利尻山接「禮文島和利尻島怎麼一起排？」第 1 段後，原圖是禮文町素材 kanko_60、kanko_48、kanko_59，紀錄在 git 歷史的舊版封包。八張裡有三張和本站其他頁共用（久種湖2：健行頁；麗端小學岬分校：景點頁；花魚鏘鏘燒：美食頁等三頁的封面），因為沒有其他合格照片。料理照片：海膽丼是岩手縣久慈市拍的，圖說寫明不是禮文島；花魚鏘鏘燒是禮文島拍的，不指名店家。原圖下載到 .tmp/image-selection/rebun-island/inline/，不加入 Git。上傳前要再確認 reader-preview 已通過驗收、標題沒再改。",
+  "selectionScopeNote": "2026-11-24 新版主頁（標題全換）重新規劃文內照片：照地點主頁的寫法，「禮文島有什麼好玩、好吃的？」八個看點各一張，一頁 8 張。封面沒動。舊版三張禮文町素材：「利尻11」雲海（原本在「禮文島的霧與雲海」）考慮改掛桃岩展望台，但素材頁沒寫拍攝點，不能證明是桃岩展望台，桃岩展望台改用照片頁寫明地點的 Pixabay 2356581；「元地灯台1」野花（原本在「值得去嗎」）不是禮文敦盛草，新版沒有對應的看點；「利尻10」望利尻山（原本在「和利尻島怎麼一起排」）也不是看點。照利尻島主頁同日改版的做法（不是看點的舊照片從計畫移除）與一頁 6 到 8 張的上限，三張都從計畫移除。三張授權仍然合格，要放回時：雲海接「禮文島的霧與雲海」第 2 段後、野花接「北海道禮文島是什麼樣的地方？」第 1 段後、利尻山接「禮文島和利尻島怎麼一起排？」第 1 段後，原圖是禮文町素材 kanko_60、kanko_48、kanko_59，紀錄在 git 歷史的舊版封包。八張裡有三張和本站其他頁共用（久種湖2：健行頁；麗端小學岬分校：景點頁；花魚鏘鏘燒：美食頁等三頁的封面），因為沒有其他合格照片。料理照片：海膽丼是岩手縣久慈市拍的，圖說寫明不是禮文島；花魚鏘鏘燒是禮文島拍的，不指名店家。原圖下載到 .tmp/image-selection/rebun-island/inline/，不加入 Git。上傳前要再確認 reader-preview 已通過驗收、標題沒再改。 2026-11-24 再補：Darren 說「沒有圖片不是要你去找 IG 貼文嗎」，桃岩展望台那張照片拍的是霧不是雲海，從計畫移除，這一節改放 Instagram 貼文（從桃岩展望台看到的雲海與利尻山），見 embed-plan.json；同一個看點不同時放照片和貼文。海膽與久種湖兩節也找過貼文，沒有找到確定是禮文島海膽丼、看得到久種湖湖面的公開貼文，照片暫時保留。",
   "selectedCandidateIds": {
     "cover": "cover-01",
     "rebun-atsumori": "atsumori-01",
     "sukai-cape": "sukai-01",
     "sukoton-cape": "sukoton-01",
-    "momoiwa-observatory": "momoiwa-01",
     "kushu-lake": "kushu-01",
     "canary-park": "canary-01",
     "uni-don": "uni-01",
@@ -391,83 +390,6 @@
             "property": "右下角海邊小屋的屋頂，看不到招牌",
             "risk": "low",
             "notes": "放大原圖確認沒有招牌與可辨識的臉。"
-          },
-          "checks": {
-            "fullImageInspected": true,
-            "officialSourcePage": true,
-            "licenseVerified": true,
-            "notAiGenerated": true,
-            "noWatermark": true
-          }
-        }
-      ]
-    },
-    {
-      "slotId": "momoiwa-observatory",
-      "kind": "inline",
-      "need": "decide-visit",
-      "section": "桃岩展望台｜起霧的清晨，有機會看到腳下的雲海",
-      "purpose": "讓讀者看到桃岩展望台一帶往下看的景色，以及起霧時霧從山稜飄過的樣子。",
-      "mustShow": [
-        "桃岩展望台一帶看出去的山谷與海岸",
-        "霧"
-      ],
-      "mustNotShow": [
-        "利尻島或其他地點冒充",
-        "可辨識的人物臉部",
-        "本站其他頁已用的 Momoiwa (Peach Rock)、Rebun's Momoiwa 照片與禮文町素材「桃岩2」（健行頁已用）"
-      ],
-      "targetAspectRatio": "4:3",
-      "minimumWidth": 1200,
-      "placement": {
-        "heading": "桃岩展望台｜起霧的清晨，有機會看到腳下的雲海",
-        "afterBlocks": 1
-      },
-      "preparation": {
-        "sourceFile": "source.jpg",
-        "sourceDownloadUrl": "https://cdn.pixabay.com/photo/2017/05/30/10/55/it-2356581_1280.jpg",
-        "output": {
-          "maxWidth": 1600,
-          "format": "webp",
-          "quality": 82
-        }
-      },
-      "selectionNotes": "momoiwa-01 是 mac02quackey 同一批上傳的禮文島照片，照片頁說明寫「Misty coastal valley and cliffs near Momoiwa Observatory on Rebun Island」，標籤 Peach Rock Lookout、Peach Rock。畫面是陰天，霧從左邊的山稜飄過，綠色山谷一路往下延伸到海邊，海上有一根尖尖的岩柱，右邊是高聳的岩壁，是從桃岩展望台一帶往元地海岸看的角度。小段的賣點是雲海；這張是起霧，不是雲海，所以替代文字與圖說只寫霧。原本掛在「禮文島的霧與雲海」的禮文町「利尻11」雲海照片也考慮過改掛這裡（官方素材，來源順序較前），但素材頁沒寫拍攝點，不能證明是桃岩展望台，不用在這一節，見 selectionScopeNote。",
-      "sourcing": {
-        "policy": "real-photo-first-ai-if-none",
-        "photoSearchOutcome": "qualified-photo-found",
-        "photoSearchCheckedAt": "2026-11-24",
-        "photoSearchNotes": "先查官方素材：禮文島觀光協會網站（rebun-island.jp）2026-11-24 仍連不上，跳過；禮文町官網「礼文町の観光地の写真」（允許商用與加工、不用聯絡，2026-11-24 重開條款頁確認文字還在）62 張裡寬 1200 px 以上的只有 18 張，其餘 800 px，沒有禮文敦盛草、北方金絲雀公園、海膽、花魚的照片；環境省利尻禮文サロベツ國立公園頁的照片只有 890×500 左右（2026-10-29 已查）。接著查 Pixabay「rebun」「rebun island」（禮文島相關 9 張，逐張看過）、「sea urchin rice bowl」「atka mackerel」，最後查維基共享資源。 禮文町素材的「桃岩」只有 800 px；「桃岩2」已用在健行頁；「桃岩3」是傍晚逆光的剪影，主體看不清楚，不用。維基共享資源的桃岩照片（OKJaguar 2019、Raita Futo 2022）已被景點頁與住宿頁使用；Suicasmo 2014 三張與 Vickerman625 2009 拍的是桃岩本身，照來源順序先用 Pixabay。"
-      },
-      "candidates": [
-        {
-          "sourceType": "stock-photo",
-          "provider": "Pixabay",
-          "assetType": "photo",
-          "licenseName": "Pixabay Content License",
-          "licenseUrl": "https://pixabay.com/service/license-summary/",
-          "licenseCheckedAt": "2026-11-24",
-          "candidateId": "momoiwa-01",
-          "sourcePageUrl": "https://pixabay.com/photos/it-peach-rock-lookout-peach-rock-2356581/",
-          "creatorName": "mac02quackey",
-          "sourceTitle": "It Peach Rock Lookout",
-          "sourceDescription": "Misty coastal valley and cliffs near Momoiwa Observatory on Rebun Island, Japan.（照片頁說明；標籤 Peach Rock Lookout、Peach Rock；原圖 2048×1536）",
-          "takenAt": "2017-06",
-          "width": 1280,
-          "height": 960,
-          "matchType": "exact",
-          "matchLimits": "照片頁沒有拍攝日期，takenAt 是 Pixabay 上傳月份（2017 年 6 月 3 日）；畫面是起霧，不是雲海；寫的是「展望台附近」，不指名哪一個點。",
-          "whyItFits": "照片頁寫明是桃岩展望台附近；霧飄過山稜，對上小段說的強風跟濃霧並不少見。",
-          "altDraft": "陰天的霧從山稜飄過，綠色山谷一路往下延伸到海邊，海上立著一根尖尖的岩柱，右邊是高聳的岩壁",
-          "captionDraft": "起霧時從桃岩展望台一帶往海邊看。",
-          "creditDraft": "照片：mac02quackey／Pixabay",
-          "commercialReview": {
-            "people": "none",
-            "logos": "none",
-            "artwork": "none",
-            "property": "山谷裡有步道與小小的設施，看不出名稱",
-            "risk": "low",
-            "notes": "沒有人物或招牌。"
           },
           "checks": {
             "fullImageInspected": true,

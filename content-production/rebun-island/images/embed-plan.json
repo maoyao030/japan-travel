@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "articleId": "rebun-island",
   "targetUrl": "/places/rebun-island/",
+  "pageType": "place-entry",
   "checkedAt": "2026-11-24",
   "embeds": [
     {
@@ -40,6 +41,27 @@
       },
       "captionDraft": "宗谷綜合振興局介紹禮文島的高山植物，花期從6月上旬一路到8、9月上旬。",
       "evidence": "北海道宗谷總合振興局官方帳號 hokkaido_soya 2026-06-18 貼文；照片是禮文敦盛草，說明寫花期從6月上旬到8～9月上旬，和正文6月中旬到8月初花種最多一致。2026-11-24 重開嵌入頁（/embed/captioned/）回 200，頁面有貼文圖片、帳號 hokkaido_soya 與「花の浮島」說明，仍公開、可嵌入。新版仍有「禮文島幾月去最好？」這一節，位置不變，接在第一段之後、月份表之前；這一節沒有照片。",
+      "checks": {
+        "publicAndEmbeddable": true,
+        "withinTwoYears": true,
+        "contentVerified": true,
+        "notMisleadingAd": true
+      }
+    },
+    {
+      "embedId": "momoiwa-sea-of-clouds-instagram",
+      "platform": "instagram",
+      "url": "https://www.instagram.com/p/DUk2WXcE5x7/",
+      "title": "【Scene 6992】「雲海、山、月」",
+      "channelName": "s.yasu_photography",
+      "channelType": "individual",
+      "publishedAt": "2026-02",
+      "placement": {
+        "heading": "桃岩展望台｜起霧的清晨，有機會看到腳下的雲海",
+        "afterBlocks": 1
+      },
+      "captionDraft": "從桃岩展望台看出去的雲海，雲海另一頭是利尻山，攝影者2021年6月拍的。",
+      "evidence": "個人攝影帳號 s.yasu_photography（約 2K 粉絲）2026-02-10 貼文，說明寫這是約 5 年前從礼文島・桃岩展望台拍的景色，雲海的另一頭是利尻富士與一彎小月亮，拍攝日 2021/06/18，附相機與鏡頭，沒有 PR 或業配字樣。2026-11-24 用瀏覽器打開 /p/DUk2WXcE5x7/embed/captioned/ 回 200，畫面是藍天下整片白色雲海、雲海上露出積雪的利尻山，前景是綠色草坡。礼文島観光協会帳號 rebun_island_kanko 近一年的貼文沒有雲海照片，所以用遊客的公開貼文。原本這一節放的照片是霧不是雲海，已從 image-plan.json 移除。",
       "checks": {
         "publicAndEmbeddable": true,
         "withinTwoYears": true,

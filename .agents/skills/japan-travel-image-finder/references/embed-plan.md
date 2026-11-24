@@ -42,6 +42,7 @@
 - `checks` 四項都要是 `true`。
 - 每篇最多 2 個，一節最多 1 個。
 - 例外（Darren 2026-11-17）：住宿專門頁每間有細寫的飯店可以各放 1 則 Instagram 貼文，住客的公開貼文（`channelType: individual`）也可以用，不限兩年內。找法、條件與版面見寫作 Skill `references/stay-topic-page.md`「照片與嵌入」。封包最上層要寫 `"pageType": "stay-topic"`，檢查程式才會放行（最多 12 則、一節仍只能 1 則）。
+- 例外（Darren 2026-11-24：「沒有圖片不是要你去找 IG 貼文嗎」）：地點主頁的看點找不到合格的實拍（景點不是本尊、料理不是當地或那家店的）時，不放替代照片，改放一則 Instagram 貼文。先找官方帳號（店家、設施、觀光協會、自治體），沒有才用遊客的公開貼文（`channelType: individual`），不限兩年內；用 Google `site:instagram.com` 找，不登入，貼文內容要親自打開確認就是那個看點。封包最上層寫 `"pageType": "place-entry"`（最多 12 則、一節仍只能 1 則）。同一個看點不同時放照片和貼文。
 
 ## 上傳
 
