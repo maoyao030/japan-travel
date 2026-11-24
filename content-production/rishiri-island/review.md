@@ -1,46 +1,38 @@
-# 驗收紀錄：rishiri-island（2026-11-01，已上線文章重寫一輪）
+# 驗收紀錄：rishiri-island（2026-11-24，地點主頁改版）
 
-- 文章：`content-production/rishiri-island/reader-preview.md`
-- SHA-256（換行統一成 LF 後計算）：`3dc576e89af59aef495a7ef8f16a06851f66c19a5b72dd3d86dba3390cdb8dc1`
-- 規則：`content-automation/rewrite-live.md`（重查、讀競品後重寫、先刪再調、意義比對、完整驗收）；重寫前的版本在 `pre-rewrite/`
-- 研究者：研究子代理（Opus 5.5，重查 49 筆會變資料，0 筆更正，新增 F195（租車與租自行車只帶過）；讀競品 5 篇）
-- 作者：作者子代理（Opus 5.5，讀競品後重寫；連結句照寫作指南第10條改寫 8 句，見 `link-sentences.json`）；驗收後修改也由作者處理（`revisions-round1.md`）
-- 潤稿者：潤稿子代理（Opus 5.5，先刪再調，沒寫過這篇）；意義比對 1 個子代理
-- 標題檢查：標題、SEO Title 沿用網站版本，沒改，沿用 `heading-review.json`
-- 事實查核：1 個子代理（Opus 5.5，沒參與寫作、潤稿與修改），共 2 輪
-- 讀者驗收：1 個子代理（沒寫過、潤過或查核過），第一階段只看大綱、文章與規則，第二階段才看研究記錄與事實查核
-- 協調：人工 session（Claude Code，Darren 2026-11-01 要求把剩下的文章全部重寫一輪）
+- 文章：`content-production/rishiri-island/reader-preview.md`（利尻島旅遊，值得去嗎、住幾晚、幾月去）
+- SHA-256（換行統一成 LF 後計算）：`a2487b2f3e119f26d67418f90ed9f228d521cc3ccd791b8b05694728b218ec7d`
+- 規則：寫作 Skill `references/place-entry-page.md`（Darren 2026-11-21 同意）、`sentence-rhythm.md`、`heading-style.md`。研究與樣本在 `content-experiments/place-entry-study-2026-11-19/`。舊版封包在 `pre-place-entry/`。
+- 寫作：一位作者（Sonnet 5.5），事實只用本地點主頁與七個子頁、禮文島與稚內主頁已查證的事實表；Darren 看過樣本四輪（第一節寫畫面、小標題「名字｜賣點」、專有名詞用台灣多數叫法）。
+- 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作），樣本階段 3 輪、正式稿 3 輪：正式稿第 1 輪 69 筆裡 2 筆 unsupported，第 2 輪 1 筆，第 3 輪全部 verified。查核對的是事實表的原文摘錄與已上線子頁，沒有重新開官方網址；F220（姬沼倒影）是協調者 2026-11-20 用瀏覽器開北海道官方觀光網站讀到的。
+- 讀者驗收：讀者驗收子代理（Opus 5.5，沒寫過、沒查核過），八題驗收 2 次（`acceptance-place-entry.md`）：第 1 次 6 項要改；第 2 次只剩 1 句重複，改完由查核者確認，驗收者表示不用再驗。
+- 協調：人工 session（Claude Code）。Darren 2026-11-21 說「要，換上線」。
 
 ## 結果
 
 | 項目 | 結果 |
 |---|---|
-| 格式 | `mechanical_clear`（`audit_answer_first.py --article-type place-entry`） |
-| 標題 | `acceptable`（標題沒改；讀者最終判定可接受） |
-| 讀者價值 | `acceptable`（讀者最終判定，第二階段必修 6 條都已解決） |
-| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，90 項 claim 全部 verified） |
-| 口吻與標點 | `check-voice.mjs --final` 通過（正文 3,697 字） |
-| 事實編號 | `tags_clear`（研究記錄 78 筆，正文用到 72 筆） |
-| 圖片 | 沿用線上的文內照片與嵌入 4 個（位置由換正文工具搬過去），沒有 AI 圖或自製示意圖 |
+| 格式 | `mechanical_clear`（`audit_answer_first.py`） |
+| 標題 | `acceptable`（八題第 6 題過；`heading_review.py` 改動 0 個；`planning:check` 通過） |
+| 讀者價值 | `acceptable`（第 2 次驗收只剩 1 句重複，已改） |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，69 項 claim 全部 verified） |
+| 口吻與標點 | `check-voice.mjs` 通過（正文約 2,580 字） |
+| 名字與表格連結 | `check-benchmark.mjs` 沒有錯誤 |
+| 圖片 | 封面沿用；文內照片與嵌入因標題全換，重新規劃後上傳 |
 
-**最終結果：`ready_for_user_preview`。** Darren 2026-11-01 要求重寫後換上網站。
+**最終結果：`ready_for_user_preview`。** 換掉線上的舊版。
 
-## 經過
+## 協調者的決定
 
-| 輪 | 做了什麼 | 結果 |
-|---|---|---|
-| 研究 | 重查 49 筆、讀競品 5 篇 | 0 筆更正；一日遊的船班時刻表排法是本站獨有，放前面 |
-| 寫作 | 讀競品後重排（一日遊先答可不可以，再放船班與觀光巴士）、改寫 8 句連結句；先刪再調潤稿（刪 F101、F191、F72 與 F29 的一部分）；意義比對 | 四項檢查通過；0 不可接受、0 遺失 |
-| 1 | 事實查核第 1 輪（83 項） | 2 incorrect（C7「整座島」都在國立公園內、C75 全年營業是 14 家不是 13 家） |
-| 2 | 讀者驗收第一、二階段 | 必修 6 條：C7、C75、16:40 是最後一班船、B 路線停靠點、一日券在哪買、飛機回程兩種排法 |
-| 3 | 作者照必修修改，新增 F196，F2、F82 更正 | 三項檢查通過 |
-| 4 | 事實查核第 2 輪（90 項）；讀者最終判定 | 全部 verified；讀者價值與標題可接受、無剩餘必修 |
+- 四個次要查詢（利尻島旅遊、北海道利尻島、利尻島自由行、利尻島一日遊）用標題帶回來：三個 H2 加上「北海道」「旅遊」「自由行」，三種排法改成 H3，第一個是「利尻島一日遊怎麼排？」。
+- 姬沼倒影：不改 Darren 認可的標題，改成補依據（F220）。
+- ペシ岬寫佩西岬（北海道官方繁中頁），譯名表已改；Otatomari沼維持（官方繁中頁與多數台灣文章都這樣寫）。
+- 「全年營業 13 家」不搬到子頁：查核時發現和住宿頁的說法對不上。
+- 主頁移走、子頁原本沒有的兩段排法（5 月的一日遊接法、從禮文島當天趕利尻機場）補進〈利尻島交通〉。
+- 協調者只做過一處文字改動：刪掉最後一節一個重複的「所以」；其餘都退回作者。
 
-## 查不到所以正文沒寫的
+## 待辦
 
-- 2027 年度渡輪時刻與觀光巴士日期（還沒公布）
-
-## 留給之後的事
-
-- F2、F82 更正與新增 F195、F196 要同步回地點事實表與 D1。
-- 讀者最終判定加分 2 條：B 路線只開 6/1～9/30、一日遊那段補 B 路線票價。
+- 線上利尻島各頁有 4 處彼此對不上（祭典密集期、鬼脇煙火、冬天能住的旅館數、北麓野營場日期），列在 `content-experiments/place-entry-study-2026-11-19/sample-rishiri-island/compare.md`，這次沒有動。
+- 〈利尻島景點〉〈利尻島住宿〉線上還寫 Peshi岬。
+- 〈利尻島交通〉的 `draft-tagged.md` 和線上版不一致（先前優化只改了 `reader-preview.md`），這次只在 `reader-preview.md` 與線上補兩段。
