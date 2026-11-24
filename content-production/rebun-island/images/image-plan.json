@@ -1,20 +1,25 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island",
-  "articleTitle": "禮文島旅遊，值得去嗎、住幾晚與一日來回",
+  "articleTitle": "禮文島旅遊攻略，敦盛草、澄海岬、海膽與一日來回排法",
   "targetUrl": "/places/rebun-island/",
   "articleSource": "approved-reader-preview",
-  "articleSourceCheckedAt": "2026-10-26",
+  "articleSourceCheckedAt": "2026-11-24",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island/，不加入 Git、不上傳。archive-2026-10-16-manual/ 是舊的人工版，不在這次範圍。 2026-10-29 文內圖：從禮文町官網照片素材（允許商用、加工，不用聯絡）選三張，接在「值得去嗎」「霧與雲海」「和利尻島怎麼一起排」三節；照片都是 2006 年拍的自然景觀。",
+  "selectionScopeNote": "2026-11-24 新版主頁（標題全換）重新規劃文內照片：照地點主頁的寫法，「禮文島有什麼好玩、好吃的？」八個看點各一張，一頁 8 張。封面沒動。舊版三張禮文町素材：「利尻11」雲海（原本在「禮文島的霧與雲海」）考慮改掛桃岩展望台，但素材頁沒寫拍攝點，不能證明是桃岩展望台，桃岩展望台改用照片頁寫明地點的 Pixabay 2356581；「元地灯台1」野花（原本在「值得去嗎」）不是禮文敦盛草，新版沒有對應的看點；「利尻10」望利尻山（原本在「和利尻島怎麼一起排」）也不是看點。照利尻島主頁同日改版的做法（不是看點的舊照片從計畫移除）與一頁 6 到 8 張的上限，三張都從計畫移除。三張授權仍然合格，要放回時：雲海接「禮文島的霧與雲海」第 2 段後、野花接「北海道禮文島是什麼樣的地方？」第 1 段後、利尻山接「禮文島和利尻島怎麼一起排？」第 1 段後，原圖是禮文町素材 kanko_60、kanko_48、kanko_59，紀錄在 git 歷史的舊版封包。八張裡有三張和本站其他頁共用（久種湖2：健行頁；麗端小學岬分校：景點頁；花魚鏘鏘燒：美食頁等三頁的封面），因為沒有其他合格照片。料理照片：海膽丼是岩手縣久慈市拍的，圖說寫明不是禮文島；花魚鏘鏘燒是禮文島拍的，不指名店家。原圖下載到 .tmp/image-selection/rebun-island/inline/，不加入 Git。上傳前要再確認 reader-preview 已通過驗收、標題沒再改。",
   "selectedCandidateIds": {
     "cover": "cover-01",
-    "flowers-west-coast": "flowers-01",
-    "sea-of-clouds": "clouds-01",
-    "rishiri-view": "rishiri-01"
+    "rebun-atsumori": "atsumori-01",
+    "sukai-cape": "sukai-01",
+    "sukoton-cape": "sukoton-01",
+    "momoiwa-observatory": "momoiwa-01",
+    "kushu-lake": "kushu-01",
+    "canary-park": "canary-01",
+    "uni-don": "uni-01",
+    "hokke-chanchan": "hokke-01"
   },
-  "selectedAt": "2026-10-26",
+  "selectedAt": "2026-11-24",
   "slots": [
     {
       "slotId": "cover",
@@ -131,72 +136,107 @@
       ]
     },
     {
-      "slotId": "flowers-west-coast",
+      "slotId": "rebun-atsumori",
       "kind": "inline",
       "need": "decide-visit",
-      "section": "北海道禮文島旅遊值得去嗎？",
-      "purpose": "讓還在考慮的讀者看到「花之浮島」夏天的樣子：野花開在面海的山坡上。",
+      "section": "禮文敦盛草｜只長在這座島上的花",
+      "purpose": "讓讀者看到禮文敦盛草本身：奶油色、袋狀的花，就是要為它在5、6月上島的那種花。",
       "mustShow": [
-        "禮文島山坡上的野花",
-        "海與島上的山稜"
+        "禮文敦盛草（奶油色的變種）的花"
       ],
       "mustNotShow": [
-        "其他地方的花田冒充禮文島",
+        "紅紫色的一般敦盛草或其他敦盛草冒充",
         "可辨識的人物臉部",
-        "店家或旅館招牌"
+        "品種名不明的栽培個體（例如「1904 Rebun」這類名稱）"
       ],
       "targetAspectRatio": "3:2",
       "minimumWidth": 1200,
       "placement": {
-        "heading": "北海道禮文島旅遊值得去嗎？",
+        "heading": "禮文敦盛草｜只長在這座島上的花",
         "afterBlocks": 1
       },
       "preparation": {
         "sourceFile": "source.jpg",
-        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_48_l.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Cypripedium_macranthum_var._rebunense_%287763469244%29.jpg",
         "output": {
           "maxWidth": 1600,
           "format": "webp",
           "quality": 82
         }
       },
-      "selectionNotes": "flowers-01 是禮文町素材「元地灯台1」，2006 年 7 月 1 日拍：前景是紫色的鳶尾與黃色的金鳳花，背後是綠色山稜、岩壁與海灣，右下看得到海邊的聚落。原圖 1280×851，橫式清楚。正文這一節講夏天約 300 種高山植物與西海岸的斷崖，這張同時有花和海岸山稜。圖說不寫花的確切種名，只寫顏色。",
+      "selectionNotes": "atsumori-01 是 hoge asdf 在 Flickr 發表、FlickreviewR 審核過的照片，說明寫「Cypripedium macranthum var. rebunense in Rebun Island, Japan」，分類 Cypripedium macranthos、Rebun Island。畫面是石頭之間長出的三朵奶油色花，前面一朵正面可以看到圓鼓鼓的袋狀唇瓣，顏色是禮文敦盛草特有的淡黃白色，不是一般敦盛草的紅紫色。拍攝日期 2012-08-07，石頭圍起來的植栽看起來像植物園，不確定是保護區還是高山植物園，所以圖說不寫在哪裡拍，只寫禮文島。另外看過：ほくなん 2007-06-17「Cypripedium marcanthum var. rebunense.jpg」（PD-self，作者自己放棄權利，單朵花旁邊有紫色的花，可用，列為備選）；同一作者 7763467944（室內暗背景的單朵特寫，看不出現場，不選）；sunoochi 的「1904 Rebun」系列是栽培個體名稱，不能確定就是禮文島的野生變種，不用。",
       "sourcing": {
         "policy": "real-photo-first-ai-if-none",
         "photoSearchOutcome": "qualified-photo-found",
-        "photoSearchCheckedAt": "2026-10-29",
-        "photoSearchNotes": "這次先查官方素材：環境省利尻禮文サロベツ國立公園（env.go.jp）的景點照片只有 890×500、首頁圖庫 405×270，主視覺 2732×920 是利尻山與佐呂別，都不合格；禮文島觀光協會網站連線被拒，讀不到條款，不用。禮文町官網「礼文町の観光地の写真」允許商用與加工、不用聯絡，62 張裡寬 1200 px 以上的只有 18 張（其餘 800 px），從中挑出。 這一節用「元地灯台1」。"
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "先查官方素材：禮文島觀光協會網站（rebun-island.jp）2026-11-24 仍連不上，跳過；禮文町官網「礼文町の観光地の写真」（允許商用與加工、不用聯絡，2026-11-24 重開條款頁確認文字還在）62 張裡寬 1200 px 以上的只有 18 張，其餘 800 px，沒有禮文敦盛草、北方金絲雀公園、海膽、花魚的照片；環境省利尻禮文サロベツ國立公園頁的照片只有 890×500 左右（2026-10-29 已查）。接著查 Pixabay「rebun」「rebun island」（禮文島相關 9 張，逐張看過）、「sea urchin rice bowl」「atka mackerel」，最後查維基共享資源。 Pixabay 沒有禮文敦盛草（只有禮文馬先蒿 7327635）。維基共享資源搜尋「Cypripedium rebunense」，找到三張寫明 var. rebunense 的照片。"
       },
       "candidates": [
         {
-          "candidateId": "flowers-01",
-          "sourceType": "official-material",
-          "provider": "礼文町（礼文町の観光地の写真）",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
           "assetType": "photo",
-          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_48_l.jpg",
-          "sourceTitle": "礼文町の観光地の写真「元地灯台1」",
-          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「元地灯台1」（kanko_48）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-07-01。",
-          "takenAt": "2006-07",
-          "width": 1280,
-          "height": 851,
-          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
-          "termsCheckedAt": "2026-10-29",
-          "commercialUseAllowed": true,
-          "modificationAllowed": true,
-          "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
-          "applicationRequired": false,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-11-24",
+          "candidateId": "atsumori-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cypripedium_macranthum_var._rebunense_(7763469244).jpg",
+          "creatorName": "hoge asdf",
+          "sourceTitle": "File:Cypripedium macranthum var. rebunense (7763469244).jpg",
+          "sourceDescription": "Cypripedium macranthum var. rebunense in Rebun Island, Japan.（Flickr 轉載，FlickreviewR 已審核；分類 Cypripedium macranthos、Rebun Island）",
+          "takenAt": "2012-08",
+          "width": 3008,
+          "height": 2000,
           "matchType": "exact",
-          "whyItFits": "禮文町官方素材，標題是元地燈塔一帶；畫面是夏天山坡上的野花與後方的海岸山稜，對應正文「花之浮島」與西海岸斷崖。",
-          "altDraft": "禮文島元地燈塔一帶的山坡，前景開著紫色鳶尾與黃色小花，後方是綠色山稜與海灣",
-          "captionDraft": "元地燈塔一帶山坡上的夏季野花（2006 年 7 月）。",
-          "creditDraft": "照片：禮文町",
+          "matchLimits": "拍攝點沒寫明，看起來是植栽區或植物園，不代表保護區的樣子；8 月拍的，不代表一般花期。",
+          "whyItFits": "檔案頁寫明是禮文島的 var. rebunense；奶油色的袋狀花一眼看得出就是禮文敦盛草。",
+          "altDraft": "石頭之間開著三朵奶油色的禮文敦盛草，前面一朵的花瓣下方是圓鼓鼓的袋狀唇瓣",
+          "captionDraft": "禮文島的禮文敦盛草，花是奶油色的。",
+          "creditDraft": "照片：hoge asdf／Wikimedia Commons／CC BY 2.0",
           "commercialReview": {
             "people": "none",
             "logos": "none",
             "artwork": "none",
-            "property": "自然景觀；遠處有小聚落，看不出招牌",
+            "property": "none",
             "risk": "low",
-            "notes": "沒有人物、車輛或店家招牌。"
+            "notes": "只有花、葉子與石頭。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseName": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "licenseCheckedAt": "2026-11-24",
+          "candidateId": "atsumori-02",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cypripedium_marcanthum_var._rebunense.jpg",
+          "creatorName": "ほくなん",
+          "sourceTitle": "File:Cypripedium marcanthum var. rebunense.jpg",
+          "sourceDescription": "Cypripedium macranthos var. rebunense (レブンアツモリソウ), Rebun, Hokkaido, Japan.（作者自己上傳，PD-self：作者放棄權利）",
+          "takenAt": "2007-06-17",
+          "width": 3008,
+          "height": 2000,
+          "matchType": "exact",
+          "matchLimits": "單朵花，背景有紫色的花；拍攝點沒寫明。",
+          "whyItFits": "檔案頁寫明是禮文島的レブンアツモリソウ，6 月中旬拍，正是花期。",
+          "altDraft": "一朵奶油色的禮文敦盛草立在綠葉上，後方有紫色的小花",
+          "captionDraft": "禮文島的禮文敦盛草（2007 年 6 月）。",
+          "creditDraft": "照片：ほくなん／Wikimedia Commons／Public domain",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "none",
+            "risk": "low",
+            "notes": "只有花草與石頭。"
           },
           "checks": {
             "fullImageInspected": true,
@@ -209,70 +249,71 @@
       ]
     },
     {
-      "slotId": "sea-of-clouds",
+      "slotId": "sukai-cape",
       "kind": "inline",
       "need": "decide-visit",
-      "section": "禮文島的霧與雲海",
-      "purpose": "讓讀者看到從禮文島高處看雲海的樣子，判斷要不要為了雲海在島上住一晚。",
+      "section": "澄海岬｜夏天海水變成藍綠與翡翠色的禮文藍",
+      "purpose": "讓讀者看到澄海岬的海灣：斷崖圍著的海灣，海水是藍綠色。",
       "mustShow": [
-        "從禮文島高處看到的雲海"
+        "澄海岬的海灣與斷崖",
+        "藍綠色的海水"
       ],
       "mustNotShow": [
-        "利尻島上拍的雲海冒充禮文島",
-        "可辨識的人物臉部"
+        "其他岬角冒充澄海岬",
+        "可辨識的人物臉部",
+        "本站景點頁封面已用的 Rebun_20140725_110632.jpg"
       ],
-      "targetAspectRatio": "3:2",
+      "targetAspectRatio": "4:3",
       "minimumWidth": 1200,
       "placement": {
-        "heading": "禮文島的霧與雲海",
-        "afterBlocks": 2
+        "heading": "澄海岬｜夏天海水變成藍綠與翡翠色的禮文藍",
+        "afterBlocks": 1
       },
       "preparation": {
         "sourceFile": "source.jpg",
-        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_60_l.jpg",
+        "sourceDownloadUrl": "https://cdn.pixabay.com/photo/2017/05/30/10/55/it-2356578_1280.jpg",
         "output": {
           "maxWidth": 1600,
           "format": "webp",
           "quality": 82
         }
       },
-      "selectionNotes": "clouds-01 是禮文町素材「利尻11」，2006 年 6 月 24 日拍：前景是禮文島長滿樹林的山坡，中間一整片雲海蓋住海峽，對面是露出雲海的利尻山。素材頁全是禮文町的觀光地，拍攝位置在禮文島；正文第二段講冷霧在 200 公尺以下時從高處看得到雲海，所以放在第二段之後。原圖 1280×851。",
+      "selectionNotes": "sukai-01 是 mac02quackey 2017 年 6 月上傳的禮文島、利尻島系列（同系列的利尻島照片已用在利尻島主頁），照片頁說明寫「Coastal cove with blue water and rugged cliffs at Sumi Misaki, Rebun Island」，標籤 Chenghai Cape（澄海岬的中文直譯）。畫面是從高台往下看的海灣：右邊是長草的褐色斷崖，對面是鋸齒狀的岩稜，灣內近岸的海水是透明的藍綠色、遠一點是深藍色，前景是被風吹斜的草，和澄海岬常見的角度一致。同系列 2356571 是直式，不用。維基共享資源另有 100yen 2007（Cape Sukai.JPG）、間瀬晴之 2010 兩張寬幅全景、Snap55 2004（1200×900），照來源順序先用 Pixabay。",
       "sourcing": {
         "policy": "real-photo-first-ai-if-none",
         "photoSearchOutcome": "qualified-photo-found",
-        "photoSearchCheckedAt": "2026-10-29",
-        "photoSearchNotes": "這次先查官方素材：環境省利尻禮文サロベツ國立公園（env.go.jp）的景點照片只有 890×500、首頁圖庫 405×270，主視覺 2732×920 是利尻山與佐呂別，都不合格；禮文島觀光協會網站連線被拒，讀不到條款，不用。禮文町官網「礼文町の観光地の写真」允許商用與加工、不用聯絡，62 張裡寬 1200 px 以上的只有 18 張（其餘 800 px），從中挑出。 這一節用「利尻11」。"
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "先查官方素材：禮文島觀光協會網站（rebun-island.jp）2026-11-24 仍連不上，跳過；禮文町官網「礼文町の観光地の写真」（允許商用與加工、不用聯絡，2026-11-24 重開條款頁確認文字還在）62 張裡寬 1200 px 以上的只有 18 張，其餘 800 px，沒有禮文敦盛草、北方金絲雀公園、海膽、花魚的照片；環境省利尻禮文サロベツ國立公園頁的照片只有 890×500 左右（2026-10-29 已查）。接著查 Pixabay「rebun」「rebun island」（禮文島相關 9 張，逐張看過）、「sea urchin rice bowl」「atka mackerel」，最後查維基共享資源。 禮文町素材的「澄海岬1」「澄海岬2」只有 800 px，不合最低寬度。"
       },
       "candidates": [
         {
-          "candidateId": "clouds-01",
-          "sourceType": "official-material",
-          "provider": "礼文町（礼文町の観光地の写真）",
+          "sourceType": "stock-photo",
+          "provider": "Pixabay",
           "assetType": "photo",
-          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_60_l.jpg",
-          "sourceTitle": "礼文町の観光地の写真「利尻11」",
-          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「利尻11」（kanko_60）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-06-24。",
-          "takenAt": "2006-06",
+          "licenseName": "Pixabay Content License",
+          "licenseUrl": "https://pixabay.com/service/license-summary/",
+          "licenseCheckedAt": "2026-11-24",
+          "candidateId": "sukai-01",
+          "sourcePageUrl": "https://pixabay.com/photos/it-chenghai-cape-natural-sea-2356578/",
+          "creatorName": "mac02quackey",
+          "sourceTitle": "It Chenghai Cape",
+          "sourceDescription": "Coastal cove with blue water and rugged cliffs at Sumi Misaki, Rebun Island.（照片頁說明；標籤 Chenghai Cape；原圖 2048×1536）",
+          "takenAt": "2017-06",
           "width": 1280,
-          "height": 851,
-          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
-          "termsCheckedAt": "2026-10-29",
-          "commercialUseAllowed": true,
-          "modificationAllowed": true,
-          "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
-          "applicationRequired": false,
+          "height": 960,
           "matchType": "exact",
-          "whyItFits": "禮文町官方素材；畫面是從禮文島山上看出去的雲海，對面的利尻山露出雲層，正好對應正文說的雲海。",
-          "altDraft": "從禮文島的樹林山坡望出去，海面被一片雲海蓋住，對岸的利尻山露出在雲上",
-          "captionDraft": "從禮文島看出去的雲海與對岸的利尻山（2006 年 6 月）。",
-          "creditDraft": "照片：禮文町",
+          "matchLimits": "照片頁沒有拍攝日期，takenAt 是 Pixabay 上傳月份（2017 年 6 月 3 日）；某一天的海色，不代表每天都是這個顏色。",
+          "whyItFits": "照片頁寫明是禮文島的澄海岬；斷崖圍著的海灣與藍綠色海水，正是小段說的禮文藍。",
+          "altDraft": "從高台往下看澄海岬的海灣，四周是長著草的斷崖與鋸齒狀岩稜，近岸的海水是透明的藍綠色",
+          "captionDraft": "澄海岬的海灣，近岸的海水是藍綠色。",
+          "creditDraft": "照片：mac02quackey／Pixabay",
           "commercialReview": {
             "people": "none",
             "logos": "none",
             "artwork": "none",
-            "property": "自然景觀",
+            "property": "natural landscape",
             "risk": "low",
-            "notes": "沒有人物、車輛或店家招牌。"
+            "notes": "沒有人物、招牌或建物。"
           },
           "checks": {
             "fullImageInspected": true,
@@ -285,70 +326,490 @@
       ]
     },
     {
-      "slotId": "rishiri-view",
+      "slotId": "sukoton-cape",
       "kind": "inline",
       "need": "decide-visit",
-      "section": "禮文島和利尻島怎麼一起排？",
-      "purpose": "讓讀者看到兩座島隔著海峽相望的距離感，理解兩島可以一起排。",
+      "section": "須古頓岬｜禮文島的最北端，晴天望得到庫頁島",
+      "purpose": "讓讀者看到須古頓岬的岬端與正前方的海馬島。",
       "mustShow": [
-        "從禮文島隔海看到的利尻山"
+        "須古頓岬的岬端",
+        "海上的海馬島"
       ],
       "mustNotShow": [
-        "利尻島上拍的照片",
-        "可辨識的人物臉部"
+        "民宿或店家招牌",
+        "可辨識的人物臉部",
+        "本站景點頁已用的 Sukoton.JPG 與 Sukoton-misaki Promontory 照片"
       ],
       "targetAspectRatio": "3:2",
       "minimumWidth": 1200,
       "placement": {
-        "heading": "禮文島和利尻島怎麼一起排？",
+        "heading": "須古頓岬｜禮文島的最北端，晴天望得到庫頁島",
         "afterBlocks": 1
       },
       "preparation": {
         "sourceFile": "source.jpg",
-        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_59_l.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Cape_Sukoton.JPG",
         "output": {
           "maxWidth": 1600,
           "format": "webp",
           "quality": 82
         }
       },
-      "selectionNotes": "rishiri-01 是禮文町素材「利尻10」，2006 年 7 月 1 日晴天拍：前景是禮文島的草坡，隔著藍色海峽是完整的利尻山。原圖 1280×851。和雲海那張同樣看得到利尻山，但這張是晴天、海面清楚，表現的是兩島的距離，放在講兩島怎麼排的這一節。",
+      "selectionNotes": "sukoton-01 是 100yen 2007 年 6 月 23 日拍、自己上傳的「Cape Sukoton, Rebun island hokkaido.」（分類 Cape Sukoton）。晴天，從上方的草坡往下看，圍著木柵欄的岬端展望處伸向海面，正前方的海上是平平的海馬島，島上看得到白色燈塔，右邊遠方有一道低低的雲。岬端上有兩個很小的人影，放大原圖看是背影、看不出是誰；右下角是海邊兩間小屋的屋頂，放大看沒有招牌。原圖 1536×1024。另外看過：間瀬晴之 2010 SukotonCape.jpg（陰天，右下角有「民宿 スコトン岬」招牌，不用）；ブルーノ・プラス 2019 Cape Sukoton 2019.jpg（有民宿招牌，2026-10-26 封面選圖時已排除）；Ka23 13 2014 兩張是 8192×1856 的超寬全景，不用。",
       "sourcing": {
         "policy": "real-photo-first-ai-if-none",
         "photoSearchOutcome": "qualified-photo-found",
-        "photoSearchCheckedAt": "2026-10-29",
-        "photoSearchNotes": "這次先查官方素材：環境省利尻禮文サロベツ國立公園（env.go.jp）的景點照片只有 890×500、首頁圖庫 405×270，主視覺 2732×920 是利尻山與佐呂別，都不合格；禮文島觀光協會網站連線被拒，讀不到條款，不用。禮文町官網「礼文町の観光地の写真」允許商用與加工、不用聯絡，62 張裡寬 1200 px 以上的只有 18 張（其餘 800 px），從中挑出。 這一節用「利尻10」；同系列的「利尻9」逆光、「利尻12」山頂被雲遮住，不選。"
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "先查官方素材：禮文島觀光協會網站（rebun-island.jp）2026-11-24 仍連不上，跳過；禮文町官網「礼文町の観光地の写真」（允許商用與加工、不用聯絡，2026-11-24 重開條款頁確認文字還在）62 張裡寬 1200 px 以上的只有 18 張，其餘 800 px，沒有禮文敦盛草、北方金絲雀公園、海膽、花魚的照片；環境省利尻禮文サロベツ國立公園頁的照片只有 890×500 左右（2026-10-29 已查）。接著查 Pixabay「rebun」「rebun island」（禮文島相關 9 張，逐張看過）、「sea urchin rice bowl」「atka mackerel」，最後查維基共享資源。 禮文町素材的「スコトン岬1、2」「トド島1～4」只有 800 px。Pixabay 沒有須古頓岬。"
       },
       "candidates": [
         {
-          "candidateId": "rishiri-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-11-24",
+          "candidateId": "sukoton-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cape_Sukoton.JPG",
+          "creatorName": "100yen",
+          "sourceTitle": "File:Cape Sukoton.JPG",
+          "sourceDescription": "Cape Sukoton, Rebun island hokkaido.（作者自己上傳；授權 GFDL 與 CC BY-SA 3.0/2.5/2.0/1.0，選用 CC BY-SA 3.0）",
+          "takenAt": "2007-06-23",
+          "width": 1536,
+          "height": 1024,
+          "matchType": "exact",
+          "matchLimits": "2007 年拍的，柵欄與小屋的樣子可能已經不同；庫頁島不在畫面裡。",
+          "whyItFits": "檔案頁寫明是須古頓岬；岬端展望處與正前方的海馬島、燈塔都在畫面裡。",
+          "altDraft": "晴天從草坡往下看須古頓岬，圍著木柵欄的岬端伸向深藍色的海，正前方的海上是平平的海馬島，島上有白色燈塔",
+          "captionDraft": "須古頓岬的岬端，正前方是海馬島（2007 年 6 月）。",
+          "creditDraft": "照片：100yen／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "岬端兩個很小的背影，看不出是誰",
+            "logos": "none",
+            "artwork": "none",
+            "property": "右下角海邊小屋的屋頂，看不到招牌",
+            "risk": "low",
+            "notes": "放大原圖確認沒有招牌與可辨識的臉。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "momoiwa-observatory",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "桃岩展望台｜起霧的清晨，有機會看到腳下的雲海",
+      "purpose": "讓讀者看到桃岩展望台一帶往下看的景色，以及起霧時霧從山稜飄過的樣子。",
+      "mustShow": [
+        "桃岩展望台一帶看出去的山谷與海岸",
+        "霧"
+      ],
+      "mustNotShow": [
+        "利尻島或其他地點冒充",
+        "可辨識的人物臉部",
+        "本站其他頁已用的 Momoiwa (Peach Rock)、Rebun's Momoiwa 照片與禮文町素材「桃岩2」（健行頁已用）"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "桃岩展望台｜起霧的清晨，有機會看到腳下的雲海",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://cdn.pixabay.com/photo/2017/05/30/10/55/it-2356581_1280.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "momoiwa-01 是 mac02quackey 同一批上傳的禮文島照片，照片頁說明寫「Misty coastal valley and cliffs near Momoiwa Observatory on Rebun Island」，標籤 Peach Rock Lookout、Peach Rock。畫面是陰天，霧從左邊的山稜飄過，綠色山谷一路往下延伸到海邊，海上有一根尖尖的岩柱，右邊是高聳的岩壁，是從桃岩展望台一帶往元地海岸看的角度。小段的賣點是雲海；這張是起霧，不是雲海，所以替代文字與圖說只寫霧。原本掛在「禮文島的霧與雲海」的禮文町「利尻11」雲海照片也考慮過改掛這裡（官方素材，來源順序較前），但素材頁沒寫拍攝點，不能證明是桃岩展望台，不用在這一節，見 selectionScopeNote。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "先查官方素材：禮文島觀光協會網站（rebun-island.jp）2026-11-24 仍連不上，跳過；禮文町官網「礼文町の観光地の写真」（允許商用與加工、不用聯絡，2026-11-24 重開條款頁確認文字還在）62 張裡寬 1200 px 以上的只有 18 張，其餘 800 px，沒有禮文敦盛草、北方金絲雀公園、海膽、花魚的照片；環境省利尻禮文サロベツ國立公園頁的照片只有 890×500 左右（2026-10-29 已查）。接著查 Pixabay「rebun」「rebun island」（禮文島相關 9 張，逐張看過）、「sea urchin rice bowl」「atka mackerel」，最後查維基共享資源。 禮文町素材的「桃岩」只有 800 px；「桃岩2」已用在健行頁；「桃岩3」是傍晚逆光的剪影，主體看不清楚，不用。維基共享資源的桃岩照片（OKJaguar 2019、Raita Futo 2022）已被景點頁與住宿頁使用；Suicasmo 2014 三張與 Vickerman625 2009 拍的是桃岩本身，照來源順序先用 Pixabay。"
+      },
+      "candidates": [
+        {
+          "sourceType": "stock-photo",
+          "provider": "Pixabay",
+          "assetType": "photo",
+          "licenseName": "Pixabay Content License",
+          "licenseUrl": "https://pixabay.com/service/license-summary/",
+          "licenseCheckedAt": "2026-11-24",
+          "candidateId": "momoiwa-01",
+          "sourcePageUrl": "https://pixabay.com/photos/it-peach-rock-lookout-peach-rock-2356581/",
+          "creatorName": "mac02quackey",
+          "sourceTitle": "It Peach Rock Lookout",
+          "sourceDescription": "Misty coastal valley and cliffs near Momoiwa Observatory on Rebun Island, Japan.（照片頁說明；標籤 Peach Rock Lookout、Peach Rock；原圖 2048×1536）",
+          "takenAt": "2017-06",
+          "width": 1280,
+          "height": 960,
+          "matchType": "exact",
+          "matchLimits": "照片頁沒有拍攝日期，takenAt 是 Pixabay 上傳月份（2017 年 6 月 3 日）；畫面是起霧，不是雲海；寫的是「展望台附近」，不指名哪一個點。",
+          "whyItFits": "照片頁寫明是桃岩展望台附近；霧飄過山稜，對上小段說的強風跟濃霧並不少見。",
+          "altDraft": "陰天的霧從山稜飄過，綠色山谷一路往下延伸到海邊，海上立著一根尖尖的岩柱，右邊是高聳的岩壁",
+          "captionDraft": "起霧時從桃岩展望台一帶往海邊看。",
+          "creditDraft": "照片：mac02quackey／Pixabay",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "山谷裡有步道與小小的設施，看不出名稱",
+            "risk": "low",
+            "notes": "沒有人物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "kushu-lake",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "久種湖｜日本最北的湖，天氣好的日子湖面倒映禮文岳",
+      "purpose": "讓讀者看到久種湖畔的樣子。",
+      "mustShow": [
+        "久種湖或湖畔"
+      ],
+      "mustNotShow": [
+        "其他湖沼冒充久種湖",
+        "可辨識的人物臉部",
+        "浮水印"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "久種湖｜日本最北的湖，天氣好的日子湖面倒映禮文岳",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_47_l.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "kushu-01 是禮文町素材「久種湖2」，2006 年 5 月 6 日拍：湖畔濕地的淺水裡長滿白色的水芭蕉，前景是一棵枝幹橫倒的枯樹，後方是還沒轉綠的山坡。原圖 1280×851。這張也用在禮文島健行頁的「久種湖畔步道」一節，因為沒有其他合格照片，兩頁共用。限制：畫面是湖畔濕地，看不到整個湖面，也沒有禮文岳的倒影，所以圖說只寫湖畔的水芭蕉。另外看過：維基共享資源 サフィル 2017「LakeKushu.jpg」（湖面與「久種湖」木牌清楚，但前景一頂綠色帳篷佔了畫面一半，列為備選）；Yobito KAYANUMA 2005「久種湖 - panoramio.jpg」（看得到禮文岳，但右下角有 gpscycling.net 浮水印，不用）；禮文町素材「久種湖」只有 800 px。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "先查官方素材：禮文島觀光協會網站（rebun-island.jp）2026-11-24 仍連不上，跳過；禮文町官網「礼文町の観光地の写真」（允許商用與加工、不用聯絡，2026-11-24 重開條款頁確認文字還在）62 張裡寬 1200 px 以上的只有 18 張，其餘 800 px，沒有禮文敦盛草、北方金絲雀公園、海膽、花魚的照片；環境省利尻禮文サロベツ國立公園頁的照片只有 890×500 左右（2026-10-29 已查）。接著查 Pixabay「rebun」「rebun island」（禮文島相關 9 張，逐張看過）、「sea urchin rice bowl」「atka mackerel」，最後查維基共享資源。 禮文町素材合格的只有「久種湖2」。Pixabay 沒有久種湖。"
+      },
+      "candidates": [
+        {
           "sourceType": "official-material",
           "provider": "礼文町（礼文町の観光地の写真）",
           "assetType": "photo",
-          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_59_l.jpg",
-          "sourceTitle": "礼文町の観光地の写真「利尻10」",
-          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「利尻10」（kanko_59）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-07-01。",
-          "takenAt": "2006-07",
+          "candidateId": "kushu-01",
+          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_47_l.jpg",
+          "sourceTitle": "礼文町の観光地の写真「久種湖2」",
+          "sourceDescription": "礼文町官網「礼文町の観光地の写真」素材頁的「久種湖2」（kanko_47）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。EXIF 拍攝日期 2006-05-06。",
+          "takenAt": "2006-05",
           "width": 1280,
           "height": 851,
           "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
-          "termsCheckedAt": "2026-10-29",
+          "termsCheckedAt": "2026-11-24",
           "commercialUseAllowed": true,
           "modificationAllowed": true,
           "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
           "applicationRequired": false,
           "matchType": "exact",
-          "whyItFits": "禮文町官方素材；從禮文島草坡隔著海峽看利尻山，直接呈現兩座島的相對位置。",
-          "altDraft": "從禮文島的綠色草坡隔著藍色海峽望向利尻島，利尻山山頂還有殘雪",
-          "captionDraft": "從禮文島隔海看到的利尻山（2006 年 7 月）。",
+          "whyItFits": "禮文町官方素材，標題是久種湖；春天湖畔的水芭蕉，也呼應正文開頭的春天開水芭蕉。",
+          "altDraft": "久種湖畔的濕地淺水裡長滿白色的水芭蕉，前景是一棵枝幹橫倒的枯樹，後方是還沒轉綠的山坡",
+          "captionDraft": "久種湖畔的水芭蕉（2006 年 5 月）。",
           "creditDraft": "照片：禮文町",
           "commercialReview": {
             "people": "none",
             "logos": "none",
             "artwork": "none",
-            "property": "自然景觀",
+            "property": "natural landscape",
             "risk": "low",
-            "notes": "沒有人物、車輛或店家招牌。"
+            "notes": "沒有人物、建物或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-11-24",
+          "candidateId": "kushu-02",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:LakeKushu.jpg",
+          "creatorName": "サフィル",
+          "sourceTitle": "File:LakeKushu.jpg",
+          "sourceDescription": "日本の北海道礼文島にある久種湖をキャンプ場より望む（作者自己上傳）",
+          "takenAt": "2017-06-01",
+          "width": 3072,
+          "height": 2304,
+          "matchType": "exact",
+          "matchLimits": "前景一頂綠色帳篷佔了畫面一半。",
+          "whyItFits": "檔案頁寫明是從露營場看久種湖，湖面與「久種湖」木牌清楚。",
+          "altDraft": "久種湖畔露營場的木平台上搭著一頂綠色帳篷，後方是久種湖的湖面與平緩的山坡，右邊立著久種湖的木牌",
+          "captionDraft": "從湖畔露營場看久種湖（2017 年 6 月）。",
+          "creditDraft": "照片：サフィル／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "帳篷上看不到商標",
+            "artwork": "none",
+            "property": "湖名木牌",
+            "risk": "low",
+            "notes": "沒有人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "canary-park",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "北方金絲雀公園｜吉永小百合主演電影的外景校舍，裡面重現了電影的教室",
+      "purpose": "讓讀者看到電影外景地的木造校舍。",
+      "mustShow": [
+        "北方金絲雀公園的木造校舍"
+      ],
+      "mustNotShow": [
+        "電影劇照或演員肖像",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "北方金絲雀公園｜吉永小百合主演電影的外景校舍，裡面重現了電影的教室",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Reiban_elementary_school_Misaki_branch.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "canary-01 是ブルーノ・プラス 2019 年 5 月拍的「撮影のために建設された麗端小学校岬分校（礼文町香深村字フンベネフ）」，就是北方金絲雀公園裡為電影搭建的木造校舍：紅色屋頂、三根煙囪、深褐色木板牆、白框窗，門口掛著校名木牌，背後是海。沒有人物。原圖 3648×2736。這張也用在禮文島景點頁「吉永小百合主演電影的外景地」一節；維基共享資源、Pixabay、禮文町素材都沒有別張北方金絲雀公園的照片，所以兩頁共用。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "先查官方素材：禮文島觀光協會網站（rebun-island.jp）2026-11-24 仍連不上，跳過；禮文町官網「礼文町の観光地の写真」（允許商用與加工、不用聯絡，2026-11-24 重開條款頁確認文字還在）62 張裡寬 1200 px 以上的只有 18 張，其餘 800 px，沒有禮文敦盛草、北方金絲雀公園、海膽、花魚的照片；環境省利尻禮文サロベツ國立公園頁的照片只有 890×500 左右（2026-10-29 已查）。接著查 Pixabay「rebun」「rebun island」（禮文島相關 9 張，逐張看過）、「sea urchin rice bowl」「atka mackerel」，最後查維基共享資源。 維基共享資源搜尋「Kita no Canary Park」「北のカナリアパーク」「Rebun school Misaki」，只有這一張。"
+      },
+      "candidates": [
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-11-24",
+          "candidateId": "canary-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Reiban_elementary_school_Misaki_branch.jpg",
+          "creatorName": "ブルーノ・プラス",
+          "sourceTitle": "File:Reiban elementary school Misaki branch.jpg",
+          "sourceDescription": "撮影のために建設された麗端小学校岬分校（礼文町香深村字フンベネフ）（作者自己上傳）",
+          "takenAt": "2019-05",
+          "width": 3648,
+          "height": 2736,
+          "matchType": "exact",
+          "matchLimits": "2019 年 5 月拍的外觀。",
+          "whyItFits": "檔案頁寫明是為拍電影建的麗端小學岬分校，就是正文說的外景校舍。",
+          "altDraft": "紅色屋頂、三根煙囪的木造校舍，深褐色木板牆配白框窗，門口掛著校名木牌，背後是灰濛濛的海",
+          "captionDraft": "北方金絲雀公園裡的電影外景校舍（2019 年 5 月）。",
+          "creditDraft": "照片：ブルーノ・プラス／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "門口的校名木牌是電影場景的一部分",
+            "artwork": "門前一個企鵝造型的小擺設，不是主體",
+            "property": "電影外景建築（公園設施），是正文介紹的景點本身",
+            "risk": "low",
+            "notes": "沒有人物、劇照或商標。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "uni-don",
+      "kind": "inline",
+      "need": "food",
+      "section": "海膽｜夏天有海膽丼，還有放了海膽的拉麵",
+      "purpose": "讓讀者看到海膽丼這道料理的樣子；只代表料理，不代表禮文島的哪一家店。",
+      "mustShow": [
+        "生海膽鋪在白飯上的海膽丼"
+      ],
+      "mustNotShow": [
+        "店家價目牌或招牌",
+        "可辨識的人物臉部",
+        "海膽混鮭魚卵的丼",
+        "本站禮文島美食頁已用的 Uni_don_in_shakotan.jpg 與稚內美食頁已用的 UniIkuraDon.jpg"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "海膽｜夏天有海膽丼，還有放了海膽的拉麵",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/%E7%94%9F%E3%82%A6%E3%83%8B%E4%B8%BC%EF%BC%88%E5%B0%8F%E8%A2%96%E6%B5%B7%E5%A5%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%EF%BC%89.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "uni-01 是くろふね 2018 年 7 月 14 日在岩手縣久慈市小袖海女中心拍的生海膽丼（分類 Kuji, Iwate、Uni-don），不是在禮文島拍的。紅色碗裡的白飯鋪著海苔絲，上面堆滿淡黃色的生海膽，夾著一小塊橘色的，右上有一小碟醃漬物。沒有價目牌與人物。原圖 3840×2160。圖說寫明在哪裡拍，替代文字只描述畫面，不寫是哪一種海膽。另外看過：Totti 2018「Unidon Murakami.jpg」（畫面最好看，但說明只寫「むらかみ」，不確定在哪裡拍，圖說寫不出地點，不用）；pelican 2013「Rice bowl topped with sea urchin」（沒有拍攝地點）；LWY 2008 福岡（海膽碎、海苔蓋住大半）；Pixabay 5435807（直式，又混了鮭魚卵）。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "先查官方素材：禮文島觀光協會網站（rebun-island.jp）2026-11-24 仍連不上，跳過；禮文町官網「礼文町の観光地の写真」（允許商用與加工、不用聯絡，2026-11-24 重開條款頁確認文字還在）62 張裡寬 1200 px 以上的只有 18 張，其餘 800 px，沒有禮文敦盛草、北方金絲雀公園、海膽、花魚的照片；環境省利尻禮文サロベツ國立公園頁的照片只有 890×500 左右（2026-10-29 已查）。接著查 Pixabay「rebun」「rebun island」（禮文島相關 9 張，逐張看過）、「sea urchin rice bowl」「atka mackerel」，最後查維基共享資源。 Pixabay「sea urchin rice bowl」逐一看標題，只有 5435807 是海膽丼，直式又混鮭魚卵。維基共享資源 Category:Uni-don 12 張，沒有禮文島拍的。"
+      },
+      "candidates": [
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-11-24",
+          "candidateId": "uni-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E7%94%9F%E3%82%A6%E3%83%8B%E4%B8%BC%EF%BC%88%E5%B0%8F%E8%A2%96%E6%B5%B7%E5%A5%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%EF%BC%89.jpg",
+          "creatorName": "くろふね",
+          "sourceTitle": "File:生ウニ丼（小袖海女センター）.jpg",
+          "sourceDescription": "岩手県久慈市、小袖海女センター、小袖海岸、生ウニ丼、海鮮丼（作者自己上傳；分類 Kuji, Iwate、Uni-don）",
+          "takenAt": "2018-07-14",
+          "width": 3840,
+          "height": 2160,
+          "matchType": "exact",
+          "matchLimits": "岩手縣久慈市拍的，不是禮文島的店家；只代表海膽丼這道料理。",
+          "whyItFits": "畫面就是生海膽鋪在白飯上的海膽丼，對上小段說的夏天海膽丼。",
+          "altDraft": "紅色碗裡的白飯鋪著海苔絲，上面堆滿淡黃色的生海膽，右上角有一小碟醃漬物",
+          "captionDraft": "海膽丼（2018 年 7 月攝於岩手縣久慈市，不是禮文島）。",
+          "creditDraft": "照片：くろふね／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "店內餐桌，看不到店名或價目",
+            "risk": "low",
+            "notes": "沒有招牌、價目牌或人物。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "hokke-chanchan",
+      "kind": "inline",
+      "need": "food",
+      "section": "花魚鏘鏘燒｜香深老店的「元祖」，40年以上的招牌",
+      "purpose": "讓讀者看到花魚鏘鏘燒：整片花魚抹上味噌、鋪蔥，放在炭火上烤。只代表料理，不代表哪一家店。",
+      "mustShow": [
+        "剖開的花魚上抹味噌、鋪蔥，放在烤網上"
+      ],
+      "mustNotShow": [
+        "店家價目牌或招牌",
+        "可辨識的人物臉部",
+        "鮭魚鏘鏘燒冒充花魚"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "花魚鏘鏘燒｜香深老店的「元祖」，40年以上的招牌",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Grilled_Fish_HokkeChanChanYaki.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "hokke-01 是サフィル 2017 年 5 月 31 日拍的「北海道礼文島のホッケのちゃんちゃん焼き」：炭火上的烤網放著一整片剖開的花魚，魚身中間抹了味噌、鋪滿蔥花，還沒烤熟。禮文島拍的，但說明沒寫是哪一家店，圖說不寫店名。原圖 3072×2304。這張已是禮文島美食頁、禮文島交通頁、利尻島美食頁的封面；維基共享資源與 Pixabay 都找不到別張花魚鏘鏘燒（Pixabay「atka mackerel」沒有花魚；維基共享資源的 Grilled Okhotsk Atka Mackerel 是小樽的烤花魚，不是鏘鏘燒，且已用在美食頁），所以主頁文內也用這張。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "先查官方素材：禮文島觀光協會網站（rebun-island.jp）2026-11-24 仍連不上，跳過；禮文町官網「礼文町の観光地の写真」（允許商用與加工、不用聯絡，2026-11-24 重開條款頁確認文字還在）62 張裡寬 1200 px 以上的只有 18 張，其餘 800 px，沒有禮文敦盛草、北方金絲雀公園、海膽、花魚的照片；環境省利尻禮文サロベツ國立公園頁的照片只有 890×500 左右（2026-10-29 已查）。接著查 Pixabay「rebun」「rebun island」（禮文島相關 9 張，逐張看過）、「sea urchin rice bowl」「atka mackerel」，最後查維基共享資源。 維基共享資源搜尋「hokke chanchan」「ホッケ ちゃんちゃん」「hokke grilled」，花魚鏘鏘燒只有這一張。"
+      },
+      "candidates": [
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-11-24",
+          "candidateId": "hokke-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Fish_HokkeChanChanYaki.jpg",
+          "creatorName": "サフィル",
+          "sourceTitle": "File:Grilled Fish HokkeChanChanYaki.jpg",
+          "sourceDescription": "北海道礼文島のホッケのちゃんちゃん焼き（作者自己上傳；分類 Pleurogrammus azonus、Grilled fish of Japan、Charcoal grills）",
+          "takenAt": "2017-05-31",
+          "width": 3072,
+          "height": 2304,
+          "matchType": "exact",
+          "matchLimits": "禮文島拍的，但不指名店家；畫面是剛放上烤網、還沒烤熟的樣子。",
+          "whyItFits": "檔案頁寫明是禮文島的花魚鏘鏘燒；厚厚一片花魚上鋪蔥、抹醬再烤，和小段的描述一致。",
+          "altDraft": "炭火上的烤網放著一整片剖開的花魚，魚身中間抹著味噌、鋪滿蔥花",
+          "captionDraft": "禮文島的花魚鏘鏘燒，烤之前先抹味噌、鋪蔥（2017 年 5 月）。",
+          "creditDraft": "照片：サフィル／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "烤爐與烤網",
+            "risk": "low",
+            "notes": "沒有招牌、價目牌或人物。"
           },
           "checks": {
             "fullImageInspected": true,
