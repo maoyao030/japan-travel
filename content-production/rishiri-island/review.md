@@ -1,7 +1,7 @@
 # 驗收紀錄：rishiri-island（2026-11-24，地點主頁改版）
 
 - 文章：`content-production/rishiri-island/reader-preview.md`（利尻島旅遊攻略，景點、美食與一日遊排法一次看）
-- SHA-256（換行統一成 LF 後計算）：`4fdba73f18d270aae38b271511bdd03eaa713e9ee242d607e1c57ca2e5c7be81`
+- SHA-256（換行統一成 LF 後計算）：`b68d65aff2d42237f876150ec59152b1fb298d2b68e1327e7ed4e06875b70d3d`
 - 規則：寫作 Skill `references/place-entry-page.md`（Darren 2026-11-21 同意）、`sentence-rhythm.md`、`heading-style.md`。研究與樣本在 `content-experiments/place-entry-study-2026-11-19/`。舊版封包在 `pre-place-entry/`。
 - 寫作：一位作者（Sonnet 5.5），事實只用本地點主頁與七個子頁、禮文島與稚內主頁已查證的事實表；Darren 看過樣本四輪（第一節寫畫面、小標題「名字｜賣點」、專有名詞用台灣多數叫法）。
 - 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作），樣本階段 3 輪、正式稿 3 輪：正式稿第 1 輪 69 筆裡 2 筆 unsupported，第 2 輪 1 筆，第 3 輪全部 verified；上線後換大標題與序言再查 2 輪，最後 69 筆全部 verified。查核對的是事實表的原文摘錄與已上線子頁，沒有重新開官方網址；F220（姬沼倒影）是協調者 2026-11-20 用瀏覽器開北海道官方觀光網站讀到的。

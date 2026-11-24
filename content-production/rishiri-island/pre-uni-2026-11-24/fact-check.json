@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rishiri-island",
+  "articleSha256": "4fdba73f18d270aae38b271511bdd03eaa713e9ee242d607e1c57ca2e5c7be81",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，不是作者，只讀）。2026-11-21 主頁改版查核、2026-11-24 改稿後重查：逐句對照 content-production/rishiri-island/reference-review.md 事實表的日文原文摘錄；新增的 F197～F219 逐筆抽查各子頁研究記錄（sights、food、weather、festival、transport、rebun-island）的原列與已上線子頁 reader-preview.md。依協調者指示本輪沒有重新開官方網址：主頁事實全部取自已上線、已查核的子頁，事實表各列在 2026-10-18～2026-11-02 已由先前查核與重寫前重查（2026-11-01）實際開過官方頁。sourceUrl 與 sourceQuote 照事實表原列。 2026-11-24 重查：對這一版逐句重判；新列 F220（visit-hokkaido 姫沼頁，協調者 2026-11-20 用瀏覽器讀到）、F221、F222 與補齊的 F202、F205 照事實表與子頁原列核對，本輪仍未自行開網址。 2026-11-24 第二次重查：只重判改過的句子（C14、C18、C24、C25、C53、C67、C70、C71），其餘沿用。 2026-11-24 第三次重查（新大標題與序言）：重判 H1 底下兩段序言、利尻山小段新加的第一句、味樂與利尻雛罌粟拿掉日文括號的句子；舊序言的 C3、C5 已拿掉，其餘沿用。 2026-11-24 第四次重查（寫法三序言）：重判 H1 底下兩段序言；上一版序言的 C72 已拿掉；海膽、利尻雛罌粟小段只是日文括號移位，更新引用句，判定沿用。",
+  "checkedAt": "2026-11-24",
+  "claims": [
+    {
+      "claimId": "C1",
+      "articleExcerpt": "利尻島在稚內外海，搭渡輪約1小時40分",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1416.htm",
+      "sourceTitle": "交通アクセス｜利尻富士町",
+      "sourceQuote": "稚 内 → 利 尻 １時間４０分",
+      "verdict": "verified",
+      "notes": "F5；wakkanai-ferry 航程表「稚內→鴛泊 約1小時40分」一致。"
+    },
+    {
+      "claimId": "C2",
+      "articleExcerpt": "利尻山標高1,721公尺，周圍沒有別的山相連，又叫「利尻富士」。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1396.htm",
+      "sourceTitle": "登山情報｜利尻富士町",
+      "sourceQuote": "標高1,721mの独立峰、別名「利尻富士」とも呼ばれ",
+      "verdict": "verified",
+      "notes": "F1「標高1,721mの独立峰、別名「利尻富士」」。這一版沒有「所以」，照原文並列。"
+    },
+    {
+      "claimId": "C73",
+      "articleExcerpt": "不爬山的話，沓形的利尻拉麵味樂（利尻らーめん味楽）用利尻昆布熬湯，兩度拿下米其林必比登推介",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】",
+      "sourceQuote": "ミシュランガイド北海道2012・2017特別版にて ビブグルマン 2期連続受賞 ／ 甘みのある利尻昆布の出汁をベースに",
+      "verdict": "verified",
+      "notes": "F129（兩度必比登）、F210（利尻昆布高湯）、F211（本店在利尻町沓形字本町67）。"
+    },
+    {
+      "claimId": "C74",
+      "articleExcerpt": "6月到9月還可以到神居海岸公園（神居海岸パーク）自己剝海膽，剝好當場吃。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kamui-park/",
+      "sourceTitle": "神居海岸パーク｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業期間 6/1～9/30（５月は予約者のみ可）",
+      "verdict": "verified",
+      "notes": "F208（6/1～9/30，季節條件有寫）；F132 自己剝的海膽當場吃（https://rishiri-kamui.com/experience/）。5月只接受預約，沒寫不影響「6月到9月」。日文原名第一次出現在這裡，後面海膽小段只寫中文，符合寫法規則。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "6月到9月最適合去。（序言第二段）",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm",
+      "sourceTitle": "海の幸｜利尻富士町",
+      "sourceQuote": "地元では「ガンゼ」と呼ばれるこのエゾバフンウニ！採取時期は6月から9月まで",
+      "verdict": "verified",
+      "notes": "F123 海膽採收6～9月；F26 觀光巴士只在夏季運行（5/3～5/5、5/20～9/30）。和「利尻島幾月去最好？」一節的「6月下旬到7月中旬最好」不衝突，那是範圍內最好的時段。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "不登山住1晚就夠，登山要排2晚。（序言第二段；同「利尻島自由行要排幾天」一節「不登山排1晚，登山排2晚」）",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1397.htm",
+      "sourceTitle": "コース概要｜利尻富士町",
+      "sourceQuote": "山頂で１時間の休憩を考えると、天候のいい日でも１１時間必要です。",
+      "verdict": "verified",
+      "notes": "推算，見研究記錄推算表：A路線3小時10分繞完主要景點（F28）；登山11小時、清晨出發日落前下山（F47、F65）。"
+    },
+    {
+      "claimId": "C8",
+      "articleExcerpt": "從Otatomari沼（オタトマリ沼）的湖面、鴛泊港旁的岬角到沓形岬公園，抬頭都看得到利尻山。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/otatomari/",
+      "sourceTitle": "オタトマリ沼｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "沼の周囲には遊歩道があり、湖面に映る利尻山を眺めながら散策ができます。",
+      "verdict": "verified",
+      "notes": "F197；岬角 F203（天気の良い日には利尻山、礼文島…を望む）；沓形岬公園 F204（利尻山や礼文島を見渡せる）。上一版前面的「大部分時間都在跟一座山打照面」已刪。"
+    },
+    {
+      "claimId": "C9",
+      "articleExcerpt": "10月上旬山頂開始積雪，到了11月，整座山從山頂白到山腳。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "上旬は、利尻山の初冠雪が見られる時期です。 ／ 利尻山は裾野まで真っ白な雪化粧をし",
+      "verdict": "verified",
+      "notes": "F182（10月）、F181（11月）。"
+    },
+    {
+      "claimId": "C10",
+      "articleExcerpt": "最熱的8月白天平均也只有23℃左右",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "過去の気象データ検索 沓形 平年値｜気象庁",
+      "sourceQuote": "8月 118.2 19.9 23.1 16.6 2.7 162.0",
+      "verdict": "verified",
+      "notes": "F172 平均最高23.1℃。「最熱的8月」：主頁事實表只有7、8月兩列，全年比較依 rishiri-island-weather 已上線頁的同站平年值表（8月平均19.9℃為全年最高）。"
+    },
+    {
+      "claimId": "C11",
+      "articleExcerpt": "7、8月早晚大約15到17℃，要加一件薄外套。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "過去の気象データ検索 沓形 平年値｜気象庁",
+      "sourceQuote": "7月 93.8 18.0 21.4 14.9 2.6 152.5 ／ 8月 118.2 19.9 23.1 16.6 2.7 162.0",
+      "verdict": "verified",
+      "notes": "作者標為推論。依據：F171 平均最低14.9℃、F172 16.6℃，四捨五入成「大約15到17℃」成立；限定在7、8月，條件正確。「要加一件薄外套」是依數字給的建議，與 rishiri-island-weather 已上線頁「早晚大約15℃到17℃，還是要加一件薄長袖或薄外套」一致。"
+    },
+    {
+      "claimId": "C12",
+      "articleExcerpt": "仙法志御崎公園一帶是古代噴發的熔岩形成的奇岩，水清到看得見海膽跟昆布，6月到9月左右，園內的海豹池有斑海豹。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/senhoshi-misaki/",
+      "sourceTitle": "仙法志御崎公園｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "海岸線は太古の昔に噴火した利尻山の溶岩でできた奇岩が多くみられ、透明度の高い海を覗くと天然のウニや昆布がはっきりと見え ／ 6月～9月頃には、海岸にゴマフアザラシがおり",
+      "verdict": "verified",
+      "notes": "F200（抽查與 sights F202 一致）；海豹池 F201「アザラシプールでは、ゴマフアザラシに餌を与えることができます」；期間與可能不在 F202「営業期間 6月頃〜9月頃（状況により不在の場合あり）」（已補齊，與 sights F193 一致）。「左右」保留了「頃」。"
+    },
+    {
+      "claimId": "C13",
+      "articleExcerpt": "清晨可以到港旁大約90公尺高的岩山看日出，天氣好的話連禮文島跟稚內都在視野裡。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/peshi-misaki/",
+      "sourceTitle": "ペシ岬｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "標高９０mほどの巨大な岩山「ペシ岬」 ／ ご来光の名所で、天気の良い日には利尻山、礼文島、北海道本土の稚内市までを望むビュースポット",
+      "verdict": "verified",
+      "notes": "F104、F203（抽查與 sights F203 一致）。「港旁」承接前一段「鴛泊港旁的岬角」。上一版的「住鴛泊的話」拿掉了，住哪裡的條件改由「住1晚，看日出」那節的「要看佩西岬日出就住鴛泊」交代，這句本身沒有寫錯。"
+    },
+    {
+      "claimId": "C14",
+      "articleExcerpt": "傍晚在島西側的沓形，當地人會到岬角看夕陽",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kutsugata-misaki/",
+      "sourceTitle": "沓形岬公園｜りしぷら",
+      "sourceQuote": "地元の方も見に来る夕日スポットでもあります。",
+      "verdict": "verified",
+      "notes": "F204；抽查與 sights F200 一致。"
+    },
+    {
+      "claimId": "C15",
+      "articleExcerpt": "晚上姬沼那一帶看得到星空。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/himenuma/",
+      "sourceTitle": "姫沼｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "夜には星空が綺麗にみえるスポットです。",
+      "verdict": "verified",
+      "notes": "F199；抽查與 sights F204 一致。"
+    },
+    {
+      "claimId": "C16",
+      "articleExcerpt": "6月中旬海膽解禁後，鴛泊渡輪站2樓的食堂就吃得到海膽丼",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-shop/maruzen/",
+      "sourceTitle": "食堂 丸善｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "鴛泊フェリーターミナル2階にある食堂丸善 ／ 他にもウニ丼やホタテらーめんなど、利尻のグルメを堪能",
+      "verdict": "verified",
+      "notes": "F206（＝food F141）、解禁 F124。注意：主頁事實表 F205 那一列只寫「りしぷら shima-shop/maruzen/｜C70」，沒有日文摘錄與網址；本筆的「ウニ丼」摘錄取自 rishiri-island-food 研究記錄 F188 原列。建議作者把 F205 補成完整一列。"
+    },
+    {
+      "claimId": "C17",
+      "articleExcerpt": "7月下旬昆布漁解禁，天晴沒風的日子有機會看到有人在海邊採昆布。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "下旬からは利尻昆布漁が解禁となり、晴れた凪の日には昆布漁風景が見られます。",
+      "verdict": "verified",
+      "notes": "F125。"
+    },
+    {
+      "claimId": "C18",
+      "articleExcerpt": "北海道名產白色戀人包裝上的就是利尻山，石屋製菓說，選它是因為積雪的樣子很像歐洲的阿爾卑斯山。",
+      "sourceUrl": "https://www.ishiya.co.jp/news/007022.html",
+      "sourceTitle": "「白い恋人」が、発売50周年を機にブランドリニューアル｜石屋製菓",
+      "sourceQuote": "積雪した姿がヨーロッパのアルプスの山並みに似ていることから洋菓子を象徴するものとして、パッケージに採用されています。",
+      "verdict": "verified",
+      "notes": "F100。F101：2026年12月起包裝逐步換新，利尻山保留但改成較抽象的插畫，正文說法換包裝後仍成立。"
+    },
+    {
+      "claimId": "C19",
+      "articleExcerpt": "它也是日本百名山由北往南數的第一座。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1396.htm",
+      "sourceTitle": "登山情報｜利尻富士町",
+      "sourceQuote": "日本百名山百選では北の秀峰として一番目に数えられています",
+      "verdict": "verified",
+      "notes": "F1。"
+    },
+    {
+      "claimId": "C20",
+      "articleExcerpt": "鴛泊路線上山6小時、下山4小時，加上山頂休息天氣好也要11小時，要登頂得留一整天。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1397.htm",
+      "sourceTitle": "コース概要｜利尻富士町",
+      "sourceQuote": "登り６時間・下り４時間 ／ 山頂で１時間の休憩を考えると、天候のいい日でも１１時間必要です。",
+      "verdict": "verified",
+      "notes": "F47。"
+    },
+    {
+      "claimId": "C21",
+      "articleExcerpt": "### 姬沼與Otatomari沼｜湖面映著利尻山的倒影",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10394.html",
+      "sourceTitle": "姫沼｜HOKKAIDO LOVE!",
+      "sourceQuote": "原生林に囲まれた遊歩道から逆さ利尻富士を望む沼 ／ 沼の周囲には遊歩道があり、湖面に映る利尻山を眺めながら散策ができます。",
+      "verdict": "verified",
+      "notes": "上次 unsupported 已解決：姬沼倒影改有 F220（北海道官方觀光網站姫沼頁，協調者 2026-11-20 用瀏覽器開頁讀到；本查核者沒有自己打開，照事實表原列判定），內文也補了「步道上還看得到倒映在湖面的利尻山」；Otatomari沼見 F197（https://www.rishiri-plus.jp/shima-place/otatomari/）。"
+    },
+    {
+      "claimId": "C22",
+      "articleExcerpt": "Otatomari沼是島上最大的湖，湖面映得出利尻山",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/otatomari/",
+      "sourceTitle": "オタトマリ沼｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "周囲約１km。利尻島最大の湖沼です。 ／ 沼の周囲には遊歩道があり、湖面に映る利尻山を眺めながら散策ができます。",
+      "verdict": "verified",
+      "notes": "F97、F197。步行時間這一版已刪。"
+    },
+    {
+      "claimId": "C23",
+      "articleExcerpt": "沼邊吃得到烤扇貝、海膽軍艦卷跟霜淇淋。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/otatomari/",
+      "sourceTitle": "オタトマリ沼｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "駐車場には「利尻富士町レストハウス」や「利尻亀一」があり、特産品やお土産を購入したり、「ホタテ焼き」「うにの軍艦巻き」「熊笹ソフト」「万年雪ソフト」などを味わうこともできます。",
+      "verdict": "verified",
+      "notes": "F197；抽查與 sights F201 一致。店家只在觀光季營業（利尻龜一4月中旬～10月下旬），和沼的開放期間5～10月大致重疊。"
+    },
+    {
+      "claimId": "C24",
+      "articleExcerpt": "姬沼原本是三個沼，大正時代攔住湧水才合成一個，名字取自當年放養的姬鱒。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/himenuma/",
+      "sourceTitle": "姫沼｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "大正時代に湧き水をせき止め、当時あった３つの沼をひとつにして姫沼ができました。ヒメマスを放流していたことがその名の由来です。",
+      "verdict": "verified",
+      "notes": "F198；抽查與 sights F96 一致。"
+    },
+    {
+      "claimId": "C25",
+      "articleExcerpt": "姬沼穿過原生林的步道走起來很輕鬆，步道上看得到倒映在湖面的利尻山。兩處都是5月到10月開放。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10394.html",
+      "sourceTitle": "姫沼｜HOKKAIDO LOVE!",
+      "sourceQuote": "原生林に囲まれた遊歩道から逆さ利尻富士を望む沼",
+      "verdict": "verified",
+      "notes": "F220（倒影）；輕鬆走原生林 F199「原生林の中を気軽に散策できるコース」（https://www.rishiri-plus.jp/shima-place/himenuma/）；開放期間 F95「営業期間 ５月〜１０月」、F97。"
+    },
+    {
+      "claimId": "C26",
+      "articleExcerpt": "想看日出，就清晨走上港旁的佩西岬（ペシ岬），步道又窄又陡，天氣不好不要上去，開放期間是5月到10月。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/peshi-misaki/",
+      "sourceTitle": "ペシ岬｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "ご来光の名所 ／ 遊歩道は道が細く急なため悪天候時は危険です。",
+      "verdict": "verified",
+      "notes": "F104（含5～10月開放）。「天氣不好不要上去」是依「悪天候時は危険」的建議。譯名佩西岬與 glossary.json 一致。"
+    },
+    {
+      "claimId": "C27",
+      "articleExcerpt": "想看夕陽，就去沓形的神居露台（カムイテラス）或沓形岬公園。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kamui-terrace/",
+      "sourceTitle": "カムイテラス｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "夕陽スポットでもあり",
+      "verdict": "verified",
+      "notes": "F115；沓形岬公園 F204。譯名與 glossary.json 一致。"
+    },
+    {
+      "claimId": "C28",
+      "articleExcerpt": "想餵斑海豹，就到最南端的仙法志御崎公園",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-taiken/%E3%82%A2%E3%82%B6%E3%83%A9%E3%82%B7%E9%A4%8C%E3%82%84%E3%82%8A%E4%BD%93%E9%A8%93/",
+      "sourceTitle": "アザラシ餌やり体験｜りしぷら",
+      "sourceQuote": "アザラシプールでは、ゴマフアザラシに餌を与えることができます。",
+      "verdict": "verified",
+      "notes": "F201（抽查與 sights F103 一致）；最南端 F102「島の最南端に位置する自然公園」。"
+    },
+    {
+      "claimId": "C29",
+      "articleExcerpt": "5月跟10月公園開著，但斑海豹不一定在。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-taiken/%E3%82%A2%E3%82%B6%E3%83%A9%E3%82%B7%E9%A4%8C%E3%82%84%E3%82%8A%E4%BD%93%E9%A8%93/",
+      "sourceTitle": "アザラシ餌やり体験｜りしぷら",
+      "sourceQuote": "営業期間 6月頃〜9月頃（状況により不在の場合あり）",
+      "verdict": "verified",
+      "notes": "作者原標推論。公園5～10月開放（F102）；餵海豹是6月左右到9月左右，視狀況可能不在（F202，已補齊）。5月、10月在餵食期外，「不一定在」成立且偏保守。上一版的「排6月到9月比較穩」已刪，6到9月改寫在第1節（C12）。"
+    },
+    {
+      "claimId": "C30",
+      "articleExcerpt": "6月到9月，沓形的神居海岸公園可以拿帶殼的海膽自己剝開，剝好當場就吃。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kamui-park/",
+      "sourceTitle": "神居海岸パーク｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業期間 6/1～9/30（５月は予約者のみ可）",
+      "verdict": "verified",
+      "notes": "F208（抽查與 food F133 一致）、F132（自己剝的海膽當場吃，https://rishiri-kamui.com/experience/）。地點在利尻町沓形字神居，見 rishiri-island-food 已上線頁。5月只接受預約，正文沒寫，不影響「6月到9月」的說法。"
+    },
+    {
+      "claimId": "C31",
+      "articleExcerpt": "當地人把蝦夷馬糞海膽叫做Ganze（ガンゼ），採到9月",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm",
+      "sourceTitle": "海の幸｜利尻富士町",
+      "sourceQuote": "地元では「ガンゼ」と呼ばれるこのエゾバフンウニ！採取時期は6月から9月まで",
+      "verdict": "verified",
+      "notes": "F123。"
+    },
+    {
+      "claimId": "C32",
+      "articleExcerpt": "天氣跟海況都好的時候，剝海膽體驗可能改成搭小漁船出海去採。",
+      "sourceUrl": "https://rishiri-kamui.com/experience/",
+      "sourceTitle": "うにむき体験・昆布お土産づくり体験紹介｜神居海岸パーク",
+      "sourceQuote": "磯船に乗船しての「ウニとり体験」ができるかは、当日海と空の状況を見て判断されます。",
+      "verdict": "verified",
+      "notes": "F207（抽查與 food F251 一致）：「当日海と空の状況を見て判断」，正文「天氣跟海況」對應「空と海」。"
+    },
+    {
+      "claimId": "C33",
+      "articleExcerpt": "沓形的利尻拉麵味樂在米其林指南北海道2012與2017特別版，連續兩次拿到必比登推介。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】",
+      "sourceQuote": "ミシュランガイド北海道2012・2017特別版にて ビブグルマン 2期連続受賞",
+      "verdict": "verified",
+      "notes": "F129；本店在沓形 F211（利尻町沓形字本町67）。標題「兩度拿下米其林必比登的味樂」同一依據。"
+    },
+    {
+      "claimId": "C34",
+      "articleExcerpt": "招牌是配上燒到快焦醬油的燒醬油拉麵，湯用的昆布先日曬、再熟成3年。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】",
+      "sourceQuote": "味楽の看板メニュー「焼き醤油らーめん」は、甘みのある利尻昆布の出汁をベースに、焦げる寸前まで焼き上げた醤油を合わせる ／ 天日干しした利尻昆布を さらに3年間熟成",
+      "verdict": "verified",
+      "notes": "F210、F209（抽查與 food F130、F255 一致）。"
+    },
+    {
+      "claimId": "C35",
+      "articleExcerpt": "只做午餐，想吃就要排在中午前後。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】",
+      "sourceQuote": "営業時間 : 11:30～14:00（6~9月のみ14:30まで） 定休日 : 木曜日",
+      "verdict": "verified",
+      "notes": "作者標為推論。依據：官網只有一段營業時間11:30到14:00（6～9月到14:30），沒有晚上的時段，所以寫成「只做午餐」成立；rishiri-island-food 已上線頁同樣寫「味樂只做午餐、晚上不開」。週四公休沒寫，不影響這句。"
+    },
+    {
+      "claimId": "C36",
+      "articleExcerpt": "利尻雛罌粟（リシリヒナゲシ）是日本唯一的野生雛罌粟，開在登山路線9合目附近的碎石地，花期是7月上旬到中旬，要登山才看得到。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-flower/",
+      "sourceTitle": "花図鑑｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "７月上旬～７月中旬 利尻山９合目付近の礫地 ／ 日本に自生する唯一のケシ科ケシ属のヒナゲシです",
+      "verdict": "verified",
+      "notes": "F71。"
+    },
+    {
+      "claimId": "C37",
+      "articleExcerpt": "6月下旬到7月中旬，海岸跟濕原會開滿橘色的萱草，富士野園地也長著一大片。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-flower/",
+      "sourceTitle": "花図鑑｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "６月下旬～７月中旬 海岸や道路脇の草原、湿原に群落をつくり",
+      "verdict": "verified",
+      "notes": "F121；富士野園地 F114「エゾカンゾウの大群落地（６月下旬〜７月中旬）」。"
+    },
+    {
+      "claimId": "C38",
+      "articleExcerpt": "6月下旬到7月中旬最好，因為海膽正當季，萱草也在這段時間開花。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "中旬にはウニ（エゾバフンウニ）漁が解禁となり、新鮮なウニを食べることができます。",
+      "verdict": "verified",
+      "notes": "編輯判斷，依 F124（6月中旬解禁）、F123（採到9月）、F121（萱草6月下旬～7月中旬）。"
+    },
+    {
+      "claimId": "C39",
+      "articleExcerpt": "如果錯過初夏，可以改排9月，海膽還在採收期內，觀光巴士也還在開。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "運行期間：2026年5月3日～5月5日、5月20日～9月30日まで",
+      "verdict": "verified",
+      "notes": "F26；海膽 F123「採取時期は6月から9月まで」。"
+    },
+    {
+      "claimId": "C40",
+      "articleExcerpt": "月份表 5月：山麓還有殘雪，見返台園地一帶可以玩雪，湖沼步道開放",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "利尻山裾野には雪が残り、見返台園地などでは雪遊びができます。",
+      "verdict": "verified",
+      "notes": "F184；湖沼5月起開放 F95、F97。見返台園地5月中旬才開放（sights 已上線頁），表格沒寫，不算錯。"
+    },
+    {
+      "claimId": "C41",
+      "articleExcerpt": "月份表 6月：中旬海膽季開始，下旬萱草開花",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "中旬にはウニ（エゾバフンウニ）漁が解禁となり",
+      "verdict": "verified",
+      "notes": "F124、F121。"
+    },
+    {
+      "claimId": "C42",
+      "articleExcerpt": "月份表 7月：上旬到中旬利尻雛罌粟開花，下旬利尻昆布漁解禁，下旬鬼脇有北海島祭",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "毎年７月／第４日曜日 利尻富士町最大の夏祭り！鬼脇地区ではボートレースや花火大会も開催",
+      "verdict": "verified",
+      "notes": "F71、F125；鬼脇北海島祭 F153（每年7月第4個週日）。第4個週日一定落在7月22日到28日，寫「下旬」成立。"
+    },
+    {
+      "claimId": "C43",
+      "articleExcerpt": "月份表 8月：一年裡最暖的月份，上旬有鴛泊的北海島祭與沓形、仙法志的利尻浮島祭",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/calendar/",
+      "sourceTitle": "島カレンダー｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "北海島まつり ［鴛泊エリア］ 毎年８月３日 ／ 利尻浮島まつり ［1day:沓形、2day:仙法志］ 毎年８月５日〜８月６日",
+      "verdict": "verified",
+      "notes": "鴛泊北海島祭 F221（每年8月3日，抽查與 festival F185 一致）；利尻浮島祭 F157（8/5沓形、8/6仙法志）。3日、5日、6日都在上旬。最暖：氣象廳沓形平年值8月19.9℃（F172）為全年最高（weather 頁全年表）。上一版的「祭典排得最密的月份」已刪。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "月份表 9月：海膽採收到9月，觀光巴士開到月底",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "5月20日～9月30日まで",
+      "verdict": "verified",
+      "notes": "F26（2026年）、F123。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "月份表 10月：上旬山頂初冠雪，下旬平地飄雪，湖沼與岬角景點開到月底",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "上旬は、利尻山の初冠雪が見られる時期です。 ／ 下旬には、平地にも雪が舞う時期です。",
+      "verdict": "verified",
+      "notes": "F182；姬沼、Otatomari沼、仙法志御崎公園、佩西岬都是5～10月（F95、F97、F102、F104）。"
+    },
+    {
+      "claimId": "C46",
+      "articleExcerpt": "月份表 11月到4月：多數景點與自行車道封閉",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11383.html",
+      "sourceTitle": "利尻島サイクリングロード｜HOKKAIDO LOVE!",
+      "sourceQuote": "休業日 11月上旬-4月下旬（冬季間閉鎖）",
+      "verdict": "verified",
+      "notes": "F41；景點 F95「11月〜4月は閉鎖」、F98 白色戀人之丘11月上旬～4月下旬封閉。神居露台到11月左右（F115），「多數」成立。"
+    },
+    {
+      "claimId": "C47",
+      "articleExcerpt": "夏天不熱，依氣象廳的長年平均，沓形7月均溫18.0℃、8月19.9℃，不是預報",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=0002&year=&month=&day=&view=",
+      "sourceTitle": "過去の気象データ検索 沓形 平年値｜気象庁",
+      "sourceQuote": "7月 93.8 18.0 21.4 14.9 2.6 152.5 ／ 8月 118.2 19.9 23.1 16.6 2.7 162.0",
+      "verdict": "verified",
+      "notes": "F171、F172（1991～2020平年值）。"
+    },
+    {
+      "claimId": "C48",
+      "articleExcerpt": "11月到4月不太適合去，天候差的日子變多，渡輪也更常停航，這段時間上島的話，離島那天之後最好多留一天備用。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/season/",
+      "sourceTitle": "島の四季｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "厳しい天候が多くなり、フェリーの欠航が多くなります。",
+      "verdict": "verified",
+      "notes": "F181 是11月的描述；延伸到冬天依 rishiri-island-weather 已上線頁「11月以後去……天候惡劣的日子一多，渡輪停航也跟著增加」與同頁「預定離開的那天之後最好再空一天」。冬季稚內⇄鴛泊只剩2個來回（F187）。"
+    },
+    {
+      "claimId": "C49",
+      "articleExcerpt": "從稚內搭渡輪，夏天一天3個來回，飛機則是札幌丘珠機場全年有班次，6月到9月新千歲機場也有直飛利尻的季節航班。渡輪停在島北側的鴛泊港",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1416.htm",
+      "sourceTitle": "交通アクセス｜利尻富士町",
+      "sourceQuote": "フェリーは、稚内港から夏は3往復運行されています。 ／ 飛行機は通年運航で丘珠から、利尻島までひとっ飛びできます。 （6月1日～9月30日は新千歳空港発着（ＡＮＡ便）の季節運航もあります。）",
+      "verdict": "verified",
+      "notes": "F4、F6（季節航班6/1～9/30，「6月到9月」條件一致）；F10 2026年夏季12:30新千歲發、13:25到利尻。鴛泊 F185、F32。上一版「沓形港夏天也有船往返禮文島」這句已從這段刪掉（沓形航線仍在禮文島一節，見 C66、C67）。"
+    },
+    {
+      "claimId": "C51",
+      "articleExcerpt": "島上路線巴士繞一圈大約2小時，從鴛泊搭到沓形大約40分鐘。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_r8_summer.pdf",
+      "sourceTitle": "利尻線 夏期ダイヤ｜宗谷バス",
+      "sourceQuote": "Bコース 鴛泊ＦＴ (07) 13:00 … 空港 (54) 13:20 … 沓形ＦＴ (45) 13:40",
+      "verdict": "verified",
+      "notes": "繞一圈 F18（各班1小時45分～2小時16分）。鴛泊到沓形 F194 是40分；sights 已上線頁的經沓形各班多為37～46分，夏季15:30那班66分，「大約40分鐘」成立，只適用經沓形方向。"
+    },
+    {
+      "claimId": "C52",
+      "articleExcerpt": "夏天搭稚內7:15的船 → 8:55到鴛泊 → 9:05觀光巴士A路線繞姬沼、Otatomari沼、仙法志御崎公園 → 12:15回到鴛泊 → 16:40的船 → 18:20回稚內。（同第63行「夏天不登山的話，當天來回也排得成」）",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表（稚内-鴛泊）｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30｜07:15～08:55｜08:25～10:05｜11:15～12:55｜12:05～13:45｜16:40～18:20｜16:40～18:20",
+      "verdict": "verified",
+      "notes": "F185；A路線 F28「6月1日～9月30日 9:05発 → 12:15着」，經姬沼、Otatomari沼、仙法志御崎公園。"
+    },
+    {
+      "claimId": "C70",
+      "articleExcerpt": "早上搭7:15的船上島，傍晚搭16:40的船回稚內。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表（稚内-鴛泊）｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30｜07:15～08:55｜08:25～10:05｜11:15～12:55｜12:05～13:45｜16:40～18:20｜16:40～18:20",
+      "verdict": "verified",
+      "notes": "上次 unsupported 已解決：這句不再說「中午的船趕不上」，只描述排法；搭觀光巴士才趕不上12:05的條件改寫在 C53。7:15→8:55、16:40→18:20 是6/1～9/30的時刻（F185），這句沒寫「夏天」，但同節前一句是「夏天不登山的話，當天來回也排得成」，下一行排法也寫「夏天搭稚內7:15的船」，條件有交代。"
+    },
+    {
+      "claimId": "C53",
+      "articleExcerpt": "觀光巴士12:15回到港口，12:05的船已經開走了，所以搭觀光巴士的話，回程就是16:40那班。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/",
+      "sourceTitle": "時刻表（稚内-鴛泊）｜ハートランドフェリー",
+      "sourceQuote": "12:05～13:45｜16:40～18:20",
+      "verdict": "verified",
+      "notes": "推算：A路線12:15回鴛泊（F28），晚於鴛泊12:05發的船，夏季下一班是16:40（F185）。「搭觀光巴士的話」把條件寫出來了。"
+    },
+    {
+      "claimId": "C54",
+      "articleExcerpt": "船8:55靠岸、巴士9:05就開，只隔10分鐘，要先上網預約並付款，下船直接上車。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "定期観光バスのご案内｜宗谷バス",
+      "sourceQuote": "発車オーライネットから決済を行うと決済完了通知が届き、通知画面がチケット代わりとなります。乗務員に決済完了画面を提示すればチケットレスで乗車できます。",
+      "verdict": "verified",
+      "notes": "F218（抽查與 transport F195 一致）；預約制 F27。"
+    },
+    {
+      "claimId": "C71",
+      "articleExcerpt": "不想看日文網站的話，到鴛泊渡輪站的觀光案內所也能預約觀光巴士。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
+      "sourceTitle": "定期観光バスのご案内｜宗谷バス",
+      "sourceQuote": "お電話・窓口・発車オーライネット（インターネット）にてご予約をお願いします。",
+      "verdict": "verified",
+      "notes": "F31（摘錄已補齊：宗谷巴士「お電話・窓口・発車オーライネット…にてご予約」，鴛泊渡輪站1樓有「観光インフォメーション」）；F218 窗口可預約；F31 主張欄與適用條件欄的「鴛泊渡輪站觀光案內所也受理預約與售票」出處是 rishiri-plus 鴛泊港渡輪站頁，rishiri-island-sights 已上線頁「鴛泊渡輪站1樓的觀光案內所也能預約跟買票」一致。補進的「観光インフォメーション」只證明案內所存在，不是預約這件事本身的原文，但不影響判定。"
+    },
+    {
+      "claimId": "C55",
+      "articleExcerpt": "中間空出來的下午，可以搭13:00的路線巴士到沓形渡輪站下車，接13:45的觀光巴士B路線，16:15回鴛泊趕得上16:40的船。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
+      "sourceTitle": "全コース一覧｜宗谷バス",
+      "sourceQuote": "13:45発 (沓形FT) → 16:15着 (鴛泊FT)",
+      "verdict": "verified",
+      "notes": "F29；路線巴士 F194（13:00→沓形渡輪站13:40）；16:40 F185。B路線只在6/1～9/30，這段寫在夏天一日遊裡，條件一致。"
+    },
+    {
+      "claimId": "C56",
+      "articleExcerpt": "稚內7:15的船 → 觀光巴士A路線 → 住鴛泊 → 隔天清晨佩西岬看日出 → 搭船回稚內。不開車的話，清晨沒有計程車，要看佩西岬日出就住鴛泊。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
+      "sourceTitle": "登山口へのアクセス｜利尻富士町",
+      "sourceQuote": "※タクシー会社もございますが、早朝の営業は行っておりません。",
+      "verdict": "verified",
+      "notes": "作者標為推論。依據：F34 清晨計程車不營業；佩西岬在鴛泊港旁、是看日出的名所（F104）；路線巴士最早一班是6:20從鴛泊發，住沓形的人清晨沒有車到鴛泊（F18 時刻）。推論成立，而且限定「不開車的話」，條件正確。佩西岬只在5～10月開放（F104），這段沒寫季節，但接在夏天行程後面，不算錯。"
+    },
+    {
+      "claimId": "C57",
+      "articleExcerpt": "稚內 → 鴛泊，當天看景點 → 住鴛泊 → 隔天清晨登利尻山 → 再住一晚 → 第三天離島。登山清晨出發、日落前下山",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/secure/1717/02-1%20%E6%B3%A8%E6%84%8F%E5%96%9A%E8%B5%B7%E3%83%81%E3%83%A9%E3%82%B7%EF%BC%88%E6%97%A5%E6%9C%AC%E8%AA%9E%EF%BC%89.pdf",
+      "sourceTitle": "利尻山登山注意喚起チラシ｜利尻富士町",
+      "sourceQuote": "早朝に出発し、日没前に下山",
+      "verdict": "verified",
+      "notes": "F65；排法見研究記錄推算表（F28、F47、F65）。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "登山口靠旅館接送，接送不跨區，所以前一晚住鴛泊，挑有車送鴛泊登山口的旅館。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-no-susume/tozan/",
+      "sourceTitle": "利尻山登山｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "ほぼ全ての宿泊施設が送迎を行っております 。 (鴛泊→沓形登山口や沓形→鴛泊登山口までの送迎は行っておりません)",
+      "verdict": "verified",
+      "notes": "F62；登頂只能走鴛泊路線 F50（沓形路線9合目以上通行止め）。也能從渡輪站走60分到登山口（F219），「靠旅館接送」是依清晨沒有計程車（F34）的建議，不算說過頭。例外：沓形的利尻飯店能送鴛泊登山口（hiking、transport 頁），但它2026年11月30日起冬季休業，正文不寫例外可以接受。"
+    },
+    {
+      "claimId": "C59",
+      "articleExcerpt": "大雨時町公所可能請登山者暫停，登山日最好排在行程前段，跟禮文島一起排的話，還能跟禮文島的日子對調。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1400.htm",
+      "sourceTitle": "その他注意事項｜利尻富士町",
+      "sourceQuote": "枯れ沢は大雨により増水すると横断できなくなります。このため、気象状況により登山自粛依頼を発表することがあります",
+      "verdict": "verified",
+      "notes": "作者標為推論。前半是 F59 的事實。後半是研究記錄推算表寫明的編輯判斷：登山日可能因大雨被請求暫停，排在前段，後面還有日子可以改；和禮文島一起排時，後面的禮文島日子可以和登山日對調。推論成立，沒有寫成保證。"
+    },
+    {
+      "claimId": "C60",
+      "articleExcerpt": "第一次上島、要登山或從稚內搭渡輪來回，住鴛泊最順，渡輪站跟登山口都在這一區。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1399.htm",
+      "sourceTitle": "登山口へのアクセス｜利尻富士町",
+      "sourceQuote": "「フェリーターミナル」～ 3.6ｋｍ 約60分 ／ 「鴛泊市街地」～ 3.5ｋｍ 約10分",
+      "verdict": "verified",
+      "notes": "F219（抽查與 sights F61 一致）、F32 鴛泊渡輪站；rishiri-island-stay 已上線頁同樣的分區建議。"
+    },
+    {
+      "claimId": "C61",
+      "articleExcerpt": "想看日本海的夕陽、夏天要從沓形港搭船去禮文島，就住沓形。",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-place/kamui-terrace/",
+      "sourceTitle": "カムイテラス｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "夕陽スポットでもあり",
+      "verdict": "verified",
+      "notes": "F115、F204；沓形航線 F189。「日本海」照 rishiri-island-stay 已上線頁的寫法。"
+    },
+    {
+      "claimId": "C62",
+      "articleExcerpt": "冬天不少旅館休館，11月起大飯店都休館，能住的多半是小旅館",
+      "sourceUrl": "https://www.rishiri-plus.jp/shima-htsp/marin-hotel/",
+      "sourceTitle": "利尻マリンホテル｜りしぷら RISHIRI PLUS",
+      "sourceQuote": "営業期間 ３月〜１０月 定休日 １１月～２月は休館します。 ／ 【収容人数】１６１名",
+      "verdict": "verified",
+      "notes": "F77、F79（利尻富士觀光飯店130人，11～2月休館）；Aya瀨飯店4～10月見 rishiri-island-stay 已上線頁「鴛泊三間能住上百人的……11月起就休館」。全年營業的是旅館、民宿等（F82）。沓形的利尻飯店住宿到2026年11月29日才休（F73），rishiri-island-stay 頁沒有把它算進「能住上百人」的三間，所以「11月起大飯店都休館」以 stay 頁的定義成立。"
+    },
+    {
+      "claimId": "C63",
+      "articleExcerpt": "只能去一個島的話，想登利尻山就選利尻島，想看花、走海岸步道就選禮文島",
+      "sourceUrl": "https://www.rebun-island.jp/",
+      "sourceTitle": "礼文島観光協会",
+      "sourceQuote": "利尻礼文サロベツ国立公園の中でも約300種類の高山植物が咲く「花の島」",
+      "verdict": "verified",
+      "notes": "作者標為推論，是編輯判斷。依據：利尻山在利尻島（F1）；禮文島以高山植物出名（F215），rebun-island 已上線頁「如果喜歡高山植物跟海岸步道的話，禮文島很值得專程跑一趟」；8時間コース有海岸線路段（F216）。上一版「吃海膽選利尻」已拿掉，現在的分法不會讓兩島重疊。"
+    },
+    {
+      "claimId": "C64",
+      "articleExcerpt": "夏天大約有300種高山植物開花，所以叫「花之浮島」。",
+      "sourceUrl": "https://www.rebun-island.jp/",
+      "sourceTitle": "礼文島観光協会",
+      "sourceQuote": "約300種類の高山植物が咲く「花の島」 ／ 「花の浮島」と呼ばれています",
+      "verdict": "verified",
+      "notes": "F215（抽查與 rebun-island F403 一致）。"
+    },
+    {
+      "claimId": "C65",
+      "articleExcerpt": "兩座島夏天都能從稚內當天來回，不過利尻要登山、禮文要走8小時步道，就都得住一晚。",
+      "sourceUrl": "https://rebun-trail.jp/eighthours/",
+      "sourceTitle": "8時間コース｜礼文島トレイル",
+      "sourceQuote": "全長約16.5km ／ 北から南に向かってご通行ください",
+      "verdict": "verified",
+      "notes": "作者標為推論。利尻當天來回 F185、F28；禮文當天來回 F217（6～9月觀光協會日歸行程）。利尻登山11小時、清晨出發（F47、F65）。禮文：F216 起點在北部的浜中、由北往南、16.5公里；rebun-island 已上線頁「8小時步道的參考步行時間是6小時50分，起點又在北部的濱中，要一路往南走，所以住一晚才排得開」。推論成立。注意：主頁事實表 F216 沒有收「6小時50分」的步行時間，建議作者補進那一列或另加一列。"
+    },
+    {
+      "claimId": "C66",
+      "articleExcerpt": "兩島之間有船，船程大約40到45分鐘，6月到9月一天3個來回，其中1個來回走沓形港，其他時間一天只有1個來回",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "時刻表 利尻～礼文｜ハートランドフェリー",
+      "sourceQuote": "6/1～9/30｜09:30～10:15｜10:40～11:25｜13:15～14:00｜15:30～16:15 ／ 14:25～15:05｜12:50～13:30 ／ 4/28～5/31｜12:15～13:00｜13:25～14:10 ／ 1/1～4/27｜16:00～16:45｜16:25～17:10",
+      "verdict": "verified",
+      "notes": "F188（45分）、F189（40分、沓形一個來回）、F190。所以跳島那天要照船班排，成立。"
+    },
+    {
+      "claimId": "C67",
+      "articleExcerpt": "夏天可以從鴛泊上島、從沓形離島，不用走回頭路，10月到5月進出兩島都得走鴛泊港。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
+      "sourceTitle": "時刻表 利尻～礼文｜ハートランドフェリー",
+      "sourceQuote": "沓形発～香深着｜香深発～沓形着｜14:25～15:05｜12:50～13:30",
+      "verdict": "verified",
+      "notes": "F189 沓形⇄香深只在6/1～9/30；F190 其他季節只有鴛泊⇄香深；F33 沓形渡輪站10月1日起關閉。「沓形港往禮文島的船只在6月到9月開」這半句刪了，季節條件靠「夏天」和「10月到5月」兩頭交代，前一句也寫了「6月到9月……其中1個來回走沓形港」，意思沒有掉。"
+    },
+    {
+      "claimId": "C68",
+      "articleExcerpt": "搭飛機進出的話，把利尻島排在行程的頭或尾，回程要搭飛機的人，最後一晚住利尻島最順，當天不用趕船。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rishiri_airport_202606-09.pdf",
+      "sourceTitle": "空港専用バス時刻表｜宗谷バス",
+      "sourceQuote": "沓形フェリーターミナル 13:15 → 空港ターミナル 13:30 接続航空便 発 利尻 14:05 着 千歳 14:55",
+      "verdict": "verified",
+      "notes": "推算表「飛回新千歲」：開往機場的空港巴士只有沓形13:15一班，香深12:50的船13:30才到沓形，接不上（F193、F189）。這是依2026年夏季ANA與空港巴士的時刻；丘珠全年航班的時刻主頁沒寫，「最順」是判斷，沒有寫成只能這樣排。"
+    },
+    {
+      "claimId": "C69",
+      "articleExcerpt": "還沒決定禮文島要排幾天，可以先讀禮文島值得去嗎，那篇也回答了禮文島幾月去、住幾晚。",
+      "sourceUrl": "https://www.rebun-island.jp/",
+      "sourceTitle": "礼文島観光協会",
+      "sourceQuote": "「花の浮島」と呼ばれています",
+      "verdict": "verified",
+      "notes": "連結句，對照 rebun-island 已上線頁的標題：「禮文島幾月去最好？」「禮文島住幾晚？」都有。sourceQuote 只是該頁的代表來源，連結句本身不靠官方原文。"
+    }
+  ],
+  "summary": {
+    "verified": 69,
+    "incorrect": 0,
+    "unsupported": 0,
+    "outdated": 0,
+    "unreachable": 0,
+    "not-stated": 0
+  }
+}
