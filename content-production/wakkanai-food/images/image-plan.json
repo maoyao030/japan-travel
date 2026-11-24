@@ -7,11 +7,12 @@
   "articleSourceCheckedAt": "2026-10-25",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/wakkanai-food/，不加入 Git、不上傳。 2026-10-29 加入文內照片：扇貝與海鮮丼、生海膽丼的季節兩節各放一張料理照（第一段之後）。料理照片只代表料理，不代表店家。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/wakkanai-food/，不加入 Git、不上傳。 2026-10-29 加入文內照片：扇貝與海鮮丼、生海膽丼的季節兩節各放一張料理照（第一段之後）。料理照片只代表料理，不代表店家。 2026-11-24 補第三張文內照片：稚內拉麵與稚內炒麵一節放稚內拉麵（原封面備選 cover-02 同一張）。宗谷黑牛只有 800 px 寬的照片、伴手禮沒有合格實拍，這兩節不放。",
   "selectedCandidateIds": {
     "cover": "cover-01",
     "seafood-bowl": "seafood-01",
-    "uni-ikura-don": "uni-ikura-01"
+    "uni-ikura-don": "uni-ikura-01",
+    "ramen": "ramen-01"
   },
   "selectedAt": "2026-10-25",
   "slots": [
@@ -269,6 +270,81 @@
             "property": "料理特寫",
             "risk": "low",
             "notes": "沒有人物；茶杯文字不完整，不會被當成特定店家照片。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "ramen",
+      "kind": "inline",
+      "need": "food",
+      "section": "稚內拉麵與稚內炒麵",
+      "purpose": "讓讀者看到稚內拉麵清湯的樣子。",
+      "mustShow": [
+        "稚內的拉麵"
+      ],
+      "mustNotShow": [
+        "店名、招牌或特定店家的實景",
+        "可辨識的人物"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "稚內拉麵與稚內炒麵",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/%E7%A8%9A%E5%86%85%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3_%284932167075%29.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "ramen-01 是 2010 年 8 月檔名標稚內拉麵的一碗清湯拉麵俯視特寫：上面鋪一大片海苔，還有蔥花、筍乾與魚板，背景模糊，沒有店名或人物。2026-11-24 親自看過原圖。正文這一節先講稚內炒麵、再講一般拉麵，照片接在第一段之後，圖說只寫拉麵，不當成稚內炒麵。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "官方素材沿用 2026-10-29 的查核（稚內市網站禁止轉載；開發局照片寬度不足；道廳與宗谷總合振興局沒有合適照片；稚內觀光協會網站暫停）。維基共享資源查「稚内ラーメン」「Wakkanai ramen」「稚内 チャーメン」：稚內炒麵沒有照片；稚內拉麵沿用 2026-10-25 封面備選 sunoochi 這張（regvn 那組理由見封面 slot）。宗谷黑牛查「宗谷黒牛」只有 File:SOYA-KUROUSHI-Sirloin.jpg，800 px 寬，達不到 1200 px，不放。"
+      },
+      "candidates": [
+        {
+          "candidateId": "ramen-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E7%A8%9A%E5%86%85%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3_(4932167075).jpg",
+          "creatorName": "sunoochi",
+          "sourceTitle": "File:稚内ラーメン (4932167075).jpg",
+          "sourceDescription": "稚内ラーメン（Flickr 匯入，FlickreviewR 已核對 CC BY 2.0，分類 Culture of Wakkanai、Ramen of Hokkaido）",
+          "takenAt": "2010-08-23",
+          "width": 4256,
+          "height": 2832,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-11-24",
+          "matchType": "contextual",
+          "matchLimits": "只看得出是一碗清湯拉麵；拍攝地點只靠檔名與分類，看不出是哪一家店，也不是稚內炒麵。圖說只寫稚內的拉麵，不說是哪一家。",
+          "whyItFits": "檔名與分類標示為稚內拉麵；清湯、海苔與魚板，能代表文章後段的稚內拉麵。",
+          "altDraft": "一碗稚內拉麵，清湯上鋪著一大片海苔，還有蔥花、筍乾與魚板",
+          "captionDraft": "稚內的拉麵（2010 年）。",
+          "creditDraft": "照片：sunoochi／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "料理特寫",
+            "risk": "low",
+            "notes": "背景模糊，沒有店名或人物。"
           },
           "checks": {
             "fullImageInspected": true,
