@@ -2382,3 +2382,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - **Git**：`main` 已推送。
 - **唯一下一步**：Darren 看線上的利尻島主頁，說可不可以當地點主頁的範本、下一篇要改哪個地點。
 
+## 2026-11-24 Claude Code｜利尻島主頁摘要與序言再改一次
+
+- **起因**：Darren 看上一版摘要說「這些斷點好快喔」（五件事各半句）。
+- **已完成（已上線）**：摘要與兩段序言換成「先講山，再講不爬山的人吃什麼」（Darren 從三種裡選的）。查核 69 筆全部 verified，`gates_clear`，`npm test` 246 個通過。候選寫法在 `content-experiments/place-entry-study-2026-11-19/sample-rishiri-island/top-variants.md`，舊的摘要在 `content-production/rishiri-island/pre-intro-2026-11-24/`。
+- **寫進規則**：摘要與序言一段只講一兩件事、講完整再換下一件；兩者連著讀要順；序言點過的賣點，後面小段照樣完整寫（寫作 Skill `references/place-entry-page.md`）。
+- **Git**：`main` 已推送。
+- **唯一下一步**：Darren 看線上的利尻島主頁，說可不可以當地點主頁的範本、下一篇要改哪個地點。
+

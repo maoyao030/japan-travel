@@ -1,10 +1,10 @@
 # 驗收紀錄：rishiri-island（2026-11-24，地點主頁改版）
 
 - 文章：`content-production/rishiri-island/reader-preview.md`（利尻島旅遊攻略，景點、美食與一日遊排法一次看）
-- SHA-256（換行統一成 LF 後計算）：`c41c039a8c7b93d16250437422dec0f7e59fdb99363b4d3d468fb27a9b8833ca`
+- SHA-256（換行統一成 LF 後計算）：`4fdba73f18d270aae38b271511bdd03eaa713e9ee242d607e1c57ca2e5c7be81`
 - 規則：寫作 Skill `references/place-entry-page.md`（Darren 2026-11-21 同意）、`sentence-rhythm.md`、`heading-style.md`。研究與樣本在 `content-experiments/place-entry-study-2026-11-19/`。舊版封包在 `pre-place-entry/`。
 - 寫作：一位作者（Sonnet 5.5），事實只用本地點主頁與七個子頁、禮文島與稚內主頁已查證的事實表；Darren 看過樣本四輪（第一節寫畫面、小標題「名字｜賣點」、專有名詞用台灣多數叫法）。
-- 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作），樣本階段 3 輪、正式稿 3 輪：正式稿第 1 輪 69 筆裡 2 筆 unsupported，第 2 輪 1 筆，第 3 輪全部 verified；上線後換大標題與序言再查 1 輪，68 筆全部 verified。查核對的是事實表的原文摘錄與已上線子頁，沒有重新開官方網址；F220（姬沼倒影）是協調者 2026-11-20 用瀏覽器開北海道官方觀光網站讀到的。
+- 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作），樣本階段 3 輪、正式稿 3 輪：正式稿第 1 輪 69 筆裡 2 筆 unsupported，第 2 輪 1 筆，第 3 輪全部 verified；上線後換大標題與序言再查 2 輪，最後 69 筆全部 verified。查核對的是事實表的原文摘錄與已上線子頁，沒有重新開官方網址；F220（姬沼倒影）是協調者 2026-11-20 用瀏覽器開北海道官方觀光網站讀到的。
 - 讀者驗收：讀者驗收子代理（Opus 5.5，沒寫過、沒查核過），八題驗收 2 次（`acceptance-place-entry.md`）：第 1 次 6 項要改；第 2 次只剩 1 句重複，改完由查核者確認，驗收者表示不用再驗。
 - 協調：人工 session（Claude Code）。Darren 2026-11-21 說「要，換上線」。
 
@@ -15,7 +15,7 @@
 | 格式 | `mechanical_clear`（`audit_answer_first.py`） |
 | 標題 | `acceptable`（八題第 6 題過；`heading_review.py` 改動 0 個；`planning:check` 通過） |
 | 讀者價值 | `acceptable`（第 2 次驗收只剩 1 句重複，已改） |
-| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，68 項 claim 全部 verified） |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，69 項 claim 全部 verified） |
 | 口吻與標點 | `check-voice.mjs` 通過（正文約 2,580 字） |
 | 名字與表格連結 | `check-benchmark.mjs` 沒有錯誤 |
 | 圖片 | 封面沿用；文內照片與嵌入因標題全換，重新規劃後上傳 |
@@ -37,6 +37,7 @@
 - 摘要與序言改成先講只有利尻島才有的東西（白色戀人包裝上的山、現剝海膽、必比登的味樂、日本唯一的野生雛罌粟），再給幾月去、排幾天；「利尻富士」移到利尻山小段。
 - 協調者刪了摘要裡和利尻山小段重複的石屋製菓那半句。
 - 查核者確認新標題寫的景點、美食、一日遊排法這頁都有。
+- Darren 看了第一版摘要說「這些斷點好快喔」（山、白色戀人、湖、海膽、氣溫，每個逗號換一件事）。重寫三種後他選「先講山，再講不爬山的人吃什麼」那一種（「三好很多」）：摘要只講利尻山與登頂要留一整天，序言第一段用「不爬山的話」接到味樂與剝海膽，第二段給位置、幾月去、排幾天。
 
 ## 待辦
 
