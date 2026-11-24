@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "articleId": "rishiri-island",
-  "articleSha256": "a2487b2f3e119f26d67418f90ed9f228d521cc3ccd791b8b05694728b218ec7d",
-  "checker": "事實查核 agent（Claude Opus 5.5 子代理，不是作者，只讀）。2026-11-21 主頁改版查核、2026-11-24 改稿後重查：逐句對照 content-production/rishiri-island/reference-review.md 事實表的日文原文摘錄；新增的 F197～F219 逐筆抽查各子頁研究記錄（sights、food、weather、festival、transport、rebun-island）的原列與已上線子頁 reader-preview.md。依協調者指示本輪沒有重新開官方網址：主頁事實全部取自已上線、已查核的子頁，事實表各列在 2026-10-18～2026-11-02 已由先前查核與重寫前重查（2026-11-01）實際開過官方頁。sourceUrl 與 sourceQuote 照事實表原列。 2026-11-24 重查：對這一版逐句重判；新列 F220（visit-hokkaido 姫沼頁，協調者 2026-11-20 用瀏覽器讀到）、F221、F222 與補齊的 F202、F205 照事實表與子頁原列核對，本輪仍未自行開網址。 2026-11-24 第二次重查：只重判改過的句子（C14、C18、C24、C25、C53、C67、C70、C71），其餘沿用。",
+  "articleSha256": "c41c039a8c7b93d16250437422dec0f7e59fdb99363b4d3d468fb27a9b8833ca",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，不是作者，只讀）。2026-11-21 主頁改版查核、2026-11-24 改稿後重查：逐句對照 content-production/rishiri-island/reference-review.md 事實表的日文原文摘錄；新增的 F197～F219 逐筆抽查各子頁研究記錄（sights、food、weather、festival、transport、rebun-island）的原列與已上線子頁 reader-preview.md。依協調者指示本輪沒有重新開官方網址：主頁事實全部取自已上線、已查核的子頁，事實表各列在 2026-10-18～2026-11-02 已由先前查核與重寫前重查（2026-11-01）實際開過官方頁。sourceUrl 與 sourceQuote 照事實表原列。 2026-11-24 重查：對這一版逐句重判；新列 F220（visit-hokkaido 姫沼頁，協調者 2026-11-20 用瀏覽器讀到）、F221、F222 與補齊的 F202、F205 照事實表與子頁原列核對，本輪仍未自行開網址。 2026-11-24 第二次重查：只重判改過的句子（C14、C18、C24、C25、C53、C67、C70、C71），其餘沿用。 2026-11-24 第三次重查（新大標題與序言）：重判 H1 底下兩段序言、利尻山小段新加的第一句、味樂與利尻雛罌粟拿掉日文括號的句子；舊序言的 C3、C5 已拿掉，其餘沿用。",
   "checkedAt": "2026-11-24",
   "claims": [
     {
       "claimId": "C1",
-      "articleExcerpt": "利尻島在稚內外海，從稚內搭渡輪大約1小時40分就到。",
+      "articleExcerpt": "利尻島在稚內外海，搭渡輪約1小時40分",
       "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1416.htm",
       "sourceTitle": "交通アクセス｜利尻富士町",
       "sourceQuote": "稚 内 → 利 尻 １時間４０分",
@@ -16,43 +16,34 @@
     },
     {
       "claimId": "C2",
-      "articleExcerpt": "島的正中央是標高1,721公尺的利尻山，周圍沒有別的山相連，所以也叫「利尻富士」。",
+      "articleExcerpt": "利尻山標高1,721公尺，周圍沒有別的山相連，又叫「利尻富士」。",
       "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1396.htm",
       "sourceTitle": "登山情報｜利尻富士町",
       "sourceQuote": "標高1,721mの独立峰、別名「利尻富士」とも呼ばれ",
       "verdict": "verified",
-      "notes": "F1。「所以也叫」是把獨立峰與別名接成因果，原文兩者並列，意思沒有走樣。"
+      "notes": "F1「標高1,721mの独立峰、別名「利尻富士」」。這一版沒有「所以」，照原文並列。"
     },
     {
-      "claimId": "C3",
-      "articleExcerpt": "想登日本百名山、在產地吃海膽，或者看島上特有的花，利尻島就值得專程排進北海道行程。",
-      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1396.htm",
-      "sourceTitle": "登山情報｜利尻富士町",
-      "sourceQuote": "日本百名山百選では北の秀峰として一番目に数えられています",
+      "claimId": "C72",
+      "articleExcerpt": "利尻島上有兩度拿下米其林必比登推介的利尻拉麵味樂（利尻らーめん味楽）、日本唯一的野生雛罌粟（リシリヒナゲシ），清晨還能到鴛泊港旁的岬角看日出。",
+      "sourceUrl": "https://hirmiraku.com/",
+      "sourceTitle": "利尻らーめん味楽【公式】",
+      "sourceQuote": "ミシュランガイド北海道2012・2017特別版にて ビブグルマン 2期連続受賞",
       "verdict": "verified",
-      "notes": "編輯判斷，三個理由各有事實：F1 百名山、F123 海膽採收（https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm）、F71 日本唯一的野生雛罌粟（https://www.rishiri-plus.jp/shima-flower/）。"
+      "notes": "F129；雛罌粟 F71「日本に自生する唯一のケシ科ケシ属のヒナゲシです」（https://www.rishiri-plus.jp/shima-flower/）；岬角看日出 F104「標高９０mほどの巨大な岩山「ペシ岬」 ／ ご来光の名所」（https://www.rishiri-plus.jp/shima-place/peshi-misaki/）。序言沒寫雛罌粟要登到9合目、7月上旬到中旬才看得到，這兩個條件寫在後面的小段（C36），序言只說島上有，不算說過頭。"
     },
     {
       "claimId": "C4",
-      "articleExcerpt": "6月到9月最適合去，正是海膽的採收期",
+      "articleExcerpt": "6月到9月最適合去",
       "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1161.htm",
       "sourceTitle": "海の幸｜利尻富士町",
       "sourceQuote": "地元では「ガンゼ」と呼ばれるこのエゾバフンウニ！採取時期は6月から9月まで",
       "verdict": "verified",
-      "notes": "F123。解禁是6月中旬（F124），月份表另有寫。"
-    },
-    {
-      "claimId": "C5",
-      "articleExcerpt": "觀光巴士主要在5月下旬到9月行駛。",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course",
-      "sourceTitle": "全コース一覧｜宗谷バス",
-      "sourceQuote": "運行期間：2026年5月3日～5月5日、5月20日～9月30日まで",
-      "verdict": "verified",
-      "notes": "F26。「主要」涵蓋了5/3～5/5的短期行駛。2026年資料。"
+      "notes": "F123 海膽採收6～9月；F26 觀光巴士只在夏季運行（5/3～5/5、5/20～9/30）。和「利尻島幾月去最好？」一節的「6月下旬到7月中旬最好」不衝突，那是範圍內最好的時段。"
     },
     {
       "claimId": "C6",
-      "articleExcerpt": "不登山住1晚就夠，登山要住2晚。（同第63行「不登山排1晚，登山排2晚」）",
+      "articleExcerpt": "不登山排1晚，登山排2晚。（H1 底下序言第二段；同「利尻島自由行要排幾天」一節第一句）",
       "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1397.htm",
       "sourceTitle": "コース概要｜利尻富士町",
       "sourceQuote": "山頂で１時間の休憩を考えると、天候のいい日でも１１時間必要です。",
@@ -286,7 +277,7 @@
     },
     {
       "claimId": "C33",
-      "articleExcerpt": "沓形的利尻拉麵味樂（利尻らーめん味楽）在米其林指南北海道2012與2017特別版，連續兩次拿到必比登推介。",
+      "articleExcerpt": "沓形的利尻拉麵味樂在米其林指南北海道2012與2017特別版，連續兩次拿到必比登推介。",
       "sourceUrl": "https://hirmiraku.com/",
       "sourceTitle": "利尻らーめん味楽【公式】",
       "sourceQuote": "ミシュランガイド北海道2012・2017特別版にて ビブグルマン 2期連続受賞",
@@ -313,7 +304,7 @@
     },
     {
       "claimId": "C36",
-      "articleExcerpt": "利尻雛罌粟（リシリヒナゲシ）是日本唯一的野生雛罌粟，開在登山路線9合目附近的碎石地，花期是7月上旬到中旬，要登山才看得到。",
+      "articleExcerpt": "利尻雛罌粟是日本唯一的野生雛罌粟，開在登山路線9合目附近的碎石地，花期是7月上旬到中旬，要登山才看得到。",
       "sourceUrl": "https://www.rishiri-plus.jp/shima-flower/",
       "sourceTitle": "花図鑑｜りしぷら RISHIRI PLUS",
       "sourceQuote": "７月上旬～７月中旬 利尻山９合目付近の礫地 ／ 日本に自生する唯一のケシ科ケシ属のヒナゲシです",
@@ -628,7 +619,7 @@
     }
   ],
   "summary": {
-    "verified": 69,
+    "verified": 68,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
