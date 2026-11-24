@@ -2397,3 +2397,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 已上線（Sanity 修訂 Ev0Juh2Y4bpY1hEeby9ni1）；事實查核 69 項通過，SHA（LF）b68d65af…0d3d，`gates_clear`，`npm test` 246 通過。改前備份在 `content-production/rishiri-island/pre-uni-2026-11-24/`。
 - 規則：地點主頁寫法「有什麼好玩、好吃的」多一條，賣點寫讀者得到什麼、不寫動作。
 - 尚未完成與唯一下一步不變：等 Darren 看線上版，決定能不能當地點主頁範本、下一個改哪個地點。
+
+## 2026-11-24 地點主頁加吸引力審查者（Claude Code）
+
+- 已決定：Darren 問「這樣不是應該多一個 agent 來處理這件事嗎」。地點主頁流程在作者與事實查核之間多一位吸引力審查者，清單在寫作 Skill `references/place-entry-hook-review.md`（五個問題，各附 Darren 的原話）；`place-entry-page.md`、`AGENTS.md`、`RULES_OVERVIEW.md` 已同步。
+- 已完成：拿禮文島主頁舊版試跑一次（Opus 5.5），結果在 `content-experiments/place-entry-study-2026-11-19/hook-review-trial-rebun-island.md`：退回 12 處，並從子頁找出主頁沒用上的賣點（澄海岬的禮文藍、北方金絲雀公園是吉永小百合電影的外景校舍、觀光協會說島上的夏天就是海膽）。
+- 尚未完成：審查者挑的賣點合不合 Darren 的口味還沒給他確認；禮文島主頁還沒照新寫法改；這一步還沒接進自動寫作（`local-writer.md` 由另一個 session 負責）。
+- 測試與 Git：只改規則文件與研究檔，`npm test` 通過，已推 `main`。
+- 唯一下一步：Darren 看審查者挑的賣點對不對，再決定要不要拿禮文島主頁照整套流程不問他跑一次。
