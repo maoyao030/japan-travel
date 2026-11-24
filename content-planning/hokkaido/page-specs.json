@@ -1098,26 +1098,41 @@
     {
       "articleId": "rebun-island-festival",
       "priority": 11,
-      "decision": "merge",
+      "decision": "keep",
       "pageType": "aspect-page",
       "aspect": "festival",
-      "planningTitle": "禮文島祭典，敦盛草感謝祭、水產祭與花火大會",
+      "planningTitle": "禮文島祭典，花火大會、神社祭與敦盛草感謝祭",
       "primaryQuery": "禮文島祭典",
       "secondaryQueries": [],
       "targetPath": "/places/rebun-island/festival/",
       "routeDecision": "resolved",
       "routeMode": "parent-direct-article",
       "primaryHubId": "hub-places-rebun-island",
-      "contentBoundary": "禮文島的祭典與活動。",
+      "contentBoundary": "禮文島的祭典與活動：敦盛草感謝祭、最北花之馬拉松、7 月的神社祭與水產祭、8 月的禮文故鄉祭（花火大會與海峽祭）、溫泉美食健行；只寫官方公布的日期與近年規律並附年份，不推算明年日期；船班與住宿只摘要並連過去。",
       "readerTaskContract": {
-        "primaryTask": "讓旅客知道禮文島的祭典在哪幾天、要不要配合排行程。",
+        "primaryTask": "讓旅客知道禮文島的祭典與花火在哪幾天、在哪裡，要不要配合排行程，看完當天怎麼住。",
         "mustAnswer": [
-          "各活動日期與地點"
+          "一年有哪些祭典、各在幾月與會場",
+          "花火大會與海峽祭的日期、會場與遇到壞天氣",
+          "7月中旬的神社祭與水產祭怎麼看、從渡輪站怎麼去",
+          "敦盛草感謝祭與最北花之馬拉松，遊客能不能參加",
+          "看祭典的船票與住宿怎麼排"
         ],
         "sharedGuides": []
       },
       "bookingChannels": "not-applicable",
       "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-24",
+          "query": "禮文島祭典",
+          "autocompleteInput": "禮文島祭典",
+          "suggestions": [],
+          "serpIntentConfirmed": true,
+          "serpNotes": "2026-11-24 中文自動完成：「禮文島祭典」「禮文島 祭典」「禮文島花火」「禮文島 煙火」「禮文島活動」「禮文島 夏天」「禮文島 馬拉松」都沒有建議（利尻島祭典同樣沒有）；搜尋量只決定先後，不決定要不要寫，照利尻島祭典頁用「禮文島祭典」。"
+        },
         {
           "provider": "Ahrefs MCP",
           "ahrefsVerified": true,
@@ -1130,36 +1145,68 @@
           "serpNotes": ""
         }
       ],
-      "researchSources": "content-production/rebun-island/reference-review.md（事實 F1–F126，可直接分配）",
-      "mergeInto": "rebun-island",
-      "mergeReason": "2026-10-18 地點研究：本主題事實少於 15 筆（天氣 9、祭典 5），依短頁規則併進禮文島主頁寫成一節"
+      "researchSources": "content-production/rebun-island-festival/reference-review.md、research-notes.md（地點事實表 rebun-island:F644～F676）",
+      "splitFromMain": {
+        "decidedBy": "darren",
+        "decidedAt": "2026-11-24",
+        "from": "rebun-island",
+        "reason": "Darren 2026-11-24 同意新增：原本照短頁規則併進禮文島主頁，主頁因此過長；補研究後過短頁門檻，照利尻島的做法獨立成頁（content-planning/hokkaido/rebun-island-split-2026-11-24.md）"
+      }
     },
     {
       "articleId": "rebun-island-weather",
       "priority": 9,
-      "decision": "merge",
+      "decision": "keep",
       "pageType": "aspect-page",
       "aspect": "weather",
-      "planningTitle": "禮文島天氣，每個月的氣溫與穿著",
+      "planningTitle": "禮文島天氣，各月氣溫、霧與冬季停航",
       "primaryQuery": "禮文島天氣",
       "secondaryQueries": [
-        "禮文島 天氣"
+        "禮文島氣溫",
+        "禮文島9月",
+        "禮文島冬天"
       ],
       "targetPath": "/places/rebun-island/weather/",
       "routeDecision": "resolved",
       "routeMode": "parent-direct-article",
       "primaryHubId": "hub-places-rebun-island",
-      "contentBoundary": "禮文島的月平均氣溫與穿著（氣象廳礼文觀測站平年值）。",
+      "contentBoundary": "禮文島的月平均氣溫、雨量、日照與風（氣象廳禮文觀測站平年值，不是預報）、各季穿著、霧與雲海的條件、冬季的雪與強風、天候造成的渡輪停航多寡與當天怎麼查；改票與班次在渡輪頁，步道與看雲海的路線在健行頁。",
       "readerTaskContract": {
-        "primaryTask": "讓旅客依月份判斷禮文島的氣溫與穿著，以及天候對渡輪和步道的影響。",
+        "primaryTask": "讓旅客依月份判斷禮文島的氣溫與穿著、霧與停航的機會，決定幾月去、要不要預留備用日。",
         "mustAnswer": [
-          "各月氣溫",
-          "夏天也要外套"
+          "各月氣溫與雨量",
+          "幾月晴天多、天氣穩定",
+          "夏天也要帶外套嗎、各季穿什麼",
+          "霧與雲海幾月多、什麼條件看得到",
+          "冬天多冷、幾月下雪、風多強",
+          "幾月渡輪容易停航、停航怎麼知道"
         ],
         "sharedGuides": []
       },
       "bookingChannels": "not-applicable",
       "keywordEvidence": [
+        {
+          "provider": "Google autocomplete",
+          "locale": "zh-TW",
+          "ahrefsVerified": false,
+          "checkedAt": "2026-11-24",
+          "query": "禮文島天氣",
+          "autocompleteInput": "禮文島",
+          "suggestions": [
+            "禮文島",
+            "禮文島天氣",
+            "禮文島 利尻島",
+            "禮文島觀光巴士",
+            "禮文島旅遊",
+            "禮文島交通",
+            "禮文島租機車",
+            "禮文島海膽",
+            "禮文島 三井觀光飯店",
+            "禮文島租車"
+          ],
+          "serpIntentConfirmed": true,
+          "serpNotes": "2026-11-24 中文自動完成：輸入「禮文島」時第 2 個建議就是「禮文島天氣」；「禮文島 氣溫」「禮文島 9月」「禮文島 冬天」各自出現；「禮文島 雲海」「禮文島 穿」「禮文島 霧」「禮文島 6月／7月／8月」沒有建議。"
+        },
         {
           "provider": "Ahrefs MCP",
           "ahrefsVerified": true,
@@ -1172,9 +1219,13 @@
           "serpNotes": ""
         }
       ],
-      "researchSources": "content-production/rebun-island/reference-review.md（事實 F1–F126，可直接分配）",
-      "mergeInto": "rebun-island",
-      "mergeReason": "2026-10-18 地點研究：本主題事實少於 15 筆（天氣 9、祭典 5），依短頁規則併進禮文島主頁寫成一節"
+      "researchSources": "content-production/rebun-island-weather/reference-review.md、research-notes.md（地點事實表 rebun-island:F609～F643）",
+      "splitFromMain": {
+        "decidedBy": "darren",
+        "decidedAt": "2026-11-24",
+        "from": "rebun-island",
+        "reason": "Darren 2026-11-24 同意新增：原本照短頁規則併進禮文島主頁，主頁因此過長；補研究後過短頁門檻，照利尻島的做法獨立成頁（content-planning/hokkaido/rebun-island-split-2026-11-24.md）"
+      }
     },
     {
       "articleId": "wakkanai-ferry",
@@ -7228,7 +7279,18 @@
       "groupId": "hokkaido-wakkanai",
       "approvedBy": "darren",
       "approvedAt": "2026-10-18",
-      "scope": "26 頁保留項目整批核准（同頂層 approval）"
+      "scope": "26 頁保留項目整批核准（同頂層 approval）",
+      "additions": [
+        {
+          "approvedBy": "darren",
+          "approvedAt": "2026-11-24",
+          "articleIds": [
+            "rebun-island-weather",
+            "rebun-island-festival"
+          ],
+          "scope": "Darren 2026-11-24 同意新增：原本照短頁規則併進禮文島主頁，主頁因此過長；補研究後過短頁門檻，照利尻島的做法獨立成頁（content-planning/hokkaido/rebun-island-split-2026-11-24.md）"
+        }
+      ]
     },
     {
       "groupId": "hokkaido-asahikawa",

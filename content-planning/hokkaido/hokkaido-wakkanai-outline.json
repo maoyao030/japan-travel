@@ -3,23 +3,23 @@
   "groupId": "hokkaido-wakkanai",
   "region": "hokkaido",
   "status": "drafting",
-  "merged": [
-    {
-      "articleId": "rebun-island-weather",
-      "mergedInto": "rebun-island",
-      "reason": "本主題事實少於 15 筆，併進地點主頁寫成一節（短頁規則）"
-    },
-    {
-      "articleId": "rebun-island-festival",
-      "mergedInto": "rebun-island",
-      "reason": "本主題事實少於 15 筆，併進地點主頁寫成一節（短頁規則）"
-    }
-  ],
-  "updatedAt": "2026-10-18",
+  "merged": [],
+  "updatedAt": "2026-11-24",
   "approval": {
     "approvedBy": "darren",
     "approvedAt": "2026-10-18",
-    "scope": "26 頁整批核准；大綱細節依規則默許"
+    "scope": "26 頁整批核准；大綱細節依規則默許",
+    "additions": [
+      {
+        "approvedBy": "darren",
+        "approvedAt": "2026-11-24",
+        "articleIds": [
+          "rebun-island-weather",
+          "rebun-island-festival"
+        ],
+        "reason": "禮文島天氣與祭典原本照短頁規則併進主頁（2026-10-18），主頁因此過長；2026-11-24 補研究後兩個主題都過短頁門檻（天氣約 40 筆、祭典 39 筆），Darren 同意照利尻島的做法各自成頁，主頁拿掉這兩節、改成連過去。紀錄見 content-planning/hokkaido/rebun-island-split-2026-11-24.md"
+      }
+    ]
   },
   "pages": [
     {
@@ -2700,6 +2700,369 @@
       ]
     },
     {
+      "articleId": "rebun-island-weather",
+      "pageType": "aspect-page",
+      "placeId": "rebun-island",
+      "targetPath": "/places/rebun-island/weather/",
+      "primaryQuery": "禮文島天氣",
+      "secondaryQueries": [
+        "禮文島氣溫",
+        "禮文島9月",
+        "禮文島冬天"
+      ],
+      "h1": "禮文島天氣，各月氣溫、霧與冬季停航",
+      "mustAnswer": [
+        "各月氣溫與雨量",
+        "幾月晴天多、天氣穩定",
+        "夏天也要帶外套嗎、各季穿什麼",
+        "霧與雲海幾月多、什麼條件看得到",
+        "冬天多冷、幾月下雪、風多強",
+        "幾月渡輪容易停航、停航怎麼知道"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "禮文島天氣與各月禮文島氣溫",
+          "facts": [
+            "rebun-island:F59",
+            "rebun-island:F118",
+            "rebun-island:F488",
+            "rebun-island:F491",
+            "rebun-island:F610",
+            "rebun-island:F609",
+            "rebun-island:F619",
+            "rebun-island:F631",
+            "rebun-island:F642"
+          ],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文島幾月晴天多？",
+          "facts": [
+            "rebun-island:F490",
+            "rebun-island:F612",
+            "rebun-island:F620",
+            "rebun-island:F621"
+          ],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文島9月天氣穩定，10月以後轉冷",
+          "facts": [
+            "rebun-island:F623",
+            "rebun-island:F59",
+            "rebun-island:F612",
+            "rebun-island:F488",
+            "rebun-island:F616"
+          ],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "text": "禮文島夏天也要帶外套嗎？",
+          "facts": [
+            "rebun-island:F59",
+            "rebun-island:F622",
+            "rebun-island:F641",
+            "rebun-island:F444",
+            "rebun-island:F613",
+            "rebun-island:F615",
+            "rebun-island:F468"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文島春天與秋天的早晚溫差",
+          "facts": [
+            "rebun-island:F444",
+            "rebun-island:F59",
+            "rebun-island:F118"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "text": "禮文島的霧與雲海",
+          "facts": [
+            "rebun-island:F442",
+            "rebun-island:F621",
+            "rebun-island:F632",
+            "rebun-island:F36",
+            "rebun-island:F490"
+          ],
+          "answers": [
+            3
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文島雲海在什麼日子看得到？",
+          "facts": [
+            "rebun-island:F627",
+            "rebun-island:F628",
+            "rebun-island:F629",
+            "rebun-island:F630",
+            "rebun-island:F626",
+            "rebun-island:F1"
+          ],
+          "answers": [
+            3
+          ]
+        },
+        {
+          "level": 2,
+          "text": "禮文島冬天多冷、雪多不多？",
+          "facts": [
+            "rebun-island:F118",
+            "rebun-island:F614",
+            "rebun-island:F624",
+            "rebun-island:F625",
+            "rebun-island:F619",
+            "rebun-island:F631"
+          ],
+          "answers": [
+            4
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文島的風，秋冬強風日多",
+          "facts": [
+            "rebun-island:F489",
+            "rebun-island:F611",
+            "rebun-island:F617",
+            "rebun-island:F618",
+            "rebun-island:F402",
+            "rebun-island:F633",
+            "rebun-island:F36"
+          ],
+          "answers": [
+            4
+          ]
+        },
+        {
+          "level": 2,
+          "text": "禮文島幾月渡輪容易停航？",
+          "facts": [
+            "rebun-island:F634",
+            "rebun-island:F635",
+            "rebun-island:F636",
+            "rebun-island:F637",
+            "rebun-island:F88"
+          ],
+          "answers": [
+            5
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文島渡輪停航怎麼知道？",
+          "facts": [
+            "rebun-island:F638",
+            "rebun-island:F639",
+            "rebun-island:F640"
+          ],
+          "answers": [
+            5
+          ]
+        }
+      ],
+      "headingOrder": "traveler-journey"
+    },
+    {
+      "articleId": "rebun-island-festival",
+      "pageType": "aspect-page",
+      "placeId": "rebun-island",
+      "targetPath": "/places/rebun-island/festival/",
+      "primaryQuery": "禮文島祭典",
+      "secondaryQueries": [],
+      "h1": "禮文島祭典，花火大會、神社祭與敦盛草感謝祭",
+      "mustAnswer": [
+        "一年有哪些祭典、各在幾月與會場",
+        "花火大會與海峽祭的日期、會場與遇到壞天氣",
+        "7月中旬的神社祭與水產祭怎麼看、從渡輪站怎麼去",
+        "敦盛草感謝祭與最北花之馬拉松，遊客能不能參加",
+        "看祭典的船票與住宿怎麼排"
+      ],
+      "headings": [
+        {
+          "level": 2,
+          "text": "禮文島祭典與活動月曆",
+          "facts": [
+            "rebun-island:F41",
+            "rebun-island:F474",
+            "rebun-island:F656",
+            "rebun-island:F662",
+            "rebun-island:F664",
+            "rebun-island:F668",
+            "rebun-island:F667",
+            "rebun-island:F669"
+          ],
+          "answers": [
+            0
+          ]
+        },
+        {
+          "level": 2,
+          "text": "禮文島初夏的敦盛草感謝祭",
+          "facts": [
+            "rebun-island:F41",
+            "rebun-island:F499",
+            "rebun-island:F664",
+            "rebun-island:F665",
+            "rebun-island:F666"
+          ],
+          "answers": [
+            3
+          ]
+        },
+        {
+          "level": 3,
+          "text": "最北花之馬拉松，遊客也能報名嗎？",
+          "facts": [
+            "rebun-island:F475",
+            "rebun-island:F498",
+            "rebun-island:F657",
+            "rebun-island:F658",
+            "rebun-island:F659",
+            "rebun-island:F661",
+            "rebun-island:F662",
+            "rebun-island:F663"
+          ],
+          "answers": [
+            3
+          ]
+        },
+        {
+          "level": 2,
+          "text": "禮文島7月中旬的神社祭與水產祭",
+          "facts": [
+            "rebun-island:F474",
+            "rebun-island:F669",
+            "rebun-island:F670"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "text": "嚴島神社祭，小學生帶頭的神轎行列",
+          "facts": [
+            "rebun-island:F669",
+            "rebun-island:F670",
+            "rebun-island:F671"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "text": "禮文神社祭在島北的船泊",
+          "facts": [
+            "rebun-island:F474",
+            "rebun-island:F672"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 3,
+          "text": "水產祭吃花魚、海膽，看抓章魚",
+          "facts": [
+            "rebun-island:F476",
+            "rebun-island:F667",
+            "rebun-island:F668"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "text": "禮文島8月的花火大會與海峽祭",
+          "facts": [
+            "rebun-island:F497",
+            "rebun-island:F644",
+            "rebun-island:F648",
+            "rebun-island:F649",
+            "rebun-island:F655",
+            "rebun-island:F656",
+            "rebun-island:F70"
+          ],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "海峽祭的美食攤與拔河",
+          "facts": [
+            "rebun-island:F646",
+            "rebun-island:F650",
+            "rebun-island:F652",
+            "rebun-island:F654"
+          ],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 3,
+          "text": "花火大會遇到壞天氣會延期嗎？",
+          "facts": [
+            "rebun-island:F645",
+            "rebun-island:F646",
+            "rebun-island:F647",
+            "rebun-island:F653"
+          ],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "text": "禮文島8、9月的溫泉美食健行",
+          "facts": [
+            "rebun-island:F477",
+            "rebun-island:F673",
+            "rebun-island:F674",
+            "rebun-island:F675"
+          ],
+          "answers": []
+        },
+        {
+          "level": 2,
+          "text": "禮文島看祭典的船票與住宿",
+          "facts": [
+            "rebun-island:F11",
+            "rebun-island:F676",
+            "rebun-island:F651",
+            "rebun-island:F644"
+          ],
+          "answers": [
+            4
+          ]
+        }
+      ],
+      "headingOrder": "traveler-journey"
+    },
+    {
       "articleId": "rebun-island",
       "pageType": "place-entry",
       "placeId": "rebun-island",
@@ -2713,10 +3076,7 @@
       "mustAnswer": [
         "值不值得去、住幾晚",
         "幾月去",
-        "一日來回可不可行",
-        "各月氣溫",
-        "夏天也要外套",
-        "各活動日期與地點"
+        "一日來回可不可行"
       ],
       "headings": [
         {
@@ -2937,105 +3297,6 @@
             "rebun-island:F406"
           ],
           "answers": []
-        },
-        {
-          "level": 2,
-          "text": "禮文島各月氣溫與穿著",
-          "facts": [
-            "rebun-island:F59",
-            "rebun-island:F491",
-            "rebun-island:F488",
-            "rebun-island:F118"
-          ],
-          "answers": [
-            3
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文島的霧與雲海",
-          "facts": [
-            "rebun-island:F442",
-            "rebun-island:F490",
-            "rebun-island:F1"
-          ],
-          "answers": [
-            3
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文島夏天也要帶外套嗎？",
-          "facts": [
-            "rebun-island:F59",
-            "rebun-island:F489",
-            "rebun-island:F36",
-            "rebun-island:F444",
-            "rebun-island:F468"
-          ],
-          "answers": [
-            4
-          ]
-        },
-        {
-          "level": 2,
-          "text": "禮文島的祭典與活動",
-          "facts": [
-            "rebun-island:F41",
-            "rebun-island:F477",
-            "rebun-island:F499",
-            "rebun-island:F475",
-            "rebun-island:F498"
-          ],
-          "answers": [
-            5
-          ]
-        },
-        {
-          "level": 3,
-          "text": "敦盛草感謝祭與最北花之馬拉松",
-          "facts": [
-            "rebun-island:F41",
-            "rebun-island:F475",
-            "rebun-island:F443",
-            "rebun-island:F499",
-            "rebun-island:F498"
-          ],
-          "answers": [
-            5
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文神社祭、嚴島神社祭與水產祭",
-          "facts": [
-            "rebun-island:F474",
-            "rebun-island:F476",
-            "rebun-island:F70"
-          ],
-          "answers": [
-            5
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文故鄉祭花火大會與海峽祭",
-          "facts": [
-            "rebun-island:F497"
-          ],
-          "answers": [
-            5
-          ]
-        },
-        {
-          "level": 3,
-          "text": "溫泉美食健行活動",
-          "facts": [
-            "rebun-island:F477"
-          ],
-          "answers": [
-            5
-          ]
         }
       ],
       "headingOrder": "traveler-journey"
@@ -4314,7 +4575,8 @@
       "owner": "wakkanai-ferry",
       "summarizedBy": [
         "rishiri-island-transport",
-        "rebun-island-transport"
+        "rebun-island-transport",
+        "rebun-island-festival"
       ]
     },
     {
@@ -4325,7 +4587,8 @@
         "rishiri-island-weather",
         "rebun-island",
         "rishiri-island-transport",
-        "rebun-island-transport"
+        "rebun-island-transport",
+        "rebun-island-weather"
       ]
     },
     {
@@ -4490,7 +4753,8 @@
       "description": "禮文島住宿、價格、香深或船泊、花季多早訂",
       "owner": "rebun-island-stay",
       "summarizedBy": [
-        "rebun-island"
+        "rebun-island",
+        "rebun-island-festival"
       ]
     },
     {
@@ -4499,7 +4763,8 @@
       "owner": "rebun-island-hiking",
       "summarizedBy": [
         "rebun-island",
-        "rebun-island-sights"
+        "rebun-island-sights",
+        "rebun-island-weather"
       ]
     },
     {
@@ -4508,7 +4773,8 @@
       "owner": "rebun-island-hiking",
       "summarizedBy": [
         "rebun-island",
-        "rebun-island-sights"
+        "rebun-island-sights",
+        "rebun-island-festival"
       ]
     },
     {
@@ -4524,20 +4790,25 @@
       "description": "禮文島海膽產季與花魚",
       "owner": "rebun-island-food",
       "summarizedBy": [
-        "rebun-island"
+        "rebun-island",
+        "rebun-island-festival"
       ]
     },
     {
       "topicKey": "rebun-events",
       "description": "禮文島花火大會、敦盛草感謝祭等活動",
-      "owner": "rebun-island",
-      "summarizedBy": []
+      "owner": "rebun-island-festival",
+      "summarizedBy": [
+        "rebun-island"
+      ]
     },
     {
       "topicKey": "rebun-climate",
       "description": "禮文島各月氣溫與夏天穿著",
-      "owner": "rebun-island",
-      "summarizedBy": []
+      "owner": "rebun-island-weather",
+      "summarizedBy": [
+        "rebun-island"
+      ]
     }
   ],
   "links": [
@@ -5023,6 +5294,90 @@
       "purpose": "從稚內接兩座島",
       "sentence": "從稚內怎麼接兩座島，看稚內旅遊。",
       "anchor": "稚內旅遊"
+    },
+    {
+      "from": "rebun-island-weather",
+      "to": "rebun-island",
+      "purpose": "開頭連回地點主頁",
+      "sentence": "還沒決定要不要排禮文島，可以先看禮文島值得去嗎。",
+      "anchor": "禮文島值得去嗎"
+    },
+    {
+      "from": "rebun-island",
+      "to": "rebun-island-weather",
+      "purpose": "主頁摘要禮文島天氣並連過去",
+      "sentence": "要決定帶多厚的外套、想知道幾月比較容易遇到霧或停航，禮文島天氣按月份整理了氣溫、雨量和渡輪停航的天數。",
+      "anchor": "禮文島天氣"
+    },
+    {
+      "from": "rebun-island-festival",
+      "to": "rebun-island",
+      "purpose": "開頭連回地點主頁",
+      "sentence": "還沒決定要不要排禮文島，可以先看禮文島值得去嗎。",
+      "anchor": "禮文島值得去嗎"
+    },
+    {
+      "from": "rebun-island",
+      "to": "rebun-island-festival",
+      "purpose": "主頁摘要禮文島祭典並連過去",
+      "sentence": "想把行程對上花火大會或神社祭，禮文島祭典整理了各活動近年的日期和會場。",
+      "anchor": "禮文島祭典"
+    },
+    {
+      "from": "rebun-island-weather",
+      "to": "wakkanai-ferry",
+      "purpose": "停航後改票與班次由渡輪頁負責",
+      "sentence": "船一停航，手上的票要重新預約，稚內到利尻島、禮文島渡輪整理了各季班次和改票的方式。",
+      "anchor": "稚內到利尻島、禮文島渡輪"
+    },
+    {
+      "from": "rebun-island-weather",
+      "to": "rebun-island-hiking",
+      "purpose": "看雲海的地點與步道強風",
+      "sentence": "想在清晨走上桃岩展望台看雲海，禮文島健行有每條步道要走多久、從哪裡上去。",
+      "anchor": "禮文島健行"
+    },
+    {
+      "from": "rebun-island-weather",
+      "to": "rebun-island-stay",
+      "purpose": "冬季休館的住宿",
+      "sentence": "冬天去的話有些旅館休館，禮文島住宿列了每家的營業期間。",
+      "anchor": "禮文島住宿"
+    },
+    {
+      "from": "rebun-island-festival",
+      "to": "wakkanai-ferry",
+      "purpose": "末班船與船票開賣日由渡輪頁負責",
+      "sentence": "看完晚上的花火已經沒有回稚內的船，回程班次和船票什麼時候開賣，稚內到利尻島、禮文島渡輪都有整理。",
+      "anchor": "稚內到利尻島、禮文島渡輪"
+    },
+    {
+      "from": "rebun-island-festival",
+      "to": "rebun-island-stay",
+      "purpose": "看花火要住島上",
+      "sentence": "看花火那晚要住在島上，禮文島住宿依香深、船泊兩區整理了旅館和訂房管道。",
+      "anchor": "禮文島住宿"
+    },
+    {
+      "from": "rebun-island-festival",
+      "to": "rebun-island-transport",
+      "purpose": "去船泊的禮文神社與島上移動",
+      "sentence": "要從香深到船泊的禮文神社，禮文島交通整理了路線巴士和計程車怎麼搭。",
+      "anchor": "禮文島交通"
+    },
+    {
+      "from": "rebun-island-festival",
+      "to": "rebun-island-food",
+      "purpose": "水產祭以外的海膽與花魚",
+      "sentence": "水產祭以外的日子也想吃海膽和花魚，禮文島美食整理了產季和店家。",
+      "anchor": "禮文島美食"
+    },
+    {
+      "from": "rebun-island-festival",
+      "to": "rebun-island-hiking",
+      "purpose": "感謝祭會場的敦盛草群生地",
+      "sentence": "感謝祭辦在敦盛草群生地，想順便走步道看花，禮文島健行整理了群生地的開放期間和路線。",
+      "anchor": "禮文島健行"
     }
   ],
   "writingOrder": [
@@ -5041,6 +5396,8 @@
     "rebun-island-hiking",
     "rebun-island-sights",
     "rebun-island-food",
+    "rebun-island-weather",
+    "rebun-island-festival",
     "rebun-island",
     "rishiri-island-transport",
     "rishiri-island-hiking",
@@ -5414,21 +5771,21 @@
       "articleId": "rebun-island-weather",
       "question": "船泊、香深個別的氣溫平年值",
       "searched": "氣象廳過去資料：只有「礼文」觀測站（block 1546）有氣溫平年值，統計期間 2003–2020（18 年），沒有降雪、積雪平年值",
-      "howToWrite": "寫「氣象廳礼文觀測站 2003–2020 平年值」；冬季雪量寫官方沒有平年值"
+      "howToWrite": "寫「氣象廳禮文觀測站 2003–2020 平年值」（F610）；正文不交代沒有積雪平年值，下雪時期改用町公所的文字（F624、F625）"
     },
     {
       "placeId": "rebun-island",
       "articleId": "rebun-island-weather",
       "question": "起霧天數、渡輪停航天數",
-      "searched": "氣象廳（アメダス不觀測霧）、觀光協會雲海頁（只說常起霧）、渡輪 FAQ（只說天候不佳會停航）",
-      "howToWrite": "直接寫「常起霧」（官方），不寫天數"
+      "searched": "氣象廳（アメダス不觀測霧）、觀光協會雲海頁（只說常起霧）、渡輪 FAQ（只說天候不佳會停航）；2026-11-24 補研究：Heartland Ferry 常見問題公布 2023～2025 各月全便停航天數（F635～F637）",
+      "howToWrite": "霧直接寫「常起霧、6 月霧多」（F442、F621），不寫天數；停航用 2023～2025 各月全天停航天數（F635～F637），寫明是整條航路整天沒有船的天數"
     },
     {
       "placeId": "rebun-island",
       "articleId": "rebun-island-festival",
       "question": "2027 年祭典日期、花火大會地點",
-      "searched": "觀光協會活動頁（只有 2026 年日期，沒寫花火地點）、町公所活動頁",
-      "howToWrite": "寫 2026 年日期並註明 2027 年以官方公告為準；地點只寫官方有寫的（水產祭在香深港）"
+      "searched": "觀光協會活動頁（只有 2026 年日期，沒寫花火地點）、町公所活動頁；2026-11-24 補研究：禮文町 2026、2025 年公告（存檔）有花火與海峽祭會場（F644、F646、F650），歷年日期見 F656、F662、F664、F668",
+      "howToWrite": "寫 2026 年日期與近年的規律並附年份，不推算 2027 年日期；花火會場每年在香深港一帶、位置會換（F644、F650、F652、F654）"
     },
     {
       "placeId": "rebun-island",
@@ -7136,9 +7493,9 @@
       "nameZh": "燕山",
       "sourceUrl": "https://www.rebun-island.jp/seacloud/",
       "decision": "section",
-      "articleId": "rebun-island",
-      "heading": "禮文島各月氣溫與穿著",
-      "reason": "雲海觀賞點；天氣頁建議併入主頁（F442）"
+      "articleId": "rebun-island-weather",
+      "heading": "禮文島雲海在什麼日子看得到？",
+      "reason": "雲海觀賞點；2026-11-24 天氣獨立成頁（F442）"
     },
     {
       "placeId": "rebun-island",
@@ -7186,9 +7543,9 @@
       "nameZh": "嚴島神社",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
       "decision": "section",
-      "articleId": "rebun-island",
-      "heading": "禮文島的祭典與活動",
-      "reason": "神社祭在 7 月；祭典頁建議併入主頁（F474）"
+      "articleId": "rebun-island-festival",
+      "heading": "嚴島神社祭，小學生帶頭的神轎行列",
+      "reason": "7/15 本祭的神轎巡行；2026-11-24 祭典獨立成頁（F474、F669～F671）"
     }
   ],
   "experienceLeads": [
@@ -8630,8 +8987,8 @@
         "https://www.rebun-island.jp/seacloud/"
       ],
       "useIn": {
-        "articleId": "rebun-island",
-        "heading": "禮文島各月氣溫與穿著"
+        "articleId": "rebun-island-weather",
+        "heading": "禮文島雲海在什麼日子看得到？"
       }
     },
     {
@@ -9441,15 +9798,27 @@
     },
     {
       "placeId": "rebun-island",
-      "articleId": "rebun-island",
-      "heading": "禮文島各月氣溫與穿著",
+      "articleId": "rebun-island-weather",
+      "heading": "禮文島天氣與各月禮文島氣溫",
       "kind": "data-block",
       "url": "",
       "blockType": "weather-chart",
       "channel": "",
       "year": "",
       "matchEvidence": "",
-      "reason": "礼文觀測站平年值的月均溫、最高最低、降水與風速（F59、F118、F488–F491）"
+      "reason": "禮文觀測站平年值的月均溫、最高最低、降水、日照與風速（F59、F118、F488～F491、F611、F612）"
+    },
+    {
+      "placeId": "rebun-island",
+      "articleId": "rebun-island-festival",
+      "heading": "禮文島祭典與活動月曆",
+      "kind": "data-block",
+      "url": "",
+      "blockType": "season-calendar",
+      "channel": "",
+      "year": "",
+      "matchEvidence": "",
+      "reason": "各活動 2026 年日期與近年規律（F41、F474、F656、F662、F664、F668）"
     },
     {
       "placeId": "rebun-island",
@@ -9691,14 +10060,14 @@
     {
       "placeId": "rebun-island",
       "articleId": "rebun-island-festival",
-      "recommendation": "merge-into-main",
-      "reason": "rule: <15 own facts or <800 chars → merge；自有事實 5 筆（神社祭、馬拉松、水產祭、花火與海峽祭、溫泉美食健行），2027 年日期都未公布"
+      "recommendation": "keep",
+      "reason": "rule: <15 own facts or <800 chars → merge；2026-10-18 原判併入主頁（5 筆）；2026-11-24 補研究後只屬於祭典的事實 39 筆（F41、F474～F477、F497～F499、F644～F675），估計正文 2,000～2,600 字，Darren 同意獨立成頁"
     },
     {
       "placeId": "rebun-island",
       "articleId": "rebun-island-weather",
-      "recommendation": "merge-into-main",
-      "reason": "rule: <15 own facts or <800 chars → merge；自有事實 9 筆（平年值 6 筆、霧與雲海、季節、穿著），月平年值拆開算也只是同一張表；建議在主頁「幾月去」放天氣圖表"
+      "recommendation": "keep",
+      "reason": "rule: <15 own facts or <800 chars → merge；2026-10-18 原判併入主頁（9 筆）；2026-11-24 補研究後只屬於天氣的事實約 40 筆（F59、F118、F488～F491、F609～F643 等），估計正文 1,800～2,300 字，Darren 同意獨立成頁"
     }
   ],
   "researchStatus": {

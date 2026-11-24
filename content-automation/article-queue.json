@@ -1062,8 +1062,8 @@
         "pageSpecs": "content-planning/hokkaido/page-specs.json",
         "candidateRegistry": "content-planning/hokkaido/candidates.json",
         "planningCompletedAt": "2026-10-18",
-        "authorizedCount": 6,
-        "plannedPageCount": 6,
+        "authorizedCount": 8,
+        "plannedPageCount": 8,
         "countPolicy": "validated-independent-pages-only",
         "deferredItems": []
       },
@@ -1081,7 +1081,18 @@
           "preserveTopicDirection": true,
           "preserveContentBoundary": true,
           "requireQueueTargetPath": true
-        }
+        },
+        "additions": [
+          {
+            "recordedAt": "2026-11-24",
+            "authorizedBy": "Darren",
+            "articleIds": [
+              "rebun-island-weather",
+              "rebun-island-festival"
+            ],
+            "decision": "Darren 2026-11-24 同意新增：原本照短頁規則併進禮文島主頁，主頁因此過長；補研究後過短頁門檻，照利尻島的做法獨立成頁（content-planning/hokkaido/rebun-island-split-2026-11-24.md）"
+          }
+        ]
       },
       "publicationCadence": {
         "timezone": "Asia/Taipei",
@@ -1361,7 +1372,7 @@
           "pageType": "place-entry",
           "contentBoundary": "禮文島的主頁：值不值得去、住幾晚、幾月去、怎麼排；各主題兩三句摘要並連到主題頁，細節不在主頁重寫。",
           "readerTask": "讓去過日本自由行的台灣旅客決定要不要把禮文島排進行程、排幾天。",
-          "plannedInternalLinks": "/places/rebun-island/transport/、/places/rebun-island/stay/、/places/rebun-island/hiking/、/places/rebun-island/sights/、/places/rebun-island/food/、/places/rishiri-island/、/places/wakkanai/ferry/",
+          "plannedInternalLinks": "/places/rebun-island/transport/、/places/rebun-island/stay/、/places/rebun-island/hiking/、/places/rebun-island/sights/、/places/rebun-island/food/、/places/rishiri-island/、/places/wakkanai/ferry/、/places/rebun-island/weather/、/places/rebun-island/festival/",
           "relatedArticleIds": [],
           "releaseMode": "individual",
           "authorizationMode": "batch-standing-authorization",
@@ -1394,6 +1405,90 @@
               "https://heartlandferry.jp/faretable/",
               "https://heartlandferry.jp/about_reservation/"
             ]
+          }
+        },
+        {
+          "order": 7,
+          "articleId": "rebun-island-weather",
+          "contentTheme": "rebun-island",
+          "topicDirection": "禮文島天氣，各月氣溫、霧與冬季停航",
+          "pageRole": "天氣頁",
+          "documentId": "article-rebun-island-weather",
+          "workingTitle": "禮文島天氣，各月氣溫、霧與冬季停航",
+          "primaryKeyword": "禮文島天氣",
+          "primaryQuery": "禮文島天氣",
+          "articleSlug": "weather",
+          "targetPath": "/places/rebun-island/weather/",
+          "authorId": "author-editorial-team",
+          "primaryHubId": "hub-places-rebun-island",
+          "categorySlug": "places",
+          "hubSlug": "rebun-island",
+          "routeMode": "parent-direct-article",
+          "aspect": "weather",
+          "pageType": "aspect-page",
+          "contentBoundary": "禮文島的月平均氣溫、雨量、日照與風（氣象廳禮文觀測站平年值，不是預報）、各季穿著、霧與雲海的條件、冬季的雪與強風、天候造成的渡輪停航多寡與當天怎麼查；改票與班次在渡輪頁，步道與看雲海的路線在健行頁。",
+          "readerTask": "讓旅客依月份判斷禮文島的氣溫與穿著、霧與停航的機會，決定幾月去、要不要預留備用日。",
+          "plannedInternalLinks": "/places/rebun-island/、/places/wakkanai/ferry/、/places/rebun-island/hiking/、/places/rebun-island/stay/",
+          "relatedArticleIds": [],
+          "releaseMode": "individual",
+          "authorizationMode": "batch-standing-authorization",
+          "planningSpec": {
+            "pageSpecs": "content-planning/hokkaido/page-specs.json",
+            "articleId": "rebun-island-weather"
+          },
+          "keywordValidation": {
+            "provider": "Google autocomplete",
+            "ahrefsVerified": false,
+            "serpIntentConfirmed": true,
+            "serpIntentNote": "查詢含禮文島，台灣沒有同名地點",
+            "country": "TW",
+            "auditedAt": "2026-11-24",
+            "decision": "keep",
+            "query": "禮文島天氣",
+            "svDisplay": "自動完成有出現",
+            "record": "content-planning/hokkaido/candidates.json"
+          }
+        },
+        {
+          "order": 8,
+          "articleId": "rebun-island-festival",
+          "contentTheme": "rebun-island",
+          "topicDirection": "禮文島祭典，花火大會、神社祭與敦盛草感謝祭",
+          "pageRole": "祭典頁",
+          "documentId": "article-rebun-island-festival",
+          "workingTitle": "禮文島祭典，花火大會、神社祭與敦盛草感謝祭",
+          "primaryKeyword": "禮文島祭典",
+          "primaryQuery": "禮文島祭典",
+          "articleSlug": "festival",
+          "targetPath": "/places/rebun-island/festival/",
+          "authorId": "author-editorial-team",
+          "primaryHubId": "hub-places-rebun-island",
+          "categorySlug": "places",
+          "hubSlug": "rebun-island",
+          "routeMode": "parent-direct-article",
+          "aspect": "festival",
+          "pageType": "aspect-page",
+          "contentBoundary": "禮文島的祭典與活動：敦盛草感謝祭、最北花之馬拉松、7 月的神社祭與水產祭、8 月的禮文故鄉祭（花火大會與海峽祭）、溫泉美食健行；只寫官方公布的日期與近年規律並附年份，不推算明年日期；船班與住宿只摘要並連過去。",
+          "readerTask": "讓旅客知道禮文島的祭典與花火在哪幾天、在哪裡，要不要配合排行程，看完當天怎麼住。",
+          "plannedInternalLinks": "/places/rebun-island/、/places/wakkanai/ferry/、/places/rebun-island/stay/、/places/rebun-island/transport/、/places/rebun-island/food/、/places/rebun-island/hiking/",
+          "relatedArticleIds": [],
+          "releaseMode": "individual",
+          "authorizationMode": "batch-standing-authorization",
+          "planningSpec": {
+            "pageSpecs": "content-planning/hokkaido/page-specs.json",
+            "articleId": "rebun-island-festival"
+          },
+          "keywordValidation": {
+            "provider": "Google autocomplete",
+            "ahrefsVerified": false,
+            "serpIntentConfirmed": true,
+            "serpIntentNote": "查詢含禮文島，台灣沒有同名地點",
+            "country": "TW",
+            "auditedAt": "2026-11-24",
+            "decision": "keep",
+            "query": "禮文島祭典",
+            "svDisplay": "自動完成沒有出現",
+            "record": "content-planning/hokkaido/candidates.json"
           }
         }
       ]
@@ -4286,6 +4381,8 @@
         "rebun-island-hiking",
         "rebun-island-sights",
         "rebun-island-food",
+        "rebun-island-weather",
+        "rebun-island-festival",
         "rebun-island",
         "rishiri-island-transport",
         "rishiri-island-hiking",
