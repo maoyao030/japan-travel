@@ -7,12 +7,15 @@
   "articleSourceCheckedAt": "2026-11-24",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "2026-11-24 新版主頁（標題全換）重新規劃文內照片：照地點主頁的寫法，「利尻島旅遊有什麼好玩、好吃的？」六個 H3 各找一張。選定三張：利尻山（Pixabay 7306839）、姬沼（Pixabay 2356579）、仙法志御崎公園（沿用 coast-01）。沒放的三節：海膽（官方、Pixabay、維基共享資源都沒有剖開的蝦夷馬糞海膽照片；築地與函館朝市的照片不是同一種海膽或有店家價目牌）、利尻拉麵（店家照片不用，維基共享資源與圖庫都沒有味樂燒醬油拉麵的照片）、利尻雛罌粟與萱草（維基共享資源的利尻雛罌粟只有黑底的花芯特寫與直式照片，橫式的一張已用在登山頁；利尻島拍的萱草沒有）。舊版的 kutsugata-terminal（沓形港渡輪站）新版沒有對應的看點，從計畫移除，渡輪站照片留給交通頁。原圖下載到 .tmp/image-selection/rishiri-island/inline/，不加入 Git。正文還在小修，標題已定案；上傳前要再確認 reader-preview 已通過驗收。",
+  "selectionScopeNote": "2026-11-24 新版主頁（標題全換）重新規劃文內照片：照地點主頁的寫法，「利尻島旅遊有什麼好玩、好吃的？」六個 H3 各找一張。選定三張：利尻山（Pixabay 7306839）、姬沼（Pixabay 2356579）、仙法志御崎公園（沿用 coast-01）。沒放的三節：海膽（官方、Pixabay、維基共享資源都沒有剖開的蝦夷馬糞海膽照片；築地與函館朝市的照片不是同一種海膽或有店家價目牌）、利尻拉麵（店家照片不用，維基共享資源與圖庫都沒有味樂燒醬油拉麵的照片）、利尻雛罌粟與萱草（維基共享資源的利尻雛罌粟只有黑底的花芯特寫與直式照片，橫式的一張已用在登山頁；利尻島拍的萱草沒有）。舊版的 kutsugata-terminal（沓形港渡輪站）新版沒有對應的看點，從計畫移除，渡輪站照片留給交通頁。原圖下載到 .tmp/image-selection/rishiri-island/inline/，不加入 Git。正文還在小修，標題已定案；上傳前要再確認 reader-preview 已通過驗收。 2026-11-24 補：Darren 看線上版說「看起來就是沒有圖」，照放寬的標準替沒放的三節各補一張（料理照片只代表料理、不代表店家，圖說照實寫是什麼、在哪拍）：海膽用維基共享資源的北海道積丹海膽丼（uni-01）；利尻拉麵用 Pixabay 的一般醬油拉麵（ramen-01），圖說不暗示是味樂；利尻雛罌粟沿用登山頁那張（poppy-01）。原圖在 .tmp/image-selection/rishiri-island/inline/ 與 candidates/，不加入 Git。",
   "selectedCandidateIds": {
     "cover": "cover-01",
     "rishiri-mountain": "mountain-01",
     "himenuma": "himenuma-01",
-    "rishiri-coast-view": "coast-01"
+    "rishiri-coast-view": "coast-01",
+    "uni": "uni-01",
+    "rishiri-ramen": "ramen-01",
+    "rishiri-poppy": "poppy-01"
   },
   "selectedAt": "2026-11-24",
   "slots": [
@@ -353,6 +356,234 @@
             "property": "遠處海邊民家很小，看不出是哪一棟",
             "risk": "low",
             "notes": "沒有人物、招牌；自然景觀為主。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "uni",
+      "kind": "inline",
+      "need": "food",
+      "section": "海膽｜新鮮海膽，現場直接吃",
+      "purpose": "讓讀者看到北海道的生海膽是什麼樣子：一整碗橘黃色的生海膽。照片只代表料理，不代表利尻島或哪一家店。",
+      "mustShow": [
+        "生海膽（海膽丼或剝開的海膽）"
+      ],
+      "mustNotShow": [
+        "店家招牌、價目牌或菜單當主體",
+        "可辨識的人物臉部",
+        "讓人以為是利尻島或某家店的圖說"
+      ],
+      "targetAspectRatio": "4:3",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "海膽｜新鮮海膽，現場直接吃",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Uni_don_in_shakotan.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "uni-01 是切干大根 2017 年 7 月 8 日在北海道積丹拍的海膽丼（檔案頁說明「北海道積丹で提供されるうに丼」）：紅色漆碗裡堆滿橘黃色的生海膽，上面插一片紫蘇葉。看得出是北海道的海膽，7 月也是海膽季。檔案頁沒寫海膽的品種，所以圖說不寫馬糞海膽。右下角餐墊上有幾個模糊的字，看不出店名，不是價目牌。Pixabay 7121990（AMDUMA）是盤子上剖開的紫海膽，背景有酒瓶標籤，看不出是北海道，不選；Pixabay likesilkto 的兩張海膽丼（5435807、6651106）是直式。維基共享資源其他海膽丼：Uni-ikura-don（Douglas P. Perkins，一半是鮭魚卵）、うにホタテ丼（青森，1280 px）、むらかみ的ウニ丼與東北各地店家的丼（檔名帶店名），都不如積丹這張。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "官方素材：利尻町官網 2026-11-24 仍回 503，利尻富士町與りしぷら沒有允許轉載的照片（見其他節）。Pixabay 搜尋「sea urchin bowl」看過 85 張的標題，打開 5435807、6651106、7121990 三張單張頁，沒有北海道又是橫式的。維基共享資源搜尋「ウニ丼」「Uni-don」「バフンウニ」「Strongylocentrotus intermedius」，選積丹這張。"
+      },
+      "candidates": [
+        {
+          "candidateId": "uni-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Uni_don_in_shakotan.jpg",
+          "creatorName": "切干大根",
+          "sourceTitle": "File:Uni don in shakotan.jpg",
+          "sourceDescription": "北海道積丹で提供されるうに丼。（作者自己上傳，分類 Uni-don；授權 CC BY-SA 4.0；EXIF 2017-07-08，Panasonic DMC-TZ85）",
+          "takenAt": "2017-07-08",
+          "width": 2400,
+          "height": 1800,
+          "licenseName": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseCheckedAt": "2026-11-24",
+          "matchType": "exact",
+          "matchLimits": "在北海道積丹拍的，不是利尻島，也不是剝海膽體驗；檔案頁沒寫海膽品種。圖說照實寫積丹。",
+          "whyItFits": "一整碗北海道的生海膽，讀者一看就知道「新鮮海膽」長什麼樣子；7 月拍，和正文 6 到 9 月的海膽季對得上。",
+          "altDraft": "紅色漆碗裡鋪滿橘黃色的生海膽，上面插著一片綠色的紫蘇葉",
+          "captionDraft": "北海道積丹的海膽丼（2017 年 7 月）。",
+          "creditDraft": "照片：切干大根／Wikimedia Commons／CC BY-SA 4.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "料理",
+            "risk": "low",
+            "notes": "沒有人物；右下角餐墊有幾個模糊的字，認不出店名，不是價目牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "rishiri-ramen",
+      "kind": "inline",
+      "need": "food",
+      "section": "利尻拉麵｜兩度拿下米其林必比登的味樂",
+      "purpose": "讓讀者看到湯色清澈的醬油拉麵大概的樣子。照片只代表一般的醬油拉麵，不代表味樂。",
+      "mustShow": [
+        "一碗醬油拉麵"
+      ],
+      "mustNotShow": [
+        "店家官網或訂位網站的照片",
+        "店家招牌、價目牌",
+        "可辨識的人物臉部",
+        "暗示是味樂的圖說"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "利尻拉麵｜兩度拿下米其林必比登的味樂",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://cdn.pixabay.com/photo/2019/11/01/05/57/ramen-4593402_1280.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "ramen-01 是 NaoYuasa 的「Japanese shoyu ramen in bowl」：白底雷紋碗裡湯色清澈的醬油拉麵，配兩片叉燒、半顆溏心蛋、魚板、筍乾、青菜與蔥絲，放在木桌上，沒有招牌或人物。標籤有 Shirakawa Ramen（福島白河），拍攝地沒寫明，所以圖說只寫「日本常見的醬油拉麵」，不寫產地，也不暗示是味樂。Pixabay 免費下載只有 1280 px（1280×722），高於文內最低 1200 px。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "店家官網與訂位網站的照片不用。維基共享資源搜尋「利尻ラーメン」「利尻 ラーメン」「味楽 利尻」「Rishiri ramen」「Rishiri Ramen Miraku」「Miraku ramen」「焦がし醤油 ラーメン」「焼き醤油ラーメン」都沒有利尻拉麵味樂（Miraku ramen 只有美國麻州同名店的招牌）；新橫濱拉麵博物館的分類（Shoyu-ramen in Shin-Yokohama Raumen Museum、Ramen restaurants at Shin-Yokohama Raumen Museum）也沒有味樂。改找一般醬油拉麵：Pixabay「shoyu ramen」看過 55 張標題，打開 4593402、1277110（正方形）、5034166（May_hokkaido，沒寫拍攝地、湯色看不出醬油）三張單張頁，選 4593402。"
+      },
+      "candidates": [
+        {
+          "candidateId": "ramen-01",
+          "sourceType": "stock-photo",
+          "provider": "Pixabay",
+          "assetType": "photo",
+          "sourcePageUrl": "https://pixabay.com/photos/ramen-soy-sauce-chinese-noodles-4593402/",
+          "creatorName": "NaoYuasa",
+          "sourceTitle": "Japanese shoyu ramen in bowl",
+          "sourceDescription": "Japanese shoyu ramen with chashu pork, egg and bamboo shoots.（照片頁說明；標籤 Ramen、Soy Sauce、Shirakawa Ramen；原圖 3264×1840，Panasonic DMC-G6）",
+          "takenAt": "2019-11",
+          "width": 1280,
+          "height": 722,
+          "licenseName": "Pixabay Content License",
+          "licenseUrl": "https://pixabay.com/service/license-summary/",
+          "licenseCheckedAt": "2026-11-24",
+          "matchType": "exact",
+          "matchLimits": "一般的醬油拉麵，不是味樂的燒醬油拉麵，拍攝地沒寫明；takenAt 是 Pixabay 上傳月份（2019 年 11 月 2 日）。圖說只寫是什麼拉麵。",
+          "whyItFits": "湯色清澈的日式醬油拉麵，讓讀者對「醬油拉麵」有畫面；沒有店名、招牌，不會被誤認成某家店。",
+          "altDraft": "白底紅邊雷紋碗裡的醬油拉麵，湯色清澈，上面有兩片叉燒、半顆溏心蛋、魚板、筍乾、青菜與蔥絲",
+          "captionDraft": "日本常見的醬油拉麵。",
+          "creditDraft": "照片：NaoYuasa／Pixabay",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "料理",
+            "risk": "low",
+            "notes": "只有一碗拉麵與木桌，沒有人物、招牌或價目牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "rishiri-poppy",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "利尻雛罌粟與萱草｜日本唯一的野生雛罌粟",
+      "purpose": "讓讀者看到只長在利尻山的利尻雛罌粟是什麼樣子。",
+      "mustShow": [
+        "利尻雛罌粟（リシリヒナゲシ）的花"
+      ],
+      "mustNotShow": [
+        "其他罌粟或園藝品種冒充",
+        "可辨識的人物臉部"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "利尻雛罌粟與萱草｜日本唯一的野生雛罌粟",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Papaver_fauriei_%27-200214%27_%28Fedde%29_Fedde_ex_Miyabe_%26_Tatew.%2C_Trans._Sapporo_Nat._Hist._Soc._14%284%29_258_%281936%29_%2850133253922%29.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "poppy-01 沿用利尻山登山頁的同一張（不同頁用同一張可以）：植物攝影者 sunoochi 2020 年 7 月 19 日在利尻島拍的利尻雛罌粟，兩朵淡黃色的四瓣花，背景是閃光燈打出的黑色。這一節的標題重點是「日本唯一的野生雛罌粟」，所以選雛罌粟、不選萱草。萱草的備選是禮文町官方素材「エゾカンゾウ」（kanko_45，禮文島拍，已用在禮文島登山頁），放在利尻島頁要另外寫明是禮文島，畫面也不是這一節的主角，不選。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-24",
+        "photoSearchNotes": "官方素材：利尻町官網 2026-11-24 仍回 503，利尻富士町與りしぷら沒有允許轉載的照片；禮文町素材有エゾカンゾウ（禮文島拍）。Pixabay「rishiri」8 張沒有花。維基共享資源「Papaver fauriei」有十幾張 2020-07-19 在利尻島拍的照片（橫式只有這張看得到整朵花）；「Hemerocallis esculenta」分類的萱草都不是利尻島拍的。"
+      },
+      "candidates": [
+        {
+          "candidateId": "poppy-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Papaver_fauriei_%27-200214%27_(Fedde)_Fedde_ex_Miyabe_%26_Tatew.,_Trans._Sapporo_Nat._Hist._Soc._14(4)_258_(1936)_(50133253922).jpg",
+          "creatorName": "sunoochi",
+          "sourceTitle": "File:Papaver fauriei '-200214' (Fedde) Fedde ex Miyabe & Tatew., Trans. Sapporo Nat. Hist. Soc. 14(4) 258 (1936) (50133253922).jpg",
+          "sourceDescription": "[Rishiri Is., Hokkaido, Japan / 北海道利尻島] Japanese Name: リシリヒナゲシ, 利尻雛芥子（Flickr 轉存，FlickreviewR 已確認授權）",
+          "takenAt": "2020-07-19",
+          "width": 8256,
+          "height": 5504,
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-11-24",
+          "matchType": "exact",
+          "matchLimits": "黑色背景是閃光燈造成的，看不到生長的碎石地；圖說不寫拍攝的合目。",
+          "whyItFits": "檔案說明寫明是在北海道利尻島拍的利尻雛罌粟，7 月中旬拍，正是正文寫的花期。",
+          "altDraft": "兩朵淡黃色的四瓣小花，中間是綠色的花心與黃色雄蕊，背景是黑色",
+          "captionDraft": "利尻雛罌粟，7 月上旬到中旬開花（2020 年 7 月攝於利尻島）。",
+          "creditDraft": "照片：sunoochi／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "植物",
+            "risk": "low",
+            "notes": "沒有人物或招牌。"
           },
           "checks": {
             "fullImageInspected": true,
