@@ -1,904 +1,1102 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island",
-  "articleSha256": "f0b51e27d4b6276ddced5d0780384be4510494141569ee1dd3272d95c56e404d",
-  "checker": "事實查核 agent（第 2 輪複查；Claude Opus 5.5 子代理，未參與寫作、潤稿或修改；2026-11-02 以 curl 與 WebFetch 實際打開來源，PDF 以 PyMuPDF 轉圖目視）",
-  "checkedAt": "2026-11-02",
+  "articleSha256": "0e61b3cc427e66195ec9d375b0a21ab9301550434724669b7aa80d4dee987db6",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，不是作者，只讀正文）。2026-11-24 地點主頁改版：樣本稿 content-experiments/place-entry-study-2026-11-19/sample-rebun-island/new.md 查核兩輪（fact-check-round1.md：約 95 處，5 處不成立已由作者照最小改法修改；fact-check-round2.md：改過的句子全部成立），依據只用已上線、已查證的子頁 reader-preview.md 與各子頁研究記錄、利尻島與稚內主頁，依協調者指示本輪沒有重新開官方網址。轉成封包時逐句加事實編號，sourceUrl 與 sourceQuote 取該句第一個編號在事實表的原列；同句其他編號列在 notes。2026-11-24 讀者驗收後作者改稿，第 3 輪（fact-check-round3.md）逐句重查改過的句子，4 處不成立已照最小改法改在 draft-tagged.md（花魚鏘鏘燒小標題的「元祖」加引號、B 線那句補「2等艙的」、敦盛草保護區「船泊本町一帶」改「船泊一帶」、5 月下旬到 6 月中旬的「17:10的末班船」改「末班船」），其餘成立。吸引力審查第四輪退回後作者改了序言第一段與海膽小段，第 4 輪（fact-check-round4.md）複查：「從藍綠色變到翡翠色」說過頭，改回「變成藍綠色或翡翠色」，其餘成立。F602～F608 是地點事實表沒有、本頁暫編的事實（住宿重跑事實表 K15、K34、K42，利尻島 F5、F188、F189、F47）。",
+  "checkedAt": "2026-11-24",
   "claims": [
     {
       "claimId": "C1",
-      "articleExcerpt": "禮文島在稚內西方約60公里的海上，南北長29公里、東西寬只有8公里。",
-      "sourceUrl": "https://web.archive.org/web/20260516165012/https://www.rebun-island.jp/about/",
-      "sourceTitle": "礼文島について｜礼文島観光協会（2026-05-16 存檔）",
-      "sourceQuote": "礼文島は、稚内市の西方60キロメートルの日本海に位置する最北の離島です。／南北29キロメートル、東西8キロメートル、面積約82キロ平方メートル",
+      "articleExcerpt": "禮文島北邊的澄海岬，從高台望下去，海灣彎成弧形，四周圍著斷崖，夏天的海水會隨著光線，變成藍綠色或翡翠色。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10388.html",
+      "sourceTitle": "澄海岬｜北海道観光機構",
+      "sourceQuote": "「高台からは、弧を描くように広がる大きな入り江と周囲の断崖地形が一望できます。」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F563、F427；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C2",
-      "articleExcerpt": "因為夏天約有300種高山植物開花，被稱為「花之浮島」。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！｜HOKKAIDO LOVE!（北海道観光機構）",
-      "sourceQuote": "礼文島は、夏には約300種以上もの高山植物の花が咲くことから、別名「花の浮島」とも呼ばれています。",
+      "articleExcerpt": "再往北，禮文島的最北端是須古頓岬（スコトン岬）。",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000180.html",
+      "sourceTitle": "スコトン岬｜礼文町",
+      "sourceQuote": "「スコトン岬は礼文島最北端の地」「晴れた日には遠くサハリンを望むことができます。」",
       "verdict": "verified",
-      "notes": "觀光協會首頁存檔也寫「約300種類の高山植物」「礼文島は「花の浮島」と呼ばれています」。"
+      "notes": "F39；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C3",
-      "articleExcerpt": "從稚內搭渡輪直航約1小時55分，當天來回也排得進去。（表格：稚內港搭Heartland Ferry到香深港，直航約1小時55分；時刻表前句「Heartland Ferry（ハートランドフェリー）」）",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
-      "sourceTitle": "稚内～礼文島 時刻表｜ハートランドフェリー",
-      "sourceQuote": "6/1～9/30 06:30～08:25／4/28～5/31 06:30～08:25（＜＞は利尻島（鴛泊）経由便）",
+      "articleExcerpt": "禮文島在稚內西方大約60公里的日本海上，春天開水芭蕉，接著換禮文敦盛草（レブンアツモリソウ）、禮文金梅草、禮文薄雪草輪流登場，夏天去最好。",
+      "sourceUrl": "https://www.rebun-island.jp/about/",
+      "sourceTitle": "礼文島について｜礼文島観光協会",
+      "sourceQuote": "「稚内市の西方60キロメートル」「南北29キロメートル、東西8キロメートル、 面積約82キロ平方メートル」",
       "verdict": "verified",
-      "notes": "直航班 6:30→8:25 等皆 1 小時 55 分；當天來回見觀光協會モデルプラン（日帰り）。"
+      "notes": "F401、F445、F446、F443；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C4",
-      "articleExcerpt": "6月到9月稚內往香深港一天有3班船。",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
-      "sourceTitle": "稚内～礼文島 時刻表｜ハートランドフェリー",
-      "sourceQuote": "6/1～9/30 稚内発～香深着 06:30～08:25、10:30～12:25、14:50～16:45",
+      "articleExcerpt": "夏天只看精華的話，當天來回排得進去，要走8小時步道（8時間コース）、看清晨的雲海或慢慢賞花，就住一晚。",
+      "sourceUrl": "https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "フェリー時刻で日帰りプラン｜礼文島観光協会",
+      "sourceQuote": "「（6月～9月）」「稚内6:30発 香深 8:25着」「１４：２０発 稚内行 （滞在５時間）」「１７：１０発 稚内行 （滞在８時間）」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F405、F38、F442、F32；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C5",
-      "articleExcerpt": "搭早班去、坐末班回，南部的桃岩展望台和繞島北端的觀光巴士都能排進同一天。",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
-      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
-      "sourceQuote": "礼文A…8:40発 → 12:30着（6/1～9/30限定 香深FT途中下車11:45頃着）",
+      "articleExcerpt": "禮文島南北長29公里，東西寬只有8公里，東西兩側的海岸長得很不一樣，東海岸是平緩的丘陵，西海岸冬天迎著強勁的西風，斷崖一路連綿。",
+      "sourceUrl": "https://www.rebun-island.jp/about/",
+      "sourceTitle": "礼文島について｜礼文島観光協会",
+      "sourceQuote": "「稚内市の西方60キロメートル」「南北29キロメートル、東西8キロメートル、 面積約82キロ平方メートル」",
       "verdict": "verified",
-      "notes": "與 Heartland 6:30→8:25、17:10 末班及 QR2 桃岩展望台 8:50→11:50 行程合算可行。"
+      "notes": "F401、F402；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C6",
-      "articleExcerpt": "想走8小時步道、清晨看雲海，或在北部慢慢賞花，就要在島上住一晚。",
-      "sourceUrl": "https://web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/",
-      "sourceTitle": "雲海｜礼文島観光協会（2026-10-09 存檔）",
-      "sourceQuote": "早朝の気温が上がる前がチャンスです。",
+      "articleExcerpt": "夏天在島上走路是涼的，最熱的8月平均氣溫也只有19.7℃，風不小，又常起霧。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": "雲海在清晨；首班船 8:25 才到；8 小時步道參考 6 小時 50 分（起伏圖）。編輯判斷有依據。觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F59、F489、F442；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C7",
-      "articleExcerpt": "喜歡高山植物和海岸步道的人，禮文島很值得專程跑一趟，旺季是5月到9月。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！｜HOKKAIDO LOVE!（北海道観光機構）",
-      "sourceQuote": "礼文島観光のベストシーズンは、5月～9月ですが",
+      "articleExcerpt": "清晨有霧又沒什麼風的時候，站在桃岩展望台這類高處，有機會看到腳下的雲海。",
+      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
+      "sourceTitle": "雲海｜礼文島観光協会",
+      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F442；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C8",
-      "articleExcerpt": "島的東海岸是平緩的丘陵，西海岸則是一路連綿的斷崖，冬天迎著強勁的西風。",
-      "sourceUrl": "https://web.archive.org/web/20260516165012/https://www.rebun-island.jp/about/",
-      "sourceTitle": "礼文島について｜礼文島観光協会（2026-05-16 存檔）",
-      "sourceQuote": "東海岸はなだらかな丘陵性の地形が広がり海へと続いていますが、冬の厳しい偏西風を受ける西海岸は切り立った断崖絶壁が連なっています。",
+      "articleExcerpt": "白天沿著步道走，5月下旬到6月中旬是禮文敦盛草的花期，6月下旬到8月換成沿著禮文林道成片開花的禮文薄雪草。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島の観光｜北海道観光機構",
+      "sourceQuote": "「ベストシーズンは、5月～9月」「6月中旬から8月初旬は、最も多くの種類の花を楽しめる」「5月下旬から6月中旬頃には、礼文島の固有種である「レブンアツモリソウ」が、6月下旬には「レブンウスユキソウ」が見られます」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F443、F471；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C9",
-      "articleExcerpt": "禮文敦盛草、禮文金梅草、禮文薄雪草都是只長在這座島上的固有種。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！｜HOKKAIDO LOVE!（北海道観光機構）",
-      "sourceQuote": "礼文島固有種の「レブンアツモリソウ」(画像)「レブンキンバイソウ」「レブンウスユキソウ」も見ることができます。",
+      "articleExcerpt": "傍晚到元地海岸的地藏岩，夕陽沉進西邊的海面，這一帶就是以夕陽出名的。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10387.html",
+      "sourceTitle": "HOKKAIDO LOVE!（北海道観光機構）",
+      "sourceQuote": "「高さ約50mの奇岩」「元地海岸」「香深港フェリーターミナルから約10分」「西の海へ沈む太陽」",
       "verdict": "verified",
-      "notes": "觀光協會花頁存檔也在三種下標【礼文島固有種】。"
+      "notes": "F74；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C10",
-      "articleExcerpt": "禮文敦盛草在1994年列入日本的「國內希少野生動植物種」保護，奶油色的大花在5月下旬到6月中旬最好看。",
-      "sourceUrl": "https://www.env.go.jp/nature/kisho/hogozoushoku/rebunatsumoriso.html",
-      "sourceTitle": "レブンアツモリソウ｜環境省",
-      "sourceQuote": "平成6年国内希少野生動植物種に指定／５月下旬～６月下旬に淡黄白（クリーム）色の大きく優美な花をつける。",
+      "articleExcerpt": "香深港旁的薄雪之湯（うすゆきの湯），泡在露天浴池裡就望得到利尻山。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
+      "sourceTitle": "礼文島温泉 うすゆきの湯｜北海道観光機構",
+      "sourceQuote": "「●徒歩：香深港フェリーターミナルから約3分」「12:00-22:00（4-9月）」「13:00-21:00（10-3月）」「無休」「源泉かけ流し」「貸切家族風呂も設けられており、利用にあたっては事前の予約手続きが必要」",
       "verdict": "verified",
-      "notes": "「5月下旬到6月中旬」見北海道觀光機構「5月下旬から6月中旬頃には…レブンアツモリソウ」。"
+      "notes": "F435；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C11",
-      "articleExcerpt": "島上沒有棕熊也沒有蛇，可以放心散步。",
-      "sourceUrl": "https://web.archive.org/web/20261008002107/https://www.rebun-island.jp/welcome/trekking.html",
-      "sourceTitle": "トレッキング｜礼文島観光協会（2026-10-08 存檔）",
-      "sourceQuote": "ヒグマやヘビが生息しないので、安心して散策を楽しめます。",
+      "articleExcerpt": "禮文敦盛草的花是奶油色的，只長在禮文島。",
+      "sourceUrl": "https://www.env.go.jp/nature/kisho/hogozoushoku/rebunatsumoriso.html",
+      "sourceTitle": "レブンアツモリソウ｜環境省",
+      "sourceQuote": "「北海道礼文島のみに分布する。」「５月下旬～６月下旬に淡黄白（クリーム）色の大きく優美な花をつける。」「平成6年国内希少野生動植物種に指定」「３．生息を脅かす要因 盗掘」「群生地の一部（船泊地区1.7ha、鉄府地区4.6ha）を環境省所管地として管理。」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F309；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C12",
-      "articleExcerpt": "走到最北端的須古頓岬，晴天看得到海對面的庫頁島。",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000180.html",
-      "sourceTitle": "スコトン岬｜北海道礼文町",
-      "sourceQuote": "スコトン岬は礼文島最北端の地で…晴れた日には遠くサハリンを望むことができます。",
+      "articleExcerpt": "因為盜挖的威脅，成片生長的地方劃成保護區由環境省管理，只在花季開放，日期每年跟著開花狀況前後調整。",
+      "sourceUrl": "https://www.env.go.jp/nature/kisho/hogozoushoku/rebunatsumoriso.html",
+      "sourceTitle": "レブンアツモリソウ｜環境省",
+      "sourceQuote": "「北海道礼文島のみに分布する。」「５月下旬～６月下旬に淡黄白（クリーム）色の大きく優美な花をつける。」「平成6年国内希少野生動植物種に指定」「３．生息を脅かす要因 盗掘」「群生地の一部（船泊地区1.7ha、鉄府地区4.6ha）を環境省所管地として管理。」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F309、F441；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C13",
-      "articleExcerpt": "2026年的觀光巴士開到9月30日",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
-      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
-      "sourceQuote": "礼文A 5月3日～5月5日・5月20日～9月30日 8:40発／礼文Ｂ 6月1日～9月30日 14:15発",
+      "articleExcerpt": "錯過保護區的花期也不用放棄，船泊的高山植物園有控溫，禮文敦盛草到8月初左右都看得到。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11454.html",
+      "sourceTitle": "HOKKAIDO LOVE!（北海道観光機構）",
+      "sourceQuote": "「約50種類・約1万本」「園内では温度管理を行うことで8月初旬頃までその姿を観察できます」「北海道礼文郡礼文町船泊村上泊」「約30分」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F438；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C14",
-      "articleExcerpt": "渡輪站裡的觀光案內所開到10月中旬（表格：香深港渡輪站內，4月中旬～10月中旬）",
-      "sourceUrl": "https://web.archive.org/web/20261007113011/https://www.rebun-island.jp/",
-      "sourceTitle": "礼文島観光協会（2026-10-07 存檔）",
-      "sourceQuote": "礼文島観光案内所（香深フェリーターミナル内 4月中旬～10月中旬）",
+      "articleExcerpt": "澄海岬的海色有個名字，叫禮文藍（レブンブルー），夏天隨光線變成藍綠色或翡翠色。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10388.html",
+      "sourceTitle": "澄海岬｜北海道観光機構",
+      "sourceQuote": "「香深港フェリーターミナルから約50分」「「岬めぐりコース」の沿線」「「レブンブルー」」「20台、無料」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F73、F427；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C15",
-      "articleExcerpt": "步道也在10月陸續封閉。",
-      "sourceUrl": "https://rebun-trail.jp/feed/",
-      "sourceTitle": "礼文島トレイルオフィシャルウェブ RSS",
-      "sourceQuote": "10月1日より礼文滝コースが冬期閉鎖となります。なお、礼文林道コースを除くその他のコースに関しましては、10月20日より冬期閉鎖となります。",
+      "articleExcerpt": "位置在島的北部，路線巴士沒有停這裡，不開車的話，夏天搭觀光巴士最省事。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10388.html",
+      "sourceTitle": "澄海岬｜北海道観光機構",
+      "sourceQuote": "「香深港フェリーターミナルから約50分」「「岬めぐりコース」の沿線」「「レブンブルー」」「20台、無料」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F73、F313、F26；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C16",
-      "articleExcerpt": "11月到隔年4月前往，島上能做的事少很多。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11401.html",
-      "sourceTitle": "北のカナリアパーク｜HOKKAIDO LOVE!",
-      "sourceQuote": "休業日 冬期間休業（11-4月頃）",
+      "articleExcerpt": "須古頓岬是禮文島的最北端，天氣晴朗的時候，站在岬上還能遠望海對面的庫頁島（サハリン）。",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000180.html",
+      "sourceTitle": "スコトン岬｜礼文町",
+      "sourceQuote": "「スコトン岬は礼文島最北端の地」「晴れた日には遠くサハリンを望むことができます。」",
       "verdict": "verified",
-      "notes": "加上觀光巴士 5/3～9/30、步道冬季封閉、案內所 4 月中旬～10 月中旬，編輯判斷有依據。"
+      "notes": "F39；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "春天要等到4月中旬觀光案內所才重新開門，觀光巴士2026年是5月3日才開始跑。",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
-      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
-      "sourceQuote": "礼文A 5月3日～5月5日・5月20日～9月30日 8:40発",
+      "articleExcerpt": "正前方大約1公里的海上是無人島海馬島（トド島），島上立著海馬島燈塔。",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000180.html",
+      "sourceTitle": "スコトン岬｜礼文町",
+      "sourceQuote": "礼文町「スコトン岬は礼文島最北端の地で、正面には無人のトド島が浮かび、晴れた日には遠くサハリンを望むことができます。」；北海道観光機構「約1km沖合に浮かぶ無人島「トド島（海馬島）」」",
       "verdict": "verified",
-      "notes": "案內所 4 月中旬見觀光協會首頁存檔；中文專頁 2026 年 5 月貼文「四月二十日觀光案內所已經開始正式營業」。"
+      "notes": "F308、F428；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C18",
-      "articleExcerpt": "禮文島觀光協會有台灣籍工作人員寫的中文專頁，還經營中文臉書「禮文島觀光中文」。",
-      "sourceUrl": "https://web.archive.org/web/20260617224255/https://www.rebun-island.jp/KYOsan/KYOsanAREKORE.html",
-      "sourceTitle": "台灣人在日本最北端的禮文島生活｜礼文島観光協会（2026-06-17 存檔）",
-      "sourceQuote": "台灣人在日本最北端的禮文島生活／身為案內所的工作人員，我也會提醒遊客相關的祭典資訊。／最新FB貼文 禮文島觀光中文",
+      "articleExcerpt": "桃岩展望台標高225公尺，起霧又微風的清晨，冷霧壓在200公尺以下的時候，從這裡有機會看到雲海。",
+      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
+      "sourceTitle": "雲海｜礼文島観光協会",
+      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
       "verdict": "verified",
-      "notes": "原文為中文。觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F442；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C19",
-      "articleExcerpt": "觀光協會的官方YouTube也有中文版的觀光宣傳影片。",
-      "sourceUrl": "https://www.youtube.com/watch?v=Ud7JuUyET_0",
-      "sourceTitle": "【禮文島觀光宣傳影片】中文版 - YouTube（礼文島観光協会）",
-      "sourceQuote": "<title>【禮文島觀光宣傳影片】中文版 - YouTube ／ \"ownerChannelName\":\"礼文島観光協会\"",
+      "articleExcerpt": "展望台一帶的高山植物群落在2022年列為國家天然紀念物。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10386.html",
+      "sourceTitle": "桃岩展望台｜北海道観光機構",
+      "sourceQuote": "「2022年には国の天然記念物に指定されました」「12台、無料」「●車：香深港フェリーターミナルから約10分」",
       "verdict": "verified",
-      "notes": "第 1 輪改句：拿掉日期，頻道為觀光協會官方。"
+      "notes": "F425；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C20",
-      "articleExcerpt": "島上交通：路線巴士3條（宗谷巴士有3條路線巴士）",
-      "sourceUrl": "http://www.soyabus.co.jp/routebus/rebun/",
-      "sourceTitle": "路線バス 礼文エリア｜宗谷バス",
-      "sourceQuote": "礼文線①（香深～知床）礼文線②（香深～スコトン）元地線（香深～元地）",
+      "articleExcerpt": "標高雖然不到300公尺，強風跟濃霧並不少見，記得帶件防風外套。",
+      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
+      "sourceTitle": "雲海｜礼文島観光協会",
+      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F442、F36；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "5月到9月有定期觀光巴士（5月到9月另有定期觀光巴士）",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
-      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
-      "sourceQuote": "礼文A 5月3日～5月5日・5月20日～9月30日 8:40発",
+      "articleExcerpt": "久種湖是日本最北的湖，春秋有候鳥飛來，天氣好的日子湖面會倒映禮文島最高點的禮文岳。",
+      "sourceUrl": "https://rebun-trail.jp/kushuko/",
+      "sourceTitle": "礼文島トレイル",
+      "sourceQuote": "「日本最北の湖・久種湖」「春と秋に訪れる多様な渡り鳥」「湖面に映る逆さ礼文岳」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F466、F459；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C22",
-      "articleExcerpt": "6月中旬到8月初是花種最多的時候，這段時間去最好。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！｜HOKKAIDO LOVE!（北海道観光機構）",
-      "sourceQuote": "なかでも6月中旬から8月初旬は、最も多くの種類の花を楽しめるベストシーズンです。",
+      "articleExcerpt": "繞湖一圈的久種湖畔步道（久種湖畔コース）大約1小時40分，難度是兩顆星。",
+      "sourceUrl": "https://rebun-trail.jp/kushuko/",
+      "sourceTitle": "礼文島トレイル",
+      "sourceQuote": "「久種湖畔周回［片道］ ★★」「歩行距離：４.２ｋｍ 参考タイム：１時間４０分」「歩行距離：１.７ｋｍ 参考タイム：４０分」「湖の西側沿い1.7Kmの区間は未舗装（一部木道）、湖の東側沿い2.5Kmの区間は舗装された車道」「船泊診療所まで路線バス（スコトン行き、病院前行き）」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F465；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C23",
-      "articleExcerpt": "想看禮文敦盛草就要早一點去，它的花期在5月下旬到6月中旬。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！｜HOKKAIDO LOVE!（北海道観光機構）",
-      "sourceQuote": "5月下旬から6月中旬頃には、礼文島の固有種である「レブンアツモリソウ」が",
+      "articleExcerpt": "夏天的禮文島是吃海膽的季節，香深的老店爐端燒千鳥（炉ばた ちどり）在6月到8月有海膽丼，還有一碗放了海膽跟牡丹蝦的磯拉麵。",
+      "sourceUrl": "https://www.rebun-island.jp/welcome/gourmet.html",
+      "sourceTitle": "グルメ｜礼文島観光協会",
+      "sourceQuote": "「礼文島の夏は「ウニ」」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F42、F450；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C24",
-      "articleExcerpt": "2026年群生地從5月15日開放到6月20日。",
-      "sourceUrl": "https://www.rinya.maff.go.jp/hokkaido/koho/blog/rebun_Is/2026/2605.html",
-      "sourceTitle": "礼文島発！GSS活動日誌（2026年5月）｜林野庁 北海道森林管理局",
-      "sourceQuote": "令和8年5月29日…今年度は木道エリアと展望エリアが5月15日から一般開放されています。",
+      "articleExcerpt": "島上的海膽有北紫海膽跟蝦夷馬糞海膽兩種，北紫海膽的肉是淡黃色、味道清淡，蝦夷馬糞海膽是濃濃的橘色、偏甜，剝開後一眼就分得出來。",
+      "sourceUrl": "https://www.rebun-island.jp/welcome/gourmet.html",
+      "sourceTitle": "グルメ｜礼文島観光協会",
+      "sourceQuote": "「キタムラサキウニ 棘が長いのが特徴。中の身は明るい黄色で、味は淡くあっさり」「エゾバフンウニ 棘が短いのが特徴。中の身は濃いオレンジ色で、味は甘く」",
       "verdict": "verified",
-      "notes": "第 1 輪改句（上一輪 incorrect：5/11）。閉園：步道官網 RSS「レブンアツモリソウ群生地閉園日時 令和8年6月20日（土） 午後4時30分」。"
+      "notes": "F456；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C25",
-      "articleExcerpt": "6月下旬接著輪到禮文薄雪草開花。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！｜HOKKAIDO LOVE!（北海道観光機構）",
-      "sourceQuote": "6月下旬には「レブンウスユキソウ」が見られます。",
+      "articleExcerpt": "香深的爐端燒千鳥把花魚鏘鏘燒當招牌，叫它元祖花魚鏘鏘燒（元祖ほっけのちゃんちゃん焼き），說已經有40年以上的歷史。",
+      "sourceUrl": "https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "礼文島観光協会",
+      "sourceQuote": "「40年以上の歴史を持つ「元祖ほっけのちゃんちゃん焼き」」「6～8月は「うに丼」や、うに、ボタンエビなどが入った「磯ラーメン」」「決済方法 現金」「電話：0163-86-2130」「徒歩5分」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F450；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C26",
-      "articleExcerpt": "夏天也是禮文島吃海膽的季節",
-      "sourceUrl": "https://web.archive.org/web/20261007115614/https://www.rebun-island.jp/welcome/gourmet.html",
-      "sourceTitle": "グルメ｜礼文島観光協会（2026-10-07 存檔）",
-      "sourceQuote": "礼文島の夏は「ウニ」",
+      "articleExcerpt": "鏘鏘燒是禮文島花魚最有名的吃法，有的抹味噌烤，有的在厚厚一片新鮮花魚上鋪蔥、淋醬汁再烤，島上的花魚油脂豐厚，直接烤就很好吃。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島の観光｜北海道観光機構",
+      "sourceQuote": "「礼文島の名物は「ホッケのちゃんちゃん焼き」」「焼き上がりの早い尻尾の方から混ぜ合わせて食べていきます」「ホッケの旬は最も脂の乗る6～8月です」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F447、F75；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C27",
-      "articleExcerpt": "花魚則在6月到8月最肥。",
+      "articleExcerpt": "花魚最肥的季節是6月到8月，跟海膽正好是同一段時間，兩樣想一起吃就挑夏天去。",
       "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！｜HOKKAIDO LOVE!（北海道観光機構）",
-      "sourceQuote": "ホッケの旬は最も脂の乗る6～8月です。",
+      "sourceTitle": "礼文島の観光｜北海道観光機構",
+      "sourceQuote": "「礼文島の名物は「ホッケのちゃんちゃん焼き」」「焼き上がりの早い尻尾の方から混ぜ合わせて食べていきます」「ホッケの旬は最も脂の乗る6～8月です」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F447、F450；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C28",
-      "articleExcerpt": "9月花少了，日照卻多很多，平均有186.7小時，6、7月只有120多小時。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文（宗谷地方） 平年値（年・月ごとの値）｜気象庁",
-      "sourceQuote": "日照時間 6月 125.9／7月 126.5／9月 186.7（統計期間 2003～2020）",
+      "articleExcerpt": "薄雪之湯是源泉放流的溫泉，泡在露天浴池裡就望得到利尻山，也有三溫暖。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
+      "sourceTitle": "礼文島温泉 うすゆきの湯｜北海道観光機構",
+      "sourceQuote": "「●徒歩：香深港フェリーターミナルから約3分」「12:00-22:00（4-9月）」「13:00-21:00（10-3月）」「無休」「源泉かけ流し」「貸切家族風呂も設けられており、利用にあたっては事前の予約手続きが必要」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F435；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C29",
-      "articleExcerpt": "2026年10月20日起只剩禮文林道，以及桃岩展望台步道從渡輪站到展望台的一段能走。",
-      "sourceUrl": "https://rebun-trail.jp/feed/",
-      "sourceTitle": "礼文島トレイルオフィシャルウェブ RSS",
-      "sourceQuote": "１０月２０日現在の島内トレッキングコースの通行可否…【通行可能】・礼文林道コース…【一部通行可】・桃岩展望台コース ※香深フェリーターミナル～桃岩展望台までは通行可能",
+      "articleExcerpt": "全年無休，冬天島上能玩的事變少，這裡照常營業，可以排在搭船前去泡。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
+      "sourceTitle": "礼文島温泉 うすゆきの湯｜北海道観光機構",
+      "sourceQuote": "「●徒歩：香深港フェリーターミナルから約3分」「12:00-22:00（4-9月）」「13:00-21:00（10-3月）」「無休」「源泉かけ流し」「貸切家族風呂も設けられており、利用にあたっては事前の予約手続きが必要」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F435；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C30",
-      "articleExcerpt": "最熱的8月，禮文島的平均氣溫也只有19.7℃，日最高22.6℃。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文（宗谷地方） 平年値（年・月ごとの値）｜気象庁",
-      "sourceQuote": "8月 平均気温 19.7 日最高気温 22.6",
+      "articleExcerpt": "島南邊的地藏岩、桃台貓台，還有電影外景地北方金絲雀公園（北のカナリアパーク），收在禮文島景點。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島の観光｜北海道観光機構",
+      "sourceQuote": "「女優・吉永小百合主演の映画「北のカナリアたち」の公開を記念し、ロケ現場だった「麗端小学校岬分校」を一般公開」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F432；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C31",
-      "articleExcerpt": "下表是氣象廳禮文觀測站2003年到2020年統計的平年值，也就是長年的平均，不是預報。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文（宗谷地方） 平年値（年・月ごとの値）｜気象庁",
-      "sourceQuote": "礼文（宗谷地方） 平年値 統計期間 2003～2020",
+      "articleExcerpt": "店家跟土產看禮文島美食，7條步道各要走多久、哪一段封閉，在禮文島健行。",
+      "sourceUrl": "https://rebun-trail.jp/",
+      "sourceTitle": "礼文島トレイル",
+      "sourceQuote": "桃岩展望台、礼文林道、岬めぐり、礼文岳、礼文滝、久種湖畔、８時間コース",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F34；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C32",
-      "articleExcerpt": "雨最多的是8月與9月，各有130多毫米。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文（宗谷地方） 平年値（年・月ごとの値）｜気象庁",
-      "sourceQuote": "降水量 8月 138.6／9月 131.1（其他月份皆 101.0 以下）",
+      "articleExcerpt": "6月中旬到8月初花的種類最多，這段時間去最好。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島の観光｜北海道観光機構",
+      "sourceQuote": "「ベストシーズンは、5月～9月」「6月中旬から8月初旬は、最も多くの種類の花を楽しめる」「5月下旬から6月中旬頃には、礼文島の固有種である「レブンアツモリソウ」が、6月下旬には「レブンウスユキソウ」が見られます」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F443；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C33",
-      "articleExcerpt": "各月氣溫與降雨表（1月 −4.6℃／−2.7℃／−6.5℃／73.4毫米 … 12月 −2.4℃／−0.3℃／−4.5℃／91.5毫米）",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文（宗谷地方） 平年値（年・月ごとの値）｜気象庁",
-      "sourceQuote": "1月 73.4 -4.6 -2.7 -6.5 … 12月 91.5 -2.4 -0.3 -4.5",
+      "articleExcerpt": "想看禮文敦盛草的話要早一點，花期在5月下旬到6月中旬，6月下旬接著輪到禮文薄雪草。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島の観光｜北海道観光機構",
+      "sourceQuote": "「ベストシーズンは、5月～9月」「6月中旬から8月初旬は、最も多くの種類の花を楽しめる」「5月下旬から6月中旬頃には、礼文島の固有種である「レブンアツモリソウ」が、6月下旬には「レブンウスユキソウ」が見られます」",
       "verdict": "verified",
-      "notes": "12 個月 48 格逐格對過一致。"
+      "notes": "F443；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C34",
-      "articleExcerpt": "禮文島常起霧。",
-      "sourceUrl": "https://web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/",
-      "sourceTitle": "雲海｜礼文島観光協会（2026-10-09 存檔）",
-      "sourceQuote": "霧がかかることの多い島、礼文島。",
+      "articleExcerpt": "夏天也是吃海膽的季節，花魚在6月到8月最肥。",
+      "sourceUrl": "https://www.rebun-island.jp/welcome/gourmet.html",
+      "sourceTitle": "グルメ｜礼文島観光協会",
+      "sourceQuote": "「礼文島の夏は「ウニ」」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F42、F447；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C35",
-      "articleExcerpt": "6月和7月的日照只有125.9和126.5小時，是夏天最陰的兩個月。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文（宗谷地方） 平年値（年・月ごとの値）｜気象庁",
-      "sourceQuote": "日照時間 6月 125.9／7月 126.5／8月 154.2",
+      "articleExcerpt": "| 4月到5月上旬 | 觀光案內所4月中旬重新開門，觀光巴士要到5月才開始跑 |",
+      "sourceUrl": "https://www.rebun-island.jp/",
+      "sourceTitle": "礼文島観光協会",
+      "sourceQuote": "「礼文島観光案内所（香深フェリーターミナル内 4月中旬～10月中旬）」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F115、F26；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C36",
-      "articleExcerpt": "冷霧層在標高200公尺以下時，從高處就能看到雲海。",
-      "sourceUrl": "https://web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/",
-      "sourceTitle": "雲海｜礼文島観光協会（2026-10-09 存檔）",
-      "sourceQuote": "この冷たい霧の層が標高200m以下にある時に見ることができます。",
+      "articleExcerpt": "| 5月中旬 | 禮文敦盛草保護區開放，日期每年跟著開花狀況前後調整 |",
+      "sourceUrl": "https://www.rinya.maff.go.jp/hokkaido/koho/blog/rebun_Is/2026/2605.html",
+      "sourceTitle": "林野庁北海道森林管理局",
+      "sourceQuote": "「今年度は木道エリアと展望エリアが5月15日から一般開放されています。」「令和8年6月20日（土）　午後4時30分」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F31、F441；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C37",
-      "articleExcerpt": "標高225公尺的桃岩展望台、233公尺的燕山，還有禮文林道從元地口走約1.1公里的地方，都是看雲海的地點。",
-      "sourceUrl": "https://web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/",
-      "sourceTitle": "雲海｜礼文島観光協会（2026-10-09 存檔）",
-      "sourceQuote": "桃岩展望台 標高225ｍ／ツバメ山（通称） 標高233ｍ／礼文林道コース(元地口より約1.1km地点) 標高200ｍ",
+      "articleExcerpt": "| 5月下旬到6月中旬 | 禮文敦盛草的花期，5月的風是一年裡最強的 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島の観光｜北海道観光機構",
+      "sourceQuote": "「ベストシーズンは、5月～9月」「6月中旬から8月初旬は、最も多くの種類の花を楽しめる」「5月下旬から6月中旬頃には、礼文島の固有種である「レブンアツモリソウ」が、6月下旬には「レブンウスユキソウ」が見られます」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F443、F489；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C38",
-      "articleExcerpt": "雲海多半出現在有霧、風小的清晨。",
-      "sourceUrl": "https://web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/",
-      "sourceTitle": "雲海｜礼文島観光協会（2026-10-09 存檔）",
-      "sourceQuote": "霧がかかり、風の弱い日に発生します。早朝の気温が上がる前がチャンスです。",
+      "articleExcerpt": "| 6月中旬到8月初 | 禮文薄雪草從6月下旬開花，6、7月是夏天最陰的兩個月 |",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島の観光｜北海道観光機構",
+      "sourceQuote": "「ベストシーズンは、5月～9月」「6月中旬から8月初旬は、最も多くの種類の花を楽しめる」「5月下旬から6月中旬頃には、礼文島の固有種である「レブンアツモリソウ」が、6月下旬には「レブンウスユキソウ」が見られます」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F443、F490；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C39",
-      "articleExcerpt": "從稚內來的渡輪最早8:25才到香深港，想看雲海就得在島上過一夜。",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
-      "sourceTitle": "稚内～礼文島 時刻表｜ハートランドフェリー",
-      "sourceQuote": "6/1～9/30 06:30～08:25（全年最早到港 8:25）",
+      "articleExcerpt": "| 8月 | 一年裡最暖的月份，雨量也是全年最多的月份之一 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C40",
-      "articleExcerpt": "7月的日最高氣溫平均20.4℃，8月也只有22.6℃。",
+      "articleExcerpt": "| 9月 | 花少了，日照多，在意晴天的話好排，觀光巴士大約開到月底 |",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文（宗谷地方） 平年値（年・月ごとの値）｜気象庁",
-      "sourceQuote": "日最高気温 7月 20.4／8月 22.6",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「日照時間(時間)」「6月 … 125.9」「7月 … 126.5」「4月 … 192.7」「9月 … 186.7」「12月 … 42.5」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F490、F26；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C41",
-      "articleExcerpt": "全年平均風速每秒3.5公尺，最強的5月有每秒4.1公尺。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文（宗谷地方） 平年値（年・月ごとの値）｜気象庁",
-      "sourceQuote": "平均風速 年 3.5／5月 4.1（各月最大）",
+      "articleExcerpt": "| 10月 | 多數步道陸續冬季封閉，出發前先看禮文島健行的公告，觀光巴士停駛 |",
+      "sourceUrl": "https://rebun-trail.jp/?p=1749",
+      "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ（2026-10-21）｜礼文島トレイル",
+      "sourceQuote": "１０月２０日現在の島内トレッキングコースの通行可否とになります。【通行可能】・礼文林道コース【冬季閉鎖】・岬めぐりコース・久種湖畔コース・礼文滝コース・礼文岳コース・８時間コース【一部通行可】・桃岩展望台コース ※香深フェリーターミナル～桃岩展望台までは通行可能 (近道に関してはすべて通行止め)",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F496、F26；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C42",
-      "articleExcerpt": "桃岩展望台標高不到300公尺，卻常吹強風、起濃霧。",
-      "sourceUrl": "https://web.archive.org/web/20260308163454/https://rebun-trail.jp/momoiwaobservatorycourse/",
-      "sourceTitle": "桃岩展望台コース｜礼文島トレイル（2026-03-08 存檔）",
-      "sourceQuote": "標高は300m以下ですが、強風や濃霧も珍しくありません。",
+      "articleExcerpt": "| 11月到4月上旬 | 島上能做的事少很多 |",
+      "sourceUrl": "https://rebun-trail.jp/?p=1749",
+      "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ（2026-10-21）｜礼文島トレイル",
+      "sourceQuote": "１０月２０日現在の島内トレッキングコースの通行可否とになります。【通行可能】・礼文林道コース【冬季閉鎖】・岬めぐりコース・久種湖畔コース・礼文滝コース・礼文岳コース・８時間コース【一部通行可】・桃岩展望台コース ※香深フェリーターミナル～桃岩展望台までは通行可能 (近道に関してはすべて通行止め)",
       "verdict": "verified",
-      "notes": "步道官網 2026-11-02 維護中（HTTP 503），讀 Wayback 存檔。"
+      "notes": "F496、F431；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C43",
-      "articleExcerpt": "夏天一天之內溫差不大，春秋則早晚溫差大。天氣像山上一樣說變就變，雨具和長袖都要帶著。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！｜HOKKAIDO LOVE!（北海道観光機構）",
-      "sourceQuote": "礼文島の夏は、一日の中で気温変化が少なく過ごしやすいですが、春や秋は時間帯によって気温が大きく異なる…天気もまるで山岳のように変化する…雨具と長袖の服の用意は必須です。",
+      "articleExcerpt": "9月花少了，不過比起花更在意晴天的話，9月反而好排，日照時數見下面氣溫與穿著那一節。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「日照時間(時間)」「6月 … 125.9」「7月 … 126.5」「4月 … 192.7」「9月 … 186.7」「12月 … 42.5」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F490；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C44",
-      "articleExcerpt": "2026年8月步道官網就曾提醒連日炎熱，健行時要留意中暑、多喝水",
-      "sourceUrl": "https://rebun-trail.jp/feed/",
-      "sourceTitle": "礼文島トレイルオフィシャルウェブ RSS",
-      "sourceQuote": "礼文島も連日暑い日が続いています。トレッキングをされる際には熱中症に注意し、十分な水分補給を心掛けてください。",
+      "articleExcerpt": "島上的活動集中在5月到9月，5月底有敦盛草感謝祭，7月是祭典月，8月有花火大會跟海峽祭，各活動的日期在最後一節。",
+      "sourceUrl": "https://www.rebun-island.jp/event/",
+      "sourceTitle": "イベント情報｜礼文島観光協会",
+      "sourceQuote": "「令和8年度は5月28日～5月29日に開催」「8月10日に花火大会、1２日に海峡祭り」",
       "verdict": "verified",
-      "notes": "2026-08-14 步道官網公告。"
+      "notes": "F41、F474、F497；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C45",
-      "articleExcerpt": "5月到6月就冷得多，日最高只有11.6℃到15.9℃。5月的日最低6.0℃，風又是一年裡最強。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文（宗谷地方） 平年値（年・月ごとの値）｜気象庁",
-      "sourceQuote": "日最高気温 5月 11.6／6月 15.9；日最低気温 5月 6.0；平均風速 5月 4.1（最大）",
+      "articleExcerpt": "11月到隔年4月前往不太適合，觀光案內所10月中旬就關了，往北端的巴士也很少。",
+      "sourceUrl": "https://www.rebun-island.jp/",
+      "sourceTitle": "礼文島観光協会",
+      "sourceQuote": "「礼文島観光案内所（香深フェリーターミナル内 4月中旬～10月中旬）」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F115、F500；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C46",
-      "articleExcerpt": "7、8月帶一件防風又防雨的薄外套就夠……這兩個月建議在薄外套裡再加一件保暖的中層。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文（宗谷地方） 平年値（年・月ごとの値）｜気象庁",
-      "sourceQuote": "日最高気温 7月 20.4／8月 22.6；5月 11.6／6月 15.9",
+      "articleExcerpt": "從稚內搭渡輪直航香深港大約1小時55分，島上不開車的話靠宗谷巴士（宗谷バス）的3條路線巴士，5月到9月另有定期觀光巴士（定期観光バス），也有租車跟出租自行車的店。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "時刻表 稚内～礼文｜ハートランドフェリー",
+      "sourceQuote": "06:35～08:30、＜10:10～13:00＞",
       "verdict": "verified",
-      "notes": "穿著建議是依平年值與北海道觀光機構「雨具と長袖の服の用意は必須」的編輯判斷。"
+      "notes": "F5、F21、F26、F501；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C47",
-      "articleExcerpt": "島上的活動集中在5月到9月，下表是2026年的日期，每年的日期由觀光協會的活動頁公布。",
-      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント｜礼文島観光協会（2026-10-10 存檔）",
-      "sourceQuote": "アツモリ感謝祭 令和8年度は5月28日～5月29日／最北フラワーマラソン大会 令和8年度は6月6日(土)／水産まつり 7月18日／礼文ふるさとまつり 8月10日に花火大会、1２日に海峡祭り",
+      "articleExcerpt": "日文不好也不用擔心，禮文島觀光協會有台灣籍工作人員寫的中文專頁，還經營中文臉書「禮文島觀光中文」。",
+      "sourceUrl": "https://www.rebun-island.jp/KYOsan/KYOsanAREKORE.html",
+      "sourceTitle": "礼文島観光協会",
+      "sourceQuote": "「台灣人在日本最北端的禮文島生活」「最新FB貼文」「禮文島觀光中文」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F494；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C48",
-      "articleExcerpt": "敦盛草感謝祭（アツモリ感謝祭）｜5月28日～29日（表格）",
-      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント｜礼文島観光協会（2026-10-10 存檔）",
-      "sourceQuote": "アツモリ感謝祭 令和8年度は5月28日～5月29日に開催しました。",
+      "articleExcerpt": "可以，6月到9月最好排。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "時刻表 稚内～礼文｜ハートランドフェリー",
+      "sourceQuote": "6/1–9/30「06:30～08:25」「10:30～12:25」「14:50～16:45」",
       "verdict": "verified",
-      "notes": "地點：林野庁 GSS 日誌「5月28日・29日にレブンアツモリソウ群生地（展望エリア）にて、礼文町主催の「アツモリ感謝祭」が開催」。觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F1、F2；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C49",
-      "articleExcerpt": "最北花之馬拉松｜6月6日（表格）；第33屆最北花之馬拉松（最北フラワーマラソン）",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00003384.html",
-      "sourceTitle": "第33回 2026最北フラワーマラソンの開催について｜北海道礼文町",
-      "sourceQuote": "第33回 2026最北フラワーマラソンの開催について 令和8年6月6日、以下のとおり最北フラワーマラソンの開催いたします。",
+      "articleExcerpt": "這段時間稚內到香深一天有3個來回，最早一班6:30出發，最晚一班17:10從香深開回稚內，錯過這班當天就回不了稚內。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "時刻表 稚内～礼文｜ハートランドフェリー",
+      "sourceQuote": "6/1–9/30「06:30～08:25」「10:30～12:25」「14:50～16:45」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F1、F2；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C50",
-      "articleExcerpt": "禮文神社祭在7月8日到10日，地點是北部的船泊地區。",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
-      "sourceTitle": "礼文の神社祭｜北海道礼文町",
-      "sourceQuote": "礼文神社祭 とき 7月8～10日 ところ 船泊地区",
+      "articleExcerpt": "坐2等艙要在開船前40分鐘辦好乘船手續，所以搭17:10的末班船，16:30前就要回到渡輪站，1等、特別室跟2等指定席是16:50前。",
+      "sourceUrl": "https://heartlandferry.jp/faq/",
+      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
+      "sourceQuote": "「2等客室をご利用されるお客様は出港時間の40分前までにお済ませ下さい。」「出港時間の20分前までに各フェリーターミナルにて乗船手続き」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F46、F2；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C51",
-      "articleExcerpt": "7月14日到16日，換南部的香深地區辦嚴島神社祭。",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
-      "sourceTitle": "礼文の神社祭｜北海道礼文町",
-      "sourceQuote": "厳島神社祭 とき 7月14～16日 ところ 香深地区",
+      "articleExcerpt": "稚內6:30的船 → 8:25到香深港 → 8:40搭觀光巴士禮文A線繞北端 → 12:30回到渡輪站 → 下午走桃岩展望台，從渡輪站走上去大約1小時 → 17:10的船回稚內。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "時刻表 稚内～礼文｜ハートランドフェリー",
+      "sourceQuote": "6/1–9/30「06:30～08:25」「10:30～12:25」「14:50～16:45」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F1、F26、F407、F2；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C52",
-      "articleExcerpt": "2026年的水產祭（水産まつり）7月18日在香深港的臨時會場舉行，島上的美食這一天會集中到會場。",
-      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント｜礼文島観光協会（2026-10-10 存檔）",
-      "sourceQuote": "水産まつり(うめーべやフェスティバル) 令和8年度は7月18日に開催しました。香深港特設会場で「島のうまいもの」が大集合！",
+      "articleExcerpt": "不搭觀光巴士、只走南部的話：稚內6:30的船 → 8:25到香深港 → 8:50從渡輪站走路出發 → 9:50到桃岩展望台，周邊散步1小時 → 11:50回到渡輪站 → 14:20或17:10的船回稚內。",
+      "sourceUrl": "https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "フェリー時刻で日帰りプラン｜礼文島観光協会",
+      "sourceQuote": "「（6月～9月）」「稚内6:30発 香深 8:25着」「１４：２０発 稚内行 （滞在５時間）」「１７：１０発 稚内行 （滞在８時間）」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F405、F407；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C53",
-      "articleExcerpt": "香深港就是從稚內來的渡輪靠岸的地方。",
+      "articleExcerpt": "船8:25靠岸，巴士8:40就開，只隔15分鐘，宗谷巴士說有15分鐘以上就來得及，不過船上人多的話，最好早點下船。",
       "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
-      "sourceTitle": "稚内～礼文島 時刻表｜ハートランドフェリー",
-      "sourceQuote": "稚内発～香深着",
+      "sourceTitle": "時刻表 稚内～礼文｜ハートランドフェリー",
+      "sourceQuote": "6/1–9/30「06:30～08:25」「10:30～12:25」「14:50～16:45」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F1、F26、F306；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C54",
-      "articleExcerpt": "花火大會和海峽祭同屬禮文故鄉祭（礼文ふるさとまつり），2026年8月10日放花火，兩天後的8月12日是海峽祭。",
-      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント｜礼文島観光協会（2026-10-10 存檔）",
-      "sourceQuote": "礼文ふるさとまつり 令和8年度は8月10日に花火大会、1２日に海峡祭りを開催しました。",
+      "articleExcerpt": "下午14:15才發車的禮文B線，16:40才回到渡輪站，已經超過2等艙的16:30，所以一日來回要選上午的A線。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "「礼文Ｂ　-　所要時間 / 2:25」「3,300円」「6月1日～9月30日」「14:15発 → 16:40着」「香深フェリーターミナル発～スカイ岬～スコトン岬～香深フェリーターミナル着」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F27、F46、F81；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C55",
-      "articleExcerpt": "溫泉美食健行（ONSEN・ガストロノミー）是附餐券與溫泉券的健行活動，2026年在禮文島辦第5屆，期間是8月1日到9月30日。窗口是禮文島觀光協會",
-      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
-      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜温泉ガストロノミーツーリズム推進機構",
-      "sourceQuote": "【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング／事務局：礼文島観光協会／※どちらのプランもお食事クーポン券2,000円分と温泉券付きです。",
+      "articleExcerpt": "禮文敦盛草的保護區有兩處，一處在船泊一帶，一處在濱中往南的鐵府，從香深港開車大約30分鐘。",
+      "sourceUrl": "https://www.env.go.jp/nature/kisho/hogozoushoku/rebunatsumoriso.html",
+      "sourceTitle": "レブンアツモリソウ｜環境省",
+      "sourceQuote": "「北海道礼文島のみに分布する。」「５月下旬～６月下旬に淡黄白（クリーム）色の大きく優美な花をつける。」「平成6年国内希少野生動植物種に指定」「３．生息を脅かす要因 盗掘」「群生地の一部（船泊地区1.7ha、鉄府地区4.6ha）を環境省所管地として管理。」",
       "verdict": "verified",
-      "notes": "第 1 輪改寫，刪去額滿與價格。"
+      "notes": "F309、F209、F32；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C56",
-      "articleExcerpt": "感謝祭與第33屆最北花之馬拉松都辦在禮文敦盛草開花的時候，想把賞花和活動排在一起，5月底到6月上旬最剛好。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！｜HOKKAIDO LOVE!（北海道観光機構）",
-      "sourceQuote": "5月下旬から6月中旬頃には、礼文島の固有種である「レブンアツモリソウ」が",
+      "articleExcerpt": "當天來回也看得到，搭路線巴士到濱中，往南走大約20分鐘就到鐵府的保護區，看完再折返，記得先對好回程巴士跟末班船。",
+      "sourceUrl": "https://rebun-trail.jp/momoiwaobservatorycourse/",
+      "sourceTitle": "桃岩展望台コース｜礼文島トレイル",
+      "sourceQuote": "「桃岩登山口と知床にはバス停があり…路線バスが運行しています。本数は少ないですが」「スコトン岬と浜中にはバス停があり」「コースの起点となる浜中、終点となる香深井には…路線バスが運行しています。」",
       "verdict": "verified",
-      "notes": "感謝祭 5/28–29、馬拉松 6/6 都落在花期內。"
+      "notes": "F120、F209、F210、F4；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C57",
-      "articleExcerpt": "感謝祭是在敦盛草群生地辦的小型活動，觀光協會也藉這個機會請大家支持保護島上環境的緞帶計畫（リボンプロジェクト）。",
-      "sourceUrl": "https://web.archive.org/web/20200925121914/http://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント｜礼文島観光協会（2020-09-25 存檔）",
-      "sourceQuote": "アツモリ群生地でのミニイベント。島の環境保護活動を応援する リボンプロジェクト にご協力ください。",
+      "articleExcerpt": "稚內6:30的船 → 8:25到香深港 → 搭路線巴士到濱中 → 往南走約20分鐘到鐵府的保護區 → 折返回香深港。",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "時刻表 稚内～礼文｜ハートランドフェリー",
+      "sourceQuote": "6/1–9/30「06:30～08:25」「10:30～12:25」「14:50～16:45」",
       "verdict": "verified",
-      "notes": "2026-10-10 存檔的活動頁感謝祭欄也連到「⇒リボンプロジェクト について」。"
+      "notes": "F1、F120、F210；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C58",
-      "articleExcerpt": "馬拉松2026年早上9:30從Pisuka21（ピスカ２１）起跑，分3公里、5公里、10公里，參加免費。報名在5月6日截止，當天不受理",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00003300/00003384/youkou.pdf",
-      "sourceTitle": "第33回 2026最北フラワーマラソン実施要綱｜礼文町",
-      "sourceQuote": "令和8年6月6日（土） 午前9時30分スタート／スタート・ゴール ～ ピスカ２１ 裏側／3キロコース 5キロコース 10キロコース／参加料 ・無 料／申込締切 2026年5月6日（水） 当日の申込受付はできません",
+      "articleExcerpt": "觀光巴士禮文A線經過澄海岬跟須古頓岬，卻不經過保護區，搭A線看不到敦盛草。",
+      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
+      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
+      "sourceQuote": "「礼文A　-　所要時間 / 3:50」「3,600円」「5月3日～5月5日・5月20日～9月30日」「8:40発 → 12:30着」「香深フェリーターミナル発～スカイ岬～スコトン岬～桃台猫台～※香深フェリーターミナル（6/1～9/30期間で途中下車可能）～北のカナリアパーク～香深フェリーターミナル着」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F26、F443；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C59",
-      "articleExcerpt": "6月到9月只看南部的桃岩展望台、再搭觀光巴士繞北端一圈的話，當天來回就夠。",
-      "sourceUrl": "https://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf",
-      "sourceTitle": "滞在4時間のおすすめプラン 12:50発 沓形行｜礼文島観光協会（存檔）",
-      "sourceQuote": "Aコース：8:40-12:30…フェリーターミナルにて途中下車可／桃岩展望台周辺散策 ターミナル8:50発～桃岩展望台9:50着",
+      "articleExcerpt": "兩處都想看又不想趕時間的話，5月下旬到6月中旬住一晚比較好排，住北邊的船泊離北部比較近。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島の観光｜北海道観光機構",
+      "sourceQuote": "「ベストシーズンは、5月～9月」「6月中旬から8月初旬は、最も多くの種類の花を楽しめる」「5月下旬から6月中旬頃には、礼文島の固有種である「レブンアツモリソウ」が、6月下旬には「レブンウスユキソウ」が見られます」",
       "verdict": "verified",
-      "notes": "觀光協會 6–9 月日歸行程本身就列這兩項。觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F443、F49；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C60",
-      "articleExcerpt": "北端的須古頓岬離香深港開車約60分鐘。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10389.html",
-      "sourceTitle": "スコトン岬｜HOKKAIDO LOVE!",
-      "sourceQuote": "●車：香深港フェリーターミナルから約60分",
+      "articleExcerpt": "要看雲海的桃岩展望台在南邊，從香深的渡輪站走上去大約1小時，住香深最近，而且渡輪最早8:25才到港，要看清晨的雲海就得前一晚住在島上。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-momo-g.jpg",
+      "sourceTitle": "礼文島トレイル",
+      "sourceQuote": "「歩行距離：5.7km 参考タイム：3時間00分」「2.4km 1時間30分」「2.8km 1時間00分」「12.4km 5時間20分」「9.0km 4時間00分」「16.5km 6時間50分」「8.2km 3時間00分」「4.0km 2時間00分」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F113、F407、F49、F1、F442；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C61",
-      "articleExcerpt": "8小時步道光是參考步行時間就有6小時50分。起點又在北部的濱中（浜中），要一路往南走",
-      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-hachi-g.jpg",
-      "sourceTitle": "８時間コース 起伏図｜礼文島トレイル",
-      "sourceQuote": "［片道］難易度：★★★★★ 歩行距離：１６．５ｋｍ 参考タイム：６時間５０分（起點 浜中→終點 香深井）",
+      "articleExcerpt": "8小時步道是禮文島最難的一條，要有跟登利尻山一樣的體力跟裝備，參考步行時間6小時50分，起點濱中在北部，要一路往南走，大半段收不到手機訊號，官方也提醒不要一個人走，所以最好前一晚就住在島上，住北邊的船泊離起點比較近。",
+      "sourceUrl": "https://rebun-trail.jp/eighthours/",
+      "sourceTitle": "8時間コース｜礼文島トレイル",
+      "sourceQuote": "「浜中－香深井［片道］　★★★★★」「礼文島トレイルの中で最も難易度の高いコース」「利尻山登山と同様の体力と装備が必要」「高波や強風により通行できないこともあります」「ルートがわかりにくく道迷いの危険があります。北から南に向かってご通行ください。」",
       "verdict": "verified",
-      "notes": "步道頁存檔：「礼文島北部の浜中を出発し…香深井へ」「北から南に向かってご通行ください」。"
+      "notes": "F102、F113、F38、F49；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C62",
-      "articleExcerpt": "只排一天：6月到9月搭6:30的船去，上午搭觀光巴士繞北端、下午走桃岩展望台",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
-      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
-      "sourceQuote": "礼文A…8:40発 → 12:30着（6/1～9/30限定 香深FT途中下車11:45頃着）",
+      "articleExcerpt": "雲海：住香深 → 清晨從渡輪站走約1小時到桃岩展望台。",
+      "sourceUrl": "https://rebun-trail.jp/wp-content/uploads/2021/02/c-momo-g.jpg",
+      "sourceTitle": "礼文島トレイル",
+      "sourceQuote": "「歩行距離：5.7km 参考タイム：3時間00分」「2.4km 1時間30分」「2.8km 1時間00分」「12.4km 5時間20分」「9.0km 4時間00分」「16.5km 6時間50分」「8.2km 3時間00分」「4.0km 2時間00分」",
       "verdict": "verified",
-      "notes": "第 1 輪縮句；6:30→8:25 見 Heartland，桃岩行程見觀光協會 QR2。"
+      "notes": "F113、F407；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C63",
-      "articleExcerpt": "不開車的話，可以搭香深往須古頓的路線巴士，或租自行車、叫計程車前往（敦盛草群生地）",
-      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
-      "sourceTitle": "バス運行時刻表（令和8年10月1日改正）礼文｜宗谷バス",
-      "sourceQuote": "船泊方面行 … 船泊本町 … 浜中 … スコトン着",
+      "articleExcerpt": "8小時步道：住北邊的船泊 → 清晨到濱中 → 由北往南走到香深井。",
+      "sourceUrl": "https://rebun-trail.jp/eighthours/",
+      "sourceTitle": "8時間コース｜礼文島トレイル",
+      "sourceQuote": "「全長約16.5km」「北から南に向かってご通行ください」「宇遠内から元地までの海岸線は、落石・転落の危険があるため、通行を禁止」「携帯電話が通じません。単独での行動は危険」",
       "verdict": "verified",
-      "notes": "第 1 輪新增。路線巴士礼文線②（香深～スコトン）經浜中；8 小時步道起伏圖顯示群生地在浜中起約 1.0km。租自行車與計程車見觀光協會モデルプラン存檔（レンタルサイクル・バイク：CAT ROCK、タクシー：礼文ハイヤー／イシドウハイヤー）。"
+      "notes": "F38、F49；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C64",
-      "articleExcerpt": "群生地在北部的船泊一帶，離香深港開車約30分鐘",
-      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11408.html",
-      "sourceTitle": "レブンアツモリソウ群生地｜HOKKAIDO LOVE!",
-      "sourceQuote": "所在地 北海道礼文郡礼文町船泊村／●車：香深港フェリーターミナルから約30分",
+      "articleExcerpt": "第一次去、沒有租車的話，住南邊的香深最省事，渡輪站在這裡，旅館也比較多，隔天一早要搭船也方便。",
+      "sourceUrl": "https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊施設｜礼文島観光協会",
+      "sourceQuote": "「香深（かふか）:礼文島の南側の地域・フェリーターミナルがあります。」「船泊（ふなどまり）:礼文島の北側の地域です。」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F49；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C65",
-      "articleExcerpt": "觀光巴士禮文A線經過澄海岬、須古頓岬、桃台貓台與北方金絲雀公園，不經過群生地，搭A線看不到敦盛草。",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
-      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
-      "sourceQuote": "香深フェリーターミナル発～スカイ岬～スコトン岬～桃台猫台～※香深フェリーターミナル～北のカナリアパーク～香深フェリーターミナル着",
+      "articleExcerpt": "行程以北邊的岬角、步道跟賞花為主，傍晚還想看須古頓岬的夕陽，住北邊的船泊比較順。",
+      "sourceUrl": "https://www.rebun-island.jp/inbound/hotel.html",
+      "sourceTitle": "宿泊施設｜礼文島観光協会",
+      "sourceQuote": "「香深（かふか）:礼文島の南側の地域・フェリーターミナルがあります。」「船泊（ふなどまり）:礼文島の北側の地域です。」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F49、F604；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C66",
-      "articleExcerpt": "8小時步道大半段收不到手機訊號，官方提醒不要一個人走。",
-      "sourceUrl": "https://web.archive.org/web/20260124144243/https://rebun-trail.jp/eighthours/",
-      "sourceTitle": "８時間コース｜礼文島トレイル（2026-01-24 存檔）",
-      "sourceQuote": "西上泊から礼文林道香深井口までの区間は、迂回ルートがないことに加えて限られた場所を除いて携帯電話が通じません。単独での行動は危険なため、複数で行動するようにしてください。",
+      "articleExcerpt": "花季的房間要比船票先訂，房間很早就開賣，渡輪卻要到乘船日2個月前的同一天才開放預約。",
+      "sourceUrl": "https://rebun.by-onko-chishin.com/10956/",
+      "sourceTitle": "礼文観光ホテル 咲涼",
+      "sourceQuote": "2026年10月30日（金）をもちまして、2026年度の営業を終了｜2027年5月20日から10月31日までとなります。冬季期間は休館｜公式サイト限定宿泊プランの販売を、2026年11月2日（月）より開始",
       "verdict": "verified",
-      "notes": "西上泊分岐在約 2.1km 處、全長 16.5km，屬大半段。步道官網 2026-11-02 維護中（HTTP 503），讀 Wayback 存檔。"
+      "notes": "F602、F11；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C67",
-      "articleExcerpt": "冬天造訪：往北端須古頓的巴士很少，下表是11月起的平日班次，週六日、假日與學校放假的日子改走假日班表，時刻不同。",
-      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
-      "sourceTitle": "バス運行時刻表（令和8年10月1日改正）礼文｜宗谷バス",
-      "sourceQuote": "船泊方面行 平日運行（月曜～金曜）／※休祭日、休校日、冬休み、春休みは休日運行です。",
+      "articleExcerpt": "島上有民宿說，每年最早滿的是禮文敦盛草開花的5月下旬到6月中旬、花的種類最多的6月到7月，還有日本的盂蘭盆節，9月就比較好訂。",
+      "sourceUrl": "https://pensionuni.main.jp/2026/11/09/%e3%80%902027%e5%b9%b4%e3%82%aa%e3%83%b3%e3%82%b7%e3%83%bc%e3%82%ba%e3%83%b3%e3%81%ae%e3%81%94%e4%ba%88%e7%b4%84%e5%8f%97%e4%bb%98%e9%96%8b%e5%a7%8b%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+      "sourceTitle": "ペンションうーにー",
+      "sourceQuote": "レブンアツモリソウの咲く5月下旬〜6月中旬、花の種類がいちばん多い6〜7月、お盆の時期は、例年早くお部屋が埋まります｜欠航の場合もキャンセル料がかかります",
       "verdict": "verified",
-      "notes": "11/1 起平日到スコトン只有 4 班（6:30、7:40、10:45、16:20）。"
+      "notes": "F603；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C68",
-      "articleExcerpt": "11月起平日｜住在島上 7:40→8:39｜11:46→12:45；當天從稚內來（8:30到港）10:45→11:44｜11:46→12:45",
-      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
-      "sourceTitle": "バス運行時刻表（令和8年10月1日改正）礼文｜宗谷バス",
-      "sourceQuote": "フェリーターミナル発 7:40 … スコトン着 8:39／10:45 … 11:44／スコトン発 11:46 … フェリーターミナル着 12:45",
+      "articleExcerpt": "冬天有些旅館休館，11月到4月前往的話，要先看禮文島住宿。",
+      "sourceUrl": "https://rebun.by-onko-chishin.com/10956/",
+      "sourceTitle": "礼文観光ホテル 咲涼",
+      "sourceQuote": "2026年10月30日（金）をもちまして、2026年度の営業を終了｜2027年5月20日から10月31日までとなります。冬季期間は休館｜公式サイト限定宿泊プランの販売を、2026年11月2日（月）より開始",
       "verdict": "verified",
-      "notes": "8:30 到港對應 Heartland 冬季 6:35→8:30。"
+      "notes": "F602；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C69",
-      "articleExcerpt": "下一班17:21要18:20才回到渡輪站，趕不上17:05的末班船。",
-      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/rebun_r8_winter.pdf",
-      "sourceTitle": "バス運行時刻表（令和8年10月1日改正）礼文｜宗谷バス",
-      "sourceQuote": "香深方面行 5便 11/1～ スコトン発 17:21 … フェリーターミナル着 18:20",
+      "articleExcerpt": "只能去一個島的話，想登利尻山就選利尻島，想看花、走海岸步道就選禮文島。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1397.htm",
+      "sourceTitle": "利尻富士町",
+      "sourceQuote": "標高差 1,490ｍ 登り６時間・下り４時間 ／ 山頂で１時間の休憩を考えると、天候のいい日でも１１時間必要です。",
       "verdict": "verified",
-      "notes": "末班船 17:05 見 Heartland 11/1～12/31。"
+      "notes": "F608、F403；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C70",
-      "articleExcerpt": "6月到9月最好排。這段時間一天3個來回，最早一班6:30從稚內出發。最晚一班17:10從香深開回稚內",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
-      "sourceTitle": "稚内～礼文島 時刻表｜ハートランドフェリー",
-      "sourceQuote": "6/1～9/30 06:30～08:25、08:55～10:50、10:30～12:25、14:20～16:15、14:50～16:45、17:10～19:05",
+      "articleExcerpt": "兩座島夏天都能從稚內當天來回，不過禮文島要走8小時步道、利尻島要登山，就都得住一晚。",
+      "sourceUrl": "https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "フェリー時刻で日帰りプラン｜礼文島観光協会",
+      "sourceQuote": "「（6月～9月）」「稚内6:30発 香深 8:25着」「１４：２０発 稚内行 （滞在５時間）」「１７：１０発 稚内行 （滞在８時間）」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F405、F38、F608；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C71",
-      "articleExcerpt": "時刻表 6月1日～9月30日｜6:30→8:25、10:30→12:25、14:50→16:45｜8:55→10:50、14:20→16:15、17:10→19:05",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
-      "sourceTitle": "稚内～礼文島 時刻表｜ハートランドフェリー",
-      "sourceQuote": "6/1～9/30 06:30～08:25 08:55～10:50 10:30～12:25 14:20～16:15 14:50～16:45 17:10～19:05",
+      "articleExcerpt": "兩座島都去的話，兩島之間有船，船程大約40到45分鐘，夏天一天3個來回，其中1個走利尻島西邊的沓形港。",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1416.htm",
+      "sourceTitle": "利尻富士町",
+      "sourceQuote": "稚 内 → 利 尻 １時間４０分 ／ 礼 文 → 利 尻(鴛泊) ４０分 ／ 礼 文 → 利 尻(沓形) ４０分",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F605、F606、F607、F66；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C72",
-      "articleExcerpt": "時刻表 4月28日～5月31日、10月｜6:30→8:25、10:10→13:00（經利尻）、14:45→16:40｜8:55→10:50、13:25→16:15（經利尻）、17:05→19:00",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
-      "sourceTitle": "稚内～礼文島 時刻表｜ハートランドフェリー",
-      "sourceQuote": "4/28～5/31 06:30～08:25 08:55～10:50 ＜10:10～13:00＞ ＜13:25～16:15＞ 14:45～16:40 17:05～19:00（＜＞は利尻島（鴛泊）経由便）／10/1～10/31 同",
+      "articleExcerpt": "住在利尻島的話，夏天早上從鴛泊搭9:30的船過來，10:15就到香深，傍晚再搭17:10從香深直接回稚內，觀光協會的一日遊行程也是這樣排的。",
+      "sourceUrl": "https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
+      "sourceTitle": "フェリー時刻で日帰りプラン｜礼文島観光協会",
+      "sourceQuote": "「稚内10:30発 香深 12:25着」「１７：１０発 稚内行 （滞在４時間）」「鴛泊9:30発 香深 10:15着」「（滞在６時間）」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F406、F2；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C73",
-      "articleExcerpt": "時刻表 1月1日～4月27日、11月1日～12月31日｜6:35→8:30、14:10→16:05｜9:00→10:55、17:05→19:00",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
-      "sourceTitle": "稚内～礼文島 時刻表｜ハートランドフェリー",
-      "sourceQuote": "1/1～4/27 06:35～08:30 09:00～10:55 14:10～16:05 17:05～19:00／11/1～12/31 同",
+      "articleExcerpt": "就算是最熱的8月，禮文島的平均氣溫也只有19.7℃，日最高也才22.6℃。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C74",
-      "articleExcerpt": "春秋與冬天的末班船都是17:05。冬天去程只有6:35與14:10兩班，14:10那班到港已經16:05，能當天來回的只剩6:35這一班。",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
-      "sourceTitle": "稚内～礼文島 時刻表｜ハートランドフェリー",
-      "sourceQuote": "1/1～4/27、11/1～12/31：14:10～16:05、17:05～19:00；4/28～5/31、10月：17:05～19:00",
+      "articleExcerpt": "下表是氣象廳禮文觀測站2003年到2020年統計的平年值，也就是長年的平均，不是預報，全年平均氣溫6.9℃。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59、F491；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C75",
-      "articleExcerpt": "坐2等船艙回程要在開船前40分鐘辦好乘船手續，搭17:10的末班船的話，16:30前就得回到渡輪站。",
-      "sourceUrl": "https://heartlandferry.jp/faq/",
-      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
-      "sourceQuote": "車を積込みされるお客様と2等客室をご利用されるお客様は出港時間の40分前までにお済ませ下さい。",
+      "articleExcerpt": "雨最多的是8月跟9月，各有130多毫米。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「降水量(mm)」「2003～2020」「8月 138.6」「9月 131.1」「年 1049.1」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C76",
-      "articleExcerpt": "觀光巴士禮文B線14:15從渡輪站發車繞北端，16:40才回來，坐2等接不上這班船，當天來回只能選上午出發的A線。",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
-      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
-      "sourceQuote": "礼文Ｂ…香深フェリーターミナル発～スカイ岬～スコトン岬～香深フェリーターミナル着 6月1日～9月30日 14:15発 → 16:40着",
+      "articleExcerpt": "| 1月 | −4.6℃ | −2.7℃ | −6.5℃ | 73.4毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C77",
-      "articleExcerpt": "1等、特別室與2等指定席的報到截止是開船前20分鐘，也就是16:50，B線回到渡輪站後只剩10分鐘，巴士晚一點就趕不上。當天來回就排上午的A線，想搭B線的話，那晚住在島上。",
-      "sourceUrl": "https://heartlandferry.jp/faq/",
-      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
-      "sourceQuote": "1等客室…・特別室及び2等指定席をご予約されたお客様は出港時間の20分前までに各フェリーターミナルにて乗船手続きをお済ませ下さい。",
+      "articleExcerpt": "| 2月 | −4.3℃ | −2.1℃ | −6.4℃ | 51.6毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「12月 … -2.4 -0.3 -4.5」「2月 … -4.3 -2.1 -6.4」「3月 … -0.4 1.7 -2.4」「4月 … 4.1 6.6 1.8」",
       "verdict": "verified",
-      "notes": "第 1 輪改句。B線 16:40 著（宗谷巴士）到 16:50 截止相差 10 分，計算正確。"
+      "notes": "F118、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C78",
-      "articleExcerpt": "颱風或低氣壓時船可能停開，天氣突然變壞時也可能臨時停航。",
-      "sourceUrl": "https://heartlandferry.jp/faq/",
-      "sourceTitle": "よくあるご質問｜ハートランドフェリー",
-      "sourceQuote": "台風や低気圧等による悪天候…の影響により、欠航となる可能性がございます。また、天候の急変等により、急遽欠航及び発着港が変更となる場合がございます。",
+      "articleExcerpt": "| 3月 | −0.4℃ | 1.7℃ | −2.4℃ | 44.1毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「12月 … -2.4 -0.3 -4.5」「2月 … -4.3 -2.1 -6.4」「3月 … -0.4 1.7 -2.4」「4月 … 4.1 6.6 1.8」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F118、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C79",
-      "articleExcerpt": "時間照的是觀光協會為6月到9月排的一日遊行程。8:25抵達；8:50從渡輪站走路出發，9:50到桃岩展望台；在展望台周邊散步1小時；10:50往回走，11:50左右回到渡輪站。",
-      "sourceUrl": "https://web.archive.org/web/20240610024349/https://www.rebun-island.jp/higaeriplan/QPplan/QR2.pdf",
-      "sourceTitle": "滞在4時間のおすすめプラン 12:50発 沓形行｜礼文島観光協会（存檔）",
-      "sourceQuote": "桃岩展望台周辺散策（所要時間4時間）ターミナル8:50発～桃岩展望台9:50着 展望台周辺散策1時間 桃岩展望台10:50発～ターミナル11:50着",
+      "articleExcerpt": "| 4月 | 4.1℃ | 6.6℃ | 1.8℃ | 49.2毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「12月 … -2.4 -0.3 -4.5」「2月 … -4.3 -2.1 -6.4」「3月 … -0.4 1.7 -2.4」「4月 … 4.1 6.6 1.8」",
       "verdict": "verified",
-      "notes": "6–9 月見モデルプラン（6月～9月）總表，QR2 為其中「稚内6:30発 香深8:25着」的子行程。觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F118、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C80",
-      "articleExcerpt": "餐廳大多集中在香深港一帶",
-      "sourceUrl": "https://web.archive.org/web/20260617224255/https://www.rebun-island.jp/KYOsan/KYOsanAREKORE.html",
-      "sourceTitle": "台灣人在日本最北端的禮文島生活｜礼文島観光協会（2026-06-17 存檔）",
-      "sourceQuote": "島上的餐廳大部分聚集在南部的香深港，大多也是距離香深港渡輪站不遠。",
+      "articleExcerpt": "| 5月 | 8.5℃ | 11.6℃ | 6.0℃ | 79.7毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": "原文為中文。觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C81",
-      "articleExcerpt": "離渡輪站走路約3分鐘的薄雪之湯，4月到9月中午12:00開門。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11402.html",
-      "sourceTitle": "礼文島温泉うすゆきの湯｜HOKKAIDO LOVE!",
-      "sourceQuote": "営業時間 12:00-22:00（4-9月）／●徒歩：香深港フェリーターミナルから約3分",
+      "articleExcerpt": "| 6月 | 12.8℃ | 15.9℃ | 10.3℃ | 84.6毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C82",
-      "articleExcerpt": "搭14:20的船回稚內，或待到17:10的末班船。",
-      "sourceUrl": "https://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
-      "sourceTitle": "礼文島フェリー到着便別モデルプラン（6月～9月）｜礼文島観光協会（2026-10-07 存檔）",
-      "sourceQuote": "稚内6:30発 香深8:25着…14:20発 稚内行…17:10発 稚内行",
+      "articleExcerpt": "| 7月 | 17.3℃ | 20.4℃ | 14.9℃ | 101.0毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C83",
-      "articleExcerpt": "觀光巴士禮文A線。8:40發車，全程3小時50分，大人3,600日圓。",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
-      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
-      "sourceQuote": "コース名 / 礼文A - 所要時間 / 3:50 夢の浮島礼文めぐり 大人 3,600円／8:40発 → 12:30着",
+      "articleExcerpt": "| 8月 | 19.7℃ | 22.6℃ | 17.3℃ | 138.6毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C84",
-      "articleExcerpt": "在一天內看到北端的須古頓岬和澄海岬，可以改搭觀光巴士禮文A線",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
-      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
-      "sourceQuote": "香深フェリーターミナル発～スカイ岬～スコトン岬～",
+      "articleExcerpt": "| 9月 | 17.4℃ | 20.5℃ | 14.5℃ | 131.1毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C85",
-      "articleExcerpt": "渡輪8:25到港，宗谷巴士表示轉乘時間有15分鐘以上就來得及。船上人多的話最好早點下船。",
-      "sourceUrl": "http://www.soyabus.co.jp/qa/",
-      "sourceTitle": "よくある質問｜宗谷バス",
-      "sourceQuote": "はい。15分以上あれば間に合いますが、フェリーが混雑している場合は早めの下船をおすすめします。",
+      "articleExcerpt": "| 10月 | 11.2℃ | 13.9℃ | 8.4℃ | 100.4毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C86",
-      "articleExcerpt": "A線之後還會開到北方金絲雀公園再回渡輪站，6月1日到9月30日可以在第一次經過渡輪站時中途下車，約11:45到",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/course/",
-      "sourceTitle": "定期観光バス 全コース一覧｜宗谷バス",
-      "sourceQuote": "桃台猫台～※香深フェリーターミナル（6/1～9/30期間で途中下車可能）～北のカナリアパーク～香深フェリーターミナル着／（6/1～9/30限定 香深FT途中下車11:45頃着）",
+      "articleExcerpt": "| 11月 | 3.6℃ | 6.1℃ | 1.2℃ | 98.4毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": "第 1 輪改句。"
+      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C87",
-      "articleExcerpt": "觀光巴士在搭車日的兩個月前開始接受預約，當天有空位也能直接上車，只是可能客滿。",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
-      "sourceTitle": "ご予約方法とのりば｜宗谷バス",
-      "sourceQuote": "各コース、ご利用日の 2ヶ月前より 受付を開始しています。／空席があれば、当日でもご乗車いただくことが出来ますが、満席でお断りする場合がございます。",
+      "articleExcerpt": "| 12月 | −2.4℃ | −0.3℃ | −4.5℃ | 91.5毫米 |",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「12月 … -2.4 -0.3 -4.5」「2月 … -4.3 -2.1 -6.4」「3月 … -0.4 1.7 -2.4」「4月 … 4.1 6.6 1.8」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F118、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C88",
-      "articleExcerpt": "搭車處在渡輪站側面",
-      "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/09/202609kafuka-floor-mapOL.pdf",
-      "sourceTitle": "香深港フェリーターミナル フロアマップ｜ハートランドフェリー",
-      "sourceQuote": "香深港フェリーターミナル フロアマップ 1F：観光バス乗場（建物側面）",
+      "articleExcerpt": "禮文島常起霧，6月跟7月的日照只有125.9和126.5小時，是夏天最陰的兩個月，9月的日照則有186.7小時，多很多。",
+      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
+      "sourceTitle": "雲海｜礼文島観光協会",
+      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F442、F490；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C89",
-      "articleExcerpt": "車票當天在窗口買，只收現金或PayPay。",
-      "sourceUrl": "http://www.soyabus.co.jp/teikan/teikan_information/",
-      "sourceTitle": "ご予約方法とのりば｜宗谷バス",
-      "sourceQuote": "窓口での決済方法は現金又はPayPay払いのみです。…チケットの前日発券は行っておりません。乗車当日に必ず現地窓口で購入・引き換えをお願いします。",
+      "articleExcerpt": "冷霧層在標高200公尺以下的時候，從高處就能看到雲海。",
+      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
+      "sourceTitle": "雲海｜礼文島観光協会",
+      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F442；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C90",
-      "articleExcerpt": "住利尻島的話，夏天早上從鴛泊搭9:30的船過來，10:15到香深。傍晚再搭17:10從香深直接回稚內，觀光協會的一日遊行程也是這樣排的。",
-      "sourceUrl": "https://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
-      "sourceTitle": "礼文島フェリー到着便別モデルプラン（6月～9月）｜礼文島観光協会（2026-10-07 存檔）",
-      "sourceQuote": "利尻島からお越しの方へ 鴛泊9:30発 香深 10:15着…17:10発 稚内行（滞在6時間）",
+      "articleExcerpt": "標高225公尺的桃岩展望台、233公尺的燕山，還有禮文林道從元地口走大約1.1公里的地方，都是看雲海的好地點。",
+      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
+      "sourceTitle": "雲海｜礼文島観光協会",
+      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F442；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C91",
-      "articleExcerpt": "兩座島之間船程約45分鐘。2026年夏天鴛泊與香深之間一天2個來回，另外也有沓形往返香深的班次。",
-      "sourceUrl": "https://heartlandferry.jp/timetable/time2/",
-      "sourceTitle": "利尻～礼文 時刻表｜ハートランドフェリー",
-      "sourceQuote": "6/1～9/30 鴛泊発～香深着 09:30～10:15、13:15～14:00／香深発～鴛泊着 10:40～11:25、15:30～16:15／沓形発～香深着 14:25～15:05／香深発～沓形着 12:50～13:30",
+      "articleExcerpt": "雲海多半出現在有霧而且風小的清晨，不過從稚內來的渡輪最早8:25才到香深港，所以要看雲海的話得在島上過一夜才行。",
+      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
+      "sourceTitle": "雲海｜礼文島観光協会",
+      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
       "verdict": "verified",
-      "notes": "鴛泊航線 45 分；沓形航線 40 分，「約45分鐘」可接受。"
+      "notes": "F442、F1；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C92",
-      "articleExcerpt": "宗谷巴士……車資只收現金或PayPay。",
-      "sourceUrl": "http://www.soyabus.co.jp/qa/",
-      "sourceTitle": "よくある質問｜宗谷バス",
-      "sourceQuote": "お支払いは現金又はキャッシュレス決済の場合PayPayがご利用いただけます。それ以外の方法は対応しておりません",
+      "articleExcerpt": "7月的日最高氣溫平均才20.4℃，8月也只有22.6℃。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C93",
-      "articleExcerpt": "島上也有租車、出租自行車與機車的店，以及計程車。",
-      "sourceUrl": "https://web.archive.org/web/20261007220013/https://www.rebun-island.jp/higaeriplan/planTATENAGA.pdf",
-      "sourceTitle": "礼文島フェリー到着便別モデルプラン（6月～9月）｜礼文島観光協会（2026-10-07 存檔）",
-      "sourceQuote": "タクシー：礼文ハイヤー イシドウハイヤー／レンタカー：トヨタレンタリース旭川礼文店／レンタルサイクル・バイク：CAT ROCK",
+      "articleExcerpt": "島上的風也不小，全年平均風速每秒3.5公尺，5月最強到每秒4.1公尺。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「平均風速(m/s)」「5月 … 4.1」「4月 … 3.8」「6月 … 3.8」「年 … 3.5」",
       "verdict": "verified",
-      "notes": "觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F489；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C94",
-      "articleExcerpt": "住宿分在南北兩區。南側的香深有渡輪站，旅館也比較多，北側則是船泊。",
-      "sourceUrl": "https://web.archive.org/web/20250522222856/https://www.rebun-island.jp/inbound/hotel.html",
-      "sourceTitle": "宿泊施設｜礼文島観光協会（2025-05-22 存檔）",
-      "sourceQuote": "香深（かふか）:礼文島の南側の地域・フェリーターミナルがあります。船泊（ふなどまり）:礼文島の北側の地域です。",
+      "articleExcerpt": "桃岩展望台標高不到300公尺，卻常吹強風而且起濃霧。",
+      "sourceUrl": "https://rebun-trail.jp/momoiwaobservatorycourse/",
+      "sourceTitle": "桃岩展望台コース｜礼文島トレイル",
+      "sourceQuote": "「標高は300m以下ですが、強風や濃霧も珍しくありません。」「桃岩登山口・レンジャーハウス－桃岩展望台［往復］　★」",
       "verdict": "verified",
-      "notes": "清單香深 6 家、船泊 3 家。觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F36；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C95",
-      "articleExcerpt": "官方步道有7條",
-      "sourceUrl": "https://web.archive.org/web/20260308161415/https://rebun-trail.jp/",
-      "sourceTitle": "礼文島トレイル【公式コース案内】（2026-03-08 存檔）",
-      "sourceQuote": "桃岩展望台コース 礼文林道コース 岬めぐりコース 礼文岳コース 礼文滝コース 久種湖畔コース ８時間コース",
+      "articleExcerpt": "夏天一天之內溫差不大，不過春秋早晚溫差大，天氣像山上一樣說變就變，所以雨具跟長袖都要帶著。",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島の観光｜北海道観光機構",
+      "sourceQuote": "「夏は、一日の中で気温変化が少なく過ごしやすい」「春や秋は時間帯によって気温が大きく異なる」「天気もまるで山岳のように変化する」「雨具と長袖の服の用意は必須です」",
       "verdict": "verified",
-      "notes": "步道官網 2026-11-02 維護中（HTTP 503），讀 Wayback 存檔。"
+      "notes": "F444；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C96",
-      "articleExcerpt": "禮文町的導覽地圖上有11個景點，北起最北端的須古頓岬，南到桃岩展望台。",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/category/122.html",
-      "sourceTitle": "ガイドマップ｜北海道礼文町",
-      "sourceQuote": "ガイドマップ スコトン岬 ゴロタ岬 レブンアツモリソウ群生地 澄海岬 高山植物園 久種湖 日食観測記念碑 地蔵岩 北のカナリアパーク 桃台猫台 桃岩展望台",
+      "articleExcerpt": "7、8月帶一件防風又防雨的薄外套就夠了。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C97",
-      "articleExcerpt": "其中北方金絲雀公園約11月到4月休館。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_11401.html",
-      "sourceTitle": "北のカナリアパーク｜HOKKAIDO LOVE!",
-      "sourceQuote": "休業日 冬期間休業（11-4月頃）",
+      "articleExcerpt": "盛夏也有連日炎熱的時候，健行時記得多喝水留意中暑，熱了就把外套脫下來收進背包就好。",
+      "sourceUrl": "https://rebun-trail.jp/",
+      "sourceTitle": "礼文島トレイル",
+      "sourceQuote": "「礼文島も連日暑い日が続いています。トレッキングをされる際には熱中症に注意し、十分な水分補給を」",
       "verdict": "verified",
-      "notes": "觀光協會活動頁存檔：「カナリアパーク 5月～10月」。"
+      "notes": "F468；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C98",
-      "articleExcerpt": "夏天有海膽，還有把花魚鋪上蔥與醬汁烤的花魚鏘鏘燒。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！｜HOKKAIDO LOVE!（北海道観光機構）",
-      "sourceQuote": "礼文島の名物は「ホッケのちゃんちゃん焼き」。…肉厚なホッケにネギと秘伝のタレを乗せて焼き",
+      "articleExcerpt": "5月到6月日最高只有11.6℃到15.9℃，5月的日最低6.0℃，風又是一年裡最強的，這兩個月最好在薄外套裡再加一件保暖的中層。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
+      "sourceTitle": "礼文 平年値｜気象庁",
+      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "F59、F489；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
       "claimId": "C99",
-      "articleExcerpt": "往北部玩之前，先在香深港的超市和商店買好吃的喝的比較安心。",
-      "sourceUrl": "https://web.archive.org/web/20260617224255/https://www.rebun-island.jp/KYOsan/KYOsanAREKORE.html",
-      "sourceTitle": "台灣人在日本最北端的禮文島生活｜礼文島観光協会（2026-06-17 存檔）",
-      "sourceQuote": "因為島上唯一的超商距離鄉紳有一段距離，所以還是建議大家多多利用香深港的超市及商店喔！",
+      "articleExcerpt": "島上的活動集中在5月到9月，下表是2026年的日期，每年的日期會由觀光協會的活動頁公布。",
+      "sourceUrl": "https://www.rebun-island.jp/event/",
+      "sourceTitle": "イベント情報｜礼文島観光協会",
+      "sourceQuote": "「令和8年度は5月28日～5月29日に開催」「8月10日に花火大会、1２日に海峡祭り」",
       "verdict": "verified",
-      "notes": "原文為中文（「鄉紳」應為「香深」）。觀光協會官網 2026-11-02 連不上（curl 連線失敗），改讀 Wayback 存檔的官方頁。"
+      "notes": "F41、F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C100",
+      "articleExcerpt": "| 敦盛草感謝祭 | 5月28日～29日 | 敦盛草群生地 |",
+      "sourceUrl": "https://www.rebun-island.jp/event/",
+      "sourceTitle": "イベント情報｜礼文島観光協会",
+      "sourceQuote": "「令和8年度は5月28日～5月29日に開催」「8月10日に花火大会、1２日に海峡祭り」",
+      "verdict": "verified",
+      "notes": "F41、F499；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C101",
+      "articleExcerpt": "| 最北花之馬拉松 | 6月6日 | Pisuka２１起跑 |",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00003384.html",
+      "sourceTitle": "第33回 2026最北フラワーマラソンの開催について｜礼文町",
+      "sourceQuote": "「第33回 2026最北フラワーマラソンの開催について」「令和8年6月6日」「礼文町役場 総務課 広報交通係」",
+      "verdict": "verified",
+      "notes": "F475、F498；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C102",
+      "articleExcerpt": "| 禮文神社祭 | 7月8日～10日 | 船泊地區 |",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
+      "sourceTitle": "神社祭｜礼文町",
+      "sourceQuote": "「礼文神社祭」「とき 7月8～10日」「ところ 船泊地区」「厳島神社祭」「とき 7月14～16日」「ところ 香深地区」",
+      "verdict": "verified",
+      "notes": "F474；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C103",
+      "articleExcerpt": "| 嚴島神社祭 | 7月14日～16日 | 香深地區 |",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
+      "sourceTitle": "神社祭｜礼文町",
+      "sourceQuote": "「礼文神社祭」「とき 7月8～10日」「ところ 船泊地区」「厳島神社祭」「とき 7月14～16日」「ところ 香深地区」",
+      "verdict": "verified",
+      "notes": "F474；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C104",
+      "articleExcerpt": "| 水產祭 | 7月18日 | 香深港特設會場 |",
+      "sourceUrl": "https://www.rebun-island.jp/event/",
+      "sourceTitle": "イベント情報｜礼文島観光協会",
+      "sourceQuote": "「水産まつり(うめーべやフェスティバル)」「令和8年度は7月18日に開催しました。」「香深港特設会場で「島のうまいもの」が大集合！」",
+      "verdict": "verified",
+      "notes": "F476、F41；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C105",
+      "articleExcerpt": "| 花火大會（禮文故鄉祭） | 8月10日 | — |",
+      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
+      "sourceTitle": "web.archive.org",
+      "sourceQuote": "礼文ふるさとまつり 令和8年度は8月10日に花火大会、1２日に海峡祭りを開催しました。",
+      "verdict": "verified",
+      "notes": "F497；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C106",
+      "articleExcerpt": "| 海峽祭（禮文故鄉祭） | 8月12日 | — |",
+      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
+      "sourceTitle": "web.archive.org",
+      "sourceQuote": "礼文ふるさとまつり 令和8年度は8月10日に花火大会、1２日に海峡祭りを開催しました。",
+      "verdict": "verified",
+      "notes": "F497；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C107",
+      "articleExcerpt": "| 溫泉美食健行 | 8月1日～9月30日 | — |",
+      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
+      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜ONSEN・ガストロノミーツーリズム推進機構",
+      "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
+      "verdict": "verified",
+      "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C108",
+      "articleExcerpt": "敦盛草感謝祭（アツモリ感謝祭）跟第33屆最北花之馬拉松（最北フラワーマラソン）都在禮文敦盛草開花的時候舉辦，如果賞花跟活動想一起排的話，5月底到6月上旬最剛好。",
+      "sourceUrl": "https://www.rebun-island.jp/event/",
+      "sourceTitle": "イベント情報｜礼文島観光協会",
+      "sourceQuote": "「令和8年度は5月28日～5月29日に開催」「8月10日に花火大会、1２日に海峡祭り」",
+      "verdict": "verified",
+      "notes": "F41、F475、F443；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C109",
+      "articleExcerpt": "感謝祭是在敦盛草群生地辦的小型活動，觀光協會也藉這個機會請大家支持保護島上環境的緞帶計畫（リボンプロジェクト）。",
+      "sourceUrl": "https://web.archive.org/web/20200925121914/http://www.rebun-island.jp/event/",
+      "sourceTitle": "web.archive.org",
+      "sourceQuote": "アツモリ感謝祭 アツモリ群生地でのミニイベント。島の環境保護活動を応援するリボンプロジェクトにご協力ください。",
+      "verdict": "verified",
+      "notes": "F499；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C110",
+      "articleExcerpt": "馬拉松從Pisuka２１（ピスカ２１）出發，2026年早上9:30起跑，分成3公里、5公里跟10公里，參加免費。",
+      "sourceUrl": "https://web.archive.org/web/20260418103750/https://www.town.rebun.hokkaido.jp/hotnews/files/00003300/00003384/youkou.pdf",
+      "sourceTitle": "web.archive.org",
+      "sourceQuote": "６．会 場 受付 ・ 開閉会式 ： ピスカ２１／◎スタート・ゴール ～ ピスカ２１ 裏側／10．参加料 ・無 料／14．申込締切 ２０２６年５月６日（水） 当日の申込受付はできません",
+      "verdict": "verified",
+      "notes": "F498；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C111",
+      "articleExcerpt": "不過報名在5月6日就截止了而且當天不受理，如果6月初上島想順便參賽的話，記得5月上旬前就要報好名才行。",
+      "sourceUrl": "https://web.archive.org/web/20260418103750/https://www.town.rebun.hokkaido.jp/hotnews/files/00003300/00003384/youkou.pdf",
+      "sourceTitle": "web.archive.org",
+      "sourceQuote": "６．会 場 受付 ・ 開閉会式 ： ピスカ２１／◎スタート・ゴール ～ ピスカ２１ 裏側／10．参加料 ・無 料／14．申込締切 ２０２６年５月６日（水） 当日の申込受付はできません",
+      "verdict": "verified",
+      "notes": "F498；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C112",
+      "articleExcerpt": "7月是島上的祭典月。",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
+      "sourceTitle": "神社祭｜礼文町",
+      "sourceQuote": "「礼文神社祭」「とき 7月8～10日」「ところ 船泊地区」「厳島神社祭」「とき 7月14～16日」「ところ 香深地区」",
+      "verdict": "verified",
+      "notes": "F474；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C113",
+      "articleExcerpt": "禮文神社祭（礼文神社祭）在7月8日到10日，地點在北部的船泊地區。",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
+      "sourceTitle": "神社祭｜礼文町",
+      "sourceQuote": "「礼文神社祭」「とき 7月8～10日」「ところ 船泊地区」「厳島神社祭」「とき 7月14～16日」「ところ 香深地区」",
+      "verdict": "verified",
+      "notes": "F474；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C114",
+      "articleExcerpt": "緊接著7月14日到16日，就換南部的香深地區辦嚴島神社祭（厳島神社祭）了。",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
+      "sourceTitle": "神社祭｜礼文町",
+      "sourceQuote": "「礼文神社祭」「とき 7月8～10日」「ところ 船泊地区」「厳島神社祭」「とき 7月14～16日」「ところ 香深地区」",
+      "verdict": "verified",
+      "notes": "F474；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C115",
+      "articleExcerpt": "2026年的水產祭（水産まつり、うめーべやフェスティバル）在7月18日，在香深港的臨時會場舉行，這一天島上的美食都會集中到會場來。",
+      "sourceUrl": "https://www.rebun-island.jp/event/",
+      "sourceTitle": "イベント情報｜礼文島観光協会",
+      "sourceQuote": "「水産まつり(うめーべやフェスティバル)」「令和8年度は7月18日に開催しました。」「香深港特設会場で「島のうまいもの」が大集合！」",
+      "verdict": "verified",
+      "notes": "F476；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C116",
+      "articleExcerpt": "因為香深港就是渡輪靠岸的地方，所以當天來回也排得進去。",
+      "sourceUrl": "https://www.rebun-island.jp/event/",
+      "sourceTitle": "イベント情報｜礼文島観光協会",
+      "sourceQuote": "「水産まつり(うめーべやフェスティバル)」「令和8年度は7月18日に開催しました。」「香深港特設会場で「島のうまいもの」が大集合！」",
+      "verdict": "verified",
+      "notes": "F476、F70；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C117",
+      "articleExcerpt": "花火大會（花火大会）跟海峽祭（海峡祭り）同屬禮文故鄉祭（礼文ふるさとまつり），2026年8月10日放花火，兩天後的8月12日是海峽祭。",
+      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
+      "sourceTitle": "web.archive.org",
+      "sourceQuote": "礼文ふるさとまつり 令和8年度は8月10日に花火大会、1２日に海峡祭りを開催しました。",
+      "verdict": "verified",
+      "notes": "F497；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C118",
+      "articleExcerpt": "這是溫泉美食健行（ONSEN・ガストロノミー）在禮文島的場次，2026年是第5屆。",
+      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
+      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜ONSEN・ガストロノミーツーリズム推進機構",
+      "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
+      "verdict": "verified",
+      "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C119",
+      "articleExcerpt": "活動從8月1日到9月30日，窗口是禮文島觀光協會。",
+      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
+      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜ONSEN・ガストロノミーツーリズム推進機構",
+      "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
+      "verdict": "verified",
+      "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C120",
+      "articleExcerpt": "3,000日圓的方案附禮文岳徽章，4,000日圓的附T恤，兩種都含2,000日圓的餐券跟溫泉券。",
+      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
+      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜ONSEN・ガストロノミーツーリズム推進機構",
+      "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
+      "verdict": "verified",
+      "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C121",
+      "articleExcerpt": "不過2026年已經額滿了。",
+      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
+      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜ONSEN・ガストロノミーツーリズム推進機構",
+      "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
+      "verdict": "verified",
+      "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     }
   ],
   "summary": {
-    "verified": 99,
+    "verified": 121,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
