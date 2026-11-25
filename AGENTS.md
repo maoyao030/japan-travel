@@ -515,3 +515,8 @@ Darren 要求檢查全部 Skill 有沒有互相衝突，並同意照「較新的
 
 - Darren 說「接上」。`content-automation/local-writer.md` 挑到地點主頁時改照 `content-automation/place-entry-writer.md` 做。本段取代上一段「`local-writer.md` 還沒把地點主頁分流」的說明。
 - 排定工作仍暫停，啟用只由 Darren 決定；這套流程還沒有由排定工作自己跑過一篇。模型（Sonnet 5.5 寫、Opus 5.5 審）仍是預設，Darren 還沒親口定案。
+
+## 地點主頁的模型定案（Darren 2026-11-25）
+
+- Darren：「就確定是用 Sonnet 寫啦」。地點主頁作者用 Sonnet 5.5，吸引力審查、事實查核、驗收用 Opus 5.5，和住宿頁一樣。本段取代前面各段「地點主頁的模型還沒親口定案」的說明。
+- 這句話是在談地點主頁時說的；還沒有範本的八種頁型，做範本時各自比較後再定，在那之前照「寫作模型 Opus 4.6」一段。Fable 仍不寫稿。

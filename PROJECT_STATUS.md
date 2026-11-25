@@ -2463,3 +2463,9 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 已決定：Darren 說「接上」。`local-writer.md` 開頭與第 1 步加上地點主頁的分流，第 2 步第 0 點的主頁判定改成指到 `place-entry-writer.md`。
 - 尚未完成：排定工作還沒自己跑過一篇地點主頁；模型沒定案；富良野群四篇主頁要等同地點子頁都上線才會被挑到，而子頁的頁型大多還沒有範本。
 - 唯一下一步：天氣頁範本，Darren 看三篇別站天氣文章，挑最接近的。
+
+## 2026-11-25 地點主頁模型定案、天氣頁範本另開 session（Claude Code）
+
+- 已決定：地點主頁作者用 Sonnet 5.5（Darren：「就確定是用 Sonnet 寫啦」）。
+- 天氣頁範本 Darren 要求另開新的 session 做（這個 session 太長）；已做的第一、二步在 `content-experiments/weather-page-study-2026-11-24/`。
+- 唯一下一步：新 session 接著做天氣頁範本，先請 Darren 從三篇別站天氣文章挑最接近的。
