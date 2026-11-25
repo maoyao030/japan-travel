@@ -39,7 +39,9 @@ Darren 2026-10-29 覺得維基共享資源的照片太多，所以先找官方�
 
 - 旅館、店家官網的照片（除非取得書面授權並保存）
 - 店家卡片放店家照片：交接文件規定店家卡片不放照片
-- 下載 Instagram、Facebook、部落格的照片（觀光協會等官方帳號的公開貼文可以用平台的嵌入功能放進文章，見 [來源與授權](references/selection-and-licensing.md)「嵌入」）
+- 下載 Instagram、Facebook、部落格的照片（觀光協會等官方帳號的公開貼文可以用平台的嵌入功能放進文章，見 [來源與授權](references/selection-and-licensing.md)「嵌入」；住宿頁、住宿專門頁與地點主頁另有例外，可以嵌入遊客的公開貼文，見 [嵌入封包](references/embed-plan.md)）
+
+地點主頁（Darren 2026-11-21、11-24）：「有什麼好玩、好吃的」每個看點一張本尊實拍，一頁約 6 到 8 張、一節 1 張；找不到合格實拍的看點不放替代照片，改放一則 Instagram 貼文（官方優先，沒有才用遊客的公開貼文，`embed-plan.json` 寫 `"pageType": "place-entry"`）。自動寫作的做法見 `content-automation/place-entry-writer.md` 第 10 步。
 - Google 地圖、Tabelog、Jalan 上的照片
 - 對方網頁的分享預覽圖（OG 圖）
 - 授權含「非商業使用」（NC）或「禁止改作」（ND）的照片；裁切封面就算改作

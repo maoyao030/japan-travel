@@ -97,7 +97,7 @@ Darren 不想動滑鼠：在手機或電腦上看網站，用語音輸入（手�
 
 - 照選圖 Skill 的來源順序：觀光協會與自治體等條款允許轉載的官方照片 → 免費圖庫 → 維基共享資源；只用實拍，授權照 `references/selection-and-licensing.md`。
 - 找 2～3 張，把縮圖用檔案傳給他看，附來源與授權；他說「第二張」就用那張。都不好就說找不到，不硬放。
-- 照 `AGENTS.md`「自動寫作加回文內照片」的限制：一篇最多 4 張、一節最多 1 張，接在那一節第一段之後。用 `npm run image:prepare:inline` 準備、`studio` 的 `npm run publish:article-inline-images` 預覽與 `--apply`。圖片封包照 `references/image-packet.md`。
+- 照 `AGENTS.md`「自動寫作加回文內照片」的限制：一篇最多 4 張、一節最多 1 張，接在那一節第一段之後。地點主頁例外：每個看點一張本尊實拍（約 6 到 8 張），找不到改放 Instagram 貼文（官方優先，沒有才用遊客的公開貼文，`embed-plan.json` 寫 `"pageType": "place-entry"`），見寫作 Skill `references/place-entry-page.md` 與選圖 Skill `references/embed-plan.md`。用 `npm run image:prepare:inline` 準備、`studio` 的 `npm run publish:article-inline-images` 預覽與 `--apply`。圖片封包照 `references/image-packet.md`。
 
 ### 給他看
 

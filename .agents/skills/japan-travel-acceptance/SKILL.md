@@ -24,7 +24,7 @@ description: Independently accept or reject a finished Japan travel reader previ
 2. 執行 `python3 .agents/skills/japan-travel-answer-first/scripts/audit_answer_first.py content-production/<article-id>/reader-preview.md --json --reference-review content-production/<article-id>/reference-review.md`。`mechanical_failed` 就直接判退，不派 agent。
 3. 派事實查核 agent（`run_in_background: false`），交給它：文章、研究記錄、頁面規格、[事實查核規則](references/fact-check-contract.md)。它要實際打開每個日文來源，輸出 `fact-check.json`。
 4. 執行 `node .agents/skills/japan-travel-acceptance/scripts/validate-fact-check.mjs content-production/<article-id>`。驗證失敗代表查核紀錄不完整，退回事實查核 agent 補齊，不能直接放行。
-5. 派讀者驗收 agent（`run_in_background: false`）。第一階段只給原始任務、文章與 [讀者驗收規則](references/reader-acceptance.md)，請它記下閱讀判斷；第二階段才給研究記錄與 `fact-check.json`。
+5. 派讀者驗收 agent（`run_in_background: false`）。第一階段只給原始任務、文章與 [讀者驗收規則](references/reader-acceptance.md)，請它記下閱讀判斷；第二階段才給研究記錄與 `fact-check.json`。地點主頁（`place-entry`）改照 [地點主頁的讀者驗收八題](references/place-entry-acceptance.md)，流程見 `content-automation/place-entry-writer.md` 第 8 步。
 6. 圖片封包有 AI 圖或自製示意圖時，派圖片驗收 agent（`run_in_background: false`），交給它圖片、圖片封包、示意圖資料檔、`fact-check.json` 與 [圖片驗收規則](references/image-review-contract.md)，輸出 `images/image-review.json`。再執行 `node .agents/skills/japan-travel-acceptance/scripts/validate-image-review.mjs content-production/<article-id>`。試點期間 AI 圖要等 Darren 確認後才通過。
 7. 依下方判斷寫 `review.md`。
 

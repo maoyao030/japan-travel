@@ -133,6 +133,7 @@
 - `preparation.sourceDownloadUrl`：維基共享資源用 `upload.wikimedia.org` 的原檔網址。只縮小、不裁切，寬度超過 `maxWidth` 才縮。
 - 文內照片用橫式（4:3、3:2、16:9 之類）；直式照片在正文裡會佔滿一整個螢幕，不用。天色太暗、雜訊多、主體看不清楚的也不用。
 - 範例範圍：一篇最多 4 張、一節最多 1 張，只放讀者到現場要認得出來的地方（自動寫作的規定見 `content-automation/local-writer.md` 第 5 步）。
+- 地點主頁例外（Darren 2026-11-21、11-24）：每個看點 H3 一張本尊實拍，一頁約 6 到 8 張，一節仍只放 1 張；找不到的看點改放 Instagram 貼文（`embed-plan.md`），同一個看點不同時放照片和貼文。見 `content-automation/place-entry-writer.md` 第 10 步。
 - 準備後的圖在 `.tmp/image-selection/<article-id>/inline/`，不加入 Git。上傳前要親自看每一張，確認和 `altDraft`、`captionDraft` 一致。
 
 ## 驗證

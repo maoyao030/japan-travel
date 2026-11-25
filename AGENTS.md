@@ -498,3 +498,15 @@ Darren 要求檢查全部 Skill 有沒有互相衝突，並同意照「較新的
 - 本段是「照片來源順序與影片、Instagram 嵌入（2026-10-29）」一段「一篇最多 2 個」「Instagram 只用官方」在地點主頁的例外。Darren：「沒有圖片不是要你去找 IG 貼文嗎」。
 - 地點主頁的看點找不到合格實拍（景點不是本尊、料理不是當地或那家店的）時，不放替代照片，改放一則 Instagram 貼文：官方帳號優先，沒有才用遊客的公開貼文；嵌入封包寫 `"pageType": "place-entry"`。細節見選圖 Skill `references/embed-plan.md`。
 - 本段取代同日「禮文島新增天氣頁與祭典頁、看點照片的標準」一段裡「料理看點可以用不是當地拍的同一種料理實拍」的做法；那只在貼文也找不到時才暫用。
+
+## 地點主頁範本與流程檔（Darren 2026-11-25）
+
+- Darren 說利尻島主頁「可以當範本」，已登記在寫作 Skill `references/page-models/place-entry/rishiri-island.md`（`index.json`）。本段取代「地點主頁的寫法（Darren 2026-11-21 同意）」一段裡「樣本沒上線、沒登記成頁型範本」的說明：利尻島、禮文島主頁都已上線，禮文島是六節之後多氣溫與祭典兩節的過渡版，不當範本。
+- 找 Instagram 貼文用日文、多種搜尋組合，放慢、可以分次做。Darren 的原話：「你有用日文去找嗎」「你的頻率搜尋可以慢一點，不一定要在一個裡面做完」。Google 搜尋每次隔 30 秒以上，遇到機器人檢查就停、不繞過，下一輪接著搜；細節見選圖 Skill `references/embed-plan.md`。
+- 地點主頁的流程檔是 `content-automation/place-entry-writer.md`（照 `stay-writer.md` 的體例：前提、重做大綱、誰做、模型、交什麼檔、上限幾輪、預設做法、停下來留給 Darren 的事）。讀者驗收八題搬到驗收 Skill `references/place-entry-acceptance.md`。寫法的細節仍在寫作 Skill `references/place-entry-page.md` 與 `place-entry-hook-review.md`，其他 Skill 與參考檔的舊說法（基本資訊欄、依旅客類型一節、1,500～2,500 字、文內照片 4 張、Instagram 只用官方）已加上「地點主頁以 place-entry-page.md 為準」。
+- 還沒做：
+  - `content-automation/local-writer.md` 還沒把地點主頁分流到流程檔（那份檔案由另一個 session 管），接上之前排定工作不寫地點主頁。
+  - 模型（Sonnet 5.5 寫、Opus 5.5 審）是照樣本結果的預設，Darren 還沒親口定案；和「寫作只用 Opus 4.6」不一致。
+  - 富良野群四篇主頁（美瑛、富良野、中富良野、上富良野）的大綱是舊結構，寫的時候照流程檔第 0 步重排，大綱 JSON 之後由人工 session 同步。
+  - 其他主頁（稚內、旭川、東川、旭岳、層雲峽）還沒照新寫法改。
+  - 範本裡的「Otatomari沼」還沒照 2026-11-20「專有名詞先看台灣網站再決定」的方法重查。

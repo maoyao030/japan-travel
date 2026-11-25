@@ -2449,3 +2449,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 已決定：找貼文要用的日文搜尋組合與「找不到要附搜尋字、0 則要再試一次」寫進選圖 Skill `references/embed-plan.md`。
 - 尚未完成：久種湖貼文看得到湖面與山影，但看不出是不是禮文岳；kaido_photo 有一則「久種湖から…利尻山と礼文岳」沒看到，之後可以換。Google 中途出現機器人檢查，沒有繞過，幾組搜尋字沒試。
 - 唯一下一步：Darren 看三篇別站天氣文章，挑最接近的。
+
+
+## 2026-11-25 地點主頁登記範本、規則整理（Claude Code）
+
+- 已完成：利尻島主頁登記成地點主頁的頁型範本（`page-models/place-entry/rishiri-island.md`）。新寫地點主頁的流程檔 `content-automation/place-entry-writer.md`；讀者驗收八題整理成驗收 Skill `references/place-entry-acceptance.md`。`place-entry-page.md` 的過期說明改成現況、第 6 節標題改成帶地名、流程一節改成指到流程檔。寫作 Skill `SKILL.md`、`writing-guide.md` 第 12、13 條、`page-types.md`、`nanny-level.md`、`heading-style.md`（新增「地點主頁」一節），選題 Skill `selection-workflow.md`，選圖 Skill `SKILL.md`、`image-packet.md`，驗收 Skill `SKILL.md`，`chat-optimize.md`、`RULES_OVERVIEW.md` 的舊說法都加上地點主頁的例外。
+- 已決定：Darren 說利尻島「可以當範本」；找貼文用日文多種組合、放慢、可分次做（「你有用日文去找嗎」「你的頻率搜尋可以慢一點，不一定要在一個裡面做完」）。流程檔裡的預設：主頁要等同地點子頁都上線才寫；舊大綱照六節重排，屬於子頁的 mustAnswer 不帶進來；事實只用已上線子頁，不重新上網查；吸引力審查最多 3 輪、事實查核最多 4 輪、讀者驗收最多退 4 次；看點找不到照片與貼文時先上線、下一輪接著找。
+- 尚未完成：`local-writer.md` 還沒分流到流程檔（另一個 session 管），接上前排定工作不寫地點主頁；模型沒定案；富良野群四篇主頁大綱是舊結構；稚內、旭川、東川、旭岳、層雲峽主頁還沒照新寫法改；範本的 Otatomari沼 還沒重查；本次沒有 commit。
+- 唯一下一步：Darren 決定地點主頁用哪個模型，以及要不要把 `local-writer.md` 接上 `place-entry-writer.md`。

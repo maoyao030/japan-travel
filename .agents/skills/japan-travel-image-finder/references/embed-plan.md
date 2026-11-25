@@ -34,7 +34,7 @@
 - `platform`：`youtube` 或 `instagram`。
 - `url`：YouTube 用 `https://www.youtube.com/watch?v=<11 碼影片 ID>`；Instagram 用 `https://www.instagram.com/p/<代碼>/` 或 `/reel/<代碼>/`。
 - `startSeconds`：只有 YouTube 用，從對題的章節開始播；從頭播填 0。
-- `channelType`：`official`（觀光協會、自治體、交通公司、環境省等）或 `individual`。Instagram 只用 `official`（住宿專門頁例外，見下）。
+- `channelType`：`official`（觀光協會、自治體、交通公司、環境省等）或 `individual`。Instagram 只用 `official`（住宿頁、住宿專門頁與地點主頁例外，見下）。
 - `publishedAt`：`YYYY-MM`，要在查核日前兩年內。
 - `placement`：同文內照片，`heading` 是那一節 H2 或 H3 全文，`afterBlocks` 從標題往下數。同一節已經有照片時，放在照片之後（`afterBlocks` 加 1）。
 - `captionDraft`：一句中文，說畫面是什麼。`startSeconds` 大於 0 才在句尾寫從哪裡開始（「從 4 分 25 秒開始」，不滿 1 分寫「從 34 秒開始」）；從頭播就不提播放位置，不寫「從頭播放」「從頭開始看」這類話，讀者按下去本來就是從頭播（Darren 2026-11-11）。網站會自動在後面加「影片：頻道名（年份）・實際資訊以本文為準」，不用自己寫。
@@ -55,4 +55,4 @@ npm run publish:article-embeds -- ../content-production/<article-id> --apply  # 
 npm run publish:article-embeds -- ../content-production/<article-id> --remove --apply  # 拿掉
 ```
 
-看到 `embeds-published-and-verified` 才算完成。網站上的嵌入預設只顯示縮圖或按鈕，讀者點了才載入 YouTube 或 Instagram，頁面不會變慢，也不會先載入對方的追蹤程式。
+看到 `embeds-published-and-verified` 才算完成。網站上 YouTube 影片只顯示縮圖，讀者點了才載入播放器；Instagram 貼文直接顯示（寬約 500px、滑到附近才載入，2026-11-17 起）。
