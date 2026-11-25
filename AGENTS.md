@@ -510,3 +510,8 @@ Darren 要求檢查全部 Skill 有沒有互相衝突，並同意照「較新的
   - 富良野群四篇主頁（美瑛、富良野、中富良野、上富良野）的大綱是舊結構，寫的時候照流程檔第 0 步重排，大綱 JSON 之後由人工 session 同步。
   - 其他主頁（稚內、旭川、東川、旭岳、層雲峽）還沒照新寫法改。
   - 範本裡的「Otatomari沼」還沒照 2026-11-20「專有名詞先看台灣網站再決定」的方法重查。
+
+## 地點主頁接進自動寫作（Darren 2026-11-25）
+
+- Darren 說「接上」。`content-automation/local-writer.md` 挑到地點主頁時改照 `content-automation/place-entry-writer.md` 做。本段取代上一段「`local-writer.md` 還沒把地點主頁分流」的說明。
+- 排定工作仍暫停，啟用只由 Darren 決定；這套流程還沒有由排定工作自己跑過一篇。模型（Sonnet 5.5 寫、Opus 5.5 審）仍是預設，Darren 還沒親口定案。
