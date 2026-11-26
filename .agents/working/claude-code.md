@@ -4,4 +4,4 @@
 - 開始時間：2026-11-26
 - 分支：`claude/youthful-meitner-y6oupc`
 - 預計改的檔案：`content-experiments/weather-page-study-2026-11-24/`、`content-production/rebun-island-weather/`、寫作 Skill `references/weather-page.md` 與 `references/page-models/`、`content-automation/weather-writer.md`、`content-automation/local-writer.md`（只加分流）、驗收 Skill、`RULES_OVERVIEW.md`、`AGENTS.md`、`PROJECT_STATUS.md`。
-- 目前進度：第 1、2 步（線上五篇哪裡不行、別站七篇）已在上一個 session 完成；等 Darren 從三篇別站文章挑最接近的，並回答三個問題（台灣對照、照月份或照問題排、利尻禮文共用的停航資料）。
+- 目前進度：Darren 2026-11-26 挑了「1 的表格加 3 的寫法，三個問題照預設」，已記進 page-models/index.json；結構提案寫在 content-experiments/weather-page-study-2026-11-24/03-proposal.md，等他同意後做樣本。
