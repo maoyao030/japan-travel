@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island-weather",
-  "articleSha256": "4ea442bc8a4fd4752326159c0b7d3c5a7b697379fd070653ed24bfbdc96c7fa1",
+  "articleSha256": "448697dbda0be2a68c7f3744d2c71c29f54df7cd1f3c38826f7afc9bab494758",
   "checker": "事實查核 agent（Claude Opus 5.5 子代理，非作者；curl 與 Playwright 實際開來源）",
   "checkedAt": "2026-11-26",
   "claims": [
@@ -187,12 +187,12 @@
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "12月到3月｜要比台北寒流來的時候穿得更多",
+      "articleExcerpt": "12月到3月｜比台北寒流來的時候穿得更多，白天也在零度上下，要穿整天都夠暖的",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
-      "sourceQuote": "日最高 12～3月 -0.3、-2.7、-2.1、1.7（寒流門檻10℃）",
+      "sourceQuote": "日最高 12月-0.3、1月-2.7、2月-2.1、3月1.7；日最低 -4.5～-6.5（寒流門檻：臺北最低溫10℃或以下）",
       "verdict": "verified",
-      "notes": "未改。"
+      "notes": ""
     },
     {
       "claimId": "C22",
@@ -214,12 +214,12 @@
     },
     {
       "claimId": "C24",
-      "articleExcerpt": "4月到5月｜穿得比台北寒流時更厚，外層要擋風",
+      "articleExcerpt": "4月到5月｜穿得跟台北寒流時一樣厚，外層要擋風",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
-      "sourceQuote": "日最高 4月6.6、5月11.6；日最低 4月1.8、5月6.0；平均風速 5月4.1（全年最大）",
-      "verdict": "verified",
-      "notes": "5月白天11.6℃略高於寒流門檻，但早晚6.0℃，推論可接受。"
+      "sourceQuote": "日最高「4月 … 6.6」「5月 … 11.6」；日最低「4月 … 1.8」「5月 … 6.0」；寒流＝臺北最低溫10℃或以下",
+      "verdict": "unsupported",
+      "notes": "說輕了：4月連白天（6.6℃）都低於台北寒流時的最低溫門檻，早晚1.8℃，比台北寒流時更冷；5月（11.6／6.0℃）才大約是「一樣厚」。最小改法：「4月要比台北寒流時穿得更厚，5月跟寒流時一樣厚，外層要擋風」。"
     },
     {
       "claimId": "C25",
@@ -232,21 +232,21 @@
     },
     {
       "claimId": "C26",
-      "articleExcerpt": "6月到7月｜花開得最多的涼夏｜7月像台北2月，6月早晚要再多一件",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
-      "sourceQuote": "「6月中旬から8月初旬は、最も多くの種類の花を楽しめる」；7月 20.4／14.9、臺北2月 20.3／14.4；6月日最低10.3",
+      "articleExcerpt": "6月到7月｜花開得最多、還有機會看到雲海的涼夏｜7月像台北2月，6月早晚要再多一件",
+      "sourceUrl": "https://www.env.go.jp/park/content/000137471.pdf",
+      "sourceTitle": "瞬間の風景 ２０２３．５ Vol.2９（環境省 PDF）",
+      "sourceQuote": "「花の浮島・礼文島は彩りの季節を迎えています。この時期は海から立ち上る深い霧に覆われる日が多く」「標高200ｍを超える桃岩展望台は霧の雲海を望む絶景スポットで、早朝に訪れたこの日も、真っ白な風景と驚くほど鮮明な風景がめまぐるしく入れ替わり」；北海道觀光機構「6月中旬から8月初旬は、最も多くの種類の花を楽しめる」；7月 20.4／14.9、臺北2月 20.3／14.4；6月日最低10.3",
       "verdict": "verified",
-      "notes": "未改。"
+      "notes": "雲海只說「有機會」，配合6月霧多與環境省開花季的霧之雲海，撐得住。"
     },
     {
       "claimId": "C27",
-      "articleExcerpt": "6月霧特別多，比較有機會碰上雲海",
+      "articleExcerpt": "6月霧特別多",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
       "sourceTitle": "礼文町の概要 | 北海道礼文町",
-      "sourceQuote": "「6月は…霧の発生も多くなります。」；環境省「この時期は海から立ち上る深い霧に覆われる日が多く」「霧の雲海を望む絶景スポット」",
+      "sourceQuote": "「6月は…霧の発生も多くなります。」",
       "verdict": "verified",
-      "notes": "只說6月，撐得住。"
+      "notes": ""
     },
     {
       "claimId": "C28",
@@ -592,9 +592,9 @@
     }
   ],
   "summary": {
-    "verified": 61,
+    "verified": 60,
     "incorrect": 0,
-    "unsupported": 0,
+    "unsupported": 1,
     "outdated": 0,
     "unreachable": 4,
     "not-stated": 0
