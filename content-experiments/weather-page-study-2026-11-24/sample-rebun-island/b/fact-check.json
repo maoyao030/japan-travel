@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island-weather",
-  "articleSha256": "013abd93b64fb6ac61d55a8988ac45a191bae3bf59d7c9e02fbc2f92da2f6a7d",
+  "articleSha256": "8a488b68d7b4f545d487d060a377c839f7ebc98d294cd0b5205cf1ae61a4f1d8",
   "checker": "事實查核 agent（Claude Opus 5.5 子代理，非作者；curl 與 Playwright 實際開來源）",
   "checkedAt": "2026-11-26",
   "claims": [
@@ -16,6 +16,51 @@
     },
     {
       "claimId": "C2",
+      "articleExcerpt": "禮文島在稚內西邊大約60公里的日本海上",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "「礼文島は、北海道の北部、稚内市の西方60kmの日本海に位置する離島です。」；町公所「稚内より西方59㎞の日本海上に位置し」",
+      "verdict": "verified",
+      "notes": "F401 原來源觀光協會打不開，改用北海道觀光機構（60km）與町公所（59km）核對。"
+    },
+    {
+      "claimId": "C3",
+      "articleExcerpt": "搭渡輪直航大約1小時55分",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
+      "sourceQuote": "稚内発～香深着「1/1～4/27 06:35～08:30」「4/28～5/31 06:30～08:25」「6/1～9/30 06:30～08:25 … 10:30～12:25 … 14:50～16:45」「11/1～12/31 06:35～08:30」",
+      "verdict": "verified",
+      "notes": "2026-11-26 重開時刻表：所有直航班（不含＜＞鴛泊經由）都是1小時55分。"
+    },
+    {
+      "claimId": "C4",
+      "articleExcerpt": "夏天有大約300種高山植物開花，被稱為「花之浮島」",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "「礼文島は、夏には約300種以上もの高山植物の花が咲くことから、別名「花の浮島」とも呼ばれています。」；環境省刊物「花の浮島・礼文島は彩りの季節を迎えています」",
+      "verdict": "verified",
+      "notes": "F403 原來源觀光協會打不開，北海道觀光機構特集同時支持約300種與花之浮島，環境省也稱花の浮島。"
+    },
+    {
+      "claimId": "C5",
+      "articleExcerpt": "可以先看禮文島值得去嗎，有景點、美食跟怎麼排",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
+      "sourceTitle": "站內連結（content-production/rebun-island/reader-preview.md）",
+      "sourceQuote": "主頁 H2：「禮文島有什麼好玩、好吃的？」「禮文島幾月去最好？」「禮文島旅遊要排幾天，怎麼排？」",
+      "verdict": "verified",
+      "notes": "站內連結句；已確認主頁有景點與美食（好玩、好吃）一節與排行程一節。sourceUrl 只為通過格式，實際依據是 repo 內主頁。"
+    },
+    {
+      "claimId": "C6",
+      "articleExcerpt": "花季在夏天，是一年裡最暖的時候，所以去之前要先看禮文島天氣",
+      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
+      "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "「礼文島観光のベストシーズンは、5月～9月ですが、なかでも6月中旬から8月初旬は、最も多くの種類の花を楽しめる」「5月下旬から6月中旬頃には…レブンアツモリソウ」；平年值日最高 6月15.9（低於臺北1月19.4）",
+      "verdict": "unsupported",
+      "notes": "花季從5月下旬開始，6月白天15.9℃、早晚10.3℃，比台北最冷的1月還冷；「一年裡最暖的時候」只對7～9月成立，而且「最暖，所以要先看天氣」因果接不起來。最小改法：「花季在夏天，不過就算是夏天，6月還比台北1月冷，所以去之前要先看禮文島天氣」。"
+    },
+    {
+      "claimId": "C7",
       "articleExcerpt": "冬天船常整天停航",
       "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー（全便欠航日数の表）",
@@ -24,8 +69,8 @@
       "notes": "未改。11～2月三年38天，約這四個月日數的一成。"
     },
     {
-      "claimId": "C3",
-      "articleExcerpt": "禮文島一年裡只有7月到9月，天氣才會像台北的2月到3月",
+      "claimId": "C8",
+      "articleExcerpt": "只有7月到9月的天氣才像台北的2月到3月",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
       "sourceQuote": "7月 20.4／14.9、8月 22.6／17.3、9月 20.5／14.5；臺北 2月 20.3／14.4、3月 22.7／16.0",
@@ -33,7 +78,7 @@
       "notes": ""
     },
     {
-      "claimId": "C4",
+      "claimId": "C9",
       "articleExcerpt": "過了9月就一路冷下去，到了冬天連白天都只在零度上下",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -42,7 +87,7 @@
       "notes": ""
     },
     {
-      "claimId": "C5",
+      "claimId": "C10",
       "articleExcerpt": "如果想要晴天多一點的話，9月會比6月、7月好排",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
       "sourceTitle": "礼文町の概要 | 北海道礼文町",
@@ -51,7 +96,7 @@
       "notes": ""
     },
     {
-      "claimId": "C6",
+      "claimId": "C11",
       "articleExcerpt": "11月到2月常有整天都沒有船的日子，如果是這段時間去，最好在預定離島的那天之後多留一天備用",
       "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー（全便欠航日数の表）",
@@ -60,7 +105,7 @@
       "notes": "條件（11月到2月）保留；多留一天是推論。"
     },
     {
-      "claimId": "C7",
+      "claimId": "C12",
       "articleExcerpt": "一整年只有7月、8月、9月的白天比台北最冷的1月暖，其他九個月都比那個月還冷",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -69,7 +114,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C8",
+      "claimId": "C13",
       "articleExcerpt": "禮文島白天／早晚欄（24格）",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -78,7 +123,7 @@
       "notes": "未改，24格一致。"
     },
     {
-      "claimId": "C9",
+      "claimId": "C14",
       "articleExcerpt": "台北白天欄（12格）",
       "sourceUrl": "https://www.cwa.gov.tw/V8/C/C/Statistics/MonthlyMean/MOD/Taiwan_meantxmax.html",
       "sourceTitle": "中央氣象署 氣候月平均 最高氣溫（資料檔）",
@@ -87,7 +132,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C10",
+      "claimId": "C15",
       "articleExcerpt": "台北早晚欄（12格）",
       "sourceUrl": "https://www.cwa.gov.tw/V8/C/C/Statistics/MonthlyMean/MOD/Taiwan_meantxmin.html",
       "sourceTitle": "中央氣象署 氣候月平均 最低氣溫（資料檔）",
@@ -96,7 +141,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C11",
+      "claimId": "C16",
       "articleExcerpt": "7月跟9月，不管是白天還是早晚，都差不多是台北2月的溫度",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -105,7 +150,7 @@
       "notes": ""
     },
     {
-      "claimId": "C12",
+      "claimId": "C17",
       "articleExcerpt": "禮文島5月跟10月的早晚平均都在10℃以下，6月也只比10℃高一點",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -114,7 +159,7 @@
       "notes": ""
     },
     {
-      "claimId": "C13",
+      "claimId": "C18",
       "articleExcerpt": "台北的最低溫降到10℃或以下就叫寒流",
       "sourceUrl": "https://edu.cwa.gov.tw/PopularScience/pr/pr_6.html",
       "sourceTitle": "中央氣象署數位科普網-小石虎的寒流問題",
@@ -123,7 +168,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C14",
+      "claimId": "C19",
       "articleExcerpt": "所以這三個月的早晚，大概就是台北寒流來的時候那種冷",
       "sourceUrl": "https://edu.cwa.gov.tw/PopularScience/pr/pr_6.html",
       "sourceTitle": "中央氣象署數位科普網-小石虎的寒流問題",
@@ -132,7 +177,7 @@
       "notes": "6月10.3℃嚴格說是強烈大陸冷氣團等級，有「大概」可接受。"
     },
     {
-      "claimId": "C15",
+      "claimId": "C20",
       "articleExcerpt": "就算是一年裡最熱的8月，禮文島白天也比同一個月的台北低了11度多",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -141,7 +186,7 @@
       "notes": "34.2−22.6＝11.6。"
     },
     {
-      "claimId": "C16",
+      "claimId": "C21",
       "articleExcerpt": "禮文島夏天一天之內溫差小，6月到9月的白天跟早晚只差5到6℃，一套衣服大致能穿一整天",
       "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
       "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
@@ -150,7 +195,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C17",
+      "claimId": "C22",
       "articleExcerpt": "就算是7月、8月，晴天也可能突然變冷，遇到冷夏的時候，甚至還有早晚需要開暖氣的日子，所以記得帶一件外套",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
       "sourceTitle": "礼文町の概要 | 北海道礼文町",
@@ -159,7 +204,7 @@
       "notes": "冷夏的條件與「日子」的強度都保留。"
     },
     {
-      "claimId": "C18",
+      "claimId": "C23",
       "articleExcerpt": "冬天最要緊的是擋風，島的西海岸會吹強烈的西風，最外面那一層記得選擋得住風的",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
       "sourceTitle": "礼文町の概要 | 北海道礼文町",
@@ -168,7 +213,7 @@
       "notes": "F402 原來源打不開，以町公所與稚內地方氣象台核對；和表內「西北季風」不衝突。"
     },
     {
-      "claimId": "C19",
+      "claimId": "C24",
       "articleExcerpt": "12月到3月｜積雪整個冬天都不會融的雪季｜比台北寒流來的時候穿得更多，白天也在零度上下，要穿整天都夠暖的",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
       "sourceTitle": "礼文町の概要 | 北海道礼文町",
@@ -177,7 +222,7 @@
       "notes": "根雪＝整個冬天不融的積雪。"
     },
     {
-      "claimId": "C20",
+      "claimId": "C25",
       "articleExcerpt": "12月到3月｜西北季風很強，多數步道冬季封閉",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
       "sourceTitle": "礼文町の概要 | 北海道礼文町",
@@ -186,7 +231,7 @@
       "notes": "季風原文只講1～2月，整列概括可接受；步道公告只看到2026年，但寫的是「冬季閉鎖」。"
     },
     {
-      "claimId": "C21",
+      "claimId": "C26",
       "articleExcerpt": "4月到5月｜花季才剛要開始的春天",
       "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
       "sourceTitle": "礼文島観光の楽しみ方！おすすめスポットやアクセス方法を徹底解説｜特集｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
@@ -195,7 +240,7 @@
       "notes": ""
     },
     {
-      "claimId": "C22",
+      "claimId": "C27",
       "articleExcerpt": "4月到5月｜4月要比台北寒流時穿得更厚，5月跟寒流時一樣厚，外層要擋風",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -204,7 +249,7 @@
       "notes": "已照上次改法改寫：4月白天也低於寒流門檻，5月約在門檻上下。"
     },
     {
-      "claimId": "C23",
+      "claimId": "C28",
       "articleExcerpt": "5月平均風速是一年裡最大的",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -213,7 +258,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C24",
+      "claimId": "C29",
       "articleExcerpt": "6月到7月｜花開得最多、還有機會看到雲海的涼夏｜7月像台北2月，6月早晚要再多一件",
       "sourceUrl": "https://www.env.go.jp/park/content/000137471.pdf",
       "sourceTitle": "瞬間の風景 ２０２３．５ Vol.2９（環境省 PDF）",
@@ -222,7 +267,7 @@
       "notes": "雲海只說「有機會」，配合6月霧多與環境省開花季的霧之雲海，撐得住。"
     },
     {
-      "claimId": "C25",
+      "claimId": "C30",
       "articleExcerpt": "6月霧特別多",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
       "sourceTitle": "礼文町の概要 | 北海道礼文町",
@@ -231,7 +276,7 @@
       "notes": ""
     },
     {
-      "claimId": "C26",
+      "claimId": "C31",
       "articleExcerpt": "6月跟7月日照是夏天最少",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -240,7 +285,7 @@
       "notes": ""
     },
     {
-      "claimId": "C27",
+      "claimId": "C32",
       "articleExcerpt": "8月到9月｜最暖的8月，接著天氣穩定的9月｜8月像台北3月，9月早晚加外套",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -249,7 +294,7 @@
       "notes": ""
     },
     {
-      "claimId": "C28",
+      "claimId": "C33",
       "articleExcerpt": "大雨多在夏末，也有熱到30℃的年份",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "観測史上1～10位の値（年間を通じての値）礼文（宗谷地方）｜気象庁",
@@ -258,7 +303,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C29",
+      "claimId": "C34",
       "articleExcerpt": "10月到11月｜冷得很快的秋末",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -267,7 +312,7 @@
       "notes": ""
     },
     {
-      "claimId": "C30",
+      "claimId": "C35",
       "articleExcerpt": "10月到11月｜早晚要穿台北寒流時的厚度，11月再加一件",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -276,7 +321,7 @@
       "notes": ""
     },
     {
-      "claimId": "C31",
+      "claimId": "C36",
       "articleExcerpt": "多數步道陸續冬季封閉，11月起整天沒有船的日子變多",
       "sourceUrl": "https://rebun-trail.jp/?p=1749",
       "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ | 礼文島トレイルオフィシャルウェブ",
@@ -285,16 +330,16 @@
       "notes": ""
     },
     {
-      "claimId": "C32",
-      "articleExcerpt": "如果想要晴天跟花都顧到的話，5月下旬是最接近的時候",
+      "claimId": "C37",
+      "articleExcerpt": "如果想要晴天跟花都顧到的話，5月下旬是最接近兩樣都顧到的時候",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
       "sourceTitle": "礼文町の概要 | 北海道礼文町",
       "sourceQuote": "「4月、5月は…秋と並んで晴れる日が多く日照率が高くなります。」；北海道觀光機構「5月下旬から6月中旬頃には…レブンアツモリソウ」",
       "verdict": "verified",
-      "notes": "已照上次改法改回「最接近」。"
+      "notes": "「顧到」重複出現，非事實問題，可改成「5月下旬最接近」。"
     },
     {
-      "claimId": "C33",
+      "claimId": "C38",
       "articleExcerpt": "2023到2025年三年共52天，就有38天在這四個月",
       "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー（全便欠航日数の表）",
@@ -303,7 +348,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C34",
+      "claimId": "C39",
       "articleExcerpt": "下表是Heartland Ferry（ハートランドフェリー）公布的利尻・禮文航路整天沒有船的天數，只有部分班次停開的日子不算在內",
       "sourceUrl": "https://heartlandferry.jp/faq/",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー",
@@ -312,7 +357,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C35",
+      "claimId": "C40",
       "articleExcerpt": "停航天數表（36格與全年列）",
       "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー（全便欠航日数の表）",
@@ -321,7 +366,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C36",
+      "claimId": "C41",
       "articleExcerpt": "1月跟2月這三年每年都有整天停航的日子",
       "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー（全便欠航日数の表）",
@@ -330,7 +375,7 @@
       "notes": "1月3、6、3；2月2、2、2。"
     },
     {
-      "claimId": "C37",
+      "claimId": "C42",
       "articleExcerpt": "6月到8月這三年一天都沒有",
       "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー（全便欠航日数の表）",
@@ -339,7 +384,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C38",
+      "claimId": "C43",
       "articleExcerpt": "不過天氣突然變壞的時候，還是可能臨時停航，或改停別的港口",
       "sourceUrl": "https://heartlandferry.jp/faq/",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー",
@@ -348,7 +393,7 @@
       "notes": ""
     },
     {
-      "claimId": "C39",
+      "claimId": "C44",
       "articleExcerpt": "如果想在停航的時候自動收到通知的話，可以把Heartland Ferry的LINE官方帳號加為好友，停航跟臨時加開船班的時候都會推播",
       "sourceUrl": "https://heartlandferry.jp/faq/",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー",
@@ -357,7 +402,7 @@
       "notes": "已改成「自動」。"
     },
     {
-      "claimId": "C40",
+      "claimId": "C45",
       "articleExcerpt": "要是預約的船班停航了，就得重新預約",
       "sourceUrl": "https://heartlandferry.jp/faq/",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー",
@@ -366,7 +411,7 @@
       "notes": ""
     },
     {
-      "claimId": "C41",
+      "claimId": "C46",
       "articleExcerpt": "禮文島的霧在6月特別多，陰天跟雨天也多",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
       "sourceTitle": "礼文町の概要 | 北海道礼文町",
@@ -375,7 +420,7 @@
       "notes": ""
     },
     {
-      "claimId": "C42",
+      "claimId": "C47",
       "articleExcerpt": "花開的季節裡，也有不少日子整片被從海上起來的濃霧蓋住",
       "sourceUrl": "https://www.env.go.jp/park/content/000137471.pdf",
       "sourceTitle": "瞬間の風景 ２０２３．５ Vol.2９（環境省 PDF）",
@@ -384,7 +429,7 @@
       "notes": ""
     },
     {
-      "claimId": "C43",
+      "claimId": "C48",
       "articleExcerpt": "桃岩展望台這種高的地方，強風跟濃霧都不少，景色可能整個被擋住",
       "sourceUrl": "https://rebun-trail.jp/momoiwaobservatorycourse/",
       "sourceTitle": "桃岩展望台コース | 礼文島トレイルオフィシャルウェブ",
@@ -393,7 +438,7 @@
       "notes": ""
     },
     {
-      "claimId": "C44",
+      "claimId": "C49",
       "articleExcerpt": "不過清晨在那裡，有時一下子整片白、一下子又看得清清楚楚，所以就算起霧也不用太早放棄",
       "sourceUrl": "https://www.env.go.jp/park/content/000137471.pdf",
       "sourceTitle": "瞬間の風景 ２０２３．５ Vol.2９（環境省 PDF）",
@@ -402,7 +447,7 @@
       "notes": "「有時」保留。"
     },
     {
-      "claimId": "C45",
+      "claimId": "C50",
       "articleExcerpt": "霧層壓在標高200公尺以下的時候，站在比它高的地方就能往下看到雲海，桃岩展望台（225公尺）、燕山（ツバメ山，233公尺）跟禮文林道從元地口進去大約1.1公里的地方（200公尺）都看得到",
       "sourceUrl": "https://www.rebun-island.jp/seacloud/",
       "sourceTitle": "雲海｜礼文島観光協会",
@@ -411,7 +456,7 @@
       "notes": "rebun-island.jp 與 web.archive.org 存檔 2026-11-24（研究者）與 2026-11-26（查核者兩次，第二次各試一次）都連不上；2026-11-26 第三輪再各試一次仍連不上（連線中斷）。研究者 2026-11-24 曾用網頁存檔 web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/ 核對文字一致（見 reference-review.md F442、F629 的適用條件），今天無法重開。環境省 PDF 能獨立支持的只有「桃岩展望台標高超過200公尺、是看霧之雲海的地點」；225／233／200公尺的數字、燕山、禮文林道元地口1.1公里處、「霧層在200公尺以下」的條件只有觀光協會那頁有。"
     },
     {
-      "claimId": "C46",
+      "claimId": "C51",
       "articleExcerpt": "霧多的6月前後比較有機會碰上雲海",
       "sourceUrl": "https://www.env.go.jp/park/content/000137471.pdf",
       "sourceTitle": "瞬間の風景 ２０２３．５ Vol.2９（環境省 PDF）",
@@ -420,7 +465,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C47",
+      "claimId": "C52",
       "articleExcerpt": "不過要當天早上有起霧、風也不大才看得到，而且要趁氣溫還沒上升之前就上去",
       "sourceUrl": "https://www.rebun-island.jp/seacloud/",
       "sourceTitle": "雲海｜礼文島観光協会",
@@ -429,7 +474,7 @@
       "notes": "rebun-island.jp 與 web.archive.org 存檔 2026-11-24（研究者）與 2026-11-26（查核者兩次，第二次各試一次）都連不上；2026-11-26 第三輪再各試一次仍連不上（連線中斷）。研究者 2026-11-24 曾用網頁存檔 web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/ 核對文字一致（見 reference-review.md F442、F629 的適用條件），今天無法重開。環境省 PDF 只支持「清晨」（早朝に訪れた）與看得到霧之雲海；「風弱」「氣溫上升之前」只有觀光協會那頁有。"
     },
     {
-      "claimId": "C48",
+      "claimId": "C53",
       "articleExcerpt": "所以前一天記得先看天氣預報，看隔天早上有沒有霧、風大不大",
       "sourceUrl": "https://www.rebun-island.jp/seacloud/",
       "sourceTitle": "雲海｜礼文島観光協会",
@@ -438,7 +483,7 @@
       "notes": "rebun-island.jp 與 web.archive.org 存檔 2026-11-24（研究者）與 2026-11-26（查核者兩次，第二次各試一次）都連不上；2026-11-26 第三輪再各試一次仍連不上（連線中斷）。研究者 2026-11-24 曾用網頁存檔 web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/ 核對文字一致（見 reference-review.md F442、F629 的適用條件），今天無法重開。環境省 PDF 沒有預報相關內容。"
     },
     {
-      "claimId": "C49",
+      "claimId": "C54",
       "articleExcerpt": "夏天從稚內出發的第一班船要8:25才會到香深，所以如果想看雲海的話，前一晚就要先住在島上",
       "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
       "sourceTitle": "稚内～礼文島 | ハートランドフェリー",
@@ -447,7 +492,7 @@
       "notes": "「夏天」對得上時刻表的6/1～9/30；研究記錄也記4/28～5/31、10月第一班同樣08:25到。"
     },
     {
-      "claimId": "C50",
+      "claimId": "C55",
       "articleExcerpt": "清晨要從哪裡走上桃岩展望台、要走多久，禮文島健行有每條步道的整理",
       "sourceUrl": "https://rebun-trail.jp/momoiwaobservatorycourse/",
       "sourceTitle": "桃岩展望台コース | 礼文島トレイルオフィシャルウェブ",
@@ -456,7 +501,7 @@
       "notes": "站內連結句；已確認 content-production/rebun-island-hiking/reader-preview.md 有桃岩展望台步道入口、從渡輪站走2.8公里約1小時等內容，連結句說的內容對得上。"
     },
     {
-      "claimId": "C51",
+      "claimId": "C56",
       "articleExcerpt": "出發前幾天到氣象廳宗谷地方的預報頁，在「市町村選択」選禮文町，就看得到禮文町的預報",
       "sourceUrl": "https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=011000",
       "sourceTitle": "気象庁 | 天気予報",
@@ -465,7 +510,7 @@
       "notes": "未改，2026-11-26 已用 Playwright 確認。"
     },
     {
-      "claimId": "C52",
+      "claimId": "C57",
       "articleExcerpt": "船班停不停，出發當天早上看一下LINE有沒有推播就好",
       "sourceUrl": "https://heartlandferry.jp/faq/",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー",
@@ -474,7 +519,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C53",
+      "claimId": "C58",
       "articleExcerpt": "延伸資料：環境省利尻禮文薩羅貝茲國立公園的刊物（2023年5月號），開花季節的霧與桃岩展望台清晨的雲海",
       "sourceUrl": "https://www.env.go.jp/park/rishiri/topics/index.html",
       "sourceTitle": "利尻礼文サロベツ国立公園｜環境省（お知らせ一覧）",
@@ -483,7 +528,7 @@
       "notes": "已照上次改法改寫。"
     },
     {
-      "claimId": "C54",
+      "claimId": "C59",
       "articleExcerpt": "禮文島的氣溫是氣象廳禮文觀測站2003到2020年的平年值，台北是中央氣象署臺北站1991到2020年的月平均",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -492,7 +537,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C55",
+      "claimId": "C60",
       "articleExcerpt": "資料來源標題（トレッキングコース冬季閉鎖のお知らせ、礼文島観光の楽しみ方！…｜HOKKAIDO LOVE!、稚内～礼文島、宗谷地方の天気予報、氣候月平均｜交通部中央氣象署 等）",
       "sourceUrl": "https://rebun-trail.jp/?p=1749",
       "sourceTitle": "トレッキングコース冬季閉鎖のお知らせ | 礼文島トレイルオフィシャルウェブ",
@@ -501,7 +546,7 @@
       "notes": "觀光協會首頁那條已刪。"
     },
     {
-      "claimId": "C56",
+      "claimId": "C61",
       "articleExcerpt": "資料來源標題「利尻礼文サロベツ国立公園たより 2023年5月号 vol.29｜環境省」",
       "sourceUrl": "https://www.env.go.jp/park/rishiri/topics/index.html",
       "sourceTitle": "利尻礼文サロベツ国立公園｜環境省（お知らせ一覧）",
@@ -510,7 +555,7 @@
       "notes": ""
     },
     {
-      "claimId": "C57",
+      "claimId": "C62",
       "articleExcerpt": "資料來源標題「観測史上の順位（礼文）｜気象庁」",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/rank_a.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "観測史上1～10位の値（年間を通じての値）礼文（宗谷地方）｜気象庁",
@@ -519,7 +564,7 @@
       "notes": "未改。"
     },
     {
-      "claimId": "C58",
+      "claimId": "C63",
       "articleExcerpt": "資料來源「雲海｜礼文島観光協会」https://www.rebun-island.jp/seacloud/",
       "sourceUrl": "https://www.rebun-island.jp/seacloud/",
       "sourceTitle": "雲海｜礼文島観光協会",
@@ -528,7 +573,7 @@
       "notes": "rebun-island.jp 與 web.archive.org 存檔 2026-11-24（研究者）與 2026-11-26（查核者兩次，第二次各試一次）都連不上；2026-11-26 第三輪再各試一次仍連不上（連線中斷）。研究者 2026-11-24 曾用網頁存檔 web.archive.org/web/20261009000758/https://www.rebun-island.jp/seacloud/ 核對文字一致（見 reference-review.md F442、F629 的適用條件），今天無法重開。延伸資料的雲海連結已拿掉；資料來源保留作證據。"
     },
     {
-      "claimId": "C59",
+      "claimId": "C64",
       "articleExcerpt": "excerpt：禮文島最熱的8月，白天也只跟台北3月差不多，所以夏天去也要帶一件外套",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -537,7 +582,7 @@
       "notes": ""
     },
     {
-      "claimId": "C60",
+      "claimId": "C65",
       "articleExcerpt": "excerpt：渡輪整天停航的日子集中在11月到2月，6月到8月這三年倒是一天都沒有停過",
       "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー（全便欠航日数の表）",
@@ -546,7 +591,7 @@
       "notes": ""
     },
     {
-      "claimId": "C61",
+      "claimId": "C66",
       "articleExcerpt": "excerpt：6月霧特別多，也比較有機會碰上雲海",
       "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000300.html",
       "sourceTitle": "礼文町の概要 | 北海道礼文町",
@@ -555,7 +600,7 @@
       "notes": ""
     },
     {
-      "claimId": "C62",
+      "claimId": "C67",
       "articleExcerpt": "seoDescription：禮文島最熱的8月，白天也只跟台北3月差不多",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
@@ -564,7 +609,7 @@
       "notes": ""
     },
     {
-      "claimId": "C63",
+      "claimId": "C68",
       "articleExcerpt": "seoDescription：渡輪整天停航集中在11月到2月，6月到8月這三年一天都沒有停過，11月到2月去最好多留一天備用",
       "sourceUrl": "https://heartlandferry.jp/wp/wp-content/uploads/2026/01/dec2d40fdd7edfeae67d752e102540da-scaled.jpg",
       "sourceTitle": "よくあるご質問 | ハートランドフェリー（全便欠航日数の表）",
@@ -574,9 +619,9 @@
     }
   ],
   "summary": {
-    "verified": 59,
+    "verified": 63,
     "incorrect": 0,
-    "unsupported": 0,
+    "unsupported": 1,
     "outdated": 0,
     "unreachable": 4,
     "not-stated": 0
