@@ -2469,3 +2469,12 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 已決定：地點主頁作者用 Sonnet 5.5（Darren：「就確定是用 Sonnet 寫啦」）。
 - 天氣頁範本 Darren 要求另開新的 session 做（這個 session 太長）；已做的第一、二步在 `content-experiments/weather-page-study-2026-11-24/`。
 - 唯一下一步：新 session 接著做天氣頁範本，先請 Darren 從三篇別站天氣文章挑最接近的。
+
+## 2026-11-26 每一頁都一樣的寫法整理成一頁（Claude Code）
+
+- 起因：Darren 說接下來測試新東西時，共用的規則跟他在意的東西不要再做錯；又說要整理成適合撰寫的規則，讓作者知道他要的內容長什麼樣。
+- 已完成：寫作 Skill 新增 `references/core-style.md`（作者動筆前第一份讀），內容只收他在住宿頁、地點主頁、天氣頁講過、不分頁型的要求，寫成「要寫成什麼樣」，附已定案的改前改後例子、交稿前的十題、給協調者的流程。接進 `SKILL.md`、`writing-guide.md`、`preference-review.md`、`weather-writer.md`、`place-entry-writer.md`、`stay-writer.md`、`local-writer.md`（都只在作者的閱讀清單加一行）與 `chat-optimize.md`「做範本」第 2 步；`AGENTS.md`、`RULES_OVERVIEW.md` 同步。
+- 已決定（協調者的歸納，Darren 還沒逐條看過）：哪些算不分頁型；只對某種頁型講過的八件事列在第 7 節，新頁型做範本時一次問他。
+- 沒有做：沒有新增檢查程式；已上線的文章沒有因此改；`.agents/working/claude-code.md` 還是天氣頁 session 的進行中紀錄，沒有動。
+- Git：分支 `claude/shared-rules` 接在天氣頁分支 `claude/youthful-meitner-y6oupc` 之後（那個分支還沒併進 `main`，Darren 說天氣頁還在確認），已推送分支，**沒有併進 `main`**；天氣頁分支併進 `main` 之後再併這一支。`npm test` 246 個通過。
+- 唯一下一步：Darren 看 `core-style.md`，說哪幾條不是他的意思；天氣頁確認完、併進 `main` 後，把這一支併進去。

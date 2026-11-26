@@ -63,7 +63,7 @@
 
 ### 2. 作者（Sonnet 5.5）
 
-讀 `spec.md`、`weather-page.md`、`writing-guide.md`、`sentence-rhythm.md`、`examples.md` 第 6 節、同頁型範本（`node scripts/page-models.mjs --for=<id>` 列的檔案整篇讀完，也讀 `learn`；用法照 `page-models/README.md`）與 `reference-review.md`。不讀其他文章的正文，不上網。
+讀 `spec.md`、`core-style.md`（先讀，Darren 要的內容長什麼樣）、`weather-page.md`、`writing-guide.md`、`sentence-rhythm.md`、`examples.md` 第 6 節、同頁型範本（`node scripts/page-models.mjs --for=<id>` 列的檔案整篇讀完，也讀 `learn`；用法照 `page-models/README.md`）與 `reference-review.md`。不讀其他文章的正文，不上網。
 
 交：
 

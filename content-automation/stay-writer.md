@@ -4,7 +4,7 @@
 
 這套流程是 2026-11-18～19 人工 session 把六篇舊住宿主頁、富良野滑雪住宿與旭川三頁專門頁重跑一輪時用的，Darren 看過十頁後說「飯店都沒問題了，住宿就這樣吧」。寫法的規則在寫作 Skill，這份文件只管順序、派誰做、卡住時怎麼辦。
 
-- 寫法：`.agents/skills/japan-travel-answer-first/references/stay-page.md`（主頁）、`stay-topic-page.md`（專門頁；最後一節「住客怎麼說」主頁也適用）、`sentence-rhythm.md`。
+- 寫法：`.agents/skills/japan-travel-answer-first/references/core-style.md`（每一頁都一樣的寫法，分段作者與編輯先讀）、`stay-page.md`（主頁）、`stay-topic-page.md`（專門頁；最後一節「住客怎麼說」主頁也適用）、`sentence-rhythm.md`。
 - 做過的十頁可以當前例：封包在 `content-production/<id>/`，研究與每一步的紀錄在 `content-experiments/stay-rerun-2026-11-18/<地點>/`；學到的事在同資料夾的 `RUNBOOK.md`。
 - 住宿頁不受「先有頁型範本」限制（`local-writer.md` 第 1 步那一條）：格式 Darren 已經認可。
 

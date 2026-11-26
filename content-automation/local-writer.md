@@ -98,7 +98,7 @@ Darren 2026-10-24 改成**自動上傳、直接開放收錄**：每輪寫完一�
    協調者親自讀「寫作前判定」：`thin` 或 `outline-error` 就**停放**這篇（見「失敗」），停放表的原因寫「寫作前補研究後資料仍不足」或「大綱錯誤」與缺什麼、錯在哪，要誰處理寫「人工 session：補研究、改大綱或併進地點主頁」；`ready` 才接第 1 步。有「## 大綱待調整」時，把內容寫進執行紀錄「紀錄」表的待同步欄，文章照寫。
 
 1. **作者**（新子代理）。交代：
-   - 用 `.agents/skills/japan-travel-answer-first/SKILL.md` 寫內容稿；寫作前讀完 `references/writing-guide.md`（特別是第14條「不要寫成量產頁」與第15條「日文只放在括號與「」裡」）、`references/examples.md`、`references/nanny-level.md`。研究由第 0 步的研究者做完，跳過研究步驟。
+   - 用 `.agents/skills/japan-travel-answer-first/SKILL.md` 寫內容稿；寫作前先讀 `references/core-style.md`（Darren 要的內容長什麼樣），再讀完 `references/writing-guide.md`（特別是第14條「不要寫成量產頁」與第15條「日文只放在括號與「」裡」）、`references/examples.md`、`references/nanny-level.md`。研究由第 0 步的研究者做完，跳過研究步驟。
    - **讀同頁型的範本**（2026-11-11 加入）：跑 `node scripts/page-models.mjs --for=<id>`，把 `models` 列的每個 `file` 整篇讀完，也讀每篇的 `learn`；怎麼用照 `.agents/skills/japan-travel-answer-first/references/page-models/README.md`。學整篇的輕重、開頭怎麼回答、每節寫到多細、提醒與推薦出現的位置與頻率；標題與順序照自己的大綱，事實只用 `reference-review.md`，句子不照抄、不換地名套用。寫完在 `order-notes.md` 加一節 `## 和範本比`：每個 H2 對照範本裡功能相同的那一節，長度與細度差在哪、為什麼（這個地方本來就沒那麼多可寫，或這一節是這頁的重點所以寫得更細）。
    - 讀 `<資料夾>/competitor-notes.md`（讀競品的筆記）：每一節照讀者期待的順序排資訊，只學順序，事實照樣只用 `reference-review.md`。寫完另寫 `<資料夾>/order-notes.md`：每個 H2 用了什麼順序、照筆記的哪一點。
    - H1、H2／H3 照大綱這一頁的 headings 一字不改、順序層級不變；mustAnswer 都要正面回答；大綱 `links` 裡 from 是這頁的 sentence 一字不改寫進正文；分工表歸別頁的事一兩句帶過並用內連句連過去。
