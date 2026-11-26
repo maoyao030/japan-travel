@@ -2469,3 +2469,21 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 已決定：地點主頁作者用 Sonnet 5.5（Darren：「就確定是用 Sonnet 寫啦」）。
 - 天氣頁範本 Darren 要求另開新的 session 做（這個 session 太長）；已做的第一、二步在 `content-experiments/weather-page-study-2026-11-24/`。
 - 唯一下一步：新 session 接著做天氣頁範本，先請 Darren 從三篇別站天氣文章挑最接近的。
+
+## 2026-11-26 天氣頁的寫法、範本與〈禮文島天氣〉上線（Claude Code）
+
+- 已完成：天氣頁範本研究第 3 步到上線。Darren 從三篇別站文章挑方向（「1 的表格加 3 的寫法，三個問題照預設 各取優點」），同意結構，一節一節看過〈禮文島天氣〉樣本，整篇說「可以，寫成規則並準備上線」，上線前說「把這個也列成範本」。
+- 已完成：〈禮文島天氣〉上線並開放索引（`/places/rebun-island/weather/`，Sanity 修訂 TM0AY1yBg7WZInNlmZa5I2），事實查核 61 筆全部 verified、偏好審查通過、讀者驗收 `acceptable`、`gates_clear`，網站 CI 通過。封面是禮文町官方素材「桃岩3」。已登記成天氣頁的頁型範本。
+- 已完成：寫作 Skill `references/weather-page.md`、`references/preference-review.md`；驗收 Skill `references/weather-acceptance.md`；`content-automation/weather-writer.md`；`local-writer.md` 加天氣頁分流；`SKILL.md`、`heading-style.md`、`page-types.md`、`writing-guide.md` 第 1 條、`RULES_OVERVIEW.md`、`AGENTS.md` 同步。大綱、頁面規格、文章清單的標題與查詢詞已同步。地點事實表新增 F677～F680（台北平年值、寒流定義、環境省的霧與雲海）。
+- 已決定（Darren）：氣溫拿台北對照；逐月表加問題式標題；利尻、禮文共用的停航天數兩頁都放；大標題用「禮文島天氣攻略，8月只像台北3月，四季穿法、雲海與渡輪停航一次看」；**每一頁的開頭先介紹這個地方再帶進主題**；第三節補回「多留一天」；參考他在前兩個範本的偏好（因此多一位偏好審查者，模型照 Sonnet 5.5 寫、Opus 5.5 審）。
+- 協調者照預設做的：四季總表拿掉「看得到什麼」改四欄；字數下限改 1,300；雲海只留環境省資料撐得住的部分（禮文島觀光協會網站回 503、網頁存檔從雲端讀不到）；次要查詢改成標題帶得到的詞，其餘記 `tableQueries`。
+- 尚未完成：
+  - D1 沒登記（雲端 Default 環境沒有 D1 權限）：這篇的 `ops-article`、`ops-links register`、`ops-facts sync` 與 F677～F680。
+  - 文內照片與嵌入還沒放。候選：禮文町素材「香深港」（kanko_51）放停航那一節；觀光協會 YouTube「礼文島桃岩展望台」（晴天，對題普通）。維基共享資源與免費圖庫當天回 429 或擋讀取，沒查。
+  - 觀光協會網站恢復後重查雲海頁，補回三個觀看地點與條件（`gaps.md`）。
+  - 利尻島、旭川、層雲峽、稚內四篇天氣頁還是舊寫法；利尻島天氣頁沒有停航天數表。
+  - 禮文島主頁等〈禮文島祭典〉上線後才換成純六節的版本。
+  - Darren 語音輸入裡的「repeater」沒有確認是哪個詞。
+  - 排定工作仍暫停；天氣頁流程還沒有由排定工作自己跑過。
+- 測試：`npm test` 246 通過、`npm run planning:check`、`npm run queue:validate`、`node scripts/page-models.mjs --check` 通過。
+- 唯一下一步：祭典頁的範本研究第一步（看線上祭典頁哪裡不行、找別站同類文章給 Darren 挑）。
