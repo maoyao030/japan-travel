@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island",
-  "articleSha256": "7765947d08c0584308d087161dd0416a56f3e132fec336c3870c7ae682474cd4",
-  "checker": "事實查核 agent（Claude Opus 5.5 子代理，不是作者，只讀正文）。2026-11-24 地點主頁改版：樣本稿 content-experiments/place-entry-study-2026-11-19/sample-rebun-island/new.md 查核兩輪（fact-check-round1.md：約 95 處，5 處不成立已由作者照最小改法修改；fact-check-round2.md：改過的句子全部成立），依據只用已上線、已查證的子頁 reader-preview.md 與各子頁研究記錄、利尻島與稚內主頁，依協調者指示本輪沒有重新開官方網址。轉成封包時逐句加事實編號，sourceUrl 與 sourceQuote 取該句第一個編號在事實表的原列；同句其他編號列在 notes。2026-11-24 讀者驗收後作者改稿，第 3 輪（fact-check-round3.md）逐句重查改過的句子，4 處不成立已照最小改法改在 draft-tagged.md（花魚鏘鏘燒小標題的「元祖」加引號、B 線那句補「2等艙的」、敦盛草保護區「船泊本町一帶」改「船泊一帶」、5 月下旬到 6 月中旬的「17:10的末班船」改「末班船」），其餘成立。吸引力審查第四輪退回後作者改了序言第一段與海膽小段，第 4 輪（fact-check-round4.md）複查：「從藍綠色變到翡翠色」說過頭，改回「變成藍綠色或翡翠色」，其餘成立。Darren 看過成品後作者改了九處（H1、摘要、序言、四個小標題、新增北方金絲雀公園看點、刪薄雪之湯小段等），第 5 輪（fact-check-round5.md）逐句複查全部成立，補了標記：北方金絲雀公園的木造校舍補 F310，景點頁連結句補 F436、F435、F440。F602～F608 是地點事實表沒有、本頁暫編的事實（住宿重跑事實表 K15、K34、K42，利尻島 F5、F188、F189、F47）。",
-  "checkedAt": "2026-11-24",
+  "articleSha256": "f9291edf51183f9f663b10a61af818edc3fc5942bebf947f7bf5ff4ece20c942",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，不是作者，只讀正文）。2026-11-24 地點主頁改版：樣本稿 content-experiments/place-entry-study-2026-11-19/sample-rebun-island/new.md 查核兩輪（fact-check-round1.md：約 95 處，5 處不成立已由作者照最小改法修改；fact-check-round2.md：改過的句子全部成立），依據只用已上線、已查證的子頁 reader-preview.md 與各子頁研究記錄、利尻島與稚內主頁，依協調者指示本輪沒有重新開官方網址。轉成封包時逐句加事實編號，sourceUrl 與 sourceQuote 取該句第一個編號在事實表的原列；同句其他編號列在 notes。2026-11-24 讀者驗收後作者改稿，第 3 輪（fact-check-round3.md）逐句重查改過的句子，4 處不成立已照最小改法改在 draft-tagged.md（花魚鏘鏘燒小標題的「元祖」加引號、B 線那句補「2等艙的」、敦盛草保護區「船泊本町一帶」改「船泊一帶」、5 月下旬到 6 月中旬的「17:10的末班船」改「末班船」），其餘成立。吸引力審查第四輪退回後作者改了序言第一段與海膽小段，第 4 輪（fact-check-round4.md）複查：「從藍綠色變到翡翠色」說過頭，改回「變成藍綠色或翡翠色」，其餘成立。Darren 看過成品後作者改了九處（H1、摘要、序言、四個小標題、新增北方金絲雀公園看點、刪薄雪之湯小段等），第 5 輪（fact-check-round5.md）逐句複查全部成立，補了標記：北方金絲雀公園的木造校舍補 F310，景點頁連結句補 F436、F435、F440。F602～F608 是地點事實表沒有、本頁暫編的事實（住宿重跑事實表 K15、K34、K42，利尻島 F5、F188、F189、F47）。 2026-11-26 複查（連結句改成單獨一行的連結行）：以 git diff 20a67d1..HEAD 確認 reader-preview.md 只有連結句（或指路的半句）被拿掉、新增「看更多：」連結行，其他句子一字未動；每一行連結行「｜」後的各項逐項對照該子頁已上線的 reader-preview.md（本輪不上網）。其餘 claim 沿用原判定。",
+  "checkedAt": "2026-11-26",
   "claims": [
     {
       "claimId": "C1",
@@ -205,12 +205,12 @@
     },
     {
       "claimId": "C23",
-      "articleExcerpt": "菜單上的海膽丼怎麼認，5月跟9月還吃不吃得到，禮文島美食有整理。",
+      "articleExcerpt": "看更多：[禮文島美食](/places/rebun-island/food/)｜海膽丼的菜單怎麼認、產季前後吃不吃得到",
       "sourceUrl": "https://www.rebun-island.jp/inbound/restaurant.html",
       "sourceTitle": "礼文島観光協会",
       "sourceQuote": "「40年以上の歴史を持つ「元祖ほっけのちゃんちゃん焼き」」「6～8月は「うに丼」や、うに、ボタンエビなどが入った「磯ラーメン」」「決済方法 現金」「電話：0163-86-2130」「徒歩5分」",
       "verdict": "verified",
-      "notes": "F450、F43；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+      "notes": "連結行（2026-11-26 連結句改成單獨一行）。「｜」後的每一項逐項對照該子頁已上線的 reader-preview.md：rebun-island-food「海膽丼與海膽飯糰」寫日文菜單「うに丼」「うにぎり」；「禮文島海膽的產季」寫漁期5月到9月、千鳥海膽丼只在6到8月、5月與9月菜單上沒有、可到觀光案內所問。原句的「5月跟9月」改成「產季前後」，意思一致；被拿掉的半句只是指路，F43（民宿說的漁期）本來就只在子頁正文用，主頁其他句子沒有依賴它。sourceUrl 與 sourceQuote 借用本頁 C23 的官方來源，只是該主題的代表來源，連結行本身不靠官方原文。"
     },
     {
       "claimId": "C24",
@@ -241,21 +241,21 @@
     },
     {
       "claimId": "C27",
-      "articleExcerpt": "島南邊的地藏岩、桃台貓台跟薄雪之湯，還有其他北部的岬，收在禮文島景點。",
+      "articleExcerpt": "看更多：[禮文島景點](/places/rebun-island/sights/)｜島南邊的地藏岩、桃台貓台、薄雪之湯與北部的岬",
       "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10387.html",
       "sourceTitle": "HOKKAIDO LOVE!（北海道観光機構）",
       "sourceQuote": "「高さ約50mの奇岩」「元地海岸」「香深港フェリーターミナルから約10分」「西の海へ沈む太陽」",
       "verdict": "verified",
-      "notes": "F74、F436、F435、F440；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+      "notes": "連結行（2026-11-26 連結句改成單獨一行）。「｜」後的每一項逐項對照該子頁已上線的 reader-preview.md：rebun-island-sights 有「禮文島香深港旁的薄雪之湯」「禮文島南部的奇岩與觀景點」（地藏岩、桃台貓台）「禮文島北部的岬」（澄海岬、須古頓岬、郭洛塔岬、金田之岬）。sourceUrl 與 sourceQuote 借用本頁 C27 的官方來源，只是該主題的代表來源，連結行本身不靠官方原文。"
     },
     {
       "claimId": "C28",
-      "articleExcerpt": "7條步道各要走多久、哪一段封閉，在禮文島健行。",
+      "articleExcerpt": "看更多：[禮文島健行](/places/rebun-island/hiking/)｜各條步道的所需時間與開放狀況",
       "sourceUrl": "https://rebun-trail.jp/",
       "sourceTitle": "礼文島トレイル",
       "sourceQuote": "桃岩展望台、礼文林道、岬めぐり、礼文岳、礼文滝、久種湖畔、８時間コース",
       "verdict": "verified",
-      "notes": "F34；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+      "notes": "連結行（2026-11-26 連結句改成單獨一行）。「｜」後的每一項逐項對照該子頁已上線的 reader-preview.md：rebun-island-hiking 有「禮文島7條步道的時間與起訖點巴士」與「禮文島步道的冬季封閉」（2026年秋季分階段封閉、春季逐條解除），各步道小節也寫禁止通行的路段。sourceUrl 與 sourceQuote 借用本頁 C28 的官方來源，只是該主題的代表來源，連結行本身不靠官方原文。"
     },
     {
       "claimId": "C29",
@@ -583,12 +583,12 @@
     },
     {
       "claimId": "C65",
-      "articleExcerpt": "冬天有些旅館休館，11月到4月前往的話，要先看禮文島住宿。",
+      "articleExcerpt": "冬天有些旅館休館。",
       "sourceUrl": "https://rebun.by-onko-chishin.com/10956/",
       "sourceTitle": "礼文観光ホテル 咲涼",
       "sourceQuote": "2026年10月30日（金）をもちまして、2026年度の営業を終了｜2027年5月20日から10月31日までとなります。冬季期間は休館｜公式サイト限定宿泊プランの販売を、2026年11月2日（月）より開始",
       "verdict": "verified",
-      "notes": "F602；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+      "notes": "F602（咲涼2027年度5/20～10/31營業、冬季休館）。2026-11-26 複查：原句「冬天有些旅館休館，11月到4月前往的話，要先看禮文島住宿」拿掉後半的指路，這半句單獨成立。「有些」是複數，F602 只支持咲涼一間；rebun-island-stay 已上線頁「咲涼、桃岩莊和星觀莊只在夏天前後營業，冬天都不開」支持複數，民宿海膽、民宿Hana心冬天營業，所以是「有些」不是「全部」。標 [F602] 可以，建議之後在 reference-review.md 補一列桃岩莊、星觀莊的營業期間（或標成住宿頁事實），讓「有些」有主頁自己的編號。拿掉的「11月到4月」只是指路句的條件，不是讀者需要的獨立事實，而且各館休館期間不一（咲涼5/20才開、星觀莊4月下旬開），留著反而不精確。"
     },
     {
       "claimId": "C66",
@@ -1066,10 +1066,64 @@
       "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
       "verdict": "verified",
       "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+    },
+    {
+      "claimId": "C119",
+      "articleExcerpt": "看更多：[禮文島美食](/places/rebun-island/food/)｜炸花魚與糠漬花魚的吃法、香深港周邊餐廳的位置與付款方式",
+      "sourceUrl": "https://www.rebun-island.jp/inbound/restaurant.html",
+      "sourceTitle": "礼文島観光協会",
+      "sourceQuote": "「40年以上の歴史を持つ「元祖ほっけのちゃんちゃん焼き」」「6～8月は「うに丼」や、うに、ボタンエビなどが入った「磯ラーメン」」「決済方法 現金」「電話：0163-86-2130」「徒歩5分」",
+      "verdict": "verified",
+      "notes": "連結行（2026-11-26 連結句改成單獨一行）。「｜」後的每一項逐項對照該子頁已上線的 reader-preview.md：rebun-island-food 有「炸花魚與糠漬花魚」小節與「禮文島香深港周邊的餐廳」一節，餐廳表有「位置」「付款」欄。sourceUrl 與 sourceQuote 借用本頁 C24 的官方來源，只是該主題的代表來源，連結行本身不靠官方原文。"
+    },
+    {
+      "claimId": "C120",
+      "articleExcerpt": "看更多：[禮文島交通](/places/rebun-island/transport/)｜路線巴士與觀光巴士怎麼搭、車資、沒車怎麼去景點",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "時刻表 稚内～礼文｜ハートランドフェリー",
+      "sourceQuote": "06:35～08:30、＜10:10～13:00＞",
+      "verdict": "verified",
+      "notes": "連結行（2026-11-26 連結句改成單獨一行）。「｜」後的每一項逐項對照該子頁已上線的 reader-preview.md：rebun-island-transport 有觀光巴士路線與預約、路線巴士三條路線、「禮文島巴士車資與一日券」「禮文島沒車怎麼去景點與步道起點？」。sourceUrl 與 sourceQuote 借用本頁 C43 的官方來源，只是該主題的代表來源，連結行本身不靠官方原文。"
+    },
+    {
+      "claimId": "C121",
+      "articleExcerpt": "看更多：[稚內到利尻島、禮文島渡輪](/places/wakkanai/ferry/)｜船班時刻、船票怎麼訂、船班有狀況時怎麼改票",
+      "sourceUrl": "https://rebun.by-onko-chishin.com/10956/",
+      "sourceTitle": "礼文観光ホテル 咲涼",
+      "sourceQuote": "2026年10月30日（金）をもちまして、2026年度の営業を終了｜2027年5月20日から10月31日までとなります。冬季期間は休館｜公式サイト限定宿泊プランの販売を、2026年11月2日（月）より開始",
+      "verdict": "verified",
+      "notes": "連結行（2026-11-26 連結句改成單獨一行）。「｜」後的每一項逐項對照該子頁已上線的 reader-preview.md：wakkanai-ferry 有各季時刻、「稚內到利尻島、禮文島的船票預約」（網站、電話、改日期改班次或取消）與「停航後訂好的票怎麼處理？」。sourceUrl 與 sourceQuote 借用本頁 C63 的官方來源，只是該主題的代表來源，連結行本身不靠官方原文。"
+    },
+    {
+      "claimId": "C122",
+      "articleExcerpt": "看更多：[禮文島住宿](/places/rebun-island/stay/)｜各家旅館的位置、營業期間與冬天能住的地方",
+      "sourceUrl": "https://rebun.by-onko-chishin.com/10956/",
+      "sourceTitle": "礼文観光ホテル 咲涼",
+      "sourceQuote": "2026年10月30日（金）をもちまして、2026年度の営業を終了｜2027年5月20日から10月31日までとなります。冬季期間は休館｜公式サイト限定宿泊プランの販売を、2026年11月2日（月）より開始",
+      "verdict": "verified",
+      "notes": "連結行（2026-11-26 連結句改成單獨一行）。「｜」後的每一項逐項對照該子頁已上線的 reader-preview.md：rebun-island-stay 比較表有位置與營業期間欄，另有「禮文島冬天住哪裡？」一節（民宿海膽、民宿Hana心冬天也營業）。sourceUrl 與 sourceQuote 借用本頁 C65 的官方來源，只是該主題的代表來源，連結行本身不靠官方原文。"
+    },
+    {
+      "claimId": "C123",
+      "articleExcerpt": "看更多：[利尻島旅遊](/places/rishiri-island/)｜利尻島這一側怎麼排",
+      "sourceUrl": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1397.htm",
+      "sourceTitle": "利尻富士町",
+      "sourceQuote": "標高差 1,490ｍ 登り６時間・下り４時間 ／ 山頂で１時間の休憩を考えると、天候のいい日でも１１時間必要です。",
+      "verdict": "verified",
+      "notes": "連結行（2026-11-26 連結句改成單獨一行）。「｜」後的每一項逐項對照該子頁已上線的 reader-preview.md：rishiri-island 新稿有「利尻島自由行要排幾天，怎麼排？」與「利尻島和禮文島怎麼一起排？」。sourceUrl 與 sourceQuote 借用本頁 C66 的官方來源，只是該主題的代表來源，連結行本身不靠官方原文。"
+    },
+    {
+      "claimId": "C124",
+      "articleExcerpt": "看更多：[稚內旅遊](/places/wakkanai/)｜前一晚住稚內、搭早班船上島的走法",
+      "sourceUrl": "https://heartlandferry.jp/timetable/time1/",
+      "sourceTitle": "時刻表 稚内～礼文｜ハートランドフェリー",
+      "sourceQuote": "6/1–9/30「06:30～08:25」「10:30～12:25」「14:50～16:45」",
+      "verdict": "verified",
+      "notes": "連結行（2026-11-26 連結句改成單獨一行）。「｜」後的每一項逐項對照該子頁已上線的 reader-preview.md：wakkanai 的排法表有「接利尻島、禮文島｜前一晚住稚內，隔天搭早班船上島」，「稚內一日遊與過夜怎麼選？」寫夏天隔天可搭6:30的渡輪去禮文島。sourceUrl 與 sourceQuote 借用本頁 C48 的官方來源，只是該主題的代表來源，連結行本身不靠官方原文。"
     }
   ],
   "summary": {
-    "verified": 118,
+    "verified": 124,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
