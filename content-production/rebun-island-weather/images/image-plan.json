@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island-weather",
+  "articleTitle": "禮文島天氣攻略，8月只像台北3月，四季穿法、雲海與渡輪停航一次看",
+  "targetUrl": "/places/rebun-island/weather/",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-11-26",
+  "status": "selected",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "這次只選封面（協調者要求先讓文章上線）；文內照片與嵌入之後另外處理。原圖用 curl 下載到 .tmp/image-selection/rebun-island-weather/，不加入 Git。",
+  "selectedCandidateIds": {"cover": "cover-01"},
+  "selectedAt": "2026-11-26",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出這篇講禮文島的天氣：桃岩一帶的山、海與天空的雲。",
+      "mustShow": ["禮文島的山或丘陵", "天空的雲或海上的天色"],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "旅館、店家招牌或商標當主體",
+        "利尻島或其他島嶼冒充禮文島",
+        "AI 生成或合成畫面",
+        "與禮文島主頁相同的封面（Gorota1.JPG）"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_57_l.jpg",
+        "focalPoint": {"x": 0.5, "y": 0.5},
+        "output": {"width": 1600, "height": 900, "format": "webp", "quality": 82}
+      },
+      "selectionNotes": "cover-01 是禮文町官方素材「桃岩3」（kanko_57，3008×2000）：逆光的桃岩山體佔畫面右半，太陽剛好落在山稜左肩，天空滿是被染成金黃色的雲，左邊是海與遠方水平線上的雲層，前景有草與紫色的小花。畫面有山、海、雲與天色，和天氣頁對題，又不是主頁用的郭洛塔岬那張。素材沒有拍攝日期，看不出是日出還是日落，所以圖說不寫時間。cover-02 是同一個素材庫的「山並み1」（kanko_52，2005 年 9 月），藍天下的綠色丘陵與針葉林，畫面清楚，但素材只寫「山並み」，看不出是島上哪裡，天氣感也弱，當備選。兩張都在禮文町素材庫，條款今天重開確認過。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-26",
+        "photoSearchNotes": "先查官方素材：禮文町官網「礼文町の観光地の写真」（允許私用、商用與加工，不用聯絡），62 張裡寬 1600 px 以上的只有少數，看過 香深港、山並み1、山並み2、朝日1、桃岩3、桃岩、紅葉1・2、林道1・2、礼文岳；山並み2 有明顯的鏡頭耀光彩虹，朝日1 只有 1280 px，其他多為 800 px。禮文島觀光協會網站（rebun-island.jp）今天回 503，不用。維基共享資源今天 API 與網頁都回 HTTP 429（連續約 10 分鐘），沒有查到雲霧照；Unsplash、Pexels、Pixabay 被 Cloudflare 擋住讀不到。官方素材已有合格實拍，所以先用。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "official-material",
+          "provider": "礼文町（礼文町の観光地の写真）",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_57_l.jpg",
+          "sourceTitle": "礼文町の観光地の写真「桃岩3」",
+          "sourceDescription": "禮文町官網「礼文町の観光地の写真」素材頁的「桃岩3」（kanko_57）。素材頁列的都是禮文町的觀光地，每張照片的連結就是這個原圖檔。檔案沒有 EXIF 拍攝日期。",
+          "width": 3008,
+          "height": 2000,
+          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
+          "termsCheckedAt": "2026-11-26",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "素材頁寫「ダウンロードした写真素材は、私用・商用を問わずご自由に使用することが出来ます。また、写真素材を自由に加工していただいて構いません。※写真の利用について、礼文町への連絡は不要です。」（2026-11-26 重開確認）沒有要求署名；本站仍標示「照片：禮文町」。照片旁沒有写真提供或撮影的第三者標示。",
+          "applicationRequired": false,
+          "matchType": "exact",
+          "whyItFits": "禮文町官方素材，標題寫桃岩；畫面是逆光的桃岩、海與滿天的雲，認得出是禮文島的山與海，也帶出天色與雲的天氣感。",
+          "matchLimits": "沒有拍攝日期，分不出是日出或日落，也不是霧或雲海；圖說不寫時間、不說是雲海。",
+          "altDraft": "逆光下的桃岩剪影，太陽落在山稜左側，天空是金黃色的雲，左邊是海",
+          "captionDraft": "逆光下的桃岩與海上的雲。",
+          "creditDraft": "照片：禮文町",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、建築或招牌。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "official-material",
+          "provider": "礼文町（礼文町の観光地の写真）",
+          "assetType": "photo",
+          "sourcePageUrl": "https://www.town.rebun.hokkaido.jp/hotnews/files/00000300/00000328/kanko_52_l.jpg",
+          "sourceTitle": "礼文町の観光地の写真「山並み1」",
+          "sourceDescription": "禮文町官網「礼文町の観光地の写真」素材頁的「山並み1」（kanko_52）。EXIF 拍攝日期 2005-09-11。",
+          "takenAt": "2005-09",
+          "width": 3008,
+          "height": 2000,
+          "termsUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000328.html",
+          "termsCheckedAt": "2026-11-26",
+          "commercialUseAllowed": true,
+          "modificationAllowed": true,
+          "creditRequirement": "同 cover-01：允許私用、商用與加工，不用聯絡；本站標示「照片：禮文町」。",
+          "applicationRequired": false,
+          "matchType": "contextual",
+          "whyItFits": "禮文町官方素材，藍天下禮文島的綠色丘陵與針葉林。",
+          "matchLimits": "素材只寫「山並み」，看不出是島上哪一段山；畫面沒有雲，天氣感弱。",
+          "altDraft": "藍天下的綠色丘陵，山腳是深綠色的針葉林",
+          "captionDraft": "禮文島的丘陵（2005 年 9 月）。",
+          "creditDraft": "照片：禮文町",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "自然景觀",
+            "risk": "low",
+            "notes": "沒有人物、建築或招牌；右下角有一小段鋼索。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}

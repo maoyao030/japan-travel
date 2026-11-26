@@ -1,7 +1,7 @@
 # 驗收紀錄：rishiri-island（2026-11-24，地點主頁改版）
 
 - 文章：`content-production/rishiri-island/reader-preview.md`（利尻島旅遊攻略，景點、美食與一日遊排法一次看）
-- SHA-256（換行統一成 LF 後計算）：`b68d65aff2d42237f876150ec59152b1fb298d2b68e1327e7ed4e06875b70d3d`
+- SHA-256（換行統一成 LF 後計算）：`e2e78f87722b73ba37ebf695cf8bd3a9ae7a63c294c4b47a0b23a1ffcfaeefb7`（2026-11-26 連結句改成單獨一行之後；改之前上線的版本是 `b68d65aff2d42237f876150ec59152b1fb298d2b68e1327e7ed4e06875b70d3d`）
 - 規則：寫作 Skill `references/place-entry-page.md`（Darren 2026-11-21 同意）、`sentence-rhythm.md`、`heading-style.md`。研究與樣本在 `content-experiments/place-entry-study-2026-11-19/`。舊版封包在 `pre-place-entry/`。
 - 寫作：一位作者（Sonnet 5.5），事實只用本地點主頁與七個子頁、禮文島與稚內主頁已查證的事實表；Darren 看過樣本四輪（第一節寫畫面、小標題「名字｜賣點」、專有名詞用台灣多數叫法）。
 - 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作），樣本階段 3 輪、正式稿 3 輪：正式稿第 1 輪 69 筆裡 2 筆 unsupported，第 2 輪 1 筆，第 3 輪全部 verified；上線後換大標題與序言再查 2 輪，最後 69 筆全部 verified。查核對的是事實表的原文摘錄與已上線子頁，沒有重新開官方網址；F220（姬沼倒影）是協調者 2026-11-20 用瀏覽器開北海道官方觀光網站讀到的。
@@ -44,3 +44,10 @@
 - 線上利尻島各頁有 4 處彼此對不上（祭典密集期、鬼脇煙火、冬天能住的旅館數、北麓野營場日期），列在 `content-experiments/place-entry-study-2026-11-19/sample-rishiri-island/compare.md`，這次沒有動。
 - 〈利尻島景點〉〈利尻島住宿〉線上還寫 Peshi岬。
 - 〈利尻島交通〉的 `draft-tagged.md` 和線上版不一致（先前優化只改了 `reader-preview.md`），這次只在 `reader-preview.md` 與線上補兩段。
+
+## 連結句改成單獨一行（2026-11-26）
+
+- Darren 看過層雲峽主頁的連結行後說「利尻島跟禮文島也改」。規則在寫作 Skill `references/place-entry-page.md`「連到子頁的連結怎麼放」。
+- 一位作者子代理（Sonnet 5.5）把接在段落最後的連結句改成另起一行的「看更多：頁名｜那一頁有什麼」，共 11 行；原句裡帶的事實留在段落裡，只拿掉指路的半句，其他字沒動。`link-sentences.json` 重寫成每行一筆。
+- 事實查核：一位事實查核子代理（Opus 5.5，沒參與寫作）用 diff 確認只改了連結句與連結行，逐行對過每一行寫的內容在那一頁的稿都有；`validate-fact-check.mjs` 通過，79 項 claim 全部 verified。標題沒變。這一輪沒有再送吸引力審查與讀者驗收：改的只有連結怎麼放，格式是 Darren 親自看過同意的。
+- 結果照舊：格式 `mechanical_clear`、標題 `acceptable`、讀者價值 `acceptable`、事實與條件 `verified`，最終結果 `ready_for_user_preview`。

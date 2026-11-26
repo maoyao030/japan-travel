@@ -2,7 +2,7 @@
 
 適用：地點的天氣頁（`aspect-page`、主題 `weather`，網址 `/places/<地點>/weather/`）。
 
-樣本是〈禮文島天氣〉。Darren 先看結構提案說「可以，開始做樣本」，再一節一節看過樣本，整篇看完說「可以，寫成規則並準備上線」。研究過程在 `content-experiments/weather-page-study-2026-11-24/`：`01-current-pages.md`（線上五篇哪裡不行）、`02-other-sites.md`（別站七篇）、`03-proposal.md`（結構提案）、`sample-rebun-island/`（兩版樣本與每一輪的查核、驗收、審查）。頁型範本登記在 `page-models/index.json`（要 Darren 親口說可以當範本才登記）。
+樣本是〈禮文島天氣〉。Darren 先看結構提案說「可以，開始做樣本」，再一節一節看過樣本，整篇看完說「可以，寫成規則並準備上線」。研究過程在 `content-experiments/weather-page-study-2026-11-24/`：`01-current-pages.md`（線上五篇哪裡不行）、`02-other-sites.md`（別站七篇）、`03-proposal.md`（結構提案）、`sample-rebun-island/`（兩版樣本與每一輪的查核、驗收、審查）。已上線（2026-11-26），Darren 上線前說「把這個也列成範本」，登記在 `page-models/weather/rebun-island-weather.md`（`page-models/index.json`）。
 
 方向是 Darren 從三篇別站文章裡挑的：「**1 的表格加 3 的寫法，三個問題照預設 各取優點**」。表格學樂吃購輕井澤（和台北對照、一張總表）；寫法學 MATCHA 上高地（季節決定能不能去、交通會不會停，穿著先講原則再分季）。別站只學組織方式，不拿事實、不抄句子。
 
