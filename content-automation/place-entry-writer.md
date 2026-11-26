@@ -94,7 +94,7 @@
 ### 6. 組封包（協調者，標題檢查派一位 Opus 5.5）
 
 - **標題檢查**：派一位沒寫過這篇的子代理，讀 `spec.md`（當成這頁的大綱）、`reader-preview.md`、`publication.json` 的 seoTitle 與 `.agents/skills/japan-travel-answer-first/references/heading-style.md`，寫 `<資料夾>/heading-review.json`（格式照 `local-writer.md` 第 3 步第 1 點）。只改文字，不增刪、不改層級；地點主頁的六節與「名字｜賣點」小標題是 heading-style 允許的格式。作者照 `after` 改 `draft-tagged.md`，再跑 `python .agents/skills/japan-travel-answer-first/scripts/heading_review.py <資料夾>` 到 `headings_applied`。
-- **內連句**：正文用的連結句和大綱 `links` 原句一樣的，上線時 `link-at-publish.mjs` 會自動接上。換成新句子的，寫進 `<資料夾>/link-sentences.json`（`to`、`old`、`new`、`anchor`，格式照 `content-production/rishiri-island/link-sentences.json`），並在 `unattended-summary.md` 記「大綱連結句待同步」；大綱同步前，新句子不會自動接上連結，由人工 session 同步後補內連。
+- **內連句**：連到子頁的連結照 `place-entry-page.md`「連到子頁的連結怎麼放」寫成單獨一行（`看更多：[頁名](/路徑/)｜那一頁有什麼`，Darren 2026-11-26），不照大綱連結句的原句接在段落最後。正文用的連結句和大綱 `links` 原句一樣的，上線時 `link-at-publish.mjs` 會自動接上。換成新句子的，寫進 `<資料夾>/link-sentences.json`（`to`、`old`、`new`、`anchor`，格式照 `content-production/rishiri-island/link-sentences.json`），並在 `unattended-summary.md` 記「大綱連結句待同步」；大綱同步前，新句子不會自動接上連結，由人工 session 同步後補內連。
 - 改過任何字都重跑第 3 步，請查核者對新雜湊複查。
 
 ### 7. 程式檢查（協調者）
