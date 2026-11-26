@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island-weather",
-  "articleSha256": "448697dbda0be2a68c7f3744d2c71c29f54df7cd1f3c38826f7afc9bab494758",
+  "articleSha256": "7705b13784551018d470e4f64d46e84c588cb0aa4d25e424ecfd9464f8c7de1c",
   "checker": "事實查核 agent（Claude Opus 5.5 子代理，非作者；curl 與 Playwright 實際開來源）",
   "checkedAt": "2026-11-26",
   "claims": [
@@ -214,12 +214,12 @@
     },
     {
       "claimId": "C24",
-      "articleExcerpt": "4月到5月｜穿得跟台北寒流時一樣厚，外層要擋風",
+      "articleExcerpt": "4月到5月｜4月要比台北寒流時穿得更厚，5月跟寒流時一樣厚，外層要擋風",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
       "sourceTitle": "礼文（宗谷地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
       "sourceQuote": "日最高「4月 … 6.6」「5月 … 11.6」；日最低「4月 … 1.8」「5月 … 6.0」；寒流＝臺北最低溫10℃或以下",
-      "verdict": "unsupported",
-      "notes": "說輕了：4月連白天（6.6℃）都低於台北寒流時的最低溫門檻，早晚1.8℃，比台北寒流時更冷；5月（11.6／6.0℃）才大約是「一樣厚」。最小改法：「4月要比台北寒流時穿得更厚，5月跟寒流時一樣厚，外層要擋風」。"
+      "verdict": "verified",
+      "notes": "已照上次改法改寫：4月白天也低於寒流門檻，5月約在門檻上下。"
     },
     {
       "claimId": "C25",
@@ -592,9 +592,9 @@
     }
   ],
   "summary": {
-    "verified": 60,
+    "verified": 61,
     "incorrect": 0,
-    "unsupported": 1,
+    "unsupported": 0,
     "outdated": 0,
     "unreachable": 4,
     "not-stated": 0
