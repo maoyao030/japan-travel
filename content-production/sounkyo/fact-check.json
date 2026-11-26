@@ -1,1032 +1,1150 @@
 {
   "schemaVersion": 1,
   "articleId": "sounkyo",
-  "articleSha256": "4e000009372dffcd98d611fee47e56bfe24973b8b1af47de6d1e91c8e8581e62",
-  "checker": "事實查核 agent（Claude Opus 5.5 子代理，唯讀，非作者、非潤稿者、非修改者；2026-11-02 重寫稿第 1 輪；同日第 2 輪依 revisions-round1.md 逐句重比，改過與新增句重開來源（Sunrise 號 PDF 票價表、上川町接駁巴士存檔、黒岳の湯、纜車首頁），刪掉的 12:20 與 2026 年 10/1～15 兩筆移除：從 reader-preview.md 逐句抽事實，所有來源以 curl 重新取得並去掉 HTML 註解後比對；PDF 下載到自己的暫存子資料夾用 PyMuPDF 讀；道北巴士官網 PDF 連線失敗（curl 000），改看觀光協會轉貼的同一張 2026.7.1 改正時刻表圖；黑岳纜車 2026 年 10/1～15 時段與 12:20 停開公告的期間、上川町銀泉台包車公告用 web.archive.org id_ 存檔（純 curl）；沒有使用瀏覽器，沒有遇到機器人檢查）",
-  "checkedAt": "2026-11-02",
+  "articleSha256": "20204693c70cea753d990fde2048a0c4401b78d57987f32158fe36957cb0c77f",
+  "checker": "事實查核 agent（Opus 5.5，未參與寫作；地點主頁規則：逐句對來源稿與事實表原文摘錄，必要處重開原始網址）",
+  "checkedAt": "2026-11-26",
+  "notes": "來源稿彼此對不上的地方（正文照經營者官方或店家官網的一邊）：(1) 黑岳到旭岳縱走：經營者「七合目→姿見站約7小時」（F51）vs 協議會傳單「黒岳⇔旭岳 8～9小時」（F610），範圍可能不同；正文兩個都留。(2) 雙瀑台步行：觀光協會約20分（F618）vs 遊客中心路線圖約25分（F622）；新版正文沒寫時間。(3) 紅葉谷：觀光協會從入口單程約30分、停車5台（F620）vs 遊客中心單程約700公尺、往返約1小時（F604）、停車約15台；新版正文沒寫。(4) Canyon 營業時間與公休：觀光協會（F146）vs 店家官網（F452）；Taisetsu Bakery 晚上時段：觀光協會 vs 兩個官網（F450）；BLACK MOUNTAIN COFFEE 觀光協會兩頁不一致（F417）。正文照官網。(5) 黑岳纜車定員：觀光協會 85人（舊車廂）vs 經營者 101人（F41）；正文沒寫。(6) 上川～層雲峽距離：遊客中心 22km vs 觀光協會 25km（F19 條件欄）；正文沒寫。(7) 纜車夏季開始日：2026 年因換車廂 6/27（F403），下一季 6/21（F476）；月份表寫「6月下旬」兩者都涵蓋。(8) 降水最多的月份：上川 7、8 月（F603）；層雲峽觀測點 8 月最多、7 月與 10 月幾乎相同（sounkyo-weather F264）。(9) 往大雪湖季節巴士：sounkyo-sights 正文寫它服務大函、瀑布要叫計程車；新版主頁把它放在瀑布段落（見 C21）。 F600～F623 對照：F600～F622 的主張、原文摘錄、網址、查閱日、條件、變動類型、下次查核七欄與註明的子頁研究記錄逐字一致（程式比對）；F623 依註明來自 sounkyo-stay fact-check C45 的 sourceQuote，一字不差，查核者另重開官網確認。 第 7 節：逐格對舊版一致，表格兩張一字不差；舊版最後一段的「2024年春天開幕、生乳全是上川町產、WCCC 2026 金牌」移到第 2 節，沒有少事實。",
   "claims": [
     {
-      "claimId": "C1",
-      "articleExcerpt": "層雲峽是值得專程前往的峽谷，沿著石狩川延伸約24公里",
+      "articleExcerpt": "黑岳山頂一帶9月上旬就開始變色，被稱為日本最早的紅葉",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/about/",
+      "sourceTitle": "黒岳について｜黒岳ロープウェイ",
+      "sourceQuote": "特に秋シーズンは人気が高く、日本一早い紅葉と呼ばれ山頂付近は9月上旬頃から紅葉し始めます。",
+      "verdict": "incorrect",
+      "notes": "條件掉了：經營者原文是「9月上旬頃から」，事實表適用條件欄寫「「〜頃」寫成大約」，舊版主頁與 sounkyo-weather 都寫「大約9月上旬／9月上旬左右」。「被稱為日本最早的紅葉」本身成立。最小改法：「層雲峽的秋天主角是紅葉，黑岳山頂一帶大約9月上旬就開始變色，被稱為日本最早的紅葉，之後一路往下染到溫泉街。」",
+      "claimId": "C1"
+    },
+    {
+      "articleExcerpt": "之後一路往下染到溫泉街",
+      "sourceUrl": "https://sounkyovc.net/blog/92540",
+      "sourceTitle": "層雲峡ビジターセンター 山だより 2026-10-01",
+      "sourceQuote": "八月の下旬に大雪山の稜線を出発した紅葉前線が、十月に入り、層雲峡の温泉街まで下ってきました。この後二・三日で色づきのピークを迎え「スポーツの日」の三連休ころまで見頃期が続くと予想されます。",
+      "verdict": "verified",
+      "notes": "遊客中心 2026-10-01：紅葉前線從大雪山稜線一路下到溫泉街；F415 的溫泉街觀賞期也支持順序。",
+      "claimId": "C2"
+    },
+    {
+      "articleExcerpt": "冬天換成冰瀑祭，石狩川河岸的冰雕入夜打上七彩燈光，煙火還從冰雕後方往天上打",
+      "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
+      "sourceTitle": "第51回 氷瀑まつり 1/24開幕！（さんたつ プレスリリース）",
+      "sourceQuote": "2026年1月24日（土）～3月8日（日）の44日間、石狩川河川敷の特設会場｜高さ10mを超える氷の建造物や「氷瀑神社」など、大小約30基の氷像｜夜には七色のライトアップ｜毎晩20時30分より、氷像の裏手から花火が打ち上げられ",
+      "verdict": "incorrect",
+      "notes": "年份掉了：「石狩川河岸」「七彩燈光」「煙火從冰雕後方打上去」都只出自 2026 年第 51 回的主辦新聞稿（F406、F75），2027 年第 52 回官網只公布日期（F71）。第 2 節同一件事已標「2026年」，序言沒標。最小改法：「冬天換成冰瀑祭，石狩川河岸的冰雕入夜打上七彩燈光，2026年煙火還從冰雕後方往天上打。」或刪掉「煙火還從冰雕後方往天上打」改成「，入夜還有煙火」並保留第 2 節的 2026 年標示（後者仍是 2026 年的事實，較不建議）。",
+      "claimId": "C3"
+    },
+    {
+      "articleExcerpt": "從旭川搭巴士去層雲峽，單程1小時59分",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡（道北バス販売サイト）",
+      "sourceQuote": "所要時間：1時間59分（旭川-層雲峡）｜所要時間：30分（上川-層雲峡）",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C4"
+    },
+    {
+      "articleExcerpt": "當天來回搭得到纜車，不過直達末班車17:00就開走了",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "旭川駅前 発 18:25｜層雲峡 発 17:00 → 旭川駅前 着 18:55",
+      "verdict": "verified",
+      "notes": "去程最晚 11:54 或 12:54 到（F1），纜車冬期 8:00～16:00、上行末班 15:20（F44）；回程直達末班 17:00（F3）。11/9～11/30 整備停駛期間不成立，正文是一般說法，可接受。",
+      "claimId": "C5"
+    },
+    {
+      "articleExcerpt": "想看煙火或趕一早的纜車，就要在溫泉街住一晚",
+      "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
+      "sourceTitle": "第51回 氷瀑まつり 1/24開幕！（さんたつ プレスリリース）",
+      "sourceQuote": "花火打ち上げ（毎晩20:30～）",
+      "verdict": "verified",
+      "notes": "2026 年煙火 20:30（F75），回旭川直達末班 17:00、往上川末班 18:55（F15、F4）；纜車夏季 6:00 開（F476），旭川頭班 8:54 才到（F1）。第 4 節補了「或是自己開車」，序言省略可接受。",
+      "claimId": "C6"
+    },
+    {
+      "articleExcerpt": "層雲峽是沿著石狩川延伸大約24公里的斷崖峽谷",
       "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
       "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
       "sourceQuote": "石狩川沿いに延々２４kmにわたって続く断崖絶壁。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "",
+      "claimId": "C7"
     },
     {
-      "claimId": "C2",
-      "articleExcerpt": "柱狀節理的岩壁一路並排",
-      "sourceUrl": "https://sounkyo.net/view/detail.html?content=10",
-      "sourceTitle": "【層雲峡】大函｜層雲峡観光協会",
-      "sourceQuote": "柱状節理の巨大な岩壁が屏風のように規格正しく並ぶ",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C3",
-      "articleExcerpt": "不必爬山就看得到兩座選進日本瀑布百選的瀑布",
+      "articleExcerpt": "兩岸是一根根並列的柱狀節理岩壁",
       "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
       "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
-      "sourceQuote": "日本の滝百選にも入っている名瀑を、駐車場から間近に見る迫力ある姿",
+      "sourceQuote": "石狩川沿いに延々２４kmにわたって続く断崖絶壁。",
       "verdict": "verified",
-      "notes": "停車場旁就能看，不必爬山。"
+      "notes": "F93 主張欄；舊版查核以大函頁（sounkyo.net/view/detail.html?content=10）「柱状節理」為依據，一致。",
+      "claimId": "C8"
     },
     {
-      "claimId": "C4",
-      "articleExcerpt": "搭7分鐘纜車就上到標高1,300公尺的山腰",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "標高670ｍの山麓・層雲峡駅から標高1,300ｍの５合目・黒岳駅までを毎秒5ｍ、約7分間で結ぶ",
+      "articleExcerpt": "愛努人把這一帶的大雪山叫作Kamuimintara（カムイミンタラ），意思是眾神遊玩的庭院",
+      "sourceUrl": "https://sounkyo.net/",
+      "sourceTitle": "本站〈層雲峽冰瀑祭〉查核紀錄",
+      "sourceQuote": "そのアイヌ民族が「カムインミンタラ」、神々の遊ぶ庭と称されているように",
       "verdict": "verified",
-      "notes": ""
+      "notes": "觀光協會寫「カムインミンタラ」，纜車官網寫「カムイミンタラ」，正文照譯名表 glossary.json。",
+      "claimId": "C9"
     },
     {
-      "claimId": "C5",
-      "articleExcerpt": "晚上還能住在大雪山系最大的溫泉街",
+      "articleExcerpt": "谷底就是大雪山系最大的溫泉街",
       "sourceUrl": "https://sounkyo.net/view/",
       "sourceTitle": "観る｜層雲峡観光協会",
       "sourceQuote": "層雲峡には、大雪山系最大の温泉街があり",
       "verdict": "verified",
-      "notes": ""
+      "notes": "",
+      "claimId": "C10"
     },
     {
-      "claimId": "C6",
-      "articleExcerpt": "從旭川站前搭道北巴士到層雲峽單程1小時59分",
-      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
-      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡（道北バス販売サイト）",
-      "sourceQuote": "所要時間：1時間59分",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C7",
-      "articleExcerpt": "直達車一天7班",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "旭川駅前 発 6:55 9:55 10:55 13:25 14:25 16:35 18:25（旭川→層雲峡）",
-      "verdict": "verified",
-      "notes": "道北バス官網 PDF 2026-11-02 curl 連線失敗（000），改讀觀光協會轉貼的同一張 2026.7.1 改正時刻表圖。"
-    },
-    {
-      "claimId": "C8",
-      "articleExcerpt": "回旭川的末班車17:00從層雲峽開出",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "層雲峡 発 17:00（旭川駅前 着 18:55）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C9",
-      "articleExcerpt": "只看瀑布、搭纜車上到山腰的話，從旭川當天來回就夠",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "旭川駅前 発 9:55 → 層雲峡 着 11:54｜層雲峡 発 17:00 → 旭川駅前 着 18:55",
-      "verdict": "verified",
-      "notes": "重算：約5小時，纜車單程7分＋五合目散步30分＋瀑布，成立。"
-    },
-    {
-      "claimId": "C10",
-      "articleExcerpt": "要看冰瀑祭的煙火或搭紅葉季清晨的纜車，巴士時間都接不上，建議在層雲峽溫泉住一晚",
-      "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
-      "sourceTitle": "第51回 氷瀑まつり 1/24開幕！（さんたつ プレスリリース）",
-      "sourceQuote": "期間中は毎晩20:30より花火打ち上げ",
-      "verdict": "verified",
-      "notes": "重算：回旭川末班17:00、回上川末班18:55（時刻表），煙火20:30；纜車夏期6:00開、頭班巴士08:54到。"
-    },
-    {
-      "claimId": "C11",
-      "articleExcerpt": "峽谷兩岸是一根根直立的岩柱，排成高聳的斷崖，谷底就是層雲峽溫泉",
-      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
-      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
-      "sourceQuote": "石狩川沿いに延々２４kmにわたって続く断崖絶壁",
-      "verdict": "verified",
-      "notes": "柱狀節理見大函頁「柱状節理の巨大な岩壁」。"
-    },
-    {
-      "claimId": "C12",
-      "articleExcerpt": "愛努人把這片山系叫作Kamuimintara（カムイミンタラ），意思是眾神遊玩的庭院",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "アイヌの人々に「神々の遊ぶ庭」という意味の「カムイミンタラ」と呼ばれる大雪山",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C13",
-      "articleExcerpt": "溫泉街附近的銀河瀑布落差120公尺，細細白白的像一束絲線",
-      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/soubakudai.pdf",
-      "sourceTitle": "コース：双瀑台（層雲峡ビジターセンター）",
-      "sourceQuote": "銀河ノ滝 １２０ｍ",
-      "verdict": "verified",
-      "notes": "「繊細な白糸のように優美な姿で流れ落ちる「銀河の滝」」見觀光協會 content=7。"
-    },
-    {
-      "claimId": "C14",
-      "articleExcerpt": "旁邊的流星瀑布落差90公尺，水流粗壯，兩座一細一粗，又被叫作女瀑與男瀑",
-      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
-      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
-      "sourceQuote": "太い１本の滝となって力強く流れ落ちる「流星の滝」｜別名女滝・男滝とも呼ばれる",
-      "verdict": "verified",
-      "notes": "落差見遊客中心 PDF「流星ノ滝 ９０ｍ」。"
-    },
-    {
-      "claimId": "C15",
-      "articleExcerpt": "從溫泉街往北見方向約6公里是大函，巨大的岩壁像屏風一樣排開",
-      "sourceUrl": "https://sounkyo.net/view/detail.html?content=10",
-      "sourceTitle": "【層雲峡】大函｜層雲峡観光協会",
-      "sourceQuote": "層雲峡温泉より北見方面へ約６Km｜柱状節理の巨大な岩壁が屏風のように規格正しく並ぶ",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C16",
-      "articleExcerpt": "上山搭日本最北的黑岳纜車，從標高670公尺的山麓站坐7分鐘就到1,300公尺的五合目",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "標高670ｍの山麓・層雲峡駅から標高1,300ｍの５合目・黒岳駅までを…約7分間で結ぶ、日本最北のロープウェイです。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C17",
-      "articleExcerpt": "五合目有展望台與一圈約30分鐘的散步道",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/sightseeing/",
-      "sourceTitle": "見どころ｜黒岳ロープウェイ",
-      "sourceQuote": "一周約30分の簡単コース｜黒岳をど真ん中に、表大雪を目の前に感じられる展望台。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C18",
-      "articleExcerpt": "從五合目轉吊椅可以再上到1,520公尺的七合目",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "標高1,320mの黒岳5合目リフト乗り場から標高1,520mの黒岳7合目までを結ぶ",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C19",
-      "articleExcerpt": "再往上爬到黑岳山頂大約1個半小時",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
-      "sourceTitle": "登山・レジャー｜黒岳ロープウェイ",
-      "sourceQuote": "黒岳7合目登山口～黒岳山頂 上り：約1時間半",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C20",
-      "articleExcerpt": "17:00從層雲峽開出、18:55回到旭川站前",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "層雲峡 発 17:00 … 旭川駅前 着 18:55",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C21",
-      "articleExcerpt": "直達車最早06:55從旭川站前發車，08:54到層雲峽",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "旭川駅前 発 6:55 … 層雲峡 着 8:54",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C22",
-      "articleExcerpt": "搭09:55那班是11:54下車，離17:00的末班車大約還有5小時",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "旭川駅前 発 9:55 … 層雲峡 着 11:54",
-      "verdict": "verified",
-      "notes": "重算 11:54→17:00 約5小時。"
-    },
-    {
-      "claimId": "C23",
-      "articleExcerpt": "直達巴士單程2,140日圓，來回4,280日圓",
-      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
-      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡（道北バス販売サイト）",
-      "sourceQuote": "【片道券】 旭川駅前 ー 層雲峡（大人2,140円、子供1,070円）｜往復でご利用される場合は、別々に購入をお願いいたします。",
-      "verdict": "verified",
-      "notes": "來回＝單程×2；時刻表圖也寫「層雲峡～旭川 片道料金 ¥2,140」。"
-    },
-    {
-      "claimId": "C24",
-      "articleExcerpt": "也可以先搭JR石北本線到上川，再轉一天10班的巴士，約30分鐘到層雲峽",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "上川森のテラス バスタッチ 発 8:24 9:30 10:50 11:24 12:24 14:00 14:54 15:54 18:04 19:54（層雲峡 着 8:54…20:24）",
-      "verdict": "verified",
-      "notes": "10班；每班30分。"
-    },
-    {
-      "claimId": "C25",
-      "articleExcerpt": "夏秋天氣好的日子，連平日纜車山麓站一早就有人排隊買票，停車場過了中午就滿",
-      "sourceUrl": "https://sounkyovc.net/blog/89581",
-      "sourceTitle": "層雲峡ビジターセンター 山だより 2024-07-17",
-      "sourceQuote": "チケットを買い求める人の行列ができていました。駐車場も早朝はまだ余裕があったものの、昼過ぎに戻ってきた時には満車の状態。やはり、平日でもお天気が良いと混むようです。",
-      "verdict": "verified",
-      "notes": "秋天見遊客中心 blog/90338（官方，兩篇）。"
-    },
-    {
-      "claimId": "C26",
-      "articleExcerpt": "前一晚住在溫泉街，隔天一早走到纜車站就能上山",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
-      "sourceTitle": "アクセス・施設｜黒岳ロープウェイ",
-      "sourceQuote": "終点「層雲峡」下車、徒歩5分",
-      "verdict": "verified",
-      "notes": "纜車夏期6:00開（經營者首頁）。"
-    },
-    {
-      "claimId": "C27",
-      "articleExcerpt": "錯過17:00的末班也還有18:55開往上川的車，19:25到站",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "層雲峡 発 18:55 → 上川森のテラス バスタッチ 着 19:25",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C28",
-      "articleExcerpt": "轉JR，搭20:24的普通車或21:04的特急大雪回旭川",
-      "sourceUrl": "https://jrhokkaidonorikae.com/vtime/vtime.php?s=2921&d=20261210",
-      "sourceTitle": "JR北海道 駅時刻表 上川（石北本線 上り）",
-      "sourceQuote": "上川 発 2024（上川始発 普通、旭川 2122）｜3594D 大雪 上川 着2103／発2104 旭川 2144",
-      "verdict": "verified",
-      "notes": "時刻表表格「上川 発」列為 2024 與 2104，2104 那班列車名是大雪。"
-    },
-    {
-      "claimId": "C29",
-      "articleExcerpt": "秋天的紅葉從山頂往山下一路變色",
-      "sourceUrl": "https://sounkyovc.net/blog/92540",
-      "sourceTitle": "層雲峡ビジターセンター 山だより 2026-10-01",
-      "sourceQuote": "八月の下旬に大雪山の稜線を出発した紅葉前線が、十月に入り、層雲峡の温泉街まで下ってきました。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C30",
-      "articleExcerpt": "黑岳山頂一帶9月上旬左右就開始，有日本最早的紅葉之稱",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/about/",
-      "sourceTitle": "黒岳について｜黒岳ロープウェイ",
-      "sourceQuote": "日本一早い紅葉と呼ばれ山頂付近は9月上旬頃から紅葉し始めます。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C31",
-      "articleExcerpt": "山下溫泉街的紅葉谷往年10月上旬到中旬最漂亮",
+      "articleExcerpt": "秋天峽谷裡約七成是岳樺的黃葉，楓樹的紅混在裡面特別顯眼",
       "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/momiji_valley_guide.pdf",
-      "sourceTitle": "紅葉谷散策ガイド（層雲峡ビジターセンター）",
-      "sourceQuote": "見頃は例年１０月上旬～中旬頃。",
+      "sourceTitle": "紅葉谷散策ガイド｜層雲峡ビジターセンター",
+      "sourceQuote": "層雲峡温泉の紅葉の名所。｜峡谷の色合いは、７割ほどがダケカンバ類の黄葉で占められている事からカエデ類の深みのある紅葉は特に目立ち、見頃は例年１０月上旬～中旬頃。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "遊客中心「紅葉谷散策ガイド」；原文是紅葉谷的說明，舊版主頁同樣寫「峽谷約七成」並 verified。",
+      "claimId": "C11"
     },
     {
-      "claimId": "C32",
-      "articleExcerpt": "不過每年早晚會差一些，2026年就比往年早",
-      "sourceUrl": "https://sounkyovc.net/blog/92581",
-      "sourceTitle": "層雲峡ビジターセンター 山だより 2026-10-14",
-      "sourceQuote": "ことしは例年より木々の葉の色づきが早く、十月上旬に紅葉の色づきがピークを迎えた層雲峡でしたが",
+      "articleExcerpt": "葉子落光之後，10月下旬路面就有積雪的日子",
+      "sourceUrl": "https://sounkyovc.net/blog/92599",
+      "sourceTitle": "季節は冬へ | 層雲峡ビジターセンター",
+      "sourceQuote": "赤や黄色の木々の葉はすっかり落葉し｜例年十月下旬には路面が積雪状態になる日があります。宿泊や日帰り入浴で層雲峡を訪れるばあいは、必ず冬タイヤに履き替えて",
       "verdict": "verified",
-      "notes": ""
+      "notes": "原文「例年十月下旬には路面が積雪状態になる日があります」；正文沒寫「往年」，但「有積雪的日子」語氣不絕對，可接受。若要更貼原文可寫「往年10月下旬…」。",
+      "claimId": "C12"
     },
     {
-      "claimId": "C33",
-      "articleExcerpt": "黑岳纜車11月9日到30日停駛整備",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "11月9日～11月30日　整備運休｜※ロープウェイ運休情報　2026年11/9～11/30　※整備の為",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C34",
-      "articleExcerpt": "冰瀑祭也要等到1月才開始",
-      "sourceUrl": "https://sounkyo.net/hyoubaku/",
-      "sourceTitle": "層雲峡温泉 氷瀑まつり",
-      "sourceQuote": "次回開催：第52回氷瀑まつり 開催日程 2027.1.23(土)～3.7(日)",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C35",
-      "articleExcerpt": "冬天的主角是1月下旬到3月上旬的冰瀑祭，2027年第52回排在1月23日到3月7日",
-      "sourceUrl": "https://sounkyo.net/hyoubaku/",
-      "sourceTitle": "層雲峡温泉 氷瀑まつり",
-      "sourceQuote": "次回開催：第52回氷瀑まつり 開催日程 2027.1.23(土)～3.7(日)",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C36",
-      "articleExcerpt": "往年各月最深積雪的平均，1月是102公分、3月126公分，到4月也還有94公分",
+      "articleExcerpt": "到了4月積雪還有將近1公尺",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
       "sourceTitle": "平年値 層雲峡｜気象庁",
-      "sourceQuote": "最深積雪 (cm) 統計期間 1991～2020｜1月 102｜3月 126｜4月 94",
+      "sourceQuote": "最深積雪(cm)｜1月 102｜2月 121｜3月 126｜4月 94｜5月 9｜12月 84｜年 131",
       "verdict": "verified",
-      "notes": ""
+      "notes": "94 公分是 4 月「最深積雪」的平年值（層雲峽觀測點），不是平均積雪深度；寫「將近1公尺」可接受，月份表已寫明「最深積雪」。",
+      "claimId": "C13"
     },
     {
-      "claimId": "C37",
-      "articleExcerpt": "黑岳滑雪場這一季預定從12月1日開到隔年5月5日",
+      "articleExcerpt": "溫泉街在標高600公尺以上的高地",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10611.html",
+      "sourceTitle": "層雲峡温泉｜北海道観光機構",
+      "sourceQuote": "標高600mを超える高地にある温泉街は",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C14"
+    },
+    {
+      "articleExcerpt": "朝陽亭蓋在高台上，頂樓大浴場望出去就是大雪山",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=17",
+      "sourceTitle": "【層雲峡】層雲峡朝陽亭｜層雲峡観光協会",
+      "sourceQuote": "層雲峡温泉街の高台に位置しており、特に最上階大浴場より大雪山系の四季折々の景観｜湯めぐりシャトルバス｜部屋数・収容人数 252室",
+      "verdict": "verified",
+      "notes": "原文「大雪山系の四季折々の景観」。",
+      "claimId": "C15"
+    },
+    {
+      "articleExcerpt": "銀河瀑布跟流星瀑布分別從絕壁不動岩的左右兩側落下，爬上展望台雙瀑台，兩道瀑布就能同時入鏡",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "滝を背に２０分ほど斜面を登ると、「双瀑台」の展望台へ。…２本の滝が絶壁・不動岩の左右を流れ落ちる姿を同時に見ることができます。",
+      "verdict": "verified",
+      "notes": "雙瀑台要從停車場爬約 20 分（F618）、遊客中心路線圖寫約 25 分且一開始是陡階梯（F622）；正文用「爬上」帶過，步行細節在景點頁。",
+      "claimId": "C16"
+    },
+    {
+      "articleExcerpt": "銀河瀑布落差120公尺，細白得像絲線，別名女瀑；流星瀑布落差90公尺，是一道粗壯的水流，別名男瀑",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/soubakudai.pdf",
+      "sourceTitle": "大雪山山情報 コース：双瀑台｜層雲峡ビジターセンター",
+      "sourceQuote": "銀河ノ滝 １２０ｍ｜流星ノ滝 ９０ｍ",
+      "verdict": "verified",
+      "notes": "落差見 F412；細白絲線、粗壯、女瀑男瀑見 F96（sounkyo.net/view/detail.html?content=7「細く繊細な白糸…別名女滝・男滝」）。",
+      "claimId": "C17"
+    },
+    {
+      "articleExcerpt": "兩道都入選日本瀑布百選",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "日本の滝百選にも入っている名瀑です｜細く繊細な白糸のように優美な姿で流れ落ちる「銀河の滝」、太い１本の滝となって力強く流れ落ちる「流星の滝」｜別名女滝・男滝",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C18"
+    },
+    {
+      "articleExcerpt": "瀑布離溫泉街約3公里",
+      "sourceUrl": "https://sounkyovc.net/blog/90389",
+      "sourceTitle": "銀河・流星の滝 | 層雲峡ビジターセンター",
+      "sourceQuote": "温泉街から3㎞離れたところにある銀河・流星の滝。",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C19"
+    },
+    {
+      "articleExcerpt": "沒開車的話要叫計程車或跟導覽團",
+      "sourceUrl": "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo00000004ba.html",
+      "sourceTitle": "交通機関｜上川町",
+      "sourceQuote": "層雲峡観光ハイヤー 電話番号：01658-5-3221",
+      "verdict": "verified",
+      "notes": "計程車：層雲峡観光ハイヤー（F471）；導覽團：大雪山ツアーズ週末的銀河流星の滝サイクリング（F470）。原文導覽團是「週末」，正文沒寫，可接受；若要精確可寫「跟週末的導覽團」。",
+      "claimId": "C20"
+    },
+    {
+      "articleExcerpt": "7月到10月有一天一班的季節巴士",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "※層雲峡～大雪湖（令和8年7月1日～10月31日の運行）｜※12:50 ※13:09 ※13:15 ※13:23｜※13:38 ※13:43 ※13:49 ※14:00",
+      "verdict": "incorrect",
+      "notes": "說過頭＋年份掉了。(1) 這班季節巴士往返大雪湖，停的是瀧見台與大函入口；事實表 F619 適用條件寫「瀧見台站和瀑布的位置關係沒有官方寫明」，sounkyo-sights 研究記錄的採用決定是「只寫站名瀧見台與時刻，不寫下車就是瀑布」，sights 正文也寫「大函在7月到10月有每天一班的道北巴士…瀑布則要叫計程車或跟導覽團」。放在瀑布段落裡，讀者會讀成搭季節巴士能到瀑布，比子頁強。(2) 原文只有「令和8年7月1日～10月31日の運行」，2026 年已結束、2027 年未公布，依本站「只查到一季的只寫那一季、標年份」，不能寫成每年。最小改法：刪掉「，7月到10月有一天一班的季節巴士」，句子改成「瀑布離溫泉街約3公里，沒開車的話要叫計程車或跟導覽團。」（後面連到景點頁的句子已交代兩處怎麼去）。",
+      "claimId": "C21"
+    },
+    {
+      "articleExcerpt": "黑岳纜車｜日本最北的纜車",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
       "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "〈2026-2027スキー場営業時間〉12月1日～5月5日(予定）",
+      "sourceQuote": "黒岳ロープウェイは101人乗りで、標高670ｍの山麓・層雲峡駅から標高1,300ｍの５合目・黒岳駅までを毎秒5ｍ、約7分間で結ぶ、日本最北のロープウェイです。",
       "verdict": "verified",
-      "notes": "開幕日也見 information/02/p0053.htm「OPEN予定日は12月1日」。"
+      "notes": "",
+      "claimId": "C22"
     },
     {
-      "claimId": "C38",
-      "articleExcerpt": "溫泉街能吃飯的地方不多，能坐下來吃一頓的主要是下面5家",
+      "articleExcerpt": "上到五合目只要7分鐘",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
+      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "黒岳ロープウェイは101人乗りで、標高670ｍの山麓・層雲峡駅から標高1,300ｍの５合目・黒岳駅までを毎秒5ｍ、約7分間で結ぶ、日本最北のロープウェイです。",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C23"
+    },
+    {
+      "articleExcerpt": "不爬山也有正對黑岳的展望台「高松台」",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/sightseeing/",
+      "sourceTitle": "見どころ｜黒岳ロープウェイ",
+      "sourceQuote": "5合目（標高1300m）のスポット｜高松台 黒岳をど真ん中に、表大雪を目の前に感じられる展望台。春は桜の名所でもあります。｜7合目（標高1520m）のスポット｜黒岳カムイの森のみち 片道約15分のトレッキングルート。",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C24"
+    },
+    {
+      "articleExcerpt": "轉搭吊椅到七合目，單程約15分的步道終點看得到對岸的雨龍瀑布（あまりょうの滝）",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/sightseeing/",
+      "sourceTitle": "見どころ｜黒岳ロープウェイ",
+      "sourceQuote": "5合目（標高1300m）のスポット｜高松台 黒岳をど真ん中に、表大雪を目の前に感じられる展望台。春は桜の名所でもあります。｜7合目（標高1520m）のスポット｜黒岳カムイの森のみち 片道約15分のトレッキングルート。",
+      "verdict": "verified",
+      "notes": "F404 主張欄：七合目「黒岳カムイの森のみち」單程約 15 分、終點展望台看得到對岸あまりょうの滝；譯名照 glossary.json（雨龍瀑布）。",
+      "claimId": "C25"
+    },
+    {
+      "articleExcerpt": "想登頂的話，靠纜車跟吊椅，從七合目走到山頂約1個半小時",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
+      "sourceTitle": "登山・レジャー｜黒岳ロープウェイ",
+      "sourceQuote": "黒岳7合目登山口～黒岳山頂 上り：約1時間半 下り：約1時間｜黒岳山頂〜黒岳石室 約２０分｜黒岳石室～お鉢平一周 約5時間｜黒岳7合目登山口～旭岳ロープウェイ姿見駅 約7時間｜黒岳7合目登山口～銀泉台 約7時間",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C26"
+    },
+    {
+      "articleExcerpt": "黑岳山頂一帶9月上旬就開始變色，赤岳銀泉台9月中旬到高峰，溫泉街在10月上旬到中旬最漂亮",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/momiji_valley_guide.pdf",
+      "sourceTitle": "紅葉谷散策ガイド｜層雲峡ビジターセンター",
+      "sourceQuote": "層雲峡温泉の紅葉の名所。｜峡谷の色合いは、７割ほどがダケカンバ類の黄葉で占められている事からカエデ類の深みのある紅葉は特に目立ち、見頃は例年１０月上旬～中旬頃。",
+      "verdict": "incorrect",
+      "notes": "條件掉了：黑岳是「9月上旬頃から」（F70，適用條件「寫成大約」），溫泉街是「見頃は例年１０月上旬～中旬頃」（F415），兩處的「頃／例年」都沒寫；2026 年溫泉街就比往年早（F408）。銀泉台 9 月中旬到高峰（F116）成立。最小改法：「黑岳山頂一帶大約9月上旬就開始變色，赤岳銀泉台9月中旬到高峰，溫泉街往年在10月上旬到中旬最漂亮。」",
+      "claimId": "C27"
+    },
+    {
+      "articleExcerpt": "溫泉街的紅葉谷走到底是紅葉瀑布，柱狀節理跟瀑布就在同一個畫面裡，這種景色本來要到小函才看得到，現在小函去不了",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=8",
+      "sourceTitle": "【層雲峡】紅葉谷の散策道｜層雲峡観光協会",
+      "sourceQuote": "片道約30分の散策で「紅葉の滝」に到着します。今では見ることが出来なくなった「小函」の様な柱状節理と滝が同時に見られる場所です。｜期間 6月～11月上旬｜駐車場 5台",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C28"
+    },
+    {
+      "articleExcerpt": "層雲峽觀光飯店的峽谷大露天「宇旅璃」（うたり）就在石狩川旁邊",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/onsen",
+      "sourceTitle": "温泉｜層雲峡観光ホテル",
+      "sourceQuote": "露天風呂の側には石狩川があり、春・夏・秋・冬の四季折々の景観と川のせせらぎを満喫できます。",
+      "verdict": "verified",
+      "notes": "2026-11-26 查核者重開官網確認：「露天風呂の側には石狩川があり」。F623 不是從子頁事實表逐字複製，是從 sounkyo-stay fact-check C45 的 sourceQuote 補的，原文與官網一致。",
+      "claimId": "C29"
+    },
+    {
+      "articleExcerpt": "穿飯店的專用湯衣，全家可以一起泡，小孩也有兒童湯衣",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/onsen",
+      "sourceTitle": "温泉｜層雲峡観光ホテル",
+      "sourceQuote": "宇旅璃専用の湯衣着用で男女混浴となっておりますので、ご家族皆様で温泉をお楽しみいただけます。湯衣は各脱衣所にご用意しており、お子様用の湯衣もございます。",
+      "verdict": "verified",
+      "notes": "2026-11-26 重開官網確認。原文是「宇旅璃専用の湯衣」（宇旅璃專用），正文寫「飯店的專用湯衣」意思不變。原文是男女混浴，正文沒寫，不算缺漏。",
+      "claimId": "C30"
+    },
+    {
+      "articleExcerpt": "這是這間飯店的浴場",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=5",
+      "sourceTitle": "【層雲峡】層雲峡観光ホテル｜層雲峡観光協会",
+      "sourceQuote": "層雲峡温泉最大級の旅館｜敷地面積200坪の峡谷大露天風呂「宇旅璃（うたり）」は湯衣着用だからファミリーでもお愉しみ頂けます｜242室",
+      "verdict": "verified",
+      "notes": "句子本身成立，沒有寫只限住客。官網的選單有「日帰り予約」，非住客也許能泡，但本頁研究記錄沒有日歸入浴的條件，正文也沒說住客以外不能泡，所以不算暗示來源沒寫的事。如果作者想避免讀者誤會成只限住客，可刪「這是這間飯店的浴場，」只留「想去別處泡的話，溫泉街還有町營的日歸溫泉黑岳之湯」，非必要。",
+      "claimId": "C31"
+    },
+    {
+      "articleExcerpt": "溫泉街還有町營的日歸溫泉黑岳之湯",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=25",
+      "sourceTitle": "【層雲峡】黒岳の湯（日帰り入浴のみ）｜層雲峡観光協会",
+      "sourceQuote": "２つの大浴場と３階露天風呂に、サウナ、水風呂等を備えた｜5月1日～10月31日 10時～22時00分 （最終受付は21時30分まで) 11月1日～4月30日 11時～21時30分｜無休（施設メンテナンスのため休館日あり）｜大人 ：800円 子ども：400円",
+      "verdict": "verified",
+      "notes": "「町營」：上川町「大雪山バーデハウス設置条例」（https://www.town.hokkaido-kamikawa.lg.jp/reiki/reiki_honbun/a108RG00000499.html）名稱層雲峡黒岳の湯，町設置、指定管理者營運（舊版 C83 的依據）；觀光協會頁標題「黒岳の湯（日帰り入浴のみ）」，2026-11-26 重開確認，另寫上川町民有町民價。",
+      "claimId": "C32"
+    },
+    {
+      "articleExcerpt": "層雲峽溫泉冰瀑祭每年1月下旬到3月上旬舉辦",
+      "sourceUrl": "https://sounkyo.net/hyoubaku/",
+      "sourceTitle": "層雲峡温泉 氷瀑まつり",
+      "sourceQuote": "次回開催：第52回氷瀑まつり 開催日程 2027.1.23(土)～3.7(日)",
+      "verdict": "unsupported",
+      "notes": "「每年」撐不住：來源只有兩屆，2026 年第 51 回 1/24～3/8（F72）與 2027 年第 52 回 1/23～3/7（F71），沒有官方寫每年都在這段期間；sounkyo-festival 正文只寫「每年冬天…舉辦」，沒有把期間寫成每年固定。最小改法：「層雲峽溫泉冰瀑祭在1月下旬到3月上旬舉辦，是日本夜景遺產認定的夜景。」（拿掉「每年」；第 3 節「就排1月下旬到3月上旬」與月份表同此，可不改。）",
+      "claimId": "C33"
+    },
+    {
+      "articleExcerpt": "是日本夜景遺產認定的夜景",
+      "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
+      "sourceTitle": "第51回 氷瀑まつり 1/24開幕！（さんたつ プレスリリース）",
+      "sourceQuote": "日本夜景遺産認定の幻想世界で、期間中は毎晩20:30より花火打ち上げ",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C34"
+    },
+    {
+      "articleExcerpt": "2026年的會場有大小約30座冰雕，最高超過10公尺，入夜打上七彩燈光",
+      "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
+      "sourceTitle": "第51回 氷瀑まつり 1/24開幕！（さんたつ プレスリリース）",
+      "sourceQuote": "2026年1月24日（土）～3月8日（日）の44日間、石狩川河川敷の特設会場｜高さ10mを超える氷の建造物や「氷瀑神社」など、大小約30基の氷像｜夜には七色のライトアップ｜毎晩20時30分より、氷像の裏手から花火が打ち上げられ",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C35"
+    },
+    {
+      "articleExcerpt": "每晚20:30從冰雕後方放煙火",
+      "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
+      "sourceTitle": "第51回 氷瀑まつり 1/24開幕！（さんたつ プレスリリース）",
+      "sourceQuote": "2026年1月24日（土）～3月8日（日）の44日間、石狩川河川敷の特設会場｜高さ10mを超える氷の建造物や「氷瀑神社」など、大小約30基の氷像｜夜には七色のライトアップ｜毎晩20時30分より、氷像の裏手から花火が打ち上げられ",
+      "verdict": "verified",
+      "notes": "2026 年（句首已標）；時間另見 F75。",
+      "claimId": "C36"
+    },
+    {
+      "articleExcerpt": "夏天的峽谷火祭，主祭日是7月下旬的晚上",
+      "sourceUrl": "https://sounkyo.net/event/detail.html?content=37",
+      "sourceTitle": "峡谷火まつり｜層雲峡観光協会",
+      "sourceQuote": "2026年7月25日（土）第64回層雲峡温泉峡谷火まつり開催決定。峡谷火まつり夏花火として7月26日（日）から8月15日（土）は毎日花火を打ち上げ。峡谷炎の演舞は7月31日（金）～8月15日（土）まで開催。",
+      "verdict": "verified",
+      "notes": "兩年旁證：2026 年第 64 回 7/25（六）18:45（F601、F615）、2025 年第 63 回 7/26（六）18:45（F602）。正文沒寫「每年」，可接受。",
+      "claimId": "C37"
+    },
+    {
+      "articleExcerpt": "舞台上有貓頭鷹神事（フクロウ神事）跟上川愛努古式舞蹈",
+      "sourceUrl": "https://sounkyo.net/event/detail.html?content=32",
+      "sourceTitle": "第６３回層雲峡温泉峡谷火まつり｜層雲峡観光協会",
+      "sourceQuote": "２０２５年７月２６日（土）１８：４５から第６３回層雲峡温泉峡谷火まつりが開催されます。｜イベントのフィナーレには峡谷に響き渡る花火の打上を行います。",
+      "verdict": "verified",
+      "notes": "2025 年頁原文「フクロウ神事」「上川アイヌ古式舞踊」；2026 年傳單（F615）寫「フクロウ神事・上川アイヌ民族舞踊」。",
+      "claimId": "C38"
+    },
+    {
+      "articleExcerpt": "這兩項都是日本遺產的構成文化財",
+      "sourceUrl": "https://sounkyo.net/event/detail.html?content=32",
+      "sourceTitle": "第６３回層雲峡温泉峡谷火まつり｜層雲峡観光協会",
+      "sourceQuote": "日本遺産の構成文化財に認定されている「フクロウ神事」「上川アイヌ古式舞踊」",
+      "verdict": "verified",
+      "notes": "2026-11-26 查核者重開 sounkyo.net/event/detail.html?content=32：「日本遺産の構成文化財に認定されている「フクロウ神事」「上川アイヌ古式舞踊」や上川町郷土太鼓保存会…」，「認定されている」修飾並列的兩項，支持「兩項都是」。注意原文是「古式舞踊」，正文寫「古式舞蹈」一致；2026 年節目單寫「民族舞踊」，正文沿用 2025 頁的名稱，可接受。",
+      "claimId": "C39"
+    },
+    {
+      "articleExcerpt": "最後放煙火",
+      "sourceUrl": "https://sounkyo.net/event/detail.html?content=32",
+      "sourceTitle": "第６３回層雲峡温泉峡谷火まつり｜層雲峡観光協会",
+      "sourceQuote": "２０２５年７月２６日（土）１８：４５から第６３回層雲峡温泉峡谷火まつりが開催されます。｜イベントのフィナーレには峡谷に響き渡る花火の打上を行います。",
+      "verdict": "verified",
+      "notes": "2025 原文「フィナーレには…花火の打上」；2026 傳單 21:00 花火打上（F615）。",
+      "claimId": "C40"
+    },
+    {
+      "articleExcerpt": "主祭日之後到8月中旬，每晚都放夏季煙火",
+      "sourceUrl": "https://sounkyo.net/event/detail.html?content=37",
+      "sourceTitle": "峡谷火まつり｜層雲峡観光協会",
+      "sourceQuote": "2026年7月25日（土）第64回層雲峡温泉峡谷火まつり開催決定。峡谷火まつり夏花火として7月26日（日）から8月15日（土）は毎日花火を打ち上げ。峡谷炎の演舞は7月31日（金）～8月15日（土）まで開催。",
+      "verdict": "incorrect",
+      "notes": "年份掉了：只有 2026 年的資料（「7月26日（日）から8月15日（土）は毎日花火を打ち上げ」），2025 年頁沒有夏季煙火期間，研究記錄沒有其他年份。依本站「只查到一季的只寫那一季、標年份」。最小改法：「2026年主祭日之後到8月中旬，每晚都放夏季煙火。」",
+      "claimId": "C41"
+    },
+    {
+      "articleExcerpt": "KAMIKAWA KITCHEN｜卡門貝爾起司拿下世界起司大賽金牌",
+      "sourceUrl": "https://kamikawa-kitchen.com/info/%e4%b8%96%e7%95%8c%e6%9c%80%e5%a4%a7%e7%b4%9a%e3%81%ae%e6%8a%80%e8%a1%93%e3%82%b3%e3%83%b3%e3%83%86%e3%82%b9%e3%83%88wccc-2026%e3%81%a7%e4%b8%80%e4%bd%8d/",
+      "sourceTitle": "世界最大級の技術コンテストWCCC 2026でGOLD｜KAMIKAWA KITCHEN",
+      "sourceQuote": "「カマンベール・キヨミ」が 世界最大級の技術コンテスト WCCC 2026 WORLD CHAMPIONSHIP CHEESE CONTEST カマンベール部門（Class 31: Camembert）において｜GOLD (Best of Class)",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C42"
+    },
+    {
+      "articleExcerpt": "上川站周邊的起司工房，招牌起司Kiyomi（カマンベール・キヨミ）在世界起司大賽（WCCC）2026拿到卡門貝爾組金牌",
+      "sourceUrl": "https://kamikawa-kitchen.com/info/%e4%b8%96%e7%95%8c%e6%9c%80%e5%a4%a7%e7%b4%9a%e3%81%ae%e6%8a%80%e8%a1%93%e3%82%b3%e3%83%b3%e3%83%86%e3%82%b9%e3%83%88wccc-2026%e3%81%a7%e4%b8%80%e4%bd%8d/",
+      "sourceTitle": "世界最大級の技術コンテストWCCC 2026でGOLD｜KAMIKAWA KITCHEN",
+      "sourceQuote": "「カマンベール・キヨミ」が 世界最大級の技術コンテスト WCCC 2026 WORLD CHAMPIONSHIP CHEESE CONTEST カマンベール部門（Class 31: Camembert）において｜GOLD (Best of Class)",
+      "verdict": "verified",
+      "notes": "原文 Class 31: Camembert GOLD (Best of Class)；觀光協會把它列在「上川駅周辺」（F153）。",
+      "claimId": "C43"
+    },
+    {
+      "articleExcerpt": "2024年春天才開幕，用的生乳全是上川町產",
+      "sourceUrl": "https://kamikawa-kitchen.com/",
+      "sourceTitle": "KAMIKAWA KITCHEN",
+      "sourceQuote": "2024年春に オープンしました。｜生乳は 100%上川町産｜併設しているカフェでは 焼き立てパンなどの 軽食も｜OPEN 10:00～16:00 CLOSED 火・水",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C44"
+    },
+    {
+      "articleExcerpt": "10月上旬到中旬最值得排，溫泉街的紅葉在這時候到高峰，黑岳纜車跟瀑布也都還開著",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/momiji_valley_guide.pdf",
+      "sourceTitle": "紅葉谷散策ガイド｜層雲峡ビジターセンター",
+      "sourceQuote": "層雲峡温泉の紅葉の名所。｜峡谷の色合いは、７割ほどがダケカンバ類の黄葉で占められている事からカエデ類の深みのある紅葉は特に目立ち、見頃は例年１０月上旬～中旬頃。",
+      "verdict": "verified",
+      "notes": "溫泉街見頃例年 10 月上旬～中旬（F415）；纜車 10/1～10/15 7:00～17:00、10/16 起 8:00～16:00（F403、F44）；瀑布通年（F98）。這是推薦句，「往年」沒寫可接受。",
+      "claimId": "C45"
+    },
+    {
+      "articleExcerpt": "想看冰瀑祭，就排1月下旬到3月上旬",
+      "sourceUrl": "https://sounkyo.net/hyoubaku/",
+      "sourceTitle": "層雲峡温泉 氷瀑まつり",
+      "sourceQuote": "次回開催：第52回氷瀑まつり 開催日程 2027.1.23(土)～3.7(日)",
+      "verdict": "verified",
+      "notes": "2026、2027 兩屆都在這段期間（F72、F71）。",
+      "claimId": "C46"
+    },
+    {
+      "articleExcerpt": "4月最深積雪還有94公分",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
+      "sourceTitle": "平年値 層雲峡｜気象庁",
+      "sourceQuote": "最深積雪(cm)｜1月 102｜2月 121｜3月 126｜4月 94｜5月 9｜12月 84｜年 131",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C47"
+    },
+    {
+      "articleExcerpt": "6月下旬起纜車進入夏季營業，清晨6:00就開",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
+      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "10月16日～11月8日 8:00～16:00｜11月9日～11月30日 整備運休｜12月1日～12月31日 8:00～16:00｜1月1日～6月20日 8:00～16:00｜6月21日～9月30日 6:00～18:00｜上り便の最終は営業終了時間の40分前です。",
+      "verdict": "verified",
+      "notes": "下一個夏季 6/21～9/30 06:00～18:00（F476）；2026 年因換新車廂 6/27 起（F403）。兩者都在 6 月下旬。",
+      "claimId": "C48"
+    },
+    {
+      "articleExcerpt": "白天最高約24度，也是雨最多的時候",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
+      "sourceTitle": "平年値 上川｜気象庁",
+      "sourceQuote": "7月 | 160.8 | 19.2 | 24.5 | 14.3｜8月 | 177.5 | 19.4 | 24.7 | 14.5",
+      "verdict": "verified",
+      "notes": "上川 7 月最高 24.5、8 月 24.7°C，7、8 月降水最多（上川）。層雲峽觀測點 8 月 192.6 mm 最多、7 月 157.5 mm 與 10 月 157.4 mm 幾乎相同（sounkyo-weather F264），「7月到8月是雨最多的時候」大致成立。氣溫是上川市街（324 公尺）的平年值，溫泉街更高更冷，表頭寫「層雲峽的狀況」略寬；「約24度」比 24.7 略低，偏保守可接受。",
+      "claimId": "C49"
+    },
+    {
+      "articleExcerpt": "7月下旬有峽谷火祭",
+      "sourceUrl": "https://sounkyo.net/event/detail.html?content=37",
+      "sourceTitle": "峡谷火まつり｜層雲峡観光協会",
+      "sourceQuote": "2026年7月25日（土）第64回層雲峡温泉峡谷火まつり開催決定。峡谷火まつり夏花火として7月26日（日）から8月15日（土）は毎日花火を打ち上げ。峡谷炎の演舞は7月31日（金）～8月15日（土）まで開催。",
+      "verdict": "verified",
+      "notes": "2025、2026 兩年都在 7 月下旬（F602、F601）。",
+      "claimId": "C50"
+    },
+    {
+      "articleExcerpt": "到8月中旬每晚放煙火",
+      "sourceUrl": "https://sounkyo.net/event/detail.html?content=37",
+      "sourceTitle": "峡谷火まつり｜層雲峡観光協会",
+      "sourceQuote": "2026年7月25日（土）第64回層雲峡温泉峡谷火まつり開催決定。峡谷火まつり夏花火として7月26日（日）から8月15日（土）は毎日花火を打ち上げ。峡谷炎の演舞は7月31日（金）～8月15日（土）まで開催。",
+      "verdict": "incorrect",
+      "notes": "同第 2 節：夏季煙火 7/26～8/15 只有 2026 年的資料。最小改法：月份表這格改成「白天最高約24度，也是雨最多的時候，7月下旬有峽谷火祭，2026年到8月中旬每晚放煙火」。",
+      "claimId": "C51"
+    },
+    {
+      "articleExcerpt": "9月山上先紅，10月上旬到中旬輪到溫泉街",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=9",
+      "sourceTitle": "【層雲峡】銀泉台｜層雲峡観光協会",
+      "sourceQuote": "９月中旬、銀泉台の美しい紅葉が日本一早いピークを迎えます。｜層雲峡より大雪湖、大雪山観光道路を車で50分ほどです。｜期間 6月下旬～10月上旬（紅葉時期にはマイカー規制あり）",
+      "verdict": "verified",
+      "notes": "F70、F116、F415；寫法是概略的季節順序，可接受。",
+      "claimId": "C52"
+    },
+    {
+      "articleExcerpt": "葉子落光，溫泉街開始有路面積雪的日子",
+      "sourceUrl": "https://sounkyovc.net/blog/92599",
+      "sourceTitle": "季節は冬へ | 層雲峡ビジターセンター",
+      "sourceQuote": "赤や黄色の木々の葉はすっかり落葉し｜例年十月下旬には路面が積雪状態になる日があります。宿泊や日帰り入浴で層雲峡を訪れるばあいは、必ず冬タイヤに履き替えて",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C53"
+    },
+    {
+      "articleExcerpt": "12月初起黑岳滑雪場營業",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/ski_slope/",
+      "sourceTitle": "黒岳スキー場｜【公式】大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "斜度最高25° 最低８°の 快適コース！｜コースは途中から路線下コース、林間コース、雪庇コースに分岐します。",
+      "verdict": "verified",
+      "notes": "F611 主張欄「12 月初到 5 月初營業」；2026-2027 季官網寫預定 12/1 開（舊版 C37，https://www.rinyu.co.jp/kurodake/information/02/p0053.htm）。是預定日，月份表寫「12月初起」可接受。",
+      "claimId": "C54"
+    },
+    {
+      "articleExcerpt": "1月下旬到3月上旬辦冰瀑祭",
+      "sourceUrl": "https://sounkyo.net/hyoubaku/",
+      "sourceTitle": "層雲峡温泉 氷瀑まつり",
+      "sourceQuote": "次回開催：第52回氷瀑まつり 開催日程 2027.1.23(土)～3.7(日)",
+      "verdict": "verified",
+      "notes": "2026、2027 兩屆（F72、F71）。",
+      "claimId": "C55"
+    },
+    {
+      "articleExcerpt": "積雪在3月最深，平年126公分",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
+      "sourceTitle": "平年値 層雲峡｜気象庁",
+      "sourceQuote": "最深積雪(cm)｜1月 102｜2月 121｜3月 126｜4月 94｜5月 9｜12月 84｜年 131",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C56"
+    },
+    {
+      "articleExcerpt": "11月比較沒有主角，葉子已經落光，冰瀑祭要等到1月",
+      "sourceUrl": "https://sounkyovc.net/blog/92599",
+      "sourceTitle": "季節は冬へ | 層雲峡ビジターセンター",
+      "sourceQuote": "赤や黄色の木々の葉はすっかり落葉し｜例年十月下旬には路面が積雪状態になる日があります。宿泊や日帰り入浴で層雲峡を訪れるばあいは、必ず冬タイヤに履き替えて",
+      "verdict": "verified",
+      "notes": "推論：溫泉街 10 月下旬落葉（F410）、冰瀑祭 1 月下旬開（F71）、2026 年纜車 11/9～11/30 停駛（F44）。三個前提都有來源，推論成立；但 11 月上旬紅葉谷步道還開（F620「6月～11月上旬」），纜車到 11/8 還在開，「比較沒有主角」是程度說法，不是「沒有可看」，可接受。",
+      "claimId": "C57"
+    },
+    {
+      "articleExcerpt": "2026年的黑岳纜車還在11月停駛整備了三個多星期",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
+      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "10月16日～11月8日 8:00～16:00｜11月9日～11月30日 整備運休｜12月1日～12月31日 8:00～16:00｜1月1日～6月20日 8:00～16:00｜上り便の最終は営業終了時間の40分前です。",
+      "verdict": "verified",
+      "notes": "11/9～11/30 是 22 天，「三個多星期」成立，年份標對（官網 2026-10 公布的這一季表，F476 2026-11-01 重查一致）。小提醒：查核當天 2026-11-26 停駛還沒結束，「停駛整備了」是完成式，11/30 以後上線就沒有問題。",
+      "claimId": "C58"
+    },
+    {
+      "articleExcerpt": "從旭川站前搭道北巴士（道北バス）直達，一天7班，單程2,140日圓",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "2026.7.1改正｜旭川駅前 発 6:55 9:55 10:55 13:25 14:25 16:35 18:25｜層雲峡 着 8:54 11:54 12:54 15:24 16:24 18:34 20:24",
+      "verdict": "verified",
+      "notes": "一天 7 班見 F1；車資見 F5（「層雲峡～旭川 片道料金 ¥2,140」）。",
+      "claimId": "C59"
+    },
+    {
+      "articleExcerpt": "在終點站下車，走5分鐘就到黑岳纜車",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
+      "sourceTitle": "施設案内｜大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "JR石北線上川駅より道北バス「層雲峡・上川線」乗車約30分終点「層雲峡」下車、徒歩5分",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C60"
+    },
+    {
+      "articleExcerpt": "旭川站前9:55發 → 11:54到層雲峽 → 走5分鐘到纜車，7分鐘上五合目 → 17:00搭直達末班車 → 18:55回旭川站前",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "2026.7.1改正｜旭川駅前 発 6:55 9:55 10:55 13:25 14:25 16:35 18:25｜層雲峡 着 8:54 11:54 12:54 15:24 16:24 18:34 20:24",
+      "verdict": "verified",
+      "notes": "逐站：9:55→11:54（F1）；走 5 分（F469）；纜車 7 分（F41）；17:00→18:55（F3）。冬期纜車上行末班 15:20（F44），17:00 前下山排得進去。",
+      "claimId": "C61"
+    },
+    {
+      "articleExcerpt": "17:00是直達旭川的最後一班",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "旭川駅前 発 18:25｜層雲峡 発 17:00 → 旭川駅前 着 18:55",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C62"
+    },
+    {
+      "articleExcerpt": "錯過的話，18:55還有一班開往上川的車，19:25到上川再轉JR回旭川",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "層雲峡 発 9:10 16:40 18:55｜上川森のテラスバスタッチ 着 9:40 17:10 19:25",
+      "verdict": "verified",
+      "notes": "18:55→19:25（F4）；上川→旭川還有 20:24 普通（21:22 到）、21:04 特急大雪（21:44 到）（F402，2026-12-10 時刻表）。",
+      "claimId": "C63"
+    },
+    {
+      "articleExcerpt": "住進溫泉街 → 傍晚入場看冰雕 → 20:30煙火 → 隔天6:20搭頭班巴士回旭川",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "層雲峡 発 6:20 7:30 … 10:10 11:30 13:30 … 14:40 … 17:00｜旭川駅前 着 8:15 9:25 12:05 13:25 15:25 16:35 18:55",
+      "verdict": "verified",
+      "notes": "2026 年平日 17:00、週末 11:00 開場（F72）；煙火 20:30（F75）；層雲峽→旭川頭班 6:20、8:15 到（F3）。",
+      "claimId": "C64"
+    },
+    {
+      "articleExcerpt": "2026年的冰瀑祭，平日17:00才開場，煙火20:30才放，回旭川的直達末班17:00、往上川的末班18:55都早就開走了，所以想看煙火就得住一晚，或是自己開車",
+      "sourceUrl": "https://sounkyo.net/hyoubaku/",
+      "sourceTitle": "層雲峡温泉 氷瀑まつり",
+      "sourceQuote": "開催時間 平日 17：00～21：30（最終入場21:15）土日祝 11：00～21：30（最終入場21:15）｜期間 2026年1月24日 (土)～3月8日 (日)",
+      "verdict": "verified",
+      "notes": "F72、F75、F15、F4；推論成立。",
+      "claimId": "C65"
+    },
+    {
+      "articleExcerpt": "只看冰雕的話，當天也回得了旭川，週末假日11:00就開場，平日17:00開場，再搭18:55的末班車轉JR回去",
+      "sourceUrl": "https://sounkyo.net/hyoubaku/",
+      "sourceTitle": "層雲峡温泉 氷瀑まつり",
+      "sourceQuote": "開催時間 平日 17：00～21：30（最終入場21:15）土日祝 11：00～21：30（最終入場21:15）｜期間 2026年1月24日 (土)～3月8日 (日)",
+      "verdict": "verified",
+      "notes": "自己逐站算：平日 14:25 旭川發→16:24 層雲峽（F1），17:00 開場（F72），看 1 小時多後搭 18:55 往上川（F4）→19:25 到，轉 JR 20:24→21:22 或 21:04→21:44（F402）。週末 11:00 開場，可搭 9:55→11:54 的車，回程 17:00 直達或 18:55 轉 JR 都可以。走得通。JR 時刻是 2026-12-10 的表，冰瀑祭期間（1～3 月）沿用是合理假設；sounkyo-festival 正文同樣說「平日搭下午、週末搭上午的巴士過去，當天都回得了旭川」。",
+      "claimId": "C66"
+    },
+    {
+      "articleExcerpt": "前一晚住溫泉街 → 6:00搭第一班纜車上山 → 下山後走紅葉谷",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
+      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "10月16日～11月8日 8:00～16:00｜11月9日～11月30日 整備運休｜12月1日～12月31日 8:00～16:00｜1月1日～6月20日 8:00～16:00｜6月21日～9月30日 6:00～18:00｜上り便の最終は営業終了時間の40分前です。",
+      "verdict": "unsupported",
+      "notes": "推論只在 9 月成立一半：纜車 6:00 開只到 9/30（F476、F403），10/1～10/15 是 7:00、10/16 起 8:00；而溫泉街紅葉谷的紅葉往年是 10 月上旬～中旬（F415），sounkyo-weather 寫 2024 年紅葉谷入口 9/30 前後才轉紅。所以「6:00 上山」和「下山後走紅葉谷看紅葉」不在同一段時間；9 月走紅葉谷還多是綠葉，10 月又搭不到 6:00 的纜車。紅葉谷步道本身 6 月～11 月上旬都能走（F620、F604），所以箭頭不是錯的事實，但放在「秋天看紅葉」的排法裡會讓讀者以為同一天兩邊都紅。最小改法（擇一）：(a) 箭頭改成「前一晚住溫泉街 → 6:00搭第一班纜車上山看山上的紅葉 → 下山逛溫泉街」；(b) 保留紅葉谷，下一段補一句「10月上旬到中旬溫泉街的紅葉谷才到高峰，那時纜車改成7:00開」。",
+      "claimId": "C67"
+    },
+    {
+      "articleExcerpt": "9月底以前纜車6:00就開，但從旭川搭頭班巴士6:55發、8:54才到，想一早上山的話，前一晚要住溫泉街",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
+      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "10月16日～11月8日 8:00～16:00｜11月9日～11月30日 整備運休｜12月1日～12月31日 8:00～16:00｜1月1日～6月20日 8:00～16:00｜6月21日～9月30日 6:00～18:00｜上り便の最終は営業終了時間の40分前です。",
+      "verdict": "verified",
+      "notes": "6:00～18:00 到 9/30（F476、F403）；頭班 6:55→8:54（F1）。10/1～10/15 是 7:00 開，結論同樣成立。",
+      "claimId": "C68"
+    },
+    {
+      "articleExcerpt": "銀泉台的紅葉9月中旬到高峰，那段時間有車輛管制，自己開車或搭上川町的包車都要事先預約",
+      "sourceUrl": "https://web.archive.org/web/20260823191057id_/https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo0000000eco.html",
+      "sourceTitle": "令和8年度 紅葉期 銀泉台 予約制貸切バス｜上川町（2026-08-23 存檔；原頁現在 404）",
+      "sourceQuote": "令和8年度の紅葉期の車両交通規制（マイカー規制）について、昨年度から実施方法に変更があります｜①層雲峡インフォメーションセンター発着とする予約制貸切バスの運行 ②マイカー交互交通規制（予約制）｜マイカー： 2,000円／1台あたり｜会員登録が必要になりますのでご注意下さい。※予約は前日の15時までに締め切ります｜予約が無いと通行できない場合があります",
+      "verdict": "verified",
+      "notes": "9 月中旬高峰、紅葉期有管制（F116）；2026 年（9/12～9/23）自用車與包車都是預約制（F472），遊客中心公告寫 2025 年起就改成停車與巴士都要事前預約（F411「昨年度から…事前予約制」），兩年一致，正文不標年份可接受。",
+      "claimId": "C69"
+    },
+    {
+      "articleExcerpt": "旭川走國道39號到層雲峽約66公里，開車1小時30分，再往北見方向翻石北峠約90公里、1小時30分，往帶廣翻三國峠約122公里、2小時",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
+      "sourceTitle": "施設案内｜大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "上川層雲峡ICまで約2時間30分 そこから北見・網走方面へ約30分｜旭川から 国道39号線を北見・網走方面に約1時間30分｜北見から…石北峠を越え約1時間30分｜帯広から 国道273号を旭川方面に三国峠を越え約2時間",
+      "verdict": "incorrect",
+      "notes": "條件掉了：經營者原文三個時間都是「約」（約1時間30分、約2時間），事實表適用條件寫「夏季路況的參考時間」，舊版主頁寫「1個半小時左右…都是夏天路況的參考時間」並 verified。這一節的主題正是冬天封路，時間不標夏季，讀者會拿去排冬天的行程。距離 66、90、122 公里見 F19，一致。最小改法：「旭川走國道39號到層雲峽約66公里，開車約1小時30分，再往北見方向翻石北峠約90公里、約1小時30分，往帶廣翻三國峠約122公里、約2小時，都是夏天路況的參考時間。」",
+      "claimId": "C70"
+    },
+    {
+      "articleExcerpt": "冬天遇到暴風雪或有雪崩之虞，石北峠跟三國峠都可能臨時封路，解除時間也說不準",
+      "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll000000b6t2-att/pm5osg00000004sh.pdf",
+      "sourceTitle": "国道39号・273号 通行止めのお知らせ｜北海道開発局旭川開発建設部",
+      "sourceQuote": "国道３９号 上川町層雲峡温泉～北見市留辺蘂町富士見 Ｌ＝３２．５ｋｍ ２月４日（火）７：００～ 解除未定（大雪による雪崩のおそれのため）",
+      "verdict": "verified",
+      "notes": "石北峠 F29、三國峠 F30（「大雪による道路障害のおそれ」），「解除未定」。",
+      "claimId": "C71"
+    },
+    {
+      "articleExcerpt": "2025年2月石北峠就封過32.5公里",
+      "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll000000b6t2-att/pm5osg00000004sh.pdf",
+      "sourceTitle": "国道39号・273号 通行止めのお知らせ｜北海道開発局旭川開発建設部",
+      "sourceQuote": "国道３９号 上川町層雲峡温泉～北見市留辺蘂町富士見 Ｌ＝３２．５ｋｍ ２月４日（火）７：００～ 解除未定（大雪による雪崩のおそれのため）",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C72"
+    },
+    {
+      "articleExcerpt": "車子也要換冬季輪胎，夏季輪胎走山路非常危險",
+      "sourceUrl": "https://sounkyovc.net/blog/92605",
+      "sourceTitle": "層雲峡ビジターセンター 山だより 2026-10-22",
+      "sourceQuote": "層雲峡温泉街にも雪が積もりました。昨年とほぼ同時期の雪景色となります。…夏タイヤでの峠道の走行は大変危険です。層雲峡へお越しの際は、必ず冬タイヤを装着の上",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C73"
+    },
+    {
+      "articleExcerpt": "不開車的話，Sunrise號（サンライズ号）從層雲峽9:22跟14:37各有一班往北見、阿寒湖",
+      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
+      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
+      "sourceQuote": "旭川▶▶▶北見▶▶▶釧路｜7：50 … 9：22 10：28 … 11：15 11：45 … 13：13｜13：05 … 14：37 15：43 … 16：30 17：00 … 18：28",
+      "verdict": "verified",
+      "notes": "2025-09-01 改正時刻表。",
+      "claimId": "C74"
+    },
+    {
+      "articleExcerpt": "一定要先預約",
+      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
+      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
+      "sourceQuote": "※永山、当麻、愛別橋、上川、層雲峡、温根湯、津別、阿寒町では乗車券発売所窓口はございませんのでご予約の上、Web決済、コンビニでの発券等をご利用ください。",
+      "verdict": "verified",
+      "notes": "原文：層雲峽沒有售票窗口，「ご予約の上、Web決済、コンビニでの発券等」；阿寒巴士 sunrise.html 寫預約定員制（舊版 C103）。",
+      "claimId": "C75"
+    },
+    {
+      "articleExcerpt": "想泡溫泉、隔天一早搭纜車，就住溫泉街，住上川站周邊的話，比較適合火車很晚才到上川，或隔天一早要從上川站離開的行程",
+      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=102",
+      "sourceTitle": "【上川駅周辺】KAMIKAWA HOTEL｜層雲峡観光協会",
+      "sourceQuote": "KAMIKAWAHOTEL（カミカワホテル）はJR上川駅からほど近いビジネスホテル…すぐ隣にはコンビニエンスストア（セイコーマート）｜8室｜『ANSHINDO』は旧安心堂薬局をリノベーション…2階は４部屋のマイクロホテル｜上川荘 和室15室",
+      "verdict": "verified",
+      "notes": "這是 sounkyo-stay 正文的結論（「只有搭火車很晚才到上川，或隔天一早要從上川站離開的行程，才考慮上川站周邊」），主頁寫「比較適合」，比子頁弱，不過頭。F608 只支持上川站周邊有哪些住宿。",
+      "claimId": "C76"
+    },
+    {
+      "articleExcerpt": "從上川站搭巴士到層雲峽要30分鐘",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡（道北バス販売サイト）",
+      "sourceQuote": "所要時間：1時間59分（旭川-層雲峡）｜所要時間：30分（上川-層雲峡）",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C77"
+    },
+    {
+      "articleExcerpt": "冬天不開車的話，部分旅館有從旭川、札幌出發的接駁車，要先預約",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "※札幌発着送迎バスは2026年10月1日から2027年3月31日までの運行となります。…｜公式ホームページから宿泊を予約されたお客様は、500円割引｜宿泊日の1週間前までにご予約のない日については、運休",
+      "verdict": "verified",
+      "notes": "朝陽亭、朝陽リゾート 2026/10/1～2027/3/31 札幌、旭川發付費接駁，一週前沒人預約就停駛（F606）；層雲峽觀光飯店 11/1～4/30 旭川發，3 天前預約（F607）。札幌發只有朝陽兩間，「部分旅館」涵蓋得住；「冬天」對應兩個期間，可接受。",
+      "claimId": "C78"
+    },
+    {
+      "articleExcerpt": "旭岳是北海道最高峰",
+      "sourceUrl": "https://www.asahidake-vc-2291.jp/about/",
+      "sourceTitle": "旭岳について｜旭岳ビジターセンター",
+      "sourceQuote": "標高 | 2,291 m｜大雪山の主峰であり、北海道の最高峰です",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C79"
+    },
+    {
+      "articleExcerpt": "纜車約10分鐘上到標高約1,600公尺的姿見站",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "●ロープウェイ所要時間 片道約10分｜一度に101人まで乗ることができ",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C80"
+    },
+    {
+      "articleExcerpt": "一圈約1小時的散策路看得到冒煙的地獄谷跟舊火口的姿見池，6月到10月中旬開放",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "散策コース（6月～10月中旬）｜1周 約 1時間※ / 約 1.7km｜※コースタイムは、天候や登山者の体力などにより異なります。",
+      "verdict": "verified",
+      "notes": "一圈約 1 小時、6 月～10 月中旬見 F422；地獄谷、姿見の池見 F612。遊客中心地圖寫 1 小時～1 小時 30 分（F422 條件欄），正文寫「約1小時」照纜車官網。",
+      "claimId": "C81"
+    },
+    {
+      "articleExcerpt": "旭岳溫泉沒有溫泉街",
+      "sourceUrl": "https://www.welcome-higashikawa.jp/onsen",
+      "sourceTitle": "温泉｜東川町観光協会",
+      "sourceQuote": "旭岳温泉には温泉街はなく、景観を配慮して建てられた宿泊施設は高さ制限があり",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C82"
+    },
+    {
+      "articleExcerpt": "往旭岳的出湯號最晚14:15就從旭川站前發車，往層雲峽的巴士最晚18:25還有車",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線｜旭川電気軌道",
+      "sourceQuote": "旭川駅（のりば9）| 7:15 | 9:15 | 12:15 | 14:15｜旭川空港 | 8:00 | 10:00 | 13:00 | 15:00｜旭岳 | 9:03 | 11:03 | 14:03 | 16:03",
+      "verdict": "verified",
+      "notes": "出湯號旭川站（9 號乘車處）末班 14:15（F424）；道北巴士旭川站前末班 18:25（F1）。",
+      "claimId": "C83"
+    },
+    {
+      "articleExcerpt": "層雲峽10:10發、12:05到旭川站前，轉12:15的出湯號，14:03到旭岳，接得最順也要將近4小時",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線｜旭川電気軌道",
+      "sourceQuote": "旭川駅（のりば9）| 7:15 | 9:15 | 12:15 | 14:15｜旭川空港 | 8:00 | 10:00 | 13:00 | 15:00｜旭岳 | 9:03 | 11:03 | 14:03 | 16:03",
+      "verdict": "verified",
+      "notes": "逐班：層雲峽 10:10→旭川站前 12:05（F3）；出湯號旭川站 12:15→旭岳 14:03（F424）；合計 3 小時 53 分。自己比過其他班：6:20→8:15 接 9:15→11:03 是 4 小時 43 分；7:30→9:25 接 12:15→14:03 是 6 小時 33 分；11:30→13:25 接 14:15→16:03 是 4 小時 33 分，所以 10:10 這班最短，「接得最順」成立（asahidake-or-sounkyo 正文同樣寫「轉得最順的一班」）。10 分鐘轉乘：道北巴士在旭川站前下車處下車、出湯號在 9 號乘車處上車，同在 Bus Touch（asahidake-or-sounkyo 正文），沒有官方保證接駁，延誤就接不上，正文沒寫「一定接得上」，可接受。這是層雲峽→旭岳方向；反方向不同，正文只寫這個方向。",
+      "claimId": "C84"
+    },
+    {
+      "articleExcerpt": "開車大約2小時30分",
+      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
+      "sourceTitle": "大雪山旭岳ロープウェイ",
+      "sourceQuote": "旭川空港 | 60分｜JR旭川駅 | 1時間10分｜旭川北ＩＣ | 1時間20分｜JR札幌駅 | 3時間｜層雲峡温泉 | 2時間30分",
+      "verdict": "verified",
+      "notes": "旭岳纜車官網アクセス表「層雲峡温泉 2時間30分」。",
+      "claimId": "C85"
+    },
+    {
+      "articleExcerpt": "所以搭巴士的話至少排兩天一夜",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "層雲峡 発 6:20 7:30 … 10:10 11:30 13:30 … 14:40 … 17:00｜旭川駅前 着 8:15 9:25 12:05 13:25 15:25 16:35 18:55",
+      "verdict": "verified",
+      "notes": "推論：單程將近 4 小時，往旭岳末班 14:15；asahidake-or-sounkyo 正文同樣寫「搭巴士一起排的話，至少要兩天一夜」。",
+      "claimId": "C86"
+    },
+    {
+      "articleExcerpt": "也可以從黑岳七合目走到旭岳纜車的姿見站，大約7小時",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
+      "sourceTitle": "登山・レジャー｜黒岳ロープウェイ",
+      "sourceQuote": "黒岳7合目登山口～黒岳山頂 上り：約1時間半 下り：約1時間｜黒岳山頂〜黒岳石室 約２０分｜黒岳石室～お鉢平一周 約5時間｜黒岳7合目登山口～旭岳ロープウェイ姿見駅 約7時間｜黒岳7合目登山口～銀泉台 約7時間",
+      "verdict": "verified",
+      "notes": "",
+      "claimId": "C87"
+    },
+    {
+      "articleExcerpt": "保險一點抓8到9小時",
+      "sourceUrl": "https://www.daisetsuzan.or.jp/wp-content/uploads/2026/07/3d085f94b250bb1cec1b35928c73561b.jpg",
+      "sourceTitle": "大雪山黒岳⇔旭岳 縦走リターンBUS チラシ（大雪山国立公園連絡協議会 2026-07-23 掲載）",
+      "sourceQuote": "いかなる場合もバスは時間通りに発車します。時間通りに現れなかった場合、遅れる連絡をした場合でもバスは待たずに発車します。｜定員を超えた場合はその後の路線バスをご利用ください。｜途中下車不可｜当日券のみ｜黒岳⇔旭岳縦走標準コースタイム８～９時間です。余裕を持った登山計画を。",
+      "verdict": "verified",
+      "notes": "傳單原文「黒岳⇔旭岳縦走標準コースタイム８～９時間です。余裕を持った登山計画を。」asahidake-or-sounkyo 正文也寫「照長的8到9小時估會比較保險」。注意：事實表條件欄指出 8～9 小時的範圍是「黑岳⇔旭岳」，可能含纜車吊椅前後，和經營者「七合目→姿見站約7小時」不是同一段；正文把 8～9 小時寫成同一段的保險估法，不比子頁強，可接受。",
+      "claimId": "C88"
+    },
+    {
+      "articleExcerpt": "夏天體力夠的人",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
+      "sourceTitle": "登山・レジャー｜黒岳ロープウェイ",
+      "sourceQuote": "黒岳7合目登山口～黒岳山頂 上り：約1時間半 下り：約1時間｜黒岳山頂〜黒岳石室 約２０分｜黒岳石室～お鉢平一周 約5時間｜黒岳7合目登山口～旭岳ロープウェイ姿見駅 約7時間｜黒岳7合目登山口～銀泉台 約7時間",
+      "verdict": "verified",
+      "notes": "asahidake-or-sounkyo 正文：只帶夏季裝備能走的時間大約只到 9 月、2026 年吊椅夏季營業 6/27～10/15。「夏天」成立。",
+      "claimId": "C89"
+    },
+    {
+      "articleExcerpt": "溫泉街能吃飯的地方不多，能坐下來吃一頓的主要就是下面這5家",
       "sourceUrl": "https://sounkyo.net/eat/",
       "sourceTitle": "食す｜層雲峡観光協会",
-      "sourceQuote": "【層雲峡】Taisetsu Bakery Café & Bar｜ツリーバード｜登山軒｜BLACK MOUNTAIN COFFEE by Columbia｜ビアグリル・キャニオン｜大雪山食堂｜ともちゃん食堂黒岳店",
+      "sourceQuote": "【層雲峡】Taisetsu Bakery Café &amp; Bar｜【層雲峡】ツリーバード｜【層雲峡】登山軒｜【層雲峡】BLACK MOUNTAIN COFFEE by Columbia｜【層雲峡】ビアグリル・キャニオン｜【層雲峡】大雪山食堂｜【層雲峡】ともちゃん食堂黒岳店",
       "verdict": "verified",
-      "notes": "觀光協會列層雲峽7家，扣掉只開白天的 BMC 與ともちゃん剩5家。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C90"
     },
     {
-      "claimId": "C39",
       "articleExcerpt": "Beer Grill Canyon｜義大利菜、洋食｜11:30～15:30、17:30～20:30，晚上20:00最後點餐｜週二、週三公休",
       "sourceUrl": "http://bg-canyon.com/",
-      "sourceTitle": "ビアグリル・キャニオン",
-      "sourceQuote": "●営業時間 昼11：30～15：30 （オーダーストップは15：00） 夜17：30～20：30 （オーダーストップは20：00）｜定休日は火曜日、水曜日",
+      "sourceTitle": "層雲峡・山のイタ飯と洋食屋・ビアグリルキャニオン",
+      "sourceQuote": "●定 休 日 毎週火曜日、水曜日 ※メンテナンス、その他で臨時休業となる場合がございます。 ●営業時間 昼11：30～15：30 （オーダーストップは15：00） 夜17：30～20：30 （オーダーストップは20：00）",
       "verdict": "verified",
-      "notes": "料理類型見觀光協會「イタリア料理、洋食料理」。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 觀光協會頁（F146）寫 11:30～15:00、17:30～20:00、週三休，和店家官網不同，照官網。",
+      "claimId": "C91"
     },
     {
-      "claimId": "C40",
       "articleExcerpt": "大雪山食堂｜用在地食材的拉麵｜11:00～15:00、17:30～20:30｜不定休",
       "sourceUrl": "https://sounkyo.net/eat/detail.html?content=34",
       "sourceTitle": "【層雲峡】大雪山食堂｜層雲峡観光協会",
-      "sourceQuote": "ご当地ラーメンの店。地場産食材にこだわり｜11:00〜15:00 17:30〜20:30｜不定休",
+      "sourceQuote": "大雪山食堂｜ご当地ラーメンの店｜11:00〜15:00 17:30〜20:30 不定休",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C92"
     },
     {
-      "claimId": "C41",
       "articleExcerpt": "登山軒層雲峽店｜1930年創業的旭川拉麵老店，豚骨雞骨雙湯頭｜10:00～21:00｜11月到5月休業",
       "sourceUrl": "https://sounkyo.net/eat/detail.html?content=75",
       "sourceTitle": "【層雲峡】登山軒｜層雲峡観光協会",
       "sourceQuote": "昭和5年創業｜旭川ラーメンの老舗「登山軒」の層雲峡支店。トンコツと鶏ガラWスープ｜10～21時（11～5月は休業）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C93"
     },
     {
-      "claimId": "C42",
       "articleExcerpt": "Tree Bird｜丼飯、豚丼、成吉思汗定食｜17:00～20:00，19:30最後點餐｜只在5月到10月左右營業",
       "sourceUrl": "https://sounkyo.net/eat/detail.html?content=33",
       "sourceTitle": "【層雲峡】ツリーバード｜層雲峡観光協会",
-      "sourceQuote": "丼物、各種定食…豚丼やジンギスカン定食が人気です。｜5月〜10月頃　17:00〜19:30(LO) 20:00閉店",
+      "sourceQuote": "5月〜10月頃 17:00〜19:30(LO) 20:00閉店",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C94"
     },
     {
-      "claimId": "C43",
       "articleExcerpt": "Taisetsu Bakery Café & Bar｜大雪飯店東館1樓的麵包咖啡店｜8:00～18:00｜依時期可能變動，不限住客",
-      "sourceUrl": "https://www.hotel-taisetsu.com/facility.php",
-      "sourceTitle": "館内施設｜ホテル大雪 ONSEN&CANYON RESORT",
-      "sourceQuote": "Taisetsu Bakery Cafe&Bar 東館1階　8:00-18:00（時期により変更になる可能性があります） どなたでもご利用いただける",
+      "sourceUrl": "https://taisetsubakery.com/",
+      "sourceTitle": "Taisetsu Bakery Café & Bar",
+      "sourceQuote": "Open 8：00〜18：00 （時期により変更の可能性あり）｜Taisetsu Bakery Cafe&Bar 東館1階 8:00-18:00（時期により変更になる可能性があります） どなたでもご利用いただける",
       "verdict": "verified",
-      "notes": "店家官網「Open 8：00〜18：00 （時期により変更の可能性あり）」一致。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 觀光協會頁另寫晚上 20:00～22:30，兩個官網都沒有，照官網。",
+      "claimId": "C95"
     },
     {
-      "claimId": "C44",
-      "articleExcerpt": "纜車山麓站3樓的BLACK MOUNTAIN COFFEE和五合目黑岳站3樓的Tomochan食堂黑岳店（ともちゃん食堂黒岳店），後者要搭纜車上山才吃得到",
+      "articleExcerpt": "另外兩家只開白天，一家是纜車山麓站3樓的BLACK MOUNTAIN COFFEE，一家是五合目黑岳站3樓的Tomochan食堂黑岳店（ともちゃん食堂黒岳店），後者要搭纜車上山才吃得到",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
-      "sourceTitle": "アクセス・施設｜黒岳ロープウェイ",
-      "sourceQuote": "Black Mountain Coffee 黒岳ロープウェイ 層雲峡駅3F 営業時間 9:00〜15:30｜ともちゃん食堂 黒岳ロープウェイ 黒岳駅3F 営業時間 11:00～15:30",
+      "sourceTitle": "施設案内｜大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "Black Mountain Coffee 黒岳ロープウェイ 層雲峡駅3F｜ともちゃん食堂 黒岳ロープウェイ 黒岳駅3F 営業時間 11:00～15:30（ラストオーダー15:00）",
       "verdict": "verified",
-      "notes": "兩家都只開白天。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 BLACK MOUNTAIN COFFEE 觀光協會兩頁的營業時間不一致（F417），都不是晚上，「只開白天」成立。",
+      "claimId": "C96"
     },
     {
-      "claimId": "C45",
-      "articleExcerpt": "冬天登山軒與Tree Bird（ツリーバード）都休業，Taisetsu Bakery也只開到18:00，溫泉街晚上能吃飯的店剩得不多",
-      "sourceUrl": "https://sounkyo.net/eat/",
-      "sourceTitle": "食す｜層雲峡観光協会",
-      "sourceQuote": "（登山軒）10～21時（11～5月は休業）｜（ツリーバード）5月〜10月頃｜（Bakery）8:00-18:00",
+      "articleExcerpt": "11月到4月，登山軒跟Tree Bird（ツリーバード）都休業了，Taisetsu Bakery也只開到18:00，所以晚上就只剩Beer Grill Canyon（ビアグリル・キャニオン）跟大雪山食堂",
+      "sourceUrl": "https://sounkyo.net/eat/detail.html?content=75",
+      "sourceTitle": "【層雲峡】登山軒｜層雲峡観光協会",
+      "sourceQuote": "昭和5年創業｜旭川ラーメンの老舗「登山軒」の層雲峡支店。トンコツと鶏ガラWスープ｜10～21時（11～5月は休業）",
       "verdict": "verified",
-      "notes": "觀光協會溫泉街7家內，冬天晚上有時段的只剩 Canyon 與大雪山食堂，「剩得不多」成立。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 依據 F149、F147、F450、F452、F148；ホテル大雪的居酒屋在後段另寫為住宿者的選擇。",
+      "claimId": "C97"
     },
     {
-      "claimId": "C46",
-      "articleExcerpt": "大雪山食堂是不定休，冬天想去，當天先到巴士總站的觀光案內所問有沒有開",
-      "sourceUrl": "https://sounkyo.net/eat/detail.html?content=34",
-      "sourceTitle": "【層雲峡】大雪山食堂｜層雲峡観光協会",
-      "sourceQuote": "不定休",
-      "verdict": "verified",
-      "notes": "案內所在巴士總站、10:30～17:00 見大雪山ツアーズ「層雲峡バスターミナル内にある観光案内所」。"
-    },
-    {
-      "claimId": "C47",
-      "articleExcerpt": "Beer Grill Canyon（ビアグリル・キャニオン）在冰瀑祭期間還推出過冬季限定菜單",
+      "articleExcerpt": "不過Canyon冬天也有開，冰瀑祭期間還推出過冬季限定菜單",
       "sourceUrl": "http://bg-canyon.com/",
-      "sourceTitle": "ビアグリル・キャニオン",
-      "sourceQuote": "●冬季限定メニュー～3月25日 今年は気温も低く、氷瀑まつりに訪れたお客様もとても寒い思いをされています。",
+      "sourceTitle": "層雲峡・山のイタ飯と洋食屋・ビアグリルキャニオン",
+      "sourceQuote": "2021年12月21日 年末年始の営業は下記の様になっています。 12月24日、25日 休業 12月26日〜28日 通常営業 12月29〜1月1日 休業 1月2日より通常営業｜●冬季限定メニュー～3月25日",
       "verdict": "verified",
-      "notes": "證據是官網舊公告，「推出過」與原文相符。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C98"
     },
     {
-      "claimId": "C48",
-      "articleExcerpt": "Canyon每週二、週三公休，碰上大雪山食堂也休息的日子，溫泉街晚上就幾乎沒有地方吃飯",
+      "articleExcerpt": "Canyon每週二、週三公休，大雪山食堂則是不定休，如果兩家剛好撞在同一天休息的話，溫泉街晚上就幾乎沒有地方吃飯了",
       "sourceUrl": "http://bg-canyon.com/",
-      "sourceTitle": "ビアグリル・キャニオン",
-      "sourceQuote": "定休日は火曜日、水曜日｜（大雪山食堂）不定休",
+      "sourceTitle": "層雲峡・山のイタ飯と洋食屋・ビアグリルキャニオン",
+      "sourceQuote": "●定 休 日 毎週火曜日、水曜日 ※メンテナンス、その他で臨時休業となる場合がございます。 ●営業時間 昼11：30～15：30 （オーダーストップは15：00） 夜17：30～20：30 （オーダーストップは20：00）",
       "verdict": "verified",
-      "notes": "組合判斷成立；「幾乎」保留大雪茶屋與便利商店。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 舊版與新版只差「那一頁有談到」改成「也談到」（連結句）。",
+      "claimId": "C99"
     },
     {
-      "claimId": "C49",
-      "articleExcerpt": "2026年冰瀑祭的煙火20:30才放，看完時Canyon已經過了最後點餐，大雪山食堂也打烊了",
+      "articleExcerpt": "2026年冰瀑祭的煙火20:30才放，看完的時候Canyon已經過了最後點餐，大雪山食堂也打烊了，所以晚餐最好排在煙火前面",
       "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
       "sourceTitle": "第51回 氷瀑まつり 1/24開幕！（さんたつ プレスリリース）",
-      "sourceQuote": "期間中は毎晩20:30より花火打ち上げ｜2026年1月24日（土）～3月8日（日）",
+      "sourceQuote": "花火打ち上げ（毎晩20:30～）",
       "verdict": "verified",
-      "notes": "Canyon 20:00 最後點餐、大雪山食堂 20:30 打烊，成立。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 煙火 20:30（F75）、Canyon 20:00 最後點餐（F452）、大雪山食堂到 20:30（F148）。",
+      "claimId": "C100"
     },
     {
-      "claimId": "C50",
-      "articleExcerpt": "住在大雪飯店（ホテル大雪）的話，東館地下1樓還有開到24:00的居酒屋大雪茶屋",
+      "articleExcerpt": "住在大雪飯店（ホテル大雪）的話，還有東館地下1樓的居酒屋大雪茶屋，開到24:00",
       "sourceUrl": "https://www.hotel-taisetsu.com/facility.php",
-      "sourceTitle": "館内施設｜ホテル大雪 ONSEN&CANYON RESORT",
-      "sourceQuote": "居酒屋　大雪茶屋 東館地下1階　営業時間11:30-13:00 / 19:00-24:00",
+      "sourceTitle": "ホテル大雪｜館内施設",
+      "sourceQuote": "居酒屋 大雪茶屋 東館地下1階 営業時間11:30-13:00 / 19:00-24:00 お夜食やちょっとお腹が物足りない時などに最適。夜遅くまで営業しております。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C101"
     },
     {
-      "claimId": "C51",
-      "articleExcerpt": "從層雲峽觀光飯店走路約5分鐘有一家24小時營業的7-Eleven",
+      "articleExcerpt": "從層雲峽觀光飯店走路大約5分鐘，有一家24小時營業的7-Eleven",
       "sourceUrl": "https://sounkyo-kankou.co.jp/faq",
-      "sourceTitle": "よくあるご質問｜層雲峡観光ホテル",
-      "sourceQuote": "当館より徒歩5分ほどの距離に2件ございます。セブンイレブン 24時間営業",
+      "sourceTitle": "よくある質問｜層雲峡観光ホテル",
+      "sourceQuote": "当館より徒歩5分ほどの距離に2件ございます。セブンイレブン 24時間営業 セイコーマート 7：00～23：00(季節により変動あり)",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C102"
     },
     {
-      "claimId": "C52",
-      "articleExcerpt": "在上川吃過午飯，搭12:24或14:00的車約30分鐘到層雲峽，還趕得上15:20上山的末班纜車",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "上川森のテラス バスタッチ 発 12:24（層雲峡 着 12:54）｜14:00（14:30）",
+      "articleExcerpt": "上川是JR轉巴士的地方，往層雲峽的巴士一天有10班，所以在上川吃過午飯再搭12:24或14:00的車上山也來得及",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "上川森のテラス バスタッチ 発 8:24 9:30 10:50 11:24 12:24 14:00 14:54 15:54 18:04 19:54",
       "verdict": "verified",
-      "notes": "末班見經營者首頁「上り便の最終は営業終了時間の40分前」（16:00 關→15:20；夏季更晚）；走到纜車5分。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 30 分鐘到（F13），12:54／14:30 到，冬期纜車上行末班 15:20（F44）。",
+      "claimId": "C103"
     },
     {
-      "claimId": "C53",
-      "articleExcerpt": "表裡的地址可以直接貼進地圖App看步行路線",
+      "articleExcerpt": "旭町25的皐月食堂（さつき食堂）離上川層雲峽IC開車3分鐘",
       "sourceUrl": "https://sounkyo.net/eat/detail.html?content=43",
       "sourceTitle": "【上川駅周辺】さつき食堂｜層雲峡観光協会",
-      "sourceQuote": "住所 上川町旭町25",
+      "sourceQuote": "上川層雲峡ICから車で3分。｜ラーメン・そば・うどん・カレーライス・定食・丼ぶりものなどのお食事をご提供しています。｜住所 上川町旭町25",
       "verdict": "verified",
-      "notes": "地址逐列見各店來源（さつき、よし乃、あさひ、ふくる、KAMIKAWA KITCHEN、緑丘蔵），句子本身沒有距離主張。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 名稱照 glossary.json（2026-11-04 由 Satsuki食堂 改成皐月食堂）。",
+      "claimId": "C104"
     },
     {
-      "claimId": "C54",
       "articleExcerpt": "味噌拉麵Yoshino上川店｜濃郁味噌拉麵加大把豆芽，白飯免費續碗｜上川町新光町98-30｜11:00～15:00｜週四公休",
       "sourceUrl": "https://sounkyo.net/eat/detail.html?content=41",
       "sourceTitle": "【上川駅周辺】みそラーメンよし乃 上川店｜層雲峡観光協会",
-      "sourceQuote": "濃厚なスープにシャキシャキとしたもやしがどっさりと載っています。ライスはおかわり自由。｜上川郡上川町新光町98-30｜11：00～15：00 定休日：木曜日",
+      "sourceQuote": "自慢のみそラーメンは、濃厚なスープにシャキシャキとしたもやしがどっさりと載っています。ライスはおかわり自由。｜住所 上川郡上川町新光町98-30",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 時間與公休見 F152。",
+      "claimId": "C105"
     },
     {
-      "claimId": "C55",
       "articleExcerpt": "Asahi食堂｜特製味噌拉麵，一天限20份的夢幻鹽味拉麵｜上川町南町135｜11:00～20:00｜不定休",
       "sourceUrl": "https://sounkyo.net/eat/detail.html?content=38",
       "sourceTitle": "【上川駅周辺】あさひ食堂｜層雲峡観光協会",
-      "sourceQuote": "特製みそや“幻のしお”｜おすすめ1日20食限定　幻の塩｜北海道上川郡上川町南町135｜11：00～20：00 不定休",
+      "sourceQuote": "道産の野菜・果物、数種類のエキスを北海道の田舎みそに混ぜ込んだ特製みそや“幻のしお”を販売｜おすすめ1日20食限定 幻の塩｜営業時間 11：00～20：00 不定休",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C106"
     },
     {
-      "claimId": "C56",
-      "articleExcerpt": "Satsuki食堂｜拉麵、蕎麥麵、烏龍麵、咖哩飯、定食與丼飯｜上川町旭町25｜11:00～15:00、17:30～19:00｜週二公休",
+      "articleExcerpt": "皐月食堂｜拉麵、蕎麥麵、烏龍麵、咖哩飯、定食與丼飯｜上川町旭町25｜11:00～15:00、17:30～19:00｜週二公休",
       "sourceUrl": "https://sounkyo.net/eat/detail.html?content=43",
       "sourceTitle": "【上川駅周辺】さつき食堂｜層雲峡観光協会",
-      "sourceQuote": "ラーメン・そば・うどん・カレーライス・定食・丼ぶりもの｜上川町旭町25｜11：00～15：00　17：30～19：00 定休日：火曜日",
+      "sourceQuote": "上川層雲峡ICから車で3分。｜ラーメン・そば・うどん・カレーライス・定食・丼ぶりものなどのお食事をご提供しています。｜住所 上川町旭町25",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 時間與公休見 F152。",
+      "claimId": "C107"
     },
     {
-      "claimId": "C57",
       "articleExcerpt": "KAMIKAWA KITCHEN｜起司工房，附設咖啡區有現烤麵包｜上川町北町189-3｜10:00～16:00｜週二、週三公休",
       "sourceUrl": "https://kamikawa-kitchen.com/",
       "sourceTitle": "KAMIKAWA KITCHEN",
-      "sourceQuote": "併設しているカフェでは 焼き立てパンなどの 軽食も｜北海道上川郡上川町北町189-3｜10:00～16:00｜CLOSED 火・水",
+      "sourceQuote": "2024年春に オープンしました。｜生乳は 100%上川町産｜併設しているカフェでは 焼き立てパンなどの 軽食も｜OPEN 10:00～16:00 CLOSED 火・水",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C108"
     },
     {
-      "claimId": "C58",
       "articleExcerpt": "上川大雪酒造綠丘藏Gift Shop｜日本酒、酒粕與店舖限定酒｜上川町旭町25-1｜夏季10:00～16:00，冬季10:00～15:00｜不定休",
       "sourceUrl": "https://kamikawa-taisetsu.co.jp/ryokkyu/",
       "sourceTitle": "緑丘蔵｜上川大雪酒造",
-      "sourceQuote": "北海道上川郡上川町旭町25番地1｜営業時間／10:00〜16:00（夏季） 10:00〜15:00（冬季） 定休日／不定休｜ショップ限定の日本酒や酒粕などの食品",
+      "sourceQuote": "営業時間／10:00〜16:00（夏季） 10:00〜15:00（冬季） 定休日／不定休｜ショップ限定の日本酒や酒粕などの食品｜蔵内部の見学については、商品の衛生管理上対応しておりません。 屋外の見学窓からはご自由に見学頂けます。 冬期間、積雪の多い時期は外部からの見学も出来ない場合があります",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C109"
     },
     {
-      "claimId": "C59",
       "articleExcerpt": "JA朝採市場Fukuru｜現採蔬菜直賣所，木屋裡賣霜淇淋｜上川町旭町25番地｜4、5、9、10月9:00～15:00，6到8月9:00～17:00｜只在4月下旬到10月中旬營業",
       "sourceUrl": "https://sounkyo.net/eat/detail.html?content=37",
       "sourceTitle": "【上川駅周辺】ＪＡ朝もぎ市場「ふくる」｜層雲峡観光協会",
-      "sourceQuote": "採れたて新鮮野菜が勢ぞろいの直売所。｜ログハウスでは濃厚ソフトクリーム｜上川郡上川町旭町25番地｜4月下旬～10月中旬｜4,5,9,10月 9：00～15：00｜6,7,8月 9：00～17：00",
+      "sourceQuote": "4月下旬～10月中旬｜4,5,9,10月 9：00～15：00｜6,7,8月 9：00～17：00",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 品項與地址見 F466。",
+      "claimId": "C110"
     },
     {
-      "claimId": "C60",
       "articleExcerpt": "Asahi食堂（あさひ食堂）是不定休",
       "sourceUrl": "https://sounkyo.net/eat/detail.html?content=38",
       "sourceTitle": "【上川駅周辺】あさひ食堂｜層雲峡観光協会",
-      "sourceQuote": "11：00～20：00 不定休",
+      "sourceQuote": "道産の野菜・果物、数種類のエキスを北海道の田舎みそに混ぜ込んだ特製みそや“幻のしお”を販売｜おすすめ1日20食限定 幻の塩｜営業時間 11：00～20：00 不定休",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C111"
     },
     {
-      "claimId": "C61",
-      "articleExcerpt": "KAMIKAWA KITCHEN用的生乳全是上川町產",
-      "sourceUrl": "https://kamikawa-kitchen.com/",
-      "sourceTitle": "KAMIKAWA KITCHEN",
-      "sourceQuote": "チーズや ヨーグルトに 使う 生乳は 100%上川町産 の ものを 使用しています。",
+      "articleExcerpt": "KAMIKAWA KITCHEN的Kiyomi在第7回Japan Cheese Awards 2026，跟另外2款起司一起得到銅牌",
+      "sourceUrl": "https://kamikawa-kitchen.com/info/%e7%ac%ac7%e5%9b%9e-japan-cheese-awards2026%e3%81%a7%e9%8a%85%e8%b3%9e%e5%8f%97%e8%b3%9e/",
+      "sourceTitle": "第7回 Japan Cheese Awards2026で銅賞受賞｜KAMIKAWA KITCHEN",
+      "sourceQuote": "KAMIKAWA KITCHENのチーズ3品が「第7回 Japan Cheese Awards 2026」において、銅賞を受賞いたしました。｜・フロマージュブラン くま笹塩味 ・カマンベール・キヨミ ・カミカワモッツァレラ 真空タイプ",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 舊版這段的「2024年春天開幕、生乳上川町產、WCCC 金牌」移到第 2 節 KAMIKAWA KITCHEN 看點，沒有少。",
+      "claimId": "C112"
     },
     {
-      "claimId": "C62",
-      "articleExcerpt": "招牌起司Kiyomi（カマンベール・キヨミ）在世界起司大賽（WCCC）2026拿下卡門貝爾組金牌",
-      "sourceUrl": "https://kamikawa-kitchen.com/info/%e4%b8%96%e7%95%8c%e6%9c%80%e5%a4%a7%e7%b4%9a%e3%81%ae%e6%8a%80%e8%a1%93%e3%82%b3%e3%83%b3%e3%83%86%e3%82%b9%e3%83%88wccc-2026%e3%81%a7%e4%b8%80%e4%bd%8d/",
-      "sourceTitle": "世界最大級の技術コンテストWCCC 2026でGOLD｜KAMIKAWA KITCHEN",
-      "sourceQuote": "「カマンベール・キヨミ」が 世界最大級の技術コンテスト WCCC 2026 WORLD CHAMPIONSHIP CHEESE CONTEST カマンベール部門（Class 31: Camembert）において｜GOLD (Best of Class)",
+      "articleExcerpt": "上川大雪酒造2017年起在綠丘藏釀酒",
+      "sourceUrl": "https://kamikawa-taisetsu.co.jp/",
+      "sourceTitle": "上川大雪酒造",
+      "sourceQuote": "2016年、日本酒の製造を休止していた三重県の酒造会社を、…北海道上川郡上川町に移転。 2017年、上川町の豊かな自然に囲まれた小さな酒蔵「緑丘蔵」から私たちの酒造りがはじまりました。",
       "verdict": "verified",
-      "notes": "「招牌」：官網首頁介紹產品時第一個列キヨミ；WCCC 全名 World Championship Cheese Contest。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。",
+      "claimId": "C113"
     },
     {
-      "claimId": "C63",
-      "articleExcerpt": "上川大雪酒造的綠丘藏內部不開放，不過可以從室外的參觀窗看進去",
+      "articleExcerpt": "酒藏內部不開放，不過可以從室外的參觀窗看進去",
       "sourceUrl": "https://kamikawa-taisetsu.co.jp/ryokkyu/",
       "sourceTitle": "緑丘蔵｜上川大雪酒造",
-      "sourceQuote": "蔵内部の見学については、商品の衛生管理上対応しておりません。屋外の見学窓からはご自由に見学頂けます。",
+      "sourceQuote": "営業時間／10:00〜16:00（夏季） 10:00〜15:00（冬季） 定休日／不定休｜ショップ限定の日本酒や酒粕などの食品｜蔵内部の見学については、商品の衛生管理上対応しておりません。 屋外の見学窓からはご自由に見学頂けます。 冬期間、積雪の多い時期は外部からの見学も出来ない場合があります",
       "verdict": "verified",
-      "notes": "原文另寫冬季積雪多時室外也可能看不到（正文沒寫，不擋）。"
+      "notes": "第 7 節資料節，逐格對舊版主頁（pre-place-entry/reader-preview.md）同一節：一致，數字沒改；舊版 fact-check（2026-11-02）verified。 原文另寫冬天積雪多時室外也可能看不到，正文沒寫，舊版同樣沒寫並 verified。",
+      "claimId": "C114"
     },
     {
-      "claimId": "C64",
-      "articleExcerpt": "旭岳是標高2,291公尺的北海道最高峰",
-      "sourceUrl": "https://www.asahidake-vc-2291.jp/about/",
-      "sourceTitle": "旭岳について｜旭岳ビジターセンター",
-      "sourceQuote": "2,291 m｜大雪山の主峰であり、北海道の最高峰です。",
+      "articleExcerpt": "**層雲峽觀光協會**，溫泉街的住宿、餐飲清單與巴士時刻表都在這裡",
+      "sourceUrl": "https://sounkyo.net/",
+      "sourceTitle": "層雲峡観光協会",
+      "sourceQuote": "観る 泊まる 食す 遊ぶ 買う 行く 撮る",
       "verdict": "verified",
-      "notes": ""
+      "notes": "觀光協會「泊まる」「食す」與交通頁（轉載道北巴士時刻表，F400／舊版 C7）。",
+      "claimId": "C115"
     },
     {
-      "claimId": "C65",
-      "articleExcerpt": "纜車大約10分鐘上到約1,600公尺的姿見站，比黑岳纜車的1,300公尺高",
-      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
-      "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "片道約10分｜姿見駅の現在の天候（標高1600m）",
-      "verdict": "verified",
-      "notes": "東川町觀光協會也寫「標高1,600m地点までは旭岳ロープウエイが運行」。"
-    },
-    {
-      "claimId": "C66",
-      "articleExcerpt": "旭岳溫泉沒有溫泉街，9間住宿散在樹林裡",
-      "sourceUrl": "https://www.welcome-higashikawa.jp/onsen",
-      "sourceTitle": "温泉｜東川町観光協会",
-      "sourceQuote": "旭岳温泉には温泉街はなく｜樹木に囲まれ｜宿泊できる施設は9件あり",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C67",
-      "articleExcerpt": "層雲峽的旅館與店家則聚在峽谷裡的溫泉街",
-      "sourceUrl": "https://sounkyo.net/view/",
-      "sourceTitle": "観る｜層雲峡観光協会",
-      "sourceQuote": "層雲峡には、大雪山系最大の温泉街があり、豊かな自然の中に充実した温泉宿泊施設が立ち並んでいます。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C68",
-      "articleExcerpt": "旭岳的姿見池散策路（姿見の池散策路）不用登山，繞高山池塘一圈大約1小時，6月到10月中旬開放",
-      "sourceUrl": "https://asahidake.hokkaido.jp/ja/",
-      "sourceTitle": "大雪山旭岳ロープウェイ",
-      "sourceQuote": "散策コース （6月～10月中旬）｜1周 約 1時間 ※ / 約 1.7km",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C69",
-      "articleExcerpt": "旭川往旭岳的Ideyu號（いで湯号）一天只有4班，從旭川站7:15、9:15、12:15、14:15發車",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
-      "sourceTitle": "66番 旭川空港経由 旭岳線（いで湯号）｜旭川電気軌道",
-      "sourceQuote": "4往復運行｜旭川駅（のりば9） 7:15 9:15 12:15 14:15",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C70",
-      "articleExcerpt": "往層雲峽的直達車則有7班",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "旭川駅前 発 6:55 9:55 10:55 13:25 14:25 16:35 18:25",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C71",
-      "articleExcerpt": "有體力也可以從黑岳七合目縱走到旭岳纜車姿見站，大約7小時",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/leisure/",
-      "sourceTitle": "登山・レジャー｜黒岳ロープウェイ",
-      "sourceQuote": "旭岳ロープウェイ姿見駅 約7時間",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C72",
-      "articleExcerpt": "縱走要先搭夏季的吊椅上七合目，2026年夏季是6月27日到10月15日",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "〈2026夏期〉6月27日～9月30日 6:30～17:30｜10月1日〜10月15日 7:30〜16:30｜10月16日～ 夏季シーズン終了",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C73",
-      "articleExcerpt": "終點在旭岳那一側，下山後回旭川要搭Ideyu號",
-      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
-      "sourceTitle": "66番 旭川空港経由 旭岳線（いで湯号）｜旭川電気軌道",
-      "sourceQuote": "旭岳 … 旭川駅（66番 旭川空港経由 旭岳線、4往復運行）",
-      "verdict": "verified",
-      "notes": "縱走終點是旭岳纜車姿見站（黒岳纜車登山頁），下山到旭岳溫泉，回旭川的公車是いで湯号。"
-    },
-    {
-      "claimId": "C74",
-      "articleExcerpt": "推薦去程搭09:55從旭川站前發車、11:54到層雲峽的巴士，回程搭17:00的末班車，18:55回到旭川",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "旭川駅前 発 9:55 → 層雲峡 着 11:54｜層雲峡 発 17:00 → 旭川駅前 着 18:55",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C75",
-      "articleExcerpt": "可以搭06:55的頭班車，08:54就到",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "旭川駅前 発 6:55 → 層雲峡 着 8:54",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C76",
-      "articleExcerpt": "也有14:40發、16:35到的車",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "層雲峡 発 14:40 → 旭川駅前 着 16:35",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C77",
-      "articleExcerpt": "從下車的層雲峽巴士總站（層雲峡バスターミナル）走約5分鐘就到黑岳纜車層雲峽站",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
-      "sourceTitle": "アクセス・施設｜黒岳ロープウェイ",
-      "sourceQuote": "道北バス「層雲峡・上川線」乗車約30分終点「層雲峡」下車、徒歩5分",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C78",
-      "articleExcerpt": "纜車每20分鐘一班，坐7分鐘上到五合目",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "■ロープウェイ〈片道7分、20分間隔で運行〉",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C79",
-      "articleExcerpt": "五合目的散步道一圈約30分鐘，下山後還有時間看瀑布",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/sightseeing/",
-      "sourceTitle": "見どころ｜黒岳ロープウェイ",
-      "sourceQuote": "一周約30分の簡単コース",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C80",
-      "articleExcerpt": "沒車要去瀑布，可以叫層雲峽觀光計程車（層雲峡観光ハイヤー）",
-      "sourceUrl": "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo00000004ba.html",
-      "sourceTitle": "交通機関｜上川町",
-      "sourceQuote": "層雲峡観光ハイヤー",
-      "verdict": "verified",
-      "notes": "觀光協會交通頁也列「タクシー 層雲峡の観光はもとより…」層雲峡営業所。"
-    },
-    {
-      "claimId": "C81",
-      "articleExcerpt": "週末也有大雪山Tours（大雪山ツアーズ）騎自行車去銀河流星瀑布的導覽團，集合在纜車山麓站1樓",
-      "sourceUrl": "https://sounkyo.net/enjoy/detail.html?content=78",
-      "sourceTitle": "大雪山ツアーズ｜層雲峡観光協会",
-      "sourceQuote": "週末は層雲峡からすぐ近くの大自然に遊びに行きましょう！｜「銀河流星の滝サイクリング」｜層雲峡黒岳ロープウェイ山麓駅1階",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C82",
-      "articleExcerpt": "巴士總站裡的觀光案內所10:30開到17:00",
-      "sourceUrl": "https://www.daisetsuzantours.com/service",
-      "sourceTitle": "層雲峡インフォメーションセンター｜大雪山ツアーズ",
-      "sourceQuote": "層雲峡バスターミナル内にある観光案内所です。｜営業時間：10：30～17：00（年末・年始休業日あり）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C83",
-      "articleExcerpt": "溫泉街有町營的黑岳之湯（黒岳の湯），大人800日圓。5月到10月是10:00開到22:00，最後入場21:30，11月到4月是11:00開到21:30，最後入場21:00。過年的12月31日到1月3日只開到18:00",
-      "sourceUrl": "https://sounkyo.net/stay/detail.html?content=25",
-      "sourceTitle": "【層雲峡】黒岳の湯（日帰り入浴のみ）｜層雲峡観光協会",
-      "sourceQuote": "5月1日～10月31日 10時～22時00分 （最終受付は21時30分まで)｜11月1日～4月30日 11時～21時30分 (最終受付は21時まで)｜12月31日～1月3日 11時～18時まで｜大人 ：800円",
-      "verdict": "verified",
-      "notes": "「町營」見上川町「大雪山バーデハウス設置条例」（https://www.town.hokkaido-kamikawa.lg.jp/reiki/reiki_honbun/a108RG00000499.html）：名称 層雲峡黒岳の湯，町設置、指定管理者營運。"
-    },
-    {
-      "claimId": "C84",
-      "articleExcerpt": "黑岳纜車從10月16日到隔年6月20日是8:00開到16:00，中間11月9日到30日停駛整備，上山的末班是15:20",
+      "articleExcerpt": "**黑岳纜車**，當天的纜車與吊椅運行狀況、營業時間與票價",
       "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
       "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
       "sourceQuote": "10月16日～11月8日 8:00～16:00｜11月9日～11月30日 整備運休｜12月1日～12月31日 8:00～16:00｜1月1日～6月20日 8:00～16:00｜上り便の最終は営業終了時間の40分前です。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "舊版 C110 verified。",
+      "claimId": "C116"
     },
     {
-      "claimId": "C85",
-      "articleExcerpt": "夏季6月21日到9月30日延長成6:00到18:00",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "6月21日～9月30日　6:00～18:00",
-      "verdict": "verified",
-      "notes": "現行頁的一般時段（2026年因換車廂是6/27起，見存檔；正文這句沒寫年份，照現行頁）。"
-    },
-    {
-      "claimId": "C86",
-      "articleExcerpt": "2026年的會場在石狩川河岸，大大小小約30座冰雕，最高的超過10公尺",
-      "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
-      "sourceTitle": "第51回 氷瀑まつり 1/24開幕！（さんたつ プレスリリース）",
-      "sourceQuote": "石狩川河川敷の広大な会場には、高さ10mを超える氷の建造物や「氷瀑神社」など、大小約30基の氷像が立ち並びます。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C87",
-      "articleExcerpt": "入夜後打上七彩燈光，每晚20:30從冰雕後方放煙火",
-      "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
-      "sourceTitle": "第51回 氷瀑まつり 1/24開幕！（さんたつ プレスリリース）",
-      "sourceQuote": "七色の氷像群と「毎晩」上がる冬花火｜期間中は毎晩20時30分より、氷像の裏手から花火が打ち上げられ",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C88",
-      "articleExcerpt": "這一年入場要付1,000日圓",
-      "sourceUrl": "https://sounkyo.net/hyoubaku/",
-      "sourceTitle": "層雲峡温泉 氷瀑まつり",
-      "sourceQuote": "第51回 層雲峡温泉氷瀑まつり｜協力金 1,000円",
-      "verdict": "verified",
-      "notes": "原文是入場協力金。"
-    },
-    {
-      "claimId": "C89",
-      "articleExcerpt": "週末假日11:00就開場，當天來回可以白天看冰雕，只是看不到煙火",
-      "sourceUrl": "https://sounkyo.net/hyoubaku/",
-      "sourceTitle": "層雲峡温泉 氷瀑まつり",
-      "sourceQuote": "土日祝　11：00～21：30（最終入場21:15）",
-      "verdict": "verified",
-      "notes": "回旭川末班17:00，煙火20:30。"
-    },
-    {
-      "claimId": "C90",
-      "articleExcerpt": "平日要到17:00才開場，回旭川的末班車正好在這時開走。回上川的末班也趕不上煙火",
-      "sourceUrl": "https://sounkyo.net/hyoubaku/",
-      "sourceTitle": "層雲峡温泉 氷瀑まつり",
-      "sourceQuote": "平日　17：00～21：30（最終入場21:15）",
-      "verdict": "verified",
-      "notes": "回上川末班18:55（時刻表），煙火20:30。"
-    },
-    {
-      "claimId": "C91",
-      "articleExcerpt": "上川1月的平均氣溫是零下8.4度，平均最低零下13.8度",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "平年値 上川｜気象庁",
-      "sourceQuote": "1月 平均気温 -8.4｜日最低気温 -13.8（統計期間 1991～2020）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C92",
-      "articleExcerpt": "溫泉街在標高600公尺以上，比上川還高",
-      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10611.html",
-      "sourceTitle": "層雲峡温泉｜北海道観光機構",
-      "sourceQuote": "標高600mを超える高地にある温泉街は",
-      "verdict": "verified",
-      "notes": "上川觀測點標高324公尺（氣象廳）。"
-    },
-    {
-      "claimId": "C93",
-      "articleExcerpt": "9月底以前纜車6:00就開，從旭川搭頭班巴士卻要08:54才到",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "6月21日～9月30日　6:00～18:00｜（時刻表）層雲峡 着 8:54",
-      "verdict": "verified",
-      "notes": "觀光協會 content=45 也寫「夏期 06:00～18:00」。"
-    },
-    {
-      "claimId": "C94",
-      "articleExcerpt": "峽谷約七成是岳樺的黃葉，楓紅夾在其中特別顯眼",
-      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/momiji_valley_guide.pdf",
-      "sourceTitle": "紅葉谷散策ガイド（層雲峡ビジターセンター）",
-      "sourceQuote": "峡谷の色合いは、７割ほどがダケカンバ類の黄葉で占められている事からカエデ類の深みのある紅葉は特に目立ち",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C95",
-      "articleExcerpt": "赤岳銀泉台的紅葉在9月中旬最盛，從層雲峽開車約50分鐘",
-      "sourceUrl": "https://sounkyo.net/view/detail.html?content=9",
-      "sourceTitle": "【層雲峡】銀泉台｜層雲峡観光協会",
-      "sourceQuote": "９月中旬、銀泉台の美しい紅葉が日本一早いピークを迎えます。｜層雲峡より大雪湖、大雪山観光道路を車で50分ほどです。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C96",
-      "articleExcerpt": "這段時間有自用車管制，2026年是9月12日到23日。停車與接駁巴士都要事前預約，前一天15:00截止",
-      "sourceUrl": "https://sounkyovc.net/blog/92483",
-      "sourceTitle": "令和8年度 紅葉期のマイカー規制および予約について｜層雲峡ビジターセンター",
-      "sourceQuote": "規制期間: 令和8年9月12日(土)〜9月23日(水)｜駐車場利用・バス乗車ともに事前予約制｜予約は前日15時締切",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C97",
-      "articleExcerpt": "不開車就搭上川町的預約制接駁巴士，2026年從層雲峽資訊中心前（層雲峡インフォメーションセンター前）6:00、7:00出發，約1小時到銀泉台。車資單程2,500日圓，每班上限40人",
-      "sourceUrl": "https://web.archive.org/web/20260823191057id_/https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo0000000eco.html",
-      "sourceTitle": "令和8年度 紅葉期 銀泉台 予約制貸切バス｜上川町（2026-08-23 存檔；原頁現在 404）",
-      "sourceQuote": "層雲峡インフォメーションセンター前を発着とする「予約制貸切バス」｜バス①　層雲峡発6：00　～　銀泉台着7：00 バス②　層雲峡発7：00　～　銀泉台着8：00｜片道　2,500円｜1台あたり　40人",
-      "verdict": "verified",
-      "notes": "上川町原頁現在 404，以存檔讀取（純 curl）；原文是「予約制貸切バス」，對一般旅客是按座位賣票的接駁，「接駁巴士」可接受。"
-    },
-    {
-      "claimId": "C98",
-      "articleExcerpt": "從旭川走國道39號到層雲峽約66公里，開車1個半小時左右",
-      "sourceUrl": "https://sounkyo.net/go/detail.html?content=62",
-      "sourceTitle": "アクセス｜層雲峡観光協会（転載の道北バス「層雲峡・上川線」2026.7.1改正 時刻表画像 content_20260630_164326.jpg）",
-      "sourceQuote": "旭川 - (国道39号)- 層雲峡　66Km",
-      "verdict": "verified",
-      "notes": "時間見纜車アクセス頁「国道39号線を北見・網走方面に約1時間30分」。"
-    },
-    {
-      "claimId": "C99",
-      "articleExcerpt": "往北見翻石北峠約90公里、1個半小時左右，往帶廣翻三國峠約122公里、2小時左右，都是夏天路況的參考時間",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/facility/",
-      "sourceTitle": "アクセス・施設｜黒岳ロープウェイ",
-      "sourceQuote": "北見から 国道39号線を旭川方面に石北峠を越え約1時間30分｜帯広から 国道273号を旭川方面に三国峠を越え約2時間",
-      "verdict": "verified",
-      "notes": "距離見觀光協會「北見 90Km｜帯広 122Km」；「夏天路況」是保守限定。"
-    },
-    {
-      "claimId": "C100",
-      "articleExcerpt": "冬天遇到暴風雪或有雪崩之虞，兩條山路都可能臨時封路，什麼時候恢復通行也說不準",
-      "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll000000b6t2-att/pm5osg00000004sh.pdf",
-      "sourceTitle": "国道39号・273号 通行止めのお知らせ｜北海道開発局旭川開発建設部",
-      "sourceQuote": "国道３９号 … 解除未定（大雪による雪崩のおそれのため）｜国道２７３号 … 解除未定（大雪による道路障害のおそれのため）｜悪天候により",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C101",
-      "articleExcerpt": "2025年2月石北峠就封過32.5公里",
-      "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll000000b6t2-att/pm5osg00000004sh.pdf",
-      "sourceTitle": "国道39号・273号 通行止めのお知らせ｜北海道開発局旭川開発建設部",
-      "sourceQuote": "令和７年２月４日｜国道３９号 上川町層雲峡温泉～北見市留辺蘂町富士見 Ｌ＝３２．５ｋｍ",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C102",
-      "articleExcerpt": "溫泉街的路面10月下旬就可能積雪，夏季輪胎走山路非常危險，建議確認車子換了冬季輪胎",
-      "sourceUrl": "https://sounkyovc.net/blog/92605",
-      "sourceTitle": "層雲峡ビジターセンター 山だより 2026-10-22",
-      "sourceQuote": "夏タイヤでの峠道の走行は大変危険です。層雲峡へお越しの際は、必ず冬タイヤを装着の上",
-      "verdict": "verified",
-      "notes": "「例年十月下旬には路面が積雪状態になる日があります」見 blog/92599。"
-    },
-    {
-      "claimId": "C103",
-      "articleExcerpt": "開往北見與阿寒湖的Sunrise號（サンライズ号）是預約定員制，要先訂位才能搭",
-      "sourceUrl": "https://www.akanbus.co.jp/express/sunrise.html",
-      "sourceTitle": "サンライズ号｜阿寒バス",
-      "sourceQuote": "【全席禁煙・予約定員制】",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C104",
-      "articleExcerpt": "從層雲峽9:22開的那班11:15到北見巴士總站、13:13到阿寒湖，14:37那班16:30到北見、18:28到阿寒湖",
-      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
-      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
-      "sourceQuote": "層雲峡 乗 9:22 14:37｜北見バスターミナル（③のりば） 降 11:15 16:30｜阿寒湖バスセンター 降 13:13 18:28",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C105",
-      "articleExcerpt": "單程車資從層雲峽到北見是3,050日圓，到阿寒湖是4,400日圓",
-      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
-      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
-      "sourceQuote": "層雲峡～阿寒湖 4,400円｜層雲峡～北見（東相内） 3,050円（片道運賃）",
-      "verdict": "verified",
-      "notes": "票價表的北見區間標「北見（東相内）」，同一票價區。"
-    },
-    {
-      "claimId": "C106",
-      "articleExcerpt": "層雲峽沒有售票窗口",
-      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
-      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
-      "sourceQuote": "永山、当麻、愛別橋、上川、層雲峡、温根湯、津別、阿寒町では乗車券発売所窓口はございませんのでご予約の上、Web決済、コンビニでの発券等をご利用ください。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C107",
-      "articleExcerpt": "用Bus Plaza（バスぷらざ）或Hassha Orai Net（発車オーライネット）訂位後，在網路付款，或到便利商店取票",
-      "sourceUrl": "https://www.akanbus.co.jp/express/sunrise.html",
-      "sourceTitle": "サンライズ号｜阿寒バス",
-      "sourceQuote": "予約・購入｜バスぷらざ｜発車オーライネット",
-      "verdict": "verified",
-      "notes": "付款見時刻表 PDF「ご予約の上、Web決済、コンビニでの発券等をご利用ください」。"
-    },
-    {
-      "claimId": "C108",
-      "articleExcerpt": "從阿寒湖、北見回層雲峽的班次，層雲峽交通的Sunrise號一節也列成了時刻表",
-      "sourceUrl": "https://www.akanbus.co.jp/express/pdf/sunrise.pdf",
-      "sourceTitle": "サンライズ号 時刻表（2025年9月1日改正）｜阿寒バス",
-      "sourceQuote": "釧路▶▶▶北見▶▶▶旭川（回程方向時刻表）",
-      "verdict": "verified",
-      "notes": "連結句；回程班次存在於同一 PDF。"
-    },
-    {
-      "claimId": "C109",
-      "articleExcerpt": "**層雲峽觀光協會**，溫泉街的住宿、餐飲清單與巴士時刻表都在這裡",
-      "sourceUrl": "https://sounkyo.net/",
-      "sourceTitle": "層雲峡観光協会",
-      "sourceQuote": "泊まる｜食す｜行く（アクセス頁「2026年7月以降 道北バス時刻表」）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C110",
-      "articleExcerpt": "**黑岳纜車**，當天的纜車與吊椅運行狀況、營業時間與票價",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "本日の運行状況｜ロープウェイ｜リフト｜料金・営業時間について",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C111",
       "articleExcerpt": "**層雲峽溫泉冰瀑祭官網**，當年的日期、時間與入場費用在這裡公布",
       "sourceUrl": "https://sounkyo.net/hyoubaku/",
       "sourceTitle": "層雲峡温泉 氷瀑まつり",
-      "sourceQuote": "開催日程 2027.1.23(土)～3.7(日)｜開催時間｜協力金 1,000円",
+      "sourceQuote": "開催時間 平日 17：00～21：30（最終入場21:15）土日祝 11：00～21：30（最終入場21:15）｜期間 2026年1月24日 (土)～3月8日 (日)",
       "verdict": "verified",
-      "notes": ""
+      "notes": "舊版 C111 verified。",
+      "claimId": "C117"
     },
     {
-      "claimId": "C112",
       "articleExcerpt": "**層雲峽遊客中心的山況通訊（山だより）**，溫泉街的紅葉、積雪與路況近況",
       "sourceUrl": "https://sounkyovc.net/blog/92605",
       "sourceTitle": "層雲峡ビジターセンター 山だより 2026-10-22",
-      "sourceQuote": "夏タイヤでの峠道の走行は大変危険です。",
+      "sourceQuote": "層雲峡温泉街にも雪が積もりました。昨年とほぼ同時期の雪景色となります。…夏タイヤでの峠道の走行は大変危険です。層雲峡へお越しの際は、必ず冬タイヤを装着の上",
       "verdict": "verified",
-      "notes": "遊客中心首頁 sounkyovc.net 有山だより連結。"
+      "notes": "正文連的是 https://sounkyovc.net/ 首頁；山だより見 F32、F410。舊版 C112 verified。",
+      "claimId": "C118"
     },
     {
-      "claimId": "C113",
       "articleExcerpt": "**Sunrise號時刻與預約**，往北見、阿寒湖的長途巴士",
       "sourceUrl": "https://www.akanbus.co.jp/express/sunrise.html",
       "sourceTitle": "サンライズ号｜阿寒バス",
-      "sourceQuote": "予約・購入｜バスぷらざ｜発車オーライネット｜サンライズ号",
+      "sourceQuote": "※永山、当麻、愛別橋、上川、層雲峡、温根湯、津別、阿寒町では乗車券発売所窓口はございませんのでご予約の上、Web決済、コンビニでの発券等をご利用ください。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "正文連 https://www.akanbus.co.jp/express/sunrise.html；舊版 C113 verified。",
+      "claimId": "C119"
+    },
+    {
+      "articleExcerpt": "excerpt：層雲峽是石狩川沿岸的斷崖峽谷，谷底有大雪山系最大的溫泉街",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "石狩川沿いに延々２４kmにわたって続く断崖絶壁。",
+      "verdict": "verified",
+      "notes": "F93、F95。",
+      "claimId": "C120"
+    },
+    {
+      "articleExcerpt": "excerpt：街上有一座就在石狩川旁邊的峽谷大露天",
+      "sourceUrl": "https://sounkyo-kankou.co.jp/onsen",
+      "sourceTitle": "温泉｜層雲峡観光ホテル",
+      "sourceQuote": "露天風呂の側には石狩川があり",
+      "verdict": "verified",
+      "notes": "石狩川旁邊：官網原文支持（2026-11-26 重開）。「街上有一座」沒寫是層雲峽觀光飯店的浴場，讀者可能以為是公共設施；不算事實錯誤，作者可考慮改成「溫泉街的層雲峽觀光飯店有一座就在石狩川旁邊的峽谷大露天」。",
+      "claimId": "C121"
+    },
+    {
+      "articleExcerpt": "excerpt：離溫泉街約3公里的地方，有兩道入選日本瀑布百選的瀑布，一道細白，一道粗壯，別名女瀑與男瀑",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "日本の滝百選にも入っている名瀑です｜細く繊細な白糸のように優美な姿で流れ落ちる「銀河の滝」、太い１本の滝となって力強く流れ落ちる「流星の滝」｜別名女滝・男滝",
+      "verdict": "verified",
+      "notes": "距離 F605。",
+      "claimId": "C122"
+    },
+    {
+      "articleExcerpt": "seoDescription：層雲峽從旭川搭巴士單程1小時59分，當天來回搭得到黑岳纜車",
+      "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
+      "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡（道北バス販売サイト）",
+      "sourceQuote": "所要時間：1時間59分（旭川-層雲峡）｜所要時間：30分（上川-層雲峡）",
+      "verdict": "verified",
+      "notes": "F13、F15、F44。",
+      "claimId": "C123"
+    },
+    {
+      "articleExcerpt": "seoDescription：秋天有日本最早的紅葉",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=9",
+      "sourceTitle": "【層雲峡】銀泉台｜層雲峡観光協会",
+      "sourceQuote": "９月中旬、銀泉台の美しい紅葉が日本一早いピークを迎えます。｜層雲峡より大雪湖、大雪山観光道路を車で50分ほどです。｜期間 6月下旬～10月上旬（紅葉時期にはマイカー規制あり）",
+      "verdict": "verified",
+      "notes": "銀泉台頁原文是斷定「日本一早いピークを迎えます」，黑岳是「日本一早い紅葉と呼ばれ」；正文寫「被稱為」，摘要寫「有」，有銀泉台的官方斷定撐住，可接受。",
+      "claimId": "C124"
+    },
+    {
+      "articleExcerpt": "seoDescription：1月下旬到3月上旬有冰瀑祭",
+      "sourceUrl": "https://sounkyo.net/hyoubaku/",
+      "sourceTitle": "層雲峡温泉 氷瀑まつり",
+      "sourceQuote": "次回開催：第52回氷瀑まつり 開催日程 2027.1.23(土)～3.7(日)",
+      "verdict": "verified",
+      "notes": "2026、2027 兩屆；沒寫「每年」。",
+      "claimId": "C125"
+    },
+    {
+      "articleExcerpt": "seoDescription：要看煙火或趕一早的纜車得住溫泉街，另整理冬天晚上哪裡吃",
+      "sourceUrl": "https://san-tatsu.jp/pressrelease/489541/",
+      "sourceTitle": "第51回 氷瀑まつり 1/24開幕！（さんたつ プレスリリース）",
+      "sourceQuote": "花火打ち上げ（毎晩20:30～）",
+      "verdict": "verified",
+      "notes": "同序言；第 7 節「冬天晚上還開的店」。",
+      "claimId": "C126"
     }
   ],
   "summary": {
-    "verified": 113,
-    "incorrect": 0,
-    "unsupported": 0,
+    "verified": 117,
+    "incorrect": 7,
+    "unsupported": 2,
     "outdated": 0,
     "unreachable": 0,
     "not-stated": 0
