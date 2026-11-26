@@ -1,7 +1,7 @@
 # 驗收紀錄：sounkyo（2026-11-26，地點主頁改版）
 
 - 文章：`content-production/sounkyo/reader-preview.md`（層雲峽旅遊攻略，瀑布、纜車、紅葉與冰瀑祭排法一次看）
-- SHA-256（換行統一成 LF 後計算）：`a595ea69f86543380a6e88ef3baafde133bcbbf65260382ab82bd98daeab6265`
+- SHA-256（換行統一成 LF 後計算）：`4cac65d18c05dabcaca3f1b7aca76e39f5f6a849ad306fc66a6c0465019d6cbc`（2026-11-26 連結句改成單獨一行之後；改之前上線的版本是 `a595ea69f86543380a6e88ef3baafde133bcbbf65260382ab82bd98daeab6265`）
 - 規則：寫作 Skill `references/place-entry-page.md`、`place-entry-hook-review.md`、`sentence-rhythm.md`、`heading-style.md`；流程 `content-automation/place-entry-writer.md`；規格 `spec.md`；範本 `page-models/place-entry/rishiri-island.md`。舊版封包在 `pre-place-entry/`。
 - 寫作：一位作者子代理（Sonnet 5.5），事實只用舊版主頁、層雲峽六個子頁（交通、纜車與登山、景點、冰瀑祭、住宿、天氣）、旭岳與層雲峽怎麼選、旭岳與旭川主頁已查證的稿與研究記錄，沒有重新上網查。每一輪退回都由同一位作者修改。
 - 吸引力審查：一位審查子代理（Opus 5.5，不是作者、不是查核者），正式三輪（退回 9、4、2 處；第 3 輪剩的 2 處照審查者給的預設刪字），之後每次改到審查範圍都複審：事實查核第 1 輪後（1 處，刪字）、讀者驗收後 3 次（3 處、2 處、通過）、事實查核第 3 輪後（通過）。紀錄在 `hook-review.md`。
@@ -18,7 +18,7 @@
 | 格式 | `mechanical_clear`（`audit_answer_first.py --article-type place-entry`，沒有問題與提醒） |
 | 標題 | `acceptable`（八題第 6 題過；`heading_review.py` `headings_applied`） |
 | 讀者價值 | `acceptable`（第 4 次驗收與事實修正後的確認都是 acceptable） |
-| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，135 項 claim 全部 verified） |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，142 項 claim 全部 verified） |
 | 口吻與標點 | `check-voice.mjs --final` 通過（正文 3,971 字；開頭到第 6 節約 3,000 字，資料節約 1,450 字） |
 | 名字與表格連結 | `check-benchmark.mjs` 沒有錯誤；1 個提醒「計程車」沒附原文（一般名詞，不補） |
 | 事實編號 | `tags_clear`（事實表 144 筆，正文用到 92 筆） |
@@ -62,3 +62,10 @@
 - 上傳前協調者親自看過 4 張照片與 4 則 Instagram 貼文的嵌入頁，畫面與說明文字和圖說對得上。
 - 本機 `npm run build` 通過（站內連結 2,756 個、結構化資料、網址深度都過），產出的頁面截圖確認標題、摘要、照片與貼文都在。
 - 大綱 `hokkaido-asahikawa-outline.json` 的 `sounkyo` 已同步成這一版的 h1、標題樹與 11 句連結句，`planning:check` 通過。上面「留給之後的事」裡的「換上線」「大綱 JSON」兩項已完成。
+
+## 連結句改成單獨一行（2026-11-26）
+
+- Darren 看線上版：「我在想ＸＸＸ都有寫 這種的是不是換成直接單獨拉出來會比較沒有那麼硬要」，看過三段對照後說「好啊」。規則寫進寫作 Skill `references/place-entry-page.md`「連到子頁的連結怎麼放」。
+- 作者（同一位，Sonnet 5.5）把九句接在段落最後的連結句改成另起一行的「看更多：頁名｜那一頁有什麼」，其他字沒動；連結本來就在判斷句或指示裡的兩處（選旭岳、冬天排法看冰瀑祭那一頁）留在句子裡。`link-sentences.json` 重寫成 9 筆。
+- 事實查核第 5 輪（同一位查核者，Opus 5.5）：用 diff 確認只差這九處、沒有少掉事實，九行寫的內容逐項對過子頁正文都有，142 項全部 verified。標題沒變（`heading_review.py` 改動 0 個）。這一輪沒有再送吸引力審查與讀者驗收：改的只有連結怎麼放，格式是 Darren 親自看過同意的。
+- 結果照舊：格式 `mechanical_clear`、標題 `acceptable`、讀者價值 `acceptable`、事實與條件 `verified`，最終結果 `ready_for_user_preview`。

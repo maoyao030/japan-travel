@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "articleId": "sounkyo",
-  "articleSha256": "a595ea69f86543380a6e88ef3baafde133bcbbf65260382ab82bd98daeab6265",
+  "articleSha256": "4cac65d18c05dabcaca3f1b7aca76e39f5f6a849ad306fc66a6c0465019d6cbc",
   "checker": "事實查核 agent（Opus 5.5，未參與寫作；地點主頁規則：逐句對來源稿與事實表原文摘錄，必要處重開原始網址）",
   "checkedAt": "2026-11-26",
-  "notes": "來源稿彼此對不上的地方（正文照經營者官方或店家官網的一邊）：(1) 黑岳到旭岳縱走：經營者「七合目→姿見站約7小時」（F51）vs 協議會傳單「黒岳⇔旭岳 8～9小時」（F610），範圍可能不同；正文兩個都留。(2) 雙瀑台步行：觀光協會約20分（F618）vs 遊客中心路線圖約25分（F622）；新版正文沒寫時間。(3) 紅葉谷：觀光協會從入口單程約30分、停車5台（F620）vs 遊客中心單程約700公尺、往返約1小時（F604）、停車約15台；新版正文沒寫。(4) Canyon 營業時間與公休：觀光協會（F146）vs 店家官網（F452）；Taisetsu Bakery 晚上時段：觀光協會 vs 兩個官網（F450）；BLACK MOUNTAIN COFFEE 觀光協會兩頁不一致（F417）。正文照官網。(5) 黑岳纜車定員：觀光協會 85人（舊車廂）vs 經營者 101人（F41）；正文沒寫。(6) 上川～層雲峽距離：遊客中心 22km vs 觀光協會 25km（F19 條件欄）；正文沒寫。(7) 纜車夏季開始日：2026 年因換車廂 6/27（F403），下一季 6/21（F476）；月份表寫「6月下旬」兩者都涵蓋。(8) 降水最多的月份：上川 7、8 月（F603）；層雲峽觀測點 8 月最多、7 月與 10 月幾乎相同（sounkyo-weather F264）。(9) 往大雪湖季節巴士：sounkyo-sights 正文寫它服務大函、瀑布要叫計程車；第 1 輪主頁把它放在瀑布段落，第 2 輪已刪。 F600～F623 對照：F600～F622 的主張、原文摘錄、網址、查閱日、條件、變動類型、下次查核七欄與註明的子頁研究記錄逐字一致（程式比對）；F623 依註明來自 sounkyo-stay fact-check C45 的 sourceQuote，一字不差，查核者另重開官網確認。 第 7 節：逐格對舊版一致，表格兩張一字不差；舊版最後一段的「2024年春天開幕、生乳全是上川町產、WCCC 2026 金牌」移到第 2 節，沒有少事實。 (10) 縱走下山後怎麼回去：本頁 F610 只複製了回程巴士傳單的注意事項，asahidake-or-sounkyo 正文與研究記錄另有 2026 年夏天指定日的免費縱走回程巴士（16:00 發、18:30 回到出發地），新版第 6 節「要住旭岳溫泉或旭川」沒有考慮這條退路。 第 3 輪複查（2026-11-26）：以 git diff ddbc669 HEAD 確認 reader-preview.md 只改了協調者列的段落，第 7 節資料節與延伸資料沒有變動；publication.json 只改 excerpt；reference-review.md 只新增 F624～F626 三列、沒有刪改任何既有列（diff 只有 3 行新增），三列與 asahidake-or-sounkyo F320、sounkyo-sights F100、F275 的主張、原文摘錄、網址、查閱日、條件、變動類型、下次查核七欄逐字一致（程式比對）。 第 2 輪紀錄有 claimId 對錯列的問題（把 C31「這是這間飯店的浴場」、C83 出湯號、C85 開車 2 小時 30 分、C89 夏天體力夠的 excerpt 覆寫成別的句子，造成重複與漏列）；第 3 輪依目前正文重新逐句建立全部 claim，claimId 從 C1 重新編號。 第 4 輪複查（2026-11-26）：以 git diff 0033c7a HEAD 確認 reader-preview.md 只改 6 處、publication.json 只改摘要標點；第 3 輪 C70（「週末假日白天就開場，平日傍晚才開場」）的事實已刪，claim 拿掉，其餘 claimId 不重編。",
+  "notes": "來源稿彼此對不上的地方（正文照經營者官方或店家官網的一邊）：(1) 黑岳到旭岳縱走：經營者「七合目→姿見站約7小時」（F51）vs 協議會傳單「黒岳⇔旭岳 8～9小時」（F610），範圍可能不同；正文兩個都留。(2) 雙瀑台步行：觀光協會約20分（F618）vs 遊客中心路線圖約25分（F622）；新版正文沒寫時間。(3) 紅葉谷：觀光協會從入口單程約30分、停車5台（F620）vs 遊客中心單程約700公尺、往返約1小時（F604）、停車約15台；新版正文沒寫。(4) Canyon 營業時間與公休：觀光協會（F146）vs 店家官網（F452）；Taisetsu Bakery 晚上時段：觀光協會 vs 兩個官網（F450）；BLACK MOUNTAIN COFFEE 觀光協會兩頁不一致（F417）。正文照官網。(5) 黑岳纜車定員：觀光協會 85人（舊車廂）vs 經營者 101人（F41）；正文沒寫。(6) 上川～層雲峽距離：遊客中心 22km vs 觀光協會 25km（F19 條件欄）；正文沒寫。(7) 纜車夏季開始日：2026 年因換車廂 6/27（F403），下一季 6/21（F476）；月份表寫「6月下旬」兩者都涵蓋。(8) 降水最多的月份：上川 7、8 月（F603）；層雲峽觀測點 8 月最多、7 月與 10 月幾乎相同（sounkyo-weather F264）。(9) 往大雪湖季節巴士：sounkyo-sights 正文寫它服務大函、瀑布要叫計程車；第 1 輪主頁把它放在瀑布段落，第 2 輪已刪。 F600～F623 對照：F600～F622 的主張、原文摘錄、網址、查閱日、條件、變動類型、下次查核七欄與註明的子頁研究記錄逐字一致（程式比對）；F623 依註明來自 sounkyo-stay fact-check C45 的 sourceQuote，一字不差，查核者另重開官網確認。 第 7 節：逐格對舊版一致，表格兩張一字不差；舊版最後一段的「2024年春天開幕、生乳全是上川町產、WCCC 2026 金牌」移到第 2 節，沒有少事實。 (10) 縱走下山後怎麼回去：本頁 F610 只複製了回程巴士傳單的注意事項，asahidake-or-sounkyo 正文與研究記錄另有 2026 年夏天指定日的免費縱走回程巴士（16:00 發、18:30 回到出發地），新版第 6 節「要住旭岳溫泉或旭川」沒有考慮這條退路。 第 3 輪複查（2026-11-26）：以 git diff ddbc669 HEAD 確認 reader-preview.md 只改了協調者列的段落，第 7 節資料節與延伸資料沒有變動；publication.json 只改 excerpt；reference-review.md 只新增 F624～F626 三列、沒有刪改任何既有列（diff 只有 3 行新增），三列與 asahidake-or-sounkyo F320、sounkyo-sights F100、F275 的主張、原文摘錄、網址、查閱日、條件、變動類型、下次查核七欄逐字一致（程式比對）。 第 2 輪紀錄有 claimId 對錯列的問題（把 C31「這是這間飯店的浴場」、C83 出湯號、C85 開車 2 小時 30 分、C89 夏天體力夠的 excerpt 覆寫成別的句子，造成重複與漏列）；第 3 輪依目前正文重新逐句建立全部 claim，claimId 從 C1 重新編號。 第 4 輪複查（2026-11-26）：以 git diff 0033c7a HEAD 確認 reader-preview.md 只改 6 處、publication.json 只改摘要標點；第 3 輪 C70（「週末假日白天就開場，平日傍晚才開場」）的事實已刪，claim 拿掉，其餘 claimId 不重編。 第 5 輪複查（2026-11-26）：以 git diff 7e3ea9c HEAD 確認 reader-preview.md 只改九處，都是把段落最後的連結句刪掉、另起「看更多：」連結行；被刪的句子只是「那一頁有寫什麼」的指路，沒有帶獨立事實（「要依月份抓穿著」「想先在網路買好車票」「從札幌或機場過來」等是讀者情境，不是事實），全頁沒有少事實。九行的「那一頁有什麼」逐項對過子頁來源稿，全部有寫。",
   "claims": [
     {
       "articleExcerpt": "黑岳山頂一帶大約9月上旬就開始變色，被稱為日本最早的紅葉",
@@ -223,12 +223,12 @@
       "claimId": "C24"
     },
     {
-      "articleExcerpt": "雙瀑台怎麼走、計程車與導覽團怎麼找，[層雲峽景點](/places/sounkyo/sights/)那一頁都有寫",
+      "articleExcerpt": "看更多：[層雲峽景點](/places/sounkyo/sights/)｜雙瀑台怎麼走、計程車與導覽團怎麼找",
       "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
       "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
       "sourceQuote": "滝を背に２０分ほど斜面を登ると、「双瀑台」の展望台へ。…２本の滝が絶壁・不動岩の左右を流れ落ちる姿を同時に見ることができます。",
       "verdict": "verified",
-      "notes": "（第 3 輪 2026-11-26 複查）連結句（第 2 輪已核對，第 3 輪只改字）。sounkyo-sights 正文三樣都有：雙瀑台走法（瀧Mintara 起步、陡階梯、基本資訊欄單程約20～25分鐘）；層雲峽觀光計程車與叫車方式；「## 跟導覽團玩層雲峽」一節。",
+      "notes": "（第 5 輪 2026-11-26 複查：連結句拉成單獨一行）sounkyo-sights 正文有雙瀑台走法（瀧Mintara 起步、陡階梯、基本資訊欄「單程約20～25分鐘」）、層雲峽觀光計程車與叫車方式、「## 跟導覽團玩層雲峽」一節，三項都有。",
       "claimId": "C25"
     },
     {
@@ -376,12 +376,12 @@
       "claimId": "C41"
     },
     {
-      "articleExcerpt": "當屆的日期、門票與交通，[層雲峽冰瀑祭](/places/sounkyo/festival/)那一頁都整理了",
+      "articleExcerpt": "看更多：[層雲峽冰瀑祭](/places/sounkyo/festival/)｜當屆的日期、門票與交通",
       "sourceUrl": "https://sounkyo.net/hyoubaku/",
       "sourceTitle": "層雲峡温泉 氷瀑まつり",
       "sourceQuote": "次回開催：第52回氷瀑まつり 開催日程 2027.1.23(土)～3.7(日)",
       "verdict": "verified",
-      "notes": "（第 3 輪 2026-11-26 複查）連結句。sounkyo-festival 正文有「層雲峽冰瀑祭2027年的日期與開放時間」「層雲峽冰瀑祭門票」「層雲峽冰瀑祭交通，從旭川、上川搭巴士或開車」三節，成立。",
+      "notes": "（第 5 輪 2026-11-26 複查：連結句拉成單獨一行）sounkyo-festival 正文有「層雲峽冰瀑祭2027年的日期與開放時間」「### 層雲峽冰瀑祭門票」「## 層雲峽冰瀑祭交通，從旭川、上川搭巴士或開車」，三項都有。",
       "claimId": "C42"
     },
     {
@@ -1220,10 +1220,73 @@
       "verdict": "verified",
       "notes": "同序言；第 7 節「冬天晚上還開的店」。",
       "claimId": "C136"
+    },
+    {
+      "claimId": "C137",
+      "articleExcerpt": "看更多：[層雲峽纜車與黑岳登山](/places/sounkyo/hiking/)｜纜車與吊椅的營業時間、票價與登山路線",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
+      "sourceTitle": "大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "10月16日～11月8日 8:00～16:00｜11月9日～11月30日 整備運休｜12月1日～12月31日 8:00～16:00｜1月1日～6月20日 8:00～16:00｜上り便の最終は営業終了時間の40分前です。",
+      "verdict": "verified",
+      "notes": "（第 5 輪 2026-11-26 複查：連結句拉成單獨一行）連結行，逐項對子頁來源稿 content-production/hiking/reader-preview.md：sounkyo-hiking 正文有纜車與吊椅分欄的營業時間表（2026年6月27日～9月30日纜車 6:00～18:00、吊椅 6:30～17:30 等）、「## 層雲峽纜車票價」、「## 層雲峽黑岳登山，從七合目到山頂」，三項都有。 來源欄是子頁該項依據的官方來源。"
+    },
+    {
+      "claimId": "C138",
+      "articleExcerpt": "看更多：[層雲峽天氣與楓葉](/places/sounkyo/weather/)｜各月的氣溫、積雪與紅葉時期",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
+      "sourceTitle": "平年値 層雲峡｜気象庁",
+      "sourceQuote": "最深積雪(cm)｜1月 102｜2月 121｜3月 126｜4月 94｜5月 9｜12月 84｜年 131",
+      "verdict": "verified",
+      "notes": "（第 5 輪 2026-11-26 複查：連結句拉成單獨一行）連結行，逐項對子頁來源稿 content-production/weather/reader-preview.md：sounkyo-weather 正文有「## 層雲峽各月氣溫與雨量」的 12 個月表、各月最深積雪、「## 層雲峽楓葉什麼時候去？」的紅葉時期表，三項都有。 來源欄是子頁該項依據的官方來源。"
+    },
+    {
+      "claimId": "C139",
+      "articleExcerpt": "看更多：[層雲峽交通](/places/sounkyo/transport/)｜全部班次與網路票的買法",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "2026.7.1改正｜旭川駅前 発 6:55 9:55 10:55 13:25 14:25 16:35 18:25｜層雲峡 着 8:54 11:54 12:54 15:24 16:24 18:34 20:24",
+      "verdict": "verified",
+      "notes": "（第 5 輪 2026-11-26 複查：連結句拉成單獨一行）連結行，逐項對子頁來源稿 content-production/transport/reader-preview.md：sounkyo-transport 正文有「## 旭川到層雲峽的道北巴士」全部班次時刻表（6:55、9:55、10:55…）與「### 道北巴士網路票怎麼買、怎麼用？」，兩項都有。 來源欄是子頁該項依據的官方來源。"
+    },
+    {
+      "claimId": "C140",
+      "articleExcerpt": "看更多：[層雲峽住宿](/places/sounkyo/stay/)｜溫泉街的旅館離纜車多遠、哪幾家有接駁巴士",
+      "sourceUrl": "https://www.choyotei.com/access/",
+      "sourceTitle": "交通アクセス｜朝陽亭",
+      "sourceQuote": "※札幌発着送迎バスは2026年10月1日から2027年3月31日までの運行となります。…｜公式ホームページから宿泊を予約されたお客様は、500円割引｜宿泊日の1週間前までにご予約のない日については、運休",
+      "verdict": "verified",
+      "notes": "（第 5 輪 2026-11-26 複查：連結句拉成單獨一行）連結行，逐項對子頁來源稿 content-production/stay/reader-preview.md：sounkyo-stay 正文寫溫泉街離纜車最近的旅館走 1 分鐘，比較表「位置」欄每家寫離纜車或巴士總站幾分鐘；「## 層雲峽哪幾間飯店有接駁巴士？」列了朝陽兩間、大雪飯店、層雲峽觀光飯店、層雲閣，兩項都有。 來源欄是子頁該項依據的官方來源。"
+    },
+    {
+      "claimId": "C141",
+      "articleExcerpt": "看更多：[旭岳與層雲峽怎麼選](/places/asahidake/asahidake-or-sounkyo/)｜兩地的差別，以及怎麼排在同一趟",
+      "sourceUrl": "https://www.asahikawa-denkikidou.jp/asahidaek_line/",
+      "sourceTitle": "66番 旭川空港経由 旭岳線｜旭川電気軌道",
+      "sourceQuote": "旭川駅（のりば9）| 7:15 | 9:15 | 12:15 | 14:15｜旭川空港 | 8:00 | 10:00 | 13:00 | 15:00｜旭岳 | 9:03 | 11:03 | 14:03 | 16:03",
+      "verdict": "verified",
+      "notes": "（第 5 輪 2026-11-26 複查：連結句拉成單獨一行）連結行，逐項對子頁來源稿 content-production/asahidake-or-sounkyo/reader-preview.md：asahidake-or-sounkyo 正文有「## 旭岳與層雲峽差在哪？」與「## 旭岳與層雲峽一起排的天數」「## 旭岳與層雲峽之間怎麼移動？」，兩項都有。 來源欄是子頁該項依據的官方來源。"
+    },
+    {
+      "claimId": "C142",
+      "articleExcerpt": "看更多：[旭川](/places/asahikawa/)｜從札幌或機場過來的轉乘方式與住宿",
+      "sourceUrl": "https://www.dohokubus.com/files/kamikawa_souun.pdf",
+      "sourceTitle": "道北バス 層雲峡・上川線 時刻表",
+      "sourceQuote": "2026.7.1改正｜旭川駅前 発 6:55 9:55 10:55 13:25 14:25 16:35 18:25｜層雲峡 着 8:54 11:54 12:54 15:24 16:24 18:34 20:24",
+      "verdict": "verified",
+      "notes": "（第 5 輪 2026-11-26 複查：連結句拉成單獨一行）連結行，逐項對子頁來源稿 content-production/asahikawa/reader-preview.md：asahikawa 正文「## 旭川怎麼去、住哪裡？」有札幌（JR特急、高速巴士）、新千歲機場（JR轉特急、大雪Liner）、旭川機場（機場巴士）的交通表，以及「旅館集中在兩區」的住宿說明，兩項都有。 來源欄是子頁該項依據的官方來源。"
+    },
+    {
+      "claimId": "C143",
+      "articleExcerpt": "看更多：[層雲峽住宿](/places/sounkyo/stay/)｜冬天住溫泉街要不要訂含晚餐的方案",
+      "sourceUrl": "https://sounkyo.net/eat/",
+      "sourceTitle": "食す｜層雲峡観光協会",
+      "sourceQuote": "ツリーバード 5月〜10月頃｜登山軒 （11～5月は休業）｜ビアグリル・キャニオン 17:30〜20:00（水曜定休）｜大雪山食堂 17:30〜20:30 不定休",
+      "verdict": "verified",
+      "notes": "（第 5 輪 2026-11-26 複查：連結句拉成單獨一行）連結行，逐項對子頁來源稿 content-production/stay/reader-preview.md：sounkyo-stay 正文有「## 住層雲峽要訂含晚餐的方案嗎？」，第一句「冬天住溫泉街最好訂含晚餐的方案」，成立。 來源欄是子頁該項依據的官方來源。"
     }
   ],
   "summary": {
-    "verified": 135,
+    "verified": 142,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
