@@ -55,3 +55,10 @@
 - 照片與貼文：兩道瀑布同框的合格照片找不到，用遊客的公開貼文；黑岳纜車照片是 2008 年拍的；火祭貼文是火把演出、不是貓頭鷹神事；溫泉的官方貼文主角是煙火。還沒試的搜尋字記在 `images/embed-plan.json` 的 `searchNotes`。
 - 來源稿彼此對不上的地方（縱走 7 小時或 8 到 9 小時、雙瀑台步行 20 或 25 分、纜車定員 85 或 101 人、上川到層雲峽 22 或 25 公里等）列在 `fact-check.json` 最上層的 `notes`，這次都沒有動子頁。
 - 冬天排法可以補上往上川末班車的時刻（18:55），讀者不用往上翻。
+
+## 上線（2026-11-26）
+
+- Darren 2026-11-26 說「換上線」。照順序做：用改版前的圖片與嵌入封包拿掉線上舊位置的 2 張照片與 2 則影片 → `replace-article-body.mjs --retitle --before-publication=content-production/sounkyo/pre-place-entry/publication.json`（dry-run 的 `notCarried` 是空的才 `--apply`；標題、SEO 標題、SEO 描述、摘要一起換）→ 上傳 4 張文內照片 → 插入 5 則嵌入（1 則 YouTube、4 則 Instagram）。Sanity 修訂 `mSwCGsbHguxwEMvlojK6uw`，索引狀態沒動（仍開放收錄）。
+- 上傳前協調者親自看過 4 張照片與 4 則 Instagram 貼文的嵌入頁，畫面與說明文字和圖說對得上。
+- 本機 `npm run build` 通過（站內連結 2,756 個、結構化資料、網址深度都過），產出的頁面截圖確認標題、摘要、照片與貼文都在。
+- 大綱 `hokkaido-asahikawa-outline.json` 的 `sounkyo` 已同步成這一版的 h1、標題樹與 11 句連結句，`planning:check` 通過。上面「留給之後的事」裡的「換上線」「大綱 JSON」兩項已完成。
