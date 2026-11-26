@@ -1159,12 +1159,11 @@
       "decision": "keep",
       "pageType": "aspect-page",
       "aspect": "weather",
-      "planningTitle": "禮文島天氣，各月氣溫、霧與冬季停航",
+      "planningTitle": "禮文島天氣攻略，8月只像台北3月，四季穿法、雲海與渡輪停航一次看",
       "primaryQuery": "禮文島天氣",
       "secondaryQueries": [
-        "禮文島氣溫",
-        "禮文島9月",
-        "禮文島冬天"
+        "禮文島各月氣溫",
+        "禮文島雲海"
       ],
       "targetPath": "/places/rebun-island/weather/",
       "routeDecision": "resolved",
@@ -1225,7 +1224,12 @@
         "decidedAt": "2026-11-24",
         "from": "rebun-island",
         "reason": "Darren 2026-11-24 同意新增：原本照短頁規則併進禮文島主頁，主頁因此過長；補研究後過短頁門檻，照利尻島的做法獨立成頁（content-planning/hokkaido/rebun-island-split-2026-11-24.md）"
-      }
+      },
+      "tableQueries": [
+        "禮文島氣溫",
+        "禮文島9月",
+        "禮文島冬天"
+      ]
     },
     {
       "articleId": "wakkanai-ferry",

@@ -80,6 +80,10 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 **地點主頁（`place-entry`）照 [地點主頁的寫法](references/place-entry-page.md) 寫**（Darren 2026-11-21 同意）：六節結構、最上面三樣（大標題、摘要、序言）、看點小標題「名字｜賣點」、只帶過連到子頁的事。作者寫完、事實查核之前，由另一位照 [吸引力審查](references/place-entry-hook-review.md) 審第一眼看到的字（Darren 2026-11-24）。派誰做、模型、交什麼檔、卡住時的預設寫在 `content-automation/place-entry-writer.md`，讀者驗收照驗收 Skill 的 `references/place-entry-acceptance.md` 八題。和本檔「照大綱寫，H1／H2／H3 用大綱的版本」、寫作指南第 12、13 條衝突的地方，以 `place-entry-page.md` 為準。範本是利尻島（`references/page-models/place-entry/rishiri-island.md`）。
 
+**天氣頁（`aspect-page`、主題 `weather`）照 [天氣頁的寫法](references/weather-page.md) 寫**（Darren 2026-11-26 同意）：開頭先介紹這個地方再帶進天氣、逐月對照表（和台北比）、四季總表、天氣會不會打亂行程、這裡才有的天氣、出發前怎麼查；表格上的數字不再用句子唸一遍。事實查核之後，由另一位照 [偏好審查](references/preference-review.md) 拿 Darren 講過的話逐句審（Darren 2026-11-26：「我覺得你可以參考一下我前兩個範例我對他要求的偏好」）。派誰做、模型、交什麼檔、卡住時的預設寫在 `content-automation/weather-writer.md`，讀者驗收照驗收 Skill 的 `references/weather-acceptance.md`。
+
+**每一頁的開頭都先介紹這個地方，再帶進這頁的主題**（Darren 2026-11-26：「先介紹這個地方，然後再帶入這個主題…我說的內容應該都是這樣子」）：第一段一兩句先講讓人想去的事、再講位置，第一次出現的地名直接連回地點主頁，不另寫「可以先看…」的指路句；第二段用事實接到主題。寫法見 `weather-page.md`「開頭先介紹這個地方，再帶進主題」，所有子頁都適用。
+
 列出旅館時，每間寫清楚：區域、離車站或港口多遠、接駁、營業期間、訂房管道（官網、Trip.com、Agoda）。不寫價格，含餐只在影響選擇時寫（Darren 2026-10-26，細節見 [頁型與分工](references/page-types.md)）。住宿比較表多一欄「連結」放官網與 Google 地圖（寫作指南第12條）；只有官網能訂的旅館放官網連結。查核日期寫在 `## 資料來源` 第一行。Trip.com 與 Agoda 的連結怎麼放、連結文字怎麼寫、揭露句放哪裡，照 [分潤連結與推廣工具](references/affiliate-links.md)。其他頁型（交通、景點、天氣季節）跟主題有關時也可以放分潤連結，哪種頁放什麼見同一份檔案。
 
 ### 來源與連結

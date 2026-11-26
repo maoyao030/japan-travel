@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island-weather",
-  "articleSha256": "85c76052d7cee2bb2fc20ae277a5fe5595af3c4e45e04c494a85a4f66275642f",
+  "articleSha256": "1a51b79eaaf9b06110a96b0dc18a799c05c4dfbeaa891c717b424e111c082c2c",
   "checker": "事實查核 agent（Claude Opus 5.5 子代理，非作者；curl 與 Playwright 實際開來源；上線前最後一次查核）",
   "checkedAt": "2026-11-26",
   "claims": [
@@ -412,12 +412,12 @@
     },
     {
       "claimId": "C46",
-      "articleExcerpt": "桃岩展望台標高超過200公尺，起霧的時候可以從上面往下看到霧形成的雲海",
+      "articleExcerpt": "桃岩展望台標高超過200公尺，起霧的時候有機會從上面往下看到雲海",
       "sourceUrl": "https://www.env.go.jp/park/content/000137471.pdf",
       "sourceTitle": "瞬間の風景 ２０２３．５ Vol.2９（環境省 PDF）",
-      "sourceQuote": "「標高200ｍを超える桃岩展望台は霧の雲海を望む絶景スポットで、早朝に訪れたこの日も、真っ白な風景と驚くほど鮮明な風景がめまぐるしく入れ替わり」",
-      "verdict": "unsupported",
-      "notes": "說過頭：原文只說這裡是看霧之雲海的景點；同一份原文寫那天是「一片白」與清楚的景色輪流出現，步道官網也說展望台常有濃霧，霧蓋到展望台時就看不到雲海。「起霧的時候可以」寫成起霧就看得到。最小改法：「可以」→「有機會」。"
+      "sourceQuote": "「標高200ｍを超える桃岩展望台は霧の雲海を望む絶景スポットで」",
+      "verdict": "verified",
+      "notes": "已照上次改法改成「有機會」。"
     },
     {
       "claimId": "C47",
@@ -556,9 +556,9 @@
     }
   ],
   "summary": {
-    "verified": 60,
+    "verified": 61,
     "incorrect": 0,
-    "unsupported": 1,
+    "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,
     "not-stated": 0

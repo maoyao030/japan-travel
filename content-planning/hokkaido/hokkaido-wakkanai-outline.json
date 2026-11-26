@@ -2706,102 +2706,90 @@
       "targetPath": "/places/rebun-island/weather/",
       "primaryQuery": "禮文島天氣",
       "secondaryQueries": [
-        "禮文島氣溫",
-        "禮文島9月",
-        "禮文島冬天"
+        "禮文島各月氣溫",
+        "禮文島雲海"
       ],
-      "h1": "禮文島天氣，各月氣溫、霧與冬季停航",
+      "h1": "禮文島天氣攻略，8月只像台北3月，四季穿法、雲海與渡輪停航一次看",
       "mustAnswer": [
-        "各月氣溫與雨量",
+        "各月氣溫，和台北差多少",
         "幾月晴天多、天氣穩定",
-        "夏天也要帶外套嗎、各季穿什麼",
-        "霧與雲海幾月多、什麼條件看得到",
+        "各季怎麼穿、要注意什麼",
+        "霧與雲海幾月多、在哪看、什麼時候有機會",
         "冬天多冷、幾月下雪、風多強",
-        "幾月渡輪容易停航、停航怎麼知道"
+        "幾月渡輪容易停航、停航怎麼知道",
+        "出發前怎麼查天氣"
       ],
       "headings": [
         {
           "level": 2,
-          "text": "禮文島天氣與各月禮文島氣溫",
+          "text": "禮文島各月氣溫，和台北差多少？",
           "facts": [
             "rebun-island:F59",
             "rebun-island:F118",
-            "rebun-island:F488",
-            "rebun-island:F491",
-            "rebun-island:F610",
-            "rebun-island:F609",
-            "rebun-island:F619",
-            "rebun-island:F631",
-            "rebun-island:F642"
+            "rebun-island:F677",
+            "rebun-island:F678",
+            "rebun-island:F679"
           ],
           "answers": [
             0
           ]
         },
         {
-          "level": 3,
-          "text": "禮文島幾月晴天多？",
+          "level": 2,
+          "text": "禮文島四季怎麼穿、要注意什麼？",
           "facts": [
-            "rebun-island:F490",
-            "rebun-island:F612",
-            "rebun-island:F620",
-            "rebun-island:F621"
-          ],
-          "answers": [
-            1
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文島9月天氣穩定，10月以後轉冷",
-          "facts": [
-            "rebun-island:F623",
             "rebun-island:F59",
-            "rebun-island:F612",
+            "rebun-island:F118",
+            "rebun-island:F443",
+            "rebun-island:F444",
+            "rebun-island:F402",
             "rebun-island:F488",
-            "rebun-island:F616"
+            "rebun-island:F489",
+            "rebun-island:F496",
+            "rebun-island:F611",
+            "rebun-island:F612",
+            "rebun-island:F613",
+            "rebun-island:F616",
+            "rebun-island:F620",
+            "rebun-island:F621",
+            "rebun-island:F622",
+            "rebun-island:F623",
+            "rebun-island:F624",
+            "rebun-island:F625",
+            "rebun-island:F641",
+            "rebun-island:F680",
+            "rebun-island:F635",
+            "rebun-island:F636",
+            "rebun-island:F637"
           ],
           "answers": [
-            1
+            1,
+            2,
+            4
           ]
         },
         {
           "level": 2,
-          "text": "禮文島夏天也要帶外套嗎？",
+          "text": "禮文島幾月渡輪容易停航？",
           "facts": [
-            "rebun-island:F59",
-            "rebun-island:F622",
-            "rebun-island:F641",
-            "rebun-island:F444",
-            "rebun-island:F613",
-            "rebun-island:F615",
-            "rebun-island:F468"
+            "rebun-island:F635",
+            "rebun-island:F636",
+            "rebun-island:F637",
+            "rebun-island:F88",
+            "rebun-island:F638",
+            "rebun-island:F640"
           ],
           "answers": [
-            2
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文島春天與秋天的早晚溫差",
-          "facts": [
-            "rebun-island:F444",
-            "rebun-island:F59",
-            "rebun-island:F118"
-          ],
-          "answers": [
-            2
+            5
           ]
         },
         {
           "level": 2,
           "text": "禮文島的霧與雲海",
           "facts": [
-            "rebun-island:F442",
             "rebun-island:F621",
-            "rebun-island:F632",
-            "rebun-island:F36",
-            "rebun-island:F490"
+            "rebun-island:F680",
+            "rebun-island:F36"
           ],
           "answers": [
             3
@@ -2809,13 +2797,10 @@
         },
         {
           "level": 3,
-          "text": "禮文島雲海在什麼日子看得到？",
+          "text": "禮文島雲海在哪裡看、什麼時候比較有機會？",
           "facts": [
-            "rebun-island:F627",
-            "rebun-island:F628",
-            "rebun-island:F629",
-            "rebun-island:F630",
-            "rebun-island:F626",
+            "rebun-island:F680",
+            "rebun-island:F621",
             "rebun-island:F1"
           ],
           "answers": [
@@ -2824,63 +2809,22 @@
         },
         {
           "level": 2,
-          "text": "禮文島冬天多冷、雪多不多？",
+          "text": "出發前怎麼查禮文島的天氣？",
           "facts": [
-            "rebun-island:F118",
-            "rebun-island:F614",
-            "rebun-island:F624",
-            "rebun-island:F625",
-            "rebun-island:F619",
-            "rebun-island:F631"
+            "rebun-island:F642",
+            "rebun-island:F638"
           ],
           "answers": [
-            4
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文島的風，秋冬強風日多",
-          "facts": [
-            "rebun-island:F489",
-            "rebun-island:F611",
-            "rebun-island:F617",
-            "rebun-island:F618",
-            "rebun-island:F402",
-            "rebun-island:F633",
-            "rebun-island:F36"
-          ],
-          "answers": [
-            4
-          ]
-        },
-        {
-          "level": 2,
-          "text": "禮文島幾月渡輪容易停航？",
-          "facts": [
-            "rebun-island:F634",
-            "rebun-island:F635",
-            "rebun-island:F636",
-            "rebun-island:F637",
-            "rebun-island:F88"
-          ],
-          "answers": [
-            5
-          ]
-        },
-        {
-          "level": 3,
-          "text": "禮文島渡輪停航怎麼知道？",
-          "facts": [
-            "rebun-island:F638",
-            "rebun-island:F639",
-            "rebun-island:F640"
-          ],
-          "answers": [
-            5
+            6
           ]
         }
       ],
-      "headingOrder": "traveler-journey"
+      "headingOrder": "weather-page",
+      "tableQueries": [
+        "禮文島氣溫",
+        "禮文島9月",
+        "禮文島冬天"
+      ]
     },
     {
       "articleId": "rebun-island-festival",
@@ -5398,8 +5342,8 @@
       "from": "rebun-island-weather",
       "to": "rebun-island",
       "purpose": "開頭連回地點主頁",
-      "sentence": "還沒決定要不要排禮文島，可以先看禮文島值得去嗎。",
-      "anchor": "禮文島值得去嗎"
+      "sentence": "禮文島被稱為「花之浮島」，夏天島上大約有300種高山植物開花，位置在稚內西邊大約60公里的日本海上。",
+      "anchor": "禮文島"
     },
     {
       "from": "rebun-island",
@@ -5426,21 +5370,21 @@
       "from": "rebun-island-weather",
       "to": "wakkanai-ferry",
       "purpose": "停航後改票與班次由渡輪頁負責",
-      "sentence": "船一停航，手上的票要重新預約，稚內到利尻島、禮文島渡輪整理了各季班次和改票的方式。",
+      "sentence": "要是預約的船班停航了，就得重新預約，改票的做法在稚內到利尻島、禮文島渡輪有整理。",
       "anchor": "稚內到利尻島、禮文島渡輪"
     },
     {
       "from": "rebun-island-weather",
       "to": "rebun-island-hiking",
       "purpose": "看雲海的地點與步道強風",
-      "sentence": "想在清晨走上桃岩展望台看雲海，禮文島健行有每條步道要走多久、從哪裡上去。",
+      "sentence": "清晨要從哪裡走上桃岩展望台、要走多久，禮文島健行有每條步道的整理。",
       "anchor": "禮文島健行"
     },
     {
       "from": "rebun-island-weather",
       "to": "rebun-island-stay",
       "purpose": "冬季休館的住宿",
-      "sentence": "冬天去的話有些旅館休館，禮文島住宿列了每家的營業期間。",
+      "sentence": "冬天去的話，旅館有沒有開要先確認，禮文島住宿列了每家的營業期間。",
       "anchor": "禮文島住宿"
     },
     {
