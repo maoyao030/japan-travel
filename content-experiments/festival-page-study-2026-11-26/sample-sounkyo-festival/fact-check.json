@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "sounkyo-festival",
-  "articleSha256": "8db69993fb6a54abc26c8a90ea1831ec1cc3a630d8bfe9deaef17ad85786675f",
-  "checker": "事實查核 agent（Opus 5.5，非作者）第 8 輪確認；2026-11-27 以 curl、網頁存檔與內建瀏覽器重開來源，官網一律剝掉 HTML 註解後判讀",
+  "articleSha256": "fddc77780c5dfbaa288b317fd7032be75a2765b40f32a0c45b80ef2afa8982d1",
+  "checker": "事實查核 agent（Opus 5.5，非作者）第 9 輪確認；2026-11-27 以 curl、網頁存檔與內建瀏覽器重開來源，官網一律剝掉 HTML 註解後判讀",
   "checkedAt": "2026-11-27",
   "claims": [
     {
@@ -394,12 +394,12 @@
     },
     {
       "claimId": "C44",
-      "articleExcerpt": "點燈要等入夜，近兩屆的煙火也都是晚上才放，而且都是站在石狩川河岸的戶外看",
+      "articleExcerpt": "點燈要等入夜，近兩屆的煙火也都是晚上才放，而且會場就在石狩川河岸的戶外",
       "sourceUrl": "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202302/202302_02_jp.html",
       "sourceTitle": "層雲峡温泉氷瀑まつり | February 2023 | Highlighting Japan",
       "sourceQuote": "現在は、石狩川の河川敷に特設会場を設けて…｜（さんたつ 第51回）石狩川河川敷の広大な会場…夜には七色のライトアップ",
-      "verdict": "unsupported",
-      "notes": "點燈在晚上、近兩屆煙火 20:30、會場在石狩川河岸的戶外，都成立。但「都是站在…看」說過頭：2023 有「座ってご覧いただける観覧席」、2024 有付費「花火特別桟敷席」、2025 有付費「花火特別観覧エリア」，不全是站著；溫泉街的旅館也不一定只能到河岸看，來源沒寫看煙火一定要在會場。可原樣套用的最小改法：「而且都是站在石狩川河岸的戶外看」→「而且會場就在石狩川河岸的戶外」。"
+      "verdict": "verified",
+      "notes": "第8輪 C44 已解決：改成會場位置的事實。政府廣報「石狩川の河川敷に特設会場」、第51回新聞稿「石狩川河川敷の広大な会場」；點燈在晚上（政府廣報「夜にはライトアップ」）、近兩屆煙火 20:30（官方日曆）。"
     },
     {
       "claimId": "C45",
@@ -524,14 +524,14 @@
       "sourceUrl": "https://edu.cwa.gov.tw/PopularScience/pr/pr_6.html",
       "sourceTitle": "中央氣象署數位科普網-小石虎的寒流問題",
       "sourceQuote": "當臺北市的最低溫度降至10℃或以下時，臺灣即受「寒流」或「寒潮」之侵襲",
-      "verdict": "unsupported",
-      "notes": "正文新寫的寒流定義（F731）來源沒有列在資料來源。可原樣套用的最小改法：在資料來源加一行「- [中央氣象署數位科普網-小石虎的寒流問題](https://edu.cwa.gov.tw/PopularScience/pr/pr_6.html)」。另外台北的平年值已從正文拿掉，「氣候月平均 | 交通部中央氣象署」那一條現在正文沒用到，可刪（不影響判定）。"
+      "verdict": "verified",
+      "notes": "第8輪 C58 已解決：資料來源已列「中央氣象署數位科普網-小石虎的寒流問題」，標題與瀏覽器讀到的頁面標題一致，連結打得開（讀取工具與 curl 回 403，瀏覽器可讀）。沒用到的「氣候月平均」已拿掉。"
     }
   ],
   "summary": {
-    "verified": 56,
+    "verified": 58,
     "incorrect": 0,
-    "unsupported": 2,
+    "unsupported": 0,
     "outdated": 0,
     "unreachable": 0,
     "not-stated": 0
