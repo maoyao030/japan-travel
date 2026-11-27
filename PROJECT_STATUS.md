@@ -2619,7 +2619,7 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 
 - Darren：「好誒 可以做 研究看看」。分支 `claude/festival-multi-page`。
 - 已完成：研究三步（`content-experiments/festival-multi-study-2026-11-27/`：`01-current-pages.md`、`02-serp-and-other-sites.md`、`03-proposal.md`）。最重要的發現：稚內、利尻島、禮文島接「祭典、活動、花火、某月」中文自動完成都沒有詞，這種頁主要給站內讀者；別站七篇沒有一篇替讀者挑日子或把活動接上末班船。
-- 已完成：〈禮文島祭典〉補研究（歷年日期總表 2016～2026、主角現場、交通時刻；新事實 F937～F963 在封包 `reference-review.md` 第四節）與樣本。作者 Sonnet 5.5；事實查核 9 輪，最後 45 條全數 verified；偏好審查 7 輪通過；讀者驗收第 4 次 `acceptable`；`fact_tags.py`、`check-voice.mjs`、`audit_answer_first.py` 通過，正文 1,432 字，SHA（LF）c84755f4…。大標題「禮文島祭典2027，看島上唯一的花火要住一晚，7月神轎遶境與水產祭一次看」。
+- 已完成：〈禮文島祭典〉補研究（歷年日期總表 2016～2026、主角現場、交通時刻；新事實 F937～F963 在封包 `reference-review.md` 第四節）與樣本。作者 Sonnet 5.5；事實查核 9 輪，最後 45 條全數 verified；偏好審查 7 輪通過；讀者驗收第 4 次 `acceptable`；`fact_tags.py`、`check-voice.mjs`、`audit_answer_first.py` 通過，正文 1,432 字，SHA（LF）c84755f4…。大標題原本是「禮文島祭典2027，看島上唯一的花火要住一晚，7月神轎遶境與水產祭一次看」，Darren 看了說怪，改成「禮文島祭典2027攻略，島上唯一的花火在8月10日前後，神轎遶境、水產祭與回程船班一次看」。
 - 已完成：寫作 Skill `references/festival-calendar-page.md`、驗收 Skill `references/festival-calendar-acceptance.md`；`festival-page.md`、`page-types.md`、`SKILL.md`、`festival-writer.md`、`local-writer.md`、`RULES_OVERVIEW.md`、`AGENTS.md` 同步。
 - 已決定（協調者的預設，Darren 還沒看過）：結構四節、年份放大標題但不寫「日期」、模型組合、照片貼文最多 4 則、只收遊客看得到東西的活動（馬拉松、溫泉美食健行不放）。
 - 尚未完成：
@@ -2629,3 +2629,11 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
   - 線上〈稚內祭典〉〈利尻島祭典〉還是舊寫法；〈稚內冬天〉合併候選沒決定；`festival-writer.md` 還沒加這一型的分流（等範本）。
 - 測試：`npm test` 246 通過，`planning:check`、`queue:validate`、`page-models.mjs --check` 通過。
 - 唯一下一步：Darren 看〈禮文島祭典〉樣本（`content-production/rebun-island-festival/reader-preview.md`），說要不要上線、要不要當這一型的範本。
+
+## 2026-11-27 〈禮文島祭典〉樣本的標題（Claude Code）
+
+- Darren 看樣本：「大標題感覺很怪，然後哪幾天配合，聽起來也很怪。」
+- 已完成：大標題改成「禮文島祭典2027攻略，島上唯一的花火在8月10日前後，神轎遶境、水產祭與回程船班一次看」（照他認可過的天氣頁、冰瀑祭標題的組法），第一個 H2 改成「禮文島祭典是什麼時候？」。事實查核複查通過（45 條 verified，SHA d7884ed7…）。
+- 已寫進規則：`core-style.md`（大標題與小標題要是台灣人會問會講的話）、偏好審查 N 題、`festival-calendar-page.md` 的結構表與「最上面三樣」、驗收八題第 7 題。
+- 尚未完成：照上一段；新標題 Darren 還沒說可以。
+- 唯一下一步：Darren 看改過的標題與樣本，說要不要上線、要不要當範本。
