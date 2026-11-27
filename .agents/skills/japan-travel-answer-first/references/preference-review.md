@@ -6,7 +6,7 @@ Darren 看〈禮文島天氣〉樣本的開頭後說：「我覺得你可以參�
 
 作者那一面是 [每一頁都一樣的寫法](core-style.md)（2026-11-26）：同一套標準，寫成「要寫成什麼樣」，作者動筆前讀；這一份是審查者逐句問的題目。
 
-目前用在：天氣頁（`content-automation/weather-writer.md`）。地點主頁有自己的吸引力審查（`place-entry-hook-review.md`），住宿頁有自己的編輯。之後做其他頁型的範本時，從這一關開始用。
+目前用在：天氣頁（`content-automation/weather-writer.md`）、祭典頁（`content-automation/festival-writer.md`）。地點主頁有自己的吸引力審查（`place-entry-hook-review.md`），住宿頁有自己的編輯。之後做其他頁型的範本時，從這一關開始用。
 
 ## 審查者是誰
 
@@ -21,7 +21,7 @@ Darren 看〈禮文島天氣〉樣本的開頭後說：「我覺得你可以參�
 3. `stay-page.md`「句子」「用語」「編輯怎麼看」，以及最後「住宿專門頁」那幾條。
 4. `examples.md` 第 6 節：他親手改的句子（6-5 說話的語氣、6-6 碎句接成一口氣而且條件跟著主詞走）。
 5. `writing-guide.md` 第 17 條、`sentence-rhythm.md`。
-6. 這種頁型的寫法檔（天氣頁是 `weather-page.md`），包含他對這種頁型講過的話（開頭先介紹這個地方再帶進主題）。
+6. 這種頁型的寫法檔（天氣頁是 `weather-page.md`，祭典頁是 `festival-page.md`），包含他對這種頁型講過的話（開頭先介紹這個地方再帶進主題）。
 7. 一篇他親口說可以當範本的整篇文章（`page-models/`），感受他認可的句子長什麼樣；結構不用比。
 
 **每一條意見都要對得到他的某一句話**，寫出是哪一句。審查者與協調者自己覺得的不算。

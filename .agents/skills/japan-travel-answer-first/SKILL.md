@@ -83,6 +83,8 @@ description: Research and write one Traditional Chinese article for the Japan tr
 
 **天氣頁（`aspect-page`、主題 `weather`）照 [天氣頁的寫法](references/weather-page.md) 寫**（Darren 2026-11-26 同意）：開頭先介紹這個地方再帶進天氣、逐月對照表（和台北比）、四季總表、天氣會不會打亂行程、這裡才有的天氣、出發前怎麼查；表格上的數字不再用句子唸一遍。事實查核之後，由另一位照 [偏好審查](references/preference-review.md) 拿 Darren 講過的話逐句審（Darren 2026-11-26：「我覺得你可以參考一下我前兩個範例我對他要求的偏好」）。派誰做、模型、交什麼檔、卡住時的預設寫在 `content-automation/weather-writer.md`，讀者驗收照驗收 Skill 的 `references/weather-acceptance.md`。
 
+**祭典頁（一頁寫一個祭典）照 [祭典頁的寫法](references/festival-page.md) 寫**（Darren 2026-11-27 同意）：替讀者做決定（值不值得專程去、哪天幾點去、當天來回還是住一晚）；大標題帶當屆年份；每年會變的數字只放開頭一句與當屆資訊表；正文寫近幾屆都一樣的事、強度照事實；轉車照順序一步一步講；冷不冷拿寒流這種台灣人經歷過的基準比。流程在 `content-automation/festival-writer.md`。一頁寫好幾個活動的祭典頁還沒有寫法。
+
 **每一頁的開頭都先介紹這個地方，再帶進這頁的主題**（Darren 2026-11-26：「先介紹這個地方，然後再帶入這個主題…我說的內容應該都是這樣子」）：第一段一兩句先講讓人想去的事、再講位置，第一次出現的地名直接連回地點主頁，不另寫「可以先看…」的指路句；第二段用事實接到主題。寫法見 `weather-page.md`「開頭先介紹這個地方，再帶進主題」，所有子頁都適用。
 
 列出旅館時，每間寫清楚：區域、離車站或港口多遠、接駁、營業期間、訂房管道（官網、Trip.com、Agoda）。不寫價格，含餐只在影響選擇時寫（Darren 2026-10-26，細節見 [頁型與分工](references/page-types.md)）。住宿比較表多一欄「連結」放官網與 Google 地圖（寫作指南第12條）；只有官網能訂的旅館放官網連結。查核日期寫在 `## 資料來源` 第一行。Trip.com 與 Agoda 的連結怎麼放、連結文字怎麼寫、揭露句放哪裡，照 [分潤連結與推廣工具](references/affiliate-links.md)。其他頁型（交通、景點、天氣季節）跟主題有關時也可以放分潤連結，哪種頁放什麼見同一份檔案。

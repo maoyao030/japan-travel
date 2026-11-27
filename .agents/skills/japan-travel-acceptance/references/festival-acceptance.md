@@ -1,6 +1,6 @@
-# 祭典頁的讀者驗收八題（草稿，2026-11-27）
+# 祭典頁的讀者驗收八題（2026-11-27）
 
-給「一頁寫一個祭典」的祭典頁用。體例照驗收 Skill `references/weather-acceptance.md`；讀者設定以外的通則（只讀不改、寫位置與原因）照 `references/reader-acceptance.md`。樣本定案後再搬進驗收 Skill。
+給「一頁寫一個祭典」的祭典頁（`aspect-page`、主題 `festival`，主要查詢是單一祭典的名字）用，取代 [讀者驗收規則](reader-acceptance.md) 裡給一般頁型的判斷表；讀者設定以外的通則（只讀不改、寫位置與原因）照舊。題目從〈層雲峽冰瀑祭〉樣本的兩次驗收整理出來，寫法依據是寫作 Skill `references/festival-page.md`。第 6 題另外看：轉車是不是照順序一步一步講完（這班車開到哪裡、幾點到、等多久、接哪一班、錯過會怎樣）；第 7 題另外看：冷不冷有沒有拿台灣人經歷過的基準比（寒流），不是兩排數字算差幾度（Darren 2026-11-27 在樣本通過驗收後挑出的兩處）。
 
 ## 讀者設定
 
@@ -9,7 +9,8 @@
 ## 驗收者讀什麼
 
 - 這篇的 `reader-preview.md` 與 `publication.json` 的 `excerpt`。
-- 規格 `spec.md`。
+- 規格 `spec.md`、寫作 Skill `references/festival-page.md`。
+- 同頁型的範本（`node scripts/page-models.mjs --for=<articleId>` 列的檔案），做最後的「和範本比」；還沒有範本時不做這一項。
 
 不讀作者的說明、事實查核紀錄與偏好審查紀錄；事實對不對是查核者的事，這裡只看讀者讀起來的樣子。
 
