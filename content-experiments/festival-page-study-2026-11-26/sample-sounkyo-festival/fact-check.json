@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "articleId": "sounkyo-festival",
-  "articleSha256": "e49de6c9cdf51d527290d9dbd584f08fb10f1579bb9f5d2a2d7b3ca2c2d6b7be",
-  "checker": "事實查核 agent（Opus 5.5，非作者）第 7 輪確認；2026-11-27 以 curl、網頁存檔與內建瀏覽器重開來源，官網一律剝掉 HTML 註解後判讀",
+  "articleSha256": "8db69993fb6a54abc26c8a90ea1831ec1cc3a630d8bfe9deaef17ad85786675f",
+  "checker": "事實查核 agent（Opus 5.5，非作者）第 8 輪確認；2026-11-27 以 curl、網頁存檔與內建瀏覽器重開來源，官網一律剝掉 HTML 註解後判讀",
   "checkedAt": "2026-11-27",
   "claims": [
     {
@@ -327,7 +327,7 @@
       "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡（大人2,140円、子供1,070円）/ 有効期限：券面表示日時の30分前まで",
       "sourceQuote": "6:20 層雲峡発 ⇒ 8:15 旭川駅前着",
       "verdict": "verified",
-      "notes": ""
+      "notes": "直達旭川，不用轉車：官方售票網站「旭川駅前 ー 層雲峡」商品頁列「6:20 層雲峡発 ⇒ 8:15 旭川駅前着」（1 小時 55 分）；同一班也出現在上川線「6:20 層雲峡発 ⇒ 6:50 上川駅前着」，是途經上川的直達車。站內交通頁也寫直達車會在上川站前停 5 分鐘。"
     },
     {
       "claimId": "C37",
@@ -376,16 +376,34 @@
     },
     {
       "claimId": "C42",
-      "articleExcerpt": "比台北冷很多。附近的上川1月白天平均最高-4.3℃、早晚最低-13.8℃，台北1月是19.4℃跟14.2℃，白天差大約24度，早晚差大約28度",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索",
-      "sourceQuote": "1月 32.6 -8.4 -4.3 -13.8 …（1991～2020）",
+      "articleExcerpt": "冷到台北的冬天完全沒辦法比。台北的最低溫降到10℃或以下就叫寒流",
+      "sourceUrl": "https://edu.cwa.gov.tw/PopularScience/pr/pr_6.html",
+      "sourceTitle": "中央氣象署數位科普網-小石虎的寒流問題",
+      "sourceQuote": "我們臺灣是以臺北市所出現的最低溫度作為衡量冷空氣強度之標準…（1）當臺北市的最低溫度降至10℃或以下時，臺灣即受「寒流」或「寒潮」之侵襲",
       "verdict": "verified",
-      "notes": "台北：中央氣象署 1 月最高 19.4、最低 14.2（瀏覽器讀）。重算 23.7、28.0。"
+      "notes": "讀取工具與 curl 都回 403，用瀏覽器讀到原文。「完全沒辦法比」是對照下一句（寒流的最低 10℃，上川 1 月白天平均最高 -4.3℃）的判斷，差距撐得住。"
     },
     {
       "claimId": "C43",
-      "articleExcerpt": "層雲峽的海拔比上川高大約200公尺，山谷裡可能更冷",
+      "articleExcerpt": "而冰瀑祭附近的上川在1月，連白天最暖的時候平均都只有零下4℃左右，入夜以後平均會降到零下14℃左右",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
+      "sourceTitle": "気象庁｜過去の気象データ検索",
+      "sourceQuote": "1月 32.6 -8.4 -4.3 -13.8 …（統計期間 1991～2020；欄位依序 降水量、平均気温、日最高、日最低）",
+      "verdict": "verified",
+      "notes": "「白天最暖的時候平均」＝日最高的平年值 -4.3℃，「零下4℃左右」成立。「入夜以後平均會降到」＝日最低的平年值 -13.8℃，「零下14℃左右」成立；日最低多出現在半夜到清晨，句子寫「降到」沒有說煙火那個時候就是 -14℃，強度可接受。要更精確可寫「半夜到清晨平均會降到零下14℃左右」，不影響判定。"
+    },
+    {
+      "claimId": "C44",
+      "articleExcerpt": "點燈要等入夜，近兩屆的煙火也都是晚上才放，而且都是站在石狩川河岸的戶外看",
+      "sourceUrl": "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202302/202302_02_jp.html",
+      "sourceTitle": "層雲峡温泉氷瀑まつり | February 2023 | Highlighting Japan",
+      "sourceQuote": "現在は、石狩川の河川敷に特設会場を設けて…｜（さんたつ 第51回）石狩川河川敷の広大な会場…夜には七色のライトアップ",
+      "verdict": "unsupported",
+      "notes": "點燈在晚上、近兩屆煙火 20:30、會場在石狩川河岸的戶外，都成立。但「都是站在…看」說過頭：2023 有「座ってご覧いただける観覧席」、2024 有付費「花火特別桟敷席」、2025 有付費「花火特別観覧エリア」，不全是站著；溫泉街的旅館也不一定只能到河岸看，來源沒寫看煙火一定要在會場。可原樣套用的最小改法：「而且都是站在石狩川河岸的戶外看」→「而且會場就在石狩川河岸的戶外」。"
+    },
+    {
+      "claimId": "C45",
+      "articleExcerpt": "層雲峽的位置又比上川高大約200公尺，山谷裡可能更冷",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/select/prefecture.php?prec_no=12",
       "sourceTitle": "気象庁｜過去の気象データ検索",
       "sourceQuote": "上川 標高 324｜層雲峡 標高 540",
@@ -393,7 +411,7 @@
       "notes": "第1輪 C45 已解決。"
     },
     {
-      "claimId": "C44",
+      "claimId": "C46",
       "articleExcerpt": "去會場要穿保暖的衣服跟有止滑的鞋子，休息處買得到手套和鞋底止滑器",
       "sourceUrl": "https://sounkyo.net/hyoubaku/",
       "sourceTitle": "層雲峡温泉 氷瀑まつり-北海道層雲峡観光協会",
@@ -402,7 +420,7 @@
       "notes": ""
     },
     {
-      "claimId": "C45",
+      "claimId": "C47",
       "articleExcerpt": "（接在「休息處買得到手套和鞋底止滑器」之後）近三屆也都有柴火暖爐可以取暖",
       "sourceUrl": "https://web.archive.org/web/20240228083346id_/https://sounkyo.net/hyoubaku/map/",
       "sourceTitle": "会場マップ&みどころ | 層雲峡温泉 氷瀑まつり-北海道層雲峡観光協会（2024-02-28 存檔）",
@@ -411,8 +429,8 @@
       "notes": "省略的主詞承接前半句的「休息處」，讀成休息處或會場都對：2024「⑩休憩所 薪ストーブが設置されているあったかい休憩所」、2025「⑫休憩所 薪ストーブで暖をとれる休憩室」、2026「⑨休憩所 薪ストーブで暖をとれる休憩室」。前半句的手套與止滑器，官網首頁 2024、2025 存檔與現行頁都是同一句，「近三屆」就算被讀成也涵蓋這件事也成立，沒有歧義造成的錯。"
     },
     {
-      "claimId": "C46",
-      "articleExcerpt": "層雲峽觀光協會的負責人說，這一帶2月的最低氣溫會低於零下10度，風也大，體感溫度會到零下20度",
+      "claimId": "C48",
+      "articleExcerpt": "層雲峽觀光協會的負責人說，這一帶到了2月，最低氣溫會低於零下10度，風也大，體感溫度會到零下20度",
       "sourceUrl": "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202302/202302_02_jp.html",
       "sourceTitle": "層雲峡温泉氷瀑まつり | February 2023 | Highlighting Japan",
       "sourceQuote": "層雲峡観光協会の事務局長、中島慎一…「このあたりの２月の最低気温はマイナス10度を下回り、風も強く、体感温度はマイナス20度にもなります」",
@@ -420,7 +438,7 @@
       "notes": "原文說話者是「層雲峡観光協会の事務局長」。「負責人」是白話換法，指協會裡負責事務的主管，沒有寫成會長；要更精確可寫「事務局長」，不影響判定。這是 2023 年訪談的說法，正文寫成他的話，沒寫成觀測值。 第4輪拆成獨立一句，說話者與內容不變。"
     },
     {
-      "claimId": "C47",
+      "claimId": "C49",
       "articleExcerpt": "看更多：層雲峽天氣與楓葉｜各月的氣溫、積雪與紅葉時期",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
       "sourceTitle": "（站內頁 content-production/sounkyo-weather/reader-preview.md）",
@@ -429,7 +447,7 @@
       "notes": "站內頁。"
     },
     {
-      "claimId": "C48",
+      "claimId": "C50",
       "articleExcerpt": "夏天的晚上有峽谷火祭（峡谷火まつり），貓頭鷹神事跟上川愛努古式舞蹈都被列進日本遺產",
       "sourceUrl": "https://sounkyo.net/event/detail.html?content=32",
       "sourceTitle": "第６３回層雲峡温泉峡谷火まつり｜層雲峡観光協会",
@@ -438,7 +456,7 @@
       "notes": "原文是「構成文化財」，「列進日本遺產」是白話說法，可接受。"
     },
     {
-      "claimId": "C49",
+      "claimId": "C51",
       "articleExcerpt": "主活動那天近三屆都是7月最後一個週六，傍晚開始，最後放煙火",
       "sourceUrl": "https://sounkyo.net/event/detail.html?content=27",
       "sourceTitle": "第62回層雲峡温泉峡谷火まつり｜層雲峡観光協会",
@@ -447,7 +465,7 @@
       "notes": "「主活動那天」＝本まつり（主祭日）。2024 7/27土 18:20～、21:00 夏花火；2025 7/26土 18:45～、21:00 花火打上；2026 7/25土 18:45～、21:00 花火打上（2025、2026 為官方傳單 PDF）。"
     },
     {
-      "claimId": "C50",
+      "claimId": "C52",
       "articleExcerpt": "秋天的紅葉谷有奇蹟點燈（奇跡のイルミネート），付了紅葉谷的維護費（「保全協力金」）會拿到一把傘，地面投影的影像也會映在傘上",
       "sourceUrl": "https://sounkyo-illuminate.com/",
       "sourceTitle": "【公式】奇跡のイルミネート | 層雲峡観光協会",
@@ -456,7 +474,7 @@
       "notes": "瀏覽器讀。"
     },
     {
-      "claimId": "C51",
+      "claimId": "C53",
       "articleExcerpt": "近三屆都辦在9月中旬到10月中旬",
       "sourceUrl": "https://sounkyo.net/event/detail.html?content=19",
       "sourceTitle": "奇跡のイルミネート7｜層雲峡観光協会",
@@ -465,7 +483,7 @@
       "notes": "2025 PR TIMES 9/14～10/13；2026 官方網站 9/13～10/12。"
     },
     {
-      "claimId": "C52",
+      "claimId": "C54",
       "articleExcerpt": "火祭的煙火21:00才放，點燈也開到21:00，那時候層雲峽18:55的最後一班巴士早就開走了，所以要看完整的話，一樣得住溫泉街一晚",
       "sourceUrl": "https://sounkyo.net/event/detail.html?content=27",
       "sourceTitle": "第62回層雲峡温泉峡谷火まつり｜層雲峡観光協会",
@@ -474,7 +492,7 @@
       "notes": "第1輪 C53 已解決。巴士 18:55 見 1498 頁（夏季同一份時刻表）。"
     },
     {
-      "claimId": "C53",
+      "claimId": "C55",
       "articleExcerpt": "延伸資料四條：官網、冰瀑祭交通頁、道北巴士線上售票網站、JR北海道時刻",
       "sourceUrl": "https://dohokubus.tourbooking-japan.com/A/ja-JP/product-detail/1497",
       "sourceTitle": "【片道券】 旭川駅前 ー 層雲峡（大人2,140円、子供1,070円）/ 有効期限：券面表示日時の30分前まで",
@@ -483,7 +501,7 @@
       "notes": "四條都打得開，用途描述與頁面內容一致。"
     },
     {
-      "claimId": "C54",
+      "claimId": "C56",
       "articleExcerpt": "資料來源各條連結是否打得開",
       "sourceUrl": "https://sounkyo.net/hyoubaku/",
       "sourceTitle": "層雲峡温泉 氷瀑まつり-北海道層雲峡観光協会",
@@ -492,19 +510,28 @@
       "notes": "新補的存檔 20261105（map）、20260119／20250126／20240227／20230306（首頁）、PR TIMES、Canyon 都打得開。"
     },
     {
-      "claimId": "C55",
+      "claimId": "C57",
       "articleExcerpt": "資料來源各條的標題",
       "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000001.000169372.html",
       "sourceTitle": "【層雲峡温泉】日本一早い紅葉が光のアートに染まる！第8回「奇跡のイルミネート」2025年9月14日より開催、秋の夜長を彩る体験型ライトアップ | 一般社団法人層雲峡観光協会のプレスリリース",
       "sourceQuote": "（各頁實際 title 與清單一致）",
       "verdict": "verified",
       "notes": "第2輪 C56 已解決：PR TIMES、Canyon、官網首頁存檔 2025／2024／2023 的標題都改成實際標題（2023「層雲峡温泉 氷瀑まつり2023-北海道層雲峡観光協会」、2024、2025 同格式；2026-01 不帶年份）。會場圖存檔四條為「会場マップ&みどころ | 層雲峡温泉 氷瀑まつり-北海道層雲峡観光協会」加存檔年月，一致。Google 日曆 ics 沒有網頁標題，「第49回　氷瀑まつり（公式 Google カレンダー）」用行事曆名稱，可接受。"
+    },
+    {
+      "claimId": "C58",
+      "articleExcerpt": "資料來源：寒流定義的來源是否列出",
+      "sourceUrl": "https://edu.cwa.gov.tw/PopularScience/pr/pr_6.html",
+      "sourceTitle": "中央氣象署數位科普網-小石虎的寒流問題",
+      "sourceQuote": "當臺北市的最低溫度降至10℃或以下時，臺灣即受「寒流」或「寒潮」之侵襲",
+      "verdict": "unsupported",
+      "notes": "正文新寫的寒流定義（F731）來源沒有列在資料來源。可原樣套用的最小改法：在資料來源加一行「- [中央氣象署數位科普網-小石虎的寒流問題](https://edu.cwa.gov.tw/PopularScience/pr/pr_6.html)」。另外台北的平年值已從正文拿掉，「氣候月平均 | 交通部中央氣象署」那一條現在正文沒用到，可刪（不影響判定）。"
     }
   ],
   "summary": {
-    "verified": 55,
+    "verified": 56,
     "incorrect": 0,
-    "unsupported": 0,
+    "unsupported": 2,
     "outdated": 0,
     "unreachable": 0,
     "not-stated": 0

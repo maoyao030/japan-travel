@@ -61,7 +61,7 @@
 
 ## 層雲峽冰瀑祭有多冷、要穿什麼？
 
-冷到台北的冬天完全沒辦法比。台北的最低溫降到10℃或以下就叫寒流，而冰瀑祭附近的上川在1月，連白天最暖的時候平均都只有零下4℃左右，入夜以後平均會降到零下14℃左右。點燈要等入夜，近兩屆的煙火也都是晚上才放，而且都是站在石狩川河岸的戶外看。層雲峽觀光協會的負責人說，這一帶到了2月，最低氣溫會低於零下10度，風也大，體感溫度會到零下20度。層雲峽的位置又比上川高大約200公尺，山谷裡可能更冷。
+冷到台北的冬天完全沒辦法比。台北的最低溫降到10℃或以下就叫寒流，而冰瀑祭附近的上川在1月，連白天最暖的時候平均都只有零下4℃左右，入夜以後平均會降到零下14℃左右。點燈要等入夜，近兩屆的煙火也都是晚上才放，而且會場就在石狩川河岸的戶外。層雲峽觀光協會的負責人說，這一帶到了2月，最低氣溫會低於零下10度，風也大，體感溫度會到零下20度。層雲峽的位置又比上川高大約200公尺，山谷裡可能更冷。
 
 去會場要穿保暖的衣服跟有止滑的鞋子，休息處買得到手套和鞋底止滑器，近三屆也都有柴火暖爐可以取暖。
 
@@ -109,7 +109,7 @@
 - [層雲峡は雪景色 | 層雲峡ビジターセンター](https://sounkyovc.net/blog/92605)
 - [気象庁｜過去の気象データ検索（上川）](https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=)
 - [気象庁｜過去の気象データ検索（層雲峡）](https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=)
-- [氣候月平均 | 交通部中央氣象署](https://www.cwa.gov.tw/V8/C/C/Statistics/monthlymean.html)
+- [中央氣象署數位科普網-小石虎的寒流問題](https://edu.cwa.gov.tw/PopularScience/pr/pr_6.html)
 - [第62回層雲峡温泉峡谷火まつり｜層雲峡観光協会](https://sounkyo.net/event/detail.html?content=27)
 - [第６３回層雲峡温泉峡谷火まつり｜層雲峡観光協会](https://sounkyo.net/event/detail.html?content=32)
 - [第64回 層雲峡温泉峡谷火まつり/峡谷炎の演舞｜層雲峡観光協会](https://sounkyo.net/event/detail.html?content=37)
