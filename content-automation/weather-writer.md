@@ -165,4 +165,5 @@
 ## 還沒接上的
 
 - 這套流程還沒有由排定工作自己跑過一篇；第一篇跑完要看 `unattended-summary.md` 與線上頁。排定工作仍暫停，啟用只由 Darren 決定。
-- 已上線的四篇天氣頁（利尻島、旭川、層雲峽、稚內）是舊寫法，要不要照這份重寫還沒問 Darren。
+- 已上線的三篇天氣頁（利尻島、旭川、稚內）是舊寫法，要不要照這份重寫還沒問 Darren；層雲峽已重寫上線（Darren 2026-11-27「先改層雲峽天氣」）。
+- 已上線文章整篇重寫要換上線時的順序：先用 `publish:article-inline-images`、`publish:article-embeds` 的 `--remove --apply` 拿掉舊照片與嵌入，再 `publish:article-body-replace --retitle --before-publication=<舊 publication.json> --apply`，改好圖片與嵌入封包的位置後再插回去；同一節只能放一個嵌入、一張照片。

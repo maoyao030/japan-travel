@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "articleId": "sounkyo-weather",
-  "articleTitle": "層雲峽天氣與楓葉，各月氣溫、積雪與紅葉季",
+  "articleTitle": "層雲峽天氣攻略，8月早晚就像台北2月，四季穿法、楓葉與初雪封路一次看",
   "targetUrl": "/places/sounkyo/weather/",
   "articleSource": "approved-reader-preview",
   "articleSourceCheckedAt": "2026-10-27",
   "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-weather/，不加入 Git、不上傳。 2026-10-29 文內照片第 4 批（先查官方素材：銀泉台用北海道上川總合振興局照片庫 VIEW OF KAMIKAWA 的官方照片；黑岳山坡紅葉在官方與免費圖庫找不到合格的，才用維基共享資源）：kurodake-autumn、ginsendai 共 2 張（銀泉台改用上川總合振興局照片庫的官方照片），放在「層雲峽楓葉什麼時候去？、紅葉期的車輛管制」，接在各節第一段之後（銀泉台接在該節最後）。",
+  "selectionScopeNote": "這次只選封面；文內圖需求之後另外處理。原圖用 curl 下載到 .tmp/image-selection/sounkyo-weather/，不加入 Git、不上傳。 2026-10-29 文內照片第 4 批（先查官方素材：銀泉台用北海道上川總合振興局照片庫 VIEW OF KAMIKAWA 的官方照片；黑岳山坡紅葉在官方與免費圖庫找不到合格的，才用維基共享資源）：kurodake-autumn、ginsendai 共 2 張（銀泉台改用上川總合振興局照片庫的官方照片），放在「層雲峽楓葉什麼時候去？、紅葉期的車輛管制」，接在各節第一段之後（銀泉台接在該節最後）。 2026-11-27 重寫：舊的兩個 H3 取消，黑岳紅葉照片留在「層雲峽楓葉什麼時候去？」第一段之後，銀泉台照片拿掉。",
   "selectedCandidateIds": {
     "cover": "cover-01",
     "kurodake-autumn": "foliage-01",
@@ -218,10 +218,6 @@
       ],
       "targetAspectRatio": "4:3",
       "minimumWidth": 1200,
-      "placement": {
-        "heading": "紅葉期的車輛管制",
-        "afterBlocks": 2
-      },
       "preparation": {
         "sourceFile": "source.jpg",
         "sourceDownloadUrl": "https://www.kamikawa.pref.hokkaido.lg.jp/fs/7/0/9/4/9/6/5/_/%E5%A4%A7%E9%9B%AA%E5%B1%B1%E8%B5%A4%E5%B2%B3%E9%8A%80%E6%B3%89%E5%8F%B0%E3%81%AE%E7%B4%85%E8%91%89.jpg",
@@ -316,7 +312,12 @@
             "noWatermark": true
           }
         }
-      ]
+      ],
+      "removedPlacement": {
+        "heading": "紅葉期的車輛管制",
+        "afterBlocks": 2
+      },
+      "removedNote": "2026-11-27 照天氣頁寫法重寫後，楓葉一節只留黑岳紅葉一張（一節最多一張），銀泉台照片從這頁拿掉；圖檔仍在 Sanity。"
     }
   ]
 }
