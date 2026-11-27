@@ -2546,3 +2546,20 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 沒有做：沒有新增檢查程式；已上線的文章沒有因此改；`.agents/working/claude-code.md` 還是天氣頁 session 的進行中紀錄，沒有動。
 - Git：分支 `claude/shared-rules` 接在天氣頁分支之後。天氣頁分支併進 `main` 後，Darren 說「好，併進去」，已把 `origin/main` 併進分支（`AGENTS.md`、`PROJECT_STATUS.md` 兩邊的段落都保留）、`npm test` 246 個通過，併進 `main` 並推送。
 - 唯一下一步：Darren 看 `core-style.md`，說哪幾條不是他的意思；下一個範本（祭典頁）提結構、做樣本之前先讀這一頁。
+
+## 2026-11-27 祭典頁的寫法與〈層雲峽冰瀑祭〉樣本（Claude Code）
+
+- 已完成：祭典頁範本研究四步。線上四篇祭典頁的檢討、別站十篇、台灣 Google 搜尋結果與三個方向的缺點、推薦與結構提案，都在 `content-experiments/festival-page-study-2026-11-26/`。
+- 已完成：〈層雲峽冰瀑祭〉樣本（`sample-sounkyo-festival/`）。作者 Sonnet 5.5；事實查核 9 輪，最後 58 項全部 verified；偏好審查 5 輪通過；讀者驗收第 2 次 `acceptable`；`fact_tags.py`、`check-voice.mjs` 通過，正文 1,835 字。Darren 一節一節看過，每節說可以，大標題挑 A「層雲峽冰瀑祭2027攻略，當天來回還是住一晚，日期、門票、交通與煙火一次看」。
+- 已完成：寫作 Skill `references/festival-page.md`；`content-automation/festival-writer.md`；驗收 Skill `references/festival-acceptance.md`；`local-writer.md` 加祭典頁分流；`SKILL.md`、`page-types.md`、`core-style.md`、`preference-review.md`（加 J、K 題）、`RULES_OVERVIEW.md`、`AGENTS.md` 同步。
+- 已決定（Darren）：樣本用層雲峽冰瀑祭；方向混搭（主幹替讀者做決定，借一節會場看點）；大標題帶年份；當屆資料集中一張表；峽谷火祭之後放進候選頁〈層雲峽夏天〉、紅葉谷點燈歸到紅葉的內容；合併候選要用讀者會搜的詞來收、不硬湊；有先後順序的事照順序一步一步講；數字換成讀者有感的基準。
+- 協調者照預設做的（他沒有另外表示意見）：看點減成兩個加一段（撐不起一項就併）；第 2 節 H2 寫「近年煙火時間」；連結另起一行「看更多」；模型組合；照片與貼文的數量；不寫建議待多久與什麼時候人多（查不到可靠來源）。
+- 尚未完成：
+  - **樣本還沒上線、還沒登記成範本**，都要 Darren 親口說。上線前還要做：搬進封包 `content-production/sounkyo-festival/`（舊版備份）、標題檢查、`audit_answer_first.py`、`check-benchmark.mjs`、`local-article-gates.mjs`、封面與文內照片及貼文、換正文、同步大綱與頁面規格。
+  - 一頁寫好幾個活動的祭典頁（稚內、利尻島、禮文島）還沒有寫法。
+  - 合併候選的 `mergeCandidates[]` 欄位與檢查程式還沒寫；現有三群還沒回頭盤點（Darren 還沒回答要不要盤點）。〈層雲峽夏天〉還沒排進清單。
+  - 嵌入封包的 `"pageType": "festival"` 選圖 Skill 與檢查程式還沒有。
+  - 冰瀑祭第 52 回的煙火、購票方式、會場圖官方還沒公布（預計 2026 年 12 月中到 2027 年 1 月上旬重查）；道北巴士冬季時刻 12 月再查。
+  - 研究紀錄的新事實 F700～F731 是暫編號，還沒進地點事實表與 D1。
+- 測試：`npm test` 通過。分支 `claude/festival-page`，還沒併進 `main`。
+- 唯一下一步：Darren 說要不要把樣本換上線、要不要登記成祭典頁的範本。
