@@ -1,7 +1,7 @@
 # 驗收紀錄：sounkyo-festival（2026-11-27，祭典頁樣本）
 
 - 文章：`content-production/sounkyo-festival/reader-preview.md`（層雲峽冰瀑祭2027攻略，當天來回還是住一晚，日期、門票、交通與煙火一次看）
-- SHA-256（換行統一成 LF 後計算）：`e325db1901aa012c414d39a30a87f8c797a99bae3ef743d4cd9f941676459d30`
+- SHA-256（換行統一成 LF 後計算）：`80c367b7cc22a00e8ec8f74b7f1dad88c7f00895c0fcec48654118b82fcd3015`
 - 規則：寫作 Skill `references/festival-page.md`（Darren 2026-11-27 同意）、`core-style.md`、`preference-review.md`（A～M 題）、`sentence-rhythm.md`、`heading-style.md`；驗收 Skill `references/festival-acceptance.md`。研究與樣本的每一輪在 `content-experiments/festival-page-study-2026-11-26/`；改版前的封包在 `pre-festival-page/`。
 - 寫作：一位作者（Sonnet 5.5），事實只用本封包 `reference-review.md`（研究者 2026-11-26 重查，暫編號 F700～F731 與地點事實表原有編號）。
 - 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作），實際打開來源，共 14 輪加搬進封包後的確認（含每次改句子後的複查）：第 1 輪 57 項裡 12 項沒過，最後 58 項全部 verified，沒有 unreachable。

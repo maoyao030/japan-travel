@@ -1835,94 +1835,20 @@
       "primaryQuery": "層雲峽冰瀑祭",
       "secondaryQueries": [
         "層雲峽冰瀑祭2027",
-        "層雲峽冰瀑祭門票",
-        "層雲峽冰瀑祭煙火時間",
         "層雲峽冰瀑祭交通"
       ],
-      "h1": "層雲峽冰瀑祭，2027 年日期、交通、門票與煙火時間",
+      "h1": "層雲峽冰瀑祭2027攻略，當天來回還是住一晚，日期、門票、交通與煙火一次看",
       "mustAnswer": [
-        "2027 年冰瀑祭日期與開放時間",
-        "門票（入場協力金）",
-        "煙火幾點",
-        "怎麼去、看完回得了旭川嗎、要不要住一晚",
-        "會場有什麼",
-        "要穿什麼",
-        "夏天的峽谷火祭與秋天的紅葉谷點燈"
+        "值不值得專程去、會場看得到什麼、祭典怎麼來的",
+        "這一屆的日期、開放時間、門票與近年煙火時間",
+        "怎麼去、看完煙火回得了旭川嗎、要不要住一晚",
+        "有多冷、要穿什麼",
+        "夏天的峽谷火祭與秋天的紅葉谷點燈（寄放）"
       ],
       "headings": [
         {
           "level": 2,
-          "text": "層雲峽冰瀑祭2027年的日期與開放時間",
-          "facts": [
-            "sounkyo:F71",
-            "sounkyo:F72",
-            "sounkyo:F74",
-            "sounkyo:F83"
-          ],
-          "answers": [
-            0
-          ]
-        },
-        {
-          "level": 3,
-          "text": "層雲峽冰瀑祭門票",
-          "facts": [
-            "sounkyo:F73"
-          ],
-          "answers": [
-            1
-          ]
-        },
-        {
-          "level": 3,
-          "text": "層雲峽冰瀑祭煙火時間",
-          "facts": [
-            "sounkyo:F75",
-            "sounkyo:F76",
-            "sounkyo:F92"
-          ],
-          "answers": [
-            2
-          ]
-        },
-        {
-          "level": 2,
-          "text": "層雲峽冰瀑祭交通，從旭川、上川搭巴士或開車",
-          "facts": [
-            "sounkyo:F28",
-            "sounkyo:F1",
-            "sounkyo:F3"
-          ],
-          "answers": [
-            3
-          ]
-        },
-        {
-          "level": 3,
-          "text": "看完煙火回得了旭川嗎？",
-          "facts": [
-            "sounkyo:F15",
-            "sounkyo:F75",
-            "sounkyo:F72"
-          ],
-          "answers": [
-            3
-          ]
-        },
-        {
-          "level": 3,
-          "text": "開車去冰瀑祭",
-          "facts": [
-            "sounkyo:F29",
-            "sounkyo:F32"
-          ],
-          "answers": [
-            3
-          ]
-        },
-        {
-          "level": 2,
-          "text": "層雲峽冰瀑祭會場的冰雕與玩法",
+          "text": "層雲峽冰瀑祭值得專程去嗎？",
           "facts": [
             "sounkyo:F76",
             "sounkyo:F77",
@@ -1936,19 +1862,53 @@
             "sounkyo:F86"
           ],
           "answers": [
-            4
+            0
           ]
         },
         {
-          "level": 3,
-          "text": "冰瀑祭要穿什麼？",
+          "level": 2,
+          "text": "層雲峽冰瀑祭2027的日期、門票與近年煙火時間",
+          "facts": [
+            "sounkyo:F71",
+            "sounkyo:F72",
+            "sounkyo:F74",
+            "sounkyo:F83",
+            "sounkyo:F73",
+            "sounkyo:F75",
+            "sounkyo:F76",
+            "sounkyo:F92"
+          ],
+          "answers": [
+            1
+          ]
+        },
+        {
+          "level": 2,
+          "text": "層雲峽冰瀑祭交通，看完煙火回得了旭川嗎？",
+          "facts": [
+            "sounkyo:F28",
+            "sounkyo:F1",
+            "sounkyo:F3",
+            "sounkyo:F15",
+            "sounkyo:F75",
+            "sounkyo:F72",
+            "sounkyo:F29",
+            "sounkyo:F32"
+          ],
+          "answers": [
+            2
+          ]
+        },
+        {
+          "level": 2,
+          "text": "層雲峽冰瀑祭有多冷、要穿什麼？",
           "facts": [
             "sounkyo:F80",
             "sounkyo:F79",
             "sounkyo:F161"
           ],
           "answers": [
-            5
+            3
           ]
         },
         {
@@ -1962,11 +1922,15 @@
             "sounkyo:F91"
           ],
           "answers": [
-            6
+            4
           ]
         }
       ],
-      "headingOrder": "traveler-journey"
+      "headingOrder": "festival-page",
+      "tableQueries": [
+        "層雲峽冰瀑祭門票",
+        "層雲峽冰瀑祭煙火時間"
+      ]
     },
     {
       "articleId": "sounkyo-stay",
@@ -4393,10 +4357,10 @@
     {
       "from": "sounkyo-festival",
       "to": "sounkyo",
-      "section": "層雲峽冰瀑祭2027 年的日期與開放時間",
-      "purpose": "開頭連回地點主頁",
-      "sentence": "還沒決定要不要排層雲峽，可以先看層雲峽值得去嗎。",
-      "anchor": "層雲峽值得去嗎"
+      "section": "開頭",
+      "purpose": "開頭第一個地名連回地點主頁",
+      "sentence": "層雲峽是沿著石狩川延伸大約24公里的斷崖峽谷，谷底有大雪山系最大的溫泉街。",
+      "anchor": "層雲峽"
     },
     {
       "from": "sounkyo-stay",
@@ -4809,25 +4773,25 @@
     {
       "from": "sounkyo-festival",
       "to": "sounkyo-transport",
-      "section": "層雲峽冰瀑祭交通，從旭川或上川搭巴士",
+      "section": "層雲峽冰瀑祭交通，看完煙火回得了旭川嗎？",
       "purpose": "巴士全班次在交通頁",
-      "sentence": "要比較其他時段的班次，或想先在網路上買好巴士票，可以看另外整理的層雲峽交通，旭川與上川出發的全部時刻、購票方式都在那一頁。",
+      "sentence": "看更多：層雲峽交通｜旭川與上川出發的全部班次、網路票的買法",
       "anchor": "層雲峽交通"
     },
     {
       "from": "sounkyo-festival",
       "to": "sounkyo-stay",
-      "section": "看完煙火回得了旭川嗎？",
+      "section": "層雲峽冰瀑祭交通，看完煙火回得了旭川嗎？",
       "purpose": "看完煙火住一晚",
-      "sentence": "決定看完煙火住一晚，層雲峽住宿整理了溫泉街的旅館，各家在哪一區、從哪裡訂房都寫在裡面。",
+      "sentence": "看更多：層雲峽住宿｜溫泉街的旅館各在哪一區、哪幾家有接駁巴士",
       "anchor": "層雲峽住宿"
     },
     {
       "from": "sounkyo-festival",
       "to": "sounkyo-weather",
-      "section": "冰瀑祭要穿什麼",
+      "section": "層雲峽冰瀑祭有多冷、要穿什麼？",
       "purpose": "冬天各月氣溫",
-      "sentence": "如果想知道冬天各月的氣溫、積雪有多深，好決定衣物帶多少，可以參考層雲峽天氣與楓葉。",
+      "sentence": "看更多：層雲峽天氣與楓葉｜各月的氣溫、積雪與紅葉時期",
       "anchor": "層雲峽天氣與楓葉"
     },
     {
