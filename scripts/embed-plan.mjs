@@ -52,7 +52,9 @@ export function validateEmbedPlan(plan, {articleId} = {}) {
   // 封包寫 pageType: 'stay-topic' 才適用；一節一則的限制照舊。
   // 住宿主頁（pageType: 'stay'）也適用（Darren 2026-11-18：主頁也要有每間飯店的貼文）。
   // 地點主頁（pageType: 'place-entry'，Darren 2026-11-24）：看點找不到合格實拍時改放 Instagram 貼文，同樣放寬。
-  const stayTopic = plan.pageType === 'stay-topic' || plan.pageType === 'stay' || plan.pageType === 'place-entry'
+  // 多活動祭典頁（pageType: 'festival-calendar'，Darren 2026-11-27：逐個介紹每個祭典，配上圖片或 IG）同樣放寬；
+  // 祭典每年辦一次、畫面多半不變，兩年前的官方影片也可以用。
+  const stayTopic = ['stay-topic', 'stay', 'place-entry', 'festival-calendar'].includes(plan.pageType)
   const maxEmbeds = stayTopic ? MAX_EMBEDS_STAY_TOPIC : MAX_EMBEDS
   if (embeds.length > maxEmbeds) throw new Error(`一篇最多 ${maxEmbeds} 個嵌入`)
 

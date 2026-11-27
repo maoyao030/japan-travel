@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "articleId": "rebun-island-festival",
+  "articleTitle": "禮文島祭典有哪些？2027最新禮文島祭典指南",
+  "targetUrl": "/places/rebun-island/festival/",
+  "articleSource": "provisional-draft",
+  "articleSourceCheckedAt": "2026-11-27",
+  "status": "planning",
+  "selectionMode": "criteria-based-auto-selection",
+  "selectionScopeNote": "2026-11-27 只找候選、不下載不上傳。作者還在改標題，placement.heading 先用祭典名（敦盛草感謝祭、嚴島神社祭、水產祭、花火大會、海峽祭），定稿後要改成那一節 H3 全文。五個祭典裡只有敦盛草找得到可用的實拍（禮文敦盛草本尊，沿用主頁封包）；嚴島神社祭、水產祭、花火大會改用嵌入（見 embed-plan.json）；海峽祭沒有。禮文町網站沒有轉載條款（只有 Copyright © Rebun Town All Rights Reserved），ACT NOW 募資頁的花火照片也沒有轉載條件（© ACT NOW. All Rights Reserved.），都不能下載使用。",
+  "selectedCandidateIds": {
+    "cover": "cover-01",
+    "atsumori-festival": "atsumori-01"
+  },
+  "selectedAt": "2026-11-27",
+  "slots": [
+    {
+      "slotId": "cover",
+      "kind": "cover",
+      "purpose": "讓讀者一眼看出是禮文島夏天的港邊：香深港是水產祭（渡輪站旁停車場）與花火大會（町公所後方港灣設施）的會場。",
+      "mustShow": [
+        "禮文島香深港或認得出是禮文島的海岸"
+      ],
+      "mustNotShow": [
+        "可辨識的人物臉部",
+        "旅館或店家招牌當主體",
+        "其他地方的祭典或花火冒充禮文島",
+        "暗示是 2027 年當年實況",
+        "AI 生成或合成畫面"
+      ],
+      "targetAspectRatio": "16:9",
+      "minimumWidth": 1600,
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/130726_Kafuka_Port_in_Rebun_Island_Hokkaido_Japan01s5.jpg",
+        "focalPoint": {
+          "x": 0.45,
+          "y": 0.5
+        },
+        "output": {
+          "width": 1600,
+          "height": 900,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "cover-01 是 663highland 在 2013 年 7 月 26 日從高處拍的香深港：中間是停靠的心島渡輪（Heart Land Ferry）、前方是渡輪站前的停車場（水產祭的會場就是渡輪站旁的停車場），背景是綠色山坡與海。拍攝月份正好是水產祭的季節。限制：右側有一棟建築掛著「HOTEL REBUN」字樣，位在畫面右三分之一、不是主體；渡輪船身有公司名。4:3 裁 16:9 只會切上下，招牌留在畫面裡，所以列 cover-02（主頁封面沿用）當備案；若驗收認為旅館字樣有暗示推薦的疑慮，就改用 cover-02。沒有找到禮文島祭典本身可用的實拍（見 candidates.md）。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-27",
+        "photoSearchNotes": "官方：禮文町網站沒有轉載條款；禮文島觀光協會官網打不開；宗谷總合振興局找不到像上川「VIEW OF KAMIKAWA」那樣的照片庫；ACT NOW 募資頁沒有轉載條件。維基共享資源：關鍵字「Rebun festival」只找到湖畔まつり 3 張（船泊會場、人臉清楚、有 JF 銀行招牌，不合格）；「Kafuka Rebun」有 663highland 2013 年香深港系列。免費圖庫沒有禮文島祭典照片。"
+      },
+      "candidates": [
+        {
+          "candidateId": "cover-01",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:130726_Kafuka_Port_in_Rebun_Island_Hokkaido_Japan01s5.jpg",
+          "creatorName": "663highland",
+          "sourceTitle": "File:130726 Kafuka Port in Rebun Island Hokkaido Japan01s5.jpg",
+          "sourceDescription": "Kafuka Port（香深港）on Rebun Island, Hokkaido, Japan.（作者自己上傳 Own work；授權 GFDL、CC BY-SA 3.0、CC BY 2.5 任選）",
+          "takenAt": "2013-07-26",
+          "width": 4896,
+          "height": 3672,
+          "licenseName": "CC BY 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+          "licenseCheckedAt": "2026-11-27",
+          "matchType": "contextual",
+          "matchLimits": "2013 年 7 月拍的香深港平日樣子，不是祭典當天；港邊建築與渡輪可能已經不同。",
+          "whyItFits": "檔案頁寫明是禮文島香深港；畫面裡的渡輪站前停車場就是水產祭的會場一帶，港灣也是花火的會場。",
+          "altDraft": "從高處看禮文島香深港，渡輪停在港邊，前方是停車場，背後是綠色山坡與海",
+          "captionDraft": "禮文島的香深港，水產祭與花火都在這一帶（2013 年 7 月拍攝）。",
+          "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
+          "commercialReview": {
+            "people": "none（停車場與街上看不到可辨識的人）",
+            "logos": "渡輪船身的 Heart Land Ferry 字樣；右側建築的 HOTEL REBUN 字樣，都不是主體",
+            "artwork": "none",
+            "property": "港灣、渡輪站、民宅與旅館建築",
+            "risk": "low",
+            "notes": "旅館字樣位在右側、佔畫面不大，圖說只寫香深港，不提旅館。驗收若認為有疑慮改用 cover-02。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        },
+        {
+          "candidateId": "cover-02",
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Gorota1.JPG",
+          "creatorName": "Furiko7e",
+          "sourceTitle": "File:Gorota1.JPG",
+          "sourceDescription": "ゴロタ岬から見たスコトン岬とトド島（作者自己上傳，{{own}}；授權 {{self|cc-by-sa-3.0}}）",
+          "takenAt": "2012-06-12",
+          "width": 2592,
+          "height": 1944,
+          "licenseName": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseCheckedAt": "2026-11-27",
+          "matchType": "contextual",
+          "matchLimits": "2012 年 6 月拍的禮文島北端海岸；和祭典無關，只能當地區情境。",
+          "whyItFits": "檔案頁寫明是從ゴロタ岬看須古頓岬與海驢島，能確定在禮文島北端；海岸線、草原丘陵與北端岬角都在畫面裡。",
+          "altDraft": "從禮文島ゴロタ岬的草坡往北看，海灣對面是須古頓岬與海驢島",
+          "captionDraft": "從ゴロタ岬望向須古頓岬與海驢島（2012 年 6 月）。",
+          "creditDraft": "照片：Furiko7e／Wikimedia Commons／CC BY-SA 3.0",
+          "commercialReview": {
+            "people": "遠處幾位健行者，最近一位低頭、臉看不清楚，不是主體",
+            "logos": "none",
+            "artwork": "none",
+            "property": "遠處海岸邊的零星民家，看不出店名",
+            "risk": "low",
+            "notes": "沒有招牌或商標；人物很小、無法辨識。CC BY-SA 3.0 允許商業使用與改作，裁切後的封面要用相同授權標示並署名。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    },
+    {
+      "slotId": "atsumori-festival",
+      "kind": "inline",
+      "need": "decide-visit",
+      "section": "敦盛草感謝祭",
+      "purpose": "敦盛草感謝祭就辦在禮文敦盛草的花期，讓讀者看到這幾天要看的花長什麼樣子。",
+      "mustShow": [
+        "禮文敦盛草（レブンアツモリソウ）本尊"
+      ],
+      "mustNotShow": [
+        "其他地方的敦盛草（紅色的本州敦盛草）",
+        "暗示是感謝祭當天或 2027 年的照片"
+      ],
+      "targetAspectRatio": "3:2",
+      "minimumWidth": 1200,
+      "placement": {
+        "heading": "敦盛草感謝祭｜趕上禮文敦盛草的花期",
+        "afterBlocks": 1
+      },
+      "preparation": {
+        "sourceFile": "source.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Cypripedium_macranthum_var._rebunense_%287763469244%29.jpg",
+        "output": {
+          "maxWidth": 1600,
+          "format": "webp",
+          "quality": 82
+        }
+      },
+      "selectionNotes": "沿用禮文島主頁封包的 atsumori-01（主頁已用、可重複用）。找不到感謝祭活動本身可下載的實拍，所以放花的本尊；活動現場改用 embed-plan.json 的心島渡輪貼文。圖說加拍攝年份，不暗示是感謝祭當天。限制同主頁：檔案頁沒寫拍攝點，看起來像植栽區，8 月拍。atsumori-02（ほくなん，2007 年 6 月，Public domain）是主頁封包的另一張候選，可當備案。",
+      "sourcing": {
+        "policy": "real-photo-first-ai-if-none",
+        "photoSearchOutcome": "qualified-photo-found",
+        "photoSearchCheckedAt": "2026-11-27",
+        "photoSearchNotes": "活動本身：維基共享資源找「アツモリソウ 礼文 感謝祭」沒有結果；禮文町網站無轉載條款。花的本尊沿用主頁封包（2026-11-24 查核）。"
+      },
+      "candidates": [
+        {
+          "sourceType": "commons-photo",
+          "provider": "Wikimedia Commons",
+          "assetType": "photo",
+          "licenseName": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "licenseCheckedAt": "2026-11-27",
+          "candidateId": "atsumori-01",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cypripedium_macranthum_var._rebunense_(7763469244).jpg",
+          "creatorName": "hoge asdf",
+          "sourceTitle": "File:Cypripedium macranthum var. rebunense (7763469244).jpg",
+          "sourceDescription": "Cypripedium macranthum var. rebunense in Rebun Island, Japan.（Flickr 轉載，FlickreviewR 已審核；分類 Cypripedium macranthos、Rebun Island）",
+          "takenAt": "2012-08",
+          "width": 3008,
+          "height": 2000,
+          "matchType": "exact",
+          "matchLimits": "拍攝點沒寫明，看起來是植栽區或植物園，不代表保護區的樣子；8 月拍的，不代表一般花期。",
+          "whyItFits": "檔案頁寫明是禮文島的 var. rebunense；奶油色的袋狀花一眼看得出就是禮文敦盛草。",
+          "altDraft": "石頭之間開著三朵奶油色的禮文敦盛草，前面一朵的花瓣下方是圓鼓鼓的袋狀唇瓣",
+          "captionDraft": "禮文島的禮文敦盛草，花是奶油色的（2012 年拍攝）。",
+          "creditDraft": "照片：hoge asdf／Wikimedia Commons／CC BY 2.0",
+          "commercialReview": {
+            "people": "none",
+            "logos": "none",
+            "artwork": "none",
+            "property": "none",
+            "risk": "low",
+            "notes": "只有花、葉子與石頭。"
+          },
+          "checks": {
+            "fullImageInspected": true,
+            "officialSourcePage": true,
+            "licenseVerified": true,
+            "notAiGenerated": true,
+            "noWatermark": true
+          }
+        }
+      ]
+    }
+  ]
+}
