@@ -2048,28 +2048,31 @@
       "targetPath": "/places/sounkyo/weather/",
       "primaryQuery": "層雲峽天氣",
       "secondaryQueries": [
-        "層雲峽氣溫",
+        "層雲峽各月氣溫",
         "層雲峽楓葉"
       ],
-      "h1": "層雲峽天氣與楓葉，各月氣溫、積雪與紅葉季",
+      "h1": "層雲峽天氣攻略，8月早晚就像台北2月，四季穿法、楓葉與初雪封路一次看",
       "mustAnswer": [
-        "各月氣溫與雨量",
-        "冬天多冷、積雪多深",
+        "各月氣溫，和台北差多少",
+        "各季怎麼穿、要注意什麼",
         "楓葉什麼時候去、哪裡先紅",
-        "出發前怎麼查當天山上天氣"
+        "幾月開始下雪、冬天會不會封路",
+        "出發前怎麼查天氣"
       ],
       "headings": [
         {
           "level": 2,
-          "text": "層雲峽氣溫，各月平均與雨量",
+          "text": "層雲峽各月氣溫，和台北差多少？",
           "facts": [
-            "sounkyo:F159",
-            "sounkyo:F160",
             "sounkyo:F161",
             "sounkyo:F162",
             "sounkyo:F163",
-            "sounkyo:F164",
-            "sounkyo:F156"
+            "sounkyo:F260",
+            "sounkyo:F548",
+            "sounkyo:F549",
+            "sounkyo:F550",
+            "sounkyo:F159",
+            "sounkyo:F266"
           ],
           "answers": [
             0
@@ -2077,15 +2080,19 @@
         },
         {
           "level": 2,
-          "text": "層雲峽冬天的積雪與寒冷",
+          "text": "層雲峽四季怎麼穿、要注意什麼？",
           "facts": [
-            "sounkyo:F165",
-            "sounkyo:F166",
+            "sounkyo:F260",
+            "sounkyo:F548",
+            "sounkyo:F549",
+            "sounkyo:F550",
             "sounkyo:F167",
-            "sounkyo:F168",
-            "sounkyo:F169",
-            "sounkyo:F170",
-            "sounkyo:F32"
+            "sounkyo:F264",
+            "sounkyo:F552",
+            "sounkyo:F564",
+            "sounkyo:F80",
+            "sounkyo:F71",
+            "sounkyo:F568"
           ],
           "answers": [
             1
@@ -2097,30 +2104,19 @@
           "facts": [
             "sounkyo:F70",
             "sounkyo:F116",
-            "sounkyo:F117"
-          ],
-          "answers": [
-            2
-          ]
-        },
-        {
-          "level": 3,
-          "text": "黑岳、銀泉台與溫泉街的紅葉順序",
-          "facts": [
-            "sounkyo:F70",
-            "sounkyo:F116",
-            "sounkyo:F117"
-          ],
-          "answers": [
-            2
-          ]
-        },
-        {
-          "level": 3,
-          "text": "紅葉期的車輛管制",
-          "facts": [
-            "sounkyo:F34",
-            "sounkyo:F35"
+            "sounkyo:F551",
+            "sounkyo:F552",
+            "sounkyo:F269",
+            "sounkyo:F270",
+            "sounkyo:F274",
+            "sounkyo:F275",
+            "sounkyo:F272",
+            "sounkyo:F268",
+            "sounkyo:F415",
+            "sounkyo:F101",
+            "sounkyo:F276",
+            "sounkyo:F277",
+            "sounkyo:F34"
           ],
           "answers": [
             2
@@ -2128,18 +2124,44 @@
         },
         {
           "level": 2,
-          "text": "出發前查層雲峽當天的天氣",
+          "text": "層雲峽幾月開始下雪，冬天會不會封路？",
           "facts": [
-            "sounkyo:F171",
-            "sounkyo:F172",
-            "sounkyo:F62"
+            "sounkyo:F267",
+            "sounkyo:F555",
+            "sounkyo:F272",
+            "sounkyo:F32",
+            "sounkyo:F273",
+            "sounkyo:F29",
+            "sounkyo:F30",
+            "sounkyo:F31"
           ],
           "answers": [
             3
           ]
+        },
+        {
+          "level": 2,
+          "text": "出發前怎麼查層雲峽的天氣？",
+          "facts": [
+            "sounkyo:F172",
+            "sounkyo:F171",
+            "sounkyo:F31",
+            "sounkyo:F553",
+            "sounkyo:F566",
+            "sounkyo:F567"
+          ],
+          "answers": [
+            4
+          ]
         }
       ],
-      "headingOrder": "traveler-journey"
+      "headingOrder": "weather-page",
+      "tableQueries": [
+        "層雲峽氣溫",
+        "層雲峽溫度",
+        "層雲峽冬天",
+        "層雲峽下雪"
+      ]
     },
     {
       "articleId": "sounkyo",
@@ -4373,10 +4395,9 @@
     {
       "from": "sounkyo-weather",
       "to": "sounkyo",
-      "section": "層雲峽氣溫，各月平均與雨量",
       "purpose": "開頭連回地點主頁",
-      "sentence": "還沒決定要不要排層雲峽，可以先看層雲峽值得去嗎。",
-      "anchor": "層雲峽值得去嗎"
+      "sentence": "層雲峽黑岳的紅葉被稱為日本最早的紅葉，山頂附近9月上旬就開始變色。",
+      "anchor": "層雲峽"
     },
     {
       "from": "asahidake-transport",
@@ -4885,25 +4906,25 @@
     {
       "from": "sounkyo-weather",
       "to": "sounkyo-festival",
-      "section": "層雲峽冬天的積雪與寒冷",
+      "section": "層雲峽四季怎麼穿、要注意什麼？",
       "purpose": "冬季的冰瀑祭",
-      "sentence": "冬天想去看冰瀑的人，層雲峽冰瀑祭那一頁整理了活動的內容與細節。",
+      "sentence": "想看冰瀑的話，層雲峽冰瀑祭那一頁有日期、門票，還有看完怎麼回旭川的交通。",
       "anchor": "層雲峽冰瀑祭"
     },
     {
       "from": "sounkyo-weather",
       "to": "sounkyo-hiking",
-      "section": "層雲峽楓葉什麼時候去",
+      "section": "層雲峽楓葉什麼時候去？",
       "purpose": "黑岳山頂先紅",
-      "sentence": "想搭纜車上黑岳、從山頂附近看最早的紅葉，層雲峽纜車與黑岳登山整理了纜車和登山路線。",
+      "sentence": "如果想從山頂附近看紅葉，搭完黑岳纜車之後要怎麼往上走，層雲峽纜車與黑岳登山有路線跟纜車的資訊。",
       "anchor": "層雲峽纜車與黑岳登山"
     },
     {
       "from": "sounkyo-weather",
       "to": "asahidake-ropeway",
-      "section": "層雲峽楓葉什麼時候去",
+      "section": "層雲峽楓葉什麼時候去？",
       "purpose": "另一處最早的紅葉",
-      "sentence": "同一段時間也在比較旭岳的人，旭岳纜車與姿見池寫了姿見一帶的紅葉。",
+      "sentence": "如果還在比較要去哪裡看楓葉，旭岳纜車與姿見池寫了姿見一帶的紅葉。",
       "anchor": "旭岳纜車與姿見池"
     },
     {
@@ -5175,9 +5196,9 @@
     {
       "from": "sounkyo-weather",
       "to": "sounkyo-transport",
-      "section": "紅葉期的車輛管制",
+      "section": "層雲峽楓葉什麼時候去？",
       "purpose": "紅葉期車輛管制與冬季開車路況",
-      "sentence": "管制期間要上山，或冬天打算自己開山路進峽谷的人，可以先讀層雲峽交通，預約方式、接駁巴士的班次與費用，以及冬季路況都整理在那裡。",
+      "sentence": "預約方式跟接駁巴士在層雲峽交通有整理。",
       "anchor": "層雲峽交通"
     },
     {

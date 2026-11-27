@@ -1,805 +1,472 @@
 {
   "schemaVersion": 1,
   "articleId": "sounkyo-weather",
-  "articleSha256": "e768221220fdcb3fa0fc7bd6c9b11473fa96b1992369f6d153bc3561f3bcae79",
-  "checker": "事實查核 agent（重寫一輪第 2 次複查：對照 revisions-round1.md 最後一輪逐句重比新版 reader-preview.md，改過與新增的句子重開遊客中心首頁、黑岳纜車首頁與遊客中心 92483 核對畫面日文；第 1 次 SHA 87b4f488…；唯讀，非作者、非潤稿者、非修稿者；2026-11-02 以 curl 重新讀取氣象廳上川・層雲峽平年值三個分頁與上川地方觀測點頁、層雲峽遊客中心首頁與山だより 22 篇、層雲峽觀光協會 4 頁、黑岳纜車首頁與 about 頁、北海道觀光機構、北海道開發局 PDF 兩份（PyMuPDF 讀文字）、國交省道路資訊；黑岳纜車提醒的日期另查 Internet Archive 2026-10-17 存檔；未使用瀏覽器；HTML 註解已排除）",
-  "checkedAt": "2026-11-02",
+  "articleSha256": "b5cae468db2a78407f2b6c461359aa740d9ee443fefababfe83f9e75192a1d69",
+  "checker": "事實查核 agent（Claude Opus 5.5 子代理，非作者；curl 帶瀏覽器 UA 實際重開來源；2026-11-27 第 6 輪複查（兩處最小改法））",
+  "checkedAt": "2026-11-27",
   "claims": [
     {
       "claimId": "C1",
-      "articleExcerpt": "層雲峽是大雪山腳下的峽谷溫泉街，標高在600公尺以上。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10611.html",
-      "sourceTitle": "層雲峡温泉｜観光スポット｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
-      "sourceQuote": "標高600mを超える高地にある温泉街は",
+      "articleExcerpt": "H1／seoTitle：層雲峽天氣攻略，8月早晚就像台北2月，四季穿法、楓葉與初雪封路一次看",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "8月 | 177.5 | 19.4 | 24.7 | 14.5；臺北 最高 19.4 20.3 22.7 26.4 29.7 32.7 34.8 34.2 31.5 27.6 24.8 21.0／最低 14.2 14.4 16.0 19.3 22.6 25.1 26.6 26.4 25.0 22.4 19.7 16.0（1991~2020）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "上川8月日最低14.5對台北2月14.4（差0.1）。標題承諾的四季穿法（四季總表）、楓葉、初雪與封路正文都有。"
     },
     {
       "claimId": "C2",
-      "articleExcerpt": "以附近的上川觀測點為準，最冷的1月平均氣溫是零下8.4度，最熱的8月白天最高也只有24.7度。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "1月|32.6|-8.4|-4.3|-13.8 … 8月|177.5|19.4|24.7|14.5",
+      "articleExcerpt": "seoDescription：層雲峽8月早晚像台北2月，一年有8個月白天比台北1月還冷。楓葉山上9月中旬、溫泉街10月上中旬，10月下旬開始下雪，暴風雪時國道會臨時封路。",
+      "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll0000001j9b-att/a079ll0000004amb.pdf",
+      "sourceTitle": "管内の国道の通行止めについて（第１報）｜北海道開発局旭川開発建設部",
+      "sourceQuote": "国道３９号 … 解除未定（吹雪のため）；上川日最高低於台北1月19.4的有1～5月、10～12月；紅葉谷散策ガイド「見頃は例年１０月上旬～中旬頃」；遊客中心「例年十月下旬には路面が積雪状態になる日があります」",
       "verdict": "verified",
-      "notes": "1月均溫 -8.4 為全年最低（2月 -7.8）；8月均溫 19.4 為全年最高，日最高 24.7。"
+      "notes": "每一段都對得到；「暴風雪時」有2022年吹雪封路通報撐，沒寫頻率。"
     },
     {
       "claimId": "C3",
-      "articleExcerpt": "秋天的紅葉由山上往下走，黑岳山頂與赤岳銀泉台9月中旬最漂亮，溫泉街一帶要等到10月上旬到中旬。",
-      "sourceUrl": "https://sounkyo.net/view/detail.html?content=9",
-      "sourceTitle": "【大雪山】赤岳銀泉台｜層雲峡観光協会",
-      "sourceQuote": "９月中旬、銀泉台の美しい紅葉が日本一早いピークを迎えます。",
+      "articleExcerpt": "excerpt：層雲峽一年裡有8個月，連白天都比台北最冷的1月還冷。楓葉山上9月中旬最好看，溫泉街要等到10月上旬到中旬，兩邊很難同一趟都碰到最漂亮的時候。冬天遇到暴風雪，國道會臨時封路，自己開車的話行程要多留一點時間。",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "上川日最高 1月 -4.3 … 5月 16.8、10月 13.2、11月 4.8、12月 -2.1；臺北最高 1月 19.4",
       "verdict": "verified",
-      "notes": "黑岳山頂：2025-09-13 遊客中心「黒岳山頂から先は紅葉見頃…ピークの一歩手前」（blog/91560）；溫泉街：2024-10-01 接近見頃（90389）、2025-10-16～19 見頃（91635、91641）、2026 年 10 月上旬高峰（92581）。由上往下：2026-10-01「大雪山の稜線を出発した紅葉前線が…温泉街まで下ってきました」（92540）。"
+      "notes": "8個月重算一致（上川日最高低於台北1月日最高19.4的是1～5月、10～12月）。山上到溫泉街約3～5週，「很難同一趟都碰到」有三年對照撐。"
     },
     {
       "claimId": "C4",
-      "articleExcerpt": "文中各月的氣溫、雨量與積雪都是氣象廳1991年到2020年的平年值，也就是往年的平均，不是預報。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "統計期間 1991～2020",
+      "articleExcerpt": "層雲峽黑岳的紅葉被稱為日本最早的紅葉，山頂附近9月上旬就開始變色",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/about/",
+      "sourceTitle": "ロープウェイ・リフトについて｜【公式】大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "日本一早い紅葉と呼ばれ山頂付近は9月上旬頃から紅葉し始めます。",
       "verdict": "verified",
-      "notes": "上川與層雲峽兩頁的統計期間都是 1991～2020。"
+      "notes": "有寫「被稱為」；原文是「9月上旬頃」，寫「就開始變色」可接受。"
     },
     {
       "claimId": "C5",
-      "articleExcerpt": "層雲峽自己的觀測點只量降水與積雪，氣溫得看標高324公尺的上川市街。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/select/prefecture.php?prec_no=12",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川地方",
-      "sourceQuote": "viewPoint('a','0015','上川','カミカワ',…,'324',…)｜viewPoint('a','1049','層雲峡','ソウウンキョウ',…,'540',…)",
+      "articleExcerpt": "這裡位在北海道的大雪山，山腳下是沿著石狩川延伸的斷崖峽谷，銀河瀑布跟流星瀑布還入選了日本瀑布百選",
+      "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10611.html",
+      "sourceTitle": "層雲峡温泉｜観光スポット｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
+      "sourceQuote": "大雪山国立公園の懐、柱状節理の断崖が続く道北最大級の温泉郷｜大雪山国立公園の峡谷一帯に広がる、断崖と温泉が魅力の地です。｜石狩川に沿って約24km続く層雲峡；觀光協會「日本の滝百選にも入っている名瀑です」",
       "verdict": "verified",
-      "notes": "層雲峽平年值頁氣溫、風速、日照欄全為 ///，只有降水量、降雪、最深積雪；上川觀測點標高 324 m，位於上川町。"
+      "notes": "第5輪：北海道觀光機構寫層雲峽在「大雪山國立公園的懷裡」，黑岳纜車頁標題是「大雪山層雲峡・黒岳ロープウェイ」，「位在北海道的大雪山」沒有超過來源（沒說是山頂或某座山）。"
     },
     {
       "claimId": "C6",
-      "articleExcerpt": "溫泉街比上川觀測點高出不少，衣服照上川的數字準備之後，再多帶一層比較穩。",
+      "articleExcerpt": "溫泉街位在標高600公尺以上的高地，就算是最熱的8月，早晚也跟台北的2月差不多冷",
       "sourceUrl": "https://www.visit-hokkaido.jp/spot/detail_10611.html",
       "sourceTitle": "層雲峡温泉｜観光スポット｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!",
-      "sourceQuote": "標高600mを超える高地にある温泉街は",
+      "sourceQuote": "標高600mを超える高地にあります；上川8月最低14.5、臺北2月最低14.4",
       "verdict": "verified",
-      "notes": "溫泉街 600 m 以上 vs 上川觀測點 324 m（氣象廳）；穿著建議是編輯判斷，沒有推算溫差。"
+      "notes": "氣溫是上川觀測點（324公尺）的數字，溫泉街更高、只會更冷，所以「差不多冷」是保守說法、沒有說重；第1節末有交代量測地點。"
     },
     {
       "claimId": "C7",
-      "articleExcerpt": "上川一年的平均氣溫是5.4度，12月到3月每個月的平均都在零下，最暖的7、8月平均也不到20度。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "年|1088.3|5.4｜12月 -5.6｜1月 -8.4｜2月 -7.8｜3月 -3.3｜7月 19.2｜8月 19.4",
+      "articleExcerpt": "楓葉是山上先紅，溫泉街晚一陣子才跟上。楓葉季一過，10月下旬溫泉街就開始下雪，自己開車的話要換冬季輪胎",
+      "sourceUrl": "https://sounkyovc.net/blog/92599",
+      "sourceTitle": "季節は冬へ | 層雲峡ビジターセンター",
+      "sourceQuote": "例年十月下旬には路面が積雪状態になる日があります。宿泊や日帰り入浴で層雲峡を訪れるばあいは、必ず冬タイヤに履き替えて",
       "verdict": "verified",
-      "notes": ""
+      "notes": "山上先紅：三年對照順序都是山頂與銀泉台→山腰→溫泉街。"
     },
     {
       "claimId": "C8",
-      "articleExcerpt": "表格 1月：-8.4°C／-4.3°C／-13.8°C／32.6mm／68.9mm",
+      "articleExcerpt": "一年有8個月，層雲峽的白天比台北最冷的1月還冷，只有6月到9月例外",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "1月|32.6|-8.4|-4.3|-13.8（層雲峡 1月|68.9）",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "上川日最高 1月 -4.3、2月 -3.2、3月 1.3、4月 8.8、5月 16.8、6月 21.2、7月 24.5、8月 24.7、9月 20.3、10月 13.2、11月 4.8、12月 -2.1；臺北最高 1月 19.4（12個月最低）",
       "verdict": "verified",
-      "notes": "層雲峽降水來自 block_no=1049 頁。"
+      "notes": ""
     },
     {
       "claimId": "C9",
-      "articleExcerpt": "表格 2月：-7.8°C／-3.2°C／-13.8°C／27.1mm／65.5mm",
+      "articleExcerpt": "逐月對照表：層雲峽白天／早晚 12 個月",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "2月|27.1|-7.8|-3.2|-13.8（層雲峡 2月|65.5）",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "1月 | 32.6 | -8.4 | -4.3 | -13.8｜2月 | 27.1 | -7.8 | -3.2 | -13.8｜3月 | 41.8 | -3.3 | 1.3 | -9.0｜4月 | 51.2 | 3.3 | 8.8 | -2.4｜5月 | 83.4 | 10.4 | 16.8 | 3.6｜6月 | 81.5 | 15.3 | 21.2 | 9.4｜7月 | 160.8 | 19.2 | 24.5 | 14.3｜8月 | 177.5 | 19.4 | 24.7 | 14.5｜9月 | 149.3 | 14.5 | 20.3 | 8.9｜10月 | 126.0 | 7.6 | 13.2 | 2.2｜11月 | 99.4 | 0.8 | 4.8 | -3.2｜12月 | 55.7 | -5.6 | -2.1 | -9.9",
       "verdict": "verified",
-      "notes": ""
+      "notes": "表格沒改，24格重新逐格對過，一致；統計期間1991～2020。"
     },
     {
       "claimId": "C10",
-      "articleExcerpt": "表格 3月：-3.3°C／1.3°C／-9.0°C／41.8mm／84.3mm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "3月|41.8|-3.3|1.3|-9.0（層雲峡 3月|84.3）",
+      "articleExcerpt": "逐月對照表：台北白天／早晚 12 個月",
+      "sourceUrl": "https://www.cwa.gov.tw/V8/C/C/Statistics/monthlymean.html",
+      "sourceTitle": "氣候月平均｜交通部中央氣象署",
+      "sourceQuote": "臺北 最高 19.4 20.3 22.7 26.4 29.7 32.7 34.8 34.2 31.5 27.6 24.8 21.0／最低 14.2 14.4 16.0 19.3 22.6 25.1 26.6 26.4 25.0 22.4 19.7 16.0（1991~2020）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "資料檔 Taiwan_meantxmax／meantxmin.html 帶瀏覽器 UA 用 curl 讀到，24格一致。"
     },
     {
       "claimId": "C11",
-      "articleExcerpt": "表格 4月：3.3°C／8.8°C／-2.4°C／51.2mm／84.4mm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "4月|51.2|3.3|8.8|-2.4（層雲峡 4月|84.4）",
+      "articleExcerpt": "台北的最低溫降到10℃或以下就叫寒流",
+      "sourceUrl": "https://edu.cwa.gov.tw/PopularScience/pr/pr_6.html",
+      "sourceTitle": "中央氣象署數位科普網-小石虎的寒流問題",
+      "sourceQuote": "當臺北市的最低溫度降至10℃或以下時，臺灣即受「寒流」或「寒潮」之侵襲",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C12",
-      "articleExcerpt": "表格 5月：10.4°C／16.8°C／3.6°C／83.4mm／98.6mm",
+      "articleExcerpt": "層雲峽一年裡只有7月、8月的早晚在10℃以上，連6月跟9月，早晚的溫度都差不多是台北寒流的程度",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "5月|83.4|10.4|16.8|3.6（層雲峡 5月|98.6）",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "6月 … 9.4｜7月 … 14.3｜8月 … 14.5｜9月 … 8.9",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第5輪重算：6月9.4、9月8.9，寒流門檻是10℃或以下，兩個月都在門檻附近略低，「差不多是寒流的程度」不說重也不說輕。"
     },
     {
       "claimId": "C13",
-      "articleExcerpt": "表格 6月：15.3°C／21.2°C／9.4°C／81.5mm／84.7mm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "6月|81.5|15.3|21.2|9.4（層雲峡 6月|84.7）",
+      "articleExcerpt": "表上的氣溫是在比溫泉街低的下游鎮上量的，所以穿衣服的時候，最好照表上的溫度再多帶一層衣服",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/select/prefecture.php?prec_no=12",
+      "sourceTitle": "気象庁｜過去の気象データ検索（上川地方 地点選択）",
+      "sourceQuote": "viewPoint('a','0015','上川','カミカワ','43','50.8','142','45.2','324',…)；HOKKAIDO LOVE!「標高600mを超える高地」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "上川觀測點在石狩川下游的上川町市街、標高324公尺，溫泉街600公尺以上，一致；沒有推算溫泉街氣溫。"
     },
     {
       "claimId": "C14",
-      "articleExcerpt": "表格 7月：19.2°C／24.5°C／14.3°C／160.8mm／157.5mm",
+      "articleExcerpt": "層雲峽每個月一天的溫差都比台北大，5月最大，白天跟早晚可以差到13度多",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "7月|160.8|19.2|24.5|14.3（層雲峡 7月|157.5）",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "5月 | 83.4 | 10.4 | 16.8 | 3.6；臺北 最高 19.4 20.3 22.7 26.4 29.7 32.7 34.8 34.2 31.5 27.6 24.8 21.0／最低 14.2 14.4 16.0 19.3 22.6 25.1 26.6 26.4 25.0 22.4 19.7 16.0（1991~2020）",
       "verdict": "verified",
-      "notes": ""
+      "notes": "重算日夜溫差：上川 9.5、10.6、10.3、11.2、13.2、11.8、10.2、10.2、11.4、11.0、8.0、7.8；台北 5.2、5.9、6.7、7.1、7.1、7.6、8.2、7.8、6.5、5.2、5.1、5.0。逐月上川都較大，5月13.2最大。「可以差到」講的是平年值的差，可接受。"
     },
     {
       "claimId": "C15",
-      "articleExcerpt": "表格 8月：19.4°C／24.7°C／14.5°C／177.5mm／192.6mm",
+      "articleExcerpt": "1月連白天都只有零下4℃左右，入夜以後會降到零下14℃左右，比台北寒流來的時候還要冷得多",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "8月|177.5|19.4|24.7|14.5（層雲峡 8月|192.6）",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "1月 | 32.6 | -8.4 | -4.3 | -13.8",
       "verdict": "verified",
-      "notes": ""
+      "notes": "−4.3、−13.8一致。−13.8是日最低平年值，通常出現在清晨，在夜裡降到這個數字的範圍內，寫「入夜以後會降到」沒有說錯（不是說傍晚一入夜就這麼冷）。如果要更精確，可以改成「到了半夜清晨會降到」，不改也可以。比寒流門檻10℃低23.8度，「冷得多」沒有說重。"
     },
     {
       "claimId": "C16",
-      "articleExcerpt": "表格 9月：14.5°C／20.3°C／8.9°C／149.3mm／153.0mm",
+      "articleExcerpt": "穿衣服要以整天都夠暖為主",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "9月|149.3|14.5|20.3|8.9（層雲峡 9月|153.0）",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "1月日最高 -4.3",
       "verdict": "verified",
-      "notes": ""
+      "notes": "白天也在零下，有平年值撐。"
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "表格 10月：7.6°C／13.2°C／2.2°C／126.0mm／157.4mm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "10月|126.0|7.6|13.2|2.2（層雲峡 10月|157.4）",
+      "articleExcerpt": "上山看楓葉的話，稜線上的風又更冷，手套跟帽子要帶冬天用的",
+      "sourceUrl": "https://sounkyovc.net/blog/90174",
+      "sourceTitle": "銀泉台　紅葉見頃に | 層雲峡ビジターセンター",
+      "sourceQuote": "稜線を吹く風は秋をとおり越して初冬の冷たさです。手袋や帽子などは冬用を用意し（2024-09-14）；2026-08-26「手袋がないと手が冷たくなる」(blog/92406)；2026-09-10「寒さ対策に加えて風対策も」(blog/92459)",
       "verdict": "verified",
-      "notes": ""
+      "notes": "冬用手套帽子的說法是2024年一篇，但2025、2026年同季也有防寒、手套、防風的提醒，寫成一般建議可接受。"
     },
     {
-      "claimId": "C18",
-      "articleExcerpt": "表格 11月：0.8°C／4.8°C／-3.2°C／99.4mm／149.3mm",
+      "articleExcerpt": "四季表 12月到3月：冰瀑祭與滑雪場登場的雪季；要比台北寒流時穿得再厚上許多，整天都不能脫，鞋子選有止滑的；路面結冰的時候，連人行道也會滑",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "11月|99.4|0.8|4.8|-3.2（層雲峡 11月|149.3）",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "上川日最高 12月 -2.1、1月 -4.3、2月 -3.2、3月 1.3／日最低 -9.9、-13.8、-13.8、-9.0；冰瀑祭「暖かい服と滑り止めのついた靴で」；遊客中心「歩道を歩く際にも転倒に注意」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "早晚比寒流門檻低19～24度、白天也在零度上下，「再厚上許多、整天都不能脫」沒有說重。",
+      "claimId": "C18"
     },
     {
       "claimId": "C19",
-      "articleExcerpt": "表格 12月：-5.6°C／-2.1°C／-9.9°C／55.7mm／109.4mm",
+      "articleExcerpt": "四季表 4月到5月：春天來得晚，4月還是雪地；4月要比台北寒流時穿得更厚，5月白天可以少穿一層，早晚還是要外套；4月的早晚平均還在零度以下",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "12月|55.7|-5.6|-2.1|-9.9（層雲峡 12月|109.4）",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "4月 | 51.2 | 3.3 | 8.8 | -2.4｜5月 | 83.4 | 10.4 | 16.8 | 3.6；層雲峽觀測點4月最深積雪94公分；遊客中心2026-04-01「春の遅い層雲峡」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "4月白天8.8、早晚−2.4都低於寒流門檻10℃，「比寒流時更厚」成立。"
     },
     {
       "claimId": "C20",
-      "articleExcerpt": "表中的氣溫與上川降水是上川觀測點的數字，層雲峽降水則來自標高540公尺的層雲峽觀測點，都是1991年到2020年的平年值。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/select/prefecture.php?prec_no=12",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川地方",
-      "sourceQuote": "viewPoint('a','1049','層雲峡','ソウウンキョウ','43','45.2','142','55.8','540',…)",
-      "verdict": "verified",
-      "notes": "兩頁統計期間 1991～2020。"
-    },
-    {
-      "claimId": "C21",
-      "articleExcerpt": "除了7月兩地差不多，其他月份峽谷裡的降水都比上川多。",
+      "articleExcerpt": "四季表 6月到8月：7月有高山花開的夏天；白天穿台北11月到12月的衣服，早晚至少要加到台北冬天的厚度；7月、8月雨多，8月最多",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "7月|157.5｜6月|84.7｜9月|153.0（上川 7月 160.8、6月 81.5、9月 149.3）",
+      "sourceTitle": "層雲峡（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "降水量 7月 157.5｜8月 192.6（12個月最多）；上川 6～8月 21.2～24.7／9.4～14.5；臺北最高 11月 24.8、12月 21.0、最低 1月 14.2、2月 14.4；黒岳2025-07-10、赤岳2026-07-27 花見頃",
       "verdict": "verified",
-      "notes": "重算 12 個月：層雲峽只有 7 月比上川少 3.3 mm，其餘 11 個月都多（6 月 +3.2、9 月 +3.7 差距小但仍多）。"
+      "notes": "重算一致。"
     },
     {
-      "claimId": "C22",
-      "articleExcerpt": "4月早上平均還在零下2.4度，5月白天雖然回到16.8度，早上也只有3.6度。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "4月|51.2|3.3|8.8|-2.4｜5月|83.4|10.4|16.8|3.6",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C23",
-      "articleExcerpt": "5月層雲峽觀測點的最深積雪還有9公分，鞋子挑不怕濕的。",
+      "articleExcerpt": "四季表 9月到10月中旬：楓葉從山上一路紅到溫泉街的季節；9月白天穿台北2月的衣服，早晚穿到台北寒流時的厚度。10月早晚比寒流時更冷，要穿得更厚，上山再加一件擋風的；9月跟10月的雨也不少",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "5月|98.6|///…|3|9",
+      "sourceTitle": "層雲峡（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "降水量 9月 153.0｜10月 157.4；上川 9月 20.3／8.9、10月 13.2／2.2；臺北最高 2月 20.3；寒流門檻10℃",
       "verdict": "verified",
-      "notes": "最深積雪 5 月平年值 9 cm（層雲峽觀測點）。"
+      "notes": "9月20.3＝台北2月；9月早晚8.9約在寒流門檻，「穿到寒流時的厚度」相稱；10月早晚2.2比門檻低7.8度，「更冷、要更厚」成立。9、10月雨量僅次於8月，「也不少」不說重。",
+      "claimId": "C21"
+    },
+    {
+      "articleExcerpt": "四季表 10月下旬到11月：初雪來了的秋末；已經接近冬天的穿法，早晚尤其要加；自駕要換冬季輪胎",
+      "sourceUrl": "https://sounkyovc.net/blog/92599",
+      "sourceTitle": "季節は冬へ | 層雲峡ビジターセンター",
+      "sourceQuote": "例年十月下旬には路面が積雪状態になる日があります…必ず冬タイヤに履き替えて；上川11月 4.8／-3.2；層雲峽觀測點10月降雪10公分",
+      "verdict": "verified",
+      "notes": "第6輪：11月白天4.8℃、早晚−3.2℃，比12月（−2.1／−9.9）暖一些，「接近冬天的穿法」不說重也不說輕。",
+      "claimId": "C22"
+    },
+    {
+      "articleExcerpt": "想看冰瀑的話，層雲峽冰瀑祭那一頁有日期、門票，還有看完怎麼回旭川的交通",
+      "sourceUrl": "https://sounkyo.net/hyoubaku/",
+      "sourceTitle": "層雲峡温泉 氷瀑まつり-北海道層雲峡観光協会",
+      "sourceQuote": "期間 2027年1月23日 (土)～3月7日 (日)；纜車經營者「12月上旬頃からゴールデンウィークまで」；2026～2027季「OPEN予定日は12月1日」",
+      "verdict": "verified",
+      "notes": "站內連結：冰瀑祭頁有日期、門票與回旭川交通各一節。12月滑雪場一句已移除。",
+      "claimId": "C23"
     },
     {
       "claimId": "C24",
-      "articleExcerpt": "6月白天約21度，早上平均卻只有9.4度，初夏一樣要帶外套。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "6月|81.5|15.3|21.2|9.4",
+      "articleExcerpt": "如果想上山看楓葉，要排在9月中旬，想在溫泉街看，就排10月上旬到中旬",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/momiji_valley_guide.pdf",
+      "sourceTitle": "紅葉谷散策ガイド｜層雲峡ビジターセンター",
+      "sourceQuote": "見頃は例年１０月上旬～中旬頃。；銀泉台 2024-09-14／2025-09-12／2026-09-13拍攝 見頃；黑岳山頂 2024-09-12／2025-09-13",
       "verdict": "verified",
-      "notes": ""
+      "notes": "三年對照一致。"
     },
     {
       "claimId": "C25",
-      "articleExcerpt": "7、8月白天最高約24.5度，穿短袖就夠。不過早晚降到14度左右",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "7月|160.8|19.2|24.5|14.3｜8月|177.5|19.4|24.7|14.5",
+      "articleExcerpt": "楓葉表 9月中旬：黑岳山頂一帶、銀泉台；黑岳搭纜車再往上走，銀泉台從層雲峽開車大約50分鐘，高峰期有車輛管制，要先預約",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=9",
+      "sourceTitle": "【大雪山】赤岳銀泉台｜層雲峡観光協会",
+      "sourceQuote": "９月中旬、銀泉台の美しい紅葉が日本一早いピークを迎えます。｜層雲峡より大雪湖、大雪山観光道路を車で50分ほどです。；遊客中心2026-09-11「駐車場利用・バス乗車ともに事前予約制」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "管制與預約是2025、2026年的做法，寫成有管制、要預約可接受。"
     },
     {
       "claimId": "C26",
-      "articleExcerpt": "一年平均不到3天會到30度以上，不用擔心炎熱。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=a2",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）気温階級別日数",
-      "sourceQuote": "日最高 ≧30.0℃ 年 2.8（7月 0.9、8月 1.5）",
+      "articleExcerpt": "楓葉表 9月下旬到10月初：黑岳山腰的纜車沿線，搭纜車的路上就看得到",
+      "sourceUrl": "https://sounkyovc.net/blog/90405",
+      "sourceTitle": "本日の層雲峡峡谷 | 層雲峡ビジターセンター",
+      "sourceQuote": "今、黒岳ロープウェイ乗車中に見える紅葉が見頃を迎えています。（2024-10-03）；2024-09-26「六合目～七合目が紅葉の見頃」；2025-10-01「標高900~800m付近が見頃」",
       "verdict": "verified",
       "notes": ""
     },
     {
-      "claimId": "C27",
-      "articleExcerpt": "這兩個月也是雨最多的時候，層雲峽觀測點8月的192.6毫米是一年最多。雨一直下到10月，7月到10月每月都超過150毫米",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "7月|157.5｜8月|192.6｜9月|153.0｜10月|157.4",
+      "articleExcerpt": "楓葉表 10月上旬到中旬：溫泉街、紅葉谷、銀河瀑布與流星瀑布一帶；溫泉街直接走過去，紅葉谷步道單程大約30分鐘",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=8",
+      "sourceTitle": "【層雲峡】紅葉谷の散策道｜層雲峡観光協会",
+      "sourceQuote": "片道約30分の散策で「紅葉の滝」に到着します。；2024-10-01「銀河・流星の滝…今、こちらも紅葉が見頃です」(blog/90389)；紅葉谷散策ガイド「見頃は例年１０月上旬～中旬頃」",
       "verdict": "verified",
-      "notes": "上川也是 7、8 月最多（160.8、177.5）。"
+      "notes": "",
+      "claimId": "C27"
     },
     {
       "claimId": "C28",
-      "articleExcerpt": "9月的早晚降到9度左右，到溫泉街看紅葉，外套要擋得住早晚的低溫。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "9月|149.3|14.5|20.3|8.9",
+      "articleExcerpt": "楓葉是從山頂一路紅到溫泉街，大約要花三、四個星期，所以兩邊很難同一趟都碰到最漂亮的時候",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/momiji_valley_guide.pdf",
+      "sourceTitle": "紅葉谷散策ガイド｜層雲峡ビジターセンター",
+      "sourceQuote": "③紅葉谷入口 層雲峡温泉の紅葉の名所。…峡谷の色合いは、７割ほどがダケカンバ類の黄葉で占められている事からカエデ類の深みのある紅葉は特に目立ち",
       "verdict": "verified",
-      "notes": ""
+      "notes": "「７割ほど」寫成「大約七成」，強度一致；原文講的是峽谷的顏色組成。"
     },
     {
-      "claimId": "C29",
-      "articleExcerpt": "到了10月，上川的平均日最低只剩2.2度，一個月裡平均有8.9天早上低於0度。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=a2",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）気温階級別日数",
-      "sourceQuote": "10月|7.6|13.2|2.2|0.2|0.0|8.9（日最低<0.0℃ 8.9 日）",
+      "articleExcerpt": "每年的時間前後會差幾天，出發前最好看一下遊客中心山況通訊的近況",
+      "sourceUrl": "https://sounkyovc.net/blog/92581",
+      "sourceTitle": "秋季観察会終了しました | 層雲峡ビジターセンター",
+      "sourceQuote": "ことしは例年より木々の葉の色づきが早く、十月上旬に紅葉の色づきがピークを迎えた",
       "verdict": "verified",
-      "notes": ""
+      "notes": "",
+      "claimId": "C29"
     },
     {
-      "claimId": "C30",
-      "articleExcerpt": "山上冷得更早，2026年9月上旬，遊客中心就說稜線的風已經像晚秋，早上可能接近0度。",
-      "sourceUrl": "https://sounkyovc.net/blog/92459",
-      "sourceTitle": "赤岳紅葉進む | 層雲峡ビジターセンター",
-      "sourceQuote": "稜線を吹く風はすでに晩秋を思わせる冷たさです。…早朝には零度付近まで気温が下がったと思われます。",
+      "articleExcerpt": "山上比溫泉街更早入冬，9月就下過雪",
+      "sourceUrl": "https://sounkyovc.net/blog/90338",
+      "sourceTitle": "黒岳・紅葉情報 | 層雲峡ビジターセンター",
+      "sourceQuote": "※黒岳は9/20夜に初雪が降りました。（2024-09-26）；2025-09-13「(昨年は9/20に雪が降りました)」",
       "verdict": "verified",
-      "notes": "2026-09-10 14:00 貼文（赤岳・小泉岳）。"
+      "notes": "只有2024年9月20日一筆。正文用「下過」，講的是發生過，沒有寫成每年，強度沒有超過來源，所以放行。其他年份：2026年9/10只有「霰が降ったとの情報」（是霰，不是雪），旭岳2026年初冠雪是10/2，所以不能改寫成「9月就會下雪」。如果想更清楚，可以改成「2024年9月20日就下過雪」，不改也可以。",
+      "claimId": "C30"
     },
     {
-      "claimId": "C31",
-      "articleExcerpt": "要上黑岳或銀泉台看紅葉，背包裡放一件刷毛衣或羽絨衣，再加一件防風外套。",
-      "sourceUrl": "https://sounkyovc.net/blog/92450",
-      "sourceTitle": "黒岳紅葉状況 | 層雲峡ビジターセンター",
-      "sourceQuote": "フリースやダウンなどの防寒着をしっかりとバックパックに忍ばせて",
+      "articleExcerpt": "如果想從山頂附近看紅葉，搭完黑岳纜車之後要怎麼往上走，層雲峽纜車與黑岳登山有路線跟纜車的資訊",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/about/",
+      "sourceTitle": "ロープウェイ・リフトについて｜【公式】大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "日本一早い紅葉と呼ばれ山頂付近は9月上旬頃から紅葉し始めます。",
       "verdict": "verified",
-      "notes": "防風：blog/92459「寒さ対策に加えて風対策もじゅうぶんに」。"
+      "notes": "「被稱為日本最早」這次不在這句，序言仍有「被稱為」。",
+      "claimId": "C31"
     },
     {
-      "claimId": "C32",
-      "articleExcerpt": "往年到了10月下旬，溫泉街就會有幾天路面積雪。",
-      "sourceUrl": "https://sounkyovc.net/blog/92599",
-      "sourceTitle": "季節は冬へ | 層雲峡ビジターセンター",
-      "sourceQuote": "例年十月下旬には路面が積雪状態になる日があります。",
+      "articleExcerpt": "銀泉台在紅葉高峰期有車輛管制，不管是自己開車還是搭接駁車，都要先預約，9月底到10月上旬就會封路，去晚了就上不去了",
+      "sourceUrl": "https://sounkyovc.net/blog/92483",
+      "sourceTitle": "【お知らせ】令和8年度 紅葉期のマイカー規制および予約について | 層雲峡ビジターセンター",
+      "sourceQuote": "昨年度から実施方法が変更され、駐車場利用・バス乗車ともに事前予約制｜マイカー規制協力金として1台2,000円｜予約は前日15時締切；上川町「銀泉台線 … 通行止め開始 令和8年9月29日」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "自駕（分時段單向通行）與包車都要預約，原文「駐車場利用・バス乗車ともに事前予約制」支持；正文的「接駁車」指上川町預約制包車。",
+      "claimId": "C32"
     },
     {
-      "claimId": "C33",
-      "articleExcerpt": "2025年10月30日早上層雲峽最低零下2度，路面積了雪又結冰，連走人行道都容易滑倒。",
-      "sourceUrl": "https://sounkyovc.net/blog/91651",
-      "sourceTitle": "路面積雪状態です | 層雲峡ビジターセンター",
-      "sourceQuote": "今朝の層雲峡の最低気温は-2℃でした。写真のように路面は積雪かつ凍結しています。…歩道を歩く際にも転倒に注意が必要です。",
+      "articleExcerpt": "預約方式跟接駁巴士在層雲峽交通有整理。",
+      "sourceUrl": "https://offpathnotes.com/places/sounkyo/transport/",
+      "sourceTitle": "層雲峽交通（本站線上版）",
+      "sourceQuote": "「紅葉期往銀泉台、高原溫泉的管制與接駁」：要先在上川町指定的網站預約並付通行費…前一天15:00截止；管制期間不開車：上川町的預約制包車；夏天週末另有只載登山客的接駁車",
       "verdict": "verified",
-      "notes": ""
+      "notes": "2026-11-27 curl 線上頁 200，預約方式與包車、登山接駁車都在同一節。銀泉台紅葉期實際是預約制包車，正文寫「接駁巴士」是寬鬆說法，但那一節標題就叫「管制與接駁」，讀者點過去找得到，可接受。",
+      "claimId": "C33"
     },
     {
       "claimId": "C34",
-      "articleExcerpt": "從這時起就換上冬天的裝備，保暖衣物與防滑的鞋都要有，開車一定要換冬季輪胎。",
-      "sourceUrl": "https://sounkyovc.net/blog/91651",
-      "sourceTitle": "路面積雪状態です | 層雲峡ビジターセンター",
-      "sourceQuote": "車の走行には冬タイヤが必要になります…防寒対策と、滑りにくい履物をご用意ください。",
+      "articleExcerpt": "層雲峽的溫泉街每年大約10月下旬開始下雪，這時候路面就會有積雪的日子，自己開車的話一定要換冬季輪胎，夏季輪胎走山路非常危險",
+      "sourceUrl": "https://sounkyovc.net/blog/92605",
+      "sourceTitle": "層雲峡は雪景色 | 層雲峡ビジターセンター",
+      "sourceQuote": "夏タイヤでの峠道の走行は大変危険です。層雲峡へお越しの際は、必ず冬タイヤを装着の上；2024-10-20「層雲峡で初雪」；2025-10-19「雨に雪が混じりだしています」；2026-10-19「例年十月下旬には路面が積雪状態になる日があります」",
       "verdict": "verified",
-      "notes": "2026-10-22（92605）「必ず冬タイヤを装着の上」。"
+      "notes": "三年在10/19～10/22，加上遊客中心「例年十月下旬」，「每年大約10月下旬」可接受。"
     },
     {
-      "claimId": "C35",
-      "articleExcerpt": "最冷的1、2月，上川早上平均零下13.8度，白天最高也只有零下3到4度。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "1月|32.6|-8.4|-4.3|-13.8｜2月|27.1|-7.8|-3.2|-13.8",
+      "articleExcerpt": "溫泉街看楓葉有名的地方是紅葉谷入口一帶，峽谷大約七成是岳樺類的黃葉，楓類的紅特別顯眼",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/momiji_valley_guide.pdf",
+      "sourceTitle": "紅葉谷散策ガイド｜層雲峡ビジターセンター",
+      "sourceQuote": "③紅葉谷入口 層雲峡温泉の紅葉の名所。…７割ほどがダケカンバ類の黄葉で占められている事からカエデ類の深みのある紅葉は特に目立ち",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第4輪：「有名的地方」對應原文「層雲峡温泉の紅葉の名所」，強度相同，沒有最高級；七成黃葉、楓紅顯眼與原文一致。",
+      "claimId": "C35"
     },
     {
       "claimId": "C36",
-      "articleExcerpt": "1月平均有27.9天整天都在0度以下。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=a2",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）気温階級別日数",
-      "sourceQuote": "1月|-8.4|-4.3|-13.8|30.8|0.0|31.0|0.0|27.9（日最高<0.0℃ 27.9 日）",
+      "articleExcerpt": "國道39號的石北峠跟273號的三國峠，遇到暴風雪或大雪的時候會臨時封路，要等天氣恢復、檢查過才會解除",
+      "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll0000001j9b-att/a079ll0000004amb.pdf",
+      "sourceTitle": "管内の国道の通行止めについて（第１報）｜北海道開発局旭川開発建設部",
+      "sourceQuote": "国道３９号 … 解除未定（吹雪のため）｜国道２７３号 … 解除未定（吹雪のため）｜通行止め解除は、天候回復後、点検を行った上で行う予定です。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "另一份2025-02-04新聞稿是「大雪による雪崩のおそれ」「大雪による道路障害のおそれ」；沒寫頻率。"
     },
     {
       "claimId": "C37",
-      "articleExcerpt": "峽谷裡10月就開始下雪，4月最深時仍有將近1公尺。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "10月 降雪の深さ合計 10｜4月 最深積雪 94",
+      "articleExcerpt": "冬天自己開車的話，行程後面多留一點時間，出發當天早上先查一下路況",
+      "sourceUrl": "https://sounkyovc.net/blog/90490",
+      "sourceTitle": "層雲峡初雪 | 層雲峡ビジターセンター",
+      "sourceQuote": "事前に道路状況をチェックし、冬装備が必要かご確認の上お出かけください",
       "verdict": "verified",
-      "notes": "「4月最深時」指 4 月最深積雪平年值 94 cm。"
+      "notes": "建議句，有遊客中心與開發局「北海道地区道路情報」撐。"
     },
     {
-      "claimId": "C38",
-      "articleExcerpt": "積雪表 10月：上川2cm／層雲峽6cm／降雪10cm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "10月|157.4|…|10|6（上川 10月 最深積雪 2）",
+      "articleExcerpt": "楓葉季出發前幾天，看層雲峽遊客中心的山況通訊，就知道楓葉變到哪裡、山上有沒有下雪，冬天也可以在那裡看積雪的狀況",
+      "sourceUrl": "https://sounkyovc.net/blog/92568",
+      "sourceTitle": "山は冬へ! | 層雲峡ビジターセンター",
+      "sourceQuote": "10月2日に旭岳で初冠雪を記録しました。層雲峡周辺の黒岳や赤岳でも、標高1500mで5cm、標高1800mで20cm程度の積雪；2024-11-30「本日13時の層雲峡の積雪45㎝」(blog/90542)；紅葉季貼文 2024-09-12、09-14、09-19、09-26、09-30、10-01、10-03、10-09、10-11",
       "verdict": "verified",
-      "notes": ""
+      "notes": "楓葉季每隔幾天就有一篇，紅葉、山上積雪、冬天積雪都有寫，可接受。",
+      "claimId": "C38"
     },
     {
-      "claimId": "C39",
-      "articleExcerpt": "積雪表 11月：27cm／41cm／133cm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "11月|149.3|…|133|41（上川 11月 27）",
+      "articleExcerpt": "首頁還連到氣象廳的週間預報，出發前一週就可以先看",
+      "sourceUrl": "https://sounkyovc.net/",
+      "sourceTitle": "層雲峡ビジターセンター",
+      "sourceQuote": "気象庁週間天気予報",
       "verdict": "verified",
-      "notes": ""
+      "notes": "首頁確實連到氣象廳週間天気予報（F172）。「出發前一週就可以先看」是從連結的用途推出的用法，不是遊客中心的說法；氣象廳的週間天気予報本來就是預報往後一週的天氣，這個用法沒有超過那個連結能做的事，放行。",
+      "claimId": "C39"
     },
     {
-      "claimId": "C40",
-      "articleExcerpt": "積雪表 12月：62cm／84cm／202cm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "12月|109.4|…|202|84（上川 12月 62）",
+      "articleExcerpt": "冬天自己開車的話，出發當天早上看國土交通省的道路資訊，確認國道39號跟273號有沒有封路",
+      "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll0000001j9b-att/a079ll0000004amb.pdf",
+      "sourceTitle": "管内の国道の通行止めについて（第１報）｜北海道開発局旭川開発建設部",
+      "sourceQuote": "※道路の通行規制情報はこちらをご覧ください。「北海道地区道路情報」 https://info-road.hdb.hkd.mlit.go.jp/；遊客中心首頁「道路・峠情報(開発局)」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "北海道開發局是國土交通省的地方機關，「北海道地区道路情報」與延伸資料的國交省道路資訊系統都是國交省的，用字一致。",
+      "claimId": "C40"
     },
     {
       "claimId": "C41",
-      "articleExcerpt": "積雪表 1月：80cm／102cm／163cm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "1月|68.9|…|163|102（上川 1月 80）",
+      "articleExcerpt": "要上山的話，纜車官網首頁每天更新運行狀況，也有天氣跟即時影像，強風的時候纜車會停。纜車也有一段時間停駛檢修，時間不固定，排行程前先看一眼",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "ロープウェイ 整備運休 CLOSED 11/9~11/30まで整備の為運休いたします。（2026）；2025-03-08「年明けから長らく整備運休していた…本日より運行再開」；2024-09-19「強風のためロープウェイが運休」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第6輪：拿掉「每年」，2025、2026年檢修期不同，「也有一段時間、時間不固定」有撐。"
     },
     {
       "claimId": "C42",
-      "articleExcerpt": "積雪表 2月：89cm／121cm／150cm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "2月|65.5|…|150|121（上川 2月 89）",
+      "articleExcerpt": "資料來源標題：上川／層雲峡 平年値（年・月ごとの値）｜気象庁",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "頁內標題「上川（上川地方)　平年値（年・月ごとの値）　主な要素」「層雲峡（上川地方)　平年値…」",
       "verdict": "verified",
-      "notes": ""
+      "notes": "縮寫，可接受。"
     },
     {
       "claimId": "C43",
-      "articleExcerpt": "積雪表 3月：86cm／126cm／160cm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "3月|84.3|…|160|126（上川 3月 86）",
+      "articleExcerpt": "資料來源標題：氣候月平均｜交通部中央氣象署；小石虎的寒流問題｜中央氣象署數位科普網",
+      "sourceUrl": "https://www.cwa.gov.tw/V8/C/C/Statistics/monthlymean.html",
+      "sourceTitle": "氣候月平均｜交通部中央氣象署",
+      "sourceQuote": "<title>氣候月平均 | 交通部中央氣象署</title>；<title>中央氣象署數位科普網-小石虎的寒流問題</title>",
       "verdict": "verified",
       "notes": ""
     },
     {
       "claimId": "C44",
-      "articleExcerpt": "積雪表 4月：47cm／94cm／80cm",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "4月|84.4|…|80|94（上川 4月 47）",
+      "articleExcerpt": "資料來源標題：ビジター山だより｜層雲峡ビジターセンター；層雲峡ビジターセンター",
+      "sourceUrl": "https://sounkyovc.net/blog/",
+      "sourceTitle": "ビジター山だより | 層雲峡ビジターセンター",
+      "sourceQuote": "<title>ビジター山だより | 層雲峡ビジターセンター</title>；<title>層雲峡ビジターセンター</title>",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第1輪 C64 已改好。"
     },
     {
       "claimId": "C45",
-      "articleExcerpt": "層雲峽觀測點的積雪在3月最深，平年126公分，比同月上川的86公分深約40公分。只看上川的數字，會低估峽谷裡的雪。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "3月|84.3|///…|160|126（上川 3月|…|137|86）",
+      "articleExcerpt": "資料來源標題：大雪山層雲峡・黒岳ロープウェイ｜公式；ロープウェイ・リフトについて｜大雪山層雲峡・黒岳ロープウェイ",
+      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
+      "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
+      "sourceQuote": "<title>【公式】大雪山層雲峡・黒岳ロープウェイ | …</title>；<title>ロープウェイ・リフトについて｜【公式】大雪山層雲峡・黒岳ロープウェイ | …</title>",
       "verdict": "verified",
-      "notes": "重算 F167 對 F165：126−86＝40；10～4 月每個月層雲峽最深積雪都比上川深（+4、+14、+22、+22、+32、+40、+47 cm），年最深 131 vs 95，「低估」對積雪深度成立。主詞已改為層雲峽觀測點，「3月最深」成立（層雲峽各月最大 126；上川最深是 2 月 89，句子已標「同月上川」）。另外降雪量不是每月都峽谷多（上川 12 月 203、1 月 178 cm，層雲峽 202、163 cm），本句講的是積雪深度，所以不算錯。"
+      "notes": "第1輪 C65、C66 已改好。"
     },
     {
       "claimId": "C46",
-      "articleExcerpt": "12月到2月出門，衣服要能應付零下10度以下的冷，保暖外套、帽子、手套都帶齊。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 上川（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "12月|…|-2.1|-9.9｜1月|…|-13.8｜2月|…|-13.8",
+      "articleExcerpt": "資料來源標題：銀河・流星の滝／赤岳銀泉台／紅葉谷の散策道／層雲峡温泉 氷瀑まつり｜層雲峡観光協会",
+      "sourceUrl": "https://sounkyo.net/view/detail.html?content=7",
+      "sourceTitle": "【層雲峡】銀河・流星の滝｜層雲峡観光協会",
+      "sourceQuote": "<title>【層雲峡】銀河・流星の滝｜層雲峡観光協会</title>；<title>【大雪山】赤岳銀泉台｜…</title>；<title>【層雲峡】紅葉谷の散策道｜…</title>；<title>層雲峡温泉 氷瀑まつり-北海道層雲峡観光協会</title>",
       "verdict": "verified",
-      "notes": "12 月日最低 -9.9 約零下 10 度，1、2 月 -13.8；穿著是編輯判斷。"
+      "notes": "第1輪 C67、C69、C70、C72 已改好；四頁正文都有用到（24公里與瀑布百選、銀泉台50分鐘、紅葉谷30分鐘、冰瀑祭日期與止滑鞋）。大函一行已刪。"
     },
     {
       "claimId": "C47",
-      "articleExcerpt": "積雪會一直留到4月，這段時間的鞋子挑防水又防滑的。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=1049&year=&month=&day=&view=",
-      "sourceTitle": "気象庁｜過去の気象データ検索 層雲峡（上川地方）平年値（年・月ごとの値）主な要素",
-      "sourceQuote": "4月 最深積雪 94｜5月 9",
+      "articleExcerpt": "資料來源標題：層雲峡温泉｜北海道観光機構；紅葉谷散策ガイド｜層雲峡ビジターセンター",
+      "sourceUrl": "https://sounkyovc.net/wp-content/uploads/2023/08/momiji_valley_guide.pdf",
+      "sourceTitle": "紅葉谷散策ガイド｜層雲峡ビジターセンター",
+      "sourceQuote": "PDF 第一行「紅葉谷散策ガイド」；<title>層雲峡温泉｜観光スポット｜【公式】北海道の観光・旅行情報サイト HOKKAIDO LOVE!</title>",
       "verdict": "verified",
-      "notes": ""
+      "notes": "第1輪 C73 已改好。"
     },
     {
       "claimId": "C48",
-      "articleExcerpt": "遊客中心也提醒，路面結冰時連走人行道都要小心滑倒。",
-      "sourceUrl": "https://sounkyovc.net/blog/91651",
-      "sourceTitle": "路面積雪状態です | 層雲峡ビジターセンター",
-      "sourceQuote": "歩道を歩く際にも転倒に注意が必要です。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C49",
-      "articleExcerpt": "最冷、雪最深的這幾個月，正好是冰瀑祭的季節，2027年從1月23日辦到3月7日。",
-      "sourceUrl": "https://sounkyo.net/hyoubaku/",
-      "sourceTitle": "層雲峡温泉 氷瀑まつり-北海道層雲峡観光協会",
-      "sourceQuote": "次回開催：第52回氷瀑まつり 開催日程 2027.1.23(土)～3.7(日)",
-      "verdict": "verified",
-      "notes": "最冷是 1、2 月（上川），最深積雪 2、3 月（層雲峽 3 月 126）。"
-    },
-    {
-      "claimId": "C50",
-      "articleExcerpt": "想上山賞楓就排9月中旬，想在溫泉街散步賞楓就排10月上旬到中旬，因為層雲峽的紅葉是從山頂一路往峽谷下走的。",
-      "sourceUrl": "https://sounkyovc.net/blog/91615",
-      "sourceTitle": "「紅葉散策」始まります | 層雲峡ビジターセンター",
-      "sourceQuote": "8月の下旬に2000m級の稜線からスタートした紅葉前線が山肌を下り、現在は標高900~800m付近が見頃…あと一週間もすれば層雲峡温泉街でも見頃期に入りそうです。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C51",
-      "articleExcerpt": "紅葉表 9月上旬：黑岳山頂附近 開始變色",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/about/",
-      "sourceTitle": "ロープウェイ・リフトについて｜【公式】大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "日本一早い紅葉と呼ばれ山頂付近は9月上旬頃から紅葉し始めます。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C52",
-      "articleExcerpt": "紅葉表 9月中旬：赤岳銀泉台、黑岳山頂以上 進入最佳觀賞期，接近高峰",
-      "sourceUrl": "https://sounkyovc.net/blog/91560",
-      "sourceTitle": "黒岳紅葉見頃です | 層雲峡ビジターセンター",
-      "sourceQuote": "黒岳山頂から先は紅葉見頃となっています。…現在ピークの一歩手前といったところでしょうか。（2025-09-13）",
-      "verdict": "verified",
-      "notes": "銀泉台：觀光協會「９月中旬、銀泉台の美しい紅葉が日本一早いピーク」。"
-    },
-    {
-      "claimId": "C53",
-      "articleExcerpt": "紅葉表 9月下旬：黑岳六到七合目 2024年9月26日最佳觀賞期",
-      "sourceUrl": "https://sounkyovc.net/blog/90338",
-      "sourceTitle": "黒岳・紅葉情報 | 層雲峡ビジターセンター",
-      "sourceQuote": "今、六合目～七合目が紅葉の見頃を迎えています。（2024-09-26）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C54",
-      "articleExcerpt": "紅葉表 10月上旬到中旬：溫泉街、紅葉谷、銀河瀑布與流星瀑布 2024年10月初、2025年10月中旬最佳觀賞期",
-      "sourceUrl": "https://sounkyovc.net/blog/90389",
-      "sourceTitle": "銀河・流星の滝 | 層雲峡ビジターセンター",
-      "sourceQuote": "層雲峡温泉街も紅葉が見頃を迎えようとしています。…銀河・流星の滝…今、こちらも紅葉が見頃です。（2024-10-01）",
-      "verdict": "verified",
-      "notes": "2025：91641「層雲峡ではまだ紅葉の見頃が続いています」（10/19）、91635 溫泉街カラフル（10/16）；紅葉谷 2024-09-30「これからが紅葉谷の紅葉本番」（90376）。"
-    },
-    {
-      "claimId": "C55",
-      "articleExcerpt": "紅葉表 10月下旬：溫泉街 落葉，路面開始積雪",
-      "sourceUrl": "https://sounkyovc.net/blog/91647",
-      "sourceTitle": "層雲峡は冬景色に | 層雲峡ビジターセンター",
-      "sourceQuote": "枯葉～落葉状態になっております（2025-10-26）",
-      "verdict": "verified",
-      "notes": "路面積雪：92599「例年十月下旬には路面が積雪状態になる日があります」。"
-    },
-    {
-      "claimId": "C56",
-      "articleExcerpt": "黑岳和赤岳銀泉台都被稱為日本最早的紅葉，黑岳山頂附近大約9月上旬開始變色，銀泉台9月中旬就到高峰。",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/about/",
-      "sourceTitle": "ロープウェイ・リフトについて｜【公式】大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "日本一早い紅葉と呼ばれ山頂付近は9月上旬頃から紅葉し始めます。",
-      "verdict": "verified",
-      "notes": "銀泉台：SK9「９月中旬、銀泉台の美しい紅葉が日本一早いピークを迎えます。」"
-    },
-    {
-      "claimId": "C57",
-      "articleExcerpt": "這時溫泉街的樹多半還是綠的，2024年紅葉谷入口一帶要到9月30日前後才轉紅。",
-      "sourceUrl": "https://sounkyovc.net/blog/90376",
-      "sourceTitle": "紅葉谷・紅葉情報 | 層雲峡ビジターセンター",
-      "sourceQuote": "ようやくここ数日で入口周辺も赤みが増してきました。…まだ全体的には緑の部分が多い（2024-09-30）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C58",
-      "articleExcerpt": "黑岳山頂、銀泉台和溫泉街最漂亮的時候，相差三週到一個多月。",
-      "sourceUrl": "https://sounkyovc.net/blog/91524",
-      "sourceTitle": "銀泉台　紅葉見頃に | 層雲峡ビジターセンター",
-      "sourceQuote": "銀泉台(赤岳第一花園　標高1500~1600m)の紅葉が見頃になりました。（2025-09-12）",
-      "verdict": "verified",
-      "notes": "重算：2025 銀泉台 9/12、黑岳山頂 9/13（91560）→溫泉街 10/16（91635）約 33～34 天；2026 赤岳見頃 9/13 攝（92494）→溫泉街 10 月上旬高峰（92540 10/1 起二三日、92581）約 3 週。範圍成立。"
-    },
-    {
-      "claimId": "C59",
-      "articleExcerpt": "9月下旬到10月初出發的話山頂已經過了，不過搭黑岳纜車還看得到山腰的紅葉。",
-      "sourceUrl": "https://sounkyovc.net/blog/90338",
-      "sourceTitle": "黒岳・紅葉情報 | 層雲峡ビジターセンター",
-      "sourceQuote": "すでに八合目から山頂部までは褐葉、落葉しているものばかりで紅葉は終わってしまっています（2024-09-26）",
-      "verdict": "verified",
-      "notes": "纜車：90405「今、黒岳ロープウェイ乗車中に見える紅葉が見頃を迎えています。」（2024-10-03）"
-    },
-    {
-      "claimId": "C60",
-      "articleExcerpt": "2024年的紅葉比2025年早一些。",
-      "sourceUrl": "https://sounkyovc.net/blog/90389",
-      "sourceTitle": "銀河・流星の滝 | 層雲峡ビジターセンター",
-      "sourceQuote": "層雲峡温泉街も紅葉が見頃を迎えようとしています。（2024-10-01）",
-      "verdict": "verified",
-      "notes": "比較：2024-10-01 溫泉街接近見頃；2025-10-01 見頃在 900～800 m、溫泉街還要約一週（91615），10/16 才滿是紅葉。成立。"
-    },
-    {
-      "claimId": "C61",
-      "articleExcerpt": "那年9月26日黑岳六到七合目紅葉正盛，八合目以上的葉子已經落了。",
-      "sourceUrl": "https://sounkyovc.net/blog/90338",
-      "sourceTitle": "黒岳・紅葉情報 | 層雲峡ビジターセンター",
-      "sourceQuote": "今、六合目～七合目が紅葉の見頃を迎えています。すでに八合目から山頂部までは褐葉、落葉しているものばかり",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C62",
-      "articleExcerpt": "9月21日到23日的秋分連假過後，平日的纜車停車場仍天天客滿。",
-      "sourceUrl": "https://sounkyovc.net/blog/90338",
-      "sourceTitle": "黒岳・紅葉情報 | 層雲峡ビジターセンター",
-      "sourceQuote": "三連休が終わり、平日になっても連日、ロープウェイの駐車場が満車になるほどたくさんの人が訪れている黒岳。",
-      "verdict": "verified",
-      "notes": "2024 年 9/22（日）秋分、9/23 補假，三連休 9/21～23。"
-    },
-    {
-      "claimId": "C63",
-      "articleExcerpt": "溫泉街在10月1日接近最佳觀賞期，銀河瀑布與流星瀑布（銀河・流星の滝）一帶的紅葉已經正好看。",
-      "sourceUrl": "https://sounkyovc.net/blog/90389",
-      "sourceTitle": "銀河・流星の滝 | 層雲峡ビジターセンター",
-      "sourceQuote": "層雲峡温泉街も紅葉が見頃を迎えようとしています。…銀河・流星の滝。…今、こちらも紅葉が見頃です。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C64",
-      "articleExcerpt": "10月3日搭黑岳纜車往上，沿途的紅葉也正漂亮。",
-      "sourceUrl": "https://sounkyovc.net/blog/90405",
-      "sourceTitle": "本日の層雲峡峡谷 | 層雲峡ビジターセンター",
-      "sourceQuote": "今、黒岳ロープウェイ乗車中に見える紅葉が見頃を迎えています。（2024-10-03）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C65",
-      "articleExcerpt": "2025年黑岳9月6日紅黃明顯變多，但還有很多綠葉。",
-      "sourceUrl": "https://sounkyovc.net/blog/91482",
-      "sourceTitle": "現在の黒岳の紅葉状況 | 層雲峡ビジターセンター",
-      "sourceQuote": "目に見えて赤や黄色が増えてきました。…まだ緑色も多い状態です。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C66",
-      "articleExcerpt": "到了9月13日，山頂以上已經接近最美的時候。",
-      "sourceUrl": "https://sounkyovc.net/blog/91560",
-      "sourceTitle": "黒岳紅葉見頃です | 層雲峡ビジターセンター",
-      "sourceQuote": "黒岳山頂から先は紅葉見頃となっています。…現在ピークの一歩手前",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C67",
-      "articleExcerpt": "銀泉台一帶是標高1,500到1,600公尺的赤岳第一花園，9月12日也到了正好看的時候。",
-      "sourceUrl": "https://sounkyovc.net/blog/91524",
-      "sourceTitle": "銀泉台　紅葉見頃に | 層雲峡ビジターセンター",
-      "sourceQuote": "銀泉台(赤岳第一花園　標高1500~1600m)の紅葉が見頃になりました。",
-      "verdict": "verified",
-      "notes": "2025-09-12 貼文。"
-    },
-    {
-      "claimId": "C68",
-      "articleExcerpt": "10月1日紅葉下到標高800到900公尺一帶。",
-      "sourceUrl": "https://sounkyovc.net/blog/91615",
-      "sourceTitle": "「紅葉散策」始まります | 層雲峡ビジターセンター",
-      "sourceQuote": "現在は標高900~800m付近が見頃になってきているようです。（2025-10-01）",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C69",
-      "articleExcerpt": "半個月後的10月16日，溫泉街滿是紅葉，19日還很漂亮，到了26日葉子已經枯落。",
-      "sourceUrl": "https://sounkyovc.net/blog/91641",
-      "sourceTitle": "雪が降り始めました | 層雲峡ビジターセンター",
-      "sourceQuote": "層雲峡ではまだ紅葉の見頃が続いています（2025-10-19）",
-      "verdict": "verified",
-      "notes": "10/16：91635「温泉街がカラフルになっています」；10/26：91647「枯葉～落葉状態」。"
-    },
-    {
-      "claimId": "C70",
-      "articleExcerpt": "2026年遊客中心說葉子變色比往年早，溫泉街10月上旬就到高峰，一直撐到10月10日到12日的體育節三連休。",
-      "sourceUrl": "https://sounkyovc.net/blog/92581",
-      "sourceTitle": "秋季観察会終了しました | 層雲峡ビジターセンター",
-      "sourceQuote": "ことしは例年より木々の葉の色づきが早く、十月上旬に紅葉の色づきがピークを迎えた層雲峡でしたが、なんとか「スポーツの日」の三連休まで紅葉状態を保つことができました。",
-      "verdict": "verified",
-      "notes": "2026 年體育節 10/12（一），三連休 10/10～12。"
-    },
-    {
-      "claimId": "C71",
-      "articleExcerpt": "2024、2025兩年溫泉街紅葉最盛的時候也落在10月上旬到中旬，排行程抓這段就好，10月下旬已經是尾聲。",
-      "sourceUrl": "https://sounkyovc.net/blog/91635",
-      "sourceTitle": "層雲峡紅葉の様子 | 層雲峡ビジターセンター",
-      "sourceQuote": "温泉街がカラフルになっています（2025-10-16）",
-      "verdict": "verified",
-      "notes": "2024：10/1～10/3 見頃（90389、90405）；2025：10/16～19 見頃、10/26 落葉（91647）。成立。"
-    },
-    {
-      "claimId": "C72",
-      "articleExcerpt": "從溫泉街走紅葉谷步道到紅葉瀑布（紅葉の滝）單程約30分鐘，步道開放到11月上旬。",
-      "sourceUrl": "https://sounkyo.net/view/detail.html?content=8",
-      "sourceTitle": "【層雲峡】紅葉谷の散策道｜層雲峡観光協会",
-      "sourceQuote": "片道約30分の散策で「紅葉の滝」に到着します。｜期間 6月～11月上旬",
-      "verdict": "verified",
-      "notes": "紅葉谷是「層雲峡温泉街の紅葉の名所」（90376）。"
-    },
-    {
-      "claimId": "C73",
-      "articleExcerpt": "山上的紅葉季有時會碰上第一場雪。2024年黑岳在9月20日夜裡就下了初雪，遊客中心因此提醒賞紅葉要帶防寒裝備。",
-      "sourceUrl": "https://sounkyovc.net/blog/90338",
-      "sourceTitle": "黒岳・紅葉情報 | 層雲峡ビジターセンター",
-      "sourceQuote": "※黒岳は9/20夜に初雪が降りました。…防寒装備をお忘れなく。",
-      "verdict": "verified",
-      "notes": "2025-09-13（91560）也以「昨年は9/20に雪が降りました」提醒防寒裝備。"
-    },
-    {
-      "claimId": "C74",
-      "articleExcerpt": "赤岳銀泉台與高原溫泉在紅葉期有車輛管制。",
-      "sourceUrl": "https://sounkyo.net/news/detail.html?content=101",
-      "sourceTitle": "令和8年度　紅葉期の車両交通規制（マイカー規制）｜層雲峡観光協会",
-      "sourceQuote": "令和8年度　紅葉期の車両交通規制（マイカー規制）｜1．道道銀泉台線｜2．町道高原温泉線",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C75",
-      "articleExcerpt": "2026年道道銀泉台線是9月12日到9月23日，町道高原溫泉線是9月19日到9月30日",
-      "sourceUrl": "https://sounkyo.net/news/detail.html?content=101",
-      "sourceTitle": "令和8年度　紅葉期の車両交通規制（マイカー規制）｜層雲峡観光協会",
-      "sourceQuote": "1．道道銀泉台線 ●令和8年9月12日～9月23日｜2．町道高原温泉線 ●令和8年9月19日～9月30日",
-      "verdict": "verified",
-      "notes": "遊客中心 92483 同日期。"
-    },
-    {
-      "claimId": "C76",
-      "articleExcerpt": "正好疊在銀泉台最漂亮的幾天。",
-      "sourceUrl": "https://sounkyo.net/view/detail.html?content=9",
-      "sourceTitle": "【大雪山】赤岳銀泉台｜層雲峡観光協会",
-      "sourceQuote": "９月中旬、銀泉台の美しい紅葉が日本一早いピークを迎えます。",
-      "verdict": "verified",
-      "notes": "9 月中旬落在 9/12～9/23 管制期內。"
-    },
-    {
-      "claimId": "C77",
-      "articleExcerpt": "兩條路上山的方式不一樣，銀泉台線可以搭上川町的預約制接駁巴士，也可以自己開車，高原溫泉線則只能自己開車。",
-      "sourceUrl": "https://sounkyovc.net/blog/92483",
-      "sourceTitle": "【お知らせ】令和8年度 紅葉期のマイカー規制および予約について | 層雲峡ビジターセンター",
-      "sourceQuote": "道道銀泉台線…通行方法(以下の2種類から選択…): ① 予約制貸切バス…② マイカー交互通行｜町道高原温泉線…通行方法: 上りと下りで時間を分けたマイカー交互通行のみ",
-      "verdict": "verified",
-      "notes": "巴士由上川町營運：道北巴士公告「9月12日～23日までの紅葉期間については、上川町で貸切（予約制）を運行」，遊客中心也寫「詳細な時刻表や予約サイトへのリンクは、上川町のホームページ」；每人單程 2,500 日圓、每台上限 40 人，按人預約，寫成接駁巴士可接受。"
-    },
-    {
-      "claimId": "C78",
-      "articleExcerpt": "不論走哪一條，都要事前預約，前一天15:00截止。",
-      "sourceUrl": "https://sounkyovc.net/blog/92483",
-      "sourceTitle": "【お知らせ】令和8年度 紅葉期のマイカー規制および予約について | 層雲峡ビジターセンター",
-      "sourceQuote": "駐車場利用・バス乗車ともに事前予約制…（銀泉台線）予約は前日15時締切…（高原温泉線）事前予約・事前決済制…予約は前日15時締切",
-      "verdict": "verified",
-      "notes": "兩條路各自都寫了前日 15 時截止。"
-    },
-    {
-      "claimId": "C79",
-      "articleExcerpt": "銀泉台只開放到10月上旬，2024年道道銀泉台線10月3日就封路過冬。",
-      "sourceUrl": "https://sounkyovc.net/blog/90367",
-      "sourceTitle": "冬期通行止めのお知らせ | 層雲峡ビジターセンター",
-      "sourceQuote": "道道銀泉台線 　10月03日 11:00～（冬期通行止め）",
-      "verdict": "verified",
-      "notes": "觀光協會 SK9「期間 6月下旬～10月上旬」。"
-    },
-    {
-      "claimId": "C80",
-      "articleExcerpt": "層雲峽遊客中心（層雲峡ビジターセンター）的官網首頁是最方便的入口，首頁上的氣象廳週間預報「気象庁週間天気予報」、日本氣象協會的大雪山風資訊「大雪山 風情報」，以及火山資訊與林道管制，都從這裡連得過去。",
-      "sourceUrl": "https://sounkyovc.net/",
-      "sourceTitle": "層雲峡ビジターセンター",
-      "sourceQuote": "<span class=\"title\">気象庁週間天気予報</span>｜<span class=\"title\">気象協会:大雪山 風情報</span>｜気象庁:火山情報｜林道規制(森林管理局)",
-      "verdict": "verified",
-      "notes": "頁面標題「層雲峡ビジターセンター」與括號內日文一致。2026-11-02 重開首頁 HTML 核對：「気象庁週間天気予報」與畫面一致；「大雪山 風情報」是按鈕全文「気象協会:大雪山 風情報」的後半，前面以中文「日本氣象協會的」帶出，讀者照著找得到。"
-    },
-    {
-      "claimId": "C81",
-      "articleExcerpt": "遊客中心的山況通訊（山だより）寫的是紅葉、初雪與路面的近況，像2026年10月22日那篇就寫到溫泉街已經積雪。",
-      "sourceUrl": "https://sounkyovc.net/blog/92605",
-      "sourceTitle": "層雲峡は雪景色 | 層雲峡ビジターセンター",
-      "sourceQuote": "2026年10月22日 … 層雲峡温泉街にも雪が積もりました。",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C82",
-      "articleExcerpt": "打開黑岳纜車的官網首頁看一下，那裡每天更新運行狀況「本日の運行状況」、山麓天氣與停車場空位「駐車場 空き情報」，還能從「黒岳ライブカメラ」看黑岳的即時影像。",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "<h2 class=\"ttl\">本日の運行状況</h2>｜7:00更新｜天気情報｜駐車場<br>空き情報｜黒岳ライブカメラ 層雲峡温泉街方面｜黒岳ライブカメラ 黒岳山頂方面",
-      "verdict": "verified",
-      "notes": "2026-11-02 重開核對畫面文字：「本日の運行状況」一致；「駐車場 空き情報」原頁是兩行（駐車場／空き情報），空格寫法可接受；「黒岳ライブカメラ」一致（有溫泉街方面與山頂方面兩台）。"
-    },
-    {
-      "claimId": "C83",
-      "articleExcerpt": "2026年吊椅從10月16日到11月30日停駛保養，纜車也在11月9日到30日停駛保養，這段期間要搭纜車上黑岳就排不進去。",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "リフト 整備運休 CLOSED 10/16～11/30｜※ロープウェイ運休情報　2026年11/9～11/30　※整備の為",
-      "verdict": "verified",
-      "notes": ""
-    },
-    {
-      "claimId": "C84",
-      "articleExcerpt": "2026年10月2日旭岳初冠雪，10月5日黑岳、赤岳標高1,500公尺一帶已經積了5公分的雪。",
-      "sourceUrl": "https://sounkyovc.net/blog/92568",
-      "sourceTitle": "山は冬へ! | 層雲峡ビジターセンター",
-      "sourceQuote": "10月2日に旭岳で初冠雪を記録しました。層雲峡周辺の黒岳や赤岳でも、標高1500mで5cm、標高1800mで20cm程度の積雪になっています。",
-      "verdict": "verified",
-      "notes": "2026-10-05 貼文。"
-    },
-    {
-      "claimId": "C85",
-      "articleExcerpt": "纜車公司也已經提醒，五合目以上積了雪，夏季的登山裝備不能上山。",
-      "sourceUrl": "https://www.rinyu.co.jp/kurodake/",
-      "sourceTitle": "【公式】大雪山層雲峡・黒岳ロープウェイ",
-      "sourceQuote": "※登山を計画されている方へ 5合目から上はすでに積雪状態となっています。 夏山装備では登山できません。",
-      "verdict": "verified",
-      "notes": "2026-11-02 首頁仍有這則提醒；已不綁日期。"
-    },
-    {
-      "claimId": "C86",
-      "articleExcerpt": "要開車進峽谷，出發前從遊客中心首頁的道路資訊連結「道路・峠情報(開発局)」查一下路況。",
-      "sourceUrl": "https://sounkyovc.net/",
-      "sourceTitle": "層雲峡ビジターセンター",
-      "sourceQuote": "<span class=\"title\">道路・峠情報(開発局)</span>",
-      "verdict": "verified",
-      "notes": "按鈕文字與畫面一致（半形括號）；連結指向 https://www.road-info-prvs.mlit.go.jp/roadinfo/pc/（curl 200）。"
-    },
-    {
-      "claimId": "C87",
-      "articleExcerpt": "冬天山路因大雪封路後，要等天氣轉好、檢查過才重新開放。",
+      "articleExcerpt": "資料來源標題：管内の国道の通行止めについて（第３報）／（第１報）｜北海道開発局旭川開発建設部",
       "sourceUrl": "https://www.hkd.mlit.go.jp/as/release/a079ll000000b6t2-att/pm5osg00000004sh.pdf",
-      "sourceTitle": "北海道開発局旭川開発建設部 国道の通行止めについて（令和7年2月）",
-      "sourceQuote": "解除未定（大雪による雪崩のおそれのため）…なお、残る区間の通行止め解除は、天候回復後、点検を行った上で行う予定です。",
+      "sourceTitle": "管内の国道の通行止めについて（第３報）",
+      "sourceQuote": "PDF 標題「管内の国道の通行止めについて（第３報）」「管内の国道の通行止めについて（第１報）」",
       "verdict": "verified",
-      "notes": "資料來源列的 2022 年開發局 PDF（a079ll0000004amb）是吹雪封路，同樣寫「通行止め解除は、天候回復後、点検を行った上で行う予定です」。"
+      "notes": "第1輪 C74、C75 已改好。"
     },
     {
-      "claimId": "C88",
-      "articleExcerpt": "延伸資料：國土交通省道路資訊，冬天的封路與路況。https://www.road-info-prvs.mlit.go.jp/roadinfo/pc/",
-      "sourceUrl": "https://www.road-info-prvs.mlit.go.jp/roadinfo/pc/",
-      "sourceTitle": "道路情報提供システム｜国土交通省",
-      "sourceQuote": "遊客中心首頁「道路・峠情報(開発局)」→ https://www.road-info-prvs.mlit.go.jp/roadinfo/pc/",
+      "articleExcerpt": "資料來源：層雲峽的氣溫是氣象廳上川觀測點（上川市街，標高324公尺）1991到2020年的平年值，積雪與降水另有層雲峽觀測點（標高540公尺）的數字；台北用的是中央氣象署臺北站1991到2020年的月平均",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/select/prefecture.php?prec_no=12",
+      "sourceTitle": "気象庁｜過去の気象データ検索（上川地方 地点選択）",
+      "sourceQuote": "viewPoint('a','0015','上川',…,'324',…)｜viewPoint('a','1049','層雲峡',…,'540',…)；「統計期間 1991～2020」；臺北 1991~2020",
       "verdict": "verified",
-      "notes": "2026-11-02 curl 回 200；其他延伸資料（氣象廳兩頁、遊客中心 blog、黑岳纜車）也都打開確認。"
+      "notes": "",
+      "claimId": "C49"
+    },
+    {
+      "articleExcerpt": "延伸資料四條（氣象廳上川平年值、遊客中心山況通訊、黑岳纜車運行狀況、國土交通省道路資訊）",
+      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=12&block_no=0015&year=&month=&day=&view=",
+      "sourceTitle": "上川（上川地方）平年値（年・月ごとの値）主な要素｜気象庁 過去の気象データ検索",
+      "sourceQuote": "2026-11-27 curl 都回 200；國交省頁 <title>道路情報提供システム",
+      "verdict": "verified",
+      "notes": "都是官方頁、打得開。",
+      "claimId": "C50"
+    },
+    {
+      "articleExcerpt": "資料來源清單：第2輪已刪掉峽谷火まつり一行",
+      "sourceUrl": "https://sounkyo.net/event/detail.html?content=37",
+      "sourceTitle": "第64回 層雲峡温泉峡谷火まつり/峡谷炎の演舞｜層雲峡観光協会",
+      "sourceQuote": "（正文已無火祭內容，資料來源也已無此行）",
+      "verdict": "verified",
+      "notes": "第2輪 C61 已照最小改法改好；清單16條每條正文都有用到。",
+      "claimId": "C51"
     }
   ],
   "summary": {
-    "verified": 88,
+    "verified": 51,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
