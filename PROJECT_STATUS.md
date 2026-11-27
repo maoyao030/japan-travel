@@ -2614,3 +2614,18 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
   - Search Console 資料目前只能靠 Darren 的 Chrome 手動讀，沒有自動取得的方式；改版成效要等 28 天後再看。
 - 測試與 Git：見下一行的合併紀錄。
 - 唯一下一步：Darren 看線上的層雲峽天氣頁；決定下一篇是做交通頁範本（稚內交通）還是繼續重寫其他天氣頁。
+
+## 2026-11-27 一頁寫好幾個活動的祭典頁：研究與〈禮文島祭典〉樣本（Claude Code）
+
+- Darren：「好誒 可以做 研究看看」。分支 `claude/festival-multi-page`。
+- 已完成：研究三步（`content-experiments/festival-multi-study-2026-11-27/`：`01-current-pages.md`、`02-serp-and-other-sites.md`、`03-proposal.md`）。最重要的發現：稚內、利尻島、禮文島接「祭典、活動、花火、某月」中文自動完成都沒有詞，這種頁主要給站內讀者；別站七篇沒有一篇替讀者挑日子或把活動接上末班船。
+- 已完成：〈禮文島祭典〉補研究（歷年日期總表 2016～2026、主角現場、交通時刻；新事實 F937～F963 在封包 `reference-review.md` 第四節）與樣本。作者 Sonnet 5.5；事實查核 9 輪，最後 45 條全數 verified；偏好審查 7 輪通過；讀者驗收第 4 次 `acceptable`；`fact_tags.py`、`check-voice.mjs`、`audit_answer_first.py` 通過，正文 1,432 字，SHA（LF）c84755f4…。大標題「禮文島祭典2027，看島上唯一的花火要住一晚，7月神轎遶境與水產祭一次看」。
+- 已完成：寫作 Skill `references/festival-calendar-page.md`、驗收 Skill `references/festival-calendar-acceptance.md`；`festival-page.md`、`page-types.md`、`SKILL.md`、`festival-writer.md`、`local-writer.md`、`RULES_OVERVIEW.md`、`AGENTS.md` 同步。
+- 已決定（協調者的預設，Darren 還沒看過）：結構四節、年份放大標題但不寫「日期」、模型組合、照片貼文最多 4 則、只收遊客看得到東西的活動（馬拉松、溫泉美食健行不放）。
+- 尚未完成：
+  - Darren 看樣本；上線與登記成範本都要他親口說。上線前還要：大綱與頁面規格同步新標題、標題檢查、`local-article-gates.mjs`、封面與照片貼文、`review.md`；上線後禮文島主頁換成六節版（`content-production/rebun-island/phase2-six-sections/`，連結行要先照新格式改）。
+  - 禮文島事實表 F656 要更正；F937～F963 還沒寫進地點事實表與 D1。
+  - `check-benchmark.mjs` 警告「海膽祭」第一次出現沒附原文（利尻島的活動，本頁只提一次），上線前決定要不要補括號。
+  - 線上〈稚內祭典〉〈利尻島祭典〉還是舊寫法；〈稚內冬天〉合併候選沒決定；`festival-writer.md` 還沒加這一型的分流（等範本）。
+- 測試：`npm test` 246 通過，`planning:check`、`queue:validate`、`page-models.mjs --check` 通過。
+- 唯一下一步：Darren 看〈禮文島祭典〉樣本（`content-production/rebun-island-festival/reader-preview.md`），說要不要上線、要不要當這一型的範本。
