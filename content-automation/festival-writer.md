@@ -2,7 +2,7 @@
 
 排定工作 `japan-travel-daily-writer` 挑到「以一個祭典為主題」的祭典頁（文章清單裡 `pageType` 是 `aspect-page`、主題是 `festival`，而且頁面規格的主要查詢是單一祭典的名字，例如「層雲峽冰瀑祭」）時，不照 `local-writer.md` 第 2～4 步，改照這份文件做，做完接 `local-writer.md` 第 5 步上傳。
 
-一頁寫一個地方好幾個活動的祭典頁（主要查詢是「○○祭典」「○○活動」，例如稚內、利尻島、禮文島）的寫法在寫作 Skill `references/festival-calendar-page.md`、驗收題在驗收 Skill `references/festival-calendar-acceptance.md`（2026-11-27 研究；流程和這份相同，只換規格與驗收題）。**樣本〈禮文島祭典〉Darren 還沒看過、還沒有範本，在他說可以之前挑到就跳過**。
+一頁寫一個地方好幾個活動的祭典頁（主要查詢是「○○祭典」「○○活動」，例如稚內、利尻島、禮文島）的寫法在寫作 Skill `references/festival-calendar-page.md`、驗收題在驗收 Skill `references/festival-calendar-acceptance.md`（2026-11-27 研究；流程和這份相同，只換規格與驗收題）。範本〈禮文島祭典〉2026-11-28 上線。**挑到這一型照這份文件的步驟做，但規格照 `festival-calendar-page.md`（有哪些、什麼時候、逐個介紹、每個配圖或 IG；研究要做歷年日期總表）、讀者驗收用 `festival-calendar-acceptance.md`、嵌入封包頁型寫 `festival-calendar`。**
 
 這套流程是 2026-11-27 人工 session 做〈層雲峽冰瀑祭〉樣本時用的。寫法的規則在寫作 Skill，這份只管順序、派誰做、卡住時怎麼辦；沒寫到的細節照 `weather-writer.md` 同名的步驟。
 
@@ -116,5 +116,5 @@
 ## 還沒接上的
 
 - 這套流程還沒有由排定工作自己跑過一篇。排定工作仍暫停，啟用只由 Darren 決定。
-- 一頁寫好幾個活動的祭典頁：寫法與驗收題已有（`festival-calendar-page.md`、`festival-calendar-acceptance.md`），樣本〈禮文島祭典〉過關、等 Darren 看；他說可以並登記範本之後，這份文件才加這一型的分流。
+- 一頁寫好幾個活動的祭典頁：寫法、驗收題、範本都有了（2026-11-28），但這份文件的研究與作者步驟是照單一祭典寫的，這一型的差異只寫在最上面那一段與 `festival-calendar-page.md`；還沒有由排定工作自己跑過一篇。
 - 嵌入封包的 `"pageType": "festival"`（貼文最多 6 則、可用遊客公開貼文）選圖 Skill 與檢查程式還沒有。
