@@ -3,16 +3,16 @@
   "articleId": "rebun-island-festival",
   "articleTitle": "禮文島祭典有哪些？2027最新禮文島祭典指南",
   "targetUrl": "/places/rebun-island/festival/",
-  "articleSource": "provisional-draft",
-  "articleSourceCheckedAt": "2026-11-27",
-  "status": "planning",
+  "articleSource": "approved-reader-preview",
+  "articleSourceCheckedAt": "2026-11-28",
+  "status": "selected",
   "selectionMode": "criteria-based-auto-selection",
-  "selectionScopeNote": "2026-11-27 只找候選、不下載不上傳。作者還在改標題，placement.heading 先用祭典名（敦盛草感謝祭、嚴島神社祭、水產祭、花火大會、海峽祭），定稿後要改成那一節 H3 全文。五個祭典裡只有敦盛草找得到可用的實拍（禮文敦盛草本尊，沿用主頁封包）；嚴島神社祭、水產祭、花火大會改用嵌入（見 embed-plan.json）；海峽祭沒有。禮文町網站沒有轉載條款（只有 Copyright © Rebun Town All Rights Reserved），ACT NOW 募資頁的花火照片也沒有轉載條件（© ACT NOW. All Rights Reserved.），都不能下載使用。",
+  "selectionScopeNote": "2026-11-27 只找候選、不下載不上傳。作者還在改標題，placement.heading 先用祭典名（敦盛草感謝祭、嚴島神社祭、水產祭、花火大會、海峽祭），定稿後要改成那一節 H3 全文。五個祭典裡只有敦盛草找得到可用的實拍（禮文敦盛草本尊，沿用主頁封包）；嚴島神社祭、水產祭、花火大會改用嵌入（見 embed-plan.json）；海峽祭沒有。禮文町網站沒有轉載條款（只有 Copyright © Rebun Town All Rights Reserved），ACT NOW 募資頁的花火照片也沒有轉載條件（© ACT NOW. All Rights Reserved.），都不能下載使用。 2026-11-28 定稿（Darren 說沒問題）：封面改用香深港渡輪站（130726…Japan12s3），原本的 01s5 右側「HOTEL REBUN」字樣在 16:9 裁切後仍清楚可讀、像在推薦那間旅館，拿掉。文內照片 1 張（敦盛草那一節第 1 段之後）；那一節的 Instagram 放在照片之後（afterBlocks 2，該節只有一段，等於放在節末）。",
   "selectedCandidateIds": {
     "cover": "cover-01",
     "atsumori-festival": "atsumori-01"
   },
-  "selectedAt": "2026-11-27",
+  "selectedAt": "2026-11-28",
   "slots": [
     {
       "slotId": "cover",
@@ -32,10 +32,10 @@
       "minimumWidth": 1600,
       "preparation": {
         "sourceFile": "source.jpg",
-        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/130726_Kafuka_Port_in_Rebun_Island_Hokkaido_Japan01s5.jpg",
+        "sourceDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/130726_Kafuka_Port_in_Rebun_Island_Hokkaido_Japan12s3.jpg",
         "focalPoint": {
-          "x": 0.45,
-          "y": 0.5
+          "x": 0.5,
+          "y": 0.55
         },
         "output": {
           "width": 1600,
@@ -44,12 +44,12 @@
           "quality": 82
         }
       },
-      "selectionNotes": "cover-01 是 663highland 在 2013 年 7 月 26 日從高處拍的香深港：中間是停靠的心島渡輪（Heart Land Ferry）、前方是渡輪站前的停車場（水產祭的會場就是渡輪站旁的停車場），背景是綠色山坡與海。拍攝月份正好是水產祭的季節。限制：右側有一棟建築掛著「HOTEL REBUN」字樣，位在畫面右三分之一、不是主體；渡輪船身有公司名。4:3 裁 16:9 只會切上下，招牌留在畫面裡，所以列 cover-02（主頁封面沿用）當備案；若驗收認為旅館字樣有暗示推薦的疑慮，就改用 cover-02。沒有找到禮文島祭典本身可用的實拍（見 candidates.md）。",
+      "selectionNotes": "cover-01 是 663highland 在 2013 年 7 月 26 日從渡輪甲板拍的香深港渡輪站：灰色兩層的渡輪站，二樓掛著「お帰りなさい 礼文島へ」看板，前面是有屋頂的登船走廊和碼頭地上畫的花（其中一朵是禮文敦盛草的圖案），左邊是渡輪站旁的停車場（水產祭的會場就在渡輪站旁的停車場），背後是綠色山坡。畫面只有一個很小的人。原圖 3:2，裁 16:9 只切掉上下各約 8%，焦點略偏下，保留碼頭上的花圖。原本的 01s5（從高處看港灣與渡輪）右側大樓的「HOTEL REBUN」字樣在裁切後仍清楚可讀，像在推薦那間旅館，不用。cover-02（主頁封面）是備案。",
       "sourcing": {
         "policy": "real-photo-first-ai-if-none",
         "photoSearchOutcome": "qualified-photo-found",
         "photoSearchCheckedAt": "2026-11-27",
-        "photoSearchNotes": "官方：禮文町網站沒有轉載條款；禮文島觀光協會官網打不開；宗谷總合振興局找不到像上川「VIEW OF KAMIKAWA」那樣的照片庫；ACT NOW 募資頁沒有轉載條件。維基共享資源：關鍵字「Rebun festival」只找到湖畔まつり 3 張（船泊會場、人臉清楚、有 JF 銀行招牌，不合格）；「Kafuka Rebun」有 663highland 2013 年香深港系列。免費圖庫沒有禮文島祭典照片。"
+        "photoSearchNotes": "官方：禮文町網站沒有轉載條款；禮文島觀光協會官網打不開；宗谷總合振興局找不到像上川「VIEW OF KAMIKAWA」那樣的照片庫；ACT NOW 募資頁沒有轉載條件。維基共享資源：關鍵字「Rebun festival」只找到湖畔まつり 3 張（船泊會場、人臉清楚、有 JF 銀行招牌，不合格）；「Kafuka Rebun」有 663highland 2013 年香深港系列。免費圖庫沒有禮文島祭典照片。 2026-11-28 另看了 663highland 同系列 11 張（02、03、05、06、08、09、10、11、12、13、17），選 12（渡輪站外觀、沒有旅館招牌）。"
       },
       "candidates": [
         {
@@ -57,29 +57,29 @@
           "sourceType": "commons-photo",
           "provider": "Wikimedia Commons",
           "assetType": "photo",
-          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:130726_Kafuka_Port_in_Rebun_Island_Hokkaido_Japan01s5.jpg",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:130726_Kafuka_Port_in_Rebun_Island_Hokkaido_Japan12s3.jpg",
           "creatorName": "663highland",
-          "sourceTitle": "File:130726 Kafuka Port in Rebun Island Hokkaido Japan01s5.jpg",
-          "sourceDescription": "Kafuka Port（香深港）on Rebun Island, Hokkaido, Japan.（作者自己上傳 Own work；授權 GFDL、CC BY-SA 3.0、CC BY 2.5 任選）",
+          "sourceTitle": "File:130726 Kafuka Port in Rebun Island Hokkaido Japan12s3.jpg",
+          "sourceDescription": "Kafuka Port in Rebun Island, Hokkaido, Japan（礼文島 香深港）。作者自己上傳 Own work，Sony SLT-A55V；授權 GFDL、CC BY-SA 3.0、CC BY 2.5 任選。",
           "takenAt": "2013-07-26",
-          "width": 4896,
-          "height": 3672,
+          "width": 4912,
+          "height": 3264,
           "licenseName": "CC BY 2.5",
           "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
-          "licenseCheckedAt": "2026-11-27",
+          "licenseCheckedAt": "2026-11-28",
           "matchType": "contextual",
-          "matchLimits": "2013 年 7 月拍的香深港平日樣子，不是祭典當天；港邊建築與渡輪可能已經不同。",
-          "whyItFits": "檔案頁寫明是禮文島香深港；畫面裡的渡輪站前停車場就是水產祭的會場一帶，港灣也是花火的會場。",
-          "altDraft": "從高處看禮文島香深港，渡輪停在港邊，前方是停車場，背後是綠色山坡與海",
-          "captionDraft": "禮文島的香深港，水產祭與花火都在這一帶（2013 年 7 月拍攝）。",
+          "matchLimits": "2013 年 7 月拍的平日渡輪站，不是祭典當天；建築與碼頭的畫可能已經不同。",
+          "whyItFits": "檔案頁寫明是禮文島香深港；渡輪站旁的停車場就是水產祭的會場，花火也在香深港放，下船第一眼看到的就是這裡。",
+          "altDraft": "禮文島香深港的渡輪站，二樓掛著歡迎回到禮文島的看板，碼頭地上畫著大朵的花，背後是綠色山坡",
+          "captionDraft": "禮文島的香深港渡輪站，水產祭就辦在旁邊的停車場（2013 年 7 月拍攝）。",
           "creditDraft": "照片：663highland／Wikimedia Commons／CC BY 2.5",
           "commercialReview": {
-            "people": "none（停車場與街上看不到可辨識的人）",
-            "logos": "渡輪船身的 Heart Land Ferry 字樣；右側建築的 HOTEL REBUN 字樣，都不是主體",
-            "artwork": "none",
-            "property": "港灣、渡輪站、民宅與旅館建築",
+            "people": "碼頭上一個很小的人，看不出臉",
+            "logos": "none（只有渡輪站的歡迎看板與站名）",
+            "artwork": "碼頭地面的花朵彩繪（公共設施的地面裝飾，不是主體）",
+            "property": "公共渡輪站建築",
             "risk": "low",
-            "notes": "旅館字樣位在右側、佔畫面不大，圖說只寫香深港，不提旅館。驗收若認為有疑慮改用 cover-02。"
+            "notes": "沒有旅館或店家招牌；渡輪站是公共設施。"
           },
           "checks": {
             "fullImageInspected": true,
@@ -170,20 +170,20 @@
           "assetType": "photo",
           "licenseName": "CC BY 2.0",
           "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-          "licenseCheckedAt": "2026-11-27",
+          "licenseCheckedAt": "2026-11-28",
           "candidateId": "atsumori-01",
           "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cypripedium_macranthum_var._rebunense_(7763469244).jpg",
           "creatorName": "hoge asdf",
           "sourceTitle": "File:Cypripedium macranthum var. rebunense (7763469244).jpg",
           "sourceDescription": "Cypripedium macranthum var. rebunense in Rebun Island, Japan.（Flickr 轉載，FlickreviewR 已審核；分類 Cypripedium macranthos、Rebun Island）",
-          "takenAt": "2012-08",
+          "takenAt": "2012-08-07",
           "width": 3008,
           "height": 2000,
           "matchType": "exact",
           "matchLimits": "拍攝點沒寫明，看起來是植栽區或植物園，不代表保護區的樣子；8 月拍的，不代表一般花期。",
           "whyItFits": "檔案頁寫明是禮文島的 var. rebunense；奶油色的袋狀花一眼看得出就是禮文敦盛草。",
           "altDraft": "石頭之間開著三朵奶油色的禮文敦盛草，前面一朵的花瓣下方是圓鼓鼓的袋狀唇瓣",
-          "captionDraft": "禮文島的禮文敦盛草，花是奶油色的（2012 年拍攝）。",
+          "captionDraft": "禮文島的禮文敦盛草，花是奶油色的（2012 年 8 月拍攝）。",
           "creditDraft": "照片：hoge asdf／Wikimedia Commons／CC BY 2.0",
           "commercialReview": {
             "people": "none",
