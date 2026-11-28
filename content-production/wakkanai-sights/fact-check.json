@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "articleId": "wakkanai-sights",
-  "articleSha256": "3d73996b2477321200760a1caa994bfa34c32e90addda10edad195185437efd1",
-  "checker": "事實查核 agent（Claude Opus 5.5，唯讀，非作者、非潤稿者；重寫稿第 2 輪複查，2026-11-02：逐句比對新版，改過與新增的句子重抓來源；市內線時刻表 PDF 轉圖讀表；台灣片名另查）",
-  "checkedAt": "2026-11-02",
+  "articleSha256": "c258d9b7c51ac4b34566de37d72245cdfd83ec1f630f7f497eac996e4a48d495",
+  "checker": "事實查核 agent（Opus 5.5，非作者）2026-11-28 與稚內祭典對齊的複查：改過的句子重開來源，沒動的沿用",
+  "checkedAt": "2026-11-28",
   "claims": [
     {
       "claimId": "C1",
@@ -151,12 +151,12 @@
     },
     {
       "claimId": "C17",
-      "articleExcerpt": "秋天的「Wakkanai Night & Light」每晚18點到21點點亮穹頂，2026年辦在9月1日到10月25日，只有首日從19點30分開始",
+      "articleExcerpt": "秋天有北防波堤穹頂點燈（Wakkanai Night & Light），近兩年都辦在9月到10月的晚上，2026年是每晚18點到21點點亮穹頂跟稚內公園，9月的週五、週六在穹頂下還有啤酒花園。",
       "sourceUrl": "https://www.north-hokkaido.com/event/detail_1403.html",
       "sourceTitle": "Wakkanai Night ＆ Light｜稚内観光協会",
-      "sourceQuote": "日　程：令和8年9月1日～10月25日　18:00～21:00 ※9月1日（火）は19:30から開始",
+      "sourceQuote": "令和8年9月1日～10月25日 18:00～21:00 ※9月1日（火）は19:30から開始｜9月の毎週金・土曜日は北防波堤ドーム会場にて…ビアガーデン｜（2025存檔）令和7年9月～10月 毎週土曜日 17:00～21:00",
       "verdict": "verified",
-      "notes": ""
+      "notes": "2026-11-28：強度改成「近兩年」、每晚與週五週六啤酒花園都掛在 2026 年，和稚內祭典頁一致。2026 年 9/1 首日 19:30 才開始，「每晚18點」略過這一天，可接受。"
     },
     {
       "claimId": "C18",
@@ -421,12 +421,12 @@
     },
     {
       "claimId": "C47",
-      "articleExcerpt": "2026年的Night & Light期間，公園也和穹頂一樣在18點到21點點燈",
+      "articleExcerpt": "2026年的北防波堤穹頂點燈期間，公園也跟穹頂一樣在18點到21點點燈。",
       "sourceUrl": "https://www.north-hokkaido.com/event/detail_1403.html",
       "sourceTitle": "Wakkanai Night ＆ Light｜稚内観光協会",
       "sourceQuote": "稚内公園会場 日　程：令和8年9月1日～10月25日　18:00～21:00",
       "verdict": "verified",
-      "notes": ""
+      "notes": "2026 年稚內公園會場 9/1～10/25 18:00～21:00。"
     },
     {
       "claimId": "C48",
@@ -565,12 +565,12 @@
     },
     {
       "claimId": "C63",
-      "articleExcerpt": "從稚內站前巴士總站搭往「大岬」或「声問自動車学校」的宗谷巴士，約25分鐘在Fureai公園前（ふれあい公園前）下車，再走1分鐘",
-      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
-      "sourceTitle": "宗谷ふれあい公園スノーランド｜稚内観光協会",
-      "sourceQuote": "JR稚内駅前バスターミナルから宗谷バス大岬行き、または声問自動車学校行きで約25分、「ふれあい公園前」下車、徒歩約1分",
+      "articleExcerpt": "如果沒開車的話，從稚內站前巴士總站搭宗谷巴士的聲問線，大約30到35分鐘到宗谷交流公園，站牌上寫的是「ふれあい公園」。標了※的班次不會開進公園，上車前看一下時刻表。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_teiki_1201.pdf",
+      "sourceTitle": "定期バス時刻表 2026年12月1日改正（宗谷バス）",
+      "sourceQuote": "声問線 ノシャップ～駅前ターミナル～養護学校（ふれあい公園）～声問～…｜（平日）駅前ターミナル③ 8:13→ふれあい公園 8:48、10:12→10:49｜（土日祝）10:06→10:41｜※印はふれあい公園に入りません。｜（4/5 改正夏季版）10:12→10:44、8:29→8:57",
       "verdict": "verified",
-      "notes": ""
+      "notes": "夏季版 28～33 分、冬季版 35～37 分，「30到35分鐘」涵蓋兩季；「走1分鐘」已刪；※不進公園照時刻表。"
     },
     {
       "claimId": "C64",
@@ -979,7 +979,7 @@
     },
     {
       "claimId": "C109",
-      "articleExcerpt": "冬天裡選擇最多的是2月。宗谷Fureai公園在2月開雪樂園，2027年預定2月1日到28日舉辦",
+      "articleExcerpt": "冬天裡選擇最多的是2月。宗谷交流公園在2月開雪地樂園，2027年預定2月1日到28日舉辦",
       "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
       "sourceTitle": "宗谷ふれあい公園スノーランド｜稚内観光協会",
       "sourceQuote": "開催期間 2027年2月1日（月）～28日（日）の開催予定です。",
@@ -988,7 +988,7 @@
     },
     {
       "claimId": "C110",
-      "articleExcerpt": "2026年的價格是雪上車拉的箱型雪橇坐20分鐘大人500日圓，雪鞋、越野滑雪與胖胎單車都能免費體驗",
+      "articleExcerpt": "2026年的價格是雪地車拉的箱型雪橇坐20分鐘大人500日圓，雪鞋、越野滑雪跟胖胎單車都能免費體驗",
       "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
       "sourceTitle": "宗谷ふれあい公園スノーランド｜稚内観光協会",
       "sourceQuote": "雪上車の牽引する箱型ソリ…所要時間約 20 分…大人５００円／【無料イベント】・スノーシュー・歩くスキー・ファットバイク",
@@ -997,12 +997,12 @@
     },
     {
       "claimId": "C111",
-      "articleExcerpt": "沒有車也去得了，從稚內站前巴士總站搭往「大岬」的宗谷巴士約25分鐘",
-      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1157.html",
-      "sourceTitle": "宗谷ふれあい公園スノーランド｜稚内観光協会",
-      "sourceQuote": "JR稚内駅前バスターミナルから宗谷バス大岬行き、または声問自動車学校行きで約25分",
+      "articleExcerpt": "沒有車也去得了，從稚內站前巴士總站搭宗谷巴士的聲問線大約35分鐘，標了※的班次不會開進公園。",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_teiki_1201.pdf",
+      "sourceTitle": "定期バス時刻表 2026年12月1日改正（宗谷バス）",
+      "sourceQuote": "（土日祝）駅前ターミナル③ 10:06→ふれあい公園 10:41；（平日）8:13→8:48、10:12→10:49",
       "verdict": "verified",
-      "notes": ""
+      "notes": "冬季版（12/1 改正）每班 35～37 分。"
     },
     {
       "claimId": "C112",
@@ -1024,7 +1024,7 @@
     },
     {
       "claimId": "C114",
-      "articleExcerpt": "大沼的全國犬橇大會，2027年辦在2月27日到28日",
+      "articleExcerpt": "大沼的全國狗拉雪橇大會，2027年辦在2月27日到28日",
       "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
       "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜稚内観光協会",
       "sourceQuote": "令和９年２月２７日（土）・２８日（日）　10：00～15：00 稚内市大沼特設会場",
@@ -1069,12 +1069,12 @@
     },
     {
       "claimId": "C119",
-      "articleExcerpt": "在南極觀測中出名的樺太犬太郎、次郎，故鄉就在稚內。第一代破冰船「宗谷」號的名字也取自當地地名",
-      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
-      "sourceTitle": "第63回稚内みなと南極まつり｜稚内観光協会",
-      "sourceQuote": "稚内は南極観測で活躍した樺太犬・タロとジロの故郷であり、観測に使われた初代砕氷船の名「宗谷」も稚内の地名から付けられる",
+      "articleExcerpt": "在南極觀測中出名的樺太犬太郎跟次郎，故鄉就在稚內。第一代南極觀測船「宗谷」號的名字也取自當地地名",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00020400/00020482/20260615172533.pdf",
+      "sourceTitle": "南極観測70周年記念パンフレット（稚内市）",
+      "sourceQuote": "稚内は南極観測において重要な役割を果たした樺太犬・タロとジロの故郷であり、初代南極観測船「宗谷」の船名の由来にもなった地です。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "2026-11-28：「破冰船」改「南極觀測船」，照稚內市手冊。"
     },
     {
       "claimId": "C120",
@@ -1087,12 +1087,12 @@
     },
     {
       "claimId": "C121",
-      "articleExcerpt": "電影《南極物語》裡的太郎、次郎兄弟犬被送給稚內市之後，市裡辦起了犬橇大會",
-      "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
-      "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜稚内観光協会",
-      "sourceQuote": "映画『南極物語』で知られる兄弟犬タロとジロが市に贈られたことを機に始まった",
+      "articleExcerpt": "電影《南極物語》裡飾演太郎跟次郎的演員犬被送給稚內市之後，市裡辦起了狗拉雪橇大會",
+      "sourceUrl": "https://www.city.wakkanai.hokkaido.jp/files/00020400/00020482/20260615172533.pdf",
+      "sourceTitle": "南極観測70周年記念パンフレット（稚内市）",
+      "sourceQuote": "作品にも登場するタロやジロを演じた犬たちが寄贈されたことを契機として、1984（昭和59）年3月に第1回の犬ぞり大会が開催されました。",
       "verdict": "verified",
-      "notes": ""
+      "notes": "2026-11-28 已改成演員犬，和稚內祭典頁一致。"
     },
     {
       "claimId": "C122",
@@ -1102,10 +1102,19 @@
       "sourceQuote": "例年8月の第1土日の2日間日程で開催されます／2027年8月第１土日の開催予定です。",
       "verdict": "verified",
       "notes": ""
+    },
+    {
+      "claimId": "C123",
+      "articleExcerpt": "資料來源：定期バス時刻表 2026年12月1日改正｜宗谷バス稚内営業所；南極観測70周年記念パンフレット｜稚内市；宗谷ふれあい公園スノーランド｜稚内観光協会",
+      "sourceUrl": "http://www.soyabus.co.jp/app-wp/wp-content/themes/Souyabus-child/images/routebus/w_teiki_1201.pdf",
+      "sourceTitle": "定期バス時刻表 2026年12月1日改正（宗谷バス）",
+      "sourceQuote": "（本頁資料來源沒有宗谷巴士路線巴士時刻表；也沒有稚內市南極觀測70週年手冊）",
+      "verdict": "verified",
+      "notes": "兩條已補，網址打得開；雪地樂園頁標題已改成頁面實際標題。"
     }
   ],
   "summary": {
-    "verified": 122,
+    "verified": 123,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,

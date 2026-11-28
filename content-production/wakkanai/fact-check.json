@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "articleId": "wakkanai",
-  "articleSha256": "758d2100b4d05030cdb52cb5e3854190a73bb2f98fdcaad0c2ba882f743534c1",
-  "checker": "事實查核 agent（Claude Opus 5.5，唯讀，沒參與寫作、潤稿或修改；2026-11-02 重寫稿第 2 輪複查：驗收後第 1 輪修改版逐句重比，改過與新增的句子重新查來源（宗谷巴士 PDF 時刻表轉圖讀取）；第 1 輪逐句從正文抽事實，來源用 curl 重新下載，JR 北海道轉乘查詢與稚內站資訊頁用瀏覽器讀取）",
-  "checkedAt": "2026-11-02",
+  "articleSha256": "acfe74325d1380ab1e4ffb82397032120f0440ca020460f799f0fbfc637cb225",
+  "checker": "事實查核 agent（Opus 5.5，非作者）2026-11-28 與稚內祭典對齊的複查：改過的句子重開來源，沒動的沿用",
+  "checkedAt": "2026-11-28",
   "claims": [
     {
       "claimId": "C1",
@@ -187,12 +187,12 @@
     },
     {
       "claimId": "C21",
-      "articleExcerpt": "8月第一個週六、週日的南極祭會放約2,500發煙火",
+      "articleExcerpt": "8月第一個週六、週日的南極祭近年多半放約2,500發煙火",
       "sourceUrl": "https://www.north-hokkaido.com/event/detail_1411.html",
       "sourceTitle": "第63回稚内みなと南極まつり｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
-      "sourceQuote": "例年8月の第1土日の2日間日程で開催されます。…2,500発もの大花火大会",
+      "sourceQuote": "例年8月の第1土日の2日間日程で開催されます。…2,500発もの大花火大会｜（市府存檔 2019、2024）※2,500発、（2023）※2,000発",
       "verdict": "verified",
-      "notes": ""
+      "notes": "2026-11-28：加「近年多半」後和稚內祭典頁一致（F988）。"
     },
     {
       "claimId": "C22",
@@ -232,7 +232,7 @@
     },
     {
       "claimId": "C26",
-      "articleExcerpt": "稚內公園11月中旬到4月中旬封閉，百年紀念塔11月1日到4月28日休館，2月有犬橇大會與冰雪廣場",
+      "articleExcerpt": "稚內公園11月中旬到4月中旬封閉，百年紀念塔11月1日到4月28日休館，2月有狗拉雪橇大會與冰雪廣場",
       "sourceUrl": "https://www.north-hokkaido.com/spot/detail_1045.html",
       "sourceTitle": "稚内公園｜観光スポット｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
       "sourceQuote": "11月中旬-4月中旬まで閉鎖",
@@ -241,12 +241,12 @@
     },
     {
       "claimId": "C27",
-      "articleExcerpt": "全國犬橇大會在大沼的臨時會場舉行，免費觀賽，2027年辦在2月27日、28日",
+      "articleExcerpt": "全國狗拉雪橇大會在大沼的臨時會場舉行，免費觀賽，2027年辦在2月27日、28日",
       "sourceUrl": "https://www.north-hokkaido.com/event/detail_1158.html",
       "sourceTitle": "JAPAN CUP 全国犬ぞり稚内大会｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
       "sourceQuote": "令和９年２月２７日（土）・２８日（日） 10：00～15：00／稚内市大沼特設会場／観戦無料",
       "verdict": "verified",
-      "notes": ""
+      "notes": "2026-11-28 重開：日期與「観戦無料」仍是現行頁內容；免費觀賽 2023、2026 存檔也有。"
     },
     {
       "claimId": "C28",
@@ -268,12 +268,12 @@
     },
     {
       "claimId": "C30",
-      "articleExcerpt": "中央公園一帶有冰雪廣場，可以玩輪胎滑雪道、看小雪雕。冰雪廣場從JR稚內站走路約7分鐘",
+      "articleExcerpt": "近兩年都在2月上旬的一個週末，中央公園一帶有冰雪廣場，可以玩輪胎滑雪道、看小雪雕，從JR稚內站走路大約7分鐘。",
       "sourceUrl": "https://www.north-hokkaido.com/event/detail_1156.html",
       "sourceTitle": "わっかない氷雪の広場｜イベント｜【公式】きた・北海道/稚内・利尻・礼文の観光WEBサイト",
-      "sourceQuote": "中央公園で開催され、チュービングや滑り台…可愛らしいミニ雪像が展示されている／JR稚内駅から徒歩約7分",
+      "sourceQuote": "（2025存檔）2025年2月８日～９日｜（2026）令和8年2月7日（土）・8日（日）｜開催期間 2027年2月の開催予定です。",
       "verdict": "verified",
-      "notes": "2027年2月の開催予定。"
+      "notes": "2026-11-28 已加「近兩年」，和稚內祭典頁一致。"
     },
     {
       "claimId": "C31",
