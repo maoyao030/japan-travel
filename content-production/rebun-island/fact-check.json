@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "articleId": "rebun-island",
-  "articleSha256": "f9291edf51183f9f663b10a61af818edc3fc5942bebf947f7bf5ff4ece20c942",
-  "checker": "事實查核 agent（Claude Opus 5.5 子代理，不是作者，只讀正文）。2026-11-24 地點主頁改版：樣本稿 content-experiments/place-entry-study-2026-11-19/sample-rebun-island/new.md 查核兩輪（fact-check-round1.md：約 95 處，5 處不成立已由作者照最小改法修改；fact-check-round2.md：改過的句子全部成立），依據只用已上線、已查證的子頁 reader-preview.md 與各子頁研究記錄、利尻島與稚內主頁，依協調者指示本輪沒有重新開官方網址。轉成封包時逐句加事實編號，sourceUrl 與 sourceQuote 取該句第一個編號在事實表的原列；同句其他編號列在 notes。2026-11-24 讀者驗收後作者改稿，第 3 輪（fact-check-round3.md）逐句重查改過的句子，4 處不成立已照最小改法改在 draft-tagged.md（花魚鏘鏘燒小標題的「元祖」加引號、B 線那句補「2等艙的」、敦盛草保護區「船泊本町一帶」改「船泊一帶」、5 月下旬到 6 月中旬的「17:10的末班船」改「末班船」），其餘成立。吸引力審查第四輪退回後作者改了序言第一段與海膽小段，第 4 輪（fact-check-round4.md）複查：「從藍綠色變到翡翠色」說過頭，改回「變成藍綠色或翡翠色」，其餘成立。Darren 看過成品後作者改了九處（H1、摘要、序言、四個小標題、新增北方金絲雀公園看點、刪薄雪之湯小段等），第 5 輪（fact-check-round5.md）逐句複查全部成立，補了標記：北方金絲雀公園的木造校舍補 F310，景點頁連結句補 F436、F435、F440。F602～F608 是地點事實表沒有、本頁暫編的事實（住宿重跑事實表 K15、K34、K42，利尻島 F5、F188、F189、F47）。 2026-11-26 複查（連結句改成單獨一行的連結行）：以 git diff 20a67d1..HEAD 確認 reader-preview.md 只有連結句（或指路的半句）被拿掉、新增「看更多：」連結行，其他句子一字未動；每一行連結行「｜」後的各項逐項對照該子頁已上線的 reader-preview.md（本輪不上網）。其餘 claim 沿用原判定。",
-  "checkedAt": "2026-11-26",
+  "articleSha256": "2a2e8113981cfef9162165b54e374b09dd71cf25c33aae25c6524c5c711deef0",
+  "checker": "事實查核 agent（Opus 5.5，非作者）2026-11-28 純六節複查：和 pre-six-sections 備份 diff，只有紀錄列的改動；拿掉已刪兩節的 C70～C118，改過與新增的句子重查",
+  "checkedAt": "2026-11-28",
   "claims": [
     {
       "claimId": "C1",
@@ -358,21 +358,21 @@
     },
     {
       "claimId": "C40",
-      "articleExcerpt": "9月花少了，不過比起花更在意晴天的話，9月反而好排，日照時數見下面氣溫與穿著那一節。",
+      "articleExcerpt": "9月花少了，不過比起花更在意晴天的話，9月反而好排，因為日照多。",
       "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「日照時間(時間)」「6月 … 125.9」「7月 … 126.5」「4月 … 192.7」「9月 … 186.7」「12月 … 42.5」",
+      "sourceTitle": "気象庁｜過去の気象データ検索（礼文 平年値）",
+      "sourceQuote": "9月｜…｜日照時間 186.7（6月 125.9、7月 126.5、8月 154.2）",
       "verdict": "verified",
-      "notes": "F490；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+      "notes": "2026-11-28 重開氣象廳平年值：9 月日照 186.7 小時，是 5～9 月裡最多的月份。原本指向氣溫一節的那半句已經改掉。"
     },
     {
       "claimId": "C41",
-      "articleExcerpt": "島上的活動集中在5月到9月，5月底有敦盛草感謝祭，7月是祭典月，8月有花火大會跟海峽祭，各活動的日期在最後一節。",
+      "articleExcerpt": "島上的活動集中在5月底到8月，5月底到6月初有敦盛草感謝祭，7月是祭典月，8月有花火大會跟海峽祭。",
       "sourceUrl": "https://www.rebun-island.jp/event/",
       "sourceTitle": "イベント情報｜礼文島観光協会",
       "sourceQuote": "「令和8年度は5月28日～5月29日に開催」「8月10日に花火大会、1２日に海峡祭り」",
       "verdict": "verified",
-      "notes": "F41、F474、F497；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
+      "notes": "2026-11-28：照查核者給的改法套用。觀光協會活動頁：感謝祭 5/28～6/4 之間，祭典在 7 月，花火與海峽祭在 8/10～12。"
     },
     {
       "claimId": "C42",
@@ -627,447 +627,6 @@
       "notes": "F406、F2；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
     },
     {
-      "claimId": "C70",
-      "articleExcerpt": "就算是最熱的8月，禮文島的平均氣溫也只有19.7℃，日最高也才22.6℃。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C71",
-      "articleExcerpt": "下表是氣象廳禮文觀測站2003年到2020年統計的平年值，也就是長年的平均，不是預報，全年平均氣溫6.9℃。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59、F491；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C72",
-      "articleExcerpt": "雨最多的是8月跟9月，各有130多毫米。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「降水量(mm)」「2003～2020」「8月 138.6」「9月 131.1」「年 1049.1」",
-      "verdict": "verified",
-      "notes": "F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C73",
-      "articleExcerpt": "| 1月 | −4.6℃ | −2.7℃ | −6.5℃ | 73.4毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C74",
-      "articleExcerpt": "| 2月 | −4.3℃ | −2.1℃ | −6.4℃ | 51.6毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「12月 … -2.4 -0.3 -4.5」「2月 … -4.3 -2.1 -6.4」「3月 … -0.4 1.7 -2.4」「4月 … 4.1 6.6 1.8」",
-      "verdict": "verified",
-      "notes": "F118、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C75",
-      "articleExcerpt": "| 3月 | −0.4℃ | 1.7℃ | −2.4℃ | 44.1毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「12月 … -2.4 -0.3 -4.5」「2月 … -4.3 -2.1 -6.4」「3月 … -0.4 1.7 -2.4」「4月 … 4.1 6.6 1.8」",
-      "verdict": "verified",
-      "notes": "F118、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C76",
-      "articleExcerpt": "| 4月 | 4.1℃ | 6.6℃ | 1.8℃ | 49.2毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「12月 … -2.4 -0.3 -4.5」「2月 … -4.3 -2.1 -6.4」「3月 … -0.4 1.7 -2.4」「4月 … 4.1 6.6 1.8」",
-      "verdict": "verified",
-      "notes": "F118、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C77",
-      "articleExcerpt": "| 5月 | 8.5℃ | 11.6℃ | 6.0℃ | 79.7毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C78",
-      "articleExcerpt": "| 6月 | 12.8℃ | 15.9℃ | 10.3℃ | 84.6毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C79",
-      "articleExcerpt": "| 7月 | 17.3℃ | 20.4℃ | 14.9℃ | 101.0毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C80",
-      "articleExcerpt": "| 8月 | 19.7℃ | 22.6℃ | 17.3℃ | 138.6毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C81",
-      "articleExcerpt": "| 9月 | 17.4℃ | 20.5℃ | 14.5℃ | 131.1毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C82",
-      "articleExcerpt": "| 10月 | 11.2℃ | 13.9℃ | 8.4℃ | 100.4毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C83",
-      "articleExcerpt": "| 11月 | 3.6℃ | 6.1℃ | 1.2℃ | 98.4毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C84",
-      "articleExcerpt": "| 12月 | −2.4℃ | −0.3℃ | −4.5℃ | 91.5毫米 |",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「12月 … -2.4 -0.3 -4.5」「2月 … -4.3 -2.1 -6.4」「3月 … -0.4 1.7 -2.4」「4月 … 4.1 6.6 1.8」",
-      "verdict": "verified",
-      "notes": "F118、F488；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C85",
-      "articleExcerpt": "禮文島常起霧，6月跟7月的日照只有125.9和126.5小時，是夏天最陰的兩個月，9月的日照則有186.7小時，多很多。",
-      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
-      "sourceTitle": "雲海｜礼文島観光協会",
-      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
-      "verdict": "verified",
-      "notes": "F442、F490；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C86",
-      "articleExcerpt": "冷霧層在標高200公尺以下的時候，從高處就能看到雲海。",
-      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
-      "sourceTitle": "雲海｜礼文島観光協会",
-      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
-      "verdict": "verified",
-      "notes": "F442；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C87",
-      "articleExcerpt": "標高225公尺的桃岩展望台、233公尺的燕山，還有禮文林道從元地口走大約1.1公里的地方，都是看雲海的好地點。",
-      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
-      "sourceTitle": "雲海｜礼文島観光協会",
-      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
-      "verdict": "verified",
-      "notes": "F442；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C88",
-      "articleExcerpt": "雲海多半出現在有霧而且風小的清晨，不過從稚內來的渡輪最早8:25才到香深港，所以要看雲海的話得在島上過一夜才行。",
-      "sourceUrl": "https://www.rebun-island.jp/seacloud/",
-      "sourceTitle": "雲海｜礼文島観光協会",
-      "sourceQuote": "「霧がかかることの多い島、礼文島。」「冷たい霧の層が標高200m以下にある時に見ることができます」「桃岩展望台 標高225ｍ」「ツバメ山（通称） 標高233ｍ」「礼文林道コース(元地口より約1.1km地点) 標高200ｍ」「霧がかる微風の朝」",
-      "verdict": "verified",
-      "notes": "F442、F1；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C89",
-      "articleExcerpt": "7月的日最高氣溫平均才20.4℃，8月也只有22.6℃。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C90",
-      "articleExcerpt": "島上的風也不小，全年平均風速每秒3.5公尺，5月最強到每秒4.1公尺。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「平均風速(m/s)」「5月 … 4.1」「4月 … 3.8」「6月 … 3.8」「年 … 3.5」",
-      "verdict": "verified",
-      "notes": "F489；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C91",
-      "articleExcerpt": "桃岩展望台標高不到300公尺，卻常吹強風而且起濃霧。",
-      "sourceUrl": "https://rebun-trail.jp/momoiwaobservatorycourse/",
-      "sourceTitle": "桃岩展望台コース｜礼文島トレイル",
-      "sourceQuote": "「標高は300m以下ですが、強風や濃霧も珍しくありません。」「桃岩登山口・レンジャーハウス－桃岩展望台［往復］　★」",
-      "verdict": "verified",
-      "notes": "F36；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C92",
-      "articleExcerpt": "夏天一天之內溫差不大，不過春秋早晚溫差大，天氣像山上一樣說變就變，所以雨具跟長袖都要帶著。",
-      "sourceUrl": "https://www.visit-hokkaido.jp/feature/rebun",
-      "sourceTitle": "礼文島の観光｜北海道観光機構",
-      "sourceQuote": "「夏は、一日の中で気温変化が少なく過ごしやすい」「春や秋は時間帯によって気温が大きく異なる」「天気もまるで山岳のように変化する」「雨具と長袖の服の用意は必須です」",
-      "verdict": "verified",
-      "notes": "F444；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C93",
-      "articleExcerpt": "7、8月帶一件防風又防雨的薄外套就夠了。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C94",
-      "articleExcerpt": "盛夏也有連日炎熱的時候，健行時記得多喝水留意中暑，熱了就把外套脫下來收進背包就好。",
-      "sourceUrl": "https://rebun-trail.jp/",
-      "sourceTitle": "礼文島トレイル",
-      "sourceQuote": "「礼文島も連日暑い日が続いています。トレッキングをされる際には熱中症に注意し、十分な水分補給を」",
-      "verdict": "verified",
-      "notes": "F468；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C95",
-      "articleExcerpt": "5月到6月日最高只有11.6℃到15.9℃，5月的日最低6.0℃，風又是一年裡最強的，這兩個月最好在薄外套裡再加一件保暖的中層。",
-      "sourceUrl": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_ym.php?prec_no=11&block_no=1546&year=&month=&day=&view=",
-      "sourceTitle": "礼文 平年値｜気象庁",
-      "sourceQuote": "「礼文（宗谷地方)　平年値」「統計期間 2003～2020」",
-      "verdict": "verified",
-      "notes": "F59、F489；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C96",
-      "articleExcerpt": "島上的活動集中在5月到9月，下表是2026年的日期，每年的日期會由觀光協會的活動頁公布。",
-      "sourceUrl": "https://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント情報｜礼文島観光協会",
-      "sourceQuote": "「令和8年度は5月28日～5月29日に開催」「8月10日に花火大会、1２日に海峡祭り」",
-      "verdict": "verified",
-      "notes": "F41、F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C97",
-      "articleExcerpt": "| 敦盛草感謝祭 | 5月28日～29日 | 敦盛草群生地 |",
-      "sourceUrl": "https://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント情報｜礼文島観光協会",
-      "sourceQuote": "「令和8年度は5月28日～5月29日に開催」「8月10日に花火大会、1２日に海峡祭り」",
-      "verdict": "verified",
-      "notes": "F41、F499；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C98",
-      "articleExcerpt": "| 最北花之馬拉松 | 6月6日 | Pisuka２１起跑 |",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00003384.html",
-      "sourceTitle": "第33回 2026最北フラワーマラソンの開催について｜礼文町",
-      "sourceQuote": "「第33回 2026最北フラワーマラソンの開催について」「令和8年6月6日」「礼文町役場 総務課 広報交通係」",
-      "verdict": "verified",
-      "notes": "F475、F498；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C99",
-      "articleExcerpt": "| 禮文神社祭 | 7月8日～10日 | 船泊地區 |",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
-      "sourceTitle": "神社祭｜礼文町",
-      "sourceQuote": "「礼文神社祭」「とき 7月8～10日」「ところ 船泊地区」「厳島神社祭」「とき 7月14～16日」「ところ 香深地区」",
-      "verdict": "verified",
-      "notes": "F474；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C100",
-      "articleExcerpt": "| 嚴島神社祭 | 7月14日～16日 | 香深地區 |",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
-      "sourceTitle": "神社祭｜礼文町",
-      "sourceQuote": "「礼文神社祭」「とき 7月8～10日」「ところ 船泊地区」「厳島神社祭」「とき 7月14～16日」「ところ 香深地区」",
-      "verdict": "verified",
-      "notes": "F474；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C101",
-      "articleExcerpt": "| 水產祭 | 7月18日 | 香深港特設會場 |",
-      "sourceUrl": "https://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント情報｜礼文島観光協会",
-      "sourceQuote": "「水産まつり(うめーべやフェスティバル)」「令和8年度は7月18日に開催しました。」「香深港特設会場で「島のうまいもの」が大集合！」",
-      "verdict": "verified",
-      "notes": "F476、F41；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C102",
-      "articleExcerpt": "| 花火大會（禮文故鄉祭） | 8月10日 | — |",
-      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
-      "sourceTitle": "web.archive.org",
-      "sourceQuote": "礼文ふるさとまつり 令和8年度は8月10日に花火大会、1２日に海峡祭りを開催しました。",
-      "verdict": "verified",
-      "notes": "F497；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C103",
-      "articleExcerpt": "| 海峽祭（禮文故鄉祭） | 8月12日 | — |",
-      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
-      "sourceTitle": "web.archive.org",
-      "sourceQuote": "礼文ふるさとまつり 令和8年度は8月10日に花火大会、1２日に海峡祭りを開催しました。",
-      "verdict": "verified",
-      "notes": "F497；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C104",
-      "articleExcerpt": "| 溫泉美食健行 | 8月1日～9月30日 | — |",
-      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
-      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜ONSEN・ガストロノミーツーリズム推進機構",
-      "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
-      "verdict": "verified",
-      "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C105",
-      "articleExcerpt": "敦盛草感謝祭（アツモリ感謝祭）跟第33屆最北花之馬拉松（最北フラワーマラソン）都在禮文敦盛草開花的時候舉辦，如果賞花跟活動想一起排的話，5月底到6月上旬最剛好。",
-      "sourceUrl": "https://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント情報｜礼文島観光協会",
-      "sourceQuote": "「令和8年度は5月28日～5月29日に開催」「8月10日に花火大会、1２日に海峡祭り」",
-      "verdict": "verified",
-      "notes": "F41、F475、F443；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C106",
-      "articleExcerpt": "感謝祭是在敦盛草群生地辦的小型活動，觀光協會也藉這個機會請大家支持保護島上環境的緞帶計畫（リボンプロジェクト）。",
-      "sourceUrl": "https://web.archive.org/web/20200925121914/http://www.rebun-island.jp/event/",
-      "sourceTitle": "web.archive.org",
-      "sourceQuote": "アツモリ感謝祭 アツモリ群生地でのミニイベント。島の環境保護活動を応援するリボンプロジェクトにご協力ください。",
-      "verdict": "verified",
-      "notes": "F499；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C107",
-      "articleExcerpt": "馬拉松從Pisuka２１（ピスカ２１）出發，2026年早上9:30起跑，分成3公里、5公里跟10公里，參加免費。",
-      "sourceUrl": "https://web.archive.org/web/20260418103750/https://www.town.rebun.hokkaido.jp/hotnews/files/00003300/00003384/youkou.pdf",
-      "sourceTitle": "web.archive.org",
-      "sourceQuote": "６．会 場 受付 ・ 開閉会式 ： ピスカ２１／◎スタート・ゴール ～ ピスカ２１ 裏側／10．参加料 ・無 料／14．申込締切 ２０２６年５月６日（水） 当日の申込受付はできません",
-      "verdict": "verified",
-      "notes": "F498；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C108",
-      "articleExcerpt": "不過報名在5月6日就截止了而且當天不受理，如果6月初上島想順便參賽的話，記得5月上旬前就要報好名才行。",
-      "sourceUrl": "https://web.archive.org/web/20260418103750/https://www.town.rebun.hokkaido.jp/hotnews/files/00003300/00003384/youkou.pdf",
-      "sourceTitle": "web.archive.org",
-      "sourceQuote": "６．会 場 受付 ・ 開閉会式 ： ピスカ２１／◎スタート・ゴール ～ ピスカ２１ 裏側／10．参加料 ・無 料／14．申込締切 ２０２６年５月６日（水） 当日の申込受付はできません",
-      "verdict": "verified",
-      "notes": "F498；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C109",
-      "articleExcerpt": "7月是島上的祭典月。",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
-      "sourceTitle": "神社祭｜礼文町",
-      "sourceQuote": "「礼文神社祭」「とき 7月8～10日」「ところ 船泊地区」「厳島神社祭」「とき 7月14～16日」「ところ 香深地区」",
-      "verdict": "verified",
-      "notes": "F474；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C110",
-      "articleExcerpt": "禮文神社祭（礼文神社祭）在7月8日到10日，地點在北部的船泊地區。",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
-      "sourceTitle": "神社祭｜礼文町",
-      "sourceQuote": "「礼文神社祭」「とき 7月8～10日」「ところ 船泊地区」「厳島神社祭」「とき 7月14～16日」「ところ 香深地区」",
-      "verdict": "verified",
-      "notes": "F474；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C111",
-      "articleExcerpt": "緊接著7月14日到16日，就換南部的香深地區辦嚴島神社祭（厳島神社祭）了。",
-      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
-      "sourceTitle": "神社祭｜礼文町",
-      "sourceQuote": "「礼文神社祭」「とき 7月8～10日」「ところ 船泊地区」「厳島神社祭」「とき 7月14～16日」「ところ 香深地区」",
-      "verdict": "verified",
-      "notes": "F474；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C112",
-      "articleExcerpt": "2026年的水產祭（水産まつり、うめーべやフェスティバル）在7月18日，在香深港的臨時會場舉行，這一天島上的美食都會集中到會場來。",
-      "sourceUrl": "https://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント情報｜礼文島観光協会",
-      "sourceQuote": "「水産まつり(うめーべやフェスティバル)」「令和8年度は7月18日に開催しました。」「香深港特設会場で「島のうまいもの」が大集合！」",
-      "verdict": "verified",
-      "notes": "F476；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C113",
-      "articleExcerpt": "因為香深港就是渡輪靠岸的地方，所以當天來回也排得進去。",
-      "sourceUrl": "https://www.rebun-island.jp/event/",
-      "sourceTitle": "イベント情報｜礼文島観光協会",
-      "sourceQuote": "「水産まつり(うめーべやフェスティバル)」「令和8年度は7月18日に開催しました。」「香深港特設会場で「島のうまいもの」が大集合！」",
-      "verdict": "verified",
-      "notes": "F476、F70；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C114",
-      "articleExcerpt": "花火大會（花火大会）跟海峽祭（海峡祭り）同屬禮文故鄉祭（礼文ふるさとまつり），2026年8月10日放花火，兩天後的8月12日是海峽祭。",
-      "sourceUrl": "https://web.archive.org/web/20261010163259/https://www.rebun-island.jp/event/",
-      "sourceTitle": "web.archive.org",
-      "sourceQuote": "礼文ふるさとまつり 令和8年度は8月10日に花火大会、1２日に海峡祭りを開催しました。",
-      "verdict": "verified",
-      "notes": "F497；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C115",
-      "articleExcerpt": "這是溫泉美食健行（ONSEN・ガストロノミー）在禮文島的場次，2026年是第5屆。",
-      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
-      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜ONSEN・ガストロノミーツーリズム推進機構",
-      "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
-      "verdict": "verified",
-      "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C116",
-      "articleExcerpt": "活動從8月1日到9月30日，窗口是禮文島觀光協會。",
-      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
-      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜ONSEN・ガストロノミーツーリズム推進機構",
-      "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
-      "verdict": "verified",
-      "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C117",
-      "articleExcerpt": "3,000日圓的方案附禮文岳徽章，4,000日圓的附T恤，兩種都含2,000日圓的餐券跟溫泉券。",
-      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
-      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜ONSEN・ガストロノミーツーリズム推進機構",
-      "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
-      "verdict": "verified",
-      "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
-      "claimId": "C118",
-      "articleExcerpt": "不過2026年已經額滿了。",
-      "sourceUrl": "https://onsen-gastronomy.com/eventinfo/rebun-2026/",
-      "sourceTitle": "第5回ONSEN・ガストロノミーin礼文島 秋のホッピング｜ONSEN・ガストロノミーツーリズム推進機構",
-      "sourceQuote": "「【開催期間：8/1-9/30】第5回ONSEN・ガストロノミーin礼文島 秋のホッピング」「【バッジ付きプラン】 3,000円」「【Tシャツ付きプラン】4,000円」「お食事クーポン券2,000円分と温泉券付き」「事務局：礼文島観光協会」「満員御礼」",
-      "verdict": "verified",
-      "notes": "F477；對照事實表原列與已上線子頁（禮文島主頁、交通、住宿、景點、美食、健行，利尻島與稚內主頁）。"
-    },
-    {
       "claimId": "C119",
       "articleExcerpt": "看更多：[禮文島美食](/places/rebun-island/food/)｜炸花魚與糠漬花魚的吃法、香深港周邊餐廳的位置與付款方式",
       "sourceUrl": "https://www.rebun-island.jp/inbound/restaurant.html",
@@ -1120,10 +679,37 @@
       "sourceQuote": "6/1–9/30「06:30～08:25」「10:30～12:25」「14:50～16:45」",
       "verdict": "verified",
       "notes": "連結行（2026-11-26 連結句改成單獨一行）。「｜」後的每一項逐項對照該子頁已上線的 reader-preview.md：wakkanai 的排法表有「接利尻島、禮文島｜前一晚住稚內，隔天搭早班船上島」，「稚內一日遊與過夜怎麼選？」寫夏天隔天可搭6:30的渡輪去禮文島。sourceUrl 與 sourceQuote 借用本頁 C48 的官方來源，只是該主題的代表來源，連結行本身不靠官方原文。"
+    },
+    {
+      "claimId": "C125",
+      "articleExcerpt": "看更多：[禮文島天氣](/places/rebun-island/weather/)｜各月氣溫與台北的對照、四季穿法、雲海與船班容易取消的月份",
+      "sourceUrl": "https://offpathnotes.com/places/rebun-island/weather/",
+      "sourceTitle": "禮文島天氣攻略，8月只像台北3月，四季穿法、雲海與渡輪停航一次看",
+      "sourceQuote": "（rebun-island-weather/reader-preview.md）## 禮文島各月氣溫，和台北差多少？／## 禮文島四季怎麼穿、要注意什麼？／## 禮文島幾月渡輪容易停航？／## 禮文島的霧與雲海",
+      "verdict": "verified",
+      "notes": "四項都有，「禮文島天氣」是標題的合理簡稱。"
+    },
+    {
+      "claimId": "C126",
+      "articleExcerpt": "看更多：[禮文島祭典](/places/rebun-island/festival/)｜各祭典的日期與看點、看完祭典回不回得了稚內或利尻島",
+      "sourceUrl": "https://offpathnotes.com/places/rebun-island/festival/",
+      "sourceTitle": "禮文島祭典有哪些？2027最新禮文島祭典指南",
+      "sourceQuote": "（rebun-island-festival/reader-preview.md）## 禮文島祭典有哪些？什麼時候？（年曆表）／## 禮文島各祭典的特色／## 禮文島看完祭典，回得了稚內或利尻島嗎？",
+      "verdict": "verified",
+      "notes": "兩項都有，「禮文島祭典」是標題的合理簡稱。這一頁還沒上線，連結要等它上線才有效。"
+    },
+    {
+      "claimId": "C127",
+      "articleExcerpt": "資料來源：拿掉〈第33回 2026最北フラワーマラソン〉與〈第5回ONSEN・ガストロノミーin礼文島〉兩條之後",
+      "sourceUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00000196.html",
+      "sourceTitle": "礼文の神社祭 | 北海道礼文町",
+      "sourceQuote": "（正文剩下的事實編號逐一對照資料來源）F475、F477、F498 已經不在正文裡；F59、F488、F490 → 氣象廳平年值；F474 → 神社祭；F41、F497 → 觀光協會活動頁，都還在資料來源裡",
+      "verdict": "verified",
+      "notes": "拿掉的兩條只撐已刪的句子，剩下的事實都還有出處。"
     }
   ],
   "summary": {
-    "verified": 124,
+    "verified": 78,
     "incorrect": 0,
     "unsupported": 0,
     "outdated": 0,
