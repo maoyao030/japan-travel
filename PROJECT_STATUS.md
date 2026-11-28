@@ -2655,3 +2655,18 @@ Darren：「還剩很多TOKEN 今天先一直寫直到把TOKEN 用完」。寫�
 - 已完成（同日補）：每個祭典的配圖計畫（封包 `images/`）：敦盛草感謝祭配禮文敦盛草實拍與心島渡輪官方 IG、嚴島神社祭配禮文町教育委員會的 YouTube 影片、水產祭配心島渡輪官方 IG、花火配禮文町地域振興協力隊的 IG 短片；海峽祭沒找到。封面主選香深港實拍（畫面右側有旅館字樣，備案是主頁封面）。`scripts/embed-plan.mjs` 加了 `festival-calendar` 頁型（比照地點主頁放寬則數與兩年限制）。都還沒下載上傳。
 - 尚未完成：其餘照前幾段（還沒上線、沒登記範本、大綱未同步、F656 更正、F937 起的新事實未登記）。
 - 唯一下一步：選圖回來後給 Darren 看整篇，說要不要上線、要不要當範本。
+
+## 2026-11-28 〈禮文島祭典〉上線並登記成範本（Claude Code）
+
+- Darren 收到整篇後說「沒問題」。
+- 已完成：〈禮文島祭典〉上線（Sanity 修訂 75n2AlVDnCyyNY5JyhB3XM，已開放索引）。封面是香深港渡輪站實拍（2013 年，CC BY 2.5）；文內照片 1 張（禮文敦盛草）；嵌入 4 個（心島渡輪官方 IG 2 則、禮文町教育委員會 YouTube 1 支、禮文町地域振興協力隊 IG 短片 1 則）；站內連結 5 條。封包 `gates_clear`，事實查核 43 項 verified，SHA（LF）9236d0c1…；整站 CI 通過。
+- 已完成：登記成祭典頁第二篇範本（`page-models.mjs --add`，`--check` 通過）；大綱、頁面規格、文章清單同步；禮文島事實表登記 F937～F963、更正 F656 與 F70；D1 已登記（連結、事實、文章狀態 published）。
+- 已完成：`festival-calendar-page.md`、`festival-page.md`、`page-types.md`、`SKILL.md`、`festival-writer.md`、`local-writer.md`、`RULES_OVERVIEW.md`、`AGENTS.md` 改成「已上線、有範本、自動寫作可以寫這一型」。
+- 尚未完成：
+  - 禮文島主頁換成純六節版（`content-production/rebun-island/phase2-six-sections/`，連結行要先照新格式改；大綱裡主頁連到祭典頁的連結句還是舊寫法）。
+  - 線上〈稚內祭典〉〈利尻島祭典〉還是舊寫法，要不要照新範本重寫等 Darren 說；〈稚內冬天〉合併候選沒決定。
+  - 已上線的長標題（天氣頁、冰瀑祭等 35 字以上）要不要縮到 30 字內，Darren 還沒回答。
+  - 海峽祭沒有照片或貼文；花火的短片畫面認不出是禮文島（靠帳號與標籤認定）。
+  - 2027 年各祭典日期公布後重查（事實表到期日 2027-05-01）。
+- 測試：`npm test` 246 通過，`planning:check`、`queue:validate`、`page-models.mjs --check` 通過。
+- 唯一下一步：禮文島主頁換成純六節版。
