@@ -1,7 +1,7 @@
 # 驗收紀錄：wakkanai-sights（2026-11-01，已上線文章重寫一輪）
 
 - 文章：`content-production/wakkanai-sights/reader-preview.md`
-- SHA-256（換行統一成 LF 後計算）：`3d73996b2477321200760a1caa994bfa34c32e90addda10edad195185437efd1`
+- SHA-256（換行統一成 LF 後計算）：`c258d9b7c51ac4b34566de37d72245cdfd83ec1f630f7f497eac996e4a48d495`（2026-11-28 與稚內祭典對齊之後；前一版 `3d73996b2477321200760a1caa994bfa34c32e90addda10edad195185437efd1`）
 - 規則：`content-automation/rewrite-live.md`（重查、讀競品後重寫、先刪再調、意義比對、完整驗收）；重寫前的版本在 `pre-rewrite/`
 - 研究者：研究子代理（Opus 5.5，重查 45 筆會變資料，更正 F158（犬橇大會 2027 年日期）、F161，新增 F210、F211；讀競品 4 篇）
 - 作者：作者子代理（Opus 5.5，讀競品後重寫；連結句不是「見○○」句型，照原句）；驗收後修改也由作者處理（`revisions-round1.md`）
@@ -44,3 +44,10 @@
 
 - F158、F161、F163、F55 更正與新增 F210～F214 要同步回地點事實表與 D1。
 - glossary 的《北之櫻守》已改成查證過的台灣片名。
+
+## 與稚內祭典對齊（2026-11-28）
+
+- Darren 2026-11-28：「修這兩頁」。〈稚內祭典〉重寫時查核者發現這一頁有幾處和新查到的事實對不上，名字也還是舊寫法。作者（Sonnet 5.5）只做最小修改，紀錄在 `revisions-2026-11-28.md`，改前的稿在 `pre-2026-11-28/`。
+- 事實查核子代理（Opus 5.5）用 diff 確認其餘正文逐字沒動，逐處核對改過的句子，`fact-check.json` 全部 verified。標題沒有變。
+- 名字照譯名表改：犬橇 → 狗拉雪橇、雪樂園 → 雪地樂園等（對照表 `content-experiments/festival-multi-study-2026-11-27/names-wakkanai-rishiri.md`）。
+- 結果照舊：格式 `mechanical_clear`、標題 `acceptable`、讀者價值 `acceptable`、事實與條件 `verified`，最終結果 `ready_for_user_preview`。

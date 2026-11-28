@@ -1,7 +1,7 @@
 # 驗收紀錄：wakkanai（2026-11-01，已上線文章重寫一輪）
 
 - 文章：`content-production/wakkanai/reader-preview.md`
-- SHA-256（換行統一成 LF 後計算）：`758d2100b4d05030cdb52cb5e3854190a73bb2f98fdcaad0c2ba882f743534c1`
+- SHA-256（換行統一成 LF 後計算）：`acfe74325d1380ab1e4ffb82397032120f0440ca020460f799f0fbfc637cb225`（2026-11-28 與稚內祭典對齊之後；前一版 `758d2100b4d05030cdb52cb5e3854190a73bb2f98fdcaad0c2ba882f743534c1`）
 - 規則：`content-automation/rewrite-live.md`（重查、讀競品後重寫、先刪再調、意義比對、完整驗收）；重寫前的版本在 `pre-rewrite/`
 - 研究者：研究子代理（Opus 5.5，重查 54 筆會變資料，更正 F158（犬橇大會 2027 年 2/27～28）、F159，F33 加第二來源；讀競品 5 篇）
 - 作者：作者子代理（Opus 5.5，讀競品後重寫；連結句照寫作指南第10條改寫 10 句，驗收後再調 2 句並新增往宗谷岬交通的連結，見 `link-sentences.json`（已同步大綱））；驗收後修改也由作者處理（`revisions-round1.md`）
@@ -44,3 +44,10 @@
 
 - F158、F159 更正與新增 F190、F191 要同步回地點事實表與 D1。
 - 讀者最終判定加分 1 條：「排幾天」那節的觀光巴士句加「夏天」。
+
+## 與稚內祭典對齊（2026-11-28）
+
+- Darren 2026-11-28：「修這兩頁」。〈稚內祭典〉重寫時查核者發現這一頁有幾處和新查到的事實對不上，名字也還是舊寫法。作者（Sonnet 5.5）只做最小修改，紀錄在 `revisions-2026-11-28.md`，改前的稿在 `pre-2026-11-28/`。
+- 事實查核子代理（Opus 5.5）用 diff 確認其餘正文逐字沒動，逐處核對改過的句子，`fact-check.json` 全部 verified。標題沒有變。
+- 名字照譯名表改：犬橇 → 狗拉雪橇、雪樂園 → 雪地樂園等（對照表 `content-experiments/festival-multi-study-2026-11-27/names-wakkanai-rishiri.md`）。
+- 結果照舊：格式 `mechanical_clear`、標題 `acceptable`、讀者價值 `acceptable`、事實與條件 `verified`，最終結果 `ready_for_user_preview`。
