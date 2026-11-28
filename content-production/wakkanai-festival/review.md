@@ -1,46 +1,41 @@
-# 驗收紀錄：wakkanai-festival（2026-11-01，已上線文章重寫一輪）
+# 驗收紀錄：wakkanai-festival（2026-11-28，照多活動祭典頁範本重寫）
 
-- 文章：`content-production/wakkanai-festival/reader-preview.md`
-- SHA-256（換行統一成 LF 後計算）：`91cff4919db79739a0ca84c0552581519fa19877be883af317c23fd5162a43c9`
-- 規則：`content-automation/rewrite-live.md`（重查、讀競品後重寫、先刪再調、意義比對、完整驗收）；重寫前的版本在 `pre-rewrite/`
-- 研究者：研究子代理（Opus 5.5，重查 24 筆會變資料，更正 F165 大沼 Snow Attack（遊客不能開車），補 F156、F162 票價細節，新增 F261～F265；讀競品 3 篇）
-- 作者：作者子代理（Opus 5.5，讀競品後重寫；連結句照寫作指南第10條改寫 1 句，見 `link-sentences.json`）；驗收後修改也由作者處理（`revisions-round1.md`），協調者決定照官方節目單直接寫 2026 年煙火時間地點，並拿掉作者自訂標題的節目單圖片來源
-- 潤稿者：潤稿子代理（Opus 5.5，先刪再調，沒寫過這篇）；意義比對 1 個子代理
-- 標題檢查：標題、SEO Title 沿用網站版本，沒改，沿用 `heading-review.json`
-- 事實查核：1 個子代理（Opus 5.5，沒參與寫作、潤稿與修改），共 2 輪
-- 讀者驗收：1 個子代理（沒寫過、潤過或查核過），第一階段只看大綱、文章與規則，第二階段才看研究記錄與事實查核
-- 協調：人工 session（Claude Code，Darren 2026-11-01 要求把剩下的文章全部重寫一輪）
+- 文章：`content-production/wakkanai-festival/reader-preview.md`（稚內祭典有哪些？2027最新稚內祭典指南）
+- SHA-256（換行統一成 LF 後計算）：`be6ff3ddb6d5acfd67207f0b48ef5b476d0c0e1405643c9a7a18be20e4e1e210`
+- 規則：寫作 Skill `references/festival-calendar-page.md`（Darren 2026-11-27 定的方向：平鋪直敘，有哪些、什麼時候、逐個介紹特色、配圖片或 IG）、`core-style.md`、`preference-review.md`（A～O 題）、`sentence-rhythm.md`、`heading-style.md`；驗收 Skill `references/festival-calendar-acceptance.md`；範本 `page-models/festival/rebun-island-festival.md`。Darren 2026-11-28：「重寫這兩篇」。研究、規格與每一輪紀錄在 `content-experiments/festival-multi-study-2026-11-27/rewrite-wakkanai/`；重寫前的線上版在 `pre-calendar-page/`。
+- 研究：1 個研究子代理（Opus 5.5）補研究並寫規格（歷年日期總表、既有事實更正）。
+- 寫作：一位作者（Sonnet 5.5），事實只用本封包 `reference-review.md`。
+- 事實查核：1 個事實查核子代理（Opus 5.5，沒參與寫作），實際打開來源，共 4 輪：第 1 輪 62 項裡 13 項沒過；最後 49 項全部 verified。
+- 偏好審查：1 個審查子代理（Opus 5.5，不是作者、查核者、驗收者），3 輪：第 1 輪退回 24 處，第 3 輪的 2 處已套用。
+- 讀者驗收：1 個讀者驗收子代理（Opus 5.5），八題，2 次：第 1 次只有回程最後一段要拆句，第 2 次 `acceptable`。
+- 名字：1 個子代理照「專有名詞先看台灣網站再決定」查過，對照表 `content-experiments/festival-multi-study-2026-11-27/names-wakkanai-rishiri.md`，新名字已進譯名表。
+- 標題檢查：1 個標題檢查子代理（Opus 5.5），`heading-review.json`，改動 0 個標題。
+- 協調：人工 session（Claude Code）。Darren 還沒看過這篇重寫稿。
 
 ## 結果
 
 | 項目 | 結果 |
 |---|---|
-| 格式 | `mechanical_clear`（`audit_answer_first.py --article-type aspect-page`） |
-| 標題 | `acceptable`（標題沒改；讀者最終判定可接受） |
-| 讀者價值 | `acceptable`（讀者最終判定，第二階段必修 2 條都已解決） |
-| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，67 項 claim 全部 verified） |
-| 口吻與標點 | `check-voice.mjs --final` 通過（正文 2,847 字） |
-| 事實編號 | `tags_clear`（研究記錄 36 筆，正文用到 32 筆） |
-| 圖片 | 沿用線上的文內照片與嵌入 2 個（位置由換正文工具搬過去），沒有 AI 圖或自製示意圖 |
+| 格式 | `mechanical_clear`（`audit_answer_first.py --article-type aspect-page`，沒有問題與審查訊號） |
+| 標題 | `acceptable`（`heading_review.py` 改動 0 個） |
+| 讀者價值 | `acceptable` |
+| 事實與條件 | `verified`（`validate-fact-check.mjs` 通過，49 項全部 verified） |
+| 口吻與標點 | `check-voice.mjs --final` 通過（正文 1,944 字） |
+| 名字與表格連結 | `check-benchmark.mjs` 沒有錯誤；警告是幾個名字第一次出現在開頭時沒附原文，原文附在逐個介紹那一節，不改 |
+| 圖片 | 封面、文內照片與嵌入見 `images/` |
 
-**最終結果：`ready_for_user_preview`。** Darren 2026-11-01 要求重寫後換上網站。
+**最終結果：`ready_for_user_preview`。**
 
-## 經過
+## 協調者的決定
 
-| 輪 | 做了什麼 | 結果 |
-|---|---|---|
-| 研究 | 重查 24 筆、讀競品 3 篇 | 更正 F165；新增 F261 南極祭煙火時間地點等 |
-| 寫作 | 讀競品後重排、改寫 1 句連結句；先刪再調潤稿（刪南極祭與犬橇大會屆數）；意義比對 0 處不可接受 | 四項檢查通過 |
-| 1 | 事實查核第 1 輪（65 項） | 1 incorrect（C2 開頭寫兩天都有舞蹈遊行） |
-| 2 | 讀者驗收第一、二階段 | 必修 2 條：C2、2027 年南極祭是哪個週末 |
-| 3 | 作者照必修修改，補聲問線週末末班 | 三項檢查通過 |
-| 4 | 事實查核第 2 輪（67 項）；讀者最終判定 | 全部 verified；讀者價值與標題可接受、無剩餘必修 |
+- 小標題從七個收成三個：狗拉雪橇大會與雪地樂園（冰雪廣場併在最後一句）、北門神社祭、稚內港南極祭。白夜祭只有 2026 年一屆的依據、秋天的穹頂點燈只有兩屆，都只留在時間表與表後一句。
+- 和平馬拉松、汽車活動、港口音樂會不放（要報名或遊客沒東西可看）。
+- 「犬橇」改用台灣的叫法「狗拉雪橇」，「雪樂園」改「雪地樂園」。
+- 狗拉雪橇大會 2027 年 2 月 27、28 日已公布，直接寫；近年曾因雪況取消照事實寫一次。
+- 南極祭先寫煙火，太郎、次郎的故事兩三句講完；節目時刻、屆數、供養塔與慰靈祭不寫。
 
-## 查不到所以正文沒寫的
+## 待辦
 
-- 看煙火的位置（觀賞位置圖看不清）、攤位付款方式、犬橇會場臨時接駁車時刻（官方還沒公布）。
-
-## 留給之後的事
-
-- F165 更正與新增 F261～F265 要同步回地點事實表與 D1。
-- 2027 年南極祭與犬橇大會公告出來後重查日期、節目與接駁車。
+- 線上〈稚內景點〉有四處、〈稚內〉主頁有一處和這次查到的事實對不上（太郎次郎的說法、巴士路線名與時間、點燈寫成每年、「破冰船宗谷」、煙火約 2,500 發），兩頁也還在用「犬橇」，見 `rewrite-wakkanai/fact-check-round1.md` 與名字對照表。
+- 北門神社祭的神轎與出海幾點、在哪裡看查不到，沒寫。
+- 2027 年夏天各祭典日期與時刻表公布後重查。
