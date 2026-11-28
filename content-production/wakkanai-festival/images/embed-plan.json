@@ -2,8 +2,54 @@
   "schemaVersion": 1,
   "articleId": "wakkanai-festival",
   "targetUrl": "/places/wakkanai/festival/",
-  "checkedAt": "2026-10-29",
+  "checkedAt": "2026-11-28",
+  "pageType": "festival-calendar",
+  "note": "2026-11-28 照重寫稿重做：逐個介紹的三個祭典各配一支 YouTube。三支都沒有找到條款允許轉載的官方照片（稚內市網站「免責事項・著作権・リンク」禁止未經許可轉載、改作），維基共享資源也沒有能確定在稚內拍的祭典照片，所以都用嵌入。embedId 沿用上一版的兩個（key 不變），dog-sled-race-video 的播放起點從 0 改成 70 秒（前 70 秒是同一集市民新聞的防災訓練）。backups 不會被上傳程式讀。",
   "embeds": [
+    {
+      "embedId": "dog-sled-race-video",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=F2-xE_jB8jI",
+      "startSeconds": 70,
+      "title": "雪原を駆ける熱戦　第40回全国犬ぞり稚内大会（稚内市民ニュース　2026年3月7日放送）",
+      "channelName": "稚内市",
+      "channelType": "official",
+      "publishedAt": "2026-03",
+      "placement": {
+        "heading": "狗拉雪橇大會與雪地樂園｜免費看雪橇犬在大沼雪原衝刺",
+        "afterBlocks": 1
+      },
+      "captionDraft": "2026年第40屆狗拉雪橇大會，雪橇犬在大沼的雪原上起跑衝刺，從 1 分 10 秒開始。",
+      "evidence": "2026-11-28 查頁面原始碼：上傳者「稚内市」（市公所官方頻道），playableInEmbed true、公開，2026-03-11 發布、155 秒。說明欄寫 2 月 21、22 日第 40 回全国犬ぞり稚内大会，46 隊 88 隻狗，雪原起跑衝線，會場有兒童犬橇體驗。看過分鏡圖：0～70 秒是同一集市民新聞的「厳冬期防災訓練」（みどりスポーツパーク），70 秒起才是犬橇大會（字幕「大沼特設会場 2月21日・22日」、橘色圍網後的觀眾、雪橇犬與雪橇手在雪原上跑、哈士奇特寫、觀眾訪問、スキージョアリング），所以起點設 70 秒。",
+      "checks": {
+        "publicAndEmbeddable": true,
+        "withinTwoYears": true,
+        "contentVerified": true,
+        "notMisleadingAd": true
+      }
+    },
+    {
+      "embedId": "hokumon-sea-procession-video",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=_TZK4TgMbSQ",
+      "startSeconds": 0,
+      "title": "稚内・北門神社例大祭　大漁旗掲げ、みこし海へ（2013/07/6）北海道新聞",
+      "channelName": "北海道新聞　どうしん動画ニュース",
+      "channelType": "individual",
+      "publishedAt": "2013-07",
+      "placement": {
+        "heading": "北門神社祭｜神轎坐上掛滿大漁旗的船出海",
+        "afterBlocks": 1
+      },
+      "captionDraft": "2013年北門神社祭最後一天，神轎放上掛著大漁旗的船出海，1分鐘的新聞影片。",
+      "evidence": "2026-11-28 查頁面原始碼：上傳者是北海道新聞社自己的新聞頻道「どうしん動画ニュース」（報社官方帳號，不是自治體或觀光協會），playableInEmbed true、公開，2013-07-09 發布、60 秒。說明欄寫例大祭最後一天 6 日的海上渡御：丸北市場前碼頭神事後，載著神轎的御座船先出發，掛滿大漁旗與旗幟的伴走船 10 艘跟著在海上遊行。看過分鏡圖：碼頭上穿紅衣的神職與漁船、金色神轎在船上、船上掛著大漁旗、船開到海上、海面撒東西。稚內市官方頻道只有 2025 年的直式短片（見 backups），拍的是攤位與神轎遶境、抬進神社，沒有出海的畫面；這一節標題講的是出海，所以主選用這支。發布超過兩年，festival-calendar 允許。（頻道是報社，不是主辦或自治體，照實標成非官方；多活動祭典頁允許非官方的公開影片）",
+      "checks": {
+        "publicAndEmbeddable": true,
+        "withinTwoYears": false,
+        "contentVerified": true,
+        "notMisleadingAd": true
+      }
+    },
     {
       "embedId": "nankyoku-fireworks-video",
       "platform": "youtube",
@@ -14,39 +60,37 @@
       "channelType": "official",
       "publishedAt": "2026-08",
       "placement": {
-        "heading": "稚內港南極祭的日期與煙火",
+        "heading": "稚內港南極祭｜北防波堤穹頂旁的港邊煙火",
         "afterBlocks": 1
       },
-      "captionDraft": "2026 年第 63 屆稚內港南極祭的大型煙火，未剪輯、附在地廣播實況。",
-      "evidence": "稚內市官方頻道；標題與說明欄寫明是 2026 年 8 月 2 日南極祭「大花火大会」的未剪輯影片，配 FM わっかない的實況轉播，對上正文約 2,500 發的煙火。",
+      "captionDraft": "2026年第63屆稚內港南極祭的煙火，未剪輯、配在地廣播的實況轉播。",
+      "evidence": "2026-11-28 查頁面原始碼：上傳者「稚内市」，playableInEmbed true、公開，2026-08-04 發布、2,117 秒。說明欄寫令和 8 年 8 月 2 日（日）「大花火大会」未剪輯，配エフエムわっかない實況。看過分鏡圖：從高處拍的夜晚港邊市區燈光，約 40 秒起煙火在港邊上空升起。",
       "checks": {
         "publicAndEmbeddable": true,
         "withinTwoYears": true,
         "contentVerified": true,
         "notMisleadingAd": true
       }
-    },
+    }
+  ],
+  "backups": [
     {
-      "embedId": "dog-sled-race-video",
+      "forHeading": "北門神社祭｜神轎坐上掛滿大漁旗的船出海",
       "platform": "youtube",
-      "url": "https://www.youtube.com/watch?v=F2-xE_jB8jI",
-      "startSeconds": 0,
-      "title": "雪原を駆ける熱戦　第40回全国犬ぞり稚内大会（稚内市民ニュース　2026年3月7日放送）",
+      "url": "https://www.youtube.com/watch?v=6reHs7DhH3s",
       "channelName": "稚内市",
       "channelType": "official",
-      "publishedAt": "2026-03",
-      "placement": {
-        "heading": "稚內冬季的犬橇大會",
-        "afterBlocks": 1
-      },
-      "captionDraft": "2026 年第 40 屆全國犬橇稚內大會的比賽畫面。",
-      "evidence": "稚內市官方頻道的「稚内市民ニュース」；說明欄寫明 2026 年 2 月 21、22 日舉辦第 40 回全国犬ぞり稚内大会，46 隊、88 隻狗出賽，雪原上起跑衝線，會場也有給小朋友的犬橇體驗。",
-      "checks": {
-        "publicAndEmbeddable": true,
-        "withinTwoYears": true,
-        "contentVerified": true,
-        "notMisleadingAd": true
-      }
+      "publishedAt": "2025-07",
+      "evidence": "稚內市官方頻道的 60 秒直式短片，標題「2025年7月4日から6日に開催された北門神社例大祭の様子」，說明寫神轎遶境、大神轎衝上北門神社的階梯、攤位很多（育英館大學協助製作）。分鏡圖：站前的帳篷與人潮、攤位、金色神轎在市區與神社境內被抬著、穿法被的隊伍。沒有船與出海。"
+    },
+    {
+      "forHeading": "狗拉雪橇大會與雪地樂園｜免費看雪橇犬在大沼雪原衝刺",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=EbegBunQ5l0",
+      "channelName": "稚内市",
+      "channelType": "official",
+      "publishedAt": "2026-02",
+      "evidence": "稚內市民新聞 2026-02-07 播出、89 秒：宗谷交流公園雪地樂園 2 月 1 日開幕，雪地車繞大沼、胖胎車。沒有看分鏡圖，主選用犬橇大會那支。"
     }
   ]
 }
